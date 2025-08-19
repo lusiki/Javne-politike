@@ -101,7 +101,7 @@
     "href": "index.html#kako-koristiti-ovu-knjigu",
     "title": "Dobrodošli",
     "section": "1.2 Kako koristiti ovu knjigu",
-    "text": "1.2 Kako koristiti ovu knjigu\n\nInteraktivno iskustvo: Knjiga sadrži interaktivne grafikone, tablice i analize\nStvarni podaci: Koristimo prave podatke o Hrvatskoj politici i ekonomiji\nPraktični primjeri: Svaki koncept je objašnjen kroz konkretne hrvatsko iskustvo\n\n\n\n\n\n\n\nStruktura knjige Knjiga je podijeljena u tri glavna dijela:\nJavni izbor: Kako i zašto se donose političke odluke Javne politike: Kako država troši naš novac i oblikuje politike Praktična primjena: Što možemo naučiti i kako primijeniti znanje\nSvako poglavlje sadrži:\nTeorijski okvir Primjere iz hrvatske prakse Interaktivne analize podataka Pitanja za razmišljanje Dodatne resurse za dublje proučavanje\nLicenca: Ova knjiga je objavljena pod Creative Commons Attribution-ShareAlike 4.0 licencom. Kod i podaci: Sav kod i podaci dostupni su na GitHub repozitoriju.",
+    "text": "1.2 Kako koristiti ovu knjigu\n\nInteraktivno iskustvo: Knjiga sadrži interaktivne grafikone, tablice i analize\nStvarni podaci: Koristimo prave podatke o hrvatskoj politici i ekonomiji\nPraktični primjeri: Svaki koncept je objašnjen kroz konkretno hrvatsko iskustvo\n\n#| echo: false #| message: false #| fig-cap: “Izlaznost na izbore u Hrvatskoj kroz godine”\nlibrary(ggplot2)",
     "crumbs": [
       "<span class='chapter-number'>1</span>  <span class='chapter-title'>Dobrodošli</span>"
     ]
@@ -126,6 +126,17 @@
     "crumbs": [
       "DIO I: JAVNI IZBOR – ŠTO, KAKO I ZAŠTO?",
       "<span class='chapter-number'>3</span>  <span class='chapter-title'>01-javni-izbor.html</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/02-kako-odlucujemo.html",
+    "href": "chapters/02-kako-odlucujemo.html",
+    "title": "",
+    "section": "",
+    "text": "DIO I: JAVNI IZBOR – ŠTO, KAKO I ZAŠTO?4  02-kako-odlucujemo.html Code",
+    "crumbs": [
+      "DIO I: JAVNI IZBOR – ŠTO, KAKO I ZAŠTO?",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>02-kako-odlucujemo.html</span>"
     ]
   }
 ]

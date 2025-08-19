@@ -1,0 +1,81 @@
+---
+title: "1. Što je to javni izbor i zašto nas se tiče?"
+---
+
+Jeste li se ikada zapitali zašto se pred svake izbore grade fontane ili asfaltiraju ceste? Zašto se čini da političari nekad donose odluke koje nemaju smisla za većinu, ali idu na ruku nekoj maloj, glasnoj skupini? Ili zašto je državna birokracija ponekad toliko spora i komplicirana?
+
+Ako jeste, niste jedini. Mnogi od nas promatraju politiku i rad države sa zbunjenošću ili čak frustracijom. Čini se kao kaotičan proces u kojem se "zdrav razum" često gubi.
+
+Teorija javnog izbora nudi nam alate da shvatimo logiku iza tog prividnog kaosa. Ona primjenjuje načela ekonomije na politiku.
+
+::: {.callout-tip title="Ključna ideja javnog izbora"}
+Javni izbor ne pita **što bi država *trebala* činiti** (to je pitanje političke filozofije). On pita **zašto država radi *ono što radi***.
+
+Mijenja pitanje iz: "Koja je najbolja politika za rješavanje nezaposlenosti?"
+
+U: "S obzirom na poticaje s kojima se suočavaju, kakvu će politiku za nezaposlenost političari i birokrati vjerojatno implementirati?"
+:::
+
+Ona nas uči da političku arenu promatramo kao tržište. Na tom tržištu, različiti akteri – birači, političari, birokrati i interesne skupine – slijede svoje interese. Razumijevanje tih interesa ključ je za razumijevanje ishoda.
+
+## Trebam li i kako sudjelovati u donošenju političkih odluka?
+
+Ovo je temeljno pitanje demokracije. Standardni odgovor glasi: "Naravno! Tvoja je građanska dužnost informirati se i glasovati."
+
+Teorija javnog izbora daje malo provokativniji odgovor. Ona upoznaje s konceptom **racionalnog neznanja** (*rational ignorance*).
+
+Zamislite da je sutra referendum o promjeni sustava poljoprivrednih poticaja. Da biste donijeli informiranu odluku, trebali biste uložiti sate i sate učenja o ekonomiji, pravu, postojećim praksama i posljedicama različitih modela. Cijena (vaše vrijeme i trud) je visoka.
+
+S druge strane, vaš jedan glas ima gotovo nikakvu vjerojatnost da će presuditi ishod. Korist od vašeg informiranog glasa je, statistički gledano, gotovo nula.
+
+::: {.callout-note}
+**Racionalno neznanje** je situacija u kojoj se biraču ne isplati trošiti vrijeme i resurse da bi se detaljno informirao o političkim pitanjima, jer je cijena informiranja visoka, a utjecaj njegovog pojedinačnog glasa zanemariv.
+:::
+
+Znači li to da ne bismo trebali sudjelovati? Ne nužno. To samo objašnjava zašto je apatija birača česta pojava i zašto se političke rasprave često svode na jednostavne slogane, a ne na dubinske analize. Ljudi donose odluke na temelju prečaca: stranačke pripadnosti, identiteta, simpatičnosti kandidata ili onoga što su čuli od prijatelja.
+
+Sudjelovanje, međutim, nije samo glasovanje. To su i prosvjedi, potpisivanje peticija, rad u udrugama civilnog društva ili interesnim skupinama. U tim slučajevima, iako je pojedinačni utjecaj malen, kolektivna akcija može imati stvaran učinak – nešto čime ćemo se baviti kasnije u knjizi.
+
+## Ljudi kao birači, političari i službenici
+
+Javni izbor razbija monolitnu ideju "države" i gleda na pojedince koji je čine. Osnovna pretpostavka je da ljudi u političkoj areni, baš kao i u ekonomskoj, uglavnom slijede vlastite interese. To ne znači da su nužno zli ili sebični, već da reagiraju na poticaje oko sebe.
+
+#### Birači
+Kao što smo vidjeli, birači su često "racionalno neinformirani". Ne kupuju politike kao što kupuju cipele. Kad kupujete cipele, odmah osjetite posljedice loše odluke. Kad "kupujete" političara, posljedice su udaljene, neizravne i podijeljene sa svima drugima. Birači često glasaju za "paket aranžman" (stranku), čak i ako se ne slažu sa svim njezinim politikama.
+
+#### Političari
+Njihov primarni cilj nije nužno opće dobro, već **reizbor**. Oni su poduzetnici na političkom tržištu koji nude politike u zamjenu za glasove. To ih tjera da se fokusiraju na kratkoročne, vidljive projekte (poput spomenutih fontana) umjesto na dugoročne, nepopularne reforme (poput mirovinske). Također, ciljat će na glasove **medijanskog birača** – prosječnog, neopredijeljenog birača čiji glas može odlučiti izbore.
+
+#### Birokrati (javni službenici)
+Iako ih se često smatra neutralnim izvršiteljima zakona, i oni imaju svoje interese. Njihov cilj nije profit, već mogu biti stvari poput:
+*   **Povećanje proračuna** svog odjela (više moći, prestiža, mogućnosti).
+*   **Sigurnost posla** i izbjegavanje rizika.
+*   **Lakša administracija**, čak i ako to znači manje učinkovita pravila za građane.
+
+Kad shvatimo da ministarstva i agencije nisu apstraktna tijela, već skupine ljudi s vlastitim ciljevima, postaje jasnije zašto se zakoni ponekad provode na neočekivane načine.
+
+## Zašto su odluke države često neintuitivne?
+
+Sada možemo složiti slagalicu. Neintuitivne odluke često su savršeno logičan rezultat interakcije ovih aktera.
+
+Ključni koncept za razumijevanje ovoga je princip **koncentriranih koristi i raspršenih troškova**.
+
+Zamislimo odluku o uvođenju carine na uvoz nekog poljoprivrednog proizvoda.
+*   **Koristi:** Nekoliko stotina ili tisuća domaćih proizvođača imat će ogromne koristi. Njima je to pitanje opstanka. Oni će se organizirati, lobirati kod političara, izlaziti u medije. Njihova motivacija je **visoka i koncentrirana**.
+*   **Troškovi:** Svaki građanin će plaćati taj proizvod nekoliko centi ili eura više. Trošak je stvaran, ali je **raspršen** na milijune ljudi. Većina ga neće ni primijetiti, a onima koji ga primijete ne isplati se organizirati prosvjed zbog tako malog iznosa.
+
+Političar, koji želi biti ponovno izabran, suočen je s jednostavnim izborom: podržati zakon i dobiti snažnu podršku male, ali motivirane skupine, ili se usprotiviti zakonu i dobiti tihu, gotovo neprimjetnu podršku tihe većine. Odluka je logična: podržat će interesnu skupinu.
+
+::: {.callout-important}
+Mnoge loše politike opstaju ne zato što ih podržava većina, već zato što korist od njih ide maloj, organiziranoj skupini, dok je trošak podijeljen na veliku, neorganiziranu masu ljudi.
+:::
+
+To objašnjava sve, od subvencija za neprofitabilne industrije do kompleksnih poreznih olakšica koje koriste samo određenim profesijama. Odluka nije donesena unatoč logici; ona je donesena zbog **političke logike**.
+
+Javni izbor nam daje rendgenski vid da tu logiku prepoznamo. On nas ne tjera da budemo cinici, već realisti. Omogućuje nam da bolje razumijemo zašto sustav funkcionira tako kako funkcionira – a to je prvi korak prema tome da ga možemo poboljšati.
+
+### Pitanja za razmišljanje
+
+1.  Možete li se sjetiti nekog primjera iz hrvatske politike koji izgleda kao "koncentrirane koristi i raspršeni troškovi"?
+2.  Jeste li ikada odlučili ne glasovati ili se ne informirati o nekoj temi jer vam se činilo prekomplicirano ili nevažno? Je li to bio primjer "racionalnog neznanja"?
+3.  Kako bi se ponašanje političara promijenilo kada bi im glavni cilj bio "opće dobro" umjesto "reizbora"? Je li takav sustav uopće moguć?

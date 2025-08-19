@@ -19,3 +19,5 @@ rad.json
 #License-file
 *.flf
 .Rproj.user
+
+/.quarto/

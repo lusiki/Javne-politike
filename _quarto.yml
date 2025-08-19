@@ -11,9 +11,9 @@ book:
       email: "milan@example.com"
       orcid: "0000-0000-0000-0000"
     - name: "Petra Palić"
-      email: "petra@example.com"
+      email: "petra.palic@unicath.hr"
     - name: "Luka Šikić"
-      email: "luka@example.com"
+      email: "luka.sikic@unicath.hr"
 
   date: today
   language: hr-HR
