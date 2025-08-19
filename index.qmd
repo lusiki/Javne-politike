@@ -1,0 +1,81 @@
+---
+title: "Dobrodošli"
+---
+
+# Sve što želite znati o državi i javnim politikama u Hrvatskoj
+
+**Praktični i interaktivni udžbenik za studente i sve koji žele znati više**
+
+Autori: Milan Deskar-Škrbić, Petra Palić, Luka Šikić
+
+## O čemu se radi?
+
+Ova knjiga je praktičan vodič kroz složen svijet javnih politika i političkih odluka u Hrvatskoj. Kroz interaktivne primjere, analize stvarnih podataka i jasna objašnjenja, učit ćete:
+
+- Kako funkcionira javni izbor i zašto političari donose određene odluke
+- Kako se oblikuju javne politike i kako utječu na naš svakodnevni život  
+- Kako analizirati i razumjeti političke procese oko nas
+
+::: {.callout-note}
+## Zašto biste trebali čitati ovu knjigu?
+
+Bez obzira jeste li student političkih znanosti, javne uprave, ekonomije ili jednostavno zainteresirani građanin - ova knjiga će vam pomoći da bolje razumijete kako funkcionira država i zašto su javne politike takve kakve jesu.
+:::
+
+## Kako koristiti ovu knjigu
+
+- **Interaktivno iskustvo**: Knjiga sadrži interaktivne grafikone, tablice i analize
+- **Stvarni podaci**: Koristimo prave podatke o Hrvatskoj politici i ekonomiji
+- **Praktični primjeri**: Svaki koncept je objašnjen kroz konkretne hrvatsko iskustvo
+
+```{r}
+#| echo: false
+#| message: false
+library(ggplot2)
+library(plotly)
+
+# Primjer interaktivnog grafikona
+df <- data.frame(
+  godina = 2015:2023,
+  izlaznost = c(59.1, 52.6, 54.3, 49.5, 46.9, 50.2, 47.8, 55.9, 51.2)
+)
+
+p <- ggplot(df, aes(x = godina, y = izlaznost)) +
+  geom_line(color = "#1f4e79", size = 1.2) +
+  geom_point(color = "#1f4e79", size = 3) +
+  labs(
+    title = "Izlaznost na izbore u Hrvatskoj",
+    x = "Godina", 
+    y = "Izlaznost (%)",
+    caption = "Izvor: DIP"
+  ) +
+  theme_minimal() +
+  theme(
+    plot.title = element_text(size = 14, face = "bold"),
+    axis.title = element_text(size = 12)
+  )
+
+ggplotly(p, tooltip = c("x", "y")) %>%
+  layout(hovermode = "x unified")
+
+```
+
+
+Struktura knjige
+Knjiga je podijeljena u tri glavna dijela:
+
+Javni izbor: Kako i zašto se donose političke odluke
+Javne politike: Kako država troši naš novac i oblikuje politike
+Praktična primjena: Što možemo naučiti i kako primijeniti znanje
+
+Svako poglavlje sadrži:
+
+Teorijski okvir
+Primjere iz hrvatske prakse
+Interaktivne analize podataka
+Pitanja za razmišljanje
+Dodatne resurse za dublje proučavanje
+
+
+Licenca: Ova knjiga je objavljena pod Creative Commons Attribution-ShareAlike 4.0 licencom.
+Kod i podaci: Sav kod i podaci dostupni su na GitHub [repozitoriju](https://github.com/lusiki/Javne-politike).

@@ -1,0 +1,130 @@
+/*-- scss:defaults --*/
+
+/* Main color palette for Croatian academic book */
+$primary: #1f4e79;        /* Professional dark blue */
+$secondary: #6c757d;      /* Neutral gray */
+$success: #198754;        /* Green for positive content */
+$info: #0dcaf0;          /* Light blue for info boxes */
+$warning: #ffc107;       /* Yellow for warnings */
+$danger: #dc3545;        /* Red for important alerts */
+$light: #f8f9fa;         /* Very light gray backgrounds */
+$dark: #212529;          /* Dark text color */
+
+/* Typography for Croatian text */
+$font-family-sans-serif: "Segoe UI", "Roboto", "Helvetica Neue", Arial, sans-serif;
+$font-family-serif: "Source Serif Pro", "Times New Roman", serif;
+$font-family-monospace: "Source Code Pro", "Consolas", "Monaco", monospace;
+
+/* Spacing and layout */
+$border-radius: 0.5rem;
+$box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+
+/*-- scss:rules --*/
+
+/* Improved callout boxes */
+.callout {
+  border-radius: $border-radius;
+  margin: 1.5rem 0;
+  box-shadow: $box-shadow;
+
+  &.callout-note {
+    border-left: 4px solid $info;
+  }
+
+  &.callout-tip {
+    border-left: 4px solid $success;
+  }
+
+  &.callout-warning {
+    border-left: 4px solid $warning;
+  }
+
+  &.callout-important {
+    border-left: 4px solid $danger;
+  }
+}
+
+/* Chapter titles with Croatian academic style */
+.chapter-title, h1 {
+  color: $primary;
+  border-bottom: 3px solid $primary;
+  padding-bottom: 0.5rem;
+  margin-bottom: 1.5rem;
+  font-weight: 600;
+}
+
+/* Better code block styling */
+.code-with-filename {
+  .code-with-filename-file {
+    background-color: $light;
+    border: 1px solid #dee2e6;
+    border-radius: $border-radius $border-radius 0 0;
+    padding: 0.5rem 1rem;
+    font-size: 0.875rem;
+    font-family: $font-family-monospace;
+    font-weight: 600;
+    color: $dark;
+  }
+}
+
+/* Enhanced tables for Croatian data */
+.table {
+  margin: 1.5rem 0;
+
+  th {
+    background-color: lighten($primary, 45%);
+    color: $dark;
+    font-weight: 600;
+    border-bottom: 2px solid $primary;
+  }
+
+  td {
+    border-bottom: 1px solid #dee2e6;
+  }
+}
+
+/* Interactive plot containers */
+.plotly {
+  margin: 2rem 0;
+  padding: 1rem;
+  border: 1px solid #dee2e6;
+  border-radius: $border-radius;
+  background-color: #fafafa;
+}
+
+/* Croatian academic emphasis boxes */
+.vazno {
+  background-color: lighten($warning, 35%);
+  border-left: 5px solid $warning;
+  padding: 1rem 1.5rem;
+  margin: 1.5rem 0;
+  border-radius: 0 $border-radius $border-radius 0;
+
+  .vazno-title {
+    font-weight: 600;
+    color: darken($warning, 20%);
+    margin-bottom: 0.5rem;
+  }
+}
+
+/* Navigation improvements */
+.sidebar-navigation {
+  .sidebar-item {
+    margin-bottom: 0.25rem;
+    border-radius: 0.25rem;
+
+    &:hover {
+      background-color: lighten($primary, 50%);
+    }
+  }
+}
+
+/* Figure and table captions */
+.figure-caption, .table-caption {
+  font-size: 0.9rem;
+  color: #6c757d;
+  font-style: italic;
+  text-align: center;
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+}
