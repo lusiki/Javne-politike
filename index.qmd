@@ -1,5 +1,6 @@
 ---
 title: "Dobrodošli"
+prefer-html: true
 ---
 
 # Sve što želite znati o državi i javnim politikama u Hrvatskoj
