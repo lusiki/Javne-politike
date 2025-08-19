@@ -1,0 +1,41 @@
+{
+  "index.qmd": {
+    "index.html": "9fbdb6a6"
+  },
+  "chapters/00-uvod.qmd": {
+    "00-uvod.html": "7e96af6d"
+  },
+  "chapters/01-javni-izbor.qmd": {
+    "01-javni-izbor.html": "c915a7da"
+  },
+  "chapters/02-kako-odlucujemo.qmd": {
+    "02-kako-odlucujemo.html": "a4306924"
+  },
+  "chapters/03-glasovanje.qmd": {
+    "03-glasovanje.html": "ed290493"
+  },
+  "chapters/04-stranke-kandidati.qmd": {
+    "04-stranke-kandidati.html": "d20ad15a"
+  },
+  "chapters/05-birokrati.qmd": {
+    "05-birokrati.html": "e5325849"
+  },
+  "chapters/06-interesne-skupine.qmd": {
+    "06-interesne-skupine.html": "1227fc55"
+  },
+  "chapters/07-drzavna-potrosnja.qmd": {
+    "07-drzavna-potrosnja.html": "e20c2913"
+  },
+  "chapters/08-porezi.qmd": {
+    "08-porezi.html": "fd9c94fd"
+  },
+  "chapters/09-pametne-odluke.qmd": {
+    "09-pametne-odluke.html": "0f02b9e9"
+  },
+  "chapters/10-zakljucak.qmd": {
+    "10-zakljucak.html": "25f64243"
+  },
+  "references.qmd": {
+    "references.html": "c0fca6c8"
+  }
+}
