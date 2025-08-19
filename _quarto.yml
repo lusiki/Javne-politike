@@ -23,7 +23,7 @@ book:
   repo-branch: main
   repo-actions: [edit, issue]
 
-  cover-image: "images/cover.png"
+  cover-image: "/cover.jpg"
   favicon: "images/favicon.ico"
 
   search: true
