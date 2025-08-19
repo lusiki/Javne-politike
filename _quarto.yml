@@ -18,8 +18,8 @@ book:
   date: today
   language: hr-HR
 
-  site-url: "https://lusiki.github.io/javne-politike-knjiga/"
-  repo-url: "https://github.com/lusiki/javne-politike-knjiga"
+  site-url: "https://lusiki.github.io/Javne-politike/"
+  repo-url: "https://github.com/lusiki/Javne-politike"
   repo-branch: main
   repo-actions: [edit, issue]
 

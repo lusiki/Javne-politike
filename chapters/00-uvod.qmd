@@ -1,0 +1,90 @@
+    
+---
+title: "Sve što želite znati o državi i javnim politikama"
+description: "Praktični i interaktivni udžbenik za studente i sve koji žele znati više o funkcioniranju države, javnog izbora i politika u Hrvatskoj."
+---
+
+# Sve što želite znati o državi i javnim politikama (u Hrvatskoj)
+
+::: {style="text-align: center; font-size: 1.1em; color: #555;"}
+*Praktični i interaktivni udžbenik za studente i sve koji žele znati više*
+:::
+
+<br>
+
+**Autori:** Milan Deskar-Škrbić, Petra Palić, Luka Šikić
+
+---
+
+Država i politika često djeluju kao "crna kutija". Odluke se donose, zakoni se mijenjaju, a mi kao građani rijetko imamo jasan uvid u to **zašto** se nešto dogodilo. Ova knjiga je vaš alat za otvaranje te crne kutije.
+
+Naš cilj nije da vam damo gotove odgovore, već da vas opremimo načinom razmišljanja – alatima **teorije javnog izbora** – kako biste sami mogli analizirati i razumjeti političku stvarnost oko sebe. Kroz praktične primjere iz hrvatskog konteksta, pokazat ćemo vam logiku koja stoji iza naizgled nelogičnih odluka.
+
+::: {.columns}
+::: {.column width="45%"}
+### Što ćete naučiti?
+
+Ova knjiga će vam pomoći da:
+
+-   **Razumijete "ZAŠTO"**: Naučit ćete zašto političari, birači i birokrati donose odluke koje donose, čak i kada se one čine suprotnima "općem dobru".
+
+-   **Analizirate politike**: Dobit ćete alate za kritičku analizu javnih politika, od poreza do državne potrošnje, i prepoznavanje tko od njih ima koristi, a tko snosi trošak.
+
+-   **Postanete informiraniji građanin**: Umjesto da politiku pratite s frustracijom, promatrat ćete je s razumijevanjem. Vidjet ćete sustav, pravila igre i motive koji oblikuju našu svakodnevicu.
+:::
+
+::: {.column width="55%"}
+```{r}
+#| echo: false
+#| message: false
+#| fig-cap: "Izlaznost na parlamentarne izbore u Hrvatskoj. Zadržite miš iznad točke za detalje."
+
+library(ggplot2)
+library(plotly)
+
+# Realistični podaci o izlaznosti na parlamentarne izbore
+izbori_df <- data.frame(
+  godina = c(2000, 2003, 2007, 2011, 2015, 2016, 2020, 2024),
+  izlaznost = c(68.68, 66.82, 63.41, 61.76, 60.82, 52.59, 46.90, 62.31),
+  label = paste0("Godina: ", c(2000, 2003, 2007, 2011, 2015, 2016, 2020, 2024), 
+                 "<br>Izlaznost: ", c(68.68, 66.82, 63.41, 61.76, 60.82, 52.59, 46.90, 62.31), "%")
+)
+
+p <- ggplot(izbori_df, aes(x = godina, y = izlaznost, text = label)) +
+  geom_line(color = "#005a9c", size = 1) +
+  geom_point(color = "#005a9c", size = 2.5) +
+  labs(
+    title = "Izlaznost na parlamentarne izbore u Hrvatskoj",
+    x = "Godina izbora", 
+    y = "Izlaznost (%)",
+    caption = "Izvor: Državno izborno povjerenstvo (DIP)"
+  ) +
+  scale_x_continuous(breaks = izbori_df$godina) +
+  theme_minimal(base_size = 12) +
+  theme(
+    plot.title = element_text(size = 14, face = "bold", hjust = 0.5),
+    axis.text.x = element_text(angle = 45, hjust = 1)
+  )
+
+# Pretvaranje u interaktivni grafikon
+ggplotly(p, tooltip = "text")
+
+  
+
+:::
+:::
+Knjiga za 21. stoljeće
+
+Vjerujemo da obrazovni materijali trebaju biti moderni, dostupni i prilagođeni čitatelju. Zato je ova knjiga:
+
+    Potpuno otvorena i besplatna: Cijeli sadržaj je dostupan online kao open-source projekt. Cijenimo vaše prijedloge i ispravke!
+
+    Interaktivna: Gdje god je moguće, koristimo interaktivne grafikone i podatke kako biste mogli sami istraživati, a ne samo čitati.
+
+    Utemeljena na podacima: Teoriju potkrepljujemo stvarnim, provjerljivim podacima iz hrvatskog i međunarodnog konteksta.
+
+<br>
+
+::: {style="text-align: center; font-size: 1.2em;"}
+Spremni za početak? Zaronite u prvo poglavlje »
+:::
