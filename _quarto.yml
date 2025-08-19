@@ -90,29 +90,30 @@ format:
     lang: hr-HR
     comments:
       hypothesis: true
+    prefer-html: true
 
-  pdf:
-    documentclass: book
-    classoption: [oneside, openany]
-    fontsize: 11pt
-    geometry:
-      - top=25mm
-      - left=25mm
-      - right=25mm
-      - bottom=25mm
-    papersize: a4
-    fig-width: 6
-    fig-height: 4
-    include-in-header:
-      text: |
-        \usepackage[croatian]{babel}
-        \usepackage{lmodern}
-        \usepackage[T1]{fontenc}
-        \usepackage[utf8]{inputenc}
-
-  epub:
-    cover-image: "images/cover.png"
-    toc: true
+  # pdf:
+  #   documentclass: book
+  #   classoption: [oneside, openany]
+  #   fontsize: 11pt
+  #   geometry:
+  #     - top=25mm
+  #     - left=25mm
+  #     - right=25mm
+  #     - bottom=25mm
+  #   papersize: a4
+  #   fig-width: 6
+  #   fig-height: 4
+  #   include-in-header:
+  #     text: |
+  #       \usepackage[croatian]{babel}
+  #       \usepackage{lmodern}
+  #       \usepackage[T1]{fontenc}
+  #       \usepackage[utf8]{inputenc}
+  #
+  # epub:
+  #   cover-image: "images/cover.png"
+  #   toc: true
 
 execute:
   freeze: auto
