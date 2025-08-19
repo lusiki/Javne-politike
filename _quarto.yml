@@ -1,0 +1,122 @@
+project:
+  type: book
+  output-dir: docs
+  execute-dir: project
+
+book:
+  title: "Sve što želite znati o državi i javnim politikama u hrvatskoj"
+  subtitle: "Praktični i interaktivni udžbenik za studente i sve koji žele znati više"
+  author:
+    - name: "Milan Deskar-Škrbić"
+      email: "milan@example.com"
+      orcid: "0000-0000-0000-0000"
+    - name: "Petra Palić"
+      email: "petra@example.com"
+    - name: "Luka Šikić"
+      email: "luka@example.com"
+
+  date: today
+  language: hr-HR
+
+  site-url: "https://lusiki.github.io/javne-politike-knjiga/"
+  repo-url: "https://github.com/lusiki/javne-politike-knjiga"
+  repo-branch: main
+  repo-actions: [edit, issue]
+
+  cover-image: "images/cover.png"
+  favicon: "images/favicon.ico"
+
+  search: true
+  downloads: [pdf, epub]
+  sharing: [twitter, facebook, linkedin]
+
+  sidebar:
+    style: "floating"
+    background: light
+
+  page-navigation: true
+
+  chapters:
+    - index.qmd
+    - part: "Prije početka"
+      chapters:
+        - chapters/00-uvod.qmd
+    - part: "DIO I: JAVNI IZBOR – ŠTO, KAKO I ZAŠTO?"
+      chapters:
+        - chapters/01-javni-izbor.qmd
+        - chapters/02-kako-odlucujemo.qmd
+        - chapters/03-glasovanje.qmd
+        - chapters/04-stranke-kandidati.qmd
+        - chapters/05-birokrati.qmd
+        - chapters/06-interesne-skupine.qmd
+    - part: "DIO II: JAVNE POLITIKE – ZAŠTO NAM DRŽAVA UZIMA I NA ŠTO TROŠI?"
+      chapters:
+        - chapters/07-drzavna-potrosnja.qmd
+        - chapters/08-porezi.qmd
+        - chapters/09-pametne-odluke.qmd
+    - part: "DIO III: ZA KRAJ"
+      chapters:
+        - chapters/10-zakljucak.qmd
+
+  appendices:
+    - references.qmd
+
+bibliography: references.bib
+
+# Croatian cross-references
+crossref:
+  fig-title: "Slika"
+  tbl-title: "Tablica"
+  sec-prefix: "Poglavlje"
+  fig-prefix: "Slika"
+  tbl-prefix: "Tablica"
+
+format:
+  html:
+    theme:
+      - cosmo
+      - styles/custom.scss
+    css: styles/styles.css
+    toc: true
+    toc-depth: 3
+    number-sections: true
+    number-depth: 3
+    code-fold: true
+    code-summary: "Prikaži kod"
+    code-tools: true
+    code-copy: hover
+    fig-width: 8
+    fig-height: 6
+    lang: hr-HR
+    comments:
+      hypothesis: true
+
+  pdf:
+    documentclass: book
+    classoption: [oneside, openany]
+    fontsize: 11pt
+    geometry:
+      - top=25mm
+      - left=25mm
+      - right=25mm
+      - bottom=25mm
+    papersize: a4
+    fig-width: 6
+    fig-height: 4
+    include-in-header:
+      text: |
+        \usepackage[croatian]{babel}
+        \usepackage{lmodern}
+        \usepackage[T1]{fontenc}
+        \usepackage[utf8]{inputenc}
+
+  epub:
+    cover-image: "images/cover.png"
+    toc: true
+
+execute:
+  freeze: auto
+  cache: true
+  echo: true
+  warning: false
+  message: false
