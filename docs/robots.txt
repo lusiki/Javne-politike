@@ -1,1 +1,1 @@
-Sitemap: https://lusiki.github.io/javne-politike-knjiga/sitemap.xml
+Sitemap: https://lusiki.github.io/Javne-politike/sitemap.xml

@@ -1,4 +1,3 @@
-    
 ---
 title: "Sve što želite znati o državi i javnim politikama"
 description: "Praktični i interaktivni udžbenik za studente i sve koji žele znati više o funkcioniranju države, javnog izbora i politika u Hrvatskoj."
