@@ -308,7 +308,7 @@ takozvane „proizvode" poput subvencija, kontrole nad ulaskom na tržište,
 regulacije supstituta ili fiksiranja cijena, a industrije s koncentriranim
 interesima su najbolje organizirane da te proizvode "kupe". Ovo
 objašnjava zašto propisi često sadrže "klauzule o starosti"
-(*grandfather clauses*) koje oslobađaju postojeće tvrtke od novih zahtjeva, čime
+(engl. *grandfather clauses*) koje oslobađaju postojeće tvrtke od novih zahtjeva, čime
 se efektivno stvaraju prepreke za ulazak novih konkurenata (Stigler, 1971.).
 
 Ovakvi neintuitivni ishodi rezultat
@@ -317,7 +317,7 @@ su logike kolektivnog djelovanja, koju je Mancur Olson razradio 1965. godine
 koncentriranim interesima daleko učinkovitije u kolektivnom djelovanju od
 velikih skupina s difuznim interesima (Buchanan & Tullock, 2004). To je
 zato što članovi manjih grupa imaju veći pojedinačni ulog, niže troškove
-organiziranja i manji problem "slobodnog jahača" (*free-rider problem*)
+organiziranja i manji problem "slobodnog jahača" (engl. *free-rider problem*)
 (Buchanan & Tullock, 2004). Zbog toga su lobističke skupine koje
 predstavljaju koncentrirane industrije uspješnije u osiguravanju privilegija
 koje donose značajne koristi njima, dok se troškovi tih privilegija raspršuju
@@ -325,7 +325,7 @@ na cijelu, neorganiziranu javnost (Olson, 1965; Stigler, 1971). To je temeljni
 mehanizam kojim teorija javnog izbora objašnjava disproporcionalni utjecaj
 posebnih interesa na javnu politiku.
 
-### Birokrati: borba za proračun i kritički osvrt
+### Birokrati, borba za proračun i kritički osvrt
 
 Teorija javnog izbora primjenjuje
 model samointeresnog aktera i na birokrate, odnosno državne službenike, što
@@ -423,7 +423,7 @@ racionalnost aktera može izraziti kroz različite oblike – od maksimizacije
 proračuna do oblikovanja institucionalnih struktura koje donose profesionalnu
 autonomiju i status.
 
-## Zašto su Odluke Države Često Neintuitivne?
+## Zašto su odluke države često neintuitivne?
 
 Odluke države često se doimaju
 neintuitivnima u slučajevima primjerice kada se subvencioniraju neefikasne
@@ -446,7 +446,7 @@ poticajima dovodi do kolektivno nepoželjnih rezultata. Drugim riječima,
 neefikasnost nije slučajna ili rezultat iracionalnosti, već sustavna posljedica
 načina na koji su političke i birokratske institucije strukturirane.
 
-### Logika Kolektivne Akcije: koncentrirane koristi i raspršeni troškovi
+### Logika kolektivne akcije, koncentrirane koristi i raspršeni troškovi
 
 Institucionalni korijeni
 neuspjeha države posebno su jasno objašnjeni u radu Mancura Olsona *The Logic of Collective Action* (1965).
@@ -490,15 +490,13 @@ Prethodno je već objašnjeno kako
 trgovanje glasovima (engl. *Logrolling*)
 zapravo predstavlja praksu trgovanja glasovima među političarima, često s
 ciljem osiguravanja prolaska zakonodavstva koje koristi specifičnim,
-koncentriranim interesima.
+koncentriranim interesima. Pritom se ta trgovina glasovima
+najčešće manifestira u dva oblika:
 
-Pritom se ta trgovina glasovima
-najčešće manifestira u dva oblika;
-
-1.  Eksplicitno trgovanje glasovima: Otvorena, izravna trgovina
-    glasovima.
+1.  Eksplicitno trgovanje glasovima (otvorena, izravna trgovina
+    glasovima).
 2.  Implicitno trgovanje glasovima (takozvano Tullockovo
-    pakiranje): Ugrađivanje različitih, često nepovezanih mjera u jedan
+    pakiranje). Ugrađivanje različitih, često nepovezanih mjera u jedan
     sveobuhvatan zakonodavni paket (*tie-bar*),
     o kojem se glasa jednom.
 
