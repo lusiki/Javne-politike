@@ -3,49 +3,68 @@ title: "Sve što želite znati o državi i javnim politikama"
 description: "Praktični i interaktivni udžbenik za studente i sve koji žele znati više o funkcioniranju države, javnog izbora i politika u Hrvatskoj."
 ---
 
-# Sve što želite znati o državi i javnim politikama (u Hrvatskoj)
+Početkom devedesetih godina prošlog stoljeća, dok se Hrvatska tek konstituirala kao neovisna država, skupina ekonomista u Sjedinjenim Državama već je desetljećima postavljala pitanje koje je većina političkih znanstvenika smatrala neprimjerenim, gotovo blasfemičnim: što ako političari nisu ništa drugačiji od bilo kojeg drugog čovjeka? Što ako ih ne pokreće neka viša svrha, neka urođena predanost javnom dobru, nego isti motivi koji pokreću vašeg susjednog poduzetnika, vašu kolegicu na poslu, ili vas same? Što ako su porezi, zakoni, subvencije i regulacije proizvod istih kalkulacija troškova i koristi koje koristimo kada biramo koji ćemo automobil kupiti ili u koji ćemo restoran otići večeras?
 
-::: {style="text-align: center; font-size: 1.1em; color: #555;"}
-*Praktični i interaktivni udžbenik za studente i sve koji žele znati više*
+Ovo pitanje, koje na prvi pogled zvuči cinično, zapravo je jedno od najplodnijih intelektualnih pitanja dvadesetog stoljeća. Iz njega je nastala čitava disciplina, teorija javnog izbora, koja je transformirala način na koji razumijemo političke procese, birokratske odluke i funkcioniranje države. James Buchanan, čovjek koji je za svoj doprinos ovom polju dobio Nobelovu nagradu za ekonomiju 1986. godine, nazvao je to "politikom bez romantike." Ova knjiga postoji zato da vas uvede u taj način razmišljanja i da ga primijeni na kontekst koji vam je najbliži: na Hrvatsku.
+
+## Zašto još jedna knjiga o politici
+
+Knjiga koju držite pred sobom, ili točnije, čitate na ekranu, nije još jedan udžbenik iz političke znanosti koji prepričava klasifikacije političkih sustava i nabrajajući tipove demokracija. Takvih knjiga ima dovoljno, i mnoge od njih su odlične. Ova knjiga radi nešto drugačije. Ona polazi od pretpostavke da je politika u svojoj srži proces razmjene, sustav poticaja i odgovora na poticaje, igra s pravilima koja oblikuju ponašanje svih sudionika. Birači, političari, birokrati, interesne skupine, lobisti, regulatori, svi oni funkcioniraju unutar sustava pravila koja nagrađuju određena ponašanja i kažnjavaju druga. Kada shvatite pravila, shvatite i ponašanje. Kada shvatite ponašanje, prestajete se čuditi ishodima.
+
+Zamislite tržnicu. Zamislite Dolac u subotu ujutro. Prodavačice imaju informaciju o kvaliteti svojih rajčica kakvu vi nemate. Kupci prelaze od štanda do štanda, uspoređuju cijene, ispipavaju paradajz, pokušavaju procijeniti odnos cijene i kvalitete. Nitko od sudionika ne razmišlja o "općem dobru tržnice." Svaki prodavač želi prodati skuplje, svaki kupac želi kupiti jeftinije, a iz te naizgled sebične interakcije nastaje nešto začuđujuće funkcionalno: mehanizam cijena koji raspodjeljuje robu, alocira resurse i šalje signale o ponudi i potražnji. Adam Smith je to nazvao nevidljivom rukom. Ono što su Buchanan, Tullock, Downs i Olson učinili jest da su istu logiku primijenili na politiku. Političko tržište funkcionira na sličan način: političari nude politike, birači kupuju glasovima, birokrati provode, a interesne skupine lobiraju za povoljniji tretman. Razlika je u tome što na tržnici proizvoda mehanizam cijena uglavnom vodi do efikasnih ishoda, dok na političkom tržištu strukturalni problemi poput racionalnog neznanja birača, koncentriranih koristi i raspršenih troškova, te birokratske informacijske asimetrije sustavno proizvode ishode koji nisu u interesu većine. To je ono što ekonomisti nazivaju neuspjehom države (engl. *government failure*), i razumijevanje tog fenomena je jedan od središnjih ciljeva ove knjige.
+
+## Logika knjige
+
+Knjiga je podijeljena u tri dijela i svaki od njih odgovara na temeljno pitanje.
+
+Prvi dio, naslovljen "Javni izbor: što, kako i zašto," bavi se mehanikom političkog odlučivanja. Ovdje ćete naučiti što je teorija javnog izbora, kako se oblikovao njezin intelektualni okvir od Downsa i Buchanana do suvremenih autora, i zašto je njezina temeljna pretpostavka, da su svi politički akteri racionalni i samozainteresirani, toliko moćan analitički alat. Zatim ulazimo u konkretne mehanizme: kako birači donose odluke i zašto su tako često, i to potpuno racionalno, neinformirani o temama o kojima glasaju. Govorimo o paradoksu glasanja, o pitanju zašto racionalan čovjek uopće izlazi na izbore kada je vjerojatnost da njegov glas bude odlučujući praktično jednaka nuli. Analiziramo kako stranke i kandidati oblikuju svoje programe, što ih motivira da se pozicioniraju upravo tamo gdje se pozicioniraju, i kako teorija medijanskog glasača objašnjava konvergenciju stranačkih platformi prema političkom centru. Proučavamo birokrate, ne kao bezlične provodnike zakona kakvima ih prikazuje tradicionalna slika javne uprave, nego kao racionalne aktere koji maksimiziraju vlastitu korisnost, najčešće kroz povećanje proračuna svojih odjela. I na kraju prvog dijela, govorimo o interesnim skupinama, o logici kolektivnog djelovanja, o tome zašto su male i dobro organizirane skupine neproporcijalno utjecajne u oblikovanju javnih politika, i o fenomenu traženja renti koji pretvara politiku u tržište privilegija.
+
+Drugi dio nosi naslov "Javne politike: zašto nam država uzima i na što troši" i prelazi s teorijskog na praktično, sa strukture poticaja na konkretne ishode. Ovdje ćete naučiti koliko i na što država troši, koji čimbenici oblikuju strukturu državne potrošnje, i zašto se proračunski prioriteti često čine odvojenima od stvarnih potreba građana. Analiziramo porezni sustav, ne kao suhoparni pregled stopa i olakšica, nego kao instrument koji odražava političke kompromise, lobističke pritiske i institucionalna ograničenja. I govorimo o tome kako donositi pametnije odluke o javnim resursima, o analizi troškova i koristi, o evaluaciji javnih politika i o pitanju kako možemo koristiti podatke i analitiku da poboljšamo kvalitetu državnih odluka.
+
+Treći dio zaokružuje cjelinu i povezuje sve niti u koherentnu sliku.
+
+::: {.callout-note}
+## Zašto bi vas ovo trebalo zanimati
+Razmislite o svom budućem radnom danu. Na sastanku netko kaže da je Vlada najavila novu regulaciju koja utječe na vaš sektor. Kolega komentira da je to "lobistički posao." Šefica pita treba li vaša organizacija reagirati. U tom trenutku imate dva izbora. Možete šutjeti i nadati se da će netko drugi razumjeti što se događa. Ili možete razumjeti logiku iza te regulacije: tko ju je inicirao, koji poticaji su doveli do njezina usvajanja, kome koristi i kome šteti, i što vaša organizacija realno može učiniti. Ova knjiga vas priprema za drugi izbor.
 :::
 
-<br>
+## Pristup i metoda
 
-**Autori:** Milan Deskar-Škrbić, Petra Palić, Luka Šikić
+Ova knjiga ne traži od vas da prihvatite neki ideološki stav. Ne tvrdi da je država inherentno loša, niti da je tržište inherentno dobro. Teorija javnog izbora nije ideologija, ona je analitički alat, i kao svaki alat, može se koristiti za dijagnostiku problema neovisno o tome koje rješenje preferirate. Razumijevanje poticaja koji oblikuju ponašanje političara ne znači da mrzite političare. Razumijevanje birokratske tendencije prema ekspanziji proračuna ne znači da prezirte javnu upravu. To znači da razumijete sustav. A razumijevanje sustava je preduvjet za bilo kakvu smislenu promjenu.
 
----
+Metodološki, knjiga se oslanja na pristup poznat kao metodološki individualizam. To je ideja da kolektivne odluke ne donosi nekakav apstraktni entitet zvan "država" ili "društvo," nego konkretni pojedinci koji djeluju unutar institucionalnih okvira. Država ne odlučuje. Odlučuju ljudi unutar institucija koje zovemo državom. Kada to jednom internalizirate, cijeli vaš pogled na politiku se mijenja. Umjesto da se pitate "zašto država ne čini više za obrazovanje" ili "zašto država troši toliko na birokraciju," počinjete postavljati preciznije pitanja: koji poticaji oblikuju ponašanje ministra obrazovanja, kakva je informacijska struktura između zakonodavca i biroa koji provodi obrazovnu politiku, tko su interesne skupine koje utječu na zakonodavstvo u tom području, i kako pravila glasanja i koalicijski aranžmani oblikuju konačne ishode.
 
-Država i politika često djeluju kao "crna kutija". Odluke se donose, zakoni se mijenjaju, a mi kao građani rijetko imamo jasan uvid u to **zašto** se nešto dogodilo. Ova knjiga je vaš alat za otvaranje te crne kutije.
+## Što ova knjiga nije
 
-Naš cilj nije da vam damo gotove odgovore, već da vas opremimo načinom razmišljanja – alatima **teorije javnog izbora** – kako biste sami mogli analizirati i razumjeti političku stvarnost oko sebe. Kroz praktične primjere iz hrvatskog konteksta, pokazat ćemo vam logiku koja stoji iza naizgled nelogičnih odluka.
+Ova knjiga nije uvod u političku filozofiju. Nećemo raspravljati o tome kakva bi država trebala biti u idealnom smislu. Ne bavimo se pitanjima pravednosti u rawlsovskom ključu, niti normativnim teorijama demokracije. Te su teme važne, ali za njih postoje drugi izvrsni tekstovi. Naš fokus je pozitivan, ne normativni. Zanima nas kako sustav zapravo funkcionira, a ne kako bi trebao funkcionirati. To ne znači da je normativna dimenzija nevažna. Naprotiv, konstitucionalna politička ekonomija, koju su razvili upravo Buchanan i Brennan, postavlja ključno pitanje o tome kako bi pravila igre trebala biti dizajnirana da proizvode bolje ishode. Ali da biste mogli razmišljati o boljem dizajnu pravila, prvo morate razumjeti kako postojeća pravila oblikuju ponašanje. Pozitivna analiza je temelj na kojem stoji svaka smislena normativna rasprava.
 
-::: {.columns}
-::: {.column width="45%"}
-### Što ćete naučiti?
+Knjiga također nije suhoparni pregled literature. Ne zanima nas nabrojati sve što je ikad napisano o javnom izboru. Zanima nas odabrati ono što je najkorisnije za razumijevanje hrvatske političke stvarnosti i predstaviti to na način koji je pristupačan, utemeljen na podacima i primjenjiv u praksi. Svaki koncept koji uvodimo ima svoju primjenu. Svaka teorija koju predstavljamo testira se na stvarnim podacima. I svaka lekcija koju nudimo ima konkretan profesionalni ili građanski kontekst u kojem postaje relevantna.
 
-Ova knjiga će vam pomoći da:
+## Za koga je ova knjiga
 
--   **Razumijete "ZAŠTO"**: Naučit ćete zašto političari, birači i birokrati donose odluke koje donose, čak i kada se one čine suprotnima "općem dobru".
+Ovu knjigo primarno pišemo za studente. Za studente političkih znanosti koji žele vidjeti politiku iz perspektive ekonomske analize. Za studente ekonomije koji žele razumjeti zašto su javne politike često neefikasne unatoč jasnim ekonomskim argumentima. Za studente javne uprave koji žele razumjeti institucije u kojima će raditi. Za studente prava koji žele kontekst za razumijevanje regulatornog okvira. Ali ova knjiga je napisana tako da je može uzeti u ruke bilo tko. Ne pretpostavljamo napredni matematički aparat. Ne pretpostavljamo poznavanje ekonomske teorije izvan onoga što svatko tko je završio srednju školu intuitivno razumije: da ljudi reagiraju na poticaje, da resursi nisu neograničeni, i da odluke imaju troškove i koristi.
 
--   **Analizirate politike**: Dobit ćete alate za kritičku analizu javnih politika, od poreza do državne potrošnje, i prepoznavanje tko od njih ima koristi, a tko snosi trošak.
+Jedino što pretpostavljamo jest znatiželja. Pretpostavljamo da vas zanima zašto stvari funkcioniraju onako kako funkcioniraju. Pretpostavljamo da niste zadovoljni odgovorima koji se svode na "tako je" ili "svi su oni isti" ili "to je politika." Pretpostavljamo da želite razumjeti. Ako je to točno, onda je ova knjiga za vas.
 
--   **Postanete informiraniji građanin**: Umjesto da politiku pratite s frustracijom, promatrat ćete je s razumijevanjem. Vidjet ćete sustav, pravila igre i motive koji oblikuju našu svakodnevicu.
+## Kako čitati ovu knjigu
+
+Ovo je knjiga za digitalno doba i građena je s tom namjerom. Svaki grafikon koji vidite nije statična slika, nego vizualizacija izrađena u programskom jeziku R iz stvarnih podataka. Možete jednim klikom vidjeti kod koji ju je proizveo. Možete preuzeti podatke. Možete ponoviti analizu, promijeniti parametre, testirati vlastite hipoteze. Ova transparentnost nije slučajna. Ona odražava temeljno načelo knjige: tvrdnje moraju biti provjerljive.
+
+Knjiga je objavljena kao otvoreni projekt na GitHubu, što znači da je njezin cjelokupni izvorni kod, svi podaci i sve vizualizacije dostupne svakome. Ako pronađete grešku, možete je prijaviti ili čak ispraviti sami. Ako imate prijedlog za bolje objašnjenje ili relevantniji primjer, pozivamo vas da ga predložite. Ova knjiga je živi dokument koji se poboljšava svakim čitateljem koji odluči pridonijeti.
+
+::: {.callout-tip}
+## Navigacija
+Preporučujemo da krenete redom jer svako poglavlje gradi na konceptima uvedenima u prethodnima. Prvo poglavlje postavlja teorijske temelje bez kojih se kasnija poglavlja ne mogu u potpunosti razumjeti. Ali ako vas zanima specifična tema, navigacija na lijevoj strani omogućuje vam brz pristup bilo kojem dijelu knjige. Svako poglavlje je, koliko je to bilo moguće, napisano tako da može funkcionirati i samostalno.
 :::
 
+## Hrvatska kao laboratorij
 
-:::
-Knjiga za 21. stoljeće
+Postoji još jedan razlog zašto je ova knjiga posebna. Većina literature o javnom izboru napisana je u kontekstu Sjedinjenih Država ili, u manjoj mjeri, zapadnoeuropskih demokracija s dugom tradicijom demokratskih institucija. Hrvatska je drugačiji kontekst. Riječ je o mladoj demokraciji koja je u tri desetljeća prošla kroz rat, tranziciju iz socijalizma u tržišno gospodarstvo, pristupanje Europskoj uniji i integraciju u eurozonu. Svaki od tih procesa proizveo je specifične institucionalne strukture, specifične odnose moći i specifične oblike neuspjeha države koji se ne mogu jednostavno objasniti primjerima iz američke ili britanske politike.
 
-Vjerujemo da obrazovni materijali trebaju biti moderni, dostupni i prilagođeni čitatelju. Zato je ova knjiga:
+Upravo zato ova knjiga koristi hrvatski kontekst kao primarni izvor primjera, podataka i analiza. Kada govorimo o izlaznosti na izbore, govorimo o hrvatskim izborima. Kada analiziramo porezni sustav, analiziramo hrvatske poreze. Kada raspravljamo o birokraciji, imamo na umu hrvatsku javnu upravu s njezinim specifičnim karakteristikama, poviješću i izazovima. To ne znači da ignoriramo međunarodnu komparativnu perspektivu. Naprotiv, usporedbe s drugim zemljama su neophodne za razumijevanje gdje se Hrvatska nalazi i kamo se kreće. Ali polazište je uvijek domaće, jer vjerujemo da se najbolje uči iz konteksta koji poznajete.
 
-    Potpuno otvorena i besplatna: Cijeli sadržaj je dostupan online kao open-source projekt. Cijenimo vaše prijedloge i ispravke!
+Ovo je pristup koji preuzimamo od samog Buchanana. On je inzistirao da ekonomska i politička analiza mora polaziti od konkretnih institucija u konkretnom vremenu i mjestu, a ne od apstraktnih modela koji lebde u zrakopraznom prostoru. Hrvatska nije Sjedinjene Države. Hrvatski birači suočavaju se s drugačijim poticajima, hrvatske stranke funkcioniraju u drugačijem institucionalnom okviru, a hrvatska birokracija nosi teret specifične postsocijalističke baštine. Razumjeti te specifičnosti kroz leću teorije javnog izbora cilj je koji ova knjiga nastoji ostvariti.
 
-    Interaktivna: Gdje god je moguće, koristimo interaktivne grafikone i podatke kako biste mogli sami istraživati, a ne samo čitati.
+## Što slijedi
 
-    Utemeljena na podacima: Teoriju potkrepljujemo stvarnim, provjerljivim podacima iz hrvatskog i međunarodnog konteksta.
-
-<br>
-
-::: {style="text-align: center; font-size: 1.2em;"}
-Spremni za početak? Zaronite u prvo poglavlje »
-:::
+Sljedeće poglavlje uvodi vas u teoriju javnog izbora i počinje s pitanjem koje je istovremeno jednostavno i duboko: što to uopće znači kada kažemo da su političari racionalni akteri? Odgovor na to pitanje, kako ćete vidjeti, mijenja sve.
