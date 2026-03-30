@@ -15,7 +15,8 @@ book:
     - name: "Luka Šikić"
       email: "luka.sikic@unicath.hr"
 
-  date: today
+  date: last-modified
+  date-format: "D MMMM YYYY"
   language: hr-HR
 
   site-url: "https://lusiki.github.io/Javne-politike/"
@@ -24,17 +25,23 @@ book:
   repo-actions: [edit, issue]
 
   cover-image: "/cover.jpg"
+  cover-image-alt: "Naslovnica knjige o javnim politikama u Hrvatskoj"
   favicon: "images/favicon.ico"
 
-  search: true
-  downloads: [pdf, epub]
+  search:
+    location: sidebar
+    type: overlay
+  page-navigation: true
+  reader-mode: true
   sharing: [twitter, facebook, linkedin]
 
   sidebar:
-    style: "floating"
+    style: docked
     background: light
+    collapse-level: 2
 
-  page-navigation: true
+  page-footer:
+    center: "© 2026 Deskar-Škrbić, Palić, Šikić | Javne politike u Hrvatskoj"
 
   chapters:
     - index.qmd
@@ -63,7 +70,6 @@ book:
 
 bibliography: references.bib
 
-# Croatian cross-references
 crossref:
   fig-title: "Slika"
   tbl-title: "Tablica"
@@ -74,46 +80,50 @@ crossref:
 format:
   html:
     theme:
-      - cosmo
-      - styles/custom.scss
+      light:
+        - cosmo
+        - brand
+        - styles/custom.scss
+      dark:
+        - darkly
+        - brand
     css: styles/styles.css
-    toc: true
-    toc-depth: 3
-    number-sections: true
-    number-depth: 3
+    lightbox: auto
+    code-copy: true
     code-fold: true
     code-summary: "Prikaži kod"
     code-tools: true
-    code-copy: hover
+    code-link: true
+    code-overflow: scroll
+    code-line-numbers: false
+    code-block-bg: true
+    highlight-style:
+      light: github
+      dark: github-dark
+    toc: true
+    toc-depth: 3
+    toc-expand: 2
+    toc-location: right
+    number-sections: true
+    number-depth: 3
+    smooth-scroll: true
+    anchor-sections: true
+    link-external-icon: true
+    link-external-newwindow: true
+    fig-responsive: true
+    fig-align: center
+    fig-cap-location: bottom
     fig-width: 8
     fig-height: 6
+    tbl-cap-location: top
+    reference-location: margin
+    citation-location: margin
+    fontsize: 1.05em
+    linestretch: 1.75
     lang: hr-HR
     comments:
       hypothesis: true
     prefer-html: true
-
-  # pdf:
-  #   documentclass: book
-  #   classoption: [oneside, openany]
-  #   fontsize: 11pt
-  #   geometry:
-  #     - top=25mm
-  #     - left=25mm
-  #     - right=25mm
-  #     - bottom=25mm
-  #   papersize: a4
-  #   fig-width: 6
-  #   fig-height: 4
-  #   include-in-header:
-  #     text: |
-  #       \usepackage[croatian]{babel}
-  #       \usepackage{lmodern}
-  #       \usepackage[T1]{fontenc}
-  #       \usepackage[utf8]{inputenc}
-  #
-  # epub:
-  #   cover-image: "images/cover.png"
-  #   toc: true
 
 execute:
   freeze: auto

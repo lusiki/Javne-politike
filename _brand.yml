@@ -1,0 +1,40 @@
+meta:
+  name: "Sve što želite znati o državi i javnim politikama u Hrvatskoj"
+  link: https://lusiki.github.io/Javne-politike/
+
+color:
+  palette:
+    navy: "#1B2A4A"
+    slate: "#4A5568"
+    gold: "#C8942D"
+    light-gold: "#F5ECD7"
+    cream: "#FAFAF5"
+    charcoal: "#2D3748"
+  foreground: charcoal
+  background: cream
+  primary: navy
+  secondary: slate
+  success: "#2F855A"
+  info: gold
+  warning: "#DD6B20"
+  danger: "#C53030"
+
+typography:
+  fonts:
+    - family: "Source Serif 4"
+      source: google
+    - family: "Source Sans 3"
+      source: google
+    - family: "JetBrains Mono"
+      source: google
+  base:
+    family: "Source Serif 4"
+    size: 1.05rem
+    line-height: 1.75
+  headings:
+    family: "Source Sans 3"
+    weight: 700
+    color: navy
+  monospace:
+    family: "JetBrains Mono"
+    size: 0.85em
