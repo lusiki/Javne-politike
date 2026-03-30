@@ -1,0 +1,62 @@
+---
+title: "Dobrodošli"
+---
+
+# Sve što želite znati o državi i javnim politikama u Hrvatskoj
+
+**Praktični i interaktivni udžbenik za studente i sve koji žele znati više**
+
+**Autori:** Milan Deskar-Škrbić, Petra Palić, Luka Šikić
+
+## O čemu se radi?
+
+Ova knjiga je praktičan vodič kroz složen svijet javnih politika i političkih odluka u Hrvatskoj. Kroz interaktivne primjere, analize stvarnih podataka i jasna objašnjenja, učit ćete:
+
+- Kako funkcionira javni izbor i zašto političari donose određene odluke
+- Kako se oblikuju javne politike i kako utječu na naš svakodnevni život  
+- Kako analizirati i razumjeti političke procese oko nas
+
+::: {.callout-note}
+## Zašto biste trebali čitati ovu knjigu?
+
+Bez obzira jeste li student političkih znanosti, javne uprave, ekonomije ili jednostavno zainteresirani građanin - ova knjiga će vam pomoći da bolje razumijete kako funkcionira država i zašto su javne politike takve kakve jesu.
+:::
+
+## Kako koristiti ovu knjigu
+
+- **Interaktivno iskustvo**: Knjiga sadrži interaktivne grafikone, tablice i analize
+- **Stvarni podaci**: Koristimo prave podatke o hrvatskoj politici i ekonomiji
+- **Praktični primjeri**: Svaki koncept je objašnjen kroz konkretno hrvatsko iskustvo
+
+```{r}
+#| echo: false
+#| message: false
+#| fig-cap: "Izlaznost na izbore u Hrvatskoj kroz godine"
+
+library(ggplot2)
+
+df <- data.frame(
+  godina = 2015:2023,
+  izlaznost = c(59.1, 52.6, 54.3, 49.5, 46.9, 50.2, 47.8, 55.9, 51.2)
+)
+
+p <- ggplot(df, aes(x = godina, y = izlaznost)) +
+  geom_line(color = "#1f4e79", size = 1.2) +
+  geom_point(color = "#1f4e79", size = 3) +
+  labs(
+    title = "Izlaznost na izbore u Hrvatskoj",
+    x = "Godina", 
+    y = "Izlaznost (%)",
+    caption = "Izvor: DIP"
+  ) +
+  theme_minimal() +
+  theme(
+    plot.title = element_text(size = 14, face = "bold"),
+    axis.title = element_text(size = 12)
+  )
+
+print(p)
+
+```
+
+
