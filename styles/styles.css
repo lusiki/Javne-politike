@@ -5,17 +5,6 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* Croatian quotation marks and blockquotes */
-blockquote::before {
-  content: '\201E';
-  font-size: 3rem;
-  color: #C8942D;
-  position: absolute;
-  left: -0.5rem;
-  top: -1rem;
-  opacity: 0.3;
-}
-
 /* Figure and image styling */
 img {
   max-width: 100%;
@@ -26,7 +15,6 @@ img {
 @media (max-width: 768px) {
   body {
     font-size: 16px;
-    line-height: 1.6;
   }
 
   table {

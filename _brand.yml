@@ -21,20 +21,20 @@ color:
 
 typography:
   fonts:
-    - family: "Source Serif 4"
+    - family: "Roboto Slab"
       source: google
-    - family: "Source Sans 3"
+    - family: "Roboto"
       source: google
-    - family: "JetBrains Mono"
+    - family: "Roboto Mono"
       source: google
   base:
-    family: "Source Serif 4"
-    size: 1.05rem
-    line-height: 1.75
+    family: "Roboto Slab"
+    size: 1rem
+    line-height: 1.7
   headings:
-    family: "Source Sans 3"
-    weight: 700
+    family: "Roboto"
+    weight: 600
     color: navy
   monospace:
-    family: "JetBrains Mono"
+    family: "Roboto Mono"
     size: 0.85em

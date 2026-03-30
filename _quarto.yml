@@ -118,8 +118,8 @@ format:
     tbl-cap-location: top
     reference-location: margin
     citation-location: margin
-    fontsize: 1.05em
-    linestretch: 1.75
+    fontsize: 1rem
+    linestretch: 1.7
     lang: hr-HR
     comments:
       hypothesis: true

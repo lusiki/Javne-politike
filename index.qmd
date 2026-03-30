@@ -2,61 +2,65 @@
 title: "Dobrodošli"
 ---
 
-# Sve što želite znati o državi i javnim politikama u Hrvatskoj
+Zamislite da sjedite u kafiću i čitate naslov u novinama: Vlada je odlučila povisiti PDV na određene proizvode. Vaša prva reakcija vjerojatno je frustracija, možda ljutnja. Ali pitanje koje rijetko tko postavi, a koje je zapravo jedino korisno pitanje, glasi: zašto? Ne zašto u smislu političke retorike kojom će ministar financija objasniti odluku na konferenciji za novinare, nego zašto u analitičkom smislu, koji mehanizmi, poticaji i pritisci su doveli do toga da se baš ta odluka donese u baš ovom trenutku, i tko od te odluke zapravo ima koristi, a tko snosi trošak?
 
-**Praktični i interaktivni udžbenik za studente i sve koji žele znati više**
+Ova knjiga postoji zato da vam omogući postavljanje upravo takvih pitanja. Ne s pozicije ideologije, frustracije ili cinizma, nego s pozicije analitičkog razumijevanja. Napisali smo je za studente i za sve koji žele razumjeti logiku koja stoji iza političkih odluka u Hrvatskoj, logiku koja se na prvi pogled čini nelogičnom, ali koja postaje savršeno razumljiva kada shvatite pravila igre.
 
-**Autori:** Milan Deskar-Škrbić, Petra Palić, Luka Šikić
+## O čemu se radi u ovoj knjizi
 
-## O čemu se radi?
+Temelj knjige je teorija javnog izbora (engl. *Public Choice Theory*), disciplina koju je James Buchanan, dobitnik Nobelove nagrade za ekonomiju, opisao kao "politiku bez romantike." Umjesto da pretpostavljamo kako političari, birokrati i birači djeluju u interesu nekog apstraktnog "općeg dobra," ova teorija primjenjuje ekonomsku logiku na političke procese. Polazište je jednostavno: svi sudionici u političkom sustavu su racionalni pojedinci koji reagiraju na poticaje. Kada razumijete poticaje, razumijete i ishode.
 
-Ova knjiga je praktičan vodič kroz složen svijet javnih politika i političkih odluka u Hrvatskoj. Kroz interaktivne primjere, analize stvarnih podataka i jasna objašnjenja, učit ćete:
+Knjiga je organizirana u tri dijela. Prvi dio bavi se javnim izborom i odgovara na pitanja koja se tiču samog mehanizma donošenja političkih odluka: kako birači glasaju, zašto stranke oblikuju programe kakve oblikuju, što motivira birokrate, i kako interesne skupine utječu na zakonodavstvo. Drugi dio prelazi na javne politike, odnosno na konkretnu stranu državnog djelovanja: koliko država troši, na što troši, kako prikuplja sredstva kroz porezni sustav, i kako donositi pametnije odluke o raspodjeli javnih resursa. Treći dio zaokružuje cjelinu.
 
-- Kako funkcionira javni izbor i zašto političari donose određene odluke
-- Kako se oblikuju javne politike i kako utječu na naš svakodnevni život  
-- Kako analizirati i razumjeti političke procese oko nas
+Kroz cijelu knjigu koristimo stvarne podatke iz hrvatskog konteksta. Ne govorimo o apstraktnim državama i hipotetskim biračima, nego o hrvatskom proračunu, hrvatskim izborima, i hrvatskim institucijama. Svaki koncept je utemeljen u stvarnosti koju čitate u novinama i doživljavate kao građani.
 
-::: {.callout-note}
-## Zašto biste trebali čitati ovu knjigu?
+## Kome je namijenjena
 
-Bez obzira jeste li student političkih znanosti, javne uprave, ekonomije ili jednostavno zainteresirani građanin - ova knjiga će vam pomoći da bolje razumijete kako funkcionira država i zašto su javne politike takve kakve jesu.
-:::
+Knjiga je primarno namijenjena studentima političkih znanosti, javne uprave, ekonomije i srodnih disciplina. Ali napisana je tako da je može koristiti svatko tko želi razumjeti kako funkcionira država, bez obzira na prethodno obrazovanje. Ne trebate biti ekonomist da biste razumjeli javni izbor. Trebate samo biti spremni na to da napustite romantičnu predodžbu o politici i prihvatite analitičku.
 
 ## Kako koristiti ovu knjigu
 
-- **Interaktivno iskustvo**: Knjiga sadrži interaktivne grafikone, tablice i analize
-- **Stvarni podaci**: Koristimo prave podatke o hrvatskoj politici i ekonomiji
-- **Praktični primjeri**: Svaki koncept je objašnjen kroz konkretno hrvatsko iskustvo
+Ovo je interaktivna knjiga za digitalno doba. Gdje god je to imalo smisla, umjesto statičnih tablica i grafikona koristimo interaktivne vizualizacije koje možete istraživati sami. Iza svake vizualizacije stoji kod koji ju je proizveo, vidljiv jednim klikom, tako da možete ne samo razumjeti zaključke nego i provjeriti kako smo do njih došli i ponoviti analizu s vlastitim pitanjima. Cijeli sadržaj je otvoren i besplatan, objavljen kao open-source projekt na GitHubu. Ako primijetite grešku ili imate prijedlog za poboljšanje, pozivamo vas da otvorite *issue* ili predložite izmjenu izravno na repozitoriju.
+
+::: {.callout-tip}
+## Prije nego započnete
+Preporučujemo da krenete redom, od prvog poglavlja prema posljednjem, jer svako poglavlje gradi na konceptima uvedenima u prethodnima. Ali ako vas zanima specifična tema, poput poreznog sustava ili interesnih skupina, slobodno skočite izravno na to poglavlje. Navigacija na lijevoj strani omogućuje vam brz pristup bilo kojem dijelu knjige.
+:::
 
 ```{r}
 #| echo: false
 #| message: false
-#| fig-cap: "Izlaznost na izbore u Hrvatskoj kroz godine"
+#| fig-cap: "Izlaznost na parlamentarne izbore u Hrvatskoj"
 
 library(ggplot2)
 
 df <- data.frame(
-  godina = 2015:2023,
-  izlaznost = c(59.1, 52.6, 54.3, 49.5, 46.9, 50.2, 47.8, 55.9, 51.2)
+  godina = c(2000, 2003, 2007, 2011, 2015, 2016, 2020, 2024),
+  izlaznost = c(76.5, 61.7, 59.5, 54.2, 59.1, 52.6, 46.9, 55.9)
 )
 
 p <- ggplot(df, aes(x = godina, y = izlaznost)) +
-  geom_line(color = "#1f4e79", size = 1.2) +
-  geom_point(color = "#1f4e79", size = 3) +
+  geom_line(color = "#1B2A4A", linewidth = 0.8) +
+  geom_point(color = "#1B2A4A", size = 2.5) +
   labs(
-    title = "Izlaznost na izbore u Hrvatskoj",
-    x = "Godina", 
+    x = NULL,
     y = "Izlaznost (%)",
-    caption = "Izvor: DIP"
+    caption = "Izvor: Državno izborno povjerenstvo"
   ) +
-  theme_minimal() +
+  scale_x_continuous(breaks = df$godina) +
+  scale_y_continuous(limits = c(40, 80)) +
+  theme_minimal(base_family = "Roboto") +
   theme(
-    plot.title = element_text(size = 14, face = "bold"),
-    axis.title = element_text(size = 12)
+    panel.grid.minor = element_blank(),
+    panel.grid.major.x = element_blank(),
+    panel.grid.major.y = element_line(color = "#E2E8F0", linewidth = 0.3),
+    axis.text = element_text(color = "#4A5568", size = 10),
+    axis.title.y = element_text(color = "#4A5568", size = 11),
+    plot.caption = element_text(color = "#718096", size = 8, hjust = 1),
+    plot.margin = margin(10, 10, 10, 10)
   )
 
 print(p)
-
 ```
 
-
+Grafikon iznad prikazuje nešto što teorija javnog izbora može objasniti: zašto izlaznost na izbore varira, i zašto racionalan birač ponekad zaključi da mu se jednostavno ne isplati izaći na birališta. Ovo nije apatija. Ovo je racionalni odgovor na konkretne poticaje. O tome govorimo u poglavljima koja slijede.

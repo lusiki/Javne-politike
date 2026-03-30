@@ -19,7 +19,7 @@ pubfin_colors <- c(
 theme_pubfin <- function(base_size = 12) {
   theme_minimal(base_size = base_size) +
     theme(
-      text = element_text(family = "Source Sans 3"),
+      text = element_text(family = "Roboto"),
       plot.title = element_text(
         face = "bold", size = rel(1.2), hjust = 0, color = "#1B2A4A"
       ),
