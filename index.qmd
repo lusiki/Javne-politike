@@ -2,30 +2,52 @@
 title: "Dobrodošli"
 ---
 
-Zamislite da sjedite u kafiću i čitate naslov u novinama: Vlada je odlučila povisiti PDV na određene proizvode. Vaša prva reakcija vjerojatno je frustracija, možda ljutnja. Ali pitanje koje rijetko tko postavi, a koje je zapravo jedino korisno pitanje, glasi: zašto? Ne zašto u smislu političke retorike kojom će ministar financija objasniti odluku na konferenciji za novinare, nego zašto u analitičkom smislu, koji mehanizmi, poticaji i pritisci su doveli do toga da se baš ta odluka donese u baš ovom trenutku, i tko od te odluke zapravo ima koristi, a tko snosi trošak?
+Zamislite da sjedite u kafiću i čitate vijest: Vlada povisuje PDV na određene proizvode. Prva reakcija je obično frustracija, možda ljutnja. Ali pitanje koje rijetko tko postavi, a koje je zapravo jedino korisno, glasi: **zašto?** Ne u smislu političke retorike kojom će ministar objasniti odluku na konferenciji za novinare, nego u analitičkom smislu – koji su mehanizmi, poticaji i pritisci doveli do toga da se baš ta odluka donese u baš ovom trenutku, tko od nje ima koristi, a tko snosi trošak?
 
-Ova knjiga postoji zato da vam omogući postavljanje upravo takvih pitanja. Ne s pozicije ideologije, frustracije ili cinizma, nego s pozicije analitičkog razumijevanja. Napisali smo je za studente i za sve koji žele razumjeti logiku koja stoji iza političkih odluka u Hrvatskoj, logiku koja se na prvi pogled čini nelogičnom, ali koja postaje savršeno razumljiva kada shvatite pravila igre.
+Ova knjiga postoji da vam omogući postavljanje takvih pitanja – ne s pozicije ideologije, frustracije ili cinizma, nego s pozicije analitičkog razumijevanja. Napisana je za studente i za sve koji žele razumjeti logiku koja stoji iza političkih odluka u Hrvatskoj; logiku koja se na prvi pogled čini nelogičnom, ali koja postaje savršeno razumljiva kada shvatite pravila igre.
 
-## O čemu se radi u ovoj knjizi
+## Polazište: politika bez romantike
 
-Temelj knjige je teorija javnog izbora (engl. *Public Choice Theory*), disciplina koju je James Buchanan, dobitnik Nobelove nagrade za ekonomiju, opisao kao "politiku bez romantike." Umjesto da pretpostavljamo kako političari, birokrati i birači djeluju u interesu nekog apstraktnog "općeg dobra," ova teorija primjenjuje ekonomsku logiku na političke procese. Polazište je jednostavno: svi sudionici u političkom sustavu su racionalni pojedinci koji reagiraju na poticaje. Kada razumijete poticaje, razumijete i ishode.
+Temelj knjige je **teorija javnog izbora** (engl. *Public Choice Theory*), disciplina koju je James Buchanan, dobitnik Nobelove nagrade za ekonomiju, opisao kao *„politiku bez romantike"*. Umjesto da pretpostavljamo da političari, birokrati i birači djeluju u ime nekog apstraktnog „općeg dobra", javni izbor primjenjuje ekonomsku logiku na političke procese. Polazište je jednostavno: svi sudionici političkog sustava racionalni su pojedinci koji reagiraju na poticaje. **Kada razumijete poticaje, razumijete i ishode.**
 
-Knjiga je organizirana u tri dijela. Prvi dio postavlja teorijske temelje: normativni i pozitivistički pristup javnim politikama, razloge postojanja države, ulogu institucija i važnost ustavnih pravila koja ograničavaju političko djelovanje. Drugi dio ulazi u stvarni svijet politike kroz teoriju javnog izbora i odgovara na pitanja o mehanizmu donošenja odluka: kako birači glasaju, zašto stranke oblikuju programe kakve oblikuju, što motivira birokrate i kako interesne skupine utječu na zakonodavstvo. Treći dio prelazi na konkretne javne politike i javne financije: koliko država troši, na što troši, kako prikuplja sredstva kroz porezni sustav i kako dizajnirati bolje politike i provoditi reforme.
+Ovaj pristup ne tvrdi da su političari cinici, a birači neznalice. Tvrdi nešto puno korisnije: da su pravila igre – ustavna, institucionalna, izborna – ta koja oblikuju ponašanje svih sudionika. Zato se loši ishodi rijetko popravljaju zamjenom ljudi na vlasti, a često popravljaju promjenom pravila.
 
-Kroz cijelu knjigu koristimo stvarne podatke iz hrvatskog konteksta. Ne govorimo o apstraktnim državama i hipotetskim biračima, nego o hrvatskom proračunu, hrvatskim izborima, i hrvatskim institucijama. Svaki koncept je utemeljen u stvarnosti koju čitate u novinama i doživljavate kao građani.
+## Što ćete naučiti
 
-## Kome je namijenjena
+Knjiga je organizirana u tri dijela koji grade jedan na drugome:
 
-Knjiga je primarno namijenjena studentima političkih znanosti, javne uprave, ekonomije i srodnih disciplina. Ali napisana je tako da je može koristiti svatko tko želi razumjeti kako funkcionira država, bez obzira na prethodno obrazovanje. Ne trebate biti ekonomist da biste razumjeli javni izbor. Trebate samo biti spremni na to da napustite romantičnu predodžbu o politici i prihvatite analitičku.
+**Dio I – Država, javne politike i temeljni pristupi analizi.** Postavljamo teorijske temelje: razliku između pozitivističkog i normativnog pristupa, razloge zbog kojih država uopće postoji (tržišni neuspjesi, javna dobra, eksternalije), ulogu institucija kao „pravila igre" te važnost ustavnih ograničenja koja discipliniraju političku moć.
+
+**Dio II – Javni izbor: što, kako i zašto.** Ulazimo u mehaniku političkog odlučivanja. Kako birači glasaju i zašto racionalan birač ponekad ne izađe na izbore? Kako stranke oblikuju programe i zašto se njihovi programi često „skupljaju oko sredine"? Što stvarno motivira birokrate – i tko uopće upravlja državom između dva izborna ciklusa? Kako interesne skupine pretvaraju koncentrirane koristi u zakone, dok troškove raspoređuju na sve nas?
+
+**Dio III – Javne financije i javne politike u praksi.** Konačno, od teorije prelazimo na brojke. Koliko država troši, na što i zašto baš toliko? Kako prikupljamo porezne prihode i koje su stvarne posljedice različitih poreznih oblika? I, najvažnije – kako dizajnirati bolje politike i provoditi reforme koje preživljavaju političke cikluse?
+
+Kroz cijelu knjigu koristimo **stvarne podatke iz hrvatskog konteksta**. Ne govorimo o apstraktnim državama i hipotetskim biračima, nego o hrvatskom proračunu, hrvatskim izborima, hrvatskim institucijama. Svaki koncept je utemeljen u stvarnosti koju čitate u novinama i doživljavate kao građani.
+
+## Zašto baš ovaj pristup
+
+Postoji mnogo knjiga o javnim politikama. Većina ih pada u jednu od dvije krajnosti: ili su čisto deskriptivne („ovako funkcioniraju institucije") ili čisto normativne („ovako bi trebale funkcionirati"). Ova knjiga nudi treću putanju – **analitički okvir koji objašnjava zašto institucije funkcioniraju baš tako kako funkcioniraju, i pod kojim uvjetima ih je moguće mijenjati.**
+
+To znači da ćete umjesto gotovih odgovora dobiti alate za postavljanje pravih pitanja. Kada sljedeći put pročitate vijest o novom zakonu, poreznoj reformi ili javnoj nabavi, nećete se pitati samo je li to „dobro" ili „loše" – pitat ćete se *koga nagrađuje, koga košta, koja je ravnoteža interesa iza te odluke i je li ona stabilna*.
+
+## Kome je knjiga namijenjena
+
+Primarno je namijenjena studentima političkih znanosti, javne uprave, ekonomije i srodnih disciplina. Ali napisana je tako da je može koristiti svatko tko želi razumjeti kako funkcionira država, bez obzira na prethodno obrazovanje. **Ne trebate biti ekonomist da biste razumjeli javni izbor.** Trebate samo biti spremni napustiti romantičnu predodžbu o politici i prihvatiti analitičku.
+
+Novinarima, analitičarima javnih politika, zaposlenicima u javnoj upravi i članovima civilnog društva knjiga nudi zajednički rječnik i analitički okvir za razgovor o institucijama i reformama – onaj koji nadilazi dnevnopolitičke podjele.
 
 ## Kako koristiti ovu knjigu
 
-Ovo je interaktivna knjiga za digitalno doba. Gdje god je to imalo smisla, umjesto statičnih tablica i grafikona koristimo interaktivne vizualizacije koje možete istraživati sami. Iza svake vizualizacije stoji kod koji ju je proizveo, vidljiv jednim klikom, tako da možete ne samo razumjeti zaključke nego i provjeriti kako smo do njih došli i ponoviti analizu s vlastitim pitanjima. Cijeli sadržaj je otvoren i besplatan, objavljen kao open-source projekt na GitHubu. Ako primijetite grešku ili imate prijedlog za poboljšanje, pozivamo vas da otvorite *issue* ili predložite izmjenu izravno na repozitoriju.
+Ovo je **interaktivna knjiga za digitalno doba.** Gdje god je to imalo smisla, umjesto statičnih tablica i grafikona koristimo interaktivne vizualizacije koje možete istraživati sami. Iza svake vizualizacije stoji kod koji ju je proizveo, vidljiv jednim klikom – tako da možete ne samo razumjeti zaključke, nego i provjeriti kako smo do njih došli te ponoviti analizu s vlastitim pitanjima.
+
+Cijeli sadržaj je otvoren i besplatan, objavljen kao *open-source* projekt na GitHubu. Ako primijetite grešku ili imate prijedlog, pozivamo vas da otvorite *issue* ili predložite izmjenu izravno na repozitoriju. Knjigu zamišljamo kao živi dokument koji raste i popravlja se zajedno sa svojim čitateljima.
 
 ::: {.callout-tip}
 ## Prije nego započnete
-Preporučujemo da krenete redom, od prvog poglavlja prema posljednjem, jer svako poglavlje gradi na konceptima uvedenima u prethodnima. Ali ako vas zanima specifična tema, poput poreznog sustava ili interesnih skupina, slobodno skočite izravno na to poglavlje. Navigacija na lijevoj strani omogućuje vam brz pristup bilo kojem dijelu knjige.
+Preporučujemo čitanje redom, od prvog poglavlja prema posljednjem, jer svako poglavlje gradi na konceptima iz prethodnih. Ako vas zanima specifična tema – poput poreznog sustava ili interesnih skupina – slobodno skočite izravno na nju. Navigacija lijevo omogućuje brz pristup bilo kojem dijelu knjige, a tražilica pretražuje cijeli sadržaj.
 :::
+
+## Mali primjer – jedan grafikon, mnogo pitanja
 
 ```{r}
 #| echo: false
@@ -63,4 +85,8 @@ p <- ggplot(df, aes(x = godina, y = izlaznost)) +
 print(p)
 ```
 
-Grafikon iznad prikazuje nešto što teorija javnog izbora može objasniti: zašto izlaznost na izbore varira, i zašto racionalan birač ponekad zaključi da mu se jednostavno ne isplati izaći na birališta. Ovo nije apatija. Ovo je racionalni odgovor na konkretne poticaje. O tome govorimo u poglavljima koja slijede.
+Izlaznost na parlamentarne izbore u Hrvatskoj pala je s preko 76 % u 2000. na 47 % u 2020., uz blagi oporavak 2024. Uobičajeno objašnjenje glasi: „građani su apatični". Teorija javnog izbora nudi drugo objašnjenje – **racionalno neznanje** i **paradoks glasanja**: ako je vjerojatnost da jedan glas promijeni ishod izbora zanemarivo mala, a trošak informiranja i izlaska nije, dio birača će racionalno zaključiti da mu se ne isplati izaći. To nije moralni nedostatak, nego predvidljiv odgovor na konkretne poticaje u konkretnom institucionalnom okviru.
+
+Taj obrazac – kada individualno racionalno ponašanje proizvodi kolektivno problematičan ishod – ponavlja se kroz cijelu knjigu: u proračunu, porezima, regulaciji, javnoj nabavi. Jednom kada ga prepoznate, više ga nećete moći ne vidjeti.
+
+**Dobrodošli u politiku bez romantike.**
