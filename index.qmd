@@ -2,6 +2,8 @@
 title: "Dobrodošli"
 ---
 
+![](images/Pic.png){fig-align="center" width="100%"}
+
 Zamislite da sjedite u kafiću i čitate vijest: Vlada povisuje PDV na određene proizvode. Prva reakcija je obično frustracija, možda ljutnja. Ali pitanje koje rijetko tko postavi, a koje je zapravo jedino korisno, glasi: **zašto?** Ne u smislu političke retorike kojom će ministar objasniti odluku na konferenciji za novinare, nego u analitičkom smislu – koji su mehanizmi, poticaji i pritisci doveli do toga da se baš ta odluka donese u baš ovom trenutku, tko od nje ima koristi, a tko snosi trošak?
 
 Ova knjiga postoji da vam omogući postavljanje takvih pitanja – ne s pozicije ideologije, frustracije ili cinizma, nego s pozicije analitičkog razumijevanja. Napisana je za studente i za sve koji žele razumjeti logiku koja stoji iza političkih odluka u Hrvatskoj; logiku koja se na prvi pogled čini nelogičnom, ali koja postaje savršeno razumljiva kada shvatite pravila igre.
