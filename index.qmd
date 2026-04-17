@@ -4,6 +4,14 @@ title: "Dobrodošli"
 
 ![](images/Pic.png){fig-align="center" width="100%"}
 
+::: {style="text-align: center; margin-top: 1rem; font-size: 0.95rem; color: #4A5568;"}
+[Milan Deskar-Škrbić](https://zsem.hr/clanovi/dr-sc-milan-deskar-skrbic/) &nbsp;|&nbsp; [Radovi](https://scholar.google.com/citations?hl=en&user=F2vhZeYAAAAJ&view_op=list_works&sortby=pubdate) &nbsp;|&nbsp; [milan.deskar-skrbic\@hnb.hr](mailto:milan.deskar-skrbic@hnb.hr)
+
+[Petra Palić](https://www.unicath.hr/odjeli-i-fakultet/nastavnici/petra-palic) &nbsp;|&nbsp; [Radovi](https://scholar.google.com/citations?hl=hr&user=pamRbq4AAAAJ&view_op=list_works&sortby=pubdate) &nbsp;|&nbsp; [petra.palic\@unicath.hr](mailto:petra.palic@unicath.hr)
+
+[Luka Sikić](https://www.unicath.hr/odjeli-i-fakultet/nastavnici/luka-sikic) &nbsp;|&nbsp; [Radovi](https://scholar.google.com/citations?hl=en&user=qOGfRvkAAAAJ&view_op=list_works&sortby=pubdate) &nbsp;|&nbsp; [luka.sikic\@unicath.hr](mailto:luka.sikic@unicath.hr)
+:::
+
 Zamislite da sjedite u kafiću i čitate vijest: Vlada povisuje PDV na određene proizvode. Prva reakcija je obično frustracija, možda ljutnja. Ali pitanje koje rijetko tko postavi, a koje je zapravo jedino korisno, glasi: **zašto?** Ne u smislu političke retorike kojom će ministar objasniti odluku na konferenciji za novinare, nego u analitičkom smislu – koji su mehanizmi, poticaji i pritisci doveli do toga da se baš ta odluka donese u baš ovom trenutku, tko od nje ima koristi, a tko snosi trošak?
 
 Ova knjiga postoji da vam omogući postavljanje takvih pitanja – ne s pozicije ideologije, frustracije ili cinizma, nego s pozicije analitičkog razumijevanja. Napisana je za studente i za sve koji žele razumjeti logiku koja stoji iza političkih odluka u Hrvatskoj; logiku koja se na prvi pogled čini nelogičnom, ali koja postaje savršeno razumljiva kada shvatite pravila igre.
@@ -48,8 +56,6 @@ Cijeli sadržaj je otvoren i besplatan, objavljen kao *open-source* projekt na G
 ## Prije nego započnete
 Preporučujemo čitanje redom, od prvog poglavlja prema posljednjem, jer svako poglavlje gradi na konceptima iz prethodnih. Ako vas zanima specifična tema – poput poreznog sustava ili interesnih skupina – slobodno skočite izravno na nju. Navigacija lijevo omogućuje brz pristup bilo kojem dijelu knjige, a tražilica pretražuje cijeli sadržaj.
 :::
-
-## Mali primjer – jedan grafikon, mnogo pitanja
 
 ```{ojs}
 //| echo: false
