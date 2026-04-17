@@ -90,6 +90,8 @@ Ove razlike odražavaju različite društvene preferencije u pogledu jednakosti 
 
 Empirijska istraživanja dodatno pokazuju da veličina javne potrošnje sama po sebi ne određuje ekonomske rezultate. Neke zemlje s velikim javnim sektorom ostvaruju visoke stope rasta i kvalitetne javne usluge, dok druge slične razine potrošnje imaju slabije performanse. To jasno upućuje na ključnu ulogu kvalitete institucija, učinkovitosti javne uprave i transparentnosti [@blanchard2017; @tanzi2000].
 
+U konačnici, razlike u javnoj potrošnji u svijetu potvrđuju temeljni zaključak moderne ekonomije javnih financija: ne postoji jedinstveni “optimalni” model države. Razina i struktura javne potrošnje rezultat su povijesnog razvoja, političkih odluka i institucionalnih ograničenja, dok njihovi učinci ovise prije svega o kvaliteti implementacije, a ne samo o veličini rashoda. Upravo zato zemlje slične razine javne potrošnje mogu ostvarivati potpuno različite ekonomske i društvene ishode.
+
 ## Javna potrošnja u Hrvatskoj i EU
 
 - Struktura i razina javne potrošnje u Hrvatskoj u usporedbi s EU

@@ -22,3 +22,5 @@ rad.json
 
 /.quarto/
 Razno/
+
+**/*.quarto_ipynb

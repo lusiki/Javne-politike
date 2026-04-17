@@ -37,5 +37,47 @@
   },
   "references.qmd": {
     "references.html": "c0fca6c8"
+  },
+  "chapters/01-pristupi.qmd": {
+    "01-pristupi.html": "81b29349"
+  },
+  "chapters/02-zasto-drzava.qmd": {
+    "02-zasto-drzava.html": "798eb0a5"
+  },
+  "chapters/03-institucije.qmd": {
+    "03-institucije.html": "c8287054"
+  },
+  "chapters/04-konstitucionalna.qmd": {
+    "04-konstitucionalna.html": "7f6cf390"
+  },
+  "chapters/05-javni-izbor.qmd": {
+    "05-javni-izbor.html": "71d6e5ac"
+  },
+  "chapters/06-kako-odlucujemo.qmd": {
+    "06-kako-odlucujemo.html": "53863225"
+  },
+  "chapters/07-glasovanje.qmd": {
+    "07-glasovanje.html": "0eba6cf6"
+  },
+  "chapters/08-stranke-kandidati.qmd": {
+    "08-stranke-kandidati.html": "4505d777"
+  },
+  "chapters/09-birokrati.qmd": {
+    "09-birokrati.html": "31b6b7d2"
+  },
+  "chapters/10-interesne-skupine.qmd": {
+    "10-interesne-skupine.html": "be69a54b"
+  },
+  "chapters/11-drzavna-potrosnja.qmd": {
+    "11-drzavna-potrosnja.html": "f6e11b2b"
+  },
+  "chapters/12-porezi.qmd": {
+    "12-porezi.html": "2899903e"
+  },
+  "chapters/13-odluke-reforme.qmd": {
+    "13-odluke-reforme.html": "7fca8d18"
+  },
+  "chapters/14-zakljucak.qmd": {
+    "14-zakljucak.html": "f766a127"
   }
 }
