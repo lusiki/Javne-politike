@@ -140,8 +140,54 @@ Razlike među poreznim sustavima ne može se objasniti samo ekonomskim razlozima
 
 ## Porezni sustavi u Europskoj uniji i Hrvatskoj
 
-- Specifičnost EU: nema jedinstvenog poreznog sustava, ali postoji koordinacija i harmonizacija (posebno PDV i korporativni porezi)
-- Porezna konkurencija unutar EU i njezine implikacije
-- Karakteristike i struktura poreznog sustava u Hrvatskoj
-- Porezno opterećenje rada, potrošnje i kapitala u Hrvatskoj u usporedbi s EU prosjekom
-- Izazovi i moguće reforme
+### Porezni sustavi u Europskoj uniji
+
+Porezni sustav Europske unije specifičan je po tome što ne postoji jedinstveni „europski porezni sustav" u klasičnom smislu. Porezna suverenost i dalje je primarno u nadležnosti država članica, što znači da svaka država samostalno određuje porezne stope, osnovice i strukturu poreznog sustava. Ipak, zbog duboke ekonomske integracije i jedinstvenog tržišta, razvijen je niz pravila i mehanizama kojima se osigurava koordinacija i djelomična harmonizacija poreznih politika [@gruber2019].
+
+Ova kombinacija nacionalne autonomije i europske koordinacije proizlazi iz potrebe da se izbjegnu porezne prepreke slobodnom kretanju robe, usluga, kapitala i rada. Drugim riječima, porezni sustavi država članica moraju biti kompatibilni s funkcioniranjem jedinstvenog tržišta, ali istovremeno zadržavaju dovoljno fleksibilnosti da odražavaju nacionalne specifičnosti.
+
+Najviši stupanj harmonizacije postignut je u području neizravnih poreza, osobito kod poreza na dodanu vrijednost (PDV-a) i trošarina. EU direktive definiraju osnovna pravila PDV sustava, uključujući minimalne standardne stope, način obračuna i oporezivanje prekograničnih transakcija. Primjerice, države članice moraju imati standardnu stopu PDV-a od najmanje 15 %, iako stvarne stope često prelaze tu razinu. PDV je ključan ne samo kao nacionalni prihod, već i kao izvor vlastitih sredstava proračuna EU-a.
+
+Slično vrijedi i za trošarine, koje su harmonizirane kako bi se spriječile distorzije u trgovini određenim proizvodima, poput alkohola, duhana i energenata. Time se osigurava da razlike u oporezivanju ne potiču prekomjernu prekograničnu kupnju ili narušavaju tržišno natjecanje.
+
+Za razliku od neizravnih poreza, izravni porezi – poput poreza na dohodak i poreza na dobit – u znatno su manjoj mjeri harmonizirani. Države članice zadržavaju visoku razinu autonomije u njihovom oblikovanju, što dovodi do značajnih razlika među zemljama. Ipak, EU kroz različite inicijative nastoji smanjiti negativne učinke porezne konkurencije i spriječiti eroziju porezne osnovice i premještanje dobiti (BEPS). U tom kontekstu važnu ulogu imaju direktive o oporezivanju multinacionalnih kompanija, razmjeni poreznih informacija i minimalnom oporezivanju dobiti.
+
+Struktura poreznih prihoda u EU pokazuje određene zajedničke karakteristike. U prosjeku, najveći dio prihoda dolazi od oporezivanja rada, uključujući poreze na dohodak i socijalne doprinose. Slijede porezi na potrošnju, dok porezi na imovinu imaju relativno manji udio. Ovakva struktura povezana je s modelom socijalne države, u kojem država osigurava širok spektar javnih usluga i socijalnih transfera.
+
+Međutim, među državama članicama postoje značajne razlike. Neke zemlje, poput nordijskih, imaju visoke poreze i snažnu redistributivnu funkciju, dok druge primjenjuju niže porezne stope i veći naglasak stavljaju na poticanje investicija i konkurentnosti. Unatoč tim razlikama, dugoročni trendovi ukazuju na postupnu konvergenciju poreznih sustava, potaknutu integracijom tržišta i zajedničkim pravilima.
+
+### Osnove poreznog sustava u Hrvatskoj
+
+Porezni sustav Republike Hrvatske razvijen je u okviru tranzicije prema tržišnom gospodarstvu te je tijekom procesa pristupanja Europskoj uniji značajno usklađen s europskim pravilima. Danas predstavlja mješoviti porezni sustav, u kojem su zastupljeni porezi na dohodak, potrošnju i imovinu, ali s jasno izraženim naglaskom na određene izvore prihoda.
+
+Jedno od najvažnijih obilježja hrvatskog sustava jest snažna uloga poreza na potrošnju, prije svega poreza na dodanu vrijednost (PDV-a). Standardna stopa PDV-a u Hrvatskoj iznosi 25 %, što je među najvišim stopama u Europskoj uniji. Uz standardnu stopu, primjenjuju se i snižene stope:
+
+- 13 % (npr. na određene prehrambene proizvode, usluge u turizmu, energente)
+- 5 % (npr. na osnovne prehrambene proizvode, lijekove, knjige i novine)
+
+PDV je ključni izvor javnih prihoda, a njegova važnost proizlazi iz široke porezne osnovice i relativno učinkovite naplate. Upravo zbog toga Hrvatska, kao i mnoge zemlje srednje i istočne Europe, ima veći oslonac na potrošne poreze nego neke zapadnoeuropske zemlje.
+
+Uz PDV, važan dio sustava čine i trošarine, koje se primjenjuju na energente (gorivo, plin, električnu energiju), duhanske proizvode te alkohol i alkoholna pića. Ovi porezi imaju dvostruku funkciju: fiskalnu, jer generiraju značajne prihode, i korektivnu, jer utječu na smanjenje potrošnje proizvoda koji imaju negativne učinke na zdravlje ili okoliš.
+
+U području oporezivanja rada, Hrvatska primjenjuje porez na dohodak koji ima obilježja progresivnog sustava. Trenutno se primjenjuju dvije osnovne porezne stope:
+
+- 20 % na niže razine dohotka
+- 30 % na više razine dohotka
+
+Osim toga, jedinice lokalne samouprave mogu propisati lokalni prirez, koji dodatno povećava efektivno porezno opterećenje. Porez na dohodak uključuje i osobni odbitak, čime se smanjuje porezno opterećenje nižih dohodaka i povećava progresivnost sustava.
+
+Međutim, ukupno opterećenje rada u Hrvatskoj ne proizlazi samo iz poreza na dohodak, već i iz socijalnih doprinosa, koji čine značajan dio troška rada. Najvažniji doprinosi uključuju:
+
+- mirovinsko osiguranje: 20 % bruto plaće (15 % za prvi stup i 5 % za drugi stup)
+- zdravstveno osiguranje: 16,5 % bruto plaće (plaća poslodavac)
+
+Zbog kombinacije poreza na dohodak i doprinosa, ukupni porezni klin na rad relativno je visok, što može utjecati na ponudu rada i konkurentnost gospodarstva [@simovic2022].
+
+Porez na dobit u Hrvatskoj ima proporcionalnu strukturu i relativno konkurentne stope:
+
+- 10 % za male poduzetnike (do određenog praga prihoda)
+- 18 % za veće poduzetnike
+
+Ovakva struktura osmišljena je kako bi se potaknulo poduzetništvo i investicije, osobito u malim i srednjim poduzećima. Uz to, postoje i različite porezne olakšice i poticaji, primjerice za ulaganja, istraživanje i razvoj te zapošljavanje.
+
+Za razliku od poreza na rad i potrošnju, oporezivanje imovine u Hrvatskoj relativno je slabo razvijeno. Ne postoji klasični godišnji porez na nekretnine u punom smislu, već se primjenjuju porez na promet nekretnina (3 % vrijednosti) te lokalni porezi i komunalne naknade. Zbog toga porezi na imovinu imaju relativno mali udio u ukupnim poreznim prihodima, što Hrvatsku razlikuje od nekih razvijenijih zemalja u kojima je ovaj oblik oporezivanja značajniji.
