@@ -49,43 +49,65 @@ Preporučujemo čitanje redom, od prvog poglavlja prema posljednjem, jer svako p
 
 ## Mali primjer – jedan grafikon, mnogo pitanja
 
-```{r}
-#| echo: false
-#| message: false
-#| fig-cap: "Izlaznost na parlamentarne izbore u Hrvatskoj"
-
-library(ggplot2)
-
-df <- data.frame(
-  godina = c(2000, 2003, 2007, 2011, 2015, 2016, 2020, 2024),
-  izlaznost = c(76.5, 61.7, 59.5, 54.2, 59.1, 52.6, 46.9, 55.9)
+```{ojs}
+//| echo: false
+viewof t_slider = Inputs.range(
+  [0, 40],
+  {value: 20, step: 1, label: "Iznos poreza:"}
 )
-
-p <- ggplot(df, aes(x = godina, y = izlaznost)) +
-  geom_line(color = "#1B2A4A", linewidth = 0.8) +
-  geom_point(color = "#1B2A4A", size = 2.5) +
-  labs(
-    x = NULL,
-    y = "Izlaznost (%)",
-    caption = "Izvor: Državno izborno povjerenstvo"
-  ) +
-  scale_x_continuous(breaks = df$godina) +
-  scale_y_continuous(limits = c(40, 80)) +
-  theme_minimal(base_family = "Roboto") +
-  theme(
-    panel.grid.minor = element_blank(),
-    panel.grid.major.x = element_blank(),
-    panel.grid.major.y = element_line(color = "#E2E8F0", linewidth = 0.3),
-    axis.text = element_text(color = "#4A5568", size = 10),
-    axis.title.y = element_text(color = "#4A5568", size = 11),
-    plot.caption = element_text(color = "#718096", size = 8, hjust = 1),
-    plot.margin = margin(10, 10, 10, 10)
-  )
-
-print(p)
 ```
 
-Izlaznost na parlamentarne izbore u Hrvatskoj pala je s preko 76 % u 2000. na 47 % u 2020., uz blagi oporavak 2024. Uobičajeno objašnjenje glasi: „građani su apatični". Teorija javnog izbora nudi drugo objašnjenje – **racionalno neznanje** i **paradoks glasanja**: ako je vjerojatnost da jedan glas promijeni ishod izbora zanemarivo mala, a trošak informiranja i izlaska nije, dio birača će racionalno zaključiti da mu se ne isplati izaći. To nije moralni nedostatak, nego predvidljiv odgovor na konkretne poticaje u konkretnom institucionalnom okviru.
+```{ojs}
+//| echo: false
+{
+  const a = 100, b = 1, c = 10, d = 0.5;
+  const t = t_slider;
+  const Qt = (a - c - t) / (b + d);
+  const Pc = a - b * Qt;
+  const Pp = Pc - t;
+  const Qmax = (a - c) / b;
+  const Qs = d3.range(201).map(i => (i * Qmax) / 200);
+
+  const demand    = Qs.map(q => ({Q: q, P: a - b * q}));
+  const supply    = Qs.map(q => ({Q: q, P: c + d * q}));
+  const supplyTax = Qs.map(q => ({Q: q, P: c + t + d * q}));
+
+  return Plot.plot({
+    width: 720,
+    height: 480,
+    marginLeft: 60,
+    marginBottom: 55,
+    style: {fontSize: "12px", fontFamily: "Roboto, system-ui, sans-serif", color: "#4A5568"},
+    x: {label: "Količina →", domain: [0, Qmax], grid: false},
+    y: {label: "↑ Cijena", domain: [0, a], grid: true},
+    marks: [
+      Plot.ruleY([0], {stroke: "#CBD5E0"}),
+      Plot.line(demand,    {x: "Q", y: "P", stroke: "#1f77b4", strokeWidth: 2}),
+      Plot.line(supply,    {x: "Q", y: "P", stroke: "#2ca02c", strokeWidth: 2}),
+      Plot.line(supplyTax, {x: "Q", y: "P", stroke: "#2ca02c", strokeWidth: 2,
+                            strokeDasharray: "6,4"}),
+      Plot.ruleY([Pc], {stroke: "#A0AEC0", strokeDasharray: "2,2"}),
+      Plot.ruleY([Pp], {stroke: "#A0AEC0", strokeDasharray: "2,2"}),
+      Plot.ruleX([Qt], {y1: Pp, y2: Pc, stroke: "#C53030", strokeWidth: 3}),
+      Plot.text([{x: 2, y: Pc, label: `Cijena za kupca: ${Pc.toFixed(1)}`}],
+        {x: "x", y: "y", text: "label", textAnchor: "start", dy: -8, fontSize: 12, fill: "#2D3748"}),
+      Plot.text([{x: 2, y: Pp, label: `Cijena za prodavača: ${Pp.toFixed(1)}`}],
+        {x: "x", y: "y", text: "label", textAnchor: "start", dy: -8, fontSize: 12, fill: "#2D3748"}),
+      Plot.text([{x: Qt, y: (Pc + Pp) / 2, label: `Porez = ${t}`}],
+        {x: "x", y: "y", text: "label", textAnchor: "start", dx: 10, fontSize: 13,
+         fill: "#C53030", fontWeight: 600}),
+      Plot.text([{x: Qmax * 0.72, y: a * 0.15, label: "Potražnja"}],
+        {x: "x", y: "y", text: "label", fill: "#1f77b4", fontSize: 12, fontWeight: 600}),
+      Plot.text([{x: Qmax * 0.78, y: a * 0.55, label: "Ponuda nakon poreza"}],
+        {x: "x", y: "y", text: "label", fill: "#2ca02c", fontSize: 12, fontWeight: 600}),
+      Plot.text([{x: Qmax * 0.78, y: a * 0.45, label: "Ponuda"}],
+        {x: "x", y: "y", text: "label", fill: "#2ca02c", fontSize: 12, fontWeight: 600})
+    ]
+  });
+}
+```
+
+Pomaknite klizač i promatrajte što se događa s tržištem kada država uvede porez. Uz porez, **kupac plaća više**, **prodavač prima manje**, a **količina razmjene se smanjuje**. Razlika između cijene koju plaća kupac i one koju prima prodavač ide u državni proračun, ali dio potencijalne koristi jednostavno **nestaje** – to je mrtvi teret poreza. Ovo nije samo tehnička vježba. Ista logika stoji iza gotovo svake javne politike: svaka intervencija nekoga nagrađuje, nekoga košta i nešto mijenja u ponašanju. Pitanje nije treba li porez, nego **kako je dizajniran, koga pogađa i što ostaje od vrijednosti nakon što država preuzme svoj dio**.
 
 Taj obrazac – kada individualno racionalno ponašanje proizvodi kolektivno problematičan ishod – ponavlja se kroz cijelu knjigu: u proračunu, porezima, regulaciji, javnoj nabavi. Jednom kada ga prepoznate, više ga nećete moći ne vidjeti.
 
