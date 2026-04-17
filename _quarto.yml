@@ -8,12 +8,14 @@ book:
   subtitle: "Praktični i interaktivni udžbenik za studente i sve koji žele znati više"
   author:
     - name: "Milan Deskar-Škrbić"
-      email: "milan@example.com"
-      orcid: "0000-0000-0000-0000"
+      email: "milan.deskar-skrbic@hnb.hr"
+      url: "https://zsem.hr/clanovi/dr-sc-milan-deskar-skrbic/"
     - name: "Petra Palić"
       email: "petra.palic@unicath.hr"
-    - name: "Luka Šikić"
+      url: "https://www.unicath.hr/odjeli-i-fakultet/nastavnici/petra-palic"
+    - name: "Luka Sikić"
       email: "luka.sikic@unicath.hr"
+      url: "https://www.unicath.hr/odjeli-i-fakultet/nastavnici/luka-sikic"
 
   date: last-modified
   date-format: "D MMMM YYYY"
