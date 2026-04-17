@@ -27,7 +27,6 @@ book:
   repo-actions: [edit, issue]
 
   cover-image: "/cover.jpg"
-  cover-image-alt: "Naslovnica knjige o javnim politikama u Hrvatskoj"
   favicon: "images/favicon.ico"
 
   search:
