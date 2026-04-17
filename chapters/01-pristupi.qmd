@@ -1,0 +1,11 @@
+---
+title: "1. Pozitivistički i normativni pristup javnim politikama i javnim financijama"
+---
+
+- Što znači analizirati politiku kroz pitanje što jest, a što kroz pitanje što bi trebalo biti
+- Razlika između objašnjenja i vrednovanja
+- Zašto su oba pristupa nužna u analizi javnih politika
+- Ekonomika blagostanja kao temelj normativne analize
+- Pareto-kriterij, Pareto-poboljšanje i Pareto-optimum
+- Prvi i Drugi teorem ekonomike blagostanja
+- Ograničenja Pareto-pristupa: efikasnost nije isto što i pravednost

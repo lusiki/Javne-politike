@@ -48,22 +48,28 @@ book:
     - part: "Prije početka"
       chapters:
         - chapters/00-uvod.qmd
-    - part: "DIO I: JAVNI IZBOR – ŠTO, KAKO I ZAŠTO?"
+    - part: "DIO I: DRŽAVA, JAVNE POLITIKE I TEMELJNI PRISTUPI ANALIZI"
       chapters:
-        - chapters/01-javni-izbor.qmd
-        - chapters/02-kako-odlucujemo.qmd
-        - chapters/03-glasovanje.qmd
-        - chapters/04-stranke-kandidati.qmd
-        - chapters/05-birokrati.qmd
-        - chapters/06-interesne-skupine.qmd
-    - part: "DIO II: JAVNE POLITIKE – ZAŠTO NAM DRŽAVA UZIMA I NA ŠTO TROŠI?"
+        - chapters/01-pristupi.qmd
+        - chapters/02-zasto-drzava.qmd
+        - chapters/03-institucije.qmd
+        - chapters/04-konstitucionalna.qmd
+    - part: "DIO II: JAVNI IZBOR – ŠTO, KAKO I ZAŠTO?"
       chapters:
-        - chapters/07-drzavna-potrosnja.qmd
-        - chapters/08-porezi.qmd
-        - chapters/09-pametne-odluke.qmd
-    - part: "DIO III: ZA KRAJ"
+        - chapters/05-javni-izbor.qmd
+        - chapters/06-kako-odlucujemo.qmd
+        - chapters/07-glasovanje.qmd
+        - chapters/08-stranke-kandidati.qmd
+        - chapters/09-birokrati.qmd
+        - chapters/10-interesne-skupine.qmd
+    - part: "DIO III: JAVNE FINANCIJE I JAVNE POLITIKE U PRAKSI"
       chapters:
-        - chapters/10-zakljucak.qmd
+        - chapters/11-drzavna-potrosnja.qmd
+        - chapters/12-porezi.qmd
+        - chapters/13-odluke-reforme.qmd
+    - part: "Za kraj"
+      chapters:
+        - chapters/14-zakljucak.qmd
 
   appendices:
     - references.qmd
