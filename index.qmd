@@ -1,5 +1,12 @@
 ---
 title: "Dobrodošli"
+toc: false
+number-sections: false
+include-in-header:
+  text: |
+    <style>
+      #title-block-header { display: none; }
+    </style>
 ---
 
 ![](images/Pic.png){fig-align="center" width="100%" fig-cap-location="none"}
