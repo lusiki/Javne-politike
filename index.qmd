@@ -6,8 +6,57 @@ include-in-header:
   text: |
     <style>
       #title-block-header { display: none; }
+      .book-hero {
+        text-align: center;
+        margin: 0 auto 2rem auto;
+        padding-bottom: 1.5rem;
+        border-bottom: 1px solid #E2E8F0;
+      }
+      .book-hero img {
+        max-width: 100%;
+        height: auto;
+        margin-bottom: 1.5rem;
+        border-radius: 6px;
+      }
+      .book-hero h1 {
+        font-size: 2.0rem;
+        line-height: 1.25;
+        margin: 0 0 0.6rem 0;
+        font-weight: 700;
+      }
+      .book-hero .book-subtitle {
+        font-size: 1.15rem;
+        font-style: italic;
+        color: #4A5568;
+        margin-bottom: 1.2rem;
+      }
+      .book-hero .book-authors {
+        font-size: 1.0rem;
+        color: #2D3748;
+      }
+      .book-hero .book-authors a {
+        color: #2B6CB0;
+        text-decoration: none;
+      }
+      .book-hero .book-authors a:hover {
+        text-decoration: underline;
+      }
     </style>
 ---
+
+::: {.book-hero}
+![](images/Pic.png)
+
+# Sve što želite znati o državi i javnim politikama u Hrvatskoj
+
+::: {.book-subtitle}
+Praktični i interaktivni udžbenik za studente i sve koji žele znati više
+:::
+
+::: {.book-authors}
+[Milan Deskar-Škrbić](https://zsem.hr/clanovi/dr-sc-milan-deskar-skrbic/) · [Petra Palić](https://www.unicath.hr/odjeli-i-fakultet/nastavnici/petra-palic) · [Luka Sikić](https://www.unicath.hr/odjeli-i-fakultet/nastavnici/luka-sikic)
+:::
+:::
 
 ## Zašto bismo otvorili ovu knjigu?
 

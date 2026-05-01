@@ -729,8 +729,10 @@ tax = dwl_controls.tax
     marks: [
       Plot.ruleY([0], {stroke: "#CBD5E0"}),
 
-      // Revenue rectangle (light blue fill)
-      Plot.area(revRect, {x: "Q", y1: Pp, y2: "P", fill: "#BEE3F8", fillOpacity: 0.5}),
+      // Revenue rectangle (light blue fill) — closed polygon via line with fill
+      Plot.line([...revRect, revRect[0]],
+        {x: "Q", y: "P", stroke: "#3182CE", strokeWidth: 1,
+         fill: "#BEE3F8", fillOpacity: 0.5, curve: "linear"}),
 
       // Deadweight-loss triangle (red fill) — closed polygon via line with fill
       Plot.line([...dwlTriangle, dwlTriangle[0]],

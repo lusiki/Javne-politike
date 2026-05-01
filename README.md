@@ -2,6 +2,10 @@
 
 ### Praktični i interaktivni udžbenik za studente i sve koji žele znati više
 
+<p align="center">
+  <img src="images/Pic.png" alt="Javne politike u Hrvatskoj" width="80%">
+</p>
+
 [![Čitaj knjigu](https://img.shields.io/badge/📖%20Čitaj%20knjigu-online-1B2A4A?style=for-the-badge)](https://lusiki.github.io/Javne-politike/)
 [![Built with Quarto](https://img.shields.io/badge/Built%20with-Quarto-75AADB?style=for-the-badge&logo=quarto)](https://quarto.org)
 [![License](https://img.shields.io/github/license/lusiki/Javne-politike?style=for-the-badge)](LICENSE)
