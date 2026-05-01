@@ -1,5 +1,5 @@
 ---
-title: "Dobrodošli"
+title: "Prije početka: O čemu se radi?"
 toc: false
 number-sections: false
 include-in-header:
@@ -8,6 +8,13 @@ include-in-header:
       #title-block-header { display: none; }
     </style>
 ---
+
+## Zašto bismo otvorili ovu knjigu?
+
+- Što su javne politike i zašto su važne
+- Zašto se javne politike ne mogu razumjeti bez ekonomije, politike i institucija
+- Kako će knjiga povezati normativni i pozitivistički pristup
+- Zašto država nije ni samo "rješenje", ni samo "problem", nego složen sustav odluka, poticaja i pravila
 
 ![](images/Pic.png){fig-align="center" width="100%" fig-cap-location="none"}
 
