@@ -1,5 +1,6 @@
 /* Hide the landing page (index) entry from the sidebar */
-.sidebar-item:first-child {
+.sidebar-item:has(a[href="./index.html"]),
+.sidebar-item:has(a[href="../index.html"]) {
   display: none;
 }
 
