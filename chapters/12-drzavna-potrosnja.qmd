@@ -34,25 +34,25 @@ Ovaj odjeljak je u pripremi.
 
 ## Javna potrošnja kroz povijest
 
-Razumijevanje javne potrošnje zahtijeva povijesnu perspektive jer se njezina uloga dramatično mijenjala kroz vrijeme – od minimalne i gotovo nepoželjne aktivnosti države do jednog od ključnih instrumenata oblikovanja gospodarstva i društva.
+Razumijevanje javne potrošnje zahtijeva povijesnu perspektivu jer se njezina uloga dramatično mijenjala kroz vrijeme – od minimalne i gotovo nepoželjne aktivnosti države do jednog od ključnih instrumenata oblikovanja gospodarstva i društva.
 
 U ranim fazama razvoja javnih financija, fokus ekonomista bio je gotovo isključivo na porezima. Javna potrošnja promatrala se kao nužno, ali neproduktivno zlo. Država je imala vrlo ograničene funkcije – prvenstveno obranu, zaštitu imovine i održavanje pravnog poretka. U tom kontekstu prevladavala je ideja da javna potrošnja ne stvara vrijednost, nego samo troši resurse koje bi privatni sektor mogao koristiti učinkovitije. Takav pogled bio je duboko ukorijenjen u klasičnoj ekonomskoj misli Adama Smitha i Davida Ricarda, koji su naglašavali ograničenu ulogu države i važnost tržišnih mehanizama za učinkovitu alokaciju resursa [@smith1776; @ricardo1817].
 
-Normativna implikacija bila je jasna: država treba biti mala, a porezi niski. Javna potrošnja često se povezivala s neefikasnim trošenjem, uključujući financiranje luksuza vladajućih elita i dvorskog aparata. Kako pokazuju povijesni podaci, u razdoblju od kraja 19. do početka 20. stoljeća javna potrošnja u razvijenim zemljama iznosila je tek oko 10% BDP-a [@tanzi2000].
+Normativna implikacija bila je jasna: država treba biti mala, a porezi niski. Javna potrošnja često se povezivala s neefikasnim trošenjem, uključujući financiranje luksuza vladajućih elita i dvorskog aparata. Stoga je dominantno pravilo bilo: što manje javne potrošnje, to bolje, jer niži rashodi znače i niže poreze te manji negativni učinak na gospodarsku aktivnost. Kako pokazuju povijesni podaci, u razdoblju od kraja 19. do početka 20. stoljeća javna potrošnja u razvijenim zemljama iznosila je tek oko 10% BDP-a [@tanzi2000]. Međutim, to ne znači da su ta društva bila manje razvijena, već da država nije obavljala funkcije koje danas smatramo standardnima – poput masovnog obrazovanja, javnog zdravstva, socijalne sigurnosti ili aktivne politike zapošljavanja.
 
-Već krajem 19. stoljeća pojavljuju se prve teorijske naznake da takav minimalistički pristup državi nije dugoročno održiv. Ekonomisti poput Adolpha Wagnera uočavaju da s razvojem industrijskog društva raste potreba za javnim uslugama – osobito u području obrazovanja, infrastrukture i administracije. Ova ideja, poznata kao **Wagnerov zakon**, sugerira da će udio javne potrošnje u BDP-u rasti kako društva postaju bogatija i kompleksnija [@wagner1890; @bird1971].
+Već krajem 19. stoljeća pojavljuju se prve teorijske naznake da takav minimalistički pristup državi nije dugoročno održiv. Ekonomisti poput Adolpha Wagnera uočavaju da s razvojem industrijskog društva raste potreba za javnim uslugama – osobito u području obrazovanja, infrastrukture i administracije. Ova ideja, poznata kao **Wagnerov zakon**, sugerira da će udio javne potrošnje u BDP-u rasti kako društva postaju bogatija i kompleksnija [@wagner1890; @bird1971]. Razlozi su višestruki: urbanizacija povećava potrebu za javnim uslugama, tehnološki napredak zahtijeva ulaganja u ljudski kapital, a razvoj tržišta stvara potrebu za regulacijom i institucionalnim okvirom.
 
 Pravi preokret događa se u 20. stoljeću, u kontekstu velikih ekonomskih i političkih šokova. Velika depresija 1930-ih dovodi u pitanje sposobnost tržišta da se samo stabilizira. U tom kontekstu, John Maynard Keynes uvodi revolucionarnu ideju: država može i treba aktivno intervenirati u gospodarstvo putem javne potrošnje i fiskalne politike kako bi stabilizirala agregatnu potražnju [@keynes1936]. Time javna potrošnja prvi put dobiva jasnu makroekonomsku funkciju.
 
-Nakon Drugog svjetskog rata slijedi razdoblje bez presedana u povijesti javne potrošnje. U većini razvijenih zemalja dolazi do snažne ekspanzije države, osobito kroz razvoj sustava socijalne sigurnosti, javnog zdravstva i obrazovanja. Udio javne potrošnje raste s oko 13% BDP-a početkom stoljeća na više od 40% u suvremenim ekonomijama [@tanzi2000]. Ovaj rast rezultat je kombinacije dubokih strukturnih promjena:
+Nakon Drugog svjetskog rata slijedi razdoblje bez presedana u povijesti javne potrošnje. U većini razvijenih zemalja dolazi do snažne ekspanzije države, osobito kroz razvoj sustava socijalne sigurnosti, javnog zdravstva i obrazovanja. Udio javne potrošnje raste s oko 13% BDP-a početkom stoljeća na više od 40% u suvremenim ekonomijama [@tanzi2000]. Ovaj rast rezultat je kombinacije dubokih strukturnih promjena.
 
-**Demografske promjene** – produljenje životnog vijeka i starenje stanovništva predstavljaju jedan od najvažnijih dugoročnih pokretača rasta javne potrošnje. Kako raste udio starijeg stanovništva, rastu i pritisci na mirovinske sustave i zdravstvenu potrošnju.
+**Demografske promjene** – produljenje životnog vijeka i starenje stanovništva predstavljaju jedan od najvažnijih dugoročnih pokretača rasta javne potrošnje. Kako raste udio starijeg stanovništva, rastu i pritisci na mirovinske sustave i zdravstvenu potrošnju. Ovaj trend posebno je izražen u Europi, gdje se projekcije javne potrošnje snažno povezuju s demografskim kretanjima. Dugoročno, demografske promjene ne utječu samo na razinu, nego i na strukturu javne potrošnje, pomičući fokus s investicija prema transferima.
 
-**Političke promjene** – širenje demokracije i općeg prava glasa bitno su promijenili način određivanja javne potrošnje. U demokratskim sustavima političari imaju snažne poticaje odgovarati na preferencije birača, što često vodi povećanju javne potrošnje [@alesina1995].
+**Političke promjene** – širenje demokracije i općeg prava glasa bitno su promijenili način određivanja javne potrošnje. U demokratskim sustavima političari imaju snažne poticaje odgovarati na preferencije birača, što često vodi povećanju javne potrošnje [@alesina1995]. Primjerice, društva s većom preferencijom za jednakost imaju tendenciju većih javnih rashoda i snažnijih sustava socijalne zaštite.
 
 **Ekonomski rast** – rast dohotka mijenja preferencije građana i povećava potražnju za javnim dobrima i uslugama. Upravo to Wagnerov zakon formalizira: mnoga javna dobra imaju karakteristike „luksuznih dobara" čija potražnja raste brže od dohotka.
 
-**Tehnološki napredak i globalizacija** – moderni razvoj povećava ulogu države kroz nove vrste javnih dobara i potrebu za koordinacijom. Globalizacija istovremeno ograničava fiskalni prostor (porezna konkurencija), ali i povećava potrebu za javnom potrošnjom u područjima socijalne zaštite i regulacije [@tanzi2011].
+**Tehnološki napredak i globalizacija** – moderni razvoj povećava ulogu države kroz nove vrste javnih dobara i potrebu za koordinacijom. Globalizacija istovremeno ograničava fiskalni prostor (porezna konkurencija), ali i povećava potrebu za javnom potrošnjom u područjima socijalne zaštite i regulacije [@tanzi2011]. Osim toga, pojavljuju se nova javna dobra – poput kibernetičke sigurnosti ili klimatske politike – koja dodatno proširuju opseg državne aktivnosti.
 
 Osim same razine, kroz vrijeme se značajno mijenjala i **struktura** javne potrošnje. Dok je u ranijim razdobljima dominirala potrošnja na obranu i javni red, u drugoj polovici 20. stoljeća dolazi do duboke transformacije prema socijalnoj državi. Sve veći udio rashoda počinju zauzimati transferi – mirovine, socijalne naknade, zdravstveni izdaci – što odražava pomak u funkcijama države od „noćnog čuvara" prema aktivnom osiguravatelju socijalne sigurnosti, kako je to sistematizirao @musgrave1959 kroz tri temeljne funkcije javnih financija: alokacijsku, redistributivnu i stabilizacijsku.
 
@@ -64,7 +64,7 @@ Argumenti za postojanje države – uključujući javna dobra, eksternalije i re
 
 Suvremena literatura javnih financija jasno pokazuje da javna potrošnja može generirati značajne društvene i ekonomske koristi, ali i da njezini učinci nisu automatski ni jednoznačni. Oni u velikoj mjeri ovise o institucionalnom okviru, kvaliteti upravljanja i dizajnu pojedinih programa [@tanzi2011; @alesina1995; @barro1990].
 
-**Smanjenje individualnog rizika.** Privatna tržišta osiguranja često ne mogu u potpunosti pokriti rizike poput gubitka zaposlenja, zdravstvenih šokova ili dugovječnosti, zbog problema asimetričnih informacija i adverse selection. Javna potrošnja, kroz sustave zdravstva, mirovina i socijalne zaštite, omogućuje kolektivno dijeljenje tih rizika i smanjuje potrebu za individualnim "samoosiguranjem".
+**Smanjenje individualnog rizika.** U tržišnim ekonomijama pojedinci su izloženi brojnim neizvjesnostima – zdravstvenim rizicima, gubitku zaposlenja, dugovječnosti. Privatna tržišta osiguranja često ne mogu u potpunosti pokriti te rizike zbog problema asimetričnih informacija, moralnog hazarda i adverse selection. Javna potrošnja, kroz sustave zdravstva, mirovina i socijalne zaštite, omogućuje kolektivno dijeljenje tih rizika i smanjuje potrebu za individualnim „samoosiguranjem".
 
 **Akumulacija ljudskog kapitala.** Ulaganja u obrazovanje generiraju pozitivne eksternalije – obrazovanija radna snaga povećava produktivnost, potiče inovacije i olakšava difuziju tehnologije. U okviru endogenih modela rasta [@barro1990], javna potrošnja u infrastrukturu, obrazovanje i istraživanje postaje sastavni dio proizvodne funkcije.
 
@@ -72,11 +72,11 @@ Suvremena literatura javnih financija jasno pokazuje da javna potrošnja može g
 
 **Makroekonomska stabilizacija.** Automatski stabilizatori djeluju brzo i bez dodatnih političkih odluka: u recesijama rastu izdaci za socijalne transfere i smanjuju se porezni prihodi, čime se ublažava pad agregatne potražnje.
 
-**Koordinacija dugoročnog razvoja.** U područjima gdje tržišta ne pružaju optimalne ishode – infrastruktura, zelena tranzicija, digitalizacija, istraživanje i razvoj – država može djelovati kao "investitor posljednjeg izbora" koji smanjuje neizvjesnost i potiče privatna ulaganja.
+**Koordinacija dugoročnog razvoja.** U područjima gdje tržišta ne pružaju optimalne ishode – infrastruktura, zelena tranzicija, digitalizacija, istraživanje i razvoj – država može djelovati kao „investitor posljednjeg izbora" koji smanjuje neizvjesnost i potiče privatna ulaganja.
 
 Međutim, javna potrošnja nosi i značajne troškove i ograničenja.
 
-Financiranje potrošnje putem poreza stvara distorzije u ekonomskim poticajima – tzv. deadweight loss raste disproporcionalno s visinom poreza [@tanzi2011]. Problem neefikasnosti i ograničene odgovornosti javnog sektora proizlazi iz slabijih mehanizama kontrole u usporedbi s privatnim sektorom. Politička ekonomija odlučivanja dodatno pridonosi pristranosti prema većoj potrošnji i odgađanju fiskalne konsolidacije [@alesina1995]. Određeni oblici potrošnje mogu stvoriti neželjene mikroekonomske poticaje poput "poverty traps". Na kraju, @barro1990 pokazuje da samo određene kategorije rashoda – poput infrastrukture i obrazovanja – imaju pozitivan učinak na rast.
+Financiranje potrošnje putem poreza stvara distorzije u ekonomskim poticajima – tzv. deadweight loss raste disproporcionalno s visinom poreza [@tanzi2011]. Problem neefikasnosti i ograničene odgovornosti javnog sektora proizlazi iz slabijih mehanizama kontrole u usporedbi s privatnim sektorom. Politička ekonomija odlučivanja dodatno pridonosi pristranosti prema većoj potrošnji i odgađanju fiskalne konsolidacije [@alesina1995]. Određeni oblici potrošnje mogu stvoriti neželjene mikroekonomske poticaje poput „poverty traps". Na kraju, @barro1990 pokazuje da samo određene kategorije rashoda – poput infrastrukture i obrazovanja – imaju pozitivan učinak na rast.
 
 Ključni uvid moderne ekonomije javnih financija jest stoga da pitanje javne potrošnje nije primarno kvantitativno, nego kvalitativno, strukturno i institucionalno. Nije presudno samo koliko država troši, već **kako, na što, za koga i kroz koje mehanizme troši**.
 
@@ -90,7 +90,7 @@ Središnji mehanizam jest **fiskalni multiplikator**: povećanje državne potro�
 
 Međutim, često se zanemaruje ključna nijansa Keynesove teorije: on nije zagovarao trajno povećanje javne potrošnje, već **simetričnu fiskalnu politiku kroz ciklus** – deficit u recesiji, suficit u ekspanziji. Cilj nije trajno širenje države, nego izravnavanje ekonomskih fluktuacija.
 
-U praksi se ova simetrija često narušava zbog političkih ograničenja. Vlade relativno lako povećavaju potrošnju u recesijama, ali znatno teže provode konsolidaciju u razdobljima rasta. Ova asimetrija dovodi do tzv. **deficit biasa**, koji je detaljno analiziran u literaturi političke ekonomije [@alesina1995]. @tanzi2011 dodatno naglašava da širenje javne potrošnje postaje institucionalno i politički "ljepljivo" – jednom uvedeni programi teško se smanjuju ili ukidaju, čak i kada izvorni razlozi za njihovo postojanje nestanu.
+U praksi se ova simetrija često narušava zbog političkih ograničenja. Vlade relativno lako povećavaju potrošnju u recesijama, ali znatno teže provode konsolidaciju u razdobljima rasta. Ova asimetrija dovodi do tzv. **deficit biasa**, koji je detaljno analiziran u literaturi političke ekonomije [@alesina1995]. @tanzi2011 dodatno naglašava da širenje javne potrošnje postaje institucionalno i politički „ljepljivo" – jednom uvedeni programi teško se smanjuju ili ukidaju, čak i kada izvorni razlozi za njihovo postojanje nestanu.
 
 Vremenski pomaci u fiskalnoj politici (lags) dodatno otežavaju njezinu učinkovitost. Između identifikacije problema i stvarne implementacije mjera može proći značajno vrijeme, pa fiskalni poticaj može djelovati tek kada se gospodarstvo već oporavlja, čineći politiku procikličnom [@blanchard2017].
 
@@ -98,7 +98,7 @@ Učinkovitost stabilizacijske uloge javne potrošnje stoga ovisi o tome je li on
 
 ## Razlike u javnoj potrošnji u svijetu
 
-Razlike u razini i strukturi javne potrošnje među zemljama izuzetno su velike i odražavaju različite političke, institucionalne i društvene izbore, a ne postojanje jedinstvenog "optimalnog" modela države [@tanzi2011; @alesina1995].
+Razlike u razini i strukturi javne potrošnje među zemljama izuzetno su velike i odražavaju različite političke, institucionalne i društvene izbore, a ne postojanje jedinstvenog „optimalnog" modela države [@tanzi2011; @alesina1995].
 
 U razvijenim gospodarstvima javna potrošnja često prelazi 40% BDP-a, a u skandinavskim zemljama doseže i 50–60% BDP-a. Nasuprot tome, u zemljama u razvoju javna potrošnja je znatno niža, često ispod 25–30% BDP-a, što proizlazi iz ograničenih fiskalnih kapaciteta, slabije porezne administracije i veće neformalnosti gospodarstva.
 
@@ -110,15 +110,14 @@ Razvijene zemlje razlikuju se i po **modelima socijalne države**:
 - **Kontinentalni model** – sustavi socijalnog osiguranja povezani s tržištem rada
 - **Anglo-saksonski model** – niža razina potrošnje i veći naglasak na ciljanim programima uz veću ulogu tržišta
 
-Ove razlike odražavaju različite društvene preferencije u pogledu jednakosti i uloge države, a ne različitu ekonomsku "ispravnost" [@alesina2011; @alesina1995].
+Ove razlike odražavaju različite društvene preferencije u pogledu jednakosti i uloge države, a ne različitu ekonomsku „ispravnost" [@alesina2011; @alesina1995].
 
 Empirijska istraživanja dodatno pokazuju da veličina javne potrošnje sama po sebi ne određuje ekonomske rezultate. Neke zemlje s velikim javnim sektorom ostvaruju visoke stope rasta i kvalitetne javne usluge, dok druge slične razine potrošnje imaju slabije performanse. To jasno upućuje na ključnu ulogu kvalitete institucija, učinkovitosti javne uprave i transparentnosti [@blanchard2017; @tanzi2000].
 
-U konačnici, razlike u javnoj potrošnji u svijetu potvrđuju temeljni zaključak moderne ekonomije javnih financija: ne postoji jedinstveni “optimalni” model države. Razina i struktura javne potrošnje rezultat su povijesnog razvoja, političkih odluka i institucionalnih ograničenja, dok njihovi učinci ovise prije svega o kvaliteti implementacije, a ne samo o veličini rashoda. Upravo zato zemlje slične razine javne potrošnje mogu ostvarivati potpuno različite ekonomske i društvene ishode.
+U konačnici, razlike u javnoj potrošnji u svijetu potvrđuju temeljni zaključak moderne ekonomije javnih financija: ne postoji jedinstveni „optimalni" model države. Razina i struktura javne potrošnje rezultat su povijesnog razvoja, političkih odluka i institucionalnih ograničenja, dok njihovi učinci ovise prije svega o kvaliteti implementacije, a ne samo o veličini rashoda.
 
 ## Javna potrošnja u Hrvatskoj i EU
 
-- Struktura i razina javne potrošnje u Hrvatskoj u usporedbi s EU
-- Specifičnosti hrvatskog modela javne potrošnje
-- Utjecaj EU fondova na strukturu rashoda
-- Fiskalni izazovi i dugoročna održivost
+::: {.callout-note}
+Ovaj odjeljak je u pripremi.
+:::
