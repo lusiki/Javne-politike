@@ -2,10 +2,44 @@
 title: "4. Nova institucionalna ekonomika"
 ---
 
-- Zašto institucije oblikuju ekonomske i političke ishode
-- Institucije kao "pravila igre"
-- Transakcijski troškovi, vlasnička prava i ugovori
-- Formalne i neformalne institucije
-- Principal-agent problem i institucijski dizajn
-- Inkluzivne i ekstraktivne institucije
-- Zašto nije važno samo koliko države ima, nego kakva je država
+## Zašto institucije oblikuju ekonomske i političke ishode
+
+::: {.callout-note}
+Ovaj odjeljak je u pripremi.
+:::
+
+## Institucije kao "pravila igre"
+
+::: {.callout-note}
+Ovaj odjeljak je u pripremi.
+:::
+
+## Transakcijski troškovi, vlasnička prava i ugovori
+
+::: {.callout-note}
+Ovaj odjeljak je u pripremi.
+:::
+
+## Formalne i neformalne institucije
+
+::: {.callout-note}
+Ovaj odjeljak je u pripremi.
+:::
+
+## Principal-agent problem i institucijski dizajn
+
+::: {.callout-note}
+Ovaj odjeljak je u pripremi.
+:::
+
+## Inkluzivne i ekstraktivne institucije
+
+::: {.callout-note}
+Ovaj odjeljak je u pripremi.
+:::
+
+## Zašto nije važno samo koliko države ima, nego kakva je država
+
+::: {.callout-note}
+Ovaj odjeljak je u pripremi.
+:::

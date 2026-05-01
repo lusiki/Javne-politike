@@ -1,3 +1,8 @@
+/* Hide the landing page (index) entry from the sidebar */
+.sidebar-item:first-child {
+  display: none;
+}
+
 /* Base typography */
 body {
   text-rendering: optimizeLegibility;

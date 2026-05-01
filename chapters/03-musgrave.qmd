@@ -2,15 +2,38 @@
 title: "3. Uloga države prema Musgraveu"
 ---
 
+## Alokacijska funkcija
+
 ::: {.callout-note}
-Ovo poglavlje je u pripremi.
+Ovaj odjeljak je u pripremi.
 :::
 
-## Sadržaj poglavlja
+## Distribucijska funkcija
 
-- Alokacijska funkcija
-- Distribucijska funkcija
-- Stabilizacijska funkcija
-- Klasična teorija javnih financija i država kao korektiv tržišta
-- Država blagostanja i proširenje državnih funkcija
-- Napetost između efikasnosti, jednakosti i stabilnosti
+::: {.callout-note}
+Ovaj odjeljak je u pripremi.
+:::
+
+## Stabilizacijska funkcija
+
+::: {.callout-note}
+Ovaj odjeljak je u pripremi.
+:::
+
+## Klasična teorija javnih financija i država kao korektiv tržišta
+
+::: {.callout-note}
+Ovaj odjeljak je u pripremi.
+:::
+
+## Država blagostanja i proširenje državnih funkcija
+
+::: {.callout-note}
+Ovaj odjeljak je u pripremi.
+:::
+
+## Napetost između efikasnosti, jednakosti i stabilnosti
+
+::: {.callout-note}
+Ovaj odjeljak je u pripremi.
+:::
