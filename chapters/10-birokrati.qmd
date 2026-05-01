@@ -2,7 +2,26 @@
 title: "10. Birokrati u akciji – tko stvarno upravlja državom?"
 ---
 
-- Kako javni službenici "igraju igru" i može li se to opravdati
-- Što se događa kad se ciljevi politike i proračuna sudare
-- Šefovi, nadzori i (ne)učinkovitost birokracije
-- Principal-agent problem u javnom sektoru
+## Kako javni službenici "igraju igru" i može li se to opravdati
+
+::: {.callout-note}
+Ovaj odjeljak je u pripremi.
+:::
+
+## Što se događa kad se ciljevi politike i proračuna sudare
+
+::: {.callout-note}
+Ovaj odjeljak je u pripremi.
+:::
+
+## Šefovi, nadzori i (ne)učinkovitost birokracije
+
+::: {.callout-note}
+Ovaj odjeljak je u pripremi.
+:::
+
+## Principal-agent problem u javnom sektoru
+
+::: {.callout-note}
+Ovaj odjeljak je u pripremi.
+:::

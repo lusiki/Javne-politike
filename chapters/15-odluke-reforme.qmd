@@ -2,6 +2,42 @@
 title: "15. Reforme: kako dizajnirati učinkovit javni sektor"
 ---
 
+## Zašto su reforme teške?
+
+::: {.callout-note}
+Ovaj odjeljak je u pripremi — obradit će temeljne uzroke otpora reformama.
+:::
+
+## Veto-igrači, politički otpori i institucionalna tromost
+
+::: {.callout-note}
+Ovaj odjeljak je u pripremi.
+:::
+
+## Kako uskladiti efikasnost, pravednost i političku provedivost
+
+::: {.callout-note}
+Ovaj odjeljak je u pripremi.
+:::
+
+## Što znači dobar javni sektor?
+
+::: {.callout-note}
+Obrađeno u odjeljku "Reforme u javnom sektoru: što funkcionira i zašto?" ispod.
+:::
+
+## Kako graditi bolje javne politike?
+
+::: {.callout-note}
+Obrađeno u odjeljku "Na kraju: koji su 'ključevi' uspješnih reformi?" ispod.
+:::
+
+---
+
+::: {.callout-important}
+Napomena: Sadržaj o cost-benefit analizi koji slijedi premještat će se u poglavlje 14 ("Kako se donose pametne odluke?") u sljedećoj verziji.
+:::
+
 ## KAKO DONIJETI RAZBORITE ODLUKE O JAVNIM POLITIKAMA?
 
 Donošenje javnih politika jedno je od najzahtjevnijih područja ekonomske analize i političkog odlučivanja. Za razliku od privatnog sektora, gdje su ciljevi relativno jasno definirani – primjerice kroz maksimizaciju profita, povećanje tržišnog udjela ili rast vrijednosti poduzeća – javni sektor djeluje u okruženju u kojem ciljevi nisu ni jednoznačni ni međusobno usklađeni. Upravo ta složenost čini javne politike posebnom kategorijom ekonomskog odlučivanja.

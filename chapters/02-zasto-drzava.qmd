@@ -2,21 +2,48 @@
 title: "2. Zašto država postoji? Tržišni neuspjesi i funkcije države"
 ---
 
-## Klasična analiza javnih financija
+## Tržišni neuspjesi kao temeljno opravdanje državne intervencije
 
-- Tržišni neuspjesi kao temeljno opravdanje državne intervencije
-- Javna dobra
-- Eksternalije
-- Asimetrične informacije
-- Tržišna moć i monopol
-- Meritorna dobra
-- Odnos efikasnosti i pravednosti
+::: {.callout-note}
+Ovaj odjeljak je u pripremi.
+:::
 
-## Uloga države prema Musgraveu
+## Javna dobra
 
-- Alokacijska funkcija
-- Distribucijska funkcija
-- Stabilizacijska funkcija
-- Klasična teorija javnih financija i država kao korektiv tržišta
-- Država blagostanja i proširenje državnih funkcija
-- Napetost između efikasnosti, jednakosti i stabilnosti
+::: {.callout-note}
+Ovaj odjeljak je u pripremi.
+:::
+
+## Eksternalije
+
+::: {.callout-note}
+Ovaj odjeljak je u pripremi.
+:::
+
+## Asimetrične informacije
+
+::: {.callout-note}
+Ovaj odjeljak je u pripremi.
+:::
+
+## Tržišna moć i monopol
+
+::: {.callout-note}
+Ovaj odjeljak je u pripremi.
+:::
+
+## Meritorna dobra
+
+::: {.callout-note}
+Ovaj odjeljak je u pripremi.
+:::
+
+## Odnos efikasnosti i pravednosti
+
+::: {.callout-note}
+Ovaj odjeljak je u pripremi.
+:::
+
+::: {.callout-important}
+Sadržaj o Musgraveu (alokacijska, distribucijska i stabilizacijska funkcija) premješten je u poglavlje 3.
+:::

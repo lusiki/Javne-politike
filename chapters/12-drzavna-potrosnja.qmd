@@ -8,6 +8,30 @@ Razumijevanje javne potrošnje zahtijeva kombinaciju povijesne, teorijske i empi
 
 U ovom poglavlju najprije ćemo pokazati kako se pogled na javnu potrošnju mijenjao kroz povijest. Zatim ćemo razmotriti ključne argumente koji opravdavaju javnu potrošnju, ali i ograničenja takvih intervencija. Posebnu pažnju posvetit ćemo stvarnom značenju Keynesove teorije i čestim pogrešnim interpretacijama njezine uloge. Nakon toga analizirat ćemo koristi javne potrošnje, razlike među zemljama te na kraju detaljnije sagledati specifičnosti javne potrošnje u Europskoj uniji i Hrvatskoj.
 
+## Što je politička potrošnja i kako se odlučuje tko što dobiva
+
+::: {.callout-note}
+Ovaj odjeljak je u pripremi.
+:::
+
+## Izbori i proračunski ciklusi: što se događa pred izbore?
+
+::: {.callout-note}
+Ovaj odjeljak je u pripremi.
+:::
+
+## Tko gubi, a tko dobiva iz državne blagajne?
+
+::: {.callout-note}
+Ovaj odjeljak je u pripremi.
+:::
+
+## Zašto javna potrošnja raste?
+
+::: {.callout-note}
+Ovaj odjeljak je u pripremi.
+:::
+
 ## Javna potrošnja kroz povijest
 
 Razumijevanje javne potrošnje zahtijeva povijesnu perspektive jer se njezina uloga dramatično mijenjala kroz vrijeme – od minimalne i gotovo nepoželjne aktivnosti države do jednog od ključnih instrumenata oblikovanja gospodarstva i društva.

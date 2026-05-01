@@ -2,7 +2,26 @@
 title: "8. Glasovanje bez garancije – ima li smisla?"
 ---
 
-- Zašto uopće glasujemo ako znamo da nećemo odlučiti?
-- Racionalna ignorancija i racionalni apstinent
-- Emocije, identitet i informacije – skriveni pokretači izbora
-- Zašto ljudi ipak izlaze na izbore?
+## Zašto uopće glasujemo ako znamo da nećemo odlučiti?
+
+::: {.callout-note}
+Ovaj odjeljak je u pripremi.
+:::
+
+## Racionalna ignorancija i racionalni apstinent
+
+::: {.callout-note}
+Ovaj odjeljak je u pripremi.
+:::
+
+## Emocije, identitet i informacije – skriveni pokretači izbora
+
+::: {.callout-note}
+Ovaj odjeljak je u pripremi.
+:::
+
+## Zašto ljudi ipak izlaze na izbore?
+
+::: {.callout-note}
+Ovaj odjeljak je u pripremi.
+:::

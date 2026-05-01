@@ -2,6 +2,30 @@
 title: "13. Porezi: više od tereta"
 ---
 
+## Zašto plaćamo poreze i tko to stvarno osjeti
+
+::: {.callout-note}
+Uvod u logiku oporezivanja — razvijen u kasnijim odjeljcima ovog poglavlja.
+:::
+
+## Što je fiskalna iluzija i kako nas može zbuniti
+
+::: {.callout-note}
+Ovaj odjeljak je u pripremi.
+:::
+
+## Tko stvarno snosi porezni teret?
+
+::: {.callout-note}
+Teorija incidencije obrađena je u odjeljku "Osnove teorije oporezivanja" ispod.
+:::
+
+## Pravednost i ravnoteža: kako izgleda "dobar" porezni sustav?
+
+::: {.callout-note}
+Obrađeno u odjeljcima "Osnovna načela oporezivanja" i "Teorija optimalnog oporezivanja" ispod.
+:::
+
 ## Što su porezi?
 
 Porezi predstavljaju temeljni instrument javnih financija i ključni izvor prihoda moderne države. U najširem smislu, porezi se definiraju kao obvezna, nepovratna davanja državi bez izravne protuusluge [@musgrave1989; @rosen2014]. Ova definicija sadrži nekoliko važnih elemenata koje je potrebno jasno razumjeti.

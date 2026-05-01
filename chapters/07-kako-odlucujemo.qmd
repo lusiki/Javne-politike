@@ -2,7 +2,26 @@
 title: "7. Tko odlučuje kad svi odlučujemo?"
 ---
 
-- Kako skupine donose odluke (i zašto to ponekad ne ide)?
-- Što nam govore teorije preferencija i glasovanja?
-- Arrowljev teorem i problemi kolektivnog izbora
-- Zašto kompromisi znaju stvoriti čudne rezultate?
+## Kako skupine donose odluke (i zašto to ponekad ne ide)?
+
+::: {.callout-note}
+Ovaj odjeljak je u pripremi.
+:::
+
+## Što nam govore teorije preferencija i glasovanja?
+
+::: {.callout-note}
+Ovaj odjeljak je u pripremi.
+:::
+
+## Arrowljev teorem i problemi kolektivnog izbora
+
+::: {.callout-note}
+Ovaj odjeljak je u pripremi.
+:::
+
+## Zašto kompromisi znaju stvoriti čudne rezultate?
+
+::: {.callout-note}
+Ovaj odjeljak je u pripremi.
+:::

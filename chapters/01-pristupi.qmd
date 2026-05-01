@@ -12,6 +12,12 @@ Normativni pristup, nasuprot tome, bavi se pitanjem što bi trebalo biti. On vi�
 
 Drugim riječima, pozitivistički pristup govori nam kako javne politike funkcioniraju, a normativni pristup pita jesu li dobre. Ta dva pristupa nisu suprotstavljena nego komplementarna. Ako znamo samo što bi trebalo biti, ali ne razumijemo kako politički i institucionalni svijet stvarno funkcionira, završit ćemo s lijepim, ali neprovedivim preporukama. Ako pak znamo samo kako stvari jesu, ali nemamo kriterij po kojem ih vrednujemo, tada možemo vrlo precizno opisivati stvarnost bez mogućnosti da o njoj donesemo ozbiljan sud. Upravo zato je za analizu javnih politika potrebno oba pristupa držati zajedno.
 
+## Što znači analizirati politiku kroz "što jest" i "što bi trebalo biti"
+
+## Razlika između objašnjenja i vrednovanja
+
+## Zašto su oba pristupa nužna u analizi javnih politika
+
 ## Ekonomika blagostanja i njezini temeljni koncepti
 
 Ovo razlikovanje posebno dolazi do izražaja u okviru ekonomike blagostanja. Ekonomika blagostanja razvijena je kao pokušaj da se odgovori na pitanje kako ocijeniti ekonomske i političke ishode s gledišta društva u cjelini. Ona se definira kao grana teorijske ekonomije koja se bavi vrednovanjem ekonomskih načela i postupaka te njihovih posljedica na blagostanje pojedinaca u društvu. Njezin središnji problem jest sljedeći: čak i ako tržišta proizvode određeni ishod, kako znamo je li taj ishod društveno poželjan?
@@ -36,9 +42,11 @@ Zajedno, ova dva teorema šalju vrlo važnu poruku. Prvi teorem kaže: tržišta
 
 No, jednako je važno odmah dodati da je stvarni svijet daleko od tih idealnih pretpostavki. Upravo zato ekonomika blagostanja i teorija javnih financija prelaze s apstraktne obrane tržišta na analizu tržišnih neuspjeha. Tržišni neuspjesi definirani su kao situacije u kojima gospodarstvo nije učinkovito zbog utjecaja na tržište ili zbog toga što tržište za određeno dobro ili odnos uopće ne postoji, a kao ključni slučajevi navode se monopol i drugi oblici tržišne moći, asimetrične informacije, javna dobra i eksternalije.
 
-## Musgraveove funkcije države
+## Ograničenja Pareto-pristupa: efikasnost nije isto što i pravednost
 
-Na toj osnovi razvija se klasična teorija javnih financija, koju je najjasnije sistematizirao Richard Musgrave. Njegova tri velika ciljna područja države čine alokacijska, distribucijska i stabilizacijska funkcija. Alokacijska funkcija odnosi se na ispravljanje tržišnih neuspjeha i osiguravanje javnih dobara. Distribucijska funkcija odnosi se na pitanje pravednosti i redistribucije dohotka i bogatstva. Stabilizacijska funkcija odnosi se na ublažavanje gospodarskih ciklusa, održavanje zaposlenosti, stabilnosti cijena i makroekonomske ravnoteže. U toj viziji država nije samo "nužno zlo", nego ključni akter u ostvarivanju učinkovitijeg i pravednijeg društvenog poretka.
+::: {.callout-note}
+Sadržaj o Pareto-ograničenjima integriran je u prethodne odjeljke. Ovaj odjeljak bit će posebno razrađen u sljedećoj verziji.
+:::
 
 ## Pozitivistička kritika normativne slike države
 
@@ -48,7 +56,7 @@ Iz takve perspektive javne politike često nisu rezultat optimalnog društvenog 
 
 S time je povezan i pojam kvazi-fiskalnih instrumenata. Ponekad država ne ostvaruje svoje ciljeve otvoreno kroz poreze i proračunsku potrošnju, nego kroz regulacije, implicitne poreze, usmjerene kredite, administrativne cijene ili druge oblike intervencije izvan formalnog proračuna. Takve aktivnosti mogu djelovati kao fiskalne intervencije provedene nefiskalnim instrumentima, odnosno izvan proračuna, ali s učincima sličnima porezima i subvencijama. To je važno jer pokazuje da se stvarna uloga države ne može procijeniti samo gledajući službeni proračun.
 
-## Institucije kao "pravila igre"
+## Institucije kao "pravila igre" {.unnumbered}
 
 Sve to vodi prema institucionalnoj ekonomiji, koja naglašava da ni tržišta ni javne politike ne djeluju u praznom prostoru. Ona djeluju unutar institucija – formalnih pravila, zakona, procedura, normi, političke kulture i razine povjerenja. @north1990 je upravo zato definirao institucije kao "pravila igre" u društvu. Ako su ta pravila stabilna, predvidiva i uključiva, tada se povećava prostor za investicije, dugoročno planiranje i odgovorno političko djelovanje. Ako su pak institucije slabe, arbitrarne i podložne zarobljavanju od strane uskih interesnih skupina, tada i tržišta i država proizvode lošije ishode.
 
@@ -56,7 +64,7 @@ Suvremena literatura dodatno naglašava razliku između inkluzivnih i ekstraktiv
 
 Institucionalni pristup posebno je vrijedan zato što spaja pozitivnu i normativnu perspektivu. S jedne strane, on empirijski objašnjava kako institucije stvarno nastaju i kako utječu na ponašanje aktera. S druge strane, on implicitno postavlja normativno pitanje: kakve institucije vode boljim društvenim ishodima, većoj odgovornosti vlasti, višoj kvaliteti javnih politika i pravednijoj raspodjeli prilika? Time se rasprava pomiče s jednostavnog pitanja "koliko države" na dublje pitanje "kakva država, pod kojim pravilima i s kakvim kapacitetima".
 
-## Zaključak: integracija dvaju pristupa
+## Zaključak: integracija dvaju pristupa {.unnumbered}
 
 U konačnici, analiza javnih politika zahtijeva integraciju oba pristupa. Pozitivna analiza omogućuje razumijevanje stvarnih političkih, ekonomskih i institucionalnih mehanizama. Normativna analiza pruža kriterije pomoću kojih te ishode možemo ocijeniti. Bez pozitivne analize ne razumijemo ograničenja i realne poticaje. Bez normativne analize nemamo mjerilo prema kojem bismo razlikovali uspješne od neuspješnih, pravedne od nepravednih i poželjne od nepoželjnih politika.
 

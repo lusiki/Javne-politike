@@ -2,7 +2,26 @@
 title: "9. Stranke, kandidati i političko tržište"
 ---
 
-- Kako se političke opcije natječu za naš glas?
-- Što oblikuje politički centar i polarizaciju?
-- Medijan birača i politička konkurencija
-- Je li diktatura najbolji sustav donošenja odluka?
+## Kako se političke opcije natječu za naš glas?
+
+::: {.callout-note}
+Ovaj odjeljak je u pripremi.
+:::
+
+## Što oblikuje politički centar i polarizaciju?
+
+::: {.callout-note}
+Ovaj odjeljak je u pripremi.
+:::
+
+## Medijan birača i politička konkurencija
+
+::: {.callout-note}
+Ovaj odjeljak je u pripremi.
+:::
+
+## Je li diktatura najbolji sustav donošenja odluka?
+
+::: {.callout-note}
+Ovaj odjeljak je u pripremi.
+:::
