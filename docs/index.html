@@ -23,40 +23,6 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-/* CSS for syntax highlighting */
-pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { line-height: 1.25; }
-pre > code.sourceCode > span:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
-div.sourceCode { margin: 1em 0; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
-}
-@media print {
-pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
-}
-pre.numberSource code
-  { counter-reset: source-line 0; }
-pre.numberSource code > span
-  { position: relative; left: -4em; counter-increment: source-line; }
-pre.numberSource code > span > a:first-child::before
-  { content: counter(source-line);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-  }
-pre.numberSource { margin-left: 3em;  padding-left: 4px; }
-div.sourceCode
-  {   }
-@media screen {
-pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
-}
 </style>
 
 
@@ -74,10 +40,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-af90186cd0d8396433014dbd3429e17d.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-12b673e12cc7abd34d26a283c932c646.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-ebc84cebbf235d0b716c1db827ff1cae.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="site_libs/bootstrap/bootstrap-dark-c7b6a27c1ba7ada27aceefcbf398d1ae.min.css" rel="prefetch" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="site_libs/bootstrap/bootstrap-8f5027306b09d4f92da9a9802daa437d.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-dark-55e708ec846cc518a02af4b884cc2d8f.min.css" rel="prefetch" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="light">
 <script src="site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
 <link href="site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
 <link href="site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet">
@@ -114,50 +82,18 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     document.body.classList.add('hypothesis-enabled');
   });
 </script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,300..900;1,8..60,300..900&amp;family=Inter:wght@300;400;500;600;700&amp;family=JetBrains+Mono:wght@400;500;600&amp;display=swap" rel="stylesheet">
 <style>
   #title-block-header { display: none; }
-  .book-hero {
-    text-align: center;
-    margin: 0 auto 2rem auto;
-    padding-bottom: 1.5rem;
-    border-bottom: 1px solid #E2E8F0;
-  }
-  .book-hero img {
-    max-width: 100%;
-    height: auto;
-    margin-bottom: 1.5rem;
-    border-radius: 6px;
-  }
-  .book-hero h1 {
-    font-size: 2.0rem;
-    line-height: 1.25;
-    margin: 0 0 0.6rem 0;
-    font-weight: 700;
-  }
-  .book-hero .book-subtitle {
-    font-size: 1.15rem;
-    font-style: italic;
-    color: #4A5568;
-    margin-bottom: 1.2rem;
-  }
-  .book-hero .book-authors {
-    font-size: 1.0rem;
-    color: #2D3748;
-  }
-  .book-hero .book-authors a {
-    color: #2B6CB0;
-    text-decoration: none;
-  }
-  .book-hero .book-authors a:hover {
-    text-decoration: underline;
-  }
 </style>
 
 
 <link rel="stylesheet" href="styles/styles.css">
 </head>
 
-<body class="nav-sidebar docked">
+<body class="nav-sidebar docked fullcontent">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -370,21 +306,13 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active" data-toc-expanded="2">
-    <h2 id="toc-title">Table of contents</h2>
-   
-  <ul>
-  <li><a href="#zašto-bismo-otvorili-ovu-knjigu" id="toc-zašto-bismo-otvorili-ovu-knjigu" class="nav-link active" data-scroll-target="#zašto-bismo-otvorili-ovu-knjigu">Zašto bismo otvorili ovu knjigu?</a></li>
-  </ul>
-<div class="toc-actions"><ul><li><a href="https://github.com/lusiki/Javne-politike/edit/main/index.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/lusiki/Javne-politike/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
-    </div>
+    
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<div class="quarto-title-block"><div><h1 class="title">Prije početka: O čemu se radi?</h1><button type="button" class="btn code-tools-button" id="quarto-code-tools-source"><i class="bi"></i> Code</button></div></div>
+<h1 class="title">Prije početka: O čemu se radi?</h1>
 <p class="subtitle lead">Praktični i interaktivni udžbenik za studente i sve koji žele znati više</p>
 </div>
 
@@ -418,19 +346,41 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 <p><a href=".\cover.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-1"><img src=".\cover.jpg" title="Sve što želite znati o državi i javnim politikama u hrvatskoj" class="quarto-cover-image img-fluid"></a></p>
 <div class="book-hero">
+<div class="book-hero-image">
 <p><a href="images/Pic.png" class="lightbox" data-gallery="quarto-lightbox-gallery-2"><img src="images/Pic.png" class="img-fluid"></a></p>
-<section id="sve-što-želite-znati-o-državi-i-javnim-politikama-u-hrvatskoj" class="level1">
-<h1>Sve što želite znati o državi i javnim politikama u Hrvatskoj</h1>
-<div class="book-subtitle">
-<p>Praktični i interaktivni udžbenik za studente i sve koji žele znati više</p>
 </div>
-<div class="book-authors">
+<div class="book-hero-kicker">
+<p>Praktični i interaktivni udžbenik</p>
+</div>
+<section id="sve-što-želite-znati-o-državi-i-javnim-politikama-u-hrvatskoj" class="level1 book-hero-title">
+<h1 class="book-hero-title">Sve što želite znati o državi i javnim politikama u Hrvatskoj</h1>
+<div class="book-hero-subtitle">
+<p>Vodič kroz ekonomiju, politiku i institucije za studente i sve koji žele razumjeti zašto država djeluje onako kako djeluje.</p>
+</div>
+<div class="book-hero-authors">
 <p><a href="https://zsem.hr/clanovi/dr-sc-milan-deskar-skrbic/">Milan Deskar-Škrbić</a> · <a href="https://www.unicath.hr/odjeli-i-fakultet/nastavnici/petra-palic">Petra Palić</a> · <a href="https://www.unicath.hr/odjeli-i-fakultet/nastavnici/luka-sikic">Luka Sikić</a></p>
+</div>
+<div class="book-hero-cta">
+<p><a href="chapters/01-pristupi.html" class="cta-button">Počnite čitati →</a> <a href="#sadržaj" class="cta-button-secondary">Pregledajte sadržaj</a></p>
 </div>
 </section>
 </div>
-<section id="zašto-bismo-otvorili-ovu-knjigu" class="level2">
-<h2 class="anchored" data-anchor-id="zašto-bismo-otvorili-ovu-knjigu">Zašto bismo otvorili ovu knjigu?</h2>
+<div class="feature-grid">
+<section id="interaktivni-grafikoni" class="level3 feature-card">
+<h3 class="anchored" data-anchor-id="interaktivni-grafikoni">Interaktivni grafikoni</h3>
+<p>Više od pukog teksta — dinamički grafovi, simulacije i podatci uživo iz hrvatske ekonomije pomažu razumjeti kako odluke djeluju u stvarnom vremenu.</p>
+</section>
+<section id="hrvatski-kontekst" class="level3 feature-card">
+<h3 class="anchored" data-anchor-id="hrvatski-kontekst">Hrvatski kontekst</h3>
+<p>Primjeri, podatci i institucije iz Hrvatske — od poreznog sustava i mirovinske reforme do realnih politika koje su oblikovale državu.</p>
+</section>
+<section id="otvoreni-izvor" class="level3 feature-card">
+<h3 class="anchored" data-anchor-id="otvoreni-izvor">Otvoreni izvor</h3>
+<p>Knjiga je besplatna, redovito ažurirana i otvorena za doprinose. Cijeli kod, podatci i tekst dostupni su na <a href="https://github.com/lusiki/Javne-politike">GitHubu</a>.</p>
+</section>
+</div>
+<section id="sadržaj" class="level2">
+<h2 class="anchored" data-anchor-id="sadržaj">Zašto bismo otvorili ovu knjigu?</h2>
 <p>Zamislite da možete “zaviriti iza kulisa” politike. Ne samo gledati što političari govore, nego razumjeti zašto donose odluke koje donose, zašto neke politike opstaju desetljećima iako su očito loše, zašto se porezi povećavaju baš kad se ne očekuje, ili zašto se reforme najavljuju glasno – a provedu tiho ili nikako. Zamislite da možete prepoznati obrasce iza političkih odluka, vidjeti tko dobiva, tko gubi i zašto, te unaprijed naslutiti kako će određena politika završiti prije nego što se uopće provede.</p>
 <p>Ova knjiga polazi od jednostavne, ali često zanemarene ideje: javne politike oblikuju gotovo svaki aspekt našeg života. One određuju koliko ćemo plaćati poreze, kakvo ćemo obrazovanje imati, koliko će zdravstvo biti dostupno, kako će se reagirati na krize i koliko će društvo biti pravedno ili nejednako. One utječu na to gdje ćemo raditi, koliko ćemo zarađivati, hoćemo li pokrenuti posao ili otići iz zemlje. Drugim riječima, javne politike nisu apstraktne – one su naša svakodnevna realnost, često nevidljiva dok ne počne stvarati probleme.</p>
 <p>No upravo zato što su svugdje oko nas, često ih uzimamo zdravo za gotovo. Vidimo njihove posljedice, ali rijetko razumijemo mehanizme koji do njih vode. Zašto se neke loše politike ne ukidaju? Zašto se dobre ideje ne provode? Zašto se javni novac ponekad troši na načine koji se čine nelogičnima? Zašto politički sustavi proizvode ishode koji frustriraju i birače i stručnjake?</p>
@@ -440,22 +390,290 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p>U tom smislu, ova knjiga ne nudi samo odgovore, nego i način razmišljanja. Ona vas uvodi u dva temeljna pristupa analizi javnih politika koji se često promatraju odvojeno, ali se u stvarnosti ne mogu razdvojiti. S jedne strane, tu je normativni pristup, koji postavlja pitanje: kakve bi politike trebale biti? Što znači pravedan porezni sustav? Kako postići veću učinkovitost, ali i veću jednakost? Kako mjerimo “dobru” politiku?</p>
 <p>S druge strane, tu je pozitivistički pristup, koji nas vraća u stvarni svijet i pita: kako se politike stvarno donose? Zašto političari često ne rade ono što bi “trebali”? Kako interesi, institucije i poticaji oblikuju konačne odluke? Zašto racionalne ideje često završavaju kao politički kompromisi – ili uopće ne zažive?</p>
 <p>Najzanimljiviji dio počinje upravo tamo gdje se ta dva pristupa susreću. Jer svijet javnih politika nije svijet idealnih rješenja, nego svijet kompromisa, ograničenja i nepredvidivih ishoda. To je svijet u kojem dobre ideje mogu propasti, loše ideje opstati, a najbolja rješenja često nisu ona koja su teorijski optimalna, nego ona koja su politički i institucionalno izvediva.</p>
+<div class="dinkus">
+
+</div>
 <p>Upravo zato ova knjiga odbacuje pojednostavljene priče o državi. Država nije samo “rješenje” koje ispravlja tržišne neuspjehe, ali nije ni samo “problem” koji stvara neefikasnost i birokraciju. Ona je složen sustav odluka, poticaja i pravila, u kojem sudjeluju političari, birači, birokrati i interesne skupine – svi sa svojim ciljevima, informacijama i ograničenjima. Ponekad djeluju u javnom interesu, ponekad u vlastitom, a najčešće negdje između.</p>
 <p>Razumjeti državu znači razumjeti kako se ti interesi prelamaju kroz institucije i pretvaraju u konkretne politike. To znači razumjeti zašto se javni novac troši na određeni način, zašto se reforme događaju (ili ne događaju), zašto neki sustavi funkcioniraju bolje od drugih i kako se pravila mogu promijeniti da bi ishodi bili bolji.</p>
 <p>Kako bismo to postigli, knjiga je strukturirana u tri međusobno povezana dijela.</p>
 <p>U <strong>Dijelu I</strong> postavljamo teorijske temelje. Objašnjavamo kako razmišljati o javnim politikama kroz normativni i pozitivistički pristup, zašto država uopće postoji i koju ulogu ima u gospodarstvu. Upoznajemo se s klasičnom analizom javnih financija, ali i s modernijim pristupima poput nove institucionalne ekonomike i konstitucionalne ekonomike, koji naglašavaju važnost pravila, institucija i dugoročnih ograničenja političkog djelovanja.</p>
 <p>U <strong>Dijelu II</strong> ulazimo u stvarni svijet politike kroz teoriju javnog izbora. Ovdje analiziramo kako se odluke stvarno donose: kako glasuju birači, kako se natječu političke stranke, kako djeluju birokrati i interesne skupine. Ovaj dio pokazuje zašto politički sustavi često proizvode ishode koji odstupaju od teorijskih ideala.</p>
 <p>U <strong>Dijelu III</strong> fokus se prebacuje na konkretne javne politike i javne financije. Analiziramo kako država prikuplja i troši sredstva, kako dizajn poreza i rashoda utječe na društvo te kako se politike mogu evaluirati i unaprijediti. Poseban naglasak stavlja se na pitanje reformi: kako, unatoč političkim i institucionalnim ograničenjima, dizajnirati učinkovit i održiv javni sektor.</p>
+<div class="pullquote">
+<p>Ova knjiga vas neće naučiti samo <em>što</em> misliti o javnim politikama. Naučit će vas <em>kako</em> o njima razmišljati — kritički, analitički i s razumijevanjem stvarnih ograničenja svijeta u kojem živimo.</p>
+</div>
 <p>Ako želite razumjeti zašto se politike oblikuju na način na koji se oblikuju, zašto često ne daju očekivane rezultate i kako ih možemo učiniti boljima, ova knjiga je upravo za to. Ona je poziv da izađete iz površinskog promatranja politike i uđete u njezinu unutarnju logiku.</p>
-<p>Ona vas neće naučiti samo što misliti o javnim politikama. Naučit će vas kako o njima razmišljati – kritički, analitički i s razumijevanjem stvarnih ograničenja svijeta u kojem živimo.</p>
 <p><strong>Dobrodošli u politiku bez romantike.</strong></p>
+<div class="book-meta-footer">
+<p><strong>16 poglavlja</strong> · <strong>3 dijela</strong> · ažurirano <span class="book-date">svibanj 2026.</span></p>
+<p>Tekst i kod licencirani pod <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a> · <a href="https://github.com/lusiki/Javne-politike">Doprinesite na GitHubu</a> · <a href="https://github.com/lusiki/Javne-politike/issues">Prijavite grešku</a></p>
+</div>
 
-
-<!-- -->
 
 </section>
 
 </main> <!-- /main -->
+<script>
+(function () {
+  "use strict";
+
+  // ----------------------------------------------------------
+  // 1. Reading progress bar
+  // ----------------------------------------------------------
+  function setupProgressBar() {
+    if (document.getElementById("reading-progress")) return;
+    var bar = document.createElement("div");
+    bar.id = "reading-progress";
+    document.body.appendChild(bar);
+
+    var ticking = false;
+    function update() {
+      var doc = document.documentElement;
+      var scrollTop = window.scrollY || doc.scrollTop;
+      var max = (doc.scrollHeight - doc.clientHeight) || 1;
+      var pct = Math.min(100, Math.max(0, (scrollTop / max) * 100));
+      bar.style.width = pct + "%";
+      ticking = false;
+    }
+    window.addEventListener("scroll", function () {
+      if (!ticking) {
+        window.requestAnimationFrame(update);
+        ticking = true;
+      }
+    }, { passive: true });
+    update();
+  }
+
+  // ----------------------------------------------------------
+  // 2. Chapter number extraction → header data attribute
+  //    Title oblik "13. Porezi: ..." → data-chapter-num="13"
+  // ----------------------------------------------------------
+  function setupChapterNumber() {
+    var header = document.getElementById("title-block-header");
+    if (!header) return;
+    var titleEl = header.querySelector("h1.title, .title");
+    if (!titleEl) return;
+    var raw = titleEl.textContent.trim();
+    var m = raw.match(/^(\d+)[\.\s ]/);
+    if (m) {
+      header.setAttribute("data-chapter-num", m[1]);
+      // Skidamo broj iz vidljivog naslova jer ga već imamo kao watermark
+      titleEl.textContent = raw.replace(/^\d+[\.\s ]+/, "");
+    }
+  }
+
+  // ----------------------------------------------------------
+  // 3. Reading time chip
+  // ----------------------------------------------------------
+  function setupReadingTime() {
+    var header = document.getElementById("title-block-header");
+    if (!header) return;
+    // Samo na chapter stranicama
+    if (!header.hasAttribute("data-chapter-num")) return;
+
+    var article = document.querySelector("main.content") || document.querySelector("main");
+    if (!article) return;
+
+    // Brojimo riječi izvan koda i nav elemenata
+    var clone = article.cloneNode(true);
+    clone.querySelectorAll("pre, code, .sourceCode, nav, .toc, .sidebar, header#title-block-header, .quarto-title-block").forEach(function (el) {
+      el.parentNode && el.parentNode.removeChild(el);
+    });
+    var text = (clone.textContent || "").trim();
+    var words = text ? text.split(/\s+/).length : 0;
+    var minutes = Math.max(1, Math.round(words / 220)); // ~220 wpm hrvatski
+
+    var chip = document.createElement("div");
+    chip.className = "reading-time";
+    chip.textContent = minutes + " min čitanja · " + words.toLocaleString("hr-HR") + " riječi";
+    header.appendChild(chip);
+  }
+
+  // ----------------------------------------------------------
+  // 4. Drop cap — prvi pasus poglavlja
+  // ----------------------------------------------------------
+  function setupDropCap() {
+    var header = document.getElementById("title-block-header");
+    if (!header || !header.hasAttribute("data-chapter-num")) return;
+
+    var article = document.querySelector("main.content") || document.querySelector("main");
+    if (!article) return;
+
+    // Pronađi prvi "pravi" tekstualni pasus (preskačemo callout-e i meta blokove)
+    var candidates = article.querySelectorAll("section > p, > p");
+    for (var i = 0; i < candidates.length; i++) {
+      var p = candidates[i];
+      // Preskačemo prazne i one unutar callouta / figura
+      if (!p.textContent.trim()) continue;
+      if (p.closest(".callout, figure, .quarto-title-block, .reading-time")) continue;
+      // Mora biti barem 80 znakova — izbjegavamo kratke labele
+      if (p.textContent.trim().length < 80) continue;
+      p.classList.add("has-dropcap");
+      break;
+    }
+  }
+
+  // ----------------------------------------------------------
+  // 5. Hover preview za interne linkove (#anchors u istom dokumentu)
+  // ----------------------------------------------------------
+  function setupInternalHover() {
+    var tip = null;
+    var hideTimer = null;
+
+    function ensureTip() {
+      if (tip) return tip;
+      tip = document.createElement("div");
+      tip.className = "internal-hover-preview";
+      document.body.appendChild(tip);
+      return tip;
+    }
+
+    function show(target, text, title) {
+      var t = ensureTip();
+      t.innerHTML = "";
+      if (title) {
+        var h = document.createElement("div");
+        h.className = "ihp-title";
+        h.textContent = title;
+        t.appendChild(h);
+      }
+      var body = document.createElement("div");
+      body.textContent = text;
+      t.appendChild(body);
+
+      var rect = target.getBoundingClientRect();
+      var top = window.scrollY + rect.bottom + 8;
+      var left = window.scrollX + rect.left;
+      // Drži unutar viewporta
+      var maxLeft = window.scrollX + document.documentElement.clientWidth - 400;
+      if (left > maxLeft) left = maxLeft;
+      if (left < 8) left = 8;
+      t.style.top = top + "px";
+      t.style.left = left + "px";
+      t.classList.add("visible");
+    }
+
+    function hide() {
+      if (tip) tip.classList.remove("visible");
+    }
+
+    document.addEventListener("mouseover", function (e) {
+      var a = e.target.closest && e.target.closest("a[href^='#']");
+      if (!a) return;
+      // Preskačemo Quarto-ove vlastite citation/footnote (oni već imaju hover)
+      if (a.classList.contains("citation") || a.classList.contains("footnote-ref")) return;
+      if (a.closest(".sidebar, nav, .toc, #TOC, .quarto-secondary-nav")) return;
+
+      var hash = a.getAttribute("href").slice(1);
+      if (!hash) return;
+      var tgt = document.getElementById(hash);
+      if (!tgt) return;
+
+      var titleEl = tgt.querySelector("h1, h2, h3, h4") || (tgt.tagName.match(/^H[1-6]$/) ? tgt : null);
+      var title = titleEl ? titleEl.textContent.trim() : "";
+      // Uzimamo prvih ~280 znakova konteksta
+      var ctx = (tgt.textContent || "").trim().replace(/\s+/g, " ");
+      if (title) ctx = ctx.replace(title, "").trim();
+      ctx = ctx.slice(0, 280) + (ctx.length > 280 ? "…" : "");
+
+      clearTimeout(hideTimer);
+      show(a, ctx, title);
+    });
+
+    document.addEventListener("mouseout", function (e) {
+      var a = e.target.closest && e.target.closest("a[href^='#']");
+      if (!a) return;
+      hideTimer = setTimeout(hide, 120);
+    });
+
+    window.addEventListener("scroll", hide, { passive: true });
+  }
+
+  // ----------------------------------------------------------
+  // 6. End-of-chapter ornament (❦) — samo na chapter stranicama
+  // ----------------------------------------------------------
+  function setupEndMark() {
+    var header = document.getElementById("title-block-header");
+    if (!header || !header.hasAttribute("data-chapter-num")) return;
+
+    var article = document.querySelector("main.content") || document.querySelector("main");
+    if (!article) return;
+
+    // Provjeri da već nije ubačen
+    if (article.querySelector(".chapter-end-mark")) return;
+
+    var mark = document.createElement("div");
+    mark.className = "chapter-end-mark";
+    // Tražimo zadnju section ili p u glavnom dijelu
+    var lastSection = article.querySelector("section:last-of-type") || article;
+    lastSection.appendChild(mark);
+  }
+
+  // ----------------------------------------------------------
+  // 7. Dinkus normalization — pretvori "***" parove i prazne
+  //    dinkus blokove u stilizirane romb-trojke
+  // ----------------------------------------------------------
+  function setupDinkus() {
+    // Quartov ::: {.dinkus} već dobiva div.dinkus klasu — to već stiliziramo CSS-om
+    // Pretvori HR elemente s točno tri zvjezdice ili "* * *" tekstom
+    var hrs = document.querySelectorAll("hr");
+    hrs.forEach(function (hr) {
+      // Ako je hr unutar contenta i nije .dinkus, ostavi ga
+    });
+    // Pretvori paragrafe koji su točno "***" u dinkus
+    var paragraphs = document.querySelectorAll("main p");
+    paragraphs.forEach(function (p) {
+      var t = p.textContent.trim();
+      if (t === "***" || t === "* * *" || t === "◆ ◆ ◆") {
+        var div = document.createElement("div");
+        div.className = "dinkus";
+        p.parentNode.replaceChild(div, p);
+      }
+    });
+  }
+
+  // ----------------------------------------------------------
+  // 8. Anchor link injection (Quarto's anchor-sections nije uvijek
+  //    pouzdan; dodajemo vlastite # linkove na sve h2-h4 koji ih nemaju)
+  // ----------------------------------------------------------
+  function setupAnchorLinks() {
+    var article = document.querySelector("main.content") || document.querySelector("main");
+    if (!article) return;
+    var headings = article.querySelectorAll("h2[id], h3[id], h4[id]");
+    headings.forEach(function (h) {
+      // Preskoči chapter title i postojeće anchorjs linkove
+      if (h.classList.contains("title")) return;
+      if (h.querySelector("a.anchorjs-link")) return;
+
+      var link = document.createElement("a");
+      link.className = "anchorjs-link";
+      link.href = "#" + h.id;
+      link.setAttribute("aria-label", "Permalink na ovaj odjeljak");
+      h.appendChild(link);
+    });
+  }
+
+  // ----------------------------------------------------------
+  // Bootstrap
+  // ----------------------------------------------------------
+  function init() {
+    try { setupProgressBar(); } catch (e) {}
+    try { setupChapterNumber(); } catch (e) {}
+    try { setupReadingTime(); } catch (e) {}
+    try { setupDropCap(); } catch (e) {}
+    try { setupInternalHover(); } catch (e) {}
+    try { setupEndMark(); } catch (e) {}
+    try { setupDinkus(); } catch (e) {}
+    try { setupAnchorLinks(); } catch (e) {}
+  }
+
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", init);
+  } else {
+    init();
+  }
+})();
+</script>
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
@@ -687,57 +905,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       container: window.document.getElementById('quarto-embedded-source-code-modal')
     });
     clipboardModal.on('success', onCopySuccess);
-  }
-  const viewSource = window.document.getElementById('quarto-view-source') ||
-                     window.document.getElementById('quarto-code-tools-source');
-  if (viewSource) {
-    const sourceUrl = viewSource.getAttribute("data-quarto-source-url");
-    viewSource.addEventListener("click", function(e) {
-      if (sourceUrl) {
-        // rstudio viewer pane
-        if (/\bcapabilities=\b/.test(window.location)) {
-          window.open(sourceUrl);
-        } else {
-          window.location.href = sourceUrl;
-        }
-      } else {
-        const modal = new bootstrap.Modal(document.getElementById('quarto-embedded-source-code-modal'));
-        modal.show();
-      }
-      return false;
-    });
-  }
-  function toggleCodeHandler(show) {
-    return function(e) {
-      const detailsSrc = window.document.querySelectorAll(".cell > details > .sourceCode");
-      for (let i=0; i<detailsSrc.length; i++) {
-        const details = detailsSrc[i].parentElement;
-        if (show) {
-          details.open = true;
-        } else {
-          details.removeAttribute("open");
-        }
-      }
-      const cellCodeDivs = window.document.querySelectorAll(".cell > .sourceCode");
-      const fromCls = show ? "hidden" : "unhidden";
-      const toCls = show ? "unhidden" : "hidden";
-      for (let i=0; i<cellCodeDivs.length; i++) {
-        const codeDiv = cellCodeDivs[i];
-        if (codeDiv.classList.contains(fromCls)) {
-          codeDiv.classList.remove(fromCls);
-          codeDiv.classList.add(toCls);
-        } 
-      }
-      return false;
-    }
-  }
-  const hideAllCode = window.document.getElementById("quarto-hide-all-code");
-  if (hideAllCode) {
-    hideAllCode.addEventListener("click", toggleCodeHandler(false));
-  }
-  const showAllCode = window.document.getElementById("quarto-show-all-code");
-  if (showAllCode) {
-    showAllCode.addEventListener("click", toggleCodeHandler(true));
   }
     var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
     var mailtoRegex = new RegExp(/^mailto:/);
@@ -1083,105 +1250,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
         <span class="nav-page-text"><span class="chapter-title">1. Pozitivistički i normativni pristup javnim politikama i javnim financijama</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
-</nav><div class="modal fade" id="quarto-embedded-source-code-modal" tabindex="-1" aria-labelledby="quarto-embedded-source-code-modal-label" aria-hidden="true"><div class="modal-dialog modal-dialog-scrollable"><div class="modal-content"><div class="modal-header"><h5 class="modal-title" id="quarto-embedded-source-code-modal-label">Source Code</h5><button class="btn-close" data-bs-dismiss="modal"></button></div><div class="modal-body"><div class="">
-<div class="sourceCode" id="cb1" data-shortcodes="false"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="an">title:</span><span class="co"> "Prije početka: O čemu se radi?"</span></span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="an">toc:</span><span class="co"> true</span></span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="an">number-sections:</span><span class="co"> false</span></span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="an">include-in-header:</span></span>
-<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="co">  text: |</span></span>
-<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="co">    &lt;style&gt;</span></span>
-<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="co">      #title-block-header { display: none; }</span></span>
-<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="co">      .book-hero {</span></span>
-<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a><span class="co">        text-align: center;</span></span>
-<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a><span class="co">        margin: 0 auto 2rem auto;</span></span>
-<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a><span class="co">        padding-bottom: 1.5rem;</span></span>
-<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a><span class="co">        border-bottom: 1px solid #E2E8F0;</span></span>
-<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a><span class="co">      }</span></span>
-<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a><span class="co">      .book-hero img {</span></span>
-<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a><span class="co">        max-width: 100%;</span></span>
-<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a><span class="co">        height: auto;</span></span>
-<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a><span class="co">        margin-bottom: 1.5rem;</span></span>
-<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a><span class="co">        border-radius: 6px;</span></span>
-<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a><span class="co">      }</span></span>
-<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a><span class="co">      .book-hero h1 {</span></span>
-<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a><span class="co">        font-size: 2.0rem;</span></span>
-<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a><span class="co">        line-height: 1.25;</span></span>
-<span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a><span class="co">        margin: 0 0 0.6rem 0;</span></span>
-<span id="cb1-25"><a href="#cb1-25" aria-hidden="true" tabindex="-1"></a><span class="co">        font-weight: 700;</span></span>
-<span id="cb1-26"><a href="#cb1-26" aria-hidden="true" tabindex="-1"></a><span class="co">      }</span></span>
-<span id="cb1-27"><a href="#cb1-27" aria-hidden="true" tabindex="-1"></a><span class="co">      .book-hero .book-subtitle {</span></span>
-<span id="cb1-28"><a href="#cb1-28" aria-hidden="true" tabindex="-1"></a><span class="co">        font-size: 1.15rem;</span></span>
-<span id="cb1-29"><a href="#cb1-29" aria-hidden="true" tabindex="-1"></a><span class="co">        font-style: italic;</span></span>
-<span id="cb1-30"><a href="#cb1-30" aria-hidden="true" tabindex="-1"></a><span class="co">        color: #4A5568;</span></span>
-<span id="cb1-31"><a href="#cb1-31" aria-hidden="true" tabindex="-1"></a><span class="co">        margin-bottom: 1.2rem;</span></span>
-<span id="cb1-32"><a href="#cb1-32" aria-hidden="true" tabindex="-1"></a><span class="co">      }</span></span>
-<span id="cb1-33"><a href="#cb1-33" aria-hidden="true" tabindex="-1"></a><span class="co">      .book-hero .book-authors {</span></span>
-<span id="cb1-34"><a href="#cb1-34" aria-hidden="true" tabindex="-1"></a><span class="co">        font-size: 1.0rem;</span></span>
-<span id="cb1-35"><a href="#cb1-35" aria-hidden="true" tabindex="-1"></a><span class="co">        color: #2D3748;</span></span>
-<span id="cb1-36"><a href="#cb1-36" aria-hidden="true" tabindex="-1"></a><span class="co">      }</span></span>
-<span id="cb1-37"><a href="#cb1-37" aria-hidden="true" tabindex="-1"></a><span class="co">      .book-hero .book-authors a {</span></span>
-<span id="cb1-38"><a href="#cb1-38" aria-hidden="true" tabindex="-1"></a><span class="co">        color: #2B6CB0;</span></span>
-<span id="cb1-39"><a href="#cb1-39" aria-hidden="true" tabindex="-1"></a><span class="co">        text-decoration: none;</span></span>
-<span id="cb1-40"><a href="#cb1-40" aria-hidden="true" tabindex="-1"></a><span class="co">      }</span></span>
-<span id="cb1-41"><a href="#cb1-41" aria-hidden="true" tabindex="-1"></a><span class="co">      .book-hero .book-authors a:hover {</span></span>
-<span id="cb1-42"><a href="#cb1-42" aria-hidden="true" tabindex="-1"></a><span class="co">        text-decoration: underline;</span></span>
-<span id="cb1-43"><a href="#cb1-43" aria-hidden="true" tabindex="-1"></a><span class="co">      }</span></span>
-<span id="cb1-44"><a href="#cb1-44" aria-hidden="true" tabindex="-1"></a><span class="co">    &lt;/style&gt;</span></span>
-<span id="cb1-45"><a href="#cb1-45" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
-<span id="cb1-46"><a href="#cb1-46" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-47"><a href="#cb1-47" aria-hidden="true" tabindex="-1"></a>::: {.book-hero}</span>
-<span id="cb1-48"><a href="#cb1-48" aria-hidden="true" tabindex="-1"></a><span class="al">![](images/Pic.png)</span></span>
-<span id="cb1-49"><a href="#cb1-49" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-50"><a href="#cb1-50" aria-hidden="true" tabindex="-1"></a><span class="fu"># Sve što želite znati o državi i javnim politikama u Hrvatskoj</span></span>
-<span id="cb1-51"><a href="#cb1-51" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-52"><a href="#cb1-52" aria-hidden="true" tabindex="-1"></a>::: {.book-subtitle}</span>
-<span id="cb1-53"><a href="#cb1-53" aria-hidden="true" tabindex="-1"></a>Praktični i interaktivni udžbenik za studente i sve koji žele znati više</span>
-<span id="cb1-54"><a href="#cb1-54" aria-hidden="true" tabindex="-1"></a>:::</span>
-<span id="cb1-55"><a href="#cb1-55" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-56"><a href="#cb1-56" aria-hidden="true" tabindex="-1"></a>::: {.book-authors}</span>
-<span id="cb1-57"><a href="#cb1-57" aria-hidden="true" tabindex="-1"></a><span class="co">[</span><span class="ot">Milan Deskar-Škrbić</span><span class="co">](https://zsem.hr/clanovi/dr-sc-milan-deskar-skrbic/)</span> · <span class="co">[</span><span class="ot">Petra Palić</span><span class="co">](https://www.unicath.hr/odjeli-i-fakultet/nastavnici/petra-palic)</span> · <span class="co">[</span><span class="ot">Luka Sikić</span><span class="co">](https://www.unicath.hr/odjeli-i-fakultet/nastavnici/luka-sikic)</span></span>
-<span id="cb1-58"><a href="#cb1-58" aria-hidden="true" tabindex="-1"></a>:::</span>
-<span id="cb1-59"><a href="#cb1-59" aria-hidden="true" tabindex="-1"></a>:::</span>
-<span id="cb1-60"><a href="#cb1-60" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-61"><a href="#cb1-61" aria-hidden="true" tabindex="-1"></a><span class="fu">## Zašto bismo otvorili ovu knjigu?</span></span>
-<span id="cb1-62"><a href="#cb1-62" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-63"><a href="#cb1-63" aria-hidden="true" tabindex="-1"></a>Zamislite da možete "zaviriti iza kulisa" politike. Ne samo gledati što političari govore, nego razumjeti zašto donose odluke koje donose, zašto neke politike opstaju desetljećima iako su očito loše, zašto se porezi povećavaju baš kad se ne očekuje, ili zašto se reforme najavljuju glasno – a provedu tiho ili nikako. Zamislite da možete prepoznati obrasce iza političkih odluka, vidjeti tko dobiva, tko gubi i zašto, te unaprijed naslutiti kako će određena politika završiti prije nego što se uopće provede.</span>
-<span id="cb1-64"><a href="#cb1-64" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-65"><a href="#cb1-65" aria-hidden="true" tabindex="-1"></a>Ova knjiga polazi od jednostavne, ali često zanemarene ideje: javne politike oblikuju gotovo svaki aspekt našeg života. One određuju koliko ćemo plaćati poreze, kakvo ćemo obrazovanje imati, koliko će zdravstvo biti dostupno, kako će se reagirati na krize i koliko će društvo biti pravedno ili nejednako. One utječu na to gdje ćemo raditi, koliko ćemo zarađivati, hoćemo li pokrenuti posao ili otići iz zemlje. Drugim riječima, javne politike nisu apstraktne – one su naša svakodnevna realnost, često nevidljiva dok ne počne stvarati probleme.</span>
-<span id="cb1-66"><a href="#cb1-66" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-67"><a href="#cb1-67" aria-hidden="true" tabindex="-1"></a>No upravo zato što su svugdje oko nas, često ih uzimamo zdravo za gotovo. Vidimo njihove posljedice, ali rijetko razumijemo mehanizme koji do njih vode. Zašto se neke loše politike ne ukidaju? Zašto se dobre ideje ne provode? Zašto se javni novac ponekad troši na načine koji se čine nelogičnima? Zašto politički sustavi proizvode ishode koji frustriraju i birače i stručnjake?</span>
-<span id="cb1-68"><a href="#cb1-68" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-69"><a href="#cb1-69" aria-hidden="true" tabindex="-1"></a>Ako su javne politike toliko važne, postavlja se ključno pitanje: zašto ih je tako teško razumjeti?</span>
-<span id="cb1-70"><a href="#cb1-70" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-71"><a href="#cb1-71" aria-hidden="true" tabindex="-1"></a>Dio odgovora leži u činjenici da se javne politike često promatraju iz jedne perspektive – političke, pravne ili ideološke. Promatramo ih kroz sukob stranaka, kroz pravne norme ili kroz vrijednosne sudove o tome što je "dobro" ili "loše". No takav pogled gotovo uvijek ostaje nepotpun. Ova knjiga ide korak dalje i pokazuje da javne politike ne možemo razumjeti bez istovremenog uvida u ekonomiju, politiku i institucije.</span>
-<span id="cb1-72"><a href="#cb1-72" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-73"><a href="#cb1-73" aria-hidden="true" tabindex="-1"></a>Ekonomija nam objašnjava kako ljudi reagiraju na poticaje – kako porezi mijenjaju ponašanje, kako subvencije utječu na odluke i zašto čak i male promjene pravila mogu imati velike posljedice. Politika nam pokazuje tko odlučuje i zašto, kako nastaju koalicije, kako funkcionira natjecanje za glasove i zašto političari često biraju ono što je politički oportuno, a ne nužno društveno optimalno. Institucije, naposljetku, određuju pravila igre – ograničenja i mogućnosti unutar kojih svi akteri djeluju. Tek kada spojimo ta tri elementa, počinjemo vidjeti cjelovitu sliku.</span>
-<span id="cb1-74"><a href="#cb1-74" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-75"><a href="#cb1-75" aria-hidden="true" tabindex="-1"></a>U tom smislu, ova knjiga ne nudi samo odgovore, nego i način razmišljanja. Ona vas uvodi u dva temeljna pristupa analizi javnih politika koji se često promatraju odvojeno, ali se u stvarnosti ne mogu razdvojiti. S jedne strane, tu je normativni pristup, koji postavlja pitanje: kakve bi politike trebale biti? Što znači pravedan porezni sustav? Kako postići veću učinkovitost, ali i veću jednakost? Kako mjerimo "dobru" politiku?</span>
-<span id="cb1-76"><a href="#cb1-76" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-77"><a href="#cb1-77" aria-hidden="true" tabindex="-1"></a>S druge strane, tu je pozitivistički pristup, koji nas vraća u stvarni svijet i pita: kako se politike stvarno donose? Zašto političari često ne rade ono što bi "trebali"? Kako interesi, institucije i poticaji oblikuju konačne odluke? Zašto racionalne ideje često završavaju kao politički kompromisi – ili uopće ne zažive?</span>
-<span id="cb1-78"><a href="#cb1-78" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-79"><a href="#cb1-79" aria-hidden="true" tabindex="-1"></a>Najzanimljiviji dio počinje upravo tamo gdje se ta dva pristupa susreću. Jer svijet javnih politika nije svijet idealnih rješenja, nego svijet kompromisa, ograničenja i nepredvidivih ishoda. To je svijet u kojem dobre ideje mogu propasti, loše ideje opstati, a najbolja rješenja često nisu ona koja su teorijski optimalna, nego ona koja su politički i institucionalno izvediva.</span>
-<span id="cb1-80"><a href="#cb1-80" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-81"><a href="#cb1-81" aria-hidden="true" tabindex="-1"></a>Upravo zato ova knjiga odbacuje pojednostavljene priče o državi. Država nije samo "rješenje" koje ispravlja tržišne neuspjehe, ali nije ni samo "problem" koji stvara neefikasnost i birokraciju. Ona je složen sustav odluka, poticaja i pravila, u kojem sudjeluju političari, birači, birokrati i interesne skupine – svi sa svojim ciljevima, informacijama i ograničenjima. Ponekad djeluju u javnom interesu, ponekad u vlastitom, a najčešće negdje između.</span>
-<span id="cb1-82"><a href="#cb1-82" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-83"><a href="#cb1-83" aria-hidden="true" tabindex="-1"></a>Razumjeti državu znači razumjeti kako se ti interesi prelamaju kroz institucije i pretvaraju u konkretne politike. To znači razumjeti zašto se javni novac troši na određeni način, zašto se reforme događaju (ili ne događaju), zašto neki sustavi funkcioniraju bolje od drugih i kako se pravila mogu promijeniti da bi ishodi bili bolji.</span>
-<span id="cb1-84"><a href="#cb1-84" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-85"><a href="#cb1-85" aria-hidden="true" tabindex="-1"></a>Kako bismo to postigli, knjiga je strukturirana u tri međusobno povezana dijela.</span>
-<span id="cb1-86"><a href="#cb1-86" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-87"><a href="#cb1-87" aria-hidden="true" tabindex="-1"></a>U **Dijelu I** postavljamo teorijske temelje. Objašnjavamo kako razmišljati o javnim politikama kroz normativni i pozitivistički pristup, zašto država uopće postoji i koju ulogu ima u gospodarstvu. Upoznajemo se s klasičnom analizom javnih financija, ali i s modernijim pristupima poput nove institucionalne ekonomike i konstitucionalne ekonomike, koji naglašavaju važnost pravila, institucija i dugoročnih ograničenja političkog djelovanja.</span>
-<span id="cb1-88"><a href="#cb1-88" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-89"><a href="#cb1-89" aria-hidden="true" tabindex="-1"></a>U **Dijelu II** ulazimo u stvarni svijet politike kroz teoriju javnog izbora. Ovdje analiziramo kako se odluke stvarno donose: kako glasuju birači, kako se natječu političke stranke, kako djeluju birokrati i interesne skupine. Ovaj dio pokazuje zašto politički sustavi često proizvode ishode koji odstupaju od teorijskih ideala.</span>
-<span id="cb1-90"><a href="#cb1-90" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-91"><a href="#cb1-91" aria-hidden="true" tabindex="-1"></a>U **Dijelu III** fokus se prebacuje na konkretne javne politike i javne financije. Analiziramo kako država prikuplja i troši sredstva, kako dizajn poreza i rashoda utječe na društvo te kako se politike mogu evaluirati i unaprijediti. Poseban naglasak stavlja se na pitanje reformi: kako, unatoč političkim i institucionalnim ograničenjima, dizajnirati učinkovit i održiv javni sektor.</span>
-<span id="cb1-92"><a href="#cb1-92" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-93"><a href="#cb1-93" aria-hidden="true" tabindex="-1"></a>Ako želite razumjeti zašto se politike oblikuju na način na koji se oblikuju, zašto često ne daju očekivane rezultate i kako ih možemo učiniti boljima, ova knjiga je upravo za to. Ona je poziv da izađete iz površinskog promatranja politike i uđete u njezinu unutarnju logiku.</span>
-<span id="cb1-94"><a href="#cb1-94" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-95"><a href="#cb1-95" aria-hidden="true" tabindex="-1"></a>Ona vas neće naučiti samo što misliti o javnim politikama. Naučit će vas kako o njima razmišljati – kritički, analitički i s razumijevanjem stvarnih ograničenja svijeta u kojem živimo.</span>
-<span id="cb1-96"><a href="#cb1-96" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-97"><a href="#cb1-97" aria-hidden="true" tabindex="-1"></a>**Dobrodošli u politiku bez romantike.**</span></code><button title="Copy to Clipboard" class="code-copy-button" data-in-quarto-modal=""><i class="bi"></i></button></pre></div>
-</div></div></div></div></div>
+</nav>
 </div> <!-- /content -->
 <footer class="footer">
   <div class="nav-footer">
@@ -1190,7 +1259,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     </div>   
     <div class="nav-footer-center">
 <p>© 2026 Deskar-Škrbić, Palić, Šikić | Javne politike u Hrvatskoj</p>
-<div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/lusiki/Javne-politike/edit/main/index.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/lusiki/Javne-politike/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
+<div class="toc-actions"><ul><li><a href="https://github.com/lusiki/Javne-politike/edit/main/index.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/lusiki/Javne-politike/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
     <div class="nav-footer-right">
       &nbsp;
     </div>
