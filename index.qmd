@@ -11,18 +11,6 @@ include-in-header:
 
 ## Zašto bismo otvorili ovu knjigu?
 
-## Što su javne politike i zašto su važne
-
-## Zašto se javne politike ne mogu razumjeti bez ekonomije, politike i institucija
-
-## Kako će knjiga povezati normativni i pozitivistički pristup
-
-## Zašto država nije ni samo "rješenje", ni samo "problem"
-
-![](images/Pic.png){fig-align="center" width="100%" fig-cap-location="none"}
-
-## Zašto bismo otvorili ovu knjigu?
-
 Zamislite da možete "zaviriti iza kulisa" politike. Ne samo gledati što političari govore, nego razumjeti zašto donose odluke koje donose, zašto neke politike opstaju desetljećima iako su očito loše, zašto se porezi povećavaju baš kad se ne očekuje, ili zašto se reforme najavljuju glasno – a provedu tiho ili nikako. Zamislite da možete prepoznati obrasce iza političkih odluka, vidjeti tko dobiva, tko gubi i zašto, te unaprijed naslutiti kako će određena politika završiti prije nego što se uopće provede.
 
 Ova knjiga polazi od jednostavne, ali često zanemarene ideje: javne politike oblikuju gotovo svaki aspekt našeg života. One određuju koliko ćemo plaćati poreze, kakvo ćemo obrazovanje imati, koliko će zdravstvo biti dostupno, kako će se reagirati na krize i koliko će društvo biti pravedno ili nejednako. One utječu na to gdje ćemo raditi, koliko ćemo zarađivati, hoćemo li pokrenuti posao ili otići iz zemlje. Drugim riječima, javne politike nisu apstraktne – one su naša svakodnevna realnost, često nevidljiva dok ne počne stvarati probleme.
@@ -56,69 +44,5 @@ U **Dijelu III** fokus se prebacuje na konkretne javne politike i javne financij
 Ako želite razumjeti zašto se politike oblikuju na način na koji se oblikuju, zašto često ne daju očekivane rezultate i kako ih možemo učiniti boljima, ova knjiga je upravo za to. Ona je poziv da izađete iz površinskog promatranja politike i uđete u njezinu unutarnju logiku.
 
 Ona vas neće naučiti samo što misliti o javnim politikama. Naučit će vas kako o njima razmišljati – kritički, analitički i s razumijevanjem stvarnih ograničenja svijeta u kojem živimo.
-
-## Mali primjer – jedan grafikon, mnogo pitanja
-
-```{ojs}
-//| echo: false
-viewof t_slider = Inputs.range(
-  [0, 40],
-  {value: 20, step: 1, label: "Iznos poreza:"}
-)
-```
-
-```{ojs}
-//| echo: false
-{
-  const a = 100, b = 1, c = 10, d = 0.5;
-  const t = t_slider;
-  const Qt = (a - c - t) / (b + d);
-  const Pc = a - b * Qt;
-  const Pp = Pc - t;
-  const Qmax = (a - c) / b;
-  const Qs = d3.range(201).map(i => (i * Qmax) / 200);
-
-  const demand    = Qs.map(q => ({Q: q, P: a - b * q}));
-  const supply    = Qs.map(q => ({Q: q, P: c + d * q}));
-  const supplyTax = Qs.map(q => ({Q: q, P: c + t + d * q}));
-
-  return Plot.plot({
-    width: 720,
-    height: 480,
-    marginLeft: 60,
-    marginBottom: 55,
-    style: {fontSize: "12px", fontFamily: "Roboto, system-ui, sans-serif", color: "#4A5568"},
-    x: {label: "Količina →", domain: [0, Qmax], grid: false},
-    y: {label: "↑ Cijena", domain: [0, a], grid: true},
-    marks: [
-      Plot.ruleY([0], {stroke: "#CBD5E0"}),
-      Plot.line(demand,    {x: "Q", y: "P", stroke: "#1f77b4", strokeWidth: 2}),
-      Plot.line(supply,    {x: "Q", y: "P", stroke: "#2ca02c", strokeWidth: 2}),
-      Plot.line(supplyTax, {x: "Q", y: "P", stroke: "#2ca02c", strokeWidth: 2,
-                            strokeDasharray: "6,4"}),
-      Plot.ruleY([Pc], {stroke: "#A0AEC0", strokeDasharray: "2,2"}),
-      Plot.ruleY([Pp], {stroke: "#A0AEC0", strokeDasharray: "2,2"}),
-      Plot.ruleX([Qt], {y1: Pp, y2: Pc, stroke: "#C53030", strokeWidth: 3}),
-      Plot.text([{x: 2, y: Pc, label: `Cijena za kupca: ${Pc.toFixed(1)}`}],
-        {x: "x", y: "y", text: "label", textAnchor: "start", dy: -8, fontSize: 12, fill: "#2D3748"}),
-      Plot.text([{x: 2, y: Pp, label: `Cijena za prodavača: ${Pp.toFixed(1)}`}],
-        {x: "x", y: "y", text: "label", textAnchor: "start", dy: -8, fontSize: 12, fill: "#2D3748"}),
-      Plot.text([{x: Qt, y: (Pc + Pp) / 2, label: `Porez = ${t}`}],
-        {x: "x", y: "y", text: "label", textAnchor: "start", dx: 10, fontSize: 13,
-         fill: "#C53030", fontWeight: 600}),
-      Plot.text([{x: Qmax * 0.72, y: a * 0.15, label: "Potražnja"}],
-        {x: "x", y: "y", text: "label", fill: "#1f77b4", fontSize: 12, fontWeight: 600}),
-      Plot.text([{x: Qmax * 0.78, y: a * 0.55, label: "Ponuda nakon poreza"}],
-        {x: "x", y: "y", text: "label", fill: "#2ca02c", fontSize: 12, fontWeight: 600}),
-      Plot.text([{x: Qmax * 0.78, y: a * 0.45, label: "Ponuda"}],
-        {x: "x", y: "y", text: "label", fill: "#2ca02c", fontSize: 12, fontWeight: 600})
-    ]
-  });
-}
-```
-
-Pomaknite klizač i promatrajte što se događa s tržištem kada država uvede porez. Uz porez, **kupac plaća više**, **prodavač prima manje**, a **količina razmjene se smanjuje**. Razlika između cijene koju plaća kupac i one koju prima prodavač ide u državni proračun, ali dio potencijalne koristi jednostavno **nestaje** – to je mrtvi teret poreza. Ovo nije samo tehnička vježba. Ista logika stoji iza gotovo svake javne politike: svaka intervencija nekoga nagrađuje, nekoga košta i nešto mijenja u ponašanju. Pitanje nije treba li porez, nego **kako je dizajniran, koga pogađa i što ostaje od vrijednosti nakon što država preuzme svoj dio**.
-
-Taj obrazac – kada individualno racionalno ponašanje proizvodi kolektivno problematičan ishod – ponavlja se kroz cijelu knjigu: u proračunu, porezima, regulaciji, javnoj nabavi. Jednom kada ga prepoznate, više ga nećete moći ne vidjeti.
 
 **Dobrodošli u politiku bez romantike.**

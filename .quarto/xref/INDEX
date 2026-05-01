@@ -79,5 +79,47 @@
   },
   "chapters/14-zakljucak.qmd": {
     "14-zakljucak.html": "f766a127"
+  },
+  "chapters/03-musgrave.qmd": {
+    "03-musgrave.html": "c640a30f"
+  },
+  "chapters/04-institucije.qmd": {
+    "04-institucije.html": "aeb17d88"
+  },
+  "chapters/05-konstitucionalna.qmd": {
+    "05-konstitucionalna.html": "2ac8583e"
+  },
+  "chapters/06-javni-izbor.qmd": {
+    "06-javni-izbor.html": "03a73659"
+  },
+  "chapters/07-kako-odlucujemo.qmd": {
+    "07-kako-odlucujemo.html": "4627e8cb"
+  },
+  "chapters/08-glasovanje.qmd": {
+    "08-glasovanje.html": "2fa920fa"
+  },
+  "chapters/09-stranke-kandidati.qmd": {
+    "09-stranke-kandidati.html": "10515682"
+  },
+  "chapters/10-birokrati.qmd": {
+    "10-birokrati.html": "5db565ac"
+  },
+  "chapters/11-interesne-skupine.qmd": {
+    "11-interesne-skupine.html": "79afbd09"
+  },
+  "chapters/14-odluke-cba.qmd": {
+    "14-odluke-cba.html": "79d81a10"
+  },
+  "chapters/15-odluke-reforme.qmd": {
+    "15-odluke-reforme.html": "ab14af70"
+  },
+  "chapters/16-zakljucak.qmd": {
+    "16-zakljucak.html": "030935bb"
+  },
+  "chapters/12-drzavna-potrosnja.qmd": {
+    "12-drzavna-potrosnja.html": "19fdc201"
+  },
+  "chapters/13-porezi.qmd": {
+    "13-porezi.html": "6ed29f72"
   }
 }

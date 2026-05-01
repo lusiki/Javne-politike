@@ -126,27 +126,523 @@ Pitanje kako dizajnirati porezni sustav jedno je od središnjih pitanja javnih f
 
 **Teorija sposobnosti plaćanja (ability-to-pay)** — za razliku od teorije koristi, ova teorija polazi od ideje da porezni teret treba raspodijeliti prema ekonomskoj snazi pojedinaca. Ova teorija predstavlja temelj suvremenih poreznih sustava, osobito u kontekstu progresivnog oporezivanja dohotka. Ključna implikacija ove teorije jest da osobe s većim dohotkom trebaju plaćati veći udio poreza. Ovaj koncept polazi od ideje **opadajuće granične korisnosti dohotka** — svaka dodatna jedinica dohotka donosi manju dodatnu korist pojedincu.
 
-::: {.callout-note}
-**Grafikon: Opadajuća korisnost dohotka** — u pripremi.
-:::
+```{ojs}
+//| echo: false
+viewof controls = Inputs.form({
+  y_poor:  Inputs.range([5, 50],  {value: 20, step: 1,   label: "Dohodak siromašnijeg (Yp):"}),
+  y_rich:  Inputs.range([50, 95], {value: 80, step: 1,   label: "Dohodak bogatijeg (Yr):"}),
+  transfer:Inputs.range([0, 30],  {value: 10, step: 1,   label: "Transfer (T):"}),
+  rho:     Inputs.range([0.2, 1.8],{value: 0.5, step: 0.1, label: "Konkavnost (ρ):"})
+})
+```
+
+```{ojs}
+//| echo: false
+y_poor = controls.y_poor
+```
+
+```{ojs}
+//| echo: false
+y_rich = controls.y_rich
+```
+
+```{ojs}
+//| echo: false
+transfer = controls.transfer
+```
+
+```{ojs}
+//| echo: false
+rho = controls.rho
+```
+
+```{ojs}
+//| echo: false
+{
+  const Ymax = 100;
+  const U = y => (rho === 1)
+    ? 10 * Math.log(y)
+    : 10 * (Math.pow(y, 1 - rho) - 1) / (1 - rho);
+
+  const yp = Math.min(y_poor, y_rich - 1);
+  const yr = Math.max(y_rich, y_poor + 1);
+  const T = Math.min(transfer, yr - yp - 1);
+
+  const ypNew = yp + T;
+  const yrNew = yr - T;
+
+  const Up = U(yp), Ur = U(yr);
+  const UpNew = U(ypNew), UrNew = U(yrNew);
+
+  const dUp = UpNew - Up;
+  const dUr = UrNew - Ur;
+  const dUtot = dUp + dUr;
+
+  const xs = d3.range(1, Ymax + 1);
+  const curve = xs.map(y => ({Y: y, U: U(y)}));
+
+  const Umax = U(Ymax);
+
+  return Plot.plot({
+    width: 760,
+    height: 500,
+    marginLeft: 65,
+    marginBottom: 55,
+    style: {fontSize: "12px", fontFamily: "Roboto, system-ui, sans-serif", color: "#4A5568"},
+    x: {label: "Dohodak (Y) →", domain: [0, Ymax], grid: false},
+    y: {label: "↑ Ukupna korisnost (U)", domain: [Math.min(0, U(1)), Umax * 1.08], grid: true},
+    marks: [
+      Plot.ruleY([0], {stroke: "#CBD5E0"}),
+      Plot.line(curve, {x: "Y", y: "U", stroke: "#1f77b4", strokeWidth: 2.5}),
+
+      // Original positions (faded)
+      Plot.dot([{Y: yp, U: Up}, {Y: yr, U: Ur}],
+        {x: "Y", y: "U", r: 5, fill: "#A0AEC0", stroke: "white", strokeWidth: 1.5}),
+      Plot.ruleX([yp, yr], {y1: 0, y2: d => d === yp ? Up : Ur, stroke: "#CBD5E0", strokeDasharray: "2,2"}),
+
+      // New positions after transfer
+      Plot.dot([{Y: ypNew, U: UpNew}], {x: "Y", y: "U", r: 6, fill: "#2ca02c", stroke: "white", strokeWidth: 2}),
+      Plot.dot([{Y: yrNew, U: UrNew}], {x: "Y", y: "U", r: 6, fill: "#C53030", stroke: "white", strokeWidth: 2}),
+
+      // Lines showing the transfer movement on the x axis
+      Plot.link(
+        [{x1: yp, y1: Umax * 0.04, x2: ypNew, y2: Umax * 0.04}],
+        {x1: "x1", y1: "y1", x2: "x2", y2: "y2",
+         stroke: "#2ca02c", strokeWidth: 2.5, markerEnd: "arrow"}),
+      Plot.link(
+        [{x1: yr, y1: Umax * 0.04, x2: yrNew, y2: Umax * 0.04}],
+        {x1: "x1", y1: "y1", x2: "x2", y2: "y2",
+         stroke: "#C53030", strokeWidth: 2.5, markerEnd: "arrow"}),
+
+      // Vertical brackets showing utility change
+      Plot.ruleX([ypNew], {y1: Up, y2: UpNew, stroke: "#2ca02c", strokeWidth: 3}),
+      Plot.ruleX([yrNew], {y1: UrNew, y2: Ur, stroke: "#C53030", strokeWidth: 3}),
+
+      // Labels
+      Plot.text([{x: ypNew, y: UpNew, label: `+${dUp.toFixed(2)}`}],
+        {x: "x", y: "y", text: "label", textAnchor: "start", dx: 8, dy: -8,
+         fontSize: 13, fill: "#2ca02c", fontWeight: 700}),
+      Plot.text([{x: yrNew, y: UrNew, label: `${dUr.toFixed(2)}`}],
+        {x: "x", y: "y", text: "label", textAnchor: "start", dx: 8, dy: 14,
+         fontSize: 13, fill: "#C53030", fontWeight: 700}),
+
+      Plot.text([{x: 2, y: Umax * 1.04, label: `Δ Ukupna korisnost: ${dUtot >= 0 ? "+" : ""}${dUtot.toFixed(2)}`}],
+        {x: "x", y: "y", text: "label", textAnchor: "start",
+         fontSize: 14, fill: dUtot >= 0 ? "#2ca02c" : "#C53030", fontWeight: 700}),
+
+      Plot.text([{x: Ymax * 0.55, y: Umax * 0.20,
+         label: rho === 1 ? "U(Y) = 10·ln(Y)" : `U(Y) ∝ Y^(1−${rho.toFixed(1)})`}],
+        {x: "x", y: "y", text: "label", fill: "#1f77b4", fontSize: 12, fontWeight: 600})
+    ]
+  });
+}
+```
+
+**Kako čitati graf.** Sive točke prikazuju početne dohotke siromašnijeg i bogatijeg pojedinca. Zelena točka pokazuje siromašnijeg **nakon** primljenog transfera, crvena točka bogatijeg **nakon** plaćenog poreza. Zelena vertikalna crta mjeri **dobitak korisnosti siromašnijeg**, crvena **gubitak korisnosti bogatijeg**. U vrhu grafa ispisuje se **neto promjena ukupne korisnosti društva**.
+
+**Što isprobati.** (1) Pri umjerenoj konkavnosti (ρ ≈ 0,5) već mali transfer obično daje pozitivnu neto promjenu — to je klasični argument za redistribuciju. (2) Smanjite ρ prema 0,2 (gotovo linearna korisnost): zelena i crvena traka približno su jednake, a redistribucija gubi normativno opravdanje. (3) Povećajte ρ prema 1,8 (snažno konkavna korisnost): mali transfer drastično povećava ukupno blagostanje, što opravdava izrazito progresivan sustav. Drugim riječima, **koliko progresivan porezni sustav „treba" biti ne ovisi samo o etičkim sudovima, nego i o pretpostavci o obliku funkcije korisnosti** — empirijskom pitanju koje teorija optimalnog oporezivanja [@mirrlees1971; @atkinson1980] eksplicitno modelira.
 
 To znači da siromašniji pojedinci imaju višu graničnu korisnost dohotka, dok bogatiji imaju nižu. Ako društvo želi maksimizirati ukupno blagostanje, tada redistribucija dohotka (npr. kroz poreze i transfere) može povećati ukupnu korisnost jer gubitak korisnosti kod bogatijih manji je od dobitka korisnosti kod siromašnijih [@stiglitz2015; @gruber2019]. Ova teorija ima snažnu normativnu osnovu, ali otvara pitanja poput: koliko progresivan sustav treba biti i kako izbjeći negativne učinke na ekonomske poticaje.
 
 **Teorija porezne incidencije** — jedan od ključnih doprinosa moderne ekonomske teorije jest analiza porezne incidencije, odnosno pitanja tko stvarno snosi teret poreza, bez obzira na to tko ga formalno plaća. Ključna poruka jest da raspodjela poreznog tereta ovisi o elastičnosti ponude i potražnje. Strana tržišta koja je manje elastična snosi veći dio poreznog opterećenja [@gruber2019].
 
-::: {.callout-note}
-**Grafikon: Porezna incidencija (ponuda i potražnja)** — u pripremi.
-:::
+```{ojs}
+//| echo: false
+viewof inc_controls = Inputs.form({
+  eps_d: Inputs.range([0.2, 2.5], {value: 1.0, step: 0.05, label: "Elastičnost potražnje |εD|:"}),
+  eps_s: Inputs.range([0.2, 2.5], {value: 1.0, step: 0.05, label: "Elastičnost ponude εS:"}),
+  t_inc: Inputs.range([0, 30],    {value: 15,  step: 1,    label: "Iznos poreza (t):"})
+})
+```
 
-::: {.callout-note}
-**Grafikon: Mrtvi teret poreza** — u pripremi.
-:::
+```{ojs}
+//| echo: false
+eps_d = inc_controls.eps_d
+```
+
+```{ojs}
+//| echo: false
+eps_s = inc_controls.eps_s
+```
+
+```{ojs}
+//| echo: false
+t_inc = inc_controls.t_inc
+```
+
+```{ojs}
+//| echo: false
+{
+  // Pre-tax equilibrium fixed at (Q*, P*) = (50, 50).
+  // At equilibrium: |εD| = (P/Q)·(1/b)  ⇒  b = 1/|εD|;  εS = (P/Q)·(1/d)  ⇒  d = 1/εS.
+  const Qstar = 50;
+  const Pstar = 50;
+  const Qmax = 110;
+  const Pmax = 110;
+
+  const b = 1 / eps_d;
+  const d_slope = 1 / eps_s;
+  const a = Pstar + b * Qstar;
+  const c = Pstar - d_slope * Qstar;
+
+  const t = t_inc;
+
+  const Qt = Math.max(0, (a - c - t) / (b + d_slope));
+  const Pc = a - b * Qt;
+  const Pp = Pc - t;
+
+  // Incidence shares
+  const buyerShare  = (Pc - Pstar) / t;
+  const sellerShare = (Pstar - Pp) / t;
+
+  const Qs = d3.range(0, Qmax + 1);
+  const demand    = Qs.map(q => ({Q: q, P: a - b * q})).filter(p => p.P >= 0 && p.P <= Pmax);
+  const supply    = Qs.map(q => ({Q: q, P: c + d_slope * q})).filter(p => p.P >= 0 && p.P <= Pmax);
+  const supplyTax = Qs.map(q => ({Q: q, P: c + t + d_slope * q})).filter(p => p.P >= 0 && p.P <= Pmax);
+
+  // Buyer's burden rectangle: 0..Qt × Pstar..Pc
+  const buyerRect = [
+    {Q: 0,  P: Pstar},
+    {Q: Qt, P: Pstar},
+    {Q: Qt, P: Pc},
+    {Q: 0,  P: Pc}
+  ];
+  // Seller's burden rectangle: 0..Qt × Pp..Pstar
+  const sellerRect = [
+    {Q: 0,  P: Pp},
+    {Q: Qt, P: Pp},
+    {Q: Qt, P: Pstar},
+    {Q: 0,  P: Pstar}
+  ];
+
+  return Plot.plot({
+    width: 760,
+    height: 500,
+    marginLeft: 60,
+    marginBottom: 55,
+    style: {fontSize: "12px", fontFamily: "Roboto, system-ui, sans-serif", color: "#4A5568"},
+    x: {label: "Količina (Q) →", domain: [0, Qmax], grid: false},
+    y: {label: "↑ Cijena (P)",    domain: [0, Pmax], grid: true},
+    marks: [
+      Plot.ruleY([0], {stroke: "#CBD5E0"}),
+
+      // Burden rectangles
+      Plot.line([...buyerRect, buyerRect[0]],
+        {x: "Q", y: "P", stroke: "#3182CE", strokeWidth: 1, fill: "#BEE3F8", fillOpacity: 0.55, curve: "linear"}),
+      Plot.line([...sellerRect, sellerRect[0]],
+        {x: "Q", y: "P", stroke: "#D69E2E", strokeWidth: 1, fill: "#FAF089", fillOpacity: 0.55, curve: "linear"}),
+
+      // Curves
+      Plot.line(demand,    {x: "Q", y: "P", stroke: "#1f77b4", strokeWidth: 2.5}),
+      Plot.line(supply,    {x: "Q", y: "P", stroke: "#2ca02c", strokeWidth: 2}),
+      Plot.line(supplyTax, {x: "Q", y: "P", stroke: "#2ca02c", strokeWidth: 2, strokeDasharray: "6,4"}),
+
+      // Price guides
+      Plot.ruleY([Pc],    {stroke: "#A0AEC0", strokeDasharray: "2,2"}),
+      Plot.ruleY([Pp],    {stroke: "#A0AEC0", strokeDasharray: "2,2"}),
+      Plot.ruleY([Pstar], {stroke: "#718096", strokeDasharray: "4,3", strokeWidth: 1}),
+
+      // Tax wedge
+      Plot.ruleX([Qt], {y1: Pp, y2: Pc, stroke: "#C53030", strokeWidth: 3}),
+
+      // Equilibrium markers
+      Plot.dot([{Q: Qstar, P: Pstar}], {x: "Q", y: "P", r: 5, fill: "#4A5568", stroke: "white", strokeWidth: 2}),
+      Plot.dot([{Q: Qt, P: Pc}, {Q: Qt, P: Pp}],
+        {x: "Q", y: "P", r: 4, fill: "#C53030", stroke: "white", strokeWidth: 1.5}),
+
+      // Labels on the curves
+      Plot.text([{x: Qmax * 0.85, y: a - b * Qmax * 0.85, label: `D (|εD|=${eps_d.toFixed(2)})`}],
+        {x: "x", y: "y", text: "label", fill: "#1f77b4", fontSize: 12, fontWeight: 600, dy: -8}),
+      Plot.text([{x: Qmax * 0.85, y: c + d_slope * Qmax * 0.85, label: `S (εS=${eps_s.toFixed(2)})`}],
+        {x: "x", y: "y", text: "label", fill: "#2ca02c", fontSize: 12, fontWeight: 600, dy: -8}),
+      Plot.text([{x: Qmax * 0.85, y: c + t + d_slope * Qmax * 0.85, label: "S + t"}],
+        {x: "x", y: "y", text: "label", fill: "#2ca02c", fontSize: 12, fontWeight: 600, dy: -8}),
+
+      // Price labels
+      Plot.text([{x: 2, y: Pc, label: `Pc = ${Pc.toFixed(1)}`}],
+        {x: "x", y: "y", text: "label", textAnchor: "start", dy: -8, fontSize: 12, fill: "#2D3748"}),
+      Plot.text([{x: 2, y: Pp, label: `Pp = ${Pp.toFixed(1)}`}],
+        {x: "x", y: "y", text: "label", textAnchor: "start", dy: 14, fontSize: 12, fill: "#2D3748"}),
+      Plot.text([{x: 2, y: Pstar, label: `P* = ${Pstar.toFixed(1)}`}],
+        {x: "x", y: "y", text: "label", textAnchor: "start", dy: -6, fontSize: 11, fill: "#718096"}),
+
+      // Top readouts
+      Plot.text([{x: 2, y: Pmax * 0.97, label: `Teret kupaca: ${(buyerShare * 100).toFixed(0)} %`}],
+        {x: "x", y: "y", text: "label", textAnchor: "start",
+         fontSize: 14, fill: "#2B6CB0", fontWeight: 700}),
+      Plot.text([{x: 2, y: Pmax * 0.91, label: `Teret prodavača: ${(sellerShare * 100).toFixed(0)} %`}],
+        {x: "x", y: "y", text: "label", textAnchor: "start",
+         fontSize: 14, fill: "#B7791F", fontWeight: 700})
+    ]
+  });
+}
+```
+
+**Kako čitati graf.** Plava krivulja je potražnja, zelena puna ponuda, zelena isprekidana ponuda nakon poreza. Crveni okomiti odsječak je ukupni iznos poreza t. **Plavi pravokutnik** prikazuje udio poreznog tereta koji snose **kupci** (razlika Pc − P\*), a **žuti pravokutnik** udio koji snose **prodavači** (razlika P\* − Pp). U vrhu grafa ispisani su postotni udjeli poreznog tereta.
+
+**Što isprobati.** (1) Postavite |εD| na nisku vrijednost (~0,3), a εS na visoku (~2,0): potražnja je strma, ponuda položena → **kupci snose gotovo cijeli porez** (klasičan slučaj duhana ili goriva). (2) Obrnite: |εD| visoka, εS niska → prodavači snose većinu tereta (npr. kratkoročno tržište nekretnina, gdje je ponuda neelastična). (3) Postavite obje elastičnosti na slične vrijednosti → teret se otprilike polovi. **Pravilo:** strana tržišta koja je manje elastična ne može „pobjeći" porezu i zato snosi veći dio njegova tereta — bez obzira na to koga zakon formalno proglašava obveznikom.
+
+```{ojs}
+//| echo: false
+viewof dwl2_controls = Inputs.form({
+  eps_dwl: Inputs.range([0.2, 2.5], {value: 1.0, step: 0.05, label: "Elastičnost potražnje |ε|:"}),
+  t_dwl:   Inputs.range([0, 30],    {value: 12,  step: 1,    label: "Iznos poreza (t):"})
+})
+```
+
+```{ojs}
+//| echo: false
+eps_dwl = dwl2_controls.eps_dwl
+```
+
+```{ojs}
+//| echo: false
+t_dwl = dwl2_controls.t_dwl
+```
+
+```{ojs}
+//| echo: false
+{
+  // Same calibration as Ramsey graph: equilibrium fixed at (50, 50), supply slope d = 0.5.
+  const Qstar = 50;
+  const Pstar = 50;
+  const Qmax = 110;
+  const Pmax = 110;
+
+  const b = 1 / eps_dwl;
+  const a = Pstar + b * Qstar;
+  const d_slope = 0.5;
+  const c = Pstar - d_slope * Qstar;
+
+  const t = t_dwl;
+
+  const Qt = Math.max(0, (a - c - t) / (b + d_slope));
+  const Pc = a - b * Qt;
+  const Pp = Pc - t;
+
+  const dQ = Qstar - Qt;
+  const dwl = 0.5 * t * dQ;
+
+  // Reference DWL at small benchmark tax (t = 4) so the reader can see the t² scaling
+  const tRef = 4;
+  const QtRef = Math.max(0, (a - c - tRef) / (b + d_slope));
+  const dwlRef = 0.5 * tRef * (Qstar - QtRef);
+  const ratio = dwlRef > 0 ? dwl / dwlRef : 0;
+
+  const Qs = d3.range(0, Qmax + 1);
+  const demand    = Qs.map(q => ({Q: q, P: a - b * q})).filter(p => p.P >= 0 && p.P <= Pmax);
+  const supply    = Qs.map(q => ({Q: q, P: c + d_slope * q})).filter(p => p.P >= 0 && p.P <= Pmax);
+  const supplyTax = Qs.map(q => ({Q: q, P: c + t + d_slope * q})).filter(p => p.P >= 0 && p.P <= Pmax);
+
+  // DWL triangle vertices
+  const dwlTriangle = [
+    {Q: Qt,    P: Pc},
+    {Q: Qt,    P: Pp},
+    {Q: Qstar, P: Pstar}
+  ];
+
+  return Plot.plot({
+    width: 760,
+    height: 500,
+    marginLeft: 60,
+    marginBottom: 55,
+    style: {fontSize: "12px", fontFamily: "Roboto, system-ui, sans-serif", color: "#4A5568"},
+    x: {label: "Količina (Q) →", domain: [0, Qmax], grid: false},
+    y: {label: "↑ Cijena (P)",    domain: [0, Pmax], grid: true},
+    marks: [
+      Plot.ruleY([0], {stroke: "#CBD5E0"}),
+
+      // DWL triangle (red filled polygon)
+      Plot.line([...dwlTriangle, dwlTriangle[0]],
+        {x: "Q", y: "P", stroke: "#C53030", strokeWidth: 2,
+         fill: "#FEB2B2", fillOpacity: 0.75, curve: "linear"}),
+
+      // Curves
+      Plot.line(demand,    {x: "Q", y: "P", stroke: "#1f77b4", strokeWidth: 2.5}),
+      Plot.line(supply,    {x: "Q", y: "P", stroke: "#2ca02c", strokeWidth: 2}),
+      Plot.line(supplyTax, {x: "Q", y: "P", stroke: "#2ca02c", strokeWidth: 2, strokeDasharray: "6,4"}),
+
+      // Side annotations: t (vertical wedge) and ΔQ (horizontal bracket)
+      Plot.ruleX([Qt],    {y1: Pp, y2: Pc, stroke: "#C53030", strokeWidth: 3}),
+      Plot.link(
+        [{x1: Qt, x2: Qstar, y1: Pmax * 0.10, y2: Pmax * 0.10}],
+        {x1: "x1", x2: "x2", y1: "y1", y2: "y2",
+         stroke: "#805AD5", strokeWidth: 2.5, markerStart: "dot", markerEnd: "dot"}),
+
+      // Equilibrium dots
+      Plot.dot([{Q: Qstar, P: Pstar}], {x: "Q", y: "P", r: 5, fill: "#4A5568", stroke: "white", strokeWidth: 2}),
+      Plot.dot([{Q: Qt, P: Pc}, {Q: Qt, P: Pp}],
+        {x: "Q", y: "P", r: 4, fill: "#C53030", stroke: "white", strokeWidth: 1.5}),
+
+      // Wedge label
+      Plot.text([{x: Qt, y: (Pc + Pp) / 2, label: `t = ${t}`}],
+        {x: "x", y: "y", text: "label", textAnchor: "start", dx: 8,
+         fontSize: 13, fill: "#C53030", fontWeight: 700}),
+      // ΔQ label
+      Plot.text([{x: (Qt + Qstar) / 2, y: Pmax * 0.10, label: `ΔQ = ${dQ.toFixed(1)}`}],
+        {x: "x", y: "y", text: "label", textAnchor: "middle", dy: -8,
+         fontSize: 12, fill: "#553C9A", fontWeight: 600}),
+
+      // Curve labels
+      Plot.text([{x: Qmax * 0.85, y: a - b * Qmax * 0.85, label: `D (|ε|=${eps_dwl.toFixed(2)})`}],
+        {x: "x", y: "y", text: "label", fill: "#1f77b4", fontSize: 12, fontWeight: 600, dy: -8}),
+      Plot.text([{x: Qmax * 0.85, y: c + d_slope * Qmax * 0.85, label: "S"}],
+        {x: "x", y: "y", text: "label", fill: "#2ca02c", fontSize: 13, fontWeight: 600, dy: -8}),
+      Plot.text([{x: Qmax * 0.85, y: c + t + d_slope * Qmax * 0.85, label: "S + t"}],
+        {x: "x", y: "y", text: "label", fill: "#2ca02c", fontSize: 12, fontWeight: 600, dy: -8}),
+
+      // Top readouts: formula decomposition + t² scaling
+      Plot.text([{x: 2, y: Pmax * 0.97,
+         label: `DWL = ½ · t · ΔQ = ½ · ${t} · ${dQ.toFixed(1)} = ${dwl.toFixed(1)}`}],
+        {x: "x", y: "y", text: "label", textAnchor: "start",
+         fontSize: 14, fill: "#C53030", fontWeight: 700}),
+      Plot.text([{x: 2, y: Pmax * 0.91,
+         label: `Pri t = ${tRef} mrtvi teret bio bi ${dwlRef.toFixed(1)}  →  ${ratio.toFixed(1)}× više`}],
+        {x: "x", y: "y", text: "label", textAnchor: "start",
+         fontSize: 12, fill: "#4A5568", fontWeight: 500})
+    ]
+  });
+}
+```
+
+**Kako čitati graf.** Crveni trokut je **mrtvi teret poreza** — društveni gubitak koji nastaje jer porez sprječava transakcije koje bi inače obostrano koristile kupcima i prodavačima. Crveni okomiti odsječak označava visinu poreza t, ljubičasti horizontalni iznos pada količine ΔQ. U vrhu grafa ispisuje se **rastav formule** DWL = ½ · t · ΔQ, kao i usporedba s mrtvim teretom pri malom referentnom porezu (t = 4).
+
+**Što isprobati.** (1) Udvostručite t s 4 na 8: omjer pokazuje da DWL **raste približno 4 puta** — ne 2 puta. To je takozvano kvadratno skaliranje mrtvog tereta (DWL ∝ t²) koje proizlazi iz toga što i t i ΔQ rastu s povećanjem poreza. (2) Pri t = 12 udvostručite |ε| s 0,5 na 1,0: ΔQ približno se udvostručuje, a s njim i mrtvi teret. (3) Postavite |ε| na vrlo nisku vrijednost (~0,25) i povucite t do 30: trokut ostaje malen čak i pri visokom porezu — pa zato porezni sustavi rado posežu za visokim trošarinama na neelastična dobra. **Praktična poruka.** Niski porezi po širokoj osnovici stvaraju manji ukupni gubitak blagostanja od visokih poreza po uskoj osnovici — temeljni princip dizajna učinkovitog poreznog sustava.
 
 Uz incidenciju, važan je i koncept **poreznog klina** — razlika između ukupnog troška rada za poslodavca i neto plaće radnika, odnosno udio poreza i doprinosa u ukupnom trošku rada. U tu razliku ulaze porez na dohodak, prirez te doprinosi zaposlenika i poslodavca, koji zajedno stvaraju fiskalno opterećenje rada [@simovic2022]. Suštinski, porezni klin znači da na tržištu rada ne postoji jedna „cijena rada", već dvije: bruto nadnica (trošak rada) i neto nadnica (dohodak radnika).
 
-::: {.callout-note}
-**Grafikon: Porezni klin** — u pripremi.
-:::
+```{ojs}
+//| echo: false
+viewof wedge_controls = Inputs.form({
+  tau:   Inputs.range([0, 60],   {value: 35,  step: 1,    label: "Porezni klin τ (%):"}),
+  eps_L: Inputs.range([0.1, 1.5], {value: 0.4, step: 0.05, label: "Elastičnost ponude rada εL:"})
+})
+```
+
+```{ojs}
+//| echo: false
+tau = wedge_controls.tau
+```
+
+```{ojs}
+//| echo: false
+eps_L = wedge_controls.eps_L
+```
+
+```{ojs}
+//| echo: false
+{
+  // Labour market: equilibrium fixed at (L*, W*) = (50, 50).
+  // Demand for labour: W = a - b·L, calibrated so |εD| = 1 at equilibrium → b = 1.
+  // Supply of labour: W = c + d·L, with εL controlling slope: d = 1 / εL.
+  const Lstar = 50;
+  const Wstar = 50;
+  const Lmax = 110;
+  const Wmax = 110;
+
+  const b = 1;                       // demand slope (fixed reference elasticity)
+  const a = Wstar + b * Lstar;       // demand intercept
+  const d_slope = 1 / eps_L;         // supply slope from labour-supply elasticity
+  const c = Wstar - d_slope * Lstar; // supply intercept
+
+  // Tax wedge as percent of gross wage. Wedge t (in absolute money) shifts supply up.
+  // Solve for new equilibrium with wedge t such that t = τ · Wbruto.
+  // Post-tax: a - b·L = c + t + d·L  with  t = τ · Wbruto = τ · (a - b·L)
+  // ⇒ a - b·L = c + τ·(a - b·L) + d·L
+  // ⇒ (a - b·L)·(1 - τ) = c + d·L
+  // ⇒ a·(1 - τ) - b·(1 - τ)·L = c + d·L
+  // ⇒ L_t = [a·(1 - τ) - c] / [b·(1 - τ) + d]
+  const tauFrac = tau / 100;
+  const Lt = Math.max(0, (a * (1 - tauFrac) - c) / (b * (1 - tauFrac) + d_slope));
+  const Wbruto = a - b * Lt;
+  const Wneto  = Wbruto * (1 - tauFrac);
+  const wedgeAbs = Wbruto - Wneto;
+
+  // Revenue and DWL
+  const dL = Lstar - Lt;
+  const revenue = wedgeAbs * Lt;
+  const dwl     = 0.5 * wedgeAbs * dL;
+
+  const Ls = d3.range(0, Lmax + 1);
+  const demand    = Ls.map(l => ({L: l, W: a - b * l})).filter(p => p.W >= 0 && p.W <= Wmax);
+  const supply    = Ls.map(l => ({L: l, W: c + d_slope * l})).filter(p => p.W >= 0 && p.W <= Wmax);
+  const supplyTax = Ls.map(l => ({L: l, W: c + wedgeAbs + d_slope * l})).filter(p => p.W >= 0 && p.W <= Wmax);
+
+  // Wedge revenue rectangle
+  const wedgeRect = [
+    {L: 0,  W: Wneto},
+    {L: Lt, W: Wneto},
+    {L: Lt, W: Wbruto},
+    {L: 0,  W: Wbruto}
+  ];
+
+  return Plot.plot({
+    width: 760,
+    height: 500,
+    marginLeft: 60,
+    marginBottom: 55,
+    style: {fontSize: "12px", fontFamily: "Roboto, system-ui, sans-serif", color: "#4A5568"},
+    x: {label: "Rad (L) →", domain: [0, Lmax], grid: false},
+    y: {label: "↑ Nadnica (W)", domain: [0, Wmax], grid: true},
+    marks: [
+      Plot.ruleY([0], {stroke: "#CBD5E0"}),
+
+      // Wedge rectangle (tax revenue collected from labour)
+      Plot.line([...wedgeRect, wedgeRect[0]],
+        {x: "L", y: "W", stroke: "#805AD5", strokeWidth: 1,
+         fill: "#E9D8FD", fillOpacity: 0.6, curve: "linear"}),
+
+      // Curves
+      Plot.line(demand,    {x: "L", y: "W", stroke: "#1f77b4", strokeWidth: 2.5}),
+      Plot.line(supply,    {x: "L", y: "W", stroke: "#2ca02c", strokeWidth: 2}),
+      Plot.line(supplyTax, {x: "L", y: "W", stroke: "#2ca02c", strokeWidth: 2, strokeDasharray: "6,4"}),
+
+      // Wage guides
+      Plot.ruleY([Wbruto], {stroke: "#A0AEC0", strokeDasharray: "2,2"}),
+      Plot.ruleY([Wneto],  {stroke: "#A0AEC0", strokeDasharray: "2,2"}),
+
+      // Vertical wedge line
+      Plot.ruleX([Lt], {y1: Wneto, y2: Wbruto, stroke: "#C53030", strokeWidth: 3}),
+
+      // Equilibrium dots
+      Plot.dot([{L: Lstar, W: Wstar}], {x: "L", y: "W", r: 5, fill: "#4A5568", stroke: "white", strokeWidth: 2}),
+      Plot.dot([{L: Lt, W: Wbruto}, {L: Lt, W: Wneto}],
+        {x: "L", y: "W", r: 4, fill: "#C53030", stroke: "white", strokeWidth: 1.5}),
+
+      // Curve labels
+      Plot.text([{x: Lmax * 0.85, y: a - b * Lmax * 0.85, label: "Potražnja za radom (D)"}],
+        {x: "x", y: "y", text: "label", fill: "#1f77b4", fontSize: 12, fontWeight: 600, dy: -8}),
+      Plot.text([{x: Lmax * 0.85, y: c + d_slope * Lmax * 0.85, label: `Ponuda rada (εL=${eps_L.toFixed(2)})`}],
+        {x: "x", y: "y", text: "label", fill: "#2ca02c", fontSize: 12, fontWeight: 600, dy: -8}),
+      Plot.text([{x: Lmax * 0.85, y: c + wedgeAbs + d_slope * Lmax * 0.85, label: "Ponuda + klin"}],
+        {x: "x", y: "y", text: "label", fill: "#2ca02c", fontSize: 12, fontWeight: 600, dy: -8}),
+
+      // Wage labels
+      Plot.text([{x: 2, y: Wbruto, label: `Bruto nadnica = ${Wbruto.toFixed(1)}`}],
+        {x: "x", y: "y", text: "label", textAnchor: "start", dy: -8, fontSize: 12, fill: "#2D3748", fontWeight: 600}),
+      Plot.text([{x: 2, y: Wneto, label: `Neto nadnica = ${Wneto.toFixed(1)}`}],
+        {x: "x", y: "y", text: "label", textAnchor: "start", dy: 14, fontSize: 12, fill: "#2D3748", fontWeight: 600}),
+      Plot.text([{x: Lt, y: (Wbruto + Wneto) / 2, label: `Klin = ${wedgeAbs.toFixed(1)}`}],
+        {x: "x", y: "y", text: "label", textAnchor: "start", dx: 8,
+         fontSize: 13, fill: "#C53030", fontWeight: 700}),
+
+      // Top readouts
+      Plot.text([{x: 2, y: Wmax * 0.97,
+         label: `Porezni prihod: ${revenue.toFixed(1)}   |   Mrtvi teret: ${dwl.toFixed(1)}`}],
+        {x: "x", y: "y", text: "label", textAnchor: "start",
+         fontSize: 13, fill: "#553C9A", fontWeight: 700}),
+      Plot.text([{x: 2, y: Wmax * 0.91,
+         label: `Pad zaposlenosti: ΔL = ${dL.toFixed(1)}  (${(dL / Lstar * 100).toFixed(1)}%)`}],
+        {x: "x", y: "y", text: "label", textAnchor: "start",
+         fontSize: 12, fill: "#4A5568", fontWeight: 500})
+    ]
+  });
+}
+```
+
+**Kako čitati graf.** Plava krivulja je potražnja poslodavaca za radom, zelena puna ponuda rada (radnici), zelena isprekidana **ponuda nakon poreznog klina** — udarnik svih davanja koja terete plaću (porez na dohodak, prirez, doprinosi zaposlenika i poslodavca). Crveni okomiti odsječak je veličina klina. **Bruto nadnica** je trošak rada za poslodavca; **neto nadnica** je dohodak koji radnik odnosi kući. Ljubičasti pravokutnik prikazuje ukupni porezni prihod države (klin × broj zaposlenih).
+
+**Što isprobati.** (1) Pri niskoj elastičnosti ponude rada (εL ≈ 0,15, npr. radnici s niskim alternativama) i klinu od 35 %: pad zaposlenosti je malen, prihod države velik. To je razlog zašto su porezi na rad fiskalno izdašni i u zemljama s visokim opterećenjem rada. (2) Povećajte εL na ~1,0 (npr. mladi, žene s djecom, radnici blizu mirovine — skupine s više fleksibilnosti): isti klin sada uzrokuje znatno veći pad zaposlenosti i veći mrtvi teret. **Upravo zato moderna teorija optimalnog oporezivanja preporučuje niže efektivne stope na rad za skupine s elastičnijom ponudom rada.** (3) Pri εL = 0,4, povucite klin s 20 % na 50 %: prihod isprva raste, ali pri vrlo visokim klinovima može se i smanjivati — radnici reagiraju smanjenjem ponude rada (najavak Lafferove logike za tržište rada). Ovaj graf konkretizira zašto je za Hrvatsku, koja ima među višim klinovima u EU, pitanje strukture poreznog opterećenja rada ključno za zaposlenost i konkurentnost [@simovic2022].
 
 U ekonomskom smislu, porezni klin djeluje kao distorzija tržišta rada. Poslodavci donose odluke na temelju bruto troška rada, dok radnici reagiraju na neto plaću. Kada se uvedu porezi, bruto trošak raste, a neto plaća pada, što dovodi do smanjenja zaposlenosti i količine rada u odnosu na razinu bez oporezivanja. Time porezni klin izravno generira mrtvi teret poreza [@gruber2019; @stiglitz2015].
 
@@ -156,23 +652,515 @@ Teorija optimalnog oporezivanja razvijena je kako bi odgovorila na temeljno pita
 
 **Ramseyevo pravilo** [@ramsey1927] — početak moderne teorije optimalnog oporezivanja vezuje se uz rad Franka Ramseya, koji je prvi formalno postavio pitanje: kako rasporediti poreze na različita dobra kako bi se minimizirao mrtvi teret uz zadane porezne prihode. Ramsey je pokazao da optimalno oporezivanje ne znači jednako oporezivanje svih dobara. Naprotiv, njegov ključni rezultat glasi: dobra s neelastičnom potražnjom trebaju biti relativno više oporezovana. Intuicija iza ovog rezultata proizlazi iz koncepta mrtvog tereta. Kada porez povećava cijenu nekog dobra, potrošači smanjuju potražnju. Ako je ta reakcija velika (elastična potražnja), dolazi do značajnog pada količine i velikog gubitka blagostanja. Ako je reakcija mala (neelastična potražnja), porez ima manji učinak na količinu i time manji mrtvi teret. Ovaj rezultat ima jasne praktične implikacije — upravo zato se u stvarnim poreznim sustavima često primjenjuju visoke trošarine na proizvode poput goriva ili duhana, čija je potražnja relativno neelastična.
 
-::: {.callout-note}
-**Grafikon: Elastičnost i mrtvi teret poreza** — u pripremi.
-:::
+```{ojs}
+//| echo: false
+viewof dwl_controls = Inputs.form({
+  eps: Inputs.range([0.2, 2.5], {value: 1.0, step: 0.05, label: "Elastičnost potražnje |ε|:"}),
+  tax: Inputs.range([0, 30],    {value: 15,  step: 1,    label: "Iznos poreza (t):"})
+})
+```
+
+```{ojs}
+//| echo: false
+eps = dwl_controls.eps
+```
+
+```{ojs}
+//| echo: false
+tax = dwl_controls.tax
+```
+
+```{ojs}
+//| echo: false
+{
+  // Pre-tax equilibrium fixed at (Q*, P*) = (50, 50).
+  // Demand slope b is calibrated from elasticity at (Q*, P*): |ε| = (P/Q)·(1/b)  ⇒  b = P/(Q·|ε|) = 1/|ε|.
+  // Supply slope d is fixed.
+  const Qstar = 50;
+  const Pstar = 50;
+  const Qmax = 110;
+  const Pmax = 110;
+
+  const b = 1 / eps;             // demand slope (steep when eps small → inelastic)
+  const a = Pstar + b * Qstar;   // demand intercept so demand passes through (Q*, P*)
+  const d = 0.5;                 // supply slope (fixed)
+  const c = Pstar - d * Qstar;   // supply intercept so supply passes through (Q*, P*)
+
+  const t = tax;
+
+  // Post-tax equilibrium: a - b·Q = c + t + d·Q  ⇒  Q_t = (a - c - t)/(b + d)
+  const Qt = Math.max(0, (a - c - t) / (b + d));
+  const Pc = a - b * Qt;     // price paid by buyer
+  const Pp = Pc - t;         // price received by seller
+
+  const dQ = Qstar - Qt;
+  const dwl = 0.5 * t * dQ;
+  const revenue = t * Qt;
+
+  // Curves
+  const Qs = d3.range(0, Qmax + 1);
+  const demand    = Qs.map(q => ({Q: q, P: a - b * q})).filter(p => p.P >= 0 && p.P <= Pmax);
+  const supply    = Qs.map(q => ({Q: q, P: c + d * q})).filter(p => p.P >= 0 && p.P <= Pmax);
+  const supplyTax = Qs.map(q => ({Q: q, P: c + t + d * q})).filter(p => p.P >= 0 && p.P <= Pmax);
+
+  // Deadweight-loss triangle vertices: (Qt, Pc), (Qt, Pp), (Q*, P*)
+  const dwlTriangle = [
+    {Q: Qt,    P: Pc},
+    {Q: Qt,    P: Pp},
+    {Q: Qstar, P: Pstar}
+  ];
+
+  // Revenue rectangle: from (0..Qt) × (Pp..Pc) — drawn as a polygon for shading
+  const revRect = [
+    {Q: 0,  P: Pp},
+    {Q: Qt, P: Pp},
+    {Q: Qt, P: Pc},
+    {Q: 0,  P: Pc}
+  ];
+
+  return Plot.plot({
+    width: 760,
+    height: 500,
+    marginLeft: 60,
+    marginBottom: 55,
+    style: {fontSize: "12px", fontFamily: "Roboto, system-ui, sans-serif", color: "#4A5568"},
+    x: {label: "Količina (Q) →", domain: [0, Qmax], grid: false},
+    y: {label: "↑ Cijena (P)",    domain: [0, Pmax], grid: true},
+    marks: [
+      Plot.ruleY([0], {stroke: "#CBD5E0"}),
+
+      // Revenue rectangle (light blue fill)
+      Plot.area(revRect, {x: "Q", y1: Pp, y2: "P", fill: "#BEE3F8", fillOpacity: 0.5}),
+
+      // Deadweight-loss triangle (red fill) — closed polygon via line with fill
+      Plot.line([...dwlTriangle, dwlTriangle[0]],
+        {x: "Q", y: "P", stroke: "#C53030", strokeWidth: 2,
+         fill: "#FEB2B2", fillOpacity: 0.7, curve: "linear"}),
+
+      // Curves
+      Plot.line(demand,    {x: "Q", y: "P", stroke: "#1f77b4", strokeWidth: 2.5}),
+      Plot.line(supply,    {x: "Q", y: "P", stroke: "#2ca02c", strokeWidth: 2}),
+      Plot.line(supplyTax, {x: "Q", y: "P", stroke: "#2ca02c", strokeWidth: 2, strokeDasharray: "6,4"}),
+
+      // Price guides
+      Plot.ruleY([Pc], {stroke: "#A0AEC0", strokeDasharray: "2,2"}),
+      Plot.ruleY([Pp], {stroke: "#A0AEC0", strokeDasharray: "2,2"}),
+      Plot.ruleX([Qt], {y1: Pp, y2: Pc, stroke: "#C53030", strokeWidth: 3}),
+
+      // Equilibrium dots
+      Plot.dot([{Q: Qstar, P: Pstar}], {x: "Q", y: "P", r: 5, fill: "#4A5568", stroke: "white", strokeWidth: 2}),
+      Plot.dot([{Q: Qt, P: Pc}, {Q: Qt, P: Pp}],
+        {x: "Q", y: "P", r: 4, fill: "#C53030", stroke: "white", strokeWidth: 1.5}),
+
+      // Labels
+      Plot.text([{x: 2, y: Pc, label: `Pc = ${Pc.toFixed(1)}`}],
+        {x: "x", y: "y", text: "label", textAnchor: "start", dy: -8, fontSize: 12, fill: "#2D3748"}),
+      Plot.text([{x: 2, y: Pp, label: `Pp = ${Pp.toFixed(1)}`}],
+        {x: "x", y: "y", text: "label", textAnchor: "start", dy: -8, fontSize: 12, fill: "#2D3748"}),
+      Plot.text([{x: Qmax * 0.85, y: a - b * Qmax * 0.85 + 4, label: `D (|ε|=${eps.toFixed(2)})`}],
+        {x: "x", y: "y", text: "label", fill: "#1f77b4", fontSize: 12, fontWeight: 600}),
+      Plot.text([{x: Qmax * 0.85, y: c + d * Qmax * 0.85, label: "S"}],
+        {x: "x", y: "y", text: "label", fill: "#2ca02c", fontSize: 13, fontWeight: 600, dy: -8}),
+      Plot.text([{x: Qmax * 0.85, y: c + t + d * Qmax * 0.85, label: "S + t"}],
+        {x: "x", y: "y", text: "label", fill: "#2ca02c", fontSize: 12, fontWeight: 600, dy: -8}),
+
+      // Top readouts
+      Plot.text([{x: 2, y: Pmax * 0.97, label: `Mrtvi teret (DWL): ${dwl.toFixed(1)}`}],
+        {x: "x", y: "y", text: "label", textAnchor: "start",
+         fontSize: 14, fill: "#C53030", fontWeight: 700}),
+      Plot.text([{x: 2, y: Pmax * 0.91, label: `Porezni prihod: ${revenue.toFixed(1)}`}],
+        {x: "x", y: "y", text: "label", textAnchor: "start",
+         fontSize: 13, fill: "#2B6CB0", fontWeight: 600})
+    ]
+  });
+}
+```
+
+**Kako čitati graf.** Plava krivulja je potražnja, zelena puna ponuda, zelena isprekidana ponuda nakon poreza. Crveni trokut je **mrtvi teret** (gubitak blagostanja), a svjetlo plavi pravokutnik **porezni prihod** države. Sive točke označavaju početnu ravnotežu (Q\*, P\*); crvene točke ravnotežu nakon poreza.
+
+**Što isprobati.** (1) Postavite |ε| na nisku vrijednost (~0,3): potražnja je strma (neelastična), količina jedva pada, crveni trokut vrlo je malen, a porezni prihod velik. (2) Povucite |ε| na ~2,0: potražnja je položena (elastična), količina se znatno smanjuje, crveni trokut naglo raste, a prihod opada. (3) Pri istoj |ε|, udvostručite porez t: mrtvi teret raste **približno s kvadratom poreza** — klasični rezultat koji opravdava niske, široke porezne osnovice. Upravo iz ovog odnosa proizlazi **Ramseyevo pravilo**: ako su društveni gubici od oporezivanja proporcionalni elastičnosti, optimalno je relativno više oporezovati dobra s neelastičnom potražnjom (npr. gorivo, duhan), a manje ona s elastičnom potražnjom (npr. luksuzna dobra široke supstitucije).
 
 Međutim, Ramseyjev model ima važno ograničenje: on potpuno zanemaruje pitanje pravednosti, jer ne uzima u obzir tko snosi porezni teret.
 
 **Mirrleesov model** [@mirrlees1971] — dok je Ramsey analizirao oporezivanje dobara, James Mirrlees proširio je teoriju na područje oporezivanja dohotka, uvodeći problem asimetričnih informacija. Temeljna ideja jest da država želi oporezivati pojedince prema njihovoj sposobnosti, ali ne može izravno promatrati tu sposobnost. Ono što država vidi jest ostvareni dohodak, koji ovisi i o produktivnosti i o uloženom radu. Time nastaje ključni problem: porezni sustav mora biti dizajniran tako da ne destimulira rad, a istovremeno omogućuje redistribuciju. Mirrlees pokazuje da optimalne porezne stope ne smiju biti previsoke jer smanjuju poticaje za rad, ali ne smiju biti ni preniske jer tada redistribucija izostaje. Optimalno rješenje ovisi o elastičnosti ponude rada i društvenim preferencijama prema nejednakosti. Porezi na rad stvaraju distorzije kroz dva kanala: *supstitucijski učinak* (manje rada zbog niže neto nadnice) i *dohodovni učinak* (više rada kako bi se nadoknadio gubitak dohotka). Upravo ravnoteža između ta dva efekta određuje optimalnu razinu oporezivanja.
 
-::: {.callout-note}
-**Graf: Porez i ponuda rada** — u pripremi.
-:::
+```{ojs}
+//| echo: false
+viewof labor_controls = Inputs.form({
+  tau_l: Inputs.range([0, 60],    {value: 30,  step: 1,    label: "Porezna stopa τ (%):"}),
+  sig_l: Inputs.range([0.2, 2.0], {value: 1.0, step: 0.1,  label: "Elastičnost supstitucije σ:"})
+})
+```
+
+```{ojs}
+//| echo: false
+tau_l = labor_controls.tau_l
+```
+
+```{ojs}
+//| echo: false
+sig_l = labor_controls.sig_l
+```
+
+```{ojs}
+//| echo: false
+{
+  // Leisure-consumption choice with CES utility.
+  // Time endowment T, wage w. Without tax: C = w·(T - ℓ). With tax: C = w·(1 - τ)·(T - ℓ).
+  // CES utility:  U(C, ℓ) = [α·C^((σ-1)/σ) + (1-α)·ℓ^((σ-1)/σ)]^(σ/(σ-1)).
+  // For σ = 1, U(C, ℓ) = C^α · ℓ^(1-α) (Cobb-Douglas).
+  // Optimum at net wage w_n: ℓ* = T / (1 + (α/(1-α))^σ · w_n^(σ-1)).
+  const T = 24;
+  const w = 10;
+  const alpha = 0.5;
+  const sigma = sig_l;
+  const tauFrac = tau_l / 100;
+  const w0 = w;
+  const w1 = w * (1 - tauFrac);
+
+  const eps = 1e-9;
+
+  // Utility helpers
+  function U(C, ell) {
+    const c = Math.max(C, eps), l = Math.max(ell, eps);
+    if (Math.abs(sigma - 1) < 1e-6) {
+      return Math.pow(c, alpha) * Math.pow(l, 1 - alpha);
+    }
+    const e = (sigma - 1) / sigma;
+    const inner = alpha * Math.pow(c, e) + (1 - alpha) * Math.pow(l, e);
+    if (inner <= 0) return 0;
+    return Math.pow(inner, 1 / e);
+  }
+
+  // Optimum at net wage w_n
+  function optimum(w_n) {
+    let ell;
+    if (Math.abs(sigma - 1) < 1e-6) {
+      // Cobb-Douglas: ℓ* = (1-α)·T
+      ell = (1 - alpha) * T;
+    } else {
+      const ratio = Math.pow(alpha / (1 - alpha), sigma) * Math.pow(w_n, sigma - 1);
+      ell = T / (1 + ratio);
+    }
+    const C = w_n * (T - ell);
+    return {ell, C};
+  }
+
+  // Compensated optimum B: same utility as A, but at slope w₁.
+  // For CES, MRS_(C for ℓ) = ((1-α)/α)·(C/ℓ)^(1/σ) = w_n
+  // ⇒ C/ℓ = (α·w_n/(1-α))^σ, i.e. C = k·ℓ with k = (α·w_n/(1-α))^σ.
+  // Substitute into U(C, ℓ) = U_bar to solve for ℓ on the original indifference curve.
+  function compensated(U_bar, w_n) {
+    const k = Math.pow(alpha * w_n / (1 - alpha), sigma);
+    let ell;
+    if (Math.abs(sigma - 1) < 1e-6) {
+      // U = (k·ℓ)^α · ℓ^(1-α) = k^α · ℓ
+      ell = U_bar / Math.pow(k, alpha);
+    } else {
+      const e = (sigma - 1) / sigma;
+      // U(kℓ, ℓ) = [α·(kℓ)^e + (1-α)·ℓ^e]^(1/e)
+      //          = ℓ · [α·k^e + (1-α)]^(1/e)
+      const factor = Math.pow(alpha * Math.pow(k, e) + (1 - alpha), 1 / e);
+      ell = U_bar / factor;
+    }
+    const C = k * ell;
+    return {ell, C};
+  }
+
+  const A = optimum(w0);
+  const C_pt = optimum(w1);
+  const U_A = U(A.C, A.ell);
+  const B = compensated(U_A, w1);
+
+  // Hours worked
+  const hoursA = T - A.ell;
+  const hoursC = T - C_pt.ell;
+  const dHours = hoursC - hoursA;
+
+  // Substitution effect on leisure: A → B (along original indifference curve).
+  // Income effect on leisure: B → C (parallel shift to lower indifference curve).
+  const subEffect = B.ell - A.ell;
+  const incEffect = C_pt.ell - B.ell;
+
+  // Budget lines as endpoint pairs
+  const budgetNoTax = [{ell: 0, C: w0 * T}, {ell: T, C: 0}];
+  const budgetTax   = [{ell: 0, C: w1 * T}, {ell: T, C: 0}];
+
+  // Indifference curves through A and through C_pt
+  function indiffCurve(U_bar) {
+    const pts = [];
+    const ellGrid = d3.range(0.5, T + 0.01, 0.5);
+    for (const ell of ellGrid) {
+      // Solve U(C, ell) = U_bar for C numerically (closed-form for CES is tractable):
+      // [α·C^e + (1-α)·ell^e]^(1/e) = U_bar
+      // ⇒ α·C^e = U_bar^e - (1-α)·ell^e
+      // ⇒ C = ((U_bar^e - (1-α)·ell^e) / α)^(1/e)
+      let C;
+      if (Math.abs(sigma - 1) < 1e-6) {
+        // U = C^α · ell^(1-α) = U_bar  ⇒  C = (U_bar / ell^(1-α))^(1/α)
+        C = Math.pow(U_bar / Math.pow(Math.max(ell, eps), 1 - alpha), 1 / alpha);
+      } else {
+        const e = (sigma - 1) / sigma;
+        const numerator = Math.pow(U_bar, e) - (1 - alpha) * Math.pow(ell, e);
+        if (numerator / alpha <= 0) continue;
+        C = Math.pow(numerator / alpha, 1 / e);
+      }
+      if (isFinite(C) && C > 0 && C < w0 * T * 1.5) pts.push({ell, C});
+    }
+    return pts;
+  }
+
+  const U_C = U(C_pt.C, C_pt.ell);
+  const indiffA = indiffCurve(U_A);
+  const indiffC = indiffCurve(U_C);
+
+  const Cmax = w0 * T * 1.05;
+
+  return Plot.plot({
+    width: 760,
+    height: 520,
+    marginLeft: 65,
+    marginBottom: 55,
+    style: {fontSize: "12px", fontFamily: "Roboto, system-ui, sans-serif", color: "#4A5568"},
+    x: {label: "Dokolica ℓ →", domain: [0, T], grid: false},
+    y: {label: "↑ Potrošnja C", domain: [0, Cmax], grid: true},
+    marks: [
+      Plot.ruleY([0], {stroke: "#CBD5E0"}),
+
+      // Budget lines
+      Plot.line(budgetNoTax, {x: "ell", y: "C", stroke: "#2ca02c", strokeWidth: 2.5}),
+      Plot.line(budgetTax,   {x: "ell", y: "C", stroke: "#2ca02c", strokeWidth: 2, strokeDasharray: "6,4"}),
+
+      // Indifference curves
+      Plot.line(indiffA, {x: "ell", y: "C", stroke: "#1f77b4", strokeWidth: 2}),
+      Plot.line(indiffC, {x: "ell", y: "C", stroke: "#C53030", strokeWidth: 2, strokeDasharray: "4,3"}),
+
+      // Substitution-effect arrow (A → B) on the x-axis baseline
+      Plot.link(
+        [{x1: A.ell, y1: Cmax * 0.06, x2: B.ell, y2: Cmax * 0.06}],
+        {x1: "x1", y1: "y1", x2: "x2", y2: "y2",
+         stroke: "#805AD5", strokeWidth: 2.5, markerEnd: "arrow"}),
+      // Income-effect arrow (B → C) on a separate baseline
+      Plot.link(
+        [{x1: B.ell, y1: Cmax * 0.02, x2: C_pt.ell, y2: Cmax * 0.02}],
+        {x1: "x1", y1: "y1", x2: "x2", y2: "y2",
+         stroke: "#D69E2E", strokeWidth: 2.5, markerEnd: "arrow"}),
+
+      // Three optima
+      Plot.dot([A], {x: "ell", y: "C", r: 6, fill: "#1f77b4", stroke: "white", strokeWidth: 2}),
+      Plot.dot([B], {x: "ell", y: "C", r: 6, fill: "#805AD5", stroke: "white", strokeWidth: 2}),
+      Plot.dot([C_pt], {x: "ell", y: "C", r: 6, fill: "#C53030", stroke: "white", strokeWidth: 2}),
+
+      // Drop-lines from optima to x-axis (faded)
+      Plot.ruleX([A.ell],    {y1: 0, y2: A.C,    stroke: "#BEE3F8", strokeDasharray: "2,2"}),
+      Plot.ruleX([C_pt.ell], {y1: 0, y2: C_pt.C, stroke: "#FED7D7", strokeDasharray: "2,2"}),
+
+      // Labels on the optima
+      Plot.text([{ell: A.ell, C: A.C, label: "A (bez poreza)"}],
+        {x: "ell", y: "C", text: "label", textAnchor: "start", dx: 8, dy: -10,
+         fontSize: 12, fill: "#1f77b4", fontWeight: 600}),
+      Plot.text([{ell: B.ell, C: B.C, label: "B (kompenzirani)"}],
+        {x: "ell", y: "C", text: "label", textAnchor: "start", dx: 8, dy: -10,
+         fontSize: 12, fill: "#805AD5", fontWeight: 600}),
+      Plot.text([{ell: C_pt.ell, C: C_pt.C, label: "C (s porezom)"}],
+        {x: "ell", y: "C", text: "label", textAnchor: "start", dx: 8, dy: 14,
+         fontSize: 12, fill: "#C53030", fontWeight: 600}),
+
+      // Effect labels next to the arrows
+      Plot.text([{x: (A.ell + B.ell) / 2, y: Cmax * 0.06,
+         label: `Supstitucijski (Δℓ = ${subEffect >= 0 ? "+" : ""}${subEffect.toFixed(2)})`}],
+        {x: "x", y: "y", text: "label", textAnchor: "middle", dy: -8,
+         fontSize: 11, fill: "#553C9A", fontWeight: 600}),
+      Plot.text([{x: (B.ell + C_pt.ell) / 2, y: Cmax * 0.02,
+         label: `Dohodovni (Δℓ = ${incEffect >= 0 ? "+" : ""}${incEffect.toFixed(2)})`}],
+        {x: "x", y: "y", text: "label", textAnchor: "middle", dy: 14,
+         fontSize: 11, fill: "#B7791F", fontWeight: 600}),
+
+      // Top readouts
+      Plot.text([{x: 0.5, y: Cmax * 0.97,
+         label: `Sati rada: ${hoursA.toFixed(1)} → ${hoursC.toFixed(1)}   (Δ = ${dHours >= 0 ? "+" : ""}${dHours.toFixed(2)})`}],
+        {x: "x", y: "y", text: "label", textAnchor: "start",
+         fontSize: 13, fill: "#2D3748", fontWeight: 700}),
+      Plot.text([{x: 0.5, y: Cmax * 0.91,
+         label: `σ = ${sigma.toFixed(1)}   |   neto nadnica: ${w0.toFixed(1)} → ${w1.toFixed(2)}`}],
+        {x: "x", y: "y", text: "label", textAnchor: "start",
+         fontSize: 12, fill: "#4A5568", fontWeight: 500})
+    ]
+  });
+}
+```
+
+**Kako čitati graf.** Vodoravna os je dokolica ℓ, okomita potrošnja C. Zelena puna linija je proračunsko ograničenje **bez poreza** (`C = w·(T − ℓ)`), zelena isprekidana **s porezom na rad** — porez smanjuje nagib jer svaki sat rada donosi manje neto potrošnje. Plava puna krivulja je krivulja indiferencije kroz početni optimum **A**, crvena isprekidana kroz konačni optimum **C**. Ljubičasta točka **B** je hipotetski „kompenzirani" optimum — ono što bi pojedinac izabrao pri novoj nadnici da je istovremeno dobio dohodovnu kompenzaciju koja ga vraća na izvornu razinu korisnosti.
+
+**Slutskyjeva dekompozicija.** Pomak A → B (ljubičasta strelica) izolira **supstitucijski učinak**: niža neto nadnica čini sat rada manje vrijednim, pa pojedinac zamjenjuje rad dokolicom (Δℓ raste). Pomak B → C (žuta strelica) je **dohodovni učinak**: porez osiromašuje pojedinca, a ako je dokolica „normalno dobro", siromašniji pojedinac troši **manje** dokolice — odnosno radi **više** kako bi nadoknadio izgubljeni dohodak. Smjer učinka poreza na zaposlenost ovisi o tome **koji od ova dva učinka prevladava**.
+
+**Što isprobati.** (1) Pri **σ = 1,0** (Cobb–Douglasova korisnost) supstitucijski i dohodovni učinak točno se poništavaju — broj sati rada **uopće se ne mijenja** s porezom (Δ = 0). To je referentni neutralni slučaj. (2) Povećajte **σ na ~1,8** (potrošnja i dokolica lako se zamjenjuju): supstitucijski učinak nadjačava, broj sati rada **opada** s porezom — standardni argument protiv visokih marginalnih stopa. (3) Smanjite **σ na ~0,3** (potrošač snažno preferira određeni omjer dokolice i potrošnje): dohodovni učinak nadjačava, broj sati rada zapravo **raste** — empirijska pojava poznata kao **unazad savijena krivulja ponude rada** koju spominje sljedeći odlomak. **Praktična poruka.** Kada Mirrleesov model kaže da „optimalna porezna stopa ovisi o ravnoteži supstitucijskog i dohodovnog učinka", on misli točno na ovu napetost. Smjer i veličina te ravnoteže empirijski je pitanje, što je razlog zašto i danas ne postoji konsenzus o optimalnoj progresivnosti poreza na rad.
 
 Zbog interakcije ova dva učinka, krivulja ponude rada može imati specifičan oblik — pri višim razinama nadnice može prevladati dohodovni učinak te pojedinci biraju više dokolice, što rezultira tzv. **unazad savijenom krivuljom ponude rada**. Jedan od važnih zaključaka Mirrleesove teorije jest da optimalni porezni sustav ne mora imati ekstremno visoke stope za najbogatije. Razlog je taj što visoke stope mogu značajno smanjiti ekonomske poticaje upravo kod onih koji generiraju najveći dio dohotka.
 
-::: {.callout-note}
-**Grafikon: Intertemporalni izbor** — u pripremi. Prikazuje kako oporezivanje kapitala ili kamate utječe na odluku raspodjele potrošnje između sadašnjosti i budućnosti.
-:::
+```{ojs}
+//| echo: false
+viewof inter_controls = Inputs.form({
+  r:     Inputs.range([0.01, 0.20], {value: 0.08, step: 0.01, label: "Kamatna stopa r:"}),
+  tau_k: Inputs.range([0, 60],      {value: 25,   step: 1,    label: "Porez na prinos τ (%):"}),
+  sigma: Inputs.range([0.2, 2.0],   {value: 1.0,  step: 0.1,  label: "Elastičnost supstitucije σ:"})
+})
+```
+
+```{ojs}
+//| echo: false
+r = inter_controls.r
+```
+
+```{ojs}
+//| echo: false
+tau_k = inter_controls.tau_k
+```
+
+```{ojs}
+//| echo: false
+sigma = inter_controls.sigma
+```
+
+```{ojs}
+//| echo: false
+{
+  // Two-period model. Endowment Y in period 1, no income in period 2.
+  // Without tax: C2 = (1+r)·(Y − C1).        Optimum chooses C1, C2 to maximise CRRA utility.
+  // With tax τ on the return: C2 = (1+r·(1−τ))·(Y − C1).
+  // CRRA utility: U = u(C1) + β·u(C2),  with β = 1/(1+ρ),  ρ = 0.04 (subjective discount).
+  // Closed-form for CRRA: C2/C1 = [β·(1+r_net)]^σ.
+  const Y = 100;
+  const Cmax = 130;
+  const beta = 1 / 1.04;
+
+  const tauFrac = tau_k / 100;
+  const r0 = r;
+  const r1 = r * (1 - tauFrac);
+
+  // Optimum given net return r_net and elasticity σ:
+  // C2 / C1 = [β·(1 + r_net)]^σ.   Budget: C2 = (1 + r_net)·(Y − C1).
+  // ⇒ C1 = Y / (1 + (1 + r_net) / k),  where k = [β·(1 + r_net)]^σ.
+  function optimum(r_net) {
+    const k = Math.pow(beta * (1 + r_net), sigma);
+    const C1 = Y / (1 + (1 + r_net) / k);
+    const C2 = (1 + r_net) * (Y - C1);
+    return {C1, C2, k};
+  }
+
+  const before = optimum(r0);
+  const after  = optimum(r1);
+
+  // Budget lines as two-point segments
+  const budgetNoTax = [
+    {C1: 0, C2: (1 + r0) * Y},
+    {C1: Y, C2: 0}
+  ];
+  const budgetTax = [
+    {C1: 0, C2: (1 + r1) * Y},
+    {C1: Y, C2: 0}
+  ];
+
+  // Indifference curves through the two optima.
+  // For CRRA: u(C) = C^(1-1/σ)/(1-1/σ)  (or ln(C) if σ=1).
+  // The indifference curve through (C1*, C2*) is the locus where u(C1)+β·u(C2) = constant.
+  function indiff(C1opt, C2opt) {
+    const eps = 1e-9;
+    const uOf = c => {
+      if (Math.abs(sigma - 1) < 1e-6) return Math.log(Math.max(c, eps));
+      const e = 1 - 1 / sigma;
+      return Math.pow(Math.max(c, eps), e) / e;
+    };
+    const Ubar = uOf(C1opt) + beta * uOf(C2opt);
+    const pts = [];
+    const C1grid = d3.range(2, Cmax + 1, 1);
+    for (const C1 of C1grid) {
+      // Solve uOf(C1) + β·uOf(C2) = Ubar  →  uOf(C2) = (Ubar - uOf(C1))/β
+      const target = (Ubar - uOf(C1)) / beta;
+      let C2;
+      if (Math.abs(sigma - 1) < 1e-6) {
+        C2 = Math.exp(target);
+      } else {
+        const e = 1 - 1 / sigma;
+        const arg = target * e;
+        if (arg <= 0) continue;
+        C2 = Math.pow(arg, 1 / e);
+      }
+      if (isFinite(C2) && C2 > 0 && C2 < Cmax * 1.5) pts.push({C1, C2});
+    }
+    return pts;
+  }
+
+  const indiffBefore = indiff(before.C1, before.C2);
+  const indiffAfter  = indiff(after.C1,  after.C2);
+
+  // Welfare change as a percentage of "before" utility (qualitative readout)
+  const dC1 = after.C1 - before.C1;
+  const dC2 = after.C2 - before.C2;
+
+  return Plot.plot({
+    width: 760,
+    height: 520,
+    marginLeft: 65,
+    marginBottom: 55,
+    style: {fontSize: "12px", fontFamily: "Roboto, system-ui, sans-serif", color: "#4A5568"},
+    x: {label: "Sadašnja potrošnja C₁ →", domain: [0, Cmax], grid: false},
+    y: {label: "↑ Buduća potrošnja C₂",   domain: [0, Cmax], grid: true},
+    marks: [
+      Plot.ruleY([0], {stroke: "#CBD5E0"}),
+
+      // Budget line — no tax
+      Plot.line(budgetNoTax, {x: "C1", y: "C2", stroke: "#2ca02c", strokeWidth: 2.5}),
+      // Budget line — with tax
+      Plot.line(budgetTax,   {x: "C1", y: "C2", stroke: "#2ca02c", strokeWidth: 2, strokeDasharray: "6,4"}),
+
+      // Indifference curves
+      Plot.line(indiffBefore, {x: "C1", y: "C2", stroke: "#1f77b4", strokeWidth: 2}),
+      Plot.line(indiffAfter,  {x: "C1", y: "C2", stroke: "#C53030", strokeWidth: 2, strokeDasharray: "4,3"}),
+
+      // Endowment point
+      Plot.dot([{C1: Y, C2: 0}], {x: "C1", y: "C2", r: 4, fill: "#4A5568", stroke: "white", strokeWidth: 1.5}),
+
+      // Optima
+      Plot.dot([before], {x: "C1", y: "C2", r: 6, fill: "#1f77b4", stroke: "white", strokeWidth: 2}),
+      Plot.dot([after],  {x: "C1", y: "C2", r: 6, fill: "#C53030", stroke: "white", strokeWidth: 2}),
+
+      // Drop-lines for both optima
+      Plot.ruleX([before.C1], {y1: 0, y2: before.C2, stroke: "#BEE3F8", strokeDasharray: "2,2"}),
+      Plot.ruleY([before.C2], {x1: 0, x2: before.C1, stroke: "#BEE3F8", strokeDasharray: "2,2"}),
+      Plot.ruleX([after.C1],  {y1: 0, y2: after.C2,  stroke: "#FED7D7", strokeDasharray: "2,2"}),
+      Plot.ruleY([after.C2],  {x1: 0, x2: after.C1,  stroke: "#FED7D7", strokeDasharray: "2,2"}),
+
+      // Labels on optima
+      Plot.text([{C1: before.C1, C2: before.C2, label: "Bez poreza"}],
+        {x: "C1", y: "C2", text: "label", textAnchor: "start", dx: 8, dy: -10,
+         fontSize: 12, fill: "#1f77b4", fontWeight: 600}),
+      Plot.text([{C1: after.C1, C2: after.C2, label: "S porezom"}],
+        {x: "C1", y: "C2", text: "label", textAnchor: "start", dx: 8, dy: 14,
+         fontSize: 12, fill: "#C53030", fontWeight: 600}),
+
+      // Endowment label
+      Plot.text([{C1: Y, C2: 0, label: `Y = ${Y}`}],
+        {x: "C1", y: "C2", text: "label", textAnchor: "start", dx: 6, dy: -8,
+         fontSize: 11, fill: "#4A5568"}),
+
+      // Top readouts
+      Plot.text([{x: 2, y: Cmax * 0.97,
+         label: `Štednja s = Y − C₁:  ${(Y - before.C1).toFixed(1)}  →  ${(Y - after.C1).toFixed(1)}  (Δ = ${(dC1 < 0 ? "+" : "−")}${Math.abs(dC1).toFixed(1)})`}],
+        {x: "x", y: "y", text: "label", textAnchor: "start",
+         fontSize: 13, fill: "#553C9A", fontWeight: 700}),
+      Plot.text([{x: 2, y: Cmax * 0.91,
+         label: `Neto prinos: ${(r0 * 100).toFixed(1)} %  →  ${(r1 * 100).toFixed(2)} %    |    σ = ${sigma.toFixed(1)}`}],
+        {x: "x", y: "y", text: "label", textAnchor: "start",
+         fontSize: 12, fill: "#4A5568", fontWeight: 500})
+    ]
+  });
+}
+```
+
+**Kako čitati graf.** Vodoravna os je sadašnja potrošnja C₁, okomita buduća potrošnja C₂. Zelena puna linija je proračunska linija **bez poreza**, zelena isprekidana **s porezom na prinos** — ona se zakreće oko točke darivanja Y jer porez smanjuje neto kamatnu stopu. Plava puna krivulja je krivulja indiferencije kroz početni optimum, crvena isprekidana kroz novi optimum. Plava točka je optimum bez poreza, crvena s porezom. U vrhu se ispisuje **promjena štednje** (s = Y − C₁).
+
+**Što isprobati.** (1) Pri **σ = 1,0** (logaritamska korisnost — supstitucijski i dohodovni učinak približno se poništavaju) i poreznoj stopi od 25 %: optimum se neznatno mijenja, odnosno štednja ostaje gotovo ista. (2) Povećajte **σ na ~1,8** (potrošač spreman lako supstituirati potrošnju kroz vrijeme): povećanje poreza značajno smanjuje štednju — supstitucijski učinak nadjačava dohodovni. Ovo je teorijski temelj argumenata Atkinsona i Stiglitza protiv visokih poreza na kapital u sustavima s razvijenim porezom na dohodak. (3) Smanjite σ na ~0,3 (potrošač snažno preferira ravnomjernu potrošnju): porez smanjuje neto prinos, ali pojedinac pojačava štednju kako bi održao buduću razinu potrošnje — dohodovni učinak nadjačava. **Praktična poruka.** Smjer učinka oporezivanja kapitala na štednju nije jednoznačan; ovisi o **elastičnosti intertemporalne supstitucije** σ — empirijskom parametru koji teorija optimalnog oporezivanja [@atkinson1980] pokušava izmjeriti, ali oko čije vrijednosti i danas ne postoji znanstveni konsenzus.
 
 **Atkinson–Stiglitz teorem** [@atkinson1980] — Atkinson i Stiglitz analizirali su pitanje treba li različite vrste potrošnje oporezivati različitim stopama. Njihov ključni rezultat glasi: ako je porez na dohodak optimalno dizajniran, tada diferencirano oporezivanje potrošnje nije potrebno. Drugim riječima, nema potrebe dodatno oporezivati određene proizvode višim ili nižim stopama ako se redistribucija već učinkovito provodi kroz porez na dohodak. Ovaj rezultat ima važne implikacije za dizajn sustava PDV-a. Teorijski, optimalan sustav bi imao jedinstvenu stopu PDV-a, bez izuzetaka. Međutim, u praksi gotovo sve zemlje koriste snižene stope za osnovna dobra, što pokazuje da politički i socijalni ciljevi često nadjačavaju teorijsku optimalnost.
 
@@ -180,9 +1168,110 @@ Zbog interakcije ova dva učinka, krivulja ponude rada može imati specifičan o
 
 **Lafferova krivulja** — iako nije dio formalne teorije optimalnog oporezivanja u užem smislu, Lafferova krivulja često se koristi kao intuitivni alat za razumijevanje odnosa između poreznih stopa i poreznih prihoda.
 
-::: {.callout-note}
-**Graf: Lafferova krivulja** — u pripremi.
-:::
+```{ojs}
+//| echo: false
+viewof laffer_controls = Inputs.form({
+  eps_T: Inputs.range([0.1, 2.5], {value: 0.5, step: 0.05, label: "Elastičnost porezne osnovice ε:"}),
+  t_now: Inputs.range([0, 95],    {value: 35,  step: 1,    label: "Trenutna porezna stopa t (%):"})
+})
+```
+
+```{ojs}
+//| echo: false
+eps_T = laffer_controls.eps_T
+```
+
+```{ojs}
+//| echo: false
+t_now = laffer_controls.t_now
+```
+
+```{ojs}
+//| echo: false
+{
+  // Simple Laffer model:
+  // Tax base shrinks with the rate via a constant-elasticity response:
+  // B(t) = B0 · (1 − t)^ε    (where ε is the elasticity of the tax base w.r.t. the net-of-tax rate).
+  // Revenue:   R(t) = t · B(t) = t · B0 · (1 − t)^ε.
+  // Revenue-maximising rate: dR/dt = 0  ⇒  t* = 1 / (1 + ε).
+  const B0 = 100;
+  const eps = eps_T;
+
+  const tStar = 1 / (1 + eps);                         // revenue-maximising rate
+  const Rmax  = tStar * B0 * Math.pow(1 - tStar, eps); // peak revenue
+
+  const ts = d3.range(0, 0.99, 0.005);
+  const curve = ts.map(t => ({t: t * 100, R: t * B0 * Math.pow(1 - t, eps)}));
+
+  // Reader's current point
+  const tCur = t_now / 100;
+  const Rcur = tCur * B0 * Math.pow(Math.max(0, 1 - tCur), eps);
+  const onRising = tCur < tStar;
+
+  const Rceil = Math.max(Rmax * 1.10, 25);
+
+  return Plot.plot({
+    width: 760,
+    height: 500,
+    marginLeft: 65,
+    marginBottom: 55,
+    style: {fontSize: "12px", fontFamily: "Roboto, system-ui, sans-serif", color: "#4A5568"},
+    x: {label: "Porezna stopa t (%) →", domain: [0, 100], grid: false},
+    y: {label: "↑ Porezni prihodi R",   domain: [0, Rceil], grid: true},
+    marks: [
+      Plot.ruleY([0], {stroke: "#CBD5E0"}),
+
+      // Laffer curve
+      Plot.line(curve, {x: "t", y: "R", stroke: "#1f77b4", strokeWidth: 2.5}),
+
+      // Area under curve, faded
+      Plot.areaY(curve, {x: "t", y: "R", fill: "#BEE3F8", fillOpacity: 0.25}),
+
+      // Revenue-maximising rate: vertical dashed line + dot
+      Plot.ruleX([tStar * 100], {y1: 0, y2: Rmax, stroke: "#4A5568", strokeDasharray: "4,3"}),
+      Plot.dot([{t: tStar * 100, R: Rmax}],
+        {x: "t", y: "R", r: 6, fill: "#2D3748", stroke: "white", strokeWidth: 2}),
+
+      // Reader's current point
+      Plot.ruleX([tCur * 100], {y1: 0, y2: Rcur,
+        stroke: onRising ? "#2ca02c" : "#C53030", strokeDasharray: "2,2"}),
+      Plot.ruleY([Rcur], {x1: 0, x2: tCur * 100,
+        stroke: onRising ? "#2ca02c" : "#C53030", strokeDasharray: "2,2"}),
+      Plot.dot([{t: tCur * 100, R: Rcur}],
+        {x: "t", y: "R", r: 7,
+         fill: onRising ? "#2ca02c" : "#C53030", stroke: "white", strokeWidth: 2}),
+
+      // Labels
+      Plot.text([{t: tStar * 100, R: Rmax, label: `Vrh prihoda  t* = ${(tStar * 100).toFixed(0)} %`}],
+        {x: "t", y: "R", text: "label", textAnchor: "middle", dy: -14,
+         fontSize: 13, fill: "#2D3748", fontWeight: 700}),
+
+      Plot.text([{t: tCur * 100, R: Rcur,
+         label: onRising ? "Rastući dio" : "Padajući dio (previsoka stopa)"}],
+        {x: "t", y: "R", text: "label",
+         textAnchor: tCur * 100 > 60 ? "end" : "start",
+         dx: tCur * 100 > 60 ? -10 : 10, dy: 16,
+         fontSize: 12, fill: onRising ? "#2ca02c" : "#C53030", fontWeight: 700}),
+
+      // Top readouts
+      Plot.text([{x: 2, y: Rceil * 0.97,
+         label: `Trenutna stopa: ${t_now} %   |   Prihod: ${Rcur.toFixed(1)}   |   Vrh: ${Rmax.toFixed(1)} pri ${(tStar * 100).toFixed(0)} %`}],
+        {x: "x", y: "y", text: "label", textAnchor: "start",
+         fontSize: 13, fill: "#2D3748", fontWeight: 700}),
+      Plot.text([{x: 2, y: Rceil * 0.91,
+         label: `Iskorištenost: ${(Rcur / Rmax * 100).toFixed(0)} % od maksimalnog prihoda`}],
+        {x: "x", y: "y", text: "label", textAnchor: "start",
+         fontSize: 12, fill: "#4A5568", fontWeight: 500})
+    ]
+  });
+}
+```
+
+**Kako čitati graf.** Plava krivulja je Lafferova krivulja: porezni prihod kao funkcija stope. Crna točka označava **vrh prihoda** (t\*) — stopu pri kojoj država ostvaruje najveći mogući prihod. Točka koja se kreće s vašim klizačem zelena je ako se nalazite na **rastućem** dijelu krivulje (dizanje stope povećava prihod) ili crvena ako ste na **padajućem** dijelu (dizanje stope smanjuje prihod jer porezna osnovica reagira jače nego što stopa raste).
+
+**Ključni rezultat.** Pri konstantnoj elastičnosti porezne osnovice ε, vrh se nalazi pri **t\* = 1 / (1 + ε)**. Ova jednostavna formula objašnjava cijelu raspravu o Lafferovoj krivulji: ne postoji „univerzalni" Lafferov vrh — njegova lokacija ovisi isključivo o tome koliko porezna osnovica reagira na promjene stope.
+
+**Što isprobati.** (1) Pri **ε = 0,2** (neelastična osnovica, npr. radnici s ograničenim alternativama, tržišta s malo evazije): vrh je na t\* ≈ **83 %**. Sve realistične stope nalaze se na rastućem dijelu. (2) Pri **ε = 0,5** (umjerena reakcija — empirijski najčešća procjena za rad u razvijenim zemljama): vrh je na t\* ≈ **67 %**. Stope iznad 65–70 % postaju kontraproduktivne. (3) Pri **ε = 1,5** (visoka elastičnost — npr. dohodak najbogatijih, internacionalno mobilan kapital, tržišta s razvijenom evazijom): vrh pada na t\* ≈ **40 %**. Visoke marginalne stope na takve osnovice mogu zapravo smanjiti prihode. **Praktična poruka.** Politička debata o tome je li određena zemlja „prešla Lafferov vrh" jest, na kraju krajeva, debata o **empirijskoj veličini ε** — koja se razlikuje među zemljama, među vrstama poreza, pa čak i među dohodovnim skupinama. Lafferova krivulja nije politički argument, nego okvir za tu debatu.
 
 Ovaj koncept pokazuje da porezni prihodi ne rastu linearno s poreznom stopom. Pri vrlo visokim stopama dolazi do smanjenja ekonomske aktivnosti i porezne osnovice, što može smanjiti ukupne prihode. Njegova ključna poruka uklapa se u teoriju optimalnog oporezivanja: ponašanje poreznih obveznika ključno je za dizajn porezne politike.
 
