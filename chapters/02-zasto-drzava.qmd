@@ -1,6 +1,5 @@
 ---
 title: "2. Zašto država postoji? Tržišni neuspjesi i funkcije države"
-draft: true
 ---
 
 ## Tržišni neuspjesi kao temeljno opravdanje državne intervencije

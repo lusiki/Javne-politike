@@ -1,6 +1,5 @@
 ---
 title: "8. Glasovanje bez garancije – ima li smisla?"
-draft: true
 ---
 
 ## Zašto uopće glasujemo ako znamo da nećemo odlučiti?

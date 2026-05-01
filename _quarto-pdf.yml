@@ -12,10 +12,6 @@ book:
   title: "Sve što želite znati o državi i javnim politikama u Hrvatskoj"
   subtitle: "Praktični udžbenik · Radna verzija — svibanj 2026"
   output-file: "Javne-politike"
-  # Stub chapters (02, 03, 07-11, 16) carry `draft: true` in their YAML
-  # frontmatter. We override the base config's `draft-mode: visible` with
-  # `gone` to exclude them from the PDF.
-  draft-mode: gone
 
 format:
   pdf:

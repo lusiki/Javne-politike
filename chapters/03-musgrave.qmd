@@ -1,6 +1,5 @@
 ---
 title: "3. Uloga države prema Musgraveu"
-draft: true
 ---
 
 ## Alokacijska funkcija
