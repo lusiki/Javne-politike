@@ -4,37 +4,39 @@ meta:
 
 color:
   palette:
-    navy: "#1B2A4A"
-    slate: "#4A5568"
-    gold: "#C8942D"
-    light-gold: "#F5ECD7"
-    cream: "#FAFAF5"
-    charcoal: "#2D3748"
-  foreground: charcoal
+    near-black: "#171411"
+    slate: "#5A4F3F"
+    brick: "#9C302B"
+    navy: "#2D5A8E"
+    warm-grey: "#9F907B"
+    light-warm: "#EFE5D5"
+    cream: "#F6F1E8"
+    paper: "#EFE7D5"
+  foreground: near-black
   background: cream
-  primary: navy
+  primary: near-black
   secondary: slate
-  success: "#2F855A"
-  info: gold
-  warning: "#DD6B20"
-  danger: "#C53030"
+  success: "#2F7A5C"
+  info: navy
+  warning: "#C57832"
+  danger: brick
 
 typography:
   fonts:
-    - family: "Roboto Slab"
+    - family: "Source Serif 4"
       source: google
-    - family: "Roboto"
+    - family: "Inter"
       source: google
-    - family: "Roboto Mono"
+    - family: "JetBrains Mono"
       source: google
   base:
-    family: "Roboto Slab"
-    size: 1rem
-    line-height: 1.7
+    family: "Source Serif 4"
+    size: 1.02rem
+    line-height: 1.6
   headings:
-    family: "Roboto"
+    family: "Inter"
     weight: 600
-    color: navy
+    color: near-black
   monospace:
-    family: "Roboto Mono"
+    family: "JetBrains Mono"
     size: 0.85em

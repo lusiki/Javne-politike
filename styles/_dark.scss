@@ -1,0 +1,353 @@
+/*-- scss:defaults --*/
+
+// Topla tamna paleta — inverzna verzija light moda (NE crna)
+// Sve ostalo nasljeđuje iz custom.scss; ovdje samo invertiramo bg/text.
+
+$body-bg:    #1F1A14 !default;   // duboka warm sepia (ne crna)
+$body-color: #E8DFD0 !default;   // warm cream tekst
+
+/*-- scss:rules --*/
+
+body {
+  background-color: #1F1A14 !important;
+  color: #E8DFD0 !important;
+}
+
+// Naslovi — topla cream
+h1, h2, h3, h4, h5, h6,
+.title, .chapter-title,
+h1.book-hero-title,
+.book-hero h1 {
+  color: #F0E8D8 !important;
+}
+
+h2 {
+  border-top-color: rgba(159, 144, 123, 0.20) !important;  // warm-grey suptilna linija
+}
+
+// Sidebar / nav
+.sidebar,
+#quarto-sidebar,
+.quarto-sidebar {
+  background: #2A241D !important;
+  border-right: 1px solid rgba(159, 144, 123, 0.18) !important;
+}
+
+.sidebar a,
+.navbar a,
+.toc a,
+nav a,
+.quarto-secondary-nav a {
+  color: #C7BEAF !important;
+
+  &:hover, &.active {
+    color: #C8615A !important;
+  }
+}
+
+// Linkovi — svjetlija brick za kontrast na tamnoj pozadini
+a {
+  color: #C8615A !important;
+  border-bottom-color: rgba(159, 144, 123, 0.45) !important;
+
+  &:hover {
+    color: #DD8580 !important;
+    border-bottom-color: #C8615A !important;
+    background: rgba(200, 97, 90, 0.08) !important;
+  }
+}
+
+// Sidebar/nav linkovi bez underline
+.sidebar a, .navbar a, .toc a, nav a, .quarto-secondary-nav a {
+  border-bottom: none !important;
+}
+
+// Tablice
+table {
+  background: #2A241D !important;
+  color: #E8DFD0 !important;
+}
+
+table thead th {
+  color: #F0E8D8 !important;
+  border-bottom-color: #C8615A !important;
+  background: #2A241D !important;
+}
+
+table tbody tr:nth-child(even) {
+  background: rgba(159, 144, 123, 0.08) !important;
+}
+
+table tbody tr:hover {
+  background: rgba(200, 97, 90, 0.10) !important;
+}
+
+table tbody td {
+  border-bottom-color: rgba(159, 144, 123, 0.15) !important;
+}
+
+// Code
+pre, .sourceCode, pre.sourceCode {
+  background: #2A241D !important;
+  border: 1px solid rgba(159, 144, 123, 0.20) !important;
+  color: #E8DFD0 !important;
+}
+
+code:not(pre code) {
+  background: rgba(200, 97, 90, 0.12) !important;
+  color: #DD8580 !important;
+}
+
+// Blockquote
+blockquote {
+  border-left-color: #C8615A !important;
+  color: #E8DFD0 !important;
+
+  cite, footer, .blockquote-footer {
+    color: #C7BEAF !important;
+  }
+}
+
+// Callouti
+div.callout {
+  background: #2A241D !important;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.35) !important;
+}
+
+div.callout .callout-header {
+  background: rgba(159, 144, 123, 0.10) !important;
+  color: #F0E8D8 !important;
+}
+
+div.callout .callout-body {
+  color: #E8DFD0 !important;
+}
+
+div.callout-note     { border-left-color: #B0A998 !important; }
+div.callout-tip      { border-left-color: #6BCF87 !important; }
+div.callout-important{ border-left-color: #C57832 !important; }
+div.callout-warning  { border-left-color: #DD9858 !important; }
+div.callout-caution  { border-left-color: #C8615A !important; }
+
+// Custom blokovi
+.pullquote, div.pullquote {
+  color: #F0E8D8 !important;
+  border-left-color: #C8615A !important;
+
+  &::before { color: rgba(200, 97, 90, 0.20) !important; }
+  cite, .cite { color: #C7BEAF !important; }
+}
+
+.takeaway, div.takeaway {
+  background: rgba(159, 144, 123, 0.10) !important;
+  border-left-color: #DDB05E !important;
+
+  &::before { color: #DDB05E !important; }
+  p { color: #E8DFD0 !important; }
+}
+
+.definition, div.definition,
+.pojam, div.pojam {
+  background: #2A241D !important;
+  border-color: rgba(159, 144, 123, 0.25) !important;
+  border-left-color: #DDB05E !important;
+
+  &::before { color: #DDB05E !important; }
+  > p:first-of-type strong:first-child,
+  > .term, > dt {
+    color: #F0E8D8 !important;
+  }
+}
+
+// Citation / footnote
+.citation, a.citation {
+  color: #C8615A !important;
+
+  &:hover {
+    color: #DD8580 !important;
+    background: rgba(159, 144, 123, 0.10) !important;
+  }
+}
+
+a.footnote-ref,
+a[role="doc-noteref"] {
+  color: #DDB05E !important;
+
+  &:hover {
+    background: #DDB05E !important;
+    color: #1F1A14 !important;
+  }
+}
+
+// Anchor
+a.anchorjs-link {
+  color: #C8615A !important;
+
+  &:hover { color: #DD8580 !important; }
+}
+
+// Watermark broj poglavlja
+header#title-block-header[data-chapter-num]::before {
+  color: #C8615A !important;
+  opacity: 0.14 !important;
+}
+
+header#title-block-header h1.title::after {
+  background: #C8615A !important;
+}
+
+// Drop cap u dark
+.has-dropcap::first-letter {
+  color: #DD8580 !important;
+}
+
+.has-dropcap::first-line {
+  color: #F0E8D8 !important;
+}
+
+// Reading time chip
+.reading-time {
+  background: rgba(159, 144, 123, 0.12) !important;
+  color: #C7BEAF !important;
+
+  &::before { color: #C8615A !important; }
+}
+
+.chapter-kicker, .book-hero-kicker {
+  color: #C8615A !important;
+}
+
+// Hero / landing
+.book-hero::after { background: #C8615A !important; }
+
+.book-hero-image img {
+  box-shadow:
+    0 1px 0 rgba(0, 0, 0, 0.30),
+    0 6px 20px rgba(0, 0, 0, 0.45),
+    0 14px 40px rgba(0, 0, 0, 0.30) !important;
+}
+
+.book-hero-subtitle { color: #C7BEAF !important; }
+
+.book-hero-authors {
+  color: #E8DFD0 !important;
+  a { color: #C8615A !important; }
+}
+
+.cta-button {
+  background: #C8615A !important;
+  color: #1F1A14 !important;
+
+  &:hover {
+    background: #DD8580 !important;
+    color: #1F1A14 !important;
+  }
+}
+
+.cta-button-secondary {
+  color: #F0E8D8 !important;
+  border-color: rgba(159, 144, 123, 0.30) !important;
+
+  &:hover {
+    background: rgba(200, 97, 90, 0.10) !important;
+    border-color: #C8615A !important;
+  }
+}
+
+.feature-grid .feature-card {
+  background: #2A241D !important;
+  border-color: rgba(159, 144, 123, 0.20) !important;
+  border-top-color: #C8615A !important;
+
+  &:hover {
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.40) !important;
+    border-top-color: #DD8580 !important;
+  }
+
+  h3 { color: #F0E8D8 !important; }
+  p { color: #E8DFD0 !important; }
+}
+
+.book-meta-footer {
+  border-top-color: rgba(159, 144, 123, 0.20) !important;
+  color: #C7BEAF !important;
+
+  strong { color: #F0E8D8 !important; }
+  .book-date { color: #C8615A !important; }
+}
+
+// Reading progress
+#reading-progress {
+  background: linear-gradient(90deg, #C8615A 0%, #DDB05E 100%) !important;
+  box-shadow: 0 0 8px rgba(200, 97, 90, 0.45) !important;
+}
+
+// Hover preview tooltip
+.internal-hover-preview {
+  background: #2A241D !important;
+  color: #E8DFD0 !important;
+  border: 1px solid rgba(159, 144, 123, 0.25) !important;
+
+  .ihp-title { color: #C8615A !important; }
+}
+
+// Selection
+::selection {
+  background: rgba(200, 97, 90, 0.40) !important;
+  color: #F0E8D8 !important;
+}
+
+// End mark / dinkus
+.dinkus::before { color: #C8615A !important; }
+.chapter-end-mark { color: #C8615A !important; }
+
+// Definitions / dotted
+dfn, .term, abbr[title] {
+  border-bottom-color: rgba(200, 97, 90, 0.55) !important;
+
+  &:hover {
+    color: #DD8580 !important;
+    border-bottom-color: #DD8580 !important;
+  }
+}
+
+// Focus rings
+*:focus-visible {
+  outline-color: #C8615A !important;
+}
+
+// Search overlay
+.aa-Panel {
+  background: #2A241D !important;
+  border-color: rgba(159, 144, 123, 0.25) !important;
+
+  .aa-Item {
+    color: #E8DFD0 !important;
+
+    &[aria-selected="true"], &:hover {
+      background: rgba(200, 97, 90, 0.12) !important;
+    }
+  }
+}
+
+// Figure okvir
+.quarto-figure img,
+figure img,
+figure.figure img {
+  background: #2A241D !important;
+  border-color: rgba(159, 144, 123, 0.20) !important;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.40) !important;
+}
+
+figure > figcaption,
+figure.figure figcaption {
+  color: #C7BEAF !important;
+
+  &::before { background: #C8615A !important; }
+}
+
+.figure-caption strong:first-child,
+figcaption strong:first-child,
+caption strong:first-child {
+  color: #C8615A !important;
+}

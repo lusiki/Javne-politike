@@ -1,140 +1,1274 @@
 /*-- scss:defaults --*/
 
-// Color palette
-$brand-navy: #1B2A4A;
-$brand-slate: #4A5568;
-$brand-gold: #C8942D;
-$brand-light-gold: #F5ECD7;
-$brand-cream: #FAFAF5;
-$brand-charcoal: #2D3748;
+// =============================================================
+// Paleta — modern academic-minimalist (a la fatih.ai/airesearch)
+// =============================================================
+// Stara imena varijabli su zadržana radi kompatibilnosti s ostatkom
+// SCSS-a, ali su semantički preusmjerena:
+//   $brand-navy   → near-black (boja teksta i naslova)
+//   $brand-gold   → brick red  (PRIMARNI topli akcent)
+//   $brand-burgundy → brick red (isti akcent — unifikacija)
+//   $brand-charcoal → warm near-black
+//   $brand-slate    → warm slate (toplija sekundarna sivkasto-smeđa)
+//   $brand-light-gold → warm light tint (svijetla cream varijanta)
+//   $brand-navy-soft → soft modern blue (suptilan, koristi se rijetko)
+$brand-navy:        #171411;   // body & headings — warm near-black
+$brand-navy-soft:   #2D5A8E;   // soft modern navy — sekundarni accent
+$brand-slate:       #5A4F3F;   // toplija slate
+$brand-gold:        #9C302B;   // PRIMARY accent — brick red
+$brand-light-gold:  #EFE5D5;   // svijetli warm tint za pozadine
+$brand-burgundy:    #9C302B;   // unify s brick — isti primarni accent
+$brand-cream:       #F6F1E8;   // warm off-white pozadina
+$brand-paper:       #EFE7D5;   // malo tamnija cream za elevirane površine
+$brand-charcoal:    #171411;   // body text — warm near-black
+$brand-warm-grey:   #9F907B;   // muted warm grey — borders, captions, separators
 
-// Font families
-$brand-font-serif: "Roboto Slab", Georgia, serif;
-$brand-font-sans: "Roboto", "Segoe UI", sans-serif;
-$brand-font-mono: "Roboto Mono", "Consolas", monospace;
+// =============================================================
+// Tipografija
+// =============================================================
+$brand-font-serif: "Source Serif 4", "Source Serif Pro", Georgia, serif;
+$brand-font-sans:  "Inter", "Segoe UI", system-ui, sans-serif;
+$brand-font-mono:  "JetBrains Mono", "Consolas", "Roboto Mono", monospace;
 
-// Minimal callout styling
-$callout-border-width: 2px;
-$callout-border-radius: 2px;
+// Bootstrap font prema Source Serifu (za body)
+$font-family-base:   $brand-font-serif;
+$font-family-serif:  $brand-font-serif;
+$font-family-sans-serif: $brand-font-sans;
+$font-family-monospace: $brand-font-mono;
+
+$body-color: $brand-charcoal;
+$body-bg:    $brand-cream;
+
+// Callouti
+$callout-border-width: 3px;
+$callout-border-radius: 3px;
 
 /*-- scss:rules --*/
 
-// Clean heading hierarchy
-h1, .chapter-title {
+// =============================================================
+// Tijelo: optimalna širina i ritam za dugo čitanje
+// =============================================================
+body {
+  font-family: $brand-font-serif;
+  font-feature-settings: "kern" 1, "liga" 1, "calt" 1, "onum" 1;
+  font-variant-numeric: oldstyle-nums proportional-nums;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+// Glavni tekst stupca — udobnih ~70 znakova po retku
+main.content,
+#quarto-document-content,
+.page-columns > main {
+  // Ostavljamo Quarto layout-u kontrolu, samo ograničavamo unutarnji "prose"
+}
+
+// Sami pasusi: taman ton, mirno ravnanje
+.quarto-title-block + *,
+main p,
+main li,
+main dd {
+  hyphens: auto;
+  -webkit-hyphens: auto;
+  text-align: left; // ne justify — bolje za dijakritiku i kratke retke
+}
+
+main p {
+  margin: 0 0 1.1rem 0;
+}
+
+// =============================================================
+// Naslovi
+// =============================================================
+h1, .chapter-title, .title {
   font-family: $brand-font-sans;
-  font-weight: 600;
+  font-weight: 700;
   color: $brand-navy;
-  letter-spacing: -0.01em;
+  letter-spacing: -0.022em;
+  line-height: 1.15;
 }
 
 h2 {
   font-family: $brand-font-sans;
-  font-weight: 500;
+  font-weight: 600;
   color: $brand-navy;
-  margin-top: 2.5rem;
+  letter-spacing: -0.015em;
+  margin-top: 3rem;
   padding-top: 1rem;
+  border-top: 1px solid rgba($brand-navy, 0.08);
+  line-height: 1.25;
 }
 
 h3 {
   font-family: $brand-font-sans;
+  font-weight: 600;
+  color: $brand-navy-soft;
+  letter-spacing: -0.01em;
+  margin-top: 2rem;
+}
+
+h4, h5, h6 {
+  font-family: $brand-font-sans;
+  font-weight: 600;
+  color: $brand-charcoal;
+  letter-spacing: -0.005em;
+}
+
+// =============================================================
+// Chapter opener — veliki broj poglavlja, naslov, epigraph
+// =============================================================
+// Quarto generira <header id="title-block-header"> sa <h1 class="title">.
+// Iz title se ekstrahira broj kroz JS u book-include.html i stavi u
+// data-chapter-num attribut na header.
+header#title-block-header {
+  position: relative;
+  padding: 2.5rem 0 1.75rem 0;
+  margin-bottom: 2rem;
+  border-bottom: 1px solid rgba($brand-navy, 0.10);
+
+  .quarto-title-meta,
+  .date {
+    font-family: $brand-font-sans;
+    font-size: 0.82rem;
+    color: $brand-slate;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+  }
+
+  h1.title {
+    font-size: 2.4rem;
+    font-weight: 700;
+    line-height: 1.12;
+    margin: 0;
+    color: $brand-navy;
+  }
+
+  // Veliki broj poglavlja — vodeni žig (umjereniji, fatih-style restraint)
+  &[data-chapter-num]::before {
+    content: attr(data-chapter-num);
+    position: absolute;
+    top: -0.2rem;
+    right: 0;
+    font-family: $brand-font-serif;
+    font-weight: 300;
+    font-size: 5.5rem;
+    line-height: 1;
+    color: $brand-gold;
+    opacity: 0.18;
+    letter-spacing: -0.04em;
+    pointer-events: none;
+    user-select: none;
+    z-index: 0;
+    font-variant-numeric: lining-nums;
+  }
+
+  > * {
+    position: relative;
+    z-index: 1;
+  }
+}
+
+// Mali "kicker" iznad naslova — ako JS ubaci .chapter-kicker
+.chapter-kicker {
+  font-family: $brand-font-sans;
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: $brand-gold;
+  margin-bottom: 0.6rem;
+}
+
+// Reading time chip
+.reading-time {
+  display: inline-block;
+  margin-top: 1rem;
+  font-family: $brand-font-sans;
+  font-size: 0.82rem;
+  color: $brand-slate;
+  background: rgba($brand-navy, 0.04);
+  padding: 0.25rem 0.7rem;
+  border-radius: 999px;
+  letter-spacing: 0.01em;
+
+  &::before {
+    content: "≈ ";
+    color: $brand-gold;
+    font-weight: 600;
+  }
+}
+
+// =============================================================
+// Drop cap — prvi pasus poglavlja
+// =============================================================
+// Marker klasa .has-dropcap se dodaje JS-om na prvi <p> nakon naslova.
+.has-dropcap::first-letter {
+  font-family: $brand-font-serif;
+  font-weight: 700;
+  font-size: 3.4rem;
+  line-height: 0.92;
+  float: left;
+  margin: 0.32rem 0.5rem -0.15rem 0;
+  color: $brand-burgundy;
+  font-feature-settings: "lnum" 1;
+}
+
+// Prvi redak prvog pasusa u small-caps — elegantno bez JS-a
+.has-dropcap::first-line {
+  font-family: $brand-font-sans;
   font-weight: 500;
+  font-variant: small-caps;
+  letter-spacing: 0.04em;
   color: $brand-charcoal;
 }
 
-// Minimal figure captions
-.figure-caption, figcaption {
+// =============================================================
+// Sidenotes (Tufte stil) — vidljivo različite od marginalnih citata
+// =============================================================
+.sidenote,
+.column-margin.sidenote,
+aside.sidenote {
   font-family: $brand-font-sans;
-  font-size: 0.85rem;
-  color: $brand-slate;
-  text-align: center;
-  margin-top: 0.5rem;
-}
-
-// Margin notes
-.column-margin {
-  font-size: 0.82rem;
-  color: $brand-slate;
+  font-size: 0.84rem;
   line-height: 1.5;
+  color: $brand-charcoal;
+  background: rgba($brand-gold, 0.07);
+  border-left: 2px solid $brand-gold;
+  padding: 0.55rem 0.8rem;
+  border-radius: 0 3px 3px 0;
 }
 
-// Minimal callouts
+// Margin reference / fusnote — diskretnije
+.column-margin {
+  font-family: $brand-font-sans;
+  font-size: 0.8rem;
+  line-height: 1.5;
+  color: $brand-slate;
+
+  // Fusnote-popis
+  &.column-margin-citation,
+  .csl-entry {
+    font-style: italic;
+  }
+}
+
+// =============================================================
+// Callouti — jasniji, s ikonama (Quarto već renderira default ikone, mi ih pojačavamo)
+// =============================================================
 div.callout {
-  margin: 1.5rem 0;
-  border-radius: 2px;
+  margin: 1.75rem 0;
+  border-radius: 4px;
+  border-left-width: 4px;
+  background: rgba($brand-navy, 0.025);
+  box-shadow: 0 1px 2px rgba($brand-navy, 0.04);
 }
 
-div.callout-note { border-left-color: $brand-navy; }
-div.callout-tip { border-left-color: #2F855A; }
-div.callout-important { border-left-color: $brand-gold; }
-div.callout-warning { border-left-color: #DD6B20; }
-div.callout-caution { border-left-color: #C53030; }
-
-// Part title pages
-.quarto-book .body-content .part-title {
+div.callout .callout-header {
   font-family: $brand-font-sans;
   font-weight: 600;
-  color: $brand-navy;
-  text-align: center;
-  padding: 3rem 0 1.5rem;
+  letter-spacing: 0.01em;
+  padding: 0.5rem 0.9rem;
+  background: rgba($brand-navy, 0.04);
 }
 
-// Clean table styling
+div.callout .callout-body {
+  padding: 0.6rem 0.9rem 0.8rem;
+  font-size: 0.97rem;
+}
+
+div.callout .callout-icon::before {
+  // Pojačavamo defaultne Quarto ikone — veće, navy ton
+  filter: brightness(0.7);
+  transform: scale(1.1);
+}
+
+// Tip-specifične boje
+div.callout-note {
+  border-left-color: $brand-navy;
+  .callout-header { background: rgba($brand-navy, 0.07); color: $brand-navy; }
+}
+div.callout-tip {
+  border-left-color: #2F855A;
+  .callout-header { background: rgba(#2F855A, 0.08); color: #1F5C3D; }
+}
+div.callout-important {
+  border-left-color: $brand-gold;
+  .callout-header { background: rgba($brand-gold, 0.10); color: darken($brand-gold, 12%); }
+}
+div.callout-warning {
+  border-left-color: #DD6B20;
+  .callout-header { background: rgba(#DD6B20, 0.08); color: #9C4A0F; }
+}
+div.callout-caution {
+  border-left-color: $brand-burgundy;
+  .callout-header { background: rgba($brand-burgundy, 0.07); color: $brand-burgundy; }
+}
+
+// =============================================================
+// Tablice — zebra striping u cream tonu
+// =============================================================
 table {
-  font-size: 0.92rem;
+  font-family: $brand-font-sans;
+  font-size: 0.93rem;
+  font-feature-settings: "tnum" 1, "lnum" 1;
+  font-variant-numeric: tabular-nums lining-nums;
   border-collapse: collapse;
   width: 100%;
-  margin: 1.5rem 0;
+  margin: 1.75rem 0;
+  background: $brand-cream;
 }
 
 table thead th {
   font-family: $brand-font-sans;
   font-weight: 600;
   color: $brand-navy;
-  padding: 0.6rem 0.8rem;
+  padding: 0.7rem 0.85rem;
   text-align: left;
   border-bottom: 2px solid $brand-navy;
+  background: $brand-cream;
+  letter-spacing: 0.01em;
 }
 
 table tbody td {
-  padding: 0.5rem 0.8rem;
-  border-bottom: 1px solid rgba($brand-slate, 0.12);
+  padding: 0.55rem 0.85rem;
+  border-bottom: 1px solid rgba($brand-slate, 0.10);
+  vertical-align: top;
+}
+
+table tbody tr:nth-child(even) {
+  background: rgba($brand-light-gold, 0.32);
 }
 
 table tbody tr:hover {
-  background-color: rgba($brand-navy, 0.02);
+  background: rgba($brand-gold, 0.10);
+  transition: background 0.12s ease;
 }
 
-// Code blocks
-.code-with-filename .code-with-filename-file {
-  font-family: $brand-font-mono;
-  font-size: 0.85rem;
-  font-weight: 600;
-  color: $brand-charcoal;
-  padding: 0.5rem 1rem;
-}
-
-// Minimal blockquotes
-blockquote {
-  border-left: 2px solid $brand-slate;
-  padding-left: 1.5rem;
-  margin: 1.5rem 0;
+table caption {
+  font-family: $brand-font-sans;
+  font-size: 0.84rem;
   color: $brand-slate;
+  caption-side: top;
+  text-align: left;
+  padding-bottom: 0.4rem;
 }
 
-// Clean link styling
+// =============================================================
+// Blockquotes — burgundy akcent
+// =============================================================
+blockquote {
+  border-left: 3px solid $brand-burgundy;
+  padding: 0.4rem 0 0.4rem 1.5rem;
+  margin: 1.75rem 0;
+  color: $brand-charcoal;
+  font-family: $brand-font-serif;
+  font-style: italic;
+  font-size: 1.06rem;
+  line-height: 1.55;
+
+  p:last-child { margin-bottom: 0; }
+
+  cite, footer, .blockquote-footer {
+    display: block;
+    margin-top: 0.5rem;
+    font-family: $brand-font-sans;
+    font-style: normal;
+    font-size: 0.85rem;
+    color: $brand-slate;
+    letter-spacing: 0.02em;
+
+    &::before { content: "— "; }
+  }
+}
+
+// =============================================================
+// Figure i caption
+// =============================================================
+.figure-caption, figcaption,
+.quarto-figure figcaption,
+.subfigure-caption {
+  font-family: $brand-font-sans;
+  font-size: 0.83rem;
+  color: $brand-slate;
+  text-align: center;
+  margin-top: 0.6rem;
+  line-height: 1.45;
+}
+
+figure {
+  margin: 2rem 0;
+}
+
+// =============================================================
+// Linkovi
+// =============================================================
 a {
-  color: $brand-navy;
+  color: $brand-burgundy;
   text-decoration: none;
-  transition: color 0.15s ease;
+  border-bottom: 1px solid rgba($brand-warm-grey, 0.55);
+  transition: color 0.15s ease, border-color 0.15s ease, background 0.15s ease;
 
   &:hover {
-    color: $brand-gold;
+    color: $brand-burgundy;
+    border-bottom-color: $brand-burgundy;
+    background: rgba($brand-burgundy, 0.06);
+  }
+
+  &.no-underline,
+  .sidebar &,
+  .navbar &,
+  .toc &,
+  .quarto-secondary-nav &,
+  .quarto-title-meta & {
+    border-bottom: none;
   }
 }
 
-// Print styling
+// =============================================================
+// Kod
+// =============================================================
+code, pre, .sourceCode {
+  font-family: $brand-font-mono;
+  font-feature-settings: "calt" 0, "liga" 0;
+}
+
+code:not(pre code) {
+  background: rgba($brand-navy, 0.05);
+  color: $brand-burgundy;
+  padding: 0.08em 0.32em;
+  border-radius: 3px;
+  font-size: 0.88em;
+}
+
+pre {
+  background: #FBF7EC;
+  border: 1px solid rgba($brand-navy, 0.10);
+  border-radius: 4px;
+  padding: 0.85rem 1rem;
+  font-size: 0.86rem;
+  line-height: 1.55;
+  overflow-x: auto;
+}
+
+.code-with-filename .code-with-filename-file {
+  font-family: $brand-font-mono;
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: $brand-charcoal;
+  background: rgba($brand-navy, 0.06);
+  padding: 0.45rem 1rem;
+  border-radius: 4px 4px 0 0;
+}
+
+// =============================================================
+// Citation hover (Quarto built-in)
+// =============================================================
+.citation:hover, a.citation:hover {
+  color: $brand-burgundy;
+  cursor: help;
+}
+
+// Quarto popper / hover preview
+.tippy-box,
+.hover-preview {
+  font-family: $brand-font-serif !important;
+  font-size: 0.92rem !important;
+  background: $brand-charcoal !important;
+  color: $brand-cream !important;
+  border-radius: 4px !important;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.18) !important;
+  max-width: 380px !important;
+}
+
+// =============================================================
+// Sidebar / TOC — diskretniji, više whitespacea
+// =============================================================
+.sidebar nav[role="doc-toc"] ul li a,
+nav#TOC ul li a,
+#quarto-margin-sidebar a {
+  font-family: $brand-font-sans;
+  font-size: 0.86rem;
+  color: $brand-slate;
+
+  &:hover, &.active {
+    color: $brand-navy;
+  }
+}
+
+.sidebar-item .chapter-number {
+  font-variant-numeric: tabular-nums;
+  color: $brand-gold;
+  font-weight: 600;
+  margin-right: 0.3rem;
+}
+
+// =============================================================
+// Part title pages
+// =============================================================
+.quarto-book .body-content .part-title,
+.quarto-book .part h1 {
+  font-family: $brand-font-sans;
+  font-weight: 700;
+  color: $brand-navy;
+  text-align: center;
+  letter-spacing: 0.02em;
+  padding: 4rem 0 2rem;
+  font-size: 1.6rem;
+  text-transform: uppercase;
+
+  &::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 2px;
+    background: $brand-gold;
+    margin: 1.2rem auto 0;
+  }
+}
+
+// =============================================================
+// Selection
+// =============================================================
+::selection {
+  background: rgba($brand-gold, 0.35);
+  color: $brand-charcoal;
+}
+
+// =============================================================
+// Print
+// =============================================================
 @media print {
-  .sidebar, .quarto-search, nav {
+  .sidebar, .quarto-search, nav, #reading-progress {
     display: none !important;
   }
+
+  body { font-size: 11pt; background: white; }
+  .has-dropcap::first-letter { color: black; }
+}
+
+// =============================================================
+// =============================================================
+// FAZA 2 — landing page komponente
+// =============================================================
+// =============================================================
+
+// ---- Book hero (na index.qmd) ----
+.book-hero {
+  text-align: center;
+  margin: 0 auto 3rem auto;
+  padding: 1rem 0 2.5rem;
+  max-width: 760px;
+  position: relative;
+
+  &::after {
+    content: "";
+    display: block;
+    width: 80px;
+    height: 2px;
+    background: $brand-gold;
+    margin: 2.25rem auto 0;
+  }
+}
+
+.book-hero-image {
+  margin: 0 auto 1.75rem;
+  max-width: 320px;
+
+  img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+    box-shadow:
+      0 1px 0 rgba($brand-navy, 0.04),
+      0 6px 20px rgba($brand-navy, 0.10),
+      0 14px 40px rgba($brand-navy, 0.06);
+  }
+}
+
+.book-hero-kicker {
+  font-family: $brand-font-sans;
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: $brand-gold;
+  margin-bottom: 0.85rem;
+}
+
+h1.book-hero-title,
+.book-hero h1 {
+  font-family: $brand-font-sans;
+  font-size: 2.05rem;
+  font-weight: 700;
+  line-height: 1.18;
+  letter-spacing: -0.02em;
+  color: $brand-navy;
+  margin: 0 0 0.9rem 0;
+}
+
+@media (min-width: 720px) {
+  h1.book-hero-title,
+  .book-hero h1 {
+    font-size: 2.35rem;
+  }
+}
+
+.book-hero-subtitle {
+  font-family: $brand-font-serif;
+  font-style: italic;
+  font-size: 1.15rem;
+  line-height: 1.5;
+  color: $brand-slate;
+  max-width: 580px;
+  margin: 0 auto 1.6rem;
+}
+
+.book-hero-authors {
+  font-family: $brand-font-sans;
+  font-size: 0.95rem;
+  color: $brand-charcoal;
+  margin-bottom: 1.75rem;
+
+  a {
+    color: $brand-navy-soft;
+    border-bottom: 1px dotted rgba($brand-gold, 0.6);
+    padding-bottom: 1px;
+
+    &:hover {
+      color: $brand-burgundy;
+      border-bottom-style: solid;
+      background: transparent;
+    }
+  }
+}
+
+.book-hero-cta {
+  display: flex;
+  gap: 0.85rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 0.5rem;
+}
+
+.cta-button,
+.cta-button-secondary {
+  display: inline-block;
+  font-family: $brand-font-sans;
+  font-size: 0.95rem;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+  padding: 0.7rem 1.5rem;
+  border-radius: 4px;
+  border-bottom: none !important;
+  transition: all 0.18s ease;
+}
+
+.cta-button {
+  background: $brand-navy;
+  color: $brand-cream !important;
+  box-shadow: 0 2px 6px rgba($brand-navy, 0.18);
+
+  &:hover {
+    background: $brand-burgundy;
+    color: $brand-cream !important;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 14px rgba($brand-burgundy, 0.25);
+  }
+}
+
+.cta-button-secondary {
+  background: transparent;
+  color: $brand-navy !important;
+  border: 1.5px solid rgba($brand-navy, 0.25) !important;
+
+  &:hover {
+    background: rgba($brand-gold, 0.10);
+    border-color: $brand-gold !important;
+    color: $brand-navy !important;
+  }
+}
+
+// ---- Feature grid (3 kartice ispod hero-a) ----
+.feature-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.25rem;
+  margin: 0 auto 3.5rem;
+  max-width: 980px;
+
+  @media (max-width: 800px) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.feature-card {
+  background: rgba($brand-cream, 0.7);
+  border: 1px solid rgba($brand-navy, 0.10);
+  border-top: 3px solid $brand-gold;
+  border-radius: 4px;
+  padding: 1.4rem 1.4rem 1.6rem;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+
+  &:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 24px rgba($brand-navy, 0.10);
+    border-top-color: $brand-burgundy;
+  }
+
+  h3 {
+    font-family: $brand-font-sans;
+    font-size: 1.05rem;
+    font-weight: 600;
+    color: $brand-navy;
+    margin: 0 0 0.6rem 0;
+    border-top: none;
+    padding-top: 0;
+  }
+
+  p {
+    font-family: $brand-font-serif;
+    font-size: 0.94rem;
+    line-height: 1.55;
+    color: $brand-charcoal;
+    margin: 0;
+  }
+}
+
+// ---- Book meta footer (na dnu indexa) ----
+.book-meta-footer {
+  margin: 4rem auto 1rem;
+  max-width: 720px;
+  padding-top: 2rem;
+  border-top: 1px solid rgba($brand-navy, 0.10);
+  font-family: $brand-font-sans;
+  font-size: 0.85rem;
+  color: $brand-slate;
+  text-align: center;
+  line-height: 1.7;
+
+  strong {
+    color: $brand-navy;
+    font-weight: 600;
+  }
+
+  .book-date {
+    color: $brand-gold;
+    font-weight: 600;
+    background: none;
+  }
+
+  a {
+    border-bottom-color: rgba($brand-gold, 0.4);
+  }
+}
+
+// =============================================================
+// Dinkus (scene break) — tri romba u centru
+// =============================================================
+.dinkus,
+hr.dinkus,
+div.dinkus {
+  border: none;
+  background: none;
+  text-align: center;
+  margin: 2.5rem auto;
+  padding: 0;
+  height: auto;
+  width: 100%;
+
+  &::before {
+    content: "◆ ◆ ◆";
+    color: $brand-gold;
+    font-size: 0.85rem;
+    letter-spacing: 1.2rem;
+    padding-left: 1.2rem; // kompenzira tracking
+    opacity: 0.85;
+  }
+}
+
+// =============================================================
+// End-of-chapter mark (auto-injected JS-om)
+// =============================================================
+.chapter-end-mark {
+  text-align: center;
+  margin: 3rem auto 1rem;
+  font-size: 1.4rem;
+  color: $brand-gold;
+  letter-spacing: 0.1em;
+  user-select: none;
+  opacity: 0.8;
+  font-family: $brand-font-serif;
+  font-feature-settings: "ornm" 1;
+
+  &::before {
+    content: "❦";
+  }
+}
+
+// =============================================================
+// Pull quote
+// =============================================================
+.pullquote,
+div.pullquote {
+  font-family: $brand-font-serif;
+  font-style: italic;
+  font-size: 1.32rem;
+  line-height: 1.45;
+  color: $brand-charcoal;
+  border-left: 4px solid $brand-burgundy;
+  padding: 0.6rem 0 0.6rem 1.6rem;
+  margin: 2.25rem 1rem 2.25rem 0;
+  position: relative;
+  max-width: none;
+
+  // Veliki ukrasni navodnik gore lijevo
+  &::before {
+    content: "\201C";
+    position: absolute;
+    top: -1.2rem;
+    left: 0.6rem;
+    font-size: 4.5rem;
+    line-height: 1;
+    color: rgba($brand-burgundy, 0.18);
+    font-family: $brand-font-serif;
+    pointer-events: none;
+  }
+
+  p { margin: 0 0 0.75rem 0; }
+  p:last-child { margin-bottom: 0; }
+
+  .cite, cite {
+    display: block;
+    margin-top: 0.7rem;
+    font-family: $brand-font-sans;
+    font-size: 0.85rem;
+    font-style: normal;
+    color: $brand-slate;
+    letter-spacing: 0.02em;
+
+    &::before { content: "— "; }
+  }
+}
+
+// =============================================================
+// Takeaway (ključno)
+// =============================================================
+.takeaway,
+div.takeaway {
+  font-family: $brand-font-serif;
+  background: rgba($brand-light-gold, 0.45);
+  border-left: 4px solid $brand-gold;
+  padding: 1rem 1.2rem 1.05rem 1.4rem;
+  margin: 2rem 0;
+  border-radius: 0 4px 4px 0;
+  position: relative;
+
+  &::before {
+    content: "Ključno";
+    display: block;
+    font-family: $brand-font-sans;
+    font-size: 0.74rem;
+    font-weight: 700;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: darken($brand-gold, 8%);
+    margin-bottom: 0.45rem;
+  }
+
+  p {
+    margin: 0 0 0.6rem 0;
+    font-size: 0.98rem;
+    line-height: 1.55;
+    color: $brand-charcoal;
+  }
+  p:last-child { margin-bottom: 0; }
+  ul, ol {
+    margin: 0.4rem 0 0.4rem 1.2rem;
+    font-size: 0.96rem;
+  }
+}
+
+// =============================================================
+// Definition (pojam)
+// =============================================================
+.definition,
+div.definition,
+.pojam,
+div.pojam {
+  font-family: $brand-font-serif;
+  background: $brand-cream;
+  border: 1px solid rgba($brand-navy, 0.18);
+  border-left: 3px solid $brand-navy;
+  padding: 0.95rem 1.2rem 1rem;
+  margin: 2rem 0;
+  border-radius: 0 3px 3px 0;
+  box-shadow: 0 1px 3px rgba($brand-navy, 0.04);
+
+  &::before {
+    content: "Definicija";
+    display: block;
+    font-family: $brand-font-sans;
+    font-size: 0.74rem;
+    font-weight: 700;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: $brand-navy;
+    margin-bottom: 0.5rem;
+  }
+
+  // Prvi <strong> ili term
+  > p:first-of-type strong:first-child,
+  > .term,
+  > dt {
+    font-family: $brand-font-sans;
+    font-weight: 600;
+    color: $brand-navy;
+    font-size: 1rem;
+    display: inline-block;
+    margin-right: 0.4rem;
+  }
+
+  p {
+    margin: 0 0 0.5rem 0;
+    font-size: 0.97rem;
+    line-height: 1.55;
+  }
+  p:last-child { margin-bottom: 0; }
+}
+
+// =============================================================
+// Inline citation refinement (Quartov @author2020)
+// =============================================================
+.citation,
+a.citation {
+  color: $brand-burgundy;
+  font-size: 0.92em;
+  font-weight: 400;
+  border-bottom: none;
+
+  &:hover {
+    color: darken($brand-burgundy, 8%);
+    background: rgba($brand-gold, 0.10);
+    border-bottom: 1px solid rgba($brand-burgundy, 0.4);
+  }
+}
+
+// =============================================================
+// Footnote markers — gold superscript bez zagrada
+// =============================================================
+a.footnote-ref,
+sup a.footnote-ref,
+a[role="doc-noteref"] {
+  font-family: $brand-font-sans;
+  font-feature-settings: "sups" 1;
+  color: $brand-gold;
+  font-weight: 700;
+  font-size: 0.75em;
+  vertical-align: super;
+  line-height: 0;
+  text-decoration: none;
+  border-bottom: none;
+  padding: 0 0.12em;
+  border-radius: 2px;
+  transition: all 0.15s ease;
+
+  // Neki Quarto template-i renderaju zagrade kao [1] — sakrij ih
+  &::before, &::after {
+    content: none;
+  }
+
+  &:hover {
+    background: $brand-gold;
+    color: $brand-cream;
+  }
+}
+
+// Sakrij Quartove uglate zagrade ako se renderaju kao text
+sup:has(a.footnote-ref) {
+  // ostavljamo sup, samo se brojevi unutar a već stiliziraju
+}
+
+// =============================================================
+// Anchor hover (§/#) na h2/h3/h4
+// =============================================================
+.anchored {
+  position: relative;
+}
+
+a.anchorjs-link,
+.header-section-number + a.anchorjs-link,
+h2 > a.anchorjs-link,
+h3 > a.anchorjs-link,
+h4 > a.anchorjs-link {
+  font-family: $brand-font-sans;
+  font-weight: 400;
+  color: $brand-gold !important;
+  border-bottom: none !important;
+  text-decoration: none !important;
+  opacity: 0;
+  margin-left: 0.4em;
+  transition: opacity 0.18s ease, transform 0.18s ease;
+  display: inline-block;
+  font-size: 0.7em;
+  vertical-align: middle;
+
+  &::before {
+    content: "#";
+  }
+}
+
+h1:hover > a.anchorjs-link,
+h2:hover > a.anchorjs-link,
+h3:hover > a.anchorjs-link,
+h4:hover > a.anchorjs-link,
+h5:hover > a.anchorjs-link,
+h6:hover > a.anchorjs-link,
+section:hover > h2 > a.anchorjs-link,
+section:hover > h3 > a.anchorjs-link,
+section:hover > h4 > a.anchorjs-link {
+  opacity: 0.7;
+}
+
+a.anchorjs-link:hover {
+  opacity: 1 !important;
+  color: $brand-burgundy !important;
+}
+
+// =============================================================
+// =============================================================
+// FAZA 3 — figure treatment, parts
+// =============================================================
+// =============================================================
+
+// ---- Figure: paspartu okvir + gold prefix u captionu ----
+.quarto-figure,
+figure.figure,
+figure {
+  margin: 2.25rem auto;
+
+  > p > img,
+  > img,
+  > .quarto-figure-center > img,
+  .figure-img {
+    background: $brand-cream;
+    padding: 6px;
+    border: 1px solid rgba($brand-navy, 0.12);
+    border-radius: 2px;
+    box-shadow: 0 2px 8px rgba($brand-navy, 0.06);
+  }
+}
+
+// Tanki gold separator između slike i caption-a
+figure > figcaption,
+.quarto-figure figcaption,
+figure.figure figcaption {
+  position: relative;
+  font-family: $brand-font-serif;
+  font-style: italic;
+  font-size: 0.93rem;
+  color: $brand-slate;
+  text-align: center;
+  margin-top: 1rem;
+  padding-top: 0.85rem;
+  line-height: 1.5;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 2px;
+    background: $brand-gold;
+    border-radius: 1px;
+  }
+}
+
+// "Slika 1." / "Tablica 2." prefix u gold small caps
+.figure-caption strong:first-child,
+.quarto-figcaption strong:first-child,
+figcaption strong:first-child,
+caption strong:first-child {
+  font-family: $brand-font-sans;
+  font-style: normal;
+  font-variant: small-caps;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  color: $brand-gold;
+  margin-right: 0.4em;
+}
+
+// ---- Sidebar part headeri — bolja vizualna hierarhija s rimskim brojem ----
+.sidebar-item.sidebar-item-section,
+.sidebar nav li.sidebar-item-section,
+li.sidebar-item-section > .sidebar-item-container {
+  > .sidebar-item-text,
+  > .chapter-title,
+  > .sidebar-section {
+    font-family: $brand-font-sans;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.10em;
+    color: $brand-navy;
+    font-size: 0.76rem;
+    padding-top: 1.2rem;
+    border-top: 1px solid rgba($brand-gold, 0.35);
+    position: relative;
+  }
+}
+
+// =============================================================
+// =============================================================
+// FAZA 4 — polish
+// =============================================================
+// =============================================================
+
+// ---- Focus rings (accessibility, gold) ----
+*:focus-visible {
+  outline: 2px solid $brand-gold;
+  outline-offset: 3px;
+  border-radius: 2px;
+  transition: outline-offset 0.1s ease;
+}
+
+button:focus-visible,
+.cta-button:focus-visible,
+.cta-button-secondary:focus-visible {
+  outline-offset: 4px;
+}
+
+// ---- Body fade-in (poštuje prefers-reduced-motion) ----
+@keyframes fadeInBook {
+  from { opacity: 0; transform: translateY(4px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+main.content,
+#quarto-document-content {
+  animation: fadeInBook 0.32s ease-out;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  main.content,
+  #quarto-document-content {
+    animation: none;
+  }
+}
+
+// ---- Definition cursor + dotted underline ----
+dfn,
+.term,
+abbr[title] {
+  cursor: help;
+  border-bottom: 1px dotted rgba($brand-gold, 0.7);
+  text-decoration: none;
+  font-style: normal;
+
+  &:hover {
+    color: $brand-burgundy;
+    border-bottom-color: $brand-burgundy;
+  }
+}
+
+// ---- Search overlay theming ----
+.aa-DetachedFormContainer,
+.quarto-search,
+.aa-Form {
+  font-family: $brand-font-sans;
+
+  input.aa-Input {
+    font-family: $brand-font-sans;
+    font-size: 1rem;
+
+    &:focus {
+      outline: 2px solid $brand-gold;
+      outline-offset: 1px;
+    }
+  }
+}
+
+.aa-DetachedSearchButton,
+.aa-DetachedFormContainer {
+  border-color: rgba($brand-navy, 0.15);
+
+  &:focus, &:hover {
+    border-color: $brand-gold;
+  }
+}
+
+.aa-Panel {
+  background: $brand-cream !important;
+  border: 1px solid rgba($brand-navy, 0.12);
+  border-radius: 4px;
+  font-family: $brand-font-sans;
+
+  .aa-Item {
+    color: $brand-charcoal;
+
+    mark {
+      background: rgba($brand-gold, 0.30);
+      color: $brand-burgundy;
+      font-weight: 600;
+      padding: 0 1px;
+    }
+
+    &[aria-selected="true"], &:hover {
+      background: rgba($brand-gold, 0.12);
+    }
+  }
+}
+
+// =============================================================
+// Tipografski pro trikovi — hanging punctuation, optical sizing,
+// numerali balansiranje
+// =============================================================
+
+body {
+  hanging-punctuation: first last;
+}
+
+// Tablice koriste tabular lining figures
+table, table tbody, table thead {
+  font-variant-numeric: tabular-nums lining-nums !important;
+  font-feature-settings: "tnum" 1, "lnum" 1 !important;
+}
+
+// Inline brojevi u tijelu — proportional old-style
+main.content p,
+main.content li,
+main.content blockquote {
+  font-variant-numeric: oldstyle-nums proportional-nums;
+  font-feature-settings: "onum" 1, "pnum" 1, "kern" 1, "liga" 1, "calt" 1;
+}
+
+// Wider tracking on uppercase elements
+.chapter-kicker,
+.book-hero-kicker,
+.part-title,
+.takeaway::before,
+.definition::before,
+.figure-caption strong:first-child {
+  letter-spacing: 0.12em;
+}
+
+// =============================================================
+// Improved blockquote — hanging punctuation friendly
+// =============================================================
+blockquote {
+  text-indent: -0.08em; // Suptilna optička korekcija
+}
+
+// =============================================================
+// Suptilan h1.title underline na chapter pages
+// =============================================================
+header#title-block-header h1.title::after {
+  content: "";
+  display: block;
+  width: 50px;
+  height: 2px;
+  background: $brand-gold;
+  margin-top: 1.1rem;
+  border-radius: 1px;
 }

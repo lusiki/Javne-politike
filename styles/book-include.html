@@ -1,0 +1,261 @@
+<script>
+(function () {
+  "use strict";
+
+  // ----------------------------------------------------------
+  // 1. Reading progress bar
+  // ----------------------------------------------------------
+  function setupProgressBar() {
+    if (document.getElementById("reading-progress")) return;
+    var bar = document.createElement("div");
+    bar.id = "reading-progress";
+    document.body.appendChild(bar);
+
+    var ticking = false;
+    function update() {
+      var doc = document.documentElement;
+      var scrollTop = window.scrollY || doc.scrollTop;
+      var max = (doc.scrollHeight - doc.clientHeight) || 1;
+      var pct = Math.min(100, Math.max(0, (scrollTop / max) * 100));
+      bar.style.width = pct + "%";
+      ticking = false;
+    }
+    window.addEventListener("scroll", function () {
+      if (!ticking) {
+        window.requestAnimationFrame(update);
+        ticking = true;
+      }
+    }, { passive: true });
+    update();
+  }
+
+  // ----------------------------------------------------------
+  // 2. Chapter number extraction → header data attribute
+  //    Title oblik "13. Porezi: ..." → data-chapter-num="13"
+  // ----------------------------------------------------------
+  function setupChapterNumber() {
+    var header = document.getElementById("title-block-header");
+    if (!header) return;
+    var titleEl = header.querySelector("h1.title, .title");
+    if (!titleEl) return;
+    var raw = titleEl.textContent.trim();
+    var m = raw.match(/^(\d+)[\.\s ]/);
+    if (m) {
+      header.setAttribute("data-chapter-num", m[1]);
+      // Skidamo broj iz vidljivog naslova jer ga već imamo kao watermark
+      titleEl.textContent = raw.replace(/^\d+[\.\s ]+/, "");
+    }
+  }
+
+  // ----------------------------------------------------------
+  // 3. Reading time chip
+  // ----------------------------------------------------------
+  function setupReadingTime() {
+    var header = document.getElementById("title-block-header");
+    if (!header) return;
+    // Samo na chapter stranicama
+    if (!header.hasAttribute("data-chapter-num")) return;
+
+    var article = document.querySelector("main.content") || document.querySelector("main");
+    if (!article) return;
+
+    // Brojimo riječi izvan koda i nav elemenata
+    var clone = article.cloneNode(true);
+    clone.querySelectorAll("pre, code, .sourceCode, nav, .toc, .sidebar, header#title-block-header, .quarto-title-block").forEach(function (el) {
+      el.parentNode && el.parentNode.removeChild(el);
+    });
+    var text = (clone.textContent || "").trim();
+    var words = text ? text.split(/\s+/).length : 0;
+    var minutes = Math.max(1, Math.round(words / 220)); // ~220 wpm hrvatski
+
+    var chip = document.createElement("div");
+    chip.className = "reading-time";
+    chip.textContent = minutes + " min čitanja · " + words.toLocaleString("hr-HR") + " riječi";
+    header.appendChild(chip);
+  }
+
+  // ----------------------------------------------------------
+  // 4. Drop cap — prvi pasus poglavlja
+  // ----------------------------------------------------------
+  function setupDropCap() {
+    var header = document.getElementById("title-block-header");
+    if (!header || !header.hasAttribute("data-chapter-num")) return;
+
+    var article = document.querySelector("main.content") || document.querySelector("main");
+    if (!article) return;
+
+    // Pronađi prvi "pravi" tekstualni pasus (preskačemo callout-e i meta blokove)
+    var candidates = article.querySelectorAll("section > p, > p");
+    for (var i = 0; i < candidates.length; i++) {
+      var p = candidates[i];
+      // Preskačemo prazne i one unutar callouta / figura
+      if (!p.textContent.trim()) continue;
+      if (p.closest(".callout, figure, .quarto-title-block, .reading-time")) continue;
+      // Mora biti barem 80 znakova — izbjegavamo kratke labele
+      if (p.textContent.trim().length < 80) continue;
+      p.classList.add("has-dropcap");
+      break;
+    }
+  }
+
+  // ----------------------------------------------------------
+  // 5. Hover preview za interne linkove (#anchors u istom dokumentu)
+  // ----------------------------------------------------------
+  function setupInternalHover() {
+    var tip = null;
+    var hideTimer = null;
+
+    function ensureTip() {
+      if (tip) return tip;
+      tip = document.createElement("div");
+      tip.className = "internal-hover-preview";
+      document.body.appendChild(tip);
+      return tip;
+    }
+
+    function show(target, text, title) {
+      var t = ensureTip();
+      t.innerHTML = "";
+      if (title) {
+        var h = document.createElement("div");
+        h.className = "ihp-title";
+        h.textContent = title;
+        t.appendChild(h);
+      }
+      var body = document.createElement("div");
+      body.textContent = text;
+      t.appendChild(body);
+
+      var rect = target.getBoundingClientRect();
+      var top = window.scrollY + rect.bottom + 8;
+      var left = window.scrollX + rect.left;
+      // Drži unutar viewporta
+      var maxLeft = window.scrollX + document.documentElement.clientWidth - 400;
+      if (left > maxLeft) left = maxLeft;
+      if (left < 8) left = 8;
+      t.style.top = top + "px";
+      t.style.left = left + "px";
+      t.classList.add("visible");
+    }
+
+    function hide() {
+      if (tip) tip.classList.remove("visible");
+    }
+
+    document.addEventListener("mouseover", function (e) {
+      var a = e.target.closest && e.target.closest("a[href^='#']");
+      if (!a) return;
+      // Preskačemo Quarto-ove vlastite citation/footnote (oni već imaju hover)
+      if (a.classList.contains("citation") || a.classList.contains("footnote-ref")) return;
+      if (a.closest(".sidebar, nav, .toc, #TOC, .quarto-secondary-nav")) return;
+
+      var hash = a.getAttribute("href").slice(1);
+      if (!hash) return;
+      var tgt = document.getElementById(hash);
+      if (!tgt) return;
+
+      var titleEl = tgt.querySelector("h1, h2, h3, h4") || (tgt.tagName.match(/^H[1-6]$/) ? tgt : null);
+      var title = titleEl ? titleEl.textContent.trim() : "";
+      // Uzimamo prvih ~280 znakova konteksta
+      var ctx = (tgt.textContent || "").trim().replace(/\s+/g, " ");
+      if (title) ctx = ctx.replace(title, "").trim();
+      ctx = ctx.slice(0, 280) + (ctx.length > 280 ? "…" : "");
+
+      clearTimeout(hideTimer);
+      show(a, ctx, title);
+    });
+
+    document.addEventListener("mouseout", function (e) {
+      var a = e.target.closest && e.target.closest("a[href^='#']");
+      if (!a) return;
+      hideTimer = setTimeout(hide, 120);
+    });
+
+    window.addEventListener("scroll", hide, { passive: true });
+  }
+
+  // ----------------------------------------------------------
+  // 6. End-of-chapter ornament (❦) — samo na chapter stranicama
+  // ----------------------------------------------------------
+  function setupEndMark() {
+    var header = document.getElementById("title-block-header");
+    if (!header || !header.hasAttribute("data-chapter-num")) return;
+
+    var article = document.querySelector("main.content") || document.querySelector("main");
+    if (!article) return;
+
+    // Provjeri da već nije ubačen
+    if (article.querySelector(".chapter-end-mark")) return;
+
+    var mark = document.createElement("div");
+    mark.className = "chapter-end-mark";
+    // Tražimo zadnju section ili p u glavnom dijelu
+    var lastSection = article.querySelector("section:last-of-type") || article;
+    lastSection.appendChild(mark);
+  }
+
+  // ----------------------------------------------------------
+  // 7. Dinkus normalization — pretvori "***" parove i prazne
+  //    dinkus blokove u stilizirane romb-trojke
+  // ----------------------------------------------------------
+  function setupDinkus() {
+    // Quartov ::: {.dinkus} već dobiva div.dinkus klasu — to već stiliziramo CSS-om
+    // Pretvori HR elemente s točno tri zvjezdice ili "* * *" tekstom
+    var hrs = document.querySelectorAll("hr");
+    hrs.forEach(function (hr) {
+      // Ako je hr unutar contenta i nije .dinkus, ostavi ga
+    });
+    // Pretvori paragrafe koji su točno "***" u dinkus
+    var paragraphs = document.querySelectorAll("main p");
+    paragraphs.forEach(function (p) {
+      var t = p.textContent.trim();
+      if (t === "***" || t === "* * *" || t === "◆ ◆ ◆") {
+        var div = document.createElement("div");
+        div.className = "dinkus";
+        p.parentNode.replaceChild(div, p);
+      }
+    });
+  }
+
+  // ----------------------------------------------------------
+  // 8. Anchor link injection (Quarto's anchor-sections nije uvijek
+  //    pouzdan; dodajemo vlastite # linkove na sve h2-h4 koji ih nemaju)
+  // ----------------------------------------------------------
+  function setupAnchorLinks() {
+    var article = document.querySelector("main.content") || document.querySelector("main");
+    if (!article) return;
+    var headings = article.querySelectorAll("h2[id], h3[id], h4[id]");
+    headings.forEach(function (h) {
+      // Preskoči chapter title i postojeće anchorjs linkove
+      if (h.classList.contains("title")) return;
+      if (h.querySelector("a.anchorjs-link")) return;
+
+      var link = document.createElement("a");
+      link.className = "anchorjs-link";
+      link.href = "#" + h.id;
+      link.setAttribute("aria-label", "Permalink na ovaj odjeljak");
+      h.appendChild(link);
+    });
+  }
+
+  // ----------------------------------------------------------
+  // Bootstrap
+  // ----------------------------------------------------------
+  function init() {
+    try { setupProgressBar(); } catch (e) {}
+    try { setupChapterNumber(); } catch (e) {}
+    try { setupReadingTime(); } catch (e) {}
+    try { setupDropCap(); } catch (e) {}
+    try { setupInternalHover(); } catch (e) {}
+    try { setupEndMark(); } catch (e) {}
+    try { setupDinkus(); } catch (e) {}
+    try { setupAnchorLinks(); } catch (e) {}
+  }
+
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", init);
+  } else {
+    init();
+  }
+})();
+</script>

@@ -1,64 +1,63 @@
 ---
 title: "Prije početka: O čemu se radi?"
-toc: true
+toc: false
 number-sections: false
+code-tools: false
+code-fold: false
+echo: false
 include-in-header:
   text: |
     <style>
       #title-block-header { display: none; }
-      .book-hero {
-        text-align: center;
-        margin: 0 auto 2rem auto;
-        padding-bottom: 1.5rem;
-        border-bottom: 1px solid #E2E8F0;
-      }
-      .book-hero img {
-        max-width: 100%;
-        height: auto;
-        margin-bottom: 1.5rem;
-        border-radius: 6px;
-      }
-      .book-hero h1 {
-        font-size: 2.0rem;
-        line-height: 1.25;
-        margin: 0 0 0.6rem 0;
-        font-weight: 700;
-      }
-      .book-hero .book-subtitle {
-        font-size: 1.15rem;
-        font-style: italic;
-        color: #4A5568;
-        margin-bottom: 1.2rem;
-      }
-      .book-hero .book-authors {
-        font-size: 1.0rem;
-        color: #2D3748;
-      }
-      .book-hero .book-authors a {
-        color: #2B6CB0;
-        text-decoration: none;
-      }
-      .book-hero .book-authors a:hover {
-        text-decoration: underline;
-      }
     </style>
 ---
 
 ::: {.book-hero}
+::: {.book-hero-image}
 ![](images/Pic.png)
-
-# Sve što želite znati o državi i javnim politikama u Hrvatskoj
-
-::: {.book-subtitle}
-Praktični i interaktivni udžbenik za studente i sve koji žele znati više
 :::
 
-::: {.book-authors}
-[Milan Deskar-Škrbić](https://zsem.hr/clanovi/dr-sc-milan-deskar-skrbic/) · [Petra Palić](https://www.unicath.hr/odjeli-i-fakultet/nastavnici/petra-palic) · [Luka Sikić](https://www.unicath.hr/odjeli-i-fakultet/nastavnici/luka-sikic)
+::: {.book-hero-kicker}
+Praktični i interaktivni udžbenik
+:::
+
+# Sve što želite znati o državi i javnim politikama u Hrvatskoj {.book-hero-title}
+
+::: {.book-hero-subtitle}
+Vodič kroz ekonomiju, politiku i institucije za studente i sve koji žele razumjeti zašto država djeluje onako kako djeluje.
+:::
+
+::: {.book-hero-authors}
+[Milan Deskar-Škrbić](https://zsem.hr/clanovi/dr-sc-milan-deskar-skrbic/)  ·  [Petra Palić](https://www.unicath.hr/odjeli-i-fakultet/nastavnici/petra-palic)  ·  [Luka Sikić](https://www.unicath.hr/odjeli-i-fakultet/nastavnici/luka-sikic)
+:::
+
+::: {.book-hero-cta}
+[Počnite čitati →](chapters/01-pristupi.html){.cta-button}
+[Pregledajte sadržaj](#sadržaj){.cta-button-secondary}
 :::
 :::
 
-## Zašto bismo otvorili ovu knjigu?
+::: {.feature-grid}
+::: {.feature-card}
+### Interaktivni grafikoni
+
+Više od pukog teksta — dinamički grafovi, simulacije i podatci uživo iz hrvatske ekonomije pomažu razumjeti kako odluke djeluju u stvarnom vremenu.
+:::
+
+::: {.feature-card}
+### Hrvatski kontekst
+
+Primjeri, podatci i institucije iz Hrvatske — od poreznog sustava i mirovinske reforme do realnih politika koje su oblikovale državu.
+:::
+
+::: {.feature-card}
+### Otvoreni izvor
+
+Knjiga je besplatna, redovito ažurirana i otvorena za doprinose. Cijeli kod, podatci i tekst dostupni su na [GitHubu](https://github.com/lusiki/Javne-politike).
+:::
+:::
+
+## Zašto bismo otvorili ovu knjigu? {#sadržaj}
 
 Zamislite da možete "zaviriti iza kulisa" politike. Ne samo gledati što političari govore, nego razumjeti zašto donose odluke koje donose, zašto neke politike opstaju desetljećima iako su očito loše, zašto se porezi povećavaju baš kad se ne očekuje, ili zašto se reforme najavljuju glasno – a provedu tiho ili nikako. Zamislite da možete prepoznati obrasce iza političkih odluka, vidjeti tko dobiva, tko gubi i zašto, te unaprijed naslutiti kako će određena politika završiti prije nego što se uopće provede.
 
@@ -78,6 +77,9 @@ S druge strane, tu je pozitivistički pristup, koji nas vraća u stvarni svijet 
 
 Najzanimljiviji dio počinje upravo tamo gdje se ta dva pristupa susreću. Jer svijet javnih politika nije svijet idealnih rješenja, nego svijet kompromisa, ograničenja i nepredvidivih ishoda. To je svijet u kojem dobre ideje mogu propasti, loše ideje opstati, a najbolja rješenja često nisu ona koja su teorijski optimalna, nego ona koja su politički i institucionalno izvediva.
 
+::: {.dinkus}
+:::
+
 Upravo zato ova knjiga odbacuje pojednostavljene priče o državi. Država nije samo "rješenje" koje ispravlja tržišne neuspjehe, ali nije ni samo "problem" koji stvara neefikasnost i birokraciju. Ona je složen sustav odluka, poticaja i pravila, u kojem sudjeluju političari, birači, birokrati i interesne skupine – svi sa svojim ciljevima, informacijama i ograničenjima. Ponekad djeluju u javnom interesu, ponekad u vlastitom, a najčešće negdje između.
 
 Razumjeti državu znači razumjeti kako se ti interesi prelamaju kroz institucije i pretvaraju u konkretne politike. To znači razumjeti zašto se javni novac troši na određeni način, zašto se reforme događaju (ili ne događaju), zašto neki sustavi funkcioniraju bolje od drugih i kako se pravila mogu promijeniti da bi ishodi bili bolji.
@@ -90,8 +92,16 @@ U **Dijelu II** ulazimo u stvarni svijet politike kroz teoriju javnog izbora. Ov
 
 U **Dijelu III** fokus se prebacuje na konkretne javne politike i javne financije. Analiziramo kako država prikuplja i troši sredstva, kako dizajn poreza i rashoda utječe na društvo te kako se politike mogu evaluirati i unaprijediti. Poseban naglasak stavlja se na pitanje reformi: kako, unatoč političkim i institucionalnim ograničenjima, dizajnirati učinkovit i održiv javni sektor.
 
+::: {.pullquote}
+Ova knjiga vas neće naučiti samo *što* misliti o javnim politikama. Naučit će vas *kako* o njima razmišljati — kritički, analitički i s razumijevanjem stvarnih ograničenja svijeta u kojem živimo.
+:::
+
 Ako želite razumjeti zašto se politike oblikuju na način na koji se oblikuju, zašto često ne daju očekivane rezultate i kako ih možemo učiniti boljima, ova knjiga je upravo za to. Ona je poziv da izađete iz površinskog promatranja politike i uđete u njezinu unutarnju logiku.
 
-Ona vas neće naučiti samo što misliti o javnim politikama. Naučit će vas kako o njima razmišljati – kritički, analitički i s razumijevanjem stvarnih ograničenja svijeta u kojem živimo.
-
 **Dobrodošli u politiku bez romantike.**
+
+::: {.book-meta-footer}
+**16 poglavlja** · **3 dijela** · ažurirano [svibanj 2026.]{.book-date}
+
+Tekst i kod licencirani pod [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) · [Doprinesite na GitHubu](https://github.com/lusiki/Javne-politike) · [Prijavite grešku](https://github.com/lusiki/Javne-politike/issues)
+:::

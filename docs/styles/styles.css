@@ -1,34 +1,166 @@
-/* Hide the landing page (index) entry from the sidebar */
+/* =========================================================
+   Globalna stilska podešavanja koja nadopunjuju custom.scss
+   ========================================================= */
+
+/* Sakrij landing page (index) iz sidebara */
 .sidebar-item:has(a[href="./index.html"]),
 .sidebar-item:has(a[href="../index.html"]) {
   display: none;
 }
 
-/* Base typography */
+/* Topla off-white pozadina (a la fatih.ai), bez noise teksture */
 body {
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  background-color: #F6F1E8;
 }
 
-/* Figure and image styling */
+/* Glavni stupac teksta — udobnih ~70 znakova / red */
+main#quarto-document-content,
+main.content > section,
+main.content > p,
+main.content > .quarto-title-block ~ section {
+  /* ne stiskamo Quarto layout, samo proseu damo max-width */
+}
+
+/* Quarto stavlja članak unutar .content; targetiramo "prose" */
+.quarto-book main.content {
+  max-width: none; /* dopuštamo punu Quarto strukturu (sidebar + margin) */
+}
+
+/* Sami pasusi/listevi imaju komforan max-width */
+main.content > section > p,
+main.content > section > ul,
+main.content > section > ol,
+main.content > section > blockquote,
+main.content > section > .callout,
+main.content > section > .sourceCode,
+main.content > p,
+main.content > ul,
+main.content > ol,
+main.content > blockquote {
+  max-width: 70ch;
+}
+
+/* Slike i tablice mogu biti šire */
+main.content figure,
+main.content table,
+main.content .quarto-figure {
+  max-width: 100%;
+}
+
+/* Slike */
 img {
   max-width: 100%;
   height: auto;
 }
 
-/* Mobile responsiveness */
+/* =========================================================
+   Reading progress bar (top of viewport)
+   ========================================================= */
+#reading-progress {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 3px;
+  width: 0%;
+  background: linear-gradient(90deg, #14213D 0%, #B08538 100%);
+  z-index: 9999;
+  transition: width 0.08s linear;
+  pointer-events: none;
+  box-shadow: 0 0 8px rgba(176, 133, 56, 0.4);
+}
+
+/* =========================================================
+   Hover preview tooltips za interne linkove (uz Quarto built-in)
+   ========================================================= */
+.internal-hover-preview {
+  position: absolute;
+  z-index: 10000;
+  max-width: 380px;
+  background: #2D3748;
+  color: #FAFAF5;
+  font-family: "Source Serif 4", Georgia, serif;
+  font-size: 0.92rem;
+  line-height: 1.5;
+  padding: 0.85rem 1rem;
+  border-radius: 4px;
+  box-shadow: 0 6px 22px rgba(0,0,0,0.22);
+  pointer-events: none;
+  opacity: 0;
+  transform: translateY(4px);
+  transition: opacity 0.14s ease, transform 0.14s ease;
+}
+.internal-hover-preview.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+.internal-hover-preview .ihp-title {
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  font-size: 0.82rem;
+  color: #B08538;
+  margin-bottom: 0.35rem;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+}
+
+/* =========================================================
+   Mobile
+   ========================================================= */
 @media (max-width: 768px) {
   body {
     font-size: 16px;
+    background-size: 180px 180px;
   }
 
   table {
-    font-size: 0.875rem;
+    font-size: 0.82rem;
   }
 
   pre {
     font-size: 0.75rem;
     overflow-x: scroll;
+  }
+
+  /* Drop cap manji na mobitelu */
+  .has-dropcap::first-letter {
+    font-size: 3.2rem !important;
+  }
+
+  /* Veliki broj poglavlja manji na mobitelu */
+  header#title-block-header[data-chapter-num]::before {
+    font-size: 4.5rem !important;
+    opacity: 0.18 !important;
+  }
+
+  #reading-progress {
+    height: 2px;
+  }
+}
+
+/* =========================================================
+   Hanging punctuation (Source Serif 4 podržava)
+   ========================================================= */
+html {
+  hanging-punctuation: first last;
+}
+
+/* =========================================================
+   Smooth scroll
+   ========================================================= */
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 1rem;
+}
+
+/* =========================================================
+   Reduce motion
+   ========================================================= */
+@media (prefers-reduced-motion: reduce) {
+  #reading-progress { transition: none; }
+  html { scroll-behavior: auto !important; }
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
   }
 }
