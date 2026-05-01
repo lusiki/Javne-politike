@@ -1,0 +1,193 @@
+---
+title: "13. Porezi: više od tereta"
+---
+
+## Što su porezi?
+
+Porezi predstavljaju temeljni instrument javnih financija i ključni izvor prihoda moderne države. U najširem smislu, porezi se definiraju kao obvezna, nepovratna davanja državi bez izravne protuusluge [@musgrave1989; @rosen2014]. Ova definicija sadrži nekoliko važnih elemenata koje je potrebno jasno razumjeti.
+
+Prije svega, porezi su **obvezni** – njihovo plaćanje proizlazi iz zakona i ne ovisi o volji pojedinca. Nadalje, oni su **nepovratni**, što znači da se sredstva ne vraćaju onome tko ih je uplatio. No najvažnija karakteristika poreza jest činjenica da se plaćaju **bez izravne protuusluge**. Umjesto toga, porezi služe za financiranje javnih dobara i usluga – poput obrazovanja, zdravstva, sigurnosti, pravosuđa ili infrastrukture – koje koristi društvo u cjelini [@stiglitz2015].
+
+Iako se u svakodnevnom govoru svi oblici uplata državi često nazivaju porezima, u ekonomskoj teoriji važno je razlikovati različite vrste javnih davanja.
+
+**Naknade i pristojbe** povezane su s konkretnom uslugom ili pravom – primjerice, plaćanje upravne pristojbe za izdavanje osobne iskaznice ili komunalne naknade za održavanje infrastrukture. Ovdje postoji relativno jasna veza između uplate i koristi.
+
+**Doprinosi za socijalno osiguranje** (mirovinsko i zdravstveno osiguranje) također su obvezni, ali su vezani uz određena prava koja pojedinac stječe uplatom [@simovic2022]. Na primjer, uplate u mirovinski sustav stvaraju pravo na buduću mirovinu, no uz određenu redistribuciju pa odnos između uplata i koristi nije potpuno proporcionalan.
+
+Razlikovanje između poreza, naknada i doprinosa važno je jer utječe na percepciju pravednosti sustava, ekonomske učinke pojedinih davanja i strukturu javnih prihoda.
+
+## Porezi kroz povijest
+
+Porezi nisu moderna pojava, već prate razvoj organiziranih društava gotovo od samih početaka civilizacije. Čim su se pojavile prve složenije zajednice s hijerarhijom vlasti i javnim projektima, pojavila se i potreba za prikupljanjem resursa koji će omogućiti njihovo funkcioniranje.
+
+Najraniji oblici oporezivanja zabilježeni su u starim civilizacijama poput Mezopotamije i Egipta prije više od četiri tisuće godina [@adams2001; @webber1986]. U tim društvima porezi su se najčešće prikupljali u naturi — dio prinosa žitarica, ulja ili stoke predavao se vlastima, dok su drugi oblici oporezivanja uključivali obvezni rad na velikim javnim projektima, poput izgradnje kanala, hramova ili piramida.
+
+S razvojem složenijih političkih zajednica porezni sustavi postaju razrađeniji. Rimsko Carstvo razvilo je jedan od prvih sofisticiranijih poreznih sustava — oporezivanje imovine, trgovine, nasljedstava, cenzusi za određivanje porezne obveze, profesionalna porezna administracija [@adams2001].
+
+U **srednjem vijeku** dolazi do fragmentacije poreznih sustava. Umjesto centraliziranog oporezivanja prevladavaju različiti oblici lokalnih i feudalnih obveza — seljaci su predavali dio prinosa feudalnim gospodarima ili obavljali radne obveze. Takav sustav bio je neujednačen i često izvor društvenih napetosti i pobuna [@webber1986].
+
+**Razvoj moderne države** od 17. stoljeća označava prekretnicu — jačanjem središnje vlasti dolazi do centralizacije poreznih sustava i stvaranja profesionalne porezne administracije, a uvode se i prvi moderni porezi na dohodak [@musgrave1989].
+
+**Industrijska revolucija** dodatno transformira porezne sustave, uvodeći sve sofisticiranije oblike oporezivanja dohotka, dobiti i potrošnje. U 20. stoljeću, osobito nakon Velike depresije i Drugog svjetskog rata, porezi dobivaju ne samo fiskalnu, već i redistributivnu i stabilizacijsku funkciju [@stiglitz2015].
+
+## Vrste poreza
+
+Porezi se u suvremenim ekonomijama mogu klasificirati na različite načine, ovisno o kriteriju koji se koristi [@stiglitz2015; @gruber2019].
+
+### Porezi prema poreznoj osnovici
+
+**Porezi na dohodak** odnose se na oporezivanje prihoda koje ostvaruju pojedinci (porez na dohodak) i poduzeća (porez na dobit). Ova skupina poreza često se povezuje s načelom sposobnosti plaćanja, jer porezna obveza raste s razinom dohotka [@stiglitz2015].
+
+**Porezi na potrošnju** odnose se na oporezivanje trošenja dohotka. Najvažniji primjer je porez na dodanu vrijednost (PDV), uz trošarine na gorivo, alkohol i duhan. Karakterizira ih relativna stabilnost prihoda, ali mogu imati regresivan učinak jer kućanstva s nižim dohotkom troše veći dio svog dohotka.
+
+**Porezi na imovinu** odnose se na oporezivanje vlasništva nad imovinom ili njezina prijenosa — porezi na nekretnine, nasljedstva i darove, promet imovine. Često imaju manji fiskalni značaj, ali su važni s aspekta dugoročne raspodjele bogatstva [@stiglitz2015].
+
+### Izravni i neizravni porezi
+
+**Izravni porezi** neposredno se nameću poreznom obvezniku i ne mogu se jednostavno prenijeti na drugu osobu (porez na dohodak, porez na dobit, porezi na imovinu). Kod ovih poreza postoji jasna veza između obveznika i poreznog tereta.
+
+**Neizravni porezi** uključeni su u cijene dobara i usluga te ih u konačnici plaćaju potrošači, iako ih formalno uplaćuju poduzeća (PDV, trošarine). Kod ove skupine dolazi do prijenosa poreznog tereta — porezne incidencije [@gruber2019].
+
+### Proporcionalni, progresivni i regresivni porezi
+
+**Proporcionalni porezi** imaju jedinstvenu stopu bez obzira na visinu osnovice (primjer: porez na dobit u mnogim zemljama).
+
+**Progresivni porezi** karakterizirani su rastom porezne stope s povećanjem dohotka — najčešće se primjenjuju kod poreza na dohodak i povezani su s ciljem smanjenja nejednakosti.
+
+**Regresivni porezi** relativno više opterećuju osobe s nižim dohotkom, kao što je slučaj kod potrošnih poreza [@stiglitz2015].
+
+## Osnovna načela oporezivanja
+
+Kako bi porezni sustav bio funkcionalan, društveno prihvatljiv i ekonomski održiv, njegovo oblikovanje mora se temeljiti na određenim načelima. Ta načela predstavljaju normativni okvir porezne politike, a u klasičnom obliku formulirana su još kod Adama Smitha [@stiglitz2015].
+
+**Načelo pravednosti (equity)** odnosi se na raspodjelu poreznog tereta na društveno prihvatljiv način. *Horizontalna pravednost* podrazumijeva da osobe s istom ekonomskom snagom plaćaju isti porez. *Vertikalna pravednost* polazi od ideje da osobe s većom ekonomskom snagom snose veći porezni teret — temelj je progresivnog oporezivanja [@musgrave1989].
+
+**Načelo učinkovitosti (efficiency)** odnosi se na to da porezni sustav treba što manje narušavati ekonomske odluke. Svaki porez mijenja relativne cijene i dovodi do tzv. *mrtvog tereta poreza* — gubitka ukupnog blagostanja. Učinkovit sustav treba imati široke porezne osnovice, izbjegavati visoke marginalne stope i oporezivati aktivnosti manje osjetljive na promjene cijena [@ramsey1927].
+
+**Načelo jednostavnosti i transparentnosti** — složeni porezni sustavi povećavaju administrativne troškove i stvaraju prostor za izbjegavanje i utaju poreza. Transparentnost omogućuje građanima da procijene je li sustav pravedan i učinkovit [@simovic2022].
+
+**Načelo sigurnosti i predvidivosti (certainty)** — porezni obveznici trebaju unaprijed znati koliko, kada i kako plaćaju. Stabilan i predvidiv porezni sustav važan je preduvjet gospodarskog razvoja [@stiglitz2015].
+
+**Načelo pogodnosti (convenience)** — porezi bi se trebali naplaćivati u trenutku i na način koji je što pogodniji za obveznike (automatska naplata kroz plaću, uključivanje PDV-a u cijenu).
+
+**Načelo izdašnosti i stabilnosti** — porezni sustav mora osigurati dovoljne i stabilne prihode za financiranje javnih rashoda, relativno otporne na ekonomske cikluse.
+
+**Načelo neutralnosti** — porezni sustav ne bi trebao nepotrebno favorizirati određene sektore, aktivnosti ili oblike ponašanja. U praksi se od toga odstupa radi ostvarenja određenih ciljeva (porezne olakšice za investicije, zeleni porezi).
+
+U praksi nije moguće istovremeno u potpunosti ostvariti sva načela. Porezni sustav je uvijek rezultat kompromisa između učinkovitosti, pravednosti i administrativne izvedivosti [@atkinson1980].
+
+## Osnove teorije oporezivanja
+
+Teorije oporezivanja nastoje odgovoriti na nekoliko temeljnih pitanja: tko treba plaćati poreze, koliko i na koji način. U suvremenoj ekonomiji posebno se ističu tri pristupa [@stiglitz2015; @gruber2019].
+
+**Teorija koristi (benefit principle)** — pojedinci bi trebali plaćati poreze u skladu s koristima koje ostvaruju od javnih dobara i usluga. Ima intuitivnu privlačnost (npr. trošarine na gorivo za financiranje cesta), ali suočava se s ozbiljnim ograničenjima: javna dobra su često neisključiva i ne-rivalna, pa je teško utvrditi individualnu korist, a pristup zanemaruje redistributivnu funkciju poreza [@musgrave1989].
+
+**Teorija sposobnosti plaćanja (ability-to-pay)** — porezni teret treba raspodijeliti prema ekonomskoj snazi pojedinaca. Temelji se na konceptu **opadajuće granične korisnosti dohotka**: svaka dodatna jedinica dohotka donosi manju dodatnu korist, pa oporezivanje bogatijih uzrokuje relativno manji gubitak korisnosti nego oporezivanje siromašnih [@stiglitz2015; @gruber2019]. Ova teorija ima snažnu normativnu osnovu, ali otvara pitanja o optimalnoj razini progresivnosti i negativnim učincima na ekonomske poticaje.
+
+**Teorija porezne incidencije** — tko stvarno snosi teret poreza, bez obzira na to tko ga formalno plaća. Raspodjela poreznog tereta ovisi o elastičnosti ponude i potražnje: strana tržišta koja je manje elastična snosi veći dio poreznog opterećenja [@gruber2019].
+
+Uz incidenciju, važan je i koncept **poreznog klina** — razlika između ukupnog troška rada za poslodavca i neto plaće radnika. Porezni klin djeluje kao distorzija tržišta rada jer poslodavci odlučuju na temelju bruto troška, dok radnici reagiraju na neto plaću. Time se smanjuje zaposlenost i količina rada u odnosu na razinu bez oporezivanja, generirajući mrtvi teret poreza [@gruber2019; @stiglitz2015].
+
+## Teorija optimalnog oporezivanja
+
+Teorija optimalnog oporezivanja razvijena je kako bi odgovorila na temeljno pitanje: kako dizajnirati porezni sustav koji maksimizira društveno blagostanje uz minimalne distorzije [@stiglitz2015; @gruber2019]. U središtu je ključni problem: svaki porez istovremeno redistribuira dohodak i narušava ekonomske poticaje.
+
+**Ramseyevo pravilo** [@ramsey1927] — kako rasporediti poreze na različita dobra uz minimizaciju mrtvog tereta: dobra s *neelastičnom* potražnjom trebaju biti relativno više oporezovana. Intuicija je jasna — porez na neelastično dobro uzrokuje manji pad količine i manji mrtvi teret. Upravo zato se visoke trošarine primjenjuju na gorivo i duhan. Ograničenje: potpuno zanemaruje pitanje pravednosti.
+
+**Mirrleesov model** [@mirrlees1971] — proširuje teoriju na oporezivanje dohotka uz problem asimetričnih informacija: država ne može izravno promatrati sposobnost pojedinca, nego samo ostvareni dohodak. Optimalne porezne stope ne smiju biti previsoke (destimuliraju rad) ni preniske (redistribucija izostaje). Optimum ovisi o elastičnosti ponude rada i društvenim preferencijama prema nejednakosti.
+
+Porezi na rad stvaraju distorzije kroz dva kanala: *supstitucijski učinak* (manje rada zbog niže neto nadnice) i *dohodovni učinak* (više rada kako bi se nadoknadio gubitak dohotka). Interakcija tih dvaju učinaka može rezultirati tzv. **unazad savijenom krivuljom ponude rada**.
+
+**Atkinson–Stiglitz teorem** [@atkinson1980] — ako je porez na dohodak optimalno dizajniran, tada diferencirano oporezivanje potrošnje nije potrebno. Teorijski, optimalan sustav PDV-a imao bi jedinstvenu stopu bez izuzetaka, no u praksi gotovo sve zemlje koriste snižene stope za osnovna dobra.
+
+**Progresivno oporezivanje i teorija žrtve** — temeljni argument za progresivnost jest opadajuća granična korisnost dohotka. Teorija žrtve razvija tri varijante: jednaka apsolutna žrtva, jednaka proporcionalna žrtva i jednaka granična žrtva. Posljednja vodi do zaključka da je optimalno progresivno oporezivanje jer redistribucijom dohotka izjednačavamo granične korisnosti [@musgrave1989]. Suvremena teorija naglašava kompromis: progresivnost povećava pravednost, ali može stvoriti distorzije u ponašanju [@saez2001].
+
+**Lafferova krivulja** — porezni prihodi ne rastu linearno s poreznom stopom. Pri vrlo visokim stopama dolazi do smanjenja ekonomske aktivnosti i porezne osnovice, što može smanjiti ukupne prihode. Ključna poruka: ponašanje poreznih obveznika presudno je za dizajn porezne politike.
+
+## Vrste poreznih sustava
+
+Porezni sustavi mogu se klasificirati prema poreznoj osnovici [@gruber2019; @stiglitz2015]. Važno je naglasiti da u praksi gotovo nijedna zemlja ne koristi isključivo jedan tip — stvarni sustavi predstavljaju kombinaciju različitih oblika oporezivanja.
+
+**Dohodovno orijentirani sustavi** temelje se na oporezivanju dohotka pojedinaca i dobiti poduzeća. Često su progresivni, čime se ostvaruje redistributivna funkcija. Prednost leži u sposobnosti smanjenja nejednakosti; nedostatak je potencijalni negativni učinak visokih marginalnih stopa na poticaje za rad i investicije [@mirrlees1971].
+
+**Potrošno orijentirani sustavi** temelje se na oporezivanju potrošnje (PDV, trošarine). Izbjegavaju oporezivanje štednje, što može pozitivno utjecati na investicije i rast [@atkinson1980]. Administrativno su učinkoviti i stabilni, no imaju regresivan učinak jer siromašnija kućanstva troše veći dio dohotka.
+
+**Imovinski orijentirani sustavi** temelje se na oporezivanju vlasništva. Relativno manje narušavaju ekonomske odluke, osobito kod nepokretne imovine, i mogu pridonijeti smanjenju dugoročnih nejednakosti. Politički su nepopularni, pa su u mnogim zemljama slabo razvijeni.
+
+## Porezni sustavi u svijetu
+
+Razlike u razini i strukturi javne potrošnje među zemljama izuzetno su velike i odražavaju povijesni razvoj, institucionalni kapacitet, političke preferencije i razinu gospodarskog razvoja [@tanzi2011]. Ne postoji jedinstven optimalan porezni sustav koji bi se mogao jednostavno preslikati iz jedne zemlje u drugu [@alesina1995].
+
+**Anglo-saksonski model** (SAD, UK, Kanada, Australija) — relativno niže ukupno porezno opterećenje, veći oslonac na tržišne mehanizme, umjerenije stope poreza na dohodak, manji udio socijalnih doprinosa. Prednosti: veća fleksibilnost tržišta rada, snažniji poticaji za poduzetništvo i investicije. Nedostaci: slabija redistribucija, veća nejednakost [@barro1990].
+
+**Kontinentalno-europski model** (Njemačka, Francuska, Belgija, Austrija) — visoki porezi na dohodak i posebno visoki socijalni doprinosi, visok porezni klin. Prednosti: stabilno financiranje široke socijalne zaštite. Nedostaci: visok trošak rada, mogući negativni učinci na zaposlenost, osobito slabije kvalificiranih radnika [@alesina1995].
+
+**Nordijski model** (Švedska, Danska, Norveška, Finska) — visoko ukupno porezno opterećenje, široka porezna baza, snažna progresivnost, ali i znatan oslonac na PDV. Specifičnost nije samo u visini poreza, nego u kombinaciji visokih poreza, kvalitetnih javnih usluga, snažnih institucija i visokog povjerenja građana u državu. Visoki porezi imaju veću legitimnost jer građani osjećaju da dobivaju kvalitetne protuusluge [@tanzi2011].
+
+**Sustavi zemalja u razvoju** — zbog slabijih administrativnih kapaciteta i velike neformalne ekonomije, veći oslonac na poreze na potrošnju, trošarine i carine koji su tehnički lakši za prikupljanje. PDV se pokazao posebno važnim instrumentom modernizacije. Nedostatak: regresivniji učinci [@tanzi2011].
+
+**Flat tax sustavi** (Estonija, Latvija, Litva, Slovačka u određenim razdobljima) — jedinstvena stopa poreza na dohodak uz eventualni osobni odbitak. Prednosti: jednostavnost, niži administrativni troškovi, transparentnost. Nedostaci: ograničena redistribucijska moć [@alesina1995].
+
+Razlike među poreznim sustavima ne može se objasniti samo ekonomskim razlozima — jednako su važni kvaliteta institucija i povjerenje građana, političke preferencije, administrativni kapacitet i razina razvoja.
+
+| Porezni sustav | Glavne prednosti | Glavni nedostaci |
+|---|---|---|
+| Anglo-saksonski | Niže opterećenje; snažniji poticaji za rad i ulaganja | Slabija redistribucija; veća nejednakost |
+| Kontinentalno-europski | Stabilno financiranje socijalne zaštite | Visok porezni klin; mogući negativni učinci na zaposlenost |
+| Nordijski | Visoki prihodi; kvalitetne javne usluge; uspješno spajanje jednakosti i učinkovitosti | Zahtijeva snažne institucije; visoko porezno opterećenje |
+| Zemlje u razvoju (potrošni) | Lakša administracija; stabilniji prihodi | Regresivniji učinci; slabija redistribucija |
+| Flat tax | Jednostavnost; transparentnost; niži administrativni troškovi | Ograničena progresivnost; slabija redistribucijska funkcija |
+
+## Porezni sustavi u Europskoj uniji i Hrvatskoj
+
+### Porezni sustavi u Europskoj uniji
+
+Porezni sustav Europske unije specifičan je po tome što ne postoji jedinstveni „europski porezni sustav" u klasičnom smislu. Porezna suverenost i dalje je primarno u nadležnosti država članica, što znači da svaka država samostalno određuje porezne stope, osnovice i strukturu poreznog sustava. Ipak, zbog duboke ekonomske integracije i jedinstvenog tržišta, razvijen je niz pravila i mehanizama kojima se osigurava koordinacija i djelomična harmonizacija poreznih politika [@gruber2019].
+
+Ova kombinacija nacionalne autonomije i europske koordinacije proizlazi iz potrebe da se izbjegnu porezne prepreke slobodnom kretanju robe, usluga, kapitala i rada. Drugim riječima, porezni sustavi država članica moraju biti kompatibilni s funkcioniranjem jedinstvenog tržišta, ali istovremeno zadržavaju dovoljno fleksibilnosti da odražavaju nacionalne specifičnosti.
+
+Najviši stupanj harmonizacije postignut je u području neizravnih poreza, osobito kod poreza na dodanu vrijednost (PDV-a) i trošarina. EU direktive definiraju osnovna pravila PDV sustava, uključujući minimalne standardne stope, način obračuna i oporezivanje prekograničnih transakcija. Primjerice, države članice moraju imati standardnu stopu PDV-a od najmanje 15 %, iako stvarne stope često prelaze tu razinu. PDV je ključan ne samo kao nacionalni prihod, već i kao izvor vlastitih sredstava proračuna EU-a.
+
+Slično vrijedi i za trošarine, koje su harmonizirane kako bi se spriječile distorzije u trgovini određenim proizvodima, poput alkohola, duhana i energenata. Time se osigurava da razlike u oporezivanju ne potiču prekomjernu prekograničnu kupnju ili narušavaju tržišno natjecanje.
+
+Za razliku od neizravnih poreza, izravni porezi – poput poreza na dohodak i poreza na dobit – u znatno su manjoj mjeri harmonizirani. Države članice zadržavaju visoku razinu autonomije u njihovom oblikovanju, što dovodi do značajnih razlika među zemljama. Ipak, EU kroz različite inicijative nastoji smanjiti negativne učinke porezne konkurencije i spriječiti eroziju porezne osnovice i premještanje dobiti (BEPS). U tom kontekstu važnu ulogu imaju direktive o oporezivanju multinacionalnih kompanija, razmjeni poreznih informacija i minimalnom oporezivanju dobiti.
+
+Struktura poreznih prihoda u EU pokazuje određene zajedničke karakteristike. U prosjeku, najveći dio prihoda dolazi od oporezivanja rada, uključujući poreze na dohodak i socijalne doprinose. Slijede porezi na potrošnju, dok porezi na imovinu imaju relativno manji udio. Ovakva struktura povezana je s modelom socijalne države, u kojem država osigurava širok spektar javnih usluga i socijalnih transfera.
+
+Međutim, među državama članicama postoje značajne razlike. Neke zemlje, poput nordijskih, imaju visoke poreze i snažnu redistributivnu funkciju, dok druge primjenjuju niže porezne stope i veći naglasak stavljaju na poticanje investicija i konkurentnosti. Unatoč tim razlikama, dugoročni trendovi ukazuju na postupnu konvergenciju poreznih sustava, potaknutu integracijom tržišta i zajedničkim pravilima.
+
+### Osnove poreznog sustava u Hrvatskoj
+
+Porezni sustav Republike Hrvatske razvijen je u okviru tranzicije prema tržišnom gospodarstvu te je tijekom procesa pristupanja Europskoj uniji značajno usklađen s europskim pravilima. Danas predstavlja mješoviti porezni sustav, u kojem su zastupljeni porezi na dohodak, potrošnju i imovinu, ali s jasno izraženim naglaskom na određene izvore prihoda.
+
+Jedno od najvažnijih obilježja hrvatskog sustava jest snažna uloga poreza na potrošnju, prije svega poreza na dodanu vrijednost (PDV-a). Standardna stopa PDV-a u Hrvatskoj iznosi 25 %, što je među najvišim stopama u Europskoj uniji. Uz standardnu stopu, primjenjuju se i snižene stope:
+
+- 13 % (npr. na određene prehrambene proizvode, usluge u turizmu, energente)
+- 5 % (npr. na osnovne prehrambene proizvode, lijekove, knjige i novine)
+
+PDV je ključni izvor javnih prihoda, a njegova važnost proizlazi iz široke porezne osnovice i relativno učinkovite naplate. Upravo zbog toga Hrvatska, kao i mnoge zemlje srednje i istočne Europe, ima veći oslonac na potrošne poreze nego neke zapadnoeuropske zemlje.
+
+Uz PDV, važan dio sustava čine i trošarine, koje se primjenjuju na energente (gorivo, plin, električnu energiju), duhanske proizvode te alkohol i alkoholna pića. Ovi porezi imaju dvostruku funkciju: fiskalnu, jer generiraju značajne prihode, i korektivnu, jer utječu na smanjenje potrošnje proizvoda koji imaju negativne učinke na zdravlje ili okoliš.
+
+U području oporezivanja rada, Hrvatska primjenjuje porez na dohodak koji ima obilježja progresivnog sustava. Trenutno se primjenjuju dvije osnovne porezne stope:
+
+- 20 % na niže razine dohotka
+- 30 % na više razine dohotka
+
+Osim toga, jedinice lokalne samouprave mogu propisati lokalni prirez, koji dodatno povećava efektivno porezno opterećenje. Porez na dohodak uključuje i osobni odbitak, čime se smanjuje porezno opterećenje nižih dohodaka i povećava progresivnost sustava.
+
+Međutim, ukupno opterećenje rada u Hrvatskoj ne proizlazi samo iz poreza na dohodak, već i iz socijalnih doprinosa, koji čine značajan dio troška rada. Najvažniji doprinosi uključuju:
+
+- mirovinsko osiguranje: 20 % bruto plaće (15 % za prvi stup i 5 % za drugi stup)
+- zdravstveno osiguranje: 16,5 % bruto plaće (plaća poslodavac)
+
+Zbog kombinacije poreza na dohodak i doprinosa, ukupni porezni klin na rad relativno je visok, što može utjecati na ponudu rada i konkurentnost gospodarstva [@simovic2022].
+
+Porez na dobit u Hrvatskoj ima proporcionalnu strukturu i relativno konkurentne stope:
+
+- 10 % za male poduzetnike (do određenog praga prihoda)
+- 18 % za veće poduzetnike
+
+Ovakva struktura osmišljena je kako bi se potaknulo poduzetništvo i investicije, osobito u malim i srednjim poduzećima. Uz to, postoje i različite porezne olakšice i poticaji, primjerice za ulaganja, istraživanje i razvoj te zapošljavanje.
+
+Za razliku od poreza na rad i potrošnju, oporezivanje imovine u Hrvatskoj relativno je slabo razvijeno. Ne postoji klasični godišnji porez na nekretnine u punom smislu, već se primjenjuju porez na promet nekretnina (3 % vrijednosti) te lokalni porezi i komunalne naknade. Zbog toga porezi na imovinu imaju relativno mali udio u ukupnim poreznim prihodima, što Hrvatsku razlikuje od nekih razvijenijih zemalja u kojima je ovaj oblik oporezivanja značajniji.

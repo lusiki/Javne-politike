@@ -1,0 +1,8 @@
+---
+title: "7. Tko odlučuje kad svi odlučujemo?"
+---
+
+- Kako skupine donose odluke (i zašto to ponekad ne ide)?
+- Što nam govore teorije preferencija i glasovanja?
+- Arrowljev teorem i problemi kolektivnog izbora
+- Zašto kompromisi znaju stvoriti čudne rezultate?

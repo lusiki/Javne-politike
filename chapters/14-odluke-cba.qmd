@@ -1,0 +1,15 @@
+---
+title: "14. Kako se donose pametne (ili ne baš) odluke?"
+---
+
+::: {.callout-note}
+Ovo poglavlje je u pripremi.
+:::
+
+## Sadržaj poglavlja
+
+- Analiza javnih politika i institucionalni dizajn
+- Cost-benefit analiza u političkom kontekstu
+- Evaluacija javnih politika
+- Uloga institucija u oblikovanju ponašanja aktera
+- Kako mjeriti uspjeh ili neuspjeh politike?

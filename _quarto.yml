@@ -50,24 +50,26 @@ book:
       chapters:
         - chapters/01-pristupi.qmd
         - chapters/02-zasto-drzava.qmd
-        - chapters/03-institucije.qmd
-        - chapters/04-konstitucionalna.qmd
+        - chapters/03-musgrave.qmd
+        - chapters/04-institucije.qmd
+        - chapters/05-konstitucionalna.qmd
     - part: "DIO II: JAVNI IZBOR – ŠTO, KAKO I ZAŠTO?"
       chapters:
-        - chapters/05-javni-izbor.qmd
-        - chapters/06-kako-odlucujemo.qmd
-        - chapters/07-glasovanje.qmd
-        - chapters/08-stranke-kandidati.qmd
-        - chapters/09-birokrati.qmd
-        - chapters/10-interesne-skupine.qmd
+        - chapters/06-javni-izbor.qmd
+        - chapters/07-kako-odlucujemo.qmd
+        - chapters/08-glasovanje.qmd
+        - chapters/09-stranke-kandidati.qmd
+        - chapters/10-birokrati.qmd
+        - chapters/11-interesne-skupine.qmd
     - part: "DIO III: JAVNE FINANCIJE I JAVNE POLITIKE U PRAKSI"
       chapters:
-        - chapters/11-drzavna-potrosnja.qmd
-        - chapters/12-porezi.qmd
-        - chapters/13-odluke-reforme.qmd
+        - chapters/12-drzavna-potrosnja.qmd
+        - chapters/13-porezi.qmd
+        - chapters/14-odluke-cba.qmd
+        - chapters/15-odluke-reforme.qmd
     - part: "Za kraj"
       chapters:
-        - chapters/14-zakljucak.qmd
+        - chapters/16-zakljucak.qmd
 
   appendices:
     - references.qmd
