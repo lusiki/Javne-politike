@@ -1,69 +1,44 @@
 ---
 title: "Dobrodošli"
-author:
-  - name: "Milan Deskar-Škrbić"
-    email: "milan.deskar-skrbic@hnb.hr"
-    url: "https://zsem.hr/clanovi/dr-sc-milan-deskar-skrbic/"
-    attributes:
-      equal-contributor: true
-  - name: "Petra Palić"
-    email: "petra.palic@unicath.hr"
-    url: "https://www.unicath.hr/odjeli-i-fakultet/nastavnici/petra-palic"
-    attributes:
-      equal-contributor: true
-  - name: "Luka Sikić"
-    email: "luka.sikic@unicath.hr"
-    url: "https://www.unicath.hr/odjeli-i-fakultet/nastavnici/luka-sikic"
-    attributes:
-      equal-contributor: true
 ---
 
 ![](images/Pic.png){fig-align="center" width="100%" fig-cap-location="none"}
 
-Zamislite da sjedite u kafiću i čitate vijest: Vlada povisuje PDV na određene proizvode. Prva reakcija je obično frustracija, možda ljutnja. Ali pitanje koje rijetko tko postavi, a koje je zapravo jedino korisno, glasi: **zašto?** Ne u smislu političke retorike kojom će ministar objasniti odluku na konferenciji za novinare, nego u analitičkom smislu – koji su mehanizmi, poticaji i pritisci doveli do toga da se baš ta odluka donese u baš ovom trenutku, tko od nje ima koristi, a tko snosi trošak?
+## Zašto bismo otvorili ovu knjigu?
 
-Ova knjiga postoji da vam omogući postavljanje takvih pitanja – ne s pozicije ideologije, frustracije ili cinizma, nego s pozicije analitičkog razumijevanja. Napisana je za studente i za sve koji žele razumjeti logiku koja stoji iza političkih odluka u Hrvatskoj; logiku koja se na prvi pogled čini nelogičnom, ali koja postaje savršeno razumljiva kada shvatite pravila igre.
+Zamislite da možete "zaviriti iza kulisa" politike. Ne samo gledati što političari govore, nego razumjeti zašto donose odluke koje donose, zašto neke politike opstaju desetljećima iako su očito loše, zašto se porezi povećavaju baš kad se ne očekuje, ili zašto se reforme najavljuju glasno – a provedu tiho ili nikako. Zamislite da možete prepoznati obrasce iza političkih odluka, vidjeti tko dobiva, tko gubi i zašto, te unaprijed naslutiti kako će određena politika završiti prije nego što se uopće provede.
 
-## Polazište: politika bez romantike
+Ova knjiga polazi od jednostavne, ali često zanemarene ideje: javne politike oblikuju gotovo svaki aspekt našeg života. One određuju koliko ćemo plaćati poreze, kakvo ćemo obrazovanje imati, koliko će zdravstvo biti dostupno, kako će se reagirati na krize i koliko će društvo biti pravedno ili nejednako. One utječu na to gdje ćemo raditi, koliko ćemo zarađivati, hoćemo li pokrenuti posao ili otići iz zemlje. Drugim riječima, javne politike nisu apstraktne – one su naša svakodnevna realnost, često nevidljiva dok ne počne stvarati probleme.
 
-Temelj knjige je **teorija javnog izbora** (engl. *Public Choice Theory*), disciplina koju je James Buchanan, dobitnik Nobelove nagrade za ekonomiju, opisao kao *„politiku bez romantike"*. Umjesto da pretpostavljamo da političari, birokrati i birači djeluju u ime nekog apstraktnog „općeg dobra", javni izbor primjenjuje ekonomsku logiku na političke procese. Polazište je jednostavno: svi sudionici političkog sustava racionalni su pojedinci koji reagiraju na poticaje. **Kada razumijete poticaje, razumijete i ishode.**
+No upravo zato što su svugdje oko nas, često ih uzimamo zdravo za gotovo. Vidimo njihove posljedice, ali rijetko razumijemo mehanizme koji do njih vode. Zašto se neke loše politike ne ukidaju? Zašto se dobre ideje ne provode? Zašto se javni novac ponekad troši na načine koji se čine nelogičnima? Zašto politički sustavi proizvode ishode koji frustriraju i birače i stručnjake?
 
-Ovaj pristup ne tvrdi da su političari cinici, a birači neznalice. Tvrdi nešto puno korisnije: da su pravila igre – ustavna, institucionalna, izborna – ta koja oblikuju ponašanje svih sudionika. Zato se loši ishodi rijetko popravljaju zamjenom ljudi na vlasti, a često popravljaju promjenom pravila.
+Ako su javne politike toliko važne, postavlja se ključno pitanje: zašto ih je tako teško razumjeti?
 
-## Što ćete naučiti
+Dio odgovora leži u činjenici da se javne politike često promatraju iz jedne perspektive – političke, pravne ili ideološke. Promatramo ih kroz sukob stranaka, kroz pravne norme ili kroz vrijednosne sudove o tome što je "dobro" ili "loše". No takav pogled gotovo uvijek ostaje nepotpun. Ova knjiga ide korak dalje i pokazuje da javne politike ne možemo razumjeti bez istovremenog uvida u ekonomiju, politiku i institucije.
 
-Knjiga je organizirana u tri dijela koji grade jedan na drugome:
+Ekonomija nam objašnjava kako ljudi reagiraju na poticaje – kako porezi mijenjaju ponašanje, kako subvencije utječu na odluke i zašto čak i male promjene pravila mogu imati velike posljedice. Politika nam pokazuje tko odlučuje i zašto, kako nastaju koalicije, kako funkcionira natjecanje za glasove i zašto političari često biraju ono što je politički oportuno, a ne nužno društveno optimalno. Institucije, naposljetku, određuju pravila igre – ograničenja i mogućnosti unutar kojih svi akteri djeluju. Tek kada spojimo ta tri elementa, počinjemo vidjeti cjelovitu sliku.
 
-**Dio I – Država, javne politike i temeljni pristupi analizi.** Postavljamo teorijske temelje: razliku između pozitivističkog i normativnog pristupa, razloge zbog kojih država uopće postoji (tržišni neuspjesi, javna dobra, eksternalije), ulogu institucija kao „pravila igre" te važnost ustavnih ograničenja koja discipliniraju političku moć.
+U tom smislu, ova knjiga ne nudi samo odgovore, nego i način razmišljanja. Ona vas uvodi u dva temeljna pristupa analizi javnih politika koji se često promatraju odvojeno, ali se u stvarnosti ne mogu razdvojiti. S jedne strane, tu je normativni pristup, koji postavlja pitanje: kakve bi politike trebale biti? Što znači pravedan porezni sustav? Kako postići veću učinkovitost, ali i veću jednakost? Kako mjerimo "dobru" politiku?
 
-**Dio II – Javni izbor: što, kako i zašto.** Ulazimo u mehaniku političkog odlučivanja. Kako birači glasaju i zašto racionalan birač ponekad ne izađe na izbore? Kako stranke oblikuju programe i zašto se njihovi programi često „skupljaju oko sredine"? Što stvarno motivira birokrate – i tko uopće upravlja državom između dva izborna ciklusa? Kako interesne skupine pretvaraju koncentrirane koristi u zakone, dok troškove raspoređuju na sve nas?
+S druge strane, tu je pozitivistički pristup, koji nas vraća u stvarni svijet i pita: kako se politike stvarno donose? Zašto političari često ne rade ono što bi "trebali"? Kako interesi, institucije i poticaji oblikuju konačne odluke? Zašto racionalne ideje često završavaju kao politički kompromisi – ili uopće ne zažive?
 
-**Dio III – Javne financije i javne politike u praksi.** Konačno, od teorije prelazimo na brojke. Koliko država troši, na što i zašto baš toliko? Kako prikupljamo porezne prihode i koje su stvarne posljedice različitih poreznih oblika? I, najvažnije – kako dizajnirati bolje politike i provoditi reforme koje preživljavaju političke cikluse?
+Najzanimljiviji dio počinje upravo tamo gdje se ta dva pristupa susreću. Jer svijet javnih politika nije svijet idealnih rješenja, nego svijet kompromisa, ograničenja i nepredvidivih ishoda. To je svijet u kojem dobre ideje mogu propasti, loše ideje opstati, a najbolja rješenja često nisu ona koja su teorijski optimalna, nego ona koja su politički i institucionalno izvediva.
 
-Kroz cijelu knjigu koristimo **stvarne podatke iz hrvatskog konteksta**. Ne govorimo o apstraktnim državama i hipotetskim biračima, nego o hrvatskom proračunu, hrvatskim izborima, hrvatskim institucijama. Svaki koncept je utemeljen u stvarnosti koju čitate u novinama i doživljavate kao građani.
+Upravo zato ova knjiga odbacuje pojednostavljene priče o državi. Država nije samo "rješenje" koje ispravlja tržišne neuspjehe, ali nije ni samo "problem" koji stvara neefikasnost i birokraciju. Ona je složen sustav odluka, poticaja i pravila, u kojem sudjeluju političari, birači, birokrati i interesne skupine – svi sa svojim ciljevima, informacijama i ograničenjima. Ponekad djeluju u javnom interesu, ponekad u vlastitom, a najčešće negdje između.
 
-## Zašto baš ovaj pristup
+Razumjeti državu znači razumjeti kako se ti interesi prelamaju kroz institucije i pretvaraju u konkretne politike. To znači razumjeti zašto se javni novac troši na određeni način, zašto se reforme događaju (ili ne događaju), zašto neki sustavi funkcioniraju bolje od drugih i kako se pravila mogu promijeniti da bi ishodi bili bolji.
 
-Postoji mnogo knjiga o javnim politikama. Većina ih pada u jednu od dvije krajnosti: ili su čisto deskriptivne („ovako funkcioniraju institucije") ili čisto normativne („ovako bi trebale funkcionirati"). Ova knjiga nudi treću putanju – **analitički okvir koji objašnjava zašto institucije funkcioniraju baš tako kako funkcioniraju, i pod kojim uvjetima ih je moguće mijenjati.**
+Kako bismo to postigli, knjiga je strukturirana u tri međusobno povezana dijela.
 
-To znači da ćete umjesto gotovih odgovora dobiti alate za postavljanje pravih pitanja. Kada sljedeći put pročitate vijest o novom zakonu, poreznoj reformi ili javnoj nabavi, nećete se pitati samo je li to „dobro" ili „loše" – pitat ćete se *koga nagrađuje, koga košta, koja je ravnoteža interesa iza te odluke i je li ona stabilna*.
+U **Dijelu I** postavljamo teorijske temelje. Objašnjavamo kako razmišljati o javnim politikama kroz normativni i pozitivistički pristup, zašto država uopće postoji i koju ulogu ima u gospodarstvu. Upoznajemo se s klasičnom analizom javnih financija, ali i s modernijim pristupima poput nove institucionalne ekonomike i konstitucionalne ekonomike, koji naglašavaju važnost pravila, institucija i dugoročnih ograničenja političkog djelovanja.
 
-## Kome je knjiga namijenjena
+U **Dijelu II** ulazimo u stvarni svijet politike kroz teoriju javnog izbora. Ovdje analiziramo kako se odluke stvarno donose: kako glasuju birači, kako se natječu političke stranke, kako djeluju birokrati i interesne skupine. Ovaj dio pokazuje zašto politički sustavi često proizvode ishode koji odstupaju od teorijskih ideala.
 
-Primarno je namijenjena studentima političkih znanosti, javne uprave, ekonomije i srodnih disciplina. Ali napisana je tako da je može koristiti svatko tko želi razumjeti kako funkcionira država, bez obzira na prethodno obrazovanje. **Ne trebate biti ekonomist da biste razumjeli javni izbor.** Trebate samo biti spremni napustiti romantičnu predodžbu o politici i prihvatiti analitičku.
+U **Dijelu III** fokus se prebacuje na konkretne javne politike i javne financije. Analiziramo kako država prikuplja i troši sredstva, kako dizajn poreza i rashoda utječe na društvo te kako se politike mogu evaluirati i unaprijediti. Poseban naglasak stavlja se na pitanje reformi: kako, unatoč političkim i institucionalnim ograničenjima, dizajnirati učinkovit i održiv javni sektor.
 
-Novinarima, analitičarima javnih politika, zaposlenicima u javnoj upravi i članovima civilnog društva knjiga nudi zajednički rječnik i analitički okvir za razgovor o institucijama i reformama – onaj koji nadilazi dnevnopolitičke podjele.
+Ako želite razumjeti zašto se politike oblikuju na način na koji se oblikuju, zašto često ne daju očekivane rezultate i kako ih možemo učiniti boljima, ova knjiga je upravo za to. Ona je poziv da izađete iz površinskog promatranja politike i uđete u njezinu unutarnju logiku.
 
-## Kako koristiti ovu knjigu
-
-Ovo je **interaktivna knjiga za digitalno doba.** Gdje god je to imalo smisla, umjesto statičnih tablica i grafikona koristimo interaktivne vizualizacije koje možete istraživati sami. Iza svake vizualizacije stoji kod koji ju je proizveo, vidljiv jednim klikom – tako da možete ne samo razumjeti zaključke, nego i provjeriti kako smo do njih došli te ponoviti analizu s vlastitim pitanjima.
-
-Cijeli sadržaj je otvoren i besplatan, objavljen kao *open-source* projekt na GitHubu. Ako primijetite grešku ili imate prijedlog, pozivamo vas da otvorite *issue* ili predložite izmjenu izravno na repozitoriju. Knjigu zamišljamo kao živi dokument koji raste i popravlja se zajedno sa svojim čitateljima.
-
-::: {.callout-tip}
-## Prije nego započnete
-Preporučujemo čitanje redom, od prvog poglavlja prema posljednjem, jer svako poglavlje gradi na konceptima iz prethodnih. Ako vas zanima specifična tema – poput poreznog sustava ili interesnih skupina – slobodno skočite izravno na nju. Navigacija lijevo omogućuje brz pristup bilo kojem dijelu knjige, a tražilica pretražuje cijeli sadržaj.
-:::
+Ona vas neće naučiti samo što misliti o javnim politikama. Naučit će vas kako o njima razmišljati – kritički, analitički i s razumijevanjem stvarnih ograničenja svijeta u kojem živimo.
 
 ## Mali primjer – jedan grafikon, mnogo pitanja
 

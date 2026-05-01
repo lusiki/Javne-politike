@@ -46,9 +46,6 @@ book:
 
   chapters:
     - index.qmd
-    - part: "Prije početka"
-      chapters:
-        - chapters/00-uvod.qmd
     - part: "DIO I: DRŽAVA, JAVNE POLITIKE I TEMELJNI PRISTUPI ANALIZI"
       chapters:
         - chapters/01-pristupi.qmd
