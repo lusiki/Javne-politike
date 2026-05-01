@@ -39,7 +39,7 @@ book:
   sidebar:
     style: docked
     background: light
-    collapse-level: 2
+    collapse-level: 3
 
   page-footer:
     center: "© 2026 Deskar-Škrbić, Palić, Šikić | Javne politike u Hrvatskoj"
