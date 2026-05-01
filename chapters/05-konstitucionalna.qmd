@@ -2,38 +2,56 @@
 title: "5. Konstitucionalna ekonomika"
 ---
 
+U prethodnom poglavlju vidjeli smo kako nova institucionalna ekonomika objašnjava funkcioniranje javnog sektora kroz koncepte poput transakcijskih troškova i principal–agent problema. Ti pristupi jasno pokazuju da ishodi javnih politika ne ovise samo o dobrim namjerama, političkim programima ili sofisticiranim ekonomskim modelima, nego prije svega o institucionalnom okviru unutar kojeg se odluke donose i provode. Na toj se osnovi razvija **ustavna ekonomika**, koja ide korak dalje i postavlja jedno dublje i dugoročnije pitanje: kako unaprijed dizajnirati pravila igre tako da ograniče loše ishode javnih odluka i povećaju vjerojatnost dobrih?
+
 ## Razlika između odlučivanja unutar pravila i odlučivanja o pravilima
 
-::: {.callout-note}
-Ovaj odjeljak je u pripremi.
-:::
+Jedan od najvažnijih doprinosa ustavne ekonomike jest jasno razlikovanje između dvije razine odlučivanja: **ustavne (konstitucionalne)** i **operativne (postkonstitucionalne)**. Ova distinkcija, koju posebno naglašava James M. Buchanan, ključna je za razumijevanje kako nastaju ishodi javnih politika i zašto oni često odstupaju od društveno optimalnih rezultata.
+
+Na operativnoj razini donose se svakodnevne političke odluke – o visini poreza, strukturi javne potrošnje, subvencijama, regulaciji tržišta ili socijalnim programima. To su odluke koje su vidljive građanima i koje imaju neposredan utjecaj na gospodarstvo i životni standard. Upravo se na toj razini najčešće vodi javna rasprava i politička borba.
+
+Međutim, ustavna ekonomika upozorava da se prava „pravila igre" ne određuju na toj razini, nego na ustavnoj razini, gdje društvo definira okvire, ograničenja i procedure unutar kojih se operativne odluke mogu donositi. Ta pravila uključuju, primjerice, fiskalna ograničenja, način donošenja zakona, podjelu vlasti, neovisnost institucija i mehanizme odgovornosti. Ova razlika je presudna jer mnogi problemi javnih politika ne proizlaze iz jedne pogrešne odluke, nego iz institucionalnog okvira koji sustavno generira takve odluke.
+
+## Što je ustavna ekonomika
+
+Ustavna ekonomika proučava pravila koja oblikuju političko i ekonomsko odlučivanje, odnosno ono što se često naziva „pravila o pravilima". Za razliku od standardne ekonomske analize koja se bavi izborom optimalnih politika, ustavna ekonomika postavlja dublje pitanje: kako treba izgledati institucionalni okvir unutar kojeg se takve odluke donose.
+
+Ovu su disciplinu razvili @buchanan1962, koji su u svojem djelu *The Calculus of Consent* postavili temelje analize političkog odlučivanja iz perspektive ekonomskih poticaja. Njihov pristup predstavlja važan odmak od tradicionalnog pogleda na državu kao neutralnog i benevolentnog aktera. Umjesto toga, oni polaze od pretpostavke da su političari, birokrati i interesne skupine motivirani vlastitim interesima, baš kao i sudionici na tržištu. Njihova temeljna ideja može se izraziti jednostavno: ako znamo da akteri u političkom sustavu slijede vlastite interese, tada moramo dizajnirati institucije koje će te interese usmjeriti prema društveno poželjnim ishodima.
 
 ## Zašto su ustavna i institucionalna ograničenja važna
 
-::: {.callout-note}
-Ovaj odjeljak je u pripremi.
-:::
+U stvarnom svijetu ne postoji savršena informiranost niti savršena usklađenost ciljeva. Naprotiv, javni sektor karakteriziraju sukobi interesa između različitih društvenih skupina, ograničene i asimetrične informacije zbog kojih građani ne mogu u potpunosti nadzirati donositelje odluka te poticaji za oportunističko ponašanje, uključujući rent-seeking i politički oportunizam.
+
+Ustavna ekonomika zato ne nastoji te probleme rješavati ex post, kroz korektivne politike ili ad hoc intervencije, nego ex ante – kroz dizajn pravila koja ograničavaju prostor za nepoželjna ponašanja. Fokus se time premješta s pojedinačnih odluka na institucionalni okvir koji oblikuje sve buduće odluke. Važna implikacija ovog pristupa jest da kvaliteta javnih politika ne ovisi samo o stručnosti ili dobrim namjerama donositelja odluka, nego o tome jesu li pravila sustava dobro postavljena. Ako su pravila loša, čak i dobronamjerni akteri mogu proizvoditi loše ishode; ako su pravila dobra, čak i akteri vođeni vlastitim interesima mogu generirati rezultate koji su u skladu s javnim interesom.
 
 ## Buchanan i logika pravila
 
-::: {.callout-note}
-Ovaj odjeljak je u pripremi.
-:::
+Buchanan i Tullock naglašavaju da se u politici moraju razlikovati dvije razine analize: ustavna razina, na kojoj se biraju i definiraju pravila igre, te post-ustavna razina, na kojoj se unutar postojećih pravila odlučuje o konkretnim političkim pitanjima. Pritom na ustavnoj razini pojedinci djeluju iza „zavjese neizvjesnosti" sličnoj Rawlsovom konceptu „zavjese neznanja" – ne znaju kakvu će poziciju u društvu zauzeti te stoga imaju poticaj dizajnirati pravedna i stabilna pravila igre. Takav pristup ima za cilj ograničiti proizvoljnost većine i smanjiti mogućnost eksploatacije manjina, ističući važnost ustavnih ograničenja nad diskrecijskim odlukama političara.
+
+Središnja poruka konstitucionalne perspektive glasi da dobro definirana pravila igre mogu ograničiti negativne ishode političkog procesa. Umjesto da se fokusira na redistribucijske politike ili pojedinačne programe, ova škola misli naglašava važnost uspostave mehanizama koji sprječavaju zloupotrebu moći i potiču odgovornost. Time se konstitucionalna politička ekonomija pozicionira kao most između ekonomije, političke filozofije i prava.
 
 ## Fiskalna pravila, ograničenja duga i diskrecije
 
-::: {.callout-note}
-Ovaj odjeljak je u pripremi.
-:::
+Primjer fiskalne politike jasno ilustrira važnost ustavnih ograničenja. U odsustvu čvrstih pravila o proračunskoj disciplini, političari imaju snažan poticaj povećavati javnu potrošnju ili smanjivati poreze kako bi ostvarili kratkoročne političke koristi. Trošak takvih odluka – u obliku većeg javnog duga ili budućih poreznih opterećenja – prebacuje se na buduće generacije.
+
+Upravo zato se u fiskalnoj politici razvijaju različiti institucionalni mehanizmi. **Srednjoročni proračunski okviri** usmjeravaju fiskalnu politiku prema višegodišnjim ciljevima, smanjujući prostor za ad hoc odluke. **Automatski stabilizatori**, poput progresivnog poreznog sustava i naknada za nezaposlene, omogućuju protucikličko djelovanje bez potrebe za izravnom političkom intervencijom. **Neovisna fiskalna vijeća** dodatno povećavaju transparentnost i nadzor, procjenjujući vjerodostojnost proračunskih projekcija i upozoravajući na fiskalne rizike. U europskom kontekstu, važnu ulogu imaju i fiskalna pravila na razini Europske unije, poput Pakta o stabilnosti i rastu, koja nastoje ograničiti prekomjerne deficite i dugove država članica.
 
 ## Vjerodostojnost, vremenska nedosljednost i dugoročna stabilnost
 
-::: {.callout-note}
-Ovaj odjeljak je u pripremi.
-:::
+**Vremenska nedosljednost** (*time inconsistency*) javnih politika situacija je u kojoj je neka politika optimalna iz dugoročne perspektive, ali ju je teško ili politički neisplativo provoditi u kratkom roku. Ovaj je koncept razvili @kydland1977, pokazujući da diskrecijska politika često vodi do ishoda koji su inferiorni u odnosu na politike temeljene na pravilima.
+
+Suština problema leži u tome što se preferencije donositelja odluka mijenjaju kroz vrijeme, osobito pod utjecajem političkih ciklusa. Ono što je optimalno „danas za sutra" često nije optimalno „sutra za danas". U političkom kontekstu to znači da vlasti mogu najaviti dugoročno odgovornu politiku, ali kasnije odustati od nje kada se suoče s kratkoročnim političkim troškovima, poput nezadovoljstva birača ili smanjenja popularnosti.
+
+Najklasičniji primjer nalazi se u fiskalnoj politici. Dugoročno, stabilne javne financije – umjeren deficit i održiv javni dug – predstavljaju temelj makroekonomske stabilnosti. Međutim, u kratkom roku političari imaju snažan poticaj povećavati javnu potrošnju ili smanjivati poreze, osobito uoči izbora. Rezultat je pojava tzv. **proračunsko-političkih ciklusa**, u kojima vlade prije izbora provode ekspanzivnu fiskalnu politiku, dok se nakon izbora suočavaju s potrebom fiskalne prilagodbe – često kroz povećanje poreza ili smanjenje rashoda. Dugoročna posljedica takvog ponašanja je akumulacija javnog duga i smanjena fiskalna održivost.
+
+Važno je naglasiti da ovaj problem nije posljedica nužno „loših" političara, nego strukture poticaja unutar političkog sustava. U uvjetima demokratske konkurencije, političari reagiraju na očekivanja birača, a birači često preferiraju kratkoročne koristi u odnosu na dugoročne troškove. Time se stvara začarani krug u kojem racionalno ponašanje pojedinačnih aktera vodi do kolektivno neoptimalnih ishoda.
+
+Slični problemi vremenske nedosljednosti javljaju se i u monetarnoj politici, gdje vlasti mogu imati poticaj generirati neočekivanu inflaciju kako bi kratkoročno smanjile nezaposlenost, ali takva politika dugoročno dovodi do gubitka vjerodostojnosti i više inflacije bez realnih koristi [@rogoff1985]. Upravo je zbog toga u mnogim zemljama uvedena neovisnost središnjih banaka kao institucionalni odgovor na problem vremenske nedosljednosti.
 
 ## Kako dizajnirati pravila koja ograničavaju loše političke poticaje
 
-::: {.callout-note}
-Ovaj odjeljak je u pripremi.
-:::
+Ustavna ekonomika na problem vremenske nedosljednosti i loših poticaja odgovara zagovarajući **pravila umjesto diskrecije**. Ideja je jednostavna: ako političari imaju poticaj odstupiti od optimalne politike u budućnosti, potrebno je unaprijed uspostaviti institucionalna ograničenja koja takvo odstupanje čine težim ili skupljim.
+
+Ključna svrha svih tih mehanizama jest povećati **vjerodostojnost** (*credibility*) javnih politika. Kada su pravila jasna i dugoročno održiva, ekonomski akteri – građani, poduzeća i investitori – imaju veće povjerenje u stabilnost sustava. To smanjuje neizvjesnost, potiče investicije i pridonosi stabilnijem gospodarskom rastu. Neovisnost središnje banke, primjerice, može se interpretirati kao institucionalni odgovor na problem političkog utjecaja na monetarnu politiku. Pravila transparentnosti i javne odgovornosti smanjuju asimetriju informacija između građana i donositelja odluka, čime se ublažava principal–agent problem.
+
+Važno je i naglasiti da ustavna razina odlučivanja ima dodatnu dimenziju – ona je tipično dugoročnija i stabilnija od operativne razine. Dok se operativne politike mogu mijenjati relativno brzo, ustavna pravila mijenjaju se sporije i zahtijevaju širi društveni konsenzus. Upravo zato ona imaju ključnu ulogu u osiguravanju predvidljivosti i vjerodostojnosti javnih politika. Zaključno, razlikovanje između pravila i odluka pokazuje da ključni izazov nije samo donijeti „pravu" odluku, nego stvoriti sustav u kojem će se takve odluke donositi sustavno i dosljedno.

@@ -2,44 +2,66 @@
 title: "4. Nova institucionalna ekonomika"
 ---
 
+Jedan od najvažnijih pomaka u razumijevanju ekonomskih procesa u posljednjih nekoliko desetljeća odnosi se na prepoznavanje ključne uloge institucija u oblikovanju ekonomskih ishoda. Tradicionalna neoklasična ekonomija dugo je polazila od pretpostavke da tržišta funkcioniraju unutar „zadanog" institucionalnog okvira, pri čemu su pravila igre implicitno stabilna, neutralna i učinkovita. Međutim, iskustvo različitih zemalja – od tranzicijskih ekonomija srednje i istočne Europe do zemalja Latinske Amerike i Afrike – pokazalo je da upravo razlike u tim pravilima često objašnjavaju razlike u stopama rasta, investicijama i razini blagostanja.
+
+Upravo kao odgovor na ta ograničenja razvija se **nova institucionalna ekonomika**, koja naglašava da su institucije temeljni determinant ekonomskog ponašanja i performansi [@north1990]. U tom pristupu ekonomija se više ne promatra isključivo kao sustav razmjene dobara i usluga, već kao sustav interakcija unutar određenog skupa pravila, ograničenja i poticaja. Time se fokus analize pomiče s apstraktnih tržišta na konkretne institucionalne aranžmane koji oblikuju ponašanje pojedinaca i poduzeća.
+
 ## Zašto institucije oblikuju ekonomske i političke ishode
 
-::: {.callout-note}
-Ovaj odjeljak je u pripremi.
-:::
+U svakodnevnom životu često uzimamo zdravo za gotovo da ugovori vrijede, da su porezna pravila jasna, da država ne može proizvoljno oduzimati imovinu ili da se javni dug ne povećava bez ograničenja. No sve su to rezultati institucionalnog okvira – formalnih i neformalnih pravila koja definiraju kako funkcionira gospodarstvo. Kada su ta pravila jasna, stabilna i vjerodostojna, smanjuju se neizvjesnost i transakcijski troškovi, potiču se investicije i dugoročni rast. Kada su loša ili nestabilna, čak i najbolje ekonomske politike mogu dati slabe rezultate.
+
+Dok nova institucionalna ekonomika objašnjava kako institucije utječu na ekonomske ishode, ustavna ekonomika ide korak dalje i postavlja pitanje kako ta pravila oblikovati tako da ograniče kratkoročne političke poticaje i osiguraju dugoročnu održivost javnih politika. To je posebno važno u javnim financijama, gdje problemi poput rasta javnog duga ili neučinkovite potrošnje često proizlaze iz samog institucionalnog okvira, a ne samo iz pojedinačnih odluka. Zato razumijevanje političkih procesa i ekonomije danas nužno uključuje razumijevanje institucija – jer su pravila igre jednako važna kao i sama igra.
 
 ## Institucije kao "pravila igre"
 
-::: {.callout-note}
-Ovaj odjeljak je u pripremi.
-:::
+Prema klasičnoj definiciji Douglassa Northa, institucije su „pravila igre u društvu", odnosno formalna i neformalna ograničenja koja strukturiraju ljudsku interakciju [@north1990]. Ta pravila obuhvaćaju **formalna pravila** – ustave, zakone, regulacije, porezne sustave i ugovore – te **neformalne norme** – običaje, društvene norme, razinu povjerenja, kulturne obrasce i očekivanja.
 
-## Transakcijski troškovi, vlasnička prava i ugovori
+Ključno je naglasiti da institucije nisu samo zakoni na papiru, nego uključuju i njihovu provedbu te društveni kontekst u kojem djeluju. Primjerice, zakon o zaštiti vlasničkih prava može biti formalno identičan u dvije zemlje, ali će njegovi učinci biti potpuno različiti ako je u jednoj zemlji sudstvo učinkovito i neovisno, a u drugoj sporo i podložno političkom utjecaju.
 
-::: {.callout-note}
-Ovaj odjeljak je u pripremi.
-:::
+Dobar primjer može se pronaći u usporedbi tranzicijskih zemalja. Dok su zemlje poput Estonije ili Češke relativno brzo uspostavile učinkovite institucije i privukle značajne strane investicije, druge su zemlje sličnog početnog položaja zaostale upravo zbog slabije institucionalne kvalitete. Razlike u institucijama tako se prevode u razlike u razvoju, čak i kada su početni resursi slični.
 
 ## Formalne i neformalne institucije
 
-::: {.callout-note}
-Ovaj odjeljak je u pripremi.
-:::
+Razlikovanje između formalnih i neformalnih institucija ključno je za razumijevanje zašto iste politike daju različite rezultate u različitim zemljama. Formalne institucije – zakoni, propisi, ustavna pravila – mogu se relativno brzo promijeniti političkom odlukom. Neformalne institucije – društvene norme, povjerenje, kulturni obrasci – mijenjaju se mnogo sporije i teže su podložne izravnom oblikovanju politikama.
+
+@north1990 naglašava da upravo neformalne institucije često određuju kako se formalna pravila primjenjuju u praksi. Zemlja može usvojiti najsuvremenije zakone o tržišnom natjecanju ili zaštiti vlasništva, ali ako su neformalne norme obilježene nepotizmom, korupcijom ili niskim povjerenjem u institucije, učinci tih zakona bit će znatno slabiji nego u sredini s drugačijim neformalnim okvirom. Upravo zato su institucionalne reforme često dugotrajne i neizvjesne – nije dovoljno promijeniti zakone, nego i dublje društvene obrasce.
+
+## Transakcijski troškovi, vlasnička prava i ugovori
+
+Jedan od najvažnijih doprinosa nove institucionalne ekonomike jest koncept **transakcijskih troškova**, koji je razvio Ronald Coase. Njegova ključna ideja bila je jednostavna, ali duboko transformativna: tržišta nisu besplatna. Svaka razmjena dobara i usluga zahtijeva vrijeme, informacije, pravnu sigurnost i određenu razinu povjerenja među sudionicima. Upravo ti „skriveni" troškovi određuju koliko će tržišta biti učinkovita i uopće hoće li se neka transakcija dogoditi.
+
+Svaka ekonomska transakcija uključuje niz troškova: pronalaženje informacija, pregovaranje o uvjetima razmjene, sastavljanje i pravno oblikovanje ugovora te nadzor nad izvršenjem i rješavanje sporova. U stvarnom svijetu, poduzetnik koji želi sklopiti ugovor ne suočava se samo s cijenom proizvoda ili usluge, nego s cijelim nizom dodatnih koraka. Svaki od tih koraka generira trošak, koji može biti novčani, ali i vremenski ili organizacijski. U okruženjima s visokom neizvjesnošću i slabim institucijama, ti troškovi mogu biti toliko veliki da u potpunosti obeshrabre razmjenu.
+
+Oliver Williamson je dodatno razradio ovu ideju i pokazao da razina transakcijskih troškova određuje način organizacije ekonomskih aktivnosti. Kada su ti troškovi niski, tržišta mogu učinkovito koordinirati razmjenu. Međutim, kada su visoki – zbog nesigurnosti, oportunističkog ponašanja ili složenosti transakcija – aktivnosti se češće organiziraju unutar poduzeća ili pod okriljem države. Na taj način, granica između tržišta i hijerarhije nije zadana, nego ovisi o institucionalnom kontekstu.
+
+Konkretan i intuitivan primjer iz svakodnevnog života jest tržište najma stanova. U zemljama s jasnim pravnim okvirom i učinkovitim sudstvom, najmodavci imaju povjerenje da će njihova prava biti zaštićena u slučaju problema. Kao rezultat toga, spremniji su ponuditi stanove na dugoročni najam, uz niže depozite i stabilnije cijene. Nasuprot tome, u zemljama gdje je sudska zaštita spora ili neizvjesna, vlasnici često traže veće depozite, preferiraju kratkoročne najmove ili čak odlučuju ne iznajmljivati nekretnine. Rezultat su više cijene, manja ponuda i niža dostupnost stanovanja, iako temeljni resurs – stanovi – postoji. Ovaj primjer jasno pokazuje kako institucionalni okvir i transakcijski troškovi izravno utječu na ishode na tržištu.
+
+U kontekstu javnih politika, ključna implikacija jest da učinkovitost tržišta ne ovisi samo o cijenama i konkurenciji, nego i o razini transakcijskih troškova koje institucije generiraju ili smanjuju. Dobra javna politika stoga nije samo ona koja ispravlja tržišne neuspjehe, nego i ona koja aktivno smanjuje nepotrebne transakcijske troškove – pojednostavljuje procedure, povećava pravnu sigurnost i jača povjerenje među ekonomskim akterima.
 
 ## Principal-agent problem i institucijski dizajn
 
-::: {.callout-note}
-Ovaj odjeljak je u pripremi.
-:::
+**Problem principal–agent** u javnom sektoru jedan je od ključnih koncepata za razumijevanje zašto javne politike često daju rezultate koji odstupaju od izvornih ciljeva. U svojoj suštini, riječ je o odnosu u kojem jedna skupina (principali – građani) delegira ovlasti drugoj skupini (agentima – političarima i javnim službenicima), uz očekivanje da će agenti djelovati u njihovu najboljem interesu. Međutim, taj odnos gotovo nikada nije savršeno usklađen, što otvara prostor za različite oblike neefikasnosti, oportunističkog ponašanja i čak zloupotrebe javnih resursa.
+
+Temeljni problem proizlazi iz asimetrije informacija: političari i birokrati raspolažu znatno većim količinama informacija o procesima odlučivanja, proračunskim sredstvima i stvarnim učincima politika. Građani, s druge strane, često donose odluke na temelju ograničenih i ponekad selektivno prezentiranih informacija. Upravo zbog toga agenti mogu donositi odluke koje povećavaju njihovu vlastitu korist – političku, financijsku ili reputacijsku – čak i kada to nije optimalno za društvo u cjelini.
+
+Jedan od najpoznatijih konkretnih mehanizama koji proizlazi iz ovog problema jest „budžetsko maksimiziranje", koje je analizirao William Niskanen [@niskanen1971]. Prema toj teoriji, birokrati imaju poticaj povećavati veličinu svojih proračuna jer to često znači veći utjecaj, više resursa i bolji status unutar administracije. Posljedica toga može biti prekomjerna javna potrošnja ili financiranje projekata čija je društvena korist upitna.
+
+Primjeri iz prakse su ilustrativni. Političari često preferiraju projekte koji donose kratkoročne i vidljive koristi, poput izgradnje cesta, mostova ili sportskih dvorana, jer takvi projekti imaju snažan politički učinak. Nasuprot tome, ulaganja u obrazovanje, pravosuđe ili administrativne reforme – iako potencijalno mnogo važnija za dugoročni razvoj – često su manje vidljiva i politički manje atraktivna.
+
+Kako bi se ublažili negativni učinci principal–agent problema, nužno je razviti mehanizme koji povećavaju transparentnost, odgovornost i nadzor. Transparentnost podrazumijeva dostupnost informacija o proračunu, javnim nabavama i rezultatima politika. Odgovornost se osigurava kroz institucije poput državnih revizija i neovisnih regulatora, dok nadzor uključuje ulogu parlamenta, medija i civilnog društva. Bez takvih mehanizama, čak i najbolje osmišljene politike mogu završiti s lošim ishodima.
 
 ## Inkluzivne i ekstraktivne institucije
 
-::: {.callout-note}
-Ovaj odjeljak je u pripremi.
-:::
+Empirijska literatura u političkoj ekonomiji i novoj institucionalnoj ekonomici snažno upućuje na zaključak da su institucije jedan od temeljnih uzroka dugoročnih razlika u razvoju među zemljama. Na toj osnovi @acemoglu2012 razvijaju jedno od najutjecajnijih razlikovanja u suvremenoj literaturi: razlikovanje između **inkluzivnih** i **ekstraktivnih** institucija.
+
+**Inkluzivne institucije** su one koje omogućuju širokom krugu ljudi da sudjeluju u gospodarskom i društvenom životu pod relativno jednakim pravilima. One počivaju na zaštiti vlasničkih prava, predvidivom i relativno nepristranom pravnom sustavu, otvorenosti tržišta i mogućnosti da pojedinci ulažu, rade i inoviraju bez straha da će im plodovi rada biti oduzeti. U takvom okviru ljudi imaju poticaj obrazovati se, štedjeti i pokretati poduzeća jer vjeruju da će korist od tih aktivnosti barem djelomično zadržati za sebe.
+
+**Ekstraktivne institucije** su organizirane tako da izvlače resurse, dohotke i prilike iz širokog društva prema uskom krugu politički ili ekonomski privilegiranih aktera. Njih karakteriziraju koncentracija moći, slaba zaštita vlasništva za „obične" građane, ograničavanje tržišnog natjecanja, politički povezani monopoli i nizak stupanj sigurnosti za ulaganja i poduzetništvo. U takvom okviru pojedinci imaju mnogo slabiji poticaj ulagati i inovirati jer ne mogu biti sigurni da će zadržati koristi od svojeg rada.
+
+Važno je naglasiti da inkluzivne institucije nisu samo ekonomske. One su obično povezane i s određenim političkim obilježjima: raspodijeljenom političkom moći, ograničenjima izvršne vlasti i većom mogućnošću građana da utječu na pravila. Acemoglu i Robinson naglašavaju da se uključiv gospodarski poredak teško može dugo održati bez barem donekle pluralističkog političkog poretka.
 
 ## Zašto nije važno samo koliko države ima, nego kakva je država
 
-::: {.callout-note}
-Ovaj odjeljak je u pripremi.
-:::
+Brojna istraživanja pokazuju da su dugoročno uspješnije zemlje uglavnom one koje imaju bolju zaštitu vlasničkih prava, kvalitetnije pravosuđe, manju proizvoljnost države, nižu razinu korupcije i viši stupanj političke odgovornosti. @north1990 je tvrdio da institucije smanjuju neizvjesnost u društvu jer stvaraju stabilna očekivanja o tome kako će se drugi akteri ponašati. Kada su pravila jasna i relativno stabilna, transakcijski troškovi su niži, ugovori sigurniji, a suradnja lakša. To pogoduje investicijama i dugoročnom planiranju.
+
+Ključna poanta za razumijevanje javnih politika jest sljedeća: institucije oblikuju poticaje, a poticaji oblikuju ponašanje ljudi, poduzeća i političara. Ako sustav nagrađuje produktivnost, inovacije i poštenu tržišnu utakmicu, vjerojatnije je da će društvo dugoročno napredovati. Ako sustav nagrađuje političku bliskost, monopol i izvlačenje rente, razvoj će biti sporiji, nestabilniji i manje pravedan. Upravo zato se u suvremenoj ekonomskoj analizi institucije više ne promatraju kao „pozadina" ekonomije, nego kao jedan od njezinih središnjih determinanti. Pitanje nije samo koliko države ima, nego kakva je država – po kojim pravilima djeluje i u čijem interesu.
