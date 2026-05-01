@@ -146,7 +146,9 @@ Uz incidenciju, važan je i koncept **poreznog klina** — razlika između ukupn
 
 ::: {.callout-note}
 **Grafikon: Porezni klin** — u pripremi.
-::: U ekonomskom smislu, porezni klin djeluje kao distorzija tržišta rada. Poslodavci donose odluke na temelju bruto troška rada, dok radnici reagiraju na neto plaću. Kada se uvedu porezi, bruto trošak raste, a neto plaća pada, što dovodi do smanjenja zaposlenosti i količine rada u odnosu na razinu bez oporezivanja. Time porezni klin izravno generira mrtvi teret poreza [@gruber2019; @stiglitz2015].
+:::
+
+U ekonomskom smislu, porezni klin djeluje kao distorzija tržišta rada. Poslodavci donose odluke na temelju bruto troška rada, dok radnici reagiraju na neto plaću. Kada se uvedu porezi, bruto trošak raste, a neto plaća pada, što dovodi do smanjenja zaposlenosti i količine rada u odnosu na razinu bez oporezivanja. Time porezni klin izravno generira mrtvi teret poreza [@gruber2019; @stiglitz2015].
 
 ## Teorija optimalnog oporezivanja
 
@@ -164,7 +166,9 @@ Međutim, Ramseyjev model ima važno ograničenje: on potpuno zanemaruje pitanje
 
 ::: {.callout-note}
 **Graf: Porez i ponuda rada** — u pripremi.
-::: Zbog interakcije ova dva učinka, krivulja ponude rada može imati specifičan oblik — pri višim razinama nadnice može prevladati dohodovni učinak te pojedinci biraju više dokolice, što rezultira tzv. **unazad savijenom krivuljom ponude rada**. Jedan od važnih zaključaka Mirrleesove teorije jest da optimalni porezni sustav ne mora imati ekstremno visoke stope za najbogatije. Razlog je taj što visoke stope mogu značajno smanjiti ekonomske poticaje upravo kod onih koji generiraju najveći dio dohotka.
+:::
+
+Zbog interakcije ova dva učinka, krivulja ponude rada može imati specifičan oblik — pri višim razinama nadnice može prevladati dohodovni učinak te pojedinci biraju više dokolice, što rezultira tzv. **unazad savijenom krivuljom ponude rada**. Jedan od važnih zaključaka Mirrleesove teorije jest da optimalni porezni sustav ne mora imati ekstremno visoke stope za najbogatije. Razlog je taj što visoke stope mogu značajno smanjiti ekonomske poticaje upravo kod onih koji generiraju najveći dio dohotka.
 
 ::: {.callout-note}
 **Grafikon: Intertemporalni izbor** — u pripremi. Prikazuje kako oporezivanje kapitala ili kamate utječe na odluku raspodjele potrošnje između sadašnjosti i budućnosti.
