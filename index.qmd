@@ -5,11 +5,13 @@ number-sections: false
 code-tools: false
 code-fold: false
 echo: false
-include-in-header:
-  text: |
-    <style>
-      #title-block-header { display: none; }
-    </style>
+format:
+  html:
+    include-in-header:
+      text: |
+        <style>
+          #title-block-header { display: none; }
+        </style>
 ---
 
 ::: {.book-hero}

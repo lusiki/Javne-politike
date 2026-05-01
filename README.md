@@ -7,6 +7,7 @@
 </p>
 
 [![Čitaj knjigu](https://img.shields.io/badge/📖%20Čitaj%20knjigu-online-1B2A4A?style=for-the-badge)](https://lusiki.github.io/Javne-politike/)
+[![Preuzmi PDF](https://img.shields.io/badge/⬇%20Preuzmi%20PDF-radna%20verzija-D69E2E?style=for-the-badge)](pdf/Javne-politike.pdf)
 [![Built with Quarto](https://img.shields.io/badge/Built%20with-Quarto-75AADB?style=for-the-badge&logo=quarto)](https://quarto.org)
 [![License](https://img.shields.io/github/license/lusiki/Javne-politike?style=for-the-badge)](LICENSE)
 
@@ -23,6 +24,10 @@ Knjiga kombinira **normativni pristup** (kakve bi politike trebale biti) i **poz
 ## 🔗 Čitaj online
 
 **→ [lusiki.github.io/Javne-politike](https://lusiki.github.io/Javne-politike/)**
+
+## 📥 Preuzmi PDF
+
+**→ [Javne-politike.pdf](pdf/Javne-politike.pdf)** — radna verzija (svibanj 2026), sadrži dovršena poglavlja knjige bez interaktivnih grafova.
 
 ---
 

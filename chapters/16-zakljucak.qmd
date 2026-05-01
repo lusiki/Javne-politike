@@ -1,3 +1,4 @@
 ---
 title: "16. Zaključak"
+draft: true
 ---

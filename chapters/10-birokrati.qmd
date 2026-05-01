@@ -1,5 +1,6 @@
 ---
 title: "10. Birokrati u akciji – tko stvarno upravlja državom?"
+draft: true
 ---
 
 ## Kako javni službenici "igraju igru" i može li se to opravdati

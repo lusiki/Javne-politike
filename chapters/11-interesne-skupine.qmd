@@ -1,5 +1,6 @@
 ---
 title: "11. Interesne skupine – iza kulisa politike"
+draft: true
 ---
 
 ## Kako nastaju lobiji i zašto su toliko moćni

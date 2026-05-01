@@ -1,5 +1,6 @@
 ---
 title: "9. Stranke, kandidati i političko tržište"
+draft: true
 ---
 
 ## Kako se političke opcije natječu za naš glas?

@@ -1,5 +1,6 @@
 ---
 title: "7. Tko odlučuje kad svi odlučujemo?"
+draft: true
 ---
 
 ## Kako skupine donose odluke (i zašto to ponekad ne ide)?
