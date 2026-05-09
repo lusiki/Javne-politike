@@ -1,0 +1,42 @@
+# Typst profile override.
+#
+# Use:    quarto render --profile typst
+# Output: pdf-typst/Javne-politike.pdf
+#
+# This file overrides settings from _quarto.yml. The default LaTeX
+# PDF profile (_quarto-pdf.yml) remains untouched, so:
+#   - quarto render --profile pdf    → LaTeX → pdf/Javne-politike.pdf
+#   - quarto render --profile typst  → Typst → pdf-typst/Javne-politike.pdf
+#
+# Why plain `typst` rather than `orange-book-typst`:
+#   The bundled orange-book v0.7.1 calls `pagebreak(to: "odd")` from
+#   inside a container, which current Typst rejects. Until orange-book
+#   ships a fix, plain `typst:` gives a working PDF using Typst's
+#   built-in book layout — clean and fast, but without orange-book's
+#   textbook chapter openers.
+
+project:
+  output-dir: pdf-typst
+
+book:
+  title: "Sve što želite znati o državi i javnim politikama u Hrvatskoj"
+  subtitle: "Praktični udžbenik · Typst preview — svibanj 2026"
+  output-file: "Javne-politike"
+
+format:
+  typst:
+    papersize: a4
+    fontsize: 11pt
+    toc: true
+    toc-depth: 2
+    section-numbering: ""
+    lang: hr-HR
+    # Typst-bundled fonts so we don't depend on Google Fonts being
+    # installed locally. (brand.yml's Inter/Source Serif 4 only
+    # apply to HTML; Typst can't fetch Google Fonts.)
+    mainfont: "New Computer Modern"
+    sansfont: "New Computer Modern Sans"
+    monofont: "DejaVu Sans Mono"
+
+filters:
+  - pdf-filters/strip-ojs.lua
