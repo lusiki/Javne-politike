@@ -26,7 +26,13 @@ Ustavna ekonomika zato ne nastoji te probleme rješavati ex post, kroz korektivn
 
 ## Buchanan i logika pravila
 
-Buchanan i Tullock naglašavaju da se u politici moraju razlikovati dvije razine analize: ustavna razina, na kojoj se biraju i definiraju pravila igre, te post-ustavna razina, na kojoj se unutar postojećih pravila odlučuje o konkretnim političkim pitanjima. Pritom na ustavnoj razini pojedinci djeluju iza „zavjese neizvjesnosti" sličnoj Rawlsovom konceptu „zavjese neznanja" – ne znaju kakvu će poziciju u društvu zauzeti te stoga imaju poticaj dizajnirati pravedna i stabilna pravila igre. Takav pristup ima za cilj ograničiti proizvoljnost većine i smanjiti mogućnost eksploatacije manjina, ističući važnost ustavnih ograničenja nad diskrecijskim odlukama političara.
+Buchanan i Tullock naglašavaju da se u politici moraju razlikovati dvije razine analize: ustavna razina, na kojoj se biraju i definiraju pravila igre, te post-ustavna razina, na kojoj se unutar postojećih pravila odlučuje o konkretnim političkim pitanjima.
+
+::: {#def-zavjesa-neizvjesnosti}
+**Zavjesa neizvjesnosti** (Buchanan i Tullock, 1962) je hipotetska situacija u kojoj pojedinci o pravilima političkog odlučivanja raspravljaju ne znajući koje će im konkretne uloge, interesi ili pozicije pripasti pod tim pravilima. U toj se situaciji racionalan pojedinac priklanja pravilima koja generiraju pravedne i stabilne ishode bez obzira na to gdje se kasnije nađe — jer ne može namjestiti pravila u svoju osobnu korist. Koncept je srodan Rawlsovoj „zavjesi neznanja", ali je kod Buchanana ekonomski racionaliziran umjesto etički postuliran.
+:::
+
+Pritom na ustavnoj razini pojedinci djeluju iza zavjese neizvjesnosti — ne znaju kakvu će poziciju u društvu zauzeti te stoga imaju poticaj dizajnirati pravedna i stabilna pravila igre. Takav pristup ima za cilj ograničiti proizvoljnost većine i smanjiti mogućnost eksploatacije manjina, ističući važnost ustavnih ograničenja nad diskrecijskim odlukama političara.
 
 Središnja poruka konstitucionalne perspektive glasi da dobro definirana pravila igre mogu ograničiti negativne ishode političkog procesa. Umjesto da se fokusira na redistribucijske politike ili pojedinačne programe, ova škola misli naglašava važnost uspostave mehanizama koji sprječavaju zloupotrebu moći i potiču odgovornost. Time se konstitucionalna politička ekonomija pozicionira kao most između ekonomije, političke filozofije i prava.
 
@@ -38,9 +44,11 @@ Upravo zato se u fiskalnoj politici razvijaju različiti institucionalni mehaniz
 
 ## Vjerodostojnost, vremenska nedosljednost i dugoročna stabilnost
 
-**Vremenska nedosljednost** (*time inconsistency*) javnih politika situacija je u kojoj je neka politika optimalna iz dugoročne perspektive, ali ju je teško ili politički neisplativo provoditi u kratkom roku. Ovaj je koncept razvili @kydland1977, pokazujući da diskrecijska politika često vodi do ishoda koji su inferiorni u odnosu na politike temeljene na pravilima.
+::: {#def-vremenska-nedosljednost}
+**Vremenska nedosljednost** (*time inconsistency*; @kydland1977) je svojstvo politike koja je optimalna kad se najavljuje za buduće razdoblje, ali prestaje biti optimalna kada to razdoblje nastupi. Tipičan obrazac: vlast danas obeća stabilan porezni okvir za sutra (jer to potiče investicije), a sutra ima poticaj odustati od obećanja (jer iznenadno povećanje poreza tada generira prihod bez gubitka investicija koje su već učinjene). Bez institucionalnih ograničenja koja vežu ruke vlasti, racionalni privatni akteri ne vjeruju obećanju i investicija se ne događa.
+:::
 
-Suština problema leži u tome što se preferencije donositelja odluka mijenjaju kroz vrijeme, osobito pod utjecajem političkih ciklusa. Ono što je optimalno „danas za sutra" često nije optimalno „sutra za danas". U političkom kontekstu to znači da vlasti mogu najaviti dugoročno odgovornu politiku, ali kasnije odustati od nje kada se suoče s kratkoročnim političkim troškovima, poput nezadovoljstva birača ili smanjenja popularnosti.
+Diskrecijska politika u takvim uvjetima često vodi do ishoda inferiornih u odnosu na politike temeljene na pravilima [@kydland1977]. Suština problema leži u tome što se preferencije donositelja odluka mijenjaju kroz vrijeme, osobito pod utjecajem političkih ciklusa. Ono što je optimalno „danas za sutra" često nije optimalno „sutra za danas". U političkom kontekstu to znači da vlasti mogu najaviti dugoročno odgovornu politiku, ali kasnije odustati od nje kada se suoče s kratkoročnim političkim troškovima, poput nezadovoljstva birača ili smanjenja popularnosti.
 
 Najklasičniji primjer nalazi se u fiskalnoj politici. Dugoročno, stabilne javne financije – umjeren deficit i održiv javni dug – predstavljaju temelj makroekonomske stabilnosti. Međutim, u kratkom roku političari imaju snažan poticaj povećavati javnu potrošnju ili smanjivati poreze, osobito uoči izbora. Rezultat je pojava tzv. **proračunsko-političkih ciklusa**, u kojima vlade prije izbora provode ekspanzivnu fiskalnu politiku, dok se nakon izbora suočavaju s potrebom fiskalne prilagodbe – često kroz povećanje poreza ili smanjenje rashoda. Dugoročna posljedica takvog ponašanja je akumulacija javnog duga i smanjena fiskalna održivost.
 
