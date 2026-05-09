@@ -1277,6 +1277,46 @@ t_now = laffer_controls.t_now
 
 Ovaj koncept pokazuje da porezni prihodi ne rastu linearno s poreznom stopom. Pri vrlo visokim stopama dolazi do smanjenja ekonomske aktivnosti i porezne osnovice, što može smanjiti ukupne prihode. Njegova ključna poruka uklapa se u teoriju optimalnog oporezivanja: ponašanje poreznih obveznika ključno je za dizajn porezne politike.
 
+## Pokušajte sami: porezni klin u Hrvatskoj {#sec-porezni-klin-r}
+
+Sljedeći blok izvršava se izravno u vašem pregledniku — pokrenite ga, izmijenite stope ili granice osobnog odbitka i pogledajte kako se mijenja porezni klin po razini bruto plaće. (Prvo pokretanje traje par sekundi dok se R učitava u memoriju preglednika.)
+
+```{webr-r}
+# Hrvatska, pojednostavljeni model — porezni klin po bruto plaći.
+# Pretpostavke:
+#   - Doprinosi radnika (mirovinsko):       20.0 %
+#   - Doprinosi poslodavca (zdravstveno):   16.5 %
+#   - Stopa poreza na dohodak:              23.0 %  (jedinstvena, post-2024)
+#   - Osobni odbitak:                       600 €
+#
+# Porezni klin = (ukupni trošak rada − neto plaća) / ukupni trošak rada
+
+bruto <- seq(800, 5000, by = 100)        # raspon mjesečnih bruto plaća
+osobni_odbitak <- 600
+
+doprinosi_radnik    <- 0.200 * bruto
+doprinosi_poslodavac <- 0.165 * bruto
+porezna_osnovica    <- pmax(0, bruto - doprinosi_radnik - osobni_odbitak)
+porez_dohodak       <- 0.23 * porezna_osnovica
+
+neto           <- bruto - doprinosi_radnik - porez_dohodak
+ukupni_trosak  <- bruto + doprinosi_poslodavac
+klin           <- (ukupni_trosak - neto) / ukupni_trosak
+
+plot(bruto, 100 * klin, type = "l", lwd = 2,
+     xlab = "Bruto plaća (€/mj.)",
+     ylab = "Porezni klin (%)",
+     main = "Hrvatska 2024 — porezni klin po razini plaće",
+     ylim = c(25, 50))
+abline(h = 38, lty = 2, col = "firebrick")
+text(3500, 38.8, "Prosjek EU (~38 %)", col = "firebrick", pos = 3)
+grid(col = "grey85")
+```
+
+::: {.callout-tip}
+**Što isprobati.** Promijenite stopu poreza na dohodak s `0.23` na `0.30` (predreformsko stanje) — koliko se klin pomakne pri 1.500 €? Pa onda na `0.20` — koja je razlika u ponuđenom poticaju za rad? Promijenite osobni odbitak na 800 € i provjerite kako to utječe na klin u donjem dijelu raspona plaća. Ovaj jednostavni model već pokazuje zašto su politički izbori oko stope, odbitka i strukture doprinosa kvantitativno tako značajni.
+:::
+
 ## Vrste poreznih sustava
 
 Porezni sustavi u suvremenim ekonomijama mogu se klasificirati na različite načine, no jedna od najvažnijih podjela temelji se na pitanju što se zapravo oporezuje. Porezni sustavi razlikuju se prema svojoj poreznoj osnovici, odnosno prema tome obuhvaćaju li prije svega dohodak, potrošnju ili imovinu. U tom smislu najčešće razlikujemo dohodovno orijentirane, potrošno orijentirane i imovinski orijentirane porezne sustave [@gruber2019; @stiglitz2015]. Važno je naglasiti da u praksi gotovo nijedna zemlja ne koristi isključivo jedan tip poreznog sustava — stvarni porezni sustavi predstavljaju kombinaciju različitih oblika oporezivanja, pri čemu se razlikuju u naglascima i strukturi.

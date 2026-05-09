@@ -84,6 +84,11 @@ crossref:
 
 format:
   html:
+    # webR via coatless/quarto-webr — runs R in the browser via WebAssembly
+    # for {webr-r} cells. Requires extension to be installed once:
+    #   quarto add coatless/quarto-webr
+    filters:
+      - webr
     theme:
       light:
         - cosmo
