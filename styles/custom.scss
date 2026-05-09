@@ -306,6 +306,70 @@ div.callout-caution {
 }
 
 // =============================================================
+// Pedagoški callouti — "Politika u praksi", "Empirijski dokaz",
+// "Vježba s podacima". Tri prepoznatljiva signala kroz cijelu knjigu.
+//
+// Upotreba u .qmd:
+//   ::: {.callout-praksa}
+//   Sadržaj odjeljka — prvi pasus dobiva chip s nazivom kategorije.
+//   :::
+// =============================================================
+.callout-praksa,
+.callout-empirija,
+.callout-vjezba {
+  --pedagogy-color: #{$brand-slate};
+  position: relative;
+  margin: 2rem 0;
+  padding: 1.25rem 1.4rem 1.1rem 1.4rem;
+  background: rgba($brand-navy, 0.025);
+  border-left: 3px solid var(--pedagogy-color);
+  border-radius: 0 4px 4px 0;
+  box-shadow: 0 1px 2px rgba($brand-navy, 0.04);
+
+  > p:first-child::before,
+  > :first-child::before {
+    display: inline-block;
+    content: attr(data-pedagogy-label);
+    font-family: $brand-font-sans;
+    font-size: 0.72rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.09em;
+    color: var(--pedagogy-color);
+    margin-right: 0.7rem;
+    padding: 0.22em 0.55em;
+    border: 1px solid currentColor;
+    border-radius: 3px;
+    vertical-align: 0.08em;
+    line-height: 1;
+    white-space: nowrap;
+  }
+
+  > p:first-child {
+    margin-top: 0;
+  }
+
+  > :last-child {
+    margin-bottom: 0;
+  }
+}
+
+.callout-praksa {
+  --pedagogy-color: #{$brand-burgundy};
+  > p:first-child::before { content: "Politika u praksi"; }
+}
+
+.callout-empirija {
+  --pedagogy-color: #{$brand-navy-soft};
+  > p:first-child::before { content: "Empirijski dokaz"; }
+}
+
+.callout-vjezba {
+  --pedagogy-color: #C57832;
+  > p:first-child::before { content: "Vježba s podacima"; }
+}
+
+// =============================================================
 // Tablice — zebra striping u cream tonu
 // =============================================================
 table {
@@ -509,13 +573,12 @@ nav#TOC ul li a,
 .quarto-book .body-content .part-title,
 .quarto-book .part h1 {
   font-family: $brand-font-sans;
-  font-weight: 700;
+  font-weight: 600;
   color: $brand-navy;
   text-align: center;
-  letter-spacing: 0.02em;
+  letter-spacing: -0.005em;
   padding: 4rem 0 2rem;
-  font-size: 1.6rem;
-  text-transform: uppercase;
+  font-size: 1.75rem;
 
   &::after {
     content: "";
@@ -571,9 +634,17 @@ nav#TOC ul li a,
   }
 }
 
+// Skrij Quartov auto-injected cover image na landing page-u
+// (zadržavamo `cover-image` u _quarto.yml za OG/share metadata).
+p:has(> a.lightbox > img.quarto-cover-image),
+p:has(> img.quarto-cover-image),
+.quarto-cover-image {
+  display: none !important;
+}
+
 .book-hero-image {
-  margin: 0 auto 1.75rem;
-  max-width: 320px;
+  margin: 0 auto 2rem;
+  max-width: 500px;
 
   img {
     max-width: 100%;
@@ -581,8 +652,8 @@ nav#TOC ul li a,
     border-radius: 4px;
     box-shadow:
       0 1px 0 rgba($brand-navy, 0.04),
-      0 6px 20px rgba($brand-navy, 0.10),
-      0 14px 40px rgba($brand-navy, 0.06);
+      0 8px 28px rgba($brand-navy, 0.12),
+      0 18px 50px rgba($brand-navy, 0.08);
   }
 }
 
@@ -1100,7 +1171,7 @@ caption strong:first-child {
   margin-right: 0.4em;
 }
 
-// ---- Sidebar part headeri — bolja vizualna hierarhija s rimskim brojem ----
+// ---- Sidebar part headeri — sentence case, suptilan separator ----
 .sidebar-item.sidebar-item-section,
 .sidebar nav li.sidebar-item-section,
 li.sidebar-item-section > .sidebar-item-container {
@@ -1108,14 +1179,35 @@ li.sidebar-item-section > .sidebar-item-container {
   > .chapter-title,
   > .sidebar-section {
     font-family: $brand-font-sans;
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 0.10em;
+    font-weight: 600;
+    letter-spacing: -0.005em;
     color: $brand-navy;
-    font-size: 0.76rem;
+    font-size: 0.92rem;
     padding-top: 1.2rem;
-    border-top: 1px solid rgba($brand-gold, 0.35);
+    margin-top: 0.6rem;
+    border-top: 1px solid rgba($brand-warm-grey, 0.35);
     position: relative;
+  }
+}
+
+// ---- Sidebar bg: warm paper ton (umjesto Bootstrap white) ----
+.sidebar,
+#quarto-sidebar,
+.quarto-sidebar,
+.sidebar-navigation,
+nav.sidebar {
+  background-color: $brand-paper !important;
+  border-right: 1px solid rgba($brand-warm-grey, 0.30) !important;
+}
+
+// Chapter linkovi unutar sidebara — diskretni warm-grey, brick na hover/active
+.sidebar a.sidebar-item-text,
+.sidebar nav .sidebar-item a,
+nav.sidebar a {
+  color: $brand-charcoal;
+
+  &:hover, &.active {
+    color: $brand-burgundy;
   }
 }
 
