@@ -81,6 +81,22 @@ crossref:
   sec-prefix: "Poglavlje"
   fig-prefix: "Slika"
   tbl-prefix: "Tablica"
+  thm-title: "Teorem"
+  thm-prefix: "Teorem"
+  lem-title: "Lema"
+  lem-prefix: "Lema"
+  cor-title: "Korolar"
+  cor-prefix: "Korolar"
+  prp-title: "Propozicija"
+  prp-prefix: "Propozicija"
+  def-title: "Definicija"
+  def-prefix: "Definicija"
+  exm-title: "Primjer"
+  exm-prefix: "Primjer"
+  exr-title: "Vježba"
+  exr-prefix: "Vježba"
+  proof-title: "Dokaz"
+  remark-title: "Napomena"
 
 format:
   html:
@@ -122,6 +138,10 @@ format:
     tbl-cap-location: top
     reference-location: margin
     citation-location: margin
+    theorem-appearance: clouds
+    definition-appearance: clouds
+    proposition-appearance: simple
+    proof-appearance: simple
     fontsize: 1.02rem
     linestretch: 1.6
     lang: hr-HR
