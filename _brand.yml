@@ -23,20 +23,20 @@ color:
 
 typography:
   fonts:
-    - family: "Source Serif 4"
+    - family: "Geist"
       source: google
-    - family: "Inter"
+    - family: "Geist Mono"
       source: google
-    - family: "JetBrains Mono"
+    - family: "Newsreader"
       source: google
   base:
-    family: "Source Serif 4"
+    family: "Geist"
     size: 1.02rem
     line-height: 1.6
   headings:
-    family: "Inter"
+    family: "Newsreader"
     weight: 600
     color: near-black
   monospace:
-    family: "JetBrains Mono"
+    family: "Geist Mono"
     size: 0.85em

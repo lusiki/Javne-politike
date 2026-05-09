@@ -26,15 +26,15 @@ $brand-warm-grey:   #9F907B;   // muted warm grey — borders, captions, separat
 // =============================================================
 // Tipografija
 // =============================================================
-$brand-font-serif: "Source Serif 4", "Source Serif Pro", Georgia, serif;
-$brand-font-sans:  "Inter", "Segoe UI", system-ui, sans-serif;
-$brand-font-mono:  "JetBrains Mono", "Consolas", "Roboto Mono", monospace;
+$brand-font-serif: "Newsreader", Georgia, serif;          // display / chapter headings
+$brand-font-sans:  "Geist", "Segoe UI", system-ui, sans-serif;  // body + UI
+$brand-font-mono:  "Geist Mono", "Consolas", monospace;  // code
 
-// Bootstrap font prema Source Serifu (za body)
-$font-family-base:   $brand-font-serif;
-$font-family-serif:  $brand-font-serif;
+// Bootstrap: Geist as the primary reading font
+$font-family-base:       $brand-font-sans;
+$font-family-serif:      $brand-font-serif;
 $font-family-sans-serif: $brand-font-sans;
-$font-family-monospace: $brand-font-mono;
+$font-family-monospace:  $brand-font-mono;
 
 $body-color: $brand-charcoal;
 $body-bg:    $brand-cream;
@@ -82,18 +82,18 @@ main p {
 // Naslovi
 // =============================================================
 h1, .chapter-title, .title {
-  font-family: $brand-font-sans;
-  font-weight: 700;
+  font-family: $brand-font-serif;   // Newsreader — display serif for chapter titles
+  font-weight: 600;
   color: $brand-navy;
-  letter-spacing: -0.022em;
-  line-height: 1.15;
+  letter-spacing: -0.018em;
+  line-height: 1.12;
 }
 
 h2 {
-  font-family: $brand-font-sans;
+  font-family: $brand-font-sans;   // Geist — clean sans for section headings
   font-weight: 600;
   color: $brand-navy;
-  letter-spacing: -0.015em;
+  letter-spacing: -0.012em;
   margin-top: 3rem;
   padding-top: 1rem;
   border-top: 1px solid rgba($brand-navy, 0.08);
@@ -137,8 +137,9 @@ header#title-block-header {
   }
 
   h1.title {
+    font-family: $brand-font-serif;   // Newsreader for chapter title
     font-size: 2.4rem;
-    font-weight: 700;
+    font-weight: 600;
     line-height: 1.12;
     margin: 0;
     color: $brand-navy;
