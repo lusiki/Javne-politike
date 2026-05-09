@@ -1,7 +1,9 @@
 /*-- scss:defaults --*/
 
-// Topla tamna paleta — inverzna verzija light moda (NE crna)
-// Sve ostalo nasljeđuje iz custom.scss; ovdje samo invertiramo bg/text.
+// Topla tamna paleta — inverzna verzija light moda (NE crna).
+// Sve color overridove ovdje držimo eksplicitno jer custom.scss
+// hardkodira lokalne SCSS varijable na light tonove. Dark syntax
+// highlighting (github-dark) konfiguriran je u _quarto.yml.
 
 $body-bg:    #1F1A14 !default;   // duboka warm sepia (ne crna)
 $body-color: #E8DFD0 !default;   // warm cream tekst
@@ -11,6 +13,8 @@ $body-color: #E8DFD0 !default;   // warm cream tekst
 body {
   background-color: #1F1A14 !important;
   color: #E8DFD0 !important;
+  // Soft transition kad korisnik prebaci light/dark
+  transition: background-color 0.2s ease, color 0.2s ease;
 }
 
 // Naslovi — topla cream

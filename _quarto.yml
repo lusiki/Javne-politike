@@ -104,7 +104,9 @@ format:
     code-overflow: scroll
     code-line-numbers: false
     code-block-bg: true
-    highlight-style: github
+    highlight-style:
+      light: github
+      dark: github-dark
     toc: true
     toc-depth: 3
     toc-expand: 2
