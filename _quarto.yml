@@ -41,7 +41,7 @@ book:
     collapse-level: 4
     tools:
       - icon: file-earmark-pdf
-        href: https://github.com/lusiki/Javne-politike/raw/main/pdf/Javne-politike.pdf
+        href: https://lusiki.github.io/Javne-politike/pdf/Javne-politike.pdf
         text: "Preuzmi PDF (radna verzija)"
       - icon: github
         href: https://github.com/lusiki/Javne-politike
