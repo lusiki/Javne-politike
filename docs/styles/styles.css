@@ -249,6 +249,129 @@ html {
 }
 
 /* =========================================================
+   TOC overview block on index/landing page
+   ========================================================= */
+.toc-overview {
+  background: transparent;
+  border: none;
+  padding: 0;
+  margin: 1.25rem 0 2rem;
+  max-width: 70ch;
+}
+
+/* Part headers */
+.toc-overview .toc-part {
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  color: #4A5568;
+  margin: 1.75rem 0 0.4rem;
+  padding-bottom: 0.3rem;
+  border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+.toc-overview .toc-part:first-child {
+  margin-top: 0;
+}
+
+/* Each chapter row */
+.toc-overview details.toc-chapter,
+.toc-overview .toc-chapter-leaf {
+  border-bottom: 1px solid rgba(0,0,0,0.06);
+}
+
+/* Summary line (chapter title) */
+.toc-overview details.toc-chapter > summary {
+  display: flex;
+  align-items: baseline;
+  gap: 0.45rem;
+  padding: 0.45rem 0;
+  cursor: pointer;
+  list-style: none;
+  font-size: 0.97rem;
+  color: #14213D;
+  user-select: none;
+}
+.toc-overview details.toc-chapter > summary::-webkit-details-marker { display: none; }
+
+/* Expand chevron */
+.toc-overview details.toc-chapter > summary::after {
+  content: "›";
+  margin-left: auto;
+  font-size: 1rem;
+  color: #4A5568;
+  transition: transform 0.18s ease;
+  flex-shrink: 0;
+}
+.toc-overview details.toc-chapter[open] > summary::after {
+  transform: rotate(90deg);
+}
+
+/* Chapter number badge */
+.toc-overview .toc-num {
+  font-size: 0.72rem;
+  font-weight: 600;
+  color: #4A5568;
+  min-width: 1.6rem;
+  flex-shrink: 0;
+}
+
+/* Chapter link inside summary */
+.toc-overview details.toc-chapter > summary a {
+  color: #14213D;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.12s;
+}
+.toc-overview details.toc-chapter > summary a:hover,
+.toc-overview details.toc-chapter > summary:hover > a {
+  color: #B08538;
+}
+
+/* Subchapter list */
+.toc-overview details.toc-chapter > ul {
+  margin: 0 0 0.6rem 2.1rem;
+  padding: 0;
+  list-style: none;
+  max-width: none;
+}
+.toc-overview details.toc-chapter > ul li {
+  margin: 0;
+}
+.toc-overview details.toc-chapter > ul li a {
+  display: block;
+  padding: 0.25rem 0;
+  font-size: 0.88rem;
+  color: #4A5568;
+  text-decoration: none;
+  border-left: 2px solid transparent;
+  padding-left: 0.75rem;
+  transition: color 0.12s, border-color 0.12s;
+}
+.toc-overview details.toc-chapter > ul li a:hover {
+  color: #B08538;
+  border-left-color: #B08538;
+}
+
+/* Leaf chapter (no subchapters, e.g. ch.16) */
+.toc-overview .toc-chapter-leaf {
+  display: flex;
+  align-items: baseline;
+  gap: 0.45rem;
+  padding: 0.45rem 0;
+  font-size: 0.97rem;
+  font-weight: 500;
+}
+.toc-overview .toc-chapter-leaf a {
+  color: #14213D;
+  text-decoration: none;
+  transition: color 0.12s;
+}
+.toc-overview .toc-chapter-leaf a:hover {
+  color: #B08538;
+}
+
+/* =========================================================
    Reduce motion
    ========================================================= */
 @media (prefers-reduced-motion: reduce) {
