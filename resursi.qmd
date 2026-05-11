@@ -1,6 +1,7 @@
 ---
 title: "Resursi"
-toc: false
+toc: true
+toc-depth: 2
 number-sections: false
 lang: hr-HR
 format:
@@ -23,15 +24,215 @@ format:
         </style>
 ---
 
-Materijali za studente i nastavnike: podaci, prezentacije, popisi literature i poveznice na javno dostupne izvore.
+Kurirana zbirka kvalitetnih izvora za studente, nastavnike i istraživače javnih politika i javnog izbora — od hrvatskih službenih podataka i istraživačkih instituta, preko EU i međunarodnih institucija, do klasične literature, akademskih časopisa, otvorenih datasetova, alata i medija. Cilj je da ova stranica bude **ulazna točka** za daljnji rad nakon čitanja knjige.
 
-## Korisne poveznice
-
-- [Hrvatska narodna banka — statistika](https://www.hnb.hr/statistika)
-- [Državni zavod za statistiku](https://podaci.dzs.hr)
-- [Eurostat](https://ec.europa.eu/eurostat)
-- [OECD Data](https://data.oecd.org)
-
-::: {.callout-note}
-Daljnji materijali (datasetovi, slajdovi, primjeri zadataka) u pripremi.
+::: {.callout-tip}
+Stranica je živa. Ako poznajete kvalitetan izvor koji ovdje nedostaje, otvorite issue ili pull request na [GitHub repozitoriju knjige](https://github.com/lusiki/Javne-politike).
 :::
+
+## Hrvatski službeni izvori podataka i institucije
+
+- [Hrvatska narodna banka — Statistika](https://www.hnb.hr/statistika) — monetarni, financijski i platnobilančni podaci, fiskalni dodaci.
+- [Državni zavod za statistiku — Podaci](https://podaci.dzs.hr) — službeni statistički portal: BDP, inflacija, tržište rada, demografija, izbori.
+- [Državni zavod za statistiku — Institucija](https://dzs.gov.hr) — priopćenja, metodološka dokumentacija i kalendar objava.
+- [Ministarstvo financija RH](https://mfin.gov.hr) — proračun, fiskalna projekcija, javni dug, izvještaji o izvršenju proračuna.
+- [Porezna uprava RH](https://porezna-uprava.gov.hr) — porezni propisi, statistike prihoda i službena tumačenja.
+- [Carinska uprava RH](https://carina.gov.hr) — carinski podaci, trošarine i vanjskotrgovinska statistika.
+- [Hrvatski zavod za zapošljavanje (HZZ)](https://www.hzz.hr) — registrirana nezaposlenost, statistike po dobi i obrazovanju.
+- [Hrvatski zavod za mirovinsko osiguranje (HZMO)](https://www.mirovinsko.hr) — broj korisnika, prosječne mirovine, podaci o doprinosima.
+- [Hrvatski zavod za zdravstveno osiguranje (HZZO)](https://www.hzzo.hr) — financiranje zdravstvenog sustava i potrošnja.
+- [Državni ured za reviziju](https://www.revizija.hr) — godišnji izvještaji o reviziji proračuna i institucija javnog sektora.
+- [Hrvatski sabor](https://www.sabor.hr) — zakonodavni materijali, transkripti, glasovanja, fiskalni dokumenti.
+- [Vlada RH](https://vlada.gov.hr) — strateški dokumenti, programi reformi, sjednice i odluke.
+- [data.gov.hr — Središnji državni portal otvorenih podataka](https://data.gov.hr) — strojno čitljivi datasetovi javnih institucija.
+
+## Hrvatski istraživački instituti i sveučilišni centri
+
+- [Institut za javne financije (IJF)](https://www.ijf.hr) — vodeći hrvatski istraživački institut za fiskalnu politiku, porezno opterećenje i lokalne financije.
+- [Ekonomski institut, Zagreb (EIZ)](https://www.eizg.hr) — makroekonomske analize, modeliranje i kvartalne projekcije.
+- [Institut društvenih znanosti Ivo Pilar](https://www.pilar.hr) — interdisciplinarna istraživanja institucija, regija i društvenih politika.
+- [Ekonomski fakultet, Sveučilište u Zagrebu (EFZG)](https://www.efzg.unizg.hr) — najveća akademska zajednica ekonomista u Hrvatskoj.
+- [Zagreb School of Economics and Management (ZSEM)](https://www.zsem.hr) — istraživanja u financijama, javnim politikama i poduzetništvu.
+- [Hrvatska udruga banaka (HUB) — Analize](https://www.hub.hr) — kvartalne analize i sažeti pregledi makro-financijskih kretanja.
+- [Hrvatsko društvo ekonomista (HDE)](https://www.hde.hr) — strukovna udruga, organizator Opatijske konferencije.
+- [Pravni fakultet, Sveučilište u Zagrebu](https://www.pravo.unizg.hr) — istraživanja u financijskom pravu, regulaciji i javnoj upravi.
+
+## Hrvatski i regionalni časopisi
+
+- [Public Sector Economics (IJF)](https://www.ijf.hr/hr/publikacije/casopisi/public-sector-economics/) — međunarodni recenzirani časopis IJF-a (od 2018., ranije *Financial Theory and Practice*); SCOPUS, EconLit, DOAJ.
+- [Ekonomski pregled (HDE)](https://hrcak.srce.hr/ekonomski-pregled) — najstariji hrvatski ekonomski časopis, otvoreni pristup preko Hrčka.
+- [Croatian Economic Survey (EIZ)](https://www.eizg.hr) — engleskojezični godišnjak EIZ-a o hrvatskim ekonomskim kretanjima.
+- [Zbornik radova Ekonomskog fakulteta u Rijeci](https://hrcak.srce.hr/zbornik-efri) — empirijska istraživanja regionalne i međunarodne ekonomije.
+- [Hrčak — Portal hrvatskih znanstvenih i stručnih časopisa](https://hrcak.srce.hr) — središnji repozitorij otvorenog pristupa za hrvatske akademske časopise.
+
+## EU institucije i izvori
+
+- [Eurostat](https://ec.europa.eu/eurostat) — službena statistika EU-a; harmonizirani fiskalni i ekonomski indikatori po državama članicama.
+- [DG ECFIN — European Semester](https://economy-finance.ec.europa.eu/economic-and-fiscal-governance/european-semester_en) — godišnji Country Report za Hrvatsku, fiskalna pravila, makroekonomske projekcije.
+- [DG TAXUD — Taxation and Customs Union](https://taxation-customs.ec.europa.eu) — baza "Taxes in Europe", komparativni porezni indikatori.
+- [European Fiscal Board](https://commission.europa.eu/about/organisation/european-fiscal-board_en) — neovisno tijelo koje ocjenjuje fiskalna pravila i položaj država članica.
+- [European Court of Auditors](https://www.eca.europa.eu) — revizijski izvještaji o trošenju EU sredstava, uključujući projekte u Hrvatskoj.
+- [ECB Data Portal](https://data.ecb.europa.eu) — monetarni, financijski i platnobilančni podaci za europodručje.
+- [European Parliament — Economic Governance Support Unit (EGOV)](https://www.europarl.europa.eu/committees/en/econ/egov) — analitički dokumenti za odbore ECON i BUDG.
+- [Vijeće EU — Konfiguracija ECOFIN](https://www.consilium.europa.eu/hr/council-eu/configurations/ecofin/) — odluke o gospodarskim i financijskim pitanjima EU-a.
+- [European Stability Mechanism (ESM)](https://www.esm.europa.eu) — istraživanja o fiskalnoj koordinaciji i krizama javnog duga.
+
+## Međunarodne organizacije
+
+- [IMF — Croatia](https://www.imf.org/en/Countries/HRV) — Article IV konzultacije, fiskalni izvještaji, makroekonomske projekcije.
+- [IMF Data](https://data.imf.org) — World Economic Outlook, Government Finance Statistics, Fiscal Monitor.
+- [OECD — Croatia](https://www.oecd.org/en/countries/croatia.html) — Economic Surveys, Government at a Glance, Tax Database.
+- [OECD Data](https://data.oecd.org) — komparativni indikatori javnog sektora, oporezivanja i potrošnje.
+- [World Bank Open Data](https://data.worldbank.org) — World Development Indicators, Worldwide Governance Indicators.
+- [EBRD — Transition Report](https://www.ebrd.com/what-we-do/economic-research-and-data/transition-report.html) — godišnji izvještaj o tranziciji, s fokusom na institucije.
+- [BIS — Bank for International Settlements](https://www.bis.org) — financijska statistika i istraživanja o monetarno-fiskalnoj interakciji.
+
+## Otvoreni komparativni podaci za istraživanje
+
+- [V-Dem — Varieties of Democracy](https://www.v-dem.net) — najopsežniji dataset o demokratskim institucijama (531 indikator, preko 200 zemalja).
+- [Polity Project (Polity5)](https://www.systemicpeace.org/polityproject.html) — kodiranje političkih režima 1800–2018., klasik komparativne politike.
+- [Quality of Government (QoG) Institute — Datasetovi](https://www.gu.se/en/quality-government/qog-data) — kompilacijski i originalni datasetovi o kvaliteti vlasti.
+- [Worldwide Governance Indicators (WGI)](https://www.worldbank.org/en/publication/worldwide-governance-indicators) — šest dimenzija upravljanja za 200+ ekonomija, od 1996.
+- [Our World in Data — Government Spending](https://ourworldindata.org/government-spending) — dugoročni vizualizirani pregledi javne potrošnje po zemljama.
+- [Manifesto Project Database](https://manifesto-project.wzb.eu) — kodirani izborni programi stranaka, ključno za empirijsku političku ekonomiju.
+- [ParlGov](https://www.parlgov.org) — vlade, izbori i stranke u parlamentarnim demokracijama.
+- [Database of Political Institutions (IDB)](https://publications.iadb.org/en/database-political-institutions-2020-dpi2020) — institucionalne karakteristike političkih sustava.
+- [Transparency International — Corruption Perceptions Index](https://www.transparency.org/en/cpi) — godišnji indeks percepcije korupcije.
+- [Freedom House — Freedom in the World](https://freedomhouse.org/report/freedom-world) — godišnja procjena političkih prava i građanskih sloboda.
+
+## Akademski časopisi (međunarodni)
+
+**Javne financije i javni izbor**
+
+- [Public Choice](https://link.springer.com/journal/11127) — vodeći časopis za javni izbor, Springer / Public Choice Society.
+- [Constitutional Political Economy](https://link.springer.com/journal/10602) — fokus na konstitucionalnu ekonomiju i institucionalni dizajn.
+- [Journal of Public Economics](https://www.sciencedirect.com/journal/journal-of-public-economics) — primarni časopis za javne financije i oporezivanje, Elsevier.
+- [American Economic Journal: Economic Policy](https://www.aeaweb.org/journals/pol) — empirijska policy analiza visokog ranga.
+- [Journal of Public Finance and Public Choice](https://bristoluniversitypressdigital.com/view/journals/jpfpc/jpfpc-overview.xml) — relauchiran 2018., međunarodno uredništvo.
+- [European Journal of Political Economy](https://www.sciencedirect.com/journal/european-journal-of-political-economy) — političko-ekonomska istraživanja s europskim fokusom.
+
+**Šira politička ekonomija**
+
+- [Journal of Political Economy (Chicago)](https://www.journals.uchicago.edu/toc/jpe/current) — jedan od najprestižnijih časopisa u ekonomiji.
+- [Quarterly Journal of Economics](https://academic.oup.com/qje) — vrhunska teorijska i empirijska istraživanja.
+- [Journal of Economic Perspectives](https://www.aeaweb.org/journals/jep) — pristupačni pregledni članci, izvrsno za nastavu.
+- [Economics & Politics](https://onlinelibrary.wiley.com/journal/14680343) — interdisciplinarna istraživanja na sjecištu ekonomije i politike.
+- [Quarterly Journal of Political Science](https://www.nowpublishers.com/QJPS) — formalna i empirijska politička znanost.
+
+## Klasici (kanon) — knjige
+
+### Javne financije
+
+- [Musgrave (1959) — *The Theory of Public Finance*](https://archive.org/details/publicfinanceint0001musg_o6d9) — temeljno djelo s tropartitnom strukturom alokacija/distribucija/stabilizacija.
+- [Stiglitz — *Economics of the Public Sector*](https://wwnorton.com/books/Economics-of-the-Public-Sector) — moderni standardni udžbenik javnih financija.
+- [Gruber — *Public Finance and Public Policy*](https://www.macmillanlearning.com/college/us/product/Public-Finance-and-Public-Policy/p/1319281109) — naglasak na empirijskoj policy analizi (7. izd. 2022.).
+- [Atkinson & Stiglitz — *Lectures on Public Economics*](https://press.princeton.edu/books/paperback/9780691166414/lectures-on-public-economics) — napredni teorijski udžbenik, ponovno objavljen kod Princetona.
+- [IFS — Mirrlees Review](https://ifs.org.uk/publications/mirrlees-review) — sveobuhvatna preporuka reforme oporezivanja, referenca u modernoj poreznoj teoriji.
+- [Saez & Zucman — *The Triumph of Injustice*](https://wwnorton.com/books/the-triumph-of-injustice) — empirijska analiza progresivnosti u SAD-u, šire relevantna za debatu o oporezivanju.
+
+### Javni izbor
+
+- [Buchanan & Tullock (1962) — *The Calculus of Consent*](https://www.econlib.org/library/Buchanan/buchCv3.html) — temeljno djelo modernog javnog izbora i konstitucionalne ekonomije.
+- [Olson (1965) — *The Logic of Collective Action*](https://www.hup.harvard.edu/file/feeds/PDF/9780674537514_sample.pdf) — klasik analize interesnih skupina i kolektivnog djelovanja.
+- [Olson (1982) — *The Rise and Decline of Nations*](https://yalebooks.yale.edu/book/9780300030792/the-rise-and-decline-of-nations/) — distribucijske koalicije i institucionalna skleroza.
+- [Downs (1957) — *An Economic Theory of Democracy*](https://www.harpercollins.com/products/an-economic-theory-of-democracy-anthony-downs) — model medijanskog birača, temelj prostorne teorije politike.
+- [Arrow (1951) — *Social Choice and Individual Values*](https://yalebooks.yale.edu/book/9780300013641/social-choice-and-individual-values/) — teorem nemogućnosti, izvor moderne teorije društvenog izbora.
+- [Niskanen (1971) — *Bureaucracy and Representative Government*](https://www.routledge.com/Bureaucracy-and-Representative-Government/Niskanen/p/book/9780202309590) — ekonomski model birokratskog ponašanja.
+- [Ostrom (1990) — *Governing the Commons*](https://www.cambridge.org/core/books/governing-the-commons/) — Nobelovo djelo o upravljanju zajedničkim resursima izvan tržišta i države.
+- [Mueller — *Public Choice III*](https://www.cambridge.org/core/books/public-choice-iii/) — najkompletniji moderni pregled discipline.
+- [Persson & Tabellini — *Political Economics*](https://mitpress.mit.edu/9780262661317/political-economics/) — formalna ekonomija fiskalne politike.
+- [Wagner — *Public Finance and Public Choice*](https://link.springer.com/book/10.1007/978-3-319-58018-4) — integrirajući pregled javnih financija kroz prizmu javnog izbora.
+
+### Institucije i institucionalna promjena
+
+- [North (1990) — *Institutions, Institutional Change and Economic Performance*](https://www.cambridge.org/core/books/institutions-institutional-change-and-economic-performance/) — temelj nove institucionalne ekonomije.
+- [Acemoglu & Robinson — *Why Nations Fail*](https://www.profilebooks.com/work/why-nations-fail/) — uloga uključivih i ekstraktivnih institucija u ekonomskom razvoju.
+- [Acemoglu & Robinson — *The Narrow Corridor*](https://www.penguinrandomhouse.com/books/555400/the-narrow-corridor/) — sloboda kao ravnoteža između jake države i jakog društva.
+- [Fukuyama — *The Origins of Political Order*](https://us.macmillan.com/books/9780374533229/theoriginsofpoliticalorder) — komparativni razvoj država, vladavine prava i odgovornosti.
+
+## Working paper i preprint serije
+
+- [NBER Working Papers](https://www.nber.org/papers) — preko 1.200 papira godišnje, vodeći repozitorij ekonomskih radova.
+- [CEPR Discussion Papers](https://cepr.org/publications/discussion-papers) — europski analog NBER-u, jaka politička ekonomija.
+- [CESifo Working Papers](https://www.cesifo.org/en/publications/working-papers) — istraživanja CESifo mreže, jaka u europskoj fiskalnoj politici.
+- [IZA Discussion Papers](https://www.iza.org/publications/dp) — preko 17.000 radova, naglasak na tržištu rada i socijalnoj politici.
+- [IMF Working Papers](https://www.imf.org/en/Publications/WP) — fiskalna politika, dug, ekonomske krize.
+- [OECD Economics Department Working Papers](https://www.oecd.org/en/publications/serie/oecd-economics-department-working-papers_18151973.html) — komparativna analiza policyja u članicama OECD-a.
+- [World Bank Policy Research Working Papers](https://documents.worldbank.org/en/publication/documents-reports/documentlist?colti=Policy+Research+Working+Paper) — fokus na zemlje u razvoju i tranziciji.
+- [SSRN](https://www.ssrn.com) — multidisciplinarni preprint server, jak u pravu i ekonomiji.
+- [RePEc / IDEAS](https://ideas.repec.org) — najveći agregator ekonomskih working papera, časopisa i autora.
+
+## Online tečajevi, predavanja i otvoreni materijali
+
+- [MIT OCW — 14.41 Public Finance and Public Policy](https://ocw.mit.edu/courses/14-41-public-finance-and-public-policy-fall-2024/) — Gruberov kompletni kolegij sa silabusom, predavanjima i zadacima.
+- [Marginal Revolution University](https://mru.org) — kratke video lekcije iz mikroekonomije, javnih financija i razvoja.
+- [Yale Open Courses — Economics](https://oyc.yale.edu/economics) — cjelovita predavanja vrhunskih ekonomista.
+- [NBER Lectures (YouTube)](https://www.youtube.com/@NBERvideos) — Summer Institute snimke i metode predavanja.
+- [Coursera — Public Policy Courses](https://www.coursera.org/courses?query=public%20policy) — strukturirani online kolegiji s certifikatima.
+- [LSE Public Lectures (YouTube)](https://www.youtube.com/@lse) — javna predavanja vodećih politoloških i ekonomskih istraživača.
+- [Khan Academy — Microeconomics](https://www.khanacademy.org/economics-finance-domain/microeconomics) — pristupačna pripremna mikroekonomija.
+
+## Globalni think-tankovi s jakim radom u javnim financijama
+
+- [Bruegel](https://www.bruegel.org) — vodeći europski ekonomski think-tank, izvrstan za EU fiskalnu politiku.
+- [CEPS — Centre for European Policy Studies](https://www.ceps.eu) — analize EU politika i ekonomske integracije.
+- [Institute for Fiscal Studies (IFS)](https://ifs.org.uk) — neovisne britanske analize poreza i javne potrošnje, zlatni standard.
+- [Brookings — Hutchins Center on Fiscal and Monetary Policy](https://www.brookings.edu/centers/the-hutchins-center-on-fiscal-and-monetary-policy/) — američka fiskalno-monetarna analiza.
+- [American Enterprise Institute (AEI)](https://www.aei.org/policy-areas/economics/) — tržišno orijentirana istraživanja javne politike.
+- [Cato Institute](https://www.cato.org) — libertarijanska perspektiva na ulogu države.
+- [Mercatus Center (George Mason University)](https://www.mercatus.org) — ima jaku tradiciju javnog izbora i regulatorne analize.
+- [Tax Foundation](https://taxfoundation.org) — komparativna porezna istraživanja i analize.
+- [Peterson Institute for International Economics (PIIE)](https://www.piie.com) — međunarodna ekonomija i makroekonomija.
+
+## Alati za analizu politika
+
+- [EUROMOD](https://euromod-web.jrc.ec.europa.eu) — mikrosimulacijski model poreza i naknada za sve države EU-a.
+- [OpenFisca](https://openfisca.org) — open-source platforma za simulaciju poreznih i socijalnih sustava.
+- [`eurostat` (R)](https://ropengov.github.io/eurostat/) — pristup Eurostat bazama izravno iz R-a.
+- [`OECD` (R)](https://cran.r-project.org/package=OECD) — pristup OECD statistikama izravno iz R-a.
+- [`wbstats` (R)](https://gshs-ornl.github.io/wbstats/) — pristup World Bank Open Data API-ju.
+- [`imfr` (R)](https://github.com/christophergandrud/imfr) — pristup IMF podacima.
+- [`fixest` (R)](https://lrberge.github.io/fixest/) — visoko optimizirana procjena fiksnih efekata, IV i ekonometrijska panel-analiza.
+- [Datawrapper](https://www.datawrapper.de) — alat za brzu izradu publikacijski-spremnih grafova i karata.
+- [Observable](https://observablehq.com) — interaktivni reactive notebooci, idealno za vizualizaciju policy podataka.
+- [Quarto](https://quarto.org) — open-source publikacijski sustav (na kojem je izrađena i ova knjiga).
+
+## Mediji, blogovi i podcasti
+
+### Hrvatski mediji i analitika
+
+- [Lider](https://lider.media) — poslovni tjednik, redovita pokrivenost fiskalnih i poreznih tema.
+- [Poslovni dnevnik](https://www.poslovni.hr) — dnevnik za poslovne i ekonomske vijesti.
+- [Bilans](https://bilans.hr) — specijalizirani analitički portal za financije, računovodstvo i porez.
+- [Index.hr — Biznis](https://www.index.hr/vijesti/rubrika/40/biznis) — digitalno-native ekonomske vijesti i komentari.
+- [tportal — Biznis](https://www.tportal.hr/biznis) — pokrivenost ekonomske politike i poslovanja.
+
+### Međunarodni blogovi i analitički portali
+
+- [VoxEU (CEPR)](https://cepr.org/voxeu) — vodeći portal s policy-relevantnim ekonomskim komentarima.
+- [Marginal Revolution](https://marginalrevolution.com) — Cowen i Tabarrok, dnevni komentari na sjecištu ekonomije i policy.
+- [IFS Commentary](https://ifs.org.uk/articles) — kratki analitički osvrti na britansku fiskalnu politiku.
+- [Bruegel Blog](https://www.bruegel.org/blog) — analize europskih ekonomskih politika u realnom vremenu.
+- [EconLog (Liberty Fund)](https://www.econlib.org/econlog/) — pluralni blog s naglaskom na tržišne institucije.
+
+### Podcasti
+
+- [EconTalk (Russ Roberts)](https://www.econtalk.org) — duboki tjedni razgovori s ekonomistima i policy istraživačima.
+- [Planet Money (NPR)](https://www.npr.org/podcasts/510289/planet-money) — pristupačno objašnjavanje ekonomskih fenomena.
+- [Capitalisn't (Zingales & Kamin)](https://www.capitalisnt.com) — kritičke analize tržišta i regulacije.
+- [Trade Talks (PIIE)](https://www.piie.com/research/trade-investment/trade-talks) — trgovinska politika i međunarodna ekonomija.
+- [Macro Musings (Beckworth)](https://www.mercatus.org/macro-musings) — monetarna i makroekonomska politika.
+
+## Konferencije i strukovne udruge
+
+- [HDE — Opatija konferencija](https://www.hde.hr) — najveći hrvatski godišnji skup ekonomista.
+- [HNB — Dubrovnik Economic Conference](https://www.hnb.hr/en/about-us/the-bank-and-public/conferences-organized-by-the-cnb/the-dubrovnik-economic-conference) — međunarodna konferencija o monetarnoj i fiskalnoj politici.
+- [Public Choice Society](https://www.publicchoicesociety.org) — matična strukovna udruga za polje javnog izbora.
+- [European Public Choice Society (EPCS)](https://www.epcsonline.org) — europska sestrinska udruga, godišnja konferencija.
+- [International Institute of Public Finance (IIPF)](https://www.iipf.org) — globalna udruga za javne financije, godišnji kongres.
+- [European Economic Association (EEA)](https://www.eeassoc.org) — najveće europsko strukovno ekonomsko društvo.
+- [American Economic Association (AEA)](https://www.aeaweb.org) — godišnji ASSA-AEA sastanak, najveći ekonomski skup.
+
+## Doprinesite
+
+Ova je stranica zamišljena kao **živa zbirka** koja raste s knjigom. Ako poznajete kvalitetan izvor — hrvatski dataset, regionalni istraživački centar, akademski rad, alat ili kolegij — koji bi pomogao studentima i istraživačima javnih politika, predložite ga preko [GitHub repozitorija knjige](https://github.com/lusiki/Javne-politike): otvorite issue ili pošaljite pull request s dodatkom u ovaj `resursi.qmd` dokument.
