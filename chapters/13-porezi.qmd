@@ -1342,3 +1342,109 @@ Za razliku od poreza na rad i potrošnju, oporezivanje imovine u Hrvatskoj relat
 ::: {.callout-vjezba}
 Pretpostavite radnika s bruto plaćom od 1.500 € mjesečno. Izračunajte: (a) iznos doprinosa za mirovinsko (20 %) i zdravstveno osiguranje (16,5 %); (b) bruto trošak rada za poslodavca; (c) neto plaću nakon poreza na dohodak (23 %, uz osobni odbitak od 600 €). Koliki je ukupni porezni klin kao postotak bruto troška rada? Usporedite s prosjekom EU od ~38 %.
 :::
+
+## Porezi u doba umjetne inteligencije
+
+Sve dosad opisano — od povijesti poreza do hrvatskog poreznog sustava — počiva na jednoj tihoj pretpostavci: da je **rad ljudi** glavni izvor stvaranja ekonomske vrijednosti, a **potrošnja kućanstava** glavni mehanizam kroz koji ta vrijednost cirkulira. Upravo zato moderne države, uključujući Hrvatsku, ubiru najveći dio prihoda iz poreza na dohodak, doprinosa na plaće i poreza na potrošnju. Brzi razvoj umjetne inteligencije (AI), međutim, prvi put u suvremenoj povijesti dovodi tu pretpostavku u pitanje. Ako strojevi postupno mogu obavljati sve veći dio ekonomski vrijednog rada, dvije temeljne porezne baze suvremene države — dohodak od rada i ljudska potrošnja — počinju se polako, ali sustavno smanjivati [@korinek2026]. Pitanje koje iz toga proizlazi nije više samo tehnološko nego duboko fiskalno: na čemu će porezni sustav počivati kada se vrijednost sve više stvara izvan rada?
+
+### Zašto AI mijenja porezni sustav
+
+Tehnološke promjene oduvijek su mijenjale porezne sustave. Već smo vidjeli da je industrijska revolucija dovela do pomaka s oporezivanja zemlje na oporezivanje dohotka, dobiti i potrošnje. Ono što suvremenu raspravu o AI-u čini posebnom jest mogućnost da promjena ovaj put bude **kvalitativno drukčija**: dok je svaka prethodna tehnološka revolucija u konačnici stvarala nove poslove i nove izvore dohotka od rada, transformativna AI mogla bi, prema dijelu suvremene literature, postupno zamijeniti **gotovo sve** oblike rutinskog i kognitivnog rada, ostavljajući rad kao manjinski izvor stvaranja vrijednosti [@korinek2017; @acemoglu2020robots].
+
+Za poreznu politiku ključno je razumjeti da AI ne mijenja samo razinu produktivnosti, već i **strukturu porezne baze**. Tradicionalni porezni sustav implicitno pretpostavlja da se vrijednost stvara kroz proces u kojem radnici i kapital zajedno proizvode robe i usluge, a stvoreni dohodak kruži preko plaća i potrošnje. Kada se taj proces preokrene tako da kapital — konkretno, ulaganja u podatkovne centre, modele i računarsku snagu — može sam, uz minimalno ljudsko sudjelovanje, generirati ekonomski vrijedan output, klasične porezne ručice postaju sve manje učinkovite. Porez na rad pogađa sve manji udio ukupne vrijednosti, dok porez na potrošnju pogađa samo onaj dio stvorene vrijednosti koji se na kraju pretvori u ljudsku potrošnju — a taj dio može biti manji ako se znatan dio outputa AI sustava reinvestira natrag u izgradnju nove AI infrastrukture [@korinek2026].
+
+Ovaj problem najjasnije su sistematizirali ekonomisti Anton Korinek i Lee Lockwood, koji ga analiziraju kroz prizmu **teorije optimalnog oporezivanja**. Njihova analiza nije pokušaj predviđanja kada će se točno pojaviti opća umjetna inteligencija, već okvir za razmišljanje o tome **kojim redoslijedom i kojim instrumentima** porezni sustav treba reagirati ako se kretanje prema sve sposobnijim AI sustavima nastavi.
+
+### Erozija porezne baze: rad nasuprot kapitalu
+
+Empirijska polazna točka rasprave jest jednostavna, ali važna činjenica: u većini razvijenih ekonomija **rad je već danas znatno teže oporezovan od kapitala**. Procjene za Sjedinjene Države pokazuju da efektivna porezna stopa na dohodak od rada iznosi oko 30 %, dok se efektivna stopa na dohodak od kapitala kreće između 15 i 20 % [@acemoglu2020tax]. Posljedica je jednostavna i fiskalno neugodna: svaki euro vrijednosti koji se preseli s rada na kapital donosi državi približno 10 do 15 centi **manje** poreznih prihoda. Ako AI postupno preseljava sve veći udio vrijednosti s rada na kapital, taj raskorak sustavno stvara strukturni deficit koji nije moguće zatvoriti marginalnim korekcijama postojećih stopa.
+
+Asimetrija ima i drugu, suptilniju posljedicu. Kad je porezni klin na rad znatno veći od poreznog opterećenja kapitala, sam porezni sustav postaje **pristran prema automatizaciji**: poduzećima se isplati zamijeniti radnika strojem i u onim slučajevima u kojima čisto tehnološki, bez poreza, takva zamjena ne bi bila ekonomski opravdana [@acemoglu2020tax]. Drugim riječima, postojeća porezna struktura ne samo da slabije oporezuje rezultat automatizacije, nego ga aktivno potiče.
+
+::: {.callout-empirija}
+U Hrvatskoj porezi i doprinosi na rad (porez na dohodak + doprinosi za mirovinsko i zdravstveno osiguranje) čine **gotovo polovicu** ukupnih prihoda opće države, dok porez na dobit i porezi povezani s kapitalom donose tek nekoliko postotaka BDP-a. Hipotetski pomak od svega 10 % vrijednosti s rada na kapital, uz nepromijenjene stope, smanjio bi porezne prihode za red veličine 1 % BDP-a — uz istovremen porast pritiska na socijalne izdatke za istisnute radnike.
+:::
+
+Za Hrvatsku ova je dijagnoza posebno relevantna jer je oporezivanje rada — kroz visoke doprinose i porezni klin koji se približava prosjeku EU — već danas jedan od glavnih izvora prihoda. Svaka eventualna erozija te baze udara izravno u temelje proračuna.
+
+### Dvostupanjski okvir: tranzicija i autonomna AI
+
+Korinek i Lockwood predlažu jednostavnu, ali analitički korisnu podjelu mogućeg razvoja na **dvije faze**, jer optimalna porezna politika u njima nije ista — štoviše, instrumenti koji su dobri u jednoj fazi mogu biti štetni u drugoj [@korinek2026].
+
+U **prvoj fazi (tranzicija)** AI postupno istiskuje radnike u nizu zanimanja, ali ljudi i dalje ostaju glavni potrošači ekonomskog outputa. Vrijednost se sve više stvara kapitalom, ali se još uvijek u velikoj mjeri vraća kućanstvima kroz dividende, plaće preostalog rada i transfere. Glavni problem porezne politike u toj fazi jest **kako održati prihode države** dok se baza rada smanjuje, ali bez gušenja investicija u AI koje su, paradoksalno, izvor dugoročnog rasta produktivnosti.
+
+U **drugoj fazi (autonomna AI)** AI sustavi postaju dovoljno sposobni da samostalno usmjeravaju značajan dio ekonomske aktivnosti — uključujući reinvestiranje u izgradnju nove infrastrukture, podataka i modela — pri čemu sve veći udio stvorene vrijednosti **nikada ne prolazi kroz ljudsku potrošnju**. U toj fazi sami potrošni porezi prestaju biti dovoljni, jer ono što AI sustavi "troše" međusobno (računarska snaga, energija, novi modeli) ne registrira se u standardnoj poreznoj osnovici.
+
+Razlika između faza nije samo akademska. Ona definira koji su porezi pametni *sada*, a koji bi mogli postati nužni *kasnije*. Tablica @tbl-ai-faze sažima preporuke po fazama; ostatak ovog odjeljka razrađuje logiku.
+
+| Instrument                                            | Faza 1 (AI istiskuje rad)         | Faza 2 (autonomna AI)            |
+|-------------------------------------------------------|-----------------------------------|----------------------------------|
+| Porez na rad                                          | postupno smanjivati               | irelevantan (rad nestaje kao baza) |
+| PDV i ostali potrošni porezi                          | proširiti, modernizirati za digitalno | nedovoljan sam za sebe         |
+| Porez na **finalne** usluge robota / AI               | DA                                | DA                               |
+| Porez na **računarsku snagu** i AI infrastrukturu     | NE (distorzija ulaganja)          | DA (pristup vrijednosti)         |
+| Porez na **vlasništvo** robota                        | NE                                | DA                               |
+| Porez na fiksne faktore (zemljište, spektar)          | DA                                | DA                               |
+| Suvereni investicijski fond                           | preporučljivo započeti            | ključan                          |
+| Univerzalni temeljni dohodak (UBI)                    | preuranjen kao glavni instrument  | potencijalno nužan               |
+| Univerzalni temeljni kapital (UBC)                    | započeti odmah                    | ključan                          |
+
+: Optimalni porezni instrumenti po fazama AI tranzicije. Prilagođeno prema @korinek2026. {#tbl-ai-faze}
+
+### Optimalni instrumenti u Fazi 1
+
+Središnja preporuka za fazu tranzicije jest **postupan pomak težišta s oporezivanja rada na oporezivanje potrošnje**. Logika je u izravnoj vezi s teorijom optimalnog oporezivanja koju smo ranije razmatrali: ako porezna baza rada postaje manje izdašna i istovremeno više iskrivljuje ekonomske odluke (potičući automatizaciju), učinkoviti porezni sustav prirodno prebacuje teret na šire i stabilnije baze — prije svega na potrošnju, koja u Fazi 1 i dalje obuhvaća najveći dio ekonomske aktivnosti [@korinek2026; @atkinson1980].
+
+Uz pomak s rada na potrošnju, ključna je i druga, manje očita razlika — između oporezivanja **finalnih usluga** koje AI sustavi pružaju potrošačima i oporezivanja **proizvodnog kapitala** koji te usluge omogućuje. Korinek i Lockwood snažno preporučuju prvo, a odbacuju drugo: razumno je oporezovati pretplatu na AI asistenta koja se prodaje kućanstvu (jer je riječ o klasičnoj konačnoj potrošnji), ali neproduktivno je oporezovati grafičke procesore, podatkovne centre ili "trening compute" — jer to izravno gasi ulaganja koja podižu produktivnost i, u konačnici, samu poreznu bazu [@guerreiro2022; @costinot2023]. Ista logika vrijedi i za tzv. **token poreze** (porez na jedinice AI outputa): smisleni su kao porez na potrošačku uporabu, ali postaju distorzivni ako pogađaju AI korištenje u industrijskoj proizvodnji ili istraživanju.
+
+Treća preporuka odnosi se na **fiksne faktore** — resurse koji ne mogu pobjeći u drugu jurisdikciju ni "nestati" kada se oporezuju. Klasičan je primjer zemljište, ali u digitalnom dobu istoj logici pripadaju i radiofrekvencijski spektar te orbitalne pozicije za satelite. Ovi su porezi ekonomski neutralni (ne smanjuju ponudu jer je ponuda fiksna) i postaju sve vrjedniji upravo onda kada oporezivanje rada počinje slabiti [@korinek2026]. Za Hrvatsku, slabo razvijeno oporezivanje nekretnina o kojem smo govorili ranije izgleda u tom svjetlu kao **propušten fiskalni prostor** — i to onaj koji teorija upravo preporučuje pojačati u doba AI-a.
+
+::: {.callout-praksa}
+Južna Koreja je 2017. godine smanjila porezne olakšice za ulaganja u automatizaciju, u javnosti predstavljeno kao prvi „porez na robote" na svijetu. Bill Gates je iste godine predložio izravan porez na vlasništvo robota. S gledišta okvira Korineka i Lockwooda oba su prijedloga **krivo dizajnirana za Fazu 1**: pogađaju proizvodni kapital umjesto konačne potrošnje robota/AI usluga, gase ulaganja u trenutku kad ona još donose najveći prirast produktivnosti i, paradoksalno, pogoršavaju upravo onu fiskalnu ravnotežu koju nastoje popraviti. Ispravniji oblik istog poreza bio bi PDV na robotske usluge dostavljene krajnjem korisniku, ili poseban potrošni porez na komercijalne AI servise — strukturno blizak postojećem PDV-u.
+:::
+
+Konačno, Faza 1 zahtijeva i **modernizaciju samog PDV-a**: prilagodbu definicija oporezivih usluga digitalnoj ekonomiji, jasno razgraničenje poslovne i krajnje uporabe (kako bi se izbjeglo dvostruko ili kaskadno oporezivanje kroz proizvodne lance), te ulaganje u administrativni kapacitet porezne uprave koji će sve to moći nadgledati u stvarnom vremenu.
+
+### Optimalni instrumenti u Fazi 2
+
+Što ako AI sustavi postanu dovoljno sposobni da značajan dio ekonomske aktivnosti — istraživanje, dizajn, optimizaciju, pa i upravljanje drugim strojevima — obavljaju autonomno? U tom slučaju potrošni porezi prestaju biti dovoljni: ako AI sustav "zaradi" sto jedinica vrijednosti i devedeset reinvestira u nove modele i podatkovne centre, samo deset prolazi kroz ljudsku potrošnju i ulazi u PDV osnovicu.
+
+Korinek i Lockwood predlažu da se oporezivanje AI kapitala u toj fazi promatra ne kao klasičan porez na kapital, nego kao problem **optimalne berbe** — analogno odlukama o tome koliko šume sjeći godišnje da bi se dugoročno održao ekonomski prinos, ili koliko sveučilišni endowment smije godišnje trošiti, a da glavnica i dalje raste [@korinek2026]. Iznenađujući analitički rezultat te perspektive jest da optimalna stopa oporezivanja autonomnog AI kapitala u stacionarnom stanju ovisi **prije svega o društvenoj diskontnoj stopi** — o tome koliko društvo vrednuje sadašnju u odnosu na buduću potrošnju — a tek sekundarno o tehnološkim parametrima.
+
+::: {.callout-empirija}
+Intuicija je sljedeća: ako AI kapital prinosi $R$ godišnje, a društvo buduću potrošnju diskontira po stopi $r$, optimalna porezna stopa kroz koju ljudski sektor "ubire" plodove sustava približno je jednaka $r$. Veće "ubiranje" iscrpljuje akumulaciju AI kapitala brže nego što ona raste; manje "ubiranje" znači žrtvovanje sadašnje potrošnje pojedinaca u korist nastavka ekspanzije strojnog sektora. Optimalan porez time postaje izravan iskaz **međugeneracijskih preferencija društva**, a ne čisto tehničko pitanje.
+:::
+
+U Fazi 2 instrumenti koje smo u Fazi 1 ocijenili štetnima — porezi na računarsku snagu, na vlasništvo robota, na intermedijarno korištenje AI sustava — postaju ne samo opravdani nego nužni: bez njih najveći dio stvorene vrijednosti zaobilazi ljudski sektor. Uz njih, otvara se prostor i za nekoliko **nestandardnih mehanizama** o kojima rasprava već danas teče u međunarodnim policy krugovima:
+
+- **Suvereni investicijski fond** — država kupuje udjele u najproduktivnijim AI poduzećima (model Norveške s naftnim fondom), pa prihode ostvaruje kroz dividende, a ne kroz iskrivljujuće poreze.
+- **Windfall clauses** — pravno obvezujuće odredbe da AI poduzeća koja postignu iznimno visoke prinose dio njih automatski dijele s državom ili širom javnošću.
+- **Univerzalni temeljni kapital (UBC)** — predistribucijska politika u kojoj građani dobivaju vlasničke udjele u AI sustavima i infrastrukturi prije nego što se vlasništvo koncentrira; logika je da je lakše dijeliti **vlasništvo na samom početku** nego naknadno preraspodjeljivati visoko koncentrirani dohodak.
+
+### Distribucijski izazov: UBI ili UBC?
+
+Sve dosad rečeno bavilo se prihodnom stranom, ali AI postavlja i distribucijsko pitanje koje porezni sustav teško može riješiti sam. Ako kapital — a osobito AI kapital — donosi sve veći udio dohotka, dok dohodak od rada stagnira ili pada, čak i fiskalno održiv sustav može proizvesti društveno neodrživu razinu nejednakosti.
+
+Najčešće spominjan odgovor jest **univerzalni temeljni dohodak (UBI)** — bezuvjetni novčani transfer svim građanima. Iz perspektive Korinekova i Lockwoodova okvira, UBI je politički razumljiv, ali fiskalno krhak: u Fazi 1 financirao bi se uglavnom iz potrošnih poreza, koji su regresivni i opterećuju upravo one koje UBI nastoji zaštititi; u Fazi 2 izvor financiranja postaje neizvjestan jer sama potrošnja kao baza slabi.
+
+Alternativa je već spomenuti **UBC** — univerzalni temeljni *kapital*. Umjesto da država redistribuira dohodak nakon što tržište proizvede koncentraciju, ona od početka osigurava da svaki građanin posjeduje neku količinu produktivne imovine (udjela u fondovima, AI infrastrukturi, podatkovnoj infrastrukturi). UBC se može povezati i s mirovinskim sustavom, što ga čini institucionalno bliskim hrvatskom drugom stupu. Glavna prednost UBC-a jest da **prati izvor vrijednosti**: ako AI kapital donosi sve veće prinose, prinosi prirodno teku građanima preko vlasništva, bez potrebe za stalno višim poreznim stopama.
+
+Rasprava UBI vs. UBC dobro se uklapa u logiku javnog izbora razvijenu u drugom dijelu knjige: UBI lakše prolazi kratkoročnom političkom logikom, ali UBC je strukturno otporniji jer ne ovisi o tome da svaka sljedeća vlada zadrži visoke porezne stope na kapital.
+
+### Što ovo znači za Hrvatsku?
+
+Hrvatska se u doba AI-a nalazi u zanimljivom — i ne nužno nepovoljnom — položaju. Njezin porezni sustav već je danas, kako pokazuje prethodni odjeljak, **izrazito naslonjen na potrošnju**: PDV od 25 % i prihod od 12 do 13 % BDP-a iz potrošnih poreza u skladu su upravo s onim smjerom koji teorija AI-fiskalne tranzicije preporučuje za Fazu 1. Porezna reforma iz 2024., koja je smanjila opću stopu poreza na dohodak s 30 % na 23 %, u istom je okviru korak prema rasterećenju rada — premda više iz domaćih razloga (konkurentnost rada, rasprava o klinu) nego iz svjesne AI-strategije.
+
+Istovremeno, ostaje nekoliko jasnih ranjivosti. Prvo, **porezni klin na rad i dalje je visok**, prije svega zbog doprinosa, pa je hrvatski proračun strukturno osjetljiv na svako daljnje istiskivanje rada od strane automatizacije. Drugo, **oporezivanje imovine i nekretnina ostaje slabo razvijeno** — što izravno proturječi preporuci o pojačanju poreza na fiksne faktore, koji su u doba AI-a fiskalno posebno vrijedni. Treće, Hrvatska zasad nema artikulirani okvir za oporezivanje **digitalnih i AI usluga** (digital services tax, jasno razgraničenje poslovne i krajnje uporabe AI servisa), iako se na razini EU rasprava o tome ubrzano oblikuje.
+
+Korisno je razmišljanje o Hrvatskoj voditi i prema sljedećem redoslijedu prioriteta: kratkoročno — daljnje rasterećenje rada uz modernizaciju PDV-a za digitalnu ekonomiju i razvoj poreza na nekretnine; srednjoročno — uključivanje u europski okvir oporezivanja digitalnih usluga; dugoročno — razmatranje fonda po uzoru na suverene investicijske fondove kojim bi se akumulirao vlasnički udjel društva u dobicima od AI tranzicije.
+
+::: {.callout-vjezba}
+Pretpostavite hipotetski scenarij u kojem AI tijekom desetljeća istisne 15 % bruto plaća iz hrvatske ekonomije, pri čemu se istisnuta vrijednost preseli na kapital. Koristeći okvirne udjele iz teksta (porezi i doprinosi na rad ~ 18 % BDP-a; porezi na dobit i kapital ~ 3 % BDP-a; efektivne stope kao u tekstu), procijenite: (a) izravni gubitak prihoda od poreza na rad; (b) dobitak od poreza na dobit ako 15 % bruto plaća postane dobit; (c) neto fiskalni učinak. Koju biste poreznu mjeru iz @tbl-ai-faze prvo uveli da zatvorite jaz i zašto?
+:::
+
+### Otvorena pitanja i ograničenja okvira
+
+Okvir Korineka i Lockwooda dragocjen je upravo zato što razlikuje stupnjeve tehnološke tranzicije i pokazuje da isti porezni instrument može biti dobar ili loš ovisno o fazi. Ali okvir ne uklanja nekoliko stvarnih ograničenja. Prvo, **dubina je neizvjesnost**: ne znamo hoće li, ni kada, doći do Faze 2, pa porezne sustave treba dizajnirati tako da budu **otporni na obje krajnosti**. Drugo, **porezna konkurencija među državama** ograničava jednostranu primjenu mjera poput poreza na računarsku snagu — male, otvorene ekonomije poput Hrvatske posebno su izložene riziku premještanja AI investicija u susjedne, niže oporezive jurisdikcije ako se ne uskladi politika na razini EU. Treće, **politička ekonomija pomaka prema potrošnji** nije neutralna: bez popratnih redistributivnih mjera, takav pomak povećava regresivnost sustava, što može oslabiti njegovu legitimnost — pitanje koje je već u središtu rasprave razvijene u drugom dijelu knjige.
+
+Konačno, valja zadržati i metodološku skromnost: rasprava o porezima u doba AI-a još je u povoju, a najvažniji empirijski podaci tek slijede. Vrijednost okvira nije u tome što daje konačne odgovore, nego u tome što **postavlja prava pitanja** — i pokazuje koja od njih moramo početi rješavati prije nego što budemo prisiljeni.
