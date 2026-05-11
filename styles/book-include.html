@@ -239,6 +239,79 @@
   }
 
   // ----------------------------------------------------------
+  // 9a. Standalone pages: vodic, resursi, alat — strip book chrome
+  // ----------------------------------------------------------
+  function setupStandalonePages() {
+    var path = location.pathname;
+    var standalonePages = ["/vodic.html", "/resursi.html", "/alat.html"];
+    var isStandalone = standalonePages.some(function (p) {
+      return path.endsWith(p);
+    });
+    if (!isStandalone) return;
+
+    // 1. Add body class — picks up CSS rules in styles.css
+    document.body.classList.add("standalone-page");
+
+    // 2. Force-hide book sidebar and breadcrumb (belt + suspenders)
+    var sb = document.getElementById("quarto-sidebar");
+    if (sb) sb.style.display = "none";
+    var msb = document.getElementById("quarto-margin-sidebar");
+    if (msb) msb.style.display = "none";
+    document.querySelectorAll(".quarto-page-breadcrumbs, nav.quarto-page-breadcrumbs").forEach(function (el) {
+      el.remove();
+    });
+
+    // 3. Remove "Appendix A —" / "Appendix B —" etc. prefix from page title
+    var titleEl = document.querySelector("#title-block-header h1.title, h1.title");
+    if (titleEl) {
+      titleEl.textContent = titleEl.textContent.replace(/^Appendix\s+[A-Z]\s*[—–-]\s*/i, "").trim();
+    }
+    document.title = document.title.replace(/^Appendix\s+[A-Z]\s*[—–-]\s*/i, "");
+
+    // 4. Reset page layout to full-width
+    document.querySelectorAll(".page-columns").forEach(function (el) {
+      el.style.display = "block";
+    });
+    var main = document.querySelector("main.content");
+    if (main) {
+      main.style.maxWidth = "1100px";
+      main.style.marginLeft = "auto";
+      main.style.marginRight = "auto";
+      main.style.paddingLeft = "1.5rem";
+      main.style.paddingRight = "1.5rem";
+      main.style.gridColumn = "1 / -1";
+    }
+  }
+
+  // ----------------------------------------------------------
+  // 9b. Prune sidebar: hide index, vodic, resursi, alat entries.
+  //     Uses MutationObserver so it survives any Quarto sidebar re-render.
+  // ----------------------------------------------------------
+  function removePrunedItems() {
+    var endings = ["index.html", "vodic.html", "resursi.html", "alat.html"];
+    document.querySelectorAll("#quarto-sidebar a.sidebar-link, #quarto-sidebar a.sidebar-item-text").forEach(function (a) {
+      var href = a.getAttribute("href") || "";
+      for (var i = 0; i < endings.length; i++) {
+        if (href.endsWith(endings[i])) {
+          // Hide the link itself
+          a.style.display = "none";
+          // Hide the parent li if possible
+          var li = a.closest(".sidebar-item");
+          if (li) li.style.display = "none";
+          break;
+        }
+      }
+    });
+  }
+
+  function pruneSidebar() {
+    // Run immediately, then again after 200ms to beat Quarto's own sidebar JS
+    removePrunedItems();
+    setTimeout(removePrunedItems, 200);
+    setTimeout(removePrunedItems, 800);
+  }
+
+  // ----------------------------------------------------------
   // Bootstrap
   // ----------------------------------------------------------
   function init() {
@@ -250,6 +323,8 @@
     try { setupEndMark(); } catch (e) {}
     try { setupDinkus(); } catch (e) {}
     try { setupAnchorLinks(); } catch (e) {}
+    try { setupStandalonePages(); } catch (e) {}
+    try { pruneSidebar(); } catch (e) {}
   }
 
   if (document.readyState === "loading") {

@@ -25,6 +25,21 @@ book:
 
   favicon: "images/favicon.ico"
 
+  navbar:
+    pinned: true
+    left:
+      - text: "Knjiga"
+        href: chapters/01-pristupi.qmd
+      - text: "Vodič"
+        href: vodic.html
+      - text: "Resursi"
+        href: resursi.html
+      - text: "Alat"
+        href: alat.html
+    right:
+      - text: "↓ PDF"
+        href: pdf/Javne-politike.pdf
+
   search:
     location: sidebar
     type: overlay
@@ -73,6 +88,9 @@ book:
 
   appendices:
     - references.qmd
+    - vodic.qmd
+    - resursi.qmd
+    - alat.qmd
 
 bibliography: references.bib
 
