@@ -22,9 +22,6 @@ book:
   language: hr-HR
 
   site-url: "https://lusiki.github.io/Javne-politike/"
-  repo-url: "https://github.com/lusiki/Javne-politike"
-  repo-branch: main
-  repo-actions: [edit, issue, source]
 
   favicon: "images/favicon.ico"
 
@@ -41,11 +38,8 @@ book:
     collapse-level: 4
     tools:
       - icon: file-earmark-pdf
-        href: https://lusiki.github.io/Javne-politike/pdf/Javne-politike.pdf
+        href: pdf/Javne-politike.pdf
         text: "Preuzmi PDF (radna verzija)"
-      - icon: github
-        href: https://github.com/lusiki/Javne-politike
-        text: "GitHub repozitorij"
 
   page-footer:
     center: "© 2026 Deskar-Škrbić, Palić, Šikić | Javne politike u Hrvatskoj"
