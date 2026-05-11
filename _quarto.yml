@@ -24,7 +24,7 @@ book:
   site-url: "https://lusiki.github.io/Javne-politike/"
   repo-url: "https://github.com/lusiki/Javne-politike"
   repo-branch: main
-  repo-actions: [edit, issue]
+  repo-actions: [edit, issue, source]
 
   favicon: "images/favicon.ico"
 
@@ -39,6 +39,13 @@ book:
     style: docked
     background: light
     collapse-level: 4
+    tools:
+      - icon: file-earmark-pdf
+        href: https://github.com/lusiki/Javne-politike/raw/main/pdf/Javne-politike.pdf
+        text: "Preuzmi PDF (radna verzija)"
+      - icon: github
+        href: https://github.com/lusiki/Javne-politike
+        text: "GitHub repozitorij"
 
   page-footer:
     center: "© 2026 Deskar-Škrbić, Palić, Šikić | Javne politike u Hrvatskoj"
@@ -81,6 +88,20 @@ crossref:
   sec-prefix: "Poglavlje"
   fig-prefix: "Slika"
   tbl-prefix: "Tablica"
+  thm-title: "Teorem"
+  thm-prefix: "Teorem"
+  lem-title: "Lema"
+  lem-prefix: "Lema"
+  cor-title: "Korolar"
+  cor-prefix: "Korolar"
+  prp-title: "Propozicija"
+  prp-prefix: "Propozicija"
+  def-title: "Definicija"
+  def-prefix: "Definicija"
+  exm-title: "Primjer"
+  exm-prefix: "Primjer"
+  exr-title: "Vježba"
+  exr-prefix: "Vježba"
 
 format:
   html:
@@ -122,6 +143,10 @@ format:
     tbl-cap-location: top
     reference-location: margin
     citation-location: margin
+    theorem-appearance: clouds
+    definition-appearance: clouds
+    proposition-appearance: simple
+    proof-appearance: simple
     fontsize: 1.02rem
     linestretch: 1.6
     lang: hr-HR
@@ -132,7 +157,7 @@ format:
       - text: |
           <link rel="preconnect" href="https://fonts.googleapis.com">
           <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-          <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,300..900;1,8..60,300..900&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+          <link href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600;700&family=Geist+Mono:wght@400;500;600&family=Newsreader:ital,opsz,wght@0,6..72,300;0,6..72,400;0,6..72,500;0,6..72,600;0,6..72,700;1,6..72,300;1,6..72,400;1,6..72,500&display=swap" rel="stylesheet">
     include-after-body:
       - styles/book-include.html
     comments:

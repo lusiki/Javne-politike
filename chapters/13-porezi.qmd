@@ -650,7 +650,15 @@ U ekonomskom smislu, porezni klin djeluje kao distorzija tržišta rada. Posloda
 
 Teorija optimalnog oporezivanja razvijena je kako bi odgovorila na temeljno pitanje javnih financija: kako dizajnirati porezni sustav koji maksimizira društveno blagostanje uz minimalne distorzije u gospodarstvu [@stiglitz2015; @gruber2019]. Za razliku od ranijih normativnih pristupa, ova teorija koristi formalne modele kako bi analizirala ponašanje pojedinaca i ograničenja s kojima se država suočava. U središtu cijelog pristupa nalazi se ključni problem: svaki porez istovremeno redistribuira dohodak i narušava ekonomske poticaje. Upravo zato optimalno oporezivanje nije pitanje „koliko oporezivati", već kako rasporediti porezno opterećenje tako da gubitak blagostanja bude što manji, uz ostvarenje društvenih ciljeva.
 
-**Ramseyevo pravilo** [@ramsey1927] — početak moderne teorije optimalnog oporezivanja vezuje se uz rad Franka Ramseya, koji je prvi formalno postavio pitanje: kako rasporediti poreze na različita dobra kako bi se minimizirao mrtvi teret uz zadane porezne prihode. Ramsey je pokazao da optimalno oporezivanje ne znači jednako oporezivanje svih dobara. Naprotiv, njegov ključni rezultat glasi: dobra s neelastičnom potražnjom trebaju biti relativno više oporezovana. Intuicija iza ovog rezultata proizlazi iz koncepta mrtvog tereta. Kada porez povećava cijenu nekog dobra, potrošači smanjuju potražnju. Ako je ta reakcija velika (elastična potražnja), dolazi do značajnog pada količine i velikog gubitka blagostanja. Ako je reakcija mala (neelastična potražnja), porez ima manji učinak na količinu i time manji mrtvi teret. Ovaj rezultat ima jasne praktične implikacije — upravo zato se u stvarnim poreznim sustavima često primjenjuju visoke trošarine na proizvode poput goriva ili duhana, čija je potražnja relativno neelastična.
+::: {#def-mrtvi-teret}
+**Mrtvi teret poreza** je gubitak ukupnog blagostanja koji nastaje zato što porez mijenja relativne cijene i odvraća sudionike od razmjena koje bi inače bile uzajamno korisne. Formalno, ako je $Q^\*$ ravnotežna količina prije oporezivanja, a $Q_t$ količina nakon uvođenja poreza po jedinici $t$, mrtvi teret je $DWL \approx \tfrac{1}{2}\,t\,(Q^\* - Q_t)$. On raste s kvadratom porezne stope i s elastičnošću ponude i potražnje.
+:::
+
+::: {#prp-ramsey}
+**Ramseyevo pravilo.** Pri zadanom prihodu koji država treba prikupiti, mrtvi teret oporezivanja minimizira se kada se porezne stope na različita dobra postave tako da postotno smanjenje potraživane količine bude jednako za sva dobra. Posljedica: dobra s relativno **neelastičnom** potražnjom trebaju biti relativno **više** oporezivana — jer manje reagiraju na promjenu cijene, pa generiraju manji mrtvi teret po jedinici prihoda [@ramsey1927].
+:::
+
+Početak moderne teorije optimalnog oporezivanja vezuje se uz rad Franka Ramseya, koji je prvi formalno postavio pitanje: kako rasporediti poreze na različita dobra kako bi se minimizirao mrtvi teret uz zadane porezne prihode. Ramsey je pokazao da optimalno oporezivanje ne znači jednako oporezivanje svih dobara. Naprotiv, njegov ključni rezultat glasi: dobra s neelastičnom potražnjom trebaju biti relativno više oporezovana. Intuicija iza ovog rezultata proizlazi iz koncepta mrtvog tereta. Kada porez povećava cijenu nekog dobra, potrošači smanjuju potražnju. Ako je ta reakcija velika (elastična potražnja), dolazi do značajnog pada količine i velikog gubitka blagostanja. Ako je reakcija mala (neelastična potražnja), porez ima manji učinak na količinu i time manji mrtvi teret. Ovaj rezultat ima jasne praktične implikacije — upravo zato se u stvarnim poreznim sustavima često primjenjuju visoke trošarine na proizvode poput goriva ili duhana, čija je potražnja relativno neelastična.
 
 ```{ojs}
 //| echo: false
@@ -1337,12 +1345,24 @@ Porezni sustav Republike Hrvatske razvijen je u okviru tranzicije prema tržišn
 
 Jedno od najvažnijih obilježja hrvatskog sustava jest snažna uloga poreza na potrošnju, prije svega poreza na dodanu vrijednost (PDV-a). Standardna stopa PDV-a u Hrvatskoj iznosi 25 %, što je među najvišim stopama u Europskoj uniji. Uz standardnu stopu, primjenjuju se i snižene stope: 13 % (npr. na određene prehrambene proizvode, usluge u turizmu, energente) i 5 % (npr. na osnovne prehrambene proizvode, lijekove, knjige i novine). PDV je ključni izvor javnih prihoda, a njegova važnost proizlazi iz široke porezne osnovice i relativno učinkovite naplate.
 
+::: {.callout-empirija}
+PDV u Hrvatskoj generira između 12 i 13 % BDP-a godišnje, što je više od ukupnih prihoda od poreza na dohodak i poreza na dobit zajedno. Drugim riječima, više od svakog trećeg eura javnih prihoda dolazi iz potrošnje, a ne iz rada ili kapitala — što odražava izrazit oslonac sustava na neizravne poreze.
+:::
+
 Uz PDV, važan dio sustava čine i trošarine, koje se primjenjuju na energente (gorivo, plin, električnu energiju), duhanske proizvode te alkohol i alkoholna pića. Ovi porezi imaju dvostruku funkciju: fiskalnu, jer generiraju značajne prihode, i korektivnu, jer utječu na smanjenje potrošnje proizvoda koji imaju negativne učinke na zdravlje ili okoliš.
 
 U području oporezivanja rada, Hrvatska primjenjuje porez na dohodak koji ima obilježja progresivnog sustava. Trenutno se primjenjuju dvije osnovne porezne stope: 20 % na niže razine dohotka i 30 % na više razine dohotka. Osim toga, jedinice lokalne samouprave mogu propisati lokalni prirez, koji dodatno povećava efektivno porezno opterećenje. Porez na dohodak uključuje i osobni odbitak, čime se smanjuje porezno opterećenje nižih dohodaka i povećava progresivnost sustava.
 
 Međutim, ukupno opterećenje rada u Hrvatskoj ne proizlazi samo iz poreza na dohodak, već i iz socijalnih doprinosa, koji čine značajan dio troška rada. Najvažniji doprinosi uključuju mirovinsko osiguranje (20 % bruto plaće: 15 % za prvi stup i 5 % za drugi stup) i zdravstveno osiguranje (16,5 % bruto plaće, plaća poslodavac). Zbog kombinacije poreza na dohodak i doprinosa, ukupni porezni klin na rad relativno je visok, što može utjecati na ponudu rada i konkurentnost gospodarstva [@simovic2022].
 
+::: {.callout-praksa}
+Porezna reforma iz 2024. godine smanjila je opću stopu poreza na dohodak s 30 % na 23 % i ukinula prirez kao zaseban porez, integrirajući ga u opću stopu. Cilj je bio rasteretiti rad i pojednostaviti sustav, ali kritičari su upozorili da se istodobno smanjuje fiskalni prostor za lokalne jedinice koje su o prirezu ovisile. Reforma ilustrira tipičan kompromis između cilja smanjenja poreznog klina i cilja očuvanja prihoda jedinica lokalne samouprave.
+:::
+
 Porez na dobit u Hrvatskoj ima proporcionalnu strukturu i relativno konkurentne stope: 10 % za male poduzetnike (do određenog praga prihoda) i 18 % za veće poduzetnike. Ovakva struktura osmišljena je kako bi se potaknulo poduzetništvo i investicije, osobito u malim i srednjim poduzećima. Uz to, postoje i različite porezne olakšice i poticaji, primjerice za ulaganja, istraživanje i razvoj te zapošljavanje.
 
 Za razliku od poreza na rad i potrošnju, oporezivanje imovine u Hrvatskoj relativno je slabo razvijeno. Ne postoji klasični godišnji porez na nekretnine u punom smislu, već se primjenjuju porez na promet nekretnina (3 % vrijednosti) te lokalni porezi i komunalne naknade. Zbog toga porezi na imovinu imaju relativno mali udio u ukupnim poreznim prihodima, što Hrvatsku razlikuje od nekih razvijenijih zemalja u kojima je ovaj oblik oporezivanja značajniji.
+
+::: {.callout-vjezba}
+Pretpostavite radnika s bruto plaćom od 1.500 € mjesečno. Izračunajte: (a) iznos doprinosa za mirovinsko (20 %) i zdravstveno osiguranje (16,5 %); (b) bruto trošak rada za poslodavca; (c) neto plaću nakon poreza na dohodak (23 %, uz osobni odbitak od 600 €). Koliki je ukupni porezni klin kao postotak bruto troška rada? Usporedite s prosjekom EU od ~38 %.
+:::
