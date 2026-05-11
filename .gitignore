@@ -1,28 +1,34 @@
-### AL ###
-#Template for AL projects for Dynamics 365 Business Central
-#launch.json folder
-.vscode/
-#Cache folder
-.alcache/
-#Symbols folder
-.alpackages/
-#Snapshots folder
-.snapshots/
-#Testing Output folder
-.output/
-#Extension App-file
-*.app
-#Rapid Application Development File
-rad.json
-#Translation Base-file
-*.g.xlf
-#License-file
-*.flf
+### R ###
 .Rproj.user
+.Rhistory
+.RData
+.Ruserdata
 
+### Quarto ###
 /.quarto/
-Razno/
-
 **/*.quarto_ipynb
 
+### Build artifacts — do not commit ###
+index_cache/
+index_files/
+*_cache/
+*_files/
+
+### Temp / scratch ###
+tmp/
+mnt/
+Razno/
+
+### AL (legacy) ###
+.vscode/
+.alcache/
+.alpackages/
+.snapshots/
+.output/
+*.app
+rad.json
+*.g.xlf
+*.flf
+
+### Claude Code ###
 .claude/
