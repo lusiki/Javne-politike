@@ -36,7 +36,7 @@ logične posljedice interakcije samointeresnih aktera unutar određenih
 institucionalnih pravila. Razumijevanje ove dinamike ključno je za svakoga tko
 želi biti informiran i učinkovito utjecati na politički proces.
 
-### Definicija, metodologija i osnovne pretpostavke teorije javnog izbora
+## Definicija, metodologija i osnovne pretpostavke teorije javnog izbora
 
 Intelektualni temelji teorije
 javnog izbora postavljeni su kroz seminalne radove poput *An Economic Theory of Democracy* [@downs1957] i *The Calculus of Consent* [@buchanan1962].
@@ -93,7 +93,7 @@ korisnost ili blagostanja. Također, u ovom kontekstu ističe se i takozvana pol
 se politički procesi promatraju kao složeni sustavi razmjene u kojima pojedinci
 nastoje poboljšati svoje pozicije.
 
-### Pravila igre vs. politički ishodi
+## Pravila igre vs. politički ishodi
 
 Unutar teorije javnog izbora
 posebno mjesto zauzima konstitucionalna politička ekonomija, koju su razvili

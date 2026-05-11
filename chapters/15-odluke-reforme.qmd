@@ -2,36 +2,6 @@
 title: "15. Reforme: kako dizajnirati učinkovit javni sektor"
 ---
 
-## Zašto su reforme teške?
-
-::: {.callout-note}
-Ovaj odjeljak je u pripremi — obradit će temeljne uzroke otpora reformama.
-:::
-
-## Veto-igrači, politički otpori i institucionalna tromost
-
-::: {.callout-note}
-Ovaj odjeljak je u pripremi.
-:::
-
-## Kako uskladiti efikasnost, pravednost i političku provedivost
-
-::: {.callout-note}
-Ovaj odjeljak je u pripremi.
-:::
-
-## Što znači dobar javni sektor?
-
-::: {.callout-note}
-Obrađeno u odjeljku "Reforme u javnom sektoru: što funkcionira i zašto?" ispod.
-:::
-
-## Kako graditi bolje javne politike?
-
-::: {.callout-note}
-Obrađeno u odjeljku "Na kraju: koji su 'ključevi' uspješnih reformi?" ispod.
-:::
-
 ## Reforme u javnom sektoru: što funkcionira i zašto?
 
 Reforme u javnom sektoru predstavljaju jedan od najzahtjevnijih, ali i najvažnijih segmenata javnih politika, jer izravno određuju sposobnost države da učinkovito prikuplja prihode, upravlja rashodima i pruža javne usluge. Za razliku od mnogih drugih politika, ovdje nije riječ samo o promjeni pravila, nego o promjeni načina funkcioniranja države – njezinih institucija, organizacijske kulture i poticaja. Upravo zbog toga reforme javnog sektora često su sporije, politički osjetljivije i neizvjesnije od drugih vrsta reformi.

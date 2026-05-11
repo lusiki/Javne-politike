@@ -2,30 +2,6 @@
 title: "13. Porezi: više od tereta"
 ---
 
-## Zašto plaćamo poreze i tko to stvarno osjeti
-
-::: {.callout-note}
-Uvod u logiku oporezivanja — razvijen u kasnijim odjeljcima ovog poglavlja.
-:::
-
-## Što je fiskalna iluzija i kako nas može zbuniti
-
-::: {.callout-note}
-Ovaj odjeljak je u pripremi.
-:::
-
-## Tko stvarno snosi porezni teret?
-
-::: {.callout-note}
-Teorija incidencije obrađena je u odjeljku "Osnove teorije oporezivanja" ispod.
-:::
-
-## Pravednost i ravnoteža: kako izgleda "dobar" porezni sustav?
-
-::: {.callout-note}
-Obrađeno u odjeljcima "Osnovna načela oporezivanja" i "Teorija optimalnog oporezivanja" ispod.
-:::
-
 ## Što su porezi?
 
 Porezi predstavljaju temeljni instrument javnih financija i ključni izvor prihoda moderne države. U najširem smislu, porezi se definiraju kao obvezna, nepovratna davanja državi bez izravne protuusluge [@musgrave1989; @rosen2014]. Ova definicija sadrži nekoliko važnih elemenata koje je potrebno jasno razumjeti.
@@ -651,7 +627,7 @@ U ekonomskom smislu, porezni klin djeluje kao distorzija tržišta rada. Posloda
 Teorija optimalnog oporezivanja razvijena je kako bi odgovorila na temeljno pitanje javnih financija: kako dizajnirati porezni sustav koji maksimizira društveno blagostanje uz minimalne distorzije u gospodarstvu [@stiglitz2015; @gruber2019]. Za razliku od ranijih normativnih pristupa, ova teorija koristi formalne modele kako bi analizirala ponašanje pojedinaca i ograničenja s kojima se država suočava. U središtu cijelog pristupa nalazi se ključni problem: svaki porez istovremeno redistribuira dohodak i narušava ekonomske poticaje. Upravo zato optimalno oporezivanje nije pitanje „koliko oporezivati", već kako rasporediti porezno opterećenje tako da gubitak blagostanja bude što manji, uz ostvarenje društvenih ciljeva.
 
 ::: {#def-mrtvi-teret}
-**Mrtvi teret poreza** je gubitak ukupnog blagostanja koji nastaje zato što porez mijenja relativne cijene i odvraća sudionike od razmjena koje bi inače bile uzajamno korisne. Formalno, ako je $Q^\*$ ravnotežna količina prije oporezivanja, a $Q_t$ količina nakon uvođenja poreza po jedinici $t$, mrtvi teret je $DWL \approx \tfrac{1}{2}\,t\,(Q^\* - Q_t)$. On raste s kvadratom porezne stope i s elastičnošću ponude i potražnje.
+**Mrtvi teret poreza** je gubitak ukupnog blagostanja koji nastaje zato što porez mijenja relativne cijene i odvraća sudionike od razmjena koje bi inače bile uzajamno korisne. Formalno, ako je $Q^*$ ravnotežna količina prije oporezivanja, a $Q_t$ količina nakon uvođenja poreza po jedinici $t$, mrtvi teret je $DWL \approx \tfrac{1}{2}\,t\,(Q^* - Q_t)$. On raste s kvadratom porezne stope i s elastičnošću ponude i potražnje.
 :::
 
 ::: {#prp-ramsey}

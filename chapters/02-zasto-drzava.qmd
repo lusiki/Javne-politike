@@ -2,48 +2,64 @@
 title: "2. Zašto država postoji? Tržišni neuspjesi i funkcije države"
 ---
 
+Jedno od temeljnih pitanja ekonomske teorije i javnih politika jest treba li nam država u tržišnom gospodarstvu i, ako da, kolika bi njezina uloga trebala biti. Na prvi pogled, tržište se može činiti kao samodostatan mehanizam koji putem cijena i konkurencije učinkovito raspoređuje resurse. Međutim, već i osnovni uvid u funkcioniranje realnih ekonomija pokazuje da tržišta često ne ostvaruju ishode koji su društveno poželjni. Upravo iz tog razloga razvija se potreba za državom kao institucijom koja nadopunjuje i ispravlja tržišne procese.
+
+U klasičnoj ekonomskoj teoriji tržište je percipirano kao mehanizam koji, pod određenim uvjetima, vodi do Pareto-efikasne alokacije resursa. No ti uvjeti — savršena konkurencija, potpune informacije, nepostojanje eksternalija — rijetko su zadovoljeni u praksi. U stvarnim gospodarstvima javljaju se brojna odstupanja od idealnog modela, što otvara prostor za intervenciju države.
+
 ## Tržišni neuspjesi kao temeljno opravdanje državne intervencije
 
-::: {.callout-note}
-Ovaj odjeljak je u pripremi.
-:::
+Postoji nekoliko temeljnih razloga zbog kojih tržište samo po sebi ne može osigurati optimalne društvene ishode. Iako tržišni mehanizam u mnogim situacijama učinkovito raspoređuje resurse putem cijena i konkurencije, u stvarnim uvjetima često dolazi do odstupanja od idealnog modela. Ta odstupanja nazivamo tržišnim neuspjesima, a upravo oni predstavljaju osnovno opravdanje za intervenciju države [@stiglitz2015; @musgrave1989].
 
 ## Javna dobra
 
-::: {.callout-note}
-Ovaj odjeljak je u pripremi.
-:::
+Javna dobra su dobra koja imaju dvije ključne karakteristike: **nerivalnost** i **neisključivost**.
+
+Nerivalnost znači da korištenje dobra od strane jedne osobe ne smanjuje mogućnost da ga koriste i druge osobe. Drugim riječima, granični trošak dodatnog korisnika jednak je nuli ili vrlo blizu nuli. Primjerice, kada se uključi javna rasvjeta u gradu, činjenica da se jedna osoba koristi tom rasvjetom ne smanjuje dostupnost svjetla za druge. Slično vrijedi i za nacionalnu obranu ili signal javne televizije — jednom kada su osigurani, dodatni korisnici ne povećavaju troškove u značajnoj mjeri.
+
+Neisključivost označava situaciju u kojoj je teško ili nemoguće spriječiti pojedince da koriste određeno dobro, čak i ako za njega nisu platili. To znači da ne postoji učinkovit mehanizam naplate po pojedinačnom korisniku. Na primjer, kada država osigurava nacionalnu sigurnost ili funkcioniranje pravosudnog sustava, nemoguće je isključiti pojedinca iz tih usluga zato što nije izravno platio njihovo korištenje.
+
+Upravo kombinacija nerivalnosti i neisključivosti dovodi do specifičnog problema u tržišnom sustavu — problema „švercerana" (engl. *free-rider problem*). Budući da pojedinci znaju da ne mogu biti isključeni iz korištenja dobra, imaju poticaj da ne sudjeluju u njegovu financiranju, očekujući da će trošak snositi netko drugi. Ako svi razmišljaju na taj način, dobro se neće proizvesti u dovoljnoj količini ili se uopće neće proizvesti, iako je društveno korisno.
+
+Zbog toga privatni sektor nema dovoljno poticaja za proizvodnju javnih dobara. Poduzeće koje bi pokušalo proizvesti takvo dobro ne bi moglo naplatiti njegovu upotrebu, pa ne bi moglo pokriti troškove proizvodnje. Tržišni mehanizam tako zakazuje, jer ne postoji način da se uspostavi veza između plaćanja i korištenja dobra. Uloga države postaje ključna: ona preuzima organizaciju i financiranje javnih dobara, najčešće putem poreza, čime se problem švercerana rješava obveznim sudjelovanjem svih građana [@olson1965].
+
+Važno je napomenuti da u praksi postoji čitav spektar dobara između čistih javnih i čistih privatnih dobara. Neka dobra mogu biti djelomično rivalna ili djelomično isključiva, poput cesta s naplatom cestarine ili digitalnih sadržaja. Međutim, koncept javnih dobara ostaje ključan za razumijevanje zašto tržište u određenim slučajevima ne može samo osigurati optimalne ishode.
 
 ## Eksternalije
 
-::: {.callout-note}
-Ovaj odjeljak je u pripremi.
-:::
+Eksternalije su učinci ekonomskih aktivnosti na treće strane koji nisu uključeni u tržišne cijene. Drugim riječima, riječ je o situacijama u kojima djelovanje jednog ekonomskog subjekta utječe na dobrobit drugih, a da se taj učinak ne odražava u cijeni proizvoda ili usluge.
+
+**Negativne eksternalije** uključuju pojave poput zagađenja okoliša, buke ili prometnih gužvi. Na primjer, tvornica koja ispušta štetne plinove u atmosferu ne snosi puni trošak tog zagađenja, već dio troška snosi društvo kroz narušeno zdravlje i okoliš. U takvom slučaju tržište dovodi do prekomjerne proizvodnje jer proizvođač ne internalizira sve troškove.
+
+**Pozitivne eksternalije** nastaju kada neka aktivnost generira dodatne koristi za društvo. Primjeri uključuju obrazovanje, cijepljenje ili istraživanje i razvoj. Obrazovaniji pojedinci ne doprinose samo vlastitom dohotku, već i produktivnosti cijelog gospodarstva. Međutim, pojedinci često ne uzimaju u obzir te šire koristi prilikom donošenja odluka, pa tržište proizvodi manje takvih aktivnosti nego što je društveno optimalno.
+
+U oba slučaja dolazi do odstupanja od optimalne razine proizvodnje. Država intervenira kako bi ispravila te neusklađenosti. Kod negativnih eksternalija uvodi poreze (npr. porez na emisije CO₂) ili regulaciju, dok kod pozitivnih eksternalija koristi subvencije i javna ulaganja kako bi potaknula poželjne aktivnosti [@stiglitz2015].
 
 ## Asimetrične informacije
 
-::: {.callout-note}
-Ovaj odjeljak je u pripremi.
-:::
+U mnogim tržišnim transakcijama informacije nisu ravnomjerno raspoređene među sudionicima. Jedna strana često ima više ili kvalitetnije informacije od druge, što nazivamo informacijskom asimetrijom. Takve situacije mogu dovesti do loših odluka, nepovjerenja među sudionicima tržišta pa čak i do potpunog kolapsa tržišta.
+
+Jedan od najpoznatijih primjera je tržište rabljenih automobila, gdje prodavatelj ima više informacija o kvaliteti vozila od kupca. Kupci, svjesni tog problema, spremni su platiti samo prosječnu cijenu, što dovodi do toga da kvalitetni proizvodi nestaju s tržišta — fenomen poznat kao problem „limuna" (*adverse selection*).
+
+Slični problemi pojavljuju se i na financijskim tržištima. Prije globalne financijske krize 2008. godine, investitori često nisu imali potpune informacije o rizicima financijskih instrumenata koje su kupovali, što je pridonijelo destabilizaciji financijskog sustava.
+
+U takvim uvjetima država intervenira kako bi poboljšala funkcioniranje tržišta. To čini kroz uvođenje standarda kvalitete, obvezno objavljivanje informacija i osnivanje regulatornih tijela koja nadziru tržišne aktere. Cilj je smanjiti neizvjesnost i povećati povjerenje među sudionicima tržišta [@stiglitz2015; @rosen2014].
 
 ## Tržišna moć i monopol
 
-::: {.callout-note}
-Ovaj odjeljak je u pripremi.
-:::
+Idealno tržište podrazumijeva postojanje velikog broja proizvođača i potrošača, pri čemu nijedan pojedinačni akter nema značajan utjecaj na cijenu. Međutim, u stvarnosti često dolazi do koncentracije tržišne moći. Kada jedno poduzeće ili mali broj poduzeća dominira tržištem, govorimo o monopolu ili oligopolu.
+
+Poduzeća s tržišnom moći mogu povećavati cijene iznad konkurentske razine, smanjivati kvalitetu proizvoda ili usporavati inovacije. Takvo ponašanje dovodi do neefikasne alokacije resursa i smanjenja društvenog blagostanja.
+
+Zbog toga države provode antimonopolsku politiku i regulaciju tržišta s ciljem očuvanja konkurencije i sprječavanja zlouporabe tržišne moći. U nekim sektorima, poput energetike ili telekomunikacija, priroda proizvodnje dovodi do postojanja prirodnih monopola. U takvim slučajevima država često regulira cijene i uvjete poslovanja kako bi zaštitila potrošače [@musgrave1989; @gruber2019].
 
 ## Meritorna dobra
 
-::: {.callout-note}
-Ovaj odjeljak je u pripremi.
-:::
+Uz tržišne neuspjehe u tehničkom smislu, postoji i kategorija **meritornih dobara** — dobara za koja društvo smatra da bi se trebala konzumirati više nego što bi tržište samo po sebi osiguralo, bez obzira na individualne preferencije. Primjeri uključuju osnovno obrazovanje, zdravstvenu zaštitu i kulturu. Nasuprot tome, **demeritornim dobrima** (poput alkohola ili duhana) društvo želi ograničiti potrošnju.
+
+Država intervenira u oba slučaja: subvencijama i obveznim pružanjem meritornih dobara, te porezima i regulacijom za demeritornih dobara [@musgrave1959].
 
 ## Odnos efikasnosti i pravednosti
 
-::: {.callout-note}
-Ovaj odjeljak je u pripremi.
-:::
+Čak i kada tržište funkcionira efikasno — bez ikakvih tržišnih neuspjeha — raspodjela dohotka i bogatstva koja iz njega proizlazi ne mora biti društveno prihvatljiva. Tržište raspodjeljuje dohodak prema produktivnosti, obrazovanju i vlasništvu nad resursima. Takva raspodjela može biti ekonomski efikasna, ali rezultirati značajnim nejednakostima koje imaju negativne društvene posljedice: smanjene mogućnosti za obrazovanje, lošije zdravstvene ishode i smanjenu društvenu mobilnost.
 
-::: {.callout-important}
-Sadržaj o Musgraveu (alokacijska, distribucijska i stabilizacijska funkcija) premješten je u poglavlje 3.
-:::
+Upravo tu nastaje temeljna napetost između **efikasnosti** i **pravednosti** u javnim politikama. Redistributivne mjere — progresivno oporezivanje, socijalni transferi i javne usluge poput obrazovanja i zdravstva — mogu smanjiti nejednakosti, ali ponekad uz određene troškove u smislu ekonomskih poticaja. Pronalaženje ravnoteže između ta dva cilja jedno je od središnjih pitanja javnih financija [@musgrave1989; @atkinson1980].

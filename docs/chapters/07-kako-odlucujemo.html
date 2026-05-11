@@ -54,7 +54,27 @@ div.sourceCode
 @media screen {
 pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="../site_libs/quarto-nav/quarto-nav.js"></script>
@@ -72,12 +92,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-b37077825c74a94379bcaf399e48a585.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark-269886b7aa6466765fda369d778b83c2.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-2188d0cf505ac1bf3bef15b80ba2500a.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark-e92d9e4e4eece492a64a04de6ea640d6.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-219185c6bd3daaf494a93593157ce446.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../site_libs/bootstrap/bootstrap-dark-96282a09b516d6edfd7b3d55d9131a80.min.css" rel="prefetch" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-bcd8b0ae09c2f9b1d7a5e238b50ce666.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-dark-a8b1c209873290c21bcf4c9b1c3aefa9.min.css" rel="prefetch" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -113,13 +133,13 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
-<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,300..900;1,8..60,300..900&amp;family=Inter:wght@300;400;500;600;700&amp;family=JetBrains+Mono:wght@400;500;600&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600;700&amp;family=Geist+Mono:wght@400;500;600&amp;family=Newsreader:ital,opsz,wght@0,6..72,300;0,6..72,400;0,6..72,500;0,6..72,600;0,6..72,700;1,6..72,300;1,6..72,400;1,6..72,500&amp;display=swap" rel="stylesheet">
 
 
 <link rel="stylesheet" href="../styles/styles.css">
 </head>
 
-<body class="nav-sidebar docked">
+<body class="nav-sidebar docked slimcontent">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -145,6 +165,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <div class="sidebar-title mb-0 py-0">
       <a href="../">Sve što želite znati o državi i javnim politikama u hrvatskoj</a> 
         <div class="sidebar-tools-main tools-wide">
+    <a href="https://lusiki.github.io/Javne-politike/pdf/Javne-politike.pdf" title="Preuzmi PDF (radna verzija)" class="quarto-navigation-tool px-1" aria-label="Preuzmi PDF (radna verzija)"><i class="bi bi-file-earmark-pdf"></i></a>
+    <a href="https://github.com/lusiki/Javne-politike" title="GitHub repozitorij" class="quarto-navigation-tool px-1" aria-label="GitHub repozitorij"><i class="bi bi-github"></i></a>
     <a href="https://github.com/lusiki/Javne-politike" title="Source Code" class="quarto-navigation-tool px-1" aria-label="Source Code"><i class="bi bi-github"></i></a>
     <div class="dropdown">
       <a href="" title="Share" id="quarto-navigation-tool-dropdown-0" class="quarto-navigation-tool dropdown-toggle px-1" data-bs-toggle="dropdown" aria-expanded="false" role="link" aria-label="Share"><i class="bi bi-share"></i></a>
@@ -342,10 +364,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <li><a href="#arrowljev-teorem-i-problemi-kolektivnog-izbora" id="toc-arrowljev-teorem-i-problemi-kolektivnog-izbora" class="nav-link" data-scroll-target="#arrowljev-teorem-i-problemi-kolektivnog-izbora">Arrowljev teorem i problemi kolektivnog izbora</a></li>
   <li><a href="#zašto-kompromisi-znaju-stvoriti-čudne-rezultate" id="toc-zašto-kompromisi-znaju-stvoriti-čudne-rezultate" class="nav-link" data-scroll-target="#zašto-kompromisi-znaju-stvoriti-čudne-rezultate">Zašto kompromisi znaju stvoriti čudne rezultate?</a></li>
   </ul>
-<div class="toc-actions"><ul><li><a href="https://github.com/lusiki/Javne-politike/edit/main/chapters/07-kako-odlucujemo.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/lusiki/Javne-politike/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
+<div class="toc-actions"><ul><li><a href="https://github.com/lusiki/Javne-politike/edit/main/chapters/07-kako-odlucujemo.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/lusiki/Javne-politike/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li><li><a href="https://github.com/lusiki/Javne-politike/blob/main/chapters/07-kako-odlucujemo.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li></ul></div></nav>
     </div>
 <!-- main -->
-<main class="content" id="quarto-document-content">
+<main class="content page-columns page-full" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../chapters/06-javni-izbor.html">DIO II: JAVNI IZBOR – ŠTO, KAKO I ZAŠTO?</a></li><li class="breadcrumb-item"><a href="../chapters/07-kako-odlucujemo.html"><span class="chapter-title">7. Tko odlučuje kad svi odlučujemo?</span></a></li></ol></nav>
 <div class="quarto-title">
@@ -382,36 +404,29 @@ Note
 </div>
 </div>
 </section>
-<section id="što-nam-govore-teorije-preferencija-i-glasovanja" class="level2">
+<section id="što-nam-govore-teorije-preferencija-i-glasovanja" class="level2 page-columns page-full">
 <h2 class="anchored" data-anchor-id="što-nam-govore-teorije-preferencija-i-glasovanja">Što nam govore teorije preferencija i glasovanja?</h2>
-<div class="callout callout-style-default callout-note callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
+<p>Da bismo razumjeli kako iz pojedinačnih preferencija nastaje grupna odluka, trebamo prvo dobro definirati što znači „pobjednik” u danom skupu preferencija.</p>
+<div id="def-condorcet" class="theorem definition">
+<p><span class="theorem-title"><strong>Definicija 8.1</strong></span> <strong>Condorcetov pobjednik.</strong> U skupu od najmanje tri kandidata, <em>Condorcetov pobjednik</em> je kandidat koji u izravnom natjecanju jedan na jedan pobjeđuje svakog drugog kandidata. Kada Condorcetov pobjednik postoji, mnogi smatraju da je on prirodni izraz „većinskog stava” zajednice. No on <strong>ne mora postojati</strong> — moguće je da preferencije generiraju ciklus (A pobjeđuje B, B pobjeđuje C, C pobjeđuje A), poznat kao Condorcetov paradoks.</p>
 </div>
-<div class="callout-title-container flex-fill">
-Note
+<div id="def-medijan-glasac" class="theorem definition">
+<p><span class="theorem-title"><strong>Definicija 8.2</strong></span> <strong>Medijan glasač.</strong> Ako se preferencije svih glasača mogu poredati duž jedne dimenzije (npr. lijevo–desno), <em>medijan glasač</em> je onaj kojemu polovica skupa preferira manju, a polovica veću vrijednost izabrane politike. Postojanje medijan glasača ne ovisi o oblika preferencija ostalih glasača — već samo o tome da svaki glasač ima jedinstveni vrh preferencije (engl. <em>single-peaked preferences</em>) duž te dimenzije.</p>
 </div>
-</div>
-<div class="callout-body-container callout-body">
-<p>Ovaj odjeljak je u pripremi.</p>
-</div>
-</div>
+<div id="prp-medijan-glasac" class="theorem proposition page-columns page-full">
+<p><span class="theorem-title"><strong>Propozicija 8.1</strong></span> <strong>Teorem medijan glasača</strong> <span class="citation" data-cites="black1948">(<a href="../references.html#ref-black1948" role="doc-biblioref">Black 1948</a>)</span>. Ako svi glasači imaju jednovrhe preferencije nad jednodimenzionalnim prostorom politika i odlučuju većinskim glasovanjem, izabrana će politika biti ona koju preferira medijan glasač. Dvije politički natječuće stranke koje žele maksimizirati broj glasova konvergirat će prema poziciji medijan glasača. Posljedica je da se u dvostranačkim sustavima programi vremenom „skupljaju” prema centru.</p>
+<div class="no-row-height column-margin column-container"><div id="ref-black1948" class="csl-entry" role="listitem">
+Black, Duncan. 1948. <span>„On the Rationale of Group Decision-making“</span>. <em>Journal of Political Economy</em> 56 (1): 23–34. <a href="https://doi.org/10.1086/256633">https://doi.org/10.1086/256633</a>.
+</div></div></div>
 </section>
-<section id="arrowljev-teorem-i-problemi-kolektivnog-izbora" class="level2">
+<section id="arrowljev-teorem-i-problemi-kolektivnog-izbora" class="level2 page-columns page-full">
 <h2 class="anchored" data-anchor-id="arrowljev-teorem-i-problemi-kolektivnog-izbora">Arrowljev teorem i problemi kolektivnog izbora</h2>
-<div class="callout callout-style-default callout-note callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Note
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>Ovaj odjeljak je u pripremi.</p>
-</div>
+<p>Pitanje koje se prirodno javlja: postoji li „idealan” sustav glasovanja koji uvijek poštuje individualne preferencije i istodobno proizvodi koherentnu kolektivnu odluku? Arrowljev rezultat pokazuje da odgovor ne — barem ne pod razumno postavljenim uvjetima.</p>
+<div id="prp-arrow" class="theorem proposition page-columns page-full">
+<p><span class="theorem-title"><strong>Propozicija 8.2</strong></span> <strong>Arrowljev teorem nemogućnosti</strong> <span class="citation" data-cites="arrow1951">(<a href="../references.html#ref-arrow1951" role="doc-biblioref">Arrow 1951</a>)</span>. Ne postoji sustav agregacije individualnih preferencija u kolektivnu preferenciju koji istodobno zadovoljava sve sljedeće uvjete: (i) <strong>univerzalna domena</strong> — sustav prihvaća sve moguće kombinacije individualnih preferencija; (ii) <strong>nediktatorstvo</strong> — niti jedan glasač ne određuje rezultat sam; (iii) <strong>Pareto-uvjet</strong> — ako svi pojedinci preferiraju A nad B, kolektivni izbor je A; (iv) <strong>neovisnost o irelevantnim alternativama</strong> — relativna ocjena dvije opcije ne smije ovisiti o preferencijama prema trećoj.</p>
+<div class="no-row-height column-margin column-container"><div id="ref-arrow1951" class="csl-entry" role="listitem">
+Arrow, Kenneth J. 1951. <em>Social Choice and Individual Values</em>. New York: Wiley.
+</div></div><p>Posljedica je dubinska: bilo koji konkretni sustav glasovanja koji koristimo (većinsko, rangirajuće, alternativno) <strong>mora kršiti barem jedno od ova četiri svojstva</strong>. Razlika između sustava nije u tome jesu li „idealni”, nego u tome koje kompromise prave.</p>
 </div>
 </section>
 <section id="zašto-kompromisi-znaju-stvoriti-čudne-rezultate" class="level2">
@@ -426,277 +441,539 @@ Note
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Ovaj odjeljak je u pripremi.</p>
+<p>Ovaj odjeljak je u pripremi — empirijski primjeri Condorcetovih ciklusa i utjecaja sustava glasovanja na ishode izbora.</p>
 </div>
 </div>
 
 
 <!-- -->
 
+
 </section>
 
 </main> <!-- /main -->
 <script>
+
 (function () {
+
   "use strict";
 
+
+
   // ----------------------------------------------------------
+
   // 1. Reading progress bar
+
   // ----------------------------------------------------------
+
   function setupProgressBar() {
+
     if (document.getElementById("reading-progress")) return;
+
     var bar = document.createElement("div");
+
     bar.id = "reading-progress";
+
     document.body.appendChild(bar);
 
+
+
     var ticking = false;
+
     function update() {
+
       var doc = document.documentElement;
+
       var scrollTop = window.scrollY || doc.scrollTop;
+
       var max = (doc.scrollHeight - doc.clientHeight) || 1;
+
       var pct = Math.min(100, Math.max(0, (scrollTop / max) * 100));
+
       bar.style.width = pct + "%";
+
       ticking = false;
+
     }
+
     window.addEventListener("scroll", function () {
+
       if (!ticking) {
+
         window.requestAnimationFrame(update);
+
         ticking = true;
+
       }
+
     }, { passive: true });
+
     update();
+
   }
 
+
+
   // ----------------------------------------------------------
+
   // 2. Chapter number extraction → header data attribute
+
   //    Title oblik "13. Porezi: ..." → data-chapter-num="13"
-  // ----------------------------------------------------------
-  function setupChapterNumber() {
-    var header = document.getElementById("title-block-header");
-    if (!header) return;
-    var titleEl = header.querySelector("h1.title, .title");
-    if (!titleEl) return;
-    var raw = titleEl.textContent.trim();
-    var m = raw.match(/^(\d+)[\.\s ]/);
-    if (m) {
-      header.setAttribute("data-chapter-num", m[1]);
-      // Skidamo broj iz vidljivog naslova jer ga već imamo kao watermark
-      titleEl.textContent = raw.replace(/^\d+[\.\s ]+/, "");
-    }
-  }
 
   // ----------------------------------------------------------
-  // 3. Reading time chip
-  // ----------------------------------------------------------
-  function setupReadingTime() {
+
+  function setupChapterNumber() {
+
     var header = document.getElementById("title-block-header");
+
     if (!header) return;
+
+    var titleEl = header.querySelector("h1.title, .title");
+
+    if (!titleEl) return;
+
+    var raw = titleEl.textContent.trim();
+
+    var m = raw.match(/^(\d+)[\.\s ]/);
+
+    if (m) {
+
+      header.setAttribute("data-chapter-num", m[1]);
+
+      // Skidamo broj iz vidljivog naslova jer ga već imamo kao watermark
+
+      titleEl.textContent = raw.replace(/^\d+[\.\s ]+/, "");
+
+    }
+
+  }
+
+
+
+  // ----------------------------------------------------------
+
+  // 3. Reading time chip
+
+  // ----------------------------------------------------------
+
+  function setupReadingTime() {
+
+    var header = document.getElementById("title-block-header");
+
+    if (!header) return;
+
     // Samo na chapter stranicama
+
     if (!header.hasAttribute("data-chapter-num")) return;
 
+
+
     var article = document.querySelector("main.content") || document.querySelector("main");
+
     if (!article) return;
+
+
 
     // Brojimo riječi izvan koda i nav elemenata
+
     var clone = article.cloneNode(true);
+
     clone.querySelectorAll("pre, code, .sourceCode, nav, .toc, .sidebar, header#title-block-header, .quarto-title-block").forEach(function (el) {
+
       el.parentNode && el.parentNode.removeChild(el);
+
     });
+
     var text = (clone.textContent || "").trim();
+
     var words = text ? text.split(/\s+/).length : 0;
+
     var minutes = Math.max(1, Math.round(words / 220)); // ~220 wpm hrvatski
 
+
+
     var chip = document.createElement("div");
+
     chip.className = "reading-time";
+
     chip.textContent = minutes + " min čitanja · " + words.toLocaleString("hr-HR") + " riječi";
+
     header.appendChild(chip);
+
   }
 
+
+
   // ----------------------------------------------------------
+
   // 4. Drop cap — prvi pasus poglavlja
+
   // ----------------------------------------------------------
+
   function setupDropCap() {
+
     var header = document.getElementById("title-block-header");
+
     if (!header || !header.hasAttribute("data-chapter-num")) return;
 
+
+
     var article = document.querySelector("main.content") || document.querySelector("main");
+
     if (!article) return;
+
+
 
     // Pronađi prvi "pravi" tekstualni pasus (preskačemo callout-e i meta blokove)
+
     var candidates = article.querySelectorAll("section > p, > p");
+
     for (var i = 0; i < candidates.length; i++) {
+
       var p = candidates[i];
+
       // Preskačemo prazne i one unutar callouta / figura
+
       if (!p.textContent.trim()) continue;
+
       if (p.closest(".callout, figure, .quarto-title-block, .reading-time")) continue;
+
       // Mora biti barem 80 znakova — izbjegavamo kratke labele
+
       if (p.textContent.trim().length < 80) continue;
+
       p.classList.add("has-dropcap");
+
       break;
+
     }
+
   }
 
+
+
   // ----------------------------------------------------------
+
   // 5. Hover preview za interne linkove (#anchors u istom dokumentu)
+
   // ----------------------------------------------------------
+
   function setupInternalHover() {
+
     var tip = null;
+
     var hideTimer = null;
 
+
+
     function ensureTip() {
+
       if (tip) return tip;
+
       tip = document.createElement("div");
+
       tip.className = "internal-hover-preview";
+
       document.body.appendChild(tip);
+
       return tip;
+
     }
+
+
 
     function show(target, text, title) {
+
       var t = ensureTip();
+
       t.innerHTML = "";
+
       if (title) {
+
         var h = document.createElement("div");
+
         h.className = "ihp-title";
+
         h.textContent = title;
+
         t.appendChild(h);
+
       }
+
       var body = document.createElement("div");
+
       body.textContent = text;
+
       t.appendChild(body);
 
+
+
       var rect = target.getBoundingClientRect();
+
       var top = window.scrollY + rect.bottom + 8;
+
       var left = window.scrollX + rect.left;
+
       // Drži unutar viewporta
+
       var maxLeft = window.scrollX + document.documentElement.clientWidth - 400;
+
       if (left > maxLeft) left = maxLeft;
+
       if (left < 8) left = 8;
+
       t.style.top = top + "px";
+
       t.style.left = left + "px";
+
       t.classList.add("visible");
+
     }
+
+
 
     function hide() {
+
       if (tip) tip.classList.remove("visible");
+
     }
 
+
+
     document.addEventListener("mouseover", function (e) {
+
       var a = e.target.closest && e.target.closest("a[href^='#']");
+
       if (!a) return;
+
       // Preskačemo Quarto-ove vlastite citation/footnote (oni već imaju hover)
+
       if (a.classList.contains("citation") || a.classList.contains("footnote-ref")) return;
+
       if (a.closest(".sidebar, nav, .toc, #TOC, .quarto-secondary-nav")) return;
 
+
+
       var hash = a.getAttribute("href").slice(1);
+
       if (!hash) return;
+
       var tgt = document.getElementById(hash);
+
       if (!tgt) return;
 
+
+
       var titleEl = tgt.querySelector("h1, h2, h3, h4") || (tgt.tagName.match(/^H[1-6]$/) ? tgt : null);
+
       var title = titleEl ? titleEl.textContent.trim() : "";
+
       // Uzimamo prvih ~280 znakova konteksta
+
       var ctx = (tgt.textContent || "").trim().replace(/\s+/g, " ");
+
       if (title) ctx = ctx.replace(title, "").trim();
+
       ctx = ctx.slice(0, 280) + (ctx.length > 280 ? "…" : "");
 
+
+
       clearTimeout(hideTimer);
+
       show(a, ctx, title);
+
     });
+
+
 
     document.addEventListener("mouseout", function (e) {
+
       var a = e.target.closest && e.target.closest("a[href^='#']");
+
       if (!a) return;
+
       hideTimer = setTimeout(hide, 120);
+
     });
+
+
 
     window.addEventListener("scroll", hide, { passive: true });
+
   }
 
+
+
   // ----------------------------------------------------------
+
   // 6. End-of-chapter ornament (❦) — samo na chapter stranicama
+
   // ----------------------------------------------------------
+
   function setupEndMark() {
+
     var header = document.getElementById("title-block-header");
+
     if (!header || !header.hasAttribute("data-chapter-num")) return;
 
+
+
     var article = document.querySelector("main.content") || document.querySelector("main");
+
     if (!article) return;
+
+
 
     // Provjeri da već nije ubačen
+
     if (article.querySelector(".chapter-end-mark")) return;
 
+
+
     var mark = document.createElement("div");
+
     mark.className = "chapter-end-mark";
+
     // Tražimo zadnju section ili p u glavnom dijelu
+
     var lastSection = article.querySelector("section:last-of-type") || article;
+
     lastSection.appendChild(mark);
+
   }
 
+
+
   // ----------------------------------------------------------
+
   // 7. Dinkus normalization — pretvori "***" parove i prazne
+
   //    dinkus blokove u stilizirane romb-trojke
-  // ----------------------------------------------------------
-  function setupDinkus() {
-    // Quartov ::: {.dinkus} već dobiva div.dinkus klasu — to već stiliziramo CSS-om
-    // Pretvori HR elemente s točno tri zvjezdice ili "* * *" tekstom
-    var hrs = document.querySelectorAll("hr");
-    hrs.forEach(function (hr) {
-      // Ako je hr unutar contenta i nije .dinkus, ostavi ga
-    });
-    // Pretvori paragrafe koji su točno "***" u dinkus
-    var paragraphs = document.querySelectorAll("main p");
-    paragraphs.forEach(function (p) {
-      var t = p.textContent.trim();
-      if (t === "***" || t === "* * *" || t === "◆ ◆ ◆") {
-        var div = document.createElement("div");
-        div.className = "dinkus";
-        p.parentNode.replaceChild(div, p);
-      }
-    });
-  }
 
   // ----------------------------------------------------------
-  // 8. Anchor link injection (Quarto's anchor-sections nije uvijek
-  //    pouzdan; dodajemo vlastite # linkove na sve h2-h4 koji ih nemaju)
+
+  function setupDinkus() {
+
+    // Quartov ::: {.dinkus} već dobiva div.dinkus klasu — to već stiliziramo CSS-om
+
+    // Pretvori HR elemente s točno tri zvjezdice ili "* * *" tekstom
+
+    var hrs = document.querySelectorAll("hr");
+
+    hrs.forEach(function (hr) {
+
+      // Ako je hr unutar contenta i nije .dinkus, ostavi ga
+
+    });
+
+    // Pretvori paragrafe koji su točno "***" u dinkus
+
+    var paragraphs = document.querySelectorAll("main p");
+
+    paragraphs.forEach(function (p) {
+
+      var t = p.textContent.trim();
+
+      if (t === "***" || t === "* * *" || t === "◆ ◆ ◆") {
+
+        var div = document.createElement("div");
+
+        div.className = "dinkus";
+
+        p.parentNode.replaceChild(div, p);
+
+      }
+
+    });
+
+  }
+
+
+
   // ----------------------------------------------------------
+
+  // 8. Anchor link injection (Quarto's anchor-sections nije uvijek
+
+  //    pouzdan; dodajemo vlastite # linkove na sve h2-h4 koji ih nemaju)
+
+  // ----------------------------------------------------------
+
   function setupAnchorLinks() {
+
     var article = document.querySelector("main.content") || document.querySelector("main");
+
     if (!article) return;
+
     var headings = article.querySelectorAll("h2[id], h3[id], h4[id]");
+
     headings.forEach(function (h) {
+
       // Preskoči chapter title i postojeće anchorjs linkove
+
       if (h.classList.contains("title")) return;
+
       if (h.querySelector("a.anchorjs-link")) return;
 
+
+
       var link = document.createElement("a");
+
       link.className = "anchorjs-link";
+
       link.href = "#" + h.id;
+
       link.setAttribute("aria-label", "Permalink na ovaj odjeljak");
+
       h.appendChild(link);
+
     });
+
   }
 
+
+
   // ----------------------------------------------------------
+
   // Bootstrap
+
   // ----------------------------------------------------------
+
   function init() {
+
     try { setupProgressBar(); } catch (e) {}
+
     try { setupChapterNumber(); } catch (e) {}
+
     try { setupReadingTime(); } catch (e) {}
+
     try { setupDropCap(); } catch (e) {}
+
     try { setupInternalHover(); } catch (e) {}
+
     try { setupEndMark(); } catch (e) {}
+
     try { setupDinkus(); } catch (e) {}
+
     try { setupAnchorLinks(); } catch (e) {}
+
   }
+
+
 
   if (document.readyState === "loading") {
+
     document.addEventListener("DOMContentLoaded", init);
+
   } else {
+
     init();
+
   }
+
 })();
+
 </script>
+
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
@@ -1340,21 +1617,39 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 <span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a><span class="fu">## Što nam govore teorije preferencija i glasovanja?</span></span>
 <span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>::: {.callout-note}</span>
-<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a>Ovaj odjeljak je u pripremi.</span>
-<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a>:::</span>
-<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a><span class="fu">## Arrowljev teorem i problemi kolektivnog izbora</span></span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>Da bismo razumjeli kako iz pojedinačnih preferencija nastaje grupna odluka, trebamo prvo dobro definirati što znači „pobjednik" u danom skupu preferencija.</span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a>::: {#def-condorcet}</span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a>**Condorcetov pobjednik.** U skupu od najmanje tri kandidata, *Condorcetov pobjednik* je kandidat koji u izravnom natjecanju jedan na jedan pobjeđuje svakog drugog kandidata. Kada Condorcetov pobjednik postoji, mnogi smatraju da je on prirodni izraz „većinskog stava" zajednice. No on **ne mora postojati** — moguće je da preferencije generiraju ciklus (A pobjeđuje B, B pobjeđuje C, C pobjeđuje A), poznat kao Condorcetov paradoks.</span>
+<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a>:::</span>
 <span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a>::: {.callout-note}</span>
-<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a>Ovaj odjeljak je u pripremi.</span>
+<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a>::: {#def-medijan-glasac}</span>
+<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a>**Medijan glasač.** Ako se preferencije svih glasača mogu poredati duž jedne dimenzije (npr. lijevo–desno), *medijan glasač* je onaj kojemu polovica skupa preferira manju, a polovica veću vrijednost izabrane politike. Postojanje medijan glasača ne ovisi o oblika preferencija ostalih glasača — već samo o tome da svaki glasač ima jedinstveni vrh preferencije (engl. *single-peaked preferences*) duž te dimenzije.</span>
 <span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a>:::</span>
 <span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a><span class="fu">## Zašto kompromisi znaju stvoriti čudne rezultate?</span></span>
-<span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-25"><a href="#cb1-25" aria-hidden="true" tabindex="-1"></a>::: {.callout-note}</span>
-<span id="cb1-26"><a href="#cb1-26" aria-hidden="true" tabindex="-1"></a>Ovaj odjeljak je u pripremi.</span>
-<span id="cb1-27"><a href="#cb1-27" aria-hidden="true" tabindex="-1"></a>:::</span></code><button title="Copy to Clipboard" class="code-copy-button" data-in-quarto-modal=""><i class="bi"></i></button></pre></div>
+<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a>::: {#prp-medijan-glasac}</span>
+<span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a>**Teorem medijan glasača** <span class="co">[</span><span class="ot">@black1948</span><span class="co">]</span>. Ako svi glasači imaju jednovrhe preferencije nad jednodimenzionalnim prostorom politika i odlučuju većinskim glasovanjem, izabrana će politika biti ona koju preferira medijan glasač. Dvije politički natječuće stranke koje žele maksimizirati broj glasova konvergirat će prema poziciji medijan glasača. Posljedica je da se u dvostranačkim sustavima programi vremenom „skupljaju" prema centru.</span>
+<span id="cb1-25"><a href="#cb1-25" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb1-26"><a href="#cb1-26" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-27"><a href="#cb1-27" aria-hidden="true" tabindex="-1"></a><span class="fu">## Arrowljev teorem i problemi kolektivnog izbora</span></span>
+<span id="cb1-28"><a href="#cb1-28" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-29"><a href="#cb1-29" aria-hidden="true" tabindex="-1"></a>Pitanje koje se prirodno javlja: postoji li „idealan" sustav glasovanja koji uvijek poštuje individualne preferencije i istodobno proizvodi koherentnu kolektivnu odluku? Arrowljev rezultat pokazuje da odgovor ne — barem ne pod razumno postavljenim uvjetima.</span>
+<span id="cb1-30"><a href="#cb1-30" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-31"><a href="#cb1-31" aria-hidden="true" tabindex="-1"></a>::: {#prp-arrow}</span>
+<span id="cb1-32"><a href="#cb1-32" aria-hidden="true" tabindex="-1"></a>**Arrowljev teorem nemogućnosti** <span class="co">[</span><span class="ot">@arrow1951</span><span class="co">]</span>. Ne postoji sustav agregacije individualnih preferencija u kolektivnu preferenciju koji istodobno zadovoljava sve sljedeće uvjete:</span>
+<span id="cb1-33"><a href="#cb1-33" aria-hidden="true" tabindex="-1"></a>(i) **univerzalna domena** — sustav prihvaća sve moguće kombinacije individualnih preferencija;</span>
+<span id="cb1-34"><a href="#cb1-34" aria-hidden="true" tabindex="-1"></a>(ii) **nediktatorstvo** — niti jedan glasač ne određuje rezultat sam;</span>
+<span id="cb1-35"><a href="#cb1-35" aria-hidden="true" tabindex="-1"></a>(iii) **Pareto-uvjet** — ako svi pojedinci preferiraju A nad B, kolektivni izbor je A;</span>
+<span id="cb1-36"><a href="#cb1-36" aria-hidden="true" tabindex="-1"></a>(iv) **neovisnost o irelevantnim alternativama** — relativna ocjena dvije opcije ne smije ovisiti o preferencijama prema trećoj.</span>
+<span id="cb1-37"><a href="#cb1-37" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-38"><a href="#cb1-38" aria-hidden="true" tabindex="-1"></a>Posljedica je dubinska: bilo koji konkretni sustav glasovanja koji koristimo (većinsko, rangirajuće, alternativno) **mora kršiti barem jedno od ova četiri svojstva**. Razlika između sustava nije u tome jesu li „idealni", nego u tome koje kompromise prave.</span>
+<span id="cb1-39"><a href="#cb1-39" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb1-40"><a href="#cb1-40" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-41"><a href="#cb1-41" aria-hidden="true" tabindex="-1"></a><span class="fu">## Zašto kompromisi znaju stvoriti čudne rezultate?</span></span>
+<span id="cb1-42"><a href="#cb1-42" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-43"><a href="#cb1-43" aria-hidden="true" tabindex="-1"></a>::: {.callout-note}</span>
+<span id="cb1-44"><a href="#cb1-44" aria-hidden="true" tabindex="-1"></a>Ovaj odjeljak je u pripremi — empirijski primjeri Condorcetovih ciklusa i utjecaja sustava glasovanja na ishode izbora.</span>
+<span id="cb1-45"><a href="#cb1-45" aria-hidden="true" tabindex="-1"></a>:::</span></code><button title="Copy to Clipboard" class="code-copy-button" data-in-quarto-modal=""><i class="bi"></i></button></pre></div>
 </div></div></div></div></div>
 </div> <!-- /content -->
 <footer class="footer">
@@ -1364,7 +1659,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     </div>   
     <div class="nav-footer-center">
 <p>© 2026 Deskar-Škrbić, Palić, Šikić | Javne politike u Hrvatskoj</p>
-<div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/lusiki/Javne-politike/edit/main/chapters/07-kako-odlucujemo.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/lusiki/Javne-politike/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
+<div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/lusiki/Javne-politike/edit/main/chapters/07-kako-odlucujemo.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/lusiki/Javne-politike/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li><li><a href="https://github.com/lusiki/Javne-politike/blob/main/chapters/07-kako-odlucujemo.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li></ul></div></div>
     <div class="nav-footer-right">
       &nbsp;
     </div>
