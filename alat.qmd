@@ -1,0 +1,35 @@
+---
+title: "Alat / Igralište"
+toc: false
+number-sections: false
+lang: hr-HR
+format:
+  html:
+    include-in-header:
+      text: |
+        <style>
+          #quarto-sidebar { display: none !important; }
+          #quarto-margin-sidebar { display: none !important; }
+          .sidebar.sidebar-navigation { display: none !important; }
+          .page-columns { display: block !important; }
+          main.content, #quarto-document-content {
+            max-width: 1100px !important;
+            margin-left: auto !important;
+            margin-right: auto !important;
+            padding-left: 1.5rem !important;
+            padding-right: 1.5rem !important;
+            grid-column: 1 / -1 !important;
+          }
+        </style>
+---
+
+Interaktivni alati za istraživanje koncepata iz knjige — kalkulatori, simulatori i vizualizacije koje pretvaraju teoriju u nešto što možete sami isprobati.
+
+::: {.callout-note}
+U pripremi. Planirani alati uključuju:
+
+- **Kalkulator poreznog klina** — sliderima za bruto plaću prikažite neto plaću i strukturu opterećenja u Hrvatskoj
+- **Simulator medijan birača** — pomičite pozicije birača i stranaka i pratite konvergenciju prema centru
+- **Vizualizacija Lafferove krivulje** — istražite odnos poreznih stopa i prihoda
+- **Radni list cost-benefit analize** — unesite troškove i koristi projekta, izračunajte NPV uz analizu osjetljivosti
+:::

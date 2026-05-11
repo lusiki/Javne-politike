@@ -2,10 +2,106 @@
    Globalna stilska podešavanja koja nadopunjuju custom.scss
    ========================================================= */
 
+/* Navbar blends into page background */
+.navbar {
+  background-color: #F6F1E8 !important;
+  box-shadow: none !important;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+}
+.navbar .navbar-brand,
+.navbar .nav-link {
+  color: #14213D !important;
+}
+.navbar .nav-link:hover {
+  color: #B08538 !important;
+}
+
+/* Hide index.qmd (home page) entry from sidebar TOC */
+.sidebar-item:has(a.sidebar-link[href="./index.html"]),
+.sidebar-item:has(a.sidebar-link[href="../index.html"]) {
+  display: none !important;
+}
+
+/* Standalone pages (landing, vodic, resursi, alat): no book sidebar, centered content */
+body.standalone-page #quarto-sidebar,
+body.standalone-page #quarto-margin-sidebar,
+body.standalone-page .sidebar.sidebar-navigation {
+  display: none !important;
+}
+body.standalone-page .page-columns {
+  display: block !important;
+  grid-template-columns: 1fr !important;
+}
+body.standalone-page main.content,
+body.standalone-page #quarto-document-content {
+  max-width: 1100px !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  padding-left: 1.5rem !important;
+  padding-right: 1.5rem !important;
+  width: auto !important;
+  grid-column: 1 / -1 !important;
+}
+
+/* PDF button in navbar — styled as a pill button */
+.navbar a.nav-link[href*=".pdf"] {
+  background-color: #14213D !important;
+  color: #FAFAF5 !important;
+  border-radius: 4px;
+  padding: 0.3rem 0.8rem !important;
+  font-weight: 600;
+  font-size: 0.85rem;
+  margin-left: 0.5rem;
+}
+.navbar a.nav-link[href*=".pdf"]:hover {
+  background-color: #B08538 !important;
+  color: #FAFAF5 !important;
+}
+/* Hide PDF button on landing page */
+body.standalone-page .navbar a.nav-link[href*=".pdf"] {
+  display: none !important;
+}
+
+/* PDF download button in book sidebar — make it prominent */
+.sidebar-tools-main {
+  padding: 0.75rem 1rem !important;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+.sidebar-tools-main a[href*=".pdf"] {
+  display: inline-flex !important;
+  align-items: center;
+  gap: 0.4rem;
+  background-color: #14213D !important;
+  color: #FAFAF5 !important;
+  padding: 0.5rem 0.9rem !important;
+  border-radius: 4px;
+  text-decoration: none !important;
+  font-size: 0.85rem;
+  font-weight: 500;
+  letter-spacing: 0.01em;
+  transition: background-color 0.15s ease;
+}
+.sidebar-tools-main a[href*=".pdf"]:hover {
+  background-color: #B08538 !important;
+  color: #FAFAF5 !important;
+}
+.sidebar-tools-main a[href*=".pdf"]::after {
+  content: "Preuzmi PDF";
+}
+.sidebar-tools-main a[href*=".pdf"] i {
+  font-size: 1rem;
+}
+
 /* Sakrij landing page (index) iz sidebara */
-.sidebar-item:has(a[href="./index.html"]),
-.sidebar-item:has(a[href="../index.html"]) {
-  display: none;
+.sidebar-item:has(a[href$="index.html"]),
+.sidebar-item:has(a[href="./"]),
+.sidebar-item:has(a[href="../"]),
+a.sidebar-link[href$="index.html"],
+a.sidebar-item-text[href$="index.html"] {
+  display: none !important;
 }
 
 /* Topla off-white pozadina (a la fatih.ai), bez noise teksture */

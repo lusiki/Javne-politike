@@ -7,12 +7,15 @@ code-fold: false
 echo: false
 format:
   html:
+    body-classes: standalone-page
     include-in-header:
       text: |
         <style>
           #title-block-header { display: none; }
         </style>
 ---
+
+::: {.content-visible when-format="html"}
 
 ::: {.book-hero}
 ::: {.book-hero-image}
@@ -106,4 +109,6 @@ Ako želite razumjeti zašto se politike oblikuju na način na koji se oblikuju,
 **16 poglavlja** · **3 dijela** · ažurirano [svibanj 2026.]{.book-date}
 
 Tekst i kod licencirani pod [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) · [Doprinesite na GitHubu](https://github.com/lusiki/Javne-politike) · [Prijavite grešku](https://github.com/lusiki/Javne-politike/issues)
+:::
+
 :::
