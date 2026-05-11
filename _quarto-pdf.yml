@@ -16,6 +16,8 @@ book:
 format:
   pdf:
     documentclass: scrbook
+    classoption:
+      - headings=standardclasses
     pdf-engine: xelatex
     papersize: a4
     geometry:
@@ -27,7 +29,12 @@ format:
     babel-lang: croatian
     toc: true
     toc-depth: 2
+    toc-title: "Sadržaj"
     number-sections: false
+    include-before-body:
+      text: |
+        \tableofcontents
+        \clearpage
     colorlinks: true
     linkcolor: blue
     urlcolor: blue
