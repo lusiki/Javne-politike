@@ -29,16 +29,14 @@ book:
     pinned: true
     left:
       - text: "Knjiga"
-        href: chapters/01-pristupi.qmd
+        href: chapters/00-prije-pocetka.qmd
       - text: "Vodič"
         href: vodic.html
       - text: "Resursi"
         href: resursi.html
       - text: "Alat"
         href: alat.html
-    right:
-      - text: "↓ PDF"
-        href: pdf/Javne-politike.pdf
+    right: []
 
   search:
     location: sidebar
@@ -61,6 +59,7 @@ book:
 
   chapters:
     - index.qmd
+    - chapters/00-prije-pocetka.qmd
     - part: "DIO I: DRŽAVA, JAVNE POLITIKE I TEMELJNI PRISTUPI ANALIZI"
       chapters:
         - chapters/01-pristupi.qmd

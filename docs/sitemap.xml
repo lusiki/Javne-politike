@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://lusiki.github.io/Javne-politike/index.html</loc>
-    <lastmod>2026-05-11T11:11:24.262Z</lastmod>
+    <lastmod>2026-05-12T10:06:21.090Z</lastmod>
   </url>
   <url>
     <loc>https://lusiki.github.io/Javne-politike/chapters/01-pristupi.html</loc>
@@ -83,5 +83,9 @@
   <url>
     <loc>https://lusiki.github.io/Javne-politike/alat.html</loc>
     <lastmod>2026-05-11T09:10:20.016Z</lastmod>
+  </url>
+  <url>
+    <loc>https://lusiki.github.io/Javne-politike/chapters/00-prije-pocetka.html</loc>
+    <lastmod>2026-05-12T08:31:04.650Z</lastmod>
   </url>
 </urlset>

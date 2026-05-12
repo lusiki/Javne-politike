@@ -1,0 +1,46 @@
+---
+title: "Prije početka: O čemu se radi?"
+---
+
+## Zašto bismo otvorili ovu knjigu?
+
+Zamislite da možete "zaviriti iza kulisa" politike. Ne samo gledati što političari govore, nego razumjeti zašto donose odluke koje donose, zašto neke politike opstaju desetljećima iako su očito loše, zašto se porezi povećavaju baš kad se ne očekuje, ili zašto se reforme najavljuju glasno – a provedu tiho ili nikako. Zamislite da možete prepoznati obrasce iza političkih odluka, vidjeti tko dobiva, tko gubi i zašto, te unaprijed naslutiti kako će određena politika završiti prije nego što se uopće provede.
+
+Ova knjiga polazi od jednostavne, ali često zanemarene ideje: javne politike oblikuju gotovo svaki aspekt našeg života. One određuju koliko ćemo plaćati poreze, kakvo ćemo obrazovanje imati, koliko će zdravstvo biti dostupno, kako će se reagirati na krize i koliko će društvo biti pravedno ili nejednako. One utječu na to gdje ćemo raditi, koliko ćemo zarađivati, hoćemo li pokrenuti posao ili otići iz zemlje. Drugim riječima, javne politike nisu apstraktne – one su naša svakodnevna realnost, često nevidljiva dok ne počne stvarati probleme.
+
+No upravo zato što su svugdje oko nas, često ih uzimamo zdravo za gotovo. Vidimo njihove posljedice, ali rijetko razumijemo mehanizme koji do njih vode. Zašto se neke loše politike ne ukidaju? Zašto se dobre ideje ne provode? Zašto se javni novac ponekad troši na načine koji se čine nelogičnima? Zašto politički sustavi proizvode ishode koji frustriraju i birače i stručnjake?
+
+Ako su javne politike toliko važne, postavlja se ključno pitanje: zašto ih je tako teško razumjeti?
+
+Dio odgovora leži u činjenici da se javne politike često promatraju iz jedne perspektive – političke, pravne ili ideološke. Promatramo ih kroz sukob stranaka, kroz pravne norme ili kroz vrijednosne sudove o tome što je "dobro" ili "loše". No takav pogled gotovo uvijek ostaje nepotpun. Ova knjiga ide korak dalje i pokazuje da javne politike ne možemo razumjeti bez istovremenog uvida u ekonomiju, politiku i institucije.
+
+Ekonomija nam objašnjava kako ljudi reagiraju na poticaje – kako porezi mijenjaju ponašanje, kako subvencije utječu na odluke i zašto čak i male promjene pravila mogu imati velike posljedice. Politika nam pokazuje tko odlučuje i zašto, kako nastaju koalicije, kako funkcionira natjecanje za glasove i zašto političari često biraju ono što je politički oportuno, a ne nužno društveno optimalno. Institucije, naposljetku, određuju pravila igre – ograničenja i mogućnosti unutar kojih svi akteri djeluju. Tek kada spojimo ta tri elementa, počinjemo vidjeti cjelovitu sliku.
+
+U tom smislu, ova knjiga ne nudi samo odgovore, nego i način razmišljanja. Ona vas uvodi u dva temeljna pristupa analizi javnih politika koji se često promatraju odvojeno, ali se u stvarnosti ne mogu razdvojiti. S jedne strane, tu je normativni pristup, koji postavlja pitanje: kakve bi politike trebale biti? Što znači pravedan porezni sustav? Kako postići veću učinkovitost, ali i veću jednakost? Kako mjerimo "dobru" politiku?
+
+S druge strane, tu je pozitivistički pristup, koji nas vraća u stvarni svijet i pita: kako se politike stvarno donose? Zašto političari često ne rade ono što bi "trebali"? Kako interesi, institucije i poticaji oblikuju konačne odluke? Zašto racionalne ideje često završavaju kao politički kompromisi – ili uopće ne zažive?
+
+Najzanimljiviji dio počinje upravo tamo gdje se ta dva pristupa susreću. Jer svijet javnih politika nije svijet idealnih rješenja, nego svijet kompromisa, ograničenja i nepredvidivih ishoda. To je svijet u kojem dobre ideje mogu propasti, loše ideje opstati, a najbolja rješenja često nisu ona koja su teorijski optimalna, nego ona koja su politički i institucionalno izvediva.
+
+::: {.dinkus}
+:::
+
+Upravo zato ova knjiga odbacuje pojednostavljene priče o državi. Država nije samo "rješenje" koje ispravlja tržišne neuspjehe, ali nije ni samo "problem" koji stvara neefikasnost i birokraciju. Ona je složen sustav odluka, poticaja i pravila, u kojem sudjeluju političari, birači, birokrati i interesne skupine – svi sa svojim ciljevima, informacijama i ograničenjima. Ponekad djeluju u javnom interesu, ponekad u vlastitom, a najčešće negdje između.
+
+Razumjeti državu znači razumjeti kako se ti interesi prelamaju kroz institucije i pretvaraju u konkretne politike. To znači razumjeti zašto se javni novac troši na određeni način, zašto se reforme događaju (ili ne događaju), zašto neki sustavi funkcioniraju bolje od drugih i kako se pravila mogu promijeniti da bi ishodi bili bolji.
+
+Kako bismo to postigli, knjiga je strukturirana u tri međusobno povezana dijela.
+
+U **Dijelu I** postavljamo teorijske temelje. Objašnjavamo kako razmišljati o javnim politikama kroz normativni i pozitivistički pristup, zašto država uopće postoji i koju ulogu ima u gospodarstvu. Upoznajemo se s klasičnom analizom javnih financija, ali i s modernijim pristupima poput nove institucionalne ekonomike i konstitucionalne ekonomike, koji naglašavaju važnost pravila, institucija i dugoročnih ograničenja političkog djelovanja.
+
+U **Dijelu II** ulazimo u stvarni svijet politike kroz teoriju javnog izbora. Ovdje analiziramo kako se odluke stvarno donose: kako glasuju birači, kako se natječu političke stranke, kako djeluju birokrati i interesne skupine. Ovaj dio pokazuje zašto politički sustavi često proizvode ishode koji odstupaju od teorijskih ideala.
+
+U **Dijelu III** fokus se prebacuje na konkretne javne politike i javne financije. Analiziramo kako država prikuplja i troši sredstva, kako dizajn poreza i rashoda utječe na društvo te kako se politike mogu evaluirati i unaprijediti. Poseban naglasak stavlja se na pitanje reformi: kako, unatoč političkim i institucionalnim ograničenjima, dizajnirati učinkovit i održiv javni sektor.
+
+::: {.pullquote}
+Ova knjiga vas neće naučiti samo *što* misliti o javnim politikama. Naučit će vas *kako* o njima razmišljati — kritički, analitički i s razumijevanjem stvarnih ograničenja svijeta u kojem živimo.
+:::
+
+Ako želite razumjeti zašto se politike oblikuju na način na koji se oblikuju, zašto često ne daju očekivane rezultate i kako ih možemo učiniti boljima, ova knjiga je upravo za to. Ona je poziv da izađete iz površinskog promatranja politike i uđete u njezinu unutarnju logiku.
+
+**Dobrodošli u politiku bez romantike.**

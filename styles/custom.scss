@@ -618,21 +618,11 @@ nav#TOC ul li a,
 // =============================================================
 
 // ---- Book hero (na index.qmd) ----
+// Two-column layout: cover image left, content right; stacks on mobile.
 .book-hero {
-  text-align: center;
-  margin: 0 auto 3rem auto;
-  padding: 1rem 0 2.5rem;
-  max-width: 760px;
-  position: relative;
-
-  &::after {
-    content: "";
-    display: block;
-    width: 80px;
-    height: 2px;
-    background: $brand-gold;
-    margin: 2.25rem auto 0;
-  }
+  max-width: 1000px;
+  margin: 3rem auto 4rem;
+  padding: 1.5rem 0 2rem;
 }
 
 // Skrij Quartov auto-injected cover image na landing page-u
@@ -644,73 +634,87 @@ p:has(> img.quarto-cover-image),
 }
 
 .book-hero-image {
-  margin: 0 auto 2rem;
-  max-width: 500px;
+  margin: 0;
 
   img {
     max-width: 100%;
     height: auto;
-    border-radius: 4px;
+    border-radius: 3px;
     box-shadow:
       0 1px 0 rgba($brand-navy, 0.04),
-      0 8px 28px rgba($brand-navy, 0.12),
-      0 18px 50px rgba($brand-navy, 0.08);
+      0 10px 30px rgba($brand-navy, 0.14),
+      0 22px 55px rgba($brand-navy, 0.09);
+  }
+
+  @media (max-width: 860px) {
+    max-width: 380px;
+    margin: 0 auto;
   }
 }
 
-.book-hero-kicker {
-  font-family: $brand-font-sans;
-  font-size: 0.78rem;
-  font-weight: 600;
-  letter-spacing: 0.18em;
-  text-transform: uppercase;
-  color: $brand-gold;
-  margin-bottom: 0.85rem;
+.book-hero-content {
+  // text content column
 }
 
 h1.book-hero-title,
 .book-hero h1 {
-  font-family: $brand-font-sans;
-  font-size: 2.05rem;
-  font-weight: 700;
-  line-height: 1.18;
-  letter-spacing: -0.02em;
+  font-family: $brand-font-serif;
+  font-size: 1.75rem;
+  font-weight: 600;
+  line-height: 1.12;
+  letter-spacing: -0.015em;
   color: $brand-navy;
-  margin: 0 0 0.9rem 0;
-}
+  margin: 0 0 1rem 0;
+  white-space: nowrap;
 
-@media (min-width: 720px) {
-  h1.book-hero-title,
-  .book-hero h1 {
-    font-size: 2.35rem;
+  @media (max-width: 860px) {
+    font-size: 1.25rem;
+    white-space: normal;
   }
 }
 
 .book-hero-subtitle {
   font-family: $brand-font-serif;
   font-style: italic;
-  font-size: 1.15rem;
+  font-size: 1.05rem;
   line-height: 1.5;
   color: $brand-slate;
-  max-width: 580px;
-  margin: 0 auto 1.6rem;
+  margin: 0 0 1.5rem;
 }
 
 .book-hero-authors {
   font-family: $brand-font-sans;
-  font-size: 0.95rem;
-  color: $brand-charcoal;
+  font-size: 0.88rem;
+  letter-spacing: 0.02em;
+  color: $brand-slate;
   margin-bottom: 1.75rem;
 
   a {
-    color: $brand-navy-soft;
-    border-bottom: 1px dotted rgba($brand-gold, 0.6);
+    color: $brand-charcoal;
+    border-bottom: 1px dotted rgba($brand-warm-grey, 0.6);
     padding-bottom: 1px;
 
     &:hover {
       color: $brand-burgundy;
-      border-bottom-style: solid;
+      border-bottom-color: $brand-burgundy;
       background: transparent;
+    }
+  }
+}
+
+.book-hero-blurb {
+  font-family: $brand-font-serif;
+  font-size: 1rem;
+  line-height: 1.65;
+  color: $brand-charcoal;
+  margin: 0 0 1.75rem;
+
+  a {
+    color: $brand-burgundy;
+    border-bottom: 1px dotted rgba($brand-burgundy, 0.4);
+
+    &:hover {
+      border-bottom-style: solid;
     }
   }
 }
@@ -718,46 +722,41 @@ h1.book-hero-title,
 .book-hero-cta {
   display: flex;
   gap: 0.85rem;
-  justify-content: center;
   flex-wrap: wrap;
-  margin-top: 0.5rem;
+  margin-top: 0;
+
+  @media (max-width: 860px) {
+    justify-content: center;
+  }
 }
 
 .cta-button,
 .cta-button-secondary {
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  box-sizing: border-box;
   font-family: $brand-font-sans;
   font-size: 0.95rem;
   font-weight: 600;
   letter-spacing: 0.01em;
   padding: 0.7rem 1.5rem;
+  height: 2.7rem;
   border-radius: 4px;
-  border-bottom: none !important;
-  transition: all 0.18s ease;
-}
-
-.cta-button {
+  border: none !important;
   background: $brand-navy;
   color: $brand-cream !important;
   box-shadow: 0 2px 6px rgba($brand-navy, 0.18);
+  cursor: pointer;
+  transition: all 0.18s ease;
+  text-decoration: none;
+  vertical-align: middle;
 
   &:hover {
     background: $brand-burgundy;
     color: $brand-cream !important;
     transform: translateY(-1px);
     box-shadow: 0 4px 14px rgba($brand-burgundy, 0.25);
-  }
-}
-
-.cta-button-secondary {
-  background: transparent;
-  color: $brand-navy !important;
-  border: 1.5px solid rgba($brand-navy, 0.25) !important;
-
-  &:hover {
-    background: rgba($brand-gold, 0.10);
-    border-color: $brand-gold !important;
-    color: $brand-navy !important;
+    text-decoration: none;
   }
 }
 
@@ -804,6 +803,20 @@ h1.book-hero-title,
     line-height: 1.55;
     color: $brand-charcoal;
     margin: 0;
+  }
+}
+
+// ---- Navbar brand: show "DJP" instead of full book title ----
+.navbar-brand {
+  font-size: 0 !important;
+
+  &::after {
+    content: "DJP";
+    font-family: $brand-font-sans;
+    font-size: 1rem;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    color: inherit;
   }
 }
 
