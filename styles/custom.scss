@@ -1,36 +1,47 @@
 /*-- scss:defaults --*/
 
 // =============================================================
-// Paleta — modern academic-minimalist (a la fatih.ai/airesearch)
+// Paleta — STATECRAFT (paper / ink / verdigris)
 // =============================================================
-// Stara imena varijabli su zadržana radi kompatibilnosti s ostatkom
-// SCSS-a, ali su semantički preusmjerena:
-//   $brand-navy   → near-black (boja teksta i naslova)
-//   $brand-gold   → brick red  (PRIMARNI topli akcent)
-//   $brand-burgundy → brick red (isti akcent — unifikacija)
-//   $brand-charcoal → warm near-black
-//   $brand-slate    → warm slate (toplija sekundarna sivkasto-smeđa)
-//   $brand-light-gold → warm light tint (svijetla cream varijanta)
-//   $brand-navy-soft → soft modern blue (suptilan, koristi se rijetko)
-$brand-navy:        #171411;   // body & headings — warm near-black
-$brand-navy-soft:   #2D5A8E;   // soft modern navy — sekundarni accent
-$brand-slate:       #5A4F3F;   // toplija slate
-$brand-gold:        #9C302B;   // PRIMARY accent — brick red
-$brand-light-gold:  #EFE5D5;   // svijetli warm tint za pozadine
-$brand-burgundy:    #9C302B;   // unify s brick — isti primarni accent
-$brand-cream:       #F6F1E8;   // warm off-white pozadina
-$brand-paper:       #EFE7D5;   // malo tamnija cream za elevirane površine
-$brand-charcoal:    #171411;   // body text — warm near-black
-$brand-warm-grey:   #9F907B;   // muted warm grey — borders, captions, separators
+// Branch: design/statecraft-v2. Imena $brand-* varijabli zadržana radi
+// kompatibilnosti s ostatkom SCSS-a; vrijednosti preslikane na Statecraft
+// tokens iz Claude design package-a (colors_and_type.css):
+//   $brand-navy / $brand-charcoal → ink (#1C1916)         warm near-black
+//   $brand-gold / $brand-burgundy → verdigris (#4A6B5C)   PRIMARY accent
+//   $brand-navy-soft → oxblood (#6B1F26)                  emphasis / danger
+//   $brand-slate → ink-mute (#6B6357)                     captions / secondary
+//   $brand-cream → paper (#F2EDE3)                        background (nikad bijela)
+//   $brand-paper → paper-soft (#EAE3D4)                   elevated surfaces
+//   $brand-light-gold → verdigris-wash (#DDE5DF)          subtle bg tint
+//   $brand-warm-grey → ink-faint (#9C9382)                muted hairlines
+$brand-navy:        #1C1916;   // body & headings — ink
+$brand-navy-soft:   #6B1F26;   // oxblood — emphasis / destructive
+$brand-slate:       #6B6357;   // ink-mute — captions, secondary text
+$brand-gold:        #4A6B5C;   // PRIMARY accent — verdigris
+$brand-light-gold:  #DDE5DF;   // verdigris-wash — vrlo svijetli tint
+$brand-burgundy:    #4A6B5C;   // unify s verdigris (jedan ceremonial pigment)
+$brand-cream:       #F2EDE3;   // paper — warm cream background
+$brand-paper:       #EAE3D4;   // paper-soft — za elevirane površine
+$brand-charcoal:    #1C1916;   // ink (isto kao $brand-navy)
+$brand-warm-grey:   #9C9382;   // ink-faint — borders, captions, separators
+
+// Dodatni Statecraft tokens dostupni za ciljano korištenje
+$sc-verdigris-deep: #3A5648;
+$sc-oxblood-deep:   #561820;
+$sc-ochre:          #C8985E;   // archival / timeline accent
+$sc-ochre-deep:     #9A6F38;
+$sc-rule-faint:     rgba(28, 25, 22, 0.07);
+$sc-rule:           rgba(28, 25, 22, 0.14);
+$sc-rule-strong:    rgba(28, 25, 22, 0.30);
 
 // =============================================================
-// Tipografija
+// Tipografija — STATECRAFT (Newsreader / Public Sans / IBM Plex Mono)
 // =============================================================
-$brand-font-serif: "Newsreader", Georgia, serif;          // display / chapter headings
-$brand-font-sans:  "Geist", "Segoe UI", system-ui, sans-serif;  // body + UI
-$brand-font-mono:  "Geist Mono", "Consolas", monospace;  // code
+$brand-font-serif: "Newsreader", "GT Sectra", Georgia, serif;       // display / prose / headings
+$brand-font-sans:  "Public Sans", "Söhne", "Inter", system-ui, sans-serif;  // UI / labels / nav
+$brand-font-mono:  "IBM Plex Mono", ui-monospace, "SF Mono", Menlo, monospace;
 
-// Bootstrap: Geist as the primary reading font
+// Bootstrap: Public Sans for UI, Newsreader for serif body
 $font-family-base:       $brand-font-sans;
 $font-family-serif:      $brand-font-serif;
 $font-family-sans-serif: $brand-font-sans;
@@ -90,8 +101,8 @@ h1, .chapter-title, .title {
 }
 
 h2 {
-  font-family: $brand-font-sans;   // Geist — clean sans for section headings
-  font-weight: 600;
+  font-family: $brand-font-serif;   // Newsreader — editorial section headings (Statecraft)
+  font-weight: 500;
   color: $brand-navy;
   letter-spacing: -0.012em;
   margin-top: 3rem;
@@ -101,9 +112,9 @@ h2 {
 }
 
 h3 {
-  font-family: $brand-font-sans;
-  font-weight: 600;
-  color: $brand-navy-soft;
+  font-family: $brand-font-serif;   // Newsreader — Statecraft editorial register
+  font-weight: 500;
+  color: $brand-navy;                // ink, ne oxblood — h3 nije emphasis
   letter-spacing: -0.01em;
   margin-top: 2rem;
 }
