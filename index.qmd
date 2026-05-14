@@ -17,31 +17,70 @@ format:
 
 ::: {.content-visible when-format="html"}
 
-::: {.book-hero}
-::: {.book-hero-content}
-# Sve što želite znati o državi i javnim politikama u Hrvatskoj {.book-hero-title}
+::: {.sc-hero}
+::: {.sc-hero-copy}
 
-::: {.book-hero-subtitle}
-Vodič kroz ekonomiju, politiku i institucije za studente i sve koji žele razumjeti zašto država djeluje onako kako djeluje.
+[NOVO IZDANJE · SVIBANJ 2026.]{.section-label}
+
+# Sve što želite znati o državi i javnim politikama u Hrvatskoj {.sc-hero-title}
+
+::: {.sc-hero-lede}
+Vodič kroz ekonomiju, politiku i institucije za studente i sve koji žele razumjeti zašto država djeluje onako kako djeluje. Udžbenik povezuje teoriju javnog izbora, ekonomiku javnog sektora i hrvatsku stvarnost.
 :::
 
-::: {.book-hero-authors}
-[Milan Deskar-Škrbić](https://zsem.hr/clanovi/dr-sc-milan-deskar-skrbic/)  ·  [Petra Palić](https://www.unicath.hr/odjeli-i-fakultet/nastavnici/petra-palic)  ·  [Luka Sikić](https://www.unicath.hr/odjeli-i-fakultet/nastavnici/luka-sikic)
-:::
-
-::: {.book-hero-blurb}
-Udžbenik koji povezuje teoriju javnog izbora, ekonomiku javnog sektora i hrvatsku stvarnost. Kroz interaktivne grafikone, podatke iz hrvatskih institucija i konkretne primjere politika, čitatelj uči zašto se odluke donose onako kako se donose i kako bi mogle biti bolje.
-:::
-
-::: {.book-hero-cta}
-[Počnite čitati →](chapters/00-prije-pocetka.html){.cta-button}
-[Preuzmite PDF](pdf/Javne-politike.pdf){.cta-button}
+::: {.sc-hero-cta}
+[Počnite čitati](chapters/00-prije-pocetka.html){.btn .btn-primary}
+[Preuzmite PDF](pdf/Javne-politike.pdf){.btn .btn-secondary}
 
 ```{=html}
-<button type="button" class="cta-button-secondary toc-toggle" aria-expanded="false" aria-controls="sadržaj-wrapper" data-label-show="Pogledajte sadržaj" data-label-hide="Sakrijte sadržaj">Pogledajte sadržaj</button>
+<button type="button" class="btn btn-ghost toc-toggle" aria-expanded="false" aria-controls="sadržaj-wrapper" data-label-show="Pogledajte sadržaj" data-label-hide="Sakrijte sadržaj">Pogledajte sadržaj</button>
 ```
 :::
+
+::: {.sc-author-row}
+::: {.sc-author-cell}
+[AUTORI]{.section-label}
+
+**[Milan Deskar-Škrbić](https://zsem.hr/clanovi/dr-sc-milan-deskar-skrbic/) · [Petra Palić](https://www.unicath.hr/odjeli-i-fakultet/nastavnici/petra-palic) · [Luka Sikić](https://www.unicath.hr/odjeli-i-fakultet/nastavnici/luka-sikic)**
 :::
+
+::: {.sc-author-cell}
+[OPSEG]{.section-label}
+
+**[16 poglavlja · 3 dijela]{.sc-meta-mono}**
+:::
+
+::: {.sc-author-cell}
+[LICENCA]{.section-label}
+
+**[CC BY 4.0]{.sc-meta-mono}**
+:::
+:::
+
+:::
+
+::: {.sc-cover-card}
+::: {.sc-cover-top}
+№ I · JAVNE POLITIKE
+:::
+<hr/>
+## Vodič kroz državu i javne politike. {.sc-cover-title}
+
+::: {.sc-cover-spacer}
+:::
+
+::: {.sc-cover-foot}
+::: {.sc-cover-author}
+*Deskar-Škrbić · Palić · Sikić*
+Sveučilišni udžbenik
+:::
+[§]{.sc-cover-glyph}
+:::
+:::
+:::
+
+::: {.sc-section-glyph}
+§
 :::
 
 ::: {#sadržaj-wrapper .toc-collapsible-wrapper hidden=""}

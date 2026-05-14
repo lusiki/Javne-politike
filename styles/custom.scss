@@ -1389,3 +1389,262 @@ header#title-block-header h1.title::after {
   margin-top: 1.1rem;
   border-radius: 1px;
 }
+
+// =============================================================
+// =============================================================
+// STATECRAFT companion-site Hero (landing page)
+// branch: design/statecraft-hero
+// =============================================================
+// =============================================================
+
+// Section-label kicker (tracked all-caps)
+.section-label {
+  display: inline-block;
+  font-family: $brand-font-sans;
+  font-size: 0.6875rem;            // 11px
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: $brand-slate;
+  margin-bottom: 0.5rem;
+}
+
+// ---- Hero container (two-column at desktop) ----
+.sc-hero {
+  display: grid;
+  grid-template-columns: 1fr 360px;
+  gap: 5rem;
+  align-items: start;
+  max-width: 1180px;
+  margin: 2rem auto 4rem;
+  padding: 1rem 0 0;
+
+  @media (max-width: 900px) {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+}
+
+.sc-hero-copy {
+  min-width: 0;
+}
+
+// Giant editorial headline
+h1.sc-hero-title,
+.sc-hero h1 {
+  font-family: $brand-font-serif;
+  font-size: clamp(2.75rem, 5.2vw + 1rem, 5rem);
+  line-height: 0.98;
+  letter-spacing: -0.025em;
+  font-weight: 400;
+  color: $brand-navy;
+  margin: 1rem 0 1.5rem;
+  text-wrap: balance;
+}
+
+.sc-hero-lede {
+  font-family: $brand-font-serif;
+  font-size: 1.32rem;
+  line-height: 1.5;
+  font-weight: 300;
+  color: $brand-slate;
+  max-width: 42ch;
+  margin: 0 0 2rem;
+  text-wrap: pretty;
+}
+
+// CTA row
+.sc-hero-cta {
+  display: flex;
+  gap: 0.75rem;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 3rem;
+
+  // Hide pandoc's auto <p> wrapper if present
+  > p { display: contents; }
+}
+
+// Statecraft button system (.btn .btn-primary / .btn-secondary / .btn-ghost)
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 44px;
+  padding: 0 1.4rem;
+  font-family: $brand-font-sans;
+  font-size: 0.9rem;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+  border-radius: 2px;
+  border: 1px solid transparent;
+  text-decoration: none !important;
+  border-bottom: none !important;
+  cursor: pointer;
+  transition: background 0.14s ease, color 0.14s ease, border-color 0.14s ease;
+
+  &:hover { text-decoration: none !important; }
+}
+
+.btn-primary {
+  background: $brand-gold;             // verdigris
+  color: $brand-cream !important;
+  &:hover {
+    background: $sc-verdigris-deep;
+    color: $brand-cream !important;
+    background-color: $sc-verdigris-deep;
+  }
+  &:active { transform: translateY(1px); }
+}
+
+.btn-secondary {
+  background: transparent;
+  color: $brand-navy !important;
+  border-color: $sc-rule-strong;
+  &:hover {
+    background: $brand-paper;
+    color: $brand-navy !important;
+  }
+}
+
+.btn-ghost {
+  background: transparent;
+  color: $brand-navy !important;
+  border-color: transparent;
+  &:hover { background: $brand-paper; color: $brand-navy !important; }
+}
+
+// ---- Author / meta row under CTAs ----
+.sc-author-row {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  padding-top: 1.5rem;
+  border-top: 1px solid $sc-rule;
+  font-family: $brand-font-sans;
+  font-size: 0.82rem;
+  color: $brand-slate;
+}
+
+.sc-author-cell {
+  min-width: 0;
+  .section-label { display: block; margin-bottom: 0.4rem; }
+  strong, b {
+    font-family: $brand-font-serif;
+    font-style: italic;
+    font-weight: 400;
+    font-size: 1rem;
+    color: $brand-navy;
+    display: block;
+
+    a {
+      color: inherit;
+      border-bottom: 1px dotted rgba($brand-gold, 0.5);
+      &:hover { color: $brand-gold; border-bottom-style: solid; background: transparent; }
+    }
+  }
+}
+
+.sc-meta-mono {
+  font-family: $brand-font-mono !important;
+  font-style: normal !important;
+  font-size: 0.88rem !important;
+  font-feature-settings: "tnum" 1, "lnum" 1;
+}
+
+// ---- Cover card (typographic placeholder, no image) ----
+.sc-cover-card {
+  background: $brand-cream;
+  border: 1px solid $sc-rule-strong;
+  padding: 2.5rem 2rem;
+  display: flex;
+  flex-direction: column;
+  min-height: 480px;
+  box-shadow: -1px 1px 0 $brand-navy;
+  position: relative;
+  margin: 0;
+
+  @media (max-width: 900px) {
+    max-width: 360px;
+    margin: 0 auto;
+  }
+}
+
+.sc-cover-top {
+  font-family: $brand-font-sans;
+  font-size: 0.625rem;             // 10px
+  letter-spacing: 0.18em;
+  color: $brand-slate;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.sc-cover-card hr {
+  border: 0;
+  height: 1px;
+  background: $sc-rule-strong;
+  margin: 0.75rem 0 1.75rem;
+  width: 100%;
+}
+
+h2.sc-cover-title,
+.sc-cover-card h2.sc-cover-title {
+  font-family: $brand-font-serif;
+  font-size: 2.25rem;
+  font-weight: 400;
+  line-height: 1.04;
+  letter-spacing: -0.018em;
+  color: $brand-navy;
+  margin: 0;
+  border: 0;
+  padding: 0;
+  max-width: 11ch;
+  text-wrap: balance;
+}
+
+.sc-cover-spacer { flex: 1; min-height: 4rem; }
+
+.sc-cover-foot {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  font-family: $brand-font-sans;
+  font-size: 0.7rem;
+  color: $brand-slate;
+  margin-top: 2rem;
+}
+
+.sc-cover-author {
+  font-family: $brand-font-sans;
+  font-size: 0.7rem;
+  color: $brand-slate;
+  line-height: 1.4;
+
+  em, i {
+    display: block;
+    font-family: $brand-font-serif;
+    font-style: italic;
+    font-size: 1rem;
+    color: $brand-navy;
+    margin-bottom: 0.2rem;
+  }
+}
+
+.sc-cover-glyph {
+  font-family: $brand-font-serif;
+  font-style: italic;
+  font-size: 3.5rem;
+  line-height: 0.8;
+  color: $sc-verdigris-deep;
+}
+
+// ---- § divider between hero and TOC ----
+.sc-section-glyph {
+  text-align: center;
+  margin: 3rem 0 2rem;
+  font-family: $brand-font-serif;
+  font-style: italic;
+  font-size: 2rem;
+  color: $sc-rule-strong;
+  user-select: none;
+}
