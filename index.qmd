@@ -41,7 +41,7 @@ Vodič kroz ekonomiju, politiku i institucije za studente i sve koji žele razum
 ::: {.sc-author-cell}
 [AUTORI]{.section-label}
 
-**[Milan Deskar-Škrbić](https://zsem.hr/clanovi/dr-sc-milan-deskar-skrbic/) · [Petra Palić](https://www.unicath.hr/odjeli-i-fakultet/nastavnici/petra-palic) · [Luka Sikić](https://www.unicath.hr/odjeli-i-fakultet/nastavnici/luka-sikic)**
+**[Milan Deskar-Škrbić](https://zsem.hr/clanovi/dr-sc-milan-deskar-skrbic/) · [Petra Palić](https://www.unicath.hr/odjeli-i-fakultet/nastavnici/petra-palic) · [Luka Sikić](https://www.lukasikic.info/)**
 :::
 
 ::: {.sc-author-cell}
@@ -72,7 +72,6 @@ Vodič kroz ekonomiju, politiku i institucije za studente i sve koji žele razum
 ::: {.sc-cover-foot}
 ::: {.sc-cover-author}
 *Deskar-Škrbić · Palić · Sikić*
-Sveučilišni udžbenik
 :::
 [§]{.sc-cover-glyph}
 :::
