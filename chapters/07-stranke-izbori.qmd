@@ -1,0 +1,86 @@
+---
+title: "Političke stranke i izbori"
+---
+
+Ako kolektivni izbor objašnjava kako se pojedinačne preferencije agregiraju u društvene odluke, političke stranke i izbori objašnjavaju **tko** te odluke u praksi oblikuje i **kako** se nadmeće za pravo da ih donosi. Teorija javnog izbora polazi od pretpostavke da političari i stranke nisu apstraktni zastupnici općeg dobra, nego akteri s vlastitim ciljevima. Najvažniji od njih je dolazak na vlast i ostanak na njoj. Stranke se zato ponašaju donekle slično poduzećima na tržištu: „proizvod" koji nude su politički programi, „valuta" kojom se plaća su glasovi birača, a umjesto profita maksimiziraju broj glasova i moć [@downs1957].
+
+Politička je konkurencija stoga strateška igra pozicioniranja, diferencijacije i maksimizacije glasova unutar zadanog institucionalnog okvira — a ne potraga za objektivno najboljim rješenjem za društvo. To je ključno za razumijevanje javnih financija: proračun, porezni sustav i regulatorni okvir oblikovani su više prema logici političke profitabilnosti nego prema kriterijima ekonomske efikasnosti i dugoročne održivosti.
+
+## Medijanski glasač i natjecanje za centar
+
+Najutjecajniji model političkog natjecanja jest **model medijanskog glasača**, čiji su temelji u radovima Hotellinga [@hotelling1929], Blacka [@black1948] i Downsa [@downs1957]. Ako birače možemo poredati na jednoj ideološkoj osi — primjerice od „manje države" prema „više države" — i ako svaki birač glasuje za stranku koja je najbliža njegovoj idealnoj točki, tada dvije stranke koje se natječu za vlast imaju snažan poticaj približiti se sredini, odnosno preferencijama medijanskog glasača.
+
+Logika je jednostavna. Stranka koja zauzme krajnju poziciju osvaja birače sa svoga kraja osi, ali gubi velik dio sredine. Pomicanjem prema centru osvaja medijanskoga glasača, a time i većinu. U klasičnom dvostranačkom natjecanju to dovodi do **konvergencije prema centru**: obje se stranke pomiču prema sredini i njihovi se programi sve više nalikuju. Taj rezultat objašnjava čestu pritužbu birača da „nema prave razlike" između velikih stranaka.
+
+Medijanski glasač ne određuje samo ideološku poziciju stranaka, nego i konkretne fiskalne parametre — visinu poreznih stopa, opseg socijalnih transfera, razinu javnih investicija i mirovinskih naknada. Model je snažan, ali počiva na strogim pretpostavkama: jedna ideološka dimenzija, dvije stranke, potpuna informiranost i sigurnost da će svi izaći na izbore. Kada te pretpostavke padnu, slika postaje složenija.
+
+::: {.callout-praksa}
+U Hrvatskoj je ovaj mehanizam dugo objašnjavao programsku sličnost dviju najvećih stranaka po ključnim ekonomskim pitanjima. Unatoč različitoj retorici, HDZ i SDP u praksi su često provodili slične politike usmjerene na makroekonomsku stabilnost, korištenje europskih fondova i očuvanje socijalne države u umjerenim okvirima. To je bila racionalna posljedica nastojanja da se osvoji medijanski birač, koji u hrvatskom kontekstu tradicionalno preferira kombinaciju socijalne sigurnosti i političke stabilnosti. Budući da je velik udio stanovništva zaposlen u javnom sektoru ili ovisan o mirovinskom i socijalnom sustavu, čak i nominalno desno orijentirane stranke rijetko provode radikalne rezove rashoda kada dođu na vlast.
+:::
+
+## Kako se stranke natječu za glas
+
+Stranke nisu pasivni prenositelji biračkih preferencija, nego aktivni poduzetnici koji oblikuju ponudu. Glavna je strategija **diferencijacija ponude**: stranke ne nude samo tehničke politike, nego cjelovite „brendove" koji kombiniraju ekonomske mjere, identitetske signale i emocionalne apele. Takvi brendovi služe kao informacijski prečaci biračima koji nemaju poticaja ulagati velik trud u analizu programa.
+
+Posebno je važna tehnika **pakiranje** (*bundling*) — spajanje različitih, ponekad i proturječnih politika u jedan izborni paket. Stranka može istodobno obećavati porezne olakšice poduzetnicima, veće mirovine umirovljenicima i veća izdvajanja za poljoprivredu, iako ekonomska struka teško može opravdati takvu kombinaciju. Druga je strategija **herestetika** — vještina strukturiranja političkog prostora i nametanja tema na kojima stranka ima komparativnu prednost [@riker1968]. Umjesto da se natječu ondje gdje su slabije, stranke nastoje nametnuti teme koje im idu u prilog: kada su velike stranke ekonomski slične, natjecanje se premješta na identitetska, sigurnosna ili povijesna pitanja. Tomu treba dodati i **negativnu kampanju**: diskreditiranje protivnika često je jeftinije i učinkovitije od uvjeravanja birača u superiornost vlastitog programa, premda dugoročno smanjuje povjerenje u politički sustav.
+
+## Što oblikuje centar i polarizaciju
+
+U stvarnosti politika rijetko ima samo jednu dimenziju. Birači istodobno vrednuju ekonomska, vrijednosna i identitetska pitanja, vanjsku politiku i okoliš. U višedimenzionalnom prostoru jasna „središnja" pozicija često ne postoji, pa se stranke mogu specijalizirati za određene skupine birača umjesto da se natječu za sredinu.
+
+Na položaj stranaka utječu i drugi čimbenici. Izlaznost nije zajamčena: ako se birači s krajeva spektra lakše mobiliziraju, stranke mogu imati poticaj zauzeti izraženije pozicije kako bi potaknule vlastitu bazu. Izborni je sustav također važan — proporcionalni sustavi pogoduju većem broju stranaka i koalicijskoj politici, dok većinski sustavi guraju prema dvjema velikim strankama. Kada distribucija biračkih preferencija postane **bimodalna**, strankama se isplati napustiti centar i usredotočiti na mobilizaciju vlastite ideološki motivirane baze. Dodatno, ideološki aktivisti, veliki donatori i medijski saveznici često vrše pritisak na vodstvo da se pomakne prema rubu spektra. Zbog svega toga suvremene demokracije često pokazuju **polarizaciju** umjesto konvergencije: stranke se udaljavaju, a središte slabi. @tbl-centrizam ilustrira raspon strategija u različitim zemljama.
+
+| Zemlja | Prevladavajuća strategija | Ključne karakteristike | Posljedice za javne financije |
+|---|---|---|---|
+| Hrvatska (2010.–2020.) | centrizam | konvergencija HDZ–SDP po ekonomskim pitanjima | relativna fiskalna stabilnost, ali sporost reformi |
+| Njemačka (Merkelina era) | centrizam | velike koalicije CDU–SPD, *Mittepolitik* | visoka stabilnost, niska volatilnost duga |
+| SAD | polarizacija | bimodalna distribucija, mobilizacija baze | veliki zaokreti u fiskalnoj politici, visok dug |
+| Mađarska (Orbán) | polarizacija + centar–periferija | dominacija Fidesza kroz nacionalno-identitetsku mobilizaciju | centralizacija fiskalne moći, rast potrošnje |
+| Francuska (2017.–2022.) | „novi centar" | Macronov pokret kao pokušaj nadilaženja lijevo-desne osi | početna fleksibilnost, kasnije prosvjedi |
+| Italija | fragmentirana polarizacija | jačanje populističkih stranaka (M5S, Liga) | visoka nestabilnost proračuna i duga |
+
+: Primjeri centrizma i polarizacije u suvremenim demokracijama. Izrada autora prema @downs1957, @fiorina2006 i @mudde2017. {#tbl-centrizam}
+
+::: {.callout-praksa}
+U Hrvatskoj je ova dinamika vidljiva kroz jačanje stranaka pozicioniranih izvan tradicionalnog centra, koje umjesto ekonomskih programa naglašavaju identitetska i antielitistička pitanja. Slično, Emmanuel Macron 2017. uspješno se pozicionirao kao „ni lijevo ni desno", dok su u Italiji i Španjolskoj Pokret pet zvijezda i Vox nametnuli teme korupcije i imigracije kako bi se odvojili od etabliranih stranaka. Rezultat je često „šizofrena" ponuda: umjerena retorika u kampanji za širu javnost i radikalniji stavovi prema stranačkoj bazi.
+:::
+
+## Racionalna neinformiranost i izlaznost
+
+Posebnost izbora kao mehanizma kolektivnog odlučivanja jest da pojedinačni glas gotovo nikada ne odlučuje ishod. Anthony Downs [@downs1957] formalizirao je to kroz **račun glasovanja**, koji su Riker i Ordeshook [@riker1968] zapisali kao:
+
+$$R = (P \times B) - C + D$$
+
+gdje je $P$ vjerojatnost da će glas biti odlučujući, $B$ korist ako pobijedi preferirani kandidat, $C$ trošak izlaska na izbore, a $D$ neinstrumentalne koristi samog čina glasovanja (osjećaj dužnosti, zadovoljstvo, društveni pritisak). U velikim demokracijama $P$ je toliko malen da instrumentalni dio ($P \times B$) postaje zanemariv.
+
+Iz toga slijedi poznati uvid: za pojedinca je **racionalno** uložiti vrlo malo vremena u informiranje o politikama jer trošak informiranja snosi sam, a korist od „ispravnog" glasa raspršena je na cijelo društvo. Tu pojavu nazivamo **racionalnom neinformiranošću** (*rational ignorance*). Pojedinac ne ostaje neinformiran zato što je lijen, nego zato što je to ekonomski racionalno: trošak razumijevanja porezne reforme ili mirovinskog sustava daleko premašuje očekivanu korist na biralištu.
+
+::: {.callout-empirija}
+Račun (ne)sudjelovanja vidljiv je u podacima. Mulligan i Hunter [@mulligan2003] procijenili su da je vjerojatnost odlučujućeg glasa na američkim predsjedničkim izborima oko 1 prema 10 milijuna. U Hrvatskoj je izlaznost na izborima za Europski parlament 2024. iznosila oko 21 % — među najnižima u EU — a slični obrasci (ispod 30 %) bilježe se u Poljskoj, Slovačkoj i Rumunjskoj. Komparativne studije [@blais2000] pokazuju da instrumentalna motivacija objašnjava tek mali dio razlika u izlaznosti; mnogo veći utjecaj imaju institucionalni čimbenici — u zemljama s obveznim glasovanjem (Belgija, Australija) izlaznost je znatno viša.
+:::
+
+Racionalna neinformiranost ima važne posljedice. Otvara prostor pojednostavljenim porukama, simboličkoj politici i utjecaju dobro organiziranih skupina koje *jesu* informirane i motivirane. Posljedica je i **fiskalna iluzija** [@wagner1976]: vlade imaju poticaj dizajnirati poreze tako da troškovi budu što manje vidljivi (doprinosi koji se odbijaju prije neto plaće, PDV uključen u cijenu), pa građani podcjenjuju stvarni porezni teret i precjenjuju koristi javnih usluga.
+
+Sličan paradoks vrijedi i za samu odluku o izlasku na izbore. Ako je vjerojatnost odlučujućega glasa zanemariva, čisto instrumentalni račun sugerira da se ne isplati glasovati — a ipak ljudi masovno izlaze. Objašnjenje leži u članu $D$: u **ekspresivnom glasovanju** [@brennan1993; @schuessler2000] — biranju kao izrazu identiteta, pripadnosti i vrijednosti, a ne samo pokušaju utjecaja na ishod. Baš kao što navijač navija za svoju momčad iako zna da to neće promijeniti rezultat, birač izražava lojalnost svjetonazoru ili zajednici. Caplan tomu dodaje **racionalnu iracionalnost** [@caplan2001; @caplan2007]: budući da pogrešno mišljenje pojedinca na biralištu gotovo ništa ne košta, birači si mogu priuštiti emocionalno privlačne, ali ekonomski neodržive narative. Ekspresivni i identitetski motivi tako pojačavaju **afektivnu polarizaciju** — emocionalnu podjelu između tabora u kojoj birači ne odbacuju samo suparničke politike nego i same suparničke birače [@iyengar2019; @somin2013].
+
+## Je li diktatura najbolji sustav donošenja odluka?
+
+Jedno od najprovokativnijih pitanja teorije javnog izbora jest usporedba demokratskog i autokratskog odlučivanja. Demokracija pati od visokih troškova odlučivanja, sporosti i utjecaja medijanskog glasača, dok autokracija nudi prividnu prednost u brzini i dosljednosti. Buchanan i Tullock [@buchanan1962] razlikuju dvije vrste troškova: **troškove odlučivanja** (vrijeme, pregovori i kompromisi potrebni da se postigne suglasnost) i **vanjske troškove** (šteta koju pojedinci trpe od odluka s kojima se ne slažu). Diktatura ekstremno smanjuje prve, ali dramatično povećava druge.
+
+Teorijski, autokratski vladar može brzo donositi i provoditi odluke bez širokog konsenzusa, što omogućuje dugoročno planiranje. Singapur pod Lee Kuan Yewom proveo je dugoročne infrastrukturne i obrazovne reforme koje su u demokracijama često blokirane, a Kina je demonstrirala sposobnost brze provedbe masovnih projekata. No teorija javnog izbora upozorava na ozbiljne slabosti. Prva je **nedostatak pouzdanih informacija**: bez slobodnih medija, oporbe i neovisnih institucija autokrat rijetko dobiva točne povratne informacije, pa su moguće katastrofalne pogreške velikih razmjera. Druga je **premještanje lova na rentu** iz javnog parlamentarnog prostora u zatvorene krugove oko vladara, gdje lojalnost postaje ključna valuta. Treća i najvažnija jest **odsutnost mehanizma korekcije**: demokracija omogućuje mirnu smjenu vlasti i postupnu korekciju loših politika, dok autokracija tu mogućnost uklanja.
+
+::: {.callout-empirija}
+Amartya Sen [@sen1999] empirijski je pokazao da u modernoj povijesti nikada nije došlo do velike gladi u funkcionalnoj demokraciji — upravo zbog mehanizama ranog upozoravanja, slobodnog tiska i pritiska javnosti. Brze, neprovjerene odluke u autokracijama (primjerice Veliki skok naprijed u Kini) pokazuju cijenu nepostojanja tih mehanizama korekcije.
+:::
+
+::: {.callout-praksa}
+U području javnih financija autokratski sustavi pokazuju mješovite rezultate. Neki (Singapur, Južna Koreja u razdoblju razvoja) održali su fiskalnu disciplinu i strateško ulaganje, no većina dugoročnih autokracija završila je visokim javnim dugom, neefikasnim investicijama („bijeli slonovi") ili oboje. Kineski model, unatoč impresivnim rezultatima u prošlosti, danas se suočava s nagomilanim lokalnim dugovima i prekapacitiranim sektorima.
+:::
+
+Zaključak nije idealizacija nijednog sustava. Demokracija je sporija i skuplja, ali otpornija na katastrofalne pogreške; autokracija može biti brža, ali je krhkija jer ovisi o kvaliteti i dugovječnosti samog autokrata. Najbolji institucionalni dizajn vjerojatno leži u kombinaciji demokratske legitimnosti s čvrstim **ustavnim ogradama** koje štite fiskalnu odgovornost od kratkoročnih političkih impulsa — što nas vraća na pouku prethodnog poglavlja o važnosti pravila igre [@mueller1989].
+
+## Zašto je to važno za javne politike
+
+Razumijevanje stranačkog natjecanja i izbornoga ponašanja ključno je za analizu javnih politika jer objašnjava sustavne pristranosti političkog procesa. Politike koje donose **vidljive i koncentrirane koristi** prije izbora politički su privlačnije od politika čije se koristi javljaju tek za desetljeće. Reforme s kratkoročnim troškovima i dugoročnim koristima sustavno se odgađaju. Skupine koje se lakše mobiliziraju i bolje informiraju dobivaju nesrazmjeran utjecaj.
+
+Dokle god birači biraju na temelju identiteta i emocija, a stranke racionalno teže medijanskom glasaču i mobilizaciji baze, političari će imati slab poticaj za provođenje nepopularnih, ali nužnih fiskalnih reformi. Time se prirodno otvara tema sljedećega poglavlja: ako slabo informirani birači i kratkoročni izborni poticaji oblikuju politiku, posebnu pozornost zaslužuju oni koji su najbolje organizirani da na nju utječu — interesne skupine.

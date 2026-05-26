@@ -1378,3 +1378,50 @@ header#title-block-header h1.title::after {
   margin-top: 1.1rem;
   border-radius: 1px;
 }
+
+// =============================================================
+// OJS interaktivne vizualizacije (Observable Plot + Inputs)
+// Klizači ("moving sidebars") i tekst u grafovima koriste
+// knjižni font (Geist) i brand boje umjesto Roboto/ad-hoc paletu.
+// =============================================================
+
+// Klizači i njihovi natpisi (Inputs.range / Inputs.form)
+.observablehq,
+.observablehq--inspect,
+form.observablehq--input,
+.observablehq label,
+.observablehq input,
+.observablehq output,
+.cell-output .observablehq {
+  font-family: $brand-font-sans;
+}
+
+// Natpisi klizača — usklađeni s bojom sekundarnog teksta u knjizi
+.observablehq label,
+.observablehq--label,
+form.observablehq--input > label {
+  font-family: $brand-font-sans;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: $brand-slate;
+}
+
+// Numeričke vrijednosti uz klizače — tabularni brojevi radi poravnanja
+.observablehq output,
+.observablehq--input output {
+  font-family: $brand-font-sans;
+  font-variant-numeric: tabular-nums lining-nums;
+  color: $brand-navy;
+}
+
+// Akcent klizača (track/thumb) u brand boji gdje preglednik to podržava
+.observablehq input[type="range"] {
+  accent-color: $brand-gold;
+}
+
+// SVG tekst koji generira Observable Plot (osi, oznake, naslovi)
+// — fallback ako pojedini graf ne postavi fontFamily eksplicitno.
+.cell-output svg[class^="plot-"] text,
+.cell-output figure svg text {
+  font-family: $brand-font-sans;
+}

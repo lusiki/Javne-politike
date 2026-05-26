@@ -1,5 +1,5 @@
 ---
-title: "13. Porezi: više od tereta"
+title: "Porezi: više od tereta"
 ---
 
 ## Što su porezi?
@@ -164,51 +164,51 @@ rho = controls.rho
     height: 500,
     marginLeft: 65,
     marginBottom: 55,
-    style: {fontSize: "12px", fontFamily: "Roboto, system-ui, sans-serif", color: "#4A5568"},
+    style: {fontSize: "12px", fontFamily: "Geist, system-ui, sans-serif", color: "#5A4F3F"},
     x: {label: "Dohodak (Y) →", domain: [0, Ymax], grid: false},
     y: {label: "↑ Ukupna korisnost (U)", domain: [Math.min(0, U(1)), Umax * 1.08], grid: true},
     marks: [
-      Plot.ruleY([0], {stroke: "#CBD5E0"}),
-      Plot.line(curve, {x: "Y", y: "U", stroke: "#1f77b4", strokeWidth: 2.5}),
+      Plot.ruleY([0], {stroke: "#D8CCB8"}),
+      Plot.line(curve, {x: "Y", y: "U", stroke: "#2D5A8E", strokeWidth: 2.5}),
 
       // Original positions (faded)
       Plot.dot([{Y: yp, U: Up}, {Y: yr, U: Ur}],
-        {x: "Y", y: "U", r: 5, fill: "#A0AEC0", stroke: "white", strokeWidth: 1.5}),
-      Plot.ruleX([yp, yr], {y1: 0, y2: d => d === yp ? Up : Ur, stroke: "#CBD5E0", strokeDasharray: "2,2"}),
+        {x: "Y", y: "U", r: 5, fill: "#9F907B", stroke: "white", strokeWidth: 1.5}),
+      Plot.ruleX([yp, yr], {y1: 0, y2: d => d === yp ? Up : Ur, stroke: "#D8CCB8", strokeDasharray: "2,2"}),
 
       // New positions after transfer
-      Plot.dot([{Y: ypNew, U: UpNew}], {x: "Y", y: "U", r: 6, fill: "#2ca02c", stroke: "white", strokeWidth: 2}),
-      Plot.dot([{Y: yrNew, U: UrNew}], {x: "Y", y: "U", r: 6, fill: "#C53030", stroke: "white", strokeWidth: 2}),
+      Plot.dot([{Y: ypNew, U: UpNew}], {x: "Y", y: "U", r: 6, fill: "#2F7A5C", stroke: "white", strokeWidth: 2}),
+      Plot.dot([{Y: yrNew, U: UrNew}], {x: "Y", y: "U", r: 6, fill: "#9C302B", stroke: "white", strokeWidth: 2}),
 
       // Lines showing the transfer movement on the x axis
       Plot.link(
         [{x1: yp, y1: Umax * 0.04, x2: ypNew, y2: Umax * 0.04}],
         {x1: "x1", y1: "y1", x2: "x2", y2: "y2",
-         stroke: "#2ca02c", strokeWidth: 2.5, markerEnd: "arrow"}),
+         stroke: "#2F7A5C", strokeWidth: 2.5, markerEnd: "arrow"}),
       Plot.link(
         [{x1: yr, y1: Umax * 0.04, x2: yrNew, y2: Umax * 0.04}],
         {x1: "x1", y1: "y1", x2: "x2", y2: "y2",
-         stroke: "#C53030", strokeWidth: 2.5, markerEnd: "arrow"}),
+         stroke: "#9C302B", strokeWidth: 2.5, markerEnd: "arrow"}),
 
       // Vertical brackets showing utility change
-      Plot.ruleX([ypNew], {y1: Up, y2: UpNew, stroke: "#2ca02c", strokeWidth: 3}),
-      Plot.ruleX([yrNew], {y1: UrNew, y2: Ur, stroke: "#C53030", strokeWidth: 3}),
+      Plot.ruleX([ypNew], {y1: Up, y2: UpNew, stroke: "#2F7A5C", strokeWidth: 3}),
+      Plot.ruleX([yrNew], {y1: UrNew, y2: Ur, stroke: "#9C302B", strokeWidth: 3}),
 
       // Labels
       Plot.text([{x: ypNew, y: UpNew, label: `+${dUp.toFixed(2)}`}],
         {x: "x", y: "y", text: "label", textAnchor: "start", dx: 8, dy: -8,
-         fontSize: 13, fill: "#2ca02c", fontWeight: 700}),
+         fontSize: 13, fill: "#2F7A5C", fontWeight: 700}),
       Plot.text([{x: yrNew, y: UrNew, label: `${dUr.toFixed(2)}`}],
         {x: "x", y: "y", text: "label", textAnchor: "start", dx: 8, dy: 14,
-         fontSize: 13, fill: "#C53030", fontWeight: 700}),
+         fontSize: 13, fill: "#9C302B", fontWeight: 700}),
 
       Plot.text([{x: 2, y: Umax * 1.04, label: `Δ Ukupna korisnost: ${dUtot >= 0 ? "+" : ""}${dUtot.toFixed(2)}`}],
         {x: "x", y: "y", text: "label", textAnchor: "start",
-         fontSize: 14, fill: dUtot >= 0 ? "#2ca02c" : "#C53030", fontWeight: 700}),
+         fontSize: 14, fill: dUtot >= 0 ? "#2F7A5C" : "#9C302B", fontWeight: 700}),
 
       Plot.text([{x: Ymax * 0.55, y: Umax * 0.20,
          label: rho === 1 ? "U(Y) = 10·ln(Y)" : `U(Y) ∝ Y^(1−${rho.toFixed(1)})`}],
-        {x: "x", y: "y", text: "label", fill: "#1f77b4", fontSize: 12, fontWeight: 600})
+        {x: "x", y: "y", text: "label", fill: "#2D5A8E", fontSize: 12, fontWeight: 600})
     ]
   });
 }
@@ -296,59 +296,59 @@ t_inc = inc_controls.t_inc
     height: 500,
     marginLeft: 60,
     marginBottom: 55,
-    style: {fontSize: "12px", fontFamily: "Roboto, system-ui, sans-serif", color: "#4A5568"},
+    style: {fontSize: "12px", fontFamily: "Geist, system-ui, sans-serif", color: "#5A4F3F"},
     x: {label: "Količina (Q) →", domain: [0, Qmax], grid: false},
     y: {label: "↑ Cijena (P)",    domain: [0, Pmax], grid: true},
     marks: [
-      Plot.ruleY([0], {stroke: "#CBD5E0"}),
+      Plot.ruleY([0], {stroke: "#D8CCB8"}),
 
       // Burden rectangles
       Plot.line([...buyerRect, buyerRect[0]],
-        {x: "Q", y: "P", stroke: "#3182CE", strokeWidth: 1, fill: "#BEE3F8", fillOpacity: 0.55, curve: "linear"}),
+        {x: "Q", y: "P", stroke: "#2D5A8E", strokeWidth: 1, fill: "#C5D6E6", fillOpacity: 0.55, curve: "linear"}),
       Plot.line([...sellerRect, sellerRect[0]],
-        {x: "Q", y: "P", stroke: "#D69E2E", strokeWidth: 1, fill: "#FAF089", fillOpacity: 0.55, curve: "linear"}),
+        {x: "Q", y: "P", stroke: "#C57832", strokeWidth: 1, fill: "#F0DFC0", fillOpacity: 0.55, curve: "linear"}),
 
       // Curves
-      Plot.line(demand,    {x: "Q", y: "P", stroke: "#1f77b4", strokeWidth: 2.5}),
-      Plot.line(supply,    {x: "Q", y: "P", stroke: "#2ca02c", strokeWidth: 2}),
-      Plot.line(supplyTax, {x: "Q", y: "P", stroke: "#2ca02c", strokeWidth: 2, strokeDasharray: "6,4"}),
+      Plot.line(demand,    {x: "Q", y: "P", stroke: "#2D5A8E", strokeWidth: 2.5}),
+      Plot.line(supply,    {x: "Q", y: "P", stroke: "#2F7A5C", strokeWidth: 2}),
+      Plot.line(supplyTax, {x: "Q", y: "P", stroke: "#2F7A5C", strokeWidth: 2, strokeDasharray: "6,4"}),
 
       // Price guides
-      Plot.ruleY([Pc],    {stroke: "#A0AEC0", strokeDasharray: "2,2"}),
-      Plot.ruleY([Pp],    {stroke: "#A0AEC0", strokeDasharray: "2,2"}),
-      Plot.ruleY([Pstar], {stroke: "#718096", strokeDasharray: "4,3", strokeWidth: 1}),
+      Plot.ruleY([Pc],    {stroke: "#9F907B", strokeDasharray: "2,2"}),
+      Plot.ruleY([Pp],    {stroke: "#9F907B", strokeDasharray: "2,2"}),
+      Plot.ruleY([Pstar], {stroke: "#5A4F3F", strokeDasharray: "4,3", strokeWidth: 1}),
 
       // Tax wedge
-      Plot.ruleX([Qt], {y1: Pp, y2: Pc, stroke: "#C53030", strokeWidth: 3}),
+      Plot.ruleX([Qt], {y1: Pp, y2: Pc, stroke: "#9C302B", strokeWidth: 3}),
 
       // Equilibrium markers
-      Plot.dot([{Q: Qstar, P: Pstar}], {x: "Q", y: "P", r: 5, fill: "#4A5568", stroke: "white", strokeWidth: 2}),
+      Plot.dot([{Q: Qstar, P: Pstar}], {x: "Q", y: "P", r: 5, fill: "#5A4F3F", stroke: "white", strokeWidth: 2}),
       Plot.dot([{Q: Qt, P: Pc}, {Q: Qt, P: Pp}],
-        {x: "Q", y: "P", r: 4, fill: "#C53030", stroke: "white", strokeWidth: 1.5}),
+        {x: "Q", y: "P", r: 4, fill: "#9C302B", stroke: "white", strokeWidth: 1.5}),
 
       // Labels on the curves
       Plot.text([{x: Qmax * 0.85, y: a - b * Qmax * 0.85, label: `D (|εD|=${eps_d.toFixed(2)})`}],
-        {x: "x", y: "y", text: "label", fill: "#1f77b4", fontSize: 12, fontWeight: 600, dy: -8}),
+        {x: "x", y: "y", text: "label", fill: "#2D5A8E", fontSize: 12, fontWeight: 600, dy: -8}),
       Plot.text([{x: Qmax * 0.85, y: c + d_slope * Qmax * 0.85, label: `S (εS=${eps_s.toFixed(2)})`}],
-        {x: "x", y: "y", text: "label", fill: "#2ca02c", fontSize: 12, fontWeight: 600, dy: -8}),
+        {x: "x", y: "y", text: "label", fill: "#2F7A5C", fontSize: 12, fontWeight: 600, dy: -8}),
       Plot.text([{x: Qmax * 0.85, y: c + t + d_slope * Qmax * 0.85, label: "S + t"}],
-        {x: "x", y: "y", text: "label", fill: "#2ca02c", fontSize: 12, fontWeight: 600, dy: -8}),
+        {x: "x", y: "y", text: "label", fill: "#2F7A5C", fontSize: 12, fontWeight: 600, dy: -8}),
 
       // Price labels
       Plot.text([{x: 2, y: Pc, label: `Pc = ${Pc.toFixed(1)}`}],
-        {x: "x", y: "y", text: "label", textAnchor: "start", dy: -8, fontSize: 12, fill: "#2D3748"}),
+        {x: "x", y: "y", text: "label", textAnchor: "start", dy: -8, fontSize: 12, fill: "#171411"}),
       Plot.text([{x: 2, y: Pp, label: `Pp = ${Pp.toFixed(1)}`}],
-        {x: "x", y: "y", text: "label", textAnchor: "start", dy: 14, fontSize: 12, fill: "#2D3748"}),
+        {x: "x", y: "y", text: "label", textAnchor: "start", dy: 14, fontSize: 12, fill: "#171411"}),
       Plot.text([{x: 2, y: Pstar, label: `P* = ${Pstar.toFixed(1)}`}],
-        {x: "x", y: "y", text: "label", textAnchor: "start", dy: -6, fontSize: 11, fill: "#718096"}),
+        {x: "x", y: "y", text: "label", textAnchor: "start", dy: -6, fontSize: 11, fill: "#5A4F3F"}),
 
       // Top readouts
       Plot.text([{x: 2, y: Pmax * 0.97, label: `Teret kupaca: ${(buyerShare * 100).toFixed(0)} %`}],
         {x: "x", y: "y", text: "label", textAnchor: "start",
-         fontSize: 14, fill: "#2B6CB0", fontWeight: 700}),
+         fontSize: 14, fill: "#1E3F63", fontWeight: 700}),
       Plot.text([{x: 2, y: Pmax * 0.91, label: `Teret prodavača: ${(sellerShare * 100).toFixed(0)} %`}],
         {x: "x", y: "y", text: "label", textAnchor: "start",
-         fontSize: 14, fill: "#B7791F", fontWeight: 700})
+         fontSize: 14, fill: "#A85F28", fontWeight: 700})
     ]
   });
 }
@@ -422,60 +422,60 @@ t_dwl = dwl2_controls.t_dwl
     height: 500,
     marginLeft: 60,
     marginBottom: 55,
-    style: {fontSize: "12px", fontFamily: "Roboto, system-ui, sans-serif", color: "#4A5568"},
+    style: {fontSize: "12px", fontFamily: "Geist, system-ui, sans-serif", color: "#5A4F3F"},
     x: {label: "Količina (Q) →", domain: [0, Qmax], grid: false},
     y: {label: "↑ Cijena (P)",    domain: [0, Pmax], grid: true},
     marks: [
-      Plot.ruleY([0], {stroke: "#CBD5E0"}),
+      Plot.ruleY([0], {stroke: "#D8CCB8"}),
 
       // DWL triangle (red filled polygon)
       Plot.line([...dwlTriangle, dwlTriangle[0]],
-        {x: "Q", y: "P", stroke: "#C53030", strokeWidth: 2,
-         fill: "#FEB2B2", fillOpacity: 0.75, curve: "linear"}),
+        {x: "Q", y: "P", stroke: "#9C302B", strokeWidth: 2,
+         fill: "#E3B5B0", fillOpacity: 0.75, curve: "linear"}),
 
       // Curves
-      Plot.line(demand,    {x: "Q", y: "P", stroke: "#1f77b4", strokeWidth: 2.5}),
-      Plot.line(supply,    {x: "Q", y: "P", stroke: "#2ca02c", strokeWidth: 2}),
-      Plot.line(supplyTax, {x: "Q", y: "P", stroke: "#2ca02c", strokeWidth: 2, strokeDasharray: "6,4"}),
+      Plot.line(demand,    {x: "Q", y: "P", stroke: "#2D5A8E", strokeWidth: 2.5}),
+      Plot.line(supply,    {x: "Q", y: "P", stroke: "#2F7A5C", strokeWidth: 2}),
+      Plot.line(supplyTax, {x: "Q", y: "P", stroke: "#2F7A5C", strokeWidth: 2, strokeDasharray: "6,4"}),
 
       // Side annotations: t (vertical wedge) and ΔQ (horizontal bracket)
-      Plot.ruleX([Qt],    {y1: Pp, y2: Pc, stroke: "#C53030", strokeWidth: 3}),
+      Plot.ruleX([Qt],    {y1: Pp, y2: Pc, stroke: "#9C302B", strokeWidth: 3}),
       Plot.link(
         [{x1: Qt, x2: Qstar, y1: Pmax * 0.10, y2: Pmax * 0.10}],
         {x1: "x1", x2: "x2", y1: "y1", y2: "y2",
-         stroke: "#805AD5", strokeWidth: 2.5, markerStart: "dot", markerEnd: "dot"}),
+         stroke: "#5A4F3F", strokeWidth: 2.5, markerStart: "dot", markerEnd: "dot"}),
 
       // Equilibrium dots
-      Plot.dot([{Q: Qstar, P: Pstar}], {x: "Q", y: "P", r: 5, fill: "#4A5568", stroke: "white", strokeWidth: 2}),
+      Plot.dot([{Q: Qstar, P: Pstar}], {x: "Q", y: "P", r: 5, fill: "#5A4F3F", stroke: "white", strokeWidth: 2}),
       Plot.dot([{Q: Qt, P: Pc}, {Q: Qt, P: Pp}],
-        {x: "Q", y: "P", r: 4, fill: "#C53030", stroke: "white", strokeWidth: 1.5}),
+        {x: "Q", y: "P", r: 4, fill: "#9C302B", stroke: "white", strokeWidth: 1.5}),
 
       // Wedge label
       Plot.text([{x: Qt, y: (Pc + Pp) / 2, label: `t = ${t}`}],
         {x: "x", y: "y", text: "label", textAnchor: "start", dx: 8,
-         fontSize: 13, fill: "#C53030", fontWeight: 700}),
+         fontSize: 13, fill: "#9C302B", fontWeight: 700}),
       // ΔQ label
       Plot.text([{x: (Qt + Qstar) / 2, y: Pmax * 0.10, label: `ΔQ = ${dQ.toFixed(1)}`}],
         {x: "x", y: "y", text: "label", textAnchor: "middle", dy: -8,
-         fontSize: 12, fill: "#553C9A", fontWeight: 600}),
+         fontSize: 12, fill: "#43392B", fontWeight: 600}),
 
       // Curve labels
       Plot.text([{x: Qmax * 0.85, y: a - b * Qmax * 0.85, label: `D (|ε|=${eps_dwl.toFixed(2)})`}],
-        {x: "x", y: "y", text: "label", fill: "#1f77b4", fontSize: 12, fontWeight: 600, dy: -8}),
+        {x: "x", y: "y", text: "label", fill: "#2D5A8E", fontSize: 12, fontWeight: 600, dy: -8}),
       Plot.text([{x: Qmax * 0.85, y: c + d_slope * Qmax * 0.85, label: "S"}],
-        {x: "x", y: "y", text: "label", fill: "#2ca02c", fontSize: 13, fontWeight: 600, dy: -8}),
+        {x: "x", y: "y", text: "label", fill: "#2F7A5C", fontSize: 13, fontWeight: 600, dy: -8}),
       Plot.text([{x: Qmax * 0.85, y: c + t + d_slope * Qmax * 0.85, label: "S + t"}],
-        {x: "x", y: "y", text: "label", fill: "#2ca02c", fontSize: 12, fontWeight: 600, dy: -8}),
+        {x: "x", y: "y", text: "label", fill: "#2F7A5C", fontSize: 12, fontWeight: 600, dy: -8}),
 
       // Top readouts: formula decomposition + t² scaling
       Plot.text([{x: 2, y: Pmax * 0.97,
          label: `DWL = ½ · t · ΔQ = ½ · ${t} · ${dQ.toFixed(1)} = ${dwl.toFixed(1)}`}],
         {x: "x", y: "y", text: "label", textAnchor: "start",
-         fontSize: 14, fill: "#C53030", fontWeight: 700}),
+         fontSize: 14, fill: "#9C302B", fontWeight: 700}),
       Plot.text([{x: 2, y: Pmax * 0.91,
          label: `Pri t = ${tRef} mrtvi teret bio bi ${dwlRef.toFixed(1)}  →  ${ratio.toFixed(1)}× više`}],
         {x: "x", y: "y", text: "label", textAnchor: "start",
-         fontSize: 12, fill: "#4A5568", fontWeight: 500})
+         fontSize: 12, fill: "#5A4F3F", fontWeight: 500})
     ]
   });
 }
@@ -557,60 +557,60 @@ eps_L = wedge_controls.eps_L
     height: 500,
     marginLeft: 60,
     marginBottom: 55,
-    style: {fontSize: "12px", fontFamily: "Roboto, system-ui, sans-serif", color: "#4A5568"},
+    style: {fontSize: "12px", fontFamily: "Geist, system-ui, sans-serif", color: "#5A4F3F"},
     x: {label: "Rad (L) →", domain: [0, Lmax], grid: false},
     y: {label: "↑ Nadnica (W)", domain: [0, Wmax], grid: true},
     marks: [
-      Plot.ruleY([0], {stroke: "#CBD5E0"}),
+      Plot.ruleY([0], {stroke: "#D8CCB8"}),
 
       // Wedge rectangle (tax revenue collected from labour)
       Plot.line([...wedgeRect, wedgeRect[0]],
-        {x: "L", y: "W", stroke: "#805AD5", strokeWidth: 1,
-         fill: "#E9D8FD", fillOpacity: 0.6, curve: "linear"}),
+        {x: "L", y: "W", stroke: "#5A4F3F", strokeWidth: 1,
+         fill: "#D5C8B8", fillOpacity: 0.6, curve: "linear"}),
 
       // Curves
-      Plot.line(demand,    {x: "L", y: "W", stroke: "#1f77b4", strokeWidth: 2.5}),
-      Plot.line(supply,    {x: "L", y: "W", stroke: "#2ca02c", strokeWidth: 2}),
-      Plot.line(supplyTax, {x: "L", y: "W", stroke: "#2ca02c", strokeWidth: 2, strokeDasharray: "6,4"}),
+      Plot.line(demand,    {x: "L", y: "W", stroke: "#2D5A8E", strokeWidth: 2.5}),
+      Plot.line(supply,    {x: "L", y: "W", stroke: "#2F7A5C", strokeWidth: 2}),
+      Plot.line(supplyTax, {x: "L", y: "W", stroke: "#2F7A5C", strokeWidth: 2, strokeDasharray: "6,4"}),
 
       // Wage guides
-      Plot.ruleY([Wbruto], {stroke: "#A0AEC0", strokeDasharray: "2,2"}),
-      Plot.ruleY([Wneto],  {stroke: "#A0AEC0", strokeDasharray: "2,2"}),
+      Plot.ruleY([Wbruto], {stroke: "#9F907B", strokeDasharray: "2,2"}),
+      Plot.ruleY([Wneto],  {stroke: "#9F907B", strokeDasharray: "2,2"}),
 
       // Vertical wedge line
-      Plot.ruleX([Lt], {y1: Wneto, y2: Wbruto, stroke: "#C53030", strokeWidth: 3}),
+      Plot.ruleX([Lt], {y1: Wneto, y2: Wbruto, stroke: "#9C302B", strokeWidth: 3}),
 
       // Equilibrium dots
-      Plot.dot([{L: Lstar, W: Wstar}], {x: "L", y: "W", r: 5, fill: "#4A5568", stroke: "white", strokeWidth: 2}),
+      Plot.dot([{L: Lstar, W: Wstar}], {x: "L", y: "W", r: 5, fill: "#5A4F3F", stroke: "white", strokeWidth: 2}),
       Plot.dot([{L: Lt, W: Wbruto}, {L: Lt, W: Wneto}],
-        {x: "L", y: "W", r: 4, fill: "#C53030", stroke: "white", strokeWidth: 1.5}),
+        {x: "L", y: "W", r: 4, fill: "#9C302B", stroke: "white", strokeWidth: 1.5}),
 
       // Curve labels
       Plot.text([{x: Lmax * 0.85, y: a - b * Lmax * 0.85, label: "Potražnja za radom (D)"}],
-        {x: "x", y: "y", text: "label", fill: "#1f77b4", fontSize: 12, fontWeight: 600, dy: -8}),
+        {x: "x", y: "y", text: "label", fill: "#2D5A8E", fontSize: 12, fontWeight: 600, dy: -8}),
       Plot.text([{x: Lmax * 0.85, y: c + d_slope * Lmax * 0.85, label: `Ponuda rada (εL=${eps_L.toFixed(2)})`}],
-        {x: "x", y: "y", text: "label", fill: "#2ca02c", fontSize: 12, fontWeight: 600, dy: -8}),
+        {x: "x", y: "y", text: "label", fill: "#2F7A5C", fontSize: 12, fontWeight: 600, dy: -8}),
       Plot.text([{x: Lmax * 0.85, y: c + wedgeAbs + d_slope * Lmax * 0.85, label: "Ponuda + klin"}],
-        {x: "x", y: "y", text: "label", fill: "#2ca02c", fontSize: 12, fontWeight: 600, dy: -8}),
+        {x: "x", y: "y", text: "label", fill: "#2F7A5C", fontSize: 12, fontWeight: 600, dy: -8}),
 
       // Wage labels
       Plot.text([{x: 2, y: Wbruto, label: `Bruto nadnica = ${Wbruto.toFixed(1)}`}],
-        {x: "x", y: "y", text: "label", textAnchor: "start", dy: -8, fontSize: 12, fill: "#2D3748", fontWeight: 600}),
+        {x: "x", y: "y", text: "label", textAnchor: "start", dy: -8, fontSize: 12, fill: "#171411", fontWeight: 600}),
       Plot.text([{x: 2, y: Wneto, label: `Neto nadnica = ${Wneto.toFixed(1)}`}],
-        {x: "x", y: "y", text: "label", textAnchor: "start", dy: 14, fontSize: 12, fill: "#2D3748", fontWeight: 600}),
+        {x: "x", y: "y", text: "label", textAnchor: "start", dy: 14, fontSize: 12, fill: "#171411", fontWeight: 600}),
       Plot.text([{x: Lt, y: (Wbruto + Wneto) / 2, label: `Klin = ${wedgeAbs.toFixed(1)}`}],
         {x: "x", y: "y", text: "label", textAnchor: "start", dx: 8,
-         fontSize: 13, fill: "#C53030", fontWeight: 700}),
+         fontSize: 13, fill: "#9C302B", fontWeight: 700}),
 
       // Top readouts
       Plot.text([{x: 2, y: Wmax * 0.97,
          label: `Porezni prihod: ${revenue.toFixed(1)}   |   Mrtvi teret: ${dwl.toFixed(1)}`}],
         {x: "x", y: "y", text: "label", textAnchor: "start",
-         fontSize: 13, fill: "#553C9A", fontWeight: 700}),
+         fontSize: 13, fill: "#43392B", fontWeight: 700}),
       Plot.text([{x: 2, y: Wmax * 0.91,
          label: `Pad zaposlenosti: ΔL = ${dL.toFixed(1)}  (${(dL / Lstar * 100).toFixed(1)}%)`}],
         {x: "x", y: "y", text: "label", textAnchor: "start",
-         fontSize: 12, fill: "#4A5568", fontWeight: 500})
+         fontSize: 12, fill: "#5A4F3F", fontWeight: 500})
     ]
   });
 }
@@ -707,56 +707,56 @@ tax = dwl_controls.tax
     height: 500,
     marginLeft: 60,
     marginBottom: 55,
-    style: {fontSize: "12px", fontFamily: "Roboto, system-ui, sans-serif", color: "#4A5568"},
+    style: {fontSize: "12px", fontFamily: "Geist, system-ui, sans-serif", color: "#5A4F3F"},
     x: {label: "Količina (Q) →", domain: [0, Qmax], grid: false},
     y: {label: "↑ Cijena (P)",    domain: [0, Pmax], grid: true},
     marks: [
-      Plot.ruleY([0], {stroke: "#CBD5E0"}),
+      Plot.ruleY([0], {stroke: "#D8CCB8"}),
 
       // Revenue rectangle (light blue fill) — closed polygon via line with fill
       Plot.line([...revRect, revRect[0]],
-        {x: "Q", y: "P", stroke: "#3182CE", strokeWidth: 1,
-         fill: "#BEE3F8", fillOpacity: 0.5, curve: "linear"}),
+        {x: "Q", y: "P", stroke: "#2D5A8E", strokeWidth: 1,
+         fill: "#C5D6E6", fillOpacity: 0.5, curve: "linear"}),
 
       // Deadweight-loss triangle (red fill) — closed polygon via line with fill
       Plot.line([...dwlTriangle, dwlTriangle[0]],
-        {x: "Q", y: "P", stroke: "#C53030", strokeWidth: 2,
-         fill: "#FEB2B2", fillOpacity: 0.7, curve: "linear"}),
+        {x: "Q", y: "P", stroke: "#9C302B", strokeWidth: 2,
+         fill: "#E3B5B0", fillOpacity: 0.7, curve: "linear"}),
 
       // Curves
-      Plot.line(demand,    {x: "Q", y: "P", stroke: "#1f77b4", strokeWidth: 2.5}),
-      Plot.line(supply,    {x: "Q", y: "P", stroke: "#2ca02c", strokeWidth: 2}),
-      Plot.line(supplyTax, {x: "Q", y: "P", stroke: "#2ca02c", strokeWidth: 2, strokeDasharray: "6,4"}),
+      Plot.line(demand,    {x: "Q", y: "P", stroke: "#2D5A8E", strokeWidth: 2.5}),
+      Plot.line(supply,    {x: "Q", y: "P", stroke: "#2F7A5C", strokeWidth: 2}),
+      Plot.line(supplyTax, {x: "Q", y: "P", stroke: "#2F7A5C", strokeWidth: 2, strokeDasharray: "6,4"}),
 
       // Price guides
-      Plot.ruleY([Pc], {stroke: "#A0AEC0", strokeDasharray: "2,2"}),
-      Plot.ruleY([Pp], {stroke: "#A0AEC0", strokeDasharray: "2,2"}),
-      Plot.ruleX([Qt], {y1: Pp, y2: Pc, stroke: "#C53030", strokeWidth: 3}),
+      Plot.ruleY([Pc], {stroke: "#9F907B", strokeDasharray: "2,2"}),
+      Plot.ruleY([Pp], {stroke: "#9F907B", strokeDasharray: "2,2"}),
+      Plot.ruleX([Qt], {y1: Pp, y2: Pc, stroke: "#9C302B", strokeWidth: 3}),
 
       // Equilibrium dots
-      Plot.dot([{Q: Qstar, P: Pstar}], {x: "Q", y: "P", r: 5, fill: "#4A5568", stroke: "white", strokeWidth: 2}),
+      Plot.dot([{Q: Qstar, P: Pstar}], {x: "Q", y: "P", r: 5, fill: "#5A4F3F", stroke: "white", strokeWidth: 2}),
       Plot.dot([{Q: Qt, P: Pc}, {Q: Qt, P: Pp}],
-        {x: "Q", y: "P", r: 4, fill: "#C53030", stroke: "white", strokeWidth: 1.5}),
+        {x: "Q", y: "P", r: 4, fill: "#9C302B", stroke: "white", strokeWidth: 1.5}),
 
       // Labels
       Plot.text([{x: 2, y: Pc, label: `Pc = ${Pc.toFixed(1)}`}],
-        {x: "x", y: "y", text: "label", textAnchor: "start", dy: -8, fontSize: 12, fill: "#2D3748"}),
+        {x: "x", y: "y", text: "label", textAnchor: "start", dy: -8, fontSize: 12, fill: "#171411"}),
       Plot.text([{x: 2, y: Pp, label: `Pp = ${Pp.toFixed(1)}`}],
-        {x: "x", y: "y", text: "label", textAnchor: "start", dy: -8, fontSize: 12, fill: "#2D3748"}),
+        {x: "x", y: "y", text: "label", textAnchor: "start", dy: -8, fontSize: 12, fill: "#171411"}),
       Plot.text([{x: Qmax * 0.85, y: a - b * Qmax * 0.85 + 4, label: `D (|ε|=${eps.toFixed(2)})`}],
-        {x: "x", y: "y", text: "label", fill: "#1f77b4", fontSize: 12, fontWeight: 600}),
+        {x: "x", y: "y", text: "label", fill: "#2D5A8E", fontSize: 12, fontWeight: 600}),
       Plot.text([{x: Qmax * 0.85, y: c + d * Qmax * 0.85, label: "S"}],
-        {x: "x", y: "y", text: "label", fill: "#2ca02c", fontSize: 13, fontWeight: 600, dy: -8}),
+        {x: "x", y: "y", text: "label", fill: "#2F7A5C", fontSize: 13, fontWeight: 600, dy: -8}),
       Plot.text([{x: Qmax * 0.85, y: c + t + d * Qmax * 0.85, label: "S + t"}],
-        {x: "x", y: "y", text: "label", fill: "#2ca02c", fontSize: 12, fontWeight: 600, dy: -8}),
+        {x: "x", y: "y", text: "label", fill: "#2F7A5C", fontSize: 12, fontWeight: 600, dy: -8}),
 
       // Top readouts
       Plot.text([{x: 2, y: Pmax * 0.97, label: `Mrtvi teret (DWL): ${dwl.toFixed(1)}`}],
         {x: "x", y: "y", text: "label", textAnchor: "start",
-         fontSize: 14, fill: "#C53030", fontWeight: 700}),
+         fontSize: 14, fill: "#9C302B", fontWeight: 700}),
       Plot.text([{x: 2, y: Pmax * 0.91, label: `Porezni prihod: ${revenue.toFixed(1)}`}],
         {x: "x", y: "y", text: "label", textAnchor: "start",
-         fontSize: 13, fill: "#2B6CB0", fontWeight: 600})
+         fontSize: 13, fill: "#1E3F63", fontWeight: 600})
     ]
   });
 }
@@ -907,70 +907,70 @@ sig_l = labor_controls.sig_l
     height: 520,
     marginLeft: 65,
     marginBottom: 55,
-    style: {fontSize: "12px", fontFamily: "Roboto, system-ui, sans-serif", color: "#4A5568"},
+    style: {fontSize: "12px", fontFamily: "Geist, system-ui, sans-serif", color: "#5A4F3F"},
     x: {label: "Dokolica ℓ →", domain: [0, T], grid: false},
     y: {label: "↑ Potrošnja C", domain: [0, Cmax], grid: true},
     marks: [
-      Plot.ruleY([0], {stroke: "#CBD5E0"}),
+      Plot.ruleY([0], {stroke: "#D8CCB8"}),
 
       // Budget lines
-      Plot.line(budgetNoTax, {x: "ell", y: "C", stroke: "#2ca02c", strokeWidth: 2.5}),
-      Plot.line(budgetTax,   {x: "ell", y: "C", stroke: "#2ca02c", strokeWidth: 2, strokeDasharray: "6,4"}),
+      Plot.line(budgetNoTax, {x: "ell", y: "C", stroke: "#2F7A5C", strokeWidth: 2.5}),
+      Plot.line(budgetTax,   {x: "ell", y: "C", stroke: "#2F7A5C", strokeWidth: 2, strokeDasharray: "6,4"}),
 
       // Indifference curves
-      Plot.line(indiffA, {x: "ell", y: "C", stroke: "#1f77b4", strokeWidth: 2}),
-      Plot.line(indiffC, {x: "ell", y: "C", stroke: "#C53030", strokeWidth: 2, strokeDasharray: "4,3"}),
+      Plot.line(indiffA, {x: "ell", y: "C", stroke: "#2D5A8E", strokeWidth: 2}),
+      Plot.line(indiffC, {x: "ell", y: "C", stroke: "#9C302B", strokeWidth: 2, strokeDasharray: "4,3"}),
 
       // Substitution-effect arrow (A → B) on the x-axis baseline
       Plot.link(
         [{x1: A.ell, y1: Cmax * 0.06, x2: B.ell, y2: Cmax * 0.06}],
         {x1: "x1", y1: "y1", x2: "x2", y2: "y2",
-         stroke: "#805AD5", strokeWidth: 2.5, markerEnd: "arrow"}),
+         stroke: "#5A4F3F", strokeWidth: 2.5, markerEnd: "arrow"}),
       // Income-effect arrow (B → C) on a separate baseline
       Plot.link(
         [{x1: B.ell, y1: Cmax * 0.02, x2: C_pt.ell, y2: Cmax * 0.02}],
         {x1: "x1", y1: "y1", x2: "x2", y2: "y2",
-         stroke: "#D69E2E", strokeWidth: 2.5, markerEnd: "arrow"}),
+         stroke: "#C57832", strokeWidth: 2.5, markerEnd: "arrow"}),
 
       // Three optima
-      Plot.dot([A], {x: "ell", y: "C", r: 6, fill: "#1f77b4", stroke: "white", strokeWidth: 2}),
-      Plot.dot([B], {x: "ell", y: "C", r: 6, fill: "#805AD5", stroke: "white", strokeWidth: 2}),
-      Plot.dot([C_pt], {x: "ell", y: "C", r: 6, fill: "#C53030", stroke: "white", strokeWidth: 2}),
+      Plot.dot([A], {x: "ell", y: "C", r: 6, fill: "#2D5A8E", stroke: "white", strokeWidth: 2}),
+      Plot.dot([B], {x: "ell", y: "C", r: 6, fill: "#5A4F3F", stroke: "white", strokeWidth: 2}),
+      Plot.dot([C_pt], {x: "ell", y: "C", r: 6, fill: "#9C302B", stroke: "white", strokeWidth: 2}),
 
       // Drop-lines from optima to x-axis (faded)
-      Plot.ruleX([A.ell],    {y1: 0, y2: A.C,    stroke: "#BEE3F8", strokeDasharray: "2,2"}),
-      Plot.ruleX([C_pt.ell], {y1: 0, y2: C_pt.C, stroke: "#FED7D7", strokeDasharray: "2,2"}),
+      Plot.ruleX([A.ell],    {y1: 0, y2: A.C,    stroke: "#C5D6E6", strokeDasharray: "2,2"}),
+      Plot.ruleX([C_pt.ell], {y1: 0, y2: C_pt.C, stroke: "#EBC9C5", strokeDasharray: "2,2"}),
 
       // Labels on the optima
       Plot.text([{ell: A.ell, C: A.C, label: "A (bez poreza)"}],
         {x: "ell", y: "C", text: "label", textAnchor: "start", dx: 8, dy: -10,
-         fontSize: 12, fill: "#1f77b4", fontWeight: 600}),
+         fontSize: 12, fill: "#2D5A8E", fontWeight: 600}),
       Plot.text([{ell: B.ell, C: B.C, label: "B (kompenzirani)"}],
         {x: "ell", y: "C", text: "label", textAnchor: "start", dx: 8, dy: -10,
-         fontSize: 12, fill: "#805AD5", fontWeight: 600}),
+         fontSize: 12, fill: "#5A4F3F", fontWeight: 600}),
       Plot.text([{ell: C_pt.ell, C: C_pt.C, label: "C (s porezom)"}],
         {x: "ell", y: "C", text: "label", textAnchor: "start", dx: 8, dy: 14,
-         fontSize: 12, fill: "#C53030", fontWeight: 600}),
+         fontSize: 12, fill: "#9C302B", fontWeight: 600}),
 
       // Effect labels next to the arrows
       Plot.text([{x: (A.ell + B.ell) / 2, y: Cmax * 0.06,
          label: `Supstitucijski (Δℓ = ${subEffect >= 0 ? "+" : ""}${subEffect.toFixed(2)})`}],
         {x: "x", y: "y", text: "label", textAnchor: "middle", dy: -8,
-         fontSize: 11, fill: "#553C9A", fontWeight: 600}),
+         fontSize: 11, fill: "#43392B", fontWeight: 600}),
       Plot.text([{x: (B.ell + C_pt.ell) / 2, y: Cmax * 0.02,
          label: `Dohodovni (Δℓ = ${incEffect >= 0 ? "+" : ""}${incEffect.toFixed(2)})`}],
         {x: "x", y: "y", text: "label", textAnchor: "middle", dy: 14,
-         fontSize: 11, fill: "#B7791F", fontWeight: 600}),
+         fontSize: 11, fill: "#A85F28", fontWeight: 600}),
 
       // Top readouts
       Plot.text([{x: 0.5, y: Cmax * 0.97,
          label: `Sati rada: ${hoursA.toFixed(1)} → ${hoursC.toFixed(1)}   (Δ = ${dHours >= 0 ? "+" : ""}${dHours.toFixed(2)})`}],
         {x: "x", y: "y", text: "label", textAnchor: "start",
-         fontSize: 13, fill: "#2D3748", fontWeight: 700}),
+         fontSize: 13, fill: "#171411", fontWeight: 700}),
       Plot.text([{x: 0.5, y: Cmax * 0.91,
          label: `σ = ${sigma.toFixed(1)}   |   neto nadnica: ${w0.toFixed(1)} → ${w1.toFixed(2)}`}],
         {x: "x", y: "y", text: "label", textAnchor: "start",
-         fontSize: 12, fill: "#4A5568", fontWeight: 500})
+         fontSize: 12, fill: "#5A4F3F", fontWeight: 500})
     ]
   });
 }
@@ -1089,56 +1089,56 @@ sigma = inter_controls.sigma
     height: 520,
     marginLeft: 65,
     marginBottom: 55,
-    style: {fontSize: "12px", fontFamily: "Roboto, system-ui, sans-serif", color: "#4A5568"},
+    style: {fontSize: "12px", fontFamily: "Geist, system-ui, sans-serif", color: "#5A4F3F"},
     x: {label: "Sadašnja potrošnja C₁ →", domain: [0, Cmax], grid: false},
     y: {label: "↑ Buduća potrošnja C₂",   domain: [0, Cmax], grid: true},
     marks: [
-      Plot.ruleY([0], {stroke: "#CBD5E0"}),
+      Plot.ruleY([0], {stroke: "#D8CCB8"}),
 
       // Budget line — no tax
-      Plot.line(budgetNoTax, {x: "C1", y: "C2", stroke: "#2ca02c", strokeWidth: 2.5}),
+      Plot.line(budgetNoTax, {x: "C1", y: "C2", stroke: "#2F7A5C", strokeWidth: 2.5}),
       // Budget line — with tax
-      Plot.line(budgetTax,   {x: "C1", y: "C2", stroke: "#2ca02c", strokeWidth: 2, strokeDasharray: "6,4"}),
+      Plot.line(budgetTax,   {x: "C1", y: "C2", stroke: "#2F7A5C", strokeWidth: 2, strokeDasharray: "6,4"}),
 
       // Indifference curves
-      Plot.line(indiffBefore, {x: "C1", y: "C2", stroke: "#1f77b4", strokeWidth: 2}),
-      Plot.line(indiffAfter,  {x: "C1", y: "C2", stroke: "#C53030", strokeWidth: 2, strokeDasharray: "4,3"}),
+      Plot.line(indiffBefore, {x: "C1", y: "C2", stroke: "#2D5A8E", strokeWidth: 2}),
+      Plot.line(indiffAfter,  {x: "C1", y: "C2", stroke: "#9C302B", strokeWidth: 2, strokeDasharray: "4,3"}),
 
       // Endowment point
-      Plot.dot([{C1: Y, C2: 0}], {x: "C1", y: "C2", r: 4, fill: "#4A5568", stroke: "white", strokeWidth: 1.5}),
+      Plot.dot([{C1: Y, C2: 0}], {x: "C1", y: "C2", r: 4, fill: "#5A4F3F", stroke: "white", strokeWidth: 1.5}),
 
       // Optima
-      Plot.dot([before], {x: "C1", y: "C2", r: 6, fill: "#1f77b4", stroke: "white", strokeWidth: 2}),
-      Plot.dot([after],  {x: "C1", y: "C2", r: 6, fill: "#C53030", stroke: "white", strokeWidth: 2}),
+      Plot.dot([before], {x: "C1", y: "C2", r: 6, fill: "#2D5A8E", stroke: "white", strokeWidth: 2}),
+      Plot.dot([after],  {x: "C1", y: "C2", r: 6, fill: "#9C302B", stroke: "white", strokeWidth: 2}),
 
       // Drop-lines for both optima
-      Plot.ruleX([before.C1], {y1: 0, y2: before.C2, stroke: "#BEE3F8", strokeDasharray: "2,2"}),
-      Plot.ruleY([before.C2], {x1: 0, x2: before.C1, stroke: "#BEE3F8", strokeDasharray: "2,2"}),
-      Plot.ruleX([after.C1],  {y1: 0, y2: after.C2,  stroke: "#FED7D7", strokeDasharray: "2,2"}),
-      Plot.ruleY([after.C2],  {x1: 0, x2: after.C1,  stroke: "#FED7D7", strokeDasharray: "2,2"}),
+      Plot.ruleX([before.C1], {y1: 0, y2: before.C2, stroke: "#C5D6E6", strokeDasharray: "2,2"}),
+      Plot.ruleY([before.C2], {x1: 0, x2: before.C1, stroke: "#C5D6E6", strokeDasharray: "2,2"}),
+      Plot.ruleX([after.C1],  {y1: 0, y2: after.C2,  stroke: "#EBC9C5", strokeDasharray: "2,2"}),
+      Plot.ruleY([after.C2],  {x1: 0, x2: after.C1,  stroke: "#EBC9C5", strokeDasharray: "2,2"}),
 
       // Labels on optima
       Plot.text([{C1: before.C1, C2: before.C2, label: "Bez poreza"}],
         {x: "C1", y: "C2", text: "label", textAnchor: "start", dx: 8, dy: -10,
-         fontSize: 12, fill: "#1f77b4", fontWeight: 600}),
+         fontSize: 12, fill: "#2D5A8E", fontWeight: 600}),
       Plot.text([{C1: after.C1, C2: after.C2, label: "S porezom"}],
         {x: "C1", y: "C2", text: "label", textAnchor: "start", dx: 8, dy: 14,
-         fontSize: 12, fill: "#C53030", fontWeight: 600}),
+         fontSize: 12, fill: "#9C302B", fontWeight: 600}),
 
       // Endowment label
       Plot.text([{C1: Y, C2: 0, label: `Y = ${Y}`}],
         {x: "C1", y: "C2", text: "label", textAnchor: "start", dx: 6, dy: -8,
-         fontSize: 11, fill: "#4A5568"}),
+         fontSize: 11, fill: "#5A4F3F"}),
 
       // Top readouts
       Plot.text([{x: 2, y: Cmax * 0.97,
          label: `Štednja s = Y − C₁:  ${(Y - before.C1).toFixed(1)}  →  ${(Y - after.C1).toFixed(1)}  (Δ = ${(dC1 < 0 ? "+" : "−")}${Math.abs(dC1).toFixed(1)})`}],
         {x: "x", y: "y", text: "label", textAnchor: "start",
-         fontSize: 13, fill: "#553C9A", fontWeight: 700}),
+         fontSize: 13, fill: "#43392B", fontWeight: 700}),
       Plot.text([{x: 2, y: Cmax * 0.91,
          label: `Neto prinos: ${(r0 * 100).toFixed(1)} %  →  ${(r1 * 100).toFixed(2)} %    |    σ = ${sigma.toFixed(1)}`}],
         {x: "x", y: "y", text: "label", textAnchor: "start",
-         fontSize: 12, fill: "#4A5568", fontWeight: 500})
+         fontSize: 12, fill: "#5A4F3F", fontWeight: 500})
     ]
   });
 }
@@ -1201,53 +1201,53 @@ t_now = laffer_controls.t_now
     height: 500,
     marginLeft: 65,
     marginBottom: 55,
-    style: {fontSize: "12px", fontFamily: "Roboto, system-ui, sans-serif", color: "#4A5568"},
+    style: {fontSize: "12px", fontFamily: "Geist, system-ui, sans-serif", color: "#5A4F3F"},
     x: {label: "Porezna stopa t (%) →", domain: [0, 100], grid: false},
     y: {label: "↑ Porezni prihodi R",   domain: [0, Rceil], grid: true},
     marks: [
-      Plot.ruleY([0], {stroke: "#CBD5E0"}),
+      Plot.ruleY([0], {stroke: "#D8CCB8"}),
 
       // Laffer curve
-      Plot.line(curve, {x: "t", y: "R", stroke: "#1f77b4", strokeWidth: 2.5}),
+      Plot.line(curve, {x: "t", y: "R", stroke: "#2D5A8E", strokeWidth: 2.5}),
 
       // Area under curve, faded
-      Plot.areaY(curve, {x: "t", y: "R", fill: "#BEE3F8", fillOpacity: 0.25}),
+      Plot.areaY(curve, {x: "t", y: "R", fill: "#C5D6E6", fillOpacity: 0.25}),
 
       // Revenue-maximising rate: vertical dashed line + dot
-      Plot.ruleX([tStar * 100], {y1: 0, y2: Rmax, stroke: "#4A5568", strokeDasharray: "4,3"}),
+      Plot.ruleX([tStar * 100], {y1: 0, y2: Rmax, stroke: "#5A4F3F", strokeDasharray: "4,3"}),
       Plot.dot([{t: tStar * 100, R: Rmax}],
-        {x: "t", y: "R", r: 6, fill: "#2D3748", stroke: "white", strokeWidth: 2}),
+        {x: "t", y: "R", r: 6, fill: "#171411", stroke: "white", strokeWidth: 2}),
 
       // Reader's current point
       Plot.ruleX([tCur * 100], {y1: 0, y2: Rcur,
-        stroke: onRising ? "#2ca02c" : "#C53030", strokeDasharray: "2,2"}),
+        stroke: onRising ? "#2F7A5C" : "#9C302B", strokeDasharray: "2,2"}),
       Plot.ruleY([Rcur], {x1: 0, x2: tCur * 100,
-        stroke: onRising ? "#2ca02c" : "#C53030", strokeDasharray: "2,2"}),
+        stroke: onRising ? "#2F7A5C" : "#9C302B", strokeDasharray: "2,2"}),
       Plot.dot([{t: tCur * 100, R: Rcur}],
         {x: "t", y: "R", r: 7,
-         fill: onRising ? "#2ca02c" : "#C53030", stroke: "white", strokeWidth: 2}),
+         fill: onRising ? "#2F7A5C" : "#9C302B", stroke: "white", strokeWidth: 2}),
 
       // Labels
       Plot.text([{t: tStar * 100, R: Rmax, label: `Vrh prihoda  t* = ${(tStar * 100).toFixed(0)} %`}],
         {x: "t", y: "R", text: "label", textAnchor: "middle", dy: -14,
-         fontSize: 13, fill: "#2D3748", fontWeight: 700}),
+         fontSize: 13, fill: "#171411", fontWeight: 700}),
 
       Plot.text([{t: tCur * 100, R: Rcur,
          label: onRising ? "Rastući dio" : "Padajući dio (previsoka stopa)"}],
         {x: "t", y: "R", text: "label",
          textAnchor: tCur * 100 > 60 ? "end" : "start",
          dx: tCur * 100 > 60 ? -10 : 10, dy: 16,
-         fontSize: 12, fill: onRising ? "#2ca02c" : "#C53030", fontWeight: 700}),
+         fontSize: 12, fill: onRising ? "#2F7A5C" : "#9C302B", fontWeight: 700}),
 
       // Top readouts
       Plot.text([{x: 2, y: Rceil * 0.97,
          label: `Trenutna stopa: ${t_now} %   |   Prihod: ${Rcur.toFixed(1)}   |   Vrh: ${Rmax.toFixed(1)} pri ${(tStar * 100).toFixed(0)} %`}],
         {x: "x", y: "y", text: "label", textAnchor: "start",
-         fontSize: 13, fill: "#2D3748", fontWeight: 700}),
+         fontSize: 13, fill: "#171411", fontWeight: 700}),
       Plot.text([{x: 2, y: Rceil * 0.91,
          label: `Iskorištenost: ${(Rcur / Rmax * 100).toFixed(0)} % od maksimalnog prihoda`}],
         {x: "x", y: "y", text: "label", textAnchor: "start",
-         fontSize: 12, fill: "#4A5568", fontWeight: 500})
+         fontSize: 12, fill: "#5A4F3F", fontWeight: 500})
     ]
   });
 }

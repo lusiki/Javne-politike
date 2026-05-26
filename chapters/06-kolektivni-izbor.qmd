@@ -1,0 +1,101 @@
+---
+title: "Kolektivni izbor"
+---
+
+Kada odluke donosi pojedinac, ekonomska je analiza relativno jednostavna: pretpostavljamo da osoba ima preferencije i bira opciju koja joj donosi najveću korist. No javne politike rijetko su rezultat odluke jednog pojedinca. One nastaju kroz **kolektivni izbor** — postupak kojim skupina ljudi s različitim preferencijama dolazi do zajedničke odluke. Pitanje koje se tada postavlja čini se jednostavnim, ali je iznenađujuće složeno: kako od mnoštva pojedinačnih preferencija doći do jedne društvene odluke koja je dosljedna, pravedna i smislena?
+
+U svakodnevnom političkom govoru neprestano koristimo izraze poput „Hrvatska je odlučila", „Europska unija smatra" ili „volja naroda". Teorija javnog izbora poziva nas na intelektualnu iskrenost: skupine nemaju um, nemaju preferencije i nemaju volju — preferencije imaju samo pojedinci. Proces pretvaranja heterogenih pojedinačnih rang-lista u jedinstvenu „društvenu rang-listu" nije tehnička formalnost, nego prijelaz pun logičkih paradoksa, proceduralnih zamki i neočekivanih ishoda [@arrow1951; @sen1970; @buchanan1962].
+
+Na privatnom tržištu problem različitih preferencija rješava se elegantno, kroz sustav cijena i paralelnu potrošnju: ako vi želite kavu, a ja čaj, oboje možemo biti zadovoljeni. U javnoj sferi većina je dobara i politika **nedjeljiva**. Ne možemo istodobno imati progresivan i proporcionalan porezni sustav, niti istim proračunskim novcem graditi autocestu prema Splitu i prema Varaždinu. Zbog toga glasovanje postaje mehanizam prisilne koordinacije, a pravila po kojima se glasovi agregiraju postaju odlučujuća za konačni ishod. Ista skupina ljudi, s istim preferencijama, može doći do različitih odluka ovisno o tome **kako** glasuje.
+
+## Condorcetov paradoks
+
+Najjednostavniji prikaz problema kolektivnog izbora jest **Condorcetov paradoks** [@condorcet1785]. Zamislimo tri birača i tri opcije, A, B i C. Prvi birač preferira A ispred B ispred C. Drugi preferira B ispred C ispred A. Treći preferira C ispred A ispred B. Svaki pojedinačni birač ima jasne, dosljedne (tranzitivne) preferencije.
+
+Ako te opcije uspoređujemo u parovima većinskim glasovanjem, dolazimo do neobičnog ishoda. U izboru između A i B pobjeđuje A (dva od tri birača preferiraju A). U izboru između B i C pobjeđuje B. No u izboru između A i C pobjeđuje C. Dobivamo ciklus: A pobjeđuje B, B pobjeđuje C, ali C pobjeđuje A. Kolektivna „preferencija" tako postaje **netranzitivna**, iako su sve pojedinačne preferencije bile dosljedne.
+
+Posljedica je važna: kada postoji ciklus, ishod ovisi o redoslijedu glasovanja. Onaj tko kontrolira dnevni red — koje se opcije i kojim redoslijedom stavljaju na glasovanje — može utjecati na konačni rezultat. To je prvi nagovještaj da pravila igre nisu nevažna pozadina, nego oblikuju same ishode.
+
+::: {.callout-praksa}
+Ciklus nije samo udžbenički kuriozitet. Zamislimo raspravu o energetskoj politici s tri skupine i tri opcije (nuklearna energija, plin, obnovljivi izvori):
+
+- **Industrija:** nuklearna > plin > obnovljivi
+- **Ekolozi i turizam:** obnovljivi > nuklearna > plin
+- **Politički centar:** plin > obnovljivi > nuklearna
+
+U parnom glasovanju nastaje ciklus bez stabilnog pobjednika, pa ishod uvelike ovisi o tome tko određuje redoslijed glasovanja (tzv. *agenda-setter* — predsjednik odbora, Vlada ili predsjedavajući Vijeća EU). U Hrvatskom saboru ta moć često leži u rukama Vlade pri pripremi proračuna, a slične dinamike vide se u usklađivanju paketa „Fit for 55" između energetskih interesa država članica EU.
+:::
+
+Različiti sustavi glasovanja vode do različitih ishoda, što dodatno naglašava da nijedan mehanizam nije neutralan [@gibbard1973; @satterthwaite1975]. @tbl-sustavi-glasovanja sažima ključne prednosti i nedostatke najvažnijih sustava.
+
+| Sustav glasovanja | Jednostavnost | Otpornost na strateško glasovanje | Poštivanje Condorcetova pobjednika | Primjena u praksi | Glavni nedostatak |
+|---|---|---|---|---|---|
+| Prosta većina | visoka | niska | nisko | 1. krug predsjedničkih izbora (RH) | rasipanje glasova, „manje zlo" |
+| Dvokružni većinski | srednja | srednja | srednje | predsjednički izbori (RH) | visoki troškovi kampanje |
+| Proporcionalni (d'Hondt) | srednja | srednja | nisko | izbori za Sabor i Europski parlament | fragmentacija, intenzivan *logrolling* |
+| Rangirano glasovanje (RCV) | niska | visoka | srednje | rijetko u EU | složeno brojanje |
+
+: Usporedba sustava glasovanja. Izrada autora. {#tbl-sustavi-glasovanja}
+
+## Arrowljev teorem nemogućnosti
+
+Dok Condorcetov paradoks pokazuje da većinsko glasovanje *može* proizvesti cikličke i nestabilne ishode, Kenneth Arrow postavio je pitanje na fundamentalnoj razini: postoji li uopće *ikakav* sustav agregacije koji bi pouzdano i razumno pretvarao pojedinačne preferencije u društvenu odluku? Njegov odgovor — **Arrowljev teorem nemogućnosti** [@arrow1951] — jedan je od najsnažnijih i najpesimističnijih rezultata u ekonomskoj znanosti 20. stoljeća.
+
+Arrow je tražio pravilo koje istodobno zadovoljava nekoliko razumnih i naizgled minimalnih uvjeta:
+
+- **Neograničena domena** — pravilo mora raditi za sve moguće kombinacije pojedinačnih preferencija.
+- **Kolektivna racionalnost** — društveni poredak mora biti dosljedan (potpun i tranzitivan).
+- **Pareto-efikasnost** — ako svi preferiraju A ispred B, društvo mora preferirati A ispred B.
+- **Neovisnost o nevažnim alternativama** — rangiranje između A i B ne smije se mijenjati uvođenjem ili uklanjanjem treće alternative C.
+- **Nediktatorstvo** — nijedan pojedinac ne smije moći nametnuti svoju volju cijeloj skupini bez obzira na preferencije ostalih.
+
+Arrow je dokazao da **ne postoji** pravilo koje istodobno zadovoljava sve te uvjete kada postoje barem tri alternative. Drugim riječima, ne postoji savršen demokratski mehanizam agregacije preferencija; svaki realan sustav glasovanja mora žrtvovati barem jedno od poželjnih svojstava. To ne znači da je demokracija besmislena — znači da svako pravilo odlučivanja ima ugrađena ograničenja i moguće nedosljednosti, te da izbor pravila uvijek uključuje kompromise. @tbl-arrow-uvjeti pokazuje što svaki uvjet zahtijeva i što se događa kada se prekrši.
+
+| Uvjet | Što zahtijeva | Posljedica kršenja u stvarnom svijetu |
+|---|---|---|
+| Neograničena domena | radi za sve moguće preferencije | blokade u duboko polariziranim društvima |
+| Kolektivna racionalnost | društveni poredak je dosljedan | cikličke većine i nestabilni ishodi |
+| Pareto-efikasnost | poštuje jednoglasne preferencije | loši kompromisi koje nitko zapravo ne želi |
+| Neovisnost o nevažnim alternativama | rang A i B ne ovisi o C | „spoiler" efekt trećih opcija |
+| Nediktatorstvo | nema diktatora | potpuna dosljednost zahtijeva koncentraciju moći |
+
+: Arrowljevi uvjeti i njihove implikacije. Izrada autora prema @arrow1951, @mueller1989 i @sen1970. {#tbl-arrow-uvjeti}
+
+::: {.callout-praksa}
+Posljedice teorema vide se u izbornim procesima. Pojava treće ili četvrte relevantne opcije (primjerice Mosta ili Možemo!) može osjetno promijeniti odnos snaga između dvije velike stranke, iako birači nisu bitno promijenili mišljenje o tim dvjema strankama — to je upravo kršenje uvjeta neovisnosti o nevažnim alternativama. Na razini EU slična se dinamika vidi pri glasovanju kvalificiranom većinom u Vijeću, gdje stavovi pojedinih zemalja mogu blokirati ili izmijeniti pakete poput fiskalnih pravila ili „Fit for 55".
+:::
+
+## Jednovršne preferencije i medijanski glasač
+
+Cikluse i nedosljednosti ne moramo uvijek očekivati. Ako preferencije birača imaju određenu strukturu, kolektivni izbor može biti stabilan. Ključan slučaj su **jednovršne preferencije** (*single-peaked preferences*): svaki birač ima jednu najdražu točku na nekoj dimenziji (primjerice na osi „manje – više javne potrošnje"), a što je opcija dalje od te točke, to mu je manje privlačna.
+
+Kada su preferencije jednovršne i odlučuje se o jednoj dimenziji, većinsko glasovanje proizvodi stabilan ishod: pobjeđuje opcija koju preferira **medijanski glasač** — onaj čija je idealna točka u sredini rasporeda. To je sadržaj teorema o medijanskom glasaču [@black1948], koji ćemo detaljnije primijeniti u poglavlju o strankama i izborima.
+
+Medijanski glasač važan je jer pokazuje da kolektivni izbor nije nužno kaotičan. No njegovi su uvjeti zahtjevni: stvarne političke odluke rijetko su jednodimenzionalne. Kada se istodobno odlučuje o više dimenzija (porezi, zdravstvo, vanjska politika, okoliš), jednovršnost se gubi, ciklusi se vraćaju, a moć dnevnoga reda ponovno raste [@mckelvey1976].
+
+## Kontrola dnevnog reda i politika kompromisa
+
+Čak i kada su kolektivne preferencije cikličke, odluke se u praksi moraju donijeti — proračun se usvaja, zakoni donose, politike provode. Ključno pitanje postaje: tko i kako prekida cikluse i usmjerava konačni ishod? Odgovor leži u **moći kontrole dnevnog reda** (*agenda-setting power*) — sposobnosti da se odredi o čemu će se glasovati, kojim redoslijedom i u kojem obliku [@mckelvey1976; @romer1978].
+
+Osoba ili tijelo koje oblikuje proceduru — predsjednik saborskog odbora, Vlada ili predsjedavajući Vijeća EU — često ima veću stvarnu moć od same većine glasova. Pažljivim biranjem redoslijeda glasovanja moguće je usmjeriti ishod prema željenoj alternativi i unutar istog skupa preferencija. Kada se ciklusi moraju prekinuti, dolazi do kompromisa — ali kompromisi u politici rijetko predstavljaju optimalno srednje rješenje. Često nastaju kroz **trgovanje glasovima** (*logrolling*), pri čemu zastupnici uzajamno podržavaju projekte kako bi osigurali podršku za vlastite. Rezultat nije prosjek, nego zbroj interesa — više projekata i veća javna potrošnja nego što bi većina birača samostalno odobrila [@buchanan1962]. Mehaniku trgovanja glasovima i njezin neto društveni gubitak detaljnije razrađujemo u poglavlju o javnom izboru; ovdje nas zanima kako ono oblikuje *ishode* kolektivnog odlučivanja.
+
+::: {.callout-praksa}
+Pri usvajanju državnog proračuna u Hrvatskoj zastupnici iz različitih regija često uzajamno podržavaju infrastrukturne projekte (autoceste, luke, bolnice), iako bi svaki projekt zasebno teško prošao — rezultat su brojni „politički" projekti niske ekonomske opravdanosti. Na razini EU pregovori o Višegodišnjem financijskom okviru i fondu NextGenerationEU uključuju pakete u kojima se poljoprivredne subvencije trguju za kohezijske ili zelene fondove, pa je konačni paket veći i skuplji nego što bi ga ijedna zemlja samostalno podržala. Klasičan svjetski primjer iste logike jest američki *pork-barrel* — kongresnici podržavaju projekte kolega u zamjenu za podršku vlastitima.
+:::
+
+Takvi kompromisi često vode do neintuitivnih i neučinkovitih ishoda. @tbl-kompromisi sažima njihove tipične oblike i posljedice za javne financije.
+
+| Tip kompromisa | Karakteristika | Posljedica za javne financije |
+|---|---|---|
+| *Logrolling* (trgovanje) | zbroj projekata umjesto prosjeka | prekomjerna potrošnja, *pork-barrel* efekti |
+| Polovičan kompromis | ni A ni B, nego slaba verzija C | „bačeni novac" — preskupo da bi bilo beznačajno |
+| Paketiranje | veliki *omnibus* zakoni | teško je procijeniti stvarne učinke |
+| Strateška neodređenost | detalji se ostavljaju za kasnije | jačanje birokratske moći i pravne nesigurnosti |
+
+: Problemi političkih kompromisa. Izrada autora prema @buchanan1962 i @mueller1989. {#tbl-kompromisi}
+
+## Zašto je to važno za javne politike
+
+Teorija kolektivnog izbora nije samo apstraktna logička vježba. Ona ima izravne posljedice za razumijevanje javnih politika. Prvo, pokazuje da „volja naroda" nije uvijek jednoznačno definiran pojam — ona ovisi o pravilima kroz koja se izražava. Drugo, objašnjava zašto je **kontrola dnevnog reda** izvor moći: tko određuje o čemu se i kojim redoslijedom glasuje, oblikuje ishod. Treće, opravdava postojanje **ustavnih i proceduralnih pravila** koja ograničavaju proizvoljnost i daju odlukama stabilnost i predvidljivost — primjerice pravila pojačane većine (*supermajority*) za poreze i dugoročne fiskalne obveze [@buchanan1962; @mueller1989].
+
+Ako „društveni izbor" nije rezultat racionalnog traženja općeg blagostanja, nego ishod nesavršenih pravila i strateškog ponašanja, tada mnoge neučinkovite ili fiskalno neodržive politike prestaju biti anomalija i postaju predvidiv ishod institucionalnog dizajna. Upravo zato kolektivni izbor čini logičan most prema ostatku ovog dijela knjige: ako sama agregacija preferencija može proizvesti nedosljedne ili manipulabilne ishode, tada moramo pažljivo analizirati konkretne aktere — birače, stranke, interesne skupine i birokraciju — koji djeluju unutar tih pravila i koji ih, kad mogu, oblikuju u svoju korist.
