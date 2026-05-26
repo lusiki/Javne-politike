@@ -1,0 +1,79 @@
+---
+title: "Stabilizacijska funkcija: država i makroekonomska stabilnost"
+---
+
+Treća velika funkcija države je **stabilizacijska funkcija**. Ona se odnosi na ulogu države u ublažavanju gospodarskih ciklusa, recesija, inflacije, nezaposlenosti, financijskih poremećaja i drugih makroekonomskih neravnoteža. Za razliku od alokacijske funkcije, koja se bavi pitanjem učinkovite raspodjele resursa na pojedinim tržištima, i distribucijske funkcije, koja se bavi pitanjem pravednosti raspodjele dohotka i bogatstva, stabilizacijska funkcija promatra gospodarstvo kao cjelinu. Zato ona pripada području makroekonomske analize.
+
+U središtu stabilizacijske funkcije nalazi se jednostavna ideja: tržišno gospodarstvo nije uvijek samo po sebi stabilno. Iako tržišta imaju snažnu sposobnost prilagodbe, gospodarska aktivnost može snažno oscilirati. Razdoblja rasta mogu se pretvoriti u razdoblja pregrijavanja, rasta inflacije, pretjeranog kreditiranja i rasta cijena imovine. S druge strane, razdoblja pada mogu dovesti do smanjenja potrošnje, pada investicija, rasta nezaposlenosti, pada poreznih prihoda i pogoršanja javnih financija. Ako se takvi procesi prepuste sami sebi, prilagodba može biti spora, društveno skupa i politički destabilizirajuća.
+
+Upravo zato država ima stabilizacijsku ulogu. Ona pokušava ublažiti najdublje padove i spriječiti najopasnija pregrijavanja. Cilj nije ukloniti svaki gospodarski ciklus — to nije moguće — nego smanjiti njihove najštetnije posljedice. Stabilizacijska politika nastoji očuvati visoku zaposlenost, stabilnost cijena, održiv rast, financijsku stabilnost i održive javne financije.
+
+## Zašto tržišno gospodarstvo može biti nestabilno?
+
+Gospodarski ciklusi nastaju zato što se odluke kućanstava, poduzeća, banaka, investitora i države ne usklađuju uvijek savršeno. U razdobljima optimizma poduzeća mogu pretjerano investirati, banke mogu previše kreditirati, kućanstva mogu povećavati zaduženost, a cijene nekretnina i financijske imovine mogu rasti brže od temeljnih ekonomskih pokazatelja. Takva razdoblja često stvaraju dojam stabilnosti i prosperiteta, ali se ispod površine mogu nakupljati rizici.
+
+Kada se očekivanja promijene, proces se može naglo preokrenuti. Poduzeća smanjuju investicije jer očekuju slabiju potražnju. Banke pooštravaju uvjete kreditiranja jer se boje rasta nenaplativih kredita. Kućanstva odgađaju kupnju stanova, automobila i trajnih dobara. Državni prihodi padaju jer se smanjuju dohoci, potrošnja i dobit poduzeća. Nezaposlenost raste, a rast nezaposlenosti dodatno smanjuje potrošnju. Tako početni šok može pokrenuti negativnu spiralu pada potražnje, proizvodnje i zaposlenosti.
+
+Keynesova analiza upravo je naglasila taj problem. Keynes je pokazao da gospodarstvo može zapeti u stanju nedovoljne agregatne potražnje, u kojem nema dovoljno privatne potrošnje i investicija da bi se održala puna zaposlenost. U takvoj situaciji čekanje da se tržište samo vrati u ravnotežu može biti društveno preskupo, jer nezaposlenost, neiskorišteni kapaciteti i izgubljena proizvodnja mogu trajati dugo [@keynes1936]. Zato država može imati aktivnu ulogu u stabilizaciji ukupne potražnje.
+
+No nestabilnost ne dolazi samo iz pada potražnje. Gospodarstvo može biti destabilizirano i inflacijskim pritiscima, primjerice kada potražnja raste brže od proizvodnih kapaciteta ili kada dođe do snažnog rasta cijena energije i hrane. Može biti pogođeno financijskim krizama, kada poremećaji u bankarskom sustavu smanje kreditiranje i povjerenje. Može biti pogođeno vanjskim šokovima, poput naglog rasta uvoznih cijena, prekida opskrbnih lanaca ili pada potražnje kod glavnih trgovinskih partnera. Stabilizacijska funkcija države obuhvaća sve te situacije.
+
+## Fiskalna politika kao instrument stabilizacije
+
+Najvažniji instrument stabilizacijske funkcije države je **fiskalna politika**. Fiskalna politika odnosi se na upravljanje javnim prihodima, javnim rashodima, proračunskim saldom i javnim dugom. Kroz promjene poreza, javne potrošnje i transfera država može utjecati na ukupnu potražnju u gospodarstvu.
+
+U recesiji država može djelovati **ekspanzivno**. To znači da može povećati javnu potrošnju, ubrzati javne investicije, povećati transfere kućanstvima, smanjiti poreze ili dopustiti rast proračunskog deficita. Cilj takvih mjera je ublažiti pad privatne potražnje. Ako kućanstva i poduzeća troše manje, država može privremeno povećati svoju potrošnju kako bi spriječila dublji pad proizvodnje i zaposlenosti. Primjerice, u recesiji država može povećati ulaganja u infrastrukturu, energetsku obnovu, željeznice, škole ili bolnice.
+
+U razdoblju snažne ekspanzije država bi trebala djelovati suprotno. Ako gospodarstvo raste vrlo brzo, nezaposlenost je niska, plaće i cijene snažno rastu, a potražnja premašuje proizvodne kapacitete, fiskalna politika može postati **restriktivnija**. To znači smanjivanje deficita, usporavanje rasta rashoda, odgađanje manje važnih projekata ili povećanje prihoda. Cilj je spriječiti pregrijavanje gospodarstva i stvoriti fiskalni prostor za buduće krize.
+
+Upravo se ovdje vidi jedna od najvećih poteškoća stabilizacijske politike: ekspanzivna fiskalna politika u krizi često je politički popularna, dok je restriktivna fiskalna politika u dobrim vremenima politički teška. Lako je povećati rashode ili smanjiti poreze kada postoji kriza. Teže je stvarati proračunske viškove u razdobljima rasta. Zbog toga države često ulaze u krize s premalo fiskalnog prostora, a nakon kriza izlaze s većim javnim dugom.
+
+## Automatski stabilizatori
+
+Stabilizacijska funkcija države ne ostvaruje se samo diskrecijskim odlukama vlade. Veliku ulogu imaju i **automatski stabilizatori**. To su elementi fiskalnog sustava koji automatski ublažavaju gospodarske cikluse, bez potrebe za novim zakonima ili posebnim političkim odlukama.
+
+Kada gospodarstvo uđe u recesiju, dohoci, potrošnja i dobit poduzeća padaju. Zbog toga automatski padaju porezni prihodi od poreza na dohodak, doprinosa, PDV-a i poreza na dobit. Istodobno rastu rashodi za naknade za nezaposlene, socijalnu pomoć i druge oblike zaštite. Time se dio pada privatnog dohotka automatski nadoknađuje kroz proračun. Kućanstva ne gube sav dohodak odjednom, pa pad potrošnje nije toliko snažan koliko bi bio bez socijalnog sustava. U ekspanziji se događa suprotno: porezni prihodi automatski rastu, a rashodi za nezaposlene i neke oblike socijalne pomoći padaju.
+
+Prednost automatskih stabilizatora je u tome što djeluju brzo, predvidljivo i bez političkog kašnjenja. Diskrecijske mjere često zahtijevaju raspravu, pripremu, donošenje zakona, administrativnu provedbu i politički dogovor. Automatski stabilizatori djeluju odmah, jer su ugrađeni u postojeći porezni i socijalni sustav. Njihova snaga ovisi o strukturi javnih financija. Zemlje s većim udjelom progresivnih poreza, razvijenijim sustavom socijalne zaštite i većim javnim sektorom obično imaju snažnije automatske stabilizatore.
+
+## Diskrecijska fiskalna politika: mogućnosti i ograničenja
+
+Osim automatskih stabilizatora, država može koristiti i **diskrecijsku fiskalnu politiku**, odnosno posebne mjere koje donosi kao odgovor na konkretnu gospodarsku situaciju. To mogu biti privremena smanjenja poreza, jednokratne pomoći kućanstvima, subvencije poduzećima, programi očuvanja radnih mjesta, javne investicije ili državna jamstva.
+
+Diskrecijska politika može biti vrlo važna u velikim krizama, kada automatski stabilizatori nisu dovoljni. U financijskoj krizi država može intervenirati kako bi spriječila slom bankarskog sustava. U pandemiji može subvencionirati plaće kako bi spriječila masovna otpuštanja u sektorima kojima je rad privremeno zabranjen. U energetskoj krizi može privremeno pomoći kućanstvima i poduzećima suočenima s naglim rastom cijena.
+
+Međutim, diskrecijska fiskalna politika ima nekoliko ograničenja. Prvo je **vremensko kašnjenje**. Potrebno je vrijeme da se kriza prepozna, da se mjere osmisle, usvoje i provedu. Ako mjere dođu prekasno, mogu djelovati tek kada se gospodarstvo već oporavlja, pa dodatno pojačati inflacijske pritiske. Drugo je **problem ciljanja**. Mjere mogu biti preširoke i pomoći i onima kojima pomoć nije potrebna, ili preuske i propustiti one koji su najpogođeniji. Treće je **fiskalni trošak** — privremene mjere mogu povećati deficit i javni dug. Četvrto je **politička ekonomija**: mjere uvedene kao privremene mogu postati trajne jer korisnici razviju interes da se nastave.
+
+Zato diskrecijska fiskalna politika mora biti pravodobna, privremena, ciljana i razmjerna. U krizi je često opravdano djelovati snažno, ali je jednako važno unaprijed razmišljati o izlaznoj strategiji.
+
+## Stabilizacijska funkcija u velikim krizama
+
+Stabilizacijska funkcija posebno dolazi do izražaja u velikim krizama. Ratovi, financijske krize, pandemije, energetski šokovi i prirodne katastrofe često dovode do naglog rasta uloge države. U takvim situacijama građani i poduzeća očekuju hitnu reakciju jer bi politika nečinjenja mogla imati vrlo visoke društvene troškove.
+
+U velikim krizama država često preuzima uloge koje u normalnim okolnostima ne bi imala. Može jamčiti kredite poduzećima, subvencionirati plaće, spašavati banke, privremeno ograničavati cijene, financirati hitne zdravstvene mjere ili uvoditi izvanredne regulacije. Pandemija je dobar primjer krize u kojoj standardna ekonomska logika nije bila dovoljna. Problem nije nastao zato što su poduzeća loše poslovala, nego zato što je zdravstveni šok doveo do administrativnog zatvaranja dijelova gospodarstva i ograničenja kretanja.
+
+Slično vrijedi za financijske krize. Ako se financijski sustav počne urušavati, država i središnja banka često moraju djelovati brzo jer bankarski problemi mogu paralizirati kreditiranje, platni promet, investicije i povjerenje. Međutim, takve intervencije otvaraju i problem **moralnog hazarda**: ako financijske institucije očekuju da će uvijek biti spašene, mogu preuzimati prevelike rizike. Zato krizna stabilizacija mora biti povezana s kasnijim jačanjem regulacije i odgovornosti.
+
+## Hipoteza velikih kriza i trajni rast uloge države
+
+Velike krize važne su i zato što često trajno mijenjaju veličinu i ulogu države. Ovdje se javlja važna tema iz literature o rastu javne potrošnje: **hipoteza velikih kriza**. Peacock i Wiseman (1961) tvrdili su da javni rashodi u velikim krizama naglo rastu, ali se nakon krize često ne vraćaju na prethodnu razinu. Taj proces nazivaju **učinkom premještanja** (*displacement effect*). Kriza pomiče društveno prihvatljivu razinu oporezivanja i javne potrošnje. Građani u krizi prihvaćaju veći porezni teret i snažniju državnu intervenciju jer smatraju da je alternativa skuplja.
+
+Nakon krize nastupa i ono što Peacock i Wiseman nazivaju **učinkom nadzora** (*inspection effect*). Kada se uloga države poveća, javnost i politika počinju pažljivije promatrati područja koja su prije bila zanemarena. Robert Higgs (1987) sličnu logiku opisuje kroz koncept **ratchet effecta**. Prema toj ideji, uloga države u krizama snažno poraste, a nakon krize se smanji samo djelomično. Kao kod zupčanika koji se pomiče u jednom smjeru, javna potrošnja, regulacija i očekivanja građana o ulozi države pomaknu se na višu razinu.
+
+Ova literatura važna je jer pokazuje da stabilizacijska funkcija ima dugoročne posljedice. Mjere koje su uvedene kao privremene mogu postati trajne. Institucije osnovane za rješavanje krize mogu ostati i nakon krize. To ne mora biti loše ako su nove funkcije društveno korisne i fiskalno održive. Ali može biti problem ako privremene mjere ostanu bez jasnog opravdanja, financiranja i evaluacije.
+
+## Dvostruka priroda stabilizacijske funkcije
+
+Stabilizacijska funkcija zato ima dvostruku prirodu. S jedne strane, ona je nužna jer tržišna gospodarstva mogu proizvesti duboke recesije, visoku nezaposlenost, financijske krize i inflacijske poremećaje. U takvim situacijama državna intervencija može spriječiti velike društvene troškove.
+
+S druge strane, stabilizacijska funkcija nosi rizike. Država može reagirati prekasno, preširoko ili pogrešnim instrumentima. Privremene mjere mogu postati trajne. Krizne intervencije mogu povećati javni dug. Spašavanje poduzeća i banaka može stvoriti moralni hazard. Kontrole cijena mogu smanjiti inflaciju na papiru, ali stvoriti nestašice ili gubitke. Subvencije mogu zaštititi radna mjesta kratkoročno, ali dugoročno održavati neproduktivne strukture. Zato stabilizacijska politika mora biti snažna kada je potrebna, ali i pažljivo dizajnirana.
+
+Najvažnija pouka je da stabilizacijska funkcija nije poziv na stalnu intervenciju države u sve makroekonomske procese. Ona je argument za odgovornu, pravodobnu i privremenu intervenciju kada tržišna prilagodba prijeti velikim društvenim troškovima. Dobra stabilizacijska politika mora znati kada djelovati, koliko djelovati i kada se povući.
+
+## Zaključno: stabilnost kao javno dobro
+
+Stabilnost gospodarstva može se promatrati kao svojevrsno **javno dobro**. Kada je gospodarstvo stabilno, koristi imaju gotovo svi: radnici lakše zadržavaju posao, poduzeća lakše planiraju investicije, građani imaju veće povjerenje, javne financije su održivije, a društvene napetosti su manje. Kada gospodarstvo postane nestabilno, troškovi se šire kroz cijelo društvo.
+
+Stabilizacijska funkcija države zato je jedan od ključnih razloga za postojanje moderne ekonomske politike. Ona pokazuje da država ne djeluje samo na pojedina tržišta i raspodjelu dohotka, nego i na ukupnu razinu gospodarske aktivnosti. U tom smislu ona nadopunjuje alokacijsku i distribucijsku funkciju. Alokacijska funkcija pita kako ispraviti tržišne neuspjehe. Distribucijska funkcija pita kako raspodijeliti dohodak i rizike na društveno prihvatljiv način. Stabilizacijska funkcija pita kako očuvati gospodarstvo od velikih oscilacija koje mogu ugroziti zaposlenost, cijene, financijski sustav i javne financije.
+
+Stabilizacijska politika mora biti dovoljno snažna da odgovori na krizu, ali dovoljno disciplinirana da ne pretvori svaku krizu u trajno širenje rashoda, duga i državnih obveza. Upravo u toj ravnoteži nalazi se jedna od najtežih zadaća moderne države: zaštititi gospodarstvo od nestabilnosti, a pritom očuvati dugoročnu održivost i odgovornost javnih financija.

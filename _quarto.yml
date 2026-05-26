@@ -29,7 +29,7 @@ book:
     pinned: true
     left:
       - text: "Knjiga"
-        href: chapters/00-prije-pocetka.qmd
+        href: chapters/00-uvod.qmd
       - text: "Vodič"
         href: vodic.html
       - text: "Resursi"
@@ -59,31 +59,36 @@ book:
 
   chapters:
     - index.qmd
-    - chapters/00-prije-pocetka.qmd
-    - part: "DIO I: DRŽAVA, JAVNE POLITIKE I TEMELJNI PRISTUPI ANALIZI"
+    - chapters/00-uvod.qmd
+    - part: "DIO I: KLASIČNA ANALIZA JAVNIH FINANCIJA I POLITIKA"
       chapters:
-        - chapters/01-pristupi.qmd
-        - chapters/02-zasto-drzava.qmd
-        - chapters/03-musgrave.qmd
-        - chapters/04-institucije.qmd
-        - chapters/05-konstitucionalna.qmd
+        - chapters/01-uloga-drzave.qmd
+        - chapters/02-alokacijska-funkcija.qmd
+        - chapters/03-distribucijska-funkcija.qmd
+        - chapters/04-stabilizacijska-funkcija.qmd
     - part: "DIO II: JAVNI IZBOR – ŠTO, KAKO I ZAŠTO?"
       chapters:
-        - chapters/06-javni-izbor.qmd
-        - chapters/07-kako-odlucujemo.qmd
-        - chapters/08-glasovanje.qmd
-        - chapters/09-stranke-kandidati.qmd
-        - chapters/10-birokrati.qmd
-        - chapters/11-interesne-skupine.qmd
-    - part: "DIO III: JAVNE FINANCIJE I JAVNE POLITIKE U PRAKSI"
+        - chapters/05-javni-izbor.qmd
+        - chapters/06-kolektivni-izbor.qmd
+        - chapters/07-stranke-izbori.qmd
+        - chapters/08-interesne-skupine.qmd
+        - chapters/09-birokracija.qmd
+    - part: "DIO III: NOVA INSTITUCIONALNA I KONSTITUCIONALNA EKONOMIKA"
       chapters:
-        - chapters/12-drzavna-potrosnja.qmd
-        - chapters/13-porezi.qmd
-        - chapters/14-odluke-cba.qmd
-        - chapters/15-odluke-reforme.qmd
-    - part: "Za kraj"
+        - chapters/10-institucionalna-ekonomika.qmd
+        - chapters/11-konstitucionalna-ekonomika.qmd
+    - part: "DIO IV: JAVNE FINANCIJE I JAVNE POLITIKE U PRAKSI"
       chapters:
-        - chapters/16-zakljucak.qmd
+        - chapters/12-instrumenti.qmd
+        - chapters/13-javna-potrosnja.qmd
+        - chapters/14-porezi.qmd
+    - part: "DIO V: KAKO DO KVALITETNIJIH JAVNIH POLITIKA?"
+      chapters:
+        - chapters/15-drzavni-neuspjesi.qmd
+        - chapters/16-novi-javni-menadzment.qmd
+        - chapters/17-novo-upravljanje.qmd
+        - chapters/18-cba-evaluacija.qmd
+        - chapters/19-reforme.qmd
 
   appendices:
     - references.qmd

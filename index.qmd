@@ -34,7 +34,7 @@ Udžbenik koji povezuje teoriju javnog izbora, ekonomiku javnog sektora i hrvats
 :::
 
 ::: {.book-hero-cta}
-[Počnite čitati →](chapters/00-prije-pocetka.html){.cta-button}
+[Počnite čitati →](chapters/00-uvod.html){.cta-button}
 [Preuzmite PDF](pdf/Javne-politike.pdf){.cta-button}
 
 ```{=html}
@@ -51,195 +51,80 @@ Udžbenik koji povezuje teoriju javnog izbora, ekonomiku javnog sektora i hrvats
 ```{=html}
 <div class="toc-overview">
 
-<p class="toc-part">DIO I: Država, javne politike i temeljni pristupi analizi</p>
+<div class="toc-chapter toc-chapter-leaf">
+<a href="chapters/00-uvod.html">Uvod: Zašto bismo otvorili ovu knjigu?</a>
+</div>
 
-<details class="toc-chapter">
-<summary><span class="toc-num">1.</span> <a href="chapters/01-pristupi.html">Pristupi analizi javnih politika</a></summary>
-<ul>
-<li><a href="chapters/01-pristupi.html#što-znači-analizirati-politiku">Što znači analizirati politiku kroz "što jest" i "što bi trebalo biti"</a></li>
-<li><a href="chapters/01-pristupi.html#razlika-između-objašnjenja-i-vrednovanja">Razlika između objašnjenja i vrednovanja</a></li>
-<li><a href="chapters/01-pristupi.html#zašto-su-oba-pristupa-nužna">Zašto su oba pristupa nužna u analizi javnih politika</a></li>
-<li><a href="chapters/01-pristupi.html#ekonomika-blagostanja">Ekonomika blagostanja kao temelj normativne analize</a></li>
-<li><a href="chapters/01-pristupi.html#pareto-kriterij">Pareto-kriterij, Pareto-poboljšanje i Pareto-optimum</a></li>
-<li><a href="chapters/01-pristupi.html#prvi-i-drugi-teorem">Prvi i Drugi teorem ekonomike blagostanja</a></li>
-<li><a href="chapters/01-pristupi.html#ograničenja-pareto-pristupa">Ograničenja Pareto-pristupa</a></li>
-<li><a href="chapters/01-pristupi.html#pozitivistička-kritika">Pozitivistička kritika normativne slike države</a></li>
-</ul>
-</details>
+<p class="toc-part">DIO I: Klasična analiza javnih financija i politika</p>
 
-<details class="toc-chapter">
-<summary><span class="toc-num">2.</span> <a href="chapters/02-zasto-drzava.html">Zašto postoji država?</a></summary>
-<ul>
-<li><a href="chapters/02-zasto-drzava.html#tržišni-neuspjesi">Tržišni neuspjesi kao temeljno opravdanje državne intervencije</a></li>
-<li><a href="chapters/02-zasto-drzava.html#javna-dobra">Javna dobra</a></li>
-<li><a href="chapters/02-zasto-drzava.html#eksternalije">Eksternalije</a></li>
-<li><a href="chapters/02-zasto-drzava.html#asimetrične-informacije">Asimetrične informacije</a></li>
-<li><a href="chapters/02-zasto-drzava.html#tržišna-moć-i-monopol">Tržišna moć i monopol</a></li>
-<li><a href="chapters/02-zasto-drzava.html#meritorna-dobra">Meritorna dobra</a></li>
-<li><a href="chapters/02-zasto-drzava.html#odnos-efikasnosti-i-pravednosti">Odnos efikasnosti i pravednosti</a></li>
-</ul>
-</details>
-
-<details class="toc-chapter">
-<summary><span class="toc-num">3.</span> <a href="chapters/03-musgrave.html">Musgraveov trojstveni okvir javnih financija</a></summary>
-<ul>
-<li><a href="chapters/03-musgrave.html#alokacijska-funkcija">Alokacijska funkcija</a></li>
-<li><a href="chapters/03-musgrave.html#distribucijska-funkcija">Distribucijska funkcija</a></li>
-<li><a href="chapters/03-musgrave.html#stabilizacijska-funkcija">Stabilizacijska funkcija</a></li>
-<li><a href="chapters/03-musgrave.html#klasična-teorija-javnih-financija">Klasična teorija javnih financija i država kao korektiv tržišta</a></li>
-<li><a href="chapters/03-musgrave.html#država-blagostanja">Država blagostanja i proširenje državnih funkcija</a></li>
-<li><a href="chapters/03-musgrave.html#napetost-između-efikasnosti">Napetost između efikasnosti, jednakosti i stabilnosti</a></li>
-<li><a href="chapters/03-musgrave.html#instrumenti-države">Instrumenti države za intervencije u gospodarstvu</a></li>
-</ul>
-</details>
-
-<details class="toc-chapter">
-<summary><span class="toc-num">4.</span> <a href="chapters/04-institucije.html">Institucije i javne politike</a></summary>
-<ul>
-<li><a href="chapters/04-institucije.html#zašto-institucije-oblikuju">Zašto institucije oblikuju ekonomske i političke ishode</a></li>
-<li><a href="chapters/04-institucije.html#institucije-kao-pravila-igre">Institucije kao "pravila igre"</a></li>
-<li><a href="chapters/04-institucije.html#formalne-i-neformalne">Formalne i neformalne institucije</a></li>
-<li><a href="chapters/04-institucije.html#transakcijski-troškovi">Transakcijski troškovi, vlasnička prava i ugovori</a></li>
-<li><a href="chapters/04-institucije.html#principal-agent-problem">Principal-agent problem i institucijski dizajn</a></li>
-<li><a href="chapters/04-institucije.html#inkluzivne-i-ekstraktivne">Inkluzivne i ekstraktivne institucije</a></li>
-<li><a href="chapters/04-institucije.html#zašto-nije-važno-samo-koliko">Zašto nije važno samo koliko države ima, nego kakva je država</a></li>
-</ul>
-</details>
-
-<details class="toc-chapter">
-<summary><span class="toc-num">5.</span> <a href="chapters/05-konstitucionalna.html">Konstitucionalna ekonomika</a></summary>
-<ul>
-<li><a href="chapters/05-konstitucionalna.html#razlika-između-odlučivanja">Razlika između odlučivanja unutar pravila i odlučivanja o pravilima</a></li>
-<li><a href="chapters/05-konstitucionalna.html#što-je-ustavna-ekonomika">Što je ustavna ekonomika</a></li>
-<li><a href="chapters/05-konstitucionalna.html#zašto-su-ustavna-ograničenja-važna">Zašto su ustavna i institucionalna ograničenja važna</a></li>
-<li><a href="chapters/05-konstitucionalna.html#buchanan-i-logika-pravila">Buchanan i logika pravila</a></li>
-<li><a href="chapters/05-konstitucionalna.html#fiskalna-pravila">Fiskalna pravila, ograničenja duga i diskrecije</a></li>
-<li><a href="chapters/05-konstitucionalna.html#vjerodostojnost">Vjerodostojnost, vremenska nedosljednost i dugoročna stabilnost</a></li>
-<li><a href="chapters/05-konstitucionalna.html#kako-dizajnirati-pravila">Kako dizajnirati pravila koja ograničavaju loše političke poticaje</a></li>
-</ul>
-</details>
+<div class="toc-chapter toc-chapter-leaf">
+<span class="toc-num">1.</span> <a href="chapters/01-uloga-drzave.html">Uloga države u gospodarstvu</a>
+</div>
+<div class="toc-chapter toc-chapter-leaf">
+<span class="toc-num">2.</span> <a href="chapters/02-alokacijska-funkcija.html">Alokacijska funkcija i tržišni neuspjesi</a>
+</div>
+<div class="toc-chapter toc-chapter-leaf">
+<span class="toc-num">3.</span> <a href="chapters/03-distribucijska-funkcija.html">Distribucijska funkcija: država i pitanje pravednosti</a>
+</div>
+<div class="toc-chapter toc-chapter-leaf">
+<span class="toc-num">4.</span> <a href="chapters/04-stabilizacijska-funkcija.html">Stabilizacijska funkcija: država i makroekonomska stabilnost</a>
+</div>
 
 <p class="toc-part">DIO II: Javni izbor — što, kako i zašto?</p>
 
-<details class="toc-chapter">
-<summary><span class="toc-num">6.</span> <a href="chapters/06-javni-izbor.html">Javni izbor — uvod</a></summary>
-<ul>
-<li><a href="chapters/06-javni-izbor.html#definicija-metodologija">Definicija, metodologija i osnovne pretpostavke teorije javnog izbora</a></li>
-<li><a href="chapters/06-javni-izbor.html#pravila-igre-vs-politički-ishodi">Pravila igre vs. politički ishodi</a></li>
-<li><a href="chapters/06-javni-izbor.html#trebam-li-i-kako-sudjelovati">Trebam li i kako sudjelovati u donošenju političkih odluka?</a></li>
-<li><a href="chapters/06-javni-izbor.html#logika-kolektivne-akcije">Logika kolektivne akcije, koncentrirane koristi i raspršeni troškovi</a></li>
-<li><a href="chapters/06-javni-izbor.html#lov-na-rentu">Lov na rentu i zamka prijelaznih dobitaka</a></li>
-</ul>
-</details>
+<div class="toc-chapter toc-chapter-leaf">
+<span class="toc-num">5.</span> <a href="chapters/05-javni-izbor.html">Što je to javni izbor i zašto nas se tiče?</a>
+</div>
+<div class="toc-chapter toc-chapter-leaf">
+<span class="toc-num">6.</span> <a href="chapters/06-kolektivni-izbor.html">Kolektivni izbor</a>
+</div>
+<div class="toc-chapter toc-chapter-leaf">
+<span class="toc-num">7.</span> <a href="chapters/07-stranke-izbori.html">Političke stranke i izbori</a>
+</div>
+<div class="toc-chapter toc-chapter-leaf">
+<span class="toc-num">8.</span> <a href="chapters/08-interesne-skupine.html">Interesne skupine — iza kulisa politike</a>
+</div>
+<div class="toc-chapter toc-chapter-leaf">
+<span class="toc-num">9.</span> <a href="chapters/09-birokracija.html">Dva pogleda na birokraciju</a>
+</div>
 
-<details class="toc-chapter">
-<summary><span class="toc-num">7.</span> <a href="chapters/07-kako-odlucujemo.html">Kako odlučujemo?</a></summary>
-<ul>
-<li><a href="chapters/07-kako-odlucujemo.html#kako-skupine-donose-odluke">Kako skupine donose odluke (i zašto to ponekad ne ide)?</a></li>
-<li><a href="chapters/07-kako-odlucujemo.html#teorije-preferencija-i-glasovanja">Što nam govore teorije preferencija i glasovanja?</a></li>
-<li><a href="chapters/07-kako-odlucujemo.html#arrowljev-teorem">Arrowljev teorem i problemi kolektivnog izbora</a></li>
-<li><a href="chapters/07-kako-odlucujemo.html#zašto-kompromisi">Zašto kompromisi znaju stvoriti čudne rezultate?</a></li>
-</ul>
-</details>
-
-<details class="toc-chapter">
-<summary><span class="toc-num">8.</span> <a href="chapters/08-glasovanje.html">Glasovanje i agregacija preferencija</a></summary>
-<ul>
-<li><a href="chapters/08-glasovanje.html#zašto-uopće-glasujemo">Zašto uopće glasujemo ako znamo da nećemo odlučiti?</a></li>
-<li><a href="chapters/08-glasovanje.html#racionalna-ignorancija">Racionalna ignorancija i racionalni apstinent</a></li>
-<li><a href="chapters/08-glasovanje.html#emocije-identitet-i-informacije">Emocije, identitet i informacije — skriveni pokretači izbora</a></li>
-<li><a href="chapters/08-glasovanje.html#zašto-ljudi-ipak-izlaze">Zašto ljudi ipak izlaze na izbore?</a></li>
-</ul>
-</details>
-
-<details class="toc-chapter">
-<summary><span class="toc-num">9.</span> <a href="chapters/09-stranke-kandidati.html">Stranke i kandidati</a></summary>
-<ul>
-<li><a href="chapters/09-stranke-kandidati.html#kako-se-političke-opcije-natječu">Kako se političke opcije natječu za naš glas?</a></li>
-<li><a href="chapters/09-stranke-kandidati.html#što-oblikuje-politički-centar">Što oblikuje politički centar i polarizaciju?</a></li>
-<li><a href="chapters/09-stranke-kandidati.html#medijan-birača">Medijan birača i politička konkurencija</a></li>
-<li><a href="chapters/09-stranke-kandidati.html#je-li-diktatura-najbolji-sustav">Je li diktatura najbolji sustav donošenja odluka?</a></li>
-</ul>
-</details>
-
-<details class="toc-chapter">
-<summary><span class="toc-num">10.</span> <a href="chapters/10-birokrati.html">Birokrati i birokracija</a></summary>
-<ul>
-<li><a href="chapters/10-birokrati.html#kako-javni-službenici-igraju-igru">Kako javni službenici "igraju igru" i može li se to opravdati</a></li>
-<li><a href="chapters/10-birokrati.html#što-se-događa-kad-se-ciljevi">Što se događa kad se ciljevi politike i proračuna sudare</a></li>
-<li><a href="chapters/10-birokrati.html#šefovi-nadzori-i-neučinkovitost">Šefovi, nadzori i (ne)učinkovitost birokracije</a></li>
-<li><a href="chapters/10-birokrati.html#principal-agent-problem-u-javnom">Principal-agent problem u javnom sektoru</a></li>
-</ul>
-</details>
-
-<details class="toc-chapter">
-<summary><span class="toc-num">11.</span> <a href="chapters/11-interesne-skupine.html">Interesne skupine</a></summary>
-<ul>
-<li><a href="chapters/11-interesne-skupine.html#kako-nastaju-lobiji">Kako nastaju lobiji i zašto su toliko moćni</a></li>
-<li><a href="chapters/11-interesne-skupine.html#tko-koga-zarobljava">Tko koga zarobljava? Regulatorna igra moći</a></li>
-<li><a href="chapters/11-interesne-skupine.html#rent-seeking">Rent-seeking: kako iskoristiti pravila u svoju korist</a></li>
-<li><a href="chapters/11-interesne-skupine.html#zašto-male-organizirane-skupine">Zašto male organizirane skupine često pobjeđuju veliku većinu</a></li>
-</ul>
-</details>
-
-<p class="toc-part">DIO III: Javne financije i javne politike u praksi</p>
-
-<details class="toc-chapter">
-<summary><span class="toc-num">12.</span> <a href="chapters/12-drzavna-potrosnja.html">Državna potrošnja</a></summary>
-<ul>
-<li><a href="chapters/12-drzavna-potrosnja.html#što-je-politička-potrošnja">Što je politička potrošnja i kako se odlučuje tko što dobiva</a></li>
-<li><a href="chapters/12-drzavna-potrosnja.html#izbori-i-proračunski-ciklusi">Izbori i proračunski ciklusi: što se događa pred izbore?</a></li>
-<li><a href="chapters/12-drzavna-potrosnja.html#tko-gubi-a-tko-dobiva">Tko gubi, a tko dobiva iz državne blagajne?</a></li>
-<li><a href="chapters/12-drzavna-potrosnja.html#zašto-javna-potrošnja-raste">Zašto javna potrošnja raste?</a></li>
-<li><a href="chapters/12-drzavna-potrosnja.html#javna-potrošnja-kroz-povijest">Javna potrošnja kroz povijest</a></li>
-<li><a href="chapters/12-drzavna-potrosnja.html#društvene-koristi-i-rizici">Društvene koristi i rizici (prekomjerne) javne potrošnje</a></li>
-<li><a href="chapters/12-drzavna-potrosnja.html#stabilizacijska-uloga">Stabilizacijska uloga javne potrošnje</a></li>
-<li><a href="chapters/12-drzavna-potrosnja.html#razlike-u-javnoj-potrošnji">Razlike u javnoj potrošnji u svijetu</a></li>
-<li><a href="chapters/12-drzavna-potrosnja.html#javna-potrošnja-u-hrvatskoj">Javna potrošnja u Hrvatskoj i EU</a></li>
-</ul>
-</details>
-
-<details class="toc-chapter">
-<summary><span class="toc-num">13.</span> <a href="chapters/13-porezi.html">Porezi</a></summary>
-<ul>
-<li><a href="chapters/13-porezi.html#što-su-porezi">Što su porezi?</a></li>
-<li><a href="chapters/13-porezi.html#porezi-kroz-povijest">Porezi kroz povijest</a></li>
-<li><a href="chapters/13-porezi.html#vrste-poreza">Vrste poreza</a></li>
-<li><a href="chapters/13-porezi.html#osnovna-načela-oporezivanja">Osnovna načela oporezivanja</a></li>
-<li><a href="chapters/13-porezi.html#osnove-teorije-oporezivanja">Osnove teorije oporezivanja</a></li>
-<li><a href="chapters/13-porezi.html#teorija-optimalnog-oporezivanja">Teorija optimalnog oporezivanja</a></li>
-<li><a href="chapters/13-porezi.html#vrste-poreznih-sustava">Vrste poreznih sustava</a></li>
-<li><a href="chapters/13-porezi.html#porezni-sustavi-u-svijetu">Porezni sustavi u svijetu</a></li>
-<li><a href="chapters/13-porezi.html#porezni-sustavi-u-eu-i-hrvatskoj">Porezni sustavi u EU i Hrvatskoj</a></li>
-<li><a href="chapters/13-porezi.html#porezi-u-doba-umjetne-inteligencije">Porezi u doba umjetne inteligencije</a></li>
-</ul>
-</details>
-
-<details class="toc-chapter">
-<summary><span class="toc-num">14.</span> <a href="chapters/14-odluke-cba.html">Analiza troškova i koristi</a></summary>
-<ul>
-<li><a href="chapters/14-odluke-cba.html#analiza-javnih-politika">Analiza javnih politika i institucionalni dizajn</a></li>
-<li><a href="chapters/14-odluke-cba.html#cost-benefit-analiza">Cost-benefit analiza u javnom sektoru</a></li>
-<li><a href="chapters/14-odluke-cba.html#evaluacija-javnih-politika">Evaluacija javnih politika</a></li>
-<li><a href="chapters/14-odluke-cba.html#uloga-institucija">Uloga institucija u oblikovanju ponašanja aktera</a></li>
-<li><a href="chapters/14-odluke-cba.html#kako-mjeriti-uspjeh">Kako mjeriti uspjeh ili neuspjeh politike?</a></li>
-</ul>
-</details>
-
-<details class="toc-chapter">
-<summary><span class="toc-num">15.</span> <a href="chapters/15-odluke-reforme.html">Politike reformi</a></summary>
-<ul>
-<li><a href="chapters/15-odluke-reforme.html#zašto-su-reforme-nužne">Zašto su reforme javnog sektora nužne?</a></li>
-<li><a href="chapters/15-odluke-reforme.html#što-određuje-uspjeh-reformi">Što određuje uspjeh reformi?</a></li>
-<li><a href="chapters/15-odluke-reforme.html#iskustvo-srednje-i-istočne-europe">Iskustvo srednje i istočne Europe</a></li>
-<li><a href="chapters/15-odluke-reforme.html#koji-su-ključevi-uspješnih-reformi">Na kraju: koji su "ključevi" uspješnih reformi?</a></li>
-</ul>
-</details>
-
-<p class="toc-part">Za kraj</p>
+<p class="toc-part">DIO III: Nova institucionalna i konstitucionalna ekonomika</p>
 
 <div class="toc-chapter toc-chapter-leaf">
-<span class="toc-num">16.</span> <a href="chapters/16-zakljucak.html">Zaključak</a>
+<span class="toc-num">10.</span> <a href="chapters/10-institucionalna-ekonomika.html">Nova institucionalna ekonomika: pravila igre</a>
+</div>
+<div class="toc-chapter toc-chapter-leaf">
+<span class="toc-num">11.</span> <a href="chapters/11-konstitucionalna-ekonomika.html">Konstitucionalna (ustavna) ekonomika</a>
+</div>
+
+<p class="toc-part">DIO IV: Javne financije i javne politike u praksi</p>
+
+<div class="toc-chapter toc-chapter-leaf">
+<span class="toc-num">12.</span> <a href="chapters/12-instrumenti.html">Instrumenti državne intervencije</a>
+</div>
+<div class="toc-chapter toc-chapter-leaf">
+<span class="toc-num">13.</span> <a href="chapters/13-javna-potrosnja.html">Kako država troši naš novac?</a>
+</div>
+<div class="toc-chapter toc-chapter-leaf">
+<span class="toc-num">14.</span> <a href="chapters/14-porezi.html">Porezi: više od tereta</a>
+</div>
+
+<p class="toc-part">DIO V: Kako do kvalitetnijih javnih politika?</p>
+
+<div class="toc-chapter toc-chapter-leaf">
+<span class="toc-num">15.</span> <a href="chapters/15-drzavni-neuspjesi.html">Državni neuspjesi i prepreke kvalitetnim javnim politikama</a>
+</div>
+<div class="toc-chapter toc-chapter-leaf">
+<span class="toc-num">16.</span> <a href="chapters/16-novi-javni-menadzment.html">Novi javni menadžment</a>
+</div>
+<div class="toc-chapter toc-chapter-leaf">
+<span class="toc-num">17.</span> <a href="chapters/17-novo-upravljanje.html">Od novog javnog menadžmenta prema novom upravljanju</a>
+</div>
+<div class="toc-chapter toc-chapter-leaf">
+<span class="toc-num">18.</span> <a href="chapters/18-cba-evaluacija.html">Cost-benefit analiza i evaluacija javnih politika</a>
+</div>
+<div class="toc-chapter toc-chapter-leaf">
+<span class="toc-num">19.</span> <a href="chapters/19-reforme.html">Reforme u javnom sektoru: što funkcionira i zašto?</a>
 </div>
 
 </div>
@@ -248,7 +133,7 @@ Udžbenik koji povezuje teoriju javnog izbora, ekonomiku javnog sektora i hrvats
 :::
 
 ::: {.book-meta-footer}
-**16 poglavlja** · **3 dijela** · ažurirano [svibanj 2026.]{.book-date}
+**Uvod + 19 poglavlja** · **5 dijelova** · ažurirano [svibanj 2026.]{.book-date}
 
 Tekst i kod licencirani pod [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) · [Doprinesite na GitHubu](https://github.com/lusiki/Javne-politike) · [Prijavite grešku](https://github.com/lusiki/Javne-politike/issues)
 :::

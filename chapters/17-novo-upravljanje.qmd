@@ -1,0 +1,47 @@
+---
+title: "Od novog javnog menadžmenta prema novom upravljanju"
+---
+
+Zbog ograničenja Novog javnog menadžmenta, od kraja 1990-ih i osobito tijekom 2000-ih razvija se novi val reformi javnog sektora koji se često naziva **novo javno upravljanje** (*new governance*) ili **mrežno upravljanje** (*network governance*). Dok je NPM naglašavao tržište, konkurenciju, autonomiju menadžera, mjerenje rezultata i ugovorne odnose, novi pristupi sve više naglašavaju koordinaciju, suradnju, partnerstva, povjerenje, uključivanje građana i sposobnost države da upravlja složenim mrežama aktera (Rhodes, 1997; Pierre i Peters, 2000).
+
+Ovaj zaokret nije značio potpuno odbacivanje NPM-a. Mnoge njegove ideje ostale su važne: javni sektor i dalje mora voditi računa o učinkovitosti, kvaliteti usluga, troškovima i rezultatima. Međutim, iskustvo je pokazalo da tržišni mehanizmi i menadžerska autonomija sami po sebi nisu dovoljni za rješavanje složenih javnih problema. Štoviše, u nekim su slučajevima reforme inspirirane NPM-om proizvele nove probleme: fragmentaciju institucija, slabu koordinaciju, prevelik broj agencija i pretjerano oslanjanje na mjerljive pokazatelje koji nisu uvijek odražavali stvarnu kvalitetu javnih usluga.
+
+## Tvrdokorni problemi i potreba za suradnjom
+
+Ključni razlog za razvoj novog upravljanja leži u promjeni prirode javnih problema. Mnogi suvremeni izazovi ne mogu se riješiti ni klasičnom birokratskom hijerarhijom ni jednostavnim tržišnim natjecanjem. Klimatske promjene, starenje stanovništva, zdravstvene krize, migracije, siromaštvo, energetska tranzicija i digitalna sigurnost zahtijevaju suradnju različitih aktera: ministarstava, lokalnih i regionalnih vlasti, regulatornih agencija, privatnog sektora, akademske zajednice, civilnog društva i samih građana.
+
+Primjerice, politika klimatske tranzicije ne može biti samo posao ministarstva okoliša. Ona uključuje energetiku, promet, industrijsku politiku, poljoprivredu, prostorno planiranje, porezni sustav, socijalnu politiku i obrazovanje. Što je javni problem složeniji, to je manje vjerojatno da ga jedna institucija može riješiti sama. Zbog toga se u literaturi sve više koristi pojam **„wicked problems"**, odnosno tvrdokornih ili teško rješivih javnih problema (Rittel i Webber, 1973). To su problemi koji nemaju jedno jasno rješenje, kod kojih se akteri ne slažu ni oko uzroka ni oko ciljeva, a svako rješenje proizvodi nove posljedice.
+
+Upravo zato novo javno upravljanje naglašava da država više nije samo zapovjedni centar koji kroz hijerarhiju izdaje naloge, niti samo naručitelj usluga koji kroz ugovore kupuje rezultate od tržišta. Država sve više postaje **koordinator, moderator i jamac pravila igre**. Njezina uloga nije nužno da sve sama radi, ali mora osigurati da različiti akteri djeluju usklađeno, da javni interes ne bude izgubljen u privatnim interesima i da građani mogu razumjeti tko je za što odgovoran. To ne znači da država postaje manje važna — naprotiv, u složenom društvu ona često postaje još važnija.
+
+## Whole-of-government i povezana vlada
+
+Jedan od ključnih koncepata koji se razvija nakon NPM-a jest **whole-of-government** pristup. Njegova je osnovna ideja da se javne politike ne smiju voditi kroz zatvorene administrativne „silose". Tradicionalna uprava organizirana je po ministarstvima i sektorima, što omogućuje specijalizaciju, ali problemi građana rijetko poštuju administrativne granice. Nezaposlena osoba možda istodobno treba obrazovanje, socijalnu pomoć, zdravstvenu podršku i pomoć pri pronalasku posla. Whole-of-government pristup pokušava okrenuti logiku: sustav se treba organizirati oko problema i korisnika, a ne oko unutarnjih granica administracije, pa se razvijaju integrirane javne usluge, jedinstvene kontaktne točke i zajedničke baze podataka.
+
+Srodan pojam je **joined-up government** (povezana vlada), koji se posebno razvio u Ujedinjenom Kraljevstvu krajem 1990-ih. Njegova je svrha bila ispraviti fragmentaciju nastalu nakon reformi inspiriranih NPM-om: nakon razdoblja razdvajanja i decentralizacije pojavila se potreba za ponovnim povezivanjem sustava (Christensen i Lægreid, 2007).
+
+## Mreže javnih politika i partnerstva
+
+Važno mjesto u novom upravljanju zauzimaju **mreže javnih politika** (*policy networks*). Mreže nastaju kada se javne politike oblikuju i provode kroz stalne odnose više aktera. U području zdravstva to su ministarstvo, bolnice, liječničke komore, fond zdravstvenog osiguranja, privatni pružatelji, pacijentske udruge i farmaceutska industrija. Mreže mogu povećati kvalitetu javnih politika jer okupljaju znanje, informacije i resurse različitih aktera. Međutim, imaju i rizike: ako su zatvorene, mogu postati prostor za utjecaj interesnih skupina i rentijerstvo; ako su nejasno organizirane, mogu otežati odgovornost. Zato mrežno upravljanje zahtijeva snažne institucije, jasna pravila, transparentnost i sposobnost države da razlikuje suradnju od zarobljavanja politike od strane posebnih interesa.
+
+Sve važniju ulogu imaju i **partnerstva** — suradnja javnog i privatnog sektora, javnog i civilnog sektora ili različitih razina vlasti. Javno-privatna partnerstva mogu se koristiti za izgradnju infrastrukture ili pružanje usluga. No partnerstva nisu sama po sebi dobra: mogu povećati učinkovitost, ali i zamagliti odgovornost. Ako privatni partner ostvaruje profit iz javnog projekta, a rizik ostaje na državi, partnerstvo može postati fiskalno skupo. Zato je ključno pitanje ne samo tko sudjeluje, nego i pod kojim pravilima, s kojom odgovornošću i uz kakvu raspodjelu rizika i koristi.
+
+## Uključivanje građana
+
+Posebno važan element novog upravljanja jest **uključivanje građana**. NPM je građane često promatrao kao korisnike ili klijente. Novo upravljanje ide korak dalje: građani nisu samo korisnici, nego i sudionici u oblikovanju javnih politika. To se vidi u razvoju javnih savjetovanja, participativnog budžetiranja, građanskih panela i digitalnih platformi za sudjelovanje.
+
+Participacija može povećati legitimnost javnih politika jer građani lakše prihvaćaju odluke u čijem su oblikovanju sudjelovali. Može povećati i kvalitetu politika jer građani često imaju informacije o problemima koje administracija ne vidi: lokalni stanovnici znaju gdje prometna infrastruktura ne funkcionira, roditelji upozoravaju na probleme u školama, poduzetnici na administrativne prepreke. Međutim, participacija mora biti stvarna, a ne samo formalna. Ako se mišljenja građana prikupljaju tek nakon što su odluke već donesene, sudjelovanje ne povećava povjerenje nego može proizvesti dodatni cinizam.
+
+## Digitalizacija i nova država
+
+Digitalizacija dodatno mijenja raspravu o novom upravljanju. Suvremena e-uprava, digitalni identitet, interoperabilne baze podataka, elektronički potpisi i digitalne javne usluge omogućuju državi da bude učinkovitija, brža i dostupnija. Primjeri poput Estonije pokazuju da digitalizacija može biti snažan instrument modernizacije ako je povezana s institucionalnom reformom, jasnim pravilima i povjerenjem građana (Margetts i Dunleavy, 2013).
+
+Međutim, digitalna država nije samo tehničko pitanje. Ona otvara duboka pitanja javne politike: tko kontrolira podatke, kako se štiti privatnost, kako se sprječava algoritamska pristranost, što se događa s građanima koji nemaju digitalne vještine i tko je odgovoran ako automatizirani sustav donese pogrešnu odluku. Ako se digitalizacija shvati samo kao uvođenje novih aplikacija, bez promjene procesa i odgovornosti, ona može samo digitalizirati postojeću birokraciju. Prava digitalna transformacija nije premještanje papira na ekran, nego preoblikovanje javne usluge oko potreba građana i javnog interesa.
+
+## Tri logike suvremene javne uprave
+
+Novo upravljanje ne odbacuje tradicionalnu birokraciju u potpunosti. Naprotiv, ono prepoznaje da su zakonitost, profesionalnost, stabilnost i jednak tretman građana i dalje nužni. Iskustvo NPM-a pokazalo je da reforme koje preskaču osnovne administrativne kapacitete često ne uspijevaju. Tek na temelju funkcionalnih osnova mogu se graditi sofisticiraniji sustavi rezultata, digitalne platforme, partnerstva i mreže.
+
+Zato suvremena javna uprava sve više traži ravnotežu između tri logike. Prva je **birokratska logika**, koja naglašava zakonitost, pravila, jednakost postupanja i profesionalnu neutralnost. Druga je **menadžerska logika**, koja naglašava rezultate, učinkovitost, troškove i kvalitetu usluge. Treća je **mrežna i demokratska logika**, koja naglašava koordinaciju, uključivanje građana, suradnju i povjerenje. Dobra javna uprava ne može se osloniti samo na jednu od njih: ako dominira samo birokratska logika, sustav postaje spor i rigidan; ako dominira samo menadžerska, može se zanemariti javni interes; ako dominira samo mrežna, može se izgubiti jasna odgovornost.
+
+U tom smislu prijelaz od NPM-a prema novom upravljanju ne treba promatrati kao jednostavnu zamjenu jednog modela drugim, nego kao **evoluciju** javne uprave. NPM je ispravno upozorio da javni sektor mora biti učinkovitiji i usmjereniji na rezultate. Novo upravljanje dodaje da učinkovitost nije dovoljna bez koordinacije, povjerenja, legitimnosti i uključivanja građana. Tradicionalna birokracija pak podsjeća da nijedna reforma ne može uspjeti bez zakonitosti, profesionalnosti i institucionalne stabilnosti.

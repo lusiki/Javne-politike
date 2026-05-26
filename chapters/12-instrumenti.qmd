@@ -1,0 +1,73 @@
+---
+title: "Instrumenti državne intervencije"
+---
+
+Država svoju ulogu ne ostvaruje apstraktno, već kroz konkretne **instrumente javne politike**. Kada kažemo da država „intervenira", „regulira", „pomaže", „oporezuje" ili „stabilizira gospodarstvo", zapravo govorimo o različitim načinima na koje javna vlast pokušava utjecati na ponašanje pojedinaca, poduzeća, institucija i tržišta. Instrumenti javne politike su zato operativni alati kojima država pretvara ciljeve u djelovanje.
+
+Ti instrumenti mogu biti vrlo različiti. Neki izravno uključuju novac, poput poreza, javne potrošnje, subvencija i transfera. Drugi djeluju kroz pravila, zabrane, standarde i dozvole, kao što je regulacija. Treći djeluju kroz organizaciju same države, primjerice javna poduzeća, javne ustanove i agencije. Četvrti djeluju na makroekonomskoj razini, kroz fiskalnu i monetarnu politiku. U novije vrijeme sve veću važnost imaju i informacijski te bihevioralni instrumenti, koji ne počivaju na prisili ili novcu, nego na oblikovanju izbora i informacija koje građani imaju pred sobom.
+
+Ključna pouka je da isti javni cilj može biti ostvaren različitim instrumentima, ali ti instrumenti nemaju iste učinke, iste troškove ni iste političke posljedice. Ako država želi smanjiti zagađenje, može uvesti porez na emisije, propisati maksimalnu dopuštenu razinu zagađenja, subvencionirati čiste tehnologije, javno informirati potrošače ili kombinirati više mjera. Ako želi smanjiti siromaštvo, može povećati socijalne transfere, smanjiti poreze na niske dohotke, subvencionirati zapošljavanje, ulagati u obrazovanje ili regulirati minimalnu plaću. Zato je izbor instrumenta jedno od središnjih pitanja dizajna javnih politika.
+
+## Porezi
+
+Porezi su najvažniji i najvidljiviji instrument države. Oni su osnovni izvor prihoda kojim se financiraju javne funkcije, ali su istodobno i snažan instrument utjecaja na ponašanje ekonomskih subjekata. Država porezima ne prikuplja samo novac. Ona porezima mijenja cijene, poticaje, raspodjelu dohotka i odluke pojedinaca i poduzeća.
+
+U najširem smislu, porezi imaju tri velike funkcije. Prva je **fiskalna funkcija**: porezi služe za financiranje javnih dobara i usluga, poput obrazovanja, zdravstva, obrane, policije, sudstva, infrastrukture i socijalne zaštite. Druga je **redistribucijska funkcija**: porezima se može utjecati na raspodjelu dohotka i bogatstva, primjerice progresivnim oporezivanjem dohotka. Treća je **alokacijska ili korektivna funkcija**: porezima se mogu ispravljati tržišni neuspjesi, primjerice oporezivanjem aktivnosti koje stvaraju negativne eksternalije [@musgrave1989; @stiglitz2015; @gruber2019].
+
+Porezi mogu biti i instrument poticanja određenih aktivnosti. Država može koristiti porezne olakšice za ulaganja, istraživanje i razvoj, zapošljavanje određenih skupina ili energetsku obnovu. Međutim, takve olakšice treba koristiti oprezno. One mogu potaknuti poželjno ponašanje, ali mogu i smanjiti transparentnost poreznog sustava, stvoriti povlastice za određene skupine i otvoriti prostor za lobiranje. Detaljnije porezne mehanizme i teoriju oporezivanja razrađujemo u zasebnom poglavlju o porezima.
+
+## Javna potrošnja
+
+Drugi ključni instrument države je **javna potrošnja**, odnosno način na koji država koristi prikupljena sredstva. Ako porezi pokazuju kako država prikuplja novac, javna potrošnja pokazuje što država smatra prioritetom. Struktura javne potrošnje zato mnogo govori o društvenim izborima neke zemlje: koliko ulaže u obrazovanje, zdravstvo, mirovine, socijalnu zaštitu, infrastrukturu, obranu, kulturu, znanost ili zaštitu okoliša.
+
+Javna potrošnja može imati različite funkcije. Prvo, ona financira javna dobra i usluge koje tržište ne bi osiguralo u dovoljnoj mjeri. Drugo, omogućuje ulaganja u ljudski kapital, osobito kroz obrazovanje, zdravstvo i znanost. Treće, ima redistribucijsku funkciju kroz socijalne transfere, mirovine i naknade. Četvrto, može imati stabilizacijsku funkciju jer u recesiji država može povećati potrošnju kako bi ublažila pad dohotka i potražnje.
+
+No javna potrošnja nosi i rizike. Ako je loše usmjerena, može financirati programe s malim društvenim učinkom. Ako se politički teško ukida, može postati trajni proračunski teret. Ako nije transparentna, može otvoriti prostor za rentijerstvo i klijentelizam. Zato se javna potrošnja ne može vrednovati samo prema veličini: ključno pitanje nije samo koliko država troši, nego na što troši, kako troši i kakve rezultate postiže. Toj temi posvećujemo posebno poglavlje.
+
+## Regulacija
+
+**Regulacija** uključuje pravila, standarde, zabrane, dozvole i nadzorne mehanizme kojima država usmjerava ponašanje pojedinaca, poduzeća i institucija. Za razliku od poreza i javne potrošnje, regulacija često ne uključuje izravne financijske tokove kroz proračun, ali može imati vrlo snažan učinak na tržišta i društvene odnose.
+
+Država regulacijom određuje pravila tržišne utakmice. Ona propisuje standarde sigurnosti hrane i lijekova, uvjete rada, zaštitu potrošača, bankarsku regulaciju, tržišno natjecanje, zaštitu okoliša, urbanistička pravila i licenciranje određenih profesija. Bez regulacije mnoga tržišta ne bi mogla funkcionirati sigurno i predvidljivo. Regulacija je osobito važna kod prirodnih monopola, gdje država mora regulirati cijene, kvalitetu usluge i uvjete pristupa infrastrukturi.
+
+Ipak, regulacija nije bez troškova. Prekomjerna ili loše dizajnirana regulacija može povećati troškove poslovanja, smanjiti konkurenciju, usporiti inovacije i stvoriti administrativne barijere. Regulacija koja je formalno uvedena radi zaštite potrošača može u praksi zaštititi postojeće ponuđače od konkurencije [@stigler1971; @stiglitz2015]. Poseban problem je regulatorno zarobljavanje. Zato bi svaka regulacija trebala odgovoriti na nekoliko pitanja: koji problem rješava, zašto tržište samo ne može riješiti problem, postoje li blaži instrumenti, koliko regulacija košta, tko snosi trošak, tko ima korist i kako će se mjeriti njezina učinkovitost.
+
+## Subvencije
+
+**Subvencije** su oblik financijske potpore koju država dodjeljuje određenim sektorima, poduzećima, kućanstvima ili aktivnostima. One mogu biti izravne, primjerice isplata potpore iz proračuna, ili neizravne, primjerice porezne olakšice, povlašteni krediti, državna jamstva ili niže cijene javnih usluga.
+
+Subvencije se najčešće opravdavaju trima argumentima. Prvo, mogu se koristiti za poticanje aktivnosti koje imaju pozitivne eksternalije, primjerice ulaganja u istraživanje i razvoj, obrazovanje ili zelene tehnologije. Drugo, koriste se za zaštitu određenih skupina ili sektora, primjerice poljoprivrede. Treće, koriste se kao instrument industrijske politike, kada država želi potaknuti razvoj novih sektora ili strateških industrija.
+
+Međutim, subvencije su jedan od instrumenata s najvećim rizikom državnog neuspjeha. Ako su loše dizajnirane, mogu dovesti do neefikasne alokacije resursa, stvaranja ovisnosti o državnoj pomoći i očuvanja poduzeća koja dugoročno nisu konkurentna. Mogu potaknuti poduzeća da više ulažu u lobiranje nego u produktivnost i mogu postati politički teško ukidive [@tullock1967; @krueger1974; @musgrave1989]. Zato je ključno pitanje **dodatnosti**: je li subvencija potaknula aktivnost koja se inače ne bi dogodila ili je samo financirala ono što bi se dogodilo i bez nje? Dobra subvencija mora biti jasno ciljana, vremenski ograničena, transparentna i evaluirana.
+
+## Javna poduzeća
+
+U određenim sektorima država ne djeluje samo kao regulator, financijer ili naručitelj, nego i kao izravni proizvođač putem **javnih poduzeća**. Javna poduzeća najčešće djeluju u sektorima energetike, prometa, komunalnih usluga, voda, šuma, infrastrukture ili drugih područja od strateškog interesa.
+
+Razlozi za javno vlasništvo mogu biti različiti: prirodni monopoli, strateška važnost sektora ili potreba da se osigura univerzalna usluga svim građanima neovisno o lokaciji ili platežnoj sposobnosti. Javna poduzeća mogu imati važnu razvojnu i društvenu ulogu, no često se suočavaju s problemima učinkovitosti i političkog utjecaja. Budući da nisu uvijek izložena tržišnoj konkurenciji, mogu imati slabije poticaje za smanjenje troškova; budući da su u javnom vlasništvu, mogu biti izložena političkom kadroviranju i investicijama s političkim motivima.
+
+Zato kod javnih poduzeća nije dovoljno pitati trebaju li biti javna ili privatna. Važno je pitati kako se njima upravlja. Problem često nije samo vlasništvo, nego **miješanje ciljeva**: ako se od poduzeća istodobno očekuje da posluje profitabilno, zapošljava višak radnika, održava niske cijene i provodi socijalnu politiku, teško je procijeniti njegovu stvarnu učinkovitost. Ako država želi da javno poduzeće pruža uslugu ispod tržišne cijene zbog socijalnih razloga, taj trošak treba biti transparentno prikazan i financiran, a ne skriven u poslovanju poduzeća.
+
+## Informacijski instrumenti
+
+Osim poreza, javne potrošnje, regulacije i subvencija, država koristi i **informacijske instrumente**. Njima ne mijenja izravno cijene niti propisuje obvezno ponašanje, nego pokušava utjecati na odluke građana i poduzeća kroz informacije, upozorenja, preporuke, edukaciju i transparentnost.
+
+Primjeri uključuju kampanje javnog zdravlja, oznake nutritivnih vrijednosti na hrani, energetske certifikate zgrada, upozorenja na duhanskim proizvodima, javne registre i usporedne prikaze kvalitete škola ili bolnica. Takvi instrumenti polaze od ideje da građani ne donose odluke uvijek s potpunim informacijama. Informacijski instrumenti često su manje prisilni i manje skupi od regulacije ili subvencija, no njihova učinkovitost ovisi o tome jesu li informacije jasne, vjerodostojne i korisne. Samo objavljivanje podataka nije dovoljno ako građani ne razumiju što oni znače ili ako im ne vjeruju.
+
+## Bihevioralni i „nudge" instrumenti
+
+U novije vrijeme sve veću važnost dobivaju **bihevioralni instrumenti**, često povezani s pojmom *nudge*. Ti instrumenti temelje se na spoznajama bihevioralne ekonomije, koja pokazuje da ljudi ne donose uvijek odluke kao savršeno racionalni pojedinci s potpunim informacijama. Ljudi često odgađaju odluke, precjenjuju kratkoročne koristi, podcjenjuju dugoročne rizike, oslanjaju se na navike i često prihvaćaju zadane opcije.
+
+Nudge instrumenti ne zabranjuju ponašanje i ne nameću izravne financijske poticaje, nego oblikuju okruženje izbora tako da poželjno ponašanje postane lakše ili vjerojatnije. Najpoznatiji primjer je automatsko uključivanje zaposlenika u mirovinsku štednju uz mogućnost izlaska iz sustava (Thaler i Sunstein, 2008). Prednost je u tome što često mogu postići promjenu ponašanja uz relativno niske fiskalne troškove i bez tvrde prisile. Međutim, nisu prikladni za sve probleme: ako je problem siromaštvo, nedostatak infrastrukture ili snažna tržišna moć, nudge neće biti dovoljan. Bihevioralni instrumenti zato ne zamjenjuju tradicionalne instrumente, nego ih nadopunjuju.
+
+## Kombiniranje instrumenata: javne politike kao paket mjera
+
+U praksi se javne politike rijetko oslanjaju na samo jedan instrument. Najčešće se koristi kombinacija instrumenata. Klimatska politika može uključivati porez na ugljik, subvencije za obnovljive izvore energije, regulaciju emisija, javna ulaganja u mrežu i informacijske kampanje. Zdravstvena politika može uključivati javno financiranje, regulaciju lijekova, poreze na štetne proizvode i preventivne kampanje.
+
+Zato je važno razumjeti da instrumenti nisu izolirani — oni međusobno djeluju. Porez može biti učinkovitiji ako ga prati informiranje. Regulacija može biti prihvatljivija ako je kombinirana sa subvencijama za prilagodbu. Dobar dizajn javne politike zato ne znači samo odabrati jedan instrument, nego oblikovati koherentan paket mjera koji odgovara problemu, fiskalno je održiv, administrativno provediv, politički legitiman i otvoren evaluaciji.
+
+## Zaključno: instrumenti su most između ciljeva i rezultata
+
+Instrumenti javne politike predstavljaju most između državnih ciljeva i stvarnih društvenih ishoda. Država može imati plemenit cilj — smanjiti siromaštvo, povećati zaposlenost, zaštititi okoliš ili potaknuti rast — ali cilj sam po sebi nije politika. Politika nastaje tek kada se odabere instrument, osigura provedba, definiraju odgovornosti i mjere rezultati.
+
+Zato je izbor instrumenta jedno od najvažnijih pitanja javnih politika. Porezi prikupljaju prihode i mijenjaju poticaje. Javna potrošnja financira usluge, transfere i investicije. Regulacija postavlja pravila ponašanja. Subvencije potiču određene aktivnosti, ali mogu stvoriti rente. Javna poduzeća omogućuju izravnu državnu proizvodnju u strateškim sektorima, ali traže dobro upravljanje. Informacijski i bihevioralni instrumenti pokušavaju promijeniti ponašanje bez izravne prisile. Dobra javna politika ne pita samo što država želi postići, nego i kojim instrumentom, uz koje troškove, s kakvim poticajima, preko kojih institucija i s kakvom mogućnošću evaluacije.

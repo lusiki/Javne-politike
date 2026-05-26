@@ -1,0 +1,108 @@
+---
+title: "Državni neuspjesi i prepreke kvalitetnim javnim politikama"
+---
+
+## Što znači neuspjeh države?
+
+Pojam **državnog neuspjeha** označava situaciju u kojoj javna politika ne ostvaruje ciljeve zbog kojih je uvedena ili ih ostvaruje uz prevelike troškove, nepoželjne nuspojave, nepravednu raspodjelu koristi i tereta ili slabu provedbu. Drugim riječima, država može intervenirati s namjerom da riješi problem, ali rezultat može biti novi problem: skuplja administracija, distorzije u ponašanju građana i poduzeća, neučinkovita javna potrošnja, regulatorno zarobljavanje, rast javnog duga, korupcija ili gubitak povjerenja u institucije.
+
+U klasičnoj analizi javnih politika država se najčešće promatra kao odgovor na tržišne neuspjehe. Ako tržište ne proizvodi dovoljno javnih dobara, ako postoje eksternalije, monopoli, asimetrične informacije ili društveno neprihvatljive nejednakosti, država može intervenirati. Takav pogled ima snažnu teorijsku podlogu u ekonomici blagostanja [@stiglitz2015]. U tom okviru država djeluje kao korektiv tržišta.
+
+Međutim, činjenica da tržište može zakazati ne znači da će država automatski uspjeti. To je središnja pouka literature o neuspjesima države. Već je Wolf (1979) upozorio da se javna intervencija ne smije opravdavati samo postojanjem tržišnog neuspjeha, nego se mora analizirati i mogućnost da sama država proizvede neučinkovite ili neželjene ishode. U dobroj analizi javnih politika ne uspoređuje se savršeno tržište sa savršenom državom, nego dva nesavršena mehanizma društvene koordinacije: tržište i država.
+
+Neuspjesi države ne znače da država ne treba intervenirati. Oni nisu argument za automatsko povlačenje države iz javnih politika. Oni su prije svega upozorenje da svaka intervencija mora proći ozbiljan analitički test. Nije dovoljno pitati postoji li javni problem. Treba pitati može li ga država riješiti, kojim instrumentom, s kojim informacijama, preko kojih institucija, uz kakve poticaje, uz koju cijenu i s kojim rizicima. Dobra javna politika nije ona koja samo ima poželjan cilj, nego ona koja ima realističan mehanizam provedbe.
+
+## Zašto državni neuspjesi nisu isto što i „previše države"?
+
+Važno je odmah razjasniti jednu čestu pogrešku. Pojam državnog neuspjeha ne znači jednostavno da je država „prevelika" ili da je svaka intervencija pogrešna. Državni neuspjeh može se pojaviti i u velikoj i u maloj državi, u razvijenim i manje razvijenim zemljama, u socijalnoj politici, poreznoj politici, regulaciji, javnoj nabavi, zdravstvu, obrazovanju ili infrastrukturnim projektima. Problem nije samo količina intervencije, nego njezina kvaliteta, usmjerenost, provedivost i institucionalni okvir.
+
+Tanzi posebno naglašava da rasprava o ulozi države ne bi smjela biti svedena samo na pitanje veličine javne potrošnje ili poreznog opterećenja [@tanzi2011]. Dvije zemlje mogu imati sličnu veličinu države, ali vrlo različitu kvalitetu javnih usluga, razinu korupcije i sposobnost provedbe reformi. Slično tome, Fukuyama razlikuje opseg državnih funkcija od **snage države**, odnosno njezine sposobnosti da provodi pravila, prikuplja poreze, pruža javne usluge i osigurava javni poredak [@fukuyama2013]. Mala država može biti slaba ako ne može provesti osnovne funkcije, dok velika država može biti učinkovita ako ima kvalitetne institucije i visoko povjerenje.
+
+Stoga se pitanje državnih neuspjeha ne može svesti na ideološko pitanje „više ili manje države". Pravo pitanje glasi: kakva država, za koji problem, s kojim instrumentima i pod kojim pravilima? Ponekad je problem to što država intervenira previše. Ponekad je problem to što intervenira premalo. Ponekad intervenira pogrešnim instrumentom. A ponekad ima dobar instrument, ali ga ne zna provesti.
+
+## Državni neuspjeh kao problem dizajna politike
+
+Državni neuspjeh često počinje već u fazi **dizajna** javne politike. Dizajn politike odnosi se na način na koji se problem definira, cilj formulira, instrument odabire, odgovornosti raspoređuju, izvori financiranja određuju i mehanizmi provedbe postavljaju. Ako je problem krivo definiran, gotovo je sigurno da će i rješenje biti pogrešno.
+
+Primjerice, ako rast cijena stanova država protumači isključivo kao problem nedovoljne kupovne moći mladih, mogla bi uvesti subvencije za kupnju prve nekretnine. No ako je temeljni problem ograničena ponuda stanova, spora gradnja ili neuređeno tržište najma, subvencija potražnje može dodatno povećati cijene i pogoršati dostupnost stanovanja. Politika tada ne propada zato što je cilj loš, nego zato što je instrument neusklađen s uzrokom problema. Sličan se obrazac vidi kod subvencija i regulacije: dobra namjera nije dovoljna ako instrument ne odgovara prirodi problema.
+
+Zato je korisno državne neuspjehe promatrati ne kao jednu pojavu, nego kao skup različitih prepreka koje mogu narušiti dizajn i provedbu javnih politika.
+
+## Informacijski neuspjesi: država ne zna dovoljno
+
+Prvi oblik državnog neuspjeha su **informacijski neuspjesi**. Država često donosi odluke s nepotpunim, zastarjelim ili pogrešno interpretiranim informacijama. Ne zna uvijek dovoljno precizno tko je stvarni korisnik politike, koliki su stvarni troškovi, kako će građani i poduzeća promijeniti ponašanje i kakve će se posljedice pojaviti nakon provedbe. Ograničenost znanja javnih vlasti posebno je naglasio Hayek, upozoravajući da je znanje u društvu raspršeno i da ga nijedna centralna institucija ne može u potpunosti prikupiti i obraditi (Hayek, 1945).
+
+To je osobito važno kod politika koje ciljaju određene skupine. Ako država želi pomoći siromašnim kućanstvima, mora znati tko su ona, gdje žive i kakav im je dohodak. Ako nema kvalitetnih podataka, pomoć može biti loše ciljana: neki kojima je potrebna mogu ostati izvan sustava, dok je mogu dobiti i oni kojima nije potrebna. Informacijski problem posebno je izražen kada država pokušava regulirati složena tržišta, gdje regulator često zna manje od reguliranih poduzeća. Zato kvalitetna javna politika mora početi informacijama, a sve se više naglašava važnost evaluacije i politika temeljenih na dokazima.
+
+## Instrumentalni neuspjesi: dobar cilj, pogrešan alat
+
+Drugi oblik su **instrumentalni neuspjesi**, odnosno pogrešan izbor instrumenta. Ponekad je cilj politike opravdan, ali instrument nije prikladan — preskup je, preširok, administrativno kompliciran ili stvara neželjene poticaje. Izbor instrumenta mora proizlaziti iz prirode problema, institucionalnog kapaciteta i očekivanih reakcija aktera.
+
+Primjer su mjere za zaštitu siromašnijih kućanstava od rasta cijena energije. Ograničenje cijena ili smanjenje poreza na energiju politički je vidljivo i administrativno jednostavno, ali koristi i kućanstvima koja nisu siromašna i smanjuje poticaj za štednju. Preciznije ciljani transfer mogao bi biti učinkovitiji i pravedniji, ali zahtijeva bolje podatke i administrativni kapacitet. Instrumentalni neuspjeh javlja se i kada se za svaki problem pokušava koristiti isti tip instrumenta: ako je sustav navikao probleme rješavati subvencijama, svaki novi problem postaje zahtjev za novom potporom; ako je sklon osnivanju novih tijela, svaki problem završava novom agencijom. Dobar dizajn zato zahtijeva usklađivanje problema i instrumenta.
+
+## Provedbeni neuspjesi: politika ne završava donošenjem zakona
+
+Treći oblik su **provedbeni neuspjesi**. Javne politike ne završavaju donošenjem zakona, strategije ili programa. Tada zapravo počinje najteži dio: provedba. Netko mora obraditi zahtjeve, izdati rješenja, nadzirati korisnike, provoditi javnu nabavu i pratiti rezultate. Ako javna uprava nema dovoljno stručnih ljudi, digitalnih sustava ili jasnih procedura, politika može ostati samo dobra ideja na papiru.
+
+U teoriji javnih politika ovaj je problem poznat kao **implementacijski jaz** — razlika između onoga što je formalno odlučeno i onoga što se stvarno događa u provedbi (Pressman i Wildavsky, 1973). Lipsky (1980) dodatno naglašava važnost ulične birokracije: učitelji, liječnici, policajci i službenici na šalterima često u praksi odlučuju kako će politika stvarno izgledati za građane. Provedbeni neuspjeh posebno je važan za zemlje koje često donose reforme pod pritiskom kriza ili međunarodnih preporuka, ali nemaju dovoljno kapaciteta za njihovu provedbu. Schick (1998) upozorava da zemlje slabijeg administrativnog kapaciteta ne bi trebale nekritički preuzimati sofisticirane reformske modele. Provedba zato nije tehnički detalj koji dolazi nakon „prave" politike — provedba je dio politike.
+
+## Koordinacijski neuspjesi: problem administrativnih silosa
+
+Četvrti oblik su **koordinacijski neuspjesi**. Mnoge javne politike zahtijevaju suradnju više institucija. Problem siromaštva nije samo problem socijalne politike, nego i obrazovanja, zdravstva, stanovanja, tržišta rada i lokalne samouprave. Klimatska politika uključuje energetiku, promet, industriju, poljoprivredu, poreze i prostorno planiranje.
+
+Ako svaka institucija djeluje unutar vlastitog administrativnog „silosa", politika može izgubiti koherentnost. Građanin ili poduzeće tada mora sam povezivati sustav: donositi iste dokumente na više mjesta i snositi trošak administrativne nepovezanosti. Koordinacijski neuspjeh često se vidi kada više institucija ima dio odgovornosti, ali nijedna nema punu odgovornost za rezultat — svi su formalno uključeni, ali nitko nije stvarno odgovoran. Može nastati i između razina vlasti: ako odgovornosti i izvori financiranja nisu jasno povezani, svaka razina može prebacivati odgovornost na drugu. Zato kvalitetan dizajn mora unaprijed odgovoriti: tko odlučuje, tko financira, tko provodi, tko nadzire i tko odgovara za rezultat?
+
+## Politički neuspjesi: kada izborni poticaji oblikuju politike
+
+Peti oblik su **politički neuspjesi**, kojima se posebno bavi teorija javnog izbora. Javne politike nastaju u političkom procesu, a politički proces ima vlastite poticaje. Političari mogu preferirati politike koje donose vidljive koristi prije izbora, dok se troškovi odgađaju u budućnost. Mogu izbjegavati nepopularne reforme, čak i kada su dugoročno nužne [@nordhaus1975].
+
+Politički neuspjesi mogu se pojaviti i kada su koristi politike koncentrirane, a troškovi raspršeni. Mala, dobro organizirana skupina može snažno lobirati za potporu, dok su troškovi raspoređeni na velik broj poreznih obveznika koji nemaju poticaj organizirati se [@olson1965]. Zato je politički neuspjeh prepreka kvalitetnom dizajnu: dobra politika često zahtijeva dugoročnost, ali politički sustav nagrađuje kratkoročnu vidljivost; dobra politika često zahtijeva ukidanje neučinkovitih programa, ali su njihovi korisnici dobro organizirani.
+
+## Birokratski neuspjesi: nužan kapacitet koji može zakazati
+
+Šesti oblik su **birokratski neuspjesi**. Birokracija je nužna za provedbu javnih politika — bez profesionalne javne uprave nema porezne naplate, provedbe zakona ni upravljanja proračunom. Međutim, birokracija može razviti i vlastite interese: može širiti procedure, čuvati nadležnosti, povećavati proračune i opirati se promjenama. To ne znači da su javni službenici nužno loši; problem je u tome da svaka velika organizacija razvija rutine i obrambene mehanizme [@niskanen1971].
+
+Birokratski neuspjesi vide se i kroz **pretjerani formalizam**: procedura postaje važnija od rezultata. Institucija može uredno poštovati formalna pravila, ali građanin i dalje ne dobiva kvalitetnu uslugu. Zato birokraciju treba promatrati dvostruko — ona je preduvjet sposobne države, ali i mogući izvor državnih neuspjeha. Kvalitetna javna politika mora imati profesionalnu upravu, ali i mehanizme odgovornosti, transparentnosti, evaluacije i učenja.
+
+## Regulatorni neuspjesi: kada pravila štite pogrešne interese
+
+Sedmi oblik su **regulatorni neuspjesi**. Regulacija može zaštititi potrošače i okoliš, ali može i zakazati — biti prekomplicirana, preskupa, zastarjela ili neusklađena s ciljem. Najpoznatiji oblik je **regulatorno zarobljavanje**, kada regulator počinje više služiti interesima regulirane industrije nego javnom interesu [@stigler1971]. Regulatorni neuspjeh može nastati i bez otvorenog zarobljavanja: pravila se gomilaju kroz vrijeme jer se za svaki novi problem dodaje nova procedura, a stare se ne ukidaju, pa sustav postaje sve složeniji. Poseban problem nastaje kada se regulacijom pokušava ostvariti fiskalni ili socijalni cilj koji bi bilo transparentnije ostvariti kroz proračun — trošak se tada ne vidi u proračunu, ali se ipak negdje pojavljuje, u višim cijenama ili nižoj kvaliteti usluge.
+
+## Fiskalni neuspjesi: kada se troškovi skrivaju ili odgađaju
+
+Osmi oblik su **fiskalni neuspjesi**. Javna politika gotovo uvijek ima fiskalnu dimenziju. Čak i kada se ne financira izravno kroz proračun, može stvarati implicitne obveze, jamstva, porezne izdatke ili buduće troškove. Fiskalni neuspjeh nastaje kada se politike oblikuju bez jasne procjene dugoročnih troškova ili kada se troškovi prebacuju na buduće generacije.
+
+Posebno važan problem su **kvazifiskalne aktivnosti**. Država ponekad želi ostvariti javni cilj, ali ga ne financira otvoreno kroz proračun — umjesto izravne subvencije koristi regulaciju, kontrolu cijena, obvezne mandate ili državna jamstva. Takve mjere mogu prikriti stvarni trošak politike. To je posebno važno za dizajn javnih politika jer **ono što nije u proračunu nije nužno besplatno**. Kontrola cijena može izgledati kao politika bez proračunskog troška, ali se trošak pojavljuje kroz nestašice, lošiju kvalitetu ili manje investicije. Zato kvalitetna javna politika mora uzeti u obzir i vidljive i skrivene fiskalne troškove.
+
+## Neuspjesi države i povjerenje u institucije
+
+Državni neuspjesi posebno su opasni jer mogu narušiti **povjerenje** građana u institucije. Kada građani vide da se zakoni ne provode jednako, da se javni novac troši neučinkovito ili da regulacija pogoduje uskim skupinama, smanjuje se spremnost na suradnju s državom. Povjerenje je važno jer javne politike često ovise o dobrovoljnoj suradnji građana: porezni sustav ne može funkcionirati samo kroz nadzor i kazne, a zdravstvene i obrazovne politike ne mogu uspjeti bez suradnje građana.
+
+Kada povjerenje padne, ljudi lakše opravdavaju izbjegavanje poreza i zaobilaženje pravila. Tako nastaje negativna spirala: slabe institucije proizvode loše politike, loše politike smanjuju povjerenje, a manje povjerenja dodatno slabi provedbu. Zato državni neuspjesi nisu samo ekonomski ili administrativni problem — oni su i politički i društveni problem jer narušavaju legitimitet javnih politika.
+
+## Kako državne neuspjehe ugraditi u dizajn javnih politika?
+
+Pojam državnih neuspjeha izravno je povezan s dizajnom javnih politika. Dobar dizajn ne znači samo odabrati teorijski prikladan instrument. Dobar dizajn znači unaprijed razmišljati o informacijama, poticajima, administrativnim kapacitetima, političkim pritiscima, koordinaciji, fiskalnim rizicima i mogućnosti evaluacije. Politika koja zanemaruje te elemente može izgledati uvjerljivo u strategiji, ali zakazati u stvarnosti.
+
+Iz toga proizlazi važna lekcija: neuspjesi države nisu samo prepreka provedbi, nego moraju biti ugrađeni u sam proces dizajna. Dobra javna politika mora biti dizajnirana za stvarni, a ne idealni svijet. Mora pretpostaviti da su informacije ograničene, da akteri reagiraju na poticaje, da administracija ima kapacitetska ograničenja, da interesne skupine pokušavaju utjecati na pravila i da politički ciklus stvara pritisak na kratkoročne odluke.
+
+### Test državnog neuspjeha
+
+U praktičnom smislu, svaka kvalitetna javna politika trebala bi proći svojevrsni **test državnog neuspjeha**. Taj test ne služi tome da se politika unaprijed odbaci, nego da se unaprijed prepoznaju rizici. Pitanja glase:
+
+1. Postoji li jasno definiran javni problem?
+2. Je li problem posljedica tržišnog neuspjeha, nejednakosti, institucionalnog ograničenja ili prethodnog državnog neuspjeha?
+3. Zašto je upravo država prikladan akter za rješavanje tog problema?
+4. Koji instrument stvara najmanje distorzija i najveću vjerojatnost uspjeha?
+5. Ima li država informacije, ljude, organizaciju i tehnologiju za provedbu?
+6. Tko dobiva, tko gubi i tko može utjecati na dizajn politike?
+7. Kako će se politika financirati i koji su njezini dugoročni fiskalni rizici?
+8. Kako će se mjeriti rezultati i kada će se politika promijeniti ili ukinuti ako ne funkcionira?
+
+Takav pristup mijenja način razmišljanja o javnim politikama. Umjesto da se krene od instrumenta — „treba uvesti subvenciju", „treba donijeti zakon", „treba osnovati agenciju" — analiza mora krenuti od problema, poticaja i institucionalnog konteksta. Loše javne politike često ne propadaju zato što nisu imale dobar cilj, nego zato što su podcijenile državne neuspjehe.
+
+## Zaključno: ne protiv države, nego za bolju državu
+
+Analiza državnih neuspjeha nije argument protiv države. Ona je argument protiv naivnog pogleda na državu. Složena društva trebaju državu: za javna dobra, sigurnost, infrastrukturu, obrazovanje, zdravstvo, socijalnu zaštitu, regulaciju tržišta i stabilizaciju gospodarstva. Ali sposobna država nije ona koja samo mnogo intervenira, nego ona koja zna kada intervenirati, kojim instrumentom, s kojim kapacitetom i uz kakvu odgovornost.
+
+Zato je najvažnija poruka ovog poglavlja sljedeća: država je nužna za rješavanje mnogih društvenih problema, ali nije savršen instrument. Dizajn kvalitetnih javnih politika zahtijeva dvostruku svijest: svijest o tome gdje tržište zakazuje i svijest o tome gdje država može zakazati. To je ujedno i poveznica između klasične analize javnih politika, teorije javnog izbora i institucionalne ekonomike: tržišni neuspjesi objašnjavaju zašto država ulazi u javne politike, javni izbor objašnjava zašto država može zakazati, a institucionalna i konstitucionalna ekonomika objašnjavaju kakva pravila i kapaciteti mogu smanjiti vjerojatnost tih neuspjeha. Cilj nije manje države pod svaku cijenu, niti više države kao automatsko rješenje. Cilj je **bolja država**: država koja zna prepoznati problem, odabrati prikladan instrument, provesti politiku, mjeriti učinke, učiti iz pogrešaka i odgovorno koristiti javne resurse.
