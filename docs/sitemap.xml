@@ -2,71 +2,87 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://lusiki.github.io/Javne-politike/index.html</loc>
-    <lastmod>2026-05-12T10:06:21.090Z</lastmod>
+    <lastmod>2026-05-26T07:25:38.496Z</lastmod>
   </url>
   <url>
-    <loc>https://lusiki.github.io/Javne-politike/chapters/01-pristupi.html</loc>
-    <lastmod>2026-05-11T05:56:12.576Z</lastmod>
+    <loc>https://lusiki.github.io/Javne-politike/chapters/00-uvod.html</loc>
+    <lastmod>2026-05-26T06:37:20.475Z</lastmod>
   </url>
   <url>
-    <loc>https://lusiki.github.io/Javne-politike/chapters/02-zasto-drzava.html</loc>
-    <lastmod>2026-05-11T11:03:34.090Z</lastmod>
+    <loc>https://lusiki.github.io/Javne-politike/chapters/01-uloga-drzave.html</loc>
+    <lastmod>2026-05-26T06:41:09.570Z</lastmod>
   </url>
   <url>
-    <loc>https://lusiki.github.io/Javne-politike/chapters/03-musgrave.html</loc>
-    <lastmod>2026-05-11T06:44:48.321Z</lastmod>
+    <loc>https://lusiki.github.io/Javne-politike/chapters/02-alokacijska-funkcija.html</loc>
+    <lastmod>2026-05-26T09:14:08.374Z</lastmod>
   </url>
   <url>
-    <loc>https://lusiki.github.io/Javne-politike/chapters/04-institucije.html</loc>
-    <lastmod>2026-05-11T05:56:12.577Z</lastmod>
+    <loc>https://lusiki.github.io/Javne-politike/chapters/03-distribucijska-funkcija.html</loc>
+    <lastmod>2026-05-26T06:56:07.007Z</lastmod>
   </url>
   <url>
-    <loc>https://lusiki.github.io/Javne-politike/chapters/05-konstitucionalna.html</loc>
-    <lastmod>2026-05-11T06:13:22.063Z</lastmod>
+    <loc>https://lusiki.github.io/Javne-politike/chapters/04-stabilizacijska-funkcija.html</loc>
+    <lastmod>2026-05-26T06:58:01.982Z</lastmod>
   </url>
   <url>
-    <loc>https://lusiki.github.io/Javne-politike/chapters/06-javni-izbor.html</loc>
-    <lastmod>2026-05-11T06:23:20.622Z</lastmod>
+    <loc>https://lusiki.github.io/Javne-politike/chapters/05-javni-izbor.html</loc>
+    <lastmod>2026-05-26T06:59:02.953Z</lastmod>
   </url>
   <url>
-    <loc>https://lusiki.github.io/Javne-politike/chapters/07-kako-odlucujemo.html</loc>
-    <lastmod>2026-05-11T06:13:22.064Z</lastmod>
+    <loc>https://lusiki.github.io/Javne-politike/chapters/06-kolektivni-izbor.html</loc>
+    <lastmod>2026-05-26T08:19:14.530Z</lastmod>
   </url>
   <url>
-    <loc>https://lusiki.github.io/Javne-politike/chapters/08-glasovanje.html</loc>
-    <lastmod>2026-05-11T05:56:12.584Z</lastmod>
+    <loc>https://lusiki.github.io/Javne-politike/chapters/07-stranke-izbori.html</loc>
+    <lastmod>2026-05-26T08:21:38.652Z</lastmod>
   </url>
   <url>
-    <loc>https://lusiki.github.io/Javne-politike/chapters/09-stranke-kandidati.html</loc>
-    <lastmod>2026-05-11T05:56:12.586Z</lastmod>
+    <loc>https://lusiki.github.io/Javne-politike/chapters/08-interesne-skupine.html</loc>
+    <lastmod>2026-05-26T08:22:27.175Z</lastmod>
   </url>
   <url>
-    <loc>https://lusiki.github.io/Javne-politike/chapters/10-birokrati.html</loc>
-    <lastmod>2026-05-11T05:56:12.586Z</lastmod>
+    <loc>https://lusiki.github.io/Javne-politike/chapters/09-birokracija.html</loc>
+    <lastmod>2026-05-26T07:05:05.394Z</lastmod>
   </url>
   <url>
-    <loc>https://lusiki.github.io/Javne-politike/chapters/11-interesne-skupine.html</loc>
-    <lastmod>2026-05-11T05:56:12.587Z</lastmod>
+    <loc>https://lusiki.github.io/Javne-politike/chapters/10-institucionalna-ekonomika.html</loc>
+    <lastmod>2026-05-26T07:07:20.261Z</lastmod>
   </url>
   <url>
-    <loc>https://lusiki.github.io/Javne-politike/chapters/12-drzavna-potrosnja.html</loc>
-    <lastmod>2026-05-11T05:56:12.587Z</lastmod>
+    <loc>https://lusiki.github.io/Javne-politike/chapters/11-konstitucionalna-ekonomika.html</loc>
+    <lastmod>2026-05-26T07:09:50.730Z</lastmod>
   </url>
   <url>
-    <loc>https://lusiki.github.io/Javne-politike/chapters/13-porezi.html</loc>
-    <lastmod>2026-05-11T09:42:27.045Z</lastmod>
+    <loc>https://lusiki.github.io/Javne-politike/chapters/12-instrumenti.html</loc>
+    <lastmod>2026-05-26T07:11:45.259Z</lastmod>
   </url>
   <url>
-    <loc>https://lusiki.github.io/Javne-politike/chapters/14-odluke-cba.html</loc>
-    <lastmod>2026-05-11T05:56:12.588Z</lastmod>
+    <loc>https://lusiki.github.io/Javne-politike/chapters/13-javna-potrosnja.html</loc>
+    <lastmod>2026-05-26T07:13:39.118Z</lastmod>
   </url>
   <url>
-    <loc>https://lusiki.github.io/Javne-politike/chapters/15-odluke-reforme.html</loc>
-    <lastmod>2026-05-11T06:36:39.190Z</lastmod>
+    <loc>https://lusiki.github.io/Javne-politike/chapters/14-porezi.html</loc>
+    <lastmod>2026-05-26T09:14:57.381Z</lastmod>
   </url>
   <url>
-    <loc>https://lusiki.github.io/Javne-politike/chapters/16-zakljucak.html</loc>
-    <lastmod>2026-05-11T05:56:12.589Z</lastmod>
+    <loc>https://lusiki.github.io/Javne-politike/chapters/15-drzavni-neuspjesi.html</loc>
+    <lastmod>2026-05-26T07:17:10.673Z</lastmod>
+  </url>
+  <url>
+    <loc>https://lusiki.github.io/Javne-politike/chapters/16-novi-javni-menadzment.html</loc>
+    <lastmod>2026-05-26T07:18:38.865Z</lastmod>
+  </url>
+  <url>
+    <loc>https://lusiki.github.io/Javne-politike/chapters/17-novo-upravljanje.html</loc>
+    <lastmod>2026-05-26T07:20:01.023Z</lastmod>
+  </url>
+  <url>
+    <loc>https://lusiki.github.io/Javne-politike/chapters/18-cba-evaluacija.html</loc>
+    <lastmod>2026-05-26T07:22:04.863Z</lastmod>
+  </url>
+  <url>
+    <loc>https://lusiki.github.io/Javne-politike/chapters/19-reforme.html</loc>
+    <lastmod>2026-05-26T07:23:54.667Z</lastmod>
   </url>
   <url>
     <loc>https://lusiki.github.io/Javne-politike/references.html</loc>
@@ -83,9 +99,5 @@
   <url>
     <loc>https://lusiki.github.io/Javne-politike/alat.html</loc>
     <lastmod>2026-05-11T09:10:20.016Z</lastmod>
-  </url>
-  <url>
-    <loc>https://lusiki.github.io/Javne-politike/chapters/00-prije-pocetka.html</loc>
-    <lastmod>2026-05-12T08:31:04.650Z</lastmod>
   </url>
 </urlset>
