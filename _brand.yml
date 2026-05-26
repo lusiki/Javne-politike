@@ -2,41 +2,45 @@ meta:
   name: "Sve što želite znati o državi i javnim politikama u Hrvatskoj"
   link: https://lusiki.github.io/Javne-politike/
 
+## STATECRAFT palette — paper, ink, verdigris (primary), oxblood (emphasis), ochre (archival).
+## Source: Claude design package "Statecraft" (colors_and_type.css). Branch: design/statecraft-v2.
 color:
   palette:
-    near-black: "#171411"
-    slate: "#5A4F3F"
-    brick: "#9C302B"
-    navy: "#2D5A8E"
-    warm-grey: "#9F907B"
-    light-warm: "#EFE5D5"
-    cream: "#F6F1E8"
-    paper: "#EFE7D5"
-  foreground: near-black
-  background: cream
-  primary: near-black
-  secondary: slate
-  success: "#2F7A5C"
-  info: navy
-  warning: "#C57832"
-  danger: brick
+    paper: "#F2EDE3"           # warm cream — default background (nikad pure white)
+    paper-soft: "#EAE3D4"      # za hover/secondary
+    ink: "#1C1916"             # near-black with brown undertone (nikad pure black)
+    ink-soft: "#3A332D"        # secondary text
+    ink-mute: "#6B6357"        # tertiary / captions
+    verdigris: "#4A6B5C"       # PRIMARY action / link — oxidized bronze
+    verdigris-deep: "#3A5648"
+    oxblood: "#6B1F26"         # emphasis / destructive only
+    ochre: "#C8985E"            # archival / timeline accent
+    ochre-deep: "#9A6F38"
+  foreground: ink
+  background: paper
+  primary: verdigris
+  secondary: ink-soft
+  success: verdigris-deep
+  info: "#2D5A8E"
+  warning: ochre-deep
+  danger: oxblood
 
 typography:
   fonts:
-    - family: "Geist"
-      source: google
-    - family: "Geist Mono"
-      source: google
     - family: "Newsreader"
       source: google
+    - family: "Public Sans"
+      source: google
+    - family: "IBM Plex Mono"
+      source: google
   base:
-    family: "Geist"
+    family: "Public Sans"
     size: 1.02rem
     line-height: 1.6
   headings:
     family: "Newsreader"
-    weight: 600
-    color: near-black
+    weight: 500
+    color: ink
   monospace:
-    family: "Geist Mono"
+    family: "IBM Plex Mono"
     size: 0.85em

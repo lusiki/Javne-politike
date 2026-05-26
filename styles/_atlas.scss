@@ -1,0 +1,290 @@
+// =============================================================
+// Statecraft · Atlas — Podaci dashboard
+// Scoped to .atlas-page so it doesn't leak into chapter pages.
+// Tokens reused from custom.scss ($brand-cream paper, $brand-charcoal ink,
+// $brand-gold verdigris, $sc-ochre, $sc-rule*).
+// =============================================================
+
+.atlas-page {
+  // The page is wide; suppress the default Quarto content max-width.
+  main#quarto-document-content,
+  .page-columns,
+  .quarto-title-block { max-width: none !important; }
+
+  #title-block-header { display: none; }
+
+  // Hide Quarto's book sidebar (chapter list, search, TOC margins) on the
+  // Atlas page so our own rail is the leftmost column.
+  #quarto-sidebar,
+  #quarto-margin-sidebar,
+  .sidebar.sidebar-navigation,
+  .quarto-secondary-nav { display: none !important; }
+  #quarto-content > * { margin-left: 0 !important; }
+
+  .atlas {
+    display: grid !important;
+    grid-template-columns: 300px minmax(0, 1fr) !important;
+    grid-template-rows: auto !important;
+    grid-template-areas: none !important;
+    gap: 2.5rem;
+    align-items: start;
+    padding: 1.5rem 2rem 4rem;
+    max-width: 1440px;
+    width: 100% !important;
+    margin: 0 auto;
+    color: $brand-charcoal;
+  }
+  // Defensive: if Quarto still wraps as .page-columns, force our children
+  // into their two columns rather than the Quarto column tracks.
+  .atlas > .atlas-rail  { grid-column: 1 !important; grid-row: 1 !important; }
+  .atlas > .atlas-panel { grid-column: 2 !important; grid-row: 1 !important; }
+
+  // ---------- Indicator rail ----------
+  .atlas-rail {
+    border: 1px solid $sc-rule;
+    background: $brand-cream;
+    padding: 1.25rem 1rem 1.5rem;
+    position: sticky;
+    top: 5rem;
+    max-height: calc(100vh - 6rem);
+    overflow-y: auto;
+
+    &__brand {
+      font-family: $brand-font-serif;
+      font-size: 0.95rem;
+      letter-spacing: 0.02em;
+      color: $brand-charcoal;
+      margin-bottom: 0.15rem;
+      &::before { content: "§ "; color: $sc-rule-strong; font-style: italic; }
+    }
+    &__lede {
+      font-family: $brand-font-sans;
+      font-size: 0.78rem;
+      color: $brand-slate;
+      font-style: italic;
+      margin-bottom: 1.1rem;
+      border-bottom: 1px solid $sc-rule-faint;
+      padding-bottom: 0.9rem;
+    }
+    &__search {
+      width: 100%;
+      font-family: $brand-font-sans;
+      font-size: 0.82rem;
+      padding: 0.45rem 0.65rem;
+      border: 1px solid $sc-rule;
+      background: rgba(255,255,255,0.4);
+      color: $brand-charcoal;
+      margin-bottom: 1.1rem;
+      &::placeholder { color: $brand-warm-grey; }
+      &:focus { outline: none; border-color: $brand-gold; }
+    }
+
+    &__section {
+      font-family: $brand-font-sans;
+      font-size: 0.7rem;
+      font-weight: 600;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: $brand-slate;
+      margin: 1rem 0 0.4rem;
+      &::before { content: "§ "; color: $sc-rule-strong; }
+    }
+
+    &__item {
+      display: grid;
+      grid-template-columns: 2rem 1fr auto;
+      align-items: baseline;
+      gap: 0.45rem;
+      padding: 0.45rem 0.5rem;
+      cursor: pointer;
+      border-left: 2px solid transparent;
+      font-family: $brand-font-sans;
+      font-size: 0.85rem;
+      line-height: 1.3;
+      color: $brand-charcoal;
+      transition: background 0.12s ease;
+
+      &:hover { background: $brand-light-gold; }
+      &.is-active {
+        background: $brand-light-gold;
+        border-left-color: $brand-gold;
+        font-weight: 500;
+      }
+      &.is-disabled {
+        color: $brand-warm-grey;
+        cursor: not-allowed;
+        &:hover { background: transparent; }
+      }
+
+      .n  { font-variant-numeric: tabular-nums; color: $brand-slate; font-size: 0.78rem; }
+      .name { }
+      .unit {
+        font-size: 0.7rem;
+        color: $brand-slate;
+        font-variant-numeric: tabular-nums;
+        letter-spacing: 0.05em;
+      }
+    }
+  }
+
+  // ---------- Main panel ----------
+  .atlas-panel {
+    min-width: 0;
+    position: relative;
+
+    &__breadcrumb {
+      font-family: $brand-font-sans;
+      font-size: 0.72rem;
+      font-weight: 600;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: $brand-slate;
+      margin-bottom: 0.4rem;
+      &::before { content: "§ "; color: $sc-rule-strong; }
+    }
+    &__title {
+      font-family: $brand-font-serif;
+      font-weight: 400;
+      font-size: 2.4rem;
+      line-height: 1.15;
+      letter-spacing: -0.01em;
+      margin: 0 0 1.2rem;
+      color: $brand-charcoal;
+      max-width: 80%;
+    }
+    &__actions {
+      position: absolute;
+      top: 0; right: 0;
+      display: flex; gap: 0.4rem;
+      button {
+        width: 2.1rem; height: 2.1rem;
+        border: 1px solid $sc-rule;
+        background: $brand-cream;
+        color: $brand-charcoal;
+        font-size: 0.95rem;
+        line-height: 1;
+        cursor: pointer;
+        display: inline-flex; align-items: center; justify-content: center;
+        &:hover { background: $brand-light-gold; border-color: $brand-gold; }
+      }
+    }
+
+    &__tabs {
+      display: flex;
+      gap: 1.4rem;
+      border-bottom: 1px solid $sc-rule;
+      margin-bottom: 1.25rem;
+      .tab {
+        font-family: $brand-font-sans;
+        font-size: 0.88rem;
+        padding: 0.55rem 0.1rem;
+        border-bottom: 2px solid transparent;
+        margin-bottom: -1px;
+        cursor: pointer;
+        color: $brand-slate;
+        &.is-active { color: $brand-charcoal; border-bottom-color: $brand-charcoal; font-weight: 600; }
+        &.is-disabled { color: $brand-warm-grey; cursor: not-allowed; }
+      }
+    }
+
+    &__table {
+      background: $brand-cream;
+      border: 1px solid $sc-rule;
+      padding: 1rem 1.25rem 1.5rem;
+      max-height: 560px;
+      overflow: auto;
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        font-family: $brand-font-sans;
+        font-size: 0.85rem;
+        color: $brand-charcoal;
+      }
+      th, td {
+        text-align: right;
+        padding: 0.45rem 0.7rem;
+        border-bottom: 1px solid $sc-rule-faint;
+        font-variant-numeric: tabular-nums;
+      }
+      th {
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+        font-size: 0.7rem;
+        font-weight: 600;
+        color: $brand-slate;
+        border-bottom: 1px solid $sc-rule;
+        position: sticky; top: 0;
+        background: $brand-cream;
+      }
+      th:first-child, td:first-child {
+        text-align: left;
+        font-family: $brand-font-serif;
+        font-variant-numeric: normal;
+        color: $brand-charcoal;
+      }
+      tbody tr:hover { background: $brand-light-gold; }
+    }
+
+    &__viz {
+      position: relative;
+      background:
+        linear-gradient(to right, $sc-rule-faint 1px, transparent 1px) 0 0 / 48px 48px,
+        linear-gradient(to bottom, $sc-rule-faint 1px, transparent 1px) 0 0 / 48px 48px,
+        $brand-cream;
+      border: 1px solid $sc-rule;
+      padding: 1.25rem 1.5rem 1.5rem;
+      min-height: 480px;
+    }
+
+    &__toolbar {
+      display: flex;
+      gap: 1rem;
+      align-items: center;
+      margin-bottom: 0.75rem;
+      font-family: $brand-font-sans;
+      font-size: 0.82rem;
+      color: $brand-slate;
+      label { margin-right: 0.4rem; }
+      select {
+        font-family: $brand-font-sans;
+        font-size: 0.82rem;
+        padding: 0.25rem 0.4rem;
+        border: 1px solid $sc-rule;
+        background: $brand-cream;
+        color: $brand-charcoal;
+      }
+    }
+
+    &__legend {
+      position: absolute;
+      right: 1.25rem;
+      top: 1.25rem;
+      background: $brand-cream;
+      border: 1px solid $sc-rule;
+      padding: 0.85rem 1rem 0.9rem;
+      max-width: 320px;
+      box-shadow: 0 4px 18px rgba(28,25,22,0.06);
+      font-family: $brand-font-sans;
+      .unit-chip {
+        font-size: 0.7rem; letter-spacing: 0.14em; text-transform: uppercase;
+        color: $brand-slate; margin-bottom: 0.25rem;
+      }
+      .legend-title {
+        font-family: $brand-font-serif;
+        font-size: 1rem; color: $brand-charcoal; margin-bottom: 0.55rem;
+      }
+      .legend-source {
+        font-size: 0.72rem; color: $brand-slate; font-style: italic;
+        margin-top: 0.55rem; line-height: 1.4;
+      }
+    }
+  }
+
+  // ---------- Responsive ----------
+  @media (max-width: 720px) {
+    .atlas { grid-template-columns: 1fr; }
+    .atlas-rail { position: static; max-height: none; }
+    .atlas-panel__title { max-width: 100%; font-size: 1.8rem; }
+    .atlas-panel__actions { position: static; margin-bottom: 0.6rem; }
+  }
+}

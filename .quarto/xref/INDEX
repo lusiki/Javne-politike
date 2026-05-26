@@ -133,5 +133,62 @@
   },
   "chapters/00-prije-pocetka.qmd": {
     "00-prije-pocetka.html": "1fe52351"
+  },
+  "chapters/01-uloga-drzave.qmd": {
+    "01-uloga-drzave.html": "d457c743"
+  },
+  "chapters/02-alokacijska-funkcija.qmd": {
+    "02-alokacijska-funkcija.html": "737fe014"
+  },
+  "chapters/03-distribucijska-funkcija.qmd": {
+    "03-distribucijska-funkcija.html": "36e4145d"
+  },
+  "chapters/04-stabilizacijska-funkcija.qmd": {
+    "04-stabilizacijska-funkcija.html": "ffa0cb21"
+  },
+  "chapters/06-kolektivni-izbor.qmd": {
+    "06-kolektivni-izbor.html": "266acb43"
+  },
+  "chapters/07-stranke-izbori.qmd": {
+    "07-stranke-izbori.html": "19c8d232"
+  },
+  "chapters/08-interesne-skupine.qmd": {
+    "08-interesne-skupine.html": "503429ee"
+  },
+  "chapters/09-birokracija.qmd": {
+    "09-birokracija.html": "4a841cca"
+  },
+  "chapters/10-institucionalna-ekonomika.qmd": {
+    "10-institucionalna-ekonomika.html": "480fdd63"
+  },
+  "chapters/11-konstitucionalna-ekonomika.qmd": {
+    "11-konstitucionalna-ekonomika.html": "a48c9381"
+  },
+  "chapters/12-instrumenti.qmd": {
+    "12-instrumenti.html": "dd092700"
+  },
+  "chapters/13-javna-potrosnja.qmd": {
+    "13-javna-potrosnja.html": "2067ef8b"
+  },
+  "chapters/14-porezi.qmd": {
+    "14-porezi.html": "3e53112d"
+  },
+  "chapters/15-drzavni-neuspjesi.qmd": {
+    "15-drzavni-neuspjesi.html": "708c6840"
+  },
+  "chapters/16-novi-javni-menadzment.qmd": {
+    "16-novi-javni-menadzment.html": "f26f15d4"
+  },
+  "chapters/17-novo-upravljanje.qmd": {
+    "17-novo-upravljanje.html": "15ece09d"
+  },
+  "chapters/18-cba-evaluacija.qmd": {
+    "18-cba-evaluacija.html": "d22f6998"
+  },
+  "chapters/19-reforme.qmd": {
+    "19-reforme.html": "5839acd7"
+  },
+  "podaci.qmd": {
+    "podaci.html": "76970274"
   }
 }

@@ -15,7 +15,7 @@ book:
       url: "https://www.unicath.hr/odjeli-i-fakultet/nastavnici/petra-palic"
     - name: "Luka Sikić"
       email: "luka.sikic@unicath.hr"
-      url: "https://www.unicath.hr/odjeli-i-fakultet/nastavnici/luka-sikic"
+      url: "https://www.lukasikic.info/"
 
   date: last-modified
   date-format: "D MMMM YYYY"
@@ -36,6 +36,8 @@ book:
         href: resursi.html
       - text: "Alat"
         href: alat.html
+      - text: "Podaci"
+        href: podaci.html
     right: []
 
   search:
@@ -95,6 +97,7 @@ book:
     - vodic.qmd
     - resursi.qmd
     - alat.qmd
+    - podaci.qmd
 
 bibliography: references.bib
 

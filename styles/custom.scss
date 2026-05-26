@@ -1,36 +1,47 @@
 /*-- scss:defaults --*/
 
 // =============================================================
-// Paleta — modern academic-minimalist (a la fatih.ai/airesearch)
+// Paleta — STATECRAFT (paper / ink / verdigris)
 // =============================================================
-// Stara imena varijabli su zadržana radi kompatibilnosti s ostatkom
-// SCSS-a, ali su semantički preusmjerena:
-//   $brand-navy   → near-black (boja teksta i naslova)
-//   $brand-gold   → brick red  (PRIMARNI topli akcent)
-//   $brand-burgundy → brick red (isti akcent — unifikacija)
-//   $brand-charcoal → warm near-black
-//   $brand-slate    → warm slate (toplija sekundarna sivkasto-smeđa)
-//   $brand-light-gold → warm light tint (svijetla cream varijanta)
-//   $brand-navy-soft → soft modern blue (suptilan, koristi se rijetko)
-$brand-navy:        #171411;   // body & headings — warm near-black
-$brand-navy-soft:   #2D5A8E;   // soft modern navy — sekundarni accent
-$brand-slate:       #5A4F3F;   // toplija slate
-$brand-gold:        #9C302B;   // PRIMARY accent — brick red
-$brand-light-gold:  #EFE5D5;   // svijetli warm tint za pozadine
-$brand-burgundy:    #9C302B;   // unify s brick — isti primarni accent
-$brand-cream:       #F6F1E8;   // warm off-white pozadina
-$brand-paper:       #EFE7D5;   // malo tamnija cream za elevirane površine
-$brand-charcoal:    #171411;   // body text — warm near-black
-$brand-warm-grey:   #9F907B;   // muted warm grey — borders, captions, separators
+// Branch: design/statecraft-v2. Imena $brand-* varijabli zadržana radi
+// kompatibilnosti s ostatkom SCSS-a; vrijednosti preslikane na Statecraft
+// tokens iz Claude design package-a (colors_and_type.css):
+//   $brand-navy / $brand-charcoal → ink (#1C1916)         warm near-black
+//   $brand-gold / $brand-burgundy → verdigris (#4A6B5C)   PRIMARY accent
+//   $brand-navy-soft → oxblood (#6B1F26)                  emphasis / danger
+//   $brand-slate → ink-mute (#6B6357)                     captions / secondary
+//   $brand-cream → paper (#F2EDE3)                        background (nikad bijela)
+//   $brand-paper → paper-soft (#EAE3D4)                   elevated surfaces
+//   $brand-light-gold → verdigris-wash (#DDE5DF)          subtle bg tint
+//   $brand-warm-grey → ink-faint (#9C9382)                muted hairlines
+$brand-navy:        #1C1916;   // body & headings — ink
+$brand-navy-soft:   #6B1F26;   // oxblood — emphasis / destructive
+$brand-slate:       #6B6357;   // ink-mute — captions, secondary text
+$brand-gold:        #4A6B5C;   // PRIMARY accent — verdigris
+$brand-light-gold:  #DDE5DF;   // verdigris-wash — vrlo svijetli tint
+$brand-burgundy:    #4A6B5C;   // unify s verdigris (jedan ceremonial pigment)
+$brand-cream:       #F2EDE3;   // paper — warm cream background
+$brand-paper:       #EAE3D4;   // paper-soft — za elevirane površine
+$brand-charcoal:    #1C1916;   // ink (isto kao $brand-navy)
+$brand-warm-grey:   #9C9382;   // ink-faint — borders, captions, separators
+
+// Dodatni Statecraft tokens dostupni za ciljano korištenje
+$sc-verdigris-deep: #3A5648;
+$sc-oxblood-deep:   #561820;
+$sc-ochre:          #C8985E;   // archival / timeline accent
+$sc-ochre-deep:     #9A6F38;
+$sc-rule-faint:     rgba(28, 25, 22, 0.07);
+$sc-rule:           rgba(28, 25, 22, 0.14);
+$sc-rule-strong:    rgba(28, 25, 22, 0.30);
 
 // =============================================================
-// Tipografija
+// Tipografija — STATECRAFT (Newsreader / Public Sans / IBM Plex Mono)
 // =============================================================
-$brand-font-serif: "Newsreader", Georgia, serif;          // display / chapter headings
-$brand-font-sans:  "Geist", "Segoe UI", system-ui, sans-serif;  // body + UI
-$brand-font-mono:  "Geist Mono", "Consolas", monospace;  // code
+$brand-font-serif: "Newsreader", "GT Sectra", Georgia, serif;       // display / prose / headings
+$brand-font-sans:  "Public Sans", "Söhne", "Inter", system-ui, sans-serif;  // UI / labels / nav
+$brand-font-mono:  "IBM Plex Mono", ui-monospace, "SF Mono", Menlo, monospace;
 
-// Bootstrap: Geist as the primary reading font
+// Bootstrap: Public Sans for UI, Newsreader for serif body
 $font-family-base:       $brand-font-sans;
 $font-family-serif:      $brand-font-serif;
 $font-family-sans-serif: $brand-font-sans;
@@ -90,8 +101,8 @@ h1, .chapter-title, .title {
 }
 
 h2 {
-  font-family: $brand-font-sans;   // Geist — clean sans for section headings
-  font-weight: 600;
+  font-family: $brand-font-serif;   // Newsreader — editorial section headings (Statecraft)
+  font-weight: 500;
   color: $brand-navy;
   letter-spacing: -0.012em;
   margin-top: 3rem;
@@ -101,9 +112,9 @@ h2 {
 }
 
 h3 {
-  font-family: $brand-font-sans;
-  font-weight: 600;
-  color: $brand-navy-soft;
+  font-family: $brand-font-serif;   // Newsreader — Statecraft editorial register
+  font-weight: 500;
+  color: $brand-navy;                // ink, ne oxblood — h3 nije emphasis
   letter-spacing: -0.01em;
   margin-top: 2rem;
 }
@@ -1380,12 +1391,271 @@ header#title-block-header h1.title::after {
 }
 
 // =============================================================
-// OJS interaktivne vizualizacije (Observable Plot + Inputs)
-// Klizači ("moving sidebars") i tekst u grafovima koriste
-// knjižni font (Geist) i brand boje umjesto Roboto/ad-hoc paletu.
+// =============================================================
+// STATECRAFT companion-site Hero (landing page)
+// branch: design/statecraft-hero
+// =============================================================
 // =============================================================
 
-// Klizači i njihovi natpisi (Inputs.range / Inputs.form)
+// Section-label kicker (tracked all-caps)
+.section-label {
+  display: inline-block;
+  font-family: $brand-font-sans;
+  font-size: 0.6875rem;            // 11px
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: $brand-slate;
+  margin-bottom: 0.5rem;
+}
+
+// ---- Hero container (two-column at desktop) ----
+.sc-hero {
+  display: grid;
+  grid-template-columns: 1fr 360px;
+  gap: 5rem;
+  align-items: start;
+  max-width: 1180px;
+  margin: 2rem auto 4rem;
+  padding: 1rem 0 0;
+
+  @media (max-width: 900px) {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+}
+
+.sc-hero-copy {
+  min-width: 0;
+}
+
+// Giant editorial headline
+h1.sc-hero-title,
+.sc-hero h1 {
+  font-family: $brand-font-serif;
+  font-size: clamp(2.75rem, 5.2vw + 1rem, 5rem);
+  line-height: 0.98;
+  letter-spacing: -0.025em;
+  font-weight: 400;
+  color: $brand-navy;
+  margin: 1rem 0 1.5rem;
+  text-wrap: balance;
+}
+
+.sc-hero-lede {
+  font-family: $brand-font-serif;
+  font-size: 1.32rem;
+  line-height: 1.5;
+  font-weight: 300;
+  color: $brand-slate;
+  max-width: 42ch;
+  margin: 0 0 2rem;
+  text-wrap: pretty;
+}
+
+// CTA row
+.sc-hero-cta {
+  display: flex;
+  gap: 0.75rem;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 3rem;
+
+  // Hide pandoc's auto <p> wrapper if present
+  > p { display: contents; }
+}
+
+// Statecraft button system (.btn .btn-primary / .btn-secondary / .btn-ghost)
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 44px;
+  padding: 0 1.4rem;
+  font-family: $brand-font-sans;
+  font-size: 0.9rem;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+  border-radius: 2px;
+  border: 1px solid transparent;
+  text-decoration: none !important;
+  border-bottom: none !important;
+  cursor: pointer;
+  transition: background 0.14s ease, color 0.14s ease, border-color 0.14s ease;
+
+  &:hover { text-decoration: none !important; }
+}
+
+.btn-primary {
+  background: $brand-gold;             // verdigris
+  color: $brand-cream !important;
+  &:hover {
+    background: $sc-verdigris-deep;
+    color: $brand-cream !important;
+    background-color: $sc-verdigris-deep;
+  }
+  &:active { transform: translateY(1px); }
+}
+
+.btn-secondary {
+  background: transparent;
+  color: $brand-navy !important;
+  border-color: $sc-rule-strong;
+  &:hover {
+    background: $brand-paper;
+    color: $brand-navy !important;
+  }
+}
+
+.btn-ghost {
+  background: transparent;
+  color: $brand-navy !important;
+  border-color: transparent;
+  &:hover { background: $brand-paper; color: $brand-navy !important; }
+}
+
+// ---- Author / meta row under CTAs ----
+.sc-author-row {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  padding-top: 1.5rem;
+  border-top: 1px solid $sc-rule;
+  font-family: $brand-font-sans;
+  font-size: 0.82rem;
+  color: $brand-slate;
+}
+
+.sc-author-cell {
+  min-width: 0;
+  .section-label { display: block; margin-bottom: 0.4rem; }
+  strong, b {
+    font-family: $brand-font-serif;
+    font-style: italic;
+    font-weight: 400;
+    font-size: 1rem;
+    color: $brand-navy;
+    display: block;
+
+    a {
+      color: inherit;
+      border-bottom: 1px dotted rgba($brand-gold, 0.5);
+      &:hover { color: $brand-gold; border-bottom-style: solid; background: transparent; }
+    }
+  }
+}
+
+.sc-meta-mono {
+  font-family: $brand-font-mono !important;
+  font-style: normal !important;
+  font-size: 0.88rem !important;
+  font-feature-settings: "tnum" 1, "lnum" 1;
+}
+
+// ---- Cover card (typographic placeholder, no image) ----
+.sc-cover-card {
+  background: $brand-cream;
+  border: 1px solid $sc-rule-strong;
+  padding: 2.5rem 2rem;
+  display: flex;
+  flex-direction: column;
+  min-height: 480px;
+  box-shadow: -1px 1px 0 $brand-navy;
+  position: relative;
+  margin: 0;
+
+  @media (max-width: 900px) {
+    max-width: 360px;
+    margin: 0 auto;
+  }
+}
+
+.sc-cover-top {
+  font-family: $brand-font-sans;
+  font-size: 0.625rem;             // 10px
+  letter-spacing: 0.18em;
+  color: $brand-slate;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.sc-cover-card hr {
+  border: 0;
+  height: 1px;
+  background: $sc-rule-strong;
+  margin: 0.75rem 0 1.75rem;
+  width: 100%;
+}
+
+h2.sc-cover-title,
+.sc-cover-card h2.sc-cover-title {
+  font-family: $brand-font-serif;
+  font-size: 2.25rem;
+  font-weight: 400;
+  line-height: 1.04;
+  letter-spacing: -0.018em;
+  color: $brand-navy;
+  margin: 0;
+  border: 0;
+  padding: 0;
+  max-width: 11ch;
+  text-wrap: balance;
+}
+
+.sc-cover-spacer { flex: 1; min-height: 4rem; }
+
+.sc-cover-foot {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  font-family: $brand-font-sans;
+  font-size: 0.7rem;
+  color: $brand-slate;
+  margin-top: 2rem;
+}
+
+.sc-cover-author {
+  font-family: $brand-font-sans;
+  font-size: 0.7rem;
+  color: $brand-slate;
+  line-height: 1.4;
+
+  em, i {
+    display: block;
+    font-family: $brand-font-serif;
+    font-style: italic;
+    font-size: 1rem;
+    color: $brand-navy;
+    margin-bottom: 0.2rem;
+  }
+}
+
+.sc-cover-glyph {
+  font-family: $brand-font-serif;
+  font-style: italic;
+  font-size: 3.5rem;
+  line-height: 0.8;
+  color: $sc-verdigris-deep;
+}
+
+// ---- § divider between hero and TOC ----
+.sc-section-glyph {
+  text-align: center;
+  margin: 3rem 0 2rem;
+  font-family: $brand-font-serif;
+  font-style: italic;
+  font-size: 2rem;
+  color: $sc-rule-strong;
+  user-select: none;
+}
+
+@import "atlas";
+
+// =============================================================
+// OJS interaktivne vizualizacije (Observable Plot + Inputs)
+// Klizači ("moving sidebars") i tekst u grafovima koriste
+// Statecraft font (Public Sans) i brand boje umjesto ad-hoc paletu.
+// =============================================================
 .observablehq,
 .observablehq--inspect,
 form.observablehq--input,
@@ -1396,32 +1666,28 @@ form.observablehq--input,
   font-family: $brand-font-sans;
 }
 
-// Natpisi klizača — usklađeni s bojom sekundarnog teksta u knjizi
 .observablehq label,
 .observablehq--label,
 form.observablehq--input > label {
   font-family: $brand-font-sans;
   font-size: 0.9rem;
   font-weight: 500;
-  color: $brand-slate;
+  color: $brand-charcoal;
 }
 
-// Numeričke vrijednosti uz klizače — tabularni brojevi radi poravnanja
 .observablehq output,
 .observablehq--input output {
   font-family: $brand-font-sans;
   font-variant-numeric: tabular-nums lining-nums;
-  color: $brand-navy;
+  color: $brand-gold;
 }
 
-// Akcent klizača (track/thumb) u brand boji gdje preglednik to podržava
 .observablehq input[type="range"] {
   accent-color: $brand-gold;
 }
 
-// SVG tekst koji generira Observable Plot (osi, oznake, naslovi)
-// — fallback ako pojedini graf ne postavi fontFamily eksplicitno.
 .cell-output svg[class^="plot-"] text,
 .cell-output figure svg text {
   font-family: $brand-font-sans;
 }
+
