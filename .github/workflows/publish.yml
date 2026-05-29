@@ -45,14 +45,20 @@ jobs:
         run: quarto render
 
       - name: Render PDF (separate profile)
+        id: pdf
         run: quarto render --profile pdf
         continue-on-error: true
 
-      - name: Copy PDF into docs for Pages download
-        if: hashFiles('pdf/Javne-politike.pdf') != ''
+      - name: Copy freshly-built PDF into docs for Pages download
+        if: steps.pdf.outcome == 'success'
         run: |
           mkdir -p docs/pdf
           cp pdf/Javne-politike.pdf docs/pdf/Javne-politike.pdf
+
+      - name: Warn if PDF render failed (deploying HTML only, old PDF stays)
+        if: steps.pdf.outcome != 'success'
+        run: |
+          echo "::warning::PDF render failed — the docs/pdf/Javne-politike.pdf deployed will be the previously-committed version, not a fresh build. Check the 'Render PDF' step logs above for the LaTeX/Quarto error."
 
       - name: Setup GitHub Pages
         uses: actions/configure-pages@v4
