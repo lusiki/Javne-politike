@@ -16,6 +16,13 @@ index_files/
 chapters/*.html
 chapters/*_files/
 
+### PDF profile spurious output — only the .pdf is canonical ###
+# `quarto render --profile pdf` also writes HTML into pdf/ because the
+# profile inherits format settings from _quarto.yml. Ignore everything in
+# pdf/ except the actual PDF.
+pdf/*
+!pdf/Javne-politike.pdf
+
 ### Temp / scratch ###
 tmp/
 mnt/

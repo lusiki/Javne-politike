@@ -52,6 +52,13 @@ Current structure (from `_quarto.yml`):
 
 ## Content conventions
 
+### Editorial style
+Every chapter must follow [STYLE.md](STYLE.md) — Croatian-language editorial guide
+(no colons in prose, no mid-sentence em-dashes as list introducers, no mechanical
+takeaway formulae, no meta-callouts in flowing text, minimal use of restatement
+connectives like "Drugim riječima,"). Run a full sweep against its hard rules
+before committing any chapter prose edit.
+
 ### Citations
 Use `[@key]` syntax against `references.bib`. Margin citations are enabled.
 
@@ -128,7 +135,34 @@ Pushing to `main` triggers `.github/workflows/publish.yml`, which:
 1. Renders the full book with `quarto render`
 2. Uploads `docs/` to GitHub Pages
 
-The PDF in `pdf/` is NOT auto-rebuilt by CI — it must be rendered and committed manually.
+### PDF rebuild workflow
+
+Canonical method is local render + commit:
+
+1. `quarto render --profile pdf` → writes `pdf/Javne-politike.pdf`
+2. `cp pdf/Javne-politike.pdf docs/pdf/Javne-politike.pdf`
+3. Commit both files with `docs(pdf):` prefix and push
+
+The CI workflow also attempts the same PDF render with `continue-on-error: true`.
+If CI's render succeeds, it overwrites the committed PDF in the deploy artifact.
+If CI's render fails (common — TinyTeX in CI sometimes misses LaTeX packages or
+fonts), the committed PDF is served as-is. So the deployed PDF is always at
+least as fresh as the last `docs(pdf):` commit on `main`.
+
+## Commit conventions
+
+Project uses Conventional Commits–style prefixes:
+
+- `copy(<slug>):` — prose/copy edit (chapter rewrites, landing copy)
+- `style(<slug>):` — SCSS / layout / visual change
+- `feat(<slug>):` — new feature or component
+- `fix(<slug>):` — bug fix
+- `ci:` — GitHub Actions workflow change
+- `docs(<slug>):` — generated artifact rebuild (e.g. `docs(pdf):` for a fresh PDF)
+- `build:` — render output
+
+The slug is the chapter file basename without numeric prefix (e.g. `copy(uvod):`,
+`copy(ch1):`, or `copy(uloga-drzave):`). Use `landing` for `index.qmd`.
 
 ## Branching convention
 
