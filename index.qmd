@@ -25,7 +25,7 @@ format:
 # Sve što želite znati o odnosu države i tržišta {.sc-hero-title}
 
 ::: {.sc-hero-lede}
-Udžbenik s primjerima iz hrvatske prakse — za studente i sve koji žele razumjeti zašto država djeluje onako kako djeluje.
+Udžbenik koji studentima i svim radoznalim čitateljima objašnjava kako javne financije, teorija javnog izbora i institucije zajedno oblikuju hrvatsku ekonomsku stvarnost.
 :::
 
 ::: {.sc-hero-cta}
@@ -61,13 +61,13 @@ Udžbenik s primjerima iz hrvatske prakse — za studente i sve koji žele razum
 
 ::: {.sc-cover-card}
 ::: {.sc-cover-top}
-VODIČ · SAŽETAK KNJIGE
+№ II · VODIČ ZA GRAĐANE
 :::
 <hr/>
 ## Država, tržište i institucije {.sc-cover-title}
 
 ::: {.sc-cover-lede}
-Ključni pojmovi, definicije i formule — za brzo podsjećanje.
+Za sve koji žele razumjeti kako država utječe na svakodnevni život, a nemaju vremena za debele udzbenike.
 :::
 
 ::: {.sc-cover-cta}

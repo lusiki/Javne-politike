@@ -23,19 +23,19 @@ format:
         </style>
 ---
 
-Vodič je skraćena verzija knjige — sažetak ključnih pojmova, definicija i formula po poglavljima, namijenjen brzom podsjećanju i pripremi za ispit.
+Vodič je popularna verzija knjige namijenjena široj publici. Sve glavne ideje udzbenika prevedene su u jezik svakodnevice, bez žargona, formula i fusnota.
 
-Zamišljen je kao **brzi orijentir uz udžbenik**: ne zamjenjuje cijela poglavlja, ali daje strukturiran pregled onoga što morate znati da biste razumjeli odnos države, tržišta i institucija.
+Zamišljen je za sve koji žele razumjeti kako se kroje hrvatske javne politike i kako država utječe na svakodnevni život, a nemaju vremena ili volje prolaziti kroz cijeli akademski tekst. Ista priča kao u udzbeniku, samo ispričana drugim glasom.
 
 ::: {.callout-important}
 ## U pripremi
 
-Ova stranica je u izradi. Vodič će biti generiran iz sažetaka „ključno za ponijeti" u svakom poglavlju knjige, te će uključivati:
+Ova stranica je u izradi. Vodič nastaje kao paralelna, intuitivna projekcija knjige i uključivat će:
 
-- **Definicije** osnovnih pojmova po poglavljima
-- **Ključne formule i modele** s kratkim objašnjenjima
-- **Sažetak ideja** po poglavljima i dijelovima
-- **Pitanja za samoprovjeru** za pripremu ispita
+- Glavne ideje udzbenika prevedene u svakodnevni jezik
+- Primjere iz hrvatske prakse koji ilustriraju ključne pojmove
+- Pristupačna objašnjenja koja ne zahtijevaju ekonomsko obrazovanje
+- Odgovore na najvažnija pitanja o državi, tržištu i institucijama
 
 U međuvremenu, [otvorite cijelu knjigu](chapters/00-uvod.html) ili [preuzmite PDF](pdf/Javne-politike.pdf).
 :::
