@@ -26,15 +26,10 @@ format:
     sansfont: "Latin Modern Sans"
     monofont: "Latin Modern Mono"
     lang: hr-HR
-    babel-lang: croatian
     toc: true
     toc-depth: 2
     toc-title: "Sadržaj"
     number-sections: false
-    include-before-body:
-      text: |
-        \tableofcontents
-        \clearpage
     colorlinks: true
     linkcolor: blue
     urlcolor: blue
