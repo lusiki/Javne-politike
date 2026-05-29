@@ -24,18 +24,32 @@ quarto render --profile pdf   # render PDF via _quarto-pdf.yml
 ## File layout
 
 ```
-chapters/       active .qmd chapter files (canonical list: _quarto.yml)
-styles/         custom.scss, _dark.scss, styles.css, book-include.html
-R/              setup.R (sourced in each chapter), theme_book.R (ggplot2 theme)
-data/           datasets used by chapters
-images/         static brand/cover assets
-pdf/            rendered PDF output (not auto-rebuilt by CI)
-docs/           HTML build output — do NOT hand-edit, regenerated on render
-_freeze/        Quarto execution cache — do NOT hand-edit
-references.bib  BibTeX bibliography for all citations
-_quarto.yml     master config — chapter order, theme, format options
-_brand.yml      typography and color tokens
+chapters/             active .qmd chapter files (canonical list: _quarto.yml)
+styles/               custom.scss, _dark.scss, styles.css, book-include.html
+R/                    setup.R (sourced in each chapter), theme_book.R (ggplot2 theme)
+data/                 datasets used by chapters
+images/               static brand/visual assets
+pdf-filters/          Lua filters applied during PDF render (strip-ojs.lua)
+pdf/                  rendered PDF output — see PDF rebuild workflow below
+docs/                 HTML build output — do NOT hand-edit, regenerated on render
+_freeze/              Quarto execution cache — do NOT hand-edit
+renv/, renv.lock      R package library + lockfile (pinned versions)
+index.qmd             landing page (hero, cover-card, collapsible TOC)
+references.qmd        appendix: bibliography page
+vodic.qmd             appendix: companion guide ("Država, tržište i institucije")
+resursi.qmd           appendix: resource list
+alat.qmd              appendix: tools
+podaci.qmd            appendix: datasets reference
+references.bib        BibTeX bibliography for all citations
+STYLE.md              editorial style guide (see Content conventions § Editorial style)
+_quarto.yml           master config — chapter order, theme, HTML format options
+_quarto-pdf.yml       PDF profile config — `quarto render --profile pdf`
+_brand.yml            typography and color tokens
+cover.png             book cover image
 ```
+
+Root-level `.qmd` files not listed above (`intro.qmd`, `summary.qmd`) are orphans
+from earlier numbering revisions — same caveat as the chapters/ orphans below.
 
 ## Active chapters
 
@@ -43,12 +57,19 @@ The canonical chapter list is defined in `_quarto.yml`. Many `.qmd` files in
 `chapters/` are orphans from earlier numbering revisions — do not assume every
 file in that folder is part of the book.
 
-Current structure (from `_quarto.yml`):
+Current structure (from `_quarto.yml`) — 20 chapters in 5 parts + intro:
 
-- **DIO I** (ch. 1–5): Pristupi, Zašto država, Musgrave, Institucije, Konstitucionalna
-- **DIO II** (ch. 6–11): Javni izbor, Kako odlučujemo, Glasovanje, Stranke, Birokrati, Interesne skupine
-- **DIO III** (ch. 12–15): Državna potrošnja, Porezi, CBA odluke, Reforme
-- **Zaključak** (ch. 16)
+- **Uvod** (ch. 0): Zašto bismo otvorili ovu knjigu? (`00-uvod`)
+- **DIO I — Klasična analiza javnih financija i politika** (ch. 1–4):
+  Uloga države, Alokacijska funkcija, Distribucijska funkcija, Stabilizacijska funkcija
+- **DIO II — Javni izbor – što, kako i zašto?** (ch. 5–9):
+  Javni izbor, Kolektivni izbor, Stranke i izbori, Interesne skupine, Birokracija
+- **DIO III — Nova institucionalna i konstitucionalna ekonomika** (ch. 10–11):
+  Institucionalna ekonomika, Konstitucionalna ekonomika
+- **DIO IV — Javne financije i javne politike u praksi** (ch. 12–14):
+  Instrumenti, Javna potrošnja, Porezi
+- **DIO V — Kako do kvalitetnijih javnih politika?** (ch. 15–19):
+  Državni neuspjesi, Novi javni menadžment, Novo upravljanje, CBA i evaluacija, Reforme
 
 ## Content conventions
 
