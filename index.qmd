@@ -95,7 +95,7 @@ Za sve koji žele razumjeti kako država utječe na svakodnevni život, a nemaju
 <div class="toc-overview">
 
 <div class="toc-chapter toc-chapter-leaf">
-<a href="chapters/00-uvod.html">Uvod: Zašto bismo otvorili ovu knjigu?</a>
+<a href="chapters/00-uvod.html">Uvod — Zašto bismo otvorili ovu knjigu?</a>
 </div>
 
 <p class="toc-part">DIO I: Klasična analiza javnih financija i politika</p>

@@ -9,7 +9,7 @@ project:
   output-dir: pdf
 
 book:
-  title: "Sve što želite znati o državi i javnim politikama u Hrvatskoj"
+  title: "Sve što želite znati o odnosu države i tržišta"
   subtitle: "Praktični udžbenik · Radna verzija — svibanj 2026"
   output-file: "Javne-politike"
 
