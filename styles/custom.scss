@@ -1466,6 +1466,8 @@ h1.sc-hero-title,
 }
 
 // Statecraft button system (.btn .btn-primary / .btn-secondary / .btn-ghost)
+// Unified minimal style: all buttons share the same hover (paper bg, ink text).
+// Differentiated only by border presence. No color shifts, no transforms, no shadows.
 .btn {
   display: inline-flex;
   align-items: center;
@@ -1477,24 +1479,24 @@ h1.sc-hero-title,
   font-weight: 600;
   letter-spacing: 0.01em;
   border-radius: 2px;
-  border: 1px solid transparent;
+  border: 1px solid $sc-rule-strong;
   text-decoration: none !important;
   border-bottom: none !important;
   cursor: pointer;
-  transition: background 0.14s ease, color 0.14s ease, border-color 0.14s ease;
+  transition: background 0.14s ease, color 0.14s ease;
 
   &:hover { text-decoration: none !important; }
 }
 
 .btn-primary {
-  background: $brand-gold;             // verdigris
+  background: $brand-navy;
   color: $brand-cream !important;
+  border-color: $brand-navy;
   &:hover {
-    background: $sc-verdigris-deep;
-    color: $brand-cream !important;
-    background-color: $sc-verdigris-deep;
+    background: $brand-paper;
+    color: $brand-navy !important;
+    border-color: $brand-navy;
   }
-  &:active { transform: translateY(1px); }
 }
 
 .btn-secondary {
@@ -1625,18 +1627,19 @@ h2.sc-cover-title,
   letter-spacing: 0.08em;
   text-transform: uppercase;
   font-weight: 600;
-  color: $brand-navy;
+  color: $brand-navy !important;
   background: transparent;
-  border: 1px solid $brand-navy;
-  border-radius: 0;
+  border: 1px solid $sc-rule-strong;
+  border-bottom: none !important;
+  border-radius: 2px;
   padding: 0.65rem 1.1rem;
   text-decoration: none;
-  transition: background 120ms ease, color 120ms ease;
+  transition: background 120ms ease;
 
   &:hover,
   &:focus-visible {
-    background: $brand-navy;
-    color: $brand-cream;
+    background: $brand-paper;
+    color: $brand-navy !important;
     text-decoration: none;
   }
 }
