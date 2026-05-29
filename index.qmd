@@ -20,12 +20,12 @@ format:
 ::: {.sc-hero}
 ::: {.sc-hero-copy}
 
-[NOVO IZDANJE · SVIBANJ 2026.]{.section-label}
+[№ I · EKONOMIKA JAVNOG SEKTORA]{.section-label}
 
-# Sve što želite znati o državi i javnim politikama u Hrvatskoj {.sc-hero-title}
+# Sve što želite znati o odnosu države i tržišta {.sc-hero-title}
 
 ::: {.sc-hero-lede}
-Vodič kroz ekonomiju, politiku i institucije za studente i sve koji žele razumjeti zašto država djeluje onako kako djeluje. Udžbenik povezuje teoriju javnog izbora, ekonomiku javnog sektora i hrvatsku stvarnost.
+Udžbenik s primjerima iz hrvatske prakse — za studente i sve koji žele razumjeti zašto država djeluje onako kako djeluje.
 :::
 
 ::: {.sc-hero-cta}
@@ -61,12 +61,17 @@ Vodič kroz ekonomiju, politiku i institucije za studente i sve koji žele razum
 
 ::: {.sc-cover-card}
 ::: {.sc-cover-top}
-№ I · JAVNE POLITIKE
+VODIČ · SAŽETAK KNJIGE
 :::
 <hr/>
-## Vodič kroz državu i javne politike. {.sc-cover-title}
+## Država, tržište i institucije {.sc-cover-title}
 
-::: {.sc-cover-spacer}
+::: {.sc-cover-lede}
+Ključni pojmovi, definicije i formule — za brzo podsjećanje.
+:::
+
+::: {.sc-cover-cta}
+[Otvori vodič →](vodic.html){.btn .btn-ghost .sc-cover-btn}
 :::
 
 ::: {.sc-cover-foot}

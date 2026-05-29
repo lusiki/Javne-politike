@@ -25,6 +25,17 @@ format:
 
 Vodič je skraćena verzija knjige — sažetak ključnih pojmova, definicija i formula po poglavljima, namijenjen brzom podsjećanju i pripremi za ispit.
 
-::: {.callout-note}
-Ovaj odjeljak je u pripremi. Sadržaj će biti generiran iz "ključno za poneti" sažetaka u svakom poglavlju knjige.
+Zamišljen je kao **brzi orijentir uz udžbenik**: ne zamjenjuje cijela poglavlja, ali daje strukturiran pregled onoga što morate znati da biste razumjeli odnos države, tržišta i institucija.
+
+::: {.callout-important}
+## U pripremi
+
+Ova stranica je u izradi. Vodič će biti generiran iz sažetaka „ključno za ponijeti" u svakom poglavlju knjige, te će uključivati:
+
+- **Definicije** osnovnih pojmova po poglavljima
+- **Ključne formule i modele** s kratkim objašnjenjima
+- **Sažetak ideja** po poglavljima i dijelovima
+- **Pitanja za samoprovjeru** za pripremu ispita
+
+U međuvremenu, [otvorite cijelu knjigu](chapters/00-uvod.html) ili [preuzmite PDF](pdf/Javne-politike.pdf).
 :::

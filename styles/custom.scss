@@ -1604,6 +1604,43 @@ h2.sc-cover-title,
 
 .sc-cover-spacer { flex: 1; min-height: 4rem; }
 
+.sc-cover-lede {
+  font-family: $brand-font-serif;
+  font-style: italic;
+  font-size: 1.05rem;
+  line-height: 1.45;
+  color: $brand-slate;
+  margin: 1.5rem 0 0;
+  max-width: 28ch;
+  text-wrap: pretty;
+}
+
+.sc-cover-cta {
+  margin-top: 1.5rem;
+}
+
+.sc-cover-btn.btn {
+  font-family: $brand-font-sans;
+  font-size: 0.78rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: $brand-navy;
+  background: transparent;
+  border: 1px solid $brand-navy;
+  border-radius: 0;
+  padding: 0.65rem 1.1rem;
+  text-decoration: none;
+  transition: background 120ms ease, color 120ms ease;
+
+  &:hover,
+  &:focus-visible {
+    background: $brand-navy;
+    color: $brand-cream;
+    text-decoration: none;
+  }
+}
+
 .sc-cover-foot {
   display: flex;
   justify-content: space-between;
@@ -1611,7 +1648,8 @@ h2.sc-cover-title,
   font-family: $brand-font-sans;
   font-size: 0.7rem;
   color: $brand-slate;
-  margin-top: 2rem;
+  margin-top: auto;
+  padding-top: 2rem;
 }
 
 .sc-cover-author {
