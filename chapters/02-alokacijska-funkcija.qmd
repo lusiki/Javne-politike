@@ -2,31 +2,31 @@
 title: "Alokacijska funkcija i tržišni neuspjesi"
 ---
 
-Nakon što smo objasnili zašto konkurentsko tržište u idealnim uvjetima može dovesti do Pareto učinkovite alokacije, možemo jasnije razumjeti što znači tržišni neuspjeh. Tržišni neuspjeh nastaje onda kada stvarna tržišta ne zadovoljavaju uvjete pod kojima vrijedi prvi teorem ekonomike blagostanja. Tada cijene ne odražavaju sve društvene troškove i koristi, tržišta ne postoje ili ne funkcioniraju potpuno, pojedini akteri imaju tržišnu moć ili informacije nisu jednako raspoređene. U takvim okolnostima država može imati alokacijsku ulogu: ispraviti ili ublažiti neučinkovitosti koje nastaju u tržišnom procesu.
+Nakon što smo objasnili zašto konkurentsko tržište u idealnim uvjetima može dovesti do Pareto učinkovite alokacije, možemo jasnije razumjeti što znači tržišni neuspjeh. Tržišni neuspjeh nastaje onda kada stvarna tržišta ne zadovoljavaju uvjete pod kojima vrijedi prvi teorem ekonomike blagostanja. Tada cijene ne odražavaju sve društvene troškove i koristi, tržišta ne postoje ili ne funkcioniraju potpuno, pojedini akteri imaju tržišnu moć ili informacije nisu jednako raspoređene. U takvim okolnostima država može imati alokacijsku ulogu kroz ispravljanje ili ublažavanje neučinkovitosti koje nastaju u tržišnom procesu.
 
 No stvarna tržišta često odstupaju od tog idealnog modela. Cijene ne odražavaju uvijek sve društvene troškove i koristi. Neka dobra teško je naplatiti pojedinačnom korisniku. Neki akteri raspolažu boljim informacijama od drugih. Neka poduzeća imaju toliku tržišnu moć da mogu utjecati na cijene i količine. U takvim okolnostima tržište ne mora proizvesti društveno učinkovitu količinu dobara i usluga. Upravo se ta odstupanja nazivaju tržišnim neuspjesima.
 
-Tržišni neuspjeh ne znači da tržište uopće ne funkcionira. On znači da rezultat tržišnog procesa nije najbolji mogući s društvenog stajališta. Drugim riječima, tržište može proizvoditi premalo nečega što je društveno korisno, previše nečega što je društveno štetno, ili može proizvesti cijene i količine koje ne odražavaju stvarne troškove i koristi. Klasični primjeri tržišnih neuspjeha su javna dobra, eksternalije, asimetrične informacije, tržišna moć i prirodni monopoli (Pigou, 1920; Samuelson, 1954; Akerlof, 1970; Stiglitz i Rosengard, 2015).
+Tržišni neuspjeh ne znači da tržište uopće ne funkcionira. On znači da rezultat tržišnog procesa nije najbolji mogući s društvenog stajališta. Tržište može proizvoditi premalo nečega što je društveno korisno, previše nečega što je društveno štetno, ili može proizvesti cijene i količine koje ne odražavaju stvarne troškove i koristi. Klasični primjeri tržišnih neuspjeha su javna dobra, eksternalije, asimetrične informacije, tržišna moć i prirodni monopoli (Pigou, 1920; Samuelson, 1954; Akerlof, 1970; Stiglitz i Rosengard, 2015).
 
-Važno je naglasiti da alokacijska funkcija države nije isto što i tvrdnja da država uvijek zna bolje od tržišta. Njezina je osnovna logika uža i preciznija: država može imati opravdanje za intervenciju onda kada tržište ne uspijeva osigurati učinkovitu alokaciju resursa. Tada se postavlja pitanje koji je oblik tržišnog neuspjeha prisutan i koji instrument javne politike može taj problem najbolje ublažiti.
+Važno je naglasiti da alokacijska funkcija države nije isto što i tvrdnja da država uvijek zna bolje od tržišta. Njezina je osnovna logika uža i preciznija. Država može imati opravdanje za intervenciju onda kada tržište ne uspijeva osigurati učinkovitu alokaciju resursa. Tada se postavlja pitanje koji je oblik tržišnog neuspjeha prisutan i koji instrument javne politike može taj problem najbolje ublažiti.
 
-## Javna dobra: problem slobodnog jahača
+## Javna dobra
 
-Najpoznatiji primjer tržišnog neuspjeha su javna dobra. Javna dobra imaju dvije ključne karakteristike: **nekonkurentnost** u potrošnji i **neisključivost** iz potrošnje. Dobro je nekonkurentno ako potrošnja jedne osobe ne smanjuje mogućnost da isto dobro koriste i drugi. Dobro je neisključivo ako je teško ili vrlo skupo spriječiti nekoga da ga koristi, čak i ako nije platio za njega (Samuelson, 1954; Musgrave, 1959).
+Najpoznatiji primjer tržišnog neuspjeha su javna dobra. Javna dobra imaju dvije ključne karakteristike, nekonkurentnost u potrošnji i neisključivost iz potrošnje. Dobro je nekonkurentno ako potrošnja jedne osobe ne smanjuje mogućnost da isto dobro koriste i drugi. Dobro je neisključivo ako je teško ili vrlo skupo spriječiti nekoga da ga koristi, čak i ako nije platio za njega (Samuelson, 1954; Musgrave, 1959).
 
 Klasični primjeri javnih dobara su nacionalna obrana, javna rasvjeta, svjetionici, zaštita od poplava, osnovna javna sigurnost, parkovi, šetnice i određeni oblici javne infrastrukture. Ako država organizira nacionalnu obranu, svi stanovnici imaju korist od sigurnosti teritorija, neovisno o tome koliko je svatko pojedinačno spreman platiti. Ako se osvijetli ulica, korist imaju svi prolaznici. Ako se izgradi nasip protiv poplave, svi stanovnici zaštićenog područja imaju korist od zaštite.
 
-U slučaju javnih dobara pojavljuje se **problem slobodnog jahača** (*free rider problem*). Budući da se pojedinca teško može isključiti iz korištenja javnog dobra, on ima poticaj prikriti koliko mu je to dobro stvarno važno i pokušati izbjeći plaćanje. Ako zna da će ulica biti osvijetljena i bez njegova doprinosa, racionalno mu je prepustiti drugima da plate. Međutim, ako se svi ponašaju na taj način, javno dobro neće biti financirano ili će ga biti premalo. Tržište tada ne uspijeva otkriti stvarnu društvenu potražnju jer pojedinci nemaju poticaj iskreno otkriti svoje preferencije [@olson1965].
+U slučaju javnih dobara pojavljuje se **problem slobodnog jahača** (*free rider problem*). Budući da se pojedinca teško može isključiti iz korištenja javnog dobra, on ima poticaj prikriti koliko mu je to dobro stvarno važno i pokušati izbjeći plaćanje. Ako zna da će ulica biti osvijetljena i bez njegova doprinosa, racionalno mu je prepustiti drugima da plate. Međutim, ako se svi ponašaju na taj način, javno dobro neće biti financirano ili će ga biti premalo. Tržište tada ne uspijeva otkriti stvarnu društvenu potražnju jer pojedinci nemaju poticaja iskreno otkriti svoje preferencije [@olson1965].
 
-Zato država javna dobra najčešće financira kroz poreze. Porezi omogućuju da se trošak javnog dobra raspodijeli na širu zajednicu, a ne samo na one koji bi dobrovoljno platili. To ne znači da je svaka državna potrošnja automatski opravdana. Država i dalje mora odlučiti koliko javnog dobra treba osigurati, koliko ono košta i je li društvena korist veća od društvenog troška. No kod čistih javnih dobara tržišni mehanizam naplate pojedinačne cijene jednostavno ne funkcionira dobro.
+Zato država javna dobra najčešće financira kroz poreze. Porezi omogućuju da se trošak javnog dobra raspodijeli na širu zajednicu, a ne samo na one koji bi dobrovoljno platili. To ne znači da je svaka državna potrošnja automatski opravdana. Država i dalje mora odlučiti koliko javnog dobra treba osigurati, koliko ono košta i je li društvena korist veća od društvenog troška. Kod čistih javnih dobara tržišni mehanizam naplate pojedinačne cijene jednostavno ne funkcionira dobro.
 
 U praksi je važno razlikovati čista javna dobra od mješovitih dobara. Čista javna dobra, poput nacionalne obrane, gotovo su potpuno nekonkurentna i neisključiva. Mješovita dobra imaju neka obilježja javnih, a neka obilježja privatnih dobara. Primjerice, park je javno dostupan, ali ako postane prenapučen, potrošnja jedne osobe smanjuje kvalitetu korištenja drugima. Cesta je nekonkurentna dok nema gužve, ali u prometnoj gužvi korištenje jedne osobe smanjuje mogućnost korištenja drugima. Autocesta može biti isključiva ako se naplaćuje cestarina, ali je do određene razine prometa nekonkurentna.
 
 Alokacijska funkcija države zato nije ograničena samo na čista javna dobra. Država često financira i dobra koja imaju šire društvene koristi, iako nisu čista javna dobra. Ceste, škole, bolnice, komunalna infrastruktura i javni prijevoz nisu uvijek javna dobra u strogom ekonomskom smislu, ali snažno utječu na funkcioniranje gospodarstva i kvalitetu života. Cesta povezuje ljude i poduzeća, smanjuje troškove prijevoza i povećava dostupnost tržišta. Obrazovanje povećava ljudski kapital. Zdravstvo povećava radnu sposobnost i smanjuje društvene troškove bolesti. Zbog tih širih koristi država može imati važnu ulogu u financiranju, organizaciji ili regulaciji takvih usluga.
 
-### Interaktivni prikaz: javno dobro i problem švercerana
+### Javno dobro i problem švercerana
 
-Kod javnih dobara svaka jedinica istovremeno koristi svim potrošačima (nerivalnost), pa se agregatna potražnja dobiva **vertikalnim zbrajanjem** pojedinačnih krivulja D~i~. Zbroj predstavlja marginalnu društvenu korist ΣD~i~ = MSB. Društveni optimum Q\* je tamo gdje MSB siječe MC. No bez prisilne koordinacije svaki pojedinac plaća samo prema vlastitoj krivulji potražnje — najviše što bi tržište osiguralo (Q~M~) određuje pojedinac s najvećom spremnošću da plati. Razlika između Q~M~ i Q\* posljedica je **problema švercerana**.
+Kod javnih dobara svaka jedinica istovremeno koristi svim potrošačima (nerivalnost), pa se agregatna potražnja dobiva vertikalnim zbrajanjem pojedinačnih krivulja D~i~. Zbroj predstavlja marginalnu društvenu korist ΣD~i~ = MSB. Društveni optimum Q\* je tamo gdje MSB siječe MC. Bez prisilne koordinacije svaki pojedinac plaća samo prema vlastitoj krivulji potražnje, pa najviše što bi tržište osiguralo (Q~M~) određuje pojedinac s najvećom spremnošću da plati. Razlika između Q~M~ i Q\* posljedica je problema švercerana.
 
 ```{ojs}
 //| echo: false
@@ -188,17 +188,17 @@ pg_mc = pg_controls.mc
 }
 ```
 
-## Eksternalije: kada privatne odluke imaju društvene posljedice
+## Eksternalije
 
-Drugi veliki oblik tržišnog neuspjeha su **eksternalije**. Eksternalija nastaje kada odluka jednog pojedinca ili poduzeća utječe na dobrobit drugih, a taj se učinak ne odražava u tržišnoj cijeni. Drugim riječima, akter koji donosi odluku ne snosi sve troškove ili ne dobiva sve koristi koje njegova odluka stvara za društvo (Pigou, 1920; Baumol i Oates, 1988).
+Drugi veliki oblik tržišnog neuspjeha su **eksternalije**. Eksternalija nastaje kada odluka jednog pojedinca ili poduzeća utječe na dobrobit drugih, a taj se učinak ne odražava u tržišnoj cijeni. Akter koji donosi odluku ne snosi sve troškove ili ne dobiva sve koristi koje njegova odluka stvara za društvo (Pigou, 1920; Baumol i Oates, 1988).
 
 Eksternalije mogu biti negativne i pozitivne. **Negativna eksternalija** nastaje kada privatna aktivnost stvara trošak za druge. Klasičan primjer je zagađenje. Tvornica koja ispušta štetne tvari u rijeku može smanjiti vlastite troškove proizvodnje jer ne plaća puni trošak onečišćenja. Međutim, taj trošak snose stanovnici nizvodno, ribari, lokalna zajednica, zdravstveni sustav ili buduće generacije. Budući da se trošak zagađenja ne nalazi u tržišnoj cijeni proizvoda, proizvodnja takvog proizvoda može biti veća nego što je društveno poželjno.
 
 Slični primjeri negativnih eksternalija su emisije stakleničkih plinova, buka, prometne gužve, pušenje u zatvorenim prostorima, prekomjerna uporaba antibiotika ili vožnja koja povećava rizik za druge sudionike u prometu. U svim tim slučajevima privatna korist pojedinca ili poduzeća ne uključuje puni društveni trošak.
 
-### Interaktivni prikaz: negativna eksternalija (zagađenje)
+### Negativna eksternalija (zagađenje)
 
-Dijagram ispod prikazuje standardni model negativne eksternalije. Krivulja **MPC** (*marginalni privatni trošak*) odražava ono što proizvođač uzima u obzir; krivulja **MSC** (*marginalni društveni trošak*) uključuje i vanjske troškove koje snosi društvo. Tržišno ravnotežno presjecište MPC i potražnje (D) daje premašenu količinu Q~M~ po prenoj niskoj cijeni P~MPC~. Društveno optimalna razina proizvodnje je Q\*, koja se postiže uz cijenu P\*. Osjenčani trokut između Q\* i Q~M~ predstavlja **gubitak blagostanja** (DWL).
+Dijagram ispod prikazuje standardni model negativne eksternalije. Krivulja MPC (*marginalni privatni trošak*) odražava ono što proizvođač uzima u obzir, dok krivulja MSC (*marginalni društveni trošak*) uključuje i vanjske troškove koje snosi društvo. Tržišno ravnotežno presjecište MPC i potražnje (D) daje premašenu količinu Q~M~ po prenoj niskoj cijeni P~MPC~. Društveno optimalna razina proizvodnje je Q\*, koja se postiže uz cijenu P\*. Osjenčani trokut između Q\* i Q~M~ predstavlja gubitak blagostanja (DWL).
 
 ```{ojs}
 //| echo: false
@@ -327,13 +327,13 @@ eps_s_ext = ext_controls.eps_s_ext
 }
 ```
 
-**Pozitivna eksternalija** nastaje kada aktivnost pojedinca ili poduzeća stvara korist za druge, a ta korist nije u potpunosti plaćena. Primjer je cijepljenje. Osoba koja se cijepi štiti sebe, ali istodobno smanjuje vjerojatnost širenja bolesti na druge. Slično vrijedi za obrazovanje: obrazovaniji pojedinac ima veću osobnu korist kroz veće mogućnosti zapošljavanja i dohotka, ali društvo također ima koristi kroz veću produktivnost, informiranije građane, manju sklonost kriminalu i bolju sposobnost prilagodbe tehnološkim promjenama. Istraživanje i razvoj također stvaraju pozitivne eksternalije jer se nova znanja mogu prelijevati na druga poduzeća, sektore i buduće inovacije.
+**Pozitivna eksternalija** nastaje kada aktivnost pojedinca ili poduzeća stvara korist za druge, a ta korist nije u potpunosti plaćena. Primjer je cijepljenje. Osoba koja se cijepi štiti sebe, ali istodobno smanjuje vjerojatnost širenja bolesti na druge. Slično vrijedi za obrazovanje. Obrazovaniji pojedinac ima veću osobnu korist kroz veće mogućnosti zapošljavanja i dohotka, ali društvo također ima koristi kroz veću produktivnost, informiranije građane, manju sklonost kriminalu i bolju sposobnost prilagodbe tehnološkim promjenama. Istraživanje i razvoj također stvaraju pozitivne eksternalije jer se nova znanja mogu prelijevati na druga poduzeća, sektore i buduće inovacije.
 
 Kod negativnih eksternalija tržište obično proizvodi previše aktivnosti koja stvara štetu. Kod pozitivnih eksternalija tržište obično proizvodi premalo aktivnosti koja stvara korist. Zadaća države je približiti privatne poticaje društvenim troškovima i koristima.
 
-### Interaktivni prikaz: pozitivna eksternalija (obrazovanje)
+### Pozitivna eksternalija (obrazovanje)
 
-Kod pozitivnih eksternalija društvene koristi premašuju privatne. Krivulja **MPB** (*marginalna privatna korist*) odražava potražnju koju potrošači sami iskazuju, dok krivulja **MSB** (*marginalna društvena korist*) uključuje i vanjske koristi (npr. veću produktivnost cijelog gospodarstva od obrazovanijih pojedinaca). Tržišno presjecište MPB i ponude (S) daje **nedovoljnu** količinu Q~M~ po cijeni P~M~. Društveno optimalna razina je Q\* uz cijenu P\*. Osjenčani trokut prikazuje **propuštenu društvenu korist** — gubitak blagostanja zbog premale proizvodnje.
+Kod pozitivnih eksternalija društvene koristi premašuju privatne. Krivulja MPB (*marginalna privatna korist*) odražava potražnju koju potrošači sami iskazuju, dok krivulja MSB (*marginalna društvena korist*) uključuje i vanjske koristi (npr. veću produktivnost cijelog gospodarstva od obrazovanijih pojedinaca). Tržišno presjecište MPB i ponude (S) daje nedovoljnu količinu Q~M~ po cijeni P~M~. Društveno optimalna razina je Q\* uz cijenu P\*. Osjenčani trokut prikazuje propuštenu društvenu korist, odnosno gubitak blagostanja zbog premale proizvodnje.
 
 ```{ojs}
 //| echo: false
@@ -464,7 +464,7 @@ eps_s_pos = pos_controls.eps_s_pos
 }
 ```
 
-Najpoznatiji instrument za ispravljanje negativnih eksternalija je **Pigouov porez**. Ako aktivnost stvara društveni trošak koji nije uključen u cijenu, država može uvesti porez koji povećava privatni trošak te aktivnosti. Time se poduzeća i potrošači potiču da smanje štetno ponašanje. Primjeri su porezi na emisije ugljika, trošarine na gorivo, porezi na duhan ili porezi na alkohol. Logika je jednostavna: ako neka aktivnost stvara društveni trošak, njezina cijena treba taj trošak odražavati.
+Najpoznatiji instrument za ispravljanje negativnih eksternalija je **Pigouov porez**. Ako aktivnost stvara društveni trošak koji nije uključen u cijenu, država može uvesti porez koji povećava privatni trošak te aktivnosti. Time se poduzeća i potrošači potiču da smanje štetno ponašanje. Primjeri su porezi na emisije ugljika, trošarine na gorivo, porezi na duhan ili porezi na alkohol. Logika je jednostavna jer ako neka aktivnost stvara društveni trošak, njezina cijena treba taj trošak odražavati.
 
 Kod pozitivnih eksternalija država može koristiti subvencije, javno financiranje ili porezne olakšice. Ako obrazovanje, cijepljenje ili istraživanje i razvoj stvaraju društvene koristi veće od privatnih koristi pojedinca, država ih može poticati kako bi se povećala njihova razina. Zato države financiraju škole i sveučilišta, subvencioniraju istraživanje, organiziraju javnozdravstvene kampanje ili financiraju preventivne programe.
 
@@ -472,17 +472,17 @@ Država eksternalije može rješavati i regulacijom. Može propisati maksimalne 
 
 Važan doprinos razumijevanju eksternalija dao je Coase (1960), koji je pokazao da se eksternalije mogu promatrati i kao problem nedovoljno definiranih vlasničkih prava. Ako su prava jasno definirana i ako su transakcijski troškovi niski, privatni akteri mogu pregovorima riješiti problem. Međutim, u mnogim stvarnim situacijama broj pogođenih ljudi je velik, informacije su nepotpune, a pregovaranje je skupo ili nemoguće. Zato država i dalje ima važnu ulogu u definiranju pravila, smanjenju transakcijskih troškova i zaštiti javnog interesa.
 
-## Asimetrične informacije: kada jedna strana zna više od druge
+## Asimetrične informacije
 
 Treći oblik tržišnog neuspjeha su **asimetrične informacije**. Tržišta funkcioniraju najbolje kada kupci i prodavatelji, poslodavci i radnici, banke i dužnici ili osiguravatelji i osiguranici raspolažu relevantnim informacijama. U stvarnosti to često nije slučaj. Jedna strana u razmjeni može znati mnogo više od druge, a to može dovesti do neučinkovitih ili nepravednih ishoda.
 
-Najpoznatiji primjer dao je George Akerlof u radu o tržištu „limuna", odnosno rabljenih automobila loše kvalitete (Akerlof, 1970). Prodavatelj rabljenog automobila zna više o stvarnom stanju automobila od kupca. Kupac ne može lako razlikovati kvalitetan automobil od lošeg, pa je spreman platiti samo prosječnu cijenu. No ta prosječna cijena može biti preniska za vlasnike kvalitetnih automobila, koji se zato povlače s tržišta. Na tržištu ostaju uglavnom lošiji automobili. Rezultat je pad kvalitete i smanjenje razmjene, iako bi u uvjetima potpunih informacija tržište moglo bolje funkcionirati.
+Najpoznatiji primjer dao je George Akerlof u radu o tržištu „limuna", odnosno rabljenih automobila loše kvalitete (Akerlof, 1970). Prodavatelj rabljenog automobila zna više o stvarnom stanju automobila od kupca. Kupac ne može lako razlikovati kvalitetan automobil od lošeg, pa je spreman platiti samo prosječnu cijenu. Ta prosječna cijena može biti preniska za vlasnike kvalitetnih automobila, koji se zato povlače s tržišta. Na tržištu ostaju uglavnom lošiji automobili. Rezultat je pad kvalitete i smanjenje razmjene, iako bi u uvjetima potpunih informacija tržište moglo bolje funkcionirati.
 
-Asimetrične informacije stvaraju dva važna problema: **nepovoljan izbor** i **moralni hazard**. Nepovoljan izbor nastaje prije sklapanja ugovora. To je situacija u kojoj se zbog informacijske neravnoteže na tržištu zadržavaju lošiji rizici ili lošija kvaliteta. Primjer je tržište zdravstvenog osiguranja. Osobe koje znaju da imaju veći zdravstveni rizik sklonije su kupiti osiguranje, dok se zdraviji pojedinci mogu povući ako je premija previsoka. Ako osiguravatelj ne može dobro razlikovati rizične i manje rizične pojedince, premije rastu, a tržište može postati nestabilno.
+Asimetrične informacije stvaraju dva važna problema, **nepovoljan izbor** i **moralni hazard**. Nepovoljan izbor nastaje prije sklapanja ugovora. To je situacija u kojoj se zbog informacijske neravnoteže na tržištu zadržavaju lošiji rizici ili lošija kvaliteta. Primjer je tržište zdravstvenog osiguranja. Osobe koje znaju da imaju veći zdravstveni rizik sklonije su kupiti osiguranje, dok se zdraviji pojedinci mogu povući ako je premija previsoka. Ako osiguravatelj ne može dobro razlikovati rizične i manje rizične pojedince, premije rastu, a tržište može postati nestabilno.
 
-### Interaktivni prikaz: tržište limuna (adverse selection)
+### Tržište limuna (adverse selection)
 
-Kada kupci ne razlikuju kvalitetu, spremni su platiti samo prosječnu cijenu. Ta cijena je preniska za prodavače kvalitetne robe (krivulja **S~visoka~**), pa oni napuštaju tržište. Ostaje samo loša roba (krivulja **S~loša~**), a ravnoteža se pomiče s točke (Q₁, P~visoka~) na (Q₂, P~niska~). U graničnim slučajevima tržište se može potpuno urušiti.
+Kada kupci ne razlikuju kvalitetu, spremni su platiti samo prosječnu cijenu. Ta cijena je preniska za prodavače kvalitetne robe (krivulja S~visoka~), pa oni napuštaju tržište. Ostaje samo loša roba (krivulja S~loša~), a ravnoteža se pomiče s točke (Q₁, P~visoka~) na (Q₂, P~niska~). U graničnim slučajevima tržište se može potpuno urušiti.
 
 ```{ojs}
 //| echo: false
@@ -613,11 +613,11 @@ eps_s_asi = asi_controls.eps_s_asi
 }
 ```
 
-**Moralni hazard** nastaje nakon sklapanja ugovora. To je situacija u kojoj osiguranje ili zaštita mijenja ponašanje pojedinca jer on više ne snosi puni trošak svojih odluka. Osoba koja ima potpuno osiguranje može biti manje oprezna. Banka koja očekuje da će je država spasiti u krizi može preuzimati veće rizike. Poduzeće koje očekuje stalne državne potpore može manje ulagati u učinkovitost i prilagodbu. Klasično rješenje je dijeljenje rizika kroz franšizu, suosiguranje i nadzor.
+**Moralni hazard** nastaje nakon sklapanja ugovora. To je situacija u kojoj osiguranje ili zaštita mijenja ponašanje pojedinca jer on više ne snosi puni trošak svojih odluka. Osoba koja ima potpuno osiguranje može biti manje oprezna. Banka koja očekuje da će je država spasiti u krizi može preuzimati veće rizike. Poduzeće koje očekuje stalne državne potpore može manje ulagati u učinkovitost i prilagodbu. Klasična rješenja uključuju dijeljenje rizika kroz franšizu, suosiguranje i nadzor.
 
-### Interaktivni prikaz: moralni hazard (skrivene radnje)
+### Moralni hazard (skrivene radnje)
 
-Agent bira razinu rizičnog ponašanja **e** uspoređujući privatnu korist (npr. brzinu, prinos, udobnost) s troškom mogućih šteta. **Bez osiguranja** agent snosi puni trošak C(e) i bira nisku razinu rizika **e\***. **Sa osiguranjem** osiguratelj pokriva dio (θ) štete, pa agent percipira samo (1−θ)·C(e) — krivulja postaje plića i agent bira višu razinu rizika **e~M~** > e\*. Razlika je posljedica moralnog hazarda.
+Agent bira razinu rizičnog ponašanja e uspoređujući privatnu korist (npr. brzinu, prinos, udobnost) s troškom mogućih šteta. Bez osiguranja agent snosi puni trošak C(e) i bira nisku razinu rizika e\*. Sa osiguranjem osiguratelj pokriva dio (θ) štete, pa agent percipira samo (1−θ)·C(e), a krivulja postaje plića i agent bira višu razinu rizika e~M~ > e\*. Razlika je posljedica moralnog hazarda.
 
 ```{ojs}
 //| echo: false
@@ -732,11 +732,11 @@ mh_m = mh_controls.m
 
 Asimetrične informacije posebno su važne u zdravstvu, financijama, obrazovanju, osiguranju i tržištu rada. Pacijent obično zna manje od liječnika o dijagnozi, terapiji i kvaliteti liječenja. Štediša zna manje od financijske institucije o složenim financijskim proizvodima. Roditelj ne može uvijek lako procijeniti kvalitetu škole. Poslodavac ne zna uvijek stvarnu produktivnost radnika prije zapošljavanja.
 
-Država može smanjiti informacijske probleme na više načina. Može propisati obvezno objavljivanje informacija, primjerice deklaracije na hrani, energetske certifikate, financijske prospekte, informacije o kamatnim stopama ili usporedive podatke o kvaliteti javnih usluga. Može uvesti licenciranje i standarde, primjerice za liječnike, odvjetnike, revizore, nastavnike ili financijske institucije. Može uspostaviti nadzorne agencije, javne registre, sustave certifikacije i mehanizme zaštite potrošača.
+Država može smanjiti informacijske probleme na više načina. Može propisati obvezno objavljivanje informacija, primjerice deklaracije na hrani, energetske certifikate, financijske prospekte, informacije o kamatnim stopama ili usporedive podatke o kvaliteti javnih usluga. Može uvesti licenciranje i standarde za liječnike, odvjetnike, revizore, nastavnike ili financijske institucije. Može uspostaviti nadzorne agencije, javne registre, sustave certifikacije i mehanizme zaštite potrošača.
 
 No informacijske mjere nisu uvijek dovoljne. Informacije moraju biti razumljive, dostupne i vjerodostojne. Ako potrošač dobije dokument od pedeset stranica, formalno je informiran, ali stvarno možda nije sposoban donijeti bolju odluku. Zato se u suvremenim javnim politikama sve više naglašava jednostavnost informacija, standardizirani prikazi, jasna upozorenja i bihevioralni uvidi u način na koji ljudi donose odluke.
 
-## Tržišna moć i monopol: kada konkurencija ne funkcionira
+## Tržišna moć i monopol
 
 Četvrti oblik tržišnog neuspjeha je **tržišna moć**, posebno monopol. U idealnom konkurentskom tržištu nijedno poduzeće ne može samo određivati cijenu. Poduzeća se natječu, potrošači biraju, a cijene odražavaju troškove i preferencije. Međutim, kada jedno poduzeće ili mali broj poduzeća ima značajnu tržišnu moć, taj se mehanizam narušava.
 
@@ -746,9 +746,9 @@ Tržišna moć može nastati iz više razloga. Može biti posljedica vlasništva
 
 Poseban slučaj je **prirodni monopol**. Prirodni monopol nastaje kada su fiksni troškovi vrlo visoki, a prosječni troškovi padaju kako se povećava količina proizvodnje. U takvim okolnostima jedan veliki ponuđač može proizvoditi po nižem trošku nego više manjih ponuđača. Primjeri su vodoopskrba, elektroenergetske mreže, plinovodi, željeznička infrastruktura i određene komunalne usluge.
 
-### Interaktivni prikaz: monopol i gubitak blagostanja
+### Monopol i gubitak blagostanja
 
-Monopolist određuje količinu na razini gdje se **marginalni prihod (MR)** izjednačava s **marginalnim troškom (MC)**, a zatim postavlja cijenu prema krivulji potražnje D. Rezultat je niža količina Q~M~ i viša cijena P~M~ u odnosu na konkurentsku ravnotežu (Q~C~, P~C~), gdje bi D sjekao MC. Osjenčani trokut između Q~M~ i Q~C~ predstavlja **gubitak blagostanja** (*deadweight loss*) zbog tržišne moći.
+Monopolist određuje količinu na razini gdje se marginalni prihod (MR) izjednačava s marginalnim troškom (MC), a zatim postavlja cijenu prema krivulji potražnje D. Rezultat je niža količina Q~M~ i viša cijena P~M~ u odnosu na konkurentsku ravnotežu (Q~C~, P~C~), gdje bi D sjekao MC. Osjenčani trokut između Q~M~ i Q~C~ predstavlja gubitak blagostanja (*deadweight loss*) zbog tržišne moći.
 
 ```{ojs}
 //| echo: false
@@ -882,7 +882,7 @@ Drugi odgovor je **regulacija prirodnih monopola**. Ako nije učinkovito imati v
 
 Tržišna moć pokazuje da konkurencija nije uvijek prirodno i trajno stanje tržišta. Ponekad je država potrebna upravo zato da bi zaštitila konkurenciju. U tom smislu država nije nužno protiv tržišta, nego može biti čuvar uvjeta pod kojima tržište može funkcionirati.
 
-## Zajednički resursi: kada je problem pretjerano korištenje
+## Zajednički resursi
 
 Uz javna dobra, eksternalije, asimetrične informacije i monopol, važno je spomenuti i **zajedničke resurse**. Zajednički resursi su dobra koja su teško isključiva, ali su konkurentna u potrošnji. To znači da je teško spriječiti pojedince da ih koriste, ali korištenje jedne osobe smanjuje dostupnost drugima.
 
@@ -892,7 +892,7 @@ Problem zajedničkih resursa često se naziva **tragedijom zajedničkog dobra** 
 
 Država može intervenirati regulacijom količine korištenja, dozvolama, kvotama, naknadama, porezima, zaštićenim područjima ili definiranjem vlasničkih prava. Međutim, zajednički resursi ne moraju se uvijek rješavati samo državnom intervencijom. Elinor Ostrom pokazala je da lokalne zajednice u određenim uvjetima mogu razviti vlastita pravila upravljanja zajedničkim resursima, osobito kada postoje jasne granice korisnika, lokalno znanje, mehanizmi nadzora i sankcije za kršenje pravila [@ostrom1990]. To je važna dopuna klasičnoj raspravi jer pokazuje da rješenje nije uvijek jednostavan izbor između tržišta i države, nego može uključivati i zajedničko upravljanje.
 
-## Meritorna dobra: prijelaz između učinkovitosti i društvenih vrijednosti
+## Meritorna dobra
 
 Iako se meritorna dobra često prikazuju uz alokacijsku funkciju, ona nisu tržišni neuspjeh u istom uskom tehničkom smislu kao javna dobra, eksternalije ili monopol. **Meritorna dobra** su dobra za koja društvo smatra da ih treba poticati ili osigurati svima, čak i ako ih pojedinci ne bi sami izabrali u dovoljnoj mjeri. Pojam je razvio Musgrave kako bi objasnio zašto država intervenira u područjima poput obrazovanja, zdravstva, kulture, mirovinske sigurnosti ili osnovne socijalne zaštite [@musgrave1959].
 
@@ -900,10 +900,10 @@ Obrazovanje je dobar primjer. Ono nije čisto javno dobro jer je moguće organiz
 
 Meritorna dobra otvaraju pitanje **paternalizma**. Ako država obvezno propisuje osnovno obrazovanje, obvezno zdravstveno osiguranje ili obveznu mirovinsku štednju, ona ne prepušta odluku u potpunosti pojedincu. Time ograničava izbor, ali to opravdava tvrdnjom da pojedinac možda ne bi sam donio odluku koja je dobra za njega i za društvo. Zbog toga meritorna dobra treba promatrati kao prijelazno područje između alokacijske i distribucijske funkcije.
 
-## Zaključno: alokacijska funkcija kao prvi argument za državu
+## Alokacijska funkcija kao prvi argument za državu
 
 Alokacijska funkcija države pokazuje zašto slobodno tržište, iako je temeljni mehanizam organizacije gospodarskog života, nije dovoljno za sve društvene potrebe. Javna dobra tržište ne može lako financirati jer se korisnike teško može isključiti iz potrošnje. Eksternalije nastaju kada privatne odluke stvaraju društvene troškove ili koristi koje cijene ne odražavaju. Asimetrične informacije narušavaju razmjenu jer jedna strana zna više od druge. Tržišna moć i prirodni monopoli ograničavaju konkurenciju i omogućuju cijene i količine koje nisu društveno učinkovite. Zajednički resursi mogu biti prekomjerno iskorišteni jer pojedinci ne snose puni trošak iscrpljivanja. Meritorna dobra pokazuju da društvo ponekad želi osigurati određena dobra i usluge zbog njihovih širih učinaka i društvene vrijednosti.
 
 U svim tim slučajevima država može imati važnu ulogu. Može financirati javna dobra, oporezivati negativne eksternalije, subvencionirati pozitivne eksternalije, propisivati standarde, smanjivati informacijske probleme, regulirati monopole, štititi zajedničke resurse i osiguravati meritorna dobra. Međutim, prepoznavanje tržišnog neuspjeha samo je prvi korak. Nakon toga treba odabrati pravi instrument, procijeniti troškove i koristi, uzeti u obzir kapacitete provedbe i paziti da državna intervencija sama ne proizvede nove probleme.
 
-Zato je najvažnija pouka alokacijske funkcije sljedeća: država je potrebna ne zato da zamijeni tržište, nego zato da ispravi situacije u kojima tržište samo ne može proizvesti društveno učinkovit ishod.
+Najvažnija pouka alokacijske funkcije zato glasi da je država potrebna ne zato da zamijeni tržište, nego zato da ispravi situacije u kojima tržište samo ne može proizvesti društveno učinkovit ishod.

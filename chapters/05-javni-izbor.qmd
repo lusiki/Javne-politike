@@ -5,22 +5,22 @@ title: "Što je to javni izbor i zašto nas se tiče?"
 
 
 Teorija javnog izbora (engl. *Public Choice Theory*) predstavlja
-sponu između ekonomije i političkih znanosti i definira se kao "uporaba
+sponu između ekonomije i političkih znanosti i definira se kao uporaba
 ekonomskih alata za rješavanje tradicionalnih problema političke
-znanosti". Ova teorija fundamentalno preoblikuje razumijevanje kolektivnog
+znanosti. Ona fundamentalno preoblikuje razumijevanje kolektivnog
 odlučivanja tako što primjenjuje koncepte standardne maksimizacije korisnosti,
 teorije igara i teorije odluke na političko ponašanje. Razumijevanje javnog
-izbora ključno je jer nudi objašnjenje zašto politički ishodi često odstupaju
+izbora važno je jer nudi objašnjenje zašto politički ishodi često odstupaju
 od idealiziranih očekivanja javnog interesa, fokusirajući analizu na
 institucionalne poticaje koji oblikuju ponašanje državnih aktera.
 
-Tradicionalno, politiku se često promatra kroz idealističnu prizmu, gdje se
+Tradicionalno se politiku često promatra kroz idealističnu prizmu u kojoj se
 vlada i njezini dužnosnici percipiraju kao dobronamjerni entiteti koji teže
 isključivo općem dobru i provode "volju" naroda. Iako ovaj pogled pruža
 utješan narativ, on često ne objašnjava zašto političke odluke u praksi mogu
 biti neučinkovite, nelogične i često naizgled suprotne interesima većine
-građana. Pritom se često postavljaju pitanja: Zašto se donose zakoni koji pogoduju uskim interesnim skupinama, a na
-štetu šire javnosti? Zašto su birokratski procesi često spori i nefleksibilni?
+građana. Pritom se često postavlja pitanje zašto se donose zakoni koji pogoduju uskim interesnim skupinama, a na
+štetu šire javnosti i zašto su birokratski procesi često spori i nefleksibilni.
 
 Teorija javnog izbora nudi radikalan, ali analitički snažan odgovor na ova
 pitanja. James Buchanan, dobitnik Nobelove nagrade za ekonomiju, definirao je
@@ -28,54 +28,41 @@ javni izbor kao "politiku bez romantike" [@buchanan1986]. Umjesto da
 politiku tretiraju kao zasebno područje vođeno altruizmom, teoretičari javnog
 izbora primjenjuju ekonomske alate i metodologiju na političke procese [@buchanan1962]. Osnovna premisa jest da su svi sudionici u političkom
 sustavu, odnosno birači, političari i birokrati racionalni, samointeresni
-pojedinci čije su motivacije slične onima na ekonomskom tržištu [@brennan1993]. Pritom, grupe odnosno "društvo" ili
-"narod" ne donose odluke, odnosno odluke su isključivo rezultat
-pojedinačnih izbora [@buchanan1962]. Javni izbor nam pomaže
+pojedinci čije su motivacije slične onima na ekonomskom tržištu [@brennan1993]. Pritom grupe poput "društva" ili
+"naroda" ne donose odluke, već su odluke isključivo rezultat
+pojedinačnih izbora [@buchanan1962]. Javni izbor pomaže
 dekonstruirati naizgled iracionalne političke ishode i uvidjeti da su oni često
 logične posljedice interakcije samointeresnih aktera unutar određenih
-institucionalnih pravila. Razumijevanje ove dinamike ključno je za svakoga tko
+institucionalnih pravila. Razumijevanje ove dinamike važno je za svakoga tko
 želi biti informiran i učinkovito utjecati na politički proces.
 
-## Definicija, metodologija i osnovne pretpostavke teorije javnog izbora
+## Definicija, metodologija i osnovne pretpostavke
 
 Intelektualni temelji teorije
 javnog izbora postavljeni su kroz seminalne radove poput *An Economic Theory of Democracy* [@downs1957] i *The Calculus of Consent* [@buchanan1962].
 
-Već je prethodno istaknuto kako
-teorija javnog izbora predstavlja primjenu ekonomskih načela i metoda na
-analizu političkih procesa, odnosno donošenja odluka u javnom sektoru. Pritom,
-osnovna ideja proizlazi iz pretpostavke da se politički akteri zapravo birači,
-političari i birokrati koji se ponašaju racionalno i sebično, slično akterima
+Teorija javnog izbora primjenjuje ekonomska načela i metode na
+analizu političkih procesa, odnosno donošenja odluka u javnom sektoru. Pritom
+osnovna ideja proizlazi iz pretpostavke da se politički akteri, zapravo birači,
+političari i birokrati, ponašaju racionalno i sebično, slično akterima
 na tržištu, te maksimiziraju vlastitu korisnost umjesto „javnog interesa"
-[@buchanan1962]. Na taj način, teorija javnog izbora spaja ekonomsku
-analizu i političku znanost, promatrajući državu kao skup međusobno povezanih
+[@buchanan1962]. Na taj način teorija javnog izbora spaja ekonomsku
+analizu i političku znanost te promatra državu kao skup međusobno povezanih
 tržišta političkih odluka [@mueller1989].
 
 Metodološki okvir ove teorije
-temelji se na racionalnom izboru, individualizmu i analizi troškova i koristi.
+temelji se na racionalnom izboru, individualizmu te analizi troškova i koristi.
 Racionalni izbor podrazumijeva da pojedinci donose odluke na temelju usporedbe
 očekivanih koristi i troškova, a ne altruizma [@downs1957]. Individualizam
 polazi od premise da su društveni ishodi rezultat interakcije pojedinaca, dok
 analiza troškova i koristi omogućuje kvantifikaciju i evaluaciju političkih
 odluka u odnosu na njihovu učinkovitost i distribucijske učinke [@ostrom1990].
-U tom kontekstu, država se ne promatra kao neutralan mehanizam, već kao arena
+U tom se kontekstu država ne promatra kao neutralan mehanizam, već kao arena
 sukoba interesa i kompromisa među različitim društvenim skupinama [@brennan1985].
 
-Osnovne
-pretpostavke teorije javnog izbora uključuju:
+Osnovne pretpostavke teorije javnog izbora uključuju racionalnost aktera prema kojoj politički subjekti djeluju u skladu s vlastitim interesima [@downs1957], asimetriju informacija u kojoj birači često raspolažu ograničenim znanjem o političkim programima što dovodi do problema racionalne ignorancije [@buchanan1986], kolektivno djelovanje i problem „besplatnog jahača" gdje pojedinci imaju poticaj koristiti javna dobra bez doprinosa njihovu financiranju [@olson1965], te institucionalnu analizu prema kojoj političke institucije oblikuju ponašanje aktera i određuju ishode javnih odluka [@ostrom1990].
 
-1.  Racionalnost aktera – politički subjekti djeluju u skladu
-    s vlastitim interesima [@downs1957].
-2.  Asimetriju informacija – birači često raspolažu
-    ograničenim znanjem o političkim programima, što dovodi do problema racionalne
-    ignorancije [@buchanan1986].
-3.  Kolektivno djelovanje i problem „besplatnog jahača" –
-    pojedinci imaju poticaj koristiti javna dobra bez doprinosa njihovom
-    financiranju [@olson1965].
-4.  Institucionalna analiza – političke institucije oblikuju
-    ponašanje aktera i određuju ishode javnih odluka [@ostrom1990].
-
-Metodološki, teorija javnog izbora
+Metodološki teorija javnog izbora
 koristi instrumente mikroekonomske analize, teorije igara i institucionalne
 ekonomije. Kroz modele glasanja, koalicijskih dogovora i birokratskog ponašanja
 objašnjava se kako individualni interesi mogu dovesti do kolektivno neefikasnih
@@ -88,8 +75,8 @@ metodološkog individualizma prema kojem se kolektivne odluke ne donose od
 strane agregatne cjeline (npr. "države"), već su rezultat kombinacije
 individualnih izbora i preferencija. Sljedeći postulat je racionalno
 samopouzdanje (engl. *Rational Self-Interest*) prema kojem svi akteri u političkom sustavu, odnosno birači,
-političari, birokrati djeluju racionalno u nastojanju maksimiziranja vlastite
-korisnost ili blagostanja. Također, u ovom kontekstu ističe se i takozvana politika kao razmjena (engl. *Politics as Exchange*) prema kojoj
+političari i birokrati, djeluju racionalno u nastojanju maksimiziranja vlastite
+korisnosti ili blagostanja. U ovom se kontekstu ističe i takozvana politika kao razmjena (engl. *Politics as Exchange*) prema kojoj
 se politički procesi promatraju kao složeni sustavi razmjene u kojima pojedinci
 nastoje poboljšati svoje pozicije.
 
@@ -103,29 +90,29 @@ i političkih ishoda (engl. *Political
 outcomes*) [@buchanan1962; @brennan1985]. Ova
 perspektiva polazi od ideje da kvaliteta političkih odluka ne ovisi samo o
 preferencijama aktera, već ponajprije o institucionalnim pravilima koja
-oblikuju proces donošenja odluka. Drugim riječima, efikasnost i pravednost
+oblikuju proces donošenja odluka. Efikasnost i pravednost
 kolektivnih odluka proizlaze iz dizajna institucionalnog okvira, a ne iz
 pojedinačnih političkih odluka ili volje trenutne većine. @buchanan1986 je
-isticao da se u politici moraju razlikovati dvije razine analize: ustavna
-(konstitucionalna) razina, na kojoj se biraju i definiraju pravila igre,
+isticao da se u politici moraju razlikovati dvije razine analize. Ustavna
+(konstitucionalna) razina je ona na kojoj se biraju i definiraju pravila igre,
 odnosno ograničenja i procedure prema kojima će se donositi buduće kolektivne
-odluke te post-ustavna razina, na kojoj se unutar postojećih pravila odlučuje o
+odluke, dok je post-ustavna razina ona na kojoj se unutar postojećih pravila odlučuje o
 konkretnim političkim pitanjima [@buchanan1986]. Pritom na ustavnoj razini
 pojedinci djeluju iza „zavjese neizvjesnosti" slične Rawlsovom konceptu
 „zavjese neznanja" gdje ne znaju kakvu će poziciju u društvu zauzeti te stoga
 imaju poticaj dizajnirati pravedna i stabilna pravila igre [@brennan2000]. Takav pristup ima za cilj ograničiti proizvoljnost većine i
 smanjiti mogućnost eksploatacije manjina, ističući važnost ustavnih ograničenja
-nad diskrecijskim odlukama političara. Metodološki, konstitucionalna politička
-ekonomija naglašava normativnu analizu institucija, odnosno postavlja se
+nad diskrecijskim odlukama političara. Metodološki konstitucionalna politička
+ekonomija naglašava normativnu analizu institucija, odnosno postavlja
 pitanje kako bi pravila trebala biti postavljena da osiguraju legitimnost,
 stabilnost i učinkovitost političkog sustava [@vanberg2005]. Time se prelazi s
-pozitivne analize koja proučava kako zapravo sustav funkcionira na normativnu
-razinu kojoj je u fokusu kako bi trebao sustav trebao funkcionirati. @buchanan1991 ističe da je upravo spontani poredak odnosno skup neplaniranih, ali
-stabilnih institucionalnih aranžmana najbolji okvir za osiguravanje slobode i
+pozitivne analize koja proučava kako sustav zapravo funkcionira na normativnu
+razinu kojoj je u fokusu kako bi sustav trebao funkcionirati. @buchanan1991 ističe da je upravo spontani poredak, odnosno skup neplaniranih, ali
+stabilnih institucionalnih aranžmana, najbolji okvir za osiguravanje slobode i
 ekonomskog prosperiteta.
 
 Središnja poruka konstitucionalne
-perspektive glasi da dobro definirana pravila igre mogu ograničiti negativne
+perspektive jest da dobro definirana pravila igre mogu ograničiti negativne
 ishode političkog procesa. Umjesto da se fokusira na redistribucijske politike
 ili pojedinačne programe, ova škola misli naglašava važnost uspostave
 mehanizama koji sprječavaju zloupotrebu moći i potiču odgovornost. Time se
@@ -133,21 +120,17 @@ konstitucionalna politička ekonomija pozicionira kao most između ekonomije,
 političke filozofije i prava s ciljem stvaranja institucionalnog okvira koji
 maksimizira individualnu slobodu i društvenu koheziju [@buchanan1987; @brennan1985].
 
-## Trebam li i kako sudjelovati u donošenju političkih odluka?
-
-Pitanje individualnog sudjelovanja u donošenju političkih odluka obrađeno je detaljno u pododjeljku ispod.
-
 ## Ljudi kao birači, političari i službenici
 
 Jedno od temeljnih polazišta
 teorije javnog izbora jest da se svi sudionici političkog procesa, odnosno
-birači, političari i službenici (birokrati) ponašaju racionalno, vodeći se
+birači, političari i službenici (birokrati), ponašaju racionalno, vodeći se
 vlastitim interesima i poticajima, a ne apstraktnim „javnim dobrom" [@buchanan1962]. Ovaj pristup, poznat kao metodološki individualizam,
 odbacuje idealiziranu sliku države kao neutralnog čuvara zajedničkih interesa
 te je promatra kao sustav međusobno povezanih tržišta političkih odluka [@mueller1989]. Štoviše, svaka od triju skupina aktera ima svoje ciljeve, ograničenja i
 informacijske asimetrije, što zajedno oblikuje stvarne ishode javnih
 politika. Teorija javnog izbora primjenjuje pretpostavku racionalnog
-samopouzdanja na sve ključne aktere u političkom sustavu: birače, političare i
+samopouzdanja na sve ključne aktere u političkom sustavu, odnosno birače, političare i
 birokrate.
 
 ### Trebam li i kako sudjelovati u donošenju političkih odluka?
@@ -156,7 +139,7 @@ Pitanje individualnog sudjelovanja
 u donošenju političkih odluka jedno je od središnjih problema teorije javnog
 izbora. Ono se analizira kroz prizmu racionalnog izbora, odnosno ekonomskog
 pristupa ponašanju birača i političkih aktera [@downs1957]. Temeljna
-pretpostavka jest da birači djeluju racionalno odnosno nastoje maksimizirati svoju korisnost i minimizirati troškove
+pretpostavka jest da birači djeluju racionalno, odnosno nastoje maksimizirati svoju korisnost i minimizirati troškove,
 što dovodi do pitanja zašto bi racionalan pojedinac uopće sudjelovao u izborima
 kada je vjerojatnost da njegov glas promijeni ishod iznimno mala [@mueller1989].
 
@@ -166,14 +149,14 @@ Paradoks neglasanja (engl. *The Paradox of Not Voting*), koji
 je istaknuo @downs1957, nalaže da je glasanje u velikim izborima, u
 strogo instrumentalnom smislu, iracionalno. Ako je vjerojatnost da će jedan
 pojedinačni glas utjecati na ishod (engl. *pivotality*) zanemarivo mala, štoviše
-gotovo jednaka nuli i ako glasanje podrazumijeva bilo kakav, pa i minimalan
-trošak primjerice vrijeme, trud ili prilagodbu rasporeda, racionalni akter bi
+gotovo jednaka nuli, i ako glasanje podrazumijeva bilo kakav, pa i minimalan
+trošak poput vremena, truda ili prilagodbe rasporeda, racionalni akter bi
 trebao ostati kod kuće. Pritom se ovaj instrumentalni model glasanja formalno
-se opisuje formulom:
+opisuje formulom
 
 $$R = P \cdot B - C,$$
 
-gdje R predstvalja nagradu za
+gdje R predstavlja nagradu za
 glasanje, P vjerojatnost da će glas biti odlučujući, B korist od preferiranog
 ishoda, a C trošak glasanja. Budući da je u velikim populacijama $P \approx 0$, tada je R
 negativan čim je $C > 0$. Unatoč ovoj logici, izlaznost na izbore ostaje
@@ -189,16 +172,16 @@ informacija, već i do neučinkovitog korištenja onih informacija koje birači
 posjeduju.
 
 @caplan2001 u svom radu
-proširuje ovaj koncept idejom racionalne iracionalnosti. U svom istraživanju
-naglašavao je da birači ne samo da ne ulažu u informacije, već si mogu
+proširuje ovaj koncept idejom racionalne iracionalnosti. U svom je istraživanju
+naglašavao da birači ne samo da ne ulažu u informacije, već si mogu
 priuštiti zadržavanje sistemski pristranih, iracionalnih uvjerenja, jer je
 cijena takve greške u prosudbi gotovo nula. U nedostatku sistemskih
-pristranosti, individualna iracionalnost bi se poništila na agregatnoj razini.
-Međutim, ako postoje sistemske pristranosti poput primjerice ekonomskih
-uvjerenja može se objasniti zašto političke odluke mogu biti suprotne
+pristranosti individualna bi se iracionalnost poništila na agregatnoj razini.
+Međutim, postojanje sistemskih pristranosti poput ekonomskih
+uvjerenja može objasniti zašto političke odluke mogu biti suprotne
 ekonomskim dokazima.
 
-#### Pomirenje paradoksa: instrumentalno vs. ekspresivo glasanje
+#### Pomirenje paradoksa — instrumentalno i ekspresivno glasanje
 
 Jedan od temeljnih izazova teorije
 javnog izbora jest paradoks glasanja, prema kojemu racionalan pojedinac, vođen
@@ -214,14 +197,14 @@ klasične ekonomske racionalnosti gdje birači glasaju kako bi maksimizirali
 očekivanu korist od političkih ishoda [@downs1957]. Oni biraju opciju koja im
 donosi najveću korist u pogledu poreza, dohotka, javnih usluga ili drugih
 konkretnih materijalnih učinaka. Međutim, budući da je vjerojatnost odlučujućeg
-glasa infinitesimalno mala, instrumentalni motiv sam po sebi ne može objasniti
+glasa infinitezimalno mala, instrumentalni motiv sam po sebi ne može objasniti
 široku participaciju birača [@mueller1989].
 
 S druge strane, teorija
 ekspresivnog glasanja (engl. *expressive
 voting*), koju su razvili @riker1968 te kasnije formalizirali
 @brennan1993, nadopunjuje instrumentalni model psihološkom i
-simboličkom dimenzijom. Prema ovom pristupu, birači ne glasaju zato što očekuju
+simboličkom dimenzijom. Prema ovom pristupu birači ne glasaju zato što očekuju
 da će promijeniti ishod, već zato što im čin glasanja omogućuje izražavanje
 identiteta, vrijednosti ili moralnih uvjerenja. Glasanje se promatra kao akt
 samopotvrđivanja i društvene pripadnosti, a ne kao čisto instrumentalno
@@ -234,12 +217,12 @@ mjeri i u emocionalnim, a ne samo materijalnim kategorijama [@hamlin1999].
 
 Pomirenje paradoksa glasanja
 postiže se kombiniranjem instrumentalnog i ekspresivnog pristupa. U suvremenim
-modelima teorije javnog izbora, korisnost sudjelovanja uključuje i
+modelima teorije javnog izbora korisnost sudjelovanja uključuje i
 instrumentalne koristi (povezane s ishodima) i ekspresivne koristi (povezane s identitetom
 i vrijednostima) [@feddersen2004]. Takav model proširuje pojam racionalnosti
 izvan uskog ekonomskog okvira i objašnjava zašto pojedinci mogu racionalno
 odlučiti sudjelovati čak i kad je očekivana materijalna korist zanemariva.
-Ovakav spoj racionalne kalkulacije i društvenih motiva čini teoriju javnog
+Spoj racionalne kalkulacije i društvenih motiva čini teoriju javnog
 izbora metodološki otvorenijom prema interdisciplinarnim pristupima,
 uključujući sociologiju, psihologiju i teoriju identiteta. Time se pokazuje da
 je ljudsko političko ponašanje višedimenzionalno, odnosno istodobno racionalno
@@ -261,9 +244,9 @@ Teorija javnog izbora dosljedno
 primjenjuje model samointeresnog aktera i na političare, gledajući ih kao
 poduzetnike na političkom tržištu [@downs1957]. Njihov primarni cilj nije
 apstraktni javni interes, već maksimizacija moći i pobjeda na izborima, a javni
-interes se smatra sredstvom za postizanje tih ciljeva [@buchanan1962; @buchanan1986; @downs1957]. U tu svrhu, političari se koriste
+interes se smatra sredstvom za postizanje tih ciljeva [@buchanan1962; @buchanan1986; @downs1957]. U tu se svrhu političari koriste
 specifičnim mehanizmima, od kojih su najznačajniji trgovina glasovima (engl. *logrolling*) i traženje renti (engl. *rent-seeking*). *Logrolling* ili
-trgovina glasovima, neformalna je praksa razmjene glasova unutar zakonodavnih
+trgovina glasovima neformalna je praksa razmjene glasova unutar zakonodavnih
 tijela [@buchanan1962]. Iako ova praksa može dovesti do
 postizanja dogovora koji inače ne bi bio moguć, analiza pokazuje da
 sudjelovanje u njoj ima svojevrstan pozitivan i statistički značajan utjecaj na
@@ -285,23 +268,22 @@ Kao proširenje koncepta
 *rent-seekinga*, takozvana teorija regulatorne zarobljenosti [@stigler1971]
 tvrdi da regulacija ne nastaje kako bi korigirala tržišne neuspjehe u javnom
 interesu, već se stvara kao odgovor na potražnju industrije koja je želi
-"kupiti" [@stigler1971]. Država, posjedujući moć prisile, nudi
+"kupiti" [@stigler1971]. Država posjeduje moć prisile i nudi
 takozvane „proizvode" poput subvencija, kontrole nad ulaskom na tržište,
 regulacije supstituta ili fiksiranja cijena, a industrije s koncentriranim
-interesima su najbolje organizirane da te proizvode "kupe". Ovo
+interesima najbolje su organizirane da te proizvode "kupe". Time se
 objašnjava zašto propisi često sadrže "klauzule o starosti"
 (engl. *grandfather clauses*) koje oslobađaju postojeće tvrtke od novih zahtjeva, čime
 se efektivno stvaraju prepreke za ulazak novih konkurenata [@stigler1971].
 
 Ovakvi neintuitivni ishodi rezultat
-su logike kolektivnog djelovanja, koju je @olson1965 razradio. Olson je objasnio da su male, homogene interesne skupine s
+su logike kolektivnog djelovanja koju je razradio @olson1965. Olson je objasnio da su male, homogene interesne skupine s
 koncentriranim interesima daleko učinkovitije u kolektivnom djelovanju od
-velikih skupina s difuznim interesima [@buchanan1962]. To je
-zato što članovi manjih grupa imaju veći pojedinačni ulog, niže troškove
+velikih skupina s difuznim interesima [@buchanan1962]. Razlog je u tome što članovi manjih grupa imaju veći pojedinačni ulog, niže troškove
 organiziranja i manji problem "slobodnog jahača" (engl. *free-rider problem*)
 [@buchanan1962]. Zbog toga su lobističke skupine koje
 predstavljaju koncentrirane industrije uspješnije u osiguravanju privilegija
-koje donose značajne koristi njima, dok se troškovi tih privilegija raspršuju
+koje im donose značajne koristi, dok se troškovi tih privilegija raspršuju
 na cijelu, neorganiziranu javnost [@olson1965; @stigler1971]. To je temeljni
 mehanizam kojim teorija javnog izbora objašnjava disproporcionalni utjecaj
 posebnih interesa na javnu politiku.
@@ -344,7 +326,7 @@ prema prevelikim izdacima, regulacijama i neučinkovitoj alokaciji resursa.
 Ova analiza pruža važan uvid u to
 da neučinkovitost javne uprave nije nužno rezultat nekompetentnosti ili
 korupcije, nego strukturnih poticaja unutar odnosa između birokrata i
-političkih institucija. Problem leži u agens-principal dilemi — neskladu između
+političkih institucija. Problem leži u agens-principal dilemi koja podrazumijeva nesklad između
 interesa „principala" (vlade ili zakonodavca) i „agenta" (birokrata) koji
 raspolaže ključnim informacijama i koristi ih za maksimizaciju vlastite
 korisnosti. Niskanen time razbija mit o birokraciji kao neutralnom mehanizmu
@@ -361,7 +343,7 @@ je pojam javnog interesa sam po sebi neodređen i da ga birokrati tumače iz
 perspektive vlastitog djelokruga rada. Time, iako možda subjektivno vjeruju da
 djeluju u javnom interesu, u praksi često potiču rast proračuna i širenje
 administrativne kontrole. Kritičari su također istaknuli da su interesi unutar
-birokracije heterogeni: viši službenici teže moći i prestižu, dok niži
+birokracije heterogeni, pri čemu viši službenici teže moći i prestižu, dok niži
 prioritet daju sigurnosti radnog mjesta i stabilnosti [@breton1975]. Stoga maksimizacija proračuna ne mora nužno biti univerzalni cilj svih
 slojeva birokracije.
 
@@ -397,35 +379,30 @@ interesa, informacija i ograničenja. Time teorija javnog izbora ne nudi
 jednostavna rješenja za problem birokratske neučinkovitosti, ali pruža
 realističan okvir za razumijevanje zašto javne administracije imaju tendenciju
 širenja, čak i kad to nije društveno optimalno. Suvremeni modeli poput
-Dunleavyjevog potvrđuju da je birokratsko ponašanje višedimenzionalno i da se
-racionalnost aktera može izraziti kroz različite oblike – od maksimizacije
+Dunleavyjeva potvrđuju da je birokratsko ponašanje višedimenzionalno i da se
+racionalnost aktera može izraziti kroz različite oblike, od maksimizacije
 proračuna do oblikovanja institucionalnih struktura koje donose profesionalnu
 autonomiju i status.
-
-## Država kao skup aktera, a ne kao jedinstveni racionalni planer
-
-Ova tema obrađena je u pododjeljcima o birokraciji, logrolling i rent-seekingu ispod.
 
 ## Zašto su odluke države često neintuitivne?
 
 Odluke države često se doimaju
-neintuitivnima u slučajevima primjerice kada se subvencioniraju neefikasne
+neintuitivnima u slučajevima kada se primjerice subvencioniraju neefikasne
 industrije, održavaju gubitaši ili financiraju skupi projekti koji koriste tek
 uskom krugu interesnih skupina. Iako se takvi potezi građanima mogu činiti
 nelogičnima ili ekonomskim promašajem, teorija javnog izbora nudi objašnjenje
-koje ih čini razumljivima. Prema ovom pristupu, mnoge državne odluke koje na
+koje ih čini razumljivima. Prema ovom pristupu mnoge državne odluke koje na
 prvi pogled djeluju iracionalno zapravo su racionalne ako se promatraju kroz
 prizmu strukture poticaja i institucionalnih ograničenja unutar političkog
 sustava. Za razliku od tradicionalnog shvaćanja države kao jedinstvenog aktera
 koji djeluje u općem interesu, teorija javnog izbora promatra državu kao skup
-međusobno povezanih pojedinaca odnosno birača, političara i birokrata koji donose odluke vođeni vlastitim
+međusobno povezanih pojedinaca, odnosno birača, političara i birokrata, koji donose odluke vođeni vlastitim
 interesima, informacijama i kalkulacijama [@buchanan1962; @mueller1989]. Ishodi koji se iz društvene perspektive čine neefikasnima, nelogičnima
 ili paradoksalnima često su, zapravo, posve logične posljedice takvih
 racionalnih interakcija. Štoviše, teorija javnog izbora ukazuje da su ovi
 fenomeni predvidljive posljedice neuspjeha države (engl. *government failure*), odnosno situacija u kojima racionalno
 ponašanje političkih aktera u kombinaciji s neadekvatnim institucionalnim
-poticajima dovodi do kolektivno nepoželjnih rezultata. Drugim riječima,
-neefikasnost nije slučajna ili rezultat iracionalnosti, već sustavna posljedica
+poticajima dovodi do kolektivno nepoželjnih rezultata. Neefikasnost nije slučajna ili rezultat iracionalnosti, već sustavna posljedica
 načina na koji su političke i birokratske institucije strukturirane.
 
 ### Logika kolektivne akcije, koncentrirane koristi i raspršeni troškovi
@@ -433,7 +410,7 @@ načina na koji su političke i birokratske institucije strukturirane.
 Institucionalni korijeni
 neuspjeha države posebno su jasno objašnjeni u radu @olson1965 *The Logic of Collective Action*.
 Olson je među prvima pokazao da se temeljni izvor političke
-neučinkovitosti nalazi u problemu slobodnog jahača (engl. *free-rider problem*). Kada je riječ o kolektivnim dobrima,
+neučinkovitosti nalazi u problemu slobodnog jahača (engl. *free-rider problem*). Kada je riječ o kolektivnim dobrima
 poput povoljne regulacije, subvencija ili javnih usluga koje koristi velik broj
 građana, pojedinac ima snažan poticaj da izbjegne sudjelovanje u troškovima
 njihova ostvarivanja. Budući da će i bez vlastitog angažmana uživati u
@@ -448,39 +425,24 @@ odnosno uske skupine uspješno ostvaruju specifične privilegije, dok široka
 javnost snosi njihove troškove. Ova dinamika objašnjava zašto država često
 donosi odluke koje djeluju neintuitivno. Štoviše, one nisu rezultat
 neracionalnosti, već predvidiva posljedica racionalnog ponašanja u uvjetima
-neadekvatnih institucionalnih poticaja. Time Olsonova logika dovodi do ključnog
-uvida teorije javnog izbora: koncentrirane koristi i raspršeni troškovi.
+neadekvatnih institucionalnih poticaja. Olsonova logika tako vodi do ključnog
+uvida teorije javnog izbora o koncentriranim koristima i raspršenim troškovima.
 
-1.  **Koncentrirane koristi:** Mala, visoko organizirana skupina
-    (npr. jedna industrija ili interesna skupina) ima ogroman pojedinačni dobitak
-    od specifične državne politike (npr. carine, subvencije). Njihov je interes da
-    se organiziraju i lobiraju visok.
-2.  **Raspršeni troškovi:** Ukupni trošak te politike (npr. više
-    cijene za potrošače, troškovi iz saveznog proračuna) pada na široku, raspršenu
-    većinu (npr. sve porezne obveznike). Budući da je trošak po pojedincu
-    zanemariv, većina je racionalno neinformirana i ravnodušna, nemajući poticaj za
-    suprotstavljanje.
+Koncentrirane koristi znače da mala, visoko organizirana skupina (poput jedne industrije ili interesne skupine) ima ogroman pojedinačni dobitak od specifične državne politike kao što su carine ili subvencije, pa je njihov poticaj da se organiziraju i lobiraju visok. Raspršeni troškovi znače da ukupni trošak te politike, primjerice više cijene za potrošače ili troškovi iz proračuna, pada na široku većinu odnosno sve porezne obveznike. Budući da je trošak po pojedincu zanemariv, većina je racionalno neinformirana i ravnodušna, nemajući poticaj za suprotstavljanje.
 
 Ovaj asimetrični politički ekvilibrij objašnjava zašto se
 glasovi vokalnih manjina s mnogo toga za dobiti čuju nad glasovima ravnodušnih
 većina s malo toga za pojedinačno izgubiti. Odatle potječu dva glavna mehanizma
-neefikasnosti: logrolling i lov na rentu.
+neefikasnosti, logrolling i lov na rentu.
 
 ### Trgovanje glasovima i neto društveni gubitak
 
 Prethodno je već objašnjeno kako
 trgovanje glasovima (engl. *Logrolling*)
-zapravo predstavlja praksu trgovanja glasovima među političarima, često s
+zapravo predstavlja praksu razmjene glasova među političarima, često s
 ciljem osiguravanja prolaska zakonodavstva koje koristi specifičnim,
 koncentriranim interesima. Pritom se ta trgovina glasovima
-najčešće manifestira u dva oblika:
-
-1.  Eksplicitno trgovanje glasovima (otvorena, izravna trgovina
-    glasovima).
-2.  Implicitno trgovanje glasovima (takozvano Tullockovo
-    pakiranje). Ugrađivanje različitih, često nepovezanih mjera u jedan
-    sveobuhvatan zakonodavni paket (*tie-bar*),
-    o kojem se glasa jednom.
+najčešće manifestira u dva oblika. Prvi je eksplicitno trgovanje glasovima u smislu otvorene, izravne razmjene glasova. Drugi je implicitno trgovanje glasovima ili takozvano Tullockovo pakiranje, koje uključuje ugrađivanje različitih, često nepovezanih mjera u jedan sveobuhvatan zakonodavni paket (*tie-bar*) o kojem se glasa jednom.
 
 Negativne posljedice trgovine
 glasovima najčešće su povezane s neto negativnim društvenim posljedicama. Ovaj
@@ -504,21 +466,20 @@ udaljava sustav odlučivanja od stvarnih preferencija građana.
 
 ### Lov na rentu i zamka prijelaznih dobitaka
 
-Lov na rentu (engl. *Rent-Seeking*) je koncept koji je
-razvio @tullock1967. Ovaj koncept odnosi se na trošenje produktivnih
+Lov na rentu (engl. *Rent-Seeking*) koncept je koji je
+razvio @tullock1967. Ovaj se koncept odnosi na trošenje produktivnih
 resursa u natjecanju za političku rentu, odnosno predstavlja takozvani transfer
-bogatstva umjetno stvoren državnom intervencijom (npr. regulatorni monopoli,
-licence, protekcionističke mjere). @tullock1967 je naglasio da se ovaj termin
+bogatstva umjetno stvoren državnom intervencijom poput regulatornih monopola,
+licenci ili protekcionističkih mjera. @tullock1967 je naglasio da se ovaj termin
 koristi isključivo za slučajeve s negativnim društvenim utjecajem.
 
 Trošak blagostanja (engl. *Welfare Cost*) s druge strane
 predstavlja značajan društveni gubitak. Resursi koji bi inače bili usmjereni na
-proizvodnju ili inovacije troše se na neproduktivne aktivnosti (lobiranje,
-financiranje kampanja, pravne bitke). Tullock je bio prvi koji je prepoznao da
+proizvodnju ili inovacije troše se na neproduktivne aktivnosti poput lobiranja, financiranja kampanja ili pravnih bitki. Tullock je bio prvi koji je prepoznao da
 stvarni trošak blagostanja nije samo Harbergerov trokut (gubitak mrtve težine,
 *deadweight loss*), već i Tullockov pravokutnik, odnosno rasipanje resursa
 uloženih u samo natjecanje za rentu. U visoko kompetitivnim uvjetima lova na
-rentu, rasipanje resursa može biti gotovo potpuno. Primjer takvog mehanizma
+rentu rasipanje resursa može biti gotovo potpuno. Primjer takvog mehanizma
 ilustrirala je @krueger1974 primjenom Tullockove logike na kvantitativna
 ograničenja u međunarodnoj trgovini, poput uvoznih kvota. Takve kvote stvaraju
 rentu, odnosno razliku između domaće i međunarodne cijene koja postaje izvorom
@@ -547,7 +508,7 @@ Time zamka prijelaznih dobitaka održava neučinkovite politike znatno dulje neg
 Neintuitivnost državnih odluka
 tako se može promatrati kao vrhunac sinergije političke i ekonomske
 neefikasnosti. Visoko informirane i koncentrirane interesne skupine, takozvani
-lovci na rentu učinkovito koriste trgovinu glasovima kako bi utjecale na
+lovci na rentu, učinkovito koriste trgovinu glasovima kako bi utjecale na
 političare i oblikovale javne politike prema vlastitim interesima. Istodobno,
 raspršena i racionalno neinformirana većina birača ne raspolaže dovoljno
 snažnim poticajima ni mehanizmima da te odluke nadzire ili sankcionira.
