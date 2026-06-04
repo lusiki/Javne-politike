@@ -77,90 +77,113 @@ fm_dT = fm_controls.dT
   const multG = 1 / (1 - c);
   const multT = -c / (1 - c);
 
+  const POLICY_G = "Povećanje državne potrošnje";
+  const POLICY_T = "Povećanje poreza";
+
   const grid = d3.range(0, Ymax + 10, 10);
-  const ae0 = grid.map(y => ({Y: y, AE: A0 + c * y})).filter(p => p.AE <= Ymax);
-  const aeG = grid.map(y => ({Y: y, AE: A0 + dG + c * y})).filter(p => p.AE <= Ymax);
-  const aeT = grid.map(y => ({Y: y, AE: A0 - c * dT + c * y}))
-                  .filter(p => p.AE <= Ymax && p.AE >= 0);
-  const line45 = [{Y: 0, AE: 0}, {Y: Ymax, AE: Ymax}];
 
-  const commonStyle = {fontSize: "12px", fontFamily: "Public Sans, system-ui, sans-serif", color: "#3A332D"};
+  // 45° line — drawn in both facets
+  const line45 = grid.flatMap(y => [
+    {Y: y, AE: y, policy: POLICY_G},
+    {Y: y, AE: y, policy: POLICY_T}
+  ]);
 
-  const panelG = Plot.plot({
-    width: 430,
-    height: 460,
-    marginLeft: 60,
-    marginBottom: 50,
-    marginTop: 45,
-    style: commonStyle,
-    title: "Povećanje državne potrošnje",
-    x: {label: "Dohodak / proizvodnja (Y) →", domain: [0, Ymax], grid: false},
-    y: {label: "↑ Agregatna potražnja",      domain: [0, Ymax], grid: true},
-    marks: [
-      Plot.ruleY([0], {stroke: "#C9C3B8"}),
-      Plot.line(line45, {x: "Y", y: "AE", stroke: "#3A332D", strokeWidth: 1.5}),
-      Plot.line(ae0, {x: "Y", y: "AE", stroke: "#2D5A8E", strokeWidth: 2.5}),
-      Plot.line(aeG, {x: "Y", y: "AE", stroke: "#2D5A8E", strokeWidth: 2.5, strokeDasharray: "6,4"}),
-
-      Plot.ruleX([Y0],  {y1: 0, y2: Y0,  stroke: "#6B6357", strokeDasharray: "4,3"}),
-      Plot.ruleX([Y1G], {y1: 0, y2: Y1G, stroke: "#6B6357", strokeDasharray: "4,3"}),
-
-      Plot.dot([{Y: Y0,  AE: Y0}],
-        {x: "Y", y: "AE", r: 5, fill: "#2D5A8E", stroke: "white", strokeWidth: 2}),
-      Plot.dot([{Y: Y1G, AE: Y1G}],
-        {x: "Y", y: "AE", r: 5, fill: "#2D5A8E", stroke: "white", strokeWidth: 2}),
-
-      Plot.text([{Y: Ymax * 0.92, AE: Ymax * 0.92, label: "45°"}],
-        {x: "Y", y: "AE", text: "label", fill: "#3A332D", fontSize: 11, dx: 6, dy: -6}),
-      Plot.text([{Y: Y0, AE: 10, label: `Y₀ = ${Y0.toFixed(0)}`}],
-        {x: "Y", y: "AE", text: "label", textAnchor: "middle", fontSize: 11, fill: "#2D5A8E"}),
-      Plot.text([{Y: Y1G, AE: 10, label: `Y₁ = ${Y1G.toFixed(0)}`}],
-        {x: "Y", y: "AE", text: "label", textAnchor: "middle", fontSize: 11, fill: "#2D5A8E"}),
-      Plot.text([{Y: 30, AE: Ymax * 0.96,
-        label: `Multiplikator ΔY/ΔG = ${multG.toFixed(2)}`}],
-        {x: "Y", y: "AE", text: "label", textAnchor: "start",
-         fontSize: 13, fill: "#1C1916", fontWeight: 700})
-    ]
+  // Original AE = A0 + c·Y — drawn in both facets
+  const ae0Data = grid.flatMap(y => {
+    const ae = A0 + c * y;
+    if (ae > Ymax) return [];
+    return [
+      {Y: y, AE: ae, policy: POLICY_G},
+      {Y: y, AE: ae, policy: POLICY_T}
+    ];
   });
 
-  const panelT = Plot.plot({
-    width: 430,
-    height: 460,
+  // Shifted AE curves — one per facet
+  const ae1G = grid.map(y => ({Y: y, AE: A0 + dG + c * y, policy: POLICY_G}))
+                   .filter(p => p.AE <= Ymax);
+  const ae1T = grid.map(y => ({Y: y, AE: A0 - c * dT + c * y, policy: POLICY_T}))
+                   .filter(p => p.AE <= Ymax && p.AE >= 0);
+
+  // Equilibrium dots
+  const dots = [
+    {Y: Y0,  AE: Y0,  policy: POLICY_G},
+    {Y: Y1G, AE: Y1G, policy: POLICY_G},
+    {Y: Y0,  AE: Y0,  policy: POLICY_T},
+    {Y: Y1T, AE: Y1T, policy: POLICY_T}
+  ];
+
+  // Vertical dashed guides — one datum per rule, routed via fx
+  const guideG = [
+    {Yx: Y0,  yTop: Y0,  policy: POLICY_G},
+    {Yx: Y1G, yTop: Y1G, policy: POLICY_G}
+  ];
+  const guideT = [
+    {Yx: Y0,  yTop: Y0,  policy: POLICY_T},
+    {Yx: Y1T, yTop: Y1T, policy: POLICY_T}
+  ];
+
+  // Bottom Y0 / Y1 readouts
+  const bottomLabels = [
+    {Y: Y0,  AE: 14, label: `Y₀ = ${Y0.toFixed(0)}`,  policy: POLICY_G},
+    {Y: Y1G, AE: 14, label: `Y₁ = ${Y1G.toFixed(0)}`, policy: POLICY_G},
+    {Y: Y0,  AE: 14, label: `Y₀ = ${Y0.toFixed(0)}`,  policy: POLICY_T},
+    {Y: Y1T, AE: 14, label: `Y₁ = ${Y1T.toFixed(0)}`, policy: POLICY_T}
+  ];
+
+  // 45° text marker (top-right of each panel)
+  const fortyfiveLabel = [
+    {Y: Ymax * 0.92, AE: Ymax * 0.92, label: "45°", policy: POLICY_G},
+    {Y: Ymax * 0.92, AE: Ymax * 0.92, label: "45°", policy: POLICY_T}
+  ];
+
+  // Multiplier readout at top
+  const topLabels = [
+    {Y: 30, AE: Ymax * 0.96,
+     label: `Multiplikator ΔY/ΔG = ${multG.toFixed(2)}`, policy: POLICY_G},
+    {Y: 30, AE: Ymax * 0.96,
+     label: `Multiplikator ΔY/ΔT = ${multT.toFixed(2)}`, policy: POLICY_T}
+  ];
+
+  return Plot.plot({
+    width: 880,
+    height: 470,
     marginLeft: 60,
+    marginRight: 25,
     marginBottom: 50,
-    marginTop: 45,
-    style: commonStyle,
-    title: "Povećanje poreza",
+    marginTop: 55,
+    style: {fontSize: "12px", fontFamily: "Public Sans, system-ui, sans-serif", color: "#3A332D"},
+    fx: {label: null, domain: [POLICY_G, POLICY_T]},
     x: {label: "Dohodak / proizvodnja (Y) →", domain: [0, Ymax], grid: false},
-    y: {label: "↑ Agregatna potražnja",      domain: [0, Ymax], grid: true},
+    y: {label: "↑ Agregatna potražnja",       domain: [0, Ymax], grid: true},
     marks: [
       Plot.ruleY([0], {stroke: "#C9C3B8"}),
-      Plot.line(line45, {x: "Y", y: "AE", stroke: "#3A332D", strokeWidth: 1.5}),
-      Plot.line(ae0, {x: "Y", y: "AE", stroke: "#2D5A8E", strokeWidth: 2.5}),
-      Plot.line(aeT, {x: "Y", y: "AE", stroke: "#2D5A8E", strokeWidth: 2.5, strokeDasharray: "6,4"}),
 
-      Plot.ruleX([Y1T], {y1: 0, y2: Y1T, stroke: "#6B6357", strokeDasharray: "4,3"}),
-      Plot.ruleX([Y0],  {y1: 0, y2: Y0,  stroke: "#6B6357", strokeDasharray: "4,3"}),
+      Plot.line(line45,  {fx: "policy", x: "Y", y: "AE",
+                          stroke: "#3A332D", strokeWidth: 1.5}),
+      Plot.line(ae0Data, {fx: "policy", x: "Y", y: "AE",
+                          stroke: "#2D5A8E", strokeWidth: 2.5}),
+      Plot.line(ae1G,    {fx: "policy", x: "Y", y: "AE",
+                          stroke: "#2D5A8E", strokeWidth: 2.5, strokeDasharray: "6,4"}),
+      Plot.line(ae1T,    {fx: "policy", x: "Y", y: "AE",
+                          stroke: "#2D5A8E", strokeWidth: 2.5, strokeDasharray: "6,4"}),
 
-      Plot.dot([{Y: Y0,  AE: Y0}],
-        {x: "Y", y: "AE", r: 5, fill: "#2D5A8E", stroke: "white", strokeWidth: 2}),
-      Plot.dot([{Y: Y1T, AE: Y1T}],
-        {x: "Y", y: "AE", r: 5, fill: "#2D5A8E", stroke: "white", strokeWidth: 2}),
+      Plot.ruleX(guideG, {fx: "policy", x: "Yx", y1: 0, y2: "yTop",
+                          stroke: "#6B6357", strokeDasharray: "4,3"}),
+      Plot.ruleX(guideT, {fx: "policy", x: "Yx", y1: 0, y2: "yTop",
+                          stroke: "#6B6357", strokeDasharray: "4,3"}),
 
-      Plot.text([{Y: Ymax * 0.92, AE: Ymax * 0.92, label: "45°"}],
-        {x: "Y", y: "AE", text: "label", fill: "#3A332D", fontSize: 11, dx: 6, dy: -6}),
-      Plot.text([{Y: Y1T, AE: 10, label: `Y₁ = ${Y1T.toFixed(0)}`}],
-        {x: "Y", y: "AE", text: "label", textAnchor: "middle", fontSize: 11, fill: "#2D5A8E"}),
-      Plot.text([{Y: Y0, AE: 10, label: `Y₀ = ${Y0.toFixed(0)}`}],
-        {x: "Y", y: "AE", text: "label", textAnchor: "middle", fontSize: 11, fill: "#2D5A8E"}),
-      Plot.text([{Y: 30, AE: Ymax * 0.96,
-        label: `Multiplikator ΔY/ΔT = ${multT.toFixed(2)}`}],
-        {x: "Y", y: "AE", text: "label", textAnchor: "start",
-         fontSize: 13, fill: "#1C1916", fontWeight: 700})
+      Plot.dot(dots, {fx: "policy", x: "Y", y: "AE", r: 5,
+                      fill: "#2D5A8E", stroke: "white", strokeWidth: 2}),
+
+      Plot.text(fortyfiveLabel, {fx: "policy", x: "Y", y: "AE", text: "label",
+                                 fill: "#3A332D", fontSize: 11, dx: 6, dy: -6}),
+      Plot.text(bottomLabels, {fx: "policy", x: "Y", y: "AE", text: "label",
+                               textAnchor: "middle", fontSize: 11, fill: "#2D5A8E"}),
+      Plot.text(topLabels, {fx: "policy", x: "Y", y: "AE", text: "label",
+                            textAnchor: "start", fontSize: 13,
+                            fill: "#1C1916", fontWeight: 700})
     ]
   });
-
-  return htl.html`<div style="display:flex; gap:1rem; flex-wrap:wrap; justify-content:center;">${panelG}${panelT}</div>`;
 }
 ```
 
