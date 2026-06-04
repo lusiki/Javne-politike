@@ -32,7 +32,205 @@ U središtu klasične ekonomike blagostanja nalazi se pojam **Pareto učinkovito
 
 Pareto učinkovitost važna je zato što daje minimalni kriterij ekonomske učinkovitosti. Ako postoji promjena koja nekome koristi, a nikome ne šteti, teško je pronaći razlog da se takva promjena ne provede. Međutim, Pareto kriterij ima i važno ograničenje. On ne govori ništa o pravednosti raspodjele. Društvo može biti Pareto učinkovito, a istodobno vrlo nejednako. Ako jedna osoba posjeduje gotovo sve resurse, a druga vrlo malo, takva alokacija može biti Pareto učinkovita ako nije moguće poboljšati položaj siromašne osobe bez smanjenja bogatstva bogate osobe. Zato Pareto učinkovitost nije isto što i društvena pravednost.
 
-### Dva teorema ekonomike blagostanja
+#### Edgeworthova kutija i ugovorna krivulja
+
+Edgeworthova kutija prikazuje sve moguće raspodjele dvaju dobara između dvaju potrošača. Svaka točka u kutiji označava jednu alokaciju. Ono što dobije potrošač A mjeri se od donjeg lijevog ishodišta, a ono što dobije potrošač B iz suprotnog, gornjeg desnog ishodišta.
+
+Polazna alokacija E nije Pareto učinkovita ako postoji barem jedna druga alokacija u kojoj se položaj jednog potrošača može poboljšati, a da se položaj drugog ne pogorša. Takve alokacije nalaze se u tzv. leći međusobno korisne razmjene. Pomak iz E u P primjer je Pareto poboljšanja u kojem barem jedan potrošač dolazi u bolji položaj, a nijedan ne dolazi u lošiji.
+
+Alokacija je Pareto učinkovita kada više ne postoji prostor za takvo poboljšanje. U Edgeworthovoj kutiji skup Pareto učinkovitih alokacija čini ugovorna krivulja, odnosno skup točaka u kojima se krivulje indiferencije dvaju potrošača dodiruju. Tada su njihove granične stope supstitucije jednake, pa daljnja preraspodjela može poboljšati položaj jednog potrošača samo uz pogoršanje položaja drugog.
+
+```{ojs}
+//| echo: false
+viewof eb_controls = Inputs.form({
+  alpha: Inputs.range([0.25, 0.75], {value: 0.6,  step: 0.05, label: "A-ova naklonost dobru X (α):"}),
+  beta:  Inputs.range([0.25, 0.75], {value: 0.4,  step: 0.05, label: "B-ova naklonost dobru X (β):"}),
+  ex:    Inputs.range([0.15, 0.85], {value: 0.30, step: 0.05, label: "Položaj E na osi X:"}),
+  ey:    Inputs.range([0.15, 0.85], {value: 0.70, step: 0.05, label: "Položaj E na osi Y:"})
+})
+```
+
+```{ojs}
+//| echo: false
+eb_alpha = eb_controls.alpha
+```
+
+```{ojs}
+//| echo: false
+eb_beta = eb_controls.beta
+```
+
+```{ojs}
+//| echo: false
+eb_ex = eb_controls.ex
+```
+
+```{ojs}
+//| echo: false
+eb_ey = eb_controls.ey
+```
+
+```{ojs}
+//| echo: false
+{
+  const W = 10, H = 10;
+  const alpha = eb_alpha, beta = eb_beta;
+  const Ex = eb_ex * W, Ey = eb_ey * H;
+
+  // Utility values at the initial allocation E
+  const U_A_E = Math.pow(Ex, alpha) * Math.pow(Ey, 1 - alpha);
+  const U_B_E = Math.pow(W - Ex, beta) * Math.pow(H - Ey, 1 - beta);
+
+  // A's indifference curve (in A's coords): y_A = (U_A_E / x_A^α)^(1/(1-α))
+  const A_IC = (x) => Math.pow(U_A_E / Math.pow(x, alpha), 1 / (1 - alpha));
+  // B's indifference curve (in A's coords)
+  const B_IC = (x) => H - Math.pow(U_B_E / Math.pow(W - x, beta), 1 / (1 - beta));
+  // Contract curve (Cobb-Douglas closed form)
+  const CC = (x) => {
+    const num = beta * H * (1 - alpha) * x;
+    const den = alpha * (1 - beta) * (W - x) + beta * (1 - alpha) * x;
+    return num / den;
+  };
+
+  // Sampling grid (avoid x=0 and x=W to skip singularities)
+  const N = 240;
+  const dx = (W - 0.1) / N;
+  const xs = d3.range(0.05, W - 0.05 + dx * 0.5, dx);
+
+  const inBox = (p) => p.P >= 0.02 && p.P <= H - 0.02;
+  const aIC = xs.map(x => ({Q: x, P: A_IC(x)})).filter(inBox);
+  const bIC = xs.map(x => ({Q: x, P: B_IC(x)})).filter(inBox);
+  const cc  = xs.map(x => ({Q: x, P: CC(x)})).filter(p => p.P >= 0 && p.P <= H);
+
+  // Find second crossing of A_IC and B_IC (E is one crossing by construction)
+  const diff = (x) => B_IC(x) - A_IC(x);
+  const findZero = (a, b) => {
+    if (diff(a) * diff(b) > 0) return null;
+    let lo = a, hi = b;
+    for (let i = 0; i < 60; i++) {
+      const m = 0.5 * (lo + hi);
+      if (diff(lo) * diff(m) <= 0) hi = m; else lo = m;
+    }
+    return 0.5 * (lo + hi);
+  };
+
+  const zeros = [];
+  for (let i = 1; i < xs.length; i++) {
+    const d1 = diff(xs[i - 1]);
+    const d2 = diff(xs[i]);
+    if (Number.isFinite(d1) && Number.isFinite(d2) && d1 * d2 < 0) {
+      const z = findZero(xs[i - 1], xs[i]);
+      if (z !== null && Math.abs(z - Ex) > 0.05) zeros.push(z);
+    }
+  }
+
+  // Lens endpoints: E and the nearest other zero on the appropriate side
+  let xLeft = Ex, xRight = Ex;
+  if (zeros.length >= 1) {
+    const other = zeros.reduce((best, z) =>
+      (Math.abs(z - Ex) < Math.abs(best - Ex) ? z : best), zeros[0]);
+    if (other < Ex) { xLeft = other; xRight = Ex; }
+    else { xLeft = Ex; xRight = other; }
+  }
+
+  // Build lens polygon between A_IC (bottom) and B_IC (top)
+  const lensSpan = Math.max(0, xRight - xLeft);
+  const lensXs = lensSpan > 0.02
+    ? d3.range(xLeft, xRight + lensSpan / 80, lensSpan / 80)
+    : [];
+  const lensPoly = lensXs.length > 0
+    ? [
+        ...lensXs.map(x => ({Q: x, P: A_IC(x)})),
+        ...lensXs.slice().reverse().map(x => ({Q: x, P: B_IC(x)}))
+      ]
+    : [];
+
+  // Pareto-improvement point P: on contract curve, inside the lens
+  let Px = 0.5 * (xLeft + xRight), Py = CC(0.5 * (xLeft + xRight));
+  if (lensXs.length > 0) {
+    let bestX = lensXs[Math.floor(lensXs.length / 2)];
+    let bestY = CC(bestX);
+    for (const x of lensXs) {
+      const yc = CC(x);
+      if (yc >= A_IC(x) && yc <= B_IC(x)) {
+        bestX = x; bestY = yc;
+        break;
+      }
+    }
+    Px = bestX; Py = bestY;
+  }
+
+  const boxOutline = [
+    {Q: 0, P: 0}, {Q: W, P: 0}, {Q: W, P: H}, {Q: 0, P: H}, {Q: 0, P: 0}
+  ];
+
+  return Plot.plot({
+    width: 720,
+    height: 560,
+    marginLeft: 65,
+    marginRight: 70,
+    marginTop: 55,
+    marginBottom: 55,
+    style: {fontSize: "12px", fontFamily: "Public Sans, system-ui, sans-serif", color: "#3A332D"},
+    x: {label: "Dobro X za potrošača A →", domain: [-0.4, W + 0.4], grid: false},
+    y: {label: "↑ Dobro Y za potrošača A", domain: [-0.4, H + 0.7], grid: false},
+    marks: [
+      Plot.line(boxOutline, {x: "Q", y: "P", stroke: "#3A332D", strokeWidth: 1.5}),
+
+      lensPoly.length > 0
+        ? Plot.line(lensPoly, {x: "Q", y: "P", stroke: "none",
+            fill: "#E8D6B8", fillOpacity: 0.55, curve: "linear"})
+        : null,
+
+      Plot.line(cc,  {x: "Q", y: "P", stroke: "#1C7C54", strokeWidth: 2.5}),
+      Plot.line(aIC, {x: "Q", y: "P", stroke: "#2D5A8E", strokeWidth: 2}),
+      Plot.line(bIC, {x: "Q", y: "P", stroke: "#6B1F26", strokeWidth: 2}),
+
+      Plot.link([{x1: Ex, y1: Ey, x2: Px, y2: Py}],
+        {x1: "x1", y1: "y1", x2: "x2", y2: "y2",
+         stroke: "#6B6357", strokeWidth: 1.5, strokeDasharray: "4,3", markerEnd: "arrow"}),
+
+      Plot.dot([{Q: Ex, P: Ey}],
+        {x: "Q", y: "P", r: 6, fill: "#1C1916", stroke: "white", strokeWidth: 2}),
+      Plot.dot([{Q: Px, P: Py}],
+        {x: "Q", y: "P", r: 6, fill: "#1C7C54", stroke: "white", strokeWidth: 2}),
+
+      Plot.text([{x: Ex, y: Ey, label: "E"}],
+        {x: "x", y: "y", text: "label", fill: "#1C1916",
+         fontSize: 14, fontWeight: 700, dx: -10, dy: -4}),
+      Plot.text([{x: Px, y: Py, label: "P"}],
+        {x: "x", y: "y", text: "label", fill: "#1C7C54",
+         fontSize: 14, fontWeight: 700, dx: 10, dy: -4}),
+
+      Plot.text([{x: 0, y: -0.25, label: "Potrošač A"}],
+        {x: "x", y: "y", text: "label", fill: "#3A332D",
+         fontSize: 13, fontWeight: 700, textAnchor: "start"}),
+      Plot.text([{x: W, y: H + 0.3, label: "Potrošač B"}],
+        {x: "x", y: "y", text: "label", fill: "#3A332D",
+         fontSize: 13, fontWeight: 700, textAnchor: "end"}),
+
+      Plot.text([{x: W * 0.78, y: CC(W * 0.78), label: "Ugovorna krivulja"}],
+        {x: "x", y: "y", text: "label", fill: "#1C7C54",
+         fontSize: 12, fontWeight: 600, dy: -10}),
+      Plot.text([{x: Math.min(W - 0.5, Ex + 1.6),
+                  y: A_IC(Math.min(W - 0.5, Ex + 1.6)), label: "ICₐ"}],
+        {x: "x", y: "y", text: "label", fill: "#2D5A8E",
+         fontSize: 12, fontWeight: 600, dy: -6}),
+      Plot.text([{x: Math.max(0.5, Ex - 1.6),
+                  y: B_IC(Math.max(0.5, Ex - 1.6)), label: "IC_B"}],
+        {x: "x", y: "y", text: "label", fill: "#6B1F26",
+         fontSize: 12, fontWeight: 600, dy: 14}),
+
+      Plot.text([{x: 0.2, y: H + 0.65,
+        label: lensSpan > 0.05
+          ? "E nije Pareto učinkovita — postoji leća međusobno korisnih razmjena."
+          : "E leži na ugovornoj krivulji — alokacija je Pareto učinkovita."}],
+        {x: "x", y: "y", text: "label", textAnchor: "start",
+         fontSize: 13, fill: "#1C1916", fontWeight: 700})
+    ].filter(m => m !== null)
+  });
+}
+```
 
 Na temelju tog pojma razvijena su dva temeljna teorema ekonomike blagostanja. **Prvi teorem ekonomike blagostanja** kaže da, pod određenim uvjetima, konkurentsko tržište vodi do Pareto učinkovite alokacije resursa. Ti uvjeti uključuju savršenu konkurenciju, potpune informacije, jasno definirana vlasnička prava, nepostojanje eksternalija, nepostojanje javnih dobara i nepostojanje tržišne moći. Ako su ti uvjeti zadovoljeni, pojedinci i poduzeća, slijedeći vlastite interese, kroz tržišnu razmjenu mogu dovesti do učinkovite alokacije resursa [@arrow1951].
 

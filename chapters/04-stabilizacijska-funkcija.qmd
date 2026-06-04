@@ -28,6 +28,144 @@ U razdoblju snažne ekspanzije država bi trebala djelovati suprotno. Ako gospod
 
 Upravo se ovdje vidi jedna od najvećih poteškoća stabilizacijske politike. Ekspanzivna fiskalna politika u krizi često je politički popularna, dok je restriktivna fiskalna politika u dobrim vremenima politički teška. Lako je povećati rashode ili smanjiti poreze kada postoji kriza. Teže je stvarati proračunske viškove u razdobljima rasta. Zbog toga države često ulaze u krize s premalo fiskalnog prostora, a nakon kriza izlaze s većim javnim dugom.
 
+## Fiskalni multiplikator
+
+Fiskalni multiplikator pokazuje za koliko se promijeni proizvodnja kada se promijeni neka fiskalna varijabla. U jednostavnom keynesijanskom okviru početni fiskalni impuls ne djeluje samo jednom, nego se širi kroz gospodarstvo. Dodatna potrošnja postaje nečiji dohodak, dio tog dohotka ponovno se troši, pa ukupni učinak na BDP može biti veći od početnog impulsa.
+
+U lijevom panelu prikazano je povećanje državne potrošnje. Budući da je državna potrošnja sastavnica agregatne potražnje, njezin rast izravno pomiče krivulju planiranih izdataka prema gore. Nova ravnoteža nastaje na višoj razini proizvodnje, pa je multiplikator državne potrošnje pozitivan.
+
+U desnom panelu prikazano je povećanje poreza. Viši porezi smanjuju raspoloživi dohodak kućanstava, a time i osobnu potrošnju. Zato se agregatna potražnja pomiče prema dolje, a ravnotežna proizvodnja pada, pa je porezni multiplikator negativan.
+
+```{ojs}
+//| echo: false
+viewof fm_controls = Inputs.form({
+  c:  Inputs.range([0.50, 0.85], {value: 0.70, step: 0.01, label: "Granična sklonost potrošnji (c):"}),
+  dG: Inputs.range([0,    60],   {value: 30,   step: 1,    label: "Porast državne potrošnje (ΔG):"}),
+  dT: Inputs.range([0,    60],   {value: 30,   step: 1,    label: "Porast poreza (ΔT):"})
+})
+```
+
+```{ojs}
+//| echo: false
+fm_c = fm_controls.c
+```
+
+```{ojs}
+//| echo: false
+fm_dG = fm_controls.dG
+```
+
+```{ojs}
+//| echo: false
+fm_dT = fm_controls.dT
+```
+
+```{ojs}
+//| echo: false
+{
+  const A0 = 100;             // autonomous expenditure (fixed)
+  const c  = fm_c;
+  const dG = fm_dG;
+  const dT = fm_dT;
+  const Ymax = 1400;
+
+  // Equilibria: AE = A0 + c·Y intersects 45° line at Y = A0/(1-c)
+  const Y0  = A0 / (1 - c);
+  const Y1G = (A0 + dG) / (1 - c);
+  const Y1T = (A0 - c * dT) / (1 - c);
+
+  const multG = 1 / (1 - c);
+  const multT = -c / (1 - c);
+
+  const grid = d3.range(0, Ymax + 10, 10);
+  const ae0 = grid.map(y => ({Y: y, AE: A0 + c * y})).filter(p => p.AE <= Ymax);
+  const aeG = grid.map(y => ({Y: y, AE: A0 + dG + c * y})).filter(p => p.AE <= Ymax);
+  const aeT = grid.map(y => ({Y: y, AE: A0 - c * dT + c * y}))
+                  .filter(p => p.AE <= Ymax && p.AE >= 0);
+  const line45 = [{Y: 0, AE: 0}, {Y: Ymax, AE: Ymax}];
+
+  const commonStyle = {fontSize: "12px", fontFamily: "Public Sans, system-ui, sans-serif", color: "#3A332D"};
+
+  const panelG = Plot.plot({
+    width: 430,
+    height: 460,
+    marginLeft: 60,
+    marginBottom: 50,
+    marginTop: 45,
+    style: commonStyle,
+    title: "Povećanje državne potrošnje",
+    x: {label: "Dohodak / proizvodnja (Y) →", domain: [0, Ymax], grid: false},
+    y: {label: "↑ Agregatna potražnja",      domain: [0, Ymax], grid: true},
+    marks: [
+      Plot.ruleY([0], {stroke: "#C9C3B8"}),
+      Plot.line(line45, {x: "Y", y: "AE", stroke: "#3A332D", strokeWidth: 1.5}),
+      Plot.line(ae0, {x: "Y", y: "AE", stroke: "#2D5A8E", strokeWidth: 2.5}),
+      Plot.line(aeG, {x: "Y", y: "AE", stroke: "#2D5A8E", strokeWidth: 2.5, strokeDasharray: "6,4"}),
+
+      Plot.ruleX([Y0],  {y1: 0, y2: Y0,  stroke: "#6B6357", strokeDasharray: "4,3"}),
+      Plot.ruleX([Y1G], {y1: 0, y2: Y1G, stroke: "#6B6357", strokeDasharray: "4,3"}),
+
+      Plot.dot([{Y: Y0,  AE: Y0}],
+        {x: "Y", y: "AE", r: 5, fill: "#2D5A8E", stroke: "white", strokeWidth: 2}),
+      Plot.dot([{Y: Y1G, AE: Y1G}],
+        {x: "Y", y: "AE", r: 5, fill: "#2D5A8E", stroke: "white", strokeWidth: 2}),
+
+      Plot.text([{Y: Ymax * 0.92, AE: Ymax * 0.92, label: "45°"}],
+        {x: "Y", y: "AE", text: "label", fill: "#3A332D", fontSize: 11, dx: 6, dy: -6}),
+      Plot.text([{Y: Y0, AE: 10, label: `Y₀ = ${Y0.toFixed(0)}`}],
+        {x: "Y", y: "AE", text: "label", textAnchor: "middle", fontSize: 11, fill: "#2D5A8E"}),
+      Plot.text([{Y: Y1G, AE: 10, label: `Y₁ = ${Y1G.toFixed(0)}`}],
+        {x: "Y", y: "AE", text: "label", textAnchor: "middle", fontSize: 11, fill: "#2D5A8E"}),
+      Plot.text([{Y: 30, AE: Ymax * 0.96,
+        label: `Multiplikator ΔY/ΔG = ${multG.toFixed(2)}`}],
+        {x: "Y", y: "AE", text: "label", textAnchor: "start",
+         fontSize: 13, fill: "#1C1916", fontWeight: 700})
+    ]
+  });
+
+  const panelT = Plot.plot({
+    width: 430,
+    height: 460,
+    marginLeft: 60,
+    marginBottom: 50,
+    marginTop: 45,
+    style: commonStyle,
+    title: "Povećanje poreza",
+    x: {label: "Dohodak / proizvodnja (Y) →", domain: [0, Ymax], grid: false},
+    y: {label: "↑ Agregatna potražnja",      domain: [0, Ymax], grid: true},
+    marks: [
+      Plot.ruleY([0], {stroke: "#C9C3B8"}),
+      Plot.line(line45, {x: "Y", y: "AE", stroke: "#3A332D", strokeWidth: 1.5}),
+      Plot.line(ae0, {x: "Y", y: "AE", stroke: "#2D5A8E", strokeWidth: 2.5}),
+      Plot.line(aeT, {x: "Y", y: "AE", stroke: "#2D5A8E", strokeWidth: 2.5, strokeDasharray: "6,4"}),
+
+      Plot.ruleX([Y1T], {y1: 0, y2: Y1T, stroke: "#6B6357", strokeDasharray: "4,3"}),
+      Plot.ruleX([Y0],  {y1: 0, y2: Y0,  stroke: "#6B6357", strokeDasharray: "4,3"}),
+
+      Plot.dot([{Y: Y0,  AE: Y0}],
+        {x: "Y", y: "AE", r: 5, fill: "#2D5A8E", stroke: "white", strokeWidth: 2}),
+      Plot.dot([{Y: Y1T, AE: Y1T}],
+        {x: "Y", y: "AE", r: 5, fill: "#2D5A8E", stroke: "white", strokeWidth: 2}),
+
+      Plot.text([{Y: Ymax * 0.92, AE: Ymax * 0.92, label: "45°"}],
+        {x: "Y", y: "AE", text: "label", fill: "#3A332D", fontSize: 11, dx: 6, dy: -6}),
+      Plot.text([{Y: Y1T, AE: 10, label: `Y₁ = ${Y1T.toFixed(0)}`}],
+        {x: "Y", y: "AE", text: "label", textAnchor: "middle", fontSize: 11, fill: "#2D5A8E"}),
+      Plot.text([{Y: Y0, AE: 10, label: `Y₀ = ${Y0.toFixed(0)}`}],
+        {x: "Y", y: "AE", text: "label", textAnchor: "middle", fontSize: 11, fill: "#2D5A8E"}),
+      Plot.text([{Y: 30, AE: Ymax * 0.96,
+        label: `Multiplikator ΔY/ΔT = ${multT.toFixed(2)}`}],
+        {x: "Y", y: "AE", text: "label", textAnchor: "start",
+         fontSize: 13, fill: "#1C1916", fontWeight: 700})
+    ]
+  });
+
+  return htl.html`<div style="display:flex; gap:1rem; flex-wrap:wrap; justify-content:center;">${panelG}${panelT}</div>`;
+}
+```
+
+U kontekstu stabilizacijske funkcije fiskalne politike, multiplikator objašnjava zašto fiskalna politika može ublažavati poslovni ciklus. U recesiji, kada je proizvodnja ispod potencijalne razine, država može povećati potrošnju ili smanjiti poreze kako bi podržala agregatnu potražnju. U ekspanziji, kada postoji rizik pregrijavanja i inflacijskih pritisaka, može učiniti suprotno tako da smanji potrošnju ili poveća poreze. Time fiskalna politika djeluje protuciklički. Ona ne uklanja ciklus, ali može smanjiti amplitudu pada i uzleta gospodarske aktivnosti.
+
 ## Automatski stabilizatori
 
 Stabilizacijska funkcija države ne ostvaruje se samo diskrecijskim odlukama vlade. Veliku ulogu imaju i automatski stabilizatori, elementi fiskalnog sustava koji automatski ublažavaju gospodarske cikluse, bez potrebe za novim zakonima ili posebnim političkim odlukama.
