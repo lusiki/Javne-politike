@@ -38,6 +38,8 @@ institucionalnih pravila. Razumijevanje ove dinamike važno je za svakoga tko
 
 ## Definicija, metodologija i osnovne pretpostavke
 
+![Teorija javnog izbora — intelektualni temelji, definicija, ključna ideja, metodološki okvir i osnovne pretpostavke.](../images/infographics/05-javni-izbor-kljucne-ideje.svg){#fig-javni-izbor-kljucne-ideje .infographic fig-alt="Dijagram koji sažima teoriju javnog izbora kroz pet blokova — intelektualne temelje (Downs 1957; Buchanan i Tullock 1962), definiciju, ključnu ideju, metodološki okvir (racionalni izbor, individualizam, analiza troškova i koristi) te četiri osnovne pretpostavke." width=92%}
+
 Intelektualni temelji teorije
 javnog izbora postavljeni su kroz seminalne radove poput *An Economic Theory of Democracy* [@downs1957] i *The Calculus of Consent* [@buchanan1962].
 

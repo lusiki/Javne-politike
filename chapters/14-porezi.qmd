@@ -36,6 +36,8 @@ U suvremenim ekonomijama porezni sustavi postaju iznimno složeni, ali i neizost
 
 Porezi se u suvremenim ekonomijama mogu klasificirati na različite načine, ovisno o kriteriju koji se koristi. Najčešće se razlikuju prema poreznoj osnovici (što se oporezuje) i prema načinu naplate (tko snosi teret poreza i kako se on prikuplja). Te klasifikacije pomažu u razumijevanju strukture poreznog sustava i njegovih ekonomskih učinaka [@stiglitz2015; @gruber2019].
 
+![Četiri uobičajene klasifikacije poreza u suvremenim ekonomijama. Prikaz je pojednostavnjen i služi za udžbeničko objašnjenje osnovnih vrsta poreza.](../images/infographics/14-vrste-poreza.svg){#fig-vrste-poreza .infographic fig-alt="Dijagram koji prikazuje četiri klasifikacije poreza — prema poreznoj osnovici, načinu naplate, odnosu stope i osnovice te načinu određivanja obveze." width=92%}
+
 ### Porezi prema poreznoj osnovici
 
 Jedan od najvažnijih načina klasifikacije poreza temelji se na pitanju što se oporezuje. U tom smislu razlikuju se porezi na dohodak, porezi na potrošnju i porezi na imovinu [@musgrave1989].

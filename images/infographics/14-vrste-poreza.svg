@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 510" role="img" aria-labelledby="title desc">
+  <title id="title">Vrste poreza</title>
+  <desc id="desc">Četiri uobičajene klasifikacije poreza — prema poreznoj osnovici, načinu naplate, odnosu stope i osnovice te načinu određivanja obveze.</desc>
+
+  <defs>
+    <style>
+      .card { fill: #F2EDE3; stroke: #1C1916; stroke-opacity: 0.18; stroke-width: 1; }
+      .accent-verdigris { fill: #4A6B5C; }
+      .intro { font-family: 'Newsreader', Georgia, serif; font-size: 16px; font-style: italic; font-weight: 400; fill: #1C1916; }
+      .title { font-family: 'Newsreader', Georgia, serif; font-size: 17px; font-weight: 500; fill: #1C1916; letter-spacing: -0.2px; }
+      .item-strong { font-family: 'Public Sans', system-ui, sans-serif; font-size: 13px; font-weight: 600; fill: #1C1916; }
+      .item-fine { font-family: 'Public Sans', system-ui, sans-serif; font-size: 11.5px; font-weight: 400; fill: #6B6357; }
+      .connector { stroke: #6B6357; stroke-opacity: 0.42; stroke-width: 1; fill: none; }
+    </style>
+  </defs>
+
+  <!-- Intro line -->
+  <text x="410" y="28" text-anchor="middle" class="intro">Porezi se mogu razvrstati prema različitim kriterijima.</text>
+
+  <!-- Tree connectors -->
+  <line class="connector" x1="410" y1="42" x2="410" y2="65"/>
+  <line class="connector" x1="220" y1="65" x2="600" y2="65"/>
+  <line class="connector" x1="220" y1="65" x2="220" y2="85"/>
+  <line class="connector" x1="600" y1="65" x2="600" y2="85"/>
+
+  <!-- Vertical bridges from top row to bottom row -->
+  <line class="connector" x1="220" y1="265" x2="220" y2="295"/>
+  <line class="connector" x1="600" y1="265" x2="600" y2="295"/>
+
+  <!-- =========================== TOP-LEFT: prema osnovici =========================== -->
+  <g transform="translate(50, 85)">
+    <rect class="card" width="340" height="180" rx="2"/>
+    <rect class="accent-verdigris" width="340" height="2"/>
+    <text x="170" y="28" text-anchor="middle" class="title">Prema poreznoj osnovici</text>
+
+    <text x="20" y="62" class="item-strong">Porezi na dohodak</text>
+    <text x="20" y="79" class="item-fine">porez na dohodak, porez na dobit</text>
+
+    <text x="20" y="105" class="item-strong">Porezi na potrošnju</text>
+    <text x="20" y="122" class="item-fine">PDV, trošarine</text>
+
+    <text x="20" y="148" class="item-strong">Porezi na imovinu</text>
+    <text x="20" y="165" class="item-fine">nekretnine, nasljedstva i darovi, promet imovine</text>
+  </g>
+
+  <!-- =========================== TOP-RIGHT: prema načinu naplate =========================== -->
+  <g transform="translate(430, 85)">
+    <rect class="card" width="340" height="180" rx="2"/>
+    <rect class="accent-verdigris" width="340" height="2"/>
+    <text x="170" y="28" text-anchor="middle" class="title">Prema načinu naplate</text>
+
+    <text x="20" y="62" class="item-strong">Izravni porezi</text>
+    <text x="20" y="79" class="item-fine">porez na dohodak, porez na dobit, porezi na imovinu</text>
+
+    <text x="20" y="112" class="item-strong">Neizravni porezi</text>
+    <text x="20" y="129" class="item-fine">PDV, trošarine</text>
+  </g>
+
+  <!-- =========================== BOTTOM-LEFT: prema odnosu stope =========================== -->
+  <g transform="translate(50, 295)">
+    <rect class="card" width="340" height="180" rx="2"/>
+    <rect class="accent-verdigris" width="340" height="2"/>
+    <text x="170" y="28" text-anchor="middle" class="title">Prema odnosu stope i osnovice</text>
+
+    <text x="20" y="62" class="item-strong">Proporcionalni</text>
+    <text x="20" y="79" class="item-fine">jedinstvena stopa</text>
+
+    <text x="20" y="105" class="item-strong">Progresivni</text>
+    <text x="20" y="122" class="item-fine">stopa raste s dohotkom</text>
+
+    <text x="20" y="148" class="item-strong">Regresivni</text>
+    <text x="20" y="165" class="item-fine">relativno više opterećuju niže dohotke</text>
+  </g>
+
+  <!-- =========================== BOTTOM-RIGHT: prema obvezi =========================== -->
+  <g transform="translate(430, 295)">
+    <rect class="card" width="340" height="180" rx="2"/>
+    <rect class="accent-verdigris" width="340" height="2"/>
+    <text x="170" y="28" text-anchor="middle" class="title">Prema načinu određivanja obveze</text>
+
+    <text x="20" y="62" class="item-strong">Specifični porezi</text>
+    <text x="20" y="79" class="item-fine">apsolutni iznos po jedinici proizvoda</text>
+
+    <text x="20" y="112" class="item-strong">Ad valorem porezi</text>
+    <text x="20" y="129" class="item-fine">postotak vrijednosti proizvoda</text>
+  </g>
+</svg>

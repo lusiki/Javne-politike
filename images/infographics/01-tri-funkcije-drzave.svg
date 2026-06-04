@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 415" role="img" aria-labelledby="title desc">
+  <title id="title">Tri funkcije države prema Musgraveovu okviru</title>
+  <desc id="desc">Hijerarhijski dijagram triju funkcija države — alokacijske, distribucijske i stabilizacijske — s pripadnim mikroekonomskim i makroekonomskim pristupom te normativnim osnovama za državnu intervenciju.</desc>
+
+  <defs>
+    <style>
+      .card { fill: #F2EDE3; stroke: #1C1916; stroke-opacity: 0.18; stroke-width: 1; }
+      .accent-oxblood { fill: #6B1F26; }
+      .accent-verdigris { fill: #4A6B5C; }
+      .accent-ochre { fill: #C8985E; }
+      .accent-faint { fill: #9C9382; }
+      .title { font-family: 'Newsreader', Georgia, serif; font-size: 17px; font-weight: 500; fill: #1C1916; letter-spacing: -0.2px; }
+      .title-sm { font-family: 'Newsreader', Georgia, serif; font-size: 15px; font-weight: 500; fill: #1C1916; letter-spacing: -0.2px; }
+      .item { font-family: 'Public Sans', system-ui, sans-serif; font-size: 12.5px; font-weight: 400; fill: #1C1916; }
+      .connector { stroke: #6B6357; stroke-opacity: 0.42; stroke-width: 1; fill: none; }
+    </style>
+  </defs>
+
+  <!-- =========================== CONNECTORS =========================== -->
+  <!-- Tier 1 -> Tier 2 -->
+  <line class="connector" x1="400" y1="53" x2="400" y2="71"/>
+  <line class="connector" x1="160" y1="71" x2="640" y2="71"/>
+  <line class="connector" x1="160" y1="71" x2="160" y2="90"/>
+  <line class="connector" x1="400" y1="71" x2="400" y2="90"/>
+  <line class="connector" x1="640" y1="71" x2="640" y2="90"/>
+
+  <!-- Tier 2 -> Tier 3 (Mikro spans col1+col2; Makro stays col3) -->
+  <line class="connector" x1="160" y1="128" x2="160" y2="146"/>
+  <line class="connector" x1="400" y1="128" x2="400" y2="146"/>
+  <line class="connector" x1="160" y1="146" x2="400" y2="146"/>
+  <line class="connector" x1="280" y1="146" x2="280" y2="165"/>
+  <line class="connector" x1="640" y1="128" x2="640" y2="165"/>
+
+  <!-- Tier 3 -> Tier 4 (Mikro fans out to col1 & col2) -->
+  <line class="connector" x1="280" y1="203" x2="280" y2="221"/>
+  <line class="connector" x1="160" y1="221" x2="400" y2="221"/>
+  <line class="connector" x1="160" y1="221" x2="160" y2="240"/>
+  <line class="connector" x1="400" y1="221" x2="400" y2="240"/>
+  <line class="connector" x1="640" y1="203" x2="640" y2="240"/>
+
+  <!-- Tier 4 -> Tier 5 -->
+  <line class="connector" x1="160" y1="335" x2="160" y2="352"/>
+  <line class="connector" x1="400" y1="335" x2="400" y2="352"/>
+  <line class="connector" x1="640" y1="335" x2="640" y2="352"/>
+  <line class="connector" x1="160" y1="352" x2="640" y2="352"/>
+  <line class="connector" x1="400" y1="352" x2="400" y2="370"/>
+
+  <!-- =========================== TIER 1 =========================== -->
+  <g transform="translate(280, 15)">
+    <rect class="card" width="240" height="38" rx="2"/>
+    <rect class="accent-oxblood" width="240" height="2"/>
+    <text x="120" y="25" text-anchor="middle" class="title">Tri funkcije države</text>
+  </g>
+
+  <!-- =========================== TIER 2 =========================== -->
+  <g transform="translate(70, 90)">
+    <rect class="card" width="180" height="38" rx="2"/>
+    <rect class="accent-verdigris" width="180" height="2"/>
+    <text x="90" y="25" text-anchor="middle" class="title">Alokacijska</text>
+  </g>
+  <g transform="translate(310, 90)">
+    <rect class="card" width="180" height="38" rx="2"/>
+    <rect class="accent-verdigris" width="180" height="2"/>
+    <text x="90" y="25" text-anchor="middle" class="title">Distribucijska</text>
+  </g>
+  <g transform="translate(550, 90)">
+    <rect class="card" width="180" height="38" rx="2"/>
+    <rect class="accent-verdigris" width="180" height="2"/>
+    <text x="90" y="25" text-anchor="middle" class="title">Stabilizacijska</text>
+  </g>
+
+  <!-- =========================== TIER 3 =========================== -->
+  <g transform="translate(70, 165)">
+    <rect class="card" width="420" height="38" rx="2"/>
+    <rect class="accent-faint" width="420" height="2"/>
+    <text x="210" y="25" text-anchor="middle" class="title-sm">Mikroekonomska analiza</text>
+  </g>
+  <g transform="translate(550, 165)">
+    <rect class="card" width="180" height="38" rx="2"/>
+    <rect class="accent-faint" width="180" height="2"/>
+    <text x="90" y="25" text-anchor="middle" class="title-sm">Makroekonomska analiza</text>
+  </g>
+
+  <!-- =========================== TIER 4 =========================== -->
+  <g transform="translate(70, 240)">
+    <rect class="card" width="180" height="95" rx="2"/>
+    <rect class="accent-ochre" width="180" height="2"/>
+    <text x="90" y="28" text-anchor="middle" class="item">Tržišni neuspjesi</text>
+    <text x="90" y="53" text-anchor="middle" class="item">Pitanje pravednosti</text>
+    <text x="90" y="78" text-anchor="middle" class="item">Meritorna dobra</text>
+  </g>
+  <g transform="translate(310, 240)">
+    <rect class="card" width="180" height="95" rx="2"/>
+    <rect class="accent-ochre" width="180" height="2"/>
+    <text x="90" y="28" text-anchor="middle" class="item">Utilitarizam</text>
+    <text x="90" y="53" text-anchor="middle" class="item">Robni egalitarizam</text>
+    <text x="90" y="78" text-anchor="middle" class="item">Paternalizam</text>
+  </g>
+  <g transform="translate(550, 240)">
+    <rect class="card" width="180" height="95" rx="2"/>
+    <rect class="accent-ochre" width="180" height="2"/>
+    <text x="90" y="42" text-anchor="middle" class="item">Ciljevi</text>
+    <text x="90" y="62" text-anchor="middle" class="item">ekonomske politike</text>
+  </g>
+
+  <!-- =========================== TIER 5 =========================== -->
+  <g transform="translate(280, 370)">
+    <rect class="card" width="240" height="38" rx="2"/>
+    <rect class="accent-oxblood" width="240" height="2"/>
+    <text x="120" y="25" text-anchor="middle" class="title">Razlozi za intervenciju</text>
+  </g>
+</svg>

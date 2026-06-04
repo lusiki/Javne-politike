@@ -8,6 +8,8 @@ Ti instrumenti mogu biti vrlo različiti. Neki izravno uključuju novac, poput p
 
 Isti javni cilj može biti ostvaren različitim instrumentima, ali ti instrumenti nemaju iste učinke, iste troškove ni iste političke posljedice. Ako država želi smanjiti zagađenje, može uvesti porez na emisije, propisati maksimalnu dopuštenu razinu zagađenja, subvencionirati čiste tehnologije, javno informirati potrošače ili kombinirati više mjera. Ako želi smanjiti siromaštvo, može povećati socijalne transfere, smanjiti poreze na niske dohotke, subvencionirati zapošljavanje, ulagati u obrazovanje ili regulirati minimalnu plaću. Zato je izbor instrumenta jedno od središnjih pitanja dizajna javnih politika.
 
+![Glavne kategorije tržišnih neuspjeha i pripadni instrumenti državne intervencije. Prikaz je pojednostavnjen i služi za udžbeničko objašnjenje osnovnih funkcija države u gospodarstvu.](../images/infographics/12-trzisni-neuspjesi-intervencija.svg){#fig-trzisni-neuspjesi .infographic fig-alt="Dijagram koji povezuje tri kategorije tržišnih neuspjeha — neefikasnost, nejednakost i makroekonomske probleme — s tri tipa instrumenata državne intervencije." width=92%}
+
 ## Porezi
 
 Porezi su najvažniji i najvidljiviji instrument države. Oni su osnovni izvor prihoda kojim se financiraju javne funkcije, ali su istodobno i snažan instrument utjecaja na ponašanje ekonomskih subjekata. Država porezima ne prikuplja samo novac. Ona porezima mijenja cijene, poticaje, raspodjelu dohotka i odluke pojedinaca i poduzeća.

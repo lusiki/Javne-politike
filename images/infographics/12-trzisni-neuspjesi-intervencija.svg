@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 460" role="img" aria-labelledby="title desc">
+  <title id="title">Tržišni neuspjesi i državna intervencija</title>
+  <desc id="desc">Tri glavne kategorije tržišnih neuspjeha — neefikasnost, nejednakost i makroekonomski problemi — povezane s odgovarajućim instrumentima državne intervencije.</desc>
+
+  <defs>
+    <style>
+      .card { fill: #F2EDE3; stroke: #1C1916; stroke-opacity: 0.18; stroke-width: 1; }
+      .accent-verdigris { fill: #4A6B5C; }
+      .accent-oxblood { fill: #6B1F26; }
+      .col-header { font-family: 'Newsreader', Georgia, serif; font-size: 18px; font-weight: 500; font-style: italic; fill: #6B6357; letter-spacing: -0.1px; }
+      .title { font-family: 'Newsreader', Georgia, serif; font-size: 17px; font-weight: 500; fill: #1C1916; letter-spacing: -0.2px; }
+      .title-sm { font-family: 'Newsreader', Georgia, serif; font-size: 15px; font-weight: 500; fill: #1C1916; letter-spacing: -0.2px; }
+      .item { font-family: 'Public Sans', system-ui, sans-serif; font-size: 12.5px; font-weight: 400; fill: #1C1916; }
+      .item-light { font-family: 'Public Sans', system-ui, sans-serif; font-size: 12px; font-weight: 400; fill: #6B6357; }
+      .connector { stroke: #6B6357; stroke-opacity: 0.55; stroke-width: 1.4; fill: none; }
+    </style>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#6B6357" fill-opacity="0.65"/>
+    </marker>
+  </defs>
+
+  <!-- Column headers -->
+  <text x="200" y="35" text-anchor="middle" class="col-header">Tržišni neuspjesi</text>
+  <text x="620" y="35" text-anchor="middle" class="col-header">Državna intervencija</text>
+
+  <!-- =========================== ROW 1 =========================== -->
+  <line class="connector" x1="365" y1="120" x2="455" y2="120" marker-end="url(#arrow)"/>
+
+  <g transform="translate(40, 65)">
+    <rect class="card" width="320" height="110" rx="2"/>
+    <rect class="accent-verdigris" width="320" height="2"/>
+    <text x="160" y="32" text-anchor="middle" class="title">Neefikasnost</text>
+    <text x="160" y="60" text-anchor="middle" class="item-light">
+      <tspan x="160" dy="0">tržišna moć, eksternalije, asimetrične</tspan>
+      <tspan x="160" dy="17">informacije, transakcijski troškovi,</tspan>
+      <tspan x="160" dy="17">javna dobra</tspan>
+    </text>
+  </g>
+
+  <g transform="translate(460, 65)">
+    <rect class="card" width="320" height="110" rx="2"/>
+    <rect class="accent-oxblood" width="320" height="2"/>
+    <text x="160" y="32" text-anchor="middle" class="title">Intervencije na tržištu</text>
+    <text x="40" y="65" class="item">• Regulacija</text>
+    <text x="40" y="88" class="item">• Subvencije</text>
+  </g>
+
+  <!-- =========================== ROW 2 =========================== -->
+  <line class="connector" x1="365" y1="250" x2="455" y2="250" marker-end="url(#arrow)"/>
+
+  <g transform="translate(40, 195)">
+    <rect class="card" width="320" height="110" rx="2"/>
+    <rect class="accent-verdigris" width="320" height="2"/>
+    <text x="160" y="38" text-anchor="middle" class="title">Nejednakost</text>
+    <text x="160" y="70" text-anchor="middle" class="item-light">
+      <tspan x="160" dy="0">neprihvatljive nejednakosti</tspan>
+      <tspan x="160" dy="17">u dohotku i bogatstvu</tspan>
+    </text>
+  </g>
+
+  <g transform="translate(460, 195)">
+    <rect class="card" width="320" height="110" rx="2"/>
+    <rect class="accent-oxblood" width="320" height="2"/>
+    <text x="160" y="38" text-anchor="middle" class="title">Preraspodjela dohotka</text>
+    <text x="40" y="78" class="item">• Porezi</text>
+  </g>
+
+  <!-- =========================== ROW 3 =========================== -->
+  <line class="connector" x1="365" y1="380" x2="455" y2="380" marker-end="url(#arrow)"/>
+
+  <g transform="translate(40, 325)">
+    <rect class="card" width="320" height="110" rx="2"/>
+    <rect class="accent-verdigris" width="320" height="2"/>
+    <text x="160" y="32" text-anchor="middle" class="title">Makroekonomski problemi</text>
+    <text x="160" y="60" text-anchor="middle" class="item-light">
+      <tspan x="160" dy="0">poslovni ciklusi, inflacija,</tspan>
+      <tspan x="160" dy="17">nezaposlenost,</tspan>
+      <tspan x="160" dy="17">spori gospodarski rast</tspan>
+    </text>
+  </g>
+
+  <g transform="translate(460, 325)">
+    <rect class="card" width="320" height="110" rx="2"/>
+    <rect class="accent-oxblood" width="320" height="2"/>
+    <text x="160" y="32" text-anchor="middle" class="title-sm">
+      <tspan x="160" dy="0">Stabilizacija putem fiskalne</tspan>
+      <tspan x="160" dy="18">i monetarne politike</tspan>
+    </text>
+    <text x="40" y="92" class="item">• Stimuliranje gospodarskog rasta</text>
+  </g>
+</svg>
