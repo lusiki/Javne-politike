@@ -80,6 +80,13 @@ takeaway formulae, no meta-callouts in flowing text, minimal use of restatement
 connectives like "Drugim riječima,"). Run a full sweep against its hard rules
 before committing any chapter prose edit.
 
+### Substantive enrichment
+Adding 1–2 paragraph insertions to thicken an under-developed chapter follows
+[ENRICHMENT.md](ENRICHMENT.md) — five value slots (mechanism, empirics,
+comparative, trade-off, methodology), an asymmetry test for locating insertion
+points, and a hard constraint of no Croatian-specific examples (those are
+reserved for the co-authors).
+
 ### Citations
 Use `[@key]` syntax against `references.bib`. Margin citations are enabled.
 
