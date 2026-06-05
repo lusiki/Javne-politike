@@ -94,6 +94,67 @@ Distribucijska funkcija zato nije samo pitanje koliko država preraspodjeljuje, 
 Učinak poreza i transfera na nejednakost moguće je izravno izmjeriti. Podaci OECD-a pokazuju da porezi i socijalni transferi u prosjeku smanjuju Ginijev koeficijent razvijenih zemalja za otprilike trećinu, s približno 0,47 prije državne intervencije na oko 0,31 nakon nje [@oecd_idd]. Razmjer toga smanjenja jako varira, od vrlo snažnog u nordijskim i kontinentalnim europskim sustavima do osjetno slabijeg u dijelu anglosaksonskih zemalja. Veći dio toga učinka u većini zemalja dolazi od transfera, osobito mirovina i naknada, a ne od same progresivnosti poreza na dohodak. To je važno jer pokazuje da se nejednakost može jednako snažno smanjiti rashodovnom stranom proračuna kao i poreznom. Usporedbe također pokazuju da zemlje sa sličnom razinom dohotka po stanovniku mogu imati vrlo različite razine nejednakosti, što znači da konačna raspodjela nije zadana tržištem, nego je u velikoj mjeri rezultat politike.
 :::
 
+```{ojs}
+//| echo: false
+viewof lor_controls = Inputs.form({
+  k: Inputs.range([1, 5],   {value: 2.5, step: 0.1,  label: "Nejednakost tržišnog dohotka:"}),
+  t: Inputs.range([0, 0.6], {value: 0,   step: 0.05, label: "Razina preraspodjele (porezi i transferi):"})
+})
+```
+
+```{ojs}
+//| echo: false
+lor_k = lor_controls.k
+```
+
+```{ojs}
+//| echo: false
+lor_t = lor_controls.t
+```
+
+```{ojs}
+//| echo: false
+{
+  const k = lor_k, t = lor_t;
+  // Lorenzova krivulja: tržišna nejednakost p^k, ublažena preraspodjelom prema dijagonali
+  const L = (p) => (1 - t) * Math.pow(p, k) + t * p;
+
+  const ps = d3.range(0, 1.0001, 0.01);
+  const lorenz = ps.map(p => ({p, L: L(p)}));
+  const diag = [{p: 0, L: 0}, {p: 1, L: 1}];
+
+  // Gini = 1 - 2 * ∫ L(p) dp  (trapezna procjena)
+  let area = 0;
+  for (let i = 1; i < lorenz.length; i++) {
+    area += (lorenz[i].L + lorenz[i - 1].L) / 2 * (lorenz[i].p - lorenz[i - 1].p);
+  }
+  const gini = 1 - 2 * area;
+
+  return Plot.plot({
+    width: 540,
+    height: 520,
+    marginLeft: 62,
+    marginRight: 28,
+    marginTop: 46,
+    marginBottom: 56,
+    aspectRatio: 1,
+    style: {fontSize: "12px", fontFamily: "Public Sans, system-ui, sans-serif", color: "#3A332D"},
+    x: {label: "Kumulativni udio stanovništva →", domain: [0, 1], tickFormat: "%"},
+    y: {label: "↑ Kumulativni udio dohotka", domain: [0, 1], tickFormat: "%"},
+    marks: [
+      Plot.line(diag, {x: "p", y: "L", stroke: "#6B6357", strokeDasharray: "5,4", strokeWidth: 1.5}),
+      Plot.line(lorenz, {x: "p", y: "L", stroke: "#2D5A8E", strokeWidth: 2.5}),
+      Plot.text([{p: 0.04, L: 0.93}], {x: "p", y: "L", text: [`Ginijev koeficijent = ${gini.toFixed(2)}`],
+        fill: "#1C1916", fontSize: 14, fontWeight: 700, textAnchor: "start"}),
+      Plot.text([{p: 0.80, L: 0.88}], {x: "p", y: "L", text: ["linija jednakosti"],
+        fill: "#6B6357", fontSize: 11, fontStyle: "italic", textAnchor: "start", rotate: -33})
+    ]
+  });
+}
+```
+
+*Lorenzova krivulja udaljava se od dijagonale jednakosti kako raste nejednakost tržišnog dohotka, a preraspodjela je vraća prema dijagonali i smanjuje Ginijev koeficijent.*
+
 ## Distribucijska funkcija kao temelj društvene solidarnosti
 
 Distribucijska funkcija države pokazuje da javne financije nisu samo tehničko pitanje prikupljanja i trošenja novca. One su i izraz društvenog dogovora o tome koliko nejednakosti prihvaćamo, koje rizike dijelimo, kome pomažemo i koje životne prilike želimo osigurati svim građanima. Tržište može stvarati bogatstvo i poticati učinkovitost, ali ne jamči da će dohodak, bogatstvo i prilike biti raspodijeljeni na način koji društvo smatra pravednim.

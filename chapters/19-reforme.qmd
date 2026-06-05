@@ -36,6 +36,59 @@ Prvo, ključna je realističnost ciljeva i razumijevanje političke ekonomije re
 
 Drugo, iznimno je važno pravilno sekvenciranje reformi. Empirijski nalazi pokazuju da je pristup „najprije osnove, zatim kompleksnost" najuspješniji. Potrebno je uspostaviti temeljne funkcije poput pouzdanog izvršenja proračuna i kontrole rashoda prije uvođenja sofisticiranih sustava. Nepravilno sekvenciranje često dovodi do „preuranjene sofisticiranosti", situacije u kojoj se uvode kompleksni sustavi koje administracija nije spremna provoditi.
 
+```{ojs}
+//| echo: false
+viewof ref_controls = Inputs.form({
+  c: Inputs.range([0, 1], {value: 0.4, step: 0.05, label: "Institucionalni kapacitet:"}),
+  s: Inputs.range([0, 1], {value: 0.7, step: 0.05, label: "Brzina i ambicija reforme:"})
+})
+```
+
+```{ojs}
+//| echo: false
+ref_c = ref_controls.c
+```
+
+```{ojs}
+//| echo: false
+ref_s = ref_controls.s
+```
+
+```{ojs}
+//| echo: false
+{
+  const c = ref_c;
+  // stilizirano: uspjeh je najveći kada brzina odgovara kapacitetu, a razina raste s kapacitetom
+  const success = (s) => (0.3 + 0.7 * c) * Math.exp(-((s - c) ** 2) / (2 * 0.08));
+
+  const curve = d3.range(0, 1.001, 0.01).map(s => ({s, u: success(s)}));
+  const cur = {s: ref_s, u: success(ref_s)};
+
+  return Plot.plot({
+    width: 760,
+    height: 430,
+    marginLeft: 64,
+    marginRight: 30,
+    marginTop: 50,
+    marginBottom: 52,
+    style: {fontSize: "12px", fontFamily: "Public Sans, system-ui, sans-serif", color: "#3A332D"},
+    x: {label: "Brzina i ambicija reforme →", domain: [0, 1], tickFormat: "%"},
+    y: {label: "↑ Vjerojatnost uspjeha reforme", domain: [0, 1], tickFormat: "%", grid: true},
+    marks: [
+      Plot.ruleX([c], {stroke: "#1C7C54", strokeDasharray: "4,3"}),
+      Plot.text([{s: c, u: 0.97}], {x: "s", y: "u", text: ["brzina = kapacitet"],
+        fill: "#1C7C54", fontSize: 11, dx: 5, textAnchor: "start"}),
+      Plot.line(curve, {x: "s", y: "u", stroke: "#2D5A8E", strokeWidth: 2.5}),
+      Plot.dot([cur], {x: "s", y: "u", r: 6, fill: "#1C1916", stroke: "white", strokeWidth: 2}),
+      Plot.text([cur], {x: "s", y: "u", text: [`uspjeh ≈ ${(cur.u * 100).toFixed(0)} %`],
+        fill: "#1C1916", fontSize: 13, fontWeight: 700, dy: -14, textAnchor: "middle"})
+    ]
+  });
+}
+```
+
+*Stilizirani prikaz pouke o sekvenciranju — vjerojatnost uspjeha najveća je kada brzina reforme odgovara institucionalnom kapacitetu; pri niskom kapacitetu uspijeva postupnost, a prebrza „šok" reforma pada, dok visok kapacitet podnosi i brže promjene.*
+
 Rodrikov pregled tri desetljeća međunarodnih reformskih iskustava sažima isti obrazac iz drugog kuta [@rodrik2011]. Zemlje koje su brzo i istodobno provodile cijelu listu „najbolje prakse" (liberalizacija trgovine, deregulacija tržišta rada, privatizacija velikih razmjera, otvaranje kapitalnog računa) sustavno su pokazivale slabije rezultate od zemalja koje su isti skup reformi provodile selektivno i postupno, prilagođavajući redoslijed lokalnim ograničenjima. Ključ nije bio u sadržaju pojedine mjere, nego u tome je li lokalna institucionalna i regulatorna infrastruktura mogla apsorbirati promjenu u tom trenutku.
 
 Iskustvo s liberalizacijom kapitalnog računa pokazuje to najjasnije. U zemljama s razvijenom bankarskom regulacijom otvaranje kapitalnog računa donijelo je dugoročne koristi. U zemljama gdje je liberalizacija prethodila uspostavi nadzora nad bankama, isti je potez ubrzao pojavu financijskih kriza. Pouka nije da je liberalizacija loša politika, nego da je redoslijed dio sadržaja reforme, a ne tehnički detalj koji dolazi poslije.

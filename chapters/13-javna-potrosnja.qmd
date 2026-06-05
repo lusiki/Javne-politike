@@ -18,6 +18,73 @@ Wagner je ponudio i mehaniku tog rasta koja nadilazi puko empirijsko zapažanje.
 
 Empirijski je Wagnerov zakon potvrđen u dugim vremenskim serijama razvijenih zemalja, ali ga noviji radovi ograničavaju u dva smjera [@bird1971]. Prvo, zakonitost vrijedi samo do određene razine razvoja, nakon koje udio javne potrošnje pokazuje znakove zasićenja. Drugo, rast nije automatski nego je posredovan političkim odlukama o tome koje od triju sila društvo prevodi u stvarnu javnu funkciju. To znači da Wagnerov zakon najbolje opisuje strukturni pritisak, ne i sam ishod, koji ostaje predmet političkog izbora i institucionalnog dizajna.
 
+```{ojs}
+//| echo: false
+viewof wag_controls = Inputs.form({
+  g: Inputs.range([6, 80], {value: 30, step: 1, label: "Hipotetska zemlja — BDP po stanovniku (tis. $):"})
+})
+```
+
+```{ojs}
+//| echo: false
+wag_g = wag_controls.g
+```
+
+```{ojs}
+//| echo: false
+{
+  // Ilustrativni podaci (približne vrijednosti, za prikaz odnosa, ne službena statistika)
+  const data = [
+    {z: "Indija", gdp: 8,  sp: 29, grp: "niži dohodak"},
+    {z: "Indonezija", gdp: 13, sp: 18, grp: "niži dohodak"},
+    {z: "Meksiko", gdp: 21, sp: 27, grp: "srednji dohodak"},
+    {z: "Kina", gdp: 23, sp: 33, grp: "srednji dohodak"},
+    {z: "Poljska", gdp: 41, sp: 43, grp: "srednji dohodak"},
+    {z: "Koreja", gdp: 48, sp: 34, grp: "visoki dohodak"},
+    {z: "SAD", gdp: 76, sp: 38, grp: "visoki dohodak"},
+    {z: "UK", gdp: 52, sp: 45, grp: "visoki dohodak"},
+    {z: "Njemačka", gdp: 58, sp: 49, grp: "visoki dohodak"},
+    {z: "Francuska", gdp: 54, sp: 57, grp: "visoki dohodak"},
+    {z: "Švedska", gdp: 62, sp: 49, grp: "visoki dohodak"}
+  ];
+
+  // Trend: sp ≈ α + β·ln(gdp)
+  const xs = data.map(d => Math.log(d.gdp));
+  const ys = data.map(d => d.sp);
+  const mx = d3.mean(xs), my = d3.mean(ys);
+  const beta = d3.sum(xs.map((x, i) => (x - mx) * (ys[i] - my))) / d3.sum(xs.map(x => (x - mx) ** 2));
+  const alpha = my - beta * mx;
+  const trendFn = (g) => alpha + beta * Math.log(g);
+
+  const tline = d3.range(6, 81, 1).map(g => ({gdp: g, sp: trendFn(g)}));
+  const hyp = {gdp: wag_g, sp: trendFn(wag_g)};
+
+  return Plot.plot({
+    width: 780,
+    height: 470,
+    marginLeft: 54,
+    marginRight: 116,
+    marginTop: 36,
+    marginBottom: 52,
+    style: {fontSize: "12px", fontFamily: "Public Sans, system-ui, sans-serif", color: "#3A332D"},
+    x: {type: "log", label: "BDP po stanovniku (tis. $, log) →", domain: [6, 92]},
+    y: {label: "↑ Javna potrošnja (% BDP-a)", domain: [10, 65], grid: true},
+    color: {legend: true, domain: ["niži dohodak","srednji dohodak","visoki dohodak"],
+            range: ["#C53030","#C8942D","#2D5A8E"]},
+    marks: [
+      Plot.line(tline, {x: "gdp", y: "sp", stroke: "#6B6357", strokeDasharray: "5,4", strokeWidth: 1.5}),
+      Plot.dot(data, {x: "gdp", y: "sp", fill: "grp", r: 6, stroke: "white", strokeWidth: 1}),
+      Plot.text(data, {x: "gdp", y: "sp", text: "z", dy: -11, fontSize: 10, fill: "#3A332D"}),
+      Plot.dot([hyp], {x: "gdp", y: "sp", r: 9, fill: "#1C1916", stroke: "white", strokeWidth: 2}),
+      Plot.text([hyp], {x: "gdp", y: "sp", text: [`predviđeno ≈ ${hyp.sp.toFixed(0)} %`],
+        dy: 16, fontSize: 12, fontWeight: 700, fill: "#1C1916", textAnchor: "middle"})
+    ]
+  });
+}
+```
+
+*Ilustrativni prikaz Wagnerova zakona — bogatije zemlje u prosjeku troše veći udio BDP-a kroz javni sektor, uz znatno rasipanje oko trenda. Podaci su približni i služe za prikaz odnosa, a ne kao službena statistika.*
+
 Pravi preokret događa se u 20. stoljeću, u kontekstu velikih ekonomskih i političkih šokova. Velika depresija 1930-ih dovodi u pitanje sposobnost tržišta da se samo stabilizira. U tom kontekstu John Maynard Keynes uvodi revolucionarnu ideju prema kojoj država može i treba aktivno intervenirati u gospodarstvo putem javne potrošnje i fiskalne politike kako bi stabilizirala agregatnu potražnju [@keynes1936]. Time javna potrošnja prvi put dobiva jasnu makroekonomsku funkciju.
 
 Nakon Drugog svjetskog rata slijedi razdoblje bez presedana u povijesti javne potrošnje. U većini razvijenih zemalja dolazi do snažne ekspanzije države, osobito kroz razvoj sustava socijalne sigurnosti, javnog zdravstva i obrazovanja. Udio javne potrošnje raste s oko 13 % BDP-a početkom stoljeća na više od 40 % u suvremenim ekonomijama [@tanzi2000]. Ovaj rast nije bio rezultat jedinstvenog faktora, već kombinacije dubokih strukturnih promjena.

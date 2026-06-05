@@ -54,6 +54,70 @@ Privatno poduzeće nastoji ostvariti što veću dobit, suočava se s konkurencij
 
 Razlog je intuitivan. Veći proračun za javnu instituciju često znači više zaposlenih, više organizacijskih jedinica, veću plaću na višim upravljačkim razinama, veći status, više ovlasti, veću autonomiju i veću političku važnost. Zato je za birokrata proračun više od knjigovodstvene kategorije, on je izvor organizacijske moći.
 
+```{ojs}
+//| echo: false
+viewof nisk_controls = Inputs.form({
+  b: Inputs.range([0.4, 1.6], {value: 1.0, step: 0.1, label: "Nagib granične koristi (b):"}),
+  c: Inputs.range([1, 6],     {value: 3,   step: 0.5, label: "Granični trošak (MC):"})
+})
+```
+
+```{ojs}
+//| echo: false
+nisk_b = nisk_controls.b
+```
+
+```{ojs}
+//| echo: false
+nisk_c = nisk_controls.c
+```
+
+```{ojs}
+//| echo: false
+{
+  const a = 10;
+  const b = nisk_b, c = nisk_c;
+  const Qstar = (a - c) / b;     // učinkovito: MB = MC
+  const Qnisk = 2 * Qstar;        // Niskanen: ukupna korist = ukupni trošak
+  const Qmax = Math.max(Qnisk * 1.15, (a / b) * 0.98);
+  const MB = (Q) => a - b * Q;
+
+  const grid = d3.range(0, Qmax + 0.01, Qmax / 200);
+  const mbLine = grid.map(Q => ({Q, y: MB(Q)})).filter(d => d.y >= 0);
+
+  return Plot.plot({
+    width: 760,
+    height: 460,
+    marginLeft: 60,
+    marginRight: 30,
+    marginTop: 50,
+    marginBottom: 52,
+    style: {fontSize: "12px", fontFamily: "Public Sans, system-ui, sans-serif", color: "#3A332D"},
+    x: {label: "Količina javne usluge / proračun (Q) →", domain: [0, Qmax]},
+    y: {label: "↑ Granična korist i trošak (€)", domain: [0, a * 1.05]},
+    marks: [
+      Plot.rectX([{x1: Qstar, x2: Qnisk}], {x1: "x1", x2: "x2", y1: 0, y2: a * 1.05,
+        fill: "#C53030", fillOpacity: 0.07}),
+      Plot.line(mbLine, {x: "Q", y: "y", stroke: "#2D5A8E", strokeWidth: 2.5}),
+      Plot.ruleY([c], {stroke: "#1C7C54", strokeWidth: 2}),
+      Plot.ruleX([Qstar], {y1: 0, y2: c, stroke: "#6B6357", strokeDasharray: "4,3"}),
+      Plot.ruleX([Qnisk], {y1: 0, y2: Math.max(MB(Qnisk), 0), stroke: "#6B6357", strokeDasharray: "4,3"}),
+      Plot.dot([{Q: Qstar, y: c}], {x: "Q", y: "y", r: 5, fill: "#1C1916", stroke: "white", strokeWidth: 2}),
+      Plot.text([{Q: Qstar, y: c}], {x: "Q", y: "y", text: ["Q* (učinkovito)"],
+        fill: "#1C1916", fontSize: 12, fontWeight: 700, dy: -12, dx: -4, textAnchor: "end"}),
+      Plot.text([{Q: Qnisk, y: 0.55}], {x: "Q", y: "y", text: ["Qₙ (maksimizacija proračuna)"],
+        fill: "#C53030", fontSize: 12, fontWeight: 700, dx: -6, textAnchor: "end"}),
+      Plot.text([{Q: Qmax * 0.74, y: MB(Qmax * 0.74) + 0.45}], {x: "Q", y: "y", text: ["granična korist"],
+        fill: "#2D5A8E", fontSize: 11, textAnchor: "start"}),
+      Plot.text([{Q: Qmax * 0.8, y: c + 0.45}], {x: "Q", y: "y", text: ["granični trošak"],
+        fill: "#1C7C54", fontSize: 11, textAnchor: "start"})
+    ]
+  });
+}
+```
+
+*Birokracija sklona maksimizaciji proračuna širi uslugu do razine Qₙ na kojoj se ukupna korist izjednačuje s ukupnim troškom, daleko iznad društveno učinkovite razine Q\* na kojoj se izjednačuju granična korist i granični trošak.*
+
 Niskanenov model počiva na tri ključna elementa. Prvo, birokracija često ima **monopol** nad pružanjem određene javne usluge. Drugo, birokracija ima **informacijsku prednost** jer zna koliko program stvarno košta, gdje postoje rezerve učinkovitosti i koliko bi se moglo uštedjeti. Treće, političari i ministarstvo financija često ne mogu savršeno provjeriti informacije koje im birokracija dostavlja. Zbog toga birokracija može tražiti veći proračun od društveno optimalnog.
 
 Birokratsko širenje ne mora biti posljedica korupcije ili zle namjere. Ono može biti sasvim racionalno ponašanje unutar sustava u kojem se uspjeh institucije mjeri veličinom proračuna, brojem zaposlenih i širinom nadležnosti. U kasnijim raspravama model je kritiziran kao previše pojednostavljen, jer nisu svi birokrati jednako motivirani proračunom. Neki žele miran posao, neki stručni ugled, a neki doista žele poboljšati javnu uslugu. Dunleavy je tvrdio da birokrati mogu nastojati maksimizirati vlastiti utjecaj i kontrolu nad politikom, a ne nužno cijeli proračun [@dunleavy1985]. Ipak, Niskanenov model ostaje važan jer jasno pokazuje da se proračunski proces ne može razumjeti samo kao tehničko određivanje potrebnih sredstava.

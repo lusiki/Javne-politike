@@ -42,7 +42,80 @@ U središtu te rasprave nalazi se i izbor diskontne stope. Viša diskontna stopa
 
 ::: {.callout-empirija}
 Izbor diskontne stope nije tehnička sitnica jer kod dugoročnih projekata presudno mijenja rezultat. Korist koja nastaje za pedeset godina pri diskontnoj stopi od 1 % vrijedi danas oko 60 % svojega iznosa, a pri stopi od 6 % tek oko 5 %, pa ista klimatska investicija može izgledati izrazito isplativo ili posve neopravdano ovisno samo o tom parametru [@hmtreasury2026]. Zbog toga smjernice za javne projekte propisuju niže društvene diskontne stope za učinke koji sežu duboko u budućnost, izričito iz razloga međugeneracijske pravednosti. Pouka je da diskontiranje nije neutralan postupak, nego ugrađuje vrijednosni sud o tome koliko nam je važna dobrobit budućih naraštaja.
-::: Sve navedeno pokazuje da je CBA u javnom sektoru znatno više od tehničkog alata. Ona je integrativni okvir koji povezuje ekonomsku učinkovitost s društvenom pravednošću, okolišnom održivošću i dugoročnom perspektivom.
+:::
+
+```{ojs}
+//| echo: false
+viewof npv_controls = Inputs.form({
+  r: Inputs.range([0, 0.12], {value: 0.05, step: 0.005, label: "Diskontna stopa (r):"}),
+  b: Inputs.range([10, 50],  {value: 30,   step: 1,     label: "Godišnja neto korist (mil. €):"})
+})
+```
+
+```{ojs}
+//| echo: false
+npv_r = npv_controls.r
+```
+
+```{ojs}
+//| echo: false
+npv_b = npv_controls.b
+```
+
+```{ojs}
+//| echo: false
+{
+  const cost = 100;   // početno ulaganje (mil. €)
+  const years = 4;    // trajanje koristi
+  const b = npv_b;
+
+  const npv = (rate) => {
+    let s = -cost;
+    for (let t = 1; t <= years; t++) s += b / Math.pow(1 + rate, t);
+    return s;
+  };
+
+  const rates = d3.range(0, 0.1201, 0.002);
+  const curve = rates.map(rate => ({r: rate, npv: npv(rate)}));
+
+  // Interna stopa povrata (NPV = 0), linearna interpolacija
+  let irr = null;
+  for (let i = 1; i < curve.length; i++) {
+    if (curve[i - 1].npv >= 0 && curve[i].npv < 0) {
+      const a = curve[i - 1], c = curve[i];
+      irr = a.r + (0 - a.npv) * (c.r - a.r) / (c.npv - a.npv);
+      break;
+    }
+  }
+
+  const cur = {r: npv_r, npv: npv(npv_r)};
+
+  return Plot.plot({
+    width: 760,
+    height: 440,
+    marginLeft: 72,
+    marginRight: 30,
+    marginTop: 50,
+    marginBottom: 52,
+    style: {fontSize: "12px", fontFamily: "Public Sans, system-ui, sans-serif", color: "#3A332D"},
+    x: {label: "Diskontna stopa →", domain: [0, 0.12], tickFormat: d => (d * 100).toFixed(0) + " %"},
+    y: {label: "↑ Neto sadašnja vrijednost (mil. €)", grid: true},
+    marks: [
+      Plot.ruleY([0], {stroke: "#6B6357", strokeDasharray: "4,3"}),
+      Plot.line(curve, {x: "r", y: "npv", stroke: "#2D5A8E", strokeWidth: 2.5}),
+      irr != null ? Plot.ruleX([irr], {stroke: "#C53030", strokeDasharray: "4,3"}) : null,
+      irr != null ? Plot.text([{r: irr, npv: 0}],
+        {x: "r", y: "npv", text: [`IRR ≈ ${(irr * 100).toFixed(1)} %`],
+         fill: "#C53030", fontSize: 12, fontWeight: 700, dx: 6, dy: -10, textAnchor: "start"}) : null,
+      Plot.dot([cur], {x: "r", y: "npv", r: 6, fill: "#1C1916", stroke: "white", strokeWidth: 2}),
+      Plot.text([cur], {x: "r", y: "npv", text: [`NPV = ${cur.npv.toFixed(1)} mil. €`],
+        fill: "#1C1916", fontSize: 13, fontWeight: 700, dy: cur.npv >= 0 ? -16 : 18, textAnchor: "middle"})
+    ].filter(Boolean)
+  });
+}
+```
+
+*NPV projekta (ulaganje 100 mil. € i neto korist kroz četiri godine) pada kako raste diskontna stopa; pri internoj stopi povrata (IRR) jednak je nuli, a iznad nje projekt postaje neopravdan.* Sve navedeno pokazuje da je CBA u javnom sektoru znatno više od tehničkog alata. Ona je integrativni okvir koji povezuje ekonomsku učinkovitost s društvenom pravednošću, okolišnom održivošću i dugoročnom perspektivom.
 
 ## Ograničenja cost-benefit analize
 

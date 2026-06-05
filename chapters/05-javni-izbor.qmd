@@ -164,6 +164,66 @@ ishoda, a C trošak glasanja. Budući da je u velikim populacijama $P \approx 0$
 negativan čim je $C > 0$. Unatoč ovoj logici, izlaznost na izbore ostaje
 visoka.
 
+```{ojs}
+//| echo: false
+viewof vote_controls = Inputs.form({
+  N: Inputs.range([3, 8],      {value: 6,    step: 0.1, label: "Veličina biračkog tijela (log₁₀ N):"}),
+  B: Inputs.range([0, 20000],  {value: 5000, step: 100, label: "Korist od preferiranog ishoda B (€):"}),
+  C: Inputs.range([0, 50],     {value: 10,   step: 1,   label: "Trošak glasanja C (€):"})
+})
+```
+
+```{ojs}
+//| echo: false
+vote_N = vote_controls.N
+```
+
+```{ojs}
+//| echo: false
+vote_B = vote_controls.B
+```
+
+```{ojs}
+//| echo: false
+vote_C = vote_controls.C
+```
+
+```{ojs}
+//| echo: false
+{
+  const B = vote_B, C = vote_C;
+  const Ncur = Math.pow(10, vote_N);
+  const R = (N) => B / N - C;        // P ≈ 1/N, pa je R = B/N − C
+  const Rcur = R(Ncur);
+
+  const curve = d3.range(3, 8.01, 0.05).map(l => ({N: Math.pow(10, l), R: R(Math.pow(10, l))}));
+
+  return Plot.plot({
+    width: 760,
+    height: 420,
+    marginLeft: 72,
+    marginRight: 30,
+    marginTop: 64,
+    marginBottom: 52,
+    style: {fontSize: "12px", fontFamily: "Public Sans, system-ui, sans-serif", color: "#3A332D"},
+    x: {type: "log", label: "Veličina biračkog tijela N (log) →", domain: [1e3, 1e8]},
+    y: {label: "↑ Neto vrijednost glasanja R = B/N − C (€)"},
+    marks: [
+      Plot.ruleY([0], {stroke: "#6B6357", strokeDasharray: "4,3"}),
+      Plot.line(curve, {x: "N", y: "R", stroke: "#2D5A8E", strokeWidth: 2.5}),
+      Plot.dot([{N: Ncur, R: Rcur}], {x: "N", y: "R", r: 6, fill: "#1C1916", stroke: "white", strokeWidth: 2}),
+      Plot.text([Rcur >= 0
+        ? `R = ${Rcur.toFixed(2)} € → glasanje je instrumentalno isplativo`
+        : `R = ${Rcur.toFixed(2)} € → glasanje se instrumentalno ne isplati`],
+        {frameAnchor: "top", dy: -36, fontSize: 14, fontWeight: 700,
+         fill: Rcur >= 0 ? "#1C7C54" : "#C53030"})
+    ]
+  });
+}
+```
+
+*Neto vrijednost glasanja R = B/N − C brzo pada prema nuli kako raste biračko tijelo, jer vjerojatnost odlučujućeg glasa P ≈ 1/N postaje zanemariva; tek nerealno velika korist B može nadvladati i malen trošak glasanja.*
+
 Slično tomu, koncept racionalnog
 nepoznavanja (engl. *Rational Ignorance*) objašnjava zašto su građani često loše
 informirani o političkim pitanjima. Trošak stjecanja detaljnih političkih

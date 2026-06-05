@@ -14,6 +14,81 @@ Najjednostavniji prikaz problema kolektivnog izbora jest **Condorcetov paradoks*
 
 Ako te opcije uspoređujemo u parovima većinskim glasovanjem, dolazimo do neobičnog ishoda. U izboru između A i B pobjeđuje A (dva od tri birača preferiraju A). U izboru između B i C pobjeđuje B. No u izboru između A i C pobjeđuje C. Dobivamo ciklus u kojem A pobjeđuje B, B pobjeđuje C, ali C pobjeđuje A. Kolektivna „preferencija" tako postaje **netranzitivna**, iako su sve pojedinačne preferencije bile dosljedne.
 
+```{ojs}
+//| echo: false
+viewof cond_controls = Inputs.form({
+  v1: Inputs.select(["A ▸ B ▸ C","A ▸ C ▸ B","B ▸ A ▸ C","B ▸ C ▸ A","C ▸ A ▸ B","C ▸ B ▸ A"], {value: "A ▸ B ▸ C", label: "Birač 1:"}),
+  v2: Inputs.select(["A ▸ B ▸ C","A ▸ C ▸ B","B ▸ A ▸ C","B ▸ C ▸ A","C ▸ A ▸ B","C ▸ B ▸ A"], {value: "B ▸ C ▸ A", label: "Birač 2:"}),
+  v3: Inputs.select(["A ▸ B ▸ C","A ▸ C ▸ B","B ▸ A ▸ C","B ▸ C ▸ A","C ▸ A ▸ B","C ▸ B ▸ A"], {value: "C ▸ A ▸ B", label: "Birač 3:"})
+})
+```
+
+```{ojs}
+//| echo: false
+cond_v1 = cond_controls.v1
+```
+
+```{ojs}
+//| echo: false
+cond_v2 = cond_controls.v2
+```
+
+```{ojs}
+//| echo: false
+cond_v3 = cond_controls.v3
+```
+
+```{ojs}
+//| echo: false
+{
+  const parse = (s) => s.split(" ▸ ");
+  const voters = [parse(cond_v1), parse(cond_v2), parse(cond_v3)];
+  const prefers = (v, x, y) => v.indexOf(x) < v.indexOf(y);
+  const pair = (x, y) => {
+    let wx = 0, wy = 0;
+    for (const v of voters) (prefers(v, x, y) ? wx++ : wy++);
+    return wx > wy ? x : y;
+  };
+
+  const ab = pair("A","B"), bc = pair("B","C"), ac = pair("A","C");
+  const wins = {A:0, B:0, C:0};
+  [ab, bc, ac].forEach(w => wins[w]++);
+  const condWinner = ["A","B","C"].find(k => wins[k] === 2);
+  const isCycle = condWinner === undefined;
+
+  const pos = {A: {x: 0, y: 1}, B: {x: 0.87, y: -0.5}, C: {x: -0.87, y: -0.5}};
+  const nodes = ["A","B","C"].map(k => ({id: k, x: pos[k].x, y: pos[k].y}));
+  const edges = [["A","B",ab],["B","C",bc],["A","C",ac]].map(([a,b,w]) => {
+    const loser = w === a ? b : a;
+    return {x1: pos[w].x, y1: pos[w].y, x2: pos[loser].x, y2: pos[loser].y};
+  });
+
+  const accent = isCycle ? "#C53030" : "#1C7C54";
+
+  return Plot.plot({
+    width: 520,
+    height: 470,
+    marginTop: 50,
+    marginBottom: 64,
+    style: {fontSize: "13px", fontFamily: "Public Sans, system-ui, sans-serif", color: "#3A332D"},
+    x: {axis: null, domain: [-1.45, 1.45]},
+    y: {axis: null, domain: [-1.2, 1.55]},
+    marks: [
+      Plot.arrow(edges, {x1: "x1", y1: "y1", x2: "x2", y2: "y2",
+        stroke: accent, strokeWidth: 2.5, headLength: 13, inset: 28}),
+      Plot.dot(nodes, {x: "x", y: "y", r: 22, fill: "white", stroke: "#1C1916", strokeWidth: 2}),
+      Plot.text(nodes, {x: "x", y: "y", text: "id", fontSize: 18, fontWeight: 700, fill: "#1C1916"}),
+      Plot.text([isCycle ? "Ciklus — nema stabilnog pobjednika" : `Condorcetov pobjednik: ${condWinner}`],
+        {frameAnchor: "top", dy: -28, fill: accent, fontSize: 14, fontWeight: 700}),
+      Plot.text([`A vs B → ${ab}      B vs C → ${bc}      A vs C → ${ac}`],
+        {frameAnchor: "bottom", dy: 34, fill: "#3A332D", fontSize: 12})
+    ]
+  });
+}
+```
+
+*Strelice pokazuju pobjednika svakog para u izravnom većinskom glasovanju; kada tvore zatvoreni krug, kolektivna preferencija je ciklička i nema stabilnog pobjednika.*
+
 Posljedica je važna. Kada postoji ciklus, ishod ovisi o redoslijedu glasovanja. Onaj tko kontrolira dnevni red, to jest koje se opcije i kojim redoslijedom stavljaju na glasovanje, može utjecati na konačni rezultat. To je prvi nagovještaj da pravila igre nisu nevažna pozadina, nego da oblikuju same ishode.
 
 Lako je odbaciti taj primjer kao konstrukciju u kojoj su preferencije birača namjerno tako odabrane da proizvedu ciklus. Formalna analiza pokazuje suprotno. McKelveyev teorem o kaotičnoj većini dokazuje da kad se u prostoru odluke pojavi više od jedne dimenzije, ciklusi postaju pravilo, a ne iznimka, i to za gotovo bilo koju raspodjelu preferencija birača [@mckelvey1976]. Ako je ishod prve runde glasovanja pažljivo izabran, agendar može u nekoliko koraka voditi kolektivnu odluku od bilo koje početne točke do bilo koje druge točke u prostoru opcija.

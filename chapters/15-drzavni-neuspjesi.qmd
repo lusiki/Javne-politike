@@ -111,6 +111,67 @@ U praktičnom smislu, svaka kvalitetna javna politika trebala bi proći svojevrs
 7. Kako će se politika financirati i koji su njezini dugoročni fiskalni rizici?
 8. Kako će se mjeriti rezultati i kada će se politika promijeniti ili ukinuti ako ne funkcionira?
 
+```{ojs}
+//| echo: false
+viewof score_controls = Inputs.form({
+  q1: Inputs.range([0,3], {value: 2, step: 1, label: "1. Jasno definiran problem:"}),
+  q2: Inputs.range([0,3], {value: 2, step: 1, label: "2. Uzrok problema prepoznat:"}),
+  q3: Inputs.range([0,3], {value: 2, step: 1, label: "3. Država prikladan akter:"}),
+  q4: Inputs.range([0,3], {value: 2, step: 1, label: "4. Instrument s malo distorzija:"}),
+  q5: Inputs.range([0,3], {value: 2, step: 1, label: "5. Kapacitet za provedbu:"}),
+  q6: Inputs.range([0,3], {value: 2, step: 1, label: "6. Dobitnici i gubitnici jasni:"}),
+  q7: Inputs.range([0,3], {value: 2, step: 1, label: "7. Dugoročni fiskalni rizici:"}),
+  q8: Inputs.range([0,3], {value: 2, step: 1, label: "8. Mjerenje i evaluacija:"})
+})
+```
+
+```{ojs}
+//| echo: false
+score_vals = score_controls
+```
+
+```{ojs}
+//| echo: false
+{
+  const c = score_vals;
+  const dims = [
+    {q: "1. Problem", v: c.q1},
+    {q: "2. Uzrok", v: c.q2},
+    {q: "3. Akter", v: c.q3},
+    {q: "4. Instrument", v: c.q4},
+    {q: "5. Kapacitet", v: c.q5},
+    {q: "6. Raspodjela", v: c.q6},
+    {q: "7. Fiskalni rizik", v: c.q7},
+    {q: "8. Evaluacija", v: c.q8}
+  ];
+  const total = dims.reduce((s, d) => s + d.v, 0);
+  const pct = Math.round(total / 24 * 100);
+  const col = (v) => v <= 1 ? "#C53030" : v === 2 ? "#C8942D" : "#1C7C54";
+  const verdict = pct >= 80 ? "robusna politika" : pct >= 55 ? "umjeren rizik neuspjeha" : "visok rizik neuspjeha";
+
+  return Plot.plot({
+    width: 720,
+    height: 400,
+    marginLeft: 132,
+    marginRight: 30,
+    marginTop: 56,
+    marginBottom: 42,
+    style: {fontSize: "12px", fontFamily: "Public Sans, system-ui, sans-serif", color: "#3A332D"},
+    x: {domain: [0, 3], label: "Ocjena dimenzije (0 = slabo, 3 = snažno) →", ticks: [0,1,2,3]},
+    y: {domain: dims.map(d => d.q), label: null},
+    marks: [
+      Plot.barX(dims, {x: "v", y: "q", fill: d => col(d.v), insetTop: 4, insetBottom: 4}),
+      Plot.ruleX([0], {stroke: "#3A332D"}),
+      Plot.text([`Ukupna otpornost: ${pct} % — ${verdict}`],
+        {frameAnchor: "top", dy: -30, fontSize: 15, fontWeight: 700,
+         fill: pct >= 80 ? "#1C7C54" : pct >= 55 ? "#C8942D" : "#C53030"})
+    ]
+  });
+}
+```
+
+*Interaktivni „test državnog neuspjeha" — što je politika slabija na pojedinoj dimenziji, to je veći rizik da zakaže u provedbi, a ukupna ocjena pokazuje gdje dizajn treba ojačati prije provedbe.*
+
 Takav pristup mijenja način razmišljanja o javnim politikama. Umjesto da se krene od instrumenta („treba uvesti subvenciju", „treba donijeti zakon", „treba osnovati agenciju"), analiza mora krenuti od problema, poticaja i institucionalnog konteksta. Loše javne politike često ne propadaju zato što nisu imale dobar cilj, nego zato što su podcijenile državne neuspjehe.
 
 ## Zaključno — ne protiv države, nego za bolju državu
