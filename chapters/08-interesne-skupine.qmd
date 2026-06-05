@@ -2,6 +2,16 @@
 title: "Interesne skupine — iza kulisa politike"
 ---
 
+::: {.vodic-panel}
+## Vodič kroz poglavlje
+
+1. Zašto se male i koncentrirane skupine organiziraju lakše od velikih i kakvu ulogu imaju selektivni poticaji?
+2. Zašto politike s koncentriranim koristima i raspršenim troškovima opstaju i kad su društveno štetne?
+3. Što je lov na rentu i zašto je društveno štetan i kad je zakonit?
+4. Kako nastaje regulatorno zarobljavanje i kako ga institucionalni dizajn može obuzdati?
+5. Jesu li interesne skupine nužno štetne ili ishod ovisi o institucionalnom okviru u kojem djeluju?
+:::
+
 Javne politike ne oblikuju samo birači na izborima i stranke u parlamentu. Velik dio stvarnog utjecaja odvija se „iza kulisa", kroz djelovanje **interesnih skupina** kao organiziranih udruženja koja nastoje utjecati na javne odluke u korist svojih članova. To mogu biti poslovna udruženja, sindikati, profesionalne komore, granska udruženja proizvođača, ali i udruge potrošača, okolišne organizacije ili skupine korisnika određenih programa. Teorija javnog izbora pokazuje da utjecaj interesnih skupina nije slučajan i da slijedi prepoznatljivu logiku organiziranosti, koncentracije koristi i raspršenosti troškova.
 
 ## Logika kolektivnog djelovanja
@@ -67,3 +77,9 @@ Empirijski je obrazac jasan, ali smjer pouke nije jednoznačan. Korporativistič
 ## Zašto je to važno za javne politike
 
 Analiza interesnih skupina objašnjava zašto stvarne politike često odstupaju od onoga što bi „tehnički ispravna" analiza preporučila. Pokazuje zašto neke neučinkovite mjere opstaju desetljećima, zašto se povlastice teško ukidaju i zašto se reforme s raspršenim koristima i koncentriranim troškovima teško provode. Kada interesne skupine, političari i administracija dijele interes za održavanjem određene politike, nastaje stabilan savez koji se najjasnije vidi u odnosu prema birokraciji i njezinim proračunima.
+
+::: {.sazetak-panel}
+## Sažetak
+
+Utjecaj interesnih skupina slijedi prepoznatljivu logiku. Olsonova teorija kolektivnog djelovanja objašnjava zašto se uske i koncentrirane skupine organiziraju lakše od širokih, a selektivni poticaji zašto opstaju i kad zajednički cilj nije dovoljan. Asimetrija koncentriranih koristi i raspršenih troškova pokazuje zašto se neučinkovite politike teško ukidaju, dok lov na rentu i regulatorno zarobljavanje pretvaraju taj utjecaj u stvaran trošak za društvo. Usporedba pluralističkih i korporativističkih sustava podsjeća da problem nije postojanje interesa, nego neravnoteža i netransparentnost njihova djelovanja, pa je zadaća javnih politika to djelovanje otvoriti i podvrgnuti jasnim pravilima.
+:::

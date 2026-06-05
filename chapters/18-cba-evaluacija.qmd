@@ -2,6 +2,16 @@
 title: "Cost-benefit analiza i evaluacija javnih politika"
 ---
 
+::: {.vodic-panel}
+## Vodič kroz poglavlje
+
+1. Što je cost-benefit analiza i zašto je važna za javne politike?
+2. Kako se mjere društvene koristi i troškovi te zašto se diskontiraju?
+3. Što neto sadašnja vrijednost i diskontna stopa govore o vrijednosti projekta?
+4. Po čemu se razlikuju metode evaluacije i koja najjače utvrđuje uzročni učinak?
+5. Koja su glavna ograničenja evaluacije i zašto je važna neovisnost evaluatora?
+:::
+
 Cost-benefit analiza (CBA) predstavlja jedan od najvažnijih analitičkih alata u javnim financijama i politikama. Riječ je o sustavnom postupku kojim se procjenjuju ukupne društvene koristi i troškovi neke javne politike, projekta ili investicije, s ciljem donošenja racionalnih i informiranih odluka. Za razliku od privatnog sektora, gdje je kriterij uspješnosti najčešće profit, u javnom sektoru ključni je kriterij društvena dobrobit. Upravo zato CBA omogućuje usporedbu različitih politika na temelju njihova neto doprinosa društvu.
 
 ## Zašto je cost-benefit analiza važna?
@@ -170,6 +180,12 @@ Tamo gdje RCT nije etički ili praktično izvediv (privatizacija sektora, makro 
 Unatoč svojoj ulozi, evaluacija se suočava s nizom ograničenja. Prvo se odnosi na dostupnost i kvalitetu podataka. Drugo se tiče atribucije učinaka jer u stvarnom svijetu politike ne djeluju u izolaciji, pa je teško razlučiti u kojoj je mjeri promjena rezultat konkretne politike, a u kojoj posljedica drugih procesa. Treće proizlazi iz političke ekonomije evaluacije. Ako evaluacija pokaže da politika nije bila učinkovita, to može ugroziti politički kredibilitet aktera, pa postoji rizik da se rezultati selektivno koriste ili ignoriraju. Time se naglašava važnost institucionalne neovisnosti evaluacijskih tijela i transparentnosti procesa.
 
 Svi ovi izazovi upućuju na dublji problem postojanja sustavne razlike između normativnih ciljeva javnih politika i njihovih stvarnih učinaka. Evaluacija upravo služi tome da tu razliku učini vidljivom. U konačnici, izazovi evaluacije ne znače da je treba napustiti, već da treba jačati institucionalne kapacitete, unapređivati metodologiju i povećavati transparentnost, jer samo u takvom okviru evaluacija može pružiti pouzdanu osnovu za donošenje boljih i odgovornijih javnih politika.
+
+::: {.sazetak-panel}
+## Sažetak
+
+Cost-benefit analiza sustavno uspoređuje ukupne društvene koristi i troškove neke politike ili projekta, pa u javnom sektoru zamjenjuje profit kriterijem društvene dobrobiti. Budući da se koristi i troškovi javljaju u različitim razdobljima, diskontiranje i neto sadašnja vrijednost ključni su alati, a izbor diskontne stope osobito utječe na projekte s dalekosežnim učincima. Šira evaluacija nadograđuje CBA-u nizom metoda različite identifikacijske snage, od randomiziranih pokusa do kvazi-eksperimentalnih dizajna, koje nastoje izolirati stvarni uzročni učinak politike. Sva ta analiza ima granice, od kvalitete podataka do političke ekonomije rezultata, pa neovisnost evaluacijskih tijela i transparentnost postaju uvjet njezine vjerodostojnosti.
+:::
 
 ::: {.callout-vjezba}
 Projekt zahtijeva ulaganje od 100 milijuna eura danas i donosi neto korist od 30 milijuna eura godišnje tijekom sljedeće četiri godine. (a) Izračunajte neto sadašnju vrijednost projekta uz diskontnu stopu od 5 %. (b) Ponovite izračun uz stopu od 10 % i usporedite rezultate. (c) Pri kojoj se približno diskontnoj stopi neto sadašnja vrijednost izjednačava s nulom i kako se taj prag naziva? Objasnite zašto je projekt s koristima koje sežu daleko u budućnost osjetljiviji na izbor diskontne stope.

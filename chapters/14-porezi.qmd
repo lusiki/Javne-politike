@@ -2,6 +2,18 @@
 title: "Porezi — više od tereta"
 ---
 
+::: {.vodic-panel}
+## Vodič kroz poglavlje
+
+1. Što su porezi i po čemu se razlikuju od naknada, pristojbi i doprinosa?
+2. Koje su glavne vrste poreza i na čemu se temelje?
+3. Koja načela razlikuju dobar od lošeg poreznog sustava?
+4. Što teorija govori o poreznom opterećenju, učinkovitosti i pravednosti?
+5. Što znači optimalno oporezivanje i gdje su njegove granice?
+6. Kako se porezni sustavi razlikuju u svijetu te u EU i Hrvatskoj?
+7. Kako digitalizacija i umjetna inteligencija mijenjaju budućnost poreza?
+:::
+
 ## Što su porezi?
 
 Porezi su temeljni instrument javnih financija i ključni izvor prihoda moderne države. U najširem smislu, porezi se definiraju kao obvezna, nepovratna davanja državi bez izravne protuusluge [@musgrave1989; @rosen2014]. Ta definicija sadrži nekoliko važnih elemenata koje treba jasno razumjeti.
@@ -1450,3 +1462,9 @@ Pretpostavite hipotetski scenarij u kojem AI tijekom desetljeća istisne 15 % br
 Okvir Korineka i Lockwooda dragocjen je upravo zato što razlikuje stupnjeve tehnološke tranzicije i pokazuje da isti porezni instrument može biti dobar ili loš ovisno o fazi. Okvir ipak ne uklanja nekoliko stvarnih ograničenja. Prvo, **dubina je neizvjesnost** jer ne znamo hoće li, ni kada, doći do Faze 2, pa porezne sustave treba dizajnirati tako da budu **otporni na obje krajnosti**. Drugo, **porezna konkurencija među državama** ograničava jednostranu primjenu mjera poput poreza na računarsku snagu. Male, otvorene ekonomije poput Hrvatske posebno su izložene riziku premještanja AI investicija u susjedne, niže oporezive jurisdikcije ako se ne uskladi politika na razini EU. Treće, **politička ekonomija pomaka prema potrošnji** nije neutralna jer bez popratnih redistributivnih mjera takav pomak povećava regresivnost sustava, što može oslabiti njegovu legitimnost. To je pitanje koje je već u središtu rasprave razvijene u drugom dijelu knjige.
 
 Konačno, valja zadržati i metodološku skromnost. Rasprava o porezima u doba AI-a još je u povoju, a najvažniji empirijski podaci tek slijede. Vrijednost okvira nije u tome što daje konačne odgovore, nego u tome što **postavlja prava pitanja** i pokazuje koja od njih moramo početi rješavati prije nego što budemo prisiljeni.
+
+::: {.sazetak-panel}
+## Sažetak
+
+Porezi su obvezna, nepovratna davanja bez izravne protuusluge i temeljni su izvor prihoda moderne države, različit od naknada, pristojbi i doprinosa. Različite vrste poreza, na dohodak, potrošnju i imovinu, vrednuju se prema načelima pravednosti, učinkovitosti, jednostavnosti i izdašnosti, koja često stoje u međusobnoj napetosti. Teorija optimalnog oporezivanja pokazuje kako prikupiti potrebne prihode uz najmanji gubitak učinkovitosti, ali uvijek unutar političkih i institucionalnih ograničenja. Usporedba poreznih sustava u svijetu te u EU i Hrvatskoj, kao i izazovi digitalizacije i umjetne inteligencije, potvrđuju da porez nije samo teret, nego instrument kroz koji društvo izražava svoje vrijednosti i prioritete.
+:::

@@ -2,6 +2,16 @@
 title: "Novi javni menadžment"
 ---
 
+::: {.vodic-panel}
+## Vodič kroz poglavlje
+
+1. Iz kojeg konteksta i kojih kritika države nastaje Novi javni menadžment?
+2. Što znači marketizacija i uvođenje konkurencije u javni sektor?
+3. Kako agencifikacija i korporativno upravljanje mijenjaju organizaciju države?
+4. Što znači promatrati građanina kao korisnika usluge?
+5. Koje su glavne prednosti, a koje kritike i ograničenja NPM-a?
+:::
+
 Tijekom 1980-ih i 1990-ih godina mnoge razvijene zemlje suočile su se s rastom javne potrošnje, fiskalnim krizama i kritikama neučinkovitosti države. Nakon snažnog širenja države blagostanja u desetljećima nakon Drugog svjetskog rata, javni sektor u mnogim je zemljama postao velik, složen i skup. Javna potrošnja rasla je zbog razvoja mirovinskih sustava, zdravstva, obrazovanja i socijalne zaštite, dok su gospodarske krize 1970-ih smanjile fiskalni prostor za daljnje širenje države. U tom kontekstu sve se češće govorilo o „preopterećenoj državi" koja preuzima sve više funkcija, ali ih ne obavlja dovoljno učinkovito [@tanzi2011].
 
 Upravo iz takvog okruženja nastaje **Novi javni menadžment** (engl. *New Public Management*, NPM). Riječ je o skupu reformskih ideja koje su pokušale javni sektor učiniti učinkovitijim, fleksibilnijim i više usmjerenim na rezultate. Christopher Hood opisao je NPM kao novi stil upravljanja javnim sektorom koji naglašava profesionalni menadžment, mjerljive ciljeve, kontrolu rezultata, konkurenciju i disciplinu troškova [@hood1991]. NPM je pritom pokušao državu organizirati tako da više nalikuje poduzeću, s manje pravila i procedura, a više ciljeva, rezultata i odgovornosti.
@@ -71,3 +81,9 @@ Ipak, NPM se brzo suočio s ozbiljnim kritikama. Prva se odnosi na pretjerano po
 Empirijska usporedba zemalja koje su pokušale ubrzano prenijeti NPM iz anglosaksonskog kruga otkriva dvije različite putanje [@pollitt2017]. Skupina zemalja s razvijenom administrativnom tradicijom (Nizozemska, Danska, Finska) preuzela je tržišne mehanizme oprezno i selektivno, redovito popraćene ulaganjem u koordinaciju i nacionalne strategije, te je vremenom razvila mješavinu menadžerskih i mrežnih elemenata. Skupina zemalja u tranziciji prema funkcionalnoj državi (dijelovi srednje i istočne Europe, Latinska Amerika 1990-ih) često je preskakala temelje i izravno preuzimala složene NPM tehnike, što je proizvodilo formalne reforme koje nisu mijenjale stvarno funkcioniranje uprave, a ponekad su je dodatno fragmentirale.
 
 Pouka koja je iz toga proizašla ne odbacuje menadžerske ideje, nego mijenja redoslijed njihove primjene. U zemljama gdje proračunski sustav ne funkcionira pouzdano, gdje državna služba nije zaštićena od političke smjene i gdje nadzorni mehanizmi tek nastaju, postupna izgradnja osnova daje veće dobitke nego skok na sofisticirane reforme. NPM se u takvim kontekstima pokazao djelotvornim tek kao kasni sloj jednog dužeg procesa, a ne kao kratica koja zaobilazi izgradnju temeljne administrativne sposobnosti.
+
+::: {.sazetak-panel}
+## Sažetak
+
+Novi javni menadžment nastao je kao odgovor na sliku „preopterećene države" i pokušao je javni sektor organizirati tako da više nalikuje poduzeću, s naglaskom na rezultate, mjerljive ciljeve, konkurenciju i disciplinu troškova. Njegovi alati, od marketizacije i agencifikacije do korporativnog upravljanja i usmjerenosti na građanina kao korisnika, donijeli su stvarne pomake u učinkovitosti i kvaliteti usluga. Istodobno su pokazali ograničenja jer su mjerljivi pokazatelji znali zamijeniti stvarnu kvalitetu, a fragmentacija institucija oslabiti koordinaciju. Iskustvo različitih zemalja uči da menadžerske ideje djeluju tek kad postoje temeljni administrativni kapaciteti, a ne kao kratica koja ih zaobilazi.
+:::

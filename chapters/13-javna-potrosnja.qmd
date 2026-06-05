@@ -2,6 +2,16 @@
 title: "Kako država troši naš novac?"
 ---
 
+::: {.vodic-panel}
+## Vodič kroz poglavlje
+
+1. Kako se uloga javne potrošnje mijenjala kroz povijest?
+2. Koje su glavne koristi javne potrošnje, a koji njezini rizici?
+3. Kako javna potrošnja djeluje stabilizacijski tijekom gospodarskih ciklusa?
+4. Zašto se razina i struktura potrošnje toliko razlikuju među zemljama?
+5. Zašto za učinke potrošnje kvaliteta provedbe znači više od pukog opsega?
+:::
+
 Javna potrošnja jedan je od najvidljivijih i najvažnijih aspekata djelovanja države. Kroz nju država ne samo da financira osnovne funkcije poput obrazovanja, zdravstva i sigurnosti, nego i aktivno oblikuje gospodarske ishode, razinu nejednakosti i otpornost društva na krize. Iako se često promatra kroz prizmu „koliko država troši", ključno pitanje je zapravo zašto država troši i na što troši.
 
 Razumijevanje javne potrošnje zahtijeva kombinaciju povijesne, teorijske i empirijske perspektive. Njezina se uloga dramatično mijenjala u rasponu od minimalne države koja gotovo isključivo osigurava red i sigurnost do moderne države koja upravlja složenim sustavima socijalne zaštite i stabilizira gospodarstvo. Upravo zato analiza javne potrošnje nije samo pitanje ekonomije, nego i politike, institucija i društvenih preferencija.
@@ -152,6 +162,12 @@ Ovo se potpoglavlje dovršava. Slijedi detaljniji prikaz razine i strukture javn
 :::
 
 Razlike u javnoj potrošnji potvrđuju temeljni zaključak moderne ekonomije javnih financija prema kojem ne postoji jedinstveni „optimalni" model države. Razina i struktura javne potrošnje rezultat su povijesnog razvoja, političkih odluka i institucionalnih ograničenja, dok njihovi učinci ovise prije svega o kvaliteti implementacije, a ne samo o veličini rashoda.
+
+::: {.sazetak-panel}
+## Sažetak
+
+Javna potrošnja jedan je od najvidljivijih izraza djelovanja države, a njezina se uloga povijesno mijenjala od minimalne države reda i sigurnosti do moderne države blagostanja. Uz koristi u obliku financiranja obrazovanja, zdravstva, sigurnosti i socijalne zaštite dolaze i rizici poput rasta duga, neučinkovitosti i tvrdokornih obveza. Potrošnja djeluje i stabilizacijski jer u recesiji može ublažiti pad aktivnosti, no taj učinak ovisi o multiplikatoru i odnosu kamatne stope i stope rasta. Razlike među zemljama pokazuju da ne postoji jedinstveni optimalni model, pa za ishod presuđuje kvaliteta provedbe, a ne sama veličina rashoda.
+:::
 
 ::: {.callout-vjezba}
 Pretpostavite zemlju s javnim dugom od 80 % BDP-a i nominalnim rastom BDP-a od 3 %. (a) Ako je prosječna kamatna stopa na dug 2 %, a primarni proračun uravnotežen, objasnite u kojem se smjeru kreće omjer duga i BDP-a. (b) Pretpostavite da država u recesiji pokrene poticaj vrijedan 3 % BDP-a uz multiplikator 1,5; za koliko se procjenjuje da raste BDP u toj godini? (c) Zašto u uvjetima visokog multiplikatora restriktivna politika može kratkoročno povećati, a ne smanjiti omjer duga i BDP-a? Povežite odgovor s odnosom kamatne stope i stope rasta.

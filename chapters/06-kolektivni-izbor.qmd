@@ -2,6 +2,16 @@
 title: "Kolektivni izbor"
 ---
 
+::: {.vodic-panel}
+## Vodič kroz poglavlje
+
+1. Kako od mnoštva pojedinačnih preferencija doći do jedne dosljedne društvene odluke?
+2. Što je Condorcetov paradoks i zašto većinsko glasovanje može biti ciklično?
+3. Što tvrdi Arrowljev teorem nemogućnosti o agregaciji preferencija?
+4. Zašto su jednovršne preferencije i medijanski glasač iznimka koja vraća stabilnost?
+5. Zašto je kontrola dnevnog reda izvor moći i kakve to posljedice ima za javne politike?
+:::
+
 Kada odluke donosi pojedinac, ekonomska je analiza relativno jednostavna. Pretpostavljamo da osoba ima preferencije i bira opciju koja joj donosi najveću korist. No javne politike rijetko su rezultat odluke jednog pojedinca. One nastaju kroz **kolektivni izbor**, postupak kojim skupina ljudi s različitim preferencijama dolazi do zajedničke odluke. Pitanje koje se tada postavlja čini se jednostavnim, ali je iznenađujuće složeno. Pitamo se kako od mnoštva pojedinačnih preferencija doći do jedne društvene odluke koja je dosljedna, pravedna i smislena.
 
 U svakodnevnom političkom govoru neprestano koristimo izraze poput „Hrvatska je odlučila", „Europska unija smatra" ili „volja naroda". Teorija javnog izbora poziva nas na intelektualnu iskrenost. Skupine nemaju um, nemaju preferencije i nemaju volju, a preferencije imaju samo pojedinci. Proces pretvaranja heterogenih pojedinačnih rang-lista u jedinstvenu „društvenu rang-listu" nije tehnička formalnost, nego prijelaz pun logičkih paradoksa, proceduralnih zamki i neočekivanih ishoda [@arrow1951; @sen1970; @buchanan1962].
@@ -190,3 +200,9 @@ Takvi kompromisi često vode do neintuitivnih i neučinkovitih ishoda. @tbl-komp
 Teorija kolektivnog izbora nije samo apstraktna logička vježba. Ona ima izravne posljedice za razumijevanje javnih politika. Prvo, pokazuje da „volja naroda" nije uvijek jednoznačno definiran pojam jer ovisi o pravilima kroz koja se izražava. Drugo, objašnjava zašto je **kontrola dnevnog reda** izvor moći, budući da onaj tko određuje o čemu se i kojim redoslijedom glasuje oblikuje ishod. Treće, opravdava postojanje **ustavnih i proceduralnih pravila** koja ograničavaju proizvoljnost i daju odlukama stabilnost i predvidljivost, primjerice pravila pojačane većine (*supermajority*) za poreze i dugoročne fiskalne obveze [@buchanan1962; @mueller1989].
 
 Ako „društveni izbor" nije rezultat racionalnog traženja općeg blagostanja, nego ishod nesavršenih pravila i strateškog ponašanja, tada mnoge neučinkovite ili fiskalno neodržive politike prestaju biti anomalija i postaju predvidiv ishod institucionalnog dizajna. Kada sama agregacija preferencija može proizvesti nedosljedne ili manipulabilne ishode, moramo pažljivo analizirati konkretne aktere koji djeluju unutar tih pravila i koji ih, kad mogu, oblikuju u svoju korist, a to su birači, stranke, interesne skupine i birokracija.
+
+::: {.sazetak-panel}
+## Sažetak
+
+Kolektivni izbor pretvara raznolike pojedinačne preferencije u jednu društvenu odluku, no taj prijelaz nije tehnička formalnost. Condorcetov paradoks pokazuje da većinsko glasovanje može biti ciklično, a Arrowljev teorem nemogućnosti da nijedno pravilo ne može istodobno zadovoljiti sve razumne uvjete pravednosti i dosljednosti. Jednovršne preferencije i medijanski glasač vraćaju stabilnost, ali samo kao poseban slučaj, dok kontrola dnevnog reda otkriva da onaj tko određuje redoslijed glasovanja oblikuje i ishod. Zato „volja naroda" ovisi o pravilima kroz koja se izražava, a mnoge neučinkovite politike postaju predvidiv ishod institucionalnog dizajna, a ne anomalija.
+:::

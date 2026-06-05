@@ -2,6 +2,16 @@
 title: "Konstitucionalna (ustavna) ekonomika"
 ---
 
+::: {.vodic-panel}
+## Vodič kroz poglavlje
+
+1. Što je ustavna ekonomika i po čemu se razlikuje od izbora pojedinih politika?
+2. Zašto je važnije pitanje pravila igre od pitanja pojedinačnih odluka?
+3. Što je problem vremenske nedosljednosti i kako pravila grade vjerodostojnost?
+4. Kako fiskalna pravila i neovisne institucije obuzdavaju političke cikluse?
+5. Po čemu prepoznajemo dobra ustavna pravila?
+:::
+
 U prethodnom smo poglavlju vidjeli kako nova institucionalna ekonomika objašnjava funkcioniranje gospodarstva i javnog sektora kroz pojmove poput institucija, transakcijskih troškova i principal–agent problema. Ti pristupi jasno pokazuju da ishodi javnih politika ne ovise samo o dobrim namjerama, političkim programima ili sofisticiranim ekonomskim modelima. Oni prije svega ovise o institucionalnom okviru unutar kojeg se odluke donose, provode i nadziru.
 
 Čak i vrlo dobra ideja može proizvesti loš rezultat ako se provodi u loše dizajniranom institucionalnom okruženju. Porezna reforma može biti ekonomski dobro zamišljena, ali ako je porezna administracija slaba, pravila se često mijenjaju, a provedba je selektivna, učinak reforme može biti vrlo ograničen. Socijalna politika može imati plemenit cilj, ali ako nema jasne kriterije, kvalitetne podatke i dobar nadzor, može završiti kao neučinkovit sustav transfera.
@@ -103,3 +113,9 @@ Ustavna ekonomika polazi od jednostavne, ali duboke ideje po kojoj nije dovoljno
 Zato ustavna ekonomika prirodno nastavlja novu institucionalnu ekonomiku i teoriju javnog izbora. Nova institucionalna ekonomika pokazuje da su institucije važne jer oblikuju transakcijske troškove i poticaje. Teorija javnog izbora pokazuje da politički akteri djeluju unutar vlastitih interesa i ograničenja. Ustavna ekonomika zatim postavlja pitanje kako oblikovati pravila koja će te interese ograničiti i usmjeriti prema javnom interesu.
 
 Njezina je glavna pouka posebno važna za javne politike jer dobra javna politika nije samo dobra mjera, nego i rezultat dobrog institucionalnog okvira. Fiskalna pravila, neovisne institucije, transparentnost, odgovornost, zaštita prava, podjela vlasti i vjerodostojne procedure nisu tehnički detalji. To su uvjeti koji određuju hoće li javne politike biti kratkoročne i oportunističke ili dugoročne, odgovorne i održive. U tom smislu, ustavna ekonomika nas uči da se kvaliteta države ne mjeri samo time koliko ona intervenira, nego i time koliko su dobro postavljena pravila koja ograničavaju, usmjeravaju i čine odgovornim njezino djelovanje.
+
+::: {.sazetak-panel}
+## Sažetak
+
+Ustavna ekonomika pomiče pozornost s pitanja koje politike želimo na pitanje po kojim se pravilima te politike donose. Problem vremenske nedosljednosti pokazuje zašto odluka koja je danas privlačna sutra postaje štetna i zašto vjerodostojnost zahtijeva obvezujuća pravila, a ne samo dobre namjere. Fiskalna pravila, neovisne institucije, transparentnost i podjela vlasti zato obuzdavaju političke cikluse i usmjeravaju i nesavršene aktere prema odgovornijim odlukama. Tako ustavna ekonomika nadograđuje institucionalnu ekonomiku i teoriju javnog izbora i uči nas da se kvaliteta države mjeri i dobrim pravilima, a ne samo opsegom njezina djelovanja.
+:::

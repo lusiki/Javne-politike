@@ -2,6 +2,17 @@
 title: "Instrumenti državne intervencije"
 ---
 
+::: {.vodic-panel}
+## Vodič kroz poglavlje
+
+1. Što su instrumenti javne politike i zašto su most između cilja i rezultata?
+2. Kako porezi, javna potrošnja i subvencije djeluju kroz novac i poticaje?
+3. Kako regulacija djeluje kroz pravila, standarde i dozvole?
+4. Kada država intervenira izravno, kroz javna poduzeća i agencije?
+5. Što su informacijski i bihevioralni instrumenti i čime se razlikuju od prisile?
+6. Po čemu prepoznajemo dobar izbor i kombinaciju instrumenata?
+:::
+
 Država svoju ulogu ne ostvaruje apstraktno, već kroz konkretne **instrumente javne politike**. Kada kažemo da država „intervenira", „regulira", „pomaže", „oporezuje" ili „stabilizira gospodarstvo", zapravo govorimo o različitim načinima na koje javna vlast pokušava utjecati na ponašanje pojedinaca, poduzeća, institucija i tržišta. Instrumenti javne politike su zato operativni alati kojima država pretvara ciljeve u djelovanje.
 
 Ti instrumenti mogu biti vrlo različiti. Neki izravno uključuju novac, poput poreza, javne potrošnje, subvencija i transfera. Drugi djeluju kroz pravila, zabrane, standarde i dozvole, kao što je regulacija. Treći djeluju kroz organizaciju same države, primjerice javna poduzeća, javne ustanove i agencije. Četvrti djeluju na makroekonomskoj razini, kroz fiskalnu i monetarnu politiku. U novije vrijeme sve veću važnost imaju i informacijski te bihevioralni instrumenti, koji ne počivaju na prisili ili novcu, nego na oblikovanju izbora i informacija koje građani imaju pred sobom.
@@ -93,3 +104,9 @@ Kanadska pokrajina Britanska Kolumbija 2008. je uvela porez na ugljik koji dobro
 Instrumenti javne politike predstavljaju most između državnih ciljeva i stvarnih društvenih ishoda. Država može imati plemenit cilj poput smanjenja siromaštva, povećanja zaposlenosti, zaštite okoliša ili poticanja rasta, ali cilj sam po sebi nije politika. Politika nastaje tek kada se odabere instrument, osigura provedba, definiraju odgovornosti i mjere rezultati.
 
 Zato je izbor instrumenta jedno od najvažnijih pitanja javnih politika. Porezi prikupljaju prihode i mijenjaju poticaje. Javna potrošnja financira usluge, transfere i investicije. Regulacija postavlja pravila ponašanja. Subvencije potiču određene aktivnosti, ali mogu stvoriti rente. Javna poduzeća omogućuju izravnu državnu proizvodnju u strateškim sektorima, ali traže dobro upravljanje. Informacijski i bihevioralni instrumenti pokušavaju promijeniti ponašanje bez izravne prisile. Dobra javna politika ne pita samo što država želi postići, nego i kojim instrumentom, uz koje troškove, s kakvim poticajima, preko kojih institucija i s kakvom mogućnošću evaluacije.
+
+::: {.sazetak-panel}
+## Sažetak
+
+Država svoje ciljeve ostvaruje kroz konkretne instrumente, pa cilj sam po sebi nije politika dok se ne odabere alat i osigura provedba. Jedni instrumenti djeluju kroz novac, poput poreza, potrošnje, subvencija i transfera, drugi kroz pravila i standarde, treći kroz izravnu državnu organizaciju u obliku javnih poduzeća i agencija. Sve veću ulogu imaju informacijski i bihevioralni instrumenti, koji oblikuju izbore bez prisile i novca. Izbor i kombinacija instrumenata zato su među najvažnijim pitanjima javnih politika jer svaki alat nosi vlastite troškove, poticaje i zahtjeve za provedbom.
+:::

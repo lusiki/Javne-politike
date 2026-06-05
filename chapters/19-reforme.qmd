@@ -2,6 +2,16 @@
 title: "Reforme u javnom sektoru — što funkcionira i zašto?"
 ---
 
+::: {.vodic-panel}
+## Vodič kroz poglavlje
+
+1. Zašto su reforme javnog sektora nužne za sposobnost i razvoj države?
+2. Što određuje hoće li reforma uspjeti ili ostati samo na papiru?
+3. Čemu nas uči iskustvo reformi u zemljama srednje i istočne Europe?
+4. Kakvu ulogu imaju vanjska sidra poput EU-a uz domaće vlasništvo nad reformama?
+5. Koji su ključevi uspješnih reformi i zašto je provedba važnija od broja zakona?
+:::
+
 Reforme u javnom sektoru predstavljaju jedan od najzahtjevnijih, ali i najvažnijih segmenata javnih politika, jer izravno određuju sposobnost države da učinkovito prikuplja prihode, upravlja rashodima i pruža javne usluge. Za razliku od mnogih drugih politika, ovdje nije riječ samo o promjeni pravila, nego o promjeni načina funkcioniranja države, njezinih institucija, organizacijske kulture i poticaja. Upravo zbog toga reforme javnog sektora često su sporije, politički osjetljivije i neizvjesnije od drugih vrsta reformi.
 
 Empirijska literatura jasno pokazuje da kvaliteta javnog sektora, koja uključuje učinkovitost, odgovornost, transparentnost i sposobnost provedbe, ima presudan utjecaj na gospodarski razvoj i uspješnost drugih politika [@acemoglu2012; @fukuyama2013]. Država nije samo regulator ili redistributivni mehanizam, nego i ključni „operativni sustav" ekonomije koji određuje kako pravila funkcioniraju u praksi.
@@ -128,3 +138,9 @@ Prije svega, reforme javnog sektora nisu prvenstveno tehnički, nego duboko poli
 Peti element odnosi se na ulogu vanjskih sidara i poticaja (pristupanje EU, ERM II, NPOO), koji povećavaju vjerodostojnost reformi, ali su najdjelotvorniji kada su dopunjeni domaćim vlasništvom nad reformama. Šesto, reforme su dugotrajan i kumulativan proces, a ne jednokratni događaj, pri čemu je kontinuitet kroz različite političke cikluse jednako važan kao i početni dizajn.
 
 Konačno, možda i najvažniji zaključak jest da se uspjeh reformi ne može mjeriti brojem donesenih zakona ili strategija, nego njihovim stvarnim učinkom na funkcioniranje države. Prava mjera uspjeha nije formalna usklađenost, nego sposobnost države da učinkovito pruža javne usluge, upravlja resursima i odgovara na potrebe građana i gospodarstva. „Ključevi" uspješnih reformi mogu se zato sažeti ne kao skup tehničkih rješenja, nego kao kombinacija nekoliko međusobno povezanih elemenata, koji uključuju političku volju, realističan dizajn, snažne institucionalne kapacitete, postupnost, kontinuitet i stvarnu implementaciju. Upravo u toj kombinaciji leži razlika između reformi koje ostaju na papiru i onih koje trajno mijenjaju način funkcioniranja države.
+
+::: {.sazetak-panel}
+## Sažetak
+
+Reforme javnog sektora mijenjaju sam način funkcioniranja države, pa su sporije, politički osjetljivije i neizvjesnije od drugih politika, a kvaliteta uprave presudno utječe na razvoj i uspjeh svih ostalih mjera. Njihov uspjeh ne određuje samo dobar tehnički dizajn, nego i politička volja, realističnost, snažni institucionalni kapaciteti, postupnost i kontinuitet kroz različite cikluse. Iskustvo srednje i istočne Europe pokazuje da vanjska sidra poput pristupanja EU jačaju vjerodostojnost, ali djeluju tek uz domaće vlasništvo nad reformama. Prava mjera uspjeha zato nije broj donesenih zakona i strategija, nego stvarna sposobnost države da pruža usluge, upravlja resursima i odgovara na potrebe građana.
+:::

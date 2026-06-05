@@ -2,7 +2,14 @@
 title: "Što je to javni izbor i zašto nas se tiče?"
 ---
 
+::: {.vodic-panel}
+## Vodič kroz poglavlje
 
+1. Što je teorija javnog izbora i kojom se metodologijom služi?
+2. Zašto razlikujemo pravila igre od ishoda koje ona proizvode?
+3. Što znači promatrati ljude kao birače, političare, birokrate i pripadnike interesnih skupina?
+4. Zašto su mnoge odluke države predvidivo neintuitivne, racionalne za aktere, a štetne za društvo?
+:::
 
 Teorija javnog izbora (engl. *Public Choice Theory*) predstavlja
 sponu između ekonomije i političkih znanosti i definira se kao uporaba
@@ -596,3 +603,9 @@ nepovoljne za društvo u cjelini.
 | Maksimizacija budžeta | Birokrati | Povećanje ukupnog budžeta i osobne moći | Prekomjerna opskrba i neefikasna proizvodnja javnih dobara (Alokativna i X-neefikasnost) |
 
 Izvor:
+
+::: {.sazetak-panel}
+## Sažetak
+
+Teorija javnog izbora ekonomskim alatima analizira političko odlučivanje i polazi od pretpostavke da i u politici djeluju pojedinci sa svojim ciljevima, a ne bestjelesni zastupnici općeg dobra. Ključno je razlikovati pravila igre od ishoda jer isti akteri pod različitim pravilima proizvode različite rezultate. Kada se ljudi promatraju kao birači, političari, birokrati i pripadnici interesnih skupina, mnogi naizgled iracionalni potezi države postaju razumljivi i predvidljivi. Upravo zato su brojne odluke države neintuitivne, racionalne za one koji ih donose, a istodobno nepovoljne za društvo u cjelini.
+:::

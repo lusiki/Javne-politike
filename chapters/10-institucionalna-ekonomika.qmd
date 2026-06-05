@@ -2,6 +2,16 @@
 title: "Nova institucionalna ekonomika — pravila igre"
 ---
 
+::: {.vodic-panel}
+## Vodič kroz poglavlje
+
+1. Što su institucije i zašto ih shvaćamo kao „pravila igre"?
+2. Što su transakcijski troškovi i kako oblikuju ekonomske odluke?
+3. Kako se principal–agent problem javlja u javnom sektoru?
+4. Zašto isto tržišno pravilo daje različite ishode u različitim zemljama?
+5. Kako institucije povezuju ekonomiju s dugoročnim razvojem i javnim politikama?
+:::
+
 Jedan od najvažnijih pomaka u razumijevanju ekonomskih procesa u posljednjih nekoliko desetljeća odnosi se na prepoznavanje ključne uloge institucija u oblikovanju ekonomskih ishoda. Tradicionalna neoklasična ekonomija dugo je polazila od pretpostavke da tržišta funkcioniraju unutar relativno „zadanog" institucionalnog okvira. U takvom pristupu pravila igre često su implicitno stabilna, neutralna i učinkovita. Naglasak je bio na cijenama, količinama, preferencijama, tehnologiji, konkurenciji i ravnoteži, dok su zakoni, sudovi, vlasnička prava, političke institucije, povjerenje i neformalne norme često ostajali u pozadini analize.
 
 Međutim, iskustvo različitih zemalja pokazalo je da tržište nikada ne djeluje u institucionalnom vakuumu. Isto tržišno pravilo može proizvesti različite učinke u različitim zemljama, ovisno o tome kakvo je sudstvo, koliko su ugovori provedivi, koliko je javna uprava učinkovita, koliko su porezna pravila stabilna, koliko je raširena korupcija i koliko građani vjeruju institucijama. Tranzicijske zemlje srednje i istočne Europe, zemlje Latinske Amerike, Afrike i Azije jasno pokazuju da slični ekonomski resursi ne moraju dovesti do sličnih razvojnih rezultata. Ono što često čini razliku nisu samo kapital, rad ili tehnologija, nego pravila igre unutar kojih se kapital, rad i tehnologija koriste.
@@ -93,3 +103,9 @@ Ta pouka nije samo povijesna. Mnoga gospodarstva u razvoju i danas se velikim di
 Nova institucionalna ekonomika važna je zato što pokazuje da tržišta, države i javne politike ne možemo razumjeti bez pravila unutar kojih djeluju. Cijene, porezi, subvencije i regulacije važni su, ali njihovi učinci ovise o tome postoje li pravna sigurnost, povjerenje, učinkovita provedba, odgovornost i stabilna očekivanja. Ista javna politika može uspjeti u jednom institucionalnom okruženju i zakazati u drugom.
 
 Zato kvalitetna javna politika nije samo tehnički dobro osmišljena mjera. Ona mora biti **institucionalno provediva**. Mora uzeti u obzir transakcijske troškove, informacijske probleme, poticaje aktera, principal–agent odnose, kapacitet javne uprave i dugoročnu vjerodostojnost pravila. Ako se ti elementi zanemare, politika može izgledati dobro na papiru, ali proizvesti slabe rezultate u praksi. Pravila igre nisu tehnički detalj, nego temelj koji određuje hoće li tržišta stvarati vrijednost, hoće li država djelovati odgovorno i hoće li društvo dugoročno napredovati.
+
+::: {.sazetak-panel}
+## Sažetak
+
+Nova institucionalna ekonomika pokazuje da tržište nikada ne djeluje u vakuumu, nego unutar pravila igre koja oblikuju ishode. Transakcijski troškovi objašnjavaju zašto su ugovori, povjerenje i provedba važni jednako kao cijene i količine, a principal–agent problem zašto se interesi onih koji odlučuju i onih u čije se ime odlučuje razilaze. Zato slični resursi u različitim institucionalnim okvirima daju vrlo različite razvojne rezultate. Kvalitetna javna politika stoga nije samo tehnički dobro osmišljena mjera, nego mjera koja je institucionalno provediva i dugoročno vjerodostojna.
+:::

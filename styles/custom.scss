@@ -382,6 +382,65 @@ div.callout-caution {
 }
 
 // =============================================================
+// Okviri poglavlja — "Vodič kroz poglavlje" (numerirana pitanja) i "Sažetak".
+// Suptilno tonirane ploče koje izdvajaju početak i kraj poglavlja.
+// Upotreba: ## Vodič kroz poglavlje {.vodic-panel} / ## Sažetak {.sazetak-panel}
+// =============================================================
+.vodic-panel,
+.sazetak-panel {
+  background: $brand-light-gold;
+  border: 1px solid $sc-rule;
+  border-radius: 6px;
+  padding: 1.25rem 1.6rem 1.35rem;
+  margin: 2.2rem 0;
+}
+
+.vodic-panel > section,
+.sazetak-panel > section { margin: 0; padding: 0; }
+
+.vodic-panel h2,
+.sazetak-panel h2 {
+  margin-top: 0;
+  border-bottom: none;
+  color: $sc-verdigris-deep;
+}
+
+.vodic-panel ol {
+  list-style: none;
+  counter-reset: vq;
+  padding-left: 0;
+  margin-bottom: 0;
+}
+
+.vodic-panel ol > li {
+  counter-increment: vq;
+  position: relative;
+  padding-left: 2.7rem;
+  margin: 0.65rem 0;
+}
+
+.vodic-panel ol > li::before {
+  content: counter(vq);
+  position: absolute;
+  left: 0;
+  top: 0.02em;
+  width: 1.7rem;
+  height: 1.7rem;
+  border-radius: 50%;
+  background: $brand-gold;
+  color: #fff;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-family: $brand-font-sans;
+  font-weight: 700;
+  font-size: 0.82rem;
+}
+
+.vodic-panel *:last-child,
+.sazetak-panel *:last-child { margin-bottom: 0; }
+
+// =============================================================
 // Tablice — zebra striping u cream tonu
 // =============================================================
 table {
@@ -1153,6 +1212,20 @@ figure {
     border-radius: 2px;
     box-shadow: 0 2px 8px rgba($brand-navy, 0.06);
   }
+}
+
+// Infographics: vector diagrams that already live in the brand palette
+// shouldn't get the cream-on-cream paspartu treatment. Caption styling
+// below stays untouched — only the box around the image goes away.
+.quarto-figure.infographic > .figure > .figure-img,
+.quarto-figure.infographic > .figure > p > img,
+figure.infographic > p > img,
+figure.infographic > img,
+figure.infographic .figure-img {
+  background: transparent;
+  padding: 0;
+  border: none;
+  box-shadow: none;
 }
 
 // Tanki gold separator između slike i caption-a

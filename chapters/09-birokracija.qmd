@@ -2,6 +2,15 @@
 title: "Dva pogleda na birokraciju"
 ---
 
+::: {.vodic-panel}
+## Vodič kroz poglavlje
+
+1. Što o ulozi birokracije govori klasičan, weberovski pogled?
+2. Kako teorija javnog izbora objašnjava vlastite interese i poticaje birokrata?
+3. Zašto birokracija može težiti većim proračunima i širim nadležnostima?
+4. Po čemu se prepoznaje bolja birokracija i zašto cilj nije puko „rezanje" uprave?
+:::
+
 U raspravama o javnoj upravi postoje dva velika načina razumijevanja birokracije. Prvi je klasičan, **weberovski** pogled, prema kojem je birokracija nužan instrument moderne države, profesionalizacije vlasti i nepristrane provedbe javnih politika. Drugi je pogled **teorije javnog izbora**, prema kojem birokraciju ne treba promatrati samo kao neutralan mehanizam provedbe javnog interesa, nego i kao skup organizacija i pojedinaca koji imaju vlastite interese, poticaje i izvore moći.
 
 Ta dva pogleda ne treba shvatiti kao potpuno suprotstavljene teorije. Weberovski pristup objašnjava zašto je birokracija bila važan civilizacijski napredak u odnosu na osobnu, patrimonijalnu i klijentelističku vlast. Teorija javnog izbora objašnjava zašto i profesionalna birokracija može stvarati neučinkovitosti, širiti vlastite nadležnosti i udaljiti se od interesa građana. Weber tako objašnjava zašto nam birokracija treba, a javni izbor zašto je moramo nadzirati.
@@ -177,3 +186,9 @@ Rasprava o birokraciji često se pojednostavljuje na pitanje treba li država im
 Klasičan, weberovski pogled podsjeća nas da je birokracija važan civilizacijski napredak. Ona štiti građane od samovolje, klijentelizma i nejednakog tretmana. S druge strane, teorija javnog izbora upozorava da birokraciju ne smijemo idealizirati jer javne institucije djeluju unutar sustava poticaja i mogu težiti većim proračunima, širim nadležnostima i očuvanju vlastitog statusa.
 
 Dobra javna uprava zato mora spojiti **profesionalnost** i **odgovornost**. Mora biti dovoljno stabilna da ne postane politički plijen, ali dovoljno otvorena da ne postane samodovoljna. Mora poštovati pravila, ali ne smije zaboraviti rezultate. Zato cilj reformi ne bi trebao biti jednostavno „rezanje birokracije", nego stvaranje bolje birokracije, stručne, digitalizirane, dostupne, brze, transparentne i usmjerene prema građanima.
+
+::: {.sazetak-panel}
+## Sažetak
+
+Birokraciju je korisno gledati kroz dva pogleda koja se nadopunjuju. Weberovski pogled objašnjava zašto je profesionalna javna uprava civilizacijski napredak koji štiti građane od samovolje, klijentelizma i nejednakog tretmana. Teorija javnog izbora podsjeća da i takva uprava djeluje unutar sustava poticaja te može težiti većim proračunima, širim nadležnostima i očuvanju vlastitog statusa. Ključno pitanje zato nije veličina, nego kvaliteta, pa dobra javna uprava spaja profesionalnost i odgovornost, a cilj reforme nije puko rezanje, nego stvaranje bolje birokracije.
+:::

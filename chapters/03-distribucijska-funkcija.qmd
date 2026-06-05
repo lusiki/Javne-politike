@@ -2,6 +2,17 @@
 title: "Distribucijska funkcija — država i pitanje pravednosti"
 ---
 
+::: {.vodic-panel}
+## Vodič kroz poglavlje
+
+1. Zašto tržišni ishod može biti učinkovit, a istodobno društveno neprihvatljiv?
+2. Kojim instrumentima država mijenja raspodjelu koju proizvodi tržište?
+3. Što o preraspodjeli govore utilitarizam, Rawlsov pristup i robni egalitarizam?
+4. Kada je paternalizam opravdan i gdje su njegove granice?
+5. Kako se odmjeravaju efikasnost i pravednost te zašto je preraspodjela skupa?
+6. Zašto je distribucijska funkcija temelj društvene solidarnosti?
+:::
+
 Distribucijska funkcija države odnosi se na utjecaj javnih politika na raspodjelu dohotka, bogatstva i životnih prilika. Dok alokacijska funkcija polazi od pitanja funkcionira li tržište učinkovito, distribucijska funkcija pita je li raspodjela koju tržište proizvodi društveno prihvatljiva.
 
 Tržište raspodjeljuje dohodak prema različitim čimbenicima koji uključuju vlasništvo nad kapitalom i imovinom, obrazovanje, vještine, radno iskustvo, produktivnost, poduzetničku sposobnost, naslijeđe, tržišnu moć, pregovaračku poziciju, sreću i okolnosti u kojima se pojedinac rodio. Neki ljudi nasljeđuju imovinu, kvalitetno obrazovanje i mreže poznanstava. Drugi odrastaju u siromaštvu, slabijim školama, nepovoljnijim lokalnim sredinama ili obiteljima s manjim mogućnostima ulaganja u djecu. Tržište te početne razlike ne uklanja automatski. Naprotiv, često ih može dodatno pojačati.
@@ -162,6 +173,12 @@ Distribucijska funkcija države pokazuje da javne financije nisu samo tehničko 
 Utilitarizam naglašava da preraspodjela može povećati ukupno blagostanje ako dodatni dohodak više koristi siromašnima nego bogatima. Rawlsov pristup naglašava zaštitu onih koji su u najlošijem položaju. Robni egalitarizam naglašava jednak pristup temeljnim dobrima poput obrazovanja i zdravstva. Paternalizam pokazuje da država ponekad oblikuje izbore pojedinaca radi njihove dugoročne dobrobiti ili zaštite drugih.
 
 Država ne intervenira samo zato da bi tržište bilo učinkovitije, nego i zato da bi društvo bilo pravednije, sigurnije i uključivije. No pritom mora stalno voditi računa o poticajima, troškovima i provedbi. Dobra distribucijska politika ne teži jednostavnoj uravnilovci, nego pokušava osigurati da tržišno gospodarstvo bude povezano s društvenom solidarnošću, jednakim prilikama i zaštitom onih koji su najranjiviji.
+
+::: {.sazetak-panel}
+## Sažetak
+
+Tržište raspodjeljuje dohodak prema vlasništvu, vještinama i okolnostima rođenja, pa ishod može biti učinkovit, a istodobno društveno neprihvatljiv. Distribucijska funkcija bavi se upravo tom napetošću i kroz poreze, transfere i javne usluge mijenja raspodjelu koju tržište proizvodi. Utilitarizam, Rawlsov pristup i robni egalitarizam nude različita mjerila pravednosti, dok paternalizam pokazuje da država ponekad oblikuje i sam izbor pojedinaca. Preraspodjela pritom nije besplatna jer dira u poticaje, pa razboritost politike leži u traženju ravnoteže između efikasnosti i pravednosti, a ne u uravnilovci.
+:::
 
 ::: {.callout-vjezba}
 Promotrite hipotetsko društvo s pet kućanstava čiji godišnji dohodci iznose 10, 20, 30, 40 i 100 tisuća eura. (a) Izračunajte koliki udio ukupnog dohotka pripada najsiromašnijih 40 % kućanstava. (b) Skicirajte Lorenzovu krivulju spajanjem kumulativnih udjela dohotka. (c) Pretpostavite da država najsiromašnijem kućanstvu transferom doda 10 tisuća eura, financiranih porezom na najbogatije kućanstvo. Kako se mijenja udio najsiromašnijih 40 % i zašto se Lorenzova krivulja približava dijagonali jednakosti?

@@ -2,6 +2,17 @@
 title: "Stabilizacijska funkcija — država i makroekonomska stabilnost"
 ---
 
+::: {.vodic-panel}
+## Vodič kroz poglavlje
+
+1. Zašto tržišno gospodarstvo nije uvijek samo po sebi stabilno?
+2. Kako fiskalna politika djeluje na ukupnu gospodarsku aktivnost?
+3. Što je fiskalni multiplikator i o čemu ovisi njegova veličina?
+4. Kako automatski stabilizatori ublažavaju ciklus bez izričite odluke?
+5. Koje su prednosti i opasnosti diskrecijske intervencije?
+6. Zašto se stabilnost može promatrati kao javno dobro?
+:::
+
 Treća velika funkcija države je stabilizacijska funkcija. Ona se odnosi na ulogu države u ublažavanju gospodarskih ciklusa, recesija, inflacije, nezaposlenosti, financijskih poremećaja i drugih makroekonomskih neravnoteža. Za razliku od alokacijske funkcije, koja se bavi pitanjem učinkovite raspodjele resursa na pojedinim tržištima, i distribucijske funkcije, koja se bavi pitanjem pravednosti raspodjele dohotka i bogatstva, stabilizacijska funkcija promatra gospodarstvo kao cjelinu. Zato ona pripada području makroekonomske analize.
 
 U središtu stabilizacijske funkcije nalazi se jednostavna ideja da tržišno gospodarstvo nije uvijek samo po sebi stabilno. Iako tržišta imaju snažnu sposobnost prilagodbe, gospodarska aktivnost može snažno oscilirati. Razdoblja rasta mogu se pretvoriti u razdoblja pregrijavanja, rasta inflacije, pretjeranog kreditiranja i rasta cijena imovine. S druge strane, razdoblja pada mogu dovesti do smanjenja potrošnje, pada investicija, rasta nezaposlenosti, pada poreznih prihoda i pogoršanja javnih financija. Ako se takvi procesi prepuste sami sebi, prilagodba može biti spora, društveno skupa i politički destabilizirajuća.
@@ -258,6 +269,12 @@ Stabilnost gospodarstva može se promatrati kao svojevrsno javno dobro. Kada je 
 Stabilizacijska funkcija države zato je jedan od ključnih razloga za postojanje moderne ekonomske politike. Ona pokazuje da država ne djeluje samo na pojedina tržišta i raspodjelu dohotka, nego i na ukupnu razinu gospodarske aktivnosti. U tom smislu ona nadopunjuje alokacijsku i distribucijsku funkciju. Alokacijska funkcija pita kako ispraviti tržišne neuspjehe. Distribucijska funkcija pita kako raspodijeliti dohodak i rizike na društveno prihvatljiv način. Stabilizacijska funkcija pita kako očuvati gospodarstvo od velikih oscilacija koje mogu ugroziti zaposlenost, cijene, financijski sustav i javne financije.
 
 Stabilizacijska politika mora biti dovoljno snažna da odgovori na krizu, ali dovoljno disciplinirana da ne pretvori svaku krizu u trajno širenje rashoda, duga i državnih obveza. Upravo u toj ravnoteži nalazi se jedna od najtežih zadaća moderne države, koja mora zaštititi gospodarstvo od nestabilnosti, a pritom očuvati dugoročnu održivost i odgovornost javnih financija.
+
+::: {.sazetak-panel}
+## Sažetak
+
+Tržišno gospodarstvo sklono je oscilacijama koje se same po sebi ne ispravljaju brzo ni bez troška, pa stabilizacijska funkcija gleda gospodarstvo kao cjelinu i nastoji ublažiti najdublje padove i najopasnija pregrijavanja. Fiskalna politika na to djeluje kroz potrošnju i poreze, a snaga tog djelovanja ovisi o fiskalnom multiplikatoru, koji je veći u recesiji nego u dobrim vremenima. Automatski stabilizatori djeluju bez izričite odluke i pravodobno, dok diskrecijska intervencija nosi rizike kašnjenja, trajnosti i moralnog hazarda. Budući da od stabilnosti koristi imaju gotovo svi, ona se može promatrati kao javno dobro, a dobra stabilizacijska politika zna kada djelovati, koliko i kada se povući.
+:::
 
 ::: {.callout-vjezba}
 Pretpostavite zatvoreno gospodarstvo bez poreza u kojem je granična sklonost potrošnji 0,75. (a) Izračunajte jednostavni multiplikator državne potrošnje prema izrazu 1/(1−c). (b) Za koliko se poveća ravnotežni BDP ako država trajno poveća potrošnju za 4 milijarde eura? (c) Pretpostavite da je u dubokoj recesiji stvarni multiplikator bliži 1,8 od teorijske vrijednosti. Objasnite koje pretpostavke jednostavnog modela u stvarnosti ne vrijede i zašto se procjene iz modela i iz podataka razlikuju.

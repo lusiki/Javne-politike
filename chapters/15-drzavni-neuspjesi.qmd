@@ -2,6 +2,17 @@
 title: "Državni neuspjesi i prepreke kvalitetnim javnim politikama"
 ---
 
+::: {.vodic-panel}
+## Vodič kroz poglavlje
+
+1. Što znači neuspjeh države i po čemu se razlikuje od tržišnog neuspjeha?
+2. Kako informacijski i kognitivni problemi ograničavaju državno djelovanje?
+3. Kako poticaji političara, birokrata i interesnih skupina iskrivljuju politike?
+4. Zašto provedba, kapaciteti i loš dizajn često iznevjere dobre namjere?
+5. Kako kratkoročnost, regulatorno zarobljavanje i rente proizvode trajne troškove?
+6. Zašto cilj nije manje ni više države, nego bolja država?
+:::
+
 ## Što znači neuspjeh države?
 
 Pojam **državnog neuspjeha** označava situaciju u kojoj javna politika ne ostvaruje ciljeve zbog kojih je uvedena ili ih ostvaruje uz prevelike troškove, nepoželjne nuspojave, nepravednu raspodjelu koristi i tereta ili slabu provedbu. Država može intervenirati s namjerom da riješi problem, ali rezultat može biti novi problem koji se očituje kroz skuplju administraciju, distorzije u ponašanju građana i poduzeća, neučinkovitu javnu potrošnju, regulatorno zarobljavanje, rast javnog duga, korupciju ili gubitak povjerenja u institucije.
@@ -179,3 +190,9 @@ Takav pristup mijenja način razmišljanja o javnim politikama. Umjesto da se kr
 Analiza državnih neuspjeha nije argument protiv države. Ona je argument protiv naivnog pogleda na državu. Složena društva trebaju državu zbog javnih dobara, sigurnosti, infrastrukture, obrazovanja, zdravstva, socijalne zaštite, regulacije tržišta i stabilizacije gospodarstva. Ali sposobna država nije ona koja samo mnogo intervenira, nego ona koja zna kada intervenirati, kojim instrumentom, s kojim kapacitetom i uz kakvu odgovornost.
 
 Država je nužna za rješavanje mnogih društvenih problema, ali nije savršen instrument. Dizajn kvalitetnih javnih politika zahtijeva dvostruku svijest, svijest o tome gdje tržište zakazuje i svijest o tome gdje država može zakazati. Tu se nalazi i poveznica između klasične analize javnih politika, teorije javnog izbora i institucionalne ekonomike. Tržišni neuspjesi objašnjavaju zašto država ulazi u javne politike, javni izbor objašnjava zašto država može zakazati, a institucionalna i konstitucionalna ekonomika objašnjavaju kakva pravila i kapaciteti mogu smanjiti vjerojatnost tih neuspjeha. Cilj nije manje države pod svaku cijenu, niti više države kao automatsko rješenje. Cilj je **bolja država**, ona koja zna prepoznati problem, odabrati prikladan instrument, provesti politiku, mjeriti učinke, učiti iz pogrešaka i odgovorno koristiti javne resurse.
+
+::: {.sazetak-panel}
+## Sažetak
+
+Državni neuspjeh nastaje kad javna politika ne ostvari svoje ciljeve ili ih ostvari uz prevelike troškove i nepoželjne nuspojave, pa intervencija osmišljena da riješi problem može stvoriti novi. Izvori su mnogostruki, od informacijskih i kognitivnih ograničenja, preko poticaja političara, birokrata i interesnih skupina, do slabih kapaciteta i lošeg dizajna provedbe. Kratkoročnost, regulatorno zarobljavanje i lov na rentu pretvaraju te slabosti u trajne troškove za društvo. Pouka nije manje ni više države po svaku cijenu, nego bolja država, koja zna kada intervenirati, kojim instrumentom i uz kakvu odgovornost.
+:::

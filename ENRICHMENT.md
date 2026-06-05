@@ -73,6 +73,48 @@ the appropriate slot. **Not generic expansion.**
 - **Substantive test:** would a reader who already understood the
   chapter learn something new from this paragraph? If not, cut it
 
+## Anchoring in recent landmark literature
+
+The five slots describe *what kind* of value an insertion adds. This
+section describes *what sources* it should engage with. The textbook
+gains depth when it sits in dialogue with major contemporary works
+on the phenomenon under discussion, not only with the classical
+references already pinned in [references.bib](references.bib).
+
+When a chapter touches a topic addressed by a recent landmark book,
+the insertion should engage with that work — state its central claim,
+position it against the textbook treatment, and where useful agree or
+contest. This is most natural for **Slot 2 (Empirical evidence)** and
+**Slot 4 (Trade-off / counterview)**, but can also surface in **Slot 3
+(Comparative / cross-system)** when a book reframes a familiar
+comparison.
+
+A non-exhaustive map of which contemporary works speak to which topic
+areas. The list is a starting point — co-authors will know which
+titles to prioritize, replace, or add.
+
+- **Inequality and distribution** — Piketty (2014, 2020); Saez &
+  Zucman (2019); Atkinson (2015); Milanović (2016, 2019); Deaton
+  (2013); Stiglitz (2012).
+- **Institutions and political economy of growth** — Acemoglu &
+  Robinson (2012, 2019); Rodrik (2011); Fukuyama (2014).
+- **Behavioural public economics** — Thaler & Sunstein (2008);
+  Thaler (2015); Banerjee & Duflo (2019); Kahneman (2011).
+- **Market versus state, industrial policy** — Mazzucato (2013,
+  2021); Tirole (2017).
+- **Macro, fiscal policy and crises** — Reinhart & Rogoff (2009);
+  Blyth (2013).
+- **Democratic dysfunction and the public-choice critique** — Caplan
+  (2007); Achen & Bartels (2016); Levitsky & Ziblatt (2018).
+- **Markets, morals, public values** — Sandel (2012); Sen (1999).
+
+If a book on this list (or any other contemporary landmark) is not
+yet in [references.bib](references.bib), propose adding it before
+drafting the insertion. Do not invent page numbers, fabricate
+findings, or claim that a book argues a position you are not certain
+it actually argues. If unsure, name the claim in chat and ask before
+committing the citation.
+
 ## Workflow
 
 1. **Read** the target chapter top to bottom.
@@ -123,3 +165,7 @@ it in Chapter 1 would pre-empt the structural payoff.
 
 - **2026-06-04** — Initial guide distilled from the principle developed
   for the Chapter 1 enrichment pass (commit `86f22c1`).
+- **2026-06-05** — Added section "Anchoring in recent landmark
+  literature" with a topic-to-books map covering inequality,
+  institutions, behavioural public economics, industrial policy,
+  macro and crises, democratic dysfunction, and markets-and-morals.

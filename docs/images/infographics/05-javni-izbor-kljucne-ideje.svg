@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 770" role="img" aria-labelledby="title desc">
+  <title id="title">Teorija javnog izbora — ključne ideje</title>
+  <desc id="desc">Pregled teorije javnog izbora: intelektualni temelji, definicija i ključna ideja, metodološki okvir te osnovne pretpostavke.</desc>
+
+  <defs>
+    <style>
+      .card { fill: #F2EDE3; stroke: #1C1916; stroke-opacity: 0.18; stroke-width: 1; }
+      .strip-soft { fill: #EAE3D4; stroke: #1C1916; stroke-opacity: 0.14; stroke-width: 1; }
+      .accent-oxblood { fill: #6B1F26; }
+      .accent-verdigris { fill: #4A6B5C; }
+      .accent-ochre { fill: #C8985E; }
+      .title-lg { font-family: 'Newsreader', Georgia, serif; font-size: 22px; font-weight: 500; fill: #1C1916; letter-spacing: -0.3px; }
+      .title { font-family: 'Newsreader', Georgia, serif; font-size: 17px; font-weight: 500; fill: #1C1916; letter-spacing: -0.2px; }
+      .title-sm { font-family: 'Newsreader', Georgia, serif; font-size: 14px; font-weight: 500; fill: #1C1916; letter-spacing: -0.1px; }
+      .item { font-family: 'Public Sans', system-ui, sans-serif; font-size: 12px; font-weight: 400; fill: #1C1916; }
+      .item-tight { font-family: 'Public Sans', system-ui, sans-serif; font-size: 11.5px; font-weight: 400; fill: #1C1916; }
+      .book-title { font-family: 'Newsreader', Georgia, serif; font-size: 13px; font-style: italic; font-weight: 400; fill: #1C1916; }
+      .principle { font-family: 'Newsreader', Georgia, serif; font-size: 14.5px; font-style: italic; fill: #1C1916; }
+      .meta { font-family: 'Public Sans', system-ui, sans-serif; font-size: 10.5px; font-weight: 500; fill: #6B6357; font-style: italic; }
+      .num-circle { fill: none; stroke: #4A6B5C; stroke-width: 1.4; }
+      .num-text { font-family: 'Public Sans', system-ui, sans-serif; font-size: 11px; font-weight: 700; fill: #4A6B5C; }
+      .divider { stroke: #1C1916; stroke-opacity: 0.10; stroke-width: 1; fill: none; }
+      .connector { stroke: #6B6357; stroke-opacity: 0.55; stroke-width: 1.4; fill: none; }
+    </style>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#6B6357" fill-opacity="0.65"/>
+    </marker>
+  </defs>
+
+  <!-- =========================== TITLE BAR =========================== -->
+  <g transform="translate(20, 15)">
+    <rect class="card" width="780" height="44" rx="2"/>
+    <rect class="accent-oxblood" width="780" height="2"/>
+    <text x="390" y="29" text-anchor="middle" class="title-lg">Teorija javnog izbora — ključne ideje</text>
+  </g>
+
+  <!-- =========================== ROW 1: foundations / definition / key idea =========================== -->
+  <line class="connector" x1="265" y1="150" x2="285" y2="150" marker-end="url(#arrow)"/>
+  <line class="connector" x1="535" y1="150" x2="555" y2="150" marker-end="url(#arrow)"/>
+
+  <!-- Intelektualni temelji -->
+  <g transform="translate(20, 75)">
+    <rect class="card" width="240" height="150" rx="2"/>
+    <rect class="accent-ochre" width="240" height="2"/>
+    <text x="120" y="28" text-anchor="middle" class="title-sm">Intelektualni temelji</text>
+    <text x="120" y="62" text-anchor="middle" class="book-title">An Economic Theory</text>
+    <text x="120" y="78" text-anchor="middle" class="book-title">of Democracy</text>
+    <text x="120" y="94" text-anchor="middle" class="meta">Downs (1957.)</text>
+    <text x="120" y="120" text-anchor="middle" class="book-title">The Calculus of Consent</text>
+    <text x="120" y="136" text-anchor="middle" class="meta">Buchanan i Tullock (1962.)</text>
+  </g>
+
+  <!-- Što je teorija javnog izbora? -->
+  <g transform="translate(290, 75)">
+    <rect class="card" width="240" height="150" rx="2"/>
+    <rect class="accent-verdigris" width="240" height="2"/>
+    <text x="120" y="28" text-anchor="middle" class="title-sm">Što je teorija javnog izbora?</text>
+    <text x="20" y="52" class="item-tight">
+      <tspan x="20" dy="0">Primjena ekonomskih načela</tspan>
+      <tspan x="20" dy="14">na političke procese i</tspan>
+      <tspan x="20" dy="14">donošenje odluka u javnom</tspan>
+      <tspan x="20" dy="14">sektoru.</tspan>
+    </text>
+    <line class="divider" x1="20" y1="112" x2="220" y2="112"/>
+    <text x="20" y="127" class="item-tight">
+      <tspan x="20" dy="0">Akteri se ponašaju racionalno</tspan>
+      <tspan x="20" dy="14">i sebično, maksimiziraju vlastitu</tspan>
+      <tspan x="20" dy="14">korisnost, a ne „javni interes".</tspan>
+    </text>
+  </g>
+
+  <!-- Ključna ideja -->
+  <g transform="translate(560, 75)">
+    <rect class="card" width="240" height="150" rx="2"/>
+    <rect class="accent-oxblood" width="240" height="2"/>
+    <text x="120" y="28" text-anchor="middle" class="title-sm">Ključna ideja</text>
+    <text x="120" y="74" text-anchor="middle" class="item">
+      <tspan x="120" dy="0">Država kao skup</tspan>
+      <tspan x="120" dy="17">međusobno povezanih</tspan>
+      <tspan x="120" dy="17">tržišta političkih</tspan>
+      <tspan x="120" dy="17">odluka.</tspan>
+    </text>
+  </g>
+
+  <!-- =========================== ROW 2: Metodološki okvir =========================== -->
+  <g transform="translate(20, 250)">
+    <rect class="card" width="780" height="160" rx="2"/>
+    <rect class="accent-verdigris" width="780" height="2"/>
+    <text x="390" y="30" text-anchor="middle" class="title">Metodološki okvir</text>
+
+    <line class="divider" x1="260" y1="52" x2="260" y2="148"/>
+    <line class="divider" x1="520" y1="52" x2="520" y2="148"/>
+
+    <!-- Racionalni izbor -->
+    <text x="130" y="74" text-anchor="middle" class="title-sm">Racionalni izbor</text>
+    <text x="130" y="100" text-anchor="middle" class="item-tight">
+      <tspan x="130" dy="0">Pojedinci donose odluke</tspan>
+      <tspan x="130" dy="14">usporedbom očekivanih</tspan>
+      <tspan x="130" dy="14">koristi i troškova,</tspan>
+      <tspan x="130" dy="14">a ne altruizma.</tspan>
+    </text>
+
+    <!-- Individualizam -->
+    <text x="390" y="74" text-anchor="middle" class="title-sm">Individualizam</text>
+    <text x="390" y="100" text-anchor="middle" class="item-tight">
+      <tspan x="390" dy="0">Društveni ishodi rezultat</tspan>
+      <tspan x="390" dy="14">su interakcije pojedinaca.</tspan>
+    </text>
+
+    <!-- Analiza troškova i koristi -->
+    <text x="650" y="74" text-anchor="middle" class="title-sm">Analiza troškova i koristi</text>
+    <text x="650" y="100" text-anchor="middle" class="item-tight">
+      <tspan x="650" dy="0">Omogućuje kvantifikaciju</tspan>
+      <tspan x="650" dy="14">i evaluaciju političkih</tspan>
+      <tspan x="650" dy="14">odluka u odnosu na</tspan>
+      <tspan x="650" dy="14">učinkovitost i</tspan>
+      <tspan x="650" dy="14">distribucijske učinke.</tspan>
+    </text>
+  </g>
+
+  <!-- =========================== ROW 3: principle strip =========================== -->
+  <g transform="translate(20, 430)">
+    <rect class="strip-soft" width="780" height="65" rx="2"/>
+    <rect class="accent-ochre" width="780" height="2"/>
+    <text x="390" y="32" text-anchor="middle" class="principle">
+      <tspan x="390" dy="0">Država se ne promatra kao neutralan mehanizam, već kao arena sukoba</tspan>
+      <tspan x="390" dy="20">interesa i kompromisa među različitim društvenim skupinama.</tspan>
+    </text>
+  </g>
+
+  <!-- =========================== ROW 4: Osnovne pretpostavke =========================== -->
+  <g transform="translate(20, 515)">
+    <rect class="card" width="780" height="240" rx="2"/>
+    <rect class="accent-oxblood" width="780" height="2"/>
+    <text x="390" y="30" text-anchor="middle" class="title">Osnovne pretpostavke teorije javnog izbora</text>
+
+    <line class="divider" x1="195" y1="52" x2="195" y2="228"/>
+    <line class="divider" x1="390" y1="52" x2="390" y2="228"/>
+    <line class="divider" x1="585" y1="52" x2="585" y2="228"/>
+
+    <!-- (1) Racionalnost aktera -->
+    <circle cx="22" cy="72" r="10" class="num-circle"/>
+    <text x="22" y="76" text-anchor="middle" class="num-text">1</text>
+    <text x="97" y="76" text-anchor="middle" class="title-sm">Racionalnost aktera</text>
+    <text x="97" y="106" text-anchor="middle" class="item-tight">
+      <tspan x="97" dy="0">Politički subjekti djeluju</tspan>
+      <tspan x="97" dy="14">u skladu s vlastitim</tspan>
+      <tspan x="97" dy="14">interesima.</tspan>
+    </text>
+    <text x="97" y="208" text-anchor="middle" class="meta">Downs (1957.)</text>
+
+    <!-- (2) Asimetrija informacija -->
+    <circle cx="217" cy="72" r="10" class="num-circle"/>
+    <text x="217" y="76" text-anchor="middle" class="num-text">2</text>
+    <text x="292" y="76" text-anchor="middle" class="title-sm">Asimetrija informacija</text>
+    <text x="292" y="106" text-anchor="middle" class="item-tight">
+      <tspan x="292" dy="0">Birači često raspolažu</tspan>
+      <tspan x="292" dy="14">ograničenim znanjem o</tspan>
+      <tspan x="292" dy="14">političkim programima,</tspan>
+      <tspan x="292" dy="14">što dovodi do problema</tspan>
+      <tspan x="292" dy="14">racionalne ignorancije.</tspan>
+    </text>
+    <text x="292" y="208" text-anchor="middle" class="meta">Buchanan (1986.)</text>
+
+    <!-- (3) Kolektivno djelovanje -->
+    <circle cx="412" cy="72" r="10" class="num-circle"/>
+    <text x="412" y="76" text-anchor="middle" class="num-text">3</text>
+    <text x="487" y="76" text-anchor="middle" class="title-sm">Kolektivno djelovanje</text>
+    <text x="487" y="93" text-anchor="middle" class="title-sm">i „besplatni jahač"</text>
+    <text x="487" y="120" text-anchor="middle" class="item-tight">
+      <tspan x="487" dy="0">Pojedinci imaju poticaj</tspan>
+      <tspan x="487" dy="14">koristiti javna dobra</tspan>
+      <tspan x="487" dy="14">bez doprinosa njihovu</tspan>
+      <tspan x="487" dy="14">financiranju.</tspan>
+    </text>
+    <text x="487" y="208" text-anchor="middle" class="meta">Olson (1965.)</text>
+
+    <!-- (4) Institucionalna analiza -->
+    <circle cx="607" cy="72" r="10" class="num-circle"/>
+    <text x="607" y="76" text-anchor="middle" class="num-text">4</text>
+    <text x="682" y="76" text-anchor="middle" class="title-sm">Institucionalna analiza</text>
+    <text x="682" y="106" text-anchor="middle" class="item-tight">
+      <tspan x="682" dy="0">Političke institucije</tspan>
+      <tspan x="682" dy="14">oblikuju ponašanje</tspan>
+      <tspan x="682" dy="14">aktera i određuju</tspan>
+      <tspan x="682" dy="14">ishode javnih odluka.</tspan>
+    </text>
+    <text x="682" y="208" text-anchor="middle" class="meta">Ostrom (1990.)</text>
+  </g>
+</svg>

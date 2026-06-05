@@ -2,6 +2,16 @@
 title: "Od novog javnog menadžmenta prema novom upravljanju"
 ---
 
+::: {.vodic-panel}
+## Vodič kroz poglavlje
+
+1. Zašto ograničenja NPM-a vode prema novom, mrežnom upravljanju?
+2. Što su tvrdokorni problemi i zašto ih jedna institucija ne može riješiti sama?
+3. Što znače pristupi „cijele vlasti" i upravljanje kroz mreže aktera?
+4. Kako uključivanje građana i digitalizacija mijenjaju upravljanje?
+5. Kako se uravnotežuju birokratska, menadžerska te mrežna i demokratska logika?
+:::
+
 Zbog ograničenja Novog javnog menadžmenta, od kraja 1990-ih i osobito tijekom 2000-ih razvija se novi val reformi javnog sektora koji se često naziva **novo javno upravljanje** (*new governance*) ili **mrežno upravljanje** (*network governance*). Dok je NPM naglašavao tržište, konkurenciju, autonomiju menadžera, mjerenje rezultata i ugovorne odnose, novi pristupi sve više naglašavaju koordinaciju, suradnju, partnerstva, povjerenje, uključivanje građana i sposobnost države da upravlja složenim mrežama aktera [@rhodes1997].
 
 Ovaj zaokret nije značio potpuno odbacivanje NPM-a. Mnoge njegove ideje ostale su važne, jer javni sektor i dalje mora voditi računa o učinkovitosti, kvaliteti usluga, troškovima i rezultatima. Iskustvo je ipak pokazalo da tržišni mehanizmi i menadžerska autonomija sami po sebi nisu dovoljni za rješavanje složenih javnih problema. U nekim su slučajevima reforme inspirirane NPM-om proizvele nove probleme koji uključuju fragmentaciju institucija, slabu koordinaciju, prevelik broj agencija i pretjerano oslanjanje na mjerljive pokazatelje koji nisu uvijek odražavali stvarnu kvalitetu javnih usluga.
@@ -75,3 +85,9 @@ Novo upravljanje ne odbacuje tradicionalnu birokraciju u potpunosti. Naprotiv, o
 Zato suvremena javna uprava sve više traži ravnotežu između tri logike. Prva je **birokratska logika**, koja naglašava zakonitost, pravila, jednakost postupanja i profesionalnu neutralnost. Druga je **menadžerska logika**, koja naglašava rezultate, učinkovitost, troškove i kvalitetu usluge. Treća je **mrežna i demokratska logika**, koja naglašava koordinaciju, uključivanje građana, suradnju i povjerenje. Dobra javna uprava ne može se osloniti samo na jednu od njih. Ako dominira samo birokratska logika, sustav postaje spor i rigidan. Ako dominira samo menadžerska, može se zanemariti javni interes. Ako dominira samo mrežna, može se izgubiti jasna odgovornost.
 
 U tom smislu prijelaz od NPM-a prema novom upravljanju ne treba promatrati kao jednostavnu zamjenu jednog modela drugim, nego kao **evoluciju** javne uprave. NPM je ispravno upozorio da javni sektor mora biti učinkovitiji i usmjereniji na rezultate. Novo upravljanje dodaje da učinkovitost nije dovoljna bez koordinacije, povjerenja, legitimnosti i uključivanja građana. Tradicionalna birokracija pak podsjeća da nijedna reforma ne može uspjeti bez zakonitosti, profesionalnosti i institucionalne stabilnosti.
+
+::: {.sazetak-panel}
+## Sažetak
+
+Novo upravljanje nastaje iz spoznaje da tržišni mehanizmi i menadžerska autonomija sami po sebi ne rješavaju složene, tvrdokorne probleme koji presijecaju granice pojedinih institucija. Umjesto na konkurenciju, naglasak se pomiče na koordinaciju, suradnju, partnerstva, povjerenje i upravljanje kroz mreže aktera, uz sve veću ulogu uključivanja građana i digitalizacije. Riječ je o evoluciji, a ne o pukoj zamjeni modela, jer NPM-ova briga za učinkovitost ostaje važna. Suvremena javna uprava zato traži ravnotežu triju logika, birokratske, menadžerske te mrežne i demokratske, jer prevlast bilo koje od njih nosi vlastite slabosti.
+:::

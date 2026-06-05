@@ -2,6 +2,17 @@
 title: "Alokacijska funkcija i tržišni neuspjesi"
 ---
 
+::: {.vodic-panel}
+## Vodič kroz poglavlje
+
+1. Što je tržišni neuspjeh i zašto opravdava ulogu države u alokaciji resursa?
+2. Što su javna dobra i zašto ih tržište sustavno podproizvodi?
+3. Kako eksternalije razdvajaju privatne i društvene troškove i koristi?
+4. Zašto asimetrične informacije vode k nepovoljnom izboru i moralnom hazardu?
+5. Kako tržišna moć i prirodni monopoli narušavaju učinkovitost?
+6. Po čemu se zajednička i meritorna dobra razlikuju od ostalih tržišnih neuspjeha?
+:::
+
 Nakon što smo objasnili zašto konkurentsko tržište u idealnim uvjetima može dovesti do Pareto učinkovite alokacije, možemo jasnije razumjeti što znači tržišni neuspjeh. Tržišni neuspjeh nastaje onda kada stvarna tržišta ne zadovoljavaju uvjete pod kojima vrijedi prvi teorem ekonomike blagostanja. Tada cijene ne odražavaju sve društvene troškove i koristi, tržišta ne postoje ili ne funkcioniraju potpuno, pojedini akteri imaju tržišnu moć ili informacije nisu jednako raspoređene. U takvim okolnostima država može imati alokacijsku ulogu kroz ispravljanje ili ublažavanje neučinkovitosti koje nastaju u tržišnom procesu.
 
 No stvarna tržišta često odstupaju od tog idealnog modela. Cijene ne odražavaju uvijek sve društvene troškove i koristi. Neka dobra teško je naplatiti pojedinačnom korisniku. Neki akteri raspolažu boljim informacijama od drugih. Neka poduzeća imaju toliku tržišnu moć da mogu utjecati na cijene i količine. U takvim okolnostima tržište ne mora proizvesti društveno učinkovitu količinu dobara i usluga. Upravo se ta odstupanja nazivaju tržišnim neuspjesima.
@@ -915,3 +926,9 @@ Alokacijska funkcija države pokazuje zašto slobodno tržište, iako je temeljn
 U svim tim slučajevima država može imati važnu ulogu. Može financirati javna dobra, oporezivati negativne eksternalije, subvencionirati pozitivne eksternalije, propisivati standarde, smanjivati informacijske probleme, regulirati monopole, štititi zajedničke resurse i osiguravati meritorna dobra. Međutim, prepoznavanje tržišnog neuspjeha samo je prvi korak. Nakon toga treba odabrati pravi instrument, procijeniti troškove i koristi, uzeti u obzir kapacitete provedbe i paziti da državna intervencija sama ne proizvede nove probleme.
 
 Najvažnija pouka alokacijske funkcije zato glasi da je država potrebna ne zato da zamijeni tržište, nego zato da ispravi situacije u kojima tržište samo ne može proizvesti društveno učinkovit ishod.
+
+::: {.sazetak-panel}
+## Sažetak
+
+Tržišni neuspjeh nastaje kad stvarna tržišta odstupe od pretpostavki prvog teorema ekonomike blagostanja, pa cijene više ne odražavaju sve društvene troškove i koristi. Javna dobra, eksternalije, asimetrične informacije te tržišna moć i prirodni monopoli pokazuju različite načine na koje to odstupanje nastaje, dok zajednička i meritorna dobra proširuju popis situacija u kojima tržišni ishod nije društveno najbolji. U svakom od tih slučajeva država raspolaže prepoznatljivim instrumentom, od financiranja i oporezivanja do regulacije i standarda. Alokacijska funkcija zato ne tvrdi da država zna bolje od tržišta, nego precizno locira neuspjeh i nalaže da se uz njega odvaže pravi instrument, njegovi troškovi i kapaciteti provedbe.
+:::
