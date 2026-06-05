@@ -189,6 +189,10 @@ fm_dT = fm_controls.dT
 
 U kontekstu stabilizacijske funkcije fiskalne politike, multiplikator objašnjava zašto fiskalna politika može ublažavati poslovni ciklus. U recesiji, kada je proizvodnja ispod potencijalne razine, država može povećati potrošnju ili smanjiti poreze kako bi podržala agregatnu potražnju. U ekspanziji, kada postoji rizik pregrijavanja i inflacijskih pritisaka, može učiniti suprotno tako da smanji potrošnju ili poveća poreze. Time fiskalna politika djeluje protuciklički. Ona ne uklanja ciklus, ali može smanjiti amplitudu pada i uzleta gospodarske aktivnosti.
 
+Empirijska razlika multiplikatora između recesije i ekspanzije nije zanemariva nuansa, nego središnji predmet rasprava nakon krize 2008. godine. Procjene koje koriste podatke razvijenih ekonomija pokazuju da je multiplikator izdataka u recesijama često blizu 1,5 do 2,0, dok u ekspanzijama može pasti ispod 1,0 [@blanchard2013]. Mehanizam je intuitivan. Kada postoji neiskorišten kapacitet i visok udio kućanstava koja troše većinu svog dohotka, dodatni euro javnih izdataka mobilizira spavajuće resurse i podiže proizvodnju gotovo jedan za jedan, prije nego što se učinak proširi kroz potrošačku potražnju.
+
+Politička implikacija nije da je fiskalna ekspanzija uvijek poželjna, nego da je njezino vrijeme važnije od njezine veličine. Ista intervencija primijenjena u dubokoj recesiji i u kasnoj ekspanziji proizvodi različite ishode, a politički proces ne razlikuje uvijek ta dva trenutka. Upravo to pomicanje učinkovitosti instrumenta kroz ciklus jedan je od najjačih argumenata za institucionalne mehanizme koji odvajaju odluku o stabilizacijskom djelovanju od kratkoročnih izbornih kalkulacija.
+
 ## Automatski stabilizatori
 
 Stabilizacijska funkcija države ne ostvaruje se samo diskrecijskim odlukama vlade. Veliku ulogu imaju i automatski stabilizatori, elementi fiskalnog sustava koji automatski ublažavaju gospodarske cikluse, bez potrebe za novim zakonima ili posebnim političkim odlukama.
@@ -207,6 +211,10 @@ Međutim, diskrecijska fiskalna politika ima nekoliko ograničenja. Prvo je vrem
 
 Zato diskrecijska fiskalna politika mora biti pravodobna, privremena, ciljana i razmjerna. U krizi je često opravdano djelovati snažno, ali je jednako važno unaprijed razmišljati o izlaznoj strategiji.
 
+Klasična postavka prema kojoj monetarna politika nosi glavnu odgovornost za stabilizaciju, a fiskalna djeluje samo dopunski, ima jasnu iznimku. Kada referentne kamatne stope dosegnu donju nominalnu granicu (*zero lower bound*), središnja banka više ne može stimulirati gospodarstvo daljnjim smanjenjem stopa. U tom režimu fiskalna politika preuzima primarnu ulogu jer izravno utječe na potražnju bez ovisnosti o kanalu kamata, a njezin multiplikator postaje znatno veći nego u normalnom monetarnom okruženju [@blanchard2017].
+
+Šira pouka iz iskustva dvaju desetljeća niskih kamatnih stopa jest da podjela rada između monetarne i fiskalne politike nije fiksna nego ovisi o makroekonomskom režimu. U razdobljima visoke inflacije i učinkovite monetarne transmisije fiskalna disciplina i monetarna prilagodba mogu funkcionirati gotovo neovisno. U razdobljima trajno niskih kamatnih stopa, deflacijskog pritiska ili financijske fragmentacije, fiskalna i monetarna politika moraju se koordinirati izravnije, a granice između njih postaju propusne. Odgovorna stabilizacijska politika prepoznaje koji režim trenutno vrijedi i prilagođava raspored instrumenata, umjesto da slijepo primjenjuje pravilo „svaka politika svojim alatom" koje je nastalo u drugačijem makroekonomskom kontekstu.
+
 ## Stabilizacijska funkcija u velikim krizama
 
 Stabilizacijska funkcija posebno dolazi do izražaja u velikim krizama. Ratovi, financijske krize, pandemije, energetski šokovi i prirodne katastrofe često dovode do naglog rasta uloge države. U takvim situacijama građani i poduzeća očekuju hitnu reakciju jer bi politika nečinjenja mogla imati vrlo visoke društvene troškove.
@@ -217,9 +225,9 @@ Slično vrijedi za financijske krize. Ako se financijski sustav počne urušavat
 
 ## Hipoteza velikih kriza i trajni rast uloge države
 
-Velike krize važne su i zato što često trajno mijenjaju veličinu i ulogu države. Ovdje se javlja važna tema iz literature o rastu javne potrošnje, poznata kao hipoteza velikih kriza. Peacock i Wiseman (1961) tvrdili su da javni rashodi u velikim krizama naglo rastu, ali se nakon krize često ne vraćaju na prethodnu razinu. Taj proces nazivaju učinkom premještanja (*displacement effect*). Kriza pomiče društveno prihvatljivu razinu oporezivanja i javne potrošnje. Građani u krizi prihvaćaju veći porezni teret i snažniju državnu intervenciju jer smatraju da je alternativa skuplja.
+Velike krize važne su i zato što često trajno mijenjaju veličinu i ulogu države. Ovdje se javlja važna tema iz literature o rastu javne potrošnje, poznata kao hipoteza velikih kriza. Peacock i Wiseman [-@peacock1961] tvrdili su da javni rashodi u velikim krizama naglo rastu, ali se nakon krize često ne vraćaju na prethodnu razinu. Taj proces nazivaju učinkom premještanja (*displacement effect*). Kriza pomiče društveno prihvatljivu razinu oporezivanja i javne potrošnje. Građani u krizi prihvaćaju veći porezni teret i snažniju državnu intervenciju jer smatraju da je alternativa skuplja.
 
-Nakon krize nastupa i ono što Peacock i Wiseman nazivaju učinkom nadzora (*inspection effect*). Kada se uloga države poveća, javnost i politika počinju pažljivije promatrati područja koja su prije bila zanemarena. Robert Higgs (1987) sličnu logiku opisuje kroz koncept ratchet effecta. Prema toj ideji, uloga države u krizama snažno poraste, a nakon krize se smanji samo djelomično. Kao kod zupčanika koji se pomiče u jednom smjeru, javna potrošnja, regulacija i očekivanja građana o ulozi države pomaknu se na višu razinu.
+Nakon krize nastupa i ono što Peacock i Wiseman nazivaju učinkom nadzora (*inspection effect*). Kada se uloga države poveća, javnost i politika počinju pažljivije promatrati područja koja su prije bila zanemarena. Robert Higgs [-@higgs1987] sličnu logiku opisuje kroz koncept ratchet effecta. Prema toj ideji, uloga države u krizama snažno poraste, a nakon krize se smanji samo djelomično. Kao kod zupčanika koji se pomiče u jednom smjeru, javna potrošnja, regulacija i očekivanja građana o ulozi države pomaknu se na višu razinu.
 
 Ova literatura važna je jer pokazuje da stabilizacijska funkcija ima dugoročne posljedice. Mjere koje su uvedene kao privremene mogu postati trajne. Institucije osnovane za rješavanje krize mogu ostati i nakon krize. To ne mora biti loše ako su nove funkcije društveno korisne i fiskalno održive. Ali može biti problem ako privremene mjere ostanu bez jasnog opravdanja, financiranja i evaluacije.
 
