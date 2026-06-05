@@ -70,6 +70,10 @@ U novije vrijeme sve veću važnost dobivaju **bihevioralni instrumenti**, čest
 
 Nudge instrumenti ne zabranjuju ponašanje i ne nameću izravne financijske poticaje, nego oblikuju okruženje izbora tako da poželjno ponašanje postane lakše ili vjerojatnije. Najpoznatiji primjer je automatsko uključivanje zaposlenika u mirovinsku štednju uz mogućnost izlaska iz sustava [@thaler2008]. Prednost je u tome što često mogu postići promjenu ponašanja uz relativno niske fiskalne troškove i bez tvrde prisile. Međutim, nisu prikladni za sve probleme. Ako je problem siromaštvo, nedostatak infrastrukture ili snažna tržišna moć, nudge neće biti dovoljan. Bihevioralni instrumenti zato ne zamjenjuju tradicionalne instrumente, nego ih nadopunjuju.
 
+::: {.callout-empirija}
+Bihevioralni instrumenti mogu imati velik učinak uz mali trošak, što potvrđuju podaci o automatskom uključivanju u mirovinsku štednju. U klasičnim studijama američkih poslodavaca prelazak sa sustava u kojem se zaposlenik mora sam prijaviti na sustav u kojem je automatski uključen uz mogućnost izlaska podigao je sudjelovanje s otprilike polovice na više od devet desetina zaposlenika [@thaler2008]. Pritom nitko nije izgubio slobodu izbora jer je odjava ostala dostupna. Učinak pokazuje koliko su odluke osjetljive na zadanu opciju, ali i granicu nudgea jer on mijenja ponašanje ondje gdje je problem inercija, a ne ondje gdje je problem nedostatak novca ili tržišna moć.
+:::
+
 ## Kombiniranje instrumenata
 
 U praksi se javne politike rijetko oslanjaju na samo jedan instrument. Najčešće se koristi kombinacija instrumenata. Klimatska politika može uključivati porez na ugljik, subvencije za obnovljive izvore energije, regulaciju emisija, javna ulaganja u mrežu i informacijske kampanje. Zdravstvena politika može uključivati javno financiranje, regulaciju lijekova, poreze na štetne proizvode i preventivne kampanje.
@@ -79,6 +83,10 @@ Zato je važno razumjeti da instrumenti nisu izolirani i da međusobno djeluju. 
 Izbor instrumenta nije neutralan analitički postupak nego trgovina između nekoliko stalno suprotstavljenih svojstava. Tržišni instrumenti (porezi, naknade, kvote koje se mogu prodavati) ostvaruju cilj uz najmanji ekonomski trošak jer dopuštaju akterima da sami pronađu najjeftiniji put usklađivanja, ali rijetko djeluju trenutno i često su politički vidljiviji od regulacije iste težine. Regulacija ostvaruje brzu i izvjesnu reakciju jer ograničava sam prostor izbora, ali nameće isti zahtjev različitim akterima čije su krivulje troška različite, što ga čini ekonomski skupljim za isti efekt. Subvencije politički su najlakše prihvatljive jer izravno nude korist, ali su fiskalno najsumnjivije i najpodložnije zarobljavanju.
 
 Iz toga slijedi pravilo dizajna koje nadilazi pojedinačni izbor. Instrument koji minimizira ekonomski trošak često maksimizira politički, i obratno. Najbolji odabir rijetko je čisti optimum jedne dimenzije, nego najbolja izvediva ravnoteža unutar konkretnog institucionalnog konteksta.
+
+::: {.callout-praksa}
+Kanadska pokrajina Britanska Kolumbija 2008. je uvela porez na ugljik koji dobro pokazuje razliku između instrumenata. Umjesto da zabrani ili propiše tehnologije, porez je podigao cijenu emisija i prepustio poduzećima i kućanstvima da sami pronađu najjeftiniji način smanjenja, a prihod je vraćen kroz niže poreze na dohodak i dobit. Emisije po stanovniku pale su, dok je gospodarski rast pratio prosjek ostatka Kanade, čime je oslabljen strah da cjenovni instrument nužno koči gospodarstvo. Primjer ilustrira opću pouku da tržišni instrumenti ostvaruju cilj uz niži ekonomski trošak, ali su politički vidljiviji jer teret prikazuju otvoreno, za razliku od regulacije koja ga skriva u cijeni proizvoda.
+:::
 
 ## Most između ciljeva i rezultata
 

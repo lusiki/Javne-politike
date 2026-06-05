@@ -36,6 +36,10 @@ Treći važan klasični model jest model **meritokratske državne službe**. Pre
 
 Empirijska literatura pokazuje da su meritokratsko zapošljavanje i karijerna stabilnost povezani s boljom kvalitetom birokracije i višom razinom državnog kapaciteta [@evansrauch1999]. Država koja ne može kvalitetno provoditi vlastite odluke teško može voditi uspješnu industrijsku, obrazovnu, poreznu ili socijalnu politiku. Ipak, i meritokratski model ima slabosti. Formalni kriteriji mogu postati sami sebi svrha, karijerna sigurnost bez odgovornosti za rezultate može oslabiti poticaje, a profesionalna služba može razviti zatvorenost prema novim ljudima i idejama. Zato suvremeni model mora kombinirati tri elementa, zaštitu od politizacije, profesionalno zapošljavanje i odgovornost za rezultate.
 
+::: {.callout-empirija}
+Pretpostavka da kvaliteta birokracije utječe na razvoj nije samo teorijska. Evans i Rauch usporedili su strukturu državne službe u tridesetak zemalja u razvoju i pokazali da su zemlje s meritokratskim zapošljavanjem i predvidljivim karijernim napredovanjem ostvarile sustavno viši gospodarski rast u razdoblju od 1970. do 1990. [@evansrauch1999]. Učinak je ostao i nakon kontrole za početnu razinu dohotka i ljudski kapital, što upućuje na to da „weberijanska" struktura uprave nije samo posljedica razvoja, nego i jedan od njegovih uzroka. Birokracija se tako pokazuje kao mjerljiv čimbenik državnog kapaciteta, a ne tek administrativni trošak.
+:::
+
 ## Pogled teorije javnog izbora
 
 Teorija javnog izbora polazi iz drugačije perspektive. Ona ne odbacuje potrebu za državom, ali odbacuje pretpostavku da država automatski djeluje u javnom interesu. U središtu analize nisu samo formalne funkcije države, nego ponašanje konkretnih aktera, političara, birokrata, birača, interesnih skupina i regulatora.
@@ -55,6 +59,10 @@ Niskanenov model počiva na tri ključna elementa. Prvo, birokracija često ima 
 Birokratsko širenje ne mora biti posljedica korupcije ili zle namjere. Ono može biti sasvim racionalno ponašanje unutar sustava u kojem se uspjeh institucije mjeri veličinom proračuna, brojem zaposlenih i širinom nadležnosti. U kasnijim raspravama model je kritiziran kao previše pojednostavljen, jer nisu svi birokrati jednako motivirani proračunom. Neki žele miran posao, neki stručni ugled, a neki doista žele poboljšati javnu uslugu. Dunleavy je tvrdio da birokrati mogu nastojati maksimizirati vlastiti utjecaj i kontrolu nad politikom, a ne nužno cijeli proračun [@dunleavy1985]. Ipak, Niskanenov model ostaje važan jer jasno pokazuje da se proračunski proces ne može razumjeti samo kao tehničko određivanje potrebnih sredstava.
 
 Ako želimo učinkovitu državu, nije dovoljno pitati koliko novca neka institucija traži. Treba pitati koje rezultate proizvodi, koliko ti rezultati koštaju, postoje li jeftiniji načini provedbe i tko neovisno provjerava informacije koje institucija iznosi.
+
+::: {.callout-praksa}
+Niskanenova logika vidljiva je u načinu na koji javne agencije pregovaraju o proračunu. Ondje gdje agencija ima monopol nad uslugom i bolje informacije od ministarstva financija, sustavno traži više sredstava nego što bi bilo društveno optimalno, a uštede rijetko nudi sama. Reforme u nizu zemalja OECD-a pokušale su taj poticaj obrnuti uvođenjem proračuna prema rezultatima, vanjskih revizija i gornjih granica troška unutar kojih agencija sama mora pronaći učinkovitije rješenje. Iskustvo pokazuje da takvi mehanizmi smanjuju, ali ne uklanjaju pritisak na rast proračuna jer informacijska prednost i dalje ostaje na strani agencije.
+:::
 
 ### Asimetrija informacija i principal–agent problem
 

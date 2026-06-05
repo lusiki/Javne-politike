@@ -22,6 +22,10 @@ Važno je odmah razjasniti jednu čestu pogrešku. Pojam državnog neuspjeha ne 
 
 Tanzi posebno naglašava da rasprava o ulozi države ne bi smjela biti svedena samo na pitanje veličine javne potrošnje ili poreznog opterećenja [@tanzi2011]. Dvije zemlje mogu imati sličnu veličinu države, ali vrlo različitu kvalitetu javnih usluga, razinu korupcije i sposobnost provedbe reformi. Slično tome, Fukuyama razlikuje opseg državnih funkcija od **snage države**, odnosno njezine sposobnosti da provodi pravila, prikuplja poreze, pruža javne usluge i osigurava javni poredak [@fukuyama2013]. Mala država može biti slaba ako ne može provesti osnovne funkcije, dok velika država može biti učinkovita ako ima kvalitetne institucije i visoko povjerenje.
 
+::: {.callout-empirija}
+Razlika između opsega i snage države nije samo pojmovna nego se može mjeriti. Pokazatelji državnog kapaciteta, poput sposobnosti naplate poreza, kvalitete sudstva i učinkovitosti javne uprave, među zemljama variraju neovisno o veličini javne potrošnje, a upravo oni, a ne sam udio države u BDP-u, najbolje predviđaju uspjeh reformi i kvalitetu javnih usluga [@fukuyama2013; @tanzi2011]. Zemlje sa sličnim porezima i rashodima mogu imati posve različite ishode jer jedna može vjerodostojno provesti pravila, a druga ne. Empirijska je pouka da slabu državu ne popravlja nužno više ili manje intervencije, nego jačanje sposobnosti da ono što odluči i provede.
+:::
+
 Stoga se pitanje državnih neuspjeha ne može svesti na ideološko pitanje „više ili manje države". Pravo se pitanje uvijek tiče toga kakva država, za koji problem, s kojim instrumentima i pod kojim pravilima. Ponekad je problem to što država intervenira previše. Ponekad je problem to što intervenira premalo. Ponekad intervenira pogrešnim instrumentom. A ponekad ima dobar instrument, ali ga ne zna provesti.
 
 ## Državni neuspjeh kao problem dizajna politike
@@ -43,6 +47,10 @@ To je osobito važno kod politika koje ciljaju određene skupine. Ako država ž
 Drugi oblik su **instrumentalni neuspjesi**, odnosno pogrešan izbor instrumenta. Ponekad je cilj politike opravdan, ali instrument nije prikladan jer je preskup, preširok, administrativno kompliciran ili stvara neželjene poticaje. Izbor instrumenta mora proizlaziti iz prirode problema, institucionalnog kapaciteta i očekivanih reakcija aktera.
 
 Primjer su mjere za zaštitu siromašnijih kućanstava od rasta cijena energije. Ograničenje cijena ili smanjenje poreza na energiju politički je vidljivo i administrativno jednostavno, ali koristi i kućanstvima koja nisu siromašna i smanjuje poticaj za štednju. Preciznije ciljani transfer mogao bi biti učinkovitiji i pravedniji, ali zahtijeva bolje podatke i administrativni kapacitet. Instrumentalni neuspjeh javlja se i kada se za svaki problem pokušava koristiti isti tip instrumenta. Ako je sustav navikao probleme rješavati subvencijama, svaki novi problem postaje zahtjev za novom potporom; ako je sklon osnivanju novih tijela, svaki problem završava novom agencijom. Dobar dizajn zato zahtijeva usklađivanje problema i instrumenta.
+
+::: {.callout-praksa}
+Klasičan primjer instrumentalnog neuspjeha jest zamka neaktivnosti u sustavima socijalne pomoći. Kada se naknade naglo ukidaju čim korisnik počne zarađivati, efektivna granična stopa može premašiti 80 ili 90 % jer svaki dodatno zarađeni euro povlači gotovo jednako velik gubitak prava, pa se rad jednostavno ne isplati. Ujedinjeno Kraljevstvo pokušalo je taj problem ublažiti reformom kojom je više naknada objedinjeno u jedan transfer s blažom stopom postupnog smanjivanja. Reforma je smanjila zamku, ali je uvela novu složenost i administrativne troškove, što pokazuje da loše dizajniran instrument rijetko ima besplatno rješenje, nego se jedan problem često zamjenjuje drugim.
+:::
 
 ## Provedbeni neuspjesi
 

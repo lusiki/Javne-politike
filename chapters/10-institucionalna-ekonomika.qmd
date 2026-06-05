@@ -34,6 +34,10 @@ Intuitivan primjer iz svakodnevnog života jest tržište najma stanova. U zemlj
 
 Važno je naglasiti da transakcijski troškovi nisu nepromjenjivi. Oni se mogu smanjiti boljim institucijama i boljom tehnologijom. Digitalni zemljišni registri, elektronički potpisi, online sudski sustavi, jednostavnije administrativne procedure i stabilna regulativa mogu znatno smanjiti troškove poslovanja. Estonija se često navodi kao primjer zemlje koja je digitalizacijom javne uprave smanjila administrativne troškove i povećala predvidivost javnih usluga.
 
+::: {.callout-praksa}
+Razlika u transakcijskim troškovima vidljiva je u tome koliko je lako prenijeti vlasništvo nad nekretninom. U zemljama s digitalnim zemljišnim registrima, jasnim vlasničkim pravima i brzim sudovima prijenos nekretnine traje nekoliko dana i košta vrlo malo, dok u zemljama sa zastarjelim ili nepouzdanim registrima isti postupak može trajati mjesecima i tražiti odvjetnike, javne bilježnike i opsežne provjere. Ti troškovi ne mijenjaju fizičku vrijednost nekretnine, ali određuju koliko će se transakcija uopće dogoditi, koliko će tržište najma biti razvijeno i koliko su vlasnici spremni ulagati. Upravo zato su reforme registara i ubrzanje sudova među najjeftinijim načinima na koje država može povećati učinkovitost tržišta, a da uopće ne dira u same cijene.
+:::
+
 ## Institucije i tržište rada
 
 Uloga institucija posebno je vidljiva na **tržištu rada**. Tržište rada nije samo mjesto na kojem se susreću ponuda i potražnja za radom. Ono je snažno oblikovano zakonima, kolektivnim ugovorima, poreznim sustavom, socijalnom zaštitom, obrazovnim sustavom, sudstvom i normama o radu. Zato zemlje slične razine razvoja mogu imati vrlo različite stope zaposlenosti, nezaposlenosti mladih, dugotrajne nezaposlenosti ili neformalnog rada.
@@ -67,6 +71,10 @@ Ekstraktivne institucije ne moraju uvijek proizvoditi trenutačnu stagnaciju i p
 Empirijski je doprinos ovog razlikovanja kvantitativan, ne samo deskriptivan. Sistematske usporedbe pokazuju da razlike u kvaliteti institucija objašnjavaju značajan dio varijacije BDP-a po stanovniku između zemalja u dugom roku, pod kontrolom geografskih, demografskih i resursnih faktora [@acemoglu2012]. Klasičan rezultat ove literature je *obrnuti razvoj* (*reversal of fortune*) prema kojem su područja koja su 1500. godine imala visoku gustoću stanovništva i razvijenu ekonomiju u 20. stoljeću završila siromašnija od područja koja su tada bila rijetko naseljena, što proturječi geografskoj objašnjenosti razvoja, ali izvanredno dobro odgovara obrascu naknadno postavljenih institucija.
 
 Mehanizam koji literatura predlaže ide preko tipa kolonijalne strategije. Ondje gdje su europski doseljenici mogli ostati u brojevima i izgraditi vlastite uvozne institucije, postavljen je inkluzivniji okvir koji je nadživio kolonijalno doba. Ondje gdje su klimatski uvjeti tjerali na ekstraktivnu organizaciju kroz mali broj europskih upravitelja koji su nadgledali rad domorodačke radne snage, postavljene su institucije čije su distribucijske posljedice preživjele neovisnost. Ova empirijska tradicija ne tvrdi da je institucionalna povijest sudbinska, nego da su utjecaji početnih institucionalnih izbora duboko trajni.
+
+::: {.callout-empirija}
+Najuvjerljiviji dokaz za ulogu institucija dolazi iz obrasca koji se naziva „obrnuti razvoj". Područja koja su oko 1500. godine bila gušće naseljena i bogatija, poput dijelova Srednje i Južne Amerike, u 20. su stoljeću postala siromašnija od područja koja su tada bila rijetko naseljena, poput Sjeverne Amerike i Australije [@acemoglu2012]. Takav ishod proturječi objašnjenju koje razvoj pripisuje zemljopisu ili klimi, ali dobro odgovara obrascu institucija postavljenih tijekom kolonijalnog razdoblja. Ondje gdje su nastale uključive institucije sa zaštitom vlasništva razvoj je krenuo brže, a ondje gdje su uspostavljene ekstraktivne institucije usmjerene na izvlačenje resursa dugoročni je rast izostao. Pouka je da se trag početnih institucionalnih izbora mjeri stoljećima.
+:::
 
 Važno je ipak izbjeći pojednostavljenje. Institucije nisu jedini faktor razvoja, jer su važni i geografija, povijest, obrazovanje, demografija, tehnologija i globalni uvjeti. No institucionalni pristup tvrdi da upravo institucije često određuju hoće li društvo iskoristiti ili prokockati svoje ostale razvojne potencijale.
 

@@ -60,6 +60,10 @@ Zdravstvo i obrazovanje najčešći su primjeri. Ako je obrazovanje dostupno sam
 
 Koliko će društvo prihvatiti robni egalitarizam ovisi o njegovim vrijednostima, povijesti, političkoj kulturi i institucijama. Europske države blagostanja tradicionalno više naglašavaju univerzalne javne usluge, solidarnost i socijalna prava, dok liberalniji modeli više naglašavaju individualnu odgovornost, tržišni izbor i ciljanu pomoć najsiromašnijima. Skandinavske se zemlje primjerice snažno oslanjaju na univerzalne usluge i visoke poreze, dok anglosaksonski modeli češće kombiniraju tržišne mehanizme s ciljanim programima za ranjive skupine.
 
+::: {.callout-praksa}
+Nordijske zemlje pokazuju kako se snažna preraspodjela može spojiti s otvorenim tržišnim gospodarstvom. One kombiniraju visoke granične porezne stope i univerzalne javne usluge u zdravstvu, obrazovanju i skrbi za djecu s razmjerno fleksibilnim tržištem rada. Tržišna nejednakost dohotka prije poreza ondje nije osobito niža nego u drugim razvijenim zemljama, ali je nejednakost nakon poreza i transfera među najnižima u svijetu. Ključ nije samo u visini poreza, nego i u tome što su usluge univerzalne, pa ih koristi i srednja klasa, čime se održava široka politička potpora za njihovo financiranje. Takav model ima i svoju cijenu jer zahtijeva visoko porezno opterećenje, snažnu poreznu disciplinu i povjerenje građana da se sredstva troše namjenski. Ondje gdje to povjerenje ili administrativni kapacitet izostaju, isti se model teško preslikava, što pokazuje da preraspodjela nije samo pitanje političke volje, nego i institucionalnih preduvjeta.
+:::
+
 U kriznim situacijama, poput rata, pandemije, velike prirodne katastrofe ili energetskog šoka, čak i društva koja inače manje naglašavaju egalitarizam često prihvaćaju šire oblike državne intervencije. Razlog je u tome što kriza povećava osjećaj zajedničkog rizika. Tada se robni egalitarizam ne odnosi samo na zdravstvo i obrazovanje, nego i na energiju, hranu, stanovanje ili osnovnu likvidnost kućanstava i poduzeća.
 
 ## Paternalizam
@@ -86,6 +90,10 @@ Zato odnos efikasnosti i pravednosti nije jednostavna razmjena u kojoj se uvijek
 
 Distribucijska funkcija zato nije samo pitanje koliko država preraspodjeljuje, nego i kako preraspodjeljuje. Dvije države mogu imati sličan udio javne potrošnje u BDP-u, ali vrlo različite učinke na siromaštvo, nejednakost i životne prilike. Jedna može trošiti mnogo, ali loše ciljati programe i stvarati ovisnost o transferima. Druga može trošiti slično, ali kroz kvalitetno obrazovanje, zdravstvo, aktivne politike tržišta rada i dobro dizajnirane transfere stvarati veću socijalnu mobilnost.
 
+::: {.callout-empirija}
+Učinak poreza i transfera na nejednakost moguće je izravno izmjeriti. Podaci OECD-a pokazuju da porezi i socijalni transferi u prosjeku smanjuju Ginijev koeficijent razvijenih zemalja za otprilike trećinu, s približno 0,47 prije državne intervencije na oko 0,31 nakon nje [@oecd_idd]. Razmjer toga smanjenja jako varira, od vrlo snažnog u nordijskim i kontinentalnim europskim sustavima do osjetno slabijeg u dijelu anglosaksonskih zemalja. Veći dio toga učinka u većini zemalja dolazi od transfera, osobito mirovina i naknada, a ne od same progresivnosti poreza na dohodak. To je važno jer pokazuje da se nejednakost može jednako snažno smanjiti rashodovnom stranom proračuna kao i poreznom. Usporedbe također pokazuju da zemlje sa sličnom razinom dohotka po stanovniku mogu imati vrlo različite razine nejednakosti, što znači da konačna raspodjela nije zadana tržištem, nego je u velikoj mjeri rezultat politike.
+:::
+
 ## Distribucijska funkcija kao temelj društvene solidarnosti
 
 Distribucijska funkcija države pokazuje da javne financije nisu samo tehničko pitanje prikupljanja i trošenja novca. One su i izraz društvenog dogovora o tome koliko nejednakosti prihvaćamo, koje rizike dijelimo, kome pomažemo i koje životne prilike želimo osigurati svim građanima. Tržište može stvarati bogatstvo i poticati učinkovitost, ali ne jamči da će dohodak, bogatstvo i prilike biti raspodijeljeni na način koji društvo smatra pravednim.
@@ -93,3 +101,7 @@ Distribucijska funkcija države pokazuje da javne financije nisu samo tehničko 
 Utilitarizam naglašava da preraspodjela može povećati ukupno blagostanje ako dodatni dohodak više koristi siromašnima nego bogatima. Rawlsov pristup naglašava zaštitu onih koji su u najlošijem položaju. Robni egalitarizam naglašava jednak pristup temeljnim dobrima poput obrazovanja i zdravstva. Paternalizam pokazuje da država ponekad oblikuje izbore pojedinaca radi njihove dugoročne dobrobiti ili zaštite drugih.
 
 Država ne intervenira samo zato da bi tržište bilo učinkovitije, nego i zato da bi društvo bilo pravednije, sigurnije i uključivije. No pritom mora stalno voditi računa o poticajima, troškovima i provedbi. Dobra distribucijska politika ne teži jednostavnoj uravnilovci, nego pokušava osigurati da tržišno gospodarstvo bude povezano s društvenom solidarnošću, jednakim prilikama i zaštitom onih koji su najranjiviji.
+
+::: {.callout-vjezba}
+Promotrite hipotetsko društvo s pet kućanstava čiji godišnji dohodci iznose 10, 20, 30, 40 i 100 tisuća eura. (a) Izračunajte koliki udio ukupnog dohotka pripada najsiromašnijih 40 % kućanstava. (b) Skicirajte Lorenzovu krivulju spajanjem kumulativnih udjela dohotka. (c) Pretpostavite da država najsiromašnijem kućanstvu transferom doda 10 tisuća eura, financiranih porezom na najbogatije kućanstvo. Kako se mijenja udio najsiromašnijih 40 % i zašto se Lorenzova krivulja približava dijagonali jednakosti?
+:::

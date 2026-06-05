@@ -242,6 +242,10 @@ politički oportunizam, odnosno sklonost donošenju kratkoročnih i populističk
 mjera koje povećavaju popularnost, ali dugoročno mogu destabilizirati
 gospodarstvo i javne financije [@nordhaus1975].
 
+::: {.callout-empirija}
+Tvrdnja da političari prilagođavaju politiku izbornom kalendaru ima empirijsku podlogu. Istraživanja političko-proračunskih ciklusa u demokracijama pokazuju da javna potrošnja i deficiti u prosjeku rastu u godini uoči izbora, a fiskalna prilagodba dolazi tek nakon njih [@nordhaus1975]. Učinak je sustavno jači u mladim demokracijama, u zemljama sa slabijim fiskalnim pravilima i ondje gdje birači teže prate dugoročne troškove odluka, dok je u zemljama s neovisnim fiskalnim vijećima i transparentnim proračunom osjetno slabiji. Empirijska je pouka da ciklus nije neizbježan, nego ovisi o institucijama koje povećavaju vidljivost budućih troškova.
+:::
+
 Teorija javnog izbora dosljedno
 primjenjuje model samointeresnog aktera i na političare, gledajući ih kao
 poduzetnike na političkom tržištu [@downs1957]. Njihov primarni cilj nije
@@ -289,6 +293,10 @@ koje im donose značajne koristi, dok se troškovi tih privilegija raspršuju
 na cijelu, neorganiziranu javnost [@olson1965; @stigler1971]. To je temeljni
 mehanizam kojim teorija javnog izbora objašnjava disproporcionalni utjecaj
 posebnih interesa na javnu politiku.
+
+::: {.callout-praksa}
+Logika regulatorne zarobljenosti vidljiva je u liberalizaciji telekomunikacija u Europi devedesetih godina. Formalna pravila nalagala su otvaranje tržišta, ali su nacionalni regulatori u nekoliko zemalja u praksi štitili dotadašnje državne operatere visokim naknadama za međusobno povezivanje i složenim uvjetima licenciranja, čime su novim ponuđačima otežavali ulazak. Tek je pritisak Europske komisije, koja je djelovala izvan dosega pojedinačnih nacionalnih regulatora, ubrzao stvarno otvaranje tržišta. Primjer potvrđuje Stiglerov uvid da regulacija često služi koncentriranim interesima industrije koja je „kupuje", a ne raspršenoj javnosti, te pokazuje zašto neovisnost i nadzor regulatora nisu tehnički detalj, nego uvjet da regulacija ostane u javnom interesu.
+:::
 
 ### Birokrati, borba za proračun i kritički osvrt
 

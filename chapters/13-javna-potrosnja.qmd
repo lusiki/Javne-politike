@@ -14,6 +14,10 @@ Kako pokazuju povijesni podaci, u razdoblju od kraja 19. do početka 20. stolje�
 
 Već krajem 19. stoljeća pojavljuju se prve teorijske naznake da minimalistički pristup državi nije dugoročno održiv. Ekonomisti poput Adolpha Wagnera uočavaju da s razvojem industrijskog društva raste potreba za javnim uslugama. Ova ideja, poznata kao **Wagnerov zakon**, sugerira da će udio javne potrošnje u BDP-u rasti kako društva postaju bogatija i kompleksnija [@wagner1890; @bird1971].
 
+Wagner je ponudio i mehaniku tog rasta koja nadilazi puko empirijsko zapažanje. Tri sile prema njegovoj analizi sustavno povećavaju udio države u gospodarstvu kako ono industrijalizira. Prva je sila kompleksnosti, jer veća međuovisnost gospodarskih jedinica zahtijeva više regulacije, ugovornog reda i nadzora, što povećava administrativne funkcije države. Druga je sila kulture i obrazovanja, gdje urbanizirano industrijsko društvo razvija veću potražnju za obrazovanjem, znanošću i kulturom, dobrima koja imaju izrazito javne komponente. Treća je sila ekonomske infrastrukture, gdje krupne kapacitetne investicije u promet, energetiku i komunikacije premašuju mogućnosti privatnih ulagača i prirodno se preuzimaju kroz javni sektor.
+
+Empirijski je Wagnerov zakon potvrđen u dugim vremenskim serijama razvijenih zemalja, ali ga noviji radovi ograničavaju u dva smjera [@bird1971]. Prvo, zakonitost vrijedi samo do određene razine razvoja, nakon koje udio javne potrošnje pokazuje znakove zasićenja. Drugo, rast nije automatski nego je posredovan političkim odlukama o tome koje od triju sila društvo prevodi u stvarnu javnu funkciju. To znači da Wagnerov zakon najbolje opisuje strukturni pritisak, ne i sam ishod, koji ostaje predmet političkog izbora i institucionalnog dizajna.
+
 Pravi preokret događa se u 20. stoljeću, u kontekstu velikih ekonomskih i političkih šokova. Velika depresija 1930-ih dovodi u pitanje sposobnost tržišta da se samo stabilizira. U tom kontekstu John Maynard Keynes uvodi revolucionarnu ideju prema kojoj država može i treba aktivno intervenirati u gospodarstvo putem javne potrošnje i fiskalne politike kako bi stabilizirala agregatnu potražnju [@keynes1936]. Time javna potrošnja prvi put dobiva jasnu makroekonomsku funkciju.
 
 Nakon Drugog svjetskog rata slijedi razdoblje bez presedana u povijesti javne potrošnje. U većini razvijenih zemalja dolazi do snažne ekspanzije države, osobito kroz razvoj sustava socijalne sigurnosti, javnog zdravstva i obrazovanja. Udio javne potrošnje raste s oko 13 % BDP-a početkom stoljeća na više od 40 % u suvremenim ekonomijama [@tanzi2000]. Ovaj rast nije bio rezultat jedinstvenog faktora, već kombinacije dubokih strukturnih promjena.
@@ -38,6 +42,10 @@ Drugo, javna potrošnja ima snažan utjecaj na akumulaciju ljudskog kapitala. Ul
 
 Međutim, upravo zbog svoje širine, javna potrošnja nosi i značajne troškove i ograničenja. Prvo, financiranje putem poreza ili duga stvara distorzije u ekonomskim poticajima, pri čemu negativni učinci poreza rastu disproporcionalno s njihovom visinom [@tanzi2011]. Drugo, problem neefikasnosti i ograničene odgovornosti javnog sektora proizlazi iz institucionalnih karakteristika države. Treće, javna potrošnja je duboko oblikovana političkom ekonomijom odlučivanja, što može dovesti do pristranosti prema većoj potrošnji i odgađanju fiskalne konsolidacije [@alesina1995]. Četvrto, određeni oblici mogu stvoriti neželjene mikroekonomske poticaje, poput zamki siromaštva. Peto, važno je razlikovati produktivnu i neproduktivnu javnu potrošnju jer samo određene kategorije rashoda, poput infrastrukture i obrazovanja, imaju jasan pozitivan učinak na rast [@barro1990].
 
+::: {.callout-empirija}
+Sastav javne potrošnje, a ne samo njezina razina, povezan je s dugoročnim rastom. Empirijska literatura o endogenom rastu pokazuje da ulaganja u infrastrukturu, obrazovanje i istraživanje djeluju kao proizvodni input koji povećava buduću produktivnost, dok tekuća potrošnja i pojedine subvencije takav učinak nemaju ili ga čak smanjuju [@barro1990]. Studije više zemalja nalaze pozitivnu vezu između udjela javnih investicija i rasta, ali tek do razine na kojoj porezi potrebni za financiranje počnu stvarati veće distorzije od koristi dodatne potrošnje. Pouka je da između veličine države i rasta postoji obrnuto-U odnos čiji položaj vrha ovisi o tome troši li se na proizvodne ili neproizvodne namjene.
+:::
+
 Ključni uvid moderne ekonomije javnih financija jest da pitanje javne potrošnje nije primarno kvantitativno, nego kvalitativno, strukturno i institucionalno. Nije presudno samo koliko država troši, već kako, na što, za koga i kroz koje mehanizme troši. Upravo zato dvije zemlje slične razine javne potrošnje mogu ostvarivati potpuno različite ekonomske i društvene ishode.
 
 ## Stabilizacijska uloga javne potrošnje
@@ -45,6 +53,10 @@ Ključni uvid moderne ekonomije javnih financija jest da pitanje javne potrošnj
 S Keynesom država prvi put dobiva jasno definiranu makroekonomsku ulogu aktivnog upravljanja agregatnom potražnjom s ciljem stabilizacije gospodarskog ciklusa [@keynes1936]. Temeljna ideja njegova pristupa jest da su recesije prvenstveno rezultat nedostatne agregatne potražnje. Kada privatni sektor smanjuje potrošnju i investicije, država može intervenirati povećanjem javne potrošnje i, ako je potrebno, stvaranjem fiskalnog deficita.
 
 Središnji mehanizam putem kojeg javna potrošnja djeluje jest **fiskalni multiplikator**. Povećanje državne potrošnje ne djeluje samo jednokratno, već pokreće lančanu reakciju u kojoj javna potrošnja postaje dohodak, taj dohodak postaje potrošnja, a potrošnja stvara novi dohodak. Snaga multiplikatora ovisi o sklonosti štednji, udjelu uvoza, visini poreza i vremenskoj dinamici. Empirijska istraživanja pokazuju da multiplikator nije konstantan jer je u recesijama često veći zbog neiskorištenih kapaciteta, dok je u ekspanzijama manji [@blanchard2013; @barro1990].
+
+Mehanizam pojačanog multiplikatora u recesijama ima jasno mikroekonomsko opravdanje. U razdoblju kada se značajan dio kapaciteta ne koristi, dodatna javna potrošnja ne istiskuje privatnu nego mobilizira neiskorištene resurse, pa svaki euro javnog troška povlači blizak privatni odgovor. U razdoblju pune zaposlenosti, isti euro mora se nečemu suprotstaviti i istiskuje privatnu potrošnju ili investicije, što znatno snižava multiplikator. Empirijska procjena Blancharda i Leigha pokazala je da je upravo to potcjenjivanje multiplikatora u dubokoj recesiji jedan od najvažnijih izvora predviđanja koja su podcijenila trošak fiskalne konsolidacije nakon 2010. godine [@blanchard2013].
+
+Iz toga slijedi sporna, ali važna implikacija za doktrinu fiskalne konsolidacije. Kada je multiplikator visok, restriktivna fiskalna politika ne samo da usporava gospodarstvo, nego može i pogoršati omjer duga i BDP-a u kratkom roku jer pad nazivnika nadmašuje smanjenje brojnika. To ne znači da konsolidacija nije potrebna, nego da je njezino vrijeme i intenzitet politički i ekonomski osjetljiviji nego što se dugo pretpostavljalo. Pitanje nije treba li konsolidacija, nego kada i kojim ritmom, što ponovno ovisi o gospodarskom ciklusu.
 
 Često se zanemaruje ključna nijansa Keynesove teorije. On nije zagovarao trajno povećanje javne potrošnje, već simetričnu fiskalnu politiku kroz ciklus koja podrazumijeva deficit i povećanje potrošnje u recesiji, a suficit i fiskalnu konsolidaciju u ekspanziji. Cilj nije trajno širenje države, nego izravnavanje ekonomskih fluktuacija. Upravo ta simetrija ključna je za dugoročnu održivost javnih financija, ali je u praksi često narušena zbog političkih ograničenja [@alesina1995].
 
@@ -62,6 +74,10 @@ Važno je naglasiti da niža proračunska potrošnja ne znači nužno i manju st
 
 Empirijska istraživanja pokazuju da veličina javne potrošnje sama po sebi ne određuje ekonomske rezultate. Neke zemlje s velikim javnim sektorom ostvaruju visoke stope rasta i kvalitetne javne usluge, dok druge slične razine potrošnje imaju slabije performanse. To jasno upućuje na ključnu ulogu kvalitete institucija, učinkovitosti javne uprave, transparentnosti i dizajna politika, a ne same veličine rashoda [@blanchard2017; @tanzi2000].
 
+::: {.callout-praksa}
+Usporedba pokazuje da veličina javne potrošnje sama po sebi govori malo o njezinim učincima. Neke zemlje s velikim javnim sektorom, poput skandinavskih, ostvaruju visok rast, kvalitetne usluge i nisku nejednakost, dok druge sa sličnim udjelom potrošnje u BDP-u imaju slabije rezultate jer veći dio sredstava odlazi na subvencije, kamate na dug ili neučinkovite programe umjesto na obrazovanje, infrastrukturu i ciljanu socijalnu zaštitu. Ista razina potrošnje tako može značiti ulaganje u buduću produktivnost ili njezino trošenje na održavanje postojećih povlastica. Zato je za ocjenu javne potrošnje važnije analizirati njezinu strukturu i kvalitetu provedbe nego puki udio u BDP-u.
+:::
+
 ## Javna potrošnja u Hrvatskoj i EU
 
 ::: {.callout-note}
@@ -69,3 +85,7 @@ Ovo se potpoglavlje dovršava. Slijedi detaljniji prikaz razine i strukture javn
 :::
 
 Razlike u javnoj potrošnji potvrđuju temeljni zaključak moderne ekonomije javnih financija prema kojem ne postoji jedinstveni „optimalni" model države. Razina i struktura javne potrošnje rezultat su povijesnog razvoja, političkih odluka i institucionalnih ograničenja, dok njihovi učinci ovise prije svega o kvaliteti implementacije, a ne samo o veličini rashoda.
+
+::: {.callout-vjezba}
+Pretpostavite zemlju s javnim dugom od 80 % BDP-a i nominalnim rastom BDP-a od 3 %. (a) Ako je prosječna kamatna stopa na dug 2 %, a primarni proračun uravnotežen, objasnite u kojem se smjeru kreće omjer duga i BDP-a. (b) Pretpostavite da država u recesiji pokrene poticaj vrijedan 3 % BDP-a uz multiplikator 1,5; za koliko se procjenjuje da raste BDP u toj godini? (c) Zašto u uvjetima visokog multiplikatora restriktivna politika može kratkoročno povećati, a ne smanjiti omjer duga i BDP-a? Povežite odgovor s odnosom kamatne stope i stope rasta.
+:::
