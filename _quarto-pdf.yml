@@ -38,3 +38,6 @@ format:
 
 filters:
   - pdf-filters/strip-ojs.lua
+  # Temporary: drops SVG infographics so the PDF builds without rsvg-convert.
+  # Remove once SVG-to-PDF conversion is available (see strip-svg.lua TODO).
+  - pdf-filters/strip-svg.lua
