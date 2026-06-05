@@ -16,6 +16,10 @@ Ako te opcije uspoređujemo u parovima većinskim glasovanjem, dolazimo do neobi
 
 Posljedica je važna. Kada postoji ciklus, ishod ovisi o redoslijedu glasovanja. Onaj tko kontrolira dnevni red, to jest koje se opcije i kojim redoslijedom stavljaju na glasovanje, može utjecati na konačni rezultat. To je prvi nagovještaj da pravila igre nisu nevažna pozadina, nego da oblikuju same ishode.
 
+Lako je odbaciti taj primjer kao konstrukciju u kojoj su preferencije birača namjerno tako odabrane da proizvedu ciklus. Formalna analiza pokazuje suprotno. McKelveyev teorem o kaotičnoj većini dokazuje da kad se u prostoru odluke pojavi više od jedne dimenzije, ciklusi postaju pravilo, a ne iznimka, i to za gotovo bilo koju raspodjelu preferencija birača [@mckelvey1976]. Ako je ishod prve runde glasovanja pažljivo izabran, agendar može u nekoliko koraka voditi kolektivnu odluku od bilo koje početne točke do bilo koje druge točke u prostoru opcija.
+
+Posljedica je dvostruka. Prvo, intuitivna pretpostavka da se „opće dobro" može jednostavno utvrditi većinom glasova teorijski je neodrživa čim se istodobno odlučuje o više dimenzija. Drugo, stabilnost demokratskih ishoda ne dolazi iz preferencija birača, nego iz proceduralnih ograničenja (pravila glasovanja, jednodimenzionalnih agendi, pravila zaštite nositelja statusa quo) koja sustav izričito uvodi da bi spriječio teoretski kaos.
+
 ::: {.callout-praksa}
 Ciklus nije samo udžbenički kuriozitet. Zamislimo raspravu o energetskoj politici s tri skupine i tri opcije (nuklearna energija, plin, obnovljivi izvori).
 
@@ -43,7 +47,11 @@ Dok Condorcetov paradoks pokazuje da većinsko glasovanje *može* proizvesti cik
 
 Arrow je tražio pravilo koje istodobno zadovoljava nekoliko razumnih i naizgled minimalnih uvjeta. Neograničena domena traži da pravilo radi za sve moguće kombinacije pojedinačnih preferencija. Kolektivna racionalnost traži da društveni poredak bude dosljedan, odnosno potpun i tranzitivan. Pareto-efikasnost traži da, ako svi preferiraju A ispred B, i društvo preferira A ispred B. Neovisnost o nevažnim alternativama zahtijeva da se rangiranje između A i B ne mijenja uvođenjem ili uklanjanjem treće alternative C. Konačno, nediktatorstvo isključuje mogućnost da jedan pojedinac nametne svoju volju cijeloj skupini bez obzira na preferencije ostalih.
 
-Arrow je dokazao da ne postoji pravilo koje istodobno zadovoljava sve te uvjete kada postoje barem tri alternative. Ne postoji savršen demokratski mehanizam agregacije preferencija, pa svaki realan sustav glasovanja mora žrtvovati barem jedno od poželjnih svojstava. To ne znači da je demokracija besmislena, nego da svako pravilo odlučivanja ima ugrađena ograničenja i moguće nedosljednosti, te da izbor pravila uvijek uključuje kompromise. @tbl-arrow-uvjeti pokazuje što svaki uvjet zahtijeva i što se događa kada se prekrši.
+::: {#thm-arrow}
+**Arrowljev teorem nemogućnosti.** Arrow je dokazao da ne postoji pravilo koje istodobno zadovoljava sve te uvjete kada postoje barem tri alternative.
+:::
+
+Ne postoji savršen demokratski mehanizam agregacije preferencija, pa svaki realan sustav glasovanja mora žrtvovati barem jedno od poželjnih svojstava. To ne znači da je demokracija besmislena, nego da svako pravilo odlučivanja ima ugrađena ograničenja i moguće nedosljednosti, te da izbor pravila uvijek uključuje kompromise. @tbl-arrow-uvjeti pokazuje što svaki uvjet zahtijeva i što se događa kada se prekrši.
 
 | Uvjet | Što zahtijeva | Posljedica kršenja u stvarnom svijetu |
 |---|---|---|
@@ -67,11 +75,21 @@ Kada su preferencije jednovršne i odlučuje se o jednoj dimenziji, većinsko gl
 
 Medijanski glasač važan je jer pokazuje da kolektivni izbor nije nužno kaotičan. No njegovi su uvjeti zahtjevni jer stvarne političke odluke rijetko su jednodimenzionalne. Kada se istodobno odlučuje o više dimenzija (porezi, zdravstvo, vanjska politika, okoliš), jednovršnost se gubi, ciklusi se vraćaju, a moć dnevnoga reda ponovno raste [@mckelvey1976].
 
+Pitanje kada jednovršnost vrijedi u stvarnoj politici ima konkretan odgovor. Ona vrijedi otprilike u onoj mjeri u kojoj se javna rasprava može svesti na jednu lijevo-desnu os, a izrazito slabi kada birač istodobno mora rangirati paket politika koje uključuju različite vrijednosne dimenzije. Klasičan primjer je porezno-socijalna politika u kojoj se pitanje veličine države miješa s pitanjima poreznih olakšica, fiskalnog pravila i namjene rashoda. Birač koji preferira niže opće stope može istodobno preferirati visoke ciljane transfere, što ga čini jednovršnim u jednoj dimenziji i dvovršnim u drugoj.
+
+Šira lekcija dolazi iz Senove kritike, koja pokazuje da se jednovršnost gubi gotovo pravilom čim politička podjela uvodi pitanja identiteta, povjerenja u institucije ili kulturne pripadnosti [@sen1970]. Te dimenzije nisu „šumovi" u inače čistoj ekonomskoj raspravi, nego strukturni dio modernog političkog izbora, što objašnjava zašto je u zadnja dva desetljeća stabilnost ishoda većinskog glasovanja u demokracijama zapadnog svijeta opala istodobno s rastom dimenzionalnosti njihovih političkih sustava.
+
 ## Kontrola dnevnog reda i politika kompromisa
 
 Čak i kada su kolektivne preferencije cikličke, odluke se u praksi moraju donijeti, proračun se usvaja, zakoni donose, politike provode. Ključno pitanje postaje tko i kako prekida cikluse te usmjerava konačni ishod. Odgovor leži u **moći kontrole dnevnog reda** (*agenda-setting power*), to jest u sposobnosti da se odredi o čemu će se glasovati, kojim redoslijedom i u kojem obliku [@mckelvey1976; @romer1978].
 
-Osoba ili tijelo koje oblikuje proceduru, primjerice predsjednik saborskog odbora, Vlada ili predsjedavajući Vijeća EU, često ima veću stvarnu moć od same većine glasova. Pažljivim biranjem redoslijeda glasovanja moguće je usmjeriti ishod prema željenoj alternativi i unutar istog skupa preferencija. Kada se ciklusi moraju prekinuti, dolazi do kompromisa, ali kompromisi u politici rijetko predstavljaju optimalno srednje rješenje. Često nastaju kroz **trgovanje glasovima** (*logrolling*), pri čemu zastupnici uzajamno podržavaju projekte kako bi osigurali podršku za vlastite. Rezultat nije prosjek, nego zbroj interesa, više projekata i veća javna potrošnja nego što bi većina birača samostalno odobrila [@buchanan1962]. Mehaniku trgovanja glasovima i njezin neto društveni gubitak detaljnije razrađujemo u poglavlju o javnom izboru, a ovdje nas zanima kako ono oblikuje *ishode* kolektivnog odlučivanja.
+Osoba ili tijelo koje oblikuje proceduru, primjerice predsjednik saborskog odbora, Vlada ili predsjedavajući Vijeća EU, često ima veću stvarnu moć od same većine glasova. Pažljivim biranjem redoslijeda glasovanja moguće je usmjeriti ishod prema željenoj alternativi i unutar istog skupa preferencija.
+
+Snaga te moći nije svuda jednaka. Komparativni dizajn parlamentarnih procedura pokazuje da se agendar kreće na spektru čija se dva ekstrema mogu prikazati istim modelom. Na jednom kraju nalazi se zatvoreno pravilo, u kojem agendar predlaže jednu jedinu alternativu, a parlament o njoj može glasovati samo „za" ili „protiv". Tu je moć agendara teorijski najveća, a jasno se vidi u proceduri donošenja proračuna u nekim francuskim i britanskim aranžmanima [@romer1978]. Na drugom kraju nalazi se otvoreno pravilo, u kojem svaki zastupnik može predlagati izmjene, raspravljati o njima i predlagati alternative, što ishod približava medijanu zastupnika i smanjuje moć inicijative.
+
+Većina stvarnih demokracija leži između tih krajeva i kombinira različite vrste pravila za različite tipove zakona. Pravila pojačane većine za ustavne i fiskalne zakone tom mješavinom dodatno mijenjaju ravnotežu jer čak ni agendar s povlaštenim pristupom ne može iznad pojedinih pragova nadvladati podijeljeni parlament. Pitanje koliko će u jednoj demokraciji moći imati onaj tko kontrolira dnevni red zato nije pitanje pojedinaca, nego pitanje institucionalnog dizajna.
+
+Kada se ciklusi moraju prekinuti, dolazi do kompromisa, ali kompromisi u politici rijetko predstavljaju optimalno srednje rješenje. Često nastaju kroz **trgovanje glasovima** (*logrolling*), pri čemu zastupnici uzajamno podržavaju projekte kako bi osigurali podršku za vlastite. Rezultat nije prosjek, nego zbroj interesa, više projekata i veća javna potrošnja nego što bi većina birača samostalno odobrila [@buchanan1962]. Mehaniku trgovanja glasovima i njezin neto društveni gubitak detaljnije razrađujemo u poglavlju o javnom izboru, a ovdje nas zanima kako ono oblikuje *ishode* kolektivnog odlučivanja.
 
 ::: {.callout-praksa}
 Pri usvajanju državnog proračuna u Hrvatskoj zastupnici iz različitih regija često uzajamno podržavaju infrastrukturne projekte (autoceste, luke, bolnice), iako bi svaki projekt zasebno teško prošao, pa su rezultat brojni „politički" projekti niske ekonomske opravdanosti. Na razini EU pregovori o Višegodišnjem financijskom okviru i fondu NextGenerationEU uključuju pakete u kojima se poljoprivredne subvencije trguju za kohezijske ili zelene fondove, pa je konačni paket veći i skuplji nego što bi ga ijedna zemlja samostalno podržala. Klasičan svjetski primjer iste logike jest američki *pork-barrel*, u kojem kongresnici podržavaju projekte kolega u zamjenu za podršku vlastitima.

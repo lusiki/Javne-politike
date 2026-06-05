@@ -10,7 +10,7 @@ Na toj se osnovi razvija **ustavna ekonomika**. Ona ide korak dalje od standardn
 
 ## Što je ustavna ekonomika?
 
-Ustavna ekonomika proučava pravila koja oblikuju političko i ekonomsko odlučivanje. Često se kaže da se ona bavi **„pravilima o pravilima"**. To znači da njezin glavni predmet nisu samo konkretne odluke o porezima, rashodima, subvencijama ili regulaciji, nego institucionalni okvir koji određuje kako se takve odluke donose.
+Ustavna ekonomika proučava pravila koja oblikuju političko i ekonomsko odlučivanje [@vanberg2018]. Često se kaže da se ona bavi **„pravilima o pravilima"**. To znači da njezin glavni predmet nisu samo konkretne odluke o porezima, rashodima, subvencijama ili regulaciji, nego institucionalni okvir koji određuje kako se takve odluke donose.
 
 Za razliku od standardne ekonomske analize, koja se često bavi izborom optimalne politike, ustavna ekonomika pita kako treba izgledati politički i institucionalni sustav koji proizvodi javne politike. Njezino temeljno pitanje nije samo kolika treba biti porezna stopa, nego tko ju smije mijenjati, kojom procedurom, uz kakvu većinu, uz kakvu procjenu učinaka i uz kakva ograničenja.
 
@@ -19,6 +19,16 @@ Ovu su disciplinu posebno razvili James M. Buchanan i Gordon Tullock, prije sveg
 To ne znači da su politički akteri nužno loši, sebični ili zlonamjerni. Poanta je drukčija. Ne smijemo dizajnirati političke institucije kao da svi akteri uvijek djeluju isključivo u javnom interesu. Ako znamo da ljudi reagiraju na poticaje na tržištu, moramo pretpostaviti da reagiraju na poticaje i u politici. Temeljna ideja ustavne ekonomike može se izraziti vrlo jednostavno. Ako znamo da akteri u političkom sustavu slijede vlastite interese, tada moramo oblikovati pravila koja će te interese usmjeriti prema društveno poželjnim ishodima.
 
 Važna implikacija ovog pristupa jest da kvaliteta javnih politika ne ovisi samo o stručnosti donositelja odluka. Stručnost je važna, ali nije dovoljna. Ako su pravila sustava loše postavljena, čak i kompetentni i dobronamjerni akteri mogu proizvoditi loše ishode. Obrnuto, ako su pravila dobro postavljena, čak i akteri koji slijede vlastite interese mogu biti potaknuti da djeluju na način koji je bliži javnom interesu. Ustavna ekonomika zato ne nastoji probleme javnog sektora rješavati samo naknadno, kada se loše odluke već dogode. Njezin je naglasak **ex ante**, odnosno usmjeren na unaprijed postavljena pravila koja smanjuju vjerojatnost loših odluka.
+
+Ključno metodološko sredstvo kojim Buchanan i Tullock razvijaju taj ex ante naglasak jest **veo neizvjesnosti** (*veil of uncertainty*) [@buchanan1962].
+
+::: {#def-veo-neizvjesnosti}
+**Veo neizvjesnosti.** Kada se akteri dogovaraju o pravilima na ustavnoj razini, nitko ne zna kakav će biti njegov konkretan položaj kada se ta pravila primijene u stotinama budućih operativnih odluka.
+:::
+
+Pojedinac može u budućnosti biti porezni obveznik ili korisnik transfera, dobitnik ili gubitnik konkretne reforme, član većine ili manjine. Pod tom neizvjesnošću racionalan je izbor pravila koja štite svakog mogućeg sudionika, a ne pravila koja koriste konkretnu trenutnu poziciju.
+
+Pravila izabrana iza vela neizvjesnosti zato su sustavno bliža onome što bi se moglo nazvati javnim interesom od pravila koja se biraju nakon što je svatko već fiksirao svoj interes. Ta je ideja u srži zašto se ustavna razina mora odvojiti od operativne. Kada se pravila o porezu mijenjaju u istom mandatu kao i porezna stopa, veo neizvjesnosti ne postoji, jer svaki sudionik točno zna na čijoj će se strani naći. Operativni interesi sustavno potkopavaju kvalitetu pravila ako se ustavna razina ne čuva odvojenom.
 
 ## Pravila i odluke — dvije razine političkog odlučivanja
 
@@ -32,11 +42,21 @@ Razlika se može jednostavno objasniti. Operativna razina pita što ćemo danas 
 
 Ova razlika je presudna jer mnogi problemi javnih politika ne proizlaze iz jedne pogrešne odluke, nego iz institucionalnog okvira koji stalno potiče iste vrste pogrešnih odluka. Ako politički sustav nagrađuje povećanje rashoda prije izbora, odgađanje reformi, pogodovanje organiziranim skupinama i prebacivanje troškova u budućnost, onda problem nije samo u jednom političaru ili jednoj vladi. Problem je u pravilima koja takvo ponašanje čine racionalnim.
 
-U tom kontekstu ustavna ekonomika naglašava važnost **pravila umjesto čiste diskrecije**. Diskrecija znači da donositelji odluka imaju širok prostor za odlučivanje od slučaja do slučaja. To može biti korisno kada je potrebna fleksibilnost, osobito u krizama. Ali previše diskrecije povećava neizvjesnost, otvara prostor za politički oportunizam i smanjuje vjerodostojnost. Pravila, s druge strane, ograničavaju proizvoljnost, smanjuju neizvjesnost i čine javne politike predvidljivijima. To ne znači da svaka politika mora biti potpuno automatizirana jer uvijek postoji potreba za prosudbom, nego da diskrecija mora biti ograničena pravilima, procedurama, transparentnošću i odgovornošću.
+U tom kontekstu ustavna ekonomika naglašava važnost **pravila umjesto čiste diskrecije** [@brennan1985]. Diskrecija znači da donositelji odluka imaju širok prostor za odlučivanje od slučaja do slučaja. To može biti korisno kada je potrebna fleksibilnost, osobito u krizama. Ali previše diskrecije povećava neizvjesnost, otvara prostor za politički oportunizam i smanjuje vjerodostojnost. Pravila, s druge strane, ograničavaju proizvoljnost, smanjuju neizvjesnost i čine javne politike predvidljivijima. To ne znači da svaka politika mora biti potpuno automatizirana jer uvijek postoji potreba za prosudbom, nego da diskrecija mora biti ograničena pravilima, procedurama, transparentnošću i odgovornošću.
+
+Sama ideja ustavnog ugovora ima i ozbiljnu unutarnju kritiku unutar same škole konstitucionalne ekonomike. Središnja pretpostavka da postoji izvorna pozicija u kojoj svi sudionici racionalno izabiru pravila prije nego što saznaju svoju ulogu u sustavu povijesno se nikada nije materijalizirala. Stvarni ustavi rezultat su konkretnih političkih nadmetanja, odnosa moći u trenutku donošenja i institucionalnog naslijeđa koje sužava prostor mogućih dogovora [@vanberg2005]. Iz toga slijedi da formalno postojanje ustavnog pravila ne jamči njegovu kvalitetu jer pravilo izabrano iza znatno tanjeg vela neizvjesnosti pruža slabiju zaštitu od pravila izabranog stvarno depolitizirano.
+
+Drugi pravac kritike fokusira se na evoluciju pravila. Holcombe i drugi recentni autori unutar iste tradicije upozoravaju da ustavna pravila često prestaju funkcionirati kako su zamišljena ne zato što ih netko otvoreno krši, nego zato što se sudska tumačenja, konvencije i rutine s vremenom pomiču i mijenjaju stvarni sadržaj pravila bez izmjene formalnog teksta [@holcombe2018]. Pravila zato treba promatrati kao žive institucije koje zahtijevaju aktivno održavanje, a ne kao jednom postavljene strukture koje rade same od sebe.
 
 ## Vremenska nedosljednost javnih politika
 
-Jedan od najvažnijih razloga zašto ustavna ekonomika naglašava pravila jest problem **vremenske nedosljednosti** javnih politika. Vremenska nedosljednost nastaje kada je neka politika optimalna iz dugoročne perspektive, ali ju je teško ili politički neisplativo provoditi u kratkom roku. Ovaj su problem u modernoj makroekonomskoj literaturi posebno razvili Finn Kydland i Edward Prescott, pokazujući da diskrecijska politika često vodi do slabijih ishoda od politika temeljenih na vjerodostojnim pravilima [@kydland1977].
+Jedan od najvažnijih razloga zašto ustavna ekonomika naglašava pravila jest problem **vremenske nedosljednosti** javnih politika.
+
+::: {#def-vremenska-nedosljednost}
+**Vremenska nedosljednost** nastaje kada je neka politika optimalna iz dugoročne perspektive, ali ju je teško ili politički neisplativo provoditi u kratkom roku.
+:::
+
+Ovaj su problem u modernoj makroekonomskoj literaturi posebno razvili Finn Kydland i Edward Prescott, pokazujući da diskrecijska politika često vodi do slabijih ishoda od politika temeljenih na vjerodostojnim pravilima [@kydland1977].
 
 Suština problema je u tome da ono što je optimalno obećati za budućnost često nije optimalno provesti kada ta budućnost postane sadašnjost. Vlada može danas najaviti da će voditi odgovornu fiskalnu politiku, smanjivati deficit i kontrolirati javni dug. Takva najava može povećati povjerenje. Međutim, kada se približe izbori ili kada se pojave pritisci interesnih skupina, ista vlada može imati poticaj odstupiti od ranije najavljene politike. Dugoročno odgovorna politika tada postaje kratkoročno politički skupa.
 
@@ -45,6 +65,10 @@ Najklasičniji primjer nalazi se u fiskalnoj politici. Dugoročno su stabilne ja
 Sličan problem pojavljuje se u monetarnoj politici. Vlast može imati poticaj poticati gospodarstvo prije izbora pritiskom na središnju banku da vodi previše ekspanzivnu monetarnu politiku. Kratkoročno to može smanjiti nezaposlenost, ali ako građani i tržišta očekuju takvo ponašanje, inflacijska očekivanja rastu, pa dugoročni rezultat može biti viša inflacija bez trajnog povećanja zaposlenosti. Upravo zato se **neovisnost središnje banke** često tumači kao institucionalni odgovor na problem vremenske nedosljednosti [@rogoff1985].
 
 Ustavna ekonomika na ovaj problem odgovara zagovaranjem pravila, vjerodostojnih ograničenja i institucionalnih obveza. Ako političari imaju poticaj odstupiti od dugoročno optimalne politike, potrebno je unaprijed uspostaviti pravila koja takvo odstupanje čine težim, skupljim ili transparentnijim. U fiskalnoj politici to se pokušava postići srednjoročnim proračunskim okvirima, fiskalnim pravilima, ograničenjima deficita i duga, neovisnim fiskalnim vijećima i obvezom procjene fiskalnih učinaka novih mjera. U europskom kontekstu važnu ulogu imaju i fiskalna pravila na razini Europske unije.
+
+Empirijska istraživanja institucionalnog dizajna fiskalnih okvira potvrđuju da pravila djeluju, ali pod uvjetima koje teorija predviđa. Komparativne studije više od dvadesetak zemalja pokazuju da su deficiti i razine duga sustavno niži u zemljama s eksplicitnim numeričkim pravilima koja imaju neovisan nadzor i jasne sankcije, dok pravila bez nadzornog mehanizma daju mjerljiv učinak samo u prvim godinama nakon uvođenja. Slabija pravila s mnogo iznimaka pružaju formalno ograničenje, ali njihova provedba ovisi o trenutnoj političkoj volji, što ih dugoročno izjednačava s nepostojanjem pravila.
+
+Iz tih nalaza proizlazi praktična pouka koja nije ideološka. Pitanje nije treba li fiskalna pravila, nego kako ih dizajnirati tako da preživljavaju ekonomske cikluse, političke smjene i krizne pritiske. Pravila koja se mogu mijenjati istom procedurom kojom se donosi proračun de facto su uputa, ne pravilo, jer se uklanjaju kad postanu neugodna. Pravila s pojačanom većinom za izmjenu i s neovisnim tijelom koje javno ocjenjuje usklađenost u praksi su rijetka, ali su jedina koja se empirijski pokazuju otpornima.
 
 Važno je pritom naglasiti da pravila ne smiju biti potpuno slijepa na okolnosti. Fiskalna politika mora imati prostor za reakciju u velikim krizama. Zato dobro pravilo nije ono koje potpuno ukida fleksibilnost, nego ono koje dopušta odstupanja pod jasno definiranim uvjetima, uz transparentnost, obrazloženje i plan povratka na održivu putanju. Cilj nije mehanička politika, nego **vjerodostojna** politika.
 
