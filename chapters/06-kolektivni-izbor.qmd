@@ -20,6 +20,8 @@ Lako je odbaciti taj primjer kao konstrukciju u kojoj su preferencije birača na
 
 Posljedica je dvostruka. Prvo, intuitivna pretpostavka da se „opće dobro" može jednostavno utvrditi većinom glasova teorijski je neodrživa čim se istodobno odlučuje o više dimenzija. Drugo, stabilnost demokratskih ishoda ne dolazi iz preferencija birača, nego iz proceduralnih ograničenja (pravila glasovanja, jednodimenzionalnih agendi, pravila zaštite nositelja statusa quo) koja sustav izričito uvodi da bi spriječio teoretski kaos.
 
+Upravo zbog tih proceduralnih ograničenja cikluse je u stvarnim tijelima teško izravno opaziti. Parlamenti rijetko glasuju o svim parovima opcija, nego o pomno odabranom redoslijedu amandmana, pa konačni zapisnik pokazuje stabilan ishod čak i kada bi neograničeno parno glasovanje otkrilo cikličku većinu u podlozi. Istraživači zato cikličnost ne mjere izravno, nego je rekonstruiraju iz prostornih modela glasovanja koji iz zabilježenih glasova procjenjuju idealne točke zastupnika u jednoj ili više dimenzija. Što više dimenzija takav model zahtijeva da bi objasnio glasovanje, to je veća vjerojatnost da ispod uređene proceduralne površine leži nestabilna struktura preferencija. Odsutnost vidljivih ciklusa zato nije dokaz da ih nema, nego često znak da ih je procedura unaprijed prikrila.
+
 ::: {.callout-praksa}
 Ciklus nije samo udžbenički kuriozitet. Zamislimo raspravu o energetskoj politici s tri skupine i tri opcije (nuklearna energija, plin, obnovljivi izvori).
 
@@ -40,6 +42,8 @@ Različiti sustavi glasovanja vode do različitih ishoda, što dodatno naglašav
 | Rangirano glasovanje (RCV) | niska | visoka | srednje | rijetko u EU | složeno brojanje |
 
 : Usporedba sustava glasovanja. Izrada autora. {#tbl-sustavi-glasovanja}
+
+Iz tih razlika među sustavima slijedi jedan dublji rezultat. Gibbard i Satterthwaite dokazali su da je svaki razuman izborni sustav s barem tri opcije podložan strateškom glasovanju, odnosno da u nekim situacijama biraču nije u interesu glasati za svoju iskreno najdražu opciju, nego taktički za onu koja ima veće izglede [@gibbard1973; @satterthwaite1975]. To znači da manipulabilnost nije mana lošeg dizajna koju bi se boljim pravilom moglo ukloniti, nego ugrađeno svojstvo svake agregacije preferencija. Praktična posljedica je da zabilježeni glasovi ne otkrivaju nužno stvarne preferencije birača, što dodatno otežava tumačenje izbornih i parlamentarnih ishoda kao izravnog izraza „volje naroda".
 
 ## Arrowljev teorem nemogućnosti
 
