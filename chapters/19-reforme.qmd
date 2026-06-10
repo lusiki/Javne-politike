@@ -86,9 +86,15 @@ ref_s = ref_controls.s
     y: {label: "↑ Vjerojatnost uspjeha reforme", domain: [0, 1], tickFormat: "%", grid: true},
     marks: [
       Plot.ruleX([c], {stroke: "#1C7C54", strokeDasharray: "4,3"}),
-      Plot.text([{s: c, u: 0.97}], {x: "s", y: "u", text: ["brzina = kapacitet"],
+      Plot.text([{s: c, u: 0.97}], {x: "s", y: "u", text: ["kapacitet"],
         fill: "#1C7C54", fontSize: 11, dx: 5, textAnchor: "start"}),
       Plot.line(curve, {x: "s", y: "u", stroke: "#2D5A8E", strokeWidth: 2.5}),
+      // droplines tie the chosen speed (ref_s) to its success level on the curve,
+      // so moving the speed slider visibly traces the marker along the curve
+      Plot.ruleX([cur], {x: "s", y1: 0, y2: "u", stroke: "#1C1916", strokeDasharray: "3,3"}),
+      Plot.ruleY([cur], {y: "u", x1: 0, x2: "s", stroke: "#1C1916", strokeDasharray: "3,3"}),
+      Plot.text([{s: cur.s, u: 0}], {x: "s", y: "u", text: [`brzina = ${(cur.s * 100).toFixed(0)} %`],
+        fill: "#1C1916", fontSize: 11, dy: 16, textAnchor: "middle"}),
       Plot.dot([cur], {x: "s", y: "u", r: 6, fill: "#1C1916", stroke: "white", strokeWidth: 2}),
       Plot.text([cur], {x: "s", y: "u", text: [`uspjeh ≈ ${(cur.u * 100).toFixed(0)} %`],
         fill: "#1C1916", fontSize: 13, fontWeight: 700, dy: -14, textAnchor: "middle"})

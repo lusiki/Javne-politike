@@ -165,7 +165,7 @@ fm_dT = fm_controls.dT
     style: {fontSize: "12px", fontFamily: "Public Sans, system-ui, sans-serif", color: "#3A332D"},
     fx: {label: null, domain: [POLICY_G, POLICY_T]},
     x: {label: "Dohodak / proizvodnja (Y) →", domain: [0, Ymax], grid: false},
-    y: {label: "↑ Agregatna potražnja",       domain: [0, Ymax], grid: true},
+    y: {label: "↑ Planirani izdaci (AE)",      domain: [0, Ymax], grid: true},
     marks: [
       Plot.ruleY([0], {stroke: "#C9C3B8"}),
 
