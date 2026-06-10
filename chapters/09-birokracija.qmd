@@ -149,13 +149,9 @@ Na svakoj razini pojavljuju se dva problema. Prvi je **skrivena informacija**, j
 
 Principal–agent problem objašnjava i zašto je u javnoj upravi važno razlikovati **inpute, outpute i ishode**. Input je novac, broj zaposlenih ili oprema. Output je broj obrađenih predmeta ili održanih sati nastave. Ishod je stvarna promjena koju društvo želi, poput boljih obrazovnih rezultata, kraćih lista čekanja ili veće sigurnosti. Birokracija često lakše prikazuje inpute i outpute nego ishode, jer su oni lakše mjerljivi i pod većom kontrolom same institucije. Zato su transparentnost, revizija, evaluacija i otvoreni podaci ključni jer smanjuju informacijsku prednost agenta. No samo mjerenje nije dovoljno, loše dizajnirani pokazatelji mogu potaknuti pogrešno ponašanje. Ako se škola vrednuje samo po broju prolazaka, može snižavati kriterije, a ako se sud vrednuje samo po broju riješenih predmeta, može se zanemariti kvaliteta presuda.
 
-### Model rentijerstva
+### Birokracija i rentijerstvo
 
-Treći važan model odnosi se na **rentijerstvo**. Rentijerstvo nastaje kada pojedinci, poduzeća ili interesne skupine pokušavaju ostvariti dobit putem političkih i administrativnih povlastica umjesto stvaranjem nove vrijednosti na tržištu [@tullock1967; @krueger1974]. Renta u ovom kontekstu označava ekonomsku korist koja proizlazi iz povlaštenog položaja, a ne iz veće produktivnosti.
-
-Teorija javnog izbora naglašava da rentijerstvo troši društvene resurse. Poduzeća i skupine ulažu vrijeme, novac i energiju u lobiranje, pritisak na političare i oblikovanje propisa. Ti se resursi tada ne koriste za inovacije, proizvodnju ili poboljšanje usluga. Zato je rentijerstvo društveno štetno čak i kada je formalno zakonito.
-
-Birokracija u modelu rentijerstva ima posebno važnu ulogu jer ona često izrađuje pravila, dodjeljuje dozvole, piše natječaje i tumači uvjete. Zbog toga interesne skupine ne lobiraju samo prema političarima, nego i prema administraciji. Ponekad se stvarna borba za rentu ne vodi u parlamentu, nego u pravilniku, obrascu, kriteriju javnog natječaja ili tehničkom standardu. Rentijerstvo je posebno politički izdržljivo zbog razlike između koncentriranih koristi i raspršenih troškova [@olson1965]. Javna se politika zato ne smije ocjenjivati samo prema deklariranom cilju. Pitati moramo stvara li ta mjera novu društvenu vrijednost ili samo preraspodjeljuje dohodak prema dobro organiziranoj skupini.
+Birokracija igra posebnu ulogu u rentijerstvu — procesu u kojemu pojedinci i organizirane skupine nastoje ostvariti dobit putem administrativnih povlastica umjesto stvaranjem vrijednosti. Mehaniku rentijerstva i njezine empirijske razmjere izlažemo u cijelosti u poglavlju o interesnim skupinama (pogl. 8). Ovdje je dovoljno primijetiti da birokracija nije samo pasivni okvir za taj proces — ona izrađuje pravila, dodjeljuje dozvole, piše natječaje i tumači uvjete, pa interesne skupine lobiraju i prema administraciji, a ne samo prema političarima. Stvarna borba za rentu ponekad se ne vodi u parlamentu, nego u pravilniku, kriteriju natječaja ili tehničkom standardu [@tullock1967; @krueger1974].
 
 ### Model „željeznog trokuta"
 
@@ -165,21 +161,13 @@ U mnogim područjima politike djeluju konkretni akteri s jasno definiranim inter
 
 Ovaj model pomaže objasniti zašto se mnogi javni programi teško ukidaju. Čak i ako ekonomska analiza pokaže da subvencija više nije učinkovita, svaka od triju strana ima razlog protiviti se njezinu ukidanju. U tom smislu željezni trokut predstavlja jedan od mehanizama državnog neuspjeha. Mjera koja je možda bila opravdana u početku može postati trajni program koji se teško mijenja, čak i kada se okolnosti promijene. Zato je za analizu javnih politika važno pitati ne samo koji je formalni cilj programa, nego i tko ga brani, tko od njega ima koristi i koja institucija živi od njegove provedbe.
 
-### Model regulatornog zarobljavanja
+### Birokracija i regulatorno zarobljavanje
 
-Model **regulatornog zarobljavanja** objašnjava situaciju u kojoj regulator, osnovan da štiti javni interes, postupno počne djelovati u interesu sektora koji bi trebao nadzirati. Klasičan doprinos dao je George Stigler, koji je tvrdio da regulaciju često treba promatrati kao rezultat političke potražnje za zaštitom i povlasticama, a ne samo kao neutralan odgovor na tržišne neuspjehe [@stigler1971]. Peltzman je proširio analizu pokazujući da regulatori često balansiraju između interesa industrije, potrošača i političkih pritisaka.
+Srodan fenomen jest **regulatorno zarobljavanje**, u kojemu regulator osnovan radi zaštite javnog interesa postupno počne djelovati u interesu sektora koji nadzire [@stigler1971]. Mehanizme zarobljavanja — informacijski, organizacijski, karijerni i kulturni — u cijelosti razrađujemo u poglavlju o interesnim skupinama (pogl. 8), koje je i prirodni dom te analize. Za birokraciju je ovdje ključna pouka drukčija: nije dovoljno osnovati neovisnog regulatora, nego je potrebno oblikovati sustav poticaja koji dugoročno otežava zarobljavanje kroz transparentne odluke, objavu podataka i sprječavanje sukoba interesa.
 
-Regulatorno zarobljavanje može nastati na više načina. Prvi je **informacijski**, jer regulirana industrija zna mnogo više o tehnologiji, troškovima i rizicima od regulatora. Drugi je **organizacijski**, jer su regulirana poduzeća malobrojna i dobro organizirana, dok su potrošači brojni i raspršeni. Treći je **karijerni**, jer službenici prelaze u privatni sektor i obratno. Četvrti je **kulturni**, jer regulator i industrija s vremenom dijele isti stručni jezik i pretpostavke o tome što je „realno" i „provedivo". Regulator tada više ne mora biti formalno korumpiran da bi bio zarobljen, dovoljno je da počne gledati svijet očima regulirane industrije.
+### Birokracija i politički proračunski ciklus
 
-Regulacija nije automatski javni interes u akciji. Ona je institucionalni proces koji i sam može biti predmet političkih i ekonomskih interesa. Zato nije dovoljno osnovati neovisnog regulatora; potrebno je oblikovati sustav koji smanjuje rizik zarobljavanja kroz javna savjetovanja, transparentne odluke, objavu podataka, sprječavanje sukoba interesa i nadzor.
-
-### Model političko-proračunskih ciklusa
-
-Teorija javnog izbora primjenjuje se i na model **političko-proračunskih ciklusa**. Osnovna ideja jest da političari, budući da žele pobijediti na izborima, mogu koristiti fiskalnu politiku kako bi povećali popularnost uoči izbora, kroz rast javnih rashoda, povećanje plaća u javnom sektoru, širenje transfera ili smanjenje poreza [@nordhaus1975].
-
-Model polazi od razlike između kratkoročnih političkih koristi i dugoročnih ekonomskih troškova. Povećanje potrošnje prije izbora donosi vidljive koristi, dok se troškovi pojavljuju kasnije u obliku većeg deficita, javnog duga ili potrebe za fiskalnom konsolidacijom. Birokracija u tom procesu ima ambivalentnu ulogu. Profesionalna administracija u ministarstvu financija, fiskalnim vijećima i revizorskim institucijama može djelovati kao stabilizator i upozoravati na dugoročne troškove, ali birokracija može imati i interes podržati rast potrošnje jer joj donosi više resursa i ovlasti.
-
-Proračun nije samo tehnički dokument, nego politički instrument. Zato analiza javne potrošnje mora uzeti u obzir izbore, biračke poticaje, interesne skupine i administrativne interese. Fiskalna pravila, srednjoročni proračunski okviri i neovisna fiskalna vijeća postoje upravo zato da bi ograničili kratkoročni politički pritisak na rast potrošnje i učinili troškove političkih odluka vidljivijima.
+Birokracija nije imuna na **politički proračunski ciklus** — tendenciju da vlada povećava rashode uoči izbora, a fiskalnu prilagodbu odgađa na period nakon njih [@nordhaus1975]. Taj model u cijelosti razrađujemo u poglavlju o ustavnoj ekonomici (pogl. 11), gdje je i prirodni dom. Uloga birokracije ovdje je ambivalentna: profesionalna administracija u ministarstvu financija i fiskalnim vijećima može djelovati kao institucionalni stabilizator koji upozorava na dugoročne troškove, ali birokracija može imati i interes podržati rast potrošnje jer joj donosi više resursa i ovlasti. Proračunski je zaključak da fiskalna pravila i neovisna fiskalna vijeća postoje upravo da bi smanjila taj pritisak i povećala vidljivost budućih troškova.
 
 ## Cilj nije manje birokracije, nego bolja birokracija
 
