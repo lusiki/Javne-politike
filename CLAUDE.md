@@ -111,16 +111,20 @@ Three custom callout types used throughout the book:
 Croatian labels are configured. Use Quarto's native theorem syntax:
 
 ```markdown
-::: {#def-naziv}
-**Definicija.** ...
-:::
-
 ::: {#prp-naziv}
 **Propozicija.** ...
 :::
 
 ::: {#thm-naziv}
 **Teorem.** ...
+:::
+```
+
+Definition divs use `#def-` ids. The term is bolded inside the defining sentence — no label prefix:
+
+```markdown
+::: {#def-naziv}
+Pojam je **naziv** ako...
 :::
 ```
 
