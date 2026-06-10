@@ -1,0 +1,361 @@
+{
+  "book": {
+    "title": "Sve što želite znati o odnosu države i tržišta (Javne politike u Hrvatskoj)",
+    "last_updated": "2026-06-09"
+  },
+  "chapters": [
+    {
+      "id": "00-uvod",
+      "file": "chapters/00-uvod.qmd",
+      "title": "Uvod — Zašto bismo otvorili ovu knjigu?",
+      "stage": "style_swept",
+      "self_items": [
+        { "id": "00-cite-romance", "note": "Dodati citat za 'politiku bez romantike' (Buchanan / Buchanan & Tullock 1962) na liniji 35; provjeriti ključ u references.bib.", "status": "todo" },
+        { "id": "00-diagram", "note": "Opcionalni konceptualni dijagram (trokut ekonomija/politika/institucije ili shema pet dijelova) iz postojećih SVG infografika.", "status": "todo" }
+      ],
+      "coauthor_asks": [
+        { "id": "00-verify-dio4", "what": "Ovjeriti da najava sadržaja DIO IV (porezi, javna potrošnja, dug, mirovine, zdravstvo, lokalne financije) odgovara stvarnom opsegu pogl. 12-14.", "owner": "Milan", "status": "open" },
+        { "id": "00-verify-dio2", "what": "Ovjeriti da najava DIO II (javni izbor, akteri, interesne skupine, konstitucionalna ekonomika) vjerno opisuje političko/izborna poglavlja.", "owner": "Petra", "status": "open" }
+      ],
+      "last_render": "unknown",
+      "notes": "Opener-exempt (uvod). Stilski čist (0 lint), konceptualno snažan. Namjerno bez callout/vježbi (commit 0a3d046 ih je uklonio). Jedino realno fali citat za 'politiku bez romantike'."
+    },
+    {
+      "id": "01-uloga-drzave",
+      "file": "chapters/01-uloga-drzave.qmd",
+      "title": "Uloga države u gospodarstvu",
+      "stage": "enriched",
+      "self_items": [
+        { "id": "01-fix-arrow", "slot": "methodology", "note": "VISOK: ispraviti pogrešan citat [@arrow1951] (linija 254, Prvi teorem ekonomike blagostanja) — zamijeniti s [@arrow1954] (Arrow-Debreu) ili dodati Arrow 1951 welfare-extension u bib; uskladiti i liniju 264.", "status": "todo" },
+        { "id": "01-vjezba", "note": "VISOK: dodati callout-vjezba (interaktivna Edgeworthova kutija ili numerička Kaldor-Hicks kompenzacija) — bez hrvatskih podataka.", "status": "todo" },
+        { "id": "01-fig-edgeworth", "note": "Dodati {#fig-edgeworth} label/caption OJS Edgeworth grafu radi referenciranja.", "status": "todo" }
+      ],
+      "coauthor_asks": [
+        { "id": "01-hr-intervention", "what": "Ako se doda domaći primjer državne intervencije (financiranje znanosti, regulacija mrežne industrije), potreban potpis na domaću tvrdnju.", "owner": "Petra", "status": "open" },
+        { "id": "01-hr-macro", "what": "Makro motiv (stabilizacija, recesije/inflacija) ako se potkrijepi hrvatskim/EU fiskalnim serijama — rezervirano za makro koautora.", "owner": "Milan", "status": "open" }
+      ],
+      "last_render": "unknown",
+      "notes": "Teorijski bogato, već obogaćeno (enriched). DVA tvrda nedostatka: pogrešan arrow1951 citat (correctness bug) i nema obavezne vježbe. Inače citatno uredno."
+    },
+    {
+      "id": "02-alokacijska-funkcija",
+      "file": "chapters/02-alokacijska-funkcija.qmd",
+      "title": "Alokacijska funkcija i tržišni neuspjesi",
+      "stage": "enriched",
+      "self_items": [
+        { "id": "02-vjezba", "note": "VISOK: dodati callout-vjezba uz postojeće OJS dijagrame (variranje elastičnosti i tumačenje DWL; usporedba Pigou vs kvota) — najbogatije poglavlje bez ijedne vježbe.", "status": "todo" },
+        { "id": "02-fig-labels", "note": "Dodati fig-cap/label svakom od 6 OJS grafova (0 fig-labela) radi cross-referenciranja.", "status": "todo" },
+        { "id": "02-defs", "note": "Formalizirati 3-4 ključna pojma u {#def-} divove (javno dobro, eksternalija, asimetrične informacije, prirodni monopol).", "status": "todo" },
+        { "id": "02-typo", "note": "Ispraviti tipfelere (linija 216: 'premašenu'/'prenoj niskoj') i ublažiti takeaway-formulu na liniji 928.", "status": "todo" }
+      ],
+      "coauthor_asks": [
+        { "id": "02-hr-monopol", "what": "Hrvatski primjer prirodnog monopola/regulacije (vodoopskrba, energetska/plinska mreža) + domaće regulatorno tijelo.", "owner": "Milan ili Petra", "status": "open" },
+        { "id": "02-hr-pigou", "what": "Domaći fiskalni primjer Pigouovih instrumenata (trošarine na gorivo/duhan/alkohol) s aktualnim stopama.", "owner": "Milan", "status": "open" },
+        { "id": "02-hr-competition", "what": "Primjer hrvatske/EU politike tržišnog natjecanja ili upravljanja zajedničkim resursom (ribolovne kvote u Jadranu).", "owner": "Petra", "status": "open" }
+      ],
+      "last_render": "unknown",
+      "notes": "Sadržajno najbogatije i citatno najurednije poglavlje (rich, 934 linije, 30 OJS, 0 citation issues). Tri mehanička self-zadatka dijele ga od figures_done: vježba, fig-labele, definicije."
+    },
+    {
+      "id": "03-distribucijska-funkcija",
+      "file": "chapters/03-distribucijska-funkcija.qmd",
+      "title": "Distribucijska funkcija — država i pitanje pravednosti",
+      "stage": "style_swept",
+      "self_items": [
+        { "id": "03-verify-oecd", "note": "Provjeriti ključ @oecd_idd u bib i ovjeriti brojke (Gini 0,47/0,31, udio transfera vs poreza) prema OECD IDD; precizirati godinu/tablicu.", "status": "todo" },
+        { "id": "03-defs", "note": "Uvesti 1-2 formalne {#def-} (preraspodjela, opadajuća granična korisnost dohotka, ili veo neznanja + maximin).", "status": "todo" },
+        { "id": "03-cite-nordic", "note": "Dodati margin citat uz nordijski callout-praksu i tipologiju režima (npr. Esping-Andersen).", "status": "todo" }
+      ],
+      "coauthor_asks": [
+        { "id": "03-hr-gini", "what": "Hrvatski Gini prije/poslije poreza i transfera, učinak domaćeg poreznog/transfernog sustava, struktura socijalnih transfera.", "owner": "Milan", "status": "open" },
+        { "id": "03-hr-paternalism", "what": "Domaći primjer paternalističke/distribucijske politike (mirovinski stup s auto-uključivanjem, dječji doplatci, energetske naknade 2022) + potpis.", "owner": "Petra", "status": "open" }
+      ],
+      "last_render": "unknown",
+      "notes": "Snažan teorijski okvir, ima vježbu i empiriju, stilski čist. Preostaje formalizirati definicije, ovjeriti OECD brojke, dodati margin citate."
+    },
+    {
+      "id": "04-stabilizacijska-funkcija",
+      "file": "chapters/04-stabilizacijska-funkcija.qmd",
+      "title": "Stabilizacijska funkcija — država i makroekonomska stabilnost",
+      "stage": "coauthor_review",
+      "self_items": [
+        { "id": "04-fig-keynes", "note": "Dodati {#fig-keynesov-kriz} label/caption glavnom OJS grafu; uskladiti prozne 'lijevi/desni panel' reference s redoslijedom faceta.", "status": "todo" },
+        { "id": "04-defs", "note": "Dodati 1-2 formalne Definicije (fiskalni multiplikator, automatski stabilizatori).", "status": "todo" },
+        { "id": "04-cite-imf", "note": "Inline citat (blanchard2013/Blanchard-Leigh) uz tvrdnju da je MMF priznao podcijenjene multiplikatore; dodati i [@blyth2013] uz konsolidaciju.", "status": "todo" }
+      ],
+      "coauthor_asks": [
+        { "id": "04-hr-fiscal", "what": "Domaći primjer/callout o hrvatskom fiskalnom odgovoru (automatski stabilizatori, COVID/energetski paketi, deficit/dug kroz ciklus).", "owner": "Milan", "status": "open" },
+        { "id": "04-hr-ratchet", "what": "Ovjeriti 'učinak premještanja'/ratchet u hrvatskom kontekstu (je li potrošnja trajno porasla nakon kriza).", "owner": "Milan", "status": "open" }
+      ],
+      "last_render": "unknown",
+      "notes": "Najnaprednije po fazi (coauthor_review): bogato, čisto, ispravno citirano (8 ključeva verificirano). Ima vježbu. Fali fig-label, 1-2 definicije i Milanova domaća ilustracija."
+    },
+    {
+      "id": "05-javni-izbor",
+      "file": "chapters/05-javni-izbor.qmd",
+      "title": "Što je to javni izbor i zašto nas se tiče?",
+      "stage": "style_swept",
+      "self_items": [
+        { "id": "05-arc-trim", "note": "DONE 2026-06-09 (branch experiment/ch05-framing): poglavlje pretvoreno u okvirno; puna razrada Niskanena/Olsona/rente/zarobljavanja/konstitucionalne ekonomike skraćena na najave s poveznicom na pogl. 6/8/9/11. Jedinstveni sadržaj migriran (zamka prijelaznih dobitaka → ch08, Breton kritika → ch09). 611→175 linija.", "status": "done" },
+        { "id": "05-voice-rewrite", "note": "DONE: prepisano u kućni glas — prepolovljene engleske glose, razrijeđeno citatno gomilanje, uklonjeni Štoviše/Pritom/Time se tikovi, dodan zaključni potez 'pouka nije X nego Y'.", "status": "done" },
+        { "id": "05-tbl-source", "note": "DONE: tbl-mehanizmi dobio izvor (autorska sinteza prema @olson1965, @tullock1967, @niskanen1971, @buchanan1962) i stupac 'Razrađeno u' s poveznicama; caption usklađen s konvencijom ch06.", "status": "done" },
+        { "id": "05-vjezba", "note": "DONE: dodana callout-vjezba uz R = P·B − C (izvod N* = B/C iz interaktivnog grafa).", "status": "done" },
+        { "id": "05-defs", "note": "DONE: dva #def- bloka (def-javni-izbor, def-racionalno-nepoznavanje), ograničeno na spine pojmove poglavlja.", "status": "done" },
+        { "id": "05-bridge", "note": "DONE: dodan premosni odlomak DIO I → DIO II te uvodni odlomak ispred figure (fig-intro check prolazi).", "status": "done" }
+      ],
+      "coauthor_asks": [
+        { "id": "05-hr-cycle", "what": "Domaći primjer političko-proračunskog ciklusa (potrošnja/deficit uoči izbora) s MFin/HNB serijama, uz postojeći nordhaus1975 empirija-callout.", "owner": "Milan", "status": "open" },
+        { "id": "05-hr-rent", "what": "Domaći primjer rent-seekinga/regulatorne zarobljenosti uz EU-telekom praksa-callout.", "owner": "Petra", "status": "open" }
+      ],
+      "last_render": "unknown",
+      "notes": "RESTRUKTURIRANO 2026-06-09 (branch experiment/ch05-framing, još nije commitano/mergeano). Sada okvirno poglavlje DIO II (175 linija): zadržan glasački jezgreni dio (paradoks glasanja, R=P·B−C graf, racionalno nepoznavanje, ekspresivno glasanje) + 2 def-bloka + vježba; mehanizmi neuspjeha države delegirani na pogl. 6/8/9/11. Preostaje sustavno (cijela knjiga): OJS graf još bez #fig- oznake i fig-alt teksta. Koautorski HR primjeri ostaju otvoreni."
+    },
+    {
+      "id": "06-kolektivni-izbor",
+      "file": "chapters/06-kolektivni-izbor.qmd",
+      "title": "Kolektivni izbor",
+      "stage": "enriched",
+      "self_items": [
+        { "id": "06-vjezba", "note": "VISOK: dodati callout-vjezba (međunarodni podaci — izlaznost po EU iz atlas/Eurostat, ili simulacija medijanskog glasača na 1D osi).", "status": "todo" },
+        { "id": "06-empirija", "note": "VISOK: dodati callout-empirija — poglavlju potpuno nedostaje (jedino DIO II poglavlje bez nje uz ch08).", "status": "todo" },
+        { "id": "06-defs", "note": "Formalizirati ključne pojmove (Condorcetov paradoks, medijanski glasač, Arrowljev teorem) u {#def-}/prp jedinice.", "status": "todo" }
+      ],
+      "coauthor_asks": [
+        { "id": "06-hr-agenda", "what": "Ovjeriti/preformulirati hrvatske tvrdnje u praksa-callout: agenda-setting Vlade pri proračunu (linija 117) i Most/Možemo kao spoiler-opcije koje krše IIA (linija 156).", "owner": "Petra", "status": "open" },
+        { "id": "06-hr-logrolling", "what": "Ovjeriti fiskalnu tvrdnju da proračunski logrolling u RH proizvodi 'političke projekte niske ekonomske opravdanosti' (linija 184).", "owner": "Milan", "status": "open" },
+        { "id": "06-hr-highway", "what": "Ovjeriti/zamijeniti hrvatski primjer nedjeljivosti (autocesta Split vs Varaždin, linija 19) — niski prioritet.", "owner": "Petra", "status": "open" }
+      ],
+      "last_render": "unknown",
+      "notes": "Teorijski snažno, obogaćeno, odličan interaktivni Condorcet prikaz, čista proza. Fale obavezna vježba i empirija callout (self). Tri praksa-callouta kriju nepotpisane hrvatske tvrdnje."
+    },
+    {
+      "id": "07-stranke-izbori",
+      "file": "chapters/07-stranke-izbori.qmd",
+      "title": "Političke stranke i izbori",
+      "stage": "draft",
+      "self_items": [
+        { "id": "07-expand", "note": "VISOK: poglavlje pretanko (112 linija) za jezgrenu ulogu u DIO II — proširiti prema 150-300 linija međunarodnim sadržajem (Hotelling/Downs, polarizacija, Arrow kut).", "status": "todo" },
+        { "id": "07-vjezba", "note": "VISOK: dodati callout-vjezba.", "status": "todo" },
+        { "id": "07-defs", "note": "Dodati 1-3 formalne Definicije (masa ključnih pojmova je samo podebljana).", "status": "todo" },
+        { "id": "07-ojs", "note": "Dodati OJS graf (Hotelling/medijanski glasač) iz međunarodnih podataka — poglavlje nema interaktivnog grafa.", "status": "todo" }
+      ],
+      "coauthor_asks": [
+        { "id": "07-hr-convergence", "what": "Ovjeriti tvrdnju o programskoj konvergenciji HDZ–SDP (linija 28, tablica 51) i o jačanju stranaka izvan centra (identitetska/antielitistička pitanja).", "owner": "Petra", "status": "open" },
+        { "id": "07-hr-turnout", "what": "Ovjeriti izlaznost na EP izborima u RH 2024. (~21 %, među najnižima u EU) + izvor (linija 75).", "owner": "Petra", "status": "open" },
+        { "id": "07-hr-pubsector", "what": "Ovjeriti tvrdnju o udjelu zaposlenih u javnom sektoru / ovisnih o mirovinsko-socijalnom sustavu i o sporosti reformi 2010-2020.", "owner": "Milan", "status": "open" }
+      ],
+      "last_render": "unknown",
+      "notes": "TANKO (draft, 112 linija). Teorijski solidno i stilski čisto, ali strukturno premalo za jezgrenu temu DIO II. Prioritet za proširenje. Domaće tvrdnje (HDZ/SDP, izlaznost) čekaju Petru/Milana."
+    },
+    {
+      "id": "08-interesne-skupine",
+      "file": "chapters/08-interesne-skupine.qmd",
+      "title": "Interesne skupine — iza kulisa politike",
+      "stage": "draft",
+      "self_items": [
+        { "id": "08-expand", "note": "VISOK: najtanje poglavlje u DIO II (85 linija) — proširiti (formiranje lobija, željezni trokuti, korporativizam, pluralizam); pažnja: ne duplicirati Olsona iz ch05.", "status": "todo" },
+        { "id": "08-vjezba", "note": "VISOK: dodati callout-vjezba (Olsonova tipologija na međunarodnim slučajevima — šećerni lobi, NRA, ZPP).", "status": "todo" },
+        { "id": "08-empirija", "note": "VISOK: dodati callout-empirija — izvući Kruegerine procjene (Indija 7,3 %, Turska 15 % BDP-a) iz proze u istaknuti callout.", "status": "todo" },
+        { "id": "08-defs-fig", "note": "Dodati formalne definicije i jednu figuru (logika kolektivnog djelovanja).", "status": "todo" }
+      ],
+      "coauthor_asks": [
+        { "id": "08-hr-lobby", "what": "Ovjeriti hrvatske tvrdnje u praksa-callout (linije 37-39): poljoprivredni lobiji, sindikati javnih službi, profesionalne komore održavaju organiziranost; dodati konkretan domaći primjer.", "owner": "Petra", "status": "open" },
+        { "id": "08-hr-capture", "what": "Domaći primjer regulatornog zarobljavanja / kružnih vrata (domaća agencija) kao poseban callout.", "owner": "Petra", "status": "open" },
+        { "id": "08-hr-burden", "what": "Ako se uvede fiskalni teret subvencije/carine 'po građaninu' s domaćim brojkama — potvrditi izvor.", "owner": "Milan", "status": "open" }
+      ],
+      "last_render": "unknown",
+      "notes": "NAJTANJE u DIO II (draft, 85 linija). Teorijski čvrsto i stilski besprijekorno, ali hitno fale vježba I empirija callout. Kruegerini nalazi zakopani u prozi. Koordinirati opseg s ch05 (Olson). 2026-06-09: primio zamku prijelaznih dobitaka (@tullock1975) migriranu iz ch05."
+    },
+    {
+      "id": "09-birokracija",
+      "file": "chapters/09-birokracija.qmd",
+      "title": "Dva pogleda na birokraciju",
+      "stage": "enriched",
+      "self_items": [
+        { "id": "09-vjezba", "note": "VISOK: dodati callout-vjezba uz postojeći OJS graf (izračun Q* i Qn za zadane b, MC; interpretacija gubitka blagostanja).", "status": "todo" },
+        { "id": "09-def", "note": "Dodati barem jednu formalnu definiciju ključnih pojmova.", "status": "todo" },
+        { "id": "09-arc-narrow", "note": "(arc) Suziti poglavlje na ono što je doista njegovo: weberovski vs javnoizborni pogled, Niskanen (ako se izvuče iz ch05), principal-agent, input/output/ishod kao priprema za ch16. Numerirane 'modele' koji se preklapaju s ch05/ch08 zamijeniti povratnim referencama.", "status": "todo" }
+      ],
+      "coauthor_asks": [
+        { "id": "09-hr-capacity", "what": "Domaći primjer birokratskog kapaciteta/klijentelizma/politizacije (podaci o zaposlenosti u javnom sektoru, kvaliteti uprave) + potpis.", "owner": "Petra", "status": "open" },
+        { "id": "09-hr-fiscalcouncil", "what": "Tvrdnje o fiskalnim vijećima, srednjoročnim okvirima, proračunskim ciklusima (linije 178, 180) ako se prizemlje na hrvatski/EU fiskalni okvir.", "owner": "Milan", "status": "open" },
+        { "id": "09-hr-irontriangle", "what": "Domaći primjer željeznog trokuta/regulatornog zarobljavanja (energetika, poljoprivreda, koncesije).", "owner": "Petra", "status": "open" }
+      ],
+      "last_render": "unknown",
+      "notes": "Konceptualno snažno, citatno uredno, dobar OJS graf, međunarodna empirija. Fale vježba i definicija (self). Arc: druga polovica se preklapa s ch05/ch08 — suziti. 2026-06-09: dodan izvor Breton (@breton1975) uz kritiku koja je prije stajala bez citata."
+    },
+    {
+      "id": "10-institucionalna-ekonomika",
+      "file": "chapters/10-institucionalna-ekonomika.qmd",
+      "title": "Nova institucionalna ekonomika — pravila igre",
+      "stage": "draft",
+      "self_items": [
+        { "id": "10-vjezba", "note": "VISOK: dodati callout-vjezba na međunarodnim podacima (WGI/Rule of Law vs BDP p.c., inkluzivne vs ekstraktivne institucije).", "status": "todo" },
+        { "id": "10-defs", "note": "Dodati formalne definicije ključnih pojmova (transakcijski troškovi, institucije, inkluzivne/ekstraktivne).", "status": "todo" }
+      ],
+      "coauthor_asks": [
+        { "id": "10-hr-institutions", "what": "Domaći primjer institucionalne provedbe (brzina sudova, zemljišne knjige, predvidivost regulative) + potpis na tvrdnje o domaćoj institucionalnoj kvaliteti.", "owner": "Petra", "status": "open" },
+        { "id": "10-hr-shadow", "what": "Domaća empirija o utjecaju porezne administracije/sive ekonomije na poreznu disciplinu (sekcija 'Porezi, institucije i poticaji').", "owner": "Milan", "status": "open" }
+      ],
+      "last_render": "unknown",
+      "notes": "Teorijski bogato, dobro citirano, odlično međunarodno obogaćivanje (Estonija, Danska). Draft jer fale vježba i formalne definicije (oba self). 111 linija ali ocijenjeno adequate zbog gustoće."
+    },
+    {
+      "id": "11-konstitucionalna-ekonomika",
+      "file": "chapters/11-konstitucionalna-ekonomika.qmd",
+      "title": "Konstitucionalna (ustavna) ekonomika",
+      "stage": "enriched",
+      "self_items": [
+        { "id": "11-vjezba", "note": "VISOK: dodati callout-vjezba (klasificiranje pravila ustavno/operativno; zašto je dano fiskalno pravilo otpornije na vremensku nedosljednost).", "status": "todo" },
+        { "id": "11-cite-empirics", "note": "Dva necitirana empirijska nalaza — dodati izvore (međunarodni sadržaj).", "status": "todo" },
+        { "id": "11-arc-canonical", "note": "(arc) Učiniti ovo kanonskim mjestom za političko-proračunske cikluse (povezano s vremenskom nedosljednošću); na ostalim mjestima (ch05/07/09) zadržati samo kratku referencu.", "status": "todo" }
+      ],
+      "coauthor_asks": [
+        { "id": "11-hr-fiscalrules", "what": "Hrvatski primjer/empirija za fiskalna pravila i fiskalno vijeće (Povjerenstvo za fiskalnu politiku, EU fiskalna pravila u RH kontekstu).", "owner": "Milan", "status": "open" },
+        { "id": "11-hr-cycle", "what": "Domaći primjer političko-proračunskih ciklusa (predizborno povećanje rashoda/plaća/mirovina).", "owner": "Petra", "status": "open" },
+        { "id": "11-hr-independence", "what": "Potpis na tvrdnje o hrvatskoj neovisnosti institucija (HNB, sudstvo, transparentnost) ako se ilustrira domaćim slučajem.", "owner": "Milan ili Petra", "status": "open" }
+      ],
+      "last_render": "unknown",
+      "notes": "Konceptualno zrelo, dobro citirano, ima 2 definicije. Blokira ga nedostatak vježbe i dva necitirana empirijska nalaza (oba rješivo self). Arc: prirodni kanonski dom za proračunske cikluse."
+    },
+    {
+      "id": "12-instrumenti",
+      "file": "chapters/12-instrumenti.qmd",
+      "title": "Instrumenti državne intervencije",
+      "stage": "enriched",
+      "self_items": [
+        { "id": "12-vjezba", "note": "VISOK: dodati callout-vjezba (student razvrsta instrumente po NATO resursu za zadani cilj i ocijeni ekonomski/politički trošak).", "status": "todo" },
+        { "id": "12-defs", "note": "Dodati formalne definicije ključnih pojmova.", "status": "todo" },
+        { "id": "12-cite", "note": "Dodati citate za 2-3 međunarodne empirijske tvrdnje.", "status": "todo" }
+      ],
+      "coauthor_asks": [
+        { "id": "12-hr-mix", "what": "Domaći primjer kombinacije instrumenata (klimatska/energetska politika, državna jamstva, subvencije poljoprivredi) s domaćom empirijom i potpisom.", "owner": "Milan", "status": "open" },
+        { "id": "12-hr-soe", "what": "Dopuniti dio o javnim poduzećima (linije 64-70) domaćim kontekstom (politički motivirano kadroviranje, miješanje ciljeva).", "owner": "Petra", "status": "open" },
+        { "id": "12-hr-spending", "what": "Domaća ilustracija strukture javne potrošnje ili poreznih olakšica kao instrumenta (MFin podaci, linije 34, 38-42).", "owner": "Milan", "status": "open" }
+      ],
+      "last_render": "unknown",
+      "notes": "Solidno obogaćeno, stilski čisto, jaka NATO okosnica i trade-off slot. Fale obavezna vježba, formalne definicije i citati za 2-3 empirijske tvrdnje. 112 linija, ocijenjeno adequate."
+    },
+    {
+      "id": "13-javna-potrosnja",
+      "file": "chapters/13-javna-potrosnja.qmd",
+      "title": "Kako država troši naš novac?",
+      "stage": "draft",
+      "self_items": [
+        { "id": "13-defs", "note": "Dodati formalne Definicije (poglavlje ih nema nijednu).", "status": "todo" },
+        { "id": "13-rg-prose", "note": "Dodati prozno uporište za r-g dinamiku na koju se vježba poziva.", "status": "todo" },
+        { "id": "13-stub-draft", "slot": "comparative", "note": "Strukturni nацrt placeholder-sekcije moguć samo s EU/međunarodnim okvirom dok se čeka Milanova domaća empirija.", "status": "todo" }
+      ],
+      "coauthor_asks": [
+        { "id": "13-hr-section", "what": "Popuniti potpoglavlje 'Javna potrošnja u Hrvatskoj i EU' (% BDP-a, COFOG/Eurostat usporedba RH vs EU, specifičnosti hrvatskog proračuna) — zamijeniti placeholder callout-note (linije 158-162).", "owner": "Milan", "status": "open" },
+        { "id": "13-hr-position", "what": "Ovjeriti pozicioniranje RH u europskom kontekstu (udio transfera, mirovinski/zdravstveni rashodi) s MFin/Eurostat serijama.", "owner": "Milan", "status": "open" },
+        { "id": "13-hr-welfaremodel", "what": "Provjeriti tipologiju modela socijalne države i smještanje RH u nju.", "owner": "Petra", "status": "open" }
+      ],
+      "last_render": "unknown",
+      "notes": "Ima empirija/praksa/vježba trijadu i funkcionalan OJS graf. Draft jer cijela domaća sekcija je placeholder (čeka Milana) + nijedna formalna definicija. Glavni co-author čvor uz ch12."
+    },
+    {
+      "id": "14-porezi",
+      "file": "chapters/14-porezi.qmd",
+      "title": "Porezi — više od tereta",
+      "stage": "enriched",
+      "self_items": [
+        { "id": "14-style-confirm", "note": "Lagani potvrdni style sweep — 23 lint pogotka pretežno su lažni pozitivi iz 'Kako čitati graf'/'Što isprobati' instruktivnih blokova i naslova tablica; potvrditi da nema dvotočke/crtice u tekućoj prozi.", "status": "todo" }
+      ],
+      "coauthor_asks": [
+        { "id": "14-hr-rates", "what": "Ovjeriti i opskrbiti izvorom SVE hrvatske porezne stope/agregate: PDV 25/13/5 %, PDV ~12-13 % BDP, dohodak (reforma 2024. na 23 %, ukidanje prireza), doprinosi MIO 20 % / zdravstvo 16,5 %, dobit 10/18 %, promet nekretnina 3 %; dodati datum stanja.", "owner": "Milan", "status": "open" },
+        { "id": "14-hr-empirija", "what": "Potpisati i datirati dvije callout-empirija tvrdnje (udio potrošnih poreza, porezi/doprinosi na rad ~pola prihoda opće države, gubitak ~1 % BDP).", "owner": "Milan", "status": "open" },
+        { "id": "14-hr-wedge", "what": "Potvrditi usporedbu hrvatskog poreznog klina s prosjekom EU (~38 %) + izvor (Eurostat/OECD Taxing Wages).", "owner": "Milan", "status": "open" },
+        { "id": "14-hr-reform", "what": "Provjeriti formulaciju o učinku reforme 2024. na fiskalni prostor lokalnih jedinica (ovisnost o prirezu).", "owner": "Milan", "status": "open" },
+        { "id": "14-hr-ubi", "what": "Pregledati poveznicu UBI/UBC i hrvatskog 2. mirovinskog stupa.", "owner": "Petra", "status": "open" }
+      ],
+      "last_render": "unknown",
+      "notes": "Najbogatije i pedagoški najjače poglavlje (rich, 1470 linija, 36 OJS, ima vježbe). Gotovo gotovo: glavni preostali posao je MILANOVA ovjera hrvatskih stopa/agregata + lagani style sweep. Drži više domaćih brojki nego ijedno poglavlje."
+    },
+    {
+      "id": "15-drzavni-neuspjesi",
+      "file": "chapters/15-drzavni-neuspjesi.qmd",
+      "title": "Državni neuspjesi i prepreke kvalitetnim javnim politikama",
+      "stage": "enriched",
+      "self_items": [
+        { "id": "15-vjezba", "note": "VISOK: dodati callout-vjezba uz interaktivni 'test državnog neuspjeha' (primijeniti 8 pitanja na hipotetski međunarodni program).", "status": "todo" },
+        { "id": "15-defs", "note": "Dodati 1-3 formalne definicije ključnih pojmova.", "status": "todo" }
+      ],
+      "coauthor_asks": [
+        { "id": "15-hr-implementation", "what": "Ovjeriti/preformulirati tvrdnju (linija 70) da provedbeni neuspjeh pogađa zemlje koje reformiraju pod pritiskom bez kapaciteta; ev. domaći primjer.", "owner": "Petra", "status": "open" },
+        { "id": "15-hr-example", "what": "Domaći primjer državnog neuspjeha (instrumentalni/koordinacijski neuspjeh u hrvatskoj javnoj politici) kao callout-praksa.", "owner": "Milan ili Petra", "status": "open" }
+      ],
+      "last_render": "unknown",
+      "notes": "Konceptualno snažno (arc ga hvali kao sintetski čvor i djelomični zaključak — spaja DIO I+II+III). Funkcionalan interaktivni test. Fale vježba i 1-3 definicije (self)."
+    },
+    {
+      "id": "16-novi-javni-menadzment",
+      "file": "chapters/16-novi-javni-menadzment.qmd",
+      "title": "Novi javni menadžment",
+      "stage": "enriched",
+      "self_items": [
+        { "id": "16-vjezba", "note": "VISOK: dodati callout-vjezba (dizajn 3 pokazatelja otporna na Goodhartov zakon; usporedba privatizacije telekoma i vodoopskrbe iz Pollitta).", "status": "todo" },
+        { "id": "16-defs", "note": "Dodati formalne definicije (poglavlje ih nema nijednu).", "status": "todo" },
+        { "id": "16-cite-legrand", "note": "Popuniti citatnu prazninu (Le Grand).", "status": "todo" }
+      ],
+      "coauthor_asks": [
+        { "id": "16-hr-npm", "what": "Domaći primjer NPM reformi (agencifikacija, outsourcing komunalnih usluga, korporativizacija javnih poduzeća) — poglavlje počiva samo na međunarodnim primjerima.", "owner": "Petra", "status": "open" },
+        { "id": "16-hr-capacity", "what": "Tvrdnje o domaćem administrativnom kapacitetu pri NPM-u (Schickovo 'najprije osnove' primijenjeno na RH).", "owner": "Petra", "status": "open" },
+        { "id": "16-hr-agency-fiscal", "what": "Fiskalni učinci agencifikacije (proračunska autonomija agencija, value-for-money) — MFin kontekst.", "owner": "Milan", "status": "open" }
+      ],
+      "last_render": "unknown",
+      "notes": "Sadržajno solidno i obogaćeno (mehanizam+komparativni+empirijski slotovi). 89 linija ali ocijenjeno adequate (voice kritičar: leži u centru glasa, ne 'tanko'). Fale vježba, sve definicije, Le Grand citat, hrvatski primjer."
+    },
+    {
+      "id": "17-novo-upravljanje",
+      "file": "chapters/17-novo-upravljanje.qmd",
+      "title": "Od novog javnog menadžmenta prema novom upravljanju",
+      "stage": "enriched",
+      "self_items": [
+        { "id": "17-vjezba", "note": "VISOK: dodati callout-vjezba (tvrdokorni problem ocijenjen protiv 3 uvjeta uspjeha mreže iz Ansell-Gash; ili 4 razine digitalne transformacije).", "status": "todo" },
+        { "id": "17-def", "note": "Dodati formalnu definiciju ključnih pojmova.", "status": "todo" }
+      ],
+      "coauthor_asks": [
+        { "id": "17-hr-digital", "what": "Hrvatski anchor za whole-of-government / digitalnu državu (e-Građani, jedinstvene kontaktne točke) s ocjenom dosega i ograničenja.", "owner": "Petra", "status": "open" },
+        { "id": "17-hr-participation", "what": "Domaći primjer javnih savjetovanja/participativnog budžetiranja (e-Savjetovanja, lokalni proračuni) uz ocjenu je li participacija stvarna ili formalna.", "owner": "Petra", "status": "open" },
+        { "id": "17-hr-ppp", "what": "Domaći primjer javno-privatnog partnerstva (raspodjela rizika, fiskalni trošak).", "owner": "Milan", "status": "open" }
+      ],
+      "last_render": "unknown",
+      "notes": "Konceptualno bogato, citatski čvrsto, prošlo style sweep. 93 linije ali adequate (voice: u centru glasa). Fale vježba i formalna definicija (self); hrvatski anchor za final (Petra)."
+    },
+    {
+      "id": "18-cba-evaluacija",
+      "file": "chapters/18-cba-evaluacija.qmd",
+      "title": "Cost-benefit analiza i evaluacija javnih politika",
+      "stage": "enriched",
+      "self_items": [
+        { "id": "18-fix-year", "note": "Razriješiti nesklad godine kod @hmtreasury2026 (Green Book) — provjeriti ključ/godinu u references.bib.", "status": "todo" },
+        { "id": "18-defs", "note": "Eventualno dodati još koju formalnu definiciju.", "status": "todo" }
+      ],
+      "coauthor_asks": [
+        { "id": "18-hr-cba", "what": "Hrvatski ili EU-kohezijski primjer obvezne CBA-e (veliki infrastrukturni projekt iz EU fondova gdje je CBA preduvjet financiranja) kao callout-praksa — poglavlju potpuno fali domaće sidro.", "owner": "Milan", "status": "open" },
+        { "id": "18-hr-evaluation", "what": "Domaća institucionalna praksa neovisne evaluacije javnih politika ('policy learning loop' u hrvatskom kontekstu).", "owner": "Petra", "status": "open" }
+      ],
+      "last_render": "unknown",
+      "notes": "Sadržajno zrelo, dobro citirano, metodološki jako. Ima vježbu, prošlo style sweep. Preostaje @hmtreasury2026 godina, ev. još definicija, i jedan domaći primjer (Milan)."
+    },
+    {
+      "id": "19-reforme",
+      "file": "chapters/19-reforme.qmd",
+      "title": "Reforme u javnom sektoru — što funkcionira i zašto?",
+      "stage": "draft",
+      "self_items": [
+        { "id": "19-vjezba", "note": "VISOK: dodati callout-vjezba (Fernandez-Rodrik model kompenzacijske sheme; šok-terapija vs gradualizam kroz vanjsko sidro; ili EBRD/WGI podaci).", "status": "todo" },
+        { "id": "19-defs", "note": "Dodati formalne definicije ključnih pojmova.", "status": "todo" },
+        { "id": "19-synthesis", "slot": "comparative", "note": "(arc) Razmotriti sintetski epilog koji zatvara petodijelni luk knjige — ch19 je tematski uzak i ne vraća se na okosnicu iz uvoda; knjiga nema zasebno zaključno poglavlje.", "status": "todo" }
+      ],
+      "coauthor_asks": [
+        { "id": "19-hr-reforms", "what": "Ovjeriti i POTPISATI domaće tvrdnje (paragraf 130): ERM II 2020 uvjetovan reformama fiskalnog okvira i javnih poduzeća, euro 2023, NPOO kao mehanizam uvjetovanosti. Dodati domaće izvore (HNB/MFin/EK konvergencija, NPOO).", "owner": "Milan", "status": "open" },
+        { "id": "19-hr-accession", "what": "Ovjeriti tvrdnje o reformama tijekom pristupnih pregovora (pravosuđe, tržišno natjecanje, javna uprava) i o usporavanju reformskog zamaha nakon ulaska u EU; nijansirati formulacije.", "owner": "Petra", "status": "open" },
+        { "id": "19-hr-fatigue", "what": "Domaći ilustrativni primjer reformskog zamora/institucionalizacije reforme kao callout-praksa.", "owner": "Milan ili Petra", "status": "open" }
+      ],
+      "last_render": "unknown",
+      "notes": "ZADNJE poglavlje. Teorijski solidno, stilski čisto, jak mehanizam. Draft jer fale vježba i definicije (self) + NOSIVE domaće tvrdnje (ERM II/euro/NPOO) traže ovjeru i izvore koautora. Arc: ne zatvara luk knjige — razmotriti epilog."
+    }
+  ]
+}

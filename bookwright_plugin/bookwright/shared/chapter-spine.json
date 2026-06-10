@@ -1,0 +1,125 @@
+{
+  "note": "REBUILT 2026-06-09 against the live 20-chapter book. Per chapter, the key aspects the Vodič kroz poglavlje should preview and the handful of key terms that earn a Definicija and seed the exercises. Entries for 00-05 are taken from the per-chapter evaluation (2026-06-09); entries for 06-19 are PROPOSED from the same evaluation's surfaced concepts and need ratification. All ratified:false until you confirm. book-continuity reads this in spine mode.",
+  "chapters": [
+    {
+      "id": "00-uvod",
+      "key_aspects": ["Javne politike kao spoj ekonomije, politike i institucija (trostruka perspektiva, okosnica knjige)", "Operativna metoda analize politika i razdvajanje namjere od mehanizma", "Logički luk knjige: tržište može zakazati → država može zakazati → institucije određuju ishod → primjena → dizajn boljih politika", "Odbacivanje pitanja 'više/manje države' u korist 'kakva država, za koje probleme, s kojim instrumentima'"],
+      "key_terms": ["javne politike", "tržišni neuspjeh", "državni neuspjeh", "teorija javnog izbora", "institucije (pravila igre)"],
+      "ratified": false
+    },
+    {
+      "id": "01-uloga-drzave",
+      "key_aspects": ["Zašto tržišnom gospodarstvu treba država (motivacija javnih financija)", "Musgraveov okvir i tri funkcije države", "Sustav cijena kao mehanizam učinkovite alokacije i agregacije raspršenog znanja", "Pareto učinkovitost, njezino ograničenje i prelazak na Kaldor-Hicks", "Oba teorema ekonomike blagostanja i razdvajanje učinkovitosti od pravednosti"],
+      "key_terms": ["Pareto učinkovitost", "Kaldor-Hicksov kriterij", "Prvi i drugi teorem ekonomike blagostanja", "Edgeworthova kutija / krivulja ugovora", "Musgraveov okvir"],
+      "ratified": false
+    },
+    {
+      "id": "02-alokacijska-funkcija",
+      "key_aspects": ["Tržišni neuspjeh kao odstupanje od prvog teorema", "Javna dobra: slobodni jahač, vertikalno zbrajanje, podproizvodnja", "Eksternalije: privatni vs društveni trošak, Pigou i Coase", "Asimetrične informacije: nepovoljan izbor i moralni hazard", "Tržišna moć i prirodni monopol; zajednički i meritorni resursi"],
+      "key_terms": ["tržišni neuspjeh", "javno dobro", "eksternalija", "asimetrične informacije", "prirodni monopol"],
+      "ratified": false
+    },
+    {
+      "id": "03-distribucijska-funkcija",
+      "key_aspects": ["Zašto učinkovit tržišni ishod može biti društveno neprihvatljiv", "Instrumenti preraspodjele (porezi, transferi, javne usluge) i vertikalna/horizontalna dimenzija", "Normativni okviri pravednosti: utilitarizam, Rawls, robni egalitarizam", "Paternalizam (tvrdi vs meki/nudge) i Millovo načelo štete", "Odmjeravanje efikasnosti i pravednosti (Okunovo šuplje vedro)"],
+      "key_terms": ["redistribucija (preraspodjela)", "Rawlsov pristup / veo neznanja / maximin", "opadajuća granična korisnost dohotka", "Lorenzova krivulja i Ginijev koeficijent", "paternalizam"],
+      "ratified": false
+    },
+    {
+      "id": "04-stabilizacijska-funkcija",
+      "key_aspects": ["Zašto tržišno gospodarstvo nije samo po sebi stabilno (Keynes)", "Kako fiskalna politika protuciklički djeluje", "Fiskalni multiplikator i ovisnost o ciklusu/ZLB", "Automatski stabilizatori i struktura javnih financija", "Diskrecija (kašnjenja, moralni hazard) i dugoročne posljedice kriza (ratchet, histereza)"],
+      "key_terms": ["fiskalni multiplikator", "automatski stabilizatori", "diskrecijska fiskalna politika", "histereza", "stabilnost kao javno dobro"],
+      "ratified": false
+    },
+    {
+      "id": "05-javni-izbor",
+      "key_aspects": ["Definicija javnog izbora i metodologija (metodološki individualizam, racionalni izbor)", "Konstitucionalna razina: pravila igre vs ishodi (NAJAVA — puna razrada u pogl. 11)", "Trijada birač-političar-birokrat i njihovi poticaji", "Racionalna ignorancija i ekspresivno glasanje (R = P·B − C)", "Mehanizmi neuspjeha države kao NAJAVA pogl. 8/9 (ne puna razrada)"],
+      "key_terms": ["javni izbor / metodološki individualizam", "racionalna ignorancija", "ekspresivno glasanje", "rent-seeking (najava)", "logrolling"],
+      "ratified": false
+    },
+    {
+      "id": "06-kolektivni-izbor",
+      "key_aspects": ["Zašto agregiranje preferencija nije jednostavno", "Condorcetov paradoks i cikličke većine", "Teorem medijanskog glasača kao poseban slučaj (primjena odgođena za pogl. 7)", "Arrowljev teorem nemogućnosti", "Stabilnost ishoda iz proceduralnih ograničenja, ne iz preferencija"],
+      "key_terms": ["Condorcetov paradoks", "teorem medijanskog glasača", "Arrowljev teorem nemogućnosti", "jednovršne preferencije", "moć dnevnog reda"],
+      "ratified": false
+    },
+    {
+      "id": "07-stranke-izbori",
+      "key_aspects": ["Kako se stranke natječu za glasove (Hotelling-Downs)", "Politički centar, konvergencija i polarizacija", "Primjena medijanskog glasača na stranačko natjecanje", "Višedimenzionalni prostor i specijalizacija za skupine birača", "Pakiranje politika (bundling) i izborni paketi"],
+      "key_terms": ["Hotelling-Downs model", "konvergencija prema medijanu", "polarizacija", "pakiranje (bundling)", "višedimenzionalni politički prostor"],
+      "ratified": false
+    },
+    {
+      "id": "08-interesne-skupine",
+      "key_aspects": ["Logika kolektivnog djelovanja (Olson)", "Koncentrirane koristi vs raspršeni troškovi", "Formiranje lobija, selektivni poticaji, željezni trokuti", "Lov na rentu i njegov društveni trošak (Tullock, Krueger)", "Regulatorno zarobljavanje (Stigler) — KANONSKI dom"],
+      "key_terms": ["Olsonova logika kolektivnog djelovanja", "koncentrirane koristi / raspršeni troškovi", "lov na rentu (rent-seeking)", "regulatorno zarobljavanje", "željezni trokut"],
+      "ratified": false
+    },
+    {
+      "id": "09-birokracija",
+      "key_aspects": ["Weberovski ideal nasuprot javnoizbornom pogledu", "Niskanenov model maksimizacije proračuna — KANONSKI dom", "Principal-agent problem u upravi", "Razlika input/output/ishod kao priprema za mjerenje (pogl. 16)", "Birokratski kapacitet kao preduvjet i izvor državnih neuspjeha"],
+      "key_terms": ["weberovska birokracija", "Niskanenov model", "principal-agent problem", "input/output/ishod", "bureau-shaping (Dunleavy)"],
+      "ratified": false
+    },
+    {
+      "id": "10-institucionalna-ekonomika",
+      "key_aspects": ["Institucije kao 'pravila igre' (North)", "Transakcijski troškovi (Coase, Williamson)", "Inkluzivne vs ekstraktivne institucije (Acemoglu-Robinson)", "Institucionalna kvaliteta i ekonomski razvoj", "Porezi, institucije i poticaji"],
+      "key_terms": ["transakcijski troškovi", "institucije (pravila igre)", "inkluzivne vs ekstraktivne institucije", "institucionalna kvaliteta", "ovisnost o putanji"],
+      "ratified": false
+    },
+    {
+      "id": "11-konstitucionalna-ekonomika",
+      "key_aspects": ["Razina pravila vs razina ishoda (Buchanan)", "Veo neizvjesnosti i ex ante izbor pravila", "Vremenska nedosljednost (Kydland-Prescott)", "Fiskalna pravila i vjerodostojnost", "Političko-proračunski ciklusi — KANONSKI dom"],
+      "key_terms": ["veo neizvjesnosti", "vremenska nedosljednost", "fiskalna pravila", "političko-proračunski ciklus", "pravila vs diskrecija"],
+      "ratified": false
+    },
+    {
+      "id": "12-instrumenti",
+      "key_aspects": ["NATO okvir instrumenata (Hood: Nodality, Authority, Treasure, Organization)", "Porezi i subvencije kao instrumenti utjecaja na ponašanje", "Regulacija i javna poduzeća", "Odabir i kombinacija instrumenata (ekonomski i politički trošak)", "Trade-off između instrumenata"],
+      "key_terms": ["NATO okvir instrumenata", "regulacija", "subvencija", "javno poduzeće", "kombinacija instrumenata"],
+      "ratified": false
+    },
+    {
+      "id": "13-javna-potrosnja",
+      "key_aspects": ["Struktura i rast javne potrošnje (Wagnerov zakon)", "Politička potrošnja i proračunski ciklusi", "Dinamika javnog duga (odnos r-g)", "Tko dobiva, tko gubi", "Javna potrošnja u Hrvatskoj i EU (co-author sekcija)"],
+      "key_terms": ["Wagnerov zakon", "struktura javne potrošnje (COFOG)", "dinamika duga (r-g)", "proračunski ciklus", "javni dug"],
+      "ratified": false
+    },
+    {
+      "id": "14-porezi",
+      "key_aspects": ["Porezi kao instrument i izvor prihoda", "Porezna incidencija i elastičnost", "Mrtvi teret poreza (DWL ∝ t²) i Ramseyevo pravilo", "Porezni klin na rad i Lafferova logika", "Oporezivanje kapitala i izazovi u doba AI-a"],
+      "key_terms": ["porezna incidencija", "mrtvi teret poreza", "Ramseyevo pravilo", "porezni klin", "Lafferova krivulja"],
+      "ratified": false
+    },
+    {
+      "id": "15-drzavni-neuspjesi",
+      "key_aspects": ["Državni neuspjeh nasuprot tržišnom neuspjehu", "Tipologija neuspjeha (instrumentalni, koordinacijski, provedbeni, birokratski)", "Pretjerani formalizam i procedura nasuprot rezultatu", "Sinteza DIO I+II+III (zašto država ulazi, zašto zakaže, koja pravila pomažu)", "Test državnog neuspjeha (8 pitanja)"],
+      "key_terms": ["državni neuspjeh", "instrumentalni neuspjeh", "koordinacijski neuspjeh", "provedbeni neuspjeh", "pretjerani formalizam"],
+      "ratified": false
+    },
+    {
+      "id": "16-novi-javni-menadzment",
+      "key_aspects": ["NPM kao uvođenje tržišnih i menadžerskih mehanizama", "Mjerenje učinka i upravljanje prema rezultatima", "Goodhartov zakon i igra s pokazateljima", "Agencifikacija i problem odgovornosti", "Privatizacija i regulacija javnih usluga"],
+      "key_terms": ["novi javni menadžment", "Goodhartov zakon", "upravljanje prema rezultatima", "agencifikacija", "value-for-money"],
+      "ratified": false
+    },
+    {
+      "id": "17-novo-upravljanje",
+      "key_aspects": ["Od NPM-a prema novom upravljanju (governance)", "Mreže, suradnja i whole-of-government", "Uvjeti uspjeha suradničkog upravljanja (Ansell-Gash)", "Digitalna država i razine transformacije", "Participacija (stvarna nasuprot formalnoj)"],
+      "key_terms": ["novo upravljanje (governance)", "mrežno upravljanje", "suradničko upravljanje", "whole-of-government", "digitalna država"],
+      "ratified": false
+    },
+    {
+      "id": "18-cba-evaluacija",
+      "key_aspects": ["CBA kao strukturirana usporedba koristi i troškova", "Koraci CBA i monetizacija ne-tržišnih vrijednosti", "Diskontna stopa i neto sadašnja vrijednost", "Ograničenja CBA i osjetljivost rezultata", "Evaluacija kao dio upravljanja temeljenog na rezultatima"],
+      "key_terms": ["cost-benefit analiza", "neto sadašnja vrijednost (NPV)", "diskontna stopa", "monetizacija ne-tržišnih vrijednosti", "evaluacija javnih politika"],
+      "ratified": false
+    },
+    {
+      "id": "19-reforme",
+      "key_aspects": ["Politička ekonomija provedbe reformi", "Sekvenciranje i brzina (šok-terapija vs gradualizam)", "Kompenzacijske sheme i otpor reformama (Fernandez-Rodrik)", "Vanjsko sidro (EU) kao mehanizam uvjetovanosti", "Iskustvo srednje i istočne Europe"],
+      "key_terms": ["sekvenciranje reformi", "šok-terapija vs gradualizam", "kompenzacijska shema", "vanjsko sidro", "reformski zamor"],
+      "ratified": false
+    }
+  ]
+}

@@ -50,6 +50,8 @@ Glavno otkriće te literature je da gubitak nije proporcionalan vrijednosti rent
 
 Gordon Tullock upravo je upozorio da društveni trošak monopola nije samo gubitak učinkovitosti, nego i sve što se potroši na stjecanje i obranu povlaštenog položaja.
 
+Lov na rentu objašnjava i zašto neučinkovite povlastice nadžive svoje opravdanje. Tullock je tu pojavu nazvao zamkom prijelaznih dobitaka (*transitional gains trap*) [@tullock1975]. Jednom kada kvota, subvencija ili monopol stvore rentu, ona se kapitalizira u vrijednost dozvola, zemljišta ili poduzeća postojećih korisnika. Ukidanje povlastice tada za njih znači stvaran gubitak jer su mnogi za taj povlašteni položaj platili punu tržišnu cijenu, pa ulažu znatne resurse u obranu *statusa quo*. Tako se mjera koja je možda imala smisla u početku održava dugo nakon što je izgubila ekonomsko opravdanje, ne zato što i dalje koristi društvu, nego zato što bi njezino uklanjanje nekoga konkretno oštetilo.
+
 ## Regulatorno zarobljavanje
 
 Poseban i osobito važan oblik utjecaja interesnih skupina jest **regulatorno zarobljavanje** (*regulatory capture*). Ono nastaje kada regulator, osnovan da štiti javni interes, postupno počne djelovati u interesu sektora koji bi trebao nadzirati [@stigler1971; @peltzman1976]. To se ne događa nužno kroz korupciju. Češće je posljedica informacijske ovisnosti (regulator zna manje o sektoru od poduzeća), organizacijske asimetrije (industrija aktivno sudjeluje u savjetovanjima, potrošači rijetko) i zajedničke profesionalne kulture. Poseban je kanal i pojava **kružnih vrata** (*revolving doors*) u kojoj dužnosnici nakon mandata prelaze na dobro plaćene pozicije u tvrtkama koje su prethodno regulirali, a stručnjaci kruže između regulatora, ministarstava i industrije [@dalbo2006].

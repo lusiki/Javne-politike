@@ -1,0 +1,15 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "bookwright-local",
+  "description": "Local marketplace for the Javne politike book tooling.",
+  "owner": { "name": "Luka Sikic", "email": "luka.sikic.gm@gmail.com" },
+  "plugins": [
+    {
+      "name": "bookwright",
+      "description": "Per-chapter and status tooling for the Javne politike Quarto book. A book-conductor that tracks chapter status and routes work into self vs co-author piles, book-style (enforces STYLE.md), book-enrich (applies ENRICHMENT.md), book-review (a five-critic chapter panel), and the five critics they dispatch.",
+      "source": "./bookwright",
+      "author": { "name": "Luka Sikic", "email": "luka.sikic.gm@gmail.com" },
+      "category": "writing"
+    }
+  ]
+}
