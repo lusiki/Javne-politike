@@ -14,6 +14,10 @@ title: "Novi javni menadžment"
 
 Tijekom 1980-ih i 1990-ih godina mnoge razvijene zemlje suočile su se s rastom javne potrošnje, fiskalnim krizama i kritikama neučinkovitosti države. Nakon snažnog širenja države blagostanja u desetljećima nakon Drugog svjetskog rata, javni sektor u mnogim je zemljama postao velik, složen i skup. Javna potrošnja rasla je zbog razvoja mirovinskih sustava, zdravstva, obrazovanja i socijalne zaštite, dok su gospodarske krize 1970-ih smanjile fiskalni prostor za daljnje širenje države. U tom kontekstu sve se češće govorilo o „preopterećenoj državi" koja preuzima sve više funkcija, ali ih ne obavlja dovoljno učinkovito [@tanzi2011].
 
+::: {#def-novi-javni-menadzment}
+**Novi javni menadžment** (*New Public Management*, NPM) je reformski pristup koji od 1980-ih pokušava javni sektor učiniti učinkovitijim uvođenjem tržišnih mehanizama, mjerljivih ciljeva, kontrole rezultata, konkurencije i discipline troškova — nasuprot tradicionalnoj birokratskoj logici pravila i procedura [@hood1991].
+:::
+
 Upravo iz takvog okruženja nastaje **Novi javni menadžment** (engl. *New Public Management*, NPM). Riječ je o skupu reformskih ideja koje su pokušale javni sektor učiniti učinkovitijim, fleksibilnijim i više usmjerenim na rezultate. Christopher Hood opisao je NPM kao novi stil upravljanja javnim sektorom koji naglašava profesionalni menadžment, mjerljive ciljeve, kontrolu rezultata, konkurenciju i disciplinu troškova [@hood1991]. NPM je pritom pokušao državu organizirati tako da više nalikuje poduzeću, s manje pravila i procedura, a više ciljeva, rezultata i odgovornosti.
 
 Novi javni menadžment nije značio potpuno povlačenje države, nego promjenu načina na koji država djeluje. Umjesto da država sve sama proizvodi i izravno pruža, sve se više otvaralo pitanje može li neke usluge prepustiti tržištu, privatnom sektoru, neprofitnim organizacijama ili autonomnim javnim agencijama. Osborne i Gaebler taj su pristup saželi poznatom metaforom prema kojoj država treba više „upravljati kormilom", a manje „veslati" [@osborne1992].
@@ -48,9 +52,21 @@ Reforme britanskog zdravstvenog sustava (NHS) u devedesetima dobar su primjer do
 
 Druga velika dimenzija NPM-a bila je **korporativno upravljanje** javnim sektorom. Tradicionalna birokracija počivala je na hijerarhiji, pravilima, formalnim procedurama i neutralnosti službenika [@weber1978]. Takav je model imao važne prednosti poput predvidljivosti, zakonitosti i profesionalnosti, ali su ga kritičari smatrali previše usmjerenim na poštivanje procedura, a premalo na rezultate.
 
-NPM je zato pokušao pomaknuti fokus s pitanja „je li procedura poštovana?" na pitanje „što je postignuto?". U javni sektor uvode se koncepti poput **upravljanja prema rezultatima**, strateškog planiranja, pokazatelja uspješnosti, vrednovanja programa, ugovora o učinku i koncepta „vrijednosti za novac" (*value for money*). U takvom pristupu javne institucije dobivaju veću autonomiju, ali i veću odgovornost. One se ne ocjenjuju samo prema tome jesu li potrošile sredstva u skladu s pravilima, nego prema rezultatima kao što su kraće liste čekanja, bolji obrazovni ishodi ili brže rješavanje predmeta.
+NPM je zato pokušao pomaknuti fokus s pitanja „je li procedura poštovana?" na pitanje „što je postignuto?". ::: {#def-upravljanje-prema-rezultatima}
+**Upravljanje prema rezultatima** (*performance management*) je menadžerski pristup koji ocjenjuje javne institucije prema postignutim ishodima, a ne prema usklađenosti s procedurama; kombinira stratešku autonomiju s odgovornošću za mjerljive pokazatelje uspješnosti.
+:::
+
+::: {#def-value-for-money}
+**Vrijednost za novac** (*value for money*) je NPM kriterij koji traži da se javna sredstva alociraju na način koji osigurava najveći mogući ishod po utrošenoj kuni: kombinira ekonomičnost (niski input-trošak), učinkovitost (dobar omjer output/input) i efektivnost (postizanje ciljnog ishoda).
+:::
+
+U javni sektor uvode se koncepti poput **upravljanja prema rezultatima**, strateškog planiranja, pokazatelja uspješnosti, vrednovanja programa, ugovora o učinku i koncepta „vrijednosti za novac" (*value for money*). U takvom pristupu javne institucije dobivaju veću autonomiju, ali i veću odgovornost. One se ne ocjenjuju samo prema tome jesu li potrošile sredstva u skladu s pravilima, nego prema rezultatima kao što su kraće liste čekanja, bolji obrazovni ishodi ili brže rješavanje predmeta.
 
 Međutim, upravljanje prema rezultatima donosi i **problem mjerenja**. U privatnom sektoru profit je jednostavan, iako ne savršen, pokazatelj uspjeha. U javnom sektoru takav jedinstveni pokazatelj ne postoji. Škola nije uspješna samo ako ima visoke rezultate na testovima, nego i ako razvija kritičko mišljenje i građansku odgovornost. Bolnica nije uspješna samo ako obavi velik broj zahvata, nego i ako osigurava kvalitetnu i pravednu skrb. Zato je jedan od glavnih izazova NPM-a bio kako mjeriti ono što je važno, a ne samo ono što je lako mjerljivo.
+
+::: {#def-goodhartov-zakon}
+**Goodhartov zakon** glasi da kada neka mjera postane operativni cilj, ona prestaje biti dobra mjera — akteri prilagode ponašanje samoj mjeri umjesto onome što je mjera trebala zahvatiti; u NPM kontekstu to znači da pokazatelji uspješnosti neminovno izazivaju taktičku prilagodbu koja iskrivljuje ono što mjere [@hood1991].
+:::
 
 Mehanika kvarenja mjernih sustava ima ime u ekonomskoj i upravnoj literaturi. **Goodhartov zakon** — koji je izvorno formulirao britanski ekonomist Charles Goodhart u kontekstu monetarne politike, a Hood primijenio na NPM — glasi da kada neka mjera postane operativni cilj, ona prestaje biti dobra mjera, jer akteri prilagode ponašanje samoj mjeri umjesto onome što je mjera trebala zahvatiti [@hood1991]. Bolnica čije se osoblje ocjenjuje po dužini liste čekanja može listu skratiti odbijanjem kompliciranijih slučajeva ili njihovim premještanjem u drugu kategoriju, a ne stvarnim povećanjem propusnosti. Škola koju ocjenjuju isključivo prema državnoj maturi može sužavanjem nastavnog plana na predmete koji se testiraju podići rezultat i istodobno smanjiti opseg obrazovanja. Policijska postaja koja se ocjenjuje po broju razriješenih predmeta može razriješene predmete preinačiti u manje težak oblik kaznenog djela kako bi zadržala stopu.
 
@@ -67,6 +83,10 @@ Jedna od najprepoznatljivijih promjena koju donosi NPM jest novi pogled na građ
 Ovaj pomak imao je pozitivne učinke jer je javnu upravu prisilio da više razmišlja o iskustvu građana, o tome koliko se čeka na dokument, koliko je postupak razumljiv i može li se usluga dobiti digitalno. Međutim, pojam građanina kao kupca ima i ozbiljna ograničenja. Građanin nije samo kupac javnih usluga, nego i nositelj prava, porezni obveznik, birač i član političke zajednice. Ako se javni sektor previše promatra kroz odnos pružatelja i kupca, može se zanemariti demokratska dimenzija države. Građanin kao „kupac" mogao bi željeti što niže poreze i što bržu osobnu uslugu, ali građanin kao član političke zajednice može prihvatiti više poreze ako time financira javno zdravstvo ili obrazovanje. Tu se vidi granica tržišne analogije. Država ne može biti samo servis jer istodobno mora donositi kolektivne odluke o raspodjeli resursa, pravima i obvezama.
 
 ## Agencifikacija i razdvajanje politike od provedbe
+
+::: {#def-agencifikacija}
+**Agencifikacija** je NPM reforma kojom se odvojilo oblikovanje politike (u ministarstvima) od njezine provedbe (u autonomnim ili poluautonomnim agencijama), s ciljem veće stručnosti i fleksibilnosti — ali uz rizik oslabljene koordinacije i demokratskog nadzora.
+:::
 
 Važan element NPM-a bila je i **agencifikacija**, stvaranje autonomnih ili poluautonomnih javnih agencija. Ideja je bila razdvojiti oblikovanje politika od njihove provedbe tako da se ministarstva bave strategijom, zakonima i prioritetima, dok bi specijalizirane agencije profesionalno i učinkovito provodile programe. Agencije mogu biti stručnije, fleksibilnije i manje izložene dnevnoj politici, što u područjima poput regulacije tržišta ili nadzora financijskog sustava često ima smisla.
 

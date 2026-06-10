@@ -19,6 +19,10 @@ Ti instrumenti mogu biti vrlo različiti. Neki izravno uključuju novac, poput p
 
 Isti javni cilj može biti ostvaren različitim instrumentima, ali ti instrumenti nemaju iste učinke, iste troškove ni iste političke posljedice. Ako država želi smanjiti zagađenje, može uvesti porez na emisije, propisati maksimalnu dopuštenu razinu zagađenja, subvencionirati čiste tehnologije, javno informirati potrošače ili kombinirati više mjera. Ako želi smanjiti siromaštvo, može povećati socijalne transfere, smanjiti poreze na niske dohotke, subvencionirati zapošljavanje, ulagati u obrazovanje ili regulirati minimalnu plaću. Zato je izbor instrumenta jedno od središnjih pitanja dizajna javnih politika.
 
+::: {#def-nato-okvir}
+**NATO okvir** Christophera Hooda klasificira državne instrumente prema četiri vrste resursa koje vlada može koristiti: *Nodality* (informacijska centralnost), *Authority* (formalna ovlast), *Treasure* (financijska moć) i *Organization* (vlastiti institucionalni kapacitet) [@hood1983].
+:::
+
 Sustavnija klasifikacija instrumenata postoji u literaturi o javnom upravljanju i naziva se **NATO okvir** [@hood1983]. Prema njemu država raspolaže s četiri vrste resursa kojima može djelovati. *Nodality* je položaj države kao informacijskog čvora kroz koji prolazi velika količina podataka i s kojeg ona može slati ili tražiti informacije. *Authority* je formalna ovlast da nešto zapovjedi, zabrani ili dopusti. *Treasure* je financijska moć da nešto plati, oporezuje ili subvencionira. *Organization* je sposobnost da nešto sama proizvede kroz vlastite institucije, zaposlenike i kapacitete.
 
 Većina stvarnih instrumenata koristi više od jednog resursa, ali svaki ima jedan dominantan. Porezi i subvencije počivaju primarno na *treasure*, regulacija na *authority*, javna poduzeća i agencije na *organization*, a informacijske kampanje i transparentnost na *nodality*. Korist okvira nije samo taksonomska. On omogućuje da se za isti cilj razmotri više instrumenata povezanih s različitim resursima, što često otkriva alternative koje pojednostavljena „porez ili regulacija" rasprava previđa.
@@ -43,6 +47,10 @@ No javna potrošnja nosi i rizike. Ako je loše usmjerena, može financirati pro
 
 ## Regulacija
 
+::: {#def-regulacija}
+**Regulacija** je instrument javne politike temeljen na autoritetnom resursu (*authority*): uključuje pravila, standarde, zabrane, dozvole i nadzorne mehanizme kojima država usmjerava ponašanje subjekata bez izravnih financijskih transfera.
+:::
+
 **Regulacija** uključuje pravila, standarde, zabrane, dozvole i nadzorne mehanizme kojima država usmjerava ponašanje pojedinaca, poduzeća i institucija. Za razliku od poreza i javne potrošnje, regulacija često ne uključuje izravne financijske tokove kroz proračun, ali može imati vrlo snažan učinak na tržišta i društvene odnose.
 
 Država regulacijom određuje pravila tržišne utakmice. Ona propisuje standarde sigurnosti hrane i lijekova, uvjete rada, zaštitu potrošača, bankarsku regulaciju, tržišno natjecanje, zaštitu okoliša, urbanistička pravila i licenciranje određenih profesija. Bez regulacije mnoga tržišta ne bi mogla funkcionirati sigurno i predvidljivo. Regulacija je osobito važna kod prirodnih monopola, gdje država mora regulirati cijene, kvalitetu usluge i uvjete pristupa infrastrukturi.
@@ -51,17 +59,29 @@ Ipak, regulacija nije bez troškova. Prekomjerna ili loše dizajnirana regulacij
 
 ## Subvencije
 
+::: {#def-subvencija}
+**Subvencija** je izravna ili neizravna financijska potpora koju država dodjeljuje određenim sektorima, poduzećima, kućanstvima ili aktivnostima — kao porezna olakšica, povlašteni kredit, jamstvo ili proračunska isplata — radi poticanja poželjnog ponašanja ili nadoknade pozitivnih eksternalija.
+:::
+
 **Subvencije** su oblik financijske potpore koju država dodjeljuje određenim sektorima, poduzećima, kućanstvima ili aktivnostima. One mogu biti izravne, primjerice isplata potpore iz proračuna, ili neizravne, primjerice porezne olakšice, povlašteni krediti, državna jamstva ili niže cijene javnih usluga.
 
 Subvencije se najčešće opravdavaju trima argumentima. Prvo, mogu se koristiti za poticanje aktivnosti koje imaju pozitivne eksternalije, primjerice ulaganja u istraživanje i razvoj, obrazovanje ili zelene tehnologije. Drugo, koriste se za zaštitu određenih skupina ili sektora, primjerice poljoprivrede. Treće, koriste se kao instrument industrijske politike, kada država želi potaknuti razvoj novih sektora ili strateških industrija.
 
 Međutim, subvencije su jedan od instrumenata s najvećim rizikom državnog neuspjeha. Ako su loše dizajnirane, mogu dovesti do neefikasne alokacije resursa, stvaranja ovisnosti o državnoj pomoći i očuvanja poduzeća koja dugoročno nisu konkurentna. Mogu potaknuti poduzeća da više ulažu u lobiranje nego u produktivnost i mogu postati politički teško ukidive [@tullock1967; @krueger1974; @musgrave1989]. Zato je ključno pitanje dodatnosti, odnosno toga je li subvencija potaknula aktivnost koja se inače ne bi dogodila ili je samo financirala ono što bi se dogodilo i bez nje. Dobra subvencija mora biti jasno ciljana, vremenski ograničena, transparentna i evaluirana.
 
+::: {#def-kombinacija-instrumenata}
+**Kombinacija instrumenata** (*policy mix*) je skup različitih instrumenata koji se istodobno primjenjuju radi ostvarivanja jednog ili više srodnih ciljeva; analiza mixa otkriva da isti cilj može biti postignut različitim rasporedom troškova, vidljivosti i administrativnih kapaciteta.
+:::
+
 Komparativni podaci OECD-a pokazuju da različite zemlje rješavaju isti tip problema različitim kombinacijama instrumenata. U klimatskoj politici sjeverna Europa pretežno koristi cijenu ugljika i naknade, dok dio kontinentalnih zemalja oslanja se više na regulatorne standarde i subvencije, a anglosaksonski sustavi naglašavaju tržišta prava emisija. Konačni ekološki ishodi se približavaju, ali fiskalni i distribucijski profil tih putova razlikuje se značajno. Cjenovni instrumenti prenose veći vidljivi teret na potrošača, regulatorni ga sakrivaju u cijenu proizvoda, a subvencije ga prebacuju na opću populaciju kroz proračun.
 
 Ista logika vrijedi za politiku rada. Nordijske zemlje kombiniraju visoke aktivne politike zapošljavanja (treasure + organization) s relativno slabom zaštitom od otkaza (manje authority), dok mediteranske ekonomije naglašavaju zaštitu radnog mjesta kroz regulaciju s manjom potrošnjom na aktivne mjere. Empirijska usporedba pokazuje slično ukupno ulaganje u radnu integraciju, ali drugačiji raspored troškova i različite ishode po dobnoj i obrazovnoj skupini. Izbor instrumenata zato nije samo tehničko pitanje učinkovitosti, nego i institucionalni izbor o tome čije će se opterećenje vidjeti, a čije ne.
 
 ## Javna poduzeća
+
+::: {#def-javno-poduzece}
+**Javno poduzeće** je organizacija u (pretežno) državnom vlasništvu koja izravno pruža dobra ili usluge, najčešće u sektorima s prirodnim monopolom ili strateškim interesom; kombinira poslovnu logiku s javnim ciljevima, što stvara rizik miješanja ciljeva i slabijih poticaja za učinkovitost.
+:::
 
 U određenim sektorima država ne djeluje samo kao regulator, financijer ili naručitelj, nego i kao izravni proizvođač putem **javnih poduzeća**. Javna poduzeća najčešće djeluju u sektorima energetike, prometa, komunalnih usluga, voda, šuma, infrastrukture ili drugih područja od strateškog interesa.
 

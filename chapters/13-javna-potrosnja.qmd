@@ -22,6 +22,10 @@ U ranim fazama razvoja javnih financija fokus ekonomista bio je gotovo isključi
 
 Kako pokazuju povijesni podaci, u razdoblju od kraja 19. do početka 20. stoljeća javna potrošnja u razvijenim zemljama iznosila je tek oko 10 % BDP-a [@tanzi2000]. Međutim, to ne znači da su ta društva bila manje razvijena, već da država nije obavljala funkcije koje danas smatramo standardnima, poput masovnog obrazovanja, javnog zdravstva, socijalne sigurnosti ili aktivne politike zapošljavanja.
 
+::: {#def-wagnerov-zakon}
+**Wagnerov zakon** empirijsko je zapažanje i teorijska teza Adolpha Wagnera prema kojoj udio javne potrošnje u BDP-u sustavno raste s razvojem industrijskog društva, jer veća ekonomska kompleksnost povećava potražnju za regulacijom, obrazovanjem i infrastrukturom [@wagner1890; @bird1971].
+:::
+
 Već krajem 19. stoljeća pojavljuju se prve teorijske naznake da minimalistički pristup državi nije dugoročno održiv. Ekonomisti poput Adolpha Wagnera uočavaju da s razvojem industrijskog društva raste potreba za javnim uslugama. Ova ideja, poznata kao **Wagnerov zakon**, sugerira da će udio javne potrošnje u BDP-u rasti kako društva postaju bogatija i kompleksnija [@wagner1890; @bird1971].
 
 Wagner je ponudio i mehaniku tog rasta koja nadilazi puko empirijsko zapažanje. Tri sile prema njegovoj analizi sustavno povećavaju udio države u gospodarstvu kako ono industrijalizira. Prva je sila kompleksnosti, jer veća međuovisnost gospodarskih jedinica zahtijeva više regulacije, ugovornog reda i nadzora, što povećava administrativne funkcije države. Druga je sila kulture i obrazovanja, gdje urbanizirano industrijsko društvo razvija veću potražnju za obrazovanjem, znanošću i kulturom, dobrima koja imaju izrazito javne komponente. Treća je sila ekonomske infrastrukture, gdje krupne kapacitetne investicije u promet, energetiku i komunikacije premašuju mogućnosti privatnih ulagača i prirodno se preuzimaju kroz javni sektor.
@@ -138,7 +142,11 @@ Iz toga slijedi sporna, ali važna implikacija za doktrinu fiskalne konsolidacij
 
 Često se zanemaruje ključna nijansa Keynesove teorije. On nije zagovarao trajno povećanje javne potrošnje, već simetričnu fiskalnu politiku kroz ciklus koja podrazumijeva deficit i povećanje potrošnje u recesiji, a suficit i fiskalnu konsolidaciju u ekspanziji. Cilj nije trajno širenje države, nego izravnavanje ekonomskih fluktuacija. Upravo ta simetrija ključna je za dugoročnu održivost javnih financija, ali je u praksi često narušena zbog političkih ograničenja [@alesina1995].
 
-Kasnije interpretacije Keynesove teorije često su dovele do trajnog povećanja javne potrošnje i kroničnih fiskalnih deficita, ali to nije bila njegova izvorna ideja. Ključni problem nije bio u teoriji, već u njezinoj političko-ekonomskoj implementaciji. Vlade relativno lako povećavaju potrošnju u recesijama, ali znatno teže provode nepopularne mjere u razdobljima rasta. Ova asimetrija dovodi do tzv. **deficit biasa**, odnosno sklonosti trajnim deficitima i akumulaciji javnog duga [@alesina1995]. Tanzi dodatno naglašava da širenje javne potrošnje često postaje institucionalno i politički „ljepljivo" jer se jednom uvedeni programi teško smanjuju ili ukidaju [@tanzi2011].
+Kasnije interpretacije Keynesove teorije često su dovele do trajnog povećanja javne potrošnje i kroničnih fiskalnih deficita, ali to nije bila njegova izvorna ideja. Ključni problem nije bio u teoriji, već u njezinoj političko-ekonomskoj implementaciji. Vlade relativno lako povećavaju potrošnju u recesijama, ali znatno teže provode nepopularne mjere u razdobljima rasta. ::: {#def-deficit-bias}
+**Deficit bias** (pristranost prema deficitu) je sustavna tendencija vlada da povećavaju potrošnju u lošim vremenima, ali ne smanjuju u dobrim, što dovodi do kroničnih fiskalnih deficita i postupne akumulacije javnog duga; nastaje iz asimetrije političkih troškova ekspanzije i konsolidacije [@alesina1995].
+:::
+
+Ova asimetrija dovodi do tzv. **deficit biasa**, odnosno sklonosti trajnim deficitima i akumulaciji javnog duga [@alesina1995]. Tanzi dodatno naglašava da širenje javne potrošnje često postaje institucionalno i politički „ljepljivo" jer se jednom uvedeni programi teško smanjuju ili ukidaju [@tanzi2011].
 
 Dodatni problem proizlazi iz vremenskih kašnjenja u fiskalnoj politici. Između identifikacije problema, donošenja odluke i stvarne provedbe može proći značajno vrijeme, pa fiskalni poticaj može djelovati tek kada se gospodarstvo već oporavlja [@blanchard2017]. Zato javna potrošnja može stabilizirati gospodarstvo samo ako je pravodobna, ciljana, privremena i simetrična. Bez tih uvjeta, stabilizacijska funkcija može se pretvoriti u izvor makroekonomskih neravnoteža i rasta duga.
 
@@ -154,6 +162,10 @@ Empirijska istraživanja pokazuju da veličina javne potrošnje sama po sebi ne 
 
 ::: {.callout-praksa}
 Usporedba pokazuje da veličina javne potrošnje sama po sebi govori malo o njezinim učincima. Neke zemlje s velikim javnim sektorom, poput skandinavskih, ostvaruju visok rast, kvalitetne usluge i nisku nejednakost, dok druge sa sličnim udjelom potrošnje u BDP-u imaju slabije rezultate jer veći dio sredstava odlazi na subvencije, kamate na dug ili neučinkovite programe umjesto na obrazovanje, infrastrukturu i ciljanu socijalnu zaštitu. Ista razina potrošnje tako može značiti ulaganje u buduću produktivnost ili njezino trošenje na održavanje postojećih povlastica. Zato je za ocjenu javne potrošnje važnije analizirati njezinu strukturu i kvalitetu provedbe nego puki udio u BDP-u.
+:::
+
+::: {#def-javni-dug}
+**Javni dug** je zbroj svih nepodmirenih obveza države prema vjerovnicima, najčešće izražen kao udio u BDP-u; njegova je dinamika određena primarnim saldom, kamatnom stopom na dug i stopom nominalnog rasta — kada je kamatna stopa viša od raste rasta (r > g), omjer duga raste i bez primarnog deficita.
 :::
 
 ## Javna potrošnja u Hrvatskoj i EU

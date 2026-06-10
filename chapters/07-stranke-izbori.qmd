@@ -18,6 +18,14 @@ Politička je konkurencija stoga strateška igra pozicioniranja, diferencijacije
 
 ## Medijanski glasač i natjecanje za centar
 
+::: {#def-hotelling-downs}
+**Hotelling-Downsov model** tvrdi da dvije stranke koje se natječu za glasove birača poredanih na jednoj ideološkoj osi imaju snažan poticaj pozicionirati se što bliže preferencijama medijanskog glasača kako bi pobijedile na izborima [@hotelling1929; @downs1957].
+:::
+
+::: {#def-konvergencija-centar}
+**Konvergencija prema centru** je ravnotežni ishod dvostranačkog natjecanja u kojemu obje stranke napuštaju krajnje pozicije i pomiču se prema preferencijama medijanskog glasača, zbog čega im se programi sve više nalikuju.
+:::
+
 Najutjecajniji model političkog natjecanja jest **model medijanskog glasača**, čiji su temelji u radovima Hotellinga [@hotelling1929], Blacka [@black1948] i Downsa [@downs1957]. Ako birače možemo poredati na jednoj ideološkoj osi, primjerice od „manje države" prema „više države", i ako svaki birač glasuje za stranku koja je najbliža njegovoj idealnoj točki, tada dvije stranke koje se natječu za vlast imaju snažan poticaj približiti se sredini, odnosno preferencijama medijanskog glasača.
 
 Logika je jednostavna. Stranka koja zauzme krajnju poziciju osvaja birače sa svoga kraja osi, ali gubi velik dio sredine. Pomicanjem prema centru osvaja medijanskoga glasača, a time i većinu. U klasičnom dvostranačkom natjecanju to dovodi do **konvergencije prema centru** u kojoj se obje stranke pomiču prema sredini i njihovi se programi sve više nalikuju. Taj rezultat objašnjava čestu pritužbu birača da „nema prave razlike" između velikih stranaka.
@@ -32,6 +40,10 @@ U Hrvatskoj je ovaj mehanizam dugo objašnjavao programsku sličnost dviju najve
 
 Stranke nisu pasivni prenositelji biračkih preferencija, nego aktivni poduzetnici koji oblikuju ponudu. Glavna je strategija **diferencijacija ponude** u kojoj stranke ne nude samo tehničke politike, nego cjelovite „brendove" koji kombiniraju ekonomske mjere, identitetske signale i emocionalne apele. Takvi brendovi služe kao informacijski prečaci biračima koji nemaju poticaja ulagati velik trud u analizu programa.
 
+::: {#def-pakiranje}
+**Pakiranje** (*bundling*) je izborna strategija u kojoj stranka spaja različite, ponekad i međusobno proturječne politike u jedan programski paket, što biračima otežava razdvajanje i vrednovanje pojedinih elementa.
+:::
+
 Posebno je važna tehnika **pakiranja** (*bundling*) koja spaja različite, ponekad i proturječne politike u jedan izborni paket. Stranka može istodobno obećavati porezne olakšice poduzetnicima, veće mirovine umirovljenicima i veća izdvajanja za poljoprivredu, iako ekonomska struka teško može opravdati takvu kombinaciju.
 
 Mehanika uspjeha takvog pakiranja izravno se oslanja na racionalnu neinformiranost o kojoj govori sljedeća sekcija. Birač koji nema poticaj proučavati program ne može sam rastaviti paket na sastavne dijelove i procijeniti njihovu međusobnu konzistentnost. On glas dodjeljuje paketu kao cjelini, na temelju jednog ili dva najistaknutija elementa, dok ostatak prolazi neprimijećeno. Stranka tako u istom programskom okviru može prodavati nekoliko različitih obećanja različitim ciljanim skupinama, a interna proturječja ne kažnjavaju je na izborima sve dok nije izložena objavljenom programskom dokumentu na koji se može pozvati.
@@ -41,6 +53,14 @@ Iz toga slijedi važna posljedica za dizajn izbornih institucija. Sustavi koji p
 Druga je strategija **herestetika**, vještina strukturiranja političkog prostora i nametanja tema na kojima stranka ima komparativnu prednost [@riker1968]. Umjesto da se natječu ondje gdje su slabije, stranke nastoje nametnuti teme koje im idu u prilog. Kada su velike stranke ekonomski slične, natjecanje se premješta na identitetska, sigurnosna ili povijesna pitanja. Tomu treba dodati i **negativnu kampanju** u kojoj je diskreditiranje protivnika često jeftinije i učinkovitije od uvjeravanja birača u superiornost vlastitog programa, premda dugoročno smanjuje povjerenje u politički sustav.
 
 ## Što oblikuje centar i polarizaciju
+
+::: {#def-visedimenzionalni-prostor}
+**Višedimenzionalni politički prostor** nastaje kada birači istodobno vrednuju više neovisnih dimenzija politike (ekonomska, vrijednosna, identitetska, vanjskopolitička); u takvom prostoru jasna središnja pozicija često ne postoji, a stabilnost ishoda većinskog glasovanja gubi se sukladno McKelveyevu teoremu [@mckelvey1976].
+:::
+
+::: {#def-polarizacija}
+**Polarizacija** je proces udaljavanja stranaka od centra prema suprotnim krajevima ideološkog spektra; nastaje kada distribucija biračkih preferencija postane bimodalna, kada izlaznost aktivira rubne birače ili kada ideološki pritisak unutar stranaka prevlada poticaj za osvajanje medijana.
+:::
 
 U stvarnosti politika rijetko ima samo jednu dimenziju. Birači istodobno vrednuju ekonomska, vrijednosna i identitetska pitanja, vanjsku politiku i okoliš. U višedimenzionalnom prostoru jasna „središnja" pozicija često ne postoji, pa se stranke mogu specijalizirati za određene skupine birača umjesto da se natječu za sredinu.
 

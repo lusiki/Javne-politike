@@ -19,6 +19,10 @@ Klasičan pogled na birokraciju najčešće se povezuje s Maxom Weberom i njegov
 
 ## Klasičan, weberovski pogled
 
+::: {#def-weberovska-birokracija}
+**Weberovska birokracija** je model profesionalne državne uprave koji Max Weber definira kroz racionalno-legalnu vlast: nadležnosti, postupci i odgovornosti uređeni su formalnim pravilima, a ne osobnom loyalnošću — čime se jamče predvidivost, jednakost pred pravilima i kontinuitet države [@weber1978].
+:::
+
 Klasičan pogled na birokraciju polazi od ideje da moderna država ne može funkcionirati bez profesionalne administracije. Kako društva postaju složenija, ne mogu se više oslanjati na osobne odnose, običaje, lojalnost vladaru ili diskrecijske odluke pojedinaca. Moderna država mora upravljati porezima, sudovima, vojskom, obrazovanjem, infrastrukturom, javnim zdravljem, socijalnim sustavom i regulatornim institucijama. Za takve funkcije potrebna je organizacija koja je stabilna, predvidiva, stručna i relativno neovisna o osobnim interesima pojedinaca.
 
 Weber birokraciju povezuje s pojmom **racionalno-legalne vlasti**. „Legalna" je zato što se temelji na zakonima i formalnim pravilima, a „racionalna" zato što su nadležnosti, postupci i odgovornosti organizirani prema unaprijed određenim kriterijima. Službenik ne odlučuje prema osobnom dojmu, simpatiji ili političkoj lojalnosti, nego prema propisanoj proceduri. U idealnom slučaju, građanin može očekivati da će njegov predmet biti riješen na isti način neovisno o tome poznaje li službenika, kojoj političkoj stranci pripada ili kakav društveni status ima.
@@ -56,6 +60,10 @@ Teorija javnog izbora polazi iz drugačije perspektive. Ona ne odbacuje potrebu 
 Za teoriju javnog izbora ključno je pitanje poticaja. Ako političari žele reizbor, birači žele koristi, interesne skupine žele povlastice, a birokrati žele veće proračune i veću institucionalnu važnost, tada javne politike ne možemo razumjeti samo kroz pojam javnog interesa. Moramo analizirati tko dobiva, tko plaća, tko ima informacije, tko kontrolira provedbu i tko ima poticaj za promjenu ili očuvanje postojećeg stanja.
 
 ### Niskanenov model birokrata kao maksimizatora proračuna
+
+::: {#def-niskanenov-model}
+**Niskanenov model** tvrdi da birokrati, suočeni s monopolskim položajem i informacijskom prednošću pred político-proračunskim nadzornicima, maksimiziraju veličinu proračuna institucije jer veći proračun donosi veću plaću, status i autonomiju, što rezultira sustavno nadoptimalnom potrošnjom [@niskanen1971].
+:::
 
 Najpoznatiji model birokracije u teoriji javnog izbora razvio je William A. Niskanen [@niskanen1971]. Niskanenov model postavlja jednostavno, ali vrlo utjecajno pitanje o tome što birokrati maksimiziraju ako ne maksimiziraju profit.
 
@@ -132,7 +140,11 @@ nisk_c = nisk_controls.c
 
 Niskanenov model počiva na tri ključna elementa. Prvo, birokracija često ima **monopol** nad pružanjem određene javne usluge. Drugo, birokracija ima **informacijsku prednost** jer zna koliko program stvarno košta, gdje postoje rezerve učinkovitosti i koliko bi se moglo uštedjeti. Treće, političari i ministarstvo financija često ne mogu savršeno provjeriti informacije koje im birokracija dostavlja. Zbog toga birokracija može tražiti veći proračun od društveno optimalnog.
 
-Birokratsko širenje ne mora biti posljedica korupcije ili zle namjere. Ono može biti sasvim racionalno ponašanje unutar sustava u kojem se uspjeh institucije mjeri veličinom proračuna, brojem zaposlenih i širinom nadležnosti. U kasnijim raspravama model je kritiziran kao previše pojednostavljen, jer nisu svi birokrati jednako motivirani proračunom. Neki žele miran posao, neki stručni ugled, a neki doista žele poboljšati javnu uslugu. Breton i Wintrobe upozorili su da su interesi unutar birokracije heterogeni, pri čemu viši službenici teže moći i prestižu, a niži sigurnosti radnoga mjesta, pa maksimizacija proračuna ne mora biti zajednički cilj svih razina [@breton1975]. Dunleavy je tvrdio da birokrati mogu nastojati maksimizirati vlastiti utjecaj i kontrolu nad politikom, a ne nužno cijeli proračun [@dunleavy1985]. Ipak, Niskanenov model ostaje važan jer jasno pokazuje da se proračunski proces ne može razumjeti samo kao tehničko određivanje potrebnih sredstava.
+Birokratsko širenje ne mora biti posljedica korupcije ili zle namjere. Ono može biti sasvim racionalno ponašanje unutar sustava u kojem se uspjeh institucije mjeri veličinom proračuna, brojem zaposlenih i širinom nadležnosti. U kasnijim raspravama model je kritiziran kao previše pojednostavljen, jer nisu svi birokrati jednako motivirani proračunom. Neki žele miran posao, neki stručni ugled, a neki doista žele poboljšati javnu uslugu. Breton i Wintrobe upozorili su da su interesi unutar birokracije heterogeni, pri čemu viši službenici teže moći i prestižu, a niži sigurnosti radnoga mjesta, pa maksimizacija proračuna ne mora biti zajednički cilj svih razina [@breton1975]. ::: {#def-bureau-shaping}
+**Bureau-shaping** je strategija Dunleavyeve teorije prema kojoj viši birokrati ne maksimiziraju veličinu proračuna (kao u Niskanen), nego oblik i tip organizacije: preferiraju male, politički utjecajne i visokoprestiždne agencije pred velikima, rutinskim i operativnim, jer im to donosi veći osobni ugled uz manji upravljački trud [@dunleavy1985].
+:::
+
+Dunleavy je tvrdio da birokrati mogu nastojati maksimizirati vlastiti utjecaj i kontrolu nad politikom, a ne nužno cijeli proračun — što je nazvao strategijom **bureau-shapinga**: umjesto rasta proračuna, viši birokrati preferiraju male, moćne i politički utjecajne organizacije nad velikima, rutinskim i operativnim [@dunleavy1985]. Ipak, Niskanenov model ostaje važan jer jasno pokazuje da se proračunski proces ne može razumjeti samo kao tehničko određivanje potrebnih sredstava.
 Ako želimo učinkovitu državu, nije dovoljno pitati koliko novca neka institucija traži. Treba pitati koje rezultate proizvodi, koliko ti rezultati koštaju, postoje li jeftiniji načini provedbe i tko neovisno provjerava informacije koje institucija iznosi.
 
 ::: {.callout-praksa}
@@ -141,11 +153,19 @@ Niskanenova logika vidljiva je u načinu na koji javne agencije pregovaraju o pr
 
 ### Asimetrija informacija i principal–agent problem
 
+::: {#def-principal-agent}
+**Principal–agent problem** nastaje kada principal (onaj koji delegira zadatak) ne može savršeno nadzirati agenta (onoga koji ga izvršava) jer agent ima vlastite ciljeve i bolje informacije o svom ponašanju; u javnoj upravi taj problem multiplicira se kroz višestruke razine delegiranja od građana do pojedinih službenika.
+:::
+
 Drugi važan model jest model asimetrije informacija, odnosno **principal–agent problem**. Ovaj model polazi od situacije u kojoj jedna strana, principal, delegira posao drugoj strani, agentu. Principal želi da agent djeluje u njegovu interesu, ali agent ima vlastite ciljeve i bolje informacije o vlastitom ponašanju.
 
 U javnom sektoru taj je problem posebno složen jer postoji više razina delegiranja. Građani su krajnji principal jer financiraju državu porezima i daju joj legitimnost putem izbora. Političari su agenti građana, ali zatim postaju principali birokraciji jer joj delegiraju provedbu javnih politika. Birokracija je agent političara, ali i sama delegira poslove javnim ustanovama, agencijama, lokalnim tijelima i pojedinačnim službenicima.
 
 Na svakoj razini pojavljuju se dva problema. Prvi je **skrivena informacija**, jer agent zna više od principala. Drugi je **skriveno djelovanje**, jer principal ne može savršeno promatrati koliko se agent trudi i slijedi li stvarno zadane ciljeve. Ovaj model pomaže razumjeti zašto javne institucije ponekad mogu izbjegavati odgovornost. Budući da je lanac odgovornosti dugačak, odgovornost se može raspršiti.
+
+::: {#def-input-output-ishod}
+**Input** je resurs koji se ulaže (novac, osoblje, oprema); **output** je mjerljivi neposredni učinak institucije (broj predmeta, sati usluge); **ishod** (*outcome*) je stvarna promjena u stanju društva koju politika želi postići. Birokracija tipično lakše izvještava o inputima i outputima nego o ishodima jer su oni teže mjerljivi i pod manjom njezinom kontrolom.
+:::
 
 Principal–agent problem objašnjava i zašto je u javnoj upravi važno razlikovati **inpute, outpute i ishode**. Input je novac, broj zaposlenih ili oprema. Output je broj obrađenih predmeta ili održanih sati nastave. Ishod je stvarna promjena koju društvo želi, poput boljih obrazovnih rezultata, kraćih lista čekanja ili veće sigurnosti. Birokracija često lakše prikazuje inpute i outpute nego ishode, jer su oni lakše mjerljivi i pod većom kontrolom same institucije. Zato su transparentnost, revizija, evaluacija i otvoreni podaci ključni jer smanjuju informacijsku prednost agenta. No samo mjerenje nije dovoljno, loše dizajnirani pokazatelji mogu potaknuti pogrešno ponašanje. Ako se škola vrednuje samo po broju prolazaka, može snižavati kriterije, a ako se sud vrednuje samo po broju riješenih predmeta, može se zanemariti kvaliteta presuda.
 
