@@ -41,9 +41,13 @@ Utilitarizam polazi od ideje da javne politike treba vrednovati prema njihovu u�
 
 Ova logika često se koristi kao argument za preraspodjelu dohotka. Zamislimo društvo u kojem jedna osoba ima vrlo visok dohodak, a druga vrlo nizak. Ako država oporezuje bogatiju osobu za 1.000 eura i taj iznos transferira siromašnijoj osobi, bogatija osoba gubi dio dohotka, a siromašnija ga dobiva. Međutim, isti iznos novca nema jednaku vrijednost za obje osobe. Za osobu s vrlo visokim dohotkom 1.000 eura može značiti vrlo malu promjenu životnog standarda. Za osobu s vrlo niskim dohotkom isti iznos može značiti mogućnost plaćanja hrane, grijanja, lijekova, stanarine ili školskih potreba za dijete.
 
+::: {#def-opadajuca-granična-korisnost}
+**Opadajuća granična korisnost dohotka** znači da svaka dodatna novčana jedinica donosi sve manji porast zadovoljstva kako ukupni dohodak raste. Premještanje iste svote od bogatijeg prema siromašnijem akteru povećava ukupnu korisnost u društvu ako oba aktera dijele tu osobinu.
+:::
+
 Ovdje se pojavljuje važan ekonomski pojam, **opadajuća granična korisnost dohotka**. Kako dohodak raste, dodatna jedinica dohotka obično donosi sve manji porast korisnosti. Prvih 1.000 eura dohotka za osobu koja nema osnovne životne uvjete ima ogromnu vrijednost. Dodatnih 1.000 eura za osobu koja već ima vrlo visok dohodak može donijeti mnogo manju dodatnu korisnost. Ako je povećanje korisnosti siromašnije osobe veće od smanjenja korisnosti bogatije osobe, preraspodjela može povećati ukupno društveno blagostanje.
 
-Ovo je jedan od najjednostavnijih ekonomskih argumenata za redistribuciju. On ne polazi nužno od moralne osude bogatstva, nego od pretpostavke da dodatni dohodak ima veću društvenu vrijednost kada ide onima koji imaju manje. U tom smislu progresivni porezi i socijalni transferi mogu se opravdati ne samo pravednošću, nego i povećanjem ukupnog blagostanja.
+Ovo je jedan od najjednostavnijih ekonomskih argumenata za redistribuciju. On ne polazi nužno od moralne osude bogatstva, nego od pretpostavke da dodatni dohodak ima veću društvenu vrijednost kada ide onima koji imaju manje. U tom smislu progresivni porezi i socijalni transferi mogu se opravdati ne samo pravednošću, nego i povećanjem ukupnog blagostanja. Libertarna i prava-orijentirana kritika, međutim, osporava međuosobne usporedbe korisnosti kao empirijski nedokazive te ističe da argument zanemaruje negativne poticajne učinke preraspodjele i pravo vlasništva nad zarađenim dohotkom kao vrijednost neovisnu o agregatnom blagostanju.
 
 Međutim, preraspodjela nije besplatna. Arthur Okun je taj problem slikovito opisao metaforom **„šupljeg vedra"** (*leaky bucket*) [@okun1975]. Kada država prenosi dohodak od bogatih prema siromašnima, dio sredstava „iscuri" putem administrativnih troškova, promjena u ponašanju, porezne evazije, smanjene ponude rada, manjeg poduzetničkog napora ili drugih neučinkovitosti. Država može uzeti 1.000 eura od bogatije osobe, ali do siromašnije osobe možda neće stići svih 1.000 eura.
 
@@ -52,6 +56,10 @@ Okunova metafora pokazuje temeljnu napetost između efikasnosti i pravednosti. D
 U ekstremnom obliku, utilitaristička logika može voditi prema zaključku da bi potpuna jednakost dohotka maksimizirala društveno blagostanje. No tu se pojavljuje problem poticaja. Ako dodatni rad, znanje, inovacija, štednja ili poduzetnički rizik ne donose nikakvu dodatnu nagradu, ljudi mogu manje raditi, manje ulagati, manje inovirati i manje preuzimati rizik. Potpuna uravnilovka može povećati formalnu jednakost, ali smanjiti proizvodnju, produktivnost i dugoročni rast. Zato suvremeni pristupi rijetko zagovaraju potpunu jednakost dohotka. Umjesto toga, traže se oblici redistribucije koji ublažavaju siromaštvo i nejednakost, ali zadržavaju poticaje za rad, obrazovanje, inovacije i poduzetništvo [@mirrlees1971].
 
 ## Rawlsov pristup pravednosti
+
+::: {#def-rawlsov-pristup}
+**Rawlsov pristup pravednosti** polazi od **vela neznanja**: pravila se biraju pod pretpostavkom da ne znamo koji ćemo položaj u društvu zauzeti. Iz toga slijedi **maximin pravilo** — institucije treba oblikovati tako da maksimiziraju položaj onih u najlošijem položaju, a nejednakosti su prihvatljive samo ako koriste i najugroženijima [@rawls1971].
+:::
 
 Važnu dopunu utilitarizmu daje Rawlsov pristup pravednosti. John Rawls ne polazi od zbrajanja korisnosti svih članova društva, nego od pitanja kakva bi pravila društva ljudi izabrali kada ne bi znali kakav će položaj imati u tom društvu. U njegovoj teoriji važnu ulogu ima tzv. **veo neznanja**. Ako nitko unaprijed ne zna hoće li biti bogat ili siromašan, zdrav ili bolestan, talentiran ili manje talentiran, rođen u privilegiranoj ili depriviranoj obitelji, tada bi racionalni pojedinci izabrali pravila koja štite i one koji se nađu u najlošijem položaju [@rawls1971].
 
@@ -79,6 +87,10 @@ U kriznim situacijama, poput rata, pandemije, velike prirodne katastrofe ili ene
 
 ## Paternalizam
 
+::: {#def-paternalizam}
+**Paternalizam** je državna intervencija koja ograničava, usmjerava ili oblikuje ponašanje pojedinca uz obrazloženje da to čini za njegovo dobro, a ne radi zaštite trećih strana. Razlikujemo tvrdi paternalizam (prisila ili zabrana) i meki libertarijanski paternalizam koji oblikuje zadane opcije bez ukidanja slobode izbora.
+:::
+
 Treći normativni koncept povezan s distribucijskom funkcijom je **paternalizam**. Paternalizam označava situaciju u kojoj država ograničava, usmjerava ili oblikuje ponašanje pojedinca uz obrazloženje da to čini za njegovo dobro. Izraz dolazi od latinske riječi *pater* koja znači otac, i upućuje na ideju države kao zaštitnika koji smatra da pojedinac možda neće sam donijeti odluku koja je u njegovu dugoročnom interesu.
 
 Paternalizam se razlikuje od robnog egalitarizma po naglasku. Robni egalitarizam pita koja dobra trebaju biti dostupna svima. Paternalizam pita smije li država pojedinca potaknuti ili prisiliti da donese odluku koju država smatra boljom za njega. Primjeri su obvezno osnovno obrazovanje, obvezno mirovinsko osiguranje, obvezno zdravstveno osiguranje, obvezno vezanje sigurnosnim pojasom, zabrana prodaje alkohola i cigareta maloljetnicima ili obvezna uporaba zaštitne opreme na radu.
@@ -100,6 +112,10 @@ To ne znači da pravednost nužno smanjuje učinkovitost. U mnogim slučajevima 
 Zato odnos efikasnosti i pravednosti nije jednostavna razmjena u kojoj se uvijek mora žrtvovati jedno za drugo. Ponekad postoji stvarni konflikt, ali ponekad se dobro dizajniranim politikama mogu istodobno poboljšati i pravednost i učinkovitost. Ključ je u dizajnu. Porezi trebaju biti pravedni, ali što manje distorzivni. Transferi trebaju biti ciljani, ali ne administrativno preskupi. Javne usluge trebaju biti univerzalno dostupne, ali i kvalitetno upravljane. Socijalna prava trebaju pružati sigurnost, ali ne smiju ukloniti sve poticaje za rad i aktivnost.
 
 Distribucijska funkcija zato nije samo pitanje koliko država preraspodjeljuje, nego i kako preraspodjeljuje. Dvije države mogu imati sličan udio javne potrošnje u BDP-u, ali vrlo različite učinke na siromaštvo, nejednakost i životne prilike. Jedna može trošiti mnogo, ali loše ciljati programe i stvarati ovisnost o transferima. Druga može trošiti slično, ali kroz kvalitetno obrazovanje, zdravstvo, aktivne politike tržišta rada i dobro dizajnirane transfere stvarati veću socijalnu mobilnost.
+
+::: {#def-lorenz-gini}
+**Lorenzova krivulja** grafički prikazuje raspodjelu dohotka: vodoravna os je kumulativni udio stanovništva (poredanog od najsiromašnijeg prema najbogatijem), a okomita os kumulativni udio dohotka. Savršena jednakost odgovara dijagonali. **Ginijev koeficijent** mjeri omjer površine između dijagonale i Lorenzove krivulje naspram ukupne površine ispod dijagonale i kreće se od 0 (potpuna jednakost) do 1 (potpuna nejednakost).
+:::
 
 ::: {.callout-empirija}
 Učinak poreza i transfera na nejednakost moguće je izravno izmjeriti. Podaci OECD-a pokazuju da porezi i socijalni transferi u prosjeku smanjuju Ginijev koeficijent razvijenih zemalja za otprilike trećinu, s približno 0,47 prije državne intervencije na oko 0,31 nakon nje [@oecd_idd]. Razmjer toga smanjenja jako varira, od vrlo snažnog u nordijskim i kontinentalnim europskim sustavima do osjetno slabijeg u dijelu anglosaksonskih zemalja. Veći dio toga učinka u većini zemalja dolazi od transfera, osobito mirovina i naknada, a ne od same progresivnosti poreza na dohodak. To je važno jer pokazuje da se nejednakost može jednako snažno smanjiti rashodovnom stranom proračuna kao i poreznom. Usporedbe također pokazuju da zemlje sa sličnom razinom dohotka po stanovniku mogu imati vrlo različite razine nejednakosti, što znači da konačna raspodjela nije zadana tržištem, nego je u velikoj mjeri rezultat politike.
