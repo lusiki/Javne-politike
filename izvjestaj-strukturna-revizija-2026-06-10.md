@@ -3,7 +3,17 @@
 Datum: 10. lipnja 2026. Revizija pokrenuta na zahtjev za provjerom sedam aspekata
 rukopisa. Audit proveden čitanjem svih 20 poglavlja u cijelosti (5 paralelnih
 agenata) plus inspekcija renderiranog HTML-a i SCSS-a za problem prelijevanja
-margine. Ovaj dokument je *nalaz i plan*, ne popis obavljenoga.
+margine.
+
+> **Status (ažurirano 10. lipnja 2026, nakon zahvata).** Izvorni dokument bio je
+> *nalaz i plan*. Većina jeftinih i srednjih stavki sada je **obavljena i
+> commitana** (SCSS margine, tri siroče-definicije, ch12 infografika, duplikat-
+> captioni, mostovi luka unatrag/unaprijed, svih ~13 „Što isprobati." blokova,
+> potpuni STYLE.md prelet ch14). Po dimenzijama je status označen oznakom
+> **✅ RIJEŠENO / ⏳ ODGOĐENO / 👤 KOAUTORSKO** uz svaki nalaz. Otvoreno ostaje:
+> patuljasta potpoglavlja (dim. 4), neujednačena pokrivenost definicija (dim. 1),
+> puni epilog ch19 — plus koautorska hrpa (hrvatske empirije). Detalji u
+> redoslijedu korekcija na dnu.
 
 ---
 
@@ -29,13 +39,13 @@ Sedam traženih dimenzija:
 
 | # | Dimenzija | Stanje | Glavni nalaz |
 |---|-----------|--------|--------------|
-| 1 | Definicije u blokovima | **Dobro** | Sva 18 sadržajna poglavlja imaju `{#def-}` blokove; uvod (3) i zaključak/ch19 (5) ih također imaju. Pokrivenost neujednačena: ch14 (najveće poglavlje) ima samo 1, ch18 (metodsko) samo 1, ch11 samo 2. |
-| 2 | Suptilna integracija | **Uglavnom dobro, par sustavnih problema** | Najbolje: ch08, ch09, ch17, ch19. Sustavni obrazac „def-blok pa rečenica koja ga doslovno prepričava" javlja se u ch02, ch04, ch12, ch15, ch00. Pravi siročići (tekst uopće ne koristi pojam uz blok): **ch10 ovisnost-o-putanji, ch12 kombinacija-instrumenata, ch13 javni-dug.** |
-| 3 | Luk između poglavlja | **Najslabija dimenzija** | Otvaranja: jaka u ch02, ch03, ch04, ch05, ch07, ch11, ch16, ch17; hladna/nedostaju u ch06, ch09, ch10, ch12, ch13, ch14, ch15, ch18, ch19. **Sažetci gotovo nigdje ne predaju štafetu sljedećem poglavlju** — najvidljiviji propušteni šavovi: ch13↔ch14 (rashodi↔porezi) i ch15↔ch16 (neuspjesi↔NJM). ch19 ne zatvara knjigu kao cjelinu. |
-| 4 | Ravnoteža i duljina | **Mješovito** | Patuljasta potpoglavlja: **ch02 (6 jednoodlomačnih `###` ispod grafova), ch05 (2 stub `##`/`###`), ch15 (cijela tipologija od 8 neuspjeha promovirana u `##`, „Regulatorni neuspjesi" = 1 odlomak), ch13 „Hrvatska i EU" (placeholder, nedovršeno), ch14 dva tanka `###`, ch16/ch18 po dva tanka odjeljka.** |
-| 5 | OJS grafovi | **Numeriranje nepotpuno; tretman nehomogen** | 110 OJS blokova = ~24 grafa-klastera. Svi imaju `label: fig-` I `fig-cap` osim onih koji ih nemaju (vidi dolje). **Ključni nalaz: samo ch14 ima homogen tretman** (svaki graf nosi „Kako čitati graf." + „Što isprobati."). Svih ostalih 9–10 grafova (ch01,02×6,03,04,05,06,09,13,15,18,19) **nema „Što isprobati." blok** — upute kako rukovati grafom postoje samo u ch14. |
-| 6 | Infografike | **Dobro uz jednu iznimku** | Statične infografike: ch01 (tri-funkcije), ch05 (ključne-ideje), ch12 (trzisni-neuspjesi), ch14 (vrste-poreza). Sve uvedene tekstom OSIM **ch12 — infografika je siroče** između odlomka o NATO-okviru i odjeljka „Porezi", a prikazuje treću temu (tržišni neuspjesi → instrumenti). |
-| 7 | Prelijevanje margine | **Dijagnosticirano — popravljivo u SCSS-u** | Uzrok: tablice (`max-width:100%` bez `overflow-x:auto`), OJS SVG-ovi (fiksna piksel-širina bez clamp-a), callout/def kutije (`max-width:70ch` bez `overflow-x`). Layout `page-columns` s marginalnim citatima sužava stupac pa široki sadržaj curi u gutter. |
+| 1 | Definicije u blokovima | **Dobro · ⏳ ostatak odgođen** | Sva 18 sadržajna poglavlja imaju `{#def-}` blokove; uvod (3) i zaključak/ch19 (5) ih također imaju. Pokrivenost neujednačena: ch14 (najveće poglavlje) ima samo 1, ch18 (metodsko) samo 1, ch11 samo 2. **Neujednačenost svjesno odgođena (opcijska).** |
+| 2 | Suptilna integracija | **✅ siročići riješeni** | Najbolje: ch08, ch09, ch17, ch19. Sustavni obrazac „def-blok pa rečenica koja ga doslovno prepričava" javlja se u ch02, ch04, ch12, ch15, ch00 (mekše, neobrađeno). **Tri prava siročića RIJEŠENA: ch10 ovisnost-o-putanji uplesteno, ch12 kombinacija-instrumenata premješteno u odjeljak „Kombiniranje", ch13 javni-dug premješteno uz deficit-bias.** |
+| 3 | Luk između poglavlja | **✅ mostovi dodani** | Bila najslabija dimenzija. **Mostovi unatrag dodani: ch06, ch09, ch10, ch12, ch13, ch14, ch15, ch18.** **Mostovi unaprijed (Sažetci): ch04, ch13, ch15, ch19.** ch13↔ch14 i ch15↔ch16 šavovi povezani; **ch19 Sažetak sada zatvara cijelu knjigu** (povratak na uvodni okvir). Puni epilog ch19 ostaje veći, opcijski zahvat. |
+| 4 | Ravnoteža i duljina | **⏳ ODGOĐENO (odluka korisnika)** | Patuljasta potpoglavlja: **ch02 (6 jednoodlomačnih `###` ispod grafova), ch05 (2 stub `##`/`###`), ch15 (cijela tipologija od 8 neuspjeha promovirana u `##`, „Regulatorni neuspjesi" = 1 odlomak), ch13 „Hrvatska i EU" (placeholder, nedovršeno), ch14 dva tanka `###`, ch16/ch18 po dva tanka odjeljka.** Korisnik: „izvještaj samo, odluka kasnije" — degradirati-u-podebljano vs. zadebljati još nije odlučeno. |
+| 5 | OJS grafovi | **✅ tretman homogeniziran** | 110 OJS blokova = ~24 grafa-klastera. Svi imaju `label: fig-` i `fig-cap`. **Svih ~13 grafova kojima je nedostajao „Što isprobati." blok sada ga ima** (ch01, ch02×6, ch03, ch04, ch05, ch06, ch09, ch13, ch15, ch18, ch19). **ch14 (8 grafova) prošao potpuni STYLE.md prelet:** „Kako čitati graf." stopljeno u uvodne odlomke, „Što isprobati." prepisani bez dvotočja/em-crtica. Cijela knjiga sada slijedi obrazac uvodni-odlomak + graf + „Što isprobati.". |
+| 6 | Infografike | **✅ siroče riješeno** | Statične infografike: ch01 (tri-funkcije), ch05 (ključne-ideje), ch12 (trzisni-neuspjesi), ch14 (vrste-poreza). **ch12 fig-trzisni-neuspjesi dobio uvodni odlomak** — više nije siroče. Sve infografike sada uvedene tekstom. |
+| 7 | Prelijevanje margine | **✅ SCSS popravak dodan** | Uzrok: tablice (`max-width:100%` bez `overflow-x:auto`), OJS SVG-ovi (fiksna piksel-širina bez clamp-a), callout/def kutije (`max-width:70ch` bez `overflow-x`). **Containment blok dodan u `styles/custom.scss`** (overflow-x scroll na tablicama, max-width:100% na SVG-ovima, clamp na callout/def kutijama, overflow-wrap:anywhere). |
 
 ---
 
@@ -220,10 +230,12 @@ poslije grafa).
   uvodnog pasusa): ch03 fig-lorenz, ch14 fig-mrtvi-teret-skaliranje i
   fig-medutemporalna-stednja, ch18 fig-npv-diskontna, ch05 fig-paradoks.
 
-### Implementabilnost
-Standardizacija je mehanička ali sadržajna: za ~13 grafova treba napisati „Što
-isprobati." blok (2–4 numerirana eksperimenta vezana uz klizače tog grafa) i, gdje
-nedostaje, jednu uvodnu rečenicu. ch14 služi kao gotov predložak tona i oblika.
+### Implementabilnost — ✅ OBAVLJENO
+Standardizacija je bila mehanička ali sadržajna: za ~13 grafova trebalo je napisati
+„Što isprobati." blok (2–4 numerirana eksperimenta vezana uz klizače tog grafa) i,
+gdje nedostaje, jednu uvodnu rečenicu. **Učinjeno za sve grafove**; ch14 je poslužio
+kao predložak tona i oblika, a sam je potom prošao potpuni STYLE.md prelet (8
+blokova svedeno na sankcionirani obrazac, bez dvotočja/em-crtica/viška podebljanja).
 
 ---
 
@@ -284,24 +296,25 @@ modu te na mobitelu.
 
 ---
 
-## Predloženi redoslijed korekcija
+## Redoslijed korekcija — status
 
-Poredano po omjeru vrijednost/trošak:
+Poredano po omjeru vrijednost/trošak. Oznake: ✅ obavljeno i commitano ·
+⏳ odgođeno (odluka korisnika) · 👤 koautorska hrpa.
 
-1. **Margine (dim. 7)** — jedan SCSS zahvat, popravlja vidljivu grešku na svim
-   stranicama. Najbrža pobjeda.
-2. **Tri siroče-definicije (dim. 2)** — ch10, ch12, ch13: premjestiti/uplesti,
-   ~3 rečenice.
-3. **ch12 infografika uvod (dim. 6)** — jedan odlomak.
-4. **Duplikat-captioni (dim. 5)** — obrisati ch09 L139, ch19 L117.
-5. **Lukovi (dim. 3)** — mostovi unatrag (~9 poglavlja) + mostovi unaprijed u
-   Sažetcima (~6 šavova). Mehanički ali ih treba pisati pažljivo po S6.
-6. **„Što isprobati." standardizacija OJS (dim. 5)** — ~13 grafova, po predlošku
-   ch14. Najveći sadržajni posao.
-7. **Patuljasta potpoglavlja (dim. 4)** — ch02 (6 stubova), ch15 (tipologija),
-   ch05 — strukturni rez, treba odluka degradirati-ili-podebljati.
-8. **ch13 „Hrvatska i EU" placeholder** — čeka koautora (Milan), ne dirati sam.
-9. **Pokrivenost definicija (dim. 1)** i **ch19 epilog** — veći zahvati, opcijski,
-   već u smjernicama.
+1. ✅ **Margine (dim. 7)** — SCSS containment blok dodan u `styles/custom.scss`.
+2. ✅ **Tri siroče-definicije (dim. 2)** — ch10 uplesteno, ch12 i ch13 premješteni.
+3. ✅ **ch12 infografika uvod (dim. 6)** — uvodni odlomak dodan.
+4. ✅ **Duplikat-captioni (dim. 5)** — ch09 L139 i ch19 L117 obrisani.
+5. ✅ **Lukovi (dim. 3)** — mostovi unatrag (ch06,09,10,12,13,14,15,18) + naprijed
+   u Sažetcima (ch04,13,15,19); ch19 zatvara knjigu. Puni epilog ostaje opcijski.
+6. ✅ **„Što isprobati." standardizacija OJS (dim. 5)** — svih ~13 grafova dobilo
+   blok; ch14 (8 grafova) prošao potpuni STYLE.md prelet. Najveći sadržajni posao,
+   sada gotov.
+7. ⏳ **Patuljasta potpoglavlja (dim. 4)** — ch02 (6 stubova), ch15 (tipologija),
+   ch05 — strukturni rez, čeka odluku degradirati-ili-podebljati. **ODGOĐENO.**
+8. 👤 **ch13 „Hrvatska i EU" placeholder** — čeka koautora (Milan), ne dirati sam.
+9. ⏳/👤 **Pokrivenost definicija (dim. 1)** i **ch19 epilog** — veći zahvati,
+   opcijski, već u smjernicama.
 
-Stavke 8 i dio 9 padaju u koautorsku hrpu (hrvatske empirije, epilog).
+**Obavljeno ovog ciklusa: stavke 1–6.** Otvoreno: stavka 7 (odluka korisnika),
+dijelovi 9. Stavka 8 i hrvatske empirije padaju u koautorsku hrpu (Milan/Petra).
