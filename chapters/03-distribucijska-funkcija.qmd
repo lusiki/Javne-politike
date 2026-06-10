@@ -41,7 +41,7 @@ Utilitarizam polazi od ideje da javne politike treba vrednovati prema njihovu u�
 
 Ova logika često se koristi kao argument za preraspodjelu dohotka. Zamislimo društvo u kojem jedna osoba ima vrlo visok dohodak, a druga vrlo nizak. Ako država oporezuje bogatiju osobu za 1.000 eura i taj iznos transferira siromašnijoj osobi, bogatija osoba gubi dio dohotka, a siromašnija ga dobiva. Međutim, isti iznos novca nema jednaku vrijednost za obje osobe. Za osobu s vrlo visokim dohotkom 1.000 eura može značiti vrlo malu promjenu životnog standarda. Za osobu s vrlo niskim dohotkom isti iznos može značiti mogućnost plaćanja hrane, grijanja, lijekova, stanarine ili školskih potreba za dijete.
 
-::: {#def-opadajuca-granična-korisnost}
+::: {#def-opadajuca-granicna-korisnost}
 **Opadajuća granična korisnost dohotka** znači da svaka dodatna novčana jedinica donosi sve manji porast zadovoljstva kako ukupni dohodak raste. Premještanje iste svote od bogatijeg prema siromašnijem akteru povećava ukupnu korisnost u društvu ako oba aktera dijele tu osobinu.
 :::
 
@@ -182,6 +182,8 @@ lor_t = lor_controls.t
   });
 }
 ```
+
+**Što isprobati.** (1) Povisite klizač Nejednakost tržišnog dohotka i plava se Lorenzova krivulja izdublje odmiče od dijagonale, a Ginijev koeficijent u gornjem lijevom kutu raste, što je očekivana slika sve nejednakijeg tržišnog ishoda. (2) Vratite nejednakost na umjerenu vrijednost pa povlačite Razinu preraspodjele (porezi i transferi) prema gore i krivulja se vidljivo vraća prema liniji jednakosti dok Ginijev koeficijent pada, čime se izravno čita koliko porezi i transferi stišću raspodjelu. (3) Sada postavite preraspodjelu na najvišu vrijednost uz vrlo visoku tržišnu nejednakost i vidjet ćete da i snažna preraspodjela tek djelomično povlači krivulju prema dijagonali, jer država ublažava polazišnu nejednakost, ali je rijetko poništava u cijelosti.
 
 ## Distribucijska funkcija kao temelj društvene solidarnosti
 

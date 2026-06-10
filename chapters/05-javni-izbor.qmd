@@ -112,6 +112,8 @@ vote_C = vote_controls.C
 }
 ```
 
+**Što isprobati.** (1) Pri malenom biračkom tijelu pomaknite klizač Trošak glasanja C prema nuli i neto vrijednost glasanja ostaje pozitivna jer i sitna korist nadvlada zanemariv trošak. (2) Sada povećavajte Veličinu biračkog tijela i pratite kako krivulja strmo pada ispod nule, jer vjerojatnost odlučujućeg glasa P ≈ 1/N kopni brže nego što korist može pratiti. (3) Pokušajte tu negativnu vrijednost vratiti u plus podizanjem klizača Korist od preferiranog ishoda B do kraja i uvjerite se da pri milijunskom biračkom tijelu ni nerealno velika korist ne čini glasanje instrumentalno isplativim.
+
 ::: {#def-racionalno-nepoznavanje}
 **Racionalno nepoznavanje (racionalna ignorancija).** Stanje u kojem se biraču ne isplati prikupljati političke informacije jer je trošak informiranja veći od očekivane koristi, s obzirom na zanemarivu vjerojatnost da će njegov glas utjecati na ishod.
 :::

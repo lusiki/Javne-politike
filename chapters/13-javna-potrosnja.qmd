@@ -12,7 +12,7 @@ title: "Kako država troši naš novac?"
 5. Zašto za učinke potrošnje kvaliteta provedbe znači više od pukog opsega?
 :::
 
-Javna potrošnja jedan je od najvidljivijih i najvažnijih aspekata djelovanja države. Kroz nju država ne samo da financira osnovne funkcije poput obrazovanja, zdravstva i sigurnosti, nego i aktivno oblikuje gospodarske ishode, razinu nejednakosti i otpornost društva na krize. Iako se često promatra kroz prizmu „koliko država troši", ključno pitanje je zapravo zašto država troši i na što troši.
+Među instrumentima koje smo upravo pregledali javna potrošnja zaslužuje zasebno poglavlje jer kroz nju prolazi najveći dio onoga što država stvarno radi. Javna potrošnja jedan je od najvidljivijih i najvažnijih aspekata djelovanja države. Kroz nju država ne samo da financira osnovne funkcije poput obrazovanja, zdravstva i sigurnosti, nego i aktivno oblikuje gospodarske ishode, razinu nejednakosti i otpornost društva na krize. Iako se često promatra kroz prizmu „koliko država troši", ključno pitanje je zapravo zašto država troši i na što troši.
 
 Razumijevanje javne potrošnje zahtijeva kombinaciju povijesne, teorijske i empirijske perspektive. Njezina se uloga dramatično mijenjala u rasponu od minimalne države koja gotovo isključivo osigurava red i sigurnost do moderne države koja upravlja složenim sustavima socijalne zaštite i stabilizira gospodarstvo. Upravo zato analiza javne potrošnje nije samo pitanje ekonomije, nego i politike, institucija i društvenih preferencija.
 
@@ -100,6 +100,8 @@ wag_g = wag_controls.g
 }
 ```
 
+**Što isprobati.** (1) Pri niskom dohotku oko 10 tisuća dolara hipotetska zemlja sjeda nisko na trend i predviđeni udio javne potrošnje ostaje skroman. (2) Povećajte klizač dohotka hipotetske zemlje prema 50 tisuća dolara i crna se točka penje uz krivulju, što je vizualni izraz Wagnerova zakona. (3) Gurnite klizač do gornjeg ruba prema 80 i primijetite da prirast udjela postaje sve manji, jer logaritamski trend pokazuje zasićenje koje empirijski radovi vežu uz više razine razvoja.
+
 Pravi preokret događa se u 20. stoljeću, u kontekstu velikih ekonomskih i političkih šokova. Velika depresija 1930-ih dovodi u pitanje sposobnost tržišta da se samo stabilizira. U tom kontekstu John Maynard Keynes uvodi revolucionarnu ideju prema kojoj država može i treba aktivno intervenirati u gospodarstvo putem javne potrošnje i fiskalne politike kako bi stabilizirala agregatnu potražnju [@keynes1936]. Time javna potrošnja prvi put dobiva jasnu makroekonomsku funkciju.
 
 Nakon Drugog svjetskog rata slijedi razdoblje bez presedana u povijesti javne potrošnje. U većini razvijenih zemalja dolazi do snažne ekspanzije države, osobito kroz razvoj sustava socijalne sigurnosti, javnog zdravstva i obrazovanja. Udio javne potrošnje raste s oko 13 % BDP-a početkom stoljeća na više od 40 % u suvremenim ekonomijama [@tanzi2000]. Ovaj rast nije bio rezultat jedinstvenog faktora, već kombinacije dubokih strukturnih promjena.
@@ -150,6 +152,12 @@ Kasnije interpretacije Keynesove teorije često su dovele do trajnog povećanja 
 
 Ta asimetrija dovodi do trajnih deficita i akumulacije javnog duga. Tanzi dodatno naglašava da širenje javne potrošnje često postaje institucionalno i politički „ljepljivo" jer se jednom uvedeni programi teško smanjuju ili ukidaju [@tanzi2011].
 
+::: {#def-javni-dug}
+**Javni dug** je zbroj svih nepodmirenih obveza države prema vjerovnicima, najčešće izražen kao udio u BDP-u; njegova je dinamika određena primarnim saldom, kamatnom stopom na dug i stopom nominalnog rasta, pa kada je kamatna stopa viša od stope rasta (r > g), omjer duga raste i bez primarnog deficita.
+:::
+
+Upravo zbog te dinamike akumulirani dug nije samo zbroj prošlih deficita. Kada je kamatna stopa na dug viša od stope rasta gospodarstva, omjer duga prema BDP-u raste i bez novog zaduživanja, pa stabilizacijska potrošnja iz prethodnih recesija može opteretiti proračun dugo nakon što je kriza prošla.
+
 Dodatni problem proizlazi iz vremenskih kašnjenja u fiskalnoj politici. Između identifikacije problema, donošenja odluke i stvarne provedbe može proći značajno vrijeme, pa fiskalni poticaj može djelovati tek kada se gospodarstvo već oporavlja [@blanchard2017]. Zato javna potrošnja može stabilizirati gospodarstvo samo ako je pravodobna, ciljana, privremena i simetrična. Bez tih uvjeta, stabilizacijska funkcija može se pretvoriti u izvor makroekonomskih neravnoteža i rasta duga.
 
 ## Razlike u javnoj potrošnji u svijetu
@@ -166,10 +174,6 @@ Empirijska istraživanja pokazuju da veličina javne potrošnje sama po sebi ne 
 Usporedba pokazuje da veličina javne potrošnje sama po sebi govori malo o njezinim učincima. Neke zemlje s velikim javnim sektorom, poput skandinavskih, ostvaruju visok rast, kvalitetne usluge i nisku nejednakost, dok druge sa sličnim udjelom potrošnje u BDP-u imaju slabije rezultate jer veći dio sredstava odlazi na subvencije, kamate na dug ili neučinkovite programe umjesto na obrazovanje, infrastrukturu i ciljanu socijalnu zaštitu. Ista razina potrošnje tako može značiti ulaganje u buduću produktivnost ili njezino trošenje na održavanje postojećih povlastica. Zato je za ocjenu javne potrošnje važnije analizirati njezinu strukturu i kvalitetu provedbe nego puki udio u BDP-u.
 :::
 
-::: {#def-javni-dug}
-**Javni dug** je zbroj svih nepodmirenih obveza države prema vjerovnicima, najčešće izražen kao udio u BDP-u; njegova je dinamika određena primarnim saldom, kamatnom stopom na dug i stopom nominalnog rasta, pa kada je kamatna stopa viša od stope rasta (r > g), omjer duga raste i bez primarnog deficita.
-:::
-
 ## Javna potrošnja u Hrvatskoj i EU
 
 ::: {.callout-note}
@@ -181,7 +185,7 @@ Razlike u javnoj potrošnji potvrđuju temeljni zaključak moderne ekonomije jav
 ::: {.sazetak-panel}
 ## Sažetak
 
-Javna potrošnja jedan je od najvidljivijih izraza djelovanja države, a njezina se uloga povijesno mijenjala od minimalne države reda i sigurnosti do moderne države blagostanja. Uz koristi u obliku financiranja obrazovanja, zdravstva, sigurnosti i socijalne zaštite dolaze i rizici poput rasta duga, neučinkovitosti i tvrdokornih obveza. Potrošnja djeluje i stabilizacijski jer u recesiji može ublažiti pad aktivnosti, no taj učinak ovisi o multiplikatoru i odnosu kamatne stope i stope rasta. Razlike među zemljama pokazuju da ne postoji jedinstveni optimalni model, pa za ishod presuđuje kvaliteta provedbe, a ne sama veličina rashoda.
+Javna potrošnja jedan je od najvidljivijih izraza djelovanja države, a njezina se uloga povijesno mijenjala od minimalne države reda i sigurnosti do moderne države blagostanja. Uz koristi u obliku financiranja obrazovanja, zdravstva, sigurnosti i socijalne zaštite dolaze i rizici poput rasta duga, neučinkovitosti i tvrdokornih obveza. Potrošnja djeluje i stabilizacijski jer u recesiji može ublažiti pad aktivnosti, no taj učinak ovisi o multiplikatoru i odnosu kamatne stope i stope rasta. Razlike među zemljama pokazuju da ne postoji jedinstveni optimalni model, pa za ishod presuđuje kvaliteta provedbe, a ne sama veličina rashoda. Kako se sva ta potrošnja mora i financirati, sljedeće poglavlje prelazi na drugu stranu proračuna i pita kako država prikuplja prihode kroz poreze.
 :::
 
 ::: {.callout-vjezba}

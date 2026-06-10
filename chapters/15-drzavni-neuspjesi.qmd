@@ -13,6 +13,8 @@ title: "Državni neuspjesi i prepreke kvalitetnim javnim politikama"
 6. Zašto cilj nije manje ni više države, nego bolja država?
 :::
 
+Dosadašnja poglavlja pokazala su zašto država intervenira i kojim instrumentima raspolaže. Završni dio knjige okreće perspektivu i pita kada ta intervencija sama postaje problem. Jednako kao što tržište može zakazati, može zakazati i država, pa simetrija zahtijeva da intervenciju provjeravamo jednako strogo kao i tržišni ishod koji ona ispravlja.
+
 ## Što znači neuspjeh države?
 
 ::: {#def-drzavni-neuspjeh}
@@ -204,6 +206,8 @@ score_vals = score_controls
 }
 ```
 
+**Što isprobati.** (1) Ostavite sve dimenzije na srednjoj ocjeni dva i ukupna otpornost stane oko granice umjerenog rizika, što pokazuje da prosječna politika nije automatski robusna. (2) Podignite 5. Kapacitet za provedbu i 8. Mjerenje i evaluacija na tri i pratite kako presuda klizne prema robusnoj politici, jer upravo provedba i evaluacija najviše dižu ukupnu ocjenu. (3) Sada spustite 1. Jasno definiran problem na nulu uz sve ostalo visoko i primijetite da otpornost pada brže nego što biste očekivali, jer politika s krivo definiranim problemom nosi rizik koliko god joj ostali elementi bili snažni.
+
 Takav pristup mijenja način razmišljanja o javnim politikama. Umjesto da se krene od instrumenta („treba uvesti subvenciju", „treba donijeti zakon", „treba osnovati agenciju"), analiza mora krenuti od problema, poticaja i institucionalnog konteksta. Loše javne politike često ne propadaju zato što nisu imale dobar cilj, nego zato što su podcijenile državne neuspjehe.
 
 ## Zaključno — ne protiv države, nego za bolju državu
@@ -215,7 +219,7 @@ Država je nužna za rješavanje mnogih društvenih problema, ali nije savršen 
 ::: {.sazetak-panel}
 ## Sažetak
 
-Državni neuspjeh nastaje kad javna politika ne ostvari svoje ciljeve ili ih ostvari uz prevelike troškove i nepoželjne nuspojave, pa intervencija osmišljena da riješi problem može stvoriti novi. Izvori su mnogostruki, od informacijskih i kognitivnih ograničenja, preko poticaja političara, birokrata i interesnih skupina, do slabih kapaciteta i lošeg dizajna provedbe. Kratkoročnost, regulatorno zarobljavanje i lov na rentu pretvaraju te slabosti u trajne troškove za društvo. Pouka nije manje ni više države po svaku cijenu, nego bolja država, koja zna kada intervenirati, kojim instrumentom i uz kakvu odgovornost.
+Državni neuspjeh nastaje kad javna politika ne ostvari svoje ciljeve ili ih ostvari uz prevelike troškove i nepoželjne nuspojave, pa intervencija osmišljena da riješi problem može stvoriti novi. Izvori su mnogostruki, od informacijskih i kognitivnih ograničenja, preko poticaja političara, birokrata i interesnih skupina, do slabih kapaciteta i lošeg dizajna provedbe. Kratkoročnost, regulatorno zarobljavanje i lov na rentu pretvaraju te slabosti u trajne troškove za društvo. Pouka nije manje ni više države po svaku cijenu, nego bolja država, koja zna kada intervenirati, kojim instrumentom i uz kakvu odgovornost. Kako tu bolju državu izgraditi pitanje je reformskih pristupa kojima se okreću sljedeća poglavlja, počevši od novog javnog menadžmenta i njegova pokušaja da upravljanje učini učinkovitijim.
 :::
 
 ::: {.callout-vjezba}

@@ -13,7 +13,7 @@ title: "Instrumenti državne intervencije"
 6. Po čemu prepoznajemo dobar izbor i kombinaciju instrumenata?
 :::
 
-Država svoju ulogu ne ostvaruje apstraktno, već kroz konkretne **instrumente javne politike**. Kada kažemo da država „intervenira", „regulira", „pomaže", „oporezuje" ili „stabilizira gospodarstvo", zapravo govorimo o različitim načinima na koje javna vlast pokušava utjecati na ponašanje pojedinaca, poduzeća, institucija i tržišta. Instrumenti javne politike su zato operativni alati kojima država pretvara ciljeve u djelovanje.
+Prva tri dijela knjige pitala su zašto država djeluje, tko o tome odlučuje i pod kojim pravilima. Ovaj dio prelazi na praksu i pita čime država zapravo djeluje. Država svoju ulogu ne ostvaruje apstraktno, već kroz konkretne **instrumente javne politike**. Kada kažemo da država „intervenira", „regulira", „pomaže", „oporezuje" ili „stabilizira gospodarstvo", zapravo govorimo o različitim načinima na koje javna vlast pokušava utjecati na ponašanje pojedinaca, poduzeća, institucija i tržišta. Instrumenti javne politike su zato operativni alati kojima država pretvara ciljeve u djelovanje.
 
 Ti instrumenti mogu biti vrlo različiti. Neki izravno uključuju novac, poput poreza, javne potrošnje, subvencija i transfera. Drugi djeluju kroz pravila, zabrane, standarde i dozvole, kao što je regulacija. Treći djeluju kroz organizaciju same države, primjerice javna poduzeća, javne ustanove i agencije. Četvrti djeluju na makroekonomskoj razini, kroz fiskalnu i monetarnu politiku. U novije vrijeme sve veću važnost imaju i informacijski te bihevioralni instrumenti, koji ne počivaju na prisili ili novcu, nego na oblikovanju izbora i informacija koje građani imaju pred sobom.
 
@@ -26,6 +26,8 @@ Isti javni cilj može biti ostvaren različitim instrumentima, ali ti instrument
 Sustavnija klasifikacija instrumenata postoji u literaturi o javnom upravljanju i naziva se **NATO okvir** [@hood1983]. Prema njemu država raspolaže s četiri vrste resursa kojima može djelovati. *Nodality* je položaj države kao informacijskog čvora kroz koji prolazi velika količina podataka i s kojeg ona može slati ili tražiti informacije. *Authority* je formalna ovlast da nešto zapovjedi, zabrani ili dopusti. *Treasure* je financijska moć da nešto plati, oporezuje ili subvencionira. *Organization* je sposobnost da nešto sama proizvede kroz vlastite institucije, zaposlenike i kapacitete.
 
 Većina stvarnih instrumenata koristi više od jednog resursa, ali svaki ima jedan dominantan. Porezi i subvencije počivaju primarno na *treasure*, regulacija na *authority*, javna poduzeća i agencije na *organization*, a informacijske kampanje i transparentnost na *nodality*. Korist okvira nije samo taksonomska. On omogućuje da se za isti cilj razmotri više instrumenata povezanih s različitim resursima, što često otkriva alternative koje pojednostavljena „porez ili regulacija" rasprava previđa.
+
+Prije nego što razložimo pojedine instrumente, vrijedi se vratiti na pitanje zašto država uopće poseže za njima. Instrumenti iz ovog poglavlja odgovaraju na neuspjehe tržišta opisane u prvom dijelu knjige, pa izbor instrumenta uvijek polazi od toga koji se problem rješava. @fig-trzisni-neuspjesi sažima tu vezu i grupira tržišne neuspjehe u tri velike skupine, neefikasnost, nejednakost i makroekonomsku nestabilnost, te uz svaku navodi tip intervencije kojim država najčešće odgovara. Prikaz je namjerno pojednostavnjen jer u praksi jedan instrument rijetko pripada samo jednoj skupini, ali pokazuje logiku koja povezuje dijagnozu problema s izborom alata.
 
 ![Glavne kategorije tržišnih neuspjeha i pripadni instrumenti državne intervencije. Prikaz je pojednostavnjen i služi za udžbeničko objašnjenje osnovnih funkcija države u gospodarstvu.](../images/infographics/12-trzisni-neuspjesi-intervencija.svg){#fig-trzisni-neuspjesi .infographic fig-alt="Dijagram koji povezuje tri kategorije tržišnih neuspjeha — neefikasnost, nejednakost i makroekonomske probleme — s tri tipa instrumenata državne intervencije." width=92%}
 
@@ -69,10 +71,6 @@ Subvencije se najčešće opravdavaju trima argumentima. Prvo, mogu se koristiti
 
 Međutim, subvencije su jedan od instrumenata s najvećim rizikom državnog neuspjeha. Ako su loše dizajnirane, mogu dovesti do neefikasne alokacije resursa, stvaranja ovisnosti o državnoj pomoći i očuvanja poduzeća koja dugoročno nisu konkurentna. Mogu potaknuti poduzeća da više ulažu u lobiranje nego u produktivnost i mogu postati politički teško ukidive [@tullock1967; @krueger1974; @musgrave1989]. Zato je ključno pitanje dodatnosti, odnosno toga je li subvencija potaknula aktivnost koja se inače ne bi dogodila ili je samo financirala ono što bi se dogodilo i bez nje. Dobra subvencija mora biti jasno ciljana, vremenski ograničena, transparentna i evaluirana.
 
-::: {#def-kombinacija-instrumenata}
-**Kombinacija instrumenata** (*policy mix*) je skup različitih instrumenata koji se istodobno primjenjuju radi ostvarivanja jednog ili više srodnih ciljeva; analiza mixa otkriva da isti cilj može biti postignut različitim rasporedom troškova, vidljivosti i administrativnih kapaciteta.
-:::
-
 Komparativni podaci OECD-a pokazuju da različite zemlje rješavaju isti tip problema različitim kombinacijama instrumenata. U klimatskoj politici sjeverna Europa pretežno koristi cijenu ugljika i naknade, dok dio kontinentalnih zemalja oslanja se više na regulatorne standarde i subvencije, a anglosaksonski sustavi naglašavaju tržišta prava emisija. Konačni ekološki ishodi se približavaju, ali fiskalni i distribucijski profil tih putova razlikuje se značajno. Cjenovni instrumenti prenose veći vidljivi teret na potrošača, regulatorni ga sakrivaju u cijenu proizvoda, a subvencije ga prebacuju na opću populaciju kroz proračun.
 
 Ista logika vrijedi za politiku rada. Nordijske zemlje kombiniraju visoke aktivne politike zapošljavanja (treasure + organization) s relativno slabom zaštitom od otkaza (manje authority), dok mediteranske ekonomije naglašavaju zaštitu radnog mjesta kroz regulaciju s manjom potrošnjom na aktivne mjere. Empirijska usporedba pokazuje slično ukupno ulaganje u radnu integraciju, ali drugačiji raspored troškova i različite ishode po dobnoj i obrazovnoj skupini. Izbor instrumenata zato nije samo tehničko pitanje učinkovitosti, nego i institucionalni izbor o tome čije će se opterećenje vidjeti, a čije ne.
@@ -107,7 +105,13 @@ Bihevioralni instrumenti mogu imati velik učinak uz mali trošak, što potvrđu
 
 ## Kombiniranje instrumenata
 
-U praksi se javne politike rijetko oslanjaju na samo jedan instrument. Najčešće se koristi kombinacija instrumenata. Klimatska politika može uključivati porez na ugljik, subvencije za obnovljive izvore energije, regulaciju emisija, javna ulaganja u mrežu i informacijske kampanje. Zdravstvena politika može uključivati javno financiranje, regulaciju lijekova, poreze na štetne proizvode i preventivne kampanje.
+U praksi se javne politike rijetko oslanjaju na samo jedan instrument. Najčešće se koristi kombinacija instrumenata.
+
+::: {#def-kombinacija-instrumenata}
+**Kombinacija instrumenata** (*policy mix*) je skup različitih instrumenata koji se istodobno primjenjuju radi ostvarivanja jednog ili više srodnih ciljeva; analiza mixa otkriva da isti cilj može biti postignut različitim rasporedom troškova, vidljivosti i administrativnih kapaciteta.
+:::
+
+Klimatska politika tako može uključivati porez na ugljik, subvencije za obnovljive izvore energije, regulaciju emisija, javna ulaganja u mrežu i informacijske kampanje. Zdravstvena politika može uključivati javno financiranje, regulaciju lijekova, poreze na štetne proizvode i preventivne kampanje.
 
 Zato je važno razumjeti da instrumenti nisu izolirani i da međusobno djeluju. Porez može biti učinkovitiji ako ga prati informiranje. Regulacija može biti prihvatljivija ako je kombinirana sa subvencijama za prilagodbu. Dobar dizajn javne politike zato ne znači samo odabrati jedan instrument, nego oblikovati koherentan paket mjera koji odgovara problemu, fiskalno je održiv, administrativno provediv, politički legitiman i otvoren evaluaciji.
 

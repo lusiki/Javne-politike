@@ -11,7 +11,7 @@ title: "Dva pogleda na birokraciju"
 4. Po čemu se prepoznaje bolja birokracija i zašto cilj nije puko „rezanje" uprave?
 :::
 
-U raspravama o javnoj upravi postoje dva velika načina razumijevanja birokracije. Prvi je klasičan, **weberovski** pogled, prema kojem je birokracija nužan instrument moderne države, profesionalizacije vlasti i nepristrane provedbe javnih politika. Drugi je pogled **teorije javnog izbora**, prema kojem birokraciju ne treba promatrati samo kao neutralan mehanizam provedbe javnog interesa, nego i kao skup organizacija i pojedinaca koji imaju vlastite interese, poticaje i izvore moći.
+Poglavlje o interesnim skupinama završilo je na savezu koji se najjasnije vidi u odnosu prema birokraciji, pa upravo nju sada stavljamo u središte. U raspravama o javnoj upravi postoje dva velika načina razumijevanja birokracije. Prvi je klasičan, **weberovski** pogled, prema kojem je birokracija nužan instrument moderne države, profesionalizacije vlasti i nepristrane provedbe javnih politika. Drugi je pogled **teorije javnog izbora**, prema kojem birokraciju ne treba promatrati samo kao neutralan mehanizam provedbe javnog interesa, nego i kao skup organizacija i pojedinaca koji imaju vlastite interese, poticaje i izvore moći.
 
 Ta dva pogleda ne treba shvatiti kao potpuno suprotstavljene teorije. Weberovski pristup objašnjava zašto je birokracija bila važan civilizacijski napredak u odnosu na osobnu, patrimonijalnu i klijentelističku vlast. Teorija javnog izbora objašnjava zašto i profesionalna birokracija može stvarati neučinkovitosti, širiti vlastite nadležnosti i udaljiti se od interesa građana. Weber tako objašnjava zašto nam birokracija treba, a javni izbor zašto je moramo nadzirati.
 
@@ -136,7 +136,7 @@ nisk_c = nisk_controls.c
 }
 ```
 
-*Birokracija sklona maksimizaciji proračuna širi uslugu do razine Qₙ na kojoj se ukupna korist izjednačuje s ukupnim troškom, daleko iznad društveno učinkovite razine Q\* na kojoj se izjednačuju granična korist i granični trošak.*
+**Što isprobati.** (1) Pri početnim vrijednostima usporedite učinkovitu razinu Q\* s Niskanenovom razinom Qₙ i uočite da birokracija širi uslugu sve dok ukupna korist tek pokriva ukupni trošak, daleko iznad točke u kojoj se izjednačuju granična korist i granični trošak. (2) Podignite klizač Granični trošak (MC) i pratite kako se obje okomice pomiču ulijevo, no crveno područje prekomjerne potrošnje između Q\* i Qₙ tvrdoglavo opstaje. (3) Smanjite klizač Nagib granične koristi (b) prema 0,4 da krivulja postane položita i vidite kako se obje količine i sam jaz između njih dramatično rastežu, jer plići pad granične koristi birokraciji ostavlja više prostora za prenapuhani proračun.
 
 Niskanenov model počiva na tri ključna elementa. Prvo, birokracija često ima **monopol** nad pružanjem određene javne usluge. Drugo, birokracija ima **informacijsku prednost** jer zna koliko program stvarno košta, gdje postoje rezerve učinkovitosti i koliko bi se moglo uštedjeti. Treće, političari i ministarstvo financija često ne mogu savršeno provjeriti informacije koje im birokracija dostavlja. Zbog toga birokracija može tražiti veći proračun od društveno optimalnog.
 

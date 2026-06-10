@@ -252,6 +252,8 @@ eb_pC = eb_controls.pC
 }
 ```
 
+**Što isprobati.** (1) Pomaknite klizač Položaj točke A udesno i točka A klizi po zelenoj krivulji ugovora, no plavi i crveni luk kroz nju ostaju tangentni, što potvrđuje da je svaka točka na krivulji Pareto učinkovita bez obzira na to koliko je nejednaka raspodjela dobra X. (2) Postavite A-ovu naklonost dobru X (α) i B-ovu naklonost dobru X (β) na blisku vrijednost oko 0,5 i zelena krivulja gotovo se izravna u dijagonalu kutije, jer su pri sličnim preferencijama učinkovite alokacije raspoređene ravnomjerno. (3) Razdvojite α prema 0,75 i β prema 0,25 i krivulja ugovora se snažno iskrivi prema rubu, pa Pareto učinkovite točke postaju izrazito asimetrične iako nijedna od njih nije ništa manje učinkovita od ostalih.
+
 Na temelju tog pojma razvijena su dva temeljna teorema ekonomike blagostanja. **Prvi teorem ekonomike blagostanja** kaže da, pod određenim uvjetima, konkurentsko tržište vodi do Pareto učinkovite alokacije resursa. Ti uvjeti uključuju savršenu konkurenciju, potpune informacije, jasno definirana vlasnička prava, nepostojanje eksternalija, nepostojanje javnih dobara i nepostojanje tržišne moći. Ako su ti uvjeti zadovoljeni, pojedinci i poduzeća, slijedeći vlastite interese, kroz tržišnu razmjenu mogu dovesti do učinkovite alokacije resursa [@arrow1954].
 
 Ovaj teorem pruža snažan argument u korist tržišta. On pokazuje da tržište, u idealnim uvjetima, ne mora biti kaotičan ili sebičan sustav koji vodi društvenom neredu. Naprotiv, decentralizirane odluke pojedinaca i poduzeća mogu, kroz cijene i konkurenciju, dovesti do učinkovite uporabe društvenih resursa. To je jedan od razloga zašto se tržište smatra temeljnim mehanizmom alokacije u modernim gospodarstvima.

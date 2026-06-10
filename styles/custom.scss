@@ -1805,3 +1805,87 @@ form.observablehq--input > label {
   font-family: $brand-font-sans;
 }
 
+// =============================================================
+// Zadržavanje širine — sprječavanje prelijevanja preko desne
+// margine. Layout `page-columns` s marginalnim citatima sužava
+// stupac teksta, pa široke tablice, OJS SVG grafovi i callout
+// kutije znaju iscuriti u marginalni gutter. Ova pravila ih
+// drže unutar stupca (skrol kad je nužno), bez diranja sadržaja.
+// =============================================================
+
+// 1) Tablice — horizontalni skrol umjesto prelijevanja.
+//    Omotač .cell, figura ili sama tablica dobivaju skrol kad
+//    stupci traže više od širine stupca teksta.
+main .quarto-float-tbl,
+main figure:has(> table),
+main .cell-output-display:has(> table),
+main div:has(> table) > table {
+  max-width: 100%;
+}
+
+main table {
+  display: block;
+  width: max-content;
+  max-width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+// Caption ostaje pune širine i ne skrola s tablicom
+main table > caption {
+  white-space: normal;
+}
+
+// 2) OJS / Observable SVG grafovi — poštuj širinu stupca.
+//    Observable Plot skalira kad mu se zada max-width.
+.cell-output svg,
+.cell-output-display svg,
+.observablehq svg,
+.quarto-figure svg,
+.cell-output img,
+.observablehq img {
+  max-width: 100%;
+  height: auto;
+}
+
+// Observable Inputs (klizači, forme) ne smiju gurati stupac
+.observablehq,
+form.observablehq--input,
+.observablehq--input {
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+// 3) Callout i definicijske kutije — clamp + skrol za široku djecu
+//    (duge formule, ugniježđene tablice, neprekinuti tokeni).
+.callout,
+div.callout,
+.callout-praksa,
+.callout-empirija,
+.callout-vjezba,
+.definition,
+div.definition,
+.pojam,
+.takeaway,
+.vodic-panel,
+.sazetak-panel {
+  max-width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+
+  // flex/grid djeca moraju smjeti skupiti se ispod svoje sadržajne širine
+  > * { min-width: 0; }
+}
+
+// 4) Dugi neprekinuti tokeni (URL-ovi, kodni nazivi) u prozi i
+//    kutijama — prelomi umjesto prelijevanja.
+main p,
+main li,
+.callout-body,
+.callout-praksa,
+.callout-empirija,
+.callout-vjezba,
+.definition {
+  overflow-wrap: anywhere;
+}
+

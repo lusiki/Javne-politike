@@ -12,7 +12,7 @@ title: "Cost-benefit analiza i evaluacija javnih politika"
 5. Koja su glavna ograničenja evaluacije i zašto je važna neovisnost evaluatora?
 :::
 
-Cost-benefit analiza (CBA) predstavlja jedan od najvažnijih analitičkih alata u javnim financijama i politikama. Riječ je o sustavnom postupku kojim se procjenjuju ukupne društvene koristi i troškovi neke javne politike, projekta ili investicije, s ciljem donošenja racionalnih i informiranih odluka. Za razliku od privatnog sektora, gdje je kriterij uspješnosti najčešće profit, u javnom sektoru ključni je kriterij društvena dobrobit. Upravo zato CBA omogućuje usporedbu različitih politika na temelju njihova neto doprinosa društvu.
+Reformski pristupi iz prethodnih poglavlja pokazuju kako država može drukčije organizirati svoje djelovanje, no svaki od njih na kraju mora odgovoriti na isto pitanje. Daje li neka politika veću korist od troška i kako to uopće znamo. Cost-benefit analiza (CBA) predstavlja jedan od najvažnijih analitičkih alata u javnim financijama i politikama. Riječ je o sustavnom postupku kojim se procjenjuju ukupne društvene koristi i troškovi neke javne politike, projekta ili investicije, s ciljem donošenja racionalnih i informiranih odluka. Za razliku od privatnog sektora, gdje je kriterij uspješnosti najčešće profit, u javnom sektoru ključni je kriterij društvena dobrobit. Upravo zato CBA omogućuje usporedbu različitih politika na temelju njihova neto doprinosa društvu.
 
 ## Zašto je cost-benefit analiza važna?
 
@@ -127,6 +127,8 @@ npv_b = npv_controls.b
   });
 }
 ```
+
+**Što isprobati.** (1) Pri Diskontna stopa (r) oko 5 % crna točka stoji u pozitivnom području, pa je projekt društveno opravdan. (2) Pomičite klizač udesno i pratite kako NPV pada te u nekom trenutku probija nulu, a to sjecište je upravo interna stopa povrata iznad koje projekt postaje neopravdan. (3) Vratite stopu nisko pa snizite Godišnja neto korist (mil. €) prema 10 i vidjet ćete da cijela krivulja klizne prema dolje, čime se interna stopa povrata smanjuje i sve manji raspon stopa opravdava projekt.
 
 Sve navedeno pokazuje da je CBA u javnom sektoru znatno više od tehničkog alata. Ona je integrativni okvir koji povezuje ekonomsku učinkovitost s društvenom pravednošću, okolišnom održivošću i dugoročnom perspektivom.
 

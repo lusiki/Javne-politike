@@ -114,7 +114,7 @@ ref_s = ref_controls.s
 }
 ```
 
-*Stilizirani prikaz pouke o sekvenciranju — vjerojatnost uspjeha najveća je kada brzina reforme odgovara institucionalnom kapacitetu; pri niskom kapacitetu uspijeva postupnost, a prebrza „šok" reforma pada, dok visok kapacitet podnosi i brže promjene.*
+**Što isprobati.** (1) Pri Institucionalni kapacitet oko 0,4 pomičite Brzina i ambicija reforme tako da se poklopi s kapacitetom i vjerojatnost uspjeha skoči na vrh zvona. (2) Sada gurnite brzinu prema gornjem rubu uz nepromijenjen kapacitet i točka klizne niz desnu stranu krivulje, što je prebrza šok-reforma koja nadilazi kapacitet i pada. (3) Podignite Institucionalni kapacitet prema 0,8 i primijetite da se vrh ne samo pomiče udesno nego i raste, jer sposobnija država podnosi i bržu promjenu i iz nje izvlači veću vjerojatnost uspjeha.
 
 Rodrikov pregled tri desetljeća međunarodnih reformskih iskustava sažima isti obrazac iz drugog kuta [@rodrik2011]. Zemlje koje su brzo i istodobno provodile cijelu listu „najbolje prakse" (liberalizacija trgovine, deregulacija tržišta rada, privatizacija velikih razmjera, otvaranje kapitalnog računa) sustavno su pokazivale slabije rezultate od zemalja koje su isti skup reformi provodile selektivno i postupno, prilagođavajući redoslijed lokalnim ograničenjima. Ključ nije bio u sadržaju pojedine mjere, nego u tome je li lokalna institucionalna i regulatorna infrastruktura mogla apsorbirati promjenu u tom trenutku.
 
@@ -171,7 +171,7 @@ Konačno, možda i najvažniji zaključak jest da se uspjeh reformi ne može mje
 ::: {.sazetak-panel}
 ## Sažetak
 
-Reforme javnog sektora mijenjaju sam način funkcioniranja države, pa su sporije, politički osjetljivije i neizvjesnije od drugih politika, a kvaliteta uprave presudno utječe na razvoj i uspjeh svih ostalih mjera. Njihov uspjeh ne određuje samo dobar tehnički dizajn, nego i politička volja, realističnost, snažni institucionalni kapaciteti, postupnost i kontinuitet kroz različite cikluse. Iskustvo srednje i istočne Europe pokazuje da vanjska sidra poput pristupanja EU jačaju vjerodostojnost, ali djeluju tek uz domaće vlasništvo nad reformama. Prava mjera uspjeha zato nije broj donesenih zakona i strategija, nego stvarna sposobnost države da pruža usluge, upravlja resursima i odgovara na potrebe građana.
+Reforme javnog sektora mijenjaju sam način funkcioniranja države, pa su sporije, politički osjetljivije i neizvjesnije od drugih politika, a kvaliteta uprave presudno utječe na razvoj i uspjeh svih ostalih mjera. Njihov uspjeh ne određuje samo dobar tehnički dizajn, nego i politička volja, realističnost, snažni institucionalni kapaciteti, postupnost i kontinuitet kroz različite cikluse. Iskustvo srednje i istočne Europe pokazuje da vanjska sidra poput pristupanja EU jačaju vjerodostojnost, ali djeluju tek uz domaće vlasništvo nad reformama. Prava mjera uspjeha zato nije broj donesenih zakona i strategija, nego stvarna sposobnost države da pruža usluge, upravlja resursima i odgovara na potrebe građana. Time se zatvara luk knjige koja je krenula od pitanja kakva država i za koje probleme, prošla kroz to tko o njoj odlučuje i pod kojim pravilima, te kojim instrumentima djeluje, a završava spoznajom da odgovor nije ni više ni manje države, nego trajan rad na njezinoj kvaliteti.
 :::
 
 ::: {.callout-vjezba}

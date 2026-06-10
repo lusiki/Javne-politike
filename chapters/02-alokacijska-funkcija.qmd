@@ -214,6 +214,8 @@ pg_mc = pg_controls.mc
 }
 ```
 
+**Što isprobati.** (1) Povećajte broj potrošača (n) i pratite kako se vertikalni zbroj ΣDᵢ podiže, a jaz Q\* − Q_M raste jer pojedinačni doprinos ostaje sitan dok društvena korist ne. (2) Spustite razinu graničnog troška (MC) i vidjet ćete da društveni optimum Q\* klizi udesno mnogo brže nego tržišna razina Q_M, što povećava podproizvodnju. (3) Sada povećajte heterogenost potrošača (Δ) uz nepromijenjenu najvišu spremnost platiti (a₁) i primijetite naizgled neočekivan ishod, naime da tržišna razina ostaje vezana uz jednog kupca s najvećom spremnošću na plaćanje, pa se s rastom raznolikosti problem švercerana zaoštrava upravo ondje gdje bi se očekivalo da brojnost pomaže.
+
 ## Eksternalije
 
 ::: {#def-eksternalija}
@@ -360,6 +362,8 @@ eps_s_ext = ext_controls.eps_s_ext
 }
 ```
 
+**Što isprobati.** (1) Povećajte vanjski trošak po jedinici (e) i pratite kako se MSC odmiče od MPC, društveni optimum Q\* pomiče ulijevo, a osjenčani trokut gubitka blagostanja raste. (2) Vratite (e) na nisku vrijednost i vidjet ćete kako se MSC gotovo poklopi s MPC, pa gubitak blagostanja iščezava jer privatni i društveni trošak postaju jedva razlučivi. (3) Uz fiksni (e) smanjite elastičnost potražnje |εD| prema 0,3 i primijetite protuintuitivan ishod, naime da kruta potražnja zadržava količinu blizu Q_M unatoč eksternaliji, pa porez koji bi je trebao obuzdati pomiče količinu vrlo malo, a glavnina tereta pada na cijenu.
+
 **Pozitivna eksternalija** nastaje kada aktivnost pojedinca ili poduzeća stvara korist za druge, a ta korist nije u potpunosti plaćena. Primjer je cijepljenje. Osoba koja se cijepi štiti sebe, ali istodobno smanjuje vjerojatnost širenja bolesti na druge. Slično vrijedi za obrazovanje. Obrazovaniji pojedinac ima veću osobnu korist kroz veće mogućnosti zapošljavanja i dohotka, ali društvo također ima koristi kroz veću produktivnost, informiranije građane, manju sklonost kriminalu i bolju sposobnost prilagodbe tehnološkim promjenama. Istraživanje i razvoj također stvaraju pozitivne eksternalije jer se nova znanja mogu prelijevati na druga poduzeća, sektore i buduće inovacije.
 
 Kod negativnih eksternalija tržište obično proizvodi previše aktivnosti koja stvara štetu. Kod pozitivnih eksternalija tržište obično proizvodi premalo aktivnosti koja stvara korist. Zadaća države je približiti privatne poticaje društvenim troškovima i koristima.
@@ -499,6 +503,8 @@ eps_s_pos = pos_controls.eps_s_pos
   });
 }
 ```
+
+**Što isprobati.** (1) Povećajte vanjsku korist po jedinici (b) i pratite kako se MSB podiže iznad MPB, društveni optimum Q\* pomiče udesno, a osjenčani trokut propuštene koristi raste jer tržište proizvodi premalo. (2) Spustite (b) prema nuli i vidjet ćete kako se MSB stopi s MPB, pa propuštena korist nestaje i tržišna razina Q_M postaje društveno optimalna. (3) Uz izdašnu vanjsku korist smanjite elastičnost ponude εS prema 0,3 i primijetite protuintuitivan ishod, naime da kruta ponuda zadržava količinu blizu Q_M unatoč velikoj vanjskoj koristi, pa subvencija koja bi je trebala potaknuti diže uglavnom cijenu, a količinu pomiče tek skromno.
 
 Najpoznatiji instrument za ispravljanje negativnih eksternalija je **Pigouov porez**. Ako aktivnost stvara društveni trošak koji nije uključen u cijenu, država može uvesti porez koji povećava privatni trošak te aktivnosti. Time se poduzeća i potrošači potiču da smanje štetno ponašanje. Primjeri su porezi na emisije ugljika, trošarine na gorivo, porezi na duhan ili porezi na alkohol. Logika je jednostavna jer ako neka aktivnost stvara društveni trošak, njezina cijena treba taj trošak odražavati.
 
@@ -656,6 +662,8 @@ eps_s_asi = asi_controls.eps_s_asi
 }
 ```
 
+**Što isprobati.** (1) Povećavajte premiju za kvalitetu (Δ) i pratite kako se S_visoka sve više odiže od S_loša, pa ravnoteža kvalitetne robe (Q₁, P_visoka) klizi ulijevo i prema gore, a pad količine ΔQ raste. (2) Gurnite (Δ) dovoljno visoko i vidjet ćete kako Q₁ pada na nulu, pa se pojavljuje upozorenje da se tržište kvalitetne robe potpuno urušava, baš kao u Akerlofovu primjeru limuna. (3) Sada uz visoku premiju smanjite elastičnost potražnje |εD| prema 0,3 i primijetite protuintuitivan ishod, naime da kruta potražnja prigušuje pad količine, ali zato cijenu kvalitetne robe gura znatno više, pa se asimetrija očituje skokom cijene umjesto nestankom količine.
+
 **Moralni hazard** nastaje nakon sklapanja ugovora. To je situacija u kojoj osiguranje ili zaštita mijenja ponašanje pojedinca jer on više ne snosi puni trošak svojih odluka. Osoba koja ima potpuno osiguranje može biti manje oprezna. Banka koja očekuje da će je država spasiti u krizi može preuzimati veće rizike. Poduzeće koje očekuje stalne državne potpore može manje ulagati u učinkovitost i prilagodbu. Klasična rješenja uključuju dijeljenje rizika kroz franšizu, suosiguranje i nadzor.
 
 ### Moralni hazard (skrivene radnje)
@@ -775,6 +783,8 @@ mh_m = mh_controls.m
   });
 }
 ```
+
+**Što isprobati.** (1) Povećavajte pokriće osiguranja (θ) prema 0,9 i pratite kako krivulja S osiguranjem postaje sve plića, pa agent klizi s optimalne razine e\* na sve viši e_M, a postotni porast rizika i neefikasnost rastu. (2) Vratite (θ) na nulu i vidjet ćete da se dvije krivulje poklope, pa e_M pada na e\* i moralni hazard nestaje jer agent ponovno snosi puni trošak. (3) Uz osiguranje smanjite konveksnost troška (k) i primijetite protuintuitivan ishod, naime da blaži rast troška znači slabiju prirodnu kočnicu rizika, pa iste razine pokrića vode k razmjerno većem skoku e_M nego kad je trošak strmo konveksan.
 
 Asimetrične informacije posebno su važne u zdravstvu, financijama, obrazovanju, osiguranju i tržištu rada. Pacijent obično zna manje od liječnika o dijagnozi, terapiji i kvaliteti liječenja. Štediša zna manje od financijske institucije o složenim financijskim proizvodima. Roditelj ne može uvijek lako procijeniti kvalitetu škole. Poslodavac ne zna uvijek stvarnu produktivnost radnika prije zapošljavanja.
 
@@ -928,6 +938,8 @@ eps_s_mon = mon_controls.eps_s_mon
   });
 }
 ```
+
+**Što isprobati.** (1) Smanjite elastičnost potražnje |εD| prema 0,5 i pratite kako monopolist širi razmak između Q_M i konkurentske količine Q_C, pa monopolska marža i osjenčani trokut mrtvog tereta rastu. (2) Povećajte |εD| prema 3,0 i vidjet ćete kako se Q_M približava Q_C, a cijena P_M pada prema konkurentskoj P_C jer kupci koji lako odustaju oduzimaju monopolistu prostor za podizanje cijene. (3) Uz elastičnu potražnju spustite elastičnost MC (εS) prema 0,4 i primijetite protuintuitivan ishod, naime da strmiji marginalni trošak sam po sebi sužava jaz količina, pa gubitak blagostanja od monopola ovisi ne samo o tržišnoj moći nego i o tome koliko se brzo penju troškovi proizvodnje.
 
 Država može odgovoriti na tržišnu moć na nekoliko načina. Prvi je **politika zaštite tržišnog natjecanja**. Ona uključuje zabranu kartela, nadzor spajanja poduzeća, sprječavanje zloupotrebe dominantnog položaja i uklanjanje neopravdanih prepreka ulasku na tržište. Cilj nije kažnjavati velika poduzeća zato što su velika, nego spriječiti ponašanja koja ograničavaju konkurenciju i štete potrošačima.
 

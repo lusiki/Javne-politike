@@ -12,7 +12,7 @@ title: "Kolektivni izbor"
 5. Zašto je kontrola dnevnog reda izvor moći i kakve to posljedice ima za javne politike?
 :::
 
-Kada odluke donosi pojedinac, ekonomska je analiza relativno jednostavna. Pretpostavljamo da osoba ima preferencije i bira opciju koja joj donosi najveću korist. No javne politike rijetko su rezultat odluke jednog pojedinca. One nastaju kroz **kolektivni izbor**, postupak kojim skupina ljudi s različitim preferencijama dolazi do zajedničke odluke. Pitanje koje se tada postavlja čini se jednostavnim, ali je iznenađujuće složeno. Pitamo se kako od mnoštva pojedinačnih preferencija doći do jedne društvene odluke koja je dosljedna, pravedna i smislena.
+U poglavlju o javnom izboru pretpostavili smo da svaki sudionik političkog procesa slijedi vlastite preferencije. Ostaje pitanje što se događa kada te pojedinačne preferencije treba spojiti u jednu zajedničku odluku. Kada odluke donosi pojedinac, ekonomska je analiza relativno jednostavna. Pretpostavljamo da osoba ima preferencije i bira opciju koja joj donosi najveću korist. No javne politike rijetko su rezultat odluke jednog pojedinca. One nastaju kroz **kolektivni izbor**, postupak kojim skupina ljudi s različitim preferencijama dolazi do zajedničke odluke. Pitanje koje se tada postavlja čini se jednostavnim, ali je iznenađujuće složeno. Pitamo se kako od mnoštva pojedinačnih preferencija doći do jedne društvene odluke koja je dosljedna, pravedna i smislena.
 
 U svakodnevnom političkom govoru neprestano koristimo izraze poput „Hrvatska je odlučila", „Europska unija smatra" ili „volja naroda". Teorija javnog izbora poziva nas na intelektualnu iskrenost. Skupine nemaju um, nemaju preferencije i nemaju volju, a preferencije imaju samo pojedinci. Proces pretvaranja heterogenih pojedinačnih rang-lista u jedinstvenu „društvenu rang-listu" nije tehnička formalnost, nego prijelaz pun logičkih paradoksa, proceduralnih zamki i neočekivanih ishoda [@arrow1951; @sen1970; @buchanan1962].
 
@@ -103,6 +103,8 @@ cond_v3 = cond_controls.v3
   });
 }
 ```
+
+**Što isprobati.** (1) Zadržite početni raspored i provjerite kako tri rang-liste koje rotiraju u istom smjeru zatvaraju strelice u krug, pa natpis javlja ciklus bez stabilnog pobjednika. (2) Biraču 2 promijenite samo jedno mjesto u rang-listi i pratite kako se petlja prekida te se pojavljuje Condorcetov pobjednik označen zelenom bojom. (3) Postavite svim trima biračima istu rang-listu pa potom unesite tek malen otklon i uvjerite se da je za ciklus potrebna upravo ona posebna kombinacija suprotstavljenih redoslijeda, a ne bilo koje neslaganje birača.
 
 Posljedica je važna. Kada postoji ciklus, ishod ovisi o redoslijedu glasovanja. Onaj tko kontrolira dnevni red, to jest koje se opcije i kojim redoslijedom stavljaju na glasovanje, može utjecati na konačni rezultat. To je prvi nagovještaj da pravila igre nisu nevažna pozadina, nego da oblikuju same ishode.
 
