@@ -128,7 +128,7 @@ npv_b = npv_controls.b
 }
 ```
 
-*NPV projekta (ulaganje 100 mil. € i neto korist kroz četiri godine) pada kako raste diskontna stopa; pri internoj stopi povrata (IRR) jednak je nuli, a iznad nje projekt postaje neopravdan.* Sve navedeno pokazuje da je CBA u javnom sektoru znatno više od tehničkog alata. Ona je integrativni okvir koji povezuje ekonomsku učinkovitost s društvenom pravednošću, okolišnom održivošću i dugoročnom perspektivom.
+Sve navedeno pokazuje da je CBA u javnom sektoru znatno više od tehničkog alata. Ona je integrativni okvir koji povezuje ekonomsku učinkovitost s društvenom pravednošću, okolišnom održivošću i dugoročnom perspektivom.
 
 ## Ograničenja cost-benefit analize
 

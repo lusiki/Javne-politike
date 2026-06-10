@@ -112,12 +112,6 @@ vote_C = vote_controls.C
 }
 ```
 
-*Neto vrijednost glasanja R = B/N − C brzo pada prema nuli kako raste biračko tijelo, jer vjerojatnost odlučujućeg glasa P ≈ 1/N postaje zanemariva; tek nerealno velika korist B može nadvladati i malen trošak glasanja.*
-
-::: {.callout-vjezba}
-Otvorite interaktivni graf iznad i zadržite trošak glasanja na $C = 10$ € te korist na $B = 5000$ €, a zatim povećavajte veličinu biračkog tijela. Pri kojoj veličini $N$ neto vrijednost glasanja $R$ prelazi iz pozitivne u negativnu? Provjerite zatim računski tako da iz uvjeta $R = B/N - C = 0$ izvedete kritičnu veličinu $N^{*} = B/C$ i usporedite je s grafom. Naposljetku, koliko bi puta morala porasti korist $B$ da bi se glasanje instrumentalno „isplatilo" u biračkom tijelu od milijun ljudi uz isti trošak? Što vaš rezultat govori o tome zašto se stvarna izlaznost ne može objasniti samo instrumentalnim motivom?
-:::
-
 ::: {#def-racionalno-nepoznavanje}
 **Racionalno nepoznavanje (racionalna ignorancija).** Stanje u kojem se biraču ne isplati prikupljati političke informacije jer je trošak informiranja veći od očekivane koristi, s obzirom na zanemarivu vjerojatnost da će njegov glas utjecati na ishod.
 :::
@@ -175,4 +169,8 @@ Pouka nije da su političari ili birokrati loši ljudi, nego da i dobronamjerni 
 ## Sažetak
 
 Teorija javnog izbora ekonomskim alatima analizira političko odlučivanje i polazi od pretpostavke da i u politici djeluju pojedinci sa svojim ciljevima, a ne bestjelesni zastupnici općeg dobra. Ključno je razlikovati pravila igre od ishoda jer isti akteri pod različitim pravilima proizvode različite rezultate. Kada se ljudi promatraju kao birači, političari, birokrati i pripadnici interesnih skupina, mnogi naizgled iracionalni potezi države postaju razumljivi i predvidljivi. Ovo poglavlje postavlja taj okvir i njegove aktere, a mehanizme kroz koje nastaje neuspjeh države, od kolektivnog djelovanja i interesnih skupina, preko birokracije, do ustavnih pravila, razrađuju poglavlja koja slijede.
+:::
+
+::: {.callout-vjezba}
+Otvorite interaktivni graf iznad i zadržite trošak glasanja na $C = 10$ € te korist na $B = 5000$ €, a zatim povećavajte veličinu biračkog tijela. Pri kojoj veličini $N$ neto vrijednost glasanja $R$ prelazi iz pozitivne u negativnu? Provjerite zatim računski tako da iz uvjeta $R = B/N - C = 0$ izvedete kritičnu veličinu $N^{*} = B/C$ i usporedite je s grafom. Naposljetku, koliko bi puta morala porasti korist $B$ da bi se glasanje instrumentalno „isplatilo" u biračkom tijelu od milijun ljudi uz isti trošak? Što vaš rezultat govori o tome zašto se stvarna izlaznost ne može objasniti samo instrumentalnim motivom?
 :::

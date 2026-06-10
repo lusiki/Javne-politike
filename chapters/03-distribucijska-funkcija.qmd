@@ -167,8 +167,6 @@ lor_t = lor_controls.t
 }
 ```
 
-*Lorenzova krivulja udaljava se od dijagonale jednakosti kako raste nejednakost tržišnog dohotka, a preraspodjela je vraća prema dijagonali i smanjuje Ginijev koeficijent.*
-
 ## Distribucijska funkcija kao temelj društvene solidarnosti
 
 Distribucijska funkcija države pokazuje da javne financije nisu samo tehničko pitanje prikupljanja i trošenja novca. One su i izraz društvenog dogovora o tome koliko nejednakosti prihvaćamo, koje rizike dijelimo, kome pomažemo i koje životne prilike želimo osigurati svim građanima. Tržište može stvarati bogatstvo i poticati učinkovitost, ali ne jamči da će dohodak, bogatstvo i prilike biti raspodijeljeni na način koji društvo smatra pravednim.

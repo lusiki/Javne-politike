@@ -1377,10 +1377,6 @@ Porez na dobit u Hrvatskoj ima proporcionalnu strukturu i relativno konkurentne 
 
 Za razliku od poreza na rad i potrošnju, oporezivanje imovine u Hrvatskoj relativno je slabo razvijeno. Ne postoji klasični godišnji porez na nekretnine u punom smislu, već se primjenjuju porez na promet nekretnina (3 % vrijednosti) te lokalni porezi i komunalne naknade. Zbog toga porezi na imovinu imaju relativno mali udio u ukupnim poreznim prihodima, što Hrvatsku razlikuje od nekih razvijenijih zemalja u kojima je taj oblik oporezivanja značajniji.
 
-::: {.callout-vjezba}
-Pretpostavite radnika s bruto plaćom od 1.500 € mjesečno. Izračunajte (a) iznos doprinosa za mirovinsko (20 %) i zdravstveno osiguranje (16,5 %), (b) bruto trošak rada za poslodavca i (c) neto plaću nakon poreza na dohodak (23 %, uz osobni odbitak od 600 €). Koliki je ukupni porezni klin kao postotak bruto troška rada? Usporedite s prosjekom EU od ~38 %.
-:::
-
 ## Porezi u doba umjetne inteligencije
 
 Sve dosad opisano, od povijesti poreza do hrvatskog poreznog sustava, počiva na jednoj tihoj pretpostavci, a to je da je **rad ljudi** glavni izvor stvaranja ekonomske vrijednosti, a **potrošnja kućanstava** glavni mehanizam kroz koji ta vrijednost cirkulira. Upravo zato moderne države, uključujući Hrvatsku, ubiru najveći dio prihoda iz poreza na dohodak, doprinosa na plaće i poreza na potrošnju. Brzi razvoj umjetne inteligencije (AI), međutim, prvi put u suvremenoj povijesti dovodi tu pretpostavku u pitanje. Ako strojevi postupno mogu obavljati sve veći dio ekonomski vrijednog rada, dvije temeljne porezne baze suvremene države, dohodak od rada i ljudska potrošnja, počinju se polako, ali sustavno smanjivati [@korinek2026]. Pitanje koje iz toga proizlazi nije više samo tehnološko nego duboko fiskalno. Postavlja se pitanje na čemu će porezni sustav počivati kada se vrijednost sve više stvara izvan rada.
@@ -1477,10 +1473,6 @@ Istovremeno, ostaje nekoliko jasnih ranjivosti. Prvo, **porezni klin na rad i da
 
 Korisno je razmišljanje o Hrvatskoj voditi i prema sljedećem redoslijedu prioriteta. Kratkoročno valja dalje rasteretiti rad uz modernizaciju PDV-a za digitalnu ekonomiju i razvoj poreza na nekretnine. Srednjoročno se Hrvatska treba uključiti u europski okvir oporezivanja digitalnih usluga. Dugoročno se može razmotriti fond po uzoru na suverene investicijske fondove kojim bi se akumulirao vlasnički udjel društva u dobicima od AI tranzicije.
 
-::: {.callout-vjezba}
-Pretpostavite hipotetski scenarij u kojem AI tijekom desetljeća istisne 15 % bruto plaća iz hrvatske ekonomije, pri čemu se istisnuta vrijednost preseli na kapital. Koristeći okvirne udjele iz teksta (porezi i doprinosi na rad ~ 18 % BDP-a, porezi na dobit i kapital ~ 3 % BDP-a, efektivne stope kao u tekstu), procijenite (a) izravni gubitak prihoda od poreza na rad, (b) dobitak od poreza na dobit ako 15 % bruto plaća postane dobit i (c) neto fiskalni učinak. Koju biste poreznu mjeru iz @tbl-ai-faze prvo uveli da zatvorite jaz i zašto?
-:::
-
 ### Otvorena pitanja i ograničenja okvira
 
 Okvir Korineka i Lockwooda dragocjen je upravo zato što razlikuje stupnjeve tehnološke tranzicije i pokazuje da isti porezni instrument može biti dobar ili loš ovisno o fazi. Okvir ipak ne uklanja nekoliko stvarnih ograničenja. Prvo, **dubina je neizvjesnost** jer ne znamo hoće li, ni kada, doći do Faze 2, pa porezne sustave treba dizajnirati tako da budu **otporni na obje krajnosti**. Drugo, **porezna konkurencija među državama** ograničava jednostranu primjenu mjera poput poreza na računarsku snagu. Male, otvorene ekonomije poput Hrvatske posebno su izložene riziku premještanja AI investicija u susjedne, niže oporezive jurisdikcije ako se ne uskladi politika na razini EU. Treće, **politička ekonomija pomaka prema potrošnji** nije neutralna jer bez popratnih redistributivnih mjera takav pomak povećava regresivnost sustava, što može oslabiti njegovu legitimnost. To je pitanje koje je već u središtu rasprave razvijene u drugom dijelu knjige.
@@ -1491,4 +1483,12 @@ Konačno, valja zadržati i metodološku skromnost. Rasprava o porezima u doba A
 ## Sažetak
 
 Porezi su obvezna, nepovratna davanja bez izravne protuusluge i temeljni su izvor prihoda moderne države, različit od naknada, pristojbi i doprinosa. Različite vrste poreza, na dohodak, potrošnju i imovinu, vrednuju se prema načelima pravednosti, učinkovitosti, jednostavnosti i izdašnosti, koja često stoje u međusobnoj napetosti. Teorija optimalnog oporezivanja pokazuje kako prikupiti potrebne prihode uz najmanji gubitak učinkovitosti, ali uvijek unutar političkih i institucionalnih ograničenja. Usporedba poreznih sustava u svijetu te u EU i Hrvatskoj, kao i izazovi digitalizacije i umjetne inteligencije, potvrđuju da porez nije samo teret, nego instrument kroz koji društvo izražava svoje vrijednosti i prioritete.
+:::
+
+::: {.callout-vjezba}
+Pretpostavite radnika s bruto plaćom od 1.500 € mjesečno. Izračunajte (a) iznos doprinosa za mirovinsko (20 %) i zdravstveno osiguranje (16,5 %), (b) bruto trošak rada za poslodavca i (c) neto plaću nakon poreza na dohodak (23 %, uz osobni odbitak od 600 €). Koliki je ukupni porezni klin kao postotak bruto troška rada? Usporedite s prosjekom EU od ~38 %.
+:::
+
+::: {.callout-vjezba}
+Pretpostavite hipotetski scenarij u kojem AI tijekom desetljeća istisne 15 % bruto plaća iz hrvatske ekonomije, pri čemu se istisnuta vrijednost preseli na kapital. Koristeći okvirne udjele iz teksta (porezi i doprinosi na rad ~ 18 % BDP-a, porezi na dobit i kapital ~ 3 % BDP-a, efektivne stope kao u tekstu), procijenite (a) izravni gubitak prihoda od poreza na rad, (b) dobitak od poreza na dobit ako 15 % bruto plaća postane dobit i (c) neto fiskalni učinak. Koju biste poreznu mjeru iz @tbl-ai-faze prvo uveli da zatvorite jaz i zašto?
 :::

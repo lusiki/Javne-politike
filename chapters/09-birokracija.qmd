@@ -133,19 +133,6 @@ nisk_c = nisk_controls.c
 Niskanenov model počiva na tri ključna elementa. Prvo, birokracija često ima **monopol** nad pružanjem određene javne usluge. Drugo, birokracija ima **informacijsku prednost** jer zna koliko program stvarno košta, gdje postoje rezerve učinkovitosti i koliko bi se moglo uštedjeti. Treće, političari i ministarstvo financija često ne mogu savršeno provjeriti informacije koje im birokracija dostavlja. Zbog toga birokracija može tražiti veći proračun od društveno optimalnog.
 
 Birokratsko širenje ne mora biti posljedica korupcije ili zle namjere. Ono može biti sasvim racionalno ponašanje unutar sustava u kojem se uspjeh institucije mjeri veličinom proračuna, brojem zaposlenih i širinom nadležnosti. U kasnijim raspravama model je kritiziran kao previše pojednostavljen, jer nisu svi birokrati jednako motivirani proračunom. Neki žele miran posao, neki stručni ugled, a neki doista žele poboljšati javnu uslugu. Breton i Wintrobe upozorili su da su interesi unutar birokracije heterogeni, pri čemu viši službenici teže moći i prestižu, a niži sigurnosti radnoga mjesta, pa maksimizacija proračuna ne mora biti zajednički cilj svih razina [@breton1975]. Dunleavy je tvrdio da birokrati mogu nastojati maksimizirati vlastiti utjecaj i kontrolu nad politikom, a ne nužno cijeli proračun [@dunleavy1985]. Ipak, Niskanenov model ostaje važan jer jasno pokazuje da se proračunski proces ne može razumjeti samo kao tehničko određivanje potrebnih sredstava.
-
-::: {.callout-vjezba}
-Otvorite interaktivni graf iznad i postavite nagib granične koristi na vrijednost 1 te granični trošak na vrijednost 3. Time dobivate birokraciju čija je granična korist društvu opisana izrazom MB = 10 − Q, dok je granični trošak svake dodatne jedinice usluge stalan i iznosi 3.
-
-(a) Izračunajte društveno učinkovitu količinu Q\* na kojoj se izjednačuju granična korist i granični trošak. Zatim izračunajte ukupnu korist i ukupni trošak na toj razini, pri čemu ukupnu korist računate kao površinu ispod krivulje granične koristi do količine Q\*.
-
-(b) Birokracija sklona maksimizaciji proračuna ne staje na Q\*, nego širi uslugu sve dok ukupna korist još uvijek pokriva ukupni trošak, odnosno do razine Qₙ na kojoj je ukupna korist jednaka ukupnom trošku. Izračunajte Qₙ i pokažite da na toj razini sponzor i dalje odobrava proračun iako je granična korist zadnjih jedinica pala ispod graničnog troška.
-
-(c) Izračunajte prekomjernu ponudu kao razliku Qₙ − Q\* te procijenite gubitak društvene vrijednosti na rasponu od Q\* do Qₙ, gdje za svaku dodatnu jedinicu trošak premašuje korist.
-
-Objasnite zatim zašto birokracija uspijeva nametnuti razinu Qₙ, a ne Q\*. Povežite odgovor s monopolom nad uslugom i s informacijskom prednošću birokracije nad sponzorom koji ne može provjeriti stvarni odnos koristi i troška svake dodatne jedinice. Što vaš rezultat otkriva o tome zašto pitanje koliko novca institucija traži nije isto što i pitanje koliko bi sredstava bilo društveno opravdano?
-:::
-
 Ako želimo učinkovitu državu, nije dovoljno pitati koliko novca neka institucija traži. Treba pitati koje rezultate proizvodi, koliko ti rezultati koštaju, postoje li jeftiniji načini provedbe i tko neovisno provjerava informacije koje institucija iznosi.
 
 ::: {.callout-praksa}
@@ -206,4 +193,14 @@ Dobra javna uprava zato mora spojiti **profesionalnost** i **odgovornost**. Mora
 ## Sažetak
 
 Birokraciju je korisno gledati kroz dva pogleda koja se nadopunjuju. Weberovski pogled objašnjava zašto je profesionalna javna uprava civilizacijski napredak koji štiti građane od samovolje, klijentelizma i nejednakog tretmana. Teorija javnog izbora podsjeća da i takva uprava djeluje unutar sustava poticaja te može težiti većim proračunima, širim nadležnostima i očuvanju vlastitog statusa. Ključno pitanje zato nije veličina, nego kvaliteta, pa dobra javna uprava spaja profesionalnost i odgovornost, a cilj reforme nije puko rezanje, nego stvaranje bolje birokracije.
+:::
+
+::: {.callout-vjezba}
+Otvorite interaktivni graf iznad i postavite nagib granične koristi na vrijednost 1 te granični trošak na vrijednost 3. Time dobivate birokraciju čija je granična korist društvu opisana izrazom MB = 10 − Q, dok je granični trošak svake dodatne jedinice usluge stalan i iznosi 3.
+
+(a) Izračunajte društveno učinkovitu količinu Q\* na kojoj se izjednačuju granična korist i granični trošak. Zatim izračunajte ukupnu korist i ukupni trošak na toj razini, pri čemu ukupnu korist računate kao površinu ispod krivulje granične koristi do količine Q\*.
+
+(b) Birokracija sklona maksimizaciji proračuna ne staje na Q\*, nego širi uslugu sve dok ukupna korist još uvijek pokriva ukupni trošak, odnosno do razine Qₙ na kojoj je ukupna korist jednaka ukupnom trošku. Izračunajte Qₙ i pokažite da na toj razini sponzor i dalje odobrava proračun iako je granična korist zadnjih jedinica pala ispod graničnog troška.
+
+(c) Izračunajte prekomjernu ponudu kao razliku Qₙ − Q\* te procijenite gubitak društvene vrijednosti na rasponu od Q\* do Qₙ, gdje za svaku dodatnu jedinicu trošak premašuje korist. Objasnite zatim zašto birokracija uspijeva nametnuti razinu Qₙ, a ne Q\*. Povežite odgovor s monopolom nad uslugom i s informacijskom prednošću birokracije nad sponzorom koji ne može provjeriti stvarni odnos koristi i troška svake dodatne jedinice.
 :::

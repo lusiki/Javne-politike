@@ -90,16 +90,6 @@ Iz tih nalaza proizlazi praktična pouka koja nije ideološka. Pitanje nije treb
 
 Važno je pritom naglasiti da pravila ne smiju biti potpuno slijepa na okolnosti. Fiskalna politika mora imati prostor za reakciju u velikim krizama. Zato dobro pravilo nije ono koje potpuno ukida fleksibilnost, nego ono koje dopušta odstupanja pod jasno definiranim uvjetima, uz transparentnost, obrazloženje i plan povratka na održivu putanju. Cilj nije mehanička politika, nego **vjerodostojna** politika.
 
-::: {.callout-vjezba}
-Pretpostavite vladu koja prije izbora bira između dvije politike. Ako ostane pri najavljenoj fiskalnoj disciplini, dugoročna korist za gospodarstvo iznosi 10 jedinica, a kratkoročni politički dobitak vlade 2 jedinice. Ako odstupi i poveća rashode prije izbora, kratkoročni politički dobitak vlade raste na 8 jedinica, ali dugoročna korist za gospodarstvo pada na 4 jedinice zbog viših inflacijskih očekivanja i skupljeg zaduživanja. Birači i tržišta formiraju očekivanja unaprijed i kažnjavaju odstupanje samo ako ga predvide.
-
-(a) Uz čistu diskreciju, u kojoj vlada bira nakon što su očekivanja već formirana, izračunajte koju politiku vlada bira ako maksimizira vlastiti kratkoročni dobitak. Pokažite da je taj izbor vremenski nedosljedan u odnosu na ono što bi vlada najradije obećala unaprijed.
-
-(b) Pretpostavite sada obvezujuće fiskalno pravilo koje odstupanje čini skupljim tako da kratkoročni politički dobitak od odstupanja umanjuje za kaznu k. Izračunajte najmanju vrijednost k pri kojoj vladi postaje isplativije ostati pri disciplini. Usporedite ukupnu društvenu korist u ishodu s pravilom i u ishodu s diskrecijom.
-
-(c) Objasnite zašto bi racionalni sudionici iza vela neizvjesnosti, koji ne znaju hoće li biti na vlasti ili u oporbi, pristali na takvo pravilo prije nego što saznaju svoj položaj. Povežite odgovor s Buchananovim razlikovanjem razine pravila i razine ishoda i obrazložite zašto ograničenje izabrano unaprijed može učiniti sve sudionike boljima, iako svakoj pojedinoj vladi oduzima privlačnu kratkoročnu opciju.
-:::
-
 ## Političko-proračunski ciklusi
 
 S problemom vremenske nedosljednosti usko su povezani **političko-proračunski ciklusi**. Oni nastaju kada vlade prilagođavaju fiskalnu politiku izbornom kalendaru, a ne dugoročnim potrebama gospodarstva. Ideja je jednostavna. Prije izbora vlast ima poticaj povećati rashode, smanjiti poreze ili otvoriti nove programe kako bi povećala potporu birača. Nakon izbora dolazi vrijeme fiskalne prilagodbe [@nordhaus1975].
@@ -128,4 +118,14 @@ Njezina je glavna pouka posebno važna za javne politike jer dobra javna politik
 ## Sažetak
 
 Ustavna ekonomika pomiče pozornost s pitanja koje politike želimo na pitanje po kojim se pravilima te politike donose. Problem vremenske nedosljednosti pokazuje zašto odluka koja je danas privlačna sutra postaje štetna i zašto vjerodostojnost zahtijeva obvezujuća pravila, a ne samo dobre namjere. Fiskalna pravila, neovisne institucije, transparentnost i podjela vlasti zato obuzdavaju političke cikluse i usmjeravaju i nesavršene aktere prema odgovornijim odlukama. Tako ustavna ekonomika nadograđuje institucionalnu ekonomiku i teoriju javnog izbora i uči nas da se kvaliteta države mjeri i dobrim pravilima, a ne samo opsegom njezina djelovanja.
+:::
+
+::: {.callout-vjezba}
+Pretpostavite vladu koja prije izbora bira između dvije politike. Ako ostane pri najavljenoj fiskalnoj disciplini, dugoročna korist za gospodarstvo iznosi 10 jedinica, a kratkoročni politički dobitak vlade 2 jedinice. Ako odstupi i poveća rashode prije izbora, kratkoročni politički dobitak vlade raste na 8 jedinica, ali dugoročna korist za gospodarstvo pada na 4 jedinice zbog viših inflacijskih očekivanja i skupljeg zaduživanja. Birači i tržišta formiraju očekivanja unaprijed i kažnjavaju odstupanje samo ako ga predvide.
+
+(a) Uz čistu diskreciju, u kojoj vlada bira nakon što su očekivanja već formirana, izračunajte koju politiku vlada bira ako maksimizira vlastiti kratkoročni dobitak. Pokažite da je taj izbor vremenski nedosljedan u odnosu na ono što bi vlada najradije obećala unaprijed.
+
+(b) Pretpostavite sada obvezujuće fiskalno pravilo koje odstupanje čini skupljim tako da kratkoročni politički dobitak od odstupanja umanjuje za kaznu k. Izračunajte najmanju vrijednost k pri kojoj vladi postaje isplativije ostati pri disciplini. Usporedite ukupnu društvenu korist u ishodu s pravilom i u ishodu s diskrecijom.
+
+(c) Objasnite zašto bi racionalni sudionici iza vela neizvjesnosti, koji ne znaju hoće li biti na vlasti ili u oporbi, pristali na takvo pravilo prije nego što saznaju svoj položaj. Povežite odgovor s Buchananovim razlikovanjem razine pravila i razine ishoda i obrazložite zašto ograničenje izabrano unaprijed može učiniti sve sudionike boljima, iako svakoj pojedinoj vladi oduzima privlačnu kratkoročnu opciju.
 :::

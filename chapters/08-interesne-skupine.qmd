@@ -38,18 +38,6 @@ Ova asimetrija objašnjava zašto se mnoge neučinkovite politike teško ukidaju
 U Hrvatskoj se ova logika vidi u snažnom utjecaju poljoprivrednih lobija, sindikata javnih i državnih službi te pojedinih profesionalnih komora, skupina koje održavaju visoku razinu organiziranosti unatoč relativno malom udjelu u stanovništvu. Na razini EU moćni sektorski lobiji (poljoprivreda, energetika, automobilska i farmaceutska industrija) oblikuju Zajedničku poljoprivrednu politiku, zeleni dogovor i regulatorne standarde, a Zajednička poljoprivredna politika već desetljećima troši znatan dio europskog proračuna unatoč širokoj kritici njezine neučinkovitosti. Klasični svjetski primjeri uključuju američki šećerni lobi i Nacionalno udruženje za oružje (NRA), koji desetljećima održavaju subvencije i povlastice usprkos ekonomskoj kritici.
 :::
 
-::: {.callout-vjezba}
-Pretpostavite hipotetsko gospodarstvo s 20 milijuna poreznih obveznika u kojem država uvodi carinsku zaštitu za sektor koji čini pet domaćih proizvođača. Mjera tih pet poduzeća zajedno donosi 50 milijuna eura godišnje dodatne dobiti, a financira se kroz više cijene koje plaćaju potrošači, pri čemu ukupan trošak za potrošače iznosi 80 milijuna eura godišnje.
-
-(a) Izračunajte prosječnu godišnju korist po pojedinom proizvođaču i prosječni godišnji trošak po pojedinom poreznom obvezniku.
-
-(b) Usporedite ukupnu korist sektora s ukupnim troškom potrošača i utvrdite je li mjera za društvo neto pozitivna ili neto negativna te koliki je neto gubitak.
-
-(c) Pretpostavite da je svaki proizvođač spreman uložiti u lobiranje iznos do visine vlastite očekivane koristi. Izračunajte gornju granicu ukupnih resursa koji bi se mogli potrošiti na nadmetanje za tu povlasticu i objasnite zašto, prema logici lova na rentu, taj iznos predstavlja dodatni društveni gubitak povrh razlike izračunate u (b).
-
-Objasnite zašto mjera koja je za društvo neto negativna ipak politički opstaje. Zašto asimetrija između velike koncentrirane koristi po proizvođaču i sićušnoga raspršenog troška po obvezniku predviđa da će se izboriti upravo organizirana manjina, a ne raspršena većina koja snosi teret?
-:::
-
 ## Lov na rentu
 
 Kada poduzeća i skupine ulažu resurse u stjecanje političkih povlastica umjesto u stvaranje vrijednosti, govorimo o **lovu na rentu** (*rent-seeking*) [@tullock1967; @krueger1974]. Renta u ovom smislu nije prihod od najma, nego ekonomska korist koja proizlazi iz povlaštenog položaja, a ne iz veće produktivnosti, primjerice u obliku monopolske zaštite, ekskluzivne dozvole, kvote, subvencije ili porezne olakšice.
@@ -98,4 +86,16 @@ Analiza interesnih skupina objašnjava zašto stvarne politike često odstupaju 
 ## Sažetak
 
 Utjecaj interesnih skupina slijedi prepoznatljivu logiku. Olsonova teorija kolektivnog djelovanja objašnjava zašto se uske i koncentrirane skupine organiziraju lakše od širokih, a selektivni poticaji zašto opstaju i kad zajednički cilj nije dovoljan. Asimetrija koncentriranih koristi i raspršenih troškova pokazuje zašto se neučinkovite politike teško ukidaju, dok lov na rentu i regulatorno zarobljavanje pretvaraju taj utjecaj u stvaran trošak za društvo. Usporedba pluralističkih i korporativističkih sustava podsjeća da problem nije postojanje interesa, nego neravnoteža i netransparentnost njihova djelovanja, pa je zadaća javnih politika to djelovanje otvoriti i podvrgnuti jasnim pravilima.
+:::
+
+::: {.callout-vjezba}
+Pretpostavite hipotetsko gospodarstvo s 20 milijuna poreznih obveznika u kojem država uvodi carinsku zaštitu za sektor koji čini pet domaćih proizvođača. Mjera tih pet poduzeća zajedno donosi 50 milijuna eura godišnje dodatne dobiti, a financira se kroz više cijene koje plaćaju potrošači, pri čemu ukupan trošak za potrošače iznosi 80 milijuna eura godišnje.
+
+(a) Izračunajte prosječnu godišnju korist po pojedinom proizvođaču i prosječni godišnji trošak po pojedinom poreznom obvezniku.
+
+(b) Usporedite ukupnu korist sektora s ukupnim troškom potrošača i utvrdite je li mjera za društvo neto pozitivna ili neto negativna te koliki je neto gubitak.
+
+(c) Pretpostavite da je svaki proizvođač spreman uložiti u lobiranje iznos do visine vlastite očekivane koristi. Izračunajte gornju granicu ukupnih resursa koji bi se mogli potrošiti na nadmetanje za tu povlasticu i objasnite zašto, prema logici lova na rentu, taj iznos predstavlja dodatni društveni gubitak povrh razlike izračunate u (b).
+
+Objasnite zašto mjera koja je za društvo neto negativna ipak politički opstaje. Zašto asimetrija između velike koncentrirane koristi po proizvođaču i sićušnoga raspršenog troška po obvezniku predviđa da će se izboriti upravo organizirana manjina, a ne raspršena većina koja snosi teret?
 :::

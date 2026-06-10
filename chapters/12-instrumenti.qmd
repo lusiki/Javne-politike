@@ -99,18 +99,6 @@ Iz toga slijedi pravilo dizajna koje nadilazi pojedinačni izbor. Instrument koj
 Kanadska pokrajina Britanska Kolumbija 2008. je uvela porez na ugljik koji dobro pokazuje razliku između instrumenata. Umjesto da zabrani ili propiše tehnologije, porez je podigao cijenu emisija i prepustio poduzećima i kućanstvima da sami pronađu najjeftiniji način smanjenja, a prihod je vraćen kroz niže poreze na dohodak i dobit. Emisije po stanovniku pale su, dok je gospodarski rast pratio prosjek ostatka Kanade, čime je oslabljen strah da cjenovni instrument nužno koči gospodarstvo. Primjer ilustrira opću pouku da tržišni instrumenti ostvaruju cilj uz niži ekonomski trošak, ali su politički vidljiviji jer teret prikazuju otvoreno, za razliku od regulacije koja ga skriva u cijeni proizvoda.
 :::
 
-::: {.callout-vjezba}
-Pretpostavite da neka vlada želi smanjiti potrošnju jednog štetnog proizvoda za 20 posto u odnosu na današnju razinu. Na raspolaganju su joj instrumenti iz sve četiri kategorije NATO okvira.
-
-(a) Predložite po jedan konkretan instrument iz svake od četiri kategorije (*nodality*, *authority*, *treasure*, *organization*) kojim bi se taj cilj mogao adresirati. Za svaki ukratko objasnite kroz koji resurs države djeluje.
-
-(b) Odaberite dva od predloženih instrumenta i usporedite ih po dvije dimenzije, po ekonomskom trošku ostvarenja istog smanjenja i po političkoj izvedivosti. Obrazložite zašto se te dvije dimenzije često kreću u suprotnim smjerovima.
-
-(c) Pretpostavite sada dva instrumenta koja postižu isti cilj. Porez na proizvod smanjuje potrošnju za 4 postotna boda po jedinici poreznog opterećenja uz administrativni trošak od 10 novčanih jedinica, dok regulatorni standard smanjuje potrošnju za 5 postotnih bodova po stupnju strogosti uz administrativni trošak od 30 novčanih jedinica po stupnju. Izračunajte koliko je jedinica poreznog opterećenja, odnosno stupnjeva strogosti, potrebno za ciljanih 20 postotnih bodova i koji instrument ostvaruje cilj uz niži ukupni administrativni trošak.
-
-(d) Procijenite zašto instrument koji je u (c) jeftiniji ne mora biti i onaj koji će vlada odabrati te objasnite zašto vlade tako često posežu za kombinacijom instrumenata umjesto za jednim najjeftinijim alatom. Što taj rascjep između tehnički najjeftinijeg i politički najprihvatljivijeg rješenja otkriva o naravi izbora instrumenata?
-:::
-
 ## Most između ciljeva i rezultata
 
 Instrumenti javne politike predstavljaju most između državnih ciljeva i stvarnih društvenih ishoda. Država može imati plemenit cilj poput smanjenja siromaštva, povećanja zaposlenosti, zaštite okoliša ili poticanja rasta, ali cilj sam po sebi nije politika. Politika nastaje tek kada se odabere instrument, osigura provedba, definiraju odgovornosti i mjere rezultati.
@@ -121,4 +109,16 @@ Zato je izbor instrumenta jedno od najvažnijih pitanja javnih politika. Porezi 
 ## Sažetak
 
 Država svoje ciljeve ostvaruje kroz konkretne instrumente, pa cilj sam po sebi nije politika dok se ne odabere alat i osigura provedba. Jedni instrumenti djeluju kroz novac, poput poreza, potrošnje, subvencija i transfera, drugi kroz pravila i standarde, treći kroz izravnu državnu organizaciju u obliku javnih poduzeća i agencija. Sve veću ulogu imaju informacijski i bihevioralni instrumenti, koji oblikuju izbore bez prisile i novca. Izbor i kombinacija instrumenata zato su među najvažnijim pitanjima javnih politika jer svaki alat nosi vlastite troškove, poticaje i zahtjeve za provedbom.
+:::
+
+::: {.callout-vjezba}
+Pretpostavite da neka vlada želi smanjiti potrošnju jednog štetnog proizvoda za 20 posto u odnosu na današnju razinu. Na raspolaganju su joj instrumenti iz sve četiri kategorije NATO okvira.
+
+(a) Predložite po jedan konkretan instrument iz svake od četiri kategorije (*nodality*, *authority*, *treasure*, *organization*) kojim bi se taj cilj mogao adresirati. Za svaki ukratko objasnite kroz koji resurs države djeluje.
+
+(b) Odaberite dva od predloženih instrumenta i usporedite ih po dvije dimenzije, po ekonomskom trošku ostvarenja istog smanjenja i po političkoj izvedivosti. Obrazložite zašto se te dvije dimenzije često kreću u suprotnim smjerovima.
+
+(c) Pretpostavite sada dva instrumenta koja postižu isti cilj. Porez na proizvod smanjuje potrošnju za 4 postotna boda po jedinici poreznog opterećenja uz administrativni trošak od 10 novčanih jedinica, dok regulatorni standard smanjuje potrošnju za 5 postotnih bodova po stupnju strogosti uz administrativni trošak od 30 novčanih jedinica po stupnju. Izračunajte koliko je jedinica poreznog opterećenja, odnosno stupnjeva strogosti, potrebno za ciljanih 20 postotnih bodova i koji instrument ostvaruje cilj uz niži ukupni administrativni trošak.
+
+(d) Procijenite zašto instrument koji je u (c) jeftiniji ne mora biti i onaj koji će vlada odabrati te objasnite zašto vlade tako često posežu za kombinacijom instrumenata umjesto za jednim najjeftinijim alatom. Što taj rascjep između tehnički najjeftinijeg i politički najprihvatljivijeg rješenja otkriva o naravi izbora instrumenata?
 :::

@@ -100,13 +100,7 @@ cond_v3 = cond_controls.v3
 }
 ```
 
-*Strelice pokazuju pobjednika svakog para u izravnom većinskom glasovanju; kada tvore zatvoreni krug, kolektivna preferencija je ciklička i nema stabilnog pobjednika.*
-
 Posljedica je važna. Kada postoji ciklus, ishod ovisi o redoslijedu glasovanja. Onaj tko kontrolira dnevni red, to jest koje se opcije i kojim redoslijedom stavljaju na glasovanje, može utjecati na konačni rezultat. To je prvi nagovještaj da pravila igre nisu nevažna pozadina, nego da oblikuju same ishode.
-
-::: {.callout-vjezba}
-Otvorite interaktivni graf iznad. Krenite od početnog rasporeda koji proizvodi ciklus, a zatim drugom biraču promijenite samo jedno mjesto u rang-listi i pratite kako se na grafu pojavljuje Condorcetov pobjednik. Pokušajte naći barem dva različita rasporeda koji daju ciklus i barem dva koja daju stabilnog pobjednika. Zatim razmislite računski. S tri birača i tri opcije svaki birač bira jednu od šest mogućih rang-lista, pa postoji $6^{3} = 216$ kombinacija. Koliko ih proizvodi ciklus? Ciklus nastaje samo kada sva tri birača imaju različite rang-liste koje „rotiraju" u istom smjeru, a takvih je rasporeda dvanaest. Izračunajte udio cikličkih ishoda i objasnite zašto je tako malen udio ipak dovoljan da problem agende učini ozbiljnim u stvarnoj politici, gdje se ne odlučuje o tri, nego o desecima alternativa istodobno.
-:::
 
 Lako je odbaciti taj primjer kao konstrukciju u kojoj su preferencije birača namjerno tako odabrane da proizvedu ciklus. Formalna analiza pokazuje suprotno. McKelveyev teorem o kaotičnoj većini dokazuje da kad se u prostoru odluke pojavi više od jedne dimenzije, ciklusi postaju pravilo, a ne iznimka, i to za gotovo bilo koju raspodjelu preferencija birača [@mckelvey1976]. Ako je ishod prve runde glasovanja pažljivo izabran, agendar može u nekoliko koraka voditi kolektivnu odluku od bilo koje početne točke do bilo koje druge točke u prostoru opcija.
 
@@ -216,4 +210,8 @@ Ako „društveni izbor" nije rezultat racionalnog traženja općeg blagostanja,
 ## Sažetak
 
 Kolektivni izbor pretvara raznolike pojedinačne preferencije u jednu društvenu odluku, no taj prijelaz nije tehnička formalnost. Condorcetov paradoks pokazuje da većinsko glasovanje može biti ciklično, a Arrowljev teorem nemogućnosti da nijedno pravilo ne može istodobno zadovoljiti sve razumne uvjete pravednosti i dosljednosti. Jednovršne preferencije i medijanski glasač vraćaju stabilnost, ali samo kao poseban slučaj, dok kontrola dnevnog reda otkriva da onaj tko određuje redoslijed glasovanja oblikuje i ishod. Zato „volja naroda" ovisi o pravilima kroz koja se izražava, a mnoge neučinkovite politike postaju predvidiv ishod institucionalnog dizajna, a ne anomalija.
+:::
+
+::: {.callout-vjezba}
+Otvorite interaktivni graf iznad. Krenite od početnog rasporeda koji proizvodi ciklus, a zatim drugom biraču promijenite samo jedno mjesto u rang-listi i pratite kako se na grafu pojavljuje Condorcetov pobjednik. Pokušajte naći barem dva različita rasporeda koji daju ciklus i barem dva koja daju stabilnog pobjednika. Zatim razmislite računski. S tri birača i tri opcije svaki birač bira jednu od šest mogućih rang-lista, pa postoji $6^{3} = 216$ kombinacija. Koliko ih proizvodi ciklus? Ciklus nastaje samo kada sva tri birača imaju različite rang-liste koje „rotiraju" u istom smjeru, a takvih je rasporeda dvanaest. Izračunajte udio cikličkih ishoda i objasnite zašto je tako malen udio ipak dovoljan da problem agende učini ozbiljnim u stvarnoj politici, gdje se ne odlučuje o tri, nego o desecima alternativa istodobno.
 :::

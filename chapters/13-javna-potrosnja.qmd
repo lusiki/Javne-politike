@@ -96,8 +96,6 @@ wag_g = wag_controls.g
 }
 ```
 
-*Ilustrativni prikaz Wagnerova zakona — bogatije zemlje u prosjeku troše veći udio BDP-a kroz javni sektor, uz znatno rasipanje oko trenda. Podaci su približni i služe za prikaz odnosa, a ne kao službena statistika.*
-
 Pravi preokret događa se u 20. stoljeću, u kontekstu velikih ekonomskih i političkih šokova. Velika depresija 1930-ih dovodi u pitanje sposobnost tržišta da se samo stabilizira. U tom kontekstu John Maynard Keynes uvodi revolucionarnu ideju prema kojoj država može i treba aktivno intervenirati u gospodarstvo putem javne potrošnje i fiskalne politike kako bi stabilizirala agregatnu potražnju [@keynes1936]. Time javna potrošnja prvi put dobiva jasnu makroekonomsku funkciju.
 
 Nakon Drugog svjetskog rata slijedi razdoblje bez presedana u povijesti javne potrošnje. U većini razvijenih zemalja dolazi do snažne ekspanzije države, osobito kroz razvoj sustava socijalne sigurnosti, javnog zdravstva i obrazovanja. Udio javne potrošnje raste s oko 13 % BDP-a početkom stoljeća na više od 40 % u suvremenim ekonomijama [@tanzi2000]. Ovaj rast nije bio rezultat jedinstvenog faktora, već kombinacije dubokih strukturnih promjena.

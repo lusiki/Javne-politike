@@ -66,10 +66,6 @@ Prema **Kaldor-Hicksovu kriteriju** promjena je društveno opravdana ako su agre
 
 Upravo na tom kriteriju počiva analiza troškova i koristi kao standardni alat javnog odlučivanja [@boardman2018]. Pristup ima svoju cijenu. Sažimanjem dobitaka i gubitaka u zajedničku novčanu mjeru implicitno se pretpostavlja da je dodatni euro jednako vrijedan svima, što ignorira pitanje raspodjele dohotka. Zato Kaldor-Hicksov kriterij olakšava donošenje odluka, ali ne uklanja političku odgovornost za to tko stvarno gubi, a tko dobiva.
 
-::: {.callout-vjezba}
-Promotrite reformu javne nabave koja snižava cijene za poreznog obveznika, ali zatvara skupinu zaštićenih dobavljača. Reforma donosi godišnju uštedu od 90 milijuna eura, koja se raspodjeljuje na velik broj poreznih obveznika, dok pet istisnutih dobavljača gubi ukupno 40 milijuna eura godišnje. (a) Izračunajte neto agregatni učinak reforme. (b) Utvrdite je li reforma Pareto poboljšanje i obrazložite odgovor pozivajući se na položaj dobavljača. (c) Pretpostavite da bi se gubitnicima moglo jednokratno isplatiti 40 milijuna eura, a da dobitnici i dalje ostanu na dobitku. Prolazi li reforma Kaldor-Hicksov kriterij i mijenja li se odgovor ako se kompenzacija stvarno ne isplati? (d) Pretpostavite sada da su gubitnici siromašni, a dobitnici imućni. Objasnite zašto isti agregatni iznos može zadovoljiti kriterij učinkovitosti, a istodobno otvoriti pitanje pravednosti koje sam Kaldor-Hicksov račun ne razrješava.
-:::
-
 #### Edgeworthova kutija i ugovorna krivulja
 
 Edgeworthova kutija prikazuje sve moguće raspodjele dvaju dobara između dvaju potrošača. Svaka točka u kutiji označava jednu alokaciju. Ono što dobije potrošač A mjeri se od donjeg lijevog ishodišta, a ono što dobije potrošač B iz suprotnog, gornjeg desnog ishodišta.
@@ -256,8 +252,6 @@ eb_pC = eb_controls.pC
 }
 ```
 
-*Točke na krivulji ugovora predstavljaju Pareto učinkovite alokacije.*
-
 Na temelju tog pojma razvijena su dva temeljna teorema ekonomike blagostanja. **Prvi teorem ekonomike blagostanja** kaže da, pod određenim uvjetima, konkurentsko tržište vodi do Pareto učinkovite alokacije resursa. Ti uvjeti uključuju savršenu konkurenciju, potpune informacije, jasno definirana vlasnička prava, nepostojanje eksternalija, nepostojanje javnih dobara i nepostojanje tržišne moći. Ako su ti uvjeti zadovoljeni, pojedinci i poduzeća, slijedeći vlastite interese, kroz tržišnu razmjenu mogu dovesti do učinkovite alokacije resursa [@arrow1954].
 
 Ovaj teorem pruža snažan argument u korist tržišta. On pokazuje da tržište, u idealnim uvjetima, ne mora biti kaotičan ili sebičan sustav koji vodi društvenom neredu. Naprotiv, decentralizirane odluke pojedinaca i poduzeća mogu, kroz cijene i konkurenciju, dovesti do učinkovite uporabe društvenih resursa. To je jedan od razloga zašto se tržište smatra temeljnim mehanizmom alokacije u modernim gospodarstvima.
@@ -298,4 +292,8 @@ Zato tržišni neuspjesi ne dolaze kao negacija tržišta, nego kao nastavak ana
 ## Sažetak
 
 Tržište je snažan mehanizam koji kroz cijene koordinira raspršeno znanje i, dok vrijede pretpostavke prvog teorema ekonomike blagostanja, alocira resurse učinkovito. Kada tih pretpostavki nema, u slučaju javnih dobara, eksternalija, asimetričnih informacija ili tržišne moći, otvara se prostor za državu, što Musgraveov okvir sažima kroz alokacijsku, distribucijsku i stabilizacijsku funkciju. Pareto učinkovitost i Kaldor-Hicksov kriterij pokazuju da se ishodi tržišta mogu ocijeniti, ali da učinkovitost nije isto što i pravednost, pa razdvajanje tih dvaju pitanja ostaje polazište za sve što u knjizi slijedi.
+:::
+
+::: {.callout-vjezba}
+Promotrite reformu javne nabave koja snižava cijene za poreznog obveznika, ali zatvara skupinu zaštićenih dobavljača. Reforma donosi godišnju uštedu od 90 milijuna eura, koja se raspodjeljuje na velik broj poreznih obveznika, dok pet istisnutih dobavljača gubi ukupno 40 milijuna eura godišnje. (a) Izračunajte neto agregatni učinak reforme. (b) Utvrdite je li reforma Pareto poboljšanje i obrazložite odgovor pozivajući se na položaj dobavljača. (c) Pretpostavite da bi se gubitnicima moglo jednokratno isplatiti 40 milijuna eura, a da dobitnici i dalje ostanu na dobitku. Prolazi li reforma Kaldor-Hicksov kriterij i mijenja li se odgovor ako se kompenzacija stvarno ne isplati? (d) Pretpostavite sada da su gubitnici siromašni, a dobitnici imućni. Objasnite zašto isti agregatni iznos može zadovoljiti kriterij učinkovitosti, a istodobno otvoriti pitanje pravednosti koje sam Kaldor-Hicksov račun ne razrješava.
 :::

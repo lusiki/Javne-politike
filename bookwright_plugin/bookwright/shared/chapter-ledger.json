@@ -1,7 +1,8 @@
 {
   "book": {
     "title": "Sve što želite znati o odnosu države i tržišta (Javne politike u Hrvatskoj)",
-    "last_updated": "2026-06-09"
+    "last_updated": "2026-06-10",
+    "panel_sweep_2026_06_10": "Bookwright critic panel (143 agents, 6 critics × 20 chapters + arc + voice) completed 2026-06-10. Report at izvjestaj-book-review-panel-2026-06-10.md. From panel sweep also completed 2026-06-10: (1) ch19 fatal exercise re-parameterised (p=0.5/0.5, naknada 25); (2) 8 duplicate italic captions deleted (ch01,03,05,06,13,15,18,19); (3) all callout-vjezba blocks moved to after Sažetak panel in all chapters (ch01,02,05,06,07,08,09,10,11,12,14,15,16,17,19 moved; ch03,04,13,18 were already in correct position)."
   },
   "chapters": [
     {
@@ -26,9 +27,9 @@
       "title": "Uloga države u gospodarstvu",
       "stage": "enriched",
       "self_items": [
-        { "id": "01-fix-arrow", "slot": "methodology", "note": "VISOK: ispraviti pogrešan citat [@arrow1951] (linija 254, Prvi teorem ekonomike blagostanja) — zamijeniti s [@arrow1954] (Arrow-Debreu) ili dodati Arrow 1951 welfare-extension u bib; uskladiti i liniju 264.", "status": "todo" },
-        { "id": "01-vjezba", "note": "VISOK: dodati callout-vjezba (interaktivna Edgeworthova kutija ili numerička Kaldor-Hicks kompenzacija) — bez hrvatskih podataka.", "status": "todo" },
-        { "id": "01-fig-edgeworth", "note": "Dodati {#fig-edgeworth} label/caption OJS Edgeworth grafu radi referenciranja.", "status": "todo" }
+        { "id": "01-fix-arrow", "slot": "methodology", "note": "DONE (confirmed by panel 2026-06-10): citat je već arrow1954, ne arrow1951 — live file ispravan.", "status": "done" },
+        { "id": "01-vjezba", "note": "DONE (2026-06-10): callout-vjezba postojala, premještena na kraj nakon Sažetka.", "status": "done" },
+        { "id": "01-fig-edgeworth", "note": "DONE (confirmed by panel 2026-06-10): #fig-edgeworth label i caption već prisutni u live file.", "status": "done" }
       ],
       "coauthor_asks": [
         { "id": "01-hr-intervention", "what": "Ako se doda domaći primjer državne intervencije (financiranje znanosti, regulacija mrežne industrije), potreban potpis na domaću tvrdnju.", "owner": "Petra", "status": "open" },
@@ -43,7 +44,7 @@
       "title": "Alokacijska funkcija i tržišni neuspjesi",
       "stage": "enriched",
       "self_items": [
-        { "id": "02-vjezba", "note": "VISOK: dodati callout-vjezba uz postojeće OJS dijagrame (variranje elastičnosti i tumačenje DWL; usporedba Pigou vs kvota) — najbogatije poglavlje bez ijedne vježbe.", "status": "todo" },
+        { "id": "02-vjezba", "note": "DONE (2026-06-10): callout-vjezba postojala (Pigou/MSC zadatak), premještena na kraj nakon Sažetka.", "status": "done" },
         { "id": "02-fig-labels", "note": "Dodati fig-cap/label svakom od 6 OJS grafova (0 fig-labela) radi cross-referenciranja.", "status": "todo" },
         { "id": "02-defs", "note": "Formalizirati 3-4 ključna pojma u {#def-} divove (javno dobro, eksternalija, asimetrične informacije, prirodni monopol).", "status": "todo" },
         { "id": "02-typo", "note": "Ispraviti tipfelere (linija 216: 'premašenu'/'prenoj niskoj') i ublažiti takeaway-formulu na liniji 928.", "status": "todo" }
@@ -116,8 +117,8 @@
       "title": "Kolektivni izbor",
       "stage": "enriched",
       "self_items": [
-        { "id": "06-vjezba", "note": "VISOK: dodati callout-vjezba (međunarodni podaci — izlaznost po EU iz atlas/Eurostat, ili simulacija medijanskog glasača na 1D osi).", "status": "todo" },
-        { "id": "06-empirija", "note": "VISOK: dodati callout-empirija — poglavlju potpuno nedostaje (jedino DIO II poglavlje bez nje uz ch08).", "status": "todo" },
+        { "id": "06-vjezba", "note": "DONE (2026-06-10): callout-vjezba postojala (Condorcet simulacija), premještena na kraj nakon Sažetka.", "status": "done" },
+        { "id": "06-empirija", "note": "OPEN: panel potvrdio da callout-empirija i dalje nedostaje u ch06.", "status": "todo" },
         { "id": "06-defs", "note": "Formalizirati ključne pojmove (Condorcetov paradoks, medijanski glasač, Arrowljev teorem) u {#def-}/prp jedinice.", "status": "todo" }
       ],
       "coauthor_asks": [
@@ -135,7 +136,7 @@
       "stage": "draft",
       "self_items": [
         { "id": "07-expand", "note": "VISOK: poglavlje pretanko (112 linija) za jezgrenu ulogu u DIO II — proširiti prema 150-300 linija međunarodnim sadržajem (Hotelling/Downs, polarizacija, Arrow kut).", "status": "todo" },
-        { "id": "07-vjezba", "note": "VISOK: dodati callout-vjezba.", "status": "todo" },
+        { "id": "07-vjezba", "note": "DONE (2026-06-10): callout-vjezba postojala (medijanski glasač 5 birača), premještena na kraj nakon Sažetka.", "status": "done" },
         { "id": "07-defs", "note": "Dodati 1-3 formalne Definicije (masa ključnih pojmova je samo podebljana).", "status": "todo" },
         { "id": "07-ojs", "note": "Dodati OJS graf (Hotelling/medijanski glasač) iz međunarodnih podataka — poglavlje nema interaktivnog grafa.", "status": "todo" }
       ],
@@ -154,8 +155,8 @@
       "stage": "draft",
       "self_items": [
         { "id": "08-expand", "note": "VISOK: najtanje poglavlje u DIO II (85 linija) — proširiti (formiranje lobija, željezni trokuti, korporativizam, pluralizam); pažnja: ne duplicirati Olsona iz ch05.", "status": "todo" },
-        { "id": "08-vjezba", "note": "VISOK: dodati callout-vjezba (Olsonova tipologija na međunarodnim slučajevima — šećerni lobi, NRA, ZPP).", "status": "todo" },
-        { "id": "08-empirija", "note": "VISOK: dodati callout-empirija — izvući Kruegerine procjene (Indija 7,3 %, Turska 15 % BDP-a) iz proze u istaknuti callout.", "status": "todo" },
+        { "id": "08-vjezba", "note": "DONE (2026-06-10): callout-vjezba postojala (carina, 5 proizvođača, lov na rentu), premještena na kraj nakon Sažetka.", "status": "done" },
+        { "id": "08-empirija", "note": "OPEN: panel potvrdio da callout-empirija i dalje nedostaje u ch08 (Kruegerini nalazi u prozi, nisu izvučeni).", "status": "todo" },
         { "id": "08-defs-fig", "note": "Dodati formalne definicije i jednu figuru (logika kolektivnog djelovanja).", "status": "todo" }
       ],
       "coauthor_asks": [
@@ -172,7 +173,7 @@
       "title": "Dva pogleda na birokraciju",
       "stage": "enriched",
       "self_items": [
-        { "id": "09-vjezba", "note": "VISOK: dodati callout-vjezba uz postojeći OJS graf (izračun Q* i Qn za zadane b, MC; interpretacija gubitka blagostanja).", "status": "todo" },
+        { "id": "09-vjezba", "note": "DONE (2026-06-10): callout-vjezba postojala (Q*/Qn izračun), premještena na kraj nakon Sažetka.", "status": "done" },
         { "id": "09-def", "note": "Dodati barem jednu formalnu definiciju ključnih pojmova.", "status": "todo" },
         { "id": "09-arc-narrow", "note": "(arc) Suziti poglavlje na ono što je doista njegovo: weberovski vs javnoizborni pogled, Niskanen (ako se izvuče iz ch05), principal-agent, input/output/ishod kao priprema za ch16. Numerirane 'modele' koji se preklapaju s ch05/ch08 zamijeniti povratnim referencama.", "status": "todo" }
       ],
@@ -190,7 +191,7 @@
       "title": "Nova institucionalna ekonomika — pravila igre",
       "stage": "draft",
       "self_items": [
-        { "id": "10-vjezba", "note": "VISOK: dodati callout-vjezba na međunarodnim podacima (WGI/Rule of Law vs BDP p.c., inkluzivne vs ekstraktivne institucije).", "status": "todo" },
+        { "id": "10-vjezba", "note": "DONE (2026-06-10): callout-vjezba postojala (transakcijski troškovi make-or-buy), premještena na kraj nakon Sažetka.", "status": "done" },
         { "id": "10-defs", "note": "Dodati formalne definicije ključnih pojmova (transakcijski troškovi, institucije, inkluzivne/ekstraktivne).", "status": "todo" }
       ],
       "coauthor_asks": [
@@ -206,7 +207,7 @@
       "title": "Konstitucionalna (ustavna) ekonomika",
       "stage": "enriched",
       "self_items": [
-        { "id": "11-vjezba", "note": "VISOK: dodati callout-vjezba (klasificiranje pravila ustavno/operativno; zašto je dano fiskalno pravilo otpornije na vremensku nedosljednost).", "status": "todo" },
+        { "id": "11-vjezba", "note": "DONE (2026-06-10): callout-vjezba postojala (vremenska nedosljednost, fiskalna disciplina, veo neizvjesnosti), premještena na kraj nakon Sažetka.", "status": "done" },
         { "id": "11-cite-empirics", "note": "Dva necitirana empirijska nalaza — dodati izvore (međunarodni sadržaj).", "status": "todo" },
         { "id": "11-arc-canonical", "note": "(arc) Učiniti ovo kanonskim mjestom za političko-proračunske cikluse (povezano s vremenskom nedosljednošću); na ostalim mjestima (ch05/07/09) zadržati samo kratku referencu.", "status": "todo" }
       ],
@@ -224,7 +225,7 @@
       "title": "Instrumenti državne intervencije",
       "stage": "enriched",
       "self_items": [
-        { "id": "12-vjezba", "note": "VISOK: dodati callout-vjezba (student razvrsta instrumente po NATO resursu za zadani cilj i ocijeni ekonomski/politički trošak).", "status": "todo" },
+        { "id": "12-vjezba", "note": "DONE (2026-06-10): callout-vjezba postojala (NATO okvir, ekonomski vs politički trošak), premještena na kraj nakon Sažetka.", "status": "done" },
         { "id": "12-defs", "note": "Dodati formalne definicije ključnih pojmova.", "status": "todo" },
         { "id": "12-cite", "note": "Dodati citate za 2-3 međunarodne empirijske tvrdnje.", "status": "todo" }
       ],
@@ -278,7 +279,7 @@
       "title": "Državni neuspjesi i prepreke kvalitetnim javnim politikama",
       "stage": "enriched",
       "self_items": [
-        { "id": "15-vjezba", "note": "VISOK: dodati callout-vjezba uz interaktivni 'test državnog neuspjeha' (primijeniti 8 pitanja na hipotetski međunarodni program).", "status": "todo" },
+        { "id": "15-vjezba", "note": "DONE (2026-06-10): callout-vjezba postojala (regulacija monopola, 3 tipa troška, test neuspjeha), premještena na kraj nakon Sažetka.", "status": "done" },
         { "id": "15-defs", "note": "Dodati 1-3 formalne definicije ključnih pojmova.", "status": "todo" }
       ],
       "coauthor_asks": [
@@ -294,7 +295,7 @@
       "title": "Novi javni menadžment",
       "stage": "enriched",
       "self_items": [
-        { "id": "16-vjezba", "note": "VISOK: dodati callout-vjezba (dizajn 3 pokazatelja otporna na Goodhartov zakon; usporedba privatizacije telekoma i vodoopskrbe iz Pollitta).", "status": "todo" },
+        { "id": "16-vjezba", "note": "DONE (2026-06-10): callout-vjezba postojala (bolnički Goodhart, prijavljeno vs stvarno čekanje), premještena na kraj nakon Sažetka.", "status": "done" },
         { "id": "16-defs", "note": "Dodati formalne definicije (poglavlje ih nema nijednu).", "status": "todo" },
         { "id": "16-cite-legrand", "note": "Popuniti citatnu prazninu (Le Grand).", "status": "todo" }
       ],
@@ -312,7 +313,7 @@
       "title": "Od novog javnog menadžmenta prema novom upravljanju",
       "stage": "enriched",
       "self_items": [
-        { "id": "17-vjezba", "note": "VISOK: dodati callout-vjezba (tvrdokorni problem ocijenjen protiv 3 uvjeta uspjeha mreže iz Ansell-Gash; ili 4 razine digitalne transformacije).", "status": "todo" },
+        { "id": "17-vjezba", "note": "DONE (2026-06-10): callout-vjezba postojala (riječni sliv, 3 dionika, suradničko upravljanje), premještena na kraj nakon Sažetka.", "status": "done" },
         { "id": "17-def", "note": "Dodati formalnu definiciju ključnih pojmova.", "status": "todo" }
       ],
       "coauthor_asks": [
@@ -329,7 +330,7 @@
       "title": "Cost-benefit analiza i evaluacija javnih politika",
       "stage": "enriched",
       "self_items": [
-        { "id": "18-fix-year", "note": "Razriješiti nesklad godine kod @hmtreasury2026 (Green Book) — provjeriti ključ/godinu u references.bib.", "status": "todo" },
+        { "id": "18-fix-year", "note": "DONE (confirmed by panel 2026-06-10): live file već koristi @hmtreasury2022 — konzistentno, nema nesklada.", "status": "done" },
         { "id": "18-defs", "note": "Eventualno dodati još koju formalnu definiciju.", "status": "todo" }
       ],
       "coauthor_asks": [
@@ -345,7 +346,7 @@
       "title": "Reforme u javnom sektoru — što funkcionira i zašto?",
       "stage": "draft",
       "self_items": [
-        { "id": "19-vjezba", "note": "VISOK: dodati callout-vjezba (Fernandez-Rodrik model kompenzacijske sheme; šok-terapija vs gradualizam kroz vanjsko sidro; ili EBRD/WGI podaci).", "status": "todo" },
+        { "id": "19-vjezba", "note": "DONE (2026-06-10): fatalni zadatak re-parametriziran (p=0.5/0.5 individ. neizvjesnost, naknada 25, Kaldor-Hicks label dodan). Premješteno iza Sažetka.", "status": "done" },
         { "id": "19-defs", "note": "Dodati formalne definicije ključnih pojmova.", "status": "todo" },
         { "id": "19-synthesis", "slot": "comparative", "note": "(arc) Razmotriti sintetski epilog koji zatvara petodijelni luk knjige — ch19 je tematski uzak i ne vraća se na okosnicu iz uvoda; knjiga nema zasebno zaključno poglavlje.", "status": "todo" }
       ],

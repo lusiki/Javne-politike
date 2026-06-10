@@ -490,18 +490,6 @@ eps_s_pos = pos_controls.eps_s_pos
 
 Najpoznatiji instrument za ispravljanje negativnih eksternalija je **Pigouov porez**. Ako aktivnost stvara društveni trošak koji nije uključen u cijenu, država može uvesti porez koji povećava privatni trošak te aktivnosti. Time se poduzeća i potrošači potiču da smanje štetno ponašanje. Primjeri su porezi na emisije ugljika, trošarine na gorivo, porezi na duhan ili porezi na alkohol. Logika je jednostavna jer ako neka aktivnost stvara društveni trošak, njezina cijena treba taj trošak odražavati.
 
-::: {.callout-vjezba}
-Promotrite hipotetsku industriju u kojoj je tržišna potražnja zadana izrazom P = 120 − Q, a marginalni privatni trošak proizvodnje iznosi MPC = 30 + 0,5Q, pri čemu se Q mjeri u tisućama jedinica. Svaka proizvedena jedinica stvara onečišćenje koje društvu nameće vanjski trošak od 30 novčanih jedinica, pa je marginalni društveni trošak MSC = MPC + 30.
-
-(a) Izračunajte tržišnu ravnotežu koju daje presjecište potražnje i marginalnog privatnog troška, odnosno količinu Q~M~ i cijenu koju proizvođači uzimaju u obzir.
-
-(b) Izračunajte društveno optimalnu količinu Q\* koja izjednačava potražnju s marginalnim društvenim troškom, a zatim usporedite Q\* s količinom Q~M~ iz prethodnog dijela.
-
-(c) Odredite veličinu gubitka blagostanja kao površinu trokuta između količina Q\* i Q~M~ čija je visina jednaka vanjskom trošku po jedinici.
-
-(d) Pretpostavite da država želi privatne poticaje uskladiti s društvenim troškom. Izračunajte Pigouov porez po jedinici koji tržišnu proizvodnju vraća na društveni optimum i objasnite zašto upravo iznos jednak vanjskom trošku otklanja gubitak blagostanja, premda proizvodnja ne pada na nulu.
-:::
-
 Kod pozitivnih eksternalija država može koristiti subvencije, javno financiranje ili porezne olakšice. Ako obrazovanje, cijepljenje ili istraživanje i razvoj stvaraju društvene koristi veće od privatnih koristi pojedinca, država ih može poticati kako bi se povećala njihova razina. Zato države financiraju škole i sveučilišta, subvencioniraju istraživanje, organiziraju javnozdravstvene kampanje ili financiraju preventivne programe.
 
 Država eksternalije može rješavati i regulacijom. Može propisati maksimalne emisije, tehničke standarde, obveznu uporabu sigurnosne opreme, zabranu odlaganja otpada u rijeke ili standarde energetske učinkovitosti. Može koristiti i tržišne instrumente poput trgovanja emisijskim dozvolama.
@@ -961,4 +949,16 @@ Najvažnija pouka alokacijske funkcije zato glasi da je država potrebna ne zato
 ## Sažetak
 
 Tržišni neuspjeh nastaje kad stvarna tržišta odstupe od pretpostavki prvog teorema ekonomike blagostanja, pa cijene više ne odražavaju sve društvene troškove i koristi. Javna dobra, eksternalije, asimetrične informacije te tržišna moć i prirodni monopoli pokazuju različite načine na koje to odstupanje nastaje, dok zajednička i meritorna dobra proširuju popis situacija u kojima tržišni ishod nije društveno najbolji. U svakom od tih slučajeva država raspolaže prepoznatljivim instrumentom, od financiranja i oporezivanja do regulacije i standarda. Alokacijska funkcija zato ne tvrdi da država zna bolje od tržišta, nego precizno locira neuspjeh i nalaže da se uz njega odvaže pravi instrument, njegovi troškovi i kapaciteti provedbe.
+:::
+
+::: {.callout-vjezba}
+Promotrite hipotetsku industriju u kojoj je tržišna potražnja zadana izrazom P = 120 − Q, a marginalni privatni trošak proizvodnje iznosi MPC = 30 + 0,5Q, pri čemu se Q mjeri u tisućama jedinica. Svaka proizvedena jedinica stvara onečišćenje koje društvu nameće vanjski trošak od 30 novčanih jedinica, pa je marginalni društveni trošak MSC = MPC + 30.
+
+(a) Izračunajte tržišnu ravnotežu koju daje presjecište potražnje i marginalnog privatnog troška, odnosno količinu Q~M~ i cijenu koju proizvođači uzimaju u obzir.
+
+(b) Izračunajte društveno optimalnu količinu Q\* koja izjednačava potražnju s marginalnim društvenim troškom, a zatim usporedite Q\* s količinom Q~M~ iz prethodnog dijela.
+
+(c) Odredite veličinu gubitka blagostanja kao površinu trokuta između količina Q\* i Q~M~ čija je visina jednaka vanjskom trošku po jedinici.
+
+(d) Pretpostavite da država želi privatne poticaje uskladiti s društvenim troškom. Izračunajte Pigouov porez po jedinici koji tržišnu proizvodnju vraća na društveni optimum i objasnite zašto upravo iznos jednak vanjskom trošku otklanja gubitak blagostanja, premda proizvodnja ne pada na nulu.
 :::
