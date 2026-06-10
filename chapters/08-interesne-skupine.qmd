@@ -40,7 +40,7 @@ Tako se otkriva jedna od najvažnijih asimetrija u javnim politikama, asimetrija
 
 Zamislimo subvenciju ili carinsku zaštitu koja donosi nekoliko milijuna eura uskom sektoru, a financira se s nekoliko eura po građaninu. Sektor ima snažan poticaj uložiti vrijeme, novac i stručno znanje u lobiranje za tu mjeru. Pojedini građanin, kojeg mjera košta nekoliko eura, nema poticaj ni saznati za nju, a kamoli se organizirati protiv nje. Politički ishod je sustavno pristran tako da koncentrirani interesi pobjeđuju raspršene, čak i kad je ukupna društvena korist mjere negativna.
 
-Ova asimetrija objašnjava zašto se mnoge neučinkovite politike teško ukidaju. Korisnici su organizirani, motivirani i prisutni, dok su oni koji plaćaju brojni, raspršeni i ravnodušni jer je njihov pojedinačni trošak malen. Pluralistička tradicija u politologiji nudi drugačije čitanje iste pojave: koncentracija interesa nije samo izvor distorzija, nego ponekad i mehanizam koji pretvara difuzno nezadovoljstvo u kohezivnu reformsku koaliciju ili koji osigurava da specifično stručno znanje (npr. u regulaciji financijskog sustava) uopće stigne do zakonodavca.
+Ova asimetrija objašnjava zašto se mnoge neučinkovite politike teško ukidaju. Korisnici su organizirani, motivirani i prisutni, dok su oni koji plaćaju brojni, raspršeni i ravnodušni jer je njihov pojedinačni trošak malen. Pluralistička tradicija u politologiji nudi drugačije čitanje iste pojave. Koncentracija interesa nije samo izvor distorzija, nego ponekad i mehanizam koji pretvara difuzno nezadovoljstvo u kohezivnu reformsku koaliciju ili koji osigurava da specifično stručno znanje, primjerice u regulaciji financijskog sustava, uopće stigne do zakonodavca.
 
 ::: {.callout-praksa}
 U Hrvatskoj se ova logika vidi u snažnom utjecaju poljoprivrednih lobija, sindikata javnih i državnih službi te pojedinih profesionalnih komora, skupina koje održavaju visoku razinu organiziranosti unatoč relativno malom udjelu u stanovništvu. Na razini EU moćni sektorski lobiji (poljoprivreda, energetika, automobilska i farmaceutska industrija) oblikuju Zajedničku poljoprivrednu politiku, zeleni dogovor i regulatorne standarde, a Zajednička poljoprivredna politika već desetljećima troši znatan dio europskog proračuna unatoč širokoj kritici njezine neučinkovitosti. Klasični svjetski primjeri uključuju američki šećerni lobi i Nacionalno udruženje za oružje (NRA), koji desetljećima održavaju subvencije i povlastice usprkos ekonomskoj kritici.
@@ -49,7 +49,7 @@ U Hrvatskoj se ova logika vidi u snažnom utjecaju poljoprivrednih lobija, sindi
 ## Lov na rentu
 
 ::: {#def-lov-na-rentu}
-**Lov na rentu** (*rent-seeking*) je ulaganje resursa u stjecanje političkih povlastica (monopolske zaštite, dozvola, subvencija, kvota) umjesto u stvaranje novih vrijednosti; rezultira dvostrukim društvenim gubitkom — izravnim iskrivljavanjem tržišnih cijena i neizravnim gubitkom resursa potrošenih na samo natjecanje za povlasticu [@tullock1967; @krueger1974].
+**Lov na rentu** (*rent-seeking*) je ulaganje resursa u stjecanje političkih povlastica (monopolske zaštite, dozvola, subvencija, kvota) umjesto u stvaranje novih vrijednosti, a rezultira dvostrukim društvenim gubitkom koji obuhvaća izravno iskrivljavanje tržišnih cijena i neizravan gubitak resursa potrošenih na samo natjecanje za povlasticu [@tullock1967; @krueger1974].
 :::
 
 Kada poduzeća i skupine ulažu resurse u stjecanje političkih povlastica umjesto u stvaranje vrijednosti, govorimo o **lovu na rentu** (*rent-seeking*) [@tullock1967; @krueger1974]. Renta u ovom smislu nije prihod od najma, nego ekonomska korist koja proizlazi iz povlaštenog položaja, a ne iz veće produktivnosti, primjerice u obliku monopolske zaštite, ekskluzivne dozvole, kvote, subvencije ili porezne olakšice.
@@ -69,7 +69,7 @@ Lov na rentu objašnjava i zašto neučinkovite povlastice nadžive svoje opravd
 ## Regulatorno zarobljavanje
 
 ::: {#def-regulatorno-zarobljavanje}
-**Regulatorno zarobljavanje** (*regulatory capture*) je proces u kojemu regulator, osnovan da štiti javni interes, postupno počne djelovati u interesu sektora koji nadzire — najčešće zbog informacijske ovisnosti, organizacijske asimetrije i pojave kružnih vrata, a ne nužno korupcije [@stigler1971; @peltzman1976].
+**Regulatorno zarobljavanje** (*regulatory capture*) je proces u kojemu regulator, osnovan da štiti javni interes, postupno počne djelovati u interesu sektora koji nadzire, najčešće zbog informacijske ovisnosti, organizacijske asimetrije i pojave kružnih vrata, a ne nužno zbog korupcije [@stigler1971; @peltzman1976].
 :::
 
 Poseban i osobito važan oblik utjecaja interesnih skupina jest **regulatorno zarobljavanje** (*regulatory capture*). Ono nastaje kada regulator, osnovan da štiti javni interes, postupno počne djelovati u interesu sektora koji bi trebao nadzirati [@stigler1971; @peltzman1976]. To se ne događa nužno kroz korupciju. Češće je posljedica informacijske ovisnosti (regulator zna manje o sektoru od poduzeća), organizacijske asimetrije (industrija aktivno sudjeluje u savjetovanjima, potrošači rijetko) i zajedničke profesionalne kulture. Poseban je kanal i pojava **kružnih vrata** (*revolving doors*) u kojoj dužnosnici nakon mandata prelaze na dobro plaćene pozicije u tvrtkama koje su prethodno regulirali, a stručnjaci kruže između regulatora, ministarstava i industrije [@dalbo2006].

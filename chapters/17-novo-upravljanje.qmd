@@ -35,7 +35,7 @@ Upravo zato novo javno upravljanje naglašava da država više nije samo zapovje
 ## Whole-of-government i povezana vlada
 
 ::: {#def-whole-of-government}
-**Whole-of-government** pristup je reforma organizacije javne uprave kojom se nastoji prevladati sektorska fragmentacija — integriranjem usluga, baza podataka i odgovornosti oko problema i korisnika, a ne oko administrativnih granica pojedinih ministarstava.
+**Whole-of-government** pristup je reforma organizacije javne uprave kojom se nastoji prevladati sektorska fragmentacija tako da se usluge, baze podataka i odgovornosti integriraju oko problema i korisnika, a ne oko administrativnih granica pojedinih ministarstava.
 :::
 
 Jedan od ključnih koncepata koji se razvija nakon NPM-a jest **whole-of-government** pristup. Njegova je osnovna ideja da se javne politike ne smiju voditi kroz zatvorene administrativne „silose". Tradicionalna uprava organizirana je po ministarstvima i sektorima, što omogućuje specijalizaciju, ali problemi građana rijetko poštuju administrativne granice. Nezaposlena osoba možda istodobno treba obrazovanje, socijalnu pomoć, zdravstvenu podršku i pomoć pri pronalasku posla. Whole-of-government pristup pokušava okrenuti logiku tako da se sustav organizira oko problema i korisnika, a ne oko unutarnjih granica administracije, pa se razvijaju integrirane javne usluge, jedinstvene kontaktne točke i zajedničke baze podataka.
@@ -81,7 +81,7 @@ Jedan institucionalni odgovor na pristranost sudjelovanja zaslužuje posebnu pa�
 ## Digitalizacija i nova država
 
 ::: {#def-digitalna-drzava}
-**Digitalna država** (*digital government*) je model javne uprave koji koristi digitalnu infrastrukturu (e-usluge, interoperabilne baze, elektronički identitet, algoritamske odluke) radi veće učinkovitosti i dostupnosti — ali uz nova pitanja o vlasništvu nad podacima, privatnosti, algoritamskoj pristranosti i demokratskoj odgovornosti [@margetts2013].
+**Digitalna država** (*digital government*) je model javne uprave koji koristi digitalnu infrastrukturu (e-usluge, interoperabilne baze, elektronički identitet, algoritamske odluke) radi veće učinkovitosti i dostupnosti, ali uz nova pitanja o vlasništvu nad podacima, privatnosti, algoritamskoj pristranosti i demokratskoj odgovornosti [@margetts2013].
 :::
 
 Digitalizacija dodatno mijenja raspravu o novom upravljanju. Suvremena e-uprava, digitalni identitet, interoperabilne baze podataka, elektronički potpisi i digitalne javne usluge omogućuju državi da bude učinkovitija, brža i dostupnija. Primjeri poput Estonije pokazuju da digitalizacija može biti snažan instrument modernizacije ako je povezana s institucionalnom reformom, jasnim pravilima i povjerenjem građana [@margetts2013].

@@ -16,7 +16,7 @@ title: "Državni neuspjesi i prepreke kvalitetnim javnim politikama"
 ## Što znači neuspjeh države?
 
 ::: {#def-drzavni-neuspjeh}
-**Državni neuspjeh** označava situaciju u kojoj javna politika ne ostvaruje ciljeve zbog kojih je uvedena ili ih ostvaruje uz prevelike troškove, neželjene nuspojave, nepravednu raspodjelu ili slabu provedbu — analogon tržišnom neuspjehu koji opravdava kritičku provjeru intervencije, a ne njezino automatsko opravdanje.
+**Državni neuspjeh** označava situaciju u kojoj javna politika ne ostvaruje ciljeve zbog kojih je uvedena ili ih ostvaruje uz prevelike troškove, neželjene nuspojave, nepravednu raspodjelu ili slabu provedbu, pa je analogon tržišnom neuspjehu koji opravdava kritičku provjeru intervencije, a ne njezino automatsko opravdanje.
 :::
 
 Pojam **državnog neuspjeha** označava situaciju u kojoj javna politika ne ostvaruje ciljeve zbog kojih je uvedena ili ih ostvaruje uz prevelike troškove, nepoželjne nuspojave, nepravednu raspodjelu koristi i tereta ili slabu provedbu. Država može intervenirati s namjerom da riješi problem, ali rezultat može biti novi problem koji se očituje kroz skuplju administraciju, distorzije u ponašanju građana i poduzeća, neučinkovitu javnu potrošnju, regulatorno zarobljavanje, rast javnog duga, korupciju ili gubitak povjerenja u institucije.
@@ -60,7 +60,7 @@ To je osobito važno kod politika koje ciljaju određene skupine. Ako država ž
 ## Instrumentalni neuspjesi
 
 ::: {#def-instrumentalni-neuspjeh}
-**Instrumentalni neuspjeh** nastaje kada je cilj politike opravdan, ali odabrani instrument nije prikladan — jer je preskup, preširok, administrativno kompliciran ili stvara neželjene poticaje umjesto da izravno adresira tržišni neuspjeh koji ga motivira.
+**Instrumentalni neuspjeh** nastaje kada je cilj politike opravdan, ali odabrani instrument nije prikladan jer je preskup, preširok, administrativno kompliciran ili stvara neželjene poticaje umjesto da izravno adresira tržišni neuspjeh koji ga motivira.
 :::
 
 Drugi oblik su **instrumentalni neuspjesi**, odnosno pogrešan izbor instrumenta. Ponekad je cilj politike opravdan, ali instrument nije prikladan jer je preskup, preširok, administrativno kompliciran ili stvara neželjene poticaje. Izbor instrumenta mora proizlaziti iz prirode problema, institucionalnog kapaciteta i očekivanih reakcija aktera.
@@ -102,7 +102,7 @@ Politički neuspjesi mogu se pojaviti i kada su koristi politike koncentrirane, 
 Šesti oblik su **birokratski neuspjesi**. Birokracija je nužna za provedbu javnih politika i bez profesionalne javne uprave nema porezne naplate, provedbe zakona ni upravljanja proračunom. Međutim, birokracija može razviti i vlastite interese; može širiti procedure, čuvati nadležnosti, povećavati proračune i opirati se promjenama. To ne znači da su javni službenici nužno loši, nego da svaka velika organizacija razvija rutine i obrambene mehanizme [@niskanen1971].
 
 ::: {#def-pretjerani-formalizam}
-**Pretjerani formalizam** je birokratski neuspjeh u kojemu poštivanje procedure postaje važnije od postizanja rezultata — institucija uredno slijedi formalna pravila, ali građanin ne dobiva kvalitetnu uslugu jer nadzor mjeri usklađenost, a ne ishod.
+**Pretjerani formalizam** je birokratski neuspjeh u kojemu poštivanje procedure postaje važnije od postizanja rezultata, pa institucija uredno slijedi formalna pravila, ali građanin ne dobiva kvalitetnu uslugu jer nadzor mjeri usklađenost, a ne ishod.
 :::
 
 Birokratski neuspjesi vide se i kroz **pretjerani formalizam**, gdje procedura postaje važnija od rezultata. Institucija može uredno poštovati formalna pravila, ali građanin i dalje ne dobiva kvalitetnu uslugu. Zato birokraciju treba promatrati dvostruko, jer je ona istodobno preduvjet sposobne države i mogući izvor državnih neuspjeha. Kvalitetna javna politika mora imati profesionalnu upravu, ali i mehanizme odgovornosti, transparentnosti, evaluacije i učenja.

@@ -20,7 +20,7 @@ Ti instrumenti mogu biti vrlo različiti. Neki izravno uključuju novac, poput p
 Isti javni cilj može biti ostvaren različitim instrumentima, ali ti instrumenti nemaju iste učinke, iste troškove ni iste političke posljedice. Ako država želi smanjiti zagađenje, može uvesti porez na emisije, propisati maksimalnu dopuštenu razinu zagađenja, subvencionirati čiste tehnologije, javno informirati potrošače ili kombinirati više mjera. Ako želi smanjiti siromaštvo, može povećati socijalne transfere, smanjiti poreze na niske dohotke, subvencionirati zapošljavanje, ulagati u obrazovanje ili regulirati minimalnu plaću. Zato je izbor instrumenta jedno od središnjih pitanja dizajna javnih politika.
 
 ::: {#def-nato-okvir}
-**NATO okvir** Christophera Hooda klasificira državne instrumente prema četiri vrste resursa koje vlada može koristiti: *Nodality* (informacijska centralnost), *Authority* (formalna ovlast), *Treasure* (financijska moć) i *Organization* (vlastiti institucionalni kapacitet) [@hood1983].
+**NATO okvir** Christophera Hooda klasificira državne instrumente prema četiri vrste resursa koje vlada može koristiti, a to su *Nodality* (informacijska centralnost), *Authority* (formalna ovlast), *Treasure* (financijska moć) i *Organization* (vlastiti institucionalni kapacitet) [@hood1983].
 :::
 
 Sustavnija klasifikacija instrumenata postoji u literaturi o javnom upravljanju i naziva se **NATO okvir** [@hood1983]. Prema njemu država raspolaže s četiri vrste resursa kojima može djelovati. *Nodality* je položaj države kao informacijskog čvora kroz koji prolazi velika količina podataka i s kojeg ona može slati ili tražiti informacije. *Authority* je formalna ovlast da nešto zapovjedi, zabrani ili dopusti. *Treasure* je financijska moć da nešto plati, oporezuje ili subvencionira. *Organization* je sposobnost da nešto sama proizvede kroz vlastite institucije, zaposlenike i kapacitete.
@@ -48,7 +48,7 @@ No javna potrošnja nosi i rizike. Ako je loše usmjerena, može financirati pro
 ## Regulacija
 
 ::: {#def-regulacija}
-**Regulacija** je instrument javne politike temeljen na autoritetnom resursu (*authority*): uključuje pravila, standarde, zabrane, dozvole i nadzorne mehanizme kojima država usmjerava ponašanje subjekata bez izravnih financijskih transfera.
+**Regulacija** je instrument javne politike temeljen na autoritetnom resursu (*authority*), koji obuhvaća pravila, standarde, zabrane, dozvole i nadzorne mehanizme kojima država usmjerava ponašanje subjekata bez izravnih financijskih transfera.
 :::
 
 **Regulacija** uključuje pravila, standarde, zabrane, dozvole i nadzorne mehanizme kojima država usmjerava ponašanje pojedinaca, poduzeća i institucija. Za razliku od poreza i javne potrošnje, regulacija često ne uključuje izravne financijske tokove kroz proračun, ali može imati vrlo snažan učinak na tržišta i društvene odnose.
@@ -60,7 +60,7 @@ Ipak, regulacija nije bez troškova. Prekomjerna ili loše dizajnirana regulacij
 ## Subvencije
 
 ::: {#def-subvencija}
-**Subvencija** je izravna ili neizravna financijska potpora koju država dodjeljuje određenim sektorima, poduzećima, kućanstvima ili aktivnostima — kao porezna olakšica, povlašteni kredit, jamstvo ili proračunska isplata — radi poticanja poželjnog ponašanja ili nadoknade pozitivnih eksternalija.
+**Subvencija** je izravna ili neizravna financijska potpora koju država dodjeljuje određenim sektorima, poduzećima, kućanstvima ili aktivnostima u obliku porezne olakšice, povlaštenog kredita, jamstva ili proračunske isplate, radi poticanja poželjnog ponašanja ili nadoknade pozitivnih eksternalija.
 :::
 
 **Subvencije** su oblik financijske potpore koju država dodjeljuje određenim sektorima, poduzećima, kućanstvima ili aktivnostima. One mogu biti izravne, primjerice isplata potpore iz proračuna, ili neizravne, primjerice porezne olakšice, povlašteni krediti, državna jamstva ili niže cijene javnih usluga.

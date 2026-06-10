@@ -21,7 +21,7 @@ Na privatnom tržištu problem različitih preferencija rješava se elegantno, k
 ## Condorcetov paradoks
 
 ::: {#def-condorcetov-paradoks}
-**Condorcetov paradoks** pokazuje da većinsko parno glasovanje može biti ciklično čak i kada svaki birač ima dosljedne (tranzitivne) preferencije: A pobjeđuje B, B pobjeđuje C, ali C pobjeđuje A, pa kolektiv nema nedvosmislenog pobjednika [@condorcet1785].
+**Condorcetov paradoks** pokazuje da većinsko parno glasovanje može biti ciklično čak i kada svaki birač ima dosljedne (tranzitivne) preferencije, pa A pobjeđuje B, B pobjeđuje C, ali C pobjeđuje A i kolektiv ostaje bez nedvosmislenog pobjednika [@condorcet1785].
 :::
 
 Najjednostavniji prikaz problema kolektivnog izbora jest **Condorcetov paradoks** [@condorcet1785]. Zamislimo tri birača i tri opcije, A, B i C. Prvi birač preferira A ispred B ispred C. Drugi preferira B ispred C ispred A. Treći preferira C ispred A ispred B. Svaki pojedinačni birač ima jasne, dosljedne (tranzitivne) preferencije.
@@ -192,7 +192,7 @@ Pitanje kada jednovršnost vrijedi u stvarnoj politici ima konkretan odgovor. On
 ## Kontrola dnevnog reda i politika kompromisa
 
 ::: {#def-moc-dnevnog-reda}
-**Moć kontrole dnevnog reda** (*agenda-setting power*) je sposobnost određivanja o čemu će se glasovati, kojim redoslijedom i u kojem obliku; ta moć agendar-u omogućuje da usmjeri konačni ishod čak i u uvjetima cikličnih preferencija [@mckelvey1976; @romer1978].
+**Moć kontrole dnevnog reda** (*agenda-setting power*) je sposobnost određivanja o čemu će se glasovati, kojim redoslijedom i u kojem obliku, čime agendar može usmjeriti konačni ishod čak i u uvjetima cikličnih preferencija [@mckelvey1976; @romer1978].
 :::
 
 Čak i kada su kolektivne preferencije cikličke, odluke se u praksi moraju donijeti, proračun se usvaja, zakoni donose, politike provode. Ključno pitanje postaje tko i kako prekida cikluse te usmjerava konačni ishod. Odgovor leži u **moći kontrole dnevnog reda** (*agenda-setting power*), to jest u sposobnosti da se odredi o čemu će se glasovati, kojim redoslijedom i u kojem obliku [@mckelvey1976; @romer1978].

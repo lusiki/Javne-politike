@@ -13,6 +13,10 @@ title: "Alokacijska funkcija i tržišni neuspjesi"
 6. Po čemu se zajednička i meritorna dobra razlikuju od ostalih tržišnih neuspjeha?
 :::
 
+::: {#def-trzisni-neuspjeh}
+**Tržišni neuspjeh** nastaje kada stvarna tržišta ne zadovoljavaju uvjete prvog teorema ekonomike blagostanja pa cijene ne odražavaju sve društvene troškove i koristi, što znači da tržišni ishod nije Pareto učinkovit s društvenog stajališta. Klasični oblici su javna dobra, eksternalije, asimetrične informacije i tržišna moć.
+:::
+
 Nakon što smo objasnili zašto konkurentsko tržište u idealnim uvjetima može dovesti do Pareto učinkovite alokacije, možemo jasnije razumjeti što znači tržišni neuspjeh. Tržišni neuspjeh nastaje onda kada stvarna tržišta ne zadovoljavaju uvjete pod kojima vrijedi prvi teorem ekonomike blagostanja. Tada cijene ne odražavaju sve društvene troškove i koristi, tržišta ne postoje ili ne funkcioniraju potpuno, pojedini akteri imaju tržišnu moć ili informacije nisu jednako raspoređene. U takvim okolnostima država može imati alokacijsku ulogu kroz ispravljanje ili ublažavanje neučinkovitosti koje nastaju u tržišnom procesu.
 
 No stvarna tržišta često odstupaju od tog idealnog modela. Cijene ne odražavaju uvijek sve društvene troškove i koristi. Neka dobra teško je naplatiti pojedinačnom korisniku. Neki akteri raspolažu boljim informacijama od drugih. Neka poduzeća imaju toliku tržišnu moć da mogu utjecati na cijene i količine. U takvim okolnostima tržište ne mora proizvesti društveno učinkovitu količinu dobara i usluga. Upravo se ta odstupanja nazivaju tržišnim neuspjesima.
@@ -22,6 +26,10 @@ Tržišni neuspjeh ne znači da tržište uopće ne funkcionira. On znači da re
 Važno je naglasiti da alokacijska funkcija države nije isto što i tvrdnja da država uvijek zna bolje od tržišta. Njezina je osnovna logika uža i preciznija. Država može imati opravdanje za intervenciju onda kada tržište ne uspijeva osigurati učinkovitu alokaciju resursa. Tada se postavlja pitanje koji je oblik tržišnog neuspjeha prisutan i koji instrument javne politike može taj problem najbolje ublažiti.
 
 ## Javna dobra
+
+::: {#def-javno-dobro}
+**Javno dobro** je dobro koje je istodobno **nekonkurentno** (potrošnja jednog korisnika ne smanjuje dostupnost drugima) i **neisključivo** (teško ili skupo je spriječiti nekoga da ga koristi). Zbog te kombinacije tržište javno dobro ne može financirati jer korisnici imaju poticaj ne otkriti svoje preferencije i ostvariti ga besplatno.
+:::
 
 Najpoznatiji primjer tržišnog neuspjeha su javna dobra. Javna dobra imaju dvije ključne karakteristike, nekonkurentnost u potrošnji i neisključivost iz potrošnje. Dobro je nekonkurentno ako potrošnja jedne osobe ne smanjuje mogućnost da isto dobro koriste i drugi. Dobro je neisključivo ako je teško ili vrlo skupo spriječiti nekoga da ga koristi, čak i ako nije platio za njega [@samuelson1954; @musgrave1959].
 
@@ -207,6 +215,10 @@ pg_mc = pg_controls.mc
 ```
 
 ## Eksternalije
+
+::: {#def-eksternalija}
+**Eksternalija** nastaje kada odluka jednog aktera utječe na dobrobit drugih, a taj se učinak ne odražava u tržišnoj cijeni, pa se privatni i društveni trošak (ili korist) razilaze i tržišna ravnoteža nije Pareto učinkovita. Negativna eksternalija vodi prema prekomjernoj, a pozitivna prema nedovoljnoj aktivnosti.
+:::
 
 Drugi veliki oblik tržišnog neuspjeha su **eksternalije**. Eksternalija nastaje kada odluka jednog pojedinca ili poduzeća utječe na dobrobit drugih, a taj se učinak ne odražava u tržišnoj cijeni. Akter koji donosi odluku ne snosi sve troškove ili ne dobiva sve koristi koje njegova odluka stvara za društvo [@pigou1920; @baumol1988].
 
@@ -498,6 +510,10 @@ Važan doprinos razumijevanju eksternalija dao je Coase [-@coase1960], koji je p
 
 ## Asimetrične informacije
 
+::: {#def-asimetricne-informacije}
+**Asimetrične informacije** nastaju kada jedna strana u razmjeni raspolaže relevantnim znanjem koje druga strana nema, što može dovesti do nepovoljnog izbora (*adverse selection*, pred sklapanjem ugovora) ili moralnog hazarda (*moral hazard*, nakon sklapanja ugovora). Oba mehanizma smanjuju učinkovitost tržišnog ishoda.
+:::
+
 Treći oblik tržišnog neuspjeha su **asimetrične informacije**. Tržišta funkcioniraju najbolje kada kupci i prodavatelji, poslodavci i radnici, banke i dužnici ili osiguravatelji i osiguranici raspolažu relevantnim informacijama. U stvarnosti to često nije slučaj. Jedna strana u razmjeni može znati mnogo više od druge, a to može dovesti do neučinkovitih ili nepravednih ishoda.
 
 Najpoznatiji primjer dao je George Akerlof u radu o tržištu „limuna", odnosno rabljenih automobila loše kvalitete [@akerlof1970]. Prodavatelj rabljenog automobila zna više o stvarnom stanju automobila od kupca. Kupac ne može lako razlikovati kvalitetan automobil od lošeg, pa je spreman platiti samo prosječnu cijenu. Ta prosječna cijena može biti preniska za vlasnike kvalitetnih automobila, koji se zato povlače s tržišta. Na tržištu ostaju uglavnom lošiji automobili. Rezultat je pad kvalitete i smanjenje razmjene, iako bi u uvjetima potpunih informacija tržište moglo bolje funkcionirati.
@@ -773,6 +789,10 @@ No informacijske mjere nisu uvijek dovoljne. Informacije moraju biti razumljive,
 Monopol nastaje kada na tržištu postoji samo jedan ponuđač određenog dobra ili usluge. Monopolist može ograničiti količinu proizvodnje i naplatiti cijenu višu od konkurentske. Potrošači tada plaćaju više, kupuju manje, a dio potencijalne društvene koristi nestaje. U ekonomskoj analizi taj gubitak naziva se **mrtvi teret monopola**. Problem monopola nije samo u tome da monopolist ostvaruje visoku dobit, nego u tome da društvo dobiva manju količinu dobra po višoj cijeni nego što bi dobilo u uvjetima konkurencije.
 
 Tržišna moć može nastati iz više razloga. Može biti posljedica vlasništva nad ključnim resursom, patenata, visokih početnih ulaganja, regulatornih prepreka ulasku, mrežnih učinaka ili strateškog ponašanja poduzeća. U nekim digitalnim tržištima tržišna moć nastaje jer vrijednost usluge raste s brojem korisnika. Što više ljudi koristi neku platformu, to ona postaje korisnija novim korisnicima, pa konkurenti sve teže ulaze na tržište.
+
+::: {#def-prirodni-monopol}
+**Prirodni monopol** nastaje kada su fiksni troškovi infrastrukture toliko visoki da prosječni trošak neprekidno pada s količinom, pa jedan ponuđač može sve kupce poslužiti po nižem trošku nego dva ili više. Konkurencija na takvom tržištu nije stabilna jer naposljetku pobjeđuje jedan ponuđač, pa regulacija postaje zamjena za tržišnu disciplinu.
+:::
 
 Poseban slučaj je **prirodni monopol**. Prirodni monopol nastaje kada su fiksni troškovi vrlo visoki, a prosječni troškovi padaju kako se povećava količina proizvodnje. U takvim okolnostima jedan veliki ponuđač može proizvoditi po nižem trošku nego više manjih ponuđača. Primjeri su vodoopskrba, elektroenergetske mreže, plinovodi, željeznička infrastruktura i određene komunalne usluge.
 

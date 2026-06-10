@@ -41,6 +41,10 @@ Upravo se ovdje vidi jedna od najvećih poteškoća stabilizacijske politike. Ek
 
 ## Fiskalni multiplikator
 
+::: {#def-fiskalni-multiplikator}
+**Fiskalni multiplikator** je omjer ukupne promjene BDP-a i početne promjene fiskalne varijable (potrošnje ili poreza) koja tu promjenu uzrokuje. Ako povećanje državne potrošnje za 1 mlrd. eura podiže BDP za 1,5 mlrd. eura, multiplikator je 1,5. Ovisi o graničnoj sklonosti potrošnji, otvorenosti gospodarstva i stanju monetarne politike.
+:::
+
 Fiskalni multiplikator pokazuje za koliko se promijeni proizvodnja kada se promijeni neka fiskalna varijabla. U jednostavnom keynesijanskom okviru početni fiskalni impuls ne djeluje samo jednom, nego se širi kroz gospodarstvo. Dodatna potrošnja postaje nečiji dohodak, dio tog dohotka ponovno se troši, pa ukupni učinak na BDP može biti veći od početnog impulsa.
 
 U lijevom panelu prikazano je povećanje državne potrošnje. Budući da je državna potrošnja sastavnica agregatne potražnje, njezin rast izravno pomiče krivulju planiranih izdataka prema gore. Nova ravnoteža nastaje na višoj razini proizvodnje, pa je multiplikator državne potrošnje pozitivan.
@@ -213,6 +217,10 @@ Politička implikacija nije da je fiskalna ekspanzija uvijek poželjna, nego da 
 
 ## Automatski stabilizatori
 
+::: {#def-automatski-stabilizatori}
+**Automatski stabilizatori** su elementi fiskalnog sustava koji bez ikakve posebne odluke vlade automatski ublažavaju gospodarski ciklus, tako da u recesiji porezni prihodi padaju i rashodi za socijalne naknade rastu (fiskalna ekspanzija), dok se u ekspanziji događa suprotno (fiskalna kontrakcija).
+:::
+
 Stabilizacijska funkcija države ne ostvaruje se samo diskrecijskim odlukama vlade. Veliku ulogu imaju i automatski stabilizatori, elementi fiskalnog sustava koji automatski ublažavaju gospodarske cikluse, bez potrebe za novim zakonima ili posebnim političkim odlukama.
 
 Kada gospodarstvo uđe u recesiju, dohoci, potrošnja i dobit poduzeća padaju. Zbog toga automatski padaju porezni prihodi od poreza na dohodak, doprinosa, PDV-a i poreza na dobit. Istodobno rastu rashodi za naknade za nezaposlene, socijalnu pomoć i druge oblike zaštite. Time se dio pada privatnog dohotka automatski nadoknađuje kroz proračun. Kućanstva ne gube sav dohodak odjednom, pa pad potrošnje nije toliko snažan koliko bi bio bez socijalnog sustava. U ekspanziji se događa suprotno, jer porezni prihodi automatski rastu, a rashodi za nezaposlene i neke oblike socijalne pomoći padaju.
@@ -222,6 +230,10 @@ Prednost automatskih stabilizatora je u tome što djeluju brzo, predvidljivo i b
 Snaga automatskih stabilizatora zato sustavno varira među zemljama. U državama s velikim i progresivnim poreznim sustavom te razvijenom socijalnom zaštitom, kakve su nordijske i kontinentalne europske ekonomije, automatski stabilizatori apsorbiraju znatno veći dio šoka nego u zemljama s manjim javnim sektorom i slabijim sustavom naknada [@tanzi2011]. Posljedica je da gospodarstva sa snažnijim stabilizatorima u prosjeku pokazuju manje izražene cikličke oscilacije i manju potrebu za diskrecijskim intervencijama, ali po cijenu višeg trajnog poreznog opterećenja. Veličina i struktura države tako nisu samo pitanje preraspodjele, nego izravno određuju koliko je gospodarstvo automatski zaštićeno od recesija, što pokazuje da je institucionalni dizajn javnih financija dio same stabilizacijske politike, a ne tek njezina pozadina.
 
 ## Diskrecijska fiskalna politika
+
+::: {#def-diskrecijska-fiskalna-politika}
+**Diskrecijska fiskalna politika** su posebne mjere koje vlada svjesno donosi kao odgovor na konkretnu gospodarsku situaciju, poput privremenih smanjenja poreza, jednokratnih pomoći, javnih investicija ili programa zapošljavanja. Za razliku od automatskih stabilizatora, zahtijeva izričitu političku odluku i trpi kašnjenja u pripremi i provedbi.
+:::
 
 Osim automatskih stabilizatora, država može koristiti i diskrecijsku fiskalnu politiku, odnosno posebne mjere koje donosi kao odgovor na konkretnu gospodarsku situaciju. To mogu biti privremena smanjenja poreza, jednokratne pomoći kućanstvima, subvencije poduzećima, programi očuvanja radnih mjesta, javne investicije ili državna jamstva.
 
@@ -255,7 +267,13 @@ Nakon krize nastupa i ono što Peacock i Wiseman nazivaju učinkom nadzora (*ins
 
 Ova literatura važna je jer pokazuje da stabilizacijska funkcija ima dugoročne posljedice. Mjere koje su uvedene kao privremene mogu postati trajne. Institucije osnovane za rješavanje krize mogu ostati i nakon krize. To ne mora biti loše ako su nove funkcije društveno korisne i fiskalno održive. Ali može biti problem ako privremene mjere ostanu bez jasnog opravdanja, financiranja i evaluacije.
 
-Iza tog opreza krije se prava napetost koja nema jednostavno rješenje. Propust da se djeluje u dubokoj recesiji nije besplatan jer dugotrajna nezaposlenost ostavlja trajne ožiljke, pa radnici gube vještine, mladi teže ulaze na tržište rada, a dio izgubljene proizvodnje nikad se ne nadoknadi, što je učinak poznat kao histereza. Kritika prebrze fiskalne konsolidacije nakon 2010. upravo upozorava da je inzistiranje na štednji u krivom trenutku produbilo pad i odgodilo oporavak [@blyth2013]. S druge strane, neograničeno oslanjanje na deficit ima svoju granicu jer visok i rastući javni dug povećava ranjivost na promjene kamatnih stopa i može dovesti do nagloga gubitka povjerenja tržišta [@reinhart2009]. Odgovorna stabilizacijska politika zato ne bira između discipline i poticaja jednom zauvijek, nego prepoznaje da je ispravan trenutak za svaki od njih različit i da pogreška u vremenu može biti skuplja od pogreške u smjeru.
+Iza tog opreza krije se prava napetost koja nema jednostavno rješenje.
+
+::: {#def-histereza}
+**Histereza** je pojava da privremeni gospodarski šok ostavlja trajne posljedice na razinu potencijalnog outputa ili zaposlenosti, jer radnici koji su dugo nezaposleni gube vještine i teže se vraćaju na tržište rada, a dio izgubljene proizvodnje nikad se ne nadoknadi. Privremeno odstupanje od trenda pretvara se u trajno pomicanje trenda.
+:::
+
+Propust da se djeluje u dubokoj recesiji zato nije besplatan jer dugotrajna nezaposlenost ostavlja trajne ožiljke u kojima radnici gube vještine, mladi teže ulaze na tržište rada, a dio izgubljene proizvodnje nikad se ne nadoknadi. Kritika prebrze fiskalne konsolidacije nakon 2010. upravo upozorava da je inzistiranje na štednji u krivom trenutku produbilo pad i odgodilo oporavak [@blyth2013]. S druge strane, neograničeno oslanjanje na deficit ima svoju granicu jer visok i rastući javni dug povećava ranjivost na promjene kamatnih stopa i može dovesti do nagloga gubitka povjerenja tržišta [@reinhart2009]. Odgovorna stabilizacijska politika zato ne bira između discipline i poticaja jednom zauvijek, nego prepoznaje da je ispravan trenutak za svaki od njih različit i da pogreška u vremenu može biti skuplja od pogreške u smjeru.
 
 ## Dvostruka priroda stabilizacijske funkcije
 
@@ -266,6 +284,10 @@ S druge strane, stabilizacijska funkcija nosi rizike. Država može reagirati pr
 Stabilizacijska funkcija nije poziv na stalnu intervenciju države u sve makroekonomske procese. Ona je argument za odgovornu, pravodobnu i privremenu intervenciju kada tržišna prilagodba prijeti velikim društvenim troškovima. Dobra stabilizacijska politika mora znati kada djelovati, koliko djelovati i kada se povući.
 
 ## Stabilnost kao javno dobro
+
+::: {#def-stabilnost-javno-dobro}
+Makroekonomska **stabilnost** (niska nezaposlenost, umjerena inflacija, funkcionalan financijski sustav) ima svojstva javnog dobra jer je neisključiva, što znači da nitko ne može biti isključen iz njezinih koristi, i u dobroj mjeri nekonkurentna, jer koristi jednog aktera ne iscrpljuju stabilnost za ostale. Kao i kod svakog javnog dobra, tržište je neće samo proizvesti u dovoljnoj mjeri.
+:::
 
 Stabilnost gospodarstva može se promatrati kao svojevrsno javno dobro. Kada je gospodarstvo stabilno, koristi imaju gotovo svi. Radnici lakše zadržavaju posao, poduzeća lakše planiraju investicije, građani imaju veće povjerenje, javne financije su održivije, a društvene napetosti su manje. Kada gospodarstvo postane nestabilno, troškovi se šire kroz cijelo društvo.
 

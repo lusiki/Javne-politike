@@ -20,7 +20,7 @@ Klasičan pogled na birokraciju najčešće se povezuje s Maxom Weberom i njegov
 ## Klasičan, weberovski pogled
 
 ::: {#def-weberovska-birokracija}
-**Weberovska birokracija** je model profesionalne državne uprave koji Max Weber definira kroz racionalno-legalnu vlast: nadležnosti, postupci i odgovornosti uređeni su formalnim pravilima, a ne osobnom loyalnošću — čime se jamče predvidivost, jednakost pred pravilima i kontinuitet države [@weber1978].
+**Weberovska birokracija** je model profesionalne državne uprave koji Max Weber definira kroz racionalno-legalnu vlast, u kojoj su nadležnosti, postupci i odgovornosti uređeni formalnim pravilima, a ne osobnom lojalnošću, čime se jamče predvidivost, jednakost pred pravilima i kontinuitet države [@weber1978].
 :::
 
 Klasičan pogled na birokraciju polazi od ideje da moderna država ne može funkcionirati bez profesionalne administracije. Kako društva postaju složenija, ne mogu se više oslanjati na osobne odnose, običaje, lojalnost vladaru ili diskrecijske odluke pojedinaca. Moderna država mora upravljati porezima, sudovima, vojskom, obrazovanjem, infrastrukturom, javnim zdravljem, socijalnim sustavom i regulatornim institucijama. Za takve funkcije potrebna je organizacija koja je stabilna, predvidiva, stručna i relativno neovisna o osobnim interesima pojedinaca.
@@ -62,7 +62,7 @@ Za teoriju javnog izbora ključno je pitanje poticaja. Ako političari žele rei
 ### Niskanenov model birokrata kao maksimizatora proračuna
 
 ::: {#def-niskanenov-model}
-**Niskanenov model** tvrdi da birokrati, suočeni s monopolskim položajem i informacijskom prednošću pred político-proračunskim nadzornicima, maksimiziraju veličinu proračuna institucije jer veći proračun donosi veću plaću, status i autonomiju, što rezultira sustavno nadoptimalnom potrošnjom [@niskanen1971].
+**Niskanenov model** tvrdi da birokrati, suočeni s monopolskim položajem i informacijskom prednošću pred političko-proračunskim nadzornicima, maksimiziraju veličinu proračuna institucije jer veći proračun donosi veću plaću, status i autonomiju, što rezultira sustavno nadoptimalnom potrošnjom [@niskanen1971].
 :::
 
 Najpoznatiji model birokracije u teoriji javnog izbora razvio je William A. Niskanen [@niskanen1971]. Niskanenov model postavlja jednostavno, ali vrlo utjecajno pitanje o tome što birokrati maksimiziraju ako ne maksimiziraju profit.
@@ -140,11 +140,14 @@ nisk_c = nisk_controls.c
 
 Niskanenov model počiva na tri ključna elementa. Prvo, birokracija često ima **monopol** nad pružanjem određene javne usluge. Drugo, birokracija ima **informacijsku prednost** jer zna koliko program stvarno košta, gdje postoje rezerve učinkovitosti i koliko bi se moglo uštedjeti. Treće, političari i ministarstvo financija često ne mogu savršeno provjeriti informacije koje im birokracija dostavlja. Zbog toga birokracija može tražiti veći proračun od društveno optimalnog.
 
-Birokratsko širenje ne mora biti posljedica korupcije ili zle namjere. Ono može biti sasvim racionalno ponašanje unutar sustava u kojem se uspjeh institucije mjeri veličinom proračuna, brojem zaposlenih i širinom nadležnosti. U kasnijim raspravama model je kritiziran kao previše pojednostavljen, jer nisu svi birokrati jednako motivirani proračunom. Neki žele miran posao, neki stručni ugled, a neki doista žele poboljšati javnu uslugu. Breton i Wintrobe upozorili su da su interesi unutar birokracije heterogeni, pri čemu viši službenici teže moći i prestižu, a niži sigurnosti radnoga mjesta, pa maksimizacija proračuna ne mora biti zajednički cilj svih razina [@breton1975]. ::: {#def-bureau-shaping}
-**Bureau-shaping** je strategija Dunleavyeve teorije prema kojoj viši birokrati ne maksimiziraju veličinu proračuna (kao u Niskanen), nego oblik i tip organizacije: preferiraju male, politički utjecajne i visokoprestiždne agencije pred velikima, rutinskim i operativnim, jer im to donosi veći osobni ugled uz manji upravljački trud [@dunleavy1985].
+Birokratsko širenje ne mora biti posljedica korupcije ili zle namjere. Ono može biti sasvim racionalno ponašanje unutar sustava u kojem se uspjeh institucije mjeri veličinom proračuna, brojem zaposlenih i širinom nadležnosti. U kasnijim raspravama model je kritiziran kao previše pojednostavljen, jer nisu svi birokrati jednako motivirani proračunom. Neki žele miran posao, neki stručni ugled, a neki doista žele poboljšati javnu uslugu. Breton i Wintrobe upozorili su da su interesi unutar birokracije heterogeni, pri čemu viši službenici teže moći i prestižu, a niži sigurnosti radnoga mjesta, pa maksimizacija proračuna ne mora biti zajednički cilj svih razina [@breton1975].
+
+::: {#def-bureau-shaping}
+**Bureau-shaping** je strategija Dunleavyeve teorije prema kojoj viši birokrati ne maksimiziraju veličinu proračuna (kao u Niskanenovu modelu), nego oblik i tip organizacije, pa preferiraju male, politički utjecajne i visokoprestižne agencije pred velikima, rutinskim i operativnim, jer im to donosi veći osobni ugled uz manji upravljački trud [@dunleavy1985].
 :::
 
-Dunleavy je tvrdio da birokrati mogu nastojati maksimizirati vlastiti utjecaj i kontrolu nad politikom, a ne nužno cijeli proračun — što je nazvao strategijom **bureau-shapinga**: umjesto rasta proračuna, viši birokrati preferiraju male, moćne i politički utjecajne organizacije nad velikima, rutinskim i operativnim [@dunleavy1985]. Ipak, Niskanenov model ostaje važan jer jasno pokazuje da se proračunski proces ne može razumjeti samo kao tehničko određivanje potrebnih sredstava.
+Dunleavy je tvrdio da birokrati mogu nastojati maksimizirati vlastiti utjecaj i kontrolu nad politikom, a ne nužno cijeli proračun, što je nazvao strategijom bureau-shapinga [@dunleavy1985]. Ipak, Niskanenov model ostaje važan jer jasno pokazuje da se proračunski proces ne može razumjeti samo kao tehničko određivanje potrebnih sredstava.
+
 Ako želimo učinkovitu državu, nije dovoljno pitati koliko novca neka institucija traži. Treba pitati koje rezultate proizvodi, koliko ti rezultati koštaju, postoje li jeftiniji načini provedbe i tko neovisno provjerava informacije koje institucija iznosi.
 
 ::: {.callout-praksa}
