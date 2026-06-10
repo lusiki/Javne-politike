@@ -1,0 +1,19 @@
+{
+  "note": "REBUILT 2026-06-09 against the LIVE book (_quarto.yml): 20 chapters, 00-uvod .. 19-reforme, in 5 parts. Earlier versions of this file described an obsolete chapter numbering (00-prije-pocetka .. 16-zakljucak) that no longer exists on disk; that drift is now removed. Bands measured from the live chapters. STRUCTURE SCAN 2026-06-09 (structure_scan.R over chapters/*.qmd): opener present on 19 of 19 non-exempt chapters (only 00-uvod lacks it, correctly, as it is opener-exempt). callout-praksa present in all 19 substantive chapters (06 and 07 have 3, 14 has 2, rest 1). callout-empirija present everywhere EXCEPT 06-kolektivni-izbor and 08-interesne-skupine (both 0) — the two empirija gaps. callout-vjezba present in only 5 chapters: 03, 04, 13, 14, 18 — the largest pedagogical gap. Formal fig- labelled figures only in 01, 05, 12, 14 (1 each); the book has ~110 OJS interactive blocks across 12 chapters (02 has 30, 14 has 36) that are NOT wrapped in #fig- labels and so do not count as Quarto figures or get cross-references. Definitions use #def- divs (01x2, 06x1, 11x2, 14x2, 18x1), NOT the numbered 'Definicija N.N' format, so structure_scan.R reports def 0 for every chapter — a detector/format mismatch to be aware of. Citation integrity: all [@key] citations resolve against references.bib (no fabricated citations). opener_exempt: the intro chapter (00-uvod) skips the Vodič kroz poglavlje opener; the book has no separate conclusion chapter (19-reforme is the last).",
+  "labels": {
+    "opener": "Vodič kroz poglavlje",
+    "figure_prefix": "fig-",
+    "definition": "Definicija",
+    "callout_applied": "callout-praksa",
+    "callout_empirical": "callout-empirija",
+    "exercise": "callout-vjezba"
+  },
+  "opener_exempt": ["00-uvod"],
+  "bands": {
+    "definitions_per_chapter": [0, 2],
+    "figures_per_chapter": [0, 6],
+    "callout_applied_per_chapter": [1, 3],
+    "callout_empirical_per_chapter": [1, 3],
+    "exercises_min": 1
+  }
+}

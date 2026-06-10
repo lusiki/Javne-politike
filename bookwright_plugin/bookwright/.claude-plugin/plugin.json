@@ -1,0 +1,9 @@
+{
+  "name": "bookwright",
+  "displayName": "Bookwright",
+  "version": "0.1.0",
+  "description": "MVP tooling for the Javne politike Quarto book. A book-conductor that tracks the status of all chapters and routes each open task into a self pile or a co-author pile, plus book-style (STYLE.md), book-enrich (ENRICHMENT.md), book-review (a five-critic per-chapter panel), and the five review-panel critics they dispatch.",
+  "keywords": ["quarto", "book", "editorial", "croatian", "public-policy", "review-panel"],
+  "author": { "name": "Luka Sikic", "email": "luka.sikic.gm@gmail.com" },
+  "license": "MIT"
+}
