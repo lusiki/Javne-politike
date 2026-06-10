@@ -73,6 +73,9 @@ fm_dT = fm_controls.dT
 
 ```{ojs}
 //| echo: false
+//| label: fig-keynesian-cross
+//| fig-cap: "Keynesijanski križ s dvije ploče: lijeva prikazuje učinak povećanja državne potrošnje (ΔG), desna učinak povećanja poreza (ΔT), uz prikaz multiplikatora i pomaka ravnotežnog dohotka."
+//| fig-alt: "Dvije usporedne ploče prikazuju Keynesijanski križ. Na svakoj su osi dohodak Y i planirani izdaci AE, crta od 45° i krivulja planiranih izdataka. Lijevoj ploči pomiče se krivulja AE prema gore zbog rasta državne potrošnje, a desnoj prema dolje zbog rasta poreza; točke ravnoteže pomiču se duž crte od 45° i vrijednosti multiplikatora prikazane su u zaglavlju svake ploče."
 {
   const A0 = 100;             // autonomous expenditure (fixed)
   const c  = fm_c;

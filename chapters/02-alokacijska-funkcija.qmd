@@ -75,6 +75,9 @@ pg_mc = pg_controls.mc
 
 ```{ojs}
 //| echo: false
+//| label: fig-javna-dobra
+//| fig-cap: "Vertikalno zbrajanje individualnih krivulja potražnje za javnim dobrom i problem švercerana: tržišna razina Q_M premala je u odnosu na društveni optimum Q*."
+//| fig-alt: "Graf prikazuje n individualnih silaznih krivulja potražnje i njihov vertikalni zbroj MSB koji siječe horizontalnu krivulju MC u točki Q*. Tržišna razina Q_M, određena samo najvećom individualnom spremnošću na plaćanje, znatno je niža od Q*, što ilustrira nedovoljnu opskrbu javnim dobrom."
 {
   const n      = pg_n;
   const a_top  = pg_a_top;
@@ -241,6 +244,9 @@ eps_s_ext = ext_controls.eps_s_ext
 
 ```{ojs}
 //| echo: false
+//| label: fig-neg-eksternalija
+//| fig-cap: "Negativna eksternalija i gubitak blagostanja: tržišna ravnoteža (Q_M, P_MPC) premašuje društveni optimum (Q*, P*) jer MPC ne uključuje vanjski trošak."
+//| fig-alt: "Graf prikazuje silaznu krivulju potražnje D, uzlaznu krivulju marginalnog privatnog troška MPC i krivulju marginalnog društvenog troška MSC pomaknutu gore za iznos vanjskog troška. Tržišna ravnoteža je u presjeku D i MPC, a društveni optimum niže lijevo u presjeku D i MSC. Osjenčani trokut između Q* i Q_M prikazuje gubitak blagostanja."
 {
   // Fix MPC/D equilibrium at (Qm, Pmpc) = (60, 50)
   const Qm    = 60;
@@ -376,6 +382,9 @@ eps_s_pos = pos_controls.eps_s_pos
 
 ```{ojs}
 //| echo: false
+//| label: fig-poz-eksternalija
+//| fig-cap: "Pozitivna eksternalija i propuštena korist: tržišna razina Q_M preniska je u odnosu na društveni optimum Q* jer MPB ne uključuje vanjsku korist."
+//| fig-alt: "Graf prikazuje krivulju marginalnog privatnog benefita MPB i krivulju marginalnog društvenog benefita MSB pomaknutu gore za iznos vanjske koristi, te uzlaznu krivulju ponude S. Tržišna ravnoteža je u presjeku MPB i S, a society optimum desno gore u presjeku MSB i S. Osjenčani trokut prikazuje propuštenu društvenu korist."
 {
   // Fix MPB/S market equilibrium at (Qm, Pm) = (50, 50)
   const Qm   = 50;
@@ -537,6 +546,9 @@ eps_s_asi = asi_controls.eps_s_asi
 
 ```{ojs}
 //| echo: false
+//| label: fig-nepovoljan-izbor
+//| fig-cap: "Tržište limuna i nepovoljan izbor: informacijska asimetrija tjera kvalitetne prodavače s tržišta, pa ravnoteža pada s (Q₁, P_visoka) na (Q₂, P_niska)."
+//| fig-alt: "Graf prikazuje jednu silaznu krivulju potražnje i dvije uzlazne krivulje ponude: S_loša (niža) i S_visoka (viša, isprekidana). Crvena strelica pokazuje pomak ponude prema dolje, dok se ravnoteža pomiče ulijevo i prema nižoj cijeni, ilustrirajući kako informacijska asimetrija urušava tržište kvalitetne robe."
 {
   // Anchor low-quality equilibrium at (Q2, P_niska) = (60, 50)
   const Q2     = 60;
@@ -672,6 +684,9 @@ mh_m = mh_controls.m
 
 ```{ojs}
 //| echo: false
+//| label: fig-moralni-hazard
+//| fig-cap: "Moralni hazard: osiguranje smanjuje percipiranu krivulju troška, pa agent bira višu razinu rizičnog ponašanja e_M umjesto optimalne e*."
+//| fig-alt: "Graf prikazuje dvije konveksne krivulje troška kao funkciju razine rizičnog ponašanja e. Crvena isprekidana krivulja Bez osiguranja strmija je, a crna puna krivulja S osiguranjem položenija jer agent percipira samo dio troška. Optimalni e* je lijevo od e_M kojeg agent bira uz osiguranje."
 {
   const theta = mh_theta;
   const k     = mh_k;
@@ -797,6 +812,9 @@ eps_s_mon = mon_controls.eps_s_mon
 
 ```{ojs}
 //| echo: false
+//| label: fig-monopol
+//| fig-cap: "Monopol i gubitak blagostanja: monopolist ograničava količinu na Q_M i podiže cijenu na P_M iznad konkurentske razine (Q_C, P_C), čime nastaje osjenčani trokut mrtvog tereta."
+//| fig-alt: "Graf prikazuje silaznu krivulju potražnje D, silaznu krivulju marginalnog prihoda MR i uzlaznu krivulju marginalnog troška MC. Monopolist bira Q_M gdje se MR izjednačava s MC, a cijena P_M određena je prema krivulji potražnje i viša je od konkurentske cijene P_C. Crveni osjenčani trokut između Q_M i Q_C prikazuje gubitak blagostanja."
 {
   // Anchor competitive equilibrium at (Qc, Pc) = (60, 50)
   const Qc   = 60;

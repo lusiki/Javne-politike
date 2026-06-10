@@ -116,6 +116,9 @@ eb_pC = eb_controls.pC
 
 ```{ojs}
 //| echo: false
+//| label: fig-edgeworth
+//| fig-cap: "Točke na krivulji ugovora predstavljaju Pareto učinkovite alokacije."
+//| fig-alt: "Edgeworthova kutija s krivuljom ugovora (zelena) i krivuljama indiferencije dvaju potrošača (plava za potrošača A, crvena za B). Tri označene točke A, B i C leže na krivulji ugovora gdje se krivulje indiferencije dvaju potrošača međusobno tangiraju."
 {
   const W = 10, H = 6;
   const alpha = eb_alpha, beta = eb_beta;

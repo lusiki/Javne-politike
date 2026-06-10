@@ -83,6 +83,9 @@ nisk_c = nisk_controls.c
 
 ```{ojs}
 //| echo: false
+//| label: fig-niskanen
+//| fig-cap: "Birokracija sklona maksimizaciji proračuna širi uslugu do razine Qₙ na kojoj se ukupna korist izjednačuje s ukupnim troškom, daleko iznad društveno učinkovite razine Q* na kojoj se izjednačuju granična korist i granični trošak."
+//| fig-alt: "Graf prikazuje silaznu krivulju granične koristi (MB) i horizontalnu liniju graničnog troška (MC). Okomite isprekidane linije označavaju Q* (učinkovita količina gdje MB = MC) i Qₙ (Niskansenova razina gdje ukupna korist = ukupni trošak). Crveno osjenčano područje između Q* i Qₙ prikazuje prekomjernu potrošnju birokracije."
 {
   const a = 10;
   const b = nisk_b, c = nisk_c;

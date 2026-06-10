@@ -143,12 +143,21 @@ Interactive charts use OJS blocks (`{ojs}`). These execute in the browser, not v
 
 ## Theming
 
-- **Body font**: Geist (sans-serif)
+STATECRAFT palette (`_brand.yml`, `styles/custom.scss`):
+
+- **Background**: paper `#F2EDE3` (warm cream — never pure white)
+- **Body text**: ink `#1C1916` (near-black with brown undertone)
+- **Primary accent**: verdigris `#4A6B5C` (links, buttons, active states)
+- **Emphasis**: oxblood `#6B1F26` (callout borders, destructive actions only)
+- **Archival accent**: ochre `#C8985E` (timeline, chapter-number watermark)
+- **Body font**: Public Sans (sans-serif)
 - **Display/headings**: Newsreader (serif)
-- **Monospace**: Geist Mono
-- Brand SCSS variables live in `styles/custom.scss`; color tokens in `_brand.yml`
-- Dark mode styles in `styles/_dark.scss`
-- Do not change font families without updating both `_brand.yml` and `styles/custom.scss`
+- **Monospace**: IBM Plex Mono
+
+SCSS variable mapping (legacy `$brand-*` names map to STATECRAFT tokens):
+- `$brand-navy` → ink `#1C1916`; `$brand-gold` / `$brand-burgundy` → verdigris `#4A6B5C`; `$brand-cream` → paper `#F2EDE3`
+
+Dark mode styles in `styles/_dark.scss`. Do not change font families without updating both `_brand.yml` and `styles/custom.scss`.
 
 ## R / renv
 

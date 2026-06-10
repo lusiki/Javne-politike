@@ -18,7 +18,9 @@ count_file <- function(path) {
   n <- length(lines)
 
   opener   <- any(grepl(paste0("^#+\\s*", opener_label), lines))
-  defs     <- sum(grepl("(^|\\s)Definicija\\s+[0-9]+\\.[0-9]+", lines))
+  # Detect {#def-} div convention (e.g. ::: {#def-javni-izbor}) as well as old Definicija N.N format
+  defs     <- sum(grepl("(^|\\s)Definicija\\s+[0-9]+\\.[0-9]+", lines)) +
+              sum(grepl("^:::+\\s*\\{[^}]*#def-", lines))
   praksa   <- sum(grepl("^:::+\\s*\\{[^}]*\\.callout-praksa", lines))
   empirija <- sum(grepl("^:::+\\s*\\{[^}]*\\.callout-empirija", lines))
   vjezbe   <- any(grepl("^:::+\\s*\\{[^}]*\\.callout-vjezba", lines)) ||
@@ -35,7 +37,8 @@ count_file <- function(path) {
       else { if (code_is_fig) figs <- figs + 1L; in_code <- FALSE }
       next
     }
-    if (in_code) { if (grepl("^#\\|", t) && grepl("fig-[A-Za-z0-9_-]+", t)) code_is_fig <- TRUE; next }
+    # Detect OJS chart blocks via //| label: fig-* as well as R chunk fig labels
+    if (in_code) { if (grepl("^#\\|\\s*label:\\s*fig-", t) || (grepl("^#\\|", t) && grepl("fig-[A-Za-z0-9_-]+", t))) code_is_fig <- TRUE; next }
     if (grepl("^:::+\\s*\\{[^}]*#fig-", t)) { figs <- figs + 1L; next }
     if (grepl("^!\\[", t)) { figs <- figs + 1L; next }
   }

@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="hr-HR" xml:lang="hr-HR"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.6.43">
+<meta name="generator" content="quarto-1.7.32">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -21,8 +21,9 @@ ul.task-list li input[type="checkbox"] {
   vertical-align: middle;
 }
 /* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
 pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
 pre > code.sourceCode > span:empty { height: 1.2em; }
 .sourceCode { overflow: visible; }
 code.sourceCode > span { color: inherit; text-decoration: inherit; }
@@ -33,7 +34,7 @@ div.sourceCode { overflow: auto; }
 }
 @media print {
 pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
 }
 pre.numberSource code
   { counter-reset: source-line 0; }
@@ -86,17 +87,20 @@ div.csl-indent {
 <link href="../references.html" rel="next">
 <link href="../chapters/18-cba-evaluacija.html" rel="prev">
 <link href="../images/favicon.ico" rel="icon">
-<script src="../site_libs/quarto-html/quarto.js"></script>
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="../site_libs/quarto-html/popper.min.js"></script>
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-0cf6555743a0958f71dc8d5aba7305d9.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark-19eb5a85a399d11602e5709a3b9587c0.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-0d728faf902e423debf4a13c485d6652.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark-b7b980379163672951778461beb15b4e.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-0d728faf902e423debf4a13c485d6652.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-39da85e754cbfef7103e56c10cfe2ee1.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../site_libs/bootstrap/bootstrap-dark-147d7589ac67ee38f63201ce292d8cfd.min.css" rel="prefetch" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-4dda118369ea85ffb99ee27e29c13871.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-dark-8c9c3901964b85f0931b5b04065045a6.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-4dda118369ea85ffb99ee27e29c13871.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -140,7 +144,169 @@ div.csl-indent {
 <link rel="stylesheet" href="../styles/styles.css">
 </head>
 
-<body class="nav-sidebar docked nav-fixed slimcontent">
+<body class="nav-sidebar docked nav-fixed slimcontent quarto-light"><script id="quarto-html-before-body" type="application/javascript">
+    const toggleBodyColorMode = (bsSheetEl) => {
+      const mode = bsSheetEl.getAttribute("data-mode");
+      const bodyEl = window.document.querySelector("body");
+      if (mode === "dark") {
+        bodyEl.classList.add("quarto-dark");
+        bodyEl.classList.remove("quarto-light");
+      } else {
+        bodyEl.classList.add("quarto-light");
+        bodyEl.classList.remove("quarto-dark");
+      }
+    }
+    const toggleBodyColorPrimary = () => {
+      const bsSheetEl = window.document.querySelector("link#quarto-bootstrap:not([rel=disabled-stylesheet])");
+      if (bsSheetEl) {
+        toggleBodyColorMode(bsSheetEl);
+      }
+    }
+    const setColorSchemeToggle = (alternate) => {
+      const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
+      for (let i=0; i < toggles.length; i++) {
+        const toggle = toggles[i];
+        if (toggle) {
+          if (alternate) {
+            toggle.classList.add("alternate");
+          } else {
+            toggle.classList.remove("alternate");
+          }
+        }
+      }
+    };
+    const toggleColorMode = (alternate) => {
+      // Switch the stylesheets
+      const primaryStylesheets = window.document.querySelectorAll('link.quarto-color-scheme:not(.quarto-color-alternate)');
+      const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
+      manageTransitions('#quarto-margin-sidebar .nav-link', false);
+      if (alternate) {
+        // note: dark is layered on light, we don't disable primary!
+        enableStylesheet(alternateStylesheets);
+        for (const sheetNode of alternateStylesheets) {
+          if (sheetNode.id === "quarto-bootstrap") {
+            toggleBodyColorMode(sheetNode);
+          }
+        }
+      } else {
+        disableStylesheet(alternateStylesheets);
+        enableStylesheet(primaryStylesheets)
+        toggleBodyColorPrimary();
+      }
+      manageTransitions('#quarto-margin-sidebar .nav-link', true);
+      // Switch the toggles
+      setColorSchemeToggle(alternate)
+      // Hack to workaround the fact that safari doesn't
+      // properly recolor the scrollbar when toggling (#1455)
+      if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
+        manageTransitions("body", false);
+        window.scrollTo(0, 1);
+        setTimeout(() => {
+          window.scrollTo(0, 0);
+          manageTransitions("body", true);
+        }, 40);
+      }
+    }
+    const disableStylesheet = (stylesheets) => {
+      for (let i=0; i < stylesheets.length; i++) {
+        const stylesheet = stylesheets[i];
+        stylesheet.rel = 'disabled-stylesheet';
+      }
+    }
+    const enableStylesheet = (stylesheets) => {
+      for (let i=0; i < stylesheets.length; i++) {
+        const stylesheet = stylesheets[i];
+        if(stylesheet.rel !== 'stylesheet') { // for Chrome, which will still FOUC without this check
+          stylesheet.rel = 'stylesheet';
+        }
+      }
+    }
+    const manageTransitions = (selector, allowTransitions) => {
+      const els = window.document.querySelectorAll(selector);
+      for (let i=0; i < els.length; i++) {
+        const el = els[i];
+        if (allowTransitions) {
+          el.classList.remove('notransition');
+        } else {
+          el.classList.add('notransition');
+        }
+      }
+    }
+    const isFileUrl = () => {
+      return window.location.protocol === 'file:';
+    }
+    const hasAlternateSentinel = () => {
+      let styleSentinel = getColorSchemeSentinel();
+      if (styleSentinel !== null) {
+        return styleSentinel === "alternate";
+      } else {
+        return false;
+      }
+    }
+    const setStyleSentinel = (alternate) => {
+      const value = alternate ? "alternate" : "default";
+      if (!isFileUrl()) {
+        window.localStorage.setItem("quarto-color-scheme", value);
+      } else {
+        localAlternateSentinel = value;
+      }
+    }
+    const getColorSchemeSentinel = () => {
+      if (!isFileUrl()) {
+        const storageValue = window.localStorage.getItem("quarto-color-scheme");
+        return storageValue != null ? storageValue : localAlternateSentinel;
+      } else {
+        return localAlternateSentinel;
+      }
+    }
+    const toggleGiscusIfUsed = (isAlternate, darkModeDefault) => {
+      const baseTheme = document.querySelector('#giscus-base-theme')?.value ?? 'light';
+      const alternateTheme = document.querySelector('#giscus-alt-theme')?.value ?? 'dark';
+      let newTheme = '';
+      if(authorPrefersDark) {
+        newTheme = isAlternate ? baseTheme : alternateTheme;
+      } else {
+        newTheme = isAlternate ? alternateTheme : baseTheme;
+      }
+      const changeGiscusTheme = () => {
+        // From: https://github.com/giscus/giscus/issues/336
+        const sendMessage = (message) => {
+          const iframe = document.querySelector('iframe.giscus-frame');
+          if (!iframe) return;
+          iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
+        }
+        sendMessage({
+          setConfig: {
+            theme: newTheme
+          }
+        });
+      }
+      const isGiscussLoaded = window.document.querySelector('iframe.giscus-frame') !== null;
+      if (isGiscussLoaded) {
+        changeGiscusTheme();
+      }
+    };
+    const authorPrefersDark = false;
+    const darkModeDefault = authorPrefersDark;
+      document.querySelector('link#quarto-text-highlighting-styles.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
+      document.querySelector('link#quarto-bootstrap.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
+    let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
+    // Dark / light mode switch
+    window.quartoToggleColorScheme = () => {
+      // Read the current dark / light value
+      let toAlternate = !hasAlternateSentinel();
+      toggleColorMode(toAlternate);
+      setStyleSentinel(toAlternate);
+      toggleGiscusIfUsed(toAlternate, darkModeDefault);
+      window.dispatchEvent(new Event('resize'));
+    };
+    // Switch to dark mode if need be
+    if (hasAlternateSentinel()) {
+      toggleColorMode(true);
+    } else {
+      toggleColorMode(false);
+    }
+  </script>
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -456,6 +622,7 @@ div.csl-indent {
 <!-- main -->
 <main class="content page-columns page-full" id="quarto-document-content">
 
+
 <header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../chapters/15-drzavni-neuspjesi.html">DIO V: KAKO DO KVALITETNIJIH JAVNIH POLITIKA?</a></li><li class="breadcrumb-item"><a href="../chapters/19-reforme.html"><span class="chapter-title">Reforme u javnom sektoru — što funkcionira i zašto?</span></a></li></ol></nav>
 <div class="quarto-title">
 <div class="quarto-title-block"><div><h1 class="title"><span class="chapter-title">Reforme u javnom sektoru — što funkcionira i zašto?</span></h1><button type="button" class="btn code-tools-button dropdown-toggle" id="quarto-code-tools-menu" data-bs-toggle="dropdown" aria-expanded="false"><i class="bi"></i> Code</button><ul class="dropdown-menu dropdown-menu-end" aria-labelelledby="quarto-code-tools-menu"><li><a id="quarto-show-all-code" class="dropdown-item" href="javascript:void(0)" role="button">Show All Code</a></li><li><a id="quarto-hide-all-code" class="dropdown-item" href="javascript:void(0)" role="button">Hide All Code</a></li><li><hr class="dropdown-divider"></li><li><a id="quarto-view-source" class="dropdown-item" href="javascript:void(0)" role="button">View Source</a></li></ul></div></div>
@@ -549,43 +716,63 @@ Fernandez, Raquel, i Dani Rodrik. 1991. <span>„Resistance to Reform: Status Qu
 <div class="cell">
 <details class="code-fold hidden">
 <summary>Prikaži kod</summary>
-<div class="sourceCode cell-code hidden" id="cb4" data-startfrom="68" data-source-offset="0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 67;"><span id="cb4-68"><a href="#cb4-68" aria-hidden="true" tabindex="-1"></a>{</span>
-<span id="cb4-69"><a href="#cb4-69" aria-hidden="true" tabindex="-1"></a>  <span class="kw">const</span> c <span class="op">=</span> ref_c<span class="op">;</span></span>
-<span id="cb4-70"><a href="#cb4-70" aria-hidden="true" tabindex="-1"></a>  <span class="co">// stilizirano: uspjeh je najveći kada brzina odgovara kapacitetu, a razina raste s kapacitetom</span></span>
-<span id="cb4-71"><a href="#cb4-71" aria-hidden="true" tabindex="-1"></a>  <span class="kw">const</span> success <span class="op">=</span> (s) <span class="kw">=&gt;</span> (<span class="fl">0.3</span> <span class="op">+</span> <span class="fl">0.7</span> <span class="op">*</span> c) <span class="op">*</span> <span class="bu">Math</span><span class="op">.</span><span class="fu">exp</span>(<span class="op">-</span>((s <span class="op">-</span> c) <span class="op">**</span> <span class="dv">2</span>) <span class="op">/</span> (<span class="dv">2</span> <span class="op">*</span> <span class="fl">0.08</span>))<span class="op">;</span></span>
-<span id="cb4-72"><a href="#cb4-72" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-73"><a href="#cb4-73" aria-hidden="true" tabindex="-1"></a>  <span class="kw">const</span> curve <span class="op">=</span> d3<span class="op">.</span><span class="fu">range</span>(<span class="dv">0</span><span class="op">,</span> <span class="fl">1.001</span><span class="op">,</span> <span class="fl">0.01</span>)<span class="op">.</span><span class="fu">map</span>(s <span class="kw">=&gt;</span> ({s<span class="op">,</span> <span class="dt">u</span><span class="op">:</span> <span class="fu">success</span>(s)}))<span class="op">;</span></span>
-<span id="cb4-74"><a href="#cb4-74" aria-hidden="true" tabindex="-1"></a>  <span class="kw">const</span> cur <span class="op">=</span> {<span class="dt">s</span><span class="op">:</span> ref_s<span class="op">,</span> <span class="dt">u</span><span class="op">:</span> <span class="fu">success</span>(ref_s)}<span class="op">;</span></span>
+<div class="sourceCode cell-code hidden" id="cb4" data-startfrom="71" data-source-offset="0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 70;"><span id="cb4-71"><a href="#cb4-71" aria-hidden="true" tabindex="-1"></a>{</span>
+<span id="cb4-72"><a href="#cb4-72" aria-hidden="true" tabindex="-1"></a>  <span class="kw">const</span> c <span class="op">=</span> ref_c<span class="op">;</span></span>
+<span id="cb4-73"><a href="#cb4-73" aria-hidden="true" tabindex="-1"></a>  <span class="co">// stilizirano: uspjeh je najveći kada brzina odgovara kapacitetu, a razina raste s kapacitetom</span></span>
+<span id="cb4-74"><a href="#cb4-74" aria-hidden="true" tabindex="-1"></a>  <span class="kw">const</span> success <span class="op">=</span> (s) <span class="kw">=&gt;</span> (<span class="fl">0.3</span> <span class="op">+</span> <span class="fl">0.7</span> <span class="op">*</span> c) <span class="op">*</span> <span class="bu">Math</span><span class="op">.</span><span class="fu">exp</span>(<span class="op">-</span>((s <span class="op">-</span> c) <span class="op">**</span> <span class="dv">2</span>) <span class="op">/</span> (<span class="dv">2</span> <span class="op">*</span> <span class="fl">0.08</span>))<span class="op">;</span></span>
 <span id="cb4-75"><a href="#cb4-75" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-76"><a href="#cb4-76" aria-hidden="true" tabindex="-1"></a>  <span class="cf">return</span> Plot<span class="op">.</span><span class="fu">plot</span>({</span>
-<span id="cb4-77"><a href="#cb4-77" aria-hidden="true" tabindex="-1"></a>    <span class="dt">width</span><span class="op">:</span> <span class="dv">760</span><span class="op">,</span></span>
-<span id="cb4-78"><a href="#cb4-78" aria-hidden="true" tabindex="-1"></a>    <span class="dt">height</span><span class="op">:</span> <span class="dv">430</span><span class="op">,</span></span>
-<span id="cb4-79"><a href="#cb4-79" aria-hidden="true" tabindex="-1"></a>    <span class="dt">marginLeft</span><span class="op">:</span> <span class="dv">64</span><span class="op">,</span></span>
-<span id="cb4-80"><a href="#cb4-80" aria-hidden="true" tabindex="-1"></a>    <span class="dt">marginRight</span><span class="op">:</span> <span class="dv">30</span><span class="op">,</span></span>
-<span id="cb4-81"><a href="#cb4-81" aria-hidden="true" tabindex="-1"></a>    <span class="dt">marginTop</span><span class="op">:</span> <span class="dv">50</span><span class="op">,</span></span>
-<span id="cb4-82"><a href="#cb4-82" aria-hidden="true" tabindex="-1"></a>    <span class="dt">marginBottom</span><span class="op">:</span> <span class="dv">52</span><span class="op">,</span></span>
-<span id="cb4-83"><a href="#cb4-83" aria-hidden="true" tabindex="-1"></a>    <span class="dt">style</span><span class="op">:</span> {<span class="dt">fontSize</span><span class="op">:</span> <span class="st">"12px"</span><span class="op">,</span> <span class="dt">fontFamily</span><span class="op">:</span> <span class="st">"Public Sans, system-ui, sans-serif"</span><span class="op">,</span> <span class="dt">color</span><span class="op">:</span> <span class="st">"#3A332D"</span>}<span class="op">,</span></span>
-<span id="cb4-84"><a href="#cb4-84" aria-hidden="true" tabindex="-1"></a>    <span class="dt">x</span><span class="op">:</span> {<span class="dt">label</span><span class="op">:</span> <span class="st">"Brzina i ambicija reforme →"</span><span class="op">,</span> <span class="dt">domain</span><span class="op">:</span> [<span class="dv">0</span><span class="op">,</span> <span class="dv">1</span>]<span class="op">,</span> <span class="dt">tickFormat</span><span class="op">:</span> <span class="st">"%"</span>}<span class="op">,</span></span>
-<span id="cb4-85"><a href="#cb4-85" aria-hidden="true" tabindex="-1"></a>    <span class="dt">y</span><span class="op">:</span> {<span class="dt">label</span><span class="op">:</span> <span class="st">"↑ Vjerojatnost uspjeha reforme"</span><span class="op">,</span> <span class="dt">domain</span><span class="op">:</span> [<span class="dv">0</span><span class="op">,</span> <span class="dv">1</span>]<span class="op">,</span> <span class="dt">tickFormat</span><span class="op">:</span> <span class="st">"%"</span><span class="op">,</span> <span class="dt">grid</span><span class="op">:</span> <span class="kw">true</span>}<span class="op">,</span></span>
-<span id="cb4-86"><a href="#cb4-86" aria-hidden="true" tabindex="-1"></a>    <span class="dt">marks</span><span class="op">:</span> [</span>
-<span id="cb4-87"><a href="#cb4-87" aria-hidden="true" tabindex="-1"></a>      Plot<span class="op">.</span><span class="fu">ruleX</span>([c]<span class="op">,</span> {<span class="dt">stroke</span><span class="op">:</span> <span class="st">"#1C7C54"</span><span class="op">,</span> <span class="dt">strokeDasharray</span><span class="op">:</span> <span class="st">"4,3"</span>})<span class="op">,</span></span>
-<span id="cb4-88"><a href="#cb4-88" aria-hidden="true" tabindex="-1"></a>      Plot<span class="op">.</span><span class="fu">text</span>([{<span class="dt">s</span><span class="op">:</span> c<span class="op">,</span> <span class="dt">u</span><span class="op">:</span> <span class="fl">0.97</span>}]<span class="op">,</span> {<span class="dt">x</span><span class="op">:</span> <span class="st">"s"</span><span class="op">,</span> <span class="dt">y</span><span class="op">:</span> <span class="st">"u"</span><span class="op">,</span> <span class="dt">text</span><span class="op">:</span> [<span class="st">"brzina = kapacitet"</span>]<span class="op">,</span></span>
-<span id="cb4-89"><a href="#cb4-89" aria-hidden="true" tabindex="-1"></a>        <span class="dt">fill</span><span class="op">:</span> <span class="st">"#1C7C54"</span><span class="op">,</span> <span class="dt">fontSize</span><span class="op">:</span> <span class="dv">11</span><span class="op">,</span> <span class="dt">dx</span><span class="op">:</span> <span class="dv">5</span><span class="op">,</span> <span class="dt">textAnchor</span><span class="op">:</span> <span class="st">"start"</span>})<span class="op">,</span></span>
-<span id="cb4-90"><a href="#cb4-90" aria-hidden="true" tabindex="-1"></a>      Plot<span class="op">.</span><span class="fu">line</span>(curve<span class="op">,</span> {<span class="dt">x</span><span class="op">:</span> <span class="st">"s"</span><span class="op">,</span> <span class="dt">y</span><span class="op">:</span> <span class="st">"u"</span><span class="op">,</span> <span class="dt">stroke</span><span class="op">:</span> <span class="st">"#2D5A8E"</span><span class="op">,</span> <span class="dt">strokeWidth</span><span class="op">:</span> <span class="fl">2.5</span>})<span class="op">,</span></span>
-<span id="cb4-91"><a href="#cb4-91" aria-hidden="true" tabindex="-1"></a>      Plot<span class="op">.</span><span class="fu">dot</span>([cur]<span class="op">,</span> {<span class="dt">x</span><span class="op">:</span> <span class="st">"s"</span><span class="op">,</span> <span class="dt">y</span><span class="op">:</span> <span class="st">"u"</span><span class="op">,</span> <span class="dt">r</span><span class="op">:</span> <span class="dv">6</span><span class="op">,</span> <span class="dt">fill</span><span class="op">:</span> <span class="st">"#1C1916"</span><span class="op">,</span> <span class="dt">stroke</span><span class="op">:</span> <span class="st">"white"</span><span class="op">,</span> <span class="dt">strokeWidth</span><span class="op">:</span> <span class="dv">2</span>})<span class="op">,</span></span>
-<span id="cb4-92"><a href="#cb4-92" aria-hidden="true" tabindex="-1"></a>      Plot<span class="op">.</span><span class="fu">text</span>([cur]<span class="op">,</span> {<span class="dt">x</span><span class="op">:</span> <span class="st">"s"</span><span class="op">,</span> <span class="dt">y</span><span class="op">:</span> <span class="st">"u"</span><span class="op">,</span> <span class="dt">text</span><span class="op">:</span> [<span class="vs">`uspjeh ≈ </span><span class="sc">${</span>(cur<span class="op">.</span><span class="at">u</span> <span class="op">*</span> <span class="dv">100</span>)<span class="op">.</span><span class="fu">toFixed</span>(<span class="dv">0</span>)<span class="sc">}</span><span class="vs"> %`</span>]<span class="op">,</span></span>
-<span id="cb4-93"><a href="#cb4-93" aria-hidden="true" tabindex="-1"></a>        <span class="dt">fill</span><span class="op">:</span> <span class="st">"#1C1916"</span><span class="op">,</span> <span class="dt">fontSize</span><span class="op">:</span> <span class="dv">13</span><span class="op">,</span> <span class="dt">fontWeight</span><span class="op">:</span> <span class="dv">700</span><span class="op">,</span> <span class="dt">dy</span><span class="op">:</span> <span class="op">-</span><span class="dv">14</span><span class="op">,</span> <span class="dt">textAnchor</span><span class="op">:</span> <span class="st">"middle"</span>})</span>
-<span id="cb4-94"><a href="#cb4-94" aria-hidden="true" tabindex="-1"></a>    ]</span>
-<span id="cb4-95"><a href="#cb4-95" aria-hidden="true" tabindex="-1"></a>  })<span class="op">;</span></span>
-<span id="cb4-96"><a href="#cb4-96" aria-hidden="true" tabindex="-1"></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb4-76"><a href="#cb4-76" aria-hidden="true" tabindex="-1"></a>  <span class="kw">const</span> curve <span class="op">=</span> d3<span class="op">.</span><span class="fu">range</span>(<span class="dv">0</span><span class="op">,</span> <span class="fl">1.001</span><span class="op">,</span> <span class="fl">0.01</span>)<span class="op">.</span><span class="fu">map</span>(s <span class="kw">=&gt;</span> ({s<span class="op">,</span> <span class="dt">u</span><span class="op">:</span> <span class="fu">success</span>(s)}))<span class="op">;</span></span>
+<span id="cb4-77"><a href="#cb4-77" aria-hidden="true" tabindex="-1"></a>  <span class="kw">const</span> cur <span class="op">=</span> {<span class="dt">s</span><span class="op">:</span> ref_s<span class="op">,</span> <span class="dt">u</span><span class="op">:</span> <span class="fu">success</span>(ref_s)}<span class="op">;</span></span>
+<span id="cb4-78"><a href="#cb4-78" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-79"><a href="#cb4-79" aria-hidden="true" tabindex="-1"></a>  <span class="cf">return</span> Plot<span class="op">.</span><span class="fu">plot</span>({</span>
+<span id="cb4-80"><a href="#cb4-80" aria-hidden="true" tabindex="-1"></a>    <span class="dt">width</span><span class="op">:</span> <span class="dv">760</span><span class="op">,</span></span>
+<span id="cb4-81"><a href="#cb4-81" aria-hidden="true" tabindex="-1"></a>    <span class="dt">height</span><span class="op">:</span> <span class="dv">430</span><span class="op">,</span></span>
+<span id="cb4-82"><a href="#cb4-82" aria-hidden="true" tabindex="-1"></a>    <span class="dt">marginLeft</span><span class="op">:</span> <span class="dv">64</span><span class="op">,</span></span>
+<span id="cb4-83"><a href="#cb4-83" aria-hidden="true" tabindex="-1"></a>    <span class="dt">marginRight</span><span class="op">:</span> <span class="dv">30</span><span class="op">,</span></span>
+<span id="cb4-84"><a href="#cb4-84" aria-hidden="true" tabindex="-1"></a>    <span class="dt">marginTop</span><span class="op">:</span> <span class="dv">50</span><span class="op">,</span></span>
+<span id="cb4-85"><a href="#cb4-85" aria-hidden="true" tabindex="-1"></a>    <span class="dt">marginBottom</span><span class="op">:</span> <span class="dv">52</span><span class="op">,</span></span>
+<span id="cb4-86"><a href="#cb4-86" aria-hidden="true" tabindex="-1"></a>    <span class="dt">style</span><span class="op">:</span> {<span class="dt">fontSize</span><span class="op">:</span> <span class="st">"12px"</span><span class="op">,</span> <span class="dt">fontFamily</span><span class="op">:</span> <span class="st">"Public Sans, system-ui, sans-serif"</span><span class="op">,</span> <span class="dt">color</span><span class="op">:</span> <span class="st">"#3A332D"</span>}<span class="op">,</span></span>
+<span id="cb4-87"><a href="#cb4-87" aria-hidden="true" tabindex="-1"></a>    <span class="dt">x</span><span class="op">:</span> {<span class="dt">label</span><span class="op">:</span> <span class="st">"Brzina i ambicija reforme →"</span><span class="op">,</span> <span class="dt">domain</span><span class="op">:</span> [<span class="dv">0</span><span class="op">,</span> <span class="dv">1</span>]<span class="op">,</span> <span class="dt">tickFormat</span><span class="op">:</span> <span class="st">"%"</span>}<span class="op">,</span></span>
+<span id="cb4-88"><a href="#cb4-88" aria-hidden="true" tabindex="-1"></a>    <span class="dt">y</span><span class="op">:</span> {<span class="dt">label</span><span class="op">:</span> <span class="st">"↑ Vjerojatnost uspjeha reforme"</span><span class="op">,</span> <span class="dt">domain</span><span class="op">:</span> [<span class="dv">0</span><span class="op">,</span> <span class="dv">1</span>]<span class="op">,</span> <span class="dt">tickFormat</span><span class="op">:</span> <span class="st">"%"</span><span class="op">,</span> <span class="dt">grid</span><span class="op">:</span> <span class="kw">true</span>}<span class="op">,</span></span>
+<span id="cb4-89"><a href="#cb4-89" aria-hidden="true" tabindex="-1"></a>    <span class="dt">marks</span><span class="op">:</span> [</span>
+<span id="cb4-90"><a href="#cb4-90" aria-hidden="true" tabindex="-1"></a>      Plot<span class="op">.</span><span class="fu">ruleX</span>([c]<span class="op">,</span> {<span class="dt">stroke</span><span class="op">:</span> <span class="st">"#1C7C54"</span><span class="op">,</span> <span class="dt">strokeDasharray</span><span class="op">:</span> <span class="st">"4,3"</span>})<span class="op">,</span></span>
+<span id="cb4-91"><a href="#cb4-91" aria-hidden="true" tabindex="-1"></a>      Plot<span class="op">.</span><span class="fu">text</span>([{<span class="dt">s</span><span class="op">:</span> c<span class="op">,</span> <span class="dt">u</span><span class="op">:</span> <span class="fl">0.97</span>}]<span class="op">,</span> {<span class="dt">x</span><span class="op">:</span> <span class="st">"s"</span><span class="op">,</span> <span class="dt">y</span><span class="op">:</span> <span class="st">"u"</span><span class="op">,</span> <span class="dt">text</span><span class="op">:</span> [<span class="st">"kapacitet"</span>]<span class="op">,</span></span>
+<span id="cb4-92"><a href="#cb4-92" aria-hidden="true" tabindex="-1"></a>        <span class="dt">fill</span><span class="op">:</span> <span class="st">"#1C7C54"</span><span class="op">,</span> <span class="dt">fontSize</span><span class="op">:</span> <span class="dv">11</span><span class="op">,</span> <span class="dt">dx</span><span class="op">:</span> <span class="dv">5</span><span class="op">,</span> <span class="dt">textAnchor</span><span class="op">:</span> <span class="st">"start"</span>})<span class="op">,</span></span>
+<span id="cb4-93"><a href="#cb4-93" aria-hidden="true" tabindex="-1"></a>      Plot<span class="op">.</span><span class="fu">line</span>(curve<span class="op">,</span> {<span class="dt">x</span><span class="op">:</span> <span class="st">"s"</span><span class="op">,</span> <span class="dt">y</span><span class="op">:</span> <span class="st">"u"</span><span class="op">,</span> <span class="dt">stroke</span><span class="op">:</span> <span class="st">"#2D5A8E"</span><span class="op">,</span> <span class="dt">strokeWidth</span><span class="op">:</span> <span class="fl">2.5</span>})<span class="op">,</span></span>
+<span id="cb4-94"><a href="#cb4-94" aria-hidden="true" tabindex="-1"></a>      <span class="co">// droplines tie the chosen speed (ref_s) to its success level on the curve,</span></span>
+<span id="cb4-95"><a href="#cb4-95" aria-hidden="true" tabindex="-1"></a>      <span class="co">// so moving the speed slider visibly traces the marker along the curve</span></span>
+<span id="cb4-96"><a href="#cb4-96" aria-hidden="true" tabindex="-1"></a>      Plot<span class="op">.</span><span class="fu">ruleX</span>([cur]<span class="op">,</span> {<span class="dt">x</span><span class="op">:</span> <span class="st">"s"</span><span class="op">,</span> <span class="dt">y1</span><span class="op">:</span> <span class="dv">0</span><span class="op">,</span> <span class="dt">y2</span><span class="op">:</span> <span class="st">"u"</span><span class="op">,</span> <span class="dt">stroke</span><span class="op">:</span> <span class="st">"#1C1916"</span><span class="op">,</span> <span class="dt">strokeDasharray</span><span class="op">:</span> <span class="st">"3,3"</span>})<span class="op">,</span></span>
+<span id="cb4-97"><a href="#cb4-97" aria-hidden="true" tabindex="-1"></a>      Plot<span class="op">.</span><span class="fu">ruleY</span>([cur]<span class="op">,</span> {<span class="dt">y</span><span class="op">:</span> <span class="st">"u"</span><span class="op">,</span> <span class="dt">x1</span><span class="op">:</span> <span class="dv">0</span><span class="op">,</span> <span class="dt">x2</span><span class="op">:</span> <span class="st">"s"</span><span class="op">,</span> <span class="dt">stroke</span><span class="op">:</span> <span class="st">"#1C1916"</span><span class="op">,</span> <span class="dt">strokeDasharray</span><span class="op">:</span> <span class="st">"3,3"</span>})<span class="op">,</span></span>
+<span id="cb4-98"><a href="#cb4-98" aria-hidden="true" tabindex="-1"></a>      Plot<span class="op">.</span><span class="fu">text</span>([{<span class="dt">s</span><span class="op">:</span> cur<span class="op">.</span><span class="at">s</span><span class="op">,</span> <span class="dt">u</span><span class="op">:</span> <span class="dv">0</span>}]<span class="op">,</span> {<span class="dt">x</span><span class="op">:</span> <span class="st">"s"</span><span class="op">,</span> <span class="dt">y</span><span class="op">:</span> <span class="st">"u"</span><span class="op">,</span> <span class="dt">text</span><span class="op">:</span> [<span class="vs">`brzina = </span><span class="sc">${</span>(cur<span class="op">.</span><span class="at">s</span> <span class="op">*</span> <span class="dv">100</span>)<span class="op">.</span><span class="fu">toFixed</span>(<span class="dv">0</span>)<span class="sc">}</span><span class="vs"> %`</span>]<span class="op">,</span></span>
+<span id="cb4-99"><a href="#cb4-99" aria-hidden="true" tabindex="-1"></a>        <span class="dt">fill</span><span class="op">:</span> <span class="st">"#1C1916"</span><span class="op">,</span> <span class="dt">fontSize</span><span class="op">:</span> <span class="dv">11</span><span class="op">,</span> <span class="dt">dy</span><span class="op">:</span> <span class="dv">16</span><span class="op">,</span> <span class="dt">textAnchor</span><span class="op">:</span> <span class="st">"middle"</span>})<span class="op">,</span></span>
+<span id="cb4-100"><a href="#cb4-100" aria-hidden="true" tabindex="-1"></a>      Plot<span class="op">.</span><span class="fu">dot</span>([cur]<span class="op">,</span> {<span class="dt">x</span><span class="op">:</span> <span class="st">"s"</span><span class="op">,</span> <span class="dt">y</span><span class="op">:</span> <span class="st">"u"</span><span class="op">,</span> <span class="dt">r</span><span class="op">:</span> <span class="dv">6</span><span class="op">,</span> <span class="dt">fill</span><span class="op">:</span> <span class="st">"#1C1916"</span><span class="op">,</span> <span class="dt">stroke</span><span class="op">:</span> <span class="st">"white"</span><span class="op">,</span> <span class="dt">strokeWidth</span><span class="op">:</span> <span class="dv">2</span>})<span class="op">,</span></span>
+<span id="cb4-101"><a href="#cb4-101" aria-hidden="true" tabindex="-1"></a>      Plot<span class="op">.</span><span class="fu">text</span>([cur]<span class="op">,</span> {<span class="dt">x</span><span class="op">:</span> <span class="st">"s"</span><span class="op">,</span> <span class="dt">y</span><span class="op">:</span> <span class="st">"u"</span><span class="op">,</span> <span class="dt">text</span><span class="op">:</span> [<span class="vs">`uspjeh ≈ </span><span class="sc">${</span>(cur<span class="op">.</span><span class="at">u</span> <span class="op">*</span> <span class="dv">100</span>)<span class="op">.</span><span class="fu">toFixed</span>(<span class="dv">0</span>)<span class="sc">}</span><span class="vs"> %`</span>]<span class="op">,</span></span>
+<span id="cb4-102"><a href="#cb4-102" aria-hidden="true" tabindex="-1"></a>        <span class="dt">fill</span><span class="op">:</span> <span class="st">"#1C1916"</span><span class="op">,</span> <span class="dt">fontSize</span><span class="op">:</span> <span class="dv">13</span><span class="op">,</span> <span class="dt">fontWeight</span><span class="op">:</span> <span class="dv">700</span><span class="op">,</span> <span class="dt">dy</span><span class="op">:</span> <span class="op">-</span><span class="dv">14</span><span class="op">,</span> <span class="dt">textAnchor</span><span class="op">:</span> <span class="st">"middle"</span>})</span>
+<span id="cb4-103"><a href="#cb4-103" aria-hidden="true" tabindex="-1"></a>    ]</span>
+<span id="cb4-104"><a href="#cb4-104" aria-hidden="true" tabindex="-1"></a>  })<span class="op">;</span></span>
+<span id="cb4-105"><a href="#cb4-105" aria-hidden="true" tabindex="-1"></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
-<div class="cell-output cell-output-display">
+<div id="fig-reforma-kapacitet" class="cell-output cell-output-display quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-reforma-kapacitet-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <div id="ojs-cell-4" data-nodetype="expression">
 
 </div>
 </div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-reforma-kapacitet-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Slika&nbsp;21.1: Stilizirani prikaz pouke o sekvenciranju — vjerojatnost uspjeha najveća je kada brzina reforme odgovara institucionalnom kapacitetu; pri niskom kapacitetu uspijeva postupnost, a prebrza šok-reforma pada, dok visok kapacitet podnosi i brže promjene.
+</figcaption>
+</figure>
+</div>
 </div>
 <p><em>Stilizirani prikaz pouke o sekvenciranju — vjerojatnost uspjeha najveća je kada brzina reforme odgovara institucionalnom kapacitetu; pri niskom kapacitetu uspijeva postupnost, a prebrza „šok” reforma pada, dok visok kapacitet podnosi i brže promjene.</em></p>
+<div class="callout-vjezba">
+<p>Pretpostavite gospodarstvo sa sto identičnih birača koji glasaju o reformi prostom većinom. Reforma će nakon provedbe stvoriti 60 dobitnika, od kojih svaki dobiva +40, i 40 gubitnika, od kojih svaki gubi −30. Ex ante nijedan birač ne zna kojoj će skupini pripasti, pa svatko procjenjuje da će biti dobitnik s vjerojatnošću 0,6, a gubitnik s vjerojatnošću 0,4. Tko ostaje pri statusu quo ima siguran ishod 0.</p>
+<ol type="a">
+<li>Izračunajte agregatni neto učinak reforme i potvrdite da je ona za društvo u cjelini korisna. (b) Izračunajte očekivani ishod jednog birača pod individualno specifičnom neizvjesnošću i objasnite zašto bi racionalan birač u toj situaciji glasao protiv reforme, iako bi je ex post većina podržala. (c) Reformator sada nudi kompenzacijsku shemu kojom se svakom budućem gubitniku iz reformskog viška isplaćuje naknada od 20. Izračunajte novi očekivani ishod birača i pokažite da reforma sada dobiva većinu.</li>
+</ol>
+<p>Otvorite interaktivni graf iznad i razmislite o vezi između ova dva uvida. Naknada u zadatku ne mijenja ukupan reformski višak, nego raspodjelu rizika među biračima, dok klizač na grafu mijenja brzinu reforme pri zadanom kapacitetu. Objasnite zašto i kompenzacija i ispravno sekvenciranje djeluju kroz isti kanal, to jest kroz smanjenje neizvjesnosti i otpora bez promjene ekonomske supstance mjere, i što to otkriva o tome zašto agregatno korisne reforme tako često ostaju blokirane.</p>
+</div>
 <p>Rodrikov pregled tri desetljeća međunarodnih reformskih iskustava sažima isti obrazac iz drugog kuta <span class="citation" data-cites="rodrik2011">(<a href="../references.html#ref-rodrik2011" role="doc-biblioref">Rodrik 2011</a>)</span>. Zemlje koje su brzo i istodobno provodile cijelu listu „najbolje prakse” (liberalizacija trgovine, deregulacija tržišta rada, privatizacija velikih razmjera, otvaranje kapitalnog računa) sustavno su pokazivale slabije rezultate od zemalja koje su isti skup reformi provodile selektivno i postupno, prilagođavajući redoslijed lokalnim ograničenjima. Ključ nije bio u sadržaju pojedine mjere, nego u tome je li lokalna institucionalna i regulatorna infrastruktura mogla apsorbirati promjenu u tom trenutku.</p>
 <div class="no-row-height column-margin column-container"></div><p>Iskustvo s liberalizacijom kapitalnog računa pokazuje to najjasnije. U zemljama s razvijenom bankarskom regulacijom otvaranje kapitalnog računa donijelo je dugoročne koristi. U zemljama gdje je liberalizacija prethodila uspostavi nadzora nad bankama, isti je potez ubrzao pojavu financijskih kriza. Pouka nije da je liberalizacija loša politika, nego da je redoslijed dio sadržaja reforme, a ne tehnički detalj koji dolazi poslije.</p>
 <div class="callout-praksa">
@@ -1304,7 +1491,7 @@ Fukuyama, Francis. 2011. <em>The Origins of Political Order: From Prehuman Times
 </script>
 
 <script type="ojs-module-contents">
-eyJjb250ZW50cyI6W3sibWV0aG9kTmFtZSI6ImludGVycHJldCIsImNlbGxOYW1lIjoib2pzLWNlbGwtMSIsImlubGluZSI6ZmFsc2UsInNvdXJjZSI6InZpZXdvZiByZWZfY29udHJvbHMgPSBJbnB1dHMuZm9ybSh7XHJcbiAgYzogSW5wdXRzLnJhbmdlKFswLCAxXSwge3ZhbHVlOiAwLjQsIHN0ZXA6IDAuMDUsIGxhYmVsOiBcIkluc3RpdHVjaW9uYWxuaSBrYXBhY2l0ZXQ6XCJ9KSxcclxuICBzOiBJbnB1dHMucmFuZ2UoWzAsIDFdLCB7dmFsdWU6IDAuNywgc3RlcDogMC4wNSwgbGFiZWw6IFwiQnJ6aW5hIGkgYW1iaWNpamEgcmVmb3JtZTpcIn0pXHJcbn0pXHJcbiJ9LHsibWV0aG9kTmFtZSI6ImludGVycHJldCIsImNlbGxOYW1lIjoib2pzLWNlbGwtMiIsImlubGluZSI6ZmFsc2UsInNvdXJjZSI6InJlZl9jID0gcmVmX2NvbnRyb2xzLmNcclxuIn0seyJtZXRob2ROYW1lIjoiaW50ZXJwcmV0IiwiY2VsbE5hbWUiOiJvanMtY2VsbC0zIiwiaW5saW5lIjpmYWxzZSwic291cmNlIjoicmVmX3MgPSByZWZfY29udHJvbHMuc1xyXG4ifSx7Im1ldGhvZE5hbWUiOiJpbnRlcnByZXQiLCJjZWxsTmFtZSI6Im9qcy1jZWxsLTQiLCJpbmxpbmUiOmZhbHNlLCJzb3VyY2UiOiJ7XHJcbiAgY29uc3QgYyA9IHJlZl9jO1xyXG4gIC8vIHN0aWxpemlyYW5vOiB1c3BqZWggamUgbmFqdmXEh2kga2FkYSBicnppbmEgb2Rnb3ZhcmEga2FwYWNpdGV0dSwgYSByYXppbmEgcmFzdGUgcyBrYXBhY2l0ZXRvbVxyXG4gIGNvbnN0IHN1Y2Nlc3MgPSAocykgPT4gKDAuMyArIDAuNyAqIGMpICogTWF0aC5leHAoLSgocyAtIGMpICoqIDIpIC8gKDIgKiAwLjA4KSk7XHJcblxyXG4gIGNvbnN0IGN1cnZlID0gZDMucmFuZ2UoMCwgMS4wMDEsIDAuMDEpLm1hcChzID0+ICh7cywgdTogc3VjY2VzcyhzKX0pKTtcclxuICBjb25zdCBjdXIgPSB7czogcmVmX3MsIHU6IHN1Y2Nlc3MocmVmX3MpfTtcclxuXHJcbiAgcmV0dXJuIFBsb3QucGxvdCh7XHJcbiAgICB3aWR0aDogNzYwLFxyXG4gICAgaGVpZ2h0OiA0MzAsXHJcbiAgICBtYXJnaW5MZWZ0OiA2NCxcclxuICAgIG1hcmdpblJpZ2h0OiAzMCxcclxuICAgIG1hcmdpblRvcDogNTAsXHJcbiAgICBtYXJnaW5Cb3R0b206IDUyLFxyXG4gICAgc3R5bGU6IHtmb250U2l6ZTogXCIxMnB4XCIsIGZvbnRGYW1pbHk6IFwiUHVibGljIFNhbnMsIHN5c3RlbS11aSwgc2Fucy1zZXJpZlwiLCBjb2xvcjogXCIjM0EzMzJEXCJ9LFxyXG4gICAgeDoge2xhYmVsOiBcIkJyemluYSBpIGFtYmljaWphIHJlZm9ybWUg4oaSXCIsIGRvbWFpbjogWzAsIDFdLCB0aWNrRm9ybWF0OiBcIiVcIn0sXHJcbiAgICB5OiB7bGFiZWw6IFwi4oaRIFZqZXJvamF0bm9zdCB1c3BqZWhhIHJlZm9ybWVcIiwgZG9tYWluOiBbMCwgMV0sIHRpY2tGb3JtYXQ6IFwiJVwiLCBncmlkOiB0cnVlfSxcclxuICAgIG1hcmtzOiBbXHJcbiAgICAgIFBsb3QucnVsZVgoW2NdLCB7c3Ryb2tlOiBcIiMxQzdDNTRcIiwgc3Ryb2tlRGFzaGFycmF5OiBcIjQsM1wifSksXHJcbiAgICAgIFBsb3QudGV4dChbe3M6IGMsIHU6IDAuOTd9XSwge3g6IFwic1wiLCB5OiBcInVcIiwgdGV4dDogW1wiYnJ6aW5hID0ga2FwYWNpdGV0XCJdLFxyXG4gICAgICAgIGZpbGw6IFwiIzFDN0M1NFwiLCBmb250U2l6ZTogMTEsIGR4OiA1LCB0ZXh0QW5jaG9yOiBcInN0YXJ0XCJ9KSxcclxuICAgICAgUGxvdC5saW5lKGN1cnZlLCB7eDogXCJzXCIsIHk6IFwidVwiLCBzdHJva2U6IFwiIzJENUE4RVwiLCBzdHJva2VXaWR0aDogMi41fSksXHJcbiAgICAgIFBsb3QuZG90KFtjdXJdLCB7eDogXCJzXCIsIHk6IFwidVwiLCByOiA2LCBmaWxsOiBcIiMxQzE5MTZcIiwgc3Ryb2tlOiBcIndoaXRlXCIsIHN0cm9rZVdpZHRoOiAyfSksXHJcbiAgICAgIFBsb3QudGV4dChbY3VyXSwge3g6IFwic1wiLCB5OiBcInVcIiwgdGV4dDogW2B1c3BqZWgg4omIICR7KGN1ci51ICogMTAwKS50b0ZpeGVkKDApfSAlYF0sXHJcbiAgICAgICAgZmlsbDogXCIjMUMxOTE2XCIsIGZvbnRTaXplOiAxMywgZm9udFdlaWdodDogNzAwLCBkeTogLTE0LCB0ZXh0QW5jaG9yOiBcIm1pZGRsZVwifSlcclxuICAgIF1cclxuICB9KTtcclxufVxyXG4ifSx7Im1ldGhvZE5hbWUiOiJpbnRlcnByZXRRdWlldCIsInNvdXJjZSI6InNoaW55SW5wdXQoJ3JlZl9jb250cm9scycpIn1dfQ==
+eyJjb250ZW50cyI6W3sibWV0aG9kTmFtZSI6ImludGVycHJldCIsImNlbGxOYW1lIjoib2pzLWNlbGwtMSIsImlubGluZSI6ZmFsc2UsInNvdXJjZSI6InZpZXdvZiByZWZfY29udHJvbHMgPSBJbnB1dHMuZm9ybSh7XHJcbiAgYzogSW5wdXRzLnJhbmdlKFswLCAxXSwge3ZhbHVlOiAwLjQsIHN0ZXA6IDAuMDUsIGxhYmVsOiBcIkluc3RpdHVjaW9uYWxuaSBrYXBhY2l0ZXQ6XCJ9KSxcclxuICBzOiBJbnB1dHMucmFuZ2UoWzAsIDFdLCB7dmFsdWU6IDAuNywgc3RlcDogMC4wNSwgbGFiZWw6IFwiQnJ6aW5hIGkgYW1iaWNpamEgcmVmb3JtZTpcIn0pXHJcbn0pXHJcbiJ9LHsibWV0aG9kTmFtZSI6ImludGVycHJldCIsImNlbGxOYW1lIjoib2pzLWNlbGwtMiIsImlubGluZSI6ZmFsc2UsInNvdXJjZSI6InJlZl9jID0gcmVmX2NvbnRyb2xzLmNcclxuIn0seyJtZXRob2ROYW1lIjoiaW50ZXJwcmV0IiwiY2VsbE5hbWUiOiJvanMtY2VsbC0zIiwiaW5saW5lIjpmYWxzZSwic291cmNlIjoicmVmX3MgPSByZWZfY29udHJvbHMuc1xyXG4ifSx7Im1ldGhvZE5hbWUiOiJpbnRlcnByZXQiLCJjZWxsTmFtZSI6Im9qcy1jZWxsLTQiLCJpbmxpbmUiOmZhbHNlLCJzb3VyY2UiOiJ7XHJcbiAgY29uc3QgYyA9IHJlZl9jO1xyXG4gIC8vIHN0aWxpemlyYW5vOiB1c3BqZWggamUgbmFqdmXEh2kga2FkYSBicnppbmEgb2Rnb3ZhcmEga2FwYWNpdGV0dSwgYSByYXppbmEgcmFzdGUgcyBrYXBhY2l0ZXRvbVxyXG4gIGNvbnN0IHN1Y2Nlc3MgPSAocykgPT4gKDAuMyArIDAuNyAqIGMpICogTWF0aC5leHAoLSgocyAtIGMpICoqIDIpIC8gKDIgKiAwLjA4KSk7XHJcblxyXG4gIGNvbnN0IGN1cnZlID0gZDMucmFuZ2UoMCwgMS4wMDEsIDAuMDEpLm1hcChzID0+ICh7cywgdTogc3VjY2VzcyhzKX0pKTtcclxuICBjb25zdCBjdXIgPSB7czogcmVmX3MsIHU6IHN1Y2Nlc3MocmVmX3MpfTtcclxuXHJcbiAgcmV0dXJuIFBsb3QucGxvdCh7XHJcbiAgICB3aWR0aDogNzYwLFxyXG4gICAgaGVpZ2h0OiA0MzAsXHJcbiAgICBtYXJnaW5MZWZ0OiA2NCxcclxuICAgIG1hcmdpblJpZ2h0OiAzMCxcclxuICAgIG1hcmdpblRvcDogNTAsXHJcbiAgICBtYXJnaW5Cb3R0b206IDUyLFxyXG4gICAgc3R5bGU6IHtmb250U2l6ZTogXCIxMnB4XCIsIGZvbnRGYW1pbHk6IFwiUHVibGljIFNhbnMsIHN5c3RlbS11aSwgc2Fucy1zZXJpZlwiLCBjb2xvcjogXCIjM0EzMzJEXCJ9LFxyXG4gICAgeDoge2xhYmVsOiBcIkJyemluYSBpIGFtYmljaWphIHJlZm9ybWUg4oaSXCIsIGRvbWFpbjogWzAsIDFdLCB0aWNrRm9ybWF0OiBcIiVcIn0sXHJcbiAgICB5OiB7bGFiZWw6IFwi4oaRIFZqZXJvamF0bm9zdCB1c3BqZWhhIHJlZm9ybWVcIiwgZG9tYWluOiBbMCwgMV0sIHRpY2tGb3JtYXQ6IFwiJVwiLCBncmlkOiB0cnVlfSxcclxuICAgIG1hcmtzOiBbXHJcbiAgICAgIFBsb3QucnVsZVgoW2NdLCB7c3Ryb2tlOiBcIiMxQzdDNTRcIiwgc3Ryb2tlRGFzaGFycmF5OiBcIjQsM1wifSksXHJcbiAgICAgIFBsb3QudGV4dChbe3M6IGMsIHU6IDAuOTd9XSwge3g6IFwic1wiLCB5OiBcInVcIiwgdGV4dDogW1wia2FwYWNpdGV0XCJdLFxyXG4gICAgICAgIGZpbGw6IFwiIzFDN0M1NFwiLCBmb250U2l6ZTogMTEsIGR4OiA1LCB0ZXh0QW5jaG9yOiBcInN0YXJ0XCJ9KSxcclxuICAgICAgUGxvdC5saW5lKGN1cnZlLCB7eDogXCJzXCIsIHk6IFwidVwiLCBzdHJva2U6IFwiIzJENUE4RVwiLCBzdHJva2VXaWR0aDogMi41fSksXHJcbiAgICAgIC8vIGRyb3BsaW5lcyB0aWUgdGhlIGNob3NlbiBzcGVlZCAocmVmX3MpIHRvIGl0cyBzdWNjZXNzIGxldmVsIG9uIHRoZSBjdXJ2ZSxcclxuICAgICAgLy8gc28gbW92aW5nIHRoZSBzcGVlZCBzbGlkZXIgdmlzaWJseSB0cmFjZXMgdGhlIG1hcmtlciBhbG9uZyB0aGUgY3VydmVcclxuICAgICAgUGxvdC5ydWxlWChbY3VyXSwge3g6IFwic1wiLCB5MTogMCwgeTI6IFwidVwiLCBzdHJva2U6IFwiIzFDMTkxNlwiLCBzdHJva2VEYXNoYXJyYXk6IFwiMywzXCJ9KSxcclxuICAgICAgUGxvdC5ydWxlWShbY3VyXSwge3k6IFwidVwiLCB4MTogMCwgeDI6IFwic1wiLCBzdHJva2U6IFwiIzFDMTkxNlwiLCBzdHJva2VEYXNoYXJyYXk6IFwiMywzXCJ9KSxcclxuICAgICAgUGxvdC50ZXh0KFt7czogY3VyLnMsIHU6IDB9XSwge3g6IFwic1wiLCB5OiBcInVcIiwgdGV4dDogW2BicnppbmEgPSAkeyhjdXIucyAqIDEwMCkudG9GaXhlZCgwKX0gJWBdLFxyXG4gICAgICAgIGZpbGw6IFwiIzFDMTkxNlwiLCBmb250U2l6ZTogMTEsIGR5OiAxNiwgdGV4dEFuY2hvcjogXCJtaWRkbGVcIn0pLFxyXG4gICAgICBQbG90LmRvdChbY3VyXSwge3g6IFwic1wiLCB5OiBcInVcIiwgcjogNiwgZmlsbDogXCIjMUMxOTE2XCIsIHN0cm9rZTogXCJ3aGl0ZVwiLCBzdHJva2VXaWR0aDogMn0pLFxyXG4gICAgICBQbG90LnRleHQoW2N1cl0sIHt4OiBcInNcIiwgeTogXCJ1XCIsIHRleHQ6IFtgdXNwamVoIOKJiCAkeyhjdXIudSAqIDEwMCkudG9GaXhlZCgwKX0gJWBdLFxyXG4gICAgICAgIGZpbGw6IFwiIzFDMTkxNlwiLCBmb250U2l6ZTogMTMsIGZvbnRXZWlnaHQ6IDcwMCwgZHk6IC0xNCwgdGV4dEFuY2hvcjogXCJtaWRkbGVcIn0pXHJcbiAgICBdXHJcbiAgfSk7XHJcbn1cclxuIn0seyJtZXRob2ROYW1lIjoiaW50ZXJwcmV0UXVpZXQiLCJzb3VyY2UiOiJzaGlueUlucHV0KCdyZWZfY29udHJvbHMnKSJ9XX0=
 </script>
 <script type="module">
 if (window.location.protocol === "file:") { alert("The OJS runtime does not work with file:// URLs. Please use a web server to view this document."); }
@@ -1315,438 +1502,313 @@ window._ojs.selfContained = false;
 window._ojs.runtime.interpretFromScriptTags();
 </script>
 <script id="quarto-html-after-body" type="application/javascript">
-window.document.addEventListener("DOMContentLoaded", function (event) {
-  const toggleBodyColorMode = (bsSheetEl) => {
-    const mode = bsSheetEl.getAttribute("data-mode");
-    const bodyEl = window.document.querySelector("body");
-    if (mode === "dark") {
-      bodyEl.classList.add("quarto-dark");
-      bodyEl.classList.remove("quarto-light");
-    } else {
-      bodyEl.classList.add("quarto-light");
-      bodyEl.classList.remove("quarto-dark");
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    // Ensure there is a toggle, if there isn't float one in the top right
+    if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
+      const a = window.document.createElement('a');
+      a.classList.add('top-right');
+      a.classList.add('quarto-color-scheme-toggle');
+      a.href = "";
+      a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
+      const i = window.document.createElement("i");
+      i.classList.add('bi');
+      a.appendChild(i);
+      window.document.body.appendChild(a);
     }
-  }
-  const toggleBodyColorPrimary = () => {
-    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
-    if (bsSheetEl) {
-      toggleBodyColorMode(bsSheetEl);
+    setColorSchemeToggle(hasAlternateSentinel())
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
     }
-  }
-  toggleBodyColorPrimary();  
-  const disableStylesheet = (stylesheets) => {
-    for (let i=0; i < stylesheets.length; i++) {
-      const stylesheet = stylesheets[i];
-      stylesheet.rel = 'prefetch';
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
     }
-  }
-  const enableStylesheet = (stylesheets) => {
-    for (let i=0; i < stylesheets.length; i++) {
-      const stylesheet = stylesheets[i];
-      stylesheet.rel = 'stylesheet';
+    const getTextToCopy = function(trigger) {
+        const codeEl = trigger.previousElementSibling.cloneNode(true);
+        for (const childEl of codeEl.children) {
+          if (isCodeAnnotation(childEl)) {
+            childEl.remove();
+          }
+        }
+        return codeEl.innerText;
     }
-  }
-  const manageTransitions = (selector, allowTransitions) => {
-    const els = window.document.querySelectorAll(selector);
-    for (let i=0; i < els.length; i++) {
-      const el = els[i];
-      if (allowTransitions) {
-        el.classList.remove('notransition');
-      } else {
-        el.classList.add('notransition');
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+    const viewSource = window.document.getElementById('quarto-view-source') ||
+                       window.document.getElementById('quarto-code-tools-source');
+    if (viewSource) {
+      const sourceUrl = viewSource.getAttribute("data-quarto-source-url");
+      viewSource.addEventListener("click", function(e) {
+        if (sourceUrl) {
+          // rstudio viewer pane
+          if (/\bcapabilities=\b/.test(window.location)) {
+            window.open(sourceUrl);
+          } else {
+            window.location.href = sourceUrl;
+          }
+        } else {
+          const modal = new bootstrap.Modal(document.getElementById('quarto-embedded-source-code-modal'));
+          modal.show();
+        }
+        return false;
+      });
+    }
+    function toggleCodeHandler(show) {
+      return function(e) {
+        const detailsSrc = window.document.querySelectorAll(".cell > details > .sourceCode");
+        for (let i=0; i<detailsSrc.length; i++) {
+          const details = detailsSrc[i].parentElement;
+          if (show) {
+            details.open = true;
+          } else {
+            details.removeAttribute("open");
+          }
+        }
+        const cellCodeDivs = window.document.querySelectorAll(".cell > .sourceCode");
+        const fromCls = show ? "hidden" : "unhidden";
+        const toCls = show ? "unhidden" : "hidden";
+        for (let i=0; i<cellCodeDivs.length; i++) {
+          const codeDiv = cellCodeDivs[i];
+          if (codeDiv.classList.contains(fromCls)) {
+            codeDiv.classList.remove(fromCls);
+            codeDiv.classList.add(toCls);
+          } 
+        }
+        return false;
       }
     }
-  }
-  const toggleGiscusIfUsed = (isAlternate, darkModeDefault) => {
-    const baseTheme = document.querySelector('#giscus-base-theme')?.value ?? 'light';
-    const alternateTheme = document.querySelector('#giscus-alt-theme')?.value ?? 'dark';
-    let newTheme = '';
-    if(darkModeDefault) {
-      newTheme = isAlternate ? baseTheme : alternateTheme;
-    } else {
-      newTheme = isAlternate ? alternateTheme : baseTheme;
+    const hideAllCode = window.document.getElementById("quarto-hide-all-code");
+    if (hideAllCode) {
+      hideAllCode.addEventListener("click", toggleCodeHandler(false));
     }
-    const changeGiscusTheme = () => {
-      // From: https://github.com/giscus/giscus/issues/336
-      const sendMessage = (message) => {
-        const iframe = document.querySelector('iframe.giscus-frame');
-        if (!iframe) return;
-        iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
+    const showAllCode = window.document.getElementById("quarto-show-all-code");
+    if (showAllCode) {
+      showAllCode.addEventListener("click", toggleCodeHandler(true));
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp("https:\/\/lusiki\.github\.io\/Javne-politike\/");
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
       }
-      sendMessage({
-        setConfig: {
-          theme: newTheme
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+            // target, if specified
+            link.setAttribute("target", "_blank");
+            if (link.getAttribute("rel") === null) {
+              link.setAttribute("rel", "noopener");
+            }
+            // default icon
+            link.classList.add("external");
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
         }
       });
     }
-    const isGiscussLoaded = window.document.querySelector('iframe.giscus-frame') !== null;
-    if (isGiscussLoaded) {
-      changeGiscusTheme();
-    }
-  }
-  const toggleColorMode = (alternate) => {
-    // Switch the stylesheets
-    const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
-    manageTransitions('#quarto-margin-sidebar .nav-link', false);
-    if (alternate) {
-      enableStylesheet(alternateStylesheets);
-      for (const sheetNode of alternateStylesheets) {
-        if (sheetNode.id === "quarto-bootstrap") {
-          toggleBodyColorMode(sheetNode);
-        }
-      }
-    } else {
-      disableStylesheet(alternateStylesheets);
-      toggleBodyColorPrimary();
-    }
-    manageTransitions('#quarto-margin-sidebar .nav-link', true);
-    // Switch the toggles
-    const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
-    for (let i=0; i < toggles.length; i++) {
-      const toggle = toggles[i];
-      if (toggle) {
-        if (alternate) {
-          toggle.classList.add("alternate");     
-        } else {
-          toggle.classList.remove("alternate");
-        }
-      }
-    }
-    // Hack to workaround the fact that safari doesn't
-    // properly recolor the scrollbar when toggling (#1455)
-    if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
-      manageTransitions("body", false);
-      window.scrollTo(0, 1);
-      setTimeout(() => {
-        window.scrollTo(0, 0);
-        manageTransitions("body", true);
-      }, 40);  
-    }
-  }
-  const isFileUrl = () => { 
-    return window.location.protocol === 'file:';
-  }
-  const hasAlternateSentinel = () => {  
-    let styleSentinel = getColorSchemeSentinel();
-    if (styleSentinel !== null) {
-      return styleSentinel === "alternate";
-    } else {
-      return false;
-    }
-  }
-  const setStyleSentinel = (alternate) => {
-    const value = alternate ? "alternate" : "default";
-    if (!isFileUrl()) {
-      window.localStorage.setItem("quarto-color-scheme", value);
-    } else {
-      localAlternateSentinel = value;
-    }
-  }
-  const getColorSchemeSentinel = () => {
-    if (!isFileUrl()) {
-      const storageValue = window.localStorage.getItem("quarto-color-scheme");
-      return storageValue != null ? storageValue : localAlternateSentinel;
-    } else {
-      return localAlternateSentinel;
-    }
-  }
-  const darkModeDefault = false;
-  let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
-  // Dark / light mode switch
-  window.quartoToggleColorScheme = () => {
-    // Read the current dark / light value 
-    let toAlternate = !hasAlternateSentinel();
-    toggleColorMode(toAlternate);
-    setStyleSentinel(toAlternate);
-    toggleGiscusIfUsed(toAlternate, darkModeDefault);
-  };
-  // Ensure there is a toggle, if there isn't float one in the top right
-  if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
-    const a = window.document.createElement('a');
-    a.classList.add('top-right');
-    a.classList.add('quarto-color-scheme-toggle');
-    a.href = "";
-    a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
-    const i = window.document.createElement("i");
-    i.classList.add('bi');
-    a.appendChild(i);
-    window.document.body.appendChild(a);
-  }
-  // Switch to dark mode if need be
-  if (hasAlternateSentinel()) {
-    toggleColorMode(true);
-  } else {
-    toggleColorMode(false);
-  }
-  const icon = "";
-  const anchorJS = new window.AnchorJS();
-  anchorJS.options = {
-    placement: 'right',
-    icon: icon
-  };
-  anchorJS.add('.anchored');
-  const isCodeAnnotation = (el) => {
-    for (const clz of el.classList) {
-      if (clz.startsWith('code-annotation-')) {                     
-        return true;
-      }
-    }
-    return false;
-  }
-  const onCopySuccess = function(e) {
-    // button target
-    const button = e.trigger;
-    // don't keep focus
-    button.blur();
-    // flash "checked"
-    button.classList.add('code-copy-button-checked');
-    var currentTitle = button.getAttribute("title");
-    button.setAttribute("title", "Copied!");
-    let tooltip;
-    if (window.bootstrap) {
-      button.setAttribute("data-bs-toggle", "tooltip");
-      button.setAttribute("data-bs-placement", "left");
-      button.setAttribute("data-bs-title", "Copied!");
-      tooltip = new bootstrap.Tooltip(button, 
-        { trigger: "manual", 
-          customClass: "code-copy-button-tooltip",
-          offset: [0, -8]});
-      tooltip.show();    
-    }
-    setTimeout(function() {
-      if (tooltip) {
-        tooltip.hide();
-        button.removeAttribute("data-bs-title");
-        button.removeAttribute("data-bs-toggle");
-        button.removeAttribute("data-bs-placement");
-      }
-      button.setAttribute("title", currentTitle);
-      button.classList.remove('code-copy-button-checked');
-    }, 1000);
-    // clear code selection
-    e.clearSelection();
-  }
-  const getTextToCopy = function(trigger) {
-      const codeEl = trigger.previousElementSibling.cloneNode(true);
-      for (const childEl of codeEl.children) {
-        if (isCodeAnnotation(childEl)) {
-          childEl.remove();
-        }
-      }
-      return codeEl.innerText;
-  }
-  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
-    text: getTextToCopy
-  });
-  clipboard.on('success', onCopySuccess);
-  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
-    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
-      text: getTextToCopy,
-      container: window.document.getElementById('quarto-embedded-source-code-modal')
-    });
-    clipboardModal.on('success', onCopySuccess);
-  }
-  const viewSource = window.document.getElementById('quarto-view-source') ||
-                     window.document.getElementById('quarto-code-tools-source');
-  if (viewSource) {
-    const sourceUrl = viewSource.getAttribute("data-quarto-source-url");
-    viewSource.addEventListener("click", function(e) {
-      if (sourceUrl) {
-        // rstudio viewer pane
-        if (/\bcapabilities=\b/.test(window.location)) {
-          window.open(sourceUrl);
-        } else {
-          window.location.href = sourceUrl;
-        }
-      } else {
-        const modal = new bootstrap.Modal(document.getElementById('quarto-embedded-source-code-modal'));
-        modal.show();
-      }
-      return false;
-    });
-  }
-  function toggleCodeHandler(show) {
-    return function(e) {
-      const detailsSrc = window.document.querySelectorAll(".cell > details > .sourceCode");
-      for (let i=0; i<detailsSrc.length; i++) {
-        const details = detailsSrc[i].parentElement;
-        if (show) {
-          details.open = true;
-        } else {
-          details.removeAttribute("open");
-        }
-      }
-      const cellCodeDivs = window.document.querySelectorAll(".cell > .sourceCode");
-      const fromCls = show ? "hidden" : "unhidden";
-      const toCls = show ? "unhidden" : "hidden";
-      for (let i=0; i<cellCodeDivs.length; i++) {
-        const codeDiv = cellCodeDivs[i];
-        if (codeDiv.classList.contains(fromCls)) {
-          codeDiv.classList.remove(fromCls);
-          codeDiv.classList.add(toCls);
-        } 
-      }
-      return false;
-    }
-  }
-  const hideAllCode = window.document.getElementById("quarto-hide-all-code");
-  if (hideAllCode) {
-    hideAllCode.addEventListener("click", toggleCodeHandler(false));
-  }
-  const showAllCode = window.document.getElementById("quarto-show-all-code");
-  if (showAllCode) {
-    showAllCode.addEventListener("click", toggleCodeHandler(true));
-  }
-    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
-    var mailtoRegex = new RegExp(/^mailto:/);
-      var filterRegex = new RegExp("https:\/\/lusiki\.github\.io\/Javne-politike\/");
-    var isInternal = (href) => {
-        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
-    }
-    // Inspect non-navigation links and adorn them if external
- 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
-    for (var i=0; i<links.length; i++) {
-      const link = links[i];
-      if (!isInternal(link.href)) {
-        // undo the damage that might have been done by quarto-nav.js in the case of
-        // links that we want to consider external
-        if (link.dataset.originalHref !== undefined) {
-          link.href = link.dataset.originalHref;
-        }
-          // target, if specified
-          link.setAttribute("target", "_blank");
-          if (link.getAttribute("rel") === null) {
-            link.setAttribute("rel", "noopener");
-          }
-          // default icon
-          link.classList.add("external");
-      }
-    }
-  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
-    const config = {
-      allowHTML: true,
-      maxWidth: 500,
-      delay: 100,
-      arrow: false,
-      appendTo: function(el) {
-          return el.parentElement;
-      },
-      interactive: true,
-      interactiveBorder: 10,
-      theme: 'quarto',
-      placement: 'bottom-start',
-    };
-    if (contentFn) {
-      config.content = contentFn;
-    }
-    if (onTriggerFn) {
-      config.onTrigger = onTriggerFn;
-    }
-    if (onUntriggerFn) {
-      config.onUntrigger = onUntriggerFn;
-    }
-    window.tippy(el, config); 
-  }
-  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
-  for (var i=0; i<noterefs.length; i++) {
-    const ref = noterefs[i];
-    tippyHover(ref, function() {
-      // use id or data attribute instead here
-      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
-      try { href = new URL(href).hash; } catch {}
-      const id = href.replace(/^#\/?/, "");
-      const note = window.document.getElementById(id);
-      if (note) {
-        return note.innerHTML;
-      } else {
-        return "";
-      }
-    });
-  }
-  const xrefs = window.document.querySelectorAll('a.quarto-xref');
-  const processXRef = (id, note) => {
-    // Strip column container classes
-    const stripColumnClz = (el) => {
-      el.classList.remove("page-full", "page-columns");
-      if (el.children) {
-        for (const child of el.children) {
-          stripColumnClz(child);
-        }
-      }
-    }
-    stripColumnClz(note)
-    if (id === null || id.startsWith('sec-')) {
-      // Special case sections, only their first couple elements
-      const container = document.createElement("div");
-      if (note.children && note.children.length > 2) {
-        container.appendChild(note.children[0].cloneNode(true));
-        for (let i = 1; i < note.children.length; i++) {
-          const child = note.children[i];
-          if (child.tagName === "P" && child.innerText === "") {
-            continue;
-          } else {
-            container.appendChild(child.cloneNode(true));
-            break;
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
           }
         }
-        if (window.Quarto?.typesetMath) {
-          window.Quarto.typesetMath(container);
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
         }
-        return container.innerHTML
       } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
         if (window.Quarto?.typesetMath) {
           window.Quarto.typesetMath(note);
         }
-        return note.innerHTML;
-      }
-    } else {
-      // Remove any anchor links if they are present
-      const anchorLink = note.querySelector('a.anchorjs-link');
-      if (anchorLink) {
-        anchorLink.remove();
-      }
-      if (window.Quarto?.typesetMath) {
-        window.Quarto.typesetMath(note);
-      }
-      if (note.classList.contains("callout")) {
-        return note.outerHTML;
-      } else {
-        return note.innerHTML;
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
       }
     }
-  }
-  for (var i=0; i<xrefs.length; i++) {
-    const xref = xrefs[i];
-    tippyHover(xref, undefined, function(instance) {
-      instance.disable();
-      let url = xref.getAttribute('href');
-      let hash = undefined; 
-      if (url.startsWith('#')) {
-        hash = url;
-      } else {
-        try { hash = new URL(url).hash; } catch {}
-      }
-      if (hash) {
-        const id = hash.replace(/^#\/?/, "");
-        const note = window.document.getElementById(id);
-        if (note !== null) {
-          try {
-            const html = processXRef(id, note.cloneNode(true));
-            instance.setContent(html);
-          } finally {
-            instance.enable();
-            instance.show();
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
           }
         } else {
-          // See if we can fetch this
-          fetch(url.split('#')[0])
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
           .then(res => res.text())
           .then(html => {
             const parser = new DOMParser();
             const htmlDoc = parser.parseFromString(html, "text/html");
-            const note = htmlDoc.getElementById(id);
+            const note = htmlDoc.querySelector('main.content');
             if (note !== null) {
-              const html = processXRef(id, note);
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
               instance.setContent(html);
             } 
           }).finally(() => {
@@ -1754,185 +1816,161 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
             instance.show();
           });
         }
-      } else {
-        // See if we can fetch a full url (with no hash to target)
-        // This is a special case and we should probably do some content thinning / targeting
-        fetch(url)
-        .then(res => res.text())
-        .then(html => {
-          const parser = new DOMParser();
-          const htmlDoc = parser.parseFromString(html, "text/html");
-          const note = htmlDoc.querySelector('main.content');
-          if (note !== null) {
-            // This should only happen for chapter cross references
-            // (since there is no id in the URL)
-            // remove the first header
-            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
-              note.children[0].remove();
-            }
-            const html = processXRef(null, note);
-            instance.setContent(html);
-          } 
-        }).finally(() => {
-          instance.enable();
-          instance.show();
-        });
-      }
-    }, function(instance) {
-    });
-  }
-      let selectedAnnoteEl;
-      const selectorForAnnotation = ( cell, annotation) => {
-        let cellAttr = 'data-code-cell="' + cell + '"';
-        let lineAttr = 'data-code-annotation="' +  annotation + '"';
-        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
-        return selector;
-      }
-      const selectCodeLines = (annoteEl) => {
-        const doc = window.document;
-        const targetCell = annoteEl.getAttribute("data-target-cell");
-        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
-        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
-        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
-        const lineIds = lines.map((line) => {
-          return targetCell + "-" + line;
-        })
-        let top = null;
-        let height = null;
-        let parent = null;
-        if (lineIds.length > 0) {
-            //compute the position of the single el (top and bottom and make a div)
-            const el = window.document.getElementById(lineIds[0]);
-            top = el.offsetTop;
-            height = el.offsetHeight;
-            parent = el.parentElement.parentElement;
-          if (lineIds.length > 1) {
-            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
-            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
-            height = bottom - top;
-          }
-          if (top !== null && height !== null && parent !== null) {
-            // cook up a div (if necessary) and position it 
-            let div = window.document.getElementById("code-annotation-line-highlight");
-            if (div === null) {
-              div = window.document.createElement("div");
-              div.setAttribute("id", "code-annotation-line-highlight");
-              div.style.position = 'absolute';
-              parent.appendChild(div);
-            }
-            div.style.top = top - 2 + "px";
-            div.style.height = height + 4 + "px";
-            div.style.left = 0;
-            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
-            if (gutterDiv === null) {
-              gutterDiv = window.document.createElement("div");
-              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
-              gutterDiv.style.position = 'absolute';
-              const codeCell = window.document.getElementById(targetCell);
-              const gutter = codeCell.querySelector('.code-annotation-gutter');
-              gutter.appendChild(gutterDiv);
-            }
-            gutterDiv.style.top = top - 2 + "px";
-            gutterDiv.style.height = height + 4 + "px";
-          }
-          selectedAnnoteEl = annoteEl;
-        }
-      };
-      const unselectCodeLines = () => {
-        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
-        elementsIds.forEach((elId) => {
-          const div = window.document.getElementById(elId);
-          if (div) {
-            div.remove();
-          }
-        });
-        selectedAnnoteEl = undefined;
-      };
-        // Handle positioning of the toggle
-    window.addEventListener(
-      "resize",
-      throttle(() => {
-        elRect = undefined;
-        if (selectedAnnoteEl) {
-          selectCodeLines(selectedAnnoteEl);
-        }
-      }, 10)
-    );
-    function throttle(fn, ms) {
-    let throttle = false;
-    let timer;
-      return (...args) => {
-        if(!throttle) { // first call gets through
-            fn.apply(this, args);
-            throttle = true;
-        } else { // all the others get throttled
-            if(timer) clearTimeout(timer); // cancel #2
-            timer = setTimeout(() => {
-              fn.apply(this, args);
-              timer = throttle = false;
-            }, ms);
-        }
-      };
-    }
-      // Attach click handler to the DT
-      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
-      for (const annoteDlNode of annoteDls) {
-        annoteDlNode.addEventListener('click', (event) => {
-          const clickedEl = event.target;
-          if (clickedEl !== selectedAnnoteEl) {
-            unselectCodeLines();
-            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
-            if (activeEl) {
-              activeEl.classList.remove('code-annotation-active');
-            }
-            selectCodeLines(clickedEl);
-            clickedEl.classList.add('code-annotation-active');
-          } else {
-            // Unselect the line
-            unselectCodeLines();
-            clickedEl.classList.remove('code-annotation-active');
-          }
-        });
-      }
-  const findCites = (el) => {
-    const parentEl = el.parentElement;
-    if (parentEl) {
-      const cites = parentEl.dataset.cites;
-      if (cites) {
-        return {
-          el,
-          cites: cites.split(' ')
-        };
-      } else {
-        return findCites(el.parentElement)
-      }
-    } else {
-      return undefined;
-    }
-  };
-  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
-  for (var i=0; i<bibliorefs.length; i++) {
-    const ref = bibliorefs[i];
-    const citeInfo = findCites(ref);
-    if (citeInfo) {
-      tippyHover(citeInfo.el, function() {
-        var popup = window.document.createElement('div');
-        citeInfo.cites.forEach(function(cite) {
-          var citeDiv = window.document.createElement('div');
-          citeDiv.classList.add('hanging-indent');
-          citeDiv.classList.add('csl-entry');
-          var biblioDiv = window.document.getElementById('ref-' + cite);
-          if (biblioDiv) {
-            citeDiv.innerHTML = biblioDiv.innerHTML;
-          }
-          popup.appendChild(citeDiv);
-        });
-        return popup.innerHTML;
+      }, function(instance) {
       });
     }
-  }
-});
-</script>
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
       <a href="../chapters/18-cba-evaluacija.html" class="pagination-link" aria-label="Cost-benefit analiza i evaluacija javnih politika">
@@ -1994,103 +2032,120 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 <span id="cb5-47"><a href="#cb5-47" aria-hidden="true" tabindex="-1"></a>Drugo, iznimno je važno pravilno sekvenciranje reformi. Empirijski nalazi pokazuju da je pristup „najprije osnove, zatim kompleksnost" najuspješniji. Potrebno je uspostaviti temeljne funkcije poput pouzdanog izvršenja proračuna i kontrole rashoda prije uvođenja sofisticiranih sustava. Nepravilno sekvenciranje često dovodi do „preuranjene sofisticiranosti", situacije u kojoj se uvode kompleksni sustavi koje administracija nije spremna provoditi.</span>
 <span id="cb5-48"><a href="#cb5-48" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb5-51"><a href="#cb5-51" aria-hidden="true" tabindex="-1"></a><span class="in">```{ojs}</span></span>
-<span id="cb5-52"><a href="#cb5-52" aria-hidden="true" tabindex="-1"></a><span class="in">//| echo: false</span></span>
-<span id="cb5-53"><a href="#cb5-53" aria-hidden="true" tabindex="-1"></a><span class="in">viewof ref_controls = Inputs.form({</span></span>
-<span id="cb5-54"><a href="#cb5-54" aria-hidden="true" tabindex="-1"></a><span class="in">  c: Inputs.range([0, 1], {value: 0.4, step: 0.05, label: "Institucionalni kapacitet:"}),</span></span>
-<span id="cb5-55"><a href="#cb5-55" aria-hidden="true" tabindex="-1"></a><span class="in">  s: Inputs.range([0, 1], {value: 0.7, step: 0.05, label: "Brzina i ambicija reforme:"})</span></span>
-<span id="cb5-56"><a href="#cb5-56" aria-hidden="true" tabindex="-1"></a><span class="in">})</span></span>
+<span id="cb5-52"><a href="#cb5-52" aria-hidden="true" tabindex="-1"></a><span class="co">//| echo: false</span></span>
+<span id="cb5-53"><a href="#cb5-53" aria-hidden="true" tabindex="-1"></a>viewof ref_controls <span class="op">=</span> Inputs<span class="op">.</span><span class="fu">form</span>({</span>
+<span id="cb5-54"><a href="#cb5-54" aria-hidden="true" tabindex="-1"></a>  <span class="dt">c</span><span class="op">:</span> Inputs<span class="op">.</span><span class="fu">range</span>([<span class="dv">0</span><span class="op">,</span> <span class="dv">1</span>]<span class="op">,</span> {<span class="dt">value</span><span class="op">:</span> <span class="fl">0.4</span><span class="op">,</span> <span class="dt">step</span><span class="op">:</span> <span class="fl">0.05</span><span class="op">,</span> <span class="dt">label</span><span class="op">:</span> <span class="st">"Institucionalni kapacitet:"</span>})<span class="op">,</span></span>
+<span id="cb5-55"><a href="#cb5-55" aria-hidden="true" tabindex="-1"></a>  <span class="dt">s</span><span class="op">:</span> Inputs<span class="op">.</span><span class="fu">range</span>([<span class="dv">0</span><span class="op">,</span> <span class="dv">1</span>]<span class="op">,</span> {<span class="dt">value</span><span class="op">:</span> <span class="fl">0.7</span><span class="op">,</span> <span class="dt">step</span><span class="op">:</span> <span class="fl">0.05</span><span class="op">,</span> <span class="dt">label</span><span class="op">:</span> <span class="st">"Brzina i ambicija reforme:"</span>})</span>
+<span id="cb5-56"><a href="#cb5-56" aria-hidden="true" tabindex="-1"></a>})</span>
 <span id="cb5-57"><a href="#cb5-57" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
 <span id="cb5-58"><a href="#cb5-58" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb5-61"><a href="#cb5-61" aria-hidden="true" tabindex="-1"></a><span class="in">```{ojs}</span></span>
-<span id="cb5-62"><a href="#cb5-62" aria-hidden="true" tabindex="-1"></a><span class="in">//| echo: false</span></span>
-<span id="cb5-63"><a href="#cb5-63" aria-hidden="true" tabindex="-1"></a><span class="in">ref_c = ref_controls.c</span></span>
+<span id="cb5-62"><a href="#cb5-62" aria-hidden="true" tabindex="-1"></a><span class="co">//| echo: false</span></span>
+<span id="cb5-63"><a href="#cb5-63" aria-hidden="true" tabindex="-1"></a>ref_c <span class="op">=</span> ref_controls<span class="op">.</span><span class="at">c</span></span>
 <span id="cb5-64"><a href="#cb5-64" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
 <span id="cb5-65"><a href="#cb5-65" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb5-68"><a href="#cb5-68" aria-hidden="true" tabindex="-1"></a><span class="in">```{ojs}</span></span>
-<span id="cb5-69"><a href="#cb5-69" aria-hidden="true" tabindex="-1"></a><span class="in">//| echo: false</span></span>
-<span id="cb5-70"><a href="#cb5-70" aria-hidden="true" tabindex="-1"></a><span class="in">ref_s = ref_controls.s</span></span>
+<span id="cb5-69"><a href="#cb5-69" aria-hidden="true" tabindex="-1"></a><span class="co">//| echo: false</span></span>
+<span id="cb5-70"><a href="#cb5-70" aria-hidden="true" tabindex="-1"></a>ref_s <span class="op">=</span> ref_controls<span class="op">.</span><span class="at">s</span></span>
 <span id="cb5-71"><a href="#cb5-71" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
 <span id="cb5-72"><a href="#cb5-72" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb5-75"><a href="#cb5-75" aria-hidden="true" tabindex="-1"></a><span class="in">```{ojs}</span></span>
-<span id="cb5-76"><a href="#cb5-76" aria-hidden="true" tabindex="-1"></a><span class="in">//| echo: false</span></span>
-<span id="cb5-77"><a href="#cb5-77" aria-hidden="true" tabindex="-1"></a><span class="in">{</span></span>
-<span id="cb5-78"><a href="#cb5-78" aria-hidden="true" tabindex="-1"></a><span class="in">  const c = ref_c;</span></span>
-<span id="cb5-79"><a href="#cb5-79" aria-hidden="true" tabindex="-1"></a><span class="in">  // stilizirano: uspjeh je najveći kada brzina odgovara kapacitetu, a razina raste s kapacitetom</span></span>
-<span id="cb5-80"><a href="#cb5-80" aria-hidden="true" tabindex="-1"></a><span class="in">  const success = (s) =&gt; (0.3 + 0.7 * c) * Math.exp(-((s - c) ** 2) / (2 * 0.08));</span></span>
-<span id="cb5-81"><a href="#cb5-81" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb5-82"><a href="#cb5-82" aria-hidden="true" tabindex="-1"></a><span class="in">  const curve = d3.range(0, 1.001, 0.01).map(s =&gt; ({s, u: success(s)}));</span></span>
-<span id="cb5-83"><a href="#cb5-83" aria-hidden="true" tabindex="-1"></a><span class="in">  const cur = {s: ref_s, u: success(ref_s)};</span></span>
+<span id="cb5-76"><a href="#cb5-76" aria-hidden="true" tabindex="-1"></a><span class="co">//| echo: false</span></span>
+<span id="cb5-77"><a href="#cb5-77" aria-hidden="true" tabindex="-1"></a><span class="co">//| label: fig-reforma-kapacitet</span></span>
+<span id="cb5-78"><a href="#cb5-78" aria-hidden="true" tabindex="-1"></a><span class="co">//| fig-cap: "Stilizirani prikaz pouke o sekvenciranju — vjerojatnost uspjeha najveća je kada brzina reforme odgovara institucionalnom kapacitetu; pri niskom kapacitetu uspijeva postupnost, a prebrza šok-reforma pada, dok visok kapacitet podnosi i brže promjene."</span></span>
+<span id="cb5-79"><a href="#cb5-79" aria-hidden="true" tabindex="-1"></a><span class="co">//| fig-alt: "Linijski grafikon u obliku zvona prikazuje vjerojatnost uspjeha reforme (os y, u postocima) u ovisnosti o brzini i ambiciji reforme (os x, u postocima). Vrh krivulje poklapa se s institucionalnim kapacitetom označenim zelenom isprekidanom linijom. Crna točka s isprekidanim vertikalnim i horizontalnim linijama označava odabranu brzinu reforme i njezinu predviđenu vjerojatnost uspjeha."</span></span>
+<span id="cb5-80"><a href="#cb5-80" aria-hidden="true" tabindex="-1"></a>{</span>
+<span id="cb5-81"><a href="#cb5-81" aria-hidden="true" tabindex="-1"></a>  <span class="kw">const</span> c <span class="op">=</span> ref_c<span class="op">;</span></span>
+<span id="cb5-82"><a href="#cb5-82" aria-hidden="true" tabindex="-1"></a>  <span class="co">// stilizirano: uspjeh je najveći kada brzina odgovara kapacitetu, a razina raste s kapacitetom</span></span>
+<span id="cb5-83"><a href="#cb5-83" aria-hidden="true" tabindex="-1"></a>  <span class="kw">const</span> success <span class="op">=</span> (s) <span class="kw">=&gt;</span> (<span class="fl">0.3</span> <span class="op">+</span> <span class="fl">0.7</span> <span class="op">*</span> c) <span class="op">*</span> <span class="bu">Math</span><span class="op">.</span><span class="fu">exp</span>(<span class="op">-</span>((s <span class="op">-</span> c) <span class="op">**</span> <span class="dv">2</span>) <span class="op">/</span> (<span class="dv">2</span> <span class="op">*</span> <span class="fl">0.08</span>))<span class="op">;</span></span>
 <span id="cb5-84"><a href="#cb5-84" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb5-85"><a href="#cb5-85" aria-hidden="true" tabindex="-1"></a><span class="in">  return Plot.plot({</span></span>
-<span id="cb5-86"><a href="#cb5-86" aria-hidden="true" tabindex="-1"></a><span class="in">    width: 760,</span></span>
-<span id="cb5-87"><a href="#cb5-87" aria-hidden="true" tabindex="-1"></a><span class="in">    height: 430,</span></span>
-<span id="cb5-88"><a href="#cb5-88" aria-hidden="true" tabindex="-1"></a><span class="in">    marginLeft: 64,</span></span>
-<span id="cb5-89"><a href="#cb5-89" aria-hidden="true" tabindex="-1"></a><span class="in">    marginRight: 30,</span></span>
-<span id="cb5-90"><a href="#cb5-90" aria-hidden="true" tabindex="-1"></a><span class="in">    marginTop: 50,</span></span>
-<span id="cb5-91"><a href="#cb5-91" aria-hidden="true" tabindex="-1"></a><span class="in">    marginBottom: 52,</span></span>
-<span id="cb5-92"><a href="#cb5-92" aria-hidden="true" tabindex="-1"></a><span class="in">    style: {fontSize: "12px", fontFamily: "Public Sans, system-ui, sans-serif", color: "#3A332D"},</span></span>
-<span id="cb5-93"><a href="#cb5-93" aria-hidden="true" tabindex="-1"></a><span class="in">    x: {label: "Brzina i ambicija reforme →", domain: [0, 1], tickFormat: "%"},</span></span>
-<span id="cb5-94"><a href="#cb5-94" aria-hidden="true" tabindex="-1"></a><span class="in">    y: {label: "↑ Vjerojatnost uspjeha reforme", domain: [0, 1], tickFormat: "%", grid: true},</span></span>
-<span id="cb5-95"><a href="#cb5-95" aria-hidden="true" tabindex="-1"></a><span class="in">    marks: [</span></span>
-<span id="cb5-96"><a href="#cb5-96" aria-hidden="true" tabindex="-1"></a><span class="in">      Plot.ruleX([c], {stroke: "#1C7C54", strokeDasharray: "4,3"}),</span></span>
-<span id="cb5-97"><a href="#cb5-97" aria-hidden="true" tabindex="-1"></a><span class="in">      Plot.text([{s: c, u: 0.97}], {x: "s", y: "u", text: ["brzina = kapacitet"],</span></span>
-<span id="cb5-98"><a href="#cb5-98" aria-hidden="true" tabindex="-1"></a><span class="in">        fill: "#1C7C54", fontSize: 11, dx: 5, textAnchor: "start"}),</span></span>
-<span id="cb5-99"><a href="#cb5-99" aria-hidden="true" tabindex="-1"></a><span class="in">      Plot.line(curve, {x: "s", y: "u", stroke: "#2D5A8E", strokeWidth: 2.5}),</span></span>
-<span id="cb5-100"><a href="#cb5-100" aria-hidden="true" tabindex="-1"></a><span class="in">      Plot.dot([cur], {x: "s", y: "u", r: 6, fill: "#1C1916", stroke: "white", strokeWidth: 2}),</span></span>
-<span id="cb5-101"><a href="#cb5-101" aria-hidden="true" tabindex="-1"></a><span class="in">      Plot.text([cur], {x: "s", y: "u", text: [`uspjeh ≈ ${(cur.u * 100).toFixed(0)} %`],</span></span>
-<span id="cb5-102"><a href="#cb5-102" aria-hidden="true" tabindex="-1"></a><span class="in">        fill: "#1C1916", fontSize: 13, fontWeight: 700, dy: -14, textAnchor: "middle"})</span></span>
-<span id="cb5-103"><a href="#cb5-103" aria-hidden="true" tabindex="-1"></a><span class="in">    ]</span></span>
-<span id="cb5-104"><a href="#cb5-104" aria-hidden="true" tabindex="-1"></a><span class="in">  });</span></span>
-<span id="cb5-105"><a href="#cb5-105" aria-hidden="true" tabindex="-1"></a><span class="in">}</span></span>
-<span id="cb5-106"><a href="#cb5-106" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb5-107"><a href="#cb5-107" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb5-108"><a href="#cb5-108" aria-hidden="true" tabindex="-1"></a>*Stilizirani prikaz pouke o sekvenciranju — vjerojatnost uspjeha najveća je kada brzina reforme odgovara institucionalnom kapacitetu; pri niskom kapacitetu uspijeva postupnost, a prebrza „šok" reforma pada, dok visok kapacitet podnosi i brže promjene.*</span>
-<span id="cb5-109"><a href="#cb5-109" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb5-110"><a href="#cb5-110" aria-hidden="true" tabindex="-1"></a>Rodrikov pregled tri desetljeća međunarodnih reformskih iskustava sažima isti obrazac iz drugog kuta <span class="co">[</span><span class="ot">@rodrik2011</span><span class="co">]</span>. Zemlje koje su brzo i istodobno provodile cijelu listu „najbolje prakse" (liberalizacija trgovine, deregulacija tržišta rada, privatizacija velikih razmjera, otvaranje kapitalnog računa) sustavno su pokazivale slabije rezultate od zemalja koje su isti skup reformi provodile selektivno i postupno, prilagođavajući redoslijed lokalnim ograničenjima. Ključ nije bio u sadržaju pojedine mjere, nego u tome je li lokalna institucionalna i regulatorna infrastruktura mogla apsorbirati promjenu u tom trenutku.</span>
-<span id="cb5-111"><a href="#cb5-111" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb5-112"><a href="#cb5-112" aria-hidden="true" tabindex="-1"></a>Iskustvo s liberalizacijom kapitalnog računa pokazuje to najjasnije. U zemljama s razvijenom bankarskom regulacijom otvaranje kapitalnog računa donijelo je dugoročne koristi. U zemljama gdje je liberalizacija prethodila uspostavi nadzora nad bankama, isti je potez ubrzao pojavu financijskih kriza. Pouka nije da je liberalizacija loša politika, nego da je redoslijed dio sadržaja reforme, a ne tehnički detalj koji dolazi poslije.</span>
-<span id="cb5-113"><a href="#cb5-113" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb5-114"><a href="#cb5-114" aria-hidden="true" tabindex="-1"></a>::: {.callout-praksa}</span>
-<span id="cb5-115"><a href="#cb5-115" aria-hidden="true" tabindex="-1"></a>Redoslijed reformi najjasnije se vidi na liberalizaciji kapitalnog računa. U zemljama koje su prvo izgradile snažnu bankarsku regulaciju i nadzor, otvaranje prema slobodnom kretanju kapitala donijelo je dugoročne koristi kroz pristup financiranju i ulaganjima. U zemljama koje su kapitalni račun otvorile prije nego što su uspostavile nadzor nad bankama, isti je potez često ubrzao kreditne procvate i financijske krize. Sadržaj mjere bio je isti, ali je ishod ovisio o tome je li institucionalna podloga postojala u trenutku provedbe. Primjer potvrđuje da redoslijed nije tehnički detalj koji dolazi nakon „prave" reforme, nego sastavni dio njezina sadržaja.</span>
-<span id="cb5-116"><a href="#cb5-116" aria-hidden="true" tabindex="-1"></a>:::</span>
-<span id="cb5-117"><a href="#cb5-117" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb5-118"><a href="#cb5-118" aria-hidden="true" tabindex="-1"></a>Treće, tehnologija nije zamjena za institucije. Iako su digitalizacija i e-uprava često u središtu suvremenih reformi, sama tehnologija ne može riješiti temeljne probleme javnog sektora ako nisu promijenjeni poticaji, organizacijska struktura i način donošenja odluka. Postoji rizik da tehnologija samo „digitalizira postojeće probleme" bez stvarnog poboljšanja ishoda.</span>
-<span id="cb5-119"><a href="#cb5-119" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb5-120"><a href="#cb5-120" aria-hidden="true" tabindex="-1"></a>Četvrto, važna je uloga „ulaznih točaka" reformi. Često je učinkovitije započeti reforme u sektorima gdje postoji veća politička podrška ili bolji kapaciteti, nego pokušati istovremeno reformirati cijeli javni sektor. Ministarstva financija često su bila prirodna početna točka. Ovaj inkrementalni pristup pokazao se uspješnijim od pokušaja sveobuhvatnih reformi odjednom, jer omogućuje učenje kroz praksu i izgradnju povjerenja.</span>
+<span id="cb5-85"><a href="#cb5-85" aria-hidden="true" tabindex="-1"></a>  <span class="kw">const</span> curve <span class="op">=</span> d3<span class="op">.</span><span class="fu">range</span>(<span class="dv">0</span><span class="op">,</span> <span class="fl">1.001</span><span class="op">,</span> <span class="fl">0.01</span>)<span class="op">.</span><span class="fu">map</span>(s <span class="kw">=&gt;</span> ({s<span class="op">,</span> <span class="dt">u</span><span class="op">:</span> <span class="fu">success</span>(s)}))<span class="op">;</span></span>
+<span id="cb5-86"><a href="#cb5-86" aria-hidden="true" tabindex="-1"></a>  <span class="kw">const</span> cur <span class="op">=</span> {<span class="dt">s</span><span class="op">:</span> ref_s<span class="op">,</span> <span class="dt">u</span><span class="op">:</span> <span class="fu">success</span>(ref_s)}<span class="op">;</span></span>
+<span id="cb5-87"><a href="#cb5-87" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-88"><a href="#cb5-88" aria-hidden="true" tabindex="-1"></a>  <span class="cf">return</span> Plot<span class="op">.</span><span class="fu">plot</span>({</span>
+<span id="cb5-89"><a href="#cb5-89" aria-hidden="true" tabindex="-1"></a>    <span class="dt">width</span><span class="op">:</span> <span class="dv">760</span><span class="op">,</span></span>
+<span id="cb5-90"><a href="#cb5-90" aria-hidden="true" tabindex="-1"></a>    <span class="dt">height</span><span class="op">:</span> <span class="dv">430</span><span class="op">,</span></span>
+<span id="cb5-91"><a href="#cb5-91" aria-hidden="true" tabindex="-1"></a>    <span class="dt">marginLeft</span><span class="op">:</span> <span class="dv">64</span><span class="op">,</span></span>
+<span id="cb5-92"><a href="#cb5-92" aria-hidden="true" tabindex="-1"></a>    <span class="dt">marginRight</span><span class="op">:</span> <span class="dv">30</span><span class="op">,</span></span>
+<span id="cb5-93"><a href="#cb5-93" aria-hidden="true" tabindex="-1"></a>    <span class="dt">marginTop</span><span class="op">:</span> <span class="dv">50</span><span class="op">,</span></span>
+<span id="cb5-94"><a href="#cb5-94" aria-hidden="true" tabindex="-1"></a>    <span class="dt">marginBottom</span><span class="op">:</span> <span class="dv">52</span><span class="op">,</span></span>
+<span id="cb5-95"><a href="#cb5-95" aria-hidden="true" tabindex="-1"></a>    <span class="dt">style</span><span class="op">:</span> {<span class="dt">fontSize</span><span class="op">:</span> <span class="st">"12px"</span><span class="op">,</span> <span class="dt">fontFamily</span><span class="op">:</span> <span class="st">"Public Sans, system-ui, sans-serif"</span><span class="op">,</span> <span class="dt">color</span><span class="op">:</span> <span class="st">"#3A332D"</span>}<span class="op">,</span></span>
+<span id="cb5-96"><a href="#cb5-96" aria-hidden="true" tabindex="-1"></a>    <span class="dt">x</span><span class="op">:</span> {<span class="dt">label</span><span class="op">:</span> <span class="st">"Brzina i ambicija reforme →"</span><span class="op">,</span> <span class="dt">domain</span><span class="op">:</span> [<span class="dv">0</span><span class="op">,</span> <span class="dv">1</span>]<span class="op">,</span> <span class="dt">tickFormat</span><span class="op">:</span> <span class="st">"%"</span>}<span class="op">,</span></span>
+<span id="cb5-97"><a href="#cb5-97" aria-hidden="true" tabindex="-1"></a>    <span class="dt">y</span><span class="op">:</span> {<span class="dt">label</span><span class="op">:</span> <span class="st">"↑ Vjerojatnost uspjeha reforme"</span><span class="op">,</span> <span class="dt">domain</span><span class="op">:</span> [<span class="dv">0</span><span class="op">,</span> <span class="dv">1</span>]<span class="op">,</span> <span class="dt">tickFormat</span><span class="op">:</span> <span class="st">"%"</span><span class="op">,</span> <span class="dt">grid</span><span class="op">:</span> <span class="kw">true</span>}<span class="op">,</span></span>
+<span id="cb5-98"><a href="#cb5-98" aria-hidden="true" tabindex="-1"></a>    <span class="dt">marks</span><span class="op">:</span> [</span>
+<span id="cb5-99"><a href="#cb5-99" aria-hidden="true" tabindex="-1"></a>      Plot<span class="op">.</span><span class="fu">ruleX</span>([c]<span class="op">,</span> {<span class="dt">stroke</span><span class="op">:</span> <span class="st">"#1C7C54"</span><span class="op">,</span> <span class="dt">strokeDasharray</span><span class="op">:</span> <span class="st">"4,3"</span>})<span class="op">,</span></span>
+<span id="cb5-100"><a href="#cb5-100" aria-hidden="true" tabindex="-1"></a>      Plot<span class="op">.</span><span class="fu">text</span>([{<span class="dt">s</span><span class="op">:</span> c<span class="op">,</span> <span class="dt">u</span><span class="op">:</span> <span class="fl">0.97</span>}]<span class="op">,</span> {<span class="dt">x</span><span class="op">:</span> <span class="st">"s"</span><span class="op">,</span> <span class="dt">y</span><span class="op">:</span> <span class="st">"u"</span><span class="op">,</span> <span class="dt">text</span><span class="op">:</span> [<span class="st">"kapacitet"</span>]<span class="op">,</span></span>
+<span id="cb5-101"><a href="#cb5-101" aria-hidden="true" tabindex="-1"></a>        <span class="dt">fill</span><span class="op">:</span> <span class="st">"#1C7C54"</span><span class="op">,</span> <span class="dt">fontSize</span><span class="op">:</span> <span class="dv">11</span><span class="op">,</span> <span class="dt">dx</span><span class="op">:</span> <span class="dv">5</span><span class="op">,</span> <span class="dt">textAnchor</span><span class="op">:</span> <span class="st">"start"</span>})<span class="op">,</span></span>
+<span id="cb5-102"><a href="#cb5-102" aria-hidden="true" tabindex="-1"></a>      Plot<span class="op">.</span><span class="fu">line</span>(curve<span class="op">,</span> {<span class="dt">x</span><span class="op">:</span> <span class="st">"s"</span><span class="op">,</span> <span class="dt">y</span><span class="op">:</span> <span class="st">"u"</span><span class="op">,</span> <span class="dt">stroke</span><span class="op">:</span> <span class="st">"#2D5A8E"</span><span class="op">,</span> <span class="dt">strokeWidth</span><span class="op">:</span> <span class="fl">2.5</span>})<span class="op">,</span></span>
+<span id="cb5-103"><a href="#cb5-103" aria-hidden="true" tabindex="-1"></a>      <span class="co">// droplines tie the chosen speed (ref_s) to its success level on the curve,</span></span>
+<span id="cb5-104"><a href="#cb5-104" aria-hidden="true" tabindex="-1"></a>      <span class="co">// so moving the speed slider visibly traces the marker along the curve</span></span>
+<span id="cb5-105"><a href="#cb5-105" aria-hidden="true" tabindex="-1"></a>      Plot<span class="op">.</span><span class="fu">ruleX</span>([cur]<span class="op">,</span> {<span class="dt">x</span><span class="op">:</span> <span class="st">"s"</span><span class="op">,</span> <span class="dt">y1</span><span class="op">:</span> <span class="dv">0</span><span class="op">,</span> <span class="dt">y2</span><span class="op">:</span> <span class="st">"u"</span><span class="op">,</span> <span class="dt">stroke</span><span class="op">:</span> <span class="st">"#1C1916"</span><span class="op">,</span> <span class="dt">strokeDasharray</span><span class="op">:</span> <span class="st">"3,3"</span>})<span class="op">,</span></span>
+<span id="cb5-106"><a href="#cb5-106" aria-hidden="true" tabindex="-1"></a>      Plot<span class="op">.</span><span class="fu">ruleY</span>([cur]<span class="op">,</span> {<span class="dt">y</span><span class="op">:</span> <span class="st">"u"</span><span class="op">,</span> <span class="dt">x1</span><span class="op">:</span> <span class="dv">0</span><span class="op">,</span> <span class="dt">x2</span><span class="op">:</span> <span class="st">"s"</span><span class="op">,</span> <span class="dt">stroke</span><span class="op">:</span> <span class="st">"#1C1916"</span><span class="op">,</span> <span class="dt">strokeDasharray</span><span class="op">:</span> <span class="st">"3,3"</span>})<span class="op">,</span></span>
+<span id="cb5-107"><a href="#cb5-107" aria-hidden="true" tabindex="-1"></a>      Plot<span class="op">.</span><span class="fu">text</span>([{<span class="dt">s</span><span class="op">:</span> cur<span class="op">.</span><span class="at">s</span><span class="op">,</span> <span class="dt">u</span><span class="op">:</span> <span class="dv">0</span>}]<span class="op">,</span> {<span class="dt">x</span><span class="op">:</span> <span class="st">"s"</span><span class="op">,</span> <span class="dt">y</span><span class="op">:</span> <span class="st">"u"</span><span class="op">,</span> <span class="dt">text</span><span class="op">:</span> [<span class="vs">`brzina = </span><span class="sc">${</span>(cur<span class="op">.</span><span class="at">s</span> <span class="op">*</span> <span class="dv">100</span>)<span class="op">.</span><span class="fu">toFixed</span>(<span class="dv">0</span>)<span class="sc">}</span><span class="vs"> %`</span>]<span class="op">,</span></span>
+<span id="cb5-108"><a href="#cb5-108" aria-hidden="true" tabindex="-1"></a>        <span class="dt">fill</span><span class="op">:</span> <span class="st">"#1C1916"</span><span class="op">,</span> <span class="dt">fontSize</span><span class="op">:</span> <span class="dv">11</span><span class="op">,</span> <span class="dt">dy</span><span class="op">:</span> <span class="dv">16</span><span class="op">,</span> <span class="dt">textAnchor</span><span class="op">:</span> <span class="st">"middle"</span>})<span class="op">,</span></span>
+<span id="cb5-109"><a href="#cb5-109" aria-hidden="true" tabindex="-1"></a>      Plot<span class="op">.</span><span class="fu">dot</span>([cur]<span class="op">,</span> {<span class="dt">x</span><span class="op">:</span> <span class="st">"s"</span><span class="op">,</span> <span class="dt">y</span><span class="op">:</span> <span class="st">"u"</span><span class="op">,</span> <span class="dt">r</span><span class="op">:</span> <span class="dv">6</span><span class="op">,</span> <span class="dt">fill</span><span class="op">:</span> <span class="st">"#1C1916"</span><span class="op">,</span> <span class="dt">stroke</span><span class="op">:</span> <span class="st">"white"</span><span class="op">,</span> <span class="dt">strokeWidth</span><span class="op">:</span> <span class="dv">2</span>})<span class="op">,</span></span>
+<span id="cb5-110"><a href="#cb5-110" aria-hidden="true" tabindex="-1"></a>      Plot<span class="op">.</span><span class="fu">text</span>([cur]<span class="op">,</span> {<span class="dt">x</span><span class="op">:</span> <span class="st">"s"</span><span class="op">,</span> <span class="dt">y</span><span class="op">:</span> <span class="st">"u"</span><span class="op">,</span> <span class="dt">text</span><span class="op">:</span> [<span class="vs">`uspjeh ≈ </span><span class="sc">${</span>(cur<span class="op">.</span><span class="at">u</span> <span class="op">*</span> <span class="dv">100</span>)<span class="op">.</span><span class="fu">toFixed</span>(<span class="dv">0</span>)<span class="sc">}</span><span class="vs"> %`</span>]<span class="op">,</span></span>
+<span id="cb5-111"><a href="#cb5-111" aria-hidden="true" tabindex="-1"></a>        <span class="dt">fill</span><span class="op">:</span> <span class="st">"#1C1916"</span><span class="op">,</span> <span class="dt">fontSize</span><span class="op">:</span> <span class="dv">13</span><span class="op">,</span> <span class="dt">fontWeight</span><span class="op">:</span> <span class="dv">700</span><span class="op">,</span> <span class="dt">dy</span><span class="op">:</span> <span class="op">-</span><span class="dv">14</span><span class="op">,</span> <span class="dt">textAnchor</span><span class="op">:</span> <span class="st">"middle"</span>})</span>
+<span id="cb5-112"><a href="#cb5-112" aria-hidden="true" tabindex="-1"></a>    ]</span>
+<span id="cb5-113"><a href="#cb5-113" aria-hidden="true" tabindex="-1"></a>  })<span class="op">;</span></span>
+<span id="cb5-114"><a href="#cb5-114" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb5-115"><a href="#cb5-115" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb5-116"><a href="#cb5-116" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-117"><a href="#cb5-117" aria-hidden="true" tabindex="-1"></a>*Stilizirani prikaz pouke o sekvenciranju — vjerojatnost uspjeha najveća je kada brzina reforme odgovara institucionalnom kapacitetu; pri niskom kapacitetu uspijeva postupnost, a prebrza „šok" reforma pada, dok visok kapacitet podnosi i brže promjene.*</span>
+<span id="cb5-118"><a href="#cb5-118" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-119"><a href="#cb5-119" aria-hidden="true" tabindex="-1"></a>::: {.callout-vjezba}</span>
+<span id="cb5-120"><a href="#cb5-120" aria-hidden="true" tabindex="-1"></a>Pretpostavite gospodarstvo sa sto identičnih birača koji glasaju o reformi prostom većinom. Reforma će nakon provedbe stvoriti 60 dobitnika, od kojih svaki dobiva +40, i 40 gubitnika, od kojih svaki gubi −30. Ex ante nijedan birač ne zna kojoj će skupini pripasti, pa svatko procjenjuje da će biti dobitnik s vjerojatnošću 0,6, a gubitnik s vjerojatnošću 0,4. Tko ostaje pri statusu quo ima siguran ishod 0.</span>
 <span id="cb5-121"><a href="#cb5-121" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb5-122"><a href="#cb5-122" aria-hidden="true" tabindex="-1"></a><span class="fu">## Iskustvo srednje i istočne Europe</span></span>
+<span id="cb5-122"><a href="#cb5-122" aria-hidden="true" tabindex="-1"></a>(a) Izračunajte agregatni neto učinak reforme i potvrdite da je ona za društvo u cjelini korisna. (b) Izračunajte očekivani ishod jednog birača pod individualno specifičnom neizvjesnošću i objasnite zašto bi racionalan birač u toj situaciji glasao protiv reforme, iako bi je ex post većina podržala. (c) Reformator sada nudi kompenzacijsku shemu kojom se svakom budućem gubitniku iz reformskog viška isplaćuje naknada od 20. Izračunajte novi očekivani ishod birača i pokažite da reforma sada dobiva većinu.</span>
 <span id="cb5-123"><a href="#cb5-123" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb5-124"><a href="#cb5-124" aria-hidden="true" tabindex="-1"></a>Iskustvo zemalja srednje i istočne Europe pruža jedan od najvažnijih empirijskih „laboratorija" za razumijevanje reformi. Tijekom posljednjih 35 godina te su zemlje prošle kroz duboku transformaciju, pri čemu se velik dio reformi odvijao pod snažnim utjecajem procesa pristupanja Europskoj uniji. EU je djelovala kao vanjsko sidro (*anchor*) koje je postavljalo standarde, nudilo resurse i stvaralo vjerodostojan okvir za provedbu reformi.</span>
-<span id="cb5-125"><a href="#cb5-125" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb5-126"><a href="#cb5-126" aria-hidden="true" tabindex="-1"></a>Taj „sidreni efekt" bio je posebno važan jer je smanjivao neizvjesnost i povećavao vjerodostojnost reformi. U uvjetima gdje su domaće institucije bile slabe, vanjski pritisak i jasno definirani kriteriji omogućili su ubrzanje institucionalnih promjena. U tom smislu EU integracija nije bila samo politički projekt, nego i mehanizam institucionalne modernizacije.</span>
-<span id="cb5-127"><a href="#cb5-127" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb5-128"><a href="#cb5-128" aria-hidden="true" tabindex="-1"></a>Međutim, unatoč zajedničkom okviru i sličnim početnim uvjetima, rezultati reformi pokazali su se izrazito heterogenima. Neke zemlje, poput Estonije, razvile su visoko učinkovite, digitalizirane i transparentne javne sustave. Druge, poput Slovenije, razvile su stabilne institucionalne okvire uz postupniji tempo. Dio zemalja zadržao je značajne elemente slabih institucija, političke kontrole nad administracijom i slabije provedbe politika. Ova divergencija pokazuje da formalno usklađivanje s pravilima nije dovoljno za stvarnu institucionalnu transformaciju jer postoji razlika između „institucija na papiru" i „institucija u praksi" <span class="co">[</span><span class="ot">@north1990; @acemoglu2012</span><span class="co">]</span>.</span>
-<span id="cb5-129"><a href="#cb5-129" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb5-130"><a href="#cb5-130" aria-hidden="true" tabindex="-1"></a>Razlike u uspjehu otvaraju i šire pitanje brzine reformi, odnosno koliko brzo treba ići. Šok-terapijski pristup, koji se zalagao za istodobnu provedbu većine reformi u najkraćem mogućem roku, opravdavao se argumentom da fragmentirana, nedovršena tranzicija ostavlja dovoljno prostora za blokadu i preokret. Gradualistički pristup naglašavao je rizik prebrzog napuštanja postojećih koordinacijskih mehanizama prije nego što su novi tržišni mehanizmi stigli funkcionirati.</span>
-<span id="cb5-131"><a href="#cb5-131" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb5-132"><a href="#cb5-132" aria-hidden="true" tabindex="-1"></a>Trideset godina kasnije empirijska usporedba ne daje jednoznačan odgovor <span class="co">[</span><span class="ot">@rodrik2011</span><span class="co">]</span>. Šok-terapija u dijelu Srednje Europe (Poljska, baltičke države) dala je brže rezultate od gradualističkog pristupa drugdje, ali se to objašnjava jednako institucionalnom predtransformacijskom snagom tih zemalja koliko i samom brzinom. Gradualistička putanja Slovenije i Češke proizvela je usporediv ishod uz manje socijalnih troškova, dok je gradualizam bez vjerodostojnog sidra drugdje često završio u zaglavljenoj polureformi. Brzina sama po sebi nije ni vrlina ni mana. Ono što razlikuje uspjeh od neuspjeha jest spremnost institucija da apsorbiraju promjenu i postojanje vanjskog ili unutarnjeg sidra koje održava reformski smjer između izborima izazvanih oscilacija.</span>
-<span id="cb5-133"><a href="#cb5-133" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb5-134"><a href="#cb5-134" aria-hidden="true" tabindex="-1"></a>Estonija se često ističe kao jedan od najuspješnijih primjera, jer je već od 1990-ih sustavno ulagala u digitalizaciju javne uprave, uz paralelno jačanje administrativnih kapaciteta. Ključ uspjeha nije bio samo u tehnologiji, nego u dosljednoj institucionalizaciji reformi i dugoročnoj strategiji. Zajednički obrazac koji se pojavljuje jest da su najuspješnije bile zemlje koje su uspjele institucionalizirati reforme, odnosno pretvoriti ih iz jednokratnih projekata u trajne mehanizme upravljanja. Ključna razlika između uspješnih i manje uspješnih reformi često leži u kapacitetu države za provedbu (*state capacity*) <span class="co">[</span><span class="ot">@fukuyama2013</span><span class="co">]</span>.</span>
-<span id="cb5-135"><a href="#cb5-135" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb5-136"><a href="#cb5-136" aria-hidden="true" tabindex="-1"></a>Važan dodatni uvid odnosi se na fenomen „reformskog zamora" nakon ulaska u Europsku uniju. Nakon što nestane vanjski pritisak i neposredna nagrada članstva, poticaji za daljnje reforme slabe, što može dovesti do stagnacije ili nazadovanja. Upravo zato suvremene analize naglašavaju važnost domaćeg vlasništva nad reformama (*ownership*) kao ključnog preduvjeta njihove dugoročne održivosti.</span>
-<span id="cb5-137"><a href="#cb5-137" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb5-138"><a href="#cb5-138" aria-hidden="true" tabindex="-1"></a>Poseban i ilustrativan slučaj predstavlja Hrvatska, čije reforme jasno pokazuju kako različite faze europske integracije djeluju kao uzastopni valovi reformskih poticaja. Tijekom pristupnih pregovora Hrvatska je provela opsežne reforme zakonodavstva i institucija, osobito u području pravosuđa, tržišnog natjecanja i javne uprave. Nakon ulaska u EU dolazi do djelomičnog usporavanja reformskog zamaha, no novi reformski ciklus pokrenut je u kontekstu pristupanja europodručju. Ulazak u ERM II 2020. godine bio je uvjetovan nizom reformi, uključujući jačanje fiskalnog okvira i upravljanja javnim poduzećima, a uvođenje eura 2023. dodatno je učvrstilo makroekonomsku stabilnost. Dodatni poticaj dolazi kroz Nacionalni plan oporavka i otpornosti (NPOO), koji ponovno uvodi mehanizam uvjetovanosti povezujući financijska sredstva s provedbom reformi. Unatoč tim pomacima, hrvatsko iskustvo potvrđuje širi regionalni obrazac. Formalni napredak ne mora nužno značiti i potpunu funkcionalnu transformaciju, a ključni izazov ostaje institucionalizacija reformi u svakodnevnoj praksi.</span>
-<span id="cb5-139"><a href="#cb5-139" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb5-140"><a href="#cb5-140" aria-hidden="true" tabindex="-1"></a><span class="fu">## Ključevi uspješnih reformi</span></span>
-<span id="cb5-141"><a href="#cb5-141" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb5-142"><a href="#cb5-142" aria-hidden="true" tabindex="-1"></a>Ako se iskustva reformi promatraju kroz duže razdoblje i u različitim kontekstima, postaje jasno da ne postoji jednostavan, univerzalan recept za uspjeh. Ipak, literatura pokazuje iznenađujuće konzistentan skup zajedničkih obilježja uspješnih reformi.</span>
-<span id="cb5-143"><a href="#cb5-143" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb5-144"><a href="#cb5-144" aria-hidden="true" tabindex="-1"></a>Prije svega, reforme javnog sektora nisu prvenstveno tehnički, nego duboko politički procesi. Njihova provedba ovisi o političkoj volji, raspodjeli moći i interesima ključnih aktera, zbog čega mnoge tehnički dobro osmišljene reforme ne uspijevaju u praksi. Drugi ključan element jest važnost sekvenciranja i postupnosti, pri čemu je potrebno najprije „postaviti temelje" prije uvođenja naprednih modela upravljanja. Treće, institucije ne funkcioniraju same po sebi, a ključna je promjena ponašanja i organizacijske kulture, a ne samo tehnička rješenja. Četvrto, kapacitet države za provedbu presudan je faktor, jer razlika između uspješnih i neuspješnih reformi rijetko leži u njihovu dizajnu, a mnogo češće u sposobnosti države da ih dosljedno provodi.</span>
-<span id="cb5-145"><a href="#cb5-145" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb5-146"><a href="#cb5-146" aria-hidden="true" tabindex="-1"></a>Peti element odnosi se na ulogu vanjskih sidara i poticaja (pristupanje EU, ERM II, NPOO), koji povećavaju vjerodostojnost reformi, ali su najdjelotvorniji kada su dopunjeni domaćim vlasništvom nad reformama. Šesto, reforme su dugotrajan i kumulativan proces, a ne jednokratni događaj, pri čemu je kontinuitet kroz različite političke cikluse jednako važan kao i početni dizajn.</span>
-<span id="cb5-147"><a href="#cb5-147" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb5-148"><a href="#cb5-148" aria-hidden="true" tabindex="-1"></a>Konačno, možda i najvažniji zaključak jest da se uspjeh reformi ne može mjeriti brojem donesenih zakona ili strategija, nego njihovim stvarnim učinkom na funkcioniranje države. Prava mjera uspjeha nije formalna usklađenost, nego sposobnost države da učinkovito pruža javne usluge, upravlja resursima i odgovara na potrebe građana i gospodarstva. „Ključevi" uspješnih reformi mogu se zato sažeti ne kao skup tehničkih rješenja, nego kao kombinacija nekoliko međusobno povezanih elemenata, koji uključuju političku volju, realističan dizajn, snažne institucionalne kapacitete, postupnost, kontinuitet i stvarnu implementaciju. Upravo u toj kombinaciji leži razlika između reformi koje ostaju na papiru i onih koje trajno mijenjaju način funkcioniranja države.</span>
-<span id="cb5-149"><a href="#cb5-149" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb5-150"><a href="#cb5-150" aria-hidden="true" tabindex="-1"></a>::: {.sazetak-panel}</span>
-<span id="cb5-151"><a href="#cb5-151" aria-hidden="true" tabindex="-1"></a><span class="fu">## Sažetak</span></span>
+<span id="cb5-124"><a href="#cb5-124" aria-hidden="true" tabindex="-1"></a>Otvorite interaktivni graf iznad i razmislite o vezi između ova dva uvida. Naknada u zadatku ne mijenja ukupan reformski višak, nego raspodjelu rizika među biračima, dok klizač na grafu mijenja brzinu reforme pri zadanom kapacitetu. Objasnite zašto i kompenzacija i ispravno sekvenciranje djeluju kroz isti kanal, to jest kroz smanjenje neizvjesnosti i otpora bez promjene ekonomske supstance mjere, i što to otkriva o tome zašto agregatno korisne reforme tako često ostaju blokirane.</span>
+<span id="cb5-125"><a href="#cb5-125" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb5-126"><a href="#cb5-126" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-127"><a href="#cb5-127" aria-hidden="true" tabindex="-1"></a>Rodrikov pregled tri desetljeća međunarodnih reformskih iskustava sažima isti obrazac iz drugog kuta <span class="co">[</span><span class="ot">@rodrik2011</span><span class="co">]</span>. Zemlje koje su brzo i istodobno provodile cijelu listu „najbolje prakse" (liberalizacija trgovine, deregulacija tržišta rada, privatizacija velikih razmjera, otvaranje kapitalnog računa) sustavno su pokazivale slabije rezultate od zemalja koje su isti skup reformi provodile selektivno i postupno, prilagođavajući redoslijed lokalnim ograničenjima. Ključ nije bio u sadržaju pojedine mjere, nego u tome je li lokalna institucionalna i regulatorna infrastruktura mogla apsorbirati promjenu u tom trenutku.</span>
+<span id="cb5-128"><a href="#cb5-128" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-129"><a href="#cb5-129" aria-hidden="true" tabindex="-1"></a>Iskustvo s liberalizacijom kapitalnog računa pokazuje to najjasnije. U zemljama s razvijenom bankarskom regulacijom otvaranje kapitalnog računa donijelo je dugoročne koristi. U zemljama gdje je liberalizacija prethodila uspostavi nadzora nad bankama, isti je potez ubrzao pojavu financijskih kriza. Pouka nije da je liberalizacija loša politika, nego da je redoslijed dio sadržaja reforme, a ne tehnički detalj koji dolazi poslije.</span>
+<span id="cb5-130"><a href="#cb5-130" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-131"><a href="#cb5-131" aria-hidden="true" tabindex="-1"></a>::: {.callout-praksa}</span>
+<span id="cb5-132"><a href="#cb5-132" aria-hidden="true" tabindex="-1"></a>Redoslijed reformi najjasnije se vidi na liberalizaciji kapitalnog računa. U zemljama koje su prvo izgradile snažnu bankarsku regulaciju i nadzor, otvaranje prema slobodnom kretanju kapitala donijelo je dugoročne koristi kroz pristup financiranju i ulaganjima. U zemljama koje su kapitalni račun otvorile prije nego što su uspostavile nadzor nad bankama, isti je potez često ubrzao kreditne procvate i financijske krize. Sadržaj mjere bio je isti, ali je ishod ovisio o tome je li institucionalna podloga postojala u trenutku provedbe. Primjer potvrđuje da redoslijed nije tehnički detalj koji dolazi nakon „prave" reforme, nego sastavni dio njezina sadržaja.</span>
+<span id="cb5-133"><a href="#cb5-133" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb5-134"><a href="#cb5-134" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-135"><a href="#cb5-135" aria-hidden="true" tabindex="-1"></a>Treće, tehnologija nije zamjena za institucije. Iako su digitalizacija i e-uprava često u središtu suvremenih reformi, sama tehnologija ne može riješiti temeljne probleme javnog sektora ako nisu promijenjeni poticaji, organizacijska struktura i način donošenja odluka. Postoji rizik da tehnologija samo „digitalizira postojeće probleme" bez stvarnog poboljšanja ishoda.</span>
+<span id="cb5-136"><a href="#cb5-136" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-137"><a href="#cb5-137" aria-hidden="true" tabindex="-1"></a>Četvrto, važna je uloga „ulaznih točaka" reformi. Često je učinkovitije započeti reforme u sektorima gdje postoji veća politička podrška ili bolji kapaciteti, nego pokušati istovremeno reformirati cijeli javni sektor. Ministarstva financija često su bila prirodna početna točka. Ovaj inkrementalni pristup pokazao se uspješnijim od pokušaja sveobuhvatnih reformi odjednom, jer omogućuje učenje kroz praksu i izgradnju povjerenja.</span>
+<span id="cb5-138"><a href="#cb5-138" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-139"><a href="#cb5-139" aria-hidden="true" tabindex="-1"></a><span class="fu">## Iskustvo srednje i istočne Europe</span></span>
+<span id="cb5-140"><a href="#cb5-140" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-141"><a href="#cb5-141" aria-hidden="true" tabindex="-1"></a>Iskustvo zemalja srednje i istočne Europe pruža jedan od najvažnijih empirijskih „laboratorija" za razumijevanje reformi. Tijekom posljednjih 35 godina te su zemlje prošle kroz duboku transformaciju, pri čemu se velik dio reformi odvijao pod snažnim utjecajem procesa pristupanja Europskoj uniji. EU je djelovala kao vanjsko sidro (*anchor*) koje je postavljalo standarde, nudilo resurse i stvaralo vjerodostojan okvir za provedbu reformi.</span>
+<span id="cb5-142"><a href="#cb5-142" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-143"><a href="#cb5-143" aria-hidden="true" tabindex="-1"></a>Taj „sidreni efekt" bio je posebno važan jer je smanjivao neizvjesnost i povećavao vjerodostojnost reformi. U uvjetima gdje su domaće institucije bile slabe, vanjski pritisak i jasno definirani kriteriji omogućili su ubrzanje institucionalnih promjena. U tom smislu EU integracija nije bila samo politički projekt, nego i mehanizam institucionalne modernizacije.</span>
+<span id="cb5-144"><a href="#cb5-144" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-145"><a href="#cb5-145" aria-hidden="true" tabindex="-1"></a>Međutim, unatoč zajedničkom okviru i sličnim početnim uvjetima, rezultati reformi pokazali su se izrazito heterogenima. Neke zemlje, poput Estonije, razvile su visoko učinkovite, digitalizirane i transparentne javne sustave. Druge, poput Slovenije, razvile su stabilne institucionalne okvire uz postupniji tempo. Dio zemalja zadržao je značajne elemente slabih institucija, političke kontrole nad administracijom i slabije provedbe politika. Ova divergencija pokazuje da formalno usklađivanje s pravilima nije dovoljno za stvarnu institucionalnu transformaciju jer postoji razlika između „institucija na papiru" i „institucija u praksi" <span class="co">[</span><span class="ot">@north1990; @acemoglu2012</span><span class="co">]</span>.</span>
+<span id="cb5-146"><a href="#cb5-146" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-147"><a href="#cb5-147" aria-hidden="true" tabindex="-1"></a>Razlike u uspjehu otvaraju i šire pitanje brzine reformi, odnosno koliko brzo treba ići. Šok-terapijski pristup, koji se zalagao za istodobnu provedbu većine reformi u najkraćem mogućem roku, opravdavao se argumentom da fragmentirana, nedovršena tranzicija ostavlja dovoljno prostora za blokadu i preokret. Gradualistički pristup naglašavao je rizik prebrzog napuštanja postojećih koordinacijskih mehanizama prije nego što su novi tržišni mehanizmi stigli funkcionirati.</span>
+<span id="cb5-148"><a href="#cb5-148" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-149"><a href="#cb5-149" aria-hidden="true" tabindex="-1"></a>Trideset godina kasnije empirijska usporedba ne daje jednoznačan odgovor <span class="co">[</span><span class="ot">@rodrik2011</span><span class="co">]</span>. Šok-terapija u dijelu Srednje Europe (Poljska, baltičke države) dala je brže rezultate od gradualističkog pristupa drugdje, ali se to objašnjava jednako institucionalnom predtransformacijskom snagom tih zemalja koliko i samom brzinom. Gradualistička putanja Slovenije i Češke proizvela je usporediv ishod uz manje socijalnih troškova, dok je gradualizam bez vjerodostojnog sidra drugdje često završio u zaglavljenoj polureformi. Brzina sama po sebi nije ni vrlina ni mana. Ono što razlikuje uspjeh od neuspjeha jest spremnost institucija da apsorbiraju promjenu i postojanje vanjskog ili unutarnjeg sidra koje održava reformski smjer između izborima izazvanih oscilacija.</span>
+<span id="cb5-150"><a href="#cb5-150" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-151"><a href="#cb5-151" aria-hidden="true" tabindex="-1"></a>Estonija se često ističe kao jedan od najuspješnijih primjera, jer je već od 1990-ih sustavno ulagala u digitalizaciju javne uprave, uz paralelno jačanje administrativnih kapaciteta. Ključ uspjeha nije bio samo u tehnologiji, nego u dosljednoj institucionalizaciji reformi i dugoročnoj strategiji. Zajednički obrazac koji se pojavljuje jest da su najuspješnije bile zemlje koje su uspjele institucionalizirati reforme, odnosno pretvoriti ih iz jednokratnih projekata u trajne mehanizme upravljanja. Ključna razlika između uspješnih i manje uspješnih reformi često leži u kapacitetu države za provedbu (*state capacity*) <span class="co">[</span><span class="ot">@fukuyama2013</span><span class="co">]</span>.</span>
 <span id="cb5-152"><a href="#cb5-152" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb5-153"><a href="#cb5-153" aria-hidden="true" tabindex="-1"></a>Reforme javnog sektora mijenjaju sam način funkcioniranja države, pa su sporije, politički osjetljivije i neizvjesnije od drugih politika, a kvaliteta uprave presudno utječe na razvoj i uspjeh svih ostalih mjera. Njihov uspjeh ne određuje samo dobar tehnički dizajn, nego i politička volja, realističnost, snažni institucionalni kapaciteti, postupnost i kontinuitet kroz različite cikluse. Iskustvo srednje i istočne Europe pokazuje da vanjska sidra poput pristupanja EU jačaju vjerodostojnost, ali djeluju tek uz domaće vlasništvo nad reformama. Prava mjera uspjeha zato nije broj donesenih zakona i strategija, nego stvarna sposobnost države da pruža usluge, upravlja resursima i odgovara na potrebe građana.</span>
-<span id="cb5-154"><a href="#cb5-154" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb5-153"><a href="#cb5-153" aria-hidden="true" tabindex="-1"></a>Važan dodatni uvid odnosi se na fenomen „reformskog zamora" nakon ulaska u Europsku uniju. Nakon što nestane vanjski pritisak i neposredna nagrada članstva, poticaji za daljnje reforme slabe, što može dovesti do stagnacije ili nazadovanja. Upravo zato suvremene analize naglašavaju važnost domaćeg vlasništva nad reformama (*ownership*) kao ključnog preduvjeta njihove dugoročne održivosti.</span>
+<span id="cb5-154"><a href="#cb5-154" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-155"><a href="#cb5-155" aria-hidden="true" tabindex="-1"></a>Poseban i ilustrativan slučaj predstavlja Hrvatska, čije reforme jasno pokazuju kako različite faze europske integracije djeluju kao uzastopni valovi reformskih poticaja. Tijekom pristupnih pregovora Hrvatska je provela opsežne reforme zakonodavstva i institucija, osobito u području pravosuđa, tržišnog natjecanja i javne uprave. Nakon ulaska u EU dolazi do djelomičnog usporavanja reformskog zamaha, no novi reformski ciklus pokrenut je u kontekstu pristupanja europodručju. Ulazak u ERM II 2020. godine bio je uvjetovan nizom reformi, uključujući jačanje fiskalnog okvira i upravljanja javnim poduzećima, a uvođenje eura 2023. dodatno je učvrstilo makroekonomsku stabilnost. Dodatni poticaj dolazi kroz Nacionalni plan oporavka i otpornosti (NPOO), koji ponovno uvodi mehanizam uvjetovanosti povezujući financijska sredstva s provedbom reformi. Unatoč tim pomacima, hrvatsko iskustvo potvrđuje širi regionalni obrazac. Formalni napredak ne mora nužno značiti i potpunu funkcionalnu transformaciju, a ključni izazov ostaje institucionalizacija reformi u svakodnevnoj praksi.</span>
+<span id="cb5-156"><a href="#cb5-156" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-157"><a href="#cb5-157" aria-hidden="true" tabindex="-1"></a><span class="fu">## Ključevi uspješnih reformi</span></span>
+<span id="cb5-158"><a href="#cb5-158" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-159"><a href="#cb5-159" aria-hidden="true" tabindex="-1"></a>Ako se iskustva reformi promatraju kroz duže razdoblje i u različitim kontekstima, postaje jasno da ne postoji jednostavan, univerzalan recept za uspjeh. Ipak, literatura pokazuje iznenađujuće konzistentan skup zajedničkih obilježja uspješnih reformi.</span>
+<span id="cb5-160"><a href="#cb5-160" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-161"><a href="#cb5-161" aria-hidden="true" tabindex="-1"></a>Prije svega, reforme javnog sektora nisu prvenstveno tehnički, nego duboko politički procesi. Njihova provedba ovisi o političkoj volji, raspodjeli moći i interesima ključnih aktera, zbog čega mnoge tehnički dobro osmišljene reforme ne uspijevaju u praksi. Drugi ključan element jest važnost sekvenciranja i postupnosti, pri čemu je potrebno najprije „postaviti temelje" prije uvođenja naprednih modela upravljanja. Treće, institucije ne funkcioniraju same po sebi, a ključna je promjena ponašanja i organizacijske kulture, a ne samo tehnička rješenja. Četvrto, kapacitet države za provedbu presudan je faktor, jer razlika između uspješnih i neuspješnih reformi rijetko leži u njihovu dizajnu, a mnogo češće u sposobnosti države da ih dosljedno provodi.</span>
+<span id="cb5-162"><a href="#cb5-162" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-163"><a href="#cb5-163" aria-hidden="true" tabindex="-1"></a>Peti element odnosi se na ulogu vanjskih sidara i poticaja (pristupanje EU, ERM II, NPOO), koji povećavaju vjerodostojnost reformi, ali su najdjelotvorniji kada su dopunjeni domaćim vlasništvom nad reformama. Šesto, reforme su dugotrajan i kumulativan proces, a ne jednokratni događaj, pri čemu je kontinuitet kroz različite političke cikluse jednako važan kao i početni dizajn.</span>
+<span id="cb5-164"><a href="#cb5-164" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-165"><a href="#cb5-165" aria-hidden="true" tabindex="-1"></a>Konačno, možda i najvažniji zaključak jest da se uspjeh reformi ne može mjeriti brojem donesenih zakona ili strategija, nego njihovim stvarnim učinkom na funkcioniranje države. Prava mjera uspjeha nije formalna usklađenost, nego sposobnost države da učinkovito pruža javne usluge, upravlja resursima i odgovara na potrebe građana i gospodarstva. „Ključevi" uspješnih reformi mogu se zato sažeti ne kao skup tehničkih rješenja, nego kao kombinacija nekoliko međusobno povezanih elemenata, koji uključuju političku volju, realističan dizajn, snažne institucionalne kapacitete, postupnost, kontinuitet i stvarnu implementaciju. Upravo u toj kombinaciji leži razlika između reformi koje ostaju na papiru i onih koje trajno mijenjaju način funkcioniranja države.</span>
+<span id="cb5-166"><a href="#cb5-166" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-167"><a href="#cb5-167" aria-hidden="true" tabindex="-1"></a>::: {.sazetak-panel}</span>
+<span id="cb5-168"><a href="#cb5-168" aria-hidden="true" tabindex="-1"></a><span class="fu">## Sažetak</span></span>
+<span id="cb5-169"><a href="#cb5-169" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-170"><a href="#cb5-170" aria-hidden="true" tabindex="-1"></a>Reforme javnog sektora mijenjaju sam način funkcioniranja države, pa su sporije, politički osjetljivije i neizvjesnije od drugih politika, a kvaliteta uprave presudno utječe na razvoj i uspjeh svih ostalih mjera. Njihov uspjeh ne određuje samo dobar tehnički dizajn, nego i politička volja, realističnost, snažni institucionalni kapaciteti, postupnost i kontinuitet kroz različite cikluse. Iskustvo srednje i istočne Europe pokazuje da vanjska sidra poput pristupanja EU jačaju vjerodostojnost, ali djeluju tek uz domaće vlasništvo nad reformama. Prava mjera uspjeha zato nije broj donesenih zakona i strategija, nego stvarna sposobnost države da pruža usluge, upravlja resursima i odgovara na potrebe građana.</span>
+<span id="cb5-171"><a href="#cb5-171" aria-hidden="true" tabindex="-1"></a>:::</span>
 </code><button title="Copy to Clipboard" class="code-copy-button" data-in-quarto-modal=""><i class="bi"></i></button></pre></div>
 </div></div></div></div></div>
 </div> <!-- /content -->

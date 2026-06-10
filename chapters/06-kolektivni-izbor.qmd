@@ -50,6 +50,9 @@ cond_v3 = cond_controls.v3
 
 ```{ojs}
 //| echo: false
+//| label: fig-condorcet
+//| fig-cap: "Strelice pokazuju pobjednika svakog para u izravnom većinskom glasovanju; kada tvore zatvoreni krug, kolektivna preferencija je ciklička i nema stabilnog pobjednika."
+//| fig-alt: "Dijagram s tri čvora (A, B, C) raspoređena u trokut. Usmjerene strelice između parova pokazuju pobjednika izravnog glasovanja: kada strelice tvore zatvoreni krug, natpis upozorava na ciklus i nema Condorcetova pobjednika; kada postoji pobjednik s dva pobjede, čvor je označen zelenom bojom."
 {
   const parse = (s) => s.split(" ▸ ");
   const voters = [parse(cond_v1), parse(cond_v2), parse(cond_v3)];

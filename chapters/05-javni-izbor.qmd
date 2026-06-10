@@ -77,6 +77,9 @@ vote_C = vote_controls.C
 
 ```{ojs}
 //| echo: false
+//| label: fig-paradoks-glasanja
+//| fig-cap: "Neto vrijednost glasanja R = B/N − C brzo pada prema nuli kako raste biračko tijelo, jer vjerojatnost odlučujućeg glasa P ≈ 1/N postaje zanemariva; tek nerealno velika korist B može nadvladati i malen trošak glasanja."
+//| fig-alt: "Graf na logaritamskoj skali osi x (veličina biračkog tijela N) i linearnoj skali osi y (neto vrijednost glasanja R). Plava silazna krivulja prelazi iz pozitivnog u negativno područje kako N raste; istaknuta točka pokazuje trenutnu veličinu biračkog tijela i njezinu neto vrijednost, a isprekidana crta označava nultu granicu isplativosti."
 {
   const B = vote_B, C = vote_C;
   const Ncur = Math.pow(10, vote_N);

@@ -42,6 +42,9 @@ wag_g = wag_controls.g
 
 ```{ojs}
 //| echo: false
+//| label: fig-wagner
+//| fig-cap: "Ilustrativni prikaz Wagnerova zakona — bogatije zemlje u prosjeku troše veći udio BDP-a kroz javni sektor, uz znatno rasipanje oko trenda. Podaci su približni i služe za prikaz odnosa, a ne kao službena statistika."
+//| fig-alt: "Raspršeni dijagram s logaritamskom osi x (BDP po stanovniku) i osi y (javna potrošnja kao % BDP-a). Točke predstavljaju pojedine zemlje obojene prema razini dohotka. Isprekidana trendna linija raste s dohotkom, ilustrirajući Wagnerov zakon. Hipotetska zemlja označena je većom crnom točkom s predviđenim udjelom."
 {
   // Ilustrativni podaci (približne vrijednosti, za prikaz odnosa, ne službena statistika)
   const data = [

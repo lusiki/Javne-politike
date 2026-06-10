@@ -125,6 +125,9 @@ lor_t = lor_controls.t
 
 ```{ojs}
 //| echo: false
+//| label: fig-lorenz
+//| fig-cap: "Lorenzova krivulja udaljava se od dijagonale jednakosti kako raste nejednakost tržišnog dohotka, a preraspodjela je vraća prema dijagonali i smanjuje Ginijev koeficijent."
+//| fig-alt: "Graf Lorenzove krivulje s kumulativnim udjelom stanovništva na osi x i kumulativnim udjelom dohotka na osi y. Isprekidana dijagonala prikazuje savršenu jednakost, a plava krivulja odstupa prema dolje što je nejednakost veća; Ginijev koeficijent ispisuje se u gornjem lijevom kutu i smanjuje se kako se preraspodjela povećava."
 {
   const k = lor_k, t = lor_t;
   // Lorenzova krivulja: tržišna nejednakost p^k, ublažena preraspodjelom prema dijagonali

@@ -148,6 +148,9 @@ rho = controls.rho
 
 ```{ojs}
 //| echo: false
+//| label: fig-opadajuca-korisnost
+//| fig-cap: "Opadajuća granična korisnost dohotka i učinak redistribucijskog transfera: pomak siromašnijeg pojedinca desno povećava korisnost više nego što ga smanjuje bogatijemu."
+//| fig-alt: "Graf prikazuje konkavnu krivulju korisnosti U(Y) u ovisnosti o dohotku Y. Sive točke označavaju početne dohotke dvaju pojedinaca. Zelena točka prikazuje siromašnijeg nakon transfera, crvena bogatijeg nakon plaćenog poreza, a vertikalne crte mjere promjenu korisnosti za svakoga od njih."
 {
   const Ymax = 100;
   const U = y => (rho === 1)
@@ -262,6 +265,9 @@ t_inc = inc_controls.t_inc
 
 ```{ojs}
 //| echo: false
+//| label: fig-porezna-incidencija
+//| fig-cap: "Porezna incidencija: raspodijela poreznog tereta između kupaca i prodavača ovisi o relativnoj elastičnosti potražnje i ponude."
+//| fig-alt: "Graf prikazuje krivulju potražnje, originalnu krivulju ponude i krivulju ponude pomaknutu gore za iznos poreza. Plavi pravokutnik prikazuje udio poreza koji snose kupci (razlika između cijena Pc i P*), a žuti pravokutnik udio koji snose prodavači (razlika P* i Pp). Strana s manjom elastičnošću snosi veći udio tereta."
 {
   // Pre-tax equilibrium fixed at (Q*, P*) = (50, 50).
   // At equilibrium: |εD| = (P/Q)·(1/b)  ⇒  b = 1/|εD|;  εS = (P/Q)·(1/d)  ⇒  d = 1/εS.
@@ -392,6 +398,9 @@ t_dwl = dwl2_controls.t_dwl
 
 ```{ojs}
 //| echo: false
+//| label: fig-mrtvi-teret-skaliranje
+//| fig-cap: "Kvadratno skaliranje mrtvog tereta poreza: udvostručenje porezne stope t uzrokuje četverostruko povećanje gubitka blagostanja DWL ∝ t²."
+//| fig-alt: "Graf prikazuje krivulju potražnje, ponudu i ponudu nakon poreza. Crveni trokut DWL omeđen je tržišnom ravnotežom, ravnotežom nakon poreza i iznosom poreznog klina. Širina i visina trokuta rastu s povećanjem poreza, a natpis prikazuje numerički iznos DWL i usporedbu s referentnim porezom."
 {
   // Same calibration as Ramsey graph: equilibrium fixed at (50, 50), supply slope d = 0.5.
   const Qstar = 50;
@@ -521,6 +530,9 @@ eps_L = wedge_controls.eps_L
 
 ```{ojs}
 //| echo: false
+//| label: fig-porezni-klin
+//| fig-cap: "Porezni klin na tržištu rada: razlika između bruto nadnice (trošak poslodavca) i neto nadnice (dohodak radnika) smanjuje zaposlenost i generira mrtvi teret."
+//| fig-alt: "Graf prikazuje krivulju potražnje za radom, originalnu krivulju ponude rada i krivulju ponude pomaknutu gore za iznos poreznog klina. Pravokutnik između bruto i neto nadnice prikazuje ukupni porezni prihod. Crveni okomiti odsječak označava veličinu klina, a ravnoteža zaposlenosti pada s L* na Lt."
 {
   // Labour market: equilibrium fixed at (L*, W*) = (50, 50).
   // Demand for labour: W = a - b·L, calibrated so |εD| = 1 at equilibrium → b = 1.
@@ -670,6 +682,9 @@ tax = dwl_controls.tax
 
 ```{ojs}
 //| echo: false
+//| label: fig-ramsey-dwl
+//| fig-cap: "Ramseyevo pravilo: mrtvi teret poreza i porezni prihod za različite razine elastičnosti potražnje — neelastičnija dobra generiraju manji DWL po jedinici prihoda."
+//| fig-alt: "Graf prikazuje krivulju potražnje, ponudu i ponudu s porezom. Crveni trokut prikazuje mrtvi teret, a plavi pravokutnik porezni prihod. Pri niskoj elastičnosti trokut je uzan i visok prihod, pri visokoj elastičnosti trokut je velik i prihod manji, vizualno ilustrirajući Ramseyevo pravilo optimalnog oporezivanja."
 {
   // Pre-tax equilibrium fixed at (Q*, P*) = (50, 50).
   // Demand slope b is calibrated from elasticity at (Q*, P*): |ε| = (P/Q)·(1/b)  ⇒  b = P/(Q·|ε|) = 1/|ε|.
@@ -804,6 +819,9 @@ sig_l = labor_controls.sig_l
 
 ```{ojs}
 //| echo: false
+//| label: fig-dokolica-potrosnja
+//| fig-cap: "Slutskyjeva dekompozicija učinka poreza na rad: supstitucijski učinak (A→B) povećava dokolicu, a dohodovni učinak (B→C) može djelovati u suprotnom smjeru."
+//| fig-alt: "Graf prikazuje dokolicu na vodoravnoj osi i potrošnju na okomitoj. Prikazane su dvije proračunske linije (bez poreza i s porezom) i dvije krivulje indiferencije. Točka A je optimum bez poreza, B kompenzirani optimum i C optimum s porezom. Strelice između točaka vizualiziraju supstitucijski i dohodovni učinak."
 {
   // Leisure-consumption choice with CES utility.
   // Time endowment T, wage w. Without tax: C = w·(T - ℓ). With tax: C = w·(1 - τ)·(T - ℓ).
@@ -1024,6 +1042,9 @@ sigma = inter_controls.sigma
 
 ```{ojs}
 //| echo: false
+//| label: fig-medutemporalna-stednja
+//| fig-cap: "Međutemporalni učinak poreza na kapitalni prinos: porez zakreće proračunsku liniju i mijenja ravnotežu između sadašnje i buduće potrošnje."
+//| fig-alt: "Graf prikazuje sadašnju potrošnju C1 na vodoravnoj osi i buduću potrošnju C2 na okomitoj. Zelena puna linija je proračunsko ograničenje bez poreza, zelena isprekidana s porezom na prinos koji smanjuje nagib. Plava točka je optimum bez poreza, crvena s porezom. Pomak između točaka pokazuje kako porez utječe na štednju."
 {
   // Two-period model. Endowment Y in period 1, no income in period 2.
   // Without tax: C2 = (1+r)·(Y − C1).        Optimum chooses C1, C2 to maximise CRRA utility.
@@ -1188,6 +1209,9 @@ t_now = laffer_controls.t_now
 
 ```{ojs}
 //| echo: false
+//| label: fig-laffer
+//| fig-cap: "Lafferova krivulja: porezni prihod kao funkcija porezne stope dostiže vrh pri t* = 1/(1+ε) i pada pri previsoko postavljenim stopama."
+//| fig-alt: "Graf prikazuje plavu zvonoliku krivulju poreznog prihoda R u ovisnosti o poreznoj stopi t od 0 do 100 posto. Crna točka označava vrh prihoda t*. Pokretna točka zelene ili crvene boje označava gdje se nalazi trenutna stopa — zelena ako je na rastućem dijelu krivulje, crvena ako je na padajućem dijelu."
 {
   // Simple Laffer model:
   // Tax base shrinks with the rate via a constant-elasticity response:

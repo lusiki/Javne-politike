@@ -87,15 +87,16 @@
     <rect class="card" width="180" height="95" rx="2"/>
     <rect class="accent-ochre" width="180" height="2"/>
     <text x="90" y="28" text-anchor="middle" class="item">Tržišni neuspjesi</text>
-    <text x="90" y="53" text-anchor="middle" class="item">Pitanje pravednosti</text>
+    <text x="90" y="53" text-anchor="middle" class="item">Eksternalije</text>
     <text x="90" y="78" text-anchor="middle" class="item">Meritorna dobra</text>
   </g>
   <g transform="translate(310, 240)">
     <rect class="card" width="180" height="95" rx="2"/>
     <rect class="accent-ochre" width="180" height="2"/>
-    <text x="90" y="28" text-anchor="middle" class="item">Utilitarizam</text>
-    <text x="90" y="53" text-anchor="middle" class="item">Robni egalitarizam</text>
-    <text x="90" y="78" text-anchor="middle" class="item">Paternalizam</text>
+    <text x="90" y="24" text-anchor="middle" class="item">Pitanje pravednosti</text>
+    <text x="90" y="46" text-anchor="middle" class="item">Utilitarizam</text>
+    <text x="90" y="68" text-anchor="middle" class="item">Robni egalitarizam</text>
+    <text x="90" y="90" text-anchor="middle" class="item">Paternalizam</text>
   </g>
   <g transform="translate(550, 240)">
     <rect class="card" width="180" height="95" rx="2"/>

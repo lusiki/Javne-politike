@@ -74,6 +74,9 @@ npv_b = npv_controls.b
 
 ```{ojs}
 //| echo: false
+//| label: fig-npv-diskontna
+//| fig-cap: "NPV projekta (ulaganje 100 mil. € i neto korist kroz četiri godine) pada kako raste diskontna stopa; pri internoj stopi povrata (IRR) jednak je nuli, a iznad nje projekt postaje neopravdan."
+//| fig-alt: "Linijski grafikon prikazuje kako neto sadašnja vrijednost projekta pada s porastom diskontne stope. Plava silazna krivulja prelazi iz pozitivnog u negativno područje. Crvena isprekidana okomita linija označava internu stopu povrata (IRR) gdje je NPV nula. Crna točka prikazuje NPV pri odabranoj diskontnoj stopi."
 {
   const cost = 100;   // početno ulaganje (mil. €)
   const years = 4;    // trajanje koristi

@@ -66,6 +66,9 @@ ref_s = ref_controls.s
 
 ```{ojs}
 //| echo: false
+//| label: fig-reforma-kapacitet
+//| fig-cap: "Stilizirani prikaz pouke o sekvenciranju — vjerojatnost uspjeha najveća je kada brzina reforme odgovara institucionalnom kapacitetu; pri niskom kapacitetu uspijeva postupnost, a prebrza šok-reforma pada, dok visok kapacitet podnosi i brže promjene."
+//| fig-alt: "Linijski grafikon u obliku zvona prikazuje vjerojatnost uspjeha reforme (os y, u postocima) u ovisnosti o brzini i ambiciji reforme (os x, u postocima). Vrh krivulje poklapa se s institucionalnim kapacitetom označenim zelenom isprekidanom linijom. Crna točka s isprekidanim vertikalnim i horizontalnim linijama označava odabranu brzinu reforme i njezinu predviđenu vjerojatnost uspjeha."
 {
   const c = ref_c;
   // stilizirano: uspjeh je najveći kada brzina odgovara kapacitetu, a razina raste s kapacitetom

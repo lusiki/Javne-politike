@@ -143,6 +143,9 @@ score_vals = score_controls
 
 ```{ojs}
 //| echo: false
+//| label: fig-test-neuspjeha
+//| fig-cap: "Interaktivni test državnog neuspjeha — što je politika slabija na pojedinoj dimenziji, to je veći rizik da zakaže u provedbi, a ukupna ocjena pokazuje gdje dizajn treba ojačati prije provedbe."
+//| fig-alt: "Horizontalni stupčasti dijagram s osam dimenzija kvalitete javne politike na osi y i ocjenom od 0 do 3 na osi x. Svaki stupac obojen je crveno (slabo), narančasto (umjereno) ili zeleno (snažno). Na vrhu grafikona prikazana je ukupna ocjena otpornosti politike u postocima uz tekstualnu procjenu razine rizika."
 {
   const c = score_vals;
   const dims = [
