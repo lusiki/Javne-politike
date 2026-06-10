@@ -140,6 +140,35 @@ div.csl-indent {
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
 <link href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600;700&amp;family=Geist+Mono:wght@400;500;600&amp;family=Newsreader:ital,opsz,wght@0,6..72,300;0,6..72,400;0,6..72,500;0,6..72,600;0,6..72,700;1,6..72,300;1,6..72,400;1,6..72,500&amp;display=swap" rel="stylesheet">
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 <link rel="stylesheet" href="../styles/styles.css">
 </head>
@@ -676,7 +705,7 @@ Boardman, Anthony E., David H. Greenberg, Aidan R. Vining, i David L. Weimer. 20
 </div></div><p>Sljedeći korak obuhvaća identifikaciju svih relevantnih troškova i koristi, uključujući izravne fiskalne troškove, ali i šire ekonomske, socijalne i okolišne posljedice. Posebna pažnja posvećuje se eksternalijama. Treći korak, kvantifikacija i monetizacija učinaka, predstavlja jedan od najzahtjevnijih dijelova, a cilj mu je sve koristi i troškove izraziti u novčanim jedinicama. Najveći izazov predstavljaju nematerijalne vrijednosti poput ljudskog života, sigurnosti ili kvalitete okoliša, za koje se koriste metode poput spremnosti na plaćanje (<em>willingness to pay</em>), otkrivenih preferencija ili sjenovnih cijena (<em>shadow prices</em>).</p>
 <p>Nakon monetizacije slijedi diskontiranje, odnosno svođenje budućih troškova i koristi na sadašnju vrijednost. Diskontna stopa ključan je parametar jer snažno utječe na rezultate, osobito kod dugoročnih projekata. Završni korak odnosi se na donošenje odluke i interpretaciju rezultata, za što se najčešće koristi kriterij neto sadašnje vrijednosti.</p>
 <div id="def-npv" class="theorem definition">
-<p><span class="theorem-title"><strong>Definicija 20.1</strong></span> <strong>Neto sadašnja vrijednost (NPV).</strong> Projekt je društveno opravdan ako su diskontirane koristi veće od diskontiranih troškova.</p>
+<p><span class="theorem-title"><strong>Definicija 20.1</strong></span> <strong>Neto sadašnja vrijednost (NPV)</strong> je zbroj svih budućih koristi i troškova projekta, pri čemu se svaki budući iznos diskontira na sadašnji trenutak koeficijentom <span class="math inline">\(1/(1+r)^t\)</span>, gdje je <span class="math inline">\(r\)</span> diskontna stopa, a <span class="math inline">\(t\)</span> broj godina udaljenosti. Projekt je društveno opravdan ako je NPV pozitivan.</p>
 </div>
 <p>Suvremeni pristupi naglašavaju i potrebu za analizom osjetljivosti, scenarijskom analizom i razmatranjem distribucijskih učinaka <span class="citation" data-cites="hmtreasury2022">(<a href="../references.html#ref-hmtreasury2022" role="doc-biblioref">HM Treasury 2022</a>)</span>. CBA nije linearni, mehanički postupak, već iterativni proces u kojem se koraci međusobno preispituju.</p>
 <div class="no-row-height column-margin column-container"></div></section>
@@ -793,7 +822,7 @@ Slika&nbsp;20.1: NPV projekta (ulaganje 100 mil. € i neto korist kroz četiri 
 </figure>
 </div>
 </div>
-<p><em>NPV projekta (ulaganje 100 mil. € i neto korist kroz četiri godine) pada kako raste diskontna stopa; pri internoj stopi povrata (IRR) jednak je nuli, a iznad nje projekt postaje neopravdan.</em> Sve navedeno pokazuje da je CBA u javnom sektoru znatno više od tehničkog alata. Ona je integrativni okvir koji povezuje ekonomsku učinkovitost s društvenom pravednošću, okolišnom održivošću i dugoročnom perspektivom.</p>
+<p>Sve navedeno pokazuje da je CBA u javnom sektoru znatno više od tehničkog alata. Ona je integrativni okvir koji povezuje ekonomsku učinkovitost s društvenom pravednošću, okolišnom održivošću i dugoročnom perspektivom.</p>
 </section>
 <section id="ograničenja-cost-benefit-analize" class="level2 page-columns page-full">
 <h2 class="anchored" data-anchor-id="ograničenja-cost-benefit-analize">Ograničenja cost-benefit analize</h2>
@@ -833,7 +862,7 @@ Angrist, Joshua D., i Jörn-Steffen Pischke. 2009. <em>Mostly Harmless Econometr
 <section id="metodološki-pristupi-i-izazovi" class="level3 page-columns page-full">
 <h3 class="anchored" data-anchor-id="metodološki-pristupi-i-izazovi">Metodološki pristupi i izazovi</h3>
 <p>Evaluacija se oslanja na kvantitativne i kvalitativne metode. Kvantitativni pristupi usmjereni su na mjerenje i kvantifikaciju učinaka te identifikaciju uzročnih veza, pružajući empirijski utemeljene i replicabilne rezultate. Kvalitativne metode poput intervjua, fokus grupa i studija slučaja omogućuju dublje razumijevanje institucionalnog konteksta i mehanizama kroz koje politika djeluje. Zato se sve više naglašava važnost kombiniranog pristupa (<em>mixed methods</em>), gdje kvantitativna evaluacija može pokazati da program nije povećao zapošljavanje, a kvalitativna može otkriti da su administrativni zahtjevi bili prekomplicirani.</p>
-<p>Među kvantitativnim pristupima, jasna hijerarhija identifikacijske snage prepoznaje se prema kontrafaktu koji svaki dizajn nudi. Randomizirana kontrolirana istraživanja (<em>RCT</em>) najjače identificiraju uzročni učinak jer slučajan raspored u tretiranu i kontrolnu skupinu uklanja sve sustavne razlike između njih, uključujući one koje istraživač ne može opaziti. Banerjee i Duflo svojim istraživanjima socijalnih programa u zemljama u razvoju pokazali su da i složene socijalne intervencije mogu biti evaluirane RCT dizajnom, čime su znatno podigli empirijski standard u području evaluacije razvojnih politika <span class="citation" data-cites="banerjee2019">(<a href="../references.html#ref-banerjee2019" role="doc-biblioref">Banerjee i Duflo 2019</a>)</span>.</p>
+<p>Među kvantitativnim pristupima, jasna hijerarhija identifikacijske snage prepoznaje se prema kontrafaktu koji svaki dizajn nudi. Randomizirana kontrolirana istraživanja (<em>RCT</em>) najjače identificiraju uzročni učinak jer slučajan raspored u tretiranu i kontrolnu skupinu uklanja sve sustavne razlike između njih, uključujući one koje istraživač ne može opaziti. Banerjee i Duflo svojom istraživačkom karijerom pokazali su da i složene socijalne intervencije mogu biti evaluirane RCT dizajnom, čime su znatno podigli empirijski standard u području evaluacije razvojnih politika <span class="citation" data-cites="banerjee2019">(<a href="../references.html#ref-banerjee2019" role="doc-biblioref">Banerjee i Duflo 2019</a>)</span>.</p>
 <div class="no-row-height column-margin column-container"><div id="ref-banerjee2019" class="csl-entry" role="listitem">
 Banerjee, Abhijit V., i Esther Duflo. 2019. <em>Good Economics for Hard Times: Better Answers to Our Biggest Problems</em>. New York: PublicAffairs.
 </div></div><p>Tamo gdje RCT nije etički ili praktično izvediv (privatizacija sektora, makro reforme, ustavne promjene), kvazi-eksperimentalne metode dijele uzročnu inferenciju iz prirodnih izvora varijacije. <em>Difference-in-differences</em> uspoređuje promjene ishoda kod tretirane i netretirane skupine prije i poslije intervencije, što kontrolira fiksne razlike između skupina, ali pretpostavlja paralelne trendove u odsutnosti tretmana. <em>Regression discontinuity</em> iskorištava arbitrarne pragove u programu (visina dohotka za pravo na transfer, ocjena za upis u program) i uspoređuje pojedince neposredno iznad i ispod praga, koji su statistički gotovo identični osim u izlaganju mjeri. Sve te metode imaju svoje pretpostavke, a kvalitetna evaluacija mora ih učiniti eksplicitnima i testirati, umjesto da se oslanja samo na rezultat regresije.</p>
@@ -2057,7 +2086,7 @@ window._ojs.runtime.interpretFromScriptTags();
 <span id="cb5-35"><a href="#cb5-35" aria-hidden="true" tabindex="-1"></a>Nakon monetizacije slijedi diskontiranje, odnosno svođenje budućih troškova i koristi na sadašnju vrijednost. Diskontna stopa ključan je parametar jer snažno utječe na rezultate, osobito kod dugoročnih projekata. Završni korak odnosi se na donošenje odluke i interpretaciju rezultata, za što se najčešće koristi kriterij neto sadašnje vrijednosti.</span>
 <span id="cb5-36"><a href="#cb5-36" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb5-37"><a href="#cb5-37" aria-hidden="true" tabindex="-1"></a>::: {#def-npv}</span>
-<span id="cb5-38"><a href="#cb5-38" aria-hidden="true" tabindex="-1"></a>**Neto sadašnja vrijednost (NPV).** Projekt je društveno opravdan ako su diskontirane koristi veće od diskontiranih troškova.</span>
+<span id="cb5-38"><a href="#cb5-38" aria-hidden="true" tabindex="-1"></a>**Neto sadašnja vrijednost (NPV)** je zbroj svih budućih koristi i troškova projekta, pri čemu se svaki budući iznos diskontira na sadašnji trenutak koeficijentom $1/(1+r)^t$, gdje je $r$ diskontna stopa, a $t$ broj godina udaljenosti. Projekt je društveno opravdan ako je NPV pozitivan.</span>
 <span id="cb5-39"><a href="#cb5-39" aria-hidden="true" tabindex="-1"></a>:::</span>
 <span id="cb5-40"><a href="#cb5-40" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb5-41"><a href="#cb5-41" aria-hidden="true" tabindex="-1"></a>Suvremeni pristupi naglašavaju i potrebu za analizom osjetljivosti, scenarijskom analizom i razmatranjem distribucijskih učinaka <span class="co">[</span><span class="ot">@hmtreasury2022</span><span class="co">]</span>. CBA nije linearni, mehanički postupak, već iterativni proces u kojem se koraci međusobno preispituju.</span>
@@ -2150,7 +2179,7 @@ window._ojs.runtime.interpretFromScriptTags();
 <span id="cb5-136"><a href="#cb5-136" aria-hidden="true" tabindex="-1"></a>}</span>
 <span id="cb5-137"><a href="#cb5-137" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
 <span id="cb5-138"><a href="#cb5-138" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb5-139"><a href="#cb5-139" aria-hidden="true" tabindex="-1"></a>*NPV projekta (ulaganje 100 mil. € i neto korist kroz četiri godine) pada kako raste diskontna stopa; pri internoj stopi povrata (IRR) jednak je nuli, a iznad nje projekt postaje neopravdan.* Sve navedeno pokazuje da je CBA u javnom sektoru znatno više od tehničkog alata. Ona je integrativni okvir koji povezuje ekonomsku učinkovitost s društvenom pravednošću, okolišnom održivošću i dugoročnom perspektivom.</span>
+<span id="cb5-139"><a href="#cb5-139" aria-hidden="true" tabindex="-1"></a>Sve navedeno pokazuje da je CBA u javnom sektoru znatno više od tehničkog alata. Ona je integrativni okvir koji povezuje ekonomsku učinkovitost s društvenom pravednošću, okolišnom održivošću i dugoročnom perspektivom.</span>
 <span id="cb5-140"><a href="#cb5-140" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb5-141"><a href="#cb5-141" aria-hidden="true" tabindex="-1"></a><span class="fu">## Ograničenja cost-benefit analize</span></span>
 <span id="cb5-142"><a href="#cb5-142" aria-hidden="true" tabindex="-1"></a></span>
@@ -2198,7 +2227,7 @@ window._ojs.runtime.interpretFromScriptTags();
 <span id="cb5-184"><a href="#cb5-184" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb5-185"><a href="#cb5-185" aria-hidden="true" tabindex="-1"></a>Evaluacija se oslanja na kvantitativne i kvalitativne metode. Kvantitativni pristupi usmjereni su na mjerenje i kvantifikaciju učinaka te identifikaciju uzročnih veza, pružajući empirijski utemeljene i replicabilne rezultate. Kvalitativne metode poput intervjua, fokus grupa i studija slučaja omogućuju dublje razumijevanje institucionalnog konteksta i mehanizama kroz koje politika djeluje. Zato se sve više naglašava važnost kombiniranog pristupa (*mixed methods*), gdje kvantitativna evaluacija može pokazati da program nije povećao zapošljavanje, a kvalitativna može otkriti da su administrativni zahtjevi bili prekomplicirani.</span>
 <span id="cb5-186"><a href="#cb5-186" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb5-187"><a href="#cb5-187" aria-hidden="true" tabindex="-1"></a>Među kvantitativnim pristupima, jasna hijerarhija identifikacijske snage prepoznaje se prema kontrafaktu koji svaki dizajn nudi. Randomizirana kontrolirana istraživanja (*RCT*) najjače identificiraju uzročni učinak jer slučajan raspored u tretiranu i kontrolnu skupinu uklanja sve sustavne razlike između njih, uključujući one koje istraživač ne može opaziti. Banerjee i Duflo svojim istraživanjima socijalnih programa u zemljama u razvoju pokazali su da i složene socijalne intervencije mogu biti evaluirane RCT dizajnom, čime su znatno podigli empirijski standard u području evaluacije razvojnih politika <span class="co">[</span><span class="ot">@banerjee2019</span><span class="co">]</span>.</span>
+<span id="cb5-187"><a href="#cb5-187" aria-hidden="true" tabindex="-1"></a>Među kvantitativnim pristupima, jasna hijerarhija identifikacijske snage prepoznaje se prema kontrafaktu koji svaki dizajn nudi. Randomizirana kontrolirana istraživanja (*RCT*) najjače identificiraju uzročni učinak jer slučajan raspored u tretiranu i kontrolnu skupinu uklanja sve sustavne razlike između njih, uključujući one koje istraživač ne može opaziti. Banerjee i Duflo svojom istraživačkom karijerom pokazali su da i složene socijalne intervencije mogu biti evaluirane RCT dizajnom, čime su znatno podigli empirijski standard u području evaluacije razvojnih politika <span class="co">[</span><span class="ot">@banerjee2019</span><span class="co">]</span>.</span>
 <span id="cb5-188"><a href="#cb5-188" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb5-189"><a href="#cb5-189" aria-hidden="true" tabindex="-1"></a>Tamo gdje RCT nije etički ili praktično izvediv (privatizacija sektora, makro reforme, ustavne promjene), kvazi-eksperimentalne metode dijele uzročnu inferenciju iz prirodnih izvora varijacije. *Difference-in-differences* uspoređuje promjene ishoda kod tretirane i netretirane skupine prije i poslije intervencije, što kontrolira fiksne razlike između skupina, ali pretpostavlja paralelne trendove u odsutnosti tretmana. *Regression discontinuity* iskorištava arbitrarne pragove u programu (visina dohotka za pravo na transfer, ocjena za upis u program) i uspoređuje pojedince neposredno iznad i ispod praga, koji su statistički gotovo identični osim u izlaganju mjeri. Sve te metode imaju svoje pretpostavke, a kvalitetna evaluacija mora ih učiniti eksplicitnima i testirati, umjesto da se oslanja samo na rezultat regresije.</span>
 <span id="cb5-190"><a href="#cb5-190" aria-hidden="true" tabindex="-1"></a></span>
