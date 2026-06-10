@@ -50,6 +50,18 @@ Konkretni primjeri pokazuju gdje ta logika vrijedi. Upravljanje zajedničkim pri
 
 Sve važniju ulogu imaju i **partnerstva** koja uključuju suradnju javnog i privatnog sektora, javnog i civilnog sektora ili različitih razina vlasti. Javno-privatna partnerstva mogu se koristiti za izgradnju infrastrukture ili pružanje usluga. No partnerstva nisu sama po sebi dobra. Mogu povećati učinkovitost, ali i zamagliti odgovornost. Ako privatni partner ostvaruje profit iz javnog projekta, a rizik ostaje na državi, partnerstvo može postati fiskalno skupo. Zato je ključno pitanje ne samo tko sudjeluje, nego i pod kojim pravilima, s kojom odgovornošću i uz kakvu raspodjelu rizika i koristi.
 
+::: {.callout-vjezba}
+Pretpostavite hipotetsku riječnu slivnu cjelinu koju dijele tri općine, a u njoj se pogoršava kakvoća vode zbog poljoprivrednog otjecanja, ispusta jedne tvornice i zastarjelih sustava odvodnje. Nijedno tijelo nema isključivu nadležnost nad cijelim slivom. Za stolom su općinske vlasti, regionalna agencija za vode, udruženje poljoprivrednika, vlasnik tvornice, lokalna ekološka udruga i agencija za zaštitu okoliša.
+
+(a) Razvrstajte navedene aktere prema tome što svaki od njih kontrolira, pri čemu za svakoga navedite barem jedan resurs koji unosi u suradnju, primjerice nadležnost nad ispustom, podatke o opterećenju, financijska sredstva ili pristanak ključan za provedbu. Objasnite zašto problem nije rješiv ni čistom hijerarhijom jedne agencije ni tržišnom razmjenom među akterima.
+
+(b) Koristeći uvjete uspješnog suradničkog upravljanja iz poglavlja, procijenite za svaki uvjet je li ispunjen, djelomično ispunjen ili nedostaje, uzimajući u obzir širinu i pravila sudjelovanja, raniji saldo međusobnog djelovanja, simetriju moći, vremenski okvir te postojanje posrednika umjesto pukog participanta. Poredajte uvjete od onoga koji najviše otežava suradnju prema onome koji joj najmanje smeta.
+
+(c) Pretpostavite dvije zamišljene sheme savjetovanja. U prvoj se mišljenja aktera prikupljaju pisanim putem nakon što je plan već usvojen. U drugoj akteri sudjeluju u oblikovanju plana prije odluke, uz objavu podloga i jasan mandat. Usporedite ih i objasnite koja predstavlja stvarno, a koja tek formalno sudjelovanje te kako razlika utječe na povjerenje i legitimnost ishoda.
+
+Zašto mrežno i suradničko upravljanje može uspjeti ondje gdje i hijerarhija i tržište zakažu, i koju cijenu u smislu jasne odgovornosti i trajnog ulaganja u povjerenje takvo rješenje sa sobom nosi?
+:::
+
 ## Uključivanje građana
 
 Posebno važan element novog upravljanja jest **uključivanje građana**. NPM je građane često promatrao kao korisnike ili klijente. Novo upravljanje ide korak dalje time što građane shvaća ne samo kao korisnike, nego i kao sudionike u oblikovanju javnih politika. To se vidi u razvoju javnih savjetovanja, participativnog budžetiranja, građanskih panela i digitalnih platformi za sudjelovanje.

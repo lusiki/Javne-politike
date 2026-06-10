@@ -66,6 +66,10 @@ Prema **Kaldor-Hicksovu kriteriju** promjena je društveno opravdana ako su agre
 
 Upravo na tom kriteriju počiva analiza troškova i koristi kao standardni alat javnog odlučivanja [@boardman2018]. Pristup ima svoju cijenu. Sažimanjem dobitaka i gubitaka u zajedničku novčanu mjeru implicitno se pretpostavlja da je dodatni euro jednako vrijedan svima, što ignorira pitanje raspodjele dohotka. Zato Kaldor-Hicksov kriterij olakšava donošenje odluka, ali ne uklanja političku odgovornost za to tko stvarno gubi, a tko dobiva.
 
+::: {.callout-vjezba}
+Promotrite reformu javne nabave koja snižava cijene za poreznog obveznika, ali zatvara skupinu zaštićenih dobavljača. Reforma donosi godišnju uštedu od 90 milijuna eura, koja se raspodjeljuje na velik broj poreznih obveznika, dok pet istisnutih dobavljača gubi ukupno 40 milijuna eura godišnje. (a) Izračunajte neto agregatni učinak reforme. (b) Utvrdite je li reforma Pareto poboljšanje i obrazložite odgovor pozivajući se na položaj dobavljača. (c) Pretpostavite da bi se gubitnicima moglo jednokratno isplatiti 40 milijuna eura, a da dobitnici i dalje ostanu na dobitku. Prolazi li reforma Kaldor-Hicksov kriterij i mijenja li se odgovor ako se kompenzacija stvarno ne isplati? (d) Pretpostavite sada da su gubitnici siromašni, a dobitnici imućni. Objasnite zašto isti agregatni iznos može zadovoljiti kriterij učinkovitosti, a istodobno otvoriti pitanje pravednosti koje sam Kaldor-Hicksov račun ne razrješava.
+:::
+
 #### Edgeworthova kutija i ugovorna krivulja
 
 Edgeworthova kutija prikazuje sve moguće raspodjele dvaju dobara između dvaju potrošača. Svaka točka u kutiji označava jednu alokaciju. Ono što dobije potrošač A mjeri se od donjeg lijevog ishodišta, a ono što dobije potrošač B iz suprotnog, gornjeg desnog ishodišta.

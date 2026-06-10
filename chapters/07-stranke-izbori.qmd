@@ -61,6 +61,10 @@ Na položaj stranaka utječu i drugi čimbenici. Izlaznost nije zajamčena. Ako 
 U Hrvatskoj je ova dinamika vidljiva kroz jačanje stranaka pozicioniranih izvan tradicionalnog centra, koje umjesto ekonomskih programa naglašavaju identitetska i antielitistička pitanja. Slično, Emmanuel Macron 2017. uspješno se pozicionirao kao „ni lijevo ni desno", dok su u Italiji i Španjolskoj Pokret pet zvijezda i Vox nametnuli teme korupcije i imigracije kako bi se odvojili od etabliranih stranaka. Rezultat je često „šizofrena" ponuda koja kombinira umjerenu retoriku u kampanji za širu javnost s radikalnijim stavovima prema stranačkoj bazi.
 :::
 
+::: {.callout-vjezba}
+Promotrite pet birača smještenih na lijevo-desno osi od 0 do 10, s idealnim točkama 1, 3, 5, 7 i 9. Svaki birač glasuje za stranku koja je najbliža njegovoj idealnoj točki, a dvije stranke koje se natječu za vlast žele maksimizirati broj glasova. (a) Odredite poziciju medijanskog glasača i objasnite zašto je upravo ta točka ravnotežna lokacija za obje stranke u dvostranačkom natjecanju. (b) Pretpostavite da stranka A zauzme poziciju 3, a stranka B poziciju 7. Pokažite koliko glasova osvaja svaka stranka i objasnite zašto svaka od njih ima poticaj pomaknuti se prema sredini sve dok obje ne završe u medijanu. (c) Sada u natjecanje uđe treća stranka koja slobodno bira poziciju nakon što su A i B već smještene u medijanu. Odredite gdje bi se isplatilo smjestiti i pokažite zašto ulazak trećeg igrača razbija stabilnost središnje ravnoteže. (d) Zamijenite jednodimenzionalnu os dvjema dimenzijama tako da uz lijevo-desno ekonomsku os dodate i vrijednosnu os, pa kratko obrazložite zašto u dvodimenzionalnom prostoru jasna središnja pozicija često više ne postoji. Objasnite zatim zašto model koji predviđa konvergenciju prema centru istodobno pomaže razumjeti polarizaciju koju opažamo u stvarnim demokracijama.
+:::
+
 ## Racionalna neinformiranost i izlaznost
 
 Posebnost izbora kao mehanizma kolektivnog odlučivanja jest da pojedinačni glas gotovo nikada ne odlučuje ishod. Anthony Downs [@downs1957] formalizirao je to kroz **račun glasovanja**, koji su Riker i Ordeshook [@riker1968] zapisali kao

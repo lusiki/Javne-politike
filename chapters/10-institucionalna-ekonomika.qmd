@@ -50,6 +50,20 @@ Važno je naglasiti da transakcijski troškovi nisu nepromjenjivi. Oni se mogu s
 Razlika u transakcijskim troškovima vidljiva je u tome koliko je lako prenijeti vlasništvo nad nekretninom. U zemljama s digitalnim zemljišnim registrima, jasnim vlasničkim pravima i brzim sudovima prijenos nekretnine traje nekoliko dana i košta vrlo malo, dok u zemljama sa zastarjelim ili nepouzdanim registrima isti postupak može trajati mjesecima i tražiti odvjetnike, javne bilježnike i opsežne provjere. Ti troškovi ne mijenjaju fizičku vrijednost nekretnine, ali određuju koliko će se transakcija uopće dogoditi, koliko će tržište najma biti razvijeno i koliko su vlasnici spremni ulagati. Upravo zato su reforme registara i ubrzanje sudova među najjeftinijim načinima na koje država može povećati učinkovitost tržišta, a da uopće ne dira u same cijene.
 :::
 
+::: {.callout-vjezba}
+Zamislite poduzeće koje treba osigurati specijalizirani sastavni dio za svoj proizvod i bira između dvaju načina upravljanja tom transakcijom. Prvi je nabava na tržištu od vanjskog dobavljača, a drugi je proizvodnja unutar vlastite hijerarhije. Pretpostavite da se ukupni transakcijski trošak sastoji od troška koordinacije, troška sastavljanja i pregovaranja ugovora te troška nadzora i provedbe.
+
+Pri nabavi na tržištu trošak koordinacije iznosi 20 novčanih jedinica, trošak ugovaranja 50, a trošak nadzora i provedbe 40. Pri proizvodnji unutar poduzeća trošak koordinacije iznosi 60, trošak ugovaranja 10, a trošak nadzora i provedbe 30.
+
+(a) Izračunajte ukupni transakcijski trošak za svaki način upravljanja i odredite koji je oblik učinkovitiji u polaznom scenariju.
+
+(b) Pretpostavite sada da dio postaje znatno specifičniji za potrebe ovog poduzeća, pa zbog veće ovisnosti o jednom partneru i veće opasnosti od oportunizma trošak ugovaranja na tržištu raste sa 50 na 110, dok ostali troškovi ostaju nepromijenjeni. Ponovno izračunajte ukupne troškove i pokažite kako se odluka o učinkovitom obliku upravljanja mijenja.
+
+(c) Zadržite vrijednosti iz polaznog scenarija, ali pretpostavite da slabe institucije provedbe ugovora podižu trošak nadzora i provedbe pri tržišnoj nabavi sa 40 na 90. Procijenite kako to mijenja ukupan trošak tržišne razmjene i odabir učinkovitog oblika upravljanja.
+
+Objasnite zašto ovaj zadatak otkriva da granica između tržišta i hijerarhije nije unaprijed zadana, nego ovisi o tome gdje su transakcijski troškovi najniži. Povežite svoj odgovor s Northovim uvidom da institucije postoje upravo zato da snize transakcijske troškove razmjene te objasnite zašto slabe institucije provedbe poskupljuju razmjenu i koče dugoročni rast.
+:::
+
 ## Institucije i tržište rada
 
 Uloga institucija posebno je vidljiva na **tržištu rada**. Tržište rada nije samo mjesto na kojem se susreću ponuda i potražnja za radom. Ono je snažno oblikovano zakonima, kolektivnim ugovorima, poreznim sustavom, socijalnom zaštitom, obrazovnim sustavom, sudstvom i normama o radu. Zato zemlje slične razine razvoja mogu imati vrlo različite stope zaposlenosti, nezaposlenosti mladih, dugotrajne nezaposlenosti ili neformalnog rada.

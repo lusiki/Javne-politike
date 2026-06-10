@@ -99,6 +99,14 @@ ref_s = ref_controls.s
 
 *Stilizirani prikaz pouke o sekvenciranju — vjerojatnost uspjeha najveća je kada brzina reforme odgovara institucionalnom kapacitetu; pri niskom kapacitetu uspijeva postupnost, a prebrza „šok" reforma pada, dok visok kapacitet podnosi i brže promjene.*
 
+::: {.callout-vjezba}
+Pretpostavite gospodarstvo sa sto identičnih birača koji glasaju o reformi prostom većinom. Reforma će nakon provedbe stvoriti 60 dobitnika, od kojih svaki dobiva +40, i 40 gubitnika, od kojih svaki gubi −30. Ex ante nijedan birač ne zna kojoj će skupini pripasti, pa svatko procjenjuje da će biti dobitnik s vjerojatnošću 0,6, a gubitnik s vjerojatnošću 0,4. Tko ostaje pri statusu quo ima siguran ishod 0.
+
+(a) Izračunajte agregatni neto učinak reforme i potvrdite da je ona za društvo u cjelini korisna. (b) Izračunajte očekivani ishod jednog birača pod individualno specifičnom neizvjesnošću i objasnite zašto bi racionalan birač u toj situaciji glasao protiv reforme, iako bi je ex post većina podržala. (c) Reformator sada nudi kompenzacijsku shemu kojom se svakom budućem gubitniku iz reformskog viška isplaćuje naknada od 20. Izračunajte novi očekivani ishod birača i pokažite da reforma sada dobiva većinu.
+
+Otvorite interaktivni graf iznad i razmislite o vezi između ova dva uvida. Naknada u zadatku ne mijenja ukupan reformski višak, nego raspodjelu rizika među biračima, dok klizač na grafu mijenja brzinu reforme pri zadanom kapacitetu. Objasnite zašto i kompenzacija i ispravno sekvenciranje djeluju kroz isti kanal, to jest kroz smanjenje neizvjesnosti i otpora bez promjene ekonomske supstance mjere, i što to otkriva o tome zašto agregatno korisne reforme tako često ostaju blokirane.
+:::
+
 Rodrikov pregled tri desetljeća međunarodnih reformskih iskustava sažima isti obrazac iz drugog kuta [@rodrik2011]. Zemlje koje su brzo i istodobno provodile cijelu listu „najbolje prakse" (liberalizacija trgovine, deregulacija tržišta rada, privatizacija velikih razmjera, otvaranje kapitalnog računa) sustavno su pokazivale slabije rezultate od zemalja koje su isti skup reformi provodile selektivno i postupno, prilagođavajući redoslijed lokalnim ograničenjima. Ključ nije bio u sadržaju pojedine mjere, nego u tome je li lokalna institucionalna i regulatorna infrastruktura mogla apsorbirati promjenu u tom trenutku.
 
 Iskustvo s liberalizacijom kapitalnog računa pokazuje to najjasnije. U zemljama s razvijenom bankarskom regulacijom otvaranje kapitalnog računa donijelo je dugoročne koristi. U zemljama gdje je liberalizacija prethodila uspostavi nadzora nad bankama, isti je potez ubrzao pojavu financijskih kriza. Pouka nije da je liberalizacija loša politika, nego da je redoslijed dio sadržaja reforme, a ne tehnički detalj koji dolazi poslije.

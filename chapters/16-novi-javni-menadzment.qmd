@@ -60,6 +60,18 @@ Da pokazatelji postaju meta, a ne samo mjera, potvrđuju iskustva s ciljevima u�
 
 Reakcija na taj problem nije odustajanje od mjerenja, nego višestrukost mjera koje akteri ne mogu istodobno zadovoljiti samo igrom s brojkama. Kombinacija pokazatelja procesa i ishoda, redovita revizija po slučajnom uzorku i izvori informacija izvan same institucije, primjerice ankete korisnika ili neovisne kliničke procjene, smanjuju prostor za prilagodbu mjeri umjesto cilju. Bez te višeslojnosti, „upravljanje prema rezultatima" lako se izrodi u upravljanje prema pokazateljima.
 
+::: {.callout-vjezba}
+Pretpostavite da javna agencija upravlja sustavom bolnica i da resorno ministarstvo postavlja cilj prema kojem udio pacijenata koji na specijalistički pregled čekaju dulje od 90 dana mora pasti ispod 5 posto. U polaznoj godini bolnica ima 1000 pacijenata na listi, od kojih 200 čeka dulje od 90 dana, pa udjel iznosi 20 posto. Sljedeće godine bolnica ne povećava stvarnu propusnost, ali 180 najsloženijih pacijenata premjesti u zasebnu „pripremnu" evidenciju koja se ne računa u službenu listu te 50 pacijenata preusmjeri privatnim ustanovama na trošak korisnika.
+
+(a) Izračunajte prijavljeni udjel dugotrajnih čekanja nakon premještanja, uzimajući u obzir samo pacijente koji ostaju na službenoj listi, i usporedite ga s ciljem od 5 posto.
+
+(b) Procijenite stvarni udjel dugotrajnih čekanja ako u brojnik i nazivnik vratite sve pacijente koji i dalje čekaju, uključujući premještene i preusmjerene, te objasnite koja konkretna ponašanja stvaraju razliku između prijavljene i stvarne uspješnosti.
+
+(c) Predložite jednu protumjeru koja bi suzila prostor za ovakvu prilagodbu, primjerice neovisnu reviziju uzorka predmeta ili praćenje ishoda iz izvora izvan same bolnice, i objasnite zašto ni ta protumjera ne uklanja problem u potpunosti.
+
+Na kraju objasnite zašto ovaj primjer ilustrira Goodhartov zakon i zašto sam čin mjerenja nekog pokazatelja mijenja ponašanje aktera koje se mjeri.
+:::
+
 ## Građanin kao korisnik, klijent ili kupac?
 
 Jedna od najprepoznatljivijih promjena koju donosi NPM jest novi pogled na građanina. U tradicionalnom modelu građanin je promatran kao stranka, korisnik prava ili adresat javne vlasti. U NPM-u se sve češće govori o građaninu kao **korisniku usluge**, pa čak i kao „klijentu" ili „kupcu" javnog sektora [@osborne1992].

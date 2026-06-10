@@ -185,6 +185,18 @@ score_vals = score_controls
 
 Takav pristup mijenja način razmišljanja o javnim politikama. Umjesto da se krene od instrumenta („treba uvesti subvenciju", „treba donijeti zakon", „treba osnovati agenciju"), analiza mora krenuti od problema, poticaja i institucionalnog konteksta. Loše javne politike često ne propadaju zato što nisu imale dobar cilj, nego zato što su podcijenile državne neuspjehe.
 
+::: {.callout-vjezba}
+Pretpostavite hipotetsko gospodarstvo u kojem nereguliran monopol na nekom tržištu stvara gubitak blagostanja procijenjen na 100 milijuna novčanih jedinica godišnje. Vlada razmatra intervenciju kojom bi regulirala cijene i nadzirala ponašanje monopolista. Procjene pokazuju da bi regulacija uklonila otprilike 70 milijuna gubitka, ali bi sama proizvela tri vrste troška, administrativni trošak regulatornog tijela od 15 milijuna, distorzijski trošak od 25 milijuna zbog slabijih poticaja monopolista za ulaganje i trošak usklađivanja na strani poduzeća od 20 milijuna.
+
+(a) Izračunajte neto učinak intervencije tako da od uklonjenog dijela tržišnog gubitka oduzmete zbroj triju troškova remedije. Utvrdite je li intervencija u ovom obliku neto korisna ili neto štetna i za koliki iznos.
+
+(b) Razvrstajte troškove koje ste zbrojili prema tipologiji iz ovog poglavlja. Objasnite koji od njih upućuje na instrumentalni neuspjeh, koji na birokratski neuspjeh kroz širenje procedura, a koji na regulatorni neuspjeh kroz prebacivanje tereta na cijene i kvalitetu.
+
+(c) Primijenite tri pitanja iz testa državnog neuspjeha, ono o izboru instrumenta s najmanje distorzija, ono o kapacitetu države za provedbu i ono o mjerenju rezultata i mogućnosti ukidanja. Procijenite na kojem bi pitanju ova intervencija najvjerojatnije pala.
+
+Objasnite zašto sama činjenica da tržišni neuspjeh postoji i da iznosi 100 milijuna ne dokazuje da je intervencija opravdana, nego se opravdanje pojavljuje tek kad korist remedije nadmaši njezin puni trošak.
+:::
+
 ## Zaključno — ne protiv države, nego za bolju državu
 
 Analiza državnih neuspjeha nije argument protiv države. Ona je argument protiv naivnog pogleda na državu. Složena društva trebaju državu zbog javnih dobara, sigurnosti, infrastrukture, obrazovanja, zdravstva, socijalne zaštite, regulacije tržišta i stabilizacije gospodarstva. Ali sposobna država nije ona koja samo mnogo intervenira, nego ona koja zna kada intervenirati, kojim instrumentom, s kojim kapacitetom i uz kakvu odgovornost.
