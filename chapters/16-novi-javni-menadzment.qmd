@@ -58,11 +58,11 @@ NPM je zato pokušao pomaknuti fokus s pitanja „je li procedura poštovana?" n
 **Upravljanje prema rezultatima** (*performance management*) je menadžerski pristup koji ocjenjuje javne institucije prema postignutim ishodima, a ne prema usklađenosti s procedurama; kombinira stratešku autonomiju s odgovornošću za mjerljive pokazatelje uspješnosti.
 :::
 
+U javni sektor uvode se koncepti poput **upravljanja prema rezultatima**, strateškog planiranja, pokazatelja uspješnosti, vrednovanja programa, ugovora o učinku i koncepta „vrijednosti za novac" (*value for money*). U takvom pristupu javne institucije dobivaju veću autonomiju, ali i veću odgovornost. One se ne ocjenjuju samo prema tome jesu li potrošile sredstva u skladu s pravilima, nego prema rezultatima kao što su kraće liste čekanja, bolji obrazovni ishodi ili brže rješavanje predmeta. Sve te promjene okupljene su oko jednog mjerila, **vrijednosti za novac**.
+
 ::: {#def-value-for-money}
 **Vrijednost za novac** (*value for money*) je NPM kriterij koji traži da se javna sredstva alociraju na način koji osigurava najveći mogući ishod po utrošenom euru, kombinirajući ekonomičnost (niski input-trošak), učinkovitost (dobar omjer output/input) i efektivnost (postizanje ciljnog ishoda).
 :::
-
-U javni sektor uvode se koncepti poput **upravljanja prema rezultatima**, strateškog planiranja, pokazatelja uspješnosti, vrednovanja programa, ugovora o učinku i koncepta „vrijednosti za novac" (*value for money*). U takvom pristupu javne institucije dobivaju veću autonomiju, ali i veću odgovornost. One se ne ocjenjuju samo prema tome jesu li potrošile sredstva u skladu s pravilima, nego prema rezultatima kao što su kraće liste čekanja, bolji obrazovni ishodi ili brže rješavanje predmeta.
 
 Međutim, upravljanje prema rezultatima donosi i **problem mjerenja**. U privatnom sektoru profit je jednostavan, iako ne savršen, pokazatelj uspjeha. U javnom sektoru takav jedinstveni pokazatelj ne postoji. Škola nije uspješna samo ako ima visoke rezultate na testovima, nego i ako razvija kritičko mišljenje i građansku odgovornost. Bolnica nije uspješna samo ako obavi velik broj zahvata, nego i ako osigurava kvalitetnu i pravednu skrb. Zato je jedan od glavnih izazova NPM-a bio kako mjeriti ono što je važno, a ne samo ono što je lako mjerljivo.
 
@@ -86,11 +86,13 @@ Ovaj pomak imao je pozitivne učinke jer je javnu upravu prisilio da više razmi
 
 ## Agencifikacija i razdvajanje politike od provedbe
 
+Važan element NPM-a bila je i **agencifikacija**, stvaranje autonomnih ili poluautonomnih javnih agencija. Ideja je bila razdvojiti oblikovanje politika od njihove provedbe tako da se ministarstva bave strategijom, zakonima i prioritetima, dok bi specijalizirane agencije profesionalno i učinkovito provodile programe.
+
 ::: {#def-agencifikacija}
 **Agencifikacija** je NPM reforma kojom se odvojilo oblikovanje politike (u ministarstvima) od njezine provedbe (u autonomnim ili poluautonomnim agencijama), s ciljem veće stručnosti i fleksibilnosti, ali uz rizik oslabljene koordinacije i demokratskog nadzora.
 :::
 
-Važan element NPM-a bila je i **agencifikacija**, stvaranje autonomnih ili poluautonomnih javnih agencija. Ideja je bila razdvojiti oblikovanje politika od njihove provedbe tako da se ministarstva bave strategijom, zakonima i prioritetima, dok bi specijalizirane agencije profesionalno i učinkovito provodile programe. Agencije mogu biti stručnije, fleksibilnije i manje izložene dnevnoj politici, što u područjima poput regulacije tržišta ili nadzora financijskog sustava često ima smisla.
+Agencije mogu biti stručnije, fleksibilnije i manje izložene dnevnoj politici, što u područjima poput regulacije tržišta ili nadzora financijskog sustava često ima smisla.
 
 No agencifikacija je otvorila i problem odgovornosti. Ako ministarstvo nije izravno nadležno za provedbu, a agencija ima autonomiju, tko je politički odgovoran kada sustav zakaže? Ako agencija ostvaruje formalne pokazatelje, ali ne ispunjava širi javni interes, tko to može korigirati? Autonomne organizacije mogu povećati učinkovitost, ali istodobno otežati koordinaciju i demokratski nadzor.
 

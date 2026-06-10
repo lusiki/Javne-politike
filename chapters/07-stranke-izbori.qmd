@@ -18,17 +18,17 @@ Politička je konkurencija stoga strateška igra pozicioniranja, diferencijacije
 
 ## Medijanski glasač i natjecanje za centar
 
+Najutjecajniji model političkog natjecanja jest **model medijanskog glasača**, čiji su temelji u radovima Hotellinga [@hotelling1929], Blacka [@black1948] i Downsa [@downs1957]. Ako birače možemo poredati na jednoj ideološkoj osi, primjerice od „manje države" prema „više države", i ako svaki birač glasuje za stranku koja je najbliža njegovoj idealnoj točki, tada dvije stranke koje se natječu za vlast imaju snažan poticaj približiti se sredini, odnosno preferencijama medijanskog glasača.
+
 ::: {#def-hotelling-downs}
 **Hotelling-Downsov model** tvrdi da dvije stranke koje se natječu za glasove birača poredanih na jednoj ideološkoj osi imaju snažan poticaj pozicionirati se što bliže preferencijama medijanskog glasača kako bi pobijedile na izborima [@hotelling1929; @downs1957].
 :::
 
+Logika je jednostavna. Stranka koja zauzme krajnju poziciju osvaja birače sa svoga kraja osi, ali gubi velik dio sredine. Pomicanjem prema centru osvaja medijanskoga glasača, a time i većinu. U klasičnom dvostranačkom natjecanju to dovodi do **konvergencije prema centru** u kojoj se obje stranke pomiču prema sredini i njihovi se programi sve više nalikuju. Taj rezultat objašnjava čestu pritužbu birača da „nema prave razlike" između velikih stranaka.
+
 ::: {#def-konvergencija-centar}
 **Konvergencija prema centru** je ravnotežni ishod dvostranačkog natjecanja u kojemu obje stranke napuštaju krajnje pozicije i pomiču se prema preferencijama medijanskog glasača, zbog čega im se programi sve više nalikuju.
 :::
-
-Najutjecajniji model političkog natjecanja jest **model medijanskog glasača**, čiji su temelji u radovima Hotellinga [@hotelling1929], Blacka [@black1948] i Downsa [@downs1957]. Ako birače možemo poredati na jednoj ideološkoj osi, primjerice od „manje države" prema „više države", i ako svaki birač glasuje za stranku koja je najbliža njegovoj idealnoj točki, tada dvije stranke koje se natječu za vlast imaju snažan poticaj približiti se sredini, odnosno preferencijama medijanskog glasača.
-
-Logika je jednostavna. Stranka koja zauzme krajnju poziciju osvaja birače sa svoga kraja osi, ali gubi velik dio sredine. Pomicanjem prema centru osvaja medijanskoga glasača, a time i većinu. U klasičnom dvostranačkom natjecanju to dovodi do **konvergencije prema centru** u kojoj se obje stranke pomiču prema sredini i njihovi se programi sve više nalikuju. Taj rezultat objašnjava čestu pritužbu birača da „nema prave razlike" između velikih stranaka.
 
 Medijanski glasač ne određuje samo ideološku poziciju stranaka, nego i konkretne fiskalne parametre koji uključuju visinu poreznih stopa, opseg socijalnih transfera, razinu javnih investicija i mirovinskih naknada. Model je snažan, ali počiva na strogim pretpostavkama o jednoj ideološkoj dimenziji, dvjema strankama, potpunoj informiranosti i sigurnosti da će svi izaći na izbore. Kada te pretpostavke padnu, slika postaje složenija.
 
@@ -54,17 +54,17 @@ Druga je strategija **herestetika**, vještina strukturiranja političkog prosto
 
 ## Što oblikuje centar i polarizaciju
 
+U stvarnosti politika rijetko ima samo jednu dimenziju. Birači istodobno vrednuju ekonomska, vrijednosna i identitetska pitanja, vanjsku politiku i okoliš. U takvom **višedimenzionalnom političkom prostoru** jasna „središnja" pozicija često ne postoji, pa se stranke mogu specijalizirati za određene skupine birača umjesto da se natječu za sredinu.
+
 ::: {#def-visedimenzionalni-prostor}
 **Višedimenzionalni politički prostor** nastaje kada birači istodobno vrednuju više neovisnih dimenzija politike (ekonomska, vrijednosna, identitetska, vanjskopolitička); u takvom prostoru jasna središnja pozicija često ne postoji, a stabilnost ishoda većinskog glasovanja gubi se sukladno McKelveyevu teoremu [@mckelvey1976].
 :::
 
+Na položaj stranaka utječu i drugi čimbenici. Izlaznost nije zajamčena. Ako se birači s krajeva spektra lakše mobiliziraju, stranke mogu imati poticaj zauzeti izraženije pozicije kako bi potaknule vlastitu bazu. Izborni je sustav također važan jer proporcionalni sustavi pogoduju većem broju stranaka i koalicijskoj politici, dok većinski sustavi guraju prema dvjema velikim strankama. Kada distribucija biračkih preferencija postane **bimodalna**, strankama se isplati napustiti centar i usredotočiti na mobilizaciju vlastite ideološki motivirane baze. Dodatno, ideološki aktivisti, veliki donatori i medijski saveznici često vrše pritisak na vodstvo da se pomakne prema rubu spektra. Zbog svega toga suvremene demokracije često pokazuju **polarizaciju** umjesto konvergencije, pri čemu se stranke udaljavaju, a središte slabi. @tbl-centrizam ilustrira raspon strategija u različitim zemljama.
+
 ::: {#def-polarizacija}
 **Polarizacija** je proces udaljavanja stranaka od centra prema suprotnim krajevima ideološkog spektra; nastaje kada distribucija biračkih preferencija postane bimodalna, kada izlaznost aktivira rubne birače ili kada ideološki pritisak unutar stranaka prevlada poticaj za osvajanje medijana.
 :::
-
-U stvarnosti politika rijetko ima samo jednu dimenziju. Birači istodobno vrednuju ekonomska, vrijednosna i identitetska pitanja, vanjsku politiku i okoliš. U višedimenzionalnom prostoru jasna „središnja" pozicija često ne postoji, pa se stranke mogu specijalizirati za određene skupine birača umjesto da se natječu za sredinu.
-
-Na položaj stranaka utječu i drugi čimbenici. Izlaznost nije zajamčena. Ako se birači s krajeva spektra lakše mobiliziraju, stranke mogu imati poticaj zauzeti izraženije pozicije kako bi potaknule vlastitu bazu. Izborni je sustav također važan jer proporcionalni sustavi pogoduju većem broju stranaka i koalicijskoj politici, dok većinski sustavi guraju prema dvjema velikim strankama. Kada distribucija biračkih preferencija postane **bimodalna**, strankama se isplati napustiti centar i usredotočiti na mobilizaciju vlastite ideološki motivirane baze. Dodatno, ideološki aktivisti, veliki donatori i medijski saveznici često vrše pritisak na vodstvo da se pomakne prema rubu spektra. Zbog svega toga suvremene demokracije često pokazuju **polarizaciju** umjesto konvergencije, pri čemu se stranke udaljavaju, a središte slabi. @tbl-centrizam ilustrira raspon strategija u različitim zemljama.
 
 | Zemlja | Prevladavajuća strategija | Ključne karakteristike | Posljedice za javne financije |
 |---|---|---|---|
@@ -112,6 +112,8 @@ Teorijski, autokratski vladar može brzo donositi i provoditi odluke bez široko
 ::: {.callout-empirija}
 Amartya Sen [@sen1999] empirijski je pokazao da u modernoj povijesti nikada nije došlo do velike gladi u funkcionalnoj demokraciji, upravo zbog mehanizama ranog upozoravanja, slobodnog tiska i pritiska javnosti. Brze, neprovjerene odluke u autokracijama (primjerice Veliki skok naprijed u Kini) pokazuju cijenu nepostojanja tih mehanizama korekcije.
 :::
+
+Ista se asimetrija prenosi i na upravljanje javnim financijama, gdje su rezultati autokracija znatno neujednačeniji nego što sugerira njihova retorika učinkovitosti.
 
 ::: {.callout-praksa}
 U području javnih financija autokratski sustavi pokazuju mješovite rezultate. Neki (Singapur, Južna Koreja u razdoblju razvoja) održali su fiskalnu disciplinu i strateško ulaganje, no većina dugoročnih autokracija završila je visokim javnim dugom, neefikasnim investicijama („bijeli slonovi") ili oboje. Kineski model, unatoč impresivnim rezultatima u prošlosti, danas se suočava s nagomilanim lokalnim dugovima i prekapacitiranim sektorima.

@@ -13,11 +13,11 @@ title: "Alokacijska funkcija i tržišni neuspjesi"
 6. Po čemu se zajednička i meritorna dobra razlikuju od ostalih tržišnih neuspjeha?
 :::
 
+Nakon što smo objasnili zašto konkurentsko tržište u idealnim uvjetima može dovesti do Pareto učinkovite alokacije, možemo jasnije razumjeti što znači **tržišni neuspjeh**. On nastaje onda kada stvarna tržišta ne zadovoljavaju uvjete pod kojima vrijedi prvi teorem ekonomike blagostanja. Tada cijene ne odražavaju sve društvene troškove i koristi, tržišta ne postoje ili ne funkcioniraju potpuno, pojedini akteri imaju tržišnu moć ili informacije nisu jednako raspoređene. U takvim okolnostima država može imati alokacijsku ulogu kroz ispravljanje ili ublažavanje neučinkovitosti koje nastaju u tržišnom procesu.
+
 ::: {#def-trzisni-neuspjeh}
 **Tržišni neuspjeh** nastaje kada stvarna tržišta ne zadovoljavaju uvjete prvog teorema ekonomike blagostanja pa cijene ne odražavaju sve društvene troškove i koristi, što znači da tržišni ishod nije Pareto učinkovit s društvenog stajališta. Klasični oblici su javna dobra, eksternalije, asimetrične informacije i tržišna moć.
 :::
-
-Nakon što smo objasnili zašto konkurentsko tržište u idealnim uvjetima može dovesti do Pareto učinkovite alokacije, možemo jasnije razumjeti što znači tržišni neuspjeh. Tržišni neuspjeh nastaje onda kada stvarna tržišta ne zadovoljavaju uvjete pod kojima vrijedi prvi teorem ekonomike blagostanja. Tada cijene ne odražavaju sve društvene troškove i koristi, tržišta ne postoje ili ne funkcioniraju potpuno, pojedini akteri imaju tržišnu moć ili informacije nisu jednako raspoređene. U takvim okolnostima država može imati alokacijsku ulogu kroz ispravljanje ili ublažavanje neučinkovitosti koje nastaju u tržišnom procesu.
 
 No stvarna tržišta često odstupaju od tog idealnog modela. Cijene ne odražavaju uvijek sve društvene troškove i koristi. Neka dobra teško je naplatiti pojedinačnom korisniku. Neki akteri raspolažu boljim informacijama od drugih. Neka poduzeća imaju toliku tržišnu moć da mogu utjecati na cijene i količine. U takvim okolnostima tržište ne mora proizvesti društveno učinkovitu količinu dobara i usluga. Upravo se ta odstupanja nazivaju tržišnim neuspjesima.
 
@@ -27,11 +27,13 @@ Važno je naglasiti da alokacijska funkcija države nije isto što i tvrdnja da 
 
 ## Javna dobra
 
+Najpoznatiji primjer tržišnog neuspjeha su **javna dobra**. Ona imaju dvije ključne karakteristike, nekonkurentnost u potrošnji i neisključivost iz potrošnje. Dobro je nekonkurentno ako potrošnja jedne osobe ne smanjuje mogućnost da isto dobro koriste i drugi. Dobro je neisključivo ako je teško ili vrlo skupo spriječiti nekoga da ga koristi, čak i ako nije platio za njega [@samuelson1954; @musgrave1959]. Zbog te kombinacije tržište takvo dobro ne uspijeva financirati jer korisnici imaju poticaj ne otkriti svoje preferencije i ostvariti ga besplatno.
+
 ::: {#def-javno-dobro}
 **Javno dobro** je dobro koje je istodobno **nekonkurentno** (potrošnja jednog korisnika ne smanjuje dostupnost drugima) i **neisključivo** (teško ili skupo je spriječiti nekoga da ga koristi). Zbog te kombinacije tržište javno dobro ne može financirati jer korisnici imaju poticaj ne otkriti svoje preferencije i ostvariti ga besplatno.
 :::
 
-Najpoznatiji primjer tržišnog neuspjeha su javna dobra. Javna dobra imaju dvije ključne karakteristike, nekonkurentnost u potrošnji i neisključivost iz potrošnje. Dobro je nekonkurentno ako potrošnja jedne osobe ne smanjuje mogućnost da isto dobro koriste i drugi. Dobro je neisključivo ako je teško ili vrlo skupo spriječiti nekoga da ga koristi, čak i ako nije platio za njega [@samuelson1954; @musgrave1959].
+Najlakše je tu kombinaciju svojstava prepoznati na konkretnim primjerima, od klasičnih udžbeničkih do suvremenih.
 
 ::: {.callout-praksa}
 Svjetionik je klasičan udžbenički primjer javnog dobra jer njegovo svjetlo koristi svim brodovima u blizini, a teško je naplatiti ga svakom pojedinom brodu. Suvremeniji je primjer satelitska navigacija. Europski sustav Galileo svoj otvoreni signal nudi besplatno svima, pa nijedan pojedinačni korisnik nema poticaj sam ga financirati, zbog čega je izgrađen javnim sredstvima Europske unije. U oba slučaja tržište bi takvo dobro proizvelo u premaloj količini ili ga uopće ne bi proizvelo, pa njegovo osiguravanje preuzima javni sektor. Granica između javnog i privatnog dobra pritom nije uvijek oštra jer tehnologija može promijeniti isključivost, kao kada naplatne ceste ili kriptirani satelitski signali omoguće da se prije neisključivo dobro ipak naplati. Upravo zato pitanje treba li neko dobro osigurati država nije jednom zauvijek riješeno, nego ovisi o troškovima isključivanja i o tome koliko bi tržišno rješenje smanjilo korist za društvo.
@@ -218,11 +220,11 @@ pg_mc = pg_controls.mc
 
 ## Eksternalije
 
+Drugi veliki oblik tržišnog neuspjeha su **eksternalije**. Eksternalija nastaje kada odluka jednog pojedinca ili poduzeća utječe na dobrobit drugih, a taj se učinak ne odražava u tržišnoj cijeni. Akter koji donosi odluku ne snosi sve troškove ili ne dobiva sve koristi koje njegova odluka stvara za društvo, pa se privatni i društveni trošak razilaze i tržišna ravnoteža više nije Pareto učinkovita [@pigou1920; @baumol1988].
+
 ::: {#def-eksternalija}
 **Eksternalija** nastaje kada odluka jednog aktera utječe na dobrobit drugih, a taj se učinak ne odražava u tržišnoj cijeni, pa se privatni i društveni trošak (ili korist) razilaze i tržišna ravnoteža nije Pareto učinkovita. Negativna eksternalija vodi prema prekomjernoj, a pozitivna prema nedovoljnoj aktivnosti.
 :::
-
-Drugi veliki oblik tržišnog neuspjeha su **eksternalije**. Eksternalija nastaje kada odluka jednog pojedinca ili poduzeća utječe na dobrobit drugih, a taj se učinak ne odražava u tržišnoj cijeni. Akter koji donosi odluku ne snosi sve troškove ili ne dobiva sve koristi koje njegova odluka stvara za društvo [@pigou1920; @baumol1988].
 
 Eksternalije mogu biti negativne i pozitivne. **Negativna eksternalija** nastaje kada privatna aktivnost stvara trošak za druge. Klasičan primjer je zagađenje. Tvornica koja ispušta štetne tvari u rijeku može smanjiti vlastite troškove proizvodnje jer ne plaća puni trošak onečišćenja. Međutim, taj trošak snose stanovnici nizvodno, ribari, lokalna zajednica, zdravstveni sustav ili buduće generacije. Budući da se trošak zagađenja ne nalazi u tržišnoj cijeni proizvoda, proizvodnja takvog proizvoda može biti veća nego što je društveno poželjno.
 
@@ -516,11 +518,11 @@ Važan doprinos razumijevanju eksternalija dao je Coase [-@coase1960], koji je p
 
 ## Asimetrične informacije
 
+Treći oblik tržišnog neuspjeha su **asimetrične informacije**. Tržišta funkcioniraju najbolje kada kupci i prodavatelji, poslodavci i radnici, banke i dužnici ili osiguravatelji i osiguranici raspolažu relevantnim informacijama. U stvarnosti to često nije slučaj. Jedna strana u razmjeni može znati mnogo više od druge, a ta informacijska neravnoteža može dovesti do neučinkovitih ili nepravednih ishoda, bilo prije sklapanja ugovora bilo nakon njega.
+
 ::: {#def-asimetricne-informacije}
 **Asimetrične informacije** nastaju kada jedna strana u razmjeni raspolaže relevantnim znanjem koje druga strana nema, što može dovesti do nepovoljnog izbora (*adverse selection*, pred sklapanjem ugovora) ili moralnog hazarda (*moral hazard*, nakon sklapanja ugovora). Oba mehanizma smanjuju učinkovitost tržišnog ishoda.
 :::
-
-Treći oblik tržišnog neuspjeha su **asimetrične informacije**. Tržišta funkcioniraju najbolje kada kupci i prodavatelji, poslodavci i radnici, banke i dužnici ili osiguravatelji i osiguranici raspolažu relevantnim informacijama. U stvarnosti to često nije slučaj. Jedna strana u razmjeni može znati mnogo više od druge, a to može dovesti do neučinkovitih ili nepravednih ishoda.
 
 Najpoznatiji primjer dao je George Akerlof u radu o tržištu „limuna", odnosno rabljenih automobila loše kvalitete [@akerlof1970]. Prodavatelj rabljenog automobila zna više o stvarnom stanju automobila od kupca. Kupac ne može lako razlikovati kvalitetan automobil od lošeg, pa je spreman platiti samo prosječnu cijenu. Ta prosječna cijena može biti preniska za vlasnike kvalitetnih automobila, koji se zato povlače s tržišta. Na tržištu ostaju uglavnom lošiji automobili. Rezultat je pad kvalitete i smanjenje razmjene, iako bi u uvjetima potpunih informacija tržište moglo bolje funkcionirati.
 

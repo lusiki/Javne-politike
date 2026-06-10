@@ -20,11 +20,11 @@ Upravo kao odgovor na ta ograničenja razvija se **nova institucionalna ekonomik
 
 ## Institucije kao pravila igre
 
+Prema klasičnoj definiciji Douglassa Northa, **institucije** su „pravila igre u društvu", odnosno formalna i neformalna ograničenja koja strukturiraju ljudsku interakciju [@north1990]. Ta definicija je važna jer pokazuje da institucije nisu samo državne ustanove u administrativnom smislu. U novoj institucionalnoj ekonomici pojam je širi i obuhvaća pravila, norme i mehanizme provedbe koji određuju što ljudi smiju, što ne smiju, što se isplati, što se kažnjava i što se očekuje.
+
 ::: {#def-institucije}
 **Institucije** su, prema Northu, „pravila igre u društvu", odnosno formalna i neformalna ograničenja koja strukturiraju ljudsku interakciju, a obuhvaćaju zakone, propise i vlasničke norme s jedne strane te norme ponašanja, konvencije i samonametana ograničenja s druge [@north1990].
 :::
-
-Prema klasičnoj definiciji Douglassa Northa, institucije su „pravila igre u društvu", odnosno formalna i neformalna ograničenja koja strukturiraju ljudsku interakciju [@north1990]. Ta definicija je važna jer pokazuje da institucije nisu samo državne ustanove u administrativnom smislu. U novoj institucionalnoj ekonomici pojam je širi i obuhvaća pravila, norme i mehanizme provedbe koji određuju što ljudi smiju, što ne smiju, što se isplati, što se kažnjava i što se očekuje.
 
 Institucije se obično dijele na **formalne** i **neformalne**. Formalne institucije uključuju ustav, zakone, regulacije, porezni sustav, vlasnička prava, ugovore, sudove i administrativne procedure. One su zapisane, službeno donesene i formalno provedive. Neformalne institucije uključuju običaje, društvene norme, kulturu, razinu povjerenja, profesionalnu etiku, očekivanja, reputaciju i nepisana pravila ponašanja. Iako nisu uvijek zapisana, neformalna pravila često snažno utječu na ponašanje. U nekim društvima riječ, reputacija i povjerenje mogu značajno smanjiti troškove poslovanja; u drugima je i za najjednostavniji posao potreban opsežan ugovor, jamstva i pravna zaštita jer akteri ne vjeruju jedni drugima.
 
@@ -42,11 +42,11 @@ Taj se mehanizam može razložiti korak po korak. Slaba provedba ugovora i nesig
 
 ## Transakcijski troškovi
 
+Jedan od najvažnijih doprinosa nove institucionalne ekonomike jest koncept **transakcijskih troškova**. Ronald Coase je u poznatom radu o prirodi poduzeća pokazao da tržišta nisu besplatna [@coase1937]. U udžbeničkim modelima često se pretpostavlja da se kupci i prodavatelji lako pronalaze, da raspolažu informacijama i da se ugovor bez problema provodi. U stvarnom svijetu svaka razmjena zahtijeva vrijeme, informacije, pregovaranje, pravnu sigurnost i povjerenje. Upravo ti „skriveni" troškovi određuju koliko će tržišta biti učinkovita i hoće li se neka transakcija uopće dogoditi.
+
 ::: {#def-transakcijski-troskovi}
 **Transakcijski troškovi** su svi troškovi korištenja tržišta koji nisu sama cijena razmijenjenog dobra, a obuhvaćaju traženje informacija, pronalaženje partnera, pregovaranje, pisanje ugovora, nadzor izvršenja i rješavanje sporova; njihovu visinu određuje kvaliteta institucija [@coase1937; @williamson1985].
 :::
-
-Jedan od najvažnijih doprinosa nove institucionalne ekonomike jest koncept **transakcijskih troškova**. Ronald Coase je u poznatom radu o prirodi poduzeća pokazao da tržišta nisu besplatna [@coase1937]. U udžbeničkim modelima često se pretpostavlja da se kupci i prodavatelji lako pronalaze, da raspolažu informacijama i da se ugovor bez problema provodi. U stvarnom svijetu svaka razmjena zahtijeva vrijeme, informacije, pregovaranje, pravnu sigurnost i povjerenje. Upravo ti „skriveni" troškovi određuju koliko će tržišta biti učinkovita i hoće li se neka transakcija uopće dogoditi.
 
 Svaka ekonomska transakcija uključuje više vrsta troškova koje obuhvaćaju pronalaženje informacija, pronalaženje pouzdanog partnera, pregovaranje, sastavljanje ugovora, nadzor izvršenja i rješavanje sporova. Za poduzetnika koji želi sklopiti ugovor cijena proizvoda samo je jedan dio ukupnog troška. Ako je institucionalni okvir slab, ti troškovi mogu postati toliko veliki da razmjena postaje preskupa ili prerizična. U tom slučaju tržište formalno postoji, ali ne funkcionira dobro jer su troškovi korištenja tržišta previsoki.
 
@@ -84,11 +84,11 @@ Ublažavanje principal–agent problema zahtijeva mehanizme transparentnosti, od
 
 ## Institucije i dugoročni razvoj
 
+Empirijska literatura snažno upućuje na zaključak da su institucije jedan od temeljnih uzroka dugoročnih razlika u razvoju među zemljama. Na toj osnovi Acemoglu i Robinson razvijaju razlikovanje između **inkluzivnih** i **ekstraktivnih** institucija [@acemoglu2012].
+
 ::: {#def-inkluzivne-ekstraktivne}
 **Inkluzivne institucije** omogućuju širokom krugu aktera sudjelovanje u ekonomskom i društvenom životu zaštitom vlasništva, ravnopravnom primjenom zakona i poticanjem konkurencije; **ekstraktivne institucije** organizirane su nasuprot tome da izvlače resurse i prilike prema uskom privilegiranom krugu [@acemoglu2012].
 :::
-
-Empirijska literatura snažno upućuje na zaključak da su institucije jedan od temeljnih uzroka dugoročnih razlika u razvoju među zemljama. Na toj osnovi Acemoglu i Robinson razvijaju razlikovanje između **inkluzivnih** i **ekstraktivnih** institucija [@acemoglu2012].
 
 Inkluzivne institucije omogućuju širokom krugu ljudi da sudjeluju u gospodarskom i društvenom životu. One štite vlasnička prava, osiguravaju relativno nepristranu primjenu zakona, potiču konkurenciju, omogućuju ulazak novih poduzeća i stvaraju prostor za inovacije. U takvom sustavu pojedinci imaju razlog ulagati u obrazovanje, štedjeti, pokretati poduzeća i uvoditi nove tehnologije jer vjeruju da će barem dio koristi od svojeg rada i rizika zadržati za sebe. Inkluzivne institucije obično su povezane s političkim pluralizmom, ograničenjima izvršne vlasti i odgovornošću institucija.
 

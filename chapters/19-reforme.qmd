@@ -130,11 +130,11 @@ Treće, tehnologija nije zamjena za institucije. Iako su digitalizacija i e-upra
 
 ## Iskustvo srednje i istočne Europe
 
+Iskustvo zemalja srednje i istočne Europe pruža jedan od najvažnijih empirijskih „laboratorija" za razumijevanje reformi. Tijekom posljednjih 35 godina te su zemlje prošle kroz duboku transformaciju, pri čemu se velik dio reformi odvijao pod snažnim utjecajem procesa pristupanja Europskoj uniji. EU je djelovala kao **vanjsko sidro** (*external anchor*) koje je postavljalo standarde, nudilo resurse i stvaralo vjerodostojan okvir za provedbu reformi.
+
 ::: {#def-vanjsko-sidro}
 **Vanjsko sidro** (*external anchor*) je institucijalni mehanizam u kojemu međunarodna organizacija ili integracija (poput pristupnih pregovora s EU) postavlja obvezujuće standarde i rokove, smanjuje neizvjesnost i povećava vjerodostojnost reformi nadoknađujući slabost domaćih institucija.
 :::
-
-Iskustvo zemalja srednje i istočne Europe pruža jedan od najvažnijih empirijskih „laboratorija" za razumijevanje reformi. Tijekom posljednjih 35 godina te su zemlje prošle kroz duboku transformaciju, pri čemu se velik dio reformi odvijao pod snažnim utjecajem procesa pristupanja Europskoj uniji. EU je djelovala kao vanjsko sidro (*anchor*) koje je postavljalo standarde, nudilo resurse i stvaralo vjerodostojan okvir za provedbu reformi.
 
 Taj „sidreni efekt" bio je posebno važan jer je smanjivao neizvjesnost i povećavao vjerodostojnost reformi. U uvjetima gdje su domaće institucije bile slabe, vanjski pritisak i jasno definirani kriteriji omogućili su ubrzanje institucionalnih promjena. U tom smislu EU integracija nije bila samo politički projekt, nego i mehanizam institucionalne modernizacije.
 
@@ -167,6 +167,16 @@ Prije svega, reforme javnog sektora nisu prvenstveno tehnički, nego duboko poli
 Peti element odnosi se na ulogu vanjskih sidara i poticaja (pristupanje EU, ERM II, NPOO), koji povećavaju vjerodostojnost reformi, ali su najdjelotvorniji kada su dopunjeni domaćim vlasništvom nad reformama. Šesto, reforme su dugotrajan i kumulativan proces, a ne jednokratni događaj, pri čemu je kontinuitet kroz različite političke cikluse jednako važan kao i početni dizajn.
 
 Konačno, možda i najvažniji zaključak jest da se uspjeh reformi ne može mjeriti brojem donesenih zakona ili strategija, nego njihovim stvarnim učinkom na funkcioniranje države. Prava mjera uspjeha nije formalna usklađenost, nego sposobnost države da učinkovito pruža javne usluge, upravlja resursima i odgovara na potrebe građana i gospodarstva. „Ključevi" uspješnih reformi mogu se zato sažeti ne kao skup tehničkih rješenja, nego kao kombinacija nekoliko međusobno povezanih elemenata, koji uključuju političku volju, realističan dizajn, snažne institucionalne kapacitete, postupnost, kontinuitet i stvarnu implementaciju. Upravo u toj kombinaciji leži razlika između reformi koje ostaju na papiru i onih koje trajno mijenjaju način funkcioniranja države.
+
+## Pogled unatrag, kroz cijelu knjigu
+
+Ovim poglavljem zatvara se put koji je knjiga otvorila u uvodu. Krenuli smo od jednostavne tvrdnje da javne politike oblikuju gotovo svaki važan dio svakodnevnog života i od odbijanja jednako jednostavnog odgovora da rješenje leži u tome da države bude više ili manje. Pravo pitanje, postavljeno na prvim stranicama, glasilo je kakva država, za koje probleme, s kojim instrumentima, pod kojim pravilima i s kakvom odgovornošću. Pet dijelova knjige nije ništa drugo nego pet uzastopnih pokušaja da se to pitanje razloži na dijelove na koje se može odgovoriti.
+
+Prvi dio postavio je klasično pitanje zašto država uopće intervenira. Alokacijska, distribucijska i stabilizacijska funkcija opisale su uvjete pod kojima tržište samo ne osigurava učinkovit, pravedan ili stabilan ishod, ali su istodobno pokazale da postojanje tržišnog neuspjeha samo otvara mogućnost intervencije, a ne dokazuje da će intervencija biti bolja. Drugi dio okrenuo je perspektivu i upitao tko zapravo donosi te odluke. Teorija javnog izbora, kolektivnog odlučivanja, stranačkog natjecanja, interesnih skupina i birokracije pokazala je da država nije dobrohotni planer izvan društva, nego skup aktera s vlastitim poticajima, pa i sama može proizvesti neučinkovite ishode. Treći dio dodao je dublji sloj jer je pokazao da i tržišta i politika djeluju unutar institucija, pravila igre koja se sporo mijenjaju i koja objašnjavaju zašto iste politike u različitim zemljama daju različite rezultate.
+
+Četvrti dio spustio je raspravu na razinu prakse, na konkretne instrumente, javnu potrošnju i poreze kojima država stvarno djeluje, te pokazao da izbor instrumenta nije neutralan nego sam raspoređuje troškove, koristi i poticaje. Peti dio konačno se vratio na početnu napetost. Pošto smo vidjeli i zašto država intervenira i kako može zakazati, postavilo se pitanje kako do kvalitetnije države. Odgovor nije bio nijedan veliki recept, nego niz pristupa, od prepoznavanja državnih neuspjeha preko novog javnog menadžmenta i mrežnog upravljanja do vrednovanja politika, a na kraju i samih reformi kao procesa kojim se sve to mijenja.
+
+Ako postoji jedna nit koja povezuje svih pet dijelova, ona je upravo metoda najavljena u uvodu. Svaku politiku vrijedi gledati kroz tri istodobne perspektive, ekonomsku koja otkriva troškove i poticaje, političku koja otkriva tko i zašto odlučuje, te institucionalnu koja otkriva može li se odluka uopće provesti. Razdvajanje namjere od mehanizma, svrhe od sredstva, ostaje minimalni zahtjev svake ozbiljne analize. Knjiga zato ne završava preporukom da država radi više ili manje, nego spoznajom da je njezina kvaliteta varijabla na koju se može i mora trajno djelovati. Dobra javna politika nije ni vjera u državu ni nepovjerenje prema njoj, nego strpljiv rad na uvjetima pod kojima kolektivne odluke stvaraju stvarnu javnu vrijednost.
 
 ::: {.sazetak-panel}
 ## Sažetak

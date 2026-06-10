@@ -12,11 +12,11 @@ title: "Od novog javnog menadžmenta prema novom upravljanju"
 5. Kako se uravnotežuju birokratska, menadžerska te mrežna i demokratska logika?
 :::
 
+Zbog ograničenja Novog javnog menadžmenta, od kraja 1990-ih i osobito tijekom 2000-ih razvija se novi val reformi javnog sektora koji se često naziva **novo javno upravljanje** (*new governance*) ili **mrežno upravljanje** (*network governance*). Dok je NPM naglašavao tržište, konkurenciju, autonomiju menadžera, mjerenje rezultata i ugovorne odnose, novi pristupi sve više naglašavaju koordinaciju, suradnju, partnerstva, povjerenje, uključivanje građana i sposobnost države da upravlja složenim mrežama aktera [@rhodes1997].
+
 ::: {#def-mrežno-upravljanje}
 **Mrežno upravljanje** (*network governance*) ili **novo javno upravljanje** (*new governance*) je pristup kojim se javne politike oblikuju i provode kroz stalne suradničke odnose između više aktera (vlada, lokalna tijela, privatni sektor, civilno društvo, građani), naglašavajući koordinaciju i povjerenje nasuprot NPM-ovom naglašavanju tržišta i autonomije menadžera [@rhodes1997].
 :::
-
-Zbog ograničenja Novog javnog menadžmenta, od kraja 1990-ih i osobito tijekom 2000-ih razvija se novi val reformi javnog sektora koji se često naziva **novo javno upravljanje** (*new governance*) ili **mrežno upravljanje** (*network governance*). Dok je NPM naglašavao tržište, konkurenciju, autonomiju menadžera, mjerenje rezultata i ugovorne odnose, novi pristupi sve više naglašavaju koordinaciju, suradnju, partnerstva, povjerenje, uključivanje građana i sposobnost države da upravlja složenim mrežama aktera [@rhodes1997].
 
 Ovaj zaokret nije značio potpuno odbacivanje NPM-a. Mnoge njegove ideje ostale su važne, jer javni sektor i dalje mora voditi računa o učinkovitosti, kvaliteti usluga, troškovima i rezultatima. Iskustvo je ipak pokazalo da tržišni mehanizmi i menadžerska autonomija sami po sebi nisu dovoljni za rješavanje složenih javnih problema. U nekim su slučajevima reforme inspirirane NPM-om proizvele nove probleme koji uključuju fragmentaciju institucija, slabu koordinaciju, prevelik broj agencija i pretjerano oslanjanje na mjerljive pokazatelje koji nisu uvijek odražavali stvarnu kvalitetu javnih usluga.
 
@@ -34,11 +34,13 @@ Upravo zato novo javno upravljanje naglašava da država više nije samo zapovje
 
 ## Whole-of-government i povezana vlada
 
+Jedan od ključnih koncepata koji se razvija nakon NPM-a jest **whole-of-government** pristup. Njegova je osnovna ideja da se javne politike ne smiju voditi kroz zatvorene administrativne „silose".
+
 ::: {#def-whole-of-government}
 **Whole-of-government** pristup je reforma organizacije javne uprave kojom se nastoji prevladati sektorska fragmentacija tako da se usluge, baze podataka i odgovornosti integriraju oko problema i korisnika, a ne oko administrativnih granica pojedinih ministarstava.
 :::
 
-Jedan od ključnih koncepata koji se razvija nakon NPM-a jest **whole-of-government** pristup. Njegova je osnovna ideja da se javne politike ne smiju voditi kroz zatvorene administrativne „silose". Tradicionalna uprava organizirana je po ministarstvima i sektorima, što omogućuje specijalizaciju, ali problemi građana rijetko poštuju administrativne granice. Nezaposlena osoba možda istodobno treba obrazovanje, socijalnu pomoć, zdravstvenu podršku i pomoć pri pronalasku posla. Whole-of-government pristup pokušava okrenuti logiku tako da se sustav organizira oko problema i korisnika, a ne oko unutarnjih granica administracije, pa se razvijaju integrirane javne usluge, jedinstvene kontaktne točke i zajedničke baze podataka.
+Tradicionalna uprava organizirana je po ministarstvima i sektorima, što omogućuje specijalizaciju, ali problemi građana rijetko poštuju administrativne granice. Nezaposlena osoba možda istodobno treba obrazovanje, socijalnu pomoć, zdravstvenu podršku i pomoć pri pronalasku posla. Whole-of-government pristup pokušava okrenuti logiku tako da se sustav organizira oko problema i korisnika, a ne oko unutarnjih granica administracije, pa se razvijaju integrirane javne usluge, jedinstvene kontaktne točke i zajedničke baze podataka.
 
 ::: {.callout-praksa}
 Whole-of-government pristup najlakše je razumjeti na primjeru integrirane javne usluge. Umjesto da nezaposlena osoba zasebno obilazi službe za zapošljavanje, socijalnu pomoć, zdravstvo i obrazovanje, neke su zemlje uspostavile jedinstvene kontaktne točke i zajedničke baze podataka koje te usluge povezuju oko korisnika, a ne oko unutarnjih granica administracije. Estonija i pojedine nordijske zemlje pokazuju da takav model može smanjiti administrativni teret i ubrzati postupke, ali samo ako su podaci interoperabilni i ako postoji jasna odgovornost za zaštitu privatnosti. Bez te institucionalne podloge integracija usluga ostaje na razini deklaracije, a građanin i dalje nosi teret povezivanja nepovezanog sustava.
@@ -48,11 +50,13 @@ Srodan pojam je **joined-up government** (povezana vlada), koji se posebno razvi
 
 ## Mreže javnih politika i partnerstva
 
+Važno mjesto u novom upravljanju zauzimaju **mreže javnih politika** (*policy networks*). One nastaju kada se javne politike oblikuju i provode kroz stalne odnose više aktera.
+
 ::: {#def-mreze-javnih-politika}
 **Mreže javnih politika** (*policy networks*) su stabilne suradničke strukture u kojima se javne politike oblikuju i provode kroz stalne odnose između višestrukih aktera koji dijele resurse i informacije; mogu povećati kvalitetu politika, ali nose rizik zarobljavanja od posebnih interesa.
 :::
 
-Važno mjesto u novom upravljanju zauzimaju **mreže javnih politika** (*policy networks*). Mreže nastaju kada se javne politike oblikuju i provode kroz stalne odnose više aktera. U području zdravstva to su ministarstvo, bolnice, liječničke komore, fond zdravstvenog osiguranja, privatni pružatelji, pacijentske udruge i farmaceutska industrija. Mreže mogu povećati kvalitetu javnih politika jer okupljaju znanje, informacije i resurse različitih aktera. Imaju, međutim, i svoje rizike. Ako su zatvorene, mogu postati prostor za utjecaj interesnih skupina i rentijerstvo. Ako su nejasno organizirane, mogu otežati odgovornost. Zato mrežno upravljanje zahtijeva snažne institucije, jasna pravila, transparentnost i sposobnost države da razlikuje suradnju od zarobljavanja politike od strane posebnih interesa.
+U području zdravstva to su ministarstvo, bolnice, liječničke komore, fond zdravstvenog osiguranja, privatni pružatelji, pacijentske udruge i farmaceutska industrija. Mreže mogu povećati kvalitetu javnih politika jer okupljaju znanje, informacije i resurse različitih aktera. Imaju, međutim, i svoje rizike. Ako su zatvorene, mogu postati prostor za utjecaj interesnih skupina i rentijerstvo. Ako su nejasno organizirane, mogu otežati odgovornost. Zato mrežno upravljanje zahtijeva snažne institucije, jasna pravila, transparentnost i sposobnost države da razlikuje suradnju od zarobljavanja politike od strane posebnih interesa.
 
 Empirijska sinteza više od stotinu studija pokazuje da uspjeh mrežnog upravljanja nije slučajan, nego ovisi o nekoliko mjerljivih uvjeta [@anselgash2008]. Suradnja se pokazuje najuspješnijom kada je sudjelovanje široko, ali ima jasna pravila o tome tko može ući i kako se odluke obvezuju, kada postoji raniji pozitivan saldo međusobnog djelovanja među akterima i kada javna vlast preuzima ulogu posrednika, a ne samo participanta. Tamo gdje su akteri ulazili s otvorenim sukobom, gdje je raspored moći bio izrazito nesimetričan ili gdje su vremenski okviri bili prekratki da se izgradi povjerenje, mreže su redovito tonule u puko savjetovanje bez stvarnog utjecaja na odluke.
 
@@ -80,11 +84,11 @@ Jedan institucionalni odgovor na pristranost sudjelovanja zaslužuje posebnu pa�
 
 ## Digitalizacija i nova država
 
+Digitalizacija dodatno mijenja raspravu o novom upravljanju. Suvremena e-uprava, digitalni identitet, interoperabilne baze podataka, elektronički potpisi i digitalne javne usluge omogućuju državi da bude učinkovitija, brža i dostupnija. Takav model javne uprave sve se češće naziva **digitalnom državom**. Primjeri poput Estonije pokazuju da digitalizacija može biti snažan instrument modernizacije ako je povezana s institucionalnom reformom, jasnim pravilima i povjerenjem građana [@margetts2013].
+
 ::: {#def-digitalna-drzava}
 **Digitalna država** (*digital government*) je model javne uprave koji koristi digitalnu infrastrukturu (e-usluge, interoperabilne baze, elektronički identitet, algoritamske odluke) radi veće učinkovitosti i dostupnosti, ali uz nova pitanja o vlasništvu nad podacima, privatnosti, algoritamskoj pristranosti i demokratskoj odgovornosti [@margetts2013].
 :::
-
-Digitalizacija dodatno mijenja raspravu o novom upravljanju. Suvremena e-uprava, digitalni identitet, interoperabilne baze podataka, elektronički potpisi i digitalne javne usluge omogućuju državi da bude učinkovitija, brža i dostupnija. Primjeri poput Estonije pokazuju da digitalizacija može biti snažan instrument modernizacije ako je povezana s institucionalnom reformom, jasnim pravilima i povjerenjem građana [@margetts2013].
 
 Digitalna država ipak nije samo tehničko pitanje. Ona otvara duboka pitanja javne politike o tome tko kontrolira podatke, kako se štiti privatnost, kako se sprječava algoritamska pristranost, što se događa s građanima koji nemaju digitalne vještine i tko je odgovoran ako automatizirani sustav donese pogrešnu odluku.
 

@@ -49,11 +49,11 @@ No javna potrošnja nosi i rizike. Ako je loše usmjerena, može financirati pro
 
 ## Regulacija
 
+**Regulacija** uključuje pravila, standarde, zabrane, dozvole i nadzorne mehanizme kojima država usmjerava ponašanje pojedinaca, poduzeća i institucija. Za razliku od poreza i javne potrošnje, regulacija često ne uključuje izravne financijske tokove kroz proračun, ali može imati vrlo snažan učinak na tržišta i društvene odnose.
+
 ::: {#def-regulacija}
 **Regulacija** je instrument javne politike temeljen na autoritetnom resursu (*authority*), koji obuhvaća pravila, standarde, zabrane, dozvole i nadzorne mehanizme kojima država usmjerava ponašanje subjekata bez izravnih financijskih transfera.
 :::
-
-**Regulacija** uključuje pravila, standarde, zabrane, dozvole i nadzorne mehanizme kojima država usmjerava ponašanje pojedinaca, poduzeća i institucija. Za razliku od poreza i javne potrošnje, regulacija često ne uključuje izravne financijske tokove kroz proračun, ali može imati vrlo snažan učinak na tržišta i društvene odnose.
 
 Država regulacijom određuje pravila tržišne utakmice. Ona propisuje standarde sigurnosti hrane i lijekova, uvjete rada, zaštitu potrošača, bankarsku regulaciju, tržišno natjecanje, zaštitu okoliša, urbanistička pravila i licenciranje određenih profesija. Bez regulacije mnoga tržišta ne bi mogla funkcionirati sigurno i predvidljivo. Regulacija je osobito važna kod prirodnih monopola, gdje država mora regulirati cijene, kvalitetu usluge i uvjete pristupa infrastrukturi.
 
@@ -61,11 +61,11 @@ Ipak, regulacija nije bez troškova. Prekomjerna ili loše dizajnirana regulacij
 
 ## Subvencije
 
+**Subvencije** su oblik financijske potpore koju država dodjeljuje određenim sektorima, poduzećima, kućanstvima ili aktivnostima. One mogu biti izravne, primjerice isplata potpore iz proračuna, ili neizravne, primjerice porezne olakšice, povlašteni krediti, državna jamstva ili niže cijene javnih usluga.
+
 ::: {#def-subvencija}
 **Subvencija** je izravna ili neizravna financijska potpora koju država dodjeljuje određenim sektorima, poduzećima, kućanstvima ili aktivnostima u obliku porezne olakšice, povlaštenog kredita, jamstva ili proračunske isplate, radi poticanja poželjnog ponašanja ili nadoknade pozitivnih eksternalija.
 :::
-
-**Subvencije** su oblik financijske potpore koju država dodjeljuje određenim sektorima, poduzećima, kućanstvima ili aktivnostima. One mogu biti izravne, primjerice isplata potpore iz proračuna, ili neizravne, primjerice porezne olakšice, povlašteni krediti, državna jamstva ili niže cijene javnih usluga.
 
 Subvencije se najčešće opravdavaju trima argumentima. Prvo, mogu se koristiti za poticanje aktivnosti koje imaju pozitivne eksternalije, primjerice ulaganja u istraživanje i razvoj, obrazovanje ili zelene tehnologije. Drugo, koriste se za zaštitu određenih skupina ili sektora, primjerice poljoprivrede. Treće, koriste se kao instrument industrijske politike, kada država želi potaknuti razvoj novih sektora ili strateških industrija.
 
@@ -77,11 +77,11 @@ Ista logika vrijedi za politiku rada. Nordijske zemlje kombiniraju visoke aktivn
 
 ## Javna poduzeća
 
+U određenim sektorima država ne djeluje samo kao regulator, financijer ili naručitelj, nego i kao izravni proizvođač putem **javnih poduzeća**. Ona najčešće djeluju u sektorima energetike, prometa, komunalnih usluga, voda, šuma, infrastrukture ili drugih područja od strateškog interesa.
+
 ::: {#def-javno-poduzece}
 **Javno poduzeće** je organizacija u (pretežno) državnom vlasništvu koja izravno pruža dobra ili usluge, najčešće u sektorima s prirodnim monopolom ili strateškim interesom; kombinira poslovnu logiku s javnim ciljevima, što stvara rizik miješanja ciljeva i slabijih poticaja za učinkovitost.
 :::
-
-U određenim sektorima država ne djeluje samo kao regulator, financijer ili naručitelj, nego i kao izravni proizvođač putem **javnih poduzeća**. Javna poduzeća najčešće djeluju u sektorima energetike, prometa, komunalnih usluga, voda, šuma, infrastrukture ili drugih područja od strateškog interesa.
 
 Razlozi za javno vlasništvo mogu biti različiti, od prirodnih monopola i strateške važnosti sektora do potrebe da se osigura univerzalna usluga svim građanima neovisno o lokaciji ili platežnoj sposobnosti. Javna poduzeća mogu imati važnu razvojnu i društvenu ulogu, no često se suočavaju s problemima učinkovitosti i političkog utjecaja. Budući da nisu uvijek izložena tržišnoj konkurenciji, mogu imati slabije poticaje za smanjenje troškova, a budući da su u javnom vlasništvu, mogu biti izložena političkom kadroviranju i investicijama s političkim motivima.
 

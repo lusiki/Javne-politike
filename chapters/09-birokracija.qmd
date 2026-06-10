@@ -19,11 +19,11 @@ Klasičan pogled na birokraciju najčešće se povezuje s Maxom Weberom i njegov
 
 ## Klasičan, weberovski pogled
 
+Klasičan pogled na birokraciju polazi od ideje da moderna država ne može funkcionirati bez profesionalne administracije. Kako društva postaju složenija, ne mogu se više oslanjati na osobne odnose, običaje, lojalnost vladaru ili diskrecijske odluke pojedinaca. Moderna država mora upravljati porezima, sudovima, vojskom, obrazovanjem, infrastrukturom, javnim zdravljem, socijalnim sustavom i regulatornim institucijama. Za takve funkcije potrebna je organizacija koja je stabilna, predvidiva, stručna i relativno neovisna o osobnim interesima pojedinaca. Upravo to Max Weber opisuje kao **weberovsku birokraciju**, profesionalnu upravu utemeljenu na racionalno-legalnoj vlasti.
+
 ::: {#def-weberovska-birokracija}
 **Weberovska birokracija** je model profesionalne državne uprave koji Max Weber definira kroz racionalno-legalnu vlast, u kojoj su nadležnosti, postupci i odgovornosti uređeni formalnim pravilima, a ne osobnom lojalnošću, čime se jamče predvidivost, jednakost pred pravilima i kontinuitet države [@weber1978].
 :::
-
-Klasičan pogled na birokraciju polazi od ideje da moderna država ne može funkcionirati bez profesionalne administracije. Kako društva postaju složenija, ne mogu se više oslanjati na osobne odnose, običaje, lojalnost vladaru ili diskrecijske odluke pojedinaca. Moderna država mora upravljati porezima, sudovima, vojskom, obrazovanjem, infrastrukturom, javnim zdravljem, socijalnim sustavom i regulatornim institucijama. Za takve funkcije potrebna je organizacija koja je stabilna, predvidiva, stručna i relativno neovisna o osobnim interesima pojedinaca.
 
 Weber birokraciju povezuje s pojmom **racionalno-legalne vlasti**. „Legalna" je zato što se temelji na zakonima i formalnim pravilima, a „racionalna" zato što su nadležnosti, postupci i odgovornosti organizirani prema unaprijed određenim kriterijima. Službenik ne odlučuje prema osobnom dojmu, simpatiji ili političkoj lojalnosti, nego prema propisanoj proceduri. U idealnom slučaju, građanin može očekivati da će njegov predmet biti riješen na isti način neovisno o tome poznaje li službenika, kojoj političkoj stranci pripada ili kakav društveni status ima.
 
@@ -61,11 +61,11 @@ Za teoriju javnog izbora ključno je pitanje poticaja. Ako političari žele rei
 
 ### Niskanenov model birokrata kao maksimizatora proračuna
 
+Najpoznatiji model birokracije u teoriji javnog izbora razvio je William A. Niskanen [@niskanen1971]. **Niskanenov model** postavlja jednostavno, ali vrlo utjecajno pitanje o tome što birokrati maksimiziraju ako ne maksimiziraju profit.
+
 ::: {#def-niskanenov-model}
 **Niskanenov model** tvrdi da birokrati, suočeni s monopolskim položajem i informacijskom prednošću pred političko-proračunskim nadzornicima, maksimiziraju veličinu proračuna institucije jer veći proračun donosi veću plaću, status i autonomiju, što rezultira sustavno nadoptimalnom potrošnjom [@niskanen1971].
 :::
-
-Najpoznatiji model birokracije u teoriji javnog izbora razvio je William A. Niskanen [@niskanen1971]. Niskanenov model postavlja jednostavno, ali vrlo utjecajno pitanje o tome što birokrati maksimiziraju ako ne maksimiziraju profit.
 
 Privatno poduzeće nastoji ostvariti što veću dobit, suočava se s konkurencijom i mora paziti na odnos troškova, cijena i potražnje. Javna birokracija nalazi se u bitno drugačijoj situaciji. Ona najčešće ne prodaje uslugu izravno korisnicima po tržišnoj cijeni i najčešće nema konkurenta kojemu građani mogu prijeći. Zato Niskanen tvrdi da birokrati ne maksimiziraju profit, nego **veličinu proračuna**.
 
@@ -156,11 +156,11 @@ Niskanenova logika vidljiva je u načinu na koji javne agencije pregovaraju o pr
 
 ### Asimetrija informacija i principal–agent problem
 
+Drugi važan model jest model asimetrije informacija, odnosno **principal–agent problem**. Ovaj model polazi od situacije u kojoj jedna strana, principal, delegira posao drugoj strani, agentu. Principal želi da agent djeluje u njegovu interesu, ali agent ima vlastite ciljeve i bolje informacije o vlastitom ponašanju.
+
 ::: {#def-principal-agent}
 **Principal–agent problem** nastaje kada principal (onaj koji delegira zadatak) ne može savršeno nadzirati agenta (onoga koji ga izvršava) jer agent ima vlastite ciljeve i bolje informacije o svom ponašanju; u javnoj upravi taj problem multiplicira se kroz višestruke razine delegiranja od građana do pojedinih službenika.
 :::
-
-Drugi važan model jest model asimetrije informacija, odnosno **principal–agent problem**. Ovaj model polazi od situacije u kojoj jedna strana, principal, delegira posao drugoj strani, agentu. Principal želi da agent djeluje u njegovu interesu, ali agent ima vlastite ciljeve i bolje informacije o vlastitom ponašanju.
 
 U javnom sektoru taj je problem posebno složen jer postoji više razina delegiranja. Građani su krajnji principal jer financiraju državu porezima i daju joj legitimnost putem izbora. Političari su agenti građana, ali zatim postaju principali birokraciji jer joj delegiraju provedbu javnih politika. Birokracija je agent političara, ali i sama delegira poslove javnim ustanovama, agencijama, lokalnim tijelima i pojedinačnim službenicima.
 

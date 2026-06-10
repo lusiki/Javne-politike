@@ -87,6 +87,34 @@ Za sve koji žele razumjeti kako država utječe na svakodnevni život, a nemaju
 §
 :::
 
+## Tri staze čitanja {#staze}
+
+Knjiga je napisana tako da je moguće čitati je u cijelosti, ali i pratiti samo onu nit koja odgovara pojedinom kolegiju ili interesu. Tri prirodne staze vode kroz iste materijale s različitim naglaskom.
+
+```{=html}
+<div class="reading-paths">
+
+<div class="reading-path">
+<p class="reading-path-label">Staza A · Javne financije</p>
+<p class="reading-path-desc">Za kolegije iz javnih financija i ekonomike javnog sektora. Naglasak na funkcijama države te na instrumentima, potrošnji i porezima u praksi.</p>
+<p class="reading-path-route">Uvod → DIO I (pogl. 1–4) → DIO IV (pogl. 12–14) → CBA i evaluacija (pogl. 18)</p>
+</div>
+
+<div class="reading-path">
+<p class="reading-path-label">Staza B · Javni izbor i institucije</p>
+<p class="reading-path-desc">Za kolegije iz političke ekonomije i teorije javnog izbora. Naglasak na tome tko donosi odluke i pod kojim pravilima.</p>
+<p class="reading-path-route">Uvod → DIO II (pogl. 5–9) → DIO III (pogl. 10–11) → Državni neuspjesi (pogl. 15)</p>
+</div>
+
+<div class="reading-path">
+<p class="reading-path-label">Staza C · Analiza i evaluacija politika</p>
+<p class="reading-path-desc">Za kolegije iz analize javnih politika i javne uprave. Naglasak na dizajnu, provedbi i vrednovanju politika.</p>
+<p class="reading-path-route">Uvod → Instrumenti (pogl. 12) → DIO V (pogl. 15–19)</p>
+</div>
+
+</div>
+```
+
 ::: {#sadržaj-wrapper .toc-collapsible-wrapper hidden=""}
 
 ## Sadržaj knjige {#sadržaj}

@@ -16,11 +16,11 @@ Javne politike ne oblikuju samo birači na izborima i stranke u parlamentu. Veli
 
 ## Logika kolektivnog djelovanja
 
+Polazna točka je Olsonova **logika kolektivnog djelovanja** [@olson1965]. Na prvi pogled očekivali bismo da velike skupine s velikim zajedničkim interesom lako organiziraju i nameću svoju volju. Olson je pokazao suprotno. Velike, raspršene skupine teško se organiziraju, dok male, koncentrirane skupine to čine lako.
+
 ::: {#def-logika-kolektivnog-djelovanja}
 **Logika kolektivnog djelovanja** Olsonova je teorija prema kojoj se male, koncentrirane skupine organiziraju lakše od velikih, raspršenih jer je poticaj svakog člana male skupine veći, a problem slobodnog jahača manji; selektivni poticaji (privatne koristi samo za članove) jedini su pouzdan lijek za norganiziranost velikih skupina [@olson1965].
 :::
-
-Polazna točka je Olsonova **logika kolektivnog djelovanja** [@olson1965]. Na prvi pogled očekivali bismo da velike skupine s velikim zajedničkim interesom lako organiziraju i nameću svoju volju. Olson je pokazao suprotno. Velike, raspršene skupine teško se organiziraju, dok male, koncentrirane skupine to čine lako.
 
 Razlog je problem slobodnog jahača primijenjen na političko djelovanje. Ako neka korist (primjerice povoljnija regulacija ili niži porez za sektor) pripada svima u skupini bez obzira na to tko se za nju izborio, svaki pojedini član ima poticaj prepustiti trošak organiziranja drugima. U velikoj skupini, gdje je pojedinačni doprinos malen, a korist svejedno zajednička, malo tko će se aktivirati. U maloj skupini, gdje svaki član ostvaruje velik i vidljiv udio koristi, poticaj za organiziranje je snažan.
 
@@ -32,11 +32,11 @@ Olsonov pesimizam o velikim skupinama ipak nije posljednja riječ. Kasnija istra
 
 ## Koncentrirane koristi, raspršeni troškovi
 
+Tako se otkriva jedna od najvažnijih asimetrija u javnim politikama, asimetrija **koncentriranih koristi i raspršenih troškova**. Mnoge politike donose veliku korist maloj, dobro organiziranoj skupini, dok je njihov trošak raspoređen na velik broj poreznih obveznika ili potrošača tako da je pojedinačni teret malen i jedva primjetan.
+
 ::: {#def-konc-koristi-rasprseni-troskovi}
 **Asimetrija koncentriranih koristi i raspršenih troškova** je strukturna odlika mnogih javnih politika u kojoj korist od neke mjere pada na malu, dobro organiziranu skupinu (koja ima snažan poticaj za lobiranje), dok je trošak raspoređen na velik broj pojedinaca čiji je individualni teret premali da bi motivirao organizirani otpor.
 :::
-
-Tako se otkriva jedna od najvažnijih asimetrija u javnim politikama, asimetrija **koncentriranih koristi i raspršenih troškova**. Mnoge politike donose veliku korist maloj, dobro organiziranoj skupini, dok je njihov trošak raspoređen na velik broj poreznih obveznika ili potrošača tako da je pojedinačni teret malen i jedva primjetan.
 
 Zamislimo subvenciju ili carinsku zaštitu koja donosi nekoliko milijuna eura uskom sektoru, a financira se s nekoliko eura po građaninu. Sektor ima snažan poticaj uložiti vrijeme, novac i stručno znanje u lobiranje za tu mjeru. Pojedini građanin, kojeg mjera košta nekoliko eura, nema poticaj ni saznati za nju, a kamoli se organizirati protiv nje. Politički ishod je sustavno pristran tako da koncentrirani interesi pobjeđuju raspršene, čak i kad je ukupna društvena korist mjere negativna.
 
@@ -48,11 +48,11 @@ U Hrvatskoj se ova logika vidi u snažnom utjecaju poljoprivrednih lobija, sindi
 
 ## Lov na rentu
 
+Kada poduzeća i skupine ulažu resurse u stjecanje političkih povlastica umjesto u stvaranje vrijednosti, govorimo o **lovu na rentu** (*rent-seeking*) [@tullock1967; @krueger1974]. Renta u ovom smislu nije prihod od najma, nego ekonomska korist koja proizlazi iz povlaštenog položaja, a ne iz veće produktivnosti, primjerice u obliku monopolske zaštite, ekskluzivne dozvole, kvote, subvencije ili porezne olakšice.
+
 ::: {#def-lov-na-rentu}
 **Lov na rentu** (*rent-seeking*) je ulaganje resursa u stjecanje političkih povlastica (monopolske zaštite, dozvola, subvencija, kvota) umjesto u stvaranje novih vrijednosti, a rezultira dvostrukim društvenim gubitkom koji obuhvaća izravno iskrivljavanje tržišnih cijena i neizravan gubitak resursa potrošenih na samo natjecanje za povlasticu [@tullock1967; @krueger1974].
 :::
-
-Kada poduzeća i skupine ulažu resurse u stjecanje političkih povlastica umjesto u stvaranje vrijednosti, govorimo o **lovu na rentu** (*rent-seeking*) [@tullock1967; @krueger1974]. Renta u ovom smislu nije prihod od najma, nego ekonomska korist koja proizlazi iz povlaštenog položaja, a ne iz veće produktivnosti, primjerice u obliku monopolske zaštite, ekskluzivne dozvole, kvote, subvencije ili porezne olakšice.
 
 Lov na rentu društveno je štetan na dva načina. Prvi je izravan jer povlastica iskrivljuje cijene, ograničava konkurenciju i prebacuje dohodak prema povlaštenoj skupini. Drugi je suptilniji, ali jednako važan, a tiče se samih resursa uloženih u nadmetanje za rentu, koji uključuju vrijeme, novac, stručnjake, lobiranje i pravne timove, a koji predstavljaju čisti društveni gubitak jer se ne koriste za proizvodnju, inovacije ili poboljšanje usluga.
 
@@ -68,11 +68,13 @@ Lov na rentu objašnjava i zašto neučinkovite povlastice nadžive svoje opravd
 
 ## Regulatorno zarobljavanje
 
+Poseban i osobito važan oblik utjecaja interesnih skupina jest **regulatorno zarobljavanje** (*regulatory capture*). Ono nastaje kada regulator, osnovan da štiti javni interes, postupno počne djelovati u interesu sektora koji bi trebao nadzirati [@stigler1971; @peltzman1976].
+
 ::: {#def-regulatorno-zarobljavanje}
 **Regulatorno zarobljavanje** (*regulatory capture*) je proces u kojemu regulator, osnovan da štiti javni interes, postupno počne djelovati u interesu sektora koji nadzire, najčešće zbog informacijske ovisnosti, organizacijske asimetrije i pojave kružnih vrata, a ne nužno zbog korupcije [@stigler1971; @peltzman1976].
 :::
 
-Poseban i osobito važan oblik utjecaja interesnih skupina jest **regulatorno zarobljavanje** (*regulatory capture*). Ono nastaje kada regulator, osnovan da štiti javni interes, postupno počne djelovati u interesu sektora koji bi trebao nadzirati [@stigler1971; @peltzman1976]. To se ne događa nužno kroz korupciju. Češće je posljedica informacijske ovisnosti (regulator zna manje o sektoru od poduzeća), organizacijske asimetrije (industrija aktivno sudjeluje u savjetovanjima, potrošači rijetko) i zajedničke profesionalne kulture. Poseban je kanal i pojava **kružnih vrata** (*revolving doors*) u kojoj dužnosnici nakon mandata prelaze na dobro plaćene pozicije u tvrtkama koje su prethodno regulirali, a stručnjaci kruže između regulatora, ministarstava i industrije [@dalbo2006].
+To se ne događa nužno kroz korupciju. Češće je posljedica informacijske ovisnosti (regulator zna manje o sektoru od poduzeća), organizacijske asimetrije (industrija aktivno sudjeluje u savjetovanjima, potrošači rijetko) i zajedničke profesionalne kulture. Poseban je kanal i pojava **kružnih vrata** (*revolving doors*) u kojoj dužnosnici nakon mandata prelaze na dobro plaćene pozicije u tvrtkama koje su prethodno regulirali, a stručnjaci kruže između regulatora, ministarstava i industrije [@dalbo2006].
 
 Originalna Stiglerova teza prikazuje regulatora kao pasivni instrument industrije koja kupuje uslugu zaštite od konkurencije. Peltzmanovo proširenje pokazuje da je situacija često složenija. Regulator stoji na razmeđi više interesnih skupina i raspoređuje svoju zaštitu tako da maksimizira ukupnu političku potporu, što znači da i potrošački interesi mogu utjecati na ishod kada su dovoljno organizirani i kada politički troškovi njihova ignoriranja postanu vidljivi [@peltzman1976]. Iz te perspektive zarobljavanje nije nužno stanje, nego varijabla. Ono raste sa starošću agencije, s tehničkom složenošću sektora i s razlikom u resursima između industrije i suprotstavljenih skupina, a slabi kada zakonodavac aktivno nadzire agenciju ili kad mediji povećaju trošak skrivene koalicije.
 

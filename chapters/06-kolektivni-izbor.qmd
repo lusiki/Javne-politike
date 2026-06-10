@@ -20,11 +20,11 @@ Na privatnom tržištu problem različitih preferencija rješava se elegantno, k
 
 ## Condorcetov paradoks
 
+Najjednostavniji prikaz problema kolektivnog izbora jest **Condorcetov paradoks** [@condorcet1785]. Zamislimo tri birača i tri opcije, A, B i C. Prvi birač preferira A ispred B ispred C. Drugi preferira B ispred C ispred A. Treći preferira C ispred A ispred B. Svaki pojedinačni birač ima jasne, dosljedne (tranzitivne) preferencije.
+
 ::: {#def-condorcetov-paradoks}
 **Condorcetov paradoks** pokazuje da većinsko parno glasovanje može biti ciklično čak i kada svaki birač ima dosljedne (tranzitivne) preferencije, pa A pobjeđuje B, B pobjeđuje C, ali C pobjeđuje A i kolektiv ostaje bez nedvosmislenog pobjednika [@condorcet1785].
 :::
-
-Najjednostavniji prikaz problema kolektivnog izbora jest **Condorcetov paradoks** [@condorcet1785]. Zamislimo tri birača i tri opcije, A, B i C. Prvi birač preferira A ispred B ispred C. Drugi preferira B ispred C ispred A. Treći preferira C ispred A ispred B. Svaki pojedinačni birač ima jasne, dosljedne (tranzitivne) preferencije.
 
 Ako te opcije uspoređujemo u parovima većinskim glasovanjem, dolazimo do neobičnog ishoda. U izboru između A i B pobjeđuje A (dva od tri birača preferiraju A). U izboru između B i C pobjeđuje B. No u izboru između A i C pobjeđuje C. Dobivamo ciklus u kojem A pobjeđuje B, B pobjeđuje C, ali C pobjeđuje A. Kolektivna „preferencija" tako postaje **netranzitivna**, iako su sve pojedinačne preferencije bile dosljedne.
 
@@ -118,6 +118,8 @@ Upravo zbog tih proceduralnih ograničenja cikluse je u stvarnim tijelima teško
 Koliko stvarnih dimenzija ima zakonodavno odlučivanje moguće je i izmjeriti. Poole i Rosenthal rekonstruirali su idealne točke svih članova američkog Kongresa kroz više od dva stoljeća poimeničnih glasovanja postupkom prostornog skaliranja (NOMINATE) i pokazali da jedna jedina dimenzija objašnjava oko 80 % zabilježenih glasova, a druga dimenzija gotovo sav preostali sustavni dio [@poole2007]. Niska dimenzionalnost nije dokaz da temeljne preferencije nisu višedimenzionalne, nego pokazuje koliko snažno stranačka disciplina i proceduralna pravila stišću prostor odlučivanja na jednu lijevo-desnu os. Kada ta stega oslabi, dimenzionalnost mjereno raste, a s njom i učestalost obrnutih i nestabilnih ishoda, što je empirijski trag McKelveyeva teorijskog rezultata u stvarnom parlamentu.
 :::
 
+Kada se ta dinamika prenese na konkretnu raspravu, vidi se zašto sastavljanje dnevnog reda toliko utječe na ishod.
+
 ::: {.callout-praksa}
 Ciklus nije samo udžbenički kuriozitet. Zamislimo raspravu o energetskoj politici s tri skupine i tri opcije (nuklearna energija, plin, obnovljivi izvori).
 
@@ -143,11 +145,11 @@ Iz tih razlika među sustavima slijedi jedan dublji rezultat. Gibbard i Satterth
 
 ## Arrowljev teorem nemogućnosti
 
+Dok Condorcetov paradoks pokazuje da većinsko glasovanje *može* proizvesti cikličke i nestabilne ishode, Kenneth Arrow postavio je pitanje na fundamentalnoj razini. Pitao se postoji li uopće *ikakav* sustav agregacije koji bi pouzdano i razumno pretvarao pojedinačne preferencije u društvenu odluku. Njegov odgovor, **Arrowljev teorem nemogućnosti** [@arrow1951], jedan je od najsnažnijih i najpesimističnijih rezultata u ekonomskoj znanosti 20. stoljeća.
+
 ::: {#def-arrowljev-teorem}
 **Arrowljev teorem nemogućnosti** dokazuje da ne postoji sustav agregacije individualnih preferencija koji istodobno zadovoljava neograničenu domenu, kolektivnu racionalnost, Pareto-efikasnost, neovisnost o nevažnim alternativama i nediktatorstvo kada postoje barem tri alternative [@arrow1951].
 :::
-
-Dok Condorcetov paradoks pokazuje da većinsko glasovanje *može* proizvesti cikličke i nestabilne ishode, Kenneth Arrow postavio je pitanje na fundamentalnoj razini. Pitao se postoji li uopće *ikakav* sustav agregacije koji bi pouzdano i razumno pretvarao pojedinačne preferencije u društvenu odluku. Njegov odgovor, **Arrowljev teorem nemogućnosti** [@arrow1951], jedan je od najsnažnijih i najpesimističnijih rezultata u ekonomskoj znanosti 20. stoljeća.
 
 Arrow je tražio pravilo koje istodobno zadovoljava nekoliko razumnih i naizgled minimalnih uvjeta. Neograničena domena traži da pravilo radi za sve moguće kombinacije pojedinačnih preferencija. Kolektivna racionalnost traži da društveni poredak bude dosljedan, odnosno potpun i tranzitivan. Pareto-efikasnost traži da, ako svi preferiraju A ispred B, i društvo preferira A ispred B. Neovisnost o nevažnim alternativama zahtijeva da se rangiranje između A i B ne mijenja uvođenjem ili uklanjanjem treće alternative C. Konačno, nediktatorstvo isključuje mogućnost da jedan pojedinac nametne svoju volju cijeloj skupini bez obzira na preferencije ostalih.
 
@@ -173,17 +175,17 @@ Posljedice teorema vide se u izbornim procesima. Pojava treće ili četvrte rele
 
 ## Jednovršne preferencije i medijanski glasač
 
+Cikluse i nedosljednosti ne moramo uvijek očekivati. Ako preferencije birača imaju određenu strukturu, kolektivni izbor može biti stabilan. Ključan slučaj su **jednovršne preferencije** (*single-peaked preferences*). Svaki birač ima jednu najdražu točku na nekoj dimenziji (primjerice na osi „manje – više javne potrošnje"), a što je opcija dalje od te točke, to mu je manje privlačna.
+
 ::: {#def-jednovrsne-preferencije}
 **Jednovršne preferencije** (*single-peaked preferences*) su preferencije pri kojima svaki birač ima jednu najdražu točku na nekoj dimenziji politike, a privlačnost svake opcije monotono pada s udaljenošću od te točke; ta struktura jamči stabilnost ishoda većinskog glasovanja.
 :::
 
+Kada su preferencije jednovršne i odlučuje se o jednoj dimenziji, većinsko glasovanje proizvodi stabilan ishod. Pobjeđuje opcija koju preferira **medijanski glasač**, onaj čija je idealna točka u sredini rasporeda. To je sadržaj teorema o medijanskom glasaču [@black1948], koji ćemo detaljnije primijeniti u poglavlju o strankama i izborima.
+
 ::: {#def-medijanski-glasac}
 **Medijanski glasač** je birač čija idealna točka leži u sredini rasporeda svih birača; prema teoremu o medijanskom glasaču [@black1948], kada su preferencije jednovršne i odluka je jednodimenzionalna, pobjeđuje opcija kojoj je taj birač najbliži.
 :::
-
-Cikluse i nedosljednosti ne moramo uvijek očekivati. Ako preferencije birača imaju određenu strukturu, kolektivni izbor može biti stabilan. Ključan slučaj su **jednovršne preferencije** (*single-peaked preferences*). Svaki birač ima jednu najdražu točku na nekoj dimenziji (primjerice na osi „manje – više javne potrošnje"), a što je opcija dalje od te točke, to mu je manje privlačna.
-
-Kada su preferencije jednovršne i odlučuje se o jednoj dimenziji, većinsko glasovanje proizvodi stabilan ishod. Pobjeđuje opcija koju preferira **medijanski glasač**, onaj čija je idealna točka u sredini rasporeda. To je sadržaj teorema o medijanskom glasaču [@black1948], koji ćemo detaljnije primijeniti u poglavlju o strankama i izborima.
 
 Medijanski glasač važan je jer pokazuje da kolektivni izbor nije nužno kaotičan. No njegovi su uvjeti zahtjevni jer stvarne političke odluke rijetko su jednodimenzionalne. Kada se istodobno odlučuje o više dimenzija (porezi, zdravstvo, vanjska politika, okoliš), jednovršnost se gubi, ciklusi se vraćaju, a moć dnevnoga reda ponovno raste [@mckelvey1976].
 
@@ -193,11 +195,11 @@ Pitanje kada jednovršnost vrijedi u stvarnoj politici ima konkretan odgovor. On
 
 ## Kontrola dnevnog reda i politika kompromisa
 
+Čak i kada su kolektivne preferencije cikličke, odluke se u praksi moraju donijeti, proračun se usvaja, zakoni donose, politike provode. Ključno pitanje postaje tko i kako prekida cikluse te usmjerava konačni ishod. Odgovor leži u **moći kontrole dnevnog reda** (*agenda-setting power*), to jest u sposobnosti da se odredi o čemu će se glasovati, kojim redoslijedom i u kojem obliku [@mckelvey1976; @romer1978].
+
 ::: {#def-moc-dnevnog-reda}
 **Moć kontrole dnevnog reda** (*agenda-setting power*) je sposobnost određivanja o čemu će se glasovati, kojim redoslijedom i u kojem obliku, čime agendar može usmjeriti konačni ishod čak i u uvjetima cikličnih preferencija [@mckelvey1976; @romer1978].
 :::
-
-Čak i kada su kolektivne preferencije cikličke, odluke se u praksi moraju donijeti, proračun se usvaja, zakoni donose, politike provode. Ključno pitanje postaje tko i kako prekida cikluse te usmjerava konačni ishod. Odgovor leži u **moći kontrole dnevnog reda** (*agenda-setting power*), to jest u sposobnosti da se odredi o čemu će se glasovati, kojim redoslijedom i u kojem obliku [@mckelvey1976; @romer1978].
 
 Osoba ili tijelo koje oblikuje proceduru, primjerice predsjednik saborskog odbora, Vlada ili predsjedavajući Vijeća EU, često ima veću stvarnu moć od same većine glasova. Pažljivim biranjem redoslijeda glasovanja moguće je usmjeriti ishod prema željenoj alternativi i unutar istog skupa preferencija.
 
