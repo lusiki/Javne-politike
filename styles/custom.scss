@@ -1806,6 +1806,56 @@ form.observablehq--input > label {
 }
 
 // =============================================================
+// Tri staze čitanja — kartice na naslovnici koje nude različite
+// redoslijede čitanja prema tipu kolegija.
+// =============================================================
+.reading-paths {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.1rem;
+  margin: 1.5rem auto 0;
+  max-width: 980px;
+
+  @media (max-width: 800px) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.reading-path {
+  padding: 1.25rem 1.3rem;
+  background: rgba($brand-navy, 0.025);
+  border-left: 3px solid $brand-gold;
+  border-radius: 0 4px 4px 0;
+  box-sizing: border-box;
+
+  .reading-path-label {
+    font-family: $brand-font-sans;
+    font-size: 0.78rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.07em;
+    color: $brand-navy;
+    margin: 0 0 0.5rem;
+  }
+
+  .reading-path-desc {
+    font-size: 0.92rem;
+    line-height: 1.55;
+    color: $brand-slate;
+    margin: 0 0 0.7rem;
+  }
+
+  .reading-path-route {
+    font-family: $brand-font-mono, monospace;
+    font-size: 0.8rem;
+    line-height: 1.5;
+    color: $brand-navy;
+    margin: 0;
+    overflow-wrap: anywhere;
+  }
+}
+
+// =============================================================
 // Zadržavanje širine — sprječavanje prelijevanja preko desne
 // margine. Layout `page-columns` s marginalnim citatima sužava
 // stupac teksta, pa široke tablice, OJS SVG grafovi i callout
@@ -1887,5 +1937,29 @@ main li,
 .callout-vjezba,
 .definition {
   overflow-wrap: anywhere;
+}
+
+// 5) Drži pedagoške kutije i definicijske blokove unutar širine
+//    tijela stupca. Ne diramo Quarto grid-line imena (ovise o verziji)
+//    nego kutiju vežemo na mjeru body stupca i poravnamo ulijevo, pa
+//    ne može iscuriti u desni marginalni gutter neovisno o layoutu.
+.callout-praksa,
+.callout-empirija,
+.callout-vjezba,
+div[id^="def-"],
+.definition {
+  box-sizing: border-box;
+  margin-right: auto;
+}
+
+// 6) Chip-oznaka (Politika u praksi / Empirijski dokaz / Vježba) ne
+//    smije svojim `nowrap` gurati kutiju u širinu na uskim stupcima.
+//    Dopusti prelom oznake kad nema mjesta.
+@media (max-width: 700px) {
+  .callout-praksa > :first-child::before,
+  .callout-empirija > :first-child::before,
+  .callout-vjezba > :first-child::before {
+    white-space: normal;
+  }
 }
 
