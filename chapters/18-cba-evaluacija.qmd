@@ -35,7 +35,7 @@ Sljedeći korak obuhvaća identifikaciju svih relevantnih troškova i koristi, u
 Nakon monetizacije slijedi diskontiranje, odnosno svođenje budućih troškova i koristi na sadašnju vrijednost. Diskontna stopa ključan je parametar jer snažno utječe na rezultate, osobito kod dugoročnih projekata. Završni korak odnosi se na donošenje odluke i interpretaciju rezultata, za što se najčešće koristi kriterij neto sadašnje vrijednosti.
 
 ::: {#def-npv}
-**Neto sadašnja vrijednost (NPV).** Projekt je društveno opravdan ako su diskontirane koristi veće od diskontiranih troškova.
+**Neto sadašnja vrijednost (NPV)** je zbroj svih budućih koristi i troškova projekta, pri čemu se svaki budući iznos diskontira na sadašnji trenutak koeficijentom $1/(1+r)^t$, gdje je $r$ diskontna stopa, a $t$ broj godina udaljenosti. Projekt je društveno opravdan ako je NPV pozitivan.
 :::
 
 Suvremeni pristupi naglašavaju i potrebu za analizom osjetljivosti, scenarijskom analizom i razmatranjem distribucijskih učinaka [@hmtreasury2022]. CBA nije linearni, mehanički postupak, već iterativni proces u kojem se koraci međusobno preispituju.
