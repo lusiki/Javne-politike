@@ -2,16 +2,13 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="hr-HR" xml:lang="hr-HR"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.9.38">
+<meta name="generator" content="quarto-1.6.43">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
 <title>Distribucijska funkcija — država i pitanje pravednosti – Sve što želite znati o odnosu države i tržišta</title>
 <style>
-/* Default styles provided by pandoc.
-** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
-*/
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
 div.columns{display: flex; gap: min(4vw, 1.5em);}
@@ -24,9 +21,8 @@ ul.task-list li input[type="checkbox"] {
   vertical-align: middle;
 }
 /* CSS for syntax highlighting */
-html { -webkit-text-size-adjust: 100%; }
 pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span { line-height: 1.25; }
 pre > code.sourceCode > span:empty { height: 1.2em; }
 .sourceCode { overflow: visible; }
 code.sourceCode > span { color: inherit; text-decoration: inherit; }
@@ -37,7 +33,7 @@ div.sourceCode { overflow: auto; }
 }
 @media print {
 pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
 }
 pre.numberSource code
   { counter-reset: source-line 0; }
@@ -62,6 +58,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 div.csl-bib-body { }
 div.csl-entry {
   clear: both;
+  margin-bottom: 0em;
 }
 .hanging-indent div.csl-entry {
   margin-left:2em;
@@ -89,20 +86,17 @@ div.csl-indent {
 <link href="../chapters/04-stabilizacijska-funkcija.html" rel="next">
 <link href="../chapters/02-alokacijska-funkcija.html" rel="prev">
 <link href="../images/favicon.ico" rel="icon">
-<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/quarto.js"></script>
 <script src="../site_libs/quarto-html/popper.min.js"></script>
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-4d4ad920c17a1b28c6a7c1d28bdd063b.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark-7cbdf6bb4af9301f1adde34f6db1f419.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-4d4ad920c17a1b28c6a7c1d28bdd063b.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-0cf6555743a0958f71dc8d5aba7305d9.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark-19eb5a85a399d11602e5709a3b9587c0.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-be9e09642efe300e42368b196ca4df12.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../site_libs/bootstrap/bootstrap-dark-3019efc15c91df93cdec9ca9a47a5e57.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="light">
-<link href="../site_libs/bootstrap/bootstrap-be9e09642efe300e42368b196ca4df12.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-1c672ac43eeccb4f2018e10ccd801396.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-dark-a691c739ae6fba953909ac4918f1cb0f.min.css" rel="prefetch" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -146,169 +140,7 @@ div.csl-indent {
 <link rel="stylesheet" href="../styles/styles.css">
 </head>
 
-<body class="nav-sidebar docked nav-fixed slimcontent quarto-light"><script id="quarto-html-before-body" type="application/javascript">
-    const toggleBodyColorMode = (bsSheetEl) => {
-      const mode = bsSheetEl.getAttribute("data-mode");
-      const bodyEl = window.document.querySelector("body");
-      if (mode === "dark") {
-        bodyEl.classList.add("quarto-dark");
-        bodyEl.classList.remove("quarto-light");
-      } else {
-        bodyEl.classList.add("quarto-light");
-        bodyEl.classList.remove("quarto-dark");
-      }
-    }
-    const toggleBodyColorPrimary = () => {
-      const bsSheetEl = window.document.querySelector("link#quarto-bootstrap:not([rel=disabled-stylesheet])");
-      if (bsSheetEl) {
-        toggleBodyColorMode(bsSheetEl);
-      }
-    }
-    const setColorSchemeToggle = (alternate) => {
-      const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
-      for (let i=0; i < toggles.length; i++) {
-        const toggle = toggles[i];
-        if (toggle) {
-          if (alternate) {
-            toggle.classList.add("alternate");
-          } else {
-            toggle.classList.remove("alternate");
-          }
-        }
-      }
-    };
-    const toggleColorMode = (alternate) => {
-      // Switch the stylesheets
-      const primaryStylesheets = window.document.querySelectorAll('link.quarto-color-scheme:not(.quarto-color-alternate)');
-      const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
-      manageTransitions('#quarto-margin-sidebar .nav-link', false);
-      if (alternate) {
-        // note: dark is layered on light, we don't disable primary!
-        enableStylesheet(alternateStylesheets);
-        for (const sheetNode of alternateStylesheets) {
-          if (sheetNode.id === "quarto-bootstrap") {
-            toggleBodyColorMode(sheetNode);
-          }
-        }
-      } else {
-        disableStylesheet(alternateStylesheets);
-        enableStylesheet(primaryStylesheets)
-        toggleBodyColorPrimary();
-      }
-      manageTransitions('#quarto-margin-sidebar .nav-link', true);
-      // Switch the toggles
-      setColorSchemeToggle(alternate)
-      // Hack to workaround the fact that safari doesn't
-      // properly recolor the scrollbar when toggling (#1455)
-      if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
-        manageTransitions("body", false);
-        window.scrollTo(0, 1);
-        setTimeout(() => {
-          window.scrollTo(0, 0);
-          manageTransitions("body", true);
-        }, 40);
-      }
-    }
-    const disableStylesheet = (stylesheets) => {
-      for (let i=0; i < stylesheets.length; i++) {
-        const stylesheet = stylesheets[i];
-        stylesheet.rel = 'disabled-stylesheet';
-      }
-    }
-    const enableStylesheet = (stylesheets) => {
-      for (let i=0; i < stylesheets.length; i++) {
-        const stylesheet = stylesheets[i];
-        if(stylesheet.rel !== 'stylesheet') { // for Chrome, which will still FOUC without this check
-          stylesheet.rel = 'stylesheet';
-        }
-      }
-    }
-    const manageTransitions = (selector, allowTransitions) => {
-      const els = window.document.querySelectorAll(selector);
-      for (let i=0; i < els.length; i++) {
-        const el = els[i];
-        if (allowTransitions) {
-          el.classList.remove('notransition');
-        } else {
-          el.classList.add('notransition');
-        }
-      }
-    }
-    const isFileUrl = () => {
-      return window.location.protocol === 'file:';
-    }
-    const hasAlternateSentinel = () => {
-      let styleSentinel = getColorSchemeSentinel();
-      if (styleSentinel !== null) {
-        return styleSentinel === "alternate";
-      } else {
-        return false;
-      }
-    }
-    const setStyleSentinel = (alternate) => {
-      const value = alternate ? "alternate" : "default";
-      if (!isFileUrl()) {
-        window.localStorage.setItem("quarto-color-scheme", value);
-      } else {
-        localAlternateSentinel = value;
-      }
-    }
-    const getColorSchemeSentinel = () => {
-      if (!isFileUrl()) {
-        const storageValue = window.localStorage.getItem("quarto-color-scheme");
-        return storageValue != null ? storageValue : localAlternateSentinel;
-      } else {
-        return localAlternateSentinel;
-      }
-    }
-    const toggleGiscusIfUsed = (isAlternate, darkModeDefault) => {
-      const baseTheme = document.querySelector('#giscus-base-theme')?.value ?? 'light';
-      const alternateTheme = document.querySelector('#giscus-alt-theme')?.value ?? 'dark';
-      let newTheme = '';
-      if(authorPrefersDark) {
-        newTheme = isAlternate ? baseTheme : alternateTheme;
-      } else {
-        newTheme = isAlternate ? alternateTheme : baseTheme;
-      }
-      const changeGiscusTheme = () => {
-        // From: https://github.com/giscus/giscus/issues/336
-        const sendMessage = (message) => {
-          const iframe = document.querySelector('iframe.giscus-frame');
-          if (!iframe) return;
-          iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
-        }
-        sendMessage({
-          setConfig: {
-            theme: newTheme
-          }
-        });
-      }
-      const isGiscussLoaded = window.document.querySelector('iframe.giscus-frame') !== null;
-      if (isGiscussLoaded) {
-        changeGiscusTheme();
-      }
-    };
-    const authorPrefersDark = false;
-    const darkModeDefault = authorPrefersDark;
-      document.querySelector('link#quarto-text-highlighting-styles.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
-      document.querySelector('link#quarto-bootstrap.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
-    let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
-    // Dark / light mode switch
-    window.quartoToggleColorScheme = () => {
-      // Read the current dark / light value
-      let toAlternate = !hasAlternateSentinel();
-      toggleColorMode(toAlternate);
-      setStyleSentinel(toAlternate);
-      toggleGiscusIfUsed(toAlternate, darkModeDefault);
-      window.dispatchEvent(new Event('resize'));
-    };
-    // Switch to dark mode if need be
-    if (hasAlternateSentinel()) {
-      toggleColorMode(true);
-    } else {
-      toggleColorMode(false);
-    }
-  </script>
+<body class="nav-sidebar docked nav-fixed slimcontent">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -628,7 +460,6 @@ div.csl-indent {
 <!-- main -->
 <main class="content page-columns page-full" id="quarto-document-content">
 
-
 <header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../chapters/01-uloga-drzave.html">DIO I: KLASIČNA ANALIZA JAVNIH FINANCIJA I POLITIKA</a></li><li class="breadcrumb-item"><a href="../chapters/03-distribucijska-funkcija.html"><span class="chapter-title">Distribucijska funkcija — država i pitanje pravednosti</span></a></li></ol></nav>
 <div class="quarto-title">
 <div class="quarto-title-block"><div><h1 class="title"><span class="chapter-title">Distribucijska funkcija — država i pitanje pravednosti</span></h1><button type="button" class="btn code-tools-button dropdown-toggle" id="quarto-code-tools-menu" data-bs-toggle="dropdown" aria-expanded="false"><i class="bi"></i> Code</button><ul class="dropdown-menu dropdown-menu-end" aria-labelelledby="quarto-code-tools-menu"><li><a id="quarto-show-all-code" class="dropdown-item" href="javascript:void(0)" role="button">Show All Code</a></li><li><a id="quarto-hide-all-code" class="dropdown-item" href="javascript:void(0)" role="button">Hide All Code</a></li><li><hr class="dropdown-divider"></li><li><a id="quarto-view-source" class="dropdown-item" href="javascript:void(0)" role="button">View Source</a></li></ul></div></div>
@@ -664,11 +495,11 @@ div.csl-indent {
 <p>Distribucijska funkcija države odnosi se na utjecaj javnih politika na raspodjelu dohotka, bogatstva i životnih prilika. Dok alokacijska funkcija polazi od pitanja funkcionira li tržište učinkovito, distribucijska funkcija pita je li raspodjela koju tržište proizvodi društveno prihvatljiva.</p>
 <p>Tržište raspodjeljuje dohodak prema različitim čimbenicima koji uključuju vlasništvo nad kapitalom i imovinom, obrazovanje, vještine, radno iskustvo, produktivnost, poduzetničku sposobnost, naslijeđe, tržišnu moć, pregovaračku poziciju, sreću i okolnosti u kojima se pojedinac rodio. Neki ljudi nasljeđuju imovinu, kvalitetno obrazovanje i mreže poznanstava. Drugi odrastaju u siromaštvu, slabijim školama, nepovoljnijim lokalnim sredinama ili obiteljima s manjim mogućnostima ulaganja u djecu. Tržište te početne razlike ne uklanja automatski. Naprotiv, često ih može dodatno pojačati.</p>
 <p>Zato tržišni ishod može biti učinkovit s ekonomskog stajališta, ali istodobno neprihvatljiv s društvenog stajališta. Ako netko ostvari visok dohodak zato što posjeduje tražene vještine, preuzima rizik, inovira ili stvara vrijednost, tržište ga nagrađuje. No ako drugi pojedinac nema pristup kvalitetnom obrazovanju, zdravstvu ili osnovnim životnim uvjetima, društvo može smatrati da takva raspodjela nije pravedna, čak i ako je nastala kroz tržišne procese. Distribucijska funkcija države upravo se bavi tom napetošću između tržišnih ishoda i društvenih kriterija pravednosti.</p>
-<p>Država zato porezima, transferima i javnim uslugama mijenja raspodjelu koja nastaje na tržištu. Progresivni porez na dohodak, socijalna pomoć, mirovine, javno zdravstvo, besplatno ili subvencionirano obrazovanje, naknade za nezaposlene, dječji doplatci, stambene potpore i programi pomoći osobama s invaliditetom primjeri su instrumenata kojima država pokušava ublažiti nejednakosti i osigurati minimalnu razinu sigurnosti. U suvremenim državama blagostanja velik dio javne potrošnje upravo je povezan s distribucijskom funkcijom kroz mirovine, zdravstvo, obrazovanje, socijalne transfere i zaštitu od životnih rizika <span class="citation" data-cites="musgrave1959 stiglitz2015">(<a href="../references.html#ref-musgrave1959" role="doc-biblioref">Musgrave 1959.</a>; <a href="../references.html#ref-stiglitz2015" role="doc-biblioref">Stiglitz 2015.</a>)</span>.</p>
+<p>Država zato porezima, transferima i javnim uslugama mijenja raspodjelu koja nastaje na tržištu. Progresivni porez na dohodak, socijalna pomoć, mirovine, javno zdravstvo, besplatno ili subvencionirano obrazovanje, naknade za nezaposlene, dječji doplatci, stambene potpore i programi pomoći osobama s invaliditetom primjeri su instrumenata kojima država pokušava ublažiti nejednakosti i osigurati minimalnu razinu sigurnosti. U suvremenim državama blagostanja velik dio javne potrošnje upravo je povezan s distribucijskom funkcijom kroz mirovine, zdravstvo, obrazovanje, socijalne transfere i zaštitu od životnih rizika <span class="citation" data-cites="musgrave1959 stiglitz2015">(<a href="../references.html#ref-musgrave1959" role="doc-biblioref">Musgrave 1959</a>; <a href="../references.html#ref-stiglitz2015" role="doc-biblioref">Stiglitz 2015</a>)</span>.</p>
 <div class="no-row-height column-margin column-container"><div id="ref-musgrave1959" class="csl-entry" role="listitem">
-Musgrave, Richard A. 1959. <em>The Theory of Public Finance</em>. McGraw-Hill.
+Musgrave, Richard A. 1959. <em>The Theory of Public Finance</em>. New York: McGraw-Hill.
 </div><div id="ref-stiglitz2015" class="csl-entry" role="listitem">
-Stiglitz, Joseph E. 2015. <em>Economics of the Public Sector</em>. 4. izd. W. W. Norton.
+Stiglitz, Joseph E. 2015. <em>Economics of the Public Sector</em>. 4. izd. New York: W. W. Norton.
 </div></div><p>Distribucijska funkcija izaziva više rasprava od alokacijske funkcije jer nije uvijek izravno povezana s tehničkim tržišnim neuspjehom. Ako tržište ne osigurava javno dobro, argument za državnu intervenciju može se relativno jasno pokazati. No pitanje što je pravedna raspodjela dohotka ne može se riješiti samo tehničkom analizom. Ono uključuje vrijednosne sudove, socijalnu filozofiju, političke preferencije i društvene norme.</p>
 <p>Ekonomija može pomoći u analizi posljedica različitih oblika preraspodjele. Ona može pokazati kako porezi utječu na rad, investicije i štednju, kako socijalni transferi utječu na siromaštvo, kako javno obrazovanje utječe na jednakost prilika ili kako različiti modeli mirovinskog sustava raspodjeljuju teret između generacija. No ekonomija sama ne može dati konačan odgovor na pitanje koliko nejednakosti društvo smatra prihvatljivim. To pitanje pripada području političkog odlučivanja i društvenih vrijednosti.</p>
 </section>
@@ -688,24 +519,24 @@ Stiglitz, Joseph E. 2015. <em>Economics of the Public Sector</em>. 4. izd. W. W.
 </div>
 <p>Ovdje se pojavljuje važan ekonomski pojam, <strong>opadajuća granična korisnost dohotka</strong>. Kako dohodak raste, dodatna jedinica dohotka obično donosi sve manji porast korisnosti. Prvih 1.000 eura dohotka za osobu koja nema osnovne životne uvjete ima ogromnu vrijednost. Dodatnih 1.000 eura za osobu koja već ima vrlo visok dohodak može donijeti mnogo manju dodatnu korisnost. Ako je povećanje korisnosti siromašnije osobe veće od smanjenja korisnosti bogatije osobe, preraspodjela može povećati ukupno društveno blagostanje.</p>
 <p>Ovo je jedan od najjednostavnijih ekonomskih argumenata za redistribuciju. On ne polazi nužno od moralne osude bogatstva, nego od pretpostavke da dodatni dohodak ima veću društvenu vrijednost kada ide onima koji imaju manje. U tom smislu progresivni porezi i socijalni transferi mogu se opravdati ne samo pravednošću, nego i povećanjem ukupnog blagostanja. Libertarna i prava-orijentirana kritika, međutim, osporava međuosobne usporedbe korisnosti kao empirijski nedokazive te ističe da argument zanemaruje negativne poticajne učinke preraspodjele i pravo vlasništva nad zarađenim dohotkom kao vrijednost neovisnu o agregatnom blagostanju.</p>
-<p>Međutim, preraspodjela nije besplatna. Arthur Okun je taj problem slikovito opisao metaforom <strong>„šupljeg vedra”</strong> (<em>leaky bucket</em>) <span class="citation" data-cites="okun1975">(<a href="../references.html#ref-okun1975" role="doc-biblioref">Okun 1975.</a>)</span>. Kada država prenosi dohodak od bogatih prema siromašnima, dio sredstava „iscuri” putem administrativnih troškova, promjena u ponašanju, porezne evazije, smanjene ponude rada, manjeg poduzetničkog napora ili drugih neučinkovitosti. Država može uzeti 1.000 eura od bogatije osobe, ali do siromašnije osobe možda neće stići svih 1.000 eura.</p>
+<p>Međutim, preraspodjela nije besplatna. Arthur Okun je taj problem slikovito opisao metaforom <strong>„šupljeg vedra”</strong> (<em>leaky bucket</em>) <span class="citation" data-cites="okun1975">(<a href="../references.html#ref-okun1975" role="doc-biblioref">Okun 1975</a>)</span>. Kada država prenosi dohodak od bogatih prema siromašnima, dio sredstava „iscuri” putem administrativnih troškova, promjena u ponašanju, porezne evazije, smanjene ponude rada, manjeg poduzetničkog napora ili drugih neučinkovitosti. Država može uzeti 1.000 eura od bogatije osobe, ali do siromašnije osobe možda neće stići svih 1.000 eura.</p>
 <div class="no-row-height column-margin column-container"><div id="ref-okun1975" class="csl-entry" role="listitem">
-Okun, Arthur M. 1975. <em>Equality and Efficiency: The Big Tradeoff</em>. Brookings Institution.
+Okun, Arthur M. 1975. <em>Equality and Efficiency: The Big Tradeoff</em>. Washington, DC: Brookings Institution.
 </div></div><p>Okunova metafora pokazuje temeljnu napetost između efikasnosti i pravednosti. Društvo može biti spremno prihvatiti određeni gubitak učinkovitosti kako bi postiglo pravedniju raspodjelu. No ako su gubici preveliki, preraspodjela može smanjiti ukupno blagostanje. Zato kvalitetna redistribucijska politika mora paziti na dizajn poreza i transfera. Porezni sustav treba biti dovoljno progresivan da pridonosi pravednosti, ali ne toliko distorzivan da snažno smanjuje rad, ulaganja, poduzetništvo ili poreznu disciplinu.</p>
-<p>U ekstremnom obliku, utilitaristička logika može voditi prema zaključku da bi potpuna jednakost dohotka maksimizirala društveno blagostanje. No tu se pojavljuje problem poticaja. Ako dodatni rad, znanje, inovacija, štednja ili poduzetnički rizik ne donose nikakvu dodatnu nagradu, ljudi mogu manje raditi, manje ulagati, manje inovirati i manje preuzimati rizik. Potpuna uravnilovka može povećati formalnu jednakost, ali smanjiti proizvodnju, produktivnost i dugoročni rast. Zato suvremeni pristupi rijetko zagovaraju potpunu jednakost dohotka. Umjesto toga, traže se oblici redistribucije koji ublažavaju siromaštvo i nejednakost, ali zadržavaju poticaje za rad, obrazovanje, inovacije i poduzetništvo <span class="citation" data-cites="mirrlees1971">(<a href="../references.html#ref-mirrlees1971" role="doc-biblioref">Mirrlees 1971.</a>)</span>.</p>
+<p>U ekstremnom obliku, utilitaristička logika može voditi prema zaključku da bi potpuna jednakost dohotka maksimizirala društveno blagostanje. No tu se pojavljuje problem poticaja. Ako dodatni rad, znanje, inovacija, štednja ili poduzetnički rizik ne donose nikakvu dodatnu nagradu, ljudi mogu manje raditi, manje ulagati, manje inovirati i manje preuzimati rizik. Potpuna uravnilovka može povećati formalnu jednakost, ali smanjiti proizvodnju, produktivnost i dugoročni rast. Zato suvremeni pristupi rijetko zagovaraju potpunu jednakost dohotka. Umjesto toga, traže se oblici redistribucije koji ublažavaju siromaštvo i nejednakost, ali zadržavaju poticaje za rad, obrazovanje, inovacije i poduzetništvo <span class="citation" data-cites="mirrlees1971">(<a href="../references.html#ref-mirrlees1971" role="doc-biblioref">Mirrlees 1971</a>)</span>.</p>
 <div class="no-row-height column-margin column-container"><div id="ref-mirrlees1971" class="csl-entry" role="listitem">
 Mirrlees, James A. 1971. <span>„An Exploration in the Theory of Optimum Income Taxation“</span>. <em>Review of Economic Studies</em> 38 (2): 175–208. <a href="https://doi.org/10.2307/2296779">https://doi.org/10.2307/2296779</a>.
 </div><div id="ref-saez2001" class="csl-entry" role="listitem">
 Saez, Emmanuel. 2001. <span>„Using Elasticities to Derive Optimal Income Tax Rates“</span>. <em>Review of Economic Studies</em> 68 (1): 205–29. <a href="https://doi.org/10.1111/1467-937X.00166">https://doi.org/10.1111/1467-937X.00166</a>.
-</div></div><p>Tu se postavlja i pitanje kako bi optimalan porez zapravo trebao izgledati. Budući da država ne može oporezivati sposobnost, koju ne vidi, nego samo ostvareni dohodak, svaka porezna stopa istodobno preraspodjeljuje i obeshrabruje napor, pa se optimalna stopa na svakoj razini dohotka određuje vaganjem koristi za pravednost nasuprot gubitku koji nastaje jer porez smanjuje rad i prijavljeni dohodak <span class="citation" data-cites="mirrlees1971">(<a href="../references.html#ref-mirrlees1971" role="doc-biblioref">Mirrlees 1971.</a>)</span>. Saez je pokazao da se ta optimalna stopa može izraziti pomoću tek nekoliko mjerljivih veličina, ponajprije elastičnosti oporezivog dohotka, oblika raspodjele dohotka i društvene sklonosti preraspodjeli <span class="citation" data-cites="saez2001">(<a href="../references.html#ref-saez2001" role="doc-biblioref">Saez 2001.</a>)</span>. Iz toga slijedi i protuintuitivan nalaz da granične stope mogu biti visoke na oba kraja raspodjele, pri dnu gdje se ukidaju naknade i pri samom vrhu gdje je malo poreznih obveznika pa je porezna baza koju mjera izobličuje uska.</p>
+</div></div><p>Tu se postavlja i pitanje kako bi optimalan porez zapravo trebao izgledati. Budući da država ne može oporezivati sposobnost, koju ne vidi, nego samo ostvareni dohodak, svaka porezna stopa istodobno preraspodjeljuje i obeshrabruje napor, pa se optimalna stopa na svakoj razini dohotka određuje vaganjem koristi za pravednost nasuprot gubitku koji nastaje jer porez smanjuje rad i prijavljeni dohodak <span class="citation" data-cites="mirrlees1971">(<a href="../references.html#ref-mirrlees1971" role="doc-biblioref">Mirrlees 1971</a>)</span>. Saez je pokazao da se ta optimalna stopa može izraziti pomoću tek nekoliko mjerljivih veličina, ponajprije elastičnosti oporezivog dohotka, oblika raspodjele dohotka i društvene sklonosti preraspodjeli <span class="citation" data-cites="saez2001">(<a href="../references.html#ref-saez2001" role="doc-biblioref">Saez 2001</a>)</span>. Iz toga slijedi i protuintuitivan nalaz da granične stope mogu biti visoke na oba kraja raspodjele, pri dnu gdje se ukidaju naknade i pri samom vrhu gdje je malo poreznih obveznika pa je porezna baza koju mjera izobličuje uska.</p>
 </section>
 <section id="rawlsov-pristup-pravednosti" class="level2 page-columns page-full">
 <h2 class="anchored" data-anchor-id="rawlsov-pristup-pravednosti">Rawlsov pristup pravednosti</h2>
-<p>Utilitaristički zbroj korisnosti šuti o tome kako je blagostanje raspoređeno, pa ga <strong>Rawlsov pristup pravednosti</strong> zamjenjuje drugačijim pitanjem. Umjesto da pita koliko je korisnosti ukupno stvoreno, pita kakva bi pravila ljudi izabrali kada ne bi znali kakav će položaj sami zauzeti. Tu misao Rawls gradi na pojmu <strong>vela neznanja</strong>. Ako nitko unaprijed ne zna hoće li biti bogat ili siromašan, zdrav ili bolestan, talentiran ili manje talentiran, rođen u privilegiranoj ili depriviranoj obitelji, tada bi racionalni pojedinci izabrali pravila koja štite i one koji se nađu u najlošijem položaju <span class="citation" data-cites="rawls1971">(<a href="../references.html#ref-rawls1971" role="doc-biblioref">Rawls 1971.</a>)</span>.</p>
+<p>Utilitaristički zbroj korisnosti šuti o tome kako je blagostanje raspoređeno, pa ga <strong>Rawlsov pristup pravednosti</strong> zamjenjuje drugačijim pitanjem. Umjesto da pita koliko je korisnosti ukupno stvoreno, pita kakva bi pravila ljudi izabrali kada ne bi znali kakav će položaj sami zauzeti. Tu misao Rawls gradi na pojmu <strong>vela neznanja</strong>. Ako nitko unaprijed ne zna hoće li biti bogat ili siromašan, zdrav ili bolestan, talentiran ili manje talentiran, rođen u privilegiranoj ili depriviranoj obitelji, tada bi racionalni pojedinci izabrali pravila koja štite i one koji se nađu u najlošijem položaju <span class="citation" data-cites="rawls1971">(<a href="../references.html#ref-rawls1971" role="doc-biblioref">Rawls 1971</a>)</span>.</p>
 <div class="no-row-height column-margin column-container"></div><div id="def-rawlsov-pristup" class="theorem definition page-columns page-full">
-<p><span class="theorem-title"><strong>Definicija 5.2</strong></span> <strong>Rawlsov pristup pravednosti</strong> polazi od vela neznanja, pri čemu se pravila biraju pod pretpostavkom da ne znamo koji ćemo položaj u društvu zauzeti, iz čega slijedi maximin pravilo prema kojemu institucije treba oblikovati tako da maksimiziraju položaj onih u najlošijem položaju, a nejednakosti su prihvatljive samo ako koriste i najugroženijima <span class="citation" data-cites="rawls1971">(<a href="../references.html#ref-rawls1971" role="doc-biblioref">Rawls 1971.</a>)</span>.</p>
+<p><span class="theorem-title"><strong>Definicija 5.2</strong></span> <strong>Rawlsov pristup pravednosti</strong> polazi od vela neznanja, pri čemu se pravila biraju pod pretpostavkom da ne znamo koji ćemo položaj u društvu zauzeti, iz čega slijedi maximin pravilo prema kojemu institucije treba oblikovati tako da maksimiziraju položaj onih u najlošijem položaju, a nejednakosti su prihvatljive samo ako koriste i najugroženijima <span class="citation" data-cites="rawls1971">(<a href="../references.html#ref-rawls1971" role="doc-biblioref">Rawls 1971</a>)</span>.</p>
 <div class="no-row-height column-margin column-container"><div id="ref-rawls1971" class="csl-entry" role="listitem">
-Rawls, John. 1971. <em>A Theory of Justice</em>. Harvard University Press.
+Rawls, John. 1971. <em>A Theory of Justice</em>. Cambridge, MA: Harvard University Press.
 </div></div></div>
 <p>Iz toga proizlazi Rawlsovo <strong>maximin pravilo</strong>, prema kojem društvene institucije treba oblikovati tako da maksimiziraju položaj onih koji su u najlošijem položaju. Rawls ne traži potpunu jednakost. Nejednakosti mogu biti prihvatljive ako koriste i najlošije stojećima. Primjerice, veće nagrade za liječnike, inženjere, znanstvenike ili poduzetnike mogu biti opravdane ako potiču veću produktivnost, inovacije i rast koji u konačnici poboljšavaju položaj najsiromašnijih. No nejednakosti koje samo povećavaju privilegije već bogatih, a ne poboljšavaju položaj najugroženijih, teže je opravdati.</p>
 <p>Rawlsov pristup važan je jer pomiče raspravu s ukupnog zbroja korisnosti prema zaštiti najranjivijih i jednakosti osnovnih prilika. On daje snažno opravdanje za socijalnu zaštitu, javno obrazovanje, dostupno zdravstvo, minimalne dohotke i politike koje sprječavaju da se životne šanse pojedinca previše odrede okolnostima rođenja.</p>
@@ -713,9 +544,9 @@ Rawls, John. 1971. <em>A Theory of Justice</em>. Harvard University Press.
 <section id="robni-egalitarizam" class="level2 page-columns page-full">
 <h2 class="anchored" data-anchor-id="robni-egalitarizam">Robni egalitarizam</h2>
 <p>Robni egalitarizam polazi od ideje da društvo ne mora težiti potpunoj jednakosti dohotka, ali treba osigurati da svi građani imaju pristup određenim ključnim dobrima i uslugama. Razlike u dohotku mogu biti prihvatljive, ali nije prihvatljivo da dio stanovništva nema pristup osnovnom obrazovanju, zdravstvenoj zaštiti, sigurnosti, prehrani, stanovanju, pitkoj vodi, pravnoj zaštiti ili minimalnim životnim uvjetima.</p>
-<p>Ovaj pristup posebno je važan jer se udaljava od isključive usmjerenosti na novčani dohodak. Novac je važan jer omogućuje izbor, ali životne prilike ne ovise samo o dohotku. Dvije osobe mogu imati isti novčani dohodak, ali vrlo različite stvarne mogućnosti ako jedna ima pristup kvalitetnoj školi, liječniku, sigurnom susjedstvu i javnom prijevozu, a druga nema. Zato se u analizi pravednosti sve više naglašava da je važno promatrati ne samo dohodak, nego i pristup ključnim dobrima, sposobnostima i prilikama <span class="citation" data-cites="sen1999">(<a href="../references.html#ref-sen1999" role="doc-biblioref">Sen 1999.</a>)</span>.</p>
+<p>Ovaj pristup posebno je važan jer se udaljava od isključive usmjerenosti na novčani dohodak. Novac je važan jer omogućuje izbor, ali životne prilike ne ovise samo o dohotku. Dvije osobe mogu imati isti novčani dohodak, ali vrlo različite stvarne mogućnosti ako jedna ima pristup kvalitetnoj školi, liječniku, sigurnom susjedstvu i javnom prijevozu, a druga nema. Zato se u analizi pravednosti sve više naglašava da je važno promatrati ne samo dohodak, nego i pristup ključnim dobrima, sposobnostima i prilikama <span class="citation" data-cites="sen1999">(<a href="../references.html#ref-sen1999" role="doc-biblioref">Sen 1999</a>)</span>.</p>
 <div class="no-row-height column-margin column-container"><div id="ref-sen1999" class="csl-entry" role="listitem">
-Sen, Amartya. 1999. <em>Development as Freedom</em>. Oxford University Press.
+Sen, Amartya. 1999. <em>Development as Freedom</em>. Oxford: Oxford University Press.
 </div></div><p>Robni egalitarizam ne traži nužno jednak rezultat za sve. On ne tvrdi da svi moraju imati isti dohodak, isti posao ili isti životni standard. Umjesto toga, naglašava da svi trebaju imati pristup temeljnim uvjetima koji im omogućuju dostojanstven život i realnu mogućnost sudjelovanja u društvu. U tom smislu, cilj nije izbrisati sve razlike, nego spriječiti da razlike u dohotku prerastu u trajnu isključenost iz osnovnih društvenih dobara.</p>
 <p>Zdravstvo i obrazovanje najčešći su primjeri. Ako je obrazovanje dostupno samo onima koji ga mogu platiti, djeca iz siromašnijih obitelji imat će slabije životne prilike bez obzira na sposobnosti. Javno financirano obrazovanje zato se ne opravdava samo time što povećava ljudski kapital i produktivnost, nego i time što smanjuje ovisnost životnih šansi o dohotku roditelja. Slično vrijedi za zdravstvo. Ako je osnovna zdravstvena zaštita dostupna samo onima koji je mogu platiti, bolest može postati izvor trajne socijalne isključenosti.</p>
 <p>Koliko će društvo prihvatiti robni egalitarizam ovisi o njegovim vrijednostima, povijesti, političkoj kulturi i institucijama. Europske države blagostanja tradicionalno više naglašavaju univerzalne javne usluge, solidarnost i socijalna prava, dok liberalniji modeli više naglašavaju individualnu odgovornost, tržišni izbor i ciljanu pomoć najsiromašnijima. Skandinavske se zemlje primjerice snažno oslanjaju na univerzalne usluge i visoke poreze, dok anglosaksonski modeli češće kombiniraju tržišne mehanizme s ciljanim programima za ranjive skupine.</p>
@@ -731,13 +562,13 @@ Sen, Amartya. 1999. <em>Development as Freedom</em>. Oxford University Press.
 <p><span class="theorem-title"><strong>Definicija 5.3</strong></span> <strong>Paternalizam</strong> je državna intervencija koja ograničava, usmjerava ili oblikuje ponašanje pojedinca uz obrazloženje da to čini za njegovo dobro, a ne radi zaštite trećih strana. Razlikujemo tvrdi paternalizam (prisila ili zabrana) i meki libertarijanski paternalizam koji oblikuje zadane opcije bez ukidanja slobode izbora.</p>
 </div>
 <p>Paternalizam se razlikuje od robnog egalitarizma po naglasku. Robni egalitarizam pita koja dobra trebaju biti dostupna svima. Paternalizam pita smije li država pojedinca potaknuti ili prisiliti da donese odluku koju država smatra boljom za njega. Primjeri su obvezno osnovno obrazovanje, obvezno mirovinsko osiguranje, obvezno zdravstveno osiguranje, obvezno vezanje sigurnosnim pojasom, zabrana prodaje alkohola i cigareta maloljetnicima ili obvezna uporaba zaštitne opreme na radu.</p>
-<p>Paternalističke politike mogu biti različitog intenziteta. <strong>Tvrdi paternalizam</strong> uključuje izravnu prisilu, zabranu ili obvezu. <strong>Meki ili libertarijanski paternalizam</strong> pokušava utjecati na ponašanje bez izravne zabrane izbora. Umjesto prisile koristi zadane opcije, podsjetnike, upozorenja, pojednostavljenje procedura ili promjenu načina na koji se odluke predstavljaju. Najpoznatiji primjer je automatsko uključivanje zaposlenika u mirovinsku štednju uz mogućnost izlaska iz sustava. Pojedinac i dalje može izabrati drugačije, ali zadana opcija povećava vjerojatnost odluke koja se smatra dugoročno korisnom. Ovaj pristup posebno se povezuje s radom Thalera i Sunsteina te njihovim konceptom <em>nudgea</em> <span class="citation" data-cites="thaler2008">(<a href="../references.html#ref-thaler2008" role="doc-biblioref">Thaler i Sunstein 2008.</a>)</span>.</p>
+<p>Paternalističke politike mogu biti različitog intenziteta. <strong>Tvrdi paternalizam</strong> uključuje izravnu prisilu, zabranu ili obvezu. <strong>Meki ili libertarijanski paternalizam</strong> pokušava utjecati na ponašanje bez izravne zabrane izbora. Umjesto prisile koristi zadane opcije, podsjetnike, upozorenja, pojednostavljenje procedura ili promjenu načina na koji se odluke predstavljaju. Najpoznatiji primjer je automatsko uključivanje zaposlenika u mirovinsku štednju uz mogućnost izlaska iz sustava. Pojedinac i dalje može izabrati drugačije, ali zadana opcija povećava vjerojatnost odluke koja se smatra dugoročno korisnom. Ovaj pristup posebno se povezuje s radom Thalera i Sunsteina te njihovim konceptom <em>nudgea</em> <span class="citation" data-cites="thaler2008">(<a href="../references.html#ref-thaler2008" role="doc-biblioref">Thaler i Sunstein 2008</a>)</span>.</p>
 <div class="no-row-height column-margin column-container"><div id="ref-thaler2008" class="csl-entry" role="listitem">
-Thaler, Richard H., i Cass R. Sunstein. 2008. <em>Nudge: Improving Decisions About Health, Wealth, and Happiness</em>. Yale University Press.
+Thaler, Richard H., i Cass R. Sunstein. 2008. <em>Nudge: Improving Decisions About Health, Wealth, and Happiness</em>. New Haven: Yale University Press.
 </div></div><p>Paternalizam je posebno važan u područjima u kojima ljudi često donose odluke s dugoročnim posljedicama, ali pod utjecajem kratkoročnih motiva, ograničene pažnje ili nepotpunih informacija. Ljudi mogu znati da je zdrava prehrana korisna, ali ipak birati nezdravu hranu zbog navike, cijene ili neposrednog zadovoljstva. Mogu znati da treba štedjeti za mirovinu, ali odgađati odluku jer je starost daleko. Bihevioralna ekonomija pokazuje da ljudi često nisu potpuno racionalni u klasičnom smislu, nego su skloni pristranostima, inerciji, pretjeranom optimizmu i podcjenjivanju budućih rizika.</p>
-<p>Međutim, paternalizam je kontroverzan jer uključuje ograničenje individualne slobode. Kritičari upozoravaju da država može pretjerati u ulozi zaštitnika i početi nametati građanima odluke koje bi trebale ostati privatne. Zato paternalističke politike moraju imati jasno opravdanje. Mora biti jasno koji se rizik smanjuje, zašto pojedinac ne može sam dobro odlučiti, postoji li šteta za druge i može li se cilj postići blažim instrumentom. U liberalnoj tradiciji važno mjesto ima Millovo načelo štete, prema kojem je ograničenje slobode pojedinca najlakše opravdati onda kada njegovo ponašanje može nanijeti štetu drugima, a mnogo teže kada država ograničava pojedinca samo radi njegova vlastitog dobra <span class="citation" data-cites="mill1859">(<a href="../references.html#ref-mill1859" role="doc-biblioref">Mill 1859.</a>)</span>.</p>
+<p>Međutim, paternalizam je kontroverzan jer uključuje ograničenje individualne slobode. Kritičari upozoravaju da država može pretjerati u ulozi zaštitnika i početi nametati građanima odluke koje bi trebale ostati privatne. Zato paternalističke politike moraju imati jasno opravdanje. Mora biti jasno koji se rizik smanjuje, zašto pojedinac ne može sam dobro odlučiti, postoji li šteta za druge i može li se cilj postići blažim instrumentom. U liberalnoj tradiciji važno mjesto ima Millovo načelo štete, prema kojem je ograničenje slobode pojedinca najlakše opravdati onda kada njegovo ponašanje može nanijeti štetu drugima, a mnogo teže kada država ograničava pojedinca samo radi njegova vlastitog dobra <span class="citation" data-cites="mill1859">(<a href="../references.html#ref-mill1859" role="doc-biblioref">Mill 1859</a>)</span>.</p>
 <div class="no-row-height column-margin column-container"><div id="ref-mill1859" class="csl-entry" role="listitem">
-Mill, John Stuart. 1859. <em>On Liberty</em>. John W. Parker; Son.
+Mill, John Stuart. 1859. <em>On Liberty</em>. London: John W. Parker; Son.
 </div></div></section>
 <section id="efikasnost-i-pravednost" class="level2 page-columns page-full">
 <h2 class="anchored" data-anchor-id="efikasnost-i-pravednost">Efikasnost i pravednost</h2>
@@ -752,18 +583,18 @@ Mill, John Stuart. 1859. <em>On Liberty</em>. John W. Parker; Son.
 </div>
 <p>Ginijev koeficijent tako sažima cijelu raspodjelu u jedan broj, čime učinak preraspodjele postaje izravno usporediv među zemljama.</p>
 <div class="callout-empirija page-columns page-full">
-<p>Učinak poreza i transfera na nejednakost moguće je izravno izmjeriti. Podaci OECD-a pokazuju da porezi i socijalni transferi u prosjeku smanjuju Ginijev koeficijent razvijenih zemalja za otprilike trećinu, s približno 0,47 prije državne intervencije na oko 0,31 nakon nje <span class="citation" data-cites="oecd_idd">(<a href="../references.html#ref-oecd_idd" role="doc-biblioref">OECD 2024.</a>)</span>. Razmjer toga smanjenja jako varira, od vrlo snažnog u nordijskim i kontinentalnim europskim sustavima do osjetno slabijeg u dijelu anglosaksonskih zemalja. Veći dio toga učinka u većini zemalja dolazi od transfera, osobito mirovina i naknada, a ne od same progresivnosti poreza na dohodak. To je važno jer pokazuje da se nejednakost može jednako snažno smanjiti rashodovnom stranom proračuna kao i poreznom. Usporedbe također pokazuju da zemlje sa sličnom razinom dohotka po stanovniku mogu imati vrlo različite razine nejednakosti, što znači da konačna raspodjela nije zadana tržištem, nego je u velikoj mjeri rezultat politike.</p>
+<p>Učinak poreza i transfera na nejednakost moguće je izravno izmjeriti. Podaci OECD-a pokazuju da porezi i socijalni transferi u prosjeku smanjuju Ginijev koeficijent razvijenih zemalja za otprilike trećinu, s približno 0,47 prije državne intervencije na oko 0,31 nakon nje <span class="citation" data-cites="oecd_idd">(<a href="../references.html#ref-oecd_idd" role="doc-biblioref">OECD 2024</a>)</span>. Razmjer toga smanjenja jako varira, od vrlo snažnog u nordijskim i kontinentalnim europskim sustavima do osjetno slabijeg u dijelu anglosaksonskih zemalja. Veći dio toga učinka u većini zemalja dolazi od transfera, osobito mirovina i naknada, a ne od same progresivnosti poreza na dohodak. To je važno jer pokazuje da se nejednakost može jednako snažno smanjiti rashodovnom stranom proračuna kao i poreznom. Usporedbe također pokazuju da zemlje sa sličnom razinom dohotka po stanovniku mogu imati vrlo različite razine nejednakosti, što znači da konačna raspodjela nije zadana tržištem, nego je u velikoj mjeri rezultat politike.</p>
 <div class="no-row-height column-margin column-container"><div id="ref-oecd_idd" class="csl-entry" role="listitem">
-OECD. 2024. <em>Income Distribution Database (IDD): Gini, Poverty, Income, Methods and Concepts</em>. OECD, Paris. <a href="https://www.oecd.org/social/income-distribution-database.htm">https://www.oecd.org/social/income-distribution-database.htm</a>.
+OECD. 2024. <span>„Income Distribution Database (IDD): Gini, Poverty, Income, Methods and Concepts“</span>. OECD, Paris. <a href="https://www.oecd.org/social/income-distribution-database.htm">https://www.oecd.org/social/income-distribution-database.htm</a>.
 </div></div></div>
 <p>Graf koji slijedi prikazuje Lorenzovu krivulju i pripadni Ginijev koeficijent. Vodoravna os nosi kumulativni udio stanovništva poredanog od najsiromašnijeg prema najbogatijem, okomita kumulativni udio dohotka, a dijagonala označava savršenu jednakost, pa što je plava krivulja udubljenija, to je raspodjela nejednakija. Graf je interaktivan, pa klizači mijenjaju polazišnu nejednakost tržišnog dohotka i razinu preraspodjele kroz poreze i transfere.</p>
 <div class="cell">
 <details class="code-fold hidden">
 <summary>Prikaži kod</summary>
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb1" data-startfrom="135" data-source-offset="0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 134;"><span id="cb1-135"><a href="#cb1-135" aria-hidden="true" tabindex="-1"></a>viewof lor_controls <span class="op">=</span> Inputs<span class="op">.</span><span class="fu">form</span>({</span>
+<div class="sourceCode cell-code hidden" id="cb1" data-startfrom="135" data-source-offset="0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 134;"><span id="cb1-135"><a href="#cb1-135" aria-hidden="true" tabindex="-1"></a>viewof lor_controls <span class="op">=</span> Inputs<span class="op">.</span><span class="fu">form</span>({</span>
 <span id="cb1-136"><a href="#cb1-136" aria-hidden="true" tabindex="-1"></a>  <span class="dt">k</span><span class="op">:</span> Inputs<span class="op">.</span><span class="fu">range</span>([<span class="dv">1</span><span class="op">,</span> <span class="dv">5</span>]<span class="op">,</span>   {<span class="dt">value</span><span class="op">:</span> <span class="fl">2.5</span><span class="op">,</span> <span class="dt">step</span><span class="op">:</span> <span class="fl">0.1</span><span class="op">,</span>  <span class="dt">label</span><span class="op">:</span> <span class="st">"Nejednakost tržišnog dohotka:"</span>})<span class="op">,</span></span>
 <span id="cb1-137"><a href="#cb1-137" aria-hidden="true" tabindex="-1"></a>  <span class="dt">t</span><span class="op">:</span> Inputs<span class="op">.</span><span class="fu">range</span>([<span class="dv">0</span><span class="op">,</span> <span class="fl">0.6</span>]<span class="op">,</span> {<span class="dt">value</span><span class="op">:</span> <span class="dv">0</span><span class="op">,</span>   <span class="dt">step</span><span class="op">:</span> <span class="fl">0.05</span><span class="op">,</span> <span class="dt">label</span><span class="op">:</span> <span class="st">"Razina preraspodjele (porezi i transferi):"</span>})</span>
-<span id="cb1-138"><a href="#cb1-138" aria-hidden="true" tabindex="-1"></a>})</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<span id="cb1-138"><a href="#cb1-138" aria-hidden="true" tabindex="-1"></a>})</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 <div class="cell-output cell-output-display">
 <div id="ojs-cell-1" data-nodetype="declaration">
@@ -774,7 +605,7 @@ OECD. 2024. <em>Income Distribution Database (IDD): Gini, Poverty, Income, Metho
 <div class="cell">
 <details class="code-fold hidden">
 <summary>Prikaži kod</summary>
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb2" data-startfrom="143" data-source-offset="0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 142;"><span id="cb2-143"><a href="#cb2-143" aria-hidden="true" tabindex="-1"></a>lor_k <span class="op">=</span> lor_controls<span class="op">.</span><span class="at">k</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="sourceCode cell-code hidden" id="cb2" data-startfrom="143" data-source-offset="0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 142;"><span id="cb2-143"><a href="#cb2-143" aria-hidden="true" tabindex="-1"></a>lor_k <span class="op">=</span> lor_controls<span class="op">.</span><span class="at">k</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 <div class="cell-output cell-output-display">
 <div id="ojs-cell-2" data-nodetype="declaration">
@@ -785,7 +616,7 @@ OECD. 2024. <em>Income Distribution Database (IDD): Gini, Poverty, Income, Metho
 <div class="cell">
 <details class="code-fold hidden">
 <summary>Prikaži kod</summary>
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb3" data-startfrom="148" data-source-offset="0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 147;"><span id="cb3-148"><a href="#cb3-148" aria-hidden="true" tabindex="-1"></a>lor_t <span class="op">=</span> lor_controls<span class="op">.</span><span class="at">t</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="sourceCode cell-code hidden" id="cb3" data-startfrom="148" data-source-offset="0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 147;"><span id="cb3-148"><a href="#cb3-148" aria-hidden="true" tabindex="-1"></a>lor_t <span class="op">=</span> lor_controls<span class="op">.</span><span class="at">t</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 <div class="cell-output cell-output-display">
 <div id="ojs-cell-3" data-nodetype="declaration">
@@ -796,7 +627,7 @@ OECD. 2024. <em>Income Distribution Database (IDD): Gini, Poverty, Income, Metho
 <div class="cell">
 <details class="code-fold hidden">
 <summary>Prikaži kod</summary>
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb4" data-startfrom="156" data-source-offset="0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 155;"><span id="cb4-156"><a href="#cb4-156" aria-hidden="true" tabindex="-1"></a>{</span>
+<div class="sourceCode cell-code hidden" id="cb4" data-startfrom="156" data-source-offset="0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 155;"><span id="cb4-156"><a href="#cb4-156" aria-hidden="true" tabindex="-1"></a>{</span>
 <span id="cb4-157"><a href="#cb4-157" aria-hidden="true" tabindex="-1"></a>  <span class="kw">const</span> k <span class="op">=</span> lor_k<span class="op">,</span> t <span class="op">=</span> lor_t<span class="op">;</span></span>
 <span id="cb4-158"><a href="#cb4-158" aria-hidden="true" tabindex="-1"></a>  <span class="co">// Lorenzova krivulja: tržišna nejednakost p^k, ublažena preraspodjelom prema dijagonali</span></span>
 <span id="cb4-159"><a href="#cb4-159" aria-hidden="true" tabindex="-1"></a>  <span class="kw">const</span> L <span class="op">=</span> (p) <span class="kw">=&gt;</span> (<span class="dv">1</span> <span class="op">-</span> t) <span class="op">*</span> <span class="bu">Math</span><span class="op">.</span><span class="fu">pow</span>(p<span class="op">,</span> k) <span class="op">+</span> t <span class="op">*</span> p<span class="op">;</span></span>
@@ -832,7 +663,7 @@ OECD. 2024. <em>Income Distribution Database (IDD): Gini, Poverty, Income, Metho
 <span id="cb4-189"><a href="#cb4-189" aria-hidden="true" tabindex="-1"></a>        <span class="dt">fill</span><span class="op">:</span> <span class="st">"#6B6357"</span><span class="op">,</span> <span class="dt">fontSize</span><span class="op">:</span> <span class="dv">11</span><span class="op">,</span> <span class="dt">fontStyle</span><span class="op">:</span> <span class="st">"italic"</span><span class="op">,</span> <span class="dt">textAnchor</span><span class="op">:</span> <span class="st">"start"</span><span class="op">,</span> <span class="dt">rotate</span><span class="op">:</span> <span class="op">-</span><span class="dv">33</span>})</span>
 <span id="cb4-190"><a href="#cb4-190" aria-hidden="true" tabindex="-1"></a>    ]</span>
 <span id="cb4-191"><a href="#cb4-191" aria-hidden="true" tabindex="-1"></a>  })<span class="op">;</span></span>
-<span id="cb4-192"><a href="#cb4-192" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<span id="cb4-192"><a href="#cb4-192" aria-hidden="true" tabindex="-1"></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 <div id="fig-lorenz" class="cell-output cell-output-display quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
@@ -1716,314 +1547,438 @@ window._ojs.selfContained = false;
 window._ojs.runtime.interpretFromScriptTags();
 </script>
 <script id="quarto-html-after-body" type="application/javascript">
-  window.document.addEventListener("DOMContentLoaded", function (event) {
-    // Ensure there is a toggle, if there isn't float one in the top right
-    if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
-      const a = window.document.createElement('a');
-      a.classList.add('top-right');
-      a.classList.add('quarto-color-scheme-toggle');
-      a.href = "";
-      a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
-      const i = window.document.createElement("i");
-      i.classList.add('bi');
-      a.appendChild(i);
-      window.document.body.appendChild(a);
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
     }
-    setColorSchemeToggle(hasAlternateSentinel())
-    const icon = "";
-    const anchorJS = new window.AnchorJS();
-    anchorJS.options = {
-      placement: 'right',
-      icon: icon
-    };
-    anchorJS.add('.anchored');
-    const isCodeAnnotation = (el) => {
-      for (const clz of el.classList) {
-        if (clz.startsWith('code-annotation-')) {                     
-          return true;
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const disableStylesheet = (stylesheets) => {
+    for (let i=0; i < stylesheets.length; i++) {
+      const stylesheet = stylesheets[i];
+      stylesheet.rel = 'prefetch';
+    }
+  }
+  const enableStylesheet = (stylesheets) => {
+    for (let i=0; i < stylesheets.length; i++) {
+      const stylesheet = stylesheets[i];
+      stylesheet.rel = 'stylesheet';
+    }
+  }
+  const manageTransitions = (selector, allowTransitions) => {
+    const els = window.document.querySelectorAll(selector);
+    for (let i=0; i < els.length; i++) {
+      const el = els[i];
+      if (allowTransitions) {
+        el.classList.remove('notransition');
+      } else {
+        el.classList.add('notransition');
+      }
+    }
+  }
+  const toggleGiscusIfUsed = (isAlternate, darkModeDefault) => {
+    const baseTheme = document.querySelector('#giscus-base-theme')?.value ?? 'light';
+    const alternateTheme = document.querySelector('#giscus-alt-theme')?.value ?? 'dark';
+    let newTheme = '';
+    if(darkModeDefault) {
+      newTheme = isAlternate ? baseTheme : alternateTheme;
+    } else {
+      newTheme = isAlternate ? alternateTheme : baseTheme;
+    }
+    const changeGiscusTheme = () => {
+      // From: https://github.com/giscus/giscus/issues/336
+      const sendMessage = (message) => {
+        const iframe = document.querySelector('iframe.giscus-frame');
+        if (!iframe) return;
+        iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
+      }
+      sendMessage({
+        setConfig: {
+          theme: newTheme
+        }
+      });
+    }
+    const isGiscussLoaded = window.document.querySelector('iframe.giscus-frame') !== null;
+    if (isGiscussLoaded) {
+      changeGiscusTheme();
+    }
+  }
+  const toggleColorMode = (alternate) => {
+    // Switch the stylesheets
+    const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
+    manageTransitions('#quarto-margin-sidebar .nav-link', false);
+    if (alternate) {
+      enableStylesheet(alternateStylesheets);
+      for (const sheetNode of alternateStylesheets) {
+        if (sheetNode.id === "quarto-bootstrap") {
+          toggleBodyColorMode(sheetNode);
         }
       }
+    } else {
+      disableStylesheet(alternateStylesheets);
+      toggleBodyColorPrimary();
+    }
+    manageTransitions('#quarto-margin-sidebar .nav-link', true);
+    // Switch the toggles
+    const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
+    for (let i=0; i < toggles.length; i++) {
+      const toggle = toggles[i];
+      if (toggle) {
+        if (alternate) {
+          toggle.classList.add("alternate");     
+        } else {
+          toggle.classList.remove("alternate");
+        }
+      }
+    }
+    // Hack to workaround the fact that safari doesn't
+    // properly recolor the scrollbar when toggling (#1455)
+    if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
+      manageTransitions("body", false);
+      window.scrollTo(0, 1);
+      setTimeout(() => {
+        window.scrollTo(0, 0);
+        manageTransitions("body", true);
+      }, 40);  
+    }
+  }
+  const isFileUrl = () => { 
+    return window.location.protocol === 'file:';
+  }
+  const hasAlternateSentinel = () => {  
+    let styleSentinel = getColorSchemeSentinel();
+    if (styleSentinel !== null) {
+      return styleSentinel === "alternate";
+    } else {
       return false;
     }
-    const onCopySuccess = function(e) {
-      // button target
-      const button = e.trigger;
-      // don't keep focus
-      button.blur();
-      // flash "checked"
-      button.classList.add('code-copy-button-checked');
-      var currentTitle = button.getAttribute("title");
-      button.setAttribute("title", "Copied!");
-      let tooltip;
-      if (window.bootstrap) {
-        button.setAttribute("data-bs-toggle", "tooltip");
-        button.setAttribute("data-bs-placement", "left");
-        button.setAttribute("data-bs-title", "Copied!");
-        tooltip = new bootstrap.Tooltip(button, 
-          { trigger: "manual", 
-            customClass: "code-copy-button-tooltip",
-            offset: [0, -8]});
-        tooltip.show();    
-      }
-      setTimeout(function() {
-        if (tooltip) {
-          tooltip.hide();
-          button.removeAttribute("data-bs-title");
-          button.removeAttribute("data-bs-toggle");
-          button.removeAttribute("data-bs-placement");
-        }
-        button.setAttribute("title", currentTitle);
-        button.classList.remove('code-copy-button-checked');
-      }, 1000);
-      // clear code selection
-      e.clearSelection();
+  }
+  const setStyleSentinel = (alternate) => {
+    const value = alternate ? "alternate" : "default";
+    if (!isFileUrl()) {
+      window.localStorage.setItem("quarto-color-scheme", value);
+    } else {
+      localAlternateSentinel = value;
     }
-    const getTextToCopy = function(trigger) {
-      const outerScaffold = trigger.parentElement.cloneNode(true);
-      const codeEl = outerScaffold.querySelector('code');
+  }
+  const getColorSchemeSentinel = () => {
+    if (!isFileUrl()) {
+      const storageValue = window.localStorage.getItem("quarto-color-scheme");
+      return storageValue != null ? storageValue : localAlternateSentinel;
+    } else {
+      return localAlternateSentinel;
+    }
+  }
+  const darkModeDefault = false;
+  let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
+  // Dark / light mode switch
+  window.quartoToggleColorScheme = () => {
+    // Read the current dark / light value 
+    let toAlternate = !hasAlternateSentinel();
+    toggleColorMode(toAlternate);
+    setStyleSentinel(toAlternate);
+    toggleGiscusIfUsed(toAlternate, darkModeDefault);
+  };
+  // Ensure there is a toggle, if there isn't float one in the top right
+  if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
+    const a = window.document.createElement('a');
+    a.classList.add('top-right');
+    a.classList.add('quarto-color-scheme-toggle');
+    a.href = "";
+    a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
+    const i = window.document.createElement("i");
+    i.classList.add('bi');
+    a.appendChild(i);
+    window.document.body.appendChild(a);
+  }
+  // Switch to dark mode if need be
+  if (hasAlternateSentinel()) {
+    toggleColorMode(true);
+  } else {
+    toggleColorMode(false);
+  }
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const onCopySuccess = function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  }
+  const getTextToCopy = function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
       for (const childEl of codeEl.children) {
         if (isCodeAnnotation(childEl)) {
           childEl.remove();
         }
       }
       return codeEl.innerText;
-    }
-    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
-      text: getTextToCopy
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+    text: getTextToCopy
+  });
+  clipboard.on('success', onCopySuccess);
+  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+      text: getTextToCopy,
+      container: window.document.getElementById('quarto-embedded-source-code-modal')
     });
-    clipboard.on('success', onCopySuccess);
-    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
-      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
-        text: getTextToCopy,
-        container: window.document.getElementById('quarto-embedded-source-code-modal')
-      });
-      clipboardModal.on('success', onCopySuccess);
-    }
-    const viewSource = window.document.getElementById('quarto-view-source') ||
-                       window.document.getElementById('quarto-code-tools-source');
-    if (viewSource) {
-      const sourceUrl = viewSource.getAttribute("data-quarto-source-url");
-      viewSource.addEventListener("click", function(e) {
-        if (sourceUrl) {
-          // rstudio viewer pane
-          if (/\bcapabilities=\b/.test(window.location)) {
-            window.open(sourceUrl);
-          } else {
-            window.location.href = sourceUrl;
-          }
+    clipboardModal.on('success', onCopySuccess);
+  }
+  const viewSource = window.document.getElementById('quarto-view-source') ||
+                     window.document.getElementById('quarto-code-tools-source');
+  if (viewSource) {
+    const sourceUrl = viewSource.getAttribute("data-quarto-source-url");
+    viewSource.addEventListener("click", function(e) {
+      if (sourceUrl) {
+        // rstudio viewer pane
+        if (/\bcapabilities=\b/.test(window.location)) {
+          window.open(sourceUrl);
         } else {
-          const modal = new bootstrap.Modal(document.getElementById('quarto-embedded-source-code-modal'));
-          modal.show();
-        }
-        return false;
-      });
-    }
-    function toggleCodeHandler(show) {
-      return function(e) {
-        const detailsSrc = window.document.querySelectorAll(".cell > details > .sourceCode");
-        for (let i=0; i<detailsSrc.length; i++) {
-          const details = detailsSrc[i].parentElement;
-          if (show) {
-            details.open = true;
-          } else {
-            details.removeAttribute("open");
-          }
-        }
-        const cellCodeDivs = window.document.querySelectorAll(".cell > .sourceCode");
-        const fromCls = show ? "hidden" : "unhidden";
-        const toCls = show ? "unhidden" : "hidden";
-        for (let i=0; i<cellCodeDivs.length; i++) {
-          const codeDiv = cellCodeDivs[i];
-          if (codeDiv.classList.contains(fromCls)) {
-            codeDiv.classList.remove(fromCls);
-            codeDiv.classList.add(toCls);
-          } 
-        }
-        return false;
-      }
-    }
-    const hideAllCode = window.document.getElementById("quarto-hide-all-code");
-    if (hideAllCode) {
-      hideAllCode.addEventListener("click", toggleCodeHandler(false));
-    }
-    const showAllCode = window.document.getElementById("quarto-show-all-code");
-    if (showAllCode) {
-      showAllCode.addEventListener("click", toggleCodeHandler(true));
-    }
-      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
-      var mailtoRegex = new RegExp(/^mailto:/);
-        var filterRegex = new RegExp("https:\/\/lusiki\.github\.io\/Javne-politike\/");
-      var isInternal = (href) => {
-          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
-      }
-      // Inspect non-navigation links and adorn them if external
-     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
-      for (var i=0; i<links.length; i++) {
-        const link = links[i];
-        if (!isInternal(link.href)) {
-          // undo the damage that might have been done by quarto-nav.js in the case of
-          // links that we want to consider external
-          if (link.dataset.originalHref !== undefined) {
-            link.href = link.dataset.originalHref;
-          }
-            // target, if specified
-            link.setAttribute("target", "_blank");
-            if (link.getAttribute("rel") === null) {
-              link.setAttribute("rel", "noopener");
-            }
-            // default icon
-            link.classList.add("external");
-        }
-      }
-    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
-      const config = {
-        allowHTML: true,
-        maxWidth: 500,
-        delay: 100,
-        arrow: false,
-        appendTo: function(el) {
-            return el.parentElement;
-        },
-        interactive: true,
-        interactiveBorder: 10,
-        theme: 'quarto',
-        placement: 'bottom-start',
-      };
-      if (contentFn) {
-        config.content = contentFn;
-      }
-      if (onTriggerFn) {
-        config.onTrigger = onTriggerFn;
-      }
-      if (onUntriggerFn) {
-        config.onUntrigger = onUntriggerFn;
-      }
-      window.tippy(el, config); 
-    }
-    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
-    for (var i=0; i<noterefs.length; i++) {
-      const ref = noterefs[i];
-      tippyHover(ref, function() {
-        // use id or data attribute instead here
-        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
-        try { href = new URL(href).hash; } catch {}
-        const id = href.replace(/^#\/?/, "");
-        const note = window.document.getElementById(id);
-        if (note) {
-          return note.innerHTML;
-        } else {
-          return "";
-        }
-      });
-    }
-    const xrefs = window.document.querySelectorAll('a.quarto-xref');
-    const processXRef = (id, note) => {
-      // Strip column container classes
-      const stripColumnClz = (el) => {
-        el.classList.remove("page-full", "page-columns");
-        if (el.children) {
-          for (const child of el.children) {
-            stripColumnClz(child);
-          }
-        }
-      }
-      stripColumnClz(note)
-      if (id === null || id.startsWith('sec-')) {
-        // Special case sections, only their first couple elements
-        const container = document.createElement("div");
-        if (note.children && note.children.length > 2) {
-          container.appendChild(note.children[0].cloneNode(true));
-          for (let i = 1; i < note.children.length; i++) {
-            const child = note.children[i];
-            if (child.tagName === "P" && child.innerText === "") {
-              continue;
-            } else {
-              container.appendChild(child.cloneNode(true));
-              break;
-            }
-          }
-          if (window.Quarto?.typesetMath) {
-            window.Quarto.typesetMath(container);
-          }
-          return container.innerHTML
-        } else {
-          if (window.Quarto?.typesetMath) {
-            window.Quarto.typesetMath(note);
-          }
-          return note.innerHTML;
+          window.location.href = sourceUrl;
         }
       } else {
-        // Remove any anchor links if they are present
-        const anchorLink = note.querySelector('a.anchorjs-link');
-        if (anchorLink) {
-          anchorLink.remove();
+        const modal = new bootstrap.Modal(document.getElementById('quarto-embedded-source-code-modal'));
+        modal.show();
+      }
+      return false;
+    });
+  }
+  function toggleCodeHandler(show) {
+    return function(e) {
+      const detailsSrc = window.document.querySelectorAll(".cell > details > .sourceCode");
+      for (let i=0; i<detailsSrc.length; i++) {
+        const details = detailsSrc[i].parentElement;
+        if (show) {
+          details.open = true;
+        } else {
+          details.removeAttribute("open");
         }
+      }
+      const cellCodeDivs = window.document.querySelectorAll(".cell > .sourceCode");
+      const fromCls = show ? "hidden" : "unhidden";
+      const toCls = show ? "unhidden" : "hidden";
+      for (let i=0; i<cellCodeDivs.length; i++) {
+        const codeDiv = cellCodeDivs[i];
+        if (codeDiv.classList.contains(fromCls)) {
+          codeDiv.classList.remove(fromCls);
+          codeDiv.classList.add(toCls);
+        } 
+      }
+      return false;
+    }
+  }
+  const hideAllCode = window.document.getElementById("quarto-hide-all-code");
+  if (hideAllCode) {
+    hideAllCode.addEventListener("click", toggleCodeHandler(false));
+  }
+  const showAllCode = window.document.getElementById("quarto-show-all-code");
+  if (showAllCode) {
+    showAllCode.addEventListener("click", toggleCodeHandler(true));
+  }
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp("https:\/\/lusiki\.github\.io\/Javne-politike\/");
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+          // target, if specified
+          link.setAttribute("target", "_blank");
+          if (link.getAttribute("rel") === null) {
+            link.setAttribute("rel", "noopener");
+          }
+          // default icon
+          link.classList.add("external");
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+    const config = {
+      allowHTML: true,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start',
+    };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
         if (window.Quarto?.typesetMath) {
           window.Quarto.typesetMath(note);
         }
-        if (note.classList.contains("callout")) {
-          return note.outerHTML;
-        } else {
-          return note.innerHTML;
-        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
       }
     }
-    for (var i=0; i<xrefs.length; i++) {
-      const xref = xrefs[i];
-      tippyHover(xref, undefined, function(instance) {
-        instance.disable();
-        let url = xref.getAttribute('href');
-        let hash = undefined; 
-        if (url.startsWith('#')) {
-          hash = url;
-        } else {
-          try { hash = new URL(url).hash; } catch {}
-        }
-        if (hash) {
-          const id = hash.replace(/^#\/?/, "");
-          const note = window.document.getElementById(id);
-          if (note !== null) {
-            try {
-              const html = processXRef(id, note.cloneNode(true));
-              instance.setContent(html);
-            } finally {
-              instance.enable();
-              instance.show();
-            }
-          } else {
-            // See if we can fetch this
-            fetch(url.split('#')[0])
-            .then(res => res.text())
-            .then(html => {
-              const parser = new DOMParser();
-              const htmlDoc = parser.parseFromString(html, "text/html");
-              const note = htmlDoc.getElementById(id);
-              if (note !== null) {
-                const html = processXRef(id, note);
-                instance.setContent(html);
-              } 
-            }).finally(() => {
-              instance.enable();
-              instance.show();
-            });
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
           }
         } else {
-          // See if we can fetch a full url (with no hash to target)
-          // This is a special case and we should probably do some content thinning / targeting
-          fetch(url)
+          // See if we can fetch this
+          fetch(url.split('#')[0])
           .then(res => res.text())
           .then(html => {
             const parser = new DOMParser();
             const htmlDoc = parser.parseFromString(html, "text/html");
-            const note = htmlDoc.querySelector('main.content');
+            const note = htmlDoc.getElementById(id);
             if (note !== null) {
-              // This should only happen for chapter cross references
-              // (since there is no id in the URL)
-              // remove the first header
-              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
-                note.children[0].remove();
-              }
-              const html = processXRef(null, note);
+              const html = processXRef(id, note);
               instance.setContent(html);
             } 
           }).finally(() => {
@@ -2031,161 +1986,185 @@ window._ojs.runtime.interpretFromScriptTags();
             instance.show();
           });
         }
-      }, function(instance) {
-      });
-    }
-        let selectedAnnoteEl;
-        const selectorForAnnotation = ( cell, annotation) => {
-          let cellAttr = 'data-code-cell="' + cell + '"';
-          let lineAttr = 'data-code-annotation="' +  annotation + '"';
-          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
-          return selector;
-        }
-        const selectCodeLines = (annoteEl) => {
-          const doc = window.document;
-          const targetCell = annoteEl.getAttribute("data-target-cell");
-          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
-          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
-          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
-          const lineIds = lines.map((line) => {
-            return targetCell + "-" + line;
-          })
-          let top = null;
-          let height = null;
-          let parent = null;
-          if (lineIds.length > 0) {
-              //compute the position of the single el (top and bottom and make a div)
-              const el = window.document.getElementById(lineIds[0]);
-              top = el.offsetTop;
-              height = el.offsetHeight;
-              parent = el.parentElement.parentElement;
-            if (lineIds.length > 1) {
-              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
-              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
-              height = bottom - top;
-            }
-            if (top !== null && height !== null && parent !== null) {
-              // cook up a div (if necessary) and position it 
-              let div = window.document.getElementById("code-annotation-line-highlight");
-              if (div === null) {
-                div = window.document.createElement("div");
-                div.setAttribute("id", "code-annotation-line-highlight");
-                div.style.position = 'absolute';
-                parent.appendChild(div);
-              }
-              div.style.top = top - 2 + "px";
-              div.style.height = height + 4 + "px";
-              div.style.left = 0;
-              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
-              if (gutterDiv === null) {
-                gutterDiv = window.document.createElement("div");
-                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
-                gutterDiv.style.position = 'absolute';
-                const codeCell = window.document.getElementById(targetCell);
-                const gutter = codeCell.querySelector('.code-annotation-gutter');
-                gutter.appendChild(gutterDiv);
-              }
-              gutterDiv.style.top = top - 2 + "px";
-              gutterDiv.style.height = height + 4 + "px";
-            }
-            selectedAnnoteEl = annoteEl;
-          }
-        };
-        const unselectCodeLines = () => {
-          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
-          elementsIds.forEach((elId) => {
-            const div = window.document.getElementById(elId);
-            if (div) {
-              div.remove();
-            }
-          });
-          selectedAnnoteEl = undefined;
-        };
-          // Handle positioning of the toggle
-      window.addEventListener(
-        "resize",
-        throttle(() => {
-          elRect = undefined;
-          if (selectedAnnoteEl) {
-            selectCodeLines(selectedAnnoteEl);
-          }
-        }, 10)
-      );
-      function throttle(fn, ms) {
-      let throttle = false;
-      let timer;
-        return (...args) => {
-          if(!throttle) { // first call gets through
-              fn.apply(this, args);
-              throttle = true;
-          } else { // all the others get throttled
-              if(timer) clearTimeout(timer); // cancel #2
-              timer = setTimeout(() => {
-                fn.apply(this, args);
-                timer = throttle = false;
-              }, ms);
-          }
-        };
-      }
-        // Attach click handler to the DT
-        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
-        for (const annoteDlNode of annoteDls) {
-          annoteDlNode.addEventListener('click', (event) => {
-            const clickedEl = event.target;
-            if (clickedEl !== selectedAnnoteEl) {
-              unselectCodeLines();
-              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
-              if (activeEl) {
-                activeEl.classList.remove('code-annotation-active');
-              }
-              selectCodeLines(clickedEl);
-              clickedEl.classList.add('code-annotation-active');
-            } else {
-              // Unselect the line
-              unselectCodeLines();
-              clickedEl.classList.remove('code-annotation-active');
-            }
-          });
-        }
-    const findCites = (el) => {
-      const parentEl = el.parentElement;
-      if (parentEl) {
-        const cites = parentEl.dataset.cites;
-        if (cites) {
-          return {
-            el,
-            cites: cites.split(' ')
-          };
-        } else {
-          return findCites(el.parentElement)
-        }
       } else {
-        return undefined;
-      }
-    };
-    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
-    for (var i=0; i<bibliorefs.length; i++) {
-      const ref = bibliorefs[i];
-      const citeInfo = findCites(ref);
-      if (citeInfo) {
-        tippyHover(citeInfo.el, function() {
-          var popup = window.document.createElement('div');
-          citeInfo.cites.forEach(function(cite) {
-            var citeDiv = window.document.createElement('div');
-            citeDiv.classList.add('hanging-indent');
-            citeDiv.classList.add('csl-entry');
-            var biblioDiv = window.document.getElementById('ref-' + cite);
-            if (biblioDiv) {
-              citeDiv.innerHTML = biblioDiv.innerHTML;
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
             }
-            popup.appendChild(citeDiv);
-          });
-          return popup.innerHTML;
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
         });
       }
+    }, function(instance) {
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            div.style.left = 0;
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
     }
-  });
-  </script>
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
       <a href="../chapters/02-alokacijska-funkcija.html" class="pagination-link" aria-label="Alokacijska funkcija i tržišni neuspjesi">
@@ -2198,7 +2177,7 @@ window._ojs.runtime.interpretFromScriptTags();
       </a>
   </div>
 </nav><div class="modal fade" id="quarto-embedded-source-code-modal" tabindex="-1" aria-labelledby="quarto-embedded-source-code-modal-label" aria-hidden="true"><div class="modal-dialog modal-dialog-scrollable"><div class="modal-content"><div class="modal-header"><h5 class="modal-title" id="quarto-embedded-source-code-modal-label">Source Code</h5><button class="btn-close" data-bs-dismiss="modal"></button></div><div class="modal-body"><div class="">
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb5" data-shortcodes="false"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
+<div class="sourceCode" id="cb5" data-shortcodes="false"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
 <span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="an">title:</span><span class="co"> "Distribucijska funkcija — država i pitanje pravednosti"</span></span>
 <span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
 <span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a></span>
@@ -2332,65 +2311,65 @@ window._ojs.runtime.interpretFromScriptTags();
 <span id="cb5-132"><a href="#cb5-132" aria-hidden="true" tabindex="-1"></a>Graf koji slijedi prikazuje Lorenzovu krivulju i pripadni Ginijev koeficijent. Vodoravna os nosi kumulativni udio stanovništva poredanog od najsiromašnijeg prema najbogatijem, okomita kumulativni udio dohotka, a dijagonala označava savršenu jednakost, pa što je plava krivulja udubljenija, to je raspodjela nejednakija. Graf je interaktivan, pa klizači mijenjaju polazišnu nejednakost tržišnog dohotka i razinu preraspodjele kroz poreze i transfere.</span>
 <span id="cb5-133"><a href="#cb5-133" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb5-136"><a href="#cb5-136" aria-hidden="true" tabindex="-1"></a><span class="in">```{ojs}</span></span>
-<span id="cb5-137"><a href="#cb5-137" aria-hidden="true" tabindex="-1"></a><span class="co">//| echo: false</span></span>
-<span id="cb5-138"><a href="#cb5-138" aria-hidden="true" tabindex="-1"></a>viewof lor_controls <span class="op">=</span> Inputs<span class="op">.</span><span class="fu">form</span>({</span>
-<span id="cb5-139"><a href="#cb5-139" aria-hidden="true" tabindex="-1"></a>  <span class="dt">k</span><span class="op">:</span> Inputs<span class="op">.</span><span class="fu">range</span>([<span class="dv">1</span><span class="op">,</span> <span class="dv">5</span>]<span class="op">,</span>   {<span class="dt">value</span><span class="op">:</span> <span class="fl">2.5</span><span class="op">,</span> <span class="dt">step</span><span class="op">:</span> <span class="fl">0.1</span><span class="op">,</span>  <span class="dt">label</span><span class="op">:</span> <span class="st">"Nejednakost tržišnog dohotka:"</span>})<span class="op">,</span></span>
-<span id="cb5-140"><a href="#cb5-140" aria-hidden="true" tabindex="-1"></a>  <span class="dt">t</span><span class="op">:</span> Inputs<span class="op">.</span><span class="fu">range</span>([<span class="dv">0</span><span class="op">,</span> <span class="fl">0.6</span>]<span class="op">,</span> {<span class="dt">value</span><span class="op">:</span> <span class="dv">0</span><span class="op">,</span>   <span class="dt">step</span><span class="op">:</span> <span class="fl">0.05</span><span class="op">,</span> <span class="dt">label</span><span class="op">:</span> <span class="st">"Razina preraspodjele (porezi i transferi):"</span>})</span>
-<span id="cb5-141"><a href="#cb5-141" aria-hidden="true" tabindex="-1"></a>})</span>
+<span id="cb5-137"><a href="#cb5-137" aria-hidden="true" tabindex="-1"></a><span class="in">//| echo: false</span></span>
+<span id="cb5-138"><a href="#cb5-138" aria-hidden="true" tabindex="-1"></a><span class="in">viewof lor_controls = Inputs.form({</span></span>
+<span id="cb5-139"><a href="#cb5-139" aria-hidden="true" tabindex="-1"></a><span class="in">  k: Inputs.range([1, 5],   {value: 2.5, step: 0.1,  label: "Nejednakost tržišnog dohotka:"}),</span></span>
+<span id="cb5-140"><a href="#cb5-140" aria-hidden="true" tabindex="-1"></a><span class="in">  t: Inputs.range([0, 0.6], {value: 0,   step: 0.05, label: "Razina preraspodjele (porezi i transferi):"})</span></span>
+<span id="cb5-141"><a href="#cb5-141" aria-hidden="true" tabindex="-1"></a><span class="in">})</span></span>
 <span id="cb5-142"><a href="#cb5-142" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
 <span id="cb5-143"><a href="#cb5-143" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb5-146"><a href="#cb5-146" aria-hidden="true" tabindex="-1"></a><span class="in">```{ojs}</span></span>
-<span id="cb5-147"><a href="#cb5-147" aria-hidden="true" tabindex="-1"></a><span class="co">//| echo: false</span></span>
-<span id="cb5-148"><a href="#cb5-148" aria-hidden="true" tabindex="-1"></a>lor_k <span class="op">=</span> lor_controls<span class="op">.</span><span class="at">k</span></span>
+<span id="cb5-147"><a href="#cb5-147" aria-hidden="true" tabindex="-1"></a><span class="in">//| echo: false</span></span>
+<span id="cb5-148"><a href="#cb5-148" aria-hidden="true" tabindex="-1"></a><span class="in">lor_k = lor_controls.k</span></span>
 <span id="cb5-149"><a href="#cb5-149" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
 <span id="cb5-150"><a href="#cb5-150" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb5-153"><a href="#cb5-153" aria-hidden="true" tabindex="-1"></a><span class="in">```{ojs}</span></span>
-<span id="cb5-154"><a href="#cb5-154" aria-hidden="true" tabindex="-1"></a><span class="co">//| echo: false</span></span>
-<span id="cb5-155"><a href="#cb5-155" aria-hidden="true" tabindex="-1"></a>lor_t <span class="op">=</span> lor_controls<span class="op">.</span><span class="at">t</span></span>
+<span id="cb5-154"><a href="#cb5-154" aria-hidden="true" tabindex="-1"></a><span class="in">//| echo: false</span></span>
+<span id="cb5-155"><a href="#cb5-155" aria-hidden="true" tabindex="-1"></a><span class="in">lor_t = lor_controls.t</span></span>
 <span id="cb5-156"><a href="#cb5-156" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
 <span id="cb5-157"><a href="#cb5-157" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb5-160"><a href="#cb5-160" aria-hidden="true" tabindex="-1"></a><span class="in">```{ojs}</span></span>
-<span id="cb5-161"><a href="#cb5-161" aria-hidden="true" tabindex="-1"></a><span class="co">//| echo: false</span></span>
-<span id="cb5-162"><a href="#cb5-162" aria-hidden="true" tabindex="-1"></a><span class="co">//| label: fig-lorenz</span></span>
-<span id="cb5-163"><a href="#cb5-163" aria-hidden="true" tabindex="-1"></a><span class="co">//| fig-cap: "Lorenzova krivulja udaljava se od dijagonale jednakosti kako raste nejednakost tržišnog dohotka, a preraspodjela je vraća prema dijagonali i smanjuje Ginijev koeficijent."</span></span>
-<span id="cb5-164"><a href="#cb5-164" aria-hidden="true" tabindex="-1"></a><span class="co">//| fig-alt: "Graf Lorenzove krivulje s kumulativnim udjelom stanovništva na osi x i kumulativnim udjelom dohotka na osi y. Isprekidana dijagonala prikazuje savršenu jednakost, a plava krivulja odstupa prema dolje što je nejednakost veća; Ginijev koeficijent ispisuje se u gornjem lijevom kutu i smanjuje se kako se preraspodjela povećava."</span></span>
-<span id="cb5-165"><a href="#cb5-165" aria-hidden="true" tabindex="-1"></a>{</span>
-<span id="cb5-166"><a href="#cb5-166" aria-hidden="true" tabindex="-1"></a>  <span class="kw">const</span> k <span class="op">=</span> lor_k<span class="op">,</span> t <span class="op">=</span> lor_t<span class="op">;</span></span>
-<span id="cb5-167"><a href="#cb5-167" aria-hidden="true" tabindex="-1"></a>  <span class="co">// Lorenzova krivulja: tržišna nejednakost p^k, ublažena preraspodjelom prema dijagonali</span></span>
-<span id="cb5-168"><a href="#cb5-168" aria-hidden="true" tabindex="-1"></a>  <span class="kw">const</span> L <span class="op">=</span> (p) <span class="kw">=&gt;</span> (<span class="dv">1</span> <span class="op">-</span> t) <span class="op">*</span> <span class="bu">Math</span><span class="op">.</span><span class="fu">pow</span>(p<span class="op">,</span> k) <span class="op">+</span> t <span class="op">*</span> p<span class="op">;</span></span>
+<span id="cb5-161"><a href="#cb5-161" aria-hidden="true" tabindex="-1"></a><span class="in">//| echo: false</span></span>
+<span id="cb5-162"><a href="#cb5-162" aria-hidden="true" tabindex="-1"></a><span class="in">//| label: fig-lorenz</span></span>
+<span id="cb5-163"><a href="#cb5-163" aria-hidden="true" tabindex="-1"></a><span class="in">//| fig-cap: "Lorenzova krivulja udaljava se od dijagonale jednakosti kako raste nejednakost tržišnog dohotka, a preraspodjela je vraća prema dijagonali i smanjuje Ginijev koeficijent."</span></span>
+<span id="cb5-164"><a href="#cb5-164" aria-hidden="true" tabindex="-1"></a><span class="in">//| fig-alt: "Graf Lorenzove krivulje s kumulativnim udjelom stanovništva na osi x i kumulativnim udjelom dohotka na osi y. Isprekidana dijagonala prikazuje savršenu jednakost, a plava krivulja odstupa prema dolje što je nejednakost veća; Ginijev koeficijent ispisuje se u gornjem lijevom kutu i smanjuje se kako se preraspodjela povećava."</span></span>
+<span id="cb5-165"><a href="#cb5-165" aria-hidden="true" tabindex="-1"></a><span class="in">{</span></span>
+<span id="cb5-166"><a href="#cb5-166" aria-hidden="true" tabindex="-1"></a><span class="in">  const k = lor_k, t = lor_t;</span></span>
+<span id="cb5-167"><a href="#cb5-167" aria-hidden="true" tabindex="-1"></a><span class="in">  // Lorenzova krivulja: tržišna nejednakost p^k, ublažena preraspodjelom prema dijagonali</span></span>
+<span id="cb5-168"><a href="#cb5-168" aria-hidden="true" tabindex="-1"></a><span class="in">  const L = (p) =&gt; (1 - t) * Math.pow(p, k) + t * p;</span></span>
 <span id="cb5-169"><a href="#cb5-169" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb5-170"><a href="#cb5-170" aria-hidden="true" tabindex="-1"></a>  <span class="kw">const</span> ps <span class="op">=</span> d3<span class="op">.</span><span class="fu">range</span>(<span class="dv">0</span><span class="op">,</span> <span class="fl">1.0001</span><span class="op">,</span> <span class="fl">0.01</span>)<span class="op">;</span></span>
-<span id="cb5-171"><a href="#cb5-171" aria-hidden="true" tabindex="-1"></a>  <span class="kw">const</span> lorenz <span class="op">=</span> ps<span class="op">.</span><span class="fu">map</span>(p <span class="kw">=&gt;</span> ({p<span class="op">,</span> <span class="dt">L</span><span class="op">:</span> <span class="fu">L</span>(p)}))<span class="op">;</span></span>
-<span id="cb5-172"><a href="#cb5-172" aria-hidden="true" tabindex="-1"></a>  <span class="kw">const</span> diag <span class="op">=</span> [{<span class="dt">p</span><span class="op">:</span> <span class="dv">0</span><span class="op">,</span> <span class="dt">L</span><span class="op">:</span> <span class="dv">0</span>}<span class="op">,</span> {<span class="dt">p</span><span class="op">:</span> <span class="dv">1</span><span class="op">,</span> <span class="dt">L</span><span class="op">:</span> <span class="dv">1</span>}]<span class="op">;</span></span>
+<span id="cb5-170"><a href="#cb5-170" aria-hidden="true" tabindex="-1"></a><span class="in">  const ps = d3.range(0, 1.0001, 0.01);</span></span>
+<span id="cb5-171"><a href="#cb5-171" aria-hidden="true" tabindex="-1"></a><span class="in">  const lorenz = ps.map(p =&gt; ({p, L: L(p)}));</span></span>
+<span id="cb5-172"><a href="#cb5-172" aria-hidden="true" tabindex="-1"></a><span class="in">  const diag = [{p: 0, L: 0}, {p: 1, L: 1}];</span></span>
 <span id="cb5-173"><a href="#cb5-173" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb5-174"><a href="#cb5-174" aria-hidden="true" tabindex="-1"></a>  <span class="co">// Gini = 1 - 2 * ∫ L(p) dp  (trapezna procjena)</span></span>
-<span id="cb5-175"><a href="#cb5-175" aria-hidden="true" tabindex="-1"></a>  <span class="kw">let</span> area <span class="op">=</span> <span class="dv">0</span><span class="op">;</span></span>
-<span id="cb5-176"><a href="#cb5-176" aria-hidden="true" tabindex="-1"></a>  <span class="cf">for</span> (<span class="kw">let</span> i <span class="op">=</span> <span class="dv">1</span><span class="op">;</span> i <span class="op">&lt;</span> lorenz<span class="op">.</span><span class="at">length</span><span class="op">;</span> i<span class="op">++</span>) {</span>
-<span id="cb5-177"><a href="#cb5-177" aria-hidden="true" tabindex="-1"></a>    area <span class="op">+=</span> (lorenz[i]<span class="op">.</span><span class="at">L</span> <span class="op">+</span> lorenz[i <span class="op">-</span> <span class="dv">1</span>]<span class="op">.</span><span class="at">L</span>) <span class="op">/</span> <span class="dv">2</span> <span class="op">*</span> (lorenz[i]<span class="op">.</span><span class="at">p</span> <span class="op">-</span> lorenz[i <span class="op">-</span> <span class="dv">1</span>]<span class="op">.</span><span class="at">p</span>)<span class="op">;</span></span>
-<span id="cb5-178"><a href="#cb5-178" aria-hidden="true" tabindex="-1"></a>  }</span>
-<span id="cb5-179"><a href="#cb5-179" aria-hidden="true" tabindex="-1"></a>  <span class="kw">const</span> gini <span class="op">=</span> <span class="dv">1</span> <span class="op">-</span> <span class="dv">2</span> <span class="op">*</span> area<span class="op">;</span></span>
+<span id="cb5-174"><a href="#cb5-174" aria-hidden="true" tabindex="-1"></a><span class="in">  // Gini = 1 - 2 * ∫ L(p) dp  (trapezna procjena)</span></span>
+<span id="cb5-175"><a href="#cb5-175" aria-hidden="true" tabindex="-1"></a><span class="in">  let area = 0;</span></span>
+<span id="cb5-176"><a href="#cb5-176" aria-hidden="true" tabindex="-1"></a><span class="in">  for (let i = 1; i &lt; lorenz.length; i++) {</span></span>
+<span id="cb5-177"><a href="#cb5-177" aria-hidden="true" tabindex="-1"></a><span class="in">    area += (lorenz[i].L + lorenz[i - 1].L) / 2 * (lorenz[i].p - lorenz[i - 1].p);</span></span>
+<span id="cb5-178"><a href="#cb5-178" aria-hidden="true" tabindex="-1"></a><span class="in">  }</span></span>
+<span id="cb5-179"><a href="#cb5-179" aria-hidden="true" tabindex="-1"></a><span class="in">  const gini = 1 - 2 * area;</span></span>
 <span id="cb5-180"><a href="#cb5-180" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb5-181"><a href="#cb5-181" aria-hidden="true" tabindex="-1"></a>  <span class="cf">return</span> Plot<span class="op">.</span><span class="fu">plot</span>({</span>
-<span id="cb5-182"><a href="#cb5-182" aria-hidden="true" tabindex="-1"></a>    <span class="dt">width</span><span class="op">:</span> <span class="dv">540</span><span class="op">,</span></span>
-<span id="cb5-183"><a href="#cb5-183" aria-hidden="true" tabindex="-1"></a>    <span class="dt">height</span><span class="op">:</span> <span class="dv">520</span><span class="op">,</span></span>
-<span id="cb5-184"><a href="#cb5-184" aria-hidden="true" tabindex="-1"></a>    <span class="dt">marginLeft</span><span class="op">:</span> <span class="dv">62</span><span class="op">,</span></span>
-<span id="cb5-185"><a href="#cb5-185" aria-hidden="true" tabindex="-1"></a>    <span class="dt">marginRight</span><span class="op">:</span> <span class="dv">28</span><span class="op">,</span></span>
-<span id="cb5-186"><a href="#cb5-186" aria-hidden="true" tabindex="-1"></a>    <span class="dt">marginTop</span><span class="op">:</span> <span class="dv">46</span><span class="op">,</span></span>
-<span id="cb5-187"><a href="#cb5-187" aria-hidden="true" tabindex="-1"></a>    <span class="dt">marginBottom</span><span class="op">:</span> <span class="dv">56</span><span class="op">,</span></span>
-<span id="cb5-188"><a href="#cb5-188" aria-hidden="true" tabindex="-1"></a>    <span class="dt">aspectRatio</span><span class="op">:</span> <span class="dv">1</span><span class="op">,</span></span>
-<span id="cb5-189"><a href="#cb5-189" aria-hidden="true" tabindex="-1"></a>    <span class="dt">style</span><span class="op">:</span> {<span class="dt">fontSize</span><span class="op">:</span> <span class="st">"12px"</span><span class="op">,</span> <span class="dt">fontFamily</span><span class="op">:</span> <span class="st">"Public Sans, system-ui, sans-serif"</span><span class="op">,</span> <span class="dt">color</span><span class="op">:</span> <span class="st">"#3A332D"</span>}<span class="op">,</span></span>
-<span id="cb5-190"><a href="#cb5-190" aria-hidden="true" tabindex="-1"></a>    <span class="dt">x</span><span class="op">:</span> {<span class="dt">label</span><span class="op">:</span> <span class="st">"Kumulativni udio stanovništva →"</span><span class="op">,</span> <span class="dt">domain</span><span class="op">:</span> [<span class="dv">0</span><span class="op">,</span> <span class="dv">1</span>]<span class="op">,</span> <span class="dt">tickFormat</span><span class="op">:</span> <span class="st">"%"</span>}<span class="op">,</span></span>
-<span id="cb5-191"><a href="#cb5-191" aria-hidden="true" tabindex="-1"></a>    <span class="dt">y</span><span class="op">:</span> {<span class="dt">label</span><span class="op">:</span> <span class="st">"↑ Kumulativni udio dohotka"</span><span class="op">,</span> <span class="dt">domain</span><span class="op">:</span> [<span class="dv">0</span><span class="op">,</span> <span class="dv">1</span>]<span class="op">,</span> <span class="dt">tickFormat</span><span class="op">:</span> <span class="st">"%"</span>}<span class="op">,</span></span>
-<span id="cb5-192"><a href="#cb5-192" aria-hidden="true" tabindex="-1"></a>    <span class="dt">marks</span><span class="op">:</span> [</span>
-<span id="cb5-193"><a href="#cb5-193" aria-hidden="true" tabindex="-1"></a>      Plot<span class="op">.</span><span class="fu">line</span>(diag<span class="op">,</span> {<span class="dt">x</span><span class="op">:</span> <span class="st">"p"</span><span class="op">,</span> <span class="dt">y</span><span class="op">:</span> <span class="st">"L"</span><span class="op">,</span> <span class="dt">stroke</span><span class="op">:</span> <span class="st">"#6B6357"</span><span class="op">,</span> <span class="dt">strokeDasharray</span><span class="op">:</span> <span class="st">"5,4"</span><span class="op">,</span> <span class="dt">strokeWidth</span><span class="op">:</span> <span class="fl">1.5</span>})<span class="op">,</span></span>
-<span id="cb5-194"><a href="#cb5-194" aria-hidden="true" tabindex="-1"></a>      Plot<span class="op">.</span><span class="fu">line</span>(lorenz<span class="op">,</span> {<span class="dt">x</span><span class="op">:</span> <span class="st">"p"</span><span class="op">,</span> <span class="dt">y</span><span class="op">:</span> <span class="st">"L"</span><span class="op">,</span> <span class="dt">stroke</span><span class="op">:</span> <span class="st">"#2D5A8E"</span><span class="op">,</span> <span class="dt">strokeWidth</span><span class="op">:</span> <span class="fl">2.5</span>})<span class="op">,</span></span>
-<span id="cb5-195"><a href="#cb5-195" aria-hidden="true" tabindex="-1"></a>      Plot<span class="op">.</span><span class="fu">text</span>([{<span class="dt">p</span><span class="op">:</span> <span class="fl">0.04</span><span class="op">,</span> <span class="dt">L</span><span class="op">:</span> <span class="fl">0.93</span>}]<span class="op">,</span> {<span class="dt">x</span><span class="op">:</span> <span class="st">"p"</span><span class="op">,</span> <span class="dt">y</span><span class="op">:</span> <span class="st">"L"</span><span class="op">,</span> <span class="dt">text</span><span class="op">:</span> [<span class="vs">`Ginijev koeficijent = </span><span class="sc">${</span>gini<span class="op">.</span><span class="fu">toFixed</span>(<span class="dv">2</span>)<span class="sc">}</span><span class="vs">`</span>]<span class="op">,</span></span>
-<span id="cb5-196"><a href="#cb5-196" aria-hidden="true" tabindex="-1"></a>        <span class="dt">fill</span><span class="op">:</span> <span class="st">"#1C1916"</span><span class="op">,</span> <span class="dt">fontSize</span><span class="op">:</span> <span class="dv">14</span><span class="op">,</span> <span class="dt">fontWeight</span><span class="op">:</span> <span class="dv">700</span><span class="op">,</span> <span class="dt">textAnchor</span><span class="op">:</span> <span class="st">"start"</span>})<span class="op">,</span></span>
-<span id="cb5-197"><a href="#cb5-197" aria-hidden="true" tabindex="-1"></a>      Plot<span class="op">.</span><span class="fu">text</span>([{<span class="dt">p</span><span class="op">:</span> <span class="fl">0.80</span><span class="op">,</span> <span class="dt">L</span><span class="op">:</span> <span class="fl">0.88</span>}]<span class="op">,</span> {<span class="dt">x</span><span class="op">:</span> <span class="st">"p"</span><span class="op">,</span> <span class="dt">y</span><span class="op">:</span> <span class="st">"L"</span><span class="op">,</span> <span class="dt">text</span><span class="op">:</span> [<span class="st">"linija jednakosti"</span>]<span class="op">,</span></span>
-<span id="cb5-198"><a href="#cb5-198" aria-hidden="true" tabindex="-1"></a>        <span class="dt">fill</span><span class="op">:</span> <span class="st">"#6B6357"</span><span class="op">,</span> <span class="dt">fontSize</span><span class="op">:</span> <span class="dv">11</span><span class="op">,</span> <span class="dt">fontStyle</span><span class="op">:</span> <span class="st">"italic"</span><span class="op">,</span> <span class="dt">textAnchor</span><span class="op">:</span> <span class="st">"start"</span><span class="op">,</span> <span class="dt">rotate</span><span class="op">:</span> <span class="op">-</span><span class="dv">33</span>})</span>
-<span id="cb5-199"><a href="#cb5-199" aria-hidden="true" tabindex="-1"></a>    ]</span>
-<span id="cb5-200"><a href="#cb5-200" aria-hidden="true" tabindex="-1"></a>  })<span class="op">;</span></span>
-<span id="cb5-201"><a href="#cb5-201" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb5-181"><a href="#cb5-181" aria-hidden="true" tabindex="-1"></a><span class="in">  return Plot.plot({</span></span>
+<span id="cb5-182"><a href="#cb5-182" aria-hidden="true" tabindex="-1"></a><span class="in">    width: 540,</span></span>
+<span id="cb5-183"><a href="#cb5-183" aria-hidden="true" tabindex="-1"></a><span class="in">    height: 520,</span></span>
+<span id="cb5-184"><a href="#cb5-184" aria-hidden="true" tabindex="-1"></a><span class="in">    marginLeft: 62,</span></span>
+<span id="cb5-185"><a href="#cb5-185" aria-hidden="true" tabindex="-1"></a><span class="in">    marginRight: 28,</span></span>
+<span id="cb5-186"><a href="#cb5-186" aria-hidden="true" tabindex="-1"></a><span class="in">    marginTop: 46,</span></span>
+<span id="cb5-187"><a href="#cb5-187" aria-hidden="true" tabindex="-1"></a><span class="in">    marginBottom: 56,</span></span>
+<span id="cb5-188"><a href="#cb5-188" aria-hidden="true" tabindex="-1"></a><span class="in">    aspectRatio: 1,</span></span>
+<span id="cb5-189"><a href="#cb5-189" aria-hidden="true" tabindex="-1"></a><span class="in">    style: {fontSize: "12px", fontFamily: "Public Sans, system-ui, sans-serif", color: "#3A332D"},</span></span>
+<span id="cb5-190"><a href="#cb5-190" aria-hidden="true" tabindex="-1"></a><span class="in">    x: {label: "Kumulativni udio stanovništva →", domain: [0, 1], tickFormat: "%"},</span></span>
+<span id="cb5-191"><a href="#cb5-191" aria-hidden="true" tabindex="-1"></a><span class="in">    y: {label: "↑ Kumulativni udio dohotka", domain: [0, 1], tickFormat: "%"},</span></span>
+<span id="cb5-192"><a href="#cb5-192" aria-hidden="true" tabindex="-1"></a><span class="in">    marks: [</span></span>
+<span id="cb5-193"><a href="#cb5-193" aria-hidden="true" tabindex="-1"></a><span class="in">      Plot.line(diag, {x: "p", y: "L", stroke: "#6B6357", strokeDasharray: "5,4", strokeWidth: 1.5}),</span></span>
+<span id="cb5-194"><a href="#cb5-194" aria-hidden="true" tabindex="-1"></a><span class="in">      Plot.line(lorenz, {x: "p", y: "L", stroke: "#2D5A8E", strokeWidth: 2.5}),</span></span>
+<span id="cb5-195"><a href="#cb5-195" aria-hidden="true" tabindex="-1"></a><span class="in">      Plot.text([{p: 0.04, L: 0.93}], {x: "p", y: "L", text: [`Ginijev koeficijent = ${gini.toFixed(2)}`],</span></span>
+<span id="cb5-196"><a href="#cb5-196" aria-hidden="true" tabindex="-1"></a><span class="in">        fill: "#1C1916", fontSize: 14, fontWeight: 700, textAnchor: "start"}),</span></span>
+<span id="cb5-197"><a href="#cb5-197" aria-hidden="true" tabindex="-1"></a><span class="in">      Plot.text([{p: 0.80, L: 0.88}], {x: "p", y: "L", text: ["linija jednakosti"],</span></span>
+<span id="cb5-198"><a href="#cb5-198" aria-hidden="true" tabindex="-1"></a><span class="in">        fill: "#6B6357", fontSize: 11, fontStyle: "italic", textAnchor: "start", rotate: -33})</span></span>
+<span id="cb5-199"><a href="#cb5-199" aria-hidden="true" tabindex="-1"></a><span class="in">    ]</span></span>
+<span id="cb5-200"><a href="#cb5-200" aria-hidden="true" tabindex="-1"></a><span class="in">  });</span></span>
+<span id="cb5-201"><a href="#cb5-201" aria-hidden="true" tabindex="-1"></a><span class="in">}</span></span>
 <span id="cb5-202"><a href="#cb5-202" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
 <span id="cb5-203"><a href="#cb5-203" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb5-204"><a href="#cb5-204" aria-hidden="true" tabindex="-1"></a>**Što isprobati.** (1) Povisite klizač Nejednakost tržišnog dohotka i plava se Lorenzova krivulja izdublje odmiče od dijagonale, a Ginijev koeficijent u gornjem lijevom kutu raste, što je očekivana slika sve nejednakijeg tržišnog ishoda. (2) Vratite nejednakost na umjerenu vrijednost pa povlačite Razinu preraspodjele (porezi i transferi) prema gore i krivulja se vidljivo vraća prema liniji jednakosti dok Ginijev koeficijent pada, čime se izravno čita koliko porezi i transferi stišću raspodjelu. (3) Sada postavite preraspodjelu na najvišu vrijednost uz vrlo visoku tržišnu nejednakost i vidjet ćete da i snažna preraspodjela tek djelomično povlači krivulju prema dijagonali, jer država ublažava polazišnu nejednakost, ali je rijetko poništava u cijelosti.</span>
@@ -2414,7 +2393,7 @@ window._ojs.runtime.interpretFromScriptTags();
 <span id="cb5-222"><a href="#cb5-222" aria-hidden="true" tabindex="-1"></a>::: {.callout-vjezba}</span>
 <span id="cb5-223"><a href="#cb5-223" aria-hidden="true" tabindex="-1"></a>Promotrite hipotetsko društvo s pet kućanstava čiji godišnji dohodci iznose 10, 20, 30, 40 i 100 tisuća eura. (a) Izračunajte koliki udio ukupnog dohotka pripada najsiromašnijih 40 % kućanstava. (b) Skicirajte Lorenzovu krivulju spajanjem kumulativnih udjela dohotka. (c) Pretpostavite da država najsiromašnijem kućanstvu transferom doda 10 tisuća eura, financiranih porezom na najbogatije kućanstvo. Kako se mijenja udio najsiromašnijih 40 % i zašto se Lorenzova krivulja približava dijagonali jednakosti?</span>
 <span id="cb5-224"><a href="#cb5-224" aria-hidden="true" tabindex="-1"></a>:::</span>
-</code></pre></div><button title="Copy to Clipboard" class="code-copy-button" data-in-quarto-modal=""><i class="bi"></i></button></div>
+</code><button title="Copy to Clipboard" class="code-copy-button" data-in-quarto-modal=""><i class="bi"></i></button></pre></div>
 </div></div></div></div></div>
 </div> <!-- /content -->
 <footer class="footer">
