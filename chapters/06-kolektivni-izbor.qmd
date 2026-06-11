@@ -125,13 +125,7 @@ Koliko stvarnih dimenzija ima zakonodavno odlučivanje moguće je i izmjeriti. P
 Kada se ta dinamika prenese na konkretnu raspravu, vidi se zašto sastavljanje dnevnog reda toliko utječe na ishod.
 
 ::: {.callout-praksa}
-Ciklus nije samo udžbenički kuriozitet. Zamislimo raspravu o energetskoj politici s tri skupine i tri opcije (nuklearna energija, plin, obnovljivi izvori).
-
-- Industrija rangira nuklearnu ispred plina, a plin ispred obnovljivih.
-- Ekolozi i turizam rangiraju obnovljive ispred nuklearne, a nuklearnu ispred plina.
-- Politički centar rangira plin ispred obnovljivih, a obnovljive ispred nuklearne.
-
-U parnom glasovanju nastaje ciklus bez stabilnog pobjednika, pa ishod uvelike ovisi o tome tko određuje redoslijed glasovanja (tzv. *agenda-setter*, primjerice predsjednik odbora, Vlada ili predsjedavajući Vijeća EU). U Hrvatskom saboru ta moć često leži u rukama Vlade pri pripremi proračuna, a slične dinamike vide se u usklađivanju paketa „Fit for 55" između energetskih interesa država članica EU.
+Ciklus nije samo udžbenički kuriozitet. Zamislimo raspravu o energetskoj politici s tri skupine i tri opcije (nuklearna energija, plin, obnovljivi izvori). Industrija rangira nuklearnu ispred plina, a plin ispred obnovljivih, ekolozi i turizam obnovljive ispred nuklearne, a nuklearnu ispred plina, dok politički centar rangira plin ispred obnovljivih, a obnovljive ispred nuklearne. U parnom glasovanju nastaje ciklus bez stabilnog pobjednika, pa ishod uvelike ovisi o tome tko određuje redoslijed glasovanja (tzv. *agenda-setter*, primjerice predsjednik odbora, Vlada ili predsjedavajući Vijeća EU). U Hrvatskom saboru ta moć često leži u rukama Vlade pri pripremi proračuna, a slične dinamike vide se u usklađivanju paketa „Fit for 55" između energetskih interesa država članica EU.
 :::
 
 Različiti sustavi glasovanja vode do različitih ishoda, što dodatno naglašava da nijedan mehanizam nije neutralan [@gibbard1973; @satterthwaite1975]. @tbl-sustavi-glasovanja sažima ključne prednosti i nedostatke najvažnijih sustava.
@@ -224,7 +218,7 @@ Takvi kompromisi često vode do neintuitivnih i neučinkovitih ishoda. @tbl-komp
 | Tip kompromisa | Karakteristika | Posljedica za javne financije |
 |---|---|---|
 | *Logrolling* (trgovanje) | zbroj projekata umjesto prosjeka | prekomjerna potrošnja, *pork-barrel* efekti |
-| Polovičan kompromis | ni A ni B, nego slaba verzija C | „bačeni novac" — preskupo da bi bilo beznačajno |
+| Polovičan kompromis | ni A ni B, nego slaba verzija C | „bačeni novac", preskupo da bi bilo beznačajno |
 | Paketiranje | veliki *omnibus* zakoni | teško je procijeniti stvarne učinke |
 | Strateška neodređenost | detalji se ostavljaju za kasnije | jačanje birokratske moći i pravne nesigurnosti |
 
