@@ -49,7 +49,7 @@ Upravo se ovdje vidi jedna od najvećih poteškoća stabilizacijske politike. Ek
 
 U lijevom panelu prikazano je povećanje državne potrošnje. Budući da je državna potrošnja sastavnica agregatne potražnje, njezin rast izravno pomiče krivulju planiranih izdataka prema gore. Nova ravnoteža nastaje na višoj razini proizvodnje, pa je multiplikator državne potrošnje pozitivan.
 
-U desnom panelu prikazano je povećanje poreza. Viši porezi smanjuju raspoloživi dohodak kućanstava, a time i osobnu potrošnju. Zato se agregatna potražnja pomiče prema dolje, a ravnotežna proizvodnja pada, pa je porezni multiplikator negativan.
+U desnom panelu prikazano je povećanje poreza. Viši porezi smanjuju raspoloživi dohodak kućanstava, a time i osobnu potrošnju. Zato se agregatna potražnja pomiče prema dolje, a ravnotežna proizvodnja pada, pa je porezni multiplikator negativan. Graf je interaktivan, pa klizači mijenjaju porast državne potrošnje, porast poreza i graničnu sklonost potrošnji.
 
 ```{ojs}
 //| echo: false

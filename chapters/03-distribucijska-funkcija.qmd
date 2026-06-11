@@ -123,6 +123,8 @@ Upravo Ginijev koeficijent omogućuje da se učinak preraspodjele iskaže jednim
 Učinak poreza i transfera na nejednakost moguće je izravno izmjeriti. Podaci OECD-a pokazuju da porezi i socijalni transferi u prosjeku smanjuju Ginijev koeficijent razvijenih zemalja za otprilike trećinu, s približno 0,47 prije državne intervencije na oko 0,31 nakon nje [@oecd_idd]. Razmjer toga smanjenja jako varira, od vrlo snažnog u nordijskim i kontinentalnim europskim sustavima do osjetno slabijeg u dijelu anglosaksonskih zemalja. Veći dio toga učinka u većini zemalja dolazi od transfera, osobito mirovina i naknada, a ne od same progresivnosti poreza na dohodak. To je važno jer pokazuje da se nejednakost može jednako snažno smanjiti rashodovnom stranom proračuna kao i poreznom. Usporedbe također pokazuju da zemlje sa sličnom razinom dohotka po stanovniku mogu imati vrlo različite razine nejednakosti, što znači da konačna raspodjela nije zadana tržištem, nego je u velikoj mjeri rezultat politike.
 :::
 
+Graf koji slijedi prikazuje Lorenzovu krivulju i pripadni Ginijev koeficijent. Vodoravna os nosi kumulativni udio stanovništva poredanog od najsiromašnijeg prema najbogatijem, okomita kumulativni udio dohotka, a dijagonala označava savršenu jednakost, pa što je plava krivulja udubljenija, to je raspodjela nejednakija. Graf je interaktivan, pa klizači mijenjaju polazišnu nejednakost tržišnog dohotka i razinu preraspodjele kroz poreze i transfere.
+
 ```{ojs}
 //| echo: false
 viewof lor_controls = Inputs.form({

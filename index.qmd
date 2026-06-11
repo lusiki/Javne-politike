@@ -25,7 +25,7 @@ format:
 # Sve što želite znati o odnosu države i tržišta {.sc-hero-title}
 
 ::: {.sc-hero-lede}
-Udžbenik koji studentima i svim radoznalim čitateljima objašnjava kako javne financije, teorija javnog izbora i institucije zajedno oblikuju hrvatsku ekonomsku stvarnost.
+Država oblikuje gotovo svaki važan dio našeg svakodnevnog života — ovaj udžbenik objašnjava kako i zašto.
 :::
 
 ::: {.sc-hero-cta}

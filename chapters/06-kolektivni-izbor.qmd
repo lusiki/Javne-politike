@@ -28,6 +28,8 @@ Najjednostavniji prikaz problema kolektivnog izbora jest **Condorcetov paradoks*
 
 Ako te opcije uspoređujemo u parovima većinskim glasovanjem, dolazimo do neobičnog ishoda. U izboru između A i B pobjeđuje A (dva od tri birača preferiraju A). U izboru između B i C pobjeđuje B. No u izboru između A i C pobjeđuje C. Dobivamo ciklus u kojem A pobjeđuje B, B pobjeđuje C, ali C pobjeđuje A. Kolektivna „preferencija" tako postaje **netranzitivna**, iako su sve pojedinačne preferencije bile dosljedne.
 
+Graf koji slijedi prikazuje ishode parnih glasovanja kao strelice među opcijama A, B i C te javlja zatvara li se ciklus ili postoji stabilan Condorcetov pobjednik. Graf je interaktivan, pa izbornici mijenjaju rang-listu svakog od triju birača, čime se vidi koja kombinacija preferencija stvara ciklus, a koja stabilan ishod.
+
 ```{ojs}
 //| echo: false
 viewof cond_controls = Inputs.form({

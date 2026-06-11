@@ -32,4 +32,12 @@ U pripremi. Planirani alati uključuju:
 - **Simulator medijan birača** — pomičite pozicije birača i stranaka i pratite konvergenciju prema centru
 - **Vizualizacija Lafferove krivulje** — istražite odnos poreznih stopa i prihoda
 - **Radni list cost-benefit analize** — unesite troškove i koristi projekta, izračunajte NPV uz analizu osjetljivosti
+- **Fiskalni multiplikator** — mijenjajte razinu javnih rashoda i pratite učinke na BDP kroz multiplikacijski mehanizam
+- **Igranje s porezima**
+  - kako ravni porez (*flat tax*) uz osobni odbitak postaje progresivan u praksi
+  - usporedba efektivne porezne stope u progresivnom, proporcionalnom i regresivnom sustavu
+  - povećajte PDV i promatrajte što se događa s cijenama uz pretpostavku potpunog ili djelomičnog prijenosa
+  - izračun elastičnosti porezne osnove prema obliku poreza (dohodak, plaće, potrošnja, dobit i dr.)
+- **Isplaniraš budžet — doživi krizu** — simulacija fiskalne pozicije kućanstva ili države uz vanjske šokove (pad BDP-a, rast inflacije, rast kamata)
+- **Fiskalna politika s automatskim stabilizatorima i bez njih** — usporedite putanju BDP-a i deficita uz diskrecijsku i automatski stabiliziranu fiskalnu politiku
 :::

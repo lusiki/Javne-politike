@@ -71,6 +71,8 @@ Privatno poduzeće nastoji ostvariti što veću dobit, suočava se s konkurencij
 
 Razlog je intuitivan. Veći proračun za javnu instituciju često znači više zaposlenih, više organizacijskih jedinica, veću plaću na višim upravljačkim razinama, veći status, više ovlasti, veću autonomiju i veću političku važnost. Zato je za birokrata proračun više od knjigovodstvene kategorije, on je izvor organizacijske moći.
 
+Graf koji slijedi prikazuje granu korist i granični trošak javne usluge te uspoređuje društveno učinkovitu razinu Q\* s Niskanenovom razinom Qₙ na kojoj birokracija širi uslugu sve dok je ukupna korist tek pokriva. Graf je interaktivan, pa klizači mijenjaju granični trošak i nagib granične koristi, čime se vidi kako se jaz prekomjerne potrošnje između Q\* i Qₙ širi ili sužava.
+
 ```{ojs}
 //| echo: false
 viewof nisk_controls = Inputs.form({

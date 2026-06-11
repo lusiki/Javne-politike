@@ -32,7 +32,13 @@ Prvi korak odnosi se na jasno definiranje projekta i relevantnih alternativa. Sv
 
 Sljedeći korak obuhvaća identifikaciju svih relevantnih troškova i koristi, uključujući izravne fiskalne troškove, ali i šire ekonomske, socijalne i okolišne posljedice. Posebna pažnja posvećuje se eksternalijama. Treći korak, kvantifikacija i monetizacija učinaka, predstavlja jedan od najzahtjevnijih dijelova, a cilj mu je sve koristi i troškove izraziti u novčanim jedinicama. Najveći izazov predstavljaju nematerijalne vrijednosti poput ljudskog života, sigurnosti ili kvalitete okoliša, za koje se koriste metode poput spremnosti na plaćanje (*willingness to pay*), otkrivenih preferencija ili sjenovnih cijena (*shadow prices*).
 
-Nakon monetizacije slijedi diskontiranje, odnosno svođenje budućih troškova i koristi na sadašnju vrijednost. Diskontna stopa ključan je parametar jer snažno utječe na rezultate, osobito kod dugoročnih projekata. Završni korak odnosi se na donošenje odluke i interpretaciju rezultata, za što se najčešće koristi kriterij neto sadašnje vrijednosti.
+Nakon monetizacije slijedi diskontiranje, odnosno svođenje budućih troškova i koristi na sadašnju vrijednost. Diskontna stopa ključan je parametar jer snažno utječe na rezultate, osobito kod dugoročnih projekata.
+
+::: {#def-diskontna-stopa}
+**Diskontna stopa** je stopa kojom se budući iznosi svode na sadašnju vrijednost, pa odražava koliko manje vrijedi korist ili trošak koji nastaje kasnije u odnosu na isti iznos danas; što je stopa viša, to udaljena buduća korist manje teži u izračunu, zbog čega izbor stope presudno oblikuje ocjenu dugoročnih projekata.
+:::
+
+Završni korak odnosi se na donošenje odluke i interpretaciju rezultata, za što se najčešće koristi kriterij neto sadašnje vrijednosti.
 
 ::: {#def-npv}
 **Neto sadašnja vrijednost (NPV)** je zbroj svih budućih koristi i troškova projekta, pri čemu se svaki budući iznos diskontira na sadašnji trenutak koeficijentom $1/(1+r)^t$, gdje je $r$ diskontna stopa, a $t$ broj godina udaljenosti. Projekt je društveno opravdan ako je NPV pozitivan.
@@ -53,6 +59,8 @@ U središtu te rasprave nalazi se i izbor diskontne stope. Viša diskontna stopa
 ::: {.callout-empirija}
 Izbor diskontne stope nije tehnička sitnica jer kod dugoročnih projekata presudno mijenja rezultat. Korist koja nastaje za pedeset godina pri diskontnoj stopi od 1 % vrijedi danas oko 60 % svojega iznosa, a pri stopi od 6 % tek oko 5 %, pa ista klimatska investicija može izgledati izrazito isplativo ili posve neopravdano ovisno samo o tom parametru [@hmtreasury2022]. Zbog toga smjernice za javne projekte propisuju niže društvene diskontne stope za učinke koji sežu duboko u budućnost, izričito iz razloga međugeneracijske pravednosti. Pouka je da diskontiranje nije neutralan postupak, nego ugrađuje vrijednosni sud o tome koliko nam je važna dobrobit budućih naraštaja.
 :::
+
+Graf koji slijedi prikazuje neto sadašnju vrijednost projekta u ovisnosti o diskontnoj stopi, pri čemu krivulja pada i u nekom trenutku probija nulu, a to sjecište je interna stopa povrata iznad koje projekt prestaje biti opravdan. Graf je interaktivan, pa klizači mijenjaju diskontnu stopu i godišnju neto korist, čime se vidi koliko je ocjena projekta osjetljiva na te pretpostavke.
 
 ```{ojs}
 //| echo: false
@@ -166,6 +174,10 @@ Evaluacija javnih politika predstavlja ključnu fazu u ciklusu javnih politika. 
 
 Prvi i najizravniji cilj evaluacije jest procjena učinkovitosti (*effectiveness*). Ovdje je ključno razlikovati formalno ostvarenje ciljeva od stvarnog utjecaja. Program subvencioniranja zapošljavanja mladih može povećati broj zaposlenih, ali evaluacija mora odgovoriti na dublje pitanje bi li se dio tih zapošljavanja dogodio i bez intervencije. Zato se naglasak stavlja na identifikaciju uzročnog učinka (*causal impact*), odnosno razliku između stvarnog ishoda i kontrafaktualnog scenarija [@angrist2009].
 
+::: {#def-kontrafaktual}
+**Kontrafaktualni scenarij** je ono što bi se dogodilo s istom skupinom da politika nije provedena, a **uzročni učinak** politike je razlika između stvarno opaženog ishoda i tog kontrafakta; budući da se kontrafakt nikada ne opaža izravno, sva se evaluacija učinaka svodi na to koliko ga vjerodostojno uspijeva rekonstruirati.
+:::
+
 Druga dimenzija odnosi se na efikasnost (*efficiency*) koja označava odnos uloženih resursa i ostvarenih rezultata. Treći cilj je procjena relevantnosti, odnosno pitanje rješava li politika doista problem zbog kojeg je uvedena. Posebno važna dimenzija odnosi se na utjecaj (*impact*) i održivost (*sustainability*), koji uključuju šire i dugoročnije posljedice te pitanje mogu li se rezultati održati kroz vrijeme. Važno je naglasiti da evaluacija nije samo instrument kontrole, već i alat institucionalnog učenja jer se kroz sustavno prikupljanje i analizu podataka stvara tzv. *policy learning loop*, u kojem se iskustva iz prošlih intervencija koriste za dizajn boljih politika.
 
 ### Vrste evaluacije
@@ -179,6 +191,10 @@ Prema analitičkom fokusu razlikuju se procesna evaluacija, koja se fokusira na 
 Evaluacija se oslanja na kvantitativne i kvalitativne metode. Kvantitativni pristupi usmjereni su na mjerenje i kvantifikaciju učinaka te identifikaciju uzročnih veza, pružajući empirijski utemeljene i replicabilne rezultate. Kvalitativne metode poput intervjua, fokus grupa i studija slučaja omogućuju dublje razumijevanje institucionalnog konteksta i mehanizama kroz koje politika djeluje. Zato se sve više naglašava važnost kombiniranog pristupa (*mixed methods*), gdje kvantitativna evaluacija može pokazati da program nije povećao zapošljavanje, a kvalitativna može otkriti da su administrativni zahtjevi bili prekomplicirani.
 
 Među kvantitativnim pristupima, jasna hijerarhija identifikacijske snage prepoznaje se prema kontrafaktu koji svaki dizajn nudi. Randomizirana kontrolirana istraživanja (*RCT*) najjače identificiraju uzročni učinak jer slučajan raspored u tretiranu i kontrolnu skupinu uklanja sve sustavne razlike između njih, uključujući one koje istraživač ne može opaziti. Banerjee i Duflo svojom istraživačkom karijerom pokazali su da i složene socijalne intervencije mogu biti evaluirane RCT dizajnom, čime su znatno podigli empirijski standard u području evaluacije razvojnih politika [@banerjee2019].
+
+::: {#def-rct}
+**Randomizirani kontrolirani pokus** (*RCT*) je evaluacijski dizajn u kojemu se sudionici slučajnim rasporedom dijele u tretiranu i kontrolnu skupinu, čime se uklanjaju sve sustavne razlike među skupinama, pa razlika u ishodima daje najčišću procjenu uzročnog učinka; kvazi-eksperimentalne metode poput *difference-in-differences* i *regression discontinuity* rekonstruiraju sličan kontrafakt iz prirodnih izvora varijacije ondje gdje randomizacija nije izvediva.
+:::
 
 Tamo gdje RCT nije etički ili praktično izvediv (privatizacija sektora, makro reforme, ustavne promjene), kvazi-eksperimentalne metode dijele uzročnu inferenciju iz prirodnih izvora varijacije. *Difference-in-differences* uspoređuje promjene ishoda kod tretirane i netretirane skupine prije i poslije intervencije, što kontrolira fiksne razlike između skupina, ali pretpostavlja paralelne trendove u odsutnosti tretmana. *Regression discontinuity* iskorištava arbitrarne pragove u programu (visina dohotka za pravo na transfer, ocjena za upis u program) i uspoređuje pojedince neposredno iznad i ispod praga, koji su statistički gotovo identični osim u izlaganju mjeri. Sve te metode imaju svoje pretpostavke, a kvalitetna evaluacija mora ih učiniti eksplicitnima i testirati, umjesto da se oslanja samo na rezultat regresije.
 

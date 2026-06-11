@@ -118,7 +118,7 @@ Pitanje kako dizajnirati porezni sustav jedno je od središnjih pitanja javnih f
 
 **Teorija sposobnosti plaćanja** (ability-to-pay) polazi, za razliku od teorije koristi, od ideje da porezni teret treba raspodijeliti prema ekonomskoj snazi pojedinaca. Ona čini temelj suvremenih poreznih sustava, osobito u kontekstu progresivnog oporezivanja dohotka. Ključna implikacija te teorije jest da osobe s većim dohotkom trebaju plaćati veći udio poreza. Koncept polazi od ideje **opadajuće granične korisnosti dohotka**, pri kojoj svaka dodatna jedinica dohotka donosi manju dodatnu korist pojedincu.
 
-Interaktivni graf koji slijedi prikazuje tu logiku na konkavnoj krivulji korisnosti. Sive točke označavaju početne dohotke siromašnijeg i bogatijeg pojedinca, zelena točka siromašnijeg nakon primljenog transfera, a crvena bogatijeg nakon plaćenog poreza. Zelena vertikalna crta mjeri dobitak korisnosti siromašnijeg, crvena gubitak korisnosti bogatijeg, a u vrhu grafa ispisuje se neto promjena ukupne korisnosti društva.
+Graf koji slijedi prikazuje tu logiku na konkavnoj krivulji korisnosti. Sive točke označavaju početne dohotke siromašnijeg i bogatijeg pojedinca, zelena točka siromašnijeg nakon primljenog transfera, a crvena bogatijeg nakon plaćenog poreza. Zelena vertikalna crta mjeri dobitak korisnosti siromašnijeg, crvena gubitak korisnosti bogatijeg, a u vrhu grafa ispisuje se neto promjena ukupne korisnosti društva. Graf je interaktivan, pa klizači mijenjaju dohotke obaju pojedinaca, iznos transfera i konkavnost krivulje korisnosti.
 
 ```{ojs}
 //| echo: false
@@ -241,7 +241,7 @@ To znači da siromašniji pojedinci imaju višu graničnu korisnost dohotka, dok
 
 **Teorija porezne incidencije** odnosi se na pitanje tko stvarno snosi teret poreza, bez obzira na to tko ga formalno plaća. Raspodjela poreznog tereta ovisi o elastičnosti ponude i potražnje. Strana tržišta koja je manje elastična snosi veći dio poreznog opterećenja [@gruber2019].
 
-Graf koji slijedi prikazuje to na tržištu s plavom krivuljom potražnje i zelenom krivuljom ponude koja se nakon poreza pomiče u isprekidani položaj. Crveni okomiti odsječak je ukupni iznos poreza t, plavi pravokutnik udio tereta koji snose kupci kroz razliku cijena Pc i P\*, a žuti pravokutnik udio koji snose prodavači kroz razliku P\* i Pp. U vrhu grafa ispisani su postotni udjeli poreznog tereta.
+Graf koji slijedi prikazuje to na tržištu s plavom krivuljom potražnje i zelenom krivuljom ponude koja se nakon poreza pomiče u isprekidani položaj. Crveni okomiti odsječak je ukupni iznos poreza t, plavi pravokutnik udio tereta koji snose kupci kroz razliku cijena Pc i P\*, a žuti pravokutnik udio koji snose prodavači kroz razliku P\* i Pp. U vrhu grafa ispisani su postotni udjeli poreznog tereta. Graf je interaktivan, pa klizači mijenjaju elastičnost potražnje i ponude te iznos poreza.
 
 ```{ojs}
 //| echo: false
@@ -380,7 +380,7 @@ t_inc = inc_controls.t_inc
 
 **Što isprobati.** (1) Postavite |εD| na nisku vrijednost oko 0,3, a εS na visoku oko 2,0 tako da potražnja bude strma a ponuda položena i vidjet ćete da kupci snose gotovo cijeli porez, što je klasičan slučaj duhana ili goriva. (2) Obrnite odnos tako da |εD| bude visoka a εS niska i većinu tereta sada snose prodavači, primjerice na kratkoročnom tržištu nekretnina gdje je ponuda neelastična. (3) Postavite obje elastičnosti na slične vrijednosti i teret se otprilike polovi. Pravilo koje iz toga slijedi jest da strana tržišta koja je manje elastična ne može pobjeći porezu i zato snosi veći dio njegova tereta neovisno o tome koga zakon formalno proglašava obveznikom.
 
-Incidencija govori tko snosi teret, no porez stvara i čisti društveni gubitak jer sprječava transakcije koje bi inače obostrano koristile kupcima i prodavačima. Taj gubitak prikazuje sljedeći graf, na kojem je crveni trokut mrtvi teret poreza, crveni okomiti odsječak visina poreza t, a tamni horizontalni odsječak pad količine ΔQ. U vrhu grafa ispisuje se rastav formule DWL = ½ · t · ΔQ te usporedba s mrtvim teretom pri malom referentnom porezu t jednakom 4, čime se vidi kako gubitak raste brže od same stope.
+Incidencija govori tko snosi teret, no porez stvara i čisti društveni gubitak jer sprječava transakcije koje bi inače obostrano koristile kupcima i prodavačima. Taj gubitak prikazuje graf koji slijedi, na kojem je crveni trokut mrtvi teret poreza, crveni okomiti odsječak visina poreza t, a tamni horizontalni odsječak pad količine ΔQ. U vrhu grafa ispisuje se rastav formule DWL = ½ · t · ΔQ te usporedba s mrtvim teretom pri malom referentnom porezu t jednakom 4, čime se vidi kako gubitak raste brže od same stope. Graf je interaktivan, pa klizači mijenjaju elastičnost potražnje i iznos poreza.
 
 ```{ojs}
 //| echo: false
@@ -512,7 +512,11 @@ t_dwl = dwl2_controls.t_dwl
 
 Uz incidenciju, važan je i koncept **poreznog klina**, koji označava razliku između ukupnog troška rada za poslodavca i neto plaće radnika, odnosno udio poreza i doprinosa u ukupnom trošku rada. U tu razliku ulaze porez na dohodak, prirez te doprinosi zaposlenika i poslodavca, koji zajedno stvaraju fiskalno opterećenje rada [@simovic2022]. Porezni klin znači da na tržištu rada ne postoji jedna „cijena rada", već dvije, a to su bruto nadnica (trošak rada) i neto nadnica (dohodak radnika).
 
-Sljedeći graf prikazuje to tržište s plavom krivuljom potražnje poslodavaca za radom i zelenom krivuljom ponude rada koja se nakon klina pomiče u isprekidani položaj, pri čemu klin objedinjuje sva davanja koja terete plaću. Crveni okomiti odsječak je veličina klina, gornja točka označava bruto nadnicu kao trošak rada za poslodavca, a donja neto nadnicu koju radnik odnosi kući. Svjetli pravokutnik prikazuje ukupni porezni prihod države kao umnožak klina i broja zaposlenih.
+::: {#def-porezni-klin}
+**Porezni klin** je razlika između ukupnog troška rada za poslodavca (bruto nadnice) i neto plaće koju radnik odnese kući, izražena kao udio svih poreza i doprinosa u trošku rada; što je klin veći, to je jaz između onoga što rad košta i onoga što donosi širi, pa su i pad zaposlenosti i mrtvi teret veći.
+:::
+
+Graf koji slijedi prikazuje to tržište s plavom krivuljom potražnje poslodavaca za radom i zelenom krivuljom ponude rada koja se nakon klina pomiče u isprekidani položaj, pri čemu klin objedinjuje sva davanja koja terete plaću. Crveni okomiti odsječak je veličina klina, gornja točka označava bruto nadnicu kao trošak rada za poslodavca, a donja neto nadnicu koju radnik odnosi kući. Svjetli pravokutnik prikazuje ukupni porezni prihod države kao umnožak klina i broja zaposlenih. Graf je interaktivan, pa klizači mijenjaju veličinu poreznog klina i elastičnost ponude rada.
 
 ```{ojs}
 //| echo: false
@@ -664,7 +668,7 @@ Početak moderne teorije optimalnog oporezivanja vezuje se uz rad Franka Ramseya
 **Ramseyevo pravilo.** Pri zadanom prihodu koji država treba prikupiti, mrtvi teret oporezivanja minimizira se kada se porezne stope na različita dobra postave tako da postotno smanjenje potraživane količine bude jednako za sva dobra. Dobra s relativno **neelastičnom** potražnjom posljedično trebaju biti relativno **više** oporezivana jer manje reagiraju na promjenu cijene, pa generiraju manji mrtvi teret po jedinici prihoda [@ramsey1927].
 :::
 
-Graf koji slijedi pokazuje taj odnos na jednom tržištu, s plavom krivuljom potražnje i zelenom krivuljom ponude koja se nakon poreza pomiče u isprekidani položaj. Crveni trokut je mrtvi teret, svjetloplavi pravokutnik porezni prihod države, sive točke označavaju početnu ravnotežu Q\* i P\*, a crvene ravnotežu nakon poreza.
+Graf koji slijedi pokazuje taj odnos na jednom tržištu, s plavom krivuljom potražnje i zelenom krivuljom ponude koja se nakon poreza pomiče u isprekidani položaj. Crveni trokut je mrtvi teret, svjetloplavi pravokutnik porezni prihod države, sive točke označavaju početnu ravnotežu Q\* i P\*, a crvene ravnotežu nakon poreza. Graf je interaktivan, pa klizač mijenja elastičnost porezne osnovice i tako pokazuje zašto neelastična dobra nose manji mrtvi teret po jedinici prihoda.
 
 ```{ojs}
 //| echo: false
@@ -801,7 +805,7 @@ Ramseyjev model ima važno ograničenje jer potpuno zanemaruje pitanje pravednos
 
 **Mirrleesov model** [@mirrlees1971] proširio je teoriju s oporezivanja dobara na oporezivanje dohotka uvođenjem problema asimetričnih informacija. Temeljna ideja jest da država želi oporezivati pojedince prema njihovoj sposobnosti, ali ne može izravno promatrati tu sposobnost. Ono što država vidi jest ostvareni dohodak, koji ovisi i o produktivnosti i o uloženom radu. Time nastaje ključni problem prema kojem porezni sustav mora biti dizajniran tako da ne destimulira rad, a istovremeno omogućuje redistribuciju. Mirrlees pokazuje da optimalne porezne stope ne smiju biti previsoke jer smanjuju poticaje za rad, ali ne smiju biti ni preniske jer tada redistribucija izostaje. Optimalno rješenje ovisi o elastičnosti ponude rada i društvenim preferencijama prema nejednakosti. Porezi na rad stvaraju distorzije kroz dva kanala, kroz *supstitucijski učinak* (manje rada zbog niže neto nadnice) i *dohodovni učinak* (više rada kako bi se nadoknadio gubitak dohotka). Upravo ravnoteža između ta dva efekta određuje optimalnu razinu oporezivanja.
 
-Sljedeći graf prikazuje taj izbor između dokolice ℓ na vodoravnoj osi i potrošnje C na okomitoj. Zelena puna linija je proračunsko ograničenje bez poreza, a zelena isprekidana ono s porezom na rad, koji smanjuje nagib jer svaki sat rada donosi manje neto potrošnje. Plava krivulja indiferencije prolazi kroz početni optimum A, crvena kroz konačni optimum C, a siva točka B je hipotetski kompenzirani optimum koji pokazuje što bi pojedinac izabrao pri novoj nadnici da je istodobno dobio dohodovnu kompenzaciju koja ga vraća na izvornu razinu korisnosti.
+Graf koji slijedi prikazuje taj izbor između dokolice ℓ na vodoravnoj osi i potrošnje C na okomitoj. Zelena puna linija je proračunsko ograničenje bez poreza, a zelena isprekidana ono s porezom na rad, koji smanjuje nagib jer svaki sat rada donosi manje neto potrošnje. Plava krivulja indiferencije prolazi kroz početni optimum A, crvena kroz konačni optimum C, a siva točka B je hipotetski kompenzirani optimum koji pokazuje što bi pojedinac izabrao pri novoj nadnici da je istodobno dobio dohodovnu kompenzaciju koja ga vraća na izvornu razinu korisnosti. Graf je interaktivan, pa klizač mijenja elastičnost supstitucije između dokolice i potrošnje i tako pokazuje hoće li broj sati rada pasti, ostati isti ili porasti s porezom.
 
 ```{ojs}
 //| echo: false
@@ -1018,7 +1022,7 @@ Graf ujedno rastavlja ukupnu reakciju na dva učinka prema Slutskom. Pomak od A 
 
 Zbog interakcije tih dvaju učinaka krivulja ponude rada može imati specifičan oblik. Pri višim razinama nadnice može prevladati dohodovni učinak te pojedinci biraju više dokolice, što rezultira takozvanom **unazad savijenom krivuljom ponude rada**. Jedan od važnih zaključaka Mirrleesove teorije jest da optimalni porezni sustav ne mora imati ekstremno visoke stope za najbogatije. Razlog je taj što visoke stope mogu značajno smanjiti ekonomske poticaje upravo kod onih koji generiraju najveći dio dohotka.
 
-Ista napetost supstitucijskog i dohodovnog učinka javlja se i kod oporezivanja prinosa na štednju, što prikazuje sljedeći graf izbora između sadašnje potrošnje C₁ na vodoravnoj osi i buduće potrošnje C₂ na okomitoj. Zelena puna linija je proračunska linija bez poreza, a zelena isprekidana ona s porezom na prinos, koja se zakreće oko točke darivanja Y jer porez smanjuje neto kamatnu stopu. Plava krivulja indiferencije prolazi kroz početni optimum, crvena kroz novi, plava točka označava optimum bez poreza i crvena onaj s porezom, a u vrhu se ispisuje promjena štednje kao razlika Y i C₁.
+Ista napetost supstitucijskog i dohodovnog učinka javlja se i kod oporezivanja prinosa na štednju, što prikazuje graf koji slijedi, prikaz izbora između sadašnje potrošnje C₁ na vodoravnoj osi i buduće potrošnje C₂ na okomitoj. Zelena puna linija je proračunska linija bez poreza, a zelena isprekidana ona s porezom na prinos, koja se zakreće oko točke darivanja Y jer porez smanjuje neto kamatnu stopu. Plava krivulja indiferencije prolazi kroz početni optimum, crvena kroz novi, plava točka označava optimum bez poreza i crvena onaj s porezom, a u vrhu se ispisuje promjena štednje kao razlika Y i C₁. Graf je interaktivan, pa klizači mijenjaju kamatnu stopu, poreznu stopu i elastičnost intertemporalne supstitucije, čime se vidi hoće li porez na prinos smanjiti ili povećati štednju.
 
 ```{ojs}
 //| echo: false
@@ -1187,11 +1191,21 @@ sigma = inter_controls.sigma
 
 **Atkinson–Stiglitz teorem** [@atkinson1980] bavi se pitanjem treba li različite vrste potrošnje oporezivati različitim stopama. Njihov ključni rezultat pokazuje da, ako je porez na dohodak optimalno dizajniran, diferencirano oporezivanje potrošnje nije potrebno. Nema potrebe dodatno oporezivati određene proizvode višim ili nižim stopama ako se redistribucija već učinkovito provodi kroz porez na dohodak. Taj rezultat ima važne implikacije za dizajn sustava PDV-a. Teorijski, optimalan sustav imao bi jedinstvenu stopu PDV-a, bez izuzetaka. U praksi, međutim, gotovo sve zemlje koriste snižene stope za osnovna dobra, što pokazuje da politički i socijalni ciljevi često nadjačavaju teorijsku optimalnost.
 
-**Progresivno oporezivanje i teorija žrtve.** Progresivno oporezivanje podrazumijeva sustav u kojem prosječna porezna stopa raste s razinom dohotka. Temeljna ekonomska logika takvog sustava proizlazi iz ideje opadajuće granične korisnosti dohotka. Na toj osnovi razvijena je teorija žrtve koja pokušava normativno opravdati raspodjelu poreznog tereta. Postoje tri varijante. Jednaka apsolutna žrtva traži da svi porezni obveznici izgube isti iznos korisnosti. Jednaka proporcionalna žrtva traži da svi gube isti udio ukupne korisnosti. Jednaka granična žrtva traži da marginalna žrtva bude jednaka za sve. Upravo posljednja varijanta vodi do zaključka da je optimalno progresivno oporezivanje jer se redistribucijom dohotka izjednačavaju granične korisnosti među pojedincima [@musgrave1989]. Suvremena teorija ipak naglašava kompromis. Iako progresivnost povećava pravednost, ona može stvoriti distorzije u ponašanju (npr. smanjiti radne poticaje), pa optimalna razina progresivnosti ovisi o ravnoteži između efikasnosti i jednakosti [@saez2001].
+**Progresivno oporezivanje i teorija žrtve.** Progresivno oporezivanje podrazumijeva sustav u kojem prosječna porezna stopa raste s razinom dohotka. Temeljna ekonomska logika takvog sustava proizlazi iz ideje opadajuće granične korisnosti dohotka.
+
+::: {#def-progresivnost}
+**Progresivnost** poreza znači da prosječna porezna stopa raste s dohotkom, pa osobe s većim dohotkom plaćaju ne samo veći iznos nego i veći udio dohotka; nasuprot tome, kod proporcionalnog poreza udio je stalan, a kod regresivnog pada s dohotkom.
+:::
+
+Na toj osnovi razvijena je teorija žrtve koja pokušava normativno opravdati raspodjelu poreznog tereta. Postoje tri varijante. Jednaka apsolutna žrtva traži da svi porezni obveznici izgube isti iznos korisnosti. Jednaka proporcionalna žrtva traži da svi gube isti udio ukupne korisnosti. Jednaka granična žrtva traži da marginalna žrtva bude jednaka za sve. Upravo posljednja varijanta vodi do zaključka da je optimalno progresivno oporezivanje jer se redistribucijom dohotka izjednačavaju granične korisnosti među pojedincima [@musgrave1989]. Suvremena teorija ipak naglašava kompromis. Iako progresivnost povećava pravednost, ona može stvoriti distorzije u ponašanju (npr. smanjiti radne poticaje), pa optimalna razina progresivnosti ovisi o ravnoteži između efikasnosti i jednakosti [@saez2001].
 
 **Lafferova krivulja.** Iako nije dio formalne teorije optimalnog oporezivanja u užem smislu, Lafferova krivulja često se koristi kao intuitivni alat za razumijevanje odnosa između poreznih stopa i poreznih prihoda.
 
-Sljedeći graf prikazuje tu krivulju kao porezni prihod u ovisnosti o stopi. Crna točka označava vrh prihoda t\*, odnosno stopu pri kojoj država ostvaruje najveći mogući prihod. Pokretna točka koja prati klizač zelena je dok se nalazite na rastućem dijelu krivulje gdje dizanje stope povećava prihod, a crvena na padajućem dijelu gdje dizanje stope smanjuje prihod jer porezna osnovica reagira jače nego što stopa raste.
+::: {#def-lafferova-krivulja}
+**Lafferova krivulja** prikazuje porezni prihod kao funkciju porezne stope, pri čemu prihod isprva raste sa stopom, doseže vrh, a potom pada jer sve viša stopa dovoljno smanjuje poreznu osnovicu da nadjača učinak veće stope; položaj vrha ovisi o elastičnosti osnovice, pa nije fiksan, nego empirijsko pitanje koje se razlikuje među porezima i zemljama.
+:::
+
+Graf koji slijedi prikazuje tu krivulju kao porezni prihod u ovisnosti o stopi. Crna točka označava vrh prihoda t\*, odnosno stopu pri kojoj država ostvaruje najveći mogući prihod. Pokretna točka koja prati klizač zelena je dok se nalazite na rastućem dijelu krivulje gdje dizanje stope povećava prihod, a crvena na padajućem dijelu gdje dizanje stope smanjuje prihod jer porezna osnovica reagira jače nego što stopa raste. Graf je interaktivan, pa klizač mijenja elastičnost porezne osnovice i tako pomiče položaj vrha krivulje.
 
 ```{ojs}
 //| echo: false

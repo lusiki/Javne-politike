@@ -72,7 +72,7 @@ Edgeworthova kutija prikazuje sve moguće raspodjele dvaju dobara između dvaju 
 
 Alokacija je Pareto učinkovita kada više nije moguće poboljšati položaj jednog potrošača bez pogoršanja položaja drugog. Izvan ugovorne krivulje takve preraspodjele postoje i krivulje indiferencije dvaju potrošača se sijeku. Na samoj ugovornoj krivulji krivulje indiferencije su tangentne, pa su granične stope supstitucije obaju potrošača jednake i daljnja preraspodjela može poboljšati položaj jednog samo uz pogoršanje položaja drugog.
 
-Krivulja ugovora prolazi kroz sve točke u kojima se krivulje indiferencije dvaju potrošača dodiruju. Točke A, B i C primjeri su takvih Pareto učinkovitih alokacija.
+Krivulja ugovora prolazi kroz sve točke u kojima se krivulje indiferencije dvaju potrošača dodiruju. Točke A, B i C primjeri su takvih Pareto učinkovitih alokacija. Graf koji slijedi prikazuje upravo tu kutiju s krivuljom ugovora, a interaktivan je, pa klizači mijenjaju položaj točke A te naklonost svakog potrošača jednom od dvaju dobara.
 
 ```{ojs}
 //| echo: false

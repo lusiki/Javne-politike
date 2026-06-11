@@ -22,6 +22,10 @@ Na toj se osnovi razvija **ustavna ekonomika**. Ona ide korak dalje od standardn
 
 Ustavna ekonomika proučava pravila koja oblikuju političko i ekonomsko odlučivanje [@vanberg2018]. Često se kaže da se ona bavi **„pravilima o pravilima"**. To znači da njezin glavni predmet nisu samo konkretne odluke o porezima, rashodima, subvencijama ili regulaciji, nego institucionalni okvir koji određuje kako se takve odluke donose.
 
+::: {#def-ustavna-ekonomika}
+**Ustavna (konstitucionalna) ekonomika** je grana ekonomske analize koja proučava pravila o pravilima, to jest izbor ustavnih i institucionalnih ograničenja unutar kojih se potom donose pojedinačne političke odluke; njezino pitanje nije koja je politika optimalna, nego koja pravila proizvode bolje politike i pod kojom procedurom, većinom i ograničenjima se smiju mijenjati [@buchanan1962; @vanberg2018].
+:::
+
 Za razliku od standardne ekonomske analize, koja se često bavi izborom optimalne politike, ustavna ekonomika pita kako treba izgledati politički i institucionalni sustav koji proizvodi javne politike. Njezino temeljno pitanje nije samo kolika treba biti porezna stopa, nego tko ju smije mijenjati, kojom procedurom, uz kakvu većinu, uz kakvu procjenu učinaka i uz kakva ograničenja.
 
 Ovu su disciplinu posebno razvili James M. Buchanan i Gordon Tullock, prije svega u knjizi *The Calculus of Consent* iz 1962. godine [@buchanan1962]. Njihov pristup predstavlja važan odmak od tradicionalnog, benevolentnog pogleda na državu. U klasičnoj teoriji javnih financija država se često promatra kao akter koji prepoznaje tržišne neuspjehe i intervenira radi javnog interesa. Buchanan i Tullock uvode realističniju pretpostavku po kojoj političari, birokrati, birači i interesne skupine djeluju u političkom procesu kao stvarni ljudi, s vlastitim interesima, ograničenim informacijama i poticajima.
@@ -94,6 +98,10 @@ Važno je pritom naglasiti da pravila ne smiju biti potpuno slijepa na okolnosti
 
 S problemom vremenske nedosljednosti usko su povezani **političko-proračunski ciklusi**. Oni nastaju kada vlade prilagođavaju fiskalnu politiku izbornom kalendaru, a ne dugoročnim potrebama gospodarstva. Ideja je jednostavna. Prije izbora vlast ima poticaj povećati rashode, smanjiti poreze ili otvoriti nove programe kako bi povećala potporu birača. Nakon izbora dolazi vrijeme fiskalne prilagodbe [@nordhaus1975].
 
+::: {#def-politicko-proracunski-ciklus}
+**Političko-proračunski ciklus** je sustavno prilagođavanje fiskalne politike izbornom kalendaru, u kojemu se rashodi povećavaju a porezi smanjuju pred izbore radi veće potpore birača, dok se prilagodba i troškovi odgađaju na razdoblje nakon izbora [@nordhaus1975].
+:::
+
 Vlast koja želi ostati na vlasti može preferirati mjere čije su koristi odmah vidljive, dok se troškovi pojavljuju kasnije. Birači mogu nagraditi povećanje plaća, mirovina ili subvencija, iako dugoročno takve mjere nisu održive. Problem je posebno izražen kada su institucije slabe, transparentnost niska, fiskalna pravila neuvjerljiva, a javnost nema dovoljno informacija o dugoročnim troškovima odluka. Ako se javni dug promatra kao apstraktan broj, a ne kao budući porezni teret, političari imaju veći prostor za odgađanje troškova.
 
 Političko-proračunski ciklusi pokazuju zašto demokracija treba institucionalna ograničenja. Demokratski izbori daju legitimnost vlasti, ali sami po sebi ne jamče dugoročnu odgovornost. Ako se svaka odluka promatra kroz sljedeće izbore, tada politike koje donose koristi tek za deset ili dvadeset godina mogu biti sustavno zanemarene. Reforme obrazovanja, pravosuđa, mirovinskog ili zdravstvenog sustava često imaju visoke kratkoročne političke troškove, a koristi se vide tek kasnije. Zato su stabilna pravila i dugoročne institucije nužne za ravnotežu između demokratske odgovornosti i dugoročne održivosti.
@@ -101,6 +109,10 @@ Političko-proračunski ciklusi pokazuju zašto demokracija treba institucionaln
 ## Pravila, vjerodostojnost i povjerenje
 
 Ustavna ekonomika snažno naglašava pojam **vjerodostojnosti**. Vjerodostojna politika nije samo ona koja je dobro najavljena, nego ona za koju građani, poduzeća i investitori vjeruju da će zaista biti provedena. Ako vlada najavi fiskalnu konsolidaciju, ali javnost vjeruje da će od nje odustati prije izbora, najava neće imati velik učinak. Ako država najavi zaštitu vlasničkih prava, ali sudovi ne provode ugovore, investitori neće vjerovati formalnom pravilu.
+
+::: {#def-vjerodostojnost}
+**Vjerodostojnost** je svojstvo politike ili pravila za koje akteri vjeruju da će biti provedeno i u trenutku kada to vlastima više neće odgovarati; gradi se kroz dosljednost, reputaciju, neovisne institucije i transparentnost, a ne pukom najavom, i upravo ona daje pravilima moć da utječu na očekivanja [@kydland1977].
+:::
 
 Vjerodostojnost se ne može stvoriti samo jednom izjavom. Ona se gradi kroz institucije, dosljednost i reputaciju. Pravila pomažu jer smanjuju prostor za proizvoljnost. Neovisne institucije pomažu jer odvajaju neke odluke od kratkoročnih političkih pritisaka. Transparentnost pomaže jer građanima i tržištima omogućuje da provjere što država stvarno radi. Odgovornost pomaže jer loše odluke imaju posljedice.
 

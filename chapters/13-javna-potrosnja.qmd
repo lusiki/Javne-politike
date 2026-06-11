@@ -32,6 +32,8 @@ Wagner je ponudio i mehaniku tog rasta koja nadilazi puko empirijsko zapažanje.
 
 Empirijski je Wagnerov zakon potvrđen u dugim vremenskim serijama razvijenih zemalja, ali ga noviji radovi ograničavaju u dva smjera [@bird1971]. Prvo, zakonitost vrijedi samo do određene razine razvoja, nakon koje udio javne potrošnje pokazuje znakove zasićenja. Drugo, rast nije automatski nego je posredovan političkim odlukama o tome koje od triju sila društvo prevodi u stvarnu javnu funkciju. To znači da Wagnerov zakon najbolje opisuje strukturni pritisak, ne i sam ishod, koji ostaje predmet političkog izbora i institucionalnog dizajna.
 
+Graf koji slijedi prikazuje predviđeni udio javne potrošnje u BDP-u u ovisnosti o dohotku po stanovniku, pri čemu logaritamski trend dočarava i rast i njegovo postupno zasićenje. Graf je interaktivan, pa klizač pomiče dohodak hipotetske zemlje uz krivulju, čime se vidi kako se udio javne potrošnje mijenja s razinom razvoja.
+
 ```{ojs}
 //| echo: false
 viewof wag_controls = Inputs.form({

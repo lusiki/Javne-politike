@@ -54,6 +54,8 @@ Prvo, ključna je realističnost ciljeva i razumijevanje političke ekonomije re
 
 Drugo, iznimno je važno pravilno sekvenciranje reformi. Empirijski nalazi pokazuju da je pristup „najprije osnove, zatim kompleksnost" najuspješniji. Potrebno je uspostaviti temeljne funkcije poput pouzdanog izvršenja proračuna i kontrole rashoda prije uvođenja sofisticiranih sustava. Nepravilno sekvenciranje često dovodi do „preuranjene sofisticiranosti", situacije u kojoj se uvode kompleksni sustavi koje administracija nije spremna provoditi.
 
+Graf koji slijedi prikazuje vjerojatnost uspjeha reforme kao krivulju u obliku zvona koja ovisi o tome koliko brzina i ambicija reforme odgovaraju institucionalnom kapacitetu države. Graf je interaktivan, pa klizači mijenjaju institucionalni kapacitet te brzinu i ambiciju reforme, čime se vidi zašto i prespora i prebrza reforma podbacuju u odnosu na onu usklađenu s kapacitetom.
+
 ```{ojs}
 //| echo: false
 viewof ref_controls = Inputs.form({

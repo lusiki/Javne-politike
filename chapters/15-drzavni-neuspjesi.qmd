@@ -57,6 +57,10 @@ Zato je korisno državne neuspjehe promatrati ne kao jednu pojavu, nego kao skup
 
 Prvi oblik državnog neuspjeha su **informacijski neuspjesi**. Država često donosi odluke s nepotpunim, zastarjelim ili pogrešno interpretiranim informacijama. Ne zna uvijek dovoljno precizno tko je stvarni korisnik politike, koliki su stvarni troškovi, kako će građani i poduzeća promijeniti ponašanje i kakve će se posljedice pojaviti nakon provedbe. Ograničenost znanja javnih vlasti posebno je naglasio Hayek, upozoravajući da je znanje u društvu raspršeno i da ga nijedna centralna institucija ne može u potpunosti prikupiti i obraditi [@hayek1945].
 
+::: {#def-informacijski-neuspjeh}
+**Informacijski neuspjeh** nastaje kada država odlučuje na temelju nepotpunih, zastarjelih ili pogrešno interpretiranih podataka, pa politika promaši cilj jer počiva na netočnoj slici o tome tko su korisnici, koliki su troškovi i kako će akteri reagirati.
+:::
+
 To je osobito važno kod politika koje ciljaju određene skupine. Ako država želi pomoći siromašnim kućanstvima, mora znati tko su ona, gdje žive i kakav im je dohodak. Ako nema kvalitetnih podataka, pomoć može biti loše ciljana, pa neki kojima je potrebna mogu ostati izvan sustava, dok je mogu dobiti i oni kojima nije potrebna. Informacijski problem posebno je izražen kada država pokušava regulirati složena tržišta, gdje regulator često zna manje od reguliranih poduzeća. Zato kvalitetna javna politika mora početi informacijama, a sve se više naglašava važnost evaluacije i politika temeljenih na dokazima.
 
 ## Instrumentalni neuspjesi
@@ -101,6 +105,10 @@ Ako svaka institucija djeluje unutar vlastitog administrativnog „silosa", poli
 
 Peti oblik su **politički neuspjesi**, kojima se posebno bavi teorija javnog izbora. Javne politike nastaju u političkom procesu, a politički proces ima vlastite poticaje. Političari mogu preferirati politike koje donose vidljive koristi prije izbora, dok se troškovi odgađaju u budućnost. Mogu izbjegavati nepopularne reforme, čak i kada su dugoročno nužne [@nordhaus1975].
 
+::: {#def-politicki-neuspjeh}
+**Politički neuspjeh** nastaje kada poticaji izbornog procesa sustavno guraju odluke dalje od društveno poželjnih, primjerice nagrađivanjem kratkoročno vidljivih koristi pred dugoročnima ili popuštanjem koncentriranim interesima nauštrb raspršene većine.
+:::
+
 Politički neuspjesi mogu se pojaviti i kada su koristi politike koncentrirane, a troškovi raspršeni. Mala, dobro organizirana skupina može snažno lobirati za potporu, dok su troškovi raspoređeni na velik broj poreznih obveznika koji nemaju poticaj organizirati se [@olson1965]. Politički neuspjeh tako postaje prepreka kvalitetnom dizajnu, jer dobra politika često zahtijeva dugoročnost, dok politički sustav nagrađuje kratkoročnu vidljivost; dobra politika često zahtijeva ukidanje neučinkovitih programa, ali su njihovi korisnici dobro organizirani.
 
 ## Birokratski neuspjesi
@@ -115,11 +123,23 @@ Birokratski neuspjesi vide se i kroz **pretjerani formalizam**, gdje procedura p
 
 ## Regulatorni neuspjesi
 
-Sedmi oblik su **regulatorni neuspjesi**. Regulacija može zaštititi potrošače i okoliš, ali može i zakazati ako je prekomplicirana, preskupa, zastarjela ili neusklađena s ciljem. Najpoznatiji oblik je **regulatorno zarobljavanje**, kada regulator počinje više služiti interesima regulirane industrije nego javnom interesu [@stigler1971]. Regulatorni neuspjeh može nastati i bez otvorenog zarobljavanja, jer se pravila gomilaju kroz vrijeme tako da se za svaki novi problem dodaje nova procedura, a stare se ne ukidaju, pa sustav postaje sve složeniji. Poseban problem nastaje kada se regulacijom pokušava ostvariti fiskalni ili socijalni cilj koji bi bilo transparentnije ostvariti kroz proračun, pa se trošak tada ne vidi u proračunu, ali se ipak negdje pojavljuje, u višim cijenama ili nižoj kvaliteti usluge.
+Sedmi oblik su **regulatorni neuspjesi**. Regulacija može zaštititi potrošače i okoliš, ali može i zakazati ako je prekomplicirana, preskupa, zastarjela ili neusklađena s ciljem.
+
+::: {#def-regulatorni-neuspjeh}
+**Regulatorni neuspjeh** nastaje kada pravila kojima država usmjerava tržište promaše svoj cilj, bilo zato što regulator počne služiti interesima regulirane industrije, bilo zato što se propisi gomilaju i zastarijevaju brže nego što se ukidaju, pa trošak usklađivanja nadmaši društvenu korist od zaštite.
+:::
+
+Najpoznatiji oblik je **regulatorno zarobljavanje**, kada regulator počinje više služiti interesima regulirane industrije nego javnom interesu [@stigler1971]. Stigler je pokazao da industrija ima koncentriran interes i resurse da oblikuje pravila u svoju korist, dok je raspršena javnost slabo organizirana, pa regulacija sustavno teži zaštiti postojećih igrača umjesto otvaranju tržišta. Zarobljavanje rijetko poprima oblik otvorene korupcije. Češće djeluje kroz informacijsku ovisnost regulatora o podacima koje mu daje sama industrija, kroz kretanje stručnjaka između regulatora i reguliranih tvrtki te kroz zajedničku profesionalnu kulturu u kojoj se interesi industrije počnu doimati kao zdravi razum struke.
+
+Regulatorni neuspjeh može nastati i bez ikakvog zarobljavanja. Pravila se gomilaju kroz vrijeme tako da se za svaki novi problem dodaje nova procedura, a stare se rijetko ukidaju, pa sustav postaje sve složeniji i skuplji za poštivanje. Takav rast regulatornog tereta najteže pogađa male i nove sudionike koji nemaju pravne odjele velikih korporacija, čime regulacija uvedena radi zaštite tržišta paradoksalno smanjuje konkurenciju. Poseban problem nastaje kada se regulacijom pokušava ostvariti fiskalni ili socijalni cilj koji bi bilo transparentnije ostvariti kroz proračun. Trošak se tada ne vidi u proračunu, ali se ipak negdje pojavljuje, u višim cijenama, nižoj kvaliteti usluge ili manjim ulaganjima. Zato dobra regulacija nije ona koja propisuje najviše, nego ona koja periodično preispituje vlastita pravila, mjeri njihov stvarni učinak i ukida ono što više ne služi svrsi.
 
 ## Fiskalni neuspjesi
 
-Osmi oblik su **fiskalni neuspjesi**. Javna politika gotovo uvijek ima fiskalnu dimenziju. Čak i kada se ne financira izravno kroz proračun, može stvarati implicitne obveze, jamstva, porezne izdatke ili buduće troškove. Fiskalni neuspjeh nastaje kada se politike oblikuju bez jasne procjene dugoročnih troškova ili kada se troškovi prebacuju na buduće generacije.
+Osmi oblik su **fiskalni neuspjesi**. Javna politika gotovo uvijek ima fiskalnu dimenziju. Čak i kada se ne financira izravno kroz proračun, može stvarati implicitne obveze, jamstva, porezne izdatke ili buduće troškove.
+
+::: {#def-fiskalni-neuspjeh}
+**Fiskalni neuspjeh** nastaje kada se politika oblikuje bez jasne procjene dugoročnih troškova ili kada se ti troškovi prebacuju na buduće generacije i skrivaju izvan proračuna kroz jamstva, mandate ili kontrolu cijena, pa stvarna cijena odluke ostaje nevidljiva u trenutku kada se donosi.
+:::
 
 Posebno važan problem su **kvazifiskalne aktivnosti**. Država ponekad želi ostvariti javni cilj, ali ga ne financira otvoreno kroz proračun, pa umjesto izravne subvencije koristi regulaciju, kontrolu cijena, obvezne mandate ili državna jamstva. Takve mjere mogu prikriti stvarni trošak politike. To je posebno važno za dizajn javnih politika jer ono što nije u proračunu nije nužno besplatno. Kontrola cijena može izgledati kao politika bez proračunskog troška, ali se trošak pojavljuje kroz nestašice, lošiju kvalitetu ili manje investicije. Zato kvalitetna javna politika mora uzeti u obzir i vidljive i skrivene fiskalne troškove.
 
@@ -147,6 +167,8 @@ U praktičnom smislu, svaka kvalitetna javna politika trebala bi proći svojevrs
 6. Tko dobiva, tko gubi i tko može utjecati na dizajn politike?
 7. Kako će se politika financirati i koji su njezini dugoročni fiskalni rizici?
 8. Kako će se mjeriti rezultati i kada će se politika promijeniti ili ukinuti ako ne funkcionira?
+
+Graf koji slijedi pretvara tih osam pitanja u jednostavan pokazatelj otpornosti politike, zbrajajući ocjene po svakoj dimenziji u ukupnu presudu od ranjive do robusne politike. Graf je interaktivan, pa klizači mijenjaju ocjenu svake od osam dimenzija, čime se vidi koje dimenzije najjače dižu ili spuštaju ukupnu otpornost.
 
 ```{ojs}
 //| echo: false
