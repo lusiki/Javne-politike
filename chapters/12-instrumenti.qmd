@@ -13,6 +13,8 @@ title: "Instrumenti državne intervencije"
 6. Po čemu prepoznajemo dobar izbor i kombinaciju instrumenata?
 :::
 
+## Čime država djeluje
+
 Prva tri dijela knjige pitala su zašto država djeluje, tko o tome odlučuje i pod kojim pravilima. Ovaj dio prelazi na praksu i pita čime država zapravo djeluje. Država svoju ulogu ne ostvaruje apstraktno, već kroz konkretne **instrumente javne politike**. Kada kažemo da država „intervenira", „regulira", „pomaže", „oporezuje" ili „stabilizira gospodarstvo", zapravo govorimo o različitim načinima na koje javna vlast pokušava utjecati na ponašanje pojedinaca, poduzeća, institucija i tržišta. Instrumenti javne politike su zato operativni alati kojima država pretvara ciljeve u djelovanje.
 
 Ti instrumenti mogu biti vrlo različiti. Neki izravno uključuju novac, poput poreza, javne potrošnje, subvencija i transfera. Drugi djeluju kroz pravila, zabrane, standarde i dozvole, kao što je regulacija. Treći djeluju kroz organizaciju same države, primjerice javna poduzeća, javne ustanove i agencije. Četvrti djeluju na makroekonomskoj razini, kroz fiskalnu i monetarnu politiku. U novije vrijeme sve veću važnost imaju i informacijski te bihevioralni instrumenti, koji ne počivaju na prisili ili novcu, nego na oblikovanju izbora i informacija koje građani imaju pred sobom.
@@ -123,11 +125,7 @@ Iz toga slijedi pravilo dizajna koje nadilazi pojedinačni izbor. Instrument koj
 Kanadska pokrajina Britanska Kolumbija 2008. je uvela porez na ugljik koji dobro pokazuje razliku između instrumenata. Umjesto da zabrani ili propiše tehnologije, porez je podigao cijenu emisija i prepustio poduzećima i kućanstvima da sami pronađu najjeftiniji način smanjenja, a prihod je vraćen kroz niže poreze na dohodak i dobit. Emisije po stanovniku pale su, dok je gospodarski rast pratio prosjek ostatka Kanade, čime je oslabljen strah da cjenovni instrument nužno koči gospodarstvo. Primjer ilustrira opću pouku da tržišni instrumenti ostvaruju cilj uz niži ekonomski trošak, ali su politički vidljiviji jer teret prikazuju otvoreno, za razliku od regulacije koja ga skriva u cijeni proizvoda.
 :::
 
-## Most između ciljeva i rezultata
-
-Instrumenti javne politike predstavljaju most između državnih ciljeva i stvarnih društvenih ishoda. Država može imati plemenit cilj poput smanjenja siromaštva, povećanja zaposlenosti, zaštite okoliša ili poticanja rasta, ali cilj sam po sebi nije politika. Politika nastaje tek kada se odabere instrument, osigura provedba, definiraju odgovornosti i mjere rezultati.
-
-Zato je izbor instrumenta jedno od najvažnijih pitanja javnih politika. Porezi prikupljaju prihode i mijenjaju poticaje. Javna potrošnja financira usluge, transfere i investicije. Regulacija postavlja pravila ponašanja. Subvencije potiču određene aktivnosti, ali mogu stvoriti rente. Javna poduzeća omogućuju izravnu državnu proizvodnju u strateškim sektorima, ali traže dobro upravljanje. Informacijski i bihevioralni instrumenti pokušavaju promijeniti ponašanje bez izravne prisile. Dobra javna politika ne pita samo što država želi postići, nego i kojim instrumentom, uz koje troškove, s kakvim poticajima, preko kojih institucija i s kakvom mogućnošću evaluacije.
+Instrumenti javne politike na taj način predstavljaju most između državnih ciljeva i stvarnih društvenih ishoda. Država može imati plemenit cilj poput smanjenja siromaštva, povećanja zaposlenosti, zaštite okoliša ili poticanja rasta, ali cilj sam po sebi nije politika. Politika nastaje tek kada se odabere instrument, osigura provedba, definiraju odgovornosti i mjere rezultati. Dobra javna politika zato ne pita samo što država želi postići, nego i kojim instrumentom, uz koje troškove, s kakvim poticajima, preko kojih institucija i s kakvom mogućnošću evaluacije.
 
 ::: {.sazetak-panel}
 ## Sažetak
