@@ -21,6 +21,12 @@ jobs:
     runs-on: ubuntu-latest
     env:
       FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+      # Authenticate Quarto's GitHub API calls. `tinytex: true` below makes
+      # Setup Quarto resolve the latest rstudio/tinytex-releases via
+      # api.github.com; unauthenticated that's 60 req/hr/IP and intermittently
+      # 403s on shared runners, hard-failing the step. The default token lifts
+      # the limit to 5000/hr and removes the flaky failure.
+      GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
     steps:
       - name: Checkout repository
