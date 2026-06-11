@@ -97,9 +97,9 @@ div.csl-indent {
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-0d728faf902e423debf4a13c485d6652.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-3af5e84ba4bb5e9770306c6e0ca03b96.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="site_libs/bootstrap/bootstrap-dark-0975f305a449ff7f77f2cdbd799c46a2.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="light">
-<link href="site_libs/bootstrap/bootstrap-3af5e84ba4bb5e9770306c6e0ca03b96.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-2d07d358ff5fe914cc5b415320dd30a7.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-dark-4c240c3561e3f73311460fe5cd776aa7.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-2d07d358ff5fe914cc5b415320dd30a7.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -1863,6 +1863,166 @@ Economics</em> 22 (1): 107–39. <a href="https://doi.org/10.1086/466935">https:
 
   // ----------------------------------------------------------
 
+  // 10. OJS upravljačka ploča — ispuna trake klizača (--fill),
+
+  //     puls vrijednosti i gumb ↺ za povratak na početne
+
+  //     vrijednosti. Observable rendira kontrole asinkrono,
+
+  //     pa MutationObserver hvata njihovo pojavljivanje.
+
+  // ----------------------------------------------------------
+
+  function setupOjsPanels() {
+
+    function paintFill(r) {
+
+      var min = parseFloat(r.min), max = parseFloat(r.max);
+
+      if (!isFinite(min)) min = 0;
+
+      if (!isFinite(max)) max = 100;
+
+      var pct = max > min ? ((r.value - min) / (max - min)) * 100 : 0;
+
+      r.style.setProperty("--fill", pct.toFixed(2) + "%");
+
+    }
+
+
+
+    function enhanceRange(r) {
+
+      if (r.dataset.ojsEnhanced) return;
+
+      r.dataset.ojsEnhanced = "1";
+
+      r.dataset.ojsInitial = r.value;
+
+      paintFill(r);
+
+      r.addEventListener("input", function () {
+
+        paintFill(r);
+
+        var num = r.parentElement && r.parentElement.querySelector('input[type="number"]');
+
+        if (num) {
+
+          num.classList.remove("ojs-pulse");
+
+          void num.offsetWidth; // restart animacije
+
+          num.classList.add("ojs-pulse");
+
+        }
+
+      });
+
+    }
+
+
+
+    function enhancePanel(panel) {
+
+      if (panel.dataset.ojsPanel) return;
+
+      panel.dataset.ojsPanel = "1";
+
+      panel.querySelectorAll("select").forEach(function (s) {
+
+        if (s.dataset.ojsInitial === undefined) s.dataset.ojsInitial = s.value;
+
+      });
+
+      var btn = document.createElement("button");
+
+      btn.type = "button";
+
+      btn.className = "ojs-reset";
+
+      btn.textContent = "↺ početne vrijednosti";
+
+      btn.title = "Vrati početne vrijednosti";
+
+      btn.addEventListener("click", function () {
+
+        panel.querySelectorAll('input[type="range"]').forEach(function (r) {
+
+          if (r.dataset.ojsInitial === undefined) return;
+
+          r.value = r.dataset.ojsInitial;
+
+          r.dispatchEvent(new Event("input", { bubbles: true }));
+
+        });
+
+        panel.querySelectorAll("select").forEach(function (s) {
+
+          if (s.dataset.ojsInitial === undefined) return;
+
+          s.value = s.dataset.ojsInitial;
+
+          s.dispatchEvent(new Event("input", { bubbles: true }));
+
+          s.dispatchEvent(new Event("change", { bubbles: true }));
+
+        });
+
+      });
+
+      panel.appendChild(btn);
+
+    }
+
+
+
+    var scanQueued = false;
+
+    function scan() {
+
+      scanQueued = false;
+
+      document.querySelectorAll('form[class^="oi-"] input[type="range"]').forEach(enhanceRange);
+
+      // Inputs.form vraća anonimni <div> koji izravno sadrži oi- forme;
+
+      // taj roditelj je ploča (preskačemo Inputs.table forme).
+
+      document.querySelectorAll('form[class^="oi-"]').forEach(function (f) {
+
+        if (f.classList.contains("quarto-ojs-table-fixup")) return;
+
+        var p = f.parentElement;
+
+        if (p && p.tagName === "DIV") enhancePanel(p);
+
+      });
+
+    }
+
+    function queueScan() {
+
+      if (scanQueued) return;
+
+      scanQueued = true;
+
+      window.requestAnimationFrame(scan);
+
+    }
+
+
+
+    scan();
+
+    new MutationObserver(queueScan).observe(document.body, { childList: true, subtree: true });
+
+  }
+
+
+
+  // ----------------------------------------------------------
+
   // Bootstrap
 
   // ----------------------------------------------------------
@@ -1888,6 +2048,8 @@ Economics</em> 22 (1): 107–39. <a href="https://doi.org/10.1086/466935">https:
     try { setupStandalonePages(); } catch (e) {}
 
     try { pruneSidebar(); } catch (e) {}
+
+    try { setupOjsPanels(); } catch (e) {}
 
   }
 
