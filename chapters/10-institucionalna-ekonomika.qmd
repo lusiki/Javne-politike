@@ -84,13 +84,13 @@ Ublažavanje principal–agent problema zahtijeva mehanizme transparentnosti, od
 
 ## Institucije i dugoročni razvoj
 
-Empirijska literatura snažno upućuje na zaključak da su institucije jedan od temeljnih uzroka dugoročnih razlika u razvoju među zemljama. Na toj osnovi Acemoglu i Robinson razvijaju razlikovanje između **inkluzivnih** i **ekstraktivnih** institucija [@acemoglu2012].
+Ako institucije objašnjavaju dugoročne razlike u razvoju, ostaje pitanje koja njihova osobina razdvaja bogata društva od siromašnih. Acemoglu i Robinson tu razliku svode na jednu os, na to služe li institucije mnogima ili nekolicini [@acemoglu2012].
 
 ::: {#def-inkluzivne-ekstraktivne}
 **Inkluzivne institucije** omogućuju širokom krugu aktera sudjelovanje u ekonomskom i društvenom životu zaštitom vlasništva, ravnopravnom primjenom zakona i poticanjem konkurencije; **ekstraktivne institucije** organizirane su nasuprot tome da izvlače resurse i prilike prema uskom privilegiranom krugu [@acemoglu2012].
 :::
 
-Inkluzivne institucije omogućuju širokom krugu ljudi da sudjeluju u gospodarskom i društvenom životu. One štite vlasnička prava, osiguravaju relativno nepristranu primjenu zakona, potiču konkurenciju, omogućuju ulazak novih poduzeća i stvaraju prostor za inovacije. U takvom sustavu pojedinci imaju razlog ulagati u obrazovanje, štedjeti, pokretati poduzeća i uvoditi nove tehnologije jer vjeruju da će barem dio koristi od svojeg rada i rizika zadržati za sebe. Inkluzivne institucije obično su povezane s političkim pluralizmom, ograničenjima izvršne vlasti i odgovornošću institucija.
+Razlika nije samo opisna, nego se vidi u poticajima koje svaki tip stvara. U inkluzivnom sustavu pojedinci imaju razlog ulagati u obrazovanje, štedjeti, pokretati poduzeća i uvoditi nove tehnologije jer vjeruju da će barem dio koristi od svojeg rada i rizika zadržati za sebe. Takav okvir obično prati i politički pluralizam, ograničenja izvršne vlasti i odgovornost institucija.
 
 Nasuprot tome, ekstraktivne institucije organizirane su tako da izvlače resurse, dohodak i prilike iz širokog društva prema uskom krugu politički ili ekonomski privilegiranih aktera. Njih karakterizira koncentracija moći, slaba zaštita vlasništva za obične građane, ograničavanje konkurencije, politički povezani monopoli i selektivna primjena zakona. U takvom okviru ljudi imaju slabiji poticaj ulagati i inovirati jer ne mogu biti sigurni da će zadržati plodove svojeg rada.
 
@@ -98,11 +98,13 @@ Ekstraktivne institucije ne moraju uvijek proizvoditi trenutačnu stagnaciju i p
 
 Empirijski je doprinos ovog razlikovanja kvantitativan, ne samo deskriptivan. Sistematske usporedbe pokazuju da razlike u kvaliteti institucija objašnjavaju značajan dio varijacije BDP-a po stanovniku između zemalja u dugom roku, pod kontrolom geografskih, demografskih i resursnih faktora [@acemoglu2001; @acemoglu2012]. Klasičan rezultat ove literature je *obrnuti razvoj* (*reversal of fortune*) prema kojem su područja koja su 1500. godine imala visoku gustoću stanovništva i razvijenu ekonomiju u 20. stoljeću završila siromašnija od područja koja su tada bila rijetko naseljena, što proturječi geografskoj objašnjenosti razvoja, ali izvanredno dobro odgovara obrascu naknadno postavljenih institucija.
 
+Da tako stari institucionalni izbori uopće mogu oblikovati današnje bogatstvo, mora postojati mehanizam koji ih održava na životu kroz stoljeća. Taj obrazac trajnosti literatura naziva **ovisnošću o putanji**.
+
 ::: {#def-ovisnost-o-putanji}
 **Ovisnost o putanji** (*path dependence*) je svojstvo institucionalnih promjena prema kojemu rani izbori i slučajni događaji postavljaju ograničenja kasnijim mogućnostima, pa jednom uspostavljenu instituciju postojeće organizacije i naučena očekivanja čine trajnom i skupom za zamjenu čak i kada prestane biti učinkovita [@north1990].
 :::
 
-Taj obrazac trajnosti najbolje objašnjava ovisnost o putanji. Mehanizam koji literatura predlaže ide preko tipa kolonijalne strategije. Ondje gdje su europski doseljenici mogli ostati u brojevima i izgraditi vlastite uvozne institucije, postavljen je inkluzivniji okvir koji je nadživio kolonijalno doba. Ondje gdje su klimatski uvjeti tjerali na ekstraktivnu organizaciju kroz mali broj europskih upravitelja koji su nadgledali rad domorodačke radne snage, postavljene su institucije čije su distribucijske posljedice preživjele neovisnost. Ova empirijska tradicija ne tvrdi da je institucionalna povijest sudbinska, nego da rani institucionalni izbori kroz ovisnost o putanji oblikuju kasnije mogućnosti i tada kada bi ih društvo rado napustilo.
+Mehanizam koji literatura predlaže ide preko tipa kolonijalne strategije. Ondje gdje su europski doseljenici mogli ostati u brojevima i izgraditi vlastite uvozne institucije, postavljen je inkluzivniji okvir koji je nadživio kolonijalno doba. Ondje gdje su klimatski uvjeti tjerali na ekstraktivnu organizaciju kroz mali broj europskih upravitelja koji su nadgledali rad domorodačke radne snage, postavljene su institucije čije su distribucijske posljedice preživjele neovisnost. Ova empirijska tradicija ne tvrdi da je institucionalna povijest sudbinska, nego da rani institucionalni izbori kroz ovisnost o putanji oblikuju kasnije mogućnosti i tada kada bi ih društvo rado napustilo.
 
 ::: {.callout-empirija}
 Najuvjerljiviji dokaz za ulogu institucija dolazi iz obrasca koji se naziva „obrnuti razvoj". Područja koja su oko 1500. godine bila gušće naseljena i bogatija, poput dijelova Srednje i Južne Amerike, u 20. su stoljeću postala siromašnija od područja koja su tada bila rijetko naseljena, poput Sjeverne Amerike i Australije [@acemoglu2012]. Takav ishod proturječi objašnjenju koje razvoj pripisuje zemljopisu ili klimi, ali dobro odgovara obrascu institucija postavljenih tijekom kolonijalnog razdoblja. Ondje gdje su nastale uključive institucije sa zaštitom vlasništva razvoj je krenuo brže, a ondje gdje su uspostavljene ekstraktivne institucije usmjerene na izvlačenje resursa dugoročni je rast izostao. Pouka je da se trag početnih institucionalnih izbora mjeri stoljećima.

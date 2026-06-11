@@ -38,7 +38,7 @@ Nakon monetizacije slijedi diskontiranje, odnosno svođenje budućih troškova i
 **Diskontna stopa** je stopa kojom se budući iznosi svode na sadašnju vrijednost, pa odražava koliko manje vrijedi korist ili trošak koji nastaje kasnije u odnosu na isti iznos danas; što je stopa viša, to udaljena buduća korist manje teži u izračunu, zbog čega izbor stope presudno oblikuje ocjenu dugoročnih projekata.
 :::
 
-Završni korak odnosi se na donošenje odluke i interpretaciju rezultata, za što se najčešće koristi kriterij neto sadašnje vrijednosti.
+Jednom kada su sve buduće koristi i troškovi svedeni na sadašnji trenutak, treba ih sažeti u jedan broj koji kaže isplati li se projekt uopće provesti. Tu ulogu nosi **neto sadašnja vrijednost**.
 
 ::: {#def-npv}
 **Neto sadašnja vrijednost (NPV)** je zbroj svih budućih koristi i troškova projekta, pri čemu se svaki budući iznos diskontira na sadašnji trenutak koeficijentom $1/(1+r)^t$, gdje je $r$ diskontna stopa, a $t$ broj godina udaljenosti. Projekt je društveno opravdan ako je NPV pozitivan.

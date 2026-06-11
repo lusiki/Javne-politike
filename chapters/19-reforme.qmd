@@ -48,11 +48,13 @@ Ovaj zaključak posebno je važan u svjetlu iskustva s tzv. Washingtonskim konse
 
 Prvo, ključna je realističnost ciljeva i razumijevanje političke ekonomije reformi. Reforme se ne provode u vakuumu, nego u okruženju u kojem različite interesne skupine imaju različite preferencije i moć. Reforme koje ignoriraju raspodjelu moći često završavaju neuspjehom, osobito kada stvaraju gubitnike koji mogu blokirati promjene. Pokušaji reforme državne službe koji su uključivali smanjenje broja zaposlenih često su nailazili na snažan otpor, dok su reforme pažljivo dizajnirane da smanje otpor imale veće šanse za uspjeh.
 
+Drugo, jednako koliko o sadržaju reformi, uspjeh ovisi i o njihovu redoslijedu. Empirijski nalazi pokazuju da je pristup „najprije osnove, zatim kompleksnost" najuspješniji, pa redoslijed uvođenja postaje samostalno načelo, **sekvenciranje reformi**.
+
 ::: {#def-sekvenciranje-reformi}
 **Sekvenciranje reformi** je načelo prema kojemu se reforme uvode određenim redoslijedom koji odražava logiku „najprije osnove, zatim kompleksnost", pa temeljne administrativne funkcije moraju prethoditi sofisticiranijim sustavima jer nepravilno sekvenciranje vodi preuranjenoj sofisticiranosti i neuspjehu.
 :::
 
-Drugo, iznimno je važno pravilno sekvenciranje reformi. Empirijski nalazi pokazuju da je pristup „najprije osnove, zatim kompleksnost" najuspješniji. Potrebno je uspostaviti temeljne funkcije poput pouzdanog izvršenja proračuna i kontrole rashoda prije uvođenja sofisticiranih sustava. Nepravilno sekvenciranje često dovodi do „preuranjene sofisticiranosti", situacije u kojoj se uvode kompleksni sustavi koje administracija nije spremna provoditi.
+Potrebno je uspostaviti temeljne funkcije poput pouzdanog izvršenja proračuna i kontrole rashoda prije uvođenja sofisticiranih sustava. Nepravilno sekvenciranje često dovodi do „preuranjene sofisticiranosti", situacije u kojoj se uvode kompleksni sustavi koje administracija nije spremna provoditi.
 
 Graf koji slijedi prikazuje vjerojatnost uspjeha reforme kao krivulju u obliku zvona koja ovisi o tome koliko brzina i ambicija reforme odgovaraju institucionalnom kapacitetu države. Graf je interaktivan, pa klizači mijenjaju institucionalni kapacitet te brzinu i ambiciju reforme, čime se vidi zašto i prespora i prebrza reforma podbacuju u odnosu na onu usklađenu s kapacitetom.
 
@@ -132,7 +134,7 @@ Treće, tehnologija nije zamjena za institucije. Iako su digitalizacija i e-upra
 
 ## Iskustvo srednje i istočne Europe
 
-Iskustvo zemalja srednje i istočne Europe pruža jedan od najvažnijih empirijskih „laboratorija" za razumijevanje reformi. Tijekom posljednjih 35 godina te su zemlje prošle kroz duboku transformaciju, pri čemu se velik dio reformi odvijao pod snažnim utjecajem procesa pristupanja Europskoj uniji. EU je djelovala kao **vanjsko sidro** (*external anchor*) koje je postavljalo standarde, nudilo resurse i stvaralo vjerodostojan okvir za provedbu reformi.
+Iskustvo zemalja srednje i istočne Europe pruža jedan od najvažnijih empirijskih „laboratorija" za razumijevanje reformi. Tijekom posljednjih 35 godina te su zemlje prošle kroz duboku transformaciju, pri čemu se velik dio reformi odvijao pod snažnim utjecajem procesa pristupanja Europskoj uniji. Sama mogućnost članstva tako je djelovala kao **vanjsko sidro** (*external anchor*) reformi.
 
 ::: {#def-vanjsko-sidro}
 **Vanjsko sidro** (*external anchor*) je institucijalni mehanizam u kojemu međunarodna organizacija ili integracija (poput pristupnih pregovora s EU) postavlja obvezujuće standarde i rokove, smanjuje neizvjesnost i povećava vjerodostojnost reformi nadoknađujući slabost domaćih institucija.
@@ -142,21 +144,25 @@ Taj „sidreni efekt" bio je posebno važan jer je smanjivao neizvjesnost i pove
 
 Međutim, unatoč zajedničkom okviru i sličnim početnim uvjetima, rezultati reformi pokazali su se izrazito heterogenima. Neke zemlje, poput Estonije, razvile su visoko učinkovite, digitalizirane i transparentne javne sustave. Druge, poput Slovenije, razvile su stabilne institucionalne okvire uz postupniji tempo. Dio zemalja zadržao je značajne elemente slabih institucija, političke kontrole nad administracijom i slabije provedbe politika. Ova divergencija pokazuje da formalno usklađivanje s pravilima nije dovoljno za stvarnu institucionalnu transformaciju jer postoji razlika između „institucija na papiru" i „institucija u praksi" [@north1990; @acemoglu2012].
 
+Razlike u uspjehu otvaraju i šire pitanje brzine reformi, odnosno koliko brzo treba ići. Tu su se iskristalizirale dvije suprotstavljene strategije, **šok-terapija** i **gradualizam**.
+
 ::: {#def-sok-terapija-gradualizam}
 **Šok-terapija** je strategija istodobne provedbe većeg broja reformi u kratkom roku, uz argument da nepotpuna tranzicija ostavlja prostor za blokadu, dok je **gradualizam** suprotna strategija postupnih, sekvenciranih promjena koje smanjuju socijalne troškove i daju institucijama vremena za apsorpciju. Empirijska usporedba nije dala jednoznačnog pobjednika jer uspjeh ovisi ponajviše o institucionalnom kapacitetu i prisutnosti vjerodostojnog sidra.
 :::
 
-Razlike u uspjehu otvaraju i šire pitanje brzine reformi, odnosno koliko brzo treba ići. Šok-terapijski pristup, koji se zalagao za istodobnu provedbu većine reformi u najkraćem mogućem roku, opravdavao se argumentom da fragmentirana, nedovršena tranzicija ostavlja dovoljno prostora za blokadu i preokret. Gradualistički pristup naglašavao je rizik prebrzog napuštanja postojećih koordinacijskih mehanizama prije nego što su novi tržišni mehanizmi stigli funkcionirati.
+Šok-terapijski pristup opravdavao se argumentom da fragmentirana, nedovršena tranzicija ostavlja dovoljno prostora za blokadu i preokret. Gradualistički pristup naglašavao je rizik prebrzog napuštanja postojećih koordinacijskih mehanizama prije nego što su novi tržišni mehanizmi stigli funkcionirati.
 
 Trideset godina kasnije empirijska usporedba ne daje jednoznačan odgovor [@rodrik2011]. Šok-terapija u dijelu Srednje Europe (Poljska, baltičke države) dala je brže rezultate od gradualističkog pristupa drugdje, ali se to objašnjava jednako institucionalnom predtransformacijskom snagom tih zemalja koliko i samom brzinom. Gradualistička putanja Slovenije i Češke proizvela je usporediv ishod uz manje socijalnih troškova, dok je gradualizam bez vjerodostojnog sidra drugdje često završio u zaglavljenoj polureformi. Brzina sama po sebi nije ni vrlina ni mana. Ono što razlikuje uspjeh od neuspjeha jest spremnost institucija da apsorbiraju promjenu i postojanje vanjskog ili unutarnjeg sidra koje održava reformski smjer između izborima izazvanih oscilacija.
 
 Estonija se često ističe kao jedan od najuspješnijih primjera, jer je već od 1990-ih sustavno ulagala u digitalizaciju javne uprave, uz paralelno jačanje administrativnih kapaciteta. Ključ uspjeha nije bio samo u tehnologiji, nego u dosljednoj institucionalizaciji reformi i dugoročnoj strategiji. Zajednički obrazac koji se pojavljuje jest da su najuspješnije bile zemlje koje su uspjele institucionalizirati reforme, odnosno pretvoriti ih iz jednokratnih projekata u trajne mehanizme upravljanja. Ključna razlika između uspješnih i manje uspješnih reformi često leži u kapacitetu države za provedbu (*state capacity*) [@fukuyama2013].
 
+Sidro koje povlači reforme ujedno je i njihova ranjivost, jer ono što reforme vuče izvana jednom nestane. Kada se to dogodi, najčešće nakon ulaska u Europsku uniju, javlja se **reformski zamor**.
+
 ::: {#def-reformski-zamor}
 **Reformski zamor** je pojava slabljenja reformskog zamaha i poticaja za daljnje promjene nakon što nestane vanjski pritisak (npr. pristupnih pregovora) ili neposredna nagrada (članstvo); bez domaćeg vlasništva nad reformama može dovesti do stagnacije ili djelomičnog nazadovanja postignutih promjena.
 :::
 
-Važan dodatni uvid odnosi se na fenomen „reformskog zamora" nakon ulaska u Europsku uniju. Nakon što nestane vanjski pritisak i neposredna nagrada članstva, poticaji za daljnje reforme slabe, što može dovesti do stagnacije ili nazadovanja. Upravo zato suvremene analize naglašavaju važnost domaćeg vlasništva nad reformama (*ownership*) kao ključnog preduvjeta njihove dugoročne održivosti.
+Nakon što nestane vanjski pritisak i neposredna nagrada članstva, poticaji za daljnje reforme slabe, što može dovesti do stagnacije ili nazadovanja. Upravo zato suvremene analize naglašavaju važnost domaćeg vlasništva nad reformama (*ownership*) kao ključnog preduvjeta njihove dugoročne održivosti.
 
 Poseban i ilustrativan slučaj predstavlja Hrvatska, čije reforme jasno pokazuju kako različite faze europske integracije djeluju kao uzastopni valovi reformskih poticaja. Tijekom pristupnih pregovora Hrvatska je provela opsežne reforme zakonodavstva i institucija, osobito u području pravosuđa, tržišnog natjecanja i javne uprave. Nakon ulaska u EU dolazi do djelomičnog usporavanja reformskog zamaha, no novi reformski ciklus pokrenut je u kontekstu pristupanja europodručju. Ulazak u ERM II 2020. godine bio je uvjetovan nizom reformi, uključujući jačanje fiskalnog okvira i upravljanja javnim poduzećima, a uvođenje eura 2023. dodatno je učvrstilo makroekonomsku stabilnost. Dodatni poticaj dolazi kroz Nacionalni plan oporavka i otpornosti (NPOO), koji ponovno uvodi mehanizam uvjetovanosti povezujući financijska sredstva s provedbom reformi. Unatoč tim pomacima, hrvatsko iskustvo potvrđuje širi regionalni obrazac. Formalni napredak ne mora nužno značiti i potpunu funkcionalnu transformaciju, a ključni izazov ostaje institucionalizacija reformi u svakodnevnoj praksi.
 

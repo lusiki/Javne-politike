@@ -34,7 +34,7 @@ Upravo zato novo javno upravljanje naglašava da država više nije samo zapovje
 
 ## Whole-of-government i povezana vlada
 
-Jedan od ključnih koncepata koji se razvija nakon NPM-a jest **whole-of-government** pristup. Njegova je osnovna ideja da se javne politike ne smiju voditi kroz zatvorene administrativne „silose".
+Problemi građana rijetko poštuju granice ministarstava, a uprava razdvojena u zasebne „silose" prisiljava ih da sami povezuju ono što država drži odvojenim. Odgovor na tu fragmentaciju nakon NPM-a postaje **whole-of-government** pristup.
 
 ::: {#def-whole-of-government}
 **Whole-of-government** pristup je reforma organizacije javne uprave kojom se nastoji prevladati sektorska fragmentacija tako da se usluge, baze podataka i odgovornosti integriraju oko problema i korisnika, a ne oko administrativnih granica pojedinih ministarstava.
@@ -50,7 +50,7 @@ Srodan pojam je **joined-up government** (povezana vlada), koji se posebno razvi
 
 ## Mreže javnih politika i partnerstva
 
-Važno mjesto u novom upravljanju zauzimaju **mreže javnih politika** (*policy networks*). One nastaju kada se javne politike oblikuju i provode kroz stalne odnose više aktera.
+Povezivanje ne staje na granicama same države. Mnoge politike danas nastaju u stalnoj suradnji javnih tijela, struke, privatnih pružatelja i udruga, pa se oblikuju u **mrežama javnih politika** (*policy networks*) prije nego u jednoj nadležnoj instituciji.
 
 ::: {#def-mreze-javnih-politika}
 **Mreže javnih politika** (*policy networks*) su stabilne suradničke strukture u kojima se javne politike oblikuju i provode kroz stalne odnose između višestrukih aktera koji dijele resurse i informacije; mogu povećati kvalitetu politika, ali nose rizik zarobljavanja od posebnih interesa.

@@ -57,7 +57,7 @@ U ekstremnom obliku, utilitaristička logika može voditi prema zaključku da bi
 
 ## Rawlsov pristup pravednosti
 
-Važnu dopunu utilitarizmu daje **Rawlsov pristup pravednosti**. John Rawls ne polazi od zbrajanja korisnosti svih članova društva, nego od pitanja kakva bi pravila društva ljudi izabrali kada ne bi znali kakav će položaj imati u tom društvu. U njegovoj teoriji važnu ulogu ima tzv. **veo neznanja**. Ako nitko unaprijed ne zna hoće li biti bogat ili siromašan, zdrav ili bolestan, talentiran ili manje talentiran, rođen u privilegiranoj ili depriviranoj obitelji, tada bi racionalni pojedinci izabrali pravila koja štite i one koji se nađu u najlošijem položaju [@rawls1971].
+Utilitaristički zbroj korisnosti šuti o tome kako je blagostanje raspoređeno, pa ga **Rawlsov pristup pravednosti** zamjenjuje drugačijim pitanjem. Umjesto da pita koliko je korisnosti ukupno stvoreno, pita kakva bi pravila ljudi izabrali kada ne bi znali kakav će položaj sami zauzeti. Tu misao Rawls gradi na pojmu **vela neznanja**. Ako nitko unaprijed ne zna hoće li biti bogat ili siromašan, zdrav ili bolestan, talentiran ili manje talentiran, rođen u privilegiranoj ili depriviranoj obitelji, tada bi racionalni pojedinci izabrali pravila koja štite i one koji se nađu u najlošijem položaju [@rawls1971].
 
 ::: {#def-rawlsov-pristup}
 **Rawlsov pristup pravednosti** polazi od vela neznanja, pri čemu se pravila biraju pod pretpostavkom da ne znamo koji ćemo položaj u društvu zauzeti, iz čega slijedi maximin pravilo prema kojemu institucije treba oblikovati tako da maksimiziraju položaj onih u najlošijem položaju, a nejednakosti su prihvatljive samo ako koriste i najugroženijima [@rawls1971].
@@ -87,7 +87,7 @@ U kriznim situacijama, poput rata, pandemije, velike prirodne katastrofe ili ene
 
 ## Paternalizam
 
-Treći normativni koncept povezan s distribucijskom funkcijom je **paternalizam**. On označava situaciju u kojoj država ograničava, usmjerava ili oblikuje ponašanje pojedinca uz obrazloženje da to čini za njegovo dobro, a ne radi zaštite trećih strana. Izraz dolazi od latinske riječi *pater* koja znači otac, i upućuje na ideju države kao zaštitnika koji smatra da pojedinac možda neće sam donijeti odluku koja je u njegovu dugoročnom interesu.
+Dok prethodna dva koncepta pitaju što društvo duguje pojedincu, treći okreće pitanje i pita smije li država odlučivati umjesto njega. Riječ je o **paternalizmu**, izrazu koji dolazi od latinske riječi *pater*, otac, i upućuje na državu kao zaštitnika koji pretpostavlja da pojedinac možda neće sam donijeti odluku u svojem dugoročnom interesu.
 
 ::: {#def-paternalizam}
 **Paternalizam** je državna intervencija koja ograničava, usmjerava ili oblikuje ponašanje pojedinca uz obrazloženje da to čini za njegovo dobro, a ne radi zaštite trećih strana. Razlikujemo tvrdi paternalizam (prisila ili zabrana) i meki libertarijanski paternalizam koji oblikuje zadane opcije bez ukidanja slobode izbora.
@@ -113,11 +113,13 @@ Zato odnos efikasnosti i pravednosti nije jednostavna razmjena u kojoj se uvijek
 
 Distribucijska funkcija zato nije samo pitanje koliko država preraspodjeljuje, nego i kako preraspodjeljuje. Dvije države mogu imati sličan udio javne potrošnje u BDP-u, ali vrlo različite učinke na siromaštvo, nejednakost i životne prilike. Jedna može trošiti mnogo, ali loše ciljati programe i stvarati ovisnost o transferima. Druga može trošiti slično, ali kroz kvalitetno obrazovanje, zdravstvo, aktivne politike tržišta rada i dobro dizajnirane transfere stvarati veću socijalnu mobilnost.
 
+Da bi se takve razlike uopće mogle usporediti, nejednakost treba svesti na mjeru koju je moguće pratiti kroz vrijeme i među zemljama. Dva su povezana alata za to postala standard.
+
 ::: {#def-lorenz-gini}
 **Lorenzova krivulja** grafički prikazuje raspodjelu dohotka tako da vodoravna os nosi kumulativni udio stanovništva (poredanog od najsiromašnijeg prema najbogatijem), a okomita os kumulativni udio dohotka, pri čemu savršena jednakost odgovara dijagonali. **Ginijev koeficijent** mjeri omjer površine između dijagonale i Lorenzove krivulje naspram ukupne površine ispod dijagonale i kreće se od 0 (potpuna jednakost) do 1 (potpuna nejednakost).
 :::
 
-Upravo Ginijev koeficijent omogućuje da se učinak preraspodjele iskaže jednim brojem i usporedi među zemljama.
+Ginijev koeficijent tako sažima cijelu raspodjelu u jedan broj, čime učinak preraspodjele postaje izravno usporediv među zemljama.
 
 ::: {.callout-empirija}
 Učinak poreza i transfera na nejednakost moguće je izravno izmjeriti. Podaci OECD-a pokazuju da porezi i socijalni transferi u prosjeku smanjuju Ginijev koeficijent razvijenih zemalja za otprilike trećinu, s približno 0,47 prije državne intervencije na oko 0,31 nakon nje [@oecd_idd]. Razmjer toga smanjenja jako varira, od vrlo snažnog u nordijskim i kontinentalnim europskim sustavima do osjetno slabijeg u dijelu anglosaksonskih zemalja. Veći dio toga učinka u većini zemalja dolazi od transfera, osobito mirovina i naknada, a ne od same progresivnosti poreza na dohodak. To je važno jer pokazuje da se nejednakost može jednako snažno smanjiti rashodovnom stranom proračuna kao i poreznom. Usporedbe također pokazuju da zemlje sa sličnom razinom dohotka po stanovniku mogu imati vrlo različite razine nejednakosti, što znači da konačna raspodjela nije zadana tržištem, nego je u velikoj mjeri rezultat politike.

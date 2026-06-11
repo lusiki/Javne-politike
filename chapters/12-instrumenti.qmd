@@ -61,7 +61,7 @@ Ipak, regulacija nije bez troškova. Prekomjerna ili loše dizajnirana regulacij
 
 ## Subvencije
 
-**Subvencije** su oblik financijske potpore koju država dodjeljuje određenim sektorima, poduzećima, kućanstvima ili aktivnostima. One mogu biti izravne, primjerice isplata potpore iz proračuna, ili neizravne, primjerice porezne olakšice, povlašteni krediti, državna jamstva ili niže cijene javnih usluga.
+Dok regulacija usmjerava ponašanje zabranom i obvezom, **subvencija** to čini novcem, nagrađujući ono što država želi potaknuti. Njezina je snaga upravo u toj raznolikosti oblika, jer potpora rijetko dolazi samo kao isplata iz proračuna.
 
 ::: {#def-subvencija}
 **Subvencija** je izravna ili neizravna financijska potpora koju država dodjeljuje određenim sektorima, poduzećima, kućanstvima ili aktivnostima u obliku porezne olakšice, povlaštenog kredita, jamstva ili proračunske isplate, radi poticanja poželjnog ponašanja ili nadoknade pozitivnih eksternalija.
@@ -105,7 +105,7 @@ Bihevioralni instrumenti mogu imati velik učinak uz mali trošak, što potvrđu
 
 ## Kombiniranje instrumenata
 
-U praksi se javne politike rijetko oslanjaju na samo jedan instrument. Najčešće se koristi kombinacija instrumenata.
+Nijedan od dosadašnjih instrumenata rijetko djeluje sam. Stvarne politike kombiniraju nekoliko njih jer svaki pokriva drugu slabost, a isti se cilj može postići vrlo različitim rasporedom troška, vidljivosti i administrativnog napora. Takav skup nazivamo **kombinacijom instrumenata**.
 
 ::: {#def-kombinacija-instrumenata}
 **Kombinacija instrumenata** (*policy mix*) je skup različitih instrumenata koji se istodobno primjenjuju radi ostvarivanja jednog ili više srodnih ciljeva; analiza mixa otkriva da isti cilj može biti postignut različitim rasporedom troškova, vidljivosti i administrativnih kapaciteta.

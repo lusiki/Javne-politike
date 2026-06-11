@@ -219,7 +219,7 @@ Politička implikacija nije da je fiskalna ekspanzija uvijek poželjna, nego da 
 
 ## Automatski stabilizatori
 
-Stabilizacijska funkcija države ne ostvaruje se samo diskrecijskim odlukama vlade. Veliku ulogu imaju i **automatski stabilizatori**, elementi fiskalnog sustava koji automatski ublažavaju gospodarske cikluse, bez potrebe za novim zakonima ili posebnim političkim odlukama.
+Dio stabilizacije gospodarstvo obavlja samo od sebe, prije nego što ijedna vlada o tome odluči. Taj posao obavljaju **automatski stabilizatori**, već ugrađeni u porezni i socijalni sustav, pa proračun reagira na ciklus bez ijednog novog zakona ili posebne političke odluke.
 
 ::: {#def-automatski-stabilizatori}
 **Automatski stabilizatori** su elementi fiskalnog sustava koji bez ikakve posebne odluke vlade automatski ublažavaju gospodarski ciklus, tako da u recesiji porezni prihodi padaju i rashodi za socijalne naknade rastu (fiskalna ekspanzija), dok se u ekspanziji događa suprotno (fiskalna kontrakcija).
@@ -233,7 +233,7 @@ Snaga automatskih stabilizatora zato sustavno varira među zemljama. U državama
 
 ## Diskrecijska fiskalna politika
 
-Osim automatskih stabilizatora, država može koristiti i **diskrecijsku fiskalnu politiku**, odnosno posebne mjere koje svjesno donosi kao odgovor na konkretnu gospodarsku situaciju. To mogu biti privremena smanjenja poreza, jednokratne pomoći kućanstvima, subvencije poduzećima, programi očuvanja radnih mjesta, javne investicije ili državna jamstva. Za razliku od automatskih stabilizatora, takve mjere zahtijevaju izričitu političku odluku i trpe kašnjenja u pripremi i provedbi.
+Ondje gdje automatski stabilizatori nisu dovoljni, na red dolazi **diskrecijska fiskalna politika**. Za razliku od ugrađenih mehanizama koji djeluju tiho i odmah, ona traži da netko prepozna situaciju, osmisli odgovor i progura ga kroz politički proces, što je istodobno njezina snaga i njezina slabost.
 
 ::: {#def-diskrecijska-fiskalna-politika}
 **Diskrecijska fiskalna politika** su posebne mjere koje vlada svjesno donosi kao odgovor na konkretnu gospodarsku situaciju, poput privremenih smanjenja poreza, jednokratnih pomoći, javnih investicija ili programa zapošljavanja. Za razliku od automatskih stabilizatora, zahtijeva izričitu političku odluku i trpi kašnjenja u pripremi i provedbi.

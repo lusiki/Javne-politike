@@ -27,7 +27,7 @@ Važno je naglasiti da alokacijska funkcija države nije isto što i tvrdnja da 
 
 ## Javna dobra
 
-Najpoznatiji primjer tržišnog neuspjeha su **javna dobra**. Ona imaju dvije ključne karakteristike, nekonkurentnost u potrošnji i neisključivost iz potrošnje. Dobro je nekonkurentno ako potrošnja jedne osobe ne smanjuje mogućnost da isto dobro koriste i drugi. Dobro je neisključivo ako je teško ili vrlo skupo spriječiti nekoga da ga koristi, čak i ako nije platio za njega [@samuelson1954; @musgrave1959]. Zbog te kombinacije tržište takvo dobro ne uspijeva financirati jer korisnici imaju poticaj ne otkriti svoje preferencije i ostvariti ga besplatno.
+Najpoznatiji primjer tržišnog neuspjeha su **javna dobra**. Razlog zbog kojega ih privatno tržište sustavno podbacuje leži u dvama svojstvima koja takva dobra dijele, a koja zajedno potkopavaju uobičajeni mehanizam naplate [@samuelson1954; @musgrave1959].
 
 ::: {#def-javno-dobro}
 **Javno dobro** je dobro koje je istodobno **nekonkurentno** (potrošnja jednog korisnika ne smanjuje dostupnost drugima) i **neisključivo** (teško ili skupo je spriječiti nekoga da ga koristi). Zbog te kombinacije tržište javno dobro ne može financirati jer korisnici imaju poticaj ne otkriti svoje preferencije i ostvariti ga besplatno.
@@ -218,7 +218,7 @@ pg_mc = pg_controls.mc
 
 ## Eksternalije
 
-Drugi veliki oblik tržišnog neuspjeha su **eksternalije**. Eksternalija nastaje kada odluka jednog pojedinca ili poduzeća utječe na dobrobit drugih, a taj se učinak ne odražava u tržišnoj cijeni. Akter koji donosi odluku ne snosi sve troškove ili ne dobiva sve koristi koje njegova odluka stvara za društvo, pa se privatni i društveni trošak razilaze i tržišna ravnoteža više nije Pareto učinkovita [@pigou1920; @baumol1988].
+Drugi veliki oblik tržišnog neuspjeha nastaje kada cijena ne uhvati sve posljedice neke odluke. Akter koji odlučuje tada ne snosi sve troškove ni ne ubire sve koristi koje njegov izbor stvara za druge, pa se privatni i društveni račun razilaze i tržišna ravnoteža više nije Pareto učinkovita [@pigou1920; @baumol1988].
 
 ::: {#def-eksternalija}
 **Eksternalija** nastaje kada odluka jednog aktera utječe na dobrobit drugih, a taj se učinak ne odražava u tržišnoj cijeni, pa se privatni i društveni trošak (ili korist) razilaze i tržišna ravnoteža nije Pareto učinkovita. Negativna eksternalija vodi prema prekomjernoj, a pozitivna prema nedovoljnoj aktivnosti.

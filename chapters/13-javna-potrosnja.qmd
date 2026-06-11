@@ -22,11 +22,11 @@ U ranim fazama razvoja javnih financija fokus ekonomista bio je gotovo isključi
 
 Kako pokazuju povijesni podaci, u razdoblju od kraja 19. do početka 20. stoljeća javna potrošnja u razvijenim zemljama iznosila je tek oko 10 % BDP-a [@tanzi2000]. Međutim, to ne znači da su ta društva bila manje razvijena, već da država nije obavljala funkcije koje danas smatramo standardnima, poput masovnog obrazovanja, javnog zdravstva, socijalne sigurnosti ili aktivne politike zapošljavanja.
 
+Već krajem 19. stoljeća pojavljuju se prve teorijske naznake da minimalistički pristup državi nije dugoročno održiv. Adolph Wagner uočava da s razvojem industrijskog društva potreba za javnim uslugama ne raste slučajno, nego pravilno, pa to zapažanje uzdiže na razinu zakonitosti.
+
 ::: {#def-wagnerov-zakon}
 **Wagnerov zakon** empirijsko je zapažanje i teorijska teza Adolpha Wagnera prema kojoj udio javne potrošnje u BDP-u sustavno raste s razvojem industrijskog društva, jer veća ekonomska kompleksnost povećava potražnju za regulacijom, obrazovanjem i infrastrukturom [@wagner1890; @bird1971].
 :::
-
-Već krajem 19. stoljeća pojavljuju se prve teorijske naznake da minimalistički pristup državi nije dugoročno održiv. Ekonomisti poput Adolpha Wagnera uočavaju da s razvojem industrijskog društva raste potreba za javnim uslugama. Ova ideja, poznata kao **Wagnerov zakon**, sugerira da će udio javne potrošnje u BDP-u rasti kako društva postaju bogatija i kompleksnija [@wagner1890; @bird1971].
 
 Wagner je ponudio i mehaniku tog rasta koja nadilazi puko empirijsko zapažanje. Tri sile prema njegovoj analizi sustavno povećavaju udio države u gospodarstvu kako ono industrijalizira. Prva je sila kompleksnosti, jer veća međuovisnost gospodarskih jedinica zahtijeva više regulacije, ugovornog reda i nadzora, što povećava administrativne funkcije države. Druga je sila kulture i obrazovanja, gdje urbanizirano industrijsko društvo razvija veću potražnju za obrazovanjem, znanošću i kulturom, dobrima koja imaju izrazito javne komponente. Treća je sila ekonomske infrastrukture, gdje krupne kapacitetne investicije u promet, energetiku i komunikacije premašuju mogućnosti privatnih ulagača i prirodno se preuzimaju kroz javni sektor.
 

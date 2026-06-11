@@ -144,11 +144,13 @@ Niskanenov model počiva na tri ključna elementa. Prvo, birokracija često ima 
 
 Birokratsko širenje ne mora biti posljedica korupcije ili zle namjere. Ono može biti sasvim racionalno ponašanje unutar sustava u kojem se uspjeh institucije mjeri veličinom proračuna, brojem zaposlenih i širinom nadležnosti. U kasnijim raspravama model je kritiziran kao previše pojednostavljen, jer nisu svi birokrati jednako motivirani proračunom. Neki žele miran posao, neki stručni ugled, a neki doista žele poboljšati javnu uslugu. Breton i Wintrobe upozorili su da su interesi unutar birokracije heterogeni, pri čemu viši službenici teže moći i prestižu, a niži sigurnosti radnoga mjesta, pa maksimizacija proračuna ne mora biti zajednički cilj svih razina [@breton1975].
 
+Iz te kritike izrastao je drugačiji model. Dunleavy je tvrdio da viši birokrati ne maksimiziraju veličinu proračuna, nego vlastiti utjecaj i kontrolu nad politikom, pa radije biraju male, prestižne i politički blizu smještene agencije nego velike operativne službe [@dunleavy1985].
+
 ::: {#def-bureau-shaping}
 **Bureau-shaping** je strategija Dunleavyeve teorije prema kojoj viši birokrati ne maksimiziraju veličinu proračuna (kao u Niskanenovu modelu), nego oblik i tip organizacije, pa preferiraju male, politički utjecajne i visokoprestižne agencije pred velikima, rutinskim i operativnim, jer im to donosi veći osobni ugled uz manji upravljački trud [@dunleavy1985].
 :::
 
-Dunleavy je tvrdio da birokrati mogu nastojati maksimizirati vlastiti utjecaj i kontrolu nad politikom, a ne nužno cijeli proračun, što je nazvao strategijom bureau-shapinga [@dunleavy1985]. Ipak, Niskanenov model ostaje važan jer jasno pokazuje da se proračunski proces ne može razumjeti samo kao tehničko određivanje potrebnih sredstava.
+Ipak, Niskanenov model ostaje važan jer jasno pokazuje da se proračunski proces ne može razumjeti samo kao tehničko određivanje potrebnih sredstava.
 
 Ako želimo učinkovitu državu, nije dovoljno pitati koliko novca neka institucija traži. Treba pitati koje rezultate proizvodi, koliko ti rezultati koštaju, postoje li jeftiniji načini provedbe i tko neovisno provjerava informacije koje institucija iznosi.
 
@@ -158,7 +160,7 @@ Niskanenova logika vidljiva je u načinu na koji javne agencije pregovaraju o pr
 
 ### Asimetrija informacija i principal–agent problem
 
-Drugi važan model jest model asimetrije informacija, odnosno **principal–agent problem**. Ovaj model polazi od situacije u kojoj jedna strana, principal, delegira posao drugoj strani, agentu. Principal želi da agent djeluje u njegovu interesu, ali agent ima vlastite ciljeve i bolje informacije o vlastitom ponašanju.
+Niskanen i Dunleavy gledaju birokraciju izvana, kao tijelo koje pregovara o proračunu. No mnogi se njezini problemi vide tek kad uđemo u sam odnos delegiranja, u kojem jedna strana radi za drugu, a ne može je se savršeno nadzirati. Taj se odnos u ekonomiji naziva **principal–agent problemom**.
 
 ::: {#def-principal-agent}
 **Principal–agent problem** nastaje kada principal (onaj koji delegira zadatak) ne može savršeno nadzirati agenta (onoga koji ga izvršava) jer agent ima vlastite ciljeve i bolje informacije o svom ponašanju; u javnoj upravi taj problem multiplicira se kroz višestruke razine delegiranja od građana do pojedinih službenika.
@@ -168,11 +170,13 @@ U javnom sektoru taj je problem posebno složen jer postoji više razina delegir
 
 Na svakoj razini pojavljuju se dva problema. Prvi je **skrivena informacija**, jer agent zna više od principala. Drugi je **skriveno djelovanje**, jer principal ne može savršeno promatrati koliko se agent trudi i slijedi li stvarno zadane ciljeve. Ovaj model pomaže razumjeti zašto javne institucije ponekad mogu izbjegavati odgovornost. Budući da je lanac odgovornosti dugačak, odgovornost se može raspršiti.
 
+Upravo zato što se odgovornost u tom lancu lako rasprši, postaje važno razlikovati ono što institucija ulaže, ono što neposredno proizvodi i ono što stvarno mijenja u društvu. Ta tri pojma, **input, output i ishod**, lako se brkaju, a razlika među njima odlučuje hoće li se uspjeh institucije mjeriti onime što je važno ili onime što je lako prebrojati.
+
 ::: {#def-input-output-ishod}
 **Input** je resurs koji se ulaže (novac, osoblje, oprema); **output** je mjerljivi neposredni učinak institucije (broj predmeta, sati usluge); **ishod** (*outcome*) je stvarna promjena u stanju društva koju politika želi postići. Birokracija tipično lakše izvještava o inputima i outputima nego o ishodima jer su oni teže mjerljivi i pod manjom njezinom kontrolom.
 :::
 
-Principal–agent problem objašnjava i zašto je u javnoj upravi važno razlikovati **inpute, outpute i ishode**. Input je novac, broj zaposlenih ili oprema. Output je broj obrađenih predmeta ili održanih sati nastave. Ishod je stvarna promjena koju društvo želi, poput boljih obrazovnih rezultata, kraćih lista čekanja ili veće sigurnosti. Birokracija često lakše prikazuje inpute i outpute nego ishode, jer su oni lakše mjerljivi i pod većom kontrolom same institucije. Zato su transparentnost, revizija, evaluacija i otvoreni podaci ključni jer smanjuju informacijsku prednost agenta. No samo mjerenje nije dovoljno, loše dizajnirani pokazatelji mogu potaknuti pogrešno ponašanje. Ako se škola vrednuje samo po broju prolazaka, može snižavati kriterije, a ako se sud vrednuje samo po broju riješenih predmeta, može se zanemariti kvaliteta presuda.
+Birokracija često lakše prikazuje inpute i outpute nego ishode, pa su transparentnost, revizija, evaluacija i otvoreni podaci ključni jer smanjuju informacijsku prednost agenta. No samo mjerenje nije dovoljno, jer loše dizajnirani pokazatelji mogu potaknuti pogrešno ponašanje. Ako se škola vrednuje samo po broju prolazaka, može snižavati kriterije, a ako se sud vrednuje samo po broju riješenih predmeta, može se zanemariti kvaliteta presuda.
 
 ### Birokracija i rentijerstvo
 

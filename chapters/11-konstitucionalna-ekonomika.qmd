@@ -34,10 +34,10 @@ To ne znači da su politički akteri nužno loši, sebični ili zlonamjerni. Poa
 
 Važna implikacija ovog pristupa jest da kvaliteta javnih politika ne ovisi samo o stručnosti donositelja odluka. Stručnost je važna, ali nije dovoljna. Ako su pravila sustava loše postavljena, čak i kompetentni i dobronamjerni akteri mogu proizvoditi loše ishode. Obrnuto, ako su pravila dobro postavljena, čak i akteri koji slijede vlastite interese mogu biti potaknuti da djeluju na način koji je bliži javnom interesu. Ustavna ekonomika zato ne nastoji probleme javnog sektora rješavati samo naknadno, kada se loše odluke već dogode. Njezin je naglasak **ex ante**, odnosno usmjeren na unaprijed postavljena pravila koja smanjuju vjerojatnost loših odluka.
 
-Ključno metodološko sredstvo kojim Buchanan i Tullock razvijaju taj ex ante naglasak jest **veo neizvjesnosti** (*veil of uncertainty*) [@buchanan1962].
+Da bi pravila bila pravična, akteri koji ih biraju ne bi smjeli moći skrojiti ih prema vlastitoj trenutnoj koristi. Buchanan i Tullock zato ex ante naglasak grade na zamišljenom **velu neizvjesnosti** (*veil of uncertainty*), koji upravo tu mogućnost uklanja [@buchanan1962].
 
 ::: {#def-veo-neizvjesnosti}
-**Veo neizvjesnosti.** Kada se akteri dogovaraju o pravilima na ustavnoj razini, nitko ne zna kakav će biti njegov konkretan položaj kada se ta pravila primijene u stotinama budućih operativnih odluka.
+Pod **velom neizvjesnosti** akteri se dogovaraju o pravilima na ustavnoj razini ne znajući kakav će biti njihov konkretan položaj kada se ta pravila primijene u stotinama budućih operativnih odluka.
 :::
 
 Pojedinac može u budućnosti biti porezni obveznik ili korisnik transfera, dobitnik ili gubitnik konkretne reforme, član većine ili manjine. Pod tom neizvjesnošću racionalan je izbor pravila koja štite svakog mogućeg sudionika, a ne pravila koja koriste konkretnu trenutnu poziciju.
@@ -64,7 +64,7 @@ Drugi pravac kritike fokusira se na evoluciju pravila. Holcombe i drugi recentni
 
 ## Vremenska nedosljednost javnih politika
 
-Jedan od najvažnijih razloga zašto ustavna ekonomika naglašava pravila jest problem **vremenske nedosljednosti** javnih politika.
+Najjači razlog zašto se vlada može htjeti unaprijed vezati pravilom leži u tome što njezini vlastiti budući poticaji rade protiv nje. Ono što se danas isplati obećati, sutra se često ne isplati provesti, a tu napetost ekonomisti nazivaju **vremenskom nedosljednošću**.
 
 ::: {#def-vremenska-nedosljednost}
 **Vremenska nedosljednost** nastaje kada je neka politika optimalna iz dugoročne perspektive, ali ju je teško ili politički neisplativo provoditi u kratkom roku.

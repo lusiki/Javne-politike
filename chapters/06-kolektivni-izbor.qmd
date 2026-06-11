@@ -20,7 +20,7 @@ Na privatnom tržištu problem različitih preferencija rješava se elegantno, k
 
 ## Condorcetov paradoks
 
-Najjednostavniji prikaz problema kolektivnog izbora jest **Condorcetov paradoks** [@condorcet1785]. Zamislimo tri birača i tri opcije, A, B i C. Prvi birač preferira A ispred B ispred C. Drugi preferira B ispred C ispred A. Treći preferira C ispred A ispred B. Svaki pojedinačni birač ima jasne, dosljedne (tranzitivne) preferencije.
+Da problem kolektivnog izbora nije tek teorijska mogućnost, najlakše je pokazati s tri birača i tri opcije, A, B i C [@condorcet1785]. Prvi birač preferira A ispred B ispred C. Drugi preferira B ispred C ispred A. Treći preferira C ispred A ispred B. Svaki pojedinačni birač ima jasne, dosljedne (tranzitivne) preferencije, pa bismo očekivali da i njihov zbroj bude dosljedan.
 
 ::: {#def-condorcetov-paradoks}
 **Condorcetov paradoks** pokazuje da većinsko parno glasovanje može biti ciklično čak i kada svaki birač ima dosljedne (tranzitivne) preferencije, pa A pobjeđuje B, B pobjeđuje C, ali C pobjeđuje A i kolektiv ostaje bez nedvosmislenog pobjednika [@condorcet1785].
@@ -155,11 +155,7 @@ Dok Condorcetov paradoks pokazuje da većinsko glasovanje *može* proizvesti cik
 
 Arrow je tražio pravilo koje istodobno zadovoljava nekoliko razumnih i naizgled minimalnih uvjeta. Neograničena domena traži da pravilo radi za sve moguće kombinacije pojedinačnih preferencija. Kolektivna racionalnost traži da društveni poredak bude dosljedan, odnosno potpun i tranzitivan. Pareto-efikasnost traži da, ako svi preferiraju A ispred B, i društvo preferira A ispred B. Neovisnost o nevažnim alternativama zahtijeva da se rangiranje između A i B ne mijenja uvođenjem ili uklanjanjem treće alternative C. Konačno, nediktatorstvo isključuje mogućnost da jedan pojedinac nametne svoju volju cijeloj skupini bez obzira na preferencije ostalih.
 
-::: {#thm-arrow}
-**Arrowljev teorem nemogućnosti.** Arrow je dokazao da ne postoji pravilo koje istodobno zadovoljava sve te uvjete kada postoje barem tri alternative.
-:::
-
-Ne postoji savršen demokratski mehanizam agregacije preferencija, pa svaki realan sustav glasovanja mora žrtvovati barem jedno od poželjnih svojstava. To ne znači da je demokracija besmislena, nego da svako pravilo odlučivanja ima ugrađena ograničenja i moguće nedosljednosti, te da izbor pravila uvijek uključuje kompromise. @tbl-arrow-uvjeti pokazuje što svaki uvjet zahtijeva i što se događa kada se prekrši.
+Arrowljev je dokaz pokazao da nijedno pravilo ne može zadovoljiti svih pet uvjeta istodobno čim postoje barem tri alternative. Ne postoji savršen demokratski mehanizam agregacije preferencija, pa svaki realan sustav glasovanja mora žrtvovati barem jedno od poželjnih svojstava. To ne znači da je demokracija besmislena, nego da svako pravilo odlučivanja ima ugrađena ograničenja i moguće nedosljednosti, te da izbor pravila uvijek uključuje kompromise. @tbl-arrow-uvjeti pokazuje što svaki uvjet zahtijeva i što se događa kada se prekrši.
 
 | Uvjet | Što zahtijeva | Posljedica kršenja u stvarnom svijetu |
 |---|---|---|
@@ -177,13 +173,13 @@ Posljedice teorema vide se u izbornim procesima. Pojava treće ili četvrte rele
 
 ## Jednovršne preferencije i medijanski glasač
 
-Cikluse i nedosljednosti ne moramo uvijek očekivati. Ako preferencije birača imaju određenu strukturu, kolektivni izbor može biti stabilan. Ključan slučaj su **jednovršne preferencije** (*single-peaked preferences*). Svaki birač ima jednu najdražu točku na nekoj dimenziji (primjerice na osi „manje – više javne potrošnje"), a što je opcija dalje od te točke, to mu je manje privlačna.
+Cikluse i nedosljednosti ne moramo uvijek očekivati. Ciklusi iz prethodnih primjera nastaju jer preferencije birača nemaju zajedničku strukturu, no čim ta struktura postoji, kolektivni izbor može biti stabilan. Ključan je slučaj onaj u kojem se sve opcije mogu poredati na jednoj dimenziji, primjerice na osi „manje – više javne potrošnje", a svaki birač ima na njoj jednu najdražu točku. Takve preferencije nazivamo **jednovršnima** (*single-peaked preferences*).
 
 ::: {#def-jednovrsne-preferencije}
 **Jednovršne preferencije** (*single-peaked preferences*) su preferencije pri kojima svaki birač ima jednu najdražu točku na nekoj dimenziji politike, a privlačnost svake opcije monotono pada s udaljenošću od te točke; ta struktura jamči stabilnost ishoda većinskog glasovanja.
 :::
 
-Kada su preferencije jednovršne i odlučuje se o jednoj dimenziji, većinsko glasovanje proizvodi stabilan ishod. Pobjeđuje opcija koju preferira **medijanski glasač**, onaj čija je idealna točka u sredini rasporeda. To je sadržaj teorema o medijanskom glasaču [@black1948], koji ćemo detaljnije primijeniti u poglavlju o strankama i izborima.
+Kada su preferencije jednovršne i odlučuje se o jednoj dimenziji, većinsko glasovanje proizvodi stabilan ishod, i to uvijek isti. Pobjeđuje opcija koja je najbliža sredini rasporeda biračkih preferencija, a birača koji se ondje nalazi nazivamo **medijanskim glasačem**. To je sadržaj teorema o medijanskom glasaču [@black1948], koji ćemo detaljnije primijeniti u poglavlju o strankama i izborima.
 
 ::: {#def-medijanski-glasac}
 **Medijanski glasač** je birač čija idealna točka leži u sredini rasporeda svih birača; prema teoremu o medijanskom glasaču [@black1948], kada su preferencije jednovršne i odluka je jednodimenzionalna, pobjeđuje opcija kojoj je taj birač najbliži.

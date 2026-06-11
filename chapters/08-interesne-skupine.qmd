@@ -48,7 +48,7 @@ U Hrvatskoj se ova logika vidi u snažnom utjecaju poljoprivrednih lobija, sindi
 
 ## Lov na rentu
 
-Kada poduzeća i skupine ulažu resurse u stjecanje političkih povlastica umjesto u stvaranje vrijednosti, govorimo o **lovu na rentu** (*rent-seeking*) [@tullock1967; @krueger1974]. Renta u ovom smislu nije prihod od najma, nego ekonomska korist koja proizlazi iz povlaštenog položaja, a ne iz veće produktivnosti, primjerice u obliku monopolske zaštite, ekskluzivne dozvole, kvote, subvencije ili porezne olakšice.
+Najveću štetu interesne skupine ne nanose onime što uzmu, nego onime što potroše da bi to uzele. Kada poduzeća i skupine ulažu resurse u stjecanje političkih povlastica umjesto u stvaranje vrijednosti, govorimo o **lovu na rentu** (*rent-seeking*) [@tullock1967; @krueger1974]. Renta ovdje nije prihod od najma, nego korist koja proizlazi iz povlaštenog položaja, a ne iz veće produktivnosti, primjerice u obliku monopolske zaštite, ekskluzivne dozvole, kvote, subvencije ili porezne olakšice.
 
 ::: {#def-lov-na-rentu}
 **Lov na rentu** (*rent-seeking*) je ulaganje resursa u stjecanje političkih povlastica (monopolske zaštite, dozvola, subvencija, kvota) umjesto u stvaranje novih vrijednosti, a rezultira dvostrukim društvenim gubitkom koji obuhvaća izravno iskrivljavanje tržišnih cijena i neizravan gubitak resursa potrošenih na samo natjecanje za povlasticu [@tullock1967; @krueger1974].
@@ -68,7 +68,7 @@ Lov na rentu objašnjava i zašto neučinkovite povlastice nadžive svoje opravd
 
 ## Regulatorno zarobljavanje
 
-Poseban i osobito važan oblik utjecaja interesnih skupina jest **regulatorno zarobljavanje** (*regulatory capture*). Ono nastaje kada regulator, osnovan da štiti javni interes, postupno počne djelovati u interesu sektora koji bi trebao nadzirati [@stigler1971; @peltzman1976].
+Lov na rentu traži povlasticu izvana, no najdjelotvorniji je onda kada zarobi samu instituciju koja bi ga trebala obuzdavati. Tako nastaje **regulatorno zarobljavanje** (*regulatory capture*), oblik utjecaja u kojem se nadzornik postupno okreće u korist nadziranoga [@stigler1971; @peltzman1976].
 
 ::: {#def-regulatorno-zarobljavanje}
 **Regulatorno zarobljavanje** (*regulatory capture*) je proces u kojemu regulator, osnovan da štiti javni interes, postupno počne djelovati u interesu sektora koji nadzire, najčešće zbog informacijske ovisnosti, organizacijske asimetrije i pojave kružnih vrata, a ne nužno zbog korupcije [@stigler1971; @peltzman1976].
@@ -84,11 +84,13 @@ Posljedice mogu biti ozbiljne. Regulacija koja je trebala povećati konkurenciju
 
 Obuzdavanje zarobljavanja nailazi i na vlastito ograničenje koje proizlazi iz pokretljivosti kapitala. Što je regulacija stroža i skuplja za usklađivanje, to poduzeća imaju veći poticaj premjestiti proizvodnju, sjedište ili ulaganja u jurisdikciju s blažim pravilima, osobito u uskim i otvorenim gospodarstvima. Rodrik tu napetost opisuje kao ograničenje prostora za politiku u uvjetima globalizacije, u kojem nacionalni regulator istodobno mora štititi javni interes i zadržati gospodarsku aktivnost unutar svojih granica [@rodrik2011]. Posljedica nije da je stroža regulacija uvijek pogrešna, nego da njezin domet ovisi o tome mogu li se troškovi prebaciti na aktere koji se ne mogu lako preseliti i koliko je vjerojatno da će usklađena pravila na razini Europske unije ili šire smanjiti prostor za takvu regulatornu arbitrazu.
 
+Zarobljavanje rijetko ostaje posao jednog regulatora i jedne industrije. Vremenom se oko trajne politike sklapa širi i stabilniji savez, koji se u literaturi naziva **željeznim trokutom** (*iron triangle*).
+
 ::: {#def-zeljezni-trokut}
 **Željezni trokut** (*iron triangle*) je stabilan, samopojačavajući savez između interesnih skupina (lobija), nadležnih parlamentarnih odbora i relevantnog dijela birokracije, koji dijele interes za održavanjem određene politike i koji postaje izuzetno otporan na vanjske reforme.
 :::
 
-Vremenom se između lobija, parlamentarnih odbora i dijelova birokracije stvaraju stabilni savezi, tzv. **željezni trokuti** (*iron triangles*), koji postaju izuzetno otporni na vanjske reforme. Budući da su ti savezi najtješnje vezani uz proračune i ovlasti pojedinih službi, njihovu mehaniku detaljnije razrađujemo u poglavlju o birokraciji.
+Budući da su ti savezi najtješnje vezani uz proračune i ovlasti pojedinih službi, njihovu mehaniku detaljnije razrađujemo u poglavlju o birokraciji.
 
 ## Zašto interesne skupine nisu nužno štetne
 
