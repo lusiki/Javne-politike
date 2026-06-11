@@ -364,3 +364,23 @@ figcaption strong:first-child,
 caption strong:first-child {
   color: #C8615A !important;
 }
+
+// =============================================================
+// OJS upravljačka ploča — tamne varijante tokena
+// (svjetliji verdigris i cream tragovi na toploj sepiji)
+// =============================================================
+:root,
+body {
+  --ojs-panel-border: rgba(232, 223, 208, 0.20);
+  --ojs-panel-bg:     rgba(232, 223, 208, 0.04);
+  --ojs-row-rule:     rgba(232, 223, 208, 0.14);
+  --ojs-caption:      #C8985E;
+  --ojs-label:        #E8DFD0;
+  --ojs-track:        rgba(232, 223, 208, 0.22);
+  --ojs-fill:         #7FA08F;
+  --ojs-thumb:        #7FA08F;
+  --ojs-thumb-ring:   rgba(0, 0, 0, 0.45);
+  --ojs-value:        #9FC0AF;
+  --ojs-value-bg:     rgba(232, 223, 208, 0.07);
+  --ojs-paper:        #1F1A14;
+}

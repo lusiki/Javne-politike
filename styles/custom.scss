@@ -1766,43 +1766,272 @@ h2.sc-cover-title,
 @import "atlas";
 
 // =============================================================
-// OJS interaktivne vizualizacije (Observable Plot + Inputs)
-// Klizači ("moving sidebars") i tekst u grafovima koriste
-// Statecraft font (Public Sans) i brand boje umjesto ad-hoc paletu.
+// OJS interaktivne kontrole — "upravljačka ploča"
+// Inputs.form (anonimni div koji sadrži form.oi-* redove) postaje
+// uokvirena ploča parametara s arhivskim natpisom; klizači dobivaju
+// brand traku s ispunom, broj postaje tiha mono-pločica (i dalje
+// se može upisati točna vrijednost), select dobiva brand strelicu.
+// Observable klase (oi-XXXXXX) su hashirane po verziji biblioteke,
+// pa ciljamo strukturno preko [class^="oi-"] — preživljava nadogradnje.
+// Ispunu trake (--fill) i gumb ↺ dodaje modul 10 u book-include.html.
 // =============================================================
+
+:root {
+  --ojs-panel-border: #{$sc-rule};
+  --ojs-panel-bg:     rgba(28, 25, 22, 0.025);
+  --ojs-row-rule:     rgba(28, 25, 22, 0.12);
+  --ojs-caption:      #{$sc-ochre-deep};
+  --ojs-label:        #{$brand-navy};
+  --ojs-track:        rgba(28, 25, 22, 0.18);
+  --ojs-fill:         #{$brand-gold};
+  --ojs-thumb:        #{$brand-gold};
+  --ojs-thumb-ring:   rgba(28, 25, 22, 0.25);
+  --ojs-value:        #{$sc-verdigris-deep};
+  --ojs-value-bg:     rgba(28, 25, 22, 0.05);
+  --ojs-paper:        #{$brand-cream};
+}
+
+// Tipografija — sve OJS kontrole i Plot grafovi koriste Public Sans
 .observablehq,
 .observablehq--inspect,
-form.observablehq--input,
-.observablehq label,
-.observablehq input,
-.observablehq output,
+form[class^="oi-"],
+form[class^="oi-"] label,
+form[class^="oi-"] output,
 .cell-output .observablehq {
   font-family: $brand-font-sans;
-}
-
-.observablehq label,
-.observablehq--label,
-form.observablehq--input > label {
-  font-family: $brand-font-sans;
-  font-size: 0.9rem;
-  font-weight: 500;
-  color: $brand-charcoal;
-}
-
-.observablehq output,
-.observablehq--input output {
-  font-family: $brand-font-sans;
-  font-variant-numeric: tabular-nums lining-nums;
-  color: $brand-gold;
-}
-
-.observablehq input[type="range"] {
-  accent-color: $brand-gold;
 }
 
 .cell-output svg[class^="plot-"] text,
 .cell-output figure svg text {
   font-family: $brand-font-sans;
+}
+
+// --- Ploča: Inputs.form vraća anonimni <div> koji izravno
+//     sadrži pod-forme (form.oi-*) — taj div postaje ploča.
+//     Isključujemo Inputs.table (form s quarto-ojs-table-fixup).
+div:has(> form[class^="oi-"]):not(:has(> .quarto-ojs-table-fixup)) {
+  position: relative;
+  display: block;
+  width: auto;
+  max-width: min(640px, 100%);
+  margin: 1.4rem 0 1.1rem;
+  padding: 0.85rem 1.1rem 0.95rem;
+  border: 1px solid var(--ojs-panel-border);
+  border-radius: 4px;
+  background: var(--ojs-panel-bg);
+  box-sizing: border-box;
+
+  &::before {
+    content: "Parametri simulacije";
+    display: block;
+    font-family: $brand-font-sans;
+    font-size: 0.66rem;
+    font-weight: 700;
+    line-height: 1;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--ojs-caption);
+    padding: 0 9rem 0.55rem 0;   // prostor za gumb ↺ gore desno
+    margin-bottom: 0.35rem;
+    border-bottom: 1px solid var(--ojs-row-rule);
+  }
+}
+
+// --- Redovi: pod-forme unutar ploče ----------------------------
+div:has(> form[class^="oi-"]) > form[class^="oi-"] {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  width: auto;
+  max-width: none;
+  margin: 0;
+  padding: 0.45rem 0;
+
+  + form {
+    border-top: 1px dashed var(--ojs-row-rule);
+  }
+}
+
+// Labela — puna širina umjesto Observable rezanja na 120 px
+form[class^="oi-"] > label {
+  flex: 0 0 232px;
+  width: auto;
+  margin-right: 0;
+  padding: 0;
+  white-space: normal;
+  overflow: visible;
+  text-overflow: clip;
+  font-size: 0.86rem;
+  font-weight: 500;
+  line-height: 1.35;
+  color: var(--ojs-label);
+}
+
+// Unutarnji omotač (oi-XXXXXX-input) drži klizač + broj
+form[class^="oi-"] div[class$="-input"] {
+  display: flex;
+  align-items: center;
+  flex: 1;
+  min-width: 0;
+  gap: 12px;
+  width: auto;
+}
+
+// --- Klizač -----------------------------------------------------
+form[class^="oi-"] input[type="range"] {
+  -webkit-appearance: none;
+  appearance: none;
+  flex: 1;
+  min-width: 0;
+  height: 22px;
+  margin: 0;
+  padding: 0;
+  background: transparent;
+  cursor: pointer;
+  accent-color: $brand-gold;   // fallback ako appearance ne prođe
+  --fill: 50%;
+
+  &::-webkit-slider-runnable-track {
+    height: 4px;
+    border-radius: 2px;
+    background: linear-gradient(to right,
+      var(--ojs-fill) 0%, var(--ojs-fill) var(--fill),
+      var(--ojs-track) var(--fill), var(--ojs-track) 100%);
+  }
+  &::-moz-range-track {
+    height: 4px;
+    border-radius: 2px;
+    background: var(--ojs-track);
+  }
+  &::-moz-range-progress {
+    height: 4px;
+    border-radius: 2px;
+    background: var(--ojs-fill);
+  }
+  &::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 15px;
+    height: 15px;
+    margin-top: -5.5px;
+    border-radius: 50%;
+    background: var(--ojs-thumb);
+    border: 2.5px solid var(--ojs-paper);
+    box-shadow: 0 0 0 1px var(--ojs-thumb-ring), 0 1px 3px var(--ojs-thumb-ring);
+    transition: transform 0.15s ease;
+  }
+  &:hover::-webkit-slider-thumb { transform: scale(1.25); }
+  &::-moz-range-thumb {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: var(--ojs-thumb);
+    border: 2.5px solid var(--ojs-paper);
+    box-shadow: 0 0 0 1px var(--ojs-thumb-ring), 0 1px 3px var(--ojs-thumb-ring);
+    transition: transform 0.15s ease;
+  }
+  &:hover::-moz-range-thumb { transform: scale(1.25); }
+  &:focus-visible {
+    outline: 2px solid $sc-ochre;
+    outline-offset: 3px;
+  }
+}
+
+// --- Brojčana pločica (ostaje upisiva, bez spinner strelica) ----
+form[class^="oi-"] input[type="number"] {
+  flex: 0 0 80px;
+  width: 80px;
+  margin: 0;
+  padding: 3px 8px;
+  border: 1px solid transparent;
+  border-radius: 3px;
+  background: var(--ojs-value-bg);
+  font-family: $brand-font-mono;
+  font-variant-numeric: tabular-nums lining-nums;
+  font-size: 0.8rem;
+  text-align: right;
+  color: var(--ojs-value);
+  -moz-appearance: textfield;
+  appearance: textfield;
+
+  &::-webkit-inner-spin-button,
+  &::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+  &:focus {
+    outline: none;
+    border-color: $brand-gold;
+    background: var(--ojs-paper);
+  }
+  &.ojs-pulse {
+    animation: ojs-value-pulse 0.45s ease;
+  }
+}
+
+@keyframes ojs-value-pulse {
+  0%   { box-shadow: 0 0 0 3px rgba(200, 152, 94, 0.45); }
+  100% { box-shadow: 0 0 0 0 rgba(200, 152, 94, 0); }
+}
+
+// --- Select (npr. preferencije birača u pogl. 6) ----------------
+form[class^="oi-"] select {
+  -webkit-appearance: none;
+  appearance: none;
+  flex: 1;
+  min-width: 0;
+  margin: 0;
+  padding: 5px 30px 5px 10px;
+  border: 1px solid var(--ojs-panel-border);
+  border-radius: 3px;
+  background-color: var(--ojs-paper);
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 10 6'%3E%3Cpath d='M1 1l4 4 4-4' fill='none' stroke='%234A6B5C' stroke-width='1.5'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 9px center;
+  background-size: 10px;
+  font-family: $brand-font-sans;
+  font-size: 0.85rem;
+  color: var(--ojs-label);
+  cursor: pointer;
+
+  &:focus-visible {
+    outline: 2px solid $sc-ochre;
+    outline-offset: 2px;
+  }
+}
+
+// --- Gumb ↺ (ubacuje ga book-include.html, modul 10) ------------
+button.ojs-reset {
+  position: absolute;
+  top: 0.72rem;
+  right: 1rem;
+  border: none;
+  background: transparent;
+  padding: 2px 4px;
+  font-family: $brand-font-sans;
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  color: $brand-slate;
+  cursor: pointer;
+  transition: color 0.15s ease;
+
+  &:hover { color: $brand-gold; }
+  &:focus-visible {
+    outline: 2px solid $sc-ochre;
+    outline-offset: 2px;
+  }
+}
+
+// --- Uski ekrani: labela iznad klizača --------------------------
+@media (max-width: 620px) {
+  div:has(> form[class^="oi-"]) > form[class^="oi-"] {
+    flex-wrap: wrap;
+    gap: 6px 14px;
+  }
+  form[class^="oi-"] > label {
+    flex: 1 1 100%;
+  }
 }
 
 // =============================================================
