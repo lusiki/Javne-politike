@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="hr-HR" xml:lang="hr-HR"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.7.32">
+<meta name="generator" content="quarto-1.8.25">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -89,18 +89,19 @@ div.csl-indent {
 <link href="../images/favicon.ico" rel="icon">
 <script src="../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
 <script src="../site_libs/quarto-html/popper.min.js"></script>
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-0d728faf902e423debf4a13c485d6652.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark-b7b980379163672951778461beb15b4e.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-0d728faf902e423debf4a13c485d6652.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-449968a3765ca8978212108bc9193594.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark-8b585b09d32f54382c529101eb51de16.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-449968a3765ca8978212108bc9193594.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-3af5e84ba4bb5e9770306c6e0ca03b96.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../site_libs/bootstrap/bootstrap-dark-0975f305a449ff7f77f2cdbd799c46a2.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="light">
-<link href="../site_libs/bootstrap/bootstrap-3af5e84ba4bb5e9770306c6e0ca03b96.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-a00b53b939393526804b1acd56b1a7ef.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-dark-fe920ae76a150ba39f1ee720bce20cd2.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-a00b53b939393526804b1acd56b1a7ef.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -154,7 +155,7 @@ const typesetMath = (el) => {
     var macros = [];
     for (var i = 0; i < mathElements.length; i++) {
       var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN") {
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
         window.katex.render(texText.data, mathElements[i], {
           displayMode: mathElements[i].classList.contains('display'),
           throwOnError: false,
@@ -342,6 +343,8 @@ window.Quarto = {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
+    <a href="../index.html" class="navbar-brand navbar-brand-logo">
+    </a>
     <a class="navbar-brand" href="../index.html">
     <span class="navbar-title">Sve što želite znati o odnosu države i tržišta</span>
     </a>
@@ -426,10 +429,14 @@ window.Quarto = {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
   <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
-        <div class="sidebar-tools-main">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header sidebar-header-stacked">
+      <a href="../index.html" class="sidebar-logo-link">
+      </a>
+      <div class="sidebar-tools-main">
     <a href="../pdf/Javne-politike.pdf" title="Preuzmi PDF (radna verzija)" class="quarto-navigation-tool px-1" aria-label="Preuzmi PDF (radna verzija)"><i class="bi bi-file-earmark-pdf"></i></a>
     <div id="quarto-search" class="quarto-navigation-tool px-1" title="Search"></div>
 </div>
+      </div>
     <div class="sidebar-menu-container"> 
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
@@ -707,7 +714,7 @@ Boardman, Anthony E., David H. Greenberg, Aidan R. Vining, i David L. Weimer. 20
 <div id="def-diskontna-stopa" class="theorem definition">
 <p><span class="theorem-title"><strong>Definicija 20.1</strong></span> <strong>Diskontna stopa</strong> je stopa kojom se budući iznosi svode na sadašnju vrijednost, pa odražava koliko manje vrijedi korist ili trošak koji nastaje kasnije u odnosu na isti iznos danas; što je stopa viša, to udaljena buduća korist manje teži u izračunu, zbog čega izbor stope presudno oblikuje ocjenu dugoročnih projekata.</p>
 </div>
-<p>Završni korak odnosi se na donošenje odluke i interpretaciju rezultata, za što se najčešće koristi kriterij neto sadašnje vrijednosti.</p>
+<p>Jednom kada su sve buduće koristi i troškovi svedeni na sadašnji trenutak, treba ih sažeti u jedan broj koji kaže isplati li se projekt uopće provesti. Tu ulogu nosi <strong>neto sadašnja vrijednost</strong>.</p>
 <div id="def-npv" class="theorem definition">
 <p><span class="theorem-title"><strong>Definicija 20.2</strong></span> <strong>Neto sadašnja vrijednost (NPV)</strong> je zbroj svih budućih koristi i troškova projekta, pri čemu se svaki budući iznos diskontira na sadašnji trenutak koeficijentom <span class="math inline">\(1/(1+r)^t\)</span>, gdje je <span class="math inline">\(r\)</span> diskontna stopa, a <span class="math inline">\(t\)</span> broj godina udaljenosti. Projekt je društveno opravdan ako je NPV pozitivan.</p>
 </div>
@@ -728,10 +735,10 @@ HM Treasury. 2022. <em>The Green Book: Central Government Guidance on Appraisal 
 <div class="cell">
 <details class="code-fold hidden">
 <summary>Prikaži kod</summary>
-<div class="sourceCode cell-code hidden" id="cb1" data-startfrom="66" data-source-offset="0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 65;"><span id="cb1-66"><a href="#cb1-66" aria-hidden="true" tabindex="-1"></a>viewof npv_controls <span class="op">=</span> Inputs<span class="op">.</span><span class="fu">form</span>({</span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb1" data-startfrom="66" data-source-offset="0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 65;"><span id="cb1-66"><a href="#cb1-66" aria-hidden="true" tabindex="-1"></a>viewof npv_controls <span class="op">=</span> Inputs<span class="op">.</span><span class="fu">form</span>({</span>
 <span id="cb1-67"><a href="#cb1-67" aria-hidden="true" tabindex="-1"></a>  <span class="dt">r</span><span class="op">:</span> Inputs<span class="op">.</span><span class="fu">range</span>([<span class="dv">0</span><span class="op">,</span> <span class="fl">0.12</span>]<span class="op">,</span> {<span class="dt">value</span><span class="op">:</span> <span class="fl">0.05</span><span class="op">,</span> <span class="dt">step</span><span class="op">:</span> <span class="fl">0.005</span><span class="op">,</span> <span class="dt">label</span><span class="op">:</span> <span class="st">"Diskontna stopa (r):"</span>})<span class="op">,</span></span>
 <span id="cb1-68"><a href="#cb1-68" aria-hidden="true" tabindex="-1"></a>  <span class="dt">b</span><span class="op">:</span> Inputs<span class="op">.</span><span class="fu">range</span>([<span class="dv">10</span><span class="op">,</span> <span class="dv">50</span>]<span class="op">,</span>  {<span class="dt">value</span><span class="op">:</span> <span class="dv">30</span><span class="op">,</span>   <span class="dt">step</span><span class="op">:</span> <span class="dv">1</span><span class="op">,</span>     <span class="dt">label</span><span class="op">:</span> <span class="st">"Godišnja neto korist (mil. €):"</span>})</span>
-<span id="cb1-69"><a href="#cb1-69" aria-hidden="true" tabindex="-1"></a>})</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb1-69"><a href="#cb1-69" aria-hidden="true" tabindex="-1"></a>})</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </details>
 <div class="cell-output cell-output-display">
 <div id="ojs-cell-1" data-nodetype="declaration">
@@ -742,7 +749,7 @@ HM Treasury. 2022. <em>The Green Book: Central Government Guidance on Appraisal 
 <div class="cell">
 <details class="code-fold hidden">
 <summary>Prikaži kod</summary>
-<div class="sourceCode cell-code hidden" id="cb2" data-startfrom="74" data-source-offset="0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 73;"><span id="cb2-74"><a href="#cb2-74" aria-hidden="true" tabindex="-1"></a>npv_r <span class="op">=</span> npv_controls<span class="op">.</span><span class="at">r</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb2" data-startfrom="74" data-source-offset="0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 73;"><span id="cb2-74"><a href="#cb2-74" aria-hidden="true" tabindex="-1"></a>npv_r <span class="op">=</span> npv_controls<span class="op">.</span><span class="at">r</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </details>
 <div class="cell-output cell-output-display">
 <div id="ojs-cell-2" data-nodetype="declaration">
@@ -753,7 +760,7 @@ HM Treasury. 2022. <em>The Green Book: Central Government Guidance on Appraisal 
 <div class="cell">
 <details class="code-fold hidden">
 <summary>Prikaži kod</summary>
-<div class="sourceCode cell-code hidden" id="cb3" data-startfrom="79" data-source-offset="0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 78;"><span id="cb3-79"><a href="#cb3-79" aria-hidden="true" tabindex="-1"></a>npv_b <span class="op">=</span> npv_controls<span class="op">.</span><span class="at">b</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb3" data-startfrom="79" data-source-offset="0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 78;"><span id="cb3-79"><a href="#cb3-79" aria-hidden="true" tabindex="-1"></a>npv_b <span class="op">=</span> npv_controls<span class="op">.</span><span class="at">b</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </details>
 <div class="cell-output cell-output-display">
 <div id="ojs-cell-3" data-nodetype="declaration">
@@ -764,7 +771,7 @@ HM Treasury. 2022. <em>The Green Book: Central Government Guidance on Appraisal 
 <div class="cell">
 <details class="code-fold hidden">
 <summary>Prikaži kod</summary>
-<div class="sourceCode cell-code hidden" id="cb4" data-startfrom="87" data-source-offset="0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 86;"><span id="cb4-87"><a href="#cb4-87" aria-hidden="true" tabindex="-1"></a>{</span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb4" data-startfrom="87" data-source-offset="0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 86;"><span id="cb4-87"><a href="#cb4-87" aria-hidden="true" tabindex="-1"></a>{</span>
 <span id="cb4-88"><a href="#cb4-88" aria-hidden="true" tabindex="-1"></a>  <span class="kw">const</span> cost <span class="op">=</span> <span class="dv">100</span><span class="op">;</span>   <span class="co">// početno ulaganje (mil. €)</span></span>
 <span id="cb4-89"><a href="#cb4-89" aria-hidden="true" tabindex="-1"></a>  <span class="kw">const</span> years <span class="op">=</span> <span class="dv">4</span><span class="op">;</span>    <span class="co">// trajanje koristi</span></span>
 <span id="cb4-90"><a href="#cb4-90" aria-hidden="true" tabindex="-1"></a>  <span class="kw">const</span> b <span class="op">=</span> npv_b<span class="op">;</span></span>
@@ -812,7 +819,7 @@ HM Treasury. 2022. <em>The Green Book: Central Government Guidance on Appraisal 
 <span id="cb4-132"><a href="#cb4-132" aria-hidden="true" tabindex="-1"></a>        <span class="dt">fill</span><span class="op">:</span> <span class="st">"#1C1916"</span><span class="op">,</span> <span class="dt">fontSize</span><span class="op">:</span> <span class="dv">13</span><span class="op">,</span> <span class="dt">fontWeight</span><span class="op">:</span> <span class="dv">700</span><span class="op">,</span> <span class="dt">dy</span><span class="op">:</span> cur<span class="op">.</span><span class="at">npv</span> <span class="op">&gt;=</span> <span class="dv">0</span> <span class="op">?</span> <span class="op">-</span><span class="dv">16</span> <span class="op">:</span> <span class="dv">18</span><span class="op">,</span> <span class="dt">textAnchor</span><span class="op">:</span> <span class="st">"middle"</span>})</span>
 <span id="cb4-133"><a href="#cb4-133" aria-hidden="true" tabindex="-1"></a>    ]<span class="op">.</span><span class="fu">filter</span>(<span class="bu">Boolean</span>)</span>
 <span id="cb4-134"><a href="#cb4-134" aria-hidden="true" tabindex="-1"></a>  })<span class="op">;</span></span>
-<span id="cb4-135"><a href="#cb4-135" aria-hidden="true" tabindex="-1"></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb4-135"><a href="#cb4-135" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </details>
 <div id="fig-npv-diskontna" class="cell-output cell-output-display quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
@@ -1643,13 +1650,14 @@ window._ojs.runtime.interpretFromScriptTags();
       e.clearSelection();
     }
     const getTextToCopy = function(trigger) {
-        const codeEl = trigger.previousElementSibling.cloneNode(true);
-        for (const childEl of codeEl.children) {
-          if (isCodeAnnotation(childEl)) {
-            childEl.remove();
-          }
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
         }
-        return codeEl.innerText;
+      }
+      return codeEl.innerText;
     }
     const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
       text: getTextToCopy
@@ -2061,7 +2069,7 @@ window._ojs.runtime.interpretFromScriptTags();
       </a>
   </div>
 </nav><div class="modal fade" id="quarto-embedded-source-code-modal" tabindex="-1" aria-labelledby="quarto-embedded-source-code-modal-label" aria-hidden="true"><div class="modal-dialog modal-dialog-scrollable"><div class="modal-content"><div class="modal-header"><h5 class="modal-title" id="quarto-embedded-source-code-modal-label">Source Code</h5><button class="btn-close" data-bs-dismiss="modal"></button></div><div class="modal-body"><div class="">
-<div class="sourceCode" id="cb5" data-shortcodes="false"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb5" data-shortcodes="false"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
 <span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="an">title:</span><span class="co"> "Cost-benefit analiza i evaluacija javnih politika"</span></span>
 <span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
 <span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a></span>
@@ -2101,7 +2109,7 @@ window._ojs.runtime.interpretFromScriptTags();
 <span id="cb5-38"><a href="#cb5-38" aria-hidden="true" tabindex="-1"></a>**Diskontna stopa** je stopa kojom se budući iznosi svode na sadašnju vrijednost, pa odražava koliko manje vrijedi korist ili trošak koji nastaje kasnije u odnosu na isti iznos danas; što je stopa viša, to udaljena buduća korist manje teži u izračunu, zbog čega izbor stope presudno oblikuje ocjenu dugoročnih projekata.</span>
 <span id="cb5-39"><a href="#cb5-39" aria-hidden="true" tabindex="-1"></a>:::</span>
 <span id="cb5-40"><a href="#cb5-40" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb5-41"><a href="#cb5-41" aria-hidden="true" tabindex="-1"></a>Završni korak odnosi se na donošenje odluke i interpretaciju rezultata, za što se najčešće koristi kriterij neto sadašnje vrijednosti.</span>
+<span id="cb5-41"><a href="#cb5-41" aria-hidden="true" tabindex="-1"></a>Jednom kada su sve buduće koristi i troškovi svedeni na sadašnji trenutak, treba ih sažeti u jedan broj koji kaže isplati li se projekt uopće provesti. Tu ulogu nosi **neto sadašnja vrijednost**.</span>
 <span id="cb5-42"><a href="#cb5-42" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb5-43"><a href="#cb5-43" aria-hidden="true" tabindex="-1"></a>::: {#def-npv}</span>
 <span id="cb5-44"><a href="#cb5-44" aria-hidden="true" tabindex="-1"></a>**Neto sadašnja vrijednost (NPV)** je zbroj svih budućih koristi i troškova projekta, pri čemu se svaki budući iznos diskontira na sadašnji trenutak koeficijentom $1/(1+r)^t$, gdje je $r$ diskontna stopa, a $t$ broj godina udaljenosti. Projekt je društveno opravdan ako je NPV pozitivan.</span>
@@ -2274,7 +2282,7 @@ window._ojs.runtime.interpretFromScriptTags();
 <span id="cb5-219"><a href="#cb5-219" aria-hidden="true" tabindex="-1"></a>::: {.callout-vjezba}</span>
 <span id="cb5-220"><a href="#cb5-220" aria-hidden="true" tabindex="-1"></a>Projekt zahtijeva ulaganje od 100 milijuna eura danas i donosi neto korist od 30 milijuna eura godišnje tijekom sljedeće četiri godine. (a) Izračunajte neto sadašnju vrijednost projekta uz diskontnu stopu od 5 %. (b) Ponovite izračun uz stopu od 10 % i usporedite rezultate. (c) Pri kojoj se približno diskontnoj stopi neto sadašnja vrijednost izjednačava s nulom i kako se taj prag naziva? Objasnite zašto je projekt s koristima koje sežu daleko u budućnost osjetljiviji na izbor diskontne stope.</span>
 <span id="cb5-221"><a href="#cb5-221" aria-hidden="true" tabindex="-1"></a>:::</span>
-</code><button title="Copy to Clipboard" class="code-copy-button" data-in-quarto-modal=""><i class="bi"></i></button></pre></div>
+</code></pre></div><button title="Copy to Clipboard" class="code-copy-button" data-in-quarto-modal=""><i class="bi"></i></button></div>
 </div></div></div></div></div>
 </div> <!-- /content -->
 <footer class="footer">
