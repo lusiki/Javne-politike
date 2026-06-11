@@ -382,6 +382,24 @@ div.callout-caution {
 }
 
 // =============================================================
+// In-text varijable — kada se simbol s klizača interaktivnog grafa
+// spomene u tekstu (osobito u bloku "Što isprobati"), dobiva suptilan
+// monospace token da ga čitatelj odmah poveže s odgovarajućim klizačem.
+// Upotreba u .qmd:   ... povećajte broj potrošača ([n]{.var}) ...
+// =============================================================
+.var {
+  font-family: $brand-font-mono;
+  font-size: 0.86em;
+  font-weight: 500;
+  font-style: normal;
+  padding: 0.05em 0.36em;
+  border-radius: 3px;
+  background: rgba($brand-gold, 0.13);
+  color: $sc-verdigris-deep;
+  white-space: nowrap;
+}
+
+// =============================================================
 // Okviri poglavlja — "Vodič kroz poglavlje" (numerirana pitanja) i "Sažetak".
 // Suptilno tonirane ploče koje izdvajaju početak i kraj poglavlja.
 // Upotreba: ## Vodič kroz poglavlje {.vodic-panel} / ## Sažetak {.sazetak-panel}
@@ -2190,5 +2208,32 @@ div[id^="def-"],
   .callout-vjezba > :first-child::before {
     white-space: normal;
   }
+}
+
+// 7) Kutije s unutarnjim marginalnim citatom ili fusnotom — Quarto ih
+//    promovira u `page-columns page-full`, pa im rub i pozadina prelaze
+//    preko pune širine stranice i „iscure" u desni marginalni gutter.
+//    Vežemo takvu kutiju na body stupac, a unutarnji marginalni sadržaj
+//    (citat / fusnota) vraćamo u tok kutije umjesto u marginu.
+.callout-praksa.page-columns,
+.callout-empirija.page-columns,
+.callout-vjezba.page-columns,
+.definition.page-columns,
+div[id^="def-"].page-columns,
+div.callout.page-columns {
+  grid-column: body-content-start / body-content-end !important;
+}
+
+.callout-praksa .column-margin,
+.callout-empirija .column-margin,
+.callout-vjezba .column-margin,
+.definition .column-margin,
+div[id^="def-"] .column-margin,
+div.callout .column-margin {
+  grid-column: body-content-start / body-content-end !important;
+  width: auto;
+  margin-top: 0.5rem;
+  font-size: 0.82em;
+  color: $brand-slate;
 }
 
