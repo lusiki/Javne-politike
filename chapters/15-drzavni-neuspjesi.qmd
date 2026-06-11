@@ -155,7 +155,7 @@ Pojam državnih neuspjeha izravno je povezan s dizajnom javnih politika. Dobar d
 
 Neuspjesi države stoga nisu samo prepreka provedbi, nego moraju biti ugrađeni u sam proces dizajna. Dobra javna politika mora biti dizajnirana za stvarni, a ne idealni svijet. Mora pretpostaviti da su informacije ograničene, da akteri reagiraju na poticaje, da administracija ima kapacitetska ograničenja, da interesne skupine pokušavaju utjecati na pravila i da politički ciklus stvara pritisak na kratkoročne odluke.
 
-### Test državnog neuspjeha
+## Test državnog neuspjeha
 
 U praktičnom smislu, svaka kvalitetna javna politika trebala bi proći svojevrsni **test državnog neuspjeha**. Taj test ne služi tome da se politika unaprijed odbaci, nego da se unaprijed prepoznaju rizici. Pitanja se mogu sažeti u sljedećih osam točaka.
 
