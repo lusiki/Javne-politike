@@ -37,13 +37,11 @@ Međutim, slabost Weberova modela proizlazi iz iste logike koja mu daje snagu. P
 
 Weberov model štiti od kaosa, klijentelizma i privatizacije javne vlasti, ali može stvoriti administrativnu ukočenost. Zato je važno razlikovati Weberov idealni tip birokracije od loše birokratske prakse. Problem nastaje kada se sredstva pretvore u cilj, kada pravila više ne služe javnom interesu, nego javni interes postaje podređen pravilima.
 
-### Razdvajanje politike i uprave
-
 U klasičnoj javnoj upravi važna je i ideja razdvajanja politike i administracije, koja se često povezuje s Woodrowom Wilsonom [@wilson1887]. Osnovna je ideja da političari i javna uprava imaju različite uloge. Političari trebaju određivati vrijednosne ciljeve poput toga što društvo želi postići, koje javne usluge želi financirati i kakvu razinu poreza prihvaća. Javna uprava trebala bi te odluke stručno, zakonito i nepristrano provoditi. Prema ovom modelu, politika odgovara na pitanje „što treba učiniti?", a administracija na pitanje „kako to provesti?".
 
 Ovaj model ima važnu normativnu funkciju jer štiti javnu upravu od pretjerane politizacije. Ako se svaka promjena vlasti pretvori u potpunu zamjenu administracije, država gubi kontinuitet, stručnost i institucionalno pamćenje. Međutim, u praksi je granica između politike i administracije često nejasna. Birokrati ne provode samo odluke, nego ih često i oblikuju jer pripremaju nacrte zakona, pišu pravilnike, izrađuju strategije, predlažu proračunske alokacije, definiraju kriterije natječaja i tumače propise. Tko definira kriterije, rokove, procedure i iznimke, taj često utječe i na raspodjelu koristi i troškova.
 
-### Model meritokratske državne službe
+## Meritokratska državna služba
 
 Treći važan klasični model jest model **meritokratske državne službe**. Prema tom modelu, zapošljavanje, napredovanje i nagrađivanje u javnoj upravi trebaju se temeljiti na sposobnostima, znanju, iskustvu i rezultatima, a ne na političkoj lojalnosti, obiteljskim vezama ili klijentelističkim mrežama. Meritokratski model nastaje kao odgovor na sustave u kojima je javna uprava bila politički plijen, sustave u kojima pobjednici izbora dijele radna mjesta svojim pristašama, što vodi slaboj profesionalnosti, čestim kadrovskim promjenama i niskoj kvaliteti javnih usluga.
 
@@ -58,8 +56,6 @@ Pretpostavka da kvaliteta birokracije utječe na razvoj nije samo teorijska. Eva
 Teorija javnog izbora polazi iz drugačije perspektive. Ona ne odbacuje potrebu za državom, ali odbacuje pretpostavku da država automatski djeluje u javnom interesu. U središtu analize nisu samo formalne funkcije države, nego ponašanje konkretnih aktera, političara, birokrata, birača, interesnih skupina i regulatora.
 
 Za teoriju javnog izbora ključno je pitanje poticaja. Ako političari žele reizbor, birači žele koristi, interesne skupine žele povlastice, a birokrati žele veće proračune i veću institucionalnu važnost, tada javne politike ne možemo razumjeti samo kroz pojam javnog interesa. Moramo analizirati tko dobiva, tko plaća, tko ima informacije, tko kontrolira provedbu i tko ima poticaj za promjenu ili očuvanje postojećeg stanja.
-
-### Niskanenov model birokrata kao maksimizatora proračuna
 
 Najpoznatiji model birokracije u teoriji javnog izbora razvio je William A. Niskanen [@niskanen1971]. **Niskanenov model** postavlja jednostavno, ali vrlo utjecajno pitanje o tome što birokrati maksimiziraju ako ne maksimiziraju profit.
 
@@ -158,7 +154,7 @@ Ako želimo učinkovitu državu, nije dovoljno pitati koliko novca neka instituc
 Niskanenova logika vidljiva je u načinu na koji javne agencije pregovaraju o proračunu. Ondje gdje agencija ima monopol nad uslugom i bolje informacije od ministarstva financija, sustavno traži više sredstava nego što bi bilo društveno optimalno, a uštede rijetko nudi sama. Reforme u nizu zemalja OECD-a pokušale su taj poticaj obrnuti uvođenjem proračuna prema rezultatima, vanjskih revizija i gornjih granica troška unutar kojih agencija sama mora pronaći učinkovitije rješenje. Iskustvo pokazuje da takvi mehanizmi smanjuju, ali ne uklanjaju pritisak na rast proračuna jer informacijska prednost i dalje ostaje na strani agencije.
 :::
 
-### Asimetrija informacija i principal–agent problem
+## Asimetrija informacija i principal–agent problem
 
 Niskanen i Dunleavy gledaju birokraciju izvana, kao tijelo koje pregovara o proračunu. No mnogi se njezini problemi vide tek kad uđemo u sam odnos delegiranja, u kojem jedna strana radi za drugu, a ne može je se savršeno nadzirati. Taj se odnos u ekonomiji naziva **principal–agent problemom**.
 
@@ -178,25 +174,19 @@ Upravo zato što se odgovornost u tom lancu lako rasprši, postaje važno razlik
 
 Birokracija često lakše prikazuje inpute i outpute nego ishode, pa su transparentnost, revizija, evaluacija i otvoreni podaci ključni jer smanjuju informacijsku prednost agenta. No samo mjerenje nije dovoljno, jer loše dizajnirani pokazatelji mogu potaknuti pogrešno ponašanje. Ako se škola vrednuje samo po broju prolazaka, može snižavati kriterije, a ako se sud vrednuje samo po broju riješenih predmeta, može se zanemariti kvaliteta presuda.
 
-### Birokracija i rentijerstvo
+## Birokracija u mreži interesa
 
-Birokracija igra posebnu ulogu u rentijerstvu — procesu u kojemu pojedinci i organizirane skupine nastoje ostvariti dobit putem administrativnih povlastica umjesto stvaranjem vrijednosti. Mehaniku rentijerstva i njezine empirijske razmjere izlažemo u cijelosti u poglavlju o interesnim skupinama (pogl. 8). Ovdje je dovoljno primijetiti da birokracija nije samo pasivni okvir za taj proces — ona izrađuje pravila, dodjeljuje dozvole, piše natječaje i tumači uvjete, pa interesne skupine lobiraju i prema administraciji, a ne samo prema političarima. Stvarna borba za rentu ponekad se ne vodi u parlamentu, nego u pravilniku, kriteriju natječaja ili tehničkom standardu [@tullock1967; @krueger1974].
+Niskanenov i principal–agent model gledaju birokraciju kao tijelo koje pregovara o vlastitim resursima. No birokracija je istodobno i čvor kroz koji druge skupine ostvaruju svoje interese, jer ona izrađuje pravila, dodjeljuje dozvole, piše natječaje i tumači uvjete. Tri srodna mehanizma, čiji puni razvoj pripada drugim poglavljima, ovdje se susreću upravo u administraciji.
 
-### Model „željeznog trokuta"
+Prvi je **rentijerstvo**, proces u kojemu pojedinci i organizirane skupine nastoje ostvariti dobit putem administrativnih povlastica umjesto stvaranjem vrijednosti. Mehaniku rentijerstva i njezine empirijske razmjere izlažemo u cijelosti u poglavlju o interesnim skupinama. Ovdje je dovoljno primijetiti da interesne skupine lobiraju i prema administraciji, a ne samo prema političarima, pa se stvarna borba za rentu ponekad ne vodi u parlamentu, nego u pravilniku, kriteriju natječaja ili tehničkom standardu [@tullock1967; @krueger1974].
 
-S modelom rentijerstva usko je povezan koncept **„željeznog trokuta"** (*iron triangle*). Dok rentijerstvo objašnjava zašto pojedine skupine traže posebne koristi, željezni trokut objašnjava kako se takve koristi dugoročno održavaju kroz stabilan odnos između političara, birokracije i interesnih skupina.
+S rentijerstvom je usko povezan koncept **„željeznog trokuta"** (*iron triangle*). Dok rentijerstvo objašnjava zašto pojedine skupine traže posebne koristi, željezni trokut objašnjava kako se takve koristi dugoročno održavaju kroz stabilan odnos između političara, birokracije i interesnih skupina.
 
 U mnogim područjima politike djeluju konkretni akteri s jasno definiranim interesima. Političari žele političku podršku i glasove. Birokracija želi stabilan ili rastući proračun i širenje nadležnosti. Interesne skupine žele subvencije, regulativnu zaštitu ili javne ugovore. U takvom odnosu svaka strana može dobiti nešto za sebe, pa se odnos naziva „željeznim" jer jednom kada se uspostavi postaje vrlo stabilan i otporan na promjene.
 
 Ovaj model pomaže objasniti zašto se mnogi javni programi teško ukidaju. Čak i ako ekonomska analiza pokaže da subvencija više nije učinkovita, svaka od triju strana ima razlog protiviti se njezinu ukidanju. U tom smislu željezni trokut predstavlja jedan od mehanizama državnog neuspjeha. Mjera koja je možda bila opravdana u početku može postati trajni program koji se teško mijenja, čak i kada se okolnosti promijene. Zato je za analizu javnih politika važno pitati ne samo koji je formalni cilj programa, nego i tko ga brani, tko od njega ima koristi i koja institucija živi od njegove provedbe.
 
-### Birokracija i regulatorno zarobljavanje
-
-Srodan fenomen jest **regulatorno zarobljavanje**, u kojemu regulator osnovan radi zaštite javnog interesa postupno počne djelovati u interesu sektora koji nadzire [@stigler1971]. Mehanizme zarobljavanja — informacijski, organizacijski, karijerni i kulturni — u cijelosti razrađujemo u poglavlju o interesnim skupinama (pogl. 8), koje je i prirodni dom te analize. Za birokraciju je ovdje ključna pouka drukčija: nije dovoljno osnovati neovisnog regulatora, nego je potrebno oblikovati sustav poticaja koji dugoročno otežava zarobljavanje kroz transparentne odluke, objavu podataka i sprječavanje sukoba interesa.
-
-### Birokracija i politički proračunski ciklus
-
-Birokracija nije imuna na **politički proračunski ciklus** — tendenciju da vlada povećava rashode uoči izbora, a fiskalnu prilagodbu odgađa na period nakon njih [@nordhaus1975]. Taj model u cijelosti razrađujemo u poglavlju o ustavnoj ekonomici (pogl. 11), gdje je i prirodni dom. Uloga birokracije ovdje je ambivalentna: profesionalna administracija u ministarstvu financija i fiskalnim vijećima može djelovati kao institucionalni stabilizator koji upozorava na dugoročne troškove, ali birokracija može imati i interes podržati rast potrošnje jer joj donosi više resursa i ovlasti. Proračunski je zaključak da fiskalna pravila i neovisna fiskalna vijeća postoje upravo da bi smanjila taj pritisak i povećala vidljivost budućih troškova.
+Srodan fenomen jest **regulatorno zarobljavanje**, u kojemu regulator osnovan radi zaštite javnog interesa postupno počne djelovati u interesu sektora koji nadzire [@stigler1971]. Njegove mehanizme razrađujemo u poglavlju o interesnim skupinama, koje je i prirodni dom te analize. Za birokraciju je ovdje ključna pouka drukčija jer nije dovoljno osnovati neovisnog regulatora, nego je potrebno oblikovati sustav poticaja koji dugoročno otežava zarobljavanje kroz transparentne odluke, objavu podataka i sprječavanje sukoba interesa. Slično tome, birokracija nije imuna ni na **politički proračunski ciklus**, tendenciju da vlada povećava rashode uoči izbora, a fiskalnu prilagodbu odgađa na razdoblje nakon njih [@nordhaus1975]. Uloga birokracije ovdje je ambivalentna jer profesionalna administracija u ministarstvu financija i fiskalnim vijećima može djelovati kao institucionalni stabilizator koji upozorava na dugoročne troškove, ali birokracija može imati i interes podržati rast potrošnje jer joj donosi više resursa i ovlasti. Upravo zato fiskalna pravila i neovisna fiskalna vijeća, koja razrađujemo u poglavlju o ustavnoj ekonomici, postoje da bi smanjila taj pritisak i povećala vidljivost budućih troškova.
 
 ## Cilj nije manje birokracije, nego bolja birokracija
 
@@ -205,6 +195,8 @@ Rasprava o birokraciji često se pojednostavljuje na pitanje treba li država im
 Klasičan, weberovski pogled podsjeća nas da je birokracija važan civilizacijski napredak. Ona štiti građane od samovolje, klijentelizma i nejednakog tretmana. S druge strane, teorija javnog izbora upozorava da birokraciju ne smijemo idealizirati jer javne institucije djeluju unutar sustava poticaja i mogu težiti većim proračunima, širim nadležnostima i očuvanju vlastitog statusa.
 
 Dobra javna uprava zato mora spojiti **profesionalnost** i **odgovornost**. Mora biti dovoljno stabilna da ne postane politički plijen, ali dovoljno otvorena da ne postane samodovoljna. Mora poštovati pravila, ali ne smije zaboraviti rezultate. Zato cilj reformi ne bi trebao biti jednostavno „rezanje birokracije", nego stvaranje bolje birokracije, stručne, digitalizirane, dostupne, brze, transparentne i usmjerene prema građanima.
+
+Ta dva pogleda zato nisu suparnici između kojih biramo, nego dvije provjere koje birokracija mora istodobno proći. Weberovska pitanja glase je li uprava zaštićena od samovolje, počiva li na pravilima i stručnosti te jamči li građaninu jednak tretman. Pitanja teorije javnog izbora glase čije interese institucija zapravo slijedi, tko nadzire njezinu informacijsku prednost i mjeri li se njezin uspjeh ishodima ili tek veličinom proračuna. Uprava koja prođe samo prvi niz pitanja može biti pravična, ali skupa i spora. Uprava koja prođe samo drugi može biti jeftina, ali podložna zarobljavanju. Tek institucija koja izdrži obje provjere ostvaruje ono što teorija naziva državnim kapacitetom, sposobnost države da svoje odluke pretvori u djelotvornu i predvidivu provedbu.
 
 ::: {.sazetak-panel}
 ## Sažetak
