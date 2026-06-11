@@ -43,6 +43,7 @@ S <- list(
     frame_pars = c(4, 12), allow_h3 = FALSE
   ),
   catalogue_chapters = c("12-instrumenti", "15-drzavni-neuspjesi"),
+  deep_dive_chapters = c("14-porezi"),
   vodic_label = "Vodič kroz poglavlje",
   summary_label = "Sažetak",
   word_chapter_max = 4500,
@@ -65,6 +66,7 @@ apply_structure <- function(st) {
   S$catalogue$entry_words <<- pick(st$catalogue$entry_words, S$catalogue$entry_words)
   S$catalogue$frame_pars  <<- pick(st$catalogue$frame_pars,  S$catalogue$frame_pars)
   S$catalogue_chapters <<- pick(st$catalogue_chapters, S$catalogue_chapters)
+  S$deep_dive_chapters <<- pick(st$deep_dive_chapters, S$deep_dive_chapters)
   S$word_chapter_max   <<- pick(st$word_chapter_max,   S$word_chapter_max)
   S$evenness_cv_max          <<- pick(st$evenness_cv_max,          S$evenness_cv_max)
   S$coda_min_ratio_to_median <<- pick(st$coda_min_ratio_to_median, S$coda_min_ratio_to_median)
@@ -122,6 +124,7 @@ read_structure_regex <- function(path) {
       frame_pars = nums(catal, "frame_pars")
     ),
     catalogue_chapters = strarr(block, "catalogue_chapters"),
+    deep_dive_chapters = strarr(block, "deep_dive_chapters"),
     word_chapter_max = scalar(block, "word_chapter_max"),
     evenness_cv_max = scalar(block, "evenness_cv_max"),
     coda_min_ratio_to_median = scalar(block, "coda_min_ratio_to_median"),
@@ -243,6 +246,7 @@ lint_chapter <- function(f) {
     return(invisible(NULL))
   }
   is_cat <- slug %in% S$catalogue_chapters
+  is_deep <- slug %in% S$deep_dive_chapters
   template <- if (is_cat) "catalogue" else "essay"
   role <- classify_roles(secs, slug)
   body <- secs[role == "body", , drop = FALSE]
@@ -263,10 +267,10 @@ lint_chapter <- function(f) {
     if (ns > S$essay$sections[2])
       flag(sprintf("  CHAPTER  %d sections (essay band %d-%d) — consider whether two sections merge",
                    ns, S$essay$sections[1], S$essay$sections[2]))
-    if (evenness > S$evenness_cv_max)
+    if (!is_deep && evenness > S$evenness_cv_max)
       flag(sprintf("  CHAPTER  evenness %.2f (cap %.2f) — section weights too uneven; level the worst sections",
                    evenness, S$evenness_cv_max))
-    if (length(body_wt) >= 2) {
+    if (!is_deep && length(body_wt) >= 2) {
       ratio <- max(body_wt) / min(body_wt)
       if (ratio > S$essay$ratio_max)
         flag(sprintf("  CHAPTER  size ratio %.1fx (max %gx) — '%s' (%dw) dwarfs '%s' (%dw)",
@@ -283,7 +287,7 @@ lint_chapter <- function(f) {
                      last$sec, round(last$weight), round(med_wt), substr(last$title, 1, 34)))
     }
   }
-  if (total_words > S$word_chapter_max)
+  if (!is_deep && total_words > S$word_chapter_max)
     flag(sprintf("  CHAPTER  %d words total (soft cap %d) — candidate for splitting or a deep-dive exemption",
                  total_words, S$word_chapter_max))
 
@@ -333,8 +337,11 @@ lint_chapter <- function(f) {
     }
   }
 
+  tag <- if (is_deep) paste0(template, ", deep-dive") else template
   cat(sprintf("\n%s  [%s, %d sections, %d words, evenness %.2f]\n",
-              slug, template, nrow(secs), total_words, evenness))
+              slug, tag, nrow(secs), total_words, evenness))
+  if (is_deep)
+    cat("  (deep-dive: chapter-size and evenness flags suppressed by exemption)\n")
   if (length(hits) == 0) {
     cat("  OK — section rhythm within S7 bands.\n")
   } else {

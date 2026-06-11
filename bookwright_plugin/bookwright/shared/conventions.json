@@ -21,6 +21,8 @@
     "vodic_label": "Vodič kroz poglavlje",
     "summary_label": "Sažetak",
     "catalogue_chapters": ["12-instrumenti", "15-drzavni-neuspjesi"],
+    "deep_dive_chapters": ["14-porezi"],
+    "deep_dive_note": "14-porezi is a sanctioned long-form deep-dive (~9400 w, 4x median). The word-cap and evenness flags on it are expected and not pathologies. Whether to split it into two chapters is a co-author/architecture decision recorded for DIO IV, not an S7 fix. Internal ### nesting in its non-reserved sections (e.g. Vrste poreza) is still cleaned; the AI and EU/Hrvatska sections hold reserved Croatian and co-author content and are left to the co-authors.",
     "word_chapter_max": 4500,
     "evenness_cv_max": 0.55,
     "element_words": { "callout": 70, "figure": 60, "ojs": 60, "table": 50 },
