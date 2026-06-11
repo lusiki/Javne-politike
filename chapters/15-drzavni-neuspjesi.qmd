@@ -67,17 +67,15 @@ To je osobito važno kod politika koje ciljaju određene skupine. Ako država ž
 
 ## Instrumentalni neuspjesi
 
-Drugi oblik su **instrumentalni neuspjesi**, odnosno pogrešan izbor instrumenta. Ponekad je cilj politike opravdan, ali instrument nije prikladan jer je preskup, preširok, administrativno kompliciran ili stvara neželjene poticaje. Izbor instrumenta mora proizlaziti iz prirode problema, institucionalnog kapaciteta i očekivanih reakcija aktera.
-
-::: {#def-instrumentalni-neuspjeh}
-**Instrumentalni neuspjeh** nastaje kada je cilj politike opravdan, ali odabrani instrument nije prikladan jer je preskup, preširok, administrativno kompliciran ili stvara neželjene poticaje umjesto da izravno adresira tržišni neuspjeh koji ga motivira.
-:::
+Drugi oblik su **instrumentalni neuspjesi**, odnosno pogrešan izbor instrumenta. Cilj politike može biti opravdan, ali odabrani instrument nije prikladan jer je preskup, preširok, administrativno kompliciran ili stvara neželjene poticaje umjesto da izravno adresira tržišni neuspjeh koji ga motivira. Izbor instrumenta mora proizlaziti iz prirode problema, institucionalnog kapaciteta i očekivanih reakcija aktera.
 
 Primjer su mjere za zaštitu siromašnijih kućanstava od rasta cijena energije. Ograničenje cijena ili smanjenje poreza na energiju politički je vidljivo i administrativno jednostavno, ali koristi i kućanstvima koja nisu siromašna i smanjuje poticaj za štednju. Preciznije ciljani transfer mogao bi biti učinkovitiji i pravedniji, ali zahtijeva bolje podatke i administrativni kapacitet. Instrumentalni neuspjeh javlja se i kada se za svaki problem pokušava koristiti isti tip instrumenta. Ako je sustav navikao probleme rješavati subvencijama, svaki novi problem postaje zahtjev za novom potporom; ako je sklon osnivanju novih tijela, svaki problem završava novom agencijom. Dobar dizajn zato zahtijeva usklađivanje problema i instrumenta.
 
 ::: {.callout-praksa}
-Klasičan primjer instrumentalnog neuspjeha jest zamka neaktivnosti u sustavima socijalne pomoći. Kada se naknade naglo ukidaju čim korisnik počne zarađivati, efektivna granična stopa može premašiti 80 ili 90 % jer svaki dodatno zarađeni euro povlači gotovo jednako velik gubitak prava, pa se rad jednostavno ne isplati. Ujedinjeno Kraljevstvo pokušalo je taj problem ublažiti reformom kojom je više naknada objedinjeno u jedan transfer s blažom stopom postupnog smanjivanja. Reforma je smanjila zamku, ali je uvela novu složenost i administrativne troškove, što pokazuje da loše dizajniran instrument rijetko ima besplatno rješenje, nego se jedan problem često zamjenjuje drugim.
+Klasičan primjer instrumentalnog neuspjeha jest zamka neaktivnosti u sustavima socijalne pomoći. Kada se naknade naglo ukidaju čim korisnik počne zarađivati, efektivna granična stopa može premašiti 80 ili 90 % jer svaki dodatno zarađeni euro povlači gotovo jednako velik gubitak prava, pa se rad jednostavno ne isplati. Ujedinjeno Kraljevstvo pokušalo je taj problem ublažiti reformom kojom je više naknada objedinjeno u jedan transfer s blažom stopom postupnog smanjivanja. Reforma je smanjila zamku, ali je uvela novu složenost i administrativne troškove, što pokazuje da loše dizajniran instrument rijetko ima besplatno rješenje, nego se jedan problem često zamjenjuje drugim.[^wp-ch15]
 :::
+
+[^wp-ch15]: Daljnje čitanje: Waters i Wernham (2024), [*Universal Credit: incomes, incentives and the remaining roll-out*](https://ifs.org.uk/publications/universal-credit-incomes-incentives-and-remaining-roll-out) (IFS).
 
 ## Provedbeni neuspjesi
 
@@ -117,11 +115,7 @@ Politički neuspjesi mogu se pojaviti i kada su koristi politike koncentrirane, 
 
 Šesti oblik su **birokratski neuspjesi**. Birokracija je nužna za provedbu javnih politika i bez profesionalne javne uprave nema porezne naplate, provedbe zakona ni upravljanja proračunom. Međutim, birokracija može razviti i vlastite interese; može širiti procedure, čuvati nadležnosti, povećavati proračune i opirati se promjenama. To ne znači da su javni službenici nužno loši, nego da svaka velika organizacija razvija rutine i obrambene mehanizme [@niskanen1971].
 
-::: {#def-pretjerani-formalizam}
-**Pretjerani formalizam** je birokratski neuspjeh u kojemu poštivanje procedure postaje važnije od postizanja rezultata, pa institucija uredno slijedi formalna pravila, ali građanin ne dobiva kvalitetnu uslugu jer nadzor mjeri usklađenost, a ne ishod.
-:::
-
-Birokratski neuspjesi vide se i kroz **pretjerani formalizam**, gdje procedura postaje važnija od rezultata. Institucija može uredno poštovati formalna pravila, ali građanin i dalje ne dobiva kvalitetnu uslugu. Zato birokraciju treba promatrati dvostruko, jer je ona istodobno preduvjet sposobne države i mogući izvor državnih neuspjeha. Kvalitetna javna politika mora imati profesionalnu upravu, ali i mehanizme odgovornosti, transparentnosti, evaluacije i učenja.
+Birokratski neuspjesi najjasnije se vide kroz **pretjerani formalizam**, u kojemu poštivanje procedure postaje važnije od postizanja rezultata, pa institucija uredno slijedi formalna pravila, ali građanin ne dobiva kvalitetnu uslugu jer nadzor mjeri usklađenost, a ne ishod. Zato birokraciju treba promatrati dvostruko, jer je ona istodobno preduvjet sposobne države i mogući izvor državnih neuspjeha. Kvalitetna javna politika mora imati profesionalnu upravu, ali i mehanizme odgovornosti, transparentnosti, evaluacije i učenja.
 
 ## Regulatorni neuspjesi
 
@@ -137,11 +131,7 @@ Regulatorni neuspjeh može nastati i bez ikakvog zarobljavanja. Pravila se gomil
 
 ## Fiskalni neuspjesi
 
-Osmi oblik su **fiskalni neuspjesi**. Javna politika gotovo uvijek ima fiskalnu dimenziju. Čak i kada se ne financira izravno kroz proračun, može stvarati implicitne obveze, jamstva, porezne izdatke ili buduće troškove.
-
-::: {#def-fiskalni-neuspjeh}
-**Fiskalni neuspjeh** nastaje kada se politika oblikuje bez jasne procjene dugoročnih troškova ili kada se ti troškovi prebacuju na buduće generacije i skrivaju izvan proračuna kroz jamstva, mandate ili kontrolu cijena, pa stvarna cijena odluke ostaje nevidljiva u trenutku kada se donosi.
-:::
+Osmi oblik su **fiskalni neuspjesi**. Javna politika gotovo uvijek ima fiskalnu dimenziju, pa i kada se ne financira izravno kroz proračun može stvarati implicitne obveze, jamstva, porezne izdatke ili buduće troškove. Fiskalni neuspjeh nastaje kada se politika oblikuje bez jasne procjene dugoročnih troškova ili kada se ti troškovi prebacuju na buduće generacije i skrivaju izvan proračuna kroz jamstva, mandate ili kontrolu cijena, pa stvarna cijena odluke ostaje nevidljiva u trenutku kada se donosi.
 
 Posebno važan problem su **kvazifiskalne aktivnosti**. Država ponekad želi ostvariti javni cilj, ali ga ne financira otvoreno kroz proračun, pa umjesto izravne subvencije koristi regulaciju, kontrolu cijena, obvezne mandate ili državna jamstva. Takve mjere mogu prikriti stvarni trošak politike. To je posebno važno za dizajn javnih politika jer ono što nije u proračunu nije nužno besplatno. Kontrola cijena može izgledati kao politika bez proračunskog troška, ali se trošak pojavljuje kroz nestašice, lošiju kvalitetu ili manje investicije. Zato kvalitetna javna politika mora uzeti u obzir i vidljive i skrivene fiskalne troškove.
 

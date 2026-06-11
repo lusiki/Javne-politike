@@ -124,11 +124,13 @@ Da nije riječ samo o teorijskoj mogućnosti pokazuju i izravniji dokazi. Riker 
 Koliko stvarnih dimenzija ima zakonodavno odlučivanje moguće je i izmjeriti. Poole i Rosenthal rekonstruirali su idealne točke svih članova američkog Kongresa kroz više od dva stoljeća poimeničnih glasovanja postupkom prostornog skaliranja (NOMINATE) i pokazali da jedna jedina dimenzija objašnjava oko 80 % zabilježenih glasova, a druga dimenzija gotovo sav preostali sustavni dio [@poole2007]. Niska dimenzionalnost nije dokaz da temeljne preferencije nisu višedimenzionalne, nego pokazuje koliko snažno stranačka disciplina i proceduralna pravila stišću prostor odlučivanja na jednu lijevo-desnu os. Kada ta stega oslabi, dimenzionalnost mjereno raste, a s njom i učestalost obrnutih i nestabilnih ishoda, što je empirijski trag McKelveyeva teorijskog rezultata u stvarnom parlamentu.
 :::
 
-Kada se ta dinamika prenese na konkretnu raspravu, vidi se zašto sastavljanje dnevnog reda toliko utječe na ishod.
+Empirijski niska dimenzionalnost ne ukida teorijsku mogućnost ciklusa, nego pokazuje koliko institucije rade na tome da ga prikriju. Čim se otvori druga dimenzija ili oslabi stranačka stega, latentni ciklus ponovno ispliva na površinu, a presudnu ulogu tada preuzima onaj tko kontrolira redoslijed odlučivanja. Sastavljanje dnevnog reda zato nije tehnički detalj postupka, nego mjesto na kojem se neodređenost većinske volje pretvara u konkretan ishod.
 
 ::: {.callout-praksa}
-Ciklus nije samo udžbenički kuriozitet. Zamislimo raspravu o energetskoj politici s tri skupine i tri opcije (nuklearna energija, plin, obnovljivi izvori). Industrija rangira nuklearnu ispred plina, a plin ispred obnovljivih, ekolozi i turizam obnovljive ispred nuklearne, a nuklearnu ispred plina, dok politički centar rangira plin ispred obnovljivih, a obnovljive ispred nuklearne. U parnom glasovanju nastaje ciklus bez stabilnog pobjednika, pa ishod uvelike ovisi o tome tko određuje redoslijed glasovanja (tzv. *agenda-setter*, primjerice predsjednik odbora, Vlada ili predsjedavajući Vijeća EU). U Hrvatskom saboru ta moć često leži u rukama Vlade pri pripremi proračuna, a slične dinamike vide se u usklađivanju paketa „Fit for 55" između energetskih interesa država članica EU.
+Ciklus nije samo udžbenički kuriozitet. Zamislimo raspravu o energetskoj politici s tri skupine i tri opcije (nuklearna energija, plin, obnovljivi izvori). Industrija rangira nuklearnu ispred plina, a plin ispred obnovljivih, ekolozi i turizam obnovljive ispred nuklearne, a nuklearnu ispred plina, dok politički centar rangira plin ispred obnovljivih, a obnovljive ispred nuklearne. U parnom glasovanju nastaje ciklus bez stabilnog pobjednika, pa ishod uvelike ovisi o tome tko određuje redoslijed glasovanja (tzv. *agenda-setter*, primjerice predsjednik odbora, Vlada ili predsjedavajući Vijeća EU). U Hrvatskom saboru ta moć često leži u rukama Vlade pri pripremi proračuna, a slične dinamike vide se u usklađivanju paketa „Fit for 55" između energetskih interesa država članica EU.[^wp-ch06a]
 :::
+
+[^wp-ch06a]: Daljnje čitanje: McKelvey (1976), [*Intransitivities in Multidimensional Voting Models and Some Implications for Agenda Control*](https://doi.org/10.1016/0022-0531(76)90040-5).
 
 Različiti sustavi glasovanja vode do različitih ishoda, što dodatno naglašava da nijedan mehanizam nije neutralan [@gibbard1973; @satterthwaite1975]. @tbl-sustavi-glasovanja sažima ključne prednosti i nedostatke najvažnijih sustava.
 
@@ -170,8 +172,10 @@ Intuicija dokaza objašnjava zašto nemogućnost nije puka nezgoda s jednim nezg
 : Arrowljevi uvjeti i njihove implikacije. Izrada autora prema @arrow1951, @mueller1989 i @sen1970. {#tbl-arrow-uvjeti}
 
 ::: {.callout-praksa}
-Posljedice teorema vide se u izbornim procesima. Pojava treće ili četvrte relevantne opcije (primjerice Mosta ili Možemo!) može osjetno promijeniti odnos snaga između dvije velike stranke, iako birači nisu bitno promijenili mišljenje o tim dvjema strankama, što je upravo kršenje uvjeta neovisnosti o nevažnim alternativama. Na razini EU slična se dinamika vidi pri glasovanju kvalificiranom većinom u Vijeću, gdje stavovi pojedinih zemalja mogu blokirati ili izmijeniti pakete poput fiskalnih pravila ili „Fit for 55".
+Posljedice teorema vide se u izbornim procesima. Pojava treće ili četvrte relevantne opcije (primjerice Mosta ili Možemo!) može osjetno promijeniti odnos snaga između dvije velike stranke, iako birači nisu bitno promijenili mišljenje o tim dvjema strankama, što je upravo kršenje uvjeta neovisnosti o nevažnim alternativama. Na razini EU slična se dinamika vidi pri glasovanju kvalificiranom većinom u Vijeću, gdje stavovi pojedinih zemalja mogu blokirati ili izmijeniti pakete poput fiskalnih pravila ili „Fit for 55".[^wp-ch06b]
 :::
+
+[^wp-ch06b]: Daljnje čitanje: McCune i Wilson (2023), [*Ranked-choice voting and the spoiler effect*](https://doi.org/10.1007/s11127-023-01050-3) (Public Choice).
 
 ## Jednovršne preferencije i medijanski glasač
 
@@ -212,8 +216,10 @@ Kada se ciklusi moraju prekinuti, dolazi do kompromisa, ali kompromisi u politic
 Slika ipak nije jednoznačno negativna. Obično većinsko glasovanje broji glave, ali ne mjeri koliko je kome do čega stalo, pa može odbiti mjeru koja malobrojnoj, ali snažno zainteresiranoj skupini znači mnogo, a ravnodušnoj većini šteti tek neznatno. Trgovanje glasovima upravo tu prazninu popunjava jer dopušta da se glas o pitanju koje nam je sporedno zamijeni za podršku o pitanju koje nam je važno, čime mogu proći obostrano korisni dogovori koje bi anonimno glasovanje odbacilo [@buchanan1962]. Isti mehanizam postaje štetan kada koalicija koja trguje prebaci trošak na one koji u trgovini ne sudjeluju, pa neto učinak na blagostanje nije unaprijed zadan, nego ovisi o tome jesu li koristi koncentrirane na sudionike ili su troškovi rašireni na vanjske strane. Zato Buchanan i Tullock logrolling i ne promatraju kao puku patologiju, nego kao razlog zašto je dizajn ustavnih pravila važniji od pojedinačnog ishoda.
 
 ::: {.callout-praksa}
-Pri usvajanju državnog proračuna u Hrvatskoj zastupnici iz različitih regija često uzajamno podržavaju infrastrukturne projekte (autoceste, luke, bolnice), iako bi svaki projekt zasebno teško prošao, pa su rezultat brojni „politički" projekti niske ekonomske opravdanosti. Na razini EU pregovori o Višegodišnjem financijskom okviru i fondu NextGenerationEU uključuju pakete u kojima se poljoprivredne subvencije trguju za kohezijske ili zelene fondove, pa je konačni paket veći i skuplji nego što bi ga ijedna zemlja samostalno podržala. Klasičan svjetski primjer iste logike jest američki *pork-barrel*, u kojem kongresnici podržavaju projekte kolega u zamjenu za podršku vlastitima.
+Pri usvajanju državnog proračuna u Hrvatskoj zastupnici iz različitih regija često uzajamno podržavaju infrastrukturne projekte (autoceste, luke, bolnice), iako bi svaki projekt zasebno teško prošao, pa su rezultat brojni „politički" projekti niske ekonomske opravdanosti. Na razini EU pregovori o Višegodišnjem financijskom okviru i fondu NextGenerationEU uključuju pakete u kojima se poljoprivredne subvencije trguju za kohezijske ili zelene fondove, pa je konačni paket veći i skuplji nego što bi ga ijedna zemlja samostalno podržala. Klasičan svjetski primjer iste logike jest američki *pork-barrel*, u kojem kongresnici podržavaju projekte kolega u zamjenu za podršku vlastitima.[^wp-ch06c]
 :::
+
+[^wp-ch06c]: Daljnje čitanje: Weingast, Shepsle i Johnsen (1981), [*The Political Economy of Benefits and Costs: A Neoclassical Approach to Distributive Politics*](https://doi.org/10.1086/260997) (JPE).
 
 Takvi kompromisi često vode do neintuitivnih i neučinkovitih ishoda. @tbl-kompromisi sažima njihove tipične oblike i posljedice za javne financije.
 

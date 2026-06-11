@@ -86,8 +86,10 @@ Zdravstvo i obrazovanje najčešći su primjeri. Ako je obrazovanje dostupno sam
 Koliko će društvo prihvatiti robni egalitarizam ovisi o njegovim vrijednostima, povijesti, političkoj kulturi i institucijama. Europske države blagostanja tradicionalno više naglašavaju univerzalne javne usluge, solidarnost i socijalna prava, dok liberalniji modeli više naglašavaju individualnu odgovornost, tržišni izbor i ciljanu pomoć najsiromašnijima. Skandinavske se zemlje primjerice snažno oslanjaju na univerzalne usluge i visoke poreze, dok anglosaksonski modeli češće kombiniraju tržišne mehanizme s ciljanim programima za ranjive skupine.
 
 ::: {.callout-praksa}
-Nordijske zemlje pokazuju kako se snažna preraspodjela može spojiti s otvorenim tržišnim gospodarstvom. One kombiniraju visoke granične porezne stope i univerzalne javne usluge u zdravstvu, obrazovanju i skrbi za djecu s razmjerno fleksibilnim tržištem rada. Tržišna nejednakost dohotka prije poreza ondje nije osobito niža nego u drugim razvijenim zemljama, ali je nejednakost nakon poreza i transfera među najnižima u svijetu. Ključ nije samo u visini poreza, nego i u tome što su usluge univerzalne, pa ih koristi i srednja klasa, čime se održava široka politička potpora za njihovo financiranje. Takav model ima i svoju cijenu jer zahtijeva visoko porezno opterećenje, snažnu poreznu disciplinu i povjerenje građana da se sredstva troše namjenski. Ondje gdje to povjerenje ili administrativni kapacitet izostaju, isti se model teško preslikava, što pokazuje da preraspodjela nije samo pitanje političke volje, nego i institucionalnih preduvjeta.
+Nordijske zemlje pokazuju kako se snažna preraspodjela može spojiti s otvorenim tržišnim gospodarstvom. One kombiniraju visoke granične porezne stope i univerzalne javne usluge u zdravstvu, obrazovanju i skrbi za djecu s razmjerno fleksibilnim tržištem rada. Tržišna nejednakost dohotka prije poreza ondje nije osobito niža nego u drugim razvijenim zemljama, ali je nejednakost nakon poreza i transfera među najnižima u svijetu. Ključ nije samo u visini poreza, nego i u tome što su usluge univerzalne, pa ih koristi i srednja klasa, čime se održava široka politička potpora za njihovo financiranje. Takav model ima i svoju cijenu jer zahtijeva visoko porezno opterećenje, snažnu poreznu disciplinu i povjerenje građana da se sredstva troše namjenski. Ondje gdje to povjerenje ili administrativni kapacitet izostaju, isti se model teško preslikava, što pokazuje da preraspodjela nije samo pitanje političke volje, nego i institucionalnih preduvjeta.[^wp-ch03]
 :::
+
+[^wp-ch03]: Daljnje čitanje: Kleven (2014), [*How Can Scandinavians Tax So Much?*](https://doi.org/10.1257/jep.28.4.77) (JEP).
 
 U kriznim situacijama, poput rata, pandemije, velike prirodne katastrofe ili energetskog šoka, čak i društva koja inače manje naglašavaju egalitarizam često prihvaćaju šire oblike državne intervencije. Razlog je u tome što kriza povećava osjećaj zajedničkog rizika. Tada se robni egalitarizam ne odnosi samo na zdravstvo i obrazovanje, nego i na energiju, hranu, stanovanje ili osnovnu likvidnost kućanstava i poduzeća.
 
@@ -216,5 +218,9 @@ Tržište raspodjeljuje dohodak prema vlasništvu, vještinama i okolnostima ro�
 :::
 
 ::: {.callout-vjezba}
-Promotrite hipotetsko društvo s pet kućanstava čiji godišnji dohodci iznose 10, 20, 30, 40 i 100 tisuća eura. (a) Izračunajte koliki udio ukupnog dohotka pripada najsiromašnijih 40 % kućanstava. (b) Skicirajte Lorenzovu krivulju spajanjem kumulativnih udjela dohotka. (c) Pretpostavite da država najsiromašnijem kućanstvu transferom doda 10 tisuća eura, financiranih porezom na najbogatije kućanstvo. Kako se mijenja udio najsiromašnijih 40 % i zašto se Lorenzova krivulja približava dijagonali jednakosti?
+Promotrite hipotetsko društvo s pet kućanstava čiji godišnji dohodci iznose 10, 20, 30, 40 i 100 tisuća eura.
+
+a. Izračunajte koliki udio ukupnog dohotka pripada najsiromašnijih 40 % kućanstava.
+b. Skicirajte Lorenzovu krivulju spajanjem kumulativnih udjela dohotka.
+c. Pretpostavite da država najsiromašnijem kućanstvu transferom doda 10 tisuća eura, financiranih porezom na najbogatije kućanstvo. Kako se mijenja udio najsiromašnijih 40 % i zašto se Lorenzova krivulja približava dijagonali jednakosti?
 :::

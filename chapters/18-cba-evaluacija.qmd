@@ -138,7 +138,7 @@ npv_b = npv_controls.b
 }
 ```
 
-**Što isprobati.** (1) Pri Diskontna stopa (r) oko 5 % crna točka stoji u pozitivnom području, pa je projekt društveno opravdan. (2) Pomičite klizač udesno i pratite kako NPV pada te u nekom trenutku probija nulu, a to sjecište je upravo interna stopa povrata iznad koje projekt postaje neopravdan. (3) Vratite stopu nisko pa snizite Godišnja neto korist (mil. €) prema 10 i vidjet ćete da cijela krivulja klizne prema dolje, čime se interna stopa povrata smanjuje i sve manji raspon stopa opravdava projekt.
+**Što isprobati.** (1) Pri Diskontna stopa ([r]{.var}) oko 5 % crna točka stoji u pozitivnom području, pa je projekt društveno opravdan. (2) Pomičite klizač udesno i pratite kako NPV pada te u nekom trenutku probija nulu, a to sjecište je upravo interna stopa povrata iznad koje projekt postaje neopravdan. (3) Vratite stopu nisko pa snizite Godišnja neto korist (mil. €) prema 10 i vidjet ćete da cijela krivulja klizne prema dolje, čime se interna stopa povrata smanjuje i sve manji raspon stopa opravdava projekt.
 
 Sve navedeno pokazuje da je CBA u javnom sektoru znatno više od tehničkog alata. Ona je integrativni okvir koji povezuje ekonomsku učinkovitost s društvenom pravednošću, okolišnom održivošću i dugoročnom perspektivom.
 
@@ -155,8 +155,10 @@ Vrijedi objasniti kako se takav broj uopće dobiva, jer u tome leži i njegova k
 Praktična implikacija nije odbacivanje CBA, nego svjesnost o granicama njezine domene. Za projekte u kojima sve relevantne posljedice imaju vidljivu tržišnu cijenu (logistika, energetska infrastruktura, telekomunikacije), monetizacija je analitički prikladan instrument. Za odluke u kojima središnji ulog dotiče distribuciju temeljnih sloboda ili međugeneracijska prava, CBA može pružiti korisne dijelove odgovora, ali konačni izbor ostaje vrijednosno opterećen na način koji se ne može svesti na rezultat izračuna.
 
 ::: {.callout-praksa}
-Velik infrastrukturni projekt pokazuje i domet i granice cost-benefit analize. Za britansku brzu prugu HS2 službene su analize u različitim fazama davale vrlo različite procjene neto koristi, ovisno o pretpostavkama o vrijednosti uštede vremena, budućoj potražnji i diskontnoj stopi, a procijenjeni troškovi tijekom godina su višestruko narasli. Projekt je na kraju smanjen i odgođen iz političkih razloga, neovisno o tome što su pojedine analize pokazivale pozitivnu neto vrijednost. Primjer pokazuje da CBA disciplinira raspravu i čini pretpostavke vidljivima, ali da konačnu odluku oblikuju i raspodjela koristi, kredibilitet procjena troškova i politički proces, a ne samo izračunata neto sadašnja vrijednost.
+Velik infrastrukturni projekt pokazuje i domet i granice cost-benefit analize. Za britansku brzu prugu HS2 službene su analize u različitim fazama davale vrlo različite procjene neto koristi, ovisno o pretpostavkama o vrijednosti uštede vremena, budućoj potražnji i diskontnoj stopi, a procijenjeni troškovi tijekom godina su višestruko narasli. Projekt je na kraju smanjen i odgođen iz političkih razloga, neovisno o tome što su pojedine analize pokazivale pozitivnu neto vrijednost. Primjer pokazuje da CBA disciplinira raspravu i čini pretpostavke vidljivima, ali da konačnu odluku oblikuju i raspodjela koristi, kredibilitet procjena troškova i politički proces, a ne samo izračunata neto sadašnja vrijednost.[^wp-ch18]
 :::
+
+[^wp-ch18]: Daljnje čitanje: Nordhaus (2007), [*A Review of the Stern Review on the Economics of Climate Change*](https://www.nber.org/papers/w12741); Flyvbjerg, Holm i Buhl (2003), [*How Common and How Large Are Cost Overruns in Transport Infrastructure Projects?*](https://www.tandfonline.com/doi/abs/10.1080/01441640309904).
 
 Drugo ograničenje odnosi se na ovisnost rezultata o pretpostavkama modela, osobito o izboru diskontne stope, koja može dramatično promijeniti zaključke. Treći problem je rizik političke manipulacije i selektivne primjene, gdje se pretpostavke mogu prilagoditi kako bi podržale unaprijed donesene odluke. Četvrto ograničenje odnosi se na pitanja pravednosti i distribucije. Standardna CBA polazi od ukupne društvene koristi (Kaldor-Hicksov kriterij, vidi @def-kaldor-hicks), ali ne jamči da će projekt biti pravedan u raspodjeli koristi i troškova.
 
@@ -209,5 +211,9 @@ Cost-benefit analiza sustavno uspoređuje ukupne društvene koristi i troškove 
 :::
 
 ::: {.callout-vjezba}
-Projekt zahtijeva ulaganje od 100 milijuna eura danas i donosi neto korist od 30 milijuna eura godišnje tijekom sljedeće četiri godine. (a) Izračunajte neto sadašnju vrijednost projekta uz diskontnu stopu od 5 %. (b) Ponovite izračun uz stopu od 10 % i usporedite rezultate. (c) Pri kojoj se približno diskontnoj stopi neto sadašnja vrijednost izjednačava s nulom i kako se taj prag naziva? Objasnite zašto je projekt s koristima koje sežu daleko u budućnost osjetljiviji na izbor diskontne stope.
+Projekt zahtijeva ulaganje od 100 milijuna eura danas i donosi neto korist od 30 milijuna eura godišnje tijekom sljedeće četiri godine.
+
+a. Izračunajte neto sadašnju vrijednost projekta uz diskontnu stopu od 5 %.
+b. Ponovite izračun uz stopu od 10 % i usporedite rezultate.
+c. Pri kojoj se približno diskontnoj stopi neto sadašnja vrijednost izjednačava s nulom i kako se taj prag naziva? Objasnite zašto je projekt s koristima koje sežu daleko u budućnost osjetljiviji na izbor diskontne stope.
 :::

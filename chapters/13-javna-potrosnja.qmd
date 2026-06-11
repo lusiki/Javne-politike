@@ -179,8 +179,10 @@ Važno je naglasiti da niža proračunska potrošnja ne znači nužno i manju st
 Empirijska istraživanja pokazuju da veličina javne potrošnje sama po sebi ne određuje ekonomske rezultate. Neke zemlje s velikim javnim sektorom ostvaruju visoke stope rasta i kvalitetne javne usluge, dok druge slične razine potrošnje imaju slabije performanse. To jasno upućuje na ključnu ulogu kvalitete institucija, učinkovitosti javne uprave, transparentnosti i dizajna politika, a ne same veličine rashoda [@blanchard2017; @tanzi2000].
 
 ::: {.callout-praksa}
-Usporedba pokazuje da veličina javne potrošnje sama po sebi govori malo o njezinim učincima. Neke zemlje s velikim javnim sektorom, poput skandinavskih, ostvaruju visok rast, kvalitetne usluge i nisku nejednakost, dok druge sa sličnim udjelom potrošnje u BDP-u imaju slabije rezultate jer veći dio sredstava odlazi na subvencije, kamate na dug ili neučinkovite programe umjesto na obrazovanje, infrastrukturu i ciljanu socijalnu zaštitu. Ista razina potrošnje tako može značiti ulaganje u buduću produktivnost ili njezino trošenje na održavanje postojećih povlastica. Zato je za ocjenu javne potrošnje važnije analizirati njezinu strukturu i kvalitetu provedbe nego puki udio u BDP-u.
+Usporedba pokazuje da veličina javne potrošnje sama po sebi govori malo o njezinim učincima. Neke zemlje s velikim javnim sektorom, poput skandinavskih, ostvaruju visok rast, kvalitetne usluge i nisku nejednakost, dok druge sa sličnim udjelom potrošnje u BDP-u imaju slabije rezultate jer veći dio sredstava odlazi na subvencije, kamate na dug ili neučinkovite programe umjesto na obrazovanje, infrastrukturu i ciljanu socijalnu zaštitu. Ista razina potrošnje tako može značiti ulaganje u buduću produktivnost ili njezino trošenje na održavanje postojećih povlastica. Zato je za ocjenu javne potrošnje važnije analizirati njezinu strukturu i kvalitetu provedbe nego puki udio u BDP-u.[^wp-ch13]
 :::
+
+[^wp-ch13]: Daljnje čitanje: Afonso, Schuknecht i Tanzi (2005), [*Public Sector Efficiency: An International Comparison*](https://www.ecb.europa.eu/pub/pdf/scpwps/ecbwp242.pdf) (ECB WP 242).
 
 ## Javna potrošnja u Hrvatskoj i EU
 
@@ -197,5 +199,9 @@ Javna potrošnja jedan je od najvidljivijih izraza djelovanja države, a njezina
 :::
 
 ::: {.callout-vjezba}
-Pretpostavite zemlju s javnim dugom od 80 % BDP-a i nominalnim rastom BDP-a od 3 %. (a) Ako je prosječna kamatna stopa na dug 2 %, a primarni proračun uravnotežen, objasnite u kojem se smjeru kreće omjer duga i BDP-a. (b) Pretpostavite da država u recesiji pokrene poticaj vrijedan 3 % BDP-a uz multiplikator 1,5; za koliko se procjenjuje da raste BDP u toj godini? (c) Zašto u uvjetima visokog multiplikatora restriktivna politika može kratkoročno povećati, a ne smanjiti omjer duga i BDP-a? Povežite odgovor s odnosom kamatne stope i stope rasta.
+Pretpostavite zemlju s javnim dugom od 80 % BDP-a i nominalnim rastom BDP-a od 3 %.
+
+a. Ako je prosječna kamatna stopa na dug 2 %, a primarni proračun uravnotežen, objasnite u kojem se smjeru kreće omjer duga i BDP-a.
+b. Pretpostavite da država u recesiji pokrene poticaj vrijedan 3 % BDP-a uz multiplikator 1,5; za koliko se procjenjuje da raste BDP u toj godini?
+c. Zašto u uvjetima visokog multiplikatora restriktivna politika može kratkoročno povećati, a ne smanjiti omjer duga i BDP-a? Povežite odgovor s odnosom kamatne stope i stope rasta.
 :::

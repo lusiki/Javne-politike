@@ -134,7 +134,7 @@ nisk_c = nisk_controls.c
 }
 ```
 
-**Što isprobati.** (1) Pri početnim vrijednostima usporedite učinkovitu razinu Q\* s Niskanenovom razinom Qₙ i uočite da birokracija širi uslugu sve dok ukupna korist tek pokriva ukupni trošak, daleko iznad točke u kojoj se izjednačuju granična korist i granični trošak. (2) Podignite klizač Granični trošak (MC) i pratite kako se obje okomice pomiču ulijevo, no crveno područje prekomjerne potrošnje između Q\* i Qₙ tvrdoglavo opstaje. (3) Smanjite klizač Nagib granične koristi (b) prema 0,4 da krivulja postane položita i vidite kako se obje količine i sam jaz između njih dramatično rastežu, jer plići pad granične koristi birokraciji ostavlja više prostora za prenapuhani proračun.
+**Što isprobati.** (1) Pri početnim vrijednostima usporedite učinkovitu razinu Q\* s Niskanenovom razinom Qₙ i uočite da birokracija širi uslugu sve dok ukupna korist tek pokriva ukupni trošak, daleko iznad točke u kojoj se izjednačuju granična korist i granični trošak. (2) Podignite klizač Granični trošak ([MC]{.var}) i pratite kako se obje okomice pomiču ulijevo, no crveno područje prekomjerne potrošnje između Q\* i Qₙ tvrdoglavo opstaje. (3) Smanjite klizač Nagib granične koristi ([b]{.var}) prema 0,4 da krivulja postane položita i vidite kako se obje količine i sam jaz između njih dramatično rastežu, jer plići pad granične koristi birokraciji ostavlja više prostora za prenapuhani proračun.
 
 Niskanenov model počiva na tri ključna elementa. Prvo, birokracija često ima **monopol** nad pružanjem određene javne usluge. Drugo, birokracija ima **informacijsku prednost** jer zna koliko program stvarno košta, gdje postoje rezerve učinkovitosti i koliko bi se moglo uštedjeti. Treće, političari i ministarstvo financija često ne mogu savršeno provjeriti informacije koje im birokracija dostavlja. Zbog toga birokracija može tražiti veći proračun od društveno optimalnog.
 
@@ -153,8 +153,10 @@ Ipak, Niskanenov model ostaje važan jer jasno pokazuje da se proračunski proce
 Ako želimo učinkovitu državu, nije dovoljno pitati koliko novca neka institucija traži. Treba pitati koje rezultate proizvodi, koliko ti rezultati koštaju, postoje li jeftiniji načini provedbe i tko neovisno provjerava informacije koje institucija iznosi.
 
 ::: {.callout-praksa}
-Niskanenova logika vidljiva je u načinu na koji javne agencije pregovaraju o proračunu. Ondje gdje agencija ima monopol nad uslugom i bolje informacije od ministarstva financija, sustavno traži više sredstava nego što bi bilo društveno optimalno, a uštede rijetko nudi sama. Reforme u nizu zemalja OECD-a pokušale su taj poticaj obrnuti uvođenjem proračuna prema rezultatima, vanjskih revizija i gornjih granica troška unutar kojih agencija sama mora pronaći učinkovitije rješenje. Iskustvo pokazuje da takvi mehanizmi smanjuju, ali ne uklanjaju pritisak na rast proračuna jer informacijska prednost i dalje ostaje na strani agencije.
+Niskanenova logika vidljiva je u načinu na koji javne agencije pregovaraju o proračunu. Ondje gdje agencija ima monopol nad uslugom i bolje informacije od ministarstva financija, sustavno traži više sredstava nego što bi bilo društveno optimalno, a uštede rijetko nudi sama. Reforme u nizu zemalja OECD-a pokušale su taj poticaj obrnuti uvođenjem proračuna prema rezultatima, vanjskih revizija i gornjih granica troška unutar kojih agencija sama mora pronaći učinkovitije rješenje. Iskustvo pokazuje da takvi mehanizmi smanjuju, ali ne uklanjaju pritisak na rast proračuna jer informacijska prednost i dalje ostaje na strani agencije.[^wp-ch09]
 :::
+
+[^wp-ch09]: Daljnje čitanje: Niskanen (1971), *Bureaucracy and Representative Government*; Curristine (2005), [*Performance Information in the Budget Process*](https://doi.org/10.1787/budget-v5-art13-en) (OECD Journal on Budgeting).
 
 ## Asimetrija informacija i principal–agent problem
 

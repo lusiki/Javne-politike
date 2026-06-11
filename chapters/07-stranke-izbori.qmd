@@ -35,8 +35,10 @@ Medijanski glasač ne određuje samo ideološku poziciju stranaka, nego i konkre
 Najkrhkija je pretpostavka o jednoj dimenziji. Stabilan pobjednik na sredini, kako pokazujemo u poglavlju o kolektivnom izboru, postoji samo dok se preferencije mogu poredati na jednoj osi, a čim politika postane višedimenzionalna, te središnje ravnoteže nestaje. Upravo zato ista logika koja predviđa konvergenciju prema centru istodobno objašnjava i polarizaciju koju razrađujemo u nastavku.
 
 ::: {.callout-praksa}
-U Hrvatskoj je ovaj mehanizam dugo objašnjavao programsku sličnost dviju najvećih stranaka po ključnim ekonomskim pitanjima. Unatoč različitoj retorici, HDZ i SDP u praksi su često provodili slične politike usmjerene na makroekonomsku stabilnost, korištenje europskih fondova i očuvanje socijalne države u umjerenim okvirima. To je bila racionalna posljedica nastojanja da se osvoji medijanski birač, koji u hrvatskom kontekstu tradicionalno preferira kombinaciju socijalne sigurnosti i političke stabilnosti. Budući da je velik udio stanovništva zaposlen u javnom sektoru ili ovisan o mirovinskom i socijalnom sustavu, čak i nominalno desno orijentirane stranke rijetko provode radikalne rezove rashoda kada dođu na vlast.
+U Hrvatskoj je ovaj mehanizam dugo objašnjavao programsku sličnost dviju najvećih stranaka po ključnim ekonomskim pitanjima. Unatoč različitoj retorici, HDZ i SDP u praksi su često provodili slične politike usmjerene na makroekonomsku stabilnost, korištenje europskih fondova i očuvanje socijalne države u umjerenim okvirima. To je bila racionalna posljedica nastojanja da se osvoji medijanski birač, koji u hrvatskom kontekstu tradicionalno preferira kombinaciju socijalne sigurnosti i političke stabilnosti. Budući da je velik udio stanovništva zaposlen u javnom sektoru ili ovisan o mirovinskom i socijalnom sustavu, čak i nominalno desno orijentirane stranke rijetko provode radikalne rezove rashoda kada dođu na vlast.[^wp-ch07a]
 :::
+
+[^wp-ch07a]: Daljnje čitanje: Lee, Moretti i Butler (2004), [*Do Voters Affect or Elect Policies? Evidence from the U.S. House*](https://www.nber.org/papers/w9315) (NBER WP 9315).
 
 ## Kako se stranke natječu za glas
 
@@ -82,8 +84,10 @@ Tvrdnja da se stranke razmiču ili da je njihova distribucija postala bimodalna 
 : Primjeri centrizma i polarizacije u suvremenim demokracijama. Izrada autora prema @downs1957, @fiorina2006 i @mudde2017. {#tbl-centrizam}
 
 ::: {.callout-praksa}
-U Hrvatskoj je ova dinamika vidljiva kroz jačanje stranaka pozicioniranih izvan tradicionalnog centra, koje umjesto ekonomskih programa naglašavaju identitetska i antielitistička pitanja. Slično, Emmanuel Macron 2017. uspješno se pozicionirao kao „ni lijevo ni desno", dok su u Italiji i Španjolskoj Pokret pet zvijezda i Vox nametnuli teme korupcije i imigracije kako bi se odvojili od etabliranih stranaka. Rezultat je često „šizofrena" ponuda koja kombinira umjerenu retoriku u kampanji za širu javnost s radikalnijim stavovima prema stranačkoj bazi.
+U Hrvatskoj je ova dinamika vidljiva kroz jačanje stranaka pozicioniranih izvan tradicionalnog centra, koje umjesto ekonomskih programa naglašavaju identitetska i antielitistička pitanja. Slično, Emmanuel Macron 2017. uspješno se pozicionirao kao „ni lijevo ni desno", dok su u Italiji i Španjolskoj Pokret pet zvijezda i Vox nametnuli teme korupcije i imigracije kako bi se odvojili od etabliranih stranaka. Rezultat je često „šizofrena" ponuda koja kombinira umjerenu retoriku u kampanji za širu javnost s radikalnijim stavovima prema stranačkoj bazi.[^wp-ch07b]
 :::
+
+[^wp-ch07b]: Daljnje čitanje: Guriev i Papaioannou (2022), [*The Political Economy of Populism*](https://doi.org/10.1257/jel.20201595) (JEL); Colantone i Stanig (2018), [*Global Competition and Brexit*](https://doi.org/10.1017/S0003055417000685).
 
 ## Racionalna neinformiranost i izlaznost
 
@@ -120,8 +124,10 @@ Amartya Sen [@sen1999] empirijski je pokazao da u modernoj povijesti nikada nije
 Ista se asimetrija prenosi i na upravljanje javnim financijama, gdje su rezultati autokracija znatno neujednačeniji nego što sugerira njihova retorika učinkovitosti.
 
 ::: {.callout-praksa}
-U području javnih financija autokratski sustavi pokazuju mješovite rezultate. Neki (Singapur, Južna Koreja u razdoblju razvoja) održali su fiskalnu disciplinu i strateško ulaganje, no većina dugoročnih autokracija završila je visokim javnim dugom, neefikasnim investicijama („bijeli slonovi") ili oboje. Kineski model, unatoč impresivnim rezultatima u prošlosti, danas se suočava s nagomilanim lokalnim dugovima i prekapacitiranim sektorima.
+U području javnih financija autokratski sustavi pokazuju mješovite rezultate. Neki (Singapur, Južna Koreja u razdoblju razvoja) održali su fiskalnu disciplinu i strateško ulaganje, no većina dugoročnih autokracija završila je visokim javnim dugom, neefikasnim investicijama („bijeli slonovi") ili oboje. Kineski model, unatoč impresivnim rezultatima u prošlosti, danas se suočava s nagomilanim lokalnim dugovima i prekapacitiranim sektorima.[^wp-ch07c]
 :::
+
+[^wp-ch07c]: Daljnje čitanje: Robinson i Torvik (2005), [*White Elephants*](https://doi.org/10.1016/j.jpubeco.2004.05.004) (Journal of Public Economics).
 
 Zaključak nije idealizacija nijednog sustava. Demokracija je sporija i skuplja, ali otpornija na katastrofalne pogreške, dok autokracija može biti brža, ali je krhkija jer ovisi o kvaliteti i dugovječnosti samog autokrata. Najbolji institucionalni dizajn vjerojatno leži u kombinaciji demokratske legitimnosti s čvrstim **ustavnim ogradama** koje štite fiskalnu odgovornost od kratkoročnih političkih impulsa, što nas vraća na pouku prethodnog poglavlja o važnosti pravila igre [@mueller1989].
 
@@ -140,5 +146,10 @@ Stranke u teoriji javnog izbora nisu zastupnici općeg dobra, nego akteri koji m
 :::
 
 ::: {.callout-vjezba}
-Promotrite pet birača smještenih na lijevo-desno osi od 0 do 10, s idealnim točkama 1, 3, 5, 7 i 9. Svaki birač glasuje za stranku koja je najbliža njegovoj idealnoj točki, a dvije stranke koje se natječu za vlast žele maksimizirati broj glasova. (a) Odredite poziciju medijanskog glasača i objasnite zašto je upravo ta točka ravnotežna lokacija za obje stranke u dvostranačkom natjecanju. (b) Pretpostavite da stranka A zauzme poziciju 3, a stranka B poziciju 7. Pokažite koliko glasova osvaja svaka stranka i objasnite zašto svaka od njih ima poticaj pomaknuti se prema sredini sve dok obje ne završe u medijanu. (c) Sada u natjecanje uđe treća stranka koja slobodno bira poziciju nakon što su A i B već smještene u medijanu. Odredite gdje bi se isplatilo smjestiti i pokažite zašto ulazak trećeg igrača razbija stabilnost središnje ravnoteže. (d) Zamijenite jednodimenzionalnu os dvjema dimenzijama tako da uz lijevo-desno ekonomsku os dodate i vrijednosnu os, pa kratko obrazložite zašto u dvodimenzionalnom prostoru jasna središnja pozicija često više ne postoji. Objasnite zatim zašto model koji predviđa konvergenciju prema centru istodobno pomaže razumjeti polarizaciju koju opažamo u stvarnim demokracijama.
+Promotrite pet birača smještenih na lijevo-desno osi od 0 do 10, s idealnim točkama 1, 3, 5, 7 i 9. Svaki birač glasuje za stranku koja je najbliža njegovoj idealnoj točki, a dvije stranke koje se natječu za vlast žele maksimizirati broj glasova.
+
+a. Odredite poziciju medijanskog glasača i objasnite zašto je upravo ta točka ravnotežna lokacija za obje stranke u dvostranačkom natjecanju.
+b. Pretpostavite da stranka A zauzme poziciju 3, a stranka B poziciju 7. Pokažite koliko glasova osvaja svaka stranka i objasnite zašto svaka od njih ima poticaj pomaknuti se prema sredini sve dok obje ne završe u medijanu.
+c. Sada u natjecanje uđe treća stranka koja slobodno bira poziciju nakon što su A i B već smještene u medijanu. Odredite gdje bi se isplatilo smjestiti i pokažite zašto ulazak trećeg igrača razbija stabilnost središnje ravnoteže.
+d. Zamijenite jednodimenzionalnu os dvjema dimenzijama tako da uz lijevo-desno ekonomsku os dodate i vrijednosnu os, pa kratko obrazložite zašto u dvodimenzionalnom prostoru jasna središnja pozicija često više ne postoji. Objasnite zatim zašto model koji predviđa konvergenciju prema centru istodobno pomaže razumjeti polarizaciju koju opažamo u stvarnim demokracijama.
 :::
