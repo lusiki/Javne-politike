@@ -166,11 +166,9 @@ U zdravstvu, primjerice kod uvođenja novog lijeka, troškovi uključuju cijenu 
 
 Kod okolišnih politika poput smanjenja emisija CO₂ troškovi ulaganja u zelene tehnologije često su visoki i javljaju se u kratkom roku, dok se koristi od izbjegnutih budućih šteta protežu duboko u budućnost i izražavaju kroz socijalnu cijenu ugljika. Izbor diskontne stope ovdje izravno uključuje pitanje međugeneracijske pravednosti, a klimatske politike imaju snažnu komponentu globalnih eksternalija.
 
-## Evaluacija javnih politika
+## Evaluacija javnih politika i njezini ciljevi
 
 Evaluacija javnih politika predstavlja ključnu fazu u ciklusu javnih politika. Dok CBA primarno služi kao *ex ante* alat za procjenu prije provedbe, evaluacija je usmjerena na *ex interim* i *ex post* analizu stvarnih učinaka. Evaluacija odgovara na temeljno pitanje jesu li javne politike postigle ciljeve zbog kojih su uvedene i po kojoj cijeni. U suvremenim javnim financijama evaluacija se sve više promatra kao sastavni dio upravljanja temeljenog na rezultatima, gdje se naglasak stavlja na mjerljive ishode, a ne samo na potrošnju sredstava.
-
-### Cilj i uloga evaluacije
 
 Prvi i najizravniji cilj evaluacije jest procjena učinkovitosti (*effectiveness*). Ovdje je ključno razlikovati formalno ostvarenje ciljeva od stvarnog utjecaja. Program subvencioniranja zapošljavanja mladih može povećati broj zaposlenih, ali evaluacija mora odgovoriti na dublje pitanje bi li se dio tih zapošljavanja dogodio i bez intervencije. Zato se naglasak stavlja na identifikaciju uzročnog učinka (*causal impact*), odnosno razliku između stvarnog ishoda i kontrafaktualnog scenarija [@angrist2009].
 
@@ -180,13 +178,11 @@ Prvi i najizravniji cilj evaluacije jest procjena učinkovitosti (*effectiveness
 
 Druga dimenzija odnosi se na efikasnost (*efficiency*) koja označava odnos uloženih resursa i ostvarenih rezultata. Treći cilj je procjena relevantnosti, odnosno pitanje rješava li politika doista problem zbog kojeg je uvedena. Posebno važna dimenzija odnosi se na utjecaj (*impact*) i održivost (*sustainability*), koji uključuju šire i dugoročnije posljedice te pitanje mogu li se rezultati održati kroz vrijeme. Važno je naglasiti da evaluacija nije samo instrument kontrole, već i alat institucionalnog učenja jer se kroz sustavno prikupljanje i analizu podataka stvara tzv. *policy learning loop*, u kojem se iskustva iz prošlih intervencija koriste za dizajn boljih politika.
 
-### Vrste evaluacije
+## Vrste i metode evaluacije
 
 Promatrano kroz vremensku dimenziju, razlikuju se tri vrste. *Ex ante* evaluacija provodi se prije provedbe i ima važnu ulogu u fazi dizajna te često uključuje CBA i analizu rizika. *Ex interim* evaluacija provodi se tijekom provedbe i ima upravljačku funkciju jer prati napredak i omogućuje pravovremene korekcije. *Ex post* evaluacija provodi se nakon završetka i usmjerena je na analizu stvarnih rezultata, pa je posebno važna za institucionalno učenje.
 
 Prema analitičkom fokusu razlikuju se procesna evaluacija, koja se fokusira na način provedbe i pita funkcioniraju li administrativni i organizacijski mehanizmi kako je predviđeno, te evaluacija učinaka (*impact evaluation*), koja nastoji identificirati uzročni učinak politike. Za identifikaciju uzročnih učinaka koriste se randomizirani kontrolirani pokusi (RCT), kvazi-eksperimentalne metode poput *difference-in-differences* i *regression discontinuity* dizajna te ekonometrijski modeli [@angrist2009]. Različite vrste evaluacije nisu međusobno isključive, nego se nadopunjuju.
-
-### Metodološki pristupi i izazovi
 
 Evaluacija se oslanja na kvantitativne i kvalitativne metode. Kvantitativni pristupi usmjereni su na mjerenje i kvantifikaciju učinaka te identifikaciju uzročnih veza, pružajući empirijski utemeljene i replicabilne rezultate. Kvalitativne metode poput intervjua, fokus grupa i studija slučaja omogućuju dublje razumijevanje institucionalnog konteksta i mehanizama kroz koje politika djeluje. Zato se sve više naglašava važnost kombiniranog pristupa (*mixed methods*), gdje kvantitativna evaluacija može pokazati da program nije povećao zapošljavanje, a kvalitativna može otkriti da su administrativni zahtjevi bili prekomplicirani.
 
