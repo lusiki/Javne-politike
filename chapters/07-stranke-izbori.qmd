@@ -32,6 +32,8 @@ Logika je jednostavna. Stranka koja zauzme krajnju poziciju osvaja birače sa sv
 
 Medijanski glasač ne određuje samo ideološku poziciju stranaka, nego i konkretne fiskalne parametre koji uključuju visinu poreznih stopa, opseg socijalnih transfera, razinu javnih investicija i mirovinskih naknada. Model je snažan, ali počiva na strogim pretpostavkama o jednoj ideološkoj dimenziji, dvjema strankama, potpunoj informiranosti i sigurnosti da će svi izaći na izbore. Kada te pretpostavke padnu, slika postaje složenija.
 
+Najkrhkija je pretpostavka o jednoj dimenziji. Stabilan pobjednik na sredini, kako pokazujemo u poglavlju o kolektivnom izboru, postoji samo dok se preferencije mogu poredati na jednoj osi, a čim politika postane višedimenzionalna, te središnje ravnoteže nestaje. Upravo zato ista logika koja predviđa konvergenciju prema centru istodobno objašnjava i polarizaciju koju razrađujemo u nastavku.
+
 ::: {.callout-praksa}
 U Hrvatskoj je ovaj mehanizam dugo objašnjavao programsku sličnost dviju najvećih stranaka po ključnim ekonomskim pitanjima. Unatoč različitoj retorici, HDZ i SDP u praksi su često provodili slične politike usmjerene na makroekonomsku stabilnost, korištenje europskih fondova i očuvanje socijalne države u umjerenim okvirima. To je bila racionalna posljedica nastojanja da se osvoji medijanski birač, koji u hrvatskom kontekstu tradicionalno preferira kombinaciju socijalne sigurnosti i političke stabilnosti. Budući da je velik udio stanovništva zaposlen u javnom sektoru ili ovisan o mirovinskom i socijalnom sustavu, čak i nominalno desno orijentirane stranke rijetko provode radikalne rezove rashoda kada dođu na vlast.
 :::
@@ -65,6 +67,8 @@ Na položaj stranaka utječu i drugi čimbenici. Izlaznost nije zajamčena. Ako 
 ::: {#def-polarizacija}
 **Polarizacija** je proces udaljavanja stranaka od centra prema suprotnim krajevima ideološkog spektra; nastaje kada distribucija biračkih preferencija postane bimodalna, kada izlaznost aktivira rubne birače ili kada ideološki pritisak unutar stranaka prevlada poticaj za osvajanje medijana.
 :::
+
+Tvrdnja da se stranke razmiču ili da je njihova distribucija postala bimodalna mjerni je iskaz koji počiva na procjeni stranačkih pozicija iz obrazaca glasovanja, postupku prostornog skaliranja o kojem govori poglavlje o kolektivnom izboru.
 
 | Zemlja | Prevladavajuća strategija | Ključne karakteristike | Posljedice za javne financije |
 |---|---|---|---|
