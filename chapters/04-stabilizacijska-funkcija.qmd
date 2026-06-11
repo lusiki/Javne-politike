@@ -277,8 +277,6 @@ Iza tog opreza krije se prava napetost koja nema jednostavno rješenje. Propust 
 
 Upravo zbog te dinamike kritika prebrze fiskalne konsolidacije nakon 2010. upozorava da je inzistiranje na štednji u krivom trenutku produbilo pad i odgodilo oporavak [@blyth2013]. S druge strane, neograničeno oslanjanje na deficit ima svoju granicu jer visok i rastući javni dug povećava ranjivost na promjene kamatnih stopa i može dovesti do nagloga gubitka povjerenja tržišta [@reinhart2009]. Odgovorna stabilizacijska politika zato ne bira između discipline i poticaja jednom zauvijek, nego prepoznaje da je ispravan trenutak za svaki od njih različit i da pogreška u vremenu može biti skuplja od pogreške u smjeru.
 
-## Dvostruka priroda stabilizacijske funkcije
-
 Stabilizacijska funkcija zato ima dvostruku prirodu. S jedne strane, ona je nužna jer tržišna gospodarstva mogu proizvesti duboke recesije, visoku nezaposlenost, financijske krize i inflacijske poremećaje. U takvim situacijama državna intervencija može spriječiti velike društvene troškove.
 
 S druge strane, stabilizacijska funkcija nosi rizike. Država može reagirati prekasno, preširoko ili pogrešnim instrumentima. Privremene mjere mogu postati trajne. Krizne intervencije mogu povećati javni dug. Spašavanje poduzeća i banaka može stvoriti moralni hazard. Kontrole cijena mogu smanjiti inflaciju na papiru, ali stvoriti nestašice ili gubitke. Subvencije mogu zaštititi radna mjesta kratkoročno, ali dugoročno održavati neproduktivne strukture. Zato stabilizacijska politika mora biti snažna kada je potrebna, ali i pažljivo dizajnirana.
