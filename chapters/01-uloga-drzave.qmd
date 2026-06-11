@@ -48,23 +48,21 @@ Takvu informaciju nijedan središnji planer ne može prikupiti unaprijed. Znanje
 
 ### Pareto učinkovitost
 
-U središtu klasične ekonomike blagostanja nalazi se pojam **Pareto učinkovitosti**.
+Kada ekonomisti procjenjuju je li neka raspodjela resursa dobra, polaze od skromnog mjerila. Ne pitaju je li alokacija savršena ni je li pravedna, nego je li u njoj ostalo neiskorištenih prilika za poboljšanje. To je mjerilo Pareto učinkovitosti.
 
 ::: {#def-pareto-ucinkovitost}
 Alokacija je **Pareto učinkovita** ako nije moguće poboljšati položaj jedne osobe, a da se pritom ne pogorša položaj barem jedne druge osobe.
 :::
 
-Društvo se nalazi u Pareto učinkovitom stanju kada su iscrpljene sve mogućnosti za međusobno korisnu razmjenu i bolju uporabu resursa. Ako je moguće nekoga učiniti boljestojećim, a da nitko drugi ne bude lošije, tada početna alokacija nije učinkovita.
+Društvo se nalazi u takvom stanju kada su iscrpljene sve mogućnosti za međusobno korisnu razmjenu i bolju uporabu resursa. Sve dok je nekoga moguće učiniti boljestojećim, a da nitko drugi ne bude lošije, početna alokacija nije učinkovita i postoji promjena koju je teško odbiti. Upravo zato Pareto kriterij ima snagu minimalnog mjerila. Ako neka promjena nekome koristi, a nikome ne šteti, malo je razloga da se ne provede. No ta je snaga ujedno i granica kriterija. On ne govori ništa o pravednosti raspodjele, pa društvo može biti Pareto učinkovito, a istodobno duboko nejednako. Ako jedna osoba posjeduje gotovo sve resurse, a druga vrlo malo, takva alokacija ostaje Pareto učinkovita sve dok se položaj siromašne osobe ne može poboljšati bez smanjenja bogatstva bogate. Pareto učinkovitost zato nije isto što i društvena pravednost.
 
-Pareto učinkovitost važna je zato što daje minimalni kriterij ekonomske učinkovitosti. Ako postoji promjena koja nekome koristi, a nikome ne šteti, teško je pronaći razlog da se takva promjena ne provede. Međutim, Pareto kriterij ima i važno ograničenje. On ne govori ništa o pravednosti raspodjele. Društvo može biti Pareto učinkovito, a istodobno vrlo nejednako. Ako jedna osoba posjeduje gotovo sve resurse, a druga vrlo malo, takva alokacija može biti Pareto učinkovita ako nije moguće poboljšati položaj siromašne osobe bez smanjenja bogatstva bogate osobe. Zato Pareto učinkovitost nije isto što i društvena pravednost.
-
-Pareto kriterij rijetko je operativan u stvarnoj politici. Gotovo svaka mjera od strukturne reforme do promjene poreznog razreda stvara dobitnike i gubitnike, pa stroga Pareto poboljšanja praktički ne postoje. Da bi se okvir ekonomike blagostanja mogao primijeniti na konkretne odluke, ekonomisti se služe slabijim **Kaldor-Hicksovim kriterijem**.
+Drugo, ozbiljnije ograničenje pokazuje se čim se kriterij pokuša primijeniti na stvarne odluke. Gotovo svaka mjera, od strukturne reforme do promjene poreznog razreda, stvara dobitnike i gubitnike, pa stroga Pareto poboljšanja u praksi gotovo da ne postoje. Da bi se okvir ekonomike blagostanja uopće mogao primijeniti na konkretne politike, ekonomisti se služe slabijim Kaldor-Hicksovim kriterijem.
 
 ::: {#def-kaldor-hicks}
 Prema **Kaldor-Hicksovu kriteriju** promjena je društveno opravdana ako su agregatni dobici dobitnika dovoljni da bi se u načelu mogli kompenzirati gubici gubitnika, čak i ako se kompenzacija stvarno ne provede.
 :::
 
-Upravo na tom kriteriju počiva analiza troškova i koristi kao standardni alat javnog odlučivanja [@boardman2018]. Pristup ima svoju cijenu. Sažimanjem dobitaka i gubitaka u zajedničku novčanu mjeru implicitno se pretpostavlja da je dodatni euro jednako vrijedan svima, što ignorira pitanje raspodjele dohotka. Zato Kaldor-Hicksov kriterij olakšava donošenje odluka, ali ne uklanja političku odgovornost za to tko stvarno gubi, a tko dobiva.
+Na tom kriteriju počiva analiza troškova i koristi kao standardni alat javnog odlučivanja [@boardman2018]. Pristup ima svoju cijenu. Sažimanjem dobitaka i gubitaka u zajedničku novčanu mjeru implicitno se pretpostavlja da je dodatni euro jednako vrijedan svima, čime se zaobilazi pitanje raspodjele dohotka. Kaldor-Hicksov kriterij zato olakšava donošenje odluka, ali ne uklanja političku odgovornost za to tko stvarno gubi, a tko dobiva.
 
 #### Edgeworthova kutija i ugovorna krivulja
 
