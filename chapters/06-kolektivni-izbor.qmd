@@ -110,6 +110,8 @@ cond_v3 = cond_controls.v3
 
 Posljedica je važna. Kada postoji ciklus, ishod ovisi o redoslijedu glasovanja. Onaj tko kontrolira dnevni red, to jest koje se opcije i kojim redoslijedom stavljaju na glasovanje, može utjecati na konačni rezultat. To je prvi nagovještaj da pravila igre nisu nevažna pozadina, nego da oblikuju same ishode.
 
+## Od jednog ciklusa do kaotične većine
+
 Lako je odbaciti taj primjer kao konstrukciju u kojoj su preferencije birača namjerno tako odabrane da proizvedu ciklus. Formalna analiza pokazuje suprotno. McKelveyev teorem o kaotičnoj većini dokazuje da kad se u prostoru odluke pojavi više od jedne dimenzije, ciklusi postaju pravilo, a ne iznimka, i to za gotovo bilo koju raspodjelu preferencija birača [@mckelvey1976]. Ako je ishod prve runde glasovanja pažljivo izabran, agendar može u nekoliko koraka voditi kolektivnu odluku od bilo koje početne točke do bilo koje druge točke u prostoru opcija.
 
 Posljedica je dvostruka. Prvo, intuitivna pretpostavka da se „opće dobro" može jednostavno utvrditi većinom glasova teorijski je neodrživa čim se istodobno odlučuje o više dimenzija. Drugo, stabilnost demokratskih ishoda ne dolazi iz preferencija birača, nego iz proceduralnih ograničenja (pravila glasovanja, jednodimenzionalnih agendi, pravila zaštite nositelja statusa quo) koja sustav izričito uvodi da bi spriječio teoretski kaos.
@@ -227,6 +229,8 @@ Takvi kompromisi često vode do neintuitivnih i neučinkovitih ishoda. @tbl-komp
 Teorija kolektivnog izbora nije samo apstraktna logička vježba. Ona ima izravne posljedice za razumijevanje javnih politika. Prvo, pokazuje da „volja naroda" nije uvijek jednoznačno definiran pojam jer ovisi o pravilima kroz koja se izražava. Drugo, objašnjava zašto je **kontrola dnevnog reda** izvor moći, budući da onaj tko određuje o čemu se i kojim redoslijedom glasuje oblikuje ishod. Treće, opravdava postojanje **ustavnih i proceduralnih pravila** koja ograničavaju proizvoljnost i daju odlukama stabilnost i predvidljivost, primjerice pravila pojačane većine (*supermajority*) za poreze i dugoročne fiskalne obveze [@buchanan1962; @mueller1989].
 
 Ako „društveni izbor" nije rezultat racionalnog traženja općeg blagostanja, nego ishod nesavršenih pravila i strateškog ponašanja, tada mnoge neučinkovite ili fiskalno neodržive politike prestaju biti anomalija i postaju predvidiv ishod institucionalnog dizajna. Kada sama agregacija preferencija može proizvesti nedosljedne ili manipulabilne ishode, moramo pažljivo analizirati konkretne aktere koji djeluju unutar tih pravila i koji ih, kad mogu, oblikuju u svoju korist, a to su birači, stranke, interesne skupine i birokracija.
+
+Condorcet i Arrow pokazali su da ni logički savršen mehanizam agregacije ne postoji, jednovršne preferencije i medijanski glasač da stabilnost dolazi kao poseban slučaj, a moć dnevnoga reda da konačni ishod ovisi o tome tko oblikuje proceduru. Zajednička je pouka da pravila nisu neutralna pozadina kolektivne odluke, nego njezin tvorac. Upravo zato analiza javnih politika ne može stati na pitanju što birači žele, nego mora prijeći na pitanje pod kojim pravilima i kroz koje aktere se te želje pretaču u odluke. Tim akterima, počevši od stranaka i izbornog natjecanja, posvećena su poglavlja koja slijede.
 
 ::: {.sazetak-panel}
 ## Sažetak
