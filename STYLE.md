@@ -241,6 +241,87 @@ prose use it.
 - When a chapter ends up referenced more than twice, add a `{#sec-...}` id to its title
   and switch those references to `@sec-` links in a dedicated pass.
 
+### S7 — Section rhythm
+
+A chapter should read as evenly weighted, not as one essay with decorative headings
+around a cluster of stubs. The reference is `19-reforme`: every body section between
+three and ten paragraphs, no `###` nesting, the largest section no more than three times
+the smallest. Two failure modes break this and each has a fixed remedy.
+
+- **Monster section** — one `##` section swallows the chapter, usually carrying `###`
+  subsections (the tell that it is really several sections wearing one heading). Remedy:
+  **split** it, promoting its `###`s to `##`. If the material genuinely belongs together,
+  it is a sign the chapter wants fewer, larger arguments stated as separate sections, not
+  one giant one.
+- **Stub section** — a `##` heading the TOC promises, paid off with one or two paragraphs
+  (under ~150 words). Remedy: **merge up** (demote the heading, fold its paragraphs into
+  the neighbouring section) or **thicken** it via the ENRICHMENT.md value slots. A heading
+  earns its place by carrying a full section's weight.
+
+The bands, and which chapters are exempt, live in `conventions.json` under `structure`:
+
+| Template | Sections | Body section | Vodič | `###` |
+|----------|----------|--------------|-------|-------|
+| **Essay** (default) | 6–9 incl. Vodič + Sažetak | 3–10 par / 200–700 w, max÷min ≤ 3 | 2–4 par | none — split instead |
+| **Catalogue** (declared) | many short by design | entries uniform at 2–4 par each | 2–4 par | none |
+
+A **catalogue chapter** is one whose point is an enumeration — the instruments
+(`12-instrumenti`), the failure typology (`15-drzavni-neuspjesi`). There the evenness rule
+flips. The entries need not be large, but they must be uniform *with each other*, and the
+opening and closing (synthesis) sections still carry full weight. New catalogue chapters
+are added to the roster in `conventions.json`, not assumed — the default is essay.
+
+The Vodič length is the same in both templates (two to four paragraphs of framing before
+the numbered questions, or the questions alone). A Vodič that runs to six or seven
+paragraphs is itself a stub-and-monster imbalance in miniature.
+
+Word totals far above the book median (`14-porezi` at ~4× the median) are not an S7
+violation per se but a flag that a chapter is structurally a different book and wants
+either splitting or an explicit deep-dive exemption recorded here.
+
+#### The coda must be a destination, not an appendix
+
+The most common imbalance in this book is not a monster in the middle — it is a chapter
+that *fizzles out*. A rich body section is followed by a final body section ("Zašto je to
+važno za javne politike") paid off with one short paragraph, and then the Sažetak. The
+chapter stops rather than arrives. The reference is again `19-reforme`, whose closing
+section ("Pogled unatrag, kroz cijelu knjigu") synthesises the chapter at full weight.
+
+The rule: **the last body section carries at least the chapter's median section weight, or
+it does not exist as a separate section.** If a closing "why this matters" thought is only
+a paragraph, it is folded into the preceding section or into the Sažetak's job, not given a
+heading of its own. A genuine synthesis section earns its heading by pulling the chapter's
+threads together, not by announcing that it will.
+
+#### Evenness is a measured score, not a single ratio
+
+The max÷min ratio is a blunt gate — one stub anywhere fails the whole chapter, and fixing
+that one stub can flip the verdict without the chapter reading better. The detector
+therefore reports a continuous **evenness score** (the coefficient of variation of body
+section weights) alongside the ratio. A chapter is judged against the book distribution,
+not a hard line. The score is what `book-conductor` surfaces per chapter and what makes
+"did this edit make the chapter lumpier" answerable. Treat the score as the diagnosis and
+the per-section flags as the worklist.
+
+#### Weight is what the reader sees, not just prose
+
+A section's weight is its rendered footprint, not its bare paragraph count. A section with
+one paragraph plus a `callout-empirija` and a chart fills a page; counted as prose alone it
+looks like a stub. The detector therefore counts **structural elements** (callouts,
+figures, OJS blocks, tables) toward a section's weight, which kills the main false-positive
+class and exposes its opposite — the **scaffold section**, mostly elements with almost no
+argument connecting them. A section that is all boxes and charts is as much a failure as a
+one-paragraph stub, and its remedy is prose, not reorganisation.
+
+#### Paragraphs have rhythm too
+
+The same lumpiness recurs one level down. A section whose paragraphs swing between
+200-word walls and orphaned one-line paragraphs reads as unevenly as a chapter of monsters
+and stubs. Aim for paragraphs roughly between forty and one hundred and thirty words; an
+isolated one-sentence paragraph is either promoted into its neighbour or earned as a
+deliberate beat. This is reader-checked judgement the detector only hints at — flip through
+the rendered page and the wall-and-crumb pattern is visible at a glance.
+
 ---
 
 ## Structural elements
@@ -358,9 +439,26 @@ every hit against the Prose zones table. Known false-positive classes:
 2. Table alignment rows (`| :--- |`).
 3. Em dash as separator in headings and caption lead-ins (allowed by H2/H6).
 
-H4 (lists, pullquotes), H7 (evidence), H8 (bold), and all soft conventions are
-reader-checked; the linter cannot see them. Figure intros have their own detector
+H4 (lists, pullquotes), H7 (evidence), H8 (bold), and the soft conventions S1–S6 are
+reader-checked; the style linter cannot see them. Figure intros have their own detector
 (`book-figure/scripts/figure_intro_check.R`).
+
+S7 (section rhythm) has its own detector:
+
+```bash
+Rscript bookwright_plugin/bookwright/skills/book-continuity/scripts/structure_lint.R chapters/<file>.qmd
+```
+
+Run with no argument it lints the whole book (`chapters/*.qmd`). It reads the bands and
+the catalogue-chapter roster from `conventions.json` (`structure`), profiles each `##`
+section, and labels every hit with its remedy — MONSTER (split / promote `###`), STUB
+(merge up / thicken), SCAFFOLD (mostly elements, needs prose), ENTRY (even the catalogue),
+FRAME (thicken opening/synthesis), CODA (final section under median weight), and
+chapter-level flags including the **evenness score** (coefficient of variation of body
+weights, the headline diagnosis), the size ratio, section count, and the word-cap. Section
+weight counts structural elements (callouts, figures, OJS, tables), not bare prose, so a
+page that renders full no longer reads as a stub. It is judgment-assist, not auto-fix, and
+is the detector behind `book-continuity`'s structural-symmetry check.
 
 ---
 
@@ -408,4 +506,6 @@ chapter is not done.
 - **2026-05-29** — Added rule 5 (minimal "Drugim riječima,") after second pass on intro removed two redundant restatement transitions.
 - **2026-05-29** — Third pass on intro applied full STYLE.md sweep: removed mid-sentence bold (`**ne**`) per soft convention, deleted seven meta-frame sentences ("Iz tih razmatranja proizlazi prvi važan uvid.", "Iz toga slijedi sljedeća lekcija.", "Time se otvara šira slika.", "Praksa pritom otkriva...", "Tu se zatvara luk knjige.", "Iz tih triju perspektiva proizlazi središnja misao ove knjige.", "Temeljnu se misao knjige može sažeti u jednoj rečenici.") that announced takeaways instead of letting the prose carry them. Confirmed rule 3 applies retroactively even to varied slot fillers.
 - **2026-05-29** — Applied to [chapters/01-uloga-drzave.qmd](chapters/01-uloga-drzave.qmd): 11 colon restructurings in prose, 5 "Drugim riječima" deletions, section heading shortened from "Musgraveov okvir: tri funkcije države" to "Musgraveov okvir" (rule 6), and a syllabus-style enumeration paragraph removed where it duplicated content already delivered earlier in the section.
+- **2026-06-11** — Added S7 (section rhythm) after a whole-book structural profile showed the chapters drift between monster sections (`01` one section = 75 % of the chapter; `09`, `05`, `14`) and stub-section runs (`12`, `15`, plus isolated stubs in `08`, `13`). Codified two templates (essay default, catalogue declared for `12`/`15`), put the bands in `conventions.json` (`structure`), and shipped `structure_lint.R` in `book-continuity` as the detector. `19-reforme` is the reference essay chapter. Provenance for the band values is the live-book profile of this date.
+- **2026-06-11** — Extended S7 (v1.1) with four sub-rules after the user asked where the principle could go further. **Coda rule** (the last body section carries ≥ median weight or is merged) — the book's most repeated weakness, four chapters ending on a sub-100-word "zašto je to važno" section. **Evenness score** (coefficient of variation of body weights) replaces the brittle max÷min gate as the headline diagnosis. **Element-aware weight** (callouts, figures, OJS, tables count toward a section's footprint) kills the prose-only false positives and exposes scaffold sections. **Paragraph rhythm** added as reader-checked judgement. `structure_lint.R` and `conventions.json` (`structure`) updated to match.
 - **2026-06-10** — Major revision (v2) after the whole-book Bookwright evaluation of 2026-06-09/10. Added: scope statement; Voice section; Prose zones table; stable rule IDs (H1–H8, S1–S6); H7 evidence anchoring (uncited figures found in ch08/11/14, miscited claims in ch01/05); H8 bold discipline promoted from soft convention (pseudo-headings and mid-sentence bold in ch14); list ban folded into H4; "Štoviše," added to the H5 family with a per-chapter budget across the family (ch05 had five); H6 extended with title register (question titles in ch05/13); S2 English parentheticals (nineteen in ch05); S3 definition cadence (ch05); S4 typography; S5 citation placement; S6 cross-reference formula; format specifications for Vodič, Sažetak, callouts, definition divs, figure intros, chart-guidance blocks ("Što isprobati." sanctioned, "Kako čitati graf" folded into intro paragraphs), and table captions (no hard-coded numbering, no bare "Izvor:"); Repair patterns; Linting section with rule mapping and known false-positive classes; rule lifecycle. Replaced rule 3's menu of transition examples with the content-bearing principle, because the listed examples had themselves been deleted as violations on 2026-05-29.

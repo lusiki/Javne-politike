@@ -2,6 +2,8 @@
 title: "Uvod — Zašto bismo otvorili ovu knjigu?"
 ---
 
+## Što su javne politike
+
 Javne politike oblikuju gotovo svaki važan dio našeg svakodnevnog života. One određuju kako se financira obrazovanje, kako funkcionira zdravstveni sustav, koliko plaćamo poreza, tko ima pravo na socijalnu pomoć, kako se grade ceste, kako se reguliraju tržišta, kako država reagira na krize, kako se štiti okoliš i kako se raspodjeljuju troškovi i koristi života u zajednici. Iako ih često ne nazivamo tim imenom, javne politike prisutne su iza gotovo svake važne odluke države.
 
 Kada student plaća školarinu ili koristi subvencionirani obrok, kada građanin čeka pregled u bolnici, kada poduzetnik ispunjava poreznu prijavu, kada obitelj prima dječji doplatak, kada radnik plaća doprinose za mirovinsko osiguranje ili kada lokalna vlast odlučuje hoće li graditi vrtić, riječ je o javnim politikama. One nisu apstraktne odluke udaljenih institucija, nego konkretna pravila, programi i instrumenti koji utječu na ponašanje ljudi, raspodjelu resursa i kvalitetu života.
@@ -21,6 +23,8 @@ Zato javne politike nisu samo tehničko pitanje upravljanja. One uvijek uključu
 Država nije ni samo rješenje, ni samo problem. Ona je složen sustav odluka, poticaja, pravila, organizacija i ljudi. Ponekad je nužna jer tržišta sama ne mogu osigurati javna dobra, riješiti eksternalije, smanjiti nejednakosti ili stabilizirati gospodarstvo. Ponekad, međutim, može i sama postati izvor problema. Politike mogu biti loše dizajnirane, administracija može biti neučinkovita, interesne skupine mogu zarobiti regulaciju, političari mogu misliti kratkoročno, a troškovi loših odluka mogu se prebaciti na buduće generacije.
 
 Zato cilj ove knjige nije uvjeriti čitatelja da treba uvijek više države ili uvijek manje države. To bi bilo prejednostavno. Pravo se pitanje uvijek tiče toga kakva država, za koje probleme, s kojim instrumentima, pod kojim pravilima i s kakvom odgovornošću. Cilj zato nije ideološki odabrati stranu, nego razumjeti uvjete pod kojima javne politike mogu stvarati javnu vrijednost.
+
+## Od triju perspektiva do metode
 
 Razumijevanje javnih politika kao kombinacije ekonomije, politike i institucija nije neutralan opis, nego operativna metoda. Ona pretpostavlja određen način postupanja s problemom. Prvo se traži preciznija formulacija problema umjesto njegove sažete političke verzije, jer način na koji problem zovemo često unaprijed sužava prostor rješenja. Drugo se traže poticaji koje stvaraju različite politike, jer su upravo poticaji ono što oblikuje stvarno ponašanje, ne nominalni ciljevi koji su zapisani u dokumentima. Treće se traže institucionalni preduvjeti provedbe, jer politika koja prelazi kapacitete administracije u kojoj se primjenjuje proizvodi ishode neovisne od svoje teorijske kvalitete. Četvrto se traže učinci za pojedine društvene skupine, jer agregatni saldo politike rijetko opisuje njezino stvarno djelovanje na ljude koji se s njom susreću.
 

@@ -15,5 +15,31 @@
     "callout_applied_per_chapter": [1, 3],
     "callout_empirical_per_chapter": [1, 3],
     "exercises_min": 1
+  },
+  "structure": {
+    "note": "S7 section-rhythm bands, added 2026-06-11, extended v1.1 same day. Measured from the live book; the essay band is the 19-reforme norm (even sections, no ### nesting). Two chapter templates: essay (default) demands evenness within the chapter; catalogue (declared roster) demands uniformity among the entry sections, bracketed by full-weight frames. Read by skills/book-continuity/scripts/structure_lint.R. word_chapter_max is a soft cap flagging deep-dive chapters (14-porezi) for split-or-exempt review, not a hard limit. v1.1 added: coda rule (last body section >= median weight), evenness_cv_max (coefficient of variation of body section weights, the headline diagnosis), element weighting (callouts/figures/ojs/tables count toward a section's rendered weight via element_words each), scaffold detection (mostly elements, little prose), and paragraph rhythm (reader-checked, not gated).",
+    "vodic_label": "Vodič kroz poglavlje",
+    "summary_label": "Sažetak",
+    "catalogue_chapters": ["12-instrumenti", "15-drzavni-neuspjesi"],
+    "deep_dive_chapters": ["14-porezi"],
+    "deep_dive_note": "14-porezi is a sanctioned long-form deep-dive (~9400 w, 4x median). The word-cap and evenness flags on it are expected and not pathologies. Whether to split it into two chapters is a co-author/architecture decision recorded for DIO IV, not an S7 fix. Internal ### nesting in its non-reserved sections (e.g. Vrste poreza) is still cleaned; the AI and EU/Hrvatska sections hold reserved Croatian and co-author content and are left to the co-authors.",
+    "word_chapter_max": 4500,
+    "evenness_cv_max": 0.55,
+    "element_words": { "callout": 70, "figure": 60, "ojs": 60, "table": 50 },
+    "coda_min_ratio_to_median": 0.6,
+    "scaffold_min_prose_words": 60,
+    "essay": {
+      "sections": [6, 9],
+      "pars": [3, 10],
+      "words": [200, 700],
+      "ratio_max": 3,
+      "vodic_pars": [2, 4],
+      "par_words": [40, 130]
+    },
+    "catalogue": {
+      "entry_pars": [2, 4],
+      "entry_words": [120, 400],
+      "frame_pars": [4, 12]
+    }
   }
 }

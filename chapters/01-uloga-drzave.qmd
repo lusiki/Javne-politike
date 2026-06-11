@@ -12,6 +12,8 @@ title: "Uloga države u gospodarstvu"
 5. Što teoremi ekonomike blagostanja govore o odnosu učinkovitosti i pravednosti?
 :::
 
+## Zašto tržišnom gospodarstvu treba država
+
 U demokratskim društvima koja se temelje na slobodnom tržištu prirodno se postavlja pitanje zašto nam država uopće treba. Ako pojedinci mogu slobodno donositi odluke, ako poduzeća mogu proizvoditi i nuditi dobra i usluge, ako se cijene oblikuju na tržištu, a potrošači svojim izborima odlučuju što žele kupovati, zašto bi država trebala intervenirati? Ne bi li tržište samo, kroz konkurenciju, poduzetništvo i slobodnu razmjenu, trebalo dovesti do najboljih mogućih ishoda?
 
 To je jedno od temeljnih pitanja javnih financija i ekonomike javnog sektora. U tržišnom gospodarstvu većina odluka doista se donosi decentralizirano. Kućanstva odlučuju koliko će raditi, što će kupovati, koliko će štedjeti i u što će ulagati. Poduzeća odlučuju što će proizvoditi, koje će radnike zaposliti, koje će tehnologije koristiti i po kojim će cijenama nuditi svoje proizvode. Tržište povezuje te odluke kroz sustav cijena. Ako potrošači više žele neki proizvod, potražnja raste, cijena šalje signal proizvođačima, a oni imaju poticaj povećati proizvodnju. Ako se neko dobro proizvodi neučinkovito, konkurencija pritišće proizvođače da smanje troškove, poboljšaju kvalitetu ili izađu s tržišta.
@@ -46,7 +48,7 @@ Informacijska funkcija cijena dublja je od posrednog signaliziranja oskudice. Ci
 
 Takvu informaciju nijedan središnji planer ne može prikupiti unaprijed. Znanje koje cijene koordiniraju je raspršeno, kontekstualno i često prešutno da bi se moglo prenijeti nekom statističkom uredu ili planskom tijelu. Tržište zato nije samo mehanizam alokacije, nego i mehanizam stvaranja i agregacije znanja koje bi bez njega ostalo neiskorišteno. Razumijevanje cijena kao informacijskog sustava jedan je od najsnažnijih argumenata u korist decentraliziranih tržišnih institucija i ujedno objašnjava zašto centralno planiranje proizvodnje gotovo redovito zakazuje [@hayek1945].
 
-### Pareto učinkovitost
+## Pareto učinkovitost i mjerila blagostanja
 
 Kada ekonomisti procjenjuju je li neka raspodjela resursa dobra, polaze od skromnog mjerila. Ne pitaju je li alokacija savršena ni je li pravedna, nego je li u njoj ostalo neiskorištenih prilika za poboljšanje. To je mjerilo Pareto učinkovitosti.
 
@@ -64,7 +66,7 @@ Prema **Kaldor-Hicksovu kriteriju** promjena je društveno opravdana ako su agre
 
 Na tom kriteriju počiva analiza troškova i koristi kao standardni alat javnog odlučivanja [@boardman2018]. Pristup ima svoju cijenu. Sažimanjem dobitaka i gubitaka u zajedničku novčanu mjeru implicitno se pretpostavlja da je dodatni euro jednako vrijedan svima, čime se zaobilazi pitanje raspodjele dohotka. Kaldor-Hicksov kriterij zato olakšava donošenje odluka, ali ne uklanja političku odgovornost za to tko stvarno gubi, a tko dobiva.
 
-#### Edgeworthova kutija i ugovorna krivulja
+## Edgeworthova kutija i krivulja ugovora
 
 Edgeworthova kutija prikazuje sve moguće raspodjele dvaju dobara između dvaju potrošača. Svaka točka u kutiji označava jednu alokaciju. Ono što dobije potrošač A mjeri se od donjeg lijevog ishodišta, a ono što dobije potrošač B iz suprotnog, gornjeg desnog ishodišta.
 
@@ -252,6 +254,8 @@ eb_pC = eb_controls.pC
 
 **Što isprobati.** (1) Pomaknite klizač Položaj točke A udesno i točka A klizi po zelenoj krivulji ugovora, no plavi i crveni luk kroz nju ostaju tangentni, što potvrđuje da je svaka točka na krivulji Pareto učinkovita bez obzira na to koliko je nejednaka raspodjela dobra X. (2) Postavite A-ovu naklonost dobru X (α) i B-ovu naklonost dobru X (β) na blisku vrijednost oko 0,5 i zelena krivulja gotovo se izravna u dijagonalu kutije, jer su pri sličnim preferencijama učinkovite alokacije raspoređene ravnomjerno. (3) Razdvojite α prema 0,75 i β prema 0,25 i krivulja ugovora se snažno iskrivi prema rubu, pa Pareto učinkovite točke postaju izrazito asimetrične iako nijedna od njih nije ništa manje učinkovita od ostalih.
 
+## Teoremi ekonomike blagostanja
+
 Na temelju tog pojma razvijena su dva temeljna teorema ekonomike blagostanja. **Prvi teorem ekonomike blagostanja** kaže da, pod određenim uvjetima, konkurentsko tržište vodi do Pareto učinkovite alokacije resursa. Ti uvjeti uključuju savršenu konkurenciju, potpune informacije, jasno definirana vlasnička prava, nepostojanje eksternalija, nepostojanje javnih dobara i nepostojanje tržišne moći. Ako su ti uvjeti zadovoljeni, pojedinci i poduzeća, slijedeći vlastite interese, kroz tržišnu razmjenu mogu dovesti do učinkovite alokacije resursa [@arrow1954].
 
 Ovaj teorem pruža snažan argument u korist tržišta. On pokazuje da tržište, u idealnim uvjetima, ne mora biti kaotičan ili sebičan sustav koji vodi društvenom neredu. Naprotiv, decentralizirane odluke pojedinaca i poduzeća mogu, kroz cijene i konkurenciju, dovesti do učinkovite uporabe društvenih resursa. To je jedan od razloga zašto se tržište smatra temeljnim mehanizmom alokacije u modernim gospodarstvima.
@@ -275,6 +279,8 @@ Druga, jednako važna prepreka tiče se same izvedivosti preraspodjele kao odvoj
 Ta dinamika pokazuje da odvajanje učinkovitosti od pravednosti nije samo administrativna pretpostavka, nego pretpostavka o postojanju depolitiziranog institucionalnog okvira koji se sam ne mijenja. Tamo gdje političke institucije nisu vjerodostojno odvojene od raspodjele dohotka, drugi teorem opisuje koristan misaoni eksperiment, ali ne i provedivu strategiju ekonomske politike.
 
 Unatoč tim ograničenjima, oba teorema ekonomike blagostanja vrlo su važna za razumijevanje uloge države. Prvi teorem objašnjava zašto tržište može biti učinkovit mehanizam alokacije. Drugi teorem objašnjava zašto pitanje učinkovitosti nije isto što i pitanje pravednosti. Zajedno nam pokazuju temeljnu logiku klasične javne ekonomike. Tržište je važno jer može učinkovito alocirati resurse, ali država je važna jer uvjeti za savršeno funkcioniranje tržišta često nisu zadovoljeni i jer društvo može željeti drugačiju raspodjelu dohotka i životnih prilika.
+
+## Koliko su stvarna tržišta blizu idealu
 
 Iz takve teorijske rasprave prirodno slijedi pitanje koliko su empirijska tržišta blizu uvjetima prvog teorema. Teorijska analiza pokazuje da je pretpostavka približno učinkovite alokacije najjača u tržištima s velikim brojem aktera, niskim troškovima ulaska, jasno definiranim vlasničkim pravima i jednostavnim, ponovljivim transakcijama, kao što je veleprodaja roba široke potrošnje ili dnevna trgovina valutama. Što je proizvod složeniji za procjenu, što je transakcija rjeđa i što je informacijska asimetrija između kupca i prodavača veća, to su odstupanja od prvog teorema sustavnija i veća [@stiglitz1995].
 
