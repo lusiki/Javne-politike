@@ -13,6 +13,8 @@ title: "Distribucijska funkcija — država i pitanje pravednosti"
 6. Zašto je distribucijska funkcija temelj društvene solidarnosti?
 :::
 
+## Učinkovit ishod koji društvo ne mora prihvatiti
+
 Distribucijska funkcija države odnosi se na utjecaj javnih politika na raspodjelu dohotka, bogatstva i životnih prilika. Dok alokacijska funkcija polazi od pitanja funkcionira li tržište učinkovito, distribucijska funkcija pita je li raspodjela koju tržište proizvodi društveno prihvatljiva.
 
 Tržište raspodjeljuje dohodak prema različitim čimbenicima koji uključuju vlasništvo nad kapitalom i imovinom, obrazovanje, vještine, radno iskustvo, produktivnost, poduzetničku sposobnost, naslijeđe, tržišnu moć, pregovaračku poziciju, sreću i okolnosti u kojima se pojedinac rodio. Neki ljudi nasljeđuju imovinu, kvalitetno obrazovanje i mreže poznanstava. Drugi odrastaju u siromaštvu, slabijim školama, nepovoljnijim lokalnim sredinama ili obiteljima s manjim mogućnostima ulaganja u djecu. Tržište te početne razlike ne uklanja automatski. Naprotiv, često ih može dodatno pojačati.
@@ -198,6 +200,8 @@ Distribucijska funkcija države pokazuje da javne financije nisu samo tehničko 
 Utilitarizam naglašava da preraspodjela može povećati ukupno blagostanje ako dodatni dohodak više koristi siromašnima nego bogatima. Rawlsov pristup naglašava zaštitu onih koji su u najlošijem položaju. Robni egalitarizam naglašava jednak pristup temeljnim dobrima poput obrazovanja i zdravstva. Paternalizam pokazuje da država ponekad oblikuje izbore pojedinaca radi njihove dugoročne dobrobiti ili zaštite drugih.
 
 Država ne intervenira samo zato da bi tržište bilo učinkovitije, nego i zato da bi društvo bilo pravednije, sigurnije i uključivije. No pritom mora stalno voditi računa o poticajima, troškovima i provedbi. Dobra distribucijska politika ne teži jednostavnoj uravnilovci, nego pokušava osigurati da tržišno gospodarstvo bude povezano s društvenom solidarnošću, jednakim prilikama i zaštitom onih koji su najranjiviji.
+
+Klasična analiza triju funkcija države dosad je počivala na prešutnoj pretpostavci da država, jednom kad prepozna tržišni neuspjeh ili nepravednu raspodjelu, može i želi djelovati u općem interesu. Alokacijska, distribucijska i stabilizacijska funkcija govore što bi država trebala činiti, ali ne i hoće li to doista učiniti, niti tko unutar nje o tome odlučuje i s kojim vlastitim poticajima. Upravo tu pretpostavku sljedeći dio knjige stavlja pod povećalo, prelazeći s pitanja koje zadaće država ima na pitanje kako stvarno nastaju njezine odluke.
 
 ::: {.sazetak-panel}
 ## Sažetak
