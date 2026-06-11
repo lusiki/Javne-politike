@@ -102,9 +102,7 @@ Iz usporednog kuta moguće je razlikovati dva tipa sustava u kojima interesne sk
 
 Empirijski je obrazac jasan, ali smjer pouke nije jednoznačan. Korporativistički sustavi pokazuju manje vidljive epizode lova na rentu od pluralističkih, ali su podložniji *institucionalnoj sklerozi* koju je Olson opisao kao postupno gomilanje stabilnih distribucijskih koalicija koje koče reformu i usporavaju gospodarski rast [@olson1982]. Pluralistički sustavi prepuštaju više borbi javnosti i sudovima, što povećava transparentnost, ali i pojavnu razinu sukoba. Niti jedan model nije inherentno bolji. Oni nude različite kompromise između stabilnosti i prilagodljivosti, vidljivosti i obuzdavanja, a ono što jednom političkom sustavu odgovara, drugome može produbiti njegove već postojeće slabosti.
 
-## Zašto je to važno za javne politike
-
-Analiza interesnih skupina objašnjava zašto stvarne politike često odstupaju od onoga što bi „tehnički ispravna" analiza preporučila. Pokazuje zašto neke neučinkovite mjere opstaju desetljećima, zašto se povlastice teško ukidaju i zašto se reforme s raspršenim koristima i koncentriranim troškovima teško provode. Kada interesne skupine, političari i administracija dijele interes za održavanjem određene politike, nastaje stabilan savez koji se najjasnije vidi u odnosu prema birokraciji i njezinim proračunima.
+Analiza interesnih skupina objašnjava zašto stvarne politike često odstupaju od onoga što bi „tehnički ispravna" analiza preporučila. Ona pokazuje zašto neke neučinkovite mjere opstaju desetljećima, zašto se povlastice teško ukidaju i zašto se reforme s raspršenim koristima i koncentriranim troškovima teško provode. Kada interesne skupine, političari i administracija dijele interes za održavanjem određene politike, nastaje stabilan savez koji se najjasnije vidi u odnosu prema birokraciji i njezinim proračunima, čime se otvara tema sljedećeg poglavlja.
 
 ::: {.sazetak-panel}
 ## Sažetak
