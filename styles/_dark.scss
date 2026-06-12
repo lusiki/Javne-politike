@@ -130,16 +130,20 @@ div.callout-warning  { border-left-color: #DD9858 !important; }
 div.callout-caution  { border-left-color: #D0736C !important; }
 
 // Okviri poglavlja (Vodič / Sažetak)
+// Editorijalni (frameless) registar i u tamnom načinu — bez tonirane ploče,
+// samo vlasna crta i prigušeni tracked-caps natpis.
 .vodic-panel,
 .sazetak-panel {
-  background: #2A241D !important;
-  border-color: rgba(159, 144, 123, 0.18) !important;
+  background: none !important;
+  border: none !important;
+  border-top: 1px solid rgba(159, 144, 123, 0.22) !important;
 }
 .vodic-panel h2,
-.sazetak-panel h2 { color: #9DBBAC !important; }
+.sazetak-panel h2 { color: #B7AE9D !important; }
 .vodic-panel ol > li::before {
-  background: #6E9080 !important;
-  color: #1C1916 !important;
+  background: none !important;
+  border: 1px solid rgba(159, 144, 123, 0.35) !important;
+  color: #B7AE9D !important;
 }
 
 // Custom blokovi

@@ -338,26 +338,74 @@ div.callout-caution {
 
 // =============================================================
 // Okviri poglavlja — "Vodič kroz poglavlje" (numerirana pitanja) i "Sažetak".
-// Suptilno tonirane ploče koje izdvajaju početak i kraj poglavlja.
+// Editorijalni registar naslovnice (STATECRAFT): bez toniranog okvira,
+// blokovi su dio stranice — razdvaja ih samo tanka vlasna crta, a naslov
+// postaje tracked-caps natpis u maniri „OPSEG / AUTORI" oznaka.
 // Upotreba: ## Vodič kroz poglavlje {.vodic-panel} / ## Sažetak {.sazetak-panel}
 // =============================================================
 .vodic-panel,
 .sazetak-panel {
-  background: $brand-light-gold;
-  border: 1px solid $sc-rule;
-  border-radius: 6px;
-  padding: 1.25rem 1.6rem 1.35rem;
-  margin: 2.2rem 0;
+  background: none;
+  border: none;
+  border-top: 1px solid $sc-rule;
+  border-radius: 0;
+  padding: 1.6rem 0 0.4rem;
+  margin: 2.6rem 0;
 }
 
 .vodic-panel > section,
 .sazetak-panel > section { margin: 0; padding: 0; }
 
-.vodic-panel h2,
-.sazetak-panel h2 {
-  margin-top: 0;
+// --- Vodič: cijeli blok u IBM Plex Mono registru ----------------
+// Mono (isti font kao meta-vrijednost „20 poglavlja · 5 dijelova" na
+// naslovnici, .sc-meta-mono) daje listi pitanja skenirljiv, tehnički ton.
+// Mono je širi pa je veličina tijela snižena uz opušteniji prored.
+.vodic-panel { font-family: $brand-font-mono; }
+
+.vodic-panel ol > li {
+  font-family: $brand-font-mono;
+  font-size: 0.84rem;
+  line-height: 1.7;
+  letter-spacing: -0.01em;
+}
+
+// Vodič naslov → tracked-caps natpis u mono registru
+.vodic-panel h2 {
+  font-family: $brand-font-mono;
+  font-size: 0.72rem;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: $brand-slate;
+  font-feature-settings: "tnum" 1, "lnum" 1;
+  margin: 0 0 1rem;
+  padding: 0;
+  border-top: none;
   border-bottom: none;
-  color: $sc-verdigris-deep;
+  line-height: 1.2;
+}
+
+// --- Sažetak: ne-mono — Public Sans natpis + serif proza ---------
+// Sažetak se čita kao tekst, pa ostaje u proznom serif registru knjige,
+// a naslov je tracked-caps natpis u Public Sans (kao .section-label oznake
+// „OPSEG / AUTORI" na naslovnici).
+.sazetak-panel h2 {
+  font-family: $brand-font-sans;
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: $brand-slate;
+  margin: 0 0 1rem;
+  padding: 0;
+  border-top: none;
+  border-bottom: none;
+  line-height: 1.2;
+}
+
+.sazetak-panel p {
+  font-family: $brand-font-serif;
+  line-height: 1.6;
 }
 
 .vodic-panel ol {
@@ -370,26 +418,31 @@ div.callout-caution {
 .vodic-panel ol > li {
   counter-increment: vq;
   position: relative;
-  padding-left: 2.7rem;
-  margin: 0.65rem 0;
+  padding-left: 2.4rem;
+  margin: 0.8rem 0;
+  line-height: 1.7;
 }
 
+// Numeracija: tiha, editorijalna — tabularni broj u boji teksta s tankom
+// vlasnom granicom umjesto punog brend-kruga (bez „obojenog" naglaska).
 .vodic-panel ol > li::before {
   content: counter(vq);
   position: absolute;
   left: 0;
-  top: 0.02em;
-  width: 1.7rem;
-  height: 1.7rem;
+  top: 0.05em;
+  width: 1.55rem;
+  height: 1.55rem;
   border-radius: 50%;
-  background: $brand-gold;
-  color: #fff;
+  background: none;
+  border: 1px solid $sc-rule-strong;
+  color: $brand-slate;
   display: inline-flex;
   align-items: center;
   justify-content: center;
   font-family: $brand-font-sans;
-  font-weight: 700;
-  font-size: 0.82rem;
+  font-weight: 600;
+  font-size: 0.78rem;
+  font-variant-numeric: tabular-nums lining-nums;
 }
 
 .vodic-panel *:last-child,
