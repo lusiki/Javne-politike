@@ -571,15 +571,6 @@ li.vd-branch:nth-child(even) a.vd-branch-card { border-left-color: var(--vd-acce
   }
 }
 
-// --- Staze čitanja ---
-.reading-path {
-  background: rgba(232, 223, 208, 0.04) !important;
-  border-left-color: #D0736C !important;
-}
-.reading-path .reading-path-label,
-.reading-path .reading-path-route { color: #F0E8D8 !important; }
-.reading-path .reading-path-desc { color: #C7BEAF !important; }
-
 // =============================================================
 // OJS grafovi u tamnom načinu (izvjestaj-estetski H5)
 // Svaki Plot fiksira boje osi/marki na tintu (#3A332D / #1C1916), a Quarto
