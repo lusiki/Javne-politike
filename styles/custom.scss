@@ -47,8 +47,11 @@ $font-family-serif:      $brand-font-serif;
 $font-family-sans-serif: $brand-font-sans;
 $font-family-monospace:  $brand-font-mono;
 
-$body-color: $brand-charcoal;
-$body-bg:    $brand-cream;
+// !default da _dark.scss može nadjačati u tamnom compileu — bez toga se
+// tamni bootstrap kompajlira sa svijetlim --bs-body-bg pa offcanvas/dropdown/
+// form-kontrole nasljeđuju krem u tamnom načinu (izvjestaj-estetski M9).
+$body-color: $brand-charcoal !default;
+$body-bg:    $brand-cream !default;
 
 // Callouti
 $callout-border-width: 3px;

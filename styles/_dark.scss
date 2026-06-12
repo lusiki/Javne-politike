@@ -41,18 +41,18 @@ nav a,
   color: #C7BEAF !important;
 
   &:hover, &.active {
-    color: #C8615A !important;
+    color: #D0736C !important;
   }
 }
 
 // Linkovi — svjetlija brick za kontrast na tamnoj pozadini
 a {
-  color: #C8615A !important;
+  color: #D0736C !important;
   border-bottom-color: rgba(159, 144, 123, 0.45) !important;
 
   &:hover {
     color: #DD8580 !important;
-    border-bottom-color: #C8615A !important;
+    border-bottom-color: #D0736C !important;
     background: rgba(200, 97, 90, 0.08) !important;
   }
 }
@@ -70,7 +70,7 @@ table {
 
 table thead th {
   color: #F0E8D8 !important;
-  border-bottom-color: #C8615A !important;
+  border-bottom-color: #D0736C !important;
   background: #2A241D !important;
 }
 
@@ -100,7 +100,7 @@ code:not(pre code) {
 
 // Blockquote
 blockquote {
-  border-left-color: #C8615A !important;
+  border-left-color: #D0736C !important;
   color: #E8DFD0 !important;
 
   cite, footer, .blockquote-footer {
@@ -127,7 +127,7 @@ div.callout-note     { border-left-color: #B0A998 !important; }
 div.callout-tip      { border-left-color: #6BCF87 !important; }
 div.callout-important{ border-left-color: #C57832 !important; }
 div.callout-warning  { border-left-color: #DD9858 !important; }
-div.callout-caution  { border-left-color: #C8615A !important; }
+div.callout-caution  { border-left-color: #D0736C !important; }
 
 // Okviri poglavlja (Vodič / Sažetak)
 .vodic-panel,
@@ -145,7 +145,7 @@ div.callout-caution  { border-left-color: #C8615A !important; }
 // Custom blokovi
 .pullquote, div.pullquote {
   color: #F0E8D8 !important;
-  border-left-color: #C8615A !important;
+  border-left-color: #D0736C !important;
 
   &::before { color: rgba(200, 97, 90, 0.20) !important; }
   cite, .cite { color: #C7BEAF !important; }
@@ -174,7 +174,7 @@ div.callout-caution  { border-left-color: #C8615A !important; }
 
 // Citation / footnote
 .citation, a.citation {
-  color: #C8615A !important;
+  color: #D0736C !important;
 
   &:hover {
     color: #DD8580 !important;
@@ -194,21 +194,21 @@ a[role="doc-noteref"] {
 
 // Anchor
 a.anchorjs-link {
-  color: #C8615A !important;
+  color: #D0736C !important;
 
   &:hover { color: #DD8580 !important; }
 }
 
 header#title-block-header h1.title::after {
-  background: #C8615A !important;
+  background: #D0736C !important;
 }
 
 .chapter-kicker, .book-hero-kicker {
-  color: #C8615A !important;
+  color: #D0736C !important;
 }
 
 // Hero / landing
-.book-hero::after { background: #C8615A !important; }
+.book-hero::after { background: #D0736C !important; }
 
 .book-hero-image img {
   box-shadow:
@@ -221,11 +221,11 @@ header#title-block-header h1.title::after {
 
 .book-hero-authors {
   color: #E8DFD0 !important;
-  a { color: #C8615A !important; }
+  a { color: #D0736C !important; }
 }
 
 .cta-button {
-  background: #C8615A !important;
+  background: #D0736C !important;
   color: #1F1A14 !important;
 
   &:hover {
@@ -240,14 +240,14 @@ header#title-block-header h1.title::after {
 
   &:hover {
     background: rgba(200, 97, 90, 0.10) !important;
-    border-color: #C8615A !important;
+    border-color: #D0736C !important;
   }
 }
 
 .feature-grid .feature-card {
   background: #2A241D !important;
   border-color: rgba(159, 144, 123, 0.20) !important;
-  border-top-color: #C8615A !important;
+  border-top-color: #D0736C !important;
 
   &:hover {
     box-shadow: 0 8px 24px rgba(0, 0, 0, 0.40) !important;
@@ -263,12 +263,12 @@ header#title-block-header h1.title::after {
   color: #C7BEAF !important;
 
   strong { color: #F0E8D8 !important; }
-  .book-date { color: #C8615A !important; }
+  .book-date { color: #D0736C !important; }
 }
 
 // Reading progress
 #reading-progress {
-  background: linear-gradient(90deg, #C8615A 0%, #DDB05E 100%) !important;
+  background: linear-gradient(90deg, #D0736C 0%, #DDB05E 100%) !important;
   box-shadow: 0 0 8px rgba(200, 97, 90, 0.45) !important;
 }
 
@@ -278,7 +278,7 @@ header#title-block-header h1.title::after {
   color: #E8DFD0 !important;
   border: 1px solid rgba(159, 144, 123, 0.25) !important;
 
-  .ihp-title { color: #C8615A !important; }
+  .ihp-title { color: #D0736C !important; }
 }
 
 // Selection
@@ -288,7 +288,7 @@ header#title-block-header h1.title::after {
 }
 
 // End mark / dinkus
-.dinkus::before { color: #C8615A !important; }
+.dinkus::before { color: #D0736C !important; }
 
 // Definitions / dotted
 dfn, .term, abbr[title] {
@@ -302,7 +302,7 @@ dfn, .term, abbr[title] {
 
 // Focus rings
 *:focus-visible {
-  outline-color: #C8615A !important;
+  outline-color: #D0736C !important;
 }
 
 // Search overlay
@@ -332,13 +332,13 @@ figure > figcaption,
 figure.figure figcaption {
   color: #C7BEAF !important;
 
-  &::before { background: #C8615A !important; }
+  &::before { background: #D0736C !important; }
 }
 
 .figure-caption strong:first-child,
 figcaption strong:first-child,
 caption strong:first-child {
-  color: #C8615A !important;
+  color: #D0736C !important;
 }
 
 // =============================================================
@@ -376,7 +376,7 @@ body {
   --vd-wash:        rgba(200, 152, 94, 0.12);
 }
 .vd-dio-3, .vd-acc-3 {
-  --vd-accent:      #C8615A;
+  --vd-accent:      #D0736C;
   --vd-accent-deep: #DD8580;
   --vd-wash:        rgba(200, 97, 90, 0.12);
 }
@@ -485,4 +485,153 @@ li.vd-branch:nth-child(even) a.vd-branch-card { border-left-color: var(--vd-acce
 // =============================================================
 .column-margin {
   color: #C7BEAF !important;
+}
+
+// =============================================================
+// Naslovnica (landing / index) — tamne varijante (izvjestaj-estetski H4)
+// Bez ovoga gumbi, autorska meta, kartica korica, staze čitanja i TOC
+// renderiraju ink-na-sepiji (≈1:1, nevidljivo). Jedan dark primarni za
+// chrome/linkove = cigla #D0736C (M13, AA 5.22:1), hover #DD8580.
+// =============================================================
+
+// --- Gumbi (.btn sustav) ---
+.btn-primary {
+  background: #D0736C !important;
+  color: #1F1A14 !important;
+  border-color: #D0736C !important;
+}
+.btn-primary:hover {
+  background: #DD8580 !important;
+  color: #1F1A14 !important;
+  border-color: #DD8580 !important;
+}
+.btn-secondary,
+.btn-ghost {
+  color: #E8DFD0 !important;
+  border-color: rgba(232, 223, 208, 0.30) !important;
+  background: transparent !important;
+}
+.btn-secondary:hover,
+.btn-ghost:hover {
+  background: rgba(232, 223, 208, 0.06) !important;
+  color: #F0E8D8 !important;
+}
+
+// --- Autorska meta ispod CTA ---
+.sc-author-row {
+  color: #C7BEAF !important;
+  border-top-color: rgba(232, 223, 208, 0.14) !important;
+}
+.sc-author-cell strong,
+.sc-author-cell b {
+  color: #F0E8D8 !important;
+}
+.sc-author-cell strong a {
+  border-bottom-color: rgba(208, 115, 108, 0.5) !important;
+  &:hover { color: #D0736C !important; }
+}
+
+// --- Kartica korica ---
+.sc-cover-card {
+  background: #2A241D !important;
+  border-color: rgba(232, 223, 208, 0.20) !important;
+  box-shadow: -1px 1px 0 #D0736C !important;
+}
+.sc-cover-card h2.sc-cover-title,
+.sc-cover-top { color: #F0E8D8 !important; }
+.sc-cover-card hr { border-color: rgba(232, 223, 208, 0.20) !important; }
+.sc-cover-lede,
+.sc-cover-foot,
+.sc-cover-author { color: #C7BEAF !important; }
+.sc-cover-author em,
+.sc-cover-author i { color: #F0E8D8 !important; }
+.sc-cover-glyph { color: #D0736C !important; }
+.sc-cover-btn.btn {
+  color: #E8DFD0 !important;
+  border-color: rgba(232, 223, 208, 0.30) !important;
+  &:hover, &:focus-visible {
+    background: rgba(232, 223, 208, 0.06) !important;
+    color: #F0E8D8 !important;
+  }
+}
+
+// --- Staze čitanja ---
+.reading-path {
+  background: rgba(232, 223, 208, 0.04) !important;
+  border-left-color: #D0736C !important;
+}
+.reading-path .reading-path-label,
+.reading-path .reading-path-route { color: #F0E8D8 !important; }
+.reading-path .reading-path-desc { color: #C7BEAF !important; }
+
+// =============================================================
+// OJS grafovi u tamnom načinu (izvjestaj-estetski H5)
+// Svaki Plot fiksira boje osi/marki na tintu (#3A332D / #1C1916), a Quarto
+// postavlja background:none na SVG — pa tekst i marke iščeznu na tamnom dnu.
+// Najjeftiniji popravak bez diranja .qmd: dati grafu papirnatu karticu, pa
+// fiksne tamne boje opet imaju svijetlu podlogu i ostaju čitki.
+// =============================================================
+.cell-output-display > svg,
+.cell-output-display > figure > svg,
+.cell-output-display svg[class^="plot-"] {
+  background: #F2EDE3 !important;   /* paper */
+  border-radius: 3px;
+  padding: 8px;
+  box-sizing: border-box;
+}
+
+// =============================================================
+// Atlas (podaci.qmd) — tamne varijante (izvjestaj-estetski M10)
+// Kromiranje (rail, breadcrumb, toolbar) ide na sepiju; viz/tablica/legenda
+// ostaju papirnate kartice da Plot na brend-hexovima ostane čitak (kao H5).
+// =============================================================
+.atlas-page {
+  .atlas { color: #E8DFD0 !important; }
+
+  // Rail (lijevi stupac)
+  .atlas-rail {
+    background: #2A241D !important;
+    border-color: rgba(232, 223, 208, 0.16) !important;
+    .atlas-rail__title { color: #F0E8D8 !important; }
+    .atlas-rail__sub { color: #C7BEAF !important; }
+    input {
+      background: rgba(232, 223, 208, 0.06) !important;
+      color: #E8DFD0 !important;
+      border-color: rgba(232, 223, 208, 0.18) !important;
+      &::placeholder { color: #9A917F !important; }
+      &:focus { border-color: #D0736C !important; }
+    }
+    .atlas-rail__group { color: #C7BEAF !important; }
+    .atlas-rail__item {
+      color: #E8DFD0 !important;
+      &:hover { background: rgba(232, 223, 208, 0.06) !important; }
+      &.is-active {
+        background: rgba(208, 115, 108, 0.16) !important;
+        border-left-color: #D0736C !important;
+        color: #F0E8D8 !important;
+      }
+      .n { color: #C7BEAF !important; }
+    }
+  }
+
+  // Panel chrome
+  .atlas-panel__breadcrumb { color: #C7BEAF !important; }
+  .atlas-panel__title { color: #F0E8D8 !important; }
+  .atlas-panel__toolbar {
+    color: #C7BEAF !important;
+    select {
+      background: #2A241D !important;
+      color: #E8DFD0 !important;
+      border-color: rgba(232, 223, 208, 0.18) !important;
+    }
+  }
+  .atlas-panel__tabs {
+    a { color: #C7BEAF !important;
+      &.is-active { color: #F0E8D8 !important; border-bottom-color: #F0E8D8 !important; }
+      &.is-disabled { color: #9A917F !important; }
+    }
+  }
+
+  // viz / tablica / legenda ostaju svijetle kartice (Plot na brendu)
+  .atlas-panel__table th { color: #6B6357 !important; }
 }

@@ -2,18 +2,18 @@
    Globalna stilska podešavanja koja nadopunjuju custom.scss
    ========================================================= */
 
-/* Navbar blends into page background */
+/* Navbar blends into page background — STATECRAFT (paper/ink/verdigris) */
 .navbar {
-  background-color: #F6F1E8 !important;
+  background-color: #F2EDE3 !important;   /* paper */
   box-shadow: none !important;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+  border-bottom: 1px solid rgba(28, 25, 22, 0.06);
 }
 .navbar .navbar-brand,
 .navbar .nav-link {
-  color: #14213D !important;
+  color: #1C1916 !important;   /* ink */
 }
 .navbar .nav-link:hover {
-  color: #B08538 !important;
+  color: #4A6B5C !important;   /* verdigris */
 }
 
 /* Hide index.qmd (home page) entry from sidebar TOC */
@@ -43,10 +43,10 @@ body.standalone-page #quarto-document-content {
   grid-column: 1 / -1 !important;
 }
 
-/* PDF button in navbar — styled as a pill button */
+/* PDF button in navbar — styled as a pill button (STATECRAFT) */
 .navbar a.nav-link[href*=".pdf"] {
-  background-color: #14213D !important;
-  color: #FAFAF5 !important;
+  background-color: #4A6B5C !important;   /* verdigris */
+  color: #F2EDE3 !important;              /* paper */
   border-radius: 4px;
   padding: 0.3rem 0.8rem !important;
   font-weight: 600;
@@ -54,8 +54,8 @@ body.standalone-page #quarto-document-content {
   margin-left: 0.5rem;
 }
 .navbar a.nav-link[href*=".pdf"]:hover {
-  background-color: #B08538 !important;
-  color: #FAFAF5 !important;
+  background-color: #3A5648 !important;   /* verdigris-deep */
+  color: #F2EDE3 !important;
 }
 /* Hide PDF button on landing page */
 body.standalone-page .navbar a.nav-link[href*=".pdf"] {
@@ -74,8 +74,8 @@ body.standalone-page .navbar a.nav-link[href*=".pdf"] {
   display: inline-flex !important;
   align-items: center;
   gap: 0.4rem;
-  background-color: #14213D !important;
-  color: #FAFAF5 !important;
+  background-color: #4A6B5C !important;   /* verdigris */
+  color: #F2EDE3 !important;              /* paper */
   padding: 0.5rem 0.9rem !important;
   border-radius: 4px;
   text-decoration: none !important;
@@ -85,8 +85,8 @@ body.standalone-page .navbar a.nav-link[href*=".pdf"] {
   transition: background-color 0.15s ease;
 }
 .sidebar-tools-main a[href*=".pdf"]:hover {
-  background-color: #B08538 !important;
-  color: #FAFAF5 !important;
+  background-color: #3A5648 !important;   /* verdigris-deep */
+  color: #F2EDE3 !important;
 }
 .sidebar-tools-main a[href*=".pdf"]::after {
   content: "Preuzmi PDF";
@@ -104,9 +104,9 @@ a.sidebar-item-text[href$="index.html"] {
   display: none !important;
 }
 
-/* Topla off-white pozadina (a la fatih.ai), bez noise teksture */
+/* Topla papirnata pozadina (STATECRAFT paper) */
 body {
-  background-color: #F6F1E8;
+  background-color: #F2EDE3;
 }
 
 /* Glavni stupac teksta — udobnih ~70 znakova / red */
@@ -158,11 +158,11 @@ img {
   left: 0;
   height: 3px;
   width: 0%;
-  background: linear-gradient(90deg, #14213D 0%, #B08538 100%);
+  background: linear-gradient(90deg, #4A6B5C 0%, #C8985E 100%);  /* verdigris → ochre */
   z-index: 9999;
   transition: width 0.08s linear;
   pointer-events: none;
-  box-shadow: 0 0 8px rgba(176, 133, 56, 0.4);
+  box-shadow: 0 0 8px rgba(200, 152, 94, 0.4);  /* ochre glow */
 }
 
 /* =========================================================
@@ -172,9 +172,9 @@ img {
   position: absolute;
   z-index: 10000;
   max-width: 380px;
-  background: #2D3748;
-  color: #FAFAF5;
-  font-family: "Source Serif 4", Georgia, serif;
+  background: #3A332D;   /* ink-soft */
+  color: #F2EDE3;        /* paper */
+  font-family: "Newsreader", Georgia, serif;
   font-size: 0.92rem;
   line-height: 1.5;
   padding: 0.85rem 1rem;
@@ -190,10 +190,10 @@ img {
   transform: translateY(0);
 }
 .internal-hover-preview .ihp-title {
-  font-family: "Inter", sans-serif;
+  font-family: "Public Sans", sans-serif;
   font-weight: 600;
   font-size: 0.82rem;
-  color: #B08538;
+  color: #C8985E;   /* ochre — accent on dark chip */
   margin-bottom: 0.35rem;
   letter-spacing: 0.02em;
   text-transform: uppercase;
@@ -223,7 +223,7 @@ img {
 }
 
 /* =========================================================
-   Hanging punctuation (Source Serif 4 podržava)
+   Hanging punctuation (Newsreader podržava)
    ========================================================= */
 html {
   hanging-punctuation: first last;
@@ -254,10 +254,10 @@ html {
   font-weight: 700;
   letter-spacing: 0.09em;
   text-transform: uppercase;
-  color: #4A5568;
+  color: #6B6357;   /* ink-mute */
   margin: 1.75rem 0 0.4rem;
   padding-bottom: 0.3rem;
-  border-bottom: 1px solid rgba(0,0,0,0.1);
+  border-bottom: 1px solid rgba(28,25,22,0.1);
 }
 .toc-overview .toc-part:first-child {
   margin-top: 0;
@@ -266,7 +266,7 @@ html {
 /* Each chapter row */
 .toc-overview details.toc-chapter,
 .toc-overview .toc-chapter-leaf {
-  border-bottom: 1px solid rgba(0,0,0,0.06);
+  border-bottom: 1px solid rgba(28,25,22,0.06);
 }
 
 /* Summary line (chapter title) */
@@ -278,7 +278,7 @@ html {
   cursor: pointer;
   list-style: none;
   font-size: 0.97rem;
-  color: #14213D;
+  color: #1C1916;   /* ink */
   user-select: none;
 }
 .toc-overview details.toc-chapter > summary::-webkit-details-marker { display: none; }
@@ -288,7 +288,7 @@ html {
   content: "›";
   margin-left: auto;
   font-size: 1rem;
-  color: #4A5568;
+  color: #6B6357;   /* ink-mute */
   transition: transform 0.18s ease;
   flex-shrink: 0;
 }
@@ -300,21 +300,21 @@ html {
 .toc-overview .toc-num {
   font-size: 0.72rem;
   font-weight: 600;
-  color: #4A5568;
+  color: #6B6357;   /* ink-mute */
   min-width: 1.6rem;
   flex-shrink: 0;
 }
 
 /* Chapter link inside summary */
 .toc-overview details.toc-chapter > summary a {
-  color: #14213D;
+  color: #1C1916;   /* ink */
   text-decoration: none;
   font-weight: 500;
   transition: color 0.12s;
 }
 .toc-overview details.toc-chapter > summary a:hover,
 .toc-overview details.toc-chapter > summary:hover > a {
-  color: #B08538;
+  color: #4A6B5C;   /* verdigris */
 }
 
 /* Subchapter list */
@@ -331,15 +331,15 @@ html {
   display: block;
   padding: 0.25rem 0;
   font-size: 0.88rem;
-  color: #4A5568;
+  color: #6B6357;   /* ink-mute */
   text-decoration: none;
   border-left: 2px solid transparent;
   padding-left: 0.75rem;
   transition: color 0.12s, border-color 0.12s;
 }
 .toc-overview details.toc-chapter > ul li a:hover {
-  color: #B08538;
-  border-left-color: #B08538;
+  color: #4A6B5C;   /* verdigris */
+  border-left-color: #4A6B5C;
 }
 
 /* Leaf chapter (no subchapters, e.g. ch.16) */
@@ -352,12 +352,12 @@ html {
   font-weight: 500;
 }
 .toc-overview .toc-chapter-leaf a {
-  color: #14213D;
+  color: #1C1916;   /* ink */
   text-decoration: none;
   transition: color 0.12s;
 }
 .toc-overview .toc-chapter-leaf a:hover {
-  color: #B08538;
+  color: #4A6B5C;   /* verdigris */
 }
 
 /* =========================================================
@@ -371,4 +371,68 @@ html {
     animation-iteration-count: 1 !important;
     transition-duration: 0.01ms !important;
   }
+}
+
+/* =========================================================
+   Tamni način — ovaj se file učitava NAKON kompajlirane teme,
+   pa dark-svjesna pravila ovdje moraju biti gated na [data-bs-theme]
+   da nadjačaju i light navbar i _dark.scss (izvjestaj-estetski H3/H4/M13).
+   Tamna paleta: bg #1F1A14, panel #2A241D, tekst #E8DFD0, mute #C7BEAF,
+   jedan dark primarni = cigla #D0736C (M13, AA 5.22:1), hover #DD8580.
+   ========================================================= */
+[data-bs-theme="dark"] .navbar,
+.navbar[data-bs-theme="dark"] {
+  background-color: #2A241D !important;
+  border-bottom: 1px solid rgba(232, 223, 208, 0.10);
+}
+[data-bs-theme="dark"] .navbar .navbar-brand,
+[data-bs-theme="dark"] .navbar .nav-link,
+.navbar[data-bs-theme="dark"] .navbar-brand,
+.navbar[data-bs-theme="dark"] .nav-link {
+  color: #E8DFD0 !important;
+}
+[data-bs-theme="dark"] .navbar .nav-link:hover,
+.navbar[data-bs-theme="dark"] .nav-link:hover {
+  color: #D0736C !important;
+}
+
+/* PDF pill u tamnom — cigla na tamnom papiru */
+[data-bs-theme="dark"] .navbar a.nav-link[href*=".pdf"],
+[data-bs-theme="dark"] .sidebar-tools-main a[href*=".pdf"] {
+  background-color: #D0736C !important;
+  color: #1F1A14 !important;
+}
+[data-bs-theme="dark"] .navbar a.nav-link[href*=".pdf"]:hover,
+[data-bs-theme="dark"] .sidebar-tools-main a[href*=".pdf"]:hover {
+  background-color: #DD8580 !important;
+  color: #1F1A14 !important;
+}
+
+/* TOC-overview na landingu u tamnom (H4) */
+[data-bs-theme="dark"] .toc-overview .toc-part {
+  color: #C7BEAF;
+  border-bottom-color: rgba(232, 223, 208, 0.14);
+}
+[data-bs-theme="dark"] .toc-overview details.toc-chapter,
+[data-bs-theme="dark"] .toc-overview .toc-chapter-leaf {
+  border-bottom-color: rgba(232, 223, 208, 0.08);
+}
+[data-bs-theme="dark"] .toc-overview details.toc-chapter > summary,
+[data-bs-theme="dark"] .toc-overview details.toc-chapter > summary a,
+[data-bs-theme="dark"] .toc-overview .toc-chapter-leaf a {
+  color: #E8DFD0;
+}
+[data-bs-theme="dark"] .toc-overview .toc-num,
+[data-bs-theme="dark"] .toc-overview details.toc-chapter > summary::after,
+[data-bs-theme="dark"] .toc-overview details.toc-chapter > ul li a {
+  color: #C7BEAF;
+}
+[data-bs-theme="dark"] .toc-overview details.toc-chapter > summary a:hover,
+[data-bs-theme="dark"] .toc-overview details.toc-chapter > summary:hover > a,
+[data-bs-theme="dark"] .toc-overview details.toc-chapter > ul li a:hover,
+[data-bs-theme="dark"] .toc-overview .toc-chapter-leaf a:hover {
+  color: #D0736C;
+}
+[data-bs-theme="dark"] .toc-overview details.toc-chapter > ul li a:hover {
+  border-left-color: #D0736C;
 }
