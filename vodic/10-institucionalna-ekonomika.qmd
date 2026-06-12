@@ -19,7 +19,7 @@ format:
   </div>
   <div class="vd-folio-meta">
     <span>2 min čitanja</span>
-    <span>Mapa 10 od 19</span>
+    <span>Mapa 10 od 20</span>
   </div>
 </div>
 

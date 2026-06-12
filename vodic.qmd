@@ -11,7 +11,7 @@ format:
 
 ```{=html}
 <header class="vd-hub-head">
-  <span class="vd-hub-kicker">Vodič · 19 mentalnih mapa</span>
+  <span class="vd-hub-kicker">Vodič · 20 mentalnih mapa</span>
   <h1 class="vd-hub-title">Knjiga koju pročitate očima</h1>
   <p class="vd-hub-lede">Vizualna slikovnica knjige. Jedno poglavlje, jedna stranica, jedna mentalna mapa koju pročitate za dvije minute. Ista priča kao u udžbeniku, ispričana drugim glasom. Krenite redom ili otvorite ono što vas zanima.</p>
 </header>
@@ -133,6 +133,12 @@ format:
       <span class="vd-hub-q">Zašto porezi izgledaju baš ovako?</span>
       <span class="vd-go">Otvorite mapu →</span>
     </a>
+    <a class="vd-hub-card" href="vodic/15-eu-javne-financije.html">
+      <span class="vd-hub-num">15</span>
+      <span class="vd-hub-name">Javne financije Europske unije</span>
+      <span class="vd-hub-q">Kako dijeliti valutu, a ne dijeliti proračun?</span>
+      <span class="vd-go">Otvorite mapu →</span>
+    </a>
   </div>
 </section>
 
@@ -142,32 +148,32 @@ format:
     <span class="vd-hub-part-title" id="vd-part-5">Kako do kvalitetnijih javnih politika?</span>
   </div>
   <div class="vd-hub-grid">
-    <a class="vd-hub-card" href="vodic/15-drzavni-neuspjesi.html">
-      <span class="vd-hub-num">15</span>
+    <a class="vd-hub-card" href="vodic/16-drzavni-neuspjesi.html">
+      <span class="vd-hub-num">16</span>
       <span class="vd-hub-name">Državni neuspjesi</span>
       <span class="vd-hub-q">Zašto i država zna zakazati?</span>
       <span class="vd-go">Otvorite mapu →</span>
     </a>
-    <a class="vd-hub-card" href="vodic/16-novi-javni-menadzment.html">
-      <span class="vd-hub-num">16</span>
+    <a class="vd-hub-card" href="vodic/17-novi-javni-menadzment.html">
+      <span class="vd-hub-num">17</span>
       <span class="vd-hub-name">Novi javni menadžment</span>
       <span class="vd-hub-q">Može li država raditi kao firma?</span>
       <span class="vd-go">Otvorite mapu →</span>
     </a>
-    <a class="vd-hub-card" href="vodic/17-novo-upravljanje.html">
-      <span class="vd-hub-num">17</span>
+    <a class="vd-hub-card" href="vodic/18-novo-upravljanje.html">
+      <span class="vd-hub-num">18</span>
       <span class="vd-hub-name">Novo upravljanje</span>
       <span class="vd-hub-q">Tko sve danas kroji javne politike?</span>
       <span class="vd-go">Otvorite mapu →</span>
     </a>
-    <a class="vd-hub-card" href="vodic/18-cba-evaluacija.html">
-      <span class="vd-hub-num">18</span>
+    <a class="vd-hub-card" href="vodic/19-cba-evaluacija.html">
+      <span class="vd-hub-num">19</span>
       <span class="vd-hub-name">CBA i evaluacija</span>
       <span class="vd-hub-q">Kako izmjeriti isplati li se neka politika?</span>
       <span class="vd-go">Otvorite mapu →</span>
     </a>
-    <a class="vd-hub-card" href="vodic/19-reforme.html">
-      <span class="vd-hub-num">19</span>
+    <a class="vd-hub-card" href="vodic/20-reforme.html">
+      <span class="vd-hub-num">20</span>
       <span class="vd-hub-name">Reforme u javnom sektoru</span>
       <span class="vd-hub-q">Zašto reforme svi žele dok ne počnu?</span>
       <span class="vd-go">Otvorite mapu →</span>
