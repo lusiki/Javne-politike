@@ -340,6 +340,71 @@
   }
 
   // ----------------------------------------------------------
+  // 11. Sklopivi prozni blokovi — "Što isprobati" (upute uz interaktivni
+  //     graf) i "Vježba s podacima" (callout-vjezba na kraju poglavlja).
+  //     Koriste isti <details class="ojs-collapsible"> okvir kao ploča
+  //     "Parametri simulacije", zatvoren po defaultu, pa cijela knjiga
+  //     ima jedan dosljedan obrazac sklapanja. Inner sadržaj dobiva
+  //     klasu .ojs-collapsible-prose da SCSS zna kako ga uokviriti.
+  // ----------------------------------------------------------
+  function wrapCollapsible(node, label, opts) {
+    opts = opts || {};
+    if (node.dataset.ojsCollapsibleWrapped) return;
+    var parent = node.parentElement;
+    if (!parent) return;
+    node.dataset.ojsCollapsibleWrapped = "1";
+
+    var details = document.createElement("details");
+    details.className = "ojs-collapsible ojs-collapsible-prose";
+
+    var summary = document.createElement("summary");
+    summary.className = "ojs-collapsible-summary";
+    summary.innerHTML =
+      '<span class="ojs-collapsible-icon" aria-hidden="true"></span>' +
+      '<span class="ojs-collapsible-label"></span>' +
+      '<span class="ojs-collapsible-hint"></span>';
+    summary.querySelector(".ojs-collapsible-label").textContent = label;
+    summary.querySelector(".ojs-collapsible-hint").textContent =
+      opts.hint || "otvori za prikaz";
+
+    var body = document.createElement("div");
+    body.className = "ojs-collapsible-body";
+
+    parent.insertBefore(details, node);
+    details.appendChild(summary);
+    details.appendChild(body);
+    body.appendChild(node);
+  }
+
+  function setupProseCollapsibles() {
+    var main = document.querySelector("main.content") || document.querySelector("main");
+    if (!main) return;
+
+    // (a) "Što isprobati." paragrafi — prepoznaj po vodećem <strong>.
+    main.querySelectorAll("p").forEach(function (p) {
+      if (p.dataset.ojsCollapsibleWrapped) return;
+      var strong = p.querySelector(":scope > strong:first-child");
+      if (!strong) return;
+      var t = strong.textContent.trim().replace(/[.:]\s*$/, "");
+      if (t !== "Što isprobati") return;
+      // Vodeća oznaka seli u summary — ukloni je iz teksta da se ne udvosti.
+      strong.remove();
+      // Počisti vodeći razmak/interpunkciju koja je ostala iza <strong>.
+      if (p.firstChild && p.firstChild.nodeType === 3) {
+        p.firstChild.nodeValue = p.firstChild.nodeValue.replace(/^[\s.:]+/, "");
+      }
+      wrapCollapsible(p, "Što isprobati", { hint: "otvori za upute uz graf" });
+    });
+
+    // (b) "Vježba s podacima" — callout-vjezba kutije na kraju poglavlja.
+    //     Unutarnji callout gubi vlastiti okvir/oznaku (preuzima ih summary)
+    //     preko klase .ojs-collapsible-prose na <details> (vidi SCSS).
+    main.querySelectorAll(".callout-vjezba").forEach(function (box) {
+      wrapCollapsible(box, "Vježba s podacima", { hint: "otvori vježbu" });
+    });
+  }
+
+  // ----------------------------------------------------------
   // Bootstrap
   // ----------------------------------------------------------
   function init() {
@@ -350,6 +415,7 @@
     try { setupStandalonePages(); } catch (e) {}
     try { pruneSidebar(); } catch (e) {}
     try { setupOjsPanels(); } catch (e) {}
+    try { setupProseCollapsibles(); } catch (e) {}
   }
 
   if (document.readyState === "loading") {

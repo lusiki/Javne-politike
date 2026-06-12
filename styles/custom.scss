@@ -982,8 +982,16 @@ div.takeaway {
 // =============================================================
 // Definition (pojam)
 // =============================================================
+// Knjiga koristi Quartov teorem-sintaks `::: {#def-naziv}` koji renderira
+// <div class="theorem definition">. Time SVE definicije dijele isti
+// `.definition` izgled (okvir, „DEFINICIJA" natpis, podebljan pojam),
+// neovisno o tome je li blok ručno označen .definition ili kroz def-id.
+// Jedini izvor nedosljednosti bio je Quartov auto-numerirani natpis
+// („Definicija 2") koji se sudarao s našim ::before natpisom — skrivamo ga
+// niže pa svaka kutija u knjizi izgleda identično.
 .definition,
 div.definition,
+div[id^="def-"],
 .pojam,
 div.pojam {
   font-family: $brand-font-serif;
@@ -1007,15 +1015,23 @@ div.pojam {
     margin-bottom: 0.5rem;
   }
 
-  // Prvi <strong> ili term
+  // Quartov numerirani natpis („Definicija 2") — skrij, naš ::before ga
+  // zamjenjuje pa su svi blokovi jednaki i bez dvostrukog naslova.
+  .theorem-title {
+    display: none;
+  }
+
+  // Pojam: prvi „pravi" <strong> u tekstu (onaj koji NIJE theorem-title).
+  // Pokrivamo i ručne (.definition) i def-id varijante.
   > p:first-of-type strong:first-child,
+  > p:first-of-type .theorem-title + strong,
   > .term,
   > dt {
     font-family: $brand-font-sans;
     font-weight: 600;
     color: $brand-navy;
     font-size: 1rem;
-    display: inline-block;
+    display: inline;
     margin-right: 0.4rem;
   }
 
@@ -1836,6 +1852,45 @@ details.ojs-collapsible {
   }
 }
 
+// --- Sklopivi prozni blokovi ("Što isprobati", "Vježba s podacima") -----
+// Isti <details class="ojs-collapsible"> okvir kao ploča parametara, pa
+// summary nasljeđuje identičan izgled. Razlika je samo tijelo: ovdje drži
+// prozu/vježbu umjesto klizača, uokvireno i spojeno na summary.
+details.ojs-collapsible.ojs-collapsible-prose {
+  > .ojs-collapsible-body {
+    margin: -1px 0 0;
+    padding: 0.85rem 1.1rem 0.95rem;
+    border: 1px solid var(--ojs-panel-border);
+    border-top: none;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    background: var(--ojs-panel-bg);
+    box-sizing: border-box;
+
+    > :first-child { margin-top: 0; }
+    > :last-child  { margin-bottom: 0; }
+
+    p { font-size: 0.97rem; line-height: 1.6; }
+  }
+
+  // Vježba: unutarnji .callout-vjezba gubi vlastiti okvir, sjenu, marginu
+  // i chip-oznaku — summary ih već nosi, pa se ne udvostručuju.
+  > .ojs-collapsible-body > .callout-vjezba {
+    margin: 0;
+    padding: 0;
+    border: none;
+    border-left: none;
+    border-radius: 0;
+    background: none;
+    box-shadow: none;
+
+    > :first-child::before,
+    > p:first-child::before { content: none; }   // makni chip "Vježba s podacima"
+    > :first-child { margin-top: 0; }
+    > :last-child  { margin-bottom: 0; }
+  }
+}
+
 // --- Redovi: pod-forme unutar ploče ----------------------------
 div:has(> form[class^="oi-"]) > form[class^="oi-"] {
   display: flex;
@@ -2226,17 +2281,56 @@ div[id^="def-"],
 }
 
 // 7) Kutije s unutarnjim marginalnim citatom ili fusnotom — Quarto ih
-//    promovira u `page-columns page-full`, pa im rub i pozadina prelaze
-//    preko pune širine stranice i „iscure" u desni marginalni gutter.
-//    Vežemo takvu kutiju na body stupac, a unutarnji marginalni sadržaj
-//    (citat / fusnota) vraćamo u tok kutije umjesto u marginu.
+//    promovira u `page-columns page-full`, pa kutija postaje grid-kontejner
+//    razvučen preko pune širine stranice. Posljedica: rub i pozadina „iscure"
+//    u desni marginalni gutter, a tekst unutra sjedne u uži body-track pa
+//    izgleda kao da je gurnut udesno i da ga okvir ne obuhvaća (def-* s
+//    citatom, npr. Arrowljev teorem). Lijek: promovirane kutije vraćamo u
+//    običan blok-tok identičan nepromoviranim kutijama, a unutarnji
+//    marginalni sadržaj (citat / fusnota) vraćamo u tok kutije.
+//    !important jer Quartov page-columns sloj nosi vlastiti specificitet.
 .callout-praksa.page-columns,
 .callout-empirija.page-columns,
 .callout-vjezba.page-columns,
 .definition.page-columns,
 div[id^="def-"].page-columns,
-div.callout.page-columns {
+div.callout.page-columns,
+.callout-praksa.page-full,
+.callout-empirija.page-full,
+.callout-vjezba.page-full,
+.definition.page-full,
+div[id^="def-"].page-full,
+div.callout.page-full {
+  display: block !important;          // poništi grid-kontejner — okvir hvata tekst
   grid-column: body-content-start / body-content-end !important;
+  width: auto !important;
+  max-width: 75ch;                    // ista mjera kao nepromovirane kutije
+  margin-right: auto !important;
+  box-sizing: border-box;
+}
+
+// Unutarnji sadržaj promovirane kutije: vrati u normalan tok (bez sub-grida)
+.callout-praksa.page-columns > *,
+.callout-empirija.page-columns > *,
+.callout-vjezba.page-columns > *,
+.definition.page-columns > *,
+div[id^="def-"].page-columns > *,
+div.callout.page-columns > *,
+.callout-praksa.page-full > *,
+.callout-empirija.page-full > *,
+.callout-vjezba.page-full > *,
+.definition.page-full > *,
+div[id^="def-"].page-full > *,
+div.callout.page-full > * {
+  grid-column: auto !important;
+}
+
+// Prazni grid-placeholder divovi koje Quarto ubacuje uz marginalni citat
+// (no-row-height column-container) — sakrij da ne stvaraju razmak u kutiji.
+.definition > .no-row-height.column-container:empty,
+div[id^="def-"] > .no-row-height.column-container:empty,
+div.callout .callout-body > .no-row-height.column-container:empty {
+  display: none !important;
 }
 
 .callout-praksa .column-margin,

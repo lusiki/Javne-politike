@@ -160,13 +160,16 @@ div.callout-caution  { border-left-color: #D0736C !important; }
 }
 
 .definition, div.definition,
+div[id^="def-"],
 .pojam, div.pojam {
   background: #2A241D !important;
   border-color: rgba(159, 144, 123, 0.25) !important;
   border-left-color: #DDB05E !important;
 
   &::before { color: #DDB05E !important; }
+  .theorem-title { display: none !important; }
   > p:first-of-type strong:first-child,
+  > p:first-of-type .theorem-title + strong,
   > .term, > dt {
     color: #F0E8D8 !important;
   }
@@ -469,6 +472,15 @@ li.vd-branch:nth-child(even) a.vd-branch-card { border-left-color: var(--vd-acce
 .callout-praksa   { --pedagogy-color: #7BA68F !important; }
 .callout-empirija { --pedagogy-color: #DD8580 !important; }
 .callout-vjezba   { --pedagogy-color: #DD9858 !important; }
+
+// Vježba unutar sklopivog okvira: okvir (.ojs-collapsible-body) već nosi
+// podlogu, pa unutarnji callout mora ostati proziran i bez vlastite oznake
+// kako se podloga i chip ne bi udvostručili u tamnom načinu.
+.ojs-collapsible-prose > .ojs-collapsible-body > .callout-vjezba {
+  background: none !important;
+  box-shadow: none !important;
+  border: none !important;
+}
 
 // =============================================================
 // .var čipovi (OJS "Što isprobati" upute) — M11
