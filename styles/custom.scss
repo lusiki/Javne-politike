@@ -630,13 +630,24 @@ pre {
 .sidebar nav[role="doc-toc"] ul li a,
 nav#TOC ul li a,
 #quarto-margin-sidebar a {
-  font-family: $brand-font-sans;
-  font-size: 0.86rem;
+  // Mono margine —desna margina (TOC „na ovoj
+  // stranici") u IBM Plex Mono, uz manju veličinu jer su mono glifovi širi.
+  font-family: $brand-font-mono;
+  font-size: 0.78rem;
+  letter-spacing: -0.01em;
   color: $brand-slate;
 
   &:hover, &.active {
     color: $brand-navy;
   }
+}
+
+// TOC naslov („Na ovoj stranici") usklađen s istim mono registrom
+#toc-title {
+  font-family: $brand-font-mono;
+  font-size: 0.74rem;
+  font-weight: 600;
+  letter-spacing: 0.01em;
 }
 
 .sidebar-item .chapter-number {
@@ -1280,11 +1291,12 @@ li.sidebar-item-section > .sidebar-item-container {
   > .sidebar-item-text,
   > .chapter-title,
   > .sidebar-section {
-    font-family: $brand-font-sans;
+    // Mono margine —part-headeri u IBM Plex Mono
+    font-family: $brand-font-mono;
     font-weight: 600;
-    letter-spacing: -0.005em;
+    letter-spacing: -0.01em;
     color: $brand-navy;
-    font-size: 0.92rem;
+    font-size: 0.82rem;
     padding-top: 1.2rem;
     margin-top: 0.6rem;
     border-top: 1px solid rgba($brand-warm-grey, 0.35);
@@ -1300,6 +1312,12 @@ li.sidebar-item-section > .sidebar-item-container {
 nav.sidebar {
   background-color: $brand-paper !important;
   border-right: 1px solid rgba($brand-warm-grey, 0.30) !important;
+  // Mono margine —lijevi sidebar u IBM Plex Mono.
+  // Naslovi dijelova i poglavlja nasljeđuju ovaj font; pretraga i naslov knjige
+  // imaju vlastiti font pa ostaju nepromijenjeni.
+  font-family: $brand-font-mono;
+  font-size: 0.94em;
+  letter-spacing: -0.01em;
 }
 
 // Chapter linkovi unutar sidebara — diskretni warm-grey, brick na hover/active
@@ -1311,6 +1329,20 @@ nav.sidebar a {
   &:hover, &.active {
     color: $brand-burgundy;
   }
+}
+
+// Mono margine —tekst poglavlja u lijevom sidebaru
+// živi u <span class="chapter-title">, koji pravilo `h1, .chapter-title, .title`
+// (gore) gura u serif (Newsreader). Zato linkovi nisu pratili part-headere.
+// ID-razinom (jača od te .chapter-title klase) ih prebacujemo na isti IBM Plex
+// Mono, ali samo unutar #quarto-sidebar, pa naslov poglavlja na stranici ostaje
+// serif. Pokriveni su i .menu-text (collapse-toggli part-headera) za svaki slučaj.
+#quarto-sidebar .chapter-title,
+#quarto-sidebar .menu-text,
+#quarto-sidebar a.sidebar-item-text,
+.sidebar-navigation .chapter-title,
+.sidebar-navigation .menu-text {
+  font-family: $brand-font-mono;
 }
 
 // =============================================================
