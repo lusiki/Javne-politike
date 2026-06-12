@@ -2,16 +2,13 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="hr-HR" xml:lang="hr-HR"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.9.38">
+<meta name="generator" content="quarto-1.6.43">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
 <title>Uvod — Zašto bismo otvorili ovu knjigu? – Sve što želite znati o odnosu države i tržišta</title>
 <style>
-/* Default styles provided by pandoc.
-** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
-*/
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
 div.columns{display: flex; gap: min(4vw, 1.5em);}
@@ -24,9 +21,8 @@ ul.task-list li input[type="checkbox"] {
   vertical-align: middle;
 }
 /* CSS for syntax highlighting */
-html { -webkit-text-size-adjust: 100%; }
 pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span { line-height: 1.25; }
 pre > code.sourceCode > span:empty { height: 1.2em; }
 .sourceCode { overflow: visible; }
 code.sourceCode > span { color: inherit; text-decoration: inherit; }
@@ -37,7 +33,7 @@ div.sourceCode { overflow: auto; }
 }
 @media print {
 pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
 }
 pre.numberSource code
   { counter-reset: source-line 0; }
@@ -62,6 +58,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 div.csl-bib-body { }
 div.csl-entry {
   clear: both;
+  margin-bottom: 0em;
 }
 .hanging-indent div.csl-entry {
   margin-left:2em;
@@ -89,20 +86,17 @@ div.csl-indent {
 <link href="../chapters/01-uloga-drzave.html" rel="next">
 <link href="../index.html" rel="prev">
 <link href="../images/favicon.ico" rel="icon">
-<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/quarto.js"></script>
 <script src="../site_libs/quarto-html/popper.min.js"></script>
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-4d4ad920c17a1b28c6a7c1d28bdd063b.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark-7cbdf6bb4af9301f1adde34f6db1f419.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-4d4ad920c17a1b28c6a7c1d28bdd063b.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-0cf6555743a0958f71dc8d5aba7305d9.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark-19eb5a85a399d11602e5709a3b9587c0.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-4c986842f6a2a7ace4cd4dc33679e30e.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../site_libs/bootstrap/bootstrap-dark-0cb390202fafd100c8f8caf60b29b6e5.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="light">
-<link href="../site_libs/bootstrap/bootstrap-4c986842f6a2a7ace4cd4dc33679e30e.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-0af020fab9acd0b628a2f2095ba78e62.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-dark-87dcc0d47c59eb1a60fc9815a39415b0.min.css" rel="prefetch" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -144,169 +138,7 @@ div.csl-indent {
 <link rel="stylesheet" href="../styles/styles.css">
 </head>
 
-<body class="nav-sidebar docked nav-fixed slimcontent quarto-light"><script id="quarto-html-before-body" type="application/javascript">
-    const toggleBodyColorMode = (bsSheetEl) => {
-      const mode = bsSheetEl.getAttribute("data-mode");
-      const bodyEl = window.document.querySelector("body");
-      if (mode === "dark") {
-        bodyEl.classList.add("quarto-dark");
-        bodyEl.classList.remove("quarto-light");
-      } else {
-        bodyEl.classList.add("quarto-light");
-        bodyEl.classList.remove("quarto-dark");
-      }
-    }
-    const toggleBodyColorPrimary = () => {
-      const bsSheetEl = window.document.querySelector("link#quarto-bootstrap:not([rel=disabled-stylesheet])");
-      if (bsSheetEl) {
-        toggleBodyColorMode(bsSheetEl);
-      }
-    }
-    const setColorSchemeToggle = (alternate) => {
-      const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
-      for (let i=0; i < toggles.length; i++) {
-        const toggle = toggles[i];
-        if (toggle) {
-          if (alternate) {
-            toggle.classList.add("alternate");
-          } else {
-            toggle.classList.remove("alternate");
-          }
-        }
-      }
-    };
-    const toggleColorMode = (alternate) => {
-      // Switch the stylesheets
-      const primaryStylesheets = window.document.querySelectorAll('link.quarto-color-scheme:not(.quarto-color-alternate)');
-      const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
-      manageTransitions('#quarto-margin-sidebar .nav-link', false);
-      if (alternate) {
-        // note: dark is layered on light, we don't disable primary!
-        enableStylesheet(alternateStylesheets);
-        for (const sheetNode of alternateStylesheets) {
-          if (sheetNode.id === "quarto-bootstrap") {
-            toggleBodyColorMode(sheetNode);
-          }
-        }
-      } else {
-        disableStylesheet(alternateStylesheets);
-        enableStylesheet(primaryStylesheets)
-        toggleBodyColorPrimary();
-      }
-      manageTransitions('#quarto-margin-sidebar .nav-link', true);
-      // Switch the toggles
-      setColorSchemeToggle(alternate)
-      // Hack to workaround the fact that safari doesn't
-      // properly recolor the scrollbar when toggling (#1455)
-      if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
-        manageTransitions("body", false);
-        window.scrollTo(0, 1);
-        setTimeout(() => {
-          window.scrollTo(0, 0);
-          manageTransitions("body", true);
-        }, 40);
-      }
-    }
-    const disableStylesheet = (stylesheets) => {
-      for (let i=0; i < stylesheets.length; i++) {
-        const stylesheet = stylesheets[i];
-        stylesheet.rel = 'disabled-stylesheet';
-      }
-    }
-    const enableStylesheet = (stylesheets) => {
-      for (let i=0; i < stylesheets.length; i++) {
-        const stylesheet = stylesheets[i];
-        if(stylesheet.rel !== 'stylesheet') { // for Chrome, which will still FOUC without this check
-          stylesheet.rel = 'stylesheet';
-        }
-      }
-    }
-    const manageTransitions = (selector, allowTransitions) => {
-      const els = window.document.querySelectorAll(selector);
-      for (let i=0; i < els.length; i++) {
-        const el = els[i];
-        if (allowTransitions) {
-          el.classList.remove('notransition');
-        } else {
-          el.classList.add('notransition');
-        }
-      }
-    }
-    const isFileUrl = () => {
-      return window.location.protocol === 'file:';
-    }
-    const hasAlternateSentinel = () => {
-      let styleSentinel = getColorSchemeSentinel();
-      if (styleSentinel !== null) {
-        return styleSentinel === "alternate";
-      } else {
-        return false;
-      }
-    }
-    const setStyleSentinel = (alternate) => {
-      const value = alternate ? "alternate" : "default";
-      if (!isFileUrl()) {
-        window.localStorage.setItem("quarto-color-scheme", value);
-      } else {
-        localAlternateSentinel = value;
-      }
-    }
-    const getColorSchemeSentinel = () => {
-      if (!isFileUrl()) {
-        const storageValue = window.localStorage.getItem("quarto-color-scheme");
-        return storageValue != null ? storageValue : localAlternateSentinel;
-      } else {
-        return localAlternateSentinel;
-      }
-    }
-    const toggleGiscusIfUsed = (isAlternate, darkModeDefault) => {
-      const baseTheme = document.querySelector('#giscus-base-theme')?.value ?? 'light';
-      const alternateTheme = document.querySelector('#giscus-alt-theme')?.value ?? 'dark';
-      let newTheme = '';
-      if(authorPrefersDark) {
-        newTheme = isAlternate ? baseTheme : alternateTheme;
-      } else {
-        newTheme = isAlternate ? alternateTheme : baseTheme;
-      }
-      const changeGiscusTheme = () => {
-        // From: https://github.com/giscus/giscus/issues/336
-        const sendMessage = (message) => {
-          const iframe = document.querySelector('iframe.giscus-frame');
-          if (!iframe) return;
-          iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
-        }
-        sendMessage({
-          setConfig: {
-            theme: newTheme
-          }
-        });
-      }
-      const isGiscussLoaded = window.document.querySelector('iframe.giscus-frame') !== null;
-      if (isGiscussLoaded) {
-        changeGiscusTheme();
-      }
-    };
-    const authorPrefersDark = false;
-    const darkModeDefault = authorPrefersDark;
-      document.querySelector('link#quarto-text-highlighting-styles.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
-      document.querySelector('link#quarto-bootstrap.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
-    let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
-    // Dark / light mode switch
-    window.quartoToggleColorScheme = () => {
-      // Read the current dark / light value
-      let toAlternate = !hasAlternateSentinel();
-      toggleColorMode(toAlternate);
-      setStyleSentinel(toAlternate);
-      toggleGiscusIfUsed(toAlternate, darkModeDefault);
-      window.dispatchEvent(new Event('resize'));
-    };
-    // Switch to dark mode if need be
-    if (hasAlternateSentinel()) {
-      toggleColorMode(true);
-    } else {
-      toggleColorMode(false);
-    }
-  </script>
+<body class="nav-sidebar docked nav-fixed slimcontent">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -585,6 +417,101 @@ div.csl-indent {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
+  <a href="../vodic/01-uloga-drzave.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Vodič · Uloga države u gospodarstvu</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../vodic/02-alokacijska-funkcija.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Vodič · Alokacijska funkcija i tržišni neuspjesi</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../vodic/03-distribucijska-funkcija.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Vodič · Distribucijska funkcija</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../vodic/04-stabilizacijska-funkcija.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Vodič · Stabilizacijska funkcija</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../vodic/05-javni-izbor.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Vodič · Javni izbor</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../vodic/06-kolektivni-izbor.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Vodič · Kolektivni izbor</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../vodic/07-stranke-izbori.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Vodič · Političke stranke i izbori</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../vodic/08-interesne-skupine.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Vodič · Interesne skupine</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../vodic/09-birokracija.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Vodič · Dva pogleda na birokraciju</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../vodic/10-institucionalna-ekonomika.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Vodič · Institucije kao pravila igre</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../vodic/11-konstitucionalna-ekonomika.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Vodič · Konstitucionalna ekonomika</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../vodic/12-instrumenti.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Vodič · Instrumenti državne intervencije</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../vodic/13-javna-potrosnja.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Vodič · Javna potrošnja</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../vodic/14-porezi.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Vodič · Porezi, više od tereta</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../vodic/15-drzavni-neuspjesi.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Vodič · Državni neuspjesi</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../vodic/16-novi-javni-menadzment.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Vodič · Novi javni menadžment</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../vodic/17-novo-upravljanje.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Vodič · Novo upravljanje</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../vodic/18-cba-evaluacija.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Vodič · CBA i evaluacija</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../vodic/19-reforme.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Vodič · Reforme u javnom sektoru</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
   <a href="../resursi.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Resursi</span></a>
   </div>
 </li>
@@ -613,14 +540,14 @@ div.csl-indent {
   <li><a href="#što-su-javne-politike" id="toc-što-su-javne-politike" class="nav-link active" data-scroll-target="#što-su-javne-politike">Što su javne politike</a></li>
   <li><a href="#tri-perspektive-razumijevanja" id="toc-tri-perspektive-razumijevanja" class="nav-link" data-scroll-target="#tri-perspektive-razumijevanja">Tri perspektive razumijevanja</a></li>
   <li><a href="#od-triju-perspektiva-do-metode" id="toc-od-triju-perspektiva-do-metode" class="nav-link" data-scroll-target="#od-triju-perspektiva-do-metode">Od triju perspektiva do metode</a></li>
+  <li><a href="#mjesto-ove-knjige" id="toc-mjesto-ove-knjige" class="nav-link" data-scroll-target="#mjesto-ove-knjige">Mjesto ove knjige</a></li>
+  <li><a href="#pitanja-prije-odgovora" id="toc-pitanja-prije-odgovora" class="nav-link" data-scroll-target="#pitanja-prije-odgovora">Pitanja prije odgovora</a></li>
   <li><a href="#put-kroz-knjigu" id="toc-put-kroz-knjigu" class="nav-link" data-scroll-target="#put-kroz-knjigu">Put kroz knjigu</a></li>
-  <li><a href="#što-ova-knjiga-želi-postići" id="toc-što-ova-knjiga-želi-postići" class="nav-link" data-scroll-target="#što-ova-knjiga-želi-postići">Što ova knjiga želi postići?</a></li>
   </ul>
 </nav>
     </div>
 <!-- main -->
 <main class="content page-columns page-full" id="quarto-document-content">
-
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
@@ -643,43 +570,54 @@ div.csl-indent {
 
 <section id="što-su-javne-politike" class="level2">
 <h2 class="anchored" data-anchor-id="što-su-javne-politike">Što su javne politike</h2>
-<p>Javne politike oblikuju gotovo svaki važan dio našeg svakodnevnog života. One određuju kako se financira obrazovanje, kako funkcionira zdravstveni sustav, koliko plaćamo poreza, tko ima pravo na socijalnu pomoć, kako se grade ceste, kako se reguliraju tržišta, kako država reagira na krize, kako se štiti okoliš i kako se raspodjeljuju troškovi i koristi života u zajednici. Iako ih često ne nazivamo tim imenom, javne politike prisutne su iza gotovo svake važne odluke države.</p>
-<p>Kada student plaća školarinu ili koristi subvencionirani obrok, kada građanin čeka pregled u bolnici, kada poduzetnik ispunjava poreznu prijavu, kada obitelj prima dječji doplatak, kada radnik plaća doprinose za mirovinsko osiguranje ili kada lokalna vlast odlučuje hoće li graditi vrtić, riječ je o javnim politikama. One nisu apstraktne odluke udaljenih institucija, nego konkretna pravila, programi i instrumenti koji utječu na ponašanje ljudi, raspodjelu resursa i kvalitetu života.</p>
-<p>U najjednostavnijem smislu, <strong>javne politike</strong> su odluke i djelovanja države kojima se pokušavaju riješiti društveni problemi ili ostvariti kolektivni ciljevi. One mogu biti izražene kroz zakone, poreze, subvencije, javnu potrošnju, regulaciju, javne usluge, strategije, programe ili administrativne postupke. No javne politike nisu samo ono što država odluči učiniti. Ponekad je javna politika i ono što država odluči ne učiniti. Neintervencija također ima posljedice.</p>
-<p>Zato javne politike nisu samo tehničko pitanje upravljanja. One uvijek uključuju izbor. Država mora odlučiti koje probleme smatra važnima, koje ciljeve želi ostvariti, koje instrumente će koristiti, tko će platiti trošak, tko će imati korist i kako će se procjenjivati uspjeh. Upravo zato javne politike ne možemo razumjeti bez ekonomije, politike i institucija.</p>
+<p>Država oblikuje gotovo svaki važan dio našeg svakodnevnog života. Ona određuje kako se financira obrazovanje, kako funkcionira zdravstveni sustav, koliko plaćamo poreza, tko ima pravo na socijalnu pomoć, kako se grade ceste, kako se reguliraju tržišta i kako se raspodjeljuju troškovi i koristi života u zajednici. Iako to nije uvijek direktno vidljivo, ove odluke stoje iza gotovo svake važne odluke koja nas se tiče.</p>
+<p>Kada student plaća školarinu ili koristi subvencionirani obrok, kada građanin čeka pregled u bolnici, kada poduzetnik ispunjava poreznu prijavu, kada obitelj prima dječji doplatak ili kada lokalna vlast odlučuje hoće li graditi vrtić, riječ je o javnim politikama. One nisu apstraktne odluke udaljenih institucija, nego konkretna pravila, programi i instrumenti koji oblikuju ponašanje ljudi, raspodjelu resursa i kvalitetu života.</p>
+<p>U najjednostavnijem smislu, <strong>javne politike</strong> su odluke i djelovanja države kojima se pokušavaju riješiti društveni problemi ili ostvariti zajednički ciljevi. Mogu se izraziti kroz zakone, poreze, subvencije, javnu potrošnju, regulaciju, javne usluge, strategije ili administrativne postupke. No javna politika nije samo ono što država odluči učiniti, nego i ono što odluči ne učiniti, jer i neintervencija ima svoje posljedice. Zato javne politike nikada nisu samo tehničko pitanje upravljanja. One uvijek uključuju izbor, jer država mora odlučiti koje probleme smatra važnima, koje ciljeve želi ostvariti, koje će instrumente upotrijebiti, tko će platiti trošak i tko će imati korist.</p>
+<p>Iza svakog takvog izbora stoje tri pojma koja se na prvi pogled čine apstraktnima, bliže udžbeniku nego svakodnevici. Država, tržište i institucije zvuče udaljeno sve dok ne shvatimo da su upravo oni ono od čega su svi navedeni primjeri sazdani. Njihov se odnos kroz povijest neprestano mijenjao, od noćobdijske države devetnaestoga stoljeća, ograničene na obranu, red i pravosuđe, preko širenja socijalne države u dvadesetome stoljeću, do suvremene regulatorne države koja tržišta oblikuje, a ne samo nadzire. Ono što se u jednom razdoblju činilo prirodnom zadaćom države, u drugom je bilo prepušteno tržištu, i obratno.</p>
+<p>Zato država i tržište, koliko god zvučali kao prirodni neprijatelji, rijetko to uistinu jesu. Tržište ne može funkcionirati bez države koja štiti vlasnička prava, provodi ugovore i osigurava stabilan novac, a država se oslanja na tržište kao izvor sredstava, informacija i učinkovitosti. Ono što ta dva sustava drži na okupu jesu institucije. Pod institucijama ne mislimo na impozantne građevine ni na ministarstva s reprezentativnim pročeljima, nego na skup pravila, poticaja, normi i postupaka koji određuju što se smije, što se isplati i što se kažnjava. Institucije su tihi okvir unutar kojega i država i tržište tek postaju ono što jesu. Upravo zato javne politike ne možemo razumjeti dok ih istodobno ne pogledamo kroz ekonomiju, politiku i institucije.</p>
 </section>
 <section id="tri-perspektive-razumijevanja" class="level2">
 <h2 class="anchored" data-anchor-id="tri-perspektive-razumijevanja">Tri perspektive razumijevanja</h2>
-<p>Ekonomija nam pomaže razumjeti ograničenja, troškove, poticaje i učinke javnih politika. Svaka politika ima cijenu. Porezi mijenjaju ponašanje građana i poduzeća. Subvencije stvaraju poticaje, ali mogu stvarati i ovisnost ili rente. Regulacija može zaštititi potrošače, ali može povećati troškove poslovanja. Javna potrošnja može povećati društveno blagostanje, ali može opteretiti buduće generacije ako se financira dugom. Ekonomska analiza zato nas uči da dobre namjere nisu dovoljne. Pitati moramo koji problem rješavamo, koji instrument koristimo, kakve poticaje stvaramo i kakve posljedice možemo očekivati.</p>
-<p>Politika pak objašnjava kako javne odluke stvarno nastaju. Javne politike ne oblikuju se u laboratoriju, nego u političkom procesu. U njemu sudjeluju političari, birači, birokrati, interesne skupine, mediji, stručnjaci, međunarodne organizacije i građani. Svaki od tih aktera ima svoje interese, informacije, vrijednosti i ograničenja. Zato javna politika nije uvijek rezultat hladne racionalne analize. Ona je često rezultat pregovora, pritisaka, kompromisa, izbornih obećanja, institucionalnih pravila i odnosa moći.</p>
-<p>Institucije, naposljetku, objašnjavaju zašto iste politike ne daju iste rezultate u različitim zemljama. Dobar zakon na papiru nije dovoljan ako ga institucije ne mogu provesti. Porezna reforma neće imati isti učinak u zemlji s učinkovitom poreznom administracijom i u zemlji s raširenom sivom ekonomijom. Reforma zdravstva neće uspjeti ako nema upravljačke odgovornosti, podataka, koordinacije i administrativnog kapaciteta. Decentralizacija može poboljšati javne usluge ondje gdje lokalne institucije funkcioniraju, ali može povećati nejednakosti ondje gdje su lokalni kapaciteti slabi. Institucije su zato formalna i neformalna pravila igre koja oblikuju ponašanje svih aktera, a obuhvaćaju zakone, norme, procedure i mehanizme provedbe koji određuju što se smije, što se isplati i što se kažnjava u nekom društvu.</p>
-<p>Država nije ni samo rješenje, ni samo problem. Ona je složen sustav odluka, poticaja, pravila, organizacija i ljudi. Ponekad je nužna jer tržišta sama ne mogu osigurati javna dobra, riješiti eksternalije, smanjiti nejednakosti ili stabilizirati gospodarstvo. Ponekad, međutim, može i sama postati izvor problema. Politike mogu biti loše dizajnirane, administracija može biti neučinkovita, interesne skupine mogu zarobiti regulaciju, političari mogu misliti kratkoročno, a troškovi loših odluka mogu se prebaciti na buduće generacije.</p>
-<p>Zato cilj ove knjige nije uvjeriti čitatelja da treba uvijek više države ili uvijek manje države. To bi bilo prejednostavno. Pravo se pitanje uvijek tiče toga kakva država, za koje probleme, s kojim instrumentima, pod kojim pravilima i s kakvom odgovornošću. Cilj zato nije ideološki odabrati stranu, nego razumjeti uvjete pod kojima javne politike mogu stvarati javnu vrijednost.</p>
+<p>Ekonomski pogled kreće od neugodne istine da svaka politika ima cijenu. Porezi mijenjaju ponašanje građana i poduzeća, subvencije stvaraju poticaje, ali i ovisnost ili rente, regulacija štiti potrošače, ali poskupljuje poslovanje, a javna potrošnja može podići blagostanje ili opteretiti buduće generacije ako se financira dugom. Ekonomska nas analiza zato uči da dobre namjere nisu dovoljne i da o svakoj mjeri valja pitati koji problem rješava, kakve poticaje stvara i kakve posljedice za sobom povlači.</p>
+<p>Politički pogled objašnjava kako te odluke uopće nastaju. Javne politike ne oblikuju se u laboratoriju, nego u procesu u kojem sudjeluju političari, birači, birokrati, interesne skupine, mediji i stručnjaci, svaki sa svojim interesima, informacijama i ograničenjima. Zato je javna politika rijetko plod hladne računice. Ona je češće ishod pregovora, pritisaka, kompromisa, izbornih obećanja i odnosa moći, što objašnjava zašto dobra ideja ne postaje nužno i dobra odluka.</p>
+<p>Institucionalni pogled, naposljetku, objašnjava zašto iste politike ne daju iste rezultate na različitim mjestima. Pravila koja smo već prepoznali kao tihi okvir djelovanja ovdje pokazuju svoju punu težinu. Dobar zakon na papiru ne vrijedi mnogo ako ga administracija ne može provesti, porezna reforma neće jednako djelovati u zemlji s urednom poreznom upravom i u onoj s raširenom sivom ekonomijom, a decentralizacija će poboljšati usluge ondje gdje lokalne institucije rade dobro, ali produbiti nejednakosti ondje gdje su slabe.</p>
+<p>Iz ta tri pogleda izranja slika države koja nije ni puko rješenje ni puki problem. Ona je nužna ondje gdje tržišta sama ne mogu osigurati javna dobra, obuzdati eksternalije ili stabilizirati gospodarstvo, ali i sama može postati izvorom nevolje kada su politike loše osmišljene, administracija neučinkovita ili kada interesne skupine zarobe regulaciju. Zato pravo pitanje nikada nije treba li više države ili manje države, nego kakva država, za koje probleme, s kojim instrumentima i pod kojom odgovornošću. Cilj nije ideološki odabrati stranu, nego razumjeti uvjete pod kojima javne politike stvaraju vrijednost.</p>
 </section>
 <section id="od-triju-perspektiva-do-metode" class="level2">
 <h2 class="anchored" data-anchor-id="od-triju-perspektiva-do-metode">Od triju perspektiva do metode</h2>
-<p>Razumijevanje javnih politika kao kombinacije ekonomije, politike i institucija nije neutralan opis, nego operativna metoda. Ona pretpostavlja određen način postupanja s problemom. Prvo se traži preciznija formulacija problema umjesto njegove sažete političke verzije, jer način na koji problem zovemo često unaprijed sužava prostor rješenja. Drugo se traže poticaji koje stvaraju različite politike, jer su upravo poticaji ono što oblikuje stvarno ponašanje, ne nominalni ciljevi koji su zapisani u dokumentima. Treće se traže institucionalni preduvjeti provedbe, jer politika koja prelazi kapacitete administracije u kojoj se primjenjuje proizvodi ishode neovisne od svoje teorijske kvalitete. Četvrto se traže učinci za pojedine društvene skupine, jer agregatni saldo politike rijetko opisuje njezino stvarno djelovanje na ljude koji se s njom susreću.</p>
-<p>Takav pristup nije osebujnost akademskog promatrača nego način na koji se pokušava izbjeći najčešća greška analize politika, a to je zamjena svrhe za sredstvo. Politički proces sustavno stvara pritisak za odabir politike na temelju njezine svrhe (smanjiti nejednakost, povećati zapošljavanje, zaštititi okoliš), bez paralelne pažnje prema mehanizmu kojim će politika tu svrhu ostvariti. Razdvajanje tih dviju razina, namjere i mehanizma, jest minimum koji se može tražiti od svakog ozbiljnog razmatranja javnih politika prije nego što se uopće dođe do pitanja koje će se politike preporučiti, podržati ili kritizirati.</p>
+<p>Ta tri pogleda nisu tek tri načina da se opiše ista pojava. Sva tri zajedno čine metodu, određen način na koji se pristupa svakom problemu javne politike. Prvi korak traži precizniju formulaciju problema umjesto njegove sažete političke verzije, jer način na koji problem imenujemo unaprijed sužava prostor rješenja. Drugi traži poticaje koje politika stvarno stvara, jer upravo poticaji, a ne ciljevi zapisani u dokumentima, oblikuju ponašanje.</p>
+<p>Treći korak traži institucionalne preduvjete provedbe, jer politika koja prelazi kapacitete administracije u kojoj se primjenjuje daje ishode neovisne o svojoj teorijskoj kvaliteti. Četvrti traži učinke na pojedine društvene skupine, jer agregatni saldo rijetko opisuje ono što politika čini ljudima koji se s njom stvarno susreću. Tek kada se sva četiri pitanja postave zajedno, opis politike postaje analiza.</p>
+<p>Takav pristup nije akademska osebujnost, nego brana najčešćoj grešci u analizi politika, zamjeni svrhe za sredstvo. Politički proces neprestano gura na biranje politike prema njezinoj svrsi (smanjiti nejednakost, povećati zaposlenost, zaštititi okoliš) bez jednake pažnje za mehanizam kojim će se ta svrha postići. Razdvajanje namjere od mehanizma najmanji je uvjet svakoga ozbiljnog razmatranja, prije nego što se uopće dođe do toga koju politiku preporučiti ili kritizirati.</p>
+</section>
+<section id="mjesto-ove-knjige" class="level2 page-columns page-full">
+<h2 class="anchored" data-anchor-id="mjesto-ove-knjige">Mjesto ove knjige</h2>
+<p>Taj metodski naglasak ujedno objašnjava zašto smo ovu knjigu uopće napisali. Hrvatska nije bez literature o ekonomici javnog sektora. Postoji domaća tradicija udžbenika i priručnika koja seže od Jurkovićeva udžbenika javnih financija <span class="citation" data-cites="jurkovic2002">(<a href="../references.html#ref-jurkovic2002" role="doc-biblioref">Jurković 2002</a>)</span>, preko hrvatskoga prijevoda Rosenova i Gayerova udžbenika u izdanju Instituta za javne financije <span class="citation" data-cites="rosenGayer2010">(<a href="../references.html#ref-rosenGayer2010" role="doc-biblioref">Rosen i Gayer 2010</a>)</span>, do novije ekonomike javnog sektora Šimovića i Deskar-Škrbića <span class="citation" data-cites="simovicDeskar2020">(<a href="../references.html#ref-simovicDeskar2020" role="doc-biblioref">Šimović i Deskar-Škrbić 2020</a>)</span>. Ti tekstovi pokrivaju jezgru područja, od alokacijske uloge države i teorije poreza do proračuna i javnoga duga, i čine oslonac na koji se nadovezujemo.</p>
+<div class="no-row-height column-margin column-container"><div id="ref-jurkovic2002" class="csl-entry" role="listitem">
+Jurković, Pero. 2002. <em>Javne financije</em>. Zagreb: Masmedia.
+</div><div id="ref-rosenGayer2010" class="csl-entry" role="listitem">
+Rosen, Harvey S., i Ted Gayer. 2010. <em>Javne financije</em>. 2. hrvatsko izd. Zagreb: Institut za javne financije.
+</div><div id="ref-simovicDeskar2020" class="csl-entry" role="listitem">
+Šimović, Hrvoje, i Milan Deskar-Škrbić. 2020. <em>Ekonomika javnog sektora s hrvatskim primjerima</em>. Zagreb: Arhivanalitika.
+</div></div><p>Jurkovićeva knjiga dobro pokazuje narav te tradicije <span class="citation" data-cites="jurkovic2002">(<a href="../references.html#ref-jurkovic2002" role="doc-biblioref">Jurković 2002</a>)</span>. Pisana je s ekonomskoga gledišta, organizirana oko Musgraveove podjele na alokacijsku, distribucijsku i stabilizacijsku funkciju <span class="citation" data-cites="musgrave1959">(<a href="../references.html#ref-musgrave1959" role="doc-biblioref">Musgrave 1959</a>)</span>, i polazi od jednostavne, ali lako zaboravljene tvrdnje da nema besplatnog ručka, jer za svaku javnu odluku netko na kraju plaća. Upravo je ta misao, da svaka politika ima svoju cijenu, polazište i ove knjige.</p>
+<p>Ova knjiga zato nije zamišljena kao zamjena za postojeće, nego kao njihova dopuna. Ona pretpostavlja da je jezgra područja već obrađena i gradi sljedeći sloj, onaj koji klasičnu teoriju javnih financija povezuje s teorijom javnog izbora, novom institucionalnom i konstitucionalnom ekonomikom te suvremenim raspravama o kvaliteti upravljanja. Tamo gdje postojeći udžbenici pitaju što država treba činiti, mi dodajemo pitanje kako država stvarno odlučuje i zašto iste politike u različitim okolnostima daju različite ishode. Zato su ovdje našle mjesto teme za koje u klasičnom udžbeniku javnih financija obično nije ostajalo prostora.</p>
+</section>
+<section id="pitanja-prije-odgovora" class="level2">
+<h2 class="anchored" data-anchor-id="pitanja-prije-odgovora">Pitanja prije odgovora</h2>
+<p>Ono što sve te teme povezuje u cjelinu nije njihov popis, nego način na koji im knjiga pristupa. Ona ne polazi od pretpostavke da je država uvijek bolja od tržišta, ni od one da je tržište uvijek bolje od države, nego želi naučiti čitatelja kako prepoznati javni problem, kako razabrati interese i poticaje koji oko njega kruže, kako procijeniti učinke državne intervencije i kako razlikovati dobru namjeru od dobre politike.</p>
+<p>Takav okvir vrijedi više od recepta zato što javne politike rijetko imaju univerzalan odgovor. Ista mjera koja uspije u jednoj zemlji u drugoj može propasti, ovisno o kapacitetu administracije, povjerenju građana i prostoru za izbjegavanje pravila. Zato je sposobnost da se postave prava pitanja vrednija od bilo kojega gotovog odgovora.</p>
+<p>Dobra analiza spaja ekonomsku logiku, političke poticaje i institucionalna pravila u jedno. Nije dovoljno reći da država treba intervenirati, jer valja pitati postoji li doista problem koji to traži, koji je instrument najprikladniji i može li ga država provesti. Nije dovoljno reći ni da država treba manje intervenirati, jer valja pitati tko će tada riješiti problem i tko će snositi posljedice izostanka. Nije dovoljno donijeti zakon ako nema tko da ga provede, ni imati strategiju ako nema institucija koje je mogu pretvoriti u rezultat.</p>
+<p>To znači gledati svaku javnu odluku kroz nekoliko povezanih pitanja. Koji problem zapravo rješavamo? Zašto ga ne mogu riješiti samo tržište ili privatna inicijativa? Što država tu može učiniti i kakve poticaje time stvara? Tko dobiva, a tko gubi? Tko odlučuje, tko provodi i tko snosi odgovornost? I kako ćemo uopće znati je li politika uspjela? Ta pitanja ne jamče savršene odgovore, ali čuvaju od površnih, ideoloških i kratkovidnih rješenja.</p>
+<p>Jer javne politike u konačnici jesu način na koji društvo odlučuje kako će zajedno živjeti, što će financirati, koga će zaštititi i koje će rizike dijeliti. Razumjeti ih znači razumjeti kako država djeluje, zašto ponekad uspijeva, a ponekad podbaci, i kako je možemo učiniti boljom. Upravo zato vrijedi otvoriti ovu knjigu, i upravo zato ima smisla proći je redom kojim je i pisana.</p>
 </section>
 <section id="put-kroz-knjigu" class="level2 page-columns page-full">
 <h2 class="anchored" data-anchor-id="put-kroz-knjigu">Put kroz knjigu</h2>
-<p>Knjiga je oblikovana kao postupno izgrađena cjelina u kojoj jedan dio prirodno otvara sljedeći.</p>
-<p>Prvi dio polazi od pitanja zašto država uopće intervenira u tržišno gospodarstvo. Krećemo od Musgraveova okvira <span class="citation" data-cites="musgrave1959">(<a href="../references.html#ref-musgrave1959" role="doc-biblioref">Musgrave 1959.</a>)</span> i klasične teorije javnih financija, gdje prevladava uglavnom romantičan pogled na državu. Država se tu promatra kao akter koji može ispravljati tržišne neuspjehe, osiguravati javna dobra, ublažavati nejednakosti i stabilizirati gospodarstvo. U tom okviru izrastaju tri njezine temeljne funkcije. Alokacijska funkcija odnosi se na ispravljanje tržišnih neuspjeha poput javnih dobara, eksternalija, monopola i asimetričnih informacija. Distribucijska funkcija odnosi se na raspodjelu dohotka, bogatstva i životnih prilika. Stabilizacijska funkcija odnosi se na ublažavanje recesija, nezaposlenosti, inflacije i drugih makroekonomskih neravnoteža. Državna intervencija stoga može biti opravdana kada tržište ne proizvodi učinkovite, pravedne ili stabilne ishode. No to je tek početak analize.</p>
+<p>To razumijevanje knjiga ne nudi odjednom, nego ga gradi u pet dijelova u kojima jedan otvara sljedeći. Prvi dio polazi od pitanja zašto država uopće intervenira u tržišno gospodarstvo. Krećemo od Musgraveova okvira <span class="citation" data-cites="musgrave1959">(<a href="../references.html#ref-musgrave1959" role="doc-biblioref">Musgrave 1959</a>)</span> i klasične teorije javnih financija, u kojoj prevladava razmjerno romantičan pogled na državu kao aktera koji ispravlja tržišne neuspjehe, osigurava javna dobra, ublažava nejednakosti i stabilizira gospodarstvo. Iz tog okvira izrastaju tri njezine temeljne funkcije, alokacijska, distribucijska i stabilizacijska, a intervencija dobiva opravdanje ondje gdje tržište ne daje učinkovite, pravedne ili stabilne ishode. No to je tek početak.</p>
 <div class="no-row-height column-margin column-container"><div id="ref-musgrave1959" class="csl-entry" role="listitem">
-Musgrave, Richard A. 1959. <em>The Theory of Public Finance</em>. McGraw-Hill.
-</div></div><p>Drugi dio uvodi zaokret prema <em>politici bez romantike</em>. Nakon što smo prethodno objasnili zašto tržište može zakazati i zašto država može imati važnu korektivnu ulogu, postavlja se jednako važno pitanje. Što ako i sama država može zakazati? Teorija javnog izbora polazi od jednostavne, ali snažne zamisli. Politički proces ne čine apstraktne institucije, nego konkretni akteri. Političari, birači, birokrati i interesne skupine djeluju unutar sustava poticaja, informacija i ograničenja. Javni izbor zato ne tvrdi da su politički akteri nužno loši ili sebični, nego da dobre namjere nisu dovoljne. Državu valja promatrati i kroz ono što bi trebala raditi i kroz način na koji stvarno odlučuje. Javne politike treba analizirati prema tome tko ih oblikuje, tko ih provodi, tko od njih ima koristi, tko snosi troškove i kakvi poticaji stoje iza političkih odluka.</p>
-<p>Treći dio otvara pitanje koje prirodno slijedi iz prethodne analize. Ako tržišta mogu zakazati, a država također može zakazati, što onda određuje kada javne politike uspijevaju? Odgovor se nalazi u institucijama. Nova institucionalna ekonomika premješta fokus s pojedinačnih politika na pravila igre. Drugi važan dio te cjeline jest konstitucionalna ekonomika, koja pita kakva pravila treba postaviti prije svakodnevnog političkog odlučivanja. Kvaliteta javnih politika ovisi o kvaliteti institucija. Dobre politike ne nastaju samo iz dobrih namjera, nego iz dobrih pravila, poticaja, kapaciteta i odgovornosti.</p>
-<p>Četvrti dio spušta teorijske pristupe na konkretna područja javnog djelovanja. Ovdje analiziramo kako država prikuplja sredstva, kako ih troši i kakve učinke javne financije imaju na gospodarstvo i društvo. Razmatraju se porezi, javna potrošnja, javni dug, socijalni transferi, mirovine, zdravstvo, obrazovanje, lokalne financije, subvencije, javne investicije i druge praktične politike. Javne financije i javne politike mogu se razumjeti samo ako istodobno promatramo ciljeve, instrumente, poticaje, institucije i stvarne učinke.</p>
-<p>Završni dio usmjeren je na pitanje kako iz svih prethodnih pristupa izvući praktične lekcije. Ako znamo da tržišta mogu zakazati, da država može zakazati, da akteri imaju različite poticaje i da institucije oblikuju ishode, ostaje pitanje kako dizajnirati bolje javne politike. Ovaj dio bavi se procesom njihova oblikovanja koji uključuje definiranje problema, izbor instrumenata, procjenu troškova i koristi, analizu učinaka, uključivanje dionika, provedbu, evaluaciju i prilagodbu na temelju rezultata. Kvalitetna javna politika nastaje kada se dobar cilj poveže s dobrim instrumentom, provedivim institucionalnim okvirom, jasnom odgovornošću i spremnošću na učenje.</p>
-</section>
-<section id="što-ova-knjiga-želi-postići" class="level2">
-<h2 class="anchored" data-anchor-id="što-ova-knjiga-želi-postići">Što ova knjiga želi postići?</h2>
-<p>Ova knjiga ne nudi jednostavne odgovore. Ona ne polazi od pretpostavke da je država uvijek bolja od tržišta, niti od pretpostavke da je tržište uvijek bolje od države. Njezin je cilj ponuditi način razmišljanja o javnim politikama. Naučiti čitatelja kako prepoznati javni problem, kako razumjeti različite interese i poticaje, kako procijeniti učinke državne intervencije i kako razlikovati dobru namjeru od dobre politike.</p>
-<p>Knjiga ne želi čitatelju dati popis gotovih rješenja, nego analitički okvir. Javne politike rijetko imaju jednostavna i univerzalna rješenja. Ista mjera može biti uspješna u jednoj zemlji, a neuspješna u drugoj. Isti porez može imati različite učinke ovisno o administrativnom kapacitetu države, povjerenju građana i mogućnostima izbjegavanja poreza. Ista reforma može izgledati dobro na papiru, ali propasti u provedbi ako institucije nemaju znanje, resurse ili odgovornost. Zato je važno razviti sposobnost postavljanja pravih pitanja prije nego što se ponude odgovori.</p>
-<p>Dobra analiza javnih politika mora povezati ekonomsku logiku, političke poticaje i institucionalna pravila. Ekonomija nam pokazuje troškove, koristi, ograničenja i poticaje. Politika nam pokazuje kako se odluke stvarno donose, tko na njih utječe i zašto dobre ideje ne moraju uvijek postati dobre odluke. Institucije nam pokazuju zašto iste politike ne daju iste rezultate u različitim okolnostima.</p>
-<p>Zato je ova knjiga poziv na razmišljanje izvan jednostavnih podjela. Nije dovoljno reći da država treba intervenirati. Treba pitati postoji li doista problem koji zahtijeva javnu intervenciju, koji je instrument najprikladniji i može li ga država provesti. Nije dovoljno reći da država treba manje intervenirati. Treba pitati tko će tada riješiti problem, hoće li tržište ili društvo to moći učiniti bolje i tko će snositi posljedice neintervencije. Nije dovoljno donijeti zakon. Treba pitati tko će ga provesti, s kojim resursima, pod kojim pravilima i uz kakvu odgovornost. Nije dovoljno imati dobru strategiju. Treba imati institucije koje mogu pretvoriti strategiju u rezultat.</p>
-<p>U tom smislu, ova knjiga želi razviti pristup analizi javnih politika kao način razmišljanja. To znači promatrati svaku javnu odluku kroz nekoliko povezanih pitanja. Koji problem pokušavamo riješiti? Zašto taj problem ne može riješiti samo tržište ili privatna inicijativa? Što država može učiniti? Koje poticaje njezina intervencija stvara? Tko dobiva, a tko gubi? Tko odlučuje, tko provodi i tko nadzire? Kako znamo je li politika uspjela? Takav pristup ne jamči savršene odgovore, ali smanjuje rizik površnih, ideoloških ili kratkoročnih rješenja.</p>
-<p>U konačnici, javne politike su način na koji društvo odlučuje kako će zajednički živjeti, što će financirati, koga će zaštititi, koje rizike će dijeliti i kakvu budućnost želi graditi. Upravo zato vrijedi otvoriti ovu knjigu. Razumjeti javne politike znači razumjeti kako država djeluje, zašto ponekad uspijeva, zašto ponekad ne uspijeva i kako je možemo učiniti boljom.</p>
+Musgrave, Richard A. 1959. <em>The Theory of Public Finance</em>. New York: McGraw-Hill.
+</div></div><p>Drugi dio donosi zaokret prema <em>politici bez romantike</em>. Kad smo već vidjeli da tržište može zakazati i da država ima korektivnu ulogu, slijedi neugodnije pitanje, što ako i sama država zakaže. Teorija javnog izbora polazi od jednostavne zamisli da politički proces ne čine apstraktne institucije, nego konkretni akteri, političari, birači, birokrati i interesne skupine, koji djeluju unutar vlastitih poticaja i ograničenja. Ona ne tvrdi da su ti akteri sebični, nego da dobre namjere ni ovdje nisu dovoljne, pa politiku valja suditi po tome tko je oblikuje, tko od nje ima korist i tko snosi njezin trošak.</p>
+<p>Treći dio postavlja pitanje koje slijedi samo po sebi. Ako i tržište i država mogu zakazati, ostaje pitanje što onda odlučuje hoće li javna politika uspjeti. Odgovor leži u institucijama. Nova institucionalna ekonomika premješta pozornost s pojedinačnih politika na pravila igre, a konstitucionalna ekonomika pita kakva pravila treba postaviti još prije svakodnevnog odlučivanja. Kvaliteta javnih politika tako se pokazuje kao odraz kvalitete institucija, jer dobre politike ne rastu iz dobrih namjera, nego iz dobrih pravila, poticaja i odgovornosti.</p>
+<p>Četvrti dio spušta te pristupe na tlo konkretnih politika. Tu pratimo kako država prikuplja sredstva i kako ih troši, kroz poreze, javnu potrošnju i dug, socijalne transfere i mirovine, zdravstvo i obrazovanje, lokalne financije i javne investicije. Sve to ima smisla samo ako istodobno gledamo ciljeve, instrumente, poticaje, institucije i stvarne učinke.</p>
+<p>Završni dio iz svega izvlači praktične lekcije. Kada već znamo da tržišta mogu zakazati, da država može zakazati, da akteri slijede različite poticaje i da institucije oblikuju ishode, ostaje najteže pitanje, kako onda osmisliti bolju politiku. Taj dio prati cijeli put od definiranja problema, preko izbora instrumenata i procjene troškova i koristi, do provedbe, evaluacije i prilagodbe. Kvalitetna javna politika nastaje ondje gdje se dobar cilj spoji s dobrim instrumentom, provedivim institucionalnim okvirom i jasnom odgovornošću. Tim redom kreće i ova knjiga, od pitanja zašto država djeluje do pitanja kako bi mogla djelovati bolje.</p>
 
 
 <!-- -->
@@ -1523,314 +1461,438 @@ Musgrave, Richard A. 1959. <em>The Theory of Public Finance</em>. McGraw-Hill.
 </script>
 
 <script id="quarto-html-after-body" type="application/javascript">
-  window.document.addEventListener("DOMContentLoaded", function (event) {
-    // Ensure there is a toggle, if there isn't float one in the top right
-    if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
-      const a = window.document.createElement('a');
-      a.classList.add('top-right');
-      a.classList.add('quarto-color-scheme-toggle');
-      a.href = "";
-      a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
-      const i = window.document.createElement("i");
-      i.classList.add('bi');
-      a.appendChild(i);
-      window.document.body.appendChild(a);
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
     }
-    setColorSchemeToggle(hasAlternateSentinel())
-    const icon = "";
-    const anchorJS = new window.AnchorJS();
-    anchorJS.options = {
-      placement: 'right',
-      icon: icon
-    };
-    anchorJS.add('.anchored');
-    const isCodeAnnotation = (el) => {
-      for (const clz of el.classList) {
-        if (clz.startsWith('code-annotation-')) {                     
-          return true;
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const disableStylesheet = (stylesheets) => {
+    for (let i=0; i < stylesheets.length; i++) {
+      const stylesheet = stylesheets[i];
+      stylesheet.rel = 'prefetch';
+    }
+  }
+  const enableStylesheet = (stylesheets) => {
+    for (let i=0; i < stylesheets.length; i++) {
+      const stylesheet = stylesheets[i];
+      stylesheet.rel = 'stylesheet';
+    }
+  }
+  const manageTransitions = (selector, allowTransitions) => {
+    const els = window.document.querySelectorAll(selector);
+    for (let i=0; i < els.length; i++) {
+      const el = els[i];
+      if (allowTransitions) {
+        el.classList.remove('notransition');
+      } else {
+        el.classList.add('notransition');
+      }
+    }
+  }
+  const toggleGiscusIfUsed = (isAlternate, darkModeDefault) => {
+    const baseTheme = document.querySelector('#giscus-base-theme')?.value ?? 'light';
+    const alternateTheme = document.querySelector('#giscus-alt-theme')?.value ?? 'dark';
+    let newTheme = '';
+    if(darkModeDefault) {
+      newTheme = isAlternate ? baseTheme : alternateTheme;
+    } else {
+      newTheme = isAlternate ? alternateTheme : baseTheme;
+    }
+    const changeGiscusTheme = () => {
+      // From: https://github.com/giscus/giscus/issues/336
+      const sendMessage = (message) => {
+        const iframe = document.querySelector('iframe.giscus-frame');
+        if (!iframe) return;
+        iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
+      }
+      sendMessage({
+        setConfig: {
+          theme: newTheme
+        }
+      });
+    }
+    const isGiscussLoaded = window.document.querySelector('iframe.giscus-frame') !== null;
+    if (isGiscussLoaded) {
+      changeGiscusTheme();
+    }
+  }
+  const toggleColorMode = (alternate) => {
+    // Switch the stylesheets
+    const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
+    manageTransitions('#quarto-margin-sidebar .nav-link', false);
+    if (alternate) {
+      enableStylesheet(alternateStylesheets);
+      for (const sheetNode of alternateStylesheets) {
+        if (sheetNode.id === "quarto-bootstrap") {
+          toggleBodyColorMode(sheetNode);
         }
       }
+    } else {
+      disableStylesheet(alternateStylesheets);
+      toggleBodyColorPrimary();
+    }
+    manageTransitions('#quarto-margin-sidebar .nav-link', true);
+    // Switch the toggles
+    const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
+    for (let i=0; i < toggles.length; i++) {
+      const toggle = toggles[i];
+      if (toggle) {
+        if (alternate) {
+          toggle.classList.add("alternate");     
+        } else {
+          toggle.classList.remove("alternate");
+        }
+      }
+    }
+    // Hack to workaround the fact that safari doesn't
+    // properly recolor the scrollbar when toggling (#1455)
+    if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
+      manageTransitions("body", false);
+      window.scrollTo(0, 1);
+      setTimeout(() => {
+        window.scrollTo(0, 0);
+        manageTransitions("body", true);
+      }, 40);  
+    }
+  }
+  const isFileUrl = () => { 
+    return window.location.protocol === 'file:';
+  }
+  const hasAlternateSentinel = () => {  
+    let styleSentinel = getColorSchemeSentinel();
+    if (styleSentinel !== null) {
+      return styleSentinel === "alternate";
+    } else {
       return false;
     }
-    const onCopySuccess = function(e) {
-      // button target
-      const button = e.trigger;
-      // don't keep focus
-      button.blur();
-      // flash "checked"
-      button.classList.add('code-copy-button-checked');
-      var currentTitle = button.getAttribute("title");
-      button.setAttribute("title", "Copied!");
-      let tooltip;
-      if (window.bootstrap) {
-        button.setAttribute("data-bs-toggle", "tooltip");
-        button.setAttribute("data-bs-placement", "left");
-        button.setAttribute("data-bs-title", "Copied!");
-        tooltip = new bootstrap.Tooltip(button, 
-          { trigger: "manual", 
-            customClass: "code-copy-button-tooltip",
-            offset: [0, -8]});
-        tooltip.show();    
-      }
-      setTimeout(function() {
-        if (tooltip) {
-          tooltip.hide();
-          button.removeAttribute("data-bs-title");
-          button.removeAttribute("data-bs-toggle");
-          button.removeAttribute("data-bs-placement");
-        }
-        button.setAttribute("title", currentTitle);
-        button.classList.remove('code-copy-button-checked');
-      }, 1000);
-      // clear code selection
-      e.clearSelection();
+  }
+  const setStyleSentinel = (alternate) => {
+    const value = alternate ? "alternate" : "default";
+    if (!isFileUrl()) {
+      window.localStorage.setItem("quarto-color-scheme", value);
+    } else {
+      localAlternateSentinel = value;
     }
-    const getTextToCopy = function(trigger) {
-      const outerScaffold = trigger.parentElement.cloneNode(true);
-      const codeEl = outerScaffold.querySelector('code');
+  }
+  const getColorSchemeSentinel = () => {
+    if (!isFileUrl()) {
+      const storageValue = window.localStorage.getItem("quarto-color-scheme");
+      return storageValue != null ? storageValue : localAlternateSentinel;
+    } else {
+      return localAlternateSentinel;
+    }
+  }
+  const darkModeDefault = false;
+  let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
+  // Dark / light mode switch
+  window.quartoToggleColorScheme = () => {
+    // Read the current dark / light value 
+    let toAlternate = !hasAlternateSentinel();
+    toggleColorMode(toAlternate);
+    setStyleSentinel(toAlternate);
+    toggleGiscusIfUsed(toAlternate, darkModeDefault);
+  };
+  // Ensure there is a toggle, if there isn't float one in the top right
+  if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
+    const a = window.document.createElement('a');
+    a.classList.add('top-right');
+    a.classList.add('quarto-color-scheme-toggle');
+    a.href = "";
+    a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
+    const i = window.document.createElement("i");
+    i.classList.add('bi');
+    a.appendChild(i);
+    window.document.body.appendChild(a);
+  }
+  // Switch to dark mode if need be
+  if (hasAlternateSentinel()) {
+    toggleColorMode(true);
+  } else {
+    toggleColorMode(false);
+  }
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const onCopySuccess = function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  }
+  const getTextToCopy = function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
       for (const childEl of codeEl.children) {
         if (isCodeAnnotation(childEl)) {
           childEl.remove();
         }
       }
       return codeEl.innerText;
-    }
-    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
-      text: getTextToCopy
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+    text: getTextToCopy
+  });
+  clipboard.on('success', onCopySuccess);
+  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+      text: getTextToCopy,
+      container: window.document.getElementById('quarto-embedded-source-code-modal')
     });
-    clipboard.on('success', onCopySuccess);
-    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
-      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
-        text: getTextToCopy,
-        container: window.document.getElementById('quarto-embedded-source-code-modal')
-      });
-      clipboardModal.on('success', onCopySuccess);
-    }
-    const viewSource = window.document.getElementById('quarto-view-source') ||
-                       window.document.getElementById('quarto-code-tools-source');
-    if (viewSource) {
-      const sourceUrl = viewSource.getAttribute("data-quarto-source-url");
-      viewSource.addEventListener("click", function(e) {
-        if (sourceUrl) {
-          // rstudio viewer pane
-          if (/\bcapabilities=\b/.test(window.location)) {
-            window.open(sourceUrl);
-          } else {
-            window.location.href = sourceUrl;
-          }
+    clipboardModal.on('success', onCopySuccess);
+  }
+  const viewSource = window.document.getElementById('quarto-view-source') ||
+                     window.document.getElementById('quarto-code-tools-source');
+  if (viewSource) {
+    const sourceUrl = viewSource.getAttribute("data-quarto-source-url");
+    viewSource.addEventListener("click", function(e) {
+      if (sourceUrl) {
+        // rstudio viewer pane
+        if (/\bcapabilities=\b/.test(window.location)) {
+          window.open(sourceUrl);
         } else {
-          const modal = new bootstrap.Modal(document.getElementById('quarto-embedded-source-code-modal'));
-          modal.show();
-        }
-        return false;
-      });
-    }
-    function toggleCodeHandler(show) {
-      return function(e) {
-        const detailsSrc = window.document.querySelectorAll(".cell > details > .sourceCode");
-        for (let i=0; i<detailsSrc.length; i++) {
-          const details = detailsSrc[i].parentElement;
-          if (show) {
-            details.open = true;
-          } else {
-            details.removeAttribute("open");
-          }
-        }
-        const cellCodeDivs = window.document.querySelectorAll(".cell > .sourceCode");
-        const fromCls = show ? "hidden" : "unhidden";
-        const toCls = show ? "unhidden" : "hidden";
-        for (let i=0; i<cellCodeDivs.length; i++) {
-          const codeDiv = cellCodeDivs[i];
-          if (codeDiv.classList.contains(fromCls)) {
-            codeDiv.classList.remove(fromCls);
-            codeDiv.classList.add(toCls);
-          } 
-        }
-        return false;
-      }
-    }
-    const hideAllCode = window.document.getElementById("quarto-hide-all-code");
-    if (hideAllCode) {
-      hideAllCode.addEventListener("click", toggleCodeHandler(false));
-    }
-    const showAllCode = window.document.getElementById("quarto-show-all-code");
-    if (showAllCode) {
-      showAllCode.addEventListener("click", toggleCodeHandler(true));
-    }
-      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
-      var mailtoRegex = new RegExp(/^mailto:/);
-        var filterRegex = new RegExp("https:\/\/lusiki\.github\.io\/Javne-politike\/");
-      var isInternal = (href) => {
-          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
-      }
-      // Inspect non-navigation links and adorn them if external
-     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
-      for (var i=0; i<links.length; i++) {
-        const link = links[i];
-        if (!isInternal(link.href)) {
-          // undo the damage that might have been done by quarto-nav.js in the case of
-          // links that we want to consider external
-          if (link.dataset.originalHref !== undefined) {
-            link.href = link.dataset.originalHref;
-          }
-            // target, if specified
-            link.setAttribute("target", "_blank");
-            if (link.getAttribute("rel") === null) {
-              link.setAttribute("rel", "noopener");
-            }
-            // default icon
-            link.classList.add("external");
-        }
-      }
-    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
-      const config = {
-        allowHTML: true,
-        maxWidth: 500,
-        delay: 100,
-        arrow: false,
-        appendTo: function(el) {
-            return el.parentElement;
-        },
-        interactive: true,
-        interactiveBorder: 10,
-        theme: 'quarto',
-        placement: 'bottom-start',
-      };
-      if (contentFn) {
-        config.content = contentFn;
-      }
-      if (onTriggerFn) {
-        config.onTrigger = onTriggerFn;
-      }
-      if (onUntriggerFn) {
-        config.onUntrigger = onUntriggerFn;
-      }
-      window.tippy(el, config); 
-    }
-    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
-    for (var i=0; i<noterefs.length; i++) {
-      const ref = noterefs[i];
-      tippyHover(ref, function() {
-        // use id or data attribute instead here
-        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
-        try { href = new URL(href).hash; } catch {}
-        const id = href.replace(/^#\/?/, "");
-        const note = window.document.getElementById(id);
-        if (note) {
-          return note.innerHTML;
-        } else {
-          return "";
-        }
-      });
-    }
-    const xrefs = window.document.querySelectorAll('a.quarto-xref');
-    const processXRef = (id, note) => {
-      // Strip column container classes
-      const stripColumnClz = (el) => {
-        el.classList.remove("page-full", "page-columns");
-        if (el.children) {
-          for (const child of el.children) {
-            stripColumnClz(child);
-          }
-        }
-      }
-      stripColumnClz(note)
-      if (id === null || id.startsWith('sec-')) {
-        // Special case sections, only their first couple elements
-        const container = document.createElement("div");
-        if (note.children && note.children.length > 2) {
-          container.appendChild(note.children[0].cloneNode(true));
-          for (let i = 1; i < note.children.length; i++) {
-            const child = note.children[i];
-            if (child.tagName === "P" && child.innerText === "") {
-              continue;
-            } else {
-              container.appendChild(child.cloneNode(true));
-              break;
-            }
-          }
-          if (window.Quarto?.typesetMath) {
-            window.Quarto.typesetMath(container);
-          }
-          return container.innerHTML
-        } else {
-          if (window.Quarto?.typesetMath) {
-            window.Quarto.typesetMath(note);
-          }
-          return note.innerHTML;
+          window.location.href = sourceUrl;
         }
       } else {
-        // Remove any anchor links if they are present
-        const anchorLink = note.querySelector('a.anchorjs-link');
-        if (anchorLink) {
-          anchorLink.remove();
+        const modal = new bootstrap.Modal(document.getElementById('quarto-embedded-source-code-modal'));
+        modal.show();
+      }
+      return false;
+    });
+  }
+  function toggleCodeHandler(show) {
+    return function(e) {
+      const detailsSrc = window.document.querySelectorAll(".cell > details > .sourceCode");
+      for (let i=0; i<detailsSrc.length; i++) {
+        const details = detailsSrc[i].parentElement;
+        if (show) {
+          details.open = true;
+        } else {
+          details.removeAttribute("open");
         }
+      }
+      const cellCodeDivs = window.document.querySelectorAll(".cell > .sourceCode");
+      const fromCls = show ? "hidden" : "unhidden";
+      const toCls = show ? "unhidden" : "hidden";
+      for (let i=0; i<cellCodeDivs.length; i++) {
+        const codeDiv = cellCodeDivs[i];
+        if (codeDiv.classList.contains(fromCls)) {
+          codeDiv.classList.remove(fromCls);
+          codeDiv.classList.add(toCls);
+        } 
+      }
+      return false;
+    }
+  }
+  const hideAllCode = window.document.getElementById("quarto-hide-all-code");
+  if (hideAllCode) {
+    hideAllCode.addEventListener("click", toggleCodeHandler(false));
+  }
+  const showAllCode = window.document.getElementById("quarto-show-all-code");
+  if (showAllCode) {
+    showAllCode.addEventListener("click", toggleCodeHandler(true));
+  }
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp("https:\/\/lusiki\.github\.io\/Javne-politike\/");
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+          // target, if specified
+          link.setAttribute("target", "_blank");
+          if (link.getAttribute("rel") === null) {
+            link.setAttribute("rel", "noopener");
+          }
+          // default icon
+          link.classList.add("external");
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+    const config = {
+      allowHTML: true,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start',
+    };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
         if (window.Quarto?.typesetMath) {
           window.Quarto.typesetMath(note);
         }
-        if (note.classList.contains("callout")) {
-          return note.outerHTML;
-        } else {
-          return note.innerHTML;
-        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
       }
     }
-    for (var i=0; i<xrefs.length; i++) {
-      const xref = xrefs[i];
-      tippyHover(xref, undefined, function(instance) {
-        instance.disable();
-        let url = xref.getAttribute('href');
-        let hash = undefined; 
-        if (url.startsWith('#')) {
-          hash = url;
-        } else {
-          try { hash = new URL(url).hash; } catch {}
-        }
-        if (hash) {
-          const id = hash.replace(/^#\/?/, "");
-          const note = window.document.getElementById(id);
-          if (note !== null) {
-            try {
-              const html = processXRef(id, note.cloneNode(true));
-              instance.setContent(html);
-            } finally {
-              instance.enable();
-              instance.show();
-            }
-          } else {
-            // See if we can fetch this
-            fetch(url.split('#')[0])
-            .then(res => res.text())
-            .then(html => {
-              const parser = new DOMParser();
-              const htmlDoc = parser.parseFromString(html, "text/html");
-              const note = htmlDoc.getElementById(id);
-              if (note !== null) {
-                const html = processXRef(id, note);
-                instance.setContent(html);
-              } 
-            }).finally(() => {
-              instance.enable();
-              instance.show();
-            });
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
           }
         } else {
-          // See if we can fetch a full url (with no hash to target)
-          // This is a special case and we should probably do some content thinning / targeting
-          fetch(url)
+          // See if we can fetch this
+          fetch(url.split('#')[0])
           .then(res => res.text())
           .then(html => {
             const parser = new DOMParser();
             const htmlDoc = parser.parseFromString(html, "text/html");
-            const note = htmlDoc.querySelector('main.content');
+            const note = htmlDoc.getElementById(id);
             if (note !== null) {
-              // This should only happen for chapter cross references
-              // (since there is no id in the URL)
-              // remove the first header
-              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
-                note.children[0].remove();
-              }
-              const html = processXRef(null, note);
+              const html = processXRef(id, note);
               instance.setContent(html);
             } 
           }).finally(() => {
@@ -1838,161 +1900,185 @@ Musgrave, Richard A. 1959. <em>The Theory of Public Finance</em>. McGraw-Hill.
             instance.show();
           });
         }
-      }, function(instance) {
-      });
-    }
-        let selectedAnnoteEl;
-        const selectorForAnnotation = ( cell, annotation) => {
-          let cellAttr = 'data-code-cell="' + cell + '"';
-          let lineAttr = 'data-code-annotation="' +  annotation + '"';
-          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
-          return selector;
-        }
-        const selectCodeLines = (annoteEl) => {
-          const doc = window.document;
-          const targetCell = annoteEl.getAttribute("data-target-cell");
-          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
-          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
-          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
-          const lineIds = lines.map((line) => {
-            return targetCell + "-" + line;
-          })
-          let top = null;
-          let height = null;
-          let parent = null;
-          if (lineIds.length > 0) {
-              //compute the position of the single el (top and bottom and make a div)
-              const el = window.document.getElementById(lineIds[0]);
-              top = el.offsetTop;
-              height = el.offsetHeight;
-              parent = el.parentElement.parentElement;
-            if (lineIds.length > 1) {
-              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
-              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
-              height = bottom - top;
-            }
-            if (top !== null && height !== null && parent !== null) {
-              // cook up a div (if necessary) and position it 
-              let div = window.document.getElementById("code-annotation-line-highlight");
-              if (div === null) {
-                div = window.document.createElement("div");
-                div.setAttribute("id", "code-annotation-line-highlight");
-                div.style.position = 'absolute';
-                parent.appendChild(div);
-              }
-              div.style.top = top - 2 + "px";
-              div.style.height = height + 4 + "px";
-              div.style.left = 0;
-              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
-              if (gutterDiv === null) {
-                gutterDiv = window.document.createElement("div");
-                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
-                gutterDiv.style.position = 'absolute';
-                const codeCell = window.document.getElementById(targetCell);
-                const gutter = codeCell.querySelector('.code-annotation-gutter');
-                gutter.appendChild(gutterDiv);
-              }
-              gutterDiv.style.top = top - 2 + "px";
-              gutterDiv.style.height = height + 4 + "px";
-            }
-            selectedAnnoteEl = annoteEl;
-          }
-        };
-        const unselectCodeLines = () => {
-          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
-          elementsIds.forEach((elId) => {
-            const div = window.document.getElementById(elId);
-            if (div) {
-              div.remove();
-            }
-          });
-          selectedAnnoteEl = undefined;
-        };
-          // Handle positioning of the toggle
-      window.addEventListener(
-        "resize",
-        throttle(() => {
-          elRect = undefined;
-          if (selectedAnnoteEl) {
-            selectCodeLines(selectedAnnoteEl);
-          }
-        }, 10)
-      );
-      function throttle(fn, ms) {
-      let throttle = false;
-      let timer;
-        return (...args) => {
-          if(!throttle) { // first call gets through
-              fn.apply(this, args);
-              throttle = true;
-          } else { // all the others get throttled
-              if(timer) clearTimeout(timer); // cancel #2
-              timer = setTimeout(() => {
-                fn.apply(this, args);
-                timer = throttle = false;
-              }, ms);
-          }
-        };
-      }
-        // Attach click handler to the DT
-        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
-        for (const annoteDlNode of annoteDls) {
-          annoteDlNode.addEventListener('click', (event) => {
-            const clickedEl = event.target;
-            if (clickedEl !== selectedAnnoteEl) {
-              unselectCodeLines();
-              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
-              if (activeEl) {
-                activeEl.classList.remove('code-annotation-active');
-              }
-              selectCodeLines(clickedEl);
-              clickedEl.classList.add('code-annotation-active');
-            } else {
-              // Unselect the line
-              unselectCodeLines();
-              clickedEl.classList.remove('code-annotation-active');
-            }
-          });
-        }
-    const findCites = (el) => {
-      const parentEl = el.parentElement;
-      if (parentEl) {
-        const cites = parentEl.dataset.cites;
-        if (cites) {
-          return {
-            el,
-            cites: cites.split(' ')
-          };
-        } else {
-          return findCites(el.parentElement)
-        }
       } else {
-        return undefined;
-      }
-    };
-    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
-    for (var i=0; i<bibliorefs.length; i++) {
-      const ref = bibliorefs[i];
-      const citeInfo = findCites(ref);
-      if (citeInfo) {
-        tippyHover(citeInfo.el, function() {
-          var popup = window.document.createElement('div');
-          citeInfo.cites.forEach(function(cite) {
-            var citeDiv = window.document.createElement('div');
-            citeDiv.classList.add('hanging-indent');
-            citeDiv.classList.add('csl-entry');
-            var biblioDiv = window.document.getElementById('ref-' + cite);
-            if (biblioDiv) {
-              citeDiv.innerHTML = biblioDiv.innerHTML;
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
             }
-            popup.appendChild(citeDiv);
-          });
-          return popup.innerHTML;
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
         });
       }
+    }, function(instance) {
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            div.style.left = 0;
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
     }
-  });
-  </script>
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
       <a href="../index.html" class="pagination-link" aria-label="Naslovnica">
@@ -2005,65 +2091,71 @@ Musgrave, Richard A. 1959. <em>The Theory of Public Finance</em>. McGraw-Hill.
       </a>
   </div>
 </nav><div class="modal fade" id="quarto-embedded-source-code-modal" tabindex="-1" aria-labelledby="quarto-embedded-source-code-modal-label" aria-hidden="true"><div class="modal-dialog modal-dialog-scrollable"><div class="modal-content"><div class="modal-header"><h5 class="modal-title" id="quarto-embedded-source-code-modal-label">Source Code</h5><button class="btn-close" data-bs-dismiss="modal"></button></div><div class="modal-body"><div class="">
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1" data-shortcodes="false"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
+<div class="sourceCode" id="cb1" data-shortcodes="false"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="an">title:</span><span class="co"> "Uvod — Zašto bismo otvorili ovu knjigu?"</span></span>
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
 <span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="fu">## Što su javne politike</span></span>
 <span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>Javne politike oblikuju gotovo svaki važan dio našeg svakodnevnog života. One određuju kako se financira obrazovanje, kako funkcionira zdravstveni sustav, koliko plaćamo poreza, tko ima pravo na socijalnu pomoć, kako se grade ceste, kako se reguliraju tržišta, kako država reagira na krize, kako se štiti okoliš i kako se raspodjeljuju troškovi i koristi života u zajednici. Iako ih često ne nazivamo tim imenom, javne politike prisutne su iza gotovo svake važne odluke države.</span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>Država oblikuje gotovo svaki važan dio našeg svakodnevnog života. Ona određuje kako se financira obrazovanje, kako funkcionira zdravstveni sustav, koliko plaćamo poreza, tko ima pravo na socijalnu pomoć, kako se grade ceste, kako se reguliraju tržišta i kako se raspodjeljuju troškovi i koristi života u zajednici. Iako to nije uvijek direktno vidljivo, ove odluke stoje iza gotovo svake važne odluke koja nas se tiče.</span>
 <span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>Kada student plaća školarinu ili koristi subvencionirani obrok, kada građanin čeka pregled u bolnici, kada poduzetnik ispunjava poreznu prijavu, kada obitelj prima dječji doplatak, kada radnik plaća doprinose za mirovinsko osiguranje ili kada lokalna vlast odlučuje hoće li graditi vrtić, riječ je o javnim politikama. One nisu apstraktne odluke udaljenih institucija, nego konkretna pravila, programi i instrumenti koji utječu na ponašanje ljudi, raspodjelu resursa i kvalitetu života.</span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>Kada student plaća školarinu ili koristi subvencionirani obrok, kada građanin čeka pregled u bolnici, kada poduzetnik ispunjava poreznu prijavu, kada obitelj prima dječji doplatak ili kada lokalna vlast odlučuje hoće li graditi vrtić, riječ je o javnim politikama. One nisu apstraktne odluke udaljenih institucija, nego konkretna pravila, programi i instrumenti koji oblikuju ponašanje ljudi, raspodjelu resursa i kvalitetu života.</span>
 <span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>U najjednostavnijem smislu, **javne politike** su odluke i djelovanja države kojima se pokušavaju riješiti društveni problemi ili ostvariti kolektivni ciljevi. One mogu biti izražene kroz zakone, poreze, subvencije, javnu potrošnju, regulaciju, javne usluge, strategije, programe ili administrativne postupke. No javne politike nisu samo ono što država odluči učiniti. Ponekad je javna politika i ono što država odluči ne učiniti. Neintervencija također ima posljedice.</span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>U najjednostavnijem smislu, **javne politike** su odluke i djelovanja države kojima se pokušavaju riješiti društveni problemi ili ostvariti zajednički ciljevi. Mogu se izraziti kroz zakone, poreze, subvencije, javnu potrošnju, regulaciju, javne usluge, strategije ili administrativne postupke. No javna politika nije samo ono što država odluči učiniti, nego i ono što odluči ne učiniti, jer i neintervencija ima svoje posljedice. Zato javne politike nikada nisu samo tehničko pitanje upravljanja. One uvijek uključuju izbor, jer država mora odlučiti koje probleme smatra važnima, koje ciljeve želi ostvariti, koje će instrumente upotrijebiti, tko će platiti trošak i tko će imati korist.</span>
 <span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>Zato javne politike nisu samo tehničko pitanje upravljanja. One uvijek uključuju izbor. Država mora odlučiti koje probleme smatra važnima, koje ciljeve želi ostvariti, koje instrumente će koristiti, tko će platiti trošak, tko će imati korist i kako će se procjenjivati uspjeh. Upravo zato javne politike ne možemo razumjeti bez ekonomije, politike i institucija.</span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>Iza svakog takvog izbora stoje tri pojma koja se na prvi pogled čine apstraktnima, bliže udžbeniku nego svakodnevici. Država, tržište i institucije zvuče udaljeno sve dok ne shvatimo da su upravo oni ono od čega su svi navedeni primjeri sazdani. Njihov se odnos kroz povijest neprestano mijenjao, od noćobdijske države devetnaestoga stoljeća, ograničene na obranu, red i pravosuđe, preko širenja socijalne države u dvadesetome stoljeću, do suvremene regulatorne države koja tržišta oblikuje, a ne samo nadzire. Ono što se u jednom razdoblju činilo prirodnom zadaćom države, u drugom je bilo prepušteno tržištu, i obratno.</span>
 <span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a><span class="fu">## Tri perspektive razumijevanja</span></span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a>Zato država i tržište, koliko god zvučali kao prirodni neprijatelji, rijetko to uistinu jesu. Tržište ne može funkcionirati bez države koja štiti vlasnička prava, provodi ugovore i osigurava stabilan novac, a država se oslanja na tržište kao izvor sredstava, informacija i učinkovitosti. Ono što ta dva sustava drži na okupu jesu institucije. Pod institucijama ne mislimo na impozantne građevine ni na ministarstva s reprezentativnim pročeljima, nego na skup pravila, poticaja, normi i postupaka koji određuju što se smije, što se isplati i što se kažnjava. Institucije su tihi okvir unutar kojega i država i tržište tek postaju ono što jesu. Upravo zato javne politike ne možemo razumjeti dok ih istodobno ne pogledamo kroz ekonomiju, politiku i institucije.</span>
 <span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a>Ekonomija nam pomaže razumjeti ograničenja, troškove, poticaje i učinke javnih politika. Svaka politika ima cijenu. Porezi mijenjaju ponašanje građana i poduzeća. Subvencije stvaraju poticaje, ali mogu stvarati i ovisnost ili rente. Regulacija može zaštititi potrošače, ali može povećati troškove poslovanja. Javna potrošnja može povećati društveno blagostanje, ali može opteretiti buduće generacije ako se financira dugom. Ekonomska analiza zato nas uči da dobre namjere nisu dovoljne. Pitati moramo koji problem rješavamo, koji instrument koristimo, kakve poticaje stvaramo i kakve posljedice možemo očekivati.</span>
+<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a><span class="fu">## Tri perspektive razumijevanja</span></span>
 <span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a>Politika pak objašnjava kako javne odluke stvarno nastaju. Javne politike ne oblikuju se u laboratoriju, nego u političkom procesu. U njemu sudjeluju političari, birači, birokrati, interesne skupine, mediji, stručnjaci, međunarodne organizacije i građani. Svaki od tih aktera ima svoje interese, informacije, vrijednosti i ograničenja. Zato javna politika nije uvijek rezultat hladne racionalne analize. Ona je često rezultat pregovora, pritisaka, kompromisa, izbornih obećanja, institucionalnih pravila i odnosa moći.</span>
+<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a>Ekonomski pogled kreće od neugodne istine da svaka politika ima cijenu. Porezi mijenjaju ponašanje građana i poduzeća, subvencije stvaraju poticaje, ali i ovisnost ili rente, regulacija štiti potrošače, ali poskupljuje poslovanje, a javna potrošnja može podići blagostanje ili opteretiti buduće generacije ako se financira dugom. Ekonomska nas analiza zato uči da dobre namjere nisu dovoljne i da o svakoj mjeri valja pitati koji problem rješava, kakve poticaje stvara i kakve posljedice za sobom povlači.</span>
 <span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a>Institucije, naposljetku, objašnjavaju zašto iste politike ne daju iste rezultate u različitim zemljama. Dobar zakon na papiru nije dovoljan ako ga institucije ne mogu provesti. Porezna reforma neće imati isti učinak u zemlji s učinkovitom poreznom administracijom i u zemlji s raširenom sivom ekonomijom. Reforma zdravstva neće uspjeti ako nema upravljačke odgovornosti, podataka, koordinacije i administrativnog kapaciteta. Decentralizacija može poboljšati javne usluge ondje gdje lokalne institucije funkcioniraju, ali može povećati nejednakosti ondje gdje su lokalni kapaciteti slabi. Institucije su zato formalna i neformalna pravila igre koja oblikuju ponašanje svih aktera, a obuhvaćaju zakone, norme, procedure i mehanizme provedbe koji određuju što se smije, što se isplati i što se kažnjava u nekom društvu.</span>
+<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a>Politički pogled objašnjava kako te odluke uopće nastaju. Javne politike ne oblikuju se u laboratoriju, nego u procesu u kojem sudjeluju političari, birači, birokrati, interesne skupine, mediji i stručnjaci, svaki sa svojim interesima, informacijama i ograničenjima. Zato je javna politika rijetko plod hladne računice. Ona je češće ishod pregovora, pritisaka, kompromisa, izbornih obećanja i odnosa moći, što objašnjava zašto dobra ideja ne postaje nužno i dobra odluka.</span>
 <span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a>Država nije ni samo rješenje, ni samo problem. Ona je složen sustav odluka, poticaja, pravila, organizacija i ljudi. Ponekad je nužna jer tržišta sama ne mogu osigurati javna dobra, riješiti eksternalije, smanjiti nejednakosti ili stabilizirati gospodarstvo. Ponekad, međutim, može i sama postati izvor problema. Politike mogu biti loše dizajnirane, administracija može biti neučinkovita, interesne skupine mogu zarobiti regulaciju, političari mogu misliti kratkoročno, a troškovi loših odluka mogu se prebaciti na buduće generacije.</span>
+<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a>Institucionalni pogled, naposljetku, objašnjava zašto iste politike ne daju iste rezultate na različitim mjestima. Pravila koja smo već prepoznali kao tihi okvir djelovanja ovdje pokazuju svoju punu težinu. Dobar zakon na papiru ne vrijedi mnogo ako ga administracija ne može provesti, porezna reforma neće jednako djelovati u zemlji s urednom poreznom upravom i u onoj s raširenom sivom ekonomijom, a decentralizacija će poboljšati usluge ondje gdje lokalne institucije rade dobro, ali produbiti nejednakosti ondje gdje su slabe.</span>
 <span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-25"><a href="#cb1-25" aria-hidden="true" tabindex="-1"></a>Zato cilj ove knjige nije uvjeriti čitatelja da treba uvijek više države ili uvijek manje države. To bi bilo prejednostavno. Pravo se pitanje uvijek tiče toga kakva država, za koje probleme, s kojim instrumentima, pod kojim pravilima i s kakvom odgovornošću. Cilj zato nije ideološki odabrati stranu, nego razumjeti uvjete pod kojima javne politike mogu stvarati javnu vrijednost.</span>
+<span id="cb1-25"><a href="#cb1-25" aria-hidden="true" tabindex="-1"></a>Iz ta tri pogleda izranja slika države koja nije ni puko rješenje ni puki problem. Ona je nužna ondje gdje tržišta sama ne mogu osigurati javna dobra, obuzdati eksternalije ili stabilizirati gospodarstvo, ali i sama može postati izvorom nevolje kada su politike loše osmišljene, administracija neučinkovita ili kada interesne skupine zarobe regulaciju. Zato pravo pitanje nikada nije treba li više države ili manje države, nego kakva država, za koje probleme, s kojim instrumentima i pod kojom odgovornošću. Cilj nije ideološki odabrati stranu, nego razumjeti uvjete pod kojima javne politike stvaraju vrijednost.</span>
 <span id="cb1-26"><a href="#cb1-26" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-27"><a href="#cb1-27" aria-hidden="true" tabindex="-1"></a><span class="fu">## Od triju perspektiva do metode</span></span>
 <span id="cb1-28"><a href="#cb1-28" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-29"><a href="#cb1-29" aria-hidden="true" tabindex="-1"></a>Razumijevanje javnih politika kao kombinacije ekonomije, politike i institucija nije neutralan opis, nego operativna metoda. Ona pretpostavlja određen način postupanja s problemom. Prvo se traži preciznija formulacija problema umjesto njegove sažete političke verzije, jer način na koji problem zovemo često unaprijed sužava prostor rješenja. Drugo se traže poticaji koje stvaraju različite politike, jer su upravo poticaji ono što oblikuje stvarno ponašanje, ne nominalni ciljevi koji su zapisani u dokumentima. Treće se traže institucionalni preduvjeti provedbe, jer politika koja prelazi kapacitete administracije u kojoj se primjenjuje proizvodi ishode neovisne od svoje teorijske kvalitete. Četvrto se traže učinci za pojedine društvene skupine, jer agregatni saldo politike rijetko opisuje njezino stvarno djelovanje na ljude koji se s njom susreću.</span>
+<span id="cb1-29"><a href="#cb1-29" aria-hidden="true" tabindex="-1"></a>Ta tri pogleda nisu tek tri načina da se opiše ista pojava. Sva tri zajedno čine metodu, određen način na koji se pristupa svakom problemu javne politike. Prvi korak traži precizniju formulaciju problema umjesto njegove sažete političke verzije, jer način na koji problem imenujemo unaprijed sužava prostor rješenja. Drugi traži poticaje koje politika stvarno stvara, jer upravo poticaji, a ne ciljevi zapisani u dokumentima, oblikuju ponašanje.</span>
 <span id="cb1-30"><a href="#cb1-30" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-31"><a href="#cb1-31" aria-hidden="true" tabindex="-1"></a>Takav pristup nije osebujnost akademskog promatrača nego način na koji se pokušava izbjeći najčešća greška analize politika, a to je zamjena svrhe za sredstvo. Politički proces sustavno stvara pritisak za odabir politike na temelju njezine svrhe (smanjiti nejednakost, povećati zapošljavanje, zaštititi okoliš), bez paralelne pažnje prema mehanizmu kojim će politika tu svrhu ostvariti. Razdvajanje tih dviju razina, namjere i mehanizma, jest minimum koji se može tražiti od svakog ozbiljnog razmatranja javnih politika prije nego što se uopće dođe do pitanja koje će se politike preporučiti, podržati ili kritizirati.</span>
+<span id="cb1-31"><a href="#cb1-31" aria-hidden="true" tabindex="-1"></a>Treći korak traži institucionalne preduvjete provedbe, jer politika koja prelazi kapacitete administracije u kojoj se primjenjuje daje ishode neovisne o svojoj teorijskoj kvaliteti. Četvrti traži učinke na pojedine društvene skupine, jer agregatni saldo rijetko opisuje ono što politika čini ljudima koji se s njom stvarno susreću. Tek kada se sva četiri pitanja postave zajedno, opis politike postaje analiza.</span>
 <span id="cb1-32"><a href="#cb1-32" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-33"><a href="#cb1-33" aria-hidden="true" tabindex="-1"></a><span class="fu">## Put kroz knjigu</span></span>
+<span id="cb1-33"><a href="#cb1-33" aria-hidden="true" tabindex="-1"></a>Takav pristup nije akademska osebujnost, nego brana najčešćoj grešci u analizi politika, zamjeni svrhe za sredstvo. Politički proces neprestano gura na biranje politike prema njezinoj svrsi (smanjiti nejednakost, povećati zaposlenost, zaštititi okoliš) bez jednake pažnje za mehanizam kojim će se ta svrha postići. Razdvajanje namjere od mehanizma najmanji je uvjet svakoga ozbiljnog razmatranja, prije nego što se uopće dođe do toga koju politiku preporučiti ili kritizirati.</span>
 <span id="cb1-34"><a href="#cb1-34" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-35"><a href="#cb1-35" aria-hidden="true" tabindex="-1"></a>Knjiga je oblikovana kao postupno izgrađena cjelina u kojoj jedan dio prirodno otvara sljedeći.</span>
+<span id="cb1-35"><a href="#cb1-35" aria-hidden="true" tabindex="-1"></a><span class="fu">## Mjesto ove knjige</span></span>
 <span id="cb1-36"><a href="#cb1-36" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-37"><a href="#cb1-37" aria-hidden="true" tabindex="-1"></a>Prvi dio polazi od pitanja zašto država uopće intervenira u tržišno gospodarstvo. Krećemo od Musgraveova okvira <span class="co">[</span><span class="ot">@musgrave1959</span><span class="co">]</span> i klasične teorije javnih financija, gdje prevladava uglavnom romantičan pogled na državu. Država se tu promatra kao akter koji može ispravljati tržišne neuspjehe, osiguravati javna dobra, ublažavati nejednakosti i stabilizirati gospodarstvo. U tom okviru izrastaju tri njezine temeljne funkcije. Alokacijska funkcija odnosi se na ispravljanje tržišnih neuspjeha poput javnih dobara, eksternalija, monopola i asimetričnih informacija. Distribucijska funkcija odnosi se na raspodjelu dohotka, bogatstva i životnih prilika. Stabilizacijska funkcija odnosi se na ublažavanje recesija, nezaposlenosti, inflacije i drugih makroekonomskih neravnoteža. Državna intervencija stoga može biti opravdana kada tržište ne proizvodi učinkovite, pravedne ili stabilne ishode. No to je tek početak analize.</span>
+<span id="cb1-37"><a href="#cb1-37" aria-hidden="true" tabindex="-1"></a>Taj metodski naglasak ujedno objašnjava zašto smo ovu knjigu uopće napisali. Hrvatska nije bez literature o ekonomici javnog sektora. Postoji domaća tradicija udžbenika i priručnika koja seže od Jurkovićeva udžbenika javnih financija <span class="co">[</span><span class="ot">@jurkovic2002</span><span class="co">]</span>, preko hrvatskoga prijevoda Rosenova i Gayerova udžbenika u izdanju Instituta za javne financije <span class="co">[</span><span class="ot">@rosenGayer2010</span><span class="co">]</span>, do novije ekonomike javnog sektora Šimovića i Deskar-Škrbića <span class="co">[</span><span class="ot">@simovicDeskar2020</span><span class="co">]</span>. Ti tekstovi pokrivaju jezgru područja, od alokacijske uloge države i teorije poreza do proračuna i javnoga duga, i čine oslonac na koji se nadovezujemo.</span>
 <span id="cb1-38"><a href="#cb1-38" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-39"><a href="#cb1-39" aria-hidden="true" tabindex="-1"></a>Drugi dio uvodi zaokret prema *politici bez romantike*. Nakon što smo prethodno objasnili zašto tržište može zakazati i zašto država može imati važnu korektivnu ulogu, postavlja se jednako važno pitanje. Što ako i sama država može zakazati? Teorija javnog izbora polazi od jednostavne, ali snažne zamisli. Politički proces ne čine apstraktne institucije, nego konkretni akteri. Političari, birači, birokrati i interesne skupine djeluju unutar sustava poticaja, informacija i ograničenja. Javni izbor zato ne tvrdi da su politički akteri nužno loši ili sebični, nego da dobre namjere nisu dovoljne. Državu valja promatrati i kroz ono što bi trebala raditi i kroz način na koji stvarno odlučuje. Javne politike treba analizirati prema tome tko ih oblikuje, tko ih provodi, tko od njih ima koristi, tko snosi troškove i kakvi poticaji stoje iza političkih odluka.</span>
+<span id="cb1-39"><a href="#cb1-39" aria-hidden="true" tabindex="-1"></a>Jurkovićeva knjiga dobro pokazuje narav te tradicije <span class="co">[</span><span class="ot">@jurkovic2002</span><span class="co">]</span>. Pisana je s ekonomskoga gledišta, organizirana oko Musgraveove podjele na alokacijsku, distribucijsku i stabilizacijsku funkciju <span class="co">[</span><span class="ot">@musgrave1959</span><span class="co">]</span>, i polazi od jednostavne, ali lako zaboravljene tvrdnje da nema besplatnog ručka, jer za svaku javnu odluku netko na kraju plaća. Upravo je ta misao, da svaka politika ima svoju cijenu, polazište i ove knjige.</span>
 <span id="cb1-40"><a href="#cb1-40" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-41"><a href="#cb1-41" aria-hidden="true" tabindex="-1"></a>Treći dio otvara pitanje koje prirodno slijedi iz prethodne analize. Ako tržišta mogu zakazati, a država također može zakazati, što onda određuje kada javne politike uspijevaju? Odgovor se nalazi u institucijama. Nova institucionalna ekonomika premješta fokus s pojedinačnih politika na pravila igre. Drugi važan dio te cjeline jest konstitucionalna ekonomika, koja pita kakva pravila treba postaviti prije svakodnevnog političkog odlučivanja. Kvaliteta javnih politika ovisi o kvaliteti institucija. Dobre politike ne nastaju samo iz dobrih namjera, nego iz dobrih pravila, poticaja, kapaciteta i odgovornosti.</span>
+<span id="cb1-41"><a href="#cb1-41" aria-hidden="true" tabindex="-1"></a>Ova knjiga zato nije zamišljena kao zamjena za postojeće, nego kao njihova dopuna. Ona pretpostavlja da je jezgra područja već obrađena i gradi sljedeći sloj, onaj koji klasičnu teoriju javnih financija povezuje s teorijom javnog izbora, novom institucionalnom i konstitucionalnom ekonomikom te suvremenim raspravama o kvaliteti upravljanja. Tamo gdje postojeći udžbenici pitaju što država treba činiti, mi dodajemo pitanje kako država stvarno odlučuje i zašto iste politike u različitim okolnostima daju različite ishode. Zato su ovdje našle mjesto teme za koje u klasičnom udžbeniku javnih financija obično nije ostajalo prostora.</span>
 <span id="cb1-42"><a href="#cb1-42" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-43"><a href="#cb1-43" aria-hidden="true" tabindex="-1"></a>Četvrti dio spušta teorijske pristupe na konkretna područja javnog djelovanja. Ovdje analiziramo kako država prikuplja sredstva, kako ih troši i kakve učinke javne financije imaju na gospodarstvo i društvo. Razmatraju se porezi, javna potrošnja, javni dug, socijalni transferi, mirovine, zdravstvo, obrazovanje, lokalne financije, subvencije, javne investicije i druge praktične politike. Javne financije i javne politike mogu se razumjeti samo ako istodobno promatramo ciljeve, instrumente, poticaje, institucije i stvarne učinke.</span>
+<span id="cb1-43"><a href="#cb1-43" aria-hidden="true" tabindex="-1"></a><span class="fu">## Pitanja prije odgovora</span></span>
 <span id="cb1-44"><a href="#cb1-44" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-45"><a href="#cb1-45" aria-hidden="true" tabindex="-1"></a>Završni dio usmjeren je na pitanje kako iz svih prethodnih pristupa izvući praktične lekcije. Ako znamo da tržišta mogu zakazati, da država može zakazati, da akteri imaju različite poticaje i da institucije oblikuju ishode, ostaje pitanje kako dizajnirati bolje javne politike. Ovaj dio bavi se procesom njihova oblikovanja koji uključuje definiranje problema, izbor instrumenata, procjenu troškova i koristi, analizu učinaka, uključivanje dionika, provedbu, evaluaciju i prilagodbu na temelju rezultata. Kvalitetna javna politika nastaje kada se dobar cilj poveže s dobrim instrumentom, provedivim institucionalnim okvirom, jasnom odgovornošću i spremnošću na učenje.</span>
+<span id="cb1-45"><a href="#cb1-45" aria-hidden="true" tabindex="-1"></a>Ono što sve te teme povezuje u cjelinu nije njihov popis, nego način na koji im knjiga pristupa. Ona ne polazi od pretpostavke da je država uvijek bolja od tržišta, ni od one da je tržište uvijek bolje od države, nego želi naučiti čitatelja kako prepoznati javni problem, kako razabrati interese i poticaje koji oko njega kruže, kako procijeniti učinke državne intervencije i kako razlikovati dobru namjeru od dobre politike.</span>
 <span id="cb1-46"><a href="#cb1-46" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-47"><a href="#cb1-47" aria-hidden="true" tabindex="-1"></a><span class="fu">## Što ova knjiga želi postići?</span></span>
+<span id="cb1-47"><a href="#cb1-47" aria-hidden="true" tabindex="-1"></a>Takav okvir vrijedi više od recepta zato što javne politike rijetko imaju univerzalan odgovor. Ista mjera koja uspije u jednoj zemlji u drugoj može propasti, ovisno o kapacitetu administracije, povjerenju građana i prostoru za izbjegavanje pravila. Zato je sposobnost da se postave prava pitanja vrednija od bilo kojega gotovog odgovora.</span>
 <span id="cb1-48"><a href="#cb1-48" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-49"><a href="#cb1-49" aria-hidden="true" tabindex="-1"></a>Ova knjiga ne nudi jednostavne odgovore. Ona ne polazi od pretpostavke da je država uvijek bolja od tržišta, niti od pretpostavke da je tržište uvijek bolje od države. Njezin je cilj ponuditi način razmišljanja o javnim politikama. Naučiti čitatelja kako prepoznati javni problem, kako razumjeti različite interese i poticaje, kako procijeniti učinke državne intervencije i kako razlikovati dobru namjeru od dobre politike.</span>
+<span id="cb1-49"><a href="#cb1-49" aria-hidden="true" tabindex="-1"></a>Dobra analiza spaja ekonomsku logiku, političke poticaje i institucionalna pravila u jedno. Nije dovoljno reći da država treba intervenirati, jer valja pitati postoji li doista problem koji to traži, koji je instrument najprikladniji i može li ga država provesti. Nije dovoljno reći ni da država treba manje intervenirati, jer valja pitati tko će tada riješiti problem i tko će snositi posljedice izostanka. Nije dovoljno donijeti zakon ako nema tko da ga provede, ni imati strategiju ako nema institucija koje je mogu pretvoriti u rezultat.</span>
 <span id="cb1-50"><a href="#cb1-50" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-51"><a href="#cb1-51" aria-hidden="true" tabindex="-1"></a>Knjiga ne želi čitatelju dati popis gotovih rješenja, nego analitički okvir. Javne politike rijetko imaju jednostavna i univerzalna rješenja. Ista mjera može biti uspješna u jednoj zemlji, a neuspješna u drugoj. Isti porez može imati različite učinke ovisno o administrativnom kapacitetu države, povjerenju građana i mogućnostima izbjegavanja poreza. Ista reforma može izgledati dobro na papiru, ali propasti u provedbi ako institucije nemaju znanje, resurse ili odgovornost. Zato je važno razviti sposobnost postavljanja pravih pitanja prije nego što se ponude odgovori.</span>
+<span id="cb1-51"><a href="#cb1-51" aria-hidden="true" tabindex="-1"></a>To znači gledati svaku javnu odluku kroz nekoliko povezanih pitanja. Koji problem zapravo rješavamo? Zašto ga ne mogu riješiti samo tržište ili privatna inicijativa? Što država tu može učiniti i kakve poticaje time stvara? Tko dobiva, a tko gubi? Tko odlučuje, tko provodi i tko snosi odgovornost? I kako ćemo uopće znati je li politika uspjela? Ta pitanja ne jamče savršene odgovore, ali čuvaju od površnih, ideoloških i kratkovidnih rješenja.</span>
 <span id="cb1-52"><a href="#cb1-52" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-53"><a href="#cb1-53" aria-hidden="true" tabindex="-1"></a>Dobra analiza javnih politika mora povezati ekonomsku logiku, političke poticaje i institucionalna pravila. Ekonomija nam pokazuje troškove, koristi, ograničenja i poticaje. Politika nam pokazuje kako se odluke stvarno donose, tko na njih utječe i zašto dobre ideje ne moraju uvijek postati dobre odluke. Institucije nam pokazuju zašto iste politike ne daju iste rezultate u različitim okolnostima.</span>
+<span id="cb1-53"><a href="#cb1-53" aria-hidden="true" tabindex="-1"></a>Jer javne politike u konačnici jesu način na koji društvo odlučuje kako će zajedno živjeti, što će financirati, koga će zaštititi i koje će rizike dijeliti. Razumjeti ih znači razumjeti kako država djeluje, zašto ponekad uspijeva, a ponekad podbaci, i kako je možemo učiniti boljom. Upravo zato vrijedi otvoriti ovu knjigu, i upravo zato ima smisla proći je redom kojim je i pisana.</span>
 <span id="cb1-54"><a href="#cb1-54" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-55"><a href="#cb1-55" aria-hidden="true" tabindex="-1"></a>Zato je ova knjiga poziv na razmišljanje izvan jednostavnih podjela. Nije dovoljno reći da država treba intervenirati. Treba pitati postoji li doista problem koji zahtijeva javnu intervenciju, koji je instrument najprikladniji i može li ga država provesti. Nije dovoljno reći da država treba manje intervenirati. Treba pitati tko će tada riješiti problem, hoće li tržište ili društvo to moći učiniti bolje i tko će snositi posljedice neintervencije. Nije dovoljno donijeti zakon. Treba pitati tko će ga provesti, s kojim resursima, pod kojim pravilima i uz kakvu odgovornost. Nije dovoljno imati dobru strategiju. Treba imati institucije koje mogu pretvoriti strategiju u rezultat.</span>
+<span id="cb1-55"><a href="#cb1-55" aria-hidden="true" tabindex="-1"></a><span class="fu">## Put kroz knjigu</span></span>
 <span id="cb1-56"><a href="#cb1-56" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-57"><a href="#cb1-57" aria-hidden="true" tabindex="-1"></a>U tom smislu, ova knjiga želi razviti pristup analizi javnih politika kao način razmišljanja. To znači promatrati svaku javnu odluku kroz nekoliko povezanih pitanja. Koji problem pokušavamo riješiti? Zašto taj problem ne može riješiti samo tržište ili privatna inicijativa? Što država može učiniti? Koje poticaje njezina intervencija stvara? Tko dobiva, a tko gubi? Tko odlučuje, tko provodi i tko nadzire? Kako znamo je li politika uspjela? Takav pristup ne jamči savršene odgovore, ali smanjuje rizik površnih, ideoloških ili kratkoročnih rješenja.</span>
+<span id="cb1-57"><a href="#cb1-57" aria-hidden="true" tabindex="-1"></a>To razumijevanje knjiga ne nudi odjednom, nego ga gradi u pet dijelova u kojima jedan otvara sljedeći. Prvi dio polazi od pitanja zašto država uopće intervenira u tržišno gospodarstvo. Krećemo od Musgraveova okvira <span class="co">[</span><span class="ot">@musgrave1959</span><span class="co">]</span> i klasične teorije javnih financija, u kojoj prevladava razmjerno romantičan pogled na državu kao aktera koji ispravlja tržišne neuspjehe, osigurava javna dobra, ublažava nejednakosti i stabilizira gospodarstvo. Iz tog okvira izrastaju tri njezine temeljne funkcije, alokacijska, distribucijska i stabilizacijska, a intervencija dobiva opravdanje ondje gdje tržište ne daje učinkovite, pravedne ili stabilne ishode. No to je tek početak.</span>
 <span id="cb1-58"><a href="#cb1-58" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-59"><a href="#cb1-59" aria-hidden="true" tabindex="-1"></a>U konačnici, javne politike su način na koji društvo odlučuje kako će zajednički živjeti, što će financirati, koga će zaštititi, koje rizike će dijeliti i kakvu budućnost želi graditi. Upravo zato vrijedi otvoriti ovu knjigu. Razumjeti javne politike znači razumjeti kako država djeluje, zašto ponekad uspijeva, zašto ponekad ne uspijeva i kako je možemo učiniti boljom.</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button" data-in-quarto-modal=""><i class="bi"></i></button></div>
+<span id="cb1-59"><a href="#cb1-59" aria-hidden="true" tabindex="-1"></a>Drugi dio donosi zaokret prema *politici bez romantike*. Kad smo već vidjeli da tržište može zakazati i da država ima korektivnu ulogu, slijedi neugodnije pitanje, što ako i sama država zakaže. Teorija javnog izbora polazi od jednostavne zamisli da politički proces ne čine apstraktne institucije, nego konkretni akteri, političari, birači, birokrati i interesne skupine, koji djeluju unutar vlastitih poticaja i ograničenja. Ona ne tvrdi da su ti akteri sebični, nego da dobre namjere ni ovdje nisu dovoljne, pa politiku valja suditi po tome tko je oblikuje, tko od nje ima korist i tko snosi njezin trošak.</span>
+<span id="cb1-60"><a href="#cb1-60" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-61"><a href="#cb1-61" aria-hidden="true" tabindex="-1"></a>Treći dio postavlja pitanje koje slijedi samo po sebi. Ako i tržište i država mogu zakazati, ostaje pitanje što onda odlučuje hoće li javna politika uspjeti. Odgovor leži u institucijama. Nova institucionalna ekonomika premješta pozornost s pojedinačnih politika na pravila igre, a konstitucionalna ekonomika pita kakva pravila treba postaviti još prije svakodnevnog odlučivanja. Kvaliteta javnih politika tako se pokazuje kao odraz kvalitete institucija, jer dobre politike ne rastu iz dobrih namjera, nego iz dobrih pravila, poticaja i odgovornosti.</span>
+<span id="cb1-62"><a href="#cb1-62" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-63"><a href="#cb1-63" aria-hidden="true" tabindex="-1"></a>Četvrti dio spušta te pristupe na tlo konkretnih politika. Tu pratimo kako država prikuplja sredstva i kako ih troši, kroz poreze, javnu potrošnju i dug, socijalne transfere i mirovine, zdravstvo i obrazovanje, lokalne financije i javne investicije. Sve to ima smisla samo ako istodobno gledamo ciljeve, instrumente, poticaje, institucije i stvarne učinke.</span>
+<span id="cb1-64"><a href="#cb1-64" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-65"><a href="#cb1-65" aria-hidden="true" tabindex="-1"></a>Završni dio iz svega izvlači praktične lekcije. Kada već znamo da tržišta mogu zakazati, da država može zakazati, da akteri slijede različite poticaje i da institucije oblikuju ishode, ostaje najteže pitanje, kako onda osmisliti bolju politiku. Taj dio prati cijeli put od definiranja problema, preko izbora instrumenata i procjene troškova i koristi, do provedbe, evaluacije i prilagodbe. Kvalitetna javna politika nastaje ondje gdje se dobar cilj spoji s dobrim instrumentom, provedivim institucionalnim okvirom i jasnom odgovornošću. Tim redom kreće i ova knjiga, od pitanja zašto država djeluje do pitanja kako bi mogla djelovati bolje.</span></code><button title="Copy to Clipboard" class="code-copy-button" data-in-quarto-modal=""><i class="bi"></i></button></pre></div>
 </div></div></div></div></div>
 </div> <!-- /content -->
 <footer class="footer">

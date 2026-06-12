@@ -1,0 +1,947 @@
+---
+title: "Audit stanja knjige — lipanj 2026."
+subtitle: "Pregled po poglavljima i dijelovima: opseg, pedagoški aparat i asimetrije"
+author:
+  - name: "Luka Šikić"
+    affiliation: "Pripremljeno za internu raspravu suautora"
+date: "2026-06-05"
+lang: hr-HR
+format:
+  pdf:
+    documentclass: scrartcl
+    papersize: a4
+    geometry: margin=2.2cm
+    mainfont: "Latin Modern Roman"
+    sansfont: "Latin Modern Sans"
+    monofont: "Latin Modern Mono"
+    fontsize: 10pt
+    toc: true
+    toc-depth: 2
+    toc-title: "Sadržaj"
+    colorlinks: true
+    linkcolor: "NavyBlue"
+    urlcolor: "NavyBlue"
+    number-sections: true
+    keep-tex: false
+    header-includes: |
+      \usepackage{colortbl}
+      \usepackage{booktabs}
+      \usepackage{longtable}
+      \usepackage{lscape}
+      \usepackage{array}
+      \usepackage{xcolor}
+      \definecolor{amber}{RGB}{255,200,100}
+      \definecolor{softred}{RGB}{255,160,160}
+      \definecolor{softgreen}{RGB}{180,230,180}
+      \setlength{\LTpre}{6pt}
+      \setlength{\LTpost}{6pt}
+execute:
+  echo: false
+  warning: false
+---
+
+\newpage
+
+# Pregled na razini knjige
+
+Tablica \ref{tbl-book} prikazuje ukupne pokazatelje knjige na temelju automatiziranog pregleda svih 20 poglavlja u lipnju 2026.
+
+| Pokazatelj | Vrijednost |
+|:---|---:|
+| Ukupno poglavlja | 20 |
+| Ukupno proznih riječi | 62 627 |
+| Procijenjena čitanost (~200 rij./min) | ~313 min (≈ 5,2 sata) |
+| Ukupno citata `[@key]` | 317 |
+| Vodič-paneli (od 20 poglavlja) | 19 / 20 |
+| Callout-praksa | 25 |
+| Callout-empirija | 21 |
+| Callout-vjezba | 6 |
+| Ukupno calloutova (P+E+V) | 52 |
+| Formalne definicije/propozicije | 6 |
+| OJS interaktivnih blokova | 110 |
+| Redaka tablica (pipe-tablice) | 53 |
+| Slike | 4 |
+
+: Pregled na razini knjige {#tbl-book}
+
+**Raspodjela po poglavljima:** srednja vrijednost 3 131 riječi, medijan 2 754 riječi, minimum 1 983 (ch. 08), maksimum 9 799 (ch. 14), raspon max/min = **4,9×**.
+
+\newpage
+
+# Pregled po dijelovima
+
+## DIO I — Klasična analiza javnih financija i politika (ch. 01–04)
+
+| Metrika | Vrijednost |
+|:---|---:|
+| Broj poglavlja | 4 |
+| Ukupno riječi | 12 606 |
+| Prosjek po poglavlju | 3 152 |
+| Raspon [min–max] | 2 754–3 575 |
+| Ukupno citata | 34 |
+| Praksa / Empirija / Vjezba | 4 / 4 / 2 |
+| OJS blokova | 46 |
+
+Najuravnoteženiji dio po opsegu (raspon svega 1,3×). Jedini problem je nepostojanje vjezbe u ch. 01 i ch. 02, koji uvode najtemeljnije koncepte knjige. Ch. 04 je na rubu minimalnog praga citata (7 od preporučenih 8).
+
+## DIO II — Javni izbor (ch. 05–09)
+
+| Metrika | Vrijednost |
+|:---|---:|
+| Broj poglavlja | 5 |
+| Ukupno riječi | 14 265 |
+| Prosjek po poglavlju | 2 853 |
+| Raspon [min–max] | 1 983–4 741 |
+| Ukupno citata | 110 |
+| Praksa / Empirija / Vjezba | 9 / 4 / 0 |
+| OJS blokova | 14 |
+
+Najcitatiraniji dio knjige (110 citata), ali s **nultim vjezba calloutima** u cijelom dijelu — jedini dio bez studentskih vježbi. Raspon 2,4× (ch. 08 vs. ch. 05) je najveći unutarnji raspon u knjizi. Empirija nedostaje u ch. 06 i ch. 08.
+
+## DIO III — Nova institucionalna i konstitucionalna ekonomika (ch. 10–11)
+
+| Metrika | Vrijednost |
+|:---|---:|
+| Broj poglavlja | 2 |
+| Ukupno riječi | 5 970 |
+| Prosjek po poglavlju | 2 985 |
+| Raspon [min–max] | 2 793–3 177 |
+| Ukupno citata | 21 |
+| Praksa / Empirija / Vjezba | 2 / 2 / 0 |
+| OJS blokova | 0 |
+
+Strukturno najuravnoteženiji dio (raspon 1,1×). Dva sustavna nedostatka: **niti jedan OJS blok** i **niti jedna vjezba** u cijelom dijelu. Oba poglavlja imaju potpun pedagoški aparat inače.
+
+## DIO IV — Javne financije i javne politike u praksi (ch. 12–14)
+
+| Metrika | Vrijednost |
+|:---|---:|
+| Broj poglavlja | 3 |
+| Ukupno riječi | 14 806 |
+| Prosjek po poglavlju | 4 935 |
+| Raspon [min–max] | 2 492–9 799 |
+| Ukupno citata | 95 |
+| Praksa / Empirija / Vjezba | 4 / 5 / 3 |
+| OJS blokova | 39 |
+
+Najizrazitija asimetrija u knjizi: ch. 14 je **3,9× veće** od ch. 12 i ch. 13. Ch. 14 generira 36 od 39 OJS blokova dijela i dominira svim pokazateljima. Ch. 13 ima nedovršenu sekciju (placeholder). Ch. 12 je ispod praga citata (6).
+
+## DIO V — Kako do kvalitetnijih javnih politika? (ch. 15–19)
+
+| Metrika | Vrijednost |
+|:---|---:|
+| Broj poglavlja | 5 |
+| Ukupno riječi | 12 935 |
+| Prosjek po poglavlju | 2 587 |
+| Raspon [min–max] | 2 394–2 974 |
+| Ukupno citata | 55 |
+| Praksa / Empirija / Vjezba | 5 / 5 / 1 |
+| OJS blokova | 11 |
+
+Normativni vrhunac knjige, ali s najnižim prosječnim opsegom među višepoglavljima (2 587 rij./pogl.). Svako poglavlje ima točno 1 praksa i 1 empirija callout — najuniformniji obrazac u knjizi — ali samo ch. 18 ima vjezbu. Ch. 15 je strukturno problematičan s 16 H2 sekcija.
+
+\newpage
+
+# Detaljan pregled po poglavljima
+
+## Ch. 00 — Uvod
+
+**Intro | 2 045 riječi | ~11 min | 2 citata**
+
+| Metrika | Vrijednost |
+|:---|---:|
+| Prose riječi | 2 045 |
+| Citati | 2 |
+| Callout-praksa | 1 |
+| Callout-empirija | 1 |
+| Callout-vjezba | 0 |
+| OJS blokova | 0 |
+| Formalne def. | 0 |
+| H2 sekcija | 3 |
+| H3 podsekcija | 0 |
+
+**Struktura:**
+
+- Tri perspektive razumijevanja
+- Put kroz knjigu
+- Što ova knjiga želi postići?
+
+**Napomene:** Jedino poglavlje bez vodič-panela. Samo 2 citata (očekivano za intro, ali primjetno nisko). Nema vjezbe, nema OJS-a.
+
+---
+
+## Ch. 01 — Uloga države
+
+**DIO I | 2 754 riječi | ~14 min | 9 citata**
+
+| Metrika | Vrijednost |
+|:---|---:|
+| Prose riječi | 2 754 |
+| Citati | 9 |
+| Callout-praksa | 1 |
+| Callout-empirija | 1 |
+| Callout-vjezba | 0 |
+| OJS blokova | 7 |
+| Formalne def. | 2 |
+| H2 sekcija | 4 (+ Vodič + Sažetak) |
+| H3 podsekcija | 1 |
+
+**Struktura:**
+
+- Musgraveov okvir
+- Tržište kao mehanizam učinkovite alokacije
+  - *Pareto učinkovitost*
+- Sažetak
+
+**Napomene:** Najmanji opseg u DIO I (2 754 vs. prosjek dijela 3 152). Nema vjezbe. Jedino poglavlje u DIO I s formalnim definicijskim blokovima (2 def-bloka).
+
+---
+
+## Ch. 02 — Alokacijska funkcija
+
+**DIO I | 3 575 riječi | ~18 min | 10 citata**
+
+| Metrika | Vrijednost |
+|:---|---:|
+| Prose riječi | 3 575 |
+| Citati | 10 |
+| Callout-praksa | 1 |
+| Callout-empirija | 1 |
+| Callout-vjezba | 0 |
+| OJS blokova | 30 |
+| Formalne def. | 0 |
+| H2 sekcija | 7 (+ Vodič + Sažetak) |
+| H3 podsekcija | 6 |
+
+**Struktura:**
+
+- Javna dobra
+  - *Javno dobro i problem švercerana*
+- Eksternalije
+  - *Negativna eksternalija (zagađenje)*
+  - *Pozitivna eksternalija (obrazovanje)*
+- Asimetrične informacije
+  - *Tržište limuna (adverse selection)*
+  - *Moralni hazard (skrivene radnje)*
+- Tržišna moć i monopol
+  - *Monopol i gubitak blagostanja*
+- Zajednički resursi
+- Meritorna dobra
+- Alokacijska funkcija kao prvi argument za državu
+- Sažetak
+
+**Napomene:** Najveći opseg u DIO I i 30 OJS blokova (interaktivna taksonomija tržišnih neuspjeha). Nema vjezbe.
+
+---
+
+## Ch. 03 — Distribucijska funkcija
+
+**DIO I | 3 172 riječi | ~16 min | 8 citata**
+
+| Metrika | Vrijednost |
+|:---|---:|
+| Prose riječi | 3 172 |
+| Citati | 8 |
+| Callout-praksa | 1 |
+| Callout-empirija | 1 |
+| Callout-vjezba | 1 |
+| OJS blokova | 4 |
+| Formalne def. | 0 |
+| H2 sekcija | 7 (+ Vodič + Sažetak) |
+| H3 podsekcija | 0 |
+
+**Struktura:**
+
+- Distribucija i redistribucija
+- Utilitarizam
+- Rawlsov pristup pravednosti
+- Robni egalitarizam
+- Paternalizam
+- Efikasnost i pravednost
+- Distribucijska funkcija kao temelj društvene solidarnosti
+- Sažetak
+
+**Napomene:** Potpun pedagoški aparat (P+E+V). Dobro uravnoteženo poglavlje.
+
+---
+
+## Ch. 04 — Stabilizacijska funkcija
+
+**DIO I | 3 105 riječi | ~16 min | 7 citata**
+
+| Metrika | Vrijednost |
+|:---|---:|
+| Prose riječi | 3 105 |
+| Citati | 7 |
+| Callout-praksa | 1 |
+| Callout-empirija | 1 |
+| Callout-vjezba | 1 |
+| OJS blokova | 5 |
+| Formalne def. | 0 |
+| H2 sekcija | 9 (+ Vodič + Sažetak) |
+| H3 podsekcija | 0 |
+
+**Struktura:**
+
+- Zašto tržišno gospodarstvo može biti nestabilno?
+- Fiskalna politika kao instrument stabilizacije
+- Fiskalni multiplikator
+- Automatski stabilizatori
+- Diskrecijska fiskalna politika
+- Stabilizacijska funkcija u velikim krizama
+- Hipoteza velikih kriza i trajni rast uloge države
+- Dvostruka priroda stabilizacijske funkcije
+- Stabilnost kao javno dobro
+- Sažetak
+
+**Napomene:** Najbogatija sekcijska struktura u DIO I (9 H2). Citati neznatno ispod preporučenog praga (7 od 8). Vjezba prisutna.
+
+---
+
+## Ch. 05 — Javni izbor
+
+**DIO II | 4 741 riječi | ~24 min | 58 citata**
+
+| Metrika | Vrijednost |
+|:---|---:|
+| Prose riječi | 4 741 |
+| Citati | 58 |
+| Callout-praksa | 1 |
+| Callout-empirija | 1 |
+| Callout-vjezba | 0 |
+| OJS blokova | 5 |
+| Formalne def. | 0 |
+| H2 sekcija | 4 (+ Vodič + Sažetak) |
+| H3 podsekcija | 6 |
+
+**Struktura:**
+
+- Definicija, metodologija i osnovne pretpostavke
+- Pravila igre vs. politički ishodi
+- Ljudi kao birači, političari i službenici
+  - *Trebam li i kako sudjelovati u donošenju političkih odluka?*
+  - *Političari, maksimizacija glasova i teorija medijanskog glasača*
+  - *Birokrati, borba za proračun i kritički osvrt*
+  - *Logika kolektivne akcije, koncentrirane koristi i raspršeni troškovi*
+  - *Trgovanje glasovima i neto društveni gubitak*
+  - *Lov na rentu i zamka prijelaznih dobitaka*
+- Zašto su odluke države često neintuitivne?
+- Sažetak
+
+**Napomene:** **51% iznad prosjeka knjige** (4 741 vs. 3 131). Najveći broj citata u DIO II (58). Nema vjezbe. Poglavlje je gustinom literature bliže preglednom radu nego udžbeničkom poglavlju — kandidat za konsolidaciju.
+
+---
+
+## Ch. 06 — Kolektivni izbor
+
+**DIO II | 2 297 riječi | ~12 min | 13 citata**
+
+| Metrika | Vrijednost |
+|:---|---:|
+| Prose riječi | 2 297 |
+| Citati | 13 |
+| Callout-praksa | 3 |
+| Callout-empirija | 0 |
+| Callout-vjezba | 0 |
+| OJS blokova | 5 |
+| Formalne def. | 1 (thm) |
+| H2 sekcija | 5 (+ Vodič + Sažetak) |
+| H3 podsekcija | 0 |
+
+**Struktura:**
+
+- Condorcetov paradoks
+- Arrowljev teorem nemogućnosti
+- Jednovršne preferencije i medijanski glasač
+- Kontrola dnevnog reda i politika kompromisa
+- Posljedice za javne politike
+- Sažetak
+
+**Napomene:** Najviše praksa calloutova od svih poglavlja (3), ali **nema empirije** — neobična kombinacija. Nema vjezbe. 5 OJS blokova (Condorcet simulator). 19 redaka tablica.
+
+---
+
+## Ch. 07 — Stranke i izbori
+
+**DIO II | 2 235 riječi | ~12 min | 17 citata**
+
+| Metrika | Vrijednost |
+|:---|---:|
+| Prose riječi | 2 235 |
+| Citati | 17 |
+| Callout-praksa | 3 |
+| Callout-empirija | 2 |
+| Callout-vjezba | 0 |
+| OJS blokova | 0 |
+| Formalne def. | 0 |
+| H2 sekcija | 6 (+ Vodič + Sažetak) |
+| H3 podsekcija | 0 |
+
+**Struktura:**
+
+- Medijanski glasač i natjecanje za centar
+- Kako se stranke natječu za glas
+- Što oblikuje centar i polarizaciju
+- Racionalna neinformiranost i izlaznost
+- Je li diktatura najbolji sustav donošenja odluka?
+- Zašto je to važno za javne politike
+- Sažetak
+
+**Napomene:** Pedagoški najkompletniji u DIO II (3P + 2E), ali **nema OJS-a** i nema vjezbe. Stranačko pozicioniranje/Hotelling je prirodan kandidat za interaktivni vizual.
+
+---
+
+## Ch. 08 — Interesne skupine
+
+**DIO II | 1 983 riječi | ~10 min | 10 citata**
+
+| Metrika | Vrijednost |
+|:---|---:|
+| Prose riječi | 1 983 |
+| Citati | 10 |
+| Callout-praksa | 1 |
+| Callout-empirija | 0 |
+| Callout-vjezba | 0 |
+| OJS blokova | 0 |
+| Formalne def. | 0 |
+| H2 sekcija | 6 (+ Vodič + Sažetak) |
+| H3 podsekcija | 0 |
+
+**Struktura:**
+
+- Logika kolektivnog djelovanja
+- Koncentrirane koristi, raspršeni troškovi
+- Lov na rentu
+- Regulatorno zarobljavanje
+- Zašto interesne skupine nisu nužno štetne
+- Zašto je to važno za javne politike
+- Sažetak
+
+**Napomene:** **Najmanje poglavlje u knjizi** (1 983 rij., 37% ispod prosjeka). Nema empirije, nema OJS-a, nema vjezbe. Ovo je tema s bogatom empirijskom literaturom — potencijal za vjezbu i empiriju.
+
+---
+
+## Ch. 09 — Birokracija
+
+**DIO II | 3 009 riječi | ~16 min | 12 citata**
+
+| Metrika | Vrijednost |
+|:---|---:|
+| Prose riječi | 3 009 |
+| Citati | 12 |
+| Callout-praksa | 1 |
+| Callout-empirija | 1 |
+| Callout-vjezba | 0 |
+| OJS blokova | 4 |
+| Formalne def. | 0 |
+| H2 sekcija | 3 (+ Vodič + Sažetak) |
+| H3 podsekcija | 8 |
+
+**Struktura:**
+
+- Klasičan, weberovski pogled
+  - *Razdvajanje politike i uprave*
+  - *Model meritokratske državne službe*
+- Pogled teorije javnog izbora
+  - *Niskanenov model birokrata kao maksimizatora proračuna*
+  - *Asimetrija informacija i principal–agent problem*
+  - *Model rentijerstva*
+  - *Model "željeznog trokuta"*
+  - *Model regulatornog zarobljavanja*
+  - *Model političko-proračunskih ciklusa*
+- Cilj nije manje birokracije, nego bolja birokracija
+- Sažetak
+
+**Napomene:** Strukturno najbogatije poglavlje u DIO II (8 H3 podsekcija — najviše u cijeloj knjizi uz ch. 14). Nema vjezbe.
+
+---
+
+## Ch. 10 — Institucionalna ekonomika
+
+**DIO III | 3 177 riječi | ~16 min | 11 citata**
+
+| Metrika | Vrijednost |
+|:---|---:|
+| Prose riječi | 3 177 |
+| Citati | 11 |
+| Callout-praksa | 1 |
+| Callout-empirija | 1 |
+| Callout-vjezba | 0 |
+| OJS blokova | 0 |
+| Formalne def. | 0 |
+| H2 sekcija | 7 (+ Vodič + Sažetak) |
+| H3 podsekcija | 0 |
+
+**Struktura:**
+
+- Institucije kao pravila igre
+- Transakcijski troškovi
+- Institucije i tržište rada
+- Porezi, institucije i poticaji za ponašanje
+- Problem principal–agent u javnom sektoru
+- Institucije i dugoročni razvoj
+- Institucije kao most između ekonomije i javnih politika
+- Sažetak
+
+**Napomene:** Nema OJS-a, nema vjezbe. Poglavlje pokriva 7 zasebnih tema — dobra tematska gustoća, ali transakcijski troškovi i tržište rada mogli bi imati interaktivni prikaz.
+
+---
+
+## Ch. 11 — Konstitucionalna ekonomika
+
+**DIO III | 2 793 riječi | ~14 min | 10 citata**
+
+| Metrika | Vrijednost |
+|:---|---:|
+| Prose riječi | 2 793 |
+| Citati | 10 |
+| Callout-praksa | 1 |
+| Callout-empirija | 1 |
+| Callout-vjezba | 0 |
+| OJS blokova | 0 |
+| Formalne def. | 2 |
+| H2 sekcija | 6 (+ Vodič + Sažetak) |
+| H3 podsekcija | 0 |
+
+**Struktura:**
+
+- Što je ustavna ekonomika?
+- Pravila i odluke — dvije razine političkog odlučivanja
+- Vremenska nedosljednost javnih politika
+- Političko-proračunski ciklusi
+- Pravila, vjerodostojnost i povjerenje
+- Ustavna ekonomika kao ekonomika dobrih pravila
+- Sažetak
+
+**Napomene:** Nema OJS-a, nema vjezbe. Ima 2 formalne definicije (veo neizvjesnosti i dr.). Dobro uravnoteženo s ch. 10.
+
+---
+
+## Ch. 12 — Instrumenti državne intervencije
+
+**DIO IV | 2 515 riječi | ~13 min | 6 citata**
+
+| Metrika | Vrijednost |
+|:---|---:|
+| Prose riječi | 2 515 |
+| Citati | 6 |
+| Callout-praksa | 1 |
+| Callout-empirija | 1 |
+| Callout-vjezba | 0 |
+| OJS blokova | 0 |
+| Formalne def. | 0 |
+| H2 sekcija | 9 (+ Vodič + Sažetak) |
+| H3 podsekcija | 0 |
+
+**Struktura:**
+
+- Porezi
+- Javna potrošnja
+- Regulacija
+- Subvencije
+- Javna poduzeća
+- Informacijski instrumenti
+- Bihevioralni i "nudge" instrumenti
+- Kombiniranje instrumenata
+- Most između ciljeva i rezultata
+- Sažetak
+
+**Napomene:** **Ispod praga citata** (6 od preporučenih 8). Nema OJS-a, nema vjezbe. Instrument-choice matrix bio bi prirodan interaktivni element.
+
+---
+
+## Ch. 13 — Javna potrošnja
+
+**DIO IV | 2 492 riječi | ~13 min | 27 citata**
+
+| Metrika | Vrijednost |
+|:---|---:|
+| Prose riječi | 2 492 |
+| Citati | 27 |
+| Callout-praksa | 1 |
+| Callout-empirija | 1 |
+| Callout-vjezba | 1 |
+| OJS blokova | 3 |
+| Formalne def. | 0 |
+| H2 sekcija | 5 (+ Vodič + Sažetak) |
+| H3 podsekcija | 0 |
+
+**Struktura:**
+
+- Javna potrošnja kroz povijest
+- Društvene koristi i rizici (prekomjerne) javne potrošnje
+- Stabilizacijska uloga javne potrošnje
+- Razlike u javnoj potrošnji u svijetu
+- Javna potrošnja u Hrvatskoj i EU *(NEDOVRŠENO — placeholder callout-note)*
+- Sažetak
+
+**Napomene:** **Jedina formalno nedovršena sekcija u knjizi** — "Javna potrošnja u Hrvatskoj i EU" sadrži `callout-note` placeholder koji označava da tekst još nije napisan. Ovo je zadatak za suautore koji raspolažu hrvatskim podacima.
+
+---
+
+## Ch. 14 — Porezi
+
+**DIO IV | 9 799 riječi | ~49 min | 62 citata**
+
+| Metrika | Vrijednost |
+|:---|---:|
+| Prose riječi | 9 799 |
+| Citati | 62 |
+| Callout-praksa | 2 |
+| Callout-empirija | 3 |
+| Callout-vjezba | 2 |
+| OJS blokova | 36 |
+| Formalne def. | 2 |
+| H2 sekcija | 10 (+ Vodič + Sažetak) |
+| H3 podsekcija | 14 |
+
+**Struktura:**
+
+- Što su porezi?
+- Porezi kroz povijest
+- Vrste poreza
+  - *Porezi prema poreznoj osnovici*
+  - *Izravni i neizravni porezi*
+  - *Proporcionalni, progresivni i regresivni porezi*
+  - *Specifični i ad valorem porezi*
+- Osnovna načela oporezivanja
+- Osnove teorije oporezivanja
+- Teorija optimalnog oporezivanja
+- Vrste poreznih sustava
+- Porezni sustavi u svijetu
+- Porezni sustavi u Europskoj uniji i Hrvatskoj
+  - *Porezni sustavi u Europskoj uniji*
+  - *Osnove poreznog sustava u Hrvatskoj*
+- Porezi u doba umjetne inteligencije
+  - *Zašto AI mijenja porezni sustav*
+  - *Erozija porezne baze — rad nasuprot kapitalu*
+  - *Dvostupanjski okvir — tranzicija i autonomna AI*
+  - *Optimalni instrumenti u Fazi 1*
+  - *Optimalni instrumenti u Fazi 2*
+  - *Distribucijski izazov — UBI ili UBC?*
+  - *Što ovo znači za Hrvatsku?*
+  - *Otvorena pitanja i ograničenja okvira*
+- Sažetak
+
+**Napomene:** **213% iznad prosjeka knjige** (9 799 vs. 3 131). Poglavlje je strukturom i opsegom bliže samostalnoj monografiji nego udžbeničkom poglavlju. Ima 36 od 110 OJS blokova u cijeloj knjizi, 20 od 53 redaka tablica, 62 od 317 citata. Ako se zadrži ovakav opseg, treba ga formalno podijeliti na dva poglavlja.
+
+---
+
+## Ch. 15 — Državni neuspjesi
+
+**DIO V | 2 974 riječi | ~15 min | 10 citata**
+
+| Metrika | Vrijednost |
+|:---|---:|
+| Prose riječi | 2 974 |
+| Citati | 10 |
+| Callout-praksa | 1 |
+| Callout-empirija | 1 |
+| Callout-vjezba | 0 |
+| OJS blokova | 3 |
+| Formalne def. | 0 |
+| H2 sekcija | 14 (+ Vodič + Sažetak) |
+| H3 podsekcija | 1 |
+
+**Struktura:**
+
+- Što znači neuspjeh države?
+- Zašto državni neuspjesi nisu isto što i "previše države"
+- Državni neuspjeh kao problem dizajna politike
+- Informacijski neuspjesi
+- Instrumentalni neuspjesi
+- Provedbeni neuspjesi
+- Koordinacijski neuspjesi
+- Politički neuspjesi
+- Birokratski neuspjesi
+- Regulatorni neuspjesi
+- Fiskalni neuspjesi
+- Neuspjesi države i povjerenje u institucije
+- Kako državne neuspjehe ugraditi u dizajn javnih politika
+  - *Test državnog neuspjeha*
+- Zaključno — ne protiv države, nego za bolju državu
+- Sažetak
+
+**Napomene:** **16 H2 sekcija — gotovo dvostruko više od prosjeka** (~8). Osam tipova neuspjeha su svaki u zasebnoj H2 sekciji, pa poglavlje čita kao katalog umjesto kao narativno poglavlje. Preporuka: grupirati tipove neuspjeha u 3–4 H2 kategorije s H3 poddjelovima. Nema vjezbe.
+
+---
+
+## Ch. 16 — Novi javni menadžment
+
+**DIO V | 2 394 riječi | ~12 min | 13 citata**
+
+| Metrika | Vrijednost |
+|:---|---:|
+| Prose riječi | 2 394 |
+| Citati | 13 |
+| Callout-praksa | 1 |
+| Callout-empirija | 1 |
+| Callout-vjezba | 0 |
+| OJS blokova | 0 |
+| Formalne def. | 0 |
+| H2 sekcija | 5 (+ Vodič + Sažetak) |
+| H3 podsekcija | 0 |
+
+**Struktura:**
+
+- Marketizacija javnog sektora
+- Korporativno upravljanje i upravljanje prema rezultatima
+- Građanin kao korisnik, klijent ili kupac?
+- Agencifikacija i razdvajanje politike od provedbe
+- Prednosti i kritike novog javnog menadžmenta
+- Sažetak
+
+**Napomene:** Nema OJS-a, nema vjezbe. Kompaktna, čista struktura.
+
+---
+
+## Ch. 17 — Novo upravljanje
+
+**DIO V | 2 419 riječi | ~13 min | 10 citata**
+
+| Metrika | Vrijednost |
+|:---|---:|
+| Prose riječi | 2 419 |
+| Citati | 10 |
+| Callout-praksa | 1 |
+| Callout-empirija | 1 |
+| Callout-vjezba | 0 |
+| OJS blokova | 0 |
+| Formalne def. | 0 |
+| H2 sekcija | 6 (+ Vodič + Sažetak) |
+| H3 podsekcija | 0 |
+
+**Struktura:**
+
+- Tvrdokorni problemi i potreba za suradnjom
+- Whole-of-government i povezana vlada
+- Mreže javnih politika i partnerstva
+- Uključivanje građana
+- Digitalizacija i nova država
+- Tri logike suvremene javne uprave
+- Sažetak
+
+**Napomene:** Nema OJS-a, nema vjezbe. Mrežno upravljanje i whole-of-government su teme koje dobro primaju vizualnu prezentaciju.
+
+---
+
+## Ch. 18 — CBA i evaluacija
+
+**DIO V | 2 702 riječi | ~14 min | 11 citata**
+
+| Metrika | Vrijednost |
+|:---|---:|
+| Prose riječi | 2 702 |
+| Citati | 11 |
+| Callout-praksa | 1 |
+| Callout-empirija | 1 |
+| Callout-vjezba | 1 |
+| OJS blokova | 4 |
+| Formalne def. | 1 |
+| H2 sekcija | 6 (+ Vodič + Sažetak) |
+| H3 podsekcija | 3 |
+
+**Struktura:**
+
+- Zašto je cost-benefit analiza važna?
+- Koraci u provedbi cost-benefit analize
+- Posebnosti cost-benefit analize u javnom sektoru
+- Ograničenja cost-benefit analize
+- Primjeri primjene
+- Evaluacija javnih politika
+  - *Cilj i uloga evaluacije*
+  - *Vrste evaluacije*
+  - *Metodološki pristupi i izazovi*
+- Sažetak
+
+**Napomene:** Jedino poglavlje u DIO V s vjezba calloutom. Jedna formalna definicija. 4 OJS blokova. Pedagogiski najkompletnije poglavlje dijela.
+
+---
+
+## Ch. 19 — Reforme
+
+**DIO V | 2 446 riječi | ~13 min | 11 citata**
+
+| Metrika | Vrijednost |
+|:---|---:|
+| Prose riječi | 2 446 |
+| Citati | 11 |
+| Callout-praksa | 1 |
+| Callout-empirija | 1 |
+| Callout-vjezba | 0 |
+| OJS blokova | 4 |
+| Formalne def. | 0 |
+| H2 sekcija | 4 (+ Vodič + Sažetak) |
+| H3 podsekcija | 0 |
+
+**Struktura:**
+
+- Zašto su reforme javnog sektora nužne
+- Što određuje uspjeh reformi
+- Iskustvo srednje i istočne Europe
+- Ključevi uspješnih reformi
+- Sažetak
+
+**Napomene:** Najmanji broj sekcija u DIO V (4 H2). 4 OJS blokova. Nema vjezbe.
+
+\newpage
+
+# Analiza asimetrija
+
+## Raspodjela opsega po poglavljima
+
+Prosjek knjige: **3 131 rij.** Stupac Δ pokazuje odstupanje od prosjeka. Narančasta pozadina = >30% ispod prosjeka; crvena = >40% iznad prosjeka.
+
+\begingroup
+\small
+\setlength{\tabcolsep}{4pt}
+
+| Ch | Naslov | Dio | Rij. | Δ od prosjeka |
+|:---|:---|:---:|---:|---:|
+| 14 | Porezi | IV | \cellcolor{softred}9 799 | \cellcolor{softred}+213% |
+| 05 | Javni izbor | II | \cellcolor{softred}4 741 | \cellcolor{softred}+51% |
+| 02 | Alokacijska funkcija | I | 3 575 | +14% |
+| 03 | Distribucijska funkcija | I | 3 172 | +1% |
+| 10 | Institucionalna ekonomika | III | 3 177 | +1% |
+| 09 | Birokracija | II | 3 009 | −4% |
+| 04 | Stabilizacijska funkcija | I | 3 105 | −1% |
+| 15 | Državni neuspjesi | V | 2 974 | −5% |
+| 11 | Konstitucionalna ekonomika | III | 2 793 | −11% |
+| 01 | Uloga države | I | 2 754 | −12% |
+| 18 | CBA i evaluacija | V | 2 702 | −14% |
+| 06 | Kolektivni izbor | II | 2 297 | −27% |
+| 13 | Javna potrošnja | IV | 2 492 | −20% |
+| 19 | Reforme | V | 2 446 | −22% |
+| 17 | Novo upravljanje | V | 2 419 | −23% |
+| 07 | Stranke i izbori | II | 2 235 | −29% |
+| 12 | Instrumenti | IV | 2 515 | −20% |
+| 16 | Novi javni menadžment | V | 2 394 | \cellcolor{amber}−24% |
+| 00 | Uvod | Intro | 2 045 | \cellcolor{amber}−35% |
+| 08 | Interesne skupine | II | 1 983 | \cellcolor{amber}−37% |
+
+: Raspodjela opsega (sortiranog od najvećeg prema najmanjem) {#tbl-words}
+
+\endgroup
+
+## Pedagoški aparat po poglavljima
+
+Matrica prikazuje prisutnost ključnih pedagoških elemenata. ✓ = prisutno, — = nedostaje.
+
+\begingroup
+\small
+\setlength{\tabcolsep}{3.5pt}
+
+| Ch | Naslov | Vodič | Praksa | Empirija | Vjezba | OJS | Def/Prp |
+|:---|:---|:---:|:---:|:---:|:---:|:---:|:---:|
+| 00 | Uvod | — | ✓ | ✓ | — | — | — |
+| 01 | Uloga države | ✓ | ✓ | ✓ | — | ✓ | ✓ |
+| 02 | Alokacijska funkcija | ✓ | ✓ | ✓ | — | ✓ | — |
+| 03 | Distribucijska funkcija | ✓ | ✓ | ✓ | ✓ | ✓ | — |
+| 04 | Stabilizacijska funkcija | ✓ | ✓ | ✓ | ✓ | ✓ | — |
+| 05 | Javni izbor | ✓ | ✓ | ✓ | — | ✓ | — |
+| 06 | Kolektivni izbor | ✓ | ✓ | **—** | — | ✓ | ✓ |
+| 07 | Stranke i izbori | ✓ | ✓ | ✓ | — | — | — |
+| 08 | Interesne skupine | ✓ | ✓ | **—** | — | — | — |
+| 09 | Birokracija | ✓ | ✓ | ✓ | — | ✓ | — |
+| 10 | Institucionalna ekonomika | ✓ | ✓ | ✓ | — | — | — |
+| 11 | Konstitucionalna ekonomika | ✓ | ✓ | ✓ | — | — | ✓ |
+| 12 | Instrumenti | ✓ | ✓ | ✓ | — | — | — |
+| 13 | Javna potrošnja | ✓ | ✓ | ✓ | ✓ | ✓ | — |
+| 14 | Porezi | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
+| 15 | Državni neuspjesi | ✓ | ✓ | ✓ | — | ✓ | — |
+| 16 | Novi javni menadžment | ✓ | ✓ | ✓ | — | — | — |
+| 17 | Novo upravljanje | ✓ | ✓ | ✓ | — | — | — |
+| 18 | CBA i evaluacija | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
+| 19 | Reforme | ✓ | ✓ | ✓ | — | ✓ | — |
+
+: Pedagoški aparat po poglavljima {#tbl-apparatus}
+
+\endgroup
+
+**Ključni obrasci:**
+
+- **Vodič:** 19/20 — jedino ch. 00 ga nema
+- **Praksa:** 20/20 — potpuna pokrivenost
+- **Empirija:** 18/20 — nedostaje isključivo ch. 06 i ch. 08
+- **Vjezba:** 6/20 — sustavno nedostaje u cijelom DIO II i DIO III
+- **OJS:** 12/20 — 8 poglavlja bez interaktivnosti
+- **Def/Prp:** 5/20 — samo ch. 01, 06, 11, 14, 18
+
+## Strukturne asimetrije
+
+Šest asimetrija zaslužuju pozornost suautora:
+
+**1. Vjezba callout nedostaje u cijelom DIO II i DIO III.**
+DIO II (Javni izbor) tematski je dio koji najviše potiče kritičko promišljanje i kvantitativno zaključivanje, ali nema ni jedne studentske vježbe. DIO III sličan je slučaj. Vjezba calloutovi prikladni su mjesta za glasačke kalkulacije, simulacije group-size dinamike, ili primjene CBA-a u jednostavnim slučajevima.
+
+**2. Ch. 14 (Porezi) je strukturalni outlier na svakom pokazatelju.**
+S 9 799 rij. i 36 OJS blokova, poglavlje je 3,9× veće od susjednih poglavlja u dijelu. Sekcija "Porezi u doba AI" (8 H3 podsekcija, znatan udio opsega) je gotovo zasebna tema. Prijedlog: formalna podjela na "Ch. 14a — Porezi: teorija i sustavi" i "Ch. 14b — Porezi u praksi i AI". Alternativa: AI sekcija kao appendix ili poseban online prilog.
+
+**3. Ch. 15 (Državni neuspjesi) ima 16 H2 sekcija — dvostruko više od prosjeka.**
+Osam tipova neuspjeha (informacijski, instrumentalni, provedbeni, koordinacijski, politički, birokratski, regulatorni, fiskalni) svaki je u zasebnoj H2 sekciji. Poglavlje čita kao katalog, ne kao narativno poglavlje. Prijedlog: grupirati u 3 H2 (Neuspjesi dizajna / Neuspjesi provedbe / Sistemski neuspjesi) s 8 H3 tipovima unutar njih.
+
+**4. Ch. 13 ima formalno nedovršenu sekciju.**
+"Javna potrošnja u Hrvatskoj i EU" označena je `callout-note` placeholderom. Ovo je zadatak za suautore koji raspolažu relevantnim podacima (HNB, Ministarstvo financija, Eurostat).
+
+**5. Empirija nedostaje samo u ch. 06 i ch. 08.**
+Oba poglavlja imaju višestruke praksa calloutove (3 odnosno 1), ali nijednu empirijsku potvrdu. Ch. 06 (Kolektivni izbor) obuhvaća Arrow/McKelvey/Sen — sve teoreme s bogatom empirijskom literaturom. Ch. 08 (Interesne skupine) obuhvaća Olson/Tullock/Stigler — empirijska literatura o rentijerstvu je opsežna.
+
+**6. Ch. 00 (Uvod) je jedino poglavlje bez vodič-panela.**
+Svako drugo poglavlje u knjizi sada ima vodič s navigacijskim pitanjima. Uvod ih nema — što je lako ispraviti.
+
+## OJS interaktivnost
+
+Ukupno 110 OJS blokova, ali raspoređenih neravnomjerno:
+
+| Ch | OJS blokova | Sadržaj |
+|:---|---:|:---|
+| 02 | 30 | Interaktivna taksonomija tržišnih neuspjeha |
+| 14 | 36 | Porezni modeli, optimizacija, AI-oporezivanje |
+| 04 | 5 | Fiskalni multiplikator |
+| 05 | 5 | Javni izbor (vizualizacije) |
+| 06 | 5 | Condorcet paradoks simulator |
+| 09 | 4 | Birokracija |
+| 13 | 3 | Javna potrošnja |
+| 15 | 3 | Državni neuspjesi |
+| 18 | 4 | CBA evaluacija |
+| 19 | 4 | Reforme |
+| 01 | 7 | Uloga države |
+| 03 | 4 | Distribucijska funkcija |
+
+**Poglavlja bez OJS-a** (8 poglavlja): ch. 00, 07, 08, 10, 11, 12, 16, 17.
+
+Prikladni kandidati za sljedeći krug interaktivnosti:
+
+| Ch | Prijedlog interaktivnog elementa |
+|:---|:---|
+| 07 | Hotelling slider — stranačko pozicioniranje na osi |
+| 08 | Olsonov group-size kalkulator — free-rider dinamika |
+| 10 | Matrica transakcijskih troškova — formalni vs. neformalni |
+| 11 | Vremenski diskontni kalkulator — kratkoročni vs. dugoročni optimum |
+| 12 | Instrument-choice matrica — NATO okvir vizualizacija |
+| 17 | Mrežna vizualizacija — hierarhija vs. mreža |
+
+\newpage
+
+# Preporuke za sljedeći krug
+
+Tablica prioriteta za nastavak rada na knjizi. "Suautori" označava zadatke koji zahtijevaju hrvatski kontekst ili podatke koje suautori posjeduju.
+
+| Pr. | Akcija | Poglavlja | Nositelj | Napor |
+|:---:|:---|:---|:---:|:---:|
+| 1 | Dodati callout-vjezba | ch. 05, 06, 07, 08, 09 (cijeli DIO II) | Svi | Srednji |
+| 2 | Dodati callout-vjezba | ch. 10, 11, 16, 17, 19 (DIO III + ostatak V) | Svi | Srednji |
+| 3 | Dodati callout-empirija | ch. 06, ch. 08 | Svi | Nizak |
+| 4 | Dovršiti placeholder sekciju | ch. 13 ("JP u HR i EU") | **Suautori** | Srednji |
+| 5 | Dodati vodič-panel | ch. 00 | Luka | Nizak |
+| 6 | Dodati OJS interaktivnost | ch. 07, 08, 12, 17 | Luka | Visok |
+| 7 | Restrukturirati ch. 15 | 16 H2 → 3 H2 s H3 tipovima | Svi | Srednji |
+| 8 | Podići citat-floor | ch. 04 (7→8+), ch. 12 (6→8+) | Svi | Nizak |
+| 9 | Trim ili podjela ch. 14 | "Porezi" → 14a + 14b | **Zajednička odluka** | Visok |
+| 10 | Konsolidacija ch. 05 | Sažimanje literature-review odlomaka | Svi | Srednji |
+
+: Preporuke za sljedeći krug rada {#tbl-priorities}
+
+---
+
+*Dokument generiran na temelju automatiziranog pregleda svih 20 poglavlja (.qmd datoteke u `chapters/`) i baze citata (`references.bib`). Mjerenja se odnose na prozne riječi bez koda, tablica, callout-fences i citacijskih ključeva. Datum pregleda: 2026-06-05.*

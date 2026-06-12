@@ -1,0 +1,142 @@
+---
+title: "Vodič · Porezi, više od tereta"
+toc: false
+number-sections: false
+lang: hr-HR
+format:
+  html:
+    page-layout: full
+    body-classes: vd-page
+---
+
+```{=html}
+<div class="vd-dio-4">
+
+<div class="vd-folio">
+  <div class="vd-folio-left">
+    <a class="vd-back" href="../vodic.html">← Vodič</a>
+    <span class="vd-folio-chapter">Dio IV · Poglavlje 14 · Porezi</span>
+  </div>
+  <div class="vd-folio-meta">
+    <span>2 min čitanja</span>
+    <span>Mapa 14 od 19</span>
+  </div>
+</div>
+
+<h1 class="vd-question">Zašto porezi izgledaju baš&nbsp;ovako?</h1>
+
+<div class="vd-map">
+  <ol class="vd-branches" aria-label="Šest ideja poglavlja o porezima">
+
+    <li class="vd-branch">
+      <a class="vd-branch-card" href="../chapters/14-porezi.html#vrste-poreza">
+        <span class="vd-branch-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="8" height="8" rx="1"/><rect x="13" y="3" width="8" height="8" rx="1"/><rect x="3" y="13" width="8" height="8" rx="1"/><rect x="13" y="13" width="8" height="8" rx="1"/></svg>
+        </span>
+        <span>
+          <span class="vd-branch-title">Vrste na jednoj slici</span>
+          <span class="vd-branch-text">Dohodak, dobit, potrošnja i imovina. Izravni se vide, neizravni skrivaju u cijenama.</span>
+        </span>
+      </a>
+    </li>
+
+    <li class="vd-branch">
+      <a class="vd-branch-card" href="../chapters/14-porezi.html#osnovna-načela-oporezivanja">
+        <span class="vd-branch-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4v16M8 20h8M5 7h14"/><path d="M5 7l-2.5 6a3 3 0 0 0 5 0L5 7Z"/><path d="M19 7l-2.5 6a3 3 0 0 0 5 0L19 7Z"/></svg>
+        </span>
+        <span>
+          <span class="vd-branch-title">Načela dobrog poreza</span>
+          <span class="vd-branch-text">Pravedan, učinkovit, jednostavan i izdašan. Sve odjednom ne ide.</span>
+        </span>
+      </a>
+    </li>
+
+    <li class="vd-branch">
+      <a class="vd-branch-card" href="../chapters/14-porezi.html#osnove-teorije-oporezivanja">
+        <span class="vd-branch-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="9" r="5"/><path d="M14 9h7M17.5 5.5 21 9l-3.5 3.5"/><path d="M4 19h16"/></svg>
+        </span>
+        <span>
+          <span class="vd-branch-title">Tko stvarno snosi teret</span>
+          <span class="vd-branch-text">Teret klizi na onoga tko se teže makne. Formalni platiša često nije pravi.</span>
+        </span>
+      </a>
+    </li>
+
+    <li class="vd-branch">
+      <a class="vd-branch-card" href="../chapters/14-porezi.html#teorija-optimalnog-oporezivanja">
+        <span class="vd-branch-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21 21 3"/><path d="M3 21c6-1 9-4 9-9"/><path d="M21 3c-1 6-4 9-9 9"/></svg>
+        </span>
+        <span>
+          <span class="vd-branch-title">Što je optimalan porez</span>
+          <span class="vd-branch-text">Mrtvi teret raste s kvadratom stope. Zato niske stope na široke osnovice.</span>
+        </span>
+      </a>
+    </li>
+
+    <li class="vd-branch">
+      <a class="vd-branch-card" href="../chapters/14-porezi.html#porezni-sustavi-u-europskoj-uniji-i-hrvatskoj">
+        <span class="vd-branch-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="1"/><path d="M12 5.5l1 2.2 2.4.3-1.7 1.7.4 2.4-2.1-1.1-2.1 1.1.4-2.4-1.7-1.7 2.4-.3 1-2.2Z"/></svg>
+        </span>
+        <span>
+          <span class="vd-branch-title">Hrvatska u EU kontekstu</span>
+          <span class="vd-branch-text">Visok PDV, opterećen rad, slabo oporezovana imovina. To je hrvatski profil.</span>
+        </span>
+      </a>
+    </li>
+
+    <li class="vd-branch">
+      <a class="vd-branch-card" href="../chapters/14-porezi.html#porezi-u-doba-umjetne-inteligencije">
+        <span class="vd-branch-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="6" width="12" height="12" rx="2"/><path d="M12 2v4M12 18v4M2 12h4M18 12h4M5 5l3 3M19 5l-3 3M5 19l3-3M19 19l-3-3"/></svg>
+        </span>
+        <span>
+          <span class="vd-branch-title">Porezi u doba AI</span>
+          <span class="vd-branch-text">Ako strojevi preuzmu velik dio rada, što ostaje poreznoj osnovici?</span>
+        </span>
+      </a>
+    </li>
+
+  </ol>
+</div>
+
+<div class="vd-cards">
+
+  <div class="vd-card">
+    <span class="vd-card-label">Politika u praksi</span>
+    <p>Porezna reforma 2024. spustila je opću stopu s 30 na 23 posto i ukinula prirez. Rad je rasterećen, a lokalne jedinice traže nove prihode.</p>
+    <a class="vd-src" href="../chapters/14-porezi.html#porezni-sustavi-u-europskoj-uniji-i-hrvatskoj">Poglavlje 14 · Porezi u Hrvatskoj</a>
+  </div>
+
+  <div class="vd-card">
+    <span class="vd-card-label">Jedna brojka</span>
+    <span class="vd-big">13&nbsp;%</span>
+    <p>Toliko BDP a godišnje donosi PDV, više nego porezi na dohodak i dobit zajedno. Svaki treći euro prihoda dolazi iz potrošnje.</p>
+    <a class="vd-src" href="../chapters/14-porezi.html#porezni-sustavi-u-europskoj-uniji-i-hrvatskoj">Poglavlje 14 · Porezi u Hrvatskoj</a>
+  </div>
+
+  <div class="vd-card">
+    <span class="vd-card-label">Mit i stvarnost</span>
+    <p class="vd-mit"><span class="vd-tag">Mit</span>Porez plaća onaj na koga glasi.</p>
+    <p class="vd-stvar"><span class="vd-tag">Stvarnost</span>Teret se prevaljuje. Proguta ga strana koja se teže prilagodi, bio to kupac ili prodavač.</p>
+    <a class="vd-src" href="../chapters/14-porezi.html#osnove-teorije-oporezivanja">Poglavlje 14 · Porezna incidencija</a>
+  </div>
+
+</div>
+
+<div class="vd-pojam">
+  <span class="vd-pojam-label">Pojam za razgovor</span>
+  <p><span class="vd-pojam-term">porezni klin</span> <span class="vd-pojam-text">Razlika između onoga što rad košta poslodavca i onoga što radnik primi.</span></p>
+</div>
+
+<nav class="vd-dalje" aria-label="Kamo dalje">
+  <a href="13-javna-potrosnja.html">← Mapa 13</a>
+  <a class="vd-primary" href="../chapters/14-porezi.html">Otvorite poglavlje u knjizi</a>
+  <a href="15-drzavni-neuspjesi.html">Mapa 15 →</a>
+</nav>
+
+</div>
+```

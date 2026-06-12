@@ -1,0 +1,130 @@
+---
+title: "Vodič · Distribucijska funkcija"
+toc: false
+number-sections: false
+lang: hr-HR
+format:
+  html:
+    page-layout: full
+    body-classes: vd-page
+---
+
+```{=html}
+<div class="vd-dio-1">
+
+<div class="vd-folio">
+  <div class="vd-folio-left">
+    <a class="vd-back" href="../vodic.html">← Vodič</a>
+    <span class="vd-folio-chapter">Dio I · Poglavlje 3 · Distribucijska funkcija</span>
+  </div>
+  <div class="vd-folio-meta">
+    <span>2 min čitanja</span>
+    <span>Mapa 3 od 19</span>
+  </div>
+</div>
+
+<h1 class="vd-question">Što je uopće pravedna&nbsp;raspodjela?</h1>
+
+<div class="vd-map">
+  <ol class="vd-branches" aria-label="Pet ideja poglavlja o pravednosti">
+
+    <li class="vd-branch">
+      <a class="vd-branch-card" href="../chapters/03-distribucijska-funkcija.html#učinkovit-ishod-koji-društvo-ne-mora-prihvatiti">
+        <span class="vd-branch-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 3a9 9 0 0 1 9 9h-9V3Z"/></svg>
+        </span>
+        <span>
+          <span class="vd-branch-title">Učinkovito, a neprihvatljivo</span>
+          <span class="vd-branch-text">Tržište dijeli prema vlasništvu, vještinama i sreći rođenja. Učinkovito ne znači pravedno.</span>
+        </span>
+      </a>
+    </li>
+
+    <li class="vd-branch">
+      <a class="vd-branch-card" href="../chapters/03-distribucijska-funkcija.html#utilitarizam">
+        <span class="vd-branch-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v18M5 21h14"/><path d="M12 7h6M12 11h4M12 15h5"/></svg>
+        </span>
+        <span>
+          <span class="vd-branch-title">Utilitarizam</span>
+          <span class="vd-branch-text">Zbroji koristi svih i maksimiziraj zbroj. Jednostavno mjerilo s oštrim rubovima.</span>
+        </span>
+      </a>
+    </li>
+
+    <li class="vd-branch">
+      <a class="vd-branch-card" href="../chapters/03-distribucijska-funkcija.html#rawlsov-pristup-pravednosti">
+        <span class="vd-branch-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16"/><path d="M6 4c0 8 3 9 3 16M18 4c0 8-3 9-3 16"/><path d="M7 20h10"/></svg>
+        </span>
+        <span>
+          <span class="vd-branch-title">Rawlsova zavjesa</span>
+          <span class="vd-branch-text">Pravila raspodjele biraj kao da ne znaš gdje ćeš se roditi.</span>
+        </span>
+      </a>
+    </li>
+
+    <li class="vd-branch">
+      <a class="vd-branch-card" href="../chapters/03-distribucijska-funkcija.html#paternalizam">
+        <span class="vd-branch-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20s-7-4.5-9-9a5 5 0 0 1 9-3 5 5 0 0 1 9 3c-2 4.5-9 9-9 9Z"/><path d="M12 8v4M12 14.5v.5"/></svg>
+        </span>
+        <span>
+          <span class="vd-branch-title">Paternalizam i granice</span>
+          <span class="vd-branch-text">Država katkad oblikuje i sam izbor pojedinca. Pitanje je gdje stati.</span>
+        </span>
+      </a>
+    </li>
+
+    <li class="vd-branch">
+      <a class="vd-branch-card" href="../chapters/03-distribucijska-funkcija.html#efikasnost-i-pravednost">
+        <span class="vd-branch-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4v16M8 20h8M5 7h14"/><path d="M5 7l-2.5 6a3 3 0 0 0 5 0L5 7Z"/><path d="M19 7l-2.5 6a3 3 0 0 0 5 0L19 7Z"/></svg>
+        </span>
+        <span>
+          <span class="vd-branch-title">Cijena preraspodjele</span>
+          <span class="vd-branch-text">Preraspodjela dira poticaje, pa nije besplatna. Tražimo ravnotežu, ne urednu formulu.</span>
+        </span>
+      </a>
+    </li>
+
+  </ol>
+</div>
+
+<div class="vd-cards">
+
+  <div class="vd-card">
+    <span class="vd-card-label">Politika u praksi</span>
+    <p>Nordijske zemlje spajaju visoke poreze i univerzalne usluge s fleksibilnim tržištem rada. Snažna preraspodjela i otvoreno gospodarstvo idu zajedno.</p>
+    <a class="vd-src" href="../chapters/03-distribucijska-funkcija.html#distribucija-i-redistribucija">Poglavlje 3 · Distribucija i redistribucija</a>
+  </div>
+
+  <div class="vd-card">
+    <span class="vd-card-label">Jedna brojka</span>
+    <span class="vd-big">⅓</span>
+    <p>Za toliko porezi i transferi u prosjeku smanje dohodovnu nejednakost razvijenih zemalja, s 0,47 na 0,31 po Giniju.</p>
+    <a class="vd-src" href="../chapters/03-distribucijska-funkcija.html#efikasnost-i-pravednost">Poglavlje 3 · Efikasnost i pravednost</a>
+  </div>
+
+  <div class="vd-card">
+    <span class="vd-card-label">Mit i stvarnost</span>
+    <p class="vd-mit"><span class="vd-tag">Mit</span>Pravedno je ono što tržište odredi.</p>
+    <p class="vd-stvar"><span class="vd-tag">Stvarnost</span>Tržišna raspodjela ovisi i o sreći rođenja. Utilitarizam, Rawls i egalitarizam nude različita, argumentirana mjerila pravednosti.</p>
+    <a class="vd-src" href="../chapters/03-distribucijska-funkcija.html#učinkovit-ishod-koji-društvo-ne-mora-prihvatiti">Poglavlje 3 · Učinkovito i neprihvatljivo</a>
+  </div>
+
+</div>
+
+<div class="vd-pojam">
+  <span class="vd-pojam-label">Pojam za razgovor</span>
+  <p><span class="vd-pojam-term">zavjesa neznanja</span> <span class="vd-pojam-text">Pravila raspodjele biraš ne znajući hoćeš li se roditi na vrhu ili na dnu.</span></p>
+</div>
+
+<nav class="vd-dalje" aria-label="Kamo dalje">
+  <a href="02-alokacijska-funkcija.html">← Mapa 2</a>
+  <a class="vd-primary" href="../chapters/03-distribucijska-funkcija.html">Otvorite poglavlje u knjizi</a>
+  <a href="04-stabilizacijska-funkcija.html">Mapa 4 →</a>
+</nav>
+
+</div>
+```

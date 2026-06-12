@@ -36,7 +36,8 @@ _freeze/              Quarto execution cache — do NOT hand-edit
 renv/, renv.lock      R package library + lockfile (pinned versions)
 index.qmd             landing page (hero, cover-card, collapsible TOC)
 references.qmd        appendix: bibliography page
-vodic.qmd             appendix: companion guide ("Država, tržište i institucije")
+vodic.qmd             vodič hub — visual "slikovnica" of the book (spec: vodic-specifikacija.md)
+vodic/                vodič subpages — one mental-map page per chapter (01–19)
 resursi.qmd           appendix: resource list
 alat.qmd              appendix: tools
 podaci.qmd            appendix: datasets reference

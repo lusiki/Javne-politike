@@ -190,5 +190,62 @@
   },
   "podaci.qmd": {
     "podaci.html": "76970274"
+  },
+  "vodic/01-uloga-drzave.qmd": {
+    "01-uloga-drzave.html": "5a7884da"
+  },
+  "vodic/02-alokacijska-funkcija.qmd": {
+    "02-alokacijska-funkcija.html": "89790ae8"
+  },
+  "vodic/03-distribucijska-funkcija.qmd": {
+    "03-distribucijska-funkcija.html": "027bc8d1"
+  },
+  "vodic/04-stabilizacijska-funkcija.qmd": {
+    "04-stabilizacijska-funkcija.html": "cd7e17d4"
+  },
+  "vodic/05-javni-izbor.qmd": {
+    "05-javni-izbor.html": "83136bb6"
+  },
+  "vodic/06-kolektivni-izbor.qmd": {
+    "06-kolektivni-izbor.html": "475f111a"
+  },
+  "vodic/07-stranke-izbori.qmd": {
+    "07-stranke-izbori.html": "a35e8305"
+  },
+  "vodic/08-interesne-skupine.qmd": {
+    "08-interesne-skupine.html": "9c8ac5ee"
+  },
+  "vodic/09-birokracija.qmd": {
+    "09-birokracija.html": "611735e5"
+  },
+  "vodic/10-institucionalna-ekonomika.qmd": {
+    "10-institucionalna-ekonomika.html": "1507ebf4"
+  },
+  "vodic/11-konstitucionalna-ekonomika.qmd": {
+    "11-konstitucionalna-ekonomika.html": "6dc9d416"
+  },
+  "vodic/12-instrumenti.qmd": {
+    "12-instrumenti.html": "f3cb1fe4"
+  },
+  "vodic/13-javna-potrosnja.qmd": {
+    "13-javna-potrosnja.html": "fbc42392"
+  },
+  "vodic/14-porezi.qmd": {
+    "14-porezi.html": "98cee3d3"
+  },
+  "vodic/15-drzavni-neuspjesi.qmd": {
+    "15-drzavni-neuspjesi.html": "7ed5e7bf"
+  },
+  "vodic/16-novi-javni-menadzment.qmd": {
+    "16-novi-javni-menadzment.html": "f58b67a5"
+  },
+  "vodic/17-novo-upravljanje.qmd": {
+    "17-novo-upravljanje.html": "526f1d2e"
+  },
+  "vodic/18-cba-evaluacija.qmd": {
+    "18-cba-evaluacija.html": "7d3cabf8"
+  },
+  "vodic/19-reforme.qmd": {
+    "19-reforme.html": "4be1b125"
   }
 }

@@ -384,3 +384,95 @@ body {
   --ojs-value-bg:     rgba(232, 223, 208, 0.07);
   --ojs-paper:        #1F1A14;
 }
+
+// =============================================================
+// VODIČ — tamna varijanta (vd- komponente)
+// Akcenti posvijetljeni za kontrast na tamnoj podlozi.
+// =============================================================
+.vd-dio-1, .vd-dio-4, .vd-acc-1 {
+  --vd-accent:      #7BA68F;
+  --vd-accent-deep: #9DC2AE;
+  --vd-wash:        rgba(123, 166, 143, 0.12);
+}
+.vd-dio-2, .vd-dio-5, .vd-acc-2 {
+  --vd-accent:      #C8985E;
+  --vd-accent-deep: #D9B384;
+  --vd-wash:        rgba(200, 152, 94, 0.12);
+}
+.vd-dio-3, .vd-acc-3 {
+  --vd-accent:      #C8615A;
+  --vd-accent-deep: #DD8580;
+  --vd-wash:        rgba(200, 97, 90, 0.12);
+}
+
+a.vd-branch-card,
+.vd-card,
+.vd-hub-card,
+.vd-badge {
+  background: #2A241D !important;
+  border-color: rgba(159, 144, 123, 0.25) !important;
+}
+
+li.vd-branch:nth-child(odd)  a.vd-branch-card { border-right-color: var(--vd-accent) !important; }
+li.vd-branch:nth-child(even) a.vd-branch-card { border-left-color: var(--vd-accent) !important; }
+.vd-card { border-top-color: var(--vd-accent) !important; }
+
+@media (max-width: 768px) {
+  li.vd-branch a.vd-branch-card { border-left-color: var(--vd-accent) !important; }
+}
+
+.vd-question,
+.vd-branch-title,
+.vd-hub-name,
+.vd-hub-title,
+.vd-hub-part-title,
+.vd-pojam-term { color: #F0E8D8 !important; }
+
+.vd-branch-text,
+.vd-hub-q,
+.vd-hub-lede,
+.vd-hub-kicker,
+.vd-card p,
+.vd-pojam-text,
+.vd-folio-meta,
+.vd-src { color: #C7BEAF !important; }
+
+.vd-card p.vd-mit { color: #9C9382 !important; }
+
+.vd-folio { border-bottom-color: rgba(159, 144, 123, 0.25) !important; }
+.vd-pojam { border-color: rgba(159, 144, 123, 0.40) !important; }
+
+.vd-folio-chapter,
+.vd-card-label,
+.vd-pojam-label,
+.vd-hub-num,
+.vd-hub-part-label,
+.vd-go,
+.vd-big { color: var(--vd-accent-deep) !important; }
+
+.vd-branch-icon { color: var(--vd-accent-deep) !important; }
+
+.vd-tag { border-color: rgba(159, 144, 123, 0.45) !important; color: #9C9382 !important; }
+.vd-card p.vd-stvar .vd-tag { color: var(--vd-accent-deep) !important; border-color: var(--vd-accent) !important; }
+
+.vd-folio a.vd-back { color: #C7BEAF !important; &:hover { color: var(--vd-accent-deep) !important; } }
+
+.vd-dalje a {
+  color: #E8DFD0 !important;
+  border-color: rgba(159, 144, 123, 0.40) !important;
+  background: transparent !important;
+
+  &:hover {
+    color: var(--vd-accent-deep) !important;
+    border-color: var(--vd-accent-deep) !important;
+    background: var(--vd-wash) !important;
+  }
+
+  &.vd-primary {
+    background: var(--vd-accent) !important;
+    border-color: var(--vd-accent) !important;
+    color: #1F1A14 !important;
+  }
+}
+
+.vd-hub-part-head { border-bottom-color: var(--vd-accent) !important; }

@@ -1,0 +1,130 @@
+---
+title: "Vodič · CBA i evaluacija"
+toc: false
+number-sections: false
+lang: hr-HR
+format:
+  html:
+    page-layout: full
+    body-classes: vd-page
+---
+
+```{=html}
+<div class="vd-dio-5">
+
+<div class="vd-folio">
+  <div class="vd-folio-left">
+    <a class="vd-back" href="../vodic.html">← Vodič</a>
+    <span class="vd-folio-chapter">Dio V · Poglavlje 18 · CBA i evaluacija</span>
+  </div>
+  <div class="vd-folio-meta">
+    <span>2 min čitanja</span>
+    <span>Mapa 18 od 19</span>
+  </div>
+</div>
+
+<h1 class="vd-question">Kako izmjeriti isplati li se neka&nbsp;politika?</h1>
+
+<div class="vd-map">
+  <ol class="vd-branches" aria-label="Pet ideja poglavlja o vrednovanju politika">
+
+    <li class="vd-branch">
+      <a class="vd-branch-card" href="../chapters/18-cba-evaluacija.html#zašto-je-cost-benefit-analiza-važna">
+        <span class="vd-branch-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="3" width="16" height="18" rx="1.5"/><path d="M8 8h8M8 12h8M8 16h4"/><path d="M15.5 15l1.5 1.5L20 13"/></svg>
+        </span>
+        <span>
+          <span class="vd-branch-title">Logika troškova i koristi</span>
+          <span class="vd-branch-text">Zbroji sve društvene koristi i troškove pa usporedi alternative.</span>
+        </span>
+      </a>
+    </li>
+
+    <li class="vd-branch">
+      <a class="vd-branch-card" href="../chapters/18-cba-evaluacija.html#koraci-u-provedbi-cost-benefit-analize">
+        <span class="vd-branch-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21V8"/><path d="M12 8a3.5 3.5 0 1 0-3.5-3.5"/><path d="M6 21h12"/><path d="M5 12h5M14 12h5"/></svg>
+        </span>
+        <span>
+          <span class="vd-branch-title">Cijena necjenjivog</span>
+          <span class="vd-branch-text">Vrijeme, sigurnost i okoliš nemaju cjenik, pa ih mjerimo spremnošću na plaćanje.</span>
+        </span>
+      </a>
+    </li>
+
+    <li class="vd-branch">
+      <a class="vd-branch-card" href="../chapters/18-cba-evaluacija.html#ograničenja-cost-benefit-analize">
+        <span class="vd-branch-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="4" width="16" height="16" rx="1"/><path d="M4 16 16 4"/></svg>
+        </span>
+        <span>
+          <span class="vd-branch-title">Granice računa</span>
+          <span class="vd-branch-text">Brojke ovise o pretpostavkama. Analiza informira odluku, ne donosi je sama.</span>
+        </span>
+      </a>
+    </li>
+
+    <li class="vd-branch">
+      <a class="vd-branch-card" href="../chapters/18-cba-evaluacija.html#vrste-i-metode-evaluacije">
+        <span class="vd-branch-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.5-4.5"/></svg>
+        </span>
+        <span>
+          <span class="vd-branch-title">Mjerenje stvarnog učinka</span>
+          <span class="vd-branch-text">Od randomiziranih pokusa do usporedbi. Traži se uzrok, ne dojam.</span>
+        </span>
+      </a>
+    </li>
+
+    <li class="vd-branch">
+      <a class="vd-branch-card" href="../chapters/18-cba-evaluacija.html#evaluacija-javnih-politika-i-njezini-ciljevi">
+        <span class="vd-branch-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 14a8 8 0 0 1 16 0"/><path d="M12 14l4-4"/><path d="M4 19h16"/></svg>
+        </span>
+        <span>
+          <span class="vd-branch-title">Nakon provedbe</span>
+          <span class="vd-branch-text">Politika nije gotova objavom. Mjeri se učinak, ne namjera.</span>
+        </span>
+      </a>
+    </li>
+
+  </ol>
+</div>
+
+<div class="vd-cards">
+
+  <div class="vd-card">
+    <span class="vd-card-label">Politika u praksi</span>
+    <p>Britanska brza pruga HS2. Procjene koristi mijenjale su se s pretpostavkama o vremenu i potražnji, a troškovi su godinama rasli.</p>
+    <a class="vd-src" href="../chapters/18-cba-evaluacija.html#primjeri-primjene">Poglavlje 18 · Primjeri primjene</a>
+  </div>
+
+  <div class="vd-card">
+    <span class="vd-card-label">Jedna brojka</span>
+    <span class="vd-big">5&nbsp;%</span>
+    <p>Toliko danas vrijedi korist za pedeset godina uz diskont od šest posto. Uz jedan posto vrijedi šezdeset.</p>
+    <a class="vd-src" href="../chapters/18-cba-evaluacija.html#posebnosti-cost-benefit-analize-u-javnom-sektoru">Poglavlje 18 · Posebnosti u javnom sektoru</a>
+  </div>
+
+  <div class="vd-card">
+    <span class="vd-card-label">Mit i stvarnost</span>
+    <p class="vd-mit"><span class="vd-tag">Mit</span>Što je projekt veći, to je korisniji.</p>
+    <p class="vd-stvar"><span class="vd-tag">Stvarnost</span>Vrijednost određuje neto korist u usporedbi s alternativama, uključujući onu da se ne gradi ništa.</p>
+    <a class="vd-src" href="../chapters/18-cba-evaluacija.html#koraci-u-provedbi-cost-benefit-analize">Poglavlje 18 · Koraci analize</a>
+  </div>
+
+</div>
+
+<div class="vd-pojam">
+  <span class="vd-pojam-label">Pojam za razgovor</span>
+  <p><span class="vd-pojam-term">diskontiranje</span> <span class="vd-pojam-text">Euro za deset godina vrijedi manje od eura danas, pa budućnost svodimo na sadašnju vrijednost.</span></p>
+</div>
+
+<nav class="vd-dalje" aria-label="Kamo dalje">
+  <a href="17-novo-upravljanje.html">← Mapa 17</a>
+  <a class="vd-primary" href="../chapters/18-cba-evaluacija.html">Otvorite poglavlje u knjizi</a>
+  <a href="19-reforme.html">Mapa 19 →</a>
+</nav>
+
+</div>
+```

@@ -1,0 +1,664 @@
+// =============================================================
+// VODIČ — vizualna slikovnica knjige (vd- prefiks)
+// Specifikacija: vodic-specifikacija.md
+// Koristi isključivo postojeće Statecraft tokene iz custom.scss.
+// Akcenti dijelova: DIO I verdigris, DIO II ochre, DIO III oxblood.
+// =============================================================
+
+// ---- Akcenti po dijelu knjige (CSS custom properties) ----
+.vd-dio-1 {
+  --vd-accent:      #{$brand-gold};        // verdigris
+  --vd-accent-deep: #{$sc-verdigris-deep};
+  --vd-wash:        rgba(74, 107, 92, 0.08);
+}
+.vd-dio-2 {
+  --vd-accent:      #{$sc-ochre};          // ochre
+  --vd-accent-deep: #{$sc-ochre-deep};
+  --vd-wash:        rgba(200, 152, 94, 0.10);
+}
+.vd-dio-3 {
+  --vd-accent:      #{$brand-navy-soft};   // oxblood
+  --vd-accent-deep: #{$sc-oxblood-deep};
+  --vd-wash:        rgba(107, 31, 38, 0.07);
+}
+
+// Knjiga ima pet dijelova, a paleta tri pigmenta. Dijelovi IV i V
+// ponavljaju verdigris i ochre, bez ponavljanja susjednih dijelova.
+.vd-dio-4 {
+  --vd-accent:      #{$brand-gold};
+  --vd-accent-deep: #{$sc-verdigris-deep};
+  --vd-wash:        rgba(74, 107, 92, 0.08);
+}
+.vd-dio-5 {
+  --vd-accent:      #{$sc-ochre};
+  --vd-accent-deep: #{$sc-ochre-deep};
+  --vd-wash:        rgba(200, 152, 94, 0.10);
+}
+
+// Akcent po pojedinoj grani (završna mapa svih mapa)
+.vd-acc-1 { --vd-accent: #{$brand-gold};      --vd-accent-deep: #{$sc-verdigris-deep}; }
+.vd-acc-2 { --vd-accent: #{$sc-ochre};        --vd-accent-deep: #{$sc-ochre-deep}; }
+.vd-acc-3 { --vd-accent: #{$brand-navy-soft}; --vd-accent-deep: #{$sc-oxblood-deep}; }
+
+// =============================================================
+// Stranice vodiča: skriveni sidebar, miran okvir
+// (obrazac preuzet iz dosadašnjeg vodic.qmd, centraliziran ovdje)
+// =============================================================
+body.vd-page {
+  #quarto-sidebar,
+  #quarto-margin-sidebar,
+  .sidebar.sidebar-navigation { display: none !important; }
+
+  .page-columns { display: block !important; }
+
+  main.content,
+  #quarto-document-content {
+    max-width: 1100px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    padding-left: 1.5rem !important;
+    padding-right: 1.5rem !important;
+    grid-column: 1 / -1 !important;
+  }
+
+  #title-block-header,
+  .quarto-title-block { display: none !important; }
+}
+
+// =============================================================
+// Folio — gore lijevo, tipografski miran
+// =============================================================
+.vd-folio {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 0.4rem 1.5rem;
+  margin: 0.5rem 0 2.4rem;
+  padding-bottom: 0.65rem;
+  border-bottom: 1px solid $sc-rule;
+  font-family: $brand-font-mono;
+  font-size: 0.7rem;
+  letter-spacing: 0.13em;
+  text-transform: uppercase;
+}
+
+.vd-folio-chapter { color: var(--vd-accent-deep); }
+
+.vd-folio a.vd-back {
+  color: $brand-slate;
+  text-decoration: none;
+  border-bottom: 0;
+  margin-right: 1.2rem;
+
+  &:hover { color: var(--vd-accent-deep); }
+}
+
+.vd-folio-meta {
+  display: flex;
+  gap: 1.2rem;
+  color: $brand-slate;
+}
+
+// =============================================================
+// Središnje pitanje — najveći element, ujedno središnji čvor mape
+// =============================================================
+.vd-question {
+  font-family: $brand-font-serif;
+  font-weight: 500;
+  font-size: clamp(1.9rem, 4.5vw, 3.05rem);
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+  color: $brand-navy;
+  text-align: center;
+  max-width: 21ch;
+  margin: 0 auto;
+}
+
+// =============================================================
+// Mentalna mapa — kralježnica iz pitanja, grane lijevo i desno
+// =============================================================
+$vd-spine-gap: 4.5rem; // širina srednjeg stupca; pola = doseg spojnice
+
+.vd-map {
+  position: relative;
+  margin: 0 auto 2.6rem;
+  padding-top: 2.2rem; // prostor u kojem kralježnica izlazi iz pitanja
+  max-width: 980px;
+
+  // kralježnica
+  &::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 0;
+    bottom: 0;
+    width: 1px;
+    background: var(--vd-accent);
+    opacity: 0.55;
+    transform: translateX(-0.5px);
+  }
+
+  // završna točka kralježnice
+  &::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: -3px;
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: var(--vd-accent);
+    transform: translateX(-50%);
+  }
+}
+
+ol.vd-branches {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: 1fr $vd-spine-gap 1fr;
+  row-gap: 1.15rem;
+}
+
+li.vd-branch {
+  position: relative;
+  margin: 0;
+  padding: 0;
+
+  // spojnica prema kralježnici
+  &::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    width: calc(#{$vd-spine-gap} / 2);
+    height: 1px;
+    background: var(--vd-accent);
+    opacity: 0.55;
+  }
+
+  // čvorić na kralježnici
+  &::after {
+    content: "";
+    position: absolute;
+    top: calc(50% - 3px);
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: var(--vd-accent);
+  }
+
+  &:nth-child(odd) {
+    grid-column: 1;
+    &::before { right: calc(-1 * #{$vd-spine-gap} / 2); }
+    &::after  { right: calc(-1 * #{$vd-spine-gap} / 2 - 3.5px); }
+  }
+
+  &:nth-child(even) {
+    grid-column: 3;
+    &::before { left: calc(-1 * #{$vd-spine-gap} / 2); }
+    &::after  { left: calc(-1 * #{$vd-spine-gap} / 2 - 3.5px); }
+  }
+}
+
+a.vd-branch-card {
+  display: flex;
+  gap: 0.85rem;
+  align-items: flex-start;
+  padding: 0.95rem 1.05rem;
+  background: $brand-paper;
+  border: 1px solid $sc-rule;
+  border-radius: 3px;
+  text-decoration: none;
+  border-bottom-width: 1px; // poništava globalni link-underline obrazac
+  color: inherit;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease, transform 0.2s ease;
+
+  &:hover {
+    border-color: var(--vd-accent);
+    box-shadow: 0 5px 16px rgba(28, 25, 22, 0.08);
+    transform: translateY(-2px);
+    background: $brand-paper;
+  }
+
+  &:focus-visible {
+    outline: 2px solid var(--vd-accent-deep);
+    outline-offset: 2px;
+  }
+}
+
+// akcentni rub okrenut kralježnici
+li.vd-branch:nth-child(odd)  a.vd-branch-card { border-right: 3px solid var(--vd-accent); }
+li.vd-branch:nth-child(even) a.vd-branch-card { border-left: 3px solid var(--vd-accent); }
+
+.vd-branch-icon {
+  flex: none;
+  width: 28px;
+  height: 28px;
+  color: var(--vd-accent-deep);
+
+  svg { display: block; width: 100%; height: 100%; }
+}
+
+.vd-branch-title {
+  display: block;
+  font-family: $brand-font-serif;
+  font-weight: 600;
+  font-size: 1.02rem;
+  line-height: 1.25;
+  color: $brand-navy;
+}
+
+.vd-branch-text {
+  display: block;
+  margin-top: 0.2rem;
+  font-family: $brand-font-sans;
+  font-size: 0.82rem;
+  line-height: 1.45;
+  color: $brand-slate;
+}
+
+// =============================================================
+// Pojas kartica — Primjer iz Hrvatske / Jedna brojka / Mit i stvarnost
+// =============================================================
+.vd-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  margin: 0 0 1.6rem;
+}
+
+.vd-card {
+  background: $brand-paper;
+  border: 1px solid $sc-rule;
+  border-top: 3px solid var(--vd-accent);
+  border-radius: 3px;
+  padding: 1rem 1.1rem 1.05rem;
+
+  p {
+    margin: 0;
+    font-family: $brand-font-sans;
+    font-size: 0.86rem;
+    line-height: 1.5;
+    color: $brand-navy;
+    text-align: left;
+  }
+}
+
+.vd-card-label {
+  display: block;
+  margin-bottom: 0.55rem;
+  font-family: $brand-font-mono;
+  font-size: 0.66rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--vd-accent-deep);
+}
+
+.vd-big {
+  display: block;
+  margin: 0.05rem 0 0.3rem;
+  font-family: $brand-font-serif;
+  font-weight: 500;
+  font-size: 2.9rem;
+  line-height: 1;
+  color: var(--vd-accent-deep);
+  font-variant-numeric: lining-nums;
+}
+
+.vd-src {
+  display: block;
+  margin-top: 0.6rem;
+  font-family: $brand-font-mono;
+  font-size: 0.64rem;
+  letter-spacing: 0.05em;
+  color: $brand-slate;
+}
+
+.vd-tag {
+  display: inline-block;
+  margin-right: 0.45em;
+  padding: 0.08em 0.5em;
+  border: 1px solid $sc-rule-strong;
+  border-radius: 2px;
+  font-family: $brand-font-mono;
+  font-size: 0.62rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: $brand-slate;
+}
+
+.vd-card p.vd-mit { color: $brand-slate; margin-bottom: 0.55rem; }
+
+.vd-card p.vd-stvar .vd-tag {
+  color: var(--vd-accent-deep);
+  border-color: var(--vd-accent);
+}
+
+// =============================================================
+// Pojam za razgovor
+// =============================================================
+.vd-pojam {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.3rem 1.1rem;
+  margin: 0 0 2.2rem;
+  padding: 0.9rem 1.15rem;
+  border: 1px dashed $sc-rule-strong;
+  border-radius: 3px;
+
+  p { margin: 0; }
+}
+
+.vd-pojam-label {
+  font-family: $brand-font-mono;
+  font-size: 0.66rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--vd-accent-deep);
+  white-space: nowrap;
+}
+
+.vd-pojam-term {
+  font-family: $brand-font-serif;
+  font-style: italic;
+  font-weight: 600;
+  font-size: 1.05rem;
+  color: $brand-navy;
+}
+
+.vd-pojam-text {
+  font-family: $brand-font-sans;
+  font-size: 0.85rem;
+  line-height: 1.5;
+  color: $brand-slate;
+}
+
+// =============================================================
+// Kamo dalje
+// =============================================================
+.vd-dalje {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.8rem;
+  margin: 2.4rem 0 1.2rem;
+
+  a {
+    display: inline-block;
+    padding: 0.55rem 1.15rem;
+    border: 1px solid $sc-rule-strong;
+    border-radius: 3px;
+    font-family: $brand-font-sans;
+    font-size: 0.85rem;
+    color: $brand-navy;
+    text-decoration: none;
+
+    &:hover {
+      border-color: var(--vd-accent-deep);
+      color: var(--vd-accent-deep);
+      background: var(--vd-wash);
+    }
+
+    &.vd-primary {
+      background: var(--vd-accent-deep);
+      border-color: var(--vd-accent-deep);
+      color: $brand-cream;
+
+      &:hover { background: var(--vd-accent); border-color: var(--vd-accent); color: $brand-cream; }
+    }
+
+    &:focus-visible {
+      outline: 2px solid var(--vd-accent-deep);
+      outline-offset: 2px;
+    }
+  }
+}
+
+// =============================================================
+// Hub — pregled svih poglavlja
+// =============================================================
+.vd-hub-head {
+  max-width: 740px;
+  margin: 0.5rem auto 3rem;
+  text-align: center;
+}
+
+.vd-hub-kicker {
+  display: block;
+  margin-bottom: 0.9rem;
+  font-family: $brand-font-mono;
+  font-size: 0.7rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: $brand-slate;
+}
+
+.vd-hub-title {
+  font-family: $brand-font-serif;
+  font-weight: 500;
+  font-size: clamp(2.1rem, 4.5vw, 3.2rem);
+  line-height: 1.08;
+  letter-spacing: -0.02em;
+  color: $brand-navy;
+  margin: 0 0 1rem;
+}
+
+.vd-hub-lede {
+  font-family: $brand-font-sans;
+  font-size: 0.98rem;
+  line-height: 1.6;
+  color: $brand-slate;
+  margin: 0;
+}
+
+.vd-hub-part {
+  max-width: 1180px;
+  margin: 0 auto 2.8rem;
+}
+
+.vd-hub-part-head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.4rem 1.1rem;
+  margin-bottom: 1.2rem;
+  padding-bottom: 0.55rem;
+  border-bottom: 2px solid var(--vd-accent);
+}
+
+.vd-hub-part-label {
+  font-family: $brand-font-mono;
+  font-size: 0.7rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--vd-accent-deep);
+}
+
+.vd-hub-part-title {
+  font-family: $brand-font-serif;
+  font-weight: 500;
+  font-size: 1.2rem;
+  color: $brand-navy;
+}
+
+.vd-hub-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(235px, 1fr));
+  gap: 1rem;
+}
+
+.vd-hub-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 0.45rem;
+  padding: 1.05rem 1.1rem 1.1rem;
+  background: $brand-paper;
+  border: 1px solid $sc-rule;
+  border-radius: 3px;
+  color: inherit;
+  text-decoration: none;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease, transform 0.2s ease;
+}
+
+a.vd-hub-card:hover {
+  border-color: var(--vd-accent);
+  box-shadow: 0 6px 18px rgba(28, 25, 22, 0.08);
+  transform: translateY(-2px);
+}
+
+a.vd-hub-card:focus-visible {
+  outline: 2px solid var(--vd-accent-deep);
+  outline-offset: 2px;
+}
+
+.vd-hub-num {
+  font-family: $brand-font-mono;
+  font-size: 0.7rem;
+  letter-spacing: 0.14em;
+  color: var(--vd-accent-deep);
+}
+
+.vd-hub-name {
+  font-family: $brand-font-serif;
+  font-weight: 600;
+  font-size: 1.04rem;
+  line-height: 1.25;
+  color: $brand-navy;
+}
+
+.vd-hub-q {
+  font-family: $brand-font-sans;
+  font-size: 0.82rem;
+  line-height: 1.45;
+  color: $brand-slate;
+}
+
+.vd-go {
+  margin-top: auto;
+  padding-top: 0.5rem;
+  font-family: $brand-font-mono;
+  font-size: 0.68rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--vd-accent-deep);
+}
+
+.vd-soon { opacity: 0.6; }
+
+.vd-badge {
+  position: absolute;
+  top: 0.85rem;
+  right: 0.9rem;
+  padding: 0.12em 0.55em;
+  border: 1px solid $sc-rule-strong;
+  border-radius: 2px;
+  background: $brand-cream;
+  font-family: $brand-font-mono;
+  font-size: 0.58rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: $brand-slate;
+}
+
+// =============================================================
+// Klikabilna kartica vodiča na naslovnici (stretched link)
+// =============================================================
+.sc-cover-card { position: relative; transition: transform 0.25s ease, box-shadow 0.25s ease; }
+
+.vd-cover-link {
+  position: absolute;
+  inset: 0;
+  z-index: 3;
+  border-bottom: 0 !important;
+}
+
+.sc-cover-card:has(.vd-cover-link):hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 28px rgba(28, 25, 22, 0.12);
+}
+
+// =============================================================
+// Mobilni prikaz — mapa postaje okomiti popis s uvučenim granama
+// =============================================================
+@media (max-width: 768px) {
+  .vd-map {
+    padding-top: 1.4rem;
+
+    &::before {
+      left: 0.55rem;
+      transform: none;
+    }
+
+    &::after {
+      left: 0.55rem;
+      transform: translateX(-50%);
+    }
+  }
+
+  ol.vd-branches {
+    display: block;
+    padding-left: 1.7rem;
+  }
+
+  li.vd-branch {
+    margin-bottom: 0.9rem;
+
+    &:nth-child(odd),
+    &:nth-child(even) {
+      grid-column: auto;
+
+      &::before {
+        left: -1.15rem;
+        right: auto;
+        width: 1.15rem;
+      }
+
+      &::after {
+        left: calc(-1.15rem - 3px);
+        right: auto;
+      }
+    }
+
+    &:nth-child(odd) a.vd-branch-card,
+    &:nth-child(even) a.vd-branch-card {
+      border-right: 1px solid $sc-rule;
+      border-left: 3px solid var(--vd-accent);
+    }
+  }
+
+  .vd-cards { grid-template-columns: 1fr; }
+
+  .vd-question { max-width: 100%; }
+}
+
+// =============================================================
+// Ispis — jedna podstranica stane na A4
+// =============================================================
+@media print {
+  body.vd-page {
+    .navbar, .vd-dalje, .vd-folio a.vd-back { display: none !important; }
+
+    .vd-map, .vd-cards, .vd-pojam { break-inside: avoid; }
+
+    a.vd-branch-card, .vd-card, .vd-hub-card {
+      box-shadow: none;
+      border-color: #999;
+    }
+  }
+}
+
+// =============================================================
+// Smanjeno kretanje
+// =============================================================
+@media (prefers-reduced-motion: reduce) {
+  a.vd-branch-card,
+  .vd-hub-card,
+  .sc-cover-card {
+    transition: none;
+    &:hover { transform: none; }
+  }
+}

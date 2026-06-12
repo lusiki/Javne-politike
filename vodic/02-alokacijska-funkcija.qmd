@@ -1,0 +1,142 @@
+---
+title: "Vodič · Alokacijska funkcija i tržišni neuspjesi"
+toc: false
+number-sections: false
+lang: hr-HR
+format:
+  html:
+    page-layout: full
+    body-classes: vd-page
+---
+
+```{=html}
+<div class="vd-dio-1">
+
+<div class="vd-folio">
+  <div class="vd-folio-left">
+    <a class="vd-back" href="../vodic.html">← Vodič</a>
+    <span class="vd-folio-chapter">Dio I · Poglavlje 2 · Alokacijska funkcija</span>
+  </div>
+  <div class="vd-folio-meta">
+    <span>2 min čitanja</span>
+    <span>Mapa 2 od 19</span>
+  </div>
+</div>
+
+<h1 class="vd-question">Zašto tržište samo ne&nbsp;rješava&nbsp;sve?</h1>
+
+<div class="vd-map">
+  <ol class="vd-branches" aria-label="Šest razloga zašto tržište zakazuje">
+
+    <li class="vd-branch">
+      <a class="vd-branch-card" href="../chapters/02-alokacijska-funkcija.html#javna-dobra">
+        <span class="vd-branch-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="6.5" r="3.5"/><path d="M12 10v11M8 21h8M4.5 6.5H2M22 6.5h-2.5"/></svg>
+        </span>
+        <span>
+          <span class="vd-branch-title">Javna dobra i švercer</span>
+          <span class="vd-branch-text">Svjetlo svjetionika koristi svima, naplata je gotovo nemoguća. Zato ga tržište podproizvodi.</span>
+        </span>
+      </a>
+    </li>
+
+    <li class="vd-branch">
+      <a class="vd-branch-card" href="../chapters/02-alokacijska-funkcija.html#eksternalije">
+        <span class="vd-branch-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 21V10l5 3v-3l5 3v-3l6 3.5V21"/><path d="M3 21h18"/><path d="M17 7c0-1.4 1.2-1.6 1.2-3"/><path d="M20 6c0-1 .8-1.2.8-2.2"/></svg>
+        </span>
+        <span>
+          <span class="vd-branch-title">Eksternalije, tuđi račun</span>
+          <span class="vd-branch-text">Tvornički dim udišu susjedi, a korist od vašeg cijepljenja imaju svi. Cijene to ne vide.</span>
+        </span>
+      </a>
+    </li>
+
+    <li class="vd-branch">
+      <a class="vd-branch-card" href="../chapters/02-alokacijska-funkcija.html#asimetrične-informacije">
+        <span class="vd-branch-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12s3.5-6 10-6 10 6 10 6-3.5 6-10 6-10-6-10-6Z"/><circle cx="12" cy="12" r="2.5"/></svg>
+        </span>
+        <span>
+          <span class="vd-branch-title">Asimetrične informacije</span>
+          <span class="vd-branch-text">Prodavač zna više od kupca, pa dobri rabljeni auti nestaju s tržišta limuna.</span>
+        </span>
+      </a>
+    </li>
+
+    <li class="vd-branch">
+      <a class="vd-branch-card" href="../chapters/02-alokacijska-funkcija.html#tržišna-moć-i-monopol">
+        <span class="vd-branch-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l3.5 3L12 5l5.5 7L21 9l-2 9H5L3 9Z"/></svg>
+        </span>
+        <span>
+          <span class="vd-branch-title">Monopolska moć</span>
+          <span class="vd-branch-text">Bez konkurencije cijena raste, količina pada i društvo gubi dio blagostanja.</span>
+        </span>
+      </a>
+    </li>
+
+    <li class="vd-branch">
+      <a class="vd-branch-card" href="../chapters/02-alokacijska-funkcija.html#zajednički-resursi">
+        <span class="vd-branch-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12c2-1.5 4-1.5 6 0s4 1.5 6 0 4-1.5 6 0"/><path d="M3 17c2-1.5 4-1.5 6 0s4 1.5 6 0 4-1.5 6 0"/><path d="M7 8c2.8 0 5-2.2 5-5 0 2.8 2.2 5 5 5"/></svg>
+        </span>
+        <span>
+          <span class="vd-branch-title">Zajednički resursi</span>
+          <span class="vd-branch-text">Što je svačije, brzo postane ničije. Tragedija zajedničkog dobra.</span>
+        </span>
+      </a>
+    </li>
+
+    <li class="vd-branch">
+      <a class="vd-branch-card" href="../chapters/02-alokacijska-funkcija.html#meritorna-dobra">
+        <span class="vd-branch-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M2 9l10-4 10 4-10 4L2 9Z"/><path d="M6 11v4c0 1.5 2.5 3 6 3s6-1.5 6-3v-4"/><path d="M22 9v5"/></svg>
+        </span>
+        <span>
+          <span class="vd-branch-title">Meritorna dobra</span>
+          <span class="vd-branch-text">Obrazovanja sami kupimo premalo, duhana previše. Država jedno gura, drugo koči.</span>
+        </span>
+      </a>
+    </li>
+
+  </ol>
+</div>
+
+<div class="vd-cards">
+
+  <div class="vd-card">
+    <span class="vd-card-label">Politika u praksi</span>
+    <p>Satelitska navigacija. Otvoreni signal europskog Galilea besplatan je svima, pa ga nijedan korisnik ne bi sam financirao. Financira ga zajednica.</p>
+    <a class="vd-src" href="../chapters/02-alokacijska-funkcija.html#javna-dobra">Poglavlje 2 · Javna dobra</a>
+  </div>
+
+  <div class="vd-card">
+    <span class="vd-card-label">Jedna brojka</span>
+    <span class="vd-big">0&nbsp;€</span>
+    <p>Toliko stoji dodatni korisnik svjetionika ili signala. Kad je granični trošak nula, naplata po korisniku gubi smisao.</p>
+    <a class="vd-src" href="../chapters/02-alokacijska-funkcija.html#javna-dobra">Poglavlje 2 · Javna dobra</a>
+  </div>
+
+  <div class="vd-card">
+    <span class="vd-card-label">Mit i stvarnost</span>
+    <p class="vd-mit"><span class="vd-tag">Mit</span>Tržište bi samo sredilo sve da se država makne.</p>
+    <p class="vd-stvar"><span class="vd-tag">Stvarnost</span>Kod javnih dobara, eksternalija, asimetrija i monopola cijene ne nose prave signale, pa tržišni ishod promaši društveno najbolji.</p>
+    <a class="vd-src" href="../chapters/02-alokacijska-funkcija.html#alokacijska-funkcija-kao-prvi-argument-za-državu">Poglavlje 2 · Prvi argument za državu</a>
+  </div>
+
+</div>
+
+<div class="vd-pojam">
+  <span class="vd-pojam-label">Pojam za razgovor</span>
+  <p><span class="vd-pojam-term">švercer</span> <span class="vd-pojam-text">Onaj tko zna da ga ne mogu isključiti, pa pusti druge da plate.</span></p>
+</div>
+
+<nav class="vd-dalje" aria-label="Kamo dalje">
+  <a href="01-uloga-drzave.html">← Mapa 1</a>
+  <a class="vd-primary" href="../chapters/02-alokacijska-funkcija.html">Otvorite poglavlje u knjizi</a>
+  <a href="03-distribucijska-funkcija.html">Mapa 3 →</a>
+</nav>
+
+</div>
+```

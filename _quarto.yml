@@ -95,6 +95,25 @@ book:
   appendices:
     - references.qmd
     - vodic.qmd
+    - vodic/01-uloga-drzave.qmd
+    - vodic/02-alokacijska-funkcija.qmd
+    - vodic/03-distribucijska-funkcija.qmd
+    - vodic/04-stabilizacijska-funkcija.qmd
+    - vodic/05-javni-izbor.qmd
+    - vodic/06-kolektivni-izbor.qmd
+    - vodic/07-stranke-izbori.qmd
+    - vodic/08-interesne-skupine.qmd
+    - vodic/09-birokracija.qmd
+    - vodic/10-institucionalna-ekonomika.qmd
+    - vodic/11-konstitucionalna-ekonomika.qmd
+    - vodic/12-instrumenti.qmd
+    - vodic/13-javna-potrosnja.qmd
+    - vodic/14-porezi.qmd
+    - vodic/15-drzavni-neuspjesi.qmd
+    - vodic/16-novi-javni-menadzment.qmd
+    - vodic/17-novo-upravljanje.qmd
+    - vodic/18-cba-evaluacija.qmd
+    - vodic/19-reforme.qmd
     - resursi.qmd
     - alat.qmd
     - podaci.qmd

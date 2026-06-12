@@ -5,37 +5,173 @@ number-sections: false
 lang: hr-HR
 format:
   html:
-    include-in-header:
-      text: |
-        <style>
-          #quarto-sidebar { display: none !important; }
-          #quarto-margin-sidebar { display: none !important; }
-          .sidebar.sidebar-navigation { display: none !important; }
-          .page-columns { display: block !important; }
-          main.content, #quarto-document-content {
-            max-width: 1100px !important;
-            margin-left: auto !important;
-            margin-right: auto !important;
-            padding-left: 1.5rem !important;
-            padding-right: 1.5rem !important;
-            grid-column: 1 / -1 !important;
-          }
-        </style>
+    page-layout: full
+    body-classes: vd-page
 ---
 
-Vodič je popularna verzija knjige namijenjena široj publici. Sve glavne ideje udzbenika prevedene su u jezik svakodnevice, bez žargona, formula i fusnota.
+```{=html}
+<header class="vd-hub-head">
+  <span class="vd-hub-kicker">Vodič · 19 mentalnih mapa</span>
+  <h1 class="vd-hub-title">Knjiga koju pročitate očima</h1>
+  <p class="vd-hub-lede">Vizualna slikovnica knjige. Jedno poglavlje, jedna stranica, jedna mentalna mapa koju pročitate za dvije minute. Ista priča kao u udžbeniku, ispričana drugim glasom. Krenite redom ili otvorite ono što vas zanima.</p>
+</header>
 
-Zamišljen je za sve koji žele razumjeti kako se kroje hrvatske javne politike i kako država utječe na svakodnevni život, a nemaju vremena ili volje prolaziti kroz cijeli akademski tekst. Ista priča kao u udzbeniku, samo ispričana drugim glasom.
+<section class="vd-hub-part vd-dio-1" aria-labelledby="vd-part-1">
+  <div class="vd-hub-part-head">
+    <span class="vd-hub-part-label">Dio I</span>
+    <span class="vd-hub-part-title" id="vd-part-1">Klasična analiza javnih financija i politika</span>
+  </div>
+  <div class="vd-hub-grid">
+    <a class="vd-hub-card" href="vodic/01-uloga-drzave.html">
+      <span class="vd-hub-num">01</span>
+      <span class="vd-hub-name">Uloga države u gospodarstvu</span>
+      <span class="vd-hub-q">Zašto tržištu uopće treba država?</span>
+      <span class="vd-go">Otvorite mapu →</span>
+    </a>
+    <a class="vd-hub-card" href="vodic/02-alokacijska-funkcija.html">
+      <span class="vd-hub-num">02</span>
+      <span class="vd-hub-name">Alokacijska funkcija i tržišni neuspjesi</span>
+      <span class="vd-hub-q">Zašto tržište samo ne rješava sve?</span>
+      <span class="vd-go">Otvorite mapu →</span>
+    </a>
+    <a class="vd-hub-card" href="vodic/03-distribucijska-funkcija.html">
+      <span class="vd-hub-num">03</span>
+      <span class="vd-hub-name">Distribucijska funkcija</span>
+      <span class="vd-hub-q">Što je uopće pravedna raspodjela?</span>
+      <span class="vd-go">Otvorite mapu →</span>
+    </a>
+    <a class="vd-hub-card" href="vodic/04-stabilizacijska-funkcija.html">
+      <span class="vd-hub-num">04</span>
+      <span class="vd-hub-name">Stabilizacijska funkcija</span>
+      <span class="vd-hub-q">Tko pegla krize?</span>
+      <span class="vd-go">Otvorite mapu →</span>
+    </a>
+  </div>
+</section>
 
-::: {.callout-important}
-## U pripremi
+<section class="vd-hub-part vd-dio-2" aria-labelledby="vd-part-2">
+  <div class="vd-hub-part-head">
+    <span class="vd-hub-part-label">Dio II</span>
+    <span class="vd-hub-part-title" id="vd-part-2">Javni izbor. Što, kako i zašto?</span>
+  </div>
+  <div class="vd-hub-grid">
+    <a class="vd-hub-card" href="vodic/05-javni-izbor.html">
+      <span class="vd-hub-num">05</span>
+      <span class="vd-hub-name">Javni izbor</span>
+      <span class="vd-hub-q">Što vidimo kad političare gledamo kao obične ljude?</span>
+      <span class="vd-go">Otvorite mapu →</span>
+    </a>
+    <a class="vd-hub-card" href="vodic/06-kolektivni-izbor.html">
+      <span class="vd-hub-num">06</span>
+      <span class="vd-hub-name">Kolektivni izbor</span>
+      <span class="vd-hub-q">Može li skupina uopće imati dosljednu volju?</span>
+      <span class="vd-go">Otvorite mapu →</span>
+    </a>
+    <a class="vd-hub-card" href="vodic/07-stranke-izbori.html">
+      <span class="vd-hub-num">07</span>
+      <span class="vd-hub-name">Političke stranke i izbori</span>
+      <span class="vd-hub-q">Zašto pred izbore sve stranke zvuče slično?</span>
+      <span class="vd-go">Otvorite mapu →</span>
+    </a>
+    <a class="vd-hub-card" href="vodic/08-interesne-skupine.html">
+      <span class="vd-hub-num">08</span>
+      <span class="vd-hub-name">Interesne skupine</span>
+      <span class="vd-hub-q">Kako mali često pobijede velike?</span>
+      <span class="vd-go">Otvorite mapu →</span>
+    </a>
+    <a class="vd-hub-card" href="vodic/09-birokracija.html">
+      <span class="vd-hub-num">09</span>
+      <span class="vd-hub-name">Dva pogleda na birokraciju</span>
+      <span class="vd-hub-q">Je li birokrat sluga ili igrač?</span>
+      <span class="vd-go">Otvorite mapu →</span>
+    </a>
+  </div>
+</section>
 
-Ova stranica je u izradi. Vodič nastaje kao paralelna, intuitivna projekcija knjige i uključivat će:
+<section class="vd-hub-part vd-dio-3" aria-labelledby="vd-part-3">
+  <div class="vd-hub-part-head">
+    <span class="vd-hub-part-label">Dio III</span>
+    <span class="vd-hub-part-title" id="vd-part-3">Nova institucionalna i konstitucionalna ekonomika</span>
+  </div>
+  <div class="vd-hub-grid">
+    <a class="vd-hub-card" href="vodic/10-institucionalna-ekonomika.html">
+      <span class="vd-hub-num">10</span>
+      <span class="vd-hub-name">Institucije kao pravila igre</span>
+      <span class="vd-hub-q">Zašto ista politika negdje uspije, a negdje propadne?</span>
+      <span class="vd-go">Otvorite mapu →</span>
+    </a>
+    <a class="vd-hub-card" href="vodic/11-konstitucionalna-ekonomika.html">
+      <span class="vd-hub-num">11</span>
+      <span class="vd-hub-name">Konstitucionalna ekonomika</span>
+      <span class="vd-hub-q">Tko čuva čuvare?</span>
+      <span class="vd-go">Otvorite mapu →</span>
+    </a>
+  </div>
+</section>
 
-- Glavne ideje udzbenika prevedene u svakodnevni jezik
-- Primjere iz hrvatske prakse koji ilustriraju ključne pojmove
-- Pristupačna objašnjenja koja ne zahtijevaju ekonomsko obrazovanje
-- Odgovore na najvažnija pitanja o državi, tržištu i institucijama
+<section class="vd-hub-part vd-dio-4" aria-labelledby="vd-part-4">
+  <div class="vd-hub-part-head">
+    <span class="vd-hub-part-label">Dio IV</span>
+    <span class="vd-hub-part-title" id="vd-part-4">Javne financije i javne politike u praksi</span>
+  </div>
+  <div class="vd-hub-grid">
+    <a class="vd-hub-card" href="vodic/12-instrumenti.html">
+      <span class="vd-hub-num">12</span>
+      <span class="vd-hub-name">Instrumenti državne intervencije</span>
+      <span class="vd-hub-q">Koje alate država ima u rukama?</span>
+      <span class="vd-go">Otvorite mapu →</span>
+    </a>
+    <a class="vd-hub-card" href="vodic/13-javna-potrosnja.html">
+      <span class="vd-hub-num">13</span>
+      <span class="vd-hub-name">Javna potrošnja</span>
+      <span class="vd-hub-q">Kamo ide svaki drugi euro koji zaradimo?</span>
+      <span class="vd-go">Otvorite mapu →</span>
+    </a>
+    <a class="vd-hub-card" href="vodic/14-porezi.html">
+      <span class="vd-hub-num">14</span>
+      <span class="vd-hub-name">Porezi, više od tereta</span>
+      <span class="vd-hub-q">Zašto porezi izgledaju baš ovako?</span>
+      <span class="vd-go">Otvorite mapu →</span>
+    </a>
+  </div>
+</section>
 
-U međuvremenu, [otvorite cijelu knjigu](chapters/00-uvod.html) ili [preuzmite PDF](pdf/Javne-politike.pdf).
-:::
+<section class="vd-hub-part vd-dio-5" aria-labelledby="vd-part-5">
+  <div class="vd-hub-part-head">
+    <span class="vd-hub-part-label">Dio V</span>
+    <span class="vd-hub-part-title" id="vd-part-5">Kako do kvalitetnijih javnih politika?</span>
+  </div>
+  <div class="vd-hub-grid">
+    <a class="vd-hub-card" href="vodic/15-drzavni-neuspjesi.html">
+      <span class="vd-hub-num">15</span>
+      <span class="vd-hub-name">Državni neuspjesi</span>
+      <span class="vd-hub-q">Zašto i država zna zakazati?</span>
+      <span class="vd-go">Otvorite mapu →</span>
+    </a>
+    <a class="vd-hub-card" href="vodic/16-novi-javni-menadzment.html">
+      <span class="vd-hub-num">16</span>
+      <span class="vd-hub-name">Novi javni menadžment</span>
+      <span class="vd-hub-q">Može li država raditi kao firma?</span>
+      <span class="vd-go">Otvorite mapu →</span>
+    </a>
+    <a class="vd-hub-card" href="vodic/17-novo-upravljanje.html">
+      <span class="vd-hub-num">17</span>
+      <span class="vd-hub-name">Novo upravljanje</span>
+      <span class="vd-hub-q">Tko sve danas kroji javne politike?</span>
+      <span class="vd-go">Otvorite mapu →</span>
+    </a>
+    <a class="vd-hub-card" href="vodic/18-cba-evaluacija.html">
+      <span class="vd-hub-num">18</span>
+      <span class="vd-hub-name">CBA i evaluacija</span>
+      <span class="vd-hub-q">Kako izmjeriti isplati li se neka politika?</span>
+      <span class="vd-go">Otvorite mapu →</span>
+    </a>
+    <a class="vd-hub-card" href="vodic/19-reforme.html">
+      <span class="vd-hub-num">19</span>
+      <span class="vd-hub-name">Reforme u javnom sektoru</span>
+      <span class="vd-hub-q">Zašto reforme svi žele dok ne počnu?</span>
+      <span class="vd-go">Otvorite mapu →</span>
+    </a>
+  </div>
+</section>
+```

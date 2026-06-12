@@ -1,0 +1,130 @@
+---
+title: "Vodič · Uloga države u gospodarstvu"
+toc: false
+number-sections: false
+lang: hr-HR
+format:
+  html:
+    page-layout: full
+    body-classes: vd-page
+---
+
+```{=html}
+<div class="vd-dio-1">
+
+<div class="vd-folio">
+  <div class="vd-folio-left">
+    <a class="vd-back" href="../vodic.html">← Vodič</a>
+    <span class="vd-folio-chapter">Dio I · Poglavlje 1 · Uloga države u gospodarstvu</span>
+  </div>
+  <div class="vd-folio-meta">
+    <span>2 min čitanja</span>
+    <span>Mapa 1 od 19</span>
+  </div>
+</div>
+
+<h1 class="vd-question">Zašto tržištu uopće treba&nbsp;država?</h1>
+
+<div class="vd-map">
+  <ol class="vd-branches" aria-label="Pet ideja poglavlja o ulozi države">
+
+    <li class="vd-branch">
+      <a class="vd-branch-card" href="../chapters/01-uloga-drzave.html#zašto-tržišnom-gospodarstvu-treba-država">
+        <span class="vd-branch-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M7 10h10l-3-3M17 14H7l3 3"/><circle cx="12" cy="12" r="10"/></svg>
+        </span>
+        <span>
+          <span class="vd-branch-title">Tržište i njegove granice</span>
+          <span class="vd-branch-text">Cijene koordiniraju raspršeno znanje bolje od plana, dok vrijede stroge pretpostavke.</span>
+        </span>
+      </a>
+    </li>
+
+    <li class="vd-branch">
+      <a class="vd-branch-card" href="../chapters/01-uloga-drzave.html#musgraveov-okvir">
+        <span class="vd-branch-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 21h16M5 21V9m4 12V9m6 12V9m4 12V9"/><path d="M3 9 12 3l9 6"/></svg>
+        </span>
+        <span>
+          <span class="vd-branch-title">Musgraveov okvir</span>
+          <span class="vd-branch-text">Alokacija, distribucija i stabilizacija. Tri zadaće države i okvir cijele knjige.</span>
+        </span>
+      </a>
+    </li>
+
+    <li class="vd-branch">
+      <a class="vd-branch-card" href="../chapters/01-uloga-drzave.html#pareto-učinkovitost-i-mjerila-blagostanja">
+        <span class="vd-branch-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h4v-4H3zM10 17h4v-8h-4zM17 13h4V3h-4z"/></svg>
+        </span>
+        <span>
+          <span class="vd-branch-title">Paretovo mjerilo</span>
+          <span class="vd-branch-text">Promjena bez gubitnika je napredak. Kad takvih više nema, stanje je učinkovito.</span>
+        </span>
+      </a>
+    </li>
+
+    <li class="vd-branch">
+      <a class="vd-branch-card" href="../chapters/01-uloga-drzave.html#teoremi-ekonomike-blagostanja">
+        <span class="vd-branch-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="12" r="5.5"/><circle cx="15" cy="12" r="5.5"/></svg>
+        </span>
+        <span>
+          <span class="vd-branch-title">Dva teorema blagostanja</span>
+          <span class="vd-branch-text">Tržišta pod strogim uvjetima budu učinkovita, a pravednija podjela ide preko početnih uvjeta.</span>
+        </span>
+      </a>
+    </li>
+
+    <li class="vd-branch">
+      <a class="vd-branch-card" href="../chapters/01-uloga-drzave.html#koliko-su-stvarna-tržišta-blizu-idealu">
+        <span class="vd-branch-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="4" width="16" height="16" rx="1"/><path d="M4 16 16 4"/></svg>
+        </span>
+        <span>
+          <span class="vd-branch-title">Koliko je ideal blizu</span>
+          <span class="vd-branch-text">Mnogo sudionika i jednostavne transakcije da. Složene informacije i tržišna moć ne.</span>
+        </span>
+      </a>
+    </li>
+
+  </ol>
+</div>
+
+<div class="vd-cards">
+
+  <div class="vd-card">
+    <span class="vd-card-label">Politika u praksi</span>
+    <p>Temeljna znanstvena istraživanja koriste svima, a financijer teško prisvoji vrijednost. Zato znanost svugdje plaća država, od NIH a do europskog ERC a.</p>
+    <a class="vd-src" href="../chapters/01-uloga-drzave.html#zašto-tržišnom-gospodarstvu-treba-država">Poglavlje 1 · Zašto treba država</a>
+  </div>
+
+  <div class="vd-card">
+    <span class="vd-card-label">Jedna brojka</span>
+    <span class="vd-big">2</span>
+    <p>Dva teorema drže ravnotežu rasprave. Prvi brani tržište, drugi opravdava preraspodjelu bez odbacivanja tržišta.</p>
+    <a class="vd-src" href="../chapters/01-uloga-drzave.html#teoremi-ekonomike-blagostanja">Poglavlje 1 · Teoremi blagostanja</a>
+  </div>
+
+  <div class="vd-card">
+    <span class="vd-card-label">Mit i stvarnost</span>
+    <p class="vd-mit"><span class="vd-tag">Mit</span>Tržište i država su protivnici.</p>
+    <p class="vd-stvar"><span class="vd-tag">Stvarnost</span>Drugi teorem dijeli posao. Država namjesti početne uvjete, tržište zatim učinkovito alocira.</p>
+    <a class="vd-src" href="../chapters/01-uloga-drzave.html#teoremi-ekonomike-blagostanja">Poglavlje 1 · Teoremi blagostanja</a>
+  </div>
+
+</div>
+
+<div class="vd-pojam">
+  <span class="vd-pojam-label">Pojam za razgovor</span>
+  <p><span class="vd-pojam-term">Pareto poboljšanje</span> <span class="vd-pojam-text">Promjena nakon koje je nekome bolje, a nikome gore.</span></p>
+</div>
+
+<nav class="vd-dalje" aria-label="Kamo dalje">
+  <a href="../vodic.html">← Sve mape</a>
+  <a class="vd-primary" href="../chapters/01-uloga-drzave.html">Otvorite poglavlje u knjizi</a>
+  <a href="02-alokacijska-funkcija.html">Mapa 2 →</a>
+</nav>
+
+</div>
+```

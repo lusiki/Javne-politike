@@ -1,0 +1,29 @@
+# Prijedlog proširenja knjige — tematska područja za raspravu
+
+*Nacrt dopisa suautorima, svibanj 2026.*
+
+---
+
+Dragi Milan, draga Petra,
+
+U nastavku iznosim prijedlog tematskih proširenja naše knjige s ciljem da je čvršće utemeljimo na aktualnim istraživačkim frontovima u javnoj ekonomici, teoriji javnog izbora i fiskalnoj politici. Prijedlog nije konačan, već polazišna točka za razgovor o tome što, u kojoj mjeri i kojim redoslijedom dodajemo.
+
+Knjiga u sadašnjem obliku čvrsto pokriva klasične temelje — Musgravljevu trodijelnu funkciju, teoriju javnog izbora, institucionalnu ekonomiku, osnove oporezivanja i javne potrošnje te analizu troškova i koristi. Upravo taj dobro posloženi temelj otvara prostor da selektivno uvedemo teme koje obilježavaju suvremene policy rasprave, a koje u udžbenicima ove vrste još uvijek nisu standardno zastupljene.
+
+**Umjetna inteligencija i država.** Razvojem automatizacije i velikih jezičnih modela otvara se niz pitanja koja direktno zadiru u teme koje knjiga već obrađuje. Na strani oporezivanja vrijedi razmotriti što se događa s poreznom osnovom kad udio rada u dohotku pada — rasprava o oporezivanju automatizacije i zahtjev za premještanjem tereta s dohotka prema potrošnji i imovini danas je jedna od živih tema fiskalne politike. Na strani birokracije, algoritmičko odlučivanje u javnoj upravi otvara novu dimenziju principal-agent problema — kada je "agent" algoritam, standardni nadzorni mehanizmi prestaju funkcionirati na isti način. Uz to, racionalno neznanje koje obrađujemo u teoriji javnog izbora dobiva novu dimenziju u eri algoritmičke distribucije informacija i LLM-ova. Ove teme ne bi formirale zasebno poglavlje, već bi se utkale kao umetci i primjeri u poglavlja koja već postoje.
+
+**Klimatska politika i zelene javne financije.** Ovo je, po mome sudu, najveća sadržajna praznina knjige u odnosu na aktualnost. EU ETS, EU ETS 2 koji stupa na snagu 2027. i koji će izravno pogoditi kućanstva kroz troškove grijanja i goriva, te CBAM koji je već u prijelaznoj fazi i pogađa hrvatska izvozna poduzeća poput CEMEX-a, TLM-a i Petrokemije — sve su to teme koje bi studentima javnih politika trebale biti neizostavne. Pigouvijanski porezi i kvantificirani negativni eksternaliteti prirodno se nadovezuju na ono što smo napisali u poglavlju o tržišnim neuspjesima, a zelena javna ulaganja kroz NPOO direktno su veza s poglavljem o reformama. Smatram da ova tema zaslužuje zasebno poglavlje u Dijelu III, smješteno između poreza i poglavlja o CBA.
+
+**Globalna porezna arhitektura.** Poglavlje o porezima već spominje BEPS inicijative, ali trenutna verzija propušta ono što se doista zbiva: OECD-ovo GloBE pravilo — tzv. Stup 2 — s globalnim minimalnim efektivnim porezom na dobit od 15% u primjeni je u EU od 2024. To nije apstraktna međunarodna tema: Hrvatska s porezom na dobit od 10% za mala i srednja poduzeća mora naplaćivati domaći dopunjujući porez kako bi ispunila obvezu. Radi se o udžbeničkom primjeru napetosti između porezne konkurencije i fiskalne koordinacije, i zaslužuje potpunu podsekciju unutar poglavlja o porezima.
+
+**Evaluacija javnih politika.** Poglavlje o CBA odlično pokriva ex-ante analizu. Ono što nedostaje jest ex-post dimenzija — metodološka revolucija u procjeni uzročnih učinaka politika (razlike-u-razlikama, regresijska diskontinuiranost, sintetička kontrola, randomizirani kontrolirani pokusi) koja je od Nobelove nagrade 2019. Banerjeeju, Duflo i Kremeru postala standardni dio policy toolkita. "What Works" centri u UK-u, J-PAL, te zahtjevi NPOO-a za evaluacijom mjera prirodna su ulazna točka za objašnjavanje zašto ex-post evaluacija nije luksuz nego pretpostavka odgovorne fiskalne politike. Predlažem da se ova materija doda unutar postojećeg CBA poglavlja, kao njegova prirodna druga polovica.
+
+**Demografija, migracije i hrvatska fiskalna budućnost.** Ovo je tema gdje knjiga može biti potpuno jedinstvena. Nijedan udžbenik na engleskom ne može ponuditi ono što mi možemo — sintetičku fiskalnu analizu hrvatskog demografskog šoka: gubitak gotovo 10% stanovništva od 2011., selektivnost emigracije prema mladima i obrazovanima, pritisak na mirovinsku blagajnu, financiranje dugotrajne skrbi koje tek treba institucionalno oblikovati, te političku ekonomiju pronatalitetnih politika čija je troškovnu učinkovitost teško obraniti. Predlažem ovo kao zasebno poglavlje pred zaključkom — vrstu sinteze koja primijenjuje sve analitičke alate iz knjige na jedan koherentan i studentima blizak domaći slučaj.
+
+**Ostale teme u manjoj mjeri.** Uz gore navedene, vrijedilo bi razmotriti — uglavnom kroz kratke umetke i primjere — i sljedeće: povratak industrijske politike i misijski orijentirane države (Mazzucato, NextGenerationEU), promjenu obrasca obrambene potrošnje nakon 2022. u kontekstu javnih dobara, istraživanja o koncentraciji bogatstva (Piketty, Saez, Zucman) s naglaskom na slabu imovinska oporezivanje u Hrvatskoj, fenomen afektivne polarizacije koji empirijski remeti predviđanja teorije medijan glasača, te dublju razradu bihevioralne javne ekonomike izvan puke napomene o nudge instrumentima.
+
+**Obujam i sekvenciranje.** Predlažem tri razine ambicije kako bismo lakše donijeli odluku. Minimalna razina donosi oko 12.000 novih riječi — nekoliko umetaka u postojeća poglavlja i jedno novo poglavlje o demografiji; to je povećanje od otprilike trećine u odnosu na sadašnji sadržaj i dodaje oko 40 tiskanih stranica. Srednja razina (oko 25.000 novih riječi) dodaje i klimatsko poglavlje i proširenu evaluacijsku sekciju te udvostručuje ukupan opseg proze. Potpuna razina (oko 39.000 novih riječi) obuhvaća sve navedene teme i donosi knjigu na oko 200 tiskanih stranica. U svakom slučaju, prioritet bi trebalo biti dovršiti pisanje poglavlja 8, 9, 10, 11 i zaključka koji su još uvijek u pripremi, a zatim sustavno dodavati frontier sadržaj prema razini ambicije na kojoj se usuglasimo.
+
+Veselim se vašim mislima i prijedlozima.
+
+Luka
