@@ -32,6 +32,7 @@ Ako te opcije uspoređujemo u parovima većinskim glasovanjem, dolazimo do neobi
 
 Graf koji slijedi prikazuje ishode parnih glasovanja kao strelice među opcijama A, B i C te javlja zatvara li se ciklus ili postoji stabilan Condorcetov pobjednik. Graf je interaktivan, pa izbornici mijenjaju rang-listu svakog od triju birača, čime se vidi koja kombinacija preferencija stvara ciklus, a koja stabilan ishod.
 
+::: {.content-visible when-format="html"}
 ```{ojs}
 //| echo: false
 viewof cond_controls = Inputs.form({
@@ -109,6 +110,108 @@ cond_v3 = cond_controls.v3
 ```
 
 **Što isprobati.** (1) Zadržite početni raspored i provjerite kako tri rang-liste koje rotiraju u istom smjeru zatvaraju strelice u krug, pa natpis javlja ciklus bez stabilnog pobjednika. (2) Biraču 2 promijenite samo jedno mjesto u rang-listi i pratite kako se petlja prekida te se pojavljuje Condorcetov pobjednik označen zelenom bojom. (3) Postavite svim trima biračima istu rang-listu pa potom unesite tek malen otklon i uvjerite se da je za ciklus potrebna upravo ona posebna kombinacija suprotstavljenih redoslijeda, a ne bilo koje neslaganje birača.
+:::
+
+::: {.content-visible when-format="pdf"}
+```{r}
+#| label: fig-condorcet-print
+#| echo: false
+#| fig-cap: "Strelice pokazuju pobjednika svakog para u izravnom većinskom glasovanju; kada tvore zatvoreni krug, kolektivna preferencija je ciklička i nema stabilnog pobjednika."
+#| fig-alt: "Dijagram s tri čvora (A, B, C) raspoređena u trokut. Usmjerene strelice između parova pokazuju pobjednika izravnog glasovanja: kada strelice tvore zatvoreni krug, natpis upozorava na ciklus i nema Condorcetova pobjednika; kada postoji pobjednik s dva pobjede, čvor je označen zelenom bojom."
+#| fig-width: 5.2
+#| fig-height: 4.7
+# Statički PDF blizanac interaktivnog OJS grafa (zadane rang-liste triju birača).
+source("R/setup.R")
+
+# Zadane vrijednosti izbornika (rotiraju u istom smjeru -> ciklus):
+v1 <- c("A", "B", "C")  # Birač 1: A ▸ B ▸ C
+v2 <- c("B", "C", "A")  # Birač 2: B ▸ C ▸ A
+v3 <- c("C", "A", "B")  # Birač 3: C ▸ A ▸ B
+voters <- list(v1, v2, v3)
+
+# prefers(v, x, y): birač v rangira x iznad y (manji indeks = preferiranije)
+prefers <- function(v, x, y) which(v == x) < which(v == y)
+
+# pair(x, y): parni većinski pobjednik (3 birača, bez izjednačenja)
+pair <- function(x, y) {
+  wx <- sum(vapply(voters, prefers, logical(1), x, y))
+  if (wx > 3 - wx) x else y
+}
+
+ab <- pair("A", "B")   # A vs B -> A (v1, v3 za A; 2-1)
+bc <- pair("B", "C")   # B vs C -> B (v1, v2 za B; 2-1)
+ac <- pair("A", "C")   # A vs C -> C (v2, v3 za C; 2-1)
+
+# Condorcetov pobjednik = opcija s dvije parne pobjede; inače ciklus
+wins <- table(factor(c(ab, bc, ac), levels = c("A", "B", "C")))
+cond_winner <- names(wins)[wins == 2]
+is_cycle <- length(cond_winner) == 0   # zadano: {A:1,B:1,C:1} -> ciklus
+
+# Naglasna boja: crvena za ciklus (#C53030), zelena za pobjednika (#1C7C54)
+accent <- if (is_cycle) "#C53030" else "#1C7C54"
+
+# Položaji čvorova: jednakostranični trokut, vrh gore (data koordinate)
+pos <- data.frame(
+  id = c("A", "B", "C"),
+  x  = c(0, 0.87, -0.87),
+  y  = c(1, -0.5, -0.5),
+  stringsAsFactors = FALSE
+)
+
+# Bridovi: strelica ide od parnog pobjednika prema gubitniku
+make_edge <- function(a, b, w) {
+  loser <- if (w == a) b else a
+  data.frame(
+    x1 = pos$x[pos$id == w], y1 = pos$y[pos$id == w],
+    x2 = pos$x[pos$id == loser], y2 = pos$y[pos$id == loser]
+  )
+}
+edges <- rbind(
+  make_edge("A", "B", ab),
+  make_edge("B", "C", bc),
+  make_edge("A", "C", ac)
+)
+# Skraćivanje strelica da ne ulaze u čvorove (analogno OJS insetu 28)
+inset_frac <- 0.30
+edges <- within(edges, {
+  dx <- x2 - x1; dy <- y2 - y1
+  len <- sqrt(dx^2 + dy^2)
+  xs <- x1 + dx / len * inset_frac
+  ys <- y1 + dy / len * inset_frac
+  xe <- x2 - dx / len * inset_frac
+  ye <- y2 - dy / len * inset_frac
+})
+
+top_caption <- if (is_cycle) {
+  "Ciklus — nema stabilnog pobjednika"
+} else {
+  paste0("Condorcetov pobjednik: ", cond_winner)
+}
+# PDF grafički uređaj ne crta Unicode strelicu (→, U+2192) pa koristimo ASCII zamjenu
+bottom_line <- sprintf("A vs B: %s      B vs C: %s      A vs C: %s",
+                       ab, bc, ac)
+
+ggplot() +
+  geom_segment(data = edges, aes(x = xs, y = ys, xend = xe, yend = ye),
+               color = accent, linewidth = 1.0,
+               arrow = arrow(length = unit(0.22, "cm"), type = "closed")) +
+  geom_point(data = pos, aes(x, y), size = 16,
+             shape = 21, fill = "white", color = "#1C1916", stroke = 1.1) +
+  geom_text(data = pos, aes(x, y, label = id),
+            fontface = "bold", size = 7, color = "#1C1916") +
+  annotate("text", x = 0, y = 1.45, label = top_caption,
+           color = accent, fontface = "bold", size = 5) +
+  annotate("text", x = 0, y = -1.1, label = bottom_line,
+           color = "#3A332D", size = 3.8) +
+  scale_x_continuous(limits = c(-1.45, 1.45), expand = c(0, 0)) +
+  scale_y_continuous(limits = c(-1.2, 1.55), expand = c(0, 0)) +
+  coord_fixed(clip = "off") +
+  theme_void() +
+  theme(plot.background = element_rect(fill = "#F2EDE3", color = NA),
+        panel.background = element_rect(fill = "#F2EDE3", color = NA),
+        plot.margin = margin(10, 10, 10, 10))
+```
+:::
 
 Posljedica je važna. Kada postoji ciklus, ishod ovisi o redoslijedu glasovanja. Onaj tko kontrolira dnevni red, to jest koje se opcije i kojim redoslijedom stavljaju na glasovanje, može utjecati na konačni rezultat. To je prvi nagovještaj da pravila igre nisu nevažna pozadina, nego da oblikuju same ishode.
 

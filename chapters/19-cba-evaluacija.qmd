@@ -66,6 +66,7 @@ Izbor diskontne stope nije tehnička sitnica jer kod dugoročnih projekata presu
 
 Graf koji slijedi prikazuje neto sadašnju vrijednost projekta u ovisnosti o diskontnoj stopi, pri čemu krivulja pada i u nekom trenutku probija nulu, a to sjecište je interna stopa povrata iznad koje projekt prestaje biti opravdan. Graf je interaktivan, pa klizači mijenjaju diskontnu stopu i godišnju neto korist, čime se vidi koliko je ocjena projekta osjetljiva na te pretpostavke.
 
+::: {.content-visible when-format="html"}
 ```{ojs}
 //| echo: false
 viewof npv_controls = Inputs.form({
@@ -141,6 +142,73 @@ npv_b = npv_controls.b
 ```
 
 **Što isprobati.** (1) Pri Diskontna stopa ([r]{.var}) oko 5 % crna točka stoji u pozitivnom području, pa je projekt društveno opravdan. (2) Pomičite klizač udesno i pratite kako NPV pada te u nekom trenutku probija nulu, a to sjecište je upravo interna stopa povrata iznad koje projekt postaje neopravdan. (3) Vratite stopu nisko pa snizite Godišnja neto korist (mil. €) prema 10 i vidjet ćete da cijela krivulja klizne prema dolje, čime se interna stopa povrata smanjuje i sve manji raspon stopa opravdava projekt.
+:::
+
+::: {.content-visible when-format="pdf"}
+```{r}
+#| label: fig-npv-diskontna-print
+#| echo: false
+#| fig-cap: "NPV projekta (ulaganje 100 mil. € i neto korist kroz četiri godine) pada kako raste diskontna stopa; pri internoj stopi povrata (IRR) jednak je nuli, a iznad nje projekt postaje neopravdan."
+#| fig-alt: "Linijski grafikon prikazuje kako neto sadašnja vrijednost projekta pada s porastom diskontne stope. Plava silazna krivulja prelazi iz pozitivnog u negativno područje. Crvena isprekidana okomita linija označava internu stopu povrata (IRR) gdje je NPV nula. Crna točka prikazuje NPV pri odabranoj diskontnoj stopi."
+#| fig-width: 7.6
+#| fig-height: 4.4
+# Statički PDF blizanac interaktivnog OJS grafa (zadane vrijednosti klizača r = 0.05, b = 30).
+source("R/setup.R")
+
+cost  <- 100   # početno ulaganje, mil. € (fiksna konstanta)
+years <- 4     # trajanje koristi (fiksna konstanta)
+r_cur <- 0.05  # diskontna stopa, zadana vrijednost klizača
+b     <- 30    # godišnja neto korist, mil. €, zadana vrijednost klizača
+
+# NPV(rate) = -cost + sum_{t=1..years} b / (1 + rate)^t  (identično OJS-u)
+npv <- function(rate) -cost + sum(b / (1 + rate)^seq_len(years))
+
+# Krivulja uzorkovana na koraku 0.002 preko [0, 0.12], kao u OJS-u
+rates <- seq(0, 0.1201, by = 0.002)
+curve <- data.frame(r = rates, npv = vapply(rates, npv, numeric(1)))
+
+# Interna stopa povrata (NPV = 0), linearna interpolacija na prvom prijelazu >=0 -> <0
+irr <- NA_real_
+for (i in 2:nrow(curve)) {
+  if (curve$npv[i - 1] >= 0 && curve$npv[i] < 0) {
+    a <- curve[i - 1, ]; cc <- curve[i, ]
+    irr <- a$r + (0 - a$npv) * (cc$r - a$r) / (cc$npv - a$npv)
+    break
+  }
+}
+
+# NPV pri odabranoj (zadanoj) diskontnoj stopi -> crna točka, default ≈ 6.4 mil. €
+cur <- data.frame(r = r_cur, npv = npv(r_cur))
+
+p <- ggplot(curve, aes(r, npv)) +
+  geom_hline(yintercept = 0, linetype = "dashed",
+             linewidth = 0.5, color = "#6B6357") +
+  geom_line(linewidth = 1.1, color = "#2D5A8E")
+
+if (!is.na(irr)) {
+  p <- p +
+    geom_vline(xintercept = irr, linetype = "dashed",
+               linewidth = 0.5, color = "#C53030") +
+    annotate("text", x = irr + 0.0015, y = 1.2,
+             label = sprintf("IRR ≈ %.1f %%", irr * 100),
+             hjust = 0, vjust = 0,
+             fontface = "bold", size = 4, color = "#C53030")
+}
+
+p +
+  geom_point(data = cur, size = 3.4, color = "#1C1916",
+             fill = "#1C1916", shape = 21, stroke = 1) +
+  annotate("text", x = cur$r,
+           y = cur$npv + ifelse(cur$npv >= 0, 4, -4.5),
+           label = sprintf("NPV = %.1f mil. €", cur$npv),
+           hjust = 0.5, fontface = "bold", size = 4.2, color = "#1C1916") +
+  scale_x_continuous(labels = function(d) paste0(round(d * 100), " %"),
+                     limits = c(0, 0.12), expand = c(0, 0)) +
+  scale_y_continuous() +
+  labs(x = "Diskontna stopa",
+       y = "Neto sadašnja vrijednost (mil. €)")
+```
+:::
 
 Sve navedeno pokazuje da je CBA u javnom sektoru znatno više od tehničkog alata. Ona je integrativni okvir koji povezuje ekonomsku učinkovitost s društvenom pravednošću, okolišnom održivošću i dugoročnom perspektivom.
 

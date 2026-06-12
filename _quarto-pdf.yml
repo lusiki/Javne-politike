@@ -36,8 +36,16 @@ format:
     citecolor: blue
     fig-pos: "H"
 
+# The static R chart twins use Unicode glyphs in annotations (Δ, →, ₙ, ∝, ½, ℓ).
+# The default Windows PDF graphics device drops them ("mbcsToSbcs conversion
+# failure"); cairo_pdf renders them correctly. Applies only to the PDF profile.
+knitr:
+  opts_chunk:
+    dev: "cairo_pdf"
+
 filters:
   - pdf-filters/strip-ojs.lua
-  # Temporary: drops SVG infographics so the PDF builds without rsvg-convert.
-  # Remove once SVG-to-PDF conversion is available (see strip-svg.lua TODO).
-  - pdf-filters/strip-svg.lua
+  # Infographic SVGs are pre-rasterized to PNG (scripts/svg-to-png.R) and this
+  # filter rewrites their .svg src to .png for the PDF build, so they render
+  # without rsvg-convert. The HTML build keeps the vector SVGs untouched.
+  - pdf-filters/swap-svg-png.lua

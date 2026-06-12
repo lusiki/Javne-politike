@@ -57,6 +57,7 @@ U lijevom panelu prikazano je povećanje državne potrošnje. Budući da je drž
 
 U desnom panelu prikazano je povećanje poreza. Viši porezi smanjuju raspoloživi dohodak kućanstava, a time i osobnu potrošnju. Zato se agregatna potražnja pomiče prema dolje, a ravnotežna proizvodnja pada, pa je porezni multiplikator negativan. Graf je interaktivan, pa klizači mijenjaju porast državne potrošnje, porast poreza i graničnu sklonost potrošnji.
 
+::: {.content-visible when-format="html"}
 ```{ojs}
 //| echo: false
 viewof fm_controls = Inputs.form({
@@ -212,6 +213,154 @@ fm_dT = fm_controls.dT
 ```
 
 **Što isprobati.** (1) Povećajte Porast državne potrošnje ([ΔG]{.var}) i u lijevoj se ploči isprekidana krivulja planiranih izdataka pomiče prema gore, ravnotežna se točka klizi udesno po crti od 45°, a Y₁ raste iznad Y₀, što je osnovni protuciklički učinak fiskalnog poticaja. (2) Povećajte sada Porast poreza ([ΔT]{.var}) i u desnoj ploči krivulja se pomiče prema dolje, ravnoteža klizi ulijevo, a multiplikator ΔY/ΔT u zaglavlju ostaje negativan i po iznosu manji od multiplikatora potrošnje, jer porez na dohodak djeluje tek posredno kroz smanjenu potrošnju. (3) Podignite Graničnu sklonost potrošnji ([c]{.var}) prema 0,85 uz nepromijenjene fiskalne impulse i oba se multiplikatora naglo povećavaju, pa isti porast potrošnje pomiče ravnotežni dohodak osjetno dalje, čime se vidi da snaga multiplikatora ovisi prije svega o tome koliki dio dodatnog dohotka kućanstva ponovno potroše.
+:::
+
+::: {.content-visible when-format="pdf"}
+```{r}
+#| label: fig-keynesian-cross-print
+#| echo: false
+#| fig-cap: "Keynesijanski križ s dvije ploče: lijeva prikazuje učinak povećanja državne potrošnje (ΔG), desna učinak povećanja poreza (ΔT), uz prikaz multiplikatora i pomaka ravnotežnog dohotka."
+#| fig-alt: "Dvije usporedne ploče prikazuju Keynesijanski križ. Na svakoj su osi dohodak Y i planirani izdaci AE, crta od 45° i krivulja planiranih izdataka. Lijevoj ploči pomiče se krivulja AE prema gore zbog rasta državne potrošnje, a desnoj prema dolje zbog rasta poreza; točke ravnoteže pomiču se duž crte od 45° i vrijednosti multiplikatora prikazane su u zaglavlju svake ploče."
+#| fig-width: 8.8
+#| fig-height: 4.7
+# Statički PDF blizanac interaktivnog OJS grafa (zadane vrijednosti c = 0.70, dG = 30, dT = 30).
+source("R/setup.R")
+
+# Zadane vrijednosti klizača (snapshot kako se graf prvi put pojavljuje)
+A0 <- 100   # autonomni izdaci (fiksno, nije klizač)
+c  <- 0.70  # granična sklonost potrošnji (zadana vrijednost klizača fm_c)
+dG <- 30    # porast državne potrošnje (zadana vrijednost klizača fm_dG)
+dT <- 30    # porast poreza (zadana vrijednost klizača fm_dT)
+Ymax <- 1400
+
+# Oznake ploča (facet domain, isti redoslijed kao u OJS-u: G lijevo, T desno)
+POLICY_G <- "Povećanje državne potrošnje"
+POLICY_T <- "Povećanje poreza"
+policy_levels <- c(POLICY_G, POLICY_T)
+
+# Ravnoteže: AE = autonomno + c·Y siječe crtu od 45° u Y = autonomno / (1 - c)
+Y0  <- A0 / (1 - c)              # 100 / 0.30 = 333.33  (obje ploče)
+Y1G <- (A0 + dG) / (1 - c)       # 130 / 0.30 = 433.33  (ploča G)
+Y1T <- (A0 - c * dT) / (1 - c)   # 79  / 0.30 = 263.33  (ploča T)
+
+# Multiplikatori (prikazani u zaglavlju, .toFixed(2))
+multG <- 1 / (1 - c)             # 1 / 0.30   =  3.33
+multT <- -c / (1 - c)            # -0.70/0.30 = -2.33
+
+grid <- seq(0, Ymax, by = 10)
+
+# Crta od 45° (AE = Y) — obje ploče
+line45 <- do.call(rbind, lapply(policy_levels, function(p)
+  data.frame(Y = grid, AE = grid, policy = p)))
+
+# Izvorna krivulja AE = A0 + c·Y — obje ploče (odsijecanje iznad Ymax)
+ae0 <- do.call(rbind, lapply(policy_levels, function(p) {
+  ae <- A0 + c * grid
+  d <- data.frame(Y = grid, AE = ae, policy = p)
+  d[d$AE <= Ymax, ]
+}))
+
+# Pomaknuta krivulja u ploči G: AE = A0 + dG + c·Y (odsječak A0 + dG = 130)
+ae1G <- transform(data.frame(Y = grid), AE = A0 + dG + c * Y, policy = POLICY_G)
+ae1G <- ae1G[ae1G$AE <= Ymax, ]
+
+# Pomaknuta krivulja u ploči T: AE = A0 - c·dT + c·Y (odsječak A0 - c·dT = 79)
+ae1T <- transform(data.frame(Y = grid), AE = A0 - c * dT + c * Y, policy = POLICY_T)
+ae1T <- ae1T[ae1T$AE <= Ymax & ae1T$AE >= 0, ]
+
+# Ravnotežne točke (na crti od 45°, AE = Y)
+dots <- data.frame(
+  Y      = c(Y0,  Y1G, Y0,  Y1T),
+  AE     = c(Y0,  Y1G, Y0,  Y1T),
+  policy = c(POLICY_G, POLICY_G, POLICY_T, POLICY_T)
+)
+
+# Okomite isprekidane vodilice (od y = 0 do ravnotežnog AE)
+guides <- data.frame(
+  Yx     = c(Y0,  Y1G, Y0,  Y1T),
+  yTop   = c(Y0,  Y1G, Y0,  Y1T),
+  policy = c(POLICY_G, POLICY_G, POLICY_T, POLICY_T)
+)
+
+# Donji ispisi Y0 / Y1 (blizu dna). Subscript znamenke (₀/₁) ne renderiraju se
+# pouzdano na PDF grafičkom uređaju pa se koriste obične znamenke Y0/Y1.
+# Y0 oznake poravnate udesno, Y1 ulijevo da se ne preklapaju (točke su blizu).
+bottomLabels <- data.frame(
+  Y      = c(Y0,  Y1G, Y0,  Y1T),
+  AE     = 24,
+  label  = c(sprintf("Y0 = %.0f", Y0),  sprintf("Y1 = %.0f", Y1G),
+             sprintf("Y0 = %.0f", Y0),  sprintf("Y1 = %.0f", Y1T)),
+  hjust  = c(1, 0, 1, 0),
+  policy = c(POLICY_G, POLICY_G, POLICY_T, POLICY_T)
+)
+
+# Oznaka "45°" (gornji desni kut svake ploče)
+fortyfive <- data.frame(
+  Y      = Ymax * 0.92,
+  AE     = Ymax * 0.92,
+  label  = "45°",
+  policy = policy_levels
+)
+
+# Ispis multiplikatora u zaglavlju (jedan po ploči, .toFixed(2))
+topLabels <- data.frame(
+  Y      = 30,
+  AE     = Ymax * 0.96,
+  label  = c(sprintf("Multiplikator ΔY/ΔG = %.2f", multG),
+             sprintf("Multiplikator ΔY/ΔT = %.2f", multT)),
+  policy = policy_levels
+)
+
+# Faktoriziraj policy kako bi ploče zadržale redoslijed G | T
+for (d in c("line45", "ae0", "ae1G", "ae1T", "dots", "guides",
+            "bottomLabels", "fortyfive", "topLabels")) {
+  df <- get(d); df$policy <- factor(df$policy, levels = policy_levels)
+  assign(d, df)
+}
+
+ggplot() +
+  # baseline na y = 0
+  geom_hline(yintercept = 0, color = "#C9C3B8", linewidth = 0.4) +
+  # okomite isprekidane vodilice
+  geom_segment(data = guides,
+               aes(x = Yx, xend = Yx, y = 0, yend = yTop),
+               color = "#6B6357", linetype = "22", linewidth = 0.4) +
+  # crta od 45°
+  geom_line(data = line45, aes(Y, AE),
+            color = "#3A332D", linewidth = 0.6) +
+  # izvorna krivulja AE (puna)
+  geom_line(data = ae0, aes(Y, AE),
+            color = "#2D5A8E", linewidth = 1.0) +
+  # pomaknute krivulje AE (isprekidane)
+  geom_line(data = ae1G, aes(Y, AE),
+            color = "#2D5A8E", linewidth = 1.0, linetype = "64") +
+  geom_line(data = ae1T, aes(Y, AE),
+            color = "#2D5A8E", linewidth = 1.0, linetype = "64") +
+  # ravnotežne točke
+  geom_point(data = dots, aes(Y, AE),
+             size = 2.6, fill = "#2D5A8E", color = "white",
+             shape = 21, stroke = 0.8) +
+  # oznaka 45°
+  geom_text(data = fortyfive, aes(Y, AE, label = label),
+            color = "#3A332D", size = 3.4, hjust = 0, vjust = 1,
+            nudge_x = 6, nudge_y = -6) +
+  # donji ispisi Y0 / Y1 (Y0 udesno, Y1 ulijevo da se ne preklapaju)
+  geom_text(data = bottomLabels, aes(Y, AE, label = label, hjust = hjust),
+            color = "#2D5A8E", size = 3.3) +
+  # multiplikatori u zaglavlju
+  geom_text(data = topLabels, aes(Y, AE, label = label),
+            color = "#1C1916", size = 3.8, fontface = "bold", hjust = 0) +
+  facet_wrap(~ policy) +
+  scale_x_continuous(limits = c(0, Ymax), expand = c(0, 0)) +
+  scale_y_continuous(limits = c(0, Ymax), expand = c(0, 0)) +
+  labs(x = "Dohodak / proizvodnja (Y)",
+       y = "Planirani izdaci (AE)") +
+  theme_pubfin() +
+  theme(panel.grid.major.x = element_blank(),
+        panel.spacing = unit(1.2, "lines"),
+        strip.text = element_text(face = "bold", color = "#1C1916"))
+```
+:::
 
 U kontekstu stabilizacijske funkcije fiskalne politike, multiplikator objašnjava zašto fiskalna politika može ublažavati poslovni ciklus. U recesiji, kada je proizvodnja ispod potencijalne razine, država može povećati potrošnju ili smanjiti poreze kako bi podržala agregatnu potražnju. U ekspanziji, kada postoji rizik pregrijavanja i inflacijskih pritisaka, može učiniti suprotno tako da smanji potrošnju ili poveća poreze. Time fiskalna politika djeluje protuciklički. Ona ne uklanja ciklus, ali može smanjiti amplitudu pada i uzleta gospodarske aktivnosti.
 

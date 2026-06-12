@@ -71,6 +71,7 @@ Razlog je intuitivan. Veći proračun za javnu instituciju često znači više z
 
 Graf koji slijedi prikazuje granu korist i granični trošak javne usluge te uspoređuje društveno učinkovitu razinu Q\* s Niskanenovom razinom Qₙ na kojoj birokracija širi uslugu sve dok je ukupna korist tek pokriva. Graf je interaktivan, pa klizači mijenjaju granični trošak i nagib granične koristi, čime se vidi kako se jaz prekomjerne potrošnje između Q\* i Qₙ širi ili sužava.
 
+::: {.content-visible when-format="html"}
 ```{ojs}
 //| echo: false
 viewof nisk_controls = Inputs.form({
@@ -137,6 +138,69 @@ nisk_c = nisk_controls.c
 ```
 
 **Što isprobati.** (1) Pri početnim vrijednostima usporedite učinkovitu razinu Q\* s Niskanenovom razinom Qₙ i uočite da birokracija širi uslugu sve dok ukupna korist tek pokriva ukupni trošak, daleko iznad točke u kojoj se izjednačuju granična korist i granični trošak. (2) Podignite klizač Granični trošak ([MC]{.var}) i pratite kako se obje okomice pomiču ulijevo, no crveno područje prekomjerne potrošnje između Q\* i Qₙ tvrdoglavo opstaje. (3) Smanjite klizač Nagib granične koristi ([b]{.var}) prema 0,4 da krivulja postane položita i vidite kako se obje količine i sam jaz između njih dramatično rastežu, jer plići pad granične koristi birokraciji ostavlja više prostora za prenapuhani proračun.
+:::
+
+::: {.content-visible when-format="pdf"}
+```{r}
+#| label: fig-niskanen-print
+#| echo: false
+#| fig-cap: "Birokracija sklona maksimizaciji proračuna širi uslugu do razine Qₙ na kojoj se ukupna korist izjednačuje s ukupnim troškom, daleko iznad društveno učinkovite razine Q* na kojoj se izjednačuju granična korist i granični trošak."
+#| fig-alt: "Graf prikazuje silaznu krivulju granične koristi (MB) i horizontalnu liniju graničnog troška (MC). Okomite isprekidane linije označavaju Q* (učinkovita količina gdje MB = MC) i Qₙ (Niskansenova razina gdje ukupna korist = ukupni trošak). Crveno osjenčano područje između Q* i Qₙ prikazuje prekomjernu potrošnju birokracije."
+#| fig-width: 7.6
+#| fig-height: 4.6
+# Statički PDF blizanac interaktivnog OJS grafa (zadane vrijednosti klizača b = 1.0, c = 3).
+source("R/setup.R")
+
+a <- 10    # sjecište granične koristi MB (fiksna konstanta)
+b <- 1.0   # nagib granične koristi (zadana vrijednost klizača)
+c <- 3     # granični trošak MC (zadana vrijednost klizača)
+
+# Računice identične OJS-u
+Qstar <- (a - c) / b      # učinkovito: MB = MC          -> (10-3)/1 = 7
+Qnisk <- 2 * Qstar        # Niskanen: ukupna korist = ukupni trošak -> 14
+Qmax  <- max(Qnisk * 1.15, (a / b) * 0.98)  # gornja granica osi x -> max(16.1, 9.8) = 16.1
+MB    <- function(Q) a - b * Q
+
+# Krivulja granične koristi, uzorkovana i odrezana na y >= 0 (kao u OJS-u)
+grid   <- seq(0, Qmax, by = Qmax / 200)
+mbLine <- data.frame(Q = grid, y = MB(grid))
+mbLine <- mbLine[mbLine$y >= 0, ]
+
+ggplot() +
+  # crveno područje prekomjerne potrošnje (DWL) između Q* i Qₙ
+  annotate("rect", xmin = Qstar, xmax = Qnisk, ymin = 0, ymax = a * 1.05,
+           fill = "#C53030", alpha = 0.07) +
+  # krivulja granične koristi (MB)
+  geom_line(data = mbLine, aes(Q, y), color = "#2D5A8E", linewidth = 1.0) +
+  # granični trošak (MC), vodoravna linija na y = c
+  geom_hline(yintercept = c, color = "#1C7C54", linewidth = 0.8) +
+  # okomite isprekidane linije na Q* (do c) i Qₙ (do MB(Qₙ) ili 0)
+  annotate("segment", x = Qstar, xend = Qstar, y = 0, yend = c,
+           color = "#6B6357", linetype = "dashed") +
+  annotate("segment", x = Qnisk, xend = Qnisk, y = 0, yend = max(MB(Qnisk), 0),
+           color = "#6B6357", linetype = "dashed") +
+  # točka ravnoteže u (Q*, c)
+  annotate("point", x = Qstar, y = c, size = 3,
+           color = "#1C1916", fill = "#1C1916", shape = 21, stroke = 1) +
+  # oznake
+  annotate("text", x = Qstar, y = c, label = "Q* (učinkovito)",
+           color = "#1C1916", fontface = "bold", size = 4,
+           hjust = 1, vjust = -1.1) +
+  annotate("text", x = Qnisk, y = 0.55, label = "Qₙ (maksimizacija proračuna)",
+           color = "#C53030", fontface = "bold", size = 4, hjust = 1.02) +
+  annotate("text", x = Qmax * 0.74, y = MB(Qmax * 0.74) + 0.45,
+           label = "granična korist", color = "#2D5A8E", size = 3.6, hjust = 0) +
+  annotate("text", x = Qmax * 0.8, y = c + 0.45,
+           label = "granični trošak", color = "#1C7C54", size = 3.6, hjust = 0) +
+  scale_x_continuous(expand = c(0, 0)) +
+  scale_y_continuous(expand = c(0, 0)) +
+  # coord_cartesian (umjesto scale limits) ne odbacuje oznake izvan domene,
+  # pa se sve oznake crtaju na istim koordinatama kao u OJS Plotu
+  coord_cartesian(xlim = c(0, Qmax), ylim = c(0, a * 1.05), clip = "off") +
+  labs(x = "Količina javne usluge / proračun (Q)",
+       y = "Granična korist i trošak (€)")
+```
+:::
 
 Niskanenov model počiva na tri ključna elementa. Prvo, birokracija često ima **monopol** nad pružanjem određene javne usluge. Drugo, birokracija ima **informacijsku prednost** jer zna koliko program stvarno košta, gdje postoje rezerve učinkovitosti i koliko bi se moglo uštedjeti. Treće, političari i ministarstvo financija često ne mogu savršeno provjeriti informacije koje im birokracija dostavlja. Zbog toga birokracija može tražiti veći proračun od društveno optimalnog.
 

@@ -49,6 +49,7 @@ gdje R predstavlja nagradu za glasanje, P vjerojatnost da će glas biti odlučuj
 
 Graf koji slijedi prikazuje neto vrijednost glasanja R u ovisnosti o veličini biračkog tijela na logaritamskoj vodoravnoj osi, pri čemu krivulja prelazi iz pozitivnog u negativno područje kako tijelo raste. Graf je interaktivan, pa klizači mijenjaju veličinu biračkog tijela, trošak glasanja i korist od preferiranog ishoda.
 
+::: {.content-visible when-format="html"}
 ```{ojs}
 //| echo: false
 viewof vote_controls = Inputs.form({
@@ -111,6 +112,59 @@ vote_C = vote_controls.C
 ```
 
 **Što isprobati.** (1) Pri malenom biračkom tijelu pomaknite klizač Trošak glasanja [C]{.var} prema nuli i neto vrijednost glasanja ostaje pozitivna jer i sitna korist nadvlada zanemariv trošak. (2) Sada povećavajte Veličinu biračkog tijela i pratite kako krivulja strmo pada ispod nule, jer vjerojatnost odlučujućeg glasa P ≈ 1/[N]{.var} kopni brže nego što korist može pratiti. (3) Pokušajte tu negativnu vrijednost vratiti u plus podizanjem klizača Korist od preferiranog ishoda [B]{.var} do kraja i uvjerite se da pri milijunskom biračkom tijelu ni nerealno velika korist ne čini glasanje instrumentalno isplativim.
+:::
+
+::: {.content-visible when-format="pdf"}
+```{r}
+#| label: fig-paradoks-glasanja-print
+#| echo: false
+#| fig-cap: "Neto vrijednost glasanja R = B/N − C brzo pada prema nuli kako raste biračko tijelo, jer vjerojatnost odlučujućeg glasa P ≈ 1/N postaje zanemariva; tek nerealno velika korist B može nadvladati i malen trošak glasanja."
+#| fig-alt: "Graf na logaritamskoj skali osi x (veličina biračkog tijela N) i linearnoj skali osi y (neto vrijednost glasanja R). Plava silazna krivulja prelazi iz pozitivnog u negativno područje kako N raste; istaknuta točka pokazuje trenutnu veličinu biračkog tijela i njezinu neto vrijednost, a isprekidana crta označava nultu granicu isplativosti."
+#| fig-width: 7.6
+#| fig-height: 4.2
+# Statički PDF blizanac interaktivnog OJS grafa (zadane vrijednosti klizača).
+source("R/setup.R")
+
+# Zadane vrijednosti klizača
+vote_N <- 6      # log10 veličine biračkog tijela  ->  Ncur = 10^6 = 1.000.000
+B <- 5000        # korist od preferiranog ishoda (€)
+C <- 10          # trošak glasanja (€)
+
+# Model: P ≈ 1/N, pa je R(N) = B/N − C
+R_fun <- function(N) B / N - C
+
+Ncur <- 10^vote_N        # trenutna veličina biračkog tijela
+Rcur <- R_fun(Ncur)      # 5000/1000000 − 10 = 0.005 − 10 = −9.995 ≈ −10.00 €
+
+# Krivulja R(N) na log-rasponu N = 10^3 ... 10^8 (≈101 točaka, identično OJS-u)
+l <- seq(3, 8, by = 0.05)
+curve_df <- data.frame(N = 10^l, R = R_fun(10^l))
+
+# Tekst i boja presude ovise o predznaku Rcur (zelena ako je R ≥ 0, crvena inače)
+verdict <- if (Rcur >= 0) {
+  sprintf("R = %.2f € → glasanje je instrumentalno isplativo", Rcur)
+} else {
+  sprintf("R = %.2f € → glasanje se instrumentalno ne isplati", Rcur)
+}
+verdict_color <- if (Rcur >= 0) "#1C7C54" else "#C53030"
+
+ggplot(curve_df, aes(N, R)) +
+  geom_hline(yintercept = 0, linetype = "dashed",
+             linewidth = 0.5, color = "#6B6357") +
+  geom_line(linewidth = 1.1, color = "#2D5A8E") +
+  geom_point(data = data.frame(N = Ncur, R = Rcur),
+             size = 4, shape = 21, fill = "#1C1916",
+             color = "white", stroke = 1.1) +
+  annotate("text", x = sqrt(1e3 * 1e8), y = Inf, label = verdict,
+           vjust = 1.8, fontface = "bold", size = 4.6, color = verdict_color) +
+  scale_x_log10(limits = c(1e3, 1e8),
+                breaks = c(1e3, 1e4, 1e5, 1e6, 1e7, 1e8),
+                labels = scales::label_number(scale_cut = scales::cut_short_scale()),
+                expand = c(0, 0)) +
+  labs(x = "Velicina birackog tijela N (log)",
+       y = "Neto vrijednost glasanja R = B/N - C (EUR)")
+```
+:::
 
 ::: {#def-racionalno-nepoznavanje}
 O **racionalnom nepoznavanju** (racionalnoj ignoranciji) govorimo kada se biraču ne isplati prikupljati političke informacije jer je trošak informiranja veći od očekivane koristi, s obzirom na zanemarivu vjerojatnost da će njegov glas utjecati na ishod.

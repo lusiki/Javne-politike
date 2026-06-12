@@ -164,6 +164,7 @@ U praktičnom smislu, svaka kvalitetna javna politika trebala bi proći svojevrs
 
 Graf koji slijedi pretvara tih osam pitanja u jednostavan pokazatelj otpornosti politike, zbrajajući ocjene po svakoj dimenziji u ukupnu presudu od ranjive do robusne politike. Graf je interaktivan, pa klizači mijenjaju ocjenu svake od osam dimenzija, čime se vidi koje dimenzije najjače dižu ili spuštaju ukupnu otpornost.
 
+::: {.content-visible when-format="html"}
 ```{ojs}
 //| echo: false
 viewof score_controls = Inputs.form({
@@ -227,6 +228,49 @@ score_vals = score_controls
 ```
 
 **Što isprobati.** (1) Ostavite sve dimenzije na srednjoj ocjeni dva i ukupna otpornost stane oko granice umjerenog rizika, što pokazuje da prosječna politika nije automatski robusna. (2) Podignite 5. Kapacitet za provedbu i 8. Mjerenje i evaluacija na tri i pratite kako presuda klizne prema robusnoj politici, jer upravo provedba i evaluacija najviše dižu ukupnu ocjenu. (3) Sada spustite 1. Jasno definiran problem na nulu uz sve ostalo visoko i primijetite da otpornost pada brže nego što biste očekivali, jer politika s krivo definiranim problemom nosi rizik koliko god joj ostali elementi bili snažni.
+:::
+
+::: {.content-visible when-format="pdf"}
+```{r}
+#| label: fig-test-neuspjeha-print
+#| echo: false
+#| fig-cap: "Interaktivni test državnog neuspjeha — što je politika slabija na pojedinoj dimenziji, to je veći rizik da zakaže u provedbi, a ukupna ocjena pokazuje gdje dizajn treba ojačati prije provedbe."
+#| fig-alt: "Horizontalni stupčasti dijagram s osam dimenzija kvalitete javne politike na osi y i ocjenom od 0 do 3 na osi x. Svaki stupac obojen je crveno (slabo), narančasto (umjereno) ili zeleno (snažno). Na vrhu grafikona prikazana je ukupna ocjena otpornosti politike u postocima uz tekstualnu procjenu razine rizika."
+#| fig-width: 7.2
+#| fig-height: 4.0
+# Statički PDF blizanac interaktivnog OJS grafa (zadane vrijednosti svih klizača = 2).
+source("R/setup.R")
+
+# Zadane ocjene osam dimenzija (svi klizači na 2; domena [0, 3], korak 1).
+dims <- data.frame(
+  q = c("1. Problem", "2. Uzrok", "3. Akter", "4. Instrument",
+        "5. Kapacitet", "6. Raspodjela", "7. Fiskalni rizik", "8. Evaluacija"),
+  v = c(2, 2, 2, 2, 2, 2, 2, 2)  # q1..q8, sve na zadanoj vrijednosti 2
+)
+# Os y zadržava redoslijed 1..8 odozgo prema dolje (kao u OJS-u).
+dims$q <- factor(dims$q, levels = rev(dims$q))
+
+# Ukupna otpornost: total = sum(v), pct = round(total/24*100), presuda po pragovima.
+total <- sum(dims$v)                 # 16 pri zadanim vrijednostima
+pct   <- round(total / 24 * 100)     # round(16/24*100) = 67
+verdict <- if (pct >= 80) "robusna politika" else if (pct >= 55) "umjeren rizik neuspjeha" else "visok rizik neuspjeha"
+
+# Boja stupca po ocjeni: <=1 crveno, ==2 narančasto, >=3 zeleno (literalni hex iz OJS marks).
+bar_col  <- function(v) ifelse(v <= 1, "#C53030", ifelse(v == 2, "#C8942D", "#1C7C54"))
+# Boja naslovne ocjene po istom pragu kao u OJS-u.
+head_col <- if (pct >= 80) "#1C7C54" else if (pct >= 55) "#C8942D" else "#C53030"
+
+ggplot(dims, aes(x = v, y = q)) +
+  geom_col(fill = bar_col(dims$v), width = 0.7) +
+  geom_vline(xintercept = 0, color = "#3A332D", linewidth = 0.6) +
+  annotate("text", x = 1.5, y = 8.7,
+           label = sprintf("Ukupna otpornost: %d %% — %s", pct, verdict),
+           hjust = 0.5, vjust = 0, fontface = "bold", size = 5, color = head_col) +
+  scale_x_continuous(limits = c(0, 3), breaks = 0:3, expand = c(0, 0)) +
+  coord_cartesian(ylim = c(0.5, 9.2), clip = "off") +
+  labs(x = "Ocjena dimenzije (0 = slabo, 3 = snažno)", y = NULL)
+```
+:::
 
 Takav pristup mijenja način razmišljanja o javnim politikama. Umjesto da se krene od instrumenta („treba uvesti subvenciju", „treba donijeti zakon", „treba osnovati agenciju"), analiza mora krenuti od problema, poticaja i institucionalnog konteksta. Loše javne politike često ne propadaju zato što nisu imale dobar cilj, nego zato što su podcijenile državne neuspjehe.
 

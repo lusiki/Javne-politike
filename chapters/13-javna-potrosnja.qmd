@@ -36,6 +36,7 @@ Empirijski je Wagnerov zakon potvrđen u dugim vremenskim serijama razvijenih ze
 
 Graf koji slijedi prikazuje predviđeni udio javne potrošnje u BDP-u u ovisnosti o dohotku po stanovniku, pri čemu logaritamski trend dočarava i rast i njegovo postupno zasićenje. Graf je interaktivan, pa klizač pomiče dohodak hipotetske zemlje uz krivulju, čime se vidi kako se udio javne potrošnje mijenja s razinom razvoja.
 
+::: {.content-visible when-format="html"}
 ```{ojs}
 //| echo: false
 viewof wag_controls = Inputs.form({
@@ -105,6 +106,78 @@ wag_g = wag_controls.g
 ```
 
 **Što isprobati.** (1) Pri niskom dohotku oko 10 tisuća dolara hipotetska zemlja sjeda nisko na trend i predviđeni udio javne potrošnje ostaje skroman. (2) Povećajte klizač dohotka hipotetske zemlje prema 50 tisuća dolara i crna se točka penje uz krivulju, što je vizualni izraz Wagnerova zakona. (3) Gurnite klizač do gornjeg ruba prema 80 i primijetite da prirast udjela postaje sve manji, jer logaritamski trend pokazuje zasićenje koje empirijski radovi vežu uz više razine razvoja.
+:::
+
+::: {.content-visible when-format="pdf"}
+```{r}
+#| label: fig-wagner-print
+#| echo: false
+#| fig-cap: "Ilustrativni prikaz Wagnerova zakona — bogatije zemlje u prosjeku troše veći udio BDP-a kroz javni sektor, uz znatno rasipanje oko trenda. Podaci su približni i služe za prikaz odnosa, a ne kao službena statistika."
+#| fig-alt: "Raspršeni dijagram s logaritamskom osi x (BDP po stanovniku) i osi y (javna potrošnja kao % BDP-a). Točke predstavljaju pojedine zemlje obojene prema razini dohotka. Isprekidana trendna linija raste s dohotkom, ilustrirajući Wagnerov zakon. Hipotetska zemlja označena je većom crnom točkom s predviđenim udjelom."
+#| fig-width: 7.8
+#| fig-height: 4.7
+# Statički PDF blizanac interaktivnog OJS grafa (zadana vrijednost klizača wag_g = 30).
+source("R/setup.R")
+
+wag_g <- 30  # BDP po stanovniku hipotetske zemlje, tis. $ (zadana vrijednost klizača)
+
+# Ilustrativni podaci (približne vrijednosti, za prikaz odnosa, ne službena statistika)
+data <- data.frame(
+  z = c("Indija","Indonezija","Meksiko","Kina","Poljska","Koreja",
+        "SAD","UK","Njemačka","Francuska","Švedska"),
+  gdp = c(8, 13, 21, 23, 41, 48, 76, 52, 58, 54, 62),
+  sp  = c(29, 18, 27, 33, 43, 34, 38, 45, 49, 57, 49),
+  grp = c("niži dohodak","niži dohodak","srednji dohodak","srednji dohodak",
+          "srednji dohodak","visoki dohodak","visoki dohodak","visoki dohodak",
+          "visoki dohodak","visoki dohodak","visoki dohodak"),
+  stringsAsFactors = FALSE
+)
+data$grp <- factor(data$grp,
+                   levels = c("niži dohodak","srednji dohodak","visoki dohodak"))
+
+# Trend: sp ≈ α + β·ln(gdp) — OLS na log(gdp), identično OJS-u
+fit   <- lm(sp ~ log(gdp), data = data)
+alpha <- unname(coef(fit)[1])
+beta  <- unname(coef(fit)[2])
+trendFn <- function(g) alpha + beta * log(g)
+
+# Trendna krivulja (gdp = 6..80) i hipotetska točka pri zadanom klizaču
+tline <- data.frame(gdp = 6:80)
+tline$sp <- trendFn(tline$gdp)
+hyp <- data.frame(gdp = wag_g, sp = trendFn(wag_g))
+hyp$lab <- sprintf("predviđeno ≈ %.0f %%", hyp$sp)  # = "predviđeno ≈ 37 %" pri wag_g = 30
+
+# Boje preuzete iz OJS color scale (red / gold / blue po razini dohotka)
+grp_cols <- c("niži dohodak"    = "#C53030",
+              "srednji dohodak" = "#C8942D",
+              "visoki dohodak"  = "#2D5A8E")
+
+ggplot() +
+  # 1. trendna linija (isprekidana, topla siva)
+  geom_line(data = tline, aes(gdp, sp),
+            linetype = "dashed", linewidth = 0.55, color = "#6B6357") +
+  # 2. točke zemalja, obojene po razini dohotka
+  geom_point(data = data, aes(gdp, sp, fill = grp),
+             shape = 21, size = 3.5, color = "white", stroke = 0.7) +
+  # 3. nazivi zemalja iznad točaka
+  geom_text(data = data, aes(gdp, sp, label = z),
+            vjust = 0, nudge_y = 1.6, size = 3.1, color = "#3A332D") +
+  # 4. hipotetska točka (veća, crna)
+  geom_point(data = hyp, aes(gdp, sp),
+             shape = 21, size = 5.5, fill = "#1C1916", color = "white", stroke = 0.9) +
+  # 5. anotacija s predviđenim udjelom ispod hipotetske točke
+  geom_text(data = hyp, aes(gdp, sp, label = lab),
+            vjust = 1, nudge_y = -2.2, fontface = "bold",
+            size = 4, color = "#1C1916") +
+  scale_fill_manual(values = grp_cols, name = NULL) +
+  scale_x_log10(limits = c(6, 92),
+                breaks = c(6, 10, 20, 40, 60, 90)) +
+  scale_y_continuous(limits = c(10, 65)) +
+  labs(x = "BDP po stanovniku (tis. $, log)",
+       y = "Javna potrošnja (% BDP-a)") +
+  theme_pubfin()
+```
+:::
 
 Wagnerov zakon tako opisuje postupan, strukturni pritisak koji s razvojem polako podiže udio države, no on sam ne objašnjava nagle skokove kojima je javna potrošnja u 20. stoljeću višestruko nadišla svoje skromne početne razine. Taj se preokret ne odvija glatko uz krivulju razvoja, nego u naletima vezanima uz velike gospodarske i političke šokove, kojima se okrećemo u nastavku.
 

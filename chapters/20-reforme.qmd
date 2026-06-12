@@ -64,6 +64,7 @@ Potrebno je uspostaviti temeljne funkcije poput pouzdanog izvršenja proračuna 
 
 Graf koji slijedi prikazuje vjerojatnost uspjeha reforme kao krivulju u obliku zvona koja ovisi o tome koliko brzina i ambicija reforme odgovaraju institucionalnom kapacitetu države. Graf je interaktivan, pa klizači mijenjaju institucionalni kapacitet te brzinu i ambiciju reforme, čime se vidi zašto i prespora i prebrza reforma podbacuju u odnosu na onu usklađenu s kapacitetom.
 
+::: {.content-visible when-format="html"}
 ```{ojs}
 //| echo: false
 viewof ref_controls = Inputs.form({
@@ -125,6 +126,68 @@ ref_s = ref_controls.s
 ```
 
 **Što isprobati.** (1) Pri Institucionalni kapacitet oko 0,4 pomičite Brzina i ambicija reforme tako da se poklopi s kapacitetom i vjerojatnost uspjeha skoči na vrh zvona. (2) Sada gurnite brzinu prema gornjem rubu uz nepromijenjen kapacitet i točka klizne niz desnu stranu krivulje, što je prebrza šok-reforma koja nadilazi kapacitet i pada. (3) Podignite Institucionalni kapacitet prema 0,8 i primijetite da se vrh ne samo pomiče udesno nego i raste, jer sposobnija država podnosi i bržu promjenu i iz nje izvlači veću vjerojatnost uspjeha.
+:::
+
+::: {.content-visible when-format="pdf"}
+```{r}
+#| label: fig-reforma-kapacitet-print
+#| echo: false
+#| fig-cap: "Stilizirani prikaz pouke o sekvenciranju — vjerojatnost uspjeha najveća je kada brzina reforme odgovara institucionalnom kapacitetu; pri niskom kapacitetu uspijeva postupnost, a prebrza šok-reforma pada, dok visok kapacitet podnosi i brže promjene."
+#| fig-alt: "Linijski grafikon u obliku zvona prikazuje vjerojatnost uspjeha reforme (os y, u postocima) u ovisnosti o brzini i ambiciji reforme (os x, u postocima). Vrh krivulje poklapa se s institucionalnim kapacitetom označenim zelenom isprekidanom linijom. Crna točka s isprekidanim vertikalnim i horizontalnim linijama označava odabranu brzinu reforme i njezinu predviđenu vjerojatnost uspjeha."
+#| fig-width: 7.6
+#| fig-height: 4.3
+# Statički PDF blizanac interaktivnog OJS grafa (zadane vrijednosti klizača c = 0.4, s = 0.7).
+source("R/setup.R")
+
+c <- 0.4  # institucionalni kapacitet (zadana vrijednost klizača)
+s_sel <- 0.7  # brzina i ambicija reforme (zadana vrijednost klizača)
+
+# Vjerojatnost uspjeha: zvonolika (Gaussova) krivulja centrirana u s = c,
+# visine vrha (0.3 + 0.7 * c), varijance 0.08 (nazivnik 2 * 0.08 = 0.16). Identično OJS-u.
+success <- function(s) (0.3 + 0.7 * c) * exp(-((s - c)^2) / (2 * 0.08))
+
+# Krivulja: s od 0 do 1.00 u koraku 0.01
+s_grid <- seq(0, 1, by = 0.01)
+curve_df <- data.frame(s = s_grid, u = success(s_grid))
+
+# Odabrana točka (marker) pri zadanoj brzini
+cur_u <- success(s_sel)  # = 0.58 * exp(-0.5625) = 0.33047 -> 33 %
+
+# Prikazani brojevi (toFixed(0), zaokruženo na cijeli postotak), identično OJS-u
+lbl_brzina <- sprintf("brzina = %d %%", round(s_sel * 100))   # "brzina = 70 %"
+lbl_uspjeh <- sprintf("uspjeh ≈ %d %%", round(cur_u * 100))  # "uspjeh ≈ 33 %"
+
+ggplot(curve_df, aes(s, u)) +
+  # vertikalna linija kapaciteta na x = c (zelena, isprekidana)
+  geom_vline(xintercept = c, linetype = "dashed", linewidth = 0.5, color = "#1C7C54") +
+  annotate("text", x = c, y = 0.97, label = "kapacitet",
+           hjust = 0, vjust = 1, size = 3.4, color = "#1C7C54") +
+  # vertikalni i horizontalni "dropline" do markera (crni, isprekidani)
+  annotate("segment", x = s_sel, xend = s_sel, y = 0, yend = cur_u,
+           linetype = "dashed", linewidth = 0.4, color = "#1C1916") +
+  annotate("segment", x = 0, xend = s_sel, y = cur_u, yend = cur_u,
+           linetype = "dashed", linewidth = 0.4, color = "#1C1916") +
+  # krivulja uspjeha (plava)
+  geom_line(linewidth = 1.1, color = "#2D5A8E") +
+  # oznaka brzine ispod markera
+  annotate("text", x = s_sel, y = cur_u, label = lbl_brzina,
+           vjust = 2.2, size = 3.4, color = "#1C1916") +
+  # marker (crna točka s bijelim rubom)
+  geom_point(data = data.frame(s = s_sel, u = cur_u),
+             size = 3.5, color = "#1C1916", fill = "#1C1916",
+             shape = 21, stroke = 1.1) +
+  geom_point(data = data.frame(s = s_sel, u = cur_u),
+             size = 3.5, shape = 21, color = "white", fill = NA, stroke = 1.1) +
+  # oznaka uspjeha iznad markera
+  annotate("text", x = s_sel, y = cur_u, label = lbl_uspjeh,
+           vjust = -1.4, fontface = "bold", size = 4.2, color = "#1C1916") +
+  scale_x_continuous(labels = scales::percent, limits = c(0, 1), expand = c(0, 0)) +
+  scale_y_continuous(labels = scales::percent, limits = c(0, 1), expand = c(0, 0)) +
+  labs(x = "Brzina i ambicija reforme",
+       y = "Vjerojatnost uspjeha reforme") +
+  theme_pubfin()
+```
+:::
 
 Rodrikov pregled tri desetljeća međunarodnih reformskih iskustava sažima isti obrazac iz drugog kuta [@rodrik2011]. Zemlje koje su brzo i istodobno provodile cijelu listu „najbolje prakse" (liberalizacija trgovine, deregulacija tržišta rada, privatizacija velikih razmjera, otvaranje kapitalnog računa) sustavno su pokazivale slabije rezultate od zemalja koje su isti skup reformi provodile selektivno i postupno, prilagođavajući redoslijed lokalnim ograničenjima. Ključ nije bio u sadržaju pojedine mjere, nego u tome je li lokalna institucionalna i regulatorna infrastruktura mogla apsorbirati promjenu u tom trenutku.
 

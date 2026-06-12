@@ -116,6 +116,7 @@ Teorija sposobnosti plaćanja (ability-to-pay) polazi, za razliku od teorije kor
 
 Graf koji slijedi prikazuje tu logiku na konkavnoj krivulji korisnosti. Sive točke označavaju početne dohotke siromašnijeg i bogatijeg pojedinca, zelena točka siromašnijeg nakon primljenog transfera, a crvena bogatijeg nakon plaćenog poreza. Zelena vertikalna crta mjeri dobitak korisnosti siromašnijeg, crvena gubitak korisnosti bogatijeg, a u vrhu grafa ispisuje se neto promjena ukupne korisnosti društva. Graf je interaktivan, pa klizači mijenjaju dohotke obaju pojedinaca, iznos transfera i konkavnost krivulje korisnosti.
 
+::: {.content-visible when-format="html"}
 ```{ojs}
 //| echo: false
 viewof controls = Inputs.form({
@@ -232,6 +233,111 @@ rho = controls.rho
 ```
 
 **Što isprobati.** (1) Pri umjerenoj konkavnosti ([ρ]{.var} ≈ 0,5) već mali transfer obično daje pozitivnu neto promjenu, što je klasični argument za redistribuciju. (2) Smanjite ρ prema 0,2 tako da korisnost postane gotovo linearna i vidjet ćete da su zelena i crvena traka približno jednake, a redistribucija gubi normativno opravdanje. (3) Povećajte ρ prema 1,8 tako da korisnost postane snažno konkavna i mali transfer drastično povećava ukupno blagostanje, što opravdava izrazito progresivan sustav. Koliko progresivan porezni sustav „treba" biti ne ovisi samo o etičkim sudovima, nego i o pretpostavci o obliku funkcije korisnosti, što je empirijsko pitanje koje teorija optimalnog oporezivanja [@mirrlees1971; @atkinson1980] eksplicitno modelira.
+:::
+
+::: {.content-visible when-format="pdf"}
+```{r}
+#| label: fig-opadajuca-korisnost-print
+#| echo: false
+#| fig-cap: "Opadajuća granična korisnost dohotka i učinak redistribucijskog transfera: pomak siromašnijeg pojedinca desno povećava korisnost više nego što ga smanjuje bogatijemu."
+#| fig-alt: "Graf prikazuje konkavnu krivulju korisnosti U(Y) u ovisnosti o dohotku Y. Sive točke označavaju početne dohotke dvaju pojedinaca. Zelena točka prikazuje siromašnijeg nakon transfera, crvena bogatijeg nakon plaćenog poreza, a vertikalne crte mjere promjenu korisnosti za svakoga od njih."
+#| fig-width: 7.6
+#| fig-height: 5.0
+# Statički PDF blizanac interaktivnog OJS grafa (zadane vrijednosti klizača).
+source("R/setup.R")
+
+# Zadane vrijednosti klizača
+y_poor   <- 20   # dohodak siromašnijeg (Yp)
+y_rich   <- 80   # dohodak bogatijeg (Yr)
+transfer <- 10   # transfer (T)
+rho      <- 0.5  # konkavnost (ρ)
+
+Ymax <- 100
+
+# Funkcija korisnosti: CRRA (izoelastična); za rho = 1 logaritamska
+U <- function(y) {
+  if (rho == 1) 10 * log(y) else 10 * (y^(1 - rho) - 1) / (1 - rho)
+}
+
+# Klamping kao u OJS-u
+yp <- min(y_poor, y_rich - 1)
+yr <- max(y_rich, y_poor + 1)
+T_eff <- min(transfer, yr - yp - 1)
+
+ypNew <- yp + T_eff
+yrNew <- yr - T_eff
+
+Up <- U(yp); Ur <- U(yr)
+UpNew <- U(ypNew); UrNew <- U(yrNew)
+
+# Prikazane promjene korisnosti
+dUp   <- UpNew - Up    # dobitak siromašnijeg (+20.10 pri zadanim vrijednostima)
+dUr   <- UrNew - Ur    # gubitak bogatijeg (-11.55)
+dUtot <- dUp + dUr     # neto promjena ukupne korisnosti (+8.55)
+
+Umax <- U(Ymax)
+
+# Krivulja korisnosti za Y = 1..100
+curve <- data.frame(Y = 1:Ymax)
+curve$U <- vapply(curve$Y, U, numeric(1))
+
+# Točke (početne i nove)
+orig_pts <- data.frame(Y = c(yp, yr), U = c(Up, Ur))
+poor_new <- data.frame(Y = ypNew, U = UpNew)
+rich_new <- data.frame(Y = yrNew, U = UrNew)
+
+# Tekst formule (rho != 1) i neto promjene
+formula_lab <- if (rho == 1) "U(Y) = 10·ln(Y)" else sprintf("U(Y) ∝ Y^(1−%.1f)", rho)
+total_lab <- sprintf("Δ Ukupna korisnost: %s%.2f",
+                     if (dUtot >= 0) "+" else "", dUtot)
+
+ggplot(curve, aes(Y, U)) +
+  # Bazna linija na y = 0
+  geom_hline(yintercept = 0, color = "#C9C3B8", linewidth = 0.5) +
+  # Isprekidane okomite crte do početnih točaka
+  annotate("segment", x = yp, xend = yp, y = 0, yend = Up,
+           color = "#C9C3B8", linetype = "dashed", linewidth = 0.4) +
+  annotate("segment", x = yr, xend = yr, y = 0, yend = Ur,
+           color = "#C9C3B8", linetype = "dashed", linewidth = 0.4) +
+  # Krivulja korisnosti
+  geom_line(linewidth = 1.0, color = "#2D5A8E") +
+  # Strelice pomaka transfera duž osi x (na visini Umax * 0.04)
+  annotate("segment", x = yp, xend = ypNew, y = Umax * 0.04, yend = Umax * 0.04,
+           color = "#4A6B5C", linewidth = 0.9,
+           arrow = grid::arrow(length = grid::unit(0.18, "cm"), type = "closed")) +
+  annotate("segment", x = yr, xend = yrNew, y = Umax * 0.04, yend = Umax * 0.04,
+           color = "#6B1F26", linewidth = 0.9,
+           arrow = grid::arrow(length = grid::unit(0.18, "cm"), type = "closed")) +
+  # Okomite trake promjene korisnosti
+  annotate("segment", x = ypNew, xend = ypNew, y = Up, yend = UpNew,
+           color = "#4A6B5C", linewidth = 1.1) +
+  annotate("segment", x = yrNew, xend = yrNew, y = UrNew, yend = Ur,
+           color = "#6B1F26", linewidth = 1.1) +
+  # Početne (sive) točke
+  geom_point(data = orig_pts, aes(Y, U), size = 3.0,
+             color = "white", fill = "#6B6357", shape = 21, stroke = 0.7) +
+  # Nova točka siromašnijeg (zelena) i bogatijeg (crvena)
+  geom_point(data = poor_new, aes(Y, U), size = 3.6,
+             color = "white", fill = "#4A6B5C", shape = 21, stroke = 0.9) +
+  geom_point(data = rich_new, aes(Y, U), size = 3.6,
+             color = "white", fill = "#6B1F26", shape = 21, stroke = 0.9) +
+  # Oznake promjena korisnosti
+  annotate("text", x = ypNew, y = UpNew, label = sprintf("+%.2f", dUp),
+           hjust = 0, vjust = -0.6, fontface = "bold", size = 4.0, color = "#4A6B5C") +
+  annotate("text", x = yrNew, y = UrNew, label = sprintf("%.2f", dUr),
+           hjust = 0, vjust = 1.5, fontface = "bold", size = 4.0, color = "#6B1F26") +
+  # Neto promjena ukupne korisnosti
+  annotate("text", x = 2, y = Umax * 1.04, label = total_lab,
+           hjust = 0, fontface = "bold", size = 4.3,
+           color = if (dUtot >= 0) "#4A6B5C" else "#6B1F26") +
+  # Oznaka formule korisnosti
+  annotate("text", x = Ymax * 0.55, y = Umax * 0.20, label = formula_lab,
+           hjust = 0, fontface = "bold", size = 3.8, color = "#2D5A8E") +
+  scale_x_continuous(limits = c(0, Ymax), expand = c(0, 0)) +
+  scale_y_continuous(limits = c(min(0, U(1)), Umax * 1.08)) +
+  labs(x = "Dohodak (Y)", y = "Ukupna korisnost (U)")
+```
+:::
 
 To znači da siromašniji pojedinci imaju višu graničnu korisnost dohotka, dok bogatiji imaju nižu. Ako društvo želi maksimizirati ukupno blagostanje, tada redistribucija dohotka (npr. kroz poreze i transfere) može povećati ukupnu korisnost jer gubitak korisnosti kod bogatijih manji je od dobitka korisnosti kod siromašnijih [@stiglitz2015; @gruber2019]. Ta teorija ima snažnu normativnu osnovu, ali otvara pitanja o tome koliko progresivan sustav treba biti i kako izbjeći negativne učinke na ekonomske poticaje.
 
@@ -241,6 +347,7 @@ To znači da siromašniji pojedinci imaju višu graničnu korisnost dohotka, dok
 
 Graf koji slijedi prikazuje to na tržištu s plavom krivuljom potražnje i zelenom krivuljom ponude koja se nakon poreza pomiče u isprekidani položaj. Crveni okomiti odsječak je ukupni iznos poreza t, plavi pravokutnik udio tereta koji snose kupci kroz razliku cijena Pc i P\*, a žuti pravokutnik udio koji snose prodavači kroz razliku P\* i Pp. U vrhu grafa ispisani su postotni udjeli poreznog tereta. Graf je interaktivan, pa klizači mijenjaju elastičnost potražnje i ponude te iznos poreza.
 
+::: {.content-visible when-format="html"}
 ```{ojs}
 //| echo: false
 viewof inc_controls = Inputs.form({
@@ -377,11 +484,116 @@ t_inc = inc_controls.t_inc
 ```
 
 **Što isprobati.** (1) Postavite [|εD|]{.var} na nisku vrijednost oko 0,3, a [εS]{.var} na visoku oko 2,0 tako da potražnja bude strma a ponuda položena i vidjet ćete da kupci snose gotovo cijeli porez, što je klasičan slučaj duhana ili goriva. (2) Obrnite odnos tako da |εD| bude visoka a εS niska i većinu tereta sada snose prodavači, primjerice na kratkoročnom tržištu nekretnina gdje je ponuda neelastična. (3) Postavite obje elastičnosti na slične vrijednosti i teret se otprilike polovi. Pravilo koje iz toga slijedi jest da strana tržišta koja je manje elastična ne može pobjeći porezu i zato snosi veći dio njegova tereta neovisno o tome koga zakon formalno proglašava obveznikom.
+:::
+
+::: {.content-visible when-format="pdf"}
+```{r}
+#| label: fig-porezna-incidencija-print
+#| echo: false
+#| fig-cap: "Porezna incidencija: raspodijela poreznog tereta između kupaca i prodavača ovisi o relativnoj elastičnosti potražnje i ponude."
+#| fig-alt: "Graf prikazuje krivulju potražnje, originalnu krivulju ponude i krivulju ponude pomaknutu gore za iznos poreza. Plavi pravokutnik prikazuje udio poreza koji snose kupci (razlika između cijena Pc i P*), a žuti pravokutnik udio koji snose prodavači (razlika P* i Pp). Strana s manjom elastičnošću snosi veći udio tereta."
+#| fig-width: 7.6
+#| fig-height: 5.0
+# Statički PDF blizanac interaktivnog OJS grafa (zadane vrijednosti klizača).
+source("R/setup.R")
+
+# --- Zadane vrijednosti klizača ---
+eps_d <- 1.0   # elastičnost potražnje |εD| (zadano)
+eps_s <- 1.0   # elastičnost ponude εS (zadano)
+t     <- 15    # iznos poreza t (zadano)
+
+# --- Geometrijske konstante (predporezna ravnoteža u (Q*, P*) = (50, 50)) ---
+Qstar <- 50; Pstar <- 50; Qmax <- 110; Pmax <- 110
+
+b       <- 1 / eps_d            # nagib potražnje
+d_slope <- 1 / eps_s           # nagib ponude
+a       <- Pstar + b * Qstar   # odsječak potražnje = 100
+c_int   <- Pstar - d_slope * Qstar  # odsječak ponude = 0
+
+Qt <- max(0, (a - c_int - t) / (b + d_slope))  # = 42.5
+Pc <- a - b * Qt                               # cijena za kupce = 57.5
+Pp <- Pc - t                                   # cijena za prodavače = 42.5
+
+# Udjeli poreznog tereta (identično OJS-u)
+buyerShare  <- (Pc - Pstar) / t   # (57.5-50)/15 = 0.5 -> 50 %
+sellerShare <- (Pstar - Pp) / t   # (50-42.5)/15 = 0.5 -> 50 %
+
+# Krivulje, klipane na 0 <= P <= Pmax
+Qs <- 0:Qmax
+demand    <- subset(data.frame(Q = Qs, P = a - b * Qs),            P >= 0 & P <= Pmax)
+supply    <- subset(data.frame(Q = Qs, P = c_int + d_slope * Qs),  P >= 0 & P <= Pmax)
+supplyTax <- subset(data.frame(Q = Qs, P = c_int + t + d_slope * Qs), P >= 0 & P <= Pmax)
+
+# Pravokutnici poreznog tereta
+buyerRect  <- data.frame(xmin = 0, xmax = Qt, ymin = Pstar, ymax = Pc)  # teret kupaca
+sellerRect <- data.frame(xmin = 0, xmax = Qt, ymin = Pp,    ymax = Pstar)  # teret prodavača
+
+xlab_pos <- Qmax * 0.85  # = 93.5
+
+ggplot() +
+  # Osnovna linija y = 0
+  geom_hline(yintercept = 0, color = "#C9C3B8") +
+  # Pravokutnici tereta
+  geom_rect(data = buyerRect,
+            aes(xmin = xmin, xmax = xmax, ymin = ymin, ymax = ymax),
+            fill = "#CBD8D2", alpha = 0.55, color = "#2D5A8E", linewidth = 0.4) +
+  geom_rect(data = sellerRect,
+            aes(xmin = xmin, xmax = xmax, ymin = ymin, ymax = ymax),
+            fill = "#E8D6B8", alpha = 0.55, color = "#C8985E", linewidth = 0.4) +
+  # Krivulje
+  geom_line(data = demand,    aes(Q, P), color = "#2D5A8E", linewidth = 1.1) +
+  geom_line(data = supply,    aes(Q, P), color = "#4A6B5C", linewidth = 0.9) +
+  geom_line(data = supplyTax, aes(Q, P), color = "#4A6B5C", linewidth = 0.9,
+            linetype = "dashed") +
+  # Cjenovne vodilice
+  geom_hline(yintercept = Pc,    color = "#6B6357", linetype = "dotted") +
+  geom_hline(yintercept = Pp,    color = "#6B6357", linetype = "dotted") +
+  geom_hline(yintercept = Pstar, color = "#3A332D", linetype = "dashed", linewidth = 0.4) +
+  # Porezni klin
+  annotate("segment", x = Qt, xend = Qt, y = Pp, yend = Pc,
+           color = "#6B1F26", linewidth = 1.2) +
+  # Ravnotežna točka i točke nakon poreza
+  annotate("point", x = Qstar, y = Pstar, size = 3, color = "#3A332D",
+           fill = "#3A332D", stroke = 1) +
+  annotate("point", x = c(Qt, Qt), y = c(Pc, Pp), size = 2.4, color = "#6B1F26",
+           fill = "#6B1F26", stroke = 0.8) +
+  # Oznake krivulja
+  annotate("text", x = xlab_pos, y = a - b * xlab_pos,
+           label = sprintf("D (|εD|=%.2f)", eps_d),
+           color = "#2D5A8E", fontface = "bold", size = 3.8, vjust = -0.6, hjust = 0.5) +
+  annotate("text", x = xlab_pos, y = c_int + d_slope * xlab_pos,
+           label = sprintf("S (εS=%.2f)", eps_s),
+           color = "#4A6B5C", fontface = "bold", size = 3.8, vjust = -0.6, hjust = 0.5) +
+  annotate("text", x = xlab_pos, y = c_int + t + d_slope * xlab_pos,
+           label = "S + t",
+           color = "#4A6B5C", fontface = "bold", size = 3.8, vjust = -0.6, hjust = 0.5) +
+  # Cjenovne oznake
+  annotate("text", x = 2, y = Pc, label = sprintf("Pc = %.1f", Pc),
+           hjust = 0, vjust = -0.6, size = 3.8, color = "#1C1916") +
+  annotate("text", x = 2, y = Pp, label = sprintf("Pp = %.1f", Pp),
+           hjust = 0, vjust = 1.4, size = 3.8, color = "#1C1916") +
+  annotate("text", x = 2, y = Pstar, label = sprintf("P* = %.1f", Pstar),
+           hjust = 0, vjust = -0.5, size = 3.4, color = "#3A332D") +
+  # Postotni udjeli u vrhu grafa
+  annotate("text", x = 2, y = Pmax * 0.97,
+           label = sprintf("Teret kupaca: %.0f %%", buyerShare * 100),
+           hjust = 0, fontface = "bold", size = 4.4, color = "#1E3F63") +
+  annotate("text", x = 2, y = Pmax * 0.91,
+           label = sprintf("Teret prodavača: %.0f %%", sellerShare * 100),
+           hjust = 0, fontface = "bold", size = 4.4, color = "#9A6F38") +
+  scale_x_continuous(limits = c(0, Qmax), expand = c(0, 0)) +
+  scale_y_continuous(limits = c(0, Pmax), expand = c(0, 0)) +
+  labs(x = "Količina (Q)", y = "Cijena (P)") +
+  theme_pubfin() +
+  theme(panel.grid.major.x = element_blank())
+```
+:::
 
 ### Mrtvi teret oporezivanja
 
 Incidencija govori tko snosi teret, no porez stvara i čisti društveni gubitak jer sprječava transakcije koje bi inače obostrano koristile kupcima i prodavačima. Taj gubitak prikazuje graf koji slijedi, na kojem je crveni trokut mrtvi teret poreza, crveni okomiti odsječak visina poreza t, a tamni horizontalni odsječak pad količine ΔQ. U vrhu grafa ispisuje se rastav formule DWL = ½ · t · ΔQ te usporedba s mrtvim teretom pri malom referentnom porezu t jednakom 4, čime se vidi kako gubitak raste brže od same stope. Graf je interaktivan, pa klizači mijenjaju elastičnost potražnje i iznos poreza.
 
+::: {.content-visible when-format="html"}
 ```{ojs}
 //| echo: false
 viewof dwl2_controls = Inputs.form({
@@ -509,6 +721,121 @@ t_dwl = dwl2_controls.t_dwl
 ```
 
 **Što isprobati.** (1) Udvostručite [t]{.var} s 4 na 8 i omjer pokazuje da mrtvi teret raste približno četiri puta, a ne dva puta. To je takozvano kvadratno skaliranje mrtvog tereta DWL ∝ t² koje proizlazi iz toga što s povećanjem poreza rastu i t i ΔQ. (2) Pri t jednakom 12 udvostručite [|ε|]{.var} s 0,5 na 1,0 i ΔQ se približno udvostručuje, a s njim i mrtvi teret. (3) Postavite |ε| na vrlo nisku vrijednost oko 0,25 i povucite t do 30, pa trokut ostaje malen čak i pri visokom porezu, zbog čega porezni sustavi rado posežu za visokim trošarinama na neelastična dobra. Praktična je poruka da niski porezi po širokoj osnovici stvaraju manji ukupni gubitak blagostanja od visokih poreza po uskoj osnovici, što je temeljni princip dizajna učinkovitog poreznog sustava.
+:::
+
+::: {.content-visible when-format="pdf"}
+```{r}
+#| label: fig-mrtvi-teret-skaliranje-print
+#| echo: false
+#| fig-cap: "Kvadratno skaliranje mrtvog tereta poreza: udvostručenje porezne stope t uzrokuje četverostruko povećanje gubitka blagostanja DWL ∝ t²."
+#| fig-alt: "Graf prikazuje krivulju potražnje, ponudu i ponudu nakon poreza. Crveni trokut DWL omeđen je tržišnom ravnotežom, ravnotežom nakon poreza i iznosom poreznog klina. Širina i visina trokuta rastu s povećanjem poreza, a natpis prikazuje numerički iznos DWL i usporedbu s referentnim porezom."
+#| fig-width: 7.6
+#| fig-height: 5.0
+# Statički PDF blizanac interaktivnog OJS grafa (zadane vrijednosti eps_dwl = 1.0, t = 12).
+source("R/setup.R")
+
+# Parametri (zadane vrijednosti klizača)
+eps_dwl <- 1.0   # elastičnost potražnje |ε| (zadana vrijednost klizača)
+t_dwl   <- 12    # iznos poreza t (zadana vrijednost klizača)
+
+# Kalibracija (identično OJS-u): ravnoteža fiksirana u (50, 50), nagib ponude d = 0.5
+Qstar <- 50; Pstar <- 50; Qmax <- 110; Pmax <- 110
+b       <- 1 / eps_dwl              # nagib potražnje
+a       <- Pstar + b * Qstar        # odsječak potražnje
+d_slope <- 0.5                      # nagib ponude
+c_int   <- Pstar - d_slope * Qstar  # odsječak ponude
+t       <- t_dwl
+
+# Ravnoteža nakon poreza
+Qt <- max(0, (a - c_int - t) / (b + d_slope))
+Pc <- a - b * Qt        # cijena koju plaćaju kupci
+Pp <- Pc - t            # cijena koju zadržavaju prodavači
+dQ  <- Qstar - Qt       # pad količine (ΔQ)
+dwl <- 0.5 * t * dQ     # mrtvi teret DWL = ½ · t · ΔQ
+
+# Referentni mrtvi teret pri malom porezu (t = 4) za prikaz t-kvadrat skaliranja
+tRef   <- 4
+QtRef  <- max(0, (a - c_int - tRef) / (b + d_slope))
+dwlRef <- 0.5 * tRef * (Qstar - QtRef)
+ratio  <- if (dwlRef > 0) dwl / dwlRef else 0
+
+# Krivulje (filtrirane na 0 <= P <= Pmax, identično OJS-u)
+qs <- 0:Qmax
+demand    <- subset(data.frame(Q = qs, P = a - b * qs),       P >= 0 & P <= Pmax)
+supply    <- subset(data.frame(Q = qs, P = c_int + d_slope * qs), P >= 0 & P <= Pmax)
+supplyTax <- subset(data.frame(Q = qs, P = c_int + t + d_slope * qs), P >= 0 & P <= Pmax)
+
+# Trokut mrtvog tereta (zatvoreni poligon)
+dwlTriangle <- data.frame(
+  Q = c(Qt, Qt, Qstar),
+  P = c(Pc, Pp, Pstar)
+)
+
+# Boje portane iz OJS marks
+col_grid    <- "#C9C3B8"  # baseline na y = 0
+col_oxblood <- "#6B1F26"  # trokut, klin, točke, oznaka t, formula
+col_fill    <- "#D8B5B3"  # ispuna trokuta (dusty rose)
+col_demand  <- "#2D5A8E"  # potražnja (plava)
+col_supply  <- "#4A6B5C"  # ponuda (verdigris zelena)
+col_brown   <- "#3A332D"  # osi/tekst, ravnotežna točka, ΔQ
+
+ggplot() +
+  # Baseline na y = 0
+  geom_hline(yintercept = 0, color = col_grid, linewidth = 0.5) +
+  # Trokut mrtvog tereta (ispunjen)
+  geom_polygon(data = dwlTriangle, aes(Q, P),
+               fill = col_fill, alpha = 0.75,
+               color = col_oxblood, linewidth = 0.8) +
+  # Krivulje
+  geom_line(data = demand,    aes(Q, P), color = col_demand, linewidth = 1.1) +
+  geom_line(data = supply,    aes(Q, P), color = col_supply, linewidth = 0.9) +
+  geom_line(data = supplyTax, aes(Q, P), color = col_supply, linewidth = 0.9,
+            linetype = "dashed") +
+  # Okomiti porezni klin t u Qt (od Pp do Pc)
+  annotate("segment", x = Qt, xend = Qt, y = Pp, yend = Pc,
+           color = col_oxblood, linewidth = 1.3) +
+  # Vodoravni ΔQ odsječak na y = Pmax*0.10 = 11
+  annotate("segment", x = Qt, xend = Qstar, y = Pmax * 0.10, yend = Pmax * 0.10,
+           color = col_brown, linewidth = 1.1) +
+  annotate("point", x = c(Qt, Qstar), y = Pmax * 0.10,
+           color = col_brown, size = 2) +
+  # Ravnotežna točka (50, 50)
+  annotate("point", x = Qstar, y = Pstar, size = 3.2,
+           color = "white", fill = col_brown, shape = 21, stroke = 1) +
+  # Točke nakon poreza
+  annotate("point", x = c(Qt, Qt), y = c(Pc, Pp), size = 2.6,
+           color = "white", fill = col_oxblood, shape = 21, stroke = 0.7) +
+  # Oznaka klina t
+  annotate("text", x = Qt + 2, y = (Pc + Pp) / 2, label = sprintf("t = %g", t),
+           hjust = 0, fontface = "bold", size = 4, color = col_oxblood) +
+  # Oznaka ΔQ
+  annotate("text", x = (Qt + Qstar) / 2, y = Pmax * 0.10 + 4,
+           label = sprintf("ΔQ = %.1f", dQ),
+           hjust = 0.5, fontface = "bold", size = 3.6, color = col_brown) +
+  # Oznake krivulja
+  annotate("text", x = Qmax * 0.85, y = a - b * Qmax * 0.85 + 4,
+           label = sprintf("D (|ε|=%.2f)", eps_dwl),
+           fontface = "bold", size = 3.6, color = col_demand) +
+  annotate("text", x = Qmax * 0.85, y = c_int + d_slope * Qmax * 0.85 + 4,
+           label = "S", fontface = "bold", size = 4, color = col_supply) +
+  annotate("text", x = Qmax * 0.85, y = c_int + t + d_slope * Qmax * 0.85 + 4,
+           label = "S + t", fontface = "bold", size = 3.6, color = col_supply) +
+  # Gornji ispis 1: rastav formule DWL
+  annotate("text", x = 2, y = Pmax * 0.97,
+           label = sprintf("DWL = ½ · t · ΔQ = ½ · %g · %.1f = %.1f", t, dQ, dwl),
+           hjust = 0, fontface = "bold", size = 4.2, color = col_oxblood) +
+  # Gornji ispis 2: referentno t-kvadrat skaliranje
+  annotate("text", x = 2, y = Pmax * 0.91,
+           label = sprintf("Pri t = %g mrtvi teret bio bi %.1f  =  %.1f puta vise",
+                           tRef, dwlRef, ratio),
+           hjust = 0, size = 3.4, color = col_brown) +
+  scale_x_continuous(limits = c(0, Qmax), expand = c(0, 0)) +
+  scale_y_continuous(limits = c(0, Pmax), expand = c(0, 0)) +
+  labs(x = "Količina (Q)", y = "Cijena (P)") +
+  theme_pubfin() +
+  theme(panel.grid.major.x = element_blank())
+```
+:::
 
 ### Porezni klin na tržištu rada
 
@@ -520,6 +847,7 @@ Uz incidenciju, važan je i koncept **poreznog klina**, koji označava razliku i
 
 Graf koji slijedi prikazuje to tržište s plavom krivuljom potražnje poslodavaca za radom i zelenom krivuljom ponude rada koja se nakon klina pomiče u isprekidani položaj, pri čemu klin objedinjuje sva davanja koja terete plaću. Crveni okomiti odsječak je veličina klina, gornja točka označava bruto nadnicu kao trošak rada za poslodavca, a donja neto nadnicu koju radnik odnosi kući. Svjetli pravokutnik prikazuje ukupni porezni prihod države kao umnožak klina i broja zaposlenih. Graf je interaktivan, pa klizači mijenjaju veličinu poreznog klina i elastičnost ponude rada.
 
+::: {.content-visible when-format="html"}
 ```{ojs}
 //| echo: false
 viewof wedge_controls = Inputs.form({
@@ -653,6 +981,118 @@ eps_L = wedge_controls.eps_L
 ```
 
 **Što isprobati.** (1) Pri niskoj elastičnosti ponude rada [εL]{.var} oko 0,15, kakvu imaju radnici s niskim alternativama, i klinu od 35 % pad zaposlenosti je malen a prihod države velik, zbog čega su porezi na rad fiskalno izdašni i u zemljama s visokim opterećenjem rada. (2) Povećajte εL prema 1,0, što odgovara fleksibilnijim skupinama poput mladih, žena s djecom i radnika blizu mirovine, i isti klin sada uzrokuje znatno veći pad zaposlenosti i veći mrtvi teret, pa upravo zato moderna teorija optimalnog oporezivanja preporučuje niže efektivne stope na rad za skupine s elastičnijom ponudom rada. (3) Pri εL jednakom 0,4 povucite klin s 20 % na 50 % i prihod isprva raste, ali pri vrlo visokim klinovima može se i smanjivati jer radnici reagiraju smanjenjem ponude rada, što najavljuje Lafferovu logiku za tržište rada. Graf time konkretizira zašto je za Hrvatsku, koja ima među višim klinovima u EU, pitanje strukture poreznog opterećenja rada ključno za zaposlenost i konkurentnost [@simovic2022].
+:::
+
+::: {.content-visible when-format="pdf"}
+```{r}
+#| label: fig-porezni-klin-print
+#| echo: false
+#| fig-cap: "Porezni klin na tržištu rada: razlika između bruto nadnice (trošak poslodavca) i neto nadnice (dohodak radnika) smanjuje zaposlenost i generira mrtvi teret."
+#| fig-alt: "Graf prikazuje krivulju potražnje za radom, originalnu krivulju ponude rada i krivulju ponude pomaknutu gore za iznos poreznog klina. Pravokutnik između bruto i neto nadnice prikazuje ukupni porezni prihod. Crveni okomiti odsječak označava veličinu klina, a ravnoteža zaposlenosti pada s L* na Lt."
+#| fig-width: 7.6
+#| fig-height: 5.0
+# Statički PDF blizanac interaktivnog OJS grafa (zadane vrijednosti tau = 35, eps_L = 0.4).
+source("R/setup.R")
+
+# Parametri (zadane vrijednosti klizača)
+tau   <- 35    # porezni klin τ kao postotak bruto nadnice (zadana vrijednost klizača)
+eps_L <- 0.4   # elastičnost ponude rada εL (zadana vrijednost klizača)
+
+# Kalibracija (identično OJS-u): ravnoteža fiksirana u (L*, W*) = (50, 50)
+Lstar <- 50; Wstar <- 50; Lmax <- 110; Wmax <- 110
+b       <- 1                       # nagib potražnje (referentna elastičnost |εD| = 1)
+a       <- Wstar + b * Lstar        # odsječak potražnje  -> a = 100
+d_slope <- 1 / eps_L                # nagib ponude iz elastičnosti ponude rada -> 2.5
+c_int   <- Wstar - d_slope * Lstar  # odsječak ponude     -> -75
+
+# Ravnoteža nakon poreza: klin t = τ · Wbruto pomiče ponudu gore
+# L_t = [a·(1 - τ) - c] / [b·(1 - τ) + d]
+tauFrac  <- tau / 100
+Lt       <- max(0, (a * (1 - tauFrac) - c_int) / (b * (1 - tauFrac) + d_slope))
+Wbruto   <- a - b * Lt              # bruto nadnica (trošak poslodavca)
+Wneto    <- Wbruto * (1 - tauFrac)  # neto nadnica (dohodak radnika)
+wedgeAbs <- Wbruto - Wneto          # apsolutni klin (= τ · Wbruto)
+
+# Prihod i mrtvi teret
+dL      <- Lstar - Lt               # pad zaposlenosti
+revenue <- wedgeAbs * Lt            # porezni prihod
+dwl     <- 0.5 * wedgeAbs * dL      # mrtvi teret (Harbergerov trokut)
+
+# Krivulje (filtrirane na 0 <= W <= Wmax, identično OJS-u)
+ls <- 0:Lmax
+demand    <- subset(data.frame(L = ls, W = a - b * ls),                   W >= 0 & W <= Wmax)
+supply    <- subset(data.frame(L = ls, W = c_int + d_slope * ls),         W >= 0 & W <= Wmax)
+supplyTax <- subset(data.frame(L = ls, W = c_int + wedgeAbs + d_slope * ls), W >= 0 & W <= Wmax)
+
+# Pravokutnik poreznog prihoda (zatvoreni poligon)
+wedgeRect <- data.frame(
+  L = c(0, Lt, Lt, 0),
+  W = c(Wneto, Wneto, Wbruto, Wbruto)
+)
+
+xlab_pos <- Lmax * 0.85  # x položaj natpisa krivulja
+
+ggplot() +
+  # Baseline
+  geom_hline(yintercept = 0, color = "#C9C3B8", linewidth = 0.5) +
+  # Pravokutnik poreznog prihoda (svjetli tan, prozirnost 0.6)
+  geom_polygon(data = wedgeRect, aes(L, W),
+               fill = "#E0D8C8", alpha = 0.6,
+               color = "#3A332D", linewidth = 0.35) +
+  # Krivulje
+  geom_line(data = demand,    aes(L, W), color = "#2D5A8E", linewidth = 1.1) +
+  geom_line(data = supply,    aes(L, W), color = "#4A6B5C", linewidth = 0.9) +
+  geom_line(data = supplyTax, aes(L, W), color = "#4A6B5C", linewidth = 0.9,
+            linetype = "dashed") +
+  # Vodoravne smjernice nadnica
+  geom_hline(yintercept = Wbruto, color = "#6B6357", linetype = "dotted", linewidth = 0.5) +
+  geom_hline(yintercept = Wneto,  color = "#6B6357", linetype = "dotted", linewidth = 0.5) +
+  # Okomiti odsječak klina
+  annotate("segment", x = Lt, xend = Lt, y = Wneto, yend = Wbruto,
+           color = "#6B1F26", linewidth = 1.3) +
+  # Originalna ravnotežna točka
+  annotate("point", x = Lstar, y = Wstar, size = 3.2,
+           color = "white", fill = "#3A332D", shape = 21, stroke = 1) +
+  # Točke nakon poreza (bruto i neto)
+  annotate("point", x = c(Lt, Lt), y = c(Wbruto, Wneto), size = 2.6,
+           color = "white", fill = "#6B1F26", shape = 21, stroke = 0.8) +
+  # Natpisi krivulja
+  annotate("text", x = xlab_pos, y = a - b * xlab_pos + 5,
+           label = "Potražnja za radom (D)", color = "#2D5A8E",
+           fontface = "bold", size = 3.6, hjust = 0.5) +
+  annotate("text", x = xlab_pos, y = Wmax - 4,
+           label = sprintf("Ponuda rada (εL=%.2f)", eps_L), color = "#4A6B5C",
+           fontface = "bold", size = 3.6, hjust = 0.5) +
+  # Natpis pomaknute (dašćane) krivulje ponude nakon klina — položen na samu
+  # krivulju unutar vidljivog područja (x biran tako da y padne tik ispod Wmax)
+  annotate("text",
+           x = (Wmax - 12 - c_int - wedgeAbs) / d_slope,
+           y = Wmax - 12,
+           label = "Ponuda + klin", color = "#4A6B5C",
+           fontface = "bold", size = 3.4, hjust = 0, angle = 58) +
+  # Natpisi nadnica
+  annotate("text", x = 2, y = Wbruto + 4,
+           label = sprintf("Bruto nadnica = %.1f", Wbruto), color = "#1C1916",
+           fontface = "bold", size = 3.4, hjust = 0) +
+  annotate("text", x = 2, y = Wneto - 5,
+           label = sprintf("Neto nadnica = %.1f", Wneto), color = "#1C1916",
+           fontface = "bold", size = 3.4, hjust = 0) +
+  annotate("text", x = Lt + 2, y = (Wbruto + Wneto) / 2,
+           label = sprintf("Klin = %.1f", wedgeAbs), color = "#6B1F26",
+           fontface = "bold", size = 3.8, hjust = 0) +
+  # Gornji ispisi
+  annotate("text", x = 2, y = Wmax * 0.97,
+           label = sprintf("Porezni prihod: %.1f   |   Mrtvi teret: %.1f", revenue, dwl),
+           color = "#3A332D", fontface = "bold", size = 3.8, hjust = 0) +
+  annotate("text", x = 2, y = Wmax * 0.91,
+           label = sprintf("Pad zaposlenosti: ΔL = %.1f  (%.1f%%)", dL, dL / Lstar * 100),
+           color = "#3A332D", size = 3.4, hjust = 0) +
+  scale_x_continuous(limits = c(0, Lmax), expand = c(0, 0)) +
+  scale_y_continuous(limits = c(0, Wmax), expand = c(0, 0)) +
+  labs(x = "Rad (L)", y = "Nadnica (W)") +
+  theme_pubfin()
+```
+:::
 
 U ekonomskom smislu, porezni klin djeluje kao distorzija tržišta rada. Poslodavci donose odluke na temelju bruto troška rada, dok radnici reagiraju na neto plaću. Kada se uvedu porezi, bruto trošak raste, a neto plaća pada, što dovodi do smanjenja zaposlenosti i količine rada u odnosu na razinu bez oporezivanja. Time porezni klin izravno generira mrtvi teret poreza [@gruber2019; @stiglitz2015].
 
@@ -674,6 +1114,7 @@ Početak moderne teorije optimalnog oporezivanja vezuje se uz rad Franka Ramseya
 
 Graf koji slijedi pokazuje taj odnos na jednom tržištu, s plavom krivuljom potražnje i zelenom krivuljom ponude koja se nakon poreza pomiče u isprekidani položaj. Crveni trokut je mrtvi teret, svjetloplavi pravokutnik porezni prihod države, sive točke označavaju početnu ravnotežu Q\* i P\*, a crvene ravnotežu nakon poreza. Graf je interaktivan, pa klizač mijenja elastičnost porezne osnovice i tako pokazuje zašto neelastična dobra nose manji mrtvi teret po jedinici prihoda.
 
+::: {.content-visible when-format="html"}
 ```{ojs}
 //| echo: false
 viewof dwl_controls = Inputs.form({
@@ -804,6 +1245,116 @@ tax = dwl_controls.tax
 ```
 
 **Što isprobati.** (1) Postavite [|ε|]{.var} na nisku vrijednost oko 0,3 tako da potražnja bude strma i neelastična, pa količina jedva pada, crveni trokut ostaje vrlo malen, a porezni prihod velik. (2) Povucite |ε| prema 2,0 tako da potražnja postane položena i elastična, pa se količina znatno smanjuje, crveni trokut naglo raste, a prihod opada. (3) Pri istoj |ε| udvostručite porez [t]{.var} i mrtvi teret raste približno s kvadratom poreza, što je klasični rezultat koji opravdava niske porezne stope po širokoj osnovici. Upravo iz tog odnosa proizlazi Ramseyevo pravilo iz @prp-ramsey, jer ako su društveni gubici od oporezivanja proporcionalni elastičnosti, optimalno je relativno više oporezovati dobra s neelastičnom potražnjom poput goriva i duhana, a manje ona s elastičnom potražnjom poput luksuznih dobara široke supstitucije.
+:::
+
+::: {.content-visible when-format="pdf"}
+```{r}
+#| label: fig-ramsey-dwl-print
+#| echo: false
+#| fig-cap: "Ramseyevo pravilo: mrtvi teret poreza i porezni prihod za različite razine elastičnosti potražnje — neelastičnija dobra generiraju manji DWL po jedinici prihoda."
+#| fig-alt: "Graf prikazuje krivulju potražnje, ponudu i ponudu s porezom. Crveni trokut prikazuje mrtvi teret, a plavi pravokutnik porezni prihod. Pri niskoj elastičnosti trokut je uzan i visok prihod, pri visokoj elastičnosti trokut je velik i prihod manji, vizualno ilustrirajući Ramseyevo pravilo optimalnog oporezivanja."
+#| fig-width: 7.6
+#| fig-height: 5.0
+# Statički PDF blizanac interaktivnog OJS grafa (zadane vrijednosti klizača eps = 1.0, tax = 15).
+source("R/setup.R")
+
+# --- Zadane vrijednosti klizača -------------------------------------------
+eps <- 1.0   # elastičnost potražnje |ε| (zadana vrijednost klizača)
+tax <- 15    # iznos poreza t (zadana vrijednost klizača)
+
+# --- Kalibracija (identično OJS-u) ----------------------------------------
+# Ravnoteža prije poreza fiksirana u (Q*, P*) = (50, 50); domena [0, 110].
+Qstar <- 50; Pstar <- 50
+Qmax  <- 110; Pmax <- 110
+
+b <- 1 / eps            # nagib potražnje (strm kad je eps malen -> neelastično) -> 1
+a <- Pstar + b * Qstar  # odsječak potražnje (prolazi kroz (Q*, P*)) -> 100
+d <- 0.5                # nagib ponude (fiksan)
+c <- Pstar - d * Qstar  # odsječak ponude (prolazi kroz (Q*, P*)) -> 25
+t <- tax
+
+# --- Ravnoteža nakon poreza: a - b·Q = c + t + d·Q ------------------------
+Qt <- max(0, (a - c - t) / (b + d))  # količina nakon poreza -> 40
+Pc <- a - b * Qt                     # cijena koju plaća kupac -> 60
+Pp <- Pc - t                         # cijena koju prima prodavač -> 45
+
+dQ      <- Qstar - Qt        # smanjenje količine -> 10
+dwl     <- 0.5 * t * dQ      # mrtvi teret (DWL) = 0.5 · t · ΔQ -> 75
+revenue <- t * Qt            # porezni prihod = t · Qt -> 600
+
+# --- Krivulje (filtrirane na 0 <= P <= Pmax, identično OJS-u) --------------
+Qs <- 0:Qmax
+demand    <- subset(data.frame(Q = Qs, P = a - b * Qs),     P >= 0 & P <= Pmax)
+supply    <- subset(data.frame(Q = Qs, P = c + d * Qs),     P >= 0 & P <= Pmax)
+supplyTax <- subset(data.frame(Q = Qs, P = c + t + d * Qs), P >= 0 & P <= Pmax)
+
+# --- Poligoni za sjenčanje ------------------------------------------------
+# Pravokutnik poreznog prihoda: (0..Qt) × (Pp..Pc)
+revRect <- data.frame(
+  Q = c(0,  Qt, Qt, 0),
+  P = c(Pp, Pp, Pc, Pc)
+)
+# Trokut mrtvog tereta: (Qt, Pc), (Qt, Pp), (Q*, P*)
+dwlTriangle <- data.frame(
+  Q = c(Qt, Qt, Qstar),
+  P = c(Pc, Pp, Pstar)
+)
+
+ggplot() +
+  # baseline na y = 0
+  geom_hline(yintercept = 0, color = "#C9C3B8", linewidth = 0.5) +
+  # pravokutnik poreznog prihoda (svjetloplavi)
+  geom_polygon(data = revRect, aes(Q, P),
+               fill = "#CBD8D2", alpha = 0.5,
+               color = "#2D5A8E", linewidth = 0.4) +
+  # trokut mrtvog tereta (crveni)
+  geom_polygon(data = dwlTriangle, aes(Q, P),
+               fill = "#D8B5B3", alpha = 0.7,
+               color = "#6B1F26", linewidth = 0.8) +
+  # krivulje
+  geom_line(data = demand,    aes(Q, P), color = "#2D5A8E", linewidth = 1.1) +
+  geom_line(data = supply,    aes(Q, P), color = "#4A6B5C", linewidth = 0.9) +
+  geom_line(data = supplyTax, aes(Q, P), color = "#4A6B5C", linewidth = 0.9,
+            linetype = "dashed") +
+  # cjenovne vodilice
+  geom_hline(yintercept = Pc, color = "#6B6357", linetype = "dotted", linewidth = 0.4) +
+  geom_hline(yintercept = Pp, color = "#6B6357", linetype = "dotted", linewidth = 0.4) +
+  # okomiti porezni klin (od Pp do Pc pri Q = Qt)
+  annotate("segment", x = Qt, xend = Qt, y = Pp, yend = Pc,
+           color = "#6B1F26", linewidth = 1.3) +
+  # ravnoteža prije poreza
+  geom_point(aes(x = Qstar, y = Pstar), size = 3.2,
+             fill = "#3A332D", color = "white", shape = 21, stroke = 0.9) +
+  # ravnoteže nakon poreza
+  geom_point(data = data.frame(Q = c(Qt, Qt), P = c(Pc, Pp)),
+             aes(Q, P), size = 2.6,
+             fill = "#6B1F26", color = "white", shape = 21, stroke = 0.7) +
+  # oznake cijena
+  annotate("text", x = 2, y = Pc + 3, hjust = 0,
+           label = sprintf("Pc = %.1f", Pc), size = 3.6, color = "#1C1916") +
+  annotate("text", x = 2, y = Pp + 3, hjust = 0,
+           label = sprintf("Pp = %.1f", Pp), size = 3.6, color = "#1C1916") +
+  # oznake krivulja
+  annotate("text", x = Qmax * 0.85, y = a - b * Qmax * 0.85 + 4,
+           label = sprintf("D (|ε|=%.2f)", eps),
+           color = "#2D5A8E", size = 3.6, fontface = "bold") +
+  annotate("text", x = Qmax * 0.85, y = c + d * Qmax * 0.85 + 3,
+           label = "S", color = "#4A6B5C", size = 3.9, fontface = "bold") +
+  annotate("text", x = Qmax * 0.85, y = c + t + d * Qmax * 0.85 + 3,
+           label = "S + t", color = "#4A6B5C", size = 3.6, fontface = "bold") +
+  # gornji ispisi
+  annotate("text", x = 2, y = Pmax * 0.97, hjust = 0,
+           label = sprintf("Mrtvi teret (DWL): %.1f", dwl),
+           size = 4.4, color = "#6B1F26", fontface = "bold") +
+  annotate("text", x = 2, y = Pmax * 0.91, hjust = 0,
+           label = sprintf("Porezni prihod: %.1f", revenue),
+           size = 4.0, color = "#1E3F63", fontface = "bold") +
+  scale_x_continuous(limits = c(0, Qmax), expand = c(0, 0)) +
+  scale_y_continuous(limits = c(0, Pmax), expand = c(0, 0)) +
+  labs(x = "Količina (Q)", y = "Cijena (P)") +
+  theme_pubfin()
+```
+:::
 
 ### Mirrleesov model i oporezivanje rada
 
@@ -813,6 +1364,7 @@ Ramseyjev model ima važno ograničenje jer potpuno zanemaruje pitanje pravednos
 
 Graf koji slijedi prikazuje taj izbor između dokolice ℓ na vodoravnoj osi i potrošnje C na okomitoj. Zelena puna linija je proračunsko ograničenje bez poreza, a zelena isprekidana ono s porezom na rad, koji smanjuje nagib jer svaki sat rada donosi manje neto potrošnje. Plava krivulja indiferencije prolazi kroz početni optimum A, crvena kroz konačni optimum C, a siva točka B je hipotetski kompenzirani optimum koji pokazuje što bi pojedinac izabrao pri novoj nadnici da je istodobno dobio dohodovnu kompenzaciju koja ga vraća na izvornu razinu korisnosti. Graf je interaktivan, pa klizač mijenja elastičnost supstitucije između dokolice i potrošnje i tako pokazuje hoće li broj sati rada pasti, ostati isti ili porasti s porezom.
 
+::: {.content-visible when-format="html"}
 ```{ojs}
 //| echo: false
 viewof labor_controls = Inputs.form({
@@ -1021,10 +1573,177 @@ sig_l = labor_controls.sig_l
   });
 }
 ```
+:::
+
+::: {.content-visible when-format="pdf"}
+```{r}
+#| label: fig-dokolica-potrosnja-print
+#| echo: false
+#| fig-cap: "Slutskyjeva dekompozicija učinka poreza na rad: supstitucijski učinak (A→B) povećava dokolicu, a dohodovni učinak (B→C) može djelovati u suprotnom smjeru."
+#| fig-alt: "Graf prikazuje dokolicu na vodoravnoj osi i potrošnju na okomitoj. Prikazane su dvije proračunske linije (bez poreza i s porezom) i dvije krivulje indiferencije. Točka A je optimum bez poreza, B kompenzirani optimum i C optimum s porezom. Strelice između točaka vizualiziraju supstitucijski i dohodovni učinak."
+#| fig-width: 7.6
+#| fig-height: 5.2
+# Statički PDF blizanac interaktivnog OJS grafa, na zadanim vrijednostima klizača.
+source("R/setup.R")
+
+# --- Zadane vrijednosti klizača (snapshot kako se graf prvi put pojavljuje) ---
+tau_l <- 30    # porezna stopa τ u % (zadana vrijednost klizača)
+sig_l <- 1.0   # elastičnost supstitucije σ (zadana vrijednost klizača)
+
+# --- Tvrdo kodirane konstante modela (iste kao u OJS-u) ---
+T_endow <- 24    # raspoloživo vrijeme
+w       <- 10    # bruto nadnica
+alpha   <- 0.5   # CES udio
+eps     <- 1e-9
+sigma   <- sig_l
+tauFrac <- tau_l / 100
+w0 <- w               # bruto (neto) nadnica bez poreza = 10
+w1 <- w * (1 - tauFrac)  # neto nadnica s porezom = 10*(1-0.30) = 7.0
+
+# CES korisnost U(C, ℓ); za σ = 1 prelazi u Cobb-Douglas C^α · ℓ^(1-α)
+U <- function(C, ell) {
+  c <- max(C, eps); l <- max(ell, eps)
+  if (abs(sigma - 1) < 1e-6) return(c^alpha * l^(1 - alpha))
+  e <- (sigma - 1) / sigma
+  inner <- alpha * c^e + (1 - alpha) * l^e
+  if (inner <= 0) return(0)
+  inner^(1 / e)
+}
+
+# Optimum pri neto nadnici w_n: ℓ* = T / (1 + (α/(1-α))^σ · w_n^(σ-1))
+optimum <- function(w_n) {
+  if (abs(sigma - 1) < 1e-6) {
+    ell <- (1 - alpha) * T_endow            # Cobb-Douglas: ℓ* = (1-α)·T
+  } else {
+    ratio <- (alpha / (1 - alpha))^sigma * w_n^(sigma - 1)
+    ell <- T_endow / (1 + ratio)
+  }
+  list(ell = ell, C = w_n * (T_endow - ell))
+}
+
+# Kompenzirani optimum B: ista korisnost kao A, ali pri nagibu w₁.
+# C = k·ℓ s k = (α·w_n/(1-α))^σ, uvršteno u U(C, ℓ) = U_bar.
+compensated <- function(U_bar, w_n) {
+  k <- (alpha * w_n / (1 - alpha))^sigma
+  if (abs(sigma - 1) < 1e-6) {
+    ell <- U_bar / k^alpha
+  } else {
+    e <- (sigma - 1) / sigma
+    factor <- (alpha * k^e + (1 - alpha))^(1 / e)
+    ell <- U_bar / factor
+  }
+  list(ell = ell, C = k * ell)
+}
+
+A    <- optimum(w0)   # optimum bez poreza  -> ℓ=12, C=120
+C_pt <- optimum(w1)   # optimum s porezom   -> ℓ=12, C=84
+U_A  <- U(A$C, A$ell)
+B    <- compensated(U_A, w1)  # kompenzirani optimum -> ℓ=14.34, C=100.40
+
+# Sati rada i učinci (identične formule kao OJS)
+hoursA <- T_endow - A$ell      # 12.0
+hoursC <- T_endow - C_pt$ell   # 12.0
+dHours <- hoursC - hoursA      # 0.00 (Cobb-Douglas, neutralni slučaj)
+subEffect <- B$ell - A$ell     # supstitucijski učinak na dokolicu: +2.34
+incEffect <- C_pt$ell - B$ell  # dohodovni učinak na dokolicu: -2.34
+
+# Proračunske linije kao parovi krajnjih točaka
+budgetNoTax <- data.frame(ell = c(0, T_endow), C = c(w0 * T_endow, 0))
+budgetTax   <- data.frame(ell = c(0, T_endow), C = c(w1 * T_endow, 0))
+
+# Krivulje indiferencije kroz A i kroz C_pt (rješenje U(C, ℓ) = U_bar za C)
+indiffCurve <- function(U_bar) {
+  ellGrid <- seq(0.5, T_endow, by = 0.5)
+  out <- lapply(ellGrid, function(ell) {
+    if (abs(sigma - 1) < 1e-6) {
+      C <- (U_bar / max(ell, eps)^(1 - alpha))^(1 / alpha)
+    } else {
+      e <- (sigma - 1) / sigma
+      numerator <- U_bar^e - (1 - alpha) * ell^e
+      if (numerator / alpha <= 0) return(NULL)
+      C <- (numerator / alpha)^(1 / e)
+    }
+    if (is.finite(C) && C > 0 && C < w0 * T_endow * 1.5) data.frame(ell = ell, C = C) else NULL
+  })
+  do.call(rbind, out)
+}
+
+U_C     <- U(C_pt$C, C_pt$ell)
+indiffA <- indiffCurve(U_A)
+indiffC <- indiffCurve(U_C)
+
+Cmax <- w0 * T_endow * 1.05   # 252
+
+pts <- data.frame(
+  ell   = c(A$ell, B$ell, C_pt$ell),
+  C     = c(A$C,   B$C,   C_pt$C),
+  fill  = c("#2D5A8E", "#3A332D", "#6B1F26")
+)
+fmt <- function(x) sprintf("%s%.2f", ifelse(x >= 0, "+", ""), x)
+
+ggplot() +
+  # Proračunske linije (verdigris puna + isprekidana)
+  geom_line(data = budgetNoTax, aes(ell, C),
+            color = "#4A6B5C", linewidth = 1.0) +
+  geom_line(data = budgetTax, aes(ell, C),
+            color = "#4A6B5C", linewidth = 0.8, linetype = "22") +
+  # Krivulje indiferencije (plava kroz A, oxblood isprekidana kroz C)
+  geom_line(data = indiffA, aes(ell, C), color = "#2D5A8E", linewidth = 0.8) +
+  geom_line(data = indiffC, aes(ell, C), color = "#6B1F26",
+            linewidth = 0.8, linetype = "42") +
+  # Spuštene linije od optima do osi x (blijede)
+  annotate("segment", x = A$ell,    xend = A$ell,    y = 0, yend = A$C,
+           color = "#CBD8D2", linetype = "12") +
+  annotate("segment", x = C_pt$ell, xend = C_pt$ell, y = 0, yend = C_pt$C,
+           color = "#E0C5C2", linetype = "12") +
+  # Strelica supstitucijskog učinka (A -> B)
+  annotate("segment", x = A$ell, xend = B$ell, y = Cmax * 0.06, yend = Cmax * 0.06,
+           color = "#3A332D", linewidth = 0.9,
+           arrow = arrow(length = unit(0.18, "cm"), type = "closed")) +
+  # Strelica dohodovnog učinka (B -> C)
+  annotate("segment", x = B$ell, xend = C_pt$ell, y = Cmax * 0.02, yend = Cmax * 0.02,
+           color = "#C8985E", linewidth = 0.9,
+           arrow = arrow(length = unit(0.18, "cm"), type = "closed")) +
+  # Tri optimuma (bijeli obrub)
+  geom_point(data = pts, aes(ell, C), shape = 21, size = 3.4,
+             fill = pts$fill, color = "white", stroke = 1.1) +
+  # Oznake optima
+  annotate("text", x = A$ell, y = A$C, label = "A (bez poreza)",
+           hjust = 0, vjust = 1.6, color = "#2D5A8E", fontface = "bold", size = 3.3) +
+  annotate("text", x = B$ell, y = B$C, label = "B (kompenzirani)",
+           hjust = 0, vjust = 1.6, color = "#3A332D", fontface = "bold", size = 3.3) +
+  annotate("text", x = C_pt$ell, y = C_pt$C, label = "C (s porezom)",
+           hjust = 0, vjust = -1.0, color = "#6B1F26", fontface = "bold", size = 3.3) +
+  # Oznake učinaka uz strelice
+  annotate("text", x = (A$ell + B$ell) / 2, y = Cmax * 0.06,
+           label = sprintf("Supstitucijski (Δℓ = %s)", fmt(subEffect)),
+           vjust = -0.8, color = "#3A332D", fontface = "bold", size = 3.0) +
+  annotate("text", x = (B$ell + C_pt$ell) / 2, y = Cmax * 0.02,
+           label = sprintf("Dohodovni (Δℓ = %s)", fmt(incEffect)),
+           vjust = 1.6, color = "#9A6F38", fontface = "bold", size = 3.0) +
+  # Brojčani ispisi u vrhu
+  annotate("text", x = 0.5, y = Cmax * 0.97, hjust = 0,
+           label = sprintf("Sati rada: %.1f -> %.1f   (Δ = %s)",
+                           hoursA, hoursC, fmt(dHours)),
+           color = "#1C1916", fontface = "bold", size = 3.7) +
+  annotate("text", x = 0.5, y = Cmax * 0.91, hjust = 0,
+           label = sprintf("σ = %.1f   |   neto nadnica: %.1f -> %.2f",
+                           sigma, w0, w1),
+           color = "#3A332D", size = 3.3) +
+  scale_x_continuous(limits = c(0, T_endow), expand = c(0, 0)) +
+  # mala donja margina da donja strelica (dohodovni učinak) i njezina oznaka ne budu odrezane
+  scale_y_continuous(limits = c(0, Cmax),
+                     expand = expansion(mult = c(0.05, 0))) +
+  coord_cartesian(clip = "off") +
+  labs(x = "Dokolica ℓ", y = "Potrošnja C")
+```
+:::
 
 Graf ujedno rastavlja ukupnu reakciju na dva učinka prema Slutskom. Pomak od A do B, označen sivom strelicom, izolira supstitucijski učinak, pri kojem niža neto nadnica čini sat rada manje vrijednim, pa pojedinac zamjenjuje rad dokolicom i Δℓ raste. Pomak od B do C, označen oker strelicom, dohodovni je učinak, pri kojem porez osiromašuje pojedinca, a ako je dokolica normalno dobro, siromašniji pojedinac troši manje dokolice i radi više kako bi nadoknadio izgubljeni dohodak. Smjer učinka poreza na zaposlenost ovisi o tome koji od ta dva učinka prevladava.
 
+::: {.content-visible when-format="html"}
 **Što isprobati.** (1) Pri [σ]{.var} jednakom 1,0, što odgovara Cobb-Douglasovoj korisnosti, supstitucijski i dohodovni učinak točno se poništavaju, pa se broj sati rada uopće ne mijenja s porezom i Δ je nula, što je referentni neutralni slučaj. (2) Povećajte σ prema 1,8 tako da se potrošnja i dokolica lako zamjenjuju i supstitucijski učinak nadjačava, pa broj sati rada opada s porezom, što je standardni argument protiv visokih marginalnih stopa. (3) Smanjite σ prema 0,3 tako da potrošač snažno preferira određeni omjer dokolice i potrošnje i dohodovni učinak nadjačava, pa broj sati rada zapravo raste, što je empirijska pojava poznata kao unazad savijena krivulja ponude rada koju spominje sljedeći odlomak. Kada Mirrleesov model kaže da optimalna porezna stopa ovisi o ravnoteži supstitucijskog i dohodovnog učinka, on misli upravo na ovu napetost, a budući da su smjer i veličina te ravnoteže empirijsko pitanje, ni danas ne postoji konsenzus o optimalnoj progresivnosti poreza na rad.
+:::
 
 Zbog interakcije tih dvaju učinaka krivulja ponude rada može imati specifičan oblik. Pri višim razinama nadnice može prevladati dohodovni učinak te pojedinci biraju više dokolice, što rezultira takozvanom **unazad savijenom krivuljom ponude rada**. Jedan od važnih zaključaka Mirrleesove teorije jest da optimalni porezni sustav ne mora imati ekstremno visoke stope za najbogatije. Razlog je taj što visoke stope mogu značajno smanjiti ekonomske poticaje upravo kod onih koji generiraju najveći dio dohotka.
 
@@ -1032,6 +1751,7 @@ Zbog interakcije tih dvaju učinaka krivulja ponude rada može imati specifičan
 
 Ista napetost supstitucijskog i dohodovnog učinka javlja se i kod oporezivanja prinosa na štednju, što prikazuje graf koji slijedi, prikaz izbora između sadašnje potrošnje C₁ na vodoravnoj osi i buduće potrošnje C₂ na okomitoj. Zelena puna linija je proračunska linija bez poreza, a zelena isprekidana ona s porezom na prinos, koja se zakreće oko točke darivanja Y jer porez smanjuje neto kamatnu stopu. Plava krivulja indiferencije prolazi kroz početni optimum, crvena kroz novi, plava točka označava optimum bez poreza i crvena onaj s porezom, a u vrhu se ispisuje promjena štednje kao razlika Y i C₁. Graf je interaktivan, pa klizači mijenjaju kamatnu stopu, poreznu stopu i elastičnost intertemporalne supstitucije, čime se vidi hoće li porez na prinos smanjiti ili povećati štednju.
 
+::: {.content-visible when-format="html"}
 ```{ojs}
 //| echo: false
 viewof inter_controls = Inputs.form({
@@ -1196,6 +1916,143 @@ sigma = inter_controls.sigma
 ```
 
 **Što isprobati.** (1) Pri [σ]{.var} jednakom 1,0, što odgovara logaritamskoj korisnosti u kojoj se supstitucijski i dohodovni učinak približno poništavaju, i poreznoj stopi od 25 % optimum se neznatno mijenja, pa štednja ostaje gotovo ista. (2) Povećajte σ prema 1,8 tako da potrošač lako supstituira potrošnju kroz vrijeme i povećanje poreza značajno smanjuje štednju jer supstitucijski učinak nadjačava dohodovni, što je teorijski temelj argumenata Atkinsona i Stiglitza protiv visokih poreza na kapital u sustavima s razvijenim porezom na dohodak. (3) Smanjite σ prema 0,3 tako da potrošač snažno preferira ravnomjernu potrošnju i porez smanjuje neto prinos, ali pojedinac pojačava štednju kako bi održao buduću razinu potrošnje jer sada dohodovni učinak nadjačava. Smjer učinka oporezivanja kapitala na štednju zato nije jednoznačan, nego ovisi o elastičnosti intertemporalne supstitucije σ, empirijskom parametru koji teorija optimalnog oporezivanja [@atkinson1980] pokušava izmjeriti, ali oko čije vrijednosti i danas ne postoji znanstveni konsenzus.
+:::
+
+::: {.content-visible when-format="pdf"}
+```{r}
+#| label: fig-medutemporalna-stednja-print
+#| echo: false
+#| fig-cap: "Međutemporalni učinak poreza na kapitalni prinos: porez zakreće proračunsku liniju i mijenja ravnotežu između sadašnje i buduće potrošnje."
+#| fig-alt: "Graf prikazuje sadašnju potrošnju C1 na vodoravnoj osi i buduću potrošnju C2 na okomitoj. Zelena puna linija je proračunsko ograničenje bez poreza, zelena isprekidana s porezom na prinos koji smanjuje nagib. Plava točka je optimum bez poreza, crvena s porezom. Pomak između točaka pokazuje kako porez utječe na štednju."
+#| fig-width: 7.6
+#| fig-height: 5.2
+# Statički PDF blizanac interaktivnog OJS grafa, pri zadanim vrijednostima klizača.
+source("R/setup.R")
+
+# Zadane vrijednosti klizača
+r     <- 0.08   # kamatna stopa r
+tau_k <- 25     # porez na prinos τ (%)
+sigma <- 1.0    # elastičnost intertemporalne supstitucije σ
+
+# Konstante modela (dvoperiodni model, darivanje Y u 1. razdoblju, bez dohotka u 2.)
+Y    <- 100     # darivanje (potrošnja u 1. razdoblju)
+Cmax <- 130     # maksimum osi
+beta <- 1 / 1.04  # subjektivni diskontni faktor (ρ = 0,04)
+
+tauFrac <- tau_k / 100
+r0 <- r                  # neto prinos bez poreza
+r1 <- r * (1 - tauFrac)  # neto prinos s porezom
+
+# Optimum uz neto prinos r_net i CRRA korisnost:
+# C2/C1 = [β·(1 + r_net)]^σ,  proračun: C2 = (1 + r_net)·(Y − C1)
+# ⇒ C1 = Y / (1 + (1 + r_net)/k),  k = [β·(1 + r_net)]^σ
+optimum <- function(r_net) {
+  k  <- (beta * (1 + r_net))^sigma
+  C1 <- Y / (1 + (1 + r_net) / k)
+  C2 <- (1 + r_net) * (Y - C1)
+  list(C1 = C1, C2 = C2)
+}
+before <- optimum(r0)
+after  <- optimum(r1)
+
+# Proračunske linije kao dvotočkovni segmenti
+budgetNoTax <- data.frame(C1 = c(0, Y), C2 = c((1 + r0) * Y, 0))
+budgetTax   <- data.frame(C1 = c(0, Y), C2 = c((1 + r1) * Y, 0))
+
+# Krivulja indiferencije kroz optimum (C1opt, C2opt): u(C1) + β·u(C2) = Ubar
+# CRRA: u(C) = ln(C) ako je σ = 1, inače C^(1−1/σ)/(1−1/σ)
+indiff <- function(C1opt, C2opt) {
+  eps <- 1e-9
+  uOf <- function(c) {
+    if (abs(sigma - 1) < 1e-6) return(log(pmax(c, eps)))
+    e <- 1 - 1 / sigma
+    pmax(c, eps)^e / e
+  }
+  Ubar <- uOf(C1opt) + beta * uOf(C2opt)
+  C1grid <- seq(2, Cmax, by = 1)
+  out <- lapply(C1grid, function(C1) {
+    target <- (Ubar - uOf(C1)) / beta
+    if (abs(sigma - 1) < 1e-6) {
+      C2 <- exp(target)
+    } else {
+      e <- 1 - 1 / sigma
+      arg <- target * e
+      if (arg <= 0) return(NULL)
+      C2 <- arg^(1 / e)
+    }
+    if (is.finite(C2) && C2 > 0 && C2 < Cmax * 1.5) data.frame(C1 = C1, C2 = C2) else NULL
+  })
+  do.call(rbind, out)
+}
+indiffBefore <- indiff(before$C1, before$C2)
+indiffAfter  <- indiff(after$C1,  after$C2)
+
+# Gornji ispis: štednja s = Y − C1 (znak prati OJS, "+" kada štednja raste)
+dC1 <- after$C1 - before$C1
+sgn <- if (dC1 < 0) "+" else "-"  # znak kao u OJS-u
+line1 <- sprintf("Štednja s = Y - C1:  %.1f  ->  %.1f  (delta = %s%.1f)",
+                 Y - before$C1, Y - after$C1, sgn, abs(dC1))
+line2 <- sprintf("Neto prinos: %.1f %%  ->  %.2f %%    |    sigma = %.1f",
+                 r0 * 100, r1 * 100, sigma)
+
+# Boje preuzete iz OJS marks
+col_budget <- "#4A6B5C"  # verdigris (proračunske linije)
+col_before <- "#2D5A8E"  # plava (bez poreza)
+col_after  <- "#6B1F26"  # oxblood (s porezom)
+col_endow  <- "#3A332D"  # darivanje / ispis
+col_base   <- "#C9C3B8"  # bazna linija y = 0
+col_drop_b <- "#CBD8D2"  # padajuće linije optimuma bez poreza
+col_drop_a <- "#E0C5C2"  # padajuće linije optimuma s porezom
+
+ggplot() +
+  # bazna linija
+  geom_hline(yintercept = 0, color = col_base, linewidth = 0.5) +
+  # padajuće linije za optimum bez poreza
+  annotate("segment", x = before$C1, xend = before$C1, y = 0, yend = before$C2,
+           color = col_drop_b, linetype = "dotted") +
+  annotate("segment", x = 0, xend = before$C1, y = before$C2, yend = before$C2,
+           color = col_drop_b, linetype = "dotted") +
+  # padajuće linije za optimum s porezom
+  annotate("segment", x = after$C1, xend = after$C1, y = 0, yend = after$C2,
+           color = col_drop_a, linetype = "dotted") +
+  annotate("segment", x = 0, xend = after$C1, y = after$C2, yend = after$C2,
+           color = col_drop_a, linetype = "dotted") +
+  # proračunska linija bez poreza (puna)
+  geom_line(data = budgetNoTax, aes(C1, C2), color = col_budget, linewidth = 1.1) +
+  # proračunska linija s porezom (isprekidana)
+  geom_line(data = budgetTax, aes(C1, C2), color = col_budget,
+            linewidth = 0.9, linetype = "dashed") +
+  # krivulje indiferencije
+  geom_line(data = indiffBefore, aes(C1, C2), color = col_before, linewidth = 0.9) +
+  geom_line(data = indiffAfter, aes(C1, C2), color = col_after,
+            linewidth = 0.9, linetype = "dashed") +
+  # darivanje
+  geom_point(aes(x = Y, y = 0), size = 2, color = "white",
+             fill = col_endow, shape = 21, stroke = 0.6) +
+  # optimumi
+  geom_point(aes(x = before$C1, y = before$C2), size = 3.2, shape = 21,
+             fill = col_before, color = "white", stroke = 0.8) +
+  geom_point(aes(x = after$C1, y = after$C2), size = 3.2, shape = 21,
+             fill = col_after, color = "white", stroke = 0.8) +
+  # oznake optimuma
+  annotate("text", x = before$C1, y = before$C2, label = "Bez poreza",
+           hjust = 0, vjust = -0.8, color = col_before, fontface = "bold", size = 3.6) +
+  annotate("text", x = after$C1, y = after$C2, label = "S porezom",
+           hjust = 0, vjust = 1.6, color = col_after, fontface = "bold", size = 3.6) +
+  # oznaka darivanja
+  annotate("text", x = Y, y = 0, label = sprintf("Y = %d", Y),
+           hjust = 0, vjust = -0.8, color = col_endow, size = 3.2) +
+  # gornji ispisi
+  annotate("text", x = 2, y = Cmax * 0.97, label = line1,
+           hjust = 0, color = col_endow, fontface = "bold", size = 3.9) +
+  annotate("text", x = 2, y = Cmax * 0.91, label = line2,
+           hjust = 0, color = col_endow, size = 3.6) +
+  scale_x_continuous(limits = c(0, Cmax), expand = c(0, 0)) +
+  scale_y_continuous(limits = c(0, Cmax), expand = c(0, 0)) +
+  labs(x = "Sadašnja potrošnja C1", y = "Buduća potrošnja C2") +
+  theme(panel.grid.major.x = element_blank())
+```
+:::
 
 ### Progresivnost i Lafferova krivulja
 
@@ -1217,6 +2074,9 @@ Sve dosadašnje rasprave pretpostavljaju da viša stopa donosi i viši prihod, n
 
 Graf koji slijedi prikazuje tu krivulju kao porezni prihod u ovisnosti o stopi. Crna točka označava vrh prihoda t\*, odnosno stopu pri kojoj država ostvaruje najveći mogući prihod. Pokretna točka koja prati klizač zelena je dok se nalazite na rastućem dijelu krivulje gdje dizanje stope povećava prihod, a crvena na padajućem dijelu gdje dizanje stope smanjuje prihod jer porezna osnovica reagira jače nego što stopa raste. Graf je interaktivan, pa klizač mijenja elastičnost porezne osnovice i tako pomiče položaj vrha krivulje.
 
+Ključni je rezultat da se pri konstantnoj elastičnosti porezne osnovice ε vrh nalazi pri stopi t\* jednakoj 1 / (1 + ε). Ta jednostavna formula objašnjava cijelu raspravu o Lafferovoj krivulji jer pokazuje da ne postoji univerzalni Lafferov vrh, nego njegova lokacija ovisi isključivo o tome koliko porezna osnovica reagira na promjene stope.
+
+::: {.content-visible when-format="html"}
 ```{ojs}
 //| echo: false
 viewof laffer_controls = Inputs.form({
@@ -1319,9 +2179,85 @@ t_now = laffer_controls.t_now
 }
 ```
 
-Ključni je rezultat da se pri konstantnoj elastičnosti porezne osnovice ε vrh nalazi pri stopi t\* jednakoj 1 / (1 + ε). Ta jednostavna formula objašnjava cijelu raspravu o Lafferovoj krivulji jer pokazuje da ne postoji univerzalni Lafferov vrh, nego njegova lokacija ovisi isključivo o tome koliko porezna osnovica reagira na promjene stope.
-
 **Što isprobati.** (1) Pri [ε]{.var} jednakom 0,2, što odgovara neelastičnoj osnovici poput radnika s ograničenim alternativama ili tržišta s malo evazije, vrh je na stopi od približno 83 %, pa se sve realistične stope nalaze na rastućem dijelu. (2) Pri ε jednakom 0,5, što je empirijski najčešća procjena za rad u razvijenim zemljama, vrh je na približno 67 %, pa stope iznad 65 do 70 % postaju kontraproduktivne. (3) Pri ε jednakom 1,5, što odgovara visokoj elastičnosti dohotka najbogatijih, internacionalno mobilnog kapitala i tržišta s razvijenom evazijom, vrh pada na približno 40 %, pa visoke marginalne stope na takve osnovice mogu zapravo smanjiti prihode. Politička debata o tome je li neka zemlja prešla Lafferov vrh zato je u biti debata o empirijskoj veličini ε koja se razlikuje među zemljama, vrstama poreza i dohodovnim skupinama, pa Lafferova krivulja nije politički argument nego okvir za tu debatu.
+:::
+
+::: {.content-visible when-format="pdf"}
+```{r}
+#| label: fig-laffer-print
+#| echo: false
+#| fig-cap: "Lafferova krivulja: porezni prihod kao funkcija porezne stope dostiže vrh pri t* = 1/(1+ε) i pada pri previsoko postavljenim stopama."
+#| fig-alt: "Graf prikazuje plavu zvonoliku krivulju poreznog prihoda R u ovisnosti o poreznoj stopi t od 0 do 100 posto. Crna točka označava vrh prihoda t*. Pokretna točka zelene ili crvene boje označava gdje se nalazi trenutna stopa — zelena ako je na rastućem dijelu krivulje, crvena ako je na padajućem dijelu."
+#| fig-width: 7.6
+#| fig-height: 5.0
+# Statički PDF blizanac interaktivnog OJS grafa (zadane vrijednosti klizača: eps = 0.5, t_now = 35).
+source("R/setup.R")
+
+# --- Parametri (zadane vrijednosti klizača) ---
+eps    <- 0.5   # elastičnost porezne osnovice ε (zadana vrijednost klizača eps_T)
+t_now  <- 35    # trenutna porezna stopa t u postocima (zadana vrijednost klizača t_now)
+B0     <- 100   # razina porezne osnovice (konstanta)
+
+# --- Model ---
+# B(t) = B0 * (1 - t)^eps ;  R(t) = t * B(t) = t * B0 * (1 - t)^eps
+tStar <- 1 / (1 + eps)                      # stopa koja maksimizira prihod: t* = 1/(1+eps) = 0.6667
+Rmax  <- tStar * B0 * (1 - tStar)^eps       # vrh prihoda: 0.6667*100*0.3333^0.5 = 38.5
+
+# Krivulja: t od 0 do ~0.985 u koracima 0.005, x pohranjen kao t*100 (postotak)
+tt    <- seq(0, 0.985, by = 0.005)
+curve <- data.frame(t = tt * 100, R = tt * B0 * (1 - tt)^eps)
+
+# Trenutna točka čitatelja
+tCur     <- t_now / 100                                  # 0.35
+Rcur     <- tCur * B0 * (max(0, 1 - tCur))^eps           # 0.35*100*0.65^0.5 = 28.2
+onRising <- tCur < tStar                                 # 0.35 < 0.6667 -> TRUE (zeleno)
+Rceil    <- max(Rmax * 1.10, 25)                         # gornja granica osi y
+
+# Boja trenutne točke i pripadnih oznaka (zeleno na rastućem, crveno na padajućem dijelu)
+cur_col <- if (onRising) "#4A6B5C" else "#6B1F26"        # verdigris / oxblood
+
+ggplot(curve, aes(t, R)) +
+  # baseline R = 0
+  geom_hline(yintercept = 0, color = "#C9C3B8") +
+  # površina ispod krivulje, izblijedjela
+  geom_area(fill = "#CBD8D2", alpha = 0.25) +
+  # Lafferova krivulja
+  geom_line(color = "#2D5A8E", linewidth = 1.1) +
+  # vrh prihoda: okomita iscrtkana linija + crna točka
+  annotate("segment", x = tStar * 100, xend = tStar * 100, y = 0, yend = Rmax,
+           color = "#3A332D", linetype = "44") +
+  annotate("point", x = tStar * 100, y = Rmax, size = 3.2,
+           color = "white", fill = "#1C1916", shape = 21, stroke = 1.1) +
+  # trenutna točka čitatelja: okomita i vodoravna iscrtkana linija + obojena točka
+  annotate("segment", x = tCur * 100, xend = tCur * 100, y = 0, yend = Rcur,
+           color = cur_col, linetype = "22") +
+  annotate("segment", x = 0, xend = tCur * 100, y = Rcur, yend = Rcur,
+           color = cur_col, linetype = "22") +
+  annotate("point", x = tCur * 100, y = Rcur, size = 3.6,
+           color = "white", fill = cur_col, shape = 21, stroke = 1.1) +
+  # oznaka vrha
+  annotate("text", x = tStar * 100, y = Rmax, vjust = -1.2, hjust = 0.5,
+           label = sprintf("Vrh prihoda  t* = %.0f %%", tStar * 100),
+           fontface = "bold", size = 4.3, color = "#1C1916") +
+  # oznaka statusa (zeleno: rastući dio)
+  annotate("text", x = tCur * 100, y = Rcur,
+           hjust = if (tCur * 100 > 60) 1 else 0, vjust = 1.6,
+           label = if (onRising) "Rastući dio" else "Padajući dio (previsoka stopa)",
+           fontface = "bold", size = 4.0, color = cur_col) +
+  # gornji ispis #1
+  annotate("text", x = 2, y = Rceil * 0.97, hjust = 0, fontface = "bold",
+           size = 4.3, color = "#1C1916",
+           label = sprintf("Trenutna stopa: %d %%   |   Prihod: %.1f   |   Vrh: %.1f pri %.0f %%",
+                           t_now, Rcur, Rmax, tStar * 100)) +
+  # gornji ispis #2 (iskorištenost)
+  annotate("text", x = 2, y = Rceil * 0.91, hjust = 0, size = 4.0, color = "#3A332D",
+           label = sprintf("Iskorištenost: %.0f %% od maksimalnog prihoda",
+                           Rcur / Rmax * 100)) +
+  scale_x_continuous(limits = c(0, 100), expand = c(0, 0)) +
+  scale_y_continuous(limits = c(0, Rceil), expand = c(0, 0)) +
+  labs(x = "Porezna stopa t (%)", y = "Porezni prihodi R")
+```
+:::
 
 Taj koncept pokazuje da porezni prihodi ne rastu linearno s poreznom stopom. Pri vrlo visokim stopama dolazi do smanjenja ekonomske aktivnosti i porezne osnovice, što može smanjiti ukupne prihode. Njegova ključna poruka uklapa se u teoriju optimalnog oporezivanja na način da je ponašanje poreznih obveznika ključno za dizajn porezne politike.
 

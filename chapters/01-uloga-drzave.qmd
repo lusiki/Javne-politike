@@ -88,6 +88,7 @@ Alokacija je Pareto učinkovita kada više nije moguće poboljšati položaj jed
 
 Krivulja ugovora prolazi kroz sve točke u kojima se krivulje indiferencije dvaju potrošača dodiruju. Točke A, B i C primjeri su takvih Pareto učinkovitih alokacija. Graf koji slijedi prikazuje upravo tu kutiju s krivuljom ugovora, a interaktivan je, pa klizači mijenjaju položaj točke A te naklonost svakog potrošača jednom od dvaju dobara.
 
+::: {.content-visible when-format="html"}
 ```{ojs}
 //| echo: false
 viewof eb_controls = Inputs.form({
@@ -267,6 +268,151 @@ eb_pC = eb_controls.pC
 ```
 
 **Što isprobati.** (1) Pomaknite klizač Položaj točke A udesno i točka A klizi po zelenoj krivulji ugovora, no plavi i crveni luk kroz nju ostaju tangentni, što potvrđuje da je svaka točka na krivulji Pareto učinkovita bez obzira na to koliko je nejednaka raspodjela dobra X. (2) Postavite A-ovu naklonost dobru X ([α]{.var}) i B-ovu naklonost dobru X ([β]{.var}) na blisku vrijednost oko 0,5 i zelena krivulja gotovo se izravna u dijagonalu kutije, jer su pri sličnim preferencijama učinkovite alokacije raspoređene ravnomjerno. (3) Razdvojite α prema 0,75 i β prema 0,25 i krivulja ugovora se snažno iskrivi prema rubu, pa Pareto učinkovite točke postaju izrazito asimetrične iako nijedna od njih nije ništa manje učinkovita od ostalih.
+:::
+
+::: {.content-visible when-format="pdf"}
+```{r}
+#| label: fig-edgeworth-print
+#| echo: false
+#| fig-cap: "Točke na krivulji ugovora predstavljaju Pareto učinkovite alokacije."
+#| fig-alt: "Edgeworthova kutija s krivuljom ugovora (zelena) i krivuljama indiferencije dvaju potrošača (plava za potrošača A, crvena za B). Tri označene točke A, B i C leže na krivulji ugovora gdje se krivulje indiferencije dvaju potrošača međusobno tangiraju."
+#| fig-width: 8
+#| fig-height: 5
+# Statički PDF blizanac interaktivnog OJS grafa (zadane vrijednosti klizača).
+source("R/setup.R")
+
+# Zadane vrijednosti klizača (viewof eb_controls)
+alpha <- 0.6   # A-ova naklonost dobru X (α)
+beta  <- 0.4   # B-ova naklonost dobru X (β)
+pA    <- 0.20  # frakcijski položaj točke A duž širine kutije
+pB    <- 0.50  # frakcijski položaj točke B
+pC    <- 0.80  # frakcijski položaj točke C
+
+# Fiksne konstante kutije
+W <- 10  # širina kutije (dobro X)
+H <- 6   # visina kutije (dobro Y)
+
+# Krivulja ugovora (Cobb-Douglas zatvoreni oblik), identično OJS-u
+CC <- function(x) {
+  num <- beta * H * (1 - alpha) * x
+  den <- alpha * (1 - beta) * (W - x) + beta * (1 - alpha) * x
+  num / den
+}
+
+# Uzorkovanje krivulje ugovora (N = 240), filtrirano na P u [0.02, H-0.02]
+N  <- 240
+dx <- (W - 0.1) / N
+xsCC <- seq(0.05, W - 0.05, by = dx)
+cc <- data.frame(Q = xsCC, P = CC(xsCC))
+cc <- cc[cc$P >= 0.02 & cc$P <= H - 0.02, ]
+
+# Tangentne točke na krivulji ugovora
+points <- data.frame(
+  label = c("A", "B", "C"),
+  x = c(pA * W, pB * W, pC * W)
+)
+points$y <- CC(points$x)
+
+# Kratki luk krivulje indiferencije kroz tangentnu točku (x u [xp - span, xp + span])
+arcSpan  <- 1.7
+arcSteps <- 60
+
+# A-ovi lukovi (plavi), mjereni iz A-ova ishodišta (donji lijevi kut)
+# U = x^alpha * y^(1-alpha);  P(x) = (U / x^alpha)^(1/(1-alpha))
+aArcs <- do.call(rbind, lapply(seq_len(nrow(points)), function(i) {
+  p   <- points[i, ]
+  U   <- p$x^alpha * p$y^(1 - alpha)
+  xLo <- max(0.05, p$x - arcSpan)
+  xHi <- min(W - 0.05, p$x + arcSpan)
+  step <- (xHi - xLo) / arcSteps
+  xs  <- seq(xLo, xHi, by = step)
+  d   <- data.frame(Q = xs, P = (U / xs^alpha)^(1 / (1 - alpha)), id = p$label)
+  d[d$P >= 0.05 & d$P <= H - 0.05, ]
+}))
+
+# B-ovi lukovi (crveni), mjereni iz B-ova ishodišta (gornji desni kut)
+# U = (W-x)^beta * (H-y)^(1-beta);  P(x) = H - (U / (W-x)^beta)^(1/(1-beta))
+bArcs <- do.call(rbind, lapply(seq_len(nrow(points)), function(i) {
+  p   <- points[i, ]
+  U   <- (W - p$x)^beta * (H - p$y)^(1 - beta)
+  xLo <- max(0.05, p$x - arcSpan)
+  xHi <- min(W - 0.05, p$x + arcSpan)
+  step <- (xHi - xLo) / arcSteps
+  xs  <- seq(xLo, xHi, by = step)
+  d   <- data.frame(Q = xs, P = H - (U / (W - xs)^beta)^(1 / (1 - beta)), id = p$label)
+  d[d$P >= 0.05 & d$P <= H - 0.05, ]
+}))
+
+# Obris kutije
+boxOutline <- data.frame(
+  Q = c(0, W, W, 0, 0),
+  P = c(0, 0, H, H, 0)
+)
+
+# Položaj oznake krivulje ugovora
+labelX <- min(W - 1.2, points$x[2] + 1.4)
+labelY <- max(0.4, CC(labelX) - 0.55)
+
+# Legenda (unutar kutije, dolje desno)
+legXa <- W - 3.1; legXb <- W - 2.55
+legY1 <- 0.85;    legY2 <- 0.45
+
+# Boje preuzete doslovno iz OJS Plot oznaka
+col_box   <- "#3A332D"  # obris kutije, oznake osi, tekst legende
+col_cc    <- "#1C7C54"  # krivulja ugovora (zelena)
+col_a     <- "#2D5A8E"  # krivulje indiferencije A (plava)
+col_b     <- "#C53030"  # krivulje indiferencije B (crvena)
+col_dot   <- "#1C1916"  # tangentne točke i oznake A/B/C
+
+ggplot() +
+  # Obris kutije
+  geom_path(data = boxOutline, aes(Q, P),
+            color = col_box, linewidth = 0.6) +
+  # Krivulja ugovora
+  geom_line(data = cc, aes(Q, P), color = col_cc, linewidth = 1.0) +
+  # A-ovi lukovi indiferencije (plavi), po tangentnoj točki
+  geom_line(data = aArcs, aes(Q, P, group = id), color = col_a, linewidth = 0.8) +
+  # B-ovi lukovi indiferencije (crveni), po tangentnoj točki
+  geom_line(data = bArcs, aes(Q, P, group = id), color = col_b, linewidth = 0.8) +
+  # Tangentne točke
+  geom_point(data = points, aes(x, y), size = 2.8,
+             fill = col_dot, color = "white", shape = 21, stroke = 0.8) +
+  # Oznake točaka A, B, C
+  geom_text(data = points, aes(x, y, label = label),
+            color = col_dot, fontface = "bold", size = 4.6,
+            hjust = 1, vjust = 0, nudge_x = -0.18, nudge_y = 0.16) +
+  # Oznaka krivulje ugovora
+  annotate("text", x = labelX, y = labelY, label = "Krivulja ugovora",
+           color = col_cc, fontface = "italic", size = 4.2, hjust = 0) +
+  # Oznake kutova
+  annotate("text", x = 0.2, y = -0.3, label = "Potrošač A",
+           color = col_a, fontface = "bold", size = 4.6, hjust = 0) +
+  annotate("text", x = W - 0.2, y = H + 0.3, label = "Potrošač B",
+           color = col_b, fontface = "bold", size = 4.6, hjust = 1) +
+  # Oznake osi (bez Unicode strelica)
+  annotate("text", x = W / 2, y = -0.35, label = "Više dobra X za A",
+           color = col_box, size = 4.2, hjust = 0.5) +
+  annotate("text", x = W / 2, y = H + 0.65, label = "Više dobra X za B",
+           color = col_box, size = 4.2, hjust = 0.5) +
+  annotate("text", x = -0.4, y = H / 2, label = "Više dobra Y za A",
+           color = col_box, size = 4.2, hjust = 0.5, angle = 90) +
+  annotate("text", x = W + 0.45, y = H / 2, label = "Više dobra Y za B",
+           color = col_box, size = 4.2, hjust = 0.5, angle = 90) +
+  # Legenda — uzorci linija
+  annotate("segment", x = legXa, xend = legXb, y = legY1, yend = legY1,
+           color = col_a, linewidth = 1.2) +
+  annotate("segment", x = legXa, xend = legXb, y = legY2, yend = legY2,
+           color = col_b, linewidth = 1.2) +
+  annotate("text", x = legXb + 0.15, y = legY1, label = "Krivulje indiferencije A",
+           color = col_box, size = 3.6, hjust = 0) +
+  annotate("text", x = legXb + 0.15, y = legY2, label = "Krivulje indiferencije B",
+           color = col_box, size = 3.6, hjust = 0) +
+  scale_x_continuous(limits = c(-0.6, W + 0.6), expand = c(0, 0)) +
+  scale_y_continuous(limits = c(-0.6, H + 0.8), expand = c(0, 0)) +
+  coord_fixed() +
+  theme_void()
+```
+:::
 
 Kutija tako pokazuje da učinkovitost ne određuje jednu raspodjelu, nego cijeli niz njih duž krivulje ugovora, od kojih su neke vrlo nejednake. Ostaje pitanje može li tržište samo, bez vanjskog usmjeravanja, dovesti gospodarstvo do neke od tih učinkovitih točaka. Upravo na to odgovaraju dva teorema ekonomike blagostanja.
 

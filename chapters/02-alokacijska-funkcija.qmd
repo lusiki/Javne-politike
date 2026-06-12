@@ -55,6 +55,7 @@ Alokacijska funkcija države zato nije ograničena samo na čista javna dobra. D
 
 Graf koji slijedi prikazuje kako se kod javnog dobra određuje društveno poželjna količina i zašto je tržište samo ne osigurava. Budući da svaka jedinica istovremeno koristi svim potrošačima (nerivalnost), agregatna potražnja dobiva se vertikalnim zbrajanjem pojedinačnih krivulja D~i~, pa taj zbroj predstavlja marginalnu društvenu korist ΣD~i~ = MSB. Društveni optimum Q\* nalazi se ondje gdje MSB siječe granični trošak MC. Bez prisilne koordinacije svaki pojedinac plaća samo prema vlastitoj krivulji potražnje, pa najviše što bi tržište osiguralo (Q~M~) određuje pojedinac s najvećom spremnošću da plati, a razlika između Q~M~ i Q\* posljedica je problema švercerana. Graf je interaktivan, pa klizači mijenjaju broj potrošača, njihovu heterogenost, najvišu spremnost platiti i razinu graničnog troška.
 
+::: {.content-visible when-format="html"}
 ```{ojs}
 //| echo: false
 viewof pg_controls = Inputs.form({
@@ -219,6 +220,123 @@ pg_mc = pg_controls.mc
 ```
 
 **Što isprobati.** (1) Povećajte broj potrošača ([n]{.var}) i pratite kako se vertikalni zbroj ΣDᵢ podiže, a jaz Q\* − Q_M raste jer pojedinačni doprinos ostaje sitan dok društvena korist ne. (2) Spustite razinu graničnog troška ([MC]{.var}) i vidjet ćete da društveni optimum Q\* klizi udesno mnogo brže nego tržišna razina Q_M, što povećava podproizvodnju. (3) Sada povećajte heterogenost potrošača ([Δ]{.var}) uz nepromijenjenu najvišu spremnost platiti ([a₁]{.var}) i primijetite naizgled neočekivan ishod, naime da tržišna razina ostaje vezana uz jednog kupca s najvećom spremnošću na plaćanje, pa se s rastom raznolikosti problem švercerana zaoštrava upravo ondje gdje bi se očekivalo da brojnost pomaže.
+:::
+
+::: {.content-visible when-format="pdf"}
+```{r}
+#| label: fig-javna-dobra-print
+#| echo: false
+#| fig-cap: "Vertikalno zbrajanje individualnih krivulja potražnje za javnim dobrom i problem švercerana: tržišna razina Q_M premala je u odnosu na društveni optimum Q*."
+#| fig-alt: "Graf prikazuje n individualnih silaznih krivulja potražnje i njihov vertikalni zbroj MSB koji siječe horizontalnu krivulju MC u točki Q*. Tržišna razina Q_M, određena samo najvećom individualnom spremnošću na plaćanje, znatno je niža od Q*, što ilustrira nedovoljnu opskrbu javnim dobrom."
+#| fig-width: 7.6
+#| fig-height: 5.2
+# Statički PDF blizanac interaktivnog OJS grafa (zadane vrijednosti klizača).
+source("R/setup.R")
+
+# Zadane vrijednosti klizača (iz Inputs.form):
+n     <- 4    # Broj potrošača (n)
+a_top <- 45   # Najviša spremnost platiti (a₁)
+delta <- 6    # Heterogenost potrošača (Δ)
+MC    <- 60   # Razina graničnog troška (MC)
+
+# Konstante ugrađene u graf:
+slope <- 0.5  # zajednički nagib b svih individualnih krivulja potražnje
+Qmax  <- 100
+Pmax  <- 200
+
+# Paleta za individualne krivulje (svijetlo -> tamno navy/teal), idx %% 6
+palette <- c("#A9C3DA", "#7FA3C6", "#5683B0", "#3D6B99", "#2D5A8E", "#1E3F63")
+
+# Sjecišta individualnih potražnji: a_1 > a_2 > ... > a_n
+a_i <- a_top - (0:(n - 1)) * delta            # = c(45, 39, 33, 27)
+
+# Mreža količina (kao u OJS-u: 0 do 100 korak 0.5)
+Qs <- seq(0, Qmax, by = 0.5)
+
+# Individualne krivulje potražnje: P = max(0, a_i - slope*Q), filtrirano 0<=P<=200
+indiv <- do.call(rbind, lapply(seq_along(a_i), function(idx) {
+  P <- pmax(0, a_i[idx] - slope * Qs)
+  d <- data.frame(Q = Qs, P = P, id = factor(idx))
+  d[d$P >= 0 & d$P <= Pmax, ]
+}))
+
+# Vertikalni (Samuelsonov) zbroj: MSB(q) = Σ max(0, a_i - slope*q)
+msb_P <- sapply(Qs, function(q) sum(pmax(0, a_i - slope * q)))
+msb <- data.frame(Q = Qs, P = msb_P)
+msb <- msb[msb$P >= 0 & msb$P <= Pmax, ]
+
+# MC: vodoravna linija na razini MC
+mcLine <- data.frame(Q = c(0, Qmax), P = c(MC, MC))
+
+P_star <- MC  # razina/cijena uz MC liniju
+
+# Društveni optimum: najveći Q na mreži gdje je MSB(Q) >= MC
+Qstar <- max(msb$Q[msb$P >= MC])                       # = 42.0
+
+# Tržišna (švercerska) razina: samo pojedinac s najvećom spremnošću (D_1) doseže MC
+Qm <- max(0, (a_i[1] - MC) / slope)                    # = 0.0
+
+# Oznake na desnom kraju individualnih krivulja
+xEnd <- pmin(Qmax * 0.9, (a_i / slope) * 0.85)
+yEnd <- pmax(0, a_i - slope * xEnd)
+indivLabels <- data.frame(
+  x = xEnd, y = yEnd,
+  label = paste0("D", seq_along(a_i)),
+  col = palette[((seq_along(a_i) - 1) %% length(palette)) + 1]
+)
+
+# Položaj MSB oznake (prva vrijednost gdje je Q >= 65)
+msb_label_y <- msb$P[which(msb$Q >= Qmax * 0.65)[1]]
+
+ggplot() +
+  # Baseline
+  geom_hline(yintercept = 0, color = "#C9C3B8", linewidth = 0.4) +
+  # Individualne krivulje potražnje
+  geom_line(data = indiv, aes(Q, P, group = id, color = id), linewidth = 0.6) +
+  scale_color_manual(values = palette[((seq_along(a_i) - 1) %% length(palette)) + 1],
+                     guide = "none") +
+  # Agregatna MSB krivulja (debela, tamna)
+  geom_line(data = msb, aes(Q, P), color = "#1C1916", linewidth = 1.2) +
+  # MC linija (vodoravna)
+  geom_line(data = mcLine, aes(Q, P), color = "#6B1F26", linewidth = 1.0) +
+  # Isprekidane vodilice
+  geom_hline(yintercept = P_star, color = "#6B6357", linetype = "dashed", linewidth = 0.4) +
+  annotate("segment", x = Qm,    xend = Qm,    y = 0, yend = P_star,
+           color = "#6B6357", linetype = "dashed", linewidth = 0.4) +
+  annotate("segment", x = Qstar, xend = Qstar, y = 0, yend = P_star,
+           color = "#6B6357", linetype = "dashed", linewidth = 0.4) +
+  # Točke ravnoteže (bijeli obrub)
+  annotate("point", x = Qm,    y = P_star, size = 3.2, color = "white",
+           fill = "#6B1F26", shape = 21, stroke = 1) +
+  annotate("point", x = Qstar, y = P_star, size = 3.2, color = "white",
+           fill = "#1C1916", shape = 21, stroke = 1) +
+  # Oznake individualnih krivulja
+  geom_text(data = indivLabels, aes(x, y, label = label),
+            color = indivLabels$col, vjust = 1.4, fontface = "bold", size = 3.4) +
+  # MSB oznaka
+  annotate("text", x = Qmax * 0.65, y = msb_label_y, label = "ΣD_i = MSB",
+           vjust = -0.8, hjust = 0.5, fontface = "bold", size = 4.2, color = "#1C1916") +
+  # MC oznaka
+  annotate("text", x = Qmax * 0.05, y = MC, label = sprintf("MC = %d", MC),
+           hjust = 0, vjust = -0.8, fontface = "bold", size = 3.8, color = "#6B1F26") +
+  # Oznaka cijene
+  annotate("text", x = 1, y = P_star, label = sprintf("P* = %.0f", P_star),
+           hjust = 0, vjust = 1.6, size = 3.4, color = "#3A332D") +
+  # Oznake količina
+  annotate("text", x = Qm,    y = 3, label = sprintf("Q_M = %.1f", Qm),
+           hjust = 0.5, size = 3.4, color = "#6B1F26") +
+  annotate("text", x = Qstar, y = 3, label = sprintf("Q* = %.1f", Qstar),
+           hjust = 0.5, size = 3.4, color = "#1C1916") +
+  # Glavni ispis: jaz podproizvodnje
+  annotate("text", x = 2, y = Pmax * 0.97,
+           label = sprintf("Premala tržišna proizvodnja: Q* − Q_M = %.1f", Qstar - Qm),
+           hjust = 0, fontface = "bold", size = 4.6, color = "#1C1916") +
+  scale_x_continuous(limits = c(0, Qmax), expand = c(0, 0)) +
+  scale_y_continuous(limits = c(0, Pmax), expand = c(0, 0)) +
+  labs(x = "Količina javnog dobra (Q)", y = "Cijena / Korist (P)") +
+  theme_pubfin()
+```
+:::
 
 Javna dobra time pokazuju prvi način na koji se tržišni i društveni račun razilaze, naime kada korist nekog dobra ne može biti naplaćena pojedinačnom korisniku. Postoji i zrcalni problem, kada se trošak ili korist neke odluke prelije na druge koji u njoj nisu sudjelovali. Tom se obliku neuspjeha okrećemo sljedeće.
 
@@ -236,6 +354,7 @@ Slični primjeri negativnih eksternalija su emisije stakleničkih plinova, buka,
 
 Graf koji slijedi prikazuje standardni model negativne eksternalije. Krivulja MPC (*marginalni privatni trošak*) odražava ono što proizvođač uzima u obzir, dok krivulja MSC (*marginalni društveni trošak*) uključuje i vanjske troškove koje snosi društvo. Tržišno ravnotežno presjecište MPC i potražnje (D) daje premašenu količinu Q~M~ po prenisko postavljenoj cijeni P~MPC~, dok je društveno optimalna razina proizvodnje Q\*, koja se postiže uz cijenu P\*. Osjenčani trokut između Q\* i Q~M~ predstavlja gubitak blagostanja (DWL). Graf je interaktivan, pa klizači mijenjaju vanjski trošak po jedinici i elastičnost potražnje.
 
+::: {.content-visible when-format="html"}
 ```{ojs}
 //| echo: false
 viewof ext_controls = Inputs.form({
@@ -368,6 +487,111 @@ eps_s_ext = ext_controls.eps_s_ext
 
 **Što isprobati.** (1) Povećajte vanjski trošak po jedinici ([e]{.var}) i pratite kako se MSC odmiče od MPC, društveni optimum Q\* pomiče ulijevo, a osjenčani trokut gubitka blagostanja raste. (2) Vratite (e) na nisku vrijednost i vidjet ćete kako se MSC gotovo poklopi s MPC, pa gubitak blagostanja iščezava jer privatni i društveni trošak postaju jedva razlučivi. (3) Uz fiksni (e) smanjite elastičnost potražnje [|εD|]{.var} prema 0,3 i primijetite protuintuitivan ishod, naime da kruta potražnja zadržava količinu blizu Q_M unatoč eksternaliji, pa porez koji bi je trebao obuzdati pomiče količinu vrlo malo, a glavnina tereta pada na cijenu.
 
+:::
+
+::: {.content-visible when-format="pdf"}
+```{r}
+#| label: fig-neg-eksternalija-print
+#| echo: false
+#| fig-cap: "Negativna eksternalija i gubitak blagostanja: tržišna ravnoteža (Q_M, P_MPC) premašuje društveni optimum (Q*, P*) jer MPC ne uključuje vanjski trošak."
+#| fig-alt: "Graf prikazuje silaznu krivulju potražnje D, uzlaznu krivulju marginalnog privatnog troška MPC i krivulju marginalnog društvenog troška MSC pomaknutu gore za iznos vanjskog troška. Tržišna ravnoteža je u presjeku D i MPC, a društveni optimum niže lijevo u presjeku D i MSC. Osjenčani trokut između Q* i Q_M prikazuje gubitak blagostanja."
+#| fig-width: 7.6
+#| fig-height: 5.0
+# Statički PDF blizanac interaktivnog OJS grafa (zadane vrijednosti klizača).
+source("R/setup.R")
+
+# --- Zadane vrijednosti klizača (snimka grafa kakav se prvi prikazuje) ---
+e         <- 20   # vanjski trošak po jedinici (klizač "Vanjski trošak po jedinici (e)")
+eps_d_ext <- 1.0  # elastičnost potražnje |εD| (klizač)
+eps_s_ext <- 1.0  # elastičnost ponude εS (klizač)
+
+# Fiksne sidrišne točke ravnoteže MPC/D u (Qm, Pmpc) = (60, 50)
+Qm   <- 60
+Pmpc <- 50
+Qmax <- 110
+Pmax <- 110
+
+# Nagib potražnje iz elastičnosti: b_d = P / (Q * |εD|); Potražnja: P = a_d - b_d*Q
+b_d <- Pmpc / (Qm * eps_d_ext)
+a_d <- Pmpc + b_d * Qm
+# Nagib MPC iz elastičnosti ponude: b_s = P / (Q * εS); MPC: P = c_s + b_s*Q
+b_s <- Pmpc / (Qm * eps_s_ext)
+c_s <- Pmpc - b_s * Qm
+
+# Društveni optimum (MSC = D): Qstar = (a_d - c_s - e) / (b_d + b_s)
+Qstar <- (a_d - c_s - e) / (b_d + b_s)
+Pstar <- a_d - b_d * Qstar
+
+# Gubitak blagostanja (DWL) = 0.5 * |Pstar - Pmpc| * |Qm - Qstar|  (identično OJS-u)
+dwl <- 0.5 * abs(Pstar - Pmpc) * abs(Qm - Qstar)
+
+# Krivulje (ograničene na vidljivi raspon cijena 0..Pmax)
+Qgrid  <- 0:Qmax
+demand <- data.frame(Q = Qgrid, P = a_d - b_d * Qgrid)
+demand <- demand[demand$P >= 0 & demand$P <= Pmax, ]
+mpc    <- data.frame(Q = Qgrid, P = c_s + b_s * Qgrid)
+mpc    <- mpc[mpc$P >= 0 & mpc$P <= Pmax, ]
+msc    <- data.frame(Q = Qgrid, P = c_s + e + b_s * Qgrid)
+msc    <- msc[msc$P >= 0 & msc$P <= Pmax, ]
+
+# Trokut gubitka blagostanja: (Q*, P*), (Qm, Pmpc), (Qm, P*)
+dwlTri <- data.frame(
+  Q = c(Qstar, Qm, Qm),
+  P = c(Pstar, Pmpc, Pstar)
+)
+
+ggplot() +
+  # Osnovica na y = 0
+  geom_hline(yintercept = 0, color = "#C9C3B8", linewidth = 0.5) +
+  # Osjenčani trokut gubitka blagostanja
+  geom_polygon(data = dwlTri, aes(Q, P),
+               fill = "#D8B5B3", alpha = 0.65,
+               color = "#6B1F26", linewidth = 0.4) +
+  # Krivulje
+  geom_line(data = demand, aes(Q, P), color = "#2D5A8E", linewidth = 1.1) +
+  geom_line(data = mpc,    aes(Q, P), color = "#4A6B5C", linewidth = 0.9) +
+  geom_line(data = msc,    aes(Q, P), color = "#6B1F26", linewidth = 0.9) +
+  # Isprekidane vodilje
+  geom_hline(yintercept = Pstar, color = "#6B6357", linetype = "dashed", linewidth = 0.4) +
+  geom_hline(yintercept = Pmpc,  color = "#6B6357", linetype = "dashed", linewidth = 0.4) +
+  geom_segment(aes(x = Qstar, xend = Qstar, y = 0, yend = Pstar),
+               color = "#6B6357", linetype = "dashed", linewidth = 0.4) +
+  geom_segment(aes(x = Qm, xend = Qm, y = 0, yend = Pmpc),
+               color = "#6B6357", linetype = "dashed", linewidth = 0.4) +
+  # Točke ravnoteže (bijeli obrub kao u OJS-u)
+  geom_point(aes(x = Qm,    y = Pmpc),  size = 3, color = "white", fill = "#4A6B5C",
+             shape = 21, stroke = 1.1) +
+  geom_point(aes(x = Qstar, y = Pstar), size = 3, color = "white", fill = "#6B1F26",
+             shape = 21, stroke = 1.1) +
+  # Oznake krivulja
+  annotate("text", x = Qmax * 0.82, y = a_d - b_d * Qmax * 0.82 + 4,
+           label = sprintf("D (|εD|=%.2f)", eps_d_ext),
+           color = "#2D5A8E", fontface = "bold", size = 3.6, hjust = 0.5) +
+  annotate("text", x = Qmax * 0.82, y = c_s + b_s * Qmax * 0.82 + 4,
+           label = sprintf("MPC (εS=%.2f)", eps_s_ext),
+           color = "#4A6B5C", fontface = "bold", size = 3.6, hjust = 0.5) +
+  annotate("text", x = Qmax * 0.7, y = c_s + e + b_s * Qmax * 0.7 + 4,
+           label = sprintf("MSC (e=%g)", e),
+           color = "#6B1F26", fontface = "bold", size = 3.6, hjust = 0.5) +
+  # Oznake cijena i količina uz osi
+  annotate("text", x = 1, y = Pstar + 3, label = sprintf("P* = %.1f", Pstar),
+           color = "#6B1F26", size = 3.2, hjust = 0) +
+  annotate("text", x = 1, y = Pmpc - 4, label = sprintf("P_MPC = %.1f", Pmpc),
+           color = "#4A6B5C", size = 3.2, hjust = 0) +
+  annotate("text", x = Qstar, y = 2, label = sprintf("Q* = %.1f", Qstar),
+           color = "#6B1F26", size = 3.2, hjust = 0.5) +
+  annotate("text", x = Qm, y = 2, label = sprintf("Q_M = %.1f", Qm),
+           color = "#4A6B5C", size = 3.2, hjust = 0.5) +
+  # Ispis gubitka blagostanja
+  annotate("text", x = 2, y = Pmax * 0.97,
+           label = sprintf("Gubitak blagostanja (DWL) = %.1f", dwl),
+           color = "#6B1F26", fontface = "bold", size = 4.4, hjust = 0) +
+  scale_x_continuous(limits = c(0, Qmax), expand = c(0, 0)) +
+  scale_y_continuous(limits = c(0, Pmax), expand = c(0, 0)) +
+  labs(x = "Količina (Q)", y = "Cijena / Trošak (P)")
+```
+:::
+
 Negativna eksternalija pokazuje slučaj u kojem tržište proizvodi previše nečega štetnog. Jednako je čest i obrnut slučaj, kada aktivnost stvara korist za druge pa je tržište proizvodi premalo. Taj zrcalni problem i instrumente kojima ga država ispravlja razmatramo u nastavku.
 
 ## Pozitivne eksternalije i instrumenti ispravljanja
@@ -378,6 +602,7 @@ Kod negativnih eksternalija tržište obično proizvodi previše aktivnosti koja
 
 Graf koji slijedi prikazuje zrcalnu sliku prethodnog, slučaj u kojem društvene koristi premašuju privatne. Krivulja MPB (*marginalna privatna korist*) odražava potražnju koju potrošači sami iskazuju, dok krivulja MSB (*marginalna društvena korist*) uključuje i vanjske koristi, primjerice veću produktivnost cijelog gospodarstva od obrazovanijih pojedinaca. Tržišno presjecište MPB i ponude (S) daje nedovoljnu količinu Q~M~ po cijeni P~M~, dok je društveno optimalna razina Q\* uz cijenu P\*. Osjenčani trokut prikazuje propuštenu društvenu korist, odnosno gubitak blagostanja zbog premale proizvodnje. Graf je interaktivan, pa klizači mijenjaju vanjsku korist po jedinici i elastičnost ponude.
 
+::: {.content-visible when-format="html"}
 ```{ojs}
 //| echo: false
 viewof pos_controls = Inputs.form({
@@ -511,6 +736,109 @@ eps_s_pos = pos_controls.eps_s_pos
 ```
 
 **Što isprobati.** (1) Povećajte vanjsku korist po jedinici ([b]{.var}) i pratite kako se MSB podiže iznad MPB, društveni optimum Q\* pomiče udesno, a osjenčani trokut propuštene koristi raste jer tržište proizvodi premalo. (2) Spustite (b) prema nuli i vidjet ćete kako se MSB stopi s MPB, pa propuštena korist nestaje i tržišna razina Q_M postaje društveno optimalna. (3) Uz izdašnu vanjsku korist smanjite elastičnost ponude [εS]{.var} prema 0,3 i primijetite protuintuitivan ishod, naime da kruta ponuda zadržava količinu blizu Q_M unatoč velikoj vanjskoj koristi, pa subvencija koja bi je trebala potaknuti diže uglavnom cijenu, a količinu pomiče tek skromno.
+:::
+
+::: {.content-visible when-format="pdf"}
+```{r}
+#| label: fig-poz-eksternalija-print
+#| echo: false
+#| fig-cap: "Pozitivna eksternalija i propuštena korist: tržišna razina Q_M preniska je u odnosu na društveni optimum Q* jer MPB ne uključuje vanjsku korist."
+#| fig-alt: "Graf prikazuje krivulju marginalnog privatnog benefita MPB i krivulju marginalnog društvenog benefita MSB pomaknutu gore za iznos vanjske koristi, te uzlaznu krivulju ponude S. Tržišna ravnoteža je u presjeku MPB i S, a society optimum desno gore u presjeku MSB i S. Osjenčani trokut prikazuje propuštenu društvenu korist."
+#| fig-width: 7.6
+#| fig-height: 5.0
+# Statički PDF blizanac interaktivnog OJS grafa (zadane vrijednosti klizača).
+source("R/setup.R")
+
+# Zadane vrijednosti klizača
+b         <- 20    # vanjska korist po jedinici (b)
+eps_d_pos <- 1.0   # elastičnost potražnje |εD|
+eps_s_pos <- 1.0   # elastičnost ponude εS
+
+# Fiksna tržišna ravnoteža MPB/S u (Qm, Pm) = (50, 50)
+Qm   <- 50
+Pm   <- 50
+Qmax <- 110
+Pmax <- 110
+
+# Nagib MPB iz elastičnosti: b_d = P/(Q*|εD|); MPB: P = a_d - b_d*Q
+b_d <- Pm / (Qm * eps_d_pos)          # = 1.0
+a_d <- Pm + b_d * Qm                  # = 100
+
+# Nagib ponude: b_s = P/(Q*εS); S: P = c_s + b_s*Q
+b_s <- Pm / (Qm * eps_s_pos)          # = 1.0
+c_s <- Pm - b_s * Qm                  # = 0
+
+# Društveni optimum: MSB = S  =>  (a_d + b) - b_d*Q* = c_s + b_s*Q*
+Qstar <- (a_d + b - c_s) / (b_d + b_s)  # = 60
+Pstar <- c_s + b_s * Qstar              # = 60
+
+# MSB pri tržišnoj količini Q_M (gornji lijevi vrh trokuta propuštene koristi)
+MSB_Qm <- a_d + b - b_d * Qm            # = 70
+
+# Krivulje (filtrirane na 0 <= P <= Pmax, Q u 0..110)
+Qs <- 0:Qmax
+mpb    <- subset(data.frame(Q = Qs, P = a_d - b_d * Qs),     P >= 0 & P <= Pmax)
+msb    <- subset(data.frame(Q = Qs, P = a_d + b - b_d * Qs), P >= 0 & P <= Pmax)
+supply <- subset(data.frame(Q = Qs, P = c_s + b_s * Qs),     P >= 0 & P <= Pmax)
+
+# Trokut propuštene koristi (MSB gore, S dolje, od Q_M do Q*)
+dwlTri <- data.frame(
+  Q = c(Qm, Qm,     Qstar),
+  P = c(Pm, MSB_Qm, Pstar)
+)
+
+# Površina DWL = 0.5 * |MSB(Q_M) - P_M| * |Q* - Q_M|  (identično OJS-u)
+dwl <- 0.5 * abs(MSB_Qm - Pm) * abs(Qstar - Qm)   # = 100.0
+
+ggplot() +
+  geom_hline(yintercept = 0, color = "#C9C3B8") +
+  # trokut propuštene koristi (osjenčano)
+  geom_polygon(data = dwlTri, aes(Q, P),
+               fill = "#E8D6B8", alpha = 0.65,
+               color = "#C8985E", linewidth = 0.4) +
+  # krivulje
+  geom_line(data = mpb,    aes(Q, P), color = "#2D5A8E", linewidth = 1.0) +
+  geom_line(data = msb,    aes(Q, P), color = "#2B6CB0", linewidth = 0.8) +
+  geom_line(data = supply, aes(Q, P), color = "#4A6B5C", linewidth = 0.8) +
+  # isprekidane vodilje
+  geom_hline(yintercept = Pstar, linetype = "dashed", linewidth = 0.4, color = "#6B6357") +
+  geom_hline(yintercept = Pm,    linetype = "dashed", linewidth = 0.4, color = "#6B6357") +
+  geom_segment(aes(x = Qstar, xend = Qstar, y = 0, yend = Pstar),
+               linetype = "dashed", linewidth = 0.4, color = "#6B6357") +
+  geom_segment(aes(x = Qm, xend = Qm, y = 0, yend = MSB_Qm),
+               linetype = "dashed", linewidth = 0.4, color = "#6B6357") +
+  # ravnotežne točke
+  geom_point(aes(x = Qm,    y = Pm),    size = 2.6, shape = 21, fill = "#2D5A8E", color = "white", stroke = 1) +
+  geom_point(aes(x = Qstar, y = Pstar), size = 2.6, shape = 21, fill = "#2B6CB0", color = "white", stroke = 1) +
+  # oznake krivulja
+  annotate("text", x = Qmax * 0.82, y = a_d - b_d * Qmax * 0.82,
+           label = sprintf("D = MPB (|εD|=%.2f)", eps_d_pos),
+           color = "#2D5A8E", fontface = "bold", size = 3.5, vjust = -0.6) +
+  annotate("text", x = Qmax * 0.7, y = a_d + b - b_d * Qmax * 0.7,
+           label = sprintf("MSB (b=%d)", as.integer(b)),
+           color = "#2B6CB0", fontface = "bold", size = 3.5, vjust = -0.6) +
+  annotate("text", x = Qmax * 0.82, y = c_s + b_s * Qmax * 0.82,
+           label = sprintf("S (εS=%.2f)", eps_s_pos),
+           color = "#4A6B5C", fontface = "bold", size = 3.5, vjust = -0.6) +
+  # oznake cijena i količina na osima
+  annotate("text", x = 1, y = Pstar, label = sprintf("P* = %.1f", Pstar),
+           color = "#2B6CB0", size = 3.2, hjust = 0, vjust = -0.6) +
+  annotate("text", x = 1, y = Pm, label = sprintf("P_M = %.1f", Pm),
+           color = "#2D5A8E", size = 3.2, hjust = 0, vjust = 1.4) +
+  annotate("text", x = Qm, y = 2, label = sprintf("Q_M = %.1f", Qm),
+           color = "#2D5A8E", size = 3.2, hjust = 0.5) +
+  annotate("text", x = Qstar, y = 2, label = sprintf("Q* = %.1f", Qstar),
+           color = "#2B6CB0", size = 3.2, hjust = 0.5) +
+  # ispis propuštene koristi (DWL)
+  annotate("text", x = 2, y = Pmax * 0.97,
+           label = sprintf("Propuštena korist (DWL) = %.1f", dwl),
+           color = "#9A6F38", fontface = "bold", size = 4.2, hjust = 0) +
+  scale_x_continuous(limits = c(0, Qmax), expand = c(0, 0)) +
+  scale_y_continuous(limits = c(0, Pmax), expand = c(0, 0)) +
+  labs(x = "Količina (Q)", y = "Cijena / Korist (P)") +
+  theme_pubfin()
+```
+:::
 
 Najpoznatiji instrument za ispravljanje negativnih eksternalija je **Pigouov porez**. Ako aktivnost stvara društveni trošak koji nije uključen u cijenu, država može uvesti porez koji povećava privatni trošak te aktivnosti. Time se poduzeća i potrošači potiču da smanje štetno ponašanje. Primjeri su porezi na emisije ugljika, trošarine na gorivo, porezi na duhan ili porezi na alkohol. Logika je jednostavna jer ako neka aktivnost stvara društveni trošak, njezina cijena treba taj trošak odražavati.
 
@@ -536,6 +864,7 @@ Asimetrične informacije stvaraju dva važna problema, **nepovoljan izbor** i **
 
 Graf koji slijedi prikazuje kako nepovoljan izbor postupno istiskuje kvalitetnu robu s tržišta. Kada kupci ne razlikuju kvalitetu, spremni su platiti samo prosječnu cijenu, a ta je cijena preniska za prodavače kvalitetne robe (krivulja S~visoka~), pa oni napuštaju tržište. Ostaje samo loša roba (krivulja S~loša~), a ravnoteža se pomiče s točke (Q₁, P~visoka~) na (Q₂, P~niska~), pri čemu se u graničnim slučajevima tržište može potpuno urušiti. Graf je interaktivan, pa klizači mijenjaju premiju za kvalitetu i elastičnost potražnje.
 
+::: {.content-visible when-format="html"}
 ```{ojs}
 //| echo: false
 viewof asi_controls = Inputs.form({
@@ -669,6 +998,117 @@ eps_s_asi = asi_controls.eps_s_asi
 ```
 
 **Što isprobati.** (1) Povećavajte premiju za kvalitetu ([Δ]{.var}) i pratite kako se S_visoka sve više odiže od S_loša, pa ravnoteža kvalitetne robe (Q₁, P_visoka) klizi ulijevo i prema gore, a pad količine ΔQ raste. (2) Gurnite (Δ) dovoljno visoko i vidjet ćete kako Q₁ pada na nulu, pa se pojavljuje upozorenje da se tržište kvalitetne robe potpuno urušava, baš kao u Akerlofovu primjeru limuna. (3) Sada uz visoku premiju smanjite elastičnost potražnje [|εD|]{.var} prema 0,3 i primijetite protuintuitivan ishod, naime da kruta potražnja prigušuje pad količine, ali zato cijenu kvalitetne robe gura znatno više, pa se asimetrija očituje skokom cijene umjesto nestankom količine.
+:::
+
+::: {.content-visible when-format="pdf"}
+```{r}
+#| label: fig-nepovoljan-izbor-print
+#| echo: false
+#| fig-cap: "Tržište limuna i nepovoljan izbor: informacijska asimetrija tjera kvalitetne prodavače s tržišta, pa ravnoteža pada s (Q₁, P_visoka) na (Q₂, P_niska)."
+#| fig-alt: "Graf prikazuje jednu silaznu krivulju potražnje i dvije uzlazne krivulje ponude: S_loša (niža) i S_visoka (viša, isprekidana). Crvena strelica pokazuje pomak ponude prema dolje, dok se ravnoteža pomiče ulijevo i prema nižoj cijeni, ilustrirajući kako informacijska asimetrija urušava tržište kvalitetne robe."
+#| fig-width: 7.6
+#| fig-height: 5.0
+# Statički PDF blizanac interaktivnog OJS grafa (zadane vrijednosti klizača
+# Δ = 20, |εD| = 1.0, εS = 1.0).
+source("R/setup.R")
+
+# --- Zadane vrijednosti klizača (hardkodirane) -----------------------------
+dQ        <- 20   # premija za kvalitetu Δ (zadana vrijednost klizača qprem)
+eps_d_asi <- 1.0  # elastičnost potražnje |εD| (zadana vrijednost klizača)
+eps_s_asi <- 1.0  # elastičnost ponude εS (zadana vrijednost klizača)
+
+# --- Fiksne/izvedene konstante (identično OJS-u) ---------------------------
+Q2    <- 60   # količina u ravnoteži loše kvalitete
+P_low <- 50   # cijena u ravnoteži loše kvalitete
+Qmax  <- 110
+Pmax  <- 120
+
+# Nagib potražnje iz elastičnosti u ravnoteži loše kvalitete
+b_d <- P_low / (Q2 * eps_d_asi)
+a_d <- P_low + b_d * Q2          # D: P = a_d - b_d*Q
+
+# Nagib ponude iz elastičnosti u ravnoteži loše kvalitete
+b_s <- P_low / (Q2 * eps_s_asi)
+c_s <- P_low - b_s * Q2          # S_loša: P = c_s + b_s*Q
+# S_visoka pomaknuta gore za Δ: P = (c_s + Δ) + b_s*Q
+
+# Ravnoteža kvalitetne robe: D = S_visoka  ->  Q1 = (a_d - c_s - Δ)/(b_d + b_s)
+Q1     <- (a_d - c_s - dQ) / (b_d + b_s)   # = 48.0 pri zadanim vrijednostima
+P_high <- a_d - b_d * Q1                    # = 60.0 pri zadanim vrijednostima
+
+# Prikazani izračuni (iste formule kao u OJS-u)
+qDrop <- Q2 - Q1        # pad količine ΔQ = 12.0
+pDrop <- P_high - P_low # pad cijene  ΔP = 10.0
+collapse <- Q1 <= 0     # urušavanje tržišta kvalitetne robe
+
+# --- Krivulje uzorkovane na Q = 0..Qmax, filtrirane na 0 <= P <= Pmax ------
+Qs <- 0:Qmax
+demand <- subset(data.frame(Q = Qs, P = a_d - b_d * Qs),       P >= 0 & P <= Pmax)
+sLow   <- subset(data.frame(Q = Qs, P = c_s + b_s * Qs),       P >= 0 & P <= Pmax)
+sHigh  <- subset(data.frame(Q = Qs, P = c_s + dQ + b_s * Qs),  P >= 0 & P <= Pmax)
+
+# Reprezentativni Q za strelicu pomaka (Q2 * 0.55)
+arr_x  <- Q2 * 0.55
+arr_y1 <- c_s + dQ + b_s * arr_x   # vrh (S_visoka)
+arr_y2 <- c_s + b_s * arr_x        # dno (S_loša)
+
+# Tekst gornjeg očitanja #1 (upozorenje ako se tržište urušava)
+readout1 <- if (collapse) "Trziste se urusava (Q1 <= 0)" else sprintf("Pad kolicine: dQ = %.1f", qDrop)
+
+ggplot() +
+  # Bazna os (ruleY na 0)
+  geom_hline(yintercept = 0, color = "#C9C3B8") +
+  # Krivulje
+  geom_line(data = demand, aes(Q, P), color = "#2D5A8E", linewidth = 1.0) +
+  geom_line(data = sLow,   aes(Q, P), color = "#4A6B5C", linewidth = 0.8) +
+  geom_line(data = sHigh,  aes(Q, P), color = "#4A6B5C", linewidth = 0.8,
+            linetype = "dashed") +
+  # Strelica pomaka ponude prema dolje (S_visoka -> S_loša)
+  annotate("segment", x = arr_x, xend = arr_x, y = arr_y1, yend = arr_y2,
+           color = "#6B1F26", linewidth = 0.8,
+           arrow = arrow(length = unit(0.18, "cm"), type = "closed")) +
+  # Isprekidane cjenovne/količinske vodilice
+  geom_hline(yintercept = P_high, color = "#6B6357", linetype = "dashed", linewidth = 0.4) +
+  geom_hline(yintercept = P_low,  color = "#6B6357", linetype = "dashed", linewidth = 0.4) +
+  annotate("segment", x = Q1, xend = Q1, y = 0, yend = P_high,
+           color = "#6B6357", linetype = "dashed", linewidth = 0.4) +
+  annotate("segment", x = Q2, xend = Q2, y = 0, yend = P_low,
+           color = "#6B6357", linetype = "dashed", linewidth = 0.4) +
+  # Ravnotežne točke
+  annotate("point", x = Q1, y = P_high, size = 3, color = "#1C1916") +
+  annotate("point", x = Q2, y = P_low,  size = 3, color = "#6B1F26") +
+  # Oznake krivulja
+  annotate("text", x = Qmax * 0.82, y = a_d - b_d * Qmax * 0.82,
+           label = sprintf("D (|eD|=%.2f)", eps_d_asi),
+           color = "#2D5A8E", fontface = "bold", size = 3.6, vjust = -0.6) +
+  annotate("text", x = Qmax * 0.82, y = c_s + b_s * Qmax * 0.82,
+           label = sprintf("S_loša (eS=%.2f)", eps_s_asi),
+           color = "#4A6B5C", fontface = "bold", size = 3.6, vjust = -0.6) +
+  annotate("text", x = Qmax * 0.7, y = c_s + dQ + b_s * Qmax * 0.7,
+           label = sprintf("S_visoka (delta=%g)", dQ),
+           color = "#4A6B5C", fontface = "bold", size = 3.6, vjust = -0.6) +
+  # Cjenovne oznake
+  annotate("text", x = 1, y = P_high, label = sprintf("P_visoka = %.1f", P_high),
+           hjust = 0, vjust = -0.6, size = 3.3, color = "#1C1916") +
+  annotate("text", x = 1, y = P_low,  label = sprintf("P_niska = %.1f", P_low),
+           hjust = 0, vjust = 1.4, size = 3.3, color = "#6B1F26") +
+  # Količinske oznake
+  annotate("text", x = Q1, y = 2, label = sprintf("Q_1 = %.1f", Q1),
+           hjust = 0.5, size = 3.3, color = "#1C1916") +
+  annotate("text", x = Q2, y = 2, label = sprintf("Q_2 = %.1f", Q2),
+           hjust = 0.5, size = 3.3, color = "#6B1F26") +
+  # Gornja očitanja
+  annotate("text", x = 2, y = Pmax * 0.97, label = readout1,
+           hjust = 0, fontface = "bold", size = 4.2, color = "#6B1F26") +
+  annotate("text", x = 2, y = Pmax * 0.91,
+           label = sprintf("Pad cijene: dP = %.1f", pDrop),
+           hjust = 0, fontface = "bold", size = 3.9, color = "#1C1916") +
+  scale_x_continuous(limits = c(0, Qmax), expand = c(0, 0)) +
+  scale_y_continuous(limits = c(0, Pmax), expand = c(0, 0)) +
+  labs(x = "Količina (Q)", y = "Cijena (P)") +
+  theme_pubfin()
+```
+:::
 
 Nepovoljan izbor pokazuje kako informacijska neravnoteža djeluje već prije sklapanja ugovora, kroz odabir onih koji u razmjenu ulaze. Drugi se njezin oblik javlja tek nakon što je ugovor sklopljen, kada zaštita koju on pruža počne mijenjati ponašanje strane koja je njome pokrivena.
 
@@ -678,6 +1118,7 @@ Moralni hazard nastaje nakon sklapanja ugovora. To je situacija u kojoj osiguran
 
 Graf koji slijedi prikazuje kako osiguranje mijenja razinu rizika koju akter dragovoljno preuzima. Agent bira razinu rizičnog ponašanja e uspoređujući privatnu korist, primjerice brzinu, prinos ili udobnost, s troškom mogućih šteta. Bez osiguranja snosi puni trošak C(e) i bira nisku razinu rizika e\*, a s osiguranjem osiguratelj pokriva dio (θ) štete, pa agent percipira samo (1−θ)·C(e), krivulja postaje plića i bira višu razinu rizika e~M~ > e\*. Razlika je posljedica moralnog hazarda. Graf je interaktivan, pa klizači mijenjaju pokriće osiguranja i konveksnost troška.
 
+::: {.content-visible when-format="html"}
 ```{ojs}
 //| echo: false
 viewof mh_controls = Inputs.form({
@@ -793,6 +1234,96 @@ mh_m = mh_controls.m
 ```
 
 **Što isprobati.** (1) Povećavajte pokriće osiguranja ([θ]{.var}) prema 0,9 i pratite kako krivulja S osiguranjem postaje sve plića, pa agent klizi s optimalne razine e\* na sve viši e_M, a postotni porast rizika i neefikasnost rastu. (2) Vratite (θ) na nulu i vidjet ćete da se dvije krivulje poklope, pa e_M pada na e\* i moralni hazard nestaje jer agent ponovno snosi puni trošak. (3) Uz osiguranje smanjite konveksnost troška ([k]{.var}) i primijetite protuintuitivan ishod, naime da blaži rast troška znači slabiju prirodnu kočnicu rizika, pa iste razine pokrića vode k razmjerno većem skoku e_M nego kad je trošak strmo konveksan.
+:::
+
+::: {.content-visible when-format="pdf"}
+```{r}
+#| label: fig-moralni-hazard-print
+#| echo: false
+#| fig-cap: "Moralni hazard: osiguranje smanjuje percipiranu krivulju troška, pa agent bira višu razinu rizičnog ponašanja e_M umjesto optimalne e*."
+#| fig-alt: "Graf prikazuje dvije konveksne krivulje troška kao funkciju razine rizičnog ponašanja e. Crvena isprekidana krivulja Bez osiguranja strmija je, a crna puna krivulja S osiguranjem položenija jer agent percipira samo dio troška. Optimalni e* je lijevo od e_M kojeg agent bira uz osiguranje."
+#| fig-width: 7.6
+#| fig-height: 5.0
+# Statički PDF blizanac interaktivnog OJS grafa (zadane vrijednosti klizača).
+source("R/setup.R")
+
+theta <- 0.5   # pokriće osiguranja θ (zadana vrijednost klizača)
+k     <- 0.15  # konveksnost troška k (zadana vrijednost klizača)
+m     <- 1.5   # marginalna korist od rizika m (zadana vrijednost klizača)
+emax  <- 12
+Cmax  <- 18
+
+# Funkcija troška C(e) = 1 + k*e^2 (konveksna).
+# Bez osiguranja agent snosi puni C(e); s osiguranjem percipira (1-theta) varijabilnog troška.
+# Izabrani e: MB = m, MC = 2*k_eff*e  =>  e = m / (2*k_eff)
+eStar <- m / (2 * k)                 # 1.5/(2*0.15) = 5.00
+eM    <- m / (2 * k * (1 - theta))   # 1.5/(2*0.15*0.5) = 10.00
+eMshown <- min(eM, emax * 0.98)      # min(10, 11.76) = 10.00
+
+# Krivulje troška, filtrirane na C <= Cmax (identično OJS-u)
+es <- seq(0, emax + 0.05, by = 0.05)
+cFull <- data.frame(e = es, C = 1 + k * es * es)
+cFull <- cFull[cFull$C <= Cmax, ]
+cIns  <- data.frame(e = es, C = 1 + k * (1 - theta) * es * es)
+cIns  <- cIns[cIns$C <= Cmax, ]
+
+# Troškovi na izabranim razinama e (stvarni društveni trošak, na punoj krivulji)
+C_at_eStar <- 1 + k * eStar * eStar                  # 4.75
+C_at_eM    <- 1 + k * min(eM, emax) * min(eM, emax)  # 16.00
+
+# Višak društvenog troška od moralnog hazarda naspram dobivene neto koristi
+dwl <- max(0, (C_at_eM - C_at_eStar) - m * (eM - eStar))  # 3.75
+
+# Vrhovi okomitih crta (na krivulji koju agent zaista vidi)
+y_eStar   <- 1 + k * eStar * eStar
+y_eMshown <- 1 + k * (1 - theta) * eMshown * eMshown
+
+ggplot() +
+  geom_hline(yintercept = 0, color = "#C9C3B8", linewidth = 0.5) +
+  # Okomite isprekidane crte na e* i e_M
+  geom_segment(aes(x = eStar, xend = eStar, y = 0, yend = y_eStar),
+               color = "#6B6357", linetype = "dashed", linewidth = 0.4) +
+  geom_segment(aes(x = eMshown, xend = eMshown, y = 0, yend = y_eMshown),
+               color = "#6B6357", linetype = "dashed", linewidth = 0.4) +
+  # Krivulje troška
+  geom_line(data = cFull, aes(e, C),
+            color = "#6B1F26", linewidth = 1.1, linetype = "longdash") +
+  geom_line(data = cIns, aes(e, C),
+            color = "#1C1916", linewidth = 1.1) +
+  # Ravnotežne točke (svaka na krivulji koju agent zaista vidi)
+  geom_point(aes(x = eStar, y = y_eStar),
+             size = 3, color = "white", fill = "#6B1F26",
+             shape = 21, stroke = 1) +
+  geom_point(aes(x = eMshown, y = y_eMshown),
+             size = 3, color = "white", fill = "#1C1916",
+             shape = 21, stroke = 1) +
+  # Oznake krivulja
+  annotate("text", x = emax * 0.78, y = 1 + k * (emax * 0.78)^2,
+           label = "Bez osiguranja", color = "#6B1F26",
+           fontface = "bold", size = 4, hjust = 1, vjust = -0.6) +
+  annotate("text", x = emax * 0.88, y = 1 + k * (1 - theta) * (emax * 0.88)^2,
+           label = "S osiguranjem (moralni hazard)", color = "#1C1916",
+           fontface = "bold", size = 4, hjust = 1, vjust = -0.6) +
+  # Oznake na osi x za e* i e_M
+  annotate("text", x = eStar, y = 0.4,
+           label = sprintf("e* = %.2f", eStar),
+           color = "#6B1F26", size = 3.5, hjust = 0.5) +
+  annotate("text", x = eMshown, y = 0.4,
+           label = sprintf("e_M = %.2f", eM),
+           color = "#1C1916", size = 3.5, hjust = 0.5) +
+  # Gornji ispisi
+  annotate("text", x = 0.2, y = Cmax * 0.97,
+           label = sprintf("Porast rizika: e_M - e* = %.2f (+%.0f %%)",
+                           eM - eStar, ((eM - eStar) / eStar) * 100),
+           color = "#1C1916", fontface = "bold", size = 4.6, hjust = 0) +
+  annotate("text", x = 0.2, y = Cmax * 0.91,
+           label = sprintf("Neefikasnost (gubitak blagostanja) = %.2f", dwl),
+           color = "#6B1F26", fontface = "bold", size = 4.2, hjust = 0) +
+  scale_x_continuous(limits = c(0, emax), expand = c(0, 0)) +
+  scale_y_continuous(limits = c(0, Cmax), expand = c(0, 0)) +
+  labs(x = "Rizično ponašanje (e)", y = "Trošak / šteta")
+```
+:::
 
 Asimetrične informacije posebno su važne u zdravstvu, financijama, obrazovanju, osiguranju i tržištu rada. Pacijent obično zna manje od liječnika o dijagnozi, terapiji i kvaliteti liječenja. Štediša zna manje od financijske institucije o složenim financijskim proizvodima. Roditelj ne može uvijek lako procijeniti kvalitetu škole. Poslodavac ne zna uvijek stvarnu produktivnost radnika prije zapošljavanja.
 
@@ -818,6 +1349,7 @@ Poseban slučaj je **prirodni monopol**. Prirodni monopol nastaje kada su fiksni
 
 Graf koji slijedi prikazuje kako tržišna moć podiže cijenu i smanjuje proizvedenu količinu u odnosu na konkurenciju. Monopolist određuje količinu na razini gdje se marginalni prihod (MR) izjednačava s marginalnim troškom (MC), a zatim postavlja cijenu prema krivulji potražnje D. Rezultat je niža količina Q~M~ i viša cijena P~M~ u odnosu na konkurentsku ravnotežu (Q~C~, P~C~), u kojoj bi D sjekao MC, a osjenčani trokut između Q~M~ i Q~C~ predstavlja gubitak blagostanja (*deadweight loss*) zbog tržišne moći. Graf je interaktivan, pa klizači mijenjaju elastičnost potražnje i nagib marginalnog troška.
 
+::: {.content-visible when-format="html"}
 ```{ojs}
 //| echo: false
 viewof mon_controls = Inputs.form({
@@ -948,6 +1480,121 @@ eps_s_mon = mon_controls.eps_s_mon
 ```
 
 **Što isprobati.** (1) Smanjite elastičnost potražnje [|εD|]{.var} prema 0,5 i pratite kako monopolist širi razmak između Q_M i konkurentske količine Q_C, pa monopolska marža i osjenčani trokut mrtvog tereta rastu. (2) Povećajte |εD| prema 3,0 i vidjet ćete kako se Q_M približava Q_C, a cijena P_M pada prema konkurentskoj P_C jer kupci koji lako odustaju oduzimaju monopolistu prostor za podizanje cijene. (3) Uz elastičnu potražnju spustite elastičnost MC ([εS]{.var}) prema 0,4 i primijetite protuintuitivan ishod, naime da strmiji marginalni trošak sam po sebi sužava jaz količina, pa gubitak blagostanja od monopola ovisi ne samo o tržišnoj moći nego i o tome koliko se brzo penju troškovi proizvodnje.
+:::
+
+::: {.content-visible when-format="pdf"}
+```{r}
+#| label: fig-monopol-print
+#| echo: false
+#| fig-cap: "Monopol i gubitak blagostanja: monopolist ograničava količinu na Q_M i podiže cijenu na P_M iznad konkurentske razine (Q_C, P_C), čime nastaje osjenčani trokut mrtvog tereta."
+#| fig-alt: "Graf prikazuje silaznu krivulju potražnje D, silaznu krivulju marginalnog prihoda MR i uzlaznu krivulju marginalnog troška MC. Monopolist bira Q_M gdje se MR izjednačava s MC, a cijena P_M određena je prema krivulji potražnje i viša je od konkurentske cijene P_C. Crveni osjenčani trokut između Q_M i Q_C prikazuje gubitak blagostanja."
+#| fig-width: 7.6
+#| fig-height: 5.0
+# Statički PDF blizanac interaktivnog OJS grafa (zadane vrijednosti klizača).
+source("R/setup.R")
+
+# Zadane vrijednosti klizača
+eps_d_mon <- 1.2  # elastičnost potražnje |εD| (zadana vrijednost klizača)
+eps_s_mon <- 1.2  # elastičnost MC (εS) (zadana vrijednost klizača)
+
+# Fiksne kotve: konkurentska ravnoteža (Qc, Pc) = (60, 50)
+Qc   <- 60
+Pc   <- 50
+Qmax <- 110
+Pmax <- 120
+
+# Nagibi iz elastičnosti u konkurentskoj ravnoteži
+b <- Pc / (Qc * eps_d_mon)   # nagib potražnje
+d <- Pc / (Qc * eps_s_mon)   # nagib MC
+
+# Potražnja: P = a - b*Q, u (Qc, Pc): a = Pc + b*Qc
+a <- Pc + b * Qc
+# MC: P = c + d*Q, u (Qc, Pc): c = Pc - d*Qc
+cc <- Pc - d * Qc
+
+# Monopol: MR = MC => a - 2b*Qm = c + d*Qm => Qm = (a - c)/(2b + d)
+Qm <- (a - cc) / (2 * b + d)
+Pm <- a - b * Qm               # monopolska cijena (na krivulji potražnje)
+MC_at_Qm <- cc + d * Qm        # marginalni trošak pri Qm
+
+# Serije podataka (cijela Q od 0 do Qmax), filtrirane kao u OJS-u
+Qs <- 0:Qmax
+demand <- data.frame(Q = Qs, P = a - b * Qs)
+demand <- demand[demand$P >= 0 & demand$P <= Pmax, ]
+mr <- data.frame(Q = Qs, P = a - 2 * b * Qs)
+mr <- mr[mr$P >= -Pmax & mr$P <= Pmax, ]
+mc <- data.frame(Q = Qs, P = cc + d * Qs)
+mc <- mc[mc$P >= 0 & mc$P <= Pmax, ]
+
+# Trokut mrtvog tereta: vrhovi (Qm, Pm), (Qm, MC_at_Qm), (Qc, Pc)
+dwlTri <- data.frame(
+  Q = c(Qm, Qm, Qc),
+  P = c(Pm, MC_at_Qm, Pc)
+)
+
+# Prikazani brojevi (identične formule kao u OJS-u)
+dwl    <- 0.5 * abs(Pm - MC_at_Qm) * abs(Qc - Qm)   # 277.8 pri zadanim vrijednostima
+markup <- ((Pm - Pc) / Pc) * 100                    # 28 % pri zadanim vrijednostima
+
+ggplot() +
+  # Bazna vodoravna crta y = 0
+  geom_hline(yintercept = 0, color = "#C9C3B8") +
+  # Trokut mrtvog tereta (osjenčan)
+  geom_polygon(data = dwlTri, aes(Q, P),
+               fill = "#D8B5B3", alpha = 0.65,
+               color = "#6B1F26", linewidth = 0.4) +
+  # Krivulje
+  geom_line(data = demand, aes(Q, P), color = "#2D5A8E", linewidth = 1.0) +
+  geom_line(data = mr, aes(Q, P), color = "#3A332D", linewidth = 0.8,
+            linetype = "longdash") +
+  geom_line(data = mc, aes(Q, P), color = "#4A6B5C", linewidth = 0.8) +
+  # Isprekidane vodilje za cijene i količine
+  geom_hline(yintercept = Pm, color = "#6B6357", linetype = "dashed",
+             linewidth = 0.4) +
+  geom_hline(yintercept = Pc, color = "#6B6357", linetype = "dashed",
+             linewidth = 0.4) +
+  geom_segment(aes(x = Qm, xend = Qm, y = 0, yend = Pm),
+               color = "#6B6357", linetype = "dashed", linewidth = 0.4) +
+  geom_segment(aes(x = Qc, xend = Qc, y = 0, yend = Pc),
+               color = "#6B6357", linetype = "dashed", linewidth = 0.4) +
+  # Ravnotežne točke
+  geom_point(aes(x = Qm, y = Pm), size = 3, color = "white",
+             fill = "#6B1F26", shape = 21, stroke = 1.0) +
+  geom_point(aes(x = Qc, y = Pc), size = 3, color = "white",
+             fill = "#4A6B5C", shape = 21, stroke = 1.0) +
+  geom_point(aes(x = Qm, y = MC_at_Qm), size = 2.4, color = "white",
+             fill = "#1C1916", shape = 21, stroke = 0.8) +
+  # Oznake krivulja
+  annotate("text", x = Qmax * 0.82, y = a - b * Qmax * 0.82 + 4,
+           label = sprintf("D (|εD|=%.2f)", eps_d_mon),
+           color = "#2D5A8E", fontface = "bold", size = 3.4, hjust = 0.5) +
+  annotate("text", x = Qmax * 0.42, y = a - 2 * b * Qmax * 0.42 + 4,
+           label = "MR", color = "#3A332D", fontface = "bold",
+           size = 3.4, hjust = 0.5) +
+  annotate("text", x = Qmax * 0.82, y = cc + d * Qmax * 0.82 + 4,
+           label = sprintf("MC (εS=%.2f)", eps_s_mon),
+           color = "#4A6B5C", fontface = "bold", size = 3.4, hjust = 0.5) +
+  # Oznake cijena i količina
+  annotate("text", x = 1, y = Pm + 4, label = sprintf("P_M = %.1f", Pm),
+           color = "#6B1F26", size = 3.1, hjust = 0) +
+  annotate("text", x = 1, y = Pc - 6, label = sprintf("P_C = %.1f", Pc),
+           color = "#4A6B5C", size = 3.1, hjust = 0) +
+  annotate("text", x = Qm, y = 2, label = sprintf("Q_M = %.1f", Qm),
+           color = "#6B1F26", size = 3.1, hjust = 0.5) +
+  annotate("text", x = Qc, y = 2, label = sprintf("Q_C = %.1f", Qc),
+           color = "#4A6B5C", size = 3.1, hjust = 0.5) +
+  # Gornji ispisi
+  annotate("text", x = 2, y = Pmax * 0.97,
+           label = sprintf("Gubitak blagostanja (DWL) = %.1f", dwl),
+           color = "#6B1F26", fontface = "bold", size = 4.2, hjust = 0) +
+  annotate("text", x = 2, y = Pmax * 0.91,
+           label = sprintf("Monopolska marža: %.0f %%", markup),
+           color = "#1C1916", fontface = "bold", size = 3.8, hjust = 0) +
+  scale_x_continuous(limits = c(0, Qmax), expand = c(0, 0)) +
+  scale_y_continuous(limits = c(0, Pmax), expand = c(0, 0)) +
+  labs(x = "Količina (Q)", y = "Cijena (P)")
+```
+:::
 
 Država može odgovoriti na tržišnu moć na nekoliko načina. Prvi je **politika zaštite tržišnog natjecanja**. Ona uključuje zabranu kartela, nadzor spajanja poduzeća, sprječavanje zloupotrebe dominantnog položaja i uklanjanje neopravdanih prepreka ulasku na tržište. Cilj nije kažnjavati velika poduzeća zato što su velika, nego spriječiti ponašanja koja ograničavaju konkurenciju i štete potrošačima.
 
