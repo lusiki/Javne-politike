@@ -367,6 +367,32 @@
         });
       });
       panel.appendChild(btn);
+      collapsePanel(panel);
+    }
+
+    // Sklopiva ploča: ploču s klizačima omotamo u <details> zatvoren
+    // po defaultu, pa graf ostaje vidljiv s početnim vrijednostima, a
+    // čitatelj otvara kontrole samo kad ih želi mijenjati. Jedan potez
+    // pokriva svih ~90 OJS panela u knjizi bez diranja .qmd izvora.
+    function collapsePanel(panel) {
+      if (panel.dataset.ojsCollapsed) return;
+      var parent = panel.parentElement;
+      if (!parent) return;
+      panel.dataset.ojsCollapsed = "1";
+
+      var details = document.createElement("details");
+      details.className = "ojs-collapsible";
+
+      var summary = document.createElement("summary");
+      summary.className = "ojs-collapsible-summary";
+      summary.innerHTML =
+        '<span class="ojs-collapsible-icon" aria-hidden="true"></span>' +
+        '<span class="ojs-collapsible-label">Parametri simulacije</span>' +
+        '<span class="ojs-collapsible-hint">otvori za promjenu vrijednosti</span>';
+
+      parent.insertBefore(details, panel);
+      details.appendChild(summary);
+      details.appendChild(panel);
     }
 
     var scanQueued = false;

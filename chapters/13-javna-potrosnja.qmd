@@ -104,13 +104,13 @@ wag_g = wag_controls.g
 
 **Što isprobati.** (1) Pri niskom dohotku oko 10 tisuća dolara hipotetska zemlja sjeda nisko na trend i predviđeni udio javne potrošnje ostaje skroman. (2) Povećajte klizač dohotka hipotetske zemlje prema 50 tisuća dolara i crna se točka penje uz krivulju, što je vizualni izraz Wagnerova zakona. (3) Gurnite klizač do gornjeg ruba prema 80 i primijetite da prirast udjela postaje sve manji, jer logaritamski trend pokazuje zasićenje koje empirijski radovi vežu uz više razine razvoja.
 
+Wagnerov zakon tako opisuje postupan, strukturni pritisak koji s razvojem polako podiže udio države, no on sam ne objašnjava nagle skokove kojima je javna potrošnja u 20. stoljeću višestruko nadišla svoje skromne početne razine. Taj se preokret ne odvija glatko uz krivulju razvoja, nego u naletima vezanima uz velike gospodarske i političke šokove, kojima se okrećemo u nastavku.
+
 ## Ekspanzija države u 20. stoljeću
 
 Pravi preokret događa se u 20. stoljeću, u kontekstu velikih ekonomskih i političkih šokova. Velika depresija 1930-ih dovodi u pitanje sposobnost tržišta da se samo stabilizira. U tom kontekstu John Maynard Keynes uvodi revolucionarnu ideju prema kojoj država može i treba aktivno intervenirati u gospodarstvo putem javne potrošnje i fiskalne politike kako bi stabilizirala agregatnu potražnju [@keynes1936]. Time javna potrošnja prvi put dobiva jasnu makroekonomsku funkciju.
 
-Nakon Drugog svjetskog rata slijedi razdoblje bez presedana u povijesti javne potrošnje. U većini razvijenih zemalja dolazi do snažne ekspanzije države, osobito kroz razvoj sustava socijalne sigurnosti, javnog zdravstva i obrazovanja. Udio javne potrošnje raste s oko 13 % BDP-a početkom stoljeća na više od 40 % u suvremenim ekonomijama [@tanzi2000]. Ovaj rast nije bio rezultat jedinstvenog faktora, već kombinacije dubokih strukturnih promjena.
-
-Dio tog rasta nije tekao glatko, nego u skokovima vezanima uz velike krize koje trajno pomiču naviše društveno prihvatljivu razinu javne potrošnje, a taj mehanizam premještanja i njegovo zadržavanje na višoj razini razrađujemo u poglavlju o stabilizacijskoj funkciji.
+Nakon Drugog svjetskog rata slijedi razdoblje bez presedana u povijesti javne potrošnje. U većini razvijenih zemalja dolazi do snažne ekspanzije države, osobito kroz razvoj sustava socijalne sigurnosti, javnog zdravstva i obrazovanja. Udio javne potrošnje raste s oko 13 % BDP-a početkom stoljeća na više od 40 % u suvremenim ekonomijama [@tanzi2000]. Ovaj rast nije bio rezultat jedinstvenog faktora, već kombinacije dubokih strukturnih promjena. Dio tog rasta nije tekao glatko, nego u skokovima vezanima uz velike krize koje trajno pomiču naviše društveno prihvatljivu razinu javne potrošnje, a taj mehanizam premještanja i njegovo zadržavanje na višoj razini razrađujemo u poglavlju o stabilizacijskoj funkciji.
 
 Najprije, demografske promjene među najvažnijim su dugoročnim pokretačima. Kako se očekivano trajanje života povećava, a fertilitet smanjuje, raste udio starijeg stanovništva, što izravno povećava pritisak na mirovinske sustave i zdravstvenu potrošnju.
 

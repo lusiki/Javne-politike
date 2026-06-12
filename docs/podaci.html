@@ -2,16 +2,13 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="hr-HR" xml:lang="hr-HR"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.9.38">
+<meta name="generator" content="quarto-1.8.25">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
 <title>Appendix X — Podaci – Sve što želite znati o odnosu države i tržišta</title>
 <style>
-/* Default styles provided by pandoc.
-** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
-*/
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
 div.columns{display: flex; gap: min(4vw, 1.5em);}
@@ -70,18 +67,19 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <link href="./images/favicon.ico" rel="icon">
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="site_libs/quarto-html/axe/axe-check.js" type="module"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-4d4ad920c17a1b28c6a7c1d28bdd063b.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-7cbdf6bb4af9301f1adde34f6db1f419.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-4d4ad920c17a1b28c6a7c1d28bdd063b.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-449968a3765ca8978212108bc9193594.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-8b585b09d32f54382c529101eb51de16.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-449968a3765ca8978212108bc9193594.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-f9a2abbdd5c72cb44834c2bd7dd75768.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="site_libs/bootstrap/bootstrap-dark-0a3c18dbdbf0e7e848d705eac03074fa.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="light">
-<link href="site_libs/bootstrap/bootstrap-f9a2abbdd5c72cb44834c2bd7dd75768.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-253b366345db5f9b23a2ae7c16db29f7.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-dark-84ef9b54691cb30cdf8dcc933e4782c1.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-253b366345db5f9b23a2ae7c16db29f7.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -294,6 +292,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
+    <a href="./index.html" class="navbar-brand navbar-brand-logo">
+    </a>
     <a class="navbar-brand" href="./index.html">
     <span class="navbar-title">Sve što želite znati o odnosu države i tržišta</span>
     </a>
@@ -1708,6 +1708,58 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       });
 
       panel.appendChild(btn);
+
+      collapsePanel(panel);
+
+    }
+
+
+
+    // Sklopiva ploča: ploču s klizačima omotamo u <details> zatvoren
+
+    // po defaultu, pa graf ostaje vidljiv s početnim vrijednostima, a
+
+    // čitatelj otvara kontrole samo kad ih želi mijenjati. Jedan potez
+
+    // pokriva svih ~90 OJS panela u knjizi bez diranja .qmd izvora.
+
+    function collapsePanel(panel) {
+
+      if (panel.dataset.ojsCollapsed) return;
+
+      var parent = panel.parentElement;
+
+      if (!parent) return;
+
+      panel.dataset.ojsCollapsed = "1";
+
+
+
+      var details = document.createElement("details");
+
+      details.className = "ojs-collapsible";
+
+
+
+      var summary = document.createElement("summary");
+
+      summary.className = "ojs-collapsible-summary";
+
+      summary.innerHTML =
+
+        '<span class="ojs-collapsible-icon" aria-hidden="true"></span>' +
+
+        '<span class="ojs-collapsible-label">Parametri simulacije</span>' +
+
+        '<span class="ojs-collapsible-hint">otvori za promjenu vrijednosti</span>';
+
+
+
+      parent.insertBefore(details, panel);
+
+      details.appendChild(summary);
+
+      details.appendChild(panel);
 
     }
 

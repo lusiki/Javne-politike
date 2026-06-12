@@ -31,6 +31,8 @@ No nestabilnost ne dolazi samo iz pada potražnje. Gospodarstvo može biti desta
 
 ## Fiskalna politika kao instrument stabilizacije
 
+Ako gospodarstvo može zapasti u stanje nedovoljne potražnje, državi je potreban instrument kojim na tu potražnju može izravno djelovati. Taj instrument nalazi se u samom proračunu.
+
 Najvažniji instrument stabilizacijske funkcije države je **fiskalna politika**, koja se odnosi na upravljanje javnim prihodima, javnim rashodima, proračunskim saldom i javnim dugom. Kroz promjene poreza, javne potrošnje i transfera država može utjecati na ukupnu potražnju u gospodarstvu.
 
 U recesiji država može djelovati ekspanzivno. To znači da može povećati javnu potrošnju, ubrzati javne investicije, povećati transfere kućanstvima, smanjiti poreze ili dopustiti rast proračunskog deficita. Cilj takvih mjera je ublažiti pad privatne potražnje. Ako kućanstva i poduzeća troše manje, država može privremeno povećati svoju potrošnju kako bi spriječila dublji pad proizvodnje i zaposlenosti. Primjerice, u recesiji država može povećati ulaganja u infrastrukturu, energetsku obnovu, željeznice, škole ili bolnice.
@@ -40,6 +42,8 @@ U razdoblju snažne ekspanzije država bi trebala djelovati suprotno. Ako gospod
 Upravo se ovdje vidi jedna od najvećih poteškoća stabilizacijske politike. Ekspanzivna fiskalna politika u krizi često je politički popularna, dok je restriktivna fiskalna politika u dobrim vremenima politički teška. Lako je povećati rashode ili smanjiti poreze kada postoji kriza. Teže je stvarati proračunske viškove u razdobljima rasta. Zbog toga države često ulaze u krize s premalo fiskalnog prostora, a nakon kriza izlaze s većim javnim dugom.
 
 ## Fiskalni multiplikator
+
+Tvrdnja da država potrošnjom i porezima pomiče ukupnu potražnju ostaje neodređena dok ne znamo koliko snažno to čini. Koliko proizvodnje pokrene jedan euro javne potrošnje pitanje je na koje odgovara fiskalni multiplikator.
 
 **Fiskalni multiplikator** pokazuje za koliko se promijeni proizvodnja kada se promijeni neka fiskalna varijabla. U jednostavnom keynesijanskom okviru početni fiskalni impuls ne djeluje samo jednom, nego se širi kroz gospodarstvo. Dodatna potrošnja postaje nečiji dohodak, dio tog dohotka ponovno se troši, pa ukupni učinak na BDP može biti veći od početnog impulsa.
 
@@ -261,7 +265,7 @@ Razlika između pravodobne i zakašnjele reakcije vidljiva je u dvama odgovorima
 
 ## Stabilizacijska funkcija u velikim krizama
 
-Stabilizacijska funkcija posebno dolazi do izražaja u velikim krizama. Ratovi, financijske krize, pandemije, energetski šokovi i prirodne katastrofe često dovode do naglog rasta uloge države. U takvim situacijama građani i poduzeća očekuju hitnu reakciju jer bi politika nečinjenja mogla imati vrlo visoke društvene troškove.
+Upravo onaj režim u kojem se monetarni prostor iscrpi, a multiplikatori narastu, najčešće nastupa kada gospodarstvo pogodi snažan šok. Stabilizacijska funkcija posebno dolazi do izražaja u velikim krizama. Ratovi, financijske krize, pandemije, energetski šokovi i prirodne katastrofe često dovode do naglog rasta uloge države. U takvim situacijama građani i poduzeća očekuju hitnu reakciju jer bi politika nečinjenja mogla imati vrlo visoke društvene troškove.
 
 U velikim krizama država često preuzima uloge koje u normalnim okolnostima ne bi imala. Može jamčiti kredite poduzećima, subvencionirati plaće, spašavati banke, privremeno ograničavati cijene, financirati hitne zdravstvene mjere ili uvoditi izvanredne regulacije. Pandemija je dobar primjer krize u kojoj standardna ekonomska logika nije bila dovoljna. Problem nije nastao zato što su poduzeća loše poslovala, nego zato što je zdravstveni šok doveo do administrativnog zatvaranja dijelova gospodarstva i ograničenja kretanja.
 
@@ -290,6 +294,8 @@ S druge strane, stabilizacijska funkcija nosi rizike. Država može reagirati pr
 Stabilizacijska funkcija nije poziv na stalnu intervenciju države u sve makroekonomske procese. Ona je argument za odgovornu, pravodobnu i privremenu intervenciju kada tržišna prilagodba prijeti velikim društvenim troškovima. Dobra stabilizacijska politika mora znati kada djelovati, koliko djelovati i kada se povući.
 
 ## Stabilnost kao javno dobro
+
+Ostaje pitanje zašto se ta zahtjevna zadaća uopće povjerava državi, a ne prepušta tržištu kao i ostala dobra. Odgovor leži u prirodi same stabilnosti.
 
 Makroekonomska **stabilnost** može se promatrati kao svojevrsno javno dobro. Kada je gospodarstvo stabilno, koristi imaju gotovo svi. Radnici lakše zadržavaju posao, poduzeća lakše planiraju investicije, građani imaju veće povjerenje, javne financije su održivije, a društvene napetosti su manje. Kada gospodarstvo postane nestabilno, troškovi se šire kroz cijelo društvo. Budući da nitko ne može biti isključen iz koristi stabilnosti, a korist jednoga ne umanjuje stabilnost za ostale, tržište je samo neće proizvesti u dovoljnoj mjeri.
 

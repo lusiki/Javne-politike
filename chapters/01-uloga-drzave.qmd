@@ -34,6 +34,10 @@ Najpoznatiji okvir za takvo razumijevanje uloge države dao je Richard A. Musgra
 
 Musgraveov okvir daje početni odgovor na pitanje zašto demokratskom društvu sa slobodnim tržištem ipak treba država. Tržište može biti iznimno moćan mehanizam stvaranja bogatstva, ali nije dovoljno za rješavanje svih društvenih problema. Ono može dobro koordinirati privatne odluke, no ne može uvijek samo osigurati javna dobra, riješiti eksternalije, spriječiti monopole, nadoknaditi informacijske neravnoteže, zaštititi najugroženije ili stabilizirati gospodarstvo u velikim krizama.
 
+Snaga te podjele leži u tome što tri funkcije odgovaraju na tri različita pitanja, a ne na isto pitanje iz tri kuta. Alokacijska funkcija pita proizvodi li gospodarstvo prava dobra u pravim količinama, pa polazi od slučajeva u kojima tržište zakaže i ishod nije učinkovit. Distribucijska funkcija ostavlja po strani učinkovitost i pita je li raspodjela dohotka i prilika koju tržište proizvodi društveno prihvatljiva. Stabilizacijska funkcija napušta razinu pojedinog tržišta i promatra gospodarstvo u cjelini, jer i kada svako tržište radi ispravno, ukupna proizvodnja, zaposlenost i cijene mogu zapasti u recesiju, inflaciju ili krizu.
+
+Razdvajanje je važno jer svaka funkcija traži vlastiti analitički aparat i vlastito mjerilo uspjeha, pa se njima u ovoj knjizi bavimo zasebno. Alokacijska i distribucijska funkcija pripadaju mikroekonomskoj analizi pojedinih tržišta i raspodjele, dok stabilizacijska počiva na makroekonomskoj analizi agregata. Ista mjera koja popravlja jednu funkciju može pritom opteretiti drugu, jer porez koji ublažava nejednakost može oslabiti poticaje na koje se oslanja učinkovita alokacija, što čini odnos među trima funkcijama trajnom temom javnih financija, a ne tek načinom njihova nabrajanja.
+
 ![Musgraveov okvir povezuje tri funkcije države s pripadnim analitičkim pristupom i normativnim osnovama državne intervencije.](../images/infographics/01-tri-funkcije-drzave.svg){#fig-tri-funkcije .infographic fig-alt="Hijerarhijski dijagram triju funkcija države — alokacijske, distribucijske i stabilizacijske — povezan s mikroekonomskom i makroekonomskom analizom te normativnim osnovama državne intervencije." width=92%}
 
 ## Tržište kao mehanizam učinkovite alokacije
@@ -71,6 +75,8 @@ Prema **Kaldor-Hicksovu kriteriju** promjena je društveno opravdana ako su agre
 Na tom kriteriju počiva analiza troškova i koristi kao standardni alat javnog odlučivanja [@boardman2018]. Pristup ima svoju cijenu. Sažimanjem dobitaka i gubitaka u zajedničku novčanu mjeru implicitno se pretpostavlja da je dodatni euro jednako vrijedan svima, čime se zaobilazi pitanje raspodjele dohotka. Kaldor-Hicksov kriterij zato olakšava donošenje odluka, ali ne uklanja političku odgovornost za to tko stvarno gubi, a tko dobiva.
 
 ## Edgeworthova kutija i krivulja ugovora
+
+Pareto kriterij dosad je ostao apstraktan, pa ga vrijedi vidjeti na slici koja ga čini opipljivim. Edgeworthova kutija upravo to omogućuje jer na jednom dijagramu pokazuje sve načine na koje se dva dobra mogu podijeliti između dvoje ljudi i točno ondje gdje razmjena više nikoga ne može poboljšati bez da nekoga ošteti.
 
 Edgeworthova kutija prikazuje sve moguće raspodjele dvaju dobara između dvaju potrošača. Svaka točka u kutiji označava jednu alokaciju. Ono što dobije potrošač A mjeri se od donjeg lijevog ishodišta, a ono što dobije potrošač B iz suprotnog, gornjeg desnog ishodišta.
 
@@ -257,6 +263,8 @@ eb_pC = eb_controls.pC
 ```
 
 **Što isprobati.** (1) Pomaknite klizač Položaj točke A udesno i točka A klizi po zelenoj krivulji ugovora, no plavi i crveni luk kroz nju ostaju tangentni, što potvrđuje da je svaka točka na krivulji Pareto učinkovita bez obzira na to koliko je nejednaka raspodjela dobra X. (2) Postavite A-ovu naklonost dobru X ([α]{.var}) i B-ovu naklonost dobru X ([β]{.var}) na blisku vrijednost oko 0,5 i zelena krivulja gotovo se izravna u dijagonalu kutije, jer su pri sličnim preferencijama učinkovite alokacije raspoređene ravnomjerno. (3) Razdvojite α prema 0,75 i β prema 0,25 i krivulja ugovora se snažno iskrivi prema rubu, pa Pareto učinkovite točke postaju izrazito asimetrične iako nijedna od njih nije ništa manje učinkovita od ostalih.
+
+Kutija tako pokazuje da učinkovitost ne određuje jednu raspodjelu, nego cijeli niz njih duž krivulje ugovora, od kojih su neke vrlo nejednake. Ostaje pitanje može li tržište samo, bez vanjskog usmjeravanja, dovesti gospodarstvo do neke od tih učinkovitih točaka. Upravo na to odgovaraju dva teorema ekonomike blagostanja.
 
 ## Teoremi ekonomike blagostanja
 

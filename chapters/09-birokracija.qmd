@@ -148,9 +148,7 @@ Iz te kritike izrastao je drugačiji model. Dunleavy je tvrdio da viši birokrat
 **Bureau-shaping** je strategija Dunleavyeve teorije prema kojoj viši birokrati ne maksimiziraju veličinu proračuna (kao u Niskanenovu modelu), nego oblik i tip organizacije, pa preferiraju male, politički utjecajne i visokoprestižne agencije pred velikima, rutinskim i operativnim, jer im to donosi veći osobni ugled uz manji upravljački trud [@dunleavy1985].
 :::
 
-Ipak, Niskanenov model ostaje važan jer jasno pokazuje da se proračunski proces ne može razumjeti samo kao tehničko određivanje potrebnih sredstava.
-
-Ako želimo učinkovitu državu, nije dovoljno pitati koliko novca neka institucija traži. Treba pitati koje rezultate proizvodi, koliko ti rezultati koštaju, postoje li jeftiniji načini provedbe i tko neovisno provjerava informacije koje institucija iznosi.
+Ipak, Niskanenov model ostaje važan jer jasno pokazuje da se proračunski proces ne može razumjeti samo kao tehničko određivanje potrebnih sredstava. Ako želimo učinkovitu državu, nije dovoljno pitati koliko novca neka institucija traži. Treba pitati koje rezultate proizvodi, koliko ti rezultati koštaju, postoje li jeftiniji načini provedbe i tko neovisno provjerava informacije koje institucija iznosi.
 
 ::: {.callout-praksa}
 Niskanenova logika vidljiva je u načinu na koji javne agencije pregovaraju o proračunu. Ondje gdje agencija ima monopol nad uslugom i bolje informacije od ministarstva financija, sustavno traži više sredstava nego što bi bilo društveno optimalno, a uštede rijetko nudi sama. Reforme u nizu zemalja OECD-a pokušale su taj poticaj obrnuti uvođenjem proračuna prema rezultatima, vanjskih revizija i gornjih granica troška unutar kojih agencija sama mora pronaći učinkovitije rješenje. Iskustvo pokazuje da takvi mehanizmi smanjuju, ali ne uklanjaju pritisak na rast proračuna jer informacijska prednost i dalje ostaje na strani agencije.[^wp-ch09]

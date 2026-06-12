@@ -80,9 +80,7 @@ Proporcionalni porezi imaju jedinstvenu stopu bez obzira na visinu osnovice, kao
 
 Još jedna važna podjela odnosi se na način određivanja porezne obveze.
 
-Specifični porezi određeni su u apsolutnom iznosu po jedinici proizvoda, primjerice po litri goriva ili pakiranju cigareta, dok se ad valorem porezi određuju kao postotak vrijednosti proizvoda, čega je PDV tipičan primjer.
-
-Ta razlika važna je jer utječe na način na koji porezi reagiraju na promjene cijena i na njihove učinke na tržište [@gruber2019].
+Specifični porezi određeni su u apsolutnom iznosu po jedinici proizvoda, primjerice po litri goriva ili pakiranju cigareta, dok se ad valorem porezi određuju kao postotak vrijednosti proizvoda, čega je PDV tipičan primjer. Ta razlika važna je jer utječe na način na koji porezi reagiraju na promjene cijena i na njihove učinke na tržište [@gruber2019].
 
 ## Osnovna načela oporezivanja
 
@@ -106,7 +104,9 @@ Iako su ta načela jasno definirana, u praksi ih nije moguće istovremeno u potp
 
 ## Osnove teorije oporezivanja
 
-Pitanje kako dizajnirati porezni sustav jedno je od središnjih pitanja javnih financija. Teorije oporezivanja nastoje odgovoriti na nekoliko temeljnih pitanja o tome tko treba plaćati poreze, koliko i na koji način. U tom kontekstu razvijene su različite teorijske perspektive koje se međusobno nadopunjuju, ali i često dolaze u sukob. U suvremenoj ekonomiji posebno se ističu tri pristupa, a to su teorija koristi (*benefit principle*), teorija sposobnosti plaćanja (*ability-to-pay*) i teorija optimalnog oporezivanja koja pokušava formalno modelirati kompromis između učinkovitosti i pravednosti [@stiglitz2015; @gruber2019].
+Pitanje kako dizajnirati porezni sustav jedno je od središnjih pitanja javnih financija. Teorije oporezivanja nastoje odgovoriti na nekoliko temeljnih pitanja o tome tko treba plaćati poreze, koliko i na koji način. U tom kontekstu razvijene su različite teorijske perspektive koje se međusobno nadopunjuju, ali i često dolaze u sukob. U suvremenoj ekonomiji posebno se ističu tri pristupa, a to su teorija koristi (*benefit principle*), teorija sposobnosti plaćanja (*ability-to-pay*) i teorija optimalnog oporezivanja koja pokušava formalno modelirati kompromis između učinkovitosti i pravednosti [@stiglitz2015; @gruber2019]. Prva dva pristupa odgovaraju na pitanje *tko* treba plaćati, a potom slijede mehanizmi koji pokazuju *kako* se porezni teret zaista raspoređuje i koliko košta, od incidencije i mrtvog tereta do poreznog klina na tržištu rada.
+
+### Teorija koristi i teorija sposobnosti plaćanja
 
 Teorija koristi (benefit principle) polazi od ideje da bi pojedinci trebali plaćati poreze u skladu s koristima koje ostvaruju od javnih dobara i usluga. Porezi se promatraju kao svojevrsna „cijena" javnih usluga. Taj pristup ima intuitivnu privlačnost jer povezuje plaćanje poreza s primljenim koristima. Financiranje cesta putem trošarina na gorivo može se interpretirati upravo kroz tu logiku. U praksi se taj pristup ipak suočava s ozbiljnim ograničenjima. Javna dobra su često neisključiva i ne-rivalna, što znači da je teško utvrditi individualnu korist. Pristup zanemaruje i redistributivnu funkciju poreza jer ne uzima u obzir razlike u ekonomskoj snazi pojedinaca [@musgrave1989].
 
@@ -232,6 +232,8 @@ rho = controls.rho
 **Što isprobati.** (1) Pri umjerenoj konkavnosti ([ρ]{.var} ≈ 0,5) već mali transfer obično daje pozitivnu neto promjenu, što je klasični argument za redistribuciju. (2) Smanjite ρ prema 0,2 tako da korisnost postane gotovo linearna i vidjet ćete da su zelena i crvena traka približno jednake, a redistribucija gubi normativno opravdanje. (3) Povećajte ρ prema 1,8 tako da korisnost postane snažno konkavna i mali transfer drastično povećava ukupno blagostanje, što opravdava izrazito progresivan sustav. Koliko progresivan porezni sustav „treba" biti ne ovisi samo o etičkim sudovima, nego i o pretpostavci o obliku funkcije korisnosti, što je empirijsko pitanje koje teorija optimalnog oporezivanja [@mirrlees1971; @atkinson1980] eksplicitno modelira.
 
 To znači da siromašniji pojedinci imaju višu graničnu korisnost dohotka, dok bogatiji imaju nižu. Ako društvo želi maksimizirati ukupno blagostanje, tada redistribucija dohotka (npr. kroz poreze i transfere) može povećati ukupnu korisnost jer gubitak korisnosti kod bogatijih manji je od dobitka korisnosti kod siromašnijih [@stiglitz2015; @gruber2019]. Ta teorija ima snažnu normativnu osnovu, ali otvara pitanja o tome koliko progresivan sustav treba biti i kako izbjeći negativne učinke na ekonomske poticaje.
+
+### Tko stvarno snosi porez — porezna incidencija
 
 **Teorija porezne incidencije** odnosi se na pitanje tko stvarno snosi teret poreza, bez obzira na to tko ga formalno plaća. Raspodjela poreznog tereta ovisi o elastičnosti ponude i potražnje. Strana tržišta koja je manje elastična snosi veći dio poreznog opterećenja [@gruber2019].
 
@@ -374,6 +376,8 @@ t_inc = inc_controls.t_inc
 
 **Što isprobati.** (1) Postavite [|εD|]{.var} na nisku vrijednost oko 0,3, a [εS]{.var} na visoku oko 2,0 tako da potražnja bude strma a ponuda položena i vidjet ćete da kupci snose gotovo cijeli porez, što je klasičan slučaj duhana ili goriva. (2) Obrnite odnos tako da |εD| bude visoka a εS niska i većinu tereta sada snose prodavači, primjerice na kratkoročnom tržištu nekretnina gdje je ponuda neelastična. (3) Postavite obje elastičnosti na slične vrijednosti i teret se otprilike polovi. Pravilo koje iz toga slijedi jest da strana tržišta koja je manje elastična ne može pobjeći porezu i zato snosi veći dio njegova tereta neovisno o tome koga zakon formalno proglašava obveznikom.
 
+### Mrtvi teret oporezivanja
+
 Incidencija govori tko snosi teret, no porez stvara i čisti društveni gubitak jer sprječava transakcije koje bi inače obostrano koristile kupcima i prodavačima. Taj gubitak prikazuje graf koji slijedi, na kojem je crveni trokut mrtvi teret poreza, crveni okomiti odsječak visina poreza t, a tamni horizontalni odsječak pad količine ΔQ. U vrhu grafa ispisuje se rastav formule DWL = ½ · t · ΔQ te usporedba s mrtvim teretom pri malom referentnom porezu t jednakom 4, čime se vidi kako gubitak raste brže od same stope. Graf je interaktivan, pa klizači mijenjaju elastičnost potražnje i iznos poreza.
 
 ```{ojs}
@@ -503,6 +507,8 @@ t_dwl = dwl2_controls.t_dwl
 ```
 
 **Što isprobati.** (1) Udvostručite [t]{.var} s 4 na 8 i omjer pokazuje da mrtvi teret raste približno četiri puta, a ne dva puta. To je takozvano kvadratno skaliranje mrtvog tereta DWL ∝ t² koje proizlazi iz toga što s povećanjem poreza rastu i t i ΔQ. (2) Pri t jednakom 12 udvostručite [|ε|]{.var} s 0,5 na 1,0 i ΔQ se približno udvostručuje, a s njim i mrtvi teret. (3) Postavite |ε| na vrlo nisku vrijednost oko 0,25 i povucite t do 30, pa trokut ostaje malen čak i pri visokom porezu, zbog čega porezni sustavi rado posežu za visokim trošarinama na neelastična dobra. Praktična je poruka da niski porezi po širokoj osnovici stvaraju manji ukupni gubitak blagostanja od visokih poreza po uskoj osnovici, što je temeljni princip dizajna učinkovitog poreznog sustava.
+
+### Porezni klin na tržištu rada
 
 Uz incidenciju, važan je i koncept **poreznog klina**, koji označava razliku između ukupnog troška rada za poslodavca i neto plaće radnika, odnosno udio poreza i doprinosa u ukupnom trošku rada. U tu razliku ulaze porez na dohodak, prirez te doprinosi zaposlenika i poslodavca, koji zajedno stvaraju fiskalno opterećenje rada [@simovic2022]. Porezni klin znači da na tržištu rada ne postoji jedna „cijena rada", već dvije, a to su bruto nadnica (trošak rada) i neto nadnica (dohodak radnika).
 
@@ -656,6 +662,8 @@ Teorija optimalnog oporezivanja razvijena je kako bi odgovorila na temeljno pita
 **Mrtvi teret poreza** je gubitak ukupnog blagostanja koji nastaje zato što porez mijenja relativne cijene i odvraća sudionike od razmjena koje bi inače bile uzajamno korisne. Formalno, ako je $Q^*$ ravnotežna količina prije oporezivanja, a $Q_t$ količina nakon uvođenja poreza po jedinici $t$, mrtvi teret je $DWL \approx \tfrac{1}{2}\,t\,(Q^* - Q_t)$. On raste s kvadratom porezne stope i s elastičnošću ponude i potražnje.
 :::
 
+### Ramseyevo pravilo
+
 Početak moderne teorije optimalnog oporezivanja vezuje se uz rad Franka Ramseya, koji je prvi formalno postavio pitanje o tome kako rasporediti poreze na različita dobra kako bi se minimizirao mrtvi teret uz zadane porezne prihode. Ramsey je pokazao da optimalno oporezivanje ne znači jednako oporezivanje svih dobara. Naprotiv, njegov ključni rezultat pokazuje da dobra s neelastičnom potražnjom trebaju biti relativno više oporezovana. Intuicija iza tog rezultata proizlazi iz koncepta mrtvog tereta. Kada porez povećava cijenu nekog dobra, potrošači smanjuju potražnju. Ako je ta reakcija velika (elastična potražnja), dolazi do značajnog pada količine i velikog gubitka blagostanja. Ako je reakcija mala (neelastična potražnja), porez ima manji učinak na količinu i time manji mrtvi teret. Taj rezultat ima jasne praktične implikacije i upravo zato se u stvarnim poreznim sustavima često primjenjuju visoke trošarine na proizvode poput goriva ili duhana, čija je potražnja relativno neelastična.
 
 ::: {#prp-ramsey}
@@ -794,6 +802,8 @@ tax = dwl_controls.tax
 ```
 
 **Što isprobati.** (1) Postavite [|ε|]{.var} na nisku vrijednost oko 0,3 tako da potražnja bude strma i neelastična, pa količina jedva pada, crveni trokut ostaje vrlo malen, a porezni prihod velik. (2) Povucite |ε| prema 2,0 tako da potražnja postane položena i elastična, pa se količina znatno smanjuje, crveni trokut naglo raste, a prihod opada. (3) Pri istoj |ε| udvostručite porez [t]{.var} i mrtvi teret raste približno s kvadratom poreza, što je klasični rezultat koji opravdava niske porezne stope po širokoj osnovici. Upravo iz tog odnosa proizlazi Ramseyevo pravilo iz @prp-ramsey, jer ako su društveni gubici od oporezivanja proporcionalni elastičnosti, optimalno je relativno više oporezovati dobra s neelastičnom potražnjom poput goriva i duhana, a manje ona s elastičnom potražnjom poput luksuznih dobara široke supstitucije.
+
+### Mirrleesov model i oporezivanje rada
 
 Ramseyjev model ima važno ograničenje jer potpuno zanemaruje pitanje pravednosti i ne uzima u obzir tko snosi porezni teret.
 
@@ -1016,6 +1026,8 @@ Graf ujedno rastavlja ukupnu reakciju na dva učinka prema Slutskom. Pomak od A 
 
 Zbog interakcije tih dvaju učinaka krivulja ponude rada može imati specifičan oblik. Pri višim razinama nadnice može prevladati dohodovni učinak te pojedinci biraju više dokolice, što rezultira takozvanom **unazad savijenom krivuljom ponude rada**. Jedan od važnih zaključaka Mirrleesove teorije jest da optimalni porezni sustav ne mora imati ekstremno visoke stope za najbogatije. Razlog je taj što visoke stope mogu značajno smanjiti ekonomske poticaje upravo kod onih koji generiraju najveći dio dohotka.
 
+### Oporezivanje štednje i kapitala
+
 Ista napetost supstitucijskog i dohodovnog učinka javlja se i kod oporezivanja prinosa na štednju, što prikazuje graf koji slijedi, prikaz izbora između sadašnje potrošnje C₁ na vodoravnoj osi i buduće potrošnje C₂ na okomitoj. Zelena puna linija je proračunska linija bez poreza, a zelena isprekidana ona s porezom na prinos, koja se zakreće oko točke darivanja Y jer porez smanjuje neto kamatnu stopu. Plava krivulja indiferencije prolazi kroz početni optimum, crvena kroz novi, plava točka označava optimum bez poreza i crvena onaj s porezom, a u vrhu se ispisuje promjena štednje kao razlika Y i C₁. Graf je interaktivan, pa klizači mijenjaju kamatnu stopu, poreznu stopu i elastičnost intertemporalne supstitucije, čime se vidi hoće li porez na prinos smanjiti ili povećati štednju.
 
 ```{ojs}
@@ -1182,6 +1194,8 @@ sigma = inter_controls.sigma
 ```
 
 **Što isprobati.** (1) Pri [σ]{.var} jednakom 1,0, što odgovara logaritamskoj korisnosti u kojoj se supstitucijski i dohodovni učinak približno poništavaju, i poreznoj stopi od 25 % optimum se neznatno mijenja, pa štednja ostaje gotovo ista. (2) Povećajte σ prema 1,8 tako da potrošač lako supstituira potrošnju kroz vrijeme i povećanje poreza značajno smanjuje štednju jer supstitucijski učinak nadjačava dohodovni, što je teorijski temelj argumenata Atkinsona i Stiglitza protiv visokih poreza na kapital u sustavima s razvijenim porezom na dohodak. (3) Smanjite σ prema 0,3 tako da potrošač snažno preferira ravnomjernu potrošnju i porez smanjuje neto prinos, ali pojedinac pojačava štednju kako bi održao buduću razinu potrošnje jer sada dohodovni učinak nadjačava. Smjer učinka oporezivanja kapitala na štednju zato nije jednoznačan, nego ovisi o elastičnosti intertemporalne supstitucije σ, empirijskom parametru koji teorija optimalnog oporezivanja [@atkinson1980] pokušava izmjeriti, ali oko čije vrijednosti i danas ne postoji znanstveni konsenzus.
+
+### Progresivnost i Lafferova krivulja
 
 **Atkinson–Stiglitz teorem** [@atkinson1980] bavi se pitanjem treba li različite vrste potrošnje oporezivati različitim stopama. Njihov ključni rezultat pokazuje da, ako je porez na dohodak optimalno dizajniran, diferencirano oporezivanje potrošnje nije potrebno. Nema potrebe dodatno oporezivati određene proizvode višim ili nižim stopama ako se redistribucija već učinkovito provodi kroz porez na dohodak. Taj rezultat ima važne implikacije za dizajn sustava PDV-a. Teorijski, optimalan sustav imao bi jedinstvenu stopu PDV-a, bez izuzetaka. U praksi, međutim, gotovo sve zemlje koriste snižene stope za osnovna dobra, što pokazuje da politički i socijalni ciljevi često nadjačavaju teorijsku optimalnost.
 

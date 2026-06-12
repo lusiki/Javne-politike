@@ -1855,6 +1855,70 @@ div:has(> form[class^="oi-"]):not(:has(> .quarto-ojs-table-fixup)) {
   }
 }
 
+// --- Sklopiva ploča (<details>) --------------------------------
+// Modul 10 u book-include.html omota svaku ploču u <details> zatvoren
+// po defaultu. Sažetak nosi natpis, pa unutarnja ploča gubi vlastiti
+// ::before naslov i gornji obrub da se ne udvostruči.
+details.ojs-collapsible {
+  max-width: min(640px, 100%);
+  margin: 1.4rem 0 1.1rem;
+
+  > summary.ojs-collapsible-summary {
+    list-style: none;
+    cursor: pointer;
+    display: flex;
+    align-items: baseline;
+    gap: 0.5rem;
+    padding: 0.5rem 0.7rem;
+    border: 1px solid var(--ojs-panel-border);
+    border-radius: 4px;
+    background: var(--ojs-panel-bg);
+    font-family: $brand-font-sans;
+    user-select: none;
+    transition: background 0.15s ease;
+
+    &::-webkit-details-marker { display: none; }
+    &:hover { background: rgba(28, 25, 22, 0.05); }
+    &:focus-visible { outline: 2px solid $sc-ochre; outline-offset: 2px; }
+  }
+
+  .ojs-collapsible-icon {
+    flex: 0 0 auto;
+    align-self: center;
+    width: 0; height: 0;
+    border-left: 5px solid var(--ojs-caption);
+    border-top: 4px solid transparent;
+    border-bottom: 4px solid transparent;
+    transition: transform 0.15s ease;
+  }
+  &[open] .ojs-collapsible-icon { transform: rotate(90deg); }
+
+  .ojs-collapsible-label {
+    font-size: 0.66rem;
+    font-weight: 700;
+    line-height: 1;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--ojs-caption);
+  }
+  .ojs-collapsible-hint {
+    font-size: 0.72rem;
+    font-style: italic;
+    color: $sc-rule;
+  }
+  &[open] .ojs-collapsible-hint { display: none; }
+
+  // Unutarnja ploča: bez vlastitog naslova i s gornjim obrubom uz summary.
+  > div:has(> form[class^="oi-"]) {
+    margin: -1px 0 0;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    max-width: none;
+
+    &::before { display: none; }
+  }
+}
+
 // --- Redovi: pod-forme unutar ploče ----------------------------
 div:has(> form[class^="oi-"]) > form[class^="oi-"] {
   display: flex;
@@ -2120,17 +2184,38 @@ main div:has(> table) > table {
   max-width: 100%;
 }
 
+// Tablice ostaju unutar tekstualnog stupca i prelamaju sadržaj ćelija
+// umjesto da klize vodoravno. table-layout: fixed dijeli širinu na
+// stupce, a ćelije prelamaju tekst; široke tablice (5–6 stupaca s
+// proznim ćelijama) tako stanu u stupac uz nešto manji font.
 main table {
-  display: block;
-  width: max-content;
+  width: 100%;
   max-width: 100%;
-  overflow-x: auto;
-  -webkit-overflow-scrolling: touch;
+  table-layout: fixed;
+  font-size: 0.9rem;
+  line-height: 1.4;
 }
 
-// Caption ostaje pune širine i ne skrola s tablicom
+main table th,
+main table td {
+  overflow-wrap: anywhere;
+  word-break: normal;
+  hyphens: auto;
+  padding: 0.4rem 0.55rem;
+  vertical-align: top;
+}
+
+// Caption ostaje pune širine
 main table > caption {
   white-space: normal;
+}
+
+// Tablice s mnogo stupaca (šire, prozne ćelije) dobivaju dodatno
+// smanjen font da uske stupce drže čitljivima bez prelijevanja.
+main table:has(th:nth-child(5)) {
+  font-size: 0.82rem;
+
+  th, td { padding: 0.35rem 0.45rem; }
 }
 
 // 2) OJS / Observable SVG grafovi — poštuj širinu stupca.
@@ -2153,8 +2238,11 @@ form.observablehq--input,
   box-sizing: border-box;
 }
 
-// 3) Callout i definicijske kutije — clamp + skrol za široku djecu
-//    (duge formule, ugniježđene tablice, neprekinuti tokeni).
+// 3) Callout i definicijske kutije — kutija se NE smije skrolati ni
+//    klizati vodoravno. Sadržaj se prelama i ostaje fiksiran unutar
+//    tekstualnog stupca, poravnat s tekstom. Skrol se dopušta samo
+//    pravoj neprelomljivoj djeci (kod, tablice), i to unutar njih,
+//    a ne tako da klizi cijela kutija.
 .callout,
 div.callout,
 .callout-praksa,
@@ -2167,11 +2255,21 @@ div.definition,
 .vodic-panel,
 .sazetak-panel {
   max-width: 100%;
-  overflow-x: auto;
-  -webkit-overflow-scrolling: touch;
+  overflow-x: clip;   // kutija fiksna — bez vodoravnog klizanja
 
   // flex/grid djeca moraju smjeti skupiti se ispod svoje sadržajne širine
   > * { min-width: 0; }
+
+  // samo prava neprelomljiva djeca (kod, tablice) smiju imati vlastiti
+  // skrol; tekst, formule i ostalo se prelamaju i ostaju u kutiji
+  > pre,
+  > table,
+  > .cell-output-display:has(> table),
+  > div:has(> table) {
+    max-width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
 }
 
 // 4) Dugi neprekinuti tokeni (URL-ovi, kodni nazivi) u prozi i

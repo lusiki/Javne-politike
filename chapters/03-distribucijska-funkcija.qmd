@@ -41,7 +41,7 @@ Ispod distribucijske funkcije obično se mogu smjestiti tri važna normativna ko
 
 ## Utilitarizam
 
-Utilitarizam polazi od ideje da javne politike treba vrednovati prema njihovu učinku na ukupno društveno blagostanje. U najjednostavnijem obliku, cilj je maksimizirati zbroj korisnosti svih članova društva. Ako neka politika smanjuje blagostanje jedne osobe, ali povećava blagostanje druge osobe još više, tada ukupno društveno blagostanje može porasti.
+Od triju koncepata prvi izravno odgovara na pitanje smije li država uopće preraspodjeljivati, jer pravednost mjeri posljedicama za ukupno blagostanje, a ne početnom raspodjelom kao takvom. Utilitarizam polazi od ideje da javne politike treba vrednovati prema njihovu učinku na ukupno društveno blagostanje. U najjednostavnijem obliku, cilj je maksimizirati zbroj korisnosti svih članova društva. Ako neka politika smanjuje blagostanje jedne osobe, ali povećava blagostanje druge osobe još više, tada ukupno društveno blagostanje može porasti.
 
 Ova logika često se koristi kao argument za preraspodjelu dohotka. Zamislimo društvo u kojem jedna osoba ima vrlo visok dohodak, a druga vrlo nizak. Ako država oporezuje bogatiju osobu za 1.000 eura i taj iznos transferira siromašnijoj osobi, bogatija osoba gubi dio dohotka, a siromašnija ga dobiva. Međutim, isti iznos novca nema jednaku vrijednost za obje osobe. Za osobu s vrlo visokim dohotkom 1.000 eura može značiti vrlo malu promjenu životnog standarda. Za osobu s vrlo niskim dohotkom isti iznos može značiti mogućnost plaćanja hrane, grijanja, lijekova, stanarine ili školskih potreba za dijete.
 
@@ -75,7 +75,7 @@ Rawlsov pristup važan je jer pomiče raspravu s ukupnog zbroja korisnosti prema
 
 ## Robni egalitarizam
 
-Robni egalitarizam polazi od ideje da društvo ne mora težiti potpunoj jednakosti dohotka, ali treba osigurati da svi građani imaju pristup određenim ključnim dobrima i uslugama. Razlike u dohotku mogu biti prihvatljive, ali nije prihvatljivo da dio stanovništva nema pristup osnovnom obrazovanju, zdravstvenoj zaštiti, sigurnosti, prehrani, stanovanju, pitkoj vodi, pravnoj zaštiti ili minimalnim životnim uvjetima.
+Rawlsova zaštita najlošije stojećih i dalje se mjeri njihovim dohotkom i položajem, no dio dobara društvo ne želi prepustiti dohotku ni kada je raspodjela dohotka prihvatljiva. Robni egalitarizam polazi od ideje da društvo ne mora težiti potpunoj jednakosti dohotka, ali treba osigurati da svi građani imaju pristup određenim ključnim dobrima i uslugama. Razlike u dohotku mogu biti prihvatljive, ali nije prihvatljivo da dio stanovništva nema pristup osnovnom obrazovanju, zdravstvenoj zaštiti, sigurnosti, prehrani, stanovanju, pitkoj vodi, pravnoj zaštiti ili minimalnim životnim uvjetima.
 
 Ovaj pristup posebno je važan jer se udaljava od isključive usmjerenosti na novčani dohodak. Novac je važan jer omogućuje izbor, ali životne prilike ne ovise samo o dohotku. Dvije osobe mogu imati isti novčani dohodak, ali vrlo različite stvarne mogućnosti ako jedna ima pristup kvalitetnoj školi, liječniku, sigurnom susjedstvu i javnom prijevozu, a druga nema. Zato se u analizi pravednosti sve više naglašava da je važno promatrati ne samo dohodak, nego i pristup ključnim dobrima, sposobnostima i prilikama [@sen1999].
 
@@ -200,6 +200,8 @@ lor_t = lor_controls.t
 ```
 
 **Što isprobati.** (1) Povisite klizač Nejednakost tržišnog dohotka i plava se Lorenzova krivulja izdublje odmiče od dijagonale, a Ginijev koeficijent u gornjem lijevom kutu raste, što je očekivana slika sve nejednakijeg tržišnog ishoda. (2) Vratite nejednakost na umjerenu vrijednost pa povlačite Razinu preraspodjele (porezi i transferi) prema gore i krivulja se vidljivo vraća prema liniji jednakosti dok Ginijev koeficijent pada, čime se izravno čita koliko porezi i transferi stišću raspodjelu. (3) Sada postavite preraspodjelu na najvišu vrijednost uz vrlo visoku tržišnu nejednakost i vidjet ćete da i snažna preraspodjela tek djelomično povlači krivulju prema dijagonali, jer država ublažava polazišnu nejednakost, ali je rijetko poništava u cijelosti.
+
+Mjera nejednakosti tako pokazuje koliko je preraspodjele ostvareno, ali ne i koliko ga društvo želi, jer taj izbor ostaje vrijednosni sud o tome kako odvagnuti efikasnost i pravednost. Time se rasprava vraća na pitanje s kojega je i krenula, na to čemu cijela distribucijska funkcija na kraju služi.
 
 ## Distribucijska funkcija kao temelj društvene solidarnosti
 
