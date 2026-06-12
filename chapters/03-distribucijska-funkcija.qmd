@@ -141,6 +141,7 @@ Učinak poreza i transfera na nejednakost moguće je izravno izmjeriti. Podaci O
 
 Graf koji slijedi prikazuje Lorenzovu krivulju i pripadni Ginijev koeficijent. Vodoravna os nosi kumulativni udio stanovništva poredanog od najsiromašnijeg prema najbogatijem, okomita kumulativni udio dohotka, a dijagonala označava savršenu jednakost, pa što je plava krivulja udubljenija, to je raspodjela nejednakija. Graf je interaktivan, pa klizači mijenjaju polazišnu nejednakost tržišnog dohotka i razinu preraspodjele kroz poreze i transfere.
 
+::: {.content-visible when-format="html"}
 ```{ojs}
 //| echo: false
 viewof lor_controls = Inputs.form({
@@ -204,6 +205,50 @@ lor_t = lor_controls.t
 ```
 
 **Što isprobati.** (1) Povisite klizač Nejednakost tržišnog dohotka i plava se Lorenzova krivulja izdublje odmiče od dijagonale, a Ginijev koeficijent u gornjem lijevom kutu raste, što je očekivana slika sve nejednakijeg tržišnog ishoda. (2) Vratite nejednakost na umjerenu vrijednost pa povlačite Razinu preraspodjele (porezi i transferi) prema gore i krivulja se vidljivo vraća prema liniji jednakosti dok Ginijev koeficijent pada, čime se izravno čita koliko porezi i transferi stišću raspodjelu. (3) Sada postavite preraspodjelu na najvišu vrijednost uz vrlo visoku tržišnu nejednakost i vidjet ćete da i snažna preraspodjela tek djelomično povlači krivulju prema dijagonali, jer država ublažava polazišnu nejednakost, ali je rijetko poništava u cijelosti.
+:::
+
+::: {.content-visible when-format="pdf"}
+```{r}
+#| label: fig-lorenz-print
+#| echo: false
+#| fig-cap: "Lorenzova krivulja udaljava se od dijagonale jednakosti kako raste nejednakost tržišnog dohotka, a preraspodjela je vraća prema dijagonali i smanjuje Ginijev koeficijent."
+#| fig-alt: "Graf Lorenzove krivulje s kumulativnim udjelom stanovništva na osi x i kumulativnim udjelom dohotka na osi y. Isprekidana dijagonala prikazuje savršenu jednakost, a plava krivulja odstupa prema dolje što je nejednakost veća; Ginijev koeficijent ispisuje se u gornjem lijevom kutu."
+#| fig-width: 5.4
+#| fig-height: 5.2
+# Statički PDF blizanac interaktivnog OJS grafa (zadane vrijednosti k = 2.5, t = 0).
+source("R/setup.R")
+
+k <- 2.5  # nejednakost tržišnog dohotka (zadana vrijednost klizača)
+t <- 0    # razina preraspodjele (zadana vrijednost klizača)
+
+# Lorenzova krivulja: L(p) = (1 - t) * p^k + t * p
+p <- seq(0, 1, by = 0.01)
+L <- (1 - t) * p^k + t * p
+lorenz <- data.frame(p = p, L = L)
+
+# Gini = 1 - 2 * ∫ L(p) dp  (trapezna procjena, identično OJS-u)
+area <- sum((head(L, -1) + tail(L, -1)) / 2 * diff(p))
+gini <- 1 - 2 * area
+
+ggplot(lorenz, aes(p, L)) +
+  geom_abline(slope = 1, intercept = 0,
+              linetype = "dashed", linewidth = 0.5, color = "#6B6357") +
+  geom_line(linewidth = 1.1, color = "#2D5A8E") +
+  annotate("text", x = 0.04, y = 0.93,
+           label = sprintf("Ginijev koeficijent = %.2f", gini),
+           hjust = 0, fontface = "bold", size = 4.4, color = "#1C1916") +
+  annotate("text", x = 0.80, y = 0.88, label = "linija jednakosti",
+           hjust = 0, angle = -33, fontface = "italic",
+           size = 3.4, color = "#6B6357") +
+  scale_x_continuous(labels = scales::percent, limits = c(0, 1),
+                     expand = c(0, 0)) +
+  scale_y_continuous(labels = scales::percent, limits = c(0, 1),
+                     expand = c(0, 0)) +
+  coord_fixed() +
+  labs(x = "Kumulativni udio stanovništva",
+       y = "Kumulativni udio dohotka")
+```
+:::
 
 Mjera nejednakosti tako pokazuje koliko je preraspodjele ostvareno, ali ne i koliko ga društvo želi, jer taj izbor ostaje vrijednosni sud o tome kako odvagnuti efikasnost i pravednost. Time se rasprava vraća na pitanje s kojega je i krenula, na to čemu cijela distribucijska funkcija na kraju služi.
 
