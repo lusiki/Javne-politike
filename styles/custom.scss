@@ -195,9 +195,9 @@ aside.sidenote {
   line-height: 1.5;
   color: $brand-slate;
 
-  // Fusnote-popis
-  &.column-margin-citation,
-  .csl-entry {
+  // Fusnote-popis. Bez paušalnog italica na .csl-entry — brisao bi kurziv
+  // naslova časopisa i otežavao čitanje na 0.8rem (izvjestaj-estetski L2).
+  &.column-margin-citation {
     font-style: italic;
   }
 }
@@ -912,9 +912,9 @@ div.pullquote {
   position: relative;
   max-width: none;
 
-  // Veliki ukrasni navodnik gore lijevo
+  // Veliki ukrasni navodnik gore lijevo — hrvatski „ (izvjestaj-estetski L1)
   &::before {
-    content: "\201C";
+    content: "\201E";
     position: absolute;
     top: -1.2rem;
     left: 0.6rem;
@@ -2259,6 +2259,22 @@ div.callout .column-margin {
 .hypothesis-highlight {
   background-color: rgba(200, 152, 94, 0.28);   // ochre
 }
+
+// =============================================================
+// Literatura — lagani tretman popisa na samostalnoj stranici
+// (izvjestaj-estetski L5). U margini je .csl-entry već stiliziran;
+// ovdje dajemo čitljiv popis na punoj širini stranice references.qmd.
+// =============================================================
+#refs .csl-entry {
+  font-size: 0.92rem;
+  line-height: 1.55;
+  padding: 0.55rem 0 0.55rem 1.6rem;
+  text-indent: -1.6rem;          // viseći uvlak (hanging indent)
+  border-bottom: 1px solid rgba($brand-navy, 0.07);
+  max-width: 70ch;
+  color: $brand-charcoal;
+}
+#refs .csl-entry:last-child { border-bottom: 0; }
 
 @import "vodic";
 

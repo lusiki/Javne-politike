@@ -635,3 +635,43 @@ li.vd-branch:nth-child(even) a.vd-branch-card { border-left-color: var(--vd-acce
   // viz / tablica / legenda ostaju svijetle kartice (Plot na brendu)
   .atlas-panel__table th { color: #6B6357 !important; }
 }
+
+// =============================================================
+// Print u tamnom načinu (izvjestaj-estetski L6)
+// _dark.scss pravila s !important inače ispisuju cream tekst na bijelom
+// papiru. Pri ispisu vraćamo svijetle (ink-na-papiru) boje, izbjegavamo
+// lomljenje kutija i skrivamo interaktivno kromiranje.
+// =============================================================
+@media print {
+  body {
+    background: #ffffff !important;
+    color: #1C1916 !important;
+  }
+  h1, h2, h3, h4, h5, h6,
+  .title, p, li, td, th, blockquote, .column-margin, figcaption {
+    color: #1C1916 !important;
+  }
+  a { color: #1C1916 !important; }
+
+  // Kutije i figure se ne lome preko stranica
+  div.callout,
+  .callout-praksa, .callout-empirija, .callout-vjezba,
+  .definition, div[id^="def-"],
+  figure, table, .quarto-figure, .pullquote {
+    break-inside: avoid;
+    background: #ffffff !important;
+  }
+
+  // OJS papirnata kartica iz tamnog načina nije potrebna pri ispisu
+  .cell-output-display > svg,
+  .cell-output-display > figure > svg {
+    background: transparent !important;
+    padding: 0 !important;
+  }
+
+  // Interaktivno kromiranje skriveno
+  #reading-progress,
+  .ojs-reset,
+  .ojs-collapsible-summary,
+  .hypothesis-highlight { background: transparent !important; }
+}

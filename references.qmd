@@ -1,4 +1,11 @@
-# References {.unnumbered}
+---
+title: "Literatura"
+toc: false
+number-sections: false
+lang: hr-HR
+code-tools: false      # nema koda na ovoj stranici (izvjestaj-estetski L5)
+comments: false        # bez Hypothesis na dodatku (M17)
+---
 
 ::: {#refs}
 :::

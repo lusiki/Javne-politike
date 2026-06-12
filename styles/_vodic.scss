@@ -314,6 +314,18 @@ li.vd-branch:nth-child(even) a.vd-branch-card { border-left: 3px solid var(--vd-
   font-size: 0.64rem;
   letter-spacing: 0.05em;
   color: $brand-slate;
+
+  // Linkovi izvora ne nasljeđuju proznu hairline-crtu ni zeleni hover-blok
+  // (izvjestaj-estetski L4).
+  a {
+    color: inherit;
+    border-bottom: 0;
+    &:hover {
+      color: var(--vd-accent-deep);
+      background: transparent;
+      border-bottom: 0;
+    }
+  }
 }
 
 .vd-tag {
