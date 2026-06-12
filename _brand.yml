@@ -34,7 +34,10 @@ typography:
     - family: "IBM Plex Mono"
       source: google
   base:
-    family: "Public Sans"
+    # Tijelo proze je Newsreader (serif), a Public Sans je UI/sans registar.
+    # custom.scss namjerno postavlja body{font-family:Newsreader} i pobjeđuje
+    # nad ovim slojem — ova vrijednost odražava isporučeno (izvjestaj-estetski M7).
+    family: "Newsreader"
     size: 1.02rem
     line-height: 1.6
   headings:

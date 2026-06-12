@@ -199,31 +199,8 @@ a.anchorjs-link {
   &:hover { color: #DD8580 !important; }
 }
 
-// Watermark broj poglavlja
-header#title-block-header[data-chapter-num]::before {
-  color: #C8615A !important;
-  opacity: 0.14 !important;
-}
-
 header#title-block-header h1.title::after {
   background: #C8615A !important;
-}
-
-// Drop cap u dark
-.has-dropcap::first-letter {
-  color: #DD8580 !important;
-}
-
-.has-dropcap::first-line {
-  color: #F0E8D8 !important;
-}
-
-// Reading time chip
-.reading-time {
-  background: rgba(159, 144, 123, 0.12) !important;
-  color: #C7BEAF !important;
-
-  &::before { color: #C8615A !important; }
 }
 
 .chapter-kicker, .book-hero-kicker {
@@ -312,7 +289,6 @@ header#title-block-header h1.title::after {
 
 // End mark / dinkus
 .dinkus::before { color: #C8615A !important; }
-.chapter-end-mark { color: #C8615A !important; }
 
 // Definitions / dotted
 dfn, .term, abbr[title] {
@@ -476,3 +452,37 @@ li.vd-branch:nth-child(even) a.vd-branch-card { border-left-color: var(--vd-acce
 }
 
 .vd-hub-part-head { border-bottom-color: var(--vd-accent) !important; }
+
+// =============================================================
+// Pedagoški callouti — tamne varijante (izvjestaj-estetski H6)
+// Renderiraju se BEZ .callout klase, pa ih opća callout-pravila ne hvataju.
+// Svijetli akcenti padaju ispod AA na tamnom dnu; repointamo --pedagogy-color
+// na posvijetljene tonove i podlogu na cream-wash.
+// =============================================================
+.callout-praksa,
+.callout-empirija,
+.callout-vjezba {
+  background: rgba(232, 223, 208, 0.04) !important;
+  box-shadow: none !important;
+}
+
+.callout-praksa   { --pedagogy-color: #7BA68F !important; }
+.callout-empirija { --pedagogy-color: #DD8580 !important; }
+.callout-vjezba   { --pedagogy-color: #DD9858 !important; }
+
+// =============================================================
+// .var čipovi (OJS "Što isprobati" upute) — M11
+// Svijetli #3A5648 mjeri ~2.1:1; dižemo na posvijetljeni verdigris token.
+// =============================================================
+.var {
+  color: #9FC0AF !important;
+  background: rgba(232, 223, 208, 0.07) !important;
+}
+
+// =============================================================
+// Margin-citati i fusnote na margini — M12
+// .column-margin #6B6357 ~2.9:1; dižemo na cream-ton (kao figcaption).
+// =============================================================
+.column-margin {
+  color: #C7BEAF !important;
+}

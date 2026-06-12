@@ -217,17 +217,6 @@ img {
     overflow-x: scroll;
   }
 
-  /* Drop cap manji na mobitelu */
-  .has-dropcap::first-letter {
-    font-size: 3.2rem !important;
-  }
-
-  /* Veliki broj poglavlja manji na mobitelu */
-  header#title-block-header[data-chapter-num]::before {
-    font-size: 4.5rem !important;
-    opacity: 0.18 !important;
-  }
-
   #reading-progress {
     height: 2px;
   }

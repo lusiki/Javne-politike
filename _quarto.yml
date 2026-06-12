@@ -2,9 +2,11 @@ project:
   type: book
   output-dir: docs
   execute-dir: project
+  resources:
+    - images/apple-touch-icon.png
 
 book:
-  title: "Sve što želite znati o odnosu države i tržišta"
+  title: "Sve što želite znati o državi i javnim politikama u Hrvatskoj"
   subtitle: "Praktični i interaktivni udžbenik za studente i sve koji žele znati više"
   author:
     - name: "Milan Deskar-Škrbić"
@@ -96,6 +98,9 @@ book:
   appendices:
     - references.qmd
     - vodic.qmd
+    # Vodič-podstranice ostaju u appendices da se renderiraju (hub linka na
+    # vodic/NN.html), ali se sakrivaju iz sidebara JS-om u book-include.html
+    # (pruneSidebar) da ga ne pretrpaju (izvjestaj-estetski M4).
     - vodic/01-uloga-drzave.qmd
     - vodic/02-alokacijska-funkcija.qmd
     - vodic/03-distribucijska-funkcija.qmd
@@ -123,6 +128,10 @@ book:
 bibliography: references.bib
 
 crossref:
+  # Ravna (kontinuirana) numeracija — poglavlja su nenumerirana
+  # (number-sections: false), pa "Slika 7.1" referencira nevidljiv broj
+  # poglavlja. chapters:false daje "Slika 1, Slika 2…" kroz cijelu knjigu.
+  chapters: false
   fig-title: "Slika"
   tbl-title: "Tablica"
   sec-prefix: "Poglavlje"
@@ -197,7 +206,7 @@ format:
       - text: |
           <link rel="preconnect" href="https://fonts.googleapis.com">
           <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-          <link href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600;700&family=Geist+Mono:wght@400;500;600&family=Newsreader:ital,opsz,wght@0,6..72,300;0,6..72,400;0,6..72,500;0,6..72,600;0,6..72,700;1,6..72,300;1,6..72,400;1,6..72,500&display=swap" rel="stylesheet">
+          <link href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&family=IBM+Plex+Mono:wght@400;500;600&family=Newsreader:ital,opsz,wght@0,6..72,300;0,6..72,400;0,6..72,500;0,6..72,600;0,6..72,700;1,6..72,300;1,6..72,400;1,6..72,500&display=swap" rel="stylesheet">
     include-after-body:
       - styles/book-include.html
     comments:

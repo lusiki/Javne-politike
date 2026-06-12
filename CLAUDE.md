@@ -150,8 +150,9 @@ STATECRAFT palette (`_brand.yml`, `styles/custom.scss`):
 - **Body text**: ink `#1C1916` (near-black with brown undertone)
 - **Primary accent**: verdigris `#4A6B5C` (links, buttons, active states)
 - **Emphasis**: oxblood `#6B1F26` (callout borders, destructive actions only)
-- **Archival accent**: ochre `#C8985E` (timeline, chapter-number watermark)
-- **Body font**: Public Sans (sans-serif)
+- **Archival accent**: ochre `#C8985E` (timeline accent)
+- **Body font**: Newsreader (serif) — prose body is serif; `custom.scss` sets `body{font-family:Newsreader}` and wins over `_brand.yml`
+- **UI / sans register**: Public Sans (sidenotes, callout labels, chips, buttons)
 - **Display/headings**: Newsreader (serif)
 - **Monospace**: IBM Plex Mono
 
