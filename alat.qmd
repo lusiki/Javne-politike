@@ -3,41 +3,83 @@ title: "Alat / Igralište"
 toc: false
 number-sections: false
 lang: hr-HR
+comments: false   # bez Hypothesis na dodatku (izvjestaj-estetski M17)
 format:
   html:
-    include-in-header:
-      text: |
-        <style>
-          #quarto-sidebar { display: none !important; }
-          #quarto-margin-sidebar { display: none !important; }
-          .sidebar.sidebar-navigation { display: none !important; }
-          .page-columns { display: block !important; }
-          main.content, #quarto-document-content {
-            max-width: 1100px !important;
-            margin-left: auto !important;
-            margin-right: auto !important;
-            padding-left: 1.5rem !important;
-            padding-right: 1.5rem !important;
-            grid-column: 1 / -1 !important;
-          }
-        </style>
+    page-layout: full
+    body-classes: vd-page
 ---
 
-Interaktivni alati za istraživanje koncepata iz knjige — kalkulatori, simulatori i vizualizacije koje pretvaraju teoriju u nešto što možete sami isprobati.
+```{=html}
+<header class="vd-hub-head">
+  <span class="vd-hub-kicker">Alat · igralište</span>
+  <h1 class="vd-hub-title">Teorija koju isprobate rukama</h1>
+  <p class="vd-hub-lede">Interaktivni kalkulatori, simulatori i vizualizacije koji pretvaraju koncepte iz knjige u nešto što sami pomičete i mijenjate. Sve je u pripremi — evo što stiže.</p>
+</header>
 
-::: {.callout-note}
-U pripremi. Planirani alati uključuju:
+<section class="vd-hub-part vd-dio-2" aria-label="Planirani alati">
+  <div class="vd-hub-part-head">
+    <span class="vd-hub-part-label">U pripremi</span>
+    <span class="vd-hub-part-title">Planirani alati</span>
+  </div>
+  <div class="vd-hub-grid">
 
-- **Kalkulator poreznog klina** — sliderima za bruto plaću prikažite neto plaću i strukturu opterećenja u Hrvatskoj
-- **Simulator medijan birača** — pomičite pozicije birača i stranaka i pratite konvergenciju prema centru
-- **Vizualizacija Lafferove krivulje** — istražite odnos poreznih stopa i prihoda
-- **Radni list cost-benefit analize** — unesite troškove i koristi projekta, izračunajte NPV uz analizu osjetljivosti
-- **Fiskalni multiplikator** — mijenjajte razinu javnih rashoda i pratite učinke na BDP kroz multiplikacijski mehanizam
-- **Igranje s porezima**
-  - kako ravni porez (*flat tax*) uz osobni odbitak postaje progresivan u praksi
-  - usporedba efektivne porezne stope u progresivnom, proporcionalnom i regresivnom sustavu
-  - povećajte PDV i promatrajte što se događa s cijenama uz pretpostavku potpunog ili djelomičnog prijenosa
-  - izračun elastičnosti porezne osnove prema obliku poreza (dohodak, plaće, potrošnja, dobit i dr.)
-- **Isplaniraš budžet — doživi krizu** — simulacija fiskalne pozicije kućanstva ili države uz vanjske šokove (pad BDP-a, rast inflacije, rast kamata)
-- **Fiskalna politika s automatskim stabilizatorima i bez njih** — usporedite putanju BDP-a i deficita uz diskrecijsku i automatski stabiliziranu fiskalnu politiku
-:::
+    <div class="vd-hub-card vd-soon">
+      <span class="vd-badge">Uskoro</span>
+      <span class="vd-hub-num">§ porezi</span>
+      <span class="vd-hub-name">Kalkulator poreznog klina</span>
+      <span class="vd-hub-q">Sliderima za bruto plaću prikažite neto plaću i strukturu opterećenja u Hrvatskoj.</span>
+    </div>
+
+    <div class="vd-hub-card vd-soon">
+      <span class="vd-badge">Uskoro</span>
+      <span class="vd-hub-num">§ izbori</span>
+      <span class="vd-hub-name">Simulator medijan birača</span>
+      <span class="vd-hub-q">Pomičite pozicije birača i stranaka i pratite konvergenciju prema centru.</span>
+    </div>
+
+    <div class="vd-hub-card vd-soon">
+      <span class="vd-badge">Uskoro</span>
+      <span class="vd-hub-num">§ porezi</span>
+      <span class="vd-hub-name">Lafferova krivulja</span>
+      <span class="vd-hub-q">Istražite odnos poreznih stopa i ukupnih poreznih prihoda.</span>
+    </div>
+
+    <div class="vd-hub-card vd-soon">
+      <span class="vd-badge">Uskoro</span>
+      <span class="vd-hub-num">§ evaluacija</span>
+      <span class="vd-hub-name">Radni list cost-benefit analize</span>
+      <span class="vd-hub-q">Unesite troškove i koristi projekta, izračunajte NPV uz analizu osjetljivosti.</span>
+    </div>
+
+    <div class="vd-hub-card vd-soon">
+      <span class="vd-badge">Uskoro</span>
+      <span class="vd-hub-num">§ rashodi</span>
+      <span class="vd-hub-name">Fiskalni multiplikator</span>
+      <span class="vd-hub-q">Mijenjajte razinu javnih rashoda i pratite učinke na BDP kroz multiplikacijski mehanizam.</span>
+    </div>
+
+    <div class="vd-hub-card vd-soon">
+      <span class="vd-badge">Uskoro</span>
+      <span class="vd-hub-num">§ porezi</span>
+      <span class="vd-hub-name">Igranje s porezima</span>
+      <span class="vd-hub-q">Kako ravni porez uz osobni odbitak postaje progresivan, usporedba efektivnih stopa, prijenos PDV-a na cijene i elastičnost porezne osnove.</span>
+    </div>
+
+    <div class="vd-hub-card vd-soon">
+      <span class="vd-badge">Uskoro</span>
+      <span class="vd-hub-num">§ stabilizacija</span>
+      <span class="vd-hub-name">Isplaniraš budžet — doživi krizu</span>
+      <span class="vd-hub-q">Simulacija fiskalne pozicije kućanstva ili države uz vanjske šokove — pad BDP-a, rast inflacije, rast kamata.</span>
+    </div>
+
+    <div class="vd-hub-card vd-soon">
+      <span class="vd-badge">Uskoro</span>
+      <span class="vd-hub-num">§ stabilizacija</span>
+      <span class="vd-hub-name">Automatski stabilizatori</span>
+      <span class="vd-hub-q">Usporedite putanju BDP-a i deficita uz diskrecijsku i automatski stabiliziranu fiskalnu politiku.</span>
+    </div>
+
+  </div>
+</section>
+```

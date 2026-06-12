@@ -4,6 +4,7 @@ toc: true
 toc-depth: 2
 number-sections: false
 lang: hr-HR
+comments: false   # bez Hypothesis na dodatku (izvjestaj-estetski M17)
 format:
   html:
     include-in-header:

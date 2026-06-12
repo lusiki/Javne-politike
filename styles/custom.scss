@@ -71,12 +71,8 @@ body {
   text-rendering: optimizeLegibility;
 }
 
-// Glavni tekst stupca — udobnih ~70 znakova po retku
-main.content,
-#quarto-document-content,
-.page-columns > main {
-  // Ostavljamo Quarto layout-u kontrolu, samo ograničavamo unutarnji "prose"
-}
+// Mjera retka (~70 znakova) provedena je u styles.css (M8) na razini
+// potomaka section/kutija; ovdje nema prazne placeholder-rule.
 
 // Sami pasusi: taman ton, mirno ravnanje
 .quarto-title-block + *,
@@ -2254,6 +2250,14 @@ div.callout .column-margin {
   margin-top: 0.5rem;
   font-size: 0.82em;
   color: $brand-slate;
+}
+
+// =============================================================
+// Hypothesis — tematizirana oker oznaka umjesto zadane žute
+// (izvjestaj-estetski M17). Klijent ostaje samo na poglavljima.
+// =============================================================
+.hypothesis-highlight {
+  background-color: rgba(200, 152, 94, 0.28);   // ochre
 }
 
 @import "vodic";

@@ -109,31 +109,42 @@ body {
   background-color: #F2EDE3;
 }
 
-/* Glavni stupac teksta — udobnih ~70 znakova / red */
-main#quarto-document-content,
-main.content > section,
-main.content > p,
-main.content > .quarto-title-block ~ section {
-  /* ne stiskamo Quarto layout, samo proseu damo max-width */
-}
-
 /* Quarto stavlja članak unutar .content; targetiramo "prose" */
 .quarto-book main.content {
   max-width: none; /* dopuštamo punu Quarto strukturu (sidebar + margin) */
 }
 
-/* Sami pasusi/listevi imaju komforan max-width */
-main.content > section > p,
-main.content > section > ul,
-main.content > section > ol,
-main.content > section > blockquote,
-main.content > section > .callout,
-main.content > section > .sourceCode,
+/* Sami pasusi/liste imaju komforan max-width. Koristimo potomka (section p),
+   ne samo izravnu djecu, da uhvatimo i ugniježđene razina-3 sekcije
+   (npr. pogl. 14) koje su prije curile na 100+ znakova (izvjestaj-estetski M8). */
+main.content section p,
+main.content section ul,
+main.content section ol,
+main.content section blockquote,
 main.content > p,
 main.content > ul,
 main.content > ol,
 main.content > blockquote {
   max-width: 70ch;
+}
+
+/* Unutrašnjosti pedagoških kutija i definicija — vlastiti max-width da i
+   one ostanu u udobnoj mjeri retka, a ne pune širine stupca (M8). */
+.callout-praksa,
+.callout-empirija,
+.callout-vjezba,
+.definition,
+div[id^="def-"] {
+  max-width: 75ch;
+  margin-right: auto;
+}
+
+/* Tablice, kod i figure unutar kutija/sekcija ostaju puni — ne sužavamo ih. */
+main.content section table,
+main.content section .sourceCode,
+main.content section figure,
+main.content section .quarto-figure {
+  max-width: 100%;
 }
 
 /* Slike i tablice mogu biti šire */

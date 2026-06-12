@@ -1,0 +1,42 @@
+---
+title: "Stranica nije pronađena"
+toc: false
+number-sections: false
+lang: hr-HR
+comments: false
+format:
+  html:
+    page-layout: full
+    body-classes: vd-page
+---
+
+```{=html}
+<header class="vd-hub-head">
+  <span class="vd-hub-kicker">Greška 404</span>
+  <h1 class="vd-hub-title">Ovdje nema ničega</h1>
+  <p class="vd-hub-lede">Stranicu koju tražite nismo pronašli. Možda je premještena ili je poveznica zastarjela. Vratite se na početak ili otvorite vizualni vodič kroz knjigu.</p>
+</header>
+
+<section class="vd-hub-part vd-dio-3" aria-label="Povratak">
+  <div class="vd-hub-grid">
+    <a class="vd-hub-card" href="/Javne-politike/index.html">
+      <span class="vd-hub-num">§</span>
+      <span class="vd-hub-name">Naslovnica</span>
+      <span class="vd-hub-q">Početak i sadržaj knjige.</span>
+      <span class="vd-go">Otvorite →</span>
+    </a>
+    <a class="vd-hub-card" href="/Javne-politike/chapters/00-uvod.html">
+      <span class="vd-hub-num">00</span>
+      <span class="vd-hub-name">Uvod</span>
+      <span class="vd-hub-q">Zašto bismo otvorili ovu knjigu?</span>
+      <span class="vd-go">Otvorite →</span>
+    </a>
+    <a class="vd-hub-card" href="/Javne-politike/vodic.html">
+      <span class="vd-hub-num">✦</span>
+      <span class="vd-hub-name">Vodič</span>
+      <span class="vd-hub-q">Knjiga u 20 mentalnih mapa.</span>
+      <span class="vd-go">Otvorite →</span>
+    </a>
+  </div>
+</section>
+```

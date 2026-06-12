@@ -5,6 +5,7 @@ number-sections: false
 code-tools: false
 code-fold: false
 echo: false
+comments: false   # bez Hypothesis na Atlasu (izvjestaj-estetski M17)
 format:
   html:
     body-classes: standalone-page atlas-page

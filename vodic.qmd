@@ -3,6 +3,7 @@ title: "Vodič"
 toc: false
 number-sections: false
 lang: hr-HR
+comments: false   # bez Hypothesis na vodič-hubu (izvjestaj-estetski M17)
 format:
   html:
     page-layout: full

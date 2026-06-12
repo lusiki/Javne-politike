@@ -23,6 +23,11 @@ book:
   date-format: "D MMMM YYYY"
   language: hr-HR
 
+  # Opis + cover za dijeljenje (OG/Twitter). cover-image re-aktivira skriveni
+  # custom.scss blok građen oko auto-injektirane cover slike (izvjestaj-estetski M15).
+  description: "Praktični i interaktivni udžbenik o javnim financijama, teoriji javnog izbora i javnim politikama u Hrvatskoj — uloga države, alokacija, redistribucija, institucije i reforme."
+  cover-image: cover.png
+
   site-url: "https://lusiki.github.io/Javne-politike/"
 
   favicon: "images/favicon.ico"
@@ -154,6 +159,11 @@ crossref:
 
 format:
   html:
+    # Social/share metadata (izvjestaj-estetski M15) — dijeljeni link dobiva
+    # naslov, opis i cover umjesto golog URL-a.
+    open-graph: true
+    twitter-card:
+      card-style: summary_large_image
     theme:
       light:
         - cosmo

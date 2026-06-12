@@ -1,0 +1,4 @@
+# Vodič-podstranice su vizualne slikovnice, ne tekst za anotiranje —
+# isključujemo Hypothesis klijent na cijelom vodic/ direktoriju
+# (izvjestaj-estetski M17).
+comments: false
