@@ -48,7 +48,7 @@ Whole-of-government pristup najlakše je razumjeti na primjeru integrirane javne
 
 [^wp-ch17]: Daljnje čitanje: OECD (2020), [*The OECD Digital Government Policy Framework*](https://www.oecd.org/content/dam/oecd/en/publications/reports/2020/10/the-oecd-digital-government-policy-framework_11dd6aa8/f64fed2a-en.pdf).
 
-Srodan pojam je **joined-up government** (povezana vlada), koji se posebno razvio u Ujedinjenom Kraljevstvu krajem 1990-ih. Njegova je svrha bila ispraviti fragmentaciju nastalu nakon reformi inspiriranih NPM-om, jer se nakon razdoblja razdvajanja i decentralizacije pojavila potreba za ponovnim povezivanjem sustava [@christensen2007].
+Srodan pojam je **povezana vlada** (*joined-up government*), koji se posebno razvio u Ujedinjenom Kraljevstvu krajem 1990-ih. Njegova je svrha bila ispraviti fragmentaciju nastalu nakon reformi inspiriranih NPM-om, jer se nakon razdoblja razdvajanja i decentralizacije pojavila potreba za ponovnim povezivanjem sustava [@christensen2007].
 
 ## Mreže javnih politika i partnerstva
 

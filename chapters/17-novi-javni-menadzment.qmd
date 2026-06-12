@@ -16,7 +16,7 @@ title: "Novi javni menadžment"
 
 Tijekom 1980-ih i 1990-ih godina mnoge razvijene zemlje suočile su se s rastom javne potrošnje, fiskalnim krizama i kritikama neučinkovitosti države. Nakon snažnog širenja države blagostanja u desetljećima nakon Drugog svjetskog rata, javni sektor u mnogim je zemljama postao velik, složen i skup. Javna potrošnja rasla je zbog razvoja mirovinskih sustava, zdravstva, obrazovanja i socijalne zaštite, dok su gospodarske krize 1970-ih smanjile fiskalni prostor za daljnje širenje države. U tom kontekstu sve se češće govorilo o „preopterećenoj državi" koja preuzima sve više funkcija, ali ih ne obavlja dovoljno učinkovito [@tanzi2011].
 
-Upravo iz takvog okruženja nastaje **Novi javni menadžment** (engl. *New Public Management*, NPM), skup reformskih ideja koje su pokušale javni sektor učiniti učinkovitijim, fleksibilnijim i više usmjerenim na rezultate.
+Upravo iz takvog okruženja nastaje **Novi javni menadžment** (*New Public Management*, NPM), skup reformskih ideja koje su pokušale javni sektor učiniti učinkovitijim, fleksibilnijim i više usmjerenim na rezultate.
 
 ::: {#def-novi-javni-menadzment}
 **Novi javni menadžment** (*New Public Management*, NPM) je reformski pristup koji od 1980-ih pokušava javni sektor učiniti učinkovitijim uvođenjem tržišnih mehanizama, mjerljivih ciljeva, kontrole rezultata, konkurencije i discipline troškova, nasuprot tradicionalnoj birokratskoj logici pravila i procedura [@hood1991].

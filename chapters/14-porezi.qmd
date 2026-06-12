@@ -96,7 +96,7 @@ Sigurnost i predvidivost (certainty) znače da obveznici unaprijed znaju koliko 
 
 Pogodnost (convenience) odnosi se na način prikupljanja poreza, koji bi se trebao naplaćivati u trenutku i na način najpogodniji za obveznike, primjerice automatskom naplatom poreza na dohodak kroz plaću ili uključivanjem PDV-a u cijenu. Takav pristup smanjuje administrativne troškove i povećava vjerojatnost dobrovoljnog poštivanja obveza.
 
-Izdašnost i stabilnost (revenue adequacy) znače da sustav mora osigurati dovoljne i stabilne prihode za financiranje javnih rashoda, otporne na ekonomske cikluse. Upravo zato države kombiniraju različite poreze jer neki, poput PDV-a, pružaju stabilnije prihode od drugih.
+Izdašnost i stabilnost (*revenue adequacy*) znače da sustav mora osigurati dovoljne i stabilne prihode za financiranje javnih rashoda, otporne na ekonomske cikluse. Upravo zato države kombiniraju različite poreze jer neki, poput PDV-a, pružaju stabilnije prihode od drugih.
 
 Neutralnost, naposljetku, podrazumijeva da sustav ne bi trebao nepotrebno utjecati na ekonomske odluke ni favorizirati pojedine sektore ili oblike ponašanja, pa bi u idealnom slučaju isti dohodak i iste aktivnosti imali isti porezni tretman. U praksi države ipak odstupaju od neutralnosti da bi ostvarile određene ciljeve, primjerice kroz olakšice za investicije, subvencije ili „zelene poreze".
 

@@ -198,12 +198,14 @@ device (the closing run of the intro). A single isolated question is the problem
 
 ### S2 — English parentheticals
 
-A term of art gets its English original at most once, at first mention, italicised —
-"(engl. *rent-seeking*)" — and only when the literature genuinely lives under the
-English name. After that, the Croatian term exclusively. One Croatian name per concept,
-book-wide; the registry is `bookwright_plugin/bookwright/shared/concept-ledger.json`.
-More than three English parentheticals in a chapter is a register failure (ch05 at one
-point had nineteen).
+A term of art gets its English original at most once, at first mention. The Croatian
+term leads; the English follows in parentheses, italicised, with no "engl." prefix —
+"**Ovisnost o putanji** (*path dependence*)" — and only when the literature genuinely
+lives under the English name. The bracket content is *italic*, never bold. Never reverse
+the order (an English term with a Croatian gloss in parentheses). After first mention,
+the Croatian term exclusively. One Croatian name per concept, book-wide; the registry is
+`bookwright_plugin/bookwright/shared/concept-ledger.json`. More than three English
+parentheticals in a chapter is a register failure (ch05 at one point had nineteen).
 
 ### S3 — Definition cadence
 
