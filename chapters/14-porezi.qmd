@@ -16,6 +16,8 @@ title: "Porezi — više od tereta"
 
 Ako prethodno poglavlje opisuje kako država troši, ovo opisuje odakle taj novac dolazi. Porezi su druga strana iste proračunske jednadžbe, ali nisu samo tehnika prikupljanja prihoda. Kroz njih društvo odlučuje tko snosi teret zajedničkih funkcija i kako se taj teret raspoređuje, pa porezna pitanja brzo postaju pitanja pravednosti, učinkovitosti i političkog izbora.
 
+Put kroz poglavlje vodi od jednostavnog prema spornom. Najprije razgraničava poreze od drugih davanja i pregledava njihove glavne vrste, a zatim prelazi na načela koja dijele dobar od lošeg poreznog sustava i na teoriju koja objašnjava tko zaista snosi porezni teret te koliko on košta u izgubljenoj učinkovitosti. Posljednji dio silazi s teorije na kartu svijeta, usporedbom poreznih sustava te pitanjem kako digitalizacija i umjetna inteligencija mijenjaju budućnost oporezivanja.
+
 ## Što su porezi?
 
 Porezi su temeljni instrument javnih financija i ključni izvor prihoda moderne države. U najširem smislu, porezi se definiraju kao obvezna, nepovratna davanja državi bez izravne protuusluge [@musgrave1989; @rosen2014]. Ta definicija sadrži nekoliko važnih elemenata koje treba jasno razumjeti.

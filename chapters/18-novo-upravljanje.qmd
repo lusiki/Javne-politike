@@ -20,6 +20,8 @@ Zbog ograničenja Novog javnog menadžmenta, od kraja 1990-ih i osobito tijekom 
 
 Ovaj zaokret nije značio potpuno odbacivanje NPM-a. Mnoge njegove ideje ostale su važne, jer javni sektor i dalje mora voditi računa o učinkovitosti, kvaliteti usluga, troškovima i rezultatima. Iskustvo je ipak pokazalo da tržišni mehanizmi i menadžerska autonomija sami po sebi nisu dovoljni za rješavanje složenih javnih problema. U nekim su slučajevima reforme inspirirane NPM-om proizvele nove probleme koji uključuju fragmentaciju institucija, slabu koordinaciju, prevelik broj agencija i pretjerano oslanjanje na mjerljive pokazatelje koji nisu uvijek odražavali stvarnu kvalitetu javnih usluga.
 
+Poglavlje slijedi tu promjenu od uzroka prema oblicima. Kreće od tvrdokornih problema koje nijedna institucija ne može riješiti sama, pa odatle izvodi pristupe povezane vlade, mreža i partnerstava, uključivanja građana te digitalizacije koja mijenja sam način na koji država radi. Na kraju ne proglašava pobjednika, nego pokazuje kako se birokratska, menadžerska i mrežna logika danas moraju nositi zajedno.
+
 ## Tvrdokorni problemi i potreba za suradnjom
 
 Ključni razlog za razvoj novog upravljanja leži u promjeni prirode javnih problema. Mnogi suvremeni izazovi ne mogu se riješiti ni klasičnom birokratskom hijerarhijom ni jednostavnim tržišnim natjecanjem. Klimatske promjene, starenje stanovništva, zdravstvene krize, migracije, siromaštvo, energetska tranzicija i digitalna sigurnost zahtijevaju suradnju različitih aktera koji uključuju ministarstva, lokalne i regionalne vlasti, regulatorne agencije, privatni sektor, akademsku zajednicu, civilno društvo i same građane.

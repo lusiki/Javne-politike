@@ -16,6 +16,8 @@ Među instrumentima koje smo upravo pregledali javna potrošnja zaslužuje zaseb
 
 Razumijevanje javne potrošnje zahtijeva kombinaciju povijesne, teorijske i empirijske perspektive. Njezina se uloga dramatično mijenjala u rasponu od minimalne države koja gotovo isključivo osigurava red i sigurnost do moderne države koja upravlja složenim sustavima socijalne zaštite i stabilizira gospodarstvo. Upravo zato analiza javne potrošnje nije samo pitanje ekonomije, nego i politike, institucija i društvenih preferencija.
 
+Oko tih pitanja poglavlje i gradi svoj redoslijed. Nakon povijesnog luka koji objašnjava odakle današnji razmjeri potrošnje, odvaguju se njezine koristi i rizici te uloga koju potrošnja ima u ublažavanju kriza, a zatim se pita zašto se razina i struktura potrošnje toliko razlikuju među zemljama i gdje se u toj usporedbi smješta Hrvatska.
+
 ## Javna potrošnja kroz povijest
 
 U ranim fazama razvoja javnih financija fokus ekonomista bio je gotovo isključivo na porezima. Javna potrošnja promatrala se kao nužno, ali neproduktivno zlo. Država je imala vrlo ograničene funkcije koje su uključivale obranu, zaštitu imovine i održavanje pravnog poretka. Takav pogled bio je duboko ukorijenjen u klasičnoj ekonomskoj misli Adama Smitha i Davida Ricarda, koji su naglašavali ograničenu ulogu države i važnost tržišnih mehanizama za učinkovitu alokaciju resursa [@smith1776; @ricardo1817]. Normativna implikacija bila je jasna. Država treba biti mala, a porezi niski.

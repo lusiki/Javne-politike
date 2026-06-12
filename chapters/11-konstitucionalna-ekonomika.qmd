@@ -18,6 +18,8 @@ U prethodnom smo poglavlju vidjeli kako nova institucionalna ekonomika objašnja
 
 Na toj se osnovi razvija **ustavna ekonomika**. Ona ide korak dalje od standardne analize javnih politika i postavlja dublje pitanje o tome kako unaprijed oblikovati pravila političkog i ekonomskog odlučivanja tako da ograniče loše ishode i povećaju vjerojatnost dobrih odluka. Fokus se premješta s pojedinačnih politika na pravila koja određuju kako se te politike uopće donose.
 
+Poglavlje tu zamisao razrađuje od temelja prema primjeni. Najprije razdvaja dvije razine odlučivanja, izbor pravila i izbor unutar pravila, a zatim pokazuje zašto su pravila uopće potrebna na primjeru vremenske nedosljednosti i političko-proračunskih ciklusa, situacija u kojima sloboda odlučivanja iz dana u dan proizvodi lošije ishode od unaprijed vezanih ruku. Odatle slijedi pitanje po čemu prepoznajemo dobra pravila, ona koja vjerodostojnost i povjerenje grade umjesto da ih troše.
+
 ## Što je ustavna ekonomika?
 
 Ustavna ekonomika proučava pravila koja oblikuju političko i ekonomsko odlučivanje [@vanberg2018]. Često se kaže da se ona bavi **„pravilima o pravilima"**. To znači da njezin glavni predmet nisu samo konkretne odluke o porezima, rashodima, subvencijama ili regulaciji, nego institucionalni okvir koji određuje kako se takve odluke donose.

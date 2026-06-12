@@ -15,6 +15,8 @@ title: "Državni neuspjesi i prepreke kvalitetnim javnim politikama"
 
 Dosadašnja poglavlja pokazala su zašto država intervenira i kojim instrumentima raspolaže. Završni dio knjige okreće perspektivu i pita kada ta intervencija sama postaje problem. Jednako kao što tržište može zakazati, može zakazati i država, pa simetrija zahtijeva da intervenciju provjeravamo jednako strogo kao i tržišni ishod koji ona ispravlja.
 
+Da ta provjera ne ostane na načelu, poglavlje razlaže državni neuspjeh na prepoznatljive vrste, od informacijskih i instrumentalnih do provedbenih, koordinacijskih i političkih, i svaku promatra kao zaseban kvar u dizajnu politike, a ne kao dokaz da je države previše. Na kraju iz te tipologije izvlači praktičan test kojim se neuspjeh može predvidjeti i ugraditi u sam dizajn, jer cilj cijeloga dijela nije manje države, nego bolja.
+
 ## Što znači neuspjeh države?
 
 Simetrija s tržišnim neuspjehom traži da i intervenciju vrednujemo po tome ostvaruje li ono zbog čega je uvedena. Kada to izostane, govorimo o **državnom neuspjehu**. Država može intervenirati s namjerom da riješi problem, ali rezultat može biti novi problem koji se očituje kroz skuplju administraciju, distorzije u ponašanju građana i poduzeća, neučinkovitu javnu potrošnju, regulatorno zarobljavanje, rast javnog duga, korupciju ili gubitak povjerenja u institucije.

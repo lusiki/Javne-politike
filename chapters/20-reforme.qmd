@@ -16,6 +16,8 @@ Reforme u javnom sektoru predstavljaju jedan od najzahtjevnijih, ali i najvažni
 
 Empirijska literatura jasno pokazuje da kvaliteta javnog sektora, koja uključuje učinkovitost, odgovornost, transparentnost i sposobnost provedbe, ima presudan utjecaj na gospodarski razvoj i uspješnost drugih politika [@acemoglu2012; @fukuyama2013]. Država nije samo regulator ili redistributivni mehanizam, nego i ključni „operativni sustav" ekonomije koji određuje kako pravila funkcioniraju u praksi.
 
+Kao posljednje poglavlje, ono spaja dvije zadaće. Najprije pita što zapravo odlučuje hoće li reforma uspjeti ili ostati na papiru, čemu nas uči iskustvo zemalja srednje i istočne Europe i zašto provedba na kraju vrijedi više od broja donesenih zakona. A onda, pogledom unatrag kroz cijelu knjigu, povezuje njezine niti, od razloga zbog kojih država djeluje do uvjeta pod kojima djeluje dobro.
+
 ## Zašto su reforme javnog sektora nužne
 
 Razlozi za pokretanje reformi najčešće proizlaze iz kombinacije fiskalnih pritisaka, institucionalnih slabosti i promjena u ekonomskom okruženju. U mnogim zemljama reforme su bile potaknute krizama, bilo fiskalnim deficitima, rastom javnog duga ili neučinkovitom javnom potrošnjom. Takve situacije djeluju kao svojevrsni „prozor prilike", kako to opisuje John Kingdon, u kojem politički troškovi nečinjenja postaju veći od troškova reformi [@kingdon1984]. Krize razotkrivaju slabosti postojećeg sustava i smanjuju otpor promjenama.

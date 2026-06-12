@@ -13,9 +13,13 @@ title: "Instrumenti državne intervencije"
 6. Po čemu prepoznajemo dobar izbor i kombinaciju instrumenata?
 :::
 
+Prva tri dijela knjige pitala su zašto država djeluje, tko o tome odlučuje i pod kojim pravilima. Ovaj se dio okreće praksi i pita čime država zapravo djeluje, jer između cilja zapisanog u nekom dokumentu i stvarne promjene u životu građana uvijek stoji konkretan alat. Isti se cilj može postići porezom, zabranom, subvencijom ili pukom informacijom, a izbor među njima nije tehnička sitnica, nego odlučuje o tome tko će platiti, tko će imati koristi i hoće li mjera uopće uspjeti.
+
+Poglavlje zato slaže katalog instrumenata kojima država raspolaže, od poreza, javne potrošnje i subvencija, preko regulacije i javnih poduzeća, do informacijskih i bihevioralnih mjera. Prije pojedinačnih alata postavlja okvir koji ih razvrstava prema vrsti resursa na kojem počivaju, a na kraju pokazuje da pravo umijeće nije izbor jednoga instrumenta, nego njihovo kombiniranje.
+
 ## Čime država djeluje
 
-Prva tri dijela knjige pitala su zašto država djeluje, tko o tome odlučuje i pod kojim pravilima. Ovaj dio prelazi na praksu i pita čime država zapravo djeluje. Država svoju ulogu ne ostvaruje apstraktno, već kroz konkretne **instrumente javne politike**. Kada kažemo da država „intervenira", „regulira", „pomaže", „oporezuje" ili „stabilizira gospodarstvo", zapravo govorimo o različitim načinima na koje javna vlast pokušava utjecati na ponašanje pojedinaca, poduzeća, institucija i tržišta. Instrumenti javne politike su zato operativni alati kojima država pretvara ciljeve u djelovanje.
+Država svoju ulogu ne ostvaruje apstraktno, već kroz konkretne **instrumente javne politike**. Kada kažemo da država „intervenira", „regulira", „pomaže", „oporezuje" ili „stabilizira gospodarstvo", zapravo govorimo o različitim načinima na koje javna vlast pokušava utjecati na ponašanje pojedinaca, poduzeća, institucija i tržišta. Instrumenti javne politike su zato operativni alati kojima država pretvara ciljeve u djelovanje.
 
 Ti instrumenti mogu biti vrlo različiti. Neki izravno uključuju novac, poput poreza, javne potrošnje, subvencija i transfera. Drugi djeluju kroz pravila, zabrane, standarde i dozvole, kao što je regulacija. Treći djeluju kroz organizaciju same države, primjerice javna poduzeća, javne ustanove i agencije. Četvrti djeluju na makroekonomskoj razini, kroz fiskalnu i monetarnu politiku. U novije vrijeme sve veću važnost imaju i informacijski te bihevioralni instrumenti, koji ne počivaju na prisili ili novcu, nego na oblikovanju izbora i informacija koje građani imaju pred sobom.
 

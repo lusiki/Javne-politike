@@ -19,6 +19,8 @@ Razlog je jednostavan. Europska unija nije država, ali nije ni obična međunar
 
 Zato javne financije EU treba razumjeti kao poseban, hibridni sustav u kojem se preklapaju nacionalni proračuni država članica, zajednički EU proračun, fiskalna pravila, koordinacija ekonomskih politika i, u izvanrednim okolnostima, zajednički instrumenti financiranja poput NextGenerationEU. Unija ne vodi jedinstvenu fiskalnu politiku za sve članice, ali ni ne prepušta nacionalne politike potpuno samostalnom odlučivanju. Upravo kombinacija nacionalne fiskalne suverenosti i europske koordinacije drži cijelo ovo poglavlje na okupu [@europeancommission2024fiscal; @councileu2025semester].
 
+Da bismo taj hibrid razumjeli, najprije se vraćamo na poznato, na način na koji javne financije funkcioniraju u nacionalnoj državi. Tek s tom mjerom u ruci postaje vidljivo što je u Uniji drukčije, zašto zajednička valuta nije dobila i zajednički proračun, kako se nacionalne politike onda koordiniraju preko fiskalnih pravila i kakav je zaokret u sve to donio NextGenerationEU.
+
 ## Javne financije u nacionalnoj državi
 
 U klasičnoj nacionalnoj državi javne financije počivaju na razmjerno jasnom institucionalnom lancu. Parlament donosi porezne zakone i proračun, vlada predlaže rashode i mjere fiskalne politike, a ministarstvo financija priprema proračun te upravlja prihodima, rashodima, deficitom i javnim dugom. Građani u demokratskim sustavima na izborima mogu kazniti ili nagraditi vlast zbog načina na koji upravlja javnim novcem.

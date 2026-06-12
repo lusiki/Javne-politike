@@ -12,6 +12,10 @@ title: "Novi javni menadžment"
 5. Koje su glavne prednosti, a koje kritike i ograničenja NPM-a?
 :::
 
+Nakon što je prethodno poglavlje nabrojilo načine na koje država zakazuje, slijedi pitanje što se protiv toga može učiniti. Jedan od najutjecajnijih odgovora ponudio je pokret koji je javni sektor pokušao popraviti tako da ga približi tržištu. Novi javni menadžment nije bio jedna reforma, nego val ideja koji je tijekom 1980-ih i 1990-ih obećao učinkovitiju, jeftiniju i odgovorniju državu po uzoru na privatno poduzeće.
+
+Poglavlje prati taj val od njegovih korijena u krizi preopterećene države, preko glavnih mehanizama kojima je djelovao, od uvođenja konkurencije i mjerenja rezultata do agencifikacije i shvaćanja građanina kao korisnika usluge, do otrežnjujuće ocjene onoga što je obećao, a što doista ispunio.
+
 ## Odakle Novi javni menadžment
 
 Tijekom 1980-ih i 1990-ih godina mnoge razvijene zemlje suočile su se s rastom javne potrošnje, fiskalnim krizama i kritikama neučinkovitosti države. Nakon snažnog širenja države blagostanja u desetljećima nakon Drugog svjetskog rata, javni sektor u mnogim je zemljama postao velik, složen i skup. Javna potrošnja rasla je zbog razvoja mirovinskih sustava, zdravstva, obrazovanja i socijalne zaštite, dok su gospodarske krize 1970-ih smanjile fiskalni prostor za daljnje širenje države. U tom kontekstu sve se češće govorilo o „preopterećenoj državi" koja preuzima sve više funkcija, ali ih ne obavlja dovoljno učinkovito [@tanzi2011].

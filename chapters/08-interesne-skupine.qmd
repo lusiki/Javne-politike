@@ -14,6 +14,8 @@ title: "Interesne skupine — iza kulisa politike"
 
 Javne politike ne oblikuju samo birači na izborima i stranke u parlamentu. Velik dio stvarnog utjecaja odvija se „iza kulisa", kroz djelovanje **interesnih skupina** kao organiziranih udruženja koja nastoje utjecati na javne odluke u korist svojih članova. To mogu biti poslovna udruženja, sindikati, profesionalne komore, granska udruženja proizvođača, ali i udruge potrošača, okolišne organizacije ili skupine korisnika određenih programa. Teorija javnog izbora pokazuje da utjecaj interesnih skupina nije slučajan i da slijedi prepoznatljivu logiku organiziranosti, koncentracije koristi i raspršenosti troškova.
 
+Ta logika organizira cijelo poglavlje. Polazi od Olsonova pitanja zašto se male skupine organiziraju lakše od velikih, pokazuje kako odatle nastaju politike s koncentriranim koristima i raspršenim troškovima i prati ih do lova na rentu i regulatornog zarobljavanja. Na kraju odvaguje i drugu stranu, jer interesne skupine nisu nužno štetne, nego njihov učinak ovisi o institucionalnom okviru u kojem djeluju.
+
 ## Logika kolektivnog djelovanja
 
 Polazna točka je Olsonova **logika kolektivnog djelovanja** [@olson1965]. Na prvi pogled očekivali bismo da velike skupine s velikim zajedničkim interesom lako organiziraju i nameću svoju volju. Olson je pokazao suprotno. Velike, raspršene skupine teško se organiziraju, dok male, koncentrirane skupine to čine lako.

@@ -13,6 +13,10 @@ title: "Distribucijska funkcija — država i pitanje pravednosti"
 6. Zašto je distribucijska funkcija temelj društvene solidarnosti?
 :::
 
+Prethodno je poglavlje pitalo radi li tržište učinkovito. Ovo postavlja pitanje koje učinkovitost ostavlja po strani, ono o tome je li ishod koji tržište proizvodi ujedno i pravedan. Te se dvije ocjene ne moraju poklapati. Tržište može besprijekorno rasporediti resurse, a ipak jedne ostaviti u izobilju, a druge bez osnovnih životnih uvjeta, pa distribucijska funkcija države počinje upravo ondje gdje alokacijska prestaje.
+
+Odatle poglavlje razdvaja raspodjelu od preraspodjele i pokazuje kojim instrumentima država mijenja tržišni ishod. Zatim provjerava na koje se sve načine pravednost može opravdati, od utilitarizma i Rawlsova načela do robnog egalitarizma i paternalizma, jer iza svake porezne i socijalne politike stoji neki od tih odgovora. Naposljetku se vraća napetosti koja prati cijelu raspravu, onoj između jednakosti i učinkovitosti, i pokazuje zašto je preraspodjela uvijek i pitanje cijene, a ne samo pravednosti.
+
 ## Učinkovit ishod koji društvo ne mora prihvatiti
 
 Distribucijska funkcija države odnosi se na utjecaj javnih politika na raspodjelu dohotka, bogatstva i životnih prilika. Dok alokacijska funkcija polazi od pitanja funkcionira li tržište učinkovito, distribucijska funkcija pita je li raspodjela koju tržište proizvodi društveno prihvatljiva.

@@ -12,6 +12,10 @@ title: "Uloga države u gospodarstvu"
 5. Što teoremi ekonomike blagostanja govore o odnosu učinkovitosti i pravednosti?
 :::
 
+Uvod je državu, tržište i institucije postavio kao pojmove iz kojih izrastaju svi kasniji argumenti, ali ih je zadržao na razini načela. Prvi dio knjige spušta prvi od njih na tlo ekonomske analize, a ovo poglavlje postavlja njegov temelj. Ono kreće od pitanja koje zvuči gotovo provokativno u društvu naviknutom na tržište, a to je zašto takvu gospodarstvu uopće treba država. Odgovor ne tražimo u političkom ukusu, nego u tome što tržište objektivno radi dobro i gdje su granice te sposobnosti.
+
+Do odgovora dolazimo postupno. Tržište najprije promatramo kao snažan mehanizam koordinacije, jer se uloga države ne može ocrtati dok se ne vidi što ono postiže samo. Tek na toj podlozi Musgraveova podjela na alokacijsku, distribucijsku i stabilizacijsku funkciju dobiva smisao, kao tri različita razloga zbog kojih država ulazi u gospodarstvo, od kojih svaki u nastavku knjige dobiva vlastito poglavlje. Srž poglavlja čine Pareto učinkovitost i teoremi ekonomike blagostanja, mjerila koja precizno kažu što znači da tržište daje dobar ishod, ali i koliko malo time govore o pravednosti raspodjele. Poglavlje se zatvara pitanjem koliko su stvarna tržišta blizu tom idealu, jer razmak između idealnog i stvarnog tržišta otvara ostatak prvoga dijela.
+
 ## Zašto tržišnom gospodarstvu treba država
 
 U demokratskim društvima koja se temelje na slobodnom tržištu prirodno se postavlja pitanje zašto nam država uopće treba. Ako pojedinci mogu slobodno donositi odluke, ako poduzeća mogu proizvoditi i nuditi dobra i usluge, ako se cijene oblikuju na tržištu, a potrošači svojim izborima odlučuju što žele kupovati, zašto bi država trebala intervenirati? Ne bi li tržište samo, kroz konkurenciju, poduzetništvo i slobodnu razmjenu, trebalo dovesti do najboljih mogućih ishoda?

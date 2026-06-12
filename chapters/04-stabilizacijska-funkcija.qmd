@@ -19,6 +19,8 @@ U središtu stabilizacijske funkcije nalazi se jednostavna ideja da tržišno go
 
 Upravo zato država ima stabilizacijsku ulogu. Ona pokušava ublažiti najdublje padove i spriječiti najopasnija pregrijavanja. Cilj nije ukloniti svaki gospodarski ciklus, što ionako nije moguće, nego smanjiti njihove najštetnije posljedice. Stabilizacijska politika nastoji očuvati visoku zaposlenost, stabilnost cijena, održiv rast, financijsku stabilnost i održive javne financije.
 
+Kako država tu zadaću obavlja, poglavlje razlaže korak po korak, od fiskalnog multiplikatora i automatskih stabilizatora do dosega i opasnosti diskrecijskih mjera. Na kraju se sama stabilnost pokazuje kao javno dobro koje tržište ne osigurava samo, čime se zatvara luk triju Musgraveovih funkcija.
+
 ## Zašto tržišno gospodarstvo može biti nestabilno?
 
 Gospodarski ciklusi nastaju zato što se odluke kućanstava, poduzeća, banaka, investitora i države ne usklađuju uvijek savršeno. U razdobljima optimizma poduzeća mogu pretjerano investirati, banke mogu previše kreditirati, kućanstva mogu povećavati zaduženost, a cijene nekretnina i financijske imovine mogu rasti brže od temeljnih ekonomskih pokazatelja. Takva razdoblja često stvaraju dojam stabilnosti i prosperiteta, ali se ispod površine mogu nakupljati rizici.

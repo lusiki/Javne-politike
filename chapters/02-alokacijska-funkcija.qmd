@@ -25,6 +25,8 @@ Tržišni neuspjeh ne znači da tržište uopće ne funkcionira. On znači da re
 
 Važno je naglasiti da alokacijska funkcija države nije isto što i tvrdnja da država uvijek zna bolje od tržišta. Njezina je osnovna logika uža i preciznija. Država može imati opravdanje za intervenciju onda kada tržište ne uspijeva osigurati učinkovitu alokaciju resursa. Tada se postavlja pitanje koji je oblik tržišnog neuspjeha prisutan i koji instrument javne politike može taj problem najbolje ublažiti.
 
+Ostatak poglavlja prolazi kroz te oblike redom, svaki kao zaseban razlog zbog kojeg država može ući u alokaciju i svaki sa svojim instrumentom ispravljanja. Počinjemo od onoga koji najjasnije pokazuje granice tržišta, a to su javna dobra.
+
 ## Javna dobra
 
 Najpoznatiji primjer tržišnog neuspjeha su **javna dobra**. Razlog zbog kojega ih privatno tržište sustavno podbacuje leži u dvama svojstvima koja takva dobra dijele, a koja zajedno potkopavaju uobičajeni mehanizam naplate [@samuelson1954; @musgrave1959].

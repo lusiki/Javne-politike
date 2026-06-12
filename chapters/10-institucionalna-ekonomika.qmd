@@ -18,6 +18,8 @@ Međutim, iskustvo različitih zemalja pokazalo je da tržište nikada ne djeluj
 
 Upravo kao odgovor na ta ograničenja razvija se **nova institucionalna ekonomika**. Ona naglašava da su institucije temeljni okvir ekonomskog ponašanja i jedan od ključnih čimbenika dugoročnih ekonomskih performansi [@north1990]. U tom pristupu ekonomija se više ne promatra samo kao sustav razmjene dobara i usluga, nego kao sustav interakcija koji se odvija unutar određenog skupa pravila, ograničenja i poticaja. Ljudi i poduzeća ne donose odluke samo na temelju cijena, nego i na temelju povjerenja, pravne sigurnosti, očekivanja o ponašanju države, predvidivosti propisa i kvalitete provedbe ugovora.
 
+Tim tragom poglavlje gradi svoj pojmovnik. Institucije najprije definira kao pravila igre, a zatim uvodi transakcijske troškove i principal–agent problem kao alate kojima objašnjava zašto su neka pravila skupa, a druga djelotvorna. Odatle prelazi na veliko pitanje zašto slične zemlje s istim resursima završavaju s vrlo različitim razvojem i pokazuje da institucije nisu puka pozadina ekonomije, nego njezin most prema javnim politikama.
+
 ## Institucije kao pravila igre
 
 Prema klasičnoj definiciji Douglassa Northa, **institucije** su „pravila igre u društvu", odnosno formalna i neformalna ograničenja koja strukturiraju ljudsku interakciju [@north1990]. Ta definicija je važna jer pokazuje da institucije nisu samo državne ustanove u administrativnom smislu. U novoj institucionalnoj ekonomici pojam je širi i obuhvaća pravila, norme i mehanizme provedbe koji određuju što ljudi smiju, što ne smiju, što se isplati, što se kažnjava i što se očekuje.

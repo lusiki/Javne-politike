@@ -18,6 +18,8 @@ U svakodnevnom političkom govoru neprestano koristimo izraze poput „Hrvatska 
 
 Na privatnom tržištu problem različitih preferencija rješava se elegantno, kroz sustav cijena i paralelnu potrošnju. Ako vi želite kavu, a ja čaj, oboje možemo biti zadovoljeni. U javnoj sferi većina je dobara i politika **nedjeljiva**. Ne možemo istodobno imati progresivan i proporcionalan porezni sustav, niti istim proračunskim novcem graditi autocestu prema Splitu i prema Varaždinu. Zbog toga glasovanje postaje mehanizam prisilne koordinacije, a pravila po kojima se glasovi agregiraju postaju odlučujuća za konačni ishod. Ista skupina ljudi, s istim preferencijama, može doći do različitih odluka ovisno o tome kako glasuje.
 
+Poglavlje tu složenost razotkriva u koracima. Počinje Condorcetovim paradoksom, najjednostavnijim primjerom u kojem većina zapada u krug bez pobjednika, i poopćava ga do Arrowljeva teorema nemogućnosti, koji pokazuje da nijedno pravilo agregacije ne može istodobno zadovoljiti nekoliko razumnih zahtjeva. Zatim traži izlaz u jednovršnim preferencijama i medijanskom glasaču te otkriva koliko moći leži u kontroli dnevnog reda, čime nadzor nad postupkom često odlučuje više od samih preferencija.
+
 ## Condorcetov paradoks
 
 Da problem kolektivnog izbora nije tek teorijska mogućnost, najlakše je pokazati s tri birača i tri opcije, A, B i C [@condorcet1785]. Prvi birač preferira A ispred B ispred C. Drugi preferira B ispred C ispred A. Treći preferira C ispred A ispred B. Svaki pojedinačni birač ima jasne, dosljedne (tranzitivne) preferencije, pa bismo očekivali da i njihov zbroj bude dosljedan.

@@ -16,6 +16,8 @@ Ako kolektivni izbor objašnjava kako se pojedinačne preferencije agregiraju u 
 
 Politička je konkurencija stoga strateška igra pozicioniranja, diferencijacije i maksimizacije glasova unutar zadanog institucionalnog okvira, a ne potraga za objektivno najboljim rješenjem za društvo. To je ključno za razumijevanje javnih financija jer su proračun, porezni sustav i regulatorni okvir oblikovani više prema logici političke profitabilnosti nego prema kriterijima ekonomske efikasnosti i dugoročne održivosti. Teorija deliberativne demokracije osporava ovu sliku kao previše redukcionističku jer u određenim institucionalnim uvjetima politička rasprava može oblikovati i preoblikovati preferencije, a ne samo ih agregirati, pa „strateška igra" nije jedina primjenjiva metafora za demokratske procese.
 
+Iz te slike izrasta ostatak poglavlja. Ono kreće od teorema medijanskog glasača, koji objašnjava zašto se stranke guraju prema centru, a potom traži uvjete pod kojima natjecanje umjesto toga vodi u polarizaciju. Razmatra zašto je velik dio birača racionalno neinformiran i zašto izborni poticaji sustavno odgađaju nužne, ali nepopularne reforme, prije nego što se zapita koliko taj nesavršeni mehanizam ipak vrijedi u usporedbi s alternativama.
+
 ## Medijanski glasač i natjecanje za centar
 
 Najutjecajniji model političkog natjecanja polazi od jedne jednostavne pretpostavke o tome kako birači biraju. Ako ih možemo poredati na jednoj ideološkoj osi, primjerice od „manje države" prema „više države", i ako svaki glasuje za stranku koja je najbliža njegovoj idealnoj točki, slijedi neočekivano snažan zaključak o tome gdje će se stranke smjestiti. Taj zaključak nose radovi Hotellinga [@hotelling1929], Blacka [@black1948] i Downsa [@downs1957].
