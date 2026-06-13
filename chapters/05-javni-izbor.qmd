@@ -166,11 +166,11 @@ ggplot(curve_df, aes(N, R)) +
 ```
 :::
 
+Ista logika malene vjerojatnosti utjecaja koja obeshrabruje izlazak na birališta obeshrabruje i prikupljanje informacija. Trošak stjecanja detaljnih političkih informacija gotovo uvijek nadmašuje očekivanu instrumentalnu korist za pojedinog birača, s obzirom na zanemarivu vjerojatnost da će njegov glas promijeniti ishod. Takvo racionalno nepoznavanje (*rational ignorance*) ne dovodi samo do nedostatnog prikupljanja informacija, nego i do neučinkovitog korištenja onih koje birači već posjeduju.
+
 ::: {#def-racionalno-nepoznavanje}
 O **racionalnom nepoznavanju** (racionalnoj ignoranciji) govorimo kada se biraču ne isplati prikupljati političke informacije jer je trošak informiranja veći od očekivane koristi, s obzirom na zanemarivu vjerojatnost da će njegov glas utjecati na ishod.
 :::
-
-Slično tomu, koncept racionalnog nepoznavanja (*Rational Ignorance*) objašnjava zašto su građani često loše informirani o političkim pitanjima. Trošak stjecanja detaljnih političkih informacija gotovo uvijek nadmašuje očekivanu instrumentalnu korist za pojedinog birača, s obzirom na zanemarivu vjerojatnost utjecaja na ishod. Racionalno nepoznavanje posljedično dovodi ne samo do nedostatnog prikupljanja političkih informacija, već i do neučinkovitog korištenja onih koje birači već posjeduju.
 
 @caplan2001 taj koncept proširuje idejom racionalne iracionalnosti. U svom je istraživanju naglasio da birači ne samo da ne ulažu u informacije, nego si mogu priuštiti i zadržavanje sistemski pristranih, iracionalnih uvjerenja, jer je cijena takve pogreške u prosudbi za pojedinca gotovo nula. Kada ne bi bilo sistemskih pristranosti, individualna bi se iracionalnost poništila na agregatnoj razini. Postojanje sistemskih pristranosti, primjerice u ekonomskim uvjerenjima, međutim objašnjava zašto kolektivne odluke mogu biti suprotne ekonomskim dokazima.
 

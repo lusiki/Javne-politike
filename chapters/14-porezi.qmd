@@ -50,6 +50,8 @@ U suvremenim ekonomijama porezni sustavi postaju iznimno složeni, ali i neizost
 
 ## Vrste poreza
 
+Složeni sustavi koje je iznjedrio povijesni razvoj nisu jedan porez, nego naslagani splet davanja na dohodak, potrošnju i imovinu, naplaćenih izravno ili kroz cijene. Da bi se taj splet uopće mogao analizirati, potrebni su kriteriji koji ga razvrstavaju prema tome što se oporezuje i tko zaista snosi teret.
+
 Porezi se u suvremenim ekonomijama mogu klasificirati na različite načine, ovisno o kriteriju koji se koristi. Najčešće se razlikuju prema poreznoj osnovici (što se oporezuje) i prema načinu naplate (tko snosi teret poreza i kako se on prikuplja). Te klasifikacije pomažu u razumijevanju strukture poreznog sustava i njegovih ekonomskih učinaka [@stiglitz2015; @gruber2019].
 
 ![Četiri uobičajene klasifikacije poreza u suvremenim ekonomijama. Prikaz je pojednostavnjen i služi za udžbeničko objašnjenje osnovnih vrsta poreza.](../images/infographics/14-vrste-poreza.svg){#fig-vrste-poreza .infographic fig-alt="Dijagram koji prikazuje četiri klasifikacije poreza — prema poreznoj osnovici, načinu naplate, odnosu stope i osnovice te načinu određivanja obveze." width=92%}
@@ -88,9 +90,13 @@ Specifični porezi određeni su u apsolutnom iznosu po jedinici proizvoda, primj
 
 Kako bi porezni sustav bio funkcionalan, društveno prihvatljiv i ekonomski održiv, njegovo oblikovanje mora se temeljiti na određenim općim pravilima ili načelima. Ta načela čine normativni okvir porezne politike i određuju kriterije prema kojima ocjenjujemo je li neki porezni sustav „dobar". Iako su još u 18. stoljeću formulirana u klasičnom obliku kod Adama Smitha, ona su i danas temelj suvremene teorije javnih financija [@stiglitz2015]. U nastavku se razmatraju najvažnija načela oporezivanja, pri čemu treba naglasiti da ona u praksi često dolaze u međusobni sukob, pa je porezna politika uvijek rezultat kompromisa između različitih ciljeva.
 
+### Pravednost i učinkovitost
+
 Najvažnije i najsloženije je načelo pravednosti (equity). Ono se odnosi na pitanje kako raspodijeliti porezni teret među građanima na način koji se smatra društveno prihvatljivim. U teoriji se razlikuju dvije dimenzije. *Horizontalna pravednost* podrazumijeva da osobe s istom ekonomskom snagom trebaju plaćati isti porez, pa ako dvije osobe ostvaruju jednak dohodak, očekuje se da im porezno opterećenje bude jednako. *Vertikalna pravednost* pak polazi od ideje da osobe s većom ekonomskom snagom trebaju snositi veći teret, što je temelj progresivnog oporezivanja u kojem se stope povećavaju s rastom dohotka [@musgrave1989]. Ne postoji jedinstven odgovor na pitanje koliko sustav treba biti progresivan jer to ovisi o društvenim preferencijama prema nejednakosti i redistribuciji.
 
 Učinkovitost (efficiency) traži da porezni sustav što manje narušava ekonomske odluke pojedinaca i poduzeća. Svaki porez mijenja relativne cijene i time utječe na ponašanje, što dovodi do mrtvog tereta poreza, odnosno gubitka ukupnog blagostanja [@gruber2019]. Visoki porezi na rad mogu smanjiti ponudu rada, a porezi na kapital štednju i investicije, pa je cilj minimizirati takve distorzije. Teorija optimalnog oporezivanja pokazuje da učinkovit sustav treba imati široke osnovice, izbjegavati visoke marginalne stope i oporezivati aktivnosti manje osjetljive na promjene cijena [@ramsey1927]. Potpuno učinkovit sustav često bi bio u sukobu s pravednošću, što opet naglašava potrebu za kompromisom.
+
+### Operativna načela
 
 Jednostavnost i transparentnost ključne su za funkcioniranje sustava jer obveznici trebaju razumjeti koliko plaćaju, prema kojim pravilima i u koje svrhe. Složeni sustavi povećavaju administrativne troškove, stvaraju prostor za izbjegavanje i utaju te smanjuju povjerenje građana u institucije [@simovic2022]. Transparentnost je posebno važna jer omogućuje građanima da procijene je li sustav pravedan i učinkovit.
 
@@ -2054,9 +2060,9 @@ ggplot() +
 ```
 :::
 
-### Progresivnost i Lafferova krivulja
+Pitanje treba li uz dohodak diferencirano oporezivati i pojedine vrste potrošnje vodi izravno do jednog od najvažnijih rezultata teorije. **Atkinson–Stiglitz teorem** [@atkinson1980] pokazuje da, ako je porez na dohodak optimalno dizajniran, diferencirano oporezivanje potrošnje nije potrebno. Nema potrebe dodatno oporezivati određene proizvode višim ili nižim stopama ako se redistribucija već učinkovito provodi kroz porez na dohodak. Taj rezultat ima važne implikacije za dizajn sustava PDV-a. Teorijski, optimalan sustav imao bi jedinstvenu stopu PDV-a, bez izuzetaka. U praksi, međutim, gotovo sve zemlje koriste snižene stope za osnovna dobra, što pokazuje da politički i socijalni ciljevi često nadjačavaju teorijsku optimalnost.
 
-**Atkinson–Stiglitz teorem** [@atkinson1980] bavi se pitanjem treba li različite vrste potrošnje oporezivati različitim stopama. Njihov ključni rezultat pokazuje da, ako je porez na dohodak optimalno dizajniran, diferencirano oporezivanje potrošnje nije potrebno. Nema potrebe dodatno oporezivati određene proizvode višim ili nižim stopama ako se redistribucija već učinkovito provodi kroz porez na dohodak. Taj rezultat ima važne implikacije za dizajn sustava PDV-a. Teorijski, optimalan sustav imao bi jedinstvenu stopu PDV-a, bez izuzetaka. U praksi, međutim, gotovo sve zemlje koriste snižene stope za osnovna dobra, što pokazuje da politički i socijalni ciljevi često nadjačavaju teorijsku optimalnost.
+### Progresivnost i teorija žrtve
 
 Progresivno oporezivanje podrazumijeva sustav u kojem prosječna porezna stopa raste s razinom dohotka. Temeljna ekonomska logika takvog sustava proizlazi iz ideje opadajuće granične korisnosti dohotka.
 
@@ -2065,6 +2071,8 @@ Progresivno oporezivanje podrazumijeva sustav u kojem prosječna porezna stopa r
 :::
 
 Na toj osnovi razvijena je teorija žrtve koja pokušava normativno opravdati raspodjelu poreznog tereta. Postoje tri varijante. Jednaka apsolutna žrtva traži da svi porezni obveznici izgube isti iznos korisnosti. Jednaka proporcionalna žrtva traži da svi gube isti udio ukupne korisnosti. Jednaka granična žrtva traži da marginalna žrtva bude jednaka za sve. Upravo posljednja varijanta vodi do zaključka da je optimalno progresivno oporezivanje jer se redistribucijom dohotka izjednačavaju granične korisnosti među pojedincima [@musgrave1989]. Suvremena teorija ipak naglašava kompromis. Iako progresivnost povećava pravednost, ona može stvoriti distorzije u ponašanju (npr. smanjiti radne poticaje), pa optimalna razina progresivnosti ovisi o ravnoteži između efikasnosti i jednakosti [@saez2001].
+
+### Lafferova krivulja
 
 Sve dosadašnje rasprave pretpostavljaju da viša stopa donosi i viši prihod, no ta veza ima granicu. Iako nije dio formalne teorije optimalnog oporezivanja u užem smislu, **Lafferova krivulja** često se koristi kao intuitivni prikaz upravo te granice, odnosa između porezne stope i ostvarenog prihoda.
 

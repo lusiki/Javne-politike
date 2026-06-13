@@ -59,13 +59,13 @@ Teorija javnog izbora polazi iz drugačije perspektive. Ona ne odbacuje potrebu 
 
 Za teoriju javnog izbora ključno je pitanje poticaja. Ako političari žele reizbor, birači žele koristi, interesne skupine žele povlastice, a birokrati žele veće proračune i veću institucionalnu važnost, tada javne politike ne možemo razumjeti samo kroz pojam javnog interesa. Moramo analizirati tko dobiva, tko plaća, tko ima informacije, tko kontrolira provedbu i tko ima poticaj za promjenu ili očuvanje postojećeg stanja.
 
-Najpoznatiji model birokracije u teoriji javnog izbora razvio je William A. Niskanen [@niskanen1971]. **Niskanenov model** postavlja jednostavno, ali vrlo utjecajno pitanje o tome što birokrati maksimiziraju ako ne maksimiziraju profit.
+Najpoznatiji model birokracije u teoriji javnog izbora razvio je William A. Niskanen [@niskanen1971]. **Niskanenov model** postavlja jednostavno, ali vrlo utjecajno pitanje o tome što birokrati zapravo maksimiziraju.
 
 ::: {#def-niskanenov-model}
 **Niskanenov model** tvrdi da birokrati, suočeni s monopolskim položajem i informacijskom prednošću pred političko-proračunskim nadzornicima, maksimiziraju veličinu proračuna institucije jer veći proračun donosi veću plaću, status i autonomiju, što rezultira sustavno nadoptimalnom potrošnjom [@niskanen1971].
 :::
 
-Privatno poduzeće nastoji ostvariti što veću dobit, suočava se s konkurencijom i mora paziti na odnos troškova, cijena i potražnje. Javna birokracija nalazi se u bitno drugačijoj situaciji. Ona najčešće ne prodaje uslugu izravno korisnicima po tržišnoj cijeni i najčešće nema konkurenta kojemu građani mogu prijeći. Zato Niskanen tvrdi da birokrati ne maksimiziraju profit, nego **veličinu proračuna**.
+Privatno poduzeće nastoji ostvariti što veću dobit, suočava se s konkurencijom i mora paziti na odnos troškova, cijena i potražnje. Javna birokracija nalazi se u bitno drugačijoj situaciji. Ona najčešće ne prodaje uslugu izravno korisnicima po tržišnoj cijeni i najčešće nema konkurenta kojemu građani mogu prijeći. Budući da joj uspjeh nije moguće mjeriti dobiti, kao mjerilo organizacijskog uspjeha preostaje veličina proračuna.
 
 Razlog je intuitivan. Veći proračun za javnu instituciju često znači više zaposlenih, više organizacijskih jedinica, veću plaću na višim upravljačkim razinama, veći status, više ovlasti, veću autonomiju i veću političku važnost. Zato je za birokrata proračun više od knjigovodstvene kategorije, on je izvor organizacijske moći.
 

@@ -41,11 +41,13 @@ Važno je primijetiti da redistribucija ne znači samo izravni novčani transfer
 
 Zato distribucijska funkcija ima dvije dimenzije. Prva je **vertikalna redistribucija**, odnosno preraspodjela između bogatijih i siromašnijih članova društva. Druga je **horizontalna redistribucija**, odnosno preraspodjela između ljudi koji se razlikuju po životnim okolnostima, dakle između zdravih i bolesnih, zaposlenih i nezaposlenih, mlađih i starijih, obitelji s djecom i onih bez djece, radno sposobnih i osoba s invaliditetom. Moderna država blagostanja ne preraspodjeljuje samo dohodak, nego i rizike.
 
-Ispod distribucijske funkcije obično se mogu smjestiti tri važna normativna koncepta koji pomažu objasniti zašto društva prihvaćaju različite oblike preraspodjele, a to su **utilitarizam**, **robni egalitarizam** i **paternalizam**. Ti koncepti ne nude jednake odgovore, ali pokazuju tri različita načina razmišljanja o pravednosti, jednakosti i ulozi države.
+Ispod distribucijske funkcije obično se smješta obitelj normativnih pristupa koji pomažu objasniti zašto društva prihvaćaju različite oblike preraspodjele. Tu spadaju **utilitarizam**, **Rawlsov pristup pravednosti**, **robni egalitarizam** i **paternalizam**. Ti pristupi ne nude jednake odgovore, ali pokazuju različite načine razmišljanja o pravednosti, jednakosti i ulozi države.
 
 ## Utilitarizam
 
-Od triju koncepata prvi izravno odgovara na pitanje smije li država uopće preraspodjeljivati, jer pravednost mjeri posljedicama za ukupno blagostanje, a ne početnom raspodjelom kao takvom. Utilitarizam polazi od ideje da javne politike treba vrednovati prema njihovu učinku na ukupno društveno blagostanje. U najjednostavnijem obliku, cilj je maksimizirati zbroj korisnosti svih članova društva. Ako neka politika smanjuje blagostanje jedne osobe, ali povećava blagostanje druge osobe još više, tada ukupno društveno blagostanje može porasti.
+Prvi od tih pristupa izravno odgovara na pitanje smije li država uopće preraspodjeljivati, jer pravednost mjeri posljedicama za ukupno blagostanje, a ne početnom raspodjelom kao takvom.
+
+Utilitarizam polazi od ideje da javne politike treba vrednovati prema njihovu učinku na ukupno društveno blagostanje. U najjednostavnijem obliku, cilj je maksimizirati zbroj korisnosti svih članova društva. Ako neka politika smanjuje blagostanje jedne osobe, ali povećava blagostanje druge osobe još više, tada ukupno društveno blagostanje može porasti.
 
 Ova logika često se koristi kao argument za preraspodjelu dohotka. Zamislimo društvo u kojem jedna osoba ima vrlo visok dohodak, a druga vrlo nizak. Ako država oporezuje bogatiju osobu za 1.000 eura i taj iznos transferira siromašnijoj osobi, bogatija osoba gubi dio dohotka, a siromašnija ga dobiva. Međutim, isti iznos novca nema jednaku vrijednost za obje osobe. Za osobu s vrlo visokim dohotkom 1.000 eura može značiti vrlo malu promjenu životnog standarda. Za osobu s vrlo niskim dohotkom isti iznos može značiti mogućnost plaćanja hrane, grijanja, lijekova, stanarine ili školskih potreba za dijete.
 

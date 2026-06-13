@@ -55,7 +55,7 @@ Državni neuspjeh često počinje već u fazi **dizajna** javne politike. Dizajn
 
 Primjerice, ako rast cijena stanova država protumači isključivo kao problem nedovoljne kupovne moći mladih, mogla bi uvesti subvencije za kupnju prve nekretnine. No ako je temeljni problem ograničena ponuda stanova, spora gradnja ili neuređeno tržište najma, subvencija potražnje može dodatno povećati cijene i pogoršati dostupnost stanovanja. Politika tada ne propada zato što je cilj loš, nego zato što je instrument neusklađen s uzrokom problema. Sličan se obrazac vidi kod subvencija i regulacije, gdje dobra namjera nije dovoljna ako instrument ne odgovara prirodi problema.
 
-Zato je korisno državne neuspjehe promatrati ne kao jednu pojavu, nego kao skup različitih prepreka koje mogu narušiti dizajn i provedbu javnih politika.
+Zato je korisno državne neuspjehe promatrati ne kao jednu pojavu, nego kao skup različitih prepreka koje mogu narušiti dizajn i provedbu javnih politika. Tih osam vrsta slijedi vlastiti redoslijed jer prve tri prate životni ciklus politike od znanja preko izbora instrumenta do provedbe, dok preostale zahvaćaju aktere koji politiku nose i okvir u kojem djeluju.
 
 ## Informacijski neuspjesi
 
@@ -81,25 +81,21 @@ Klasičan primjer instrumentalnog neuspjeha jest zamka neaktivnosti u sustavima 
 
 ## Provedbeni neuspjesi
 
-Treći oblik su **provedbeni neuspjesi**. Javne politike ne završavaju donošenjem zakona, strategije ili programa. Tada zapravo počinje najteži dio, sama provedba.
+Treći oblik su **provedbeni neuspjesi**. Javne politike ne završavaju donošenjem zakona, strategije ili programa. Tada zapravo počinje najteži dio, sama provedba. Netko mora obraditi zahtjeve, izdati rješenja, nadzirati korisnike, provoditi javnu nabavu i pratiti rezultate. Ako javna uprava nema dovoljno stručnih ljudi, digitalnih sustava ili jasnih procedura, politika može ostati samo dobra ideja na papiru.
 
 ::: {#def-provedbeni-neuspjeh}
 **Provedbeni neuspjeh** nastaje kada dobro zamišljena politika zakazuje u fazi provedbe zbog nedostatka administrativnog kapaciteta, nejasne raspodjele odgovornosti ili implementacijskog jaza između formalne odluke i stvarnog djelovanja uličnih birokrata [@pressman1973; @lipsky1980].
 :::
 
-Netko mora obraditi zahtjeve, izdati rješenja, nadzirati korisnike, provoditi javnu nabavu i pratiti rezultate. Ako javna uprava nema dovoljno stručnih ljudi, digitalnih sustava ili jasnih procedura, politika može ostati samo dobra ideja na papiru.
-
 U teoriji javnih politika ovaj je problem poznat kao **implementacijski jaz**, razlika između onoga što je formalno odlučeno i onoga što se stvarno događa u provedbi [@pressman1973]. Lipsky [-@lipsky1980] dodatno naglašava važnost ulične birokracije, gdje učitelji, liječnici, policajci i službenici na šalterima često u praksi odlučuju kako će politika stvarno izgledati za građane. Provedbeni neuspjeh posebno je važan za zemlje koje često donose reforme pod pritiskom kriza ili međunarodnih preporuka, ali nemaju dovoljno kapaciteta za njihovu provedbu. Schick [-@schick1998] upozorava da zemlje slabijeg administrativnog kapaciteta ne bi trebale nekritički preuzimati sofisticirane reformske modele. Provedba zato nije tehnički detalj koji dolazi nakon „prave" politike, nego je dio same politike.
 
 ## Koordinacijski neuspjesi
 
-Četvrti oblik su **koordinacijski neuspjesi**. Mnoge javne politike zahtijevaju suradnju više institucija.
+Četvrti oblik su **koordinacijski neuspjesi**. Mnoge javne politike zahtijevaju suradnju više institucija. Problem siromaštva nije samo problem socijalne politike, nego i obrazovanja, zdravstva, stanovanja, tržišta rada i lokalne samouprave. Klimatska politika uključuje energetiku, promet, industriju, poljoprivredu, poreze i prostorno planiranje.
 
 ::: {#def-koordinacijski-neuspjeh}
 **Koordinacijski neuspjeh** nastaje kada javna politika zahtijeva suradnju više institucija, ministarstava ili razina vlasti, ali ne postoje jasni mehanizmi za usklađivanje njihovih djelovanja, pa se javlja dupliciranje, pukotine u odgovornosti ili kontraproduktivni učinci.
 :::
-
-Problem siromaštva nije samo problem socijalne politike, nego i obrazovanja, zdravstva, stanovanja, tržišta rada i lokalne samouprave. Klimatska politika uključuje energetiku, promet, industriju, poljoprivredu, poreze i prostorno planiranje.
 
 Ako svaka institucija djeluje unutar vlastitog administrativnog „silosa", politika može izgubiti koherentnost. Građanin ili poduzeće tada mora sam povezivati sustav, donositi iste dokumente na više mjesta i snositi trošak administrativne nepovezanosti. Koordinacijski neuspjeh često se vidi kada više institucija ima dio odgovornosti, ali nijedna nema punu odgovornost za rezultat, pa su svi formalno uključeni, ali nitko nije stvarno odgovoran. Može nastati i između razina vlasti, jer ako odgovornosti i izvori financiranja nisu jasno povezani, svaka razina može prebacivati odgovornost na drugu. Zato kvalitetan dizajn mora unaprijed odgovoriti tko odlučuje, tko financira, tko provodi, tko nadzire i tko odgovara za rezultat.
 
@@ -139,7 +135,7 @@ Posebno važan problem su **kvazifiskalne aktivnosti**. Država ponekad želi os
 
 ## Neuspjesi države i povjerenje u institucije
 
-Državni neuspjesi posebno su opasni jer mogu narušiti **povjerenje** građana u institucije. Kada građani vide da se zakoni ne provode jednako, da se javni novac troši neučinkovito ili da regulacija pogoduje uskim skupinama, smanjuje se spremnost na suradnju s državom. Povjerenje je važno jer javne politike često ovise o dobrovoljnoj suradnji građana, pa porezni sustav ne može funkcionirati samo kroz nadzor i kazne, a zdravstvene i obrazovne politike ne mogu uspjeti bez suradnje građana.
+Svih osam dosad opisanih kvarova dijeli jednu skrivenu cijenu jer svaki, kada se ponavlja, troši zajednički resurs o kojem ovise svi ostali, a to je **povjerenje** građana u institucije. Kada građani vide da se zakoni ne provode jednako, da se javni novac troši neučinkovito ili da regulacija pogoduje uskim skupinama, smanjuje se spremnost na suradnju s državom. Taj je resurs nezamjenjiv jer javne politike često ovise o dobrovoljnoj suradnji građana, pa porezni sustav ne može funkcionirati samo kroz nadzor i kazne, a zdravstvene i obrazovne politike ne mogu uspjeti bez suradnje građana.
 
 Kada povjerenje padne, ljudi lakše opravdavaju izbjegavanje poreza i zaobilaženje pravila. Tako nastaje negativna spirala u kojoj slabe institucije proizvode loše politike, loše politike smanjuju povjerenje, a manje povjerenja dodatno slabi provedbu. Zato državni neuspjesi nisu samo ekonomski ili administrativni problem, nego i politički i društveni problem jer narušavaju legitimitet javnih politika.
 

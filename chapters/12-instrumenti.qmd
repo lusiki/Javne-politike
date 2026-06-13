@@ -25,11 +25,13 @@ Ti instrumenti mogu biti vrlo različiti. Neki izravno uključuju novac, poput p
 
 Isti javni cilj može biti ostvaren različitim instrumentima, ali ti instrumenti nemaju iste učinke, iste troškove ni iste političke posljedice. Ako država želi smanjiti zagađenje, može uvesti porez na emisije, propisati maksimalnu dopuštenu razinu zagađenja, subvencionirati čiste tehnologije, javno informirati potrošače ili kombinirati više mjera. Ako želi smanjiti siromaštvo, može povećati socijalne transfere, smanjiti poreze na niske dohotke, subvencionirati zapošljavanje, ulagati u obrazovanje ili regulirati minimalnu plaću. Zato je izbor instrumenta jedno od središnjih pitanja dizajna javnih politika.
 
+Sustavnija klasifikacija instrumenata postoji u literaturi o javnom upravljanju i naziva se **NATO okvir** [@hood1983].
+
 ::: {#def-nato-okvir}
 **NATO okvir** Christophera Hooda klasificira državne instrumente prema četiri vrste resursa koje vlada može koristiti, a to su *Nodality* (informacijska centralnost), *Authority* (formalna ovlast), *Treasure* (financijska moć) i *Organization* (vlastiti institucionalni kapacitet) [@hood1983].
 :::
 
-Sustavnija klasifikacija instrumenata postoji u literaturi o javnom upravljanju i naziva se **NATO okvir** [@hood1983]. Prema njemu država raspolaže s četiri vrste resursa kojima može djelovati. *Nodality* je položaj države kao informacijskog čvora kroz koji prolazi velika količina podataka i s kojeg ona može slati ili tražiti informacije. *Authority* je formalna ovlast da nešto zapovjedi, zabrani ili dopusti. *Treasure* je financijska moć da nešto plati, oporezuje ili subvencionira. *Organization* je sposobnost da nešto sama proizvede kroz vlastite institucije, zaposlenike i kapacitete.
+Prema tom okviru država raspolaže s četiri vrste resursa kojima može djelovati. *Nodality* je položaj države kao informacijskog čvora kroz koji prolazi velika količina podataka i s kojeg ona može slati ili tražiti informacije. *Authority* je formalna ovlast da nešto zapovjedi, zabrani ili dopusti. *Treasure* je financijska moć da nešto plati, oporezuje ili subvencionira. *Organization* je sposobnost da nešto sama proizvede kroz vlastite institucije, zaposlenike i kapacitete.
 
 Većina stvarnih instrumenata koristi više od jednog resursa, ali svaki ima jedan dominantan. Porezi i subvencije počivaju primarno na *treasure*, regulacija na *authority*, javna poduzeća i agencije na *organization*, a informacijske kampanje i transparentnost na *nodality*. Korist okvira nije samo taksonomska. On omogućuje da se za isti cilj razmotri više instrumenata povezanih s različitim resursima, što često otkriva alternative koje pojednostavljena „porez ili regulacija" rasprava previđa.
 
@@ -221,7 +223,7 @@ Bihevioralni instrumenti mogu imati velik učinak uz mali trošak, što potvrđu
 
 ## Kombiniranje instrumenata
 
-Nijedan od dosadašnjih instrumenata rijetko djeluje sam. Stvarne politike kombiniraju nekoliko njih jer svaki pokriva drugu slabost, a isti se cilj može postići vrlo različitim rasporedom troška, vidljivosti i administrativnog napora. Takav skup nazivamo **kombinacijom instrumenata**.
+Instrumenti iz prethodnih odjeljaka rijetko djeluju sami. Stvarne politike kombiniraju nekoliko njih jer svaki pokriva drugu slabost, a isti se cilj može postići vrlo različitim rasporedom troška, vidljivosti i administrativnog napora. Takav skup nazivamo **kombinacijom instrumenata**.
 
 ::: {#def-kombinacija-instrumenata}
 **Kombinacija instrumenata** (*policy mix*) je skup različitih instrumenata koji se istodobno primjenjuju radi ostvarivanja jednog ili više srodnih ciljeva; analiza mixa otkriva da isti cilj može biti postignut različitim rasporedom troškova, vidljivosti i administrativnih kapaciteta.
@@ -236,7 +238,7 @@ Izbor instrumenta nije neutralan analitički postupak nego trgovina između neko
 Iz toga slijedi pravilo dizajna koje nadilazi pojedinačni izbor. Instrument koji minimizira ekonomski trošak često maksimizira politički, i obratno. Najbolji odabir rijetko je čisti optimum jedne dimenzije, nego najbolja izvediva ravnoteža unutar konkretnog institucionalnog konteksta.
 
 ::: {.callout-praksa}
-Kanadska pokrajina Britanska Kolumbija 2008. je uvela porez na ugljik koji dobro pokazuje razliku između instrumenata. Umjesto da zabrani ili propiše tehnologije, porez je podigao cijenu emisija i prepustio poduzećima i kućanstvima da sami pronađu najjeftiniji način smanjenja, a prihod je vraćen kroz niže poreze na dohodak i dobit. Emisije po stanovniku pale su, dok je gospodarski rast pratio prosjek ostatka Kanade, čime je oslabljen strah da cjenovni instrument nužno koči gospodarstvo. Primjer ilustrira opću pouku da tržišni instrumenti ostvaruju cilj uz niži ekonomski trošak, ali su politički vidljiviji jer teret prikazuju otvoreno, za razliku od regulacije koja ga skriva u cijeni proizvoda.[^wp-ch12]
+Kanadska pokrajina Britanska Kolumbija 2008. je uvela porez na ugljik koji dobro pokazuje razliku između instrumenata. Umjesto da zabrani ili propiše tehnologije, porez je podigao cijenu emisija i prepustio poduzećima i kućanstvima da sami pronađu najjeftiniji način smanjenja, a prihod je vraćen kroz niže poreze na dohodak i dobit. Emisije po stanovniku pale su, dok je gospodarski rast pratio prosjek ostatka Kanade, čime je oslabljen strah da cjenovni instrument nužno koči gospodarstvo.[^wp-ch12]
 :::
 
 [^wp-ch12]: Daljnje čitanje: Murray i Rivers (2015), [*British Columbia's Revenue-Neutral Carbon Tax: A Review*](https://nicholasinstitute.duke.edu/climate/publications/british-columbias-revenue-neutral-carbon-tax-review-latest-grand-experiment) (NI WP 15-04).
