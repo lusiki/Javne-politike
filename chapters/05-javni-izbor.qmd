@@ -348,7 +348,7 @@ Zajednički nazivnik tih ishoda jedna je asimetrija. Mnoge politike donose velik
 | Trgovina glasovima (logrolling) | Političari | Razmjena glasova radi prolaska specifičnih zakona | Usvajanje projekata s neto negativnom društvenom vrijednošću | pogl. 6 |
 | Maksimizacija proračuna | Birokrati | Povećanje proračuna i osobne moći | Prekomjerna i neučinkovita opskrba javnim dobrima | pogl. 9 |
 
-: Tablica 1. Mehanizmi neuspjeha države. Autorska sinteza prema @olson1965, @tullock1967, @niskanen1971 i @buchanan1962. {#tbl-mehanizmi}
+: Mehanizmi neuspjeha države. Autorska sinteza prema @olson1965, @tullock1967, @niskanen1971 i @buchanan1962. {#tbl-mehanizmi}
 
 Pouka nije da su političari ili birokrati loši ljudi, nego da i dobronamjerni akteri pod lošim pravilima proizvode loše ishode. Time se vraćamo na razliku s početka poglavlja jer popravak takvih ishoda rjeđe dolazi od zamjene ljudi, a češće od promjene pravila pod kojima oni odlučuju.
 

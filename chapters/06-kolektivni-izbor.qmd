@@ -437,6 +437,12 @@ Dublje objašnjenje zašto se sustavi uopće razilaze dao je Saari geometrijskom
 
 Razlike izviru iz dvaju preostalih dijelova. Jedan sadrži cikličke komponente poput Condorcetove trojke, i upravo taj dio Bordin zbroj posve poništava, dok parne metode čini nestabilnima. Drugi se tiče obrtanja preferencija, gdje je Bordino pravilo jedini pozicijski sustav kod kojeg potpuno obrnut poredak svih birača daje i potpuno obrnut društveni poredak, dok ga pluralno glasovanje grubo krši. Iz te dekompozicije slijedi da Bordino pravilo proizvodi najmanje paradoksa među pozicijskim sustavima, što ga čini informacijski najstabilnijim.
 
+::: {.callout-praksa}
+Bordino pravilo nije ostalo na papiru. Pacifička država Nauru bira svoj parlament Dowdallovom inačicom u kojoj bodovi opadaju harmonijski, kao 1, 1/2, 1/3 i dalje, čime se još jače nagrađuje širok konsenzus. Slovenija Bordinim pravilom bira zastupnike talijanske i mađarske manjine u Državni zbor, gdje je cilj izabrati predstavnika kojeg cijela malobrojna zajednica prihvaća, a ne onoga koji tek skupi najviše prvih glasova. Izvan politike isti se postupak koristi za izbor najboljih sportaša i u glasovanju za Pjesmu Eurovizije, gdje se zbrajaju poredci mnogih ocjenjivača.[^wp-ch06d]
+:::
+
+[^wp-ch06d]: Daljnje čitanje: Reilly (2002), [*Social Choice in the South Seas*](https://journals.sagepub.com/doi/abs/10.1177/0192512102023004002) (International Political Science Review); Fraenkel i Grofman (2014), [*The Borda Count and its Real-World Alternatives*](https://doi.org/10.1080/10361146.2014.900530) (Australian Journal of Political Science).
+
 Cijena te stabilnosti je osjetljivost na taktičko rangiranje, koju obuhvaća opći rezultat o manipulabilnosti iz prethodnog odjeljka. Hibridna pravila pokušavaju spojiti obje vrline tako da Bordin zbroj koriste za postupno ispadanje kandidata, pa Nansonov i Baldwinov sustav uvijek izaberu Condorcetova pobjednika kada on postoji, ali zauzvrat gube monotonost [@nanson1882; @baldwin1926]. Nijedan izbor pravila time ne izmiče kompromisu između suparničkih vrijednosti. Upravo to opažanje, da svako pravilo mora nešto žrtvovati, Arrow je podigao s razine pojedinačnih sustava na razinu načela.
 
 ## Arrowljev teorem nemogućnosti

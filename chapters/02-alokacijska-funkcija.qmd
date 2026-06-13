@@ -900,6 +900,8 @@ Oko velikih zračnih luka u Sjedinjenim Državama buka noćnih letova godinama j
 
 Hrvatski priobalni sukob pokazuje zrcalni slučaj, u kojem nejasna prava i visoki troškovi koordinacije pregovor unaprijed isključuju.
 
+<!-- TODO(coauthor): jadranski primjer je Hrvatska-specifičan i prema STYLE.md/ENRICHMENT rezerviran za koautore — Milan/Petra trebaju potvrditi ili zamijeniti prije finalne verzije. -->
+
 ::: {.callout-praksa}
 Na jadranskoj obali masovni turizam i lokalno stanovništvo sukobljavaju se oko buke, zagušenja i devastacije pomorskog dobra. Da su prava nad obalom i mirom jasno dodijeljena zajednici, a troškovi organiziranja niski, problem bi se mogao riješiti naknadom, zvučnom izolacijom ili ulaganjem u lokalnu infrastrukturu u zamjenu za dogovorenu razinu buke. U praksi je pregovor blokiran. Pomorsko dobro ustavno je određeno kao opće dobro pod zaštitom države, što ostavlja nedorečenim tko zapravo raspolaže pravom odlučivanja, a troškovi koordinacije velikog broja raspršenih stanara nasuprot promjenjivim turističkim subjektima previsoki su. Sukob se zato prepušta državnoj regulaciji i lokalnim vlastima, sa svojim troškovima sporih inspekcija, neujednačene primjene i sumnji u pogodovanje.
 :::
