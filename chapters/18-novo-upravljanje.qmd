@@ -115,7 +115,7 @@ U tom smislu prijelaz od NPM-a prema novom upravljanju ne treba promatrati kao j
 ::: {.sazetak-panel}
 ## Sažetak
 
-Novo upravljanje nastaje iz spoznaje da tržišni mehanizmi i menadžerska autonomija sami po sebi ne rješavaju složene, tvrdokorne probleme koji presijecaju granice pojedinih institucija. Umjesto na konkurenciju, naglasak se pomiče na koordinaciju, suradnju, partnerstva, povjerenje i upravljanje kroz mreže aktera, uz sve veću ulogu uključivanja građana i digitalizacije. Riječ je o evoluciji, a ne o pukoj zamjeni modela, jer NPM-ova briga za učinkovitost ostaje važna. Suvremena javna uprava zato traži ravnotežu triju logika, birokratske, menadžerske te mrežne i demokratske, jer prevlast bilo koje od njih nosi vlastite slabosti.
+Novo upravljanje nastaje iz spoznaje da tržišni mehanizmi i menadžerska autonomija sami po sebi ne rješavaju složene, tvrdokorne probleme koji presijecaju granice pojedinih institucija. Umjesto na konkurenciju, naglasak se pomiče na koordinaciju, suradnju, partnerstva, povjerenje i upravljanje kroz mreže aktera, uz sve veću ulogu uključivanja građana i digitalizacije. Riječ je o evoluciji, a ne o pukoj zamjeni modela, jer NPM-ova briga za učinkovitost ostaje važna. Suvremena javna uprava zato traži ravnotežu triju logika, birokratske, menadžerske te mrežne i demokratske, jer prevlast bilo koje od njih nosi vlastite slabosti. Koja god ravnoteža prevlada, svaka politika na kraju mora pokazati da donosi veću korist od troška, pa se analiza okreće alatima kojima se taj učinak mjeri i vrednuje.
 :::
 
 ::: {.callout-vjezba}

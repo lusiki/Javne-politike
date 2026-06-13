@@ -12,7 +12,7 @@ title: "Teorija igara i zakonodavno pregovaranje"
 5. Zašto se stvarno ponašanje u laboratoriju sustavno razlikuje od onoga što model predviđa?
 :::
 
-U klasičnoj analizi javnih financija država se promatra kao dobrohotan akter koji nepristrano ispravlja tržišne neuspjehe i maksimizira društveno blagostanje. Teorija javnog izbora taj prikaz odbacuje [@buchanan1962]. Država nije jedinstven entitet nego arena u kojoj političari, birači, interesne skupine i birokrati, svaki sa svojim ciljevima, stupaju u strateške interakcije [@mueller1989]. Ishod takve interakcije za svakog sudionika ovisi ne samo o njegovu potezu nego i o potezima ostalih, pa ga obična maksimizacija korisnosti ne opisuje.
+Prethodno je poglavlje aktere političkog procesa, birače, političare, birokrate i interesne skupine, predstavilo kao pojedince koji slijede vlastite ciljeve, ali je svakoga promatralo zasebno. Čim ih je više za istim stolom, ishod svakoga ovisi i o potezima ostalih, pa država prestaje biti jedinstven dobrohotan akter i postaje arena strateške interakcije u kojoj obična maksimizacija korisnosti više ne opisuje ponašanje [@buchanan1962; @mueller1989].
 
 Za takve situacije ekonomija posuđuje aparat teorije igara, matematičke discipline koja proučava odlučivanje kada ishod ovisi o međusobno povezanim odlukama više aktera [@osborne2004]. Ona političke borbe prevodi u modele iz kojih se vidi zašto se sklapaju naizgled neobični savezi, kako se dijeli proračunski kolač i pod kojim uvjetima zastupnici dobrovoljno predaju moć stranačkim vođama.
 
@@ -224,7 +224,7 @@ Oba mehanizma potvrđuju pouku koja povezuje cijeli ovaj dio knjige. Pravila igr
 ::: {.sazetak-panel}
 ## Sažetak
 
-Teorija igara državu prikazuje kao arenu strateške interakcije, a ne kao jedinstvenog dobronamjernog planera. Zatvorenikova dilema pokazuje zašto dobrovoljnost ne osigurava javna dobra i opravdava prisilno oporezivanje, igra kukavice zašto krizni pregovori prijete katastrofom, a igre koordinacije zašto institucije djeluju kao fokalne točke. Baron-Ferejohnov model otkriva da pregovaračka moć predlagatelja proračuna ovisi o veličini tijela i strpljivosti zastupnika, dok stranačka kohezija pojačava ruku vladajuće stranke. Eksperimenti potvrđuju strukturu minimalnih koalicija, ali ne i nemilosrdnu raspodjelu, jer averzija prema nejednakosti i osveta ublažavaju ono što model predviđa. Pouka je da proračunska pravila i parlamentarne procedure izravno oblikuju raspodjelu javnog novca.
+Teorija igara državu prikazuje kao arenu strateške interakcije, a ne kao jedinstvenog dobronamjernog planera. Zatvorenikova dilema pokazuje zašto dobrovoljnost ne osigurava javna dobra i opravdava prisilno oporezivanje, igra kukavice zašto krizni pregovori prijete katastrofom, a igre koordinacije zašto institucije djeluju kao fokalne točke. Baron-Ferejohnov model otkriva da pregovaračka moć predlagatelja proračuna ovisi o veličini tijela i strpljivosti zastupnika, dok stranačka kohezija pojačava ruku vladajuće stranke. Eksperimenti potvrđuju strukturu minimalnih koalicija, ali ne i nemilosrdnu raspodjelu, jer averzija prema nejednakosti i osveta ublažavaju ono što model predviđa. Pouka je da proračunska pravila i parlamentarne procedure izravno oblikuju raspodjelu javnog novca. Time strateška analiza vodi ravno u pitanje koje slijedi, kako se mnoštvo pojedinačnih preferencija uopće pretvara u jednu društvenu odluku i koliko ta odluka ovisi o pravilima kroz koja prolazi.
 :::
 
 ::: {.callout-vjezba}

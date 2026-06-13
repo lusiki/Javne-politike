@@ -260,12 +260,12 @@ Utilitarizam naglašava da preraspodjela može povećati ukupno blagostanje ako 
 
 Država ne intervenira samo zato da bi tržište bilo učinkovitije, nego i zato da bi društvo bilo pravednije, sigurnije i uključivije. No pritom mora stalno voditi računa o poticajima, troškovima i provedbi. Dobra distribucijska politika ne teži jednostavnoj uravnilovci, nego pokušava osigurati da tržišno gospodarstvo bude povezano s društvenom solidarnošću, jednakim prilikama i zaštitom onih koji su najranjiviji.
 
-Klasična analiza triju funkcija države dosad je počivala na prešutnoj pretpostavci da država, jednom kad prepozna tržišni neuspjeh ili nepravednu raspodjelu, može i želi djelovati u općem interesu. Alokacijska, distribucijska i stabilizacijska funkcija govore što bi država trebala činiti, ali ne i hoće li to doista učiniti, niti tko unutar nje o tome odlučuje i s kojim vlastitim poticajima. Upravo tu pretpostavku sljedeći dio knjige stavlja pod povećalo, prelazeći s pitanja koje zadaće država ima na pitanje kako stvarno nastaju njezine odluke.
+Alokacijska i distribucijska funkcija dosad su gledale pojedina tržišta i raspodjelu dohotka, no gospodarstvo kao cjelina može posrnuti i kada svako pojedino tržište radi ispravno. Treća Musgraveova funkcija zato napušta razinu pojedinog tržišta i pita kako država ukupnu zaposlenost, cijene i proizvodnju čuva od velikih oscilacija, čime se zaokružuje klasična slika triju zadaća države.
 
 ::: {.sazetak-panel}
 ## Sažetak
 
-Tržište raspodjeljuje dohodak prema vlasništvu, vještinama i okolnostima rođenja, pa ishod može biti učinkovit, a istodobno društveno neprihvatljiv. Distribucijska funkcija bavi se upravo tom napetošću i kroz poreze, transfere i javne usluge mijenja raspodjelu koju tržište proizvodi. Utilitarizam, Rawlsov pristup i robni egalitarizam nude različita mjerila pravednosti, dok paternalizam pokazuje da država ponekad oblikuje i sam izbor pojedinaca. Preraspodjela pritom nije besplatna jer dira u poticaje, pa razboritost politike leži u traženju ravnoteže između efikasnosti i pravednosti, a ne u uravnilovci.
+Tržište raspodjeljuje dohodak prema vlasništvu, vještinama i okolnostima rođenja, pa ishod može biti učinkovit, a istodobno društveno neprihvatljiv. Distribucijska funkcija bavi se upravo tom napetošću i kroz poreze, transfere i javne usluge mijenja raspodjelu koju tržište proizvodi. Utilitarizam, Rawlsov pristup i robni egalitarizam nude različita mjerila pravednosti, dok paternalizam pokazuje da država ponekad oblikuje i sam izbor pojedinaca. Preraspodjela pritom nije besplatna jer dira u poticaje, pa razboritost politike leži u traženju ravnoteže između efikasnosti i pravednosti, a ne u uravnilovci. Tako se zaokružuju dvije zadaće koje gledaju pojedina tržišta i raspodjelu dohotka, dok ukupnu stabilnost gospodarstva, treću Musgraveovu funkciju, tek treba osigurati.
 :::
 
 ::: {.callout-vjezba}

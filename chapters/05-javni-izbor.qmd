@@ -355,7 +355,7 @@ Pouka nije da su političari ili birokrati loši ljudi, nego da i dobronamjerni 
 ::: {.sazetak-panel}
 ## Sažetak
 
-Teorija javnog izbora ekonomskim alatima analizira političko odlučivanje i polazi od pretpostavke da i u politici djeluju pojedinci sa svojim ciljevima, a ne bestjelesni zastupnici općeg dobra. Ključno je razlikovati pravila igre od ishoda jer isti akteri pod različitim pravilima proizvode različite rezultate. Kada se ljudi promatraju kao birači, političari, birokrati i pripadnici interesnih skupina, mnogi naizgled iracionalni potezi države postaju razumljivi i predvidljivi. Ovo poglavlje postavlja taj okvir i njegove aktere, a mehanizme kroz koje nastaje neuspjeh države, od kolektivnog djelovanja i interesnih skupina, preko birokracije, do ustavnih pravila, razrađuju poglavlja koja slijede.
+Teorija javnog izbora ekonomskim alatima analizira političko odlučivanje i polazi od pretpostavke da i u politici djeluju pojedinci sa svojim ciljevima, a ne bestjelesni zastupnici općeg dobra. Ključno je razlikovati pravila igre od ishoda jer isti akteri pod različitim pravilima proizvode različite rezultate. Kada se ljudi promatraju kao birači, političari, birokrati i pripadnici interesnih skupina, mnogi naizgled iracionalni potezi države postaju razumljivi i predvidljivi. Već se na samom biraču vidi snaga tog pristupa, jer paradoks glasanja otkriva da je pojedincu racionalno i ne izaći na izbore i ostati neinformiran, pa sudjelovanje održavaju tek ekspresivni i slični neinstrumentalni motivi. Ovo poglavlje postavlja taj okvir i njegove aktere, koji odluke ne donose izolirano nego strateški, motreći poteze jednih na poteze drugih, čime se otvara analiza njihove međuigre jezikom poteza i protupoteza.
 :::
 
 ::: {.callout-vjezba}

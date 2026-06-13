@@ -137,7 +137,7 @@ Ostaje, međutim, pitanje koje ova analiza otvara, a ne zatvara. Ako institucije
 ::: {.sazetak-panel}
 ## Sažetak
 
-Nova institucionalna ekonomika pokazuje da tržište nikada ne djeluje u vakuumu, nego unutar pravila igre koja oblikuju ishode. Transakcijski troškovi objašnjavaju zašto su ugovori, povjerenje i provedba važni jednako kao cijene i količine, a principal–agent problem zašto se interesi onih koji odlučuju i onih u čije se ime odlučuje razilaze. Zato slični resursi u različitim institucionalnim okvirima daju vrlo različite razvojne rezultate. Kvalitetna javna politika stoga nije samo tehnički dobro osmišljena mjera, nego mjera koja je institucionalno provediva i dugoročno vjerodostojna.
+Nova institucionalna ekonomika pokazuje da tržište nikada ne djeluje u vakuumu, nego unutar pravila igre koja oblikuju ishode. Transakcijski troškovi objašnjavaju zašto su ugovori, povjerenje i provedba važni jednako kao cijene i količine, a principal–agent problem zašto se interesi onih koji odlučuju i onih u čije se ime odlučuje razilaze. Zato slični resursi u različitim institucionalnim okvirima daju vrlo različite razvojne rezultate. Kvalitetna javna politika stoga nije samo tehnički dobro osmišljena mjera, nego mjera koja je institucionalno provediva i dugoročno vjerodostojna. No tko bira sama pravila i zašto bi se samointeresni akteri obvezali na ograničenja koja ih sputavaju, pitanje je koje ova analiza otvara, a ne zatvara, i koje je pomiče s razine institucija na razinu ustava.
 :::
 
 ::: {.callout-vjezba}

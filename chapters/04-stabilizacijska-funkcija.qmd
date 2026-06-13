@@ -19,7 +19,7 @@ U središtu stabilizacijske funkcije nalazi se jednostavna ideja da tržišno go
 
 Upravo zato država ima stabilizacijsku ulogu. Ona pokušava ublažiti najdublje padove i spriječiti najopasnija pregrijavanja. Cilj nije ukloniti svaki gospodarski ciklus, što ionako nije moguće, nego smanjiti njihove najštetnije posljedice. Stabilizacijska politika nastoji očuvati visoku zaposlenost, stabilnost cijena, održiv rast, financijsku stabilnost i održive javne financije.
 
-Kako država tu zadaću obavlja, poglavlje razlaže korak po korak, od fiskalnog multiplikatora i automatskih stabilizatora do dosega i opasnosti diskrecijskih mjera. Na kraju se sama stabilnost pokazuje kao javno dobro koje tržište ne osigurava samo, čime se zatvara luk triju Musgraveovih funkcija.
+Kako država tu zadaću obavlja, poglavlje razlaže korak po korak, od fiskalnog multiplikatora i automatskih stabilizatora do dosega i opasnosti diskrecijskih mjera. Odatle slijedi neugodan zaokret, jer ista vlada koja ciklus treba smirivati može ga i sama proizvoditi kada stabilizaciju podredi izbornom kalendaru, pa se uz nju javlja potreba za pravilima koja toj napasti staju na put. Na kraju se sama stabilnost pokazuje kao javno dobro koje tržište ne osigurava samo, čime se zatvara luk triju Musgraveovih funkcija.
 
 ## Zašto tržišno gospodarstvo može biti nestabilno?
 
@@ -610,7 +610,7 @@ Stabilizacijska politika mora biti dovoljno snažna da odgovori na krizu, ali do
 ::: {.sazetak-panel}
 ## Sažetak
 
-Tržišno gospodarstvo sklono je oscilacijama koje se same po sebi ne ispravljaju brzo ni bez troška, pa stabilizacijska funkcija gleda gospodarstvo kao cjelinu i nastoji ublažiti najdublje padove i najopasnija pregrijavanja. Fiskalna politika na to djeluje kroz potrošnju i poreze, a snaga tog djelovanja ovisi o fiskalnom multiplikatoru, koji je veći u recesiji nego u dobrim vremenima. Automatski stabilizatori djeluju bez izričite odluke i pravodobno, dok diskrecijska intervencija nosi rizike kašnjenja, trajnosti i moralnog hazarda. Budući da od stabilnosti koristi imaju gotovo svi, ona se može promatrati kao javno dobro, a dobra stabilizacijska politika zna kada djelovati, koliko i kada se povući. Time zaključujemo klasičnu analizu triju funkcija države i otvaramo pitanje koje je dosad ostalo po strani, a to je tko zapravo donosi te odluke i s kojim poticajima, čime se bavi sljedeći dio knjige o javnom izboru.
+Tržišno gospodarstvo sklono je oscilacijama koje se same po sebi ne ispravljaju brzo ni bez troška, pa stabilizacijska funkcija gleda gospodarstvo kao cjelinu i nastoji ublažiti najdublje padove i najopasnija pregrijavanja. Fiskalna politika na to djeluje kroz potrošnju i poreze, a snaga tog djelovanja ovisi o fiskalnom multiplikatoru, koji je veći u recesiji nego u dobrim vremenima. Automatski stabilizatori djeluju bez izričite odluke i pravodobno, dok diskrecijska intervencija nosi rizike kašnjenja, trajnosti i moralnog hazarda. Budući da od stabilnosti koristi imaju gotovo svi, ona se može promatrati kao javno dobro, a dobra stabilizacijska politika zna kada djelovati, koliko i kada se povući. Ista politika može i sama postati izvor nestabilnosti kada se vodi prema izbornom kalendaru, pa joj kao protuteža služe ustavna fiskalna pravila i neovisne institucije. Time zaključujemo klasičnu analizu triju funkcija države i otvaramo pitanje koje je dosad ostalo po strani, a to je tko zapravo donosi te odluke i s kojim poticajima, čime se bavi sljedeći dio knjige o javnom izboru.
 :::
 
 ::: {.callout-vjezba}

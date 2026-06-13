@@ -463,7 +463,7 @@ Zato tržišni neuspjesi ne dolaze kao negacija tržišta, nego kao nastavak ana
 ::: {.sazetak-panel}
 ## Sažetak
 
-Tržište je snažan mehanizam koji kroz cijene koordinira raspršeno znanje i, dok vrijede pretpostavke prvog teorema ekonomike blagostanja, alocira resurse učinkovito. Kada tih pretpostavki nema, u slučaju javnih dobara, eksternalija, asimetričnih informacija ili tržišne moći, otvara se prostor za državu, što Musgraveov okvir sažima kroz alokacijsku, distribucijsku i stabilizacijsku funkciju. Pareto učinkovitost i Kaldor-Hicksov kriterij pokazuju da se ishodi tržišta mogu ocijeniti, ali da učinkovitost nije isto što i pravednost, pa razdvajanje tih dvaju pitanja ostaje polazište za sve što u knjizi slijedi.
+Tržište je snažan mehanizam koji kroz cijene koordinira raspršeno znanje i, dok vrijede pretpostavke prvog teorema ekonomike blagostanja, alocira resurse učinkovito. Kada tih pretpostavki nema, u slučaju javnih dobara, eksternalija, asimetričnih informacija ili tržišne moći, otvara se prostor za državu, što Musgraveov okvir sažima kroz alokacijsku, distribucijsku i stabilizacijsku funkciju. Pareto učinkovitost i Kaldor-Hicksov kriterij pokazuju da se ishodi tržišta mogu ocijeniti, ali da učinkovitost nije isto što i pravednost, pa razdvajanje tih dvaju pitanja ostaje polazište za sve što u knjizi slijedi. Pitanje učinkovitosti time traži prvo produbljenje, popis okolnosti u kojima stvarna tržišta odstupaju od tog ideala i u kojima cijene prestaju nositi sve društvene troškove i koristi.
 :::
 
 ::: {.callout-vjezba}
