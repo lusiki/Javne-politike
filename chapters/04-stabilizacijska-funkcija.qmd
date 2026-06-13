@@ -414,6 +414,155 @@ Razlika između pravodobne i zakašnjele reakcije vidljiva je u dvama odgovorima
 
 [^wp-ch04]: Daljnje čitanje: Blanchard i Leigh (2013), [*Growth Forecast Errors and Fiscal Multipliers*](https://www.imf.org/external/pubs/ft/wp/2013/wp1301.pdf) (IMF WP 13/1); DeLong i Summers (2012), [*Fiscal Policy in a Depressed Economy*](https://www.brookings.edu/wp-content/uploads/2012/03/2012a_DeLong.pdf) (BPEA).
 
+## Oportunistički i stranački ciklusi
+
+Klasična analiza stabilizacije pretpostavlja dobrohotnog planera koji fiskalne i monetarne instrumente koristi isključivo da gospodarstvo približi potencijalu. Teorija javnog izbora taj prikaz dopunjuje [@buchanan1962]. Donositelji odluka nisu lišeni vlastitih interesa niti djeluju u praznini, nego se suočavaju s izbornim kalendarima i potrebom za političkom podrškom [@downs1957; @mueller1989]. Kada se na ekonomsku analizu nakalemi taj poticaj, gospodarski ciklus prestaje biti samo posljedica tržišnih sila i postaje dijelom proizvod političkog kalendara, pa i sama vlada može postati izvor nestabilnosti koju bi trebala suzbijati.
+
+Prvi formalni model te vrste razvio je Nordhaus, povezavši izborni rok s makroekonomskim fluktuacijama [@nordhaus1975]. Politi­čari u njegovu modelu nemaju ideologiju i motivirani su samo reizborom. Model počiva na tri pretpostavke, da su birači kratkovidni i rad vlade ocjenjuju retrospektivno, gledajući uglavnom posljednju godinu mandata, da inflacijska očekivanja formiraju adaptivno, na temelju prošle inflacije, i da u kratkom roku postoji eksploatabilna Phillipsova krivulja koja vladi dopušta trgovinu između nezaposlenosti i inflacije. Strukturu gospodarstva opisuje Phillipsova krivulja proširena očekivanjima
+
+$$u_t = u_n - \beta\,(\pi_t - \pi_t^{e}),$$
+
+gdje je $u_t$ nezaposlenost, $u_n$ prirodna stopa, $\pi_t$ inflacija, $\pi_t^{e}$ očekivana inflacija, a $\beta$ osjetljivost nezaposlenosti na inflacijsko iznenađenje. Uz adaptivna očekivanja vrijedi $\pi_t^{e} = \pi_{t-1}$. Vlada bira politiku koja maksimizira retrospektivnu potporu birača na izborima u razdoblju $T$,
+
+$$V = -\sum_{t=1}^{T} \mu^{\,T-t}\,\ell(u_t, \pi_t), \qquad 0 < \mu < 1,$$
+
+pri čemu je $\ell(u_t,\pi_t) = u_t + \theta\,\pi_t^{2}$ gubitak koji kažnjava i nezaposlenost i inflaciju, $\theta$ težina koju birači daju stabilnosti cijena, a faktor $\mu$ formalno odražava kratkovidnost jer rezultate neposredno prije izbora vrednuje mnogo jače od onih s početka mandata.
+
+Iz tog računa slijedi prepoznatljiva dinamika kroz mandat. Na početku, dok su izbori daleko, vlada provodi nepopularnu kontrakciju, podiže nezaposlenost i obara inflaciju, znajući da će birači te teške godine zaboraviti. Kako se izbori približavaju, naglo prelazi u ekspanziju. Zbog adaptivnih očekivanja inflacijska očekivanja kasne, pa ekspanzija stvara pozitivno inflacijsko iznenađenje, nezaposlenost pada ispod prirodne razine i gospodarstvo doživljava predizborni bum. Nakon pobjede dolazi račun, jer radnici prilagode očekivanja naviše, Phillipsova se krivulja pomakne, a vlada je prisiljena na novu kontrakciju, čime se ciklus zatvara i ponavlja u ritmu mandata.
+
+Graf koji slijedi prikazuje taj oportunistički ciklus, u kojem nezaposlenost pada prema dnu neposredno prije svakih izbora i naglo se vraća nakon njih. Graf je interaktivan, pa klizači mijenjaju snagu predizborne manipulacije i prirodnu stopu nezaposlenosti.
+
+::: {.content-visible when-format="html"}
+```{ojs}
+//| echo: false
+viewof cikl_controls = Inputs.form({
+  A: Inputs.range([0, 3], {value: 1.5, step: 0.1, label: "Snaga predizborne manipulacije A:"}),
+  un: Inputs.range([3, 8], {value: 5, step: 0.5, label: "Prirodna stopa nezaposlenosti u_n (%):"})
+})
+```
+
+```{ojs}
+//| echo: false
+//| label: fig-oportunisticki-ciklus
+//| fig-cap: "Oportunistički politički ciklus: nezaposlenost se obara prema dnu neposredno prije svakih izbora (okomite crte), a naglo raste nakon njih kad se inflacijska očekivanja prilagode. Iscrtkana linija je prirodna stopa."
+//| fig-alt: "Graf nezaposlenosti kroz dva mandata. Krivulja unutar svakog mandata pada od visoke razine na početku do dna neposredno prije izbora, označenih okomitim crtama, a zatim naglo skoči na početku idućeg mandata. Vodoravna iscrtkana linija označava prirodnu stopu nezaposlenosti."
+{
+  const A = cikl_controls.A, un = cikl_controls.un;
+  const frac = (t) => t - Math.floor(t);
+  const u = (t) => un + A * Math.cos(Math.PI * frac(t));
+  const ts = d3.range(0, 2.001, 0.01);
+  // prekini liniju na izborima (t=1) da se izbjegne okomiti skok
+  const path = ts.map(t => ({t, u: Math.abs(frac(t)) < 1e-9 && t > 0 ? NaN : u(t)}));
+
+  return Plot.plot({
+    width: 760,
+    height: 400,
+    marginLeft: 56,
+    marginTop: 40,
+    marginBottom: 48,
+    style: {fontSize: "12px", fontFamily: "Public Sans, system-ui, sans-serif", color: "#3A332D"},
+    x: {label: "Vrijeme (u mandatima) →", domain: [0, 2]},
+    y: {label: "↑ Nezaposlenost (%)", domain: [Math.max(0, un - A - 1), un + A + 1], grid: true},
+    marks: [
+      Plot.ruleY([un], {stroke: "#6B6357", strokeDasharray: "4,3"}),
+      Plot.ruleX([1, 2], {stroke: "#6B1F26", strokeWidth: 1}),
+      Plot.line(path, {x: "t", y: "u", stroke: "#2D5A8E", strokeWidth: 2.5}),
+      Plot.text([{t: 1, y: un + A + 0.7}], {x: "t", y: "y", text: ["izbori"], fill: "#6B1F26", fontSize: 11, fontWeight: 700}),
+      Plot.text([{t: 2, y: un + A + 0.7}], {x: "t", y: "y", text: ["izbori"], fill: "#6B1F26", fontSize: 11, fontWeight: 700}),
+      Plot.text([{t: 0.02, y: un}], {x: "t", y: "y", text: ["prirodna stopa"], textAnchor: "start", dy: -6, fill: "#6B6357", fontSize: 10})
+    ]
+  });
+}
+```
+
+**Što isprobati.** (1) Pojačajte snagu manipulacije i pratite kako se predizborni pad nezaposlenosti produbljuje, a postizborni skok postaje sve oštriji. (2) Spustite snagu manipulacije prema nuli i krivulja se izravna na prirodnoj stopi, jer vlada koja ne trguje glasovima ne stvara ciklus. (3) Promijenite prirodnu stopu i uvjerite se da se cijeli obrazac samo pomiče gore ili dolje, dok njegov oblik, vezan uz izborni kalendar, ostaje isti.
+:::
+
+::: {.content-visible when-format="pdf"}
+```{r}
+#| label: fig-oportunisticki-ciklus-print
+#| echo: false
+#| fig-cap: "Oportunistički politički ciklus: nezaposlenost se obara prema dnu neposredno prije svakih izbora (okomite crte), a naglo raste nakon njih kad se inflacijska očekivanja prilagode. Iscrtkana linija je prirodna stopa."
+#| fig-alt: "Graf nezaposlenosti kroz dva mandata. Krivulja unutar svakog mandata pada od visoke razine na početku do dna neposredno prije izbora, označenih okomitim crtama, a zatim naglo skoči na početku idućeg mandata. Vodoravna iscrtkana linija označava prirodnu stopu nezaposlenosti."
+#| fig-width: 7.6
+#| fig-height: 4.0
+# Statički PDF blizanac interaktivnog OJS grafa (zadane vrijednosti: A = 1.5, u_n = 5).
+source("R/setup.R")
+
+A  <- 1.5
+un <- 5
+frac <- function(t) t - floor(t)
+u_fun <- function(t) un + A * cos(pi * frac(t))
+
+ts <- seq(0, 2, by = 0.01)
+df <- data.frame(t = ts, u = u_fun(ts))
+# prekini liniju na izborima (cijeli mandat) da se izbjegne okomiti skok
+df$u[abs(frac(df$t)) < 1e-9 & df$t > 0] <- NA
+
+ggplot(df, aes(t, u)) +
+  geom_hline(yintercept = un, linetype = "dashed", linewidth = 0.5, color = "#6B6357") +
+  geom_vline(xintercept = c(1, 2), linewidth = 0.5, color = "#6B1F26") +
+  geom_line(linewidth = 1.1, color = "#2D5A8E", na.rm = TRUE) +
+  annotate("text", x = 1, y = un + A + 0.7, label = "izbori",
+           color = "#6B1F26", fontface = "bold", size = 3.4) +
+  annotate("text", x = 2, y = un + A + 0.7, label = "izbori",
+           color = "#6B1F26", fontface = "bold", size = 3.4) +
+  annotate("text", x = 0.02, y = un, label = "prirodna stopa", hjust = 0, vjust = -0.6,
+           color = "#6B6357", size = 3.0) +
+  scale_y_continuous(limits = c(max(0, un - A - 1), un + A + 1)) +
+  scale_x_continuous(limits = c(0, 2), expand = c(0, 0)) +
+  labs(x = "Vrijeme (u mandatima)", y = "Nezaposlenost (%)") +
+  theme_pubfin()
+```
+:::
+
+Kao odgovor na Nordhausovu pretpostavku o ideološki neutralnim političarima, Hibbs je stabilne stranačke ciljeve povezao s makroekonomskim ishodima [@hibbs1977]. Stranke predstavljaju različite društvene skupine sa suprotnim interesima. Lijeva stranka zastupa radnike i niže dohotke, koji najviše trpe u nezaposlenosti, a manje su izloženi inflaciji jer drže malo financijske imovine, pa daje prednost zaposlenosti i rastu uz toleranciju više inflacije. Desna stranka zastupa vlasnike kapitala i građane s fiksnim prihodima, kojima inflacija obezvrjeđuje imovinu, pa prioritet stavlja na stabilnost cijena uz toleranciju više nezaposlenosti. Budući da Hibbsov model pretpostavlja trajno eksploatabilnu Phillipsovu krivulju, razlike između lijeve i desne vladavine su postojane. Fluktuacije ovdje ne diktira blizina izbora, kao kod Nordhausa, nego sama smjena vlasti, pa amplituda ciklusa ovisi o dubini ideološkog jaza među suparnicima.
+
+## Racionalni ciklusi i izborno iznenađenje
+
+Modeli prve generacije imaju metodološku slabost jer pretpostavljaju trajnu kratkovidnost birača [@alesina1989]. Ako bi ih isti predizborni trik varao iz ciklusa u ciklus, birači bi obrazac s vremenom prozreli i prilagodili očekivanja, čime bi manipulacija izgubila realni učinak. Druga generacija modela zato pretpostavku o naivnim biračima zamjenjuje racionalnim očekivanjima, a fluktuacije izvodi iz asimetrije informacija i nominalnih rigidnosti.
+
+Racionalni oportunistički model napušta stabilnu Phillipsovu krivulju i pozornost premješta na kompetenciju vlade, njezinu sposobnost da pruži javne usluge uz niže poreze i manji dug [@rogoffsibert1988; @rogoff1990]. Kompetencija se mijenja kroz vrijeme, a ključna je asimetrija u tome što je vlada poznaje, dok je birači ne vide izravno, nego je procjenjuju iz vidljivih rezultata. Donošenje proračuna time postaje signalizacijska igra. Kompetentna vlada prije izbora mijenja strukturu rashoda, smanjuje spore i nevidljive dugoročne investicije, a sredstva preusmjerava u vidljivu tekuću potrošnju poput plaća, doplataka i jednokratnih pomoći. Manje kompetentna vlada teško imitira taj signal jer bi morala stvoriti deficite prevelike da ih sakrije do izbora, pa se u ravnoteži kompetentna vlada uspješno odvaja i pobjeđuje. Učinak ciklusa nije trajni rast nego privremeno predizborno iskrivljenje strukture proračuna, nakon kojeg slijedi konsolidacija.
+
+Racionalna očekivanja u stranački je model ugradio Alesina, pokazavši da ideološke razlike stvaraju realne fluktuacije čak i kada su svi akteri savršeno racionalni [@alesina1987]. Mehanizam su nominalne rigidnosti, ugovori o plaćama koji se sklapaju prije nego što se sazna ishod izbora. Kako je ishod neizvjestan, očekivana inflacija u trenutku potpisivanja je ponderirani prosjek ciljeva obiju stranaka,
+
+$$\pi^{e} = P\,\pi^{L} + (1-P)\,\pi^{R}, \qquad \pi^{L} > \pi^{R},$$
+
+gdje je $P$ vjerojatnost pobjede lijeve stranke, a $\pi^{L}$ i $\pi^{R}$ inflacijski ciljevi lijeve i desne stranke. Kada se neizvjesnost razriješi, stvarni ishod stvara inflacijsko iznenađenje. Pobijedi li lijeva stranka, ostvarena inflacija $\pi^{L}$ premašuje očekivanu, pa je iznenađenje pozitivno,
+
+$$\pi^{L} - \pi^{e} = (1-P)\,(\pi^{L} - \pi^{R}) > 0,$$
+
+što privremeno snižava realne plaće, potiče zapošljavanje i stvara bum na početku mandata. Pobijedi li desna stranka, iznenađenje je simetrično negativno, $\pi^{R} - \pi^{e} = -P\,(\pi^{L} - \pi^{R}) < 0$, pa realne plaće rastu, a gospodarstvo na početku mandata klizne u recesiju. U oba slučaja učinci su privremeni, jer se istekom ugovora očekivanja usklade i gospodarstvo se vrati na prirodnu razinu, što je ključna razlika u odnosu na Hibbsove trajne razlike. Intenzitet postizbornog buma ili recesije razmjeran je predizbornoj neizvjesnosti, pa kada ankete jasno najavljuju pobjednika, akteri to ugrade u ugovore i iznenađenja, a s njime i fluktuacija, izostaje.
+
+## Empirija ciklusa i ustavna fiskalna pravila
+
+Postojanje ovih ciklusa nije samo teorijska mogućnost nego predmet opsežnih empirijskih provjera u tranzicijskim zemljama i članicama Europske unije.
+
+::: {.callout-empirija}
+<!-- TODO(coauthor) hrvatski i EU empirijski nalazi (Vučković, Mačkić) su Hrvatska-specifični i prema STYLE.md rezervirani za koautore. Milan i Petra trebaju potvrditi nalaze i točne brojke prije finalne verzije. -->
+Analiza hrvatskih parlamentarnih izbora između 1995. i 2008. potvrđuje snažan oportunistički ciklus, pri čemu se proračunski deficit u izbornim godinama u prosjeku povećava za oko 0,66 postotnih bodova BDP-a, kao posljedica istodobnog rasta rashoda za približno 0,39 i pada prihoda za približno 0,23 postotna boda zbog predizbornih olakšica [@vuckovic2010]. Komparativna dinamička panel-analiza devet članica Europske unije u razdoblju 1995.–2012. potvrđuje političko-proračunski ciklus na svim razinama vlasti i nalazi da ga najbolje opisuje model utemeljen na moralnom hazardu, u kojem političari aktivno koriste proračun za reizbor, dok su birači žrtve informacijske asimetrije, a ne pokretači potrošnje. Ciklus je izraženiji u fiskalno decentraliziranim sustavima, gdje lokalni dužnosnici raspolažu većom diskrecijom nad vidljivim rashodima uz slabiji nadzor [@mackic2015].
+:::
+
+Iz perspektive ustavne ekonomike, makropolitički ciklusi su oblik državnog neuspjeha koji se ne liječi oslanjanjem na osobnu čestitost dužnosnika, nego unaprijed zadanim pravilima koja oportunističko ponašanje čine skupim ili nemogućim [@brennan1985]. Logika je ista kao kod vremenske nedosljednosti, gdje politika optimalna u trenutku najave prestaje biti optimalna kad dođe vrijeme provedbe, pa su vladi potrebna obvezujuća pravila koja je vežu unaprijed [@kydland1977]. Tri se instrumenta najčešće spominju. Numerička fiskalna pravila izravno ograničavaju deficit i dug, primjerice švicarska kočnica zaduživanja koja dopušteni rashod veže uz prihod i fazu ciklusa,
+
+$$G_{\max,t} = R_t \cdot k_t, \qquad k_t = \frac{Y^{*}_t}{Y_t},$$
+
+gdje je $R_t$ očekivani prihod, a faktor $k_t$ omjer potencijalnog i stvarnog BDP-a, pa u recesiji ($Y_t < Y^{*}_t$) dopušta deficit, a u ekspanziji traži suficit. Neovisna fiskalna vijeća smanjuju informacijsku asimetriju nadzirući prognoze i upozoravajući na predizborna iskrivljenja, a neovisna središnja banka uklanja monetarni dio ciklusa jer vjerodostojno odbija predizborni pritisak na ekspanziju [@rogoff1985]. Ta tri instrumenta čine jezgru ustavnog odgovora na cikluse, a njihovu punu razradu, zajedno s vremenskom nedosljednošću i logikom vezivanja vlastitih ruku, ostavljamo poglavlju o konstitucionalnoj ekonomici.
+
+Razvoj teorije makropolitičkih ciklusa sažet je u tablici, koja prati pomak od naivnih prema racionalnim biračima i od trajnih prema privremenim učincima.
+
+| Dimenzija | Oportunistički (Nordhaus) | Stranački (Hibbs) | Racionalni oportunistički (Rogoff) | Racionalni stranački (Alesina) |
+|---|---|---|---|---|
+| Motiv aktera | samo reizbor | ideološki ciljevi baze | reizbor uz signal sposobnosti | ideološki ciljevi baze |
+| Očekivanja birača | adaptivna, unazad | adaptivna, unazad | racionalna, unaprijed | racionalna, unaprijed |
+| Informacije | potpune, ali kratkovidnost | stabilna Phillipsova krivulja | asimetrija o kompetenciji | neizvjesnost o pobjedniku |
+| Izvor fluktuacije | nezaposlenost prije izbora | smjena stranke na vlasti | struktura proračuna | postizborno iznenađenje |
+| Trajanje učinaka | ciklus kroz cijeli mandat | trajne razlike | privremeno iskrivljenje | prijelazni učinci na početku |
+
+: Četiri modela makropolitičkih ciklusa. Izrada autora prema @nordhaus1975, @hibbs1977, @rogoff1990 i @alesina1987. {#tbl-ciklusi}
+
+Pouka je da stabilizacijska uloga države ne ovisi samo o izboru instrumenata nego i o pravilima koja odvajaju odluku o njihovoj uporabi od izbornog kalendara. Upravo zato stabilizacija dolazi do punog izražaja tek u uvjetima u kojima takvih pritisaka privremeno nestane, a država mora djelovati brzo i snažno, što je slučaj u velikim krizama.
+
 ## Stabilizacijska funkcija u velikim krizama
 
 Upravo onaj režim u kojem se monetarni prostor iscrpi, a multiplikatori narastu, najčešće nastupa kada gospodarstvo pogodi snažan šok. Stabilizacijska funkcija posebno dolazi do izražaja u velikim krizama. Ratovi, financijske krize, pandemije, energetski šokovi i prirodne katastrofe često dovode do naglog rasta uloge države. U takvim situacijama građani i poduzeća očekuju hitnu reakciju jer bi politika nečinjenja mogla imati vrlo visoke društvene troškove.
