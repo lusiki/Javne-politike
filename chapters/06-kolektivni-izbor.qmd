@@ -248,7 +248,196 @@ Različiti sustavi glasovanja vode do različitih ishoda, što dodatno naglašav
 
 : Usporedba sustava glasovanja. Izrada autora. {#tbl-sustavi-glasovanja}
 
-Iz tih razlika među sustavima slijedi jedan dublji rezultat. Gibbard i Satterthwaite dokazali su da je svaki razuman izborni sustav s barem tri opcije podložan strateškom glasovanju, odnosno da u nekim situacijama biraču nije u interesu glasati za svoju iskreno najdražu opciju, nego taktički za onu koja ima veće izglede [@gibbard1973; @satterthwaite1975]. To znači da manipulabilnost nije mana lošeg dizajna koju bi se boljim pravilom moglo ukloniti, nego ugrađeno svojstvo svake agregacije preferencija. Praktična posljedica je da zabilježeni glasovi ne otkrivaju nužno stvarne preferencije birača, što dodatno otežava tumačenje izbornih i parlamentarnih ishoda kao izravnog izraza „volje naroda".
+Iz tih razlika među sustavima slijedi jedan dublji rezultat. Gibbard i Satterthwaite dokazali su da je svaki razuman izborni sustav s barem tri opcije podložan strateškom glasovanju, odnosno da u nekim situacijama biraču nije u interesu glasati za svoju iskreno najdražu opciju, nego taktički za onu koja ima veće izglede [@gibbard1973; @satterthwaite1975]. Formalno, pravilo koje nijednom biraču nikad ne dopušta da lažnim rangiranjem dobije ishod koji više voli, a bira između barem tri opcije, mora biti diktatorsko u smislu da ishod ovisi o jednom te istom biraču bez obzira na ostale. Manipulabilnost zato nije mana lošeg dizajna koju bi se boljim pravilom moglo ukloniti, nego ugrađeno svojstvo svake agregacije preferencija. Njezin praktični domet ipak ograničava informacija jer uspješno taktiziranje, poput pokapanja najjačeg suparnika spuštanjem na dno liste pod Bordinim pravilom, traži gotovo potpuno poznavanje tuđih listića, što je u velikom biračkom tijelu rijetko dostupno, pa se većina birača i pod manipulabilnim pravilima u praksi drži iskrenog poretka [@mueller1989]. Posljedica je da zabilježeni glasovi ne otkrivaju nužno stvarne preferencije birača, što dodatno otežava tumačenje izbornih i parlamentarnih ishoda kao izravnog izraza „volje naroda".
+
+## Bordino pravilo i pozicijsko glasovanje
+
+Ciklusi većine nastaju jer parno glasovanje odbacuje obavijest o tome koliko su opcije međusobno udaljene na svakom listiću. Pozicijski sustavi idu suprotnim putem i čitaju cijelu rang-listu, a ne samo prvi izbor. Pluralno glasovanje, najraširenije pravilo, leži na kraju tog raspona jer broji isključivo prvo mjesto, a sve o rasporedu ostalih kandidata zanemaruje. Kandidat kojeg vatrena manjina obožava, a tiha ga većina drži najgorom opcijom, pod pluralnim pravilom može pobijediti upravo zato što rang-lista te većine nikad ne uđe u zbroj.
+
+Borda je 1781. godine predložio da se svakom kandidatu dodijeli broj bodova prema njegovu mjestu na biračevoj rang-listi, čime u zbroj ulazi cijeli poredak, a ne samo vrh [@borda1781]. Zamisao nije bila posve nova jer je sličan postupak za izbor careva opisao Nikola Kuzanski još u prvoj polovici 15. stoljeća, no tek je Bordin memorandum Francuskoj akademiji znanosti pokrenuo formalnu raspravu o svojstvima takvih pravila [@mcleanurken1995].
+
+::: {#def-bordino-pravilo}
+**Bordino pravilo** (*Borda count*) svakom kandidatu dodjeljuje bodove prema mjestu na svakoj rang-listi, pri čemu uz $m$ kandidata prvo mjesto nosi $m-1$ bodova, drugo $m-2$, i tako redom do nule, a pobjeđuje kandidat s najvećim ukupnim zbrojem.
+:::
+
+Bordino je pravilo poseban slučaj šire obitelji pozicijskih sustava. Pozicijski sustav određen je vektorom težina $w = (w_1, w_2, \dots, w_m)$ koji $k$-tom mjestu na listiću pridružuje $w_k$ bodova, uz $w_1 \ge w_2 \ge \dots \ge w_m$ i $w_1 > w_m$. Pojedini sustavi tek su različiti izbori tog vektora. Pluralno glasovanje koristi $w = (1, 0, \dots, 0)$ jer broji samo prvo mjesto, antipluralno glasovanje koristi $w = (1, \dots, 1, 0)$ jer kažnjava samo posljednje, a Bordin sustav uzima ravnomjeran pad
+
+$$w = (m-1,\ m-2,\ \dots,\ 1,\ 0),$$
+
+u kojem je bodovna razlika između svaka dva susjedna mjesta jednaka. Upravo taj ravnomjeran pad daje Bordi svojstva po kojima se izdvaja.
+
+Da pozicijski i parni pristup pri istim preferencijama mogu proglasiti različite pobjednike, pokazuje primjer triju kandidata $A$, $B$ i $C$ pred devetnaest glasača. Deset ih rangira $A \succ B \succ C$, a preostalih devet $B \succ C \succ A$. U parnim dvobojima $A$ pobjeđuje $B$ s deset glasova prema devet i jednako tako svladava $C$, dok $B$ uvjerljivo nadjačava $C$. Kandidat $A$ time je Condorcetov pobjednik jer nadvladava svakog suparnika ponaosob. Zbrajanje bodova uz Bordine težine $2$, $1$ i $0$ daje drugačiju sliku.
+
+$$B(A) = 10 \cdot 2 + 9 \cdot 0 = 20, \quad B(B) = 10 \cdot 1 + 9 \cdot 2 = 28, \quad B(C) = 10 \cdot 0 + 9 \cdot 1 = 9.$$
+
+Bordin pobjednik je $B$ s dvadeset i osam bodova, dok Condorcetov pobjednik $A$ pada na drugo mjesto. Razlog leži u strukturi preferencija. Devetorica koja vode $B$ stavljaju $A$ na samo dno, pa je $A$ za gotovo polovicu biračkog tijela najgora opcija premda tijesno pobjeđuje u svakom paru. Kandidat $B$ nikomu nije najgori i svima je barem drugi, što ga čini snažnijim kompromisom. Parno glasovanje tu razliku ne vidi jer svaki par mjeri odvojeno od trećeg kandidata, dok je Bordin zbroj očuva.
+
+Odnos dvaju pravila lakše je vidjeti nego pratiti kroz brojeve. Graf koji slijedi prikazuje Bordin zbroj svakog kandidata kao stupce i istodobno javlja tko je Condorcetov pobjednik, pa se odmah razabire slažu li se dva pravila ili se razilaze. Graf je interaktivan, pa klizači mijenjaju koliko birača drži svaki od šest mogućih poredaka triju kandidata.
+
+::: {.content-visible when-format="html"}
+```{ojs}
+//| echo: false
+viewof borda_controls = Inputs.form({
+  abc: Inputs.range([0, 20], {value: 10, step: 1, label: "A ▸ B ▸ C:"}),
+  acb: Inputs.range([0, 20], {value: 0,  step: 1, label: "A ▸ C ▸ B:"}),
+  bca: Inputs.range([0, 20], {value: 9,  step: 1, label: "B ▸ C ▸ A:"}),
+  bac: Inputs.range([0, 20], {value: 0,  step: 1, label: "B ▸ A ▸ C:"}),
+  cab: Inputs.range([0, 20], {value: 0,  step: 1, label: "C ▸ A ▸ B:"}),
+  cba: Inputs.range([0, 20], {value: 0,  step: 1, label: "C ▸ B ▸ A:"})
+})
+```
+
+```{ojs}
+//| echo: false
+//| label: fig-borda
+//| fig-cap: "Bordin zbroj triju kandidata i Condorcetov pobjednik za zadani profil preferencija. Pri početnom rasporedu Bordin pobjednik B nije ujedno i Condorcetov pobjednik A."
+//| fig-alt: "Stupčasti grafikon s tri stupca za kandidate A, B i C koji prikazuju njihov Bordin zbroj. Najviši stupac, koji označava Bordina pobjednika, istaknut je zelenom bojom. Iznad grafa ispisani su Bordin pobjednik, Condorcetov pobjednik te poruka slažu li se dva pravila."
+{
+  const w = borda_controls;
+  const groups = [
+    {rank: ["A","B","C"], n: w.abc},
+    {rank: ["A","C","B"], n: w.acb},
+    {rank: ["B","C","A"], n: w.bca},
+    {rank: ["B","A","C"], n: w.bac},
+    {rank: ["C","A","B"], n: w.cab},
+    {rank: ["C","B","A"], n: w.cba}
+  ];
+  const cands = ["A","B","C"];
+
+  // Bordin zbroj: prvo mjesto 2, drugo 1, treće 0
+  const borda = {A: 0, B: 0, C: 0};
+  for (const g of groups) {
+    borda[g.rank[0]] += 2 * g.n;
+    borda[g.rank[1]] += 1 * g.n;
+    borda[g.rank[2]] += 0 * g.n;
+  }
+
+  // Parne usporedbe i Condorcetov pobjednik
+  const prefers = (rank, x, y) => rank.indexOf(x) < rank.indexOf(y);
+  const pairCount = (x, y) => d3.sum(groups, g => prefers(g.rank, x, y) ? g.n : 0);
+  const beats = (x, y) => {
+    const xy = pairCount(x, y), yx = pairCount(y, x);
+    return xy > yx ? x : (yx > xy ? y : null);
+  };
+  const condWinner = cands.find(c => cands.filter(o => o !== c).every(o => beats(c, o) === c));
+
+  const maxB = d3.max(cands, c => borda[c]);
+  const bordaWinners = cands.filter(c => borda[c] === maxB && maxB > 0);
+  const bordaWinner = bordaWinners.length === 1 ? bordaWinners[0] : null;
+
+  const agree = bordaWinner && condWinner && bordaWinner === condWinner;
+  const accent = agree ? "#1C7C54" : "#6B1F26";
+
+  const data = cands.map(c => ({cand: c, score: borda[c], isWin: c === bordaWinner}));
+  const condText  = condWinner ? `Condorcetov pobjednik: ${condWinner}` : "Condorcetov pobjednik: nema (ciklus)";
+  const bordaText = bordaWinner ? `Bordin pobjednik: ${bordaWinner} (${borda[bordaWinner]} bod.)` : "Bordin pobjednik: neodlučeno";
+  const verdict   = (bordaWinner && condWinner) ? (agree ? "Pravila se slažu" : "Pravila se razilaze") : "";
+
+  return Plot.plot({
+    width: 520,
+    height: 410,
+    marginLeft: 55,
+    marginTop: 66,
+    marginBottom: 45,
+    style: {fontSize: "13px", fontFamily: "Public Sans, system-ui, sans-serif", color: "#3A332D"},
+    x: {label: "Kandidat", domain: cands},
+    y: {label: "↑ Bordin zbroj", domain: [0, Math.max(10, maxB * 1.18)], grid: true},
+    marks: [
+      Plot.ruleY([0], {stroke: "#C9C3B8"}),
+      Plot.barY(data, {x: "cand", y: "score", fill: d => d.isWin ? "#4A6B5C" : "#C9BBA3"}),
+      Plot.text(data, {x: "cand", y: "score", text: d => d.score, dy: -8,
+        fontSize: 14, fontWeight: 700, fill: "#1C1916"}),
+      Plot.text([bordaText], {frameAnchor: "top", dy: -48, fontSize: 13, fontWeight: 700, fill: "#4A6B5C"}),
+      Plot.text([condText],  {frameAnchor: "top", dy: -30, fontSize: 13, fontWeight: 700, fill: "#1C1916"}),
+      Plot.text([verdict],   {frameAnchor: "top", dy: -10, fontSize: 14, fontWeight: 700, fill: accent})
+    ]
+  });
+}
+```
+
+**Što isprobati.** (1) Zadržite početni raspored u kojem deset birača drži A ▸ B ▸ C, a devet B ▸ C ▸ A, i potvrdite da Bordin pobjednik B nije ujedno Condorcetov pobjednik A. (2) Postupno povećavajte broj birača koji drže A ▸ B ▸ C i pratite kako Bordin zbroj kandidata A sustiže pa prestiže B, sve dok se dva pravila ne počnu slagati. (3) Rasporedite glasove u tri jednake skupine koje rotiraju u istom smjeru, A ▸ B ▸ C, B ▸ C ▸ A i C ▸ A ▸ B, i vidjet ćete kako parno glasovanje upada u ciklus bez Condorcetova pobjednika, dok Bordin zbroj i dalje uredno proglašava pobjednika.
+:::
+
+::: {.content-visible when-format="pdf"}
+```{r}
+#| label: fig-borda-print
+#| echo: false
+#| fig-cap: "Bordin zbroj triju kandidata i Condorcetov pobjednik za zadani profil preferencija. Pri početnom rasporedu Bordin pobjednik B nije ujedno i Condorcetov pobjednik A."
+#| fig-alt: "Stupčasti grafikon s tri stupca za kandidate A, B i C koji prikazuju njihov Bordin zbroj. Najviši stupac, koji označava Bordina pobjednika, istaknut je zelenom bojom. Iznad grafa ispisani su Bordin pobjednik, Condorcetov pobjednik te poruka slažu li se dva pravila."
+#| fig-width: 5.2
+#| fig-height: 4.1
+# Statički PDF blizanac interaktivnog OJS grafa (zadane vrijednosti klizača,
+# reproduciraju primjer iz teksta: 10 × A▸B▸C, 9 × B▸C▸A).
+source("R/setup.R")
+
+groups <- list(
+  list(rank = c("A","B","C"), n = 10),
+  list(rank = c("A","C","B"), n = 0),
+  list(rank = c("B","C","A"), n = 9),
+  list(rank = c("B","A","C"), n = 0),
+  list(rank = c("C","A","B"), n = 0),
+  list(rank = c("C","B","A"), n = 0)
+)
+cands <- c("A", "B", "C")
+
+# Bordin zbroj: prvo mjesto 2, drugo 1, treće 0
+borda <- c(A = 0, B = 0, C = 0)
+for (g in groups) {
+  borda[g$rank[1]] <- borda[g$rank[1]] + 2 * g$n
+  borda[g$rank[2]] <- borda[g$rank[2]] + 1 * g$n
+  borda[g$rank[3]] <- borda[g$rank[3]] + 0 * g$n
+}
+
+# Parne usporedbe i Condorcetov pobjednik
+pair_count <- function(x, y) {
+  sum(vapply(groups, function(g)
+    if (which(g$rank == x) < which(g$rank == y)) g$n else 0, numeric(1)))
+}
+beats <- function(x, y) {
+  xy <- pair_count(x, y); yx <- pair_count(y, x)
+  if (xy > yx) x else if (yx > xy) y else NA_character_
+}
+cond_winner <- cands[vapply(cands, function(c)
+  all(vapply(setdiff(cands, c), function(o) identical(beats(c, o), c), logical(1))),
+  logical(1))]
+cond_winner <- if (length(cond_winner) == 1) cond_winner else NA_character_
+
+borda_winner <- names(borda)[which.max(borda)]
+agree  <- !is.na(cond_winner) && cond_winner == borda_winner
+accent <- if (agree) "#1C7C54" else "#6B1F26"
+
+df <- data.frame(cand = cands, score = as.numeric(borda[cands]),
+                 is_win = cands == borda_winner)
+
+cond_text  <- if (is.na(cond_winner)) "Condorcetov pobjednik: nema (ciklus)" else paste0("Condorcetov pobjednik: ", cond_winner)
+borda_text <- paste0("Bordin pobjednik: ", borda_winner, " (", borda[[borda_winner]], " bod.)")
+verdict    <- if (!is.na(cond_winner)) (if (agree) "Pravila se slažu" else "Pravila se razilaze") else ""
+ytop <- max(df$score) * 1.4
+
+ggplot(df, aes(cand, score, fill = is_win)) +
+  geom_col(width = 0.6) +
+  geom_text(aes(label = score), vjust = -0.5, fontface = "bold",
+            size = 4.2, color = "#1C1916") +
+  scale_fill_manual(values = c(`TRUE` = "#4A6B5C", `FALSE` = "#C9BBA3"), guide = "none") +
+  annotate("text", x = 0.55, y = ytop * 0.97, label = borda_text,
+           hjust = 0, fontface = "bold", size = 3.8, color = "#4A6B5C") +
+  annotate("text", x = 0.55, y = ytop * 0.90, label = cond_text,
+           hjust = 0, fontface = "bold", size = 3.8, color = "#1C1916") +
+  annotate("text", x = 0.55, y = ytop * 0.83, label = verdict,
+           hjust = 0, fontface = "bold", size = 4.2, color = accent) +
+  scale_y_continuous(limits = c(0, ytop), expand = c(0, 0)) +
+  labs(x = "Kandidat", y = "Bordin zbroj") +
+  theme_pubfin()
+```
+:::
+
+Da taj ravnomjeran raspored bodova nije proizvoljan, dokazao je Young [@young1974]. Pokazao je da je Bordino pravilo jedini pozicijski sustav koji istodobno zadovoljava neutralnost, vjernost prema kojoj pri jednom biraču društveni poredak mora biti njegova rang-lista, poništavanje suprotstavljenih parova i konzistentnost prema kojoj dvije skupine koje odvojeno rangiraju $A$ iznad $B$ moraju i zajedno rangirati $A$ iznad $B$. Svako odstupanje od linearnih težina ruši konzistentnost, što sustavi s eliminacijskim krugovima redovito i čine.
+
+Dublje objašnjenje zašto se sustavi uopće razilaze dao je Saari geometrijskom analizom prostora svih mogućih rang-lista [@saari1995]. Pri tri kandidata taj je prostor šesterodimenzionalan jer postoji šest poredaka, a Saari ga rastavlja na međusobno okomite dijelove od kojih svaki nosi jednu vrstu biračkog ponašanja. Na osnovnom dijelu, gdje su preferencije međusobno suglasne, svi se sustavi slažu i paradoksa nema.
+
+Razlike izviru iz dvaju preostalih dijelova. Jedan sadrži cikličke komponente poput Condorcetove trojke, i upravo taj dio Bordin zbroj posve poništava, dok parne metode čini nestabilnima. Drugi se tiče obrtanja preferencija, gdje je Bordino pravilo jedini pozicijski sustav kod kojeg potpuno obrnut poredak svih birača daje i potpuno obrnut društveni poredak, dok ga pluralno glasovanje grubo krši. Iz te dekompozicije slijedi da Bordino pravilo proizvodi najmanje paradoksa među pozicijskim sustavima, što ga čini informacijski najstabilnijim.
+
+Cijena te stabilnosti je osjetljivost na taktičko rangiranje, koju obuhvaća opći rezultat o manipulabilnosti iz prethodnog odjeljka. Hibridna pravila pokušavaju spojiti obje vrline tako da Bordin zbroj koriste za postupno ispadanje kandidata, pa Nansonov i Baldwinov sustav uvijek izaberu Condorcetova pobjednika kada on postoji, ali zauzvrat gube monotonost [@nanson1882; @baldwin1926]. Nijedan izbor pravila time ne izmiče kompromisu između suparničkih vrijednosti. Upravo to opažanje, da svako pravilo mora nešto žrtvovati, Arrow je podigao s razine pojedinačnih sustava na razinu načela.
 
 ## Arrowljev teorem nemogućnosti
 
@@ -311,6 +500,8 @@ Pitanje kada jednovršnost vrijedi u stvarnoj politici ima konkretan odgovor. On
 :::
 
 Osoba ili tijelo koje oblikuje proceduru, primjerice predsjednik saborskog odbora, Vlada ili predsjedavajući Vijeća EU, često ima veću stvarnu moć od same većine glasova. Pažljivim biranjem redoslijeda glasovanja moguće je usmjeriti ishod prema željenoj alternativi i unutar istog skupa preferencija.
+
+Manipulacija ne staje na redoslijedu glasovanja. William Riker tu širu vještinu naziva **herestetikom** (*heresthetics*), umijećem strukturiranja političkog prostora kojim se postojeća većina razbija uvođenjem nove dimenzije odlučivanja [@riker1986]. Onaj tko gubi pod trenutnom podjelom ne pokušava uvjeriti protivnike da promijene mišljenje, nego u raspravu ubacuje novo pitanje i, primjerice, ekonomski prijedlog poveže s nacionalnim identitetom ili sigurnošću, čime dotadašnju koaliciju cijepa na frakcije i otvara prostor za novu pobjedničku većinu. Herestetika je drugo lice McKelveyeva rezultata jer pokazuje da strateški akter višedimenzionalnost prostora ne mora čekati, nego je može i sam stvoriti.
 
 Snaga te moći nije svuda jednaka. Komparativni dizajn parlamentarnih procedura pokazuje da se agendar kreće na spektru čija se dva ekstrema mogu prikazati istim modelom. Na jednom kraju nalazi se zatvoreno pravilo, u kojem agendar predlaže jednu jedinu alternativu, a parlament o njoj može glasovati samo „za" ili „protiv". Tu je moć agendara teorijski najveća, a jasno se vidi u proceduri donošenja proračuna u nekim francuskim i britanskim aranžmanima [@romer1978]. Na drugom kraju nalazi se otvoreno pravilo, u kojem svaki zastupnik može predlagati izmjene, raspravljati o njima i predlagati alternative, što ishod približava medijanu zastupnika i smanjuje moć inicijative.
 
