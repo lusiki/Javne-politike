@@ -19,7 +19,7 @@ format:
   </div>
   <div class="vd-folio-meta">
     <span>2 min čitanja</span>
-    <span>Mapa 5 od 20</span>
+    <span>Mapa 5 od 21</span>
   </div>
 </div>
 
@@ -123,7 +123,7 @@ format:
 <nav class="vd-dalje" aria-label="Kamo dalje">
   <a href="04-stabilizacijska-funkcija.html">← Mapa 4</a>
   <a class="vd-primary" href="../chapters/05-javni-izbor.html">Otvorite poglavlje u knjizi</a>
-  <a href="06-kolektivni-izbor.html">Mapa 6 →</a>
+  <a href="05a-teorija-igara.html">Mapa 5a →</a>
 </nav>
 
 </div>

@@ -78,6 +78,7 @@ book:
     - part: "DIO II: JAVNI IZBOR – ŠTO, KAKO I ZAŠTO?"
       chapters:
         - chapters/05-javni-izbor.qmd
+        - chapters/05a-teorija-igara.qmd
         - chapters/06-kolektivni-izbor.qmd
         - chapters/07-stranke-izbori.qmd
         - chapters/08-interesne-skupine.qmd
@@ -111,6 +112,7 @@ book:
     - vodic/03-distribucijska-funkcija.qmd
     - vodic/04-stabilizacijska-funkcija.qmd
     - vodic/05-javni-izbor.qmd
+    - vodic/05a-teorija-igara.qmd
     - vodic/06-kolektivni-izbor.qmd
     - vodic/07-stranke-izbori.qmd
     - vodic/08-interesne-skupine.qmd

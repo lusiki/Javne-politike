@@ -12,7 +12,7 @@ format:
 
 ```{=html}
 <header class="vd-hub-head">
-  <span class="vd-hub-kicker">Vodič · 20 mentalnih mapa</span>
+  <span class="vd-hub-kicker">Vodič · 21 mentalnih mapa</span>
   <h1 class="vd-hub-title">Knjiga koju pročitate očima</h1>
   <p class="vd-hub-lede">Vizualna slikovnica knjige. Jedno poglavlje, jedna stranica, jedna mentalna mapa koju pročitate za dvije minute. Ista priča kao u udžbeniku, ispričana drugim glasom. Krenite redom ili otvorite ono što vas zanima.</p>
 </header>
@@ -60,6 +60,12 @@ format:
       <span class="vd-hub-num">05</span>
       <span class="vd-hub-name">Javni izbor</span>
       <span class="vd-hub-q">Što vidimo kad političare gledamo kao obične ljude?</span>
+      <span class="vd-go">Otvorite mapu →</span>
+    </a>
+    <a class="vd-hub-card" href="vodic/05a-teorija-igara.html">
+      <span class="vd-hub-num">5a</span>
+      <span class="vd-hub-name">Teorija igara i pregovaranje</span>
+      <span class="vd-hub-q">Što se promijeni kad politiku gledamo kao igru?</span>
       <span class="vd-go">Otvorite mapu →</span>
     </a>
     <a class="vd-hub-card" href="vodic/06-kolektivni-izbor.html">
