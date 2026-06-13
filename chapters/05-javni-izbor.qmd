@@ -190,6 +190,133 @@ Pomirenje paradoksa glasanja postiže se kombiniranjem instrumentalnog i ekspres
 
 Ekspresivno objašnjenje ipak nije bez osporavatelja. Dio literature paradoks razrješava bez pozivanja na izražavanje identiteta, pripisujući izlazak osjećaju građanske dužnosti i sustavnom precjenjivanju vlastite vjerojatnosti da odluče ishod, pa se glasanje vraća bliže instrumentalnoj logici nego što ekspresivni model dopušta [@blais2000]. Drugi prigovor je metodološki. Korist od izražavanja nije izravno mjerljiva, pa se njome u načelu može objasniti svako ponašanje nakon što se ono dogodi, čime model gubi sposobnost da bude opovrgnut. Upravo zato napori da se ekspresivni izbor utemelji na neovisno provjerljivim pretpostavkama nastoje toj teoriji vratiti predviđačku snagu umjesto pukog naknadnog tumačenja [@schuessler2000].
 
+## Glasanje pod neizvjesnošću i minimax žaljenje
+
+Ekspresivno objašnjenje zadržava vjerojatnost $P$ u računu i dodaje joj nematerijalnu korist. Drugi izlaz ide obrnuto. Zadržava glasanje kao instrumentalan čin, ali napušta sam račun vjerojatnosti. Ferejohn i Fiorina tvrde da birač vjerojatnost odlučujućeg glasa ne može pouzdano izračunati niti joj vjeruje, pa ne odlučuje pod rizikom, gdje su vjerojatnosti poznate, nego pod neizvjesnošću, u kojoj ih nema [@ferejohnfiorina1974]. Za takvu je situaciju Leonard Savage ponudio pravilo koje ne traži vjerojatnosti, nego gleda samo moguće ishode [@savage1951].
+
+::: {#def-minimax-zaljenje}
+**Minimax žaljenje** (*minimax regret*) je pravilo odlučivanja pod neizvjesnošću prema kojem akter za svaku radnju gleda najveće žaljenje koje bi mogao osjetiti kad se otkrije stvarno stanje, a zatim bira radnju kojoj je to najveće žaljenje najmanje. Žaljenje je razlika između najboljeg ishoda koji se u danom stanju mogao postići i ishoda koji je odabrana radnja donijela.
+:::
+
+Primijenjeno na izlazak na izbore, birač bira između dviju radnji, glasanja ili ostanka kod kuće, dok stanje svijeta može biti tijesno, u kojem jedan glas odlučuje, ili neodlučujuće, u kojem pobjednik ostaje isti bez obzira na taj glas. Glasa li, najveće žaljenje snosi kad ishod ionako nije bio tijesan, pa je uzalud potrošio trošak glasanja $C$. Ostane li kod kuće, najveće žaljenje snosi kad mu favorit izgubi za jedan jedini glas, čime propušta korist $B$ uz ušteđeni trošak. Označimo li najveće žaljenje od glasanja s $\rho_g$, a od ostanka kod kuće s $\rho_o$, vrijedi
+
+$$\rho_g = C, \qquad \rho_o = B - C.$$
+
+Minimax pravilo bira manje od tih dvaju žaljenja, pa birač glasa kad god je $\rho_o > \rho_g$, odnosno kad god je $B > 2C$. Vjerojatnost odlučujućeg glasa u taj račun uopće ne ulazi. Budući da je korist od pobjede favorita obično višestruko veća od sitnog troška izlaska, uvjet je gotovo uvijek ispunjen, pa minimax pravilo izlazak na izbore čini posve racionalnim čak i kada je izjednačenje krajnje nevjerojatno.
+
+Odluka se time svodi na usporedbu dvaju najvećih žaljenja. Graf koji slijedi prikazuje ta dva iznosa kao stupce i ističe radnju koju minimax pravilo bira, onu s manjim žaljenjem. Graf je interaktivan, pa klizači mijenjaju korist od pobjede favorita i trošak glasanja, čime se vidi gdje leži prag $B = 2C$ na kojem se odluka prevrće.
+
+::: {.content-visible when-format="html"}
+```{ojs}
+//| echo: false
+viewof regret_controls = Inputs.form({
+  B: Inputs.range([0, 60], {value: 30, step: 1, label: "Korist od pobjede favorita B:"}),
+  C: Inputs.range([0, 30], {value: 10, step: 1, label: "Trošak glasanja C:"})
+})
+```
+
+```{ojs}
+//| echo: false
+//| label: fig-minimax-zaljenje
+//| fig-cap: "Najveće žaljenje od glasanja (C) i od ostanka kod kuće (B − C). Minimax pravilo bira radnju s manjim žaljenjem, pa nalaže izlazak kad god je B veći od dvostrukog troška glasanja."
+//| fig-alt: "Stupčasti grafikon s dva stupca, Glasati i Ostati kod kuće, koji prikazuju najveće žaljenje svake radnje. Niži stupac, koji minimax pravilo bira, istaknut je zelenom bojom. Iznad grafa ispisano je koju radnju pravilo bira te napomena o pragu B jednako 2C."
+{
+  const B = regret_controls.B, C = regret_controls.C;
+  const rg = C;                    // najveće žaljenje ako glasa
+  const ro = Math.max(B - C, 0);   // najveće žaljenje ako ostane kod kuće
+  const votes = rg <= ro;          // minimax glasa kad je rg ≤ ro, tj. B ≥ 2C
+  const data = [
+    {act: "Glasati", regret: rg, pick: votes},
+    {act: "Ostati kod kuće", regret: ro, pick: !votes}
+  ];
+  const choice = votes ? "glasati" : "ostati kod kuće";
+  const accent = votes ? "#1C7C54" : "#6B1F26";
+  const ymax = Math.max(10, B);
+
+  return Plot.plot({
+    width: 520,
+    height: 400,
+    marginLeft: 55,
+    marginTop: 58,
+    marginBottom: 45,
+    style: {fontSize: "13px", fontFamily: "Public Sans, system-ui, sans-serif", color: "#3A332D"},
+    x: {label: "Radnja", domain: ["Glasati", "Ostati kod kuće"]},
+    y: {label: "↑ Najveće žaljenje", domain: [0, ymax * 1.15], grid: true},
+    marks: [
+      Plot.ruleY([0], {stroke: "#C9C3B8"}),
+      Plot.barY(data, {x: "act", y: "regret", fill: d => d.pick ? "#4A6B5C" : "#C9BBA3"}),
+      Plot.text(data, {x: "act", y: "regret", text: d => d.regret, dy: -8,
+        fontSize: 14, fontWeight: 700, fill: "#1C1916"}),
+      Plot.text([`Minimax bira: ${choice}  (prag B = 2C)`],
+        {frameAnchor: "top", dy: -28, fontSize: 13, fontWeight: 700, fill: accent})
+    ]
+  });
+}
+```
+
+**Što isprobati.** (1) Zadržite veliku korist i malen trošak i potvrdite da je žaljenje zbog ostanka kod kuće daleko veće, pa minimax pravilo bira izlazak. (2) Postupno povećavajte trošak glasanja prema polovici koristi i pratite kako se dva stupca izjednačuju upravo na pragu B = 2C. (3) Podignite trošak iznad te granice i vidjet ćete kako minimax pravilo prvi put preporučuje ostanak kod kuće, čime se pokazuje da ono ne nalaže izlazak uvijek, nego samo dok je ulog dovoljno velik u odnosu na trošak.
+:::
+
+::: {.content-visible when-format="pdf"}
+```{r}
+#| label: fig-minimax-zaljenje-print
+#| echo: false
+#| fig-cap: "Najveće žaljenje od glasanja (C) i od ostanka kod kuće (B − C). Minimax pravilo bira radnju s manjim žaljenjem, pa nalaže izlazak kad god je B veći od dvostrukog troška glasanja."
+#| fig-alt: "Stupčasti grafikon s dva stupca, Glasati i Ostati kod kuće, koji prikazuju najveće žaljenje svake radnje. Niži stupac, koji minimax pravilo bira, istaknut je zelenom bojom. Iznad grafa ispisano je koju radnju pravilo bira te napomena o pragu B jednako 2C."
+#| fig-width: 5.2
+#| fig-height: 4.0
+# Statički PDF blizanac interaktivnog OJS grafa (zadane vrijednosti klizača: B = 30, C = 10).
+source("R/setup.R")
+
+B <- 30
+C <- 10
+rg <- C                  # najveće žaljenje ako glasa
+ro <- max(B - C, 0)      # najveće žaljenje ako ostane kod kuće
+votes  <- rg <= ro       # minimax glasa kad je rg ≤ ro (B ≥ 2C)
+choice <- if (votes) "glasati" else "ostati kod kuće"
+accent <- if (votes) "#1C7C54" else "#6B1F26"
+
+df <- data.frame(
+  act    = factor(c("Glasati", "Ostati kod kuće"), levels = c("Glasati", "Ostati kod kuće")),
+  regret = c(rg, ro),
+  pick   = c(votes, !votes)
+)
+ymax <- max(10, B)
+
+ggplot(df, aes(act, regret, fill = pick)) +
+  geom_col(width = 0.6) +
+  geom_text(aes(label = regret), vjust = -0.5, fontface = "bold",
+            size = 4.2, color = "#1C1916") +
+  scale_fill_manual(values = c(`TRUE` = "#4A6B5C", `FALSE` = "#C9BBA3"), guide = "none") +
+  annotate("text", x = 0.55, y = ymax * 1.10,
+           label = sprintf("Minimax bira: %s  (prag B = 2C)", choice),
+           hjust = 0, fontface = "bold", size = 3.6, color = accent) +
+  scale_y_continuous(limits = c(0, ymax * 1.18), expand = c(0, 0)) +
+  labs(x = "Radnja", y = "Najveće žaljenje") +
+  theme_pubfin()
+```
+:::
+
+Model nije ostao bez prigovora. Beck je istaknuo da je pretpostavka o potpunoj neizvjesnosti jednako nerealna kao i pretpostavka o savršenom poznavanju vjerojatnosti, jer birači ipak grubo naslućuju koliko je koja utrka tijesna [@beck1975]. Tko zna da se ishod odlučuje u milijunima glasova, znade i da je izjednačenje praktički nemoguće, pa minimax žaljenje, koje se priprema za najgori zamislivi slučaj, u stabilnoj demokraciji ispada pretjerano oprezna strategija.
+
+::: {.callout-empirija}
+Ondje gdje je ulog izbora doista velik, minimax žaljenje opisuje birače bolje od računa očekivane koristi. Kimenyi i Gutiérrez-Romero analizirali su kenijske izbore iz 2007. i pokazali da se golema izlaznost i izrazito etničko glasanje slažu upravo s tom logikom [@kimenyi2008]. Birači su izlazili ne zato što su vjerovali u utjecaj svog glasa, nego da izbjegnu najgori ishod u kojem pobjeđuje kandidat suparničke skupine, sa stvarnim posljedicama za raspodjelu resursa i sigurnost zajednice. U polariziranim i kriznim okruženjima, gdje je korist od željenog ishoda silno velika, glasanje djeluje kao obrambena strategija protiv najgoreg scenarija, što potvrđuje da minimax model ima snagu ondje gdje očekivana korist zakazuje.
+:::
+
+Dva modela glasanja ne moraju se isključivati, nego opisuju različite biračke situacije. Tablica koja slijedi sažima u čemu se razilaze.
+
+| Dimenzija | Model očekivane korisnosti | Model minimax žaljenja |
+|---|---|---|
+| Temeljni kriterij | maksimizacija očekivane koristi | minimizacija najvećeg žaljenja |
+| Pretpostavka o informacijama | odlučivanje pod rizikom, vjerojatnosti su poznate | odlučivanje pod neizvjesnošću, vjerojatnosti su nepoznate |
+| Uloga vjerojatnosti glasa | središnja, malen $P$ obeshrabruje izlazak | nikakva, odluka ovisi samo o $B$ i $C$ |
+| Tumačenje neizlaska | racionalan u velikim biračkim tijelima | nosi prevelik rizik žaljenja |
+| Gdje najbolje objašnjava | pad izlaznosti u mirnim, stabilnim uvjetima | mobilizaciju u polariziranim i kriznim izborima |
+
+: Dva modela odluke o izlasku na izbore. Izrada autora prema @downs1957, @ferejohnfiorina1974 i @kimenyi2008. {#tbl-glasanje-modeli}
+
+Iz te usporedbe slijedi da se izlazak na izbore ne objašnjava jednim univerzalnim obrascem racionalnosti. Koji model bolje opisuje birača ovisi o tome koliko je izbor tijesan i koliko je ulog velik, pa instrumentalni račun, ekspresivni motiv i minimax oprez zajedno daju bogatiju sliku od svakog pojedinačnog objašnjenja.
+
 ## Političari i birokrati u tržištu politika
 
 Političari su u ovom okviru maksimizatori glasova, akteri koji na „tržištu politika" nude programe i obećanja u zamjenu za podršku [@downs1957]. Njihov cilj nije maksimizacija društvenog blagostanja, nego izborni uspjeh, održavanje vlasti i pristup resursima države. Takav sklop poticaja stvara sklonost kratkoročnim i populističkim mjerama koje dižu popularnost, a dugoročno mogu opteretiti gospodarstvo i javne financije [@nordhaus1975].
