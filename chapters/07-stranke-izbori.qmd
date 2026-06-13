@@ -113,18 +113,18 @@ shareB <- 1 - shareA
 winner <- if (abs(shareA - shareB) < 0.005) "neriješeno" else if (shareA > shareB) "A" else "B"
 
 ggplot(df, aes(x, d)) +
-  geom_area(data = subset(df, side == "A"), fill = "#4A6B5C", alpha = 0.35) +
-  geom_area(data = subset(df, side == "B"), fill = "#6B1F26", alpha = 0.35) +
-  geom_line(color = "#1C1916", linewidth = 0.7) +
-  geom_vline(xintercept = 0.5, linetype = "dashed", color = "#6B6357", linewidth = 0.4) +
-  geom_vline(xintercept = pA, color = "#4A6B5C", linewidth = 1.0) +
-  geom_vline(xintercept = pB, color = "#6B1F26", linewidth = 1.0) +
-  annotate("text", x = pA, y = 1.05, label = "A", color = "#4A6B5C", fontface = "bold", size = 4.5) +
-  annotate("text", x = pB, y = 1.05, label = "B", color = "#6B1F26", fontface = "bold", size = 4.5) +
-  annotate("text", x = 0.5, y = 1.05, label = "medijan", color = "#6B6357", size = 3) +
+  geom_area(data = subset(df, side == "A"), fill = "#7A7A7A", alpha = 0.35) +
+  geom_area(data = subset(df, side == "B"), fill = "#4D4D4D", alpha = 0.35) +
+  geom_line(color = "#000000", linewidth = 0.7) +
+  geom_vline(xintercept = 0.5, linetype = "dashed", color = "#8C8C8C", linewidth = 0.4) +
+  geom_vline(xintercept = pA, color = "#7A7A7A", linewidth = 1.0) +
+  geom_vline(xintercept = pB, color = "#4D4D4D", linewidth = 1.0) +
+  annotate("text", x = pA, y = 1.05, label = "A", color = "#7A7A7A", fontface = "bold", size = 4.5) +
+  annotate("text", x = pB, y = 1.05, label = "B", color = "#4D4D4D", fontface = "bold", size = 4.5) +
+  annotate("text", x = 0.5, y = 1.05, label = "medijan", color = "#8C8C8C", size = 3) +
   annotate("text", x = 0.5, y = 1.15,
            label = sprintf("Stranka A %.0f %%   Stranka B %.0f %%   pobjednik: %s", shareA*100, shareB*100, winner),
-           fontface = "bold", size = 4, color = "#1C1916") +
+           fontface = "bold", size = 4, color = "#000000") +
   scale_y_continuous(limits = c(0, 1.2), expand = c(0, 0)) +
   scale_x_continuous(limits = c(0, 1), expand = c(0, 0)) +
   labs(x = "Ljevica  <-  ideoloska os  ->  Desnica", y = "Gustoća birača") +
@@ -223,14 +223,14 @@ sMax  <- sup(pStar)
 ymax  <- max(6, sMax * 1.25)
 
 ggplot(df, aes(p, s)) +
-  geom_hline(yintercept = 0, color = "#C9C3B8") +
-  geom_line(linewidth = 1.1, color = "#2D5A8E") +
+  geom_hline(yintercept = 0, color = "#CCCCCC") +
+  geom_line(linewidth = 1.1, color = "#1A1A1A") +
   geom_segment(aes(x = pStar, xend = pStar, y = 0, yend = sMax),
-               linetype = "dashed", linewidth = 0.4, color = "#6B6357") +
+               linetype = "dashed", linewidth = 0.4, color = "#8C8C8C") +
   geom_point(aes(x = pStar, y = sMax), size = 3, shape = 21,
-             fill = "#6B1F26", color = "white", stroke = 1) +
+             fill = "#4D4D4D", color = "white", stroke = 1) +
   annotate("text", x = pStar, y = sMax, label = sprintf("vrh pri %.1f obećanja", pStar),
-           vjust = -1, fontface = "bold", size = 3.8, color = "#2D5A8E") +
+           vjust = -1, fontface = "bold", size = 3.8, color = "#1A1A1A") +
   scale_y_continuous(limits = c(0, ymax), expand = c(0, 0)) +
   scale_x_continuous(limits = c(0, 10), expand = c(0, 0)) +
   labs(x = "Broj obećanja / opseg potrošnje", y = "Politička podrška") +

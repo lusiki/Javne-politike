@@ -9,6 +9,13 @@
 
 library(ggplot2)
 
+# PDF charts are rendered black-and-white in a monospace family. Every R chunk
+# in the book is a *-print twin shown only in the PDF (the colour versions are
+# the OJS/HTML charts), so this never affects the on-screen colour charts. All
+# text/label geoms default to the generic "mono" family (device-safe everywhere).
+update_geom_defaults("text",  list(family = "mono"))
+update_geom_defaults("label", list(family = "mono"))
+
 # STATECRAFT tokens (source of truth: _brand.yml)
 statecraft <- c(
   paper      = "#F2EDE3",  # warm cream background (never pure white)
@@ -43,30 +50,33 @@ pubfin_colors <- c(
 # the Windows graphics device or clashes with the PDF's Latin Modern type, so
 # the twins use the device's default sans family ("") — safe everywhere and
 # typographically consistent with the rendered PDF.
-.pubfin_font <- ""
+.pubfin_font <- "mono"
 
+# Black-and-white frame for the PDF chart twins: white background, near-black
+# text, light-gray gridlines, monospace family. The geom colours themselves are
+# grayscale hex set in each chart body.
 theme_pubfin <- function(base_size = 12) {
   theme_minimal(base_size = base_size) +
     theme(
-      text = element_text(family = .pubfin_font, color = unname(statecraft["ink_soft"])),
-      plot.background  = element_rect(fill = unname(statecraft["paper"]), color = NA),
-      panel.background = element_rect(fill = unname(statecraft["paper"]), color = NA),
+      text = element_text(family = .pubfin_font, color = "#1A1A1A"),
+      plot.background  = element_rect(fill = "white", color = NA),
+      panel.background = element_rect(fill = "white", color = NA),
       plot.title = element_text(
-        face = "bold", size = rel(1.2), hjust = 0, color = unname(statecraft["ink"])
+        face = "bold", size = rel(1.2), hjust = 0, color = "#000000"
       ),
       plot.subtitle = element_text(
-        color = unname(statecraft["ink_mute"]), size = rel(0.9), margin = margin(b = 10)
+        color = "#595959", size = rel(0.9), margin = margin(b = 10)
       ),
       plot.caption = element_text(
-        color = unname(statecraft["ink_mute"]), size = rel(0.75), hjust = 1
+        color = "#595959", size = rel(0.75), hjust = 1
       ),
       panel.grid.minor = element_blank(),
       panel.grid.major.x = element_blank(),
       panel.grid.major.y = element_line(
-        color = unname(statecraft["paper_soft"]), linewidth = 0.4
+        color = "#E0E0E0", linewidth = 0.4
       ),
-      axis.title = element_text(size = rel(0.85), color = unname(statecraft["ink_soft"])),
-      axis.text  = element_text(color = unname(statecraft["ink_mute"])),
+      axis.title = element_text(size = rel(0.85), color = "#1A1A1A"),
+      axis.text  = element_text(color = "#595959"),
       legend.position = "top",
       legend.title = element_text(face = "bold", size = rel(0.85)),
       plot.margin = margin(10, 10, 10, 10)

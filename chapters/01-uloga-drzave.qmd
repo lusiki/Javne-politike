@@ -358,11 +358,11 @@ legXa <- W - 3.1; legXb <- W - 2.55
 legY1 <- 0.85;    legY2 <- 0.45
 
 # Boje preuzete doslovno iz OJS Plot oznaka
-col_box   <- "#3A332D"  # obris kutije, oznake osi, tekst legende
-col_cc    <- "#1C7C54"  # krivulja ugovora (zelena)
-col_a     <- "#2D5A8E"  # krivulje indiferencije A (plava)
-col_b     <- "#C53030"  # krivulje indiferencije B (crvena)
-col_dot   <- "#1C1916"  # tangentne točke i oznake A/B/C
+col_box   <- "#1A1A1A"  # obris kutije, oznake osi, tekst legende
+col_cc    <- "#5C5C5C"  # krivulja ugovora (zelena)
+col_a     <- "#1A1A1A"  # krivulje indiferencije A (plava)
+col_b     <- "#262626"  # krivulje indiferencije B (crvena)
+col_dot   <- "#000000"  # tangentne točke i oznake A/B/C
 
 ggplot() +
   # Obris kutije

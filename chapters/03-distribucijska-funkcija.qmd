@@ -232,14 +232,14 @@ gini <- 1 - 2 * area
 
 ggplot(lorenz, aes(p, L)) +
   geom_abline(slope = 1, intercept = 0,
-              linetype = "dashed", linewidth = 0.5, color = "#6B6357") +
-  geom_line(linewidth = 1.1, color = "#2D5A8E") +
+              linetype = "dashed", linewidth = 0.5, color = "#8C8C8C") +
+  geom_line(linewidth = 1.1, color = "#1A1A1A") +
   annotate("text", x = 0.04, y = 0.93,
            label = sprintf("Ginijev koeficijent = %.2f", gini),
-           hjust = 0, fontface = "bold", size = 4.4, color = "#1C1916") +
+           hjust = 0, fontface = "bold", size = 4.4, color = "#000000") +
   annotate("text", x = 0.80, y = 0.88, label = "linija jednakosti",
            hjust = 0, angle = -33, fontface = "italic",
-           size = 3.4, color = "#6B6357") +
+           size = 3.4, color = "#8C8C8C") +
   scale_x_continuous(labels = scales::percent, limits = c(0, 1),
                      expand = c(0, 0)) +
   scale_y_continuous(labels = scales::percent, limits = c(0, 1),

@@ -169,29 +169,29 @@ mbLine <- mbLine[mbLine$y >= 0, ]
 ggplot() +
   # crveno područje prekomjerne potrošnje (DWL) između Q* i Qₙ
   annotate("rect", xmin = Qstar, xmax = Qnisk, ymin = 0, ymax = a * 1.05,
-           fill = "#C53030", alpha = 0.07) +
+           fill = "#262626", alpha = 0.07) +
   # krivulja granične koristi (MB)
-  geom_line(data = mbLine, aes(Q, y), color = "#2D5A8E", linewidth = 1.0) +
+  geom_line(data = mbLine, aes(Q, y), color = "#1A1A1A", linewidth = 1.0) +
   # granični trošak (MC), vodoravna linija na y = c
-  geom_hline(yintercept = c, color = "#1C7C54", linewidth = 0.8) +
+  geom_hline(yintercept = c, color = "#5C5C5C", linewidth = 0.8) +
   # okomite isprekidane linije na Q* (do c) i Qₙ (do MB(Qₙ) ili 0)
   annotate("segment", x = Qstar, xend = Qstar, y = 0, yend = c,
-           color = "#6B6357", linetype = "dashed") +
+           color = "#8C8C8C", linetype = "dashed") +
   annotate("segment", x = Qnisk, xend = Qnisk, y = 0, yend = max(MB(Qnisk), 0),
-           color = "#6B6357", linetype = "dashed") +
+           color = "#8C8C8C", linetype = "dashed") +
   # točka ravnoteže u (Q*, c)
   annotate("point", x = Qstar, y = c, size = 3,
-           color = "#1C1916", fill = "#1C1916", shape = 21, stroke = 1) +
+           color = "#000000", fill = "#000000", shape = 21, stroke = 1) +
   # oznake
   annotate("text", x = Qstar, y = c, label = "Q* (učinkovito)",
-           color = "#1C1916", fontface = "bold", size = 4,
+           color = "#000000", fontface = "bold", size = 4,
            hjust = 1, vjust = -1.1) +
   annotate("text", x = Qnisk, y = 0.55, label = "Qₙ (maksimizacija proračuna)",
-           color = "#C53030", fontface = "bold", size = 4, hjust = 1.02) +
+           color = "#262626", fontface = "bold", size = 4, hjust = 1.02) +
   annotate("text", x = Qmax * 0.74, y = MB(Qmax * 0.74) + 0.45,
-           label = "granična korist", color = "#2D5A8E", size = 3.6, hjust = 0) +
+           label = "granična korist", color = "#1A1A1A", size = 3.6, hjust = 0) +
   annotate("text", x = Qmax * 0.8, y = c + 0.45,
-           label = "granični trošak", color = "#1C7C54", size = 3.6, hjust = 0) +
+           label = "granični trošak", color = "#5C5C5C", size = 3.6, hjust = 0) +
   scale_x_continuous(expand = c(0, 0)) +
   scale_y_continuous(expand = c(0, 0)) +
   # coord_cartesian (umjesto scale limits) ne odbacuje oznake izvan domene,

@@ -182,26 +182,26 @@ cur <- data.frame(r = r_cur, npv = npv(r_cur))
 
 p <- ggplot(curve, aes(r, npv)) +
   geom_hline(yintercept = 0, linetype = "dashed",
-             linewidth = 0.5, color = "#6B6357") +
-  geom_line(linewidth = 1.1, color = "#2D5A8E")
+             linewidth = 0.5, color = "#8C8C8C") +
+  geom_line(linewidth = 1.1, color = "#1A1A1A")
 
 if (!is.na(irr)) {
   p <- p +
     geom_vline(xintercept = irr, linetype = "dashed",
-               linewidth = 0.5, color = "#C53030") +
+               linewidth = 0.5, color = "#262626") +
     annotate("text", x = irr + 0.0015, y = 1.2,
              label = sprintf("IRR ≈ %.1f %%", irr * 100),
              hjust = 0, vjust = 0,
-             fontface = "bold", size = 4, color = "#C53030")
+             fontface = "bold", size = 4, color = "#262626")
 }
 
 p +
-  geom_point(data = cur, size = 3.4, color = "#1C1916",
-             fill = "#1C1916", shape = 21, stroke = 1) +
+  geom_point(data = cur, size = 3.4, color = "#000000",
+             fill = "#000000", shape = 21, stroke = 1) +
   annotate("text", x = cur$r,
            y = cur$npv + ifelse(cur$npv >= 0, 4, -4.5),
            label = sprintf("NPV = %.1f mil. €", cur$npv),
-           hjust = 0.5, fontface = "bold", size = 4.2, color = "#1C1916") +
+           hjust = 0.5, fontface = "bold", size = 4.2, color = "#000000") +
   scale_x_continuous(labels = function(d) paste0(round(d * 100), " %"),
                      limits = c(0, 0.12), expand = c(0, 0)) +
   scale_y_continuous() +

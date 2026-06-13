@@ -151,21 +151,21 @@ supply <- subset(data.frame(q = qs, p = S(qs)), p <= 100)
 tri <- data.frame(q = c(Qreg, Qreg, Qstar), p = c(Pc, Pp, Pstar))
 
 ggplot() +
-  geom_polygon(data = tri, aes(q, p), fill = "#D8B5B3", alpha = 0.65, color = "#6B1F26", linewidth = 0.4) +
-  geom_line(data = demand, aes(q, p), color = "#2D5A8E", linewidth = 1.1) +
-  geom_line(data = supply, aes(q, p), color = "#4A6B5C", linewidth = 1.1) +
-  geom_segment(aes(x = 0, xend = Qreg, y = Pc, yend = Pc), linetype = "dashed", color = "#6B6357", linewidth = 0.4) +
-  geom_segment(aes(x = 0, xend = Qreg, y = Pp, yend = Pp), linetype = "dashed", color = "#6B6357", linewidth = 0.4) +
-  geom_segment(aes(x = Qreg,  xend = Qreg,  y = 0, yend = Pc),    linetype = "dashed", color = "#6B6357", linewidth = 0.4) +
-  geom_segment(aes(x = Qstar, xend = Qstar, y = 0, yend = Pstar), linetype = "dashed", color = "#6B6357", linewidth = 0.4) +
-  annotate("text", x = 74, y = D(74) + 4, label = "potražnja", color = "#2D5A8E", fontface = "bold", size = 3.2) +
-  annotate("text", x = 74, y = S(74) + 4, label = "ponuda", color = "#4A6B5C", fontface = "bold", size = 3.2) +
-  annotate("text", x = 1, y = Pc + 4, label = sprintf("cijena kupca %.0f", Pc), hjust = 0, color = "#6B1F26", size = 3) +
-  annotate("text", x = 1, y = Pp - 4, label = sprintf("cijena proizvođača %.0f", Pp), hjust = 0, color = "#4A6B5C", size = 3) +
-  annotate("text", x = Qreg, y = 2, label = "Q_reg", color = "#6B6357", size = 3.2) +
-  annotate("text", x = Qstar, y = 2, label = "Q*", color = "#6B6357", size = 3.2) +
+  geom_polygon(data = tri, aes(q, p), fill = "#D8D8D8", alpha = 0.65, color = "#4D4D4D", linewidth = 0.4) +
+  geom_line(data = demand, aes(q, p), color = "#1A1A1A", linewidth = 1.1) +
+  geom_line(data = supply, aes(q, p), color = "#7A7A7A", linewidth = 1.1) +
+  geom_segment(aes(x = 0, xend = Qreg, y = Pc, yend = Pc), linetype = "dashed", color = "#8C8C8C", linewidth = 0.4) +
+  geom_segment(aes(x = 0, xend = Qreg, y = Pp, yend = Pp), linetype = "dashed", color = "#8C8C8C", linewidth = 0.4) +
+  geom_segment(aes(x = Qreg,  xend = Qreg,  y = 0, yend = Pc),    linetype = "dashed", color = "#8C8C8C", linewidth = 0.4) +
+  geom_segment(aes(x = Qstar, xend = Qstar, y = 0, yend = Pstar), linetype = "dashed", color = "#8C8C8C", linewidth = 0.4) +
+  annotate("text", x = 74, y = D(74) + 4, label = "potražnja", color = "#1A1A1A", fontface = "bold", size = 3.2) +
+  annotate("text", x = 74, y = S(74) + 4, label = "ponuda", color = "#7A7A7A", fontface = "bold", size = 3.2) +
+  annotate("text", x = 1, y = Pc + 4, label = sprintf("cijena kupca %.0f", Pc), hjust = 0, color = "#4D4D4D", size = 3) +
+  annotate("text", x = 1, y = Pp - 4, label = sprintf("cijena proizvođača %.0f", Pp), hjust = 0, color = "#7A7A7A", size = 3) +
+  annotate("text", x = Qreg, y = 2, label = "Q_reg", color = "#8C8C8C", size = 3.2) +
+  annotate("text", x = Qstar, y = 2, label = "Q*", color = "#8C8C8C", size = 3.2) +
   annotate("text", x = 2, y = 97, label = sprintf("Klin t = %d   Mrtvi teret = %.0f", t, dwl),
-           hjust = 0, fontface = "bold", size = 4, color = "#1C1916") +
+           hjust = 0, fontface = "bold", size = 4, color = "#000000") +
   scale_x_continuous(limits = c(0, 80), expand = c(0, 0)) +
   scale_y_continuous(limits = c(0, 100), expand = c(0, 0)) +
   labs(x = "Količina Q", y = "Cijena") +

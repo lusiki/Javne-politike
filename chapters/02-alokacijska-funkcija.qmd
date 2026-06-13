@@ -245,7 +245,7 @@ Qmax  <- 100
 Pmax  <- 200
 
 # Paleta za individualne krivulje (svijetlo -> tamno navy/teal), idx %% 6
-palette <- c("#A9C3DA", "#7FA3C6", "#5683B0", "#3D6B99", "#2D5A8E", "#1E3F63")
+palette <- c("#AAAAAA", "#888888", "#555555", "#555555", "#1A1A1A", "#262626")
 
 # Sjecišta individualnih potražnji: a_1 > a_2 > ... > a_n
 a_i <- a_top - (0:(n - 1)) * delta            # = c(45, 39, 33, 27)
@@ -290,47 +290,47 @@ msb_label_y <- msb$P[which(msb$Q >= Qmax * 0.65)[1]]
 
 ggplot() +
   # Baseline
-  geom_hline(yintercept = 0, color = "#C9C3B8", linewidth = 0.4) +
+  geom_hline(yintercept = 0, color = "#CCCCCC", linewidth = 0.4) +
   # Individualne krivulje potražnje
   geom_line(data = indiv, aes(Q, P, group = id, color = id), linewidth = 0.6) +
   scale_color_manual(values = palette[((seq_along(a_i) - 1) %% length(palette)) + 1],
                      guide = "none") +
   # Agregatna MSB krivulja (debela, tamna)
-  geom_line(data = msb, aes(Q, P), color = "#1C1916", linewidth = 1.2) +
+  geom_line(data = msb, aes(Q, P), color = "#000000", linewidth = 1.2) +
   # MC linija (vodoravna)
-  geom_line(data = mcLine, aes(Q, P), color = "#6B1F26", linewidth = 1.0) +
+  geom_line(data = mcLine, aes(Q, P), color = "#4D4D4D", linewidth = 1.0) +
   # Isprekidane vodilice
-  geom_hline(yintercept = P_star, color = "#6B6357", linetype = "dashed", linewidth = 0.4) +
+  geom_hline(yintercept = P_star, color = "#8C8C8C", linetype = "dashed", linewidth = 0.4) +
   annotate("segment", x = Qm,    xend = Qm,    y = 0, yend = P_star,
-           color = "#6B6357", linetype = "dashed", linewidth = 0.4) +
+           color = "#8C8C8C", linetype = "dashed", linewidth = 0.4) +
   annotate("segment", x = Qstar, xend = Qstar, y = 0, yend = P_star,
-           color = "#6B6357", linetype = "dashed", linewidth = 0.4) +
+           color = "#8C8C8C", linetype = "dashed", linewidth = 0.4) +
   # Točke ravnoteže (bijeli obrub)
   annotate("point", x = Qm,    y = P_star, size = 3.2, color = "white",
-           fill = "#6B1F26", shape = 21, stroke = 1) +
+           fill = "#4D4D4D", shape = 21, stroke = 1) +
   annotate("point", x = Qstar, y = P_star, size = 3.2, color = "white",
-           fill = "#1C1916", shape = 21, stroke = 1) +
+           fill = "#000000", shape = 21, stroke = 1) +
   # Oznake individualnih krivulja
   geom_text(data = indivLabels, aes(x, y, label = label),
             color = indivLabels$col, vjust = 1.4, fontface = "bold", size = 3.4) +
   # MSB oznaka
   annotate("text", x = Qmax * 0.65, y = msb_label_y, label = "ΣD_i = MSB",
-           vjust = -0.8, hjust = 0.5, fontface = "bold", size = 4.2, color = "#1C1916") +
+           vjust = -0.8, hjust = 0.5, fontface = "bold", size = 4.2, color = "#000000") +
   # MC oznaka
   annotate("text", x = Qmax * 0.05, y = MC, label = sprintf("MC = %d", MC),
-           hjust = 0, vjust = -0.8, fontface = "bold", size = 3.8, color = "#6B1F26") +
+           hjust = 0, vjust = -0.8, fontface = "bold", size = 3.8, color = "#4D4D4D") +
   # Oznaka cijene
   annotate("text", x = 1, y = P_star, label = sprintf("P* = %.0f", P_star),
-           hjust = 0, vjust = 1.6, size = 3.4, color = "#3A332D") +
+           hjust = 0, vjust = 1.6, size = 3.4, color = "#1A1A1A") +
   # Oznake količina
   annotate("text", x = Qm,    y = 3, label = sprintf("Q_M = %.1f", Qm),
-           hjust = 0.5, size = 3.4, color = "#6B1F26") +
+           hjust = 0.5, size = 3.4, color = "#4D4D4D") +
   annotate("text", x = Qstar, y = 3, label = sprintf("Q* = %.1f", Qstar),
-           hjust = 0.5, size = 3.4, color = "#1C1916") +
+           hjust = 0.5, size = 3.4, color = "#000000") +
   # Glavni ispis: jaz podproizvodnje
   annotate("text", x = 2, y = Pmax * 0.97,
            label = sprintf("Premala tržišna proizvodnja: Q* − Q_M = %.1f", Qstar - Qm),
-           hjust = 0, fontface = "bold", size = 4.6, color = "#1C1916") +
+           hjust = 0, fontface = "bold", size = 4.6, color = "#000000") +
   scale_x_continuous(limits = c(0, Qmax), expand = c(0, 0)) +
   scale_y_continuous(limits = c(0, Pmax), expand = c(0, 0)) +
   labs(x = "Količina javnog dobra (Q)", y = "Cijena / Korist (P)") +
@@ -542,50 +542,50 @@ dwlTri <- data.frame(
 
 ggplot() +
   # Osnovica na y = 0
-  geom_hline(yintercept = 0, color = "#C9C3B8", linewidth = 0.5) +
+  geom_hline(yintercept = 0, color = "#CCCCCC", linewidth = 0.5) +
   # Osjenčani trokut gubitka blagostanja
   geom_polygon(data = dwlTri, aes(Q, P),
-               fill = "#D8B5B3", alpha = 0.65,
-               color = "#6B1F26", linewidth = 0.4) +
+               fill = "#D8D8D8", alpha = 0.65,
+               color = "#4D4D4D", linewidth = 0.4) +
   # Krivulje
-  geom_line(data = demand, aes(Q, P), color = "#2D5A8E", linewidth = 1.1) +
-  geom_line(data = mpc,    aes(Q, P), color = "#4A6B5C", linewidth = 0.9) +
-  geom_line(data = msc,    aes(Q, P), color = "#6B1F26", linewidth = 0.9) +
+  geom_line(data = demand, aes(Q, P), color = "#1A1A1A", linewidth = 1.1) +
+  geom_line(data = mpc,    aes(Q, P), color = "#7A7A7A", linewidth = 0.9) +
+  geom_line(data = msc,    aes(Q, P), color = "#4D4D4D", linewidth = 0.9) +
   # Isprekidane vodilje
-  geom_hline(yintercept = Pstar, color = "#6B6357", linetype = "dashed", linewidth = 0.4) +
-  geom_hline(yintercept = Pmpc,  color = "#6B6357", linetype = "dashed", linewidth = 0.4) +
+  geom_hline(yintercept = Pstar, color = "#8C8C8C", linetype = "dashed", linewidth = 0.4) +
+  geom_hline(yintercept = Pmpc,  color = "#8C8C8C", linetype = "dashed", linewidth = 0.4) +
   geom_segment(aes(x = Qstar, xend = Qstar, y = 0, yend = Pstar),
-               color = "#6B6357", linetype = "dashed", linewidth = 0.4) +
+               color = "#8C8C8C", linetype = "dashed", linewidth = 0.4) +
   geom_segment(aes(x = Qm, xend = Qm, y = 0, yend = Pmpc),
-               color = "#6B6357", linetype = "dashed", linewidth = 0.4) +
+               color = "#8C8C8C", linetype = "dashed", linewidth = 0.4) +
   # Točke ravnoteže (bijeli obrub kao u OJS-u)
-  geom_point(aes(x = Qm,    y = Pmpc),  size = 3, color = "white", fill = "#4A6B5C",
+  geom_point(aes(x = Qm,    y = Pmpc),  size = 3, color = "white", fill = "#7A7A7A",
              shape = 21, stroke = 1.1) +
-  geom_point(aes(x = Qstar, y = Pstar), size = 3, color = "white", fill = "#6B1F26",
+  geom_point(aes(x = Qstar, y = Pstar), size = 3, color = "white", fill = "#4D4D4D",
              shape = 21, stroke = 1.1) +
   # Oznake krivulja
   annotate("text", x = Qmax * 0.82, y = a_d - b_d * Qmax * 0.82 + 4,
            label = sprintf("D (|εD|=%.2f)", eps_d_ext),
-           color = "#2D5A8E", fontface = "bold", size = 3.6, hjust = 0.5) +
+           color = "#1A1A1A", fontface = "bold", size = 3.6, hjust = 0.5) +
   annotate("text", x = Qmax * 0.82, y = c_s + b_s * Qmax * 0.82 + 4,
            label = sprintf("MPC (εS=%.2f)", eps_s_ext),
-           color = "#4A6B5C", fontface = "bold", size = 3.6, hjust = 0.5) +
+           color = "#7A7A7A", fontface = "bold", size = 3.6, hjust = 0.5) +
   annotate("text", x = Qmax * 0.7, y = c_s + e + b_s * Qmax * 0.7 + 4,
            label = sprintf("MSC (e=%g)", e),
-           color = "#6B1F26", fontface = "bold", size = 3.6, hjust = 0.5) +
+           color = "#4D4D4D", fontface = "bold", size = 3.6, hjust = 0.5) +
   # Oznake cijena i količina uz osi
   annotate("text", x = 1, y = Pstar + 3, label = sprintf("P* = %.1f", Pstar),
-           color = "#6B1F26", size = 3.2, hjust = 0) +
+           color = "#4D4D4D", size = 3.2, hjust = 0) +
   annotate("text", x = 1, y = Pmpc - 4, label = sprintf("P_MPC = %.1f", Pmpc),
-           color = "#4A6B5C", size = 3.2, hjust = 0) +
+           color = "#7A7A7A", size = 3.2, hjust = 0) +
   annotate("text", x = Qstar, y = 2, label = sprintf("Q* = %.1f", Qstar),
-           color = "#6B1F26", size = 3.2, hjust = 0.5) +
+           color = "#4D4D4D", size = 3.2, hjust = 0.5) +
   annotate("text", x = Qm, y = 2, label = sprintf("Q_M = %.1f", Qm),
-           color = "#4A6B5C", size = 3.2, hjust = 0.5) +
+           color = "#7A7A7A", size = 3.2, hjust = 0.5) +
   # Ispis gubitka blagostanja
   annotate("text", x = 2, y = Pmax * 0.97,
            label = sprintf("Gubitak blagostanja (DWL) = %.1f", dwl),
-           color = "#6B1F26", fontface = "bold", size = 4.4, hjust = 0) +
+           color = "#4D4D4D", fontface = "bold", size = 4.4, hjust = 0) +
   scale_x_continuous(limits = c(0, Qmax), expand = c(0, 0)) +
   scale_y_continuous(limits = c(0, Pmax), expand = c(0, 0)) +
   labs(x = "Količina (Q)", y = "Cijena / Trošak (P)")
@@ -791,48 +791,48 @@ dwlTri <- data.frame(
 dwl <- 0.5 * abs(MSB_Qm - Pm) * abs(Qstar - Qm)   # = 100.0
 
 ggplot() +
-  geom_hline(yintercept = 0, color = "#C9C3B8") +
+  geom_hline(yintercept = 0, color = "#CCCCCC") +
   # trokut propuštene koristi (osjenčano)
   geom_polygon(data = dwlTri, aes(Q, P),
-               fill = "#E8D6B8", alpha = 0.65,
-               color = "#C8985E", linewidth = 0.4) +
+               fill = "#EAEAEA", alpha = 0.65,
+               color = "#B0B0B0", linewidth = 0.4) +
   # krivulje
-  geom_line(data = mpb,    aes(Q, P), color = "#2D5A8E", linewidth = 1.0) +
-  geom_line(data = msb,    aes(Q, P), color = "#2B6CB0", linewidth = 0.8) +
-  geom_line(data = supply, aes(Q, P), color = "#4A6B5C", linewidth = 0.8) +
+  geom_line(data = mpb,    aes(Q, P), color = "#1A1A1A", linewidth = 1.0) +
+  geom_line(data = msb,    aes(Q, P), color = "#333333", linewidth = 0.8) +
+  geom_line(data = supply, aes(Q, P), color = "#7A7A7A", linewidth = 0.8) +
   # isprekidane vodilje
-  geom_hline(yintercept = Pstar, linetype = "dashed", linewidth = 0.4, color = "#6B6357") +
-  geom_hline(yintercept = Pm,    linetype = "dashed", linewidth = 0.4, color = "#6B6357") +
+  geom_hline(yintercept = Pstar, linetype = "dashed", linewidth = 0.4, color = "#8C8C8C") +
+  geom_hline(yintercept = Pm,    linetype = "dashed", linewidth = 0.4, color = "#8C8C8C") +
   geom_segment(aes(x = Qstar, xend = Qstar, y = 0, yend = Pstar),
-               linetype = "dashed", linewidth = 0.4, color = "#6B6357") +
+               linetype = "dashed", linewidth = 0.4, color = "#8C8C8C") +
   geom_segment(aes(x = Qm, xend = Qm, y = 0, yend = MSB_Qm),
-               linetype = "dashed", linewidth = 0.4, color = "#6B6357") +
+               linetype = "dashed", linewidth = 0.4, color = "#8C8C8C") +
   # ravnotežne točke
-  geom_point(aes(x = Qm,    y = Pm),    size = 2.6, shape = 21, fill = "#2D5A8E", color = "white", stroke = 1) +
-  geom_point(aes(x = Qstar, y = Pstar), size = 2.6, shape = 21, fill = "#2B6CB0", color = "white", stroke = 1) +
+  geom_point(aes(x = Qm,    y = Pm),    size = 2.6, shape = 21, fill = "#1A1A1A", color = "white", stroke = 1) +
+  geom_point(aes(x = Qstar, y = Pstar), size = 2.6, shape = 21, fill = "#333333", color = "white", stroke = 1) +
   # oznake krivulja
   annotate("text", x = Qmax * 0.82, y = a_d - b_d * Qmax * 0.82,
            label = sprintf("D = MPB (|εD|=%.2f)", eps_d_pos),
-           color = "#2D5A8E", fontface = "bold", size = 3.5, vjust = -0.6) +
+           color = "#1A1A1A", fontface = "bold", size = 3.5, vjust = -0.6) +
   annotate("text", x = Qmax * 0.7, y = a_d + b - b_d * Qmax * 0.7,
            label = sprintf("MSB (b=%d)", as.integer(b)),
-           color = "#2B6CB0", fontface = "bold", size = 3.5, vjust = -0.6) +
+           color = "#333333", fontface = "bold", size = 3.5, vjust = -0.6) +
   annotate("text", x = Qmax * 0.82, y = c_s + b_s * Qmax * 0.82,
            label = sprintf("S (εS=%.2f)", eps_s_pos),
-           color = "#4A6B5C", fontface = "bold", size = 3.5, vjust = -0.6) +
+           color = "#7A7A7A", fontface = "bold", size = 3.5, vjust = -0.6) +
   # oznake cijena i količina na osima
   annotate("text", x = 1, y = Pstar, label = sprintf("P* = %.1f", Pstar),
-           color = "#2B6CB0", size = 3.2, hjust = 0, vjust = -0.6) +
+           color = "#333333", size = 3.2, hjust = 0, vjust = -0.6) +
   annotate("text", x = 1, y = Pm, label = sprintf("P_M = %.1f", Pm),
-           color = "#2D5A8E", size = 3.2, hjust = 0, vjust = 1.4) +
+           color = "#1A1A1A", size = 3.2, hjust = 0, vjust = 1.4) +
   annotate("text", x = Qm, y = 2, label = sprintf("Q_M = %.1f", Qm),
-           color = "#2D5A8E", size = 3.2, hjust = 0.5) +
+           color = "#1A1A1A", size = 3.2, hjust = 0.5) +
   annotate("text", x = Qstar, y = 2, label = sprintf("Q* = %.1f", Qstar),
-           color = "#2B6CB0", size = 3.2, hjust = 0.5) +
+           color = "#333333", size = 3.2, hjust = 0.5) +
   # ispis propuštene koristi (DWL)
   annotate("text", x = 2, y = Pmax * 0.97,
            label = sprintf("Propuštena korist (DWL) = %.1f", dwl),
-           color = "#9A6F38", fontface = "bold", size = 4.2, hjust = 0) +
+           color = "#6E6E6E", fontface = "bold", size = 4.2, hjust = 0) +
   scale_x_continuous(limits = c(0, Qmax), expand = c(0, 0)) +
   scale_y_continuous(limits = c(0, Pmax), expand = c(0, 0)) +
   labs(x = "Količina (Q)", y = "Cijena / Korist (P)") +
@@ -1128,52 +1128,52 @@ readout1 <- if (collapse) "Trziste se urusava (Q1 <= 0)" else sprintf("Pad kolic
 
 ggplot() +
   # Bazna os (ruleY na 0)
-  geom_hline(yintercept = 0, color = "#C9C3B8") +
+  geom_hline(yintercept = 0, color = "#CCCCCC") +
   # Krivulje
-  geom_line(data = demand, aes(Q, P), color = "#2D5A8E", linewidth = 1.0) +
-  geom_line(data = sLow,   aes(Q, P), color = "#4A6B5C", linewidth = 0.8) +
-  geom_line(data = sHigh,  aes(Q, P), color = "#4A6B5C", linewidth = 0.8,
+  geom_line(data = demand, aes(Q, P), color = "#1A1A1A", linewidth = 1.0) +
+  geom_line(data = sLow,   aes(Q, P), color = "#7A7A7A", linewidth = 0.8) +
+  geom_line(data = sHigh,  aes(Q, P), color = "#7A7A7A", linewidth = 0.8,
             linetype = "dashed") +
   # Strelica pomaka ponude prema dolje (S_visoka -> S_loša)
   annotate("segment", x = arr_x, xend = arr_x, y = arr_y1, yend = arr_y2,
-           color = "#6B1F26", linewidth = 0.8,
+           color = "#4D4D4D", linewidth = 0.8,
            arrow = arrow(length = unit(0.18, "cm"), type = "closed")) +
   # Isprekidane cjenovne/količinske vodilice
-  geom_hline(yintercept = P_high, color = "#6B6357", linetype = "dashed", linewidth = 0.4) +
-  geom_hline(yintercept = P_low,  color = "#6B6357", linetype = "dashed", linewidth = 0.4) +
+  geom_hline(yintercept = P_high, color = "#8C8C8C", linetype = "dashed", linewidth = 0.4) +
+  geom_hline(yintercept = P_low,  color = "#8C8C8C", linetype = "dashed", linewidth = 0.4) +
   annotate("segment", x = Q1, xend = Q1, y = 0, yend = P_high,
-           color = "#6B6357", linetype = "dashed", linewidth = 0.4) +
+           color = "#8C8C8C", linetype = "dashed", linewidth = 0.4) +
   annotate("segment", x = Q2, xend = Q2, y = 0, yend = P_low,
-           color = "#6B6357", linetype = "dashed", linewidth = 0.4) +
+           color = "#8C8C8C", linetype = "dashed", linewidth = 0.4) +
   # Ravnotežne točke
-  annotate("point", x = Q1, y = P_high, size = 3, color = "#1C1916") +
-  annotate("point", x = Q2, y = P_low,  size = 3, color = "#6B1F26") +
+  annotate("point", x = Q1, y = P_high, size = 3, color = "#000000") +
+  annotate("point", x = Q2, y = P_low,  size = 3, color = "#4D4D4D") +
   # Oznake krivulja
   annotate("text", x = Qmax * 0.82, y = a_d - b_d * Qmax * 0.82,
            label = sprintf("D (|eD|=%.2f)", eps_d_asi),
-           color = "#2D5A8E", fontface = "bold", size = 3.6, vjust = -0.6) +
+           color = "#1A1A1A", fontface = "bold", size = 3.6, vjust = -0.6) +
   annotate("text", x = Qmax * 0.82, y = c_s + b_s * Qmax * 0.82,
            label = sprintf("S_loša (eS=%.2f)", eps_s_asi),
-           color = "#4A6B5C", fontface = "bold", size = 3.6, vjust = -0.6) +
+           color = "#7A7A7A", fontface = "bold", size = 3.6, vjust = -0.6) +
   annotate("text", x = Qmax * 0.7, y = c_s + dQ + b_s * Qmax * 0.7,
            label = sprintf("S_visoka (delta=%g)", dQ),
-           color = "#4A6B5C", fontface = "bold", size = 3.6, vjust = -0.6) +
+           color = "#7A7A7A", fontface = "bold", size = 3.6, vjust = -0.6) +
   # Cjenovne oznake
   annotate("text", x = 1, y = P_high, label = sprintf("P_visoka = %.1f", P_high),
-           hjust = 0, vjust = -0.6, size = 3.3, color = "#1C1916") +
+           hjust = 0, vjust = -0.6, size = 3.3, color = "#000000") +
   annotate("text", x = 1, y = P_low,  label = sprintf("P_niska = %.1f", P_low),
-           hjust = 0, vjust = 1.4, size = 3.3, color = "#6B1F26") +
+           hjust = 0, vjust = 1.4, size = 3.3, color = "#4D4D4D") +
   # Količinske oznake
   annotate("text", x = Q1, y = 2, label = sprintf("Q_1 = %.1f", Q1),
-           hjust = 0.5, size = 3.3, color = "#1C1916") +
+           hjust = 0.5, size = 3.3, color = "#000000") +
   annotate("text", x = Q2, y = 2, label = sprintf("Q_2 = %.1f", Q2),
-           hjust = 0.5, size = 3.3, color = "#6B1F26") +
+           hjust = 0.5, size = 3.3, color = "#4D4D4D") +
   # Gornja očitanja
   annotate("text", x = 2, y = Pmax * 0.97, label = readout1,
-           hjust = 0, fontface = "bold", size = 4.2, color = "#6B1F26") +
+           hjust = 0, fontface = "bold", size = 4.2, color = "#4D4D4D") +
   annotate("text", x = 2, y = Pmax * 0.91,
            label = sprintf("Pad cijene: dP = %.1f", pDrop),
-           hjust = 0, fontface = "bold", size = 3.9, color = "#1C1916") +
+           hjust = 0, fontface = "bold", size = 3.9, color = "#000000") +
   scale_x_continuous(limits = c(0, Qmax), expand = c(0, 0)) +
   scale_y_continuous(limits = c(0, Pmax), expand = c(0, 0)) +
   labs(x = "Količina (Q)", y = "Cijena (P)") +
@@ -1350,46 +1350,46 @@ y_eStar   <- 1 + k * eStar * eStar
 y_eMshown <- 1 + k * (1 - theta) * eMshown * eMshown
 
 ggplot() +
-  geom_hline(yintercept = 0, color = "#C9C3B8", linewidth = 0.5) +
+  geom_hline(yintercept = 0, color = "#CCCCCC", linewidth = 0.5) +
   # Okomite isprekidane crte na e* i e_M
   geom_segment(aes(x = eStar, xend = eStar, y = 0, yend = y_eStar),
-               color = "#6B6357", linetype = "dashed", linewidth = 0.4) +
+               color = "#8C8C8C", linetype = "dashed", linewidth = 0.4) +
   geom_segment(aes(x = eMshown, xend = eMshown, y = 0, yend = y_eMshown),
-               color = "#6B6357", linetype = "dashed", linewidth = 0.4) +
+               color = "#8C8C8C", linetype = "dashed", linewidth = 0.4) +
   # Krivulje troška
   geom_line(data = cFull, aes(e, C),
-            color = "#6B1F26", linewidth = 1.1, linetype = "longdash") +
+            color = "#4D4D4D", linewidth = 1.1, linetype = "longdash") +
   geom_line(data = cIns, aes(e, C),
-            color = "#1C1916", linewidth = 1.1) +
+            color = "#000000", linewidth = 1.1) +
   # Ravnotežne točke (svaka na krivulji koju agent zaista vidi)
   geom_point(aes(x = eStar, y = y_eStar),
-             size = 3, color = "white", fill = "#6B1F26",
+             size = 3, color = "white", fill = "#4D4D4D",
              shape = 21, stroke = 1) +
   geom_point(aes(x = eMshown, y = y_eMshown),
-             size = 3, color = "white", fill = "#1C1916",
+             size = 3, color = "white", fill = "#000000",
              shape = 21, stroke = 1) +
   # Oznake krivulja
   annotate("text", x = emax * 0.78, y = 1 + k * (emax * 0.78)^2,
-           label = "Bez osiguranja", color = "#6B1F26",
+           label = "Bez osiguranja", color = "#4D4D4D",
            fontface = "bold", size = 4, hjust = 1, vjust = -0.6) +
   annotate("text", x = emax * 0.88, y = 1 + k * (1 - theta) * (emax * 0.88)^2,
-           label = "S osiguranjem (moralni hazard)", color = "#1C1916",
+           label = "S osiguranjem (moralni hazard)", color = "#000000",
            fontface = "bold", size = 4, hjust = 1, vjust = -0.6) +
   # Oznake na osi x za e* i e_M
   annotate("text", x = eStar, y = 0.4,
            label = sprintf("e* = %.2f", eStar),
-           color = "#6B1F26", size = 3.5, hjust = 0.5) +
+           color = "#4D4D4D", size = 3.5, hjust = 0.5) +
   annotate("text", x = eMshown, y = 0.4,
            label = sprintf("e_M = %.2f", eM),
-           color = "#1C1916", size = 3.5, hjust = 0.5) +
+           color = "#000000", size = 3.5, hjust = 0.5) +
   # Gornji ispisi
   annotate("text", x = 0.2, y = Cmax * 0.97,
            label = sprintf("Porast rizika: e_M - e* = %.2f (+%.0f %%)",
                            eM - eStar, ((eM - eStar) / eStar) * 100),
-           color = "#1C1916", fontface = "bold", size = 4.6, hjust = 0) +
+           color = "#000000", fontface = "bold", size = 4.6, hjust = 0) +
   annotate("text", x = 0.2, y = Cmax * 0.91,
            label = sprintf("Neefikasnost (gubitak blagostanja) = %.2f", dwl),
-           color = "#6B1F26", fontface = "bold", size = 4.2, hjust = 0) +
+           color = "#4D4D4D", fontface = "bold", size = 4.2, hjust = 0) +
   scale_x_continuous(limits = c(0, emax), expand = c(0, 0)) +
   scale_y_continuous(limits = c(0, Cmax), expand = c(0, 0)) +
   labs(x = "Rizično ponašanje (e)", y = "Trošak / šteta")
@@ -1609,58 +1609,58 @@ markup <- ((Pm - Pc) / Pc) * 100                    # 28 % pri zadanim vrijednos
 
 ggplot() +
   # Bazna vodoravna crta y = 0
-  geom_hline(yintercept = 0, color = "#C9C3B8") +
+  geom_hline(yintercept = 0, color = "#CCCCCC") +
   # Trokut mrtvog tereta (osjenčan)
   geom_polygon(data = dwlTri, aes(Q, P),
-               fill = "#D8B5B3", alpha = 0.65,
-               color = "#6B1F26", linewidth = 0.4) +
+               fill = "#D8D8D8", alpha = 0.65,
+               color = "#4D4D4D", linewidth = 0.4) +
   # Krivulje
-  geom_line(data = demand, aes(Q, P), color = "#2D5A8E", linewidth = 1.0) +
-  geom_line(data = mr, aes(Q, P), color = "#3A332D", linewidth = 0.8,
+  geom_line(data = demand, aes(Q, P), color = "#1A1A1A", linewidth = 1.0) +
+  geom_line(data = mr, aes(Q, P), color = "#1A1A1A", linewidth = 0.8,
             linetype = "longdash") +
-  geom_line(data = mc, aes(Q, P), color = "#4A6B5C", linewidth = 0.8) +
+  geom_line(data = mc, aes(Q, P), color = "#7A7A7A", linewidth = 0.8) +
   # Isprekidane vodilje za cijene i količine
-  geom_hline(yintercept = Pm, color = "#6B6357", linetype = "dashed",
+  geom_hline(yintercept = Pm, color = "#8C8C8C", linetype = "dashed",
              linewidth = 0.4) +
-  geom_hline(yintercept = Pc, color = "#6B6357", linetype = "dashed",
+  geom_hline(yintercept = Pc, color = "#8C8C8C", linetype = "dashed",
              linewidth = 0.4) +
   geom_segment(aes(x = Qm, xend = Qm, y = 0, yend = Pm),
-               color = "#6B6357", linetype = "dashed", linewidth = 0.4) +
+               color = "#8C8C8C", linetype = "dashed", linewidth = 0.4) +
   geom_segment(aes(x = Qc, xend = Qc, y = 0, yend = Pc),
-               color = "#6B6357", linetype = "dashed", linewidth = 0.4) +
+               color = "#8C8C8C", linetype = "dashed", linewidth = 0.4) +
   # Ravnotežne točke
   geom_point(aes(x = Qm, y = Pm), size = 3, color = "white",
-             fill = "#6B1F26", shape = 21, stroke = 1.0) +
+             fill = "#4D4D4D", shape = 21, stroke = 1.0) +
   geom_point(aes(x = Qc, y = Pc), size = 3, color = "white",
-             fill = "#4A6B5C", shape = 21, stroke = 1.0) +
+             fill = "#7A7A7A", shape = 21, stroke = 1.0) +
   geom_point(aes(x = Qm, y = MC_at_Qm), size = 2.4, color = "white",
-             fill = "#1C1916", shape = 21, stroke = 0.8) +
+             fill = "#000000", shape = 21, stroke = 0.8) +
   # Oznake krivulja
   annotate("text", x = Qmax * 0.82, y = a - b * Qmax * 0.82 + 4,
            label = sprintf("D (|εD|=%.2f)", eps_d_mon),
-           color = "#2D5A8E", fontface = "bold", size = 3.4, hjust = 0.5) +
+           color = "#1A1A1A", fontface = "bold", size = 3.4, hjust = 0.5) +
   annotate("text", x = Qmax * 0.42, y = a - 2 * b * Qmax * 0.42 + 4,
-           label = "MR", color = "#3A332D", fontface = "bold",
+           label = "MR", color = "#1A1A1A", fontface = "bold",
            size = 3.4, hjust = 0.5) +
   annotate("text", x = Qmax * 0.82, y = cc + d * Qmax * 0.82 + 4,
            label = sprintf("MC (εS=%.2f)", eps_s_mon),
-           color = "#4A6B5C", fontface = "bold", size = 3.4, hjust = 0.5) +
+           color = "#7A7A7A", fontface = "bold", size = 3.4, hjust = 0.5) +
   # Oznake cijena i količina
   annotate("text", x = 1, y = Pm + 4, label = sprintf("P_M = %.1f", Pm),
-           color = "#6B1F26", size = 3.1, hjust = 0) +
+           color = "#4D4D4D", size = 3.1, hjust = 0) +
   annotate("text", x = 1, y = Pc - 6, label = sprintf("P_C = %.1f", Pc),
-           color = "#4A6B5C", size = 3.1, hjust = 0) +
+           color = "#7A7A7A", size = 3.1, hjust = 0) +
   annotate("text", x = Qm, y = 2, label = sprintf("Q_M = %.1f", Qm),
-           color = "#6B1F26", size = 3.1, hjust = 0.5) +
+           color = "#4D4D4D", size = 3.1, hjust = 0.5) +
   annotate("text", x = Qc, y = 2, label = sprintf("Q_C = %.1f", Qc),
-           color = "#4A6B5C", size = 3.1, hjust = 0.5) +
+           color = "#7A7A7A", size = 3.1, hjust = 0.5) +
   # Gornji ispisi
   annotate("text", x = 2, y = Pmax * 0.97,
            label = sprintf("Gubitak blagostanja (DWL) = %.1f", dwl),
-           color = "#6B1F26", fontface = "bold", size = 4.2, hjust = 0) +
+           color = "#4D4D4D", fontface = "bold", size = 4.2, hjust = 0) +
   annotate("text", x = 2, y = Pmax * 0.91,
            label = sprintf("Monopolska marža: %.0f %%", markup),
-           color = "#1C1916", fontface = "bold", size = 3.8, hjust = 0) +
+           color = "#000000", fontface = "bold", size = 3.8, hjust = 0) +
   scale_x_continuous(limits = c(0, Qmax), expand = c(0, 0)) +
   scale_y_continuous(limits = c(0, Pmax), expand = c(0, 0)) +
   labs(x = "Količina (Q)", y = "Cijena (P)")

@@ -147,8 +147,8 @@ wins <- table(factor(c(ab, bc, ac), levels = c("A", "B", "C")))
 cond_winner <- names(wins)[wins == 2]
 is_cycle <- length(cond_winner) == 0   # zadano: {A:1,B:1,C:1} -> ciklus
 
-# Naglasna boja: crvena za ciklus (#C53030), zelena za pobjednika (#1C7C54)
-accent <- if (is_cycle) "#C53030" else "#1C7C54"
+# Naglasna boja: crvena za ciklus (#262626), zelena za pobjednika (#5C5C5C)
+accent <- if (is_cycle) "#262626" else "#5C5C5C"
 
 # Položaji čvorova: jednakostranični trokut, vrh gore (data koordinate)
 pos <- data.frame(
@@ -196,19 +196,19 @@ ggplot() +
                color = accent, linewidth = 1.0,
                arrow = arrow(length = unit(0.22, "cm"), type = "closed")) +
   geom_point(data = pos, aes(x, y), size = 16,
-             shape = 21, fill = "white", color = "#1C1916", stroke = 1.1) +
+             shape = 21, fill = "white", color = "#000000", stroke = 1.1) +
   geom_text(data = pos, aes(x, y, label = id),
-            fontface = "bold", size = 7, color = "#1C1916") +
+            fontface = "bold", size = 7, color = "#000000") +
   annotate("text", x = 0, y = 1.45, label = top_caption,
            color = accent, fontface = "bold", size = 5) +
   annotate("text", x = 0, y = -1.1, label = bottom_line,
-           color = "#3A332D", size = 3.8) +
+           color = "#1A1A1A", size = 3.8) +
   scale_x_continuous(limits = c(-1.45, 1.45), expand = c(0, 0)) +
   scale_y_continuous(limits = c(-1.2, 1.55), expand = c(0, 0)) +
   coord_fixed(clip = "off") +
   theme_void() +
-  theme(plot.background = element_rect(fill = "#F2EDE3", color = NA),
-        panel.background = element_rect(fill = "#F2EDE3", color = NA),
+  theme(plot.background = element_rect(fill = "#FFFFFF", color = NA),
+        panel.background = element_rect(fill = "#FFFFFF", color = NA),
         plot.margin = margin(10, 10, 10, 10))
 ```
 :::
@@ -404,7 +404,7 @@ cond_winner <- if (length(cond_winner) == 1) cond_winner else NA_character_
 
 borda_winner <- names(borda)[which.max(borda)]
 agree  <- !is.na(cond_winner) && cond_winner == borda_winner
-accent <- if (agree) "#1C7C54" else "#6B1F26"
+accent <- if (agree) "#5C5C5C" else "#4D4D4D"
 
 df <- data.frame(cand = cands, score = as.numeric(borda[cands]),
                  is_win = cands == borda_winner)
@@ -417,12 +417,12 @@ ytop <- max(df$score) * 1.4
 ggplot(df, aes(cand, score, fill = is_win)) +
   geom_col(width = 0.6) +
   geom_text(aes(label = score), vjust = -0.5, fontface = "bold",
-            size = 4.2, color = "#1C1916") +
-  scale_fill_manual(values = c(`TRUE` = "#4A6B5C", `FALSE` = "#C9BBA3"), guide = "none") +
+            size = 4.2, color = "#000000") +
+  scale_fill_manual(values = c(`TRUE` = "#7A7A7A", `FALSE` = "#C4C4C4"), guide = "none") +
   annotate("text", x = 0.55, y = ytop * 0.97, label = borda_text,
-           hjust = 0, fontface = "bold", size = 3.8, color = "#4A6B5C") +
+           hjust = 0, fontface = "bold", size = 3.8, color = "#7A7A7A") +
   annotate("text", x = 0.55, y = ytop * 0.90, label = cond_text,
-           hjust = 0, fontface = "bold", size = 3.8, color = "#1C1916") +
+           hjust = 0, fontface = "bold", size = 3.8, color = "#000000") +
   annotate("text", x = 0.55, y = ytop * 0.83, label = verdict,
            hjust = 0, fontface = "bold", size = 4.2, color = accent) +
   scale_y_continuous(limits = c(0, ytop), expand = c(0, 0)) +
@@ -589,23 +589,23 @@ pts <- data.frame(
   x = c(A[1], B[1], AB[1]),
   y = c(A[2], B[2], AB[2]),
   lab = c("A", "B", "A+B"),
-  col = c("#6B1F26", "#4A6B5C", "#1C1916")
+  col = c("#4D4D4D", "#7A7A7A", "#000000")
 )
 
 ggplot() +
-  annotate("rect", xmin = 0, xmax = 10, ymin = 0, ymax = 10, fill = "#4A6B5C", alpha = 0.13) +
-  annotate("text", x = 9.6, y = 9.4, label = "oba dobivaju", hjust = 1, color = "#4A6B5C", fontface = "bold", size = 3.4) +
-  geom_hline(yintercept = 0, color = "#1C1916", linewidth = 0.5) +
-  geom_vline(xintercept = 0, color = "#1C1916", linewidth = 0.5) +
-  geom_segment(aes(x = A[1], y = A[2], xend = AB[1], yend = AB[2]), linetype = "dashed", color = "#6B6357", linewidth = 0.4) +
-  geom_segment(aes(x = B[1], y = B[2], xend = AB[1], yend = AB[2]), linetype = "dashed", color = "#6B6357", linewidth = 0.4) +
+  annotate("rect", xmin = 0, xmax = 10, ymin = 0, ymax = 10, fill = "#7A7A7A", alpha = 0.13) +
+  annotate("text", x = 9.6, y = 9.4, label = "oba dobivaju", hjust = 1, color = "#7A7A7A", fontface = "bold", size = 3.4) +
+  geom_hline(yintercept = 0, color = "#000000", linewidth = 0.5) +
+  geom_vline(xintercept = 0, color = "#000000", linewidth = 0.5) +
+  geom_segment(aes(x = A[1], y = A[2], xend = AB[1], yend = AB[2]), linetype = "dashed", color = "#8C8C8C", linewidth = 0.4) +
+  geom_segment(aes(x = B[1], y = B[2], xend = AB[1], yend = AB[2]), linetype = "dashed", color = "#8C8C8C", linewidth = 0.4) +
   geom_point(data = pts, aes(x, y), size = 4, shape = 21, fill = pts$col, color = "white", stroke = 1.1) +
-  annotate("text", x = A[1] + 0.7, y = A[2], label = "A", color = "#6B1F26", fontface = "bold", size = 5) +
-  annotate("text", x = B[1] - 0.7, y = B[2], label = "B", color = "#4A6B5C", fontface = "bold", size = 5) +
-  annotate("text", x = AB[1], y = AB[2] + 0.9, label = "A+B", color = "#1C1916", fontface = "bold", size = 5) +
+  annotate("text", x = A[1] + 0.7, y = A[2], label = "A", color = "#4D4D4D", fontface = "bold", size = 5) +
+  annotate("text", x = B[1] - 0.7, y = B[2], label = "B", color = "#7A7A7A", fontface = "bold", size = 5) +
+  annotate("text", x = AB[1], y = AB[2] + 0.9, label = "A+B", color = "#000000", fontface = "bold", size = 5) +
   annotate("text", x = 0, y = 9.6,
            label = if (passes) "Paket A+B prolazi (oba dobivaju)" else "Paket A+B pada",
-           fontface = "bold", size = 4, color = if (passes) "#1C7C54" else "#6B1F26") +
+           fontface = "bold", size = 4, color = if (passes) "#5C5C5C" else "#4D4D4D") +
   scale_x_continuous(limits = c(-10, 10), expand = c(0, 0)) +
   scale_y_continuous(limits = c(-10, 10), expand = c(0, 0)) +
   labs(x = "Dobitak / gubitak zastupnika 1", y = "Dobitak / gubitak zastupnika 2") +

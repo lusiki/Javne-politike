@@ -159,28 +159,28 @@ lbl_uspjeh <- sprintf("uspjeh ≈ %d %%", round(cur_u * 100))  # "uspjeh ≈ 33 
 
 ggplot(curve_df, aes(s, u)) +
   # vertikalna linija kapaciteta na x = c (zelena, isprekidana)
-  geom_vline(xintercept = c, linetype = "dashed", linewidth = 0.5, color = "#1C7C54") +
+  geom_vline(xintercept = c, linetype = "dashed", linewidth = 0.5, color = "#5C5C5C") +
   annotate("text", x = c, y = 0.97, label = "kapacitet",
-           hjust = 0, vjust = 1, size = 3.4, color = "#1C7C54") +
+           hjust = 0, vjust = 1, size = 3.4, color = "#5C5C5C") +
   # vertikalni i horizontalni "dropline" do markera (crni, isprekidani)
   annotate("segment", x = s_sel, xend = s_sel, y = 0, yend = cur_u,
-           linetype = "dashed", linewidth = 0.4, color = "#1C1916") +
+           linetype = "dashed", linewidth = 0.4, color = "#000000") +
   annotate("segment", x = 0, xend = s_sel, y = cur_u, yend = cur_u,
-           linetype = "dashed", linewidth = 0.4, color = "#1C1916") +
+           linetype = "dashed", linewidth = 0.4, color = "#000000") +
   # krivulja uspjeha (plava)
-  geom_line(linewidth = 1.1, color = "#2D5A8E") +
+  geom_line(linewidth = 1.1, color = "#1A1A1A") +
   # oznaka brzine ispod markera
   annotate("text", x = s_sel, y = cur_u, label = lbl_brzina,
-           vjust = 2.2, size = 3.4, color = "#1C1916") +
+           vjust = 2.2, size = 3.4, color = "#000000") +
   # marker (crna točka s bijelim rubom)
   geom_point(data = data.frame(s = s_sel, u = cur_u),
-             size = 3.5, color = "#1C1916", fill = "#1C1916",
+             size = 3.5, color = "#000000", fill = "#000000",
              shape = 21, stroke = 1.1) +
   geom_point(data = data.frame(s = s_sel, u = cur_u),
              size = 3.5, shape = 21, color = "white", fill = NA, stroke = 1.1) +
   # oznaka uspjeha iznad markera
   annotate("text", x = s_sel, y = cur_u, label = lbl_uspjeh,
-           vjust = -1.4, fontface = "bold", size = 4.2, color = "#1C1916") +
+           vjust = -1.4, fontface = "bold", size = 4.2, color = "#000000") +
   scale_x_continuous(labels = scales::percent, limits = c(0, 1), expand = c(0, 0)) +
   scale_y_continuous(labels = scales::percent, limits = c(0, 1), expand = c(0, 0)) +
   labs(x = "Brzina i ambicija reforme",

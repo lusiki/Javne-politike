@@ -147,20 +147,20 @@ rect <- data.frame(q = c(0, Qreg, Qreg, 0),       p = c(Sr, Sr, Dr, Dr))
 tri  <- data.frame(q = c(Qreg, Qreg, Qstar),      p = c(Dr, Sr, Pstar))
 
 ggplot() +
-  geom_polygon(data = rect, aes(q, p), fill = "#E8D6B8", alpha = 0.6, color = "#C8985E", linewidth = 0.4) +
-  geom_polygon(data = tri,  aes(q, p), fill = "#D8B5B3", alpha = 0.65, color = "#6B1F26", linewidth = 0.4) +
-  geom_line(data = demand, aes(q, p), color = "#2D5A8E", linewidth = 1.1) +
-  geom_line(data = supply, aes(q, p), color = "#4A6B5C", linewidth = 1.1) +
-  geom_segment(aes(x = Qreg,  xend = Qreg,  y = 0, yend = Dr),    linetype = "dashed", color = "#6B6357", linewidth = 0.4) +
-  geom_segment(aes(x = Qstar, xend = Qstar, y = 0, yend = Pstar), linetype = "dashed", color = "#6B6357", linewidth = 0.4) +
-  annotate("text", x = Qreg * 0.5, y = (Sr + Dr) / 2, label = "renta", color = "#9A6F38", fontface = "bold", size = 3.8) +
-  annotate("text", x = Qreg + (Qstar - Qreg) * 0.6, y = Pstar + 7, label = "mrtvi teret", color = "#6B1F26", fontface = "bold", size = 3.4) +
-  annotate("text", x = Qreg, y = 2, label = "Q_reg", color = "#6B6357", size = 3.2) +
-  annotate("text", x = Qstar, y = 2, label = "Q*", color = "#6B6357", size = 3.2) +
-  annotate("text", x = 74, y = D(74) + 4, label = "potražnja", color = "#2D5A8E", fontface = "bold", size = 3.2) +
-  annotate("text", x = 74, y = S(74) + 4, label = "ponuda (MC)", color = "#4A6B5C", fontface = "bold", size = 3.2) +
+  geom_polygon(data = rect, aes(q, p), fill = "#EAEAEA", alpha = 0.6, color = "#B0B0B0", linewidth = 0.4) +
+  geom_polygon(data = tri,  aes(q, p), fill = "#D8D8D8", alpha = 0.65, color = "#4D4D4D", linewidth = 0.4) +
+  geom_line(data = demand, aes(q, p), color = "#1A1A1A", linewidth = 1.1) +
+  geom_line(data = supply, aes(q, p), color = "#7A7A7A", linewidth = 1.1) +
+  geom_segment(aes(x = Qreg,  xend = Qreg,  y = 0, yend = Dr),    linetype = "dashed", color = "#8C8C8C", linewidth = 0.4) +
+  geom_segment(aes(x = Qstar, xend = Qstar, y = 0, yend = Pstar), linetype = "dashed", color = "#8C8C8C", linewidth = 0.4) +
+  annotate("text", x = Qreg * 0.5, y = (Sr + Dr) / 2, label = "renta", color = "#6E6E6E", fontface = "bold", size = 3.8) +
+  annotate("text", x = Qreg + (Qstar - Qreg) * 0.6, y = Pstar + 7, label = "mrtvi teret", color = "#4D4D4D", fontface = "bold", size = 3.4) +
+  annotate("text", x = Qreg, y = 2, label = "Q_reg", color = "#8C8C8C", size = 3.2) +
+  annotate("text", x = Qstar, y = 2, label = "Q*", color = "#8C8C8C", size = 3.2) +
+  annotate("text", x = 74, y = D(74) + 4, label = "potražnja", color = "#1A1A1A", fontface = "bold", size = 3.2) +
+  annotate("text", x = 74, y = S(74) + 4, label = "ponuda (MC)", color = "#7A7A7A", fontface = "bold", size = 3.2) +
   annotate("text", x = 2, y = 97, label = sprintf("Renta = %.0f   Mrtvi teret = %.0f", rent, dwl),
-           hjust = 0, fontface = "bold", size = 4, color = "#1C1916") +
+           hjust = 0, fontface = "bold", size = 4, color = "#000000") +
   scale_x_continuous(limits = c(0, 80), expand = c(0, 0)) +
   scale_y_continuous(limits = c(0, 100), expand = c(0, 0)) +
   labs(x = "Količina Q", y = "Cijena / granični trošak") +
@@ -288,14 +288,14 @@ df <- rbind(
 )
 
 ggplot(df, aes(e, t, color = tip)) +
-  geom_hline(yintercept = 0, linetype = "dashed", linewidth = 0.5, color = "#6B6357") +
+  geom_hline(yintercept = 0, linetype = "dashed", linewidth = 0.5, color = "#8C8C8C") +
   geom_line(linewidth = 1.1) +
-  scale_color_manual(values = c("organizirani (I=1)" = "#4A6B5C",
-                                "neorganizirani (I=0)" = "#6B1F26"), guide = "none") +
+  scale_color_manual(values = c("organizirani (I=1)" = "#7A7A7A",
+                                "neorganizirani (I=0)" = "#4D4D4D"), guide = "none") +
   annotate("text", x = 1.2, y = org(1.2) + 0.06, label = "organizirani (I=1)",
-           color = "#4A6B5C", fontface = "bold", size = 3.4, hjust = 0) +
+           color = "#7A7A7A", fontface = "bold", size = 3.4, hjust = 0) +
   annotate("text", x = 1.2, y = unorg(1.2) - 0.06, label = "neorganizirani (I=0)",
-           color = "#6B1F26", fontface = "bold", size = 3.4, hjust = 0) +
+           color = "#4D4D4D", fontface = "bold", size = 3.4, hjust = 0) +
   coord_cartesian(ylim = c(-0.6, 1)) +
   scale_x_continuous(limits = c(0.5, 5), expand = c(0, 0)) +
   labs(x = "Elastičnost uvozne potražnje e", y = "Stopa zaštite t/(1+t)") +

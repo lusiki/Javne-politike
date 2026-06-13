@@ -148,27 +148,27 @@ hyp <- data.frame(gdp = wag_g, sp = trendFn(wag_g))
 hyp$lab <- sprintf("predviđeno ≈ %.0f %%", hyp$sp)  # = "predviđeno ≈ 37 %" pri wag_g = 30
 
 # Boje preuzete iz OJS color scale (red / gold / blue po razini dohotka)
-grp_cols <- c("niži dohodak"    = "#C53030",
-              "srednji dohodak" = "#C8942D",
-              "visoki dohodak"  = "#2D5A8E")
+grp_cols <- c("niži dohodak"    = "#262626",
+              "srednji dohodak" = "#9A9A9A",
+              "visoki dohodak"  = "#1A1A1A")
 
 ggplot() +
   # 1. trendna linija (isprekidana, topla siva)
   geom_line(data = tline, aes(gdp, sp),
-            linetype = "dashed", linewidth = 0.55, color = "#6B6357") +
+            linetype = "dashed", linewidth = 0.55, color = "#8C8C8C") +
   # 2. točke zemalja, obojene po razini dohotka
   geom_point(data = data, aes(gdp, sp, fill = grp),
              shape = 21, size = 3.5, color = "white", stroke = 0.7) +
   # 3. nazivi zemalja iznad točaka
   geom_text(data = data, aes(gdp, sp, label = z),
-            vjust = 0, nudge_y = 1.6, size = 3.1, color = "#3A332D") +
+            vjust = 0, nudge_y = 1.6, size = 3.1, color = "#1A1A1A") +
   # 4. hipotetska točka (veća, crna)
   geom_point(data = hyp, aes(gdp, sp),
-             shape = 21, size = 5.5, fill = "#1C1916", color = "white", stroke = 0.9) +
+             shape = 21, size = 5.5, fill = "#000000", color = "white", stroke = 0.9) +
   # 5. anotacija s predviđenim udjelom ispod hipotetske točke
   geom_text(data = hyp, aes(gdp, sp, label = lab),
             vjust = 1, nudge_y = -2.2, fontface = "bold",
-            size = 4, color = "#1C1916") +
+            size = 4, color = "#000000") +
   scale_fill_manual(values = grp_cols, name = NULL) +
   scale_x_log10(limits = c(6, 92),
                 breaks = c(6, 10, 20, 40, 60, 90)) +

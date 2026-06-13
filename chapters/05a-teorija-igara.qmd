@@ -151,17 +151,17 @@ curve_df <- data.frame(n = ns, xp = xp_fun(ns))
 
 ggplot(curve_df, aes(n, xp)) +
   geom_hline(yintercept = asymptote, linetype = "dashed",
-             linewidth = 0.5, color = "#6B6357") +
-  geom_line(linewidth = 1.1, color = "#2D5A8E") +
+             linewidth = 0.5, color = "#8C8C8C") +
+  geom_line(linewidth = 1.1, color = "#1A1A1A") +
   geom_point(data = data.frame(n = ncur, xp = xpcur),
-             size = 4, shape = 21, fill = "#1C1916",
+             size = 4, shape = 21, fill = "#000000",
              color = "white", stroke = 1.1) +
   annotate("text", x = 51, y = asymptote, hjust = 1, vjust = -0.8,
            label = sprintf("granica 1 - d/2 = %.2f", asymptote),
-           size = 3.4, color = "#6B6357") +
+           size = 3.4, color = "#8C8C8C") +
   annotate("text", x = 27, y = 0.97,
            label = sprintf("x_p (n = %d) = %.3f", ncur, xpcur),
-           fontface = "bold", size = 4.4, color = "#2D5A8E") +
+           fontface = "bold", size = 4.4, color = "#1A1A1A") +
   scale_y_continuous(limits = c(0, 1), expand = c(0, 0)) +
   scale_x_continuous(limits = c(3, 51), expand = c(0, 0)) +
   labs(x = "Broj zastupnika n", y = "Udio predlagatelja x_p") +

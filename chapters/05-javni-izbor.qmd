@@ -146,14 +146,14 @@ verdict <- if (Rcur >= 0) {
 } else {
   sprintf("R = %.2f € → glasanje se instrumentalno ne isplati", Rcur)
 }
-verdict_color <- if (Rcur >= 0) "#1C7C54" else "#C53030"
+verdict_color <- if (Rcur >= 0) "#5C5C5C" else "#262626"
 
 ggplot(curve_df, aes(N, R)) +
   geom_hline(yintercept = 0, linetype = "dashed",
-             linewidth = 0.5, color = "#6B6357") +
-  geom_line(linewidth = 1.1, color = "#2D5A8E") +
+             linewidth = 0.5, color = "#8C8C8C") +
+  geom_line(linewidth = 1.1, color = "#1A1A1A") +
   geom_point(data = data.frame(N = Ncur, R = Rcur),
-             size = 4, shape = 21, fill = "#1C1916",
+             size = 4, shape = 21, fill = "#000000",
              color = "white", stroke = 1.1) +
   annotate("text", x = sqrt(1e3 * 1e8), y = Inf, label = verdict,
            vjust = 1.8, fontface = "bold", size = 4.6, color = verdict_color) +
@@ -274,7 +274,7 @@ rg <- C                  # najveće žaljenje ako glasa
 ro <- max(B - C, 0)      # najveće žaljenje ako ostane kod kuće
 votes  <- rg <= ro       # minimax glasa kad je rg ≤ ro (B ≥ 2C)
 choice <- if (votes) "glasati" else "ostati kod kuće"
-accent <- if (votes) "#1C7C54" else "#6B1F26"
+accent <- if (votes) "#5C5C5C" else "#4D4D4D"
 
 df <- data.frame(
   act    = factor(c("Glasati", "Ostati kod kuće"), levels = c("Glasati", "Ostati kod kuće")),
@@ -286,8 +286,8 @@ ymax <- max(10, B)
 ggplot(df, aes(act, regret, fill = pick)) +
   geom_col(width = 0.6) +
   geom_text(aes(label = regret), vjust = -0.5, fontface = "bold",
-            size = 4.2, color = "#1C1916") +
-  scale_fill_manual(values = c(`TRUE` = "#4A6B5C", `FALSE` = "#C9BBA3"), guide = "none") +
+            size = 4.2, color = "#000000") +
+  scale_fill_manual(values = c(`TRUE` = "#7A7A7A", `FALSE` = "#C4C4C4"), guide = "none") +
   annotate("text", x = 0.55, y = ymax * 1.10,
            label = sprintf("Minimax bira: %s  (prag B = 2C)", choice),
            hjust = 0, fontface = "bold", size = 3.6, color = accent) +

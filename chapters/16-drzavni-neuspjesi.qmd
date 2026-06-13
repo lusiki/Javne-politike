@@ -256,13 +256,13 @@ pct   <- round(total / 24 * 100)     # round(16/24*100) = 67
 verdict <- if (pct >= 80) "robusna politika" else if (pct >= 55) "umjeren rizik neuspjeha" else "visok rizik neuspjeha"
 
 # Boja stupca po ocjeni: <=1 crveno, ==2 narančasto, >=3 zeleno (literalni hex iz OJS marks).
-bar_col  <- function(v) ifelse(v <= 1, "#C53030", ifelse(v == 2, "#C8942D", "#1C7C54"))
+bar_col  <- function(v) ifelse(v <= 1, "#262626", ifelse(v == 2, "#9A9A9A", "#5C5C5C"))
 # Boja naslovne ocjene po istom pragu kao u OJS-u.
-head_col <- if (pct >= 80) "#1C7C54" else if (pct >= 55) "#C8942D" else "#C53030"
+head_col <- if (pct >= 80) "#5C5C5C" else if (pct >= 55) "#9A9A9A" else "#262626"
 
 ggplot(dims, aes(x = v, y = q)) +
   geom_col(fill = bar_col(dims$v), width = 0.7) +
-  geom_vline(xintercept = 0, color = "#3A332D", linewidth = 0.6) +
+  geom_vline(xintercept = 0, color = "#1A1A1A", linewidth = 0.6) +
   annotate("text", x = 1.5, y = 8.7,
            label = sprintf("Ukupna otpornost: %d %% — %s", pct, verdict),
            hjust = 0.5, vjust = 0, fontface = "bold", size = 5, color = head_col) +
