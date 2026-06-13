@@ -45,6 +45,25 @@ nav a,
   }
 }
 
+// Lijevi nav: naslovi poglavlja poravnati s desnim TOC-om i u tamnom načinu.
+// (custom.scss im daje slate koji na sepiji pada prenisko; .sidebar a ne hvata
+// .chapter-title span pa boju moramo postaviti izravno.)
+#quarto-sidebar .chapter-title,
+.sidebar-navigation .chapter-title { color: #C7BEAF !important; }
+#quarto-sidebar a.sidebar-item-text:hover .chapter-title,
+#quarto-sidebar a.sidebar-item-text.active .chapter-title,
+.sidebar-navigation a.sidebar-item-text:hover .chapter-title,
+.sidebar-navigation a.sidebar-item-text.active .chapter-title { color: #D0736C !important; }
+
+// Separator ispod fusnote/citata vraćenih u tok — svijetla crta na sepiji.
+.callout-praksa > .column-margin,
+.callout-empirija > .column-margin,
+.callout-vjezba > .column-margin,
+div.callout .callout-body > .column-margin,
+figure.quarto-float-tbl > .column-margin {
+  border-top-color: rgba(232, 223, 208, 0.18) !important;
+}
+
 // Linkovi — svjetlija brick za kontrast na tamnoj pozadini
 a {
   color: #D0736C !important;

@@ -1310,7 +1310,10 @@ li.sidebar-item-section > .sidebar-item-container {
 .quarto-sidebar,
 .sidebar-navigation,
 nav.sidebar {
-  background-color: $brand-paper !important;
+  // Ravna pozadina — ista krem kao stranica (prije paper-soft #EAE3D4 koji je
+  // čitateljima izgledao kao smeđa „kartica"). Lijevi nav i desni TOC panel
+  // dijele .sidebar pa oba postaju boja stranice; razdvaja ih samo tanka crta.
+  background-color: $brand-cream !important;
   border-right: 1px solid rgba($brand-warm-grey, 0.30) !important;
   // Mono margine —lijevi sidebar u IBM Plex Mono.
   // Naslovi dijelova i poglavlja nasljeđuju ovaj font; pretraga i naslov knjige
@@ -1343,6 +1346,24 @@ nav.sidebar a {
 .sidebar-navigation .chapter-title,
 .sidebar-navigation .menu-text {
   font-family: $brand-font-mono;
+}
+
+// Lijevi nav: linkovi poglavlja u istom registru kao desni „Table of contents".
+// Oba su već IBM Plex Mono; lijevi je samo bio veći (0.94em) i tamniji (ink),
+// desni manji (0.78rem) i sivlji (slate) — pa su izgledali kao različiti fontovi.
+// Poravnavamo lijeve naslove poglavlja na razmjer desnog TOC-a (nav#TOC ul li a).
+// Naslovi dijelova („DIO I") su .menu-text i ostaju zaseban, tiši strukturni sloj.
+#quarto-sidebar .chapter-title,
+.sidebar-navigation .chapter-title {
+  font-size: 0.78rem;
+  color: $brand-slate;
+  letter-spacing: -0.01em;
+}
+#quarto-sidebar a.sidebar-item-text:hover .chapter-title,
+#quarto-sidebar a.sidebar-item-text.active .chapter-title,
+.sidebar-navigation a.sidebar-item-text:hover .chapter-title,
+.sidebar-navigation a.sidebar-item-text.active .chapter-title {
+  color: $brand-navy;
 }
 
 // =============================================================
@@ -2380,6 +2401,96 @@ div.callout .column-margin {
   font-size: 0.82em;
   color: $brand-slate;
 }
+
+// =============================================================
+// 7b) TABLIČNE kutije promovirane u page-columns — naslov tablice nosi
+//     marginalni citat (@autorYYYY uz `citation-location: margin`), pa Quarto
+//     cijeli float digne u `page-columns page-full` grid preko PUNE širine
+//     stranice. Naša pravila širine (`figure:has(>table){max-width:100%}` +
+//     `table{width:100%}`) tada razvuku tablicu na punu širinu, pa „iscuri" iz
+//     tekstualnog stupca i nije centrirana. Lijek: float s tablicom vraćamo u
+//     body-content kao centriran blok, a izvor (CSL citat) spuštamo ISPOD
+//     tablice u tok. Slike s marginalnim captionom NE diramo
+//     (scope: :has(figure.quarto-float-tbl)).
+// =============================================================
+.quarto-float.page-columns:has(figure.quarto-float-tbl),
+.quarto-float.page-full:has(figure.quarto-float-tbl) {
+  display: block !important;
+  grid-column: body-content-start / body-content-end !important;
+  width: auto !important;
+  max-width: 100%;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  box-sizing: border-box;
+}
+
+// Unutarnja <figure> tablice → flex-stupac. U DOM-u marginalni citat dolazi
+// PRIJE tablice; bez ovoga bi u toku sjeo između naslova i tablice. `order`
+// ga gura na dno (ispod tablice).
+figure.quarto-float-tbl.page-columns,
+figure.quarto-float-tbl.page-full {
+  display: flex !important;
+  flex-direction: column;
+  width: 100%;
+  max-width: 100%;
+}
+
+.quarto-float.page-columns:has(figure.quarto-float-tbl) > *,
+.quarto-float.page-full:has(figure.quarto-float-tbl) > *,
+figure.quarto-float-tbl.page-columns > *,
+figure.quarto-float-tbl.page-full > * {
+  grid-column: auto !important;
+}
+
+figure.quarto-float-tbl.page-columns > .column-margin,
+figure.quarto-float-tbl.page-full > .column-margin {
+  order: 99;
+  width: auto;
+  margin-top: 0.7rem;
+  padding-top: 0.55rem;
+  border-top: 1px solid $sc-rule;
+  font-size: 0.8rem;
+  line-height: 1.45;
+  color: $brand-slate;
+}
+
+// =============================================================
+// 7c) Marginalni sadržaj koji smo de-promocijom vratili u tok (fusnota u
+//     callolutu, CSL citat u tablici): Quarto mu je dao .no-row-height
+//     (height:1em) jer ga je kanio smjestiti u marginu. U normalnom toku ta
+//     visina ga ODSIJEČE, pa tekst prelije ISPOD ruba kutije i izgleda kao da
+//     je „pobjegao" van. Vraćamo prirodnu visinu — bilješka tada ostaje
+//     UNUTAR okvira. (Scope: callouti + tablični float; figure ne diramo.)
+// =============================================================
+.callout-praksa .no-row-height,
+.callout-empirija .no-row-height,
+.callout-vjezba .no-row-height,
+.definition .no-row-height,
+div[id^="def-"] .no-row-height,
+div.callout .callout-body .no-row-height,
+figure.quarto-float-tbl .no-row-height {
+  height: auto !important;
+  overflow: visible !important;
+}
+
+// Fusnota unutar callouta — tanki gornji separator pa se odvoji od tijela, ali
+// vizualno ostane unutar okvira (a ne razlivena ispod njegova ruba).
+.callout-praksa > .column-margin,
+.callout-empirija > .column-margin,
+.callout-vjezba > .column-margin,
+div.callout .callout-body > .column-margin {
+  margin-top: 0.7rem;
+  padding-top: 0.55rem;
+  border-top: 1px solid $sc-rule;
+}
+.callout-praksa > .column-margin > div,
+.callout-empirija > .column-margin > div,
+.callout-vjezba > .column-margin > div,
+div.callout .callout-body > .column-margin > div { margin: 0; }
+.callout-praksa > .column-margin p,
+.callout-empirija > .column-margin p,
+.callout-vjezba > .column-margin p,
+div.callout .callout-body > .column-margin p { margin-bottom: 0; }
 
 // =============================================================
 // Hypothesis — tematizirana oker oznaka umjesto zadane žute
