@@ -34,6 +34,104 @@ Logika je jednostavna. Stranka koja zauzme krajnju poziciju osvaja birače sa sv
 
 Medijanski glasač ne određuje samo ideološku poziciju stranaka, nego i konkretne fiskalne parametre koji uključuju visinu poreznih stopa, opseg socijalnih transfera, razinu javnih investicija i mirovinskih naknada. Model je snažan, ali počiva na strogim pretpostavkama o jednoj ideološkoj dimenziji, dvjema strankama, potpunoj informiranosti i sigurnosti da će svi izaći na izbore. Kada te pretpostavke padnu, slika postaje složenija.
 
+Logika konvergencije lakše se vidi nego opiše. Graf koji slijedi prikazuje raspodjelu birača na ideološkoj osi i položaj dviju stranaka te izračunava udio glasova koji svaka osvaja kada svaki birač glasuje za bližu. Graf je interaktivan, pa klizači pomiču stranke po osi, čime se vidi zašto se objema isplati kretati prema medijanu.
+
+::: {.content-visible when-format="html"}
+```{ojs}
+//| echo: false
+viewof mv_controls = Inputs.form({
+  pA: Inputs.range([0, 1], {value: 0.3, step: 0.01, label: "Pozicija stranke A:"}),
+  pB: Inputs.range([0, 1], {value: 0.7, step: 0.01, label: "Pozicija stranke B:"})
+})
+```
+
+```{ojs}
+//| echo: false
+//| label: fig-medijanski-glasac
+//| fig-cap: "Natjecanje za medijanskog glasača. Svaki birač glasuje za bližu stranku, pa svaka dobiva poticaj kretati se prema sredini; ravnoteža je kad obje stranke stoje u medijanu i dijele glasove napola."
+//| fig-alt: "Zvonolika raspodjela birača na ideološkoj osi od ljevice do desnice. Dvije okomite crte označavaju položaj stranaka A i B, a iscrtkana crta medijan u sredini. Površina ispod krivulje obojena je u dvije boje prema tome kojoj je stranci birač bliži, a iznad grafa ispisani su udjeli glasova i pobjednik."
+{
+  const pA = mv_controls.pA, pB = mv_controls.pB;
+  const mu = 0.5, sigma = 0.18;
+  const dens = (x) => Math.exp(-0.5 * ((x - mu) / sigma) ** 2);
+  const xs = d3.range(0, 1.0001, 0.004);
+  const data = xs.map(x => ({x, d: dens(x), side: Math.abs(x - pA) <= Math.abs(x - pB) ? "A" : "B"}));
+  const total = d3.sum(data, p => p.d);
+  const shareA = d3.sum(data.filter(p => p.side === "A"), p => p.d) / total;
+  const shareB = 1 - shareA;
+  const winner = Math.abs(shareA - shareB) < 0.005 ? "neriješeno" : (shareA > shareB ? "A" : "B");
+
+  return Plot.plot({
+    width: 760,
+    height: 420,
+    marginLeft: 52,
+    marginTop: 56,
+    marginBottom: 50,
+    style: {fontSize: "12px", fontFamily: "Public Sans, system-ui, sans-serif", color: "#3A332D"},
+    x: {label: "Ljevica  ←  ideološka os  →  Desnica", domain: [0, 1]},
+    y: {label: "↑ Gustoća birača", domain: [0, 1.2]},
+    marks: [
+      Plot.areaY(data.filter(p => p.side === "A"), {x: "x", y: "d", fill: "#4A6B5C", fillOpacity: 0.35}),
+      Plot.areaY(data.filter(p => p.side === "B"), {x: "x", y: "d", fill: "#6B1F26", fillOpacity: 0.35}),
+      Plot.line(data, {x: "x", y: "d", stroke: "#1C1916", strokeWidth: 1.5}),
+      Plot.ruleX([0.5], {stroke: "#6B6357", strokeDasharray: "4,3"}),
+      Plot.ruleX([pA], {stroke: "#4A6B5C", strokeWidth: 2.5}),
+      Plot.ruleX([pB], {stroke: "#6B1F26", strokeWidth: 2.5}),
+      Plot.text([{x: pA, y: 1.04}], {x: "x", y: "y", text: ["A"], fill: "#4A6B5C", fontSize: 14, fontWeight: 700}),
+      Plot.text([{x: pB, y: 1.04}], {x: "x", y: "y", text: ["B"], fill: "#6B1F26", fontSize: 14, fontWeight: 700}),
+      Plot.text([{x: 0.5, y: 1.04}], {x: "x", y: "y", text: ["medijan"], fill: "#6B6357", fontSize: 10}),
+      Plot.text([`Stranka A ${(shareA*100).toFixed(0)} %      Stranka B ${(shareB*100).toFixed(0)} %      pobjednik: ${winner}`],
+        {frameAnchor: "top", dy: -32, fontSize: 13, fontWeight: 700, fill: "#1C1916"})
+    ]
+  });
+}
+```
+
+**Što isprobati.** (1) Razmaknite stranke prema krajevima i vidjet ćete kako ona bliža sredini osvaja veći dio glasova. (2) Pomičite jednu stranku prema medijanu i pratite kako joj udio raste sve dok ne prestigne suparnicu, što objema daje poticaj da se približe sredini. (3) Postavite obje stranke u medijan i uvjerite se da se glasovi dijele napola, pa nijedna jednostranim pomakom više ne može dobiti, što je upravo ravnoteža medijanskoga glasača.
+:::
+
+::: {.content-visible when-format="pdf"}
+```{r}
+#| label: fig-medijanski-glasac-print
+#| echo: false
+#| fig-cap: "Natjecanje za medijanskog glasača. Svaki birač glasuje za bližu stranku, pa svaka dobiva poticaj kretati se prema sredini; ravnoteža je kad obje stranke stoje u medijanu i dijele glasove napola."
+#| fig-alt: "Zvonolika raspodjela birača na ideološkoj osi od ljevice do desnice. Dvije okomite crte označavaju položaj stranaka A i B, a iscrtkana crta medijan u sredini. Površina ispod krivulje obojena je u dvije boje prema tome kojoj je stranci birač bliži, a iznad grafa ispisani su udjeli glasova i pobjednik."
+#| fig-width: 7.6
+#| fig-height: 4.2
+# Statički PDF blizanac interaktivnog OJS grafa (zadane vrijednosti: pA = 0.3, pB = 0.7).
+source("R/setup.R")
+
+pA <- 0.3; pB <- 0.7
+mu <- 0.5; sigma <- 0.18
+dens <- function(x) exp(-0.5 * ((x - mu) / sigma)^2)
+xs <- seq(0, 1, by = 0.004)
+df <- data.frame(x = xs, d = dens(xs))
+df$side <- ifelse(abs(df$x - pA) <= abs(df$x - pB), "A", "B")
+total  <- sum(df$d)
+shareA <- sum(df$d[df$side == "A"]) / total
+shareB <- 1 - shareA
+winner <- if (abs(shareA - shareB) < 0.005) "neriješeno" else if (shareA > shareB) "A" else "B"
+
+ggplot(df, aes(x, d)) +
+  geom_area(data = subset(df, side == "A"), fill = "#4A6B5C", alpha = 0.35) +
+  geom_area(data = subset(df, side == "B"), fill = "#6B1F26", alpha = 0.35) +
+  geom_line(color = "#1C1916", linewidth = 0.7) +
+  geom_vline(xintercept = 0.5, linetype = "dashed", color = "#6B6357", linewidth = 0.4) +
+  geom_vline(xintercept = pA, color = "#4A6B5C", linewidth = 1.0) +
+  geom_vline(xintercept = pB, color = "#6B1F26", linewidth = 1.0) +
+  annotate("text", x = pA, y = 1.05, label = "A", color = "#4A6B5C", fontface = "bold", size = 4.5) +
+  annotate("text", x = pB, y = 1.05, label = "B", color = "#6B1F26", fontface = "bold", size = 4.5) +
+  annotate("text", x = 0.5, y = 1.05, label = "medijan", color = "#6B6357", size = 3) +
+  annotate("text", x = 0.5, y = 1.15,
+           label = sprintf("Stranka A %.0f %%   Stranka B %.0f %%   pobjednik: %s", shareA*100, shareB*100, winner),
+           fontface = "bold", size = 4, color = "#1C1916") +
+  scale_y_continuous(limits = c(0, 1.2), expand = c(0, 0)) +
+  scale_x_continuous(limits = c(0, 1), expand = c(0, 0)) +
+  labs(x = "Ljevica  <-  ideoloska os  ->  Desnica", y = "Gustoća birača") +
+  theme_pubfin()
+```
+:::
+
 Najkrhkija je pretpostavka o jednoj dimenziji. Stabilan pobjednik na sredini, kako pokazujemo u poglavlju o kolektivnom izboru, postoji samo dok se preferencije mogu poredati na jednoj osi, a čim politika postane višedimenzionalna, te središnje ravnoteže nestaje. Upravo zato ista logika koja predviđa konvergenciju prema centru istodobno objašnjava i polarizaciju koju razrađujemo u nastavku.
 
 ::: {.callout-praksa}
@@ -55,6 +153,90 @@ Najmoćniji alat te diferencijacije jest **pakiranje** (*bundling*). Stranka mo�
 Mehanika uspjeha takvog pakiranja izravno se oslanja na racionalnu neinformiranost o kojoj govori sljedeća sekcija. Birač koji nema poticaj proučavati program ne može sam rastaviti paket na sastavne dijelove i procijeniti njihovu međusobnu konzistentnost. On glas dodjeljuje paketu kao cjelini, na temelju jednog ili dva najistaknutija elementa, dok ostatak prolazi neprimijećeno. Stranka tako u istom programskom okviru može prodavati nekoliko različitih obećanja različitim ciljanim skupinama, a interna proturječja ne kažnjavaju je na izborima sve dok nije izložena objavljenom programskom dokumentu na koji se može pozvati.
 
 Iz toga slijedi važna posljedica za dizajn izbornih institucija. Sustavi koji potiču izradu detaljnih, javno objavljenih i obvezujućih programskih dokumenata (referendumski elementi, obvezne procjene fiskalnih učinaka u programu, neovisne usporedne ocjene programa) povećavaju cijenu pakiranja jer otežavaju održavanje različitih obećanja prema različitim publikama. Sustavi u kojima programi imaju primarno marketinšku funkciju omogućuju pakiranje da bude središnji strateški alat, što u dugom roku produbljuje jaz između onoga što stranka u kampanji obeća i onoga što na vlasti može provesti.
+
+Pakiranje ipak ima prirodnu granicu. Svako dodatno obećanje isprva donosi nove glasove, ali u nekom trenutku obilje obećanja počne rušiti vjerodostojnost stranke, pa ukupna podrška opada [@downs1957]. Graf koji slijedi prikazuje tu obrnutu krivulju podrške u ovisnosti o broju obećanja. Graf je interaktivan, pa klizači mijenjaju koliko birači nagrađuju obećanja i koliko kažnjavaju izgubljenu vjerodostojnost, čime se pomiče broj obećanja pri kojem je podrška najveća.
+
+::: {.content-visible when-format="html"}
+```{ojs}
+//| echo: false
+viewof dp_controls = Inputs.form({
+  a: Inputs.range([0.5, 3], {value: 2, step: 0.1, label: "Dobitak podrške po obećanju a:"}),
+  b: Inputs.range([0.1, 1], {value: 0.2, step: 0.02, label: "Kazna za nevjerodostojnost b:"})
+})
+```
+
+```{ojs}
+//| echo: false
+//| label: fig-downs-obecanja
+//| fig-cap: "Podrška u ovisnosti o broju obećanja. Isprva svako obećanje diže podršku, no previše obećanja ruši vjerodostojnost, pa podrška opada; najviša je na vrhu krivulje."
+//| fig-alt: "Obrnuta krivulja u obliku slova U naopako. Vodoravna os je broj obećanja ili opseg potrošnje, okomita politička podrška. Krivulja raste od ishodišta do vrha, a zatim pada. Točka i iscrtkana crta označavaju broj obećanja pri kojem je podrška najveća."
+{
+  const a = dp_controls.a, b = dp_controls.b;
+  const sup = (p) => Math.max(0, a * p - b * p * p);
+  const ps = d3.range(0, 10.001, 0.05);
+  const curve = ps.map(p => ({p, s: sup(p)}));
+  const pStar = a / (2 * b);
+  const sMax = sup(pStar);
+  const ymax = Math.max(6, sMax * 1.25);
+
+  return Plot.plot({
+    width: 760,
+    height: 420,
+    marginLeft: 55,
+    marginTop: 50,
+    marginBottom: 50,
+    style: {fontSize: "12px", fontFamily: "Public Sans, system-ui, sans-serif", color: "#3A332D"},
+    x: {label: "Broj obećanja / opseg potrošnje →", domain: [0, 10]},
+    y: {label: "↑ Politička podrška", domain: [0, ymax], grid: true},
+    marks: [
+      Plot.ruleY([0], {stroke: "#C9C3B8"}),
+      Plot.line(curve, {x: "p", y: "s", stroke: "#2D5A8E", strokeWidth: 2.5, clip: true}),
+      Plot.ruleX([pStar], {stroke: "#6B6357", strokeDasharray: "4,3", clip: true}),
+      Plot.dot([{p: pStar, s: sMax}], {x: "p", y: "s", r: 5, fill: "#6B1F26", stroke: "white", strokeWidth: 2, clip: true}),
+      Plot.text([pStar <= 10 ? `najveća podrška pri ${pStar.toFixed(1)} obećanja` : "podrška na ovom rasponu još raste"],
+        {frameAnchor: "top", dy: -30, fontSize: 13, fontWeight: 700, fill: "#2D5A8E"})
+    ]
+  });
+}
+```
+
+**Što isprobati.** (1) Povećajte kaznu za nevjerodostojnost i vrh krivulje pomiče se ulijevo, jer kada birači oštrije kažnjavaju neostvariva obećanja, stranci se isplati obećati manje. (2) Povećajte dobitak po obećanju i vrh se pomiče udesno, pa stranka može obećati više prije nego što izgubi vjerodostojnost. (3) Pogledajte oba kraja krivulje i uvjerite se da i premalo i previše obećanja vode niskoj podršci, a najbolji izbor leži između njih.
+:::
+
+::: {.content-visible when-format="pdf"}
+```{r}
+#| label: fig-downs-obecanja-print
+#| echo: false
+#| fig-cap: "Podrška u ovisnosti o broju obećanja. Isprva svako obećanje diže podršku, no previše obećanja ruši vjerodostojnost, pa podrška opada; najviša je na vrhu krivulje."
+#| fig-alt: "Obrnuta krivulja u obliku slova U naopako. Vodoravna os je broj obećanja ili opseg potrošnje, okomita politička podrška. Krivulja raste od ishodišta do vrha, a zatim pada. Točka i iscrtkana crta označavaju broj obećanja pri kojem je podrška najveća."
+#| fig-width: 7.6
+#| fig-height: 4.2
+# Statički PDF blizanac interaktivnog OJS grafa (zadane vrijednosti: a = 2, b = 0.2).
+source("R/setup.R")
+
+a <- 2; b <- 0.2
+sup <- function(p) pmax(0, a * p - b * p * p)
+ps <- seq(0, 10, by = 0.05)
+df <- data.frame(p = ps, s = sup(ps))
+pStar <- a / (2 * b)
+sMax  <- sup(pStar)
+ymax  <- max(6, sMax * 1.25)
+
+ggplot(df, aes(p, s)) +
+  geom_hline(yintercept = 0, color = "#C9C3B8") +
+  geom_line(linewidth = 1.1, color = "#2D5A8E") +
+  geom_segment(aes(x = pStar, xend = pStar, y = 0, yend = sMax),
+               linetype = "dashed", linewidth = 0.4, color = "#6B6357") +
+  geom_point(aes(x = pStar, y = sMax), size = 3, shape = 21,
+             fill = "#6B1F26", color = "white", stroke = 1) +
+  annotate("text", x = pStar, y = sMax, label = sprintf("vrh pri %.1f obećanja", pStar),
+           vjust = -1, fontface = "bold", size = 3.8, color = "#2D5A8E") +
+  scale_y_continuous(limits = c(0, ymax), expand = c(0, 0)) +
+  scale_x_continuous(limits = c(0, 10), expand = c(0, 0)) +
+  labs(x = "Broj obećanja / opseg potrošnje", y = "Politička podrška") +
+  theme_pubfin()
+```
+:::
 
 Druga je strategija **herestetika**, vještina strukturiranja političkog prostora i nametanja tema na kojima stranka ima komparativnu prednost [@riker1968]. Umjesto da se natječu ondje gdje su slabije, stranke nastoje nametnuti teme koje im idu u prilog. Kada su velike stranke ekonomski slične, natjecanje se premješta na identitetska, sigurnosna ili povijesna pitanja. Tomu treba dodati i **negativnu kampanju** u kojoj je diskreditiranje protivnika često jeftinije i učinkovitije od uvjeravanja birača u superiornost vlastitog programa, premda dugoročno smanjuje povjerenje u politički sustav.
 

@@ -65,6 +65,114 @@ Država regulacijom određuje pravila tržišne utakmice. Ona propisuje standard
 
 Ipak, regulacija nije bez troškova. Prekomjerna ili loše dizajnirana regulacija može povećati troškove poslovanja, smanjiti konkurenciju, usporiti inovacije i stvoriti administrativne barijere. Regulacija koja je formalno uvedena radi zaštite potrošača može u praksi zaštititi postojeće ponuđače od konkurencije [@stigler1971; @stiglitz2015]. Poseban problem je regulatorno zarobljavanje. Zato bi svaka regulacija trebala odgovoriti na nekoliko pitanja, počevši od toga koji problem rješava, zašto tržište samo ne može riješiti problem, postoje li blaži instrumenti, koliko regulacija košta, tko snosi trošak, tko ima korist i kako će se mjeriti njezina učinkovitost.
 
+Taj se trošak može i nacrtati. Graf koji slijedi prikazuje tržište na kojem mjera, primjerice porez ili ograničenje, razdvaja cijenu koju kupci plaćaju od one koju proizvođači primaju, smanjuje razmijenjenu količinu ispod konkurentske razine i stvara trokut mrtvog tereta. Graf je interaktivan, pa klizač mijenja jačinu mjere.
+
+::: {.content-visible when-format="html"}
+```{ojs}
+//| echo: false
+viewof reg_controls = Inputs.form({
+  t: Inputs.range([0, 60], {value: 30, step: 1, label: "Jačina mjere (porez/klin) t:"})
+})
+```
+
+```{ojs}
+//| echo: false
+//| label: fig-regulacija-mrtvi-teret
+//| fig-cap: "Regulacija i mrtvi teret. Mjera razdvaja cijenu kupca i proizvođača za iznos t, obara količinu s Q* na Q_reg, a osjenčani trokut je vrijednost koja propada jer se manje razmjenjuje."
+//| fig-alt: "Graf s padajućom krivuljom potražnje i rastućom krivuljom ponude koje se sijeku u konkurentskoj točki Q*. Mjera podiže cijenu kupca iznad i spušta cijenu proizvođača ispod ravnotežne, smanjuje količinu na Q_reg, a osjenčani trokut između Q_reg i Q* prikazuje mrtvi teret."
+{
+  const t = reg_controls.t;
+  const D = (q) => 100 - q;
+  const S = (q) => 20 + q;
+  const Qstar = 40, Pstar = 60;
+  const Qreg = 40 - t / 2;
+  const Pc = D(Qreg), Pp = S(Qreg);
+  const dwl = 0.5 * t * (Qstar - Qreg);
+  const qs = d3.range(0, 81, 1);
+  const demand = qs.map(q => ({q, p: D(q)})).filter(p => p.p >= 0);
+  const supply = qs.map(q => ({q, p: S(q)})).filter(p => p.p <= 100);
+  const tri = [{q: Qreg, p: Pc}, {q: Qreg, p: Pp}, {q: Qstar, p: Pstar}];
+
+  return Plot.plot({
+    width: 760,
+    height: 480,
+    marginLeft: 55,
+    marginTop: 52,
+    marginBottom: 50,
+    style: {fontSize: "12px", fontFamily: "Public Sans, system-ui, sans-serif", color: "#3A332D"},
+    x: {label: "Količina Q →", domain: [0, 80]},
+    y: {label: "↑ Cijena", domain: [0, 100], grid: true},
+    marks: [
+      Plot.line([...tri, tri[0]], {x: "q", y: "p", fill: "#D8B5B3", fillOpacity: 0.65, stroke: "#6B1F26", strokeWidth: 1}),
+      Plot.line(demand, {x: "q", y: "p", stroke: "#2D5A8E", strokeWidth: 2.5}),
+      Plot.line(supply, {x: "q", y: "p", stroke: "#4A6B5C", strokeWidth: 2.5}),
+      Plot.ruleY([Pc], {x1: 0, x2: Qreg, stroke: "#6B6357", strokeDasharray: "4,3"}),
+      Plot.ruleY([Pp], {x1: 0, x2: Qreg, stroke: "#6B6357", strokeDasharray: "4,3"}),
+      Plot.ruleX([Qreg],  {y1: 0, y2: Pc,    stroke: "#6B6357", strokeDasharray: "4,3"}),
+      Plot.ruleX([Qstar], {y1: 0, y2: Pstar, stroke: "#6B6357", strokeDasharray: "4,3"}),
+      Plot.text([{q: 74, y: D(74)}], {x: "q", y: "y", text: ["potražnja"], dy: -8, fill: "#2D5A8E", fontSize: 11, fontWeight: 600}),
+      Plot.text([{q: 74, y: S(74)}], {x: "q", y: "y", text: ["ponuda"], dy: -8, fill: "#4A6B5C", fontSize: 11, fontWeight: 600}),
+      Plot.text([{q: 1, y: Pc}], {x: "x", y: "y", text: [`cijena kupca ${Pc.toFixed(0)}`], textAnchor: "start", dy: -6, fill: "#6B1F26", fontSize: 10}),
+      Plot.text([{q: 1, y: Pp}], {x: "x", y: "y", text: [`cijena proizvođača ${Pp.toFixed(0)}`], textAnchor: "start", dy: 12, fill: "#4A6B5C", fontSize: 10}),
+      Plot.text([{q: Qreg, y: 2}],  {x: "q", y: "y", text: ["Q_reg"], fill: "#6B6357", fontSize: 11}),
+      Plot.text([{q: Qstar, y: 2}], {x: "q", y: "y", text: ["Q*"], fill: "#6B6357", fontSize: 11}),
+      Plot.text([`Klin t = ${t}      Mrtvi teret = ${dwl.toFixed(0)}`],
+        {frameAnchor: "top", dy: -32, fontSize: 13, fontWeight: 700, fill: "#1C1916"})
+    ]
+  });
+}
+```
+
+**Što isprobati.** (1) Pojačajte mjeru i pratite kako se cijene kupca i proizvođača sve više razmiču, količina pada, a trokut mrtvog tereta naglo raste, otprilike s kvadratom jačine mjere. (2) Spustite mjeru prema nuli i tržište se vraća u konkurentsku točku Q\*, pa mrtvi teret iščezava. (3) Primijetite da i posve dobronamjerna regulacija nosi taj trošak, pa je pravo pitanje vrijedi li korist od nje više od trokuta koji stvara.
+:::
+
+::: {.content-visible when-format="pdf"}
+```{r}
+#| label: fig-regulacija-mrtvi-teret-print
+#| echo: false
+#| fig-cap: "Regulacija i mrtvi teret. Mjera razdvaja cijenu kupca i proizvođača za iznos t, obara količinu s Q* na Q_reg, a osjenčani trokut je vrijednost koja propada jer se manje razmjenjuje."
+#| fig-alt: "Graf s padajućom krivuljom potražnje i rastućom krivuljom ponude koje se sijeku u konkurentskoj točki Q*. Mjera podiže cijenu kupca iznad i spušta cijenu proizvođača ispod ravnotežne, smanjuje količinu na Q_reg, a osjenčani trokut između Q_reg i Q* prikazuje mrtvi teret."
+#| fig-width: 7.6
+#| fig-height: 4.8
+# Statički PDF blizanac interaktivnog OJS grafa (zadana vrijednost: t = 30).
+source("R/setup.R")
+
+t <- 30
+D <- function(q) 100 - q
+S <- function(q) 20 + q
+Qstar <- 40; Pstar <- 60
+Qreg <- 40 - t / 2
+Pc <- D(Qreg); Pp <- S(Qreg)
+dwl <- 0.5 * t * (Qstar - Qreg)
+
+qs <- 0:80
+demand <- subset(data.frame(q = qs, p = D(qs)), p >= 0)
+supply <- subset(data.frame(q = qs, p = S(qs)), p <= 100)
+tri <- data.frame(q = c(Qreg, Qreg, Qstar), p = c(Pc, Pp, Pstar))
+
+ggplot() +
+  geom_polygon(data = tri, aes(q, p), fill = "#D8B5B3", alpha = 0.65, color = "#6B1F26", linewidth = 0.4) +
+  geom_line(data = demand, aes(q, p), color = "#2D5A8E", linewidth = 1.1) +
+  geom_line(data = supply, aes(q, p), color = "#4A6B5C", linewidth = 1.1) +
+  geom_segment(aes(x = 0, xend = Qreg, y = Pc, yend = Pc), linetype = "dashed", color = "#6B6357", linewidth = 0.4) +
+  geom_segment(aes(x = 0, xend = Qreg, y = Pp, yend = Pp), linetype = "dashed", color = "#6B6357", linewidth = 0.4) +
+  geom_segment(aes(x = Qreg,  xend = Qreg,  y = 0, yend = Pc),    linetype = "dashed", color = "#6B6357", linewidth = 0.4) +
+  geom_segment(aes(x = Qstar, xend = Qstar, y = 0, yend = Pstar), linetype = "dashed", color = "#6B6357", linewidth = 0.4) +
+  annotate("text", x = 74, y = D(74) + 4, label = "potražnja", color = "#2D5A8E", fontface = "bold", size = 3.2) +
+  annotate("text", x = 74, y = S(74) + 4, label = "ponuda", color = "#4A6B5C", fontface = "bold", size = 3.2) +
+  annotate("text", x = 1, y = Pc + 4, label = sprintf("cijena kupca %.0f", Pc), hjust = 0, color = "#6B1F26", size = 3) +
+  annotate("text", x = 1, y = Pp - 4, label = sprintf("cijena proizvođača %.0f", Pp), hjust = 0, color = "#4A6B5C", size = 3) +
+  annotate("text", x = Qreg, y = 2, label = "Q_reg", color = "#6B6357", size = 3.2) +
+  annotate("text", x = Qstar, y = 2, label = "Q*", color = "#6B6357", size = 3.2) +
+  annotate("text", x = 2, y = 97, label = sprintf("Klin t = %d   Mrtvi teret = %.0f", t, dwl),
+           hjust = 0, fontface = "bold", size = 4, color = "#1C1916") +
+  scale_x_continuous(limits = c(0, 80), expand = c(0, 0)) +
+  scale_y_continuous(limits = c(0, 100), expand = c(0, 0)) +
+  labs(x = "Količina Q", y = "Cijena") +
+  theme_pubfin()
+```
+:::
+
 ## Subvencije
 
 Dok regulacija usmjerava ponašanje zabranom i obvezom, **subvencija** to čini novcem, nagrađujući ono što država želi potaknuti. Njezina je snaga upravo u toj raznolikosti oblika, jer potpora rijetko dolazi samo kao isplata iz proračuna.

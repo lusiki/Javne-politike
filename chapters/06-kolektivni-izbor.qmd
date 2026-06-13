@@ -517,6 +517,102 @@ Kada se ciklusi moraju prekinuti, dolazi do kompromisa, ali kompromisi u politic
 
 Slika ipak nije jednoznačno negativna. Obično većinsko glasovanje broji glave, ali ne mjeri koliko je kome do čega stalo, pa može odbiti mjeru koja malobrojnoj, ali snažno zainteresiranoj skupini znači mnogo, a ravnodušnoj većini šteti tek neznatno. Trgovanje glasovima upravo tu prazninu popunjava jer dopušta da se glas o pitanju koje nam je sporedno zamijeni za podršku o pitanju koje nam je važno, čime mogu proći obostrano korisni dogovori koje bi anonimno glasovanje odbacilo [@buchanan1962]. Isti mehanizam postaje štetan kada koalicija koja trguje prebaci trošak na one koji u trgovini ne sudjeluju, pa neto učinak na blagostanje nije unaprijed zadan, nego ovisi o tome jesu li koristi koncentrirane na sudionike ili su troškovi rašireni na vanjske strane. Zato Buchanan i Tullock logrolling i ne promatraju kao puku patologiju, nego kao razlog zašto je dizajn ustavnih pravila važniji od pojedinačnog ishoda.
 
+Tu se mehaniku najlakše vidi na slici dobitaka i gubitaka dvaju zastupnika. Graf koji slijedi prikazuje dva projekta. Projekt A koristi prvom zastupniku a šteti drugom, projekt B obrnuto, pa nijedan sam ne bi prošao. Tek njihov spoj, A plus B, oba zastupnika smješta u područje u kojem obojica dobivaju, čime paket dobiva većinu. Graf je interaktivan, pa klizači mijenjaju dobitak od vlastitog projekta i gubitak od tuđega.
+
+::: {.content-visible when-format="html"}
+```{ojs}
+//| echo: false
+viewof lr_controls = Inputs.form({
+  g: Inputs.range([1, 9], {value: 6, step: 0.5, label: "Dobitak od vlastitog projekta g:"}),
+  l: Inputs.range([1, 9], {value: 4, step: 0.5, label: "Gubitak od tuđeg projekta l:"})
+})
+```
+
+```{ojs}
+//| echo: false
+//| label: fig-logrolling
+//| fig-cap: "Trgovanje glasovima na ravnini dobitaka dvaju zastupnika. Projekti A i B svaki jednom zastupniku donose gubitak, pa sami padaju; spojeni u paket A+B mogu pasti u zeleno polje u kojem oba dobivaju i tada prolaze."
+//| fig-alt: "Ravnina s dobitkom zastupnika 1 na vodoravnoj i zastupnika 2 na okomitoj osi, podijeljena na četiri kvadranta crtama kroz ishodište. Gornji desni kvadrant, gdje oba dobivaju, osjenčan je zeleno. Točka A je dolje desno, B gore lijevo, a njihov zbroj A+B leži u zelenom polju kad je dobitak veći od gubitka."
+{
+  const g = lr_controls.g, l = lr_controls.l;
+  const A = {x: g, y: -l}, B = {x: -l, y: g}, AB = {x: g - l, y: g - l};
+  const passes = AB.x > 0 && AB.y > 0;
+
+  return Plot.plot({
+    width: 540,
+    height: 500,
+    marginLeft: 56,
+    marginTop: 52,
+    marginBottom: 50,
+    style: {fontSize: "12px", fontFamily: "Public Sans, system-ui, sans-serif", color: "#3A332D"},
+    x: {label: "Dobitak / gubitak zastupnika 1 →", domain: [-10, 10]},
+    y: {label: "↑ Dobitak / gubitak zastupnika 2", domain: [-10, 10]},
+    marks: [
+      Plot.rect([{x1: 0, x2: 10, y1: 0, y2: 10}], {x1: "x1", x2: "x2", y1: "y1", y2: "y2", fill: "#4A6B5C", fillOpacity: 0.13}),
+      Plot.text([{x: 9.6, y: 9.4}], {x: "x", y: "y", text: ["oba dobivaju"], textAnchor: "end", fill: "#4A6B5C", fontSize: 11, fontWeight: 600}),
+      Plot.ruleX([0], {stroke: "#1C1916", strokeWidth: 1}),
+      Plot.ruleY([0], {stroke: "#1C1916", strokeWidth: 1}),
+      Plot.link([{x1: A.x, y1: A.y, x2: AB.x, y2: AB.y}], {x1: "x1", y1: "y1", x2: "x2", y2: "y2", stroke: "#6B6357", strokeDasharray: "3,3"}),
+      Plot.link([{x1: B.x, y1: B.y, x2: AB.x, y2: AB.y}], {x1: "x1", y1: "y1", x2: "x2", y2: "y2", stroke: "#6B6357", strokeDasharray: "3,3"}),
+      Plot.dot([A], {x: "x", y: "y", r: 6, fill: "#6B1F26", stroke: "white", strokeWidth: 2}),
+      Plot.dot([B], {x: "x", y: "y", r: 6, fill: "#4A6B5C", stroke: "white", strokeWidth: 2}),
+      Plot.dot([AB], {x: "x", y: "y", r: 7, fill: "#1C1916", stroke: "white", strokeWidth: 2}),
+      Plot.text([A], {x: "x", y: "y", text: ["A"], dx: 12, fontSize: 14, fontWeight: 700, fill: "#6B1F26"}),
+      Plot.text([B], {x: "x", y: "y", text: ["B"], dx: -12, fontSize: 14, fontWeight: 700, fill: "#4A6B5C"}),
+      Plot.text([AB], {x: "x", y: "y", text: ["A+B"], dy: -14, fontSize: 14, fontWeight: 700, fill: "#1C1916"}),
+      Plot.text([`Paket A+B ${passes ? "prolazi (oba dobivaju)" : "pada"}`],
+        {frameAnchor: "top", dy: -32, fontSize: 13, fontWeight: 700, fill: passes ? "#1C7C54" : "#6B1F26"})
+    ]
+  });
+}
+```
+
+**Što isprobati.** (1) Postavite dobitak veći od gubitka i točka A+B sleti u zeleno polje u kojem oba zastupnika dobivaju, pa paket prolazi iako bi svaki projekt zasebno pao. (2) Smanjite dobitak ispod gubitka i A+B padne u suprotni kut, pa trgovina glasovima više nije obostrano korisna. (3) Primijetite da pojedinačni projekti A i B uvijek leže izvan zelenog polja, jer svaki jednom zastupniku donosi gubitak, a tek ih spajanje čini prihvatljivima objema stranama.
+:::
+
+::: {.content-visible when-format="pdf"}
+```{r}
+#| label: fig-logrolling-print
+#| echo: false
+#| fig-cap: "Trgovanje glasovima na ravnini dobitaka dvaju zastupnika. Projekti A i B svaki jednom zastupniku donose gubitak, pa sami padaju; spojeni u paket A+B mogu pasti u zeleno polje u kojem oba dobivaju i tada prolaze."
+#| fig-alt: "Ravnina s dobitkom zastupnika 1 na vodoravnoj i zastupnika 2 na okomitoj osi, podijeljena na četiri kvadranta crtama kroz ishodište. Gornji desni kvadrant, gdje oba dobivaju, osjenčan je zeleno. Točka A je dolje desno, B gore lijevo, a njihov zbroj A+B leži u zelenom polju kad je dobitak veći od gubitka."
+#| fig-width: 5.4
+#| fig-height: 5.0
+# Statički PDF blizanac interaktivnog OJS grafa (zadane vrijednosti: g = 6, l = 4).
+source("R/setup.R")
+
+g <- 6; l <- 4
+A  <- c(g, -l); B <- c(-l, g); AB <- c(g - l, g - l)
+passes <- AB[1] > 0 && AB[2] > 0
+
+pts <- data.frame(
+  x = c(A[1], B[1], AB[1]),
+  y = c(A[2], B[2], AB[2]),
+  lab = c("A", "B", "A+B"),
+  col = c("#6B1F26", "#4A6B5C", "#1C1916")
+)
+
+ggplot() +
+  annotate("rect", xmin = 0, xmax = 10, ymin = 0, ymax = 10, fill = "#4A6B5C", alpha = 0.13) +
+  annotate("text", x = 9.6, y = 9.4, label = "oba dobivaju", hjust = 1, color = "#4A6B5C", fontface = "bold", size = 3.4) +
+  geom_hline(yintercept = 0, color = "#1C1916", linewidth = 0.5) +
+  geom_vline(xintercept = 0, color = "#1C1916", linewidth = 0.5) +
+  geom_segment(aes(x = A[1], y = A[2], xend = AB[1], yend = AB[2]), linetype = "dashed", color = "#6B6357", linewidth = 0.4) +
+  geom_segment(aes(x = B[1], y = B[2], xend = AB[1], yend = AB[2]), linetype = "dashed", color = "#6B6357", linewidth = 0.4) +
+  geom_point(data = pts, aes(x, y), size = 4, shape = 21, fill = pts$col, color = "white", stroke = 1.1) +
+  annotate("text", x = A[1] + 0.7, y = A[2], label = "A", color = "#6B1F26", fontface = "bold", size = 5) +
+  annotate("text", x = B[1] - 0.7, y = B[2], label = "B", color = "#4A6B5C", fontface = "bold", size = 5) +
+  annotate("text", x = AB[1], y = AB[2] + 0.9, label = "A+B", color = "#1C1916", fontface = "bold", size = 5) +
+  annotate("text", x = 0, y = 9.6,
+           label = if (passes) "Paket A+B prolazi (oba dobivaju)" else "Paket A+B pada",
+           fontface = "bold", size = 4, color = if (passes) "#1C7C54" else "#6B1F26") +
+  scale_x_continuous(limits = c(-10, 10), expand = c(0, 0)) +
+  scale_y_continuous(limits = c(-10, 10), expand = c(0, 0)) +
+  labs(x = "Dobitak / gubitak zastupnika 1", y = "Dobitak / gubitak zastupnika 2") +
+  theme_pubfin()
+```
+:::
+
 ::: {.callout-praksa}
 Pri usvajanju državnog proračuna u Hrvatskoj zastupnici iz različitih regija često uzajamno podržavaju infrastrukturne projekte (autoceste, luke, bolnice), iako bi svaki projekt zasebno teško prošao, pa su rezultat brojni „politički" projekti niske ekonomske opravdanosti. Na razini EU pregovori o Višegodišnjem financijskom okviru i fondu NextGenerationEU uključuju pakete u kojima se poljoprivredne subvencije trguju za kohezijske ili zelene fondove, pa je konačni paket veći i skuplji nego što bi ga ijedna zemlja samostalno podržala. Klasičan svjetski primjer iste logike jest američki *pork-barrel*, u kojem kongresnici podržavaju projekte kolega u zamjenu za podršku vlastitima.[^wp-ch06c]
 :::

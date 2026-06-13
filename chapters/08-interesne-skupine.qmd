@@ -60,6 +60,114 @@ Najveću štetu interesne skupine ne nanose onime što uzmu, nego onime što pot
 
 Lov na rentu društveno je štetan na dva načina. Prvi je izravan jer povlastica iskrivljuje cijene, ograničava konkurenciju i prebacuje dohodak prema povlaštenoj skupini. Drugi je suptilniji, ali jednako važan, a tiče se samih resursa uloženih u nadmetanje za rentu, koji uključuju vrijeme, novac, stručnjake, lobiranje i pravne timove, a koji predstavljaju čisti društveni gubitak jer se ne koriste za proizvodnju, inovacije ili poboljšanje usluga.
 
+Oba se gubitka mogu vidjeti na istom grafu. Graf koji slijedi prikazuje tržište na kojem povlastica ograničava količinu ispod konkurentske razine. Osjenčani pravokutnik je renta, dobitak koji povlaštena skupina prisvaja i za koji se u nadmetanju troše resursi, a trokut je mrtvi teret, vrijednost koja propada jer se manje proizvodi i razmjenjuje. Graf je interaktivan, pa klizač pooštrava ili popušta ograničenje količine.
+
+::: {.content-visible when-format="html"}
+```{ojs}
+//| echo: false
+viewof rs_controls = Inputs.form({
+  Qreg: Inputs.range([5, 39], {value: 25, step: 1, label: "Dopuštena količina Q_reg (uz Q* = 40):"})
+})
+```
+
+```{ojs}
+//| echo: false
+//| label: fig-lov-na-rentu
+//| fig-cap: "Lov na rentu na tržištu s ograničenom količinom. Pravokutnik je renta koju povlastica stvara i koja se u nadmetanju troši, a trokut je mrtvi teret zbog premale razmjene; oba rastu kako se ograničenje pooštrava."
+//| fig-alt: "Graf s padajućom krivuljom potražnje i rastućom krivuljom ponude. Količina je ograničena na Q_reg, lijevo od konkurentske točke Q*. Osjenčani pravokutnik između cijene i graničnog troška do Q_reg označava rentu, a osjenčani trokut između Q_reg i Q* mrtvi teret."
+{
+  const Qreg = rs_controls.Qreg;
+  const D = (q) => 100 - q;
+  const S = (q) => 20 + q;
+  const Qstar = 40, Pstar = 60;
+  const Dr = D(Qreg), Sr = S(Qreg);
+  const rent = (Dr - Sr) * Qreg;
+  const dwl = 0.5 * (Dr - Sr) * (Qstar - Qreg);
+  const qs = d3.range(0, 81, 1);
+  const demand = qs.map(q => ({q, p: D(q)})).filter(p => p.p >= 0);
+  const supply = qs.map(q => ({q, p: S(q)})).filter(p => p.p <= 100);
+  const rect = [{q: 0, p: Sr}, {q: Qreg, p: Sr}, {q: Qreg, p: Dr}, {q: 0, p: Dr}];
+  const tri  = [{q: Qreg, p: Dr}, {q: Qreg, p: Sr}, {q: Qstar, p: Pstar}];
+
+  return Plot.plot({
+    width: 760,
+    height: 480,
+    marginLeft: 55,
+    marginTop: 52,
+    marginBottom: 50,
+    style: {fontSize: "12px", fontFamily: "Public Sans, system-ui, sans-serif", color: "#3A332D"},
+    x: {label: "Količina Q →", domain: [0, 80]},
+    y: {label: "↑ Cijena / granični trošak", domain: [0, 100], grid: true},
+    marks: [
+      Plot.line([...rect, rect[0]], {x: "q", y: "p", fill: "#E8D6B8", fillOpacity: 0.6, stroke: "#C8985E", strokeWidth: 1}),
+      Plot.line([...tri, tri[0]],   {x: "q", y: "p", fill: "#D8B5B3", fillOpacity: 0.65, stroke: "#6B1F26", strokeWidth: 1}),
+      Plot.line(demand, {x: "q", y: "p", stroke: "#2D5A8E", strokeWidth: 2.5}),
+      Plot.line(supply, {x: "q", y: "p", stroke: "#4A6B5C", strokeWidth: 2.5}),
+      Plot.ruleX([Qreg],  {y1: 0, y2: Dr,    stroke: "#6B6357", strokeDasharray: "4,3"}),
+      Plot.ruleX([Qstar], {y1: 0, y2: Pstar, stroke: "#6B6357", strokeDasharray: "4,3"}),
+      Plot.text([{q: 74, y: D(74)}], {x: "q", y: "y", text: ["potražnja"], dy: -8, fill: "#2D5A8E", fontSize: 11, fontWeight: 600}),
+      Plot.text([{q: 74, y: S(74)}], {x: "q", y: "y", text: ["ponuda (MC)"], dy: -8, fill: "#4A6B5C", fontSize: 11, fontWeight: 600}),
+      Plot.text([{q: Qreg * 0.5, y: (Sr + Dr) / 2}], {x: "q", y: "y", text: ["renta"], fill: "#9A6F38", fontSize: 12, fontWeight: 700}),
+      Plot.text([{q: Qreg + (Qstar - Qreg) * 0.55, y: Pstar + 6}], {x: "q", y: "y", text: ["mrtvi teret"], fill: "#6B1F26", fontSize: 11, fontWeight: 700}),
+      Plot.text([{q: Qreg, y: 2}],  {x: "q", y: "y", text: ["Q_reg"], fill: "#6B6357", fontSize: 11}),
+      Plot.text([{q: Qstar, y: 2}], {x: "q", y: "y", text: ["Q*"], fill: "#6B6357", fontSize: 11}),
+      Plot.text([`Renta = ${rent.toFixed(0)}      Mrtvi teret = ${dwl.toFixed(0)}`],
+        {frameAnchor: "top", dy: -32, fontSize: 13, fontWeight: 700, fill: "#1C1916"})
+    ]
+  });
+}
+```
+
+**Što isprobati.** (1) Pooštrite ograničenje (smanjite dopuštenu količinu) i pratite kako rastu i renta i mrtvi teret, jer veća oskudica diže cijenu i širi jaz prema graničnom trošku. (2) Popustite ograničenje prema konkurentskoj količini i oba se polja gotovo zatvore, jer bez umjetne oskudice nema ni rente ni gubitka. (3) Prema Tullockovu uvidu zamislite da se cijela renta potroši u nadmetanju za povlasticu, pa stvarni društveni gubitak nije samo trokut, nego i pravokutnik uz njega.
+:::
+
+::: {.content-visible when-format="pdf"}
+```{r}
+#| label: fig-lov-na-rentu-print
+#| echo: false
+#| fig-cap: "Lov na rentu na tržištu s ograničenom količinom. Pravokutnik je renta koju povlastica stvara i koja se u nadmetanju troši, a trokut je mrtvi teret zbog premale razmjene; oba rastu kako se ograničenje pooštrava."
+#| fig-alt: "Graf s padajućom krivuljom potražnje i rastućom krivuljom ponude. Količina je ograničena na Q_reg, lijevo od konkurentske točke Q*. Osjenčani pravokutnik između cijene i graničnog troška do Q_reg označava rentu, a osjenčani trokut između Q_reg i Q* mrtvi teret."
+#| fig-width: 7.6
+#| fig-height: 4.8
+# Statički PDF blizanac interaktivnog OJS grafa (zadana vrijednost: Q_reg = 25).
+source("R/setup.R")
+
+Qreg <- 25
+D <- function(q) 100 - q
+S <- function(q) 20 + q
+Qstar <- 40; Pstar <- 60
+Dr <- D(Qreg); Sr <- S(Qreg)
+rent <- (Dr - Sr) * Qreg
+dwl  <- 0.5 * (Dr - Sr) * (Qstar - Qreg)
+
+qs <- 0:80
+demand <- subset(data.frame(q = qs, p = D(qs)), p >= 0)
+supply <- subset(data.frame(q = qs, p = S(qs)), p <= 100)
+rect <- data.frame(q = c(0, Qreg, Qreg, 0),       p = c(Sr, Sr, Dr, Dr))
+tri  <- data.frame(q = c(Qreg, Qreg, Qstar),      p = c(Dr, Sr, Pstar))
+
+ggplot() +
+  geom_polygon(data = rect, aes(q, p), fill = "#E8D6B8", alpha = 0.6, color = "#C8985E", linewidth = 0.4) +
+  geom_polygon(data = tri,  aes(q, p), fill = "#D8B5B3", alpha = 0.65, color = "#6B1F26", linewidth = 0.4) +
+  geom_line(data = demand, aes(q, p), color = "#2D5A8E", linewidth = 1.1) +
+  geom_line(data = supply, aes(q, p), color = "#4A6B5C", linewidth = 1.1) +
+  geom_segment(aes(x = Qreg,  xend = Qreg,  y = 0, yend = Dr),    linetype = "dashed", color = "#6B6357", linewidth = 0.4) +
+  geom_segment(aes(x = Qstar, xend = Qstar, y = 0, yend = Pstar), linetype = "dashed", color = "#6B6357", linewidth = 0.4) +
+  annotate("text", x = Qreg * 0.5, y = (Sr + Dr) / 2, label = "renta", color = "#9A6F38", fontface = "bold", size = 3.8) +
+  annotate("text", x = Qreg + (Qstar - Qreg) * 0.6, y = Pstar + 7, label = "mrtvi teret", color = "#6B1F26", fontface = "bold", size = 3.4) +
+  annotate("text", x = Qreg, y = 2, label = "Q_reg", color = "#6B6357", size = 3.2) +
+  annotate("text", x = Qstar, y = 2, label = "Q*", color = "#6B6357", size = 3.2) +
+  annotate("text", x = 74, y = D(74) + 4, label = "potražnja", color = "#2D5A8E", fontface = "bold", size = 3.2) +
+  annotate("text", x = 74, y = S(74) + 4, label = "ponuda (MC)", color = "#4A6B5C", fontface = "bold", size = 3.2) +
+  annotate("text", x = 2, y = 97, label = sprintf("Renta = %.0f   Mrtvi teret = %.0f", rent, dwl),
+           hjust = 0, fontface = "bold", size = 4, color = "#1C1916") +
+  scale_x_continuous(limits = c(0, 80), expand = c(0, 0)) +
+  scale_y_continuous(limits = c(0, 100), expand = c(0, 0)) +
+  labs(x = "Količina Q", y = "Cijena / granični trošak") +
+  theme_pubfin()
+```
+:::
+
 ::: {.callout-empirija}
 Empirijske procjene veličine tih gubitaka još su predmet rasprave, ali su sustavno značajne. Kruegerina pionirska studija indijskih i turskih uvoznih dozvola u 1960-ima procijenila je da resursi utrošeni na borbu za rente vrijede 7,3 % bruto društvenog proizvoda u Indiji i 15 % u Turskoj, iznosi koji za red veličine premašuju klasične Harbergerove trokutaste gubitke zbog monopola [@harberger1954; @krueger1974]. Razlika je poučna jer Harbergerov trokut mjeri samo izgubljenu razmjenu zbog previsoke cijene, dok Kruegerina procjena uključuje i stvarne resurse potrošene na samo natjecanje za dozvolu. Kasnija istraživanja procjenjuju da administrativni i pravni resursi koje velike korporacije usmjeravaju prema utjecaju na regulaciju u SAD-u i EU dosežu desetke milijardi eura godišnje, što potvrđuje da društveni trošak povlastice ne staje na iskrivljenoj cijeni, nego se nastavlja u svemu što se potroši da bi se ta povlastica dobila i obranila.
 :::
