@@ -7,7 +7,7 @@ title: "Alokacijska funkcija i tržišni neuspjesi"
 
 1. Što je tržišni neuspjeh i zašto opravdava ulogu države u alokaciji resursa?
 2. Što su javna dobra i zašto ih tržište sustavno podproizvodi?
-3. Kako eksternalije razdvajaju privatne i društvene troškove i koristi?
+3. Kada eksternaliju treba ispraviti porezom ili subvencijom, a kada je dovoljno odrediti vlasnička prava i prepustiti pregovore?
 4. Zašto asimetrične informacije vode k nepovoljnom izboru i moralnom hazardu?
 5. Kako tržišna moć i prirodni monopoli narušavaju učinkovitost?
 6. Po čemu se zajednička i meritorna dobra razlikuju od ostalih tržišnih neuspjeha?
@@ -848,7 +848,76 @@ Kod pozitivnih eksternalija država može koristiti subvencije, javno financiran
 
 Država eksternalije može rješavati i regulacijom. Može propisati maksimalne emisije, tehničke standarde, obveznu uporabu sigurnosne opreme, zabranu odlaganja otpada u rijeke ili standarde energetske učinkovitosti. Može koristiti i tržišne instrumente poput trgovanja emisijskim dozvolama.
 
-Važan doprinos razumijevanju eksternalija dao je Coase [-@coase1960], koji je pokazao da se eksternalije mogu promatrati i kao problem nedovoljno definiranih vlasničkih prava. Ako su prava jasno definirana i ako su transakcijski troškovi niski, privatni akteri mogu pregovorima riješiti problem. Međutim, u mnogim stvarnim situacijama broj pogođenih ljudi je velik, informacije su nepotpune, a pregovaranje je skupo ili nemoguće. Zato država i dalje ima važnu ulogu u definiranju pravila, smanjenju transakcijskih troškova i zaštiti javnog interesa.
+## Coaseov teorem i vlasnička prava
+
+Pigouova logika eksternaliju promatra kao jednosmjernu krivnju u kojoj zagađivač nanosi štetu žrtvi, pa zaključuje da država mora korektivnim porezom ili regulacijom prisiliti zagađivača da internalizira vanjski trošak. Coase [-@coase1960] tu logiku okreće. Eksternalija je nusproizvod interakcije obiju strana, a ne svojstvo jedne od njih. Tvornica koja ispušta dim u nenaseljenom kraju ne stvara nikakav vanjski trošak. Tek kad se nizvodno nasele ribari, oko istog resursa nastaje sukob, pa je šteta jednako tako posljedica njihove prisutnosti kao i tvorničke proizvodnje. Zabrani li država tvornici rad da zaštiti ribare, štetu nanosi vlasnicima, radnicima i potrošačima koji ostaju bez proizvoda. Pitanje s gledišta blagostanja zato nije kako kazniti zagađivača nego kako izbjeći težu od dviju šteta i pronaći razinu aktivnosti koja maksimizira ukupnu vrijednost resursa. Tako preformuliranu, eksternaliju ne definira tržišni neuspjeh nego nedovoljno određena vlasnička prava nad oskudnim dobrom.
+
+Coaseov se uvid najlakše pokaže na modelu pregovaranja dvaju aktera. Tvornica $F$ proizvodi količinu $q$ uz profit $\pi(q)$, pri čemu je funkcija strogo konkavna ($\pi'(q) > 0$, $\pi''(q) < 0$) sve do količine privatnog maksimuma $q_m$, gdje granični profit pada na nulu, $\pi'(q_m) = 0$. Ista proizvodnja stvara zagađenje koje ribarima nizvodno nanosi štetu $D(q)$, koja raste sa sve većom graničnom štetom ($D'(q) > 0$, $D''(q) > 0$). Društveno blagostanje zbroj je profita tvornice umanjen za štetu ribara,
+
+$$W(q) = \pi(q) - D(q).$$
+
+Društveno optimalna proizvodnja $q^*$ maksimizira to blagostanje. Deriviranje po $q$ i izjednačavanje s nulom daje uvjet prvoga reda
+
+$$W'(q^*) = \pi'(q^*) - D'(q^*) = 0 \quad\Longleftrightarrow\quad \pi'(q^*) = D'(q^*),$$
+
+u kojem je granični profit tvornice jednak graničnoj šteti ribara. Pigouovo rješenje do iste točke dolazi izvana, porezom po jedinici $t = D'(q^*)$, koji tvorničin privatni trošak izjednačuje s društvenim. Coase pokazuje da pregovori daju isti $q^*$ neovisno o tome kome su prava dodijeljena, dokle god su transakcijski troškovi zanemarivi.
+
+Pripadnu li prava ribarima, oni imaju pravo na čistu vodu, pa proizvodnja kreće od nule i tvornica im mora platiti naknadu $P$ za pravo na zagađenje. Tvornica pristaje platiti samo dok je naknada manja od profita koji ostvaruje, $P \le \pi(q)$, a ribari je primaju samo dok premašuje štetu, $P \ge D(q)$. Za svaku dodatnu jedinicu tvornica je spremna dati do $\pi'(q)$, a ribari je prihvatiti za bilo što iznad $D'(q)$. Sve dok vrijedi
+
+$$\pi'(q) > D'(q),$$
+
+postoji raspon naknade koji objema stranama koristi, pa proizvodnja raste. Pregovori staju kad se granice izjednače, upravo u $q^*$, jer bi svaka daljnja jedinica nosila veću štetu od profita.
+
+Pripadnu li prava tvornici, ona slobodno kreće od svog privatnog maksimuma $q_m$, gdje ribari trpe najveću štetu, pa sada oni plaćaju njoj za smanjenje proizvodnje. Za smanjenje s $q_m$ na $q$ ribari su spremni dati do iznosa izbjegnute štete $D(q_m) - D(q)$, a tvornica pristaje samo ako plaćanje premašuje propušteni profit $\pi(q_m) - \pi(q)$. Na margini ribari nude do $D'(q)$, a tvornica prihvaća sve iznad $\pi'(q)$, pa se proizvodnja smanjuje sve dok vrijedi
+
+$$D'(q) > \pi'(q).$$
+
+I ovdje se pregovori zaustavljaju kad se granice izjednače, opet točno u $q^*$. Konačna je alokacija time identična bez obzira na to je li pravo isprva pripalo zagađivaču ili žrtvi, čime je Coaseov teorem dokazan.
+
+Neutralnost vrijedi za učinkovitost, ne i za raspodjelu. Tko kome plaća ovisi upravo o početnoj dodjeli prava. Pripadnu li ona ribarima, tvornica im plaća za pravo na rad, pa ribari ostvaruju neto dobitak, a profit tvornice pada za iznos naknade. Pripadnu li tvornici, ribari plaćaju njoj, snose financijski teret, a tvornica ubire prihod veći od svog proizvodnog profita. Onaj tko odlučuje o dodjeli prava ne rješava problem učinkovitosti, jer tržište do optimuma dolazi u oba slučaja, nego pitanje pravednosti početne raspodjele bogatstva. Vlasnička prava tako postaju instrument preraspodjele koji djeluje bez gubitka ukupne učinkovitosti, što je jedna od trajnih lekcija konstitucionalne ekonomike za dizajn javnih politika.
+
+## Transakcijski troškovi i granice pregovaranja
+
+Dokaz vrijedi uz pretpostavku nultih transakcijskih troškova, koju Coase u drugom dijelu rada napušta. U stvarnom svijetu pregovaranje, prikupljanje informacija, koordinacija i provedba ugovora troše stvarne resurse, koje Williamson uspoređuje s trenjem u stroju, energijom koja se gubi koliko god dobar bio nacrt [@williamson1985]. Ti se troškovi javljaju u tri faze. Prije pregovora akteri moraju utvrditi tko su pogođene strane i koliko vrijedi šteta, što kod masovnog zagađenja s tisućama pogođenih i stotinama izvora postaje logistički nesavladivo. Tijekom pregovora javlja se strateško ponašanje, od zadržavanja pristanka u nadi za većom isplatom do Olsonova slobodnog jahača, u kojem pojedinci unutar skupine žrtava izbjegavaju svoj dio naknade očekujući da će ga snositi drugi [@olson1965]. Nakon dogovora strane moraju nadzirati ponašanje druge strane i provoditi ugovor pred sudom, pa bez jeftine pravne zaštite troškovi nadzora mogu poništiti svaku korist od pregovora. Institucije koje određuju visinu tih troškova, pravila igre koja pregovaranje čine jeftinijim ili skupljim, sustavno se razmatraju u poglavlju o institucionalnoj ekonomici.
+
+Kad su ti troškovi visoki, privatni akteri ne mogu pregovarati, tržište ostaje u neučinkovitoj točki s prekomjernim zagađenjem, a početna dodjela prava prestaje biti neutralna. Pravo tada valja dodijeliti strani koja resursom može upravljati uz najniže troškove. Coaseov uvid time postaje korektiv automatskom povjerenju u državnu intervenciju. Tradicionalni pigouovski pristup pati od onoga što Demsetz naziva zabludom nirvane, usporedbom stvarnih, nesavršenih tržišta s idealiziranim planerom koji bez troška i s potpunim informacijama bira optimum [@demsetz1969]. Ni državna intervencija nije besplatna. Porezna administracija, regulacija i sudski postupci stvaraju vlastite troškove, a Pigouov porez pretpostavlja da država poznaje točne oblike funkcija profita i štete, premda su te informacije privatne i raspršene u smislu Hayekove analize znanja [@hayek1945]. Regulacija usto otvara prostor lovu na rentu, jer interesne skupine umjesto pregovora s pogođenim građanima usmjeravaju sredstva u lobiranje oko poreznih stopa i standarda, pa ishod intervencije zna stvoriti veći trošak od neuspjeha koji je trebala ispraviti. Coaseova logika zato nalaže usporedbu nesavršenih institucija umjesto vjere u savršenu, decentralizirano pregovaranje sa svojim troškovima, državnu regulaciju s rizikom državnog neuspjeha, ili toleriranje eksternalije kad je svako rješenje skuplje od same štete [@north1990].
+
+Logika pregovaranja oko prava nije ostala teorijska. Europska unija svoj sustav trgovanja emisijama gradi upravo na njoj.
+
+::: {.callout-praksa}
+Europski sustav trgovanja emisijama (EU ETS) zamjenjuje jedinstveni porez na ugljik prenosivim emisijskim kvotama. Ukupna dopuštena emisija strogo je ograničena, a kvote se dodjeljuju ili prodaju postrojenjima koja njima potom trguju. Poduzeća koja emisije mogu smanjiti jeftino to čine i višak kvota prodaju onima kojima je prilagodba skupa, pa tržište zadani ekološki cilj postiže uz najmanji ukupni trošak. Granice modela vide se na istom mjestu na kojem ih predviđa teorija. Transakcijski troškovi opterećuju manja poduzeća, a moćni industrijski lobiji pritišću na besplatnu dodjelu kvota i blaže uvozne prilagodbe, čime se teorijska optimalnost sustava narušava na ustavnoj razini, ondje gdje se pišu pravila.[^wp-ets]
+:::
+
+[^wp-ets]: Daljnje čitanje: Clò (2010), [*Grandfathering, auctioning and Carbon Leakage*](https://ideas.repec.org/a/eee/enepol/v38y2010i5p2420-2430.html), Energy Policy 38(5).
+
+Gdje su prava jasna, a pogođenih malo, pregovor radi i bez tržišne infrastrukture poput EU ETS-a.
+
+::: {.callout-praksa}
+Oko velikih zračnih luka u Sjedinjenim Državama buka noćnih letova godinama je izvor tužbi okolnih kućanstava. Budući da je pravo stanara na miran posjed pravno neupitno, a broj pogođenih kuća ograničen, troškovi pregovaranja bili su podnošljivi. Zračne kompanije i uprave luka zaobišle su rigidnu regulaciju i ponudile izravne naknade, preuzele ugradnju zvučne izolacije i klimatizacije na tisućama kuća ili otkupile zemljište iznad tržišne cijene. Luke su zadržale noćni rad ključan za teretni promet, a stanari dobili naknadu i zaštitu, uz minimalnu ulogu države.[^wp-zracne-luke]
+:::
+
+[^wp-zracne-luke]: Daljnje čitanje: Wolfe, Malina, Barrett i Waitz (2016), [*Costs and benefits of US aviation noise land-use policies*](https://doi.org/10.1016/j.trd.2016.02.010), Transportation Research Part D 44.
+
+Hrvatski priobalni sukob pokazuje zrcalni slučaj, u kojem nejasna prava i visoki troškovi koordinacije pregovor unaprijed isključuju.
+
+::: {.callout-praksa}
+Na jadranskoj obali masovni turizam i lokalno stanovništvo sukobljavaju se oko buke, zagušenja i devastacije pomorskog dobra. Da su prava nad obalom i mirom jasno dodijeljena zajednici, a troškovi organiziranja niski, problem bi se mogao riješiti naknadom, zvučnom izolacijom ili ulaganjem u lokalnu infrastrukturu u zamjenu za dogovorenu razinu buke. U praksi je pregovor blokiran. Pomorsko dobro ustavno je određeno kao opće dobro pod zaštitom države, što ostavlja nedorečenim tko zapravo raspolaže pravom odlučivanja, a troškovi koordinacije velikog broja raspršenih stanara nasuprot promjenjivim turističkim subjektima previsoki su. Sukob se zato prepušta državnoj regulaciji i lokalnim vlastima, sa svojim troškovima sporih inspekcija, neujednačene primjene i sumnji u pogodovanje.
+:::
+
+Tablica koja slijedi sažima dvije paradigme rješavanja eksternalija, od dijagnoze uzroka do uloge koju u svakoj od njih ima država.
+
+| Dimenzija | Pigouov pristup | Coaseov pristup |
+|---|---|---|
+| Uzrok problema | Tržišni neuspjeh, cijena ne uključuje društveni trošak | Nedovoljno određena vlasnička prava i visoki transakcijski troškovi |
+| Priroda učinka | Jednosmjerna krivnja zagađivača nad pasivnom žrtvom | Recipročna interakcija dviju strana oko oskudnog resursa |
+| Glavni instrument | Porezi, subvencije ili administrativna regulacija | Određivanje prava i dobrovoljni pregovori |
+| Uloga države | Planer koji računa optimum i propisuje mjere | Čuvar pravila, sudstva i ugovornog poretka |
+| Informacijski zahtjevi | Visoki, država mora znati oblike funkcija troška i koristi | Niski, akteri sami raspolažu informacijama |
+| Glavna prepreka | Državni neuspjeh, lobiranje i informacijski deficit | Visoki transakcijski troškovi i strateško ponašanje |
+
+: Pigouov i Coaseov pristup eksternalijama. Izrada autora prema @pigou1920 i @coase1960. {#tbl-pigou-coase}
+
+Coaseova poruka nije da država nema ulogu, nego da kvalitetan okvir koji prava jasno određuje, štiti i čini prenosivima često znači više za blagostanje od samog opsega intervencije. Što su pravila jasnija, a troškovi pregovaranja i sudske zaštite niži, to je manja potreba za skupom regulacijom. Prije nego što posegne za novim porezom ili zabranom, odgovorna politika najprije provjerava može li stvoriti uvjete u kojima problem riješe sami akteri. Time se sukob oko eksternalije seli iz domene znanja, gdje je tržište bilo neuspješno, u domenu informacija o tuđim namjerama i svojstvima, što je tema sljedećeg oblika tržišnog neuspjeha.
 
 ## Asimetrične informacije
 
@@ -1654,4 +1723,6 @@ Promotrite hipotetsku industriju u kojoj je tržišna potražnja zadana izrazom 
 (c) Odredite veličinu gubitka blagostanja kao površinu trokuta između količina Q\* i Q~M~ čija je visina jednaka vanjskom trošku po jedinici.
 
 (d) Pretpostavite da država želi privatne poticaje uskladiti s društvenim troškom. Izračunajte Pigouov porez po jedinici koji tržišnu proizvodnju vraća na društveni optimum i objasnite zašto upravo iznos jednak vanjskom trošku otklanja gubitak blagostanja, premda proizvodnja ne pada na nulu.
+
+(e) Umjesto poreza, pretpostavite da država jasno dodijeli vlasnička prava i dopusti dvjema stranama da pregovaraju uz zanemarive transakcijske troškove. Pokažite da je dogovorena količina jednaka optimumu Q\* iz dijela (b) bez obzira na to pripadne li pravo na čistu okolinu pogođenoj strani ili proizvođaču, te objasnite po čemu se dva ishoda razlikuju u tome tko kome plaća i kakva je posljedična raspodjela blagostanja.
 :::
