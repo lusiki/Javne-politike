@@ -186,8 +186,16 @@ profile_chapter <- function(f) {
   tbl_caption <- grepl("^\\s*:\\s.*\\{#tbl-", x) & !inside
   tbl_row <- grepl("^\\s*\\|", x) & !inside
 
+  # display math ($$...$$): exclude from prose so an equation does not register as
+  # its own paragraph. Handles both a whole single-line equation ($$...$$ on one
+  # line) and a multi-line block delimited by lone $$ lines.
+  math_single <- grepl("^\\s*\\$\\$.*\\$\\$\\s*$", x) & !inside
+  math_delim  <- grepl("^\\s*\\$\\$\\s*$", x) & !inside
+  math_block  <- (cumsum(math_delim) %% 2) == 1          # opener + interior of a block
+  is_math <- (math_single | math_delim | math_block) & !inside
+
   prose <- nzchar(trimws(x)) & !h2 & !h3 & !grepl("^#", x) &
-    !in_div & !div_close & !inside & !fence & !tbl_row & !tbl_caption
+    !in_div & !div_close & !inside & !fence & !tbl_row & !tbl_caption & !is_math
   para_start <- prose & !c(FALSE, head(prose, -1))
 
   sec_lines <- which(h2)
