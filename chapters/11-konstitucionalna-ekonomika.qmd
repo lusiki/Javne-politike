@@ -56,6 +56,22 @@ Razlika se može jednostavno objasniti. Operativna razina pita što ćemo danas 
 
 Ova razlika je presudna jer mnogi problemi javnih politika ne proizlaze iz jedne pogrešne odluke, nego iz institucionalnog okvira koji stalno potiče iste vrste pogrešnih odluka. Ako politički sustav nagrađuje povećanje rashoda prije izbora, odgađanje reformi, pogodovanje organiziranim skupinama i prebacivanje troškova u budućnost, onda problem nije samo u jednom političaru ili jednoj vladi. Problem je u pravilima koja takvo ponašanje čine racionalnim.
 
+Buchanan i Tullock taj izbor pravila prikazuju kroz **račun pristanka**, usporedbu troškova koju svaki sudionik radi kada bira koliku suglasnost tražiti za kolektivne odluke [@buchanan1962; @mueller1989]. Označimo li s $k$ prag suglasnosti, broj sudionika čiji je pristanak nužan da bi odluka prošla, ukupni trošak kolektivnog odlučivanja zbroj je dviju komponenti koje se kreću u suprotnim smjerovima,
+
+$$
+C(k) = E(k) + D(k), \qquad k^{*} = \arg\min_{k \in [1,N]} \big[\, E(k) + D(k) \,\big]
+$$
+
+gdje su $E(k)$ očekivani vanjski troškovi, šteta koju pojedincu nanose odluke donesene bez njegova pristanka, a $D(k)$ troškovi odlučivanja, napor i vrijeme potrebni da se okupi tražena suglasnost. Vanjski troškovi padaju kako $k$ raste, jer veća većina sve teže može nadglasati i oštetiti pojedinca, dok troškovi odlučivanja rastu, jer je sve teže pridobiti sve širi krug suglasnih. Optimalni prag $k^{*}$ minimizira njihov zbroj i objašnjava zašto jednoglasnost, koja vanjske troškove svodi na nulu, gotovo nikad nije razumna, jer cijenu plaća u golemim troškovima pregovaranja. Ujedno objašnjava zašto se za obične odluke bira jednostavna većina, a za ustavna pravila, gdje su vanjski troškovi pogrešne odluke veliki i trajni, pojačana većina.
+
+Uvjet prvog reda dodatno izoštrava tu logiku. U optimumu se granično smanjenje vanjskih troškova izjednačava s graničnim porastom troškova odlučivanja,
+
+$$
+E'(k) < 0, \quad D'(k) > 0 \;\;\Rightarrow\;\; E'(k^{*}) = -\,D'(k^{*})
+$$
+
+što je isti marginalistički obrazac koji se pojavljuje drugdje u knjizi, prag se pomiče naviše sve dok dodatna zaštita od nadglasavanja vrijedi onoliko koliko košta dodatni napor oko suglasnosti. Pravilo o pravilima time prestaje biti stvar dogme i postaje pitanje ravnoteže dvaju troškova.
+
 U tom kontekstu ustavna ekonomika naglašava važnost **pravila umjesto čiste diskrecije** [@brennan1985]. Diskrecija znači da donositelji odluka imaju širok prostor za odlučivanje od slučaja do slučaja. To može biti korisno kada je potrebna fleksibilnost, osobito u krizama. Ali previše diskrecije povećava neizvjesnost, otvara prostor za politički oportunizam i smanjuje vjerodostojnost. Pravila, s druge strane, ograničavaju proizvoljnost, smanjuju neizvjesnost i čine javne politike predvidljivijima. To ne znači da svaka politika mora biti potpuno automatizirana jer uvijek postoji potreba za prosudbom, nego da diskrecija mora biti ograničena pravilima, procedurama, transparentnošću i odgovornošću.
 
 Sve to počiva na pretpostavci da se sama pravila mogu izabrati nepristrano, iza vela neizvjesnosti. Upravo tu pretpostavku ozbiljno propituje unutarnja kritika unutar same škole konstitucionalne ekonomike. Središnja pretpostavka da postoji izvorna pozicija u kojoj svi sudionici racionalno izabiru pravila prije nego što saznaju svoju ulogu u sustavu povijesno se nikada nije materijalizirala. Stvarni ustavi rezultat su konkretnih političkih nadmetanja, odnosa moći u trenutku donošenja i institucionalnog naslijeđa koje sužava prostor mogućih dogovora [@vanberg2005]. Iz toga slijedi da formalno postojanje ustavnog pravila ne jamči njegovu kvalitetu jer pravilo izabrano iza znatno tanjeg vela neizvjesnosti pruža slabiju zaštitu od pravila izabranog stvarno depolitizirano.
@@ -98,6 +114,14 @@ Važno je pritom naglasiti da pravila ne smiju biti potpuno slijepa na okolnosti
 
 Monetarni primjer vremenske nedosljednosti zaslužuje poseban tretman jer je upravo na njemu ustavna ekonomika ponudila svoje najuvjerljivije rješenje. Problem nije u tome što su nositelji monetarne politike loši, nego u tome što vlada koja kontrolira novac uvijek ima poticaj na kratkoročno iznenađenje. Robert Barro i David Gordon pokazali su da pod diskrecijom takav ishod nije slučajan nego ravnotežan, jer racionalni akteri unaprijed predviđaju vladin poticaj na iznenađenje i u svoja inflacijska očekivanja ugrađuju višu inflaciju, zbog čega nastaje trajna inflacijska pristranost koju nitko nije birao, a zaposlenost se ipak ne poveća [@barrogordon1983]. Diskrecija tako proizvodi najgore od obaju svjetova, visoku inflaciju bez stvarne koristi.
 
+Tu se napetost može sažeti u jednu funkciju cilja vlasti koju ona nastoji **maksimizirati**. Neka $\pi$ označava ostvarenu inflaciju, a $\pi^{e}$ inflaciju koju su građani unaprijed očekivali. Vlast cijeni iznenadnu inflaciju, jer joj neočekivani porast cijena nakratko spušta nezaposlenost, ali snosi trošak same inflacije,
+
+$$
+W(\pi) = b\,(\pi - \pi^{e}) \;-\; \tfrac{1}{2}\,a\,\pi^{2}, \qquad \pi^{D} = \frac{b}{a} > 0 = \pi^{R}, \quad a,b>0
+$$
+
+gdje član $b\,(\pi - \pi^{e})$ hvata korist od iznenađenja, a $-\tfrac{1}{2}a\pi^{2}$ rastući trošak inflacije. Pod diskrecijom vlast bira inflaciju nakon što su očekivanja već formirana, pa traži maksimum funkcije po $\pi$. Uvjet $\partial W/\partial\pi = b - a\pi = 0$ daje diskrecijsku inflaciju $\pi^{D} = b/a$, koja je strogo pozitivna. Racionalni građani to predviđaju i ugrade tu svoja očekivanja, pa iznenađenja nestaje, a ostaje samo trošak, trajna inflacijska pristranost koju nitko nije birao. Da se vlast umjesto toga može unaprijed obvezati pravilom, izabrala bi $\pi^{R} = 0$ i postigla isti ishod za zaposlenost uz nižu inflaciju. Upravo razlika $\pi^{D} > \pi^{R}$ algebarski iskazuje zašto je vezivanje ruku superiorno diskreciji i zašto delegiranje monetarne politike neovisnoj banci ima smisla.
+
 Rješenje koje ustavna ekonomika nudi nije bolja volja nego bolja pravila. Ako se monetarna politika delegira središnjoj banci koja je zakonski odvojena od dnevne politike i kojoj je mandat usmjeren na stabilnost cijena, vlada se unaprijed odriče poluge kojom bi poslije bila u napasti manipulirati. Konzervativni središnji bankar spomenut ranije samo je jedan oblik tog poteza, a njegova bit nije u osobi nego u **mehanizmu vezivanja ruku** kojim se vjerodostojnost kupuje dragovoljnim odustajanjem od diskrecije [@rogoff1985]. Isti smo potez već vidjeli kod fiskalnih pravila u obliku ustavne kočnice zaduživanja. Vlada koja danas ne može pritisnuti središnju banku sutra ima vjerodostojniju valutu.
 
 Hrvatska je taj mehanizam dovela do njegove krajnje točke. Uvođenjem eura 2023. monetarna politika više se ne vodi u Zagrebu nego u Frankfurtu, a Hrvatska narodna banka postala je dio Eurosustava [@ecb2025]. Sa stajališta vremenske nedosljednosti to je najjači mogući oblik vezivanja ruku jer nositelj nacionalne politike više nema središnju banku na koju bi mogao pritisnuti čak ni kad bi to želio. Cijena tog poteza, gubitak monetarne politike kao instrumenta prilagodbe na domaće šokove, ista je ona koju smo razmotrili u poglavlju o stabilizacijskoj funkciji, a korist je uvezena vjerodostojnost monetarne stabilnosti koju malim i otvorenim gospodarstvima inače nije lako samostalno izgraditi.
@@ -118,6 +142,14 @@ Vlast koja želi ostati na vlasti može preferirati mjere čije su koristi odmah
 
 Da taj uvjet nije puka pretpostavka potvrđuje način na koji je ciklus izmjeren. Usporedne studije razdvajaju zemlje prema demokratskoj zrelosti i nalaze da se ciklus gotovo u cijelosti koncentrira u mladim demokracijama, dok u dugotrajnima uglavnom izostaje, čime se Nordhausovo izvorno predviđanje univerzalnog ciklusa pokazuje preuskim [@brender2005; @shi2006]. Ta usporedba ujedno identificira mehanizam, jer ono što mlade demokracije razlikuje nije priroda političara nego nedostatak biračkog iskustva u prepoznavanju i kažnjavanju predizbornog popuštanja. Ondje gdje birači još ne nadziru ciklus, tu ulogu moraju preuzeti pravila i neovisne institucije koje buduće troškove čine vidljivima, što je upravo ono što ustavna ograničenja trebaju postići.
 
+Način na koji se taj nalaz mjeri može se zapisati kompaktnim regresijskim modelom u kojem deficit $D_{t}$ ovisi o tome je li godina izborna i koliko je demokracija zrela,
+
+$$
+D_{t} = \alpha + \beta\, \mathbb{1}[\,\text{izborna godina}\,] + \gamma\, \big(\mathbb{1}[\,\text{izborna godina}\,] \times \text{zrelost demokracije}\big) + \varepsilon_{t}, \quad \beta > 0,\; \gamma < 0
+$$
+
+Pozitivan koeficijent $\beta$ hvata predizborni skok deficita koji je predvidio Nordhaus, dok negativan interakcijski član $\gamma$ formalizira ključni nalaz da se taj skok smanjuje, pa i nestaje, kako demokracija sazrijeva [@nordhaus1975; @brender2005]. Model time pretvara opažanje iz prethodnog odlomka u testabilnu tvrdnju, jer ciklus nije konstanta nego veličina koja ovisi o biračkom iskustvu ugrađenom u interakcijski član.
+
 Političko-proračunski ciklusi pokazuju zašto demokracija treba institucionalna ograničenja. Demokratski izbori daju legitimnost vlasti, ali sami po sebi ne jamče dugoročnu odgovornost. Ako se svaka odluka promatra kroz sljedeće izbore, tada politike koje donose koristi tek za deset ili dvadeset godina mogu biti sustavno zanemarene. Reforme obrazovanja, pravosuđa, mirovinskog ili zdravstvenog sustava često imaju visoke kratkoročne političke troškove, a koristi se vide tek kasnije. Zato su stabilna pravila i dugoročne institucije nužne za ravnotežu između demokratske odgovornosti i dugoročne održivosti.
 
 ## Pravila, vjerodostojnost i povjerenje
@@ -127,6 +159,14 @@ Politički ciklusi koje smo upravo opisali pokazuju zašto su potrebna pravila i
 ::: {#def-vjerodostojnost}
 **Vjerodostojnost** je svojstvo politike ili pravila za koje akteri vjeruju da će biti provedeno i u trenutku kada to vlastima više neće odgovarati; gradi se kroz dosljednost, reputaciju, neovisne institucije i transparentnost, a ne pukom najavom, i upravo ona daje pravilima moć da utječu na očekivanja [@kydland1977].
 :::
+
+Logiku obvezivanja koja stoji u pozadini možemo zapisati i izravno. Neka $G^{\text{odstupanje}}$ označava kratkoročni politički dobitak vlasti ako odstupi od najavljene discipline, a $G^{\text{disciplina}}$ dobitak ako pri njoj ostane. Vjerodostojno pravilo djeluje tako da odstupanje učini skupljim, dodaje mu kaznu $k$, pa vlast ostaje disciplinirana sve dok joj se odstupanje uz kaznu ne isplati,
+
+$$
+G^{\text{odstupanje}} - k \;\le\; G^{\text{disciplina}} \;\;\Longleftrightarrow\;\; k \;\ge\; G^{\text{odstupanje}} - G^{\text{disciplina}}
+$$
+
+Najmanja kazna koja disciplinu čini barem jednako dobrom upravo je razlika dvaju kratkoročnih dobitaka, dok za strogo veće $k$ disciplina postaje izravno isplativija. Pravilo ne mora ukinuti napast da se odstupi, dovoljno je da je obeshrabri, podigne cijenu odstupanja iznad njegove kratkoročne koristi. Time se vjerodostojnost pretvara iz pitanja dobrih namjera u pitanje kalibriranja obvezujućeg ograničenja.
 
 Vjerodostojnost se ne može stvoriti samo jednom izjavom. Ona se gradi kroz institucije, dosljednost i reputaciju. Pravila pomažu jer smanjuju prostor za proizvoljnost. Neovisne institucije pomažu jer odvajaju neke odluke od kratkoročnih političkih pritisaka. Transparentnost pomaže jer građanima i tržištima omogućuje da provjere što država stvarno radi. Odgovornost pomaže jer loše odluke imaju posljedice.
 

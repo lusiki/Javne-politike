@@ -908,6 +908,16 @@ h1.book-hero-title,
   }
 }
 
+// ---- Navbar nav-links in mono register (Knjiga · Vodič · Resursi · Alat · Podaci) ----
+// Brand "DJP" ostaje sans; stavke izbornika prelaze u IBM Plex Mono za tehnički
+// ton usklađen s naslovničkim mono tokenima (.sc-meta-mono, .sc-stats).
+.navbar .nav-link {
+  font-family: $brand-font-mono;
+  font-size: 0.82rem;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+}
+
 // ---- Book meta footer (na dnu indexa) ----
 .book-meta-footer {
   margin: 4rem auto 1rem;
@@ -1646,6 +1656,15 @@ h1.sc-hero-title,
   &:hover { background: $brand-paper; color: $brand-navy !important; }
 }
 
+// Naslovnički CTA gumbi (Počnite čitati / Preuzmite PDF / Pogledajte sadržaj)
+// u mono registru. Mono glifovi su širi, pa malo manji font + tracking.
+.sc-hero-cta .btn {
+  font-family: $brand-font-mono;
+  font-size: 0.8rem;
+  font-weight: 500;
+  letter-spacing: 0.03em;
+}
+
 // ---- Author / meta row under CTAs ----
 .sc-author-row {
   display: flex;
@@ -1682,6 +1701,64 @@ h1.sc-hero-title,
   font-style: normal !important;
   font-size: 0.88rem !important;
   font-feature-settings: "tnum" 1, "lnum" 1;
+}
+
+// ---- "Knjiga u brojkama" — mono numerička traka ispod heroja -------
+// Vodoravni niz pokazatelja u istom mono registru kao .sc-meta-mono;
+// vertikalne crte dijele ćelije, na užim ekranima se prelama.
+// Grid s 1px razmakom preko rule-boje daje čiste razdjelnice (i okomite i
+// vodoravne kad se redak prelomi) bez nth-child računice. Ćelije koriste
+// --bs-body-bg pa traka radi i u svijetlom i u tamnom načinu.
+.sc-stats {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 1px;
+  background: $sc-rule;
+  border: 1px solid $sc-rule;
+  max-width: 1040px;
+  margin: 3rem auto 1.5rem;
+}
+
+.sc-stat {
+  background: var(--bs-body-bg, #{$brand-paper});
+  text-align: center;
+  padding: 1.35rem 0.55rem;
+}
+
+.sc-stat-num {
+  display: block;
+  font-family: $brand-font-mono;
+  font-feature-settings: "tnum" 1, "lnum" 1;
+  font-size: 1.9rem;
+  font-weight: 600;
+  line-height: 1;
+  color: $brand-navy;
+  margin-bottom: 0.5rem;
+}
+
+.sc-stat-plus {
+  color: $brand-gold;
+  font-weight: 500;
+}
+
+.sc-stat-label {
+  display: block;
+  font-family: $brand-font-mono;
+  font-size: 0.66rem;
+  letter-spacing: 0.13em;
+  text-transform: uppercase;
+  color: $brand-slate;
+  line-height: 1.35;
+}
+
+// Na užim ekranima smanji broj stupaca; gap-razdjelnice se same preslože.
+@media (max-width: 860px) {
+  .sc-stats { grid-template-columns: repeat(4, 1fr); }
+}
+
+@media (max-width: 520px) {
+  .sc-stats { grid-template-columns: repeat(2, 1fr); }
+  .sc-stat-num { font-size: 1.7rem; }
 }
 
 // ---- Cover card (typographic placeholder, no image) ----
@@ -1749,6 +1826,17 @@ h2.sc-cover-title,
 
 .sc-cover-cta {
   margin-top: 1.5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.sc-cover-cta .sc-cover-btn.btn {
+  width: 100%;
+  text-align: left;
+}
+
+.sc-cover-cta .sc-cover-btn.btn:last-child {
+  border-bottom: 1px solid $sc-rule-strong !important;
 }
 
 .sc-cover-btn.btn {

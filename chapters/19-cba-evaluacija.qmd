@@ -48,6 +48,16 @@ Jednom kada su sve buduće koristi i troškovi svedeni na sadašnji trenutak, tr
 **Neto sadašnja vrijednost (NPV)** je zbroj svih budućih koristi i troškova projekta, pri čemu se svaki budući iznos diskontira na sadašnji trenutak koeficijentom $1/(1+r)^t$, gdje je $r$ diskontna stopa, a $t$ broj godina udaljenosti. Projekt je društveno opravdan ako je NPV pozitivan.
 :::
 
+Definicija se izravno prevodi u formulu. Ako $B_t$ i $C_t$ označavaju koristi i troškove u godini $t$, a $r$ diskontnu stopu, neto sadašnja vrijednost zbraja diskontirane neto tokove kroz cijeli vijek projekta,
+
+$$\text{NPV} = \sum_{t=0}^{T} \frac{B_t - C_t}{(1+r)^t}.$$
+
+Zbroj kreće od $t=0$, pa početno ulaganje ulazi nediskontirano, dok svaki kasniji tok to manje doprinosi što je dalje u budućnosti i što je stopa $r$ viša. Uz neto sadašnju vrijednost često idu dva srodna kriterija. Omjer koristi i troška dijeli diskontirane koristi diskontiranim troškovima, a interna stopa povrata je upravo ona stopa pri kojoj neto sadašnja vrijednost pada na nulu,
+
+$$\text{BCR} = \frac{\sum_t B_t/(1+r)^t}{\sum_t C_t/(1+r)^t}, \qquad \text{IRR} \ \text{rješava}\ \sum_{t=0}^{T} \frac{B_t - C_t}{(1+\text{IRR})^t} = 0.$$
+
+Projekt je opravdan kad je neto sadašnja vrijednost pozitivna, što je istovrijedno tomu da omjer koristi i troška premašuje jedinicu, a interna stopa povrata nadmašuje diskontnu stopu [@boardman2018].
+
 Suvremeni pristupi naglašavaju i potrebu za analizom osjetljivosti, scenarijskom analizom i razmatranjem distribucijskih učinaka [@hmtreasury2022]. CBA nije linearni, mehanički postupak, već iterativni proces u kojem se koraci međusobno preispituju.
 
 ## Posebnosti cost-benefit analize u javnom sektoru
@@ -60,7 +70,13 @@ Druga posebnost odnosi se na eksternalije. Javni projekti gotovo uvijek generira
 
 U središtu te rasprave nalazi se i izbor diskontne stope. Viša diskontna stopa smanjuje važnost dugoročnih koristi, dok niža daje veću težinu budućim generacijama.
 
-Korisno je vidjeti i odakle ta stopa dolazi, jer to objašnjava zašto se oko nje stručnjaci toliko spore. Društvena diskontna stopa obično se rastavlja na dva dijela, na stopu čistog vremenskog preferiranja, koja govori koliko dobrobit budućih ljudi vrijedi manje samo zato što je u budućnosti, i na član koji odražava očekivani rast dohotka pomnožen brzinom kojom dodatni dohodak gubi na vrijednosti kako društva bogate [@hmtreasury2022]. Drugi je dio uglavnom tehnički i mjerljiv, no prvi je čisto vrijednosni jer nema empirijskog načina da se utvrdi koliko smijemo diskontirati dobrobit naraštaja koji još nije rođen. Upravo zato se rasprave o dugoročnim politikama, od klime do mirovina, na kraju gotovo uvijek svode na sukob oko te jedne etičke pretpostavke, a ne oko same ekonomske računice.
+Korisno je vidjeti i odakle ta stopa dolazi, jer to objašnjava zašto se oko nje stručnjaci toliko spore. Društvena diskontna stopa obično se rastavlja na dva dijela, na stopu čistog vremenskog preferiranja, koja govori koliko dobrobit budućih ljudi vrijedi manje samo zato što je u budućnosti, i na član koji odražava očekivani rast dohotka pomnožen brzinom kojom dodatni dohodak gubi na vrijednosti kako društva bogate [@hmtreasury2022].
+
+Ta se rastavba sažima u Ramseyjevu formulu društvene diskontne stope,
+
+$$r = \delta + \eta\,g,$$
+
+gdje je $\delta$ stopa čistog vremenskog preferiranja, $g$ očekivani rast dohotka, a $\eta$ elastičnost granične korisnosti koja mjeri koliko brže dodatni euro gubi vrijednost kako dohodak raste [@ramsey1928; @hmtreasury2022]. Drugi je dio uglavnom tehnički i mjerljiv, no prvi je čisto vrijednosni jer nema empirijskog načina da se utvrdi koliko smijemo diskontirati dobrobit naraštaja koji još nije rođen. Upravo zato se rasprave o dugoročnim politikama, od klime do mirovina, na kraju gotovo uvijek svode na sukob oko te jedne etičke pretpostavke, a ne oko same ekonomske računice.
 
 ::: {.callout-empirija}
 Izbor diskontne stope nije tehnička sitnica jer kod dugoročnih projekata presudno mijenja rezultat. Korist koja nastaje za pedeset godina pri diskontnoj stopi od 1 % vrijedi danas oko 60 % svojega iznosa, a pri stopi od 6 % tek oko 5 %, pa ista klimatska investicija može izgledati izrazito isplativo ili posve neopravdano ovisno samo o tom parametru [@hmtreasury2022]. Zbog toga smjernice za javne projekte propisuju niže društvene diskontne stope za učinke koji sežu duboko u budućnost, izričito iz razloga međugeneracijske pravednosti. Pouka je da diskontiranje nije neutralan postupak, nego ugrađuje vrijednosni sud o tome koliko nam je važna dobrobit budućih naraštaja.
@@ -230,7 +246,13 @@ Primjeri zdravstva i okoliša već su nagovijestili gdje CBA postaje sporna, ond
 
 Jedno od temeljnih ograničenja odnosi se na monetizaciju ne-tržišnih vrijednosti. Mnoge koristi, poput vrijednosti ljudskog života, zdravlja ili kvalitete okoliša, nemaju tržišnu cijenu i teško ih je precizno izraziti u novcu, pa rezultati mogu varirati ovisno o metodologiji.
 
-Vrijedi objasniti kako se takav broj uopće dobiva, jer u tome leži i njegova krhkost. Vrijednost statističkog života nije cijena ičijeg života, nego zbroj brojnih sitnih kompromisa između novca i rizika, pa ako ljudi za posao s godišnjim rizikom smrti od jedan prema deset tisuća traže određeni dodatak na plaću, iz tog se dodatka izvodi implicitna vrijednost izbjegnute statističke smrti [@boardman2018]. Takve se procjene dobivaju na dva načina. Metoda otkrivenih preferencija čita ih iz stvarnog ponašanja, primjerice iz premija na plaću za opasnije poslove ili iz cijena nekretnina u čišćem okolišu, dok ih metoda iskazanih preferencija prikuplja izravnim anketnim pitanjem koliko bi tko platio za neko netržišno dobro. Druga je metoda osjetljiva na pristranost hipotetskog odgovora, jer ispitanik koji ne plaća stvarno precjenjuje spremnost na plaćanje, i na učinak opsega, jer iskazani iznos jedva raste kad se količina dobra višestruko poveća, zbog čega ista korist različitim metodama može dobiti vrijednosti koje se razlikuju za red veličine.
+Vrijedi objasniti kako se takav broj uopće dobiva, jer u tome leži i njegova krhkost. Vrijednost statističkog života nije cijena ičijeg života, nego zbroj brojnih sitnih kompromisa između novca i rizika, pa ako ljudi za posao s godišnjim rizikom smrti od jedan prema deset tisuća traže određeni dodatak na plaću, iz tog se dodatka izvodi implicitna vrijednost izbjegnute statističke smrti [@boardman2018].
+
+Formalno, vrijednost statističkog života je omjer dodatka na plaću $\Delta w$ i prirasta rizika smrti $\Delta p$,
+
+$$\text{VSL} = \frac{\Delta w}{\Delta p}.$$
+
+Ako radnici za godišnji rizik veći za $\Delta p = 0{,}0001$ traže $\Delta w = 700$ eura više plaće, implicitna vrijednost statističkog života iznosi sedam milijuna eura. Taj je broj krhak upravo zato što počiva na sitnim razlikama u plaći i riziku koje je teško precizno izmjeriti. Takve se procjene dobivaju na dva načina. Metoda otkrivenih preferencija čita ih iz stvarnog ponašanja, primjerice iz premija na plaću za opasnije poslove ili iz cijena nekretnina u čišćem okolišu, dok ih metoda iskazanih preferencija prikuplja izravnim anketnim pitanjem koliko bi tko platio za neko netržišno dobro. Druga je metoda osjetljiva na pristranost hipotetskog odgovora, jer ispitanik koji ne plaća stvarno precjenjuje spremnost na plaćanje, i na učinak opsega, jer iskazani iznos jedva raste kad se količina dobra višestruko poveća, zbog čega ista korist različitim metodama može dobiti vrijednosti koje se razlikuju za red veličine.
 
 Šira filozofska kritika tog ograničenja ide korak dalje. Sandel upozorava da problem nije samo tehnička poteškoća izračuna sjenovne cijene, nego da sam postupak monetizacije može promijeniti prirodu odluke koju se procjenjuje [@sandel2012]. Kada se vrijednost ljudskog života, kvaliteta okoliša ili pravo na zdravstvenu skrb izrazi u eurima, ti se entiteti prestaju razlikovati od ostale robe koju mjerimo istim mjerilom. Postupak koji bi trebao pomoći u izboru tiho mijenja moralni status onoga što se procjenjuje, što može biti prihvatljivo za promjene putnih troškova, ali ne i za odluke koje zadiru u temeljne društvene vrijednosti.
 
@@ -262,6 +284,12 @@ Prvi i najizravniji cilj evaluacije jest procjena učinkovitosti (*effectiveness
 **Kontrafaktualni scenarij** je ono što bi se dogodilo s istom skupinom da politika nije provedena, a **uzročni učinak** politike je razlika između stvarno opaženog ishoda i tog kontrafakta; budući da se kontrafakt nikada ne opaža izravno, sva se evaluacija učinaka svodi na to koliko ga vjerodostojno uspijeva rekonstruirati.
 :::
 
+U notaciji potencijalnih ishoda svaki pojedinac $i$ ima ishod $Y_i(1)$ ako je izložen politici i $Y_i(0)$ ako nije, pa je prosječni uzročni učinak očekivana razlika tih dvaju ishoda,
+
+$$\tau = E\big[Y_i(1) - Y_i(0)\big].$$
+
+Temeljni problem uzročne inferencije leži u tome što se za istu jedinicu nikada ne opažaju oba ishoda, pa razne metode procjenjuju isti $\tau$ s različitom vjerodostojnošću ovisno o tome koliko uvjerljivo rekonstruiraju neopaženi kontrafakt [@angrist2009].
+
 Druga dimenzija odnosi se na efikasnost (*efficiency*) koja označava odnos uloženih resursa i ostvarenih rezultata. Treći cilj je procjena relevantnosti, odnosno pitanje rješava li politika doista problem zbog kojeg je uvedena. Posebno važna dimenzija odnosi se na utjecaj (*impact*) i održivost (*sustainability*), koji uključuju šire i dugoročnije posljedice te pitanje mogu li se rezultati održati kroz vrijeme. Važno je naglasiti da evaluacija nije samo instrument kontrole, već i alat institucionalnog učenja jer se kroz sustavno prikupljanje i analizu podataka stvara tzv. *policy learning loop*, u kojem se iskustva iz prošlih intervencija koriste za dizajn boljih politika.
 
 ## Vrste i metode evaluacije
@@ -278,7 +306,11 @@ Među kvantitativnim pristupima, jasna hijerarhija identifikacijske snage prepoz
 **Randomizirani kontrolirani pokus** (*RCT*) je evaluacijski dizajn u kojemu se sudionici slučajnim rasporedom dijele u tretiranu i kontrolnu skupinu, čime se uklanjaju sve sustavne razlike među skupinama, pa razlika u ishodima daje najčišću procjenu uzročnog učinka.
 :::
 
-Tamo gdje RCT nije etički ili praktično izvediv (privatizacija sektora, makro reforme, ustavne promjene), kvazi-eksperimentalne metode dijele uzročnu inferenciju iz prirodnih izvora varijacije. *Difference-in-differences* uspoređuje promjene ishoda kod tretirane i netretirane skupine prije i poslije intervencije, što kontrolira fiksne razlike između skupina, ali pretpostavlja paralelne trendove u odsutnosti tretmana. *Regression discontinuity* iskorištava arbitrarne pragove u programu (visina dohotka za pravo na transfer, ocjena za upis u program) i uspoređuje pojedince neposredno iznad i ispod praga, koji su statistički gotovo identični osim u izlaganju mjeri. Sve te metode imaju svoje pretpostavke, a kvalitetna evaluacija mora ih učiniti eksplicitnima i testirati, umjesto da se oslanja samo na rezultat regresije.
+Tamo gdje RCT nije etički ili praktično izvediv (privatizacija sektora, makro reforme, ustavne promjene), kvazi-eksperimentalne metode dijele uzročnu inferenciju iz prirodnih izvora varijacije. *Difference-in-differences* uspoređuje promjene ishoda kod tretirane i netretirane skupine prije i poslije intervencije, što kontrolira fiksne razlike između skupina, ali pretpostavlja paralelne trendove u odsutnosti tretmana. Taj se dvostruki diferencijal zapisuje kao razlika dviju promjena, kod tretirane skupine $T$ i kontrolne skupine $C$, prije i poslije mjere,
+
+$$\hat{\delta}_{DiD} = \big(\bar{Y}^{T}_{\text{poslije}} - \bar{Y}^{T}_{\text{prije}}\big) - \big(\bar{Y}^{C}_{\text{poslije}} - \bar{Y}^{C}_{\text{prije}}\big),$$
+
+pri čemu promjena u kontrolnoj skupini služi kao procjena onoga što bi se s tretiranom skupinom dogodilo bez intervencije, zbog čega cijeli dizajn stoji ili pada na pretpostavci paralelnih trendova [@angrist2009]. *Regression discontinuity* iskorištava arbitrarne pragove u programu (visina dohotka za pravo na transfer, ocjena za upis u program) i uspoređuje pojedince neposredno iznad i ispod praga, koji su statistički gotovo identični osim u izlaganju mjeri. Sve te metode imaju svoje pretpostavke, a kvalitetna evaluacija mora ih učiniti eksplicitnima i testirati, umjesto da se oslanja samo na rezultat regresije.
 
 Unatoč svojoj ulozi, evaluacija se suočava s nizom ograničenja. Prvo se odnosi na dostupnost i kvalitetu podataka. Drugo se tiče atribucije učinaka jer u stvarnom svijetu politike ne djeluju u izolaciji, pa je teško razlučiti u kojoj je mjeri promjena rezultat konkretne politike, a u kojoj posljedica drugih procesa. Treće proizlazi iz političke ekonomije evaluacije. Ako evaluacija pokaže da politika nije bila učinkovita, to može ugroziti politički kredibilitet aktera, pa postoji rizik da se rezultati selektivno koriste ili ignoriraju. Time se naglašava važnost institucionalne neovisnosti evaluacijskih tijela i transparentnosti procesa.
 

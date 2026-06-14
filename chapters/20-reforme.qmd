@@ -24,15 +24,47 @@ Razlozi za pokretanje reformi najčešće proizlaze iz kombinacije fiskalnih pri
 
 Mehanika otpora reformama ima formalan model koji nadilazi pojednostavljenu sliku „dobitnika i gubitnika". Fernandez i Rodrik pokazali su da reforme koje su agregatno korisne mogu propasti čak i kada bi većina od njih u prosjeku dobila, ako pojedini birač ne zna unaprijed je li on dio dobitničke ili gubitničke skupine [@fernandez1991]. Pod takvom individualno specifičnom neizvjesnošću, racionalni birač preferira status quo nad reformom čiji su mu osobni ishodi neizvjesni, čak i kada bi mu očekivani ishod bio pozitivan. Reforma se blokira ne zato što gubitnika ima više od dobitnika, nego zato što neizvjesnost o tome tko će biti na kojoj strani sustavno povećava broj birača sklonih čekanju.
 
+Taj se mehanizam može zapisati jednom nejednakošću. Ako reforma pojedincu donosi dobitak $g>0$ ako se nađe u pobjedničkoj skupini, a gubitak $\ell<0$ ako se nađe u gubitničkoj, te ako on svoju individualnu vjerojatnost dobitka procjenjuje na $p_i$, rizično-neutralan birač glasa za reformu samo kada je njegova očekivana korist pozitivna,
+
+$$
+\mathbb{E}[u_i] = p_i\,g + (1-p_i)\,\ell \;>\; 0 \quad\Longleftrightarrow\quad p_i \;>\; \frac{-\ell}{g-\ell}=\frac{|\ell|}{g+|\ell|}
+$$
+
+[@fernandez1991]. Reformu, dakle, blokira individualna vjerojatnost dobitka ispod kritičnog praga $|\ell|/(g+|\ell|)$, a ne prosječni predznak ishoda u društvu. Kada je mogući gubitak veći od mogućeg dobitka, taj prag premašuje $0{,}5$, pa i birač koji svoje izglede procjenjuje kao posve neizvjesne (uz $p_i = 0{,}5$) glasa protiv, iako bi reforma za društvo u prosjeku bila korisna.
+
+To da je reforma „korisna za društvo u prosjeku" ima vlastiti formalni izraz. Po **Kaldor-Hicksovu kriteriju** reforma je potencijalno poboljšanje ako zbroj dobitaka dobitnika premašuje zbroj gubitaka gubitnika,
+
+$$
+\sum_{i\in W} g_i \;>\; \sum_{j\in L} |\ell_j| \quad\Longleftrightarrow\quad \sum_i \Delta u_i > 0
+$$
+
+[@kaldor1939]. Riječ je o potencijalnom, a ne stvarnom poboljšanju jer kriterij traži samo da dobitnici načelno mogu obeštetiti gubitnike i još uvijek ostati na dobitku, ne i da to stvarno učine. Upravo tu razliku između potencijalne i stvarne kompenzacije reforma mora premostiti da bi prošla.
+
 ::: {#def-kompenzacijska-shema}
 **Kompenzacijska shema** je mehanizam koji jasno identificiranim gubitnicima reforme isplaćuje naknadu iz reformskog viška, smanjujući individualnu neizvjesnost i status-quo pristranost; ne mijenja ekonomsku supstancu mjere, nego raspodjelom rizika povećava izglede njezinog prolaza [@fernandez1991].
 :::
+
+Koliko kompenzacija mora biti velika da prevrne glas vidi se iz iste računice očekivane korisnosti. Ako se svakom budućem gubitniku iz reformskog viška isplati naknada $t$, birač glasa za reformu kada vrijedi
+
+$$
+\mathbb{E}[u_i] = p_i\,g + (1-p_i)\,(\ell + t) \;>\; 0 \quad\Longleftrightarrow\quad t \;>\; -\ell-\frac{p_i}{1-p_i}\,g
+$$
+
+[@fernandez1991]. Minimalna naknada koja prevrće odluku ovisi o veličini gubitka i o tome koliko birač procjenjuje da je izložen riziku, a ne o agregatnom višku reforme. Time se i formalno vidi zašto kompenzacija djeluje preko raspodjele rizika, pretvarajući Kaldor-Hicksovo potencijalno poboljšanje u stvarno, a ne preko promjene ekonomske supstance mjere.
 
 Iz toga slijedi neintuitivna pouka. Reformatori često mogu povećati šansu prolaza ne mijenjajući ekonomski sadržaj reforme, nego smanjujući neizvjesnost koju ona stvara za pojedinca. Postupna provedba s mogućnošću učenja iz prvih iskustava, eksplicitne kompenzacijske sheme za jasno identificirane gubitnike i transparentne procjene utjecaja koje omogućuju pojedincu da procijeni svoj vlastiti ishod sustavno smanjuju status-quo pristranost i mijenjaju izglede reforme bez mijenjanja njezine supstance.
 
 Međutim, krize same po sebi ne jamče uspješne reforme. One otvaraju prostor za promjene, ali ishod ovisi o institucionalnim kapacitetima i političkom vodstvu. U nekim slučajevima krize dovode do dubokih i trajnih reformi, dok u drugima rezultiraju parcijalnim ili kratkoročnim mjerama bez dugoročnog učinka. Kriza je zato nužan, ali ne i dovoljan uvjet za reforme.
 
 Postoji i zaseban razlog zašto se i prijeko potrebna stabilizacija odgađa iako se svi slažu da je nužna. Alesina i Drazen opisuju takvu situaciju kao **rat iscrpljivanjem**, u kojem svaka društvena skupina pristaje na stabilizaciju, ali nastoji da veći dio njezina tereta, kroz poreze ili rezove, padne na druge, pa svi čekaju da prva popusti [@alesinadrazen1991]. Odgađanje je tada racionalno čekanje, a okončava ga onaj kome je daljnja kriza preskupa, što objašnjava zašto upravo kriza, dižući cijenu čekanja, zna prekinuti pat-poziciju koju same dobre namjere ne mogu razriješiti. Za razliku od ranije spomenute neizvjesnosti o tome tko će profitirati, ovdje su dobitnici i gubitnici poznati, a zastoj nastaje iz borbe oko raspodjele tereta među organiziranim skupinama koje ga pokušavaju izbjeći [@olson1982].
+
+Ravnoteža takvog rata iscrpljivanja počiva na uvjetu indiferentnosti na margini popuštanja. Skupina je spremna izdržati još jedan trenutak čekanja samo dok je trošak tog čekanja $c_i$ jednak izgledu da upravo tada protivnik popusti, izražen hazardom $h_j$, pomnoženom s dobitkom $(\theta_i-\theta_j)\,K$ koji popuštanje protivnika donosi izbjegavanjem većeg udjela tereta,
+
+$$
+c_i\,\mathrm{d}t = h_j(t)\,(\theta_i-\theta_j)\,K\,\mathrm{d}t \;\Longrightarrow\; h_j(t)=\frac{c_i}{(\theta_i-\theta_j)\,K},\qquad \frac{\partial T_i^{*}}{\partial c_i}<0,\quad \frac{\partial T_i^{*}}{\partial \theta_i}>0
+$$
+
+[@alesinadrazen1991]. Komparativna statika potvrđuje intuiciju iz proze. Skupina s višim trenutnim troškom čekanja popušta ranije ($\partial T_i^{*}/\partial c_i<0$), pa zaoštravanje krize, dižući svima cijenu čekanja, skraćuje odgodu. Skupina koja bi pri popuštanju ponijela veći udio tereta čeka dulje ($\partial T_i^{*}/\partial \theta_i>0$), jer ima više za izgubiti pristajanjem prva.
 
 Osim fiskalnih razloga, reforme su često nužne zbog strukturnih promjena. Globalizacija povećava konkurenciju među državama i zahtijeva učinkovitije institucije. Tehnološki napredak, osobito digitalizacija, mijenja način pružanja javnih usluga. Demografske promjene poput starenja stanovništva stvaraju pritisak na mirovinske i zdravstvene sustave. Tranzicijske zemlje srednje i istočne Europe prolazile su kroz duboke transformacije države, od centralno planiranih sustava prema tržišnim gospodarstvima, pri čemu su reforme javnog sektora bile ključne za uspostavu osnovnih funkcija države.
 
@@ -220,6 +252,14 @@ Razlike u uspjehu otvaraju i šire pitanje brzine reformi, odnosno koliko brzo t
 Šok-terapijski pristup opravdavao se argumentom da fragmentirana, nedovršena tranzicija ostavlja dovoljno prostora za blokadu i preokret. Gradualistički pristup naglašavao je rizik prebrzog napuštanja postojećih koordinacijskih mehanizama prije nego što su novi tržišni mehanizmi stigli funkcionirati.
 
 Trideset godina kasnije empirijska usporedba ne daje jednoznačan odgovor [@rodrik2011]. Šok-terapija u dijelu Srednje Europe (Poljska, baltičke države) dala je brže rezultate od gradualističkog pristupa drugdje, ali se to objašnjava jednako institucionalnom predtransformacijskom snagom tih zemalja koliko i samom brzinom. Gradualistička putanja Slovenije i Češke proizvela je usporediv ishod uz manje socijalnih troškova, dok je gradualizam bez vjerodostojnog sidra drugdje često završio u zaglavljenoj polureformi. Brzina sama po sebi nije ni vrlina ni mana. Ono što razlikuje uspjeh od neuspjeha jest spremnost institucija da apsorbiraju promjenu i postojanje vanjskog ili unutarnjeg sidra koje održava reformski smjer između izborima izazvanih oscilacija.
+
+Sami „socijalni troškovi" o kojima je riječ imaju prepoznatljiv oblik kroz vrijeme, poznat kao J-krivulja reformi. Output najprije pada zbog prijelazne dezorganizacije, kada se stare koordinacijske veze prekinu prije nego što nove tržišne profunkcioniraju, a potom se oporavlja iznad polazne razine. Stilizirano, putanja outputa $Y_t$ uz brzinu prilagodbe $\delta$, dubinu prijelaznog pada $\alpha$ i trajni dobitak reforme $\gamma$ glasi
+
+$$
+Y_t = Y_0\Big[1-\alpha\,e^{-\delta t}\big(1-e^{-\delta t}\big)\Big]+\gamma\big(1-e^{-\delta t}\big),\qquad \min_t Y_t < Y_0 < \lim_{t\to\infty} Y_t
+$$
+
+[@blanchardkremer1997]. Krivulja je u obliku slova J samo kada je prijelazni pad dovoljno izražen u odnosu na trajni dobitak (npr. uz $\alpha = 0{,}4$ i $\gamma = 0{,}1$), jer bi inače rastući član odmah nadvladao pad i minimuma ispod $Y_0$ ne bi bilo. Upravo dubina i trajanje tog početnog pada čine mjerljivu cijenu tranzicije, pa razlika između gradualizma i šok-terapije postaje razlika između pliće-ali-duže i dublje-ali-kraće udubine na istoj krivulji.
 
 Estonija se često ističe kao jedan od najuspješnijih primjera, jer je već od 1990-ih sustavno ulagala u digitalizaciju javne uprave, uz paralelno jačanje administrativnih kapaciteta. Ključ uspjeha nije bio samo u tehnologiji, nego u dosljednoj institucionalizaciji reformi i dugoročnoj strategiji. Zajednički obrazac koji se pojavljuje jest da su najuspješnije bile zemlje koje su uspjele institucionalizirati reforme, odnosno pretvoriti ih iz jednokratnih projekata u trajne mehanizme upravljanja. Ključna razlika između uspješnih i manje uspješnih reformi često leži u kapacitetu države za provedbu (*state capacity*) [@fukuyama2013].
 

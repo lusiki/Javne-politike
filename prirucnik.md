@@ -1,0 +1,265 @@
+# Država i javne politike u malom
+
+*Kratka knjiga o tome što država radi, kako odlučuje i kako bi mogla bolje*
+
+---
+
+## Uvod
+
+Zamislite da ujutro uđete u trgovinu i na polici zateknete kruh, mlijeko i stotinjak drugih stvari, svaku s cijenom koju možete pročitati. Nitko to nije naredio. Nijedan ured nije odlučio koliko kruha treba ispeći baš u vašem kvartu. A ipak je kruh gotovo svakog jutra tu. To tiho čudo zove se tržište.
+
+Ono radi posao koji nijedan čovjek ne bi mogao obaviti sam, spaja milijune odluka a da nitko nema cjelovitu sliku. Cijena je pritom poruka. Kad nečega ponestane, raste i govori proizvođačima neka proizvedu više. Kad nešto postane jeftino za izradu, pada i oslobađa ljude da rade nešto korisnije. Tako tržište, bez zapovjednika, najčešće dovede prave stvari na pravo mjesto.
+
+Ali ima poslova koje ne može obaviti samo, koliko god bilo spretno. Neke odluke nanose štetu ljudima koji u njima nisu sudjelovali. Ponekad jedan prodavač postane prevelik pa sam diktira uvjete. Ponekad raspodjela bogatstva postane takva da je društvo ne može prihvatiti. A ponekad cijelo gospodarstvo zajedno upadne u krizu. Na tim mjestima na scenu stupa država, ne da bi ukinula tržište, nego da bi popravila ono što tržište samo ne stigne.
+
+Tu se, međutim, krije obrat oko kojega se vrti gotovo sve ostalo. Država nije čarobni štapić. I ona je sastavljena od ljudi, a ti ljudi imaju svoje interese, svoje glasače i svoje granice znanja. Pitanje zato nikada nije samo treba li država djelovati, nego i hoće li to učiniti bolje od tržišta koje pokušava popraviti.
+
+Ponekad uskoči zato što neke stvari koriste svima jednako, poput svjetionika ili obrane, pa ih nitko ne želi platiti sam, i takvih dobara onda bude premalo. Drugdje zato što tržište, ma kako učinkovito dijelilo dohodak, ne pita je li ishod pošten, pa netko ostane bez igdje ičega ne svojom krivnjom. A katkad zato što se cijelo gospodarstvo penje i pada, ponekad strmo, a duboke krize ostavljaju ožiljke koji se teško brišu.
+
+No državu ne vode anđeli, nego ljudi. Lako je je zamišljati kao mudrog roditelja koji uvijek želi opće dobro, premda se u politici ljudi ponašaju jednako razumno i sebično kao na tržnici. Birač vaga isplati li mu se uopće izaći na izbore. Političar lovi glasove. Činovnik pazi na svoj odjel i svoju sigurnost. Čim to vidimo, mnoge naizgled besmislene odluke postaju razumljive, jer nisu plod gluposti nego logike ljudi koji igraju po zadanim pravilima.
+
+Kad mnogo takvih ljudi s različitim željama pokuša izabrati jedno zajedničko rješenje, ne postoji savršen način da se sve te želje pošteno stope u jednu odluku. Ishod ovisi o pravilima glasovanja i o tome tko ih postavlja. A najglasnije obično prođu male, dobro organizirane skupine, jer dobivaju mnogo, dok trošak svoje povlastice tanko razbacuju na sve nas, pa se pojedincu ne isplati buniti zbog nekoliko eura.
+
+Zašto onda ista politika negdje uspije, a drugdje propadne? Razlika su pravila igre, pisana i nepisana, i povjerenje da će vrijediti i sutra. Gdje se dogovori poštuju, zakon urodi plodom; gdje toga nema, isti zakon ostane mrtvo slovo. Dobar ishod manje ovisi o tome tko trenutačno vlada, a više o tome koliko su pravila čvrsta i unaprijed jasna, jer uz dobra pravila čak i osrednji vladari teško naprave veliku štetu.
+
+Sve to dobiva tijelo tek u svakodnevnim potezima. Sama želja da bude više stanova ili manje zagađenja još nije politika; postaje to tek kad država posegne za konkretnim alatom, a svaki alat nosi drukčiji trošak i drukčije nuspojave. Kod novca koji troši nije presudno koliko ga je, nego na što ide i koliko mudro. A porez kojim ga prikuplja nije samo teret, nego način na koji zajednica odlučuje tko i koliko plaća za ono što imamo zajedno.
+
+I tu se vraća ona napetost s početka. Ako tržište zna zakazati, zna i država, pa svaku njezinu intervenciju valja provjeriti jednako strogo kao i tržište koje popravlja. Cilj nije ni više ni manje države, nego bolja država, ona koja popravlja stvaran propust, podnosi strogu provjeru i ostavlja društvo boljim nego što ga je zatekla. Kako takvu prepoznati, najteže je i najvažnije pitanje od svih.
+
+---
+
+## Dio prvi · Što država radi i zašto
+
+Tržište mnogo toga riješi samo, ali ne sve. Tamo gdje podbaci, gdje njegova raspodjela zaboli i gdje cijelo gospodarstvo posrne, izrasta ista potreba za državom, svaki put iz drugog razloga.
+
+### 1. Zašto tržištu uopće treba država?
+
+Ako tržište toliko toga radi dobro, čemu uopće država? Pitanje zvuči gotovo drsko, a odgovor je da postoje poslovi koje cijene jednostavno ne mogu obaviti.
+
+Neke stvari koriste svima, a nitko ih ne želi platiti sam, poput čistog zraka ili temeljne znanosti. Neke odluke štete trećima koji u njima nisu sudjelovali, kao kad tvornica zagadi rijeku. Ponekad jedan prodavač postane toliko velik da sam diktira uvjete. A ponekad kupac i prodavač naprosto ne znaju iste stvari. U svim tim slučajevima tržište proizvede premalo dobroga ili previše lošega.
+
+Ekonomist Richard Musgrave složio je te razloge u tri zadaće države. Da osigura ono što tržište ne nudi, da ublaži prevelike nejednakosti i da smiri gospodarstvo kad zapadne u krizu.
+
+Vrijedi upamtiti i jednu granicu. Tržište može biti učinkovito, a ipak duboko nepravedno. Učinkovito znači samo da se nikome više ne može pomoći a da se nekomu drugom ne naudi, a to nije isto što i pravedno. Upravo ta razlika ostaje u središtu svega što slijedi.
+
+### 2. Gdje i dobro tržište podbaci?
+
+Ulična rasvjeta svijetli svima koji prođu, platili je ili ne. Ako znate da će gorjeti i bez vašeg novca, prepustit ćete drugima da je plate. No ako svi tako razmišljaju, svjetla neće biti.
+
+To je prva od nekoliko zamki. Neka dobra koriste svima, a nikoga se ne može natjerati da plati, pa svatko čeka drugoga i takvog dobra bude premalo.
+
+Drugdje se trošak ili korist neke odluke prelije na ljude koji u njoj nisu sudjelovali. Tako tržište proizvede previše štetnoga, kao što je zagađenje, i premalo korisnoga, kao što je cijepljenje ili obrazovanje.
+
+Ima i suptilnijih zamki. Kad jedna strana zna više od druge, na tržištu ostane lošija roba ili ljudi postanu manje oprezni jer ih netko pokriva. Kad jedna tvrtka ovlada tržištem, diže cijenu i smanjuje količinu. A kod zajedničkih dobara poput ribe ili voda svatko grabi za sebe dok se ne iscrpe.
+
+Za svaki od tih propusta država ima alat, od poreza i subvencija do pravila i jasnih vlasničkih prava, kojim popravlja baš ono mjesto gdje je tržište podbacilo.
+
+### 3. Je li pošteno ono što tržište svakom dodijeli?
+
+Recimo da tržište radi besprijekorno, da je svaki euro otišao tamo gdje najviše vrijedi. Pa ipak, jedni žive u izobilju, a drugi bez krova nad glavom.
+
+Učinkovit ishod, dakle, još nije i pravedan. Tržište nagrađuje vještine, kapital, trud i nemalo sreće, ali ne briše to gdje se tko rodio, u kakvu obitelj i s kakvim prilikama, a često te početne razlike i pojača.
+
+Zato država preraspodjeljuje, i novac i rizike. Kroz progresivne poreze, socijalnu pomoć, mirovine, javno zdravstvo i besplatno obrazovanje uzima od onih koji imaju više i pomaže onima koji imaju manje.
+
+Samo, to nije besplatno. Voda se prema siromašnima nosi šupljim vedrom, pa dio uvijek iscuri, kroz troškove i kroz promjene u ponašanju, i do njih ne stigne sve što je uzeto. Prava mjera leži negdje između potpune jednakosti i netaknute nejednakosti, ondje gdje se ispravlja nepravda a da se ne prolije previše truda.
+
+### 4. Kako država ublažava uspone i padove gospodarstva?
+
+Gospodarstvo ne raste ravnomjerno. Naizmjence se penje i pada, a najdublji padovi ne poprave se sami ni brzo ni jeftino, jer nezaposlenost ostavlja trag koji se teško briše. Treća zadaća države zato gleda cijelu sliku, ne pojedino tržište, i nastoji ublažiti najgore krize i najopasnija pregrijavanja.
+
+Glavni alat je proračun. U krizi država može više trošiti i manje uzimati porezima da gurne potražnju, a u dobrim vremenima činiti suprotno, pri čemu jedan potrošeni euro zna pokrenuti i više od eura proizvodnje. Dio posla obavi se i sam, jer kad dohoci padnu, padnu i porezi a rastu socijalne naknade, pa proračun pomaže bez ijedne nove odluke.
+
+Tu vreba i opasnost. Ista vlada koja krizu treba smirivati može je sama izazvati ako pred izbore umjetno napuhuje gospodarstvo. A stabilnost koristi gotovo svima, a nitko je ne kupuje sam, pa je tržište neće dovoljno osigurati i treba je čuvati unaprijed zadanim pravilima i neovisnim institucijama.
+
+---
+
+## Dio drugi · Politika bez romantike
+
+Lako je državu zamisliti kao mudrog čuvara koji uvijek želi opće dobro. Stvarnost je trezvenija. I glasači, i stranke, i službenici slijede vlastite interese, baš kao i ljudi na tržnici, pa mnoge naizgled čudne poteze tek tako i možemo razumjeti. Ne pitamo kakva bi politika trebala biti, nego što se događa kad svatko za stolom povuče potez koji njemu najviše odgovara.
+
+### 5. Što se promijeni kad političare gledamo kao obične ljude?
+
+Zamislite državu ne kao mudrog čuvara općeg dobra, nego kao tržnicu, štand za štandom, na kojoj svatko vuče za sebe. Upravo tako na nju gleda teorija javnog izbora.
+
+Političari, birači i službenici nisu nesebični zaštitnici svih nas, nego obični ljudi koji slijede vlastiti interes. Čim to prihvatimo, mnoge naizgled besmislene odluke postaju razumljive.
+
+Uzmite svoj glas. Šansa da on sam promijeni ishod izbora gotovo je nula, pa bi strogo gledano bilo razumno ostati kod kuće. Ipak izlazimo, jer glasanjem govorimo tko smo i u što vjerujemo, a kad su izbori tijesni ili dolaze u krizi, izlazimo da izbjegnemo najgori ishod.
+
+Slično je s onima na vlasti. Političari love glasove, a službenici žele veće proračune, pa kratkoročne i populističke mjere često pobijede one koje bi dugoročno svima koristile.
+
+Pouka koju vrijedi ponijeti tiče se pravila, ne lica. Loša pravila i od dobronamjernih ljudi naprave loše ishode, pa popravak češće dolazi iz promjene pravila nego iz zamjene ljudi.
+
+### 6. Što kad ishod ovisi o potezima drugih?
+
+Dva susjeda odlučuju hoće li platiti svoj dio zajedničkog nasipa protiv poplave. Svakome se čini pametno prepustiti trošak drugome, pa na kraju nitko ne plati i obojica stradaju kad voda dođe. Kad svatko gleda samo svoj račun, svi mogu proći lošije nego da su surađivali, i upravo zato postoji porez koji nas privoli na zajednički doprinos.
+
+Nije svaki splet tako jasan. Kad dvije strane u sukobu obje budu tvrde do kraja, sve može završiti katastrofom za sve. A ponekad se svi žele uskladiti, samo ne znaju oko čega, pa država postavljanjem pravila i standarda pomaže da svi gledaju u istu točku.
+
+Pokazuje se i nešto ljudsko. Kad se dijeli, veliku moć ima onaj tko prvi predloži podjelu, no ta moć slabi što je više onih koji strpljivo čekaju bolju ponudu. A stvarni ljudi dijele pravednije nego što hladni račun predviđa, jer se boje odbijanja i pamte tko ih je ranije zakinuo.
+
+### 7. Može li skupina uopće imati jednu volju?
+
+Tri prijatelja biraju film i nikako da se slože. Jedan najviše voli prvi, drugi drugi, treći treći, svaki sa svojim jasnim poretkom. Pa ipak, kad glasuju u parovima, prvi pobjeđuje drugi, drugi pobjeđuje treći, ali treći pobjeđuje prvi. Vrti se u krug i pobjednika nema.
+
+To nije puka zgoda, nego pravilo. Skupina zapravo nema jedinstvenu volju, želje imaju samo pojedinci, pa „volja naroda” uvijek ovisi o pravilima kroz koja se izražava. Ista skupina, s istim željama, donese različite odluke samo zato što drukčije broji glasove.
+
+Jedan je ekonomist davno dokazao nešto neugodno. Nijedan sustav glasovanja ne može u isti čas biti potpuno pošten i potpuno dosljedan, pa svako pravilo nešto žrtvuje i nijedno nije neutralno.
+
+Tu se rađa tiha moć. Onaj tko slaže redoslijed i odlučuje o čemu se i kada glasuje često ima više utjecaja od same većine. Mir se vrati tek kad se rasprava svede na jednu os pa pobijedi onaj u sredini, a inače pravila ne samo da prenose odluku, nego je i oblikuju.
+
+### 8. Zašto stranke obećavaju slično, a reforme stalno čekaju?
+
+Stranka je u jednom pogledu nalik trgovcu koji slaže paket robe. U jednu ponudu spoji porezne olakšice, veće mirovine i pomoć poljoprivredi, a vi kao kupac gledate jednu ili dvije stvari koje vam najviše znače i paket ne rastavljate na dijelove.
+
+Tako stranke i rade. Proizvod im je program, valuta su glasovi, a cilj doći na vlast i ostati na njoj.
+
+Kad biračima vlada sredina, objema se velikim strankama isplati pomicati se prema centru, pa im programi sve više sliče i čini se da prave razlike nema. U Hrvatskoj su tako, unatoč različitoj retorici, dvije najveće stranke dugo vodile slične politike, okrenute stabilnosti i umjerenoj socijalnoj državi.
+
+Slika se mijenja kad su birači podijeljeni, kad rubovi lakše izlaze na izbore ili kad pritišću aktivisti i donatori. Tada se stranke razmiču i nastaje polarizacija.
+
+Ispod svega je jedna tiha poteškoća. Jedan glas gotovo nikad ne odlučuje, pa se većini ne isplati ulagati vrijeme u proučavanje politike, i ljudi ostaju razumno neinformirani. Prostor koji ostane zauzmu dobro organizirane skupine, a posljedica je strpljiva ali postojana, jer politike s brzom vidljivom koristi pobjeđuju, dok nužne reforme s kratkoročnom cijenom stalno čekaju.
+
+### 9. Kako male skupine nadglasaju veliku, šutljivu većinu?
+
+Subvencija od pet milijuna eura nekom uskom sektoru naplati se po nekoliko eura od svakog građanina. Sektor ima snažan razlog boriti se za nju, dok pojedini građanin nema poticaj ni saznati za nju, a kamoli se organizirati protiv.
+
+U tome je sva tajna. Male, koncentrirane skupine lako se okupljaju jer svatko ima puno za dobiti, dok se velike, raspršene skupine teško pokrenu jer svatko čeka da posao obave drugi. Zato mnoge mjere donose veliku korist nekolicini, a trošak razbiju na milijune kojima je pojedinačni teret premalen da bi se bunili. Odatle dvije skupe pojave, lov na rentu, gdje se vrijeme i novac troše na osvajanje povlastica umjesto na stvaranje vrijednosti, i regulatorno zarobljavanje, gdje nadzornik s vremenom počne raditi u korist onih koje bi trebao nadzirati.
+
+Pa ipak, interesne skupine nisu nužno štetne. One prenose znanje i daju glas onima koji bi inače utihnuli, a hoće li škoditi ili koristiti, ovisi o pravilima. Kad su jasna, vidljiva i uravnotežena, zastupanje interesa ostaje dio zdravog društva, a ne tihi danak većine.
+
+### 10. Koliko nam uprave zapravo treba?
+
+Na dobrom šalteru vaš predmet bude riješen jednako, bez obzira poznajete li službenika i koju stranku podržavate. To je svijetla strana uprave. Pravila i stručnost štite vas od samovolje i poznanstava, pa moderna država uopće može ubirati poreze i pružati usluge svima na isti način.
+
+No ista ta pravila znaju postati kruta i spora. Tada se šalter pretvori u gomilu obrazaca, potvrda i čekanja, gdje pravila više ne služe vama, nego sama sebi.
+
+Postoji i dublji razlog za oprez. Birokrati nisu samo neutralni izvršitelji, nego ljudi s vlastitim poticajima, pa ustanove znaju težiti većim proračunima i širim ovlastima. Uz to, uprava najbolje zna koliko nešto stvarno košta, a oni koji je nadziru to teško mogu provjeriti, i lanac odgovornosti od vas preko političara do službenika na dnu dovoljno je dug da se odgovornost lako rasprši.
+
+Zato cilj nije manje uprave, nego bolja. Dobra uprava spaja stručnost i odgovornost, a uspjeh mjeri stvarnim rezultatima, ne brojem zaposlenih ni veličinom proračuna.
+
+---
+
+## Dio treći · Pravila igre
+
+Iza svake odluke stoji okvir koji se rijetko primjećuje, a snažno djeluje. Isti zakon u dvije zemlje zna dati posve različite rezultate, jer ga okružuje nevidljiva mreža navika, sudova i očekivanja. Prije nego što sudimo o pojedinom potezu, vrijedi pogledati taj okvir, jer on tiho odlučuje umjesto nas.
+
+### 11. Kako to da isti zakon u dvije zemlje daje različite rezultate?
+
+Isti zakon o vlasništvu, prepisan u dvije zemlje slovo po slovo, u jednoj rađa procvat, a u drugoj stoji. Kako iste riječi daju tako različite ishode?
+
+Tajna je u tome što gospodarstvo ne pokreću samo novac i resursi, nego pravila igre. Tu spadaju zakoni, ali i običaji, povjerenje i nepisana pravila ponašanja. Najvažnije nije što u zakonu piše, nego provodi li se brzo, pošteno i jednako za sve.
+
+Svaka razmjena nosi skrivene troškove. Treba pronaći partnera, dogovoriti se i provjeriti hoće li se obećano izvršiti, a dobra pravila te troškove smanjuju dok ih loša napuhuju.
+
+Pogledajte najam stanova. Gdje su sudovi brzi a vlasništvo zaštićeno, vlasnici opušteno iznajmljuju na duže. Gdje je zaštita spora i neizvjesna, traže velike pologe ili radije ne daju ništa, pa stanova ima manje i skuplji su, premda fizički postoje.
+
+Ista priča vrijedi kad netko odlučuje u tuđe ime, jer se njegovi interesi lako raziđu s interesima onih za koje radi, pa trebaju nadzor i odgovornost. Društva napreduju kad pravila služe mnogima, a posrnu kad su skrojena za usku povlaštenu skupinu.
+
+### 12. Tko i po kojim pravilima smije odlučivati o našem novcu?
+
+Igru u kojoj se pravila smiju mijenjati usred poteza nitko ne može pošteno odigrati, jer tko god vodi, namjestit će ih sebi u korist. Zato vrijedi razdvojiti dvije razine. Na jednoj, svakodnevnoj, odlučuje se koliki će biti porez i kamo ide novac. Na drugoj, dubljoj i tišoj, postavljaju se pravila po kojima se uopće smije odlučivati, i tu se kriju najvažnija pitanja.
+
+Pouka je gotovo neugodna. Dobar ishod ovisi manje o tome tko vlada, a više o tome koliko su pravila dobro posložena. Razlog je jednostavan, jer politici se često isplati danas obećati štednju a sutra je iznevjeriti, pred izbore dijeliti a račun ostaviti za poslije.
+
+Lijek je da vlast sama sebi unaprijed veže ruke, poput mornara koji se priveže za jarbol da kasnije ne podlegne napasti. Tako rade pravila o zaduživanju ili odluka da se novac vodi izvan dnevne politike, kao kad je Hrvatska uvođenjem eura monetarnu politiku preselila iz Zagreba u Frankfurt.
+
+Koliko neko pravilo vrijedi, vidi se po jednome, po tome koliko ljudi vjeruju da će ostati na snazi i onda kad postane neugodno. Najbolje je ono koje je teško zaobići, a ne ono najstrože na papiru.
+
+---
+
+## Dio četvrti · Država na djelu
+
+Sve se na kraju svede na poteze koji se osjete u svakom domu. Na alate kojima država mijenja stvari oko nas, na novac koji uzme i potroši, i na to kako se zajednička valuta nosi bez zajedničkog proračuna. Pratimo novac kako ulazi, kako se troši i kako se teret dijeli.
+
+### 13. Kojim sve alatima država mijenja ono što želi?
+
+Cilj zapisan na papiru, recimo manje zagađenja ili manje siromaštva, još nije politika. Ona nastaje tek kad država posegne za konkretnim alatom, mostom između želje i stvarne promjene u životu ljudi.
+
+A alata ima više. Država nešto može potaknuti novcem, kroz porez ili subvenciju, propisati pravilo, zabranu ili standard, sama nešto proizvesti kroz javno poduzeće, ili samo informirati, jasnom oznakom ili upozorenjem. Isti se cilj može postići svakim od tih putova, ali putovi nisu jednaki, jer izbor alata odlučuje tko će platiti, tko će imati koristi i hoće li mjera uopće uspjeti.
+
+Svaki je alat dvosjekli mač. Porez i pravilo mogu stvoriti nepotreban gubitak, subvencija ovisnost, javno poduzeće mlitavost, a tihi poticaj koji izbor samo olakša ne pomaže kad je pravi problem siromaštvo ili prevelika tržišna moć. Najjeftiniji alat često nije i politički najprihvatljiviji, pa dobre politike rijetko biraju jedan, a obično ih nekoliko slože u smišljen paket.
+
+### 14. Na što i zašto država troši novac koji prikupi?
+
+Dvije obitelji s jednakom plaćom mogu živjeti posve različito. Jedna novac ulaže u školovanje djece i popravak kuće, druga ga troši na stare navike i otplatu kamata. Na kraju mjeseca potrošile su isto, ali ne žive isto.
+
+S državnom potrošnjom jednako je. Nije presudno koliko država troši, nego na što, za koga i koliko mudro.
+
+Nekad je radila malo, tek čuvala red i sigurnost. Danas iz istog izvora financira školstvo, zdravstvo, mirovine i obranu, čime dijeli rizike među nama i ulaže u budućnost, ali ista širina nosi i opasnost od dugova, neučinkovitosti i rasipanja.
+
+U krizi pojačanom potrošnjom može ublažiti pad, no to djeluje samo ako je u dobrim godinama štedjela. Inače raste dug, koji se ne puni samo novim trošenjem, jer kad su kamate veće od rasta gospodarstva, omjer duga penje se i sam od sebe.
+
+Tako dvije zemlje koje troše jednako mogu završiti posve različito. Jedna gradi buduću snagu, druga samo plaća stare račune. Presuđuje kvaliteta, a ne sama veličina potrošnje.
+
+### 15. Tko zapravo plaća poreze i kako teret podijeliti pošteno?
+
+Ono što vi odnesete kući i ono što vašega poslodavca uistinu košta dvije su različite brojke. Razlika među njima, takozvani porezni klin, odlazi državi kroz poreze i doprinose.
+
+Porez je obvezno davanje za koje ne dobivate izravnu protuuslugu, za razliku od pristojbe ili doprinosa, gdje znate što vam se vraća. Iznenađenje je da onaj tko po zakonu plaća i onaj tko teret stvarno snosi nisu uvijek ista osoba, jer teret na kraju padne na onoga tko se teže izmakne, na manje pokretljivu stranu.
+
+Svaki porez ljude pomalo odvrati od rada, kupnje ili štednje, a taj skriveni gubitak naglo raste ako su stope previsoke. Pametnije je zato ubirati niske poreze na puno toga nego visoke na malo toga. Čini se pravednim da bogatiji daju veći udio jer im dodatni euro znači manje, ali pretjerane stope mogu smanjiti i prihod države i volju za radom.
+
+Hrvatska se pritom oslanja na porez na potrošnju i na visoko opterećenje plaća, dok imovinu i nekretnine gotovo ne dira. Porez tako nije samo teret, nego način na koji zajednica odlučuje tko i koliko plaća za ono što imamo zajedno.
+
+### 16. Kako dijeliti istu valutu, a ne dijeliti zajednički proračun?
+
+Dvoje cimera dijeli jedan račun za stanarinu, ali svatko vodi svoj novčanik i sam plaća svoju hranu. Tako otprilike izgleda Europska unija. Zemlje europodručja dijele euro i jednu središnju banku, no svaka i dalje sama kroji svoj proračun, svoje poreze i svoju potrošnju.
+
+Novac je tako zajednički, a proračuni ostaju nacionalni. Zajednički proračun Unije premalen je da bi platio mirovine, bolnice ili škole, ili da sam izvuče zemlju iz krize, pa to i dalje rade nacionalni proračuni, svaki za sebe. Kako onda spriječiti da jedan svojim trošenjem ugrozi ostale? Cimeri dogovore pravila, a Unija radi isto, držeći stabilnost kroz granice zaduživanja i kroz godišnji dogovor o tome kamo svaka zemlja ide.
+
+Jednom, nakon pandemije, zadužila se prvi put zajednički da pomogne svima, no bila je to privremena iznimka, ne novo pravilo. Ostaje otvoreno pitanje koliko bi zajedno trebalo plaćati stvari poput obrane, energetike i klime, čije koristi ionako prelaze svaku granicu.
+
+---
+
+## Dio peti · Kako do boljih politika
+
+Sve dosad počivalo je na tihoj pretpostavci da država, kad već uskoči, posao obavi bolje od tržišta. A što ako i sama zakaže? Savršenu državu ne možemo dobiti, ali možemo razumjeti zašto neke promjene zažive, a druge ostanu samo na papiru, i tako sljedeći put pogriješiti manje.
+
+### 17. Što ako i sama država zakaže, kao što zna tržište?
+
+Država ulazi onamo gdje tržište zakaže. No činjenica da problem postoji ne znači da će ga ona i riješiti, jer i sama zna zakazati, baš kao tržište.
+
+Pred nama su zapravo dva nesavršena alata. Ne biramo između sna o savršenom tržištu i sna o savršenoj državi, nego između dva stvarna mehanizma od kojih oba znaju zatajiti, pa kao što jedan provjeravamo, tako moramo i drugi.
+
+Država najčešće ne padne zato što joj je cilj loš. Padne jer je krenula s lošim podacima, jer je odabrala krivi alat ili jer na kraju nije imao tko provesti odluku. Poticaji političara, birokrata i organiziranih skupina znaju je odgurnuti od onoga što koristi svima, a poneki se trošak i sakrije, jer ono što ne uđe u proračun, poput kontrole cijena ili jamstava, nije zato besplatno.
+
+Najskuplje se troši tiho. Ponavljani neuspjesi grizu povjerenje građana, a bez njega ni porezi ni škole ni zdravstvo ne rade dobro. Cilj zato nije ni manje države ni više države, nego bolja država.
+
+### 18. Može li država raditi učinkovitije ako se ponaša kao tvrtka?
+
+Kad je država postala prevelika i preskupa, javila se primamljiva misao. Ako tvrtke posluju učinkovito jer ih tjera natjecanje i jer broje rezultate, zašto ne urediti i državu slično? Tako se javio val ideja koji je tražio manje pravila i procedura, a više postignuća.
+
+Mijenjalo se mnogo odjednom. Neke usluge prepuštene su tržištu, privatnicima ili samostalnim agencijama, pa se pitanje pomaknulo s toga treba li to raditi država na to tko to može najbolje. Institucije se počelo ocjenjivati po onome što su postigle, po kraćim listama čekanja i boljim ishodima, a ne samo po tome jesu li novac potrošile po propisu. Korisna je slika države koja drži kormilo i usmjerava, a samo veslanje može prepustiti drugima.
+
+Zamke su se ipak brzo pokazale. Čim neka mjera postane cilj, ljudi je počnu varati, pa bolnica skrati listu odbijanjem teških pacijenata, a škola digne rezultat sužavanjem nastave. Građanin, naime, nije samo kupac usluge, nego i nositelj prava i član zajednice, a država ima previše različitih ciljeva da bi bila tek poduzeće. Takve ideje pomažu tek kad već postoje uredni temelji uprave.
+
+### 19. Tko sve mora surađivati da bi se riješili veliki problemi?
+
+Osoba koja je ostala bez posla istodobno treba i novi posao, i pomoć, i liječnika, a možda i prekvalifikaciju. Danas sve to često traži obilazeći četiri zasebna ureda, a svaki gleda samo svoj komadić.
+
+Najteži problemi izgledaju upravo tako, presijecaju granice mnogih ureda. Klima, starenje stanovništva ili zdravstvena kriza ne staju ni u jedno ministarstvo.
+
+Zato se uprava sve više slaže oko građanina i oko problema, a ne oko vlastitih granica. Tako nastaju jedinstvene kontaktne točke i usluge povezane na jednom mjestu, a država sve manje zapovijeda, a sve više usklađuje suradnju mnogih.
+
+Politike onda sve češće nastaju u mrežama i partnerstvima, što donosi znanje svih strana. Cijena je da se lakše zamuti tko je za što odgovoran i da pokoji moćan interes preuzme odluku za sebe, pa građani jesu i sudionici, a ne samo korisnici, no samo ako je sudjelovanje stvarno i ako za stolom ne sjede uvijek isti.
+
+Najbolja uprava drži ravnotežu, poštuje pravila, gleda stvarne rezultate i zna povezati ljude. Svaka od te tri sklonosti sama ima slabost, pa snaga leži u tome da idu zajedno.
+
+### 20. Isplati li se neka javna odluka i je li doista upalila?
+
+Prije nego što država nešto plati javnim novcem, vrijedi pošteno izvagati sve koristi i sve troškove. Razlika prema tvrtki je jasna, jer tvrtka gleda zaradu, a država korist za cijelo društvo, pa zbraja i ono što tržišne cijene ne vide, poput uštede vremena na novoj cesti ili čišćeg zraka.
+
+Jedna stvar zna sve okrenuti naglavačke. Korist koja stigne tek za mnogo godina vrijedi manje danas, a koliko manje ovisi o jednom jedinom izboru. Pri niskoj kamati daleka korist danas vrijedi gotovo koliko i bliska, a pri visokoj se gotovo izgubi, i o tom jednom izboru ovisi izgleda li ulaganje sjajno ili posve promašeno.
+
+Račun ima i slabe točke. Neke se stvari, poput ljudskog života, zdravlja ili čistog okoliša, teško izražavaju u novcu, pa ih lako iskrivi ili previdi, a i kad ispadne pozitivno, ne znači da je raspodjela pravedna, jer dobitnici i gubitnici često nisu isti ljudi. Nakon provedbe zato dolazi pravo vaganje, ono koje pita što bi bilo da te politike nije bilo, a najpošteniji odgovor daje pokus u kojem jedni dobiju mjeru, a drugi ne, pa se razlika može pripisati upravo njoj.
+
+### 21. Zašto neke reforme uspiju, a druge ostanu samo na papiru?
+
+Zamislite reformu kao vožnju autom. Ne pomaže gaziti gas do kraja ako cesta i auto to ne podnose; brzinu treba prilagoditi onome što put i vozilo mogu izdržati, inače se završi u jarku.
+
+Tako je i s reformom. Uspijeva ne kad je tehnički savršena, nego kad odgovara onome koliko država stvarno može provesti.
+
+Teža je od običnih promjena jer mijenja sam način na koji država radi, a ne tek pravila na papiru, pa ide sporo i politički je osjetljiva. Ljudi joj se opiru, ali često ne zato što su sigurni gubitnici, nego zato što ne znaju hoće li proći bolje ili gore, pa radije ostaju pri poznatom.
+
+Zbog toga je redoslijed važan koliko i sadržaj. Najprije se postave temelji, pa se tek onda gradi ono složeno, a vanjski pritisak, poput ulaska u Europsku uniju, gura naprijed sve dok traje. Pravi se uspjeh na kraju ne broji donesenim zakonima, nego time koliko država doista bolje služi ljudima, jer to je razlika između promjene na papiru i one koja stvarno traje.

@@ -349,7 +349,11 @@ To znači da siromašniji pojedinci imaju višu graničnu korisnost dohotka, dok
 
 ### Tko stvarno snosi porez — porezna incidencija
 
-**Teorija porezne incidencije** odnosi se na pitanje tko stvarno snosi teret poreza, bez obzira na to tko ga formalno plaća. Raspodjela poreznog tereta ovisi o elastičnosti ponude i potražnje. Strana tržišta koja je manje elastična snosi veći dio poreznog opterećenja [@gruber2019].
+**Teorija porezne incidencije** odnosi se na pitanje tko stvarno snosi teret poreza, bez obzira na to tko ga formalno plaća. Raspodjela poreznog tereta ovisi o elastičnosti ponude i potražnje. Strana tržišta koja je manje elastična snosi veći dio poreznog opterećenja [@gruber2019]. Taj se udio može i izračunati. Ako je $\varepsilon_s$ elastičnost ponude, a $\varepsilon_d$ elastičnost potražnje, dio poreza koji kroz višu cijenu snose kupci i dio koji kroz nižu cijenu snose prodavači jesu
+
+$$\frac{\partial P_c}{\partial t} = \frac{\varepsilon_s}{\varepsilon_s + |\varepsilon_d|}, \qquad \frac{\partial P_p}{\partial t} = \frac{-\,|\varepsilon_d|}{\varepsilon_s + |\varepsilon_d|}.$$
+
+Dva se udjela zbrajaju u cijeli porez, pa teret pada na onu stranu koja je manje elastična. Ako je ponuda dvostruko elastičnija od potražnje ($\varepsilon_s = 2$, $|\varepsilon_d| = 0{,}5$), kupci snose $2/2{,}5 = 80\%$ poreza, jer teže izbjegavaju kupnju nego što prodavači izbjegavaju prodaju.
 
 Graf koji slijedi prikazuje to na tržištu s plavom krivuljom potražnje i zelenom krivuljom ponude koja se nakon poreza pomiče u isprekidani položaj. Crveni okomiti odsječak je ukupni iznos poreza t, plavi pravokutnik udio tereta koji snose kupci kroz razliku cijena Pc i P\*, a žuti pravokutnik udio koji snose prodavači kroz razliku P\* i Pp. U vrhu grafa ispisani su postotni udjeli poreznog tereta. Graf je interaktivan, pa klizači mijenjaju elastičnost potražnje i ponude te iznos poreza.
 
@@ -1110,6 +1114,12 @@ Teorija optimalnog oporezivanja razvijena je kako bi odgovorila na temeljno pita
 **Mrtvi teret poreza** je gubitak ukupnog blagostanja koji nastaje zato što porez mijenja relativne cijene i odvraća sudionike od razmjena koje bi inače bile uzajamno korisne. Formalno, ako je $Q^*$ ravnotežna količina prije oporezivanja, a $Q_t$ količina nakon uvođenja poreza po jedinici $t$, mrtvi teret je $DWL \approx \tfrac{1}{2}\,t\,(Q^* - Q_t)$. On raste s kvadratom porezne stope i s elastičnošću ponude i potražnje.
 :::
 
+Tu se aproksimaciju može izraziti i preko elastičnosti. Budući da porez podiže cijenu za $t$, a količina pada za $\Delta Q = \varepsilon\,q\,(t/p)$, mrtvi teret poprima oblik
+
+$$DWL \approx \tfrac{1}{2}\,t\,\Delta Q = \tfrac{1}{2}\,\varepsilon\,\frac{t^{2}}{p}\,q,$$
+
+iz kojega se izravno vidi ono što definicija tvrdi riječima, da gubitak raste s kvadratom porezne stope i s elastičnošću osnovice [@gruber2019]. Udvostruči li se stopa, mrtvi teret raste četiri puta, pa je više malih distorzija obično jeftinije od jedne velike.
+
 ### Ramseyevo pravilo
 
 Početak moderne teorije optimalnog oporezivanja vezuje se uz rad Franka Ramseya, koji je prvi formalno postavio pitanje o tome kako rasporediti poreze na različita dobra kako bi se minimizirao mrtvi teret uz zadane porezne prihode. Ramsey je pokazao da optimalno oporezivanje ne znači jednako oporezivanje svih dobara. Naprotiv, njegov ključni rezultat pokazuje da dobra s neelastičnom potražnjom trebaju biti relativno više oporezovana. Intuicija iza tog rezultata proizlazi iz koncepta mrtvog tereta. Kada porez povećava cijenu nekog dobra, potrošači smanjuju potražnju. Ako je ta reakcija velika (elastična potražnja), dolazi do značajnog pada količine i velikog gubitka blagostanja. Ako je reakcija mala (neelastična potražnja), porez ima manji učinak na količinu i time manji mrtvi teret. Taj rezultat ima jasne praktične implikacije i upravo zato se u stvarnim poreznim sustavima često primjenjuju visoke trošarine na proizvode poput goriva ili duhana, čija je potražnja relativno neelastična.
@@ -1117,6 +1127,12 @@ Početak moderne teorije optimalnog oporezivanja vezuje se uz rad Franka Ramseya
 ::: {#prp-ramsey}
 **Ramseyevo pravilo.** Pri zadanom prihodu koji država treba prikupiti, mrtvi teret oporezivanja minimizira se kada se porezne stope na različita dobra postave tako da postotno smanjenje potraživane količine bude jednako za sva dobra. Dobra s relativno **neelastičnom** potražnjom posljedično trebaju biti relativno **više** oporezivana jer manje reagiraju na promjenu cijene, pa generiraju manji mrtvi teret po jedinici prihoda [@ramsey1927].
 :::
+
+U svom najjednostavnijem obliku, uz nepovezane potražnje, pravilo se zapisuje kao inverzna elastičnost. Optimalna stopa na dobro $i$ to je viša što je elastičnost potražnje $\varepsilon_i$ niža,
+
+$$\frac{t_i}{1+t_i} = \frac{\lambda}{\varepsilon_i}, \qquad \frac{t_i}{t_j} = \frac{\varepsilon_j}{\varepsilon_i},$$
+
+gdje je $\varepsilon_i$ uzeta kao apsolutna vrijednost elastičnosti, a $\lambda$ zajednički množitelj jednak za sva dobra. Omjer dviju stopa pokazuje srž pravila, dobro čija je potražnja dvostruko neelastičnija nosi dvostruko višu stopu [@ramsey1927].
 
 Graf koji slijedi pokazuje taj odnos na jednom tržištu, s plavom krivuljom potražnje i zelenom krivuljom ponude koja se nakon poreza pomiče u isprekidani položaj. Crveni trokut je mrtvi teret, svjetloplavi pravokutnik porezni prihod države, sive točke označavaju početnu ravnotežu Q\* i P\*, a crvene ravnotežu nakon poreza. Graf je interaktivan, pa klizač mijenja elastičnost porezne osnovice i tako pokazuje zašto neelastična dobra nose manji mrtvi teret po jedinici prihoda.
 
@@ -1753,6 +1769,12 @@ Graf ujedno rastavlja ukupnu reakciju na dva učinka prema Slutskom. Pomak od A 
 
 Zbog interakcije tih dvaju učinaka krivulja ponude rada može imati specifičan oblik. Pri višim razinama nadnice može prevladati dohodovni učinak te pojedinci biraju više dokolice, što rezultira takozvanom **unazad savijenom krivuljom ponude rada**. Jedan od važnih zaključaka Mirrleesove teorije jest da optimalni porezni sustav ne mora imati ekstremno visoke stope za najbogatije. Razlog je taj što visoke stope mogu značajno smanjiti ekonomske poticaje upravo kod onih koji generiraju najveći dio dohotka.
 
+Taj se zaključak može i izoštriti u formulu. Saez je pokazao da optimalna gornja granična stopa ovisi o samo dvama brojevima, o elastičnosti oporezivog dohotka $\varepsilon$ i o parametru $a$ koji mjeri debljinu gornjeg repa raspodjele. Kada se najbogatijima ne pridaje gotovo nikakva društvena težina, stopa koja maksimizira prihod od njih iznosi
+
+$$\tau^{*} = \frac{1}{1 + a\,\varepsilon}, \qquad a = \frac{\bar{z}}{\bar{z} - z^{*}},$$
+
+gdje je $\bar{z}$ prosječni dohodak iznad praga $z^{*}$ [@saez2001]. Stopa pada kako elastičnost $\varepsilon$ raste, jer porez tada jače izobličuje ponudu rada i prijavljeni dohodak. Time apstraktni Mirrleesov zaključak dobiva mjerljiv oblik, optimalna progresivnost na vrhu nije stvar načela nego elastičnosti i oblika raspodjele.
+
 ### Oporezivanje štednje i kapitala
 
 Ista napetost supstitucijskog i dohodovnog učinka javlja se i kod oporezivanja prinosa na štednju, što prikazuje graf koji slijedi, prikaz izbora između sadašnje potrošnje C₁ na vodoravnoj osi i buduće potrošnje C₂ na okomitoj. Zelena puna linija je proračunska linija bez poreza, a zelena isprekidana ona s porezom na prinos, koja se zakreće oko točke darivanja Y jer porez smanjuje neto kamatnu stopu. Plava krivulja indiferencije prolazi kroz početni optimum, crvena kroz novi, plava točka označava optimum bez poreza i crvena onaj s porezom, a u vrhu se ispisuje promjena štednje kao razlika Y i C₁. Graf je interaktivan, pa klizači mijenjaju kamatnu stopu, poreznu stopu i elastičnost intertemporalne supstitucije, čime se vidi hoće li porez na prinos smanjiti ili povećati štednju.
@@ -2083,6 +2105,12 @@ Sve dosadašnje rasprave pretpostavljaju da viša stopa donosi i viši prihod, n
 Graf koji slijedi prikazuje tu krivulju kao porezni prihod u ovisnosti o stopi. Crna točka označava vrh prihoda t\*, odnosno stopu pri kojoj država ostvaruje najveći mogući prihod. Pokretna točka koja prati klizač zelena je dok se nalazite na rastućem dijelu krivulje gdje dizanje stope povećava prihod, a crvena na padajućem dijelu gdje dizanje stope smanjuje prihod jer porezna osnovica reagira jače nego što stopa raste. Graf je interaktivan, pa klizač mijenja elastičnost porezne osnovice i tako pomiče položaj vrha krivulje.
 
 Ključni je rezultat da se pri konstantnoj elastičnosti porezne osnovice ε vrh nalazi pri stopi t\* jednakoj 1 / (1 + ε). Ta jednostavna formula objašnjava cijelu raspravu o Lafferovoj krivulji jer pokazuje da ne postoji univerzalni Lafferov vrh, nego njegova lokacija ovisi isključivo o tome koliko porezna osnovica reagira na promjene stope.
+
+Taj se vrh može i izvesti. Ako porezna osnovica pri stopi $t$ iznosi $B_0(1-t)^{\varepsilon}$, prihod je umnožak stope i osnovice, a deriviranje po stopi i izjednačavanje s nulom daje vrh,
+
+$$R(t) = t\,B_0\,(1-t)^{\varepsilon} \ \Longrightarrow\ \frac{dR}{dt} = 0 \ \Longrightarrow\ t^{*} = \frac{1}{1+\varepsilon}.$$
+
+Uz elastičnost $\varepsilon = 0{,}5$ vrh je na $t^{*} \approx 66{,}7\%$, uz $\varepsilon = 1$ na $50\%$, a uz $\varepsilon = 2$ na $33\%$, pa elastičnija osnovica gura vrh prema nižim stopama [@saez2001].
 
 ::: {.content-visible when-format="html"}
 ```{ojs}
@@ -2432,6 +2460,18 @@ Razlika između faza nije samo akademska. Ona definira koji su porezi pametni *s
 Središnja preporuka za fazu tranzicije jest **postupan pomak težišta s oporezivanja rada na oporezivanje potrošnje**. Logika je u izravnoj vezi s teorijom optimalnog oporezivanja koju smo ranije razmatrali. Ako porezna baza rada postaje manje izdašna i istovremeno više iskrivljuje ekonomske odluke (potičući automatizaciju), učinkoviti porezni sustav prirodno prebacuje teret na šire i stabilnije baze, prije svega na potrošnju koja u Fazi 1 i dalje obuhvaća najveći dio ekonomske aktivnosti [@korinek2026; @atkinson1980].
 
 Uz pomak s rada na potrošnju, ključna je i druga, manje očita razlika, između oporezivanja **finalnih usluga** koje AI sustavi pružaju potrošačima i oporezivanja **proizvodnog kapitala** koji te usluge omogućuje. Korinek i Lockwood snažno preporučuju prvo, a odbacuju drugo. Razumno je oporezovati pretplatu na AI asistenta koja se prodaje kućanstvu (jer je riječ o klasičnoj konačnoj potrošnji), ali neproduktivno je oporezovati grafičke procesore, podatkovne centre ili "trening compute" jer to izravno gasi ulaganja koja podižu produktivnost i, u konačnici, samu poreznu bazu [@guerreiro2022; @costinot2023]. Ista logika vrijedi i za takozvane **token poreze** (porez na jedinice AI outputa) koji su smisleni kao porez na potrošačku uporabu, ali postaju distorzivni ako pogađaju AI korištenje u industrijskoj proizvodnji ili istraživanju.
+
+Ta preporuka nije ad hoc, nego izravna posljedica jednog od najstarijih rezultata teorije optimalnog oporezivanja.
+
+::: {#prp-proizvodna-efikasnost}
+**Teorem proizvodne efikasnosti (Diamond–Mirrlees).** Kada država može oporezovati sva finalna dobra, optimalno je međuinpute ostaviti neoporezovanima, $t^{*}_{\text{int}} = 0$, čime proizvodna strana ostaje neiskrivljena, a gospodarstvo proizvodi na granici proizvodnih mogućnosti [@diamond1971].
+:::
+
+U optimumu se zato granična stopa transformacije izjednačava s omjerom proizvođačkih cijena, a porezni klin ostaje samo na potrošačkoj strani,
+
+$$t^{*}_{\text{int}} = 0 \quad\Longrightarrow\quad MRT_{ij} = \frac{q_i}{q_j},$$
+
+gdje su $q_i$ i $q_j$ proizvođačke cijene dobara $i$ i $j$. Upravo na tom rezultatu počiva preporuka da se oporezuju finalne usluge AI-a, a ne računarska snaga, grafički procesori ni trening modela, jer bi porez na te međuinpute pomaknuo gospodarstvo s granice proizvodnih mogućnosti i smanjio samu poreznu osnovicu koju nastoji oporezovati.
 
 Treća preporuka odnosi se na **fiksne faktore**, resurse koji ne mogu pobjeći u drugu jurisdikciju ni "nestati" kada se oporezuju. Klasičan je primjer zemljište, ali u digitalnom dobu istoj logici pripadaju i radiofrekvencijski spektar te orbitalne pozicije za satelite. Ti su porezi ekonomski neutralni (ne smanjuju ponudu jer je ponuda fiksna) i postaju sve vrjedniji upravo onda kada oporezivanje rada počinje slabiti [@korinek2026]. Za Hrvatsku, slabo razvijeno oporezivanje nekretnina o kojem smo govorili ranije izgleda u tom svjetlu kao **propušten fiskalni prostor**, i to onaj koji teorija upravo preporučuje pojačati u doba AI-a.
 

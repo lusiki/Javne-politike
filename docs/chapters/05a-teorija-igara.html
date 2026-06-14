@@ -1,0 +1,2727 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="hr-HR" xml:lang="hr-HR"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.9.38">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="description" content="Praktični i interaktivni udžbenik o javnim financijama, teoriji javnog izbora i javnim politikama u Hrvatskoj — uloga države, alokacija, redistribucija, institucije i reforme.">
+
+<title>Teorija igara i zakonodavno pregovaranje – Sve što želite znati o državi i javnim politikama u Hrvatskoj</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<link href="../chapters/06-kolektivni-izbor.html" rel="next">
+<link href="../chapters/05-javni-izbor.html" rel="prev">
+<link href="../images/favicon.ico" rel="icon">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-4d4ad920c17a1b28c6a7c1d28bdd063b.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark-7cbdf6bb4af9301f1adde34f6db1f419.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-4d4ad920c17a1b28c6a7c1d28bdd063b.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-5ca7702b8b7797466f480a355bce9cc3.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-dark-4d208560c095bd6a2cfa43b096f764e2.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../site_libs/bootstrap/bootstrap-5ca7702b8b7797466f480a355bce9cc3.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+<style>html{ scroll-behavior: smooth; }</style>
+<script async="" src="https://hypothes.is/embed.js"></script>
+<script>
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    document.body.classList.add('hypothesis-enabled');
+  });
+</script>
+<script type="module" src="../site_libs/quarto-ojs/quarto-ojs-runtime.js"></script>
+<link href="../site_libs/quarto-ojs/quarto-ojs.css" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&amp;family=IBM+Plex+Mono:wght@400;500;600&amp;family=Newsreader:ital,opsz,wght@0,6..72,300;0,6..72,400;0,6..72,500;0,6..72,600;0,6..72,700;1,6..72,300;1,6..72,400;1,6..72,500&amp;display=swap" rel="stylesheet">
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+<link rel="stylesheet" href="../styles/styles.css">
+<meta property="og:title" content="Teorija igara i zakonodavno pregovaranje – Sve što želite znati o državi i javnim politikama u Hrvatskoj">
+<meta property="og:description" content="Praktični i interaktivni udžbenik o javnim financijama, teoriji javnog izbora i javnim politikama u Hrvatskoj — uloga države, alokacija, redistribucija, institucije i reforme.">
+<meta property="og:site_name" content="Sve što želite znati o državi i javnim politikama u Hrvatskoj">
+<meta name="twitter:title" content="Teorija igara i zakonodavno pregovaranje – Sve što želite znati o državi i javnim politikama u Hrvatskoj">
+<meta name="twitter:description" content="Praktični i interaktivni udžbenik o javnim financijama, teoriji javnog izbora i javnim politikama u Hrvatskoj — uloga države, alokacija, redistribucija, institucije i reforme.">
+<meta name="twitter:card" content="summary_large_image">
+</head>
+
+<body class="nav-sidebar docked nav-fixed slimcontent quarto-light"><script id="quarto-html-before-body" type="application/javascript">
+    const toggleBodyColorMode = (bsSheetEl) => {
+      const mode = bsSheetEl.getAttribute("data-mode");
+      const bodyEl = window.document.querySelector("body");
+      if (mode === "dark") {
+        bodyEl.classList.add("quarto-dark");
+        bodyEl.classList.remove("quarto-light");
+      } else {
+        bodyEl.classList.add("quarto-light");
+        bodyEl.classList.remove("quarto-dark");
+      }
+    }
+    const toggleBodyColorPrimary = () => {
+      const bsSheetEl = window.document.querySelector("link#quarto-bootstrap:not([rel=disabled-stylesheet])");
+      if (bsSheetEl) {
+        toggleBodyColorMode(bsSheetEl);
+      }
+    }
+    const setColorSchemeToggle = (alternate) => {
+      const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
+      for (let i=0; i < toggles.length; i++) {
+        const toggle = toggles[i];
+        if (toggle) {
+          if (alternate) {
+            toggle.classList.add("alternate");
+          } else {
+            toggle.classList.remove("alternate");
+          }
+        }
+      }
+    };
+    const toggleColorMode = (alternate) => {
+      // Switch the stylesheets
+      const primaryStylesheets = window.document.querySelectorAll('link.quarto-color-scheme:not(.quarto-color-alternate)');
+      const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
+      manageTransitions('#quarto-margin-sidebar .nav-link', false);
+      if (alternate) {
+        // note: dark is layered on light, we don't disable primary!
+        enableStylesheet(alternateStylesheets);
+        for (const sheetNode of alternateStylesheets) {
+          if (sheetNode.id === "quarto-bootstrap") {
+            toggleBodyColorMode(sheetNode);
+          }
+        }
+      } else {
+        disableStylesheet(alternateStylesheets);
+        enableStylesheet(primaryStylesheets)
+        toggleBodyColorPrimary();
+      }
+      manageTransitions('#quarto-margin-sidebar .nav-link', true);
+      // Switch the toggles
+      setColorSchemeToggle(alternate)
+      // Hack to workaround the fact that safari doesn't
+      // properly recolor the scrollbar when toggling (#1455)
+      if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
+        manageTransitions("body", false);
+        window.scrollTo(0, 1);
+        setTimeout(() => {
+          window.scrollTo(0, 0);
+          manageTransitions("body", true);
+        }, 40);
+      }
+    }
+    const disableStylesheet = (stylesheets) => {
+      for (let i=0; i < stylesheets.length; i++) {
+        const stylesheet = stylesheets[i];
+        stylesheet.rel = 'disabled-stylesheet';
+      }
+    }
+    const enableStylesheet = (stylesheets) => {
+      for (let i=0; i < stylesheets.length; i++) {
+        const stylesheet = stylesheets[i];
+        if(stylesheet.rel !== 'stylesheet') { // for Chrome, which will still FOUC without this check
+          stylesheet.rel = 'stylesheet';
+        }
+      }
+    }
+    const manageTransitions = (selector, allowTransitions) => {
+      const els = window.document.querySelectorAll(selector);
+      for (let i=0; i < els.length; i++) {
+        const el = els[i];
+        if (allowTransitions) {
+          el.classList.remove('notransition');
+        } else {
+          el.classList.add('notransition');
+        }
+      }
+    }
+    const isFileUrl = () => {
+      return window.location.protocol === 'file:';
+    }
+    const hasAlternateSentinel = () => {
+      let styleSentinel = getColorSchemeSentinel();
+      if (styleSentinel !== null) {
+        return styleSentinel === "alternate";
+      } else {
+        return false;
+      }
+    }
+    const setStyleSentinel = (alternate) => {
+      const value = alternate ? "alternate" : "default";
+      if (!isFileUrl()) {
+        window.localStorage.setItem("quarto-color-scheme", value);
+      } else {
+        localAlternateSentinel = value;
+      }
+    }
+    const getColorSchemeSentinel = () => {
+      if (!isFileUrl()) {
+        const storageValue = window.localStorage.getItem("quarto-color-scheme");
+        return storageValue != null ? storageValue : localAlternateSentinel;
+      } else {
+        return localAlternateSentinel;
+      }
+    }
+    const toggleGiscusIfUsed = (isAlternate, darkModeDefault) => {
+      const baseTheme = document.querySelector('#giscus-base-theme')?.value ?? 'light';
+      const alternateTheme = document.querySelector('#giscus-alt-theme')?.value ?? 'dark';
+      let newTheme = '';
+      if(authorPrefersDark) {
+        newTheme = isAlternate ? baseTheme : alternateTheme;
+      } else {
+        newTheme = isAlternate ? alternateTheme : baseTheme;
+      }
+      const changeGiscusTheme = () => {
+        // From: https://github.com/giscus/giscus/issues/336
+        const sendMessage = (message) => {
+          const iframe = document.querySelector('iframe.giscus-frame');
+          if (!iframe) return;
+          iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
+        }
+        sendMessage({
+          setConfig: {
+            theme: newTheme
+          }
+        });
+      }
+      const isGiscussLoaded = window.document.querySelector('iframe.giscus-frame') !== null;
+      if (isGiscussLoaded) {
+        changeGiscusTheme();
+      }
+    };
+    const authorPrefersDark = false;
+    const darkModeDefault = authorPrefersDark;
+      document.querySelector('link#quarto-text-highlighting-styles.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
+      document.querySelector('link#quarto-bootstrap.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
+    let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
+    // Dark / light mode switch
+    window.quartoToggleColorScheme = () => {
+      // Read the current dark / light value
+      let toAlternate = !hasAlternateSentinel();
+      toggleColorMode(toAlternate);
+      setStyleSentinel(toAlternate);
+      toggleGiscusIfUsed(toAlternate, darkModeDefault);
+      window.dispatchEvent(new Event('resize'));
+    };
+    // Switch to dark mode if need be
+    if (hasAlternateSentinel()) {
+      toggleColorMode(true);
+    } else {
+      toggleColorMode(false);
+    }
+  </script>
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="../index.html">
+    <span class="navbar-title">Sve što želite znati o državi i javnim politikama u Hrvatskoj</span>
+    </a>
+  </div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link active" href="../chapters/00-uvod.html" aria-current="page"> 
+<span class="menu-text">Knjiga</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../vodic.html"> 
+<span class="menu-text">Vodič</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../resursi.html"> 
+<span class="menu-text">Resursi</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../alat.html"> 
+<span class="menu-text">Alat</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../podaci.html"> 
+<span class="menu-text">Podaci</span></a>
+  </li>  
+</ul>
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools tools-wide">
+    <div class="dropdown">
+      <a href="" title="Share" id="quarto-navigation-tool-dropdown-0" class="quarto-navigation-tool dropdown-toggle px-1" data-bs-toggle="dropdown" aria-expanded="false" role="link" aria-label="Share"><i class="bi bi-share"></i></a>
+      <ul class="dropdown-menu" aria-labelledby="quarto-navigation-tool-dropdown-0">
+          <li>
+            <a class="dropdown-item quarto-navbar-tools-item" href="https://twitter.com/intent/tweet?url=|url|">
+              <i class="bi bi-twitter pe-1"></i>
+            Twitter
+            </a>
+          </li>
+          <li>
+            <a class="dropdown-item quarto-navbar-tools-item" href="https://www.facebook.com/sharer/sharer.php?u=|url|">
+              <i class="bi bi-facebook pe-1"></i>
+            Facebook
+            </a>
+          </li>
+          <li>
+            <a class="dropdown-item quarto-navbar-tools-item" href="https://www.linkedin.com/sharing/share-offsite/?url=|url|">
+              <i class="bi bi-linkedin pe-1"></i>
+            LinkedIn
+            </a>
+          </li>
+      </ul>
+    </div>
+  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
+  <a href="" class="quarto-reader-toggle quarto-navigation-tool px-1" onclick="window.quartoToggleReader(); return false;" title="Toggle reader mode">
+  <div class="quarto-reader-toggle-btn">
+  <i class="bi"></i>
+  </div>
+</a>
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../chapters/05-javni-izbor.html">DIO II: JAVNI IZBOR – ŠTO, KAKO I ZAŠTO?</a></li><li class="breadcrumb-item"><a href="../chapters/05a-teorija-igara.html"><span class="chapter-title">Teorija igara i zakonodavno pregovaranje</span></a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
+        <div class="sidebar-tools-main">
+    <a href="../pdf/Javne-politike.pdf" title="Preuzmi PDF (radna verzija)" class="quarto-navigation-tool px-1" aria-label="Preuzmi PDF (radna verzija)"><i class="bi bi-file-earmark-pdf"></i></a>
+    <div id="quarto-search" class="quarto-navigation-tool px-1" title="Search"></div>
+</div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../index.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Naslovnica</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/00-uvod.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Uvod — Zašto bismo otvorili ovu knjigu?</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
+ <span class="menu-text">DIO I: KLASIČNA ANALIZA JAVNIH FINANCIJA I POLITIKA</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/01-uloga-drzave.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Uloga države u gospodarstvu</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/02-alokacijska-funkcija.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Alokacijska funkcija i tržišni neuspjesi</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/03-distribucijska-funkcija.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Distribucijska funkcija — država i pitanje pravednosti</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/04-stabilizacijska-funkcija.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Stabilizacijska funkcija — država i makroekonomska stabilnost</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true">
+ <span class="menu-text">DIO II: JAVNI IZBOR – ŠTO, KAKO I ZAŠTO?</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/05-javni-izbor.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Što je to javni izbor i zašto nas se tiče?</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/05a-teorija-igara.html" class="sidebar-item-text sidebar-link active"><span class="chapter-title">Teorija igara i zakonodavno pregovaranje</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/06-kolektivni-izbor.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Kolektivni izbor</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/07-stranke-izbori.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Političke stranke i izbori</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/08-interesne-skupine.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Interesne skupine — iza kulisa politike</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/09-birokracija.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Dva pogleda na birokraciju</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true">
+ <span class="menu-text">DIO III: NOVA INSTITUCIONALNA I KONSTITUCIONALNA EKONOMIKA</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/10-institucionalna-ekonomika.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Nova institucionalna ekonomika — pravila igre</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/11-konstitucionalna-ekonomika.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Konstitucionalna (ustavna) ekonomika</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true">
+ <span class="menu-text">DIO IV: JAVNE FINANCIJE I JAVNE POLITIKE U PRAKSI</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/12-instrumenti.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Instrumenti državne intervencije</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/13-javna-potrosnja.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Kako država troši naš novac?</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/14-porezi.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Porezi — više od tereta</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/15-eu-javne-financije.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Javne financije Europske unije — zajednička valuta bez zajedničkog proračuna</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="true">
+ <span class="menu-text">DIO V: KAKO DO KVALITETNIJIH JAVNIH POLITIKA?</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/16-drzavni-neuspjesi.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Državni neuspjesi i prepreke kvalitetnim javnim politikama</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/17-novi-javni-menadzment.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Novi javni menadžment</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/18-novo-upravljanje.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Od novog javnog menadžmenta prema novom upravljanju</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/19-cba-evaluacija.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Cost-benefit analiza i evaluacija javnih politika</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/20-reforme.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Reforme u javnom sektoru — što funkcionira i zašto?</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" role="navigation" aria-expanded="true">
+ <span class="menu-text">Appendices</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-6" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../references.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Literatura</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../vodic.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Vodič</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../vodic/01-uloga-drzave.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Vodič · Uloga države u gospodarstvu</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../vodic/02-alokacijska-funkcija.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Vodič · Alokacijska funkcija i tržišni neuspjesi</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../vodic/03-distribucijska-funkcija.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Vodič · Distribucijska funkcija</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../vodic/04-stabilizacijska-funkcija.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Vodič · Stabilizacijska funkcija</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../vodic/05-javni-izbor.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Vodič · Javni izbor</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../vodic/05a-teorija-igara.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Vodič · Teorija igara</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../vodic/06-kolektivni-izbor.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Vodič · Kolektivni izbor</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../vodic/07-stranke-izbori.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Vodič · Političke stranke i izbori</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../vodic/08-interesne-skupine.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Vodič · Interesne skupine</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../vodic/09-birokracija.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Vodič · Dva pogleda na birokraciju</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../vodic/10-institucionalna-ekonomika.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Vodič · Institucije kao pravila igre</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../vodic/11-konstitucionalna-ekonomika.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Vodič · Konstitucionalna ekonomika</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../vodic/12-instrumenti.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Vodič · Instrumenti državne intervencije</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../vodic/13-javna-potrosnja.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Vodič · Javna potrošnja</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../vodic/14-porezi.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Vodič · Porezi, više od tereta</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../vodic/15-eu-javne-financije.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Vodič · Javne financije Europske unije</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../vodic/16-drzavni-neuspjesi.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Vodič · Državni neuspjesi</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../vodic/17-novi-javni-menadzment.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Vodič · Novi javni menadžment</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../vodic/18-novo-upravljanje.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Vodič · Novo upravljanje</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../vodic/19-cba-evaluacija.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Vodič · CBA i evaluacija</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../vodic/20-reforme.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Vodič · Reforme u javnom sektoru</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../prirucnik.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Država i javne politike u malom</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../resursi.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Resursi</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../alat.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Alat / Igralište</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../podaci.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active" data-toc-expanded="2">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#vodič-kroz-poglavlje" id="toc-vodič-kroz-poglavlje" class="nav-link active" data-scroll-target="#vodič-kroz-poglavlje">Vodič kroz poglavlje</a></li>
+  <li><a href="#strateške-igre-i-kolektivno-djelovanje" id="toc-strateške-igre-i-kolektivno-djelovanje" class="nav-link" data-scroll-target="#strateške-igre-i-kolektivno-djelovanje">Strateške igre i kolektivno djelovanje</a></li>
+  <li><a href="#kukavica-i-koordinacija-sukob-i-institucije" id="toc-kukavica-i-koordinacija-sukob-i-institucije" class="nav-link" data-scroll-target="#kukavica-i-koordinacija-sukob-i-institucije">Kukavica i koordinacija, sukob i institucije</a></li>
+  <li><a href="#baron-ferejohnov-model-zakonodavnog-pregovaranja" id="toc-baron-ferejohnov-model-zakonodavnog-pregovaranja" class="nav-link" data-scroll-target="#baron-ferejohnov-model-zakonodavnog-pregovaranja">Baron-Ferejohnov model zakonodavnog pregovaranja</a></li>
+  <li><a href="#pregovaračka-moć-i-ustavni-parametri" id="toc-pregovaračka-moć-i-ustavni-parametri" class="nav-link" data-scroll-target="#pregovaračka-moć-i-ustavni-parametri">Pregovaračka moć i ustavni parametri</a></li>
+  <li><a href="#eksperimentalna-provjera-modela" id="toc-eksperimentalna-provjera-modela" class="nav-link" data-scroll-target="#eksperimentalna-provjera-modela">Eksperimentalna provjera modela</a></li>
+  <li><a href="#ustavni-dizajn-proračunskih-pravila" id="toc-ustavni-dizajn-proračunskih-pravila" class="nav-link" data-scroll-target="#ustavni-dizajn-proračunskih-pravila">Ustavni dizajn proračunskih pravila</a></li>
+  <li><a href="#sažetak" id="toc-sažetak" class="nav-link" data-scroll-target="#sažetak">Sažetak</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content page-columns page-full" id="quarto-document-content">
+
+
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../chapters/05-javni-izbor.html">DIO II: JAVNI IZBOR – ŠTO, KAKO I ZAŠTO?</a></li><li class="breadcrumb-item"><a href="../chapters/05a-teorija-igara.html"><span class="chapter-title">Teorija igara i zakonodavno pregovaranje</span></a></li></ol></nav>
+<div class="quarto-title">
+<div class="quarto-title-block"><div><h1 class="title"><span class="chapter-title">Teorija igara i zakonodavno pregovaranje</span></h1><button type="button" class="btn code-tools-button dropdown-toggle" id="quarto-code-tools-menu" data-bs-toggle="dropdown" aria-expanded="false"><i class="bi"></i> Code</button><ul class="dropdown-menu dropdown-menu-end" aria-labelelledby="quarto-code-tools-menu"><li><a id="quarto-show-all-code" class="dropdown-item" href="javascript:void(0)" role="button">Show All Code</a></li><li><a id="quarto-hide-all-code" class="dropdown-item" href="javascript:void(0)" role="button">Hide All Code</a></li><li><hr class="dropdown-divider"></li><li><a id="quarto-view-source" class="dropdown-item" href="javascript:void(0)" role="button">View Source</a></li></ul></div></div>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="vodič-kroz-poglavlje" class="level2 vodic-panel">
+<h2 class="anchored" data-anchor-id="vodič-kroz-poglavlje">Vodič kroz poglavlje</h2>
+<ol type="1">
+<li>Zašto se država ne može razumjeti kao jedan akter, nego kao arena strateške interakcije?</li>
+<li>Kako zatvorenikova dilema objašnjava zašto dobrovoljnost sama ne osigurava javna dobra?</li>
+<li>Po čemu se igra kukavice i igra koordinacije razlikuju od dileme, i što to znači za ulogu pravila?</li>
+<li>Kako predlagatelj proračuna dijeli javni novac i o čemu ovisi njegova pregovaračka moć?</li>
+<li>Zašto se stvarno ponašanje u laboratoriju sustavno razlikuje od onoga što model predviđa?</li>
+</ol>
+</section>
+<p>Prethodno je poglavlje aktere političkog procesa, birače, političare, birokrate i interesne skupine, predstavilo kao pojedince koji slijede vlastite ciljeve, ali je svakoga promatralo zasebno. Čim ih je više za istim stolom, ishod svakoga ovisi i o potezima ostalih, pa država prestaje biti jedinstven dobrohotan akter i postaje arena strateške interakcije u kojoj obična maksimizacija korisnosti više ne opisuje ponašanje <span class="citation" data-cites="buchanan1962 mueller1989">(<a href="../references.html#ref-buchanan1962" role="doc-biblioref">Buchanan i Tullock 1962.</a>; <a href="../references.html#ref-mueller1989" role="doc-biblioref">Mueller 2003.</a>)</span>.</p>
+<div class="no-row-height column-margin column-container"></div><p>Za takve situacije ekonomija posuđuje aparat teorije igara, matematičke discipline koja proučava odlučivanje kada ishod ovisi o međusobno povezanim odlukama više aktera <span class="citation" data-cites="osborne2004">(<a href="../references.html#ref-osborne2004" role="doc-biblioref">Osborne 2004.</a>)</span>. Ona političke borbe prevodi u modele iz kojih se vidi zašto se sklapaju naizgled neobični savezi, kako se dijeli proračunski kolač i pod kojim uvjetima zastupnici dobrovoljno predaju moć stranačkim vođama.</p>
+<p>Poglavlje najprije postavlja tri temeljne igre kojima javni izbor objašnjava probleme kolektivnog djelovanja, a zatim ih primjenjuje na zakonodavno pregovaranje o proračunu, gdje pravila glasovanja izravno određuju tko koliko dobiva.</p>
+<section id="strateške-igre-i-kolektivno-djelovanje" class="level2 page-columns page-full">
+<h2 class="anchored" data-anchor-id="strateške-igre-i-kolektivno-djelovanje">Strateške igre i kolektivno djelovanje</h2>
+<p>Igra u normalnoj formi određena je trima elementima, skupom igrača, skupovima strategija dostupnih svakom igraču i funkcijama isplata koje svakoj kombinaciji strategija pridružuju korisnost svakog igrača <span class="citation" data-cites="osborne2004">(<a href="../references.html#ref-osborne2004" role="doc-biblioref">Osborne 2004.</a>)</span>. Rješenje igre traži se preko pojma ravnoteže.</p>
+<div class="no-row-height column-margin column-container"></div><div id="def-nashova-ravnoteza" class="theorem definition">
+<p><span class="theorem-title"><strong>Definicija 1</strong></span> <strong>Nashova ravnoteža</strong> je kombinacija strategija u kojoj nijedan igrač ne može povećati svoju korisnost jednostranom promjenom strategije dok ostali ne mijenjaju svoju. Strategija je <strong>strogo dominantna</strong> ako igraču donosi veću korisnost od svake druge, bez obzira na to što čine ostali.</p>
+</div>
+<p>Prva i najutjecajnija igra javnog izbora jest zatvorenikova dilema, koja objašnjava zašto dobrovoljnost ne osigurava javna dobra <span class="citation" data-cites="hardin1968">(<a href="../references.html#ref-hardin1968" role="doc-biblioref">Hardin 1968.</a>)</span>. Dva susjedna poljoprivrednika odlučuju hoće li platiti svoj dio zajedničkog nasipa protiv poplava, klasičnog javnog dobra <span class="citation" data-cites="samuelson1954">(<a href="../references.html#ref-samuelson1954" role="doc-biblioref">Samuelson 1954.</a>)</span>. Svaki može kooperirati i platiti svoj dio ili defektirati i nadati se da će drugi sam financirati nasip.</p>
+<div class="no-row-height column-margin column-container"><div id="ref-hardin1968" class="csl-entry" role="listitem">
+Hardin, Garrett. 1968. <span>„The Tragedy of the Commons“</span>. <em>Science</em> 162 (3859): 1243–48. <a href="https://doi.org/10.1126/science.162.3859.1243">https://doi.org/10.1126/science.162.3859.1243</a>.
+</div><div id="ref-samuelson1954" class="csl-entry" role="listitem">
+Samuelson, Paul A. 1954. <span>„The Pure Theory of Public Expenditure“</span>. <em>Review of Economics and Statistics</em> 36 (4): 387–89. <a href="https://doi.org/10.2307/1925895">https://doi.org/10.2307/1925895</a>.
+</div></div><div id="tbl-zatvorenik" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-zatvorenik-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Tablica&nbsp;1: Isplatna matrica zatvorenikove dileme; prvi broj je korisnost igrača A, drugi korisnost igrača B. Izrada autora.
+</figcaption>
+<div aria-describedby="tbl-zatvorenik-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Igrač A ↓ &nbsp;Igrač B →</th>
+<th>B kooperira</th>
+<th>B defektira</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>A kooperira</td>
+<td>(3, 3)</td>
+<td>(0, 5)</td>
+</tr>
+<tr class="even">
+<td>A defektira</td>
+<td>(5, 0)</td>
+<td>(1, 1)</td>
+</tr>
+</tbody>
+</table>
+</div>
+</figure>
+</div>
+<p>Igra otkriva napetost između pojedinačne i kolektivne racionalnosti <span class="citation" data-cites="olson1965">(<a href="../references.html#ref-olson1965" role="doc-biblioref">Olson 1965.</a>)</span>. Ako B kooperira, A je bolje defektirati jer time dobiva pet umjesto tri. Ako B defektira, A je opet bolje defektirati jer dobiva jedan umjesto nule. Defekcija je stoga strogo dominantna strategija za A, a zbog simetrije i za B. Jedina Nashova ravnoteža igre jest obostrana defekcija s isplatama jedan za oba aktera. Ta je ravnoteža Pareto inferiorna u odnosu na obostranu kooperaciju, koja bi obojici donijela tri. Racionalni pojedinci tako svjesno završavaju u ishodu koji je za obojicu lošiji. Upravo zato decentralizirano tržište ne može samo osigurati dovoljnu količinu javnog dobra, pa država svojim autoritetom prisiljava aktere na doprinos kroz porez, prevodeći društvo iz neučinkovite ravnoteže defekcije u učinkovitu kooperaciju <span class="citation" data-cites="mueller1989">(<a href="../references.html#ref-mueller1989" role="doc-biblioref">Mueller 2003.</a>)</span>.</p>
+<div class="no-row-height column-margin column-container"><div id="ref-olson1965" class="csl-entry" role="listitem">
+Olson, Mancur. 1965. <em>The Logic of Collective Action: Public Goods and the Theory of Groups</em>. Harvard University Press.
+</div></div></section>
+<section id="kukavica-i-koordinacija-sukob-i-institucije" class="level2 page-columns page-full">
+<h2 class="anchored" data-anchor-id="kukavica-i-koordinacija-sukob-i-institucije">Kukavica i koordinacija, sukob i institucije</h2>
+<p>Drugu igru, kukavicu, obilježava to što obostrana tvrdoća vodi u ishod koji obje strane žele izbjeći pod svaku cijenu <span class="citation" data-cites="mueller1989">(<a href="../references.html#ref-mueller1989" role="doc-biblioref">Mueller 2003.</a>)</span>. Dvije države članice monetarne unije pregovaraju o podjeli tereta u dubokoj financijskoj krizi. Svaka može popustiti i preuzeti veći dio duga ili ustrajati na tvrdom stavu, očekujući da će druga popustiti kako bi spriječila slom zajedničke valute.</p>
+<div class="no-row-height column-margin column-container"></div><div id="tbl-kukavica" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-kukavica-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Tablica&nbsp;2: Isplatna matrica igre kukavice. Izrada autora.
+</figcaption>
+<div aria-describedby="tbl-kukavica-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Država A ↓ &nbsp;Država B →</th>
+<th>B popušta</th>
+<th>B ustraje</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>A popušta</td>
+<td>(0, 0)</td>
+<td>(−1, 2)</td>
+</tr>
+<tr class="even">
+<td>A ustraje</td>
+<td>(2, −1)</td>
+<td>(−10, −10)</td>
+</tr>
+</tbody>
+</table>
+</div>
+</figure>
+</div>
+<p>Za razliku od dileme, ovdje nema dominantne strategije. Ako B ustraje, A je bolje popustiti i izbjeći slom koji nosi minus deset. Ako B popušta, A je bolje ustrajati i uzeti dva. Igra ima dvije ravnoteže u čistim strategijama, onu u kojoj jedna strana popušta dok druga ustraje, i obrnutu. Problem je strateška neizvjesnost. Ako obje strane, goneći maksimalni dobitak, ustraju do kraja, sustav završava u katastrofi, što objašnjava zašto krizni pregovori traju do posljednje sekunde i zašto se uvode nadnacionalna pravila koja raspodjelu kriznog tereta određuju unaprijed.</p>
+<p>Treću skupinu čine igre koordinacije, poput bitke spolova, u kojima postoji više ravnoteža, svi imaju zajednički interes uskladiti se, ali se razilaze oko toga koja je ravnoteža bolja <span class="citation" data-cites="osborne2004">(<a href="../references.html#ref-osborne2004" role="doc-biblioref">Osborne 2004.</a>)</span>. Dva poduzeća biraju tehnički standard za zajedničku infrastrukturu koja radi samo ako su standardi kompatibilni.</p>
+<div class="no-row-height column-margin column-container"><div id="ref-osborne2004" class="csl-entry" role="listitem">
+Osborne, Martin J. 2004. <em>An Introduction to Game Theory</em>. Oxford University Press.
+</div></div><div id="tbl-koordinacija" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-koordinacija-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Tablica&nbsp;3: Isplatna matrica igre koordinacije. Izrada autora.
+</figcaption>
+<div aria-describedby="tbl-koordinacija-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Poduzeće A ↓ &nbsp;Poduzeće B →</th>
+<th>B bira X</th>
+<th>B bira Y</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>A bira X</td>
+<td>(3, 2)</td>
+<td>(0, 0)</td>
+</tr>
+<tr class="even">
+<td>A bira Y</td>
+<td>(0, 0)</td>
+<td>(2, 3)</td>
+</tr>
+</tbody>
+</table>
+</div>
+</figure>
+</div>
+<p>Ravnoteže su dvije, obje pristaju uz isti standard. Ako poduzeća ne mogu komunicirati, prijeti koordinacijski neuspjeh u kojem se resursi troše na nespojive sustave uz nulte isplate. Uloga države ovdje nije prisila ni kazna, kao u dilemi, nego pružanje fokalne točke. Donošenjem zakona, propisivanjem standarda ili objavom smjernica država usklađuje očekivanja aktera i svodi transakcijske troškove pregovaranja na najmanju mjeru, što je jedan od načina na koje institucije kao pravila igre stvaraju red <span class="citation" data-cites="north1990">(<a href="../references.html#ref-north1990" role="doc-biblioref">North 1990.</a>)</span>.</p>
+<div class="no-row-height column-margin column-container"><div id="ref-north1990" class="csl-entry" role="listitem">
+North, Douglass C. 1990. <em>Institutions, Institutional Change and Economic Performance</em>. Cambridge University Press.
+</div></div></section>
+<section id="baron-ferejohnov-model-zakonodavnog-pregovaranja" class="level2 page-columns page-full">
+<h2 class="anchored" data-anchor-id="baron-ferejohnov-model-zakonodavnog-pregovaranja">Baron-Ferejohnov model zakonodavnog pregovaranja</h2>
+<p>Kada se o podjeli proračuna odlučuje pravilom većine, igra postaje dinamična. David Baron i John Ferejohn formalizirali su taj proces u modelu koji je postao temelj moderne političke ekonomije <span class="citation" data-cites="baronferejohn1989">(<a href="../references.html#ref-baronferejohn1989" role="doc-biblioref">Baron i Ferejohn 1989.</a>)</span>. Zakonodavno tijelo ima neparan broj zastupnika <span class="math inline">\(n\)</span>, od kojih svaki predstavlja svoj okrug i mari samo za udio proračuna koji ide njemu. Proračun je normaliziran na jedinicu, pa raspodjela <span class="math inline">\((x_1, \dots, x_n)\)</span> mora zadovoljiti</p>
+<div class="no-row-height column-margin column-container"></div><p><span class="math display">\[\sum_{i=1}^{n} x_i = 1, \qquad x_i \ge 0.\]</span></p>
+<p>Pregovori teku u rundama pod zatvorenim pravilom. Na početku svake runde jedan zastupnik biva nasumično izabran za predlagatelja, svaki s jednakom vjerojatnošću <span class="math inline">\(1/n\)</span>. Predlagatelj iznosi raspodjelu, a tijelo o njoj glasuje bez amandmana. Ako prijedlog dobije većinu, koja traži <span class="math inline">\((n+1)/2\)</span> glasova, proračun se usvaja i igra završava. Ako padne, pregovori se sele u sljedeću rundu, ali se vrijednost kolača umanjuje faktorom diskontiranja <span class="math inline">\(\delta \in (0,1)\)</span>, koji bilježi nestrpljivost, amortizaciju resursa i trošak blokade.</p>
+<p>Igru rješavamo pojmom stacionarne savršene ravnoteže u podigrama, u kojoj odluke ovise samo o trenutnom prijedlogu i očekivanjima o nastavku, a ne o povijesti pregovora. Neka je <span class="math inline">\(v\)</span> očekivana vrijednost pregovora za zastupnika na početku runde, prije nego što se zna tko predlaže. Budući da je igra simetrična i da se u ravnoteži proračun usvaja već u prvoj rundi, ukupna se jedinica dijeli među <span class="math inline">\(n\)</span> zastupnika, pa je</p>
+<p><span class="math display">\[v = \frac{1}{n}.\]</span></p>
+<p>Odbije li zastupnik prijedlog, dobiva tek diskontiranu vrijednost nastavka <span class="math inline">\(\delta v\)</span>. Najmanji iznos kojim predlagatelj može kupiti njegov glas zato je njegova rezervacijska cijena <span class="math inline">\(\delta v = \delta/n\)</span>. Predlagatelju nije potreban pristanak svih, nego većine, pa uz vlastiti glas mora kupiti još <span class="math inline">\((n-1)/2\)</span> glasova. Racionalno bira upravo toliko najjeftinijih zastupnika, nudi svakom točno <span class="math inline">\(\delta/n\)</span>, a ostalima ništa. Za sebe zadržava</p>
+<p><span class="math display">\[x_p = 1 - \frac{n-1}{2}\cdot\frac{\delta}{n} = 1 - \frac{\delta(n-1)}{2n}.\]</span></p>
+<p>Graf koji slijedi prikazuje taj udio predlagatelja u ovisnosti o veličini parlamenta, pri čemu krivulja pada prema svojoj donjoj granici kako tijelo raste. Graf je interaktivan, pa klizači mijenjaju broj zastupnika i njihovu strpljivost.</p>
+<div class="cell">
+<details class="code-fold hidden">
+<summary>Prikaži kod</summary>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb1" data-startfrom="84" data-source-offset="0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 83;"><span id="cb1-84"><a href="#cb1-84" aria-hidden="true" tabindex="-1"></a>viewof bf_controls <span class="op">=</span> Inputs<span class="op">.</span><span class="fu">form</span>({</span>
+<span id="cb1-85"><a href="#cb1-85" aria-hidden="true" tabindex="-1"></a>  <span class="dt">delta</span><span class="op">:</span> Inputs<span class="op">.</span><span class="fu">range</span>([<span class="dv">0</span><span class="op">,</span> <span class="dv">1</span>]<span class="op">,</span> {<span class="dt">value</span><span class="op">:</span> <span class="fl">0.8</span><span class="op">,</span> <span class="dt">step</span><span class="op">:</span> <span class="fl">0.01</span><span class="op">,</span> <span class="dt">label</span><span class="op">:</span> <span class="st">"Faktor diskontiranja δ (strpljivost):"</span>})<span class="op">,</span></span>
+<span id="cb1-86"><a href="#cb1-86" aria-hidden="true" tabindex="-1"></a>  <span class="dt">n</span><span class="op">:</span> Inputs<span class="op">.</span><span class="fu">range</span>([<span class="dv">3</span><span class="op">,</span> <span class="dv">51</span>]<span class="op">,</span> {<span class="dt">value</span><span class="op">:</span> <span class="dv">5</span><span class="op">,</span> <span class="dt">step</span><span class="op">:</span> <span class="dv">2</span><span class="op">,</span> <span class="dt">label</span><span class="op">:</span> <span class="st">"Broj zastupnika n (neparan):"</span>})</span>
+<span id="cb1-87"><a href="#cb1-87" aria-hidden="true" tabindex="-1"></a>})</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</details>
+<div class="cell-output cell-output-display">
+<div id="ojs-cell-1" data-nodetype="declaration">
+
+</div>
+</div>
+</div>
+<div class="cell">
+<details class="code-fold hidden">
+<summary>Prikaži kod</summary>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb2" data-startfrom="95" data-source-offset="0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 94;"><span id="cb2-95"><a href="#cb2-95" aria-hidden="true" tabindex="-1"></a>{</span>
+<span id="cb2-96"><a href="#cb2-96" aria-hidden="true" tabindex="-1"></a>  <span class="kw">const</span> delta <span class="op">=</span> bf_controls<span class="op">.</span><span class="at">delta</span><span class="op">;</span></span>
+<span id="cb2-97"><a href="#cb2-97" aria-hidden="true" tabindex="-1"></a>  <span class="kw">const</span> ncur <span class="op">=</span> bf_controls<span class="op">.</span><span class="at">n</span><span class="op">;</span></span>
+<span id="cb2-98"><a href="#cb2-98" aria-hidden="true" tabindex="-1"></a>  <span class="kw">const</span> xp <span class="op">=</span> (n) <span class="kw">=&gt;</span> <span class="dv">1</span> <span class="op">-</span> delta <span class="op">*</span> (n <span class="op">-</span> <span class="dv">1</span>) <span class="op">/</span> (<span class="dv">2</span> <span class="op">*</span> n)<span class="op">;</span></span>
+<span id="cb2-99"><a href="#cb2-99" aria-hidden="true" tabindex="-1"></a>  <span class="kw">const</span> asymptote <span class="op">=</span> <span class="dv">1</span> <span class="op">-</span> delta <span class="op">/</span> <span class="dv">2</span><span class="op">;</span></span>
+<span id="cb2-100"><a href="#cb2-100" aria-hidden="true" tabindex="-1"></a>  <span class="kw">const</span> xpcur <span class="op">=</span> <span class="fu">xp</span>(ncur)<span class="op">;</span></span>
+<span id="cb2-101"><a href="#cb2-101" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-102"><a href="#cb2-102" aria-hidden="true" tabindex="-1"></a>  <span class="kw">const</span> ns <span class="op">=</span> d3<span class="op">.</span><span class="fu">range</span>(<span class="dv">3</span><span class="op">,</span> <span class="dv">52</span><span class="op">,</span> <span class="dv">2</span>)<span class="op">;</span></span>
+<span id="cb2-103"><a href="#cb2-103" aria-hidden="true" tabindex="-1"></a>  <span class="kw">const</span> curve <span class="op">=</span> ns<span class="op">.</span><span class="fu">map</span>(n <span class="kw">=&gt;</span> ({n<span class="op">,</span> <span class="dt">xp</span><span class="op">:</span> <span class="fu">xp</span>(n)}))<span class="op">;</span></span>
+<span id="cb2-104"><a href="#cb2-104" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-105"><a href="#cb2-105" aria-hidden="true" tabindex="-1"></a>  <span class="cf">return</span> Plot<span class="op">.</span><span class="fu">plot</span>({</span>
+<span id="cb2-106"><a href="#cb2-106" aria-hidden="true" tabindex="-1"></a>    <span class="dt">width</span><span class="op">:</span> <span class="dv">760</span><span class="op">,</span></span>
+<span id="cb2-107"><a href="#cb2-107" aria-hidden="true" tabindex="-1"></a>    <span class="dt">height</span><span class="op">:</span> <span class="dv">420</span><span class="op">,</span></span>
+<span id="cb2-108"><a href="#cb2-108" aria-hidden="true" tabindex="-1"></a>    <span class="dt">marginLeft</span><span class="op">:</span> <span class="dv">60</span><span class="op">,</span></span>
+<span id="cb2-109"><a href="#cb2-109" aria-hidden="true" tabindex="-1"></a>    <span class="dt">marginTop</span><span class="op">:</span> <span class="dv">60</span><span class="op">,</span></span>
+<span id="cb2-110"><a href="#cb2-110" aria-hidden="true" tabindex="-1"></a>    <span class="dt">marginBottom</span><span class="op">:</span> <span class="dv">50</span><span class="op">,</span></span>
+<span id="cb2-111"><a href="#cb2-111" aria-hidden="true" tabindex="-1"></a>    <span class="dt">style</span><span class="op">:</span> {<span class="dt">fontSize</span><span class="op">:</span> <span class="st">"12px"</span><span class="op">,</span> <span class="dt">fontFamily</span><span class="op">:</span> <span class="st">"Public Sans, system-ui, sans-serif"</span><span class="op">,</span> <span class="dt">color</span><span class="op">:</span> <span class="st">"#3A332D"</span>}<span class="op">,</span></span>
+<span id="cb2-112"><a href="#cb2-112" aria-hidden="true" tabindex="-1"></a>    <span class="dt">x</span><span class="op">:</span> {<span class="dt">label</span><span class="op">:</span> <span class="st">"Broj zastupnika n →"</span><span class="op">,</span> <span class="dt">domain</span><span class="op">:</span> [<span class="dv">3</span><span class="op">,</span> <span class="dv">51</span>]}<span class="op">,</span></span>
+<span id="cb2-113"><a href="#cb2-113" aria-hidden="true" tabindex="-1"></a>    <span class="dt">y</span><span class="op">:</span> {<span class="dt">label</span><span class="op">:</span> <span class="st">"↑ Udio predlagatelja x_p"</span><span class="op">,</span> <span class="dt">domain</span><span class="op">:</span> [<span class="dv">0</span><span class="op">,</span> <span class="dv">1</span>]<span class="op">,</span> <span class="dt">grid</span><span class="op">:</span> <span class="kw">true</span>}<span class="op">,</span></span>
+<span id="cb2-114"><a href="#cb2-114" aria-hidden="true" tabindex="-1"></a>    <span class="dt">marks</span><span class="op">:</span> [</span>
+<span id="cb2-115"><a href="#cb2-115" aria-hidden="true" tabindex="-1"></a>      Plot<span class="op">.</span><span class="fu">ruleY</span>([<span class="dv">0</span>]<span class="op">,</span> {<span class="dt">stroke</span><span class="op">:</span> <span class="st">"#C9C3B8"</span>})<span class="op">,</span></span>
+<span id="cb2-116"><a href="#cb2-116" aria-hidden="true" tabindex="-1"></a>      Plot<span class="op">.</span><span class="fu">line</span>(curve<span class="op">,</span> {<span class="dt">x</span><span class="op">:</span> <span class="st">"n"</span><span class="op">,</span> <span class="dt">y</span><span class="op">:</span> <span class="st">"xp"</span><span class="op">,</span> <span class="dt">stroke</span><span class="op">:</span> <span class="st">"#2D5A8E"</span><span class="op">,</span> <span class="dt">strokeWidth</span><span class="op">:</span> <span class="fl">2.5</span>})<span class="op">,</span></span>
+<span id="cb2-117"><a href="#cb2-117" aria-hidden="true" tabindex="-1"></a>      Plot<span class="op">.</span><span class="fu">ruleY</span>([asymptote]<span class="op">,</span> {<span class="dt">stroke</span><span class="op">:</span> <span class="st">"#6B6357"</span><span class="op">,</span> <span class="dt">strokeDasharray</span><span class="op">:</span> <span class="st">"4,3"</span>})<span class="op">,</span></span>
+<span id="cb2-118"><a href="#cb2-118" aria-hidden="true" tabindex="-1"></a>      Plot<span class="op">.</span><span class="fu">dot</span>([{<span class="dt">n</span><span class="op">:</span> ncur<span class="op">,</span> <span class="dt">xp</span><span class="op">:</span> xpcur}]<span class="op">,</span> {<span class="dt">x</span><span class="op">:</span> <span class="st">"n"</span><span class="op">,</span> <span class="dt">y</span><span class="op">:</span> <span class="st">"xp"</span><span class="op">,</span> <span class="dt">r</span><span class="op">:</span> <span class="dv">6</span><span class="op">,</span> <span class="dt">fill</span><span class="op">:</span> <span class="st">"#1C1916"</span><span class="op">,</span> <span class="dt">stroke</span><span class="op">:</span> <span class="st">"white"</span><span class="op">,</span> <span class="dt">strokeWidth</span><span class="op">:</span> <span class="dv">2</span>})<span class="op">,</span></span>
+<span id="cb2-119"><a href="#cb2-119" aria-hidden="true" tabindex="-1"></a>      Plot<span class="op">.</span><span class="fu">text</span>([<span class="vs">`granica 1 − δ/2 = </span><span class="sc">${</span>asymptote<span class="op">.</span><span class="fu">toFixed</span>(<span class="dv">2</span>)<span class="sc">}</span><span class="vs">`</span>]<span class="op">,</span></span>
+<span id="cb2-120"><a href="#cb2-120" aria-hidden="true" tabindex="-1"></a>        {<span class="dt">x</span><span class="op">:</span> <span class="dv">51</span><span class="op">,</span> <span class="dt">y</span><span class="op">:</span> asymptote<span class="op">,</span> <span class="dt">textAnchor</span><span class="op">:</span> <span class="st">"end"</span><span class="op">,</span> <span class="dt">dy</span><span class="op">:</span> <span class="op">-</span><span class="dv">8</span><span class="op">,</span> <span class="dt">fontSize</span><span class="op">:</span> <span class="dv">11</span><span class="op">,</span> <span class="dt">fill</span><span class="op">:</span> <span class="st">"#6B6357"</span>})<span class="op">,</span></span>
+<span id="cb2-121"><a href="#cb2-121" aria-hidden="true" tabindex="-1"></a>      Plot<span class="op">.</span><span class="fu">text</span>([<span class="vs">`x_p (n = </span><span class="sc">${</span>ncur<span class="sc">}</span><span class="vs">) = </span><span class="sc">${</span>xpcur<span class="op">.</span><span class="fu">toFixed</span>(<span class="dv">3</span>)<span class="sc">}</span><span class="vs">`</span>]<span class="op">,</span></span>
+<span id="cb2-122"><a href="#cb2-122" aria-hidden="true" tabindex="-1"></a>        {<span class="dt">frameAnchor</span><span class="op">:</span> <span class="st">"top"</span><span class="op">,</span> <span class="dt">dy</span><span class="op">:</span> <span class="op">-</span><span class="dv">30</span><span class="op">,</span> <span class="dt">fontSize</span><span class="op">:</span> <span class="dv">14</span><span class="op">,</span> <span class="dt">fontWeight</span><span class="op">:</span> <span class="dv">700</span><span class="op">,</span> <span class="dt">fill</span><span class="op">:</span> <span class="st">"#2D5A8E"</span>})</span>
+<span id="cb2-123"><a href="#cb2-123" aria-hidden="true" tabindex="-1"></a>    ]</span>
+<span id="cb2-124"><a href="#cb2-124" aria-hidden="true" tabindex="-1"></a>  })<span class="op">;</span></span>
+<span id="cb2-125"><a href="#cb2-125" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</details>
+<div id="fig-bf-udio" class="cell-output cell-output-display quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-bf-udio-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div id="ojs-cell-2" data-nodetype="expression">
+
+</div>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-bf-udio-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Slika&nbsp;1: Udio proračuna koji predlagatelj zadržava, x_p = 1 − δ(n−1)/(2n), pada s veličinom parlamenta prema granici 1 − δ/2. Veće tijelo raspršuje moć predlagatelja, a ne koncentrira je.
+</figcaption>
+</figure>
+</div>
+</div>
+<p><strong>Što isprobati.</strong> (1) Zadržite strpljivost visokom i povećavajte broj zastupnika, pa pratite kako udio predlagatelja pada prema granici 1 − δ/2, jer se moć raspršuje na sve veći broj jeftinijih, ali brojnijih glasova. (2) Spustite faktor diskontiranja prema nuli i vidjet ćete kako udio predlagatelja skoči na cijeli proračun, jer nestrpljivi zastupnici pristaju na gotovo ništa. (3) Postavite strpljivost blizu jedinice uz velik parlament i uvjerite se da predlagatelj zadržava tek nešto više od polovice, dok ostatak dijeli njegova minimalna koalicija.</p>
+</section>
+<section id="pregovaračka-moć-i-ustavni-parametri" class="level2 page-columns page-full">
+<h2 class="anchored" data-anchor-id="pregovaračka-moć-i-ustavni-parametri">Pregovaračka moć i ustavni parametri</h2>
+<p>Iz formule za udio predlagatelja slijede dva uvida o tome kako ustrojstvo parlamenta dijeli javni novac. Derivacije udjela po veličini tijela i po strpljivosti glase</p>
+<p><span class="math display">\[\frac{\partial x_p}{\partial n} = -\frac{\delta}{2n^2} &lt; 0, \qquad \frac{\partial x_p}{\partial \delta} = -\frac{n-1}{2n} &lt; 0.\]</span></p>
+<p>Obje su negativne. Moć predlagatelja opada s veličinom parlamenta. Veće tijelo doista čini svaki pojedini glas jeftinijim, jer je očekivana vrijednost nastavka <span class="math inline">\(1/n\)</span> manja, ali istodobno traži kupnju većeg broja glasova, a taj drugi učinak prevladava, pa udio predlagatelja pada prema granici od polovice proračuna. Veliko zakonodavno tijelo zato raspršuje pregovaračku moć, dok je malo koncentrira u rukama onoga tko predlaže. Moć predlagatelja opada i sa strpljivošću zastupnika, jer strpljiviji zastupnici lakše odbiju nepovoljan prijedlog i čekaju novu rundu, što predlagatelja prisiljava na izdašniju ponudu. U graničnom slučaju potpune nestrpljivosti, kada <span class="math inline">\(\delta \to 0\)</span>, rezervacijska cijena pada na nulu i predlagatelj uzima cijeli proračun. Kada su zastupnici gotovo savršeno strpljivi, kada <span class="math inline">\(\delta \to 1\)</span>, udio se svodi na</p>
+<p><span class="math display">\[x_p = \frac{n+1}{2n},\]</span></p>
+<p>tek nešto iznad polovice, dok ostatak dijeli minimalna pobjednička koalicija. Ustavna pravila o rokovima donošenja proračuna time izravno određuju raspodjelu javnog novca.</p>
+<p>Osnovni model pretpostavlja da zastupnici djeluju kao izolirani pojedinci, no u stvarnim parlamentima organizirani su u stranke koje nameću disciplinu. Stranačku privrženost modeliramo tako da zastupnik vrednuje i udio koji ode njegovu stranačkom kolegi. U tročlanom tijelu u kojem zastupnici <span class="math inline">\(1\)</span> i <span class="math inline">\(2\)</span> dijele stranku, a <span class="math inline">\(3\)</span> je oporba, njihove su korisnosti</p>
+<p><span class="math display">\[u_1 = x_1 + \alpha\, x_2, \qquad u_2 = x_2 + \alpha\, x_1,\]</span></p>
+<p>gdje parametar kohezije <span class="math inline">\(\alpha \in [0,1]\)</span> mjeri jačinu stranačke veze. Pri <span class="math inline">\(\alpha = 0\)</span> vraćamo se u osnovni model, a pri <span class="math inline">\(\alpha = 1\)</span> kolega tuđi uspjeh vrednuje kao svoj. Kohezija mijenja ravnotežu jer predlagatelj svom stranačkom kolegi više ne mora platiti punu cijenu glasa, budući da kolega već uživa dio koristi od udjela koji predlagatelj zadržava za sebe. Stranačka kohezija tako djeluje kao množitelj pregovaračke moći vladajuće stranke, omogućujući joj da zadrži veći dio resursa unutar svoje političke obitelji na štetu oporbe <span class="citation" data-cites="mueller1989">(<a href="../references.html#ref-mueller1989" role="doc-biblioref">Mueller 2003.</a>)</span>.</p>
+<div class="no-row-height column-margin column-container"><div id="ref-mueller1989" class="csl-entry" role="listitem">
+Mueller, Dennis C. 2003. <em>Public Choice <span>III</span></em>. Cambridge University Press.
+</div></div><p>Time se objašnjava i zašto pojedinačni zastupnici često dobrovoljno predaju svoje pravo predlaganja stranačkom vođi, prenoseći na njega svoju vjerojatnost izbora za predlagatelja. Takvo je delegiranje ravnotežno samo kad su ispunjena tri uvjeta. Procedura mora vođi davati znatnu prednost u izboru za predlagatelja u odnosu na običnog zastupnika. Kohezija <span class="math inline">\(\alpha\)</span> mora biti dovoljno visoka da zastupnik vjeruje kako će vođa u svom prijedlogu vrednovati i interes njegova okruga. Naposljetku, zastupnici moraju biti dovoljno nestrpljivi, jer pri niskom <span class="math inline">\(\delta\)</span> trošak blokade postaje prevelik, pa je racionalno prepustiti vođi brzo i koordinirano donošenje proračuna umjesto izlaganja riziku dugih pregovora. Gdje ti uvjeti izostaju, u mladim demokracijama ili u razdobljima slabe discipline, zastupnici zadržavaju svoja prava, a parlament obilježavaju frakcijske borbe i proračunska nestabilnost.</p>
+</section>
+<section id="eksperimentalna-provjera-modela" class="level2 page-columns page-full">
+<h2 class="anchored" data-anchor-id="eksperimentalna-provjera-modela">Eksperimentalna provjera modela</h2>
+<p>Snaga teorije igara dijelom leži u tome što je podložna provjeri u laboratoriju. Tri desetljeća eksperimenata ispitivala su koliko stvarni ljudi u ulozi zastupnika slijede predviđanja Baron-Ferejohnova modela <span class="citation" data-cites="baranskimorton2022">(<a href="../references.html#ref-baranskimorton2022" role="doc-biblioref">Baranski i Morton 2022.</a>)</span>. Rezultati potvrđuju strukturu, ali ne i raspodjelu. Minimalne pobjedničke koalicije doista su najčešći ishod, jer sudionici prepoznaju da uključivanje suvišnih partnera samo smanjuje vlastiti udio.</p>
+<div class="no-row-height column-margin column-container"></div><p>Raspodjela unutar koalicije, međutim, sustavno odstupa od predviđanja. Predlagatelji svojim partnerima nude osjetno više od rezervacijske cijene, a nerijetko i posve jednake udjele.</p>
+<div class="callout-empirija page-columns page-full">
+<p>U laboratorijskim pregovorima predlagatelji su izdašniji nego što model dopušta, a odstupanje se objašnjava dvama kanalima <span class="citation" data-cites="baranskimorton2022">(<a href="../references.html#ref-baranskimorton2022" role="doc-biblioref">Baranski i Morton 2022.</a>)</span>. Prvi je averzija prema nejednakosti, sklonost da se preniske ponude vrednuju kao nepravedne, koju formalizira model u kojem korisnost pada s razlikom prema drugima <span class="citation" data-cites="fehrschmidt1999">(<a href="../references.html#ref-fehrschmidt1999" role="doc-biblioref">Fehr i Schmidt 1999.</a>)</span>. Drugi je strateški strah od odbijanja, jer predlagatelj zna da uvrijeđeni partner može odbiti i gurnuti pregovore u novu, skuplju rundu, pa radije nudi više. Uz to, ponašanje izrazito ovisi o povijesti, suprotno pretpostavci stacionarnosti. Zastupnik kojeg je raniji predlagatelj isključio ili ponizio niskom ponudom sustavno mu se osvećuje kad sam dođe na red, čak i kada bi mu uključivanje tog zastupnika bilo najjeftiniji put do većine.</p>
+<div class="no-row-height column-margin column-container"><div id="ref-fehrschmidt1999" class="csl-entry" role="listitem">
+Fehr, Ernst, i Klaus M. Schmidt. 1999. <span>„A Theory of Fairness, Competition, and Cooperation“</span>. <em>Quarterly Journal of Economics</em> 114 (3): 817–68.
+</div></div></div>
+<p>Mehanizam osvete i ovisnosti o povijesti stvara trajne koalicijske saveze i kaznene obrasce koji pregovore drže stabilnima, ali i mnogo manje gipkima nego što predviđa osnovni model. Usporedba teorijskih predviđanja i eksperimentalnih nalaza sažeta je u tablici.</p>
+<div id="tbl-bf-eksperiment" class="quarto-float quarto-figure quarto-figure-center anchored page-columns page-full">
+<figure class="quarto-float quarto-float-tbl figure page-columns page-full">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-bf-eksperiment-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Tablica&nbsp;4: Predviđanja modela zakonodavnog pregovaranja i eksperimentalni nalazi. Izrada autora prema <span class="citation" data-cites="baronferejohn1989">Baron i Ferejohn (<a href="../references.html#ref-baronferejohn1989" role="doc-biblioref">1989.</a>)</span> i <span class="citation" data-cites="baranskimorton2022">Baranski i Morton (<a href="../references.html#ref-baranskimorton2022" role="doc-biblioref">2022.</a>)</span>.
+</figcaption>
+<div class="no-row-height column-margin column-container"><div id="ref-baronferejohn1989" class="csl-entry" role="listitem">
+Baron, David P., i John A. Ferejohn. 1989. <span>„Bargaining in Legislatures“</span>. <em>American Political Science Review</em> 83 (4): 1181–206.
+</div><div id="ref-baranskimorton2022" class="csl-entry" role="listitem">
+Baranski, Andrzej, i Rebecca B. Morton. 2022. <span>„The Determinants of Multilateral Bargaining: A Comprehensive Analysis of Baron and Ferejohn Majoritarian Bargaining Experiments“</span>. <em>Experimental Economics</em> 25 (4): 1079–108.
+</div></div><div aria-describedby="tbl-bf-eksperiment-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Dimenzija</th>
+<th>Predviđanje modela</th>
+<th>Eksperimentalni nalaz</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Struktura koalicije</td>
+<td>isključivo minimalne pobjedničke koalicije</td>
+<td>minimalne su modalne, ali se javljaju i šire</td>
+</tr>
+<tr class="even">
+<td>Udio predlagatelja</td>
+<td>vrlo visok, predlagatelj zadržava većinu</td>
+<td>umjereniji zbog averzije prema nejednakosti i straha od odbijanja</td>
+</tr>
+<tr class="odd">
+<td>Udio partnera</td>
+<td>tek rezervacijska cijena glasa</td>
+<td>osjetno veći, podjela teži pravednosti</td>
+</tr>
+<tr class="even">
+<td>Vremenska dinamika</td>
+<td>usvajanje odmah u prvoj rundi</td>
+<td>uglavnom bez odgode, ali se javljaju i blokade</td>
+</tr>
+<tr class="odd">
+<td>Uloga povijesti</td>
+<td>savršena stacionarnost</td>
+<td>izražena ovisnost o povijesti, osveta i trajni savezi</td>
+</tr>
+</tbody>
+</table>
+</div>
+</figure>
+</div>
+</section>
+<section id="ustavni-dizajn-proračunskih-pravila" class="level2 page-columns page-full">
+<h2 class="anchored" data-anchor-id="ustavni-dizajn-proračunskih-pravila">Ustavni dizajn proračunskih pravila</h2>
+<p>Spoj teorije igara i modela pregovaranja nosi izravne posljedice za ustavni dizajn proračunskih institucija <span class="citation" data-cites="buchanan1962">(<a href="../references.html#ref-buchanan1962" role="doc-biblioref">Buchanan i Tullock 1962.</a>)</span>. Ako politički proces prirodno teži asimetričnim minimalnim koalicijama koje iskorištavaju manjinu, zadatak ustavnog okvira jest postaviti pravila koja te poticaje obuzdavaju unaprijed, prije nego što se zna tko će biti na dobitku <span class="citation" data-cites="brennan1985">(<a href="../references.html#ref-brennan1985" role="doc-biblioref">Brennan i Buchanan 1985.</a>)</span>.</p>
+<div class="no-row-height column-margin column-container"><div id="ref-buchanan1962" class="csl-entry" role="listitem">
+Buchanan, James M., i Gordon Tullock. 1962. <em>The Calculus of Consent: Logical Foundations of Constitutional Democracy</em>. University of Michigan Press.
+</div><div id="ref-brennan1985" class="csl-entry" role="listitem">
+Brennan, Geoffrey, i James M. Buchanan. 1985. <em>The Reason of Rules: Constitutional Political Economy</em>. Cambridge University Press.
+</div></div><p>Prvi odgovor jest ustavno ograničenje proračunskog deficita i javnog duga. Kada je gornja granica deficita zadana brojčano i obvezujuće, sužava se prostor za kupnju glasova, jer se trošak koalicijskih dogovora više ne može tiho prebaciti na buduće generacije koje ne sjede za pregovaračkim stolom. Predlagatelj koji bi pobjedničku koaliciju gradio dijeljenjem novca mora ga sada pronaći unutar zadane granice, pa je prisiljen birati među projektima umjesto da ih sve financira zaduživanjem. Pravilo time ne mijenja motive aktera, nego im skraćuje doseg.</p>
+<p>Drugi odgovor jest pravilo pojačane većine za proračun i porezne zakone. Ako se umjesto natpolovične traži, primjerice, dvotrećinska većina, predlagatelj više ne može sastaviti najmanju moguću koaliciju, nego mora pridobiti i dio oporbe. U Baron-Ferejohnovu okviru to izravno obara njegov udio, jer glasove mora platiti većem broju zastupnika, a manjinu je teže preglasati i iskoristiti. Cijena su viši troškovi odlučivanja i veća opasnost od blokade, jer širi krug koji mora pristati lakše zapne na neslaganju.</p>
+<p>Oba mehanizma potvrđuju pouku koja povezuje cijeli ovaj dio knjige. Pravila igre nisu neutralna pozadina kolektivne odluke nego njezin tvorac, pa se ista skupina aktera pod različitim procedurama ponaša različito i dijeli javni novac drukčije. Kvaliteta proračunskog ishoda zato se ne popravlja zamjenom ljudi nego promišljenim izborom pravila pod kojima oni odlučuju, a taj izbor uvijek vaga između suprotstavljenih vrijednosti, učinkovitosti i zaštite manjine, brzine i šire suglasnosti. Strateška analiza ovoga poglavlja time vodi ravno u pitanja kojima se bave poglavlja koja slijede, kako se mnoštvo pojedinačnih preferencija uopće agregira u jednu društvenu odluku i koliko ta odluka ovisi o pravilima kroz koja prolazi.</p>
+</section>
+<section id="sažetak" class="level2 sazetak-panel">
+<h2 class="anchored" data-anchor-id="sažetak">Sažetak</h2>
+<p>Teorija igara državu prikazuje kao arenu strateške interakcije, a ne kao jedinstvenog dobronamjernog planera. Zatvorenikova dilema pokazuje zašto dobrovoljnost ne osigurava javna dobra i opravdava prisilno oporezivanje, igra kukavice zašto krizni pregovori prijete katastrofom, a igre koordinacije zašto institucije djeluju kao fokalne točke. Baron-Ferejohnov model otkriva da pregovaračka moć predlagatelja proračuna ovisi o veličini tijela i strpljivosti zastupnika, dok stranačka kohezija pojačava ruku vladajuće stranke. Eksperimenti potvrđuju strukturu minimalnih koalicija, ali ne i nemilosrdnu raspodjelu, jer averzija prema nejednakosti i osveta ublažavaju ono što model predviđa. Pouka je da proračunska pravila i parlamentarne procedure izravno oblikuju raspodjelu javnog novca. Time strateška analiza vodi ravno u pitanje koje slijedi, kako se mnoštvo pojedinačnih preferencija uopće pretvara u jednu društvenu odluku i koliko ta odluka ovisi o pravilima kroz koja prolazi.</p>
+</section>
+<div class="callout-vjezba">
+<p>Promotrite zakonodavno tijelo s <span class="math inline">\(n = 5\)</span> zastupnika koji dijele proračun normaliziran na jedinicu, uz faktor diskontiranja <span class="math inline">\(\delta = 0{,}8\)</span>.</p>
+<ol type="a">
+<li><p>Izračunajte rezervacijsku cijenu glasa pojedinog zastupnika, odnosno najmanji iznos kojim ga predlagatelj može pridobiti.</p></li>
+<li><p>Odredite koliko glasova uz vlastiti predlagatelj mora kupiti za većinu i koliki udio proračuna pritom zadržava za sebe.</p></li>
+<li><p>Ponovite izračun za <span class="math inline">\(n = 9\)</span> i objasnite zašto se udio predlagatelja smanjio, premda je cijena svakog pojedinog glasa niža.</p></li>
+<li><p>Pretpostavite da ustav umjesto natpolovične traži dvotrećinsku većinu. Objasnite, bez potpunog izvoda, u kojem smjeru se mijenja udio predlagatelja i zašto to štiti manjinu uz veći rizik blokade.</p></li>
+</ol>
+</div>
+
+
+<!-- -->
+
+
+
+</main> <!-- /main -->
+<script>
+
+(function () {
+
+  "use strict";
+
+
+
+  // ----------------------------------------------------------
+
+  // 1. Reading progress bar
+
+  // ----------------------------------------------------------
+
+  function setupProgressBar() {
+
+    if (document.getElementById("reading-progress")) return;
+
+    var bar = document.createElement("div");
+
+    bar.id = "reading-progress";
+
+    document.body.appendChild(bar);
+
+
+
+    var ticking = false;
+
+    function update() {
+
+      var doc = document.documentElement;
+
+      var scrollTop = window.scrollY || doc.scrollTop;
+
+      var max = (doc.scrollHeight - doc.clientHeight) || 1;
+
+      var pct = Math.min(100, Math.max(0, (scrollTop / max) * 100));
+
+      bar.style.width = pct + "%";
+
+      ticking = false;
+
+    }
+
+    window.addEventListener("scroll", function () {
+
+      if (!ticking) {
+
+        window.requestAnimationFrame(update);
+
+        ticking = true;
+
+      }
+
+    }, { passive: true });
+
+    update();
+
+  }
+
+
+
+  // ----------------------------------------------------------
+
+  // (Uklonjeno: chapter-number watermark, reading-time chip, drop cap i
+
+  //  ❦ ornament — ovisili su o naslovu koji počinje brojkom, a uz
+
+  //  number-sections: false nijedan se nije okidao. Vidi izvjestaj-estetski H1.)
+
+  // ----------------------------------------------------------
+
+  // 2. Hover preview za interne linkove (#anchors u istom dokumentu)
+
+  // ----------------------------------------------------------
+
+  function setupInternalHover() {
+
+    var tip = null;
+
+    var hideTimer = null;
+
+
+
+    function ensureTip() {
+
+      if (tip) return tip;
+
+      tip = document.createElement("div");
+
+      tip.className = "internal-hover-preview";
+
+      document.body.appendChild(tip);
+
+      return tip;
+
+    }
+
+
+
+    function show(target, text, title) {
+
+      var t = ensureTip();
+
+      t.innerHTML = "";
+
+      if (title) {
+
+        var h = document.createElement("div");
+
+        h.className = "ihp-title";
+
+        h.textContent = title;
+
+        t.appendChild(h);
+
+      }
+
+      var body = document.createElement("div");
+
+      body.textContent = text;
+
+      t.appendChild(body);
+
+
+
+      var rect = target.getBoundingClientRect();
+
+      var top = window.scrollY + rect.bottom + 8;
+
+      var left = window.scrollX + rect.left;
+
+      // Drži unutar viewporta
+
+      var maxLeft = window.scrollX + document.documentElement.clientWidth - 400;
+
+      if (left > maxLeft) left = maxLeft;
+
+      if (left < 8) left = 8;
+
+      t.style.top = top + "px";
+
+      t.style.left = left + "px";
+
+      t.classList.add("visible");
+
+    }
+
+
+
+    function hide() {
+
+      if (tip) tip.classList.remove("visible");
+
+    }
+
+
+
+    document.addEventListener("mouseover", function (e) {
+
+      var a = e.target.closest && e.target.closest("a[href^='#']");
+
+      if (!a) return;
+
+      // Preskačemo Quarto-ove vlastite citation/footnote (oni već imaju hover)
+
+      if (a.classList.contains("citation") || a.classList.contains("footnote-ref")) return;
+
+      if (a.closest(".sidebar, nav, .toc, #TOC, .quarto-secondary-nav")) return;
+
+
+
+      var hash = a.getAttribute("href").slice(1);
+
+      if (!hash) return;
+
+      var tgt = document.getElementById(hash);
+
+      if (!tgt) return;
+
+
+
+      var titleEl = tgt.querySelector("h1, h2, h3, h4") || (tgt.tagName.match(/^H[1-6]$/) ? tgt : null);
+
+      var title = titleEl ? titleEl.textContent.trim() : "";
+
+      // Uzimamo prvih ~280 znakova konteksta
+
+      var ctx = (tgt.textContent || "").trim().replace(/\s+/g, " ");
+
+      if (title) ctx = ctx.replace(title, "").trim();
+
+      ctx = ctx.slice(0, 280) + (ctx.length > 280 ? "…" : "");
+
+
+
+      clearTimeout(hideTimer);
+
+      show(a, ctx, title);
+
+    });
+
+
+
+    document.addEventListener("mouseout", function (e) {
+
+      var a = e.target.closest && e.target.closest("a[href^='#']");
+
+      if (!a) return;
+
+      hideTimer = setTimeout(hide, 120);
+
+    });
+
+
+
+    window.addEventListener("scroll", hide, { passive: true });
+
+  }
+
+
+
+  // ----------------------------------------------------------
+
+  // 3. Dinkus normalization — pretvori "***" parove i prazne
+
+  //    dinkus blokove u stilizirane romb-trojke
+
+  // ----------------------------------------------------------
+
+  function setupDinkus() {
+
+    // Quartov ::: {.dinkus} već dobiva div.dinkus klasu — to već stiliziramo CSS-om
+
+    // Pretvori HR elemente s točno tri zvjezdice ili "* * *" tekstom
+
+    var hrs = document.querySelectorAll("hr");
+
+    hrs.forEach(function (hr) {
+
+      // Ako je hr unutar contenta i nije .dinkus, ostavi ga
+
+    });
+
+    // Pretvori paragrafe koji su točno "***" u dinkus
+
+    var paragraphs = document.querySelectorAll("main p");
+
+    paragraphs.forEach(function (p) {
+
+      var t = p.textContent.trim();
+
+      if (t === "***" || t === "* * *" || t === "◆ ◆ ◆") {
+
+        var div = document.createElement("div");
+
+        div.className = "dinkus";
+
+        p.parentNode.replaceChild(div, p);
+
+      }
+
+    });
+
+  }
+
+
+
+  // ----------------------------------------------------------
+
+  // 8. Anchor link injection (Quarto's anchor-sections nije uvijek
+
+  //    pouzdan; dodajemo vlastite # linkove na sve h2-h4 koji ih nemaju)
+
+  // ----------------------------------------------------------
+
+  function setupAnchorLinks() {
+
+    var article = document.querySelector("main.content") || document.querySelector("main");
+
+    if (!article) return;
+
+    var headings = article.querySelectorAll("h2[id], h3[id], h4[id]");
+
+    headings.forEach(function (h) {
+
+      // Preskoči chapter title i postojeće anchorjs linkove
+
+      if (h.classList.contains("title")) return;
+
+      if (h.querySelector("a.anchorjs-link")) return;
+
+
+
+      var link = document.createElement("a");
+
+      link.className = "anchorjs-link";
+
+      link.href = "#" + h.id;
+
+      link.setAttribute("aria-label", "Permalink na ovaj odjeljak");
+
+      h.appendChild(link);
+
+    });
+
+  }
+
+
+
+  // ----------------------------------------------------------
+
+  // 9a. Standalone pages: vodic, resursi, alat — strip book chrome
+
+  // ----------------------------------------------------------
+
+  function setupStandalonePages() {
+
+    var path = location.pathname;
+
+    var standalonePages = ["/vodic.html", "/prirucnik.html", "/resursi.html", "/alat.html"];
+
+    var isStandalone = standalonePages.some(function (p) {
+
+      return path.endsWith(p);
+
+    });
+
+    if (!isStandalone) return;
+
+
+
+    // 1. Add body class — picks up CSS rules in styles.css
+
+    document.body.classList.add("standalone-page");
+
+
+
+    // 2. Force-hide book sidebar and breadcrumb (belt + suspenders)
+
+    var sb = document.getElementById("quarto-sidebar");
+
+    if (sb) sb.style.display = "none";
+
+    var msb = document.getElementById("quarto-margin-sidebar");
+
+    if (msb) msb.style.display = "none";
+
+    document.querySelectorAll(".quarto-page-breadcrumbs, nav.quarto-page-breadcrumbs").forEach(function (el) {
+
+      el.remove();
+
+    });
+
+
+
+    // 3. Remove "Appendix A —" / "Appendix B —" etc. prefix from page title
+
+    var titleEl = document.querySelector("#title-block-header h1.title, h1.title");
+
+    if (titleEl) {
+
+      titleEl.textContent = titleEl.textContent.replace(/^Appendix\s+[A-Z]\s*[—–-]\s*/i, "").trim();
+
+    }
+
+    document.title = document.title.replace(/^Appendix\s+[A-Z]\s*[—–-]\s*/i, "");
+
+
+
+    // 4. Reset page layout to full-width
+
+    document.querySelectorAll(".page-columns").forEach(function (el) {
+
+      el.style.display = "block";
+
+    });
+
+    var main = document.querySelector("main.content");
+
+    if (main) {
+
+      main.style.maxWidth = "1100px";
+
+      main.style.marginLeft = "auto";
+
+      main.style.marginRight = "auto";
+
+      main.style.paddingLeft = "1.5rem";
+
+      main.style.paddingRight = "1.5rem";
+
+      main.style.gridColumn = "1 / -1";
+
+    }
+
+  }
+
+
+
+  // ----------------------------------------------------------
+
+  // 9b. Prune sidebar: hide index, vodic, resursi, alat entries te
+
+  //     SVE vodič-podstranice (vodic/NN-*.html). Podstranice ostaju u
+
+  //     appendices radi rendera, ali se dohvaćaju preko huba, ne sidebara
+
+  //     (izvjestaj-estetski M4). MutationObserver preživljava Quartov re-render.
+
+  // ----------------------------------------------------------
+
+  function removePrunedItems() {
+
+    var endings = ["index.html", "vodic.html", "prirucnik.html", "resursi.html", "alat.html"];
+
+    // Podstranice vodiča: bilo koji href oblika .../vodic/NN-*.html
+
+    var vodicSub = /(^|\/)vodic\/\d+[-\w]*\.html$/;
+
+    document.querySelectorAll("#quarto-sidebar a.sidebar-link, #quarto-sidebar a.sidebar-item-text").forEach(function (a) {
+
+      var href = a.getAttribute("href") || "";
+
+      var hide = vodicSub.test(href);
+
+      if (!hide) {
+
+        for (var i = 0; i < endings.length; i++) {
+
+          if (href.endsWith(endings[i])) { hide = true; break; }
+
+        }
+
+      }
+
+      if (hide) {
+
+        // Hide the link itself
+
+        a.style.display = "none";
+
+        // Hide the parent li if possible
+
+        var li = a.closest(".sidebar-item");
+
+        if (li) li.style.display = "none";
+
+      }
+
+    });
+
+  }
+
+
+
+  function pruneSidebar() {
+
+    // Run immediately, then again after 200ms to beat Quarto's own sidebar JS
+
+    removePrunedItems();
+
+    setTimeout(removePrunedItems, 200);
+
+    setTimeout(removePrunedItems, 800);
+
+  }
+
+
+
+  // ----------------------------------------------------------
+
+  // 10. OJS upravljačka ploča — ispuna trake klizača (--fill),
+
+  //     puls vrijednosti i gumb ↺ za povratak na početne
+
+  //     vrijednosti. Observable rendira kontrole asinkrono,
+
+  //     pa MutationObserver hvata njihovo pojavljivanje.
+
+  // ----------------------------------------------------------
+
+  function setupOjsPanels() {
+
+    function paintFill(r) {
+
+      var min = parseFloat(r.min), max = parseFloat(r.max);
+
+      if (!isFinite(min)) min = 0;
+
+      if (!isFinite(max)) max = 100;
+
+      var pct = max > min ? ((r.value - min) / (max - min)) * 100 : 0;
+
+      r.style.setProperty("--fill", pct.toFixed(2) + "%");
+
+    }
+
+
+
+    function enhanceRange(r) {
+
+      if (r.dataset.ojsEnhanced) return;
+
+      r.dataset.ojsEnhanced = "1";
+
+      r.dataset.ojsInitial = r.value;
+
+      paintFill(r);
+
+      r.addEventListener("input", function () {
+
+        paintFill(r);
+
+        var num = r.parentElement && r.parentElement.querySelector('input[type="number"]');
+
+        if (num) {
+
+          num.classList.remove("ojs-pulse");
+
+          void num.offsetWidth; // restart animacije
+
+          num.classList.add("ojs-pulse");
+
+        }
+
+      });
+
+    }
+
+
+
+    function enhancePanel(panel) {
+
+      if (panel.dataset.ojsPanel) return;
+
+      panel.dataset.ojsPanel = "1";
+
+      panel.querySelectorAll("select").forEach(function (s) {
+
+        if (s.dataset.ojsInitial === undefined) s.dataset.ojsInitial = s.value;
+
+      });
+
+      var btn = document.createElement("button");
+
+      btn.type = "button";
+
+      btn.className = "ojs-reset";
+
+      btn.textContent = "↺ početne vrijednosti";
+
+      btn.title = "Vrati početne vrijednosti";
+
+      btn.addEventListener("click", function () {
+
+        panel.querySelectorAll('input[type="range"]').forEach(function (r) {
+
+          if (r.dataset.ojsInitial === undefined) return;
+
+          r.value = r.dataset.ojsInitial;
+
+          r.dispatchEvent(new Event("input", { bubbles: true }));
+
+        });
+
+        panel.querySelectorAll("select").forEach(function (s) {
+
+          if (s.dataset.ojsInitial === undefined) return;
+
+          s.value = s.dataset.ojsInitial;
+
+          s.dispatchEvent(new Event("input", { bubbles: true }));
+
+          s.dispatchEvent(new Event("change", { bubbles: true }));
+
+        });
+
+      });
+
+      panel.appendChild(btn);
+
+      collapsePanel(panel);
+
+    }
+
+
+
+    // Sklopiva ploča: ploču s klizačima omotamo u <details> zatvoren
+
+    // po defaultu, pa graf ostaje vidljiv s početnim vrijednostima, a
+
+    // čitatelj otvara kontrole samo kad ih želi mijenjati. Jedan potez
+
+    // pokriva svih ~90 OJS panela u knjizi bez diranja .qmd izvora.
+
+    function collapsePanel(panel) {
+
+      if (panel.dataset.ojsCollapsed) return;
+
+      var parent = panel.parentElement;
+
+      if (!parent) return;
+
+      panel.dataset.ojsCollapsed = "1";
+
+
+
+      var details = document.createElement("details");
+
+      details.className = "ojs-collapsible";
+
+
+
+      var summary = document.createElement("summary");
+
+      summary.className = "ojs-collapsible-summary";
+
+      summary.innerHTML =
+
+        '<span class="ojs-collapsible-icon" aria-hidden="true"></span>' +
+
+        '<span class="ojs-collapsible-label">Parametri simulacije</span>' +
+
+        '<span class="ojs-collapsible-hint">otvori za promjenu vrijednosti</span>';
+
+
+
+      parent.insertBefore(details, panel);
+
+      details.appendChild(summary);
+
+      details.appendChild(panel);
+
+    }
+
+
+
+    var scanQueued = false;
+
+    function scan() {
+
+      scanQueued = false;
+
+      document.querySelectorAll('form[class^="oi-"] input[type="range"]').forEach(enhanceRange);
+
+      // Inputs.form vraća anonimni <div> koji izravno sadrži oi- forme;
+
+      // taj roditelj je ploča (preskačemo Inputs.table forme).
+
+      document.querySelectorAll('form[class^="oi-"]').forEach(function (f) {
+
+        if (f.classList.contains("quarto-ojs-table-fixup")) return;
+
+        var p = f.parentElement;
+
+        if (p && p.tagName === "DIV") enhancePanel(p);
+
+      });
+
+    }
+
+    function queueScan() {
+
+      if (scanQueued) return;
+
+      scanQueued = true;
+
+      window.requestAnimationFrame(scan);
+
+    }
+
+
+
+    scan();
+
+    new MutationObserver(queueScan).observe(document.body, { childList: true, subtree: true });
+
+  }
+
+
+
+  // ----------------------------------------------------------
+
+  // 11. Sklopivi prozni blokovi — "Što isprobati" (upute uz interaktivni
+
+  //     graf) i "Vježba s podacima" (callout-vjezba na kraju poglavlja).
+
+  //     Koriste isti <details class="ojs-collapsible"> okvir kao ploča
+
+  //     "Parametri simulacije", zatvoren po defaultu, pa cijela knjiga
+
+  //     ima jedan dosljedan obrazac sklapanja. Inner sadržaj dobiva
+
+  //     klasu .ojs-collapsible-prose da SCSS zna kako ga uokviriti.
+
+  // ----------------------------------------------------------
+
+  function wrapCollapsible(node, label, opts) {
+
+    opts = opts || {};
+
+    if (node.dataset.ojsCollapsibleWrapped) return;
+
+    var parent = node.parentElement;
+
+    if (!parent) return;
+
+    node.dataset.ojsCollapsibleWrapped = "1";
+
+
+
+    var details = document.createElement("details");
+
+    details.className = "ojs-collapsible ojs-collapsible-prose";
+
+
+
+    var summary = document.createElement("summary");
+
+    summary.className = "ojs-collapsible-summary";
+
+    summary.innerHTML =
+
+      '<span class="ojs-collapsible-icon" aria-hidden="true"></span>' +
+
+      '<span class="ojs-collapsible-label"></span>' +
+
+      '<span class="ojs-collapsible-hint"></span>';
+
+    summary.querySelector(".ojs-collapsible-label").textContent = label;
+
+    summary.querySelector(".ojs-collapsible-hint").textContent =
+
+      opts.hint || "otvori za prikaz";
+
+
+
+    var body = document.createElement("div");
+
+    body.className = "ojs-collapsible-body";
+
+
+
+    parent.insertBefore(details, node);
+
+    details.appendChild(summary);
+
+    details.appendChild(body);
+
+    body.appendChild(node);
+
+  }
+
+
+
+  function setupProseCollapsibles() {
+
+    var main = document.querySelector("main.content") || document.querySelector("main");
+
+    if (!main) return;
+
+
+
+    // (a) "Što isprobati." paragrafi — prepoznaj po vodećem <strong>.
+
+    main.querySelectorAll("p").forEach(function (p) {
+
+      if (p.dataset.ojsCollapsibleWrapped) return;
+
+      var strong = p.querySelector(":scope > strong:first-child");
+
+      if (!strong) return;
+
+      var t = strong.textContent.trim().replace(/[.:]\s*$/, "");
+
+      if (t !== "Što isprobati") return;
+
+      // Vodeća oznaka seli u summary — ukloni je iz teksta da se ne udvosti.
+
+      strong.remove();
+
+      // Počisti vodeći razmak/interpunkciju koja je ostala iza <strong>.
+
+      if (p.firstChild && p.firstChild.nodeType === 3) {
+
+        p.firstChild.nodeValue = p.firstChild.nodeValue.replace(/^[\s.:]+/, "");
+
+      }
+
+      wrapCollapsible(p, "Što isprobati", { hint: "otvori za upute uz graf" });
+
+    });
+
+
+
+    // (b) "Vježba s podacima" — callout-vjezba kutije na kraju poglavlja.
+
+    //     Unutarnji callout gubi vlastiti okvir/oznaku (preuzima ih summary)
+
+    //     preko klase .ojs-collapsible-prose na <details> (vidi SCSS).
+
+    main.querySelectorAll(".callout-vjezba").forEach(function (box) {
+
+      wrapCollapsible(box, "Vježba s podacima", { hint: "otvori vježbu" });
+
+    });
+
+  }
+
+
+
+  // ----------------------------------------------------------
+
+  // Bootstrap
+
+  // ----------------------------------------------------------
+
+  function init() {
+
+    try { setupProgressBar(); } catch (e) {}
+
+    try { setupInternalHover(); } catch (e) {}
+
+    try { setupDinkus(); } catch (e) {}
+
+    try { setupAnchorLinks(); } catch (e) {}
+
+    try { setupStandalonePages(); } catch (e) {}
+
+    try { pruneSidebar(); } catch (e) {}
+
+    try { setupOjsPanels(); } catch (e) {}
+
+    try { setupProseCollapsibles(); } catch (e) {}
+
+  }
+
+
+
+  if (document.readyState === "loading") {
+
+    document.addEventListener("DOMContentLoaded", init);
+
+  } else {
+
+    init();
+
+  }
+
+})();
+
+</script>
+
+<script type="ojs-module-contents">
+eyJjb250ZW50cyI6W3sibWV0aG9kTmFtZSI6ImludGVycHJldCIsImNlbGxOYW1lIjoib2pzLWNlbGwtMSIsImlubGluZSI6ZmFsc2UsInNvdXJjZSI6InZpZXdvZiBiZl9jb250cm9scyA9IElucHV0cy5mb3JtKHtcbiAgZGVsdGE6IElucHV0cy5yYW5nZShbMCwgMV0sIHt2YWx1ZTogMC44LCBzdGVwOiAwLjAxLCBsYWJlbDogXCJGYWt0b3IgZGlza29udGlyYW5qYSDOtCAoc3RycGxqaXZvc3QpOlwifSksXG4gIG46IElucHV0cy5yYW5nZShbMywgNTFdLCB7dmFsdWU6IDUsIHN0ZXA6IDIsIGxhYmVsOiBcIkJyb2ogemFzdHVwbmlrYSBuIChuZXBhcmFuKTpcIn0pXG59KVxuIn0seyJtZXRob2ROYW1lIjoiaW50ZXJwcmV0IiwiY2VsbE5hbWUiOiJvanMtY2VsbC0yIiwiaW5saW5lIjpmYWxzZSwic291cmNlIjoie1xuICBjb25zdCBkZWx0YSA9IGJmX2NvbnRyb2xzLmRlbHRhO1xuICBjb25zdCBuY3VyID0gYmZfY29udHJvbHMubjtcbiAgY29uc3QgeHAgPSAobikgPT4gMSAtIGRlbHRhICogKG4gLSAxKSAvICgyICogbik7XG4gIGNvbnN0IGFzeW1wdG90ZSA9IDEgLSBkZWx0YSAvIDI7XG4gIGNvbnN0IHhwY3VyID0geHAobmN1cik7XG5cbiAgY29uc3QgbnMgPSBkMy5yYW5nZSgzLCA1MiwgMik7XG4gIGNvbnN0IGN1cnZlID0gbnMubWFwKG4gPT4gKHtuLCB4cDogeHAobil9KSk7XG5cbiAgcmV0dXJuIFBsb3QucGxvdCh7XG4gICAgd2lkdGg6IDc2MCxcbiAgICBoZWlnaHQ6IDQyMCxcbiAgICBtYXJnaW5MZWZ0OiA2MCxcbiAgICBtYXJnaW5Ub3A6IDYwLFxuICAgIG1hcmdpbkJvdHRvbTogNTAsXG4gICAgc3R5bGU6IHtmb250U2l6ZTogXCIxMnB4XCIsIGZvbnRGYW1pbHk6IFwiUHVibGljIFNhbnMsIHN5c3RlbS11aSwgc2Fucy1zZXJpZlwiLCBjb2xvcjogXCIjM0EzMzJEXCJ9LFxuICAgIHg6IHtsYWJlbDogXCJCcm9qIHphc3R1cG5pa2EgbiDihpJcIiwgZG9tYWluOiBbMywgNTFdfSxcbiAgICB5OiB7bGFiZWw6IFwi4oaRIFVkaW8gcHJlZGxhZ2F0ZWxqYSB4X3BcIiwgZG9tYWluOiBbMCwgMV0sIGdyaWQ6IHRydWV9LFxuICAgIG1hcmtzOiBbXG4gICAgICBQbG90LnJ1bGVZKFswXSwge3N0cm9rZTogXCIjQzlDM0I4XCJ9KSxcbiAgICAgIFBsb3QubGluZShjdXJ2ZSwge3g6IFwiblwiLCB5OiBcInhwXCIsIHN0cm9rZTogXCIjMkQ1QThFXCIsIHN0cm9rZVdpZHRoOiAyLjV9KSxcbiAgICAgIFBsb3QucnVsZVkoW2FzeW1wdG90ZV0sIHtzdHJva2U6IFwiIzZCNjM1N1wiLCBzdHJva2VEYXNoYXJyYXk6IFwiNCwzXCJ9KSxcbiAgICAgIFBsb3QuZG90KFt7bjogbmN1ciwgeHA6IHhwY3VyfV0sIHt4OiBcIm5cIiwgeTogXCJ4cFwiLCByOiA2LCBmaWxsOiBcIiMxQzE5MTZcIiwgc3Ryb2tlOiBcIndoaXRlXCIsIHN0cm9rZVdpZHRoOiAyfSksXG4gICAgICBQbG90LnRleHQoW2BncmFuaWNhIDEg4oiSIM60LzIgPSAke2FzeW1wdG90ZS50b0ZpeGVkKDIpfWBdLFxuICAgICAgICB7eDogNTEsIHk6IGFzeW1wdG90ZSwgdGV4dEFuY2hvcjogXCJlbmRcIiwgZHk6IC04LCBmb250U2l6ZTogMTEsIGZpbGw6IFwiIzZCNjM1N1wifSksXG4gICAgICBQbG90LnRleHQoW2B4X3AgKG4gPSAke25jdXJ9KSA9ICR7eHBjdXIudG9GaXhlZCgzKX1gXSxcbiAgICAgICAge2ZyYW1lQW5jaG9yOiBcInRvcFwiLCBkeTogLTMwLCBmb250U2l6ZTogMTQsIGZvbnRXZWlnaHQ6IDcwMCwgZmlsbDogXCIjMkQ1QThFXCJ9KVxuICAgIF1cbiAgfSk7XG59XG4ifSx7Im1ldGhvZE5hbWUiOiJpbnRlcnByZXRRdWlldCIsInNvdXJjZSI6InNoaW55SW5wdXQoJ2JmX2NvbnRyb2xzJykifV19
+</script>
+<script type="module">
+if (window.location.protocol === "file:") { alert("The OJS runtime does not work with file:// URLs. Please use a web server to view this document."); }
+window._ojs.paths.runtimeToDoc = "../../chapters";
+window._ojs.paths.runtimeToRoot = "../..";
+window._ojs.paths.docToRoot = "..";
+window._ojs.selfContained = false;
+window._ojs.runtime.interpretFromScriptTags();
+</script>
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    // Ensure there is a toggle, if there isn't float one in the top right
+    if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
+      const a = window.document.createElement('a');
+      a.classList.add('top-right');
+      a.classList.add('quarto-color-scheme-toggle');
+      a.href = "";
+      a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
+      const i = window.document.createElement("i");
+      i.classList.add('bi');
+      a.appendChild(i);
+      window.document.body.appendChild(a);
+    }
+    setColorSchemeToggle(hasAlternateSentinel())
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+    const viewSource = window.document.getElementById('quarto-view-source') ||
+                       window.document.getElementById('quarto-code-tools-source');
+    if (viewSource) {
+      const sourceUrl = viewSource.getAttribute("data-quarto-source-url");
+      viewSource.addEventListener("click", function(e) {
+        if (sourceUrl) {
+          // rstudio viewer pane
+          if (/\bcapabilities=\b/.test(window.location)) {
+            window.open(sourceUrl);
+          } else {
+            window.location.href = sourceUrl;
+          }
+        } else {
+          const modal = new bootstrap.Modal(document.getElementById('quarto-embedded-source-code-modal'));
+          modal.show();
+        }
+        return false;
+      });
+    }
+    function toggleCodeHandler(show) {
+      return function(e) {
+        const detailsSrc = window.document.querySelectorAll(".cell > details > .sourceCode");
+        for (let i=0; i<detailsSrc.length; i++) {
+          const details = detailsSrc[i].parentElement;
+          if (show) {
+            details.open = true;
+          } else {
+            details.removeAttribute("open");
+          }
+        }
+        const cellCodeDivs = window.document.querySelectorAll(".cell > .sourceCode");
+        const fromCls = show ? "hidden" : "unhidden";
+        const toCls = show ? "unhidden" : "hidden";
+        for (let i=0; i<cellCodeDivs.length; i++) {
+          const codeDiv = cellCodeDivs[i];
+          if (codeDiv.classList.contains(fromCls)) {
+            codeDiv.classList.remove(fromCls);
+            codeDiv.classList.add(toCls);
+          } 
+        }
+        return false;
+      }
+    }
+    const hideAllCode = window.document.getElementById("quarto-hide-all-code");
+    if (hideAllCode) {
+      hideAllCode.addEventListener("click", toggleCodeHandler(false));
+    }
+    const showAllCode = window.document.getElementById("quarto-show-all-code");
+    if (showAllCode) {
+      showAllCode.addEventListener("click", toggleCodeHandler(true));
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp("https:\/\/lusiki\.github\.io\/Javne-politike\/");
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+            // target, if specified
+            link.setAttribute("target", "_blank");
+            if (link.getAttribute("rel") === null) {
+              link.setAttribute("rel", "noopener");
+            }
+            // default icon
+            link.classList.add("external");
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="../chapters/05-javni-izbor.html" class="pagination-link" aria-label="Što je to javni izbor i zašto nas se tiče?">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-title">Što je to javni izbor i zašto nas se tiče?</span></span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="../chapters/06-kolektivni-izbor.html" class="pagination-link" aria-label="Kolektivni izbor">
+        <span class="nav-page-text"><span class="chapter-title">Kolektivni izbor</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav><div class="modal fade" id="quarto-embedded-source-code-modal" tabindex="-1" aria-labelledby="quarto-embedded-source-code-modal-label" aria-hidden="true"><div class="modal-dialog modal-dialog-scrollable"><div class="modal-content"><div class="modal-header"><h5 class="modal-title" id="quarto-embedded-source-code-modal-label">Source Code</h5><button class="btn-close" data-bs-dismiss="modal"></button></div><div class="modal-body"><div class="">
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3" data-shortcodes="false"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="an">title:</span><span class="co"> "Teorija igara i zakonodavno pregovaranje"</span></span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>::: {.vodic-panel}</span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a><span class="fu">## Vodič kroz poglavlje</span></span>
+<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a><span class="ss">1. </span>Zašto se država ne može razumjeti kao jedan akter, nego kao arena strateške interakcije?</span>
+<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a><span class="ss">2. </span>Kako zatvorenikova dilema objašnjava zašto dobrovoljnost sama ne osigurava javna dobra?</span>
+<span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a><span class="ss">3. </span>Po čemu se igra kukavice i igra koordinacije razlikuju od dileme, i što to znači za ulogu pravila?</span>
+<span id="cb3-11"><a href="#cb3-11" aria-hidden="true" tabindex="-1"></a><span class="ss">4. </span>Kako predlagatelj proračuna dijeli javni novac i o čemu ovisi njegova pregovaračka moć?</span>
+<span id="cb3-12"><a href="#cb3-12" aria-hidden="true" tabindex="-1"></a><span class="ss">5. </span>Zašto se stvarno ponašanje u laboratoriju sustavno razlikuje od onoga što model predviđa?</span>
+<span id="cb3-13"><a href="#cb3-13" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb3-14"><a href="#cb3-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-15"><a href="#cb3-15" aria-hidden="true" tabindex="-1"></a>Prethodno je poglavlje aktere političkog procesa, birače, političare, birokrate i interesne skupine, predstavilo kao pojedince koji slijede vlastite ciljeve, ali je svakoga promatralo zasebno. Čim ih je više za istim stolom, ishod svakoga ovisi i o potezima ostalih, pa država prestaje biti jedinstven dobrohotan akter i postaje arena strateške interakcije u kojoj obična maksimizacija korisnosti više ne opisuje ponašanje <span class="co">[</span><span class="ot">@buchanan1962; @mueller1989</span><span class="co">]</span>.</span>
+<span id="cb3-16"><a href="#cb3-16" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-17"><a href="#cb3-17" aria-hidden="true" tabindex="-1"></a>Za takve situacije ekonomija posuđuje aparat teorije igara, matematičke discipline koja proučava odlučivanje kada ishod ovisi o međusobno povezanim odlukama više aktera <span class="co">[</span><span class="ot">@osborne2004</span><span class="co">]</span>. Ona političke borbe prevodi u modele iz kojih se vidi zašto se sklapaju naizgled neobični savezi, kako se dijeli proračunski kolač i pod kojim uvjetima zastupnici dobrovoljno predaju moć stranačkim vođama.</span>
+<span id="cb3-18"><a href="#cb3-18" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-19"><a href="#cb3-19" aria-hidden="true" tabindex="-1"></a>Poglavlje najprije postavlja tri temeljne igre kojima javni izbor objašnjava probleme kolektivnog djelovanja, a zatim ih primjenjuje na zakonodavno pregovaranje o proračunu, gdje pravila glasovanja izravno određuju tko koliko dobiva.</span>
+<span id="cb3-20"><a href="#cb3-20" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-21"><a href="#cb3-21" aria-hidden="true" tabindex="-1"></a><span class="fu">## Strateške igre i kolektivno djelovanje</span></span>
+<span id="cb3-22"><a href="#cb3-22" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-23"><a href="#cb3-23" aria-hidden="true" tabindex="-1"></a>Igra u normalnoj formi određena je trima elementima, skupom igrača, skupovima strategija dostupnih svakom igraču i funkcijama isplata koje svakoj kombinaciji strategija pridružuju korisnost svakog igrača <span class="co">[</span><span class="ot">@osborne2004</span><span class="co">]</span>. Rješenje igre traži se preko pojma ravnoteže.</span>
+<span id="cb3-24"><a href="#cb3-24" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-25"><a href="#cb3-25" aria-hidden="true" tabindex="-1"></a>::: {#def-nashova-ravnoteza}</span>
+<span id="cb3-26"><a href="#cb3-26" aria-hidden="true" tabindex="-1"></a>**Nashova ravnoteža** je kombinacija strategija u kojoj nijedan igrač ne može povećati svoju korisnost jednostranom promjenom strategije dok ostali ne mijenjaju svoju. Strategija je **strogo dominantna** ako igraču donosi veću korisnost od svake druge, bez obzira na to što čine ostali.</span>
+<span id="cb3-27"><a href="#cb3-27" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb3-28"><a href="#cb3-28" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-29"><a href="#cb3-29" aria-hidden="true" tabindex="-1"></a>Prva i najutjecajnija igra javnog izbora jest zatvorenikova dilema, koja objašnjava zašto dobrovoljnost ne osigurava javna dobra <span class="co">[</span><span class="ot">@hardin1968</span><span class="co">]</span>. Dva susjedna poljoprivrednika odlučuju hoće li platiti svoj dio zajedničkog nasipa protiv poplava, klasičnog javnog dobra <span class="co">[</span><span class="ot">@samuelson1954</span><span class="co">]</span>. Svaki može kooperirati i platiti svoj dio ili defektirati i nadati se da će drugi sam financirati nasip.</span>
+<span id="cb3-30"><a href="#cb3-30" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-31"><a href="#cb3-31" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Igrač A ↓ \ Igrač B → <span class="pp">|</span> B kooperira <span class="pp">|</span> B defektira <span class="pp">|</span></span>
+<span id="cb3-32"><a href="#cb3-32" aria-hidden="true" tabindex="-1"></a><span class="pp">|---|---|---|</span></span>
+<span id="cb3-33"><a href="#cb3-33" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> A kooperira <span class="pp">|</span> (3, 3) <span class="pp">|</span> (0, 5) <span class="pp">|</span></span>
+<span id="cb3-34"><a href="#cb3-34" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> A defektira <span class="pp">|</span> (5, 0) <span class="pp">|</span> (1, 1) <span class="pp">|</span></span>
+<span id="cb3-35"><a href="#cb3-35" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-36"><a href="#cb3-36" aria-hidden="true" tabindex="-1"></a>: Isplatna matrica zatvorenikove dileme; prvi broj je korisnost igrača A, drugi korisnost igrača B. Izrada autora. {#tbl-zatvorenik}</span>
+<span id="cb3-37"><a href="#cb3-37" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-38"><a href="#cb3-38" aria-hidden="true" tabindex="-1"></a>Igra otkriva napetost između pojedinačne i kolektivne racionalnosti <span class="co">[</span><span class="ot">@olson1965</span><span class="co">]</span>. Ako B kooperira, A je bolje defektirati jer time dobiva pet umjesto tri. Ako B defektira, A je opet bolje defektirati jer dobiva jedan umjesto nule. Defekcija je stoga strogo dominantna strategija za A, a zbog simetrije i za B. Jedina Nashova ravnoteža igre jest obostrana defekcija s isplatama jedan za oba aktera. Ta je ravnoteža Pareto inferiorna u odnosu na obostranu kooperaciju, koja bi obojici donijela tri. Racionalni pojedinci tako svjesno završavaju u ishodu koji je za obojicu lošiji. Upravo zato decentralizirano tržište ne može samo osigurati dovoljnu količinu javnog dobra, pa država svojim autoritetom prisiljava aktere na doprinos kroz porez, prevodeći društvo iz neučinkovite ravnoteže defekcije u učinkovitu kooperaciju <span class="co">[</span><span class="ot">@mueller1989</span><span class="co">]</span>.</span>
+<span id="cb3-39"><a href="#cb3-39" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-40"><a href="#cb3-40" aria-hidden="true" tabindex="-1"></a><span class="fu">## Kukavica i koordinacija, sukob i institucije</span></span>
+<span id="cb3-41"><a href="#cb3-41" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-42"><a href="#cb3-42" aria-hidden="true" tabindex="-1"></a>Drugu igru, kukavicu, obilježava to što obostrana tvrdoća vodi u ishod koji obje strane žele izbjeći pod svaku cijenu <span class="co">[</span><span class="ot">@mueller1989</span><span class="co">]</span>. Dvije države članice monetarne unije pregovaraju o podjeli tereta u dubokoj financijskoj krizi. Svaka može popustiti i preuzeti veći dio duga ili ustrajati na tvrdom stavu, očekujući da će druga popustiti kako bi spriječila slom zajedničke valute.</span>
+<span id="cb3-43"><a href="#cb3-43" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-44"><a href="#cb3-44" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Država A ↓ \ Država B → <span class="pp">|</span> B popušta <span class="pp">|</span> B ustraje <span class="pp">|</span></span>
+<span id="cb3-45"><a href="#cb3-45" aria-hidden="true" tabindex="-1"></a><span class="pp">|---|---|---|</span></span>
+<span id="cb3-46"><a href="#cb3-46" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> A popušta <span class="pp">|</span> (0, 0) <span class="pp">|</span> (−1, 2) <span class="pp">|</span></span>
+<span id="cb3-47"><a href="#cb3-47" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> A ustraje <span class="pp">|</span> (2, −1) <span class="pp">|</span> (−10, −10) <span class="pp">|</span></span>
+<span id="cb3-48"><a href="#cb3-48" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-49"><a href="#cb3-49" aria-hidden="true" tabindex="-1"></a>: Isplatna matrica igre kukavice. Izrada autora. {#tbl-kukavica}</span>
+<span id="cb3-50"><a href="#cb3-50" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-51"><a href="#cb3-51" aria-hidden="true" tabindex="-1"></a>Za razliku od dileme, ovdje nema dominantne strategije. Ako B ustraje, A je bolje popustiti i izbjeći slom koji nosi minus deset. Ako B popušta, A je bolje ustrajati i uzeti dva. Igra ima dvije ravnoteže u čistim strategijama, onu u kojoj jedna strana popušta dok druga ustraje, i obrnutu. Problem je strateška neizvjesnost. Ako obje strane, goneći maksimalni dobitak, ustraju do kraja, sustav završava u katastrofi, što objašnjava zašto krizni pregovori traju do posljednje sekunde i zašto se uvode nadnacionalna pravila koja raspodjelu kriznog tereta određuju unaprijed.</span>
+<span id="cb3-52"><a href="#cb3-52" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-53"><a href="#cb3-53" aria-hidden="true" tabindex="-1"></a>Treću skupinu čine igre koordinacije, poput bitke spolova, u kojima postoji više ravnoteža, svi imaju zajednički interes uskladiti se, ali se razilaze oko toga koja je ravnoteža bolja <span class="co">[</span><span class="ot">@osborne2004</span><span class="co">]</span>. Dva poduzeća biraju tehnički standard za zajedničku infrastrukturu koja radi samo ako su standardi kompatibilni.</span>
+<span id="cb3-54"><a href="#cb3-54" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-55"><a href="#cb3-55" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Poduzeće A ↓ \ Poduzeće B → <span class="pp">|</span> B bira X <span class="pp">|</span> B bira Y <span class="pp">|</span></span>
+<span id="cb3-56"><a href="#cb3-56" aria-hidden="true" tabindex="-1"></a><span class="pp">|---|---|---|</span></span>
+<span id="cb3-57"><a href="#cb3-57" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> A bira X <span class="pp">|</span> (3, 2) <span class="pp">|</span> (0, 0) <span class="pp">|</span></span>
+<span id="cb3-58"><a href="#cb3-58" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> A bira Y <span class="pp">|</span> (0, 0) <span class="pp">|</span> (2, 3) <span class="pp">|</span></span>
+<span id="cb3-59"><a href="#cb3-59" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-60"><a href="#cb3-60" aria-hidden="true" tabindex="-1"></a>: Isplatna matrica igre koordinacije. Izrada autora. {#tbl-koordinacija}</span>
+<span id="cb3-61"><a href="#cb3-61" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-62"><a href="#cb3-62" aria-hidden="true" tabindex="-1"></a>Ravnoteže su dvije, obje pristaju uz isti standard. Ako poduzeća ne mogu komunicirati, prijeti koordinacijski neuspjeh u kojem se resursi troše na nespojive sustave uz nulte isplate. Uloga države ovdje nije prisila ni kazna, kao u dilemi, nego pružanje fokalne točke. Donošenjem zakona, propisivanjem standarda ili objavom smjernica država usklađuje očekivanja aktera i svodi transakcijske troškove pregovaranja na najmanju mjeru, što je jedan od načina na koje institucije kao pravila igre stvaraju red <span class="co">[</span><span class="ot">@north1990</span><span class="co">]</span>.</span>
+<span id="cb3-63"><a href="#cb3-63" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-64"><a href="#cb3-64" aria-hidden="true" tabindex="-1"></a><span class="fu">## Baron-Ferejohnov model zakonodavnog pregovaranja</span></span>
+<span id="cb3-65"><a href="#cb3-65" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-66"><a href="#cb3-66" aria-hidden="true" tabindex="-1"></a>Kada se o podjeli proračuna odlučuje pravilom većine, igra postaje dinamična. David Baron i John Ferejohn formalizirali su taj proces u modelu koji je postao temelj moderne političke ekonomije <span class="co">[</span><span class="ot">@baronferejohn1989</span><span class="co">]</span>. Zakonodavno tijelo ima neparan broj zastupnika $n$, od kojih svaki predstavlja svoj okrug i mari samo za udio proračuna koji ide njemu. Proračun je normaliziran na jedinicu, pa raspodjela $(x_1, \dots, x_n)$ mora zadovoljiti</span>
+<span id="cb3-67"><a href="#cb3-67" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-68"><a href="#cb3-68" aria-hidden="true" tabindex="-1"></a>$$\sum_{i=1}^{n} x_i = 1, \qquad x_i \ge 0.$$</span>
+<span id="cb3-69"><a href="#cb3-69" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-70"><a href="#cb3-70" aria-hidden="true" tabindex="-1"></a>Pregovori teku u rundama pod zatvorenim pravilom. Na početku svake runde jedan zastupnik biva nasumično izabran za predlagatelja, svaki s jednakom vjerojatnošću $1/n$. Predlagatelj iznosi raspodjelu, a tijelo o njoj glasuje bez amandmana. Ako prijedlog dobije većinu, koja traži $(n+1)/2$ glasova, proračun se usvaja i igra završava. Ako padne, pregovori se sele u sljedeću rundu, ali se vrijednost kolača umanjuje faktorom diskontiranja $\delta \in (0,1)$, koji bilježi nestrpljivost, amortizaciju resursa i trošak blokade.</span>
+<span id="cb3-71"><a href="#cb3-71" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-72"><a href="#cb3-72" aria-hidden="true" tabindex="-1"></a>Igru rješavamo pojmom stacionarne savršene ravnoteže u podigrama, u kojoj odluke ovise samo o trenutnom prijedlogu i očekivanjima o nastavku, a ne o povijesti pregovora. Neka je $v$ očekivana vrijednost pregovora za zastupnika na početku runde, prije nego što se zna tko predlaže. Budući da je igra simetrična i da se u ravnoteži proračun usvaja već u prvoj rundi, ukupna se jedinica dijeli među $n$ zastupnika, pa je</span>
+<span id="cb3-73"><a href="#cb3-73" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-74"><a href="#cb3-74" aria-hidden="true" tabindex="-1"></a>$$v = \frac{1}{n}.$$</span>
+<span id="cb3-75"><a href="#cb3-75" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-76"><a href="#cb3-76" aria-hidden="true" tabindex="-1"></a>Odbije li zastupnik prijedlog, dobiva tek diskontiranu vrijednost nastavka $\delta v$. Najmanji iznos kojim predlagatelj može kupiti njegov glas zato je njegova rezervacijska cijena $\delta v = \delta/n$. Predlagatelju nije potreban pristanak svih, nego većine, pa uz vlastiti glas mora kupiti još $(n-1)/2$ glasova. Racionalno bira upravo toliko najjeftinijih zastupnika, nudi svakom točno $\delta/n$, a ostalima ništa. Za sebe zadržava</span>
+<span id="cb3-77"><a href="#cb3-77" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-78"><a href="#cb3-78" aria-hidden="true" tabindex="-1"></a>$$x_p = 1 - \frac{n-1}{2}\cdot\frac{\delta}{n} = 1 - \frac{\delta(n-1)}{2n}.$$</span>
+<span id="cb3-79"><a href="#cb3-79" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-80"><a href="#cb3-80" aria-hidden="true" tabindex="-1"></a>Graf koji slijedi prikazuje taj udio predlagatelja u ovisnosti o veličini parlamenta, pri čemu krivulja pada prema svojoj donjoj granici kako tijelo raste. Graf je interaktivan, pa klizači mijenjaju broj zastupnika i njihovu strpljivost.</span>
+<span id="cb3-81"><a href="#cb3-81" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-82"><a href="#cb3-82" aria-hidden="true" tabindex="-1"></a>::: {.content-visible when-format="html"}</span>
+<span id="cb3-85"><a href="#cb3-85" aria-hidden="true" tabindex="-1"></a><span class="in">```{ojs}</span></span>
+<span id="cb3-86"><a href="#cb3-86" aria-hidden="true" tabindex="-1"></a><span class="co">//| echo: false</span></span>
+<span id="cb3-87"><a href="#cb3-87" aria-hidden="true" tabindex="-1"></a>viewof bf_controls <span class="op">=</span> Inputs<span class="op">.</span><span class="fu">form</span>({</span>
+<span id="cb3-88"><a href="#cb3-88" aria-hidden="true" tabindex="-1"></a>  <span class="dt">delta</span><span class="op">:</span> Inputs<span class="op">.</span><span class="fu">range</span>([<span class="dv">0</span><span class="op">,</span> <span class="dv">1</span>]<span class="op">,</span> {<span class="dt">value</span><span class="op">:</span> <span class="fl">0.8</span><span class="op">,</span> <span class="dt">step</span><span class="op">:</span> <span class="fl">0.01</span><span class="op">,</span> <span class="dt">label</span><span class="op">:</span> <span class="st">"Faktor diskontiranja δ (strpljivost):"</span>})<span class="op">,</span></span>
+<span id="cb3-89"><a href="#cb3-89" aria-hidden="true" tabindex="-1"></a>  <span class="dt">n</span><span class="op">:</span> Inputs<span class="op">.</span><span class="fu">range</span>([<span class="dv">3</span><span class="op">,</span> <span class="dv">51</span>]<span class="op">,</span> {<span class="dt">value</span><span class="op">:</span> <span class="dv">5</span><span class="op">,</span> <span class="dt">step</span><span class="op">:</span> <span class="dv">2</span><span class="op">,</span> <span class="dt">label</span><span class="op">:</span> <span class="st">"Broj zastupnika n (neparan):"</span>})</span>
+<span id="cb3-90"><a href="#cb3-90" aria-hidden="true" tabindex="-1"></a>})</span>
+<span id="cb3-91"><a href="#cb3-91" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb3-92"><a href="#cb3-92" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-95"><a href="#cb3-95" aria-hidden="true" tabindex="-1"></a><span class="in">```{ojs}</span></span>
+<span id="cb3-96"><a href="#cb3-96" aria-hidden="true" tabindex="-1"></a><span class="co">//| echo: false</span></span>
+<span id="cb3-97"><a href="#cb3-97" aria-hidden="true" tabindex="-1"></a><span class="co">//| label: fig-bf-udio</span></span>
+<span id="cb3-98"><a href="#cb3-98" aria-hidden="true" tabindex="-1"></a><span class="co">//| fig-cap: "Udio proračuna koji predlagatelj zadržava, x_p = 1 − δ(n−1)/(2n), pada s veličinom parlamenta prema granici 1 − δ/2. Veće tijelo raspršuje moć predlagatelja, a ne koncentrira je."</span></span>
+<span id="cb3-99"><a href="#cb3-99" aria-hidden="true" tabindex="-1"></a><span class="co">//| fig-alt: "Graf s brojem zastupnika n na vodoravnoj osi i udjelom predlagatelja na okomitoj. Silazna krivulja pada od vrijednosti pri malom n prema vodoravnoj isprekidanoj liniji koja označava granicu 1 − δ/2. Istaknuta točka pokazuje trenutni n i pripadni udio."</span></span>
+<span id="cb3-100"><a href="#cb3-100" aria-hidden="true" tabindex="-1"></a>{</span>
+<span id="cb3-101"><a href="#cb3-101" aria-hidden="true" tabindex="-1"></a>  <span class="kw">const</span> delta <span class="op">=</span> bf_controls<span class="op">.</span><span class="at">delta</span><span class="op">;</span></span>
+<span id="cb3-102"><a href="#cb3-102" aria-hidden="true" tabindex="-1"></a>  <span class="kw">const</span> ncur <span class="op">=</span> bf_controls<span class="op">.</span><span class="at">n</span><span class="op">;</span></span>
+<span id="cb3-103"><a href="#cb3-103" aria-hidden="true" tabindex="-1"></a>  <span class="kw">const</span> xp <span class="op">=</span> (n) <span class="kw">=&gt;</span> <span class="dv">1</span> <span class="op">-</span> delta <span class="op">*</span> (n <span class="op">-</span> <span class="dv">1</span>) <span class="op">/</span> (<span class="dv">2</span> <span class="op">*</span> n)<span class="op">;</span></span>
+<span id="cb3-104"><a href="#cb3-104" aria-hidden="true" tabindex="-1"></a>  <span class="kw">const</span> asymptote <span class="op">=</span> <span class="dv">1</span> <span class="op">-</span> delta <span class="op">/</span> <span class="dv">2</span><span class="op">;</span></span>
+<span id="cb3-105"><a href="#cb3-105" aria-hidden="true" tabindex="-1"></a>  <span class="kw">const</span> xpcur <span class="op">=</span> <span class="fu">xp</span>(ncur)<span class="op">;</span></span>
+<span id="cb3-106"><a href="#cb3-106" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-107"><a href="#cb3-107" aria-hidden="true" tabindex="-1"></a>  <span class="kw">const</span> ns <span class="op">=</span> d3<span class="op">.</span><span class="fu">range</span>(<span class="dv">3</span><span class="op">,</span> <span class="dv">52</span><span class="op">,</span> <span class="dv">2</span>)<span class="op">;</span></span>
+<span id="cb3-108"><a href="#cb3-108" aria-hidden="true" tabindex="-1"></a>  <span class="kw">const</span> curve <span class="op">=</span> ns<span class="op">.</span><span class="fu">map</span>(n <span class="kw">=&gt;</span> ({n<span class="op">,</span> <span class="dt">xp</span><span class="op">:</span> <span class="fu">xp</span>(n)}))<span class="op">;</span></span>
+<span id="cb3-109"><a href="#cb3-109" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-110"><a href="#cb3-110" aria-hidden="true" tabindex="-1"></a>  <span class="cf">return</span> Plot<span class="op">.</span><span class="fu">plot</span>({</span>
+<span id="cb3-111"><a href="#cb3-111" aria-hidden="true" tabindex="-1"></a>    <span class="dt">width</span><span class="op">:</span> <span class="dv">760</span><span class="op">,</span></span>
+<span id="cb3-112"><a href="#cb3-112" aria-hidden="true" tabindex="-1"></a>    <span class="dt">height</span><span class="op">:</span> <span class="dv">420</span><span class="op">,</span></span>
+<span id="cb3-113"><a href="#cb3-113" aria-hidden="true" tabindex="-1"></a>    <span class="dt">marginLeft</span><span class="op">:</span> <span class="dv">60</span><span class="op">,</span></span>
+<span id="cb3-114"><a href="#cb3-114" aria-hidden="true" tabindex="-1"></a>    <span class="dt">marginTop</span><span class="op">:</span> <span class="dv">60</span><span class="op">,</span></span>
+<span id="cb3-115"><a href="#cb3-115" aria-hidden="true" tabindex="-1"></a>    <span class="dt">marginBottom</span><span class="op">:</span> <span class="dv">50</span><span class="op">,</span></span>
+<span id="cb3-116"><a href="#cb3-116" aria-hidden="true" tabindex="-1"></a>    <span class="dt">style</span><span class="op">:</span> {<span class="dt">fontSize</span><span class="op">:</span> <span class="st">"12px"</span><span class="op">,</span> <span class="dt">fontFamily</span><span class="op">:</span> <span class="st">"Public Sans, system-ui, sans-serif"</span><span class="op">,</span> <span class="dt">color</span><span class="op">:</span> <span class="st">"#3A332D"</span>}<span class="op">,</span></span>
+<span id="cb3-117"><a href="#cb3-117" aria-hidden="true" tabindex="-1"></a>    <span class="dt">x</span><span class="op">:</span> {<span class="dt">label</span><span class="op">:</span> <span class="st">"Broj zastupnika n →"</span><span class="op">,</span> <span class="dt">domain</span><span class="op">:</span> [<span class="dv">3</span><span class="op">,</span> <span class="dv">51</span>]}<span class="op">,</span></span>
+<span id="cb3-118"><a href="#cb3-118" aria-hidden="true" tabindex="-1"></a>    <span class="dt">y</span><span class="op">:</span> {<span class="dt">label</span><span class="op">:</span> <span class="st">"↑ Udio predlagatelja x_p"</span><span class="op">,</span> <span class="dt">domain</span><span class="op">:</span> [<span class="dv">0</span><span class="op">,</span> <span class="dv">1</span>]<span class="op">,</span> <span class="dt">grid</span><span class="op">:</span> <span class="kw">true</span>}<span class="op">,</span></span>
+<span id="cb3-119"><a href="#cb3-119" aria-hidden="true" tabindex="-1"></a>    <span class="dt">marks</span><span class="op">:</span> [</span>
+<span id="cb3-120"><a href="#cb3-120" aria-hidden="true" tabindex="-1"></a>      Plot<span class="op">.</span><span class="fu">ruleY</span>([<span class="dv">0</span>]<span class="op">,</span> {<span class="dt">stroke</span><span class="op">:</span> <span class="st">"#C9C3B8"</span>})<span class="op">,</span></span>
+<span id="cb3-121"><a href="#cb3-121" aria-hidden="true" tabindex="-1"></a>      Plot<span class="op">.</span><span class="fu">line</span>(curve<span class="op">,</span> {<span class="dt">x</span><span class="op">:</span> <span class="st">"n"</span><span class="op">,</span> <span class="dt">y</span><span class="op">:</span> <span class="st">"xp"</span><span class="op">,</span> <span class="dt">stroke</span><span class="op">:</span> <span class="st">"#2D5A8E"</span><span class="op">,</span> <span class="dt">strokeWidth</span><span class="op">:</span> <span class="fl">2.5</span>})<span class="op">,</span></span>
+<span id="cb3-122"><a href="#cb3-122" aria-hidden="true" tabindex="-1"></a>      Plot<span class="op">.</span><span class="fu">ruleY</span>([asymptote]<span class="op">,</span> {<span class="dt">stroke</span><span class="op">:</span> <span class="st">"#6B6357"</span><span class="op">,</span> <span class="dt">strokeDasharray</span><span class="op">:</span> <span class="st">"4,3"</span>})<span class="op">,</span></span>
+<span id="cb3-123"><a href="#cb3-123" aria-hidden="true" tabindex="-1"></a>      Plot<span class="op">.</span><span class="fu">dot</span>([{<span class="dt">n</span><span class="op">:</span> ncur<span class="op">,</span> <span class="dt">xp</span><span class="op">:</span> xpcur}]<span class="op">,</span> {<span class="dt">x</span><span class="op">:</span> <span class="st">"n"</span><span class="op">,</span> <span class="dt">y</span><span class="op">:</span> <span class="st">"xp"</span><span class="op">,</span> <span class="dt">r</span><span class="op">:</span> <span class="dv">6</span><span class="op">,</span> <span class="dt">fill</span><span class="op">:</span> <span class="st">"#1C1916"</span><span class="op">,</span> <span class="dt">stroke</span><span class="op">:</span> <span class="st">"white"</span><span class="op">,</span> <span class="dt">strokeWidth</span><span class="op">:</span> <span class="dv">2</span>})<span class="op">,</span></span>
+<span id="cb3-124"><a href="#cb3-124" aria-hidden="true" tabindex="-1"></a>      Plot<span class="op">.</span><span class="fu">text</span>([<span class="vs">`granica 1 − δ/2 = </span><span class="sc">${</span>asymptote<span class="op">.</span><span class="fu">toFixed</span>(<span class="dv">2</span>)<span class="sc">}</span><span class="vs">`</span>]<span class="op">,</span></span>
+<span id="cb3-125"><a href="#cb3-125" aria-hidden="true" tabindex="-1"></a>        {<span class="dt">x</span><span class="op">:</span> <span class="dv">51</span><span class="op">,</span> <span class="dt">y</span><span class="op">:</span> asymptote<span class="op">,</span> <span class="dt">textAnchor</span><span class="op">:</span> <span class="st">"end"</span><span class="op">,</span> <span class="dt">dy</span><span class="op">:</span> <span class="op">-</span><span class="dv">8</span><span class="op">,</span> <span class="dt">fontSize</span><span class="op">:</span> <span class="dv">11</span><span class="op">,</span> <span class="dt">fill</span><span class="op">:</span> <span class="st">"#6B6357"</span>})<span class="op">,</span></span>
+<span id="cb3-126"><a href="#cb3-126" aria-hidden="true" tabindex="-1"></a>      Plot<span class="op">.</span><span class="fu">text</span>([<span class="vs">`x_p (n = </span><span class="sc">${</span>ncur<span class="sc">}</span><span class="vs">) = </span><span class="sc">${</span>xpcur<span class="op">.</span><span class="fu">toFixed</span>(<span class="dv">3</span>)<span class="sc">}</span><span class="vs">`</span>]<span class="op">,</span></span>
+<span id="cb3-127"><a href="#cb3-127" aria-hidden="true" tabindex="-1"></a>        {<span class="dt">frameAnchor</span><span class="op">:</span> <span class="st">"top"</span><span class="op">,</span> <span class="dt">dy</span><span class="op">:</span> <span class="op">-</span><span class="dv">30</span><span class="op">,</span> <span class="dt">fontSize</span><span class="op">:</span> <span class="dv">14</span><span class="op">,</span> <span class="dt">fontWeight</span><span class="op">:</span> <span class="dv">700</span><span class="op">,</span> <span class="dt">fill</span><span class="op">:</span> <span class="st">"#2D5A8E"</span>})</span>
+<span id="cb3-128"><a href="#cb3-128" aria-hidden="true" tabindex="-1"></a>    ]</span>
+<span id="cb3-129"><a href="#cb3-129" aria-hidden="true" tabindex="-1"></a>  })<span class="op">;</span></span>
+<span id="cb3-130"><a href="#cb3-130" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb3-131"><a href="#cb3-131" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb3-132"><a href="#cb3-132" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-133"><a href="#cb3-133" aria-hidden="true" tabindex="-1"></a>**Što isprobati.** (1) Zadržite strpljivost visokom i povećavajte broj zastupnika, pa pratite kako udio predlagatelja pada prema granici 1 − δ/2, jer se moć raspršuje na sve veći broj jeftinijih, ali brojnijih glasova. (2) Spustite faktor diskontiranja prema nuli i vidjet ćete kako udio predlagatelja skoči na cijeli proračun, jer nestrpljivi zastupnici pristaju na gotovo ništa. (3) Postavite strpljivost blizu jedinice uz velik parlament i uvjerite se da predlagatelj zadržava tek nešto više od polovice, dok ostatak dijeli njegova minimalna koalicija.</span>
+<span id="cb3-134"><a href="#cb3-134" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb3-135"><a href="#cb3-135" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-136"><a href="#cb3-136" aria-hidden="true" tabindex="-1"></a>::: {.content-visible when-format="pdf"}</span>
+<span id="cb3-139"><a href="#cb3-139" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb3-140"><a href="#cb3-140" aria-hidden="true" tabindex="-1"></a><span class="co">#| label: fig-bf-udio-print</span></span>
+<span id="cb3-141"><a href="#cb3-141" aria-hidden="true" tabindex="-1"></a><span class="co">#| echo: false</span></span>
+<span id="cb3-142"><a href="#cb3-142" aria-hidden="true" tabindex="-1"></a><span class="co">#| fig-cap: "Udio proračuna koji predlagatelj zadržava, x_p = 1 − δ(n−1)/(2n), pada s veličinom parlamenta prema granici 1 − δ/2. Veće tijelo raspršuje moć predlagatelja, a ne koncentrira je."</span></span>
+<span id="cb3-143"><a href="#cb3-143" aria-hidden="true" tabindex="-1"></a><span class="co">#| fig-alt: "Graf s brojem zastupnika n na vodoravnoj osi i udjelom predlagatelja na okomitoj. Silazna krivulja pada od vrijednosti pri malom n prema vodoravnoj isprekidanoj liniji koja označava granicu 1 − δ/2. Istaknuta točka pokazuje trenutni n i pripadni udio."</span></span>
+<span id="cb3-144"><a href="#cb3-144" aria-hidden="true" tabindex="-1"></a><span class="co">#| fig-width: 7.6</span></span>
+<span id="cb3-145"><a href="#cb3-145" aria-hidden="true" tabindex="-1"></a><span class="co">#| fig-height: 4.2</span></span>
+<span id="cb3-146"><a href="#cb3-146" aria-hidden="true" tabindex="-1"></a><span class="co"># Statički PDF blizanac interaktivnog OJS grafa (zadane vrijednosti klizača: δ = 0.8, n = 5).</span></span>
+<span id="cb3-147"><a href="#cb3-147" aria-hidden="true" tabindex="-1"></a><span class="fu">source</span>(<span class="st">"R/setup.R"</span>)</span>
+<span id="cb3-148"><a href="#cb3-148" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-149"><a href="#cb3-149" aria-hidden="true" tabindex="-1"></a>delta <span class="ot">&lt;-</span> <span class="fl">0.8</span></span>
+<span id="cb3-150"><a href="#cb3-150" aria-hidden="true" tabindex="-1"></a>ncur  <span class="ot">&lt;-</span> <span class="dv">5</span></span>
+<span id="cb3-151"><a href="#cb3-151" aria-hidden="true" tabindex="-1"></a>xp_fun <span class="ot">&lt;-</span> <span class="cf">function</span>(n) <span class="dv">1</span> <span class="sc">-</span> delta <span class="sc">*</span> (n <span class="sc">-</span> <span class="dv">1</span>) <span class="sc">/</span> (<span class="dv">2</span> <span class="sc">*</span> n)</span>
+<span id="cb3-152"><a href="#cb3-152" aria-hidden="true" tabindex="-1"></a>asymptote <span class="ot">&lt;-</span> <span class="dv">1</span> <span class="sc">-</span> delta <span class="sc">/</span> <span class="dv">2</span></span>
+<span id="cb3-153"><a href="#cb3-153" aria-hidden="true" tabindex="-1"></a>xpcur <span class="ot">&lt;-</span> <span class="fu">xp_fun</span>(ncur)</span>
+<span id="cb3-154"><a href="#cb3-154" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-155"><a href="#cb3-155" aria-hidden="true" tabindex="-1"></a>ns <span class="ot">&lt;-</span> <span class="fu">seq</span>(<span class="dv">3</span>, <span class="dv">51</span>, <span class="at">by =</span> <span class="dv">2</span>)</span>
+<span id="cb3-156"><a href="#cb3-156" aria-hidden="true" tabindex="-1"></a>curve_df <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(<span class="at">n =</span> ns, <span class="at">xp =</span> <span class="fu">xp_fun</span>(ns))</span>
+<span id="cb3-157"><a href="#cb3-157" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-158"><a href="#cb3-158" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(curve_df, <span class="fu">aes</span>(n, xp)) <span class="sc">+</span></span>
+<span id="cb3-159"><a href="#cb3-159" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_hline</span>(<span class="at">yintercept =</span> asymptote, <span class="at">linetype =</span> <span class="st">"dashed"</span>,</span>
+<span id="cb3-160"><a href="#cb3-160" aria-hidden="true" tabindex="-1"></a>             <span class="at">linewidth =</span> <span class="fl">0.5</span>, <span class="at">color =</span> <span class="st">"#8C8C8C"</span>) <span class="sc">+</span></span>
+<span id="cb3-161"><a href="#cb3-161" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_line</span>(<span class="at">linewidth =</span> <span class="fl">1.1</span>, <span class="at">color =</span> <span class="st">"#1A1A1A"</span>) <span class="sc">+</span></span>
+<span id="cb3-162"><a href="#cb3-162" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>(<span class="at">data =</span> <span class="fu">data.frame</span>(<span class="at">n =</span> ncur, <span class="at">xp =</span> xpcur),</span>
+<span id="cb3-163"><a href="#cb3-163" aria-hidden="true" tabindex="-1"></a>             <span class="at">size =</span> <span class="dv">4</span>, <span class="at">shape =</span> <span class="dv">21</span>, <span class="at">fill =</span> <span class="st">"#000000"</span>,</span>
+<span id="cb3-164"><a href="#cb3-164" aria-hidden="true" tabindex="-1"></a>             <span class="at">color =</span> <span class="st">"white"</span>, <span class="at">stroke =</span> <span class="fl">1.1</span>) <span class="sc">+</span></span>
+<span id="cb3-165"><a href="#cb3-165" aria-hidden="true" tabindex="-1"></a>  <span class="fu">annotate</span>(<span class="st">"text"</span>, <span class="at">x =</span> <span class="dv">51</span>, <span class="at">y =</span> asymptote, <span class="at">hjust =</span> <span class="dv">1</span>, <span class="at">vjust =</span> <span class="sc">-</span><span class="fl">0.8</span>,</span>
+<span id="cb3-166"><a href="#cb3-166" aria-hidden="true" tabindex="-1"></a>           <span class="at">label =</span> <span class="fu">sprintf</span>(<span class="st">"granica 1 - d/2 = %.2f"</span>, asymptote),</span>
+<span id="cb3-167"><a href="#cb3-167" aria-hidden="true" tabindex="-1"></a>           <span class="at">size =</span> <span class="fl">3.4</span>, <span class="at">color =</span> <span class="st">"#8C8C8C"</span>) <span class="sc">+</span></span>
+<span id="cb3-168"><a href="#cb3-168" aria-hidden="true" tabindex="-1"></a>  <span class="fu">annotate</span>(<span class="st">"text"</span>, <span class="at">x =</span> <span class="dv">27</span>, <span class="at">y =</span> <span class="fl">0.97</span>,</span>
+<span id="cb3-169"><a href="#cb3-169" aria-hidden="true" tabindex="-1"></a>           <span class="at">label =</span> <span class="fu">sprintf</span>(<span class="st">"x_p (n = %d) = %.3f"</span>, ncur, xpcur),</span>
+<span id="cb3-170"><a href="#cb3-170" aria-hidden="true" tabindex="-1"></a>           <span class="at">fontface =</span> <span class="st">"bold"</span>, <span class="at">size =</span> <span class="fl">4.4</span>, <span class="at">color =</span> <span class="st">"#1A1A1A"</span>) <span class="sc">+</span></span>
+<span id="cb3-171"><a href="#cb3-171" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_y_continuous</span>(<span class="at">limits =</span> <span class="fu">c</span>(<span class="dv">0</span>, <span class="dv">1</span>), <span class="at">expand =</span> <span class="fu">c</span>(<span class="dv">0</span>, <span class="dv">0</span>)) <span class="sc">+</span></span>
+<span id="cb3-172"><a href="#cb3-172" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_x_continuous</span>(<span class="at">limits =</span> <span class="fu">c</span>(<span class="dv">3</span>, <span class="dv">51</span>), <span class="at">expand =</span> <span class="fu">c</span>(<span class="dv">0</span>, <span class="dv">0</span>)) <span class="sc">+</span></span>
+<span id="cb3-173"><a href="#cb3-173" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">x =</span> <span class="st">"Broj zastupnika n"</span>, <span class="at">y =</span> <span class="st">"Udio predlagatelja x_p"</span>) <span class="sc">+</span></span>
+<span id="cb3-174"><a href="#cb3-174" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_pubfin</span>()</span>
+<span id="cb3-175"><a href="#cb3-175" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb3-176"><a href="#cb3-176" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb3-177"><a href="#cb3-177" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-178"><a href="#cb3-178" aria-hidden="true" tabindex="-1"></a><span class="fu">## Pregovaračka moć i ustavni parametri</span></span>
+<span id="cb3-179"><a href="#cb3-179" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-180"><a href="#cb3-180" aria-hidden="true" tabindex="-1"></a>Iz formule za udio predlagatelja slijede dva uvida o tome kako ustrojstvo parlamenta dijeli javni novac. Derivacije udjela po veličini tijela i po strpljivosti glase</span>
+<span id="cb3-181"><a href="#cb3-181" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-182"><a href="#cb3-182" aria-hidden="true" tabindex="-1"></a>$$\frac{\partial x_p}{\partial n} = -\frac{\delta}{2n^2} &lt; 0, \qquad \frac{\partial x_p}{\partial \delta} = -\frac{n-1}{2n} &lt; 0.$$</span>
+<span id="cb3-183"><a href="#cb3-183" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-184"><a href="#cb3-184" aria-hidden="true" tabindex="-1"></a>Obje su negativne. Moć predlagatelja opada s veličinom parlamenta. Veće tijelo doista čini svaki pojedini glas jeftinijim, jer je očekivana vrijednost nastavka $1/n$ manja, ali istodobno traži kupnju većeg broja glasova, a taj drugi učinak prevladava, pa udio predlagatelja pada prema granici od polovice proračuna. Veliko zakonodavno tijelo zato raspršuje pregovaračku moć, dok je malo koncentrira u rukama onoga tko predlaže. Moć predlagatelja opada i sa strpljivošću zastupnika, jer strpljiviji zastupnici lakše odbiju nepovoljan prijedlog i čekaju novu rundu, što predlagatelja prisiljava na izdašniju ponudu. U graničnom slučaju potpune nestrpljivosti, kada $\delta \to 0$, rezervacijska cijena pada na nulu i predlagatelj uzima cijeli proračun. Kada su zastupnici gotovo savršeno strpljivi, kada $\delta \to 1$, udio se svodi na</span>
+<span id="cb3-185"><a href="#cb3-185" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-186"><a href="#cb3-186" aria-hidden="true" tabindex="-1"></a>$$x_p = \frac{n+1}{2n},$$</span>
+<span id="cb3-187"><a href="#cb3-187" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-188"><a href="#cb3-188" aria-hidden="true" tabindex="-1"></a>tek nešto iznad polovice, dok ostatak dijeli minimalna pobjednička koalicija. Ustavna pravila o rokovima donošenja proračuna time izravno određuju raspodjelu javnog novca.</span>
+<span id="cb3-189"><a href="#cb3-189" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-190"><a href="#cb3-190" aria-hidden="true" tabindex="-1"></a>Osnovni model pretpostavlja da zastupnici djeluju kao izolirani pojedinci, no u stvarnim parlamentima organizirani su u stranke koje nameću disciplinu. Stranačku privrženost modeliramo tako da zastupnik vrednuje i udio koji ode njegovu stranačkom kolegi. U tročlanom tijelu u kojem zastupnici $1$ i $2$ dijele stranku, a $3$ je oporba, njihove su korisnosti</span>
+<span id="cb3-191"><a href="#cb3-191" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-192"><a href="#cb3-192" aria-hidden="true" tabindex="-1"></a>$$u_1 = x_1 + \alpha\, x_2, \qquad u_2 = x_2 + \alpha\, x_1,$$</span>
+<span id="cb3-193"><a href="#cb3-193" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-194"><a href="#cb3-194" aria-hidden="true" tabindex="-1"></a>gdje parametar kohezije $\alpha \in <span class="co">[</span><span class="ot">0,1</span><span class="co">]</span>$ mjeri jačinu stranačke veze. Pri $\alpha = 0$ vraćamo se u osnovni model, a pri $\alpha = 1$ kolega tuđi uspjeh vrednuje kao svoj. Kohezija mijenja ravnotežu jer predlagatelj svom stranačkom kolegi više ne mora platiti punu cijenu glasa, budući da kolega već uživa dio koristi od udjela koji predlagatelj zadržava za sebe. Stranačka kohezija tako djeluje kao množitelj pregovaračke moći vladajuće stranke, omogućujući joj da zadrži veći dio resursa unutar svoje političke obitelji na štetu oporbe <span class="co">[</span><span class="ot">@mueller1989</span><span class="co">]</span>.</span>
+<span id="cb3-195"><a href="#cb3-195" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-196"><a href="#cb3-196" aria-hidden="true" tabindex="-1"></a>Time se objašnjava i zašto pojedinačni zastupnici često dobrovoljno predaju svoje pravo predlaganja stranačkom vođi, prenoseći na njega svoju vjerojatnost izbora za predlagatelja. Takvo je delegiranje ravnotežno samo kad su ispunjena tri uvjeta. Procedura mora vođi davati znatnu prednost u izboru za predlagatelja u odnosu na običnog zastupnika. Kohezija $\alpha$ mora biti dovoljno visoka da zastupnik vjeruje kako će vođa u svom prijedlogu vrednovati i interes njegova okruga. Naposljetku, zastupnici moraju biti dovoljno nestrpljivi, jer pri niskom $\delta$ trošak blokade postaje prevelik, pa je racionalno prepustiti vođi brzo i koordinirano donošenje proračuna umjesto izlaganja riziku dugih pregovora. Gdje ti uvjeti izostaju, u mladim demokracijama ili u razdobljima slabe discipline, zastupnici zadržavaju svoja prava, a parlament obilježavaju frakcijske borbe i proračunska nestabilnost.</span>
+<span id="cb3-197"><a href="#cb3-197" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-198"><a href="#cb3-198" aria-hidden="true" tabindex="-1"></a><span class="fu">## Eksperimentalna provjera modela</span></span>
+<span id="cb3-199"><a href="#cb3-199" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-200"><a href="#cb3-200" aria-hidden="true" tabindex="-1"></a>Snaga teorije igara dijelom leži u tome što je podložna provjeri u laboratoriju. Tri desetljeća eksperimenata ispitivala su koliko stvarni ljudi u ulozi zastupnika slijede predviđanja Baron-Ferejohnova modela <span class="co">[</span><span class="ot">@baranskimorton2022</span><span class="co">]</span>. Rezultati potvrđuju strukturu, ali ne i raspodjelu. Minimalne pobjedničke koalicije doista su najčešći ishod, jer sudionici prepoznaju da uključivanje suvišnih partnera samo smanjuje vlastiti udio.</span>
+<span id="cb3-201"><a href="#cb3-201" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-202"><a href="#cb3-202" aria-hidden="true" tabindex="-1"></a>Raspodjela unutar koalicije, međutim, sustavno odstupa od predviđanja. Predlagatelji svojim partnerima nude osjetno više od rezervacijske cijene, a nerijetko i posve jednake udjele.</span>
+<span id="cb3-203"><a href="#cb3-203" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-204"><a href="#cb3-204" aria-hidden="true" tabindex="-1"></a>::: {.callout-empirija}</span>
+<span id="cb3-205"><a href="#cb3-205" aria-hidden="true" tabindex="-1"></a>U laboratorijskim pregovorima predlagatelji su izdašniji nego što model dopušta, a odstupanje se objašnjava dvama kanalima <span class="co">[</span><span class="ot">@baranskimorton2022</span><span class="co">]</span>. Prvi je averzija prema nejednakosti, sklonost da se preniske ponude vrednuju kao nepravedne, koju formalizira model u kojem korisnost pada s razlikom prema drugima <span class="co">[</span><span class="ot">@fehrschmidt1999</span><span class="co">]</span>. Drugi je strateški strah od odbijanja, jer predlagatelj zna da uvrijeđeni partner može odbiti i gurnuti pregovore u novu, skuplju rundu, pa radije nudi više. Uz to, ponašanje izrazito ovisi o povijesti, suprotno pretpostavci stacionarnosti. Zastupnik kojeg je raniji predlagatelj isključio ili ponizio niskom ponudom sustavno mu se osvećuje kad sam dođe na red, čak i kada bi mu uključivanje tog zastupnika bilo najjeftiniji put do većine.</span>
+<span id="cb3-206"><a href="#cb3-206" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb3-207"><a href="#cb3-207" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-208"><a href="#cb3-208" aria-hidden="true" tabindex="-1"></a>Mehanizam osvete i ovisnosti o povijesti stvara trajne koalicijske saveze i kaznene obrasce koji pregovore drže stabilnima, ali i mnogo manje gipkima nego što predviđa osnovni model. Usporedba teorijskih predviđanja i eksperimentalnih nalaza sažeta je u tablici.</span>
+<span id="cb3-209"><a href="#cb3-209" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-210"><a href="#cb3-210" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Dimenzija <span class="pp">|</span> Predviđanje modela <span class="pp">|</span> Eksperimentalni nalaz <span class="pp">|</span></span>
+<span id="cb3-211"><a href="#cb3-211" aria-hidden="true" tabindex="-1"></a><span class="pp">|---|---|---|</span></span>
+<span id="cb3-212"><a href="#cb3-212" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Struktura koalicije <span class="pp">|</span> isključivo minimalne pobjedničke koalicije <span class="pp">|</span> minimalne su modalne, ali se javljaju i šire <span class="pp">|</span></span>
+<span id="cb3-213"><a href="#cb3-213" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Udio predlagatelja <span class="pp">|</span> vrlo visok, predlagatelj zadržava većinu <span class="pp">|</span> umjereniji zbog averzije prema nejednakosti i straha od odbijanja <span class="pp">|</span></span>
+<span id="cb3-214"><a href="#cb3-214" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Udio partnera <span class="pp">|</span> tek rezervacijska cijena glasa <span class="pp">|</span> osjetno veći, podjela teži pravednosti <span class="pp">|</span></span>
+<span id="cb3-215"><a href="#cb3-215" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Vremenska dinamika <span class="pp">|</span> usvajanje odmah u prvoj rundi <span class="pp">|</span> uglavnom bez odgode, ali se javljaju i blokade <span class="pp">|</span></span>
+<span id="cb3-216"><a href="#cb3-216" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Uloga povijesti <span class="pp">|</span> savršena stacionarnost <span class="pp">|</span> izražena ovisnost o povijesti, osveta i trajni savezi <span class="pp">|</span></span>
+<span id="cb3-217"><a href="#cb3-217" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-218"><a href="#cb3-218" aria-hidden="true" tabindex="-1"></a>: Predviđanja modela zakonodavnog pregovaranja i eksperimentalni nalazi. Izrada autora prema @baronferejohn1989 i @baranskimorton2022. {#tbl-bf-eksperiment}</span>
+<span id="cb3-219"><a href="#cb3-219" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-220"><a href="#cb3-220" aria-hidden="true" tabindex="-1"></a><span class="fu">## Ustavni dizajn proračunskih pravila</span></span>
+<span id="cb3-221"><a href="#cb3-221" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-222"><a href="#cb3-222" aria-hidden="true" tabindex="-1"></a>Spoj teorije igara i modela pregovaranja nosi izravne posljedice za ustavni dizajn proračunskih institucija <span class="co">[</span><span class="ot">@buchanan1962</span><span class="co">]</span>. Ako politički proces prirodno teži asimetričnim minimalnim koalicijama koje iskorištavaju manjinu, zadatak ustavnog okvira jest postaviti pravila koja te poticaje obuzdavaju unaprijed, prije nego što se zna tko će biti na dobitku <span class="co">[</span><span class="ot">@brennan1985</span><span class="co">]</span>.</span>
+<span id="cb3-223"><a href="#cb3-223" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-224"><a href="#cb3-224" aria-hidden="true" tabindex="-1"></a>Prvi odgovor jest ustavno ograničenje proračunskog deficita i javnog duga. Kada je gornja granica deficita zadana brojčano i obvezujuće, sužava se prostor za kupnju glasova, jer se trošak koalicijskih dogovora više ne može tiho prebaciti na buduće generacije koje ne sjede za pregovaračkim stolom. Predlagatelj koji bi pobjedničku koaliciju gradio dijeljenjem novca mora ga sada pronaći unutar zadane granice, pa je prisiljen birati među projektima umjesto da ih sve financira zaduživanjem. Pravilo time ne mijenja motive aktera, nego im skraćuje doseg.</span>
+<span id="cb3-225"><a href="#cb3-225" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-226"><a href="#cb3-226" aria-hidden="true" tabindex="-1"></a>Drugi odgovor jest pravilo pojačane većine za proračun i porezne zakone. Ako se umjesto natpolovične traži, primjerice, dvotrećinska većina, predlagatelj više ne može sastaviti najmanju moguću koaliciju, nego mora pridobiti i dio oporbe. U Baron-Ferejohnovu okviru to izravno obara njegov udio, jer glasove mora platiti većem broju zastupnika, a manjinu je teže preglasati i iskoristiti. Cijena su viši troškovi odlučivanja i veća opasnost od blokade, jer širi krug koji mora pristati lakše zapne na neslaganju.</span>
+<span id="cb3-227"><a href="#cb3-227" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-228"><a href="#cb3-228" aria-hidden="true" tabindex="-1"></a>Oba mehanizma potvrđuju pouku koja povezuje cijeli ovaj dio knjige. Pravila igre nisu neutralna pozadina kolektivne odluke nego njezin tvorac, pa se ista skupina aktera pod različitim procedurama ponaša različito i dijeli javni novac drukčije. Kvaliteta proračunskog ishoda zato se ne popravlja zamjenom ljudi nego promišljenim izborom pravila pod kojima oni odlučuju, a taj izbor uvijek vaga između suprotstavljenih vrijednosti, učinkovitosti i zaštite manjine, brzine i šire suglasnosti. Strateška analiza ovoga poglavlja time vodi ravno u pitanja kojima se bave poglavlja koja slijede, kako se mnoštvo pojedinačnih preferencija uopće agregira u jednu društvenu odluku i koliko ta odluka ovisi o pravilima kroz koja prolazi.</span>
+<span id="cb3-229"><a href="#cb3-229" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-230"><a href="#cb3-230" aria-hidden="true" tabindex="-1"></a>::: {.sazetak-panel}</span>
+<span id="cb3-231"><a href="#cb3-231" aria-hidden="true" tabindex="-1"></a><span class="fu">## Sažetak</span></span>
+<span id="cb3-232"><a href="#cb3-232" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-233"><a href="#cb3-233" aria-hidden="true" tabindex="-1"></a>Teorija igara državu prikazuje kao arenu strateške interakcije, a ne kao jedinstvenog dobronamjernog planera. Zatvorenikova dilema pokazuje zašto dobrovoljnost ne osigurava javna dobra i opravdava prisilno oporezivanje, igra kukavice zašto krizni pregovori prijete katastrofom, a igre koordinacije zašto institucije djeluju kao fokalne točke. Baron-Ferejohnov model otkriva da pregovaračka moć predlagatelja proračuna ovisi o veličini tijela i strpljivosti zastupnika, dok stranačka kohezija pojačava ruku vladajuće stranke. Eksperimenti potvrđuju strukturu minimalnih koalicija, ali ne i nemilosrdnu raspodjelu, jer averzija prema nejednakosti i osveta ublažavaju ono što model predviđa. Pouka je da proračunska pravila i parlamentarne procedure izravno oblikuju raspodjelu javnog novca. Time strateška analiza vodi ravno u pitanje koje slijedi, kako se mnoštvo pojedinačnih preferencija uopće pretvara u jednu društvenu odluku i koliko ta odluka ovisi o pravilima kroz koja prolazi.</span>
+<span id="cb3-234"><a href="#cb3-234" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb3-235"><a href="#cb3-235" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-236"><a href="#cb3-236" aria-hidden="true" tabindex="-1"></a>::: {.callout-vjezba}</span>
+<span id="cb3-237"><a href="#cb3-237" aria-hidden="true" tabindex="-1"></a>Promotrite zakonodavno tijelo s $n = 5$ zastupnika koji dijele proračun normaliziran na jedinicu, uz faktor diskontiranja $\delta = 0{,}8$.</span>
+<span id="cb3-238"><a href="#cb3-238" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-239"><a href="#cb3-239" aria-hidden="true" tabindex="-1"></a>(a) Izračunajte rezervacijsku cijenu glasa pojedinog zastupnika, odnosno najmanji iznos kojim ga predlagatelj može pridobiti.</span>
+<span id="cb3-240"><a href="#cb3-240" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-241"><a href="#cb3-241" aria-hidden="true" tabindex="-1"></a>(b) Odredite koliko glasova uz vlastiti predlagatelj mora kupiti za većinu i koliki udio proračuna pritom zadržava za sebe.</span>
+<span id="cb3-242"><a href="#cb3-242" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-243"><a href="#cb3-243" aria-hidden="true" tabindex="-1"></a>(c) Ponovite izračun za $n = 9$ i objasnite zašto se udio predlagatelja smanjio, premda je cijena svakog pojedinog glasa niža.</span>
+<span id="cb3-244"><a href="#cb3-244" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-245"><a href="#cb3-245" aria-hidden="true" tabindex="-1"></a>(d) Pretpostavite da ustav umjesto natpolovične traži dvotrećinsku većinu. Objasnite, bez potpunog izvoda, u kojem smjeru se mijenja udio predlagatelja i zašto to štiti manjinu uz veći rizik blokade.</span>
+<span id="cb3-246"><a href="#cb3-246" aria-hidden="true" tabindex="-1"></a>:::</span>
+</code></pre></div><button title="Copy to Clipboard" class="code-copy-button" data-in-quarto-modal=""><i class="bi"></i></button></div>
+</div></div></div></div></div>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+      &nbsp;
+    </div>   
+    <div class="nav-footer-center">
+<p>© 2026 Deskar-Škrbić, Palić, Šikić | Javne politike u Hrvatskoj</p>
+</div>
+    <div class="nav-footer-right">
+      &nbsp;
+    </div>
+  </div>
+</footer>
+
+
+
+
+<script src="../site_libs/quarto-html/zenscroll-min.js"></script>
+</body></html>

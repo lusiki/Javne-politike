@@ -45,6 +45,14 @@ Porezi su najvažniji i najvidljiviji instrument države. Oni su osnovni izvor p
 
 U najširem smislu, porezi imaju tri velike funkcije. **Fiskalna funkcija** podrazumijeva da porezi služe za financiranje javnih dobara i usluga, poput obrazovanja, zdravstva, obrane, policije, sudstva, infrastrukture i socijalne zaštite. **Redistribucijska funkcija** omogućuje da se porezima utječe na raspodjelu dohotka i bogatstva, primjerice progresivnim oporezivanjem dohotka. **Alokacijska ili korektivna funkcija** dopušta da se porezima ispravljaju tržišni neuspjesi, primjerice oporezivanjem aktivnosti koje stvaraju negativne eksternalije [@musgrave1989; @stiglitz2015; @gruber2019].
 
+Korektivni se porez može i precizno odrediti. Kada neka aktivnost stvara negativnu eksternaliju, privatni akteri biraju količinu na kojoj se izjednačava njihova granična privatna korist $MPB$ s graničnim privatnim troškom $MPC$, ali pritom zanemaruju granični vanjski trošak $MEC$ koji nameću drugima. Pigou je pokazao da se ta razlika može internalizirati porezom postavljenim na razinu graničnog vanjskog troška u društvenom optimumu,
+
+$$
+t^{*} = MEC(Q^{*}), \qquad \text{gdje } Q^{*} \text{ rješava } MPB(Q^{*}) = MPC(Q^{*}) + MEC(Q^{*}),
+$$
+
+pa porez podiže privatni trošak za točno onaj iznos koji nedostaje da bi se odluka pojedinca poklopila s društveno poželjnom [@pigou1920]. Ključno je da se porez vezuje uz granični vanjski trošak procijenjen u optimumu $Q^{*}$, a ne u zatečenoj tržišnoj ravnoteži, jer upravo ta razina vraća proizvodnju na društveno najbolju količinu.
+
 Porezi mogu biti i instrument poticanja određenih aktivnosti. Država može koristiti porezne olakšice za ulaganja, istraživanje i razvoj, zapošljavanje određenih skupina ili energetsku obnovu. Međutim, takve olakšice treba koristiti oprezno. One mogu potaknuti poželjno ponašanje, ali mogu i smanjiti transparentnost poreznog sustava, stvoriti povlastice za određene skupine i otvoriti prostor za lobiranje. Detaljnije porezne mehanizme i teoriju oporezivanja razrađujemo u zasebnom poglavlju o porezima.
 
 ## Javna potrošnja
@@ -72,6 +80,14 @@ Europska unija je na tržišnu moć digitalnih platformi odgovorila dvama propis
 :::
 
 Taj se trošak može i nacrtati. Graf koji slijedi prikazuje tržište na kojem mjera, primjerice porez ili ograničenje, razdvaja cijenu koju kupci plaćaju od one koju proizvođači primaju, smanjuje razmijenjenu količinu ispod konkurentske razine i stvara trokut mrtvog tereta. Graf je interaktivan, pa klizač mijenja jačinu mjere.
+
+Površina tog trokuta ima jednostavan izraz. Visina mu je klin $t$ koji razdvaja cijenu kupca od cijene proizvođača, a baza pad količine $Q^{*} - Q_{t}$ ispod konkurentske razine, pa je gubitak vrijednosti polovica njihova umnoška,
+
+$$
+DWL = \tfrac{1}{2}\,t\,(Q^{*} - Q_{t}) = \tfrac{1}{2}\,\frac{\varepsilon_{S}\,\varepsilon_{D}}{\varepsilon_{S}+\varepsilon_{D}}\,\frac{Q^{*}}{P^{*}}\,t^{2},
+$$
+
+gdje su $\varepsilon_{S}$ i $\varepsilon_{D}$ elastičnosti ponude i potražnje [@harberger1954]. Prvi oblik se čita izravno s grafa kao površina osjenčanog trokuta, a drugi pokazuje zašto mrtvi teret raste otprilike s kvadratom jačine mjere, jer udvostručenje klina $t$ otprilike učetverostručuje gubitak. Isti izraz govori i da je trošak veći ondje gdje su ponuda i potražnja elastičnije, jer tada ista mjera obara količinu jače.
 
 ::: {.content-visible when-format="html"}
 ```{ojs}
@@ -238,6 +254,22 @@ Klimatska politika tako može uključivati porez na ugljik, subvencije za obnovl
 Zato je važno razumjeti da instrumenti nisu izolirani i da međusobno djeluju. Porez može biti učinkovitiji ako ga prati informiranje. Regulacija može biti prihvatljivija ako je kombinirana sa subvencijama za prilagodbu. Dobar dizajn javne politike zato ne znači samo odabrati jedan instrument, nego oblikovati koherentan paket mjera koji odgovara problemu, fiskalno je održiv, administrativno provediv, politički legitiman i otvoren evaluaciji.
 
 Izbor instrumenta nije neutralan analitički postupak nego trgovina između nekoliko stalno suprotstavljenih svojstava. Tržišni instrumenti (porezi, naknade, kvote koje se mogu prodavati) ostvaruju cilj uz najmanji ekonomski trošak jer dopuštaju akterima da sami pronađu najjeftiniji put usklađivanja, ali rijetko djeluju trenutno i često su politički vidljiviji od regulacije iste težine. Regulacija ostvaruje brzu i izvjesnu reakciju jer ograničava sam prostor izbora, ali nameće isti zahtjev različitim akterima čije su krivulje troška različite, što ga čini ekonomski skupljim za isti efekt. Subvencije politički su najlakše prihvatljive jer izravno nude korist, ali su fiskalno najsumnjivije i najpodložnije zarobljavanju.
+
+Prednost cjenovnih instrumenata može se i precizno iskazati. Kada svi akteri plaćaju istu cijenu $\tau$ po jedinici, primjerice porez na emisiju ili cijenu prodave dozvole, svaki će smanjivati svoju aktivnost sve dok mu granični trošak smanjenja $MAC_{i}$ ne dosegne tu cijenu. Time se granični troškovi smanjenja izjednačavaju kroz sve aktere, a upravo to je uvjet uz koji se zadani ukupni cilj $\bar{A}$ postiže uz najmanji zbroj troškova,
+
+$$
+MAC_{i}(a_{i}) = \tau \quad \forall i \;\;\Longrightarrow\;\; \min \sum_{i} C_{i}(a_{i}) \;\text{ uz } \sum_{i} a_{i} = \bar{A},
+$$
+
+pa porez i tržište prodavih dozvola dovode do istog, troškovno najjeftinijeg rasporeda napora [@baumol1988]. Regulatorni standard koji svima nameće isto smanjenje to svojstvo nema, jer prisiljava i one čije je smanjenje skupo da učine jednako kao i oni kojima je jeftino, pa isti ukupni cilj postiže uz veći zbroj troškova.
+
+Taj račun pretpostavlja da država pouzdano poznaje troškove. Kada to nije slučaj, izbor između cijene i količine ovisi o tome koja se krivulja jače savija. Weitzman je pokazao da uz neizvjesnost o troškovima prednost cjenovnog instrumenta nad količinskim ovisi o odnosu drugih derivacija krivulje troška smanjenja $C$ i krivulje koristi $B$,
+
+$$
+\Delta = \frac{\sigma^{2}}{2\,(C'')^{2}}\,\bigl(C'' + B''\bigr), \qquad B'' \le 0 \le C'',
+$$
+
+gdje je $\sigma^{2}$ varijanca pogreške u procjeni troška [@weitzman1974]. Uz dogovor da je krivulja koristi padajuća ($B'' \le 0$), a krivulja troška rastuća ($C'' \ge 0$), cijena nadmašuje količinu kada je $\Delta > 0$, to jest kada je $C'' + B'' > 0$, odnosno kada granični trošak raste strmije nego što granična korist pada. Intuicija je u tome da kod strme krivulje troška kriva količinska meta nosi velik trošak promašaja, pa je sigurnije fiksirati cijenu, dok kod strme krivulje koristi pogrešna cijena vodi opasno daleko od cilja, pa je sigurnije fiksirati količinu. Tako se izbor između poreza i kvote, koji je inače pitanje nabrajanja prednosti i mana, pretvara u testabilan kriterij o nagibima dviju krivulja.
 
 Iz toga slijedi pravilo dizajna koje nadilazi pojedinačni izbor. Instrument koji minimizira ekonomski trošak često maksimizira politički, i obratno. Najbolji odabir rijetko je čisti optimum jedne dimenzije, nego najbolja izvediva ravnoteža unutar konkretnog institucionalnog konteksta.
 

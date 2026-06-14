@@ -30,7 +30,7 @@ Christopher Hood opisao je NPM kao novi stil upravljanja javnim sektorom koji na
 
 Novi javni menadžment nije značio potpuno povlačenje države, nego promjenu načina na koji država djeluje. Umjesto da država sve sama proizvodi i izravno pruža, sve se više otvaralo pitanje može li neke usluge prepustiti tržištu, privatnom sektoru, neprofitnim organizacijama ili autonomnim javnim agencijama. Osborne i Gaebler taj su pristup saželi poznatom metaforom prema kojoj država treba više „upravljati kormilom", a manje „veslati" [@osborne1992].
 
-Teorijski temelji NPM-a snažno su povezani s neoliberalizmom, teorijom javnog izbora i principal–agent teorijom. Teorija javnog izbora dovela je u pitanje idealiziranu sliku države kao neutralnog i dobronamjernog aktera [@buchanan1962; @mueller1989]. Posebno je važan doprinos Williama Niskanena, koji je tvrdio da birokrati imaju poticaj povećavati veličinu svojih proračuna i nadležnosti jer im to donosi veći utjecaj, sigurnost i status [@niskanen1971]. NPM je zato pokušao u javni sektor uvesti poticaje koji bi djelovali slično tržišnim poticajima u privatnom sektoru.
+Teorijski temelji NPM-a snažno su povezani s neoliberalizmom, teorijom javnog izbora i principal–agent teorijom. Teorija javnog izbora dovela je u pitanje idealiziranu sliku države kao neutralnog i dobronamjernog aktera [@buchanan1962; @mueller1989]. Posebno je važan doprinos Williama Niskanena, koji je tvrdio da birokrati imaju poticaj povećavati veličinu svojih proračuna i nadležnosti jer im to donosi veći utjecaj, sigurnost i status [@niskanen1971]. Formalni model koji pokazuje kako birokrat koji maksimizira veličinu usluge proizvodi previše, do točke u kojoj se ukupna korist izjednačuje s ukupnim troškom, razrađen je u poglavlju o birokraciji. NPM je zato pokušao u javni sektor uvesti poticaje koji bi djelovali slično tržišnim poticajima u privatnom sektoru.
 
 Prve zemlje koje su intenzivno provodile reforme NPM-a bile su Ujedinjeno Kraljevstvo, Novi Zeland, Australija, Kanada i Sjedinjene Američke Države. U Ujedinjenom Kraljevstvu reforme se povezuju s vladom Margaret Thatcher, koja je provodila privatizaciju, deregulaciju i uvođenje tržišnih mehanizama u javne usluge. Novi Zeland često se navodi kao najradikalniji primjer jer je javni sektor restrukturiran prema gotovo korporativnim principima.
 
@@ -41,6 +41,14 @@ Najopipljivija dimenzija NPM-a bila je **marketizacija** javnog sektora, odnosno
 Pretpostavka o većoj učinkovitosti privatne organizacije ne počiva na čaroliji privatnog vlasništva, nego na tri jasna mikroekonomska mehanizma. Prvi je *ostatni dohodak* (*residual claimancy*). Vlasnik privatne tvrtke izravno snosi posljedice loših odluka i prima koristi dobrih, dok rukovoditelj u javnoj agenciji rijetko može osobno zadržati uštedu i rijetko gubi posao zbog prekoračenja troškova. Drugi mehanizam je *prijetnja izlaskom* (*exit*). Privatni dobavljač koji izgubi kupce propada, dok javnu službu klijent najčešće ne može zamijeniti, što slabi njezin poticaj na pažnju prema korisniku. Treći mehanizam je *cjenovni informacijski signal*. Konkurentska tržišta neprekidno objavljuju što košta proizvodnja, što je mjera koja u javnom sektoru zahtijeva odvojen i često nepouzdan računovodstveni napor [@hood1991].
 
 Reforme NPM-a pokušale su u javni sektor unijeti ekvivalente sve tri sile. Ostatni dohodak preslikan je kroz bonuse vezane uz pokazatelje učinka, prijetnja izlaskom kroz natječaje za pravo pružanja usluge, a cjenovni signal kroz interne tržišne mehanizme i analize vrijednosti za novac. Stvarna učinkovitost reforme ovisila je o tome koliko su vjerodostojno preslikane sve tri sile, a ne samo o nominalnoj prisutnosti tržišnog rječnika.
+
+Kolika treba biti jačina takvog bonusa nije proizvoljno pitanje, nego ima točan odgovor u teoriji poticaja [@holmstrom1979]. Ako principal agentu ponudi linearnu nagradu vezanu uz mjerljiv ishod $y$ koji ovisi o uloženom naporu $e$ i o slučajnom šumu $\varepsilon$, optimalna jačina poticaja iznosi
+
+$$
+w(y) = \alpha + \beta\, y, \qquad y = e + \varepsilon,\ \ \varepsilon \sim \mathcal{N}(0,\sigma^2)\\[4pt] \beta^{*} = \frac{1}{1 + r\,\sigma^{2}\,C''(e)}
+$$
+
+gdje je $r$ averzija agenta prema riziku, $\sigma^2$ varijanca šuma u mjeri, a $C''(e)$ konveksnost troška napora. Intuicija je izravna jer optimalni $\beta^{*}$ pada kada mjera postane bučnija ($\sigma^2$ veći), kada je agent skloniji izbjegavanju rizika ($r$ veći) i kada je napor sve skuplji. Granični slučaj $\beta=1$ opisuje privatnog vlasnika koji zadržava cijeli ostatni dohodak, dok $\beta=0$ opisuje klasičnog birokrata na fiksnoj plaći, pa formula objašnjava i zašto se tržišni poticaji u javnom sektoru, gdje je ishod bučan i teško mjerljiv, namjerno drže slabima.
 
 Najradikalniji oblik bila je **privatizacija**, prijenos vlasništva nad poduzećima ili imovinom iz javnog u privatni sektor. U mnogim zemljama privatizirane su telekomunikacije, zračne kompanije, željeznice, komunalne i energetska poduzeća. Argument je bio da privatni vlasnici imaju snažnije poticaje za smanjenje troškova i povećanje produktivnosti. Međutim, privatizacija nije uvijek davala očekivane rezultate, osobito u sektorima prirodnih monopola, gdje konkurencija ne nastaje automatski, pa privatizacija bez kvalitetne regulacije može dovesti do privatnog monopola umjesto učinkovitog tržišta.
 
@@ -74,6 +82,14 @@ Uz njega u javni sektor ulaze strateško planiranje, pokazatelji uspješnosti, v
 **Vrijednost za novac** (*value for money*) je NPM kriterij koji traži da se javna sredstva alociraju na način koji osigurava najveći mogući ishod po utrošenom euru, kombinirajući ekonomičnost (niski input-trošak), učinkovitost (dobar omjer output/input) i efektivnost (postizanje ciljnog ishoda).
 :::
 
+Ta tri elementa nisu nezavisne ocjene, nego se množe u jedan lanac od potrošenog eura do ostvarenog ishoda [@pollitt2017],
+
+$$
+\text{Učinkovitost} = \frac{\text{Output}}{\text{Input}}, \qquad \text{Efektivnost} = \frac{\text{Ishod}}{\text{Output}}\\[4pt] \text{Vrijednost za novac} = \frac{\text{Ishod}}{\text{Trošak}} = \underbrace{\frac{1}{c_{\text{in}}}}_{\text{ekonomičnost}} \cdot \underbrace{\frac{\text{Output}}{\text{Input}}}_{\text{učinkovitost}} \cdot \underbrace{\frac{\text{Ishod}}{\text{Output}}}_{\text{efektivnost}}
+$$
+
+gdje je $c_{\text{in}}$ jedinična cijena inputa, pa je trošak jednak $c_{\text{in}}$ puta količina inputa. Razklad je definicijski, ali pedagoški koristan jer pokazuje da vrijednost za novac pada ako zakaže bilo koji od triju faktora. Jeftin input i visok output ne jamče vrijednost ako taj output ne stvara stvarni ishod, kao kad bolnica jeftino obavi mnogo zahvata koji ne poboljšavaju zdravlje pacijenata.
+
 Međutim, upravljanje prema rezultatima donosi i **problem mjerenja**. U privatnom sektoru profit je jednostavan, iako ne savršen, pokazatelj uspjeha. U javnom sektoru takav jedinstveni pokazatelj ne postoji. Škola nije uspješna samo ako ima visoke rezultate na testovima, nego i ako razvija kritičko mišljenje i građansku odgovornost. Bolnica nije uspješna samo ako obavi velik broj zahvata, nego i ako osigurava kvalitetnu i pravednu skrb. Zato je jedan od glavnih izazova NPM-a bio kako mjeriti ono što je važno, a ne samo ono što je lako mjerljivo.
 
 ::: {#def-goodhartov-zakon}
@@ -81,6 +97,14 @@ Međutim, upravljanje prema rezultatima donosi i **problem mjerenja**. U privatn
 :::
 
 Charles Goodhart izvorno je tu pravilnost formulirao u kontekstu monetarne politike, a Hood ju je primijenio na javni menadžment [@hood1991]. Njezina se snaga vidi tek u primjerima. Bolnica čije se osoblje ocjenjuje po dužini liste čekanja može listu skratiti odbijanjem kompliciranijih slučajeva ili njihovim premještanjem u drugu kategoriju, a ne stvarnim povećanjem propusnosti. Škola koju ocjenjuju isključivo prema državnoj maturi može sužavanjem nastavnog plana na predmete koji se testiraju podići rezultat i istodobno smanjiti opseg obrazovanja. Policijska postaja koja se ocjenjuje po broju razriješenih predmeta može razriješene predmete preinačiti u manje težak oblik kaznenog djela kako bi zadržala stopu.
+
+Goodhartov zakon nije samo iskustveno zapažanje, nego ima egzaktan mikroekonomski temelj u modelu višestrukih zadaća [@holmstrommilgrom1991]. Ako agent obavlja dvije zadaće, mjerljivu i nemjerljivu, a principal nagrađuje svaku zasebnim poticajem, optimalni napor na jednoj zadaći reagira na poticaj vezan uz drugu prema
+
+$$
+w = \alpha + \beta_1 y_1 + \beta_2 y_2, \qquad y_j = e_j + \varepsilon_j\\[4pt] \frac{\partial e_1^{*}}{\partial \beta_2} < 0 \quad \text{kada su zadaće supstituti u trošku napora}\;\bigl(C_{12}>0\bigr)
+$$
+
+gdje $C_{12}>0$ znači da je agentu sve teže ulagati napor u prvu zadaću što ga više ulaže u drugu. Negativni predznak govori da pojačavanje poticaja na mjerljivoj dimenziji ($y_2$, broj zahvata ili rezultat na maturi) povlači napor s nemjerljive ($y_1$, kvaliteta skrbi ili kritičko mišljenje), što je upravo mehanizam koji se vidi u bolnici, školi i policijskoj postaji. Pouka je oštra jer kad je jedna dimenzija teško mjerljiva, optimalno je sniziti poticaj $\beta_2$ na onu mjerljivu, ponekad sve do nule, čime model formalno opravdava oprez prema snažnim jednodimenzionalnim poticajima u javnom sektoru.
 
 Reakcija na taj problem nije odustajanje od mjerenja, nego višestrukost mjera koje akteri ne mogu istodobno zadovoljiti samo igrom s brojkama. Kombinacija pokazatelja procesa i ishoda, redovita revizija po slučajnom uzorku i izvori informacija izvan same institucije, primjerice ankete korisnika ili neovisne kliničke procjene, smanjuju prostor za prilagodbu mjeri umjesto cilju. Bez te višeslojnosti, „upravljanje prema rezultatima" lako se izrodi u upravljanje prema pokazateljima.
 
@@ -99,6 +123,14 @@ Logika razdvajanja koja je vodila NPM nigdje nije išla dalje nego u **agencifik
 ::: {#def-agencifikacija}
 **Agencifikacija** je NPM reforma kojom se odvojilo oblikovanje politike (u ministarstvima) od njezine provedbe (u autonomnim ili poluautonomnim agencijama), s ciljem veće stručnosti i fleksibilnosti, ali uz rizik oslabljene koordinacije i demokratskog nadzora.
 :::
+
+Odnos između ministarstva i agencije udžbenički je primjer principal-agent ugovaranja, pa se napetost koju agencifikacija stvara može i formalno zapisati [@laffonttirole1993]. Principal bira ugovor koji maksimizira očekivani neto ishod, ali pod dvama ograničenjima
+
+$$
+\max_{\alpha,\beta}\ \mathbb{E}\bigl[y - w(y)\bigr] \quad \text{uz}\\[4pt] (\text{IR})\ \ \mathbb{E}[u(w)] - C(e) \ge \bar{u}, \qquad (\text{IC})\ \ e \in \arg\max_{e'} \ \mathbb{E}[u(w)] - C(e')
+$$
+
+gdje uvjet sudjelovanja (IR) jamči da agent uopće prihvati posao jer mu očekivana korist nadmašuje vanjsku alternativu $\bar{u}$, a uvjet poticajne usklađenosti (IC) jamči da agent sam odabere napor koji principal želi. Kad ishod nije savršeno mjerljiv, IC se može zadovoljiti jedino izlaganjem agenta riziku kroz veći $\beta$, a to izlaganje je trošak koji principal mora platiti kroz IR. Upravo tu napetost demistificira pojam „ugovora o učinku" jer pokazuje zašto savršena kontrola provedbe nije besplatna i zašto agencija s autonomijom uvijek zadržava dio diskrecije.
 
 Agencije mogu biti stručnije, fleksibilnije i manje izložene dnevnoj politici, što u područjima poput regulacije tržišta ili nadzora financijskog sustava često ima smisla. No agencifikacija je otvorila i problem odgovornosti. Ako ministarstvo nije izravno nadležno za provedbu, a agencija ima autonomiju, tko je politički odgovoran kada sustav zakaže? Ako agencija ostvaruje formalne pokazatelje, ali ne ispunjava širi javni interes, tko to može korigirati? Autonomne organizacije mogu povećati učinkovitost, ali istodobno otežati koordinaciju i demokratski nadzor.
 

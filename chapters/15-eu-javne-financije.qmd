@@ -29,7 +29,13 @@ U takvom sustavu fiskalna politika raspolaže s tri osnovna instrumenta. Javni p
 
 Ta se tri instrumenta u ekonomici javnog sektora povezuju s trima funkcijama države koje je najpoznatije sistematizirao Richard Musgrave, alokacijskom, distribucijskom i stabilizacijskom [@musgrave1959; @musgrave1989]. U nacionalnoj državi te se tri funkcije obavljaju unutar istog fiskalnog sustava. Ista država prikuplja poreze, odlučuje o rashodima, zadužuje se, provodi socijalnu politiku i koristi fiskalnu politiku za stabilizaciju gospodarstva.
 
-U decentraliziranim državama dio ovlasti može pripadati regijama ili lokalnim jedinicama, ali i tada postoji jasna fiskalna arhitektura u kojoj se zna tko ima porezne ovlasti, tko troši, tko se zadužuje i tko politički odgovara za rezultat. Time se bavi teorija fiskalnog federalizma, koja proučava raspodjelu fiskalnih ovlasti između razina vlasti [@oates1972; @oates1999]. Kod Europske unije ta je slika mnogo složenija.
+U decentraliziranim državama dio ovlasti može pripadati regijama ili lokalnim jedinicama, ali i tada postoji jasna fiskalna arhitektura u kojoj se zna tko ima porezne ovlasti, tko troši, tko se zadužuje i tko politički odgovara za rezultat. Time se bavi teorija fiskalnog federalizma, koja proučava raspodjelu fiskalnih ovlasti između razina vlasti [@oates1972; @oates1999]. Jedan klasičan uvid pokazuje da građani ne discipliniraju lokalne vlasti samo glasovanjem, nego i samim odabirom mjesta u kojem žive. Tieboutov model opisuje pojedinca $i$ koji bira jurisdikciju koja mu nudi najpoželjniju kombinaciju javnog dobra i poreza,
+
+$$
+i \;\text{bira jurisdikciju}\; j^{*} = \arg\max_{j}\; U_i\bigl(g_j,\, t_j\bigr) \quad\text{uz}\quad \textstyle\sum_{k \in j} t_k = c(g_j),
+$$
+
+pri čemu zbroj poreza svih rezidenata jurisdikcije pokriva trošak ponuđene razine dobra [@tiebout1956]. Intuicija je da se ljudi različitih sklonosti razvrstavaju među jurisdikcijama poput kupaca koji biraju proizvod, pa konkurencija među jedinicama disciplinira ponudu javnih dobara. Taj mehanizam pretpostavlja visoku pokretljivost, što je važno za razumijevanje Unije, jer slaba mobilnost rada među državama članicama oslabljuje upravo tu tržišnu prilagodbu i pojačava potrebu za zajedničkim pravilima. Kod Europske unije ta je slika mnogo složenija.
 
 ## Što je drukčije u Europskoj uniji?
 
@@ -101,6 +107,14 @@ Posljednjih je godina rasprava o fiskalnoj uniji dobila novi naglasak. Nakon eur
 
 Obrana je danas najvidljiviji primjer jer sigurnost jedne članice ne koristi samo njoj. Stabilnost istočne granice, obrambena industrijska baza, zajedničke nabave i strateška infrastruktura imaju šire europske učinke, pa ako svaka država financira samo ono što vidi kao izravni nacionalni interes, ukupno ulaganje može biti prenisko. To je klasičan problem eksternalija jer dio koristi odlazi drugima, a pojedina država nema poticaj financirati društveno optimalnu razinu dobra.
 
+Zašto decentralizirano financiranje daje premalo zajedničkog dobra najjasnije pokazuje Samuelsonov uvjet optimalne razine čistoga javnog dobra. Učinkovita razina postiže se kada se zbroj graničnih stopa supstitucije svih korisnika izjednači s graničnom stopom transformacije,
+
+$$
+\sum_{i=1}^{n} MRS_i \;=\; MRT \qquad \text{nasuprot decentraliziranom} \quad MRS_i = MRT,
+$$
+
+dok pri decentraliziranom financiranju svaka država izjednačava samo vlastiti $MRS_i$ s $MRT$ [@samuelson1954]. Budući da je korist od dobra zajednička, granične koristi treba zbrajati po svim državama koje je uživaju, pa je društveno optimalna razina ona pri kojoj je njihov zbroj jednak graničnom trošku. Kada svaka država gleda samo svoju graničnu korist, zbroj koristi nadmašuje ono što je pojedinačno isplativo financirati, pa ukupno ulaganje u obranu, energetsku ili klimatsku politiku ostaje ispod razine koja bi bila optimalna za Uniju u cjelini.
+
 Slična logika vrijedi za energetsku sigurnost, gdje interkonektori, mreže, skladišta i zajednička nabava energenata koriste više država, te za klimatsku politiku, gdje smanjenje emisija u jednoj državi koristi svima, dok se troškovi tranzicije pojavljuju lokalno u pojedinim industrijama i regijama. Istraživanje, razvoj i digitalna infrastruktura također imaju snažnu europsku dimenziju jer se znanje prelijeva preko granica, a kibernetička sigurnost, umjetna inteligencija i superračunala traže razinu ulaganja koju manje države teško osiguravaju same.
 
 Europska javna dobra mijenjaju način razmišljanja o EU proračunu. Rasprava o proračunu često se vodila kroz logiku neto pozicije, kroz pitanje koliko neka država uplaćuje, a koliko dobiva natrag. Takva je logika prirodna u pregovorima, ali ograničena, jer ako Unija financira dobro koje koristi svima, korist se ne mjeri samo izravnim povratom novca u nacionalni proračun.
@@ -109,10 +123,22 @@ Država može imati koristi od sigurnosti, stabilnosti, energetske povezanosti i
 
 Argument europskih javnih dobara ne uklanja političke dileme. Ako Unija financira više zajedničkih prioriteta, mora se odlučiti kako će prikupiti novac, hoće li članice povećati doprinose, hoće li se uvesti novi vlastiti prihodi ili koristiti zajedničko zaduživanje, tko će odlučivati o prioritetima i kako spriječiti da se svaka nacionalno poželjna potrošnja proglasi europskim javnim dobrom. Pojam zato treba shvatiti ozbiljno, ali oprezno, jer daje snažan ekonomski argument za dublju integraciju ondje gdje postoje prekogranične koristi i podinvestiranje, no ne znači da sve treba financirati na europskoj razini.
 
-Teorija fiskalnog federalizma upućuje na to da se politike trebaju financirati na onoj razini na kojoj se koristi i troškovi najbolje preklapaju, pa lokalne usluge ostaju lokalne ili nacionalne, a zajedničko financiranje opravdavaju politike s jasnim europskim učincima [@oates1972; @oates1999].
+Teorija fiskalnog federalizma upućuje na to da se politike trebaju financirati na onoj razini na kojoj se koristi i troškovi najbolje preklapaju, pa lokalne usluge ostaju lokalne ili nacionalne, a zajedničko financiranje opravdavaju politike s jasnim europskim učincima [@oates1972; @oates1999]. Oatesov teorem decentralizacije to pravilo iskazuje preko usporedbe blagostanja pri decentraliziranoj i centraliziranoj ponudi dobra,
+
+$$
+W_{\text{dec}} \;\geq\; W_{\text{cen}} \quad\text{ako}\quad \text{nema prelijevanja koristi i preferencije se razlikuju među jedinicama}.
+$$
+
+Riječ je o dovoljnom uvjetu, pa ako koristi ne prelaze granice jedinice, a sklonosti se među jedinicama razlikuju, decentralizirana ponuda nije lošija od jednoobrazne centralizirane, jer svaka jedinica može razinu dobra prilagoditi vlastitim preferencijama. Čim se ti uvjeti izokrenu, kao kod obrane ili klime gdje koristi snažno prelijevaju preko granica, prednost prelazi na višu razinu, što je upravo logika kojom europska javna dobra opravdavaju zajedničko financiranje.
 
 ::: {.callout-empirija}
-Sjedinjene Američke Države pokazuju koliko federalni proračun može ublažiti regionalne šokove. Empirijska procjena za američku saveznu razinu pokazuje da se znatan dio pada dohotka u pojedinoj saveznoj državi neutralizira kroz niže savezne poreze i veće transfere, a usporedna istraživanja dijeljenja rizika nalaze da tržišta kapitala, krediti i fiskalni transferi zajedno apsorbiraju veći dio šokova u SAD-u nego što ih je apsorbiralo rano europodručje [@sachssala1991; @sorensenyosha1998]. Upravo ta razlika u sposobnosti apsorpcije šokova razdvaja klasičnu fiskalnu federaciju od europske monetarne unije.
+Sjedinjene Američke Države pokazuju koliko federalni proračun može ublažiti regionalne šokove. Snaga te apsorpcije mjeri se koeficijentom fiskalne stabilizacije, definiranim kao udio pada dohotka koji savezna razina apsorbira porezima i transferima,
+
+$$
+\beta \;=\; 1 - \frac{\partial\, (Y_i - T_i + Z_i)}{\partial\, Y_i}, \qquad 0 \le \beta \le 1.
+$$
+
+Izraz polazi od raspoloživog dohotka regije, koji je bruto dohodak $Y_i$ umanjen za poreze $T_i$ i uvećan za transfere $Z_i$, pa je $\beta$ jednak jedinici umanjenoj za osjetljivost raspoloživog dohotka na regionalni šok. Što više federalni porezi padaju, a transferi rastu kada dohodak neke savezne države oslabi, to je veći $\beta$. Empirijska procjena za američku saveznu razinu pokazuje da se znatan dio pada dohotka u pojedinoj saveznoj državi neutralizira kroz niže savezne poreze i veće transfere, reda veličine $\beta$ od $0{,}2$ do $0{,}3$, a usporedna istraživanja dijeljenja rizika nalaze da tržišta kapitala, krediti i fiskalni transferi zajedno apsorbiraju veći dio šokova u SAD-u nego što ih je apsorbiralo rano europodručje, kojemu je upravo fiskalni $\beta$ bio znatno niži [@sachssala1991; @sorensenyosha1998]. Upravo ta razlika u sposobnosti apsorpcije šokova razdvaja klasičnu fiskalnu federaciju od europske monetarne unije.
 :::
 
 ## Kako Unija koordinira nacionalne politike?
@@ -161,7 +187,13 @@ Polazište pravila nalazi se u stvaranju Ekonomske i monetarne unije. Uvođenje 
 
 Pravila su uvedena kako bi se smanjio rizik da pojedine države iskoriste prednosti zajedničke valute, a ne vode dovoljno odgovornu politiku, jer ako investitori vjeruju da iza članica stoji širi europski okvir, one se mogu jeftinije zaduživati, što stvara i pogrešne poticaje povezane s moralnim hazardom [@wyplosz2013]. Pravila su zato mehanizam odgovornosti, kompromis između nacionalne demokratske odgovornosti za proračun i zajedničke stabilnosti koja traži da fiskalna politika jedne države ne ugrozi druge i euro.
 
-Razvoj pravila može se podijeliti u nekoliko faza, od kojih svaka odražava jednu krizu ili pokušaj ispravljanja slabosti prethodnog sustava. Maastrichtski ugovor iz 1992. postavio je ulazne kriterije za monetarnu uniju, među njima deficit do 3 % BDP-a i javni dug do 60 % BDP-a, koji su trebali pokazati da država ima dovoljno stabilne financije. Budući da kriteriji prije ulaska ne jamče disciplinu nakon ulaska, 1997. dogovoren je Pakt o stabilnosti i rastu, koji je trebao produljiti disciplinu i kroz preventivni dio poticati stvaranje fiskalnog prostora u dobrim vremenima te kroz korektivni dio, osobito postupak prekomjernog deficita, djelovati kada država premaši referentne vrijednosti [@europeancommission2024fiscal].
+Razvoj pravila može se podijeliti u nekoliko faza, od kojih svaka odražava jednu krizu ili pokušaj ispravljanja slabosti prethodnog sustava. Maastrichtski ugovor iz 1992. postavio je ulazne kriterije za monetarnu uniju, među njima deficit do 3 % BDP-a i javni dug do 60 % BDP-a, koji su trebali pokazati da država ima dovoljno stabilne financije. Te se naizgled proizvoljne granice mogu izvesti iz jednostavne aritmetike duga. Promjena omjera javnog duga prema BDP-u i njegova ravnotežna razina opisuju se relacijama,
+
+$$
+\Delta b_t \;=\; \underbrace{(r_t - g_t)\,b_{t-1}}_{\text{efekt kamata i rasta}} \;-\; pb_t, \qquad b^{*} = \frac{d}{g},
+$$
+
+pri čemu je $b$ omjer duga prema BDP-u, $r$ kamatna stopa, $g$ stopa rasta, $pb$ primarni saldo proračuna, a $d$ ukupni deficit. Treba razlikovati ta dva pojma salda, jer $pb$ u prvoj relaciji je primarni saldo bez kamata, dok $d$ u izrazu za ravnotežu obuhvaća i kamate. Prva relacija pokazuje takozvani efekt grude snijega, jer kada je kamatna stopa veća od stope rasta, dug raste sam od sebe i traži primarni suficit da bi se zaustavio, što objašnjava zašto je dug opasniji u zemlji sa 140 % nego sa 40 % BDP-a i čini srž rizično utemeljenog pristupa novog okvira iz 2024. Druga relacija pokazuje da se uz trajni deficit $d$ omjer duga stabilizira na razini $b^{*}=d/g$, pa uz deficit od $3{,}0$ % i nominalni rast od $5{,}0$ % dug konvergira upravo prema $60$ %, što je izvorna maastrichtska kalibracija. Budući da kriteriji prije ulaska ne jamče disciplinu nakon ulaska, 1997. dogovoren je Pakt o stabilnosti i rastu, koji je trebao produljiti disciplinu i kroz preventivni dio poticati stvaranje fiskalnog prostora u dobrim vremenima te kroz korektivni dio, osobito postupak prekomjernog deficita, djelovati kada država premaši referentne vrijednosti [@europeancommission2024fiscal].
 
 Prva velika kriza Pakta dogodila se početkom dvijetisućitih, kada su velika gospodarstva imala problema s poštovanjem pravila, što je otvorilo pitanje vjerodostojnosti, pa je reforma iz 2005. uvela više fleksibilnosti kroz strukturni saldo, gospodarski ciklus i specifične okolnosti, čime je okvir postao sofisticiraniji, ali i složeniji.
 

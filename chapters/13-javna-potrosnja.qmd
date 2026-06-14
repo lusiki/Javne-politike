@@ -189,13 +189,25 @@ Nakon Drugog svjetskog rata slijedi razdoblje bez presedana u povijesti javne po
 
 Najprije, demografske promjene među najvažnijim su dugoročnim pokretačima. Kako se očekivano trajanje života povećava, a fertilitet smanjuje, raste udio starijeg stanovništva, što izravno povećava pritisak na mirovinske sustave i zdravstvenu potrošnju.
 
-Tome se pridružio politički pomak. Širenje demokracije i općeg prava glasa promijenilo je način određivanja javne potrošnje jer u demokratskim sustavima političari imaju snažne poticaje odgovarati na preferencije birača, što često vodi povećanju potrošnje, osobito u redistribuciji i socijalnim politikama [@alesina2011].
+Tome se pridružio politički pomak. Širenje demokracije i općeg prava glasa promijenilo je način određivanja javne potrošnje jer u demokratskim sustavima političari imaju snažne poticaje odgovarati na preferencije birača, što često vodi povećanju potrošnje, osobito u redistribuciji i socijalnim politikama [@alesina2011]. Taj se kanal može i operacionalizirati. Ako proračun u demokraciji u prosjeku slijedi želje medijanskog glasača, njegova se tražena razina javnog dobra $G^{*}$ dade zapisati log-linearnom potražnjom [@borcherdingdeacon1972],
+
+$$
+G^{*}=\alpha\,Y_{m}^{\;\eta}\,P^{\;\varepsilon}\,N^{\;\gamma}
+$$
+
+gdje je $Y_{m}$ dohodak medijanskog glasača, $P$ relativna cijena javne usluge, a $N$ veličina populacije koja je dijeli. Eksponenti su elastičnosti, pa $\eta$ mjeri koliko tražena potrošnja reagira na dohodak, $\varepsilon$ na cijenu (očekivano $\varepsilon<0$), a $\gamma$ na broj korisnika. Kada je dohodovna elastičnost veća od jedan ($\eta>1$), javna usluga ponaša se kao luksuzno dobro čija tražnja raste brže od dohotka, što je upravo mehanizam zbog kojega rast prosperiteta podiže udio države. Tako rast medijanskog dohotka od $10\,\%$ uz $\eta=1{,}3$ povlači približno $13\,\%$ veću traženu potrošnju.
 
 Djeluje i sam ekonomski rast. Kako društva postaju bogatija, mijenjaju se preferencije građana te raste potražnja za kvalitetom života, obrazovanjem, zdravstvom i zaštitom okoliša, a mnoga od tih dobara imaju obilježja luksuznih jer im potražnja raste brže od dohotka.
 
 Naposljetku, tehnološki napredak i globalizacija traže kontinuirana ulaganja u obrazovanje, istraživanje i digitalnu infrastrukturu, dok globalizacija povećava međuzavisnost ekonomija i izloženost vanjskim šokovima. Kako ističe Vito Tanzi, ona istodobno ograničava fiskalni prostor, ali i povećava potrebu za javnom potrošnjom u područjima poput regulacije, obrazovanja i socijalne zaštite [@tanzi2011].
 
-Svi navedeni pokretači djeluju na strani potražnje, no dio dugoročnog rasta dolazi s troškovne strane i dugo je ostajao izvan vidokruga. William Baumol pokazao je da se radno intenzivne djelatnosti u kojima čovjek ostaje glavni input, poput obrazovanja, zdravstva i skrbi, opiru rastu produktivnosti, dok plaće u njima ipak moraju pratiti zarade u visokoproduktivnim sektorima kako bi zadržale radnike [@baumol1967]. Zbog toga relativna cijena sata nastave ili njege sustavno raste, pa udio tih usluga u BDP-u može rasti i kad se njihov opseg uopće ne mijenja. Ta **Baumolova bolest troškova** (*cost disease*) objašnjava zašto pritisak na javne proračune ne popušta ni ondje gdje je potražnja stabilna, a uštede na osoblju teško izvedive bez gubitka kvalitete usluge.
+Svi navedeni pokretači djeluju na strani potražnje, no dio dugoročnog rasta dolazi s troškovne strane i dugo je ostajao izvan vidokruga. William Baumol pokazao je da se radno intenzivne djelatnosti u kojima čovjek ostaje glavni input, poput obrazovanja, zdravstva i skrbi, opiru rastu produktivnosti, dok plaće u njima ipak moraju pratiti zarade u visokoproduktivnim sektorima kako bi zadržale radnike [@baumol1967]. Mehanizam je čitljiv iz jediničnog troška usluge. Stopa rasta relativne cijene jednaka je razlici između stope rasta plaća i stope rasta produktivnosti u uslužnom sektoru, pa uz stagnirajuću produktivnost usluge ($\dot{a}_{s}=0$) i plaće koje prate produktivni sektor vrijedi
+
+$$
+\frac{\dot{p}_{s}}{p_{s}}=\frac{\dot{w}}{w}-\frac{\dot{a}_{s}}{a_{s}}\;\xrightarrow{\;\dot{a}_{s}=0,\;\dot{w}/w=\dot{a}_{p}/a_{p}\;}\;\frac{\dot{p}_{s}}{p_{s}}=\frac{\dot{a}_{p}}{a_{p}}
+$$
+
+gdje točka iznad simbola označava stopu rasta, $w$ je nadnica, a $a_{s}$ i $a_{p}$ produktivnost u uslužnom odnosno produktivnom sektoru. Cijena usluge tako raste po stopi rasta produktivnosti u ostatku gospodarstva, premda u samoj usluzi produktivnost stoji. Zbog toga relativna cijena sata nastave ili njege sustavno raste, pa udio tih usluga u BDP-u može rasti i kad se njihov opseg uopće ne mijenja. Ta **Baumolova bolest troškova** (*cost disease*) objašnjava zašto pritisak na javne proračune ne popušta ni ondje gdje je potražnja stabilna, a uštede na osoblju teško izvedive bez gubitka kvalitete usluge.
 
 Osim same razine, kroz vrijeme se značajno mijenjala i struktura javne potrošnje. Dok je u ranijim razdobljima dominirala potrošnja na obranu, javni red i osnovnu administraciju, u drugoj polovici 20. stoljeća dolazi do duboke transformacije prema socijalnoj državi. Sve veći udio počinju zauzimati transferi koji uključuju mirovine, socijalne naknade, zdravstvene izdatke i različite oblike socijalne zaštite, što je jasno sistematizirao Richard Musgrave kroz tri temeljne funkcije javnih financija [@musgrave1959]. Povijesni razvoj javne potrošnje jasno pokazuje da njezina razina i struktura nisu rezultat univerzalnog ekonomskog zakona, već kombinacije ekonomskih okolnosti, političkih odluka i društvenih preferencija [@tanzi2011].
 
@@ -206,6 +218,14 @@ Suvremena literatura javnih financija jasno pokazuje da javna potrošnja može g
 Prvo, javna potrošnja igra ključnu ulogu u smanjenju rizika za pojedince. U tržišnim ekonomijama pojedinci su izloženi brojnim neizvjesnostima koje uključuju zdravstvene rizike, gubitak zaposlenja i dugovječnost. Privatna tržišta osiguranja često ne mogu u potpunosti pokriti te rizike zbog asimetričnih informacija, moralnog hazarda i nepovoljnog izbora. Javna potrošnja, kroz sustave zdravstva, mirovina i socijalne zaštite, omogućuje kolektivno dijeljenje tih rizika.
 
 Drugo, javna potrošnja ima snažan utjecaj na akumulaciju ljudskog kapitala. Ulaganja u obrazovanje ne povećavaju samo individualne vještine, nego generiraju i pozitivne eksternalije. U okviru endogenih modela rasta javna potrošnja u infrastrukturu, obrazovanje i istraživanje postaje sastavni dio proizvodne funkcije [@barro1990].
+
+Pitanje koliko je javnog dobra optimalno ponuditi ima i precizan normativni odgovor. Za razliku od privatnog dobra, kod kojega svaki pojedinac usklađuje vlastitu graničnu stopu supstitucije s graničnom stopom transformacije, javno dobro svi konzumiraju istovremeno, pa se njihove granične spremnosti na plaćanje zbrajaju. Optimalna razina javnog dobra $G$ tako zadovoljava Samuelsonov uvjet [@samuelson1954],
+
+$$
+\sum_{i=1}^{n}\mathrm{MRS}^{i}_{G,x}=\mathrm{MRT}_{G,x}
+$$
+
+prema kojem je zbroj graničnih stopa supstitucije svih $n$ korisnika između javnog dobra i privatnog dobra $x$ jednak graničnoj stopi transformacije u proizvodnji. Intuitivno, dodatna jedinica javnog dobra opravdana je sve dok ukupna vrijednost koju joj pripisuju svi korisnici zajedno premašuje trošak njezine proizvodnje. Ovaj uvjet daje mjeru optimuma naspram koje se očitavaju i tržišni i državni neuspjesi, jer decentralizirano tržište zbog problema besplatnog korisnika ne uspijeva ponuditi razinu koja zadovoljava jednakost, a državna ponuda može odstupiti u oba smjera.
 
 Treće, javna potrošnja doprinosi socijalnoj koheziji i političkoj stabilnosti, jer dijeljenje rizika i pristup zajedničkim uslugama smanjuju osjećaj isključenosti i ublažavaju napetosti koje bi inače pritiskale politički sustav. Četvrto, djeluje kao instrument makroekonomske stabilizacije, osobito kroz automatske stabilizatore koji u recesiji sami povećavaju isplate i smanjuju porezno opterećenje bez potrebe za novom odlukom. Peto, ima ulogu u koordinaciji dugoročnog razvoja, osobito u područjima poput zelene tranzicije i digitalizacije, gdje pojedinačni ulagači sami ne mogu uskladiti velike i dugoročne investicije s neizvjesnim povratom.
 
@@ -221,7 +241,13 @@ Ključni uvid moderne ekonomije javnih financija jest da pitanje javne potrošnj
 
 Među koristima koje smo upravo nabrojili stabilizacija agregatne potražnje zaslužuje zasebnu razradu jer ne djeluje kroz pojedini program, nego kroz vremenski raspored ukupne potrošnje kroz ciklus. Keynesovu makroekonomsku ulogu države, koju smo dotaknuli uz Veliku depresiju, ovdje razlažemo do njezina mehanizma. Temeljna ideja njegova pristupa jest da su recesije prvenstveno rezultat nedostatne agregatne potražnje. Kada privatni sektor smanjuje potrošnju i investicije, država može intervenirati povećanjem javne potrošnje i, ako je potrebno, stvaranjem fiskalnog deficita [@keynes1936].
 
-Središnji mehanizam putem kojeg javna potrošnja djeluje jest **fiskalni multiplikator**. Povećanje državne potrošnje ne djeluje samo jednokratno, već pokreće lančanu reakciju u kojoj javna potrošnja postaje dohodak, taj dohodak postaje potrošnja, a potrošnja stvara novi dohodak. Snaga multiplikatora ovisi o sklonosti štednji, udjelu uvoza, visini poreza i vremenskoj dinamici. Empirijska istraživanja pokazuju da multiplikator nije konstantan jer je u recesijama često veći zbog neiskorištenih kapaciteta, dok je u ekspanzijama manji [@blanchard2013; @barro1990].
+Središnji mehanizam putem kojeg javna potrošnja djeluje jest **fiskalni multiplikator**. Povećanje državne potrošnje ne djeluje samo jednokratno, već pokreće lančanu reakciju u kojoj javna potrošnja postaje dohodak, taj dohodak postaje potrošnja, a potrošnja stvara novi dohodak. Snaga te reakcije sažeta je u izrazu za multiplikator otvorenoga gospodarstva s porezom na dohodak [@keynes1936],
+
+$$
+k=\frac{\Delta Y}{\Delta G}=\frac{1}{1-c\,(1-t)+m}
+$$
+
+gdje je $c$ granična sklonost potrošnji, $t$ porezna stopa, a $m$ granična sklonost uvozu. Iz nazivnika se izravno čita zašto je multiplikator veći što je veća sklonost potrošnji, jer se veći dio svakog dohotka vraća u domaću potražnju, a manji što su veći porezi i uvoz, jer oni odvode dio dohotka iz lanca u proračun odnosno u inozemstvo. U zatvorenom gospodarstvu bez poreza izraz se svodi na poznati oblik $1/(1-c)$. Empirijska istraživanja pokazuju da multiplikator nije konstantan jer je u recesijama često veći zbog neiskorištenih kapaciteta, dok je u ekspanzijama manji [@blanchard2013; @barro1990].
 
 Mehanizam pojačanog multiplikatora u recesijama ima jasno mikroekonomsko opravdanje. U razdoblju kada se značajan dio kapaciteta ne koristi, dodatna javna potrošnja ne istiskuje privatnu nego mobilizira neiskorištene resurse, pa svaki euro javnog troška povlači blizak privatni odgovor. U razdoblju pune zaposlenosti, isti euro mora se nečemu suprotstaviti i istiskuje privatnu potrošnju ili investicije, što znatno snižava multiplikator. Empirijska procjena Blancharda i Leigha pokazala je da je upravo to potcjenjivanje multiplikatora u dubokoj recesiji jedan od najvažnijih izvora predviđanja koja su podcijenila trošak fiskalne konsolidacije nakon 2010. godine [@blanchard2013].
 
@@ -243,6 +269,14 @@ Akumulirani dug pritom nije samo zbroj prošlih deficita. Kada je kamatna stopa 
 **Javni dug** je zbroj svih nepodmirenih obveza države prema vjerovnicima, najčešće izražen kao udio u BDP-u; njegova je dinamika određena primarnim saldom, kamatnom stopom na dug i stopom nominalnog rasta, pa kada je kamatna stopa viša od stope rasta (r > g), omjer duga raste i bez primarnog deficita.
 :::
 
+Tu dinamiku zgodno je zapisati jednadžbom kretanja omjera duga. Promjena udjela duga u BDP-u od jedne godine do druge jednaka je razlici između kamatno-rastovnog člana i primarnog salda,
+
+$$
+\Delta b_{t}=\underbrace{(r-g)}_{\text{efekt snježne grude}}\,b_{t-1}-p_{t}
+$$
+
+gdje je $b$ omjer duga prema BDP-u, $r$ kamatna stopa na dug, $g$ stopa nominalnog rasta, a $p$ primarni saldo (suficit pozitivnog predznaka). Prvi član opisuje efekt snježne grude, jer kada je $r>g$ već postojeći dug sam sebe uvećava brže nego što ga rast gospodarstva razrjeđuje, pa omjer raste i uz potpuno uravnotežen primarni proračun. Tek primarni suficit ($p>0$) taj pritisak ublažava. Obrnuto, kada je $g>r$, rast nadmašuje kamatu i omjer se duga smanjuje sam od sebe, što čini opipljivim zašto je odnos kamatne stope i stope rasta presudan za održivost duga.
+
 Dodatni problem proizlazi iz vremenskih kašnjenja u fiskalnoj politici. Između identifikacije problema, donošenja odluke i stvarne provedbe može proći značajno vrijeme, pa fiskalni poticaj može djelovati tek kada se gospodarstvo već oporavlja [@blanchard2017]. Zato javna potrošnja može stabilizirati gospodarstvo samo ako je pravodobna, ciljana, privremena i simetrična. Bez tih uvjeta, stabilizacijska funkcija može se pretvoriti u izvor makroekonomskih neravnoteža i rasta duga.
 
 ## Razlike u javnoj potrošnji u svijetu
@@ -253,7 +287,13 @@ Prema usporednim podacima, u razvijenim gospodarstvima javna potrošnja često p
 
 Važno je naglasiti da niža proračunska potrošnja ne znači nužno i manju stvarnu ulogu države. U mnogim zemljama država djeluje putem kvazi-fiskalnih aktivnosti koje uključuju regulaciju, kontrolu cijena, usmjeravanje kreditnih tokova i implicitna jamstva javnih poduzeća, a koje formalno nisu dio proračuna, ali imaju učinke slične porezima i rashodima [@tanzi2011]. Razvijene zemlje razlikuju se i po modelima socijalne države. Skandinavski model karakterizira visoka razina javne potrošnje i univerzalni pristup, kontinentalni se model temelji na socijalnom osiguranju povezanom s tržištem rada, a anglosaksonski model karakterizira niža razina javne potrošnje i veći naglasak na ciljanim programima [@alesina2011].
 
-Empirijska istraživanja upozoravaju da veličina javne potrošnje sama po sebi slabo predviđa ekonomske rezultate, pa presudnu ulogu imaju kvaliteta institucija, učinkovitost javne uprave i dizajn politika, a ne sama veličina rashoda [@blanchard2017; @tanzi2000].
+Na razinu potrošnje ne utječe samo koliko je novca u sustavu, nego i kojim kanalom dolazi. Kada viša razina vlasti niže razini dodijeli paušalni transfer $Z$, taj se novac u praksi pretvara u javnu potrošnju mnogo izdašnije nego ekvivalentni rast dohotka samih građana, premda model medijanskog glasača predviđa da bi učinci trebali biti slični,
+
+$$
+\frac{\partial G}{\partial Z}\;\gg\;\frac{\partial G}{\partial Y_{m}}\qquad(\text{premda teorija predviđa }\;\tfrac{\partial G}{\partial Z}\approx\tfrac{\partial G}{\partial Y_{m}})
+$$
+
+Ta se anomalija naziva flypaper efektom, jer se novac sklon zalijepiti tamo gdje padne, u proračunu razine koja ga je primila, umjesto da se kroz niže poreze vrati građanima i prepusti njihovu izboru [@hinesthaler1995]. Empirijska istraživanja upozoravaju da veličina javne potrošnje sama po sebi slabo predviđa ekonomske rezultate, pa presudnu ulogu imaju kvaliteta institucija, učinkovitost javne uprave i dizajn politika, a ne sama veličina rashoda [@blanchard2017; @tanzi2000].
 
 ::: {.callout-praksa}
 Usporedba pokazuje da veličina javne potrošnje sama po sebi govori malo o njezinim učincima. Neke zemlje s velikim javnim sektorom, poput skandinavskih, ostvaruju visok rast, kvalitetne usluge i nisku nejednakost, dok druge sa sličnim udjelom potrošnje u BDP-u imaju slabije rezultate jer veći dio sredstava odlazi na subvencije, kamate na dug ili neučinkovite programe umjesto na obrazovanje, infrastrukturu i ciljanu socijalnu zaštitu. Ista razina potrošnje tako može značiti ulaganje u buduću produktivnost ili njezino trošenje na održavanje postojećih povlastica. Zato je za ocjenu javne potrošnje važnije analizirati njezinu strukturu i kvalitetu provedbe nego puki udio u BDP-u.[^wp-ch13]

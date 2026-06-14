@@ -63,9 +63,23 @@ Međutim, preraspodjela nije besplatna. Arthur Okun je taj problem slikovito opi
 
 Okunova metafora pokazuje temeljnu napetost između efikasnosti i pravednosti. Društvo može biti spremno prihvatiti određeni gubitak učinkovitosti kako bi postiglo pravedniju raspodjelu. No ako su gubici preveliki, preraspodjela može smanjiti ukupno blagostanje. Zato kvalitetna redistribucijska politika mora paziti na dizajn poreza i transfera. Porezni sustav treba biti dovoljno progresivan da pridonosi pravednosti, ali ne toliko distorzivan da snažno smanjuje rad, ulaganja, poduzetništvo ili poreznu disciplinu.
 
-U ekstremnom obliku, utilitaristička logika može voditi prema zaključku da bi potpuna jednakost dohotka maksimizirala društveno blagostanje. No tu se pojavljuje problem poticaja. Ako dodatni rad, znanje, inovacija, štednja ili poduzetnički rizik ne donose nikakvu dodatnu nagradu, ljudi mogu manje raditi, manje ulagati, manje inovirati i manje preuzimati rizik. Potpuna uravnilovka može povećati formalnu jednakost, ali smanjiti proizvodnju, produktivnost i dugoročni rast. Zato suvremeni pristupi rijetko zagovaraju potpunu jednakost dohotka. Umjesto toga, traže se oblici redistribucije koji ublažavaju siromaštvo i nejednakost, ali zadržavaju poticaje za rad, obrazovanje, inovacije i poduzetništvo [@mirrlees1971].
+Tu se intuicija može i formalno izvesti. Pretpostavimo da svi pojedinci dijele istu rastuću i strogo konkavnu funkciju korisnosti $U(y)$ te da država raspoređuje zadani ukupni dohodak $Y$ tako da maksimizira zbroj korisnosti,
 
-Tu se postavlja i pitanje kako bi optimalan porez zapravo trebao izgledati. Budući da država ne može oporezivati sposobnost, koju ne vidi, nego samo ostvareni dohodak, svaka porezna stopa istodobno preraspodjeljuje i obeshrabruje napor, pa se optimalna stopa na svakoj razini dohotka određuje vaganjem koristi za pravednost nasuprot gubitku koji nastaje jer porez smanjuje rad i prijavljeni dohodak [@mirrlees1971]. Saez je pokazao da se ta optimalna stopa može izraziti pomoću tek nekoliko mjerljivih veličina, ponajprije elastičnosti oporezivog dohotka, oblika raspodjele dohotka i društvene sklonosti preraspodjeli [@saez2001]. Iz toga slijedi i protuintuitivan nalaz da granične stope mogu biti visoke na oba kraja raspodjele, pri dnu gdje se ukidaju naknade i pri samom vrhu gdje je malo poreznih obveznika pa je porezna baza koju mjera izobličuje uska.
+$$\max_{\{y_i\}}\ W = \sum_{i=1}^{n} U(y_i) \quad\text{uz}\quad \sum_{i=1}^{n} y_i = Y.$$
+
+Uvjet prvoga reda izjednačava graničnu korisnost dohotka svih pojedinaca s istim množiteljem $\lambda$,
+
+$$U'(y_i) = \lambda \quad \text{za svaki } i,$$
+
+a kako je funkcija $U$ ista za sve i strogo konkavna, jedina raspodjela koja taj uvjet zadovoljava jest ona u kojoj svi imaju jednak dohodak [@pigou1920]. Čisti utilitaristički račun tako, uz pretpostavku jednakih sklonosti, u svom krajnjem obliku vodi do potpune jednakosti dohotka.
+
+No taj zaključak počiva na pretpostavci koja u stvarnosti ne vrijedi, naime da raspodjela ne dira u veličinu onoga što se dijeli. Čim se uvede problem poticaja, slika se mijenja. Ako dodatni rad, znanje, inovacija, štednja ili poduzetnički rizik ne donose nikakvu dodatnu nagradu, ljudi mogu manje raditi, manje ulagati, manje inovirati i manje preuzimati rizik. Potpuna uravnilovka može povećati formalnu jednakost, ali smanjiti proizvodnju, produktivnost i dugoročni rast. Zato suvremeni pristupi rijetko zagovaraju potpunu jednakost dohotka. Umjesto toga, traže se oblici redistribucije koji ublažavaju siromaštvo i nejednakost, ali zadržavaju poticaje za rad, obrazovanje, inovacije i poduzetništvo [@mirrlees1971].
+
+Tu se postavlja i pitanje kako bi optimalan porez zapravo trebao izgledati. Budući da država ne može oporezivati sposobnost, koju ne vidi, nego samo ostvareni dohodak, svaka porezna stopa istodobno preraspodjeljuje i obeshrabruje napor, pa se optimalna stopa na svakoj razini dohotka određuje vaganjem koristi za pravednost nasuprot gubitku koji nastaje jer porez smanjuje rad i prijavljeni dohodak [@mirrlees1971]. Saez je pokazao da se ta optimalna stopa može izraziti pomoću tek nekoliko mjerljivih veličina, ponajprije elastičnosti oporezivog dohotka, oblika raspodjele dohotka i društvene sklonosti preraspodjeli [@saez2001]. Za najviše dohotke ta se ovisnost može sažeti u kratku formulu. Označi li $e$ elastičnost oporezivog dohotka, $a$ parametar koji mjeri debljinu gornjeg repa raspodjele, a $g$ društvenu vrijednost dodatnog eura u rukama najbogatijih, optimalna gornja granična stopa iznosi
+
+$$\tau^{*} = \frac{1 - g}{1 - g + a\,e}.$$
+
+Stopa je to niža što je elastičnost $e$ veća, jer porez tada jače izobličuje ponašanje, a to viša što je $g$ manji, to jest što društvo manje vrednuje dodatni dohodak na samom vrhu. Kad se vrhu ne pridaje gotovo nikakva društvena težina ($g \to 0$), izraz se svodi na stopu koja maksimizira porezni prihod, $\tau^{*} = 1/(1 + a\,e)$ [@saez2001]. Iz toga slijedi i protuintuitivan nalaz da granične stope mogu biti visoke na oba kraja raspodjele, pri dnu gdje se ukidaju naknade i pri samom vrhu gdje je malo poreznih obveznika pa je porezna baza koju mjera izobličuje uska.
 
 ## Rawlsov pristup pravednosti
 
@@ -78,6 +92,12 @@ Utilitaristički zbroj korisnosti šuti o tome kako je blagostanje raspoređeno,
 Iz toga proizlazi Rawlsovo **maximin pravilo**, prema kojem društvene institucije treba oblikovati tako da maksimiziraju položaj onih koji su u najlošijem položaju. Rawls ne traži potpunu jednakost. Nejednakosti mogu biti prihvatljive ako koriste i najlošije stojećima. Primjerice, veće nagrade za liječnike, inženjere, znanstvenike ili poduzetnike mogu biti opravdane ako potiču veću produktivnost, inovacije i rast koji u konačnici poboljšavaju položaj najsiromašnijih. No nejednakosti koje samo povećavaju privilegije već bogatih, a ne poboljšavaju položaj najugroženijih, teže je opravdati.
 
 Rawlsov pristup važan je jer pomiče raspravu s ukupnog zbroja korisnosti prema zaštiti najranjivijih i jednakosti osnovnih prilika. On daje snažno opravdanje za socijalnu zaštitu, javno obrazovanje, dostupno zdravstvo, minimalne dohotke i politike koje sprječavaju da se životne šanse pojedinca previše odrede okolnostima rođenja.
+
+Utilitaristički i Rawlsov pristup nisu posve odvojeni svjetovi, nego dva kraja istoga raspona. Obje se logike mogu obuhvatiti jednom funkcijom društvenog blagostanja s parametrom $\varepsilon \ge 0$ koji mjeri koliko se društvo protivi nejednakosti,
+
+$$W_\varepsilon = \begin{cases} \dfrac{1}{1-\varepsilon}\displaystyle\sum_{i=1}^{n} y_i^{\,1-\varepsilon}, & \varepsilon \neq 1,\\[2ex] \displaystyle\sum_{i=1}^{n} \ln y_i, & \varepsilon = 1. \end{cases}$$
+
+Kad je $\varepsilon = 0$, funkcija je puki zbroj dohodaka i društvo je ravnodušno prema raspodjeli, što je utilitaristički krajnji slučaj. Kako $\varepsilon$ raste, sve veću težinu nose niski dohodci, a u graničnom slučaju $\varepsilon \to \infty$ blagostanje ovisi samo o najsiromašnijem članu, što je upravo Rawlsovo maximin pravilo [@atkinson1970]. Spor između dvaju pristupa tako se svodi na pitanje o jednom broju, o tome koliko zapravo iznosi parametar $\varepsilon$.
 
 ## Robni egalitarizam
 
@@ -133,9 +153,33 @@ Da bi se takve razlike uopće mogle usporediti, nejednakost treba svesti na mjer
 **Lorenzova krivulja** grafički prikazuje raspodjelu dohotka tako da vodoravna os nosi kumulativni udio stanovništva (poredanog od najsiromašnijeg prema najbogatijem), a okomita os kumulativni udio dohotka, pri čemu savršena jednakost odgovara dijagonali. **Ginijev koeficijent** mjeri omjer površine između dijagonale i Lorenzove krivulje naspram ukupne površine ispod dijagonale i kreće se od 0 (potpuna jednakost) do 1 (potpuna nejednakost).
 :::
 
+Tu se definiciju može i precizno zapisati. Ako $L(p)$ označava Lorenzovu krivulju, to jest udio ukupnog dohotka koji pripada najsiromašnijem udjelu $p$ stanovništva, Ginijev je koeficijent dvostruka površina između dijagonale jednakosti i te krivulje,
+
+$$G = 1 - 2\int_0^1 L(p)\,\mathrm{d}p = \frac{2\,\operatorname{cov}\big(y,\,F(y)\big)}{\bar{y}},$$
+
+gdje je $F(y)$ mjesto pojedinca u poretku od najsiromašnijeg prema najbogatijem, a $\bar{y}$ prosječni dohodak. Prvi je oblik upravo onaj koji interaktivni graf niže računa numeričkom integracijom, dok drugi pokazuje da nejednakost raste kako se viši dohodci sve sustavnije poklapaju s višim mjestima u poretku [@atkinson2015].
+
 Ginijev koeficijent tako sažima cijelu raspodjelu u jedan broj, čime učinak preraspodjele postaje izravno usporediv među zemljama.
 
 Taj jedan broj ipak ima slijepu točku. Ginijev je koeficijent najosjetljiviji na promjene oko sredine raspodjele, a razmjerno slabo registrira ono što se događa u samom vrhu, pa dvije zemlje s vrlo različitom koncentracijom dohotka u gornjem postotku mogu dijeliti gotovo isti Gini. Upravo zato se novija literatura o nejednakosti sve više oslanja na **gornje dohodovne udjele**, to jest na udio ukupnog dohotka koji pripada najbogatijem jednom ili desetom postotku, rekonstruiran iz poreznih podataka koji vrh hvataju bolje od anketa na kojima Gini obično počiva [@piketty2014; @atkinson2015]. Korisno je razlikovati i dohodovnu od potrošne nejednakosti, jer kućanstva štednjom i zaduživanjem izglađuju potrošnju, pa ona obično pokazuje manju nejednakost od dohotka u jednom presjeku.
+
+Isti parametar averzije prema nejednakosti omogućuje i mjeru koja, za razliku od Ginijeva koeficijenta, u sebi nosi eksplicitan vrijednosni sud.
+
+::: {#def-atkinsonov-indeks}
+**Atkinsonov indeks** $A_\varepsilon$ mjeri udio ukupnog dohotka kojega bi se društvo bilo spremno odreći kad bi preostali, jednako raspodijeljeni dohodak donosio jednako blagostanje kao postojeća nejednaka raspodjela. Za parametar averzije prema nejednakosti $\varepsilon \neq 1$ glasi
+
+$$A_\varepsilon = 1 - \frac{1}{\bar{y}}\left(\frac{1}{n}\sum_{i=1}^{n} y_i^{\,1-\varepsilon}\right)^{\frac{1}{1-\varepsilon}},$$
+
+pri čemu veći $\varepsilon$ znači da društvo nejednakosti pridaje veću težinu [@atkinson1970].
+:::
+
+Ako Atkinsonov indeks uz odabrani $\varepsilon$ iznosi 0,3, to znači da bi se društvo bilo spremno odreći 30 % dohotka u zamjenu za potpuno jednaku raspodjelu preostatka. Time mjera nejednakosti prestaje biti samo opisna i postaje povezana s tim koliko nam nejednakost smeta.
+
+Treća uobičajena mjera, **Theilov indeks**, dolazi iz teorije informacije i ima svojstvo koje Gini nema. Uz prosječni dohodak $\bar{y}$ glasi
+
+$$T = \frac{1}{n}\sum_{i=1}^{n} \frac{y_i}{\bar{y}} \ln\frac{y_i}{\bar{y}} = T_{\text{unutar}} + T_{\text{između}},$$
+
+i može se egzaktno rastaviti na dio koji potječe od nejednakosti unutar skupina i dio koji potječe od razlika među skupinama [@theil1967]. Upravo zato je koristan kad se pita koliko ukupne nejednakosti dolazi od razlika između regija ili razina obrazovanja, a koliko od razlika unutar njih.
 
 ::: {.callout-empirija}
 Učinak poreza i transfera na nejednakost moguće je izravno izmjeriti. Podaci OECD-a pokazuju da porezi i socijalni transferi u prosjeku smanjuju Ginijev koeficijent razvijenih zemalja za otprilike trećinu, s približno 0,47 prije državne intervencije na oko 0,31 nakon nje [@oecd_idd]. Razmjer toga smanjenja jako varira, od vrlo snažnog u nordijskim i kontinentalnim europskim sustavima do osjetno slabijeg u dijelu anglosaksonskih zemalja. Veći dio toga učinka u većini zemalja dolazi od transfera, osobito mirovina i naknada, a ne od same progresivnosti poreza na dohodak. To je važno jer pokazuje da se nejednakost može jednako snažno smanjiti rashodovnom stranom proračuna kao i poreznom. Usporedbe također pokazuju da zemlje sa sličnom razinom dohotka po stanovniku mogu imati vrlo različite razine nejednakosti, što znači da konačna raspodjela nije zadana tržištem, nego je u velikoj mjeri rezultat politike.

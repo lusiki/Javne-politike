@@ -22,6 +22,7 @@ chapters/*_files/
 # pdf/ except the actual PDF.
 pdf/*
 !pdf/Javne-politike.pdf
+!pdf/Prirucnik.pdf
 
 ### Temp / scratch ###
 tmp/

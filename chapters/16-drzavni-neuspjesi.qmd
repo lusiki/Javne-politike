@@ -29,6 +29,14 @@ U klasičnoj analizi javnih politika država se najčešće promatra kao odgovor
 
 Međutim, činjenica da tržište može zakazati ne znači da će država automatski uspjeti. To je središnja pouka literature o neuspjesima države. Već je Wolf [-@wolf1979] upozorio da se javna intervencija ne smije opravdavati samo postojanjem tržišnog neuspjeha, nego se mora analizirati i mogućnost da sama država proizvede neučinkovite ili neželjene ishode. U dobroj analizi javnih politika ne uspoređuje se savršeno tržište sa savršenom državom, nego dva nesavršena mehanizma društvene koordinacije, tržište i država.
 
+Tu se simetriju može i zapisati. Intervencija je opravdana tek kada uklonjeni dio tržišnog gubitka nadmaši zbroj troškova koje sama remedija proizvodi [@wolf1979], pa neto promjena blagostanja iznosi
+
+$$
+\Delta W \;=\; \underbrace{B_{\text{rem}}}_{\text{uklonjeni tržišni gubitak}} \;-\; \underbrace{\big(A + D_{g} + C\big)}_{\text{trošak državnog neuspjeha}} \;>\; 0
+$$
+
+gdje je $B_{\text{rem}}$ dio tržišnog gubitka koji intervencija ukloni, a $A$, $D_{g}$ i $C$ redom administrativni trošak, distorzija koju mjera unese i trošak usklađivanja na strani onih koje regulira. Izraz pokazuje da postojanje tržišnog gubitka samo otvara mogućnost intervencije, ali je ne opravdava, jer opravdanje nastaje tek kada je razlika pozitivna. Upravo zato se uspoređuju dva nesavršena mehanizma, a ne savršena država s nesavršenim tržištem.
+
 Wolfov je doprinos, međutim, dublji od te simetrije. On je pokazao da netržišno djelovanje ima vlastite, sustavne izvore neuspjeha, jednako predvidljive kao i tržišni. Budući da javni programi nemaju ni cijenu ni donju crtu dobiti koja bi ih disciplinirala, njihovu ponudu i potražnju oblikuju politički, a ne tržišni signali, iz čega izrastaju četiri ponavljajuća izvora neuspjeha. Prvi su unutarnji ciljevi organizacije (*internalities*), poput rasta proračuna, broja zaposlenih ili pukog ispunjenja zadanih pokazatelja, koji zamjenjuju vanjsko mjerilo uspješnosti kojeg nema. Drugi su rastući i suvišni troškovi, jer bez profitne stege ništa iznutra ne tjera trošak prema najnižoj razini. Treći su izvedene eksternalije, nuspojave intervencije koje se ne predvide jer je nagrada agencije odvojena od konačnog ishoda. Četvrti je neravnomjerna raspodjela moći i utjecaja koju sama intervencija stvara. Tek uz tu pozadinu pojedinačni neuspjesi koje katalogiziramo u nastavku prestaju biti popis i postaju izrazi jedne teorije.
 
 Već i samo mjerenje državnog neuspjeha pretpostavlja jasan kriterij prema kojem se procjenjuje. U literaturi se koriste tri komplementarna pristupa. Prvi je *outcome-based*, koji uspoređuje stvarne ishode programa s prethodno definiranim ciljevima i mjeri jaz između očekivanog i ostvarenog, a najpogodniji je za programe s mjerljivim kvantitativnim ciljevima poput stope zapošljavanja ili pokrivenosti cijepljenja. Drugi je *cost-effectiveness*, koji ispituje je li ostvareni ishod mogao biti postignut po nižem trošku alternativnim instrumentom, a najpogodniji je kada postoji nekoliko izvedivih alternativa za isti cilj. Treći je *institutional*, koji ne mjeri pojedinačni program nego kapacitet države da provodi politike općenito (efikasnost proračuna, neovisnost regulatora, kvaliteta sudstva), a koristi se kad se procjenjuje sistemski rizik kroz širi skup politika.
@@ -101,13 +109,15 @@ Ako svaka institucija djeluje unutar vlastitog administrativnog „silosa", poli
 
 ## Politički neuspjesi
 
-Peti oblik su **politički neuspjesi**, kojima se posebno bavi teorija javnog izbora. Javne politike nastaju u političkom procesu, a politički proces ima vlastite poticaje. Političari mogu preferirati politike koje donose vidljive koristi prije izbora, dok se troškovi odgađaju u budućnost. Mogu izbjegavati nepopularne reforme, čak i kada su dugoročno nužne [@nordhaus1975].
+Peti oblik su **politički neuspjesi**, kojima se posebno bavi teorija javnog izbora. Javne politike nastaju u političkom procesu, a politički proces ima vlastite poticaje. Političari mogu preferirati politike koje donose vidljive koristi prije izbora, dok se troškovi odgađaju u budućnost. Mogu izbjegavati nepopularne reforme, čak i kada su dugoročno nužne [@nordhaus1975].[^vremenska-nekonzistentnost]
 
 ::: {#def-politicki-neuspjeh}
 **Politički neuspjeh** nastaje kada poticaji izbornog procesa sustavno guraju odluke dalje od društveno poželjnih, primjerice nagrađivanjem kratkoročno vidljivih koristi pred dugoročnima ili popuštanjem koncentriranim interesima nauštrb raspršene većine.
 :::
 
 Politički neuspjesi mogu se pojaviti i kada su koristi politike koncentrirane, a troškovi raspršeni. Mala, dobro organizirana skupina može snažno lobirati za potporu, dok su troškovi raspoređeni na velik broj poreznih obveznika koji nemaju poticaj organizirati se [@olson1965]. Politički neuspjeh tako postaje prepreka kvalitetnom dizajnu, jer dobra politika često zahtijeva dugoročnost, dok politički sustav nagrađuje kratkoročnu vidljivost; dobra politika često zahtijeva ukidanje neučinkovitih programa, ali su njihovi korisnici dobro organizirani.
+
+[^vremenska-nekonzistentnost]: Formalni izvor kratkoročnosti je problem vremenske nekonzistentnosti [@kydland1977]. Politika koja je optimalna kada se najavi, $\pi^{*}_{t}$, ne mora biti ona koju je akteru optimalno provesti kada za to dođe trenutak, $$\pi^{*}_{t}\;\big(\text{ex ante}\big) \;\neq\; \underbrace{\arg\max_{\pi}\; U\big(\pi \mid \pi^{e}=\pi^{*}_{t}\big)}_{=\;\pi^{d}_{t}\;(\text{ex post})}$$ jer uz već usidrena očekivanja $\pi^{e}$ postoji iskušenje devijacije $\pi^{d}_{t}$. Bez vjerodostojnog mehanizma obvezivanja diskrecija stoga sustavno odstupa od najavljenog optimuma, što povezuje kratkoročnost iz ovog poglavlja s pravilima iz poglavlja o konstitucionalnoj ekonomici.
 
 ## Birokratski neuspjesi
 
@@ -123,7 +133,13 @@ Sedmi oblik su **regulatorni neuspjesi**. Regulacija može zaštititi potrošač
 **Regulatorni neuspjeh** nastaje kada pravila kojima država usmjerava tržište promaše svoj cilj, bilo zato što regulator počne služiti interesima regulirane industrije, bilo zato što se propisi gomilaju i zastarijevaju brže nego što se ukidaju, pa trošak usklađivanja nadmaši društvenu korist od zaštite.
 :::
 
-Najpoznatiji oblik je **regulatorno zarobljavanje**, kada regulator počinje više služiti interesima regulirane industrije nego javnom interesu [@stigler1971]. Stigler je pokazao da industrija ima koncentriran interes i resurse da oblikuje pravila u svoju korist, dok je raspršena javnost slabo organizirana, pa regulacija sustavno teži zaštiti postojećih igrača umjesto otvaranju tržišta. Zarobljavanje rijetko poprima oblik otvorene korupcije. Češće djeluje kroz informacijsku ovisnost regulatora o podacima koje mu daje sama industrija, kroz kretanje stručnjaka između regulatora i reguliranih tvrtki te kroz zajedničku profesionalnu kulturu u kojoj se interesi industrije počnu doimati kao zdravi razum struke.
+Najpoznatiji oblik je **regulatorno zarobljavanje**, kada regulator počinje više služiti interesima regulirane industrije nego javnom interesu [@stigler1971]. Stigler je pokazao da industrija ima koncentriran interes i resurse da oblikuje pravila u svoju korist, dok je raspršena javnost slabo organizirana, pa regulacija sustavno teži zaštiti postojećih igrača umjesto otvaranju tržišta. Logika zarobljavanja počiva na asimetriji koristi po glavi, jer je za malu skupinu od $n_b$ poduzeća korist od povoljnog pravila $B$ podijeljena na malo članova, a za $n_t$ poreznih obveznika trošak $C$ raspodijeljen na mnogo njih,
+
+$$
+\frac{B}{n_b} \;\gg\; \frac{C}{n_t} \quad\Longrightarrow\quad \text{lobiranje korisno samo koncentriranoj skupini}
+$$
+
+pa se organiziranje isplati samo koncentriranoj strani. Nejednakost može vrijediti i kada je ukupni trošak $C$ veći od ukupne koristi $B$, jer je $n_t$ mnogo veći od $n_b$, što je razlog zašto se uska industrija mobilizira, a raspršena većina ostaje pasivna iako u zbroju gubi više. Zarobljavanje rijetko poprima oblik otvorene korupcije. Češće djeluje kroz informacijsku ovisnost regulatora o podacima koje mu daje sama industrija, kroz kretanje stručnjaka između regulatora i reguliranih tvrtki te kroz zajedničku profesionalnu kulturu u kojoj se interesi industrije počnu doimati kao zdravi razum struke.
 
 Regulatorni neuspjeh može nastati i bez ikakvog zarobljavanja. Pravila se gomilaju kroz vrijeme tako da se za svaki novi problem dodaje nova procedura, a stare se rijetko ukidaju, pa sustav postaje sve složeniji i skuplji za poštivanje. Takav rast regulatornog tereta najteže pogađa male i nove sudionike koji nemaju pravne odjele velikih korporacija, čime regulacija uvedena radi zaštite tržišta paradoksalno smanjuje konkurenciju. Poseban problem nastaje kada se regulacijom pokušava ostvariti fiskalni ili socijalni cilj koji bi bilo transparentnije ostvariti kroz proračun. Trošak se tada ne vidi u proračunu, ali se ipak negdje pojavljuje, u višim cijenama, nižoj kvaliteti usluge ili manjim ulaganjima. Zato dobra regulacija nije ona koja propisuje najviše, nego ona koja periodično preispituje vlastita pravila, mjeri njihov stvarni učinak i ukida ono što više ne služi svrsi.
 
@@ -131,7 +147,13 @@ Regulatorni neuspjeh može nastati i bez ikakvog zarobljavanja. Pravila se gomil
 
 Osmi oblik su **fiskalni neuspjesi**. Javna politika gotovo uvijek ima fiskalnu dimenziju, pa i kada se ne financira izravno kroz proračun može stvarati implicitne obveze, jamstva, porezne izdatke ili buduće troškove. Fiskalni neuspjeh nastaje kada se politika oblikuje bez jasne procjene dugoročnih troškova ili kada se ti troškovi prebacuju na buduće generacije i skrivaju izvan proračuna kroz jamstva, mandate ili kontrolu cijena, pa stvarna cijena odluke ostaje nevidljiva u trenutku kada se donosi.
 
-Posebno važan problem su **kvazifiskalne aktivnosti**. Država ponekad želi ostvariti javni cilj, ali ga ne financira otvoreno kroz proračun, pa umjesto izravne subvencije koristi regulaciju, kontrolu cijena, obvezne mandate ili državna jamstva. Takve mjere mogu prikriti stvarni trošak politike. To je posebno važno za dizajn javnih politika jer ono što nije u proračunu nije nužno besplatno. Kontrola cijena može izgledati kao politika bez proračunskog troška, ali se trošak pojavljuje kroz nestašice, lošiju kvalitetu ili manje investicije. Zato kvalitetna javna politika mora uzeti u obzir i vidljive i skrivene fiskalne troškove.
+Posebno važan problem su **kvazifiskalne aktivnosti**. Država ponekad želi ostvariti javni cilj, ali ga ne financira otvoreno kroz proračun, pa umjesto izravne subvencije koristi regulaciju, kontrolu cijena, obvezne mandate ili državna jamstva. Takve mjere mogu prikriti stvarni trošak politike. To je posebno važno za dizajn javnih politika jer ono što nije u proračunu nije nužno besplatno. Da bi se vidio puni trošak, ukupni trošak politike treba rastaviti na vidljivi proračunski dio i skriveni kvazifiskalni teret,
+
+$$
+TC \;=\; G_{\text{budget}} \;+\; \underbrace{QF}_{\text{kvazifiskalno: } |\Delta p| \cdot Q + L + \dots}
+$$
+
+gdje $G_{\text{budget}}$ obuhvaća rashode koji se knjiže u proračunu, a $QF$ skriveni teret poput implicitnog transfera od kontrole cijena $|\Delta p|\cdot Q$ ili vrijednosti danih jamstava $L$. Apsolutna vrijednost stoji jer je teret kontrole cijena pozitivan bez obzira na smjer promjene cijene. Identitet pokazuje da ukupni trošak ostaje isti bez obzira na to gdje se knjiži, pa kontrola cijena može izgledati kao politika bez proračunskog troška, dok se taj trošak ipak pojavljuje kroz nestašice, lošiju kvalitetu ili manje investicije. Zato kvalitetna javna politika mora uzeti u obzir i vidljive i skrivene fiskalne troškove.
 
 ## Neuspjesi države i povjerenje u institucije
 
@@ -153,6 +175,14 @@ U praktičnom smislu, svaka kvalitetna javna politika trebala bi proći svojevrs
 6. Tko dobiva, tko gubi i tko može utjecati na dizajn politike?
 7. Kako će se politika financirati i koji su njezini dugoročni fiskalni rizici?
 8. Kako će se mjeriti rezultati i kada će se politika promijeniti ili ukinuti ako ne funkcionira?
+
+Tih osam pitanja može se sažeti u jedinstven **indeks otpornosti** politike. Ako se svaka dimenzija ocijeni cijelim brojem $s_j$ od nula do tri, ukupna otpornost je prosjek ocjena normaliziran na najveću moguću vrijednost,
+
+$$
+R \;=\; \frac{1}{3J}\sum_{j=1}^{J} s_j \;\in\; [0,1], \qquad s_j\in\{0,1,2,3\},\; J=8
+$$
+
+pa $R$ blizu jedan znači robusnu, a $R$ blizu nula ranjivu politiku. Indeks je heuristika, a ne mjera s teorijskim utemeljenjem, ali čini vezu između osam pitanja i ukupne presude prozirnom i ponovljivom i bez interaktivnog alata.
 
 Graf koji slijedi pretvara tih osam pitanja u jednostavan pokazatelj otpornosti politike, zbrajajući ocjene po svakoj dimenziji u ukupnu presudu od ranjive do robusne politike. Graf je interaktivan, pa klizači mijenjaju ocjenu svake od osam dimenzija, čime se vidi koje dimenzije najjače dižu ili spuštaju ukupnu otpornost.
 
@@ -272,7 +302,13 @@ Analiza državnih neuspjeha nije argument protiv države. Ona je argument protiv
 
 Država je nužna za rješavanje mnogih društvenih problema, ali nije savršen instrument. Dizajn kvalitetnih javnih politika zahtijeva dvostruku svijest, svijest o tome gdje tržište zakazuje i svijest o tome gdje država može zakazati. Tu se nalazi i poveznica između klasične analize javnih politika, teorije javnog izbora i institucionalne ekonomike. Tržišni neuspjesi objašnjavaju zašto država ulazi u javne politike, javni izbor objašnjava zašto država može zakazati, a institucionalna i konstitucionalna ekonomika objašnjavaju kakva pravila i kapaciteti mogu smanjiti vjerojatnost tih neuspjeha.
 
-Upravo tu javni izbor dodaje i razlog zašto državni neuspjeh može biti teži od tržišnog koji ispravlja. Kada intervencija stvori umjetnu rentu, primjerice kvotu, dozvolu ili zaštićenu cijenu, oko nje se troše stvarni resursi na natjecanje i obranu povlastice, pa taj gubitak nije jednokratan nego se obnavlja sve dok renta postoji [@tullock1967], a njegovu mehaniku razrađujemo u poglavlju o interesnim skupinama. Zbog toga puni društveni trošak neke mjere može nadmašiti tržišni gubitak koji je trebala ukloniti, što je i razlog zašto tržišni neuspjeh opravdava razmatranje intervencije, ali sam po sebi ne opravdava njezino provođenje.
+Upravo tu javni izbor dodaje i razlog zašto državni neuspjeh može biti teži od tržišnog koji ispravlja. Kada intervencija stvori umjetnu rentu, primjerice kvotu, dozvolu ili zaštićenu cijenu, oko nje se troše stvarni resursi na natjecanje i obranu povlastice, pa taj gubitak nije jednokratan nego se obnavlja sve dok renta postoji [@tullock1967], a njegovu mehaniku razrađujemo u poglavlju o interesnim skupinama. Puni društveni trošak takve mjere zato nije samo klasični mrtvi teret nego mu se pridodaje i dio rente koji se rasipa u natjecanju,
+
+$$
+SC \;=\; \underbrace{DWL}_{\text{Harbergerov trokut}} \;+\; \underbrace{\theta\, R}_{\text{rasipanje rente},\;0<\theta\le 1} \;>\; DWL
+$$
+
+gdje je $DWL$ mrtvi teret koji bi nastao i bez rente, $R$ vrijednost umjetno stvorene rente, a $\theta$ udio te rente koji se potroši u borbi za nju, od djelomičnog rasipanja do potpune disipacije pri $\theta=1$. Budući da je $\theta R$ uvijek pozitivan, puni društveni trošak $SC$ nadmašuje sam tržišni gubitak $DWL$ koji je mjera trebala ukloniti, što je i razlog zašto tržišni neuspjeh opravdava razmatranje intervencije, ali sam po sebi ne opravdava njezino provođenje.
 
 Cilj nije manje države pod svaku cijenu, niti više države kao automatsko rješenje. Cilj je **bolja država**, ona koja zna prepoznati problem, odabrati prikladan instrument, provesti politiku, mjeriti učinke, učiti iz pogrešaka i odgovorno koristiti javne resurse.
 

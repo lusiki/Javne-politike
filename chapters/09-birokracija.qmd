@@ -67,6 +67,14 @@ Najpoznatiji model birokracije u teoriji javnog izbora razvio je William A. Nisk
 
 Privatno poduzeće nastoji ostvariti što veću dobit, suočava se s konkurencijom i mora paziti na odnos troškova, cijena i potražnje. Javna birokracija nalazi se u bitno drugačijoj situaciji. Ona najčešće ne prodaje uslugu izravno korisnicima po tržišnoj cijeni i najčešće nema konkurenta kojemu građani mogu prijeći. Budući da joj uspjeh nije moguće mjeriti dobiti, kao mjerilo organizacijskog uspjeha preostaje veličina proračuna.
 
+Tu logiku možemo zapisati i formalno. Ako s $B(Q)$ označimo ukupnu korist koju usluga donosi društvu, a s $C(Q)$ ukupni trošak njezine proizvodnje, birokrat ne bira razinu $Q$ koja maksimizira neto korist $B(Q)-C(Q)$ niti, kao poduzeće, dobit, nego sirovu veličinu proračuna,
+
+$$
+\max_{Q}\; B(Q) \quad \text{uz ograničenje} \quad B(Q) \ge C(Q),
+$$
+
+pri čemu ga jedino ograničava to da sponzor ne smije ostati na gubitku [@niskanen1971]. Intuicija je važna jer pokazuje da prekomjerna potrošnja nije pogreška u računu, nego ishod posve drugačijeg cilja. Sve dok ukupna korist tek pokriva ukupni trošak, birokrat ima razlog gurati uslugu dalje, pa ograničenje $B(Q) \ge C(Q)$ u ravnoteži postaje vezujuće i prelazi u jednakost $B(Q)=C(Q)$.
+
 Razlog je intuitivan. Veći proračun za javnu instituciju često znači više zaposlenih, više organizacijskih jedinica, veću plaću na višim upravljačkim razinama, veći status, više ovlasti, veću autonomiju i veću političku važnost. Zato je za birokrata proračun više od knjigovodstvene kategorije, on je izvor organizacijske moći.
 
 Graf koji slijedi prikazuje granu korist i granični trošak javne usluge te uspoređuje društveno učinkovitu razinu Q\* s Niskanenovom razinom Qₙ na kojoj birokracija širi uslugu sve dok je ukupna korist tek pokriva. Graf je interaktivan, pa klizači mijenjaju granični trošak i nagib granične koristi, čime se vidi kako se jaz prekomjerne potrošnje između Q\* i Qₙ širi ili sužava.
@@ -206,7 +214,23 @@ Niskanenov model počiva na tri ključna elementa. Prvo, birokracija često ima 
 
 Mehanizam kojim birokracija postiže taj veći proračun krije se u obliku ponude. Umjesto da sponzoru dopusti kupnju usluge jedinicu po jedinicu, uz mogućnost da stane ondje gdje se granična korist izjednači s graničnim troškom, birokracija nudi cijeli paket usluge po jednoj ukupnoj cijeni, po načelu uzmi ili ostavi. Budući da ministarstvo financija tu ponudu ne može lako rastaviti na dijelove ni usporediti s jeftinijom alternativom, prisiljeno je vagati samo cjelinu, pa pristaje sve dok ukupna korist tek pokriva ukupni trošak. Tako birokracija prisvaja gotovo cijeli višak koji bi inače pripao društvu i gura uslugu do točke koja, uz pravocrtnu potražnju i ravnomjeran trošak, leži otprilike dvostruko iznad učinkovite razine, što je upravo jaz koji prikazuje gornji graf [@niskanen1971].
 
+Suprotnost dviju logika može se vidjeti i u jednom retku. Društveno učinkovita razina $Q^{*}$ izjednačuje graničnu korist i granični trošak, dok Niskanenova razina $Q_{n}$ izjednačuje ukupnu korist i ukupni trošak,
+
+$$
+\underbrace{B'(Q^{*}) = C'(Q^{*})}_{\text{učinkovito}} \qquad \text{vs.} \qquad \underbrace{B(Q_{n}) = C(Q_{n})}_{\text{Niskanen}} \;\overset{B'=a-bQ,\;C'=c}{\Longrightarrow}\; Q_{n} = 2\,Q^{*}.
+$$
+
+Faktor dva nije opća istina, nego vrijedi upravo uz pravocrtnu graničnu korist $B'=a-bQ$ i konstantni granični trošak $C'=c$, što su pretpostavke ugrađene i u gornji graf. Tada je iz $B'=C'$ učinkovita razina $Q^{*}=(a-c)/b$, a iz uvjeta $B(Q_{n})=C(Q_{n})$ slijedi $Q_{n}=2(a-c)/b=2\,Q^{*}$. Intuitivno, jer granična korist pada pravocrtno, ono što sponzor izgubi kada usluga prijeđe $Q^{*}$ točno se poništava s viškom prikupljenim ispod $Q^{*}$ tek pri dvostrukoj količini, pa birokracija uspijeva nametnuti upravo $Q_{n}$.
+
 Birokratsko širenje ne mora biti posljedica korupcije ili zle namjere. Ono može biti sasvim racionalno ponašanje unutar sustava u kojem se uspjeh institucije mjeri veličinom proračuna, brojem zaposlenih i širinom nadležnosti. U kasnijim raspravama model je kritiziran kao previše pojednostavljen, jer nisu svi birokrati jednako motivirani proračunom. Neki žele miran posao, neki stručni ugled, a neki doista žele poboljšati javnu uslugu. Breton i Wintrobe upozorili su da su interesi unutar birokracije heterogeni, pri čemu viši službenici teže moći i prestižu, a niži sigurnosti radnoga mjesta, pa maksimizacija proračuna ne mora biti zajednički cilj svih razina [@breton1975].
+
+Tu heterogenost motiva formalizirali su Migué i Bélanger uvođenjem **diskrecijskog proračuna**. Umjesto da birokrat mari samo za veličinu usluge, on vrednuje i razliku između odobrenog proračuna i najmanjeg troška kojim bi se usluga mogla proizvesti, pa njegovu korisnu funkciju zapisujemo kao
+
+$$
+\max_{Q}\; U\big(Q,\,D\big), \qquad D = B(Q) - C(Q), \qquad U_Q>0,\; U_D>0,
+$$
+
+gdje je $D$ diskrecijski višak [@miguebelanger1974]. Intuicija je da se dio prisvojenog viška ne mora pretočiti u veću uslugu, nego može ostati kao organizacijska udobnost, prostraniji uredi, brojnije osoblje ili manji napor. Niskanenov je čisti slučaj rubni jer nastaje kada korist ovisi samo o $Q$, dok Dunleavyev viši birokrat, kojemu je stalo do ugleda više nego do veličine, vrednuje upravo $D$. Tako jedna jednadžba povezuje sve tri slike birokrata.
 
 Iz te kritike izrastao je drugačiji model. Dunleavy je tvrdio da viši birokrati ne maksimiziraju veličinu proračuna, nego vlastiti utjecaj i kontrolu nad politikom, pa radije biraju male, prestižne i politički blizu smještene agencije nego velike operativne službe [@dunleavy1985].
 
@@ -241,6 +265,12 @@ Upravo zato što se odgovornost u tom lancu lako rasprši, postaje važno razlik
 :::
 
 Birokracija često lakše prikazuje inpute i outpute nego ishode, pa su transparentnost, revizija, evaluacija i otvoreni podaci ključni jer smanjuju informacijsku prednost agenta. No samo mjerenje nije dovoljno, jer loše dizajnirani pokazatelji mogu potaknuti pogrešno ponašanje. Ako se škola vrednuje samo po broju prolazaka, može snižavati kriterije, a ako se sud vrednuje samo po broju riješenih predmeta, može se zanemariti kvaliteta presuda.
+
+Zašto su jaki poticaji u javnom sektoru često neoptimalni pokazuje minimalni model linearnog ugovora. Neka je nagrada $w=\alpha+\beta\,y$ vezana uz izmjereni ishod $y=e+\varepsilon$, gdje je $e$ napor, a $\varepsilon\sim(0,\sigma^{2})$ šum mjerenja. Agent nesklon riziku bira napor maksimizirajući ekvivalent sigurnosti, $\max_{e}\;\alpha+\beta e-\tfrac{1}{2}c\,e^{2}-\tfrac{1}{2}\rho\,\beta^{2}\sigma^{2}$, što daje optimalnu osjetljivost nagrade
+
+$$\beta^{*}=\frac{1}{1+\rho\,c\,\sigma^{2}},$$
+
+gdje je $c$ trošak napora, a $\rho$ averzija prema riziku [@laffontmartimort2002]. Što je ishod slabije mjerljiv (veći $\sigma^{2}$), to optimalni $\beta^{*}$ pada prema nuli, pa kada birokracija lako broji predmete, ali teško mjeri stvarni ishod, vezivanje plaće uz takav pokazatelj kažnjava agenta za čisti šum i zato se isplati slabije nego u privatnom sektoru.
 
 Lanac delegiranja završava tek na samome dnu, kod službenika koji su u neposrednom dodiru s građanima, i upravo se ondje politika pretvara u stvarnost. Michael Lipsky pokazao je da socijalni radnici, policajci, učitelji i šalterski službenici neizbježno raspolažu **diskrecijom** jer rade pod kroničnim preopterećenjem, s previše predmeta, premalo vremena i nejasnim ciljevima [@lipsky1980]. Da bi uopće obavili posao, razvijaju rutine snalaženja, od racioniranja usluge i pojednostavljivanja postupaka do prešutnog biranja lakših slučajeva, a zbroj tih svakodnevnih sitnih odluka postaje stvarna javna politika, često različita od one koju je zakonodavac napisao. To je posljednja i najslabije vidljiva karika u lancu skrivenog djelovanja, pa objašnjava zašto se izobličenja koja pokazatelji izazivaju ne događaju samo na razini agencije, nego i za svakim pojedinim šalterom.
 
