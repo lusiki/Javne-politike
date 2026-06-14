@@ -1,186 +1,249 @@
-# Izvještaj — BookWright screening knjige (stanje + put do "cutting edge")
+# Izvještaj — BookWright screening knjige (ažurirano, stanje + put do "cutting edge")
 
-**Datum:** 12. lipnja 2026.
-**Metoda:** Prilagođeni BookWright panel na razini cijele knjige — četiri paralelna read-only prolaza: (1) rekoncilijacija chapter-ledgera s živim datotekama, (2) tehnička revizija infrastrukture i rendera, (3) benchmark prema stanju tehnike interaktivnih udžbenika 2025./26. (web-verificirano), (4) provjera sadržajnih rupa iz smjernica protiv stvarnog repozitorija.
-**Prethodni dokumenti:** nadovezuje se na `izvjestaj-strukturna-revizija-2026-06-10.md`, `smjernice-razvoj-knjige.md` (9. 6.) i `notes/platform-vision.md` (svibanj); ne ponavlja njihov sadržaj nego ga verificira i prioritizira.
+**Datum:** 12. lipnja 2026. (ažurirana verzija — zamjenjuje raniji istoimeni izvještaj)
+**Snimak:** grana `main`, HEAD `9868cee` (21 poglavlje, 00-uvod … 20-reforme). *Napomena: `main` je za vrijeme prolaza odmaknuo za jedan commit (`6f771a6`, `copy(book): ujednači formu prijevoda stručnih pojmova na prvi spomen`) — čisti prozni copy-edit koji ne mijenja nijedan strukturni broj, infra-nalaz ni sadržajnu rupu, pa nalazi vrijede i za `6f771a6`.*
+**Metoda:** Prilagođeni BookWright panel na razini cijele knjige — čitanje iz čistog `git worktree`-a grane `main`, sedam paralelnih read-only agenata u četiri prolaza: (1) rekoncilijacija chapter-ledgera sa živim datotekama, (2) tehnička revizija infrastrukture, rendera, performansi, PDF-a i pristupačnosti, (3) benchmark prema stanju tehnike interaktivnih udžbenika 2026. (web-verificirano), (4) provjera sadržajnih rupa protiv stvarnog repozitorija — plus zaseban duboki pregled novog poglavlja 15. Svi nalazi unakrsno provjereni determinističkim `grep`/`wc` brojanjem na živim datotekama; sporne tvrdnje pojedinačno reverificirane.
+**Odnos prema ranijoj verziji:** ovaj izvještaj **nije** novi nalaz nego ažuriranje. Knjiga se od prošlog prolaza materijalno promijenila (novo poglavlje EU, dovršena vanjska vidljivost, prenumeracija) pa su mnoge ranije tvrdnje sada zastarjele i ovdje su izrijekom označene kao *riješeno / novo / nepromijenjeno*.
+
+---
+
+## 0. Što se promijenilo od prošlog izvještaja (sažetak delte)
+
+Četiri velike promjene na `main`-u od prošlog prolaza, redom po važnosti.
+
+1. **Novo poglavlje 15 — "Javne financije Europske unije".** Knjiga sada ima **21 poglavlje** (prije 20). Staro poglavlja 15–19 prenumerirana su u 16–20. Poglavlje je dovršeno do faze `enriched`, citatno besprijekorno (23 ključa, svi razrješivi) i **zatvara raniju sadržajnu rupu "EU kao država"** u cijelosti.
+2. **Vanjska vidljivost je odrađena.** Open Graph, Twitter card, meta-opis, dijeljenje, branded 404, `robots.txt` i potpuni `sitemap.xml` sada postoje i dobre su kvalitete. Prošli je izvještaj to vodio kao prazninu broj 1 ("nula OG/meta/404"); ta je dijagnoza sada uglavnom **riješena**.
+3. **Sadržajne rupe su se smanjile.** Uz EU poglavlje, dinamika javnog duga (r > g) sada je formalizirana u poglavlju 13, a fiskalni federalizam (Oates, OCA teorija) ukotvljen je u poglavlju 15. Oates je ušao u bibliografiju.
+4. **Estetski/uvodni zahvati.** Uvod je prepisan, naslov knjige je promijenjen u *"Sve što želite znati o državi i javnim politikama u Hrvatskoj"*, primijenjeni su estetski screen-ovi (Dan 1/2, Tjedan 1, polish), a Vodič-podstranice maknute su iz sidebara.
+
+Ono što knjigu danas dijeli od "cutting edge" statusa **više nije ni rukopis ni vanjska vidljivost**, nego tri preostala sloja: (a) **trajni akademski identitet** (DOI + CITATION.cff + llms.txt još ne postoje), (b) **PDF i pristupačnost** (PDF i dalje briše svih 110 OJS grafova i sve SVG infografike bez statične zamjene; OJS grafovi ostaju nevidljivi čitačima ekrana), i (c) **platforma kao obećanje** (Alat je i dalje 8 najavljenih a 0 isporučenih alata).
 
 ---
 
 ## 1. Sažetak
 
-Knjiga je sadržajno u znatno boljem stanju nego što njezini vlastiti evidencijski dokumenti tvrde. Chapter-ledger (10. 6.) zastario je u dva dana — od 20-ak otvorenih "self" stavki, **velika većina je u međuvremenu odrađena**: formalne definicije sada postoje u svih 19 sadržajnih poglavlja (84 def-bloka), empirija-callouti u pogl. 6 i 8 su dodani, pogl. 19 ima sintetski završetak koji zatvara petodijelni luk ("Pogled unatrag, kroz cijelu knjigu"), r−g dinamika u pogl. 13 ima prozno uporište, Le Grand i Brender/Shi citati su na mjestu, a tri staze čitanja — koje smjernice navode kao neiskorištenu priliku — **već stoje na landing stranici**.
+Knjiga je u osjetno boljem stanju nego pri prošlom prolazu, a njezini evidencijski dokumenti (chapter-ledger od 10. 6.) sada su **dvostruko zastarjeli** — ne poznaju novo poglavlje 15 i koriste staru numeraciju 15–19. Strukturno je knjiga zrela. Determinističko brojanje na 21 poglavlju daje: **6 243 linije, 110 OJS-blokova, 88 def-blokova, 25 praksa- / 23 empirija- / 21 vježba-callouta, 28 figura s `#fig-` oznakom (svaka s pripadajućim `fig-alt`), 48 working-paper fusnota, 186 bib-zapisa.**
 
-Ono što knjigu danas dijeli od "cutting edge" statusa nije rukopis nego tri druge stvari:
+Tri pomaka vrijedi istaknuti jer mijenjaju prioritete iz prošlog izvještaja:
 
-1. **Nevidljivost prema van** — nula Open Graph / meta-description / canonical oznaka, nema llms.txt, nema CITATION.cff ni DOI-ja, nema 404 stranice. Knjiga je tehnički izvrsna iznutra, a dijeljenje poveznice na društvenim mrežama ne pokazuje ništa.
-2. **PDF gubi trećinu pedagoškog aparata** — svih ~110 OJS grafova i SVG infografike jednostavno se brišu iz PDF-a bez statične zamjene.
-3. **Obećana platforma je stub** — Alat (8 najavljenih alata, 0 implementiranih), Atlas djelomično onesposobljen, 4 skinuta dataseta u `data/atlas` ne koristi nijedno poglavlje, nema kvizova, pojmovnika ni nastavničkih materijala.
+1. **Figura i pristupačnost — djelomičan napredak.** Broj označenih figura skočio je s ~5 na **28, i svaka od njih sada ima `fig-alt`**. Time je riješen dio rupe oko križnog referenciranja. Ali pokrivenost u dvama teškim poglavljima ostaje niska (pogl. 02: 6 oznaka na 30 OJS-a; pogl. 14: 9 na 36), pa **82 od 110 OJS-grafova i dalje nemaju oznaku ni tekstualnu alternativu**. Uz to, `fig-alt` se renderira kao komentirana linija unutar (sklopivog) bloka koda, a ne kao `aria-label` na samom grafu — tehnička pristupačnost grafova je i dalje slaba.
+2. **Empirija-regresija u poglavlju 17 (NPM).** Ranije je konvencija bila da empirija-callout postoji svugdje osim u pogl. 06 i 08. Ta su dva poglavlja u međuvremenu popravljena (oba sada imaju empiriju), ali **poglavlje 17 (Novi javni menadžment) sada nema nijedan empirija-callout** — nova, jedina takva praznina u knjizi.
+3. **Vidljivost je riješena, ali s nekoliko sitnih kvalitativnih nedostataka** koje grubi "ima/nema" test prošlog izvještaja nije mogao vidjeti: nedostaju `og:url` i `og:type` unutar inače ispravnog OG bloka, nema `rel="canonical"`, `apple-touch-icon` je deklariran kao resurs ali nije ulinkan u `<head>`, nema `theme-color`. Sve su to jeftini popravci kroz `include-in-header`.
 
-Preostali pravi sadržajni posao koncentriran je u koautorskom redu čekanja (~40 otvorenih domaćih ovjera, ponajviše Milanovih poreznih stopa u pogl. 14 i ERM II/euro/NPOO tvrdnji u pogl. 19) te u četiri-pet potvrđenih tematskih rupa (fiskalni federalizam, socijalno osiguranje, javni dug, EU kao država).
+Preostali pravi posao koncentriran je u: (a) **akademskoj higijeni** (DOI/CITATION.cff/llms.txt — nepromijenjeno, najveća prilika), (b) **PDF-u i a11y-ju OJS grafova** (nepromijenjeno, tehnički najvrjednija investicija), (c) **koautorskom redu čekanja** (pogl. 14 stope, pogl. 20 ERM II/euro/NPOO izvori, pogl. 13 i 15 hrvatska/EU empirija), i (d) **dvije-tri prave sadržajne rupe** koje su ostale otvorene (socijalno osiguranje, proces nastanka politika, "sludge").
 
 ---
 
-## 2. Verificirani snimak stanja (12. 6. 2026.)
+## 2. Verificirani snimak stanja (main `9868cee`)
 
 ### 2.1 Strukturni popis po poglavljima
 
-| Pogl. | Linija | Praksa | Empirija | Vježba | Def | OJS | #fig- | fig-alt |
+| Pogl. | Linija | Praksa | Empirija | Vježba | Def | OJS | #fig | fig-alt |
 |---|---|---|---|---|---|---|---|---|
-| 00 uvod | 69 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
-| 01 uloga države | 318 | 1 | 1 | 1 | 2 | 7 | 1 | 2 |
-| 02 alokacijska | 1002 | 1 | 1 | 1 | 5 | 30 | 0 | 6 |
-| 03 distribucijska | 226 | 1 | 1 | 1 | 4 | 4 | 0 | 1 |
-| 04 stabilizacijska | 316 | 1 | 1 | 1 | 5 | 5 | 1 | 1 |
-| 05 javni izbor | 180 | 1 | 2 | 1 | 2 | 5 | 1 | 2 |
-| 06 kolektivni izbor | 251 | 3 | 1 | 1 | 5 | 5 | 0 | 1 |
-| 07 stranke i izbori | 155 | 3 | 2 | 1 | 5 | **0** | 0 | 0 |
-| 08 interesne skupine | 125 | 1 | 1 | 1 | 5 | **0** | 0 | 0 |
-| 09 birokracija | 221 | 1 | 1 | 1 | 5 | 4 | 0 | 1 |
+| 00 uvod | 59 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 01 uloga države | 326 | 1 | 1 | 1 | 2 | 7 | 2 | 2 |
+| 02 alokacijska | 1008 | 1 | 1 | 1 | 5 | 30 | 6 | 6 |
+| 03 distribucijska | 228 | 1 | 1 | 1 | 4 | 4 | 1 | 1 |
+| 04 stabilizacijska | 322 | 1 | 1 | 1 | 5 | 5 | 1 | 1 |
+| 05 javni izbor | 180 | 1 | 2 | 1 | 2 | 5 | 2 | 2 |
+| 06 kolektivni izbor | 251 | 3 | 1 | 1 | 5 | 5 | 1 | 1 |
+| 07 stranke i izbori | 153 | 3 | 2 | 1 | 5 | **0** | 0 | 0 |
+| 08 interesne skupine | 123 | 1 | 1 | 1 | 5 | **0** | 0 | 0 |
+| 09 birokracija | 219 | 1 | 1 | 1 | 5 | 4 | 1 | 1 |
 | 10 institucionalna | 153 | 1 | 1 | 1 | 5 | **0** | 0 | 0 |
-| 11 konstitucionalna | 147 | 1 | 1 | 1 | 5 | **0** | 0 | 0 |
-| 12 instrumenti | 148 | 1 | 1 | 1 | 5 | **0** | 1 | 1 |
-| 13 javna potrošnja | 207 | 1 | 1 | 1 | 3 | 3 | 0 | 1 |
-| 14 porezi | 1520 | 2 | 3 | 2 | 4 | 36 | 1 | 9 |
-| 15 državni neuspjesi | 257 | 1 | 1 | 1 | 6 | 3 | 0 | 1 |
-| 16 NPM | 131 | 1 | 1 | 1 | 5 | **0** | 0 | 0 |
-| 17 novo upravljanje | 129 | 1 | 1 | 1 | 4 | **0** | 0 | 0 |
-| 18 CBA | 219 | 1 | 1 | 1 | 4 | 4 | 0 | 1 |
-| 19 reforme | 209 | 1 | 1 | 1 | 5 | 4 | 0 | 1 |
-| **Ukupno** | **9 114** | **24** | **22** | **20** | **84** | **110** | **~5** | **28** |
+| 11 konstitucionalna | 145 | 1 | 1 | 1 | 5 | **0** | 0 | 0 |
+| 12 instrumenti | 150 | 1 | 1 | 1 | 5 | **0** | 1 | 1 |
+| 13 javna potrošnja | 207 | 1 | 1 | 1 | 3 | 3 | 1 | 1 |
+| 14 porezi | 1534 | 2 | 3 | 2 | 4 | 36 | 9 | 9 |
+| **15 EU javne financije** ⟵ novo | 242 | 1 | 1 | 1 | 4 | **0** | 0 | 0 |
+| 16 državni neuspjesi | 257 | 1 | 1 | 1 | 6 | 3 | 1 | 1 |
+| 17 NPM | 129 | 1 | **0** | 1 | 5 | **0** | 0 | 0 |
+| 18 novo upravljanje | 129 | 1 | 1 | 1 | 4 | **0** | 0 | 0 |
+| 19 CBA | 219 | 1 | 1 | 1 | 4 | 4 | 1 | 1 |
+| 20 reforme | 209 | 1 | 1 | 1 | 5 | 4 | 1 | 1 |
+| **Ukupno (21)** | **6 243** | **25** | **23** | **21** | **88** | **110** | **28** | **28** |
 
-Uz to: 48 working-paper fusnota (`[^wp-…]`), 166 bib-zapisa, vježbe u svim poglavljima ispravno pozicionirane iza Sažetka.
+Naslov na `main`-u: *"Sve što želite znati o državi i javnim politikama u Hrvatskoj"* (ledger još vodi stari naslov "…odnosu države i tržišta"). Vježbe ispravno pozicionirane iza Sažetka u svim poglavljima. Vodič-hub + 20 podstranica renderirani; podstranice prunane iz sidebara JS-om u `book-include.html`.
 
-### 2.2 Ledger-stavke koje su POTVRĐENO GOTOVE (ledger ih vodi kao otvorene)
+### 2.2 Što je RIJEŠENO od prošlog izvještaja
 
-- definicije: 02, 03, 04, 06, 07, 08, 09, 10, 12, 13, 15, 16, 17, 19 — sve imaju 3–6 def-blokova
-- 06-empirija i 08-empirija calloute — prisutni
-- 04-fig-keynes (`fig-keynesian-cross` label), 04-cite-imf (`@blanchard2013`, `@blyth2013`)
-- 11-cite-empirics (`@brender2005; @shi2006`)
-- 13-rg-prose (r > g razrađen u prozi), placeholder za domaću sekciju više nije na navedenome mjestu
-- 14-korinek sekcija "Digitalizacija i umjetna inteligencija" s citatima
-- 16-cite-legrand (`@legrand1991`)
-- 19-synthesis — "Pogled unatrag, kroz cijelu knjigu" prolazi svih pet dijelova i vraća se na uvodno pitanje
-- tri staze čitanja (A/B/C) na landing stranici — smjernice §1 su time već ispunjene
+**Vanjska vidljivost (bila praznina #1, sada uglavnom riješeno):**
+- Open Graph (`og:title`/`description`/`image` s apsolutnim URL-om/`site_name` + dimenzije slike) — prisutan na naslovnoj i poglavljima.
+- Twitter card (`summary_large_image`) — prisutan.
+- Meta-opis — supstancijalan, propagira na sva poglavlja.
+- `sitemap.xml` — potpun, ispravno uključuje prenumerirano poglavlje 15 i svih 20 vodič-podstranica.
+- `robots.txt` — prisutan, ispravno upućuje na sitemap.
+- Branded 404 stranica (`404.qmd` → `docs/404.html`, ~57 KB) s navigacijskim karticama i apsolutnim putanjama.
 
-**Ledger treba ažurirati** — preporučujem da se gornje stavke prebace na `done` da konduktorov dashboard opet bude pouzdan.
+**Sadržaj i struktura:**
+- Novo poglavlje 15 (EU javne financije) — `enriched`, citatno čisto (vidi §7).
+- Empirija-callouti u pogl. 06 i 08 — sada prisutni (ranija praznina zatvorena).
+- Definicije — `{#def-}` blokovi sada u svim poglavljima osim uvoda (88 ukupno, 3–6 po poglavlju); time su gotovo svi raniji `*-defs` ledger-zadaci odrađeni.
+- Dinamika javnog duga (r > g) — formalizirana u `def-javni-dug` (pogl. 13) + vježba.
+- Fiskalni federalizam — Oates ušao u bibliografiju (`oates1972`, `oates1999`) i citiran u pogl. 15.
+- Figura/`fig-alt` — 28 označenih figura, svaka s alt-tekstom (djelomičan napredak; vidi §2.3).
 
-### 2.3 Stavke koje su POTVRĐENO JOŠ OTVORENE (vlastiti posao, bez koautora)
+**Tehnika:**
+- Kontrast verdigris `#4A6B5C` na papiru `#F2EDE3` = **5,07:1 — prolazi WCAG AA** (ink 15,0:1, oxblood 9,7:1 prolaze; ochre `#C8985E` 2,22:1 pada, ali je dekorativni timeline-akcent, ne tekst).
+- Poglavlje 02 lakše za ~100 KB (592 KB naspram ranijih 693 KB).
+- Render-cjevovod zdrav (`search.json` 975 KB / 255 unosa, `_freeze` čist, MathJax samo gdje treba).
 
-| # | Stavka | Trošak |
-|---|---|---|
-| 1 | **pogl. 00:** "politika bez romantike" (linija 63) i dalje bez `[@buchanan…]` citata | 10 min |
-| 2 | **pogl. 02:** 30 OJS grafova bez ijednog `#fig-` labela; knjiga ukupno ima ~5 labela na 110 grafova → grafovi se ne mogu križno referencirati | sustavan prolaz |
-| 3 | **fig-alt pokrivenost:** 28 alt-tekstova na 110 OJS grafova; poglavlja 07, 08, 10, 11, 16, 17 nemaju nijedan | ide uz #2 |
-| 4 | **pogl. 03:** nordijski materijal i tipologija režima bez Esping-Andersena (nema ga ni u bib) | 30 min + bib |
-| 5 | **pogl. 07:** i dalje bez interaktivnog grafa (Hotelling/medijanski glasač); uz pogl. 08 i dalje najtanje u DIO II | srednje |
-| 6 | **pogl. 08:** bez figure (logika kolektivnog djelovanja) | srednje |
-| 7 | **pogl. 02, linija ~232:** formulacija "premašenu količinu Q~M~ po prenisko postavljenoj cijeni" — provjeriti je li "premašenu" željeni izraz (vjerojatno "prekomjernu/preveliku") | 5 min |
-| 8 | **pogl. 14:** potvrdni style sweep (lint lažni pozitivi) | 30 min |
+### 2.3 Što je POTVRĐENO JOŠ OTVORENO (vlastiti posao, bez koautora)
 
-### 2.4 Koautorsko usko grlo (nepromijenjeno)
+| # | Stavka | Status / lokacija | Trošak |
+|---|---|---|---|
+| 1 | **pogl. 17 (NPM): nedostaje empirija-callout** | Novo. Ima praksa (linija 51) + vježba (119), ali 0 empirija — jedina takva praznina u knjizi | nizak |
+| 2 | **pogl. 15 (EU): nema nijedan OJS graf ni figuru** | Jedino DIO IV poglavlje bez vizualizacije; tri MD-tablice nose teret | srednje |
+| 3 | **fig-label + a11y pokrivenost OJS grafova** | 82 od 110 OJS-a neoznačeno; teška poglavlja 02 (6/30) i 14 (9/36); `fig-alt` nije ožičen kao `aria-label` na grafu | sustavan prolaz |
+| 4 | **pogl. 00: "politika bez romantike" bez citata** | Linija 53, i dalje bez `[@buchanan…]` | 10 min |
+| 5 | **pogl. 03: Esping-Andersen** | Tipologija režima i nordijski callout bez atribucije; nema ga ni u bib | 30 min + bib |
+| 6 | **pogl. 07: pretanko (153 lin.) + bez OJS grafa** | Jezgrena tema DIO II; nema interaktivnog (Hotelling/medijanski glasač) | srednje |
+| 7 | **pogl. 08: pretanko (123 lin.) + bez figure** | Najtanje u DIO II; logika kolektivnog djelovanja bez vizuala | srednje |
+| 8 | **vidljivost — kvalitativni nedostaci** | Nema `og:url`/`og:type` u OG bloku; nema `rel="canonical"`; `apple-touch-icon` deklariran ali ne ulinkan u `<head>`; nema `theme-color` | 1 sat (include-in-header) |
+| 9 | **autorsko ime — dijakritik** | `_quarto.yml` linija 18 ima "Luka Sikić" — nedostaje početno **Š** (treba "Luka Šikić"); suautori imaju pune dijakritike | 2 min |
+| 10 | **pogl. 02: formulacija "premašenu količinu"** | Linija 235; "prenisko postavljenoj cijeni" je sada ispravno, ostaje samo izbor riječi "premašenu" (vjerojatno "prekomjernu") | 5 min |
+| 11 | **pogl. 14: potvrdni style sweep** | Lint lažni pozitivi iz instruktivnih blokova | 30 min |
 
-~40 otvorenih koautorskih ovjera. Kritične za vjerodostojnost:
-- **pogl. 19, linija 173:** ERM II 2020 / euro 2023 / NPOO tvrdnje stoje **bez izvora** — jedino mjesto u knjizi gdje nosive činjenične tvrdnje nemaju citat (Milan)
-- **pogl. 14:** sve hrvatske porezne stope i agregati čekaju Milanovu ovjeru s datumom stanja
-- **pogl. 13:** sekcija "Javna potrošnja u Hrvatskoj i EU" (Milan)
+### 2.4 Koautorsko usko grlo
 
-Preporuka: konduktorov "ask" mod — tri kratka, omeđena zahtjeva (Milanu dva, Petri jedan skupni), jer je sav okolni tekst već napisan.
+Nepromijenjeno po naravi, ali s novim čvorom (pogl. 15). Kritično za vjerodostojnost:
+- **pogl. 20 (reforme), ~linija 130:** ERM II 2020 / euro 2023 / NPOO tvrdnje i dalje bez izvora i potpisa (Milan).
+- **pogl. 14:** sve hrvatske porezne stope i agregati čekaju Milanovu ovjeru s datumom stanja.
+- **pogl. 13:** sekcija "Javna potrošnja u Hrvatskoj i EU" (Milan).
+- **pogl. 15 (novo):** hrvatske/EU brojke u NGEU/Hrvatska sekciji i Semester praksa-calloutu + ovjera triju datuma (okvir na snazi 30. 4. 2024.; Vijeće sij. 2025.; preporuke srp. 2025.) — Milan/Petra; tekst je već napisan, treba samo ovjera.
 
 ---
 
 ## 3. Što TREBA popraviti (should)
 
-Rangirana lista — sve su to stvari koje knjigu danas aktivno koštaju čitatelja, vidljivosti ili vjerodostojnosti.
+### 3.1 Akademska higijena — sada najveća pojedinačna prilika (≈pola dana)
 
-### 3.1 Vidljivost i akademska higijena (≈1 dan posla ukupno)
+Ovo je dio koji se **nije pomaknuo** od prošlog izvještaja i sada je, kad je vidljivost odrađena, na vrhu liste.
 
-| Stavka | Stanje | Učinak popravka |
+| Stavka | Stanje | Učinak |
 |---|---|---|
-| Open Graph + Twitter card meta | **nema ih** | dijeljenje poveznice napokon pokazuje naslovnicu i opis; Quarto ima ugrađeno (`open-graph: true` + `image:`) |
-| meta description + canonical | **nema** | Google snippet pod kontrolom autora |
-| **llms.txt** | **nema** | Quarto to sada generira nativno (`llms-txt: true`) — jedna YAML linija; za knjigu na hrvatskom nadproporcionalno vrijedno jer AI asistenti citiraju čisti markdown umjesto da haluciniraju preko HTML-a |
-| **CITATION.cff + Zenodo DOI** | **nema** | GitHub "Cite this repository" gumb + verzionirani DOI po izdanju (koncept-DOI u podnožje knjige); pola dana posla, formalna citatnost za sva tri autora |
-| 404.html | **nema** | mrtve poveznice vode natrag u knjigu |
-| Verzija/changelog vidljiv čitatelju | **nema** | čitatelj zna čita li stabilno izdanje ili radnu verziju |
+| **CITATION.cff + Zenodo DOI** | nema | GitHub "Cite this repository" gumb + trajni, verzionirani DOI po izdanju (koncept-DOI u podnožje). Za troje imenovanih autora to je najveći pojedinačni dobitak na akademskoj vjerodostojnosti. Nizak trošak. |
+| **llms.txt** | nema | Quarto 1.7+ to generira nativno (`website: → llms-txt: true`, jedna linija) — pише `llms.txt` indeks + `.llms.md` čisti markdown za svaku stranicu. Za knjigu na hrvatskom nadproporcionalno vrijedno jer AI asistenti citiraju čist tekst umjesto da haluciniraju preko HTML-a. |
+| **og:url + og:type + rel=canonical** | nema | Dijeljenje se razrješava na kanonsku stranicu; bogatiji rich-preview; SEO higijena. Kroz `include-in-header`. |
+| **apple-touch-icon link + theme-color** | resurs postoji, nije ulinkan | iOS bookmark dobiva ikonu umjesto screenshota; mobilni browser-chrome u boji teme. |
+| **Vidljiva oznaka izdanja** | nema | Čitatelj zna čita li radnu ili stabilnu verziju (npr. "Radna verzija, lipanj 2026." na naslovnoj). |
+| **Ispravak dijakritika autora** | "Luka Sikić" | Ime u meta-podacima i citatnim podacima bit će točno ("Luka Šikić"). |
 
-### 3.2 Pristupačnost (2026. standard, ne zakonska obveza)
+### 3.2 PDF — tehnički najvrjednija investicija (nepromijenjeno, **visok prioritet**)
 
-EU Accessibility Act (na snazi od 28. 6. 2025.) **ne obvezuje** besplatnu akademsku knjigu, ali je WCAG 2.1 AA de facto ljestvica kvalitete, a Quarto 1.8 ima ugrađene a11y provjere pri renderu:
+`_quarto-pdf.yml` aktivira **oba** filtra — `strip-ojs.lua` i `strip-svg.lua`. Posljedica: svih ~110 OJS grafova **i** sve SVG infografike (pogl. 01/05/12/14) brišu se iz PDF-a **bez statične zamjene**. Sam `strip-svg.lua` u zaglavlju je označen kao privremen ("TODO: ukloniti kad postoji rsvg-convert/PNG fallback"). PDF je tekstualno vjeran, ali slijep za figure. Rješenje: pred-renderirani PNG/PDF snapshotovi za ~4 SVG infografike i ključne OJS figure, uvjetno samo u PDF profilu, pa ukloniti `strip-svg.lua`. Dotad PDF ostaje označen kao "Radna verzija".
 
-- alt/aria tekst za ~110 OJS grafova — trenutno najveća rupa (canvas/SVG grafovi nevidljivi čitačima ekrana); spaja se s posлом #fig-labela iz §2.3
-- provjeriti kontrast verdigris `#4A6B5C` na papiru `#F2EDE3` — blizu AA granice 4,5:1
-- tipkovnička operabilnost OJS slidera
+### 3.3 Pristupačnost OJS grafova (nepromijenjeno, **visok prioritet**)
 
-### 3.3 PDF — najveća pojedinačna tehnička investicija
+Kontrast palete je riješen (§2.2). Prava preostala rupa: OJS grafovi montiraju se u prazan `div` JS-om u browseru i nemaju pristupačno ime. Samo 28 od 110 OJS-blokova ima `fig-alt`, a i taj se renderira kao komentar u bloku koda, ne kao `aria-label`/`role="img"` na grafu. Sliders su (`Inputs.range`, 38 ih je) tipkovnički operabilni po defaultu, ali bez labela vezanog uz graf. Posao: omotati svaki OJS graf u kontejner koji izlaže `fig-alt` kao `aria-label`, podići pokrivenost prema 1:1 (prioritet pogl. 02 i 14), i uz svaki slider dati tekst/tablicu vrijednosti. Ovo se spaja s poslom #fig-oznaka iz §2.3.
 
-`strip-ojs.lua` i `strip-svg.lua` brišu interaktivni sadržaj **bez zamjene**: PDF čitatelj (druga polovica publike, kako kažu smjernice) gubi svih 110 grafova i infografike. Rješenje: statični snapshot svakog grafa s default parametrima (ggplot2 rekreacija ili headless render), uvjetno uključen samo u PDF profil. Smjernice ovo točno identificiraju kao tehnički najvrjedniju investiciju — nalaz revizije to potvrđuje.
+### 3.4 Performanse (manja stavka)
 
-### 3.4 Performanse
-
-- `02-alokacijska-funkcija.html` (693 KB) i `14-porezi.html` (838 KB) — dvostruko-trostruko iznad ostalih; mobilni čitatelji to osjete. Dijeljenje pogl. 14 (teorija / sustav u praksi), koje smjernice ionako predlažu, rješava i ovo.
+- `14-porezi.html` = **868 KB** (najteža stranica, ~nepromijenjeno; 36 OJS-a), `02-alokacijska.html` = **592 KB** (lakše za 100 KB). Novo pogl. 15 = 239 KB, čisto (0 OJS/SVG). Ako je važna mobilna brzina, podijeliti najteže figure u pogl. 14 ili lazy-mount OJS ćelija; inače prihvatljivo kao cijena interaktivne pedagogije.
 
 ---
 
 ## 4. Što knjigu MOŽE učiniti "cutting edge" (could)
 
-Benchmark prema stanju tehnike (sve verificirano web-istraživanjem, lipanj 2026.): CORE Econ (born-interactive standard), R4DS 2e, Telling Stories with Data, The Effect, OWID teaching hub. Ključni nalaz: **nijedan udžbenik javnih politika još nije isporučio in-browser izvršne, automatski ocijenjene vježbe — knjiga koja to napravi na hrvatskom bila bi rana, ne kasna.**
+Benchmark prema stanju tehnike, web-verificiran lipanj 2026. **Ključni nalaz iz prošlog izvještaja i dalje vrijedi, ali pooštren:** in-browser izvršne, automatski ocijenjene vježbe i dalje nije isporučio nijedan udžbenik javnih politika — a izvršni + autogradirani udžbenik **na hrvatskom** ostaje rana, ne kasna pozicija. Standard su postavili udžbenici podatkovne znanosti (CORE Econ "The Economy 2.0", R4DS 2e, The Effect 2e, Telling Stories with Data), ali nitko u kombinaciji (jezik = hrvatski) × (domena = javni izbor + primijenjene javne financije).
 
-### Razina 1 — brze pobjede (tjedan dana, sve zajedno)
+### Razina 1 — brze pobjede (dani)
 
-1. **llms.txt + OG meta + CITATION.cff/DOI + 404** (§3.1) — knjiga postaje vidljiva ljudima, tražilicama i AI asistentima.
-2. **Hover-pojmovnik iz postojećih def-blokova.** 84 `{#def-}` divova su gotova infrastruktura; `debruine/quarto-glossary` (Lua filter, malen, forkabilan) pretvara ih u hover-definicije kroz cijelu knjigu + centralnu `pojmovnik.qmd` stranicu. Dvojezični pojmovnik elegantno rješava i napetost oko engleskih glosa.
-3. **"Hrvatska u brojkama" iz mrtvog kapitala.** 4 dataseta u `data/atlas` (COFOG, rashodi, prihodi, porezi % BDP-a) ne koristi nijedno poglavlje — jedan ggplot RH-vs-EU graf po praktičnom poglavlju (12–14), Milan osvježava jednom godišnje.
+1. **llms.txt + CITATION.cff/Zenodo DOI + og:url/canonical/apple-touch/theme-color + oznaka izdanja** (§3.1) — knjiga postaje trajno citatabilna i bolje vidljiva ljudima, tražilicama i AI asistentima. Sve nisko-trošno.
+2. **Kvizovi za samoprovjeru — `rquiz` (CRAN).** *Ispravak prošlog izvještaja:* 2026. pobjednik za server-free kvizove je **`rquiz`** (čisti htmlwidget, bez servera, MC + cloze, ARIA/višejezičnost) — radi u HTML knjizi, autorira se inline u qmd. `exams2forms` ostaje teža alternativa (pilot) ako zatreba banka parametriziranih pitanja s exportom u PDF/Moodle. `webexercises` je zamrznut (zadnje izdanje 2023.), `naquiz` mrtav — **izbjeći oba**.
+3. **Hover-pojmovnik (`debruine/quarto-glossary`).** *Korekcija prošlog izvještaja:* ovo **nije** "gotova infrastruktura / brza pobjeda". 88 `{#def-}` blokova su teorem-stilske definicije (pojam podebljan u rečenici), **ne** strojno čitljiv `pojam: definicija` rječnik. `quarto-glossary` traži zaseban YAML koji treba jednokratno izvući iz tih 88 definicija (ručno ili skriptom). Kad YAML postoji, ožičenje je trivijalno i sjeda na već uključene `citations-hover`/`footnotes-hover`. Vrijedno, ali **srednji** trošak.
 
-### Razina 2 — transformativne investicije (1–3 mjeseca, biraju se 2–3)
+### Razina 2 — transformativne investicije (biraju se 2–3)
 
-4. **quarto-live pilot (webR) u jednom poglavlju.** Grana `experiment/webr-quarto-live` već postoji na remoteu. quarto-live v0.2.0 (svibanj 2026., Posit) daje izvršne R ćelije + vježbe s prazninama, hintovima i automatskim ocjenjivanjem — na statičnom hostingu, bez servera. To je jedina stavka koja mijenja *kakva je ovo knjiga*: callout-vjezba postaje iskustvo umjesto upute. Pilot u pogl. 13 ili 18; oprez na payload (deseci MB pri prvom učitavanju) i PDF-strip plumbing (isti obrazac kao strip-ojs.lua).
-5. **Statični PDF fallbackovi za OJS/SVG** (§3.3).
-6. **Kvizovi za samoprovjeru.** Standard 2026. za R-temeljen Quarto udžbenik: `exams2forms` (dinamična pitanja, R/exams ekosustav) ili jednostavniji `webexercises`. Pet pitanja po poglavlju; banka pitanja ujedno je prvi korak prema nastavničkim materijalima. (naquiz je mrtav — izbjeći.)
-7. **Nastavnički slajdovi (revealjs) po poglavlju.** Po benchmarku (Mankiw/CORE/OWID) presudan faktor usvajanja kolegija. Iz istih qmd izvora.
-8. **Interaktivna vremenska crta hrvatskih javnih politika 1990.–danas** na landing stranici — efektno, jeftino, dijeljivo (smjernice §3).
+4. **Izvršne ćelije — `coatless/quarto-webr`, ne `quarto-live`.** *Važan ispravak:* `quarto-live` (r-wasm) zadnje je na **v0.1.2 (sij. 2025., pre-1.0)** i isporučuje se kao vlastiti `format: live-html` koji **sukobljava** s `type: book` (jedan zajednički `format: html`) — Posit forum potvrđuje da korisnici nisu mogli čisto koristiti `live-html` unutar knjige. Dvije izvedive staze: (a) filter-temeljeni `coatless/quarto-webr` (`filters: [webr]`) na 1–2 podatkovno teška poglavlja (pogl. 02, 14), ili (b) zaseban standalone `live-html` radni list izvan projekta knjige koji reupotrebljava podatke poglavlja. Pilot prije rollouta — payload i WASM-dostupnost paketa su realna ograničenja. Ovo je jedina stavka koja mijenja *kakva je ovo knjiga*: 21 statična `callout-vjezba` postaje izvršno iskustvo.
+5. **Statični PDF/SVG fallbackovi** (§3.2).
+6. **Nastavnički revealjs slajdovi po poglavlju.** Quarto ne podržava revealjs unutar `type: book`, pa se gradi kao **zaseban build-profil** (`_quarto-slides.yml` + `{{< include >}}`), izvan `chapters:` liste. Stabilna jezgra Quarta, srednji trošak, visoka nastavnička vrijednost.
+7. **"Hrvatska u brojkama" iz Atlasa.** 4 CSV-a u `data/atlas` (rashodi, prihodi, porezi, COFOG) već pokreću Atlas, ali ih ne koristi nijedno poglavlje. Jedan ggplot/OJS RH-vs-EU graf po praktičnom poglavlju (12–15) iz istog izvora.
 
-### Razina 3 — strateški smjerovi (nakon zatvaranja backloga, uz koautore)
+### Razina 3 — strateški smjerovi (uz koautore)
 
-9. **Sadržajne rupe — potvrđene grep-om, ne dojmom:**
-   - *Fiskalni federalizam:* 0 spominjanja Oatesa/Tiebouta/izravnanja u 9 114 linija; Tiebout i Oates (samostalno) nisu ni u bibliografiji. Najveća tiha rupa; novo poglavlje u DIO IV.
-   - *Socijalno osiguranje/demografija:* uvod obećava mirovine-zdravstvo-obrazovanje, isporuka raspršena; `notes/frontier-expansion.md` već ima razrađen nacrt poglavlja.
-   - *Javni dug:* "održivost duga" 0 pogodaka; ili proširiti pogl. 13 ili blok o dugoročnoj održivosti.
-   - *EU kao država:* EU postoji samo kao sidro primjera; poglavlje u DIO III (koji s 2 poglavlja ostaje strukturno najtanji dio) — intelektualno najoriginalniji dodatak. Mueller je u bib; Vaubel, Besley/Persson, Mazzucato nisu.
-   - *Bihevioralna politika:* djelomično pokrivena (nudge sekcija u pogl. 12, meki paternalizam u pogl. 03) — rupa je manja nego što smjernice tvrde; nedostaju sludge i bihevioralni neuspjesi regulatora, što su ENRICHMENT umetci, ne poglavlje.
-   - *Proces nastanka politika:* Kingdon citiran jednom (pogl. 19), agenda-setting u pogl. 06 — tri potoka, punktuirana ravnoteža i koalicije zagovaranja nemaju dom.
-10. **Provodni slučaj kroz pet dijelova** (euro ili klimatska politika; smjernice §4) — pogl. 19 sada ima retrospektivni zaključak, ali kumulativna nit kroz dijelove i dalje ne postoji.
-11. **Atlas kao citatabilni izvor:** dovršiti onesposobljene indikatore u `podaci.qmd`, embed-gumb po grafu, DOI za datasete — pretvara Atlas u distribucijski kanal.
-12. **Alat:** 8 najavljenih kalkulatora / 0 isporučenih — ili isporučiti prva 2 (porezni klin, Laffer — OJS već postoji u pogl. 14 kao osnova) ili skinuti stranicu s navbara dok ne postoji.
+8. **Preostale sadržajne rupe** (vidi §5).
+9. **closeread** kao zaseban marquee data-story (npr. "kako nastaje javni dug" ili šetnja kroz fiskalni federalizam) — v1.0.1 (stud. 2025.), zreo, ali je također vlastiti `format` koji se sukobljava s knjigom; **samo standalone**, ne transformacija poglavlja. Watch.
+10. **Alat:** 8 najavljenih kalkulatora / 0 isporučenih — ili isporučiti prva 2 (porezni klin, Lafferova krivulja — Atlas dokazuje da OJS+Plot lanac radi) ili stranicu pošteno preimenovati u "plan/roadmap" da se ne čita kao isporučena funkcija (vidi §6).
 
-### Svjesno PRESKOČITI (verificirano protiv tržišta)
+### Svjesno PRESKOČITI
 
-- **Shinylive** — svaki applet nosi vlastiti webR runtime; postojећих 110 OJS grafova daje istu pedagogiju uz ~1 % težine.
-- **Ugrađeni RAG chat ("pitaj knjigu")** — kapa.ai cjenovno za dev-tools tvrtke; Cloudflare AI Search još u beti bez cijene. llms.txt rješava 80 % vrijednosti besplatno: čitatelj pita vlastiti ChatGPT/Claude. Revidirati kad se beta-cijene stabiliziraju.
-- **TTS audio** — hrvatski je tek 2026. dosegao audioknjižnu kvalitetu (ElevenLabs v3, Azure hr-HR), ali trošak je tekući, a potražnja nedokazana; eventualno pilot s jednim poglavljem.
-- **Automatski generirane OG slike po poglavlju** — ugrađena metadata s naslovnicom dovoljna.
-- **Prijevod na engleski** — smjernice §6 ostaju točne: na engleskom konkurencija postoji, na hrvatskom ne.
+- **EPUB** — konfiguracija je jedna linija, ali svaki OJS graf i custom callout otpadaju ili degradiraju; za web-first knjigu čija je razlika upravo interaktivnost, EPUB cijepa održavanje za marginalan doseg. PDF već pokriva statičnu distribuciju.
+- **Shinylive / ugrađeni RAG / TTS / auto-OG-slike / prijevod na engleski** — kao u prošlom izvještaju (llms.txt rješava 80 % "pitaj knjigu" vrijednosti; na hrvatskom nema konkurencije).
 
 ---
 
-## 5. Predloženi redoslijed (90 dana)
+## 5. Sadržajne rupe — reocijenjeno protiv `main`-a
+
+Šest rupa iz prošlog izvještaja, provjereno čitanjem živih poglavlja i `references.bib`-a. **Tri su zatvorene/smanjene, tri stoje.**
+
+**Zatvoreno / smanjeno:**
+- **EU kao država / EU javne financije — ZATVORENO.** Cijelo novo poglavlje 15 (242 linije, 3 tablice, 2 def-bloka, sva tri callouta, izvori iz 2024./25.). Najveća pojedinačna promjena.
+- **Održivost javnog duga — POKRIVENO.** `def-javni-dug` (pogl. 13, lin. 163–165) formalizira r > g "grudvanje"; Reinhart-Rogoff u pogl. 04 (lin. 288); EU-DSA okvir u pogl. 15. Ostaje samo sitni polish (nema eksplicitne jednadžbe/figure dinamike duga).
+- **Fiskalni federalizam — DJELOMIČNO → uglavnom zatvoreno na EU razini.** Oates u bib + citiran u pogl. 15 (lin. 30, 104, načelo korespondencije), OCA teorija (Mundell/Kenen), risk-sharing (Sachs-Sala-i-Martin, Sørensen-Yosha). **Rezidual:** Tiebout ("glasanje nogama") nigdje se ne spominje (nema ga u bib), a **domaći** fiskalni federalizam (dodjela poreza nižim razinama, izravnanje — `izravnanje` 0 pogodaka) odsutan je; obrada je EU-kao-razina, ne hrvatske lokalne financije.
+
+**I dalje otvoreno (sve srednja težina):**
+- **Socijalno osiguranje (mirovine/zdravstvo/demografija) — DJELOMIČNO.** Ekonomska logika je čvrsta (udruživanje rizika, tržišni neuspjesi, demografija, Baumolova bolest troškova — pogl. 13, lin. 115/123/131–133), ali nema strukturirane obrade dizajna mirovinskog sustava (PAYG vs kapitalizirano, tri stupa), omjera ovisnosti, ni atribuirane tipologije socijalne države. **Esping-Andersen i dalje nije ni u bib ni u tekstu.**
+- **Proces nastanka politika — DJELOMIČNO, najmanje popravljeno.** Agenda-setting je rigorozan, ali samo kroz javni/socijalni izbor (McKelvey, Romer-Rosenthal u pogl. 06). Kingdon je jedno spominjanje u pogl. 20 (lin. 21); **punktuirana ravnoteža (Baumgartner-Jones) i koalicije zagovaranja (Sabatier) potpuno odsutne** iz bib i teksta. Za knjigu *javnih politika* ovo je najbranjiviji pojedinačni dodatak — Kingdon je već u bib, pa je proširenje "tri toka" jeftino.
+- **Bihevioralna politika — DJELOMIČNO.** Nudge je adekvatno pokriven (pogl. 12, lin. 100–108, Thaler-Sunstein, auto-uključivanje s empirijom). **"Sludge" je odsutan svugdje (0 pogodaka)**, a regulatorni neuspjeh u pogl. 16 uokviren je kao zarobljavanje/birokracija, nikad bihevioralno. Most pogl. 12 ↔ pogl. 16 je jeftin (Sunstein 2017 već u bib).
+
+**Potvrđeno odsutni bib-ključevi:** Tiebout, Esping-Andersen, Mazzucato, Vaubel, Besley, Persson, Sabatier, Baumgartner-Jones.
+
+**Dvije najveće prilike uz najmanji trošak:** proširenje "multiple streams" u pogl. 20 (Kingdon već u bib) i "sludge" odlomak koji premošćuje pogl. 12 i 16 (Sunstein već u bib).
+
+---
+
+## 6. Stanje platforme (Alat / Atlas / Resursi)
+
+- **Alat (`alat.qmd`) — i dalje 8 najavljenih, 0 isporučenih.** Svih 8 kartica je `vd-soon` "Uskoro" placeholder; 0 OJS-blokova, 0 skripti, 0 inputa u cijeloj datoteci. Nedavna izmjena (+110 linija, commit 76c6094) samo je dodala/preuredila placeholder-kartice. Preporuka: isporučiti barem jedan flagship kalkulator (porezni klin ili Laffer — Atlas dokazuje da lanac radi) **ili** stranicu pošteno označiti kao plan, da je se ne čita kao isporučena funkcija.
+- **Atlas (`podaci.qmd`) — živ.** Potpuno ožičen OJS dashboard s 4 aktivna indikatora (rashodi, prihodi, porezi, COFOG) iz 4 CSV-a, s prebacivanjem karta/serija/tablica, peer-odabirom i CSV-preuzimanjem. Pošteni nedostaci: search-polje i 4 sidebar-indikatora (porezni klin, struktura poreza, socijalna zaštita) su namjerno onesposobljeni stubovi; gumb "Otvori izvor" se može ožičiti na već prisutne Eurostat URL-ove uz gotovo nula truda.
+- **"Mrtvi kapital" — preciznije.** 4 atlas-CSV-a koriste se **isključivo** u `podaci.qmd`; nijedno poglavlje ne čita vanjske podatke (svi grafovi poglavlja koriste inline podatke). Dakle CSV-i **nisu** mrtvi na razini projekta — pokreću Atlas; jedino je `data/` (samo `.gitkeep`) prazan i poglavlja nikad nisu usvojila vanjsko-podatkovni obrazac.
+- **Resursi (`resursi.qmd`) — bogat, kuriran direktorij** (~190 anotiranih poveznica u ~20 sekcija). Nije stub.
+- **Vodič — koherentno ožičen** (hub + 20 podstranica, prunane iz sidebara timed JS-om; sitni rizik bljeska pri kasnom re-renderu sidebara).
+
+---
+
+## 7. Novo poglavlje 15 — "Javne financije EU" (prva ocjena)
+
+Poglavlje nema ledger-zapis; ovo je njegova prva ocjena. **Faza: `enriched`, spremno za koautorsku reviziju.**
+
+**Snaga:** potpun konceptualni luk koji izrijekom zatvara rupu "EU kao država", provučen jednim organizacijskim pitanjem ("zajednička valuta bez zajedničkog proračuna"). Pokriva svih pet ciljnih područja — EU proračun (vlastiti izvori, VFO, struktura rashoda), teoriju fiskalnog federalizma (Oates, OCA, risk-sharing), povijest fiskalnih pravila (Maastricht → 2024.), Europski semestar (3 stupa) i NextGenerationEU. Jaka javnoizborna okosnica (deficitna pristranost, moralni hazard, eksternalije duga). **Citatna besprijekornost: svih 23 ključa razrješivo, bez visećih.** Tri dobro građene MD-tablice nose vizualni teret. Sva tri callouta prisutna (među ostalim, empirija — američka federalna apsorpcija šokova). Stilski usklađeno.
+
+**Slabosti / posao:**
+- **Nema OJS grafa ni figure** (srednje). Jedino DIO IV poglavlje bez vizuala; tvrdnja "EU proračun je malen" (lin. 46/48/180/233) zaslužuje jedan stupčasti graf (EU proračun ~1 % BND-a vs nacionalni ~45–50 % BDP-a) + `fig-alt`; to daje i vježbi vizualno sidro.
+- **Balansirani proračun vs NGEU** (nizak). Lin. 52/182 tvrde da proračun "mora biti uravnotežen", pa odmah navode NGEU zaduživanje; pola rečenice neka razjasni da balansirano pravilo veže redovni godišnji proračun, a NGEU zaduživanje ide izvan njega kroz Odluku o vlastitim izvorima/headroom.
+- **Tiebout** (nizak, opcionalno). Fiskalni federalizam u lin. 30/104 leži samo na Oatesu; jedna klauzula o Tiebout-sortiranju zaokružila bi mikro-temelj — ali samo ako se doda bib-ključ, bez izmišljanja.
+- **Koautorski** (vidi §2.4): hrvatske/EU brojke u NGEU/Hrvatska sekciji + ovjera triju datuma.
+
+**Strukturna uloga:** pretvara DIO IV iz čisto nacionalnog u nacionalni + supranacionalni sloj; funkcionira kao praktični vrhunac DIO IV i most prema DIO V; re-sidri se na Musgraveove tri funkcije iz DIO I (jaka vertikalna integracija). Vjerojatno najaktualnije poglavlje u knjizi (izvori 2024./25.).
+
+---
+
+## 8. Korekcije za chapter-ledger (administrativno)
+
+**Ledger je sada dvostruko zastario** i traži obnovu, ne krpanje:
+
+1. **Numeracija:** ledger vodi 20 poglavlja sa starim brojevima 15–19 (državni neuspjesi → reforme). Na `main`-u su to **16–20**. Svaki zapis 15–19 treba pomaknuti +1.
+2. **Nedostaje poglavlje 15 (EU javne financije)** — dodati novi zapis (stage `enriched`; open self: `15-ojs-fig` jedan graf, `15-balanced-ngeu` pola rečenice; coauthor: HR/EU empirija + 3 datuma).
+3. **Naslov knjige** u ledgeru zastario — ažurirati na "Sve što želite znati o državi i javnim politikama u Hrvatskoj".
+
+**Prebaciti na `done`** (potvrđeno determinističkim brojanjem): svi `*-defs` zadaci (88 def-blokova u svim poglavljima osim uvoda), `06-empirija`, `08-empirija`, `04-fig-keynes`, `16-cite-legrand` (legrand1991 prisutan), `13-rg-prose` (def-javni-dug), `19-synthesis` (postoji "Pogled unatrag"), te ranije vježbe.
+
+**Ostaju / novo otvoreni (self):** `00-cite-romance`, `02-typo` (samo "premašenu"), `02/14-fig-labels` (+ a11y ožičenje), `03-cite-nordic` (Esping-Andersen), `07-expand` + `07-ojs`, `08-expand` + `08-fig`, **`17-empirija` (novo)**, `15-ojs-fig` (novo), vidljivost-kvaliteta (`og:url`/`canonical`/`apple-touch`/`theme-color`), `author-diacritic`, akademska higijena (`llms-txt`, `citation-cff`, `doi`).
+
+---
+
+## 9. Predloženi redoslijed (ažurirano)
 
 | Faza | Sadržaj | Ovisi o |
 |---|---|---|
-| **Tjedan 1** | Razina 1 u cijelosti: llms.txt, OG/meta/canonical, CITATION.cff + Zenodo, 404, Buchanan citat (pogl. 00), Esping-Andersen (pogl. 03), typo pogl. 02; ažurirati ledger | — |
-| **Tjedan 2–3** | Sustavan #fig-label + fig-alt prolaz kroz svih 110 OJS grafova (rješava i a11y i križno referenciranje); kontrast-provjera teme | — |
-| **Tjedan 4–6** | PDF statični fallbackovi (najvrjednija tehnička investicija); pojmovnik iz def-blokova | fig-labeli olakšavaju |
-| **Tjedan 7–10** | quarto-live pilot u jednom poglavlju + odluka hoće li nove vježbe ići webR; kvizovi u 3 poglavlja kao proba | pilot prije rollouta |
-| **Paralelno** | 3 omeđena koautorska zahtjeva (pogl. 14 stope, pogl. 19 ERM II/NPOO izvori, pogl. 13 HR sekcija); OJS graf za pogl. 07, figura za pogl. 08 | Milan, Petra |
-| **Nakon toga** | Strateška odluka o DIO IV proširenju (federalizam → socijalno osiguranje → dug) i DIO III (EU poglavlje); provodni slučaj | koautorski potpis |
+| **Brzo (dani)** | Akademska higijena: `llms-txt: true`, CITATION.cff + Zenodo DOI, `og:url`/`og:type`/`canonical`/`apple-touch`/`theme-color`, oznaka izdanja, ispravak "Luka Šikić"; Buchanan citat (pogl. 00); empirija-callout u pogl. 17; obnova ledgera na 21-poglavlje | — |
+| **Tjedan 1–2** | Sustavan #fig-label + `fig-alt`→`aria-label` prolaz (prioritet pogl. 02 i 14, rješava a11y + križne reference); jedan OJS graf za pogl. 15; Esping-Andersen + pogl. 03 | — |
+| **Tjedan 3–5** | PDF statični fallbackovi (najvrjednija tehnička investicija), zatim ukloniti `strip-svg.lua`; pojmovnik (YAML iz 88 def-blokova → quarto-glossary) | fig-labeli olakšavaju |
+| **Tjedan 6–9** | `quarto-webr` pilot u pogl. 02/14 + odluka o izvršnim vježbama; `rquiz` u 3 poglavlja kao proba; revealjs slajd-profil | pilot prije rollouta |
+| **Paralelno** | Koautorski zahtjevi: pogl. 14 stope, pogl. 20 ERM II/euro/NPOO, pogl. 13 HR sekcija, pogl. 15 HR/EU empirija + 3 datuma; OJS graf za pogl. 07, figura za pogl. 08 | Milan, Petra |
+| **Nakon toga** | Preostale sadržajne rupe: "multiple streams" (Kingdon) u pogl. 20, "sludge" most pogl. 12↔16, socijalno osiguranje (Esping-Andersen, dizajn mirovina); odluka o Alatu (isporučiti 2 ili preimenovati) | koautorski potpis |
 
 ---
 
-## 6. Korekcije za chapter-ledger (administrativno)
-
-Prebaciti na `done`: 02-defs, 03-defs, 03-verify-oecd (citat prisutan), 04-fig-keynes, 04-defs, 04-cite-imf, 06-empirija, 06-defs, 07-defs, 08-empirija, 09-def, 10-defs, 11-cite-empirics, 12-defs, 13-defs, 13-rg-prose, 16-defs, 16-cite-legrand, 17-def, 19-defs, 19-synthesis (sekcija postoji — eventualno ostaviti otvorenu užu ideju "protokol u 10 koraka").
-
-Ostaju otvorene: 00-cite-romance, 02-fig-labels, 02-typo (preformulirati opis), 03-cite-nordic, 07-expand (155 linija — ublaženo, ne zatvoreno), 07-ojs, 08-defs-fig (figura), 09-arc-narrow, 11-arc-canonical, 13-stub-draft (provjeriti gdje je placeholder završio), 14-style-confirm, 15-defs (ima ih 6 — vjerojatno done, provjeriti je li riječ o specifičnim pojmovima), 18-defs (4 — isto).
-
----
-
-*Izvještaj sastavljen BookWright metodologijom (panel + konduktor + benchmark), 4 paralelna agenta, svi nalazi provjereni na živim datotekama repozitorija ili web-izvorima s URL-ovima u podlozi. Benchmark izvori: quarto-live v0.2.0, Closeread v1.0.1, exams2forms, debruine/quarto-glossary, Quarto native llms.txt, Zenodo/CITATION.cff, EAA/WCAG 2026 baseline, CORE Econ / R4DS / Mixtape / The Effect / OWID.*
+*Izvještaj sastavljen BookWright metodologijom (panel + konduktor + benchmark) na grani `main` (`9868cee`), 7 paralelnih agenata, svi nalazi provjereni determinističkim brojanjem na živim datotekama čistog worktreeja ili web-izvorima s URL-ovima u podlozi. Benchmark izvori (lipanj 2026.): Quarto 1.7 native llms.txt, CITATION.cff/Zenodo, rquiz (CRAN), debruine/quarto-glossary, r-wasm/quarto-live v0.1.2 + coatless/quarto-webr, qmd-lab/closeread v1.0.1, exams2forms, EAA/EN 301 549/WCAG 2.1 AA, CORE Econ 2.0 / R4DS 2e / The Effect 2e / Telling Stories with Data / OWID.*

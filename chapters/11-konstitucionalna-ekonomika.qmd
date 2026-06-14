@@ -94,6 +94,18 @@ Iz tih nalaza proizlazi praktična pouka koja nije ideološka. Pitanje nije treb
 
 Važno je pritom naglasiti da pravila ne smiju biti potpuno slijepa na okolnosti. Fiskalna politika mora imati prostor za reakciju u velikim krizama. Zato dobro pravilo nije ono koje potpuno ukida fleksibilnost, nego ono koje dopušta odstupanja pod jasno definiranim uvjetima, uz transparentnost, obrazloženje i plan povratka na održivu putanju. Cilj nije mehanička politika, nego **vjerodostojna** politika.
 
+## Neovisnost središnje banke kao rješenje vremenske nedosljednosti
+
+Monetarni primjer vremenske nedosljednosti zaslužuje poseban tretman jer je upravo na njemu ustavna ekonomika ponudila svoje najuvjerljivije rješenje. Problem nije u tome što su nositelji monetarne politike loši, nego u tome što vlada koja kontrolira novac uvijek ima poticaj na kratkoročno iznenađenje. Robert Barro i David Gordon pokazali su da pod diskrecijom takav ishod nije slučajan nego ravnotežan, jer racionalni akteri unaprijed predviđaju vladin poticaj na iznenađenje i u svoja inflacijska očekivanja ugrađuju višu inflaciju, zbog čega nastaje trajna inflacijska pristranost koju nitko nije birao, a zaposlenost se ipak ne poveća [@barrogordon1983]. Diskrecija tako proizvodi najgore od obaju svjetova, visoku inflaciju bez stvarne koristi.
+
+Rješenje koje ustavna ekonomika nudi nije bolja volja nego bolja pravila. Ako se monetarna politika delegira središnjoj banci koja je zakonski odvojena od dnevne politike i kojoj je mandat usmjeren na stabilnost cijena, vlada se unaprijed odriče poluge kojom bi poslije bila u napasti manipulirati. Konzervativni središnji bankar spomenut ranije samo je jedan oblik tog poteza, a njegova bit nije u osobi nego u **mehanizmu vezivanja ruku** kojim se vjerodostojnost kupuje dragovoljnim odustajanjem od diskrecije [@rogoff1985]. Isti smo potez već vidjeli kod fiskalnih pravila u obliku ustavne kočnice zaduživanja. Vlada koja danas ne može pritisnuti središnju banku sutra ima vjerodostojniju valutu.
+
+Hrvatska je taj mehanizam dovela do njegove krajnje točke. Uvođenjem eura 2023. monetarna politika više se ne vodi u Zagrebu nego u Frankfurtu, a Hrvatska narodna banka postala je dio Eurosustava [@ecb2025]. Sa stajališta vremenske nedosljednosti to je najjači mogući oblik vezivanja ruku jer nositelj nacionalne politike više nema središnju banku na koju bi mogao pritisnuti čak ni kad bi to želio. Cijena tog poteza, gubitak monetarne politike kao instrumenta prilagodbe na domaće šokove, ista je ona koju smo razmotrili u poglavlju o stabilizacijskoj funkciji, a korist je uvezena vjerodostojnost monetarne stabilnosti koju malim i otvorenim gospodarstvima inače nije lako samostalno izgraditi.
+
+::: {.callout-praksa}
+Sljedeći korak te rasprave već je na stolu u obliku **digitalnog eura**, javnog digitalnog novca koji bi izdavala Europska središnja banka. Pristalice ističu da bi javni digitalni novac sačuvao ulogu središnje banke u svijetu u kojem se plaćanja sele na privatne platforme, dok kritičari upozoravaju da bi središnjoj banci dao nove ovlasti nad podacima o tome tko kome plaća. Tko izdaje novac i pod čijim nadzorom pritom ostaje pitanje na razmeđu monetarne vlasti i demokratske odgovornosti, gdje se ustavna ekonomika i monetarna politika izravno susreću.
+:::
+
 ## Političko-proračunski ciklusi
 
 S problemom vremenske nedosljednosti usko su povezani **političko-proračunski ciklusi**. Oni nastaju kada vlade prilagođavaju fiskalnu politiku izbornom kalendaru, a ne dugoročnim potrebama gospodarstva. Ideja je jednostavna. Prije izbora vlast ima poticaj povećati rashode, smanjiti poreze ili otvoriti nove programe kako bi povećala potporu birača. Nakon izbora dolazi vrijeme fiskalne prilagodbe [@nordhaus1975].

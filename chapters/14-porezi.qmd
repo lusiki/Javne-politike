@@ -2269,6 +2269,14 @@ ggplot(curve, aes(t, R)) +
 
 Taj koncept pokazuje da porezni prihodi ne rastu linearno s poreznom stopom. Pri vrlo visokim stopama dolazi do smanjenja ekonomske aktivnosti i porezne osnovice, što može smanjiti ukupne prihode. Njegova ključna poruka uklapa se u teoriju optimalnog oporezivanja na način da je ponašanje poreznih obveznika ključno za dizajn porezne politike.
 
+## Inflacija kao porez
+
+Postoji i način na koji država prihoduje a da pritom ne donese nijedan zakon o porezu. Kada središnja banka stvara novac kojim se financira državna potrošnja, raste količina novca u optjecaju, a porastom cijena slabi kupovna moć novca koji građani već drže. Taj gubitak vrijednosti gotovine i nominalno fiksnih potraživanja ekonomisti nazivaju **inflacijskim porezom**, a prihod koji država iz izdavanja novca pritom ostvaruje naziva se senioraž (*seigniorage*) [@rosen2014]. Riječ je o porezu koji nikada nije izglasan, ali ga plaćaju svi koji drže novac ili primaju nominalno fiksne dohotke poput mirovina i plaća koje ne prate inflaciju.
+
+Kao i svaki porez, i ovaj ima svoju raspodjelu tereta. Budući da siromašnija kućanstva drže veći dio imovine u gotovini i na tekućim računima, a teže se štite ulaganjem u realnu imovinu, inflacijski porez djeluje izrazito regresivno [@rosen2014]. Njegova privlačnost za državu leži u tome što ne traži ni administraciju ni političku raspravu, pa zemlje sa slabom poreznom upravom i visokim dugom često posežu za njim kad drugi izvori prihoda presuše. Povijest visokih inflacija pokazuje da je u takvim epizodama senioraž znao financirati znatan dio državne potrošnje, ali samo do točke u kojoj građani počnu bježati od novca, nakon čega i taj prihod nestaje [@cagan1956].
+
+Za Hrvatsku je ovaj instrument danas uglavnom teorijski jer je uvođenjem eura izdavanje novca prešlo na Eurosustav, pa nacionalna vlast inflacijskim porezom više ne raspolaže kao samostalnom polugom. Time se zatvara krug s onim što smo vidjeli u poglavljima o stabilizacijskoj funkciji i ustavnoj ekonomici, gdje je odricanje od monetarne poluge cijena vjerodostojnosti koju zajednička valuta donosi.
+
 ## Porezni sustavi u svijetu
 
 Stvarni porezni sustavi razlikuju se i po tome što pretežno oporezuju i po tome kako su nacionalno posloženi, pa ih je korisno gledati kroz obje leće.
@@ -2352,6 +2360,24 @@ Porezna reforma iz 2024. godine smanjila je opću stopu poreza na dohodak s 30 %
 Porez na dobit u Hrvatskoj ima proporcionalnu strukturu i relativno konkurentne stope, 10 % za male poduzetnike (do određenog praga prihoda) i 18 % za veće poduzetnike. Takva struktura osmišljena je kako bi se potaknulo poduzetništvo i investicije, osobito u malim i srednjim poduzećima. Uz to, postoje i različite porezne olakšice i poticaji, primjerice za ulaganja, istraživanje i razvoj te zapošljavanje.
 
 Za razliku od poreza na rad i potrošnju, oporezivanje imovine u Hrvatskoj relativno je slabo razvijeno. Ne postoji klasični godišnji porez na nekretnine u punom smislu, već se primjenjuju porez na promet nekretnina (3 % vrijednosti) te lokalni porezi i komunalne naknade. Zbog toga porezi na imovinu imaju relativno mali udio u ukupnim poreznim prihodima, što Hrvatsku razlikuje od nekih razvijenijih zemalja u kojima je taj oblik oporezivanja značajniji.
+
+### Globalna porezna arhitektura — od BEPS-a do globalnog minimalnog poreza
+
+Porezna autonomija država članica koju smo upravo opisali ima svoju cijenu. Kada svaka država samostalno određuje stopu poreza na dobit, a kapital se slobodno kreće preko granica, otvara se prostor za **poreznu konkurenciju** u kojoj zemlje snižavaju stope kako bi privukle dobit multinacionalnih kompanija. Krajnji ishod te dinamike poznat je kao utrka prema dnu, u kojoj naposljetku sve zemlje gube prihode, a najveću korist imaju najmobilniji porezni obveznici. Multinacionalne kompanije pritom dobit sustavno premještaju iz zemalja u kojima stvarno posluju u jurisdikcije s niskim ili nultim stopama, pojava koju je OECD nazvao erozijom porezne osnovice i premještanjem dobiti (*base erosion and profit shifting*, BEPS).
+
+Prvi val odgovora, poznat kao BEPS 1.0, OECD i skupina G20 pokrenuli su sredinom 2010-ih nizom mjera protiv najočitijih oblika izbjegavanja poreza, od zlouporabe ugovora o izbjegavanju dvostrukog oporezivanja do umjetnog premještanja nematerijalne imovine. Te su mjere otežale najagresivnije sheme, ali nisu dirale u sam temelj problema, a to je mogućnost da kompanija prijavi dobit ondje gdje gotovo da i nema stvarne ekonomske aktivnosti. Digitalizacija je problem dodatno zaoštrila jer poduzeće danas može ostvarivati velik prihod u nekoj zemlji bez ijednog ureda ili zaposlenika u njoj.
+
+Zbog toga je 2021. više od 130 zemalja pod okriljem OECD-a i skupine G20 postiglo dogovor o dubljoj reformi, nazvan dvostupanjskim rješenjem [@oecd2021twopillar]. **Stup 1** (*Pillar One*) preraspodjeljuje dio prava na oporezivanje najvećih i najprofitabilnijih kompanija prema zemljama u kojima se nalaze njihovi korisnici i kupci, neovisno o tome gdje kompanija ima fizičko sjedište. Time se izravno odgovara na pitanje kako oporezovati velike digitalne kompanije čija vrijednost nastaje ondje gdje su im korisnici, a dobit se prijavljuje drugdje, i postupno se zamjenjuju jednostrani nacionalni porezi na digitalne usluge koje je dotad uvelo više država.
+
+**Stup 2** (*Pillar Two*) uvodi **globalni minimalni porez**, pravilo prema kojem velike multinacionalne grupe u svakoj jurisdikciji u kojoj posluju moraju platiti efektivni porez na dobit od najmanje 15 %. Pravilo se odnosi na grupe s konsolidiranim godišnjim prihodom iznad 750 milijuna eura, a u Europskoj uniji je u primjeni od 2024. na temelju zajedničke direktive [@eudirective2022minimumtax]. Ako je efektivna stopa koju grupa plaća u nekoj zemlji niža od 15 %, razlika se naplaćuje kao dopunski porez, čime se uklanja sam poticaj za premještanje dobiti u niskoporezne jurisdikcije.
+
+Mehanizam dopunskog poreza ima suptilnu, ali važnu posljedicu za zemlje s niskim stopama. Ako država u kojoj posluje podružnica sama ne naplati razliku do 15 %, pravo na naplatu prelazi na druge zemlje u kojima grupa djeluje. Zbog toga je svakoj zemlji u interesu uvesti vlastiti **domaći dopunski porez** i tako zadržati prihod koji bi inače otišao stranim proračunima. Niska nominalna stopa time gubi velik dio svoje vrijednosti kao instrument privlačenja kapitala.
+
+Za Hrvatsku ta promjena nije apstraktna. Stopa poreza na dobit od 10 % za manje poduzetnike, opisana ranije u poglavlju, za velike grupe obuhvaćene globalnim minimalnim porezom više ne može ostati ispod praga od 15 % a da se razlika ne naplati negdje drugdje. Hrvatska je stoga, kao i ostale članice Unije, uvela domaći dopunski porez kojim osigurava da se ta razlika naplati u zemlji [@eudirective2022minimumtax]. Riječ je o udžbeničkom primjeru napetosti između porezne konkurencije i fiskalne koordinacije, u kojem se nacionalni instrument oblikovanja porezne politike svjesno ograničava kako bi se zaustavila utrka koja bi sve sudionike ostavila s manje prihoda.
+
+::: {.callout-empirija}
+Prema procjeni OECD-a, globalni minimalni porez trebao bi povećati svjetske prihode od poreza na dobit za red veličine 150 milijardi dolara godišnje, dijelom izravnom naplatom dopunskog poreza, a dijelom slabljenjem samog poticaja za premještanje dobiti [@oecd2021twopillar].
+:::
 
 ## Porezi u doba umjetne inteligencije
 

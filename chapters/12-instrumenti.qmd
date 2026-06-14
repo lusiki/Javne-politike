@@ -67,6 +67,10 @@ Država regulacijom određuje pravila tržišne utakmice. Ona propisuje standard
 
 Ipak, regulacija nije bez troškova. Prekomjerna ili loše dizajnirana regulacija može povećati troškove poslovanja, smanjiti konkurenciju, usporiti inovacije i stvoriti administrativne barijere. Regulacija koja je formalno uvedena radi zaštite potrošača može u praksi zaštititi postojeće ponuđače od konkurencije [@stigler1971; @stiglitz2015]. Poseban problem je regulatorno zarobljavanje. Zato bi svaka regulacija trebala odgovoriti na nekoliko pitanja, počevši od toga koji problem rješava, zašto tržište samo ne može riješiti problem, postoje li blaži instrumenti, koliko regulacija košta, tko snosi trošak, tko ima korist i kako će se mjeriti njezina učinkovitost.
 
+::: {.callout-praksa}
+Europska unija je na tržišnu moć digitalnih platformi odgovorila dvama propisima iz 2022. Akt o digitalnim tržištima (*Digital Markets Act*) najveće platforme označava kao **čuvare pristupa** i unaprijed im zabranjuje postupke kojima zatvaraju tržište, primjerice povlašćivanje vlastitih usluga ili otežavanje korisnicima da prijeđu konkurentu, kako bi tržište ostalo otvoreno za nove takmace [@eudma2022]. Akt o digitalnim uslugama (*Digital Services Act*) platformama nameće obveze nadzora nezakonitog sadržaja i transparentnosti oglašavanja, a najvećima i procjenu sustavnih rizika koje njihova usluga stvara za društvo [@eudsa2022]. Za razliku od klasične politike tržišnog natjecanja, koja djeluje naknadno i od slučaja do slučaja, oba propisa postavljaju pravila unaprijed, prije nego što šteta nastane.
+:::
+
 Taj se trošak može i nacrtati. Graf koji slijedi prikazuje tržište na kojem mjera, primjerice porez ili ograničenje, razdvaja cijenu koju kupci plaćaju od one koju proizvođači primaju, smanjuje razmijenjenu količinu ispod konkurentske razine i stvara trokut mrtvog tereta. Graf je interaktivan, pa klizač mijenja jačinu mjere.
 
 ::: {.content-visible when-format="html"}
