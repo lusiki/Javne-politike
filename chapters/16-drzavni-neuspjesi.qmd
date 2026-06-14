@@ -139,13 +139,9 @@ Svih osam dosad opisanih kvarova dijeli jednu skrivenu cijenu jer svaki, kada se
 
 Kada povjerenje padne, ljudi lakše opravdavaju izbjegavanje poreza i zaobilaženje pravila. Tako nastaje negativna spirala u kojoj slabe institucije proizvode loše politike, loše politike smanjuju povjerenje, a manje povjerenja dodatno slabi provedbu. Zato državni neuspjesi nisu samo ekonomski ili administrativni problem, nego i politički i društveni problem jer narušavaju legitimitet javnih politika.
 
-## Kako državne neuspjehe ugraditi u dizajn javnih politika
-
-Pojam državnih neuspjeha izravno je povezan s dizajnom javnih politika. Dobar dizajn ne znači samo odabrati teorijski prikladan instrument. Dobar dizajn znači unaprijed razmišljati o informacijama, poticajima, administrativnim kapacitetima, političkim pritiscima, koordinaciji, fiskalnim rizicima i mogućnosti evaluacije. Politika koja zanemaruje te elemente može izgledati uvjerljivo u strategiji, ali zakazati u stvarnosti.
-
-Neuspjesi države stoga nisu samo prepreka provedbi, nego moraju biti ugrađeni u sam proces dizajna. Dobra javna politika mora biti dizajnirana za stvarni, a ne idealni svijet. Mora pretpostaviti da su informacije ograničene, da akteri reagiraju na poticaje, da administracija ima kapacitetska ograničenja, da interesne skupine pokušavaju utjecati na pravila i da politički ciklus stvara pritisak na kratkoročne odluke.
-
 ## Test državnog neuspjeha
+
+Dobar dizajn javne politike ne znači samo odabrati teorijski prikladan instrument, nego unaprijed pretpostaviti da su informacije ograničene, da akteri reagiraju na poticaje, da administracija ima kapacitetska ograničenja, da interesne skupine pokušavaju utjecati na pravila i da politički ciklus gura prema kratkoročnim odlukama, ali i predvidjeti koordinaciju među institucijama, fiskalne rizike dugoročne provedbe i mogućnost kasnije evaluacije. Državni neuspjesi zato nisu samo prepreka provedbi, nego moraju biti ugrađeni u sam proces dizajna, koji računa na stvarni, a ne idealni svijet, jer politika koja te elemente zanemaruje može izgledati uvjerljivo u strategiji, a zakazati u stvarnosti.
 
 U praktičnom smislu, svaka kvalitetna javna politika trebala bi proći svojevrsni **test državnog neuspjeha**. Taj test ne služi tome da se politika unaprijed odbaci, nego da se unaprijed prepoznaju rizici. Pitanja se mogu sažeti u sljedećih osam točaka.
 

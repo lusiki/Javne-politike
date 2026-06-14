@@ -214,9 +214,19 @@ p +
 
 Sve navedeno pokazuje da je CBA u javnom sektoru znatno više od tehničkog alata. Ona je integrativni okvir koji povezuje ekonomsku učinkovitost s društvenom pravednošću, okolišnom održivošću i dugoročnom perspektivom.
 
+## Primjeri primjene
+
+Koraci i posebnosti obrađeni dosad jasnije se vide na konkretnim slučajevima, pa iste koncepte pratimo na tri tipa projekta koji se razlikuju po tome koliko se njihove koristi daju izraziti u novcu, na infrastrukturi, zdravstvu i okolišu.
+
+U slučaju infrastrukturnih projekata poput gradnje mosta troškovi su relativno transparentni i uključuju kapitalne izdatke i troškove održavanja, uz oportunitetni trošak javnih sredstava. Koristi su višedimenzionalne i obuhvaćaju uštede vremena putovanja, povećanu sigurnost te šire ekonomske koristi poput razvoja lokalnog gospodarstva i bolje integracije tržišta rada. Dio tih koristi ima obilježja eksternalija, pa odluka ne ovisi samo o financijskoj isplativosti, nego o tome generira li projekt pozitivnu neto društvenu korist kroz vrijeme.
+
+U zdravstvu, primjerice kod uvođenja novog lijeka, troškovi uključuju cijenu lijeka, distribuciju i administraciju. Koristi se odnose na produženje životnog vijeka i poboljšanje kvalitete života, što se često izražava kroz koncept QALY (*quality-adjusted life years*). Monetizacija tih koristi zahtijeva normativne pretpostavke o tome koliko društvo „vrijedi" dodatnu godinu života. Tu posebno dolazi do izražaja etička i distribucijska dimenzija jer financiranje skupog lijeka za rijetku bolest može biti „neisplativo" u uskom ekonomskom smislu, ali društveno poželjno iz perspektive pravednosti i solidarnosti.
+
+Kod okolišnih politika poput smanjenja emisija CO₂ troškovi ulaganja u zelene tehnologije često su visoki i javljaju se u kratkom roku, dok se koristi od izbjegnutih budućih šteta protežu duboko u budućnost i izražavaju kroz socijalnu cijenu ugljika. Izbor diskontne stope ovdje izravno uključuje pitanje međugeneracijske pravednosti, a klimatske politike imaju snažnu komponentu globalnih eksternalija.
+
 ## Ograničenja cost-benefit analize
 
-Unatoč svojoj važnosti, CBA ima značajna metodološka i praktična ograničenja. Ta ograničenja ne znače da je CBA neupotrebljiva, već da njezine rezultate treba interpretirati s oprezom i, gdje je potrebno, nadopuniti drugim pristupima.
+Primjeri zdravstva i okoliša već su nagovijestili gdje CBA postaje sporna, ondje gdje se koristi teško prevode u novac. Unatoč svojoj važnosti, CBA ima značajna metodološka i praktična ograničenja. Ta ograničenja ne znače da je CBA neupotrebljiva, već da njezine rezultate treba interpretirati s oprezom i, gdje je potrebno, nadopuniti drugim pristupima.
 
 Jedno od temeljnih ograničenja odnosi se na monetizaciju ne-tržišnih vrijednosti. Mnoge koristi, poput vrijednosti ljudskog života, zdravlja ili kvalitete okoliša, nemaju tržišnu cijenu i teško ih je precizno izraziti u novcu, pa rezultati mogu varirati ovisno o metodologiji.
 
@@ -239,16 +249,6 @@ Treći problem je rizik političke manipulacije i selektivne primjene. Budući d
 Četvrto ograničenje odnosi se na pitanja pravednosti i distribucije. Standardna CBA polazi od ukupne društvene koristi (Kaldor-Hicksov kriterij, vidi @def-kaldor-hicks), prema kojem je projekt opravdan ako dobitnici načelno mogu obeštetiti gubitnike i ostati na dobitku. Taj kriterij pritom ne traži da se ta naknada doista isplati, pa pozitivan rezultat ne jamči da će raspodjela koristi i troškova biti pravedna.
 
 Zbog svih navedenih ograničenja, u suvremenoj praksi CBA se rijetko koristi kao jedini alat. Sve se češće kombinira s multikriterijskom analizom, analizom utjecaja na okoliš i kvalitativnim procjenama. Njezina najveća snaga leži u sustavnom i transparentnom pristupu evaluaciji, ali njezina ograničenja zahtijevaju pažljivu interpretaciju i kombiniranje s drugim metodama.
-
-## Primjeri primjene
-
-Koraci, posebnosti i ograničenja obrađeni dosad jasnije se vide na konkretnim slučajevima, pa iste koncepte pratimo na tri tipa projekta koji se razlikuju po tome koliko se njihove koristi daju izraziti u novcu, na infrastrukturi, zdravstvu i okolišu.
-
-U slučaju infrastrukturnih projekata poput gradnje mosta troškovi su relativno transparentni i uključuju kapitalne izdatke i troškove održavanja, uz oportunitetni trošak javnih sredstava. Koristi su višedimenzionalne i obuhvaćaju uštede vremena putovanja, povećanu sigurnost te šire ekonomske koristi poput razvoja lokalnog gospodarstva i bolje integracije tržišta rada. Dio tih koristi ima obilježja eksternalija, pa odluka ne ovisi samo o financijskoj isplativosti, nego o tome generira li projekt pozitivnu neto društvenu korist kroz vrijeme.
-
-U zdravstvu, primjerice kod uvođenja novog lijeka, troškovi uključuju cijenu lijeka, distribuciju i administraciju. Koristi se odnose na produženje životnog vijeka i poboljšanje kvalitete života, što se često izražava kroz koncept QALY (*quality-adjusted life years*). Monetizacija tih koristi zahtijeva normativne pretpostavke o tome koliko društvo „vrijedi" dodatnu godinu života. Tu posebno dolazi do izražaja etička i distribucijska dimenzija jer financiranje skupog lijeka za rijetku bolest može biti „neisplativo" u uskom ekonomskom smislu, ali društveno poželjno iz perspektive pravednosti i solidarnosti.
-
-Kod okolišnih politika poput smanjenja emisija CO₂ troškovi ulaganja u zelene tehnologije često su visoki i javljaju se u kratkom roku, dok se koristi od izbjegnutih budućih šteta protežu duboko u budućnost i izražavaju kroz socijalnu cijenu ugljika. Izbor diskontne stope ovdje izravno uključuje pitanje međugeneracijske pravednosti, a klimatske politike imaju snažnu komponentu globalnih eksternalija.
 
 ## Evaluacija javnih politika i njezini ciljevi
 

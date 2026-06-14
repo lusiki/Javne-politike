@@ -18,7 +18,7 @@ U svakodnevnom političkom govoru neprestano koristimo izraze poput „Hrvatska 
 
 Na privatnom tržištu problem različitih preferencija rješava se elegantno, kroz sustav cijena i paralelnu potrošnju. Ako vi želite kavu, a ja čaj, oboje možemo biti zadovoljeni. U javnoj sferi većina je dobara i politika **nedjeljiva**. Ne možemo istodobno imati progresivan i proporcionalan porezni sustav, niti istim proračunskim novcem graditi autocestu prema Splitu i prema Varaždinu. Zbog toga glasovanje postaje mehanizam prisilne koordinacije, a pravila po kojima se glasovi agregiraju postaju odlučujuća za konačni ishod. Ista skupina ljudi, s istim preferencijama, može doći do različitih odluka ovisno o tome kako glasuje.
 
-Poglavlje tu složenost razotkriva u koracima. Počinje Condorcetovim paradoksom, najjednostavnijim primjerom u kojem većina zapada u krug bez pobjednika, te pokazuje da u više dimenzija taj ciklus prerasta u kaotičnu većinu bez ikakve stabilne točke. Odatle prelazi na pozicijske sustave poput Bordina pravila, koja čitaju cijelu rang-listu, pa onda problem poopćava do Arrowljeva teorema nemogućnosti, koji pokazuje da nijedno pravilo agregacije ne može istodobno zadovoljiti nekoliko razumnih zahtjeva. Zatim traži izlaz u jednovršnim preferencijama i medijanskom glasaču te otkriva koliko moći leži u kontroli dnevnog reda, čime nadzor nad postupkom često odlučuje više od samih preferencija.
+Poglavlje tu složenost razotkriva u koracima. Počinje Condorcetovim paradoksom, najjednostavnijim primjerom u kojem većina zapada u krug bez pobjednika, te pokazuje da u više dimenzija taj ciklus prerasta u kaotičnu većinu bez ikakve stabilne točke. Odatle problem poopćava do Arrowljeva teorema nemogućnosti, koji pokazuje da nijedno pravilo agregacije ne može istodobno zadovoljiti nekoliko razumnih zahtjeva, a onda na pozicijskim sustavima poput Bordina pravila pokazuje kako se ta nemogućnost razdjeljuje na konkretne kompromise. Zatim traži izlaz u jednovršnim preferencijama i medijanskom glasaču te otkriva koliko moći leži u kontroli dnevnog reda, čime nadzor nad postupkom često odlučuje više od samih preferencija.
 
 ## Condorcetov paradoks
 
@@ -252,9 +252,41 @@ Iz tih razlika među sustavima slijedi jedan dublji rezultat. Gibbard i Satterth
 
 Koliko će se ta ugrađena manipulabilnost stvarno iskoristiti ograničava dostupna informacija. Uspješno taktiziranje, poput pokapanja najjačeg suparnika spuštanjem na dno liste pod Bordinim pravilom, traži gotovo potpuno poznavanje tuđih listića, što je u velikom biračkom tijelu rijetko dostupno, pa se većina birača i pod manipulabilnim pravilima u praksi drži iskrenog poretka [@mueller1989]. Posljedica je da zabilježeni glasovi ne otkrivaju nužno stvarne preferencije birača, što dodatno otežava tumačenje izbornih i parlamentarnih ishoda kao izravnog izraza „volje naroda".
 
+## Arrowljev teorem nemogućnosti
+
+Dok Condorcetov paradoks pokazuje da većinsko glasovanje *može* proizvesti cikličke i nestabilne ishode, Kenneth Arrow postavio je pitanje na fundamentalnoj razini. Pitao se postoji li uopće *ikakav* sustav agregacije koji bi pouzdano i razumno pretvarao pojedinačne preferencije u društvenu odluku. Njegov odgovor, **Arrowljev teorem nemogućnosti** [@arrow1951], jedan je od najsnažnijih i najpesimističnijih rezultata u ekonomskoj znanosti 20. stoljeća.
+
+::: {#def-arrowljev-teorem}
+**Arrowljev teorem nemogućnosti** dokazuje da ne postoji sustav agregacije individualnih preferencija koji istodobno zadovoljava neograničenu domenu, kolektivnu racionalnost, Pareto-efikasnost, neovisnost o nevažnim alternativama i nediktatorstvo kada postoje barem tri alternative [@arrow1951].
+:::
+
+Arrow je tražio pravilo koje istodobno zadovoljava nekoliko razumnih i naizgled minimalnih uvjeta. Neograničena domena traži da pravilo radi za sve moguće kombinacije pojedinačnih preferencija. Kolektivna racionalnost traži da društveni poredak bude dosljedan, odnosno potpun i tranzitivan. Pareto-efikasnost traži da, ako svi preferiraju A ispred B, i društvo preferira A ispred B. Neovisnost o nevažnim alternativama zahtijeva da se rangiranje između A i B ne mijenja uvođenjem ili uklanjanjem treće alternative C. Konačno, nediktatorstvo isključuje mogućnost da jedan pojedinac nametne svoju volju cijeloj skupini bez obzira na preferencije ostalih.
+
+Arrowljev je dokaz pokazao da nijedno pravilo ne može zadovoljiti svih pet uvjeta istodobno čim postoje barem tri alternative. Ne postoji savršen demokratski mehanizam agregacije preferencija, pa svaki realan sustav glasovanja mora žrtvovati barem jedno od poželjnih svojstava. To ne znači da je demokracija besmislena, nego da svako pravilo odlučivanja ima ugrađena ograničenja i moguće nedosljednosti, te da izbor pravila uvijek uključuje kompromise.
+
+Intuicija dokaza objašnjava zašto nemogućnost nije puka nezgoda s jednim nezgodnim uvjetom. Iz neograničene domene, Pareto-uvjeta i neovisnosti o nevažnim alternativama slijedi da nad barem jednim parom alternativa postoji odlučujuća skupina, takva da njezino slaganje određuje društveni izbor bez obzira na ostale. Isti uvjeti potom tu odlučnost šire s jednog para na sve parove i istodobno je stežu sa skupine na sve manji krug, sve dok se ne svede na jednog jedinog pojedinca. Taj je pojedinac upravo diktator kojeg peti uvjet zabranjuje, pa pet naizgled minimalnih zahtjeva ne može stajati zajedno. Nemogućnost je zato strukturna posljedica istodobnog inzistiranja na dosljednosti, parnoj neovisnosti i poštivanju jednoglasja [@arrow1963; @sen1970].
+
+@tbl-arrow-uvjeti pokazuje što svaki uvjet zahtijeva i što se događa kada se prekrši.
+
+| Uvjet | Što zahtijeva | Posljedica kršenja u stvarnom svijetu |
+|---|---|---|
+| Neograničena domena | radi za sve moguće preferencije | blokade u duboko polariziranim društvima |
+| Kolektivna racionalnost | društveni poredak je dosljedan | cikličke većine i nestabilni ishodi |
+| Pareto-efikasnost | poštuje jednoglasne preferencije | loši kompromisi koje nitko zapravo ne želi |
+| Neovisnost o nevažnim alternativama | rang A i B ne ovisi o C | „spoiler" efekt trećih opcija |
+| Nediktatorstvo | nema diktatora | potpuna dosljednost zahtijeva koncentraciju moći |
+
+: Arrowljevi uvjeti i njihove implikacije. Izrada autora prema @arrow1951, @mueller1989 i @sen1970. {#tbl-arrow-uvjeti}
+
+::: {.callout-praksa}
+Posljedice teorema vide se u izbornim procesima. Pojava treće ili četvrte relevantne opcije (primjerice Mosta ili Možemo!) može osjetno promijeniti odnos snaga između dvije velike stranke, iako birači nisu bitno promijenili mišljenje o tim dvjema strankama, što je upravo kršenje uvjeta neovisnosti o nevažnim alternativama. Na razini EU slična se dinamika vidi pri glasovanju kvalificiranom većinom u Vijeću, gdje stavovi pojedinih zemalja mogu blokirati ili izmijeniti pakete poput fiskalnih pravila ili „Fit for 55".[^wp-ch06b]
+:::
+
+[^wp-ch06b]: Daljnje čitanje: McCune i Wilson (2023), [*Ranked-choice voting and the spoiler effect*](https://doi.org/10.1007/s11127-023-01050-3) (Public Choice).
+
 ## Bordino pravilo i pozicijsko glasovanje
 
-Ciklusi većine nastaju jer parno glasovanje odbacuje obavijest o tome koliko su opcije međusobno udaljene na svakom listiću. Pozicijski sustavi idu suprotnim putem i čitaju cijelu rang-listu, a ne samo prvi izbor. Pluralno glasovanje, najraširenije pravilo, leži na kraju tog raspona jer broji isključivo prvo mjesto, a sve o rasporedu ostalih kandidata zanemaruje. Kandidat kojeg vatrena manjina obožava, a tiha ga većina drži najgorom opcijom, pod pluralnim pravilom može pobijediti upravo zato što rang-lista te većine nikad ne uđe u zbroj.
+Arrowljev teorem pokazuje da nijedno pravilo ne može zadovoljiti sve uvjete odjednom, no pravila se razlikuju po tome koji uvjet žrtvuju i kako. Ciklusi većine, primjerice, nastaju jer parno glasovanje odbacuje obavijest o tome koliko su opcije međusobno udaljene na svakom listiću, dok pozicijski sustavi idu suprotnim putem i čitaju cijelu rang-listu, a ne samo prvi izbor. Pluralno glasovanje, najraširenije pravilo, leži na kraju tog raspona jer broji isključivo prvo mjesto, a sve o rasporedu ostalih kandidata zanemaruje. Kandidat kojeg vatrena manjina obožava, a tiha ga većina drži najgorom opcijom, pod pluralnim pravilom može pobijediti upravo zato što rang-lista te većine nikad ne uđe u zbroj.
 
 Borda je 1781. godine predložio da se svakom kandidatu dodijeli broj bodova prema njegovu mjestu na biračevoj rang-listi, čime u zbroj ulazi cijeli poredak, a ne samo vrh [@borda1781]. Zamisao nije bila posve nova jer je sličan postupak za izbor careva opisao Nikola Kuzanski još u prvoj polovici 15. stoljeća, no tek je Bordin memorandum Francuskoj akademiji znanosti pokrenuo formalnu raspravu o svojstvima takvih pravila [@mcleanurken1995].
 
@@ -445,39 +477,7 @@ Bordino pravilo nije ostalo na papiru. Pacifička država Nauru bira svoj parlam
 
 [^wp-ch06d]: Daljnje čitanje: Reilly (2002), [*Social Choice in the South Seas*](https://journals.sagepub.com/doi/abs/10.1177/0192512102023004002) (International Political Science Review); Fraenkel i Grofman (2014), [*The Borda Count and its Real-World Alternatives*](https://doi.org/10.1080/10361146.2014.900530) (Australian Journal of Political Science).
 
-Cijena te stabilnosti je osjetljivost na taktičko rangiranje, koju obuhvaća opći rezultat o manipulabilnosti iz prethodnog odjeljka. Hibridna pravila pokušavaju spojiti obje vrline tako da Bordin zbroj koriste za postupno ispadanje kandidata, pa Nansonov i Baldwinov sustav uvijek izaberu Condorcetova pobjednika kada on postoji, ali zauzvrat gube monotonost [@nanson1882; @baldwin1926]. Nijedan izbor pravila time ne izmiče kompromisu između suparničkih vrijednosti. Upravo to opažanje, da svako pravilo mora nešto žrtvovati, Arrow je podigao s razine pojedinačnih sustava na razinu načela.
-
-## Arrowljev teorem nemogućnosti
-
-Dok Condorcetov paradoks pokazuje da većinsko glasovanje *može* proizvesti cikličke i nestabilne ishode, Kenneth Arrow postavio je pitanje na fundamentalnoj razini. Pitao se postoji li uopće *ikakav* sustav agregacije koji bi pouzdano i razumno pretvarao pojedinačne preferencije u društvenu odluku. Njegov odgovor, **Arrowljev teorem nemogućnosti** [@arrow1951], jedan je od najsnažnijih i najpesimističnijih rezultata u ekonomskoj znanosti 20. stoljeća.
-
-::: {#def-arrowljev-teorem}
-**Arrowljev teorem nemogućnosti** dokazuje da ne postoji sustav agregacije individualnih preferencija koji istodobno zadovoljava neograničenu domenu, kolektivnu racionalnost, Pareto-efikasnost, neovisnost o nevažnim alternativama i nediktatorstvo kada postoje barem tri alternative [@arrow1951].
-:::
-
-Arrow je tražio pravilo koje istodobno zadovoljava nekoliko razumnih i naizgled minimalnih uvjeta. Neograničena domena traži da pravilo radi za sve moguće kombinacije pojedinačnih preferencija. Kolektivna racionalnost traži da društveni poredak bude dosljedan, odnosno potpun i tranzitivan. Pareto-efikasnost traži da, ako svi preferiraju A ispred B, i društvo preferira A ispred B. Neovisnost o nevažnim alternativama zahtijeva da se rangiranje između A i B ne mijenja uvođenjem ili uklanjanjem treće alternative C. Konačno, nediktatorstvo isključuje mogućnost da jedan pojedinac nametne svoju volju cijeloj skupini bez obzira na preferencije ostalih.
-
-Arrowljev je dokaz pokazao da nijedno pravilo ne može zadovoljiti svih pet uvjeta istodobno čim postoje barem tri alternative. Ne postoji savršen demokratski mehanizam agregacije preferencija, pa svaki realan sustav glasovanja mora žrtvovati barem jedno od poželjnih svojstava. To ne znači da je demokracija besmislena, nego da svako pravilo odlučivanja ima ugrađena ograničenja i moguće nedosljednosti, te da izbor pravila uvijek uključuje kompromise.
-
-Intuicija dokaza objašnjava zašto nemogućnost nije puka nezgoda s jednim nezgodnim uvjetom. Iz neograničene domene, Pareto-uvjeta i neovisnosti o nevažnim alternativama slijedi da nad barem jednim parom alternativa postoji odlučujuća skupina, takva da njezino slaganje određuje društveni izbor bez obzira na ostale. Isti uvjeti potom tu odlučnost šire s jednog para na sve parove i istodobno je stežu sa skupine na sve manji krug, sve dok se ne svede na jednog jedinog pojedinca. Taj je pojedinac upravo diktator kojeg peti uvjet zabranjuje, pa pet naizgled minimalnih zahtjeva ne može stajati zajedno. Nemogućnost je zato strukturna posljedica istodobnog inzistiranja na dosljednosti, parnoj neovisnosti i poštivanju jednoglasja [@arrow1963; @sen1970].
-
-@tbl-arrow-uvjeti pokazuje što svaki uvjet zahtijeva i što se događa kada se prekrši.
-
-| Uvjet | Što zahtijeva | Posljedica kršenja u stvarnom svijetu |
-|---|---|---|
-| Neograničena domena | radi za sve moguće preferencije | blokade u duboko polariziranim društvima |
-| Kolektivna racionalnost | društveni poredak je dosljedan | cikličke većine i nestabilni ishodi |
-| Pareto-efikasnost | poštuje jednoglasne preferencije | loši kompromisi koje nitko zapravo ne želi |
-| Neovisnost o nevažnim alternativama | rang A i B ne ovisi o C | „spoiler" efekt trećih opcija |
-| Nediktatorstvo | nema diktatora | potpuna dosljednost zahtijeva koncentraciju moći |
-
-: Arrowljevi uvjeti i njihove implikacije. Izrada autora prema @arrow1951, @mueller1989 i @sen1970. {#tbl-arrow-uvjeti}
-
-::: {.callout-praksa}
-Posljedice teorema vide se u izbornim procesima. Pojava treće ili četvrte relevantne opcije (primjerice Mosta ili Možemo!) može osjetno promijeniti odnos snaga između dvije velike stranke, iako birači nisu bitno promijenili mišljenje o tim dvjema strankama, što je upravo kršenje uvjeta neovisnosti o nevažnim alternativama. Na razini EU slična se dinamika vidi pri glasovanju kvalificiranom većinom u Vijeću, gdje stavovi pojedinih zemalja mogu blokirati ili izmijeniti pakete poput fiskalnih pravila ili „Fit for 55".[^wp-ch06b]
-:::
-
-[^wp-ch06b]: Daljnje čitanje: McCune i Wilson (2023), [*Ranked-choice voting and the spoiler effect*](https://doi.org/10.1007/s11127-023-01050-3) (Public Choice).
+Cijena te stabilnosti je osjetljivost na taktičko rangiranje, koju obuhvaća opći Gibbard-Satterthwaiteov rezultat o manipulabilnosti. Hibridna pravila pokušavaju spojiti obje vrline tako da Bordin zbroj koriste za postupno ispadanje kandidata, pa Nansonov i Baldwinov sustav uvijek izaberu Condorcetova pobjednika kada on postoji, ali zauzvrat gube monotonost [@nanson1882; @baldwin1926]. Nijedan izbor pravila time ne izmiče kompromisu između suparničkih vrijednosti koji je Arrowljev teorem već uzdigao s razine pojedinačnih sustava na razinu načela.
 
 ## Jednovršne preferencije i medijanski glasač
 

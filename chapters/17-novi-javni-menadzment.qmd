@@ -36,7 +36,7 @@ Prve zemlje koje su intenzivno provodile reforme NPM-a bile su Ujedinjeno Kralje
 
 ## Marketizacija javnog sektora
 
-Prva velika dimenzija NPM-a bila je **marketizacija** javnog sektora, odnosno uvođenje tržišnih ili tržištu sličnih mehanizama u područja koja su tradicionalno bila organizirana kroz hijerarhiju javne uprave. Temeljna pretpostavka bila je da javni monopol često vodi neučinkovitosti, dok konkurencija stvara pritisak na smanjenje troškova, inovacije i bolju kvalitetu usluga.
+Najopipljivija dimenzija NPM-a bila je **marketizacija** javnog sektora, odnosno uvođenje tržišnih ili tržištu sličnih mehanizama u područja koja su tradicionalno bila organizirana kroz hijerarhiju javne uprave. Temeljna pretpostavka bila je da javni monopol često vodi neučinkovitosti, dok konkurencija stvara pritisak na smanjenje troškova, inovacije i bolju kvalitetu usluga.
 
 Pretpostavka o većoj učinkovitosti privatne organizacije ne počiva na čaroliji privatnog vlasništva, nego na tri jasna mikroekonomska mehanizma. Prvi je *ostatni dohodak* (*residual claimancy*). Vlasnik privatne tvrtke izravno snosi posljedice loših odluka i prima koristi dobrih, dok rukovoditelj u javnoj agenciji rijetko može osobno zadržati uštedu i rijetko gubi posao zbog prekoračenja troškova. Drugi mehanizam je *prijetnja izlaskom* (*exit*). Privatni dobavljač koji izgubi kupce propada, dok javnu službu klijent najčešće ne može zamijeniti, što slabi njezin poticaj na pažnju prema korisniku. Treći mehanizam je *cjenovni informacijski signal*. Konkurentska tržišta neprekidno objavljuju što košta proizvodnja, što je mjera koja u javnom sektoru zahtijeva odvojen i često nepouzdan računovodstveni napor [@hood1991].
 
@@ -60,7 +60,7 @@ Reforme britanskog zdravstvenog sustava (NHS) u devedesetima dobar su primjer do
 
 ## Korporativno upravljanje i upravljanje prema rezultatima
 
-Druga velika dimenzija NPM-a bila je **korporativno upravljanje** javnim sektorom. Tradicionalna birokracija počivala je na hijerarhiji, pravilima, formalnim procedurama i neutralnosti službenika [@weber1978]. Takav je model imao važne prednosti poput predvidljivosti, zakonitosti i profesionalnosti, ali su ga kritičari smatrali previše usmjerenim na poštivanje procedura, a premalo na rezultate.
+Uz tržišne mehanizme, NPM je tražio i promjenu mjerila uspjeha kroz **korporativno upravljanje** javnim sektorom. Tradicionalna birokracija počivala je na hijerarhiji, pravilima, formalnim procedurama i neutralnosti službenika [@weber1978]. Takav je model imao važne prednosti poput predvidljivosti, zakonitosti i profesionalnosti, ali su ga kritičari smatrali previše usmjerenim na poštivanje procedura, a premalo na rezultate.
 
 NPM je zato pokušao pomaknuti fokus s pitanja „je li procedura poštovana?" na pitanje „što je postignuto?".
 

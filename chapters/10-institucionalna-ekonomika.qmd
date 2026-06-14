@@ -68,6 +68,14 @@ Razlika u transakcijskim troškovima vidljiva je u tome koliko je lako prenijeti
 
 [^wp-ch10]: Daljnje čitanje: Djankov i dr. (2003), [*Courts: The Lex Mundi Project*](https://www.nber.org/papers/w8890); Galiani i Schargrodsky (2010), [*Property Rights for the Poor: Effects of Land Titling*](https://www.isid.ac.in/~tridip/Teaching/DevelopmentMicroeconomics/Readings/Galiani&Schargrodsky-JPubEco2010.pdf).
 
+## Problem principal–agent u javnom sektoru
+
+Isti troškovi informacija i nadzora koji otežavaju tržišnu razmjenu javljaju se i kad netko djeluje u tuđe ime, pa je principal–agent problem zapravo transakcijski trošak delegirane ovlasti. On je jedan od ključnih koncepata za razumijevanje zašto javne politike često daju rezultate koji odstupaju od izvornih ciljeva. U javnom sektoru građani su principali, dok su političari, javni službenici, agencije i menadžeri javnih poduzeća agenti kojima se delegira ovlast odlučivanja i provedbe. Problem nastaje zato što interesi principala i agenta nisu uvijek potpuno usklađeni, a principal ne može savršeno nadzirati agenta.
+
+To stvara prostor za neučinkovitost, oportunističko ponašanje i udaljavanje javnih politika od javnog interesa. Političari mogu birati projekte koji su kratkoročno vidljivi i izborno korisni, iako nisu dugoročno najvažniji. Birokratske organizacije mogu štititi svoje nadležnosti i proračune. U javnom sektoru problem je dodatno naglašen jer izostaje jasna tržišna disciplina. Privatno poduzeće koje dugo donosi loše odluke može izgubiti kupce i izaći s tržišta, dok javna politika ili javno poduzeće mogu nastaviti djelovati i kada su rezultati slabi.
+
+Ublažavanje principal–agent problema zahtijeva mehanizme transparentnosti, odgovornosti i nadzora. Transparentnost znači da građani, mediji, parlament i neovisne institucije imaju dostupne informacije o proračunima, javnim nabavama i rezultatima politika. Odgovornost znači da postoje posljedice za loše upravljanje. Nadzor uključuje reviziju, parlamentarni nadzor, neovisne regulatore, sudove, medije i civilno društvo. Upravo se tu nova institucionalna ekonomika povezuje s teorijom javnog izbora, pri čemu obje upozoravaju da pravila, poticaji i mehanizmi odgovornosti oblikuju stvarno ponašanje političkih i administrativnih aktera.
+
 ## Institucije, tržište rada i porezi
 
 Ako institucije podižu ili snižavaju troškove svake razmjene, onda i razmjena rada za plaću ovisi o pravilima koja je okružuju jednako kao razmjena bilo kojeg drugog dobra. Uloga institucija posebno je vidljiva na **tržištu rada**. Tržište rada nije samo mjesto na kojem se susreću ponuda i potražnja za radom. Ono je snažno oblikovano zakonima, kolektivnim ugovorima, poreznim sustavom, socijalnom zaštitom, obrazovnim sustavom, sudstvom i normama o radu. Zato zemlje slične razine razvoja mogu imati vrlo različite stope zaposlenosti, nezaposlenosti mladih, dugotrajne nezaposlenosti ili neformalnog rada.
@@ -77,14 +85,6 @@ U zemljama s fleksibilnim i predvidivim institucionalnim okvirom poslodavci se l
 Jedna od najvažnijih ideja nove institucionalne ekonomike jest da institucije oblikuju poticaje, a poticaji oblikuju ponašanje. Porezni sustav jasno pokazuje taj mehanizam. Ako je porezni sustav jednostavan, transparentan, stabilan i dosljedno proveden, građani i poduzeća lakše razumiju svoje obveze i imaju veći poticaj poštovati pravila. Ako je sustav složen, često mijenjan, nepredvidiv i neujednačeno primjenjivan, raste poticaj za izbjegavanje poreza, rad u sivoj ekonomiji i traženje posebnih povlastica.
 
 Važno je da porezna pravila ne djeluju samo kroz visinu poreznih stopa. Djeluju i kroz administrativne troškove, sigurnost tumačenja propisa, kvalitetu porezne uprave i povjerenje u to da se porezi troše smisleno. Građani mogu biti spremniji plaćati poreze ako vjeruju da sustav vrijedi za sve i da javni sektor zaista pruža usluge koje opravdavaju porezni teret. Suprotno tome, percepcija korupcije, nepravde i neučinkovite potrošnje može smanjiti poreznu disciplinu, čak i kada formalna pravila ostaju ista. Porezni sustav stoga nije samo instrument prikupljanja prihoda, nego i skup pravila koji oblikuje ponašanje.
-
-## Problem principal–agent u javnom sektoru
-
-Problem principal–agent jedan je od ključnih koncepata za razumijevanje zašto javne politike često daju rezultate koji odstupaju od izvornih ciljeva. U javnom sektoru građani su principali, dok su političari, javni službenici, agencije i menadžeri javnih poduzeća agenti kojima se delegira ovlast odlučivanja i provedbe. Problem nastaje zato što interesi principala i agenta nisu uvijek potpuno usklađeni, a principal ne može savršeno nadzirati agenta.
-
-To stvara prostor za neučinkovitost, oportunističko ponašanje i udaljavanje javnih politika od javnog interesa. Političari mogu birati projekte koji su kratkoročno vidljivi i izborno korisni, iako nisu dugoročno najvažniji. Birokratske organizacije mogu štititi svoje nadležnosti i proračune. U javnom sektoru problem je dodatno naglašen jer izostaje jasna tržišna disciplina. Privatno poduzeće koje dugo donosi loše odluke može izgubiti kupce i izaći s tržišta, dok javna politika ili javno poduzeće mogu nastaviti djelovati i kada su rezultati slabi.
-
-Ublažavanje principal–agent problema zahtijeva mehanizme transparentnosti, odgovornosti i nadzora. Transparentnost znači da građani, mediji, parlament i neovisne institucije imaju dostupne informacije o proračunima, javnim nabavama i rezultatima politika. Odgovornost znači da postoje posljedice za loše upravljanje. Nadzor uključuje reviziju, parlamentarni nadzor, neovisne regulatore, sudove, medije i civilno društvo. Upravo se tu nova institucionalna ekonomika povezuje s teorijom javnog izbora, pri čemu obje upozoravaju da pravila, poticaji i mehanizmi odgovornosti oblikuju stvarno ponašanje političkih i administrativnih aktera.
 
 ## Institucije i dugoročni razvoj
 

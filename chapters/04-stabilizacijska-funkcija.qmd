@@ -593,8 +593,6 @@ Stabilizacijska funkcija zato ima dvostruku prirodu. S jedne strane, ona je nuž
 
 S druge strane, stabilizacijska funkcija nosi rizike. Država može reagirati prekasno, preširoko ili pogrešnim instrumentima. Privremene mjere mogu postati trajne. Krizne intervencije mogu povećati javni dug. Spašavanje poduzeća i banaka može stvoriti moralni hazard. Kontrole cijena mogu smanjiti inflaciju na papiru, ali stvoriti nestašice ili gubitke. Subvencije mogu zaštititi radna mjesta kratkoročno, ali dugoročno održavati neproduktivne strukture. Zato stabilizacijska politika mora biti snažna kada je potrebna, ali i pažljivo dizajnirana.
 
-Stabilizacijska funkcija nije poziv na stalnu intervenciju države u sve makroekonomske procese. Ona je argument za odgovornu, pravodobnu i privremenu intervenciju kada tržišna prilagodba prijeti velikim društvenim troškovima. Dobra stabilizacijska politika mora znati kada djelovati, koliko djelovati i kada se povući.
-
 ## Stabilnost kao javno dobro
 
 Ostaje pitanje zašto se ta zahtjevna zadaća uopće povjerava državi, a ne prepušta tržištu kao i ostala dobra. Odgovor leži u prirodi same stabilnosti.
