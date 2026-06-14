@@ -26,15 +26,16 @@ format:
 # Sve što želite znati o odnosu države i tržišta {.sc-hero-title}
 
 ::: {.sc-hero-lede}
-Država oblikuje gotovo svaki važan dio našeg svakodnevnog života — ovaj udžbenik objašnjava kako i zašto.
+Država oblikuje gotovo svaki važan dio našeg svakodnevnog života. Ova knjiga objašnjava kako i zašto.
 :::
 
 ::: {.sc-hero-cta}
 [Počnite čitati](chapters/00-uvod.html){.btn .btn-primary}
 [Preuzmite PDF](pdf/Javne-politike.pdf){.btn .btn-secondary}
+[Mentalne mape](vodic.html){.btn .btn-secondary}
 
 ```{=html}
-<button type="button" class="btn btn-ghost toc-toggle" aria-expanded="false" aria-controls="sadržaj-wrapper" data-label-show="Pogledajte sadržaj" data-label-hide="Sakrijte sadržaj">Pogledajte sadržaj</button>
+<button type="button" class="btn btn-secondary toc-toggle" aria-expanded="false" aria-controls="sadržaj-wrapper" data-label-show="Pogledajte sadržaj" data-label-hide="Sakrijte sadržaj">Pogledajte sadržaj</button>
 ```
 :::
 
@@ -43,12 +44,6 @@ Država oblikuje gotovo svaki važan dio našeg svakodnevnog života — ovaj ud
 [AUTORI]{.section-label}
 
 **[Milan Deskar-Škrbić](https://zsem.hr/clanovi/dr-sc-milan-deskar-skrbic/) · [Petra Palić](https://www.unicath.hr/odjeli-i-fakultet/nastavnici/petra-palic) · [Luka Sikić](https://www.lukasikic.info/)**
-:::
-
-::: {.sc-author-cell}
-[OPSEG]{.section-label}
-
-**[21 poglavlje · 5 dijelova]{.sc-meta-mono}**
 :::
 
 ::: {.sc-author-cell}
@@ -75,8 +70,6 @@ Za sve koji žele razumjeti kako država utječe na svakodnevni život, a nemaju
 <div class="sc-cover-cta">
 <a href="prirucnik.html" class="btn btn-ghost sc-cover-btn">Pročitajte vodič →</a>
 <a href="pdf/Prirucnik.pdf" class="btn btn-ghost sc-cover-btn">Preuzmite PDF</a>
-<a href="vodic.html" class="btn btn-ghost sc-cover-btn">Mentalne mape →</a>
-<a href="chapters/00-uvod.html" class="btn btn-ghost sc-cover-btn">Cijela knjiga →</a>
 </div>
 ```
 
@@ -196,7 +189,7 @@ Za sve koji žele razumjeti kako država utječe na svakodnevni život, a nemaju
 </details>
 
 <details class="toc-chapter">
-<summary><span class="toc-num">5a.</span> <a href="chapters/05a-teorija-igara.html">Teorija igara i zakonodavno pregovaranje</a></summary>
+<summary><span class="toc-num">6.</span> <a href="chapters/05a-teorija-igara.html">Teorija igara i zakonodavno pregovaranje</a></summary>
 <ul>
 <li><a href="chapters/05a-teorija-igara.html#strateške-igre-i-kolektivno-djelovanje">Strateške igre i kolektivno djelovanje</a></li>
 <li><a href="chapters/05a-teorija-igara.html#kukavica-i-koordinacija-sukob-i-institucije">Kukavica i koordinacija, sukob i institucije</a></li>
@@ -208,7 +201,7 @@ Za sve koji žele razumjeti kako država utječe na svakodnevni život, a nemaju
 </details>
 
 <details class="toc-chapter">
-<summary><span class="toc-num">6.</span> <a href="chapters/06-kolektivni-izbor.html">Kolektivni izbor</a></summary>
+<summary><span class="toc-num">7.</span> <a href="chapters/06-kolektivni-izbor.html">Kolektivni izbor</a></summary>
 <ul>
 <li><a href="chapters/06-kolektivni-izbor.html#condorcetov-paradoks">Condorcetov paradoks</a></li>
 <li><a href="chapters/06-kolektivni-izbor.html#od-jednog-ciklusa-do-kaotične-većine">Od jednog ciklusa do kaotične većine</a></li>
@@ -221,7 +214,7 @@ Za sve koji žele razumjeti kako država utječe na svakodnevni život, a nemaju
 </details>
 
 <details class="toc-chapter">
-<summary><span class="toc-num">7.</span> <a href="chapters/07-stranke-izbori.html">Političke stranke i izbori</a></summary>
+<summary><span class="toc-num">8.</span> <a href="chapters/07-stranke-izbori.html">Političke stranke i izbori</a></summary>
 <ul>
 <li><a href="chapters/07-stranke-izbori.html#medijanski-glasač-i-natjecanje-za-centar">Medijanski glasač i natjecanje za centar</a></li>
 <li><a href="chapters/07-stranke-izbori.html#kako-se-stranke-natječu-za-glas">Kako se stranke natječu za glas</a></li>
@@ -233,7 +226,7 @@ Za sve koji žele razumjeti kako država utječe na svakodnevni život, a nemaju
 </details>
 
 <details class="toc-chapter">
-<summary><span class="toc-num">8.</span> <a href="chapters/08-interesne-skupine.html">Interesne skupine — iza kulisa politike</a></summary>
+<summary><span class="toc-num">9.</span> <a href="chapters/08-interesne-skupine.html">Interesne skupine — iza kulisa politike</a></summary>
 <ul>
 <li><a href="chapters/08-interesne-skupine.html#logika-kolektivnog-djelovanja">Logika kolektivnog djelovanja</a></li>
 <li><a href="chapters/08-interesne-skupine.html#digitalno-organiziranje-i-olsonova-logika">Digitalno organiziranje i Olsonova logika</a></li>
@@ -247,7 +240,7 @@ Za sve koji žele razumjeti kako država utječe na svakodnevni život, a nemaju
 </details>
 
 <details class="toc-chapter">
-<summary><span class="toc-num">9.</span> <a href="chapters/09-birokracija.html">Dva pogleda na birokraciju</a></summary>
+<summary><span class="toc-num">10.</span> <a href="chapters/09-birokracija.html">Dva pogleda na birokraciju</a></summary>
 <ul>
 <li><a href="chapters/09-birokracija.html#klasičan-weberovski-pogled">Klasičan, weberovski pogled</a></li>
 <li><a href="chapters/09-birokracija.html#meritokratska-državna-služba">Meritokratska državna služba</a></li>
@@ -261,7 +254,7 @@ Za sve koji žele razumjeti kako država utječe na svakodnevni život, a nemaju
 <p class="toc-part">DIO III: Nova institucionalna i konstitucionalna ekonomika</p>
 
 <details class="toc-chapter">
-<summary><span class="toc-num">10.</span> <a href="chapters/10-institucionalna-ekonomika.html">Nova institucionalna ekonomika — pravila igre</a></summary>
+<summary><span class="toc-num">11.</span> <a href="chapters/10-institucionalna-ekonomika.html">Nova institucionalna ekonomika — pravila igre</a></summary>
 <ul>
 <li><a href="chapters/10-institucionalna-ekonomika.html#institucije-kao-pravila-igre">Institucije kao pravila igre</a></li>
 <li><a href="chapters/10-institucionalna-ekonomika.html#transakcijski-troškovi">Transakcijski troškovi</a></li>
@@ -274,7 +267,7 @@ Za sve koji žele razumjeti kako država utječe na svakodnevni život, a nemaju
 </details>
 
 <details class="toc-chapter">
-<summary><span class="toc-num">11.</span> <a href="chapters/11-konstitucionalna-ekonomika.html">Konstitucionalna (ustavna) ekonomika</a></summary>
+<summary><span class="toc-num">12.</span> <a href="chapters/11-konstitucionalna-ekonomika.html">Konstitucionalna (ustavna) ekonomika</a></summary>
 <ul>
 <li><a href="chapters/11-konstitucionalna-ekonomika.html#što-je-ustavna-ekonomika">Što je ustavna ekonomika?</a></li>
 <li><a href="chapters/11-konstitucionalna-ekonomika.html#pravila-i-odluke-dvije-razine-političkog-odlučivanja">Pravila i odluke — dvije razine političkog odlučivanja</a></li>
@@ -289,7 +282,7 @@ Za sve koji žele razumjeti kako država utječe na svakodnevni život, a nemaju
 <p class="toc-part">DIO IV: Javne financije i javne politike u praksi</p>
 
 <details class="toc-chapter">
-<summary><span class="toc-num">12.</span> <a href="chapters/12-instrumenti.html">Instrumenti državne intervencije</a></summary>
+<summary><span class="toc-num">13.</span> <a href="chapters/12-instrumenti.html">Instrumenti državne intervencije</a></summary>
 <ul>
 <li><a href="chapters/12-instrumenti.html#čime-država-djeluje">Čime država djeluje</a></li>
 <li><a href="chapters/12-instrumenti.html#porezi">Porezi</a></li>
@@ -304,7 +297,7 @@ Za sve koji žele razumjeti kako država utječe na svakodnevni život, a nemaju
 </details>
 
 <details class="toc-chapter">
-<summary><span class="toc-num">13.</span> <a href="chapters/13-javna-potrosnja.html">Kako država troši naš novac?</a></summary>
+<summary><span class="toc-num">14.</span> <a href="chapters/13-javna-potrosnja.html">Kako država troši naš novac?</a></summary>
 <ul>
 <li><a href="chapters/13-javna-potrosnja.html#javna-potrošnja-kroz-povijest">Javna potrošnja kroz povijest</a></li>
 <li><a href="chapters/13-javna-potrosnja.html#ekspanzija-države-u-20.-stoljeću">Ekspanzija države u 20. stoljeću</a></li>
@@ -316,7 +309,7 @@ Za sve koji žele razumjeti kako država utječe na svakodnevni život, a nemaju
 </details>
 
 <details class="toc-chapter">
-<summary><span class="toc-num">14.</span> <a href="chapters/14-porezi.html">Porezi — više od tereta</a></summary>
+<summary><span class="toc-num">15.</span> <a href="chapters/14-porezi.html">Porezi — više od tereta</a></summary>
 <ul>
 <li><a href="chapters/14-porezi.html#što-su-porezi">Što su porezi?</a></li>
 <li><a href="chapters/14-porezi.html#porezi-kroz-povijest">Porezi kroz povijest</a></li>
@@ -332,7 +325,7 @@ Za sve koji žele razumjeti kako država utječe na svakodnevni život, a nemaju
 </details>
 
 <details class="toc-chapter">
-<summary><span class="toc-num">15.</span> <a href="chapters/15-eu-javne-financije.html">Javne financije Europske unije — zajednička valuta bez zajedničkog proračuna</a></summary>
+<summary><span class="toc-num">16.</span> <a href="chapters/15-eu-javne-financije.html">Javne financije Europske unije — zajednička valuta bez zajedničkog proračuna</a></summary>
 <ul>
 <li><a href="chapters/15-eu-javne-financije.html#javne-financije-u-nacionalnoj-državi">Javne financije u nacionalnoj državi</a></li>
 <li><a href="chapters/15-eu-javne-financije.html#što-je-drukčije-u-europskoj-uniji">Što je drukčije u Europskoj uniji?</a></li>
@@ -349,7 +342,7 @@ Za sve koji žele razumjeti kako država utječe na svakodnevni život, a nemaju
 <p class="toc-part">DIO V: Kako do kvalitetnijih javnih politika?</p>
 
 <details class="toc-chapter">
-<summary><span class="toc-num">16.</span> <a href="chapters/16-drzavni-neuspjesi.html">Državni neuspjesi i prepreke kvalitetnim javnim politikama</a></summary>
+<summary><span class="toc-num">17.</span> <a href="chapters/16-drzavni-neuspjesi.html">Državni neuspjesi i prepreke kvalitetnim javnim politikama</a></summary>
 <ul>
 <li><a href="chapters/16-drzavni-neuspjesi.html#što-znači-neuspjeh-države">Što znači neuspjeh države?</a></li>
 <li><a href="chapters/16-drzavni-neuspjesi.html#zašto-državni-neuspjesi-nisu-isto-što-i-previše-države">Zašto državni neuspjesi nisu isto što i „previše države”</a></li>
@@ -369,7 +362,7 @@ Za sve koji žele razumjeti kako država utječe na svakodnevni život, a nemaju
 </details>
 
 <details class="toc-chapter">
-<summary><span class="toc-num">17.</span> <a href="chapters/17-novi-javni-menadzment.html">Novi javni menadžment</a></summary>
+<summary><span class="toc-num">18.</span> <a href="chapters/17-novi-javni-menadzment.html">Novi javni menadžment</a></summary>
 <ul>
 <li><a href="chapters/17-novi-javni-menadzment.html#odakle-novi-javni-menadžment">Odakle Novi javni menadžment</a></li>
 <li><a href="chapters/17-novi-javni-menadzment.html#marketizacija-javnog-sektora">Marketizacija javnog sektora</a></li>
@@ -381,7 +374,7 @@ Za sve koji žele razumjeti kako država utječe na svakodnevni život, a nemaju
 </details>
 
 <details class="toc-chapter">
-<summary><span class="toc-num">18.</span> <a href="chapters/18-novo-upravljanje.html">Od novog javnog menadžmenta prema novom upravljanju</a></summary>
+<summary><span class="toc-num">19.</span> <a href="chapters/18-novo-upravljanje.html">Od novog javnog menadžmenta prema novom upravljanju</a></summary>
 <ul>
 <li><a href="chapters/18-novo-upravljanje.html#tvrdokorni-problemi-i-potreba-za-suradnjom">Tvrdokorni problemi i potreba za suradnjom</a></li>
 <li><a href="chapters/18-novo-upravljanje.html#whole-of-government-i-povezana-vlada">Whole-of-government i povezana vlada</a></li>
@@ -393,7 +386,7 @@ Za sve koji žele razumjeti kako država utječe na svakodnevni život, a nemaju
 </details>
 
 <details class="toc-chapter">
-<summary><span class="toc-num">19.</span> <a href="chapters/19-cba-evaluacija.html">Cost-benefit analiza i evaluacija javnih politika</a></summary>
+<summary><span class="toc-num">20.</span> <a href="chapters/19-cba-evaluacija.html">Cost-benefit analiza i evaluacija javnih politika</a></summary>
 <ul>
 <li><a href="chapters/19-cba-evaluacija.html#zašto-je-cost-benefit-analiza-važna">Zašto je cost-benefit analiza važna?</a></li>
 <li><a href="chapters/19-cba-evaluacija.html#koraci-u-provedbi-cost-benefit-analize">Koraci u provedbi cost-benefit analize</a></li>
@@ -406,7 +399,7 @@ Za sve koji žele razumjeti kako država utječe na svakodnevni život, a nemaju
 </details>
 
 <details class="toc-chapter">
-<summary><span class="toc-num">20.</span> <a href="chapters/20-reforme.html">Reforme u javnom sektoru — što funkcionira i zašto?</a></summary>
+<summary><span class="toc-num">21.</span> <a href="chapters/20-reforme.html">Reforme u javnom sektoru — što funkcionira i zašto?</a></summary>
 <ul>
 <li><a href="chapters/20-reforme.html#zašto-su-reforme-javnog-sektora-nužne">Zašto su reforme javnog sektora nužne</a></li>
 <li><a href="chapters/20-reforme.html#što-određuje-uspjeh-reformi">Što određuje uspjeh reformi</a></li>

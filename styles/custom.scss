@@ -1840,11 +1840,11 @@ h2.sc-cover-title,
 }
 
 .sc-cover-btn.btn {
-  font-family: $brand-font-sans;
-  font-size: 0.78rem;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  font-weight: 600;
+  // Isti mono registar kao naslovnički CTA gumbi lijevo (.sc-hero-cta .btn)
+  font-family: $brand-font-mono;
+  font-size: 0.8rem;
+  letter-spacing: 0.03em;
+  font-weight: 500;
   color: $brand-navy !important;
   background: transparent;
   border: 1px solid $sc-rule-strong;
