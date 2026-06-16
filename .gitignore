@@ -16,6 +16,10 @@ index_files/
 chapters/*.html
 chapters/*_files/
 
+# Root-level render spillover — canonical output is docs/
+/*.html
+/site_libs/
+
 ### PDF profile spurious output — only the .pdf is canonical ###
 # `quarto render --profile pdf` also writes HTML into pdf/ because the
 # profile inherits format settings from _quarto.yml. Ignore everything in
@@ -28,6 +32,11 @@ pdf/*
 tmp/
 mnt/
 Razno/
+
+### Leaked home-dir shell init (accidental spillover) ###
+/.bashrc
+/.bash_logout
+/.profile
 
 ### AL (legacy) ###
 .vscode/

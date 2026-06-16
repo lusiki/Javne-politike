@@ -1,0 +1,130 @@
+---
+title: "Vodič · Reforme u javnom sektoru"
+toc: false
+number-sections: false
+lang: hr-HR
+format:
+  html:
+    page-layout: full
+    body-classes: vd-page
+---
+
+```{=html}
+<div class="vd-dio-5">
+
+<div class="vd-folio">
+  <div class="vd-folio-left">
+    <a class="vd-back" href="../vodic.html">← Vodič</a>
+    <span class="vd-folio-chapter">Dio V · Poglavlje 21 · Reforme u javnom sektoru</span>
+  </div>
+  <div class="vd-folio-meta">
+    <span>2 min čitanja</span>
+    <span>Mapa 21 od 22</span>
+  </div>
+</div>
+
+<h1 class="vd-question">Zašto reforme svi žele dok ne&nbsp;počnu?</h1>
+
+<div class="vd-map">
+  <ol class="vd-branches" aria-label="Pet ideja poglavlja o reformama">
+
+    <li class="vd-branch">
+      <a class="vd-branch-card" href="../chapters/21-reforme.html#zašto-su-reforme-javnog-sektora-nužne">
+        <span class="vd-branch-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v3M12 18v3M3 12h3M18 12h3"/><circle cx="12" cy="12" r="6"/><path d="M12 9v3l2 2"/></svg>
+        </span>
+        <span>
+          <span class="vd-branch-title">Zašto su nužne</span>
+          <span class="vd-branch-text">Kvaliteta uprave određuje uspjeh svih ostalih politika.</span>
+        </span>
+      </a>
+    </li>
+
+    <li class="vd-branch">
+      <a class="vd-branch-card" href="../chapters/21-reforme.html#što-određuje-uspjeh-reformi">
+        <span class="vd-branch-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11l13-6v14L3 13v-2Z"/><path d="M16 9a4 4 0 0 1 0 6"/><path d="M19 7a7 7 0 0 1 0 10"/></svg>
+        </span>
+        <span>
+          <span class="vd-branch-title">Gubitnici viču, dobitnici šute</span>
+          <span class="vd-branch-text">Reforma stvara vidljive gubitnike i tihe dobitnike. Zato je politika, ne tehnika.</span>
+        </span>
+      </a>
+    </li>
+
+    <li class="vd-branch">
+      <a class="vd-branch-card" href="../chapters/21-reforme.html#iskustvo-srednje-i-istočne-europe">
+        <span class="vd-branch-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12"/><path d="M12 21c-3.5 0-6-1.8-6-1.8V16h12v3.2S15.5 21 12 21Z"/><path d="M7 6.5 12 3l5 3.5"/><circle cx="12" cy="9" r="1.2"/></svg>
+        </span>
+        <span>
+          <span class="vd-branch-title">Pouke istočne Europe</span>
+          <span class="vd-branch-text">Vanjsko sidro poput EU a pokreće reforme. Trajne postanu tek uz domaće vlasništvo.</span>
+        </span>
+      </a>
+    </li>
+
+    <li class="vd-branch">
+      <a class="vd-branch-card" href="../chapters/21-reforme.html#ključevi-uspješnih-reformi">
+        <span class="vd-branch-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="8" cy="12" r="4"/><path d="M12 12h9M18 12v4M15 12v3"/></svg>
+        </span>
+        <span>
+          <span class="vd-branch-title">Ključevi uspjeha</span>
+          <span class="vd-branch-text">Temelji prije sofisticiranosti, postupnost, kapacitet provedbe i kontinuitet kroz cikluse.</span>
+        </span>
+      </a>
+    </li>
+
+    <li class="vd-branch">
+      <a class="vd-branch-card" href="../chapters/21-reforme.html#pogled-unatrag-kroz-cijelu-knjigu">
+        <span class="vd-branch-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5c-2-1.5-5-1.5-8 0v14c3-1.5 6-1.5 8 0 2-1.5 5-1.5 8 0V5c-3-1.5-6-1.5-8 0Z"/><path d="M12 5v14"/></svg>
+        </span>
+        <span>
+          <span class="vd-branch-title">Pogled kroz cijelu knjigu</span>
+          <span class="vd-branch-text">Tržište, država, pravila i provedba. Završna petlja u jednoj slici.</span>
+        </span>
+      </a>
+    </li>
+
+  </ol>
+</div>
+
+<div class="vd-cards">
+
+  <div class="vd-card">
+    <span class="vd-card-label">Politika u praksi</span>
+    <p>Redoslijed je presudan. Tko je prvo izgradio bankarski nadzor pa otvorio kapitalni račun, dobio je ulaganja. Obrnuti redoslijed donosio je krize.</p>
+    <a class="vd-src" href="../chapters/21-reforme.html#što-određuje-uspjeh-reformi">Poglavlje 21 · Uspjeh reformi</a>
+  </div>
+
+  <div class="vd-card">
+    <span class="vd-card-label">Jedna brojka</span>
+    <span class="vd-big">35</span>
+    <p>Godina tranzicije srednje i istočne Europe, najvećeg reformskog laboratorija javnog sektora.</p>
+    <a class="vd-src" href="../chapters/21-reforme.html#iskustvo-srednje-i-istočne-europe">Poglavlje 21 · Iskustvo SIE</a>
+  </div>
+
+  <div class="vd-card">
+    <span class="vd-card-label">Mit i stvarnost</span>
+    <p class="vd-mit"><span class="vd-tag">Mit</span>Reforme propadaju jer je većina protiv njih.</p>
+    <p class="vd-stvar"><span class="vd-tag">Stvarnost</span>I reforma korisna većini pada kad pojedinci unaprijed ne znaju hoće li biti dobitnici ili gubitnici.</p>
+    <a class="vd-src" href="../chapters/21-reforme.html#što-određuje-uspjeh-reformi">Poglavlje 21 · Uspjeh reformi</a>
+  </div>
+
+</div>
+
+<div class="vd-pojam">
+  <span class="vd-pojam-label">Pojam za razgovor</span>
+  <p><span class="vd-pojam-term">vanjsko sidro</span> <span class="vd-pojam-text">Pravila i nagrade izvana, poput pristupanja EU, drže reformu na kursu dok je domaći ne posvoje.</span></p>
+</div>
+
+<nav class="vd-dalje" aria-label="Kamo dalje">
+  <a href="20-cba-evaluacija.html">← Mapa 20</a>
+  <a class="vd-primary" href="../chapters/21-reforme.html">Otvorite poglavlje u knjizi</a>
+  <a href="../vodic.html">Sve mape</a>
+</nav>
+
+</div>
+```

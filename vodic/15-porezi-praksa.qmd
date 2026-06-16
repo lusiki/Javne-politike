@@ -1,0 +1,118 @@
+---
+title: "Vodič · Porezni sustavi u praksi"
+toc: false
+number-sections: false
+lang: hr-HR
+format:
+  html:
+    page-layout: full
+    body-classes: vd-page
+---
+
+```{=html}
+<div class="vd-dio-4">
+
+<div class="vd-folio">
+  <div class="vd-folio-left">
+    <a class="vd-back" href="../vodic.html">← Vodič</a>
+    <span class="vd-folio-chapter">Dio IV · Poglavlje 15 · Porezni sustavi u praksi</span>
+  </div>
+  <div class="vd-folio-meta">
+    <span>2 min čitanja</span>
+    <span>Mapa 15 od 22</span>
+  </div>
+</div>
+
+<h1 class="vd-question">Zašto isti porezi u različitim zemljama izgledaju tako&nbsp;različito?</h1>
+
+<div class="vd-map">
+  <ol class="vd-branches" aria-label="Četiri ideje poglavlja o poreznim sustavima u praksi">
+
+    <li class="vd-branch">
+      <a class="vd-branch-card" href="../chapters/15-porezi-praksa.html#porezni-sustavi-u-svijetu">
+        <span class="vd-branch-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.7 4 6.2 4 9s-1.5 6.3-4 9c-2.5-2.7-4-6.2-4-9s1.5-6.3 4-9Z"/></svg>
+        </span>
+        <span>
+          <span class="vd-branch-title">Modeli svijeta</span>
+          <span class="vd-branch-text">Nordijski, kontinentalni, angloamerički. Iste osnovice, posve drukčiji izbori.</span>
+        </span>
+      </a>
+    </li>
+
+    <li class="vd-branch">
+      <a class="vd-branch-card" href="../chapters/15-porezi-praksa.html#porezni-sustavi-u-europskoj-uniji-i-hrvatskoj">
+        <span class="vd-branch-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="1"/><path d="M12 5.5l1 2.2 2.4.3-1.7 1.7.4 2.4-2.1-1.1-2.1 1.1.4-2.4-1.7-1.7 2.4-.3 1-2.2Z"/></svg>
+        </span>
+        <span>
+          <span class="vd-branch-title">Hrvatski profil</span>
+          <span class="vd-branch-text">Visok PDV, opterećen rad, slabo oporezovana imovina. To je hrvatski profil.</span>
+        </span>
+      </a>
+    </li>
+
+    <li class="vd-branch">
+      <a class="vd-branch-card" href="../chapters/15-porezi-praksa.html#porezni-sustavi-u-europskoj-uniji-i-hrvatskoj">
+        <span class="vd-branch-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12h18"/><path d="M6 12V6M12 12V4M18 12V8"/><path d="M4 20h16"/></svg>
+        </span>
+        <span>
+          <span class="vd-branch-title">Globalni minimalni porez</span>
+          <span class="vd-branch-text">Utrka prema dnu kočena kroz BEPS. Velike grupe plaćaju barem 15 posto.</span>
+        </span>
+      </a>
+    </li>
+
+    <li class="vd-branch">
+      <a class="vd-branch-card" href="../chapters/15-porezi-praksa.html#porezi-u-doba-umjetne-inteligencije">
+        <span class="vd-branch-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="6" width="12" height="12" rx="2"/><path d="M12 2v4M12 18v4M2 12h4M18 12h4M5 5l3 3M19 5l-3 3M5 19l3-3M19 19l-3-3"/></svg>
+        </span>
+        <span>
+          <span class="vd-branch-title">Porezi u doba AI</span>
+          <span class="vd-branch-text">Ako strojevi preuzmu velik dio rada, što ostaje poreznoj osnovici?</span>
+        </span>
+      </a>
+    </li>
+
+  </ol>
+</div>
+
+<div class="vd-cards">
+
+  <div class="vd-card">
+    <span class="vd-card-label">Politika u praksi</span>
+    <p>Porezna reforma 2024. spustila je opću stopu s 30 na 23 posto i ukinula prirez. Rad je rasterećen, a lokalne jedinice traže nove prihode.</p>
+    <a class="vd-src" href="../chapters/15-porezi-praksa.html#porezni-sustavi-u-europskoj-uniji-i-hrvatskoj">Poglavlje 15 · Porezi u Hrvatskoj</a>
+  </div>
+
+  <div class="vd-card">
+    <span class="vd-card-label">Jedna brojka</span>
+    <span class="vd-big">13&nbsp;%</span>
+    <p>Toliko BDP-a godišnje donosi PDV, više nego porezi na dohodak i dobit zajedno. Svaki treći euro prihoda dolazi iz potrošnje.</p>
+    <a class="vd-src" href="../chapters/15-porezi-praksa.html#porezni-sustavi-u-europskoj-uniji-i-hrvatskoj">Poglavlje 15 · Porezi u Hrvatskoj</a>
+  </div>
+
+  <div class="vd-card">
+    <span class="vd-card-label">Mit i stvarnost</span>
+    <p class="vd-mit"><span class="vd-tag">Mit</span>Niske stope same po sebi tjeraju zemlje u utrku prema dnu.</p>
+    <p class="vd-stvar"><span class="vd-tag">Stvarnost</span>Porezna konkurencija postoji, ali dogovor o minimalnoj stopi pomiče dno prema gore.</p>
+    <a class="vd-src" href="../chapters/15-porezi-praksa.html#porezni-sustavi-u-europskoj-uniji-i-hrvatskoj">Poglavlje 15 · Porezna konkurencija</a>
+  </div>
+
+</div>
+
+<div class="vd-pojam">
+  <span class="vd-pojam-label">Pojam za razgovor</span>
+  <p><span class="vd-pojam-term">globalni minimalni porez</span> <span class="vd-pojam-text">Najmanje 15 posto efektivne stope na dobit velikih multinacionalnih grupa, gdje god posluju.</span></p>
+</div>
+
+<nav class="vd-dalje" aria-label="Kamo dalje">
+  <a href="14-porezi.html">← Mapa 14</a>
+  <a class="vd-primary" href="../chapters/15-porezi-praksa.html">Otvorite poglavlje u knjizi</a>
+  <a href="16-eu-javne-financije.html">Mapa 16 →</a>
+</nav>
+
+</div>
+```

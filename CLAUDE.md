@@ -36,7 +36,7 @@ _freeze/              Quarto execution cache — do NOT hand-edit
 renv/, renv.lock      R package library + lockfile (pinned versions)
 index.qmd             landing page (hero, cover-card, collapsible TOC)
 references.qmd        appendix: bibliography page
-vodic.qmd             vodič hub — visual "slikovnica" of the book (spec: vodic-specifikacija.md)
+vodic.qmd             vodič hub — visual "slikovnica" of the book (spec: notes/vodic-specifikacija.md)
 vodic/                vodič subpages — one mental-map page per chapter (01–19)
 resursi.qmd           appendix: resource list
 alat.qmd              appendix: tools
@@ -48,9 +48,6 @@ _quarto-pdf.yml       PDF profile config — `quarto render --profile pdf`
 _brand.yml            typography and color tokens
 cover.png             book cover image
 ```
-
-Root-level `.qmd` files not listed above (`intro.qmd`, `summary.qmd`) are orphans
-from earlier numbering revisions — same caveat as the chapters/ orphans below.
 
 ## Active chapters
 

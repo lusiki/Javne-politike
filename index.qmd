@@ -84,7 +84,7 @@ Za sve koji žele razumjeti kako država utječe na svakodnevni život, a nemaju
 
 ```{=html}
 <div class="sc-stats" aria-label="Knjiga u brojkama">
-  <div class="sc-stat"><span class="sc-stat-num">21</span><span class="sc-stat-label">poglavlja</span></div>
+  <div class="sc-stat"><span class="sc-stat-num">22</span><span class="sc-stat-label">poglavlja</span></div>
   <div class="sc-stat"><span class="sc-stat-num">5</span><span class="sc-stat-label">dijelova</span></div>
   <div class="sc-stat"><span class="sc-stat-num">338</span><span class="sc-stat-label">stranica</span></div>
   <div class="sc-stat"><span class="sc-stat-num">38</span><span class="sc-stat-label">grafikona</span></div>
@@ -318,94 +318,100 @@ Za sve koji žele razumjeti kako država utječe na svakodnevni život, a nemaju
 <li><a href="chapters/14-porezi.html#osnove-teorije-oporezivanja">Osnove teorije oporezivanja</a></li>
 <li><a href="chapters/14-porezi.html#teorija-optimalnog-oporezivanja">Teorija optimalnog oporezivanja</a></li>
 <li><a href="chapters/14-porezi.html#inflacija-kao-porez">Inflacija kao porez</a></li>
-<li><a href="chapters/14-porezi.html#porezni-sustavi-u-svijetu">Porezni sustavi u svijetu</a></li>
-<li><a href="chapters/14-porezi.html#porezni-sustavi-u-europskoj-uniji-i-hrvatskoj">Porezni sustavi u Europskoj uniji i Hrvatskoj</a></li>
-<li><a href="chapters/14-porezi.html#porezi-u-doba-umjetne-inteligencije">Porezi u doba umjetne inteligencije</a></li>
 </ul>
 </details>
 
 <details class="toc-chapter">
-<summary><span class="toc-num">16.</span> <a href="chapters/15-eu-javne-financije.html">Javne financije Europske unije — zajednička valuta bez zajedničkog proračuna</a></summary>
+<summary><span class="toc-num">16.</span> <a href="chapters/15-porezi-praksa.html">Porezni sustavi u praksi i budućnost oporezivanja</a></summary>
 <ul>
-<li><a href="chapters/15-eu-javne-financije.html#javne-financije-u-nacionalnoj-državi">Javne financije u nacionalnoj državi</a></li>
-<li><a href="chapters/15-eu-javne-financije.html#što-je-drukčije-u-europskoj-uniji">Što je drukčije u Europskoj uniji?</a></li>
-<li><a href="chapters/15-eu-javne-financije.html#problem-fiskalne-unije">Problem fiskalne unije</a></li>
-<li><a href="chapters/15-eu-javne-financije.html#zašto-unija-nije-postala-fiskalna-federacija">Zašto Unija nije postala fiskalna federacija?</a></li>
-<li><a href="chapters/15-eu-javne-financije.html#europska-javna-dobra-kao-novi-argument">Europska javna dobra kao novi argument</a></li>
-<li><a href="chapters/15-eu-javne-financije.html#kako-unija-koordinira-nacionalne-politike">Kako Unija koordinira nacionalne politike?</a></li>
-<li><a href="chapters/15-eu-javne-financije.html#kratka-povijest-fiskalnih-pravila">Kratka povijest fiskalnih pravila</a></li>
-<li><a href="chapters/15-eu-javne-financije.html#eu-proračun-i-njegovo-financiranje">EU proračun i njegovo financiranje</a></li>
-<li><a href="chapters/15-eu-javne-financije.html#nextgenerationeu-i-pouka-za-hrvatsku">NextGenerationEU i pouka za Hrvatsku</a></li>
+<li><a href="chapters/15-porezi-praksa.html#porezni-sustavi-u-svijetu">Porezni sustavi u svijetu</a></li>
+<li><a href="chapters/15-porezi-praksa.html#porezni-sustavi-u-europskoj-uniji-i-hrvatskoj">Porezni sustavi u Europskoj uniji i Hrvatskoj</a></li>
+<li><a href="chapters/15-porezi-praksa.html#porezi-u-doba-umjetne-inteligencije">Porezi u doba umjetne inteligencije</a></li>
+</ul>
+</details>
+
+<details class="toc-chapter">
+<summary><span class="toc-num">17.</span> <a href="chapters/16-eu-javne-financije.html">Javne financije Europske unije — zajednička valuta bez zajedničkog proračuna</a></summary>
+<ul>
+<li><a href="chapters/16-eu-javne-financije.html#javne-financije-u-nacionalnoj-državi">Javne financije u nacionalnoj državi</a></li>
+<li><a href="chapters/16-eu-javne-financije.html#što-je-drukčije-u-europskoj-uniji">Što je drukčije u Europskoj uniji?</a></li>
+<li><a href="chapters/16-eu-javne-financije.html#problem-fiskalne-unije">Problem fiskalne unije</a></li>
+<li><a href="chapters/16-eu-javne-financije.html#zašto-unija-nije-postala-fiskalna-federacija">Zašto Unija nije postala fiskalna federacija?</a></li>
+<li><a href="chapters/16-eu-javne-financije.html#europska-javna-dobra-kao-novi-argument">Europska javna dobra kao novi argument</a></li>
+<li><a href="chapters/16-eu-javne-financije.html#kako-unija-koordinira-nacionalne-politike">Kako Unija koordinira nacionalne politike?</a></li>
+<li><a href="chapters/16-eu-javne-financije.html#kratka-povijest-fiskalnih-pravila">Kratka povijest fiskalnih pravila</a></li>
+<li><a href="chapters/16-eu-javne-financije.html#eu-proračun-i-njegovo-financiranje">EU proračun i njegovo financiranje</a></li>
+<li><a href="chapters/16-eu-javne-financije.html#nextgenerationeu-i-pouka-za-hrvatsku">NextGenerationEU i pouka za Hrvatsku</a></li>
 </ul>
 </details>
 
 <p class="toc-part">DIO V: Kako do kvalitetnijih javnih politika?</p>
 
 <details class="toc-chapter">
-<summary><span class="toc-num">17.</span> <a href="chapters/16-drzavni-neuspjesi.html">Državni neuspjesi i prepreke kvalitetnim javnim politikama</a></summary>
+<summary><span class="toc-num">18.</span> <a href="chapters/17-drzavni-neuspjesi.html">Državni neuspjesi i prepreke kvalitetnim javnim politikama</a></summary>
 <ul>
-<li><a href="chapters/16-drzavni-neuspjesi.html#što-znači-neuspjeh-države">Što znači neuspjeh države?</a></li>
-<li><a href="chapters/16-drzavni-neuspjesi.html#zašto-državni-neuspjesi-nisu-isto-što-i-previše-države">Zašto državni neuspjesi nisu isto što i „previše države”</a></li>
-<li><a href="chapters/16-drzavni-neuspjesi.html#državni-neuspjeh-kao-problem-dizajna-politike">Državni neuspjeh kao problem dizajna politike</a></li>
-<li><a href="chapters/16-drzavni-neuspjesi.html#informacijski-neuspjesi">Informacijski neuspjesi</a></li>
-<li><a href="chapters/16-drzavni-neuspjesi.html#instrumentalni-neuspjesi">Instrumentalni neuspjesi</a></li>
-<li><a href="chapters/16-drzavni-neuspjesi.html#provedbeni-neuspjesi">Provedbeni neuspjesi</a></li>
-<li><a href="chapters/16-drzavni-neuspjesi.html#koordinacijski-neuspjesi">Koordinacijski neuspjesi</a></li>
-<li><a href="chapters/16-drzavni-neuspjesi.html#politički-neuspjesi">Politički neuspjesi</a></li>
-<li><a href="chapters/16-drzavni-neuspjesi.html#birokratski-neuspjesi">Birokratski neuspjesi</a></li>
-<li><a href="chapters/16-drzavni-neuspjesi.html#regulatorni-neuspjesi">Regulatorni neuspjesi</a></li>
-<li><a href="chapters/16-drzavni-neuspjesi.html#fiskalni-neuspjesi">Fiskalni neuspjesi</a></li>
-<li><a href="chapters/16-drzavni-neuspjesi.html#neuspjesi-države-i-povjerenje-u-institucije">Neuspjesi države i povjerenje u institucije</a></li>
-<li><a href="chapters/16-drzavni-neuspjesi.html#test-državnog-neuspjeha">Test državnog neuspjeha</a></li>
-<li><a href="chapters/16-drzavni-neuspjesi.html#zaključno-ne-protiv-države-nego-za-bolju-državu">Zaključno — ne protiv države, nego za bolju državu</a></li>
+<li><a href="chapters/17-drzavni-neuspjesi.html#što-znači-neuspjeh-države">Što znači neuspjeh države?</a></li>
+<li><a href="chapters/17-drzavni-neuspjesi.html#zašto-državni-neuspjesi-nisu-isto-što-i-previše-države">Zašto državni neuspjesi nisu isto što i „previše države”</a></li>
+<li><a href="chapters/17-drzavni-neuspjesi.html#državni-neuspjeh-kao-problem-dizajna-politike">Državni neuspjeh kao problem dizajna politike</a></li>
+<li><a href="chapters/17-drzavni-neuspjesi.html#informacijski-neuspjesi">Informacijski neuspjesi</a></li>
+<li><a href="chapters/17-drzavni-neuspjesi.html#instrumentalni-neuspjesi">Instrumentalni neuspjesi</a></li>
+<li><a href="chapters/17-drzavni-neuspjesi.html#provedbeni-neuspjesi">Provedbeni neuspjesi</a></li>
+<li><a href="chapters/17-drzavni-neuspjesi.html#koordinacijski-neuspjesi">Koordinacijski neuspjesi</a></li>
+<li><a href="chapters/17-drzavni-neuspjesi.html#politički-neuspjesi">Politički neuspjesi</a></li>
+<li><a href="chapters/17-drzavni-neuspjesi.html#birokratski-neuspjesi">Birokratski neuspjesi</a></li>
+<li><a href="chapters/17-drzavni-neuspjesi.html#regulatorni-neuspjesi">Regulatorni neuspjesi</a></li>
+<li><a href="chapters/17-drzavni-neuspjesi.html#fiskalni-neuspjesi">Fiskalni neuspjesi</a></li>
+<li><a href="chapters/17-drzavni-neuspjesi.html#neuspjesi-države-i-povjerenje-u-institucije">Neuspjesi države i povjerenje u institucije</a></li>
+<li><a href="chapters/17-drzavni-neuspjesi.html#test-državnog-neuspjeha">Test državnog neuspjeha</a></li>
+<li><a href="chapters/17-drzavni-neuspjesi.html#zaključno-ne-protiv-države-nego-za-bolju-državu">Zaključno — ne protiv države, nego za bolju državu</a></li>
 </ul>
 </details>
 
 <details class="toc-chapter">
-<summary><span class="toc-num">18.</span> <a href="chapters/17-novi-javni-menadzment.html">Novi javni menadžment</a></summary>
+<summary><span class="toc-num">19.</span> <a href="chapters/18-novi-javni-menadzment.html">Novi javni menadžment</a></summary>
 <ul>
-<li><a href="chapters/17-novi-javni-menadzment.html#odakle-novi-javni-menadžment">Odakle Novi javni menadžment</a></li>
-<li><a href="chapters/17-novi-javni-menadzment.html#marketizacija-javnog-sektora">Marketizacija javnog sektora</a></li>
-<li><a href="chapters/17-novi-javni-menadzment.html#korporativno-upravljanje-i-upravljanje-prema-rezultatima">Korporativno upravljanje i upravljanje prema rezultatima</a></li>
-<li><a href="chapters/17-novi-javni-menadzment.html#građanin-kao-korisnik-klijent-ili-kupac">Građanin kao korisnik, klijent ili kupac?</a></li>
-<li><a href="chapters/17-novi-javni-menadzment.html#agencifikacija-i-razdvajanje-politike-od-provedbe">Agencifikacija i razdvajanje politike od provedbe</a></li>
-<li><a href="chapters/17-novi-javni-menadzment.html#prednosti-i-kritike-novog-javnog-menadžmenta">Prednosti i kritike novog javnog menadžmenta</a></li>
+<li><a href="chapters/18-novi-javni-menadzment.html#odakle-novi-javni-menadžment">Odakle Novi javni menadžment</a></li>
+<li><a href="chapters/18-novi-javni-menadzment.html#marketizacija-javnog-sektora">Marketizacija javnog sektora</a></li>
+<li><a href="chapters/18-novi-javni-menadzment.html#korporativno-upravljanje-i-upravljanje-prema-rezultatima">Korporativno upravljanje i upravljanje prema rezultatima</a></li>
+<li><a href="chapters/18-novi-javni-menadzment.html#građanin-kao-korisnik-klijent-ili-kupac">Građanin kao korisnik, klijent ili kupac?</a></li>
+<li><a href="chapters/18-novi-javni-menadzment.html#agencifikacija-i-razdvajanje-politike-od-provedbe">Agencifikacija i razdvajanje politike od provedbe</a></li>
+<li><a href="chapters/18-novi-javni-menadzment.html#prednosti-i-kritike-novog-javnog-menadžmenta">Prednosti i kritike novog javnog menadžmenta</a></li>
 </ul>
 </details>
 
 <details class="toc-chapter">
-<summary><span class="toc-num">19.</span> <a href="chapters/18-novo-upravljanje.html">Od novog javnog menadžmenta prema novom upravljanju</a></summary>
+<summary><span class="toc-num">20.</span> <a href="chapters/19-novo-upravljanje.html">Od novog javnog menadžmenta prema novom upravljanju</a></summary>
 <ul>
-<li><a href="chapters/18-novo-upravljanje.html#tvrdokorni-problemi-i-potreba-za-suradnjom">Tvrdokorni problemi i potreba za suradnjom</a></li>
-<li><a href="chapters/18-novo-upravljanje.html#whole-of-government-i-povezana-vlada">Whole-of-government i povezana vlada</a></li>
-<li><a href="chapters/18-novo-upravljanje.html#mreže-javnih-politika-i-partnerstva">Mreže javnih politika i partnerstva</a></li>
-<li><a href="chapters/18-novo-upravljanje.html#uključivanje-građana">Uključivanje građana</a></li>
-<li><a href="chapters/18-novo-upravljanje.html#digitalizacija-i-nova-država">Digitalizacija i nova država</a></li>
-<li><a href="chapters/18-novo-upravljanje.html#tri-logike-suvremene-javne-uprave">Tri logike suvremene javne uprave</a></li>
+<li><a href="chapters/19-novo-upravljanje.html#tvrdokorni-problemi-i-potreba-za-suradnjom">Tvrdokorni problemi i potreba za suradnjom</a></li>
+<li><a href="chapters/19-novo-upravljanje.html#whole-of-government-i-povezana-vlada">Whole-of-government i povezana vlada</a></li>
+<li><a href="chapters/19-novo-upravljanje.html#mreže-javnih-politika-i-partnerstva">Mreže javnih politika i partnerstva</a></li>
+<li><a href="chapters/19-novo-upravljanje.html#uključivanje-građana">Uključivanje građana</a></li>
+<li><a href="chapters/19-novo-upravljanje.html#digitalizacija-i-nova-država">Digitalizacija i nova država</a></li>
+<li><a href="chapters/19-novo-upravljanje.html#tri-logike-suvremene-javne-uprave">Tri logike suvremene javne uprave</a></li>
 </ul>
 </details>
 
 <details class="toc-chapter">
-<summary><span class="toc-num">20.</span> <a href="chapters/19-cba-evaluacija.html">Cost-benefit analiza i evaluacija javnih politika</a></summary>
+<summary><span class="toc-num">21.</span> <a href="chapters/20-cba-evaluacija.html">Cost-benefit analiza i evaluacija javnih politika</a></summary>
 <ul>
-<li><a href="chapters/19-cba-evaluacija.html#zašto-je-cost-benefit-analiza-važna">Zašto je cost-benefit analiza važna?</a></li>
-<li><a href="chapters/19-cba-evaluacija.html#koraci-u-provedbi-cost-benefit-analize">Koraci u provedbi cost-benefit analize</a></li>
-<li><a href="chapters/19-cba-evaluacija.html#posebnosti-cost-benefit-analize-u-javnom-sektoru">Posebnosti cost-benefit analize u javnom sektoru</a></li>
-<li><a href="chapters/19-cba-evaluacija.html#primjeri-primjene">Primjeri primjene</a></li>
-<li><a href="chapters/19-cba-evaluacija.html#ograničenja-cost-benefit-analize">Ograničenja cost-benefit analize</a></li>
-<li><a href="chapters/19-cba-evaluacija.html#evaluacija-javnih-politika-i-njezini-ciljevi">Evaluacija javnih politika i njezini ciljevi</a></li>
-<li><a href="chapters/19-cba-evaluacija.html#vrste-i-metode-evaluacije">Vrste i metode evaluacije</a></li>
+<li><a href="chapters/20-cba-evaluacija.html#zašto-je-cost-benefit-analiza-važna">Zašto je cost-benefit analiza važna?</a></li>
+<li><a href="chapters/20-cba-evaluacija.html#koraci-u-provedbi-cost-benefit-analize">Koraci u provedbi cost-benefit analize</a></li>
+<li><a href="chapters/20-cba-evaluacija.html#posebnosti-cost-benefit-analize-u-javnom-sektoru">Posebnosti cost-benefit analize u javnom sektoru</a></li>
+<li><a href="chapters/20-cba-evaluacija.html#primjeri-primjene">Primjeri primjene</a></li>
+<li><a href="chapters/20-cba-evaluacija.html#ograničenja-cost-benefit-analize">Ograničenja cost-benefit analize</a></li>
+<li><a href="chapters/20-cba-evaluacija.html#evaluacija-javnih-politika-i-njezini-ciljevi">Evaluacija javnih politika i njezini ciljevi</a></li>
+<li><a href="chapters/20-cba-evaluacija.html#vrste-i-metode-evaluacije">Vrste i metode evaluacije</a></li>
 </ul>
 </details>
 
 <details class="toc-chapter">
-<summary><span class="toc-num">21.</span> <a href="chapters/20-reforme.html">Reforme u javnom sektoru — što funkcionira i zašto?</a></summary>
+<summary><span class="toc-num">22.</span> <a href="chapters/21-reforme.html">Reforme u javnom sektoru — što funkcionira i zašto?</a></summary>
 <ul>
-<li><a href="chapters/20-reforme.html#zašto-su-reforme-javnog-sektora-nužne">Zašto su reforme javnog sektora nužne</a></li>
-<li><a href="chapters/20-reforme.html#što-određuje-uspjeh-reformi">Što određuje uspjeh reformi</a></li>
-<li><a href="chapters/20-reforme.html#iskustvo-srednje-i-istočne-europe">Iskustvo srednje i istočne Europe</a></li>
-<li><a href="chapters/20-reforme.html#ključevi-uspješnih-reformi">Ključevi uspješnih reformi</a></li>
-<li><a href="chapters/20-reforme.html#pogled-unatrag-kroz-cijelu-knjigu">Pogled unatrag, kroz cijelu knjigu</a></li>
+<li><a href="chapters/21-reforme.html#zašto-su-reforme-javnog-sektora-nužne">Zašto su reforme javnog sektora nužne</a></li>
+<li><a href="chapters/21-reforme.html#što-određuje-uspjeh-reformi">Što određuje uspjeh reformi</a></li>
+<li><a href="chapters/21-reforme.html#iskustvo-srednje-i-istočne-europe">Iskustvo srednje i istočne Europe</a></li>
+<li><a href="chapters/21-reforme.html#ključevi-uspješnih-reformi">Ključevi uspješnih reformi</a></li>
+<li><a href="chapters/21-reforme.html#pogled-unatrag-kroz-cijelu-knjigu">Pogled unatrag, kroz cijelu knjigu</a></li>
 </ul>
 </details>
 

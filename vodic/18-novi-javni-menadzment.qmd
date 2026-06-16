@@ -1,0 +1,130 @@
+---
+title: "Vodič · Novi javni menadžment"
+toc: false
+number-sections: false
+lang: hr-HR
+format:
+  html:
+    page-layout: full
+    body-classes: vd-page
+---
+
+```{=html}
+<div class="vd-dio-5">
+
+<div class="vd-folio">
+  <div class="vd-folio-left">
+    <a class="vd-back" href="../vodic.html">← Vodič</a>
+    <span class="vd-folio-chapter">Dio V · Poglavlje 18 · Novi javni menadžment</span>
+  </div>
+  <div class="vd-folio-meta">
+    <span>2 min čitanja</span>
+    <span>Mapa 18 od 22</span>
+  </div>
+</div>
+
+<h1 class="vd-question">Može li država raditi kao&nbsp;firma?</h1>
+
+<div class="vd-map">
+  <ol class="vd-branches" aria-label="Pet ideja poglavlja o novom javnom menadžmentu">
+
+    <li class="vd-branch">
+      <a class="vd-branch-card" href="../chapters/18-novi-javni-menadzment.html#odakle-novi-javni-menadžment">
+        <span class="vd-branch-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2"/></svg>
+        </span>
+        <span>
+          <span class="vd-branch-title">Odakle NJM</span>
+          <span class="vd-branch-text">Odgovor na sliku preopterećene, spore i skupe države osamdesetih.</span>
+        </span>
+      </a>
+    </li>
+
+    <li class="vd-branch">
+      <a class="vd-branch-card" href="../chapters/18-novi-javni-menadzment.html#marketizacija-javnog-sektora">
+        <span class="vd-branch-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 18h18"/><path d="M7 18V9M12 18V5M17 18v-7"/><path d="M5.5 9h3M10.5 5h3M15.5 11h3"/></svg>
+        </span>
+        <span>
+          <span class="vd-branch-title">Marketizacija</span>
+          <span class="vd-branch-text">Natjecanje, ugovaranje i mjerenje rezultata ulaze u javne usluge.</span>
+        </span>
+      </a>
+    </li>
+
+    <li class="vd-branch">
+      <a class="vd-branch-card" href="../chapters/18-novi-javni-menadzment.html#agencifikacija-i-razdvajanje-politike-od-provedbe">
+        <span class="vd-branch-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="8" height="16" rx="1"/><rect x="13" y="4" width="8" height="16" rx="1"/><path d="M11 12h2"/></svg>
+        </span>
+        <span>
+          <span class="vd-branch-title">Agencifikacija</span>
+          <span class="vd-branch-text">Politika odlučuje, agencije provode. Jasnije uloge, ali i fragmentacija.</span>
+        </span>
+      </a>
+    </li>
+
+    <li class="vd-branch">
+      <a class="vd-branch-card" href="../chapters/18-novi-javni-menadzment.html#građanin-kao-korisnik-klijent-ili-kupac">
+        <span class="vd-branch-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"/><path d="M5 21a7 7 0 0 1 14 0"/></svg>
+        </span>
+        <span>
+          <span class="vd-branch-title">Građanin kao korisnik</span>
+          <span class="vd-branch-text">Usluga se mjeri iz perspektive onoga tko je koristi, ne onoga tko je pruža.</span>
+        </span>
+      </a>
+    </li>
+
+    <li class="vd-branch">
+      <a class="vd-branch-card" href="../chapters/18-novi-javni-menadzment.html#prednosti-i-kritike-novog-javnog-menadžmenta">
+        <span class="vd-branch-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4v16M8 20h8M5 7h14"/><path d="M5 7l-2.5 6a3 3 0 0 0 5 0L5 7Z"/><path d="M19 7l-2.5 6a3 3 0 0 0 5 0L19 7Z"/></svg>
+        </span>
+        <span>
+          <span class="vd-branch-title">Dosezi i granice</span>
+          <span class="vd-branch-text">Mjerljivi pokazatelji znaju zamijeniti stvarnu kvalitetu, a fragmentacija oslabiti cjelinu.</span>
+        </span>
+      </a>
+    </li>
+
+  </ol>
+</div>
+
+<div class="vd-cards">
+
+  <div class="vd-card">
+    <span class="vd-card-label">Politika u praksi</span>
+    <p>Britanski NHS u devedesetima. Unutarnje tržište razdvojilo je naručitelja i pružatelja. Dio učinkovitosti porastao, dio kvalitete iskrivljen.</p>
+    <a class="vd-src" href="../chapters/18-novi-javni-menadzment.html#marketizacija-javnog-sektora">Poglavlje 18 · Marketizacija</a>
+  </div>
+
+  <div class="vd-card">
+    <span class="vd-card-label">Jedna brojka</span>
+    <span class="vd-big">2&nbsp;uloge</span>
+    <p>Naručitelj i pružatelj usluge. NJM ih razdvaja pa i unutar same države stvara tržište.</p>
+    <a class="vd-src" href="../chapters/18-novi-javni-menadzment.html#marketizacija-javnog-sektora">Poglavlje 18 · Marketizacija</a>
+  </div>
+
+  <div class="vd-card">
+    <span class="vd-card-label">Mit i stvarnost</span>
+    <p class="vd-mit"><span class="vd-tag">Mit</span>Privatno je uvijek učinkovitije od javnog.</p>
+    <p class="vd-stvar"><span class="vd-tag">Stvarnost</span>Konkurencija pomaže gdje se kvaliteta mjeri. Gdje se ne mjeri, pokazatelji iskrivljuju ponašanje.</p>
+    <a class="vd-src" href="../chapters/18-novi-javni-menadzment.html#prednosti-i-kritike-novog-javnog-menadžmenta">Poglavlje 18 · Dosezi i granice</a>
+  </div>
+
+</div>
+
+<div class="vd-pojam">
+  <span class="vd-pojam-label">Pojam za razgovor</span>
+  <p><span class="vd-pojam-term">agencifikacija</span> <span class="vd-pojam-text">Razdvajanje onih koji politiku kroje od onih koji je provode.</span></p>
+</div>
+
+<nav class="vd-dalje" aria-label="Kamo dalje">
+  <a href="17-drzavni-neuspjesi.html">← Mapa 17</a>
+  <a class="vd-primary" href="../chapters/18-novi-javni-menadzment.html">Otvorite poglavlje u knjizi</a>
+  <a href="19-novo-upravljanje.html">Mapa 19 →</a>
+</nav>
+
+</div>
+```

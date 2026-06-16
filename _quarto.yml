@@ -93,14 +93,15 @@ book:
         - chapters/12-instrumenti.qmd
         - chapters/13-javna-potrosnja.qmd
         - chapters/14-porezi.qmd
-        - chapters/15-eu-javne-financije.qmd
+        - chapters/15-porezi-praksa.qmd
+        - chapters/16-eu-javne-financije.qmd
     - part: "DIO V: KAKO DO KVALITETNIJIH JAVNIH POLITIKA?"
       chapters:
-        - chapters/16-drzavni-neuspjesi.qmd
-        - chapters/17-novi-javni-menadzment.qmd
-        - chapters/18-novo-upravljanje.qmd
-        - chapters/19-cba-evaluacija.qmd
-        - chapters/20-reforme.qmd
+        - chapters/17-drzavni-neuspjesi.qmd
+        - chapters/18-novi-javni-menadzment.qmd
+        - chapters/19-novo-upravljanje.qmd
+        - chapters/20-cba-evaluacija.qmd
+        - chapters/21-reforme.qmd
 
   appendices:
     - references.qmd
@@ -123,12 +124,13 @@ book:
     - vodic/12-instrumenti.qmd
     - vodic/13-javna-potrosnja.qmd
     - vodic/14-porezi.qmd
-    - vodic/15-eu-javne-financije.qmd
-    - vodic/16-drzavni-neuspjesi.qmd
-    - vodic/17-novi-javni-menadzment.qmd
-    - vodic/18-novo-upravljanje.qmd
-    - vodic/19-cba-evaluacija.qmd
-    - vodic/20-reforme.qmd
+    - vodic/15-porezi-praksa.qmd
+    - vodic/16-eu-javne-financije.qmd
+    - vodic/17-drzavni-neuspjesi.qmd
+    - vodic/18-novi-javni-menadzment.qmd
+    - vodic/19-novo-upravljanje.qmd
+    - vodic/20-cba-evaluacija.qmd
+    - vodic/21-reforme.qmd
     - prirucnik.qmd
     - resursi.qmd
     - alat.qmd

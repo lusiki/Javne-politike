@@ -10,13 +10,12 @@ title: "Porezi — više od tereta"
 3. Koja načela razlikuju dobar od lošeg poreznog sustava?
 4. Što teorija govori o poreznom opterećenju, učinkovitosti i pravednosti?
 5. Što znači optimalno oporezivanje i gdje su njegove granice?
-6. Kako se porezni sustavi razlikuju u svijetu te u EU i Hrvatskoj?
-7. Kako digitalizacija i umjetna inteligencija mijenjaju budućnost poreza?
+6. Kako država prihoduje stvaranjem novca i zašto inflaciju nazivamo porezom?
 :::
 
 Ako prethodno poglavlje opisuje kako država troši, ovo opisuje odakle taj novac dolazi. Porezi su druga strana iste proračunske jednadžbe, ali nisu samo tehnika prikupljanja prihoda. Kroz njih društvo odlučuje tko snosi teret zajedničkih funkcija i kako se taj teret raspoređuje, pa porezna pitanja brzo postaju pitanja pravednosti, učinkovitosti i političkog izbora.
 
-Put kroz poglavlje vodi od jednostavnog prema spornom. Najprije razgraničava poreze od drugih davanja i pregledava njihove glavne vrste, a zatim prelazi na načela koja dijele dobar od lošeg poreznog sustava i na teoriju koja objašnjava tko zaista snosi porezni teret te koliko on košta u izgubljenoj učinkovitosti. Posljednji dio silazi s teorije na kartu svijeta, usporedbom poreznih sustava te pitanjem kako digitalizacija i umjetna inteligencija mijenjaju budućnost oporezivanja.
+Put kroz poglavlje vodi od jednostavnog prema spornom. Najprije razgraničava poreze od drugih davanja i pregledava njihove glavne vrste, a zatim prelazi na načela koja dijele dobar od lošeg poreznog sustava i na teoriju koja objašnjava tko zaista snosi porezni teret te koliko on košta u izgubljenoj učinkovitosti. Posljednji se dio penje do teorije optimalnog oporezivanja i njezinih granica, a zatvara ga pogled na inflaciju kao prikriveni porez kojim država prihoduje stvaranjem novca.
 
 ## Što su porezi?
 
@@ -2305,246 +2304,18 @@ Kao i svaki porez, i ovaj ima svoju raspodjelu tereta. Budući da siromašnija k
 
 Za Hrvatsku je ovaj instrument danas uglavnom teorijski jer je uvođenjem eura izdavanje novca prešlo na Eurosustav, pa nacionalna vlast inflacijskim porezom više ne raspolaže kao samostalnom polugom. Time se zatvara krug s onim što smo vidjeli u poglavljima o stabilizacijskoj funkciji i ustavnoj ekonomici, gdje je odricanje od monetarne poluge cijena vjerodostojnosti koju zajednička valuta donosi.
 
-## Porezni sustavi u svijetu
-
-Stvarni porezni sustavi razlikuju se i po tome što pretežno oporezuju i po tome kako su nacionalno posloženi, pa ih je korisno gledati kroz obje leće.
-
-### Vrste prema poreznoj osnovici
-
-Nacionalni sustavi razlikuju se ponajprije po tome koju poreznu osnovicu naglašavaju, obuhvaćaju li prije svega dohodak, potrošnju ili imovinu. U tom smislu najčešće razlikujemo dohodovno orijentirane, potrošno orijentirane i imovinski orijentirane porezne sustave [@gruber2019; @stiglitz2015]. U praksi gotovo nijedna zemlja ne koristi isključivo jedan tip poreznog sustava jer stvarni porezni sustavi kombiniraju različite oblike oporezivanja, a razlikuju se u naglascima i strukturi.
-
-Dohodovno orijentirani porezni sustavi temelje se na oporezivanju dohotka pojedinaca i dobiti poduzeća. U središtu tog pristupa nalazi se ideja da porezna obveza treba odražavati ekonomsku snagu pojedinca, odnosno njegovu sposobnost plaćanja poreza. Jedna od najvažnijih karakteristika dohodovnog oporezivanja jest progresivnost, čime se ostvaruje redistributivna funkcija poreza [@musgrave1989]. Prednost takvog sustava leži upravo u njegovoj sposobnosti da doprinese smanjenju nejednakosti. Visoko oporezivanje dohotka može ipak utjecati na poticaje za rad, obrazovanje i poduzetništvo, osobito ako su marginalne porezne stope visoke. Dizajn poreza na dohodak zato često uključuje kompromis između pravednosti i učinkovitosti, što je jedno od središnjih pitanja teorije optimalnog oporezivanja [@mirrlees1971].
-
-Potrošno orijentirani porezni sustavi temelje se na oporezivanju potrošnje, a ne stvaranja dohotka. Najvažniji oblik tog tipa oporezivanja je porez na dodanu vrijednost (PDV), uz različite oblike trošarina. Osnovna ideja jest da se porez plaća kada se dohodak troši, a ne kada se ostvaruje. Time se izbjegava oporezivanje štednje, što može imati pozitivan učinak na investicije i gospodarski rast [@atkinson1980]. Jedna od ključnih prednosti tog sustava jest njegova administrativna učinkovitost i stabilnost prihoda. Potrošni porezi imaju ipak i važan nedostatak. Budući da kućanstva s nižim dohotkom troše veći dio svog dohotka, ti porezi često imaju regresivan učinak.
-
-Imovinski orijentirani porezni sustavi temelje se na oporezivanju vlasništva nad različitim oblicima kapitala. Imovinski porezi uključuju poreze na nekretnine, nasljedstva, darove i financijsku imovinu. Za razliku od poreza na dohodak i potrošnju, imovinski porezi često imaju manji udio u ukupnim poreznim prihodima, ali imaju specifične prednosti. Jedna od ključnih prednosti jest ta da relativno manje narušavaju ekonomske odluke, osobito kada se radi o nepokretnoj imovini [@stiglitz2015]. Osim toga, imovinski porezi mogu igrati važnu ulogu u smanjenju dugoročnih nejednakosti. Unatoč tim prednostima, imovinski porezi često su politički nepopularni, što ograničava njihovu primjenu.
-
-### Nacionalni porezni modeli
-
-Nacionalni sustavi razlikuju se znatno, ne samo po visini poreznog opterećenja, nego i po svojoj strukturi, načinu prikupljanja prihoda, administrativnoj složenosti i društvenim ciljevima koje nastoje ostvariti. Te razlike nisu slučajne jer odražavaju povijesni razvoj pojedine zemlje, institucionalni kapacitet države, političke preferencije građana, razinu gospodarskog razvoja i dominantne ideje o tome kolika bi trebala biti uloga države u gospodarstvu. Već klasična literatura javnih financija pokazuje da ne postoji jedinstven optimalan porezni sustav koji bi se mogao jednostavno preslikati iz jedne zemlje u drugu [@tanzi2011]. U osnovi, svaka država kombinira različite vrste poreza kako bi financirala javnu potrošnju, ali i kako bi utjecala na raspodjelu dohotka, štednju, investicije, potrošnju i ponudu rada.
-
-Anglo-saksonski model (SAD, UK, Kanada, Australija) obuhvaća zemlje u kojima su porezni sustavi tradicionalno više usmjereni na relativno niže ukupno porezno opterećenje i veći oslonac na tržišne mehanizme. Porezi na dohodak obično su progresivni, ali su stope u pravilu umjerenije nego u sjevernoj i kontinentalnoj Europi. Porezi na potrošnju, osobito opći porezi tipa PDV-a, često su niži nego u europskim državama blagostanja, a socijalni doprinosi imaju manju ulogu. Takav model odražava političku i ekonomsku tradiciju u kojoj se veći naglasak stavlja na individualnu odgovornost, tržišne poticaje i ograničeniju ulogu države u redistribuciji. Prednost takvog sustava često se vidi u većoj fleksibilnosti tržišta rada, jednostavnijem poreznom opterećenju rada i kapitala te snažnijim poticajima za poduzetništvo, rad i investicije [@barro1990]. S druge strane, slabija redistribucijska snaga poreznog sustava može dovesti do izraženijih dohodovnih nejednakosti.
-
-Kontinentalno-europski model (Njemačka, Francuska, Belgija, Austrija) obuhvaća zemlje koje su razvile porezne sustave koji nastoje kombinirati ekonomsku učinkovitost i socijalnu sigurnost, ali uz znatno veći oslonac na socijalne doprinose i oporezivanje rada. U tim sustavima relativno su visoki porezi na dohodak, a još važniju ulogu imaju doprinosi za mirovinsko, zdravstveno i druga socijalna osiguranja. Prednost takvog modela leži u njegovoj sposobnosti da stabilno financira širok raspon javnih usluga i socijalnih programa. Upravo zbog visokog opterećenja rada, ti sustavi često stvaraju visok **porezni klin** koji može negativno djelovati na zaposlenost, osobito slabije kvalificiranih radnika, te smanjivati poticaje za formalno zapošljavanje [@alesina1995].
-
-Nordijski model (Švedska, Danska, Norveška, Finska) karakterizira vrlo visoko ukupno porezno opterećenje, široka porezna baza, snažna progresivnost u oporezivanju dohotka, ali i značajan oslonac na poreze na potrošnju, osobito PDV. Njegova specifičnost nije samo u visini poreza, nego u kombinaciji visokih poreza, kvalitetnih javnih usluga, snažnih institucija, niske razine korupcije i visokog povjerenja građana u državu. Upravo zato visoki porezi u tim zemljama imaju veću političku legitimnost nego što bi je imali u zemljama sa slabijim institucijama [@tanzi2011]. Građani ih lakše prihvaćaju jer imaju osjećaj da za svoj porezni teret dobivaju kvalitetno obrazovanje, zdravstvo, infrastrukturu i socijalnu sigurnost.
-
-Sustavi zemalja u razvoju izgledaju bitno drukčije od onih u razvijenim državama. Zbog slabijih administrativnih kapaciteta, velike neformalne ekonomije i slabije evidencije prihoda i imovine, te se zemlje češće oslanjaju na poreze na potrošnju, trošarine i carine koji su tehnički lakši za prikupljanje. PDV se u tom smislu pokazao kao posebno važan instrument modernizacije poreznih sustava u mnogim zemljama jer omogućuje relativno stabilne prihode i lakšu kontrolu kroz lanac transakcija. Oslanjanje na potrošne poreze ipak ima i svoju cijenu, budući da su oni često regresivniji od progresivnog poreza na dohodak [@tanzi2011].
-
-Flat tax sustavi (Estonija, Latvija, Litva, Slovačka u određenim razdobljima) posebnu su skupinu zemalja koje su eksperimentirale s jedinstvenom stopom poreza na dohodak. Osnovna ideja jest da se različite razine dohotka oporezuju jednom stopom, uz eventualno postojanje osobnog odbitka ili neoporezivog minimuma. Zagovornici takvog sustava ističu njegovu jednostavnost, niže administrativne troškove, veću transparentnost i snažnije poticaje za rad i investicije. S druge strane, kritičari naglašavaju da flat tax ima ograničenu redistribucijsku moć i da slabije pridonosi smanjenju nejednakosti [@alesina1995].
-
-Razlike među poreznim sustavima ne mogu se objasniti samo ekonomskim razlozima. Jednako su važni kvaliteta institucija i povjerenje građana u državu, političke preferencije, administrativni kapacitet i razina razvoja. Porezni sustav koji dobro funkcionira u jednoj zemlji ne mora nužno biti uspješan u drugoj ako se razlikuju kvaliteta države, tržišne institucije, razina razvoja i politička očekivanja građana.
-
-| Porezni sustav | Glavne prednosti | Glavni nedostaci |
-|---|---|---|
-| Anglo-saksonski | Niže opterećenje; snažniji poticaji za rad i ulaganja; veća fleksibilnost tržišta rada | Slabija redistribucija; veća nejednakost; veća ovisnost o privatnim uslugama |
-| Kontinentalno-europski | Stabilno financiranje socijalne zaštite; snažnija socijalna zaštita | Visok porezni klin; veći trošak rada; mogući negativni učinci na zaposlenost |
-| Nordijski | Visoki i stabilni prihodi; kvalitetne javne usluge; uspješno spajanje jednakosti i učinkovitosti | Zahtijeva snažne institucije i visoko povjerenje; visoko ukupno opterećenje |
-| Zemlje u razvoju (potrošni) | Lakša administracija; stabilniji prihodi | Regresivniji učinci; slabija redistribucija; manji obuhvat oporezivanja |
-| Flat tax | Jednostavnost; transparentnost; niži administrativni troškovi | Ograničena progresivnost; slabija redistribucijska funkcija |
-| S osloncem na potrošnju | Šira baza; manji udar na štednju i ulaganja | Regresivnost; veće opterećenje kućanstava s nižim dohotkom |
-| S progresivnim porezima na dohodak | Veća redistribucijska snaga; veći doprinos vertikalnoj pravednosti | Veći rizik izbjegavanja poreza; složenija administracija |
-
-## Porezni sustavi u Europskoj uniji i Hrvatskoj
-
-### Porezni sustavi u Europskoj uniji
-
-Porezni sustav Europske unije specifičan je po tome što ne postoji jedinstveni „europski porezni sustav" u klasičnom smislu. Porezna suverenost i dalje je primarno u nadležnosti država članica, što znači da svaka država samostalno određuje porezne stope, osnovice i strukturu poreznog sustava. Ipak, zbog duboke ekonomske integracije i jedinstvenog tržišta, razvijen je niz pravila i mehanizama kojima se osigurava koordinacija i djelomična harmonizacija poreznih politika [@gruber2019].
-
-Ova kombinacija nacionalne autonomije i europske koordinacije proizlazi iz potrebe da se izbjegnu porezne prepreke slobodnom kretanju robe, usluga, kapitala i rada. Porezni sustavi država članica moraju biti kompatibilni s funkcioniranjem jedinstvenog tržišta, ali istovremeno zadržavaju dovoljno fleksibilnosti da odražavaju nacionalne specifičnosti.
-
-Najviši stupanj harmonizacije postignut je u području neizravnih poreza, osobito kod poreza na dodanu vrijednost (PDV-a) i trošarina. EU direktive definiraju osnovna pravila PDV sustava, uključujući minimalne standardne stope, način obračuna i oporezivanje prekograničnih transakcija. Države članice moraju imati standardnu stopu PDV-a od najmanje 15 %, iako stvarne stope često prelaze tu razinu. PDV je ključan ne samo kao nacionalni prihod, već i kao izvor vlastitih sredstava proračuna EU-a.
-
-Slično vrijedi i za trošarine, koje su harmonizirane kako bi se spriječile distorzije u trgovini određenim proizvodima poput alkohola, duhana i energenata. Time se osigurava da razlike u oporezivanju ne potiču prekomjernu prekograničnu kupnju ili narušavaju tržišno natjecanje.
-
-Za razliku od neizravnih poreza, izravni porezi poput poreza na dohodak i poreza na dobit u znatno su manjoj mjeri harmonizirani. Države članice zadržavaju visoku razinu autonomije u njihovom oblikovanju, što dovodi do značajnih razlika među zemljama. Ipak, EU kroz različite inicijative nastoji smanjiti negativne učinke porezne konkurencije i spriječiti eroziju porezne osnovice i premještanje dobiti (BEPS). U tom kontekstu važnu ulogu imaju direktive o oporezivanju multinacionalnih kompanija, razmjeni poreznih informacija i minimalnom oporezivanju dobiti.
-
-Struktura poreznih prihoda u EU pokazuje određene zajedničke karakteristike. U prosjeku, najveći dio prihoda dolazi od oporezivanja rada, uključujući poreze na dohodak i socijalne doprinose. Slijede porezi na potrošnju, dok porezi na imovinu imaju relativno manji udio. Takva struktura povezana je s modelom socijalne države, u kojem država osigurava širok spektar javnih usluga i socijalnih transfera.
-
-Među državama članicama postoje značajne razlike. Neke zemlje, poput nordijskih, imaju visoke poreze i snažnu redistributivnu funkciju, dok druge primjenjuju niže porezne stope i veći naglasak stavljaju na poticanje investicija i konkurentnosti. Unatoč tim razlikama, dugoročni trendovi ukazuju na postupnu konvergenciju poreznih sustava, potaknutu integracijom tržišta i zajedničkim pravilima.
-
-### Osnove poreznog sustava u Hrvatskoj
-
-Porezni sustav Republike Hrvatske razvijen je u okviru tranzicije prema tržišnom gospodarstvu te je tijekom procesa pristupanja Europskoj uniji značajno usklađen s europskim pravilima. Danas predstavlja mješoviti porezni sustav, u kojem su zastupljeni porezi na dohodak, potrošnju i imovinu, ali s jasno izraženim naglaskom na određene izvore prihoda.
-
-Jedno od najvažnijih obilježja hrvatskog sustava jest snažna uloga poreza na potrošnju, prije svega poreza na dodanu vrijednost (PDV-a). Standardna stopa PDV-a u Hrvatskoj iznosi 25 %, što je među najvišim stopama u Europskoj uniji. Uz standardnu stopu, primjenjuju se i snižene stope od 13 % (npr. na određene prehrambene proizvode, usluge u turizmu, energente) i 5 % (npr. na osnovne prehrambene proizvode, lijekove, knjige i novine). PDV je ključni izvor javnih prihoda, a njegova važnost proizlazi iz široke porezne osnovice i relativno učinkovite naplate.
-
-::: {.callout-empirija}
-PDV u Hrvatskoj generira između 12 i 13 % BDP-a godišnje, što je više od ukupnih prihoda od poreza na dohodak i poreza na dobit zajedno. Više od svakog trećeg eura javnih prihoda dolazi iz potrošnje, a ne iz rada ili kapitala, što odražava izrazit oslonac sustava na neizravne poreze.
-:::
-
-Uz PDV, važan dio sustava čine i trošarine, koje se primjenjuju na energente (gorivo, plin, električnu energiju), duhanske proizvode te alkohol i alkoholna pića. Ti porezi imaju dvostruku funkciju, fiskalnu jer generiraju značajne prihode i korektivnu jer utječu na smanjenje potrošnje proizvoda koji imaju negativne učinke na zdravlje ili okoliš.
-
-U području oporezivanja rada, Hrvatska primjenjuje porez na dohodak koji ima obilježja progresivnog sustava. Trenutno se primjenjuju dvije osnovne porezne stope, 20 % na niže razine dohotka i 30 % na više razine dohotka. Osim toga, jedinice lokalne samouprave mogu propisati lokalni prirez, koji dodatno povećava efektivno porezno opterećenje. Porez na dohodak uključuje i osobni odbitak, čime se smanjuje porezno opterećenje nižih dohodaka i povećava progresivnost sustava.
-
-Ukupno opterećenje rada u Hrvatskoj ne proizlazi samo iz poreza na dohodak, već i iz socijalnih doprinosa, koji čine značajan dio troška rada. Najvažniji doprinosi uključuju mirovinsko osiguranje (20 % bruto plaće, od čega 15 % za prvi stup i 5 % za drugi stup) i zdravstveno osiguranje (16,5 % bruto plaće, plaća poslodavac). Zbog kombinacije poreza na dohodak i doprinosa, ukupni porezni klin na rad relativno je visok, što može utjecati na ponudu rada i konkurentnost gospodarstva [@simovic2022].
-
-::: {.callout-praksa}
-Porezna reforma iz 2024. godine smanjila je opću stopu poreza na dohodak s 30 % na 23 % i ukinula prirez kao zaseban porez, integrirajući ga u opću stopu. Cilj je bio rasteretiti rad i pojednostaviti sustav, ali kritičari su upozorili da se istodobno smanjuje fiskalni prostor za lokalne jedinice koje su o prirezu ovisile. Reforma ilustrira tipičan kompromis između cilja smanjenja poreznog klina i cilja očuvanja prihoda jedinica lokalne samouprave.[^wp-ch14a]
-:::
-
-[^wp-ch14a]: Daljnje čitanje: Deskar-Škrbić, Drezgić i Šimović (2018), [*Tax policy and labour market in Croatia: effects of tax wedge on employment*](https://www.tandfonline.com/doi/full/10.1080/1331677X.2018.1456359) (Economic Research).
-
-Porez na dobit u Hrvatskoj ima proporcionalnu strukturu i relativno konkurentne stope, 10 % za male poduzetnike (do određenog praga prihoda) i 18 % za veće poduzetnike. Takva struktura osmišljena je kako bi se potaknulo poduzetništvo i investicije, osobito u malim i srednjim poduzećima. Uz to, postoje i različite porezne olakšice i poticaji, primjerice za ulaganja, istraživanje i razvoj te zapošljavanje.
-
-Za razliku od poreza na rad i potrošnju, oporezivanje imovine u Hrvatskoj relativno je slabo razvijeno. Ne postoji klasični godišnji porez na nekretnine u punom smislu, već se primjenjuju porez na promet nekretnina (3 % vrijednosti) te lokalni porezi i komunalne naknade. Zbog toga porezi na imovinu imaju relativno mali udio u ukupnim poreznim prihodima, što Hrvatsku razlikuje od nekih razvijenijih zemalja u kojima je taj oblik oporezivanja značajniji.
-
-### Globalna porezna arhitektura — od BEPS-a do globalnog minimalnog poreza
-
-Porezna autonomija država članica koju smo upravo opisali ima svoju cijenu. Kada svaka država samostalno određuje stopu poreza na dobit, a kapital se slobodno kreće preko granica, otvara se prostor za **poreznu konkurenciju** u kojoj zemlje snižavaju stope kako bi privukle dobit multinacionalnih kompanija. Krajnji ishod te dinamike poznat je kao utrka prema dnu, u kojoj naposljetku sve zemlje gube prihode, a najveću korist imaju najmobilniji porezni obveznici. Multinacionalne kompanije pritom dobit sustavno premještaju iz zemalja u kojima stvarno posluju u jurisdikcije s niskim ili nultim stopama, pojava koju je OECD nazvao erozijom porezne osnovice i premještanjem dobiti (*base erosion and profit shifting*, BEPS).
-
-Prvi val odgovora, poznat kao BEPS 1.0, OECD i skupina G20 pokrenuli su sredinom 2010-ih nizom mjera protiv najočitijih oblika izbjegavanja poreza, od zlouporabe ugovora o izbjegavanju dvostrukog oporezivanja do umjetnog premještanja nematerijalne imovine. Te su mjere otežale najagresivnije sheme, ali nisu dirale u sam temelj problema, a to je mogućnost da kompanija prijavi dobit ondje gdje gotovo da i nema stvarne ekonomske aktivnosti. Digitalizacija je problem dodatno zaoštrila jer poduzeće danas može ostvarivati velik prihod u nekoj zemlji bez ijednog ureda ili zaposlenika u njoj.
-
-Zbog toga je 2021. više od 130 zemalja pod okriljem OECD-a i skupine G20 postiglo dogovor o dubljoj reformi, nazvan dvostupanjskim rješenjem [@oecd2021twopillar]. **Stup 1** (*Pillar One*) preraspodjeljuje dio prava na oporezivanje najvećih i najprofitabilnijih kompanija prema zemljama u kojima se nalaze njihovi korisnici i kupci, neovisno o tome gdje kompanija ima fizičko sjedište. Time se izravno odgovara na pitanje kako oporezovati velike digitalne kompanije čija vrijednost nastaje ondje gdje su im korisnici, a dobit se prijavljuje drugdje, i postupno se zamjenjuju jednostrani nacionalni porezi na digitalne usluge koje je dotad uvelo više država.
-
-**Stup 2** (*Pillar Two*) uvodi **globalni minimalni porez**, pravilo prema kojem velike multinacionalne grupe u svakoj jurisdikciji u kojoj posluju moraju platiti efektivni porez na dobit od najmanje 15 %. Pravilo se odnosi na grupe s konsolidiranim godišnjim prihodom iznad 750 milijuna eura, a u Europskoj uniji je u primjeni od 2024. na temelju zajedničke direktive [@eudirective2022minimumtax]. Ako je efektivna stopa koju grupa plaća u nekoj zemlji niža od 15 %, razlika se naplaćuje kao dopunski porez, čime se uklanja sam poticaj za premještanje dobiti u niskoporezne jurisdikcije.
-
-Mehanizam dopunskog poreza ima suptilnu, ali važnu posljedicu za zemlje s niskim stopama. Ako država u kojoj posluje podružnica sama ne naplati razliku do 15 %, pravo na naplatu prelazi na druge zemlje u kojima grupa djeluje. Zbog toga je svakoj zemlji u interesu uvesti vlastiti **domaći dopunski porez** i tako zadržati prihod koji bi inače otišao stranim proračunima. Niska nominalna stopa time gubi velik dio svoje vrijednosti kao instrument privlačenja kapitala.
-
-Za Hrvatsku ta promjena nije apstraktna. Stopa poreza na dobit od 10 % za manje poduzetnike, opisana ranije u poglavlju, za velike grupe obuhvaćene globalnim minimalnim porezom više ne može ostati ispod praga od 15 % a da se razlika ne naplati negdje drugdje. Hrvatska je stoga, kao i ostale članice Unije, uvela domaći dopunski porez kojim osigurava da se ta razlika naplati u zemlji [@eudirective2022minimumtax]. Riječ je o udžbeničkom primjeru napetosti između porezne konkurencije i fiskalne koordinacije, u kojem se nacionalni instrument oblikovanja porezne politike svjesno ograničava kako bi se zaustavila utrka koja bi sve sudionike ostavila s manje prihoda.
-
-::: {.callout-empirija}
-Prema procjeni OECD-a, globalni minimalni porez trebao bi povećati svjetske prihode od poreza na dobit za red veličine 150 milijardi dolara godišnje, dijelom izravnom naplatom dopunskog poreza, a dijelom slabljenjem samog poticaja za premještanje dobiti [@oecd2021twopillar].
-:::
-
-## Porezi u doba umjetne inteligencije
-
-Sve dosad opisano, od povijesti poreza do hrvatskog poreznog sustava, počiva na jednoj tihoj pretpostavci, a to je da je **rad ljudi** glavni izvor stvaranja ekonomske vrijednosti, a **potrošnja kućanstava** glavni mehanizam kroz koji ta vrijednost cirkulira. Upravo zato moderne države, uključujući Hrvatsku, ubiru najveći dio prihoda iz poreza na dohodak, doprinosa na plaće i poreza na potrošnju. Brzi razvoj umjetne inteligencije (AI), međutim, prvi put u suvremenoj povijesti dovodi tu pretpostavku u pitanje. Ako strojevi postupno mogu obavljati sve veći dio ekonomski vrijednog rada, dvije temeljne porezne baze suvremene države, dohodak od rada i ljudska potrošnja, počinju se polako, ali sustavno smanjivati [@korinek2026]. Pitanje koje iz toga proizlazi nije više samo tehnološko nego duboko fiskalno. Postavlja se pitanje na čemu će porezni sustav počivati kada se vrijednost sve više stvara izvan rada.
-
-### Zašto AI mijenja porezni sustav
-
-Tehnološke promjene oduvijek su mijenjale porezne sustave. Industrijska revolucija dovela je do pomaka s oporezivanja zemlje na oporezivanje dohotka, dobiti i potrošnje. Ono što suvremenu raspravu o AI-u čini posebnom jest mogućnost da promjena ovaj put bude **kvalitativno drukčija**. Dok je svaka prethodna tehnološka revolucija u konačnici stvarala nove poslove i nove izvore dohotka od rada, transformativna AI mogla bi, prema dijelu suvremene literature, postupno zamijeniti gotovo sve oblike rutinskog i kognitivnog rada, ostavljajući rad kao manjinski izvor stvaranja vrijednosti [@korinek2017; @acemoglu2020robots].
-
-Za poreznu politiku ključno je razumjeti da AI ne mijenja samo razinu produktivnosti, već i **strukturu porezne baze**. Tradicionalni porezni sustav implicitno pretpostavlja da se vrijednost stvara kroz proces u kojem radnici i kapital zajedno proizvode robe i usluge, a stvoreni dohodak kruži preko plaća i potrošnje. Kada se taj proces preokrene tako da kapital, konkretno ulaganja u podatkovne centre, modele i računarsku snagu, može sam, uz minimalno ljudsko sudjelovanje, generirati ekonomski vrijedan output, klasične porezne ručice postaju sve manje učinkovite. Porez na rad pogađa sve manji udio ukupne vrijednosti, dok porez na potrošnju pogađa samo onaj dio stvorene vrijednosti koji se na kraju pretvori u ljudsku potrošnju, a taj dio može biti manji ako se znatan dio outputa AI sustava reinvestira natrag u izgradnju nove AI infrastrukture [@korinek2026].
-
-Taj problem najjasnije su sistematizirali ekonomisti Anton Korinek i Lee Lockwood, koji ga analiziraju kroz prizmu **teorije optimalnog oporezivanja**. Njihova analiza nije pokušaj predviđanja kada će se točno pojaviti opća umjetna inteligencija, već okvir za razmišljanje o tome kojim redoslijedom i kojim instrumentima porezni sustav treba reagirati ako se kretanje prema sve sposobnijim AI sustavima nastavi.
-
-### Erozija porezne baze — rad nasuprot kapitalu
-
-Empirijska polazna točka rasprave jest jednostavna, ali važna činjenica. U većini razvijenih ekonomija **rad je već danas znatno teže oporezovan od kapitala**. Procjene za Sjedinjene Države pokazuju da efektivna porezna stopa na dohodak od rada iznosi oko 30 %, dok se efektivna stopa na dohodak od kapitala kreće između 15 i 20 % [@acemoglu2020tax]. Posljedica je jednostavna i fiskalno neugodna. Svaki euro vrijednosti koji se preseli s rada na kapital donosi državi približno 10 do 15 centi **manje** poreznih prihoda. Ako AI postupno preseljava sve veći udio vrijednosti s rada na kapital, taj raskorak sustavno stvara strukturni deficit koji nije moguće zatvoriti marginalnim korekcijama postojećih stopa.
-
-Asimetrija ima i drugu, suptilniju posljedicu. Kad je porezni klin na rad znatno veći od poreznog opterećenja kapitala, sam porezni sustav postaje **pristran prema automatizaciji**. Poduzećima se isplati zamijeniti radnika strojem i u onim slučajevima u kojima čisto tehnološki, bez poreza, takva zamjena ne bi bila ekonomski opravdana [@acemoglu2020tax]. Postojeća porezna struktura ne samo da slabije oporezuje rezultat automatizacije, nego ga aktivno potiče.
-
-::: {.callout-empirija}
-U Hrvatskoj porezi i doprinosi na rad (porez na dohodak + doprinosi za mirovinsko i zdravstveno osiguranje) čine **gotovo polovicu** ukupnih prihoda opće države, dok porez na dobit i porezi povezani s kapitalom donose tek nekoliko postotaka BDP-a. Hipotetski pomak od svega 10 % vrijednosti s rada na kapital, uz nepromijenjene stope, smanjio bi porezne prihode za red veličine 1 % BDP-a, uz istovremen porast pritiska na socijalne izdatke za istisnute radnike.
-:::
-
-Za Hrvatsku je ta dijagnoza posebno relevantna jer je oporezivanje rada kroz visoke doprinose i porezni klin koji se približava prosjeku EU već danas jedan od glavnih izvora prihoda. Svaka eventualna erozija te baze udara izravno u temelje proračuna.
-
-### Dvostupanjski okvir — tranzicija i autonomna AI
-
-Korinek i Lockwood predlažu jednostavnu, ali analitički korisnu podjelu mogućeg razvoja na **dvije faze**, jer optimalna porezna politika u njima nije ista. Štoviše, instrumenti koji su dobri u jednoj fazi mogu biti štetni u drugoj [@korinek2026].
-
-U **prvoj fazi (tranzicija)** AI postupno istiskuje radnike u nizu zanimanja, ali ljudi i dalje ostaju glavni potrošači ekonomskog outputa. Vrijednost se sve više stvara kapitalom, ali se još uvijek u velikoj mjeri vraća kućanstvima kroz dividende, plaće preostalog rada i transfere. Glavni problem porezne politike u toj fazi jest kako održati prihode države dok se baza rada smanjuje, ali bez gušenja investicija u AI koje su, paradoksalno, izvor dugoročnog rasta produktivnosti.
-
-U **drugoj fazi (autonomna AI)** AI sustavi postaju dovoljno sposobni da samostalno usmjeravaju značajan dio ekonomske aktivnosti, uključujući reinvestiranje u izgradnju nove infrastrukture, podataka i modela, pri čemu sve veći udio stvorene vrijednosti nikada ne prolazi kroz ljudsku potrošnju. U toj fazi sami potrošni porezi prestaju biti dovoljni jer ono što AI sustavi "troše" međusobno (računarska snaga, energija, novi modeli) ne registrira se u standardnoj poreznoj osnovici.
-
-Razlika između faza nije samo akademska. Ona definira koji su porezi pametni *sada*, a koji bi mogli postati nužni *kasnije*. Tablica @tbl-ai-faze sažima preporuke po fazama, a ostatak ovog odjeljka razrađuje logiku.
-
-| Instrument                                            | Faza 1 (AI istiskuje rad)         | Faza 2 (autonomna AI)            |
-|-------------------------------------------------------|-----------------------------------|----------------------------------|
-| Porez na rad                                          | postupno smanjivati               | irelevantan (rad nestaje kao baza) |
-| PDV i ostali potrošni porezi                          | proširiti, modernizirati za digitalno | nedovoljan sam za sebe         |
-| Porez na **finalne** usluge robota / AI               | DA                                | DA                               |
-| Porez na **računarsku snagu** i AI infrastrukturu     | NE (distorzija ulaganja)          | DA (pristup vrijednosti)         |
-| Porez na **vlasništvo** robota                        | NE                                | DA                               |
-| Porez na fiksne faktore (zemljište, spektar)          | DA                                | DA                               |
-| Suvereni investicijski fond                           | preporučljivo započeti            | ključan                          |
-| Univerzalni temeljni dohodak (UBI)                    | preuranjen kao glavni instrument  | potencijalno nužan               |
-| Univerzalni temeljni kapital (UBC)                    | započeti odmah                    | ključan                          |
-
-: Optimalni porezni instrumenti po fazama AI tranzicije. Prilagođeno prema @korinek2026. {#tbl-ai-faze}
-
-### Optimalni instrumenti u Fazi 1
-
-Središnja preporuka za fazu tranzicije jest **postupan pomak težišta s oporezivanja rada na oporezivanje potrošnje**. Logika je u izravnoj vezi s teorijom optimalnog oporezivanja koju smo ranije razmatrali. Ako porezna baza rada postaje manje izdašna i istovremeno više iskrivljuje ekonomske odluke (potičući automatizaciju), učinkoviti porezni sustav prirodno prebacuje teret na šire i stabilnije baze, prije svega na potrošnju koja u Fazi 1 i dalje obuhvaća najveći dio ekonomske aktivnosti [@korinek2026; @atkinson1980].
-
-Uz pomak s rada na potrošnju, ključna je i druga, manje očita razlika, između oporezivanja **finalnih usluga** koje AI sustavi pružaju potrošačima i oporezivanja **proizvodnog kapitala** koji te usluge omogućuje. Korinek i Lockwood snažno preporučuju prvo, a odbacuju drugo. Razumno je oporezovati pretplatu na AI asistenta koja se prodaje kućanstvu (jer je riječ o klasičnoj konačnoj potrošnji), ali neproduktivno je oporezovati grafičke procesore, podatkovne centre ili "trening compute" jer to izravno gasi ulaganja koja podižu produktivnost i, u konačnici, samu poreznu bazu [@guerreiro2022; @costinot2023]. Ista logika vrijedi i za takozvane **token poreze** (porez na jedinice AI outputa) koji su smisleni kao porez na potrošačku uporabu, ali postaju distorzivni ako pogađaju AI korištenje u industrijskoj proizvodnji ili istraživanju.
-
-Ta preporuka nije ad hoc, nego izravna posljedica jednog od najstarijih rezultata teorije optimalnog oporezivanja.
-
-::: {#prp-proizvodna-efikasnost}
-**Teorem proizvodne efikasnosti (Diamond–Mirrlees).** Kada država može oporezovati sva finalna dobra, optimalno je međuinpute ostaviti neoporezovanima, $t^{*}_{\text{int}} = 0$, čime proizvodna strana ostaje neiskrivljena, a gospodarstvo proizvodi na granici proizvodnih mogućnosti [@diamond1971].
-:::
-
-U optimumu se zato granična stopa transformacije izjednačava s omjerom proizvođačkih cijena, a porezni klin ostaje samo na potrošačkoj strani,
-
-$$t^{*}_{\text{int}} = 0 \quad\Longrightarrow\quad MRT_{ij} = \frac{q_i}{q_j},$$
-
-gdje su $q_i$ i $q_j$ proizvođačke cijene dobara $i$ i $j$. Upravo na tom rezultatu počiva preporuka da se oporezuju finalne usluge AI-a, a ne računarska snaga, grafički procesori ni trening modela, jer bi porez na te međuinpute pomaknuo gospodarstvo s granice proizvodnih mogućnosti i smanjio samu poreznu osnovicu koju nastoji oporezovati.
-
-Treća preporuka odnosi se na **fiksne faktore**, resurse koji ne mogu pobjeći u drugu jurisdikciju ni "nestati" kada se oporezuju. Klasičan je primjer zemljište, ali u digitalnom dobu istoj logici pripadaju i radiofrekvencijski spektar te orbitalne pozicije za satelite. Ti su porezi ekonomski neutralni (ne smanjuju ponudu jer je ponuda fiksna) i postaju sve vrjedniji upravo onda kada oporezivanje rada počinje slabiti [@korinek2026]. Za Hrvatsku, slabo razvijeno oporezivanje nekretnina o kojem smo govorili ranije izgleda u tom svjetlu kao **propušten fiskalni prostor**, i to onaj koji teorija upravo preporučuje pojačati u doba AI-a.
-
-::: {.callout-praksa}
-Južna Koreja je 2017. godine smanjila porezne olakšice za ulaganja u automatizaciju, u javnosti predstavljeno kao prvi „porez na robote" na svijetu. Bill Gates je iste godine predložio izravan porez na vlasništvo robota. S gledišta okvira Korineka i Lockwooda oba su prijedloga **krivo dizajnirana za Fazu 1** jer pogađaju proizvodni kapital umjesto konačne potrošnje robota/AI usluga, gase ulaganja u trenutku kad ona još donose najveći prirast produktivnosti i, paradoksalno, pogoršavaju upravo onu fiskalnu ravnotežu koju nastoje popraviti. Ispravniji oblik istog poreza bio bi PDV na robotske usluge dostavljene krajnjem korisniku, ili poseban potrošni porez na komercijalne AI servise strukturno blizak postojećem PDV-u.[^wp-ch14b]
-:::
-
-[^wp-ch14b]: Daljnje čitanje: Acemoglu, Manera i Restrepo (2020), [*Does the US Tax Code Favor Automation?*](https://www.nber.org/papers/w27052) (NBER WP 27052); Guerreiro, Rebelo i Teles (2022), [*Should Robots Be Taxed?*](https://www.nber.org/papers/w23806).
-
-Konačno, Faza 1 zahtijeva i **modernizaciju samog PDV-a**, koja uključuje prilagodbu definicija oporezivih usluga digitalnoj ekonomiji, jasno razgraničenje poslovne i krajnje uporabe (kako bi se izbjeglo dvostruko ili kaskadno oporezivanje kroz proizvodne lance), te ulaganje u administrativni kapacitet porezne uprave koji će sve to moći nadgledati u stvarnom vremenu.
-
-### Optimalni instrumenti u Fazi 2
-
-Što ako AI sustavi postanu dovoljno sposobni da značajan dio ekonomske aktivnosti, od istraživanja, dizajna i optimizacije do upravljanja drugim strojevima, obavljaju autonomno? U tom slučaju potrošni porezi prestaju biti dovoljni. Ako AI sustav "zaradi" sto jedinica vrijednosti i devedeset reinvestira u nove modele i podatkovne centre, samo deset prolazi kroz ljudsku potrošnju i ulazi u PDV osnovicu.
-
-Korinek i Lockwood predlažu da se oporezivanje AI kapitala u toj fazi promatra ne kao klasičan porez na kapital, nego kao problem **optimalne berbe**, analogno odlukama o tome koliko šume sjeći godišnje da bi se dugoročno održao ekonomski prinos, ili koliko sveučilišni endowment smije godišnje trošiti, a da glavnica i dalje raste [@korinek2026]. Iznenađujući analitički rezultat te perspektive jest da optimalna stopa oporezivanja autonomnog AI kapitala u stacionarnom stanju ovisi prije svega o društvenoj diskontnoj stopi, odnosno o tome koliko društvo vrednuje sadašnju u odnosu na buduću potrošnju, a tek sekundarno o tehnološkim parametrima.
-
-::: {.callout-empirija}
-Intuicija je sljedeća. Ako AI kapital prinosi $R$ godišnje, a društvo buduću potrošnju diskontira po stopi $r$, optimalna porezna stopa kroz koju ljudski sektor "ubire" plodove sustava približno je jednaka $r$. Veće "ubiranje" iscrpljuje akumulaciju AI kapitala brže nego što ona raste, dok manje "ubiranje" znači žrtvovanje sadašnje potrošnje pojedinaca u korist nastavka ekspanzije strojnog sektora. Optimalan porez time postaje izravan iskaz **međugeneracijskih preferencija društva**, a ne čisto tehničko pitanje.
-:::
-
-U Fazi 2 instrumenti koje smo u Fazi 1 ocijenili štetnima, porezi na računarsku snagu, na vlasništvo robota i na intermedijarno korištenje AI sustava, postaju ne samo opravdani nego nužni jer bez njih najveći dio stvorene vrijednosti zaobilazi ljudski sektor. Uz njih, otvara se prostor i za nekoliko **nestandardnih mehanizama** o kojima rasprava već danas teče u međunarodnim policy krugovima.
-
-- **Suvereni investicijski fond** u kojem država kupuje udjele u najproduktivnijim AI poduzećima (model Norveške s naftnim fondom), pa prihode ostvaruje kroz dividende, a ne kroz iskrivljujuće poreze.
-- **Windfall clauses** kao pravno obvezujuće odredbe da AI poduzeća koja postignu iznimno visoke prinose dio njih automatski dijele s državom ili širom javnošću.
-- **Univerzalni temeljni kapital (UBC)**, predistribucijska politika u kojoj građani dobivaju vlasničke udjele u AI sustavima i infrastrukturi prije nego što se vlasništvo koncentrira. Logika je da je lakše dijeliti vlasništvo na samom početku nego naknadno preraspodjeljivati visoko koncentrirani dohodak.
-
-### Distribucijski izazov — UBI ili UBC?
-
-Sve dosad rečeno bavilo se prihodnom stranom, ali AI postavlja i distribucijsko pitanje koje porezni sustav teško može riješiti sam. Ako kapital, a osobito AI kapital, donosi sve veći udio dohotka, dok dohodak od rada stagnira ili pada, čak i fiskalno održiv sustav može proizvesti društveno neodrživu razinu nejednakosti.
-
-Najčešće spominjan odgovor jest **univerzalni temeljni dohodak (UBI)**, bezuvjetni novčani transfer svim građanima. Iz perspektive Korinekova i Lockwoodova okvira, UBI je politički razumljiv, ali fiskalno krhak. U Fazi 1 financirao bi se uglavnom iz potrošnih poreza, koji su regresivni i opterećuju upravo one koje UBI nastoji zaštititi; u Fazi 2 izvor financiranja postaje neizvjestan jer sama potrošnja kao baza slabi.
-
-Alternativa je već spomenuti **UBC**, univerzalni temeljni *kapital*. Umjesto da država redistribuira dohodak nakon što tržište proizvede koncentraciju, ona od početka osigurava da svaki građanin posjeduje neku količinu produktivne imovine (udjela u fondovima, AI infrastrukturi, podatkovnoj infrastrukturi). UBC se može povezati i s mirovinskim sustavom, što ga čini institucionalno bliskim hrvatskom drugom stupu. Glavna prednost UBC-a jest da **prati izvor vrijednosti**, jer ako AI kapital donosi sve veće prinose, prinosi prirodno teku građanima preko vlasništva, bez potrebe za stalno višim poreznim stopama.
-
-Rasprava UBI vs. UBC dobro se uklapa u logiku javnog izbora razvijenu u drugom dijelu knjige. UBI lakše prolazi kratkoročnom političkom logikom, ali UBC je strukturno otporniji jer ne ovisi o tome da svaka sljedeća vlada zadrži visoke porezne stope na kapital.
-
-### Što ovo znači za Hrvatsku?
-
-Hrvatska se u doba AI-a nalazi u zanimljivom, i ne nužno nepovoljnom, položaju. Njezin porezni sustav već je danas, kako pokazuje prethodni odjeljak, **izrazito naslonjen na potrošnju**. PDV od 25 % i prihod od 12 do 13 % BDP-a iz potrošnih poreza u skladu su upravo s onim smjerom koji teorija AI-fiskalne tranzicije preporučuje za Fazu 1. Porezna reforma iz 2024., koja je smanjila opću stopu poreza na dohodak s 30 % na 23 %, u istom je okviru korak prema rasterećenju rada, premda više iz domaćih razloga (konkurentnost rada, rasprava o klinu) nego iz svjesne AI-strategije.
-
-Istovremeno, ostaje nekoliko jasnih ranjivosti. Prvo, **porezni klin na rad i dalje je visok**, prije svega zbog doprinosa, pa je hrvatski proračun strukturno osjetljiv na svako daljnje istiskivanje rada od strane automatizacije. Drugo, **oporezivanje imovine i nekretnina ostaje slabo razvijeno**, što izravno proturječi preporuci o pojačanju poreza na fiksne faktore koji su u doba AI-a fiskalno posebno vrijedni. Treće, Hrvatska zasad nema artikulirani okvir za oporezivanje **digitalnih i AI usluga** (digital services tax, jasno razgraničenje poslovne i krajnje uporabe AI servisa), iako se na razini EU rasprava o tome ubrzano oblikuje.
-
-Korisno je razmišljanje o Hrvatskoj voditi i prema sljedećem redoslijedu prioriteta. Kratkoročno valja dalje rasteretiti rad uz modernizaciju PDV-a za digitalnu ekonomiju i razvoj poreza na nekretnine. Srednjoročno se Hrvatska treba uključiti u europski okvir oporezivanja digitalnih usluga. Dugoročno se može razmotriti fond po uzoru na suverene investicijske fondove kojim bi se akumulirao vlasnički udjel društva u dobicima od AI tranzicije.
-
-### Otvorena pitanja i ograničenja okvira
-
-Okvir Korineka i Lockwooda dragocjen je upravo zato što razlikuje stupnjeve tehnološke tranzicije i pokazuje da isti porezni instrument može biti dobar ili loš ovisno o fazi. Okvir ipak ne uklanja nekoliko stvarnih ograničenja. Prvo, **dubina je neizvjesnost** jer ne znamo hoće li, ni kada, doći do Faze 2, pa porezne sustave treba dizajnirati tako da budu **otporni na obje krajnosti**. Drugo, **porezna konkurencija među državama** ograničava jednostranu primjenu mjera poput poreza na računarsku snagu. Male, otvorene ekonomije poput Hrvatske posebno su izložene riziku premještanja AI investicija u susjedne, niže oporezive jurisdikcije ako se ne uskladi politika na razini EU. Treće, **politička ekonomija pomaka prema potrošnji** nije neutralna jer bez popratnih redistributivnih mjera takav pomak povećava regresivnost sustava, što može oslabiti njegovu legitimnost. To je pitanje koje je već u središtu rasprave razvijene u drugom dijelu knjige.
-
-Konačno, valja zadržati i metodološku skromnost. Rasprava o porezima u doba AI-a još je u povoju, a najvažniji empirijski podaci tek slijede. Vrijednost okvira nije u tome što daje konačne odgovore, nego u tome što **postavlja prava pitanja** i pokazuje koja od njih moramo početi rješavati prije nego što budemo prisiljeni.
-
 ::: {.sazetak-panel}
 ## Sažetak
 
-Porezi su obvezna, nepovratna davanja bez izravne protuusluge i temeljni su izvor prihoda moderne države, različit od naknada, pristojbi i doprinosa. Različite vrste poreza, na dohodak, potrošnju i imovinu, vrednuju se prema načelima pravednosti, učinkovitosti, jednostavnosti i izdašnosti, koja često stoje u međusobnoj napetosti. Teorija optimalnog oporezivanja pokazuje kako prikupiti potrebne prihode uz najmanji gubitak učinkovitosti, ali uvijek unutar političkih i institucionalnih ograničenja. Usporedba poreznih sustava u svijetu te u EU i Hrvatskoj, kao i izazovi digitalizacije i umjetne inteligencije, potvrđuju da porez nije samo teret, nego instrument kroz koji društvo izražava svoje vrijednosti i prioritete. Dosad smo poreze i potrošnju promatrali unutar granica nacionalne države, no Hrvatska ih ubire i troši kao članica Europske unije, pa proračunsku sliku treba podići i na europsku razinu.
+Porez je obvezno nepovratno davanje državi bez izravne protuusluge, čime se razlikuje od naknada i pristojbi vezanih uz konkretnu uslugu i od doprinosa koji stječu pojedinačno pravo, a prema predmetu oporezivanja pogađa dohodak, potrošnju ili imovinu te se prema načinu opterećenja dijeli na izravne i neizravne, proporcionalne, progresivne i regresivne. Svaki se sustav mjeri prema načelima pravednosti, učinkovitosti, jednostavnosti i izdašnosti, koja rijetko idu zajedno, pa je porezna politika trajno traženje ravnoteže među suprotstavljenim ciljevima. Tko zaista snosi teret ne ovisi o tome tko porez zakonski uplaćuje, nego o elastičnostima ponude i potražnje, a sam čin oporezivanja stvara mrtvi teret i porezni klin koji odvaja ono što poslodavac plaća od onoga što radnik prima. Teorija optimalnog oporezivanja traži kako prikupiti potreban prihod uz najmanji gubitak učinkovitosti i najmanju povredu pravednosti, od Ramseyeva pravila o težem oporezivanju neelastične potražnje, preko Mirrleesova modela koji suočava poticaje i redistribuciju, do otvorenih pitanja o oporezivanju štednje i kapitala te granica prihoda koje sažima Lafferova krivulja, a i sama inflacija djeluje kao skriveni porez kroz senioraž. Ti su pojmovi okvir, a ne sustav, pa ih sljedeće poglavlje stavlja na kušnju stvarnosti, usporedbom poreznih sustava u svijetu, EU i Hrvatskoj te pitanjem kako umjetna inteligencija mijenja samu osnovicu iz koje država ubire prihod.
 :::
 
 ::: {.callout-vjezba}
-Pretpostavite radnika s bruto plaćom od 1.500 € mjesečno. Izračunajte:
+Promatrajte tržište nekog dobra na kojem država uvodi specifični porez od [t]{.var} po jedinici. Neka je elastičnost ponude [ε_S = 0,5]{.var}, a potražnju razmatrate u dva scenarija, elastičnom ([ε_D = 2,0]{.var}) i neelastičnom ([ε_D = 0,4]{.var}).
 
-a. iznos doprinosa za mirovinsko (20 %) i zdravstveno osiguranje (16,5 %);
-b. bruto trošak rada za poslodavca;
-c. neto plaću nakon poreza na dohodak (23 %, uz osobni odbitak od 600 €).
+a. U kojem scenariju veći dio poreznog tereta snose potrošači, a u kojem proizvođači?
+b. Koristeći pravilo da se teret dijeli obrnuto proporcionalno elastičnostima, procijenite udio tereta koji u svakom scenariju pada na potrošače.
+c. U kojem je scenariju mrtvi teret poreza veći i zašto?
 
-Koliki je ukupni porezni klin kao postotak bruto troška rada? Usporedite s prosjekom EU od ~38 %.
-:::
-
-::: {.callout-vjezba}
-Pretpostavite hipotetski scenarij u kojem AI tijekom desetljeća istisne 15 % bruto plaća iz hrvatske ekonomije, pri čemu se istisnuta vrijednost preseli na kapital. Koristeći okvirne udjele iz teksta (porezi i doprinosi na rad ~ 18 % BDP-a, porezi na dobit i kapital ~ 3 % BDP-a, efektivne stope kao u tekstu), procijenite:
-
-a. izravni gubitak prihoda od poreza na rad;
-b. dobitak od poreza na dobit ako 15 % bruto plaća postane dobit;
-c. neto fiskalni učinak.
-
-Koju biste poreznu mjeru iz @tbl-ai-faze prvo uveli da zatvorite jaz i zašto?
+Kako se vaši zaključci slažu s Ramseyevim pravilom o oporezivanju dobara s neelastičnom potražnjom?
 :::
