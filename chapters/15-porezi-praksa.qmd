@@ -57,6 +57,169 @@ Razlike među poreznim sustavima ne mogu se objasniti samo ekonomskim razlozima.
 | S osloncem na potrošnju | Šira baza; manji udar na štednju i ulaganja | Regresivnost; veće opterećenje kućanstava s nižim dohotkom |
 | S progresivnim porezima na dohodak | Veća redistribucijska snaga; veći doprinos vertikalnoj pravednosti | Veći rizik izbjegavanja poreza; složenija administracija |
 
+### Koliko država uzima i odakle
+
+Kada uspoređujemo porezne sustave, prvo pitamo koliko država uzima, no ukupna visina poreza samo je dio priče. Dvije zemlje mogu imati vrlo sličan ukupni porezni teret, primjerice oko 40 % BDP-a, a posve različitu strukturu, pa se jedna oslanja na dohodak i doprinose, druga na potrošnju, a treća na imovinu i kapital. Porezni sustav zato otkriva i gdje država pronalazi ekonomsku snagu koju oporezuje, u potrošnji kroz PDV i trošarine, u radu kroz porez na dohodak i doprinose ili u kapitalu kroz porez na dobit, dividende i imovinu. Struktura poreza svojevrsna je fiskalna dijagnoza države jer pokazuje što država najlakše oporezuje i koliko se sustav koristi za redistribuciju.
+
+Razlika nije samo tehnička. Porezi na potrošnju jednostavni su za prikupljanje i fiskalno izdašni, ali su često regresivni. Porezi na rad mogu biti snažan izvor prihoda i instrument redistribucije, ali povećavaju razliku između troška rada za poslodavca i neto plaće. Porezi na kapital i imovinu mogu doprinijeti pravednijoj raspodjeli tereta, ali kapital je pokretljiviji od rada i potrošnje, pa su politički i administrativno osjetljiviji.
+
+| Porezna osnovica | Tipični porezi | Ekonomska logika | Tipični problemi |
+|---|---|---|---|
+| Potrošnja | PDV, trošarine, porez na promet | Oporezuje se korištenje dohotka | Regresivnost, utjecaj na cijene |
+| Rad | Porez na dohodak, doprinosi | Oporezuje se dohodak od rada | Porezni klin, trošak rada |
+| Kapital i dobit | Porez na dobit, dividende, kapitalni dobici | Oporezuje se prinos na ulaganja | Mobilnost kapitala, porezno planiranje |
+| Imovina | Nekretnine, nasljedstva, darovi | Oporezuje se akumulirana snaga | Politički otpor, procjena vrijednosti |
+
+: Osnovne vrste poreza prema poreznoj osnovici {#tbl-vrste-osnovica}
+
+U svijetu ne postoji jedinstveni porezni model. Razvijene zemlje u pravilu imaju veći porezni teret jer financiraju širi opseg javnih usluga, dok manje razvijene zemlje često imaju užu poreznu osnovicu i slabiju administraciju. Podaci OECD-a dobro ilustriraju taj raspon, jer je prosječni porezni teret zemalja OECD-a u 2023. iznosio 33,7 % BDP-a, od manje od 20 % BDP-a u Meksiku do više od 45 % BDP-a u Danskoj [@oecd2025revenue]. Jednako je važno odakle prihodi dolaze. U prosjeku OECD-a porezi na dohodak i dobit zajedno čine oko 35 % poreznih prihoda, socijalni doprinosi oko četvrtinu, a porezi na potrošnju gotovo trećinu, dok porezi na imovinu imaju manju i dugoročno opadajuću ulogu [@oecd2025revenue]. Slika koja slijedi prikazuje raspon ukupnog tereta.
+
+::: {.content-visible when-format="html"}
+```{ojs}
+//| echo: false
+//| label: fig-porezni-teret
+//| fig-cap: "Ukupni porezni teret (porezi i doprinosi, % BDP-a) za odabrane OECD zemlje, 2023. Zeleno je istaknut prosjek OECD-a (OECD, Revenue Statistics 2025)."
+//| fig-alt: "Vodoravni stupčasti graf ukupnog poreznog tereta u postotku BDP-a za osam OECD zemalja. Danska je na vrhu s 44,0 %, a Meksiko na dnu s 17,7 %. Prosjek OECD-a od 33,7 % nalazi se u sredini."
+{
+  const data = [
+    {z:"Danska", v:44.0, grp:"ostalo"},
+    {z:"Francuska", v:43.9, grp:"ostalo"},
+    {z:"Švedska", v:41.7, grp:"ostalo"},
+    {z:"Njemačka", v:37.3, grp:"ostalo"},
+    {z:"OECD prosjek", v:33.7, grp:"OECD"},
+    {z:"SAD", v:25.6, grp:"ostalo"},
+    {z:"Čile", v:20.6, grp:"ostalo"},
+    {z:"Meksiko", v:17.7, grp:"ostalo"}
+  ];
+  return Plot.plot({
+    width: 780, height: 380,
+    marginLeft: 96, marginRight: 46, marginTop: 26, marginBottom: 46,
+    style: {fontSize: "12px", fontFamily: "Public Sans, system-ui, sans-serif", color: "#3A332D"},
+    x: {label: "Ukupni porezni teret (% BDP-a) →", domain: [0, 48], grid: true},
+    y: {label: null, domain: data.map(d => d.z)},
+    color: {domain: ["ostalo","OECD"], range: ["#4A5568","#4A6B5C"]},
+    marks: [
+      Plot.barX(data, {x: "v", y: "z", fill: "grp"}),
+      Plot.text(data, {x: "v", y: "z", text: d => d.v.toFixed(1).replace(".", ","), dx: 4, textAnchor: "start", fontSize: 10, fill: "#3A332D"})
+    ]
+  });
+}
+```
+:::
+
+::: {.content-visible when-format="pdf"}
+```{r}
+#| label: fig-porezni-teret-print
+#| echo: false
+#| fig-cap: "Ukupni porezni teret (porezi i doprinosi, % BDP-a) za odabrane OECD zemlje, 2023. Zeleno je istaknut prosjek OECD-a (OECD, Revenue Statistics 2025)."
+#| fig-alt: "Vodoravni stupčasti graf ukupnog poreznog tereta u postotku BDP-a za osam OECD zemalja. Danska je na vrhu s 44,0 %, a Meksiko na dnu s 17,7 %. Prosjek OECD-a od 33,7 % nalazi se u sredini."
+#| fig-width: 7.8
+#| fig-height: 3.8
+source("R/setup.R")
+
+pt <- data.frame(
+  z = c("Danska","Francuska","Švedska","Njemačka","OECD prosjek","SAD","Čile","Meksiko"),
+  v = c(44.0, 43.9, 41.7, 37.3, 33.7, 25.6, 20.6, 17.7),
+  grp = c("ostalo","ostalo","ostalo","ostalo","OECD","ostalo","ostalo","ostalo"),
+  stringsAsFactors = FALSE
+)
+pt$z <- factor(pt$z, levels = rev(pt$z))
+cols <- c("ostalo" = "#4A5568", "OECD" = "#4A6B5C")
+
+ggplot(pt, aes(v, z, fill = grp)) +
+  geom_col(width = 0.72) +
+  geom_text(aes(label = sub("\\.", ",", sprintf("%.1f", v))),
+            hjust = -0.2, size = 2.9, color = "#3A332D") +
+  scale_fill_manual(values = cols, guide = "none") +
+  scale_x_continuous(limits = c(0, 48)) +
+  labs(x = "Ukupni porezni teret (% BDP-a, 2023.)", y = NULL) +
+  theme_pubfin()
+```
+:::
+
+Struktura prihoda razdvaja modele jasnije od same visine poreza. Zemlje sličnog ukupnog tereta mogu počivati na posve različitim osnovicama, pa Danska gotovo cijeli sustav gradi na porezu na dohodak uz zanemarive doprinose, Njemačka i Slovenija na doprinosima, a Čile na potrošnji. Sljedeća slika prikazuje taj fiskalni otisak za nekoliko karakterističnih sustava.
+
+::: {.content-visible when-format="html"}
+```{ojs}
+//| echo: false
+//| label: fig-porezna-struktura
+//| fig-cap: "Struktura poreznih prihoda u % ukupnih prihoda, odabrani sustavi, 2023. Kategorija „imovina i ostalo\" obuhvaća poreze na imovinu i ostale poreze (OECD, Revenue Statistics 2025)."
+//| fig-alt: "Složeni stupčasti graf strukture poreznih prihoda za šest sustava. Danska je gotovo u cijelosti oslonjena na dohodak i dobit, Njemačka i Slovenija na doprinose, a Čile na potrošnju, dok je prosjek OECD-a uravnotežen."
+{
+  const cats = ["dohodak i dobit","doprinosi","potrošnja","imovina i ostalo"];
+  const raw = [
+    {c:"OECD prosjek", v:[35.6, 25.5, 31.3, 7.6]},
+    {c:"Danska", v:[65.6, 0.2, 28.2, 6.0]},
+    {c:"Njemačka", v:[32.4, 38.4, 28.4, 0.8]},
+    {c:"SAD", v:[48.4, 23.5, 16.6, 11.5]},
+    {c:"Čile", v:[34.6, 5.6, 54.2, 5.6]},
+    {c:"Slovenija", v:[20.3, 42.9, 35.1, 1.7]}
+  ];
+  const data = raw.flatMap(d => d.v.map((val, i) => ({c: d.c, cat: cats[i], val})));
+  return Plot.plot({
+    width: 780, height: 360,
+    marginLeft: 96, marginRight: 24, marginTop: 26, marginBottom: 46,
+    style: {fontSize: "12px", fontFamily: "Public Sans, system-ui, sans-serif", color: "#3A332D"},
+    x: {label: "% ukupnih poreznih prihoda →", domain: [0, 100], grid: true},
+    y: {label: null, domain: raw.map(d => d.c)},
+    color: {domain: cats, range: ["#4A6B5C","#6B1F26","#C8942D","#8C8C8C"], legend: true},
+    marks: [
+      Plot.barX(data, {x: "val", y: "c", fill: "cat", order: cats}),
+      Plot.ruleX([0])
+    ]
+  });
+}
+```
+:::
+
+::: {.content-visible when-format="pdf"}
+```{r}
+#| label: fig-porezna-struktura-print
+#| echo: false
+#| fig-cap: "Struktura poreznih prihoda u % ukupnih prihoda, odabrani sustavi, 2023. Kategorija „imovina i ostalo\" obuhvaća poreze na imovinu i ostale poreze (OECD, Revenue Statistics 2025)."
+#| fig-alt: "Složeni stupčasti graf strukture poreznih prihoda za šest sustava. Danska je gotovo u cijelosti oslonjena na dohodak i dobit, Njemačka i Slovenija na doprinose, a Čile na potrošnju, dok je prosjek OECD-a uravnotežen."
+#| fig-width: 7.8
+#| fig-height: 3.6
+source("R/setup.R")
+
+cats <- c("dohodak i dobit","doprinosi","potrošnja","imovina i ostalo")
+zem <- c("OECD prosjek","Danska","Njemačka","SAD","Čile","Slovenija")
+ps <- data.frame(
+  c = factor(rep(zem, each = 4), levels = rev(zem)),
+  cat = factor(rep(cats, times = 6), levels = cats),
+  val = c(35.6, 25.5, 31.3, 7.6,
+          65.6, 0.2, 28.2, 6.0,
+          32.4, 38.4, 28.4, 0.8,
+          48.4, 23.5, 16.6, 11.5,
+          34.6, 5.6, 54.2, 5.6,
+          20.3, 42.9, 35.1, 1.7),
+  stringsAsFactors = FALSE
+)
+cols <- c("dohodak i dobit" = "#4A6B5C", "doprinosi" = "#6B1F26",
+          "potrošnja" = "#C8942D", "imovina i ostalo" = "#8C8C8C")
+
+ggplot(ps, aes(val, c, fill = cat)) +
+  geom_col(width = 0.7) +
+  scale_fill_manual(values = cols, name = NULL) +
+  scale_x_continuous(limits = c(0, 100)) +
+  labs(x = "% ukupnih poreznih prihoda (2023.)", y = NULL) +
+  theme_pubfin() +
+  theme(legend.position = "top")
+```
+:::
+
+| Zemlja | Teret (% BDP-a) | Dohodak i dobit | Doprinosi | Potrošnja | Dominantni oslonac |
+|---|---|---|---|---|---|
+| OECD prosjek | 33,7 | 35,6 | 25,5 | 31,3 | uravnoteženo |
+| Danska | 44,0 | 65,6 | 0,2 | 28,2 | dohodak |
+| Njemačka | 37,3 | 32,4 | 38,4 | 28,4 | doprinosi |
+| Švedska | 41,7 | 35,4 | 21,5 | 28,4 | dohodak i potrošnja |
+| SAD | 25,6 | 48,4 | 23,5 | 16,6 | dohodak i imovina |
+| Čile | 20,6 | 34,6 | 5,6 | 54,2 | potrošnja (PDV) |
+| Slovenija | 36,4 | 20,3 | 42,9 | 35,1 | doprinosi |
+
+: Ukupni porezni teret (% BDP-a) i struktura prihoda (% ukupnih prihoda), 2023. {#tbl-oecd-sustavi}
+
 ## Porezni sustavi u Europskoj uniji i Hrvatskoj
 
 ### Porezni sustavi u Europskoj uniji
@@ -75,6 +238,20 @@ Struktura poreznih prihoda u EU pokazuje određene zajedničke karakteristike. U
 
 Među državama članicama postoje značajne razlike. Neke zemlje, poput nordijskih, imaju visoke poreze i snažnu redistributivnu funkciju, dok druge primjenjuju niže porezne stope i veći naglasak stavljaju na poticanje investicija i konkurentnosti. Unatoč tim razlikama, dugoročni trendovi ukazuju na postupnu konvergenciju poreznih sustava, potaknutu integracijom tržišta i zajedničkim pravilima.
 
+U brojkama, ukupni prihodi od poreza i socijalnih doprinosa u EU u 2024. iznosili su 40,4 % BDP-a, a u europodručju 40,9 % [@eurostat2025tax]. Eurostat te prihode dijeli na tri velike skupine koje su u Uniji razmjerno uravnotežene, pa su neizravni porezi činili 12,9 % BDP-a, izravni porezi na dohodak i bogatstvo 13,3 % BDP-a, a neto socijalni doprinosi 14,0 % BDP-a. EU se zato kao cjelina ne može opisati ni kao prostor pretežno visokog oporezivanja rada ni pretežno potrošnje, nego kao kombinirani model u kojem sve tri skupine nose važnu fiskalnu ulogu. Razlike među članicama ipak su velike, pa Danska gotovo cijelu socijalnu državu financira porezima na dohodak uz vrlo male doprinose, kontinentalne zemlje poput Njemačke i Slovenije snažno se oslanjaju na doprinose, a skupina s velikom ulogom neizravnih poreza obuhvaća, uz Hrvatsku, i Mađarsku i Grčku.
+
+| Zemlja | Ukupno 2024 | Neizravni | Izravni | Doprinosi | Oslonac na neizravne (%) |
+|---|---|---|---|---|---|
+| EU | 40,4 | 12,9 | 13,3 | 14,0 | 32,0 |
+| Francuska | 45,3 | 15,6 | 12,5 | 16,5 | 34,5 |
+| Danska | 45,8 | 13,9 | 31,3 | 0,7 | 30,3 |
+| Njemačka | 40,9 | 10,4 | 12,8 | 17,5 | 25,4 |
+| Hrvatska | 38,6 | 19,3 | 7,9 | 11,4 | 49,9 |
+| Mađarska | 35,3 | 17,3 | 7,6 | 10,5 | 48,9 |
+| Irska | 22,4 | 6,4 | 11,8 | 4,1 | 28,7 |
+
+: Porezi i doprinosi u odabranim članicama EU, 2024. (% BDP-a) {#tbl-eu-clanice}
+
 ### Osnove poreznog sustava u Hrvatskoj
 
 Porezni sustav Republike Hrvatske razvijen je u okviru tranzicije prema tržišnom gospodarstvu te je tijekom procesa pristupanja Europskoj uniji značajno usklađen s europskim pravilima. Danas predstavlja mješoviti porezni sustav, u kojem su zastupljeni porezi na dohodak, potrošnju i imovinu, ali s jasno izraženim naglaskom na određene izvore prihoda.
@@ -82,7 +259,7 @@ Porezni sustav Republike Hrvatske razvijen je u okviru tranzicije prema tržišn
 Jedno od najvažnijih obilježja hrvatskog sustava jest snažna uloga poreza na potrošnju, prije svega poreza na dodanu vrijednost (PDV-a). Standardna stopa PDV-a u Hrvatskoj iznosi 25 %, što je među najvišim stopama u Europskoj uniji. Uz standardnu stopu, primjenjuju se i snižene stope od 13 % (npr. na određene prehrambene proizvode, usluge u turizmu, energente) i 5 % (npr. na osnovne prehrambene proizvode, lijekove, knjige i novine). PDV je ključni izvor javnih prihoda, a njegova važnost proizlazi iz široke porezne osnovice i relativno učinkovite naplate.
 
 ::: {.callout-empirija}
-PDV u Hrvatskoj generira između 12 i 13 % BDP-a godišnje, što je više od ukupnih prihoda od poreza na dohodak i poreza na dobit zajedno. Više od svakog trećeg eura javnih prihoda dolazi iz potrošnje, a ne iz rada ili kapitala, što odražava izrazit oslonac sustava na neizravne poreze.
+PDV u Hrvatskoj generira oko 13 % BDP-a godišnje, najviše u cijeloj Europskoj uniji i više od ukupnih prihoda od poreza na dohodak i poreza na dobit zajedno. Gledano šire, neizravni porezi čine gotovo polovicu svih poreznih prihoda, pa najveći dio tereta nosi potrošnja, a ne rad ili kapital.
 :::
 
 Uz PDV, važan dio sustava čine i trošarine, koje se primjenjuju na energente (gorivo, plin, električnu energiju), duhanske proizvode te alkohol i alkoholna pića. Ti porezi imaju dvostruku funkciju, fiskalnu jer generiraju značajne prihode i korektivnu jer utječu na smanjenje potrošnje proizvoda koji imaju negativne učinke na zdravlje ili okoliš.
@@ -100,6 +277,90 @@ Porezna reforma iz 2024. godine smanjila je opću stopu poreza na dohodak s 30 %
 Porez na dobit u Hrvatskoj ima proporcionalnu strukturu i relativno konkurentne stope, 10 % za male poduzetnike (do određenog praga prihoda) i 18 % za veće poduzetnike. Takva struktura osmišljena je kako bi se potaknulo poduzetništvo i investicije, osobito u malim i srednjim poduzećima. Uz to, postoje i različite porezne olakšice i poticaji, primjerice za ulaganja, istraživanje i razvoj te zapošljavanje.
 
 Za razliku od poreza na rad i potrošnju, oporezivanje imovine u Hrvatskoj relativno je slabo razvijeno. Ne postoji klasični godišnji porez na nekretnine u punom smislu, već se primjenjuju porez na promet nekretnina (3 % vrijednosti) te lokalni porezi i komunalne naknade. Zbog toga porezi na imovinu imaju relativno mali udio u ukupnim poreznim prihodima, što Hrvatsku razlikuje od nekih razvijenijih zemalja u kojima je taj oblik oporezivanja značajniji.
+
+Stavi li se hrvatski sustav uz prosjek Unije, posebnost se vidi u strukturi. Ukupni porezi i doprinosi u Hrvatskoj u 2024. iznosili su 38,6 % BDP-a, ispod prosjeka EU od 40,4 %, ali iznad mnogih novih članica [@eurostat2025tax]. Razlika je u tome odakle prihodi dolaze. Neizravni porezi u Hrvatskoj iznose 19,3 % BDP-a naspram 12,9 % u EU, a sam PDV oko 13,3 % BDP-a naspram približno 7,1 % u Uniji. Istodobno su izravni porezi na dohodak i bogatstvo s 7,9 % BDP-a znatno ispod europskih 13,3 %, a neto socijalni doprinosi s oko 11,4 % ispod prosjeka od 14,0 %. Mjereno udjelom u ukupnim prihodima, gotovo polovica hrvatskog poreznog tereta dolazi iz neizravnih poreza, naspram otprilike trećine u prosjeku Unije.
+
+Iz te slike izranjaju četiri obilježja. Prvo je snažan oslonac na potrošnju, prije svega PDV i trošarine, koji sustav čine izdašnim i stabilnim, a u zemlji s velikom turističkom potrošnjom dio tereta prenose i na nerezidente. Drugo je razmjerno manja uloga izravnih poreza na dohodak i kapital, dijelom zbog manje mase visokih dohodaka, a dijelom zbog brojnih reformi i proporcionalnih elemenata sustava. Treće su važni, ali ne dominantni socijalni doprinosi, po čemu Hrvatska nije tipičan kontinentalni model. Četvrto je slabo oporezivanje imovine, osobito nekretnina, čime jedan velik oblik ekonomske snage ostaje izvan dosega sustava.
+
+Ta struktura nije bez napetosti. Oslonac na potrošnju slabije ostvaruje redistribuciju jer kućanstva nižeg dohotka troše veći dio prihoda, visok klin na rad opterećuje zapošljavanje, a sustav koji počiva na jednoj osnovici izdašan je u dobrim vremenima, ali ranjiv na pad potrošnje ili turizma. Zato rasprava o poreznoj reformi nije samo pitanje pojedine stope, nego pitanje treba li dio tereta dugoročno premjestiti s rada i potrošnje prema slabije korištenim osnovicama, osobito imovini.
+
+::: {.content-visible when-format="html"}
+```{ojs}
+//| echo: false
+//| label: fig-hr-eu-struktura
+//| fig-cap: "Struktura poreznih prihoda, Hrvatska naspram prosjeka EU, 2024. (% BDP-a). Hrvatska je visoko na neizravnim porezima i PDV-u, a nisko na izravnim porezima (Eurostat)."
+//| fig-alt: "Grupirani stupčasti graf koji uspoređuje EU i Hrvatsku po pet pokazatelja u postotku BDP-a. Hrvatska je viša na neizravnim porezima (19,3 naspram 12,9) i PDV-u (13,3 naspram 7,1), a niža na izravnim porezima (7,9 naspram 13,3) i doprinosima (11,4 naspram 14,0)."
+{
+  const data = [
+    {m:"Ukupno", e:"EU", v:40.4}, {m:"Ukupno", e:"Hrvatska", v:38.6},
+    {m:"Neizravni", e:"EU", v:12.9}, {m:"Neizravni", e:"Hrvatska", v:19.3},
+    {m:"Izravni", e:"EU", v:13.3}, {m:"Izravni", e:"Hrvatska", v:7.9},
+    {m:"Doprinosi", e:"EU", v:14.0}, {m:"Doprinosi", e:"Hrvatska", v:11.4},
+    {m:"PDV", e:"EU", v:7.1}, {m:"PDV", e:"Hrvatska", v:13.3}
+  ];
+  return Plot.plot({
+    width: 780, height: 400,
+    marginLeft: 50, marginRight: 24, marginTop: 30, marginBottom: 52,
+    style: {fontSize: "12px", fontFamily: "Public Sans, system-ui, sans-serif", color: "#3A332D"},
+    fx: {label: null, domain: ["Ukupno","Neizravni","Izravni","Doprinosi","PDV"]},
+    x: {axis: null, domain: ["EU","Hrvatska"]},
+    y: {label: "% BDP-a ↑", domain: [0, 45], grid: true},
+    color: {domain: ["EU","Hrvatska"], range: ["#4A5568","#C8942D"], legend: true},
+    marks: [
+      Plot.barY(data, {fx: "m", x: "e", y: "v", fill: "e"}),
+      Plot.text(data, {fx: "m", x: "e", y: "v", text: d => d.v.toFixed(1).replace(".", ","), dy: -6, fontSize: 9, fill: "#3A332D"}),
+      Plot.ruleY([0])
+    ]
+  });
+}
+```
+:::
+
+::: {.content-visible when-format="pdf"}
+```{r}
+#| label: fig-hr-eu-struktura-print
+#| echo: false
+#| fig-cap: "Struktura poreznih prihoda, Hrvatska naspram prosjeka EU, 2024. (% BDP-a). Hrvatska je visoko na neizravnim porezima i PDV-u, a nisko na izravnim porezima (Eurostat)."
+#| fig-alt: "Grupirani stupčasti graf koji uspoređuje EU i Hrvatsku po pet pokazatelja u postotku BDP-a. Hrvatska je viša na neizravnim porezima (19,3 naspram 12,9) i PDV-u (13,3 naspram 7,1), a niža na izravnim porezima (7,9 naspram 13,3) i doprinosima (11,4 naspram 14,0)."
+#| fig-width: 7.8
+#| fig-height: 4.0
+source("R/setup.R")
+
+he <- data.frame(
+  m = factor(rep(c("Ukupno","Neizravni","Izravni","Doprinosi","PDV"), each = 2),
+             levels = c("Ukupno","Neizravni","Izravni","Doprinosi","PDV")),
+  e = rep(c("EU","Hrvatska"), times = 5),
+  v = c(40.4, 38.6, 12.9, 19.3, 13.3, 7.9, 14.0, 11.4, 7.1, 13.3),
+  stringsAsFactors = FALSE
+)
+cols <- c("EU" = "#4A5568", "Hrvatska" = "#C8942D")
+
+ggplot(he, aes(m, v, fill = e)) +
+  geom_col(position = position_dodge(width = 0.8), width = 0.7) +
+  geom_text(aes(label = sub("\\.", ",", sprintf("%.1f", v))),
+            position = position_dodge(width = 0.8), vjust = -0.4, size = 2.6, color = "#3A332D") +
+  scale_fill_manual(values = cols, name = NULL) +
+  scale_y_continuous(limits = c(0, 46)) +
+  labs(x = NULL, y = "% BDP-a") +
+  theme_pubfin() +
+  theme(legend.position = "top")
+```
+:::
+
+| Pokazatelj | EU | Hrvatska | Poruka |
+|---|---|---|---|
+| Ukupni porezi i doprinosi (% BDP-a) | 40,4 | 38,6 | Hrvatska je ispod prosjeka EU |
+| Neizravni porezi (% BDP-a) | 12,9 | 19,3 | Snažan oslonac na potrošnju |
+| Izravni porezi (% BDP-a) | 13,3 | 7,9 | Manja uloga poreza na dohodak i kapital |
+| Neto socijalni doprinosi (% BDP-a) | 14,0 | 11,4 | Doprinosi važni, ali ne dominantni |
+| PDV (% BDP-a) | ~7,1 | ~13,3 | PDV je središnji stup prihoda |
+| Udio neizravnih u ukupnima (%) | 32,0 | 49,9 | Gotovo polovica tereta u Hrvatskoj |
+
+: Glavne porezne komponente, EU i Hrvatska, 2024. {#tbl-eu-hr}
+
+### Kako čitati porezne usporedbe
+
+Međunarodne porezne usporedbe traže oprez. Prva je zamka uspoređivati samo zakonske stope, jer dvije zemlje s istom stopom poreza na dobit mogu imati posve različito efektivno opterećenje zbog olakšica i poticaja. Druga je promatrati samo jedan porez, jer niska stopa poreza na dohodak uz visoke doprinose i PDV i dalje može značiti velik ukupni teret. Treća je zanemariti rashodnu stranu, jer građani porezni teret doživljavaju zajedno s kvalitetom javnih usluga koje za njega dobivaju. Četvrta je zanemariti institucije, jer porezni sustav počiva na povjerenju i administrativnom kapacitetu, pa ista pravila u zemlji slabijih institucija daju slabiji rezultat.
 
 ### Globalna porezna arhitektura — od BEPS-a do globalnog minimalnog poreza
 
