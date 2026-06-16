@@ -1,5 +1,5 @@
 ---
-title: "Stabilizacijska funkcija — država i makroekonomska stabilnost"
+title: "Stabilizacijska funkcija"
 ---
 
 ::: {.vodic-panel}

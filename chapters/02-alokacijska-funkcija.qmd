@@ -633,7 +633,7 @@ eps_s_pos = pos_controls.eps_s_pos
 //| echo: false
 //| label: fig-poz-eksternalija
 //| fig-cap: "Pozitivna eksternalija i propuštena korist: tržišna razina Q_M preniska je u odnosu na društveni optimum Q* jer MPB ne uključuje vanjsku korist."
-//| fig-alt: "Graf prikazuje krivulju marginalnog privatnog benefita MPB i krivulju marginalnog društvenog benefita MSB pomaknutu gore za iznos vanjske koristi, te uzlaznu krivulju ponude S. Tržišna ravnoteža je u presjeku MPB i S, a society optimum desno gore u presjeku MSB i S. Osjenčani trokut prikazuje propuštenu društvenu korist."
+//| fig-alt: "Graf prikazuje krivulju marginalnog privatnog benefita MPB i krivulju marginalnog društvenog benefita MSB pomaknutu gore za iznos vanjske koristi, te uzlaznu krivulju ponude S. Tržišna ravnoteža je u presjeku MPB i S, a društveni optimum desno gore u presjeku MSB i S. Osjenčani trokut prikazuje propuštenu društvenu korist."
 {
   // Fix MPB/S market equilibrium at (Qm, Pm) = (50, 50)
   const Qm   = 50;
@@ -745,7 +745,7 @@ eps_s_pos = pos_controls.eps_s_pos
 #| label: fig-poz-eksternalija-print
 #| echo: false
 #| fig-cap: "Pozitivna eksternalija i propuštena korist: tržišna razina Q_M preniska je u odnosu na društveni optimum Q* jer MPB ne uključuje vanjsku korist."
-#| fig-alt: "Graf prikazuje krivulju marginalnog privatnog benefita MPB i krivulju marginalnog društvenog benefita MSB pomaknutu gore za iznos vanjske koristi, te uzlaznu krivulju ponude S. Tržišna ravnoteža je u presjeku MPB i S, a society optimum desno gore u presjeku MSB i S. Osjenčani trokut prikazuje propuštenu društvenu korist."
+#| fig-alt: "Graf prikazuje krivulju marginalnog privatnog benefita MPB i krivulju marginalnog društvenog benefita MSB pomaknutu gore za iznos vanjske koristi, te uzlaznu krivulju ponude S. Tržišna ravnoteža je u presjeku MPB i S, a društveni optimum desno gore u presjeku MSB i S. Osjenčani trokut prikazuje propuštenu društvenu korist."
 #| fig-width: 7.6
 #| fig-height: 5.0
 # Statički PDF blizanac interaktivnog OJS grafa (zadane vrijednosti klizača).

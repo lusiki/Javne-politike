@@ -1,5 +1,5 @@
 ---
-title: "Javne financije Europske unije — zajednička valuta bez zajedničkog proračuna"
+title: "Javne financije Europske unije"
 ---
 
 ::: {.vodic-panel}

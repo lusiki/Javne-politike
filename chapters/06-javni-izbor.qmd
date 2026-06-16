@@ -345,10 +345,10 @@ Zajednički nazivnik tih ishoda jedna je asimetrija. Mnoge politike donose velik
 
 | Mehanizam neuspjeha države | Glavni akteri | Racionalni cilj aktera | Rezultat za društvo (neintuitivan ishod) | Razrađeno u |
 | :--- | :--- | :--- | :--- | :--- |
-| Koncentrirane koristi / raspršeni troškovi | Interesne skupine, birači | Organiziranje malih skupina radi velikog dobitka, ravnodušnost većine | Usvajanje politika s neto niskim ili negativnim društvenim povratom | pogl. 8 |
-| Lov na rentu | Interesne skupine | Stjecanje umjetno stvorenih povlastica (političke rente) | Rasipanje produktivnih resursa (Tullockov pravokutnik) | pogl. 8 |
-| Trgovina glasovima (logrolling) | Političari | Razmjena glasova radi prolaska specifičnih zakona | Usvajanje projekata s neto negativnom društvenom vrijednošću | pogl. 6 |
-| Maksimizacija proračuna | Birokrati | Povećanje proračuna i osobne moći | Prekomjerna i neučinkovita opskrba javnim dobrima | pogl. 9 |
+| Koncentrirane koristi / raspršeni troškovi | Interesne skupine, birači | Organiziranje malih skupina radi velikog dobitka, ravnodušnost većine | Usvajanje politika s neto niskim ili negativnim društvenim povratom | poglavlju o interesnim skupinama |
+| Lov na rentu | Interesne skupine | Stjecanje umjetno stvorenih povlastica (političke rente) | Rasipanje produktivnih resursa (Tullockov pravokutnik) | poglavlju o interesnim skupinama |
+| Trgovina glasovima (logrolling) | Političari | Razmjena glasova radi prolaska specifičnih zakona | Usvajanje projekata s neto negativnom društvenom vrijednošću | poglavlju o kolektivnom izboru |
+| Maksimizacija proračuna | Birokrati | Povećanje proračuna i osobne moći | Prekomjerna i neučinkovita opskrba javnim dobrima | poglavlju o birokraciji |
 
 : Mehanizmi neuspjeha države. Autorska sinteza prema @olson1965, @tullock1967, @niskanen1971 i @buchanan1962. {#tbl-mehanizmi}
 

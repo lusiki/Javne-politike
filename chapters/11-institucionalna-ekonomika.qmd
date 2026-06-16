@@ -1,5 +1,5 @@
 ---
-title: "Nova institucionalna ekonomika — pravila igre"
+title: "Nova institucionalna ekonomika"
 ---
 
 ::: {.vodic-panel}

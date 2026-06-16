@@ -1,5 +1,5 @@
 ---
-title: "Interesne skupine — iza kulisa politike"
+title: "Interesne skupine"
 ---
 
 ::: {.vodic-panel}
@@ -21,7 +21,7 @@ Ta logika organizira cijelo poglavlje. Polazi od Olsonova pitanja zašto se male
 Polazna točka je Olsonova **logika kolektivnog djelovanja** [@olson1965]. Na prvi pogled očekivali bismo da velike skupine s velikim zajedničkim interesom lako organiziraju i nameću svoju volju. Olson je pokazao suprotno. Velike, raspršene skupine teško se organiziraju, dok male, koncentrirane skupine to čine lako.
 
 ::: {#def-logika-kolektivnog-djelovanja}
-**Logika kolektivnog djelovanja** Olsonova je teorija prema kojoj se male, koncentrirane skupine organiziraju lakše od velikih, raspršenih jer je poticaj svakog člana male skupine veći, a problem slobodnog jahača manji; selektivni poticaji (privatne koristi samo za članove) jedini su pouzdan lijek za norganiziranost velikih skupina [@olson1965].
+**Logika kolektivnog djelovanja** Olsonova je teorija prema kojoj se male, koncentrirane skupine organiziraju lakše od velikih, raspršenih jer je poticaj svakog člana male skupine veći, a problem slobodnog jahača manji; selektivni poticaji (privatne koristi samo za članove) jedini su pouzdan lijek za neorganiziranost velikih skupina [@olson1965].
 :::
 
 Razlog je problem slobodnog jahača primijenjen na političko djelovanje. Ako neka korist (primjerice povoljnija regulacija ili niži porez za sektor) pripada svima u skupini bez obzira na to tko se za nju izborio, svaki pojedini član ima poticaj prepustiti trošak organiziranja drugima. U velikoj skupini, gdje je pojedinačni doprinos malen, a korist svejedno zajednička, malo tko će se aktivirati. U maloj skupini, gdje svaki član ostvaruje velik i vidljiv udio koristi, poticaj za organiziranje je snažan.

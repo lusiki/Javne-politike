@@ -1,5 +1,5 @@
 ---
-title: "Vodič · Porezi, više od tereta"
+title: "Vodič · Klasična teorija oporezivanja"
 toc: false
 number-sections: false
 lang: hr-HR
@@ -10,7 +10,7 @@ format:
 ---
 
 ```{=html}
-<div class="vd-dio-4">
+<div class="vd-dio-1">
 
 <div class="vd-folio">
   <div class="vd-folio-left">
