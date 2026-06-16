@@ -161,6 +161,82 @@ gdje je $F(y)$ mjesto pojedinca u poretku od najsiromašnijeg prema najbogatijem
 
 Ginijev koeficijent tako sažima cijelu raspodjelu u jedan broj, čime učinak preraspodjele postaje izravno usporediv među zemljama.
 
+Ta usporedivost odmah pokazuje koliko porezi i transferi mijenjaju sliku. Slika koja slijedi za svaku zemlju spaja Gini tržišnog dohotka, prije poreza i socijalnih transfera, s Ginijem raspoloživog dohotka nakon njih, pa duljina strelice mjeri snagu preraspodjele. Hrvatska nejednakost smanjuje s približno 0,45 na 0,30, osjetno snažnije od Sjedinjenih Država, a nešto slabije od Francuske ili nordijskih sustava.
+
+::: {.content-visible when-format="html"}
+```{ojs}
+//| echo: false
+//| label: fig-gini-prije-poslije
+//| fig-cap: "Ginijev koeficijent prije i poslije poreza i transfera, odabrane zemlje (dohodovna godina 2023., Njemačka 2022.). Siva točka je tržišni dohodak, obojena raspoloživi, a strelica mjeri smanjenje nejednakosti koje ostvare porezi i transferi. Hrvatska je istaknuta zlatno. Izvor: OECD Income Distribution Database."
+//| fig-alt: "Strelični (dumbbell) graf za osam zemalja. Za svaku zemlju strelica vodi od višeg Ginija tržišnog dohotka prema nižem Giniju raspoloživog dohotka. Najduže su strelice za Francusku i Poljsku, najkraća za SAD. Hrvatska, istaknuta zlatno, pada s 0,45 na 0,30."
+{
+  const order = ["SAD","Italija","Njemačka","Hrvatska","Francuska","Švedska","Irska","Poljska"];
+  const data = [
+    {z:"SAD", m:0.506, d:0.394, hl:false},
+    {z:"Italija", m:0.509, d:0.325, hl:false},
+    {z:"Njemačka", m:0.505, d:0.309, hl:false},
+    {z:"Hrvatska", m:0.451, d:0.302, hl:true},
+    {z:"Francuska", m:0.517, d:0.299, hl:false},
+    {z:"Švedska", m:0.432, d:0.289, hl:false},
+    {z:"Irska", m:0.477, d:0.281, hl:false},
+    {z:"Poljska", m:0.442, d:0.257, hl:false}
+  ];
+  const P = Plot.plot({
+    width: 780, height: 380, marginLeft: 84, marginRight: 30, marginTop: 24, marginBottom: 46,
+    style: {fontSize: "12px", fontFamily: "Public Sans, system-ui, sans-serif", color: "#3A332D", background: "#F2EDE3"},
+    x: {domain: [0.2, 0.56], grid: true, label: "Gini koeficijent (0 = jednakost) →", tickFormat: d => d.toFixed(2).replace(".", ",")},
+    y: {domain: order, label: null},
+    marks: [
+      Plot.link(data, {x1: "m", x2: "d", y: "z", stroke: d => d.hl ? "#C8942D" : "#9A948A", strokeWidth: 2.4, markerEnd: "arrow"}),
+      Plot.dot(data, {x: "m", y: "z", r: 4.5, fill: "#6B6357", stroke: "white", strokeWidth: 1.2, tip: true}),
+      Plot.dot(data, {x: "d", y: "z", r: 5.5, fill: d => d.hl ? "#C8942D" : "#4A6B5C", stroke: "white", strokeWidth: 1.4, tip: true}),
+      Plot.text(data, {x: "m", y: "z", text: d => d.m.toFixed(2).replace(".", ","), dx: 9, dy: -9, fontSize: 9, fill: "#6B6357"}),
+      Plot.text(data, {x: "d", y: "z", text: d => d.d.toFixed(2).replace(".", ","), dx: -9, dy: -9, fontSize: 9, fontWeight: 600, textAnchor: "end", fill: d => d.hl ? "#9A6F38" : "#3A5648"})
+    ]
+  });
+  return htl.html`<figure style="margin:0;background:#F2EDE3">${P}
+    <div style="font:12px Public Sans, system-ui, sans-serif;color:#3A332D;text-align:center;margin-top:2px">
+      <span style="color:#6B6357">● tržišni dohodak (prije)</span>&nbsp;&nbsp;
+      <span style="color:#4A6B5C">● raspoloživi dohodak (poslije)</span>&nbsp;&nbsp;
+      <span style="color:#C8942D">● Hrvatska</span>
+    </div></figure>`;
+}
+```
+:::
+
+::: {.content-visible when-format="pdf"}
+```{r}
+#| label: fig-gini-prije-poslije-print
+#| echo: false
+#| fig-cap: "Ginijev koeficijent prije i poslije poreza i transfera, odabrane zemlje (dohodovna godina 2023., Njemačka 2022.). Siva točka je tržišni dohodak, obojena raspoloživi, a strelica mjeri smanjenje nejednakosti. Hrvatska je istaknuta zlatno. Izvor: OECD Income Distribution Database."
+#| fig-alt: "Strelični graf za osam zemalja: strelica vodi od Ginija tržišnog dohotka prema nižem Giniju raspoloživog dohotka. Hrvatska pada s 0,45 na 0,30."
+#| fig-width: 7.8
+#| fig-height: 3.8
+source("R/setup.R")
+theme_set(theme_pubfin() + theme(
+  plot.background  = element_rect(fill = "#F2EDE3", color = NA),
+  panel.background = element_rect(fill = "#F2EDE3", color = NA)))
+
+order <- c("SAD","Italija","Njemačka","Hrvatska","Francuska","Švedska","Irska","Poljska")
+df <- data.frame(
+  z = factor(order, levels = rev(order)),
+  m = c(0.506,0.509,0.505,0.451,0.517,0.432,0.477,0.442),
+  d = c(0.394,0.325,0.309,0.302,0.299,0.289,0.281,0.257),
+  hl = c(FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE)
+)
+ggplot(df) +
+  geom_segment(aes(x = m, xend = d, y = z, yend = z), color = "#9A948A", linewidth = 0.9,
+               arrow = arrow(length = unit(0.14, "cm"), type = "closed")) +
+  geom_point(aes(m, z), color = "#6B6357", size = 2.3) +
+  geom_point(aes(d, z, color = hl), size = 2.9) +
+  geom_text(aes(m, z, label = sub("\\.", ",", sprintf("%.2f", m))), vjust = -1.0, size = 2.6, color = "#6B6357") +
+  geom_text(aes(d, z, label = sub("\\.", ",", sprintf("%.2f", d))), vjust = -1.0, hjust = 1.1, size = 2.6, color = "#3A5648") +
+  scale_color_manual(values = c(`FALSE` = "#4A6B5C", `TRUE` = "#C8942D"), guide = "none") +
+  scale_x_continuous(limits = c(0.2, 0.56)) +
+  labs(x = "Gini koeficijent (0 = jednakost)", y = NULL)
+```
+:::
+
 Taj jedan broj ipak ima slijepu točku. Ginijev je koeficijent najosjetljiviji na promjene oko sredine raspodjele, a razmjerno slabo registrira ono što se događa u samom vrhu, pa dvije zemlje s vrlo različitom koncentracijom dohotka u gornjem postotku mogu dijeliti gotovo isti Gini. Upravo zato se novija literatura o nejednakosti sve više oslanja na **gornje dohodovne udjele**, to jest na udio ukupnog dohotka koji pripada najbogatijem jednom ili desetom postotku, rekonstruiran iz poreznih podataka koji vrh hvataju bolje od anketa na kojima Gini obično počiva [@piketty2014; @atkinson2015]. Korisno je razlikovati i dohodovnu od potrošne nejednakosti, jer kućanstva štednjom i zaduživanjem izglađuju potrošnju, pa ona obično pokazuje manju nejednakost od dohotka u jednom presjeku.
 
 Isti parametar averzije prema nejednakosti omogućuje i mjeru koja, za razliku od Ginijeva koeficijenta, u sebi nosi eksplicitan vrijednosni sud.

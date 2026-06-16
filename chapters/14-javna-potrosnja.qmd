@@ -24,6 +24,151 @@ U ranim fazama razvoja javnih financija fokus ekonomista bio je gotovo isključi
 
 Kako pokazuju povijesni podaci, u razdoblju od kraja 19. do početka 20. stoljeća javna potrošnja u razvijenim zemljama iznosila je tek oko 10 % BDP-a [@tanzi2000]. Međutim, to ne znači da su ta društva bila manje razvijena, već da država nije obavljala funkcije koje danas smatramo standardnima, poput masovnog obrazovanja, javnog zdravstva, socijalne sigurnosti ili aktivne politike zapošljavanja.
 
+Dugoročni podaci taj rast čine opipljivim. Slika koja slijedi spaja povijesne procjene Tanzija i Schuknechta s modernim nizom Eurostata, pa lijevi grafikon prati prosjek sedamnaest razvijenih zemalja od 1870. do danas, dok desni izdvaja noviji period u kojem se Hrvatska može usporediti s pojedinim članicama Unije. Prosječni udio javne potrošnje narastao je s približno 10 % BDP-a u kasnom 19. stoljeću na blizu 45 % potkraj 20. stoljeća, gdje se otad uglavnom zadržava, a Hrvatska se cijelo razdoblje kreće blizu ili neznatno iznad tog prosjeka.
+
+::: {.content-visible when-format="html"}
+```{ojs}
+//| echo: false
+//| label: fig-longrun-rashodi
+//| fig-cap: "Javna potrošnja kroz dugi rok. Lijevo: prosjek 17 razvijenih zemalja od 1870. (crveno) i Hrvatska (zlatno). Desno: moderni panel 2008.–2025., Hrvatska među odabranim članicama EU. Izvor: povijesni prosjeci Tanzi i Schuknecht (2000), Tablica I.1; moderni niz Eurostat (gov_10a_main); Hrvatska do 2007. procjene WB/IMF."
+//| fig-alt: "Dva linijska grafikona javne potrošnje kao udjela u BDP-u. Lijevi prati prosjek 17 razvijenih zemalja od oko 10 % BDP-a 1870. do blizu 45 % danas, uz hrvatsku liniju koja se kreće blizu prosjeka. Desni grafikon prikazuje razdoblje od 2008. do 2025. za Hrvatsku, prosjek i pojedine zemlje (Francuska visoko, Rumunjska nisko)."
+{
+  const yrsM = [2008,2009,2010,2011,2012,2013,2014,2015,2016,2017,2018,2019,2020,2021,2022,2023,2024,2025];
+  const eAvg = [44.9,48.5,47.8,46.8,47.2,47.8,47.4,46.7,45,44.3,44.4,44.5,50.5,48.7,47.2,47.5,47.7,48.4];
+  const eHR  = [46.3,49.3,48.2,48.6,47.3,48,48.7,47.6,45.9,44.3,45.2,46.4,53.8,48.2,45.1,46.6,48.4,50.1];
+  const eFR  = [54.3,58,57.7,57,57.9,58.6,58.4,57.6,57.4,57.7,56.4,55.3,61.7,59.5,58.4,56.8,57,57.2];
+  const eDE  = [44.4,48.3,48.1,45.3,45.1,45.2,44.5,44.5,44.7,44.5,44.7,45.5,51.1,50.7,48.6,48.1,49.4,50.5];
+  const eRO  = [37.7,39.7,39.4,37.9,36.1,35.8,35.6,35.9,34.8,33.6,34.6,36.3,41.7,40,40.9,41.1,43.3,43.3];
+  const eDK  = [50.3,56.3,56.5,56.3,57.9,55.6,55.1,54.4,52.4,50.6,50.8,49.8,53.3,49.7,45.1,47.4,47.3,48];
+  const eSE  = [50.4,52.8,50.9,50.2,51.4,52.5,51.8,50.4,50.5,50.3,50.9,49.8,53.1,50.4,49.4,50,50.5,49.9];
+  const eIT  = [47.8,51.1,49.8,49,50.5,50.9,50.7,50.2,49,48.8,48.3,48.4,56.8,56,54.9,53.6,50.4,51.2];
+  const ePL  = [44,44.9,46,44.1,43.2,43.2,42.7,41.5,41.1,41.1,41,41.4,47.7,43.6,43.2,46.9,49.2,50.9];
+  const eSI  = [45.2,50,50.7,51.4,50,57.7,50.6,49.5,46.9,44.6,44.1,43.8,51.8,49.9,47.7,46.5,46.5,49.6];
+  const histY = [1870,1913,1920,1937,1960,1980,1990,1996];
+  const histV = [10.7,12.7,18.7,22.8,27.9,43.1,44.8,45.6];
+  const hrHY = [1994,1995,1996,1997,1998,1999,2000,2001,2002,2003,2004,2005,2006,2007];
+  const hrHV = [52,51.5,50.2,49.8,50.6,53,49.8,50.6,50,48.7,47.5,46.5,45.8,44.8];
+
+  const mk = (ys, vs) => ys.map((y, i) => ({year: y, v: vs[i]}));
+  const brY = d3.range(1997, 2008);
+  const avgFull = [...mk(histY, histV), ...brY.map(y => ({year: y, v: 45.6})), ...mk(yrsM, eAvg)];
+  const hrFull  = [...mk(hrHY, hrHV), ...mk(yrsM, eHR)];
+  const greyDefs = {DK: eDK, SE: eSE, IT: eIT, PL: ePL, SI: eSI, FR: eFR, DE: eDE, RO: eRO};
+  const grey = Object.entries(greyDefs).flatMap(([g, vs]) => vs.map((v, i) => ({geo: g, year: yrsM[i], v})));
+
+  const baseStyle = {fontSize: "11px", fontFamily: "Public Sans, system-ui, sans-serif", color: "#3A332D", background: "#F2EDE3"};
+
+  const A = Plot.plot({
+    width: 416, height: 290, marginLeft: 38, marginRight: 12, marginTop: 14, marginBottom: 26,
+    style: baseStyle,
+    x: {label: null, domain: [1870, 2028], ticks: [1870, 1913, 1960, 2000, 2024], tickFormat: "d"},
+    y: {label: "↑ % BDP-a", domain: [0, 70], grid: true, ticks: [0, 20, 40, 60]},
+    marks: [
+      Plot.line(grey, {x: "year", y: "v", z: "geo", stroke: "#CBC5B8", strokeWidth: 0.7, tip: true}),
+      Plot.line(avgFull, {x: "year", y: "v", stroke: "#6B1F26", strokeWidth: 2.6, tip: true}),
+      Plot.line(hrFull, {x: "year", y: "v", stroke: "#C8942D", strokeWidth: 1.8, tip: true}),
+      Plot.ruleX([1996.5], {stroke: "#9A948A", strokeDasharray: "3,3"}),
+      Plot.text([{x: 1876, y: 51}], {x: "x", y: "y", text: ["Prosjek razvijenih"], fill: "#6B1F26", fontWeight: 700, fontSize: 11, textAnchor: "start"}),
+      Plot.text([{x: 1900, y: 60}], {x: "x", y: "y", text: ["Hrvatska"], fill: "#9A6F38", fontWeight: 700, fontSize: 11, textAnchor: "start"})
+    ]
+  });
+
+  const B = Plot.plot({
+    width: 416, height: 290, marginLeft: 38, marginRight: 14, marginTop: 14, marginBottom: 26,
+    style: baseStyle,
+    x: {label: null, domain: [2008, 2025], ticks: [2008, 2014, 2020, 2025], tickFormat: "d"},
+    y: {label: "↑ % BDP-a", domain: [30, 66], grid: true},
+    marks: [
+      Plot.line(mk(yrsM, eFR), {x: "year", y: "v", stroke: "#B8B2A6", strokeWidth: 1.2}),
+      Plot.line(mk(yrsM, eDE), {x: "year", y: "v", stroke: "#B8B2A6", strokeWidth: 1.2}),
+      Plot.line(mk(yrsM, eRO), {x: "year", y: "v", stroke: "#B8B2A6", strokeWidth: 1.2}),
+      Plot.line(mk(yrsM, eAvg), {x: "year", y: "v", stroke: "#6B1F26", strokeWidth: 2.4, tip: true}),
+      Plot.line(mk(yrsM, eHR), {x: "year", y: "v", stroke: "#C8942D", strokeWidth: 2.4, tip: true}),
+      Plot.text([{x: 2025, y: 57.2, t: "Francuska"}, {x: 2025, y: 50.5, t: "Njemačka"}, {x: 2025, y: 43.3, t: "Rumunjska"}],
+        {x: "x", y: "y", text: "t", dx: 4, textAnchor: "start", fontSize: 9.5, fill: "#6B6357"})
+    ]
+  });
+
+  return htl.html`<figure style="margin:0;background:#F2EDE3">
+    <div style="display:flex;flex-wrap:wrap;gap:16px;justify-content:center">
+      <div><div style="font:600 12px Public Sans, system-ui, sans-serif;color:#1C1916;margin-bottom:2px">A) Dugi luk, 1870.–2025.</div>${A}</div>
+      <div><div style="font:600 12px Public Sans, system-ui, sans-serif;color:#1C1916;margin-bottom:2px">B) Moderni panel, 2008.–2025.</div>${B}</div>
+    </div>
+    <div style="font:12px Public Sans, system-ui, sans-serif;color:#3A332D;text-align:center;margin-top:4px">
+      <span style="color:#6B1F26;font-weight:700">━ prosjek razvijenih zemalja</span>&nbsp;&nbsp;
+      <span style="color:#9A6F38;font-weight:700">━ Hrvatska</span>&nbsp;&nbsp;
+      <span style="color:#9A948A">━ pojedine zemlje</span>
+    </div>
+  </figure>`;
+}
+```
+:::
+
+::: {.content-visible when-format="pdf"}
+```{r}
+#| label: fig-longrun-rashodi-print
+#| echo: false
+#| fig-cap: "Javna potrošnja kroz dugi rok. Lijevo: prosjek 17 razvijenih zemalja od 1870. (crveno) i Hrvatska (zlatno). Desno: moderni panel 2008.–2025., Hrvatska među odabranim članicama EU. Izvor: povijesni prosjeci Tanzi i Schuknecht (2000), Tablica I.1; moderni niz Eurostat (gov_10a_main); Hrvatska do 2007. procjene WB/IMF."
+#| fig-alt: "Dva linijska grafikona javne potrošnje kao udjela u BDP-u, povijesni dugi luk i moderni panel s Hrvatskom."
+#| fig-width: 8.0
+#| fig-height: 3.8
+source("R/setup.R")
+theme_set(theme_pubfin() + theme(
+  plot.background  = element_rect(fill = "#F2EDE3", color = NA),
+  panel.background = element_rect(fill = "#F2EDE3", color = NA)))
+
+yrsM <- 2008:2025
+eAvg <- c(44.9,48.5,47.8,46.8,47.2,47.8,47.4,46.7,45,44.3,44.4,44.5,50.5,48.7,47.2,47.5,47.7,48.4)
+eHR  <- c(46.3,49.3,48.2,48.6,47.3,48,48.7,47.6,45.9,44.3,45.2,46.4,53.8,48.2,45.1,46.6,48.4,50.1)
+eFR  <- c(54.3,58,57.7,57,57.9,58.6,58.4,57.6,57.4,57.7,56.4,55.3,61.7,59.5,58.4,56.8,57,57.2)
+eDE  <- c(44.4,48.3,48.1,45.3,45.1,45.2,44.5,44.5,44.7,44.5,44.7,45.5,51.1,50.7,48.6,48.1,49.4,50.5)
+eRO  <- c(37.7,39.7,39.4,37.9,36.1,35.8,35.6,35.9,34.8,33.6,34.6,36.3,41.7,40,40.9,41.1,43.3,43.3)
+eDK  <- c(50.3,56.3,56.5,56.3,57.9,55.6,55.1,54.4,52.4,50.6,50.8,49.8,53.3,49.7,45.1,47.4,47.3,48)
+eSE  <- c(50.4,52.8,50.9,50.2,51.4,52.5,51.8,50.4,50.5,50.3,50.9,49.8,53.1,50.4,49.4,50,50.5,49.9)
+eIT  <- c(47.8,51.1,49.8,49,50.5,50.9,50.7,50.2,49,48.8,48.3,48.4,56.8,56,54.9,53.6,50.4,51.2)
+ePL  <- c(44,44.9,46,44.1,43.2,43.2,42.7,41.5,41.1,41.1,41,41.4,47.7,43.6,43.2,46.9,49.2,50.9)
+eSI  <- c(45.2,50,50.7,51.4,50,57.7,50.6,49.5,46.9,44.6,44.1,43.8,51.8,49.9,47.7,46.5,46.5,49.6)
+histY <- c(1870,1913,1920,1937,1960,1980,1990,1996)
+histV <- c(10.7,12.7,18.7,22.8,27.9,43.1,44.8,45.6)
+brY <- 1997:2007; brV <- rep(45.6, length(brY))
+hrHY <- 1994:2007
+hrHV <- c(52,51.5,50.2,49.8,50.6,53,49.8,50.6,50,48.7,47.5,46.5,45.8,44.8)
+
+pA <- "A) Dugi luk, 1870.–2025."
+pB <- "B) Moderni panel, 2008.–2025."
+ctry <- list(DK=eDK, SE=eSE, IT=eIT, PL=ePL, SI=eSI, FR=eFR, DE=eDE, RO=eRO)
+ostA <- do.call(rbind, lapply(names(ctry), function(g)
+  data.frame(panel=pA, series=g, kind="Pojedine zemlje", year=yrsM, v=ctry[[g]])))
+ostB <- bind_rows(
+  data.frame(panel=pB, series="FR", kind="Pojedine zemlje", year=yrsM, v=eFR),
+  data.frame(panel=pB, series="DE", kind="Pojedine zemlje", year=yrsM, v=eDE),
+  data.frame(panel=pB, series="RO", kind="Pojedine zemlje", year=yrsM, v=eRO)
+)
+ost <- bind_rows(ostA, ostB)
+avg <- bind_rows(
+  data.frame(panel=pA, series="avg", kind="Prosjek razvijenih", year=c(histY,brY,yrsM), v=c(histV,brV,eAvg)),
+  data.frame(panel=pB, series="avg", kind="Prosjek razvijenih", year=yrsM, v=eAvg)
+)
+hr <- bind_rows(
+  data.frame(panel=pA, series="HR", kind="Hrvatska", year=c(hrHY,yrsM), v=c(hrHV,eHR)),
+  data.frame(panel=pB, series="HR", kind="Hrvatska", year=yrsM, v=eHR)
+)
+df <- bind_rows(ost, avg, hr)
+df$kind <- factor(df$kind, levels=c("Pojedine zemlje","Prosjek razvijenih","Hrvatska"))
+
+ggplot(df, aes(year, v, group=interaction(panel, series), color=kind, linewidth=kind)) +
+  geom_segment(data=data.frame(panel=pA), aes(x=1996.5, xend=1996.5, y=0, yend=66),
+               inherit.aes=FALSE, linetype="22", color="#9A948A", linewidth=0.4) +
+  geom_line() +
+  facet_wrap(~panel, scales="free_x") +
+  scale_color_manual(values=c("Pojedine zemlje"="#B8B2A6","Prosjek razvijenih"="#6B1F26","Hrvatska"="#C8942D"), name=NULL) +
+  scale_linewidth_manual(values=c("Pojedine zemlje"=0.4,"Prosjek razvijenih"=1.1,"Hrvatska"=1.0), guide="none") +
+  scale_y_continuous(labels=function(x) paste0(x, " %"), limits=c(0,70)) +
+  labs(x=NULL, y=NULL) +
+  theme(legend.position="top", strip.text=element_text(face="bold", color="#1C1916"))
+```
+:::
+
 Već krajem 19. stoljeća pojavljuju se prve teorijske naznake da minimalistički pristup državi nije dugoročno održiv. Adolph Wagner uočava da s razvojem industrijskog društva potreba za javnim uslugama ne raste slučajno, nego pravilno, pa to zapažanje uzdiže na razinu zakonitosti.
 
 ::: {#def-wagnerov-zakon}
@@ -95,7 +240,7 @@ wag_g = wag_controls.g
             range: ["#C53030","#C8942D","#2D5A8E"]},
     marks: [
       Plot.line(tline, {x: "gdp", y: "sp", stroke: "#6B6357", strokeDasharray: "5,4", strokeWidth: 1.5}),
-      Plot.dot(data, {x: "gdp", y: "sp", fill: "grp", r: 6, stroke: "white", strokeWidth: 1}),
+      Plot.dot(data, {x: "gdp", y: "sp", fill: "grp", r: 6, stroke: "white", strokeWidth: 1, tip: true}),
       Plot.text(data, {x: "gdp", y: "sp", text: "z", dy: -11, fontSize: 10, fill: "#3A332D"}),
       Plot.dot([hyp], {x: "gdp", y: "sp", r: 9, fill: "#1C1916", stroke: "white", strokeWidth: 2}),
       Plot.text([hyp], {x: "gdp", y: "sp", text: [`predviđeno ≈ ${hyp.sp.toFixed(0)} %`],
@@ -353,7 +498,7 @@ Hrvatska se u toj slici smješta blizu europskog prosjeka. Ukupni rashodi opće 
     y: {label: null, domain: data.map(d => d.z)},
     color: {domain: ["ostalo","EU","Hrvatska"], range: ["#4A5568","#4A6B5C","#C8942D"]},
     marks: [
-      Plot.barX(data, {x: "v", y: "z", fill: "grp"}),
+      Plot.barX(data, {x: "v", y: "z", fill: "grp", tip: true}),
       Plot.ruleX([42.6], {stroke: "#8C8C8C", strokeDasharray: "5,4", strokeWidth: 1.5}),
       Plot.text([{z: "Francuska"}], {x: 42.6, y: "z", text: ["OECD 42,6 %"], dy: -12, dx: 4, textAnchor: "start", fontSize: 10, fill: "#6B6357"}),
       Plot.text(data, {x: "v", y: "z", text: d => d.v.toFixed(1).replace(".", ","), dx: 4, textAnchor: "start", fontSize: 10, fill: "#3A332D"})
@@ -438,7 +583,7 @@ Upravo socijalna zaštita najjasnije razdvaja modele države. U prosjeku OECD-a 
     x: {label: "% BDP-a (EU, 2023.) →", domain: [0, 28], grid: true},
     y: {label: null, domain: data.map(d => d.f)},
     marks: [
-      Plot.barX(data, {x: "v", y: "f", fill: "#4A5568"}),
+      Plot.barX(data, {x: "v", y: "f", fill: "#4A5568", tip: true}),
       Plot.text(data, {x: "v", y: "f", text: d => d.v.toFixed(1).replace(".", ","), dx: 4, textAnchor: "start", fontSize: 10, fill: "#3A332D"}),
       Plot.dot(mark, {x: "x", y: "f", r: 3.5, fill: "#1C1916", stroke: "white", strokeWidth: 0.8}),
       Plot.text(mark, {x: "x", y: "f", text: "l", dy: -10, fontSize: 9, fill: "#1C1916", textAnchor: "middle"})
@@ -490,6 +635,79 @@ Hrvatska po toj funkciji pripada europskom socijalnom modelu. Prema metodologiji
 
 [^esspros]: ESSPROS i COFOG nisu istovjetni. ESSPROS obuhvaća sve sheme socijalne zaštite i u pravilu daje viši iznos od COFOG funkcije „socijalna zaštita" opće države, pa hrvatskih 20,6 % nije izravno usporedivo s europskih 19,2 % prema COFOG-u.
 
+Razloži li se hrvatska potrošnja po funkcijama, dobiva se profil na sljedećoj slici. Socijalna zaštita i ovdje je najveća stavka, no prema COFOG-u opće države (13,8 % BDP-a) ostaje ispod europskog prosjeka, dok zdravstvo i osobito ekonomski poslovi nose razmjerno veći udio, što odražava ulogu EU fondova i javnih ulaganja.
+
+::: {.content-visible when-format="html"}
+```{ojs}
+//| echo: false
+//| label: fig-cofog-hr
+//| fig-cap: "Funkcionalna struktura rashoda opće države Hrvatske, 2024., u % BDP-a (COFOG). Socijalna zaštita dominira, slijede zdravstvo i ekonomski poslovi. Stavka „Ostalo\" obuhvaća javni red i sigurnost, obranu, zaštitu okoliša, stanovanje te rekreaciju i kulturu. Izvor: Eurostat (gov_10a_exp)."
+//| fig-alt: "Kružni dijagram (pita) funkcionalne strukture rashoda Hrvatske 2024. Socijalna zaštita 13,8 % BDP-a najveći je dio, slijede zdravstvo 9,0 %, ekonomski poslovi 6,4 %, opće javne usluge 5,5 %, obrazovanje 5,0 % i ostalo 8,3 %."
+{
+  const data = [
+    {cat:"Socijalna zaštita", v:13.8, c:"#C8942D"},
+    {cat:"Zdravstvo", v:9.0, c:"#4A6B5C"},
+    {cat:"Ekonomski poslovi", v:6.4, c:"#6B1F26"},
+    {cat:"Opće javne usluge", v:5.5, c:"#4A5568"},
+    {cat:"Obrazovanje", v:5.0, c:"#2D5A8E"},
+    {cat:"Ostalo", v:8.3, c:"#B8B2A6"}
+  ];
+  const R = 98, cx = 132, cy = 130, W = 520, H = 260;
+  const pie = d3.pie().sort(null).value(d => d.v);
+  const arc = d3.arc().innerRadius(0).outerRadius(R);
+  const lab = d3.arc().innerRadius(R * 0.6).outerRadius(R * 0.6);
+  const svg = d3.create("svg").attr("viewBox", [0, 0, W, H]).attr("width", W)
+    .attr("style", "max-width: 100%; height: auto; font-family: Public Sans, system-ui, sans-serif; background: #F2EDE3;");
+  const g = svg.append("g").attr("transform", `translate(${cx},${cy})`);
+  const arcs = pie(data);
+  g.selectAll("path").data(arcs).join("path")
+    .attr("d", arc).attr("fill", a => a.data.c).attr("stroke", "#F2EDE3").attr("stroke-width", 1.5)
+    .append("title").text(a => a.data.cat + " — " + a.data.v.toFixed(1).replace(".", ",") + " % BDP-a");
+  g.selectAll("text").data(arcs.filter(a => a.data.v >= 4)).join("text")
+    .attr("transform", a => `translate(${lab.centroid(a)})`).attr("text-anchor", "middle").attr("dy", "0.35em")
+    .attr("font-size", 11).attr("font-weight", 600).attr("fill", "white")
+    .text(a => a.data.v.toFixed(1).replace(".", ",") + " %");
+  let ly = 40; const lx = cx + R + 34;
+  data.forEach(d => {
+    svg.append("rect").attr("x", lx).attr("y", ly).attr("width", 13).attr("height", 13).attr("rx", 2).attr("fill", d.c);
+    svg.append("text").attr("x", lx + 18).attr("y", ly + 11).attr("font-size", 12).attr("fill", "#3A332D")
+      .text(d.cat + " (" + d.v.toFixed(1).replace(".", ",") + " %)");
+    ly += 25;
+  });
+  return svg.node();
+}
+```
+:::
+
+::: {.content-visible when-format="pdf"}
+```{r}
+#| label: fig-cofog-hr-print
+#| echo: false
+#| fig-cap: "Funkcionalna struktura rashoda opće države Hrvatske, 2024., u % BDP-a (COFOG). „Ostalo\" obuhvaća javni red, obranu, okoliš, stanovanje te rekreaciju i kulturu. Izvor: Eurostat (gov_10a_exp)."
+#| fig-alt: "Kružni dijagram funkcionalne strukture rashoda Hrvatske 2024.: socijalna zaštita 13,8 %, zdravstvo 9,0 %, ekonomski poslovi 6,4 %, opće javne usluge 5,5 %, obrazovanje 5,0 %, ostalo 8,3 %."
+#| fig-width: 7.4
+#| fig-height: 3.6
+source("R/setup.R")
+theme_set(theme_void(base_size = 12))
+cats <- c("Socijalna zaštita","Zdravstvo","Ekonomski poslovi","Opće javne usluge","Obrazovanje","Ostalo")
+df <- data.frame(cat = factor(cats, levels = cats), v = c(13.8,9.0,6.4,5.5,5.0,8.3))
+cols <- c("Socijalna zaštita"="#C8942D","Zdravstvo"="#4A6B5C","Ekonomski poslovi"="#6B1F26",
+          "Opće javne usluge"="#4A5568","Obrazovanje"="#2D5A8E","Ostalo"="#B8B2A6")
+df$lab <- ifelse(df$v >= 4, paste0(sub("\\.", ",", sprintf("%.1f", df$v)), " %"), "")
+ggplot(df, aes(x = "", y = v, fill = cat)) +
+  geom_col(width = 1, color = "#F2EDE3", linewidth = 0.6) +
+  coord_polar(theta = "y") +
+  geom_text(aes(label = lab), position = position_stack(vjust = 0.5), color = "white", size = 3, family = "mono") +
+  scale_fill_manual(values = cols, name = NULL) +
+  labs(x = NULL, y = NULL) +
+  theme(legend.position = "right",
+        plot.background  = element_rect(fill = "#F2EDE3", color = NA),
+        panel.background = element_rect(fill = "#F2EDE3", color = NA),
+        legend.background = element_rect(fill = "#F2EDE3", color = NA),
+        text = element_text(family = "mono", color = "#1C1916"))
+```
+:::
+
 | Tip zemlje | Tipične zemlje | Što prevladava | Ključno objašnjenje |
 |---|---|---|---|
 | Socijalna država visokih transfera | Finska, Francuska, Austrija, Italija | Socijalna zaštita | Mirovine, starenje, široka socijalna prava |
@@ -499,6 +717,78 @@ Hrvatska po toj funkciji pripada europskom socijalnom modelu. Prema metodologiji
 | Niža javna potrošnja | Irska, Litva, Malta, Cipar | Manji udio rashoda u BDP-u | Specifična struktura BDP-a ili veći privatni oslonac |
 
 : Funkcionalni profili javne potrošnje po skupinama zemalja {#tbl-funkc-profili}
+
+Te dvije funkcije, socijalna zaštita i zdravstvo, čine srž europske države blagostanja. Slika koja slijedi zbraja ih po zemljama, od Irske na dnu do Francuske i Finske na vrhu. Hrvatska se s 20,5 % BDP-a prema COFOG-u smješta u donju polovicu raspona, osjetno ispod prosjeka Unije.
+
+::: {.content-visible when-format="html"}
+```{ojs}
+//| echo: false
+//| label: fig-soczast-zdravstvo
+//| fig-cap: "Rashodi za socijalnu zaštitu (GF10) i zdravstvo (GF07) zajedno, % BDP-a, 2023. Zemlje su poredane od najmanjeg do najvećeg zbroja, a Hrvatska je istaknuta zlatnim obrubom. Izvor: Eurostat (gov_10a_exp, COFOG)."
+//| fig-alt: "Vodoravni složeni stupčasti graf za petnaest jedinica. Svaki je stupac zbroj socijalne zaštite i zdravstva u postotku BDP-a. Irska je najniža (13,1), Finska najviša (33,2), Hrvatska s 20,5 u donjoj polovici, ispod prosjeka EU27 od 26,4."
+{
+  const cats = ["Socijalna zaštita", "Zdravstvo"];
+  const raw = [
+    {z:"Finska", v:[25.6, 7.6]}, {z:"Francuska", v:[23.3, 8.8]}, {z:"Austrija", v:[21.2, 9.0]},
+    {z:"Italija", v:[21.0, 6.5]}, {z:"Njemačka", v:[19.5, 7.4]}, {z:"EU27", v:[19.2, 7.2]},
+    {z:"Švedska", v:[18.9, 6.5]}, {z:"Nizozemska", v:[16.4, 7.1]}, {z:"Poljska", v:[16.8, 5.7]},
+    {z:"Češka", v:[13.4, 8.8]}, {z:"Hrvatska", v:[12.8, 7.7]}, {z:"Estonija", v:[13.5, 6.2]},
+    {z:"Litva", v:[13.9, 5.2]}, {z:"Rumunjska", v:[12.9, 4.8]}, {z:"Irska", v:[7.7, 5.4]}
+  ];
+  const data = raw.flatMap(d => d.v.map((val, i) => ({z: d.z, cat: cats[i], val})));
+  const totals = raw.map(d => ({z: d.z, t: d.v[0] + d.v[1]}));
+  return Plot.plot({
+    width: 780, height: 480, marginLeft: 86, marginRight: 44, marginTop: 24, marginBottom: 46,
+    style: {fontSize: "12px", fontFamily: "Public Sans, system-ui, sans-serif", color: "#3A332D", background: "#F2EDE3"},
+    x: {label: "% BDP-a →", domain: [0, 36], grid: true},
+    y: {label: null, domain: raw.map(d => d.z)},
+    color: {domain: cats, range: ["#4A6B5C", "#2D5A8E"], legend: true},
+    marks: [
+      Plot.barX(data, {x: "val", y: "z", fill: "cat", order: cats,
+        stroke: d => d.z === "Hrvatska" ? "#C8942D" : null, strokeWidth: d => d.z === "Hrvatska" ? 2.2 : 0, tip: true}),
+      Plot.text(totals, {x: "t", y: "z", text: d => d.t.toFixed(1).replace(".", ","), dx: 4, textAnchor: "start",
+        fontSize: 10, fontWeight: d => d.z === "Hrvatska" ? 700 : 500, fill: d => d.z === "Hrvatska" ? "#9A6F38" : "#3A332D"}),
+      Plot.ruleX([0])
+    ]
+  });
+}
+```
+:::
+
+::: {.content-visible when-format="pdf"}
+```{r}
+#| label: fig-soczast-zdravstvo-print
+#| echo: false
+#| fig-cap: "Rashodi za socijalnu zaštitu (GF10) i zdravstvo (GF07) zajedno, % BDP-a, 2023. Zemlje su poredane od najmanjeg do najvećeg zbroja, Hrvatska je istaknuta zlatnim obrubom. Izvor: Eurostat (gov_10a_exp, COFOG)."
+#| fig-alt: "Vodoravni složeni stupčasti graf socijalne zaštite i zdravstva po zemljama; Irska 13,1, Finska 33,2, Hrvatska 20,5 ispod prosjeka EU27."
+#| fig-width: 7.8
+#| fig-height: 4.8
+source("R/setup.R")
+theme_set(theme_pubfin() + theme(
+  plot.background  = element_rect(fill = "#F2EDE3", color = NA),
+  panel.background = element_rect(fill = "#F2EDE3", color = NA)))
+
+zem <- c("Finska","Francuska","Austrija","Italija","Njemačka","EU27","Švedska","Nizozemska",
+         "Poljska","Češka","Hrvatska","Estonija","Litva","Rumunjska","Irska")
+sp <- c(25.6,23.3,21.2,21.0,19.5,19.2,18.9,16.4,16.8,13.4,12.8,13.5,13.9,12.9,7.7)
+h  <- c(7.6,8.8,9.0,6.5,7.4,7.2,6.5,7.1,5.7,8.8,7.7,6.2,5.2,4.8,5.4)
+df <- rbind(
+  data.frame(z=zem, cat="Socijalna zaštita", val=sp),
+  data.frame(z=zem, cat="Zdravstvo", val=h))
+df$z <- factor(df$z, levels = rev(zem))
+df$cat <- factor(df$cat, levels = c("Socijalna zaštita","Zdravstvo"))
+tot <- data.frame(z = factor(zem, levels = rev(zem)), t = sp + h, hl = zem == "Hrvatska")
+ggplot(df, aes(val, z, fill = cat)) +
+  geom_col(aes(color = z == "Hrvatska"), width = 0.74, linewidth = 0.7) +
+  geom_text(data = tot, aes(t, z, label = sub("\\.", ",", sprintf("%.1f", t)), color = hl),
+            hjust = -0.2, size = 2.7, inherit.aes = FALSE, show.legend = FALSE) +
+  scale_fill_manual(values = c("Socijalna zaštita"="#4A6B5C","Zdravstvo"="#2D5A8E"), name = NULL) +
+  scale_color_manual(values = c(`TRUE`="#C8942D", `FALSE`=NA), guide = "none") +
+  scale_x_continuous(limits = c(0, 37)) +
+  labs(x = "% BDP-a (2023.)", y = NULL) +
+  theme(legend.position = "top")
+```
+:::
 
 ## Kako država troši — ekonomska struktura rashoda
 
@@ -529,7 +819,7 @@ Treći sloj otkriva kako se novac troši, neovisno o tome kojoj je funkciji nami
     y: {label: null, domain: data.map(d => d.k)},
     color: {domain: ["tekuće","razvojno/kapitalno"], range: ["#4A5568","#C8942D"], legend: true},
     marks: [
-      Plot.barX(data, {x: "v", y: "k", fill: "tip"}),
+      Plot.barX(data, {x: "v", y: "k", fill: "tip", tip: true}),
       Plot.text(data, {x: "v", y: "k", text: d => d.v.toFixed(1).replace(".", ","), dx: 4, textAnchor: "start", fontSize: 10, fill: "#3A332D"})
     ]
   });

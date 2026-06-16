@@ -557,6 +557,76 @@ $$G_{\max,t} = R_t \cdot k_t, \qquad k_t = \frac{Y^{*}_t}{Y_t},$$
 
 gdje je $R_t$ očekivani prihod, a faktor $k_t$ omjer potencijalnog i stvarnog BDP-a, pa u recesiji ($Y_t < Y^{*}_t$) dopušta deficit, a u ekspanziji traži suficit. Neovisna fiskalna vijeća smanjuju informacijsku asimetriju nadzirući prognoze i upozoravajući na predizborna iskrivljenja, a neovisna središnja banka uklanja monetarni dio ciklusa jer vjerodostojno odbija predizborni pritisak na ekspanziju [@rogoff1985]. Ta tri instrumenta čine jezgru ustavnog odgovora na cikluse, a njihovu punu razradu, zajedno s vremenskom nedosljednošću i logikom vezivanja vlastitih ruku, ostavljamo poglavlju o konstitucionalnoj ekonomici.
 
+Te granice nisu apstraktne. Slika koja slijedi pokazuje koliko je stvarni javni dug udaljen od ugovorne vrijednosti od 60 % BDP-a koju postavlja Maastricht. Hrvatska se s 57 % BDP-a u 2024. smjestila tik ispod te granice, nakon što je dug snizila s vrhunca od 83 % BDP-a iz 2014., dok ga Grčka, Italija i Francuska i dalje znatno premašuju.
+
+::: {.content-visible when-format="html"}
+```{ojs}
+//| echo: false
+//| label: fig-javni-dug
+//| fig-cap: "Konsolidirani bruto dug opće države (% BDP-a), kraj 2024. Crvena isprekidana crta je maastrichtska referentna vrijednost od 60 % BDP-a. Hrvatska (zlatno) s 57,4 % je tik ispod granice, nakon pada s 83,2 % BDP-a u 2014. Izvor: Eurostat (gov_10dd_edpt1, listopadska EDP notifikacija 2025.)."
+//| fig-alt: "Vodoravni stupčasti graf javnog duga u postotku BDP-a za jedanaest jedinica. Grčka je na vrhu s 154 %, Estonija na dnu s 24 %. Hrvatska je istaknuta zlatno s 57,4 %, tik ispod crvene crte od 60 %."
+{
+  const data = [
+    {z:"Grčka", v:154.2, grp:"ostalo"},
+    {z:"Italija", v:134.9, grp:"ostalo"},
+    {z:"Francuska", v:113.2, grp:"ostalo"},
+    {z:"Europodručje", v:87.1, grp:"agg"},
+    {z:"EU27", v:80.7, grp:"agg"},
+    {z:"Njemačka", v:62.2, grp:"ostalo"},
+    {z:"Hrvatska", v:57.4, grp:"HR"},
+    {z:"Poljska", v:55.1, grp:"ostalo"},
+    {z:"Rumunjska", v:54.8, grp:"ostalo"},
+    {z:"Nizozemska", v:43.7, grp:"ostalo"},
+    {z:"Estonija", v:23.5, grp:"ostalo"}
+  ];
+  return Plot.plot({
+    width: 780, height: 430, marginLeft: 94, marginRight: 46, marginTop: 30, marginBottom: 46,
+    style: {fontSize: "12px", fontFamily: "Public Sans, system-ui, sans-serif", color: "#3A332D", background: "#F2EDE3"},
+    x: {label: "Javni dug (% BDP-a, 2024.) →", domain: [0, 165], grid: true},
+    y: {label: null, domain: data.map(d => d.z)},
+    color: {domain: ["ostalo","agg","HR"], range: ["#4A5568","#6B6357","#C8942D"]},
+    marks: [
+      Plot.barX(data, {x: "v", y: "z", fill: "grp", tip: true}),
+      Plot.ruleX([60], {stroke: "#6B1F26", strokeDasharray: "5,4", strokeWidth: 1.5}),
+      Plot.text([{z: "Grčka"}], {x: 60, y: "z", text: ["granica 60 %"], dy: -14, dx: 3, textAnchor: "start", fontSize: 10, fill: "#6B1F26"}),
+      Plot.text(data, {x: "v", y: "z", text: d => d.v.toFixed(1).replace(".", ","), dx: 4, textAnchor: "start", fontSize: 10, fill: "#3A332D"})
+    ]
+  });
+}
+```
+:::
+
+::: {.content-visible when-format="pdf"}
+```{r}
+#| label: fig-javni-dug-print
+#| echo: false
+#| fig-cap: "Konsolidirani bruto dug opće države (% BDP-a), kraj 2024. Crvena isprekidana crta je maastrichtska referentna vrijednost od 60 % BDP-a. Hrvatska (zlatno) s 57,4 % je tik ispod granice, nakon pada s 83,2 % BDP-a u 2014. Izvor: Eurostat (gov_10dd_edpt1)."
+#| fig-alt: "Vodoravni stupčasti graf javnog duga u postotku BDP-a; Grčka 154 %, Estonija 24 %, Hrvatska istaknuta zlatno s 57,4 %, tik ispod crte od 60 %."
+#| fig-width: 7.8
+#| fig-height: 4.4
+source("R/setup.R")
+theme_set(theme_pubfin() + theme(
+  plot.background  = element_rect(fill = "#F2EDE3", color = NA),
+  panel.background = element_rect(fill = "#F2EDE3", color = NA)))
+
+dg <- data.frame(
+  z = c("Grčka","Italija","Francuska","Europodručje","EU27","Njemačka","Hrvatska","Poljska","Rumunjska","Nizozemska","Estonija"),
+  v = c(154.2,134.9,113.2,87.1,80.7,62.2,57.4,55.1,54.8,43.7,23.5),
+  grp = c("ostalo","ostalo","ostalo","agg","agg","ostalo","HR","ostalo","ostalo","ostalo","ostalo"),
+  stringsAsFactors = FALSE
+)
+dg$z <- factor(dg$z, levels = rev(dg$z))
+ggplot(dg, aes(v, z, fill = grp)) +
+  geom_col(width = 0.74) +
+  geom_vline(xintercept = 60, color = "#6B1F26", linetype = "22", linewidth = 0.6) +
+  geom_text(aes(label = sub("\\.", ",", sprintf("%.1f", v))), hjust = -0.15, size = 2.8, color = "#3A332D") +
+  annotate("text", x = 60, y = 11, label = "granica 60 %", hjust = -0.05, vjust = -0.6, size = 2.8, color = "#6B1F26") +
+  scale_fill_manual(values = c("ostalo"="#4A5568","agg"="#6B6357","HR"="#C8942D"), guide = "none") +
+  scale_x_continuous(limits = c(0, 168)) +
+  labs(x = "Javni dug (% BDP-a, 2024.)", y = NULL)
+```
+:::
+
 Razvoj teorije makropolitičkih ciklusa sažet je u tablici, koja prati pomak od naivnih prema racionalnim biračima i od trajnih prema privremenim učincima.
 
 | Dimenzija | Oportunistički (Nordhaus) | Stranački (Hibbs) | Racionalni oportunistički (Rogoff) | Racionalni stranački (Alesina) |

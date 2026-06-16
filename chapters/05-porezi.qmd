@@ -45,6 +45,145 @@ Razvoj moderne države od 17. stoljeća nadalje označava prekretnicu u povijest
 
 Industrijska revolucija dodatno transformira porezne sustave. S rastom industrijske proizvodnje, urbanizacijom i razvojem financijskih tržišta, države uvode sve sofisticiranije oblike oporezivanja dohotka, dobiti i potrošnje. U 20. stoljeću, osobito nakon Velike depresije i Drugog svjetskog rata, dolazi do snažnog širenja uloge države i razvoja socijalne države. Porezi tada dobivaju ne samo fiskalnu, već i redistributivnu i stabilizacijsku funkciju, što ih čini ključnim instrumentom ekonomske politike [@stiglitz2015].
 
+Taj se dugoročni rast poreznog opterećenja može i izmjeriti. Slika koja slijedi prati prosječno porezno opterećenje razvijenih zemalja od početka 20. stoljeća do danas, pri čemu lijevi grafikon pokazuje dugi uspon s približno 11 % BDP-a oko 1900. na više od trideset posto danas, a desni izdvaja noviji period u kojem se Hrvatska uspoređuje s pojedinim članicama Unije. Hrvatsko opterećenje od oko 37 do 39 % BDP-a kreće se blizu prosjeka europskog panela i iznad prosjeka šire skupine razvijenih zemalja.
+
+::: {.content-visible when-format="html"}
+```{ojs}
+//| echo: false
+//| label: fig-longrun-porezi
+//| fig-cap: "Dugoročni rast poreznog opterećenja. Lijevo: prosjek razvijenih zemalja (do 1960. javni rashodi kao povijesni pokazatelj prema Tanziju i Schuknechtu, od 1965. porezni prihodi s doprinosima prema OECD-u; isprekidana crta označava promjenu izvora) te Hrvatska u novijem razdoblju (zlatno). Desno: moderni panel 2008.–2025. iz Eurostata, Hrvatska među odabranim članicama. Vrijednosti su zaokružene i služe kao indikativni dugoročni trend."
+//| fig-alt: "Dva linijska grafikona poreznog opterećenja kao udjela u BDP-u. Lijevi prati prosjek razvijenih zemalja od oko 11 % BDP-a 1900. do više od 33 % danas, uz zlatnu hrvatsku liniju u novijem razdoblju koja je iznad tog prosjeka. Desni grafikon prikazuje razdoblje 2008.–2025. za Hrvatsku, prosjek europskog panela i pojedine zemlje (Francuska visoko, Rumunjska nisko)."
+{
+  const yrsM = [2008,2009,2010,2011,2012,2013,2014,2015,2016,2017,2018,2019,2020,2021,2022,2023,2024,2025];
+  const tAvg = [37.3,36.5,36.2,36.5,37.2,37.8,38.1,38.1,38.2,38.2,38.3,38.4,38.6,38.7,38.1,37.8,38.5,38.9];
+  const tHR  = [37.6,36.9,36.3,35.8,36.4,36.8,37,37.6,38.1,38,38.4,38.6,37.6,36.8,37.3,36.8,38.5,39.3];
+  const tFR  = [44.5,44.2,44.3,45.4,46.8,47.6,47.8,47.9,47.9,48.4,48.3,47.2,47.6,47,47.6,45.5,45.2,46.1];
+  const tDE  = [39.1,39.7,38.2,38.7,39.4,39.7,39.5,39.7,40.2,40.5,40.9,41.1,41.1,41.9,41.1,39.8,40.8,41.8];
+  const tRO  = [27.2,25.8,26.5,26.9,26.6,27.5,27.4,28,26.9,25.9,26.7,26.6,26.9,27.1,28,27.4,28.7,29.2];
+  const tDK  = [46,46.1,46.5,46.5,47.1,48,50.9,48.5,47.3,46.9,45.8,48.4,48.5,48.6,43,44.9,46.1,45.5];
+  const tSE  = [44.6,44.3,43.5,42.6,42.8,43.1,43,43.3,44.8,45.1,44.8,43.7,43.2,43.8,43.3,42.4,42.2,41.7];
+  const tIT  = [41.1,41.7,41.3,41.3,43.2,43.4,43.1,42.9,42.1,41.8,41.7,42.3,42.7,42.3,41.6,41.2,42.4,43];
+  const tPL  = [35,32.2,32.4,32.7,33.1,33.2,33.1,33.2,34.2,34.8,35.5,35.5,36,37,34.8,35.7,37.3,37.6];
+  const tSI  = [37.8,38,38.7,38.1,38.6,38.4,38.2,38.6,38.5,38.2,38.4,38.2,38.2,38.8,37.9,36.7,38.8,39.3];
+  const histY = [1900,1913,1920,1937,1965,1980,1990,2000,2010,2015,2023,2024];
+  const histV = [11,13,19,23,25,30,31,33,31.5,32.9,33.7,34.1];
+
+  const mk = (ys, vs) => ys.map((y, i) => ({year: y, v: vs[i]}));
+  const avgFull = mk(histY, histV);
+  const hrMod = mk(yrsM, tHR);
+  const greyDefs = {DK: tDK, SE: tSE, IT: tIT, PL: tPL, SI: tSI, FR: tFR, DE: tDE, RO: tRO};
+  const grey = Object.entries(greyDefs).flatMap(([g, vs]) => vs.map((v, i) => ({geo: g, year: yrsM[i], v})));
+
+  const baseStyle = {fontSize: "11px", fontFamily: "Public Sans, system-ui, sans-serif", color: "#3A332D", background: "#F2EDE3"};
+
+  const A = Plot.plot({
+    width: 416, height: 290, marginLeft: 38, marginRight: 12, marginTop: 14, marginBottom: 26,
+    style: baseStyle,
+    x: {label: null, domain: [1900, 2028], ticks: [1900, 1937, 1965, 2000, 2024], tickFormat: "d"},
+    y: {label: "↑ % BDP-a", domain: [0, 52], grid: true, ticks: [0, 10, 20, 30, 40, 50]},
+    marks: [
+      Plot.line(grey, {x: "year", y: "v", z: "geo", stroke: "#CBC5B8", strokeWidth: 0.7, tip: true}),
+      Plot.line(avgFull, {x: "year", y: "v", stroke: "#6B1F26", strokeWidth: 2.6, tip: true}),
+      Plot.line(hrMod, {x: "year", y: "v", stroke: "#C8942D", strokeWidth: 2, tip: true}),
+      Plot.ruleX([1962], {stroke: "#9A948A", strokeDasharray: "3,3"}),
+      Plot.text([{x: 1905, y: 43}], {x: "x", y: "y", text: ["Prosjek razvijenih"], fill: "#6B1F26", fontWeight: 700, fontSize: 11, textAnchor: "start"}),
+      Plot.text([{x: 1998, y: 45}], {x: "x", y: "y", text: ["Hrvatska"], fill: "#9A6F38", fontWeight: 700, fontSize: 11, textAnchor: "end"})
+    ]
+  });
+
+  const B = Plot.plot({
+    width: 416, height: 290, marginLeft: 38, marginRight: 14, marginTop: 14, marginBottom: 26,
+    style: baseStyle,
+    x: {label: null, domain: [2008, 2025], ticks: [2008, 2014, 2020, 2025], tickFormat: "d"},
+    y: {label: "↑ % BDP-a", domain: [22, 52], grid: true},
+    marks: [
+      Plot.line(mk(yrsM, tFR), {x: "year", y: "v", stroke: "#B8B2A6", strokeWidth: 1.2}),
+      Plot.line(mk(yrsM, tDE), {x: "year", y: "v", stroke: "#B8B2A6", strokeWidth: 1.2}),
+      Plot.line(mk(yrsM, tRO), {x: "year", y: "v", stroke: "#B8B2A6", strokeWidth: 1.2}),
+      Plot.line(mk(yrsM, tAvg), {x: "year", y: "v", stroke: "#6B1F26", strokeWidth: 2.4, tip: true}),
+      Plot.line(mk(yrsM, tHR), {x: "year", y: "v", stroke: "#C8942D", strokeWidth: 2.4, tip: true}),
+      Plot.text([{x: 2025, y: 46.1, t: "Francuska"}, {x: 2025, y: 41.8, t: "Njemačka"}, {x: 2025, y: 29.2, t: "Rumunjska"}],
+        {x: "x", y: "y", text: "t", dx: 4, textAnchor: "start", fontSize: 9.5, fill: "#6B6357"})
+    ]
+  });
+
+  return htl.html`<figure style="margin:0;background:#F2EDE3">
+    <div style="display:flex;flex-wrap:wrap;gap:16px;justify-content:center">
+      <div><div style="font:600 12px Public Sans, system-ui, sans-serif;color:#1C1916;margin-bottom:2px">A) Dugi luk, 1900.–2024.</div>${A}</div>
+      <div><div style="font:600 12px Public Sans, system-ui, sans-serif;color:#1C1916;margin-bottom:2px">B) Moderni panel, 2008.–2025.</div>${B}</div>
+    </div>
+    <div style="font:12px Public Sans, system-ui, sans-serif;color:#3A332D;text-align:center;margin-top:4px">
+      <span style="color:#6B1F26;font-weight:700">━ prosjek razvijenih zemalja</span>&nbsp;&nbsp;
+      <span style="color:#9A6F38;font-weight:700">━ Hrvatska</span>&nbsp;&nbsp;
+      <span style="color:#9A948A">━ pojedine zemlje</span>
+    </div>
+  </figure>`;
+}
+```
+:::
+
+::: {.content-visible when-format="pdf"}
+```{r}
+#| label: fig-longrun-porezi-print
+#| echo: false
+#| fig-cap: "Dugoročni rast poreznog opterećenja. Lijevo: prosjek razvijenih zemalja (do 1960. javni rashodi kao povijesni pokazatelj prema Tanziju i Schuknechtu, od 1965. porezni prihodi s doprinosima prema OECD-u) te Hrvatska u novijem razdoblju (zlatno). Desno: moderni panel 2008.–2025. iz Eurostata. Indikativni dugoročni trend."
+#| fig-alt: "Dva linijska grafikona poreznog opterećenja kao udjela u BDP-u, dugi povijesni luk i moderni panel s Hrvatskom."
+#| fig-width: 8.0
+#| fig-height: 3.8
+source("R/setup.R")
+theme_set(theme_pubfin() + theme(
+  plot.background  = element_rect(fill = "#F2EDE3", color = NA),
+  panel.background = element_rect(fill = "#F2EDE3", color = NA)))
+
+yrsM <- 2008:2025
+tAvg <- c(37.3,36.5,36.2,36.5,37.2,37.8,38.1,38.1,38.2,38.2,38.3,38.4,38.6,38.7,38.1,37.8,38.5,38.9)
+tHR  <- c(37.6,36.9,36.3,35.8,36.4,36.8,37,37.6,38.1,38,38.4,38.6,37.6,36.8,37.3,36.8,38.5,39.3)
+tFR  <- c(44.5,44.2,44.3,45.4,46.8,47.6,47.8,47.9,47.9,48.4,48.3,47.2,47.6,47,47.6,45.5,45.2,46.1)
+tDE  <- c(39.1,39.7,38.2,38.7,39.4,39.7,39.5,39.7,40.2,40.5,40.9,41.1,41.1,41.9,41.1,39.8,40.8,41.8)
+tRO  <- c(27.2,25.8,26.5,26.9,26.6,27.5,27.4,28,26.9,25.9,26.7,26.6,26.9,27.1,28,27.4,28.7,29.2)
+tDK  <- c(46,46.1,46.5,46.5,47.1,48,50.9,48.5,47.3,46.9,45.8,48.4,48.5,48.6,43,44.9,46.1,45.5)
+tSE  <- c(44.6,44.3,43.5,42.6,42.8,43.1,43,43.3,44.8,45.1,44.8,43.7,43.2,43.8,43.3,42.4,42.2,41.7)
+tIT  <- c(41.1,41.7,41.3,41.3,43.2,43.4,43.1,42.9,42.1,41.8,41.7,42.3,42.7,42.3,41.6,41.2,42.4,43)
+tPL  <- c(35,32.2,32.4,32.7,33.1,33.2,33.1,33.2,34.2,34.8,35.5,35.5,36,37,34.8,35.7,37.3,37.6)
+tSI  <- c(37.8,38,38.7,38.1,38.6,38.4,38.2,38.6,38.5,38.2,38.4,38.2,38.2,38.8,37.9,36.7,38.8,39.3)
+histY <- c(1900,1913,1920,1937,1965,1980,1990,2000,2010,2015,2023,2024)
+histV <- c(11,13,19,23,25,30,31,33,31.5,32.9,33.7,34.1)
+
+pA <- "A) Dugi luk, 1900.–2024."
+pB <- "B) Moderni panel, 2008.–2025."
+ctry <- list(DK=tDK, SE=tSE, IT=tIT, PL=tPL, SI=tSI, FR=tFR, DE=tDE, RO=tRO)
+ostA <- do.call(rbind, lapply(names(ctry), function(g)
+  data.frame(panel=pA, series=g, kind="Pojedine zemlje", year=yrsM, v=ctry[[g]])))
+ostB <- bind_rows(
+  data.frame(panel=pB, series="FR", kind="Pojedine zemlje", year=yrsM, v=tFR),
+  data.frame(panel=pB, series="DE", kind="Pojedine zemlje", year=yrsM, v=tDE),
+  data.frame(panel=pB, series="RO", kind="Pojedine zemlje", year=yrsM, v=tRO)
+)
+ost <- bind_rows(ostA, ostB)
+avg <- bind_rows(
+  data.frame(panel=pA, series="avg", kind="Prosjek razvijenih", year=histY, v=histV),
+  data.frame(panel=pB, series="avg", kind="Prosjek razvijenih", year=yrsM, v=tAvg)
+)
+hr <- bind_rows(
+  data.frame(panel=pA, series="HR", kind="Hrvatska", year=yrsM, v=tHR),
+  data.frame(panel=pB, series="HR", kind="Hrvatska", year=yrsM, v=tHR)
+)
+df <- bind_rows(ost, avg, hr)
+df$kind <- factor(df$kind, levels=c("Pojedine zemlje","Prosjek razvijenih","Hrvatska"))
+
+ggplot(df, aes(year, v, group=interaction(panel, series), color=kind, linewidth=kind)) +
+  geom_segment(data=data.frame(panel=pA), aes(x=1962, xend=1962, y=0, yend=50),
+               inherit.aes=FALSE, linetype="22", color="#9A948A", linewidth=0.4) +
+  geom_line() +
+  facet_wrap(~panel, scales="free_x") +
+  scale_color_manual(values=c("Pojedine zemlje"="#B8B2A6","Prosjek razvijenih"="#6B1F26","Hrvatska"="#C8942D"), name=NULL) +
+  scale_linewidth_manual(values=c("Pojedine zemlje"=0.4,"Prosjek razvijenih"=1.1,"Hrvatska"=1.0), guide="none") +
+  scale_y_continuous(labels=function(x) paste0(x, " %"), limits=c(0,52)) +
+  labs(x=NULL, y=NULL) +
+  theme(legend.position="top", strip.text=element_text(face="bold", color="#1C1916"))
+```
+:::
+
 U suvremenim ekonomijama porezni sustavi postaju iznimno složeni, ali i neizostavni za funkcioniranje države. Oni više nisu samo alat za prikupljanje prihoda, već i mehanizam kojim se oblikuju ekonomski poticaji, raspodjela dohotka i ukupna razina društvenog blagostanja. Povijesni razvoj poreza od naturalnih davanja u ranim civilizacijama do današnjih kompleksnih sustava jasno pokazuje koliko su porezi duboko ukorijenjeni u samoj strukturi modernih društava i koliko su povezani s razvojem države i ekonomije.
 
 ## Vrste poreza

@@ -102,7 +102,7 @@ U svijetu ne postoji jedinstveni porezni model. Razvijene zemlje u pravilu imaju
     y: {label: null, domain: data.map(d => d.z)},
     color: {domain: ["ostalo","OECD","HR"], range: ["#4A5568","#4A6B5C","#C8942D"]},
     marks: [
-      Plot.barX(data, {x: "v", y: "z", fill: "grp"}),
+      Plot.barX(data, {x: "v", y: "z", fill: "grp", tip: true}),
       Plot.text(data, {x: "v", y: "z", text: d => d.v.toFixed(1).replace(".", ","), dx: 4, textAnchor: "start", fontSize: 10, fill: "#3A332D"})
     ]
   });
@@ -186,7 +186,8 @@ Struktura prihoda razdvaja modele jasnije od same visine poreza. Zemlje sličnog
       .attr("d", arc)
       .attr("fill", a => colors[a.data.cat])
       .attr("stroke", "#F2EDE3")
-      .attr("stroke-width", 1.5);
+      .attr("stroke-width", 1.5)
+      .append("title").text(a => a.data.cat + ": " + a.data.val + " %");
     g.selectAll("text").data(slices.filter(a => a.data.val >= 8)).join("text")
       .attr("transform", a => `translate(${labelArc.centroid(a)})`)
       .attr("text-anchor", "middle")
@@ -313,7 +314,7 @@ U brojkama, ukupni prihodi od poreza i socijalnih doprinosa u EU u 2024. iznosil
     y: {label: null, domain: raw.map(d => d.z)},
     color: {domain: cats, range: colors, legend: true},
     marks: [
-      Plot.barX(data, {x: "val", y: "z", fill: "cat", order: cats}),
+      Plot.barX(data, {x: "val", y: "z", fill: "cat", order: cats, tip: true}),
       Plot.text(totals, {x: "t", y: "z", text: d => d.t.toFixed(1).replace(".", ","), dx: 5, textAnchor: "start", fontSize: 10, fontWeight: 600, fill: "#3A332D"}),
       Plot.ruleX([0])
     ]
@@ -373,6 +374,154 @@ U području oporezivanja rada, Hrvatska primjenjuje porez na dohodak koji ima ob
 
 Ukupno opterećenje rada u Hrvatskoj ne proizlazi samo iz poreza na dohodak, već i iz socijalnih doprinosa, koji čine značajan dio troška rada. Najvažniji doprinosi uključuju mirovinsko osiguranje (20 % bruto plaće, od čega 15 % za prvi stup i 5 % za drugi stup) i zdravstveno osiguranje (16,5 % bruto plaće, plaća poslodavac). Zbog kombinacije poreza na dohodak i doprinosa, ukupni porezni klin na rad relativno je visok, što može utjecati na ponudu rada i konkurentnost gospodarstva [@simovic2022].
 
+Sami doprinosi, podijeljeni na dio koji formalno uplaćuje poslodavac i dio koji tereti zaposlenika, u Hrvatskoj iznose oko 10,6 % BDP-a, nešto ispod prosjeka Unije i znatno ispod srednjoeuropskih sustava poput češkog ili njemačkog. Slika koja slijedi prikazuje tu podjelu.
+
+::: {.content-visible when-format="html"}
+```{ojs}
+//| echo: false
+//| label: fig-doprinosi-podjela
+//| fig-cap: "Stvarni socijalni doprinosi, % BDP-a, 2023., podijeljeni na dio poslodavca (D611) i dio zaposlenika i kućanstava (D613). Iznosi su upisani u stupce, a Hrvatska je istaknuta zlatnim obrubom. Izvor: Eurostat (gov_10a_taxag)."
+//| fig-alt: "Vodoravni složeni stupčasti graf socijalnih doprinosa za devet jedinica. Svaki stupac ima dio poslodavca i dio zaposlenika, s upisanim vrijednostima. Hrvatska ima 5,1 poslodavac i 5,5 zaposlenik, ukupno 10,6 % BDP-a, ispod prosjeka EU27 od 12,8."
+{
+  const order = ["Njemačka","Slovenija","Češka","Slovačka","Austrija","Poljska","EU27","Hrvatska","Mađarska"];
+  const raw = {
+    "Njemačka":[6.7,9.0], "Slovenija":[5.7,9.8], "Češka":[9.4,5.8], "Slovačka":[8.7,6.3],
+    "Austrija":[7.0,8.0], "Poljska":[4.8,8.6], "EU27":[7.0,5.8], "Hrvatska":[5.1,5.5], "Mađarska":[4.0,6.0]
+  };
+  const cats = ["Doprinosi poslodavca", "Doprinosi zaposlenika"];
+  const data = [], labels = [];
+  order.forEach(z => {
+    let cum = 0;
+    raw[z].forEach((val, i) => {
+      data.push({z, cat: cats[i], val});
+      labels.push({z, mid: cum + val / 2, val});
+      cum += val;
+    });
+  });
+  const totals = order.map(z => ({z, t: raw[z][0] + raw[z][1]}));
+  return Plot.plot({
+    width: 780, height: 360, marginLeft: 84, marginRight: 40, marginTop: 24, marginBottom: 46,
+    style: {fontSize: "12px", fontFamily: "Public Sans, system-ui, sans-serif", color: "#3A332D", background: "#F2EDE3"},
+    x: {label: "Socijalni doprinosi (% BDP-a) →", domain: [0, 17], grid: true},
+    y: {label: null, domain: order},
+    color: {domain: cats, range: ["#4A6B5C", "#6B6357"], legend: true},
+    marks: [
+      Plot.barX(data, {x: "val", y: "z", fill: "cat", order: cats,
+        stroke: d => d.z === "Hrvatska" ? "#C8942D" : null, strokeWidth: d => d.z === "Hrvatska" ? 2.2 : 0, tip: true}),
+      Plot.text(labels, {x: "mid", y: "z", text: d => d.val.toFixed(1).replace(".", ","), fill: "white", fontSize: 9.5, fontWeight: 600}),
+      Plot.text(totals, {x: "t", y: "z", text: d => d.t.toFixed(1).replace(".", ","), dx: 4, textAnchor: "start",
+        fontSize: 10, fontWeight: d => d.z === "Hrvatska" ? 700 : 500, fill: d => d.z === "Hrvatska" ? "#9A6F38" : "#3A332D"}),
+      Plot.ruleX([0])
+    ]
+  });
+}
+```
+:::
+
+::: {.content-visible when-format="pdf"}
+```{r}
+#| label: fig-doprinosi-podjela-print
+#| echo: false
+#| fig-cap: "Stvarni socijalni doprinosi, % BDP-a, 2023., podijeljeni na dio poslodavca (D611) i dio zaposlenika i kućanstava (D613). Hrvatska je istaknuta zlatnim obrubom. Izvor: Eurostat (gov_10a_taxag)."
+#| fig-alt: "Vodoravni složeni stupčasti graf socijalnih doprinosa po zemljama; Hrvatska 5,1 + 5,5 = 10,6 % BDP-a, ispod prosjeka EU27."
+#| fig-width: 7.8
+#| fig-height: 3.7
+source("R/setup.R")
+theme_set(theme_pubfin() + theme(
+  plot.background  = element_rect(fill = "#F2EDE3", color = NA),
+  panel.background = element_rect(fill = "#F2EDE3", color = NA)))
+
+order <- c("Njemačka","Slovenija","Češka","Slovačka","Austrija","Poljska","EU27","Hrvatska","Mađarska")
+emp <- c(6.7,5.7,9.4,8.7,7.0,4.8,7.0,5.1,4.0)
+zap <- c(9.0,9.8,5.8,6.3,8.0,8.6,5.8,5.5,6.0)
+df <- rbind(
+  data.frame(z=order, cat="Doprinosi poslodavca", val=emp),
+  data.frame(z=order, cat="Doprinosi zaposlenika", val=zap))
+df$z <- factor(df$z, levels = rev(order))
+df$cat <- factor(df$cat, levels = c("Doprinosi poslodavca","Doprinosi zaposlenika"))
+tot <- data.frame(z = factor(order, levels = rev(order)), t = emp + zap, hl = order == "Hrvatska")
+ggplot(df, aes(val, z, fill = cat)) +
+  geom_col(aes(color = z == "Hrvatska"), width = 0.72, linewidth = 0.7) +
+  geom_text(aes(label = sub("\\.", ",", sprintf("%.1f", val))),
+            position = position_stack(vjust = 0.5), color = "white", size = 2.5, family = "mono") +
+  geom_text(data = tot, aes(t, z, label = sub("\\.", ",", sprintf("%.1f", t)), color = hl),
+            hjust = -0.25, size = 2.7, inherit.aes = FALSE, show.legend = FALSE) +
+  scale_fill_manual(values = c("Doprinosi poslodavca"="#4A6B5C","Doprinosi zaposlenika"="#6B6357"), name = NULL) +
+  scale_color_manual(values = c(`TRUE`="#C8942D", `FALSE`=NA), guide = "none") +
+  scale_x_continuous(limits = c(0, 17.5)) +
+  labs(x = "Socijalni doprinosi (% BDP-a, 2023.)", y = NULL) +
+  theme(legend.position = "top")
+```
+:::
+
+Slika koja slijedi smješta to opterećenje u međunarodni okvir. Porezni klin na prosječnu plaću kreće se od oko trideset posto u Irskoj do više od pedeset posto u Belgiji i Njemačkoj, a hrvatski se klin smješta blizu prosjeka OECD-a, ispod kontinentalnih sustava, ali iznad najnižih u skupini.
+
+<!-- TODO(coauthor): potvrditi točan hrvatski porezni klin i godinu (Milan/Petra). Prikazanih ~36 % uključuje oba obvezna mirovinska stupa po OECD-metodologiji; Blažić i Šeparović (2019) daju 31,2 % bez 2. stupa za 2018. -->
+
+::: {.content-visible when-format="html"}
+```{ojs}
+//| echo: false
+//| label: fig-porezni-klin-zemlje
+//| fig-cap: "Porezni klin na rad za samca s prosječnom plaćom bez djece (porez na dohodak te doprinosi zaposlenika i poslodavca, kao udio u ukupnom trošku rada). Zlatno je Hrvatska, zeleno prosjek OECD-a. Izvor: OECD, Taxing Wages 2025; Hrvatska prema nacionalnoj procjeni po OECD-ovoj metodologiji (Blažić i Šeparović, 2019), uz oba obvezna mirovinska stupa."
+//| fig-alt: "Vodoravni stupčasti graf poreznog klina na rad za jedanaest jedinica. Belgija je na vrhu s 52,5 %, Irska na dnu s 32,6 %. Hrvatska je istaknuta zlatno s oko 36 %, tik iznad prosjeka OECD-a od 35,1 %."
+{
+  const data = [
+    {z:"Belgija", v:52.5, grp:"ostalo"},
+    {z:"Njemačka", v:49.3, grp:"ostalo"},
+    {z:"Francuska", v:47.2, grp:"ostalo"},
+    {z:"Austrija", v:47.1, grp:"ostalo"},
+    {z:"Italija", v:45.8, grp:"ostalo"},
+    {z:"Slovenija", v:45.3, grp:"ostalo"},
+    {z:"Mađarska", v:41.2, grp:"ostalo"},
+    {z:"Hrvatska", v:36.0, grp:"HR"},
+    {z:"OECD prosjek", v:35.1, grp:"OECD"},
+    {z:"Poljska", v:35.0, grp:"ostalo"},
+    {z:"Irska", v:32.6, grp:"ostalo"}
+  ];
+  return Plot.plot({
+    width: 780, height: 430, marginLeft: 96, marginRight: 46, marginTop: 26, marginBottom: 46,
+    style: {fontSize: "12px", fontFamily: "Public Sans, system-ui, sans-serif", color: "#3A332D", background: "#F2EDE3"},
+    x: {label: "Porezni klin na rad (% troška rada) →", domain: [0, 58], grid: true},
+    y: {label: null, domain: data.map(d => d.z)},
+    color: {domain: ["ostalo","OECD","HR"], range: ["#4A5568","#4A6B5C","#C8942D"]},
+    marks: [
+      Plot.barX(data, {x: "v", y: "z", fill: "grp", tip: true}),
+      Plot.text(data, {x: "v", y: "z", text: d => d.v.toFixed(1).replace(".", ",") + " %", dx: 4, textAnchor: "start", fontSize: 10, fill: "#3A332D"})
+    ]
+  });
+}
+```
+:::
+
+::: {.content-visible when-format="pdf"}
+```{r}
+#| label: fig-porezni-klin-zemlje-print
+#| echo: false
+#| fig-cap: "Porezni klin na rad za samca s prosječnom plaćom bez djece (porez na dohodak te doprinosi, kao udio u ukupnom trošku rada). Zlatno je Hrvatska, zeleno prosjek OECD-a. Izvor: OECD, Taxing Wages 2025; Hrvatska prema nacionalnoj procjeni po OECD-ovoj metodologiji (Blažić i Šeparović, 2019)."
+#| fig-alt: "Vodoravni stupčasti graf poreznog klina na rad; Belgija 52,5 %, Irska 32,6 %, Hrvatska istaknuta zlatno s oko 36 %, blizu prosjeka OECD-a."
+#| fig-width: 7.8
+#| fig-height: 4.4
+source("R/setup.R")
+theme_set(theme_pubfin() + theme(
+  plot.background  = element_rect(fill = "#F2EDE3", color = NA),
+  panel.background = element_rect(fill = "#F2EDE3", color = NA)))
+
+kl <- data.frame(
+  z = c("Belgija","Njemačka","Francuska","Austrija","Italija","Slovenija","Mađarska","Hrvatska","OECD prosjek","Poljska","Irska"),
+  v = c(52.5,49.3,47.2,47.1,45.8,45.3,41.2,36.0,35.1,35.0,32.6),
+  grp = c("ostalo","ostalo","ostalo","ostalo","ostalo","ostalo","ostalo","HR","OECD","ostalo","ostalo"),
+  stringsAsFactors = FALSE
+)
+kl$z <- factor(kl$z, levels = rev(kl$z))
+ggplot(kl, aes(v, z, fill = grp)) +
+  geom_col(width = 0.74) +
+  geom_text(aes(label = paste0(sub("\\.", ",", sprintf("%.1f", v)), " %")), hjust = -0.12, size = 2.8, color = "#3A332D") +
+  scale_fill_manual(values = c("ostalo"="#4A5568","OECD"="#4A6B5C","HR"="#C8942D"), guide = "none") +
+  scale_x_continuous(limits = c(0, 60)) +
+  labs(x = "Porezni klin na rad (% troška rada)", y = NULL)
+```
+:::
+
 ::: {.callout-praksa}
 Porezna reforma iz 2024. godine smanjila je opću stopu poreza na dohodak s 30 % na 23 % i ukinula prirez kao zaseban porez, integrirajući ga u opću stopu. Cilj je bio rasteretiti rad i pojednostaviti sustav, ali kritičari su upozorili da se istodobno smanjuje fiskalni prostor za lokalne jedinice koje su o prirezu ovisile. Reforma ilustrira tipičan kompromis između cilja smanjenja poreznog klina i cilja očuvanja prihoda jedinica lokalne samouprave.[^wp-ch14a]
 :::
@@ -412,7 +561,7 @@ Ta struktura nije bez napetosti. Oslonac na potrošnju slabije ostvaruje redistr
     y: {label: "% BDP-a ↑", domain: [0, 45], grid: true},
     color: {domain: ["EU","Hrvatska"], range: ["#4A5568","#C8942D"], legend: true},
     marks: [
-      Plot.barY(data, {fx: "m", x: "e", y: "v", fill: "e"}),
+      Plot.barY(data, {fx: "m", x: "e", y: "v", fill: "e", tip: true}),
       Plot.text(data, {fx: "m", x: "e", y: "v", text: d => d.v.toFixed(1).replace(".", ","), dy: -6, fontSize: 9, fill: "#3A332D"}),
       Plot.ruleY([0])
     ]
