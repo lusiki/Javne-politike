@@ -15,6 +15,9 @@
     </style>
   </defs>
 
+  <!-- Pozadina u boji papira (STATECRAFT paper) -->
+  <rect x="0" y="0" width="820" height="510" fill="#F2EDE3"/>
+
   <!-- Intro line -->
   <text x="410" y="28" text-anchor="middle" class="intro">Porezi se mogu razvrstati prema različitim kriterijima.</text>
 

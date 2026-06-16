@@ -1,5 +1,5 @@
 ---
-title: "Porezi — više od tereta"
+title: "Klasična teorija oporezivanja"
 ---
 
 ::: {.vodic-panel}
@@ -187,7 +187,7 @@ rho = controls.rho
     height: 500,
     marginLeft: 65,
     marginBottom: 55,
-    style: {fontSize: "12px", fontFamily: "Public Sans, system-ui, sans-serif", color: "#3A332D"},
+    style: {fontSize: "12px", fontFamily: "Public Sans, system-ui, sans-serif", color: "#3A332D", background: "#F2EDE3"},
     x: {label: "Dohodak (Y) →", domain: [0, Ymax], grid: false},
     y: {label: "↑ Ukupna korisnost (U)", domain: [Math.min(0, U(1)), Umax * 1.08], grid: true},
     marks: [
@@ -250,6 +250,11 @@ rho = controls.rho
 #| fig-height: 5.0
 # Statički PDF blizanac interaktivnog OJS grafa (zadane vrijednosti klizača).
 source("R/setup.R")
+
+# Pozadina grafa u boji papira (STATECRAFT paper), kao i interaktivne verzije
+theme_set(theme_pubfin() + theme(
+  plot.background  = element_rect(fill = "#F2EDE3", color = NA),
+  panel.background = element_rect(fill = "#F2EDE3", color = NA)))
 
 # Zadane vrijednosti klizača
 y_poor   <- 20   # dohodak siromašnijeg (Yp)
@@ -434,7 +439,7 @@ t_inc = inc_controls.t_inc
     height: 500,
     marginLeft: 60,
     marginBottom: 55,
-    style: {fontSize: "12px", fontFamily: "Public Sans, system-ui, sans-serif", color: "#3A332D"},
+    style: {fontSize: "12px", fontFamily: "Public Sans, system-ui, sans-serif", color: "#3A332D", background: "#F2EDE3"},
     x: {label: "Količina (Q) →", domain: [0, Qmax], grid: false},
     y: {label: "↑ Cijena (P)",    domain: [0, Pmax], grid: true},
     marks: [
@@ -505,6 +510,11 @@ t_inc = inc_controls.t_inc
 #| fig-height: 5.0
 # Statički PDF blizanac interaktivnog OJS grafa (zadane vrijednosti klizača).
 source("R/setup.R")
+
+# Pozadina grafa u boji papira (STATECRAFT paper), kao i interaktivne verzije
+theme_set(theme_pubfin() + theme(
+  plot.background  = element_rect(fill = "#F2EDE3", color = NA),
+  panel.background = element_rect(fill = "#F2EDE3", color = NA)))
 
 # --- Zadane vrijednosti klizača ---
 eps_d <- 1.0   # elastičnost potražnje |εD| (zadano)
@@ -594,7 +604,9 @@ ggplot() +
   scale_y_continuous(limits = c(0, Pmax), expand = c(0, 0)) +
   labs(x = "Količina (Q)", y = "Cijena (P)") +
   theme_pubfin() +
-  theme(panel.grid.major.x = element_blank())
+  theme(panel.grid.major.x = element_blank(),
+        plot.background  = element_rect(fill = "#F2EDE3", color = NA),
+        panel.background = element_rect(fill = "#F2EDE3", color = NA))
 ```
 :::
 
@@ -670,7 +682,7 @@ t_dwl = dwl2_controls.t_dwl
     height: 500,
     marginLeft: 60,
     marginBottom: 55,
-    style: {fontSize: "12px", fontFamily: "Public Sans, system-ui, sans-serif", color: "#3A332D"},
+    style: {fontSize: "12px", fontFamily: "Public Sans, system-ui, sans-serif", color: "#3A332D", background: "#F2EDE3"},
     x: {label: "Količina (Q) →", domain: [0, Qmax], grid: false},
     y: {label: "↑ Cijena (P)",    domain: [0, Pmax], grid: true},
     marks: [
@@ -742,6 +754,11 @@ t_dwl = dwl2_controls.t_dwl
 #| fig-height: 5.0
 # Statički PDF blizanac interaktivnog OJS grafa (zadane vrijednosti eps_dwl = 1.0, t = 12).
 source("R/setup.R")
+
+# Pozadina grafa u boji papira (STATECRAFT paper), kao i interaktivne verzije
+theme_set(theme_pubfin() + theme(
+  plot.background  = element_rect(fill = "#F2EDE3", color = NA),
+  panel.background = element_rect(fill = "#F2EDE3", color = NA)))
 
 # Parametri (zadane vrijednosti klizača)
 eps_dwl <- 1.0   # elastičnost potražnje |ε| (zadana vrijednost klizača)
@@ -842,7 +859,9 @@ ggplot() +
   scale_y_continuous(limits = c(0, Pmax), expand = c(0, 0)) +
   labs(x = "Količina (Q)", y = "Cijena (P)") +
   theme_pubfin() +
-  theme(panel.grid.major.x = element_blank())
+  theme(panel.grid.major.x = element_blank(),
+        plot.background  = element_rect(fill = "#F2EDE3", color = NA),
+        panel.background = element_rect(fill = "#F2EDE3", color = NA))
 ```
 :::
 
@@ -930,7 +949,7 @@ eps_L = wedge_controls.eps_L
     height: 500,
     marginLeft: 60,
     marginBottom: 55,
-    style: {fontSize: "12px", fontFamily: "Public Sans, system-ui, sans-serif", color: "#3A332D"},
+    style: {fontSize: "12px", fontFamily: "Public Sans, system-ui, sans-serif", color: "#3A332D", background: "#F2EDE3"},
     x: {label: "Rad (L) →", domain: [0, Lmax], grid: false},
     y: {label: "↑ Nadnica (W)", domain: [0, Wmax], grid: true},
     marks: [
@@ -1002,6 +1021,11 @@ eps_L = wedge_controls.eps_L
 #| fig-height: 5.0
 # Statički PDF blizanac interaktivnog OJS grafa (zadane vrijednosti tau = 35, eps_L = 0.4).
 source("R/setup.R")
+
+# Pozadina grafa u boji papira (STATECRAFT paper), kao i interaktivne verzije
+theme_set(theme_pubfin() + theme(
+  plot.background  = element_rect(fill = "#F2EDE3", color = NA),
+  panel.background = element_rect(fill = "#F2EDE3", color = NA)))
 
 # Parametri (zadane vrijednosti klizača)
 tau   <- 35    # porezni klin τ kao postotak bruto nadnice (zadana vrijednost klizača)
@@ -1099,7 +1123,9 @@ ggplot() +
   scale_x_continuous(limits = c(0, Lmax), expand = c(0, 0)) +
   scale_y_continuous(limits = c(0, Wmax), expand = c(0, 0)) +
   labs(x = "Rad (L)", y = "Nadnica (W)") +
-  theme_pubfin()
+  theme_pubfin() +
+  theme(plot.background  = element_rect(fill = "#F2EDE3", color = NA),
+        panel.background = element_rect(fill = "#F2EDE3", color = NA))
 ```
 :::
 
@@ -1210,7 +1236,7 @@ tax = dwl_controls.tax
     height: 500,
     marginLeft: 60,
     marginBottom: 55,
-    style: {fontSize: "12px", fontFamily: "Public Sans, system-ui, sans-serif", color: "#3A332D"},
+    style: {fontSize: "12px", fontFamily: "Public Sans, system-ui, sans-serif", color: "#3A332D", background: "#F2EDE3"},
     x: {label: "Količina (Q) →", domain: [0, Qmax], grid: false},
     y: {label: "↑ Cijena (P)",    domain: [0, Pmax], grid: true},
     marks: [
@@ -1278,6 +1304,11 @@ tax = dwl_controls.tax
 #| fig-height: 5.0
 # Statički PDF blizanac interaktivnog OJS grafa (zadane vrijednosti klizača eps = 1.0, tax = 15).
 source("R/setup.R")
+
+# Pozadina grafa u boji papira (STATECRAFT paper), kao i interaktivne verzije
+theme_set(theme_pubfin() + theme(
+  plot.background  = element_rect(fill = "#F2EDE3", color = NA),
+  panel.background = element_rect(fill = "#F2EDE3", color = NA)))
 
 # --- Zadane vrijednosti klizača -------------------------------------------
 eps <- 1.0   # elastičnost potražnje |ε| (zadana vrijednost klizača)
@@ -1373,7 +1404,9 @@ ggplot() +
   scale_x_continuous(limits = c(0, Qmax), expand = c(0, 0)) +
   scale_y_continuous(limits = c(0, Pmax), expand = c(0, 0)) +
   labs(x = "Količina (Q)", y = "Cijena (P)") +
-  theme_pubfin()
+  theme_pubfin() +
+  theme(plot.background  = element_rect(fill = "#F2EDE3", color = NA),
+        panel.background = element_rect(fill = "#F2EDE3", color = NA))
 ```
 :::
 
@@ -1526,7 +1559,7 @@ sig_l = labor_controls.sig_l
     height: 520,
     marginLeft: 65,
     marginBottom: 55,
-    style: {fontSize: "12px", fontFamily: "Public Sans, system-ui, sans-serif", color: "#3A332D"},
+    style: {fontSize: "12px", fontFamily: "Public Sans, system-ui, sans-serif", color: "#3A332D", background: "#F2EDE3"},
     x: {label: "Dokolica ℓ →", domain: [0, T], grid: false},
     y: {label: "↑ Potrošnja C", domain: [0, Cmax], grid: true},
     marks: [
@@ -1606,6 +1639,11 @@ sig_l = labor_controls.sig_l
 #| fig-height: 5.2
 # Statički PDF blizanac interaktivnog OJS grafa, na zadanim vrijednostima klizača.
 source("R/setup.R")
+
+# Pozadina grafa u boji papira (STATECRAFT paper), kao i interaktivne verzije
+theme_set(theme_pubfin() + theme(
+  plot.background  = element_rect(fill = "#F2EDE3", color = NA),
+  panel.background = element_rect(fill = "#F2EDE3", color = NA)))
 
 # --- Zadane vrijednosti klizača (snapshot kako se graf prvi put pojavljuje) ---
 tau_l <- 30    # porezna stopa τ u % (zadana vrijednost klizača)
@@ -1887,7 +1925,7 @@ sigma = inter_controls.sigma
     height: 520,
     marginLeft: 65,
     marginBottom: 55,
-    style: {fontSize: "12px", fontFamily: "Public Sans, system-ui, sans-serif", color: "#3A332D"},
+    style: {fontSize: "12px", fontFamily: "Public Sans, system-ui, sans-serif", color: "#3A332D", background: "#F2EDE3"},
     x: {label: "Sadašnja potrošnja C₁ →", domain: [0, Cmax], grid: false},
     y: {label: "↑ Buduća potrošnja C₂",   domain: [0, Cmax], grid: true},
     marks: [
@@ -1955,6 +1993,11 @@ sigma = inter_controls.sigma
 #| fig-height: 5.2
 # Statički PDF blizanac interaktivnog OJS grafa, pri zadanim vrijednostima klizača.
 source("R/setup.R")
+
+# Pozadina grafa u boji papira (STATECRAFT paper), kao i interaktivne verzije
+theme_set(theme_pubfin() + theme(
+  plot.background  = element_rect(fill = "#F2EDE3", color = NA),
+  panel.background = element_rect(fill = "#F2EDE3", color = NA)))
 
 # Zadane vrijednosti klizača
 r     <- 0.08   # kamatna stopa r
@@ -2162,7 +2205,7 @@ t_now = laffer_controls.t_now
     height: 500,
     marginLeft: 65,
     marginBottom: 55,
-    style: {fontSize: "12px", fontFamily: "Public Sans, system-ui, sans-serif", color: "#3A332D"},
+    style: {fontSize: "12px", fontFamily: "Public Sans, system-ui, sans-serif", color: "#3A332D", background: "#F2EDE3"},
     x: {label: "Porezna stopa t (%) →", domain: [0, 100], grid: false},
     y: {label: "↑ Porezni prihodi R",   domain: [0, Rceil], grid: true},
     marks: [
@@ -2227,6 +2270,11 @@ t_now = laffer_controls.t_now
 #| fig-height: 5.0
 # Statički PDF blizanac interaktivnog OJS grafa (zadane vrijednosti klizača: eps = 0.5, t_now = 35).
 source("R/setup.R")
+
+# Pozadina grafa u boji papira (STATECRAFT paper), kao i interaktivne verzije
+theme_set(theme_pubfin() + theme(
+  plot.background  = element_rect(fill = "#F2EDE3", color = NA),
+  panel.background = element_rect(fill = "#F2EDE3", color = NA)))
 
 # --- Parametri (zadane vrijednosti klizača) ---
 eps    <- 0.5   # elastičnost porezne osnovice ε (zadana vrijednost klizača eps_T)
