@@ -1,0 +1,130 @@
+---
+title: "Vodič · Institucije kao pravila igre"
+toc: false
+number-sections: false
+lang: hr-HR
+format:
+  html:
+    page-layout: full
+    body-classes: vd-page
+---
+
+```{=html}
+<div class="vd-dio-3">
+
+<div class="vd-folio">
+  <div class="vd-folio-left">
+    <a class="vd-back" href="../vodic.html">← Vodič</a>
+    <span class="vd-folio-chapter">Dio III · Poglavlje 11 · Institucionalna ekonomika</span>
+  </div>
+  <div class="vd-folio-meta">
+    <span>2 min čitanja</span>
+    <span>Mapa 11 od 22</span>
+  </div>
+</div>
+
+<h1 class="vd-question">Zašto ista politika negdje uspije, a negdje&nbsp;propadne?</h1>
+
+<div class="vd-map">
+  <ol class="vd-branches" aria-label="Pet ideja poglavlja o institucijama">
+
+    <li class="vd-branch">
+      <a class="vd-branch-card" href="../chapters/11-institucionalna-ekonomika.html#institucije-kao-pravila-igre">
+        <span class="vd-branch-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 21h16M5 21V9m4 12V9m6 12V9m4 12V9"/><path d="M3 9 12 3l9 6"/></svg>
+        </span>
+        <span>
+          <span class="vd-branch-title">Pravila igre</span>
+          <span class="vd-branch-text">Isti zakon daje različite ishode ovisno o provedbi, sudstvu i povjerenju.</span>
+        </span>
+      </a>
+    </li>
+
+    <li class="vd-branch">
+      <a class="vd-branch-card" href="../chapters/11-institucionalna-ekonomika.html#transakcijski-troškovi">
+        <span class="vd-branch-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M7 10h10l-3-3M17 14H7l3 3"/><circle cx="12" cy="12" r="10"/></svg>
+        </span>
+        <span>
+          <span class="vd-branch-title">Skriveni troškovi razmjene</span>
+          <span class="vd-branch-text">Tržišta nisu besplatna. Gdje su ugovori nesigurni, posao se uopće ne dogodi.</span>
+        </span>
+      </a>
+    </li>
+
+    <li class="vd-branch">
+      <a class="vd-branch-card" href="../chapters/11-institucionalna-ekonomika.html#problem-principalagent-u-javnom-sektoru">
+        <span class="vd-branch-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="7" cy="7" r="3"/><circle cx="17" cy="7" r="3"/><path d="M7 10v4a5 5 0 0 0 10 0v-4"/><path d="M12 15v5"/></svg>
+        </span>
+        <span>
+          <span class="vd-branch-title">Nalogodavac i agent</span>
+          <span class="vd-branch-text">Građani delegiraju vlast onima koji znaju više i imaju vlastite interese.</span>
+        </span>
+      </a>
+    </li>
+
+    <li class="vd-branch">
+      <a class="vd-branch-card" href="../chapters/11-institucionalna-ekonomika.html#institucije-i-dugoročni-razvoj">
+        <span class="vd-branch-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 19c4 0 4-12 8-12s4 9 10 9"/><path d="M3 21h18"/></svg>
+        </span>
+        <span>
+          <span class="vd-branch-title">Institucije i razvoj</span>
+          <span class="vd-branch-text">Slični resursi, različita pravila, posve različite sudbine zemalja.</span>
+        </span>
+      </a>
+    </li>
+
+    <li class="vd-branch">
+      <a class="vd-branch-card" href="../chapters/11-institucionalna-ekonomika.html#formalne-i-neformalne-institucije-pri-rastu">
+        <span class="vd-branch-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5c-2-1.5-5-1.5-8 0v14c3-1.5 6-1.5 8 0 2-1.5 5-1.5 8 0V5c-3-1.5-6-1.5-8 0Z"/><path d="M12 5v14"/></svg>
+        </span>
+        <span>
+          <span class="vd-branch-title">Pisana i nepisana pravila</span>
+          <span class="vd-branch-text">Zakon promijeniš preko noći, norme i povjerenje desetljećima.</span>
+        </span>
+      </a>
+    </li>
+
+  </ol>
+</div>
+
+<div class="vd-cards">
+
+  <div class="vd-card">
+    <span class="vd-card-label">Politika u praksi</span>
+    <p>Prijenos nekretnine. Uz digitalni registar i brze sudove traje dane i košta malo. Uz nepouzdani registar mjesecima guta novac i živce.</p>
+    <a class="vd-src" href="../chapters/11-institucionalna-ekonomika.html#transakcijski-troškovi">Poglavlje 11 · Transakcijski troškovi</a>
+  </div>
+
+  <div class="vd-card">
+    <span class="vd-card-label">Jedna brojka</span>
+    <span class="vd-big">1500.</span>
+    <p>Krajevi bogati oko te godine, s ekstraktivnim institucijama, danas su često siromašniji od tada praznih. Obrnuti razvoj.</p>
+    <a class="vd-src" href="../chapters/11-institucionalna-ekonomika.html#institucije-i-dugoročni-razvoj">Poglavlje 11 · Institucije i razvoj</a>
+  </div>
+
+  <div class="vd-card">
+    <span class="vd-card-label">Mit i stvarnost</span>
+    <p class="vd-mit"><span class="vd-tag">Mit</span>Dovoljno je prepisati najbolji zakon iz uspješne zemlje.</p>
+    <p class="vd-stvar"><span class="vd-tag">Stvarnost</span>Bez provedbe, kapaciteta i normi isti zakon ostaje mrtvo slovo. Reforme traže više od teksta propisa.</p>
+    <a class="vd-src" href="../chapters/11-institucionalna-ekonomika.html#formalne-i-neformalne-institucije-pri-rastu">Poglavlje 11 · Formalno i neformalno</a>
+  </div>
+
+</div>
+
+<div class="vd-pojam">
+  <span class="vd-pojam-label">Pojam za razgovor</span>
+  <p><span class="vd-pojam-term">transakcijski troškovi</span> <span class="vd-pojam-text">Sve što vas posao košta, a nije cijena. Traženje, pregovaranje, ugovor, nadzor.</span></p>
+</div>
+
+<nav class="vd-dalje" aria-label="Kamo dalje">
+  <a href="10-birokracija.html">← Mapa 10</a>
+  <a class="vd-primary" href="../chapters/11-institucionalna-ekonomika.html">Otvorite poglavlje u knjizi</a>
+  <a href="12-konstitucionalna-ekonomika.html">Mapa 12 →</a>
+</nav>
+
+</div>
+```

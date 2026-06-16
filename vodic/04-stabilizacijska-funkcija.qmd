@@ -123,7 +123,7 @@ format:
 <nav class="vd-dalje" aria-label="Kamo dalje">
   <a href="03-distribucijska-funkcija.html">← Mapa 3</a>
   <a class="vd-primary" href="../chapters/04-stabilizacijska-funkcija.html">Otvorite poglavlje u knjizi</a>
-  <a href="05-javni-izbor.html">Mapa 5 →</a>
+  <a href="05-porezi.html">Mapa 5 →</a>
 </nav>
 
 </div>

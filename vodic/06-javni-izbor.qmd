@@ -1,0 +1,130 @@
+---
+title: "Vodič · Javni izbor"
+toc: false
+number-sections: false
+lang: hr-HR
+format:
+  html:
+    page-layout: full
+    body-classes: vd-page
+---
+
+```{=html}
+<div class="vd-dio-2">
+
+<div class="vd-folio">
+  <div class="vd-folio-left">
+    <a class="vd-back" href="../vodic.html">← Vodič</a>
+    <span class="vd-folio-chapter">Dio II · Poglavlje 6 · Javni izbor</span>
+  </div>
+  <div class="vd-folio-meta">
+    <span>2 min čitanja</span>
+    <span>Mapa 6 od 22</span>
+  </div>
+</div>
+
+<h1 class="vd-question">Što vidimo kad političare gledamo kao obične&nbsp;ljude?</h1>
+
+<div class="vd-map">
+  <ol class="vd-branches" aria-label="Pet ideja poglavlja o javnom izboru">
+
+    <li class="vd-branch">
+      <a class="vd-branch-card" href="../chapters/06-javni-izbor.html#definicija-metodologija-i-osnovne-pretpostavke">
+        <span class="vd-branch-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"/><path d="M5 21a7 7 0 0 1 14 0"/></svg>
+        </span>
+        <span>
+          <span class="vd-branch-title">Politika bez romantike</span>
+          <span class="vd-branch-text">Birači, političari i birokrati slijede vlastite ciljeve, baš kao kupci i prodavači.</span>
+        </span>
+      </a>
+    </li>
+
+    <li class="vd-branch">
+      <a class="vd-branch-card" href="../chapters/06-javni-izbor.html#birači-i-paradoks-glasanja">
+        <span class="vd-branch-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="10" width="18" height="10" rx="1"/><path d="M9 10V8a3 3 0 0 1 6 0v2"/><path d="M12 13v3"/></svg>
+        </span>
+        <span>
+          <span class="vd-branch-title">Paradoks glasanja</span>
+          <span class="vd-branch-text">Trošak izlaska je stvaran, šansa da baš vi presudite zanemariva. Račun kaže ostani doma.</span>
+        </span>
+      </a>
+    </li>
+
+    <li class="vd-branch">
+      <a class="vd-branch-card" href="../chapters/06-javni-izbor.html#instrumentalno-i-ekspresivno-glasanje">
+        <span class="vd-branch-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11l13-6v14L3 13v-2Z"/><path d="M16 9a4 4 0 0 1 0 6"/><path d="M5 13v5h3v-4"/></svg>
+        </span>
+        <span>
+          <span class="vd-branch-title">Glas kao poruka</span>
+          <span class="vd-branch-text">Glasamo i da nešto izrazimo, identitet ili bijes, ne samo da odlučimo.</span>
+        </span>
+      </a>
+    </li>
+
+    <li class="vd-branch">
+      <a class="vd-branch-card" href="../chapters/06-javni-izbor.html#političari-i-birokrati-u-tržištu-politika">
+        <span class="vd-branch-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="6" cy="6" r="2.5"/><circle cx="18" cy="6" r="2.5"/><circle cx="12" cy="16" r="2.5"/><path d="M8 8l3 5M16 8l-3 5"/></svg>
+        </span>
+        <span>
+          <span class="vd-branch-title">Tržište politika</span>
+          <span class="vd-branch-text">Političari nude programe za glasove, birokrati brane proračune i nadležnosti.</span>
+        </span>
+      </a>
+    </li>
+
+    <li class="vd-branch">
+      <a class="vd-branch-card" href="../chapters/06-javni-izbor.html#zašto-su-odluke-države-često-neintuitivne">
+        <span class="vd-branch-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12h7l2-7 2 14 2-7h5"/></svg>
+        </span>
+        <span>
+          <span class="vd-branch-title">Predvidljivo neintuitivno</span>
+          <span class="vd-branch-text">Subvencije gubitašima nisu ludost nego logičan ishod poticaja u sustavu.</span>
+        </span>
+      </a>
+    </li>
+
+  </ol>
+</div>
+
+<div class="vd-cards">
+
+  <div class="vd-card">
+    <span class="vd-card-label">Politika u praksi</span>
+    <p>Liberalizacija telekomunikacija devedesetih. Pravila su tražila otvaranje tržišta, a regulatori su u praksi štitili stare državne operatere.</p>
+    <a class="vd-src" href="../chapters/06-javni-izbor.html#zašto-su-odluke-države-često-neintuitivne">Poglavlje 6 · Neintuitivne odluke</a>
+  </div>
+
+  <div class="vd-card">
+    <span class="vd-card-label">Jedna brojka</span>
+    <span class="vd-big">1</span>
+    <p>U godini uoči izbora potrošnja i deficiti sustavno rastu. Fiskalna prilagodba stiže tek poslije.</p>
+    <a class="vd-src" href="../chapters/06-javni-izbor.html#političari-i-birokrati-u-tržištu-politika">Poglavlje 6 · Tržište politika</a>
+  </div>
+
+  <div class="vd-card">
+    <span class="vd-card-label">Mit i stvarnost</span>
+    <p class="vd-mit"><span class="vd-tag">Mit</span>Loši ishodi znače glupe ili pokvarene političare.</p>
+    <p class="vd-stvar"><span class="vd-tag">Stvarnost</span>Neefikasnost je sustavna posljedica poticaja i pravila, ne slučajnih pogrešaka pojedinaca.</p>
+    <a class="vd-src" href="../chapters/06-javni-izbor.html#zašto-su-odluke-države-često-neintuitivne">Poglavlje 6 · Neintuitivne odluke</a>
+  </div>
+
+</div>
+
+<div class="vd-pojam">
+  <span class="vd-pojam-label">Pojam za razgovor</span>
+  <p><span class="vd-pojam-term">ekspresivno glasanje</span> <span class="vd-pojam-text">Glas kao navijanje. Biramo poruku koju šaljemo, ne samo ishod koji želimo.</span></p>
+</div>
+
+<nav class="vd-dalje" aria-label="Kamo dalje">
+  <a href="05-porezi.html">← Mapa 5</a>
+  <a class="vd-primary" href="../chapters/06-javni-izbor.html">Otvorite poglavlje u knjizi</a>
+  <a href="06a-teorija-igara.html">Mapa 6a →</a>
+</nav>
+
+</div>
+```

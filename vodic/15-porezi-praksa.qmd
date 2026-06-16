@@ -109,7 +109,7 @@ format:
 </div>
 
 <nav class="vd-dalje" aria-label="Kamo dalje">
-  <a href="14-porezi.html">← Mapa 14</a>
+  <a href="14-javna-potrosnja.html">← Mapa 14</a>
   <a class="vd-primary" href="../chapters/15-porezi-praksa.html">Otvorite poglavlje u knjizi</a>
   <a href="16-eu-javne-financije.html">Mapa 16 →</a>
 </nav>

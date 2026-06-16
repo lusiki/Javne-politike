@@ -1,0 +1,130 @@
+---
+title: "Vodič · Interesne skupine"
+toc: false
+number-sections: false
+lang: hr-HR
+format:
+  html:
+    page-layout: full
+    body-classes: vd-page
+---
+
+```{=html}
+<div class="vd-dio-2">
+
+<div class="vd-folio">
+  <div class="vd-folio-left">
+    <a class="vd-back" href="../vodic.html">← Vodič</a>
+    <span class="vd-folio-chapter">Dio II · Poglavlje 9 · Interesne skupine</span>
+  </div>
+  <div class="vd-folio-meta">
+    <span>2 min čitanja</span>
+    <span>Mapa 9 od 22</span>
+  </div>
+</div>
+
+<h1 class="vd-question">Kako mali često pobijede&nbsp;velike?</h1>
+
+<div class="vd-map">
+  <ol class="vd-branches" aria-label="Pet ideja poglavlja o interesnim skupinama">
+
+    <li class="vd-branch">
+      <a class="vd-branch-card" href="../chapters/09-interesne-skupine.html#logika-kolektivnog-djelovanja">
+        <span class="vd-branch-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="7" cy="12" r="4.5"/><circle cx="16.5" cy="6.5" r="1.2"/><circle cx="19.5" cy="11" r="1.2"/><circle cx="16.5" cy="15.5" r="1.2"/><circle cx="20" cy="18.5" r="1.2"/></svg>
+        </span>
+        <span>
+          <span class="vd-branch-title">Logika kolektivnog djelovanja</span>
+          <span class="vd-branch-text">Mali se organiziraju lako, velikima se ne isplati ni sastanak.</span>
+        </span>
+      </a>
+    </li>
+
+    <li class="vd-branch">
+      <a class="vd-branch-card" href="../chapters/09-interesne-skupine.html#koncentrirane-koristi-raspršeni-troškovi">
+        <span class="vd-branch-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11l13-6v14L3 13v-2Z"/><path d="M16 9a4 4 0 0 1 0 6"/><path d="M5 13v5h3v-4"/></svg>
+        </span>
+        <span>
+          <span class="vd-branch-title">Glasna manjina, tiha većina</span>
+          <span class="vd-branch-text">Koncentrirana korist viče, raspršeni trošak šuti. Politika čuje samo prvu.</span>
+        </span>
+      </a>
+    </li>
+
+    <li class="vd-branch">
+      <a class="vd-branch-card" href="../chapters/09-interesne-skupine.html#lov-na-rentu">
+        <span class="vd-branch-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M14.5 8.5c-.5-1-1.5-1.5-2.5-1.5-1.5 0-2.5 1-2.5 2.2 0 2.8 5 1.6 5 4.4 0 1.2-1 2.2-2.5 2.2-1.2 0-2.2-.6-2.7-1.6"/><path d="M12 5.5V7m0 10v1.5"/></svg>
+        </span>
+        <span>
+          <span class="vd-branch-title">Lov na rentu</span>
+          <span class="vd-branch-text">Resursi idu na izvlačenje privilegija umjesto u proizvodnju. Šteta i kad je zakonito.</span>
+        </span>
+      </a>
+    </li>
+
+    <li class="vd-branch">
+      <a class="vd-branch-card" href="../chapters/09-interesne-skupine.html#regulatorno-zarobljavanje">
+        <span class="vd-branch-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M8 11V7a4 4 0 0 1 8 0v4"/><rect x="5" y="11" width="14" height="9" rx="1.5"/><path d="M12 15v2"/></svg>
+        </span>
+        <span>
+          <span class="vd-branch-title">Regulatorno zarobljavanje</span>
+          <span class="vd-branch-text">Regulator s vremenom počne gledati svijet očima industrije koju nadzire.</span>
+        </span>
+      </a>
+    </li>
+
+    <li class="vd-branch">
+      <a class="vd-branch-card" href="../chapters/09-interesne-skupine.html#zašto-interesne-skupine-nisu-nužno-štetne">
+        <span class="vd-branch-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4v16M8 20h8M5 7h14"/><path d="M5 7l-2.5 6a3 3 0 0 0 5 0L5 7Z"/><path d="M19 7l-2.5 6a3 3 0 0 0 5 0L19 7Z"/></svg>
+        </span>
+        <span>
+          <span class="vd-branch-title">Nisu nužno štetne</span>
+          <span class="vd-branch-text">Problem nije postojanje interesa nego neravnoteža i netransparentnost utjecaja.</span>
+        </span>
+      </a>
+    </li>
+
+  </ol>
+</div>
+
+<div class="vd-cards">
+
+  <div class="vd-card">
+    <span class="vd-card-label">Politika u praksi</span>
+    <p>Poljoprivredni lobiji, sindikati javnih službi i komore u Hrvatskoj. Mali udio u stanovništvu, visoka organiziranost, velik utjecaj.</p>
+    <a class="vd-src" href="../chapters/09-interesne-skupine.html#logika-kolektivnog-djelovanja">Poglavlje 9 · Kolektivno djelovanje</a>
+  </div>
+
+  <div class="vd-card">
+    <span class="vd-card-label">Jedna brojka</span>
+    <span class="vd-big">15&nbsp;%</span>
+    <p>Toliki dio BDP a Turska je šezdesetih trošila na borbu za uvozne dozvole. Indija 7,3 posto.</p>
+    <a class="vd-src" href="../chapters/09-interesne-skupine.html#lov-na-rentu">Poglavlje 9 · Lov na rentu</a>
+  </div>
+
+  <div class="vd-card">
+    <span class="vd-card-label">Mit i stvarnost</span>
+    <p class="vd-mit"><span class="vd-tag">Mit</span>Lobiji pobjeđuju jer su korumpirani.</p>
+    <p class="vd-stvar"><span class="vd-tag">Stvarnost</span>I bez ijedne kuverte mala organizirana skupina ima strukturnu prednost nad raspršenom većinom.</p>
+    <a class="vd-src" href="../chapters/09-interesne-skupine.html#koncentrirane-koristi-raspršeni-troškovi">Poglavlje 9 · Koncentrirano i raspršeno</a>
+  </div>
+
+</div>
+
+<div class="vd-pojam">
+  <span class="vd-pojam-label">Pojam za razgovor</span>
+  <p><span class="vd-pojam-term">lov na rentu</span> <span class="vd-pojam-text">Trošenje truda i novca da pravila preusmjere bogatstvo tebi, umjesto da ga stvaraš.</span></p>
+</div>
+
+<nav class="vd-dalje" aria-label="Kamo dalje">
+  <a href="08-stranke-izbori.html">← Mapa 8</a>
+  <a class="vd-primary" href="../chapters/09-interesne-skupine.html">Otvorite poglavlje u knjizi</a>
+  <a href="10-birokracija.html">Mapa 10 →</a>
+</nav>
+
+</div>
+```

@@ -46,7 +46,7 @@ I tu se vraća ona napetost s početka. Ako tržište zna zakazati, zna i držav
 
 ## Dio prvi · Što država radi i zašto
 
-Tržište mnogo toga riješi samo, ali ne sve. Tamo gdje podbaci, gdje njegova raspodjela zaboli i gdje cijelo gospodarstvo posrne, izrasta ista potreba za državom, svaki put iz drugog razloga.
+Tržište mnogo toga riješi samo, ali ne sve. Tamo gdje podbaci, gdje njegova raspodjela zaboli i gdje cijelo gospodarstvo posrne, izrasta ista potreba za državom, svaki put iz drugog razloga. A sve što država na tim mjestima radi netko mora platiti, pa se na kraju vraćamo na pitanje tko snosi porezni teret i kako ga podijeliti pošteno.
 
 ### 1. Zašto tržištu uopće treba država?
 
@@ -88,13 +88,23 @@ Glavni alat je proračun. U krizi država može više trošiti i manje uzimati p
 
 Tu vreba i opasnost. Ista vlada koja krizu treba smirivati može je sama izazvati ako pred izbore umjetno napuhuje gospodarstvo. A stabilnost koristi gotovo svima, a nitko je ne kupuje sam, pa je tržište neće dovoljno osigurati i treba je čuvati unaprijed zadanim pravilima i neovisnim institucijama.
 
+### 5. Tko zapravo plaća poreze i kako teret podijeliti pošteno?
+
+Ono što vi odnesete kući i ono što vašega poslodavca uistinu košta dvije su različite brojke. Razlika među njima, takozvani porezni klin, odlazi državi kroz poreze i doprinose.
+
+Porez je obvezno davanje za koje ne dobivate izravnu protuuslugu, za razliku od pristojbe ili doprinosa, gdje znate što vam se vraća. Iznenađenje je da onaj tko po zakonu plaća i onaj tko teret stvarno snosi nisu uvijek ista osoba, jer teret na kraju padne na onoga tko se teže izmakne, na manje pokretljivu stranu.
+
+Svaki porez ljude pomalo odvrati od rada, kupnje ili štednje, a taj skriveni gubitak naglo raste ako su stope previsoke. Pametnije je zato ubirati niske poreze na puno toga nego visoke na malo toga. Čini se pravednim da bogatiji daju veći udio jer im dodatni euro znači manje, ali pretjerane stope mogu smanjiti i prihod države i volju za radom.
+
+Hrvatska se pritom oslanja na porez na potrošnju i na visoko opterećenje plaća, dok imovinu i nekretnine gotovo ne dira. Porez tako nije samo teret, nego način na koji zajednica odlučuje tko i koliko plaća za ono što imamo zajedno.
+
 ---
 
 ## Dio drugi · Politika bez romantike
 
 Lako je državu zamisliti kao mudrog čuvara koji uvijek želi opće dobro. Stvarnost je trezvenija. I glasači, i stranke, i službenici slijede vlastite interese, baš kao i ljudi na tržnici, pa mnoge naizgled čudne poteze tek tako i možemo razumjeti. Ne pitamo kakva bi politika trebala biti, nego što se događa kad svatko za stolom povuče potez koji njemu najviše odgovara.
 
-### 5. Što se promijeni kad političare gledamo kao obične ljude?
+### 6. Što se promijeni kad političare gledamo kao obične ljude?
 
 Zamislite državu ne kao mudrog čuvara općeg dobra, nego kao tržnicu, štand za štandom, na kojoj svatko vuče za sebe. Upravo tako na nju gleda teorija javnog izbora.
 
@@ -106,7 +116,7 @@ Slično je s onima na vlasti. Političari love glasove, a službenici žele već
 
 Pouka koju vrijedi ponijeti tiče se pravila, ne lica. Loša pravila i od dobronamjernih ljudi naprave loše ishode, pa popravak češće dolazi iz promjene pravila nego iz zamjene ljudi.
 
-### 6. Što kad ishod ovisi o potezima drugih?
+### 7. Što kad ishod ovisi o potezima drugih?
 
 Dva susjeda odlučuju hoće li platiti svoj dio zajedničkog nasipa protiv poplave. Svakome se čini pametno prepustiti trošak drugome, pa na kraju nitko ne plati i obojica stradaju kad voda dođe. Kad svatko gleda samo svoj račun, svi mogu proći lošije nego da su surađivali, i upravo zato postoji porez koji nas privoli na zajednički doprinos.
 
@@ -114,7 +124,7 @@ Nije svaki splet tako jasan. Kad dvije strane u sukobu obje budu tvrde do kraja,
 
 Pokazuje se i nešto ljudsko. Kad se dijeli, veliku moć ima onaj tko prvi predloži podjelu, no ta moć slabi što je više onih koji strpljivo čekaju bolju ponudu. A stvarni ljudi dijele pravednije nego što hladni račun predviđa, jer se boje odbijanja i pamte tko ih je ranije zakinuo.
 
-### 7. Može li skupina uopće imati jednu volju?
+### 8. Može li skupina uopće imati jednu volju?
 
 Tri prijatelja biraju film i nikako da se slože. Jedan najviše voli prvi, drugi drugi, treći treći, svaki sa svojim jasnim poretkom. Pa ipak, kad glasuju u parovima, prvi pobjeđuje drugi, drugi pobjeđuje treći, ali treći pobjeđuje prvi. Vrti se u krug i pobjednika nema.
 
@@ -124,7 +134,7 @@ Jedan je ekonomist davno dokazao nešto neugodno. Nijedan sustav glasovanja ne m
 
 Tu se rađa tiha moć. Onaj tko slaže redoslijed i odlučuje o čemu se i kada glasuje često ima više utjecaja od same većine. Mir se vrati tek kad se rasprava svede na jednu os pa pobijedi onaj u sredini, a inače pravila ne samo da prenose odluku, nego je i oblikuju.
 
-### 8. Zašto stranke obećavaju slično, a reforme stalno čekaju?
+### 9. Zašto stranke obećavaju slično, a reforme stalno čekaju?
 
 Stranka je u jednom pogledu nalik trgovcu koji slaže paket robe. U jednu ponudu spoji porezne olakšice, veće mirovine i pomoć poljoprivredi, a vi kao kupac gledate jednu ili dvije stvari koje vam najviše znače i paket ne rastavljate na dijelove.
 
@@ -136,7 +146,7 @@ Slika se mijenja kad su birači podijeljeni, kad rubovi lakše izlaze na izbore 
 
 Ispod svega je jedna tiha poteškoća. Jedan glas gotovo nikad ne odlučuje, pa se većini ne isplati ulagati vrijeme u proučavanje politike, i ljudi ostaju razumno neinformirani. Prostor koji ostane zauzmu dobro organizirane skupine, a posljedica je strpljiva ali postojana, jer politike s brzom vidljivom koristi pobjeđuju, dok nužne reforme s kratkoročnom cijenom stalno čekaju.
 
-### 9. Kako male skupine nadglasaju veliku, šutljivu većinu?
+### 10. Kako male skupine nadglasaju veliku, šutljivu većinu?
 
 Subvencija od pet milijuna eura nekom uskom sektoru naplati se po nekoliko eura od svakog građanina. Sektor ima snažan razlog boriti se za nju, dok pojedini građanin nema poticaj ni saznati za nju, a kamoli se organizirati protiv.
 
@@ -144,7 +154,7 @@ U tome je sva tajna. Male, koncentrirane skupine lako se okupljaju jer svatko im
 
 Pa ipak, interesne skupine nisu nužno štetne. One prenose znanje i daju glas onima koji bi inače utihnuli, a hoće li škoditi ili koristiti, ovisi o pravilima. Kad su jasna, vidljiva i uravnotežena, zastupanje interesa ostaje dio zdravog društva, a ne tihi danak većine.
 
-### 10. Koliko nam uprave zapravo treba?
+### 11. Koliko nam uprave zapravo treba?
 
 Na dobrom šalteru vaš predmet bude riješen jednako, bez obzira poznajete li službenika i koju stranku podržavate. To je svijetla strana uprave. Pravila i stručnost štite vas od samovolje i poznanstava, pa moderna država uopće može ubirati poreze i pružati usluge svima na isti način.
 
@@ -160,7 +170,7 @@ Zato cilj nije manje uprave, nego bolja. Dobra uprava spaja stručnost i odgovor
 
 Iza svake odluke stoji okvir koji se rijetko primjećuje, a snažno djeluje. Isti zakon u dvije zemlje zna dati posve različite rezultate, jer ga okružuje nevidljiva mreža navika, sudova i očekivanja. Prije nego što sudimo o pojedinom potezu, vrijedi pogledati taj okvir, jer on tiho odlučuje umjesto nas.
 
-### 11. Kako to da isti zakon u dvije zemlje daje različite rezultate?
+### 12. Kako to da isti zakon u dvije zemlje daje različite rezultate?
 
 Isti zakon o vlasništvu, prepisan u dvije zemlje slovo po slovo, u jednoj rađa procvat, a u drugoj stoji. Kako iste riječi daju tako različite ishode?
 
@@ -172,7 +182,7 @@ Pogledajte najam stanova. Gdje su sudovi brzi a vlasništvo zaštićeno, vlasnic
 
 Ista priča vrijedi kad netko odlučuje u tuđe ime, jer se njegovi interesi lako raziđu s interesima onih za koje radi, pa trebaju nadzor i odgovornost. Društva napreduju kad pravila služe mnogima, a posrnu kad su skrojena za usku povlaštenu skupinu.
 
-### 12. Tko i po kojim pravilima smije odlučivati o našem novcu?
+### 13. Tko i po kojim pravilima smije odlučivati o našem novcu?
 
 Igru u kojoj se pravila smiju mijenjati usred poteza nitko ne može pošteno odigrati, jer tko god vodi, namjestit će ih sebi u korist. Zato vrijedi razdvojiti dvije razine. Na jednoj, svakodnevnoj, odlučuje se koliki će biti porez i kamo ide novac. Na drugoj, dubljoj i tišoj, postavljaju se pravila po kojima se uopće smije odlučivati, i tu se kriju najvažnija pitanja.
 
@@ -186,9 +196,9 @@ Koliko neko pravilo vrijedi, vidi se po jednome, po tome koliko ljudi vjeruju da
 
 ## Dio četvrti · Država na djelu
 
-Sve se na kraju svede na poteze koji se osjete u svakom domu. Na alate kojima država mijenja stvari oko nas, na novac koji uzme i potroši, i na to kako se zajednička valuta nosi bez zajedničkog proračuna. Pratimo novac kako ulazi, kako se troši i kako se teret dijeli.
+Sve se na kraju svede na poteze koji se osjete u svakom domu. Na alate kojima država mijenja stvari oko nas, na novac koji troši i na to kako se zajednička valuta nosi bez zajedničkog proračuna. Pratimo kako bira alat, na što troši i kako tu istu valutu dijeli s drugima.
 
-### 13. Kojim sve alatima država mijenja ono što želi?
+### 14. Kojim sve alatima država mijenja ono što želi?
 
 Cilj zapisan na papiru, recimo manje zagađenja ili manje siromaštva, još nije politika. Ona nastaje tek kad država posegne za konkretnim alatom, mostom između želje i stvarne promjene u životu ljudi.
 
@@ -196,7 +206,7 @@ A alata ima više. Država nešto može potaknuti novcem, kroz porez ili subvenc
 
 Svaki je alat dvosjekli mač. Porez i pravilo mogu stvoriti nepotreban gubitak, subvencija ovisnost, javno poduzeće mlitavost, a tihi poticaj koji izbor samo olakša ne pomaže kad je pravi problem siromaštvo ili prevelika tržišna moć. Najjeftiniji alat često nije i politički najprihvatljiviji, pa dobre politike rijetko biraju jedan, a obično ih nekoliko slože u smišljen paket.
 
-### 14. Na što i zašto država troši novac koji prikupi?
+### 15. Na što i zašto država troši novac koji prikupi?
 
 Dvije obitelji s jednakom plaćom mogu živjeti posve različito. Jedna novac ulaže u školovanje djece i popravak kuće, druga ga troši na stare navike i otplatu kamata. Na kraju mjeseca potrošile su isto, ali ne žive isto.
 
@@ -207,16 +217,6 @@ Nekad je radila malo, tek čuvala red i sigurnost. Danas iz istog izvora financi
 U krizi pojačanom potrošnjom može ublažiti pad, no to djeluje samo ako je u dobrim godinama štedjela. Inače raste dug, koji se ne puni samo novim trošenjem, jer kad su kamate veće od rasta gospodarstva, omjer duga penje se i sam od sebe.
 
 Tako dvije zemlje koje troše jednako mogu završiti posve različito. Jedna gradi buduću snagu, druga samo plaća stare račune. Presuđuje kvaliteta, a ne sama veličina potrošnje.
-
-### 15. Tko zapravo plaća poreze i kako teret podijeliti pošteno?
-
-Ono što vi odnesete kući i ono što vašega poslodavca uistinu košta dvije su različite brojke. Razlika među njima, takozvani porezni klin, odlazi državi kroz poreze i doprinose.
-
-Porez je obvezno davanje za koje ne dobivate izravnu protuuslugu, za razliku od pristojbe ili doprinosa, gdje znate što vam se vraća. Iznenađenje je da onaj tko po zakonu plaća i onaj tko teret stvarno snosi nisu uvijek ista osoba, jer teret na kraju padne na onoga tko se teže izmakne, na manje pokretljivu stranu.
-
-Svaki porez ljude pomalo odvrati od rada, kupnje ili štednje, a taj skriveni gubitak naglo raste ako su stope previsoke. Pametnije je zato ubirati niske poreze na puno toga nego visoke na malo toga. Čini se pravednim da bogatiji daju veći udio jer im dodatni euro znači manje, ali pretjerane stope mogu smanjiti i prihod države i volju za radom.
-
-Hrvatska se pritom oslanja na porez na potrošnju i na visoko opterećenje plaća, dok imovinu i nekretnine gotovo ne dira. Porez tako nije samo teret, nego način na koji zajednica odlučuje tko i koliko plaća za ono što imamo zajedno.
 
 ### 16. Kako dijeliti istu valutu, a ne dijeliti zajednički proračun?
 

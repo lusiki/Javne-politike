@@ -76,23 +76,23 @@ book:
         - chapters/02-alokacijska-funkcija.qmd
         - chapters/03-distribucijska-funkcija.qmd
         - chapters/04-stabilizacijska-funkcija.qmd
+        - chapters/05-porezi.qmd
     - part: "DIO II: JAVNI IZBOR – ŠTO, KAKO I ZAŠTO?"
       chapters:
-        - chapters/05-javni-izbor.qmd
-        - chapters/05a-teorija-igara.qmd
-        - chapters/06-kolektivni-izbor.qmd
-        - chapters/07-stranke-izbori.qmd
-        - chapters/08-interesne-skupine.qmd
-        - chapters/09-birokracija.qmd
+        - chapters/06-javni-izbor.qmd
+        - chapters/06a-teorija-igara.qmd
+        - chapters/07-kolektivni-izbor.qmd
+        - chapters/08-stranke-izbori.qmd
+        - chapters/09-interesne-skupine.qmd
+        - chapters/10-birokracija.qmd
     - part: "DIO III: NOVA INSTITUCIONALNA I KONSTITUCIONALNA EKONOMIKA"
       chapters:
-        - chapters/10-institucionalna-ekonomika.qmd
-        - chapters/11-konstitucionalna-ekonomika.qmd
+        - chapters/11-institucionalna-ekonomika.qmd
+        - chapters/12-konstitucionalna-ekonomika.qmd
     - part: "DIO IV: JAVNE FINANCIJE I JAVNE POLITIKE U PRAKSI"
       chapters:
-        - chapters/12-instrumenti.qmd
-        - chapters/13-javna-potrosnja.qmd
-        - chapters/14-porezi.qmd
+        - chapters/13-instrumenti.qmd
+        - chapters/14-javna-potrosnja.qmd
         - chapters/15-porezi-praksa.qmd
         - chapters/16-eu-javne-financije.qmd
     - part: "DIO V: KAKO DO KVALITETNIJIH JAVNIH POLITIKA?"
@@ -113,17 +113,17 @@ book:
     - vodic/02-alokacijska-funkcija.qmd
     - vodic/03-distribucijska-funkcija.qmd
     - vodic/04-stabilizacijska-funkcija.qmd
-    - vodic/05-javni-izbor.qmd
-    - vodic/05a-teorija-igara.qmd
-    - vodic/06-kolektivni-izbor.qmd
-    - vodic/07-stranke-izbori.qmd
-    - vodic/08-interesne-skupine.qmd
-    - vodic/09-birokracija.qmd
-    - vodic/10-institucionalna-ekonomika.qmd
-    - vodic/11-konstitucionalna-ekonomika.qmd
-    - vodic/12-instrumenti.qmd
-    - vodic/13-javna-potrosnja.qmd
-    - vodic/14-porezi.qmd
+    - vodic/05-porezi.qmd
+    - vodic/06-javni-izbor.qmd
+    - vodic/06a-teorija-igara.qmd
+    - vodic/07-kolektivni-izbor.qmd
+    - vodic/08-stranke-izbori.qmd
+    - vodic/09-interesne-skupine.qmd
+    - vodic/10-birokracija.qmd
+    - vodic/11-institucionalna-ekonomika.qmd
+    - vodic/12-konstitucionalna-ekonomika.qmd
+    - vodic/13-instrumenti.qmd
+    - vodic/14-javna-potrosnja.qmd
     - vodic/15-porezi-praksa.qmd
     - vodic/16-eu-javne-financije.qmd
     - vodic/17-drzavni-neuspjesi.qmd

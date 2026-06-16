@@ -1,0 +1,130 @@
+---
+title: "Vodič · Teorija igara"
+toc: false
+number-sections: false
+lang: hr-HR
+format:
+  html:
+    page-layout: full
+    body-classes: vd-page
+---
+
+```{=html}
+<div class="vd-dio-2">
+
+<div class="vd-folio">
+  <div class="vd-folio-left">
+    <a class="vd-back" href="../vodic.html">← Vodič</a>
+    <span class="vd-folio-chapter">Dio II · Poglavlje 6a · Teorija igara</span>
+  </div>
+  <div class="vd-folio-meta">
+    <span>3 min čitanja</span>
+    <span>Mapa 6a od 22</span>
+  </div>
+</div>
+
+<h1 class="vd-question">Što se promijeni kad politiku gledamo kao igru?</h1>
+
+<div class="vd-map">
+  <ol class="vd-branches" aria-label="Pet ideja poglavlja o teoriji igara">
+
+    <li class="vd-branch">
+      <a class="vd-branch-card" href="../chapters/06a-teorija-igara.html#strateške-igre-i-kolektivno-djelovanje">
+        <span class="vd-branch-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 12h18M12 3v18"/></svg>
+        </span>
+        <span>
+          <span class="vd-branch-title">Dilema javnog dobra</span>
+          <span class="vd-branch-text">Svatko se nada da će nasip platiti drugi, pa na kraju ne plati nitko. Zato porez nije krađa nego izlaz iz zamke.</span>
+        </span>
+      </a>
+    </li>
+
+    <li class="vd-branch">
+      <a class="vd-branch-card" href="../chapters/06a-teorija-igara.html#kukavica-i-koordinacija-sukob-i-institucije">
+        <span class="vd-branch-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 19l7-14 7 14"/><path d="M9 13h6"/></svg>
+        </span>
+        <span>
+          <span class="vd-branch-title">Kukavica i koordinacija</span>
+          <span class="vd-branch-text">Katkad je pitanje tko će popustiti, a katkad samo kako se uskladiti. Pravila tada daju fokalnu točku.</span>
+        </span>
+      </a>
+    </li>
+
+    <li class="vd-branch">
+      <a class="vd-branch-card" href="../chapters/06a-teorija-igara.html#baron-ferejohnov-model-zakonodavnog-pregovaranja">
+        <span class="vd-branch-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 3v9l6 3"/></svg>
+        </span>
+        <span>
+          <span class="vd-branch-title">Tko dijeli kolač</span>
+          <span class="vd-branch-text">Onaj tko predlaže proračun kupuje najjeftinije glasove za većinu i najveći dio zadržava za sebe.</span>
+        </span>
+      </a>
+    </li>
+
+    <li class="vd-branch">
+      <a class="vd-branch-card" href="../chapters/06a-teorija-igara.html#pregovaračka-moć-i-ustavni-parametri">
+        <span class="vd-branch-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18"/><path d="M6 21V9l6-4 6 4v12"/><path d="M10 21v-6h4v6"/></svg>
+        </span>
+        <span>
+          <span class="vd-branch-title">Veličina i strpljenje</span>
+          <span class="vd-branch-text">Veći parlament i strpljiviji zastupnici slabe ruku predlagatelja, dok stranačka disciplina jača vladajuće.</span>
+        </span>
+      </a>
+    </li>
+
+    <li class="vd-branch">
+      <a class="vd-branch-card" href="../chapters/06a-teorija-igara.html#eksperimentalna-provjera-modela">
+        <span class="vd-branch-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 3h6M10 3v6l-5 9a2 2 0 0 0 2 3h10a2 2 0 0 0 2-3l-5-9V3"/></svg>
+        </span>
+        <span>
+          <span class="vd-branch-title">Teorija na ispitu</span>
+          <span class="vd-branch-text">U laboratoriju ljudi dijele pravednije nego što model kaže i pamte tko ih je jednom prevario.</span>
+        </span>
+      </a>
+    </li>
+
+  </ol>
+</div>
+
+<div class="vd-cards">
+
+  <div class="vd-card">
+    <span class="vd-card-label">Politika u praksi</span>
+    <p>Krizni pregovori u monetarnoj uniji traju do posljednje sekunde jer obje strane čekaju da ona druga popusti, baš kao u igri kukavice.</p>
+    <a class="vd-src" href="../chapters/06a-teorija-igara.html#kukavica-i-koordinacija-sukob-i-institucije">Poglavlje 6a · Kukavica</a>
+  </div>
+
+  <div class="vd-card">
+    <span class="vd-card-label">Jedna brojka</span>
+    <span class="vd-big">½</span>
+    <p>U velikom i strpljivom parlamentu predlagatelj na kraju zadrži tek nešto više od polovice proračuna.</p>
+    <a class="vd-src" href="../chapters/06a-teorija-igara.html#pregovaračka-moć-i-ustavni-parametri">Poglavlje 6a · Moć predlagatelja</a>
+  </div>
+
+  <div class="vd-card">
+    <span class="vd-card-label">Mit i stvarnost</span>
+    <p class="vd-mit"><span class="vd-tag">Mit</span>Veći parlament znači jaču većinu i koncentraciju moći.</p>
+    <p class="vd-stvar"><span class="vd-tag">Stvarnost</span>Veće tijelo raspršuje moć predlagatelja jer treba kupiti više glasova, a ne koncentrira je.</p>
+    <a class="vd-src" href="../chapters/06a-teorija-igara.html#pregovaračka-moć-i-ustavni-parametri">Poglavlje 6a · Moć predlagatelja</a>
+  </div>
+
+</div>
+
+<div class="vd-pojam">
+  <span class="vd-pojam-label">Pojam za razgovor</span>
+  <p><span class="vd-pojam-term">Nashova ravnoteža</span> <span class="vd-pojam-text">Stanje u kojem nitko ne dobiva mijenjajući potez sam, pa svi ostaju gdje jesu, i onda kad to nije najbolje za sve.</span></p>
+</div>
+
+<nav class="vd-dalje" aria-label="Kamo dalje">
+  <a href="06-javni-izbor.html">← Mapa 6</a>
+  <a class="vd-primary" href="../chapters/06a-teorija-igara.html">Otvorite poglavlje u knjizi</a>
+  <a href="07-kolektivni-izbor.html">Mapa 7 →</a>
+</nav>
+
+</div>
+```

@@ -1,0 +1,130 @@
+---
+title: "Vodič · Javna potrošnja"
+toc: false
+number-sections: false
+lang: hr-HR
+format:
+  html:
+    page-layout: full
+    body-classes: vd-page
+---
+
+```{=html}
+<div class="vd-dio-4">
+
+<div class="vd-folio">
+  <div class="vd-folio-left">
+    <a class="vd-back" href="../vodic.html">← Vodič</a>
+    <span class="vd-folio-chapter">Dio IV · Poglavlje 14 · Javna potrošnja</span>
+  </div>
+  <div class="vd-folio-meta">
+    <span>2 min čitanja</span>
+    <span>Mapa 14 od 22</span>
+  </div>
+</div>
+
+<h1 class="vd-question">Kamo ide svaki drugi euro koji&nbsp;zaradimo?</h1>
+
+<div class="vd-map">
+  <ol class="vd-branches" aria-label="Pet ideja poglavlja o javnoj potrošnji">
+
+    <li class="vd-branch">
+      <a class="vd-branch-card" href="../chapters/14-javna-potrosnja.html#javna-potrošnja-kroz-povijest">
+        <span class="vd-branch-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 19c4 0 4-12 8-12s4 9 10 9"/><path d="M3 21h18"/></svg>
+        </span>
+        <span>
+          <span class="vd-branch-title">Stoljeće rasta</span>
+          <span class="vd-branch-text">Od noćnog čuvara do države blagostanja. Wagner je rast prozvao zakonom.</span>
+        </span>
+      </a>
+    </li>
+
+    <li class="vd-branch">
+      <a class="vd-branch-card" href="../chapters/14-javna-potrosnja.html#društvene-koristi-i-rizici-prekomjerne-javne-potrošnje">
+        <span class="vd-branch-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l8 4v5c0 5-3.5 8-8 9-4.5-1-8-4-8-9V7l8-4Z"/><path d="M9 12l2 2 4-4"/></svg>
+        </span>
+        <span>
+          <span class="vd-branch-title">Korist i rizik</span>
+          <span class="vd-branch-text">Gradi ljudski kapital i dijeli rizike, ali nosi dug, distorzije i tvrdokorne obveze.</span>
+        </span>
+      </a>
+    </li>
+
+    <li class="vd-branch">
+      <a class="vd-branch-card" href="../chapters/14-javna-potrosnja.html#stabilizacijska-uloga-javne-potrošnje">
+        <span class="vd-branch-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M2 15c2.5-6 5-9 7.5-4.5S14 17 16.5 12 21 6 22 5"/><path d="M2 19h20"/></svg>
+        </span>
+        <span>
+          <span class="vd-branch-title">Pegla ciklusa</span>
+          <span class="vd-branch-text">U recesiji ublažava pad. Učinak ovisi o multiplikatoru i cijeni duga.</span>
+        </span>
+      </a>
+    </li>
+
+    <li class="vd-branch">
+      <a class="vd-branch-card" href="../chapters/14-javna-potrosnja.html#razlike-u-javnoj-potrošnji-u-svijetu">
+        <span class="vd-branch-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.5 4 5.5 4 9s-1.5 6.5-4 9c-2.5-2.5-4-5.5-4-9s1.5-6.5 4-9Z"/></svg>
+        </span>
+        <span>
+          <span class="vd-branch-title">Svjetske razlike</span>
+          <span class="vd-branch-text">Nema jednog optimalnog modela. Slične razine potrošnje daju različite rezultate.</span>
+        </span>
+      </a>
+    </li>
+
+    <li class="vd-branch">
+      <a class="vd-branch-card" href="../chapters/14-javna-potrosnja.html#javna-potrošnja-u-hrvatskoj-i-eu">
+        <span class="vd-branch-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="1"/><path d="M12 5.5l1 2.2 2.4.3-1.7 1.7.4 2.4-2.1-1.1-2.1 1.1.4-2.4-1.7-1.7 2.4-.3 1-2.2Z"/></svg>
+        </span>
+        <span>
+          <span class="vd-branch-title">Hrvatska u EU</span>
+          <span class="vd-branch-text">Gdje je Hrvatska na europskoj karti razine i strukture potrošnje.</span>
+        </span>
+      </a>
+    </li>
+
+  </ol>
+</div>
+
+<div class="vd-cards">
+
+  <div class="vd-card">
+    <span class="vd-card-label">Politika u praksi</span>
+    <p>Skandinavske zemlje s velikim javnim sektorom imaju visok rast i kvalitetne usluge. Druge uz isti udio potrošnje nemaju, jer novac ode u subvencije.</p>
+    <a class="vd-src" href="../chapters/14-javna-potrosnja.html#razlike-u-javnoj-potrošnji-u-svijetu">Poglavlje 14 · Razlike u svijetu</a>
+  </div>
+
+  <div class="vd-card">
+    <span class="vd-card-label">Jedna brojka</span>
+    <span class="vd-big">0</span>
+    <p>Toliko je univerzalnih modela potrošnje. Razina sama ne predviđa uspjeh, presuđuju struktura i provedba.</p>
+    <a class="vd-src" href="../chapters/14-javna-potrosnja.html#razlike-u-javnoj-potrošnji-u-svijetu">Poglavlje 14 · Razlike u svijetu</a>
+  </div>
+
+  <div class="vd-card">
+    <span class="vd-card-label">Mit i stvarnost</span>
+    <p class="vd-mit"><span class="vd-tag">Mit</span>Javna potrošnja je bačen novac.</p>
+    <p class="vd-stvar"><span class="vd-tag">Stvarnost</span>Ovisi što, kako i za koga. Infrastruktura i obrazovanje podižu rast, loše subvencije ga troše.</p>
+    <a class="vd-src" href="../chapters/14-javna-potrosnja.html#društvene-koristi-i-rizici-prekomjerne-javne-potrošnje">Poglavlje 14 · Koristi i rizici</a>
+  </div>
+
+</div>
+
+<div class="vd-pojam">
+  <span class="vd-pojam-label">Pojam za razgovor</span>
+  <p><span class="vd-pojam-term">Wagnerov zakon</span> <span class="vd-pojam-text">Što je društvo bogatije, veći dio dohotka troši kroz državu.</span></p>
+</div>
+
+<nav class="vd-dalje" aria-label="Kamo dalje">
+  <a href="13-instrumenti.html">← Mapa 13</a>
+  <a class="vd-primary" href="../chapters/14-javna-potrosnja.html">Otvorite poglavlje u knjizi</a>
+  <a href="15-porezi-praksa.html">Mapa 15 →</a>
+</nav>
+
+</div>
+```

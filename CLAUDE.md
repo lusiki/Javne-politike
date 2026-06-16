@@ -55,19 +55,25 @@ The canonical chapter list is defined in `_quarto.yml`. Many `.qmd` files in
 `chapters/` are orphans from earlier numbering revisions — do not assume every
 file in that folder is part of the book.
 
-Current structure (from `_quarto.yml`) — 20 chapters in 5 parts + intro:
+Current structure (from `_quarto.yml`) — 21 numbered chapters (plus `06a`) in 5 parts + intro:
 
 - **Uvod** (ch. 0): Zašto bismo otvorili ovu knjigu? (`00-uvod`)
-- **DIO I — Klasična analiza javnih financija i politika** (ch. 1–4):
-  Uloga države, Alokacijska funkcija, Distribucijska funkcija, Stabilizacijska funkcija
-- **DIO II — Javni izbor – što, kako i zašto?** (ch. 5–9):
-  Javni izbor, Kolektivni izbor, Stranke i izbori, Interesne skupine, Birokracija
-- **DIO III — Nova institucionalna i konstitucionalna ekonomika** (ch. 10–11):
+- **DIO I — Klasična analiza javnih financija i politika** (ch. 1–5):
+  Uloga države, Alokacijska funkcija, Distribucijska funkcija, Stabilizacijska funkcija,
+  Porezi (teorija oporezivanja — `05-porezi`)
+- **DIO II — Javni izbor – što, kako i zašto?** (ch. 6, 6a, 7–10):
+  Javni izbor, Teorija igara (`06a`), Kolektivni izbor, Stranke i izbori, Interesne skupine, Birokracija
+- **DIO III — Nova institucionalna i konstitucionalna ekonomika** (ch. 11–12):
   Institucionalna ekonomika, Konstitucionalna ekonomika
-- **DIO IV — Javne financije i javne politike u praksi** (ch. 12–14):
-  Instrumenti, Javna potrošnja, Porezi
-- **DIO V — Kako do kvalitetnijih javnih politika?** (ch. 15–19):
+- **DIO IV — Javne financije i javne politike u praksi** (ch. 13–16):
+  Instrumenti, Javna potrošnja, Porezni sustavi u praksi (`15-porezi-praksa`), Javne financije EU
+- **DIO V — Kako do kvalitetnijih javnih politika?** (ch. 17–21):
   Državni neuspjesi, Novi javni menadžment, Novo upravljanje, CBA i evaluacija, Reforme
+
+The taxation material is split: the **theory** chapter (`05-porezi`) sits in DIO I as the
+revenue side of the classical functions, while the **practice** chapter
+(`15-porezi-praksa`) stays in DIO IV. Cross-references between them are textual
+("u poglavlju o porezima"), never numeric.
 
 ## Content conventions
 

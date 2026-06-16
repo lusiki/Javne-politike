@@ -47,6 +47,12 @@ format:
       <span class="vd-hub-q">Tko pegla krize?</span>
       <span class="vd-go">Otvorite mapu →</span>
     </a>
+    <a class="vd-hub-card" href="vodic/05-porezi.html">
+      <span class="vd-hub-num">05</span>
+      <span class="vd-hub-name">Porezi, više od tereta</span>
+      <span class="vd-hub-q">Zašto porezi izgledaju baš ovako?</span>
+      <span class="vd-go">Otvorite mapu →</span>
+    </a>
   </div>
 </section>
 
@@ -56,38 +62,38 @@ format:
     <span class="vd-hub-part-title" id="vd-part-2">Javni izbor. Što, kako i zašto?</span>
   </div>
   <div class="vd-hub-grid">
-    <a class="vd-hub-card" href="vodic/05-javni-izbor.html">
-      <span class="vd-hub-num">05</span>
+    <a class="vd-hub-card" href="vodic/06-javni-izbor.html">
+      <span class="vd-hub-num">06</span>
       <span class="vd-hub-name">Javni izbor</span>
       <span class="vd-hub-q">Što vidimo kad političare gledamo kao obične ljude?</span>
       <span class="vd-go">Otvorite mapu →</span>
     </a>
-    <a class="vd-hub-card" href="vodic/05a-teorija-igara.html">
-      <span class="vd-hub-num">5a</span>
+    <a class="vd-hub-card" href="vodic/06a-teorija-igara.html">
+      <span class="vd-hub-num">6a</span>
       <span class="vd-hub-name">Teorija igara i pregovaranje</span>
       <span class="vd-hub-q">Što se promijeni kad politiku gledamo kao igru?</span>
       <span class="vd-go">Otvorite mapu →</span>
     </a>
-    <a class="vd-hub-card" href="vodic/06-kolektivni-izbor.html">
-      <span class="vd-hub-num">06</span>
+    <a class="vd-hub-card" href="vodic/07-kolektivni-izbor.html">
+      <span class="vd-hub-num">07</span>
       <span class="vd-hub-name">Kolektivni izbor</span>
       <span class="vd-hub-q">Može li skupina uopće imati dosljednu volju?</span>
       <span class="vd-go">Otvorite mapu →</span>
     </a>
-    <a class="vd-hub-card" href="vodic/07-stranke-izbori.html">
-      <span class="vd-hub-num">07</span>
+    <a class="vd-hub-card" href="vodic/08-stranke-izbori.html">
+      <span class="vd-hub-num">08</span>
       <span class="vd-hub-name">Političke stranke i izbori</span>
       <span class="vd-hub-q">Zašto pred izbore sve stranke zvuče slično?</span>
       <span class="vd-go">Otvorite mapu →</span>
     </a>
-    <a class="vd-hub-card" href="vodic/08-interesne-skupine.html">
-      <span class="vd-hub-num">08</span>
+    <a class="vd-hub-card" href="vodic/09-interesne-skupine.html">
+      <span class="vd-hub-num">09</span>
       <span class="vd-hub-name">Interesne skupine</span>
       <span class="vd-hub-q">Kako mali često pobijede velike?</span>
       <span class="vd-go">Otvorite mapu →</span>
     </a>
-    <a class="vd-hub-card" href="vodic/09-birokracija.html">
-      <span class="vd-hub-num">09</span>
+    <a class="vd-hub-card" href="vodic/10-birokracija.html">
+      <span class="vd-hub-num">10</span>
       <span class="vd-hub-name">Dva pogleda na birokraciju</span>
       <span class="vd-hub-q">Je li birokrat sluga ili igrač?</span>
       <span class="vd-go">Otvorite mapu →</span>
@@ -101,14 +107,14 @@ format:
     <span class="vd-hub-part-title" id="vd-part-3">Nova institucionalna i konstitucionalna ekonomika</span>
   </div>
   <div class="vd-hub-grid">
-    <a class="vd-hub-card" href="vodic/10-institucionalna-ekonomika.html">
-      <span class="vd-hub-num">10</span>
+    <a class="vd-hub-card" href="vodic/11-institucionalna-ekonomika.html">
+      <span class="vd-hub-num">11</span>
       <span class="vd-hub-name">Institucije kao pravila igre</span>
       <span class="vd-hub-q">Zašto ista politika negdje uspije, a negdje propadne?</span>
       <span class="vd-go">Otvorite mapu →</span>
     </a>
-    <a class="vd-hub-card" href="vodic/11-konstitucionalna-ekonomika.html">
-      <span class="vd-hub-num">11</span>
+    <a class="vd-hub-card" href="vodic/12-konstitucionalna-ekonomika.html">
+      <span class="vd-hub-num">12</span>
       <span class="vd-hub-name">Konstitucionalna ekonomika</span>
       <span class="vd-hub-q">Tko čuva čuvare?</span>
       <span class="vd-go">Otvorite mapu →</span>
@@ -122,22 +128,16 @@ format:
     <span class="vd-hub-part-title" id="vd-part-4">Javne financije i javne politike u praksi</span>
   </div>
   <div class="vd-hub-grid">
-    <a class="vd-hub-card" href="vodic/12-instrumenti.html">
-      <span class="vd-hub-num">12</span>
+    <a class="vd-hub-card" href="vodic/13-instrumenti.html">
+      <span class="vd-hub-num">13</span>
       <span class="vd-hub-name">Instrumenti državne intervencije</span>
       <span class="vd-hub-q">Koje alate država ima u rukama?</span>
       <span class="vd-go">Otvorite mapu →</span>
     </a>
-    <a class="vd-hub-card" href="vodic/13-javna-potrosnja.html">
-      <span class="vd-hub-num">13</span>
+    <a class="vd-hub-card" href="vodic/14-javna-potrosnja.html">
+      <span class="vd-hub-num">14</span>
       <span class="vd-hub-name">Javna potrošnja</span>
       <span class="vd-hub-q">Kamo ide svaki drugi euro koji zaradimo?</span>
-      <span class="vd-go">Otvorite mapu →</span>
-    </a>
-    <a class="vd-hub-card" href="vodic/14-porezi.html">
-      <span class="vd-hub-num">14</span>
-      <span class="vd-hub-name">Porezi, više od tereta</span>
-      <span class="vd-hub-q">Zašto porezi izgledaju baš ovako?</span>
       <span class="vd-go">Otvorite mapu →</span>
     </a>
     <a class="vd-hub-card" href="vodic/15-porezi-praksa.html">

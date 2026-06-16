@@ -174,150 +174,150 @@ Za sve koji žele razumjeti kako država utječe na svakodnevni život, a nemaju
 </ul>
 </details>
 
+<details class="toc-chapter">
+<summary><span class="toc-num">5.</span> <a href="chapters/05-porezi.html">Porezi — više od tereta</a></summary>
+<ul>
+<li><a href="chapters/05-porezi.html#što-su-porezi">Što su porezi?</a></li>
+<li><a href="chapters/05-porezi.html#porezi-kroz-povijest">Porezi kroz povijest</a></li>
+<li><a href="chapters/05-porezi.html#vrste-poreza">Vrste poreza</a></li>
+<li><a href="chapters/05-porezi.html#osnovna-načela-oporezivanja">Osnovna načela oporezivanja</a></li>
+<li><a href="chapters/05-porezi.html#osnove-teorije-oporezivanja">Osnove teorije oporezivanja</a></li>
+<li><a href="chapters/05-porezi.html#teorija-optimalnog-oporezivanja">Teorija optimalnog oporezivanja</a></li>
+<li><a href="chapters/05-porezi.html#inflacija-kao-porez">Inflacija kao porez</a></li>
+</ul>
+</details>
+
 <p class="toc-part">DIO II: Javni izbor — što, kako i zašto?</p>
 
 <details class="toc-chapter">
-<summary><span class="toc-num">5.</span> <a href="chapters/05-javni-izbor.html">Što je to javni izbor i zašto nas se tiče?</a></summary>
+<summary><span class="toc-num">6.</span> <a href="chapters/06-javni-izbor.html">Što je to javni izbor i zašto nas se tiče?</a></summary>
 <ul>
-<li><a href="chapters/05-javni-izbor.html#definicija-metodologija-i-osnovne-pretpostavke">Definicija, metodologija i osnovne pretpostavke</a></li>
-<li><a href="chapters/05-javni-izbor.html#birači-i-paradoks-glasanja">Birači i paradoks glasanja</a></li>
-<li><a href="chapters/05-javni-izbor.html#instrumentalno-i-ekspresivno-glasanje">Instrumentalno i ekspresivno glasanje</a></li>
-<li><a href="chapters/05-javni-izbor.html#glasanje-pod-neizvjesnošću-i-minimax-žaljenje">Glasanje pod neizvjesnošću i minimax žaljenje</a></li>
-<li><a href="chapters/05-javni-izbor.html#političari-i-birokrati-u-tržištu-politika">Političari i birokrati u tržištu politika</a></li>
-<li><a href="chapters/05-javni-izbor.html#zašto-su-odluke-države-često-neintuitivne">Zašto su odluke države često neintuitivne?</a></li>
+<li><a href="chapters/06-javni-izbor.html#definicija-metodologija-i-osnovne-pretpostavke">Definicija, metodologija i osnovne pretpostavke</a></li>
+<li><a href="chapters/06-javni-izbor.html#birači-i-paradoks-glasanja">Birači i paradoks glasanja</a></li>
+<li><a href="chapters/06-javni-izbor.html#instrumentalno-i-ekspresivno-glasanje">Instrumentalno i ekspresivno glasanje</a></li>
+<li><a href="chapters/06-javni-izbor.html#glasanje-pod-neizvjesnošću-i-minimax-žaljenje">Glasanje pod neizvjesnošću i minimax žaljenje</a></li>
+<li><a href="chapters/06-javni-izbor.html#političari-i-birokrati-u-tržištu-politika">Političari i birokrati u tržištu politika</a></li>
+<li><a href="chapters/06-javni-izbor.html#zašto-su-odluke-države-često-neintuitivne">Zašto su odluke države često neintuitivne?</a></li>
 </ul>
 </details>
 
 <details class="toc-chapter">
-<summary><span class="toc-num">6.</span> <a href="chapters/05a-teorija-igara.html">Teorija igara i zakonodavno pregovaranje</a></summary>
+<summary><span class="toc-num">7.</span> <a href="chapters/06a-teorija-igara.html">Teorija igara i zakonodavno pregovaranje</a></summary>
 <ul>
-<li><a href="chapters/05a-teorija-igara.html#strateške-igre-i-kolektivno-djelovanje">Strateške igre i kolektivno djelovanje</a></li>
-<li><a href="chapters/05a-teorija-igara.html#kukavica-i-koordinacija-sukob-i-institucije">Kukavica i koordinacija, sukob i institucije</a></li>
-<li><a href="chapters/05a-teorija-igara.html#baron-ferejohnov-model-zakonodavnog-pregovaranja">Baron-Ferejohnov model zakonodavnog pregovaranja</a></li>
-<li><a href="chapters/05a-teorija-igara.html#pregovaračka-moć-i-ustavni-parametri">Pregovaračka moć i ustavni parametri</a></li>
-<li><a href="chapters/05a-teorija-igara.html#eksperimentalna-provjera-modela">Eksperimentalna provjera modela</a></li>
-<li><a href="chapters/05a-teorija-igara.html#ustavni-dizajn-proračunskih-pravila">Ustavni dizajn proračunskih pravila</a></li>
+<li><a href="chapters/06a-teorija-igara.html#strateške-igre-i-kolektivno-djelovanje">Strateške igre i kolektivno djelovanje</a></li>
+<li><a href="chapters/06a-teorija-igara.html#kukavica-i-koordinacija-sukob-i-institucije">Kukavica i koordinacija, sukob i institucije</a></li>
+<li><a href="chapters/06a-teorija-igara.html#baron-ferejohnov-model-zakonodavnog-pregovaranja">Baron-Ferejohnov model zakonodavnog pregovaranja</a></li>
+<li><a href="chapters/06a-teorija-igara.html#pregovaračka-moć-i-ustavni-parametri">Pregovaračka moć i ustavni parametri</a></li>
+<li><a href="chapters/06a-teorija-igara.html#eksperimentalna-provjera-modela">Eksperimentalna provjera modela</a></li>
+<li><a href="chapters/06a-teorija-igara.html#ustavni-dizajn-proračunskih-pravila">Ustavni dizajn proračunskih pravila</a></li>
 </ul>
 </details>
 
 <details class="toc-chapter">
-<summary><span class="toc-num">7.</span> <a href="chapters/06-kolektivni-izbor.html">Kolektivni izbor</a></summary>
+<summary><span class="toc-num">8.</span> <a href="chapters/07-kolektivni-izbor.html">Kolektivni izbor</a></summary>
 <ul>
-<li><a href="chapters/06-kolektivni-izbor.html#condorcetov-paradoks">Condorcetov paradoks</a></li>
-<li><a href="chapters/06-kolektivni-izbor.html#od-jednog-ciklusa-do-kaotične-većine">Od jednog ciklusa do kaotične većine</a></li>
-<li><a href="chapters/06-kolektivni-izbor.html#arrowljev-teorem-nemogućnosti">Arrowljev teorem nemogućnosti</a></li>
-<li><a href="chapters/06-kolektivni-izbor.html#bordino-pravilo-i-pozicijsko-glasovanje">Bordino pravilo i pozicijsko glasovanje</a></li>
-<li><a href="chapters/06-kolektivni-izbor.html#jednovršne-preferencije-i-medijanski-glasač">Jednovršne preferencije i medijanski glasač</a></li>
-<li><a href="chapters/06-kolektivni-izbor.html#kontrola-dnevnog-reda-i-politika-kompromisa">Kontrola dnevnog reda i politika kompromisa</a></li>
-<li><a href="chapters/06-kolektivni-izbor.html#posljedice-za-javne-politike">Posljedice za javne politike</a></li>
+<li><a href="chapters/07-kolektivni-izbor.html#condorcetov-paradoks">Condorcetov paradoks</a></li>
+<li><a href="chapters/07-kolektivni-izbor.html#od-jednog-ciklusa-do-kaotične-većine">Od jednog ciklusa do kaotične većine</a></li>
+<li><a href="chapters/07-kolektivni-izbor.html#arrowljev-teorem-nemogućnosti">Arrowljev teorem nemogućnosti</a></li>
+<li><a href="chapters/07-kolektivni-izbor.html#bordino-pravilo-i-pozicijsko-glasovanje">Bordino pravilo i pozicijsko glasovanje</a></li>
+<li><a href="chapters/07-kolektivni-izbor.html#jednovršne-preferencije-i-medijanski-glasač">Jednovršne preferencije i medijanski glasač</a></li>
+<li><a href="chapters/07-kolektivni-izbor.html#kontrola-dnevnog-reda-i-politika-kompromisa">Kontrola dnevnog reda i politika kompromisa</a></li>
+<li><a href="chapters/07-kolektivni-izbor.html#posljedice-za-javne-politike">Posljedice za javne politike</a></li>
 </ul>
 </details>
 
 <details class="toc-chapter">
-<summary><span class="toc-num">8.</span> <a href="chapters/07-stranke-izbori.html">Političke stranke i izbori</a></summary>
+<summary><span class="toc-num">9.</span> <a href="chapters/08-stranke-izbori.html">Političke stranke i izbori</a></summary>
 <ul>
-<li><a href="chapters/07-stranke-izbori.html#medijanski-glasač-i-natjecanje-za-centar">Medijanski glasač i natjecanje za centar</a></li>
-<li><a href="chapters/07-stranke-izbori.html#kako-se-stranke-natječu-za-glas">Kako se stranke natječu za glas</a></li>
-<li><a href="chapters/07-stranke-izbori.html#što-oblikuje-centar-i-polarizaciju">Što oblikuje centar i polarizaciju</a></li>
-<li><a href="chapters/07-stranke-izbori.html#racionalna-neinformiranost-i-izlaznost">Racionalna neinformiranost i izlaznost</a></li>
-<li><a href="chapters/07-stranke-izbori.html#je-li-diktatura-najbolji-sustav-donošenja-odluka">Je li diktatura najbolji sustav donošenja odluka?</a></li>
-<li><a href="chapters/07-stranke-izbori.html#zašto-je-to-važno-za-javne-politike">Zašto je to važno za javne politike</a></li>
+<li><a href="chapters/08-stranke-izbori.html#medijanski-glasač-i-natjecanje-za-centar">Medijanski glasač i natjecanje za centar</a></li>
+<li><a href="chapters/08-stranke-izbori.html#kako-se-stranke-natječu-za-glas">Kako se stranke natječu za glas</a></li>
+<li><a href="chapters/08-stranke-izbori.html#što-oblikuje-centar-i-polarizaciju">Što oblikuje centar i polarizaciju</a></li>
+<li><a href="chapters/08-stranke-izbori.html#racionalna-neinformiranost-i-izlaznost">Racionalna neinformiranost i izlaznost</a></li>
+<li><a href="chapters/08-stranke-izbori.html#je-li-diktatura-najbolji-sustav-donošenja-odluka">Je li diktatura najbolji sustav donošenja odluka?</a></li>
+<li><a href="chapters/08-stranke-izbori.html#zašto-je-to-važno-za-javne-politike">Zašto je to važno za javne politike</a></li>
 </ul>
 </details>
 
 <details class="toc-chapter">
-<summary><span class="toc-num">9.</span> <a href="chapters/08-interesne-skupine.html">Interesne skupine — iza kulisa politike</a></summary>
+<summary><span class="toc-num">10.</span> <a href="chapters/09-interesne-skupine.html">Interesne skupine — iza kulisa politike</a></summary>
 <ul>
-<li><a href="chapters/08-interesne-skupine.html#logika-kolektivnog-djelovanja">Logika kolektivnog djelovanja</a></li>
-<li><a href="chapters/08-interesne-skupine.html#digitalno-organiziranje-i-olsonova-logika">Digitalno organiziranje i Olsonova logika</a></li>
-<li><a href="chapters/08-interesne-skupine.html#koncentrirane-koristi-raspršeni-troškovi">Koncentrirane koristi, raspršeni troškovi</a></li>
-<li><a href="chapters/08-interesne-skupine.html#lov-na-rentu">Lov na rentu</a></li>
-<li><a href="chapters/08-interesne-skupine.html#regulatorno-zarobljavanje">Regulatorno zarobljavanje</a></li>
-<li><a href="chapters/08-interesne-skupine.html#konkurencija-interesnih-skupina-i-prodaja-zaštite">Konkurencija interesnih skupina i prodaja zaštite</a></li>
-<li><a href="chapters/08-interesne-skupine.html#lobiranje-kao-prijenos-informacija-i-njegova-pravila">Lobiranje kao prijenos informacija i njegova pravila</a></li>
-<li><a href="chapters/08-interesne-skupine.html#zašto-interesne-skupine-nisu-nužno-štetne">Zašto interesne skupine nisu nužno štetne</a></li>
+<li><a href="chapters/09-interesne-skupine.html#logika-kolektivnog-djelovanja">Logika kolektivnog djelovanja</a></li>
+<li><a href="chapters/09-interesne-skupine.html#digitalno-organiziranje-i-olsonova-logika">Digitalno organiziranje i Olsonova logika</a></li>
+<li><a href="chapters/09-interesne-skupine.html#koncentrirane-koristi-raspršeni-troškovi">Koncentrirane koristi, raspršeni troškovi</a></li>
+<li><a href="chapters/09-interesne-skupine.html#lov-na-rentu">Lov na rentu</a></li>
+<li><a href="chapters/09-interesne-skupine.html#regulatorno-zarobljavanje">Regulatorno zarobljavanje</a></li>
+<li><a href="chapters/09-interesne-skupine.html#konkurencija-interesnih-skupina-i-prodaja-zaštite">Konkurencija interesnih skupina i prodaja zaštite</a></li>
+<li><a href="chapters/09-interesne-skupine.html#lobiranje-kao-prijenos-informacija-i-njegova-pravila">Lobiranje kao prijenos informacija i njegova pravila</a></li>
+<li><a href="chapters/09-interesne-skupine.html#zašto-interesne-skupine-nisu-nužno-štetne">Zašto interesne skupine nisu nužno štetne</a></li>
 </ul>
 </details>
 
 <details class="toc-chapter">
-<summary><span class="toc-num">10.</span> <a href="chapters/09-birokracija.html">Dva pogleda na birokraciju</a></summary>
+<summary><span class="toc-num">11.</span> <a href="chapters/10-birokracija.html">Dva pogleda na birokraciju</a></summary>
 <ul>
-<li><a href="chapters/09-birokracija.html#klasičan-weberovski-pogled">Klasičan, weberovski pogled</a></li>
-<li><a href="chapters/09-birokracija.html#meritokratska-državna-služba">Meritokratska državna služba</a></li>
-<li><a href="chapters/09-birokracija.html#pogled-teorije-javnog-izbora">Pogled teorije javnog izbora</a></li>
-<li><a href="chapters/09-birokracija.html#asimetrija-informacija-i-principalagent-problem">Asimetrija informacija i principal–agent problem</a></li>
-<li><a href="chapters/09-birokracija.html#birokracija-u-mreži-interesa">Birokracija u mreži interesa</a></li>
-<li><a href="chapters/09-birokracija.html#cilj-nije-manje-birokracije-nego-bolja-birokracija">Cilj nije manje birokracije, nego bolja birokracija</a></li>
+<li><a href="chapters/10-birokracija.html#klasičan-weberovski-pogled">Klasičan, weberovski pogled</a></li>
+<li><a href="chapters/10-birokracija.html#meritokratska-državna-služba">Meritokratska državna služba</a></li>
+<li><a href="chapters/10-birokracija.html#pogled-teorije-javnog-izbora">Pogled teorije javnog izbora</a></li>
+<li><a href="chapters/10-birokracija.html#asimetrija-informacija-i-principalagent-problem">Asimetrija informacija i principal–agent problem</a></li>
+<li><a href="chapters/10-birokracija.html#birokracija-u-mreži-interesa">Birokracija u mreži interesa</a></li>
+<li><a href="chapters/10-birokracija.html#cilj-nije-manje-birokracije-nego-bolja-birokracija">Cilj nije manje birokracije, nego bolja birokracija</a></li>
 </ul>
 </details>
 
 <p class="toc-part">DIO III: Nova institucionalna i konstitucionalna ekonomika</p>
 
 <details class="toc-chapter">
-<summary><span class="toc-num">11.</span> <a href="chapters/10-institucionalna-ekonomika.html">Nova institucionalna ekonomika — pravila igre</a></summary>
+<summary><span class="toc-num">12.</span> <a href="chapters/11-institucionalna-ekonomika.html">Nova institucionalna ekonomika — pravila igre</a></summary>
 <ul>
-<li><a href="chapters/10-institucionalna-ekonomika.html#institucije-kao-pravila-igre">Institucije kao pravila igre</a></li>
-<li><a href="chapters/10-institucionalna-ekonomika.html#transakcijski-troškovi">Transakcijski troškovi</a></li>
-<li><a href="chapters/10-institucionalna-ekonomika.html#problem-principalagent-u-javnom-sektoru">Problem principal–agent u javnom sektoru</a></li>
-<li><a href="chapters/10-institucionalna-ekonomika.html#institucije-tržište-rada-i-porezi">Institucije, tržište rada i porezi</a></li>
-<li><a href="chapters/10-institucionalna-ekonomika.html#institucije-i-dugoročni-razvoj">Institucije i dugoročni razvoj</a></li>
-<li><a href="chapters/10-institucionalna-ekonomika.html#formalne-i-neformalne-institucije-pri-rastu">Formalne i neformalne institucije pri rastu</a></li>
-<li><a href="chapters/10-institucionalna-ekonomika.html#institucije-kao-most-između-ekonomije-i-javnih-politika">Institucije kao most između ekonomije i javnih politika</a></li>
+<li><a href="chapters/11-institucionalna-ekonomika.html#institucije-kao-pravila-igre">Institucije kao pravila igre</a></li>
+<li><a href="chapters/11-institucionalna-ekonomika.html#transakcijski-troškovi">Transakcijski troškovi</a></li>
+<li><a href="chapters/11-institucionalna-ekonomika.html#problem-principalagent-u-javnom-sektoru">Problem principal–agent u javnom sektoru</a></li>
+<li><a href="chapters/11-institucionalna-ekonomika.html#institucije-tržište-rada-i-porezi">Institucije, tržište rada i porezi</a></li>
+<li><a href="chapters/11-institucionalna-ekonomika.html#institucije-i-dugoročni-razvoj">Institucije i dugoročni razvoj</a></li>
+<li><a href="chapters/11-institucionalna-ekonomika.html#formalne-i-neformalne-institucije-pri-rastu">Formalne i neformalne institucije pri rastu</a></li>
+<li><a href="chapters/11-institucionalna-ekonomika.html#institucije-kao-most-između-ekonomije-i-javnih-politika">Institucije kao most između ekonomije i javnih politika</a></li>
 </ul>
 </details>
 
 <details class="toc-chapter">
-<summary><span class="toc-num">12.</span> <a href="chapters/11-konstitucionalna-ekonomika.html">Konstitucionalna (ustavna) ekonomika</a></summary>
+<summary><span class="toc-num">13.</span> <a href="chapters/12-konstitucionalna-ekonomika.html">Konstitucionalna (ustavna) ekonomika</a></summary>
 <ul>
-<li><a href="chapters/11-konstitucionalna-ekonomika.html#što-je-ustavna-ekonomika">Što je ustavna ekonomika?</a></li>
-<li><a href="chapters/11-konstitucionalna-ekonomika.html#pravila-i-odluke-dvije-razine-političkog-odlučivanja">Pravila i odluke — dvije razine političkog odlučivanja</a></li>
-<li><a href="chapters/11-konstitucionalna-ekonomika.html#vremenska-nedosljednost-javnih-politika">Vremenska nedosljednost javnih politika</a></li>
-<li><a href="chapters/11-konstitucionalna-ekonomika.html#neovisnost-središnje-banke-kao-rješenje-vremenske-nedosljednosti">Neovisnost središnje banke kao rješenje vremenske nedosljednosti</a></li>
-<li><a href="chapters/11-konstitucionalna-ekonomika.html#političko-proračunski-ciklusi">Političko-proračunski ciklusi</a></li>
-<li><a href="chapters/11-konstitucionalna-ekonomika.html#pravila-vjerodostojnost-i-povjerenje">Pravila, vjerodostojnost i povjerenje</a></li>
-<li><a href="chapters/11-konstitucionalna-ekonomika.html#ustavna-ekonomika-kao-ekonomika-dobrih-pravila">Ustavna ekonomika kao ekonomika dobrih pravila</a></li>
+<li><a href="chapters/12-konstitucionalna-ekonomika.html#što-je-ustavna-ekonomika">Što je ustavna ekonomika?</a></li>
+<li><a href="chapters/12-konstitucionalna-ekonomika.html#pravila-i-odluke-dvije-razine-političkog-odlučivanja">Pravila i odluke — dvije razine političkog odlučivanja</a></li>
+<li><a href="chapters/12-konstitucionalna-ekonomika.html#vremenska-nedosljednost-javnih-politika">Vremenska nedosljednost javnih politika</a></li>
+<li><a href="chapters/12-konstitucionalna-ekonomika.html#neovisnost-središnje-banke-kao-rješenje-vremenske-nedosljednosti">Neovisnost središnje banke kao rješenje vremenske nedosljednosti</a></li>
+<li><a href="chapters/12-konstitucionalna-ekonomika.html#političko-proračunski-ciklusi">Političko-proračunski ciklusi</a></li>
+<li><a href="chapters/12-konstitucionalna-ekonomika.html#pravila-vjerodostojnost-i-povjerenje">Pravila, vjerodostojnost i povjerenje</a></li>
+<li><a href="chapters/12-konstitucionalna-ekonomika.html#ustavna-ekonomika-kao-ekonomika-dobrih-pravila">Ustavna ekonomika kao ekonomika dobrih pravila</a></li>
 </ul>
 </details>
 
 <p class="toc-part">DIO IV: Javne financije i javne politike u praksi</p>
 
 <details class="toc-chapter">
-<summary><span class="toc-num">13.</span> <a href="chapters/12-instrumenti.html">Instrumenti državne intervencije</a></summary>
+<summary><span class="toc-num">14.</span> <a href="chapters/13-instrumenti.html">Instrumenti državne intervencije</a></summary>
 <ul>
-<li><a href="chapters/12-instrumenti.html#čime-država-djeluje">Čime država djeluje</a></li>
-<li><a href="chapters/12-instrumenti.html#porezi">Porezi</a></li>
-<li><a href="chapters/12-instrumenti.html#javna-potrošnja">Javna potrošnja</a></li>
-<li><a href="chapters/12-instrumenti.html#regulacija">Regulacija</a></li>
-<li><a href="chapters/12-instrumenti.html#subvencije">Subvencije</a></li>
-<li><a href="chapters/12-instrumenti.html#javna-poduzeća">Javna poduzeća</a></li>
-<li><a href="chapters/12-instrumenti.html#informacijski-instrumenti">Informacijski instrumenti</a></li>
-<li><a href="chapters/12-instrumenti.html#bihevioralni-i-nudge-instrumenti">Bihevioralni i „nudge” instrumenti</a></li>
-<li><a href="chapters/12-instrumenti.html#kombiniranje-instrumenata">Kombiniranje instrumenata</a></li>
+<li><a href="chapters/13-instrumenti.html#čime-država-djeluje">Čime država djeluje</a></li>
+<li><a href="chapters/13-instrumenti.html#porezi">Porezi</a></li>
+<li><a href="chapters/13-instrumenti.html#javna-potrošnja">Javna potrošnja</a></li>
+<li><a href="chapters/13-instrumenti.html#regulacija">Regulacija</a></li>
+<li><a href="chapters/13-instrumenti.html#subvencije">Subvencije</a></li>
+<li><a href="chapters/13-instrumenti.html#javna-poduzeća">Javna poduzeća</a></li>
+<li><a href="chapters/13-instrumenti.html#informacijski-instrumenti">Informacijski instrumenti</a></li>
+<li><a href="chapters/13-instrumenti.html#bihevioralni-i-nudge-instrumenti">Bihevioralni i „nudge” instrumenti</a></li>
+<li><a href="chapters/13-instrumenti.html#kombiniranje-instrumenata">Kombiniranje instrumenata</a></li>
 </ul>
 </details>
 
 <details class="toc-chapter">
-<summary><span class="toc-num">14.</span> <a href="chapters/13-javna-potrosnja.html">Kako država troši naš novac?</a></summary>
+<summary><span class="toc-num">15.</span> <a href="chapters/14-javna-potrosnja.html">Kako država troši naš novac?</a></summary>
 <ul>
-<li><a href="chapters/13-javna-potrosnja.html#javna-potrošnja-kroz-povijest">Javna potrošnja kroz povijest</a></li>
-<li><a href="chapters/13-javna-potrosnja.html#ekspanzija-države-u-20.-stoljeću">Ekspanzija države u 20. stoljeću</a></li>
-<li><a href="chapters/13-javna-potrosnja.html#društvene-koristi-i-rizici-prekomjerne-javne-potrošnje">Društvene koristi i rizici (prekomjerne) javne potrošnje</a></li>
-<li><a href="chapters/13-javna-potrosnja.html#stabilizacijska-uloga-javne-potrošnje">Stabilizacijska uloga javne potrošnje</a></li>
-<li><a href="chapters/13-javna-potrosnja.html#razlike-u-javnoj-potrošnji-u-svijetu">Razlike u javnoj potrošnji u svijetu</a></li>
-<li><a href="chapters/13-javna-potrosnja.html#javna-potrošnja-u-hrvatskoj-i-eu">Javna potrošnja u Hrvatskoj i EU</a></li>
-</ul>
-</details>
-
-<details class="toc-chapter">
-<summary><span class="toc-num">15.</span> <a href="chapters/14-porezi.html">Porezi — više od tereta</a></summary>
-<ul>
-<li><a href="chapters/14-porezi.html#što-su-porezi">Što su porezi?</a></li>
-<li><a href="chapters/14-porezi.html#porezi-kroz-povijest">Porezi kroz povijest</a></li>
-<li><a href="chapters/14-porezi.html#vrste-poreza">Vrste poreza</a></li>
-<li><a href="chapters/14-porezi.html#osnovna-načela-oporezivanja">Osnovna načela oporezivanja</a></li>
-<li><a href="chapters/14-porezi.html#osnove-teorije-oporezivanja">Osnove teorije oporezivanja</a></li>
-<li><a href="chapters/14-porezi.html#teorija-optimalnog-oporezivanja">Teorija optimalnog oporezivanja</a></li>
-<li><a href="chapters/14-porezi.html#inflacija-kao-porez">Inflacija kao porez</a></li>
+<li><a href="chapters/14-javna-potrosnja.html#javna-potrošnja-kroz-povijest">Javna potrošnja kroz povijest</a></li>
+<li><a href="chapters/14-javna-potrosnja.html#ekspanzija-države-u-20.-stoljeću">Ekspanzija države u 20. stoljeću</a></li>
+<li><a href="chapters/14-javna-potrosnja.html#društvene-koristi-i-rizici-prekomjerne-javne-potrošnje">Društvene koristi i rizici (prekomjerne) javne potrošnje</a></li>
+<li><a href="chapters/14-javna-potrosnja.html#stabilizacijska-uloga-javne-potrošnje">Stabilizacijska uloga javne potrošnje</a></li>
+<li><a href="chapters/14-javna-potrosnja.html#razlike-u-javnoj-potrošnji-u-svijetu">Razlike u javnoj potrošnji u svijetu</a></li>
+<li><a href="chapters/14-javna-potrosnja.html#javna-potrošnja-u-hrvatskoj-i-eu">Javna potrošnja u Hrvatskoj i EU</a></li>
 </ul>
 </details>
 
