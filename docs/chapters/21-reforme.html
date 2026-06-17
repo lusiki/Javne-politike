@@ -2,14 +2,17 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="hr-HR" xml:lang="hr-HR"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.7.32">
+<meta name="generator" content="quarto-1.9.38">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="description" content="Praktični i interaktivni udžbenik o javnim financijama, teoriji javnog izbora i javnim politikama u Hrvatskoj — uloga države, alokacija, redistribucija, institucije i reforme.">
 
-<title>Reforme u javnom sektoru — što funkcionira i zašto? – Sve što želite znati o državi i javnim politikama u Hrvatskoj</title>
+<title>Reforme u javnom sektoru – Sve što želite znati o državi i javnim politikama u Hrvatskoj</title>
 <style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
 div.columns{display: flex; gap: min(4vw, 1.5em);}
@@ -60,7 +63,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 div.csl-bib-body { }
 div.csl-entry {
   clear: both;
-  margin-bottom: 0em;
 }
 .hanging-indent div.csl-entry {
   margin-left:2em;
@@ -94,14 +96,14 @@ div.csl-indent {
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-0d728faf902e423debf4a13c485d6652.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark-b7b980379163672951778461beb15b4e.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-0d728faf902e423debf4a13c485d6652.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-4d4ad920c17a1b28c6a7c1d28bdd063b.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark-7cbdf6bb4af9301f1adde34f6db1f419.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-4d4ad920c17a1b28c6a7c1d28bdd063b.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-d445b375477d5e4a9f46779469debc24.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../site_libs/bootstrap/bootstrap-dark-91b05340214867ed1ab234ad938fcd58.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<link href="../site_libs/bootstrap/bootstrap-d445b375477d5e4a9f46779469debc24.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-8b1c720448afe02710937b9cddb6dc33.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-dark-20a53a0befdf4f03e49c7494d4c35ead.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../site_libs/bootstrap/bootstrap-8b1c720448afe02710937b9cddb6dc33.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -142,7 +144,7 @@ div.csl-indent {
 <link href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&amp;family=IBM+Plex+Mono:wght@400;500;600&amp;family=Newsreader:ital,opsz,wght@0,6..72,300;0,6..72,400;0,6..72,500;0,6..72,600;0,6..72,700;1,6..72,300;1,6..72,400;1,6..72,500&amp;display=swap" rel="stylesheet">
 
   <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
 <script type="text/javascript">
 const typesetMath = (el) => {
@@ -155,7 +157,7 @@ const typesetMath = (el) => {
     var macros = [];
     for (var i = 0; i < mathElements.length; i++) {
       var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN") {
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
         window.katex.render(texText.data, mathElements[i], {
           displayMode: mathElements[i].classList.contains('display'),
           throwOnError: false,
@@ -172,10 +174,10 @@ window.Quarto = {
 </script>
 
 <link rel="stylesheet" href="../styles/styles.css">
-<meta property="og:title" content="Reforme u javnom sektoru — što funkcionira i zašto? – Sve što želite znati o državi i javnim politikama u Hrvatskoj">
+<meta property="og:title" content="Reforme u javnom sektoru – Sve što želite znati o državi i javnim politikama u Hrvatskoj">
 <meta property="og:description" content="Praktični i interaktivni udžbenik o javnim financijama, teoriji javnog izbora i javnim politikama u Hrvatskoj — uloga države, alokacija, redistribucija, institucije i reforme.">
 <meta property="og:site_name" content="Sve što želite znati o državi i javnim politikama u Hrvatskoj">
-<meta name="twitter:title" content="Reforme u javnom sektoru — što funkcionira i zašto? – Sve što želite znati o državi i javnim politikama u Hrvatskoj">
+<meta name="twitter:title" content="Reforme u javnom sektoru – Sve što želite znati o državi i javnim politikama u Hrvatskoj">
 <meta name="twitter:description" content="Praktični i interaktivni udžbenik o javnim financijama, teoriji javnog izbora i javnim politikama u Hrvatskoj — uloga države, alokacija, redistribucija, institucije i reforme.">
 <meta name="twitter:card" content="summary_large_image">
 </head>
@@ -367,6 +369,10 @@ window.Quarto = {
 <span class="menu-text">Vodič</span></a>
   </li>  
   <li class="nav-item">
+    <a class="nav-link" href="../pojmovnik.html"> 
+<span class="menu-text">Pojmovnik</span></a>
+  </li>  
+  <li class="nav-item">
     <a class="nav-link" href="../resursi.html"> 
 <span class="menu-text">Resursi</span></a>
   </li>  
@@ -377,6 +383,10 @@ window.Quarto = {
   <li class="nav-item">
     <a class="nav-link" href="../podaci.html"> 
 <span class="menu-text">Podaci</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../uci-s-ai.html"> 
+<span class="menu-text">Uči s AI</span></a>
   </li>  
 </ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
@@ -420,7 +430,7 @@ window.Quarto = {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../chapters/17-drzavni-neuspjesi.html">DIO V: KAKO DO KVALITETNIJIH JAVNIH POLITIKA?</a></li><li class="breadcrumb-item"><a href="../chapters/21-reforme.html"><span class="chapter-title">Reforme u javnom sektoru — što funkcionira i zašto?</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../chapters/17-drzavni-neuspjesi.html">DIO V: KAKO DO KVALITETNIJIH JAVNIH POLITIKA?</a></li><li class="breadcrumb-item"><a href="../chapters/21-reforme.html"><span class="chapter-title">Reforme u javnom sektoru</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -446,7 +456,7 @@ window.Quarto = {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../chapters/00-uvod.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Uvod — Zašto bismo otvorili ovu knjigu?</span></a>
+  <a href="../chapters/00-uvod.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Uvod</span></a>
   </div>
 </li>
         <li class="sidebar-item sidebar-item-section">
@@ -470,17 +480,17 @@ window.Quarto = {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../chapters/03-distribucijska-funkcija.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Distribucijska funkcija — država i pitanje pravednosti</span></a>
+  <a href="../chapters/03-distribucijska-funkcija.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Distribucijska funkcija</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../chapters/04-stabilizacijska-funkcija.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Stabilizacijska funkcija — država i makroekonomska stabilnost</span></a>
+  <a href="../chapters/04-stabilizacijska-funkcija.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Stabilizacijska funkcija</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../chapters/05-porezi.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Porezi — više od tereta</span></a>
+  <a href="../chapters/05-porezi.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Klasična teorija oporezivanja</span></a>
   </div>
 </li>
       </ul>
@@ -516,7 +526,7 @@ window.Quarto = {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../chapters/09-interesne-skupine.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Interesne skupine — iza kulisa politike</span></a>
+  <a href="../chapters/09-interesne-skupine.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Interesne skupine</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -537,7 +547,7 @@ window.Quarto = {
       <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../chapters/11-institucionalna-ekonomika.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Nova institucionalna ekonomika — pravila igre</span></a>
+  <a href="../chapters/11-institucionalna-ekonomika.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Nova institucionalna ekonomika</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -573,7 +583,7 @@ window.Quarto = {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../chapters/16-eu-javne-financije.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Javne financije Europske unije — zajednička valuta bez zajedničkog proračuna</span></a>
+  <a href="../chapters/16-eu-javne-financije.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Javne financije Europske unije</span></a>
   </div>
 </li>
       </ul>
@@ -609,7 +619,7 @@ window.Quarto = {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../chapters/21-reforme.html" class="sidebar-item-text sidebar-link active"><span class="chapter-title">Reforme u javnom sektoru — što funkcionira i zašto?</span></a>
+  <a href="../chapters/21-reforme.html" class="sidebar-item-text sidebar-link active"><span class="chapter-title">Reforme u javnom sektoru</span></a>
   </div>
 </li>
       </ul>
@@ -626,6 +636,11 @@ window.Quarto = {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../references.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Literatura</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../pojmovnik.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Mreža pojmova</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -655,7 +670,7 @@ window.Quarto = {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../vodic/05-porezi.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Vodič · Porezi, više od tereta</span></a>
+  <a href="../vodic/05-porezi.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Vodič · Klasična teorija oporezivanja</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -750,18 +765,23 @@ window.Quarto = {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../resursi.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Resursi</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../alat.html" class="sidebar-item-text sidebar-link">
+  <a href="../resursi.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../podaci.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Podaci</span></a>
+  <a href="../alat.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Alat / Igralište</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../podaci.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Resursi</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../uci-s-ai.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Uči s AI</span></a>
   </div>
 </li>
       </ul>
@@ -790,9 +810,9 @@ window.Quarto = {
 <main class="content page-columns page-full" id="quarto-document-content">
 
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../chapters/17-drzavni-neuspjesi.html">DIO V: KAKO DO KVALITETNIJIH JAVNIH POLITIKA?</a></li><li class="breadcrumb-item"><a href="../chapters/21-reforme.html"><span class="chapter-title">Reforme u javnom sektoru — što funkcionira i zašto?</span></a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../chapters/17-drzavni-neuspjesi.html">DIO V: KAKO DO KVALITETNIJIH JAVNIH POLITIKA?</a></li><li class="breadcrumb-item"><a href="../chapters/21-reforme.html"><span class="chapter-title">Reforme u javnom sektoru</span></a></li></ol></nav>
 <div class="quarto-title">
-<div class="quarto-title-block"><div><h1 class="title"><span class="chapter-title">Reforme u javnom sektoru — što funkcionira i zašto?</span></h1><button type="button" class="btn code-tools-button dropdown-toggle" id="quarto-code-tools-menu" data-bs-toggle="dropdown" aria-expanded="false"><i class="bi"></i> Code</button><ul class="dropdown-menu dropdown-menu-end" aria-labelelledby="quarto-code-tools-menu"><li><a id="quarto-show-all-code" class="dropdown-item" href="javascript:void(0)" role="button">Show All Code</a></li><li><a id="quarto-hide-all-code" class="dropdown-item" href="javascript:void(0)" role="button">Hide All Code</a></li><li><hr class="dropdown-divider"></li><li><a id="quarto-view-source" class="dropdown-item" href="javascript:void(0)" role="button">View Source</a></li></ul></div></div>
+<div class="quarto-title-block"><div><h1 class="title"><span class="chapter-title">Reforme u javnom sektoru</span></h1><button type="button" class="btn code-tools-button dropdown-toggle" id="quarto-code-tools-menu" data-bs-toggle="dropdown" aria-expanded="false"><i class="bi"></i> Code</button><ul class="dropdown-menu dropdown-menu-end" aria-labelelledby="quarto-code-tools-menu"><li><a id="quarto-show-all-code" class="dropdown-item" href="javascript:void(0)" role="button">Show All Code</a></li><li><a id="quarto-hide-all-code" class="dropdown-item" href="javascript:void(0)" role="button">Hide All Code</a></li><li><hr class="dropdown-divider"></li><li><a id="quarto-view-source" class="dropdown-item" href="javascript:void(0)" role="button">View Source</a></li></ul></div></div>
 </div>
 
 
@@ -820,56 +840,56 @@ window.Quarto = {
 </ol>
 </section>
 <p>Vrednovanje može pokazati da je promjena potrebna, ali tek tada počinje teži dio posla. Reforme u javnom sektoru predstavljaju jedan od najzahtjevnijih, ali i najvažnijih segmenata javnih politika, jer izravno određuju sposobnost države da učinkovito prikuplja prihode, upravlja rashodima i pruža javne usluge. Za razliku od mnogih drugih politika, ovdje nije riječ samo o promjeni pravila, nego o promjeni načina funkcioniranja države, njezinih institucija, organizacijske kulture i poticaja. Upravo zbog toga reforme javnog sektora često su sporije, politički osjetljivije i neizvjesnije od drugih vrsta reformi.</p>
-<p>Empirijska literatura jasno pokazuje da kvaliteta javnog sektora, koja uključuje učinkovitost, odgovornost, transparentnost i sposobnost provedbe, ima presudan utjecaj na gospodarski razvoj i uspješnost drugih politika <span class="citation" data-cites="acemoglu2012 fukuyama2013">(<a href="../references.html#ref-acemoglu2012" role="doc-biblioref">Acemoglu i Robinson 2012</a>; <a href="../references.html#ref-fukuyama2013" role="doc-biblioref">Fukuyama 2011</a>)</span>. Država nije samo regulator ili redistributivni mehanizam, nego i ključni „operativni sustav” ekonomije koji određuje kako pravila funkcioniraju u praksi.</p>
+<p>Empirijska literatura jasno pokazuje da kvaliteta javnog sektora, koja uključuje učinkovitost, odgovornost, transparentnost i sposobnost provedbe, ima presudan utjecaj na gospodarski razvoj i uspješnost drugih politika <span class="citation" data-cites="acemoglu2012 fukuyama2013">(<a href="../references.html#ref-acemoglu2012" role="doc-biblioref">Acemoglu i Robinson 2012.</a>; <a href="../references.html#ref-fukuyama2013" role="doc-biblioref">Fukuyama 2011.</a>)</span>. Država nije samo regulator ili redistributivni mehanizam, nego i ključni „operativni sustav” ekonomije koji određuje kako pravila funkcioniraju u praksi.</p>
 <div class="no-row-height column-margin column-container"></div><p>Kao posljednje poglavlje, ono spaja dvije zadaće. Najprije pita što zapravo odlučuje hoće li reforma uspjeti ili ostati na papiru, čemu nas uči iskustvo zemalja srednje i istočne Europe i zašto provedba na kraju vrijedi više od broja donesenih zakona. A onda, pogledom unatrag kroz cijelu knjigu, povezuje njezine niti, od razloga zbog kojih država djeluje do uvjeta pod kojima djeluje dobro.</p>
 <section id="zašto-su-reforme-javnog-sektora-nužne" class="level2 page-columns page-full">
 <h2 class="anchored" data-anchor-id="zašto-su-reforme-javnog-sektora-nužne">Zašto su reforme javnog sektora nužne</h2>
-<p>Razlozi za pokretanje reformi najčešće proizlaze iz kombinacije fiskalnih pritisaka, institucionalnih slabosti i promjena u ekonomskom okruženju. U mnogim zemljama reforme su bile potaknute krizama, bilo fiskalnim deficitima, rastom javnog duga ili neučinkovitom javnom potrošnjom. Takve situacije djeluju kao svojevrsni „prozor prilike”, kako to opisuje John Kingdon, u kojem politički troškovi nečinjenja postaju veći od troškova reformi <span class="citation" data-cites="kingdon1984">(<a href="../references.html#ref-kingdon1984" role="doc-biblioref">Kingdon 1984</a>)</span>. Krize razotkrivaju slabosti postojećeg sustava i smanjuju otpor promjenama.</p>
+<p>Razlozi za pokretanje reformi najčešće proizlaze iz kombinacije fiskalnih pritisaka, institucionalnih slabosti i promjena u ekonomskom okruženju. U mnogim zemljama reforme su bile potaknute krizama, bilo fiskalnim deficitima, rastom javnog duga ili neučinkovitom javnom potrošnjom. Takve situacije djeluju kao svojevrsni „prozor prilike”, kako to opisuje John Kingdon, u kojem politički troškovi nečinjenja postaju veći od troškova reformi <span class="citation" data-cites="kingdon1984">(<a href="../references.html#ref-kingdon1984" role="doc-biblioref">Kingdon 1984.</a>)</span>. Krize razotkrivaju slabosti postojećeg sustava i smanjuju otpor promjenama.</p>
 <div class="no-row-height column-margin column-container"><div id="ref-kingdon1984" class="csl-entry" role="listitem">
-Kingdon, John W. 1984. <em>Agendas, Alternatives, and Public Policies</em>. Boston: Little, Brown.
-</div></div><p>Mehanika otpora reformama ima formalan model koji nadilazi pojednostavljenu sliku „dobitnika i gubitnika”. Fernandez i Rodrik pokazali su da reforme koje su agregatno korisne mogu propasti čak i kada bi većina od njih u prosjeku dobila, ako pojedini birač ne zna unaprijed je li on dio dobitničke ili gubitničke skupine <span class="citation" data-cites="fernandez1991">(<a href="../references.html#ref-fernandez1991" role="doc-biblioref">Fernandez i Rodrik 1991</a>)</span>. Pod takvom individualno specifičnom neizvjesnošću, racionalni birač preferira status quo nad reformom čiji su mu osobni ishodi neizvjesni, čak i kada bi mu očekivani ishod bio pozitivan. Reforma se blokira ne zato što gubitnika ima više od dobitnika, nego zato što neizvjesnost o tome tko će biti na kojoj strani sustavno povećava broj birača sklonih čekanju.</p>
+Kingdon, John W. 1984. <em>Agendas, Alternatives, and Public Policies</em>. Little, Brown.
+</div></div><p>Mehanika otpora reformama ima formalan model koji nadilazi pojednostavljenu sliku „dobitnika i gubitnika”. Fernandez i Rodrik pokazali su da reforme koje su agregatno korisne mogu propasti čak i kada bi većina od njih u prosjeku dobila, ako pojedini birač ne zna unaprijed je li on dio dobitničke ili gubitničke skupine <span class="citation" data-cites="fernandez1991">(<a href="../references.html#ref-fernandez1991" role="doc-biblioref">Fernandez i Rodrik 1991.</a>)</span>. Pod takvom individualno specifičnom neizvjesnošću, racionalni birač preferira status quo nad reformom čiji su mu osobni ishodi neizvjesni, čak i kada bi mu očekivani ishod bio pozitivan. Reforma se blokira ne zato što gubitnika ima više od dobitnika, nego zato što neizvjesnost o tome tko će biti na kojoj strani sustavno povećava broj birača sklonih čekanju.</p>
 <p>Taj se mehanizam može zapisati jednom nejednakošću. Ako reforma pojedincu donosi dobitak <span class="math inline">\(g&gt;0\)</span> ako se nađe u pobjedničkoj skupini, a gubitak <span class="math inline">\(\ell&lt;0\)</span> ako se nađe u gubitničkoj, te ako on svoju individualnu vjerojatnost dobitka procjenjuje na <span class="math inline">\(p_i\)</span>, rizično-neutralan birač glasa za reformu samo kada je njegova očekivana korist pozitivna,</p>
 <p><span class="math display">\[
 \mathbb{E}[u_i] = p_i\,g + (1-p_i)\,\ell \;&gt;\; 0 \quad\Longleftrightarrow\quad p_i \;&gt;\; \frac{-\ell}{g-\ell}=\frac{|\ell|}{g+|\ell|}
 \]</span></p>
-<p><span class="citation" data-cites="fernandez1991">(<a href="../references.html#ref-fernandez1991" role="doc-biblioref">Fernandez i Rodrik 1991</a>)</span>. Reformu, dakle, blokira individualna vjerojatnost dobitka ispod kritičnog praga <span class="math inline">\(|\ell|/(g+|\ell|)\)</span>, a ne prosječni predznak ishoda u društvu. Kada je mogući gubitak veći od mogućeg dobitka, taj prag premašuje <span class="math inline">\(0{,}5\)</span>, pa i birač koji svoje izglede procjenjuje kao posve neizvjesne (uz <span class="math inline">\(p_i = 0{,}5\)</span>) glasa protiv, iako bi reforma za društvo u prosjeku bila korisna.</p>
+<p><span class="citation" data-cites="fernandez1991">(<a href="../references.html#ref-fernandez1991" role="doc-biblioref">Fernandez i Rodrik 1991.</a>)</span>. Reformu, dakle, blokira individualna vjerojatnost dobitka ispod kritičnog praga <span class="math inline">\(|\ell|/(g+|\ell|)\)</span>, a ne prosječni predznak ishoda u društvu. Kada je mogući gubitak veći od mogućeg dobitka, taj prag premašuje <span class="math inline">\(0{,}5\)</span>, pa i birač koji svoje izglede procjenjuje kao posve neizvjesne (uz <span class="math inline">\(p_i = 0{,}5\)</span>) glasa protiv, iako bi reforma za društvo u prosjeku bila korisna.</p>
 <div class="no-row-height column-margin column-container"></div><p>To da je reforma „korisna za društvo u prosjeku” ima vlastiti formalni izraz. Po <strong>Kaldor-Hicksovu kriteriju</strong> reforma je potencijalno poboljšanje ako zbroj dobitaka dobitnika premašuje zbroj gubitaka gubitnika,</p>
 <p><span class="math display">\[
 \sum_{i\in W} g_i \;&gt;\; \sum_{j\in L} |\ell_j| \quad\Longleftrightarrow\quad \sum_i \Delta u_i &gt; 0
 \]</span></p>
-<p><span class="citation" data-cites="kaldor1939">(<a href="../references.html#ref-kaldor1939" role="doc-biblioref">Kaldor 1939</a>)</span>. Riječ je o potencijalnom, a ne stvarnom poboljšanju jer kriterij traži samo da dobitnici načelno mogu obeštetiti gubitnike i još uvijek ostati na dobitku, ne i da to stvarno učine. Upravo tu razliku između potencijalne i stvarne kompenzacije reforma mora premostiti da bi prošla.</p>
+<p><span class="citation" data-cites="kaldor1939">(<a href="../references.html#ref-kaldor1939" role="doc-biblioref">Kaldor 1939.</a>)</span>. Riječ je o potencijalnom, a ne stvarnom poboljšanju jer kriterij traži samo da dobitnici načelno mogu obeštetiti gubitnike i još uvijek ostati na dobitku, ne i da to stvarno učine. Upravo tu razliku između potencijalne i stvarne kompenzacije reforma mora premostiti da bi prošla.</p>
 <div class="no-row-height column-margin column-container"><div id="ref-kaldor1939" class="csl-entry" role="listitem">
 Kaldor, Nicholas. 1939. <span>„Welfare Propositions of Economics and Interpersonal Comparisons of Utility“</span>. <em>Economic Journal</em> 49 (195): 549–52. <a href="https://doi.org/10.2307/2224835">https://doi.org/10.2307/2224835</a>.
 </div></div><div id="def-kompenzacijska-shema" class="theorem definition page-columns page-full">
-<p><span class="theorem-title"><strong>Definicija 1</strong></span> <strong>Kompenzacijska shema</strong> je mehanizam koji jasno identificiranim gubitnicima reforme isplaćuje naknadu iz reformskog viška, smanjujući individualnu neizvjesnost i status-quo pristranost; ne mijenja ekonomsku supstancu mjere, nego raspodjelom rizika povećava izglede njezinog prolaza <span class="citation" data-cites="fernandez1991">(<a href="../references.html#ref-fernandez1991" role="doc-biblioref">Fernandez i Rodrik 1991</a>)</span>.</p>
+<p><span class="theorem-title"><strong>Definicija 1</strong></span> <strong>Kompenzacijska shema</strong> je mehanizam koji jasno identificiranim gubitnicima reforme isplaćuje naknadu iz reformskog viška, smanjujući individualnu neizvjesnost i status-quo pristranost; ne mijenja ekonomsku supstancu mjere, nego raspodjelom rizika povećava izglede njezinog prolaza <span class="citation" data-cites="fernandez1991">(<a href="../references.html#ref-fernandez1991" role="doc-biblioref">Fernandez i Rodrik 1991.</a>)</span>.</p>
 <div class="no-row-height column-margin column-container"></div></div>
 <p>Koliko kompenzacija mora biti velika da prevrne glas vidi se iz iste računice očekivane korisnosti. Ako se svakom budućem gubitniku iz reformskog viška isplati naknada <span class="math inline">\(t\)</span>, birač glasa za reformu kada vrijedi</p>
 <p><span class="math display">\[
 \mathbb{E}[u_i] = p_i\,g + (1-p_i)\,(\ell + t) \;&gt;\; 0 \quad\Longleftrightarrow\quad t \;&gt;\; -\ell-\frac{p_i}{1-p_i}\,g
 \]</span></p>
-<p><span class="citation" data-cites="fernandez1991">(<a href="../references.html#ref-fernandez1991" role="doc-biblioref">Fernandez i Rodrik 1991</a>)</span>. Minimalna naknada koja prevrće odluku ovisi o veličini gubitka i o tome koliko birač procjenjuje da je izložen riziku, a ne o agregatnom višku reforme. Time se i formalno vidi zašto kompenzacija djeluje preko raspodjele rizika, pretvarajući Kaldor-Hicksovo potencijalno poboljšanje u stvarno, a ne preko promjene ekonomske supstance mjere.</p>
+<p><span class="citation" data-cites="fernandez1991">(<a href="../references.html#ref-fernandez1991" role="doc-biblioref">Fernandez i Rodrik 1991.</a>)</span>. Minimalna naknada koja prevrće odluku ovisi o veličini gubitka i o tome koliko birač procjenjuje da je izložen riziku, a ne o agregatnom višku reforme. Time se i formalno vidi zašto kompenzacija djeluje preko raspodjele rizika, pretvarajući Kaldor-Hicksovo potencijalno poboljšanje u stvarno, a ne preko promjene ekonomske supstance mjere.</p>
 <div class="no-row-height column-margin column-container"><div id="ref-fernandez1991" class="csl-entry" role="listitem">
 Fernandez, Raquel, i Dani Rodrik. 1991. <span>„Resistance to Reform: Status Quo Bias in the Presence of Individual-Specific Uncertainty“</span>. <em>American Economic Review</em> 81 (5): 1146–55.
 </div></div><p>Iz toga slijedi neintuitivna pouka. Reformatori često mogu povećati šansu prolaza ne mijenjajući ekonomski sadržaj reforme, nego smanjujući neizvjesnost koju ona stvara za pojedinca. Postupna provedba s mogućnošću učenja iz prvih iskustava, eksplicitne kompenzacijske sheme za jasno identificirane gubitnike i transparentne procjene utjecaja koje omogućuju pojedincu da procijeni svoj vlastiti ishod sustavno smanjuju status-quo pristranost i mijenjaju izglede reforme bez mijenjanja njezine supstance.</p>
 <p>Međutim, krize same po sebi ne jamče uspješne reforme. One otvaraju prostor za promjene, ali ishod ovisi o institucionalnim kapacitetima i političkom vodstvu. U nekim slučajevima krize dovode do dubokih i trajnih reformi, dok u drugima rezultiraju parcijalnim ili kratkoročnim mjerama bez dugoročnog učinka. Kriza je zato nužan, ali ne i dovoljan uvjet za reforme.</p>
-<p>Postoji i zaseban razlog zašto se i prijeko potrebna stabilizacija odgađa iako se svi slažu da je nužna. Alesina i Drazen opisuju takvu situaciju kao <strong>rat iscrpljivanjem</strong>, u kojem svaka društvena skupina pristaje na stabilizaciju, ali nastoji da veći dio njezina tereta, kroz poreze ili rezove, padne na druge, pa svi čekaju da prva popusti <span class="citation" data-cites="alesinadrazen1991">(<a href="../references.html#ref-alesinadrazen1991" role="doc-biblioref">Alesina i Drazen 1991</a>)</span>. Odgađanje je tada racionalno čekanje, a okončava ga onaj kome je daljnja kriza preskupa, što objašnjava zašto upravo kriza, dižući cijenu čekanja, zna prekinuti pat-poziciju koju same dobre namjere ne mogu razriješiti. Za razliku od ranije spomenute neizvjesnosti o tome tko će profitirati, ovdje su dobitnici i gubitnici poznati, a zastoj nastaje iz borbe oko raspodjele tereta među organiziranim skupinama koje ga pokušavaju izbjeći <span class="citation" data-cites="olson1982">(<a href="../references.html#ref-olson1982" role="doc-biblioref">Olson 1982</a>)</span>.</p>
+<p>Postoji i zaseban razlog zašto se i prijeko potrebna stabilizacija odgađa iako se svi slažu da je nužna. Alesina i Drazen opisuju takvu situaciju kao <strong>rat iscrpljivanjem</strong>, u kojem svaka društvena skupina pristaje na stabilizaciju, ali nastoji da veći dio njezina tereta, kroz poreze ili rezove, padne na druge, pa svi čekaju da prva popusti <span class="citation" data-cites="alesinadrazen1991">(<a href="../references.html#ref-alesinadrazen1991" role="doc-biblioref">Alesina i Drazen 1991.</a>)</span>. Odgađanje je tada racionalno čekanje, a okončava ga onaj kome je daljnja kriza preskupa, što objašnjava zašto upravo kriza, dižući cijenu čekanja, zna prekinuti pat-poziciju koju same dobre namjere ne mogu razriješiti. Za razliku od ranije spomenute neizvjesnosti o tome tko će profitirati, ovdje su dobitnici i gubitnici poznati, a zastoj nastaje iz borbe oko raspodjele tereta među organiziranim skupinama koje ga pokušavaju izbjeći <span class="citation" data-cites="olson1982">(<a href="../references.html#ref-olson1982" role="doc-biblioref">Olson 1982.</a>)</span>.</p>
 <div class="no-row-height column-margin column-container"><div id="ref-olson1982" class="csl-entry" role="listitem">
-Olson, Mancur. 1982. <em>The Rise and Decline of Nations: Economic Growth, Stagflation, and Social Rigidities</em>. New Haven: Yale University Press.
+Olson, Mancur. 1982. <em>The Rise and Decline of Nations: Economic Growth, Stagflation, and Social Rigidities</em>. Yale University Press.
 </div></div><p>Ravnoteža takvog rata iscrpljivanja počiva na uvjetu indiferentnosti na margini popuštanja. Skupina je spremna izdržati još jedan trenutak čekanja samo dok je trošak tog čekanja <span class="math inline">\(c_i\)</span> jednak izgledu da upravo tada protivnik popusti, izražen hazardom <span class="math inline">\(h_j\)</span>, pomnoženom s dobitkom <span class="math inline">\((\theta_i-\theta_j)\,K\)</span> koji popuštanje protivnika donosi izbjegavanjem većeg udjela tereta,</p>
 <p><span class="math display">\[
 c_i\,\mathrm{d}t = h_j(t)\,(\theta_i-\theta_j)\,K\,\mathrm{d}t \;\Longrightarrow\; h_j(t)=\frac{c_i}{(\theta_i-\theta_j)\,K},\qquad \frac{\partial T_i^{*}}{\partial c_i}&lt;0,\quad \frac{\partial T_i^{*}}{\partial \theta_i}&gt;0
 \]</span></p>
-<p><span class="citation" data-cites="alesinadrazen1991">(<a href="../references.html#ref-alesinadrazen1991" role="doc-biblioref">Alesina i Drazen 1991</a>)</span>. Komparativna statika potvrđuje intuiciju iz proze. Skupina s višim trenutnim troškom čekanja popušta ranije (<span class="math inline">\(\partial T_i^{*}/\partial c_i&lt;0\)</span>), pa zaoštravanje krize, dižući svima cijenu čekanja, skraćuje odgodu. Skupina koja bi pri popuštanju ponijela veći udio tereta čeka dulje (<span class="math inline">\(\partial T_i^{*}/\partial \theta_i&gt;0\)</span>), jer ima više za izgubiti pristajanjem prva.</p>
+<p><span class="citation" data-cites="alesinadrazen1991">(<a href="../references.html#ref-alesinadrazen1991" role="doc-biblioref">Alesina i Drazen 1991.</a>)</span>. Komparativna statika potvrđuje intuiciju iz proze. Skupina s višim trenutnim troškom čekanja popušta ranije (<span class="math inline">\(\partial T_i^{*}/\partial c_i&lt;0\)</span>), pa zaoštravanje krize, dižući svima cijenu čekanja, skraćuje odgodu. Skupina koja bi pri popuštanju ponijela veći udio tereta čeka dulje (<span class="math inline">\(\partial T_i^{*}/\partial \theta_i&gt;0\)</span>), jer ima više za izgubiti pristajanjem prva.</p>
 <div class="no-row-height column-margin column-container"><div id="ref-alesinadrazen1991" class="csl-entry" role="listitem">
 Alesina, Alberto, i Allan Drazen. 1991. <span>„Why Are Stabilizations Delayed?“</span> <em>American Economic Review</em> 81 (5): 1170–88.
 </div></div><p>Osim fiskalnih razloga, reforme su često nužne zbog strukturnih promjena. Globalizacija povećava konkurenciju među državama i zahtijeva učinkovitije institucije. Tehnološki napredak, osobito digitalizacija, mijenja način pružanja javnih usluga. Demografske promjene poput starenja stanovništva stvaraju pritisak na mirovinske i zdravstvene sustave. Tranzicijske zemlje srednje i istočne Europe prolazile su kroz duboke transformacije države, od centralno planiranih sustava prema tržišnim gospodarstvima, pri čemu su reforme javnog sektora bile ključne za uspostavu osnovnih funkcija države.</p>
-<p>Ovaj uvid potvrđuje šira institucionalna literatura. Acemoglu i Robinson pokazuju da su inkluzivne i učinkovite institucije temelj dugoročnog razvoja <span class="citation" data-cites="acemoglu2012">(<a href="../references.html#ref-acemoglu2012" role="doc-biblioref">Acemoglu i Robinson 2012</a>)</span>, dok Fukuyama ističe da je kapacitet države, odnosno njezina sposobnost da provodi politike, jednako važan kao i sam sadržaj tih politika <span class="citation" data-cites="fukuyama2013">(<a href="../references.html#ref-fukuyama2013" role="doc-biblioref">Fukuyama 2011</a>)</span>. Nije dovoljno imati „dobre politike na papiru” jer je presudno mogu li se one provesti dosljedno i učinkovito. Važan razlog za reforme proizlazi i iz jaza između formalnih pravila i stvarnog funkcioniranja države. U mnogim zemljama postoje kvalitetni zakoni, ali je njihova provedba slaba zbog nedostatka kapaciteta ili političkih intervencija. Reforme zato sve više imaju za cilj poboljšati „kako država radi”, a ne samo „što država propisuje”.</p>
-<div class="no-row-height column-margin column-container"></div><p>No reforme nisu jednokratni proces. Riječ je o dugotrajnom i iterativnom procesu institucionalne izgradnje, u kojem se formalna pravila često mijenjaju brže od stvarnih praksi. Kako ističe Douglass North, institucije nisu samo formalna pravila, nego i neformalni obrasci ponašanja koji se najsporije mijenjaju <span class="citation" data-cites="north1990">(<a href="../references.html#ref-north1990" role="doc-biblioref">North 1990</a>)</span>. Zbog toga reforme često daju rezultate tek s vremenskim odmakom.</p>
+<p>Ovaj uvid potvrđuje šira institucionalna literatura. Acemoglu i Robinson pokazuju da su inkluzivne i učinkovite institucije temelj dugoročnog razvoja <span class="citation" data-cites="acemoglu2012">(<a href="../references.html#ref-acemoglu2012" role="doc-biblioref">Acemoglu i Robinson 2012.</a>)</span>, dok Fukuyama ističe da je kapacitet države, odnosno njezina sposobnost da provodi politike, jednako važan kao i sam sadržaj tih politika <span class="citation" data-cites="fukuyama2013">(<a href="../references.html#ref-fukuyama2013" role="doc-biblioref">Fukuyama 2011.</a>)</span>. Nije dovoljno imati „dobre politike na papiru” jer je presudno mogu li se one provesti dosljedno i učinkovito. Važan razlog za reforme proizlazi i iz jaza između formalnih pravila i stvarnog funkcioniranja države. U mnogim zemljama postoje kvalitetni zakoni, ali je njihova provedba slaba zbog nedostatka kapaciteta ili političkih intervencija. Reforme zato sve više imaju za cilj poboljšati „kako država radi”, a ne samo „što država propisuje”.</p>
+<div class="no-row-height column-margin column-container"></div><p>No reforme nisu jednokratni proces. Riječ je o dugotrajnom i iterativnom procesu institucionalne izgradnje, u kojem se formalna pravila često mijenjaju brže od stvarnih praksi. Kako ističe Douglass North, institucije nisu samo formalna pravila, nego i neformalni obrasci ponašanja koji se najsporije mijenjaju <span class="citation" data-cites="north1990">(<a href="../references.html#ref-north1990" role="doc-biblioref">North 1990.</a>)</span>. Zbog toga reforme često daju rezultate tek s vremenskim odmakom.</p>
 </section>
 <section id="što-određuje-uspjeh-reformi" class="level2 page-columns page-full">
 <h2 class="anchored" data-anchor-id="što-određuje-uspjeh-reformi">Što određuje uspjeh reformi</h2>
 <p>Jedan od najvažnijih nalaza literature jest da ne postoji univerzalni model reformi javnog sektora. Iako međunarodne institucije često promoviraju određene „najbolje prakse”, njihova primjena ovisi o lokalnom institucionalnom, političkom i ekonomskom kontekstu. Ono što funkcionira u visoko razvijenim državama ne mora funkcionirati u zemlji s drugačijom administrativnom tradicijom ili razinom razvoja.</p>
-<p>Prije nego što takve nalaze prihvatimo, valja primijetiti zašto je učinke reformi teško uopće pouzdano izmjeriti. Zemlje koje provode reforme nisu slučajno odabrane, nego ih najčešće poduzimaju upravo one s jačim institucijama ili dubljom krizom, pa puka usporedba reformatora i nereformatora miješa učinak same reforme s učinkom okolnosti koje su reformu uopće omogućile <span class="citation" data-cites="acemoglu2012">(<a href="../references.html#ref-acemoglu2012" role="doc-biblioref">Acemoglu i Robinson 2012</a>)</span>. Ista zamka vreba i u tezi o krizama, jer kriza i kasniji ishod mogu dijeliti zajednički uzrok u slabosti institucija, pa ono što izgleda kao kriza koja je iznudila reformu može biti tek dvije posljedice istog temeljnog stanja. Zato se uspjeh reforme ne može očitati iz jednostavne međudržavne usporedbe, nego traži pažljivu usporedbu sličnih slučajeva, praćenje istih zemalja prije i poslije promjene te oprez pri prenošenju nalaza iz jednog konteksta u drugi <span class="citation" data-cites="rodrik2011">(<a href="../references.html#ref-rodrik2011" role="doc-biblioref">Rodrik 2011</a>)</span>.</p>
+<p>Prije nego što takve nalaze prihvatimo, valja primijetiti zašto je učinke reformi teško uopće pouzdano izmjeriti. Zemlje koje provode reforme nisu slučajno odabrane, nego ih najčešće poduzimaju upravo one s jačim institucijama ili dubljom krizom, pa puka usporedba reformatora i nereformatora miješa učinak same reforme s učinkom okolnosti koje su reformu uopće omogućile <span class="citation" data-cites="acemoglu2012">(<a href="../references.html#ref-acemoglu2012" role="doc-biblioref">Acemoglu i Robinson 2012.</a>)</span>. Ista zamka vreba i u tezi o krizama, jer kriza i kasniji ishod mogu dijeliti zajednički uzrok u slabosti institucija, pa ono što izgleda kao kriza koja je iznudila reformu može biti tek dvije posljedice istog temeljnog stanja. Zato se uspjeh reforme ne može očitati iz jednostavne međudržavne usporedbe, nego traži pažljivu usporedbu sličnih slučajeva, praćenje istih zemalja prije i poslije promjene te oprez pri prenošenju nalaza iz jednog konteksta u drugi <span class="citation" data-cites="rodrik2011">(<a href="../references.html#ref-rodrik2011" role="doc-biblioref">Rodrik 2011.</a>)</span>.</p>
 <div class="no-row-height column-margin column-container"></div><p>Ovaj zaključak posebno je važan u svjetlu iskustva s tzv. Washingtonskim konsenzusom, koji je dominirao tijekom 1980-ih i 1990-ih. Tada je prevladavalo uvjerenje da postoji skup univerzalnih politika, koji uključuje fiskalnu disciplinu, liberalizaciju, privatizaciju i deregulaciju, primjenjivih u gotovo svim zemljama. Iskustvo brojnih zemalja pokazalo je ograničenja takvog pristupa jer reforme koje su bile tehnički ispravne nisu uvijek davale očekivane rezultate, budući da nisu bile usklađene s lokalnim institucionalnim kapacitetima.</p>
 <p>Prvo, ključna je realističnost ciljeva i razumijevanje političke ekonomije reformi. Reforme se ne provode u vakuumu, nego u okruženju u kojem različite interesne skupine imaju različite preferencije i moć. Reforme koje ignoriraju raspodjelu moći često završavaju neuspjehom, osobito kada stvaraju gubitnike koji mogu blokirati promjene. Pokušaji reforme državne službe koji su uključivali smanjenje broja zaposlenih često su nailazili na snažan otpor, dok su reforme pažljivo dizajnirane da smanje otpor imale veće šanse za uspjeh.</p>
 <p>Drugo, jednako koliko o sadržaju reformi, uspjeh ovisi i o njihovu redoslijedu. Empirijski nalazi pokazuju da je pristup „najprije osnove, zatim kompleksnost” najuspješniji, pa redoslijed uvođenja postaje samostalno načelo, <strong>sekvenciranje reformi</strong>.</p>
@@ -881,10 +901,10 @@ Alesina, Alberto, i Allan Drazen. 1991. <span>„Why Are Stabilizations Delayed?
 <div class="cell">
 <details class="code-fold hidden">
 <summary>Prikaži kod</summary>
-<div class="sourceCode cell-code hidden" id="cb1" data-startfrom="97" data-source-offset="0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 96;"><span id="cb1-97"><a href="#cb1-97" aria-hidden="true" tabindex="-1"></a>viewof ref_controls <span class="op">=</span> Inputs<span class="op">.</span><span class="fu">form</span>({</span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb1" data-startfrom="97" data-source-offset="0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 96;"><span id="cb1-97"><a href="#cb1-97" aria-hidden="true" tabindex="-1"></a>viewof ref_controls <span class="op">=</span> Inputs<span class="op">.</span><span class="fu">form</span>({</span>
 <span id="cb1-98"><a href="#cb1-98" aria-hidden="true" tabindex="-1"></a>  <span class="dt">c</span><span class="op">:</span> Inputs<span class="op">.</span><span class="fu">range</span>([<span class="dv">0</span><span class="op">,</span> <span class="dv">1</span>]<span class="op">,</span> {<span class="dt">value</span><span class="op">:</span> <span class="fl">0.4</span><span class="op">,</span> <span class="dt">step</span><span class="op">:</span> <span class="fl">0.05</span><span class="op">,</span> <span class="dt">label</span><span class="op">:</span> <span class="st">"Institucionalni kapacitet:"</span>})<span class="op">,</span></span>
 <span id="cb1-99"><a href="#cb1-99" aria-hidden="true" tabindex="-1"></a>  <span class="dt">s</span><span class="op">:</span> Inputs<span class="op">.</span><span class="fu">range</span>([<span class="dv">0</span><span class="op">,</span> <span class="dv">1</span>]<span class="op">,</span> {<span class="dt">value</span><span class="op">:</span> <span class="fl">0.7</span><span class="op">,</span> <span class="dt">step</span><span class="op">:</span> <span class="fl">0.05</span><span class="op">,</span> <span class="dt">label</span><span class="op">:</span> <span class="st">"Brzina i ambicija reforme:"</span>})</span>
-<span id="cb1-100"><a href="#cb1-100" aria-hidden="true" tabindex="-1"></a>})</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb1-100"><a href="#cb1-100" aria-hidden="true" tabindex="-1"></a>})</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </details>
 <div class="cell-output cell-output-display">
 <div id="ojs-cell-1" data-nodetype="declaration">
@@ -895,7 +915,7 @@ Alesina, Alberto, i Allan Drazen. 1991. <span>„Why Are Stabilizations Delayed?
 <div class="cell">
 <details class="code-fold hidden">
 <summary>Prikaži kod</summary>
-<div class="sourceCode cell-code hidden" id="cb2" data-startfrom="105" data-source-offset="0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 104;"><span id="cb2-105"><a href="#cb2-105" aria-hidden="true" tabindex="-1"></a>ref_c <span class="op">=</span> ref_controls<span class="op">.</span><span class="at">c</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb2" data-startfrom="105" data-source-offset="0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 104;"><span id="cb2-105"><a href="#cb2-105" aria-hidden="true" tabindex="-1"></a>ref_c <span class="op">=</span> ref_controls<span class="op">.</span><span class="at">c</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </details>
 <div class="cell-output cell-output-display">
 <div id="ojs-cell-2" data-nodetype="declaration">
@@ -906,7 +926,7 @@ Alesina, Alberto, i Allan Drazen. 1991. <span>„Why Are Stabilizations Delayed?
 <div class="cell">
 <details class="code-fold hidden">
 <summary>Prikaži kod</summary>
-<div class="sourceCode cell-code hidden" id="cb3" data-startfrom="110" data-source-offset="0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 109;"><span id="cb3-110"><a href="#cb3-110" aria-hidden="true" tabindex="-1"></a>ref_s <span class="op">=</span> ref_controls<span class="op">.</span><span class="at">s</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb3" data-startfrom="110" data-source-offset="0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 109;"><span id="cb3-110"><a href="#cb3-110" aria-hidden="true" tabindex="-1"></a>ref_s <span class="op">=</span> ref_controls<span class="op">.</span><span class="at">s</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </details>
 <div class="cell-output cell-output-display">
 <div id="ojs-cell-3" data-nodetype="declaration">
@@ -917,7 +937,7 @@ Alesina, Alberto, i Allan Drazen. 1991. <span>„Why Are Stabilizations Delayed?
 <div class="cell">
 <details class="code-fold hidden">
 <summary>Prikaži kod</summary>
-<div class="sourceCode cell-code hidden" id="cb4" data-startfrom="118" data-source-offset="0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 117;"><span id="cb4-118"><a href="#cb4-118" aria-hidden="true" tabindex="-1"></a>{</span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb4" data-startfrom="118" data-source-offset="0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 117;"><span id="cb4-118"><a href="#cb4-118" aria-hidden="true" tabindex="-1"></a>{</span>
 <span id="cb4-119"><a href="#cb4-119" aria-hidden="true" tabindex="-1"></a>  <span class="kw">const</span> c <span class="op">=</span> ref_c<span class="op">;</span></span>
 <span id="cb4-120"><a href="#cb4-120" aria-hidden="true" tabindex="-1"></a>  <span class="co">// stilizirano: uspjeh je najveći kada brzina odgovara kapacitetu, a razina raste s kapacitetom</span></span>
 <span id="cb4-121"><a href="#cb4-121" aria-hidden="true" tabindex="-1"></a>  <span class="kw">const</span> success <span class="op">=</span> (s) <span class="kw">=&gt;</span> (<span class="fl">0.3</span> <span class="op">+</span> <span class="fl">0.7</span> <span class="op">*</span> c) <span class="op">*</span> <span class="bu">Math</span><span class="op">.</span><span class="fu">exp</span>(<span class="op">-</span>((s <span class="op">-</span> c) <span class="op">**</span> <span class="dv">2</span>) <span class="op">/</span> (<span class="dv">2</span> <span class="op">*</span> <span class="fl">0.08</span>))<span class="op">;</span></span>
@@ -951,7 +971,7 @@ Alesina, Alberto, i Allan Drazen. 1991. <span>„Why Are Stabilizations Delayed?
 <span id="cb4-149"><a href="#cb4-149" aria-hidden="true" tabindex="-1"></a>        <span class="dt">fill</span><span class="op">:</span> <span class="st">"#1C1916"</span><span class="op">,</span> <span class="dt">fontSize</span><span class="op">:</span> <span class="dv">13</span><span class="op">,</span> <span class="dt">fontWeight</span><span class="op">:</span> <span class="dv">700</span><span class="op">,</span> <span class="dt">dy</span><span class="op">:</span> <span class="op">-</span><span class="dv">14</span><span class="op">,</span> <span class="dt">textAnchor</span><span class="op">:</span> <span class="st">"middle"</span>})</span>
 <span id="cb4-150"><a href="#cb4-150" aria-hidden="true" tabindex="-1"></a>    ]</span>
 <span id="cb4-151"><a href="#cb4-151" aria-hidden="true" tabindex="-1"></a>  })<span class="op">;</span></span>
-<span id="cb4-152"><a href="#cb4-152" aria-hidden="true" tabindex="-1"></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb4-152"><a href="#cb4-152" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </details>
 <div id="fig-reforma-kapacitet" class="cell-output cell-output-display quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
@@ -967,7 +987,7 @@ Slika&nbsp;1: Stilizirani prikaz pouke o sekvenciranju — vjerojatnost uspjeha 
 </div>
 </div>
 <p><strong>Što isprobati.</strong> (1) Pri Institucionalni kapacitet oko 0,4 pomičite Brzina i ambicija reforme tako da se poklopi s kapacitetom i vjerojatnost uspjeha skoči na vrh zvona. (2) Sada gurnite brzinu prema gornjem rubu uz nepromijenjen kapacitet i točka klizne niz desnu stranu krivulje, što je prebrza šok-reforma koja nadilazi kapacitet i pada. (3) Podignite Institucionalni kapacitet prema 0,8 i primijetite da se vrh ne samo pomiče udesno nego i raste, jer sposobnija država podnosi i bržu promjenu i iz nje izvlači veću vjerojatnost uspjeha.</p>
-<p>Rodrikov pregled tri desetljeća međunarodnih reformskih iskustava sažima isti obrazac iz drugog kuta <span class="citation" data-cites="rodrik2011">(<a href="../references.html#ref-rodrik2011" role="doc-biblioref">Rodrik 2011</a>)</span>. Zemlje koje su brzo i istodobno provodile cijelu listu „najbolje prakse” (liberalizacija trgovine, deregulacija tržišta rada, privatizacija velikih razmjera, otvaranje kapitalnog računa) sustavno su pokazivale slabije rezultate od zemalja koje su isti skup reformi provodile selektivno i postupno, prilagođavajući redoslijed lokalnim ograničenjima. Ključ nije bio u sadržaju pojedine mjere, nego u tome je li lokalna institucionalna i regulatorna infrastruktura mogla apsorbirati promjenu u tom trenutku.</p>
+<p>Rodrikov pregled tri desetljeća međunarodnih reformskih iskustava sažima isti obrazac iz drugog kuta <span class="citation" data-cites="rodrik2011">(<a href="../references.html#ref-rodrik2011" role="doc-biblioref">Rodrik 2011.</a>)</span>. Zemlje koje su brzo i istodobno provodile cijelu listu „najbolje prakse” (liberalizacija trgovine, deregulacija tržišta rada, privatizacija velikih razmjera, otvaranje kapitalnog računa) sustavno su pokazivale slabije rezultate od zemalja koje su isti skup reformi provodile selektivno i postupno, prilagođavajući redoslijed lokalnim ograničenjima. Ključ nije bio u sadržaju pojedine mjere, nego u tome je li lokalna institucionalna i regulatorna infrastruktura mogla apsorbirati promjenu u tom trenutku.</p>
 <div class="no-row-height column-margin column-container"></div><p>Liberalizacija kapitalnog računa pokazuje da je redoslijed dio sadržaja reforme, a ne tehnički detalj koji dolazi poslije.</p>
 <div class="callout-praksa page-columns page-full">
 <p>Redoslijed reformi najjasnije se vidi na liberalizaciji kapitalnog računa. U zemljama koje su prvo izgradile snažnu bankarsku regulaciju i nadzor, otvaranje prema slobodnom kretanju kapitala donijelo je dugoročne koristi kroz pristup financiranju i ulaganjima. U zemljama koje su kapitalni račun otvorile prije nego što su uspostavile nadzor nad bankama, isti je potez često ubrzao kreditne procvate i financijske krize. Sadržaj mjere bio je isti, ali je ishod ovisio o tome je li institucionalna podloga postojala u trenutku provedbe.<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a></p>
@@ -982,29 +1002,29 @@ Slika&nbsp;1: Stilizirani prikaz pouke o sekvenciranju — vjerojatnost uspjeha 
 <p><span class="theorem-title"><strong>Definicija 3</strong></span> <strong>Vanjsko sidro</strong> (<em>external anchor</em>) je institucijalni mehanizam u kojemu međunarodna organizacija ili integracija (poput pristupnih pregovora s EU) postavlja obvezujuće standarde i rokove, smanjuje neizvjesnost i povećava vjerodostojnost reformi nadoknađujući slabost domaćih institucija.</p>
 </div>
 <p>Taj „sidreni efekt” bio je posebno važan jer je smanjivao neizvjesnost i povećavao vjerodostojnost reformi. U uvjetima gdje su domaće institucije bile slabe, vanjski pritisak i jasno definirani kriteriji omogućili su ubrzanje institucionalnih promjena. U tom smislu EU integracija nije bila samo politički projekt, nego i mehanizam institucionalne modernizacije.</p>
-<p>Međutim, unatoč zajedničkom okviru i sličnim početnim uvjetima, rezultati reformi pokazali su se izrazito heterogenima. Neke zemlje, poput Estonije, razvile su visoko učinkovite, digitalizirane i transparentne javne sustave. Druge, poput Slovenije, razvile su stabilne institucionalne okvire uz postupniji tempo. Dio zemalja zadržao je značajne elemente slabih institucija, političke kontrole nad administracijom i slabije provedbe politika. Ova divergencija pokazuje da formalno usklađivanje s pravilima nije dovoljno za stvarnu institucionalnu transformaciju jer postoji razlika između „institucija na papiru” i „institucija u praksi” <span class="citation" data-cites="north1990 acemoglu2012">(<a href="../references.html#ref-north1990" role="doc-biblioref">North 1990</a>; <a href="../references.html#ref-acemoglu2012" role="doc-biblioref">Acemoglu i Robinson 2012</a>)</span>.</p>
+<p>Međutim, unatoč zajedničkom okviru i sličnim početnim uvjetima, rezultati reformi pokazali su se izrazito heterogenima. Neke zemlje, poput Estonije, razvile su visoko učinkovite, digitalizirane i transparentne javne sustave. Druge, poput Slovenije, razvile su stabilne institucionalne okvire uz postupniji tempo. Dio zemalja zadržao je značajne elemente slabih institucija, političke kontrole nad administracijom i slabije provedbe politika. Ova divergencija pokazuje da formalno usklađivanje s pravilima nije dovoljno za stvarnu institucionalnu transformaciju jer postoji razlika između „institucija na papiru” i „institucija u praksi” <span class="citation" data-cites="north1990 acemoglu2012">(<a href="../references.html#ref-north1990" role="doc-biblioref">North 1990.</a>; <a href="../references.html#ref-acemoglu2012" role="doc-biblioref">Acemoglu i Robinson 2012.</a>)</span>.</p>
 <div class="no-row-height column-margin column-container"><div id="ref-north1990" class="csl-entry" role="listitem">
-North, Douglass C. 1990. <em>Institutions, Institutional Change and Economic Performance</em>. Cambridge: Cambridge University Press.
+North, Douglass C. 1990. <em>Institutions, Institutional Change and Economic Performance</em>. Cambridge University Press.
 </div><div id="ref-acemoglu2012" class="csl-entry" role="listitem">
-Acemoglu, Daron, i James A. Robinson. 2012. <em>Why Nations Fail: The Origins of Power, Prosperity, and Poverty</em>. New York: Crown Publishers.
+Acemoglu, Daron, i James A. Robinson. 2012. <em>Why Nations Fail: The Origins of Power, Prosperity, and Poverty</em>. Crown Publishers.
 </div></div><p>Razlike u uspjehu otvaraju i šire pitanje brzine reformi, odnosno koliko brzo treba ići. Tu su se iskristalizirale dvije suprotstavljene strategije, <strong>šok-terapija</strong> i <strong>gradualizam</strong>.</p>
 <div id="def-sok-terapija-gradualizam" class="theorem definition">
 <p><span class="theorem-title"><strong>Definicija 4</strong></span> <strong>Šok-terapija</strong> je strategija istodobne provedbe većeg broja reformi u kratkom roku, uz argument da nepotpuna tranzicija ostavlja prostor za blokadu, dok je <strong>gradualizam</strong> suprotna strategija postupnih, sekvenciranih promjena koje smanjuju socijalne troškove i daju institucijama vremena za apsorpciju. Empirijska usporedba nije dala jednoznačnog pobjednika jer uspjeh ovisi ponajviše o institucionalnom kapacitetu i prisutnosti vjerodostojnog sidra.</p>
 </div>
 <p>Šok-terapijski pristup opravdavao se argumentom da fragmentirana, nedovršena tranzicija ostavlja dovoljno prostora za blokadu i preokret. Gradualistički pristup naglašavao je rizik prebrzog napuštanja postojećih koordinacijskih mehanizama prije nego što su novi tržišni mehanizmi stigli funkcionirati.</p>
-<p>Trideset godina kasnije empirijska usporedba ne daje jednoznačan odgovor <span class="citation" data-cites="rodrik2011">(<a href="../references.html#ref-rodrik2011" role="doc-biblioref">Rodrik 2011</a>)</span>. Šok-terapija u dijelu Srednje Europe (Poljska, baltičke države) dala je brže rezultate od gradualističkog pristupa drugdje, ali se to objašnjava jednako institucionalnom predtransformacijskom snagom tih zemalja koliko i samom brzinom. Gradualistička putanja Slovenije i Češke proizvela je usporediv ishod uz manje socijalnih troškova, dok je gradualizam bez vjerodostojnog sidra drugdje često završio u zaglavljenoj polureformi. Brzina sama po sebi nije ni vrlina ni mana. Ono što razlikuje uspjeh od neuspjeha jest spremnost institucija da apsorbiraju promjenu i postojanje vanjskog ili unutarnjeg sidra koje održava reformski smjer između izborima izazvanih oscilacija.</p>
+<p>Trideset godina kasnije empirijska usporedba ne daje jednoznačan odgovor <span class="citation" data-cites="rodrik2011">(<a href="../references.html#ref-rodrik2011" role="doc-biblioref">Rodrik 2011.</a>)</span>. Šok-terapija u dijelu Srednje Europe (Poljska, baltičke države) dala je brže rezultate od gradualističkog pristupa drugdje, ali se to objašnjava jednako institucionalnom predtransformacijskom snagom tih zemalja koliko i samom brzinom. Gradualistička putanja Slovenije i Češke proizvela je usporediv ishod uz manje socijalnih troškova, dok je gradualizam bez vjerodostojnog sidra drugdje često završio u zaglavljenoj polureformi. Brzina sama po sebi nije ni vrlina ni mana. Ono što razlikuje uspjeh od neuspjeha jest spremnost institucija da apsorbiraju promjenu i postojanje vanjskog ili unutarnjeg sidra koje održava reformski smjer između izborima izazvanih oscilacija.</p>
 <div class="no-row-height column-margin column-container"><div id="ref-rodrik2011" class="csl-entry" role="listitem">
-Rodrik, Dani. 2011. <em>The Globalization Paradox: Democracy and the Future of the World Economy</em>. New York: W. W. Norton.
+Rodrik, Dani. 2011. <em>The Globalization Paradox: Democracy and the Future of the World Economy</em>. W. W. Norton.
 </div></div><p>Sami „socijalni troškovi” o kojima je riječ imaju prepoznatljiv oblik kroz vrijeme, poznat kao J-krivulja reformi. Output najprije pada zbog prijelazne dezorganizacije, kada se stare koordinacijske veze prekinu prije nego što nove tržišne profunkcioniraju, a potom se oporavlja iznad polazne razine. Stilizirano, putanja outputa <span class="math inline">\(Y_t\)</span> uz brzinu prilagodbe <span class="math inline">\(\delta\)</span>, dubinu prijelaznog pada <span class="math inline">\(\alpha\)</span> i trajni dobitak reforme <span class="math inline">\(\gamma\)</span> glasi</p>
 <p><span class="math display">\[
 Y_t = Y_0\Big[1-\alpha\,e^{-\delta t}\big(1-e^{-\delta t}\big)\Big]+\gamma\big(1-e^{-\delta t}\big),\qquad \min_t Y_t &lt; Y_0 &lt; \lim_{t\to\infty} Y_t
 \]</span></p>
-<p><span class="citation" data-cites="blanchardkremer1997">(<a href="../references.html#ref-blanchardkremer1997" role="doc-biblioref">Blanchard i Kremer 1997</a>)</span>. Krivulja je u obliku slova J samo kada je prijelazni pad dovoljno izražen u odnosu na trajni dobitak (npr. uz <span class="math inline">\(\alpha = 0{,}4\)</span> i <span class="math inline">\(\gamma = 0{,}1\)</span>), jer bi inače rastući član odmah nadvladao pad i minimuma ispod <span class="math inline">\(Y_0\)</span> ne bi bilo. Upravo dubina i trajanje tog početnog pada čine mjerljivu cijenu tranzicije, pa razlika između gradualizma i šok-terapije postaje razlika između pliće-ali-duže i dublje-ali-kraće udubine na istoj krivulji.</p>
+<p><span class="citation" data-cites="blanchardkremer1997">(<a href="../references.html#ref-blanchardkremer1997" role="doc-biblioref">Blanchard i Kremer 1997.</a>)</span>. Krivulja je u obliku slova J samo kada je prijelazni pad dovoljno izražen u odnosu na trajni dobitak (npr. uz <span class="math inline">\(\alpha = 0{,}4\)</span> i <span class="math inline">\(\gamma = 0{,}1\)</span>), jer bi inače rastući član odmah nadvladao pad i minimuma ispod <span class="math inline">\(Y_0\)</span> ne bi bilo. Upravo dubina i trajanje tog početnog pada čine mjerljivu cijenu tranzicije, pa razlika između gradualizma i šok-terapije postaje razlika između pliće-ali-duže i dublje-ali-kraće udubine na istoj krivulji.</p>
 <div class="no-row-height column-margin column-container"><div id="ref-blanchardkremer1997" class="csl-entry" role="listitem">
-Blanchard, Olivier, i Michael Kremer. 1997. <span>„Disorganization“</span>. <em>Quarterly Journal of Economics</em> 112 (4): 1091–1126. <a href="https://doi.org/10.1162/003355300555439">https://doi.org/10.1162/003355300555439</a>.
+Blanchard, Olivier, i Michael Kremer. 1997. <span>„Disorganization“</span>. <em>Quarterly Journal of Economics</em> 112 (4): 1091–126. <a href="https://doi.org/10.1162/003355300555439">https://doi.org/10.1162/003355300555439</a>.
 </div><div id="ref-fukuyama2013" class="csl-entry" role="listitem">
-Fukuyama, Francis. 2011. <em>The Origins of Political Order: From Prehuman Times to the French Revolution</em>. New York: Farrar, Straus; Giroux.
-</div></div><p>Estonija se često ističe kao jedan od najuspješnijih primjera, jer je već od 1990-ih sustavno ulagala u digitalizaciju javne uprave, uz paralelno jačanje administrativnih kapaciteta. Ključ uspjeha nije bio samo u tehnologiji, nego u dosljednoj institucionalizaciji reformi i dugoročnoj strategiji. Zajednički obrazac koji se pojavljuje jest da su najuspješnije bile zemlje koje su uspjele institucionalizirati reforme, odnosno pretvoriti ih iz jednokratnih projekata u trajne mehanizme upravljanja. Ključna razlika između uspješnih i manje uspješnih reformi često leži u kapacitetu države za provedbu (<em>state capacity</em>) <span class="citation" data-cites="fukuyama2013">(<a href="../references.html#ref-fukuyama2013" role="doc-biblioref">Fukuyama 2011</a>)</span>.</p>
+Fukuyama, Francis. 2011. <em>The Origins of Political Order: From Prehuman Times to the French Revolution</em>. Farrar, Straus; Giroux.
+</div></div><p>Estonija se često ističe kao jedan od najuspješnijih primjera, jer je već od 1990-ih sustavno ulagala u digitalizaciju javne uprave, uz paralelno jačanje administrativnih kapaciteta. Ključ uspjeha nije bio samo u tehnologiji, nego u dosljednoj institucionalizaciji reformi i dugoročnoj strategiji. Zajednički obrazac koji se pojavljuje jest da su najuspješnije bile zemlje koje su uspjele institucionalizirati reforme, odnosno pretvoriti ih iz jednokratnih projekata u trajne mehanizme upravljanja. Ključna razlika između uspješnih i manje uspješnih reformi često leži u kapacitetu države za provedbu (<em>state capacity</em>) <span class="citation" data-cites="fukuyama2013">(<a href="../references.html#ref-fukuyama2013" role="doc-biblioref">Fukuyama 2011.</a>)</span>.</p>
 <p>Sidro koje povlači reforme ujedno je i njihova ranjivost, jer ono što reforme vuče izvana jednom nestane. Kada se to dogodi, najčešće nakon ulaska u Europsku uniju, javlja se <strong>reformski zamor</strong>.</p>
 <div id="def-reformski-zamor" class="theorem definition">
 <p><span class="theorem-title"><strong>Definicija 5</strong></span> <strong>Reformski zamor</strong> je pojava slabljenja reformskog zamaha i poticaja za daljnje promjene nakon što nestane vanjski pritisak (npr. pristupnih pregovora) ili neposredna nagrada (članstvo); bez domaćeg vlasništva nad reformama može dovesti do stagnacije ili djelomičnog nazadovanja postignutih promjena.</p>
@@ -1022,8 +1042,8 @@ Fukuyama, Francis. 2011. <em>The Origins of Political Order: From Prehuman Times
 <section id="pogled-unatrag-kroz-cijelu-knjigu" class="level2">
 <h2 class="anchored" data-anchor-id="pogled-unatrag-kroz-cijelu-knjigu">Pogled unatrag, kroz cijelu knjigu</h2>
 <p>Ovim poglavljem zatvara se put koji je knjiga otvorila u uvodu. Krenuli smo od jednostavne tvrdnje da javne politike oblikuju gotovo svaki važan dio svakodnevnog života i od odbijanja jednako jednostavnog odgovora da rješenje leži u tome da države bude više ili manje. Pravo pitanje, postavljeno na prvim stranicama, glasilo je kakva država, za koje probleme, s kojim instrumentima, pod kojim pravilima i s kakvom odgovornošću. Pet dijelova knjige nije ništa drugo nego pet uzastopnih pokušaja da se to pitanje razloži na dijelove na koje se može odgovoriti.</p>
-<p>Prvi dio postavio je klasično pitanje zašto država uopće intervenira. Alokacijska, distribucijska i stabilizacijska funkcija opisale su uvjete pod kojima tržište samo ne osigurava učinkovit, pravedan ili stabilan ishod, ali su istodobno pokazale da postojanje tržišnog neuspjeha samo otvara mogućnost intervencije, a ne dokazuje da će intervencija biti bolja. Drugi dio okrenuo je perspektivu i upitao tko zapravo donosi te odluke. Teorija javnog izbora, kolektivnog odlučivanja, stranačkog natjecanja, interesnih skupina i birokracije pokazala je da država nije dobrohotni planer izvan društva, nego skup aktera s vlastitim poticajima, pa i sama može proizvesti neučinkovite ishode. Treći dio dodao je dublji sloj jer je pokazao da i tržišta i politika djeluju unutar institucija, pravila igre koja se sporo mijenjaju i koja objašnjavaju zašto iste politike u različitim zemljama daju različite rezultate.</p>
-<p>Četvrti dio spustio je raspravu na razinu prakse, na konkretne instrumente, javnu potrošnju i poreze kojima država stvarno djeluje, te pokazao da izbor instrumenta nije neutralan nego sam raspoređuje troškove, koristi i poticaje. Peti dio konačno se vratio na početnu napetost. Pošto smo vidjeli i zašto država intervenira i kako može zakazati, postavilo se pitanje kako do kvalitetnije države. Odgovor nije bio nijedan veliki recept, nego niz pristupa, od prepoznavanja državnih neuspjeha preko novog javnog menadžmenta i mrežnog upravljanja do vrednovanja politika, a na kraju i samih reformi kao procesa kojim se sve to mijenja.</p>
+<p>Prvi dio postavio je klasično pitanje zašto država uopće intervenira. Alokacijska, distribucijska i stabilizacijska funkcija opisale su uvjete pod kojima tržište samo ne osigurava učinkovit, pravedan ili stabilan ishod, ali su istodobno pokazale da postojanje tržišnog neuspjeha samo otvara mogućnost intervencije, a ne dokazuje da će intervencija biti bolja. Prvi je dio uz te tri funkcije uveo i teoriju oporezivanja, prihodnu stranu istih politika, koja pokazuje tko snosi porezni teret i uz koju cijenu u izgubljenoj učinkovitosti. Drugi dio okrenuo je perspektivu i upitao tko zapravo donosi te odluke. Teorija javnog izbora, kolektivnog odlučivanja, stranačkog natjecanja, interesnih skupina i birokracije pokazala je da država nije dobrohotni planer izvan društva, nego skup aktera s vlastitim poticajima, pa i sama može proizvesti neučinkovite ishode. Treći dio dodao je dublji sloj jer je pokazao da i tržišta i politika djeluju unutar institucija, pravila igre koja se sporo mijenjaju i koja objašnjavaju zašto iste politike u različitim zemljama daju različite rezultate.</p>
+<p>Četvrti dio spustio je raspravu na razinu prakse, na konkretne instrumente, javnu potrošnju i porezne sustave u praksi kojima država stvarno djeluje, te pokazao da izbor instrumenta nije neutralan nego sam raspoređuje troškove, koristi i poticaje. Peti dio konačno se vratio na početnu napetost. Pošto smo vidjeli i zašto država intervenira i kako može zakazati, postavilo se pitanje kako do kvalitetnije države. Odgovor nije bio nijedan veliki recept, nego niz pristupa, od prepoznavanja državnih neuspjeha preko novog javnog menadžmenta i mrežnog upravljanja do vrednovanja politika, a na kraju i samih reformi kao procesa kojim se sve to mijenja.</p>
 <p>Ako postoji jedna nit koja povezuje svih pet dijelova, ona je upravo metoda najavljena u uvodu. Svaku politiku vrijedi gledati kroz tri istodobne perspektive, ekonomsku koja otkriva troškove i poticaje, političku koja otkriva tko i zašto odlučuje, te institucionalnu koja otkriva može li se odluka uopće provesti. Razdvajanje namjere od mehanizma, svrhe od sredstva, ostaje minimalni zahtjev svake ozbiljne analize. Knjiga zato ne završava preporukom da država radi više ili manje, nego spoznajom da je njezina kvaliteta varijabla na koju se može i mora trajno djelovati. Dobra javna politika nije ni vjera u državu ni nepovjerenje prema njoj, nego strpljiv rad na uvjetima pod kojima kolektivne odluke stvaraju stvarnu javnu vrijednost.</p>
 </section>
 <section id="sažetak" class="level2 sazetak-panel">
@@ -1047,6 +1067,46 @@ Fukuyama, Francis. 2011. <em>The Origins of Political Order: From Prehuman Times
 
 
 </main> <!-- /main -->
+<style>
+
+/* "Pitaj AI o ovom poglavlju" — kompaktni padajući izbornik uz naslov poglavlja.
+
+   Mono, minimalan registar, usklađen s uci-s-ai.qmd; verdigris radi i u tamnom modu. */
+
+.ai-cta { margin: .5rem 0 1.5rem;
+
+  font-family: "IBM Plex Mono", ui-monospace, "SF Mono", Menlo, monospace; }
+
+.ai-cta > summary { display: inline-flex; align-items: center; gap: .4rem; cursor: pointer;
+
+  list-style: none; font-size: .8rem; font-weight: 500; letter-spacing: .005em;
+
+  color: #4A6B5C; background: transparent; border: 1px solid rgba(74,107,92,0.5);
+
+  border-radius: 6px; padding: .45rem .8rem; width: max-content;
+
+  transition: background .15s, color .15s, border-color .15s; }
+
+.ai-cta > summary::-webkit-details-marker { display: none; }
+
+.ai-cta > summary:hover,
+
+.ai-cta[open] > summary { background: #4A6B5C; color: #F2EDE3; border-color: #4A6B5C; }
+
+.ai-cta-menu { display: flex; flex-wrap: wrap; gap: .45rem; margin-top: .55rem; }
+
+.ai-cta-menu a { font-family: inherit; font-size: .76rem; font-weight: 500;
+
+  text-decoration: none; color: #4A6B5C; background: transparent;
+
+  border: 1px solid rgba(74,107,92,0.5); border-radius: 6px; padding: .4rem .72rem;
+
+  line-height: 1.2; transition: background .15s, border-color .15s; }
+
+.ai-cta-menu a:hover { background: rgba(74,107,92,0.12); border-color: #4A6B5C; }
+
+</style>
+
 <script>
 
 (function () {
@@ -1367,7 +1427,7 @@ Fukuyama, Francis. 2011. <em>The Origins of Political Order: From Prehuman Times
 
     var path = location.pathname;
 
-    var standalonePages = ["/vodic.html", "/prirucnik.html", "/resursi.html", "/alat.html"];
+    var standalonePages = ["/vodic.html", "/pojmovnik.html", "/prirucnik.html", "/resursi.html", "/alat.html", "/uci-s-ai.html"];
 
     var isStandalone = standalonePages.some(function (p) {
 
@@ -1461,7 +1521,7 @@ Fukuyama, Francis. 2011. <em>The Origins of Political Order: From Prehuman Times
 
   function removePrunedItems() {
 
-    var endings = ["index.html", "vodic.html", "prirucnik.html", "resursi.html", "alat.html"];
+    var endings = ["index.html", "vodic.html", "pojmovnik.html", "prirucnik.html", "resursi.html", "alat.html", "uci-s-ai.html"];
 
     // Podstranice vodiča: bilo koji href oblika .../vodic/NN-*.html
 
@@ -1861,6 +1921,100 @@ Fukuyama, Francis. 2011. <em>The Origins of Political Order: From Prehuman Times
 
   // ----------------------------------------------------------
 
+  // 12. "Pitaj AI o ovom poglavlju" — uz naslov svakog poglavlja ubaci
+
+  //     padajući izbornik koji vodi na /ai/<slug>.md i prefilled asistente
+
+  //     (Track A, notes/ai-export-spec.md). Radi samo na stranicama poglavlja
+
+  //     (/chapters/<slug>.html); preslikava trenutni URL u njegov .md izvoz.
+
+  // ----------------------------------------------------------
+
+  function setupChapterAI() {
+
+    var m = location.pathname.match(/\/chapters\/([^/]+)\.html$/);
+
+    if (!m) return;                                  // samo poglavlja
+
+    var header = document.getElementById("title-block-header");
+
+    var titleEl = header ? header.querySelector("h1.title") : document.querySelector("h1.title");
+
+    if (!titleEl || document.querySelector(".ai-cta")) return;
+
+
+
+    var mdHref  = location.pathname.replace(/\/chapters\/([^/]+)\.html$/, "/ai/$1.md");
+
+    var uciHref = location.pathname.replace(/\/chapters\/[^/]+\.html$/, "/uci-s-ai.html");
+
+    var absMd   = location.origin + mdHref;
+
+    // Kratka uputa (mora ostati kratka jer ide u URL); usklađena s manifest.promptShort
+
+    // iz R/build-ai-exports.R. Puna mentorska uputa živi na stranici „Uči s AI”.
+
+    var tutor =
+
+      "Ti si moj mentor za udžbenik „Sve što želite znati o državi i javnim politikama u " +
+
+      "Hrvatskoj” (javne financije, teorija javnog izbora i javne politike). Oslanjaj se " +
+
+      "isključivo na priloženi tekst, poglavlja imenuj riječima, a ne brojem, i jasno reci " +
+
+      "„Toga nema u priloženom tekstu” kad odgovora nema; ne izmišljaj brojke, izvore ni " +
+
+      "citate. Objašnjavaj korak po korak na hrvatskom, primjerima i analogijama, prilagodi " +
+
+      "se mojoj razini i na zahtjev sažmi gradivo, izradi kviz, kartice ili plan učenja. Na " +
+
+      "početku me pitaj što učim i koji mi je cilj.";
+
+    var q = encodeURIComponent(
+
+      tutor +
+
+      "\n\nTekst poglavlja nalazi se na ovoj poveznici, pročitaj ga i odgovaraj na temelju njega: " +
+
+      absMd);
+
+
+
+    var det = document.createElement("details");
+
+    det.className = "ai-cta";
+
+    det.innerHTML =
+
+      '<summary>🤖 Pitaj AI o ovom poglavlju</summary>' +
+
+      '<div class="ai-cta-menu">' +
+
+        '<a href="' + mdHref + '" download>⬇ Preuzmi tekst (.md)</a>' +
+
+        '<a href="https://claude.ai/new?q=' + q + '" target="_blank" rel="noopener">Otvori u Claudeu</a>' +
+
+        '<a href="https://chatgpt.com/?q=' + q + '" target="_blank" rel="noopener">Otvori u ChatGPT-u</a>' +
+
+        '<a href="' + uciHref + '">Sve opcije i cijela knjiga →</a>' +
+
+      '</div>';
+
+
+
+    // ubaci odmah iza naslovnog bloka (ili iza samog naslova)
+
+    var anchor = header || titleEl;
+
+    anchor.insertAdjacentElement("afterend", det);
+
+  }
+
+
+
+  // ----------------------------------------------------------
+
   // Bootstrap
 
   // ----------------------------------------------------------
@@ -1882,6 +2036,8 @@ Fukuyama, Francis. 2011. <em>The Origins of Political Order: From Prehuman Times
     try { setupOjsPanels(); } catch (e) {}
 
     try { setupProseCollapsibles(); } catch (e) {}
+
+    try { setupChapterAI(); } catch (e) {}
 
   }
 
@@ -1976,13 +2132,14 @@ window._ojs.runtime.interpretFromScriptTags();
       e.clearSelection();
     }
     const getTextToCopy = function(trigger) {
-        const codeEl = trigger.previousElementSibling.cloneNode(true);
-        for (const childEl of codeEl.children) {
-          if (isCodeAnnotation(childEl)) {
-            childEl.remove();
-          }
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
         }
-        return codeEl.innerText;
+      }
+      return codeEl.innerText;
     }
     const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
       text: getTextToCopy
@@ -2394,8 +2551,8 @@ window._ojs.runtime.interpretFromScriptTags();
       </a>
   </div>
 </nav><div class="modal fade" id="quarto-embedded-source-code-modal" tabindex="-1" aria-labelledby="quarto-embedded-source-code-modal-label" aria-hidden="true"><div class="modal-dialog modal-dialog-scrollable"><div class="modal-content"><div class="modal-header"><h5 class="modal-title" id="quarto-embedded-source-code-modal-label">Source Code</h5><button class="btn-close" data-bs-dismiss="modal"></button></div><div class="modal-body"><div class="">
-<div class="sourceCode" id="cb5" data-shortcodes="false"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
-<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="an">title:</span><span class="co"> "Reforme u javnom sektoru — što funkcionira i zašto?"</span></span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb5" data-shortcodes="false"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="an">title:</span><span class="co"> "Reforme u javnom sektoru"</span></span>
 <span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
 <span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a>::: {.vodic-panel}</span>
@@ -2683,9 +2840,9 @@ window._ojs.runtime.interpretFromScriptTags();
 <span id="cb5-297"><a href="#cb5-297" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb5-298"><a href="#cb5-298" aria-hidden="true" tabindex="-1"></a>Ovim poglavljem zatvara se put koji je knjiga otvorila u uvodu. Krenuli smo od jednostavne tvrdnje da javne politike oblikuju gotovo svaki važan dio svakodnevnog života i od odbijanja jednako jednostavnog odgovora da rješenje leži u tome da države bude više ili manje. Pravo pitanje, postavljeno na prvim stranicama, glasilo je kakva država, za koje probleme, s kojim instrumentima, pod kojim pravilima i s kakvom odgovornošću. Pet dijelova knjige nije ništa drugo nego pet uzastopnih pokušaja da se to pitanje razloži na dijelove na koje se može odgovoriti.</span>
 <span id="cb5-299"><a href="#cb5-299" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb5-300"><a href="#cb5-300" aria-hidden="true" tabindex="-1"></a>Prvi dio postavio je klasično pitanje zašto država uopće intervenira. Alokacijska, distribucijska i stabilizacijska funkcija opisale su uvjete pod kojima tržište samo ne osigurava učinkovit, pravedan ili stabilan ishod, ali su istodobno pokazale da postojanje tržišnog neuspjeha samo otvara mogućnost intervencije, a ne dokazuje da će intervencija biti bolja. Drugi dio okrenuo je perspektivu i upitao tko zapravo donosi te odluke. Teorija javnog izbora, kolektivnog odlučivanja, stranačkog natjecanja, interesnih skupina i birokracije pokazala je da država nije dobrohotni planer izvan društva, nego skup aktera s vlastitim poticajima, pa i sama može proizvesti neučinkovite ishode. Treći dio dodao je dublji sloj jer je pokazao da i tržišta i politika djeluju unutar institucija, pravila igre koja se sporo mijenjaju i koja objašnjavaju zašto iste politike u različitim zemljama daju različite rezultate.</span>
+<span id="cb5-300"><a href="#cb5-300" aria-hidden="true" tabindex="-1"></a>Prvi dio postavio je klasično pitanje zašto država uopće intervenira. Alokacijska, distribucijska i stabilizacijska funkcija opisale su uvjete pod kojima tržište samo ne osigurava učinkovit, pravedan ili stabilan ishod, ali su istodobno pokazale da postojanje tržišnog neuspjeha samo otvara mogućnost intervencije, a ne dokazuje da će intervencija biti bolja. Prvi je dio uz te tri funkcije uveo i teoriju oporezivanja, prihodnu stranu istih politika, koja pokazuje tko snosi porezni teret i uz koju cijenu u izgubljenoj učinkovitosti. Drugi dio okrenuo je perspektivu i upitao tko zapravo donosi te odluke. Teorija javnog izbora, kolektivnog odlučivanja, stranačkog natjecanja, interesnih skupina i birokracije pokazala je da država nije dobrohotni planer izvan društva, nego skup aktera s vlastitim poticajima, pa i sama može proizvesti neučinkovite ishode. Treći dio dodao je dublji sloj jer je pokazao da i tržišta i politika djeluju unutar institucija, pravila igre koja se sporo mijenjaju i koja objašnjavaju zašto iste politike u različitim zemljama daju različite rezultate.</span>
 <span id="cb5-301"><a href="#cb5-301" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb5-302"><a href="#cb5-302" aria-hidden="true" tabindex="-1"></a>Četvrti dio spustio je raspravu na razinu prakse, na konkretne instrumente, javnu potrošnju i poreze kojima država stvarno djeluje, te pokazao da izbor instrumenta nije neutralan nego sam raspoređuje troškove, koristi i poticaje. Peti dio konačno se vratio na početnu napetost. Pošto smo vidjeli i zašto država intervenira i kako može zakazati, postavilo se pitanje kako do kvalitetnije države. Odgovor nije bio nijedan veliki recept, nego niz pristupa, od prepoznavanja državnih neuspjeha preko novog javnog menadžmenta i mrežnog upravljanja do vrednovanja politika, a na kraju i samih reformi kao procesa kojim se sve to mijenja.</span>
+<span id="cb5-302"><a href="#cb5-302" aria-hidden="true" tabindex="-1"></a>Četvrti dio spustio je raspravu na razinu prakse, na konkretne instrumente, javnu potrošnju i porezne sustave u praksi kojima država stvarno djeluje, te pokazao da izbor instrumenta nije neutralan nego sam raspoređuje troškove, koristi i poticaje. Peti dio konačno se vratio na početnu napetost. Pošto smo vidjeli i zašto država intervenira i kako može zakazati, postavilo se pitanje kako do kvalitetnije države. Odgovor nije bio nijedan veliki recept, nego niz pristupa, od prepoznavanja državnih neuspjeha preko novog javnog menadžmenta i mrežnog upravljanja do vrednovanja politika, a na kraju i samih reformi kao procesa kojim se sve to mijenja.</span>
 <span id="cb5-303"><a href="#cb5-303" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb5-304"><a href="#cb5-304" aria-hidden="true" tabindex="-1"></a>Ako postoji jedna nit koja povezuje svih pet dijelova, ona je upravo metoda najavljena u uvodu. Svaku politiku vrijedi gledati kroz tri istodobne perspektive, ekonomsku koja otkriva troškove i poticaje, političku koja otkriva tko i zašto odlučuje, te institucionalnu koja otkriva može li se odluka uopće provesti. Razdvajanje namjere od mehanizma, svrhe od sredstva, ostaje minimalni zahtjev svake ozbiljne analize. Knjiga zato ne završava preporukom da država radi više ili manje, nego spoznajom da je njezina kvaliteta varijabla na koju se može i mora trajno djelovati. Dobra javna politika nije ni vjera u državu ni nepovjerenje prema njoj, nego strpljiv rad na uvjetima pod kojima kolektivne odluke stvaraju stvarnu javnu vrijednost.</span>
 <span id="cb5-305"><a href="#cb5-305" aria-hidden="true" tabindex="-1"></a></span>
@@ -2704,7 +2861,7 @@ window._ojs.runtime.interpretFromScriptTags();
 <span id="cb5-318"><a href="#cb5-318" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb5-319"><a href="#cb5-319" aria-hidden="true" tabindex="-1"></a>Otvorite interaktivni graf iznad i razmislite o vezi između ova dva uvida. Naknada u zadatku ne mijenja ukupan reformski višak, nego raspodjelu rizika među biračima, dok klizač na grafu mijenja brzinu reforme pri zadanom kapacitetu. Objasnite zašto i kompenzacija i ispravno sekvenciranje djeluju kroz isti kanal, to jest kroz smanjenje neizvjesnosti i otpora bez promjene ekonomske supstance mjere, i što to otkriva o tome zašto agregatno korisne reforme tako često ostaju blokirane.</span>
 <span id="cb5-320"><a href="#cb5-320" aria-hidden="true" tabindex="-1"></a>:::</span>
-</code><button title="Copy to Clipboard" class="code-copy-button" data-in-quarto-modal=""><i class="bi"></i></button></pre></div>
+</code></pre></div><button title="Copy to Clipboard" class="code-copy-button" data-in-quarto-modal=""><i class="bi"></i></button></div>
 </div></div></div></div></div>
 </div> <!-- /content -->
 <footer class="footer">

@@ -294,7 +294,7 @@ Srodan fenomen jest **regulatorno zarobljavanje**, u kojemu regulator osnovan ra
 
 Rasprava o birokraciji često se pojednostavljuje na pitanje treba li država imati „više" ili „manje" administracije. Ključni problem nije sama veličina birokracije, nego njezina kvaliteta, učinkovitost i odgovornost. Moderna država ne može funkcionirati bez profesionalne javne uprave. Netko mora prikupljati poreze, provoditi zakone, organizirati javne usluge, nadzirati tržišta, upravljati krizama i osiguravati kontinuitet države neovisno o promjenama političke vlasti.
 
-Prije nego što napustimo pitanje veličine, vrijedi vidjeti kolika je hrvatska javna uprava u usporedbi s drugima. Mjereno udjelom zaposlenih u općoj državi u ukupnoj zaposlenosti, Hrvatska je iznad prosjeka OECD-a i bliže nordijskim zemljama nego onima s malom upravom poput Njemačke ili Japana. Sama brojka zato ne potvrđuje uobičajenu sliku o premaloj državi, nego pomiče pitanje s veličine na to što ta uprava isporučuje. Slika koja slijedi prikazuje taj udio za odabrane zemlje.
+Prije nego što napustimo pitanje veličine, vrijedi vidjeti kolika je hrvatska javna uprava u usporedbi s drugima. Mjereno udjelom zaposlenih u općoj državi u ukupnoj zaposlenosti, Hrvatska je iznad prosjeka OECD-a i bliže nordijskim zemljama nego onima s malom upravom poput Njemačke ili Japana. Sama brojka zato ne potvrđuje uobičajenu sliku o premaloj državi, nego pomiče pitanje s veličine na to što ta uprava isporučuje.
 
 ::: {.content-visible when-format="html"}
 ```{ojs}
@@ -362,6 +362,8 @@ ggplot(jz, aes(v, z, fill = grp)) +
   theme_pubfin()
 ```
 :::
+
+Slika potvrđuje da Hrvatska s udjelom od 22,8 % stoji iznad prosjeka OECD-a i bliže nordijskoj razini nego zemljama s malom upravom. Po veličini, dakle, hrvatska uprava nije problem koji bi se rješavao pukim smanjenjem. Mjerilo koje stvarno odlučuje nije broj zaposlenih, nego ono na što su upozorili Evans i Rauch, jest li ta uprava meritokratski ustrojena i sposobna svoje odluke pretvoriti u predvidivu provedbu, odnosno raspolaže li državnim kapacitetom. Upravo zato i reforme o kojima govorimo u posljednjem dijelu knjige ne bi trebale ciljati na rezanje administracije, nego na podizanje njezine kvalitete, što je i središnja teza ovog poglavlja da cilj nije manje birokracije, nego bolja.
 
 Klasičan, weberovski pogled podsjeća nas da je birokracija važan civilizacijski napredak. Ona štiti građane od samovolje, klijentelizma i nejednakog tretmana. S druge strane, teorija javnog izbora upozorava da birokraciju ne smijemo idealizirati jer javne institucije djeluju unutar sustava poticaja i mogu težiti većim proračunima, širim nadležnostima i očuvanju vlastitog statusa.
 

@@ -13,7 +13,7 @@ format:
 ```{=html}
 <header class="vd-hub-head">
   <span class="vd-hub-kicker">Vodič · 22 mentalnih mapa</span>
-  <h1 class="vd-hub-title">Knjiga koju pročitate očima</h1>
+  <h1 class="vd-hub-title">Zapamti u par slika</h1>
   <p class="vd-hub-lede">Vizualna slikovnica knjige. Jedno poglavlje, jedna stranica, jedna mentalna mapa koju pročitate za dvije minute. Ista priča kao u udžbeniku, ispričana drugim glasom. Krenite redom ili otvorite ono što vas zanima.</p>
 </header>
 

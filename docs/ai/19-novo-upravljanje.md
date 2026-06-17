@@ -86,6 +86,10 @@ Sve te suradničke i participativne forme počivaju na jednom zajedničkom temel
 
 *Slika. Udio građana koji su skloni vjerovati nacionalnoj vladi (%), odabrane zemlje, jesen 2024. Zlatno je istaknuta Hrvatska, a isprekidana linija označava prosjek EU27. Izvor: Standardni Eurobarometar 102 (jesen 2024.).*
 
+Slika smješta Hrvatsku u donju polovicu. S udjelom od oko 28 % povjerenja u nacionalnu vladu nalazi se ispod prosjeka Unije, ali i osjetno iznad zemalja s najnižim povjerenjem poput Francuske, Bugarske i Grčke, dok je na vrhu ljestvice Luksemburg. Ta razina nije katastrofalna, no jest ograničenje za svaki model upravljanja koji se oslanja na dragovoljnu suradnju aktera. Vraćamo se time na temelj s kojeg smo i krenuli, jer savjetovanja, partnerstva i mreže grade legitimnost utoliko lakše ukoliko građani vjeruju da je postupak iskren, a tamo gdje je povjerenje nisko i najbolje zamišljeni participativni mehanizmi teže pretvaraju glas građana u prihvaćenu odluku.
+
+Taj nalaz valja čitati zajedno s onim iz poglavlja o novom javnom menadžmentu. Ondje smo vidjeli da Hrvatska raspolaže razmjerno solidnom digitalnom infrastrukturom i da po razvijenosti e-uprave stoji iznad europskog prosjeka. Spoji li se to dvoje, dobiva se poučan kontrast jer dobra tehnička podloga i nisko povjerenje idu ruku pod ruku. Suradničko upravljanje pokazuje da infrastruktura sama po sebi ne stvara povjerenje, pa zemlja može imati moderne digitalne usluge, a istodobno slab temelj na kojem počiva svaka suradnja građana i vlasti.
+
 ## Digitalizacija i nova država
 
 Digitalizacija dodatno mijenja raspravu o novom upravljanju. Suvremena e-uprava, digitalni identitet, interoperabilne baze podataka, elektronički potpisi i digitalne javne usluge omogućuju državi da bude učinkovitija, brža i dostupnija. Takav model javne uprave sve se češće naziva **digitalnom državom**. Primjeri poput Estonije pokazuju da digitalizacija može biti snažan instrument modernizacije ako je povezana s institucionalnom reformom, jasnim pravilima i povjerenjem građana (Margetts, 2013).

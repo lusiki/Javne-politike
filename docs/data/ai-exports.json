@@ -5,7 +5,8 @@
     "description": "Praktični i interaktivni udžbenik o javnim financijama, teoriji javnog izbora i javnim politikama u Hrvatskoj — uloga države, alokacija, redistribucija, institucije i reforme.",
     "url": "https://lusiki.github.io/Javne-politike"
   },
-  "prompt": "Ti si mentor za udžbenik „Sve što želite znati o državi i javnim politikama u Hrvatskoj”. Odgovaraj na hrvatskom, oslanjaj se samo na priloženi tekst, citiraj poglavlja i reci „ne znam” ako odgovora nema u tekstu.",
+  "prompt": "Ti si moj osobni mentor i suputnik u učenju za sveučilišni udžbenik „Sve što želite znati o državi i javnim politikama u Hrvatskoj” (autori Milan Deskar-Škrbić, Petra Palić i Luka Šikić; mrežno izdanje na lusiki.github.io/Javne-politike). Udžbenik obrađuje javne financije, teoriju javnog izbora i javne politike. Uz ovu uputu prilažem ti čisti tekst jednog poglavlja, jednog dijela knjige (DIO) ili cijele knjige. Taj priloženi tekst tvoj je jedini izvor istine. Ja sam student koji uči iz njega, a ti si moj strpljiv, topao i ohrabrujući vodič, kao dobar asistent na konzultacijama.\n\nKAKO RADIŠ\nOdgovaraš isključivo na hrvatskom jeziku (hr-HR), jasno i prirodno, ali stručno, koristeći nazivlje točno onako kako ga knjiga uvodi (uz izvorni engleski naziv u zagradi i kurzivu, onako kako to čini i sama knjiga). Objašnjavaš korak po korak, gradiš intuiciju prije formalizma, daješ primjere i analogije iz svakodnevice te povezuješ pojmove kroz knjigu (primjerice tržišne neuspjehe iz poglavlja o alokacijskoj funkciji s državnim neuspjesima iz dijela o kvalitetnijim politikama). Prilagođavaš dubinu mojoj razini; ako pogriješim ili nešto ne razumijem, vraćaš se korak unatrag i objašnjavaš drukčije. Smiješ me voditi i sokratski, kratkim pitanjima koja me navode na odgovor, i povremeno provjeriš jesam li sve dobro razumio prije nego što nastaviš.\n\nUTEMELJENOST I POŠTENJE (najvažnije pravilo)\nSve tvrdnje, brojke, definicije i zaključke crpiš iz priloženog teksta. Na gradivo, poglavlje ili odjeljak upućuješ riječima („u poglavlju o birokraciji”, „u odjeljku o Pareto učinkovitosti”), nikada brojem. Kad nečega nema u priloženom tekstu, otvoreno kažeš „Toga nema u priloženom tekstu” i tek onda, ako misliš da pomaže, ponudiš opće znanje uz jasnu oznaku „Izvan knjige (opće znanje)” i napomenu da to treba samostalno provjeriti. Ako priložim samo jedno poglavlje, a pitanje se tiče drugog dijela knjige, reci da tog sadržaja nema u tekstu i predloži koje bih poglavlje trebao priložiti. Nikada ne izmišljaš brojke, postotke, godine, imena autora, studije ni citate; ako nisi siguran, to priznaš umjesto da nagađaš, i knjizi ne pripisuješ zaključke koje ona ne donosi.\n\nŠTO SVE MOŽEŠ NA ZAHTJEV\nSažeti poglavlje ili dio na ključne teze, definicije i mehanizme; izraditi pitanja za provjeru i kvizove (višestruki izbor, kratki odgovor, esej) s rješenjima i obrazloženjima; napraviti kartice za učenje; sastaviti plan učenja do ispita; usporediti i razgraničiti srodne koncepte, po potrebi u tablici; te me pripremiti za ispit simulacijom pitanja s povratnom informacijom. Sav taj materijal izvodiš iz priloženog teksta.\n\nFORMAT ODGOVORA\nOdgovaraš strukturirano, jezgrovito, ali potpuno. Kreni od izravnog odgovora ili jednostavne srži, zatim razradi s uporištem u tekstu, ondje gdje pomaže kratkim popisom ili tablicom. Ključne pojmove podebljaš pri prvom spominjanju. Na kraju ponudi jedan korak dalje, primjerice produbljivanje pojma, kratku provjeru razumijevanja ili povezano poglavlje koje bih mogao priložiti.\n\nGRANICE\nOstaješ na temama ovog udžbenika i unutar njegova okvira. Podsjećaš me, kad je prikladno, da si pomagalo u učenju, da možeš pogriješiti i da važne tvrdnje, brojke i definicije provjerim u samom tekstu knjige.\n\nZa početak me pozdravi, u jednoj rečenici potvrdi što je u priloženom tekstu i pitaj me odakle želim krenuti, koliko mi je tema već poznata i koji mi je cilj (razumijevanje, ponavljanje ili priprema za ispit).",
+  "promptShort": "Ti si moj mentor za udžbenik „Sve što želite znati o državi i javnim politikama u Hrvatskoj” (javne financije, teorija javnog izbora i javne politike). Oslanjaj se isključivo na priloženi tekst, poglavlja imenuj riječima, a ne brojem, i jasno reci „Toga nema u priloženom tekstu” kad odgovora nema; ne izmišljaj brojke, izvore ni citate. Objašnjavaj korak po korak na hrvatskom, primjerima i analogijama, prilagodi se mojoj razini i na zahtjev sažmi gradivo, izradi kviz, kartice ili plan učenja. Na početku me pitaj što učim i koji mi je cilj.",
   "full": {
     "mdUrl": "https://lusiki.github.io/Javne-politike/llms-full.txt",
     "mapUrl": "https://lusiki.github.io/Javne-politike/llms.txt"
@@ -55,8 +56,8 @@
       "dioLabel": "DIO I: KLASIČNA ANALIZA JAVNIH FINANCIJA I POLITIKA",
       "url": "https://lusiki.github.io/Javne-politike/chapters/01-uloga-drzave.html",
       "mdUrl": "https://lusiki.github.io/Javne-politike/ai/01-uloga-drzave.md",
-      "words": 4069,
-      "tokensApprox": 6510
+      "words": 4119,
+      "tokensApprox": 6590
     },
     {
       "slug": "02-alokacijska-funkcija",
@@ -75,8 +76,8 @@
       "dioLabel": "DIO I: KLASIČNA ANALIZA JAVNIH FINANCIJA I POLITIKA",
       "url": "https://lusiki.github.io/Javne-politike/chapters/03-distribucijska-funkcija.html",
       "mdUrl": "https://lusiki.github.io/Javne-politike/ai/03-distribucijska-funkcija.md",
-      "words": 5036,
-      "tokensApprox": 8058
+      "words": 5026,
+      "tokensApprox": 8042
     },
     {
       "slug": "04-stabilizacijska-funkcija",
@@ -95,8 +96,8 @@
       "dioLabel": "DIO I: KLASIČNA ANALIZA JAVNIH FINANCIJA I POLITIKA",
       "url": "https://lusiki.github.io/Javne-politike/chapters/05-porezi.html",
       "mdUrl": "https://lusiki.github.io/Javne-politike/ai/05-porezi.md",
-      "words": 7225,
-      "tokensApprox": 11560
+      "words": 7302,
+      "tokensApprox": 11683
     },
     {
       "slug": "06-javni-izbor",
@@ -105,8 +106,8 @@
       "dioLabel": "DIO II: JAVNI IZBOR – ŠTO, KAKO I ZAŠTO?",
       "url": "https://lusiki.github.io/Javne-politike/chapters/06-javni-izbor.html",
       "mdUrl": "https://lusiki.github.io/Javne-politike/ai/06-javni-izbor.md",
-      "words": 4088,
-      "tokensApprox": 6541
+      "words": 4129,
+      "tokensApprox": 6606
     },
     {
       "slug": "06a-teorija-igara",
@@ -135,8 +136,8 @@
       "dioLabel": "DIO II: JAVNI IZBOR – ŠTO, KAKO I ZAŠTO?",
       "url": "https://lusiki.github.io/Javne-politike/chapters/08-stranke-izbori.html",
       "mdUrl": "https://lusiki.github.io/Javne-politike/ai/08-stranke-izbori.md",
-      "words": 3635,
-      "tokensApprox": 5816
+      "words": 3730,
+      "tokensApprox": 5968
     },
     {
       "slug": "09-interesne-skupine",
@@ -145,8 +146,8 @@
       "dioLabel": "DIO II: JAVNI IZBOR – ŠTO, KAKO I ZAŠTO?",
       "url": "https://lusiki.github.io/Javne-politike/chapters/09-interesne-skupine.html",
       "mdUrl": "https://lusiki.github.io/Javne-politike/ai/09-interesne-skupine.md",
-      "words": 4736,
-      "tokensApprox": 7578
+      "words": 4795,
+      "tokensApprox": 7672
     },
     {
       "slug": "10-birokracija",
@@ -155,8 +156,8 @@
       "dioLabel": "DIO II: JAVNI IZBOR – ŠTO, KAKO I ZAŠTO?",
       "url": "https://lusiki.github.io/Javne-politike/chapters/10-birokracija.html",
       "mdUrl": "https://lusiki.github.io/Javne-politike/ai/10-birokracija.md",
-      "words": 4571,
-      "tokensApprox": 7314
+      "words": 4669,
+      "tokensApprox": 7470
     },
     {
       "slug": "11-institucionalna-ekonomika",
@@ -165,8 +166,8 @@
       "dioLabel": "DIO III: NOVA INSTITUCIONALNA I KONSTITUCIONALNA EKONOMIKA",
       "url": "https://lusiki.github.io/Javne-politike/chapters/11-institucionalna-ekonomika.html",
       "mdUrl": "https://lusiki.github.io/Javne-politike/ai/11-institucionalna-ekonomika.md",
-      "words": 4815,
-      "tokensApprox": 7704
+      "words": 4996,
+      "tokensApprox": 7994
     },
     {
       "slug": "12-konstitucionalna-ekonomika",
@@ -175,8 +176,8 @@
       "dioLabel": "DIO III: NOVA INSTITUCIONALNA I KONSTITUCIONALNA EKONOMIKA",
       "url": "https://lusiki.github.io/Javne-politike/chapters/12-konstitucionalna-ekonomika.html",
       "mdUrl": "https://lusiki.github.io/Javne-politike/ai/12-konstitucionalna-ekonomika.md",
-      "words": 4770,
-      "tokensApprox": 7632
+      "words": 4951,
+      "tokensApprox": 7922
     },
     {
       "slug": "13-instrumenti",
@@ -195,8 +196,8 @@
       "dioLabel": "DIO IV: JAVNE FINANCIJE I JAVNE POLITIKE U PRAKSI",
       "url": "https://lusiki.github.io/Javne-politike/chapters/14-javna-potrosnja.html",
       "mdUrl": "https://lusiki.github.io/Javne-politike/ai/14-javna-potrosnja.md",
-      "words": 6328,
-      "tokensApprox": 10125
+      "words": 6531,
+      "tokensApprox": 10450
     },
     {
       "slug": "15-porezi-praksa",
@@ -205,8 +206,8 @@
       "dioLabel": "DIO IV: JAVNE FINANCIJE I JAVNE POLITIKE U PRAKSI",
       "url": "https://lusiki.github.io/Javne-politike/chapters/15-porezi-praksa.html",
       "mdUrl": "https://lusiki.github.io/Javne-politike/ai/15-porezi-praksa.md",
-      "words": 7719,
-      "tokensApprox": 12350
+      "words": 8042,
+      "tokensApprox": 12867
     },
     {
       "slug": "16-eu-javne-financije",
@@ -215,8 +216,8 @@
       "dioLabel": "DIO IV: JAVNE FINANCIJE I JAVNE POLITIKE U PRAKSI",
       "url": "https://lusiki.github.io/Javne-politike/chapters/16-eu-javne-financije.html",
       "mdUrl": "https://lusiki.github.io/Javne-politike/ai/16-eu-javne-financije.md",
-      "words": 8637,
-      "tokensApprox": 13819
+      "words": 8807,
+      "tokensApprox": 14091
     },
     {
       "slug": "17-drzavni-neuspjesi",
@@ -235,8 +236,8 @@
       "dioLabel": "DIO V: KAKO DO KVALITETNIJIH JAVNIH POLITIKA?",
       "url": "https://lusiki.github.io/Javne-politike/chapters/18-novi-javni-menadzment.html",
       "mdUrl": "https://lusiki.github.io/Javne-politike/ai/18-novi-javni-menadzment.md",
-      "words": 3848,
-      "tokensApprox": 6157
+      "words": 3994,
+      "tokensApprox": 6390
     },
     {
       "slug": "19-novo-upravljanje",
@@ -245,8 +246,8 @@
       "dioLabel": "DIO V: KAKO DO KVALITETNIJIH JAVNIH POLITIKA?",
       "url": "https://lusiki.github.io/Javne-politike/chapters/19-novo-upravljanje.html",
       "mdUrl": "https://lusiki.github.io/Javne-politike/ai/19-novo-upravljanje.md",
-      "words": 3278,
-      "tokensApprox": 5245
+      "words": 3462,
+      "tokensApprox": 5539
     },
     {
       "slug": "20-cba-evaluacija",

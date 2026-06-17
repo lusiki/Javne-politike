@@ -38,6 +38,8 @@ Sindikati su najjasniji primjer te logike. Koliko će se radnika učlaniti ovisi
 
 *Slika. Sindikalna gustoća (udio učlanjenih) i pokrivenost kolektivnim ugovorima (udio obuhvaćenih), odabrane zemlje, % zaposlenih. Razmak između dviju točaka mjera je slobodnog jahanja, najveći u Francuskoj. Izvor: OECD/AIAS ICTWSS baza; vrijednosti su najnovije dostupne po zemlji (Hrvatska 2014.–2018., Njemačka pokrivenost približno).*
 
+Hrvatska se zlatno istaknuta smješta točno na onaj raspon koji Olsonova logika predviđa, s gustoćom od oko 21 % i pokrivenošću od oko 53 %, dakle između nordijskog modela u kojem selektivni poticaji Ghent-sustava drže članstvo visokim i francuskog modela u kojem zakonsko proširenje ugovora na sve zaposlene podiže pokrivenost iznad 90 %, ali poticaj za učlanjenje gotovo ukida.
+
 ## Digitalno organiziranje i Olsonova logika
 
 Olsonova ključna varijabla bio je trošak organiziranja, a upravo taj trošak digitalne platforme korjenito snižavaju. Pozvati tisuće ljudi na prosvjed, prikupiti potpise ili uskladiti zajedničku akciju nekada je tražilo skupu organizaciju s uredima, stalnim članstvom i profesionalnim aparatom. Danas isto mogu pokrenuti pojedinci povezani mrežom, gotovo bez troška i bez središnjeg vodstva, dijeljenjem poruke koju svatko prilagodi sebi. Zbog toga velike i raspršene skupine, za koje je Olson predviđao da će ostati neorganizirane, ponekad uspijevaju vrlo brzo mobilizirati golem broj ljudi bez ijedne formalne organizacije, pojava koju se naziva **povezanim djelovanjem** (*connective action*) (Bennett, 2013). Mrežne peticije, kampanje oko jednog hashtaga i nagle donacije pristigle u danima nakon nekog događaja primjeri su koje stara teorija teško objašnjava.

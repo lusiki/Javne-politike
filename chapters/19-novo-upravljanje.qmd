@@ -147,7 +147,7 @@ pv$z <- factor(pv$z, levels = rev(pv$z))
 ggplot(pv, aes(v, z, fill = grp)) +
   geom_col(width = 0.72) +
   geom_vline(xintercept = 33, linetype = "dashed", color = "#8C8C8C", linewidth = 0.5) +
-  annotate("text", x = 33, y = 8, label = "EU27 33", hjust = -0.05, vjust = 0,
+  annotate("text", x = 33, y = 8, label = "EU27 33 %", hjust = -0.05, vjust = 0,
            size = 2.8, color = "#6B6357") +
   geom_text(aes(label = paste0(v, " %")), hjust = -0.2, size = 2.9, color = "#3A332D") +
   scale_fill_manual(values = c("ostalo" = "#4A5568", "HR" = "#C8942D"), guide = "none") +
@@ -156,6 +156,10 @@ ggplot(pv, aes(v, z, fill = grp)) +
   theme_pubfin()
 ```
 :::
+
+Slika smješta Hrvatsku u donju polovicu. S udjelom od oko 28 % povjerenja u nacionalnu vladu nalazi se ispod prosjeka Unije, ali i osjetno iznad zemalja s najnižim povjerenjem poput Francuske, Bugarske i Grčke, dok je na vrhu ljestvice Luksemburg. Ta razina nije katastrofalna, no jest ograničenje za svaki model upravljanja koji se oslanja na dragovoljnu suradnju aktera. Vraćamo se time na temelj s kojeg smo i krenuli, jer savjetovanja, partnerstva i mreže grade legitimnost utoliko lakše ukoliko građani vjeruju da je postupak iskren, a tamo gdje je povjerenje nisko i najbolje zamišljeni participativni mehanizmi teže pretvaraju glas građana u prihvaćenu odluku.
+
+Taj nalaz valja čitati zajedno s onim iz poglavlja o novom javnom menadžmentu. Ondje smo vidjeli da Hrvatska raspolaže razmjerno solidnom digitalnom infrastrukturom i da po razvijenosti e-uprave stoji iznad europskog prosjeka. Spoji li se to dvoje, dobiva se poučan kontrast jer dobra tehnička podloga i nisko povjerenje idu ruku pod ruku. Suradničko upravljanje pokazuje da infrastruktura sama po sebi ne stvara povjerenje, pa zemlja može imati moderne digitalne usluge, a istodobno slab temelj na kojem počiva svaka suradnja građana i vlasti.
 
 ## Digitalizacija i nova država
 

@@ -24,13 +24,13 @@ U ranim fazama razvoja javnih financija fokus ekonomista bio je gotovo isključi
 
 Kako pokazuju povijesni podaci, u razdoblju od kraja 19. do početka 20. stoljeća javna potrošnja u razvijenim zemljama iznosila je tek oko 10 % BDP-a [@tanzi2000]. Međutim, to ne znači da su ta društva bila manje razvijena, već da država nije obavljala funkcije koje danas smatramo standardnima, poput masovnog obrazovanja, javnog zdravstva, socijalne sigurnosti ili aktivne politike zapošljavanja.
 
-Dugoročni podaci taj rast čine opipljivim. Slika koja slijedi spaja povijesne procjene Tanzija i Schuknechta s modernim nizom Eurostata, pa lijevi grafikon prati prosjek sedamnaest razvijenih zemalja od 1870. do danas, dok desni izdvaja noviji period u kojem se Hrvatska može usporediti s pojedinim članicama Unije. Prosječni udio javne potrošnje narastao je s približno 10 % BDP-a u kasnom 19. stoljeću na blizu 45 % potkraj 20. stoljeća, gdje se otad uglavnom zadržava, a Hrvatska se cijelo razdoblje kreće blizu ili neznatno iznad tog prosjeka.
+Dugoročni podaci taj rast čine opipljivim. Spoje li se povijesne procjene Tanzija i Schuknechta s modernim nizom Eurostata, lijevi grafikon prati prosjek sedamnaest razvijenih zemalja od 1870. do danas, dok desni izdvaja noviji period u kojem se Hrvatska može usporediti s pojedinim članicama Unije. Prosječni udio javne potrošnje narastao je s približno 10 % BDP-a u kasnom 19. stoljeću na blizu 45 % potkraj 20. stoljeća, gdje se otad uglavnom zadržava, a Hrvatska se cijelo razdoblje kreće blizu ili neznatno iznad tog prosjeka.
 
 ::: {.content-visible when-format="html"}
 ```{ojs}
 //| echo: false
 //| label: fig-longrun-rashodi
-//| fig-cap: "Javna potrošnja kroz dugi rok. Lijevo: prosjek 17 razvijenih zemalja od 1870. (crveno) i Hrvatska (zlatno). Desno: moderni panel 2008.–2025., Hrvatska među odabranim članicama EU. Izvor: povijesni prosjeci Tanzi i Schuknecht (2000), Tablica I.1; moderni niz Eurostat (gov_10a_main); Hrvatska do 2007. procjene WB/IMF."
+//| fig-cap: "Javna potrošnja kroz dugi rok. Lijevo prosjek 17 razvijenih zemalja od 1870. (topla siva) i Hrvatska (zlatno), uz isprekidanu liniju koja označava prijelom izvora oko 1996. Desno moderni panel 2008.–2025., Hrvatska među odabranim članicama EU. Izvor: povijesni prosjeci Tanzi i Schuknecht (2000), Tablica I.1; moderni niz Eurostat (gov_10a_main); Hrvatska do 2007. procjene WB/IMF."
 //| fig-alt: "Dva linijska grafikona javne potrošnje kao udjela u BDP-u. Lijevi prati prosjek 17 razvijenih zemalja od oko 10 % BDP-a 1870. do blizu 45 % danas, uz hrvatsku liniju koja se kreće blizu prosjeka. Desni grafikon prikazuje razdoblje od 2008. do 2025. za Hrvatsku, prosjek i pojedine zemlje (Francuska visoko, Rumunjska nisko)."
 {
   const yrsM = [2008,2009,2010,2011,2012,2013,2014,2015,2016,2017,2018,2019,2020,2021,2022,2023,2024,2025];
@@ -65,11 +65,12 @@ Dugoročni podaci taj rast čine opipljivim. Slika koja slijedi spaja povijesne 
     y: {label: "↑ % BDP-a", domain: [0, 70], grid: true, ticks: [0, 20, 40, 60]},
     marks: [
       Plot.line(grey, {x: "year", y: "v", z: "geo", stroke: "#CBC5B8", strokeWidth: 0.7, tip: true}),
-      Plot.line(avgFull, {x: "year", y: "v", stroke: "#6B1F26", strokeWidth: 2.6, tip: true}),
+      Plot.line(avgFull, {x: "year", y: "v", stroke: "#6B6357", strokeWidth: 2.6, tip: true}),
       Plot.line(hrFull, {x: "year", y: "v", stroke: "#C8942D", strokeWidth: 1.8, tip: true}),
       Plot.ruleX([1996.5], {stroke: "#9A948A", strokeDasharray: "3,3"}),
-      Plot.text([{x: 1876, y: 51}], {x: "x", y: "y", text: ["Prosjek razvijenih"], fill: "#6B1F26", fontWeight: 700, fontSize: 11, textAnchor: "start"}),
-      Plot.text([{x: 1900, y: 60}], {x: "x", y: "y", text: ["Hrvatska"], fill: "#9A6F38", fontWeight: 700, fontSize: 11, textAnchor: "start"})
+      Plot.text([{x: 1996.5, y: 4}], {x: "x", y: "y", text: ["prijelom izvora"], fill: "#9A948A", fontSize: 8.5, textAnchor: "middle"}),
+      Plot.text([{x: 1876, y: 51}], {x: "x", y: "y", text: ["Prosjek razvijenih"], fill: "#6B6357", fontWeight: 700, fontSize: 11, textAnchor: "start"}),
+      Plot.text([{x: 1900, y: 60}], {x: "x", y: "y", text: ["Hrvatska"], fill: "#C8942D", fontWeight: 700, fontSize: 11, textAnchor: "start"})
     ]
   });
 
@@ -82,7 +83,7 @@ Dugoročni podaci taj rast čine opipljivim. Slika koja slijedi spaja povijesne 
       Plot.line(mk(yrsM, eFR), {x: "year", y: "v", stroke: "#B8B2A6", strokeWidth: 1.2}),
       Plot.line(mk(yrsM, eDE), {x: "year", y: "v", stroke: "#B8B2A6", strokeWidth: 1.2}),
       Plot.line(mk(yrsM, eRO), {x: "year", y: "v", stroke: "#B8B2A6", strokeWidth: 1.2}),
-      Plot.line(mk(yrsM, eAvg), {x: "year", y: "v", stroke: "#6B1F26", strokeWidth: 2.4, tip: true}),
+      Plot.line(mk(yrsM, eAvg), {x: "year", y: "v", stroke: "#6B6357", strokeWidth: 2.4, tip: true}),
       Plot.line(mk(yrsM, eHR), {x: "year", y: "v", stroke: "#C8942D", strokeWidth: 2.4, tip: true}),
       Plot.text([{x: 2025, y: 57.2, t: "Francuska"}, {x: 2025, y: 50.5, t: "Njemačka"}, {x: 2025, y: 43.3, t: "Rumunjska"}],
         {x: "x", y: "y", text: "t", dx: 4, textAnchor: "start", fontSize: 9.5, fill: "#6B6357"})
@@ -95,8 +96,8 @@ Dugoročni podaci taj rast čine opipljivim. Slika koja slijedi spaja povijesne 
       <div><div style="font:600 12px Public Sans, system-ui, sans-serif;color:#1C1916;margin-bottom:2px">B) Moderni panel, 2008.–2025.</div>${B}</div>
     </div>
     <div style="font:12px Public Sans, system-ui, sans-serif;color:#3A332D;text-align:center;margin-top:4px">
-      <span style="color:#6B1F26;font-weight:700">━ prosjek razvijenih zemalja</span>&nbsp;&nbsp;
-      <span style="color:#9A6F38;font-weight:700">━ Hrvatska</span>&nbsp;&nbsp;
+      <span style="color:#6B6357;font-weight:700">━ prosjek razvijenih zemalja</span>&nbsp;&nbsp;
+      <span style="color:#C8942D;font-weight:700">━ Hrvatska</span>&nbsp;&nbsp;
       <span style="color:#9A948A">━ pojedine zemlje</span>
     </div>
   </figure>`;
@@ -108,7 +109,7 @@ Dugoročni podaci taj rast čine opipljivim. Slika koja slijedi spaja povijesne 
 ```{r}
 #| label: fig-longrun-rashodi-print
 #| echo: false
-#| fig-cap: "Javna potrošnja kroz dugi rok. Lijevo: prosjek 17 razvijenih zemalja od 1870. (crveno) i Hrvatska (zlatno). Desno: moderni panel 2008.–2025., Hrvatska među odabranim članicama EU. Izvor: povijesni prosjeci Tanzi i Schuknecht (2000), Tablica I.1; moderni niz Eurostat (gov_10a_main); Hrvatska do 2007. procjene WB/IMF."
+#| fig-cap: "Javna potrošnja kroz dugi rok. Lijevo prosjek 17 razvijenih zemalja od 1870. (topla siva) i Hrvatska (zlatno), uz isprekidanu liniju koja označava prijelom izvora oko 1996. Desno moderni panel 2008.–2025., Hrvatska među odabranim članicama EU. Izvor: povijesni prosjeci Tanzi i Schuknecht (2000), Tablica I.1; moderni niz Eurostat (gov_10a_main); Hrvatska do 2007. procjene WB/IMF."
 #| fig-alt: "Dva linijska grafikona javne potrošnje kao udjela u BDP-u, povijesni dugi luk i moderni panel s Hrvatskom."
 #| fig-width: 8.0
 #| fig-height: 3.8
@@ -159,9 +160,11 @@ df$kind <- factor(df$kind, levels=c("Pojedine zemlje","Prosjek razvijenih","Hrva
 ggplot(df, aes(year, v, group=interaction(panel, series), color=kind, linewidth=kind)) +
   geom_segment(data=data.frame(panel=pA), aes(x=1996.5, xend=1996.5, y=0, yend=66),
                inherit.aes=FALSE, linetype="22", color="#9A948A", linewidth=0.4) +
+  geom_text(data=data.frame(panel=pA), aes(x=1996.5, y=3, label="prijelom izvora"),
+            inherit.aes=FALSE, color="#9A948A", size=2.3, hjust=0.5) +
   geom_line() +
   facet_wrap(~panel, scales="free_x") +
-  scale_color_manual(values=c("Pojedine zemlje"="#B8B2A6","Prosjek razvijenih"="#6B1F26","Hrvatska"="#C8942D"), name=NULL) +
+  scale_color_manual(values=c("Pojedine zemlje"="#B8B2A6","Prosjek razvijenih"="#6B6357","Hrvatska"="#C8942D"), name=NULL) +
   scale_linewidth_manual(values=c("Pojedine zemlje"=0.4,"Prosjek razvijenih"=1.1,"Hrvatska"=1.0), guide="none") +
   scale_y_continuous(labels=function(x) paste0(x, " %"), limits=c(0,70)) +
   labs(x=NULL, y=NULL) +
@@ -179,7 +182,7 @@ Wagner je ponudio i mehaniku tog rasta koja nadilazi puko empirijsko zapažanje.
 
 Empirijski je Wagnerov zakon potvrđen u dugim vremenskim serijama razvijenih zemalja, ali ga noviji radovi ograničavaju u dva smjera [@bird1971]. Prvo, zakonitost vrijedi samo do određene razine razvoja, nakon koje udio javne potrošnje pokazuje znakove zasićenja. Drugo, rast nije automatski nego je posredovan političkim odlukama o tome koje od triju sila društvo prevodi u stvarnu javnu funkciju. To znači da Wagnerov zakon najbolje opisuje strukturni pritisak, ne i sam ishod, koji ostaje predmet političkog izbora i institucionalnog dizajna.
 
-Graf koji slijedi prikazuje predviđeni udio javne potrošnje u BDP-u u ovisnosti o dohotku po stanovniku, pri čemu logaritamski trend dočarava i rast i njegovo postupno zasićenje. Graf je interaktivan, pa klizač pomiče dohodak hipotetske zemlje uz krivulju, čime se vidi kako se udio javne potrošnje mijenja s razinom razvoja.
+Taj se odnos dade i vizualizirati. Predviđeni udio javne potrošnje u BDP-u raste s dohotkom po stanovniku, pri čemu logaritamski trend dočarava i sam rast i njegovo postupno zasićenje. Graf je interaktivan, pa klizač pomiče dohodak hipotetske zemlje uz krivulju, čime se vidi kako se udio javne potrošnje mijenja s razinom razvoja.
 
 ::: {.content-visible when-format="html"}
 ```{ojs}
@@ -465,7 +468,7 @@ Najjednostavniji pokazatelj veličine države jest udio ukupnih rashoda opće dr
 
 Razlike su velike i unutar skupine razvijenih zemalja. U OECD-u su rashodi opće države u 2023. prosječno iznosili 42,6 % BDP-a, no europske članice troše osjetno više od neeuropskih, pa je prosjek članica koje su istodobno u Europskoj uniji bio blizu 49 % BDP-a [@oecd2025gov]. Unutar same Unije u 2023. ukupni rashodi opće države iznosili su 49,0 % BDP-a, ali se kreću u širokom rasponu. Najviše troše Francuska, Italija, Austrija, Grčka, Finska i Belgija, sve iznad 52 % BDP-a, dok su Cipar, Malta i Litva osjetno niže, oko 36 do 38 % BDP-a [@eurostat2025govexp]. Irska je poseban slučaj jer joj je BDP napuhan aktivnostima multinacionalnih kompanija, pa njezin udio rashoda od svega 20,6 % BDP-a podcjenjuje stvarnu veličinu države u odnosu na domaću ekonomsku aktivnost.
 
-Hrvatska se u toj slici smješta blizu europskog prosjeka. Ukupni rashodi opće države u 2024. iznosili su oko 48 % BDP-a, što je vrlo blizu prosjeka Unije i ispod razine najskupljih država blagostanja poput Francuske, Finske ili Austrije [@eurostat2025govexp].[^god-rashodi] Hrvatska time nije zemlja male države. Po veličini javne potrošnje pripada europskom modelu, pa se ključno pitanje pomiče s razine na strukturu i kvalitetu te potrošnje. Slika koja slijedi prikazuje taj raspon i smješta Hrvatsku među odabrane članice Unije.
+Hrvatska se u toj slici smješta blizu europskog prosjeka. Ukupni rashodi opće države u 2024. iznosili su oko 48 % BDP-a, što je vrlo blizu prosjeka Unije i ispod razine najskupljih država blagostanja poput Francuske, Finske ili Austrije [@eurostat2025govexp].[^god-rashodi] Hrvatska time nije zemlja male države. Po veličini javne potrošnje pripada europskom modelu, pa se ključno pitanje pomiče s razine na strukturu i kvalitetu te potrošnje. Smještena među odabrane članice Unije, ona se nalazi u širokom rasponu koji se proteže od Irske na dnu do Francuske na vrhu.
 
 [^god-rashodi]: Podaci za EU i za funkcionalnu strukturu odnose se na 2023., a hrvatski podatak o ukupnim rashodima na 2024., pa su razine neznatno različite zbog godine, a ne metodologije. Izvor je Eurostat (tablica gov_10a_main).
 
@@ -532,7 +535,7 @@ cols <- c("ostalo" = "#4A5568", "EU" = "#4A6B5C", "Hrvatska" = "#C8942D")
 ggplot(rb, aes(v, z, fill = grp)) +
   geom_col(width = 0.72) +
   geom_vline(xintercept = 42.6, linetype = "dashed", color = "#8C8C8C", linewidth = 0.5) +
-  annotate("text", x = 42.6, y = 12, label = "OECD 42,6", hjust = -0.05, vjust = 0,
+  annotate("text", x = 42.6, y = 12, label = "OECD 42,6 %", hjust = -0.05, vjust = 0,
            size = 2.8, color = "#6B6357") +
   geom_text(aes(label = sub("\\.", ",", sprintf("%.1f", v))),
             hjust = -0.2, size = 2.9, color = "#3A332D") +
@@ -708,6 +711,10 @@ ggplot(df, aes(x = "", y = v, fill = cat)) +
 ```
 :::
 
+Stavi li se taj profil uz europsku strukturu s prethodne slike, posebnost Hrvatske postaje čitljiva u dvjema funkcijama. Socijalna zaštita prema COFOG-u opće države nosi 13,8 % BDP-a, osjetno ispod europskih 19,2 %, dok zdravstvo s 9,0 % BDP-a nadmašuje europskih 7,3 %.[^cofog-hr-soczast] Hrvatska tako manje vaga prema mirovinama i socijalnim transferima, a razmjerno više prema javnom zdravstvu i, kao kohezijska zemlja, prema ekonomskim poslovima.
+
+[^cofog-hr-soczast]: Udio socijalne zaštite za Hrvatsku razlikuje se između ovog grafa i grafa zbroja socijalne zaštite i zdravstva koji slijedi. Ovdje je riječ o 13,8 % BDP-a za 2024., a u sljedećem grafu o 12,8 % BDP-a za 2023., pa je razlika posljedica referentne godine i nešto drukčijih ulaznih vrijednosti, a ne metodologije.
+
 | Tip zemlje | Tipične zemlje | Što prevladava | Ključno objašnjenje |
 |---|---|---|---|
 | Socijalna država visokih transfera | Finska, Francuska, Austrija, Italija | Socijalna zaštita | Mirovine, starenje, široka socijalna prava |
@@ -718,14 +725,14 @@ ggplot(df, aes(x = "", y = v, fill = cat)) +
 
 : Funkcionalni profili javne potrošnje po skupinama zemalja {#tbl-funkc-profili}
 
-Te dvije funkcije, socijalna zaštita i zdravstvo, čine srž europske države blagostanja. Slika koja slijedi zbraja ih po zemljama, od Irske na dnu do Francuske i Finske na vrhu. Hrvatska se s 20,5 % BDP-a prema COFOG-u smješta u donju polovicu raspona, osjetno ispod prosjeka Unije.
+Te dvije funkcije, socijalna zaštita i zdravstvo, čine srž europske države blagostanja, pa ih je uputno čitati zajedno. Zbrojene po zemljama, raspoređuju se od Irske na dnu do Francuske i Finske na vrhu.
 
 ::: {.content-visible when-format="html"}
 ```{ojs}
 //| echo: false
 //| label: fig-soczast-zdravstvo
-//| fig-cap: "Rashodi za socijalnu zaštitu (GF10) i zdravstvo (GF07) zajedno, % BDP-a, 2023. Zemlje su poredane od najmanjeg do najvećeg zbroja, a Hrvatska je istaknuta zlatnim obrubom. Izvor: Eurostat (gov_10a_exp, COFOG)."
-//| fig-alt: "Vodoravni složeni stupčasti graf za petnaest jedinica. Svaki je stupac zbroj socijalne zaštite i zdravstva u postotku BDP-a. Irska je najniža (13,1), Finska najviša (33,2), Hrvatska s 20,5 u donjoj polovici, ispod prosjeka EU27 od 26,4."
+//| fig-cap: "Rashodi za socijalnu zaštitu (GF10) i zdravstvo (GF07) zajedno, % BDP-a, 2023. Zemlje su poredane od najmanjeg do najvećeg zbroja, a Hrvatska je istaknuta zlatnim obrubom. Isprekidana siva linija označava prosjek EU27 od 26,4 % BDP-a. Izvor: Eurostat (gov_10a_exp, COFOG)."
+//| fig-alt: "Vodoravni složeni stupčasti graf za petnaest jedinica. Svaki je stupac zbroj socijalne zaštite i zdravstva u postotku BDP-a. Irska je najniža (13,1), Finska najviša (33,2), Hrvatska s 20,5 u donjoj polovici, ispod prosjeka EU27 koji je isprekidanom linijom označen na 26,4."
 {
   const cats = ["Socijalna zaštita", "Zdravstvo"];
   const raw = [
@@ -748,6 +755,8 @@ Te dvije funkcije, socijalna zaštita i zdravstvo, čine srž europske države b
         stroke: d => d.z === "Hrvatska" ? "#C8942D" : null, strokeWidth: d => d.z === "Hrvatska" ? 2.2 : 0, tip: true}),
       Plot.text(totals, {x: "t", y: "z", text: d => d.t.toFixed(1).replace(".", ","), dx: 4, textAnchor: "start",
         fontSize: 10, fontWeight: d => d.z === "Hrvatska" ? 700 : 500, fill: d => d.z === "Hrvatska" ? "#9A6F38" : "#3A332D"}),
+      Plot.ruleX([26.4], {stroke: "#8C8C8C", strokeDasharray: "5,4", strokeWidth: 1.5}),
+      Plot.text([{z: "Finska"}], {x: 26.4, y: "z", text: ["EU27 26,4"], dy: -12, dx: 4, textAnchor: "start", fontSize: 10, fill: "#6B6357"}),
       Plot.ruleX([0])
     ]
   });
@@ -759,8 +768,8 @@ Te dvije funkcije, socijalna zaštita i zdravstvo, čine srž europske države b
 ```{r}
 #| label: fig-soczast-zdravstvo-print
 #| echo: false
-#| fig-cap: "Rashodi za socijalnu zaštitu (GF10) i zdravstvo (GF07) zajedno, % BDP-a, 2023. Zemlje su poredane od najmanjeg do najvećeg zbroja, Hrvatska je istaknuta zlatnim obrubom. Izvor: Eurostat (gov_10a_exp, COFOG)."
-#| fig-alt: "Vodoravni složeni stupčasti graf socijalne zaštite i zdravstva po zemljama; Irska 13,1, Finska 33,2, Hrvatska 20,5 ispod prosjeka EU27."
+#| fig-cap: "Rashodi za socijalnu zaštitu (GF10) i zdravstvo (GF07) zajedno, % BDP-a, 2023. Zemlje su poredane od najmanjeg do najvećeg zbroja, Hrvatska je istaknuta zlatnim obrubom. Isprekidana siva linija označava prosjek EU27 od 26,4 % BDP-a. Izvor: Eurostat (gov_10a_exp, COFOG)."
+#| fig-alt: "Vodoravni složeni stupčasti graf socijalne zaštite i zdravstva po zemljama; Irska 13,1, Finska 33,2, Hrvatska 20,5 ispod prosjeka EU27 označenog isprekidanom linijom na 26,4."
 #| fig-width: 7.8
 #| fig-height: 4.8
 source("R/setup.R")
@@ -780,6 +789,9 @@ df$cat <- factor(df$cat, levels = c("Socijalna zaštita","Zdravstvo"))
 tot <- data.frame(z = factor(zem, levels = rev(zem)), t = sp + h, hl = zem == "Hrvatska")
 ggplot(df, aes(val, z, fill = cat)) +
   geom_col(aes(color = z == "Hrvatska"), width = 0.74, linewidth = 0.7) +
+  geom_vline(xintercept = 26.4, linetype = "dashed", color = "#8C8C8C", linewidth = 0.5) +
+  annotate("text", x = 26.4, y = 15, label = "EU27 26,4", hjust = -0.05, vjust = 0,
+           size = 2.6, color = "#6B6357") +
   geom_text(data = tot, aes(t, z, label = sub("\\.", ",", sprintf("%.1f", t)), color = hl),
             hjust = -0.2, size = 2.7, inherit.aes = FALSE, show.legend = FALSE) +
   scale_fill_manual(values = c("Socijalna zaštita"="#4A6B5C","Zdravstvo"="#2D5A8E"), name = NULL) +
@@ -790,15 +802,17 @@ ggplot(df, aes(val, z, fill = cat)) +
 ```
 :::
 
+Hrvatska se s 20,5 % BDP-a smješta u donju polovicu raspona, ispod prosjeka EU27 od 26,4 % BDP-a. Razmjer između dvaju stupaca pritom ne prati ukupan zbroj jednako u svim zemljama, jer hrvatski je zaostatak gotovo u cijelosti na strani socijalne zaštite, dok je udio zdravstva blizu europskog. Niža ukupna razina tako više govori o slabijim mirovinskim i socijalnim davanjima nego o štednji na zdravstvu.
+
 ## Kako država troši — ekonomska struktura rashoda
 
-Treći sloj otkriva kako se novac troši, neovisno o tome kojoj je funkciji namijenjen. Promatraju li se rashodi Unije prema ekonomskim transakcijama, najveći dio, oko 43 % ukupnih rashoda, čine socijalna davanja i transferi u naravi, slijede naknade zaposlenima u javnom sektoru s približno petinom rashoda i intermedijarna potrošnja, odnosno roba i usluge koje država kupuje, s oko 12 % [@eurostat2025cofog]. Bruto investicije, razvojna komponenta proračuna, čine tek oko 7 % rashoda, subvencije oko 4 %, a kamate na javni dug oko 3,5 %. Slika prikazuje taj raspored i razdvaja tekuće rashode od razvojnih i kapitalnih.
+Treći sloj otkriva kako se novac troši, neovisno o tome kojoj je funkciji namijenjen. Promatraju li se rashodi Unije prema ekonomskim transakcijama, najveći dio, oko 43 % ukupnih rashoda, čine socijalna davanja i transferi u naravi, slijede naknade zaposlenima u javnom sektoru s približno petinom rashoda i intermedijarna potrošnja, odnosno roba i usluge koje država kupuje, s oko 12 % [@eurostat2025cofog]. Bruto investicije, razvojna komponenta proračuna, čine tek oko 7 % rashoda, subvencije oko 4 %, a kamate na javni dug oko 3,5 %. Poredaju li se te kategorije po veličini, razvojni i kapitalni rashodi jasno se izdvajaju od tekućih.
 
 ::: {.content-visible when-format="html"}
 ```{ojs}
 //| echo: false
 //| label: fig-ekonomska-struktura
-//| fig-cap: "Struktura rashoda opće države u EU prema ekonomskim transakcijama, 2023., u % ukupnih rashoda (Eurostat). Zlatno su označeni razvojni i kapitalni rashodi, sivo tekući."
+//| fig-cap: "Struktura rashoda opće države u EU prema ekonomskim transakcijama, 2023., u % ukupnih rashoda (Eurostat). Zelenom su označeni razvojni i kapitalni rashodi, sivo tekući."
 //| fig-alt: "Vodoravni stupčasti graf osam ekonomskih kategorija rashoda EU za 2023. Socijalna davanja i transferi čine 43,4 %, naknade zaposlenima 20,4 %, intermedijarna potrošnja 12,4 %, bruto investicije 7,2 %, ostali tekući transferi 4,6 %, subvencije 4,0 %, kapitalni transferi 3,8 % i kamate 3,5 %."
 {
   const data = [
@@ -817,7 +831,7 @@ Treći sloj otkriva kako se novac troši, neovisno o tome kojoj je funkciji nami
     style: {fontSize: "12px", fontFamily: "Public Sans, system-ui, sans-serif", color: "#3A332D"},
     x: {label: "% ukupnih rashoda (EU, 2023.) →", domain: [0, 48], grid: true},
     y: {label: null, domain: data.map(d => d.k)},
-    color: {domain: ["tekuće","razvojno/kapitalno"], range: ["#4A5568","#C8942D"], legend: true},
+    color: {domain: ["tekuće","razvojno/kapitalno"], range: ["#4A5568","#4A6B5C"], legend: true},
     marks: [
       Plot.barX(data, {x: "v", y: "k", fill: "tip", tip: true}),
       Plot.text(data, {x: "v", y: "k", text: d => d.v.toFixed(1).replace(".", ","), dx: 4, textAnchor: "start", fontSize: 10, fill: "#3A332D"})
@@ -831,7 +845,7 @@ Treći sloj otkriva kako se novac troši, neovisno o tome kojoj je funkciji nami
 ```{r}
 #| label: fig-ekonomska-struktura-print
 #| echo: false
-#| fig-cap: "Struktura rashoda opće države u EU prema ekonomskim transakcijama, 2023., u % ukupnih rashoda (Eurostat). Zlatno su označeni razvojni i kapitalni rashodi, sivo tekući."
+#| fig-cap: "Struktura rashoda opće države u EU prema ekonomskim transakcijama, 2023., u % ukupnih rashoda (Eurostat). Zelenom su označeni razvojni i kapitalni rashodi, sivo tekući."
 #| fig-alt: "Vodoravni stupčasti graf osam ekonomskih kategorija rashoda EU za 2023. Socijalna davanja i transferi čine 43,4 %, naknade zaposlenima 20,4 %, intermedijarna potrošnja 12,4 %, bruto investicije 7,2 %, ostali tekući transferi 4,6 %, subvencije 4,0 %, kapitalni transferi 3,8 % i kamate 3,5 %."
 #| fig-width: 7.8
 #| fig-height: 4.2
@@ -845,7 +859,7 @@ es <- data.frame(
   stringsAsFactors = FALSE
 )
 es$k <- factor(es$k, levels = rev(es$k))
-cols <- c("tekuće" = "#4A5568", "razvojno/kapitalno" = "#C8942D")
+cols <- c("tekuće" = "#4A5568", "razvojno/kapitalno" = "#4A6B5C")
 
 ggplot(es, aes(v, k, fill = tip)) +
   geom_col(width = 0.72) +

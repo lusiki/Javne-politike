@@ -440,10 +440,16 @@
     var mdHref  = location.pathname.replace(/\/chapters\/([^/]+)\.html$/, "/ai/$1.md");
     var uciHref = location.pathname.replace(/\/chapters\/[^/]+\.html$/, "/uci-s-ai.html");
     var absMd   = location.origin + mdHref;
+    // Kratka uputa (mora ostati kratka jer ide u URL); usklađena s manifest.promptShort
+    // iz R/build-ai-exports.R. Puna mentorska uputa živi na stranici „Uči s AI”.
     var tutor =
-      "Ti si mentor za udžbenik „Sve što želite znati o državi i javnim politikama u " +
-      "Hrvatskoj”. Odgovaraj na hrvatskom, oslanjaj se samo na priloženi tekst, citiraj " +
-      "poglavlja i reci „ne znam” ako odgovora nema u tekstu.";
+      "Ti si moj mentor za udžbenik „Sve što želite znati o državi i javnim politikama u " +
+      "Hrvatskoj” (javne financije, teorija javnog izbora i javne politike). Oslanjaj se " +
+      "isključivo na priloženi tekst, poglavlja imenuj riječima, a ne brojem, i jasno reci " +
+      "„Toga nema u priloženom tekstu” kad odgovora nema; ne izmišljaj brojke, izvore ni " +
+      "citate. Objašnjavaj korak po korak na hrvatskom, primjerima i analogijama, prilagodi " +
+      "se mojoj razini i na zahtjev sažmi gradivo, izradi kviz, kartice ili plan učenja. Na " +
+      "početku me pitaj što učim i koji mi je cilj.";
     var q = encodeURIComponent(
       tutor +
       "\n\nTekst poglavlja nalazi se na ovoj poveznici, pročitaj ga i odgovaraj na temelju njega: " +

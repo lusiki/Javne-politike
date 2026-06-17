@@ -44,14 +44,14 @@ Razdvajanje je važno jer svaka funkcija traži vlastiti analitički aparat i vl
 
 ![Musgraveov okvir povezuje tri funkcije države s pripadnim analitičkim pristupom i normativnim osnovama državne intervencije.](../images/infographics/01-tri-funkcije-drzave.svg){#fig-tri-funkcije .infographic fig-alt="Hijerarhijski dijagram triju funkcija države — alokacijske, distribucijske i stabilizacijske — povezan s mikroekonomskom i makroekonomskom analizom te normativnim osnovama državne intervencije." width=92%}
 
-Te tri funkcije nisu apstrakcija jer iza svake stoje stvarni novci. Moderna država u Hrvatskoj i u prosjeku Europske unije troši blizu polovice ukupnoga gospodarstva, a u kriznim godinama i više, pa pitanje njezine uloge nije pitanje rubne pojave nego glavnine društvenih resursa. Slika koja slijedi prikazuje ukupne rashode opće države kao udio u BDP-u, gdje se vidi i nagli skok u pandemijskoj 2020. godini te povratak prema razini od oko 48 % BDP-a. Sastav te potrošnje razlažemo u poglavlju o javnoj potrošnji, a ovdje ona pokazuje o kolikom je udjelu gospodarstva riječ.
+Te tri funkcije nisu apstrakcija jer iza svake stoje stvarni novci. Koliko je tih novaca, najlakše je vidjeti u ukupnim rashodima opće države izraženima kao udio u BDP-u. Moderna država u Hrvatskoj i u prosjeku Europske unije troši blizu polovice ukupnoga gospodarstva, a u kriznoj 2020. godini i osjetno više, pa pitanje njezine uloge nije pitanje rubne pojave nego glavnine društvenih resursa. Sastav te potrošnje razlažemo u poglavlju o javnoj potrošnji, a ovdje ona pokazuje o kolikom je udjelu gospodarstva riječ.
 
 ::: {.content-visible when-format="html"}
 ```{ojs}
 //| echo: false
 //| label: fig-velicina-drzave
-//| fig-cap: "Ukupni rashodi opće države u % BDP-a, Hrvatska i prosjek EU27, 2002.–2024. Zlatno je Hrvatska, tamno prosjek Unije. Vrhunac u 2020. odražava pandemijski fiskalni odgovor. Izvor: Eurostat (gov_10a_main, sektor opće države S13)."
-//| fig-alt: "Linijski graf ukupnih rashoda opće države u postotku BDP-a od 2002. do 2024. za Hrvatsku (zlatno) i prosjek EU27 (tamno). Obje serije kreću se oko 45 do 51 % BDP-a, uz nagli skok u 2020. na 53,8 % za Hrvatsku i 52,9 % za EU."
+//| fig-cap: "Ukupni rashodi opće države u % BDP-a, Hrvatska i prosjek EU27, 2002.–2024. Zlatno je Hrvatska, zeleno prosjek Unije. Vrhunac u 2020. odražava pandemijski fiskalni odgovor. Izvor: Eurostat (gov_10a_main, sektor opće države S13)."
+//| fig-alt: "Linijski graf ukupnih rashoda opće države u postotku BDP-a od 2002. do 2024. za Hrvatsku (zlatno) i prosjek EU27 (zeleno). Obje serije kreću se oko 45 do 51 % BDP-a, uz nagli skok u 2020. na 53,8 % za Hrvatsku i 52,9 % za EU."
 {
   const godine = [2002,2003,2004,2005,2006,2007,2008,2009,2010,2011,2012,2013,2014,2015,2016,2017,2018,2019,2020,2021,2022,2023,2024];
   const hr = [49.2,49.6,49.0,46.5,44.6,46.4,46.3,49.3,48.2,48.6,47.3,48.0,48.7,47.6,45.9,44.3,45.2,46.4,53.8,48.2,45.1,46.6,48.4];
@@ -65,8 +65,8 @@ Te tri funkcije nisu apstrakcija jer iza svake stoje stvarni novci. Moderna drž
     marginLeft: 52, marginRight: 28, marginTop: 30, marginBottom: 44,
     style: {fontSize: "12px", fontFamily: "Public Sans, system-ui, sans-serif", color: "#3A332D"},
     x: {label: null, tickFormat: d => "" + d, ticks: [2002,2006,2010,2014,2018,2022]},
-    y: {label: "↑ Rashodi opće države (% BDP-a)", domain: [40, 56], grid: true},
-    color: {domain: ["Hrvatska","EU27"], range: ["#C8942D","#1C1916"], legend: true},
+    y: {label: "↑ Rashodi opće države (% BDP-a)", domain: [40, 56], grid: true, tickFormat: d => ("" + d).replace(".", ",")},
+    color: {domain: ["Hrvatska","EU27"], range: ["#C8942D","#4A6B5C"], legend: true},
     marks: [
       Plot.lineY(data, {x: "god", y: "v", stroke: "serija", strokeWidth: 2, curve: "monotone-x"}),
       Plot.dot(data, {x: "god", y: "v", fill: "serija", r: 2.5, tip: true}),
@@ -81,8 +81,8 @@ Te tri funkcije nisu apstrakcija jer iza svake stoje stvarni novci. Moderna drž
 ```{r}
 #| label: fig-velicina-drzave-print
 #| echo: false
-#| fig-cap: "Ukupni rashodi opće države u % BDP-a, Hrvatska i prosjek EU27, 2002.–2024. Zlatno je Hrvatska, tamno prosjek Unije. Vrhunac u 2020. odražava pandemijski fiskalni odgovor. Izvor: Eurostat (gov_10a_main)."
-#| fig-alt: "Linijski graf ukupnih rashoda opće države u postotku BDP-a od 2002. do 2024. za Hrvatsku (zlatno) i prosjek EU27 (tamno), uz nagli skok u 2020."
+#| fig-cap: "Ukupni rashodi opće države u % BDP-a, Hrvatska i prosjek EU27, 2002.–2024. Zlatno je Hrvatska, zeleno prosjek Unije. Vrhunac u 2020. odražava pandemijski fiskalni odgovor. Izvor: Eurostat (gov_10a_main)."
+#| fig-alt: "Linijski graf ukupnih rashoda opće države u postotku BDP-a od 2002. do 2024. za Hrvatsku (zlatno) i prosjek EU27 (zeleno), uz nagli skok u 2020."
 #| fig-width: 7.8
 #| fig-height: 4.4
 source("R/setup.R")
@@ -100,13 +100,15 @@ ggplot(df, aes(god, v, color = serija)) +
   geom_line(linewidth = 0.9) +
   geom_point(size = 1.2) +
   annotate("text", x = 2020, y = 55.2, label = "COVID 2020.", size = 2.8, color = "#6B6357") +
-  scale_color_manual(values = c("Hrvatska" = "#C8942D", "EU27" = "#4A5568"), name = NULL) +
+  scale_color_manual(values = c("Hrvatska" = "#C8942D", "EU27" = "#4A6B5C"), name = NULL) +
   scale_y_continuous(limits = c(40, 56)) +
   scale_x_continuous(breaks = seq(2002, 2024, 4)) +
   labs(x = NULL, y = "Rashodi opće države (% BDP-a)") +
   theme_pubfin()
 ```
 :::
+
+Dvije se serije gotovo poklapaju, pa Hrvatska po veličini države nije iznimka u Europskoj uniji, a pandemijski skok 2020. zajednički je objema. Ta razina rashoda od oko 48 % BDP-a otvara i pitanje na koje se vraćamo u poglavlju o porezima, jer porezno opterećenje stoji osjetno niže, a razmak između toga koliko država troši i koliko prihoduje postaje vlastita tema kasnijih poglavlja.
 
 ## Tržište kao mehanizam učinkovite alokacije
 

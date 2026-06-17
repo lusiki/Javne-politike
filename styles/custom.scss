@@ -2604,5 +2604,28 @@ div.callout .callout-body > .column-margin p { margin-bottom: 0; }
 }
 #refs .csl-entry:last-child { border-bottom: 0; }
 
+// =============================================================
+// Ploča (slikovnica) — ilustracija preko pune širine na vrhu Priručnika.
+// Vizualni predah, bez broja i naslova. Renderira se u HTML-u i Typst PDF-u
+// Priručnika, a izostaje iz LaTeX PDF-a knjige (vidi .content-hidden
+// when-format="latex" u prirucnik.qmd). Datoteke žive u images/prirucnik/.
+// =============================================================
+.guide-plate {
+  margin: 0 auto 2.4rem;
+
+  // lightbox-omotač ne nasljeđuje proznu hairline-crtu
+  a { display: block; border-bottom: 0 !important; }
+
+  img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 6px;
+    box-shadow:
+      0 1px 0 rgba(28, 25, 22, 0.04),
+      0 12px 34px rgba(28, 25, 22, 0.10);
+  }
+}
+
 @import "vodic";
 

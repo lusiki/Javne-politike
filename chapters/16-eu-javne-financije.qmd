@@ -185,6 +185,8 @@ ggplot(mff, aes(v, h, fill = grp)) +
 ```
 :::
 
+Donji kraj te slike izravno potvrđuje teorijsku slutnju iz prethodnih odlomaka. Sigurnost i obrana nose 1,2 %, a migracije i upravljanje granicama 2,1 % obveza, dakle baš ona dobra čije se koristi najjače prelijevaju preko granica dobivaju najtanji dio proračuna. Tako izgleda Samuelsonov uvjet u brojkama, jer dok svaka članica mjeri vlastitu graničnu korist umjesto zbroja koristi svih koje štiti, decentralizirano financiranje upravo na tim stavkama daje premalo zajedničkog dobra.
+
 ::: {.content-visible when-format="html"}
 ```{ojs}
 //| echo: false
@@ -245,6 +247,8 @@ ggplot(np, aes(v, z, fill = grp)) +
   labs(x = "Neto položaj, € po stanovniku (2023.)", y = NULL)
 ```
 :::
+
+Pročita li se slika po stanovniku, Hrvatska se s +619 € smješta iznad Rumunjske i Poljske, kao jedan od najvećih neto primatelja u Uniji, pa joj logika neto pozicije ide izrazito u prilog. Upravo zato joj je najosjetljiviji onaj naslov koji u prethodnoj slici nosi najveći udio, jer najavljeno smanjenje težine kohezije u idućem okviru pogađa baš kanal kroz koji ona danas ostvaruje glavninu svoga povoljnog položaja. Logika neto pozicije i logika europskih javnih dobara tu povlače u suprotnim smjerovima, jer prva Hrvatskoj govori da brani koheziju, a druga da pristane na proračun više usmjeren prema dobrima s prekograničnom koristi.
 
 Argument europskih javnih dobara ne uklanja političke dileme. Ako Unija financira više zajedničkih prioriteta, mora se odlučiti kako će prikupiti novac, hoće li članice povećati doprinose, hoće li se uvesti novi vlastiti prihodi ili koristiti zajedničko zaduživanje, tko će odlučivati o prioritetima i kako spriječiti da se svaka nacionalno poželjna potrošnja proglasi europskim javnim dobrom. Pojam zato treba shvatiti ozbiljno, ali oprezno, jer daje snažan ekonomski argument za dublju integraciju ondje gdje postoje prekogranične koristi i podinvestiranje, no ne znači da sve treba financirati na europskoj razini.
 

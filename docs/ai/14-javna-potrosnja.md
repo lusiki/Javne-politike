@@ -28,9 +28,9 @@ U ranim fazama razvoja javnih financija fokus ekonomista bio je gotovo isključi
 
 Kako pokazuju povijesni podaci, u razdoblju od kraja 19. do početka 20. stoljeća javna potrošnja u razvijenim zemljama iznosila je tek oko 10 % BDP-a (Tanzi, 2000). Međutim, to ne znači da su ta društva bila manje razvijena, već da država nije obavljala funkcije koje danas smatramo standardnima, poput masovnog obrazovanja, javnog zdravstva, socijalne sigurnosti ili aktivne politike zapošljavanja.
 
-Dugoročni podaci taj rast čine opipljivim. Slika koja slijedi spaja povijesne procjene Tanzija i Schuknechta s modernim nizom Eurostata, pa lijevi grafikon prati prosjek sedamnaest razvijenih zemalja od 1870. do danas, dok desni izdvaja noviji period u kojem se Hrvatska može usporediti s pojedinim članicama Unije. Prosječni udio javne potrošnje narastao je s približno 10 % BDP-a u kasnom 19. stoljeću na blizu 45 % potkraj 20. stoljeća, gdje se otad uglavnom zadržava, a Hrvatska se cijelo razdoblje kreće blizu ili neznatno iznad tog prosjeka.
+Dugoročni podaci taj rast čine opipljivim. Spoje li se povijesne procjene Tanzija i Schuknechta s modernim nizom Eurostata, lijevi grafikon prati prosjek sedamnaest razvijenih zemalja od 1870. do danas, dok desni izdvaja noviji period u kojem se Hrvatska može usporediti s pojedinim članicama Unije. Prosječni udio javne potrošnje narastao je s približno 10 % BDP-a u kasnom 19. stoljeću na blizu 45 % potkraj 20. stoljeća, gdje se otad uglavnom zadržava, a Hrvatska se cijelo razdoblje kreće blizu ili neznatno iznad tog prosjeka.
 
-*Slika. Javna potrošnja kroz dugi rok. Lijevo: prosjek 17 razvijenih zemalja od 1870. (crveno) i Hrvatska (zlatno). Desno: moderni panel 2008.–2025., Hrvatska među odabranim članicama EU. Izvor: povijesni prosjeci Tanzi i Schuknecht (2000), Tablica I.1; moderni niz Eurostat (gov_10a_main); Hrvatska do 2007. procjene WB/IMF.*
+*Slika. Javna potrošnja kroz dugi rok. Lijevo prosjek 17 razvijenih zemalja od 1870. (topla siva) i Hrvatska (zlatno), uz isprekidanu liniju koja označava prijelom izvora oko 1996. Desno moderni panel 2008.–2025., Hrvatska među odabranim članicama EU. Izvor: povijesni prosjeci Tanzi i Schuknecht (2000), Tablica I.1; moderni niz Eurostat (gov_10a_main); Hrvatska do 2007. procjene WB/IMF.*
 
 Već krajem 19. stoljeća pojavljuju se prve teorijske naznake da minimalistički pristup državi nije dugoročno održiv. Adolph Wagner uočava da s razvojem industrijskog društva potreba za javnim uslugama ne raste slučajno, nego pravilno, pa to zapažanje uzdiže na razinu zakonitosti.
 
@@ -40,7 +40,7 @@ Wagner je ponudio i mehaniku tog rasta koja nadilazi puko empirijsko zapažanje.
 
 Empirijski je Wagnerov zakon potvrđen u dugim vremenskim serijama razvijenih zemalja, ali ga noviji radovi ograničavaju u dva smjera (Bird, 1971). Prvo, zakonitost vrijedi samo do određene razine razvoja, nakon koje udio javne potrošnje pokazuje znakove zasićenja. Drugo, rast nije automatski nego je posredovan političkim odlukama o tome koje od triju sila društvo prevodi u stvarnu javnu funkciju. To znači da Wagnerov zakon najbolje opisuje strukturni pritisak, ne i sam ishod, koji ostaje predmet političkog izbora i institucionalnog dizajna.
 
-Graf koji slijedi prikazuje predviđeni udio javne potrošnje u BDP-u u ovisnosti o dohotku po stanovniku, pri čemu logaritamski trend dočarava i rast i njegovo postupno zasićenje. Graf je interaktivan, pa klizač pomiče dohodak hipotetske zemlje uz krivulju, čime se vidi kako se udio javne potrošnje mijenja s razinom razvoja.
+Taj se odnos dade i vizualizirati. Predviđeni udio javne potrošnje u BDP-u raste s dohotkom po stanovniku, pri čemu logaritamski trend dočarava i sam rast i njegovo postupno zasićenje. Graf je interaktivan, pa klizač pomiče dohodak hipotetske zemlje uz krivulju, čime se vidi kako se udio javne potrošnje mijenja s razinom razvoja.
 
 *Slika. Ilustrativni prikaz Wagnerova zakona — bogatije zemlje u prosjeku troše veći udio BDP-a kroz javni sektor, uz znatno rasipanje oko trenda. Podaci su približni i služe za prikaz odnosa, a ne kao službena statistika.*
 
@@ -179,7 +179,7 @@ Najjednostavniji pokazatelj veličine države jest udio ukupnih rashoda opće dr
 
 Razlike su velike i unutar skupine razvijenih zemalja. U OECD-u su rashodi opće države u 2023. prosječno iznosili 42,6 % BDP-a, no europske članice troše osjetno više od neeuropskih, pa je prosjek članica koje su istodobno u Europskoj uniji bio blizu 49 % BDP-a ({OECD}, 2025). Unutar same Unije u 2023. ukupni rashodi opće države iznosili su 49,0 % BDP-a, ali se kreću u širokom rasponu. Najviše troše Francuska, Italija, Austrija, Grčka, Finska i Belgija, sve iznad 52 % BDP-a, dok su Cipar, Malta i Litva osjetno niže, oko 36 do 38 % BDP-a ({Eurostat}, 2025). Irska je poseban slučaj jer joj je BDP napuhan aktivnostima multinacionalnih kompanija, pa njezin udio rashoda od svega 20,6 % BDP-a podcjenjuje stvarnu veličinu države u odnosu na domaću ekonomsku aktivnost.
 
-Hrvatska se u toj slici smješta blizu europskog prosjeka. Ukupni rashodi opće države u 2024. iznosili su oko 48 % BDP-a, što je vrlo blizu prosjeka Unije i ispod razine najskupljih država blagostanja poput Francuske, Finske ili Austrije ({Eurostat}, 2025).[2] Hrvatska time nije zemlja male države. Po veličini javne potrošnje pripada europskom modelu, pa se ključno pitanje pomiče s razine na strukturu i kvalitetu te potrošnje. Slika koja slijedi prikazuje taj raspon i smješta Hrvatsku među odabrane članice Unije.
+Hrvatska se u toj slici smješta blizu europskog prosjeka. Ukupni rashodi opće države u 2024. iznosili su oko 48 % BDP-a, što je vrlo blizu prosjeka Unije i ispod razine najskupljih država blagostanja poput Francuske, Finske ili Austrije ({Eurostat}, 2025).[2] Hrvatska time nije zemlja male države. Po veličini javne potrošnje pripada europskom modelu, pa se ključno pitanje pomiče s razine na strukturu i kvalitetu te potrošnje. Smještena među odabrane članice Unije, ona se nalazi u širokom rasponu koji se proteže od Irske na dnu do Francuske na vrhu.
 
 *Slika. Ukupni rashodi opće države u % BDP-a, odabrane zemlje EU. Zlatno je istaknuta Hrvatska, zeleno prosjek EU, a isprekidana linija označava prosjek OECD-a. EU i većina zemalja prikazani su za 2023., Hrvatska za 2024. (Eurostat, OECD).*
 
@@ -199,6 +199,8 @@ Razloži li se hrvatska potrošnja po funkcijama, dobiva se profil na sljedećoj
 
 *Slika. Funkcionalna struktura rashoda opće države Hrvatske, 2024., u % BDP-a (COFOG). Socijalna zaštita dominira, slijede zdravstvo i ekonomski poslovi. Stavka „Ostalo\" obuhvaća javni red i sigurnost, obranu, zaštitu okoliša, stanovanje te rekreaciju i kulturu. Izvor: Eurostat (gov_10a_exp).*
 
+Stavi li se taj profil uz europsku strukturu s prethodne slike, posebnost Hrvatske postaje čitljiva u dvjema funkcijama. Socijalna zaštita prema COFOG-u opće države nosi 13,8 % BDP-a, osjetno ispod europskih 19,2 %, dok zdravstvo s 9,0 % BDP-a nadmašuje europskih 7,3 %.[4] Hrvatska tako manje vaga prema mirovinama i socijalnim transferima, a razmjerno više prema javnom zdravstvu i, kao kohezijska zemlja, prema ekonomskim poslovima.
+
 | Tip zemlje | Tipične zemlje | Što prevladava | Ključno objašnjenje |
 |---|---|---|---|
 | Socijalna država visokih transfera | Finska, Francuska, Austrija, Italija | Socijalna zaštita | Mirovine, starenje, široka socijalna prava |
@@ -209,15 +211,17 @@ Razloži li se hrvatska potrošnja po funkcijama, dobiva se profil na sljedećoj
 
 : Funkcionalni profili javne potrošnje po skupinama zemalja
 
-Te dvije funkcije, socijalna zaštita i zdravstvo, čine srž europske države blagostanja. Slika koja slijedi zbraja ih po zemljama, od Irske na dnu do Francuske i Finske na vrhu. Hrvatska se s 20,5 % BDP-a prema COFOG-u smješta u donju polovicu raspona, osjetno ispod prosjeka Unije.
+Te dvije funkcije, socijalna zaštita i zdravstvo, čine srž europske države blagostanja, pa ih je uputno čitati zajedno. Zbrojene po zemljama, raspoređuju se od Irske na dnu do Francuske i Finske na vrhu.
 
-*Slika. Rashodi za socijalnu zaštitu (GF10) i zdravstvo (GF07) zajedno, % BDP-a, 2023. Zemlje su poredane od najmanjeg do najvećeg zbroja, a Hrvatska je istaknuta zlatnim obrubom. Izvor: Eurostat (gov_10a_exp, COFOG).*
+*Slika. Rashodi za socijalnu zaštitu (GF10) i zdravstvo (GF07) zajedno, % BDP-a, 2023. Zemlje su poredane od najmanjeg do najvećeg zbroja, a Hrvatska je istaknuta zlatnim obrubom. Isprekidana siva linija označava prosjek EU27 od 26,4 % BDP-a. Izvor: Eurostat (gov_10a_exp, COFOG).*
+
+Hrvatska se s 20,5 % BDP-a smješta u donju polovicu raspona, ispod prosjeka EU27 od 26,4 % BDP-a. Razmjer između dvaju stupaca pritom ne prati ukupan zbroj jednako u svim zemljama, jer hrvatski je zaostatak gotovo u cijelosti na strani socijalne zaštite, dok je udio zdravstva blizu europskog. Niža ukupna razina tako više govori o slabijim mirovinskim i socijalnim davanjima nego o štednji na zdravstvu.
 
 ## Kako država troši — ekonomska struktura rashoda
 
-Treći sloj otkriva kako se novac troši, neovisno o tome kojoj je funkciji namijenjen. Promatraju li se rashodi Unije prema ekonomskim transakcijama, najveći dio, oko 43 % ukupnih rashoda, čine socijalna davanja i transferi u naravi, slijede naknade zaposlenima u javnom sektoru s približno petinom rashoda i intermedijarna potrošnja, odnosno roba i usluge koje država kupuje, s oko 12 % ({Eurostat}, 2025). Bruto investicije, razvojna komponenta proračuna, čine tek oko 7 % rashoda, subvencije oko 4 %, a kamate na javni dug oko 3,5 %. Slika prikazuje taj raspored i razdvaja tekuće rashode od razvojnih i kapitalnih.
+Treći sloj otkriva kako se novac troši, neovisno o tome kojoj je funkciji namijenjen. Promatraju li se rashodi Unije prema ekonomskim transakcijama, najveći dio, oko 43 % ukupnih rashoda, čine socijalna davanja i transferi u naravi, slijede naknade zaposlenima u javnom sektoru s približno petinom rashoda i intermedijarna potrošnja, odnosno roba i usluge koje država kupuje, s oko 12 % ({Eurostat}, 2025). Bruto investicije, razvojna komponenta proračuna, čine tek oko 7 % rashoda, subvencije oko 4 %, a kamate na javni dug oko 3,5 %. Poredaju li se te kategorije po veličini, razvojni i kapitalni rashodi jasno se izdvajaju od tekućih.
 
-*Slika. Struktura rashoda opće države u EU prema ekonomskim transakcijama, 2023., u % ukupnih rashoda (Eurostat). Zlatno su označeni razvojni i kapitalni rashodi, sivo tekući.*
+*Slika. Struktura rashoda opće države u EU prema ekonomskim transakcijama, 2023., u % ukupnih rashoda (Eurostat). Zelenom su označeni razvojni i kapitalni rashodi, sivo tekući.*
 
 Taj se raspored izravno nadovezuje na ranije razlikovanje produktivne i neproduktivne potrošnje. Najveći dio javnih rashoda tekuće je naravi, dok je razvojna investicijska komponenta razmjerno mala, a kamate podsjećaju da su prošle fiskalne odluke trajni teret sadašnjeg proračuna. Upravo zato struktura rashoda po transakcijama pokazuje koliko prostora država ostavlja za ulaganja koja podižu buduću produktivnost, a koliko je vezana tekućim obvezama.
 
@@ -285,3 +289,4 @@ c. Zašto u uvjetima visokog multiplikatora restriktivna politika može kratkoro
 1. Daljnje čitanje: Afonso, Schuknecht i Tanzi (2005), *Public Sector Efficiency: An International Comparison* (https://www.ecb.europa.eu/pub/pdf/scpwps/ecbwp242.pdf) (ECB WP 242).
 2. Podaci za EU i za funkcionalnu strukturu odnose se na 2023., a hrvatski podatak o ukupnim rashodima na 2024., pa su razine neznatno različite zbog godine, a ne metodologije. Izvor je Eurostat (tablica gov_10a_main).
 3. ESSPROS i COFOG nisu istovjetni. ESSPROS obuhvaća sve sheme socijalne zaštite i u pravilu daje viši iznos od COFOG funkcije „socijalna zaštita" opće države, pa hrvatskih 20,6 % nije izravno usporedivo s europskih 19,2 % prema COFOG-u.
+4. Udio socijalne zaštite za Hrvatsku razlikuje se između ovog grafa i grafa zbroja socijalne zaštite i zdravstva koji slijedi. Ovdje je riječ o 13,8 % BDP-a za 2024., a u sljedećem grafu o 12,8 % BDP-a za 2023., pa je razlika posljedica referentne godine i nešto drukčijih ulaznih vrijednosti, a ne metodologije.

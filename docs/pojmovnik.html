@@ -82,9 +82,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-4d4ad920c17a1b28c6a7c1d28bdd063b.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-82ee6af9037b0f8662275a54902a941e.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="site_libs/bootstrap/bootstrap-dark-8a7bb8ccb70b97304dcc767d1a2c4567.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<link href="site_libs/bootstrap/bootstrap-82ee6af9037b0f8662275a54902a941e.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-8b1c720448afe02710937b9cddb6dc33.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-dark-20a53a0befdf4f03e49c7494d4c35ead.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="site_libs/bootstrap/bootstrap-8b1c720448afe02710937b9cddb6dc33.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -1081,33 +1081,41 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </main> <!-- /main -->
 <style>
 
-/* "Pitaj AI o ovom poglavlju" — kompaktni padajući izbornik uz naslov poglavlja */
+/* "Pitaj AI o ovom poglavlju" — kompaktni padajući izbornik uz naslov poglavlja.
 
-.ai-cta { margin: .4rem 0 1.4rem; font-family: "Public Sans", system-ui, sans-serif; }
+   Mono, minimalan registar, usklađen s uci-s-ai.qmd; verdigris radi i u tamnom modu. */
+
+.ai-cta { margin: .5rem 0 1.5rem;
+
+  font-family: "IBM Plex Mono", ui-monospace, "SF Mono", Menlo, monospace; }
 
 .ai-cta > summary { display: inline-flex; align-items: center; gap: .4rem; cursor: pointer;
 
-  list-style: none; font-size: .9rem; font-weight: 600; color: #335043;
+  list-style: none; font-size: .8rem; font-weight: 500; letter-spacing: .005em;
 
-  background: #FBF8F1; border: 1px solid #4A6B5C; border-radius: 9px;
+  color: #4A6B5C; background: transparent; border: 1px solid rgba(74,107,92,0.5);
 
-  padding: .42rem .8rem; width: max-content; transition: background .15s; }
+  border-radius: 6px; padding: .45rem .8rem; width: max-content;
+
+  transition: background .15s, color .15s, border-color .15s; }
 
 .ai-cta > summary::-webkit-details-marker { display: none; }
 
-.ai-cta > summary:hover { background: #EAF0EC; }
+.ai-cta > summary:hover,
 
-.ai-cta[open] > summary { background: #EAF0EC; }
+.ai-cta[open] > summary { background: #4A6B5C; color: #F2EDE3; border-color: #4A6B5C; }
 
 .ai-cta-menu { display: flex; flex-wrap: wrap; gap: .45rem; margin-top: .55rem; }
 
-.ai-cta-menu a { font-size: .85rem; font-weight: 600; text-decoration: none;
+.ai-cta-menu a { font-family: inherit; font-size: .76rem; font-weight: 500;
 
-  color: #335043; background: #FBF8F1; border: 1px solid #D8CFBE; border-radius: 8px;
+  text-decoration: none; color: #4A6B5C; background: transparent;
 
-  padding: .4rem .75rem; line-height: 1.2; transition: border-color .15s, background .15s; }
+  border: 1px solid rgba(74,107,92,0.5); border-radius: 6px; padding: .4rem .72rem;
 
-.ai-cta-menu a:hover { border-color: #4A6B5C; background: #EAF0EC; }
+  line-height: 1.2; transition: background .15s, border-color .15s; }
+
+.ai-cta-menu a:hover { background: rgba(74,107,92,0.12); border-color: #4A6B5C; }
 
 </style>
 
@@ -1955,13 +1963,25 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
     var absMd   = location.origin + mdHref;
 
+    // Kratka uputa (mora ostati kratka jer ide u URL); usklađena s manifest.promptShort
+
+    // iz R/build-ai-exports.R. Puna mentorska uputa živi na stranici „Uči s AI”.
+
     var tutor =
 
-      "Ti si mentor za udžbenik „Sve što želite znati o državi i javnim politikama u " +
+      "Ti si moj mentor za udžbenik „Sve što želite znati o državi i javnim politikama u " +
 
-      "Hrvatskoj”. Odgovaraj na hrvatskom, oslanjaj se samo na priloženi tekst, citiraj " +
+      "Hrvatskoj” (javne financije, teorija javnog izbora i javne politike). Oslanjaj se " +
 
-      "poglavlja i reci „ne znam” ako odgovora nema u tekstu.";
+      "isključivo na priloženi tekst, poglavlja imenuj riječima, a ne brojem, i jasno reci " +
+
+      "„Toga nema u priloženom tekstu” kad odgovora nema; ne izmišljaj brojke, izvore ni " +
+
+      "citate. Objašnjavaj korak po korak na hrvatskom, primjerima i analogijama, prilagodi " +
+
+      "se mojoj razini i na zahtjev sažmi gradivo, izradi kviz, kartice ili plan učenja. Na " +
+
+      "početku me pitaj što učim i koji mi je cilj.";
 
     var q = encodeURIComponent(
 

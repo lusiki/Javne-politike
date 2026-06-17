@@ -70,7 +70,7 @@ viewof pog = Inputs.select(manifest.chapters, {
 //| echo: false
 {
   const c = pog;
-  const tutor = manifest.prompt;
+  const tutor = manifest.promptShort;                 // kratka uputa za URL (puna je u polju niže)
   const rel = "ai/" + c.slug + ".md";                 // same-origin -> download radi i u pregledu
   const q = encodeURIComponent(
     tutor +
@@ -220,7 +220,8 @@ odgovara na hrvatskom.
 .ai-prompt-text { font-family: "IBM Plex Mono", ui-monospace, "SF Mono", Menlo, monospace;
   font-size: .82rem; line-height: 1.65; color: #2B2620; background: #FBF8F1;
   border: 1px solid rgba(28,25,22,0.12); border-left: 2px solid #4A6B5C;
-  border-radius: 6px; padding: .95rem 1.05rem; margin: 0 0 .7rem; }
+  border-radius: 6px; padding: .95rem 1.05rem; margin: 0 0 .7rem;
+  white-space: pre-wrap; max-height: 24rem; overflow: auto; }
 
 /* OJS select u mono registru */
 .ai-page .observablehq label, .ai-page label {

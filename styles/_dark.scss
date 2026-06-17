@@ -354,6 +354,12 @@ figure.figure img {
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.40) !important;
 }
 
+// Ploča (slikovnica) na Priručniku — blagi okvir da svijetli plakat ne lebdi na sepiji.
+.guide-plate img {
+  border: 1px solid rgba(159, 144, 123, 0.20) !important;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.45) !important;
+}
+
 figure > figcaption,
 figure.figure figcaption {
   color: #C7BEAF !important;

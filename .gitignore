@@ -28,6 +28,13 @@ pdf/*
 !pdf/Javne-politike.pdf
 !pdf/Prirucnik.pdf
 
+# docs/pdf is the served PDF folder; renders also copy resources (apple-touch
+# -icon, robots.txt, even a recursive docs/pdf/docs/…) into it. Keep only the
+# two canonical PDFs.
+docs/pdf/*
+!docs/pdf/Javne-politike.pdf
+!docs/pdf/Prirucnik.pdf
+
 ### Temp / scratch ###
 tmp/
 mnt/

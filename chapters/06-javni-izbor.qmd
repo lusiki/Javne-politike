@@ -166,7 +166,7 @@ ggplot(curve_df, aes(N, R)) +
 ```
 :::
 
-Unatoč tom računu izlaznost nije nula, ali ni postojana. Hrvatski podaci pokazuju dvije pravilnosti koje model nagoviješta. Izlaznost na parlamentarnim i predsjedničkim izborima dugoročno opada, s oko tri četvrtine biračkog tijela u devedesetima na manje od polovice na pojedinim izborima nakon 2010., uz povremene oporavke kad je ulog veći. Izlaznost usto oštro ovisi o tome koliko birači drže da je u igri, pa je na izborima za Europski parlament, koje mnogi doživljavaju kao niskoulog, ostala na tek petini do trećine biračkog tijela. Slika koja slijedi prikazuje izlaznost u Hrvatskoj po vrsti izbora.
+Unatoč tom računu izlaznost nije nula, ali ni postojana. Hrvatski podaci o izlaznosti po vrsti izbora pokazuju dvije pravilnosti koje model nagoviješta.
 
 ::: {.content-visible when-format="html"}
 ```{ojs}
@@ -205,7 +205,7 @@ Unatoč tom računu izlaznost nije nula, ali ni postojana. Hrvatski podaci pokaz
     style: {fontSize: "12px", fontFamily: "Public Sans, system-ui, sans-serif", color: "#3A332D"},
     x: {label: null, tickFormat: d => "" + d, ticks: [1992,1996,2000,2004,2008,2012,2016,2020,2024]},
     y: {label: "↑ Izlaznost (%)", domain: [0, 90], grid: true},
-    color: {domain: ["Parlamentarni","Predsjednički (1. krug)","Europski parlament"], range: ["#1C1916","#4A6B5C","#C8942D"], legend: true},
+    color: {domain: ["Parlamentarni","Predsjednički (1. krug)","Europski parlament"], range: ["#1C1916","#4A6B5C","#6B1F26"], legend: true},
     marks: [
       Plot.lineY(data, {x: "god", y: "v", stroke: "serija", z: "serija", strokeWidth: 2, curve: "monotone-x"}),
       Plot.dot(data, {x: "god", y: "v", fill: "serija", r: 3, tip: true})
@@ -245,13 +245,15 @@ ggplot(df, aes(god, v, color = serija)) +
   scale_color_manual(
     values = c("Parlamentarni" = "#1C1916",
                "Predsjednički (1. krug)" = "#4A6B5C",
-               "Europski parlament" = "#C8942D"), name = NULL) +
+               "Europski parlament" = "#6B1F26"), name = NULL) +
   scale_y_continuous(limits = c(0, 90)) +
   scale_x_continuous(breaks = seq(1992, 2024, 4)) +
   labs(x = NULL, y = "Izlaznost (%)") +
   theme_pubfin()
 ```
 :::
+
+Graf čita račun glasanja gotovo doslovno. Izlaznost prati percipirani ulog $B$ i tijesnost $P$, pa je visoka ondje gdje birači drže da se odlučuje nešto važno i gdje je trka neizvjesna. Na parlamentarnim i predsjedničkim izborima zato se kreće od oko tri četvrtine biračkog tijela u devedesetima prema manje od polovice na pojedinim izborima nakon 2010., uz oporavke kad je ulog veći, kao 2024. Tamo gdje birači percipirani ulog drže malenim račun se urušava, pa na izborima za Europski parlament, koje mnogi doživljavaju kao niskoulog, izlaznost ostaje na tek petini do trećine. Sustavna razlika između tih krivulja nije pokazatelj građanske kulture, nego očekivanog umnoška $P \cdot B$ uz isti trošak izlaska.
 
 Ista logika malene vjerojatnosti utjecaja koja obeshrabruje izlazak na birališta obeshrabruje i prikupljanje informacija. Trošak stjecanja detaljnih političkih informacija gotovo uvijek nadmašuje očekivanu instrumentalnu korist za pojedinog birača, s obzirom na zanemarivu vjerojatnost da će njegov glas promijeniti ishod. Takvo racionalno nepoznavanje (*rational ignorance*) ne dovodi samo do nedostatnog prikupljanja informacija, nego i do neučinkovitog korištenja onih koje birači već posjeduju.
 

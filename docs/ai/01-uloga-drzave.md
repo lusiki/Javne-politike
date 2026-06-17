@@ -48,9 +48,11 @@ Razdvajanje je važno jer svaka funkcija traži vlastiti analitički aparat i vl
 
 Musgraveov okvir povezuje tri funkcije države s pripadnim analitičkim pristupom i normativnim osnovama državne intervencije.
 
-Te tri funkcije nisu apstrakcija jer iza svake stoje stvarni novci. Moderna država u Hrvatskoj i u prosjeku Europske unije troši blizu polovice ukupnoga gospodarstva, a u kriznim godinama i više, pa pitanje njezine uloge nije pitanje rubne pojave nego glavnine društvenih resursa. Slika koja slijedi prikazuje ukupne rashode opće države kao udio u BDP-u, gdje se vidi i nagli skok u pandemijskoj 2020. godini te povratak prema razini od oko 48 % BDP-a. Sastav te potrošnje razlažemo u poglavlju o javnoj potrošnji, a ovdje ona pokazuje o kolikom je udjelu gospodarstva riječ.
+Te tri funkcije nisu apstrakcija jer iza svake stoje stvarni novci. Koliko je tih novaca, najlakše je vidjeti u ukupnim rashodima opće države izraženima kao udio u BDP-u. Moderna država u Hrvatskoj i u prosjeku Europske unije troši blizu polovice ukupnoga gospodarstva, a u kriznoj 2020. godini i osjetno više, pa pitanje njezine uloge nije pitanje rubne pojave nego glavnine društvenih resursa. Sastav te potrošnje razlažemo u poglavlju o javnoj potrošnji, a ovdje ona pokazuje o kolikom je udjelu gospodarstva riječ.
 
-*Slika. Ukupni rashodi opće države u % BDP-a, Hrvatska i prosjek EU27, 2002.–2024. Zlatno je Hrvatska, tamno prosjek Unije. Vrhunac u 2020. odražava pandemijski fiskalni odgovor. Izvor: Eurostat (gov_10a_main, sektor opće države S13).*
+*Slika. Ukupni rashodi opće države u % BDP-a, Hrvatska i prosjek EU27, 2002.–2024. Zlatno je Hrvatska, zeleno prosjek Unije. Vrhunac u 2020. odražava pandemijski fiskalni odgovor. Izvor: Eurostat (gov_10a_main, sektor opće države S13).*
+
+Dvije se serije gotovo poklapaju, pa Hrvatska po veličini države nije iznimka u Europskoj uniji, a pandemijski skok 2020. zajednički je objema. Ta razina rashoda od oko 48 % BDP-a otvara i pitanje na koje se vraćamo u poglavlju o porezima, jer porezno opterećenje stoji osjetno niže, a razmak između toga koliko država troši i koliko prihoduje postaje vlastita tema kasnijih poglavlja.
 
 ## Tržište kao mehanizam učinkovite alokacije
 

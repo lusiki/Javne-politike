@@ -20,6 +20,12 @@ format:
     page-layout: article
 ---
 
+::: {.content-hidden when-format="latex"}
+::: {.guide-plate}
+![](images/prirucnik/ph2.jpg){fig-alt="Ilustrirani plakat: građani i interesne skupine povlače uže oko državnog proračuna podijeljenog na zdravstvo i socijalnu zaštitu, uz kartu Hrvatske te ikone institucija, politike i ekonomije." width="100%"}
+:::
+:::
+
 ## Uvod
 
 Zamislite da ujutro uđete u trgovinu i na polici zateknete kruh, mlijeko i stotinjak drugih stvari, svaku s cijenom koju možete pročitati. Nitko to nije naredio. Nijedan ured nije odlučio koliko kruha treba ispeći baš u vašem kvartu. A ipak je kruh gotovo svakog jutra tu. To tiho čudo zove se tržište.

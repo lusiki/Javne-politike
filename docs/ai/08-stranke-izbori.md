@@ -49,6 +49,8 @@ Stvarni razmještaj hrvatskih stranaka na osi ljevica–desnica potvrđuje obje 
 
 *Slika. Ideološki položaj hrvatskih stranaka na ljestvici ljevica–desnica (0 = krajnja ljevica, 10 = krajnja desnica), prema procjeni stručnjaka. Dvije najveće stranke (HDZ, SDP) bliže su sredini, dok novije stranke šire raspon prema krajevima. Izvor: Chapel Hill Expert Survey (CHES), val 2024. (varijabla lrgen).*
 
+Položaji na slici crtaju obje strane te priče. HDZ i SDP zbijeni su oko sredine, HDZ tek desno, a SDP tek lijevo od centra, što je upravo prostorni odraz konvergencije prema medijanskom biraču i istodobno odjek programske sličnosti koju opisuje prethodni primjer iz prakse. Novije stranke, pak, raspoređene su prema krajevima ljestvice, od Možemo na ljevici do Domovinskog pokreta na desnici, pa razvlače raspon koji su dvije velike stranke desetljećima držale uskim. To razilaženje vodi izravno u pitanje polarizacije, jer raspršenost ponude prema rubovima mijenja i sam način na koji se stranke natječu za glas.
+
 ## Kako se stranke natječu za glas
 
 Stranke nisu pasivni prenositelji biračkih preferencija, nego aktivni poduzetnici koji oblikuju ponudu. Glavna je strategija **diferencijacija ponude** u kojoj stranke ne nude samo tehničke politike, nego cjelovite „brendove" koji kombiniraju ekonomske mjere, identitetske signale i emocionalne apele. Takvi brendovi služe kao informacijski prečaci biračima koji nemaju poticaja ulagati velik trud u analizu programa.

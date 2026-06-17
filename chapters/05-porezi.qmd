@@ -45,7 +45,7 @@ Razvoj moderne države od 17. stoljeća nadalje označava prekretnicu u povijest
 
 Industrijska revolucija dodatno transformira porezne sustave. S rastom industrijske proizvodnje, urbanizacijom i razvojem financijskih tržišta, države uvode sve sofisticiranije oblike oporezivanja dohotka, dobiti i potrošnje. U 20. stoljeću, osobito nakon Velike depresije i Drugog svjetskog rata, dolazi do snažnog širenja uloge države i razvoja socijalne države. Porezi tada dobivaju ne samo fiskalnu, već i redistributivnu i stabilizacijsku funkciju, što ih čini ključnim instrumentom ekonomske politike [@stiglitz2015].
 
-Taj se dugoročni rast poreznog opterećenja može i izmjeriti. Slika koja slijedi prati prosječno porezno opterećenje razvijenih zemalja od početka 20. stoljeća do danas, pri čemu lijevi grafikon pokazuje dugi uspon s približno 11 % BDP-a oko 1900. na više od trideset posto danas, a desni izdvaja noviji period u kojem se Hrvatska uspoređuje s pojedinim članicama Unije. Hrvatsko opterećenje od oko 37 do 39 % BDP-a kreće se blizu prosjeka europskog panela i iznad prosjeka šire skupine razvijenih zemalja.
+Taj se dugoročni rast poreznog opterećenja može i izmjeriti. Prosječno porezno opterećenje razvijenih zemalja dugi luk od početka 20. stoljeća do danas vodi s približno 11 % BDP-a oko 1900. na više od trideset posto danas, a noviji panel uz njega smješta Hrvatsku među pojedine članice Unije.
 
 ::: {.content-visible when-format="html"}
 ```{ojs}
@@ -82,11 +82,11 @@ Taj se dugoročni rast poreznog opterećenja može i izmjeriti. Slika koja slije
     x: {label: null, domain: [1900, 2028], ticks: [1900, 1937, 1965, 2000, 2024], tickFormat: "d"},
     y: {label: "↑ % BDP-a", domain: [0, 52], grid: true, ticks: [0, 10, 20, 30, 40, 50]},
     marks: [
-      Plot.line(grey, {x: "year", y: "v", z: "geo", stroke: "#CBC5B8", strokeWidth: 0.7, tip: true}),
-      Plot.line(avgFull, {x: "year", y: "v", stroke: "#6B1F26", strokeWidth: 2.6, tip: true}),
+      Plot.line(grey, {x: "year", y: "v", z: "geo", stroke: "#4A5568", strokeWidth: 0.7, tip: true}),
+      Plot.line(avgFull, {x: "year", y: "v", stroke: "#6B6357", strokeWidth: 2.6, tip: true}),
       Plot.line(hrMod, {x: "year", y: "v", stroke: "#C8942D", strokeWidth: 2, tip: true}),
       Plot.ruleX([1962], {stroke: "#9A948A", strokeDasharray: "3,3"}),
-      Plot.text([{x: 1905, y: 43}], {x: "x", y: "y", text: ["Prosjek razvijenih"], fill: "#6B1F26", fontWeight: 700, fontSize: 11, textAnchor: "start"}),
+      Plot.text([{x: 1905, y: 43}], {x: "x", y: "y", text: ["Prosjek razvijenih"], fill: "#6B6357", fontWeight: 700, fontSize: 11, textAnchor: "start"}),
       Plot.text([{x: 1998, y: 45}], {x: "x", y: "y", text: ["Hrvatska"], fill: "#9A6F38", fontWeight: 700, fontSize: 11, textAnchor: "end"})
     ]
   });
@@ -97,10 +97,10 @@ Taj se dugoročni rast poreznog opterećenja može i izmjeriti. Slika koja slije
     x: {label: null, domain: [2008, 2025], ticks: [2008, 2014, 2020, 2025], tickFormat: "d"},
     y: {label: "↑ % BDP-a", domain: [22, 52], grid: true},
     marks: [
-      Plot.line(mk(yrsM, tFR), {x: "year", y: "v", stroke: "#B8B2A6", strokeWidth: 1.2}),
-      Plot.line(mk(yrsM, tDE), {x: "year", y: "v", stroke: "#B8B2A6", strokeWidth: 1.2}),
-      Plot.line(mk(yrsM, tRO), {x: "year", y: "v", stroke: "#B8B2A6", strokeWidth: 1.2}),
-      Plot.line(mk(yrsM, tAvg), {x: "year", y: "v", stroke: "#6B1F26", strokeWidth: 2.4, tip: true}),
+      Plot.line(mk(yrsM, tFR), {x: "year", y: "v", stroke: "#4A5568", strokeWidth: 1.2}),
+      Plot.line(mk(yrsM, tDE), {x: "year", y: "v", stroke: "#4A5568", strokeWidth: 1.2}),
+      Plot.line(mk(yrsM, tRO), {x: "year", y: "v", stroke: "#4A5568", strokeWidth: 1.2}),
+      Plot.line(mk(yrsM, tAvg), {x: "year", y: "v", stroke: "#6B6357", strokeWidth: 2.4, tip: true}),
       Plot.line(mk(yrsM, tHR), {x: "year", y: "v", stroke: "#C8942D", strokeWidth: 2.4, tip: true}),
       Plot.text([{x: 2025, y: 46.1, t: "Francuska"}, {x: 2025, y: 41.8, t: "Njemačka"}, {x: 2025, y: 29.2, t: "Rumunjska"}],
         {x: "x", y: "y", text: "t", dx: 4, textAnchor: "start", fontSize: 9.5, fill: "#6B6357"})
@@ -113,9 +113,9 @@ Taj se dugoročni rast poreznog opterećenja može i izmjeriti. Slika koja slije
       <div><div style="font:600 12px Public Sans, system-ui, sans-serif;color:#1C1916;margin-bottom:2px">B) Moderni panel, 2008.–2025.</div>${B}</div>
     </div>
     <div style="font:12px Public Sans, system-ui, sans-serif;color:#3A332D;text-align:center;margin-top:4px">
-      <span style="color:#6B1F26;font-weight:700">━ prosjek razvijenih zemalja</span>&nbsp;&nbsp;
+      <span style="color:#6B6357;font-weight:700">━ prosjek razvijenih zemalja</span>&nbsp;&nbsp;
       <span style="color:#9A6F38;font-weight:700">━ Hrvatska</span>&nbsp;&nbsp;
-      <span style="color:#9A948A">━ pojedine zemlje</span>
+      <span style="color:#4A5568">━ pojedine zemlje</span>
     </div>
   </figure>`;
 }
@@ -176,13 +176,15 @@ ggplot(df, aes(year, v, group=interaction(panel, series), color=kind, linewidth=
                inherit.aes=FALSE, linetype="22", color="#9A948A", linewidth=0.4) +
   geom_line() +
   facet_wrap(~panel, scales="free_x") +
-  scale_color_manual(values=c("Pojedine zemlje"="#B8B2A6","Prosjek razvijenih"="#6B1F26","Hrvatska"="#C8942D"), name=NULL) +
+  scale_color_manual(values=c("Pojedine zemlje"="#4A5568","Prosjek razvijenih"="#6B6357","Hrvatska"="#C8942D"), name=NULL) +
   scale_linewidth_manual(values=c("Pojedine zemlje"=0.4,"Prosjek razvijenih"=1.1,"Hrvatska"=1.0), guide="none") +
   scale_y_continuous(labels=function(x) paste0(x, " %"), limits=c(0,52)) +
   labs(x=NULL, y=NULL) +
   theme(legend.position="top", strip.text=element_text(face="bold", color="#1C1916"))
 ```
 :::
+
+Hrvatsko opterećenje od oko 37 do 39 % BDP-a kreće se blizu prosjeka europskog panela i iznad prosjeka šire skupine razvijenih zemalja, premda usporedba ima jedan rez. Lijevi grafikon do oko 1962. mjeri javne rashode kao povijesni pokazatelj, a kasnije porezne prihode s doprinosima, pa visinu treba čitati kao indikativni trend, a ne kao prekinutu istovrsnu seriju. Ta razina opterećenja ujedno otvara recipročnu sliku prema poglavlju o ulozi države. Dok rashodi opće države dosežu oko 48 % BDP-a, porezno opterećenje stoji na oko 37 do 39 %, pa razmak između toga koliko država troši i koliko prihoduje ostaje popuniti zaduživanjem, što nas vodi prema stabilizacijskoj funkciji i pitanju javnog duga.
 
 U suvremenim ekonomijama porezni sustavi postaju iznimno složeni, ali i neizostavni za funkcioniranje države. Oni više nisu samo alat za prikupljanje prihoda, već i mehanizam kojim se oblikuju ekonomski poticaji, raspodjela dohotka i ukupna razina društvenog blagostanja. Povijesni razvoj poreza od naturalnih davanja u ranim civilizacijama do današnjih kompleksnih sustava jasno pokazuje koliko su porezi duboko ukorijenjeni u samoj strukturi modernih društava i koliko su povezani s razvojem države i ekonomije.
 

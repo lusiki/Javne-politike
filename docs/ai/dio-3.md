@@ -56,6 +56,10 @@ Institucionalna kvaliteta nije samo teorijski pojam jer se i mjeri. Najpoznatiji
 
 *Slika. Kvaliteta upravljanja, percentilni rang (0–100, viši je bolji), Hrvatska i Slovenija, 2023. Slovenija nadmašuje Hrvatsku na svih šest dimenzija, a najveći zaostatak Hrvatske je na vladavini prava i kontroli korupcije. Izvor: Svjetska banka, Worldwide Governance Indicators (ažuriranje 2024.).*
 
+Slika potvrđuje da razmak nije ujednačen. Slovenija vodi na svih šest dimenzija, ali su razlike najmanje ondje gdje obje zemlje stoje relativno dobro, na kvaliteti regulacije i učinkovitosti vlasti, a najveće ondje gdje se institucionalna kvaliteta i osjeti u svakodnevnom poslovanju. Hrvatska najviše zaostaje upravo na vladavini prava (59 naspram 83) i kontroli korupcije (60 naspram 77), dakle na dimenzijama koje mjere koliko se pravila pouzdano i nepristrano provode, a ne koliko ih dobro izgledaju na papiru. Time se vraćamo na početnu tezu poglavlja jer dvije zemlje sličnoga povijesnog polazišta i gotovo identičnoga formalnog okvira proizvode različite ishode tek kroz razliku u provedbi.
+
+Vrijedi pritom zapamtiti slovenski rezultat na vladavini prava, jer ćemo ga u poglavlju o konstitucionalnoj ekonomici sresti naopako okrenutog. Ondje će se pokazati da je Slovenija, koja ovdje vodi po kvaliteti upravljanja, među zemljama s najslabijim formalnim fiskalnim pravilima, dok je Hrvatska gotovo zrcalna slika jer ima razmjerno jaka pravila na papiru, ali slabiju vladavinu prava koja bi ih trebala provoditi. Taj će kontrast biti najjasniji podsjetnik da snaga zapisanog pravila i kvaliteta njegove provedbe nisu ista stvar.
+
 ## Transakcijski troškovi
 
 Jedan od najvažnijih doprinosa nove institucionalne ekonomike jest koncept **transakcijskih troškova**. Ronald Coase je u poznatom radu o prirodi poduzeća pokazao da tržišta nisu besplatna (Coase, 1937). U udžbeničkim modelima često se pretpostavlja da se kupci i prodavatelji lako pronalaze, da raspolažu informacijama i da se ugovor bez problema provodi. U stvarnom svijetu svaka razmjena zahtijeva vrijeme, informacije, pregovaranje, pravnu sigurnost i povjerenje. Upravo ti „skriveni" troškovi određuju koliko će tržišta biti učinkovita i hoće li se neka transakcija uopće dogoditi.
@@ -304,6 +308,10 @@ Snaga nacionalnih fiskalnih pravila uvelike se razlikuje među zemljama, pa je E
 <!-- TODO(coauthor) Indeks snage fiskalnih pravila: prikazane su vrijednosti iz vintagea Europske komisije oko 2012., a Hrvatska (≈1,4) iz 2013. (hrvatska FRI literatura prema metodologiji EK). EK u međuvremenu objavljuje ažurirani Fiscal Rules Strength Index (1990.–2024.). Milan/Petra/Luka mogu zamijeniti najnovijim vrijednostima i potvrditi točan izvor za HR prije finalne verzije. -->
 
 *Slika. Indeks snage nacionalnih fiskalnih pravila, odabrane članice EU (standardizirano oko prosjeka EU; više znači stroža i obvezujućija pravila). Vrijednosti su indikativne i odnose se na razdoblje oko 2012.–2013. (Hrvatska 2013.). Izvor: Europska komisija, baza fiskalnog upravljanja; izračun za Hrvatsku prema metodologiji EK.*
+
+Slika smješta Hrvatsku u gornju polovicu, s vrijednošću oko 1,4, dakle iznad prosjeka Unije i ispred Njemačke, Nizozemske i Italije, dok je na samom dnu ljestvice Slovenija s negativnom vrijednošću. Taj raspored treba pažljivo čitati jer mjeri snagu pravila na papiru, ne njihovu provedbu. Upravo tu leži obrat koji upotpunjuje sliku iz poglavlja o institucionalnoj ekonomici. Ondje Slovenija vodi nad Hrvatskom na svih šest dimenzija kvalitete upravljanja, a najuvjerljivije baš na vladavini prava, dok ovdje stoji na dnu po formalnoj snazi fiskalnih pravila. Hrvatska je njezina gotovo savršena zrcalna slika jer ima razmjerno jaka pravila na papiru, ali slabiju vladavinu prava koja bi ih trebala pretvoriti u stvarno ograničenje.
+
+Taj par zemalja pokazuje poantu poglavlja jer snaga zapisanog pravila i sposobnost da ga se dosljedno provede ostaju dvije različite stvari, pa visok rang na ljestvici fiskalnih pravila sam po sebi ne jamči disciplinu, kao što ni slabo ocijenjen formalni okvir ne mora značiti neodgovornu politiku ako ga prati jaka vladavina prava. Pravilo vrijedi onoliko koliko ga je teško zaobići kad postane neugodno, a to ovisi o institucijama koje stoje iza njega.
 
 ## Neovisnost središnje banke kao rješenje vremenske nedosljednosti
 

@@ -229,9 +229,9 @@ U ranim fazama razvoja javnih financija fokus ekonomista bio je gotovo isključi
 
 Kako pokazuju povijesni podaci, u razdoblju od kraja 19. do početka 20. stoljeća javna potrošnja u razvijenim zemljama iznosila je tek oko 10 % BDP-a (Tanzi, 2000). Međutim, to ne znači da su ta društva bila manje razvijena, već da država nije obavljala funkcije koje danas smatramo standardnima, poput masovnog obrazovanja, javnog zdravstva, socijalne sigurnosti ili aktivne politike zapošljavanja.
 
-Dugoročni podaci taj rast čine opipljivim. Slika koja slijedi spaja povijesne procjene Tanzija i Schuknechta s modernim nizom Eurostata, pa lijevi grafikon prati prosjek sedamnaest razvijenih zemalja od 1870. do danas, dok desni izdvaja noviji period u kojem se Hrvatska može usporediti s pojedinim članicama Unije. Prosječni udio javne potrošnje narastao je s približno 10 % BDP-a u kasnom 19. stoljeću na blizu 45 % potkraj 20. stoljeća, gdje se otad uglavnom zadržava, a Hrvatska se cijelo razdoblje kreće blizu ili neznatno iznad tog prosjeka.
+Dugoročni podaci taj rast čine opipljivim. Spoje li se povijesne procjene Tanzija i Schuknechta s modernim nizom Eurostata, lijevi grafikon prati prosjek sedamnaest razvijenih zemalja od 1870. do danas, dok desni izdvaja noviji period u kojem se Hrvatska može usporediti s pojedinim članicama Unije. Prosječni udio javne potrošnje narastao je s približno 10 % BDP-a u kasnom 19. stoljeću na blizu 45 % potkraj 20. stoljeća, gdje se otad uglavnom zadržava, a Hrvatska se cijelo razdoblje kreće blizu ili neznatno iznad tog prosjeka.
 
-*Slika. Javna potrošnja kroz dugi rok. Lijevo: prosjek 17 razvijenih zemalja od 1870. (crveno) i Hrvatska (zlatno). Desno: moderni panel 2008.–2025., Hrvatska među odabranim članicama EU. Izvor: povijesni prosjeci Tanzi i Schuknecht (2000), Tablica I.1; moderni niz Eurostat (gov_10a_main); Hrvatska do 2007. procjene WB/IMF.*
+*Slika. Javna potrošnja kroz dugi rok. Lijevo prosjek 17 razvijenih zemalja od 1870. (topla siva) i Hrvatska (zlatno), uz isprekidanu liniju koja označava prijelom izvora oko 1996. Desno moderni panel 2008.–2025., Hrvatska među odabranim članicama EU. Izvor: povijesni prosjeci Tanzi i Schuknecht (2000), Tablica I.1; moderni niz Eurostat (gov_10a_main); Hrvatska do 2007. procjene WB/IMF.*
 
 Već krajem 19. stoljeća pojavljuju se prve teorijske naznake da minimalistički pristup državi nije dugoročno održiv. Adolph Wagner uočava da s razvojem industrijskog društva potreba za javnim uslugama ne raste slučajno, nego pravilno, pa to zapažanje uzdiže na razinu zakonitosti.
 
@@ -241,7 +241,7 @@ Wagner je ponudio i mehaniku tog rasta koja nadilazi puko empirijsko zapažanje.
 
 Empirijski je Wagnerov zakon potvrđen u dugim vremenskim serijama razvijenih zemalja, ali ga noviji radovi ograničavaju u dva smjera (Bird, 1971). Prvo, zakonitost vrijedi samo do određene razine razvoja, nakon koje udio javne potrošnje pokazuje znakove zasićenja. Drugo, rast nije automatski nego je posredovan političkim odlukama o tome koje od triju sila društvo prevodi u stvarnu javnu funkciju. To znači da Wagnerov zakon najbolje opisuje strukturni pritisak, ne i sam ishod, koji ostaje predmet političkog izbora i institucionalnog dizajna.
 
-Graf koji slijedi prikazuje predviđeni udio javne potrošnje u BDP-u u ovisnosti o dohotku po stanovniku, pri čemu logaritamski trend dočarava i rast i njegovo postupno zasićenje. Graf je interaktivan, pa klizač pomiče dohodak hipotetske zemlje uz krivulju, čime se vidi kako se udio javne potrošnje mijenja s razinom razvoja.
+Taj se odnos dade i vizualizirati. Predviđeni udio javne potrošnje u BDP-u raste s dohotkom po stanovniku, pri čemu logaritamski trend dočarava i sam rast i njegovo postupno zasićenje. Graf je interaktivan, pa klizač pomiče dohodak hipotetske zemlje uz krivulju, čime se vidi kako se udio javne potrošnje mijenja s razinom razvoja.
 
 *Slika. Ilustrativni prikaz Wagnerova zakona — bogatije zemlje u prosjeku troše veći udio BDP-a kroz javni sektor, uz znatno rasipanje oko trenda. Podaci su približni i služe za prikaz odnosa, a ne kao službena statistika.*
 
@@ -380,7 +380,7 @@ Najjednostavniji pokazatelj veličine države jest udio ukupnih rashoda opće dr
 
 Razlike su velike i unutar skupine razvijenih zemalja. U OECD-u su rashodi opće države u 2023. prosječno iznosili 42,6 % BDP-a, no europske članice troše osjetno više od neeuropskih, pa je prosjek članica koje su istodobno u Europskoj uniji bio blizu 49 % BDP-a ({OECD}, 2025). Unutar same Unije u 2023. ukupni rashodi opće države iznosili su 49,0 % BDP-a, ali se kreću u širokom rasponu. Najviše troše Francuska, Italija, Austrija, Grčka, Finska i Belgija, sve iznad 52 % BDP-a, dok su Cipar, Malta i Litva osjetno niže, oko 36 do 38 % BDP-a ({Eurostat}, 2025). Irska je poseban slučaj jer joj je BDP napuhan aktivnostima multinacionalnih kompanija, pa njezin udio rashoda od svega 20,6 % BDP-a podcjenjuje stvarnu veličinu države u odnosu na domaću ekonomsku aktivnost.
 
-Hrvatska se u toj slici smješta blizu europskog prosjeka. Ukupni rashodi opće države u 2024. iznosili su oko 48 % BDP-a, što je vrlo blizu prosjeka Unije i ispod razine najskupljih država blagostanja poput Francuske, Finske ili Austrije ({Eurostat}, 2025).[2] Hrvatska time nije zemlja male države. Po veličini javne potrošnje pripada europskom modelu, pa se ključno pitanje pomiče s razine na strukturu i kvalitetu te potrošnje. Slika koja slijedi prikazuje taj raspon i smješta Hrvatsku među odabrane članice Unije.
+Hrvatska se u toj slici smješta blizu europskog prosjeka. Ukupni rashodi opće države u 2024. iznosili su oko 48 % BDP-a, što je vrlo blizu prosjeka Unije i ispod razine najskupljih država blagostanja poput Francuske, Finske ili Austrije ({Eurostat}, 2025).[2] Hrvatska time nije zemlja male države. Po veličini javne potrošnje pripada europskom modelu, pa se ključno pitanje pomiče s razine na strukturu i kvalitetu te potrošnje. Smještena među odabrane članice Unije, ona se nalazi u širokom rasponu koji se proteže od Irske na dnu do Francuske na vrhu.
 
 *Slika. Ukupni rashodi opće države u % BDP-a, odabrane zemlje EU. Zlatno je istaknuta Hrvatska, zeleno prosjek EU, a isprekidana linija označava prosjek OECD-a. EU i većina zemalja prikazani su za 2023., Hrvatska za 2024. (Eurostat, OECD).*
 
@@ -400,6 +400,8 @@ Razloži li se hrvatska potrošnja po funkcijama, dobiva se profil na sljedećoj
 
 *Slika. Funkcionalna struktura rashoda opće države Hrvatske, 2024., u % BDP-a (COFOG). Socijalna zaštita dominira, slijede zdravstvo i ekonomski poslovi. Stavka „Ostalo\" obuhvaća javni red i sigurnost, obranu, zaštitu okoliša, stanovanje te rekreaciju i kulturu. Izvor: Eurostat (gov_10a_exp).*
 
+Stavi li se taj profil uz europsku strukturu s prethodne slike, posebnost Hrvatske postaje čitljiva u dvjema funkcijama. Socijalna zaštita prema COFOG-u opće države nosi 13,8 % BDP-a, osjetno ispod europskih 19,2 %, dok zdravstvo s 9,0 % BDP-a nadmašuje europskih 7,3 %.[4] Hrvatska tako manje vaga prema mirovinama i socijalnim transferima, a razmjerno više prema javnom zdravstvu i, kao kohezijska zemlja, prema ekonomskim poslovima.
+
 | Tip zemlje | Tipične zemlje | Što prevladava | Ključno objašnjenje |
 |---|---|---|---|
 | Socijalna država visokih transfera | Finska, Francuska, Austrija, Italija | Socijalna zaštita | Mirovine, starenje, široka socijalna prava |
@@ -410,15 +412,17 @@ Razloži li se hrvatska potrošnja po funkcijama, dobiva se profil na sljedećoj
 
 : Funkcionalni profili javne potrošnje po skupinama zemalja
 
-Te dvije funkcije, socijalna zaštita i zdravstvo, čine srž europske države blagostanja. Slika koja slijedi zbraja ih po zemljama, od Irske na dnu do Francuske i Finske na vrhu. Hrvatska se s 20,5 % BDP-a prema COFOG-u smješta u donju polovicu raspona, osjetno ispod prosjeka Unije.
+Te dvije funkcije, socijalna zaštita i zdravstvo, čine srž europske države blagostanja, pa ih je uputno čitati zajedno. Zbrojene po zemljama, raspoređuju se od Irske na dnu do Francuske i Finske na vrhu.
 
-*Slika. Rashodi za socijalnu zaštitu (GF10) i zdravstvo (GF07) zajedno, % BDP-a, 2023. Zemlje su poredane od najmanjeg do najvećeg zbroja, a Hrvatska je istaknuta zlatnim obrubom. Izvor: Eurostat (gov_10a_exp, COFOG).*
+*Slika. Rashodi za socijalnu zaštitu (GF10) i zdravstvo (GF07) zajedno, % BDP-a, 2023. Zemlje su poredane od najmanjeg do najvećeg zbroja, a Hrvatska je istaknuta zlatnim obrubom. Isprekidana siva linija označava prosjek EU27 od 26,4 % BDP-a. Izvor: Eurostat (gov_10a_exp, COFOG).*
+
+Hrvatska se s 20,5 % BDP-a smješta u donju polovicu raspona, ispod prosjeka EU27 od 26,4 % BDP-a. Razmjer između dvaju stupaca pritom ne prati ukupan zbroj jednako u svim zemljama, jer hrvatski je zaostatak gotovo u cijelosti na strani socijalne zaštite, dok je udio zdravstva blizu europskog. Niža ukupna razina tako više govori o slabijim mirovinskim i socijalnim davanjima nego o štednji na zdravstvu.
 
 ## Kako država troši — ekonomska struktura rashoda
 
-Treći sloj otkriva kako se novac troši, neovisno o tome kojoj je funkciji namijenjen. Promatraju li se rashodi Unije prema ekonomskim transakcijama, najveći dio, oko 43 % ukupnih rashoda, čine socijalna davanja i transferi u naravi, slijede naknade zaposlenima u javnom sektoru s približno petinom rashoda i intermedijarna potrošnja, odnosno roba i usluge koje država kupuje, s oko 12 % ({Eurostat}, 2025). Bruto investicije, razvojna komponenta proračuna, čine tek oko 7 % rashoda, subvencije oko 4 %, a kamate na javni dug oko 3,5 %. Slika prikazuje taj raspored i razdvaja tekuće rashode od razvojnih i kapitalnih.
+Treći sloj otkriva kako se novac troši, neovisno o tome kojoj je funkciji namijenjen. Promatraju li se rashodi Unije prema ekonomskim transakcijama, najveći dio, oko 43 % ukupnih rashoda, čine socijalna davanja i transferi u naravi, slijede naknade zaposlenima u javnom sektoru s približno petinom rashoda i intermedijarna potrošnja, odnosno roba i usluge koje država kupuje, s oko 12 % ({Eurostat}, 2025). Bruto investicije, razvojna komponenta proračuna, čine tek oko 7 % rashoda, subvencije oko 4 %, a kamate na javni dug oko 3,5 %. Poredaju li se te kategorije po veličini, razvojni i kapitalni rashodi jasno se izdvajaju od tekućih.
 
-*Slika. Struktura rashoda opće države u EU prema ekonomskim transakcijama, 2023., u % ukupnih rashoda (Eurostat). Zlatno su označeni razvojni i kapitalni rashodi, sivo tekući.*
+*Slika. Struktura rashoda opće države u EU prema ekonomskim transakcijama, 2023., u % ukupnih rashoda (Eurostat). Zelenom su označeni razvojni i kapitalni rashodi, sivo tekući.*
 
 Taj se raspored izravno nadovezuje na ranije razlikovanje produktivne i neproduktivne potrošnje. Najveći dio javnih rashoda tekuće je naravi, dok je razvojna investicijska komponenta razmjerno mala, a kamate podsjećaju da su prošle fiskalne odluke trajni teret sadašnjeg proračuna. Upravo zato struktura rashoda po transakcijama pokazuje koliko prostora država ostavlja za ulaganja koja podižu buduću produktivnost, a koliko je vezana tekućim obvezama.
 
@@ -486,6 +490,7 @@ c. Zašto u uvjetima visokog multiplikatora restriktivna politika može kratkoro
 1. Daljnje čitanje: Afonso, Schuknecht i Tanzi (2005), *Public Sector Efficiency: An International Comparison* (https://www.ecb.europa.eu/pub/pdf/scpwps/ecbwp242.pdf) (ECB WP 242).
 2. Podaci za EU i za funkcionalnu strukturu odnose se na 2023., a hrvatski podatak o ukupnim rashodima na 2024., pa su razine neznatno različite zbog godine, a ne metodologije. Izvor je Eurostat (tablica gov_10a_main).
 3. ESSPROS i COFOG nisu istovjetni. ESSPROS obuhvaća sve sheme socijalne zaštite i u pravilu daje viši iznos od COFOG funkcije „socijalna zaštita" opće države, pa hrvatskih 20,6 % nije izravno usporedivo s europskih 19,2 % prema COFOG-u.
+4. Udio socijalne zaštite za Hrvatsku razlikuje se između ovog grafa i grafa zbroja socijalne zaštite i zdravstva koji slijedi. Ovdje je riječ o 13,8 % BDP-a za 2024., a u sljedećem grafu o 12,8 % BDP-a za 2023., pa je razlika posljedica referentne godine i nešto drukčijih ulaznih vrijednosti, a ne metodologije.
 
 ---
 
@@ -567,15 +572,17 @@ Razlika nije samo tehnička. Porezi na potrošnju jednostavni su za prikupljanje
 
 : Osnovne vrste poreza prema poreznoj osnovici
 
-U svijetu ne postoji jedinstveni porezni model. Razvijene zemlje u pravilu imaju veći porezni teret jer financiraju širi opseg javnih usluga, dok manje razvijene zemlje često imaju užu poreznu osnovicu i slabiju administraciju. Podaci OECD-a dobro ilustriraju taj raspon, jer je prosječni porezni teret zemalja OECD-a u 2023. iznosio 33,7 % BDP-a, od manje od 20 % BDP-a u Meksiku do više od 45 % BDP-a u Danskoj ({OECD}, 2025). Jednako je važno odakle prihodi dolaze. U prosjeku OECD-a porezi na dohodak i dobit zajedno čine oko 35 % poreznih prihoda, socijalni doprinosi oko četvrtinu, a porezi na potrošnju gotovo trećinu, dok porezi na imovinu imaju manju i dugoročno opadajuću ulogu ({OECD}, 2025). Slika koja slijedi prikazuje raspon ukupnog tereta.
+U svijetu ne postoji jedinstveni porezni model. Razvijene zemlje u pravilu imaju veći porezni teret jer financiraju širi opseg javnih usluga, dok manje razvijene zemlje često imaju užu poreznu osnovicu i slabiju administraciju. Podaci OECD-a dobro ilustriraju taj raspon, jer je prosječni porezni teret zemalja OECD-a u 2023. iznosio 33,7 % BDP-a, od manje od 20 % BDP-a u Meksiku do više od 45 % BDP-a u Danskoj ({OECD}, 2025). Jednako je važno odakle prihodi dolaze. U prosjeku OECD-a porezi na dohodak i dobit zajedno čine oko 35 % poreznih prihoda, socijalni doprinosi oko četvrtinu, a porezi na potrošnju gotovo trećinu, dok porezi na imovinu imaju manju i dugoročno opadajuću ulogu ({OECD}, 2025). Koliko je taj raspon širok pokazuje usporedba odabranih zemalja oko prosjeka OECD-a.
 
-*Slika. Ukupni porezni teret (porezi i doprinosi, % BDP-a) za odabrane zemlje. Zlatno je istaknuta Hrvatska, zeleno prosjek OECD-a. Izvor: OECD, Revenue Statistics 2025 (2023.); Hrvatska, Slovenija i Mađarska prema Eurostatu (2024.).*
+*Slika. Ukupni porezni teret (porezi i doprinosi, % BDP-a) za odabrane zemlje. Zlatno je istaknuta Hrvatska, zeleno prosjek OECD-a, a siva isprekidana crta označava tu istu razinu od 33,7 %. Izvor: OECD, Revenue Statistics 2025 (2023.); Hrvatska, Slovenija i Mađarska prema Eurostatu (2024.).*
 
 Hrvatska se s 38,6 % BDP-a smješta u gornju polovicu raspona, iznad Njemačke i osjetno iznad prosjeka OECD-a, ali ispod nordijskih i većine kontinentalnih sustava. Po ukupnoj visini tereta time nije iznimka, no prava se posebnost vidi tek u strukturi prihoda.
 
-Struktura prihoda razdvaja modele jasnije od same visine poreza. Zemlje sličnog ukupnog tereta mogu počivati na posve različitim osnovicama, pa Danska gotovo cijeli sustav gradi na porezu na dohodak uz zanemarive doprinose, Njemačka na doprinosima, a Čile na potrošnji. Hrvatska se po tom otisku svrstava uz Čile jer najveći dio prihoda izvlači iz potrošnje. Sljedeće kružne slike (pite) prikazuju taj fiskalni otisak za nekoliko karakterističnih sustava, svaki sveden na tri glavne skupine poreza.
+Struktura prihoda razdvaja modele jasnije od same visine poreza, jer zemlje sličnog ukupnog tereta mogu počivati na posve različitim osnovicama. Kružne slike (pite) prikazuju taj fiskalni otisak za nekoliko karakterističnih sustava, svaki sveden na tri glavne skupine poreza, pri čemu je zlatnim obrubom istaknuta Hrvatska.
 
 *Slika. Struktura poreznih prihoda po glavnim skupinama poreza (udio u ukupnim prihodima). Hrvatska se, kao i Čile, oslanja na potrošnju, Danska na dohodak, a Njemačka na doprinose. Izvor: OECD, Revenue Statistics 2025; Hrvatska prema Eurostatu (2024.).*
+
+Pite oštro razdvajaju nacionalne modele iz prethodnog odjeljka. Danska gotovo cijeli sustav gradi na porezu na dohodak uz zanemarive doprinose, što je čisti dohodovni model, dok Njemačka oslonac premješta na socijalne doprinose i tako utjelovljuje kontinentalni model. Na suprotnom kraju Čile i Hrvatska najveći dio prihoda izvlače iz potrošnje, pa se Hrvatska po tom otisku svrstava uz potrošno orijentirani model bliži zemljama u razvoju nego kontinentalnoj Europi kojoj geografski pripada. SAD se s pretežnim osloncem na dohodak i razmjerno skromnom potrošnjom drži anglosaksonskog obrasca, dok prosjek OECD-a ostaje gotovo uravnotežen među trima skupinama, što pokazuje da je sama ujednačenost prosjeka posljedica zbrajanja vrlo različitih nacionalnih izbora.
 
 ## Porezni sustavi u Europskoj uniji i Hrvatskoj
 
@@ -595,9 +602,9 @@ Struktura poreznih prihoda u EU pokazuje određene zajedničke karakteristike. U
 
 Među državama članicama postoje značajne razlike. Neke zemlje, poput nordijskih, imaju visoke poreze i snažnu redistributivnu funkciju, dok druge primjenjuju niže porezne stope i veći naglasak stavljaju na poticanje investicija i konkurentnosti. Unatoč tim razlikama, dugoročni trendovi ukazuju na postupnu konvergenciju poreznih sustava, potaknutu integracijom tržišta i zajedničkim pravilima.
 
-U brojkama, ukupni prihodi od poreza i socijalnih doprinosa u EU u 2024. iznosili su 40,4 % BDP-a, a u europodručju 40,9 % ({Eurostat}, 2025). Eurostat te prihode dijeli na tri velike skupine koje su u Uniji razmjerno uravnotežene, pa su neizravni porezi činili 12,9 % BDP-a, izravni porezi na dohodak i bogatstvo 13,3 % BDP-a, a neto socijalni doprinosi 14,0 % BDP-a. EU se zato kao cjelina ne može opisati ni kao prostor pretežno visokog oporezivanja rada ni pretežno potrošnje, nego kao kombinirani model u kojem sve tri skupine nose važnu fiskalnu ulogu. Razlike među članicama ipak su velike, pa Danska gotovo cijelu socijalnu državu financira porezima na dohodak uz vrlo male doprinose, kontinentalne zemlje poput Njemačke i Slovenije snažno se oslanjaju na doprinose, a skupina s velikom ulogom neizravnih poreza obuhvaća, uz Hrvatsku, i Mađarsku i Grčku.
+U brojkama, ukupni prihodi od poreza i socijalnih doprinosa u EU u 2024. iznosili su 40,4 % BDP-a, a u europodručju 40,9 % ({Eurostat}, 2025). Eurostat te prihode dijeli na tri velike skupine koje su u Uniji razmjerno uravnotežene, pa su neizravni porezi činili 12,9 % BDP-a, izravni porezi na dohodak i bogatstvo 13,3 % BDP-a, a neto socijalni doprinosi 14,0 % BDP-a. EU se zato kao cjelina ne može opisati ni kao prostor pretežno visokog oporezivanja rada ni pretežno potrošnje, nego kao kombinirani model u kojem sve tri skupine nose važnu fiskalnu ulogu. Razlike među članicama ipak su velike, pa Danska gotovo cijelu socijalnu državu financira porezima na dohodak uz vrlo male doprinose, kontinentalne zemlje poput Njemačke i Francuske snažno se oslanjaju na doprinose, a skupina s velikom ulogom neizravnih poreza obuhvaća, uz Hrvatsku, i Mađarsku. Na suprotnom kraju Irska se izdvaja kao niskoporezni iznimak s ukupnim teretom daleko ispod prosjeka Unije, dijelom i zbog načina na koji se velika dobit multinacionalnih kompanija odražava u njezinu BDP-u.
 
-*Slika. Porezi i doprinosi u odabranim članicama EU, 2024. (% BDP-a), razloženi na tri glavne skupine. Hrvatska se izdvaja najvećim udjelom neizravnih poreza (zlatno) u BDP-u (Eurostat).*
+*Slika. Porezi i doprinosi u odabranim članicama EU, 2024. (% BDP-a), razloženi na tri glavne skupine (neizravni zlatno, izravni zeleno, doprinosi oxblood). Hrvatska je istaknuta zlatnim obrubom i izdvaja se najvećim udjelom neizravnih poreza, dok je Irska niskoporezni iznimak. Izvor: Eurostat (gov_10a_taxag).*
 
 ### Osnove poreznog sustava u Hrvatskoj
 
@@ -614,15 +621,17 @@ U području oporezivanja rada, Hrvatska primjenjuje porez na dohodak koji ima ob
 
 Ukupno opterećenje rada u Hrvatskoj ne proizlazi samo iz poreza na dohodak, već i iz socijalnih doprinosa, koji čine značajan dio troška rada. Najvažniji doprinosi uključuju mirovinsko osiguranje (20 % bruto plaće, od čega 15 % za prvi stup i 5 % za drugi stup) i zdravstveno osiguranje (16,5 % bruto plaće, plaća poslodavac). Zbog kombinacije poreza na dohodak i doprinosa, ukupni porezni klin na rad relativno je visok, što može utjecati na ponudu rada i konkurentnost gospodarstva (Šimović, 2022).
 
-Sami doprinosi, podijeljeni na dio koji formalno uplaćuje poslodavac i dio koji tereti zaposlenika, u Hrvatskoj iznose oko 10,6 % BDP-a, nešto ispod prosjeka Unije i znatno ispod srednjoeuropskih sustava poput češkog ili njemačkog. Slika koja slijedi prikazuje tu podjelu.
+Sami doprinosi, podijeljeni na dio koji formalno uplaćuje poslodavac i dio koji tereti zaposlenika, u Hrvatskoj iznose oko 10,6 % BDP-a, nešto ispod prosjeka Unije i znatno ispod srednjoeuropskih sustava poput češkog ili njemačkog. Kako se ta dva dijela razmještaju po zemljama vidi se kad se doprinosi razlože na zakonski dio poslodavca i dio zaposlenika.
 
 *Slika. Stvarni socijalni doprinosi, % BDP-a, 2023., podijeljeni na dio poslodavca (D611) i dio zaposlenika i kućanstava (D613). Iznosi su upisani u stupce, a Hrvatska je istaknuta zlatnim obrubom. Izvor: Eurostat (gov_10a_taxag).*
 
-Slika koja slijedi smješta to opterećenje u međunarodni okvir. Porezni klin na prosječnu plaću kreće se od oko trideset posto u Irskoj do više od pedeset posto u Belgiji i Njemačkoj, a hrvatski se klin smješta blizu prosjeka OECD-a, ispod kontinentalnih sustava, ali iznad najnižih u skupini.
+Podjela na dio poslodavca i dio zaposlenika tek je zakonska, a ne ekonomska. Iz poglavlja o porezima znamo da to tko porez uplaćuje državi ne određuje tko stvarno snosi njegov teret, jer se ekonomska incidencija seli na onu stranu tržišta rada koja je manje elastična. Kada je ponuda rada slabo osjetljiva na neto plaću, što za većinu radnika i jest slučaj, najveći dio doprinosa u konačnici tereti zaposlenika kroz nižu neto plaću, bez obzira na to je li u statistici knjižen pod D611 (poslodavac) ili D613 (zaposlenik). Hrvatskih 5,1 naspram 5,5 postotnih bodova zato nije podatak o tome tko stvarno plaća, nego artefakt zakonskog dizajna. Pravu sliku o opterećenju rada ne daje ova podjela, nego ukupni porezni klin koji spaja porez na dohodak i sve doprinose u jedan jaz između troška rada za poslodavca i onoga što radnik primi.
+
+Smješten u međunarodni okvir, taj se klin na prosječnu plaću kreće od oko trideset posto u Irskoj do više od pedeset posto u Belgiji i Njemačkoj, a hrvatski se nalazi blizu prosjeka OECD-a, ispod kontinentalnih sustava, ali iznad najnižih u skupini.
 
 <!-- TODO(coauthor): potvrditi točan hrvatski porezni klin i godinu (Milan/Petra). Prikazanih ~36 % uključuje oba obvezna mirovinska stupa po OECD-metodologiji; Blažić i Šeparović (2019) daju 31,2 % bez 2. stupa za 2018. -->
 
-*Slika. Porezni klin na rad za samca s prosječnom plaćom bez djece (porez na dohodak te doprinosi zaposlenika i poslodavca, kao udio u ukupnom trošku rada). Zlatno je Hrvatska, zeleno prosjek OECD-a. Izvor: OECD, Taxing Wages 2025; Hrvatska prema nacionalnoj procjeni po OECD-ovoj metodologiji (Blažić i Šeparović, 2019), uz oba obvezna mirovinska stupa.*
+*Slika. Porezni klin na rad za samca s prosječnom plaćom bez djece (porez na dohodak te doprinosi zaposlenika i poslodavca, kao udio u ukupnom trošku rada). Zlatno je Hrvatska, zeleno prosjek OECD-a, a siva isprekidana crta označava tu istu razinu od 35,1 %. Izvor: OECD, Taxing Wages 2025; Hrvatska prema nacionalnoj procjeni po OECD-ovoj metodologiji (Blažić i Šeparović, 2019), uz oba obvezna mirovinska stupa.*
 
 **Politika u praksi.**
 Porezna reforma iz 2024. godine smanjila je opću stopu poreza na dohodak s 30 % na 23 % i ukinula prirez kao zaseban porez, integrirajući ga u opću stopu. Cilj je bio rasteretiti rad i pojednostaviti sustav, ali kritičari su upozorili da se istodobno smanjuje fiskalni prostor za lokalne jedinice koje su o prirezu ovisile. Reforma ilustrira tipičan kompromis između cilja smanjenja poreznog klina i cilja očuvanja prihoda jedinica lokalne samouprave.[1]
@@ -633,11 +642,11 @@ Za razliku od poreza na rad i potrošnju, oporezivanje imovine u Hrvatskoj relat
 
 Stavi li se hrvatski sustav uz prosjek Unije, posebnost se vidi u strukturi. Ukupni porezi i doprinosi u Hrvatskoj u 2024. iznosili su 38,6 % BDP-a, ispod prosjeka EU od 40,4 %, ali iznad mnogih novih članica ({Eurostat}, 2025). Razlika je u tome odakle prihodi dolaze. Neizravni porezi u Hrvatskoj iznose 19,3 % BDP-a naspram 12,9 % u EU, a sam PDV oko 13,3 % BDP-a naspram približno 7,1 % u Uniji. Istodobno su izravni porezi na dohodak i bogatstvo s 7,9 % BDP-a znatno ispod europskih 13,3 %, a neto socijalni doprinosi s oko 11,4 % ispod prosjeka od 14,0 %. Mjereno udjelom u ukupnim prihodima, gotovo polovica hrvatskog poreznog tereta dolazi iz neizravnih poreza, naspram otprilike trećine u prosjeku Unije.
 
-Iz te slike izranjaju četiri obilježja. Prvo je snažan oslonac na potrošnju, prije svega PDV i trošarine, koji sustav čine izdašnim i stabilnim, a u zemlji s velikom turističkom potrošnjom dio tereta prenose i na nerezidente. Drugo je razmjerno manja uloga izravnih poreza na dohodak i kapital, dijelom zbog manje mase visokih dohodaka, a dijelom zbog brojnih reformi i proporcionalnih elemenata sustava. Treće su važni, ali ne dominantni socijalni doprinosi, po čemu Hrvatska nije tipičan kontinentalni model. Četvrto je slabo oporezivanje imovine, osobito nekretnina, čime jedan velik oblik ekonomske snage ostaje izvan dosega sustava.
+Iz te slike izranjaju četiri obilježja. Prvo je snažan oslonac na potrošnju, prije svega PDV i trošarine, koji sustav čine izdašnim i stabilnim, a u zemlji s velikom turističkom potrošnjom dio tereta prenose i na nerezidente. Drugo je razmjerno manja uloga izravnih poreza na dohodak i kapital, dijelom zbog manje mase visokih dohodaka, a dijelom zbog brojnih reformi i proporcionalnih elemenata sustava. Treće su važni, ali ne dominantni socijalni doprinosi, po čemu Hrvatska nije tipičan kontinentalni model. Četvrto se obilježje vidi tek po onome čega na slici gotovo i nema, a to je slabo oporezivanje imovine, osobito nekretnina, čime jedan velik oblik ekonomske snage ostaje izvan dosega sustava.
 
 Ta struktura nije bez napetosti. Oslonac na potrošnju slabije ostvaruje redistribuciju jer kućanstva nižeg dohotka troše veći dio prihoda, visok klin na rad opterećuje zapošljavanje, a sustav koji počiva na jednoj osnovici izdašan je u dobrim vremenima, ali ranjiv na pad potrošnje ili turizma. Zato rasprava o poreznoj reformi nije samo pitanje pojedine stope, nego pitanje treba li dio tereta dugoročno premjestiti s rada i potrošnje prema slabije korištenim osnovicama, osobito imovini.
 
-*Slika. Struktura poreznih prihoda, Hrvatska naspram prosjeka EU, 2024. (% BDP-a). Hrvatska je visoko na neizravnim porezima i PDV-u, a nisko na izravnim porezima (Eurostat).*
+*Slika. Struktura poreznih prihoda, Hrvatska naspram prosjeka EU, 2024. (% BDP-a). Prikazani su ukupni teret, tri glavne skupine poreza i PDV; Hrvatska je visoko na neizravnim porezima i PDV-u, a nisko na izravnim porezima. Izvor: Eurostat (gov_10a_taxag).*
 
 ### Kako čitati porezne usporedbe
 
@@ -925,7 +934,11 @@ Sam proračun te napetosti čini opipljivima. Prva slika pokazuje na što Unija 
 
 *Slika. Višegodišnji financijski okvir EU 2021.–2027. po naslovima, udio u ukupnim obvezama (cijene 2018.). Kohezija te prirodni resursi i poljoprivreda zajedno čine oko dvije trećine. Ukupno 1.074 mlrd. € (cijene 2018.), odnosno 1.211 mlrd. € u tekućim cijenama. Izvor: Europski parlament, Vijeće EU.*
 
+Donji kraj te slike izravno potvrđuje teorijsku slutnju iz prethodnih odlomaka. Sigurnost i obrana nose 1,2 %, a migracije i upravljanje granicama 2,1 % obveza, dakle baš ona dobra čije se koristi najjače prelijevaju preko granica dobivaju najtanji dio proračuna. Tako izgleda Samuelsonov uvjet u brojkama, jer dok svaka članica mjeri vlastitu graničnu korist umjesto zbroja koristi svih koje štiti, decentralizirano financiranje upravo na tim stavkama daje premalo zajedničkog dobra.
+
 *Slika. Neto proračunski položaj odabranih članica EU, euro po stanovniku, 2023. Pozitivno su neto primatelji (zeleno), negativno neto uplatitelji (crveno). Hrvatska (zlatno) je među najvećim neto primateljima po stanovniku u Uniji. Izvor: Europska komisija; izračuni Deutsche Bundesbank i IW Köln.*
+
+Pročita li se slika po stanovniku, Hrvatska se s +619 € smješta iznad Rumunjske i Poljske, kao jedan od najvećih neto primatelja u Uniji, pa joj logika neto pozicije ide izrazito u prilog. Upravo zato joj je najosjetljiviji onaj naslov koji u prethodnoj slici nosi najveći udio, jer najavljeno smanjenje težine kohezije u idućem okviru pogađa baš kanal kroz koji ona danas ostvaruje glavninu svoga povoljnog položaja. Logika neto pozicije i logika europskih javnih dobara tu povlače u suprotnim smjerovima, jer prva Hrvatskoj govori da brani koheziju, a druga da pristane na proračun više usmjeren prema dobrima s prekograničnom koristi.
 
 Argument europskih javnih dobara ne uklanja političke dileme. Ako Unija financira više zajedničkih prioriteta, mora se odlučiti kako će prikupiti novac, hoće li članice povećati doprinose, hoće li se uvesti novi vlastiti prihodi ili koristiti zajedničko zaduživanje, tko će odlučivati o prioritetima i kako spriječiti da se svaka nacionalno poželjna potrošnja proglasi europskim javnim dobrom. Pojam zato treba shvatiti ozbiljno, ali oprezno, jer daje snažan ekonomski argument za dublju integraciju ondje gdje postoje prekogranične koristi i podinvestiranje, no ne znači da sve treba financirati na europskoj razini.
 

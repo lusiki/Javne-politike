@@ -65,9 +65,11 @@ Graf koji slijedi prikazuje neto vrijednost glasanja R u ovisnosti o veličini b
 
 **Što isprobati.** (1) Pri malenom biračkom tijelu pomaknite klizač Trošak glasanja C prema nuli i neto vrijednost glasanja ostaje pozitivna jer i sitna korist nadvlada zanemariv trošak. (2) Sada povećavajte Veličinu biračkog tijela i pratite kako krivulja strmo pada ispod nule, jer vjerojatnost odlučujućeg glasa P ≈ 1/N kopni brže nego što korist može pratiti. (3) Pokušajte tu negativnu vrijednost vratiti u plus podizanjem klizača Korist od preferiranog ishoda B do kraja i uvjerite se da pri milijunskom biračkom tijelu ni nerealno velika korist ne čini glasanje instrumentalno isplativim.
 
-Unatoč tom računu izlaznost nije nula, ali ni postojana. Hrvatski podaci pokazuju dvije pravilnosti koje model nagoviješta. Izlaznost na parlamentarnim i predsjedničkim izborima dugoročno opada, s oko tri četvrtine biračkog tijela u devedesetima na manje od polovice na pojedinim izborima nakon 2010., uz povremene oporavke kad je ulog veći. Izlaznost usto oštro ovisi o tome koliko birači drže da je u igri, pa je na izborima za Europski parlament, koje mnogi doživljavaju kao niskoulog, ostala na tek petini do trećine biračkog tijela. Slika koja slijedi prikazuje izlaznost u Hrvatskoj po vrsti izbora.
+Unatoč tom računu izlaznost nije nula, ali ni postojana. Hrvatski podaci o izlaznosti po vrsti izbora pokazuju dvije pravilnosti koje model nagoviješta.
 
 *Slika. Izlaznost na izborima u Hrvatskoj prema vrsti izbora, 1992.–2024. (%). Parlamentarni i predsjednički izbori (prvi krug) dugoročno opadaju, dok izbori za Europski parlament ostaju izrazito niski. Izvor: International IDEA, Voter Turnout Database (puni birački popis).*
+
+Graf čita račun glasanja gotovo doslovno. Izlaznost prati percipirani ulog $B$ i tijesnost $P$, pa je visoka ondje gdje birači drže da se odlučuje nešto važno i gdje je trka neizvjesna. Na parlamentarnim i predsjedničkim izborima zato se kreće od oko tri četvrtine biračkog tijela u devedesetima prema manje od polovice na pojedinim izborima nakon 2010., uz oporavke kad je ulog veći, kao 2024. Tamo gdje birači percipirani ulog drže malenim račun se urušava, pa na izborima za Europski parlament, koje mnogi doživljavaju kao niskoulog, izlaznost ostaje na tek petini do trećine. Sustavna razlika između tih krivulja nije pokazatelj građanske kulture, nego očekivanog umnoška $P \cdot B$ uz isti trošak izlaska.
 
 Ista logika malene vjerojatnosti utjecaja koja obeshrabruje izlazak na birališta obeshrabruje i prikupljanje informacija. Trošak stjecanja detaljnih političkih informacija gotovo uvijek nadmašuje očekivanu instrumentalnu korist za pojedinog birača, s obzirom na zanemarivu vjerojatnost da će njegov glas promijeniti ishod. Takvo racionalno nepoznavanje (*rational ignorance*) ne dovodi samo do nedostatnog prikupljanja informacija, nego i do neučinkovitog korištenja onih koje birači već posjeduju.
 
@@ -596,6 +598,8 @@ Stvarni razmještaj hrvatskih stranaka na osi ljevica–desnica potvrđuje obje 
 
 *Slika. Ideološki položaj hrvatskih stranaka na ljestvici ljevica–desnica (0 = krajnja ljevica, 10 = krajnja desnica), prema procjeni stručnjaka. Dvije najveće stranke (HDZ, SDP) bliže su sredini, dok novije stranke šire raspon prema krajevima. Izvor: Chapel Hill Expert Survey (CHES), val 2024. (varijabla lrgen).*
 
+Položaji na slici crtaju obje strane te priče. HDZ i SDP zbijeni su oko sredine, HDZ tek desno, a SDP tek lijevo od centra, što je upravo prostorni odraz konvergencije prema medijanskom biraču i istodobno odjek programske sličnosti koju opisuje prethodni primjer iz prakse. Novije stranke, pak, raspoređene su prema krajevima ljestvice, od Možemo na ljevici do Domovinskog pokreta na desnici, pa razvlače raspon koji su dvije velike stranke desetljećima držale uskim. To razilaženje vodi izravno u pitanje polarizacije, jer raspršenost ponude prema rubovima mijenja i sam način na koji se stranke natječu za glas.
+
 ## Kako se stranke natječu za glas
 
 Stranke nisu pasivni prenositelji biračkih preferencija, nego aktivni poduzetnici koji oblikuju ponudu. Glavna je strategija **diferencijacija ponude** u kojoj stranke ne nude samo tehničke politike, nego cjelovite „brendove" koji kombiniraju ekonomske mjere, identitetske signale i emocionalne apele. Takvi brendovi služe kao informacijski prečaci biračima koji nemaju poticaja ulagati velik trud u analizu programa.
@@ -744,6 +748,8 @@ Olsonov pesimizam o velikim skupinama ipak nije posljednja riječ. Kasnija istra
 Sindikati su najjasniji primjer te logike. Koliko će se radnika učlaniti ovisi o selektivnim poticajima, dok doseg kolektivnih ugovora ovisi i o tome šire li ih institucije na sve zaposlene. Tamo gdje članstvo nosi privatnu korist, primjerice u nordijskim zemljama gdje sindikati sudjeluju u isplati naknada za nezaposlene, gustoća je visoka. Tamo gdje se izboreni ugovor zakonski proširuje na sve, kao u Francuskoj, pojedinac dobiva korist i bez učlanjenja, pa gustoća pada na svega desetak posto iako pokrivenost ostaje gotovo potpuna. Slika koja slijedi prikazuje taj razmak između učlanjenosti i pokrivenosti, a Hrvatska se po objema mjerama nalazi u sredini.
 
 *Slika. Sindikalna gustoća (udio učlanjenih) i pokrivenost kolektivnim ugovorima (udio obuhvaćenih), odabrane zemlje, % zaposlenih. Razmak između dviju točaka mjera je slobodnog jahanja, najveći u Francuskoj. Izvor: OECD/AIAS ICTWSS baza; vrijednosti su najnovije dostupne po zemlji (Hrvatska 2014.–2018., Njemačka pokrivenost približno).*
+
+Hrvatska se zlatno istaknuta smješta točno na onaj raspon koji Olsonova logika predviđa, s gustoćom od oko 21 % i pokrivenošću od oko 53 %, dakle između nordijskog modela u kojem selektivni poticaji Ghent-sustava drže članstvo visokim i francuskog modela u kojem zakonsko proširenje ugovora na sve zaposlene podiže pokrivenost iznad 90 %, ali poticaj za učlanjenje gotovo ukida.
 
 ## Digitalno organiziranje i Olsonova logika
 
@@ -1051,9 +1057,11 @@ Srodan fenomen jest **regulatorno zarobljavanje**, u kojemu regulator osnovan ra
 
 Rasprava o birokraciji često se pojednostavljuje na pitanje treba li država imati „više" ili „manje" administracije. Ključni problem nije sama veličina birokracije, nego njezina kvaliteta, učinkovitost i odgovornost. Moderna država ne može funkcionirati bez profesionalne javne uprave. Netko mora prikupljati poreze, provoditi zakone, organizirati javne usluge, nadzirati tržišta, upravljati krizama i osiguravati kontinuitet države neovisno o promjenama političke vlasti.
 
-Prije nego što napustimo pitanje veličine, vrijedi vidjeti kolika je hrvatska javna uprava u usporedbi s drugima. Mjereno udjelom zaposlenih u općoj državi u ukupnoj zaposlenosti, Hrvatska je iznad prosjeka OECD-a i bliže nordijskim zemljama nego onima s malom upravom poput Njemačke ili Japana. Sama brojka zato ne potvrđuje uobičajenu sliku o premaloj državi, nego pomiče pitanje s veličine na to što ta uprava isporučuje. Slika koja slijedi prikazuje taj udio za odabrane zemlje.
+Prije nego što napustimo pitanje veličine, vrijedi vidjeti kolika je hrvatska javna uprava u usporedbi s drugima. Mjereno udjelom zaposlenih u općoj državi u ukupnoj zaposlenosti, Hrvatska je iznad prosjeka OECD-a i bliže nordijskim zemljama nego onima s malom upravom poput Njemačke ili Japana. Sama brojka zato ne potvrđuje uobičajenu sliku o premaloj državi, nego pomiče pitanje s veličine na to što ta uprava isporučuje.
 
 *Slika. Zaposlenost u općoj državi kao udio u ukupnoj zaposlenosti, odabrane zemlje, 2023. (%). Zlatno je istaknuta Hrvatska, a isprekidana linija označava prosjek OECD-a. Izvor: OECD, Government at a Glance 2025.*
+
+Slika potvrđuje da Hrvatska s udjelom od 22,8 % stoji iznad prosjeka OECD-a i bliže nordijskoj razini nego zemljama s malom upravom. Po veličini, dakle, hrvatska uprava nije problem koji bi se rješavao pukim smanjenjem. Mjerilo koje stvarno odlučuje nije broj zaposlenih, nego ono na što su upozorili Evans i Rauch, jest li ta uprava meritokratski ustrojena i sposobna svoje odluke pretvoriti u predvidivu provedbu, odnosno raspolaže li državnim kapacitetom. Upravo zato i reforme o kojima govorimo u posljednjem dijelu knjige ne bi trebale ciljati na rezanje administracije, nego na podizanje njezine kvalitete, što je i središnja teza ovog poglavlja da cilj nije manje birokracije, nego bolja.
 
 Klasičan, weberovski pogled podsjeća nas da je birokracija važan civilizacijski napredak. Ona štiti građane od samovolje, klijentelizma i nejednakog tretmana. S druge strane, teorija javnog izbora upozorava da birokraciju ne smijemo idealizirati jer javne institucije djeluju unutar sustava poticaja i mogu težiti većim proračunima, širim nadležnostima i očuvanju vlastitog statusa.
 
