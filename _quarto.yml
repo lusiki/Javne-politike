@@ -40,6 +40,8 @@ book:
         href: chapters/00-uvod.qmd
       - text: "Vodič"
         href: vodic.html
+      - text: "Pojmovnik"
+        href: pojmovnik.html
       - text: "Resursi"
         href: resursi.html
       - text: "Alat"
@@ -105,6 +107,7 @@ book:
 
   appendices:
     - references.qmd
+    - pojmovnik.qmd
     - vodic.qmd
     # Vodič-podstranice ostaju u appendices da se renderiraju (hub linka na
     # vodic/NN.html), ali se sakrivaju iz sidebara JS-om u book-include.html
