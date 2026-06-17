@@ -1,0 +1,48 @@
+# Sve što želite znati o državi i javnim politikama u Hrvatskoj
+
+> Praktični i interaktivni udžbenik o javnim financijama, teoriji javnog izbora i javnim politikama u Hrvatskoj — uloga države, alokacija, redistribucija, institucije i reforme.
+
+Tekstualne (AI-čitljive) verzije poglavlja knjige dostupne na https://lusiki.github.io/Javne-politike. Učitajte pojedino poglavlje radi najtočnijih odgovora ili cijelu knjigu za širi pregled.
+
+## Uvod
+- [Uvod](https://lusiki.github.io/Javne-politike/ai/00-uvod.md)
+
+## DIO I: KLASIČNA ANALIZA JAVNIH FINANCIJA I POLITIKA
+- [Uloga države u gospodarstvu](https://lusiki.github.io/Javne-politike/ai/01-uloga-drzave.md)
+- [Alokacijska funkcija i tržišni neuspjesi](https://lusiki.github.io/Javne-politike/ai/02-alokacijska-funkcija.md)
+- [Distribucijska funkcija](https://lusiki.github.io/Javne-politike/ai/03-distribucijska-funkcija.md)
+- [Stabilizacijska funkcija](https://lusiki.github.io/Javne-politike/ai/04-stabilizacijska-funkcija.md)
+- [Klasična teorija oporezivanja](https://lusiki.github.io/Javne-politike/ai/05-porezi.md)
+
+## DIO II: JAVNI IZBOR – ŠTO, KAKO I ZAŠTO?
+- [Što je to javni izbor i zašto nas se tiče?](https://lusiki.github.io/Javne-politike/ai/06-javni-izbor.md)
+- [Teorija igara i zakonodavno pregovaranje](https://lusiki.github.io/Javne-politike/ai/06a-teorija-igara.md)
+- [Kolektivni izbor](https://lusiki.github.io/Javne-politike/ai/07-kolektivni-izbor.md)
+- [Političke stranke i izbori](https://lusiki.github.io/Javne-politike/ai/08-stranke-izbori.md)
+- [Interesne skupine](https://lusiki.github.io/Javne-politike/ai/09-interesne-skupine.md)
+- [Dva pogleda na birokraciju](https://lusiki.github.io/Javne-politike/ai/10-birokracija.md)
+
+## DIO III: NOVA INSTITUCIONALNA I KONSTITUCIONALNA EKONOMIKA
+- [Nova institucionalna ekonomika](https://lusiki.github.io/Javne-politike/ai/11-institucionalna-ekonomika.md)
+- [Konstitucionalna (ustavna) ekonomika](https://lusiki.github.io/Javne-politike/ai/12-konstitucionalna-ekonomika.md)
+
+## DIO IV: JAVNE FINANCIJE I JAVNE POLITIKE U PRAKSI
+- [Instrumenti državne intervencije](https://lusiki.github.io/Javne-politike/ai/13-instrumenti.md)
+- [Kako država troši naš novac?](https://lusiki.github.io/Javne-politike/ai/14-javna-potrosnja.md)
+- [Porezni sustavi u praksi i budućnost oporezivanja](https://lusiki.github.io/Javne-politike/ai/15-porezi-praksa.md)
+- [Javne financije Europske unije](https://lusiki.github.io/Javne-politike/ai/16-eu-javne-financije.md)
+
+## DIO V: KAKO DO KVALITETNIJIH JAVNIH POLITIKA?
+- [Državni neuspjesi i prepreke kvalitetnim javnim politikama](https://lusiki.github.io/Javne-politike/ai/17-drzavni-neuspjesi.md)
+- [Novi javni menadžment](https://lusiki.github.io/Javne-politike/ai/18-novi-javni-menadzment.md)
+- [Od novog javnog menadžmenta prema novom upravljanju](https://lusiki.github.io/Javne-politike/ai/19-novo-upravljanje.md)
+- [Cost-benefit analiza i evaluacija javnih politika](https://lusiki.github.io/Javne-politike/ai/20-cba-evaluacija.md)
+- [Reforme u javnom sektoru](https://lusiki.github.io/Javne-politike/ai/21-reforme.md)
+
+## Paketi i cijela knjiga
+- [Cijela knjiga (jedna datoteka)](https://lusiki.github.io/Javne-politike/llms-full.txt)
+- [DIO I: KLASIČNA ANALIZA JAVNIH FINANCIJA I POLITIKA (paket)](https://lusiki.github.io/Javne-politike/ai/dio-1.md)
+- [DIO II: JAVNI IZBOR – ŠTO, KAKO I ZAŠTO? (paket)](https://lusiki.github.io/Javne-politike/ai/dio-2.md)
+- [DIO III: NOVA INSTITUCIONALNA I KONSTITUCIONALNA EKONOMIKA (paket)](https://lusiki.github.io/Javne-politike/ai/dio-3.md)
+- [DIO IV: JAVNE FINANCIJE I JAVNE POLITIKE U PRAKSI (paket)](https://lusiki.github.io/Javne-politike/ai/dio-4.md)
+- [DIO V: KAKO DO KVALITETNIJIH JAVNIH POLITIKA? (paket)](https://lusiki.github.io/Javne-politike/ai/dio-5.md)

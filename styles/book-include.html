@@ -1,3 +1,19 @@
+<style>
+/* "Pitaj AI o ovom poglavlju" — kompaktni padajući izbornik uz naslov poglavlja */
+.ai-cta { margin: .4rem 0 1.4rem; font-family: "Public Sans", system-ui, sans-serif; }
+.ai-cta > summary { display: inline-flex; align-items: center; gap: .4rem; cursor: pointer;
+  list-style: none; font-size: .9rem; font-weight: 600; color: #335043;
+  background: #FBF8F1; border: 1px solid #4A6B5C; border-radius: 9px;
+  padding: .42rem .8rem; width: max-content; transition: background .15s; }
+.ai-cta > summary::-webkit-details-marker { display: none; }
+.ai-cta > summary:hover { background: #EAF0EC; }
+.ai-cta[open] > summary { background: #EAF0EC; }
+.ai-cta-menu { display: flex; flex-wrap: wrap; gap: .45rem; margin-top: .55rem; }
+.ai-cta-menu a { font-size: .85rem; font-weight: 600; text-decoration: none;
+  color: #335043; background: #FBF8F1; border: 1px solid #D8CFBE; border-radius: 8px;
+  padding: .4rem .75rem; line-height: 1.2; transition: border-color .15s, background .15s; }
+.ai-cta-menu a:hover { border-color: #4A6B5C; background: #EAF0EC; }
+</style>
 <script>
 (function () {
   "use strict";
@@ -158,7 +174,7 @@
   // ----------------------------------------------------------
   function setupStandalonePages() {
     var path = location.pathname;
-    var standalonePages = ["/vodic.html", "/pojmovnik.html", "/prirucnik.html", "/resursi.html", "/alat.html"];
+    var standalonePages = ["/vodic.html", "/pojmovnik.html", "/prirucnik.html", "/resursi.html", "/alat.html", "/uci-s-ai.html"];
     var isStandalone = standalonePages.some(function (p) {
       return path.endsWith(p);
     });
@@ -205,7 +221,7 @@
   //     (izvjestaj-estetski M4). MutationObserver preživljava Quartov re-render.
   // ----------------------------------------------------------
   function removePrunedItems() {
-    var endings = ["index.html", "vodic.html", "pojmovnik.html", "prirucnik.html", "resursi.html", "alat.html"];
+    var endings = ["index.html", "vodic.html", "pojmovnik.html", "prirucnik.html", "resursi.html", "alat.html", "uci-s-ai.html"];
     // Podstranice vodiča: bilo koji href oblika .../vodic/NN-*.html
     var vodicSub = /(^|\/)vodic\/\d+[-\w]*\.html$/;
     document.querySelectorAll("#quarto-sidebar a.sidebar-link, #quarto-sidebar a.sidebar-item-text").forEach(function (a) {
@@ -405,6 +421,47 @@
   }
 
   // ----------------------------------------------------------
+  // 12. "Pitaj AI o ovom poglavlju" — uz naslov svakog poglavlja ubaci
+  //     padajući izbornik koji vodi na /ai/<slug>.md i prefilled asistente
+  //     (Track A, notes/ai-export-spec.md). Radi samo na stranicama poglavlja
+  //     (/chapters/<slug>.html); preslikava trenutni URL u njegov .md izvoz.
+  // ----------------------------------------------------------
+  function setupChapterAI() {
+    var m = location.pathname.match(/\/chapters\/([^/]+)\.html$/);
+    if (!m) return;                                  // samo poglavlja
+    var header = document.getElementById("title-block-header");
+    var titleEl = header ? header.querySelector("h1.title") : document.querySelector("h1.title");
+    if (!titleEl || document.querySelector(".ai-cta")) return;
+
+    var mdHref  = location.pathname.replace(/\/chapters\/([^/]+)\.html$/, "/ai/$1.md");
+    var uciHref = location.pathname.replace(/\/chapters\/[^/]+\.html$/, "/uci-s-ai.html");
+    var absMd   = location.origin + mdHref;
+    var tutor =
+      "Ti si mentor za udžbenik „Sve što želite znati o državi i javnim politikama u " +
+      "Hrvatskoj”. Odgovaraj na hrvatskom, oslanjaj se samo na priloženi tekst, citiraj " +
+      "poglavlja i reci „ne znam” ako odgovora nema u tekstu.";
+    var q = encodeURIComponent(
+      tutor +
+      "\n\nTekst poglavlja nalazi se na ovoj poveznici, pročitaj ga i odgovaraj na temelju njega: " +
+      absMd);
+
+    var det = document.createElement("details");
+    det.className = "ai-cta";
+    det.innerHTML =
+      '<summary>🤖 Pitaj AI o ovom poglavlju</summary>' +
+      '<div class="ai-cta-menu">' +
+        '<a href="' + mdHref + '" download>⬇ Preuzmi tekst (.md)</a>' +
+        '<a href="https://claude.ai/new?q=' + q + '" target="_blank" rel="noopener">Otvori u Claudeu</a>' +
+        '<a href="https://chatgpt.com/?q=' + q + '" target="_blank" rel="noopener">Otvori u ChatGPT-u</a>' +
+        '<a href="' + uciHref + '">Sve opcije i cijela knjiga →</a>' +
+      '</div>';
+
+    // ubaci odmah iza naslovnog bloka (ili iza samog naslova)
+    var anchor = header || titleEl;
+    anchor.insertAdjacentElement("afterend", det);
+  }
+
+  // ----------------------------------------------------------
   // Bootstrap
   // ----------------------------------------------------------
   function init() {
@@ -416,6 +473,7 @@
     try { pruneSidebar(); } catch (e) {}
     try { setupOjsPanels(); } catch (e) {}
     try { setupProseCollapsibles(); } catch (e) {}
+    try { setupChapterAI(); } catch (e) {}
   }
 
   if (document.readyState === "loading") {

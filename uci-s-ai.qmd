@@ -1,0 +1,209 @@
+---
+title: "Uči s AI"
+toc: false
+number-sections: false
+lang: hr-HR
+comments: false   # bez Hypothesis na dodatku (izvjestaj-estetski M17)
+format:
+  html:
+    page-layout: full
+    body-classes: ai-page
+---
+
+```{=html}
+<header class="ai-head">
+  <span class="ai-kicker">Uči s AI · knjiga kao izvor</span>
+  <h1 class="ai-title">Pitaj umjetnu inteligenciju o ovoj knjizi</h1>
+  <p class="ai-lede">Cijelu knjigu ili pojedino poglavlje možete dati svom chatbotu
+  (ChatGPT, Claude, Gemini) i postavljati pitanja, tražiti sažetke ili provjeravati
+  razumijevanje. Pripremili smo čiste tekstualne verzije knjige koje asistent lako
+  čita. Sve radi u vašem asistentu, bez prijave i bez troška.</p>
+</header>
+```
+
+```{=html}
+<section class="ai-ladder" aria-label="Tri načina">
+  <div class="ai-ladder-head">
+    <span class="ai-ladder-label">Tri načina, od najpouzdanijeg</span>
+    <span class="ai-ladder-title">Kako tekst stiže do asistenta</span>
+  </div>
+  <div class="ai-card-grid">
+    <div class="ai-card">
+      <span class="ai-num">1</span>
+      <span class="ai-card-name">Preuzmi i priloži</span>
+      <span class="ai-card-q">Preuzmite <code>.md</code> datoteku poglavlja i priložite je
+      u razgovor. Radi u svakom asistentu i ne traži pristup internetu. Najsigurnije.</span>
+    </div>
+    <div class="ai-card">
+      <span class="ai-num">2</span>
+      <span class="ai-card-name">Otvori u asistentu</span>
+      <span class="ai-card-q">Jedan klik otvara Claude ili ChatGPT s već upisanim pitanjem
+      i poveznicom na poglavlje. Asistent treba pristup internetu da dohvati tekst.</span>
+    </div>
+    <div class="ai-card">
+      <span class="ai-num">3</span>
+      <span class="ai-card-name">Kopiraj poveznicu</span>
+      <span class="ai-card-q">Kopirajte poveznicu na tekst ili gotovu uputu i zalijepite je
+      u bilo koji asistent koji koristite, uključujući Gemini.</span>
+    </div>
+  </div>
+</section>
+```
+
+## Pojedino poglavlje
+
+Poglavlje je radni konj. Dovoljno je malo da stane u svaki asistent i daje najtočnije
+odgovore jer je tekst usko vezan uz vaše pitanje. Odaberite poglavlje pa preuzmite tekst
+ili ga otvorite u asistentu.
+
+```{ojs}
+//| echo: false
+manifest = FileAttachment("data/ai-exports.json").json()
+```
+
+```{ojs}
+//| echo: false
+viewof pog = Inputs.select(manifest.chapters, {
+  label: "Poglavlje",
+  format: c => c.title
+})
+```
+
+```{ojs}
+//| echo: false
+{
+  const c = pog;
+  const tutor = manifest.prompt;
+  const q = encodeURIComponent(
+    tutor +
+    "\n\nTekst poglavlja nalazi se na ovoj poveznici, pročitaj ga i odgovaraj na temelju njega: " +
+    c.mdUrl
+  );
+  const copy = (txt, btn) => {
+    navigator.clipboard.writeText(txt);
+    const old = btn.textContent;
+    btn.textContent = "Kopirano ✓";
+    setTimeout(() => { btn.textContent = old; }, 1400);
+  };
+  return htl.html`<div class="ai-actions">
+    <a class="ai-btn ai-btn--primary" href="${c.mdUrl}" download>⬇ Preuzmi tekst (.md, ~${Math.round(c.tokensApprox/1000)}k tokena)</a>
+    <a class="ai-btn" href="https://claude.ai/new?q=${q}" target="_blank" rel="noopener">Otvori u Claudeu</a>
+    <a class="ai-btn" href="https://chatgpt.com/?q=${q}" target="_blank" rel="noopener">Otvori u ChatGPT-u</a>
+    <button class="ai-btn" onclick=${(e) => copy(c.mdUrl, e.currentTarget)}>Kopiraj poveznicu</button>
+  </div>`;
+}
+```
+
+## Cijela knjiga i veći paketi
+
+Za širi pregled poslužite se cijelom knjigom ili paketom jednog dijela. Cijela je knjiga
+velik tekst, oko četvrt milijuna tokena, pa najbolje radi s asistentima velikog konteksta
+poput Geminija ili Claudea s dugim kontekstom. Pojedini dio knjige stane i u manje asistente.
+
+```{ojs}
+//| echo: false
+{
+  return htl.html`<div class="ai-actions">
+    <a class="ai-btn ai-btn--primary" href="${manifest.full.mdUrl}" download>⬇ Preuzmi cijelu knjigu (.txt)</a>
+    <a class="ai-btn" href="${manifest.full.mapUrl}" target="_blank" rel="noopener">Karta knjige (llms.txt)</a>
+  </div>
+  <div class="ai-dio-list">${
+    manifest.dios.map(d => htl.html`<a class="ai-chip" href="${d.mdUrl}" download>${d.label.replace(/:.*/, "")} · paket</a>`)
+  }</div>`;
+}
+```
+
+## Gotova uputa za asistenta
+
+Zalijepite ovu uputu prije nego što priložite tekst da asistent ostane uz knjigu i
+odgovara na hrvatskom.
+
+```{ojs}
+//| echo: false
+{
+  const copy = (txt, btn) => {
+    navigator.clipboard.writeText(txt);
+    const old = btn.textContent;
+    btn.textContent = "Kopirano ✓";
+    setTimeout(() => { btn.textContent = old; }, 1400);
+  };
+  return htl.html`<figure class="ai-prompt">
+    <blockquote class="ai-prompt-text">${manifest.prompt}</blockquote>
+    <button class="ai-btn ai-btn--primary" onclick=${(e) => copy(manifest.prompt, e.currentTarget)}>Kopiraj uputu</button>
+  </figure>`;
+}
+```
+
+```{=html}
+<footer class="ai-foot">
+  <p>AI ponekad griješi. Provjerite važne tvrdnje u samom tekstu knjige. Otvaranje
+  poveznice u asistentu radi samo ako asistent ima pristup internetu, pa je preuzimanje
+  datoteke uvijek najsigurnije. Tekst je namijenjen osobnom i obrazovnom učenju uz
+  navođenje izvora.</p>
+</footer>
+
+<style>
+/* sakrij Quartov auto-naslovni blok (koristimo vlastiti hero), kao na ostalim
+   hub-stranicama (_atlas.scss, _vodic.scss) */
+.ai-page #title-block-header { display: none; }
+.ai-page #quarto-document-content { max-width: none; }
+/* nadjačaj širinu koju standalone-JS postavi inline (book-include.html) */
+.ai-page main.content { max-width: 880px !important; margin-left: auto !important;
+  margin-right: auto !important; }
+.ai-head { max-width: 760px; margin: 0 auto 1.6rem; text-align: center; }
+.ai-kicker { font-family: "Public Sans", system-ui, sans-serif; text-transform: uppercase;
+  letter-spacing: .14em; font-size: .72rem; font-weight: 600; color: #4A6B5C; }
+.ai-title { font-family: "Newsreader", Georgia, serif; font-weight: 600;
+  font-size: clamp(1.9rem, 4vw, 2.7rem); margin: .35rem 0 .55rem; color: #1C1916; }
+.ai-lede { font-family: "Newsreader", Georgia, serif; font-size: 1.06rem; line-height: 1.6;
+  color: #4A4036; margin: 0; }
+
+.ai-page h2 { font-family: "Newsreader", Georgia, serif; font-weight: 600; color: #1C1916;
+  margin-top: 2.2rem; }
+
+.ai-ladder { max-width: 980px; margin: 1.8rem auto; }
+.ai-ladder-head { text-align: center; margin-bottom: 1rem; }
+.ai-ladder-label { display: block; font-family: "Public Sans", system-ui, sans-serif;
+  text-transform: uppercase; letter-spacing: .12em; font-size: .68rem; font-weight: 600;
+  color: #4A6B5C; }
+.ai-ladder-title { font-family: "Newsreader", Georgia, serif; font-size: 1.3rem;
+  color: #1C1916; }
+.ai-card-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem; }
+.ai-card { background: #FBF8F1; border: 1px solid #E2DACB; border-radius: 12px;
+  padding: 1.1rem 1.15rem; display: flex; flex-direction: column; gap: .4rem; }
+.ai-num { width: 1.7rem; height: 1.7rem; border-radius: 50%; background: #4A6B5C;
+  color: #F2EDE3; font-family: "Public Sans", sans-serif; font-weight: 700;
+  display: grid; place-items: center; font-size: .95rem; }
+.ai-card-name { font-family: "Public Sans", system-ui, sans-serif; font-weight: 700;
+  font-size: 1.02rem; color: #1C1916; }
+.ai-card-q { font-family: "Newsreader", Georgia, serif; font-size: .96rem; line-height: 1.5;
+  color: #4A4036; }
+.ai-card code { background: #EFE8DA; padding: 0 .25rem; border-radius: 4px; }
+
+.ai-actions { display: flex; flex-wrap: wrap; gap: .6rem; margin: 1rem 0 .4rem; }
+.ai-btn { font-family: "Public Sans", system-ui, sans-serif; font-size: .92rem;
+  font-weight: 600; padding: .55rem .9rem; border-radius: 9px; border: 1px solid #4A6B5C;
+  background: #FBF8F1; color: #335043; cursor: pointer; text-decoration: none;
+  line-height: 1.2; transition: background .15s, color .15s; }
+.ai-btn:hover { background: #EAF0EC; }
+.ai-btn--primary { background: #4A6B5C; color: #F2EDE3; border-color: #4A6B5C; }
+.ai-btn--primary:hover { background: #3B5749; color: #fff; }
+
+.ai-dio-list { display: flex; flex-wrap: wrap; gap: .5rem; margin-top: .7rem; }
+.ai-chip { font-family: "Public Sans", system-ui, sans-serif; font-size: .82rem;
+  padding: .35rem .7rem; border-radius: 999px; border: 1px solid #D8CFBE; background: #FBF8F1;
+  color: #5A5046; text-decoration: none; }
+.ai-chip:hover { border-color: #4A6B5C; color: #335043; }
+
+.ai-prompt { margin: 1rem 0; padding: 0; }
+.ai-prompt-text { font-family: "Newsreader", Georgia, serif; font-size: 1.02rem;
+  line-height: 1.55; color: #2B2620; background: #FBF8F1; border-left: 3px solid #4A6B5C;
+  border-radius: 0 8px 8px 0; padding: .9rem 1.1rem; margin: 0 0 .7rem; }
+
+.ai-foot { max-width: 820px; margin: 2.5rem auto 1rem; padding-top: 1rem;
+  border-top: 1px solid #E2DACB; }
+.ai-foot p { font-family: "Public Sans", system-ui, sans-serif; font-size: .86rem;
+  line-height: 1.55; color: #6B6357; }
+</style>
+```

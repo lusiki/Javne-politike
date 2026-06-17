@@ -1,0 +1,152 @@
+# Teorija igara i zakonodavno pregovaranje
+
+> Iz knjige: Sve što želite znati o državi i javnim politikama u Hrvatskoj
+> Autori: Milan Deskar-Škrbić, Petra Palić, Luka Šikić
+> Izvor: https://lusiki.github.io/Javne-politike/chapters/06a-teorija-igara.html
+> Tekstualna verzija poglavlja za korištenje s AI-asistentima.
+> Generirano: 2026-06-17 · © 2026 Milan Deskar-Škrbić, Petra Palić, Luka Šikić. Tekst za osobno i obrazovno korištenje uz navođenje izvora.
+
+---
+
+## Vodič kroz poglavlje
+
+1. Zašto se država ne može razumjeti kao jedan akter, nego kao arena strateške interakcije?
+2. Kako zatvorenikova dilema objašnjava zašto dobrovoljnost sama ne osigurava javna dobra?
+3. Po čemu se igra kukavice i igra koordinacije razlikuju od dileme, i što to znači za ulogu pravila?
+4. Kako predlagatelj proračuna dijeli javni novac i o čemu ovisi njegova pregovaračka moć?
+5. Zašto se stvarno ponašanje u laboratoriju sustavno razlikuje od onoga što model predviđa?
+
+Prethodno je poglavlje aktere političkog procesa, birače, političare, birokrate i interesne skupine, predstavilo kao pojedince koji slijede vlastite ciljeve, ali je svakoga promatralo zasebno. Čim ih je više za istim stolom, ishod svakoga ovisi i o potezima ostalih, pa država prestaje biti jedinstven dobrohotan akter i postaje arena strateške interakcije u kojoj obična maksimizacija korisnosti više ne opisuje ponašanje (Buchanan, 1962; Mueller, 2003).
+
+Za takve situacije ekonomija posuđuje aparat teorije igara, matematičke discipline koja proučava odlučivanje kada ishod ovisi o međusobno povezanim odlukama više aktera (Osborne, 2004). Ona političke borbe prevodi u modele iz kojih se vidi zašto se sklapaju naizgled neobični savezi, kako se dijeli proračunski kolač i pod kojim uvjetima zastupnici dobrovoljno predaju moć stranačkim vođama.
+
+Poglavlje najprije postavlja tri temeljne igre kojima javni izbor objašnjava probleme kolektivnog djelovanja, a zatim ih primjenjuje na zakonodavno pregovaranje o proračunu, gdje pravila glasovanja izravno određuju tko koliko dobiva.
+
+## Strateške igre i kolektivno djelovanje
+
+Igra u normalnoj formi određena je trima elementima, skupom igrača, skupovima strategija dostupnih svakom igraču i funkcijama isplata koje svakoj kombinaciji strategija pridružuju korisnost svakog igrača (Osborne, 2004). Rješenje igre traži se preko pojma ravnoteže.
+
+**Nashova ravnoteža** je kombinacija strategija u kojoj nijedan igrač ne može povećati svoju korisnost jednostranom promjenom strategije dok ostali ne mijenjaju svoju. Strategija je **strogo dominantna** ako igraču donosi veću korisnost od svake druge, bez obzira na to što čine ostali.
+
+Prva i najutjecajnija igra javnog izbora jest zatvorenikova dilema, koja objašnjava zašto dobrovoljnost ne osigurava javna dobra (Hardin, 1968). Dva susjedna poljoprivrednika odlučuju hoće li platiti svoj dio zajedničkog nasipa protiv poplava, klasičnog javnog dobra (Samuelson, 1954). Svaki može kooperirati i platiti svoj dio ili defektirati i nadati se da će drugi sam financirati nasip.
+
+| Igrač A ↓ \ Igrač B → | B kooperira | B defektira |
+|---|---|---|
+| A kooperira | (3, 3) | (0, 5) |
+| A defektira | (5, 0) | (1, 1) |
+
+: Isplatna matrica zatvorenikove dileme; prvi broj je korisnost igrača A, drugi korisnost igrača B. Izrada autora.
+
+Igra otkriva napetost između pojedinačne i kolektivne racionalnosti (Olson, 1965). Ako B kooperira, A je bolje defektirati jer time dobiva pet umjesto tri. Ako B defektira, A je opet bolje defektirati jer dobiva jedan umjesto nule. Defekcija je stoga strogo dominantna strategija za A, a zbog simetrije i za B. Jedina Nashova ravnoteža igre jest obostrana defekcija s isplatama jedan za oba aktera. Ta je ravnoteža Pareto inferiorna u odnosu na obostranu kooperaciju, koja bi obojici donijela tri. Racionalni pojedinci tako svjesno završavaju u ishodu koji je za obojicu lošiji. Upravo zato decentralizirano tržište ne može samo osigurati dovoljnu količinu javnog dobra, pa država svojim autoritetom prisiljava aktere na doprinos kroz porez, prevodeći društvo iz neučinkovite ravnoteže defekcije u učinkovitu kooperaciju (Mueller, 2003).
+
+## Kukavica i koordinacija, sukob i institucije
+
+Drugu igru, kukavicu, obilježava to što obostrana tvrdoća vodi u ishod koji obje strane žele izbjeći pod svaku cijenu (Mueller, 2003). Dvije države članice monetarne unije pregovaraju o podjeli tereta u dubokoj financijskoj krizi. Svaka može popustiti i preuzeti veći dio duga ili ustrajati na tvrdom stavu, očekujući da će druga popustiti kako bi spriječila slom zajedničke valute.
+
+| Država A ↓ \ Država B → | B popušta | B ustraje |
+|---|---|---|
+| A popušta | (0, 0) | (−1, 2) |
+| A ustraje | (2, −1) | (−10, −10) |
+
+: Isplatna matrica igre kukavice. Izrada autora.
+
+Za razliku od dileme, ovdje nema dominantne strategije. Ako B ustraje, A je bolje popustiti i izbjeći slom koji nosi minus deset. Ako B popušta, A je bolje ustrajati i uzeti dva. Igra ima dvije ravnoteže u čistim strategijama, onu u kojoj jedna strana popušta dok druga ustraje, i obrnutu. Problem je strateška neizvjesnost. Ako obje strane, goneći maksimalni dobitak, ustraju do kraja, sustav završava u katastrofi, što objašnjava zašto krizni pregovori traju do posljednje sekunde i zašto se uvode nadnacionalna pravila koja raspodjelu kriznog tereta određuju unaprijed.
+
+Treću skupinu čine igre koordinacije, poput bitke spolova, u kojima postoji više ravnoteža, svi imaju zajednički interes uskladiti se, ali se razilaze oko toga koja je ravnoteža bolja (Osborne, 2004). Dva poduzeća biraju tehnički standard za zajedničku infrastrukturu koja radi samo ako su standardi kompatibilni.
+
+| Poduzeće A ↓ \ Poduzeće B → | B bira X | B bira Y |
+|---|---|---|
+| A bira X | (3, 2) | (0, 0) |
+| A bira Y | (0, 0) | (2, 3) |
+
+: Isplatna matrica igre koordinacije. Izrada autora.
+
+Ravnoteže su dvije, obje pristaju uz isti standard. Ako poduzeća ne mogu komunicirati, prijeti koordinacijski neuspjeh u kojem se resursi troše na nespojive sustave uz nulte isplate. Uloga države ovdje nije prisila ni kazna, kao u dilemi, nego pružanje fokalne točke. Donošenjem zakona, propisivanjem standarda ili objavom smjernica država usklađuje očekivanja aktera i svodi transakcijske troškove pregovaranja na najmanju mjeru, što je jedan od načina na koje institucije kao pravila igre stvaraju red (North, 1990).
+
+## Baron-Ferejohnov model zakonodavnog pregovaranja
+
+Kada se o podjeli proračuna odlučuje pravilom većine, igra postaje dinamična. David Baron i John Ferejohn formalizirali su taj proces u modelu koji je postao temelj moderne političke ekonomije (Baron, 1989). Zakonodavno tijelo ima neparan broj zastupnika $n$, od kojih svaki predstavlja svoj okrug i mari samo za udio proračuna koji ide njemu. Proračun je normaliziran na jedinicu, pa raspodjela $(x_1, \dots, x_n)$ mora zadovoljiti
+
+$$\sum_{i=1}^{n} x_i = 1, \qquad x_i \ge 0.$$
+
+Pregovori teku u rundama pod zatvorenim pravilom. Na početku svake runde jedan zastupnik biva nasumično izabran za predlagatelja, svaki s jednakom vjerojatnošću $1/n$. Predlagatelj iznosi raspodjelu, a tijelo o njoj glasuje bez amandmana. Ako prijedlog dobije većinu, koja traži $(n+1)/2$ glasova, proračun se usvaja i igra završava. Ako padne, pregovori se sele u sljedeću rundu, ali se vrijednost kolača umanjuje faktorom diskontiranja $\delta \in (0,1)$, koji bilježi nestrpljivost, amortizaciju resursa i trošak blokade.
+
+Igru rješavamo pojmom stacionarne savršene ravnoteže u podigrama, u kojoj odluke ovise samo o trenutnom prijedlogu i očekivanjima o nastavku, a ne o povijesti pregovora. Neka je $v$ očekivana vrijednost pregovora za zastupnika na početku runde, prije nego što se zna tko predlaže. Budući da je igra simetrična i da se u ravnoteži proračun usvaja već u prvoj rundi, ukupna se jedinica dijeli među $n$ zastupnika, pa je
+
+$$v = \frac{1}{n}.$$
+
+Odbije li zastupnik prijedlog, dobiva tek diskontiranu vrijednost nastavka $\delta v$. Najmanji iznos kojim predlagatelj može kupiti njegov glas zato je njegova rezervacijska cijena $\delta v = \delta/n$. Predlagatelju nije potreban pristanak svih, nego većine, pa uz vlastiti glas mora kupiti još $(n-1)/2$ glasova. Racionalno bira upravo toliko najjeftinijih zastupnika, nudi svakom točno $\delta/n$, a ostalima ništa. Za sebe zadržava
+
+$$x_p = 1 - \frac{n-1}{2}\cdot\frac{\delta}{n} = 1 - \frac{\delta(n-1)}{2n}.$$
+
+Graf koji slijedi prikazuje taj udio predlagatelja u ovisnosti o veličini parlamenta, pri čemu krivulja pada prema svojoj donjoj granici kako tijelo raste. Graf je interaktivan, pa klizači mijenjaju broj zastupnika i njihovu strpljivost.
+
+*Slika. Udio proračuna koji predlagatelj zadržava, x_p = 1 − δ(n−1)/(2n), pada s veličinom parlamenta prema granici 1 − δ/2. Veće tijelo raspršuje moć predlagatelja, a ne koncentrira je.*
+
+**Što isprobati.** (1) Zadržite strpljivost visokom i povećavajte broj zastupnika, pa pratite kako udio predlagatelja pada prema granici 1 − δ/2, jer se moć raspršuje na sve veći broj jeftinijih, ali brojnijih glasova. (2) Spustite faktor diskontiranja prema nuli i vidjet ćete kako udio predlagatelja skoči na cijeli proračun, jer nestrpljivi zastupnici pristaju na gotovo ništa. (3) Postavite strpljivost blizu jedinice uz velik parlament i uvjerite se da predlagatelj zadržava tek nešto više od polovice, dok ostatak dijeli njegova minimalna koalicija.
+
+## Pregovaračka moć i ustavni parametri
+
+Iz formule za udio predlagatelja slijede dva uvida o tome kako ustrojstvo parlamenta dijeli javni novac. Derivacije udjela po veličini tijela i po strpljivosti glase
+
+$$\frac{\partial x_p}{\partial n} = -\frac{\delta}{2n^2} < 0, \qquad \frac{\partial x_p}{\partial \delta} = -\frac{n-1}{2n} < 0.$$
+
+Obje su negativne. Moć predlagatelja opada s veličinom parlamenta. Veće tijelo doista čini svaki pojedini glas jeftinijim, jer je očekivana vrijednost nastavka $1/n$ manja, ali istodobno traži kupnju većeg broja glasova, a taj drugi učinak prevladava, pa udio predlagatelja pada prema granici od polovice proračuna. Veliko zakonodavno tijelo zato raspršuje pregovaračku moć, dok je malo koncentrira u rukama onoga tko predlaže. Moć predlagatelja opada i sa strpljivošću zastupnika, jer strpljiviji zastupnici lakše odbiju nepovoljan prijedlog i čekaju novu rundu, što predlagatelja prisiljava na izdašniju ponudu. U graničnom slučaju potpune nestrpljivosti, kada $\delta \to 0$, rezervacijska cijena pada na nulu i predlagatelj uzima cijeli proračun. Kada su zastupnici gotovo savršeno strpljivi, kada $\delta \to 1$, udio se svodi na
+
+$$x_p = \frac{n+1}{2n},$$
+
+tek nešto iznad polovice, dok ostatak dijeli minimalna pobjednička koalicija. Ustavna pravila o rokovima donošenja proračuna time izravno određuju raspodjelu javnog novca.
+
+Osnovni model pretpostavlja da zastupnici djeluju kao izolirani pojedinci, no u stvarnim parlamentima organizirani su u stranke koje nameću disciplinu. Stranačku privrženost modeliramo tako da zastupnik vrednuje i udio koji ode njegovu stranačkom kolegi. U tročlanom tijelu u kojem zastupnici $1$ i $2$ dijele stranku, a $3$ je oporba, njihove su korisnosti
+
+$$u_1 = x_1 + \alpha\, x_2, \qquad u_2 = x_2 + \alpha\, x_1,$$
+
+gdje parametar kohezije $\alpha \in [0,1]$ mjeri jačinu stranačke veze. Pri $\alpha = 0$ vraćamo se u osnovni model, a pri $\alpha = 1$ kolega tuđi uspjeh vrednuje kao svoj. Kohezija mijenja ravnotežu jer predlagatelj svom stranačkom kolegi više ne mora platiti punu cijenu glasa, budući da kolega već uživa dio koristi od udjela koji predlagatelj zadržava za sebe. Stranačka kohezija tako djeluje kao množitelj pregovaračke moći vladajuće stranke, omogućujući joj da zadrži veći dio resursa unutar svoje političke obitelji na štetu oporbe (Mueller, 2003).
+
+Time se objašnjava i zašto pojedinačni zastupnici često dobrovoljno predaju svoje pravo predlaganja stranačkom vođi, prenoseći na njega svoju vjerojatnost izbora za predlagatelja. Takvo je delegiranje ravnotežno samo kad su ispunjena tri uvjeta. Procedura mora vođi davati znatnu prednost u izboru za predlagatelja u odnosu na običnog zastupnika. Kohezija $\alpha$ mora biti dovoljno visoka da zastupnik vjeruje kako će vođa u svom prijedlogu vrednovati i interes njegova okruga. Naposljetku, zastupnici moraju biti dovoljno nestrpljivi, jer pri niskom $\delta$ trošak blokade postaje prevelik, pa je racionalno prepustiti vođi brzo i koordinirano donošenje proračuna umjesto izlaganja riziku dugih pregovora. Gdje ti uvjeti izostaju, u mladim demokracijama ili u razdobljima slabe discipline, zastupnici zadržavaju svoja prava, a parlament obilježavaju frakcijske borbe i proračunska nestabilnost.
+
+## Eksperimentalna provjera modela
+
+Snaga teorije igara dijelom leži u tome što je podložna provjeri u laboratoriju. Tri desetljeća eksperimenata ispitivala su koliko stvarni ljudi u ulozi zastupnika slijede predviđanja Baron-Ferejohnova modela (Baranski, 2022). Rezultati potvrđuju strukturu, ali ne i raspodjelu. Minimalne pobjedničke koalicije doista su najčešći ishod, jer sudionici prepoznaju da uključivanje suvišnih partnera samo smanjuje vlastiti udio.
+
+Raspodjela unutar koalicije, međutim, sustavno odstupa od predviđanja. Predlagatelji svojim partnerima nude osjetno više od rezervacijske cijene, a nerijetko i posve jednake udjele.
+
+**Empirijski dokaz.**
+U laboratorijskim pregovorima predlagatelji su izdašniji nego što model dopušta, a odstupanje se objašnjava dvama kanalima (Baranski, 2022). Prvi je averzija prema nejednakosti, sklonost da se preniske ponude vrednuju kao nepravedne, koju formalizira model u kojem korisnost pada s razlikom prema drugima (Fehr, 1999). Drugi je strateški strah od odbijanja, jer predlagatelj zna da uvrijeđeni partner može odbiti i gurnuti pregovore u novu, skuplju rundu, pa radije nudi više. Uz to, ponašanje izrazito ovisi o povijesti, suprotno pretpostavci stacionarnosti. Zastupnik kojeg je raniji predlagatelj isključio ili ponizio niskom ponudom sustavno mu se osvećuje kad sam dođe na red, čak i kada bi mu uključivanje tog zastupnika bilo najjeftiniji put do većine.
+
+Mehanizam osvete i ovisnosti o povijesti stvara trajne koalicijske saveze i kaznene obrasce koji pregovore drže stabilnima, ali i mnogo manje gipkima nego što predviđa osnovni model. Usporedba teorijskih predviđanja i eksperimentalnih nalaza sažeta je u tablici.
+
+| Dimenzija | Predviđanje modela | Eksperimentalni nalaz |
+|---|---|---|
+| Struktura koalicije | isključivo minimalne pobjedničke koalicije | minimalne su modalne, ali se javljaju i šire |
+| Udio predlagatelja | vrlo visok, predlagatelj zadržava većinu | umjereniji zbog averzije prema nejednakosti i straha od odbijanja |
+| Udio partnera | tek rezervacijska cijena glasa | osjetno veći, podjela teži pravednosti |
+| Vremenska dinamika | usvajanje odmah u prvoj rundi | uglavnom bez odgode, ali se javljaju i blokade |
+| Uloga povijesti | savršena stacionarnost | izražena ovisnost o povijesti, osveta i trajni savezi |
+
+: Predviđanja modela zakonodavnog pregovaranja i eksperimentalni nalazi. Izrada autora prema Baron, 1989 i baranskimorton2022.
+
+## Ustavni dizajn proračunskih pravila
+
+Spoj teorije igara i modela pregovaranja nosi izravne posljedice za ustavni dizajn proračunskih institucija (Buchanan, 1962). Ako politički proces prirodno teži asimetričnim minimalnim koalicijama koje iskorištavaju manjinu, zadatak ustavnog okvira jest postaviti pravila koja te poticaje obuzdavaju unaprijed, prije nego što se zna tko će biti na dobitku (Brennan, 1985).
+
+Prvi odgovor jest ustavno ograničenje proračunskog deficita i javnog duga. Kada je gornja granica deficita zadana brojčano i obvezujuće, sužava se prostor za kupnju glasova, jer se trošak koalicijskih dogovora više ne može tiho prebaciti na buduće generacije koje ne sjede za pregovaračkim stolom. Predlagatelj koji bi pobjedničku koaliciju gradio dijeljenjem novca mora ga sada pronaći unutar zadane granice, pa je prisiljen birati među projektima umjesto da ih sve financira zaduživanjem. Pravilo time ne mijenja motive aktera, nego im skraćuje doseg.
+
+Drugi odgovor jest pravilo pojačane većine za proračun i porezne zakone. Ako se umjesto natpolovične traži, primjerice, dvotrećinska većina, predlagatelj više ne može sastaviti najmanju moguću koaliciju, nego mora pridobiti i dio oporbe. U Baron-Ferejohnovu okviru to izravno obara njegov udio, jer glasove mora platiti većem broju zastupnika, a manjinu je teže preglasati i iskoristiti. Cijena su viši troškovi odlučivanja i veća opasnost od blokade, jer širi krug koji mora pristati lakše zapne na neslaganju.
+
+Oba mehanizma potvrđuju pouku koja povezuje cijeli ovaj dio knjige. Pravila igre nisu neutralna pozadina kolektivne odluke nego njezin tvorac, pa se ista skupina aktera pod različitim procedurama ponaša različito i dijeli javni novac drukčije. Kvaliteta proračunskog ishoda zato se ne popravlja zamjenom ljudi nego promišljenim izborom pravila pod kojima oni odlučuju, a taj izbor uvijek vaga između suprotstavljenih vrijednosti, učinkovitosti i zaštite manjine, brzine i šire suglasnosti. Strateška analiza ovoga poglavlja time vodi ravno u pitanja kojima se bave poglavlja koja slijede, kako se mnoštvo pojedinačnih preferencija uopće agregira u jednu društvenu odluku i koliko ta odluka ovisi o pravilima kroz koja prolazi.
+
+## Sažetak
+
+Teorija igara državu prikazuje kao arenu strateške interakcije, a ne kao jedinstvenog dobronamjernog planera. Zatvorenikova dilema pokazuje zašto dobrovoljnost ne osigurava javna dobra i opravdava prisilno oporezivanje, igra kukavice zašto krizni pregovori prijete katastrofom, a igre koordinacije zašto institucije djeluju kao fokalne točke. Baron-Ferejohnov model otkriva da pregovaračka moć predlagatelja proračuna ovisi o veličini tijela i strpljivosti zastupnika, dok stranačka kohezija pojačava ruku vladajuće stranke. Eksperimenti potvrđuju strukturu minimalnih koalicija, ali ne i nemilosrdnu raspodjelu, jer averzija prema nejednakosti i osveta ublažavaju ono što model predviđa. Pouka je da proračunska pravila i parlamentarne procedure izravno oblikuju raspodjelu javnog novca. Time strateška analiza vodi ravno u pitanje koje slijedi, kako se mnoštvo pojedinačnih preferencija uopće pretvara u jednu društvenu odluku i koliko ta odluka ovisi o pravilima kroz koja prolazi.
+
+**Vježba s podacima.**
+Promotrite zakonodavno tijelo s $n = 5$ zastupnika koji dijele proračun normaliziran na jedinicu, uz faktor diskontiranja $\delta = 0{,}8$.
+
+(a) Izračunajte rezervacijsku cijenu glasa pojedinog zastupnika, odnosno najmanji iznos kojim ga predlagatelj može pridobiti.
+
+(b) Odredite koliko glasova uz vlastiti predlagatelj mora kupiti za većinu i koliki udio proračuna pritom zadržava za sebe.
+
+(c) Ponovite izračun za $n = 9$ i objasnite zašto se udio predlagatelja smanjio, premda je cijena svakog pojedinog glasa niža.
+
+(d) Pretpostavite da ustav umjesto natpolovične traži dvotrećinsku većinu. Objasnite, bez potpunog izvoda, u kojem smjeru se mijenja udio predlagatelja i zašto to štiti manjinu uz veći rizik blokade.

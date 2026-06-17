@@ -1,0 +1,184 @@
+# Cost-benefit analiza i evaluacija javnih politika
+
+> Iz knjige: Sve što želite znati o državi i javnim politikama u Hrvatskoj
+> Autori: Milan Deskar-Škrbić, Petra Palić, Luka Šikić
+> Izvor: https://lusiki.github.io/Javne-politike/chapters/20-cba-evaluacija.html
+> Tekstualna verzija poglavlja za korištenje s AI-asistentima.
+> Generirano: 2026-06-17 · © 2026 Milan Deskar-Škrbić, Petra Palić, Luka Šikić. Tekst za osobno i obrazovno korištenje uz navođenje izvora.
+
+---
+
+## Vodič kroz poglavlje
+
+1. Što je cost-benefit analiza i zašto je važna za javne politike?
+2. Kako se mjere društvene koristi i troškovi te zašto se diskontiraju?
+3. Što neto sadašnja vrijednost i diskontna stopa govore o vrijednosti projekta?
+4. Po čemu se razlikuju metode evaluacije i koja najjače utvrđuje uzročni učinak?
+5. Koja su glavna ograničenja evaluacije i zašto je važna neovisnost evaluatora?
+
+Reformski pristupi iz prethodnih poglavlja pokazuju kako država može drukčije organizirati svoje djelovanje, no svaki od njih na kraju mora odgovoriti na isto pitanje. Daje li neka politika veću korist od troška i kako to uopće znamo. Cost-benefit analiza (CBA) predstavlja jedan od najvažnijih analitičkih alata u javnim financijama i politikama. Riječ je o sustavnom postupku kojim se procjenjuju ukupne društvene koristi i troškovi neke javne politike, projekta ili investicije, s ciljem donošenja racionalnih i informiranih odluka. Za razliku od privatnog sektora, gdje je kriterij uspješnosti najčešće profit, u javnom sektoru ključni je kriterij društvena dobrobit. Upravo zato CBA omogućuje usporedbu različitih politika na temelju njihova neto doprinosa društvu.
+
+Poglavlje zato cost-benefit analizu prvo rastavlja na korake, od mjerenja društvenih koristi i troškova do njihova diskontiranja i svođenja na neto sadašnju vrijednost, a potom iskreno popisuje njezine granice, jer se sve vrijednosti ne daju izraziti u novcu. Odatle prelazi na širu evaluaciju javnih politika i na pitanje koja metoda najuvjerljivije utvrđuje je li neka politika doista proizvela učinak koji joj pripisujemo.
+
+## Zašto je cost-benefit analiza važna?
+
+U javnom sektoru temeljni je problem ekonomske politike činjenica da su resursi ograničeni, dok su potrebe društva gotovo neograničene. Vlade se svakodnevno suočavaju s izborima između konkurentnih projekata i politika, primjerice između ulaganja u zdravstveni sustav ili prometnu infrastrukturu, između povećanja socijalnih transfera ili smanjenja poreznog opterećenja. U takvom okruženju CBA služi kao ključni analitički okvir koji omogućuje da se ti izbori donose na temelju sustavne procjene njihovih ukupnih društvenih učinaka, a ne isključivo na temelju političkih preferencija ili kratkoročnih fiskalnih ograničenja.
+
+Osnovna vrijednost CBA proizlazi iz njezine sposobnosti da poveže ekonomsku teoriju s konkretnim javnim odlukama. Dok tržište u privatnom sektoru koristi profit kao kriterij učinkovitosti, javni sektor nema tako jasan signal. CBA zato uvodi koncept društvene dobrobiti kao kriterija odlučivanja, nastojeći kvantificirati i usporediti sve relevantne koristi i troškove neke politike, uključujući i one koji nisu obuhvaćeni tržišnim cijenama (Boardman, 2018).
+
+Važna dimenzija CBA jest i njezina uloga u povećanju transparentnosti i odgovornosti. Budući da zahtijeva eksplicitno navođenje pretpostavki, metoda i procjena, CBA smanjuje prostor za proizvoljne odluke i olakšava javnu kontrolu nad procesom. Kako naglašava britanski *Green Book*, kvalitetna evaluacija javnih projekata mora biti utemeljena na sustavnom razmatranju svih relevantnih opcija i njihovih posljedica, uz naglasak na dugoročne učinke i neizvjesnost (Treasury}, 2022). Osim toga, CBA može smanjiti utjecaj političkog populizma i proračunsko-političkih ciklusa jer uključuje vremensku dimenziju i diskontiranje budućih učinaka.
+
+Posebno je važno naglasiti da CBA proširuje fokus analize izvan uskog okvira proračunskih troškova. Javne odluke često imaju značajne neizravne i eksternalijske učinke koji nisu vidljivi u fiskalnim pokazateljima. Primjerice, izgradnja autoceste predstavlja velik izdatak za proračun, ali istodobno može donijeti znatne koristi u obliku smanjenja vremena putovanja, povećanja sigurnosti i rasta produktivnosti.
+
+## Koraci u provedbi cost-benefit analize
+
+Provedba CBA strukturiran je i metodološki zahtjevan proces. Iako se osnovna logika usporedbe ukupnih koristi i troškova čini jednostavnom, njezina primjena zahtijeva niz pažljivo definiranih koraka.
+
+Prvi korak odnosi se na jasno definiranje projekta i relevantnih alternativa. Svaka CBA mora započeti preciznim određivanjem cilja i identifikacijom različitih opcija za njegovo ostvarenje. Ključno je uključiti i tzv. „do nothing" scenarij, odnosno situaciju u kojoj se projekt ne provodi, jer on služi kao referentna točka. U zdravstvu izbor ne mora biti samo između izgradnje nove bolnice i statusa quo, već može uključivati i modernizaciju postojećih kapaciteta ili jačanje primarne zaštite (Boardman, 2018).
+
+Sljedeći korak obuhvaća identifikaciju svih relevantnih troškova i koristi, uključujući izravne fiskalne troškove, ali i šire ekonomske, socijalne i okolišne posljedice. Posebna pažnja posvećuje se eksternalijama, učincima koje projekt prebacuje na treće strane bez da ih tržišne cijene obuhvate, jer upravo oni razdvajaju proračunski trošak od ukupnog društvenog učinka.
+
+Treći korak, kvantifikacija i monetizacija učinaka, predstavlja jedan od najzahtjevnijih dijelova, a cilj mu je sve koristi i troškove izraziti u novčanim jedinicama. Najveći izazov predstavljaju nematerijalne vrijednosti poput ljudskog života, sigurnosti ili kvalitete okoliša, za koje se koriste metode poput spremnosti na plaćanje (*willingness to pay*), otkrivenih preferencija ili sjenovnih cijena (*shadow prices*).
+
+Nakon monetizacije slijedi diskontiranje, odnosno svođenje budućih troškova i koristi na sadašnju vrijednost. Diskontna stopa ključan je parametar jer snažno utječe na rezultate, osobito kod dugoročnih projekata.
+
+**Diskontna stopa** je stopa kojom se budući iznosi svode na sadašnju vrijednost, pa odražava koliko manje vrijedi korist ili trošak koji nastaje kasnije u odnosu na isti iznos danas; što je stopa viša, to udaljena buduća korist manje teži u izračunu, zbog čega izbor stope presudno oblikuje ocjenu dugoročnih projekata.
+
+Jednom kada su sve buduće koristi i troškovi svedeni na sadašnji trenutak, treba ih sažeti u jedan broj koji kaže isplati li se projekt uopće provesti. Tu ulogu nosi **neto sadašnja vrijednost**.
+
+**Neto sadašnja vrijednost (NPV)** je zbroj svih budućih koristi i troškova projekta, pri čemu se svaki budući iznos diskontira na sadašnji trenutak koeficijentom $1/(1+r)^t$, gdje je $r$ diskontna stopa, a $t$ broj godina udaljenosti. Projekt je društveno opravdan ako je NPV pozitivan.
+
+Definicija se izravno prevodi u formulu. Ako $B_t$ i $C_t$ označavaju koristi i troškove u godini $t$, a $r$ diskontnu stopu, neto sadašnja vrijednost zbraja diskontirane neto tokove kroz cijeli vijek projekta,
+
+$$\text{NPV} = \sum_{t=0}^{T} \frac{B_t - C_t}{(1+r)^t}.$$
+
+Zbroj kreće od $t=0$, pa početno ulaganje ulazi nediskontirano, dok svaki kasniji tok to manje doprinosi što je dalje u budućnosti i što je stopa $r$ viša. Uz neto sadašnju vrijednost često idu dva srodna kriterija. Omjer koristi i troška dijeli diskontirane koristi diskontiranim troškovima, a interna stopa povrata je upravo ona stopa pri kojoj neto sadašnja vrijednost pada na nulu,
+
+$$\text{BCR} = \frac{\sum_t B_t/(1+r)^t}{\sum_t C_t/(1+r)^t}, \qquad \text{IRR} \ \text{rješava}\ \sum_{t=0}^{T} \frac{B_t - C_t}{(1+\text{IRR})^t} = 0.$$
+
+Projekt je opravdan kad je neto sadašnja vrijednost pozitivna, što je istovrijedno tomu da omjer koristi i troška premašuje jedinicu, a interna stopa povrata nadmašuje diskontnu stopu (Boardman, 2018).
+
+Suvremeni pristupi naglašavaju i potrebu za analizom osjetljivosti, scenarijskom analizom i razmatranjem distribucijskih učinaka (Treasury}, 2022). CBA nije linearni, mehanički postupak, već iterativni proces u kojem se koraci međusobno preispituju.
+
+## Posebnosti cost-benefit analize u javnom sektoru
+
+CBA u javnom sektoru bitno se razlikuje od primjene u privatnom sektoru jer je usmjerena na maksimizaciju ukupne društvene dobrobiti, a ne profitabilnosti. To znači da analiza mora obuhvatiti znatno širi spektar učinaka.
+
+Jedna od najvažnijih posebnosti odnosi se na distribucijske učinke. Projekt može imati pozitivnu neto sadašnju vrijednost, ali istodobno povećavati društvene nejednakosti. Ulaganja u prometnu infrastrukturu mogu povećati agregatnu učinkovitost, ali koristi mogu biti koncentrirane među višim dohodovnim skupinama, dok troškove snose svi porezni obveznici. Zato suvremeni pristupi uključuju distribucijske ponderacije, kojima se veća težina daje koristima za niže dohodovne skupine (Treasury}, 2022).
+
+Druga posebnost odnosi se na eksternalije. Javni projekti gotovo uvijek generiraju značajne pozitivne i negativne eksternalije koje nisu uključene u tržišne cijene. Treća dimenzija odnosi se na javna dobra, koja predstavljaju poseban izazov jer za njih ne postoje tržišne cijene, pa se moraju koristiti neizravne metode procjene. Posebno važna dimenzija jest neizvjesnost i dugoročni karakter javnih projekata, čiji se učinci često protežu kroz desetljeća, pa CBA uključuje analizu osjetljivosti, scenarijsku analizu i stohastičke simulacije.
+
+U središtu te rasprave nalazi se i izbor diskontne stope. Viša diskontna stopa smanjuje važnost dugoročnih koristi, dok niža daje veću težinu budućim generacijama.
+
+Korisno je vidjeti i odakle ta stopa dolazi, jer to objašnjava zašto se oko nje stručnjaci toliko spore. Društvena diskontna stopa obično se rastavlja na dva dijela, na stopu čistog vremenskog preferiranja, koja govori koliko dobrobit budućih ljudi vrijedi manje samo zato što je u budućnosti, i na član koji odražava očekivani rast dohotka pomnožen brzinom kojom dodatni dohodak gubi na vrijednosti kako društva bogate (Treasury}, 2022).
+
+Ta se rastavba sažima u Ramseyjevu formulu društvene diskontne stope,
+
+$$r = \delta + \eta\,g,$$
+
+gdje je $\delta$ stopa čistog vremenskog preferiranja, $g$ očekivani rast dohotka, a $\eta$ elastičnost granične korisnosti koja mjeri koliko brže dodatni euro gubi vrijednost kako dohodak raste (Ramsey, 1928; Treasury}, 2022). Drugi je dio uglavnom tehnički i mjerljiv, no prvi je čisto vrijednosni jer nema empirijskog načina da se utvrdi koliko smijemo diskontirati dobrobit naraštaja koji još nije rođen. Upravo zato se rasprave o dugoročnim politikama, od klime do mirovina, na kraju gotovo uvijek svode na sukob oko te jedne etičke pretpostavke, a ne oko same ekonomske računice.
+
+**Empirijski dokaz.**
+Izbor diskontne stope nije tehnička sitnica jer kod dugoročnih projekata presudno mijenja rezultat. Korist koja nastaje za pedeset godina pri diskontnoj stopi od 1 % vrijedi danas oko 60 % svojega iznosa, a pri stopi od 6 % tek oko 5 %, pa ista klimatska investicija može izgledati izrazito isplativo ili posve neopravdano ovisno samo o tom parametru (Treasury}, 2022). Zbog toga smjernice za javne projekte propisuju niže društvene diskontne stope za učinke koji sežu duboko u budućnost, izričito iz razloga međugeneracijske pravednosti. Pouka je da diskontiranje nije neutralan postupak, nego ugrađuje vrijednosni sud o tome koliko nam je važna dobrobit budućih naraštaja.
+
+Graf koji slijedi prikazuje neto sadašnju vrijednost projekta u ovisnosti o diskontnoj stopi, pri čemu krivulja pada i u nekom trenutku probija nulu, a to sjecište je interna stopa povrata iznad koje projekt prestaje biti opravdan. Graf je interaktivan, pa klizači mijenjaju diskontnu stopu i godišnju neto korist, čime se vidi koliko je ocjena projekta osjetljiva na te pretpostavke.
+
+*Slika. NPV projekta (ulaganje 100 mil. € i neto korist kroz četiri godine) pada kako raste diskontna stopa; pri internoj stopi povrata (IRR) jednak je nuli, a iznad nje projekt postaje neopravdan.*
+
+**Što isprobati.** (1) Pri Diskontna stopa (r) oko 5 % crna točka stoji u pozitivnom području, pa je projekt društveno opravdan. (2) Pomičite klizač udesno i pratite kako NPV pada te u nekom trenutku probija nulu, a to sjecište je upravo interna stopa povrata iznad koje projekt postaje neopravdan. (3) Vratite stopu nisko pa snizite Godišnja neto korist (mil. €) prema 10 i vidjet ćete da cijela krivulja klizne prema dolje, čime se interna stopa povrata smanjuje i sve manji raspon stopa opravdava projekt.
+
+Sve navedeno pokazuje da je CBA u javnom sektoru znatno više od tehničkog alata. Ona je integrativni okvir koji povezuje ekonomsku učinkovitost s društvenom pravednošću, okolišnom održivošću i dugoročnom perspektivom.
+
+## Primjeri primjene
+
+Koraci i posebnosti obrađeni dosad jasnije se vide na konkretnim slučajevima, pa iste koncepte pratimo na tri tipa projekta koji se razlikuju po tome koliko se njihove koristi daju izraziti u novcu, na infrastrukturi, zdravstvu i okolišu.
+
+U slučaju infrastrukturnih projekata poput gradnje mosta troškovi su relativno transparentni i uključuju kapitalne izdatke i troškove održavanja, uz oportunitetni trošak javnih sredstava. Koristi su višedimenzionalne i obuhvaćaju uštede vremena putovanja, povećanu sigurnost te šire ekonomske koristi poput razvoja lokalnog gospodarstva i bolje integracije tržišta rada. Dio tih koristi ima obilježja eksternalija, pa odluka ne ovisi samo o financijskoj isplativosti, nego o tome generira li projekt pozitivnu neto društvenu korist kroz vrijeme.
+
+U zdravstvu, primjerice kod uvođenja novog lijeka, troškovi uključuju cijenu lijeka, distribuciju i administraciju. Koristi se odnose na produženje životnog vijeka i poboljšanje kvalitete života, što se često izražava kroz koncept QALY (*quality-adjusted life years*). Monetizacija tih koristi zahtijeva normativne pretpostavke o tome koliko društvo „vrijedi" dodatnu godinu života. Tu posebno dolazi do izražaja etička i distribucijska dimenzija jer financiranje skupog lijeka za rijetku bolest može biti „neisplativo" u uskom ekonomskom smislu, ali društveno poželjno iz perspektive pravednosti i solidarnosti.
+
+Kod okolišnih politika poput smanjenja emisija CO₂ troškovi ulaganja u zelene tehnologije često su visoki i javljaju se u kratkom roku, dok se koristi od izbjegnutih budućih šteta protežu duboko u budućnost i izražavaju kroz socijalnu cijenu ugljika. Izbor diskontne stope ovdje izravno uključuje pitanje međugeneracijske pravednosti, a klimatske politike imaju snažnu komponentu globalnih eksternalija.
+
+## Ograničenja cost-benefit analize
+
+Primjeri zdravstva i okoliša već su nagovijestili gdje CBA postaje sporna, ondje gdje se koristi teško prevode u novac. Unatoč svojoj važnosti, CBA ima značajna metodološka i praktična ograničenja. Ta ograničenja ne znače da je CBA neupotrebljiva, već da njezine rezultate treba interpretirati s oprezom i, gdje je potrebno, nadopuniti drugim pristupima.
+
+Jedno od temeljnih ograničenja odnosi se na monetizaciju ne-tržišnih vrijednosti. Mnoge koristi, poput vrijednosti ljudskog života, zdravlja ili kvalitete okoliša, nemaju tržišnu cijenu i teško ih je precizno izraziti u novcu, pa rezultati mogu varirati ovisno o metodologiji.
+
+Vrijedi objasniti kako se takav broj uopće dobiva, jer u tome leži i njegova krhkost. Vrijednost statističkog života nije cijena ičijeg života, nego zbroj brojnih sitnih kompromisa između novca i rizika, pa ako ljudi za posao s godišnjim rizikom smrti od jedan prema deset tisuća traže određeni dodatak na plaću, iz tog se dodatka izvodi implicitna vrijednost izbjegnute statističke smrti (Boardman, 2018).
+
+Formalno, vrijednost statističkog života je omjer dodatka na plaću $\Delta w$ i prirasta rizika smrti $\Delta p$,
+
+$$\text{VSL} = \frac{\Delta w}{\Delta p}.$$
+
+Ako radnici za godišnji rizik veći za $\Delta p = 0{,}0001$ traže $\Delta w = 700$ eura više plaće, implicitna vrijednost statističkog života iznosi sedam milijuna eura. Taj je broj krhak upravo zato što počiva na sitnim razlikama u plaći i riziku koje je teško precizno izmjeriti. Takve se procjene dobivaju na dva načina. Metoda otkrivenih preferencija čita ih iz stvarnog ponašanja, primjerice iz premija na plaću za opasnije poslove ili iz cijena nekretnina u čišćem okolišu, dok ih metoda iskazanih preferencija prikuplja izravnim anketnim pitanjem koliko bi tko platio za neko netržišno dobro. Druga je metoda osjetljiva na pristranost hipotetskog odgovora, jer ispitanik koji ne plaća stvarno precjenjuje spremnost na plaćanje, i na učinak opsega, jer iskazani iznos jedva raste kad se količina dobra višestruko poveća, zbog čega ista korist različitim metodama može dobiti vrijednosti koje se razlikuju za red veličine.
+
+Šira filozofska kritika tog ograničenja ide korak dalje. Sandel upozorava da problem nije samo tehnička poteškoća izračuna sjenovne cijene, nego da sam postupak monetizacije može promijeniti prirodu odluke koju se procjenjuje (Sandel, 2012). Kada se vrijednost ljudskog života, kvaliteta okoliša ili pravo na zdravstvenu skrb izrazi u eurima, ti se entiteti prestaju razlikovati od ostale robe koju mjerimo istim mjerilom. Postupak koji bi trebao pomoći u izboru tiho mijenja moralni status onoga što se procjenjuje, što može biti prihvatljivo za promjene putnih troškova, ali ne i za odluke koje zadiru u temeljne društvene vrijednosti.
+
+Praktična implikacija nije odbacivanje CBA, nego svjesnost o granicama njezine domene. Za projekte u kojima sve relevantne posljedice imaju vidljivu tržišnu cijenu (logistika, energetska infrastruktura, telekomunikacije), monetizacija je analitički prikladan instrument. Za odluke u kojima središnji ulog dotiče distribuciju temeljnih sloboda ili međugeneracijska prava, CBA može pružiti korisne dijelove odgovora, ali konačni izbor ostaje vrijednosno opterećen na način koji se ne može svesti na rezultat izračuna.
+
+**Politika u praksi.**
+Velik infrastrukturni projekt pokazuje i domet i granice cost-benefit analize. Za britansku brzu prugu HS2 službene su analize u različitim fazama davale vrlo različite procjene neto koristi, ovisno o pretpostavkama o vrijednosti uštede vremena, budućoj potražnji i diskontnoj stopi, a procijenjeni troškovi tijekom godina su višestruko narasli. Projekt je na kraju smanjen i odgođen iz političkih razloga, neovisno o tome što su pojedine analize pokazivale pozitivnu neto vrijednost. Primjer pokazuje da CBA disciplinira raspravu i čini pretpostavke vidljivima, ali da konačnu odluku oblikuju i raspodjela koristi, kredibilitet procjena troškova i politički proces, a ne samo izračunata neto sadašnja vrijednost.[1]
+
+Drugo ograničenje odnosi se na ovisnost rezultata o pretpostavkama modela, osobito o izboru diskontne stope, koja može dramatično promijeniti zaključke.
+
+Treći problem je rizik političke manipulacije i selektivne primjene. Budući da rezultat ovisi o pretpostavkama o potražnji, vrijednosti vremena ili diskontnoj stopi, naručitelj analize može te pretpostavke prilagoditi kako bi izračun podržao unaprijed donesenu odluku, čime se CBA iz alata za vaganje opcija pretvara u naknadno opravdanje već izabranog ishoda.
+
+Četvrto ograničenje odnosi se na pitanja pravednosti i distribucije. Standardna CBA polazi od ukupne društvene koristi (Kaldor-Hicksov kriterij, vidi Kaldor-Hicksovu kriteriju), prema kojem je projekt opravdan ako dobitnici načelno mogu obeštetiti gubitnike i ostati na dobitku. Taj kriterij pritom ne traži da se ta naknada doista isplati, pa pozitivan rezultat ne jamči da će raspodjela koristi i troškova biti pravedna.
+
+Zbog svih navedenih ograničenja, u suvremenoj praksi CBA se rijetko koristi kao jedini alat. Sve se češće kombinira s multikriterijskom analizom, analizom utjecaja na okoliš i kvalitativnim procjenama. Njezina najveća snaga leži u sustavnom i transparentnom pristupu evaluaciji, ali njezina ograničenja zahtijevaju pažljivu interpretaciju i kombiniranje s drugim metodama.
+
+## Evaluacija javnih politika i njezini ciljevi
+
+Cost-benefit analiza pita isplati li se neka politika prije nego što je provedemo, no to ostaje procjena utemeljena na pretpostavkama, pa kada politika jednom zaživi tek treba utvrditi je li ono što smo proveli doista proizvelo učinak koji smo joj pripisali. Time se s *ex ante* procjene pomičemo na *ex post* evaluaciju.
+
+Evaluacija javnih politika predstavlja ključnu fazu u ciklusu javnih politika. Dok CBA primarno služi kao *ex ante* alat za procjenu prije provedbe, evaluacija je usmjerena na *ex interim* i *ex post* analizu stvarnih učinaka. Evaluacija odgovara na temeljno pitanje jesu li javne politike postigle ciljeve zbog kojih su uvedene i po kojoj cijeni. U suvremenim javnim financijama evaluacija se sve više promatra kao sastavni dio upravljanja temeljenog na rezultatima, gdje se naglasak stavlja na mjerljive ishode, a ne samo na potrošnju sredstava.
+
+Prvi i najizravniji cilj evaluacije jest procjena učinkovitosti (*effectiveness*). Ovdje je ključno razlikovati formalno ostvarenje ciljeva od stvarnog utjecaja. Program subvencioniranja zapošljavanja mladih može povećati broj zaposlenih, ali evaluacija mora odgovoriti na dublje pitanje bi li se dio tih zapošljavanja dogodio i bez intervencije. Zato se naglasak stavlja na identifikaciju uzročnog učinka (*causal impact*), odnosno razliku između stvarnog ishoda i kontrafaktualnog scenarija (Angrist, 2009).
+
+**Kontrafaktualni scenarij** je ono što bi se dogodilo s istom skupinom da politika nije provedena, a **uzročni učinak** politike je razlika između stvarno opaženog ishoda i tog kontrafakta; budući da se kontrafakt nikada ne opaža izravno, sva se evaluacija učinaka svodi na to koliko ga vjerodostojno uspijeva rekonstruirati.
+
+U notaciji potencijalnih ishoda svaki pojedinac $i$ ima ishod $Y_i(1)$ ako je izložen politici i $Y_i(0)$ ako nije, pa je prosječni uzročni učinak očekivana razlika tih dvaju ishoda,
+
+$$\tau = E\big[Y_i(1) - Y_i(0)\big].$$
+
+Temeljni problem uzročne inferencije leži u tome što se za istu jedinicu nikada ne opažaju oba ishoda, pa razne metode procjenjuju isti $\tau$ s različitom vjerodostojnošću ovisno o tome koliko uvjerljivo rekonstruiraju neopaženi kontrafakt (Angrist, 2009).
+
+Druga dimenzija odnosi se na efikasnost (*efficiency*) koja označava odnos uloženih resursa i ostvarenih rezultata. Treći cilj je procjena relevantnosti, odnosno pitanje rješava li politika doista problem zbog kojeg je uvedena. Posebno važna dimenzija odnosi se na utjecaj (*impact*) i održivost (*sustainability*), koji uključuju šire i dugoročnije posljedice te pitanje mogu li se rezultati održati kroz vrijeme. Važno je naglasiti da evaluacija nije samo instrument kontrole, već i alat institucionalnog učenja jer se kroz sustavno prikupljanje i analizu podataka stvara tzv. *policy learning loop*, u kojem se iskustva iz prošlih intervencija koriste za dizajn boljih politika.
+
+## Vrste i metode evaluacije
+
+Promatrano kroz vremensku dimenziju, razlikuju se tri vrste. *Ex ante* evaluacija provodi se prije provedbe i ima važnu ulogu u fazi dizajna te često uključuje CBA i analizu rizika. *Ex interim* evaluacija provodi se tijekom provedbe i ima upravljačku funkciju jer prati napredak i omogućuje pravovremene korekcije. *Ex post* evaluacija provodi se nakon završetka i usmjerena je na analizu stvarnih rezultata, pa je posebno važna za institucionalno učenje.
+
+Prema analitičkom fokusu razlikuju se procesna evaluacija, koja se fokusira na način provedbe i pita funkcioniraju li administrativni i organizacijski mehanizmi kako je predviđeno, te evaluacija učinaka (*impact evaluation*), koja nastoji identificirati uzročni učinak politike. Za identifikaciju uzročnih učinaka koriste se randomizirani kontrolirani pokusi (RCT), kvazi-eksperimentalne metode poput *difference-in-differences* i *regression discontinuity* dizajna te ekonometrijski modeli (Angrist, 2009). Različite vrste evaluacije nisu međusobno isključive, nego se nadopunjuju.
+
+Evaluacija se oslanja na kvantitativne i kvalitativne metode. Kvantitativni pristupi usmjereni su na mjerenje i kvantifikaciju učinaka te identifikaciju uzročnih veza, pružajući empirijski utemeljene i replicabilne rezultate. Kvalitativne metode poput intervjua, fokus grupa i studija slučaja omogućuju dublje razumijevanje institucionalnog konteksta i mehanizama kroz koje politika djeluje. Zato se sve više naglašava važnost kombiniranog pristupa (*mixed methods*), gdje kvantitativna evaluacija može pokazati da program nije povećao zapošljavanje, a kvalitativna može otkriti da su administrativni zahtjevi bili prekomplicirani.
+
+Među kvantitativnim pristupima, jasna hijerarhija identifikacijske snage prepoznaje se prema kontrafaktu koji svaki dizajn nudi. Randomizirana kontrolirana istraživanja (*RCT*) najjače identificiraju uzročni učinak jer slučajan raspored u tretiranu i kontrolnu skupinu uklanja sve sustavne razlike između njih, uključujući one koje istraživač ne može opaziti. Banerjee i Duflo svojom istraživačkom karijerom pokazali su da i složene socijalne intervencije mogu biti evaluirane RCT dizajnom, čime su znatno podigli empirijski standard u području evaluacije razvojnih politika (Banerjee, 2019).
+
+**Randomizirani kontrolirani pokus** (*RCT*) je evaluacijski dizajn u kojemu se sudionici slučajnim rasporedom dijele u tretiranu i kontrolnu skupinu, čime se uklanjaju sve sustavne razlike među skupinama, pa razlika u ishodima daje najčišću procjenu uzročnog učinka.
+
+Tamo gdje RCT nije etički ili praktično izvediv (privatizacija sektora, makro reforme, ustavne promjene), kvazi-eksperimentalne metode dijele uzročnu inferenciju iz prirodnih izvora varijacije. *Difference-in-differences* uspoređuje promjene ishoda kod tretirane i netretirane skupine prije i poslije intervencije, što kontrolira fiksne razlike između skupina, ali pretpostavlja paralelne trendove u odsutnosti tretmana. Taj se dvostruki diferencijal zapisuje kao razlika dviju promjena, kod tretirane skupine $T$ i kontrolne skupine $C$, prije i poslije mjere,
+
+$$\hat{\delta}_{DiD} = \big(\bar{Y}^{T}_{\text{poslije}} - \bar{Y}^{T}_{\text{prije}}\big) - \big(\bar{Y}^{C}_{\text{poslije}} - \bar{Y}^{C}_{\text{prije}}\big),$$
+
+pri čemu promjena u kontrolnoj skupini služi kao procjena onoga što bi se s tretiranom skupinom dogodilo bez intervencije, zbog čega cijeli dizajn stoji ili pada na pretpostavci paralelnih trendova (Angrist, 2009). *Regression discontinuity* iskorištava arbitrarne pragove u programu (visina dohotka za pravo na transfer, ocjena za upis u program) i uspoređuje pojedince neposredno iznad i ispod praga, koji su statistički gotovo identični osim u izlaganju mjeri. Sve te metode imaju svoje pretpostavke, a kvalitetna evaluacija mora ih učiniti eksplicitnima i testirati, umjesto da se oslanja samo na rezultat regresije.
+
+Unatoč svojoj ulozi, evaluacija se suočava s nizom ograničenja. Prvo se odnosi na dostupnost i kvalitetu podataka. Drugo se tiče atribucije učinaka jer u stvarnom svijetu politike ne djeluju u izolaciji, pa je teško razlučiti u kojoj je mjeri promjena rezultat konkretne politike, a u kojoj posljedica drugih procesa. Treće proizlazi iz političke ekonomije evaluacije. Ako evaluacija pokaže da politika nije bila učinkovita, to može ugroziti politički kredibilitet aktera, pa postoji rizik da se rezultati selektivno koriste ili ignoriraju. Time se naglašava važnost institucionalne neovisnosti evaluacijskih tijela i transparentnosti procesa.
+
+Svi ovi izazovi upućuju na dublji problem postojanja sustavne razlike između normativnih ciljeva javnih politika i njihovih stvarnih učinaka. Evaluacija upravo služi tome da tu razliku učini vidljivom. U konačnici, izazovi evaluacije ne znače da je treba napustiti, već da treba jačati institucionalne kapacitete, unapređivati metodologiju i povećavati transparentnost, jer samo u takvom okviru evaluacija može pružiti pouzdanu osnovu za donošenje boljih i odgovornijih javnih politika. A vrednovanje koje utvrdi da je politika promašila tek otvara teže pitanje, kako tu politiku doista promijeniti.
+
+## Sažetak
+
+Cost-benefit analiza sustavno uspoređuje ukupne društvene koristi i troškove neke politike ili projekta, pa u javnom sektoru zamjenjuje profit kriterijem društvene dobrobiti. Budući da se koristi i troškovi javljaju u različitim razdobljima, diskontiranje i neto sadašnja vrijednost ključni su alati, a izbor diskontne stope osobito utječe na projekte s dalekosežnim učincima. Šira evaluacija nadograđuje CBA-u nizom metoda različite identifikacijske snage, od randomiziranih pokusa do kvazi-eksperimentalnih dizajna, koje nastoje izolirati stvarni uzročni učinak politike. Sva ta analiza ima granice, od kvalitete podataka do političke ekonomije rezultata, pa neovisnost evaluacijskih tijela i transparentnost postaju uvjet njezine vjerodostojnosti. Vrednovanje pritom pokazuje je li politika uspjela, ali ne i kako provesti promjenu koju nalaže, a upravo je izvedba promjene predmet zaključnog poglavlja o reformama.
+
+**Vježba s podacima.**
+Projekt zahtijeva ulaganje od 100 milijuna eura danas i donosi neto korist od 30 milijuna eura godišnje tijekom sljedeće četiri godine.
+
+a. Izračunajte neto sadašnju vrijednost projekta uz diskontnu stopu od 5 %.
+b. Ponovite izračun uz stopu od 10 % i usporedite rezultate.
+c. Pri kojoj se približno diskontnoj stopi neto sadašnja vrijednost izjednačava s nulom i kako se taj prag naziva? Objasnite zašto je projekt s koristima koje sežu daleko u budućnost osjetljiviji na izbor diskontne stope.
+
+## Bilješke
+
+1. Daljnje čitanje: Nordhaus (2007), *A Review of the Stern Review on the Economics of Climate Change* (https://www.nber.org/papers/w12741); Flyvbjerg, Holm i Buhl (2003), *How Common and How Large Are Cost Overruns in Transport Infrastructure Projects?* (https://www.tandfonline.com/doi/abs/10.1080/01441640309904).

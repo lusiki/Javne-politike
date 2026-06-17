@@ -1,0 +1,181 @@
+# Reforme u javnom sektoru
+
+> Iz knjige: Sve što želite znati o državi i javnim politikama u Hrvatskoj
+> Autori: Milan Deskar-Škrbić, Petra Palić, Luka Šikić
+> Izvor: https://lusiki.github.io/Javne-politike/chapters/21-reforme.html
+> Tekstualna verzija poglavlja za korištenje s AI-asistentima.
+> Generirano: 2026-06-17 · © 2026 Milan Deskar-Škrbić, Petra Palić, Luka Šikić. Tekst za osobno i obrazovno korištenje uz navođenje izvora.
+
+---
+
+## Vodič kroz poglavlje
+
+1. Zašto su reforme javnog sektora nužne za sposobnost i razvoj države?
+2. Što određuje hoće li reforma uspjeti ili ostati samo na papiru?
+3. Čemu nas uči iskustvo reformi u zemljama srednje i istočne Europe?
+4. Kakvu ulogu imaju vanjska sidra poput EU-a uz domaće vlasništvo nad reformama?
+5. Koji su ključevi uspješnih reformi i zašto je provedba važnija od broja zakona?
+
+Vrednovanje može pokazati da je promjena potrebna, ali tek tada počinje teži dio posla. Reforme u javnom sektoru predstavljaju jedan od najzahtjevnijih, ali i najvažnijih segmenata javnih politika, jer izravno određuju sposobnost države da učinkovito prikuplja prihode, upravlja rashodima i pruža javne usluge. Za razliku od mnogih drugih politika, ovdje nije riječ samo o promjeni pravila, nego o promjeni načina funkcioniranja države, njezinih institucija, organizacijske kulture i poticaja. Upravo zbog toga reforme javnog sektora često su sporije, politički osjetljivije i neizvjesnije od drugih vrsta reformi.
+
+Empirijska literatura jasno pokazuje da kvaliteta javnog sektora, koja uključuje učinkovitost, odgovornost, transparentnost i sposobnost provedbe, ima presudan utjecaj na gospodarski razvoj i uspješnost drugih politika (Acemoglu, 2012; Fukuyama, 2011). Država nije samo regulator ili redistributivni mehanizam, nego i ključni „operativni sustav" ekonomije koji određuje kako pravila funkcioniraju u praksi.
+
+Kao posljednje poglavlje, ono spaja dvije zadaće. Najprije pita što zapravo odlučuje hoće li reforma uspjeti ili ostati na papiru, čemu nas uči iskustvo zemalja srednje i istočne Europe i zašto provedba na kraju vrijedi više od broja donesenih zakona. A onda, pogledom unatrag kroz cijelu knjigu, povezuje njezine niti, od razloga zbog kojih država djeluje do uvjeta pod kojima djeluje dobro.
+
+## Zašto su reforme javnog sektora nužne
+
+Razlozi za pokretanje reformi najčešće proizlaze iz kombinacije fiskalnih pritisaka, institucionalnih slabosti i promjena u ekonomskom okruženju. U mnogim zemljama reforme su bile potaknute krizama, bilo fiskalnim deficitima, rastom javnog duga ili neučinkovitom javnom potrošnjom. Takve situacije djeluju kao svojevrsni „prozor prilike", kako to opisuje John Kingdon, u kojem politički troškovi nečinjenja postaju veći od troškova reformi (Kingdon, 1984). Krize razotkrivaju slabosti postojećeg sustava i smanjuju otpor promjenama.
+
+Mehanika otpora reformama ima formalan model koji nadilazi pojednostavljenu sliku „dobitnika i gubitnika". Fernandez i Rodrik pokazali su da reforme koje su agregatno korisne mogu propasti čak i kada bi većina od njih u prosjeku dobila, ako pojedini birač ne zna unaprijed je li on dio dobitničke ili gubitničke skupine (Fernandez, 1991). Pod takvom individualno specifičnom neizvjesnošću, racionalni birač preferira status quo nad reformom čiji su mu osobni ishodi neizvjesni, čak i kada bi mu očekivani ishod bio pozitivan. Reforma se blokira ne zato što gubitnika ima više od dobitnika, nego zato što neizvjesnost o tome tko će biti na kojoj strani sustavno povećava broj birača sklonih čekanju.
+
+Taj se mehanizam može zapisati jednom nejednakošću. Ako reforma pojedincu donosi dobitak $g>0$ ako se nađe u pobjedničkoj skupini, a gubitak $\ell<0$ ako se nađe u gubitničkoj, te ako on svoju individualnu vjerojatnost dobitka procjenjuje na $p_i$, rizično-neutralan birač glasa za reformu samo kada je njegova očekivana korist pozitivna,
+
+$$
+\mathbb{E}[u_i] = p_i\,g + (1-p_i)\,\ell \;>\; 0 \quad\Longleftrightarrow\quad p_i \;>\; \frac{-\ell}{g-\ell}=\frac{|\ell|}{g+|\ell|}
+$$
+
+(Fernandez, 1991). Reformu, dakle, blokira individualna vjerojatnost dobitka ispod kritičnog praga $|\ell|/(g+|\ell|)$, a ne prosječni predznak ishoda u društvu. Kada je mogući gubitak veći od mogućeg dobitka, taj prag premašuje $0{,}5$, pa i birač koji svoje izglede procjenjuje kao posve neizvjesne (uz $p_i = 0{,}5$) glasa protiv, iako bi reforma za društvo u prosjeku bila korisna.
+
+To da je reforma „korisna za društvo u prosjeku" ima vlastiti formalni izraz. Po **Kaldor-Hicksovu kriteriju** reforma je potencijalno poboljšanje ako zbroj dobitaka dobitnika premašuje zbroj gubitaka gubitnika,
+
+$$
+\sum_{i\in W} g_i \;>\; \sum_{j\in L} |\ell_j| \quad\Longleftrightarrow\quad \sum_i \Delta u_i > 0
+$$
+
+(Kaldor, 1939). Riječ je o potencijalnom, a ne stvarnom poboljšanju jer kriterij traži samo da dobitnici načelno mogu obeštetiti gubitnike i još uvijek ostati na dobitku, ne i da to stvarno učine. Upravo tu razliku između potencijalne i stvarne kompenzacije reforma mora premostiti da bi prošla.
+
+**Kompenzacijska shema** je mehanizam koji jasno identificiranim gubitnicima reforme isplaćuje naknadu iz reformskog viška, smanjujući individualnu neizvjesnost i status-quo pristranost; ne mijenja ekonomsku supstancu mjere, nego raspodjelom rizika povećava izglede njezinog prolaza (Fernandez, 1991).
+
+Koliko kompenzacija mora biti velika da prevrne glas vidi se iz iste računice očekivane korisnosti. Ako se svakom budućem gubitniku iz reformskog viška isplati naknada $t$, birač glasa za reformu kada vrijedi
+
+$$
+\mathbb{E}[u_i] = p_i\,g + (1-p_i)\,(\ell + t) \;>\; 0 \quad\Longleftrightarrow\quad t \;>\; -\ell-\frac{p_i}{1-p_i}\,g
+$$
+
+(Fernandez, 1991). Minimalna naknada koja prevrće odluku ovisi o veličini gubitka i o tome koliko birač procjenjuje da je izložen riziku, a ne o agregatnom višku reforme. Time se i formalno vidi zašto kompenzacija djeluje preko raspodjele rizika, pretvarajući Kaldor-Hicksovo potencijalno poboljšanje u stvarno, a ne preko promjene ekonomske supstance mjere.
+
+Iz toga slijedi neintuitivna pouka. Reformatori često mogu povećati šansu prolaza ne mijenjajući ekonomski sadržaj reforme, nego smanjujući neizvjesnost koju ona stvara za pojedinca. Postupna provedba s mogućnošću učenja iz prvih iskustava, eksplicitne kompenzacijske sheme za jasno identificirane gubitnike i transparentne procjene utjecaja koje omogućuju pojedincu da procijeni svoj vlastiti ishod sustavno smanjuju status-quo pristranost i mijenjaju izglede reforme bez mijenjanja njezine supstance.
+
+Međutim, krize same po sebi ne jamče uspješne reforme. One otvaraju prostor za promjene, ali ishod ovisi o institucionalnim kapacitetima i političkom vodstvu. U nekim slučajevima krize dovode do dubokih i trajnih reformi, dok u drugima rezultiraju parcijalnim ili kratkoročnim mjerama bez dugoročnog učinka. Kriza je zato nužan, ali ne i dovoljan uvjet za reforme.
+
+Postoji i zaseban razlog zašto se i prijeko potrebna stabilizacija odgađa iako se svi slažu da je nužna. Alesina i Drazen opisuju takvu situaciju kao **rat iscrpljivanjem**, u kojem svaka društvena skupina pristaje na stabilizaciju, ali nastoji da veći dio njezina tereta, kroz poreze ili rezove, padne na druge, pa svi čekaju da prva popusti (Alesina, 1991). Odgađanje je tada racionalno čekanje, a okončava ga onaj kome je daljnja kriza preskupa, što objašnjava zašto upravo kriza, dižući cijenu čekanja, zna prekinuti pat-poziciju koju same dobre namjere ne mogu razriješiti. Za razliku od ranije spomenute neizvjesnosti o tome tko će profitirati, ovdje su dobitnici i gubitnici poznati, a zastoj nastaje iz borbe oko raspodjele tereta među organiziranim skupinama koje ga pokušavaju izbjeći (Olson, 1982).
+
+Ravnoteža takvog rata iscrpljivanja počiva na uvjetu indiferentnosti na margini popuštanja. Skupina je spremna izdržati još jedan trenutak čekanja samo dok je trošak tog čekanja $c_i$ jednak izgledu da upravo tada protivnik popusti, izražen hazardom $h_j$, pomnoženom s dobitkom $(\theta_i-\theta_j)\,K$ koji popuštanje protivnika donosi izbjegavanjem većeg udjela tereta,
+
+$$
+c_i\,\mathrm{d}t = h_j(t)\,(\theta_i-\theta_j)\,K\,\mathrm{d}t \;\Longrightarrow\; h_j(t)=\frac{c_i}{(\theta_i-\theta_j)\,K},\qquad \frac{\partial T_i^{*}}{\partial c_i}<0,\quad \frac{\partial T_i^{*}}{\partial \theta_i}>0
+$$
+
+(Alesina, 1991). Komparativna statika potvrđuje intuiciju iz proze. Skupina s višim trenutnim troškom čekanja popušta ranije ($\partial T_i^{*}/\partial c_i<0$), pa zaoštravanje krize, dižući svima cijenu čekanja, skraćuje odgodu. Skupina koja bi pri popuštanju ponijela veći udio tereta čeka dulje ($\partial T_i^{*}/\partial \theta_i>0$), jer ima više za izgubiti pristajanjem prva.
+
+Osim fiskalnih razloga, reforme su često nužne zbog strukturnih promjena. Globalizacija povećava konkurenciju među državama i zahtijeva učinkovitije institucije. Tehnološki napredak, osobito digitalizacija, mijenja način pružanja javnih usluga. Demografske promjene poput starenja stanovništva stvaraju pritisak na mirovinske i zdravstvene sustave. Tranzicijske zemlje srednje i istočne Europe prolazile su kroz duboke transformacije države, od centralno planiranih sustava prema tržišnim gospodarstvima, pri čemu su reforme javnog sektora bile ključne za uspostavu osnovnih funkcija države.
+
+Ovaj uvid potvrđuje šira institucionalna literatura. Acemoglu i Robinson pokazuju da su inkluzivne i učinkovite institucije temelj dugoročnog razvoja (Acemoglu, 2012), dok Fukuyama ističe da je kapacitet države, odnosno njezina sposobnost da provodi politike, jednako važan kao i sam sadržaj tih politika (Fukuyama, 2011). Nije dovoljno imati „dobre politike na papiru" jer je presudno mogu li se one provesti dosljedno i učinkovito. Važan razlog za reforme proizlazi i iz jaza između formalnih pravila i stvarnog funkcioniranja države. U mnogim zemljama postoje kvalitetni zakoni, ali je njihova provedba slaba zbog nedostatka kapaciteta ili političkih intervencija. Reforme zato sve više imaju za cilj poboljšati „kako država radi", a ne samo „što država propisuje".
+
+No reforme nisu jednokratni proces. Riječ je o dugotrajnom i iterativnom procesu institucionalne izgradnje, u kojem se formalna pravila često mijenjaju brže od stvarnih praksi. Kako ističe Douglass North, institucije nisu samo formalna pravila, nego i neformalni obrasci ponašanja koji se najsporije mijenjaju (North, 1990). Zbog toga reforme često daju rezultate tek s vremenskim odmakom.
+
+## Što određuje uspjeh reformi
+
+Jedan od najvažnijih nalaza literature jest da ne postoji univerzalni model reformi javnog sektora. Iako međunarodne institucije često promoviraju određene „najbolje prakse", njihova primjena ovisi o lokalnom institucionalnom, političkom i ekonomskom kontekstu. Ono što funkcionira u visoko razvijenim državama ne mora funkcionirati u zemlji s drugačijom administrativnom tradicijom ili razinom razvoja.
+
+Prije nego što takve nalaze prihvatimo, valja primijetiti zašto je učinke reformi teško uopće pouzdano izmjeriti. Zemlje koje provode reforme nisu slučajno odabrane, nego ih najčešće poduzimaju upravo one s jačim institucijama ili dubljom krizom, pa puka usporedba reformatora i nereformatora miješa učinak same reforme s učinkom okolnosti koje su reformu uopće omogućile (Acemoglu, 2012). Ista zamka vreba i u tezi o krizama, jer kriza i kasniji ishod mogu dijeliti zajednički uzrok u slabosti institucija, pa ono što izgleda kao kriza koja je iznudila reformu može biti tek dvije posljedice istog temeljnog stanja. Zato se uspjeh reforme ne može očitati iz jednostavne međudržavne usporedbe, nego traži pažljivu usporedbu sličnih slučajeva, praćenje istih zemalja prije i poslije promjene te oprez pri prenošenju nalaza iz jednog konteksta u drugi (Rodrik, 2011).
+
+Ovaj zaključak posebno je važan u svjetlu iskustva s tzv. Washingtonskim konsenzusom, koji je dominirao tijekom 1980-ih i 1990-ih. Tada je prevladavalo uvjerenje da postoji skup univerzalnih politika, koji uključuje fiskalnu disciplinu, liberalizaciju, privatizaciju i deregulaciju, primjenjivih u gotovo svim zemljama. Iskustvo brojnih zemalja pokazalo je ograničenja takvog pristupa jer reforme koje su bile tehnički ispravne nisu uvijek davale očekivane rezultate, budući da nisu bile usklađene s lokalnim institucionalnim kapacitetima.
+
+Prvo, ključna je realističnost ciljeva i razumijevanje političke ekonomije reformi. Reforme se ne provode u vakuumu, nego u okruženju u kojem različite interesne skupine imaju različite preferencije i moć. Reforme koje ignoriraju raspodjelu moći često završavaju neuspjehom, osobito kada stvaraju gubitnike koji mogu blokirati promjene. Pokušaji reforme državne službe koji su uključivali smanjenje broja zaposlenih često su nailazili na snažan otpor, dok su reforme pažljivo dizajnirane da smanje otpor imale veće šanse za uspjeh.
+
+Drugo, jednako koliko o sadržaju reformi, uspjeh ovisi i o njihovu redoslijedu. Empirijski nalazi pokazuju da je pristup „najprije osnove, zatim kompleksnost" najuspješniji, pa redoslijed uvođenja postaje samostalno načelo, **sekvenciranje reformi**.
+
+**Sekvenciranje reformi** je načelo prema kojemu se reforme uvode određenim redoslijedom koji odražava logiku „najprije osnove, zatim kompleksnost", pa temeljne administrativne funkcije moraju prethoditi sofisticiranijim sustavima jer nepravilno sekvenciranje vodi preuranjenoj sofisticiranosti i neuspjehu.
+
+Potrebno je uspostaviti temeljne funkcije poput pouzdanog izvršenja proračuna i kontrole rashoda prije uvođenja sofisticiranih sustava. Nepravilno sekvenciranje često dovodi do „preuranjene sofisticiranosti", situacije u kojoj se uvode kompleksni sustavi koje administracija nije spremna provoditi.
+
+Graf koji slijedi prikazuje vjerojatnost uspjeha reforme kao krivulju u obliku zvona koja ovisi o tome koliko brzina i ambicija reforme odgovaraju institucionalnom kapacitetu države. Graf je interaktivan, pa klizači mijenjaju institucionalni kapacitet te brzinu i ambiciju reforme, čime se vidi zašto i prespora i prebrza reforma podbacuju u odnosu na onu usklađenu s kapacitetom.
+
+*Slika. Stilizirani prikaz pouke o sekvenciranju — vjerojatnost uspjeha najveća je kada brzina reforme odgovara institucionalnom kapacitetu; pri niskom kapacitetu uspijeva postupnost, a prebrza šok-reforma pada, dok visok kapacitet podnosi i brže promjene.*
+
+**Što isprobati.** (1) Pri Institucionalni kapacitet oko 0,4 pomičite Brzina i ambicija reforme tako da se poklopi s kapacitetom i vjerojatnost uspjeha skoči na vrh zvona. (2) Sada gurnite brzinu prema gornjem rubu uz nepromijenjen kapacitet i točka klizne niz desnu stranu krivulje, što je prebrza šok-reforma koja nadilazi kapacitet i pada. (3) Podignite Institucionalni kapacitet prema 0,8 i primijetite da se vrh ne samo pomiče udesno nego i raste, jer sposobnija država podnosi i bržu promjenu i iz nje izvlači veću vjerojatnost uspjeha.
+
+Rodrikov pregled tri desetljeća međunarodnih reformskih iskustava sažima isti obrazac iz drugog kuta (Rodrik, 2011). Zemlje koje su brzo i istodobno provodile cijelu listu „najbolje prakse" (liberalizacija trgovine, deregulacija tržišta rada, privatizacija velikih razmjera, otvaranje kapitalnog računa) sustavno su pokazivale slabije rezultate od zemalja koje su isti skup reformi provodile selektivno i postupno, prilagođavajući redoslijed lokalnim ograničenjima. Ključ nije bio u sadržaju pojedine mjere, nego u tome je li lokalna institucionalna i regulatorna infrastruktura mogla apsorbirati promjenu u tom trenutku.
+
+Liberalizacija kapitalnog računa pokazuje da je redoslijed dio sadržaja reforme, a ne tehnički detalj koji dolazi poslije.
+
+**Politika u praksi.**
+Redoslijed reformi najjasnije se vidi na liberalizaciji kapitalnog računa. U zemljama koje su prvo izgradile snažnu bankarsku regulaciju i nadzor, otvaranje prema slobodnom kretanju kapitala donijelo je dugoročne koristi kroz pristup financiranju i ulaganjima. U zemljama koje su kapitalni račun otvorile prije nego što su uspostavile nadzor nad bankama, isti je potez često ubrzao kreditne procvate i financijske krize. Sadržaj mjere bio je isti, ali je ishod ovisio o tome je li institucionalna podloga postojala u trenutku provedbe.[1]
+
+Treće, tehnologija nije zamjena za institucije. Iako su digitalizacija i e-uprava često u središtu suvremenih reformi, sama tehnologija ne može riješiti temeljne probleme javnog sektora ako nisu promijenjeni poticaji, organizacijska struktura i način donošenja odluka. Postoji rizik da tehnologija samo „digitalizira postojeće probleme" bez stvarnog poboljšanja ishoda.
+
+Četvrto, važna je uloga „ulaznih točaka" reformi. Često je učinkovitije započeti reforme u sektorima gdje postoji veća politička podrška ili bolji kapaciteti, nego pokušati istovremeno reformirati cijeli javni sektor. Ministarstva financija često su bila prirodna početna točka. Ovaj inkrementalni pristup pokazao se uspješnijim od pokušaja sveobuhvatnih reformi odjednom, jer omogućuje učenje kroz praksu i izgradnju povjerenja.
+
+## Iskustvo srednje i istočne Europe
+
+Iskustvo zemalja srednje i istočne Europe pruža jedan od najvažnijih empirijskih „laboratorija" za razumijevanje reformi. Tijekom posljednjih 35 godina te su zemlje prošle kroz duboku transformaciju, pri čemu se velik dio reformi odvijao pod snažnim utjecajem procesa pristupanja Europskoj uniji. Sama mogućnost članstva tako je djelovala kao **vanjsko sidro** (*external anchor*) reformi.
+
+**Vanjsko sidro** (*external anchor*) je institucijalni mehanizam u kojemu međunarodna organizacija ili integracija (poput pristupnih pregovora s EU) postavlja obvezujuće standarde i rokove, smanjuje neizvjesnost i povećava vjerodostojnost reformi nadoknađujući slabost domaćih institucija.
+
+Taj „sidreni efekt" bio je posebno važan jer je smanjivao neizvjesnost i povećavao vjerodostojnost reformi. U uvjetima gdje su domaće institucije bile slabe, vanjski pritisak i jasno definirani kriteriji omogućili su ubrzanje institucionalnih promjena. U tom smislu EU integracija nije bila samo politički projekt, nego i mehanizam institucionalne modernizacije.
+
+Međutim, unatoč zajedničkom okviru i sličnim početnim uvjetima, rezultati reformi pokazali su se izrazito heterogenima. Neke zemlje, poput Estonije, razvile su visoko učinkovite, digitalizirane i transparentne javne sustave. Druge, poput Slovenije, razvile su stabilne institucionalne okvire uz postupniji tempo. Dio zemalja zadržao je značajne elemente slabih institucija, političke kontrole nad administracijom i slabije provedbe politika. Ova divergencija pokazuje da formalno usklađivanje s pravilima nije dovoljno za stvarnu institucionalnu transformaciju jer postoji razlika između „institucija na papiru" i „institucija u praksi" (North, 1990; Acemoglu, 2012).
+
+Razlike u uspjehu otvaraju i šire pitanje brzine reformi, odnosno koliko brzo treba ići. Tu su se iskristalizirale dvije suprotstavljene strategije, **šok-terapija** i **gradualizam**.
+
+**Šok-terapija** je strategija istodobne provedbe većeg broja reformi u kratkom roku, uz argument da nepotpuna tranzicija ostavlja prostor za blokadu, dok je **gradualizam** suprotna strategija postupnih, sekvenciranih promjena koje smanjuju socijalne troškove i daju institucijama vremena za apsorpciju. Empirijska usporedba nije dala jednoznačnog pobjednika jer uspjeh ovisi ponajviše o institucionalnom kapacitetu i prisutnosti vjerodostojnog sidra.
+
+Šok-terapijski pristup opravdavao se argumentom da fragmentirana, nedovršena tranzicija ostavlja dovoljno prostora za blokadu i preokret. Gradualistički pristup naglašavao je rizik prebrzog napuštanja postojećih koordinacijskih mehanizama prije nego što su novi tržišni mehanizmi stigli funkcionirati.
+
+Trideset godina kasnije empirijska usporedba ne daje jednoznačan odgovor (Rodrik, 2011). Šok-terapija u dijelu Srednje Europe (Poljska, baltičke države) dala je brže rezultate od gradualističkog pristupa drugdje, ali se to objašnjava jednako institucionalnom predtransformacijskom snagom tih zemalja koliko i samom brzinom. Gradualistička putanja Slovenije i Češke proizvela je usporediv ishod uz manje socijalnih troškova, dok je gradualizam bez vjerodostojnog sidra drugdje često završio u zaglavljenoj polureformi. Brzina sama po sebi nije ni vrlina ni mana. Ono što razlikuje uspjeh od neuspjeha jest spremnost institucija da apsorbiraju promjenu i postojanje vanjskog ili unutarnjeg sidra koje održava reformski smjer između izborima izazvanih oscilacija.
+
+Sami „socijalni troškovi" o kojima je riječ imaju prepoznatljiv oblik kroz vrijeme, poznat kao J-krivulja reformi. Output najprije pada zbog prijelazne dezorganizacije, kada se stare koordinacijske veze prekinu prije nego što nove tržišne profunkcioniraju, a potom se oporavlja iznad polazne razine. Stilizirano, putanja outputa $Y_t$ uz brzinu prilagodbe $\delta$, dubinu prijelaznog pada $\alpha$ i trajni dobitak reforme $\gamma$ glasi
+
+$$
+Y_t = Y_0\Big[1-\alpha\,e^{-\delta t}\big(1-e^{-\delta t}\big)\Big]+\gamma\big(1-e^{-\delta t}\big),\qquad \min_t Y_t < Y_0 < \lim_{t\to\infty} Y_t
+$$
+
+(Blanchard, 1997). Krivulja je u obliku slova J samo kada je prijelazni pad dovoljno izražen u odnosu na trajni dobitak (npr. uz $\alpha = 0{,}4$ i $\gamma = 0{,}1$), jer bi inače rastući član odmah nadvladao pad i minimuma ispod $Y_0$ ne bi bilo. Upravo dubina i trajanje tog početnog pada čine mjerljivu cijenu tranzicije, pa razlika između gradualizma i šok-terapije postaje razlika između pliće-ali-duže i dublje-ali-kraće udubine na istoj krivulji.
+
+Estonija se često ističe kao jedan od najuspješnijih primjera, jer je već od 1990-ih sustavno ulagala u digitalizaciju javne uprave, uz paralelno jačanje administrativnih kapaciteta. Ključ uspjeha nije bio samo u tehnologiji, nego u dosljednoj institucionalizaciji reformi i dugoročnoj strategiji. Zajednički obrazac koji se pojavljuje jest da su najuspješnije bile zemlje koje su uspjele institucionalizirati reforme, odnosno pretvoriti ih iz jednokratnih projekata u trajne mehanizme upravljanja. Ključna razlika između uspješnih i manje uspješnih reformi često leži u kapacitetu države za provedbu (*state capacity*) (Fukuyama, 2011).
+
+Sidro koje povlači reforme ujedno je i njihova ranjivost, jer ono što reforme vuče izvana jednom nestane. Kada se to dogodi, najčešće nakon ulaska u Europsku uniju, javlja se **reformski zamor**.
+
+**Reformski zamor** je pojava slabljenja reformskog zamaha i poticaja za daljnje promjene nakon što nestane vanjski pritisak (npr. pristupnih pregovora) ili neposredna nagrada (članstvo); bez domaćeg vlasništva nad reformama može dovesti do stagnacije ili djelomičnog nazadovanja postignutih promjena.
+
+Nakon što nestane vanjski pritisak i neposredna nagrada članstva, poticaji za daljnje reforme slabe, što može dovesti do stagnacije ili nazadovanja. Upravo zato suvremene analize naglašavaju važnost domaćeg vlasništva nad reformama (*ownership*) kao ključnog preduvjeta njihove dugoročne održivosti.
+
+Poseban i ilustrativan slučaj predstavlja Hrvatska, čije reforme jasno pokazuju kako različite faze europske integracije djeluju kao uzastopni valovi reformskih poticaja. Tijekom pristupnih pregovora Hrvatska je provela opsežne reforme zakonodavstva i institucija, osobito u području pravosuđa, tržišnog natjecanja i javne uprave. Nakon ulaska u EU dolazi do djelomičnog usporavanja reformskog zamaha, no novi reformski ciklus pokrenut je u kontekstu pristupanja europodručju. Ulazak u ERM II 2020. godine bio je uvjetovan nizom reformi, uključujući jačanje fiskalnog okvira i upravljanja javnim poduzećima, a uvođenje eura 2023. dodatno je učvrstilo makroekonomsku stabilnost. Dodatni poticaj dolazi kroz Nacionalni plan oporavka i otpornosti (NPOO), koji ponovno uvodi mehanizam uvjetovanosti povezujući financijska sredstva s provedbom reformi. Unatoč tim pomacima, hrvatsko iskustvo potvrđuje širi regionalni obrazac. Formalni napredak ne mora nužno značiti i potpunu funkcionalnu transformaciju, a ključni izazov ostaje institucionalizacija reformi u svakodnevnoj praksi.
+
+## Ključevi uspješnih reformi
+
+Ako se iskustva reformi promatraju kroz duže razdoblje i u različitim kontekstima, postaje jasno da ne postoji jednostavan, univerzalan recept za uspjeh. Ipak, literatura pokazuje iznenađujuće konzistentan skup zajedničkih obilježja uspješnih reformi.
+
+Prije svega, reforme javnog sektora nisu prvenstveno tehnički, nego duboko politički procesi. Njihova provedba ovisi o političkoj volji, raspodjeli moći i interesima ključnih aktera, zbog čega mnoge tehnički dobro osmišljene reforme ne uspijevaju u praksi. Drugi ključan element jest važnost sekvenciranja i postupnosti, pri čemu je potrebno najprije „postaviti temelje" prije uvođenja naprednih modela upravljanja. Treće, institucije ne funkcioniraju same po sebi, a ključna je promjena ponašanja i organizacijske kulture, a ne samo tehnička rješenja. Četvrto, kapacitet države za provedbu presudan je faktor, jer razlika između uspješnih i neuspješnih reformi rijetko leži u njihovu dizajnu, a mnogo češće u sposobnosti države da ih dosljedno provodi.
+
+Peti element odnosi se na ulogu vanjskih sidara i poticaja (pristupanje EU, ERM II, NPOO), koji povećavaju vjerodostojnost reformi, ali su najdjelotvorniji kada su dopunjeni domaćim vlasništvom nad reformama. Šesto, reforme su dugotrajan i kumulativan proces, a ne jednokratni događaj, pri čemu je kontinuitet kroz različite političke cikluse jednako važan kao i početni dizajn.
+
+Konačno, možda i najvažniji zaključak jest da se uspjeh reformi ne može mjeriti brojem donesenih zakona ili strategija, nego njihovim stvarnim učinkom na funkcioniranje države. Prava mjera uspjeha nije formalna usklađenost, nego sposobnost države da učinkovito pruža javne usluge, upravlja resursima i odgovara na potrebe građana i gospodarstva. Upravo u tome leži razlika između reformi koje ostaju na papiru i onih koje trajno mijenjaju način funkcioniranja države.
+
+## Pogled unatrag, kroz cijelu knjigu
+
+Ovim poglavljem zatvara se put koji je knjiga otvorila u uvodu. Krenuli smo od jednostavne tvrdnje da javne politike oblikuju gotovo svaki važan dio svakodnevnog života i od odbijanja jednako jednostavnog odgovora da rješenje leži u tome da države bude više ili manje. Pravo pitanje, postavljeno na prvim stranicama, glasilo je kakva država, za koje probleme, s kojim instrumentima, pod kojim pravilima i s kakvom odgovornošću. Pet dijelova knjige nije ništa drugo nego pet uzastopnih pokušaja da se to pitanje razloži na dijelove na koje se može odgovoriti.
+
+Prvi dio postavio je klasično pitanje zašto država uopće intervenira. Alokacijska, distribucijska i stabilizacijska funkcija opisale su uvjete pod kojima tržište samo ne osigurava učinkovit, pravedan ili stabilan ishod, ali su istodobno pokazale da postojanje tržišnog neuspjeha samo otvara mogućnost intervencije, a ne dokazuje da će intervencija biti bolja. Prvi je dio uz te tri funkcije uveo i teoriju oporezivanja, prihodnu stranu istih politika, koja pokazuje tko snosi porezni teret i uz koju cijenu u izgubljenoj učinkovitosti. Drugi dio okrenuo je perspektivu i upitao tko zapravo donosi te odluke. Teorija javnog izbora, kolektivnog odlučivanja, stranačkog natjecanja, interesnih skupina i birokracije pokazala je da država nije dobrohotni planer izvan društva, nego skup aktera s vlastitim poticajima, pa i sama može proizvesti neučinkovite ishode. Treći dio dodao je dublji sloj jer je pokazao da i tržišta i politika djeluju unutar institucija, pravila igre koja se sporo mijenjaju i koja objašnjavaju zašto iste politike u različitim zemljama daju različite rezultate.
+
+Četvrti dio spustio je raspravu na razinu prakse, na konkretne instrumente, javnu potrošnju i porezne sustave u praksi kojima država stvarno djeluje, te pokazao da izbor instrumenta nije neutralan nego sam raspoređuje troškove, koristi i poticaje. Peti dio konačno se vratio na početnu napetost. Pošto smo vidjeli i zašto država intervenira i kako može zakazati, postavilo se pitanje kako do kvalitetnije države. Odgovor nije bio nijedan veliki recept, nego niz pristupa, od prepoznavanja državnih neuspjeha preko novog javnog menadžmenta i mrežnog upravljanja do vrednovanja politika, a na kraju i samih reformi kao procesa kojim se sve to mijenja.
+
+Ako postoji jedna nit koja povezuje svih pet dijelova, ona je upravo metoda najavljena u uvodu. Svaku politiku vrijedi gledati kroz tri istodobne perspektive, ekonomsku koja otkriva troškove i poticaje, političku koja otkriva tko i zašto odlučuje, te institucionalnu koja otkriva može li se odluka uopće provesti. Razdvajanje namjere od mehanizma, svrhe od sredstva, ostaje minimalni zahtjev svake ozbiljne analize. Knjiga zato ne završava preporukom da država radi više ili manje, nego spoznajom da je njezina kvaliteta varijabla na koju se može i mora trajno djelovati. Dobra javna politika nije ni vjera u državu ni nepovjerenje prema njoj, nego strpljiv rad na uvjetima pod kojima kolektivne odluke stvaraju stvarnu javnu vrijednost.
+
+## Sažetak
+
+Reforme javnog sektora mijenjaju sam način funkcioniranja države, pa su sporije, politički osjetljivije i neizvjesnije od drugih politika, a kvaliteta uprave presudno utječe na razvoj i uspjeh svih ostalih mjera. Njihov uspjeh ne određuje samo dobar tehnički dizajn, nego i politička volja, realističnost, snažni institucionalni kapaciteti, postupnost i kontinuitet kroz različite cikluse. Iskustvo srednje i istočne Europe pokazuje da vanjska sidra poput pristupanja EU jačaju vjerodostojnost, ali djeluju tek uz domaće vlasništvo nad reformama. Prava mjera uspjeha zato nije broj donesenih zakona i strategija, nego stvarna sposobnost države da pruža usluge, upravlja resursima i odgovara na potrebe građana. Time se zatvara luk knjige koja je krenula od pitanja kakva država i za koje probleme, prošla kroz to tko o njoj odlučuje i pod kojim pravilima, te kojim instrumentima djeluje, a završava spoznajom da odgovor nije ni više ni manje države, nego trajan rad na njezinoj kvaliteti.
+
+**Vježba s podacima.**
+Pretpostavite gospodarstvo sa sto birača koji glasaju o reformi prostom većinom. Reforma će nakon provedbe stvoriti 60 dobitnika, od kojih svaki dobiva +50, i 40 gubitnika, od kojih svaki gubi −60. Ključna je pretpostavka da svaki birač ex ante ne zna hoće li biti dobitnik ili gubitnik, pa svaki procjenjuje svoju individualnu vjerojatnost dobitka na 0,5 i gubitka na 0,5 (neovisno o tome što će u ishodu pobjednička skupina biti veća).
+
+a. Izračunajte agregatni neto učinak reforme i potvrdite da je ona za društvo u cjelini Kaldor-Hicksovo poboljšanje (agregatni dobitci premašuju agregatne gubitke).
+b. Izračunajte očekivani ishod jednog birača pod tom individualno specifičnom neizvjesnošću i objasnite zašto bi racionalan rizično-neutralan birač glasao protiv reforme, iako bi je ex post 60 od 100 birača podržalo. Pokažite da se reforma blokira unatoč tome što je agregatno korisna.
+c. Reformator nudi kompenzacijsku shemu kojom se svakom budućem gubitniku isplaćuje naknada od 25 iz reformskog viška. Izračunajte novi očekivani ishod birača i pokažite da reforma sada prolazi glasovanje.
+
+Otvorite interaktivni graf iznad i razmislite o vezi između ova dva uvida. Naknada u zadatku ne mijenja ukupan reformski višak, nego raspodjelu rizika među biračima, dok klizač na grafu mijenja brzinu reforme pri zadanom kapacitetu. Objasnite zašto i kompenzacija i ispravno sekvenciranje djeluju kroz isti kanal, to jest kroz smanjenje neizvjesnosti i otpora bez promjene ekonomske supstance mjere, i što to otkriva o tome zašto agregatno korisne reforme tako često ostaju blokirane.
+
+## Bilješke
+
+1. Daljnje čitanje: Kaminsky i Schmukler (2003), *Short-Run Pain, Long-Run Gain: The Effects of Financial Liberalization* (https://www.nber.org/papers/w9787) (NBER WP 9787).

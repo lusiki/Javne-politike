@@ -2,9 +2,15 @@ project:
   type: book
   output-dir: docs
   execute-dir: project
+  # AI-konzumabilni izvoz (Track A, notes/ai-export-spec.md). Generira docs/ai/*.md,
+  # docs/llms.txt, docs/llms-full.txt i data/ai-exports.json prije rendera. Skripta je
+  # obavijena tryCatch-om pa nikad ne ruši build; može se pokrenuti i ručno.
+  pre-render:
+    - R/build-ai-exports.R
   resources:
     - images/apple-touch-icon.png
     - pdf/Prirucnik.pdf
+    - robots.txt
 
 book:
   title: "Sve što želite znati o državi i javnim politikama u Hrvatskoj"
@@ -48,6 +54,8 @@ book:
         href: alat.html
       - text: "Podaci"
         href: podaci.html
+      - text: "Uči s AI"
+        href: uci-s-ai.html
     right: []
 
   search:
@@ -138,6 +146,7 @@ book:
     - resursi.qmd
     - alat.qmd
     - podaci.qmd
+    - uci-s-ai.qmd
 
 bibliography: references.bib
 

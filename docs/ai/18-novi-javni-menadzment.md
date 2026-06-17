@@ -1,0 +1,161 @@
+# Novi javni menadžment
+
+> Iz knjige: Sve što želite znati o državi i javnim politikama u Hrvatskoj
+> Autori: Milan Deskar-Škrbić, Petra Palić, Luka Šikić
+> Izvor: https://lusiki.github.io/Javne-politike/chapters/18-novi-javni-menadzment.html
+> Tekstualna verzija poglavlja za korištenje s AI-asistentima.
+> Generirano: 2026-06-17 · © 2026 Milan Deskar-Škrbić, Petra Palić, Luka Šikić. Tekst za osobno i obrazovno korištenje uz navođenje izvora.
+
+---
+
+## Vodič kroz poglavlje
+
+1. Iz kojeg konteksta i kojih kritika države nastaje Novi javni menadžment?
+2. Što znači marketizacija i uvođenje konkurencije u javni sektor?
+3. Kako agencifikacija i korporativno upravljanje mijenjaju organizaciju države?
+4. Što znači promatrati građanina kao korisnika usluge?
+5. Koje su glavne prednosti, a koje kritike i ograničenja NPM-a?
+
+Nakon što je prethodno poglavlje nabrojilo načine na koje država zakazuje, slijedi pitanje što se protiv toga može učiniti. Jedan od najutjecajnijih odgovora ponudio je pokret koji je javni sektor pokušao popraviti tako da ga približi tržištu. Novi javni menadžment nije bio jedna reforma, nego val ideja koji je tijekom 1980-ih i 1990-ih obećao učinkovitiju, jeftiniju i odgovorniju državu po uzoru na privatno poduzeće.
+
+Poglavlje prati taj val od njegovih korijena u krizi preopterećene države, preko glavnih mehanizama kojima je djelovao, od uvođenja konkurencije i mjerenja rezultata do shvaćanja građanina kao korisnika usluge i agencifikacije, do otrežnjujuće ocjene onoga što je obećao, a što doista ispunio.
+
+## Odakle Novi javni menadžment
+
+Tijekom 1980-ih i 1990-ih godina mnoge razvijene zemlje suočile su se s rastom javne potrošnje, fiskalnim krizama i kritikama neučinkovitosti države. Nakon snažnog širenja države blagostanja u desetljećima nakon Drugog svjetskog rata, javni sektor u mnogim je zemljama postao velik, složen i skup. Javna potrošnja rasla je zbog razvoja mirovinskih sustava, zdravstva, obrazovanja i socijalne zaštite, dok su gospodarske krize 1970-ih smanjile fiskalni prostor za daljnje širenje države. U tom kontekstu sve se češće govorilo o „preopterećenoj državi" koja preuzima sve više funkcija, ali ih ne obavlja dovoljno učinkovito (Tanzi, 2011).
+
+Upravo iz takvog okruženja nastaje **Novi javni menadžment** (*New Public Management*, NPM), skup reformskih ideja koje su pokušale javni sektor učiniti učinkovitijim, fleksibilnijim i više usmjerenim na rezultate.
+
+**Novi javni menadžment** (*New Public Management*, NPM) je reformski pristup koji od 1980-ih pokušava javni sektor učiniti učinkovitijim uvođenjem tržišnih mehanizama, mjerljivih ciljeva, kontrole rezultata, konkurencije i discipline troškova, nasuprot tradicionalnoj birokratskoj logici pravila i procedura (Hood, 1991).
+
+Christopher Hood opisao je NPM kao novi stil upravljanja javnim sektorom koji naglašava profesionalni menadžment, mjerljive ciljeve, kontrolu rezultata, konkurenciju i disciplinu troškova (Hood, 1991). NPM je pritom pokušao državu organizirati tako da više nalikuje poduzeću, s manje pravila i procedura, a više ciljeva, rezultata i odgovornosti.
+
+Novi javni menadžment nije značio potpuno povlačenje države, nego promjenu načina na koji država djeluje. Umjesto da država sve sama proizvodi i izravno pruža, sve se više otvaralo pitanje može li neke usluge prepustiti tržištu, privatnom sektoru, neprofitnim organizacijama ili autonomnim javnim agencijama. Osborne i Gaebler taj su pristup saželi poznatom metaforom prema kojoj država treba više „upravljati kormilom", a manje „veslati" (Osborne, 1992).
+
+Teorijski temelji NPM-a snažno su povezani s neoliberalizmom, teorijom javnog izbora i principal–agent teorijom. Teorija javnog izbora dovela je u pitanje idealiziranu sliku države kao neutralnog i dobronamjernog aktera (Buchanan, 1962; Mueller, 2003). Posebno je važan doprinos Williama Niskanena, koji je tvrdio da birokrati imaju poticaj povećavati veličinu svojih proračuna i nadležnosti jer im to donosi veći utjecaj, sigurnost i status (Niskanen, 1971). Formalni model koji pokazuje kako birokrat koji maksimizira veličinu usluge proizvodi previše, do točke u kojoj se ukupna korist izjednačuje s ukupnim troškom, razrađen je u poglavlju o birokraciji. NPM je zato pokušao u javni sektor uvesti poticaje koji bi djelovali slično tržišnim poticajima u privatnom sektoru.
+
+Prve zemlje koje su intenzivno provodile reforme NPM-a bile su Ujedinjeno Kraljevstvo, Novi Zeland, Australija, Kanada i Sjedinjene Američke Države. U Ujedinjenom Kraljevstvu reforme se povezuju s vladom Margaret Thatcher, koja je provodila privatizaciju, deregulaciju i uvođenje tržišnih mehanizama u javne usluge. Novi Zeland često se navodi kao najradikalniji primjer jer je javni sektor restrukturiran prema gotovo korporativnim principima.
+
+## Marketizacija javnog sektora
+
+Najopipljivija dimenzija NPM-a bila je **marketizacija** javnog sektora, odnosno uvođenje tržišnih ili tržištu sličnih mehanizama u područja koja su tradicionalno bila organizirana kroz hijerarhiju javne uprave. Temeljna pretpostavka bila je da javni monopol često vodi neučinkovitosti, dok konkurencija stvara pritisak na smanjenje troškova, inovacije i bolju kvalitetu usluga.
+
+Pretpostavka o većoj učinkovitosti privatne organizacije ne počiva na čaroliji privatnog vlasništva, nego na tri jasna mikroekonomska mehanizma. Prvi je *ostatni dohodak* (*residual claimancy*). Vlasnik privatne tvrtke izravno snosi posljedice loših odluka i prima koristi dobrih, dok rukovoditelj u javnoj agenciji rijetko može osobno zadržati uštedu i rijetko gubi posao zbog prekoračenja troškova. Drugi mehanizam je *prijetnja izlaskom* (*exit*). Privatni dobavljač koji izgubi kupce propada, dok javnu službu klijent najčešće ne može zamijeniti, što slabi njezin poticaj na pažnju prema korisniku. Treći mehanizam je *cjenovni informacijski signal*. Konkurentska tržišta neprekidno objavljuju što košta proizvodnja, što je mjera koja u javnom sektoru zahtijeva odvojen i često nepouzdan računovodstveni napor (Hood, 1991).
+
+Reforme NPM-a pokušale su u javni sektor unijeti ekvivalente sve tri sile. Ostatni dohodak preslikan je kroz bonuse vezane uz pokazatelje učinka, prijetnja izlaskom kroz natječaje za pravo pružanja usluge, a cjenovni signal kroz interne tržišne mehanizme i analize vrijednosti za novac. Stvarna učinkovitost reforme ovisila je o tome koliko su vjerodostojno preslikane sve tri sile, a ne samo o nominalnoj prisutnosti tržišnog rječnika.
+
+Kolika treba biti jačina takvog bonusa nije proizvoljno pitanje, nego ima točan odgovor u teoriji poticaja (Holmström, 1979). Ako principal agentu ponudi linearnu nagradu vezanu uz mjerljiv ishod $y$ koji ovisi o uloženom naporu $e$ i o slučajnom šumu $\varepsilon$, optimalna jačina poticaja iznosi
+
+$$
+w(y) = \alpha + \beta\, y, \qquad y = e + \varepsilon,\ \ \varepsilon \sim \mathcal{N}(0,\sigma^2)\\[4pt] \beta^{*} = \frac{1}{1 + r\,\sigma^{2}\,C''(e)}
+$$
+
+gdje je $r$ averzija agenta prema riziku, $\sigma^2$ varijanca šuma u mjeri, a $C''(e)$ konveksnost troška napora. Intuicija je izravna jer optimalni $\beta^{*}$ pada kada mjera postane bučnija ($\sigma^2$ veći), kada je agent skloniji izbjegavanju rizika ($r$ veći) i kada je napor sve skuplji. Granični slučaj $\beta=1$ opisuje privatnog vlasnika koji zadržava cijeli ostatni dohodak, dok $\beta=0$ opisuje klasičnog birokrata na fiksnoj plaći, pa formula objašnjava i zašto se tržišni poticaji u javnom sektoru, gdje je ishod bučan i teško mjerljiv, namjerno drže slabima.
+
+Najradikalniji oblik bila je **privatizacija**, prijenos vlasništva nad poduzećima ili imovinom iz javnog u privatni sektor. U mnogim zemljama privatizirane su telekomunikacije, zračne kompanije, željeznice, komunalne i energetska poduzeća. Argument je bio da privatni vlasnici imaju snažnije poticaje za smanjenje troškova i povećanje produktivnosti. Međutim, privatizacija nije uvijek davala očekivane rezultate, osobito u sektorima prirodnih monopola, gdje konkurencija ne nastaje automatski, pa privatizacija bez kvalitetne regulacije može dovesti do privatnog monopola umjesto učinkovitog tržišta.
+
+Najobuhvatnija usporedna analiza četiri desetljeća reformi pokazuje da se rezultati privatizacije i kvazi-tržišnih modela snažno razlikuju po sektorima i kontekstima (Pollitt, 2017). Privatizacija telekomunikacija u Europi gotovo je redovito donijela snižavanje cijena, povećanje pokrivenosti i ulaganja u nove tehnologije, ponajviše zato što je tržište bilo dovoljno veliko za stvarnu konkurenciju, a regulator je djelovao u vrijeme prijenosa vlasništva. Privatizacija vodoopskrbe u Engleskoj i Walesu istodobno je donijela ulaganja, ali i porast tarifa te kontroverze oko isplata dividendi koje su nadišle ulaganja, jer je riječ o prirodnom monopolu u kojem konkurencija nikada nije zaživjela.
+
+Iskustva srednje i istočne Europe iz 1990-ih dodaju dodatnu pouku. U sektorima u kojima je regulatorni okvir kasnio za privatizacijom (energetika, željeznice, distribucija plina), prijenos vlasništva često je samo zamijenio javni monopol privatnim, bez stvarnog dobitka za potrošača. Ondje gdje su regulatorna pravila bila uspostavljena prije ili istodobno s privatizacijom, mjerljivi učinci na cijenu i kvalitetu bili su znatno bolji. Pouka je da privatizacija nije reformski potez sam za sebe, nego dio reformskog paketa koji uključuje funkcionalnu regulaciju i nadzornu sposobnost države.
+
+Drugi, češći oblik bio je **outsourcing**, ugovaranje javnih usluga s privatnim ili neprofitnim pružateljima poput čišćenja, odvoza otpada, održavanja cesta ili informatičkih usluga. Treći oblik bili su **kvazi-tržišni modeli** (*quasi-markets*), osobito u zdravstvu, obrazovanju i socijalnim uslugama, u kojima javno financiranje može ostati, ali se uvodi konkurencija među pružateljima usluga. Le Grand ističe da kvazi-tržišta pokušavaju kombinirati javno financiranje i tržišnu disciplinu, ali njihov uspjeh ovisi o dizajnu sustava, kvaliteti informacija i sposobnosti države da nadzire pružatelje (Le Grand, 1991).
+
+U praksi je marketizacija otvorila važno pitanje o tome što je država, a što samo način pružanja usluge. Ako privatna tvrtka odvozi otpad, usluga i dalje može biti javna jer je organizira, regulira i financira lokalna vlast. NPM je tako pomaknuo raspravu s pitanja „treba li država nešto raditi?" na pitanje „tko to može napraviti najbolje i pod kojim pravilima?".
+
+**Politika u praksi.**
+Reforme britanskog zdravstvenog sustava (NHS) u devedesetima dobar su primjer dometa i granica marketizacije. Uvođenjem „unutarnjeg tržišta" odvojene su uloge naručitelja i pružatelja usluge kako bi se kroz natjecanje među bolnicama smanjili troškovi i skratile liste čekanja. Dio se učinkovitosti doista povećao, ali su istodobno narasli administrativni troškovi ugovaranja, mjerenja i nadzora, a koordinacija među ustanovama oslabila. Iskustvo pokazuje da kvazi-tržište može unijeti korisne poticaje, ali da njegov uspjeh ovisi o kvaliteti informacija, sposobnosti države da nadzire ugovore i o tome nadmašuju li dobitci u učinkovitosti troškove same tržišne infrastrukture.[1]
+
+## Korporativno upravljanje i upravljanje prema rezultatima
+
+Uz tržišne mehanizme, NPM je tražio i promjenu mjerila uspjeha kroz **korporativno upravljanje** javnim sektorom. Tradicionalna birokracija počivala je na hijerarhiji, pravilima, formalnim procedurama i neutralnosti službenika (Weber, 1978). Takav je model imao važne prednosti poput predvidljivosti, zakonitosti i profesionalnosti, ali su ga kritičari smatrali previše usmjerenim na poštivanje procedura, a premalo na rezultate.
+
+NPM je zato pokušao pomaknuti fokus s pitanja „je li procedura poštovana?" na pitanje „što je postignuto?".
+
+**Upravljanje prema rezultatima** (*performance management*) je menadžerski pristup koji ocjenjuje javne institucije prema postignutim ishodima, a ne prema usklađenosti s procedurama; kombinira stratešku autonomiju s odgovornošću za mjerljive pokazatelje uspješnosti.
+
+Uz njega u javni sektor ulaze strateško planiranje, pokazatelji uspješnosti, vrednovanje programa i ugovori o učinku. U takvom pristupu javne institucije dobivaju veću autonomiju, ali i veću odgovornost. One se ne ocjenjuju samo prema tome jesu li potrošile sredstva u skladu s pravilima, nego prema rezultatima kao što su kraće liste čekanja, bolji obrazovni ishodi ili brže rješavanje predmeta. Sve te promjene okupljene su oko jednog mjerila, **vrijednosti za novac**.
+
+**Vrijednost za novac** (*value for money*) je NPM kriterij koji traži da se javna sredstva alociraju na način koji osigurava najveći mogući ishod po utrošenom euru, kombinirajući ekonomičnost (niski input-trošak), učinkovitost (dobar omjer output/input) i efektivnost (postizanje ciljnog ishoda).
+
+Ta tri elementa nisu nezavisne ocjene, nego se množe u jedan lanac od potrošenog eura do ostvarenog ishoda (Pollitt, 2017),
+
+$$
+\text{Učinkovitost} = \frac{\text{Output}}{\text{Input}}, \qquad \text{Efektivnost} = \frac{\text{Ishod}}{\text{Output}}\\[4pt] \text{Vrijednost za novac} = \frac{\text{Ishod}}{\text{Trošak}} = \underbrace{\frac{1}{c_{\text{in}}}}_{\text{ekonomičnost}} \cdot \underbrace{\frac{\text{Output}}{\text{Input}}}_{\text{učinkovitost}} \cdot \underbrace{\frac{\text{Ishod}}{\text{Output}}}_{\text{efektivnost}}
+$$
+
+gdje je $c_{\text{in}}$ jedinična cijena inputa, pa je trošak jednak $c_{\text{in}}$ puta količina inputa. Rastav je definicijski, ali pedagoški koristan jer pokazuje da vrijednost za novac pada ako zakaže bilo koji od triju faktora. Jeftin input i visok output ne jamče vrijednost ako taj output ne stvara stvarni ishod, kao kad bolnica jeftino obavi mnogo zahvata koji ne poboljšavaju zdravlje pacijenata.
+
+Međutim, upravljanje prema rezultatima donosi i **problem mjerenja**. U privatnom sektoru profit je jednostavan, iako ne savršen, pokazatelj uspjeha. U javnom sektoru takav jedinstveni pokazatelj ne postoji. Škola nije uspješna samo ako ima visoke rezultate na testovima, nego i ako razvija kritičko mišljenje i građansku odgovornost. Bolnica nije uspješna samo ako obavi velik broj zahvata, nego i ako osigurava kvalitetnu i pravednu skrb. Zato je jedan od glavnih izazova NPM-a bio kako mjeriti ono što je važno, a ne samo ono što je lako mjerljivo.
+
+**Goodhartov zakon** glasi da kada neka mjera postane operativni cilj, ona prestaje biti dobra mjera jer akteri prilagode ponašanje samoj mjeri umjesto onome što je mjera trebala zahvatiti; u NPM kontekstu to znači da pokazatelji uspješnosti neminovno izazivaju taktičku prilagodbu koja iskrivljuje ono što mjere (Hood, 1991).
+
+Charles Goodhart izvorno je tu pravilnost formulirao u kontekstu monetarne politike, a Hood ju je primijenio na javni menadžment (Hood, 1991). Njezina se snaga vidi tek u primjerima. Bolnica čije se osoblje ocjenjuje po dužini liste čekanja može listu skratiti odbijanjem kompliciranijih slučajeva ili njihovim premještanjem u drugu kategoriju, a ne stvarnim povećanjem propusnosti. Škola koju ocjenjuju isključivo prema državnoj maturi može sužavanjem nastavnog plana na predmete koji se testiraju podići rezultat i istodobno smanjiti opseg obrazovanja. Policijska postaja koja se ocjenjuje po broju razriješenih predmeta može razriješene predmete preinačiti u manje težak oblik kaznenog djela kako bi zadržala stopu.
+
+Goodhartov zakon nije samo iskustveno zapažanje, nego ima egzaktan mikroekonomski temelj u modelu višestrukih zadaća (Holmström, 1991). Ako agent obavlja dvije zadaće, mjerljivu i nemjerljivu, a principal nagrađuje svaku zasebnim poticajem, optimalni napor na jednoj zadaći reagira na poticaj vezan uz drugu prema
+
+$$
+w = \alpha + \beta_1 y_1 + \beta_2 y_2, \qquad y_j = e_j + \varepsilon_j\\[4pt] \frac{\partial e_1^{*}}{\partial \beta_2} < 0 \quad \text{kada su zadaće supstituti u trošku napora}\;\bigl(C_{12}>0\bigr)
+$$
+
+gdje $C_{12}>0$ znači da je agentu sve teže ulagati napor u prvu zadaću što ga više ulaže u drugu. Negativni predznak govori da pojačavanje poticaja na mjerljivoj dimenziji ($y_2$, broj zahvata ili rezultat na maturi) povlači napor s nemjerljive ($y_1$, kvaliteta skrbi ili kritičko mišljenje), što je upravo mehanizam koji se vidi u bolnici, školi i policijskoj postaji. Pouka je oštra jer kad je jedna dimenzija teško mjerljiva, optimalno je sniziti poticaj $\beta_2$ na onu mjerljivu, ponekad sve do nule, čime model formalno opravdava oprez prema snažnim jednodimenzionalnim poticajima u javnom sektoru.
+
+Reakcija na taj problem nije odustajanje od mjerenja, nego višestrukost mjera koje akteri ne mogu istodobno zadovoljiti samo igrom s brojkama. Kombinacija pokazatelja procesa i ishoda, redovita revizija po slučajnom uzorku i izvori informacija izvan same institucije, primjerice ankete korisnika ili neovisne kliničke procjene, smanjuju prostor za prilagodbu mjeri umjesto cilju. Bez te višeslojnosti, „upravljanje prema rezultatima" lako se izrodi u upravljanje prema pokazateljima.
+
+## Građanin kao korisnik, klijent ili kupac?
+
+Ako upravljanje prema rezultatima traži da mjerimo ono što je važno, otvoreno ostaje tko određuje što je važno, a najizravniji je kandidat sam korisnik usluge. Time se težište ocjene pomiče s ishoda koje propisuje institucija na iskustvo onoga komu je usluga namijenjena. Jedna od najprepoznatljivijih promjena koju donosi NPM jest upravo novi pogled na građanina. U tradicionalnom modelu građanin je promatran kao stranka, korisnik prava ili adresat javne vlasti. U NPM-u se sve češće govori o građaninu kao **korisniku usluge**, pa čak i kao „klijentu" ili „kupcu" javnog sektora (Osborne, 1992).
+
+Ovaj pomak imao je pozitivne učinke jer je javnu upravu prisilio da više razmišlja o iskustvu građana, o tome koliko se čeka na dokument, koliko je postupak razumljiv i može li se usluga dobiti digitalno. Međutim, pojam građanina kao kupca ima i ozbiljna ograničenja. Građanin nije samo kupac javnih usluga, nego i nositelj prava, porezni obveznik, birač i član političke zajednice. Ako se javni sektor previše promatra kroz odnos pružatelja i kupca, može se zanemariti demokratska dimenzija države. Građanin kao „kupac" mogao bi željeti što niže poreze i što bržu osobnu uslugu, ali građanin kao član političke zajednice može prihvatiti više poreze ako time financira javno zdravstvo ili obrazovanje. Tu se vidi granica tržišne analogije. Država ne može biti samo servis jer istodobno mora donositi kolektivne odluke o raspodjeli resursa, pravima i obvezama.
+
+Razliku je moguće izoštriti jednim pojmovnim parom. Kupac disciplinira pružatelja izlaskom, time što svoj posao odnese drugamo, dok se građanin služi **glasom**, pravom da prigovori, glasuje i sudski ospori odluku, te pravima koja se ne mogu kupiti ni uskratiti (Hirschman, 1970). Kod većine javnih usluga izlazak je slab ili nemoguć, jer postoji jedna porezna uprava, jedan sustav obveznog školovanja i jedan regulator, pa preoblikovanje građanina u kupca tiho istiskuje upravo onaj instrument, glas povezan s pravima, koji javno djelovanje čini legitimnim. Tržišna analogija zato ne griješi u tome što traži pažnju prema korisniku, nego u tome što prešućuje da se prema građaninu valja odnositi i kao prema nositelju prava, a ne samo kao prema platiši usluge.
+
+## Agencifikacija i razdvajanje politike od provedbe
+
+Logika razdvajanja koja je vodila NPM nigdje nije išla dalje nego u **agencifikaciji**. Ideja je bila oblikovanje politika odvojiti od njihove provedbe tako da se ministarstva bave strategijom, zakonima i prioritetima, dok bi specijalizirane agencije profesionalno i učinkovito provodile programe.
+
+**Agencifikacija** je NPM reforma kojom se odvojilo oblikovanje politike (u ministarstvima) od njezine provedbe (u autonomnim ili poluautonomnim agencijama), s ciljem veće stručnosti i fleksibilnosti, ali uz rizik oslabljene koordinacije i demokratskog nadzora.
+
+Odnos između ministarstva i agencije udžbenički je primjer principal-agent ugovaranja, pa se napetost koju agencifikacija stvara može i formalno zapisati (Laffont, 1993). Principal bira ugovor koji maksimizira očekivani neto ishod, ali pod dvama ograničenjima
+
+$$
+\max_{\alpha,\beta}\ \mathbb{E}\bigl[y - w(y)\bigr] \quad \text{uz}\\[4pt] (\text{IR})\ \ \mathbb{E}[u(w)] - C(e) \ge \bar{u}, \qquad (\text{IC})\ \ e \in \arg\max_{e'} \ \mathbb{E}[u(w)] - C(e')
+$$
+
+gdje uvjet sudjelovanja (IR) jamči da agent uopće prihvati posao jer mu očekivana korist nadmašuje vanjsku alternativu $\bar{u}$, a uvjet poticajne usklađenosti (IC) jamči da agent sam odabere napor koji principal želi. Kad ishod nije savršeno mjerljiv, IC se može zadovoljiti jedino izlaganjem agenta riziku kroz veći $\beta$, a to izlaganje je trošak koji principal mora platiti kroz IR. Upravo tu napetost demistificira pojam „ugovora o učinku" jer pokazuje zašto savršena kontrola provedbe nije besplatna i zašto agencija s autonomijom uvijek zadržava dio diskrecije.
+
+Agencije mogu biti stručnije, fleksibilnije i manje izložene dnevnoj politici, što u područjima poput regulacije tržišta ili nadzora financijskog sustava često ima smisla. No agencifikacija je otvorila i problem odgovornosti. Ako ministarstvo nije izravno nadležno za provedbu, a agencija ima autonomiju, tko je politički odgovoran kada sustav zakaže? Ako agencija ostvaruje formalne pokazatelje, ali ne ispunjava širi javni interes, tko to može korigirati? Autonomne organizacije mogu povećati učinkovitost, ali istodobno otežati koordinaciju i demokratski nadzor.
+
+Razlog zbog kojeg autonomija otežava koordinaciju leži u množenju sučelja. Svako odvajanje provedbe u zasebnu agenciju stvara novu granicu na kojoj ono što je prije bilo unutarnja uputa postaje odnos naručitelja i izvršitelja, uređen ugovorom, pokazateljima i izvještavanjem. Dok god se problem uklapa u nadležnost jedne agencije, taj je trošak podnošljiv, ali problemi građana rijetko poštuju granice agencija, pa korisnik kojem istodobno trebaju zdravstvena, socijalna i obrazovna podrška pada u prazninu za koju nijedna agencija nije nadležna u cjelini. Što je više usko specijaliziranih tijela, to više resursa odlazi na koordinaciju među njima umjesto na samu uslugu, a upravo je taj trošak fragmentacije pokrenuo kasniji val ponovnog povezivanja uprave koji razrađujemo u poglavlju o novom upravljanju.
+
+## Prednosti i kritike novog javnog menadžmenta
+
+Zagovornici NPM-a ističu nekoliko prednosti. Prvo, NPM je u javni sektor unio **jezik učinkovitosti** i otvorio prostor za evaluaciju programa, analizu troškova i koristi te veću odgovornost za rezultate. Drugo, potaknuo je veću **transparentnost** jer institucije moraju definirati ciljeve i izvještavati o učinku. Treće, potaknuo je **orijentaciju prema korisnicima** te je važan prethodnik današnje digitalizacije javne uprave. Četvrto, otvorio je prostor za **profesionalizaciju upravljanja**.
+
+Digitalizacija javne uprave danas je možda najopipljiviji nasljednik te orijentacije prema korisniku, a i nju je moguće mjeriti. Indeks razvijenosti e-uprave Ujedinjenih naroda smješta Hrvatsku iznad europskog prosjeka, no osjetno iza digitalnih predvodnika poput Danske, Estonije i Finske. Riječ je o solidnoj, ali ne i vodećoj razini, što ostavlja prostor za napredak upravo u onome što je menadžerski pristup obećao. Slika koja slijedi prikazuje taj indeks za odabrane zemlje.
+
+*Slika. Indeks razvijenosti e-uprave (EGDI, ljestvica 0–1), odabrane zemlje, 2024. Zlatno je istaknuta Hrvatska, a isprekidana linija označava europski regionalni prosjek. Izvor: Ujedinjeni narodi (UN DESA), E-Government Survey 2024.*
+
+Ipak, NPM se brzo suočio s ozbiljnim kritikama. Prva se odnosi na pretjerano pojednostavljenu usporedbu države i poduzeća. Poduzeće ima relativno jasan cilj (dugoročni profit), dok država ima više često napetih ciljeva koji uključuju učinkovitost, pravednost, zakonitost, jednakost pristupa, političku odgovornost i zaštitu ranjivih. Druga kritika odnosi se na **fragmentaciju** javnog sektora. Kada se usluge razdvoje na velik broj agencija, ugovora i privatnih pružatelja, sustav postaje teže koordinirati. Treća se odnosi na **problem mjerenja** i Goodhartov zakon prema kojem mjera prestaje biti dobra mjera onog trenutka kada postane cilj (bolnica može smanjiti liste čekanja preusmjeravanjem pacijenata, škola poboljšati rezultate sužavanjem nastave). Četvrta kritika odnosi se na **slabljenje profesionalne etike** javne službe. Peta kritika tiče se primjene NPM-a u zemljama slabijih institucija. Schick upozorava da sofisticirani modeli upravljanja rezultatima pretpostavljaju osnovnu administrativnu sposobnost, pa zemlje koje nemaju stabilan proračunski sustav i profesionalnu državnu službu trebaju „najprije srediti osnove" prije uvođenja složenih reformi (Schick, 1998).
+
+Empirijska usporedba zemalja koje su pokušale ubrzano prenijeti NPM iz anglosaksonskog kruga otkriva dvije različite putanje (Pollitt, 2017). Skupina zemalja s razvijenom administrativnom tradicijom (Nizozemska, Danska, Finska) preuzela je tržišne mehanizme oprezno i selektivno, redovito popraćene ulaganjem u koordinaciju i nacionalne strategije, te je vremenom razvila mješavinu menadžerskih i mrežnih elemenata. Skupina zemalja u tranziciji prema funkcionalnoj državi (dijelovi srednje i istočne Europe, Latinska Amerika 1990-ih) često je preskakala temelje i izravno preuzimala složene NPM tehnike, što je proizvodilo formalne reforme koje nisu mijenjale stvarno funkcioniranje uprave, a ponekad su je dodatno fragmentirale.
+
+Pouka koja je iz toga proizašla ne odbacuje menadžerske ideje, nego mijenja redoslijed njihove primjene. U zemljama gdje proračunski sustav ne funkcionira pouzdano, gdje državna služba nije zaštićena od političke smjene i gdje nadzorni mehanizmi tek nastaju, postupna izgradnja osnova daje veće dobitke nego skok na sofisticirane reforme. NPM se u takvim kontekstima pokazao djelotvornim tek kao kasni sloj jednog dužeg procesa, a ne kao kratica koja zaobilazi izgradnju temeljne administrativne sposobnosti.
+
+## Sažetak
+
+Novi javni menadžment nastao je kao odgovor na sliku „preopterećene države" i pokušao je javni sektor organizirati tako da više nalikuje poduzeću, s naglaskom na rezultate, mjerljive ciljeve, konkurenciju i disciplinu troškova. Njegovi alati, od marketizacije i agencifikacije do korporativnog upravljanja i usmjerenosti na građanina kao korisnika, donijeli su stvarne pomake u učinkovitosti i kvaliteti usluga. Istodobno su pokazali ograničenja jer su mjerljivi pokazatelji znali zamijeniti stvarnu kvalitetu, a fragmentacija institucija oslabiti koordinaciju. Iskustvo različitih zemalja uči da menadžerske ideje djeluju tek kad postoje temeljni administrativni kapaciteti, a ne kao kratica koja ih zaobilazi. Sama ograničenja menadžerskog pristupa, osobito fragmentacija i pretjerano oslanjanje na pokazatelje, otvaraju sljedeći zaokret, prema upravljanju koje umjesto na tržište računa na koordinaciju i suradnju u mrežama aktera.
+
+**Vježba s podacima.**
+Pretpostavite da javna agencija upravlja sustavom bolnica i da resorno ministarstvo postavlja cilj prema kojem udio pacijenata koji na specijalistički pregled čekaju dulje od 90 dana mora pasti ispod 5 posto. U polaznoj godini bolnica ima 1000 pacijenata na listi, od kojih 200 čeka dulje od 90 dana, pa udjel iznosi 20 posto. Sljedeće godine bolnica ne povećava stvarnu propusnost, ali 180 najsloženijih pacijenata premjesti u zasebnu „pripremnu" evidenciju koja se ne računa u službenu listu te 50 pacijenata preusmjeri privatnim ustanovama na trošak korisnika.
+
+(a) Izračunajte prijavljeni udjel dugotrajnih čekanja nakon premještanja, uzimajući u obzir samo pacijente koji ostaju na službenoj listi, i usporedite ga s ciljem od 5 posto.
+
+(b) Procijenite stvarni udjel dugotrajnih čekanja ako u brojnik i nazivnik vratite sve pacijente koji i dalje čekaju, uključujući premještene i preusmjerene, te objasnite koja konkretna ponašanja stvaraju razliku između prijavljene i stvarne uspješnosti.
+
+(c) Predložite jednu protumjeru koja bi suzila prostor za ovakvu prilagodbu, primjerice neovisnu reviziju uzorka predmeta ili praćenje ishoda iz izvora izvan same bolnice, i objasnite zašto ni ta protumjera ne uklanja problem u potpunosti.
+
+Na kraju objasnite zašto ovaj primjer ilustrira Goodhartov zakon i zašto sam čin mjerenja nekog pokazatelja mijenja ponašanje aktera koje se mjeri.
+
+## Bilješke
+
+1. Daljnje čitanje: Propper, Burgess i Gossage (2008), *Competition and Quality: Evidence from the NHS Internal Market 1991–9* (https://onlinelibrary.wiley.com/doi/abs/10.1111/j.1468-0297.2007.02107.x); Gaynor, Moreno-Serra i Propper (2013), *Death by Market Power* (https://www.nber.org/papers/w16164).

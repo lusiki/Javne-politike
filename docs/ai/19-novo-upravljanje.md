@@ -1,0 +1,132 @@
+# Od novog javnog menadžmenta prema novom upravljanju
+
+> Iz knjige: Sve što želite znati o državi i javnim politikama u Hrvatskoj
+> Autori: Milan Deskar-Škrbić, Petra Palić, Luka Šikić
+> Izvor: https://lusiki.github.io/Javne-politike/chapters/19-novo-upravljanje.html
+> Tekstualna verzija poglavlja za korištenje s AI-asistentima.
+> Generirano: 2026-06-17 · © 2026 Milan Deskar-Škrbić, Petra Palić, Luka Šikić. Tekst za osobno i obrazovno korištenje uz navođenje izvora.
+
+---
+
+## Vodič kroz poglavlje
+
+1. Zašto ograničenja NPM-a vode prema novom, mrežnom upravljanju?
+2. Što su tvrdokorni problemi i zašto ih jedna institucija ne može riješiti sama?
+3. Što znače pristupi „cijele vlasti" i upravljanje kroz mreže aktera?
+4. Kako uključivanje građana i digitalizacija mijenjaju upravljanje?
+5. Kako se uravnotežuju birokratska, menadžerska te mrežna i demokratska logika?
+
+Zbog ograničenja Novog javnog menadžmenta, od kraja 1990-ih i osobito tijekom 2000-ih razvija se novi val reformi javnog sektora koji se često naziva **novo javno upravljanje** (*new governance*) ili **mrežno upravljanje** (*network governance*). Dok je NPM naglašavao tržište, konkurenciju, autonomiju menadžera, mjerenje rezultata i ugovorne odnose, novi pristupi sve više naglašavaju koordinaciju, suradnju, partnerstva, povjerenje, uključivanje građana i sposobnost države da upravlja složenim mrežama aktera (Rhodes, 1997).
+
+**Mrežno upravljanje** (*network governance*) ili **novo javno upravljanje** (*new governance*) je pristup kojim se javne politike oblikuju i provode kroz stalne suradničke odnose između više aktera (vlada, lokalna tijela, privatni sektor, civilno društvo, građani), naglašavajući koordinaciju i povjerenje nasuprot NPM-ovom naglašavanju tržišta i autonomije menadžera (Rhodes, 1997).
+
+Ovaj zaokret nije značio potpuno odbacivanje NPM-a. Mnoge njegove ideje ostale su važne, jer javni sektor i dalje mora voditi računa o učinkovitosti, kvaliteti usluga, troškovima i rezultatima. Iskustvo je ipak pokazalo da tržišni mehanizmi i menadžerska autonomija sami po sebi nisu dovoljni za rješavanje složenih javnih problema. U nekim su slučajevima reforme inspirirane NPM-om proizvele nove probleme koji uključuju fragmentaciju institucija, slabu koordinaciju, prevelik broj agencija i pretjerano oslanjanje na mjerljive pokazatelje koji nisu uvijek odražavali stvarnu kvalitetu javnih usluga.
+
+Poglavlje slijedi tu promjenu od uzroka prema oblicima. Kreće od tvrdokornih problema koje nijedna institucija ne može riješiti sama, pa odatle izvodi pristupe povezane vlade, mreža i partnerstava, uključivanja građana te digitalizacije koja mijenja sam način na koji država radi. Na kraju ne proglašava pobjednika, nego pokazuje kako se birokratska, menadžerska i mrežna logika danas moraju nositi zajedno.
+
+## Tvrdokorni problemi i potreba za suradnjom
+
+Ključni razlog za razvoj novog upravljanja leži u promjeni prirode javnih problema. Mnogi suvremeni izazovi ne mogu se riješiti ni klasičnom birokratskom hijerarhijom ni jednostavnim tržišnim natjecanjem. Klimatske promjene, starenje stanovništva, zdravstvene krize, migracije, siromaštvo, energetska tranzicija i digitalna sigurnost zahtijevaju suradnju različitih aktera koji uključuju ministarstva, lokalne i regionalne vlasti, regulatorne agencije, privatni sektor, akademsku zajednicu, civilno društvo i same građane.
+
+Primjerice, politika klimatske tranzicije ne može biti samo posao ministarstva okoliša. Ona uključuje energetiku, promet, industrijsku politiku, poljoprivredu, prostorno planiranje, porezni sustav, socijalnu politiku i obrazovanje. Što je javni problem složeniji, to je manje vjerojatno da ga jedna institucija može riješiti sama. Zbog toga se u literaturi sve više koristi pojam **„wicked problems"**, odnosno tvrdokornih ili teško rješivih javnih problema (Rittel, 1973). To su problemi koji nemaju jedno jasno rješenje, kod kojih se akteri ne slažu ni oko uzroka ni oko ciljeva, a svako rješenje proizvodi nove posljedice.
+
+Mehanika prelaska s hijerarhije na mrežu nije samo organizacijska, nego informacijska. U klasičnoj hijerarhiji informacija putuje uzlazno kroz nekoliko razina, na svakoj se filtrira ili pojednostavljuje, a odluka silazi nazad kroz iste kanale s vremenskim pomakom. Što je sustav viši i tvrdokorniji je problem, to je jaz između onoga što izvršna razina zna i onoga što odlučujuća razina vidi veći. Mreža smanjuje broj posrednika tako što povezuje aktere s relevantnim znanjem izravno, bez prelaska kroz nekoliko principalskih lanaca, i tako skraćuje petlju između opažanja problema i prilagodbe odgovora (Rhodes, 1997).
+
+Cijena te brzine je gubitak jednoznačnog zapovjednog lanca. Kada nijedan akter nema isključivu nadležnost, nitko ne snosi automatsku odgovornost za neuspjeh, a koordinacija ovisi o trajnom ulaganju u međusobno povjerenje, neformalna pravila i razmjenu informacija. Mreža je zato učinkovito rješenje za probleme koji nadilaze pojedinačni resor, ali ona ne ukida potrebu za pravilima nego ih premješta s formalnih akata na operativne dogovore koje sami sudionici moraju izgraditi.
+
+Upravo zato novo javno upravljanje naglašava da država više nije samo zapovjedni centar koji kroz hijerarhiju izdaje naloge, niti samo naručitelj usluga koji kroz ugovore kupuje rezultate od tržišta. Država sve više postaje koordinator, moderator i jamac pravila igre. Njezina uloga nije nužno da sve sama radi, ali mora osigurati da različiti akteri djeluju usklađeno, da javni interes ne bude izgubljen u privatnim interesima i da građani mogu razumjeti tko je za što odgovoran. To ne znači da država postaje manje važna. U složenom društvu ona često postaje još važnija.
+
+## Whole-of-government i povezana vlada
+
+Problemi građana rijetko poštuju granice ministarstava, a uprava razdvojena u zasebne „silose" prisiljava ih da sami povezuju ono što država drži odvojenim. Odgovor na tu fragmentaciju nakon NPM-a postaje **whole-of-government** pristup.
+
+**Whole-of-government** pristup je reforma organizacije javne uprave kojom se nastoji prevladati sektorska fragmentacija tako da se usluge, baze podataka i odgovornosti integriraju oko problema i korisnika, a ne oko administrativnih granica pojedinih ministarstava.
+
+Tradicionalna uprava organizirana je po ministarstvima i sektorima, što omogućuje specijalizaciju, ali problemi građana rijetko poštuju administrativne granice. Nezaposlena osoba možda istodobno treba obrazovanje, socijalnu pomoć, zdravstvenu podršku i pomoć pri pronalasku posla. Whole-of-government pristup pokušava okrenuti logiku tako da se sustav organizira oko problema i korisnika, a ne oko unutarnjih granica administracije, pa se razvijaju integrirane javne usluge, jedinstvene kontaktne točke i zajedničke baze podataka.
+
+**Politika u praksi.**
+Whole-of-government pristup najlakše je razumjeti na primjeru integrirane javne usluge. Umjesto da nezaposlena osoba zasebno obilazi službe za zapošljavanje, socijalnu pomoć, zdravstvo i obrazovanje, neke su zemlje uspostavile jedinstvene kontaktne točke i zajedničke baze podataka koje te usluge povezuju oko korisnika, a ne oko unutarnjih granica administracije. Estonija i pojedine nordijske zemlje pokazuju da takav model može smanjiti administrativni teret i ubrzati postupke, ali samo ako su podaci interoperabilni i ako postoji jasna odgovornost za zaštitu privatnosti. Bez te institucionalne podloge integracija usluga ostaje na razini deklaracije, a građanin i dalje nosi teret povezivanja nepovezanog sustava.[1]
+
+Srodan pojam je **povezana vlada** (*joined-up government*), koji se posebno razvio u Ujedinjenom Kraljevstvu krajem 1990-ih. Njegova je svrha bila ispraviti fragmentaciju nastalu nakon reformi inspiriranih NPM-om, jer se nakon razdoblja razdvajanja i decentralizacije pojavila potreba za ponovnim povezivanjem sustava (Christensen, 2007).
+
+## Mreže javnih politika i partnerstva
+
+Povezivanje ne staje na granicama same države. Mnoge politike danas nastaju u stalnoj suradnji javnih tijela, struke, privatnih pružatelja i udruga, pa se oblikuju u **mrežama javnih politika** (*policy networks*) prije nego u jednoj nadležnoj instituciji.
+
+**Mreže javnih politika** (*policy networks*) su stabilne suradničke strukture u kojima se javne politike oblikuju i provode kroz stalne odnose između višestrukih aktera koji dijele resurse i informacije; mogu povećati kvalitetu politika, ali nose rizik zarobljavanja od posebnih interesa.
+
+U području zdravstva to su ministarstvo, bolnice, liječničke komore, fond zdravstvenog osiguranja, privatni pružatelji, pacijentske udruge i farmaceutska industrija. Mreže mogu povećati kvalitetu javnih politika jer okupljaju znanje, informacije i resurse različitih aktera. Imaju, međutim, i svoje rizike. Ako su zatvorene, mogu postati prostor za utjecaj interesnih skupina i rentijerstvo. Ako su nejasno organizirane, mogu otežati odgovornost. Zato mrežno upravljanje zahtijeva snažne institucije, jasna pravila, transparentnost i sposobnost države da razlikuje suradnju od zarobljavanja politike od strane posebnih interesa.
+
+Empirijska sinteza više od stotinu studija pokazuje da uspjeh mrežnog upravljanja nije slučajan, nego ovisi o nekoliko mjerljivih uvjeta (Ansell, 2008). Suradnja se pokazuje najuspješnijom kada je sudjelovanje široko, ali ima jasna pravila o tome tko može ući i kako se odluke obvezuju, kada postoji raniji pozitivan saldo međusobnog djelovanja među akterima i kada javna vlast preuzima ulogu posrednika, a ne samo participanta. Tamo gdje su akteri ulazili s otvorenim sukobom, gdje je raspored moći bio izrazito nesimetričan ili gdje su vremenski okviri bili prekratki da se izgradi povjerenje, mreže su redovito tonule u puko savjetovanje bez stvarnog utjecaja na odluke.
+
+Iz toga slijedi praktičan zaključak da mrežno upravljanje nije univerzalni lijek za neuspjeh hijerarhije. Ono donosi dodatnu vrijednost u područjima poput integrirane zdravstvene skrbi, lokalnog razvoja i upravljanja prirodnim resursima, gdje se isti akteri susreću kroz duže razdoblje. U područjima u kojima su sudionici jednokratni ili duboko podijeljeni, mreže lako gube stvarnu funkciju i postaju ceremonijalan dodatak postojećoj hijerarhiji.
+
+Konkretni primjeri pokazuju gdje ta logika vrijedi. Upravljanje zajedničkim prirodnim resursima, poput vodnih slivova, ribolovnih područja ili pašnjaka, jedno je od područja u kojima mrežna i suradnička rješenja sustavno nadmašuju i čistu hijerarhiju i čisto tržište, upravo zato što lokalni akteri raspolažu znanjem o resursu i ponavljaju međusobne odnose kroz dulje razdoblje (Ostrom, 1990). Slično vrijedi za integriranu skrb o starijima ili lokalni razvoj, gdje isti dionici trajno surađuju. Suprotno tome, ondje gdje su odnosi jednokratni, akteri anonimni ili duboko sukobljeni, mreže gube koheziju i povjerenje koje ih čini djelotvornima. Pouka nije da je mrežno upravljanje univerzalno bolje, nego da njegova prednost ovisi o tome ponavlja li se interakcija dovoljno dugo da se izgrade povjerenje i vlastita pravila.
+
+Sve važniju ulogu imaju i **partnerstva** koja uključuju suradnju javnog i privatnog sektora, javnog i civilnog sektora ili različitih razina vlasti. Javno-privatna partnerstva mogu se koristiti za izgradnju infrastrukture ili pružanje usluga. No partnerstva nisu sama po sebi dobra. Mogu povećati učinkovitost, ali i zamagliti odgovornost. Ako privatni partner ostvaruje profit iz javnog projekta, a rizik ostaje na državi, partnerstvo može postati fiskalno skupo. Zato je ključno pitanje ne samo tko sudjeluje, nego i pod kojim pravilima, s kojom odgovornošću i uz kakvu raspodjelu rizika i koristi.
+
+Zašto rizik tako često sklizne natrag na državu objašnjava narav dugoročnih ugovora. Budući da nijedan ugovor ne može unaprijed opisati svaku buduću okolnost, neizvjesnost i konačni rizik padaju na onoga tko ne može odustati, a država kod ključne javne usluge poput bolnice, autoceste ili škole ne može vjerodostojno dopustiti da pružanje propadne. Privatni partner zato posluje pod prešutnim jamstvom jer dobit zadržava dok ide dobro, a najteže gubitke u krajnjem slučaju preuzima proračun. Vrijednost partnerstva onda ne ovisi o tome je li nositelj privatni ili javni, nego o tome je li rizik ugovorom dodijeljen strani koja njime stvarno može upravljati, što je primjena logike transakcijskih troškova i nepotpunih ugovora razrađene u poglavlju o institucionalnoj ekonomici (Williamson, 1985).
+
+## Uključivanje građana
+
+Posebno važan element novog upravljanja jest **uključivanje građana**. NPM je građane često promatrao kao korisnike ili klijente. Novo upravljanje ide korak dalje time što građane shvaća ne samo kao korisnike, nego i kao sudionike u oblikovanju javnih politika. To se vidi u razvoju javnih savjetovanja, participativnog budžetiranja, građanskih panela i digitalnih platformi za sudjelovanje.
+
+Participacija može povećati legitimnost javnih politika jer građani lakše prihvaćaju odluke u čijem su oblikovanju sudjelovali. Može povećati i kvalitetu politika jer građani često imaju informacije o problemima koje administracija ne vidi. Lokalni stanovnici znaju gdje prometna infrastruktura ne funkcionira, roditelji upozoravaju na probleme u školama, a poduzetnici na administrativne prepreke. Participacija ipak mora biti stvarna, a ne samo formalna. Ako se mišljenja građana prikupljaju tek nakon što su odluke već donesene, sudjelovanje ne povećava povjerenje nego može proizvesti dodatni cinizam.
+
+Šira kritika participativnih mehanizama nadilazi pitanje iskrenosti njihove provedbe i tiče se samog uzorka koji u njima sudjeluje. Procedura koja svima jamči pristup ne jamči i jednaku zastupljenost, pa ishod može odražavati preferencije onih koji sudjeluju, a ne medijanskoga građanina.
+
+**Empirijski dokaz.**
+Participativni mehanizmi ne uključuju sve skupine jednako. Teorijska i komparativna literatura upozorava da među aktivnim sudionicima u tim procesima sustavno prevladava obrazovaniji, gradski i politički angažiraniji sloj, dok skupine koje najviše ovise o javnim uslugama, poput starijih, niskoobrazovanih i ruralnih građana, sudjeluju ispod svojeg udjela u stanovništvu (2007). Jednak pristup po proceduri tako ne znači i jednaku zastupljenost u ishodu. Pouka je da „glas građana" prikupljen bez pažnje na strukturu sudionika može pomaknuti odluku prema angažiranoj manjini, pa kvalitetna participacija traži pragove raznolikosti i ciljano uključivanje slabije zastupljenih skupina.
+
+Drugi problem je odgovornost. Mrežna i participativna tijela rijetko imaju jasan princip opoziva. Ako odluka ispadne loša, birač ne može na sljedećim izborima kazniti vladu jer je vlada samo jedan od više sudionika, a ostali sudionici uopće nisu izloženi izbornoj sankciji. Zato uspješno novo upravljanje traži dopunska pravila koja čuvaju demokratske mehanizme odgovornosti, uključujući obvezu javne objave podloga, prag predstavničke raznolikosti u panelima i očuvanje izborne odgovornosti vlade za konačnu odluku.
+
+Jedan institucionalni odgovor na pristranost sudjelovanja zaslužuje posebnu pažnju. Umjesto da se oslanjaju na samoodabrane sudionike, neke jurisdikcije sve češće koriste nasumično izabrane građanske skupštine i panele, slično odabiru porote, u kojima slučajni odabir osigurava da sastav odražava stanovništvo po dobi, obrazovanju i mjestu stanovanja ({OECD}, 2020). Takvi nasumični mini-javni forumi pokušavaju spojiti dvije vrijednosti koje se inače sukobljavaju, otvorenost sudjelovanja i predstavničku reprezentativnost, jer ne ovise o tome tko se sam javi. Iskustvo pokazuje da dobro vođene građanske skupštine mogu donijeti promišljene preporuke i o složenim temama poput klimatske ili ustavne politike, ali i da njihova legitimnost ovisi o tome je li njihov mandat jasan i preuzima li izabrana vlast odgovornost za konačnu odluku. Participacija tako ne mora birati između inkluzivnosti i reprezentativnosti ako je institucionalno pažljivo dizajnirana.
+
+Sve te suradničke i participativne forme počivaju na jednom zajedničkom temelju, a to je povjerenje građana u institucije. Ondje gdje je povjerenje nisko, i savjetovanja i partnerstva teže grade legitimnost, a sudionici lakše sumnjaju u iskrenost postupka. Upravo tu Hrvatska ima ograničenje jer udio građana koji vjeruju nacionalnoj vladi ostaje nizak i ispod prosjeka Europske unije, premda osjetno iznad zemalja s najnižim povjerenjem poput Francuske ili Bugarske.[2] Slika koja slijedi prikazuje taj udio za odabrane zemlje.
+
+*Slika. Udio građana koji su skloni vjerovati nacionalnoj vladi (%), odabrane zemlje, jesen 2024. Zlatno je istaknuta Hrvatska, a isprekidana linija označava prosjek EU27. Izvor: Standardni Eurobarometar 102 (jesen 2024.).*
+
+## Digitalizacija i nova država
+
+Digitalizacija dodatno mijenja raspravu o novom upravljanju. Suvremena e-uprava, digitalni identitet, interoperabilne baze podataka, elektronički potpisi i digitalne javne usluge omogućuju državi da bude učinkovitija, brža i dostupnija. Takav model javne uprave sve se češće naziva **digitalnom državom**. Primjeri poput Estonije pokazuju da digitalizacija može biti snažan instrument modernizacije ako je povezana s institucionalnom reformom, jasnim pravilima i povjerenjem građana (Margetts, 2013).
+
+**Digitalna država** (*digital government*) je model javne uprave koji koristi digitalnu infrastrukturu (e-usluge, interoperabilne baze, elektronički identitet, algoritamske odluke) radi veće učinkovitosti i dostupnosti, ali uz nova pitanja o vlasništvu nad podacima, privatnosti, algoritamskoj pristranosti i demokratskoj odgovornosti (Margetts, 2013).
+
+Digitalna država ipak nije samo tehničko pitanje. Ona otvara duboka pitanja javne politike o tome tko kontrolira podatke, kako se štiti privatnost, kako se sprječava algoritamska pristranost, što se događa s građanima koji nemaju digitalne vještine i tko je odgovoran ako automatizirani sustav donese pogrešnu odluku.
+
+**Politika u praksi.**
+Europska unija na to je pitanje odgovorila Aktom o umjetnoj inteligenciji iz 2024., prvim sveobuhvatnim zakonodavnim okvirom te vrste (Parliament, 2024). Akt sustave umjetne inteligencije razvrstava prema razini rizika, a one koji se u javnoj upravi koriste za odlučivanje o pristupu socijalnim naknadama i javnim uslugama te u radu pravosuđa i policije svrstava među visokorizične. Za takve sustave propisuje obvezni ljudski nadzor, sljedivost odluka i dužnost da se pojedincu na razumljiv način obrazloži odluka koja ga se tiče. Time se odgovornost koju digitalizacija lako raspršuje vraća na konkretnu instituciju i osobu koja za sustav odgovara.
+
+Razlika između digitalizacije i digitalne transformacije može se operacionalizirati na nekoliko mjerljivih razina. Prva razina je dovršenost transakcije, koja mjeri postotak postupaka koje korisnik može u potpunosti završiti digitalno, bez odlaska u ured ili dostave papirnatog dokumenta. Druga razina je vrijeme do ishoda, koje uspoređuje trajanje postupka prije i poslije digitalizacije i razlikuje stvarno skraćivanje od pukog premještanja čekanja iz fizičkog reda u elektronički. Treća razina je integracija podataka, koja prati koliko puta korisnik mora iznova unositi iste informacije koje sustav već posjeduje u drugoj bazi. Četvrta razina, najteža za izmjeriti, jest transparentnost algoritamskih odluka, odnosno mogućnost da pojedinac dobije obrazloženje kada automatizirani sustav negativno odluči u njegovu predmetu.
+
+Sustav koji napreduje na samo prve tri razine ostaje digitalizirana birokracija. Tek kad se i četvrta razina počne aktivno mjeriti, javna usluga prelazi iz digitaliziranog oblika u digitalno preoblikovan oblik koji čuva odgovornost prema korisniku i u uvjetima automatizacije.
+
+Ako se digitalizacija shvati samo kao uvođenje novih aplikacija, bez promjene procesa i odgovornosti, ona može samo digitalizirati postojeću birokraciju. Prava digitalna transformacija nije premještanje papira na ekran, nego preoblikovanje javne usluge oko potreba građana i javnog interesa.
+
+## Tri logike suvremene javne uprave
+
+Novo upravljanje ne odbacuje tradicionalnu birokraciju u potpunosti. Naprotiv, ono prepoznaje da su zakonitost, profesionalnost, stabilnost i jednak tretman građana i dalje nužni. Iskustvo NPM-a pokazalo je da reforme koje preskaču osnovne administrativne kapacitete često ne uspijevaju. Tek na temelju funkcionalnih osnova mogu se graditi sofisticiraniji sustavi rezultata, digitalne platforme, partnerstva i mreže.
+
+Zato suvremena javna uprava sve više traži ravnotežu između tri logike. Prva je **birokratska logika**, koja naglašava zakonitost, pravila, jednakost postupanja i profesionalnu neutralnost. Druga je **menadžerska logika**, koja naglašava rezultate, učinkovitost, troškove i kvalitetu usluge. Treća je **mrežna i demokratska logika**, koja naglašava koordinaciju, uključivanje građana, suradnju i povjerenje. Dobra javna uprava ne može se osloniti samo na jednu od njih. Ako dominira samo birokratska logika, sustav postaje spor i rigidan. Ako dominira samo menadžerska, može se zanemariti javni interes. Ako dominira samo mrežna, može se izgubiti jasna odgovornost.
+
+U tom smislu prijelaz od NPM-a prema novom upravljanju ne treba promatrati kao jednostavnu zamjenu jednog modela drugim, nego kao **evoluciju** javne uprave. NPM je ispravno upozorio da javni sektor mora biti učinkovitiji i usmjereniji na rezultate. Novo upravljanje dodaje da učinkovitost nije dovoljna bez koordinacije, povjerenja, legitimnosti i uključivanja građana. Tradicionalna birokracija pak podsjeća da nijedna reforma ne može uspjeti bez zakonitosti, profesionalnosti i institucionalne stabilnosti.
+
+## Sažetak
+
+Novo upravljanje nastaje iz spoznaje da tržišni mehanizmi i menadžerska autonomija sami po sebi ne rješavaju složene, tvrdokorne probleme koji presijecaju granice pojedinih institucija. Umjesto na konkurenciju, naglasak se pomiče na koordinaciju, suradnju, partnerstva, povjerenje i upravljanje kroz mreže aktera, uz sve veću ulogu uključivanja građana i digitalizacije. Riječ je o evoluciji, a ne o pukoj zamjeni modela, jer NPM-ova briga za učinkovitost ostaje važna. Suvremena javna uprava zato traži ravnotežu triju logika, birokratske, menadžerske te mrežne i demokratske, jer prevlast bilo koje od njih nosi vlastite slabosti. Koja god ravnoteža prevlada, svaka politika na kraju mora pokazati da donosi veću korist od troška, pa se analiza okreće alatima kojima se taj učinak mjeri i vrednuje.
+
+**Vježba s podacima.**
+Pretpostavite hipotetsku riječnu slivnu cjelinu koju dijele tri općine, a u njoj se pogoršava kakvoća vode zbog poljoprivrednog otjecanja, ispusta jedne tvornice i zastarjelih sustava odvodnje. Nijedno tijelo nema isključivu nadležnost nad cijelim slivom. Za stolom su općinske vlasti, regionalna agencija za vode, udruženje poljoprivrednika, vlasnik tvornice, lokalna ekološka udruga i agencija za zaštitu okoliša.
+
+(a) Razvrstajte navedene aktere prema tome što svaki od njih kontrolira, pri čemu za svakoga navedite barem jedan resurs koji unosi u suradnju, primjerice nadležnost nad ispustom, podatke o opterećenju, financijska sredstva ili pristanak ključan za provedbu. Objasnite zašto problem nije rješiv ni čistom hijerarhijom jedne agencije ni tržišnom razmjenom među akterima.
+
+(b) Koristeći uvjete uspješnog suradničkog upravljanja iz poglavlja, procijenite za svaki uvjet je li ispunjen, djelomično ispunjen ili nedostaje, uzimajući u obzir širinu i pravila sudjelovanja, raniji saldo međusobnog djelovanja, simetriju moći, vremenski okvir te postojanje posrednika umjesto pukog participanta. Poredajte uvjete od onoga koji najviše otežava suradnju prema onome koji joj najmanje smeta.
+
+(c) Pretpostavite dvije zamišljene sheme savjetovanja. U prvoj se mišljenja aktera prikupljaju pisanim putem nakon što je plan već usvojen. U drugoj akteri sudjeluju u oblikovanju plana prije odluke, uz objavu podloga i jasan mandat. Usporedite ih i objasnite koja predstavlja stvarno, a koja tek formalno sudjelovanje te kako razlika utječe na povjerenje i legitimnost ishoda.
+
+Zašto mrežno i suradničko upravljanje može uspjeti ondje gdje i hijerarhija i tržište zakažu, i koju cijenu u smislu jasne odgovornosti i trajnog ulaganja u povjerenje takvo rješenje sa sobom nosi?
+
+## Bilješke
+
+1. Daljnje čitanje: OECD (2020), *The OECD Digital Government Policy Framework* (https://www.oecd.org/content/dam/oecd/en/publications/reports/2020/10/the-oecd-digital-government-policy-framework_11dd6aa8/f64fed2a-en.pdf).
+2. Udio povjerenja u Hrvatskoj osjetno varira među valovima Eurobarometra (primjerice oko 34 % u proljeće 2024. i 28 % u jesen 2024.), pa pojedinačnu vrijednost treba čitati kao indikativnu razinu, a ne preciznu točku.

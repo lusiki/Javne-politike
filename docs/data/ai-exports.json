@@ -1,0 +1,272 @@
+{
+  "generated": "2026-06-17",
+  "book": {
+    "title": "Sve što želite znati o državi i javnim politikama u Hrvatskoj",
+    "description": "Praktični i interaktivni udžbenik o javnim financijama, teoriji javnog izbora i javnim politikama u Hrvatskoj — uloga države, alokacija, redistribucija, institucije i reforme.",
+    "url": "https://lusiki.github.io/Javne-politike"
+  },
+  "prompt": "Ti si mentor za udžbenik „Sve što želite znati o državi i javnim politikama u Hrvatskoj”. Odgovaraj na hrvatskom, oslanjaj se samo na priloženi tekst, citiraj poglavlja i reci „ne znam” ako odgovora nema u tekstu.",
+  "full": {
+    "mdUrl": "https://lusiki.github.io/Javne-politike/llms-full.txt",
+    "mapUrl": "https://lusiki.github.io/Javne-politike/llms.txt"
+  },
+  "dios": [
+    {
+      "n": 1,
+      "label": "DIO I: KLASIČNA ANALIZA JAVNIH FINANCIJA I POLITIKA",
+      "mdUrl": "https://lusiki.github.io/Javne-politike/ai/dio-1.md"
+    },
+    {
+      "n": 2,
+      "label": "DIO II: JAVNI IZBOR – ŠTO, KAKO I ZAŠTO?",
+      "mdUrl": "https://lusiki.github.io/Javne-politike/ai/dio-2.md"
+    },
+    {
+      "n": 3,
+      "label": "DIO III: NOVA INSTITUCIONALNA I KONSTITUCIONALNA EKONOMIKA",
+      "mdUrl": "https://lusiki.github.io/Javne-politike/ai/dio-3.md"
+    },
+    {
+      "n": 4,
+      "label": "DIO IV: JAVNE FINANCIJE I JAVNE POLITIKE U PRAKSI",
+      "mdUrl": "https://lusiki.github.io/Javne-politike/ai/dio-4.md"
+    },
+    {
+      "n": 5,
+      "label": "DIO V: KAKO DO KVALITETNIJIH JAVNIH POLITIKA?",
+      "mdUrl": "https://lusiki.github.io/Javne-politike/ai/dio-5.md"
+    }
+  ],
+  "chapters": [
+    {
+      "slug": "00-uvod",
+      "title": "Uvod",
+      "dio": 0,
+      "dioLabel": "Uvod",
+      "url": "https://lusiki.github.io/Javne-politike/chapters/00-uvod.html",
+      "mdUrl": "https://lusiki.github.io/Javne-politike/ai/00-uvod.md",
+      "words": 1172,
+      "tokensApprox": 1875
+    },
+    {
+      "slug": "01-uloga-drzave",
+      "title": "Uloga države u gospodarstvu",
+      "dio": 1,
+      "dioLabel": "DIO I: KLASIČNA ANALIZA JAVNIH FINANCIJA I POLITIKA",
+      "url": "https://lusiki.github.io/Javne-politike/chapters/01-uloga-drzave.html",
+      "mdUrl": "https://lusiki.github.io/Javne-politike/ai/01-uloga-drzave.md",
+      "words": 4069,
+      "tokensApprox": 6510
+    },
+    {
+      "slug": "02-alokacijska-funkcija",
+      "title": "Alokacijska funkcija i tržišni neuspjesi",
+      "dio": 1,
+      "dioLabel": "DIO I: KLASIČNA ANALIZA JAVNIH FINANCIJA I POLITIKA",
+      "url": "https://lusiki.github.io/Javne-politike/chapters/02-alokacijska-funkcija.html",
+      "mdUrl": "https://lusiki.github.io/Javne-politike/ai/02-alokacijska-funkcija.md",
+      "words": 7691,
+      "tokensApprox": 12306
+    },
+    {
+      "slug": "03-distribucijska-funkcija",
+      "title": "Distribucijska funkcija",
+      "dio": 1,
+      "dioLabel": "DIO I: KLASIČNA ANALIZA JAVNIH FINANCIJA I POLITIKA",
+      "url": "https://lusiki.github.io/Javne-politike/chapters/03-distribucijska-funkcija.html",
+      "mdUrl": "https://lusiki.github.io/Javne-politike/ai/03-distribucijska-funkcija.md",
+      "words": 5036,
+      "tokensApprox": 8058
+    },
+    {
+      "slug": "04-stabilizacijska-funkcija",
+      "title": "Stabilizacijska funkcija",
+      "dio": 1,
+      "dioLabel": "DIO I: KLASIČNA ANALIZA JAVNIH FINANCIJA I POLITIKA",
+      "url": "https://lusiki.github.io/Javne-politike/chapters/04-stabilizacijska-funkcija.html",
+      "mdUrl": "https://lusiki.github.io/Javne-politike/ai/04-stabilizacijska-funkcija.md",
+      "words": 6081,
+      "tokensApprox": 9730
+    },
+    {
+      "slug": "05-porezi",
+      "title": "Klasična teorija oporezivanja",
+      "dio": 1,
+      "dioLabel": "DIO I: KLASIČNA ANALIZA JAVNIH FINANCIJA I POLITIKA",
+      "url": "https://lusiki.github.io/Javne-politike/chapters/05-porezi.html",
+      "mdUrl": "https://lusiki.github.io/Javne-politike/ai/05-porezi.md",
+      "words": 7225,
+      "tokensApprox": 11560
+    },
+    {
+      "slug": "06-javni-izbor",
+      "title": "Što je to javni izbor i zašto nas se tiče?",
+      "dio": 2,
+      "dioLabel": "DIO II: JAVNI IZBOR – ŠTO, KAKO I ZAŠTO?",
+      "url": "https://lusiki.github.io/Javne-politike/chapters/06-javni-izbor.html",
+      "mdUrl": "https://lusiki.github.io/Javne-politike/ai/06-javni-izbor.md",
+      "words": 4088,
+      "tokensApprox": 6541
+    },
+    {
+      "slug": "06a-teorija-igara",
+      "title": "Teorija igara i zakonodavno pregovaranje",
+      "dio": 2,
+      "dioLabel": "DIO II: JAVNI IZBOR – ŠTO, KAKO I ZAŠTO?",
+      "url": "https://lusiki.github.io/Javne-politike/chapters/06a-teorija-igara.html",
+      "mdUrl": "https://lusiki.github.io/Javne-politike/ai/06a-teorija-igara.md",
+      "words": 2695,
+      "tokensApprox": 4312
+    },
+    {
+      "slug": "07-kolektivni-izbor",
+      "title": "Kolektivni izbor",
+      "dio": 2,
+      "dioLabel": "DIO II: JAVNI IZBOR – ŠTO, KAKO I ZAŠTO?",
+      "url": "https://lusiki.github.io/Javne-politike/chapters/07-kolektivni-izbor.html",
+      "mdUrl": "https://lusiki.github.io/Javne-politike/ai/07-kolektivni-izbor.md",
+      "words": 5361,
+      "tokensApprox": 8578
+    },
+    {
+      "slug": "08-stranke-izbori",
+      "title": "Političke stranke i izbori",
+      "dio": 2,
+      "dioLabel": "DIO II: JAVNI IZBOR – ŠTO, KAKO I ZAŠTO?",
+      "url": "https://lusiki.github.io/Javne-politike/chapters/08-stranke-izbori.html",
+      "mdUrl": "https://lusiki.github.io/Javne-politike/ai/08-stranke-izbori.md",
+      "words": 3635,
+      "tokensApprox": 5816
+    },
+    {
+      "slug": "09-interesne-skupine",
+      "title": "Interesne skupine",
+      "dio": 2,
+      "dioLabel": "DIO II: JAVNI IZBOR – ŠTO, KAKO I ZAŠTO?",
+      "url": "https://lusiki.github.io/Javne-politike/chapters/09-interesne-skupine.html",
+      "mdUrl": "https://lusiki.github.io/Javne-politike/ai/09-interesne-skupine.md",
+      "words": 4736,
+      "tokensApprox": 7578
+    },
+    {
+      "slug": "10-birokracija",
+      "title": "Dva pogleda na birokraciju",
+      "dio": 2,
+      "dioLabel": "DIO II: JAVNI IZBOR – ŠTO, KAKO I ZAŠTO?",
+      "url": "https://lusiki.github.io/Javne-politike/chapters/10-birokracija.html",
+      "mdUrl": "https://lusiki.github.io/Javne-politike/ai/10-birokracija.md",
+      "words": 4571,
+      "tokensApprox": 7314
+    },
+    {
+      "slug": "11-institucionalna-ekonomika",
+      "title": "Nova institucionalna ekonomika",
+      "dio": 3,
+      "dioLabel": "DIO III: NOVA INSTITUCIONALNA I KONSTITUCIONALNA EKONOMIKA",
+      "url": "https://lusiki.github.io/Javne-politike/chapters/11-institucionalna-ekonomika.html",
+      "mdUrl": "https://lusiki.github.io/Javne-politike/ai/11-institucionalna-ekonomika.md",
+      "words": 4815,
+      "tokensApprox": 7704
+    },
+    {
+      "slug": "12-konstitucionalna-ekonomika",
+      "title": "Konstitucionalna (ustavna) ekonomika",
+      "dio": 3,
+      "dioLabel": "DIO III: NOVA INSTITUCIONALNA I KONSTITUCIONALNA EKONOMIKA",
+      "url": "https://lusiki.github.io/Javne-politike/chapters/12-konstitucionalna-ekonomika.html",
+      "mdUrl": "https://lusiki.github.io/Javne-politike/ai/12-konstitucionalna-ekonomika.md",
+      "words": 4770,
+      "tokensApprox": 7632
+    },
+    {
+      "slug": "13-instrumenti",
+      "title": "Instrumenti državne intervencije",
+      "dio": 4,
+      "dioLabel": "DIO IV: JAVNE FINANCIJE I JAVNE POLITIKE U PRAKSI",
+      "url": "https://lusiki.github.io/Javne-politike/chapters/13-instrumenti.html",
+      "mdUrl": "https://lusiki.github.io/Javne-politike/ai/13-instrumenti.md",
+      "words": 4100,
+      "tokensApprox": 6560
+    },
+    {
+      "slug": "14-javna-potrosnja",
+      "title": "Kako država troši naš novac?",
+      "dio": 4,
+      "dioLabel": "DIO IV: JAVNE FINANCIJE I JAVNE POLITIKE U PRAKSI",
+      "url": "https://lusiki.github.io/Javne-politike/chapters/14-javna-potrosnja.html",
+      "mdUrl": "https://lusiki.github.io/Javne-politike/ai/14-javna-potrosnja.md",
+      "words": 6328,
+      "tokensApprox": 10125
+    },
+    {
+      "slug": "15-porezi-praksa",
+      "title": "Porezni sustavi u praksi i budućnost oporezivanja",
+      "dio": 4,
+      "dioLabel": "DIO IV: JAVNE FINANCIJE I JAVNE POLITIKE U PRAKSI",
+      "url": "https://lusiki.github.io/Javne-politike/chapters/15-porezi-praksa.html",
+      "mdUrl": "https://lusiki.github.io/Javne-politike/ai/15-porezi-praksa.md",
+      "words": 7719,
+      "tokensApprox": 12350
+    },
+    {
+      "slug": "16-eu-javne-financije",
+      "title": "Javne financije Europske unije",
+      "dio": 4,
+      "dioLabel": "DIO IV: JAVNE FINANCIJE I JAVNE POLITIKE U PRAKSI",
+      "url": "https://lusiki.github.io/Javne-politike/chapters/16-eu-javne-financije.html",
+      "mdUrl": "https://lusiki.github.io/Javne-politike/ai/16-eu-javne-financije.md",
+      "words": 8637,
+      "tokensApprox": 13819
+    },
+    {
+      "slug": "17-drzavni-neuspjesi",
+      "title": "Državni neuspjesi i prepreke kvalitetnim javnim politikama",
+      "dio": 5,
+      "dioLabel": "DIO V: KAKO DO KVALITETNIJIH JAVNIH POLITIKA?",
+      "url": "https://lusiki.github.io/Javne-politike/chapters/17-drzavni-neuspjesi.html",
+      "mdUrl": "https://lusiki.github.io/Javne-politike/ai/17-drzavni-neuspjesi.md",
+      "words": 4843,
+      "tokensApprox": 7749
+    },
+    {
+      "slug": "18-novi-javni-menadzment",
+      "title": "Novi javni menadžment",
+      "dio": 5,
+      "dioLabel": "DIO V: KAKO DO KVALITETNIJIH JAVNIH POLITIKA?",
+      "url": "https://lusiki.github.io/Javne-politike/chapters/18-novi-javni-menadzment.html",
+      "mdUrl": "https://lusiki.github.io/Javne-politike/ai/18-novi-javni-menadzment.md",
+      "words": 3848,
+      "tokensApprox": 6157
+    },
+    {
+      "slug": "19-novo-upravljanje",
+      "title": "Od novog javnog menadžmenta prema novom upravljanju",
+      "dio": 5,
+      "dioLabel": "DIO V: KAKO DO KVALITETNIJIH JAVNIH POLITIKA?",
+      "url": "https://lusiki.github.io/Javne-politike/chapters/19-novo-upravljanje.html",
+      "mdUrl": "https://lusiki.github.io/Javne-politike/ai/19-novo-upravljanje.md",
+      "words": 3278,
+      "tokensApprox": 5245
+    },
+    {
+      "slug": "20-cba-evaluacija",
+      "title": "Cost-benefit analiza i evaluacija javnih politika",
+      "dio": 5,
+      "dioLabel": "DIO V: KAKO DO KVALITETNIJIH JAVNIH POLITIKA?",
+      "url": "https://lusiki.github.io/Javne-politike/chapters/20-cba-evaluacija.html",
+      "mdUrl": "https://lusiki.github.io/Javne-politike/ai/20-cba-evaluacija.md",
+      "words": 4071,
+      "tokensApprox": 6514
+    },
+    {
+      "slug": "21-reforme",
+      "title": "Reforme u javnom sektoru",
+      "dio": 5,
+      "dioLabel": "DIO V: KAKO DO KVALITETNIJIH JAVNIH POLITIKA?",
+      "url": "https://lusiki.github.io/Javne-politike/chapters/21-reforme.html",
+      "mdUrl": "https://lusiki.github.io/Javne-politike/ai/21-reforme.md",
+      "words": 4302,
+      "tokensApprox": 6883
+    }
+  ]
+}
