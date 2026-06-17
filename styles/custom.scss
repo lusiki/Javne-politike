@@ -2346,6 +2346,25 @@ main table:has(th:nth-child(5)) {
   height: auto;
 }
 
+// OJS grafovi u svijetlom načinu — papirnata (cream) podloga.
+// Observable Plot na SVG-korijen stavlja vlastiti `background: white`, pa
+// grafovi bez eksplicitnog `style.background` iskaču kao bijeli pravokutnici
+// na kremastoj stranici. Ovo je svijetli parnjak tamnomodnom pravilu u
+// _dark.scss (izvjestaj-estetski H5): jedinstveno mjesto koje svim Plot
+// SVG-ovima daje boju pozadine knjige. Idempotentno za grafove koji već
+// nose inline `background:#F2EDE3`. Geometrija (padding/radius) usklađena s
+// tamnim pravilom da oba načina izgledaju identično, mijenja se samo boja.
+// _dark.scss pravilo nadjačava ovo u tamnom načinu; PDF-blizance (statički R,
+// bijeli po dogovoru za tisak) ne dira.
+.cell-output-display > svg,
+.cell-output-display > figure > svg,
+.cell-output-display svg[class^="plot-"] {
+  background: #F2EDE3 !important;   /* paper */
+  border-radius: 3px;
+  padding: 8px;
+  box-sizing: border-box;
+}
+
 // Observable Inputs (klizači, forme) ne smiju gurati stupac
 .observablehq,
 form.observablehq--input,
