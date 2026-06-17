@@ -11,6 +11,9 @@ project:
     - images/apple-touch-icon.png
     - pdf/Prirucnik.pdf
     - robots.txt
+    # Slika za dijeljenje linka (OG/Twitter image: ph3.jpg) — eksplicitno
+    # navedena kao resurs da se sigurno kopira u docs/ pri renderu.
+    - ph3.jpg
 
 book:
   title: "Sve što želite znati o državi i javnim politikama u Hrvatskoj"
@@ -178,10 +181,14 @@ crossref:
 format:
   html:
     # Social/share metadata (izvjestaj-estetski M15) — dijeljeni link dobiva
-    # naslov, opis i cover umjesto golog URL-a.
-    open-graph: true
+    # naslov, opis i sliku umjesto golog URL-a. Slika dijeljenja je ph3.jpg
+    # (eksplicitni image: nadjačava cover-image samo za OG/Twitter — vidljivi
+    # cover i PDF naslovnica i dalje koriste cover.png).
+    open-graph:
+      image: ph3.jpg
     twitter-card:
       card-style: summary_large_image
+      image: ph3.jpg
     theme:
       light:
         - cosmo
