@@ -19,12 +19,9 @@
 # U CI-ju se pokreće automatski kao Quarto `pre-render` hook (vidi _quarto.yml).
 # ---------------------------------------------------------------------------
 
-suppressMessages({
-  library(yaml)
-  library(jsonlite)
-  library(stringr)
-  library(stringi)
-})
+# Pakete učitavamo unutar main() (vidi dno) da nedostatak paketa u CI-ju ne sruši
+# `quarto render` — pre-render hook tada samo preskoči izvoz, a posluže se već
+# urezane (committane) datoteke u docs/ai (kao i PDF).
 
 # --- konfiguracija (uredi ovdje; ovo su autorske odluke) -------------------
 SITE_URL   <- "https://lusiki.github.io/Javne-politike"
@@ -50,6 +47,13 @@ DATE_STR     <- format(Sys.Date())
 
 # Cijeli posao u tryCatch-u: kao pre-render hook NIKAD ne smije srušiti render.
 main <- function() {
+
+  suppressMessages({
+    library(yaml)
+    library(jsonlite)
+    library(stringr)
+    library(stringi)
+  })
 
   # --- 1. redoslijed poglavlja + DIO mapiranje iz _quarto.yml --------------
   book <- yaml::read_yaml(QUARTO_YML)$book$chapters

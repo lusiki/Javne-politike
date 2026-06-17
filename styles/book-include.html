@@ -1,18 +1,22 @@
 <style>
-/* "Pitaj AI o ovom poglavlju" — kompaktni padajući izbornik uz naslov poglavlja */
-.ai-cta { margin: .4rem 0 1.4rem; font-family: "Public Sans", system-ui, sans-serif; }
+/* "Pitaj AI o ovom poglavlju" — kompaktni padajući izbornik uz naslov poglavlja.
+   Mono, minimalan registar, usklađen s uci-s-ai.qmd; verdigris radi i u tamnom modu. */
+.ai-cta { margin: .5rem 0 1.5rem;
+  font-family: "IBM Plex Mono", ui-monospace, "SF Mono", Menlo, monospace; }
 .ai-cta > summary { display: inline-flex; align-items: center; gap: .4rem; cursor: pointer;
-  list-style: none; font-size: .9rem; font-weight: 600; color: #335043;
-  background: #FBF8F1; border: 1px solid #4A6B5C; border-radius: 9px;
-  padding: .42rem .8rem; width: max-content; transition: background .15s; }
+  list-style: none; font-size: .8rem; font-weight: 500; letter-spacing: .005em;
+  color: #4A6B5C; background: transparent; border: 1px solid rgba(74,107,92,0.5);
+  border-radius: 6px; padding: .45rem .8rem; width: max-content;
+  transition: background .15s, color .15s, border-color .15s; }
 .ai-cta > summary::-webkit-details-marker { display: none; }
-.ai-cta > summary:hover { background: #EAF0EC; }
-.ai-cta[open] > summary { background: #EAF0EC; }
+.ai-cta > summary:hover,
+.ai-cta[open] > summary { background: #4A6B5C; color: #F2EDE3; border-color: #4A6B5C; }
 .ai-cta-menu { display: flex; flex-wrap: wrap; gap: .45rem; margin-top: .55rem; }
-.ai-cta-menu a { font-size: .85rem; font-weight: 600; text-decoration: none;
-  color: #335043; background: #FBF8F1; border: 1px solid #D8CFBE; border-radius: 8px;
-  padding: .4rem .75rem; line-height: 1.2; transition: border-color .15s, background .15s; }
-.ai-cta-menu a:hover { border-color: #4A6B5C; background: #EAF0EC; }
+.ai-cta-menu a { font-family: inherit; font-size: .76rem; font-weight: 500;
+  text-decoration: none; color: #4A6B5C; background: transparent;
+  border: 1px solid rgba(74,107,92,0.5); border-radius: 6px; padding: .4rem .72rem;
+  line-height: 1.2; transition: background .15s, border-color .15s; }
+.ai-cta-menu a:hover { background: rgba(74,107,92,0.12); border-color: #4A6B5C; }
 </style>
 <script>
 (function () {
