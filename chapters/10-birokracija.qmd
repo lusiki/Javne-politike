@@ -294,6 +294,75 @@ Srodan fenomen jest **regulatorno zarobljavanje**, u kojemu regulator osnovan ra
 
 Rasprava o birokraciji često se pojednostavljuje na pitanje treba li država imati „više" ili „manje" administracije. Ključni problem nije sama veličina birokracije, nego njezina kvaliteta, učinkovitost i odgovornost. Moderna država ne može funkcionirati bez profesionalne javne uprave. Netko mora prikupljati poreze, provoditi zakone, organizirati javne usluge, nadzirati tržišta, upravljati krizama i osiguravati kontinuitet države neovisno o promjenama političke vlasti.
 
+Prije nego što napustimo pitanje veličine, vrijedi vidjeti kolika je hrvatska javna uprava u usporedbi s drugima. Mjereno udjelom zaposlenih u općoj državi u ukupnoj zaposlenosti, Hrvatska je iznad prosjeka OECD-a i bliže nordijskim zemljama nego onima s malom upravom poput Njemačke ili Japana. Sama brojka zato ne potvrđuje uobičajenu sliku o premaloj državi, nego pomiče pitanje s veličine na to što ta uprava isporučuje. Slika koja slijedi prikazuje taj udio za odabrane zemlje.
+
+::: {.content-visible when-format="html"}
+```{ojs}
+//| echo: false
+//| label: fig-javna-zaposlenost
+//| fig-cap: "Zaposlenost u općoj državi kao udio u ukupnoj zaposlenosti, odabrane zemlje, 2023. (%). Zlatno je istaknuta Hrvatska, a isprekidana linija označava prosjek OECD-a. Izvor: OECD, Government at a Glance 2025."
+//| fig-alt: "Vodoravni stupčasti graf udjela zaposlenih u općoj državi za devet zemalja. Norveška je na vrhu s 30,1 %, Japan na dnu s 4,9 %. Hrvatska je istaknuta zlatno s 22,8 %, iznad prosjeka OECD-a od 18,4 %."
+{
+  const data = [
+    {z:"Norveška", v:30.1, grp:"ostalo"},
+    {z:"Švedska", v:28.1, grp:"ostalo"},
+    {z:"Danska", v:27.3, grp:"ostalo"},
+    {z:"Finska", v:25.2, grp:"ostalo"},
+    {z:"Hrvatska", v:22.8, grp:"HR"},
+    {z:"Francuska", v:20.7, grp:"ostalo"},
+    {z:"Italija", v:13.7, grp:"ostalo"},
+    {z:"Njemačka", v:11.5, grp:"ostalo"},
+    {z:"Japan", v:4.9, grp:"ostalo"}
+  ];
+  return Plot.plot({
+    width: 780, height: 430, marginLeft: 86, marginRight: 50, marginTop: 28, marginBottom: 46,
+    style: {fontSize: "12px", fontFamily: "Public Sans, system-ui, sans-serif", color: "#3A332D"},
+    x: {label: "Zaposleni u općoj državi (% ukupne zaposlenosti) →", domain: [0, 33], grid: true},
+    y: {label: null, domain: data.map(d => d.z)},
+    color: {domain: ["ostalo","HR"], range: ["#4A5568","#C8942D"]},
+    marks: [
+      Plot.barX(data, {x: "v", y: "z", fill: "grp", tip: true}),
+      Plot.ruleX([18.4], {stroke: "#8C8C8C", strokeDasharray: "5,4", strokeWidth: 1.5}),
+      Plot.text([{z: "Norveška"}], {x: 18.4, y: "z", text: ["OECD 18,4 %"], dy: -12, dx: 4, textAnchor: "start", fontSize: 10, fill: "#6B6357"}),
+      Plot.text(data, {x: "v", y: "z", text: d => d.v.toFixed(1).replace(".", ","), dx: 4, textAnchor: "start", fontSize: 10, fill: "#3A332D"})
+    ]
+  });
+}
+```
+:::
+
+::: {.content-visible when-format="pdf"}
+```{r}
+#| label: fig-javna-zaposlenost-print
+#| echo: false
+#| fig-cap: "Zaposlenost u općoj državi kao udio u ukupnoj zaposlenosti, odabrane zemlje, 2023. (%). Zlatno je istaknuta Hrvatska, a isprekidana linija označava prosjek OECD-a. Izvor: OECD, Government at a Glance 2025."
+#| fig-alt: "Vodoravni stupčasti graf udjela zaposlenih u općoj državi; Norveška 30,1 %, Japan 4,9 %, Hrvatska istaknuta zlatno s 22,8 %, iznad prosjeka OECD-a od 18,4 %."
+#| fig-width: 7.8
+#| fig-height: 4.3
+source("R/setup.R")
+
+jz <- data.frame(
+  z = c("Norveška","Švedska","Danska","Finska","Hrvatska","Francuska","Italija","Njemačka","Japan"),
+  v = c(30.1, 28.1, 27.3, 25.2, 22.8, 20.7, 13.7, 11.5, 4.9),
+  grp = c("ostalo","ostalo","ostalo","ostalo","HR","ostalo","ostalo","ostalo","ostalo"),
+  stringsAsFactors = FALSE
+)
+jz$z <- factor(jz$z, levels = rev(jz$z))
+
+ggplot(jz, aes(v, z, fill = grp)) +
+  geom_col(width = 0.72) +
+  geom_vline(xintercept = 18.4, linetype = "dashed", color = "#8C8C8C", linewidth = 0.5) +
+  annotate("text", x = 18.4, y = 9, label = "OECD 18,4", hjust = -0.05, vjust = 0,
+           size = 2.8, color = "#6B6357") +
+  geom_text(aes(label = sub("\\.", ",", sprintf("%.1f", v))),
+            hjust = -0.2, size = 2.9, color = "#3A332D") +
+  scale_fill_manual(values = c("ostalo" = "#4A5568", "HR" = "#C8942D"), guide = "none") +
+  scale_x_continuous(limits = c(0, 33)) +
+  labs(x = "Zaposleni u općoj državi (% ukupne zaposlenosti)", y = NULL) +
+  theme_pubfin()
+```
+:::
+
 Klasičan, weberovski pogled podsjeća nas da je birokracija važan civilizacijski napredak. Ona štiti građane od samovolje, klijentelizma i nejednakog tretmana. S druge strane, teorija javnog izbora upozorava da birokraciju ne smijemo idealizirati jer javne institucije djeluju unutar sustava poticaja i mogu težiti većim proračunima, širim nadležnostima i očuvanju vlastitog statusa.
 
 Dobra javna uprava zato mora spojiti **profesionalnost** i **odgovornost**. Mora biti dovoljno stabilna da ne postane politički plijen, ali dovoljno otvorena da ne postane samodovoljna. Mora poštovati pravila, ali ne smije zaboraviti rezultate. Zato cilj reformi ne bi trebao biti jednostavno „rezanje birokracije", nego stvaranje bolje birokracije, stručne, digitalizirane, dostupne, brze, transparentne i usmjerene prema građanima.

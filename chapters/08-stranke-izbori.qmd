@@ -140,6 +140,73 @@ U Hrvatskoj je ovaj mehanizam dugo objašnjavao programsku sličnost dviju najve
 
 [^wp-ch07a]: Daljnje čitanje: Lee, Moretti i Butler (2004), [*Do Voters Affect or Elect Policies? Evidence from the U.S. House*](https://www.nber.org/papers/w9315) (NBER WP 9315).
 
+Stvarni razmještaj hrvatskih stranaka na osi ljevica–desnica potvrđuje obje strane te priče. Procjene stručnjaka iz Chapel Hill Expert Surveya smještaju dvije najveće stranke razmjerno blizu sredine, HDZ tek desno od centra, a SDP lijevo od njega, dok novije stranke šire raspon prema krajevima, od Možemo na ljevici do Domovinskog pokreta na desnici. Slika koja slijedi prikazuje te procjene na ljestvici od 0 (krajnja ljevica) do 10 (krajnja desnica).
+
+::: {.content-visible when-format="html"}
+```{ojs}
+//| echo: false
+//| label: fig-stranke-lr
+//| fig-cap: "Ideološki položaj hrvatskih stranaka na ljestvici ljevica–desnica (0 = krajnja ljevica, 10 = krajnja desnica), prema procjeni stručnjaka. Dvije najveće stranke (HDZ, SDP) bliže su sredini, dok novije stranke šire raspon prema krajevima. Izvor: Chapel Hill Expert Survey (CHES), val 2024. (varijabla lrgen)."
+//| fig-alt: "Točkasti graf koji smješta sedam hrvatskih stranaka na vodoravnu os od 0 do 10. Možemo! je na 2,3, SDP na 3,7, IDS na 4,0, Centar na 4,7, HDZ na 6,4, Most na 7,8 i Domovinski pokret na 8,9; isprekidana crta označava sredinu na 5,0."
+{
+  const data = [
+    {stranka:"Možemo!", lr:2.3, blok:"Ljevica"},
+    {stranka:"SDP", lr:3.7, blok:"Ljevica"},
+    {stranka:"IDS", lr:4.0, blok:"Ljevica"},
+    {stranka:"Centar", lr:4.7, blok:"Centar"},
+    {stranka:"HDZ", lr:6.4, blok:"Desnica"},
+    {stranka:"Most", lr:7.8, blok:"Desnica"},
+    {stranka:"Domovinski pokret", lr:8.9, blok:"Desnica"}
+  ];
+  const order = data.slice().sort((a, b) => b.lr - a.lr).map(d => d.stranka);
+  return Plot.plot({
+    width: 760, height: 360,
+    marginLeft: 132, marginRight: 44, marginTop: 30, marginBottom: 46,
+    style: {fontSize: "12px", fontFamily: "Public Sans, system-ui, sans-serif", color: "#3A332D"},
+    x: {label: "Ljevica ← ideološka os (0–10) → Desnica", domain: [0, 10], grid: true, ticks: [0,2,4,6,8,10]},
+    y: {label: null, domain: order},
+    color: {domain: ["Ljevica","Centar","Desnica"], range: ["#4A6B5C","#6B6357","#C8985E"], legend: true},
+    marks: [
+      Plot.ruleX([5], {stroke: "#6B1F26", strokeDasharray: "5,4", strokeWidth: 1.2}),
+      Plot.text([{x: 5, y: order[0], t: "sredina (5,0)"}], {x: "x", y: "y", text: "t", dy: -16, fontSize: 10, fill: "#6B1F26", textAnchor: "middle"}),
+      Plot.dot(data, {x: "lr", y: "stranka", fill: "blok", r: 7, stroke: "white", strokeWidth: 1, tip: true}),
+      Plot.text(data, {x: "lr", y: "stranka", text: d => d.lr.toFixed(1).replace(".", ","), dx: 13, textAnchor: "start", fontSize: 10, fill: "#3A332D"})
+    ]
+  });
+}
+```
+:::
+
+::: {.content-visible when-format="pdf"}
+```{r}
+#| label: fig-stranke-lr-print
+#| echo: false
+#| fig-cap: "Ideološki položaj hrvatskih stranaka na ljestvici ljevica–desnica (0 = krajnja ljevica, 10 = krajnja desnica), prema procjeni stručnjaka. Izvor: Chapel Hill Expert Survey (CHES), val 2024. (varijabla lrgen)."
+#| fig-alt: "Točkasti graf koji smješta sedam hrvatskih stranaka na os od 0 do 10; Možemo! 2,3, SDP 3,7, IDS 4,0, Centar 4,7, HDZ 6,4, Most 7,8, Domovinski pokret 8,9; isprekidana crta na 5,0."
+#| fig-width: 7.6
+#| fig-height: 3.8
+source("R/setup.R")
+
+df <- data.frame(
+  stranka = c("Možemo!","SDP","IDS","Centar","HDZ","Most","Domovinski pokret"),
+  lr      = c(2.3, 3.7, 4.0, 4.7, 6.4, 7.8, 8.9),
+  blok    = c("Ljevica","Ljevica","Ljevica","Centar","Desnica","Desnica","Desnica"),
+  stringsAsFactors = FALSE
+)
+df$stranka <- factor(df$stranka, levels = df$stranka[order(df$lr)])
+
+ggplot(df, aes(lr, stranka, color = blok)) +
+  geom_vline(xintercept = 5, color = "#6B1F26", linetype = "22", linewidth = 0.5) +
+  geom_point(size = 3.2) +
+  geom_text(aes(label = sub("\\.", ",", sprintf("%.1f", lr))),
+            hjust = -0.4, size = 2.9, color = "#3A332D") +
+  scale_color_manual(values = c("Ljevica" = "#4A6B5C", "Centar" = "#6B6357", "Desnica" = "#C8985E"), name = NULL) +
+  scale_x_continuous(limits = c(0, 10.5), breaks = seq(0, 10, 2)) +
+  labs(x = "Ljevica  <-  ideoloska os (0-10)  ->  Desnica", y = NULL) +
+  theme_pubfin()
+```
+:::
+
 ## Kako se stranke natječu za glas
 
 Stranke nisu pasivni prenositelji biračkih preferencija, nego aktivni poduzetnici koji oblikuju ponudu. Glavna je strategija **diferencijacija ponude** u kojoj stranke ne nude samo tehničke politike, nego cjelovite „brendove" koji kombiniraju ekonomske mjere, identitetske signale i emocionalne apele. Takvi brendovi služe kao informacijski prečaci biračima koji nemaju poticaja ulagati velik trud u analizu programa.

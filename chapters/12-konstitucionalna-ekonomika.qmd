@@ -110,6 +110,76 @@ Iz tih nalaza proizlazi praktična pouka koja nije ideološka. Pitanje nije treb
 
 Važno je pritom naglasiti da pravila ne smiju biti potpuno slijepa na okolnosti. Fiskalna politika mora imati prostor za reakciju u velikim krizama. Zato dobro pravilo nije ono koje potpuno ukida fleksibilnost, nego ono koje dopušta odstupanja pod jasno definiranim uvjetima, uz transparentnost, obrazloženje i plan povratka na održivu putanju. Cilj nije mehanička politika, nego **vjerodostojna** politika.
 
+Snaga nacionalnih fiskalnih pravila uvelike se razlikuje među zemljama, pa je Europska komisija razvila indeks koji ih svodi na jednu ljestvicu. Hrvatska je oko ulaska u Uniju izgradila razmjerno snažan okvir fiskalnih pravila, pa se na toj ljestvici smješta u gornju polovicu članica, iznad primjerice Njemačke i Nizozemske, a znatno iznad Italije i Slovenije. Sama snaga pravila na papiru, kako pokazuje švicarski primjer, ipak ne jamči i njihovu dosljednu provedbu. Slika koja slijedi prikazuje indeks snage fiskalnih pravila za odabrane članice.
+
+<!-- TODO(coauthor) Indeks snage fiskalnih pravila: prikazane su vrijednosti iz vintagea Europske komisije oko 2012., a Hrvatska (≈1,4) iz 2013. (hrvatska FRI literatura prema metodologiji EK). EK u međuvremenu objavljuje ažurirani Fiscal Rules Strength Index (1990.–2024.). Milan/Petra/Luka mogu zamijeniti najnovijim vrijednostima i potvrditi točan izvor za HR prije finalne verzije. -->
+
+::: {.content-visible when-format="html"}
+```{ojs}
+//| echo: false
+//| label: fig-fiskalna-pravila
+//| fig-cap: "Indeks snage nacionalnih fiskalnih pravila, odabrane članice EU (standardizirano oko prosjeka EU; više znači stroža i obvezujućija pravila). Vrijednosti su indikativne i odnose se na razdoblje oko 2012.–2013. (Hrvatska 2013.). Izvor: Europska komisija, baza fiskalnog upravljanja; izračun za Hrvatsku prema metodologiji EK."
+//| fig-alt: "Vodoravni stupčasti graf indeksa snage fiskalnih pravila za deset članica EU. Španjolska je na vrhu s 3,3, Slovenija na dnu s −0,8. Hrvatska je istaknuta zlatno s 1,4, u gornjoj polovici, iznad okomite crte koja označava prosjek EU na nuli."
+{
+  const data = [
+    {z:"Španjolska", v:3.3, grp:"ostalo"},
+    {z:"Švedska", v:2.5, grp:"ostalo"},
+    {z:"Bugarska", v:2.2, grp:"ostalo"},
+    {z:"Poljska", v:1.9, grp:"ostalo"},
+    {z:"Francuska", v:1.6, grp:"ostalo"},
+    {z:"Hrvatska", v:1.4, grp:"HR"},
+    {z:"Njemačka", v:1.4, grp:"ostalo"},
+    {z:"Nizozemska", v:1.2, grp:"ostalo"},
+    {z:"Italija", v:-0.2, grp:"ostalo"},
+    {z:"Slovenija", v:-0.8, grp:"ostalo"}
+  ];
+  return Plot.plot({
+    width: 780, height: 440, marginLeft: 92, marginRight: 50, marginTop: 28, marginBottom: 46,
+    style: {fontSize: "12px", fontFamily: "Public Sans, system-ui, sans-serif", color: "#3A332D"},
+    x: {label: "Indeks snage fiskalnih pravila (standardizirano) →", domain: [-1.5, 3.7], grid: true},
+    y: {label: null, domain: data.map(d => d.z)},
+    color: {domain: ["ostalo","HR"], range: ["#4A5568","#C8942D"]},
+    marks: [
+      Plot.barX(data, {x: "v", y: "z", fill: "grp", tip: true}),
+      Plot.ruleX([0], {stroke: "#6B6357", strokeWidth: 1.2}),
+      Plot.text([{z: "Španjolska"}], {x: 0, y: "z", text: ["prosjek EU"], dy: -12, dx: 3, textAnchor: "start", fontSize: 10, fill: "#6B6357"}),
+      Plot.text(data, {x: "v", y: "z", text: d => d.v.toFixed(1).replace(".", ","), dx: d => d.v >= 0 ? 4 : -4, textAnchor: d => d.v >= 0 ? "start" : "end", fontSize: 10, fill: "#3A332D"})
+    ]
+  });
+}
+```
+:::
+
+::: {.content-visible when-format="pdf"}
+```{r}
+#| label: fig-fiskalna-pravila-print
+#| echo: false
+#| fig-cap: "Indeks snage nacionalnih fiskalnih pravila, odabrane članice EU (standardizirano oko prosjeka EU; više znači stroža pravila). Vrijednosti indikativne, oko 2012.–2013. (Hrvatska 2013.). Izvor: Europska komisija, baza fiskalnog upravljanja; izračun za Hrvatsku prema metodologiji EK."
+#| fig-alt: "Vodoravni stupčasti graf indeksa snage fiskalnih pravila; Španjolska 3,3, Slovenija −0,8, Hrvatska istaknuta zlatno s 1,4 u gornjoj polovici."
+#| fig-width: 7.8
+#| fig-height: 4.4
+source("R/setup.R")
+
+fr <- data.frame(
+  z = c("Španjolska","Švedska","Bugarska","Poljska","Francuska","Hrvatska","Njemačka","Nizozemska","Italija","Slovenija"),
+  v = c(3.3, 2.5, 2.2, 1.9, 1.6, 1.4, 1.4, 1.2, -0.2, -0.8),
+  grp = c("ostalo","ostalo","ostalo","ostalo","ostalo","HR","ostalo","ostalo","ostalo","ostalo"),
+  stringsAsFactors = FALSE
+)
+fr$z <- factor(fr$z, levels = rev(fr$z))
+
+ggplot(fr, aes(v, z, fill = grp)) +
+  geom_col(width = 0.72) +
+  geom_vline(xintercept = 0, color = "#6B6357", linewidth = 0.5) +
+  geom_text(aes(label = sub("\\.", ",", sprintf("%.1f", v)), hjust = ifelse(v >= 0, -0.2, 1.2)),
+            size = 2.9, color = "#3A332D") +
+  scale_fill_manual(values = c("ostalo" = "#4A5568", "HR" = "#C8942D"), guide = "none") +
+  scale_x_continuous(limits = c(-1.5, 3.7)) +
+  labs(x = "Indeks snage fiskalnih pravila (standardizirano)", y = NULL) +
+  theme_pubfin()
+```
+:::
+
 ## Neovisnost središnje banke kao rješenje vremenske nedosljednosti
 
 Monetarni primjer vremenske nedosljednosti zaslužuje poseban tretman jer je upravo na njemu ustavna ekonomika ponudila svoje najuvjerljivije rješenje. Problem nije u tome što su nositelji monetarne politike loši, nego u tome što vlada koja kontrolira novac uvijek ima poticaj na kratkoročno iznenađenje. Robert Barro i David Gordon pokazali su da pod diskrecijom takav ishod nije slučajan nego ravnotežan, jer racionalni akteri unaprijed predviđaju vladin poticaj na iznenađenje i u svoja inflacijska očekivanja ugrađuju višu inflaciju, zbog čega nastaje trajna inflacijska pristranost koju nitko nije birao, a zaposlenost se ipak ne poveća [@barrogordon1983]. Diskrecija tako proizvodi najgore od obaju svjetova, visoku inflaciju bez stvarne koristi.

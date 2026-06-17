@@ -32,6 +32,78 @@ Iz toga slijedi važan empirijski obrazac. Skupine koje uz lobiranje nude i opip
 
 Olsonov pesimizam o velikim skupinama ipak nije posljednja riječ. Kasnija istraživanja kolektivnog djelovanja, osobito rad Elinor Ostrom o upravljanju zajedničkim resursima, pokazala su da se i skupine bez selektivnih poticaja ponekad uspješno samoorganiziraju kada su ispunjeni određeni uvjeti [@ostrom1990]. Ključni su jasne granice skupine, ponovljena interakcija u kojoj se prepoznaje tko doprinosi a tko ne, postupno izgrađeno povjerenje te vlastiti mehanizmi nadzora i sankcioniranja prijestupnika. Iz toga slijedi da problem slobodnog jahača nije nepremostiv zakon, nego ishod koji ovisi o institucionalnom okviru unutar kojega skupina djeluje. Velike i raspršene skupine teško se organiziraju ne zato što je to nemoguće, nego zato što im najčešće nedostaju upravo oni uvjeti koje koncentrirane skupine imaju gotovo automatski.
 
+Sindikati su najjasniji primjer te logike. Koliko će se radnika učlaniti ovisi o selektivnim poticajima, dok doseg kolektivnih ugovora ovisi i o tome šire li ih institucije na sve zaposlene. Tamo gdje članstvo nosi privatnu korist, primjerice u nordijskim zemljama gdje sindikati sudjeluju u isplati naknada za nezaposlene, gustoća je visoka. Tamo gdje se izboreni ugovor zakonski proširuje na sve, kao u Francuskoj, pojedinac dobiva korist i bez učlanjenja, pa gustoća pada na svega desetak posto iako pokrivenost ostaje gotovo potpuna. Slika koja slijedi prikazuje taj razmak između učlanjenosti i pokrivenosti, a Hrvatska se po objema mjerama nalazi u sredini.
+
+::: {.content-visible when-format="html"}
+```{ojs}
+//| echo: false
+//| label: fig-sindikati
+//| fig-cap: "Sindikalna gustoća (udio učlanjenih) i pokrivenost kolektivnim ugovorima (udio obuhvaćenih), odabrane zemlje, % zaposlenih. Razmak između dviju točaka mjera je slobodnog jahanja, najveći u Francuskoj. Izvor: OECD/AIAS ICTWSS baza; vrijednosti su najnovije dostupne po zemlji (Hrvatska 2014.–2018., Njemačka pokrivenost približno)."
+//| fig-alt: "Graf s dvjema točkama po zemlji koje povezuje crta. Lijeva točka je sindikalna gustoća, desna pokrivenost kolektivnim ugovorima. U Francuskoj je gustoća 10 % a pokrivenost 98 %, najveći razmak; u Švedskoj i Finskoj obje su visoke; Hrvatska je u sredini s gustoćom 20,8 % i pokrivenošću 52,7 %."
+{
+  const rows = [
+    {zemlja:"Francuska", gustoca:10.0, pokrivenost:98.0},
+    {zemlja:"Finska", gustoca:51.4, pokrivenost:88.8},
+    {zemlja:"Švedska", gustoca:65.9, pokrivenost:88.0},
+    {zemlja:"Slovenija", gustoca:20.4, pokrivenost:83.1},
+    {zemlja:"Njemačka", gustoca:14.1, pokrivenost:54.0},
+    {zemlja:"Hrvatska", gustoca:20.8, pokrivenost:52.7}
+  ];
+  const order = rows.map(d => d.zemlja);
+  return Plot.plot({
+    width: 780, height: 380,
+    marginLeft: 92, marginRight: 56, marginTop: 30, marginBottom: 46,
+    style: {fontSize: "12px", fontFamily: "Public Sans, system-ui, sans-serif", color: "#3A332D"},
+    x: {label: "Udio zaposlenih (%) →", domain: [0, 105], grid: true},
+    y: {label: null, domain: order},
+    color: {domain: ["Sindikalna gustoća","Pokrivenost kolektivnim ugovorima"], range: ["#4A6B5C","#C8985E"], legend: true},
+    marks: [
+      Plot.link(rows, {x1: "gustoca", x2: "pokrivenost", y: "zemlja", stroke: "#C9C3B8", strokeWidth: 2.5}),
+      Plot.dot(rows, {x: "gustoca", y: "zemlja", fill: () => "Sindikalna gustoća", r: 6, stroke: "white", strokeWidth: 1, tip: true}),
+      Plot.dot(rows, {x: "pokrivenost", y: "zemlja", fill: () => "Pokrivenost kolektivnim ugovorima", r: 6, stroke: "white", strokeWidth: 1, tip: true}),
+      Plot.text(rows, {x: "gustoca", y: "zemlja", text: d => d.gustoca.toFixed(1).replace(".", ","), dy: -12, fontSize: 9, fill: "#4A6B5C"}),
+      Plot.text(rows, {x: "pokrivenost", y: "zemlja", text: d => d.pokrivenost.toFixed(1).replace(".", ","), dy: -12, fontSize: 9, fill: "#9A6F38"})
+    ]
+  });
+}
+```
+:::
+
+::: {.content-visible when-format="pdf"}
+```{r}
+#| label: fig-sindikati-print
+#| echo: false
+#| fig-cap: "Sindikalna gustoća (udio učlanjenih) i pokrivenost kolektivnim ugovorima (udio obuhvaćenih), odabrane zemlje, % zaposlenih. Razmak je mjera slobodnog jahanja. Izvor: OECD/AIAS ICTWSS baza; najnovije dostupne vrijednosti po zemlji (Hrvatska 2014.–2018.)."
+#| fig-alt: "Dumbbell graf sindikalne gustoće i pokrivenosti kolektivnim ugovorima za šest zemalja; Francuska ima najveći razmak (10 % naspram 98 %), Hrvatska je u sredini (20,8 % i 52,7 %)."
+#| fig-width: 7.8
+#| fig-height: 3.9
+source("R/setup.R")
+
+df <- data.frame(
+  zemlja      = c("Francuska","Finska","Švedska","Slovenija","Njemačka","Hrvatska"),
+  gustoca     = c(10.0, 51.4, 65.9, 20.4, 14.1, 20.8),
+  pokrivenost = c(98.0, 88.8, 88.0, 83.1, 54.0, 52.7),
+  stringsAsFactors = FALSE
+)
+df$zemlja <- factor(df$zemlja, levels = rev(df$zemlja))
+
+ggplot(df) +
+  geom_segment(aes(x = gustoca, xend = pokrivenost, y = zemlja, yend = zemlja),
+               color = "#C9C3B8", linewidth = 1.3) +
+  geom_point(aes(x = gustoca, y = zemlja, color = "Sindikalna gustoća"), size = 3) +
+  geom_point(aes(x = pokrivenost, y = zemlja, color = "Pokrivenost kolektivnim ugovorima"), size = 3) +
+  geom_text(aes(x = gustoca, y = zemlja, label = sub("\\.", ",", sprintf("%.1f", gustoca))),
+            vjust = -1.1, size = 2.6, color = "#4A6B5C") +
+  geom_text(aes(x = pokrivenost, y = zemlja, label = sub("\\.", ",", sprintf("%.1f", pokrivenost))),
+            vjust = -1.1, size = 2.6, color = "#9A6F38") +
+  scale_color_manual(values = c("Sindikalna gustoća" = "#4A6B5C",
+                                "Pokrivenost kolektivnim ugovorima" = "#C8985E"), name = NULL) +
+  scale_x_continuous(limits = c(0, 105)) +
+  labs(x = "Udio zaposlenih (%)", y = NULL) +
+  theme_pubfin()
+```
+:::
+
 ## Digitalno organiziranje i Olsonova logika
 
 Olsonova ključna varijabla bio je trošak organiziranja, a upravo taj trošak digitalne platforme korjenito snižavaju. Pozvati tisuće ljudi na prosvjed, prikupiti potpise ili uskladiti zajedničku akciju nekada je tražilo skupu organizaciju s uredima, stalnim članstvom i profesionalnim aparatom. Danas isto mogu pokrenuti pojedinci povezani mrežom, gotovo bez troška i bez središnjeg vodstva, dijeljenjem poruke koju svatko prilagodi sebi. Zbog toga velike i raspršene skupine, za koje je Olson predviđao da će ostati neorganizirane, ponekad uspijevaju vrlo brzo mobilizirati golem broj ljudi bez ijedne formalne organizacije, pojava koju se naziva **povezanim djelovanjem** (*connective action*) [@bennett2013]. Mrežne peticije, kampanje oko jednog hashtaga i nagle donacije pristigle u danima nakon nekog događaja primjeri su koje stara teorija teško objašnjava.

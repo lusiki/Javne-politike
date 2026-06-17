@@ -88,6 +88,75 @@ Drugi problem je odgovornost. Mrežna i participativna tijela rijetko imaju jasa
 
 Jedan institucionalni odgovor na pristranost sudjelovanja zaslužuje posebnu pažnju. Umjesto da se oslanjaju na samoodabrane sudionike, neke jurisdikcije sve češće koriste nasumično izabrane građanske skupštine i panele, slično odabiru porote, u kojima slučajni odabir osigurava da sastav odražava stanovništvo po dobi, obrazovanju i mjestu stanovanja [@oecd2020delib]. Takvi nasumični mini-javni forumi pokušavaju spojiti dvije vrijednosti koje se inače sukobljavaju, otvorenost sudjelovanja i predstavničku reprezentativnost, jer ne ovise o tome tko se sam javi. Iskustvo pokazuje da dobro vođene građanske skupštine mogu donijeti promišljene preporuke i o složenim temama poput klimatske ili ustavne politike, ali i da njihova legitimnost ovisi o tome je li njihov mandat jasan i preuzima li izabrana vlast odgovornost za konačnu odluku. Participacija tako ne mora birati između inkluzivnosti i reprezentativnosti ako je institucionalno pažljivo dizajnirana.
 
+Sve te suradničke i participativne forme počivaju na jednom zajedničkom temelju, a to je povjerenje građana u institucije. Ondje gdje je povjerenje nisko, i savjetovanja i partnerstva teže grade legitimnost, a sudionici lakše sumnjaju u iskrenost postupka. Upravo tu Hrvatska ima ograničenje jer udio građana koji vjeruju nacionalnoj vladi ostaje nizak i ispod prosjeka Europske unije, premda osjetno iznad zemalja s najnižim povjerenjem poput Francuske ili Bugarske.[^trust-val] Slika koja slijedi prikazuje taj udio za odabrane zemlje.
+
+[^trust-val]: Udio povjerenja u Hrvatskoj osjetno varira među valovima Eurobarometra (primjerice oko 34 % u proljeće 2024. i 28 % u jesen 2024.), pa pojedinačnu vrijednost treba čitati kao indikativnu razinu, a ne preciznu točku.
+
+::: {.content-visible when-format="html"}
+```{ojs}
+//| echo: false
+//| label: fig-povjerenje
+//| fig-cap: "Udio građana koji su skloni vjerovati nacionalnoj vladi (%), odabrane zemlje, jesen 2024. Zlatno je istaknuta Hrvatska, a isprekidana linija označava prosjek EU27. Izvor: Standardni Eurobarometar 102 (jesen 2024.)."
+//| fig-alt: "Vodoravni stupčasti graf udjela građana koji vjeruju nacionalnoj vladi za osam zemalja. Luksemburg je na vrhu sa 76 %, Francuska na dnu s 18 %. Hrvatska je istaknuta zlatno s 28 %, ispod prosjeka EU27 od 33 %."
+{
+  const data = [
+    {z:"Luksemburg", v:76, grp:"ostalo"},
+    {z:"Danska", v:58, grp:"ostalo"},
+    {z:"Poljska", v:51, grp:"ostalo"},
+    {z:"Finska", v:46, grp:"ostalo"},
+    {z:"Hrvatska", v:28, grp:"HR"},
+    {z:"Grčka", v:23, grp:"ostalo"},
+    {z:"Bugarska", v:23, grp:"ostalo"},
+    {z:"Francuska", v:18, grp:"ostalo"}
+  ];
+  return Plot.plot({
+    width: 780, height: 400, marginLeft: 86, marginRight: 50, marginTop: 28, marginBottom: 46,
+    style: {fontSize: "12px", fontFamily: "Public Sans, system-ui, sans-serif", color: "#3A332D"},
+    x: {label: "Skloni vjerovati nacionalnoj vladi (%) →", domain: [0, 82], grid: true},
+    y: {label: null, domain: data.map(d => d.z)},
+    color: {domain: ["ostalo","HR"], range: ["#4A5568","#C8942D"]},
+    marks: [
+      Plot.barX(data, {x: "v", y: "z", fill: "grp", tip: true}),
+      Plot.ruleX([33], {stroke: "#8C8C8C", strokeDasharray: "5,4", strokeWidth: 1.5}),
+      Plot.text([{z: "Luksemburg"}], {x: 33, y: "z", text: ["EU27 33 %"], dy: -12, dx: 4, textAnchor: "start", fontSize: 10, fill: "#6B6357"}),
+      Plot.text(data, {x: "v", y: "z", text: d => d.v + " %", dx: 4, textAnchor: "start", fontSize: 10, fill: "#3A332D"})
+    ]
+  });
+}
+```
+:::
+
+::: {.content-visible when-format="pdf"}
+```{r}
+#| label: fig-povjerenje-print
+#| echo: false
+#| fig-cap: "Udio građana koji su skloni vjerovati nacionalnoj vladi (%), odabrane zemlje, jesen 2024. Zlatno je istaknuta Hrvatska, a isprekidana linija označava prosjek EU27. Izvor: Standardni Eurobarometar 102 (jesen 2024.)."
+#| fig-alt: "Vodoravni stupčasti graf udjela građana koji vjeruju nacionalnoj vladi; Luksemburg 76 %, Francuska 18 %, Hrvatska istaknuta zlatno s 28 %, ispod prosjeka EU27 od 33 %."
+#| fig-width: 7.8
+#| fig-height: 4.0
+source("R/setup.R")
+
+pv <- data.frame(
+  z = c("Luksemburg","Danska","Poljska","Finska","Hrvatska","Grčka","Bugarska","Francuska"),
+  v = c(76, 58, 51, 46, 28, 23, 23, 18),
+  grp = c("ostalo","ostalo","ostalo","ostalo","HR","ostalo","ostalo","ostalo"),
+  stringsAsFactors = FALSE
+)
+pv$z <- factor(pv$z, levels = rev(pv$z))
+
+ggplot(pv, aes(v, z, fill = grp)) +
+  geom_col(width = 0.72) +
+  geom_vline(xintercept = 33, linetype = "dashed", color = "#8C8C8C", linewidth = 0.5) +
+  annotate("text", x = 33, y = 8, label = "EU27 33", hjust = -0.05, vjust = 0,
+           size = 2.8, color = "#6B6357") +
+  geom_text(aes(label = paste0(v, " %")), hjust = -0.2, size = 2.9, color = "#3A332D") +
+  scale_fill_manual(values = c("ostalo" = "#4A5568", "HR" = "#C8942D"), guide = "none") +
+  scale_x_continuous(limits = c(0, 82)) +
+  labs(x = "Skloni vjerovati nacionalnoj vladi (%)", y = NULL) +
+  theme_pubfin()
+```
+:::
+
 ## Digitalizacija i nova država
 
 Digitalizacija dodatno mijenja raspravu o novom upravljanju. Suvremena e-uprava, digitalni identitet, interoperabilne baze podataka, elektronički potpisi i digitalne javne usluge omogućuju državi da bude učinkovitija, brža i dostupnija. Takav model javne uprave sve se češće naziva **digitalnom državom**. Primjeri poput Estonije pokazuju da digitalizacija može biti snažan instrument modernizacije ako je povezana s institucionalnom reformom, jasnim pravilima i povjerenjem građana [@margetts2013].

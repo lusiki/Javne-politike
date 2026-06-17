@@ -42,6 +42,76 @@ Institucije zato **oblikuju poticaje**. Ako poduzetnik vjeruje da će moći zaš
 
 Taj se mehanizam može razložiti korak po korak. Slaba provedba ugovora i nesigurna vlasnička prava povećavaju rizik svake dugoročne transakcije, pa ulagači traže veći očekivani povrat kao naknadu za taj rizik ili jednostavno odustaju od ulaganja koje bi u sigurnijem okruženju bilo isplativo. Manje ulaganja znači sporiju akumulaciju kapitala, slabiji prijenos tehnologije i niži dugoročni rast, neovisno o tome koliko su povoljne cijene, porezne stope ili raspoloživa radna snaga. Rodrik upravo zato institucije naziva „dubokim" determinantama razvoja, onima koje djeluju ispod vidljive razine ekonomske politike i određuju hoće li ta politika uopće proizvesti očekivani učinak [@rodrik2011]. Institucionalna kvaliteta tako nije pozadinski uvjet nego aktivan kanal kroz koji se sve ostale politike prelamaju.
 
+Institucionalna kvaliteta nije samo teorijski pojam jer se i mjeri. Najpoznatiji su pokušaj Svjetski pokazatelji upravljanja (*Worldwide Governance Indicators*) Svjetske banke, koji svaku zemlju smještaju u percentilni rang na šest dimenzija upravljanja. Usporedba Hrvatske i susjedne Slovenije, dviju članica Unije sličnoga povijesnog polazišta, pokazuje da formalno slične institucije ne jamče jednaku kvalitetu. Slovenija nadmašuje Hrvatsku na svih šest dimenzija, a hrvatski su rezultati najslabiji upravo ondje gdje se institucionalna kvaliteta i prelama u praksi, na vladavini prava i kontroli korupcije. Slika koja slijedi prikazuje te percentilne rangove.
+
+::: {.content-visible when-format="html"}
+```{ojs}
+//| echo: false
+//| label: fig-wgi
+//| fig-cap: "Kvaliteta upravljanja, percentilni rang (0–100, viši je bolji), Hrvatska i Slovenija, 2023. Slovenija nadmašuje Hrvatsku na svih šest dimenzija, a najveći zaostatak Hrvatske je na vladavini prava i kontroli korupcije. Izvor: Svjetska banka, Worldwide Governance Indicators (ažuriranje 2024.)."
+//| fig-alt: "Dumbbell graf percentilnih rangova za šest dimenzija upravljanja. Za svaku dimenziju zlatna točka označava Hrvatsku, zelena Sloveniju, a Slovenija je desno (viša) na svih šest. Najveći je razmak na vladavini prava (Hrvatska 59, Slovenija 83) i kontroli korupcije (60 naspram 77)."
+{
+  const rows = [
+    {dim:"Vladavina prava", hr:59.4, si:82.5},
+    {dim:"Kontrola korupcije", hr:59.9, si:77.4},
+    {dim:"Glas i odgovornost", hr:65.7, si:82.8},
+    {dim:"Politička stabilnost", hr:67.8, si:75.8},
+    {dim:"Kvaliteta regulacije", hr:72.2, si:75.0},
+    {dim:"Učinkovitost vlasti", hr:75.5, si:81.1}
+  ];
+  const order = rows.map(d => d.dim);
+  return Plot.plot({
+    width: 800, height: 400,
+    marginLeft: 150, marginRight: 44, marginTop: 30, marginBottom: 46,
+    style: {fontSize: "12px", fontFamily: "Public Sans, system-ui, sans-serif", color: "#3A332D"},
+    x: {label: "Percentilni rang (0–100) →", domain: [0, 100], grid: true},
+    y: {label: null, domain: order},
+    color: {domain: ["Hrvatska","Slovenija"], range: ["#C8942D","#4A6B5C"], legend: true},
+    marks: [
+      Plot.link(rows, {x1: "hr", x2: "si", y: "dim", stroke: "#C9C3B8", strokeWidth: 2.5}),
+      Plot.dot(rows, {x: "hr", y: "dim", fill: () => "Hrvatska", r: 6, stroke: "white", strokeWidth: 1, tip: true}),
+      Plot.dot(rows, {x: "si", y: "dim", fill: () => "Slovenija", r: 6, stroke: "white", strokeWidth: 1, tip: true}),
+      Plot.text(rows, {x: "hr", y: "dim", text: d => d.hr.toFixed(0), dy: -12, fontSize: 9, fill: "#9A6F38"}),
+      Plot.text(rows, {x: "si", y: "dim", text: d => d.si.toFixed(0), dy: -12, fontSize: 9, fill: "#4A6B5C"})
+    ]
+  });
+}
+```
+:::
+
+::: {.content-visible when-format="pdf"}
+```{r}
+#| label: fig-wgi-print
+#| echo: false
+#| fig-cap: "Kvaliteta upravljanja, percentilni rang (0–100, viši je bolji), Hrvatska i Slovenija, 2023. Slovenija nadmašuje Hrvatsku na svih šest dimenzija. Izvor: Svjetska banka, Worldwide Governance Indicators (ažuriranje 2024.)."
+#| fig-alt: "Dumbbell graf percentilnih rangova za šest dimenzija upravljanja; Hrvatska (zlatno) zaostaje za Slovenijom (zeleno) na svakoj, najviše na vladavini prava i kontroli korupcije."
+#| fig-width: 7.8
+#| fig-height: 4.0
+source("R/setup.R")
+
+df <- data.frame(
+  dim = c("Vladavina prava","Kontrola korupcije","Glas i odgovornost",
+          "Politička stabilnost","Kvaliteta regulacije","Učinkovitost vlasti"),
+  hr  = c(59.4, 59.9, 65.7, 67.8, 72.2, 75.5),
+  si  = c(82.5, 77.4, 82.8, 75.8, 75.0, 81.1),
+  stringsAsFactors = FALSE
+)
+df$dim <- factor(df$dim, levels = rev(df$dim))
+
+ggplot(df) +
+  geom_segment(aes(x = hr, xend = si, y = dim, yend = dim),
+               color = "#C9C3B8", linewidth = 1.3) +
+  geom_point(aes(x = hr, y = dim, color = "Hrvatska"), size = 3) +
+  geom_point(aes(x = si, y = dim, color = "Slovenija"), size = 3) +
+  geom_text(aes(x = hr, y = dim, label = sprintf("%.0f", hr)), vjust = -1.1, size = 2.6, color = "#9A6F38") +
+  geom_text(aes(x = si, y = dim, label = sprintf("%.0f", si)), vjust = -1.1, size = 2.6, color = "#4A6B5C") +
+  scale_color_manual(values = c("Hrvatska" = "#C8942D", "Slovenija" = "#4A6B5C"), name = NULL) +
+  scale_x_continuous(limits = c(0, 100)) +
+  labs(x = "Percentilni rang (0–100, viši je bolji)", y = NULL) +
+  theme_pubfin()
+```
+:::
+
 ## Transakcijski troškovi
 
 Jedan od najvažnijih doprinosa nove institucionalne ekonomike jest koncept **transakcijskih troškova**. Ronald Coase je u poznatom radu o prirodi poduzeća pokazao da tržišta nisu besplatna [@coase1937]. U udžbeničkim modelima često se pretpostavlja da se kupci i prodavatelji lako pronalaze, da raspolažu informacijama i da se ugovor bez problema provodi. U stvarnom svijetu svaka razmjena zahtijeva vrijeme, informacije, pregovaranje, pravnu sigurnost i povjerenje. Upravo ti „skriveni" troškovi određuju koliko će tržišta biti učinkovita i hoće li se neka transakcija uopće dogoditi.

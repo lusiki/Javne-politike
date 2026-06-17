@@ -140,6 +140,74 @@ Razlog zbog kojeg autonomija otežava koordinaciju leži u množenju sučelja. S
 
 Zagovornici NPM-a ističu nekoliko prednosti. Prvo, NPM je u javni sektor unio **jezik učinkovitosti** i otvorio prostor za evaluaciju programa, analizu troškova i koristi te veću odgovornost za rezultate. Drugo, potaknuo je veću **transparentnost** jer institucije moraju definirati ciljeve i izvještavati o učinku. Treće, potaknuo je **orijentaciju prema korisnicima** te je važan prethodnik današnje digitalizacije javne uprave. Četvrto, otvorio je prostor za **profesionalizaciju upravljanja**.
 
+Digitalizacija javne uprave danas je možda najopipljiviji nasljednik te orijentacije prema korisniku, a i nju je moguće mjeriti. Indeks razvijenosti e-uprave Ujedinjenih naroda smješta Hrvatsku iznad europskog prosjeka, no osjetno iza digitalnih predvodnika poput Danske, Estonije i Finske. Riječ je o solidnoj, ali ne i vodećoj razini, što ostavlja prostor za napredak upravo u onome što je menadžerski pristup obećao. Slika koja slijedi prikazuje taj indeks za odabrane zemlje.
+
+::: {.content-visible when-format="html"}
+```{ojs}
+//| echo: false
+//| label: fig-euprava
+//| fig-cap: "Indeks razvijenosti e-uprave (EGDI, ljestvica 0–1), odabrane zemlje, 2024. Zlatno je istaknuta Hrvatska, a isprekidana linija označava europski regionalni prosjek. Izvor: Ujedinjeni narodi (UN DESA), E-Government Survey 2024."
+//| fig-alt: "Vodoravni stupčasti graf indeksa razvijenosti e-uprave za osam zemalja. Danska je na vrhu s 0,985, Francuska na dnu s 0,874. Hrvatska je istaknuta zlatno s 0,882, iznad europskog regionalnog prosjeka od 0,849."
+{
+  const data = [
+    {z:"Danska", v:0.985, grp:"ostalo"},
+    {z:"Estonija", v:0.973, grp:"ostalo"},
+    {z:"Finska", v:0.958, grp:"ostalo"},
+    {z:"Njemačka", v:0.942, grp:"ostalo"},
+    {z:"Švedska", v:0.933, grp:"ostalo"},
+    {z:"Hrvatska", v:0.882, grp:"HR"},
+    {z:"Slovenija", v:0.876, grp:"ostalo"},
+    {z:"Francuska", v:0.874, grp:"ostalo"}
+  ];
+  return Plot.plot({
+    width: 780, height: 400, marginLeft: 86, marginRight: 56, marginTop: 28, marginBottom: 46,
+    style: {fontSize: "12px", fontFamily: "Public Sans, system-ui, sans-serif", color: "#3A332D"},
+    x: {label: "Indeks razvijenosti e-uprave (EGDI, 0–1) →", domain: [0, 1.0], grid: true},
+    y: {label: null, domain: data.map(d => d.z)},
+    color: {domain: ["ostalo","HR"], range: ["#4A5568","#C8942D"]},
+    marks: [
+      Plot.barX(data, {x: "v", y: "z", fill: "grp", tip: true}),
+      Plot.ruleX([0.849], {stroke: "#8C8C8C", strokeDasharray: "5,4", strokeWidth: 1.5}),
+      Plot.text([{z: "Danska"}], {x: 0.849, y: "z", text: ["Europa 0,849"], dy: -12, dx: 3, textAnchor: "start", fontSize: 10, fill: "#6B6357"}),
+      Plot.text(data, {x: "v", y: "z", text: d => d.v.toFixed(3).replace(".", ","), dx: 4, textAnchor: "start", fontSize: 10, fill: "#3A332D"})
+    ]
+  });
+}
+```
+:::
+
+::: {.content-visible when-format="pdf"}
+```{r}
+#| label: fig-euprava-print
+#| echo: false
+#| fig-cap: "Indeks razvijenosti e-uprave (EGDI, ljestvica 0–1), odabrane zemlje, 2024. Zlatno je istaknuta Hrvatska, a isprekidana linija označava europski regionalni prosjek. Izvor: Ujedinjeni narodi (UN DESA), E-Government Survey 2024."
+#| fig-alt: "Vodoravni stupčasti graf indeksa razvijenosti e-uprave; Danska 0,985, Francuska 0,874, Hrvatska istaknuta zlatno s 0,882, iznad europskog prosjeka od 0,849."
+#| fig-width: 7.8
+#| fig-height: 4.0
+source("R/setup.R")
+
+eg <- data.frame(
+  z = c("Danska","Estonija","Finska","Njemačka","Švedska","Hrvatska","Slovenija","Francuska"),
+  v = c(0.985, 0.973, 0.958, 0.942, 0.933, 0.882, 0.876, 0.874),
+  grp = c("ostalo","ostalo","ostalo","ostalo","ostalo","HR","ostalo","ostalo"),
+  stringsAsFactors = FALSE
+)
+eg$z <- factor(eg$z, levels = rev(eg$z))
+
+ggplot(eg, aes(v, z, fill = grp)) +
+  geom_col(width = 0.72) +
+  geom_vline(xintercept = 0.849, linetype = "dashed", color = "#8C8C8C", linewidth = 0.5) +
+  annotate("text", x = 0.849, y = 8, label = "Europa 0,849", hjust = -0.05, vjust = 0,
+           size = 2.8, color = "#6B6357") +
+  geom_text(aes(label = sub("\\.", ",", sprintf("%.3f", v))),
+            hjust = -0.15, size = 2.8, color = "#3A332D") +
+  scale_fill_manual(values = c("ostalo" = "#4A5568", "HR" = "#C8942D"), guide = "none") +
+  scale_x_continuous(limits = c(0, 1.05)) +
+  labs(x = "Indeks razvijenosti e-uprave (EGDI, 0–1)", y = NULL) +
+  theme_pubfin()
+```
+:::
+
 Ipak, NPM se brzo suočio s ozbiljnim kritikama. Prva se odnosi na pretjerano pojednostavljenu usporedbu države i poduzeća. Poduzeće ima relativno jasan cilj (dugoročni profit), dok država ima više često napetih ciljeva koji uključuju učinkovitost, pravednost, zakonitost, jednakost pristupa, političku odgovornost i zaštitu ranjivih. Druga kritika odnosi se na **fragmentaciju** javnog sektora. Kada se usluge razdvoje na velik broj agencija, ugovora i privatnih pružatelja, sustav postaje teže koordinirati. Treća se odnosi na **problem mjerenja** i Goodhartov zakon prema kojem mjera prestaje biti dobra mjera onog trenutka kada postane cilj (bolnica može smanjiti liste čekanja preusmjeravanjem pacijenata, škola poboljšati rezultate sužavanjem nastave). Četvrta kritika odnosi se na **slabljenje profesionalne etike** javne službe. Peta kritika tiče se primjene NPM-a u zemljama slabijih institucija. Schick upozorava da sofisticirani modeli upravljanja rezultatima pretpostavljaju osnovnu administrativnu sposobnost, pa zemlje koje nemaju stabilan proračunski sustav i profesionalnu državnu službu trebaju „najprije srediti osnove" prije uvođenja složenih reformi [@schick1998].
 
 Empirijska usporedba zemalja koje su pokušale ubrzano prenijeti NPM iz anglosaksonskog kruga otkriva dvije različite putanje [@pollitt2017]. Skupina zemalja s razvijenom administrativnom tradicijom (Nizozemska, Danska, Finska) preuzela je tržišne mehanizme oprezno i selektivno, redovito popraćene ulaganjem u koordinaciju i nacionalne strategije, te je vremenom razvila mješavinu menadžerskih i mrežnih elemenata. Skupina zemalja u tranziciji prema funkcionalnoj državi (dijelovi srednje i istočne Europe, Latinska Amerika 1990-ih) često je preskakala temelje i izravno preuzimala složene NPM tehnike, što je proizvodilo formalne reforme koje nisu mijenjale stvarno funkcioniranje uprave, a ponekad su je dodatno fragmentirale.

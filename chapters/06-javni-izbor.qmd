@@ -166,6 +166,93 @@ ggplot(curve_df, aes(N, R)) +
 ```
 :::
 
+Unatoč tom računu izlaznost nije nula, ali ni postojana. Hrvatski podaci pokazuju dvije pravilnosti koje model nagoviješta. Izlaznost na parlamentarnim i predsjedničkim izborima dugoročno opada, s oko tri četvrtine biračkog tijela u devedesetima na manje od polovice na pojedinim izborima nakon 2010., uz povremene oporavke kad je ulog veći. Izlaznost usto oštro ovisi o tome koliko birači drže da je u igri, pa je na izborima za Europski parlament, koje mnogi doživljavaju kao niskoulog, ostala na tek petini do trećine biračkog tijela. Slika koja slijedi prikazuje izlaznost u Hrvatskoj po vrsti izbora.
+
+::: {.content-visible when-format="html"}
+```{ojs}
+//| echo: false
+//| label: fig-izlaznost
+//| fig-cap: "Izlaznost na izborima u Hrvatskoj prema vrsti izbora, 1992.–2024. (%). Parlamentarni i predsjednički izbori (prvi krug) dugoročno opadaju, dok izbori za Europski parlament ostaju izrazito niski. Izvor: International IDEA, Voter Turnout Database (puni birački popis)."
+//| fig-alt: "Linijski graf izlaznosti u postotku za tri vrste izbora u Hrvatskoj od 1992. do 2024. Parlamentarni izbori padaju s oko 76 % na 46 % u 2020. uz oporavak na 62 % u 2024., predsjednički prati sličan silazni put, a izbori za Europski parlament ostaju niski, između 21 i 30 %."
+{
+  const data = [
+    {god:1992, v:75.6, serija:"Parlamentarni"},
+    {god:1995, v:68.8, serija:"Parlamentarni"},
+    {god:2000, v:76.6, serija:"Parlamentarni"},
+    {god:2003, v:61.7, serija:"Parlamentarni"},
+    {god:2007, v:59.6, serija:"Parlamentarni"},
+    {god:2011, v:54.2, serija:"Parlamentarni"},
+    {god:2015, v:60.8, serija:"Parlamentarni"},
+    {god:2016, v:52.6, serija:"Parlamentarni"},
+    {god:2020, v:46.4, serija:"Parlamentarni"},
+    {god:2024, v:62.3, serija:"Parlamentarni"},
+    {god:1992, v:74.9, serija:"Predsjednički (1. krug)"},
+    {god:1997, v:54.6, serija:"Predsjednički (1. krug)"},
+    {god:2000, v:63.0, serija:"Predsjednički (1. krug)"},
+    {god:2005, v:50.6, serija:"Predsjednički (1. krug)"},
+    {god:2009, v:44.0, serija:"Predsjednički (1. krug)"},
+    {god:2014, v:47.1, serija:"Predsjednički (1. krug)"},
+    {god:2019, v:51.2, serija:"Predsjednički (1. krug)"},
+    {god:2024, v:46.0, serija:"Predsjednički (1. krug)"},
+    {god:2013, v:20.8, serija:"Europski parlament"},
+    {god:2014, v:25.2, serija:"Europski parlament"},
+    {god:2019, v:29.9, serija:"Europski parlament"},
+    {god:2024, v:21.4, serija:"Europski parlament"}
+  ];
+  return Plot.plot({
+    width: 800, height: 450,
+    marginLeft: 50, marginRight: 30, marginTop: 30, marginBottom: 44,
+    style: {fontSize: "12px", fontFamily: "Public Sans, system-ui, sans-serif", color: "#3A332D"},
+    x: {label: null, tickFormat: d => "" + d, ticks: [1992,1996,2000,2004,2008,2012,2016,2020,2024]},
+    y: {label: "↑ Izlaznost (%)", domain: [0, 90], grid: true},
+    color: {domain: ["Parlamentarni","Predsjednički (1. krug)","Europski parlament"], range: ["#1C1916","#4A6B5C","#C8942D"], legend: true},
+    marks: [
+      Plot.lineY(data, {x: "god", y: "v", stroke: "serija", z: "serija", strokeWidth: 2, curve: "monotone-x"}),
+      Plot.dot(data, {x: "god", y: "v", fill: "serija", r: 3, tip: true})
+    ]
+  });
+}
+```
+:::
+
+::: {.content-visible when-format="pdf"}
+```{r}
+#| label: fig-izlaznost-print
+#| echo: false
+#| fig-cap: "Izlaznost na izborima u Hrvatskoj prema vrsti izbora, 1992.–2024. (%). Parlamentarni i predsjednički izbori (prvi krug) dugoročno opadaju, dok izbori za Europski parlament ostaju izrazito niski. Izvor: International IDEA, Voter Turnout Database."
+#| fig-alt: "Linijski graf izlaznosti u postotku za tri vrste izbora u Hrvatskoj od 1992. do 2024.; parlamentarni i predsjednički dugoročno opadaju, a izbori za Europski parlament ostaju niski (21–30 %)."
+#| fig-width: 7.8
+#| fig-height: 4.5
+source("R/setup.R")
+
+df <- rbind(
+  data.frame(god = c(1992,1995,2000,2003,2007,2011,2015,2016,2020,2024),
+             v   = c(75.6,68.8,76.6,61.7,59.6,54.2,60.8,52.6,46.4,62.3),
+             serija = "Parlamentarni"),
+  data.frame(god = c(1992,1997,2000,2005,2009,2014,2019,2024),
+             v   = c(74.9,54.6,63.0,50.6,44.0,47.1,51.2,46.0),
+             serija = "Predsjednički (1. krug)"),
+  data.frame(god = c(2013,2014,2019,2024),
+             v   = c(20.8,25.2,29.9,21.4),
+             serija = "Europski parlament")
+)
+df$serija <- factor(df$serija,
+  levels = c("Parlamentarni","Predsjednički (1. krug)","Europski parlament"))
+
+ggplot(df, aes(god, v, color = serija)) +
+  geom_line(linewidth = 0.9) +
+  geom_point(size = 1.4) +
+  scale_color_manual(
+    values = c("Parlamentarni" = "#1C1916",
+               "Predsjednički (1. krug)" = "#4A6B5C",
+               "Europski parlament" = "#C8942D"), name = NULL) +
+  scale_y_continuous(limits = c(0, 90)) +
+  scale_x_continuous(breaks = seq(1992, 2024, 4)) +
+  labs(x = NULL, y = "Izlaznost (%)") +
+  theme_pubfin()
+```
+:::
+
 Ista logika malene vjerojatnosti utjecaja koja obeshrabruje izlazak na birališta obeshrabruje i prikupljanje informacija. Trošak stjecanja detaljnih političkih informacija gotovo uvijek nadmašuje očekivanu instrumentalnu korist za pojedinog birača, s obzirom na zanemarivu vjerojatnost da će njegov glas promijeniti ishod. Takvo racionalno nepoznavanje (*rational ignorance*) ne dovodi samo do nedostatnog prikupljanja informacija, nego i do neučinkovitog korištenja onih koje birači već posjeduju.
 
 ::: {#def-racionalno-nepoznavanje}
