@@ -12,7 +12,7 @@ format:
 
 ```{=html}
 <header class="pm-head">
-  <span class="pm-kicker">Pojmovnik · mreža od 91 pojma</span>
+  <span class="pm-kicker">Pojmovnik · mreža pojmova knjige</span>
   <h1 class="pm-title">Knjiga kao mreža pojmova</h1>
   <p class="pm-lede">Svaki čvor je jedan pojam koji knjiga definira. Veličina prati koliko se pojam provlači kroz knjigu, boja označava dio kojem pripada, a veze povezuju pojmove koji se zajedno pojavljuju. Upišite pojam da osvijetlite njegovo susjedstvo ili kliknite čvor za definiciju i poveznicu na poglavlje.</p>
 </header>
@@ -30,7 +30,11 @@ format:
 
 .pm-wrap { display: grid; grid-template-columns: minmax(0,1fr) 320px; gap: 1.1rem;
   align-items: start; max-width: 1320px; margin: 0 auto; }
-@media (max-width: 900px) { .pm-wrap { grid-template-columns: 1fr; } }
+@media (max-width: 900px) {
+  .pm-wrap { grid-template-columns: 1fr; }
+  /* niži graf na mobitelu + pan-y da se stranica može skrolati kroz njega */
+  .pm-stage svg { height: 56vh; min-height: 340px; touch-action: pan-y; }
+}
 
 .pm-controls { display: flex; flex-wrap: wrap; gap: .9rem 1.4rem; align-items: center;
   padding: .7rem .9rem; margin-bottom: .7rem;
@@ -47,10 +51,11 @@ format:
 .pm-legend { display: flex; flex-wrap: wrap; gap: .4rem .55rem; max-width: 1320px;
   margin: 0 auto .55rem; font-family: "Public Sans", sans-serif; }
 .pm-chip { display: inline-flex; align-items: center; gap: .42rem; cursor: pointer;
-  padding: .28rem .6rem; border-radius: 999px; font-size: .78rem; color: #1C1916;
-  background: #EAE3D4; border: 1px solid rgba(28,25,22,.10); user-select: none;
-  transition: opacity .15s; }
+  padding: .28rem .6rem; border-radius: 999px; font: inherit; font-size: .78rem;
+  line-height: 1.2; color: #1C1916; background: #EAE3D4;
+  border: 1px solid rgba(28,25,22,.10); user-select: none; transition: opacity .15s; }
 .pm-chip.pm-off { opacity: .38; }
+.pm-chip:focus-visible { outline: 2px solid #4A6B5C; outline-offset: 2px; }
 .pm-chip .pm-dot { width: 11px; height: 11px; border-radius: 50%; flex: none; }
 
 .pm-stage { position: relative; background:
@@ -60,16 +65,19 @@ format:
   cursor: grab; }
 .pm-stage svg:active { cursor: grabbing; }
 .pm-node { cursor: pointer; }
+.pm-node:focus { outline: none; }
+.pm-node:focus-visible { stroke: #1C1916; stroke-width: 3px;
+  outline: 3px solid rgba(74,107,92,.65); }
 .pm-label { font-family: "Public Sans", sans-serif; pointer-events: none;
   fill: #2A241E; paint-order: stroke; stroke: #F4EFE6; stroke-width: 3px;
   stroke-linejoin: round; }
 .pm-hint { position: absolute; left: 12px; bottom: 10px; font-size: .72rem;
-  font-family: "Public Sans", sans-serif; color: #8A8071; pointer-events: none; }
+  font-family: "Public Sans", sans-serif; color: #6B6357; pointer-events: none; }
 
 .pm-panel { position: sticky; top: 1rem; background: #F4EFE6;
   border: 1px solid rgba(28,25,22,.12); border-radius: 12px; padding: 1.1rem 1.15rem;
   min-height: 200px; font-family: "Public Sans", sans-serif; }
-.pm-panel .pm-empty { color: #8A8071; font-style: italic; line-height: 1.55; }
+.pm-panel .pm-empty { color: #6B6357; font-style: italic; line-height: 1.55; }
 .pm-panel .pm-dio { display: inline-flex; align-items: center; gap: .42rem;
   font-size: .74rem; text-transform: uppercase; letter-spacing: .08em; font-weight: 600;
   color: #4A4036; margin-bottom: .35rem; }
@@ -95,12 +103,15 @@ graph = FileAttachment("data/concept-graph.json").json()
 ```{ojs}
 //| echo: false
 pojmovnik = {
+  // Kategorijska rampa po DIO-u, ugođena za razlikovanje i kod sljepoće na
+  // boje: susjedni dijelovi se razlikuju i po SVJETLINI, ne samo po tonu
+  // (uz to su čvorovi tabbabilni s aria-oznakom koja nosi DIO bez boje).
   const DIO = {
     0: { label: "Uvod",     desc: "Uvod",                          color: "#9C9382" },
     1: { label: "DIO I",    desc: "Klasične javne financije",      color: "#1B2A4A" },
     2: { label: "DIO II",   desc: "Javni izbor",                   color: "#4A6B5C" },
     3: { label: "DIO III",  desc: "Institucije",                   color: "#C8985E" },
-    4: { label: "DIO IV",   desc: "Politike u praksi",             color: "#4A5568" },
+    4: { label: "DIO IV",   desc: "Politike u praksi",             color: "#7C8A97" },
     5: { label: "DIO V",    desc: "Kvalitetnije politike",         color: "#6B1F26" }
   };
 
@@ -136,9 +147,12 @@ pojmovnik = {
 
   // --- skele (layout) ------------------------------------------------------
   const root = d3.create("div");
-  const legend = root.append("div").attr("class", "pm-legend");
-  [1,2,3,4,5,0].forEach(k => {
-    const chip = legend.append("div").attr("class", "pm-chip").attr("data-dio", k)
+  const legend = root.append("div").attr("class", "pm-legend").attr("role", "group")
+    .attr("aria-label", "Filtri dijelova knjige");
+  [1,2,3,4,5].forEach(k => {
+    const chip = legend.append("button").attr("type", "button").attr("class", "pm-chip")
+      .attr("data-dio", k).attr("aria-pressed", "true")
+      .attr("aria-label", `${DIO[k].label} — ${DIO[k].desc} (uključi/isključi)`)
       .on("click", () => toggleDio(k));
     chip.append("span").attr("class", "pm-dot").style("background", DIO[k].color);
     chip.append("span").text(`${DIO[k].label} — ${DIO[k].desc}`);
@@ -147,6 +161,7 @@ pojmovnik = {
   const controls = root.append("div").attr("class", "pm-controls");
   const search = controls.append("input").attr("class", "pm-search").attr("type", "search")
     .attr("placeholder", "Tražite pojam (npr. eksternalija, renta, institucije)…")
+    .attr("aria-label", "Tražite pojam u mreži")
     .on("input", function () { state.query = this.value; applyView(); });
   const densField = controls.append("label").attr("class", "pm-field");
   densField.append("span").text("Gustoća veza");
@@ -163,7 +178,8 @@ pojmovnik = {
   // --- SVG + sile ----------------------------------------------------------
   const width = 900, height = 680;
   const svg = stage.append("svg").attr("viewBox", [0, 0, width, height])
-    .attr("preserveAspectRatio", "xMidYMid meet");
+    .attr("preserveAspectRatio", "xMidYMid meet")
+    .attr("role", "group").attr("aria-label", "Interaktivna mreža pojmova knjige");
   const zoomG = svg.append("g");
   const linkG = zoomG.append("g").attr("stroke", "#9A8F7C");
   const nodeG = zoomG.append("g");
@@ -187,8 +203,13 @@ pojmovnik = {
       .attr("r", d => r(d.mentions))
       .attr("fill", d => DIO[d.dio].color)
       .attr("stroke", "#F4EFE6").attr("stroke-width", 1.5)
+      .attr("tabindex", 0).attr("role", "button")
+      .attr("aria-label", d => `${d.term}. ${DIO[d.dio].label}, ${DIO[d.dio].desc}. Poglavlje: ${d.chapterTitle}. Spominje se u ${d.mentions} poglavlja. Enter za definiciju.`)
       .on("pointerover", (e, d) => { state.focus = d.id; applyView(); })
       .on("pointerout",  () => { state.focus = null; applyView(); })
+      .on("focus", (e, d) => { state.focus = d.id; applyView(); })
+      .on("blur",  () => { state.focus = null; applyView(); })
+      .on("keydown", (e, d) => { if (e.key === "Enter" || e.key === " ") { e.preventDefault(); state.selected = d.id; renderPanel(); applyView(); } })
       .on("click", (e, d) => { state.selected = d.id; renderPanel(); applyView(); })
       .call(d3.drag()
         .on("start", (e, d) => { if (!e.active) sim.alphaTarget(0.3).restart(); d.fx = d.x; d.fy = d.y; })
@@ -258,7 +279,9 @@ pojmovnik = {
 
   function toggleDio(k) {
     if (state.dios.has(k)) state.dios.delete(k); else state.dios.add(k);
-    legend.selectAll(".pm-chip").classed("pm-off", function () { return !state.dios.has(+this.dataset.dio); });
+    legend.selectAll(".pm-chip")
+      .classed("pm-off", function () { return !state.dios.has(+this.dataset.dio); })
+      .attr("aria-pressed", function () { return state.dios.has(+this.dataset.dio) ? "true" : "false"; });
     applyView();
   }
 

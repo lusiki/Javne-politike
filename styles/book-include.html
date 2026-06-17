@@ -158,7 +158,7 @@
   // ----------------------------------------------------------
   function setupStandalonePages() {
     var path = location.pathname;
-    var standalonePages = ["/vodic.html", "/prirucnik.html", "/resursi.html", "/alat.html"];
+    var standalonePages = ["/vodic.html", "/pojmovnik.html", "/prirucnik.html", "/resursi.html", "/alat.html"];
     var isStandalone = standalonePages.some(function (p) {
       return path.endsWith(p);
     });
@@ -205,7 +205,7 @@
   //     (izvjestaj-estetski M4). MutationObserver preživljava Quartov re-render.
   // ----------------------------------------------------------
   function removePrunedItems() {
-    var endings = ["index.html", "vodic.html", "prirucnik.html", "resursi.html", "alat.html"];
+    var endings = ["index.html", "vodic.html", "pojmovnik.html", "prirucnik.html", "resursi.html", "alat.html"];
     // Podstranice vodiča: bilo koji href oblika .../vodic/NN-*.html
     var vodicSub = /(^|\/)vodic\/\d+[-\w]*\.html$/;
     document.querySelectorAll("#quarto-sidebar a.sidebar-link, #quarto-sidebar a.sidebar-item-text").forEach(function (a) {

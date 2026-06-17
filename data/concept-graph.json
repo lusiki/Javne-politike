@@ -3,7 +3,7 @@
   "nodes": [
     {
       "id": "pareto-ucinkovitost",
-      "term": "Pareto učinkovita",
+      "term": "Pareto učinkovitost",
       "chapter": "chapters/01-uloga-drzave.qmd",
       "chapterTitle": "Uloga države u gospodarstvu",
       "dio": 1,
@@ -13,7 +13,7 @@
     },
     {
       "id": "kaldor-hicks",
-      "term": "Kaldor-Hicksovu kriteriju",
+      "term": "Kaldor-Hicksov kriterij",
       "chapter": "chapters/01-uloga-drzave.qmd",
       "chapterTitle": "Uloga države u gospodarstvu",
       "dio": 1,
@@ -103,7 +103,7 @@
     },
     {
       "id": "lorenz-gini",
-      "term": "Lorenzova krivulja",
+      "term": "Lorenzova krivulja i Ginijev koeficijent",
       "chapter": "chapters/03-distribucijska-funkcija.qmd",
       "chapterTitle": "Distribucijska funkcija",
       "dio": 1,
@@ -163,7 +163,7 @@
     },
     {
       "id": "stabilnost-javno-dobro",
-      "term": "stabilnost",
+      "term": "Stabilnost kao javno dobro",
       "chapter": "chapters/04-stabilizacijska-funkcija.qmd",
       "chapterTitle": "Stabilizacijska funkcija",
       "dio": 1,
@@ -223,7 +223,7 @@
     },
     {
       "id": "racionalno-nepoznavanje",
-      "term": "racionalnom nepoznavanju",
+      "term": "Racionalno nepoznavanje",
       "chapter": "chapters/06-javni-izbor.qmd",
       "chapterTitle": "Što je to javni izbor i zašto nas se tiče?",
       "dio": 2,
@@ -258,7 +258,7 @@
       "chapterTitle": "Kolektivni izbor",
       "dio": 2,
       "dioLabel": "DIO II: JAVNI IZBOR – ŠTO, KAKO I ZAŠTO?",
-      "firstSentence": "Condorcetov paradoks pokazuje da većinsko parno glasovanje može biti ciklično čak i kada svaki birač ima dosljedne preferencije, pa A pobjeđuje B, B pobjeđuje C, ali C pobjeđuje A i kolektiv ostaje bez nedvosmislenog pobjednika @condorcet1785.",
+      "firstSentence": "Condorcetov paradoks pokazuje da većinsko parno glasovanje može biti ciklično čak i kada svaki birač ima dosljedne preferencije, pa A pobjeđuje B, B pobjeđuje C, ali C pobjeđuje A i kolektiv ostaje bez nedvosmislenog pobjednika .",
       "mentions": 1
     },
     {
@@ -268,7 +268,7 @@
       "chapterTitle": "Kolektivni izbor",
       "dio": 2,
       "dioLabel": "DIO II: JAVNI IZBOR – ŠTO, KAKO I ZAŠTO?",
-      "firstSentence": "Arrowljev teorem nemogućnosti dokazuje da ne postoji sustav agregacije individualnih preferencija koji istodobno zadovoljava neograničenu domenu, kolektivnu racionalnost, Pareto-efikasnost, neovisnost o nevažnim alternativama i nediktatorstvo kada postoje barem tri alternative…",
+      "firstSentence": "Arrowljev teorem nemogućnosti dokazuje da ne postoji sustav agregacije individualnih preferencija koji istodobno zadovoljava neograničenu domenu, kolektivnu racionalnost, Pareto-efikasnost, neovisnost o nevažnim alternativama i nediktatorstvo kada postoje barem tri alternative .",
       "mentions": 1
     },
     {
@@ -298,7 +298,7 @@
       "chapterTitle": "Kolektivni izbor",
       "dio": 2,
       "dioLabel": "DIO II: JAVNI IZBOR – ŠTO, KAKO I ZAŠTO?",
-      "firstSentence": "Medijanski glasač je birač čija idealna točka leži u sredini rasporeda svih birača; prema teoremu o medijanskom glasaču @black1948, kada su preferencije jednovršne i odluka je jednodimenzionalna, pobjeđuje opcija kojoj je taj birač najbliži.",
+      "firstSentence": "Medijanski glasač je birač čija idealna točka leži u sredini rasporeda svih birača; prema teoremu o medijanskom glasaču , kada su preferencije jednovršne i odluka je jednodimenzionalna, pobjeđuje opcija kojoj je taj birač najbliži.",
       "mentions": 4
     },
     {
@@ -308,7 +308,7 @@
       "chapterTitle": "Kolektivni izbor",
       "dio": 2,
       "dioLabel": "DIO II: JAVNI IZBOR – ŠTO, KAKO I ZAŠTO?",
-      "firstSentence": "Moć kontrole dnevnog reda (agenda-setting power) je sposobnost određivanja o čemu će se glasovati, kojim redoslijedom i u kojem obliku, čime agendar može usmjeriti konačni ishod čak i u uvjetima cikličnih preferencija @mckelvey1976; @romer1978.",
+      "firstSentence": "Moć kontrole dnevnog reda (agenda-setting power) je sposobnost određivanja o čemu će se glasovati, kojim redoslijedom i u kojem obliku, čime agendar može usmjeriti konačni ishod čak i u uvjetima cikličnih preferencija .",
       "mentions": 1
     },
     {
@@ -318,7 +318,7 @@
       "chapterTitle": "Političke stranke i izbori",
       "dio": 2,
       "dioLabel": "DIO II: JAVNI IZBOR – ŠTO, KAKO I ZAŠTO?",
-      "firstSentence": "Hotelling-Downsov model tvrdi da dvije stranke koje se natječu za glasove birača poredanih na jednoj ideološkoj osi imaju snažan poticaj pozicionirati se što bliže preferencijama medijanskog glasača kako bi pobijedile na izborima @hotelling1929; @downs1957.",
+      "firstSentence": "Hotelling-Downsov model tvrdi da dvije stranke koje se natječu za glasove birača poredanih na jednoj ideološkoj osi imaju snažan poticaj pozicionirati se što bliže preferencijama medijanskog glasača kako bi pobijedile na izborima .",
       "mentions": 1
     },
     {
@@ -389,7 +389,7 @@
       "dio": 2,
       "dioLabel": "DIO II: JAVNI IZBOR – ŠTO, KAKO I ZAŠTO?",
       "firstSentence": "Lov na rentu (rent-seeking) je ulaganje resursa u stjecanje političkih povlastica (monopolske zaštite, dozvola, subvencija, kvota) umjesto u stvaranje novih vrijednosti, a rezultira dvostrukim društvenim gubitkom koji obuhvaća izravno iskrivljavanje tržišnih cijena i neizravan…",
-      "mentions": 9
+      "mentions": 5
     },
     {
       "id": "regulatorno-zarobljavanje",
@@ -453,7 +453,7 @@
     },
     {
       "id": "input-output-ishod",
-      "term": "Input",
+      "term": "Input, output i ishod",
       "chapter": "chapters/10-birokracija.qmd",
       "chapterTitle": "Dva pogleda na birokraciju",
       "dio": 2,
@@ -468,7 +468,7 @@
       "chapterTitle": "Nova institucionalna ekonomika",
       "dio": 3,
       "dioLabel": "DIO III: NOVA INSTITUCIONALNA I KONSTITUCIONALNA EKONOMIKA",
-      "firstSentence": "Institucije su, prema Northu, „pravila igre u društvu\", odnosno formalna i neformalna ograničenja koja strukturiraju ljudsku interakciju, a obuhvaćaju zakone, propise i vlasničke norme s jedne strane te norme ponašanja, konvencije i samonametana ograničenja s druge @north1990.",
+      "firstSentence": "Institucije su, prema Northu, „pravila igre u društvu\", odnosno formalna i neformalna ograničenja koja strukturiraju ljudsku interakciju, a obuhvaćaju zakone, propise i vlasničke norme s jedne strane te norme ponašanja, konvencije i samonametana ograničenja s druge .",
       "mentions": 23
     },
     {
@@ -488,12 +488,12 @@
       "chapterTitle": "Nova institucionalna ekonomika",
       "dio": 3,
       "dioLabel": "DIO III: NOVA INSTITUCIONALNA I KONSTITUCIONALNA EKONOMIKA",
-      "firstSentence": "Transakcijski troškovi su svi troškovi korištenja tržišta koji nisu sama cijena razmijenjenog dobra, a obuhvaćaju traženje informacija, pronalaženje partnera, pregovaranje, pisanje ugovora, nadzor izvršenja i rješavanje sporova; njihovu visinu određuje kvaliteta institucija @c…",
+      "firstSentence": "Transakcijski troškovi su svi troškovi korištenja tržišta koji nisu sama cijena razmijenjenog dobra, a obuhvaćaju traženje informacija, pronalaženje partnera, pregovaranje, pisanje ugovora, nadzor izvršenja i rješavanje sporova; njihovu visinu određuje kvaliteta institucija .",
       "mentions": 5
     },
     {
       "id": "inkluzivne-ekstraktivne",
-      "term": "Inkluzivne institucije",
+      "term": "Inkluzivne i ekstraktivne institucije",
       "chapter": "chapters/11-institucionalna-ekonomika.qmd",
       "chapterTitle": "Nova institucionalna ekonomika",
       "dio": 3,
@@ -523,7 +523,7 @@
     },
     {
       "id": "veo-neizvjesnosti",
-      "term": "velom neizvjesnosti",
+      "term": "Veo neizvjesnosti",
       "chapter": "chapters/12-konstitucionalna-ekonomika.qmd",
       "chapterTitle": "Konstitucionalna (ustavna) ekonomika",
       "dio": 3,
@@ -548,7 +548,7 @@
       "chapterTitle": "Konstitucionalna (ustavna) ekonomika",
       "dio": 3,
       "dioLabel": "DIO III: NOVA INSTITUCIONALNA I KONSTITUCIONALNA EKONOMIKA",
-      "firstSentence": "Političko-proračunski ciklus je sustavno prilagođavanje fiskalne politike izbornom kalendaru, u kojemu se rashodi povećavaju a porezi smanjuju pred izbore radi veće potpore birača, dok se prilagodba i troškovi odgađaju na razdoblje nakon izbora @nordhaus1975.",
+      "firstSentence": "Političko-proračunski ciklus je sustavno prilagođavanje fiskalne politike izbornom kalendaru, u kojemu se rashodi povećavaju a porezi smanjuju pred izbore radi veće potpore birača, dok se prilagodba i troškovi odgađaju na razdoblje nakon izbora .",
       "mentions": 3
     },
     {
@@ -568,7 +568,7 @@
       "chapterTitle": "Instrumenti državne intervencije",
       "dio": 4,
       "dioLabel": "DIO IV: JAVNE FINANCIJE I JAVNE POLITIKE U PRAKSI",
-      "firstSentence": "NATO okvir Christophera Hooda klasificira državne instrumente prema četiri vrste resursa koje vlada može koristiti, a to su Nodality (informacijska centralnost), Authority (formalna ovlast), Treasure (financijska moć) i Organization (vlastiti institucionalni kapacitet) @hood1983.",
+      "firstSentence": "NATO okvir Christophera Hooda klasificira državne instrumente prema četiri vrste resursa koje vlada može koristiti, a to su Nodality (informacijska centralnost), Authority (formalna ovlast), Treasure (financijska moć) i Organization (vlastiti institucionalni kapacitet) .",
       "mentions": 1
     },
     {
@@ -618,7 +618,7 @@
       "chapterTitle": "Kako država troši naš novac?",
       "dio": 4,
       "dioLabel": "DIO IV: JAVNE FINANCIJE I JAVNE POLITIKE U PRAKSI",
-      "firstSentence": "Wagnerov zakon empirijsko je zapažanje i teorijska teza Adolpha Wagnera prema kojoj udio javne potrošnje u BDP-u sustavno raste s razvojem industrijskog društva, jer veća ekonomska kompleksnost povećava potražnju za regulacijom, obrazovanjem i infrastrukturom @wagner1890; @bir…",
+      "firstSentence": "Wagnerov zakon empirijsko je zapažanje i teorijska teza Adolpha Wagnera prema kojoj udio javne potrošnje u BDP-u sustavno raste s razvojem industrijskog društva, jer veća ekonomska kompleksnost povećava potražnju za regulacijom, obrazovanjem i infrastrukturom .",
       "mentions": 1
     },
     {
@@ -639,7 +639,7 @@
       "dio": 4,
       "dioLabel": "DIO IV: JAVNE FINANCIJE I JAVNE POLITIKE U PRAKSI",
       "firstSentence": "Javni dug je zbroj svih nepodmirenih obveza države prema vjerovnicima, najčešće izražen kao udio u BDP-u; njegova je dinamika određena primarnim saldom, kamatnom stopom na dug i stopom nominalnog rasta, pa kada je kamatna stopa viša od stope rasta (r > g), omjer duga raste i b…",
-      "mentions": 23
+      "mentions": 10
     },
     {
       "id": "fiskalna-unija",
@@ -658,7 +658,7 @@
       "chapterTitle": "Javne financije Europske unije",
       "dio": 4,
       "dioLabel": "DIO IV: JAVNE FINANCIJE I JAVNE POLITIKE U PRAKSI",
-      "firstSentence": "Europska javna dobra su politike, infrastrukture ili kapaciteti čije koristi prelaze granice pojedinih država članica i koje se zbog toga mogu učinkovitije financirati ili koordinirati na razini Unije nego isključivo nacionalno @europeanparliament2024; @darvas2025.",
+      "firstSentence": "Europska javna dobra su politike, infrastrukture ili kapaciteti čije koristi prelaze granice pojedinih država članica i koje se zbog toga mogu učinkovitije financirati ili koordinirati na razini Unije nego isključivo nacionalno .",
       "mentions": 1
     },
     {
@@ -708,7 +708,7 @@
       "chapterTitle": "Državni neuspjesi i prepreke kvalitetnim javnim politikama",
       "dio": 5,
       "dioLabel": "DIO V: KAKO DO KVALITETNIJIH JAVNIH POLITIKA?",
-      "firstSentence": "Provedbeni neuspjeh nastaje kada dobro zamišljena politika zakazuje u fazi provedbe zbog nedostatka administrativnog kapaciteta, nejasne raspodjele odgovornosti ili implementacijskog jaza između formalne odluke i stvarnog djelovanja uličnih birokrata @pressman1973; @lipsky1980.",
+      "firstSentence": "Provedbeni neuspjeh nastaje kada dobro zamišljena politika zakazuje u fazi provedbe zbog nedostatka administrativnog kapaciteta, nejasne raspodjele odgovornosti ili implementacijskog jaza između formalne odluke i stvarnog djelovanja uličnih birokrata .",
       "mentions": 1
     },
     {
@@ -792,6 +792,16 @@
       "mentions": 1
     },
     {
+      "id": "mrežno-upravljanje",
+      "term": "Mrežno upravljanje",
+      "chapter": "chapters/19-novo-upravljanje.qmd",
+      "chapterTitle": "Od novog javnog menadžmenta prema novom upravljanju",
+      "dio": 5,
+      "dioLabel": "DIO V: KAKO DO KVALITETNIJIH JAVNIH POLITIKA?",
+      "firstSentence": "Mrežno upravljanje (network governance) ili novo javno upravljanje (new governance) je pristup kojim se javne politike oblikuju i provode kroz stalne suradničke odnose između više aktera (vlada, lokalna tijela, privatni sektor, civilno društvo, građani), naglašavajući koordina…",
+      "mentions": 2
+    },
+    {
       "id": "whole-of-government",
       "term": "Whole-of-government",
       "chapter": "chapters/19-novo-upravljanje.qmd",
@@ -868,7 +878,7 @@
       "chapterTitle": "Reforme u javnom sektoru",
       "dio": 5,
       "dioLabel": "DIO V: KAKO DO KVALITETNIJIH JAVNIH POLITIKA?",
-      "firstSentence": "Kompenzacijska shema je mehanizam koji jasno identificiranim gubitnicima reforme isplaćuje naknadu iz reformskog viška, smanjujući individualnu neizvjesnost i status-quo pristranost; ne mijenja ekonomsku supstancu mjere, nego raspodjelom rizika povećava izglede njezinog prolaz…",
+      "firstSentence": "Kompenzacijska shema je mehanizam koji jasno identificiranim gubitnicima reforme isplaćuje naknadu iz reformskog viška, smanjujući individualnu neizvjesnost i status-quo pristranost; ne mijenja ekonomsku supstancu mjere, nego raspodjelom rizika povećava izglede njezinog prolaza .",
       "mentions": 1
     },
     {
@@ -893,13 +903,13 @@
     },
     {
       "id": "sok-terapija-gradualizam",
-      "term": "Šok-terapija",
+      "term": "Šok-terapija i gradualizam",
       "chapter": "chapters/21-reforme.qmd",
       "chapterTitle": "Reforme u javnom sektoru",
       "dio": 5,
       "dioLabel": "DIO V: KAKO DO KVALITETNIJIH JAVNIH POLITIKA?",
       "firstSentence": "Šok-terapija je strategija istodobne provedbe većeg broja reformi u kratkom roku, uz argument da nepotpuna tranzicija ostavlja prostor za blokadu, dok je gradualizam suprotna strategija postupnih, sekvenciranih promjena koje smanjuju socijalne troškove i daju institucijama vre…",
-      "mentions": 2
+      "mentions": 1
     },
     {
       "id": "reformski-zamor",
@@ -930,13 +940,6 @@
     {
       "source": "agencifikacija",
       "target": "institucije",
-      "weight": 1,
-      "cooc": 1,
-      "type": "cooc"
-    },
-    {
-      "source": "agencifikacija",
-      "target": "javni-dug",
       "weight": 1,
       "cooc": 1,
       "type": "cooc"
@@ -1007,13 +1010,6 @@
     {
       "source": "arrowljev-teorem",
       "target": "institucije",
-      "weight": 1,
-      "cooc": 1,
-      "type": "cooc"
-    },
-    {
-      "source": "arrowljev-teorem",
-      "target": "javni-dug",
       "weight": 1,
       "cooc": 1,
       "type": "cooc"
@@ -1133,8 +1129,8 @@
     {
       "source": "asimetricne-informacije",
       "target": "javni-dug",
-      "weight": 6,
-      "cooc": 6,
+      "weight": 3,
+      "cooc": 3,
       "type": "cooc"
     },
     {
@@ -1182,8 +1178,8 @@
     {
       "source": "asimetricne-informacije",
       "target": "lov-na-rentu",
-      "weight": 3,
-      "cooc": 3,
+      "weight": 2,
+      "cooc": 2,
       "type": "cooc"
     },
     {
@@ -1300,13 +1296,6 @@
     },
     {
       "source": "asimetricne-informacije",
-      "target": "sok-terapija-gradualizam",
-      "weight": 1,
-      "cooc": 1,
-      "type": "cooc"
-    },
-    {
-      "source": "asimetricne-informacije",
       "target": "stabilnost-javno-dobro",
       "weight": 3,
       "cooc": 3,
@@ -1350,13 +1339,6 @@
     {
       "source": "atkinsonov-indeks",
       "target": "institucije",
-      "weight": 1,
-      "cooc": 1,
-      "type": "cooc"
-    },
-    {
-      "source": "atkinsonov-indeks",
-      "target": "javni-dug",
       "weight": 1,
       "cooc": 1,
       "type": "cooc"
@@ -1629,13 +1611,6 @@
     },
     {
       "source": "bordino-pravilo",
-      "target": "javni-dug",
-      "weight": 1,
-      "cooc": 1,
-      "type": "cooc"
-    },
-    {
-      "source": "bordino-pravilo",
       "target": "javni-izbor",
       "weight": 1,
       "cooc": 1,
@@ -1699,21 +1674,7 @@
     },
     {
       "source": "bureau-shaping",
-      "target": "javni-dug",
-      "weight": 1,
-      "cooc": 1,
-      "type": "cooc"
-    },
-    {
-      "source": "bureau-shaping",
       "target": "javni-izbor",
-      "weight": 1,
-      "cooc": 1,
-      "type": "cooc"
-    },
-    {
-      "source": "bureau-shaping",
-      "target": "lov-na-rentu",
       "weight": 1,
       "cooc": 1,
       "type": "cooc"
@@ -1777,13 +1738,6 @@
     {
       "source": "condorcetov-paradoks",
       "target": "institucije",
-      "weight": 1,
-      "cooc": 1,
-      "type": "cooc"
-    },
-    {
-      "source": "condorcetov-paradoks",
-      "target": "javni-dug",
       "weight": 1,
       "cooc": 1,
       "type": "cooc"
@@ -1944,21 +1898,14 @@
     },
     {
       "source": "digitalna-drzava",
-      "target": "javni-dug",
-      "weight": 4,
-      "cooc": 1,
-      "type": "def"
-    },
-    {
-      "source": "digitalna-drzava",
-      "target": "lov-na-rentu",
+      "target": "mreze-javnih-politika",
       "weight": 1,
       "cooc": 1,
       "type": "cooc"
     },
     {
       "source": "digitalna-drzava",
-      "target": "mreze-javnih-politika",
+      "target": "mrežno-upravljanje",
       "weight": 1,
       "cooc": 1,
       "type": "cooc"
@@ -2001,13 +1948,6 @@
     {
       "source": "diskontna-stopa",
       "target": "institucije",
-      "weight": 2,
-      "cooc": 2,
-      "type": "cooc"
-    },
-    {
-      "source": "diskontna-stopa",
-      "target": "javni-dug",
       "weight": 2,
       "cooc": 2,
       "type": "cooc"
@@ -2127,9 +2067,9 @@
     {
       "source": "diskrecijska-fiskalna-politika",
       "target": "javni-dug",
-      "weight": 4,
+      "weight": 1,
       "cooc": 1,
-      "type": "def"
+      "type": "cooc"
     },
     {
       "source": "diskrecijska-fiskalna-politika",
@@ -2253,9 +2193,9 @@
     {
       "source": "drzavni-neuspjeh",
       "target": "javni-dug",
-      "weight": 12,
-      "cooc": 9,
-      "type": "def"
+      "weight": 6,
+      "cooc": 6,
+      "type": "cooc"
     },
     {
       "source": "drzavni-neuspjeh",
@@ -2309,13 +2249,20 @@
     {
       "source": "drzavni-neuspjeh",
       "target": "lov-na-rentu",
-      "weight": 4,
-      "cooc": 4,
+      "weight": 2,
+      "cooc": 2,
       "type": "cooc"
     },
     {
       "source": "drzavni-neuspjeh",
       "target": "medijanski-glasac",
+      "weight": 1,
+      "cooc": 1,
+      "type": "cooc"
+    },
+    {
+      "source": "drzavni-neuspjeh",
+      "target": "mrežno-upravljanje",
       "weight": 1,
       "cooc": 1,
       "type": "cooc"
@@ -2428,8 +2375,8 @@
     {
       "source": "drzavni-neuspjeh",
       "target": "sok-terapija-gradualizam",
-      "weight": 2,
-      "cooc": 2,
+      "weight": 1,
+      "cooc": 1,
       "type": "cooc"
     },
     {
@@ -2561,8 +2508,8 @@
     {
       "source": "eksternalija",
       "target": "javni-dug",
-      "weight": 8,
-      "cooc": 8,
+      "weight": 5,
+      "cooc": 5,
       "type": "cooc"
     },
     {
@@ -2617,8 +2564,8 @@
     {
       "source": "eksternalija",
       "target": "lov-na-rentu",
-      "weight": 3,
-      "cooc": 3,
+      "weight": 2,
+      "cooc": 2,
       "type": "cooc"
     },
     {
@@ -2714,13 +2661,6 @@
     },
     {
       "source": "eksternalija",
-      "target": "sok-terapija-gradualizam",
-      "weight": 1,
-      "cooc": 1,
-      "type": "cooc"
-    },
-    {
-      "source": "eksternalija",
       "target": "stabilnost-javno-dobro",
       "weight": 2,
       "cooc": 2,
@@ -2792,9 +2732,9 @@
     {
       "source": "europska-javna-dobra",
       "target": "javni-dug",
-      "weight": 4,
+      "weight": 1,
       "cooc": 1,
-      "type": "def"
+      "type": "cooc"
     },
     {
       "source": "europska-javna-dobra",
@@ -3114,13 +3054,6 @@
     {
       "source": "goodhartov-zakon",
       "target": "institucije",
-      "weight": 1,
-      "cooc": 1,
-      "type": "cooc"
-    },
-    {
-      "source": "goodhartov-zakon",
-      "target": "javni-dug",
       "weight": 1,
       "cooc": 1,
       "type": "cooc"
@@ -3435,13 +3368,6 @@
     },
     {
       "source": "inkluzivne-ekstraktivne",
-      "target": "javni-dug",
-      "weight": 1,
-      "cooc": 1,
-      "type": "cooc"
-    },
-    {
-      "source": "inkluzivne-ekstraktivne",
       "target": "javni-izbor",
       "weight": 1,
       "cooc": 1,
@@ -3450,13 +3376,6 @@
     {
       "source": "inkluzivne-ekstraktivne",
       "target": "javno-poduzece",
-      "weight": 1,
-      "cooc": 1,
-      "type": "cooc"
-    },
-    {
-      "source": "inkluzivne-ekstraktivne",
-      "target": "lov-na-rentu",
       "weight": 1,
       "cooc": 1,
       "type": "cooc"
@@ -3527,8 +3446,8 @@
     {
       "source": "input-output-ishod",
       "target": "javni-dug",
-      "weight": 3,
-      "cooc": 3,
+      "weight": 1,
+      "cooc": 1,
       "type": "cooc"
     },
     {
@@ -3548,13 +3467,6 @@
     {
       "source": "input-output-ishod",
       "target": "javno-poduzece",
-      "weight": 1,
-      "cooc": 1,
-      "type": "cooc"
-    },
-    {
-      "source": "input-output-ishod",
-      "target": "lov-na-rentu",
       "weight": 1,
       "cooc": 1,
       "type": "cooc"
@@ -3688,8 +3600,8 @@
     {
       "source": "institucije",
       "target": "javni-dug",
-      "weight": 23,
-      "cooc": 23,
+      "weight": 10,
+      "cooc": 10,
       "type": "cooc"
     },
     {
@@ -3793,8 +3705,8 @@
     {
       "source": "institucije",
       "target": "lov-na-rentu",
-      "weight": 9,
-      "cooc": 9,
+      "weight": 5,
+      "cooc": 5,
       "type": "cooc"
     },
     {
@@ -3823,6 +3735,13 @@
       "target": "mreze-javnih-politika",
       "weight": 1,
       "cooc": 1,
+      "type": "cooc"
+    },
+    {
+      "source": "institucije",
+      "target": "mrežno-upravljanje",
+      "weight": 2,
+      "cooc": 2,
       "type": "cooc"
     },
     {
@@ -4017,8 +3936,8 @@
     {
       "source": "institucije",
       "target": "sok-terapija-gradualizam",
-      "weight": 5,
-      "cooc": 2,
+      "weight": 4,
+      "cooc": 1,
       "type": "def"
     },
     {
@@ -4143,8 +4062,8 @@
     {
       "source": "institucionalna-kvaliteta",
       "target": "javni-dug",
-      "weight": 2,
-      "cooc": 2,
+      "weight": 1,
+      "cooc": 1,
       "type": "cooc"
     },
     {
@@ -4166,13 +4085,6 @@
       "target": "javno-poduzece",
       "weight": 2,
       "cooc": 2,
-      "type": "cooc"
-    },
-    {
-      "source": "institucionalna-kvaliteta",
-      "target": "lov-na-rentu",
-      "weight": 1,
-      "cooc": 1,
       "type": "cooc"
     },
     {
@@ -4248,62 +4160,34 @@
     {
       "source": "javni-dug",
       "target": "javni-izbor",
-      "weight": 18,
-      "cooc": 15,
-      "type": "def"
+      "weight": 8,
+      "cooc": 8,
+      "type": "cooc"
     },
     {
       "source": "javni-dug",
       "target": "javno-dobro",
-      "weight": 16,
-      "cooc": 13,
-      "type": "def"
+      "weight": 6,
+      "cooc": 6,
+      "type": "cooc"
     },
     {
       "source": "javni-dug",
       "target": "javno-poduzece",
-      "weight": 10,
-      "cooc": 7,
-      "type": "def"
-    },
-    {
-      "source": "javni-dug",
-      "target": "jednovrsne-preferencije",
-      "weight": 1,
-      "cooc": 1,
+      "weight": 4,
+      "cooc": 4,
       "type": "cooc"
     },
     {
       "source": "javni-dug",
       "target": "kaldor-hicks",
-      "weight": 3,
-      "cooc": 3,
-      "type": "cooc"
-    },
-    {
-      "source": "javni-dug",
-      "target": "kombinacija-instrumenata",
-      "weight": 1,
-      "cooc": 1,
+      "weight": 2,
+      "cooc": 2,
       "type": "cooc"
     },
     {
       "source": "javni-dug",
       "target": "kompenzacijska-shema",
-      "weight": 1,
-      "cooc": 1,
-      "type": "cooc"
-    },
-    {
-      "source": "javni-dug",
-      "target": "konc-koristi-rasprseni-troskovi",
-      "weight": 4,
-      "cooc": 1,
-      "type": "def"
-    },
-    {
-      "source": "javni-dug",
-      "target": "kontrafaktual",
       "weight": 1,
       "cooc": 1,
       "type": "cooc"
@@ -4318,69 +4202,27 @@
     {
       "source": "javni-dug",
       "target": "koordinacijski-neuspjeh",
-      "weight": 5,
-      "cooc": 2,
-      "type": "def"
-    },
-    {
-      "source": "javni-dug",
-      "target": "lafferova-krivulja",
-      "weight": 1,
-      "cooc": 1,
-      "type": "cooc"
-    },
-    {
-      "source": "javni-dug",
-      "target": "logika-kolektivnog-djelovanja",
       "weight": 2,
       "cooc": 2,
       "type": "cooc"
     },
     {
       "source": "javni-dug",
-      "target": "lorenz-gini",
-      "weight": 1,
-      "cooc": 1,
-      "type": "cooc"
-    },
-    {
-      "source": "javni-dug",
       "target": "lov-na-rentu",
-      "weight": 9,
-      "cooc": 9,
+      "weight": 2,
+      "cooc": 2,
       "type": "cooc"
     },
     {
       "source": "javni-dug",
       "target": "medijanski-glasac",
-      "weight": 4,
-      "cooc": 4,
+      "weight": 2,
+      "cooc": 2,
       "type": "cooc"
     },
     {
       "source": "javni-dug",
-      "target": "minimax-zaljenje",
-      "weight": 1,
-      "cooc": 1,
-      "type": "cooc"
-    },
-    {
-      "source": "javni-dug",
-      "target": "moc-dnevnog-reda",
-      "weight": 1,
-      "cooc": 1,
-      "type": "cooc"
-    },
-    {
-      "source": "javni-dug",
-      "target": "mreze-javnih-politika",
-      "weight": 4,
-      "cooc": 1,
-      "type": "def"
-    },
-    {
-      "source": "javni-dug",
-      "target": "mrtvi-teret",
+      "target": "mrežno-upravljanje",
       "weight": 1,
       "cooc": 1,
       "type": "cooc"
@@ -4394,72 +4236,23 @@
     },
     {
       "source": "javni-dug",
-      "target": "nato-okvir",
-      "weight": 1,
-      "cooc": 1,
-      "type": "cooc"
-    },
-    {
-      "source": "javni-dug",
-      "target": "niskanenov-model",
-      "weight": 2,
-      "cooc": 2,
-      "type": "cooc"
-    },
-    {
-      "source": "javni-dug",
-      "target": "novi-javni-menadzment",
-      "weight": 4,
-      "cooc": 1,
-      "type": "def"
-    },
-    {
-      "source": "javni-dug",
-      "target": "npv",
-      "weight": 1,
-      "cooc": 1,
-      "type": "cooc"
-    },
-    {
-      "source": "javni-dug",
-      "target": "opadajuca-granicna-korisnost",
-      "weight": 2,
-      "cooc": 2,
-      "type": "cooc"
-    },
-    {
-      "source": "javni-dug",
-      "target": "ovisnost-o-putanji",
-      "weight": 1,
-      "cooc": 1,
-      "type": "cooc"
-    },
-    {
-      "source": "javni-dug",
       "target": "pakiranje",
-      "weight": 2,
-      "cooc": 2,
+      "weight": 1,
+      "cooc": 1,
       "type": "cooc"
     },
     {
       "source": "javni-dug",
       "target": "pareto-ucinkovitost",
-      "weight": 2,
-      "cooc": 2,
-      "type": "cooc"
-    },
-    {
-      "source": "javni-dug",
-      "target": "paternalizam",
-      "weight": 2,
-      "cooc": 2,
+      "weight": 1,
+      "cooc": 1,
       "type": "cooc"
     },
     {
       "source": "javni-dug",
       "target": "polarizacija",
-      "weight": 2,
-      "cooc": 2,
+      "weight": 1,
+      "cooc": 1,
       "type": "cooc"
     },
     {
@@ -4472,13 +4265,6 @@
     {
       "source": "javni-dug",
       "target": "politicko-proracunski-ciklus",
-      "weight": 3,
-      "cooc": 3,
-      "type": "cooc"
-    },
-    {
-      "source": "javni-dug",
-      "target": "porezni-klin",
       "weight": 2,
       "cooc": 2,
       "type": "cooc"
@@ -4486,48 +4272,20 @@
     {
       "source": "javni-dug",
       "target": "principal-agent",
-      "weight": 6,
-      "cooc": 3,
-      "type": "def"
-    },
-    {
-      "source": "javni-dug",
-      "target": "prirodni-monopol",
-      "weight": 3,
-      "cooc": 3,
+      "weight": 1,
+      "cooc": 1,
       "type": "cooc"
     },
     {
       "source": "javni-dug",
       "target": "progresivnost",
-      "weight": 4,
-      "cooc": 4,
+      "weight": 1,
+      "cooc": 1,
       "type": "cooc"
     },
     {
       "source": "javni-dug",
       "target": "provedbeni-neuspjeh",
-      "weight": 1,
-      "cooc": 1,
-      "type": "cooc"
-    },
-    {
-      "source": "javni-dug",
-      "target": "racionalno-nepoznavanje",
-      "weight": 1,
-      "cooc": 1,
-      "type": "cooc"
-    },
-    {
-      "source": "javni-dug",
-      "target": "rawlsov-pristup",
-      "weight": 1,
-      "cooc": 1,
-      "type": "cooc"
-    },
-    {
-      "source": "javni-dug",
-      "target": "rct",
       "weight": 1,
       "cooc": 1,
       "type": "cooc"
@@ -4542,9 +4300,9 @@
     {
       "source": "javni-dug",
       "target": "regulacija",
-      "weight": 17,
-      "cooc": 14,
-      "type": "def"
+      "weight": 8,
+      "cooc": 8,
+      "type": "cooc"
     },
     {
       "source": "javni-dug",
@@ -4556,9 +4314,9 @@
     {
       "source": "javni-dug",
       "target": "regulatorno-zarobljavanje",
-      "weight": 8,
-      "cooc": 5,
-      "type": "def"
+      "weight": 1,
+      "cooc": 1,
+      "type": "cooc"
     },
     {
       "source": "javni-dug",
@@ -4570,44 +4328,37 @@
     {
       "source": "javni-dug",
       "target": "sok-terapija-gradualizam",
+      "weight": 1,
+      "cooc": 1,
+      "type": "cooc"
+    },
+    {
+      "source": "javni-dug",
+      "target": "stabilnost-javno-dobro",
+      "weight": 6,
+      "cooc": 6,
+      "type": "cooc"
+    },
+    {
+      "source": "javni-dug",
+      "target": "subvencija",
+      "weight": 6,
+      "cooc": 6,
+      "type": "cooc"
+    },
+    {
+      "source": "javni-dug",
+      "target": "transakcijski-troskovi",
       "weight": 2,
       "cooc": 2,
       "type": "cooc"
     },
     {
       "source": "javni-dug",
-      "target": "stabilnost-javno-dobro",
-      "weight": 18,
-      "cooc": 15,
-      "type": "def"
-    },
-    {
-      "source": "javni-dug",
-      "target": "subvencija",
-      "weight": 16,
-      "cooc": 16,
-      "type": "cooc"
-    },
-    {
-      "source": "javni-dug",
-      "target": "transakcijski-troskovi",
-      "weight": 5,
-      "cooc": 5,
-      "type": "cooc"
-    },
-    {
-      "source": "javni-dug",
       "target": "trzisni-neuspjeh",
-      "weight": 13,
-      "cooc": 10,
-      "type": "def"
-    },
-    {
-      "source": "javni-dug",
-      "target": "upravljanje-prema-rezultatima",
-      "weight": 4,
-      "cooc": 1,
-      "type": "def"
+      "weight": 6,
+      "cooc": 6,
+      "type": "cooc"
     },
     {
       "source": "javni-dug",
@@ -4615,13 +4366,6 @@
       "weight": 1,
       "cooc": 1,
       "type": "cooc"
-    },
-    {
-      "source": "javni-dug",
-      "target": "value-for-money",
-      "weight": 4,
-      "cooc": 1,
-      "type": "def"
     },
     {
       "source": "javni-dug",
@@ -4647,15 +4391,15 @@
     {
       "source": "javni-dug",
       "target": "vjerodostojnost",
-      "weight": 13,
-      "cooc": 13,
+      "weight": 7,
+      "cooc": 7,
       "type": "cooc"
     },
     {
       "source": "javni-dug",
       "target": "vlastita-sredstva",
-      "weight": 2,
-      "cooc": 2,
+      "weight": 1,
+      "cooc": 1,
       "type": "cooc"
     },
     {
@@ -4668,29 +4412,8 @@
     {
       "source": "javni-dug",
       "target": "wagnerov-zakon",
-      "weight": 4,
-      "cooc": 1,
-      "type": "def"
-    },
-    {
-      "source": "javni-dug",
-      "target": "weberovska-birokracija",
       "weight": 1,
       "cooc": 1,
-      "type": "cooc"
-    },
-    {
-      "source": "javni-dug",
-      "target": "whole-of-government",
-      "weight": 4,
-      "cooc": 1,
-      "type": "def"
-    },
-    {
-      "source": "javni-dug",
-      "target": "zeljezni-trokut",
-      "weight": 2,
-      "cooc": 2,
       "type": "cooc"
     },
     {
@@ -4759,8 +4482,8 @@
     {
       "source": "javni-izbor",
       "target": "lov-na-rentu",
-      "weight": 6,
-      "cooc": 6,
+      "weight": 4,
+      "cooc": 4,
       "type": "cooc"
     },
     {
@@ -4780,6 +4503,13 @@
     {
       "source": "javni-izbor",
       "target": "moc-dnevnog-reda",
+      "weight": 1,
+      "cooc": 1,
+      "type": "cooc"
+    },
+    {
+      "source": "javni-izbor",
+      "target": "mrežno-upravljanje",
       "weight": 1,
       "cooc": 1,
       "type": "cooc"
@@ -5102,8 +4832,8 @@
     {
       "source": "javno-dobro",
       "target": "lov-na-rentu",
-      "weight": 4,
-      "cooc": 4,
+      "weight": 3,
+      "cooc": 3,
       "type": "cooc"
     },
     {
@@ -5251,13 +4981,6 @@
       "target": "regulatorno-zarobljavanje",
       "weight": 3,
       "cooc": 3,
-      "type": "cooc"
-    },
-    {
-      "source": "javno-dobro",
-      "target": "sok-terapija-gradualizam",
-      "weight": 1,
-      "cooc": 1,
       "type": "cooc"
     },
     {
@@ -5347,13 +5070,20 @@
     {
       "source": "javno-poduzece",
       "target": "lov-na-rentu",
-      "weight": 3,
-      "cooc": 3,
+      "weight": 1,
+      "cooc": 1,
       "type": "cooc"
     },
     {
       "source": "javno-poduzece",
       "target": "medijanski-glasac",
+      "weight": 1,
+      "cooc": 1,
+      "type": "cooc"
+    },
+    {
+      "source": "javno-poduzece",
+      "target": "mrežno-upravljanje",
       "weight": 1,
       "cooc": 1,
       "type": "cooc"
@@ -5438,8 +5168,8 @@
     {
       "source": "javno-poduzece",
       "target": "sok-terapija-gradualizam",
-      "weight": 2,
-      "cooc": 2,
+      "weight": 1,
+      "cooc": 1,
       "type": "cooc"
     },
     {
@@ -5542,6 +5272,13 @@
     },
     {
       "source": "kaldor-hicks",
+      "target": "mrežno-upravljanje",
+      "weight": 1,
+      "cooc": 1,
+      "type": "cooc"
+    },
+    {
+      "source": "kaldor-hicks",
       "target": "npv",
       "weight": 1,
       "cooc": 1,
@@ -5626,13 +5363,6 @@
     },
     {
       "source": "kombinacija-instrumenata",
-      "target": "lov-na-rentu",
-      "weight": 1,
-      "cooc": 1,
-      "type": "cooc"
-    },
-    {
-      "source": "kombinacija-instrumenata",
       "target": "nato-okvir",
       "weight": 1,
       "cooc": 1,
@@ -5669,6 +5399,13 @@
     {
       "source": "kombinacija-instrumenata",
       "target": "trzisni-neuspjeh",
+      "weight": 1,
+      "cooc": 1,
+      "type": "cooc"
+    },
+    {
+      "source": "kompenzacijska-shema",
+      "target": "mrežno-upravljanje",
       "weight": 1,
       "cooc": 1,
       "type": "cooc"
@@ -6165,28 +5902,7 @@
     },
     {
       "source": "lov-na-rentu",
-      "target": "mreze-javnih-politika",
-      "weight": 1,
-      "cooc": 1,
-      "type": "cooc"
-    },
-    {
-      "source": "lov-na-rentu",
-      "target": "nato-okvir",
-      "weight": 1,
-      "cooc": 1,
-      "type": "cooc"
-    },
-    {
-      "source": "lov-na-rentu",
       "target": "niskanenov-model",
-      "weight": 2,
-      "cooc": 2,
-      "type": "cooc"
-    },
-    {
-      "source": "lov-na-rentu",
-      "target": "ovisnost-o-putanji",
       "weight": 1,
       "cooc": 1,
       "type": "cooc"
@@ -6228,23 +5944,9 @@
     },
     {
       "source": "lov-na-rentu",
-      "target": "politicko-proracunski-ciklus",
+      "target": "prirodni-monopol",
       "weight": 1,
       "cooc": 1,
-      "type": "cooc"
-    },
-    {
-      "source": "lov-na-rentu",
-      "target": "principal-agent",
-      "weight": 2,
-      "cooc": 2,
-      "type": "cooc"
-    },
-    {
-      "source": "lov-na-rentu",
-      "target": "prirodni-monopol",
-      "weight": 2,
-      "cooc": 2,
       "type": "cooc"
     },
     {
@@ -6264,8 +5966,8 @@
     {
       "source": "lov-na-rentu",
       "target": "regulacija",
-      "weight": 6,
-      "cooc": 6,
+      "weight": 4,
+      "cooc": 4,
       "type": "cooc"
     },
     {
@@ -6278,43 +5980,36 @@
     {
       "source": "lov-na-rentu",
       "target": "regulatorno-zarobljavanje",
-      "weight": 5,
-      "cooc": 5,
-      "type": "cooc"
-    },
-    {
-      "source": "lov-na-rentu",
-      "target": "sok-terapija-gradualizam",
-      "weight": 1,
-      "cooc": 1,
-      "type": "cooc"
-    },
-    {
-      "source": "lov-na-rentu",
-      "target": "stabilnost-javno-dobro",
-      "weight": 6,
-      "cooc": 6,
-      "type": "cooc"
-    },
-    {
-      "source": "lov-na-rentu",
-      "target": "subvencija",
-      "weight": 10,
-      "cooc": 7,
-      "type": "def"
-    },
-    {
-      "source": "lov-na-rentu",
-      "target": "transakcijski-troskovi",
       "weight": 3,
       "cooc": 3,
       "type": "cooc"
     },
     {
       "source": "lov-na-rentu",
-      "target": "trzisni-neuspjeh",
-      "weight": 4,
+      "target": "stabilnost-javno-dobro",
+      "weight": 3,
+      "cooc": 3,
+      "type": "cooc"
+    },
+    {
+      "source": "lov-na-rentu",
+      "target": "subvencija",
+      "weight": 7,
       "cooc": 4,
+      "type": "def"
+    },
+    {
+      "source": "lov-na-rentu",
+      "target": "transakcijski-troskovi",
+      "weight": 1,
+      "cooc": 1,
+      "type": "cooc"
+    },
+    {
+      "source": "lov-na-rentu",
+      "target": "trzisni-neuspjeh",
+      "weight": 3,
+      "cooc": 3,
       "type": "cooc"
     },
     {
@@ -6327,29 +6022,15 @@
     {
       "source": "lov-na-rentu",
       "target": "vjerodostojnost",
-      "weight": 5,
-      "cooc": 5,
-      "type": "cooc"
-    },
-    {
-      "source": "lov-na-rentu",
-      "target": "weberovska-birokracija",
-      "weight": 1,
-      "cooc": 1,
-      "type": "cooc"
-    },
-    {
-      "source": "lov-na-rentu",
-      "target": "whole-of-government",
-      "weight": 1,
-      "cooc": 1,
+      "weight": 3,
+      "cooc": 3,
       "type": "cooc"
     },
     {
       "source": "lov-na-rentu",
       "target": "zeljezni-trokut",
-      "weight": 2,
-      "cooc": 2,
+      "weight": 1,
+      "cooc": 1,
       "type": "cooc"
     },
     {
@@ -6501,6 +6182,13 @@
     },
     {
       "source": "mreze-javnih-politika",
+      "target": "mrežno-upravljanje",
+      "weight": 1,
+      "cooc": 1,
+      "type": "cooc"
+    },
+    {
+      "source": "mreze-javnih-politika",
       "target": "stabilnost-javno-dobro",
       "weight": 1,
       "cooc": 1,
@@ -6522,6 +6210,76 @@
     },
     {
       "source": "mreze-javnih-politika",
+      "target": "whole-of-government",
+      "weight": 1,
+      "cooc": 1,
+      "type": "cooc"
+    },
+    {
+      "source": "mrežno-upravljanje",
+      "target": "reformski-zamor",
+      "weight": 1,
+      "cooc": 1,
+      "type": "cooc"
+    },
+    {
+      "source": "mrežno-upravljanje",
+      "target": "regulacija",
+      "weight": 1,
+      "cooc": 1,
+      "type": "cooc"
+    },
+    {
+      "source": "mrežno-upravljanje",
+      "target": "sekvenciranje-reformi",
+      "weight": 1,
+      "cooc": 1,
+      "type": "cooc"
+    },
+    {
+      "source": "mrežno-upravljanje",
+      "target": "sok-terapija-gradualizam",
+      "weight": 1,
+      "cooc": 1,
+      "type": "cooc"
+    },
+    {
+      "source": "mrežno-upravljanje",
+      "target": "stabilnost-javno-dobro",
+      "weight": 2,
+      "cooc": 2,
+      "type": "cooc"
+    },
+    {
+      "source": "mrežno-upravljanje",
+      "target": "transakcijski-troskovi",
+      "weight": 1,
+      "cooc": 1,
+      "type": "cooc"
+    },
+    {
+      "source": "mrežno-upravljanje",
+      "target": "trzisni-neuspjeh",
+      "weight": 1,
+      "cooc": 1,
+      "type": "cooc"
+    },
+    {
+      "source": "mrežno-upravljanje",
+      "target": "vanjsko-sidro",
+      "weight": 1,
+      "cooc": 1,
+      "type": "cooc"
+    },
+    {
+      "source": "mrežno-upravljanje",
+      "target": "vjerodostojnost",
+      "weight": 2,
+      "cooc": 2,
+      "type": "cooc"
+    },
+    {
+      "source": "mrežno-upravljanje",
       "target": "whole-of-government",
       "weight": 1,
       "cooc": 1,
@@ -6921,13 +6679,6 @@
     },
     {
       "source": "pareto-ucinkovitost",
-      "target": "sok-terapija-gradualizam",
-      "weight": 1,
-      "cooc": 1,
-      "type": "cooc"
-    },
-    {
-      "source": "pareto-ucinkovitost",
       "target": "subvencija",
       "weight": 2,
       "cooc": 2,
@@ -6978,13 +6729,6 @@
     {
       "source": "paternalizam",
       "target": "regulacija",
-      "weight": 1,
-      "cooc": 1,
-      "type": "cooc"
-    },
-    {
-      "source": "paternalizam",
-      "target": "sok-terapija-gradualizam",
       "weight": 1,
       "cooc": 1,
       "type": "cooc"
@@ -7341,13 +7085,6 @@
     },
     {
       "source": "prirodni-monopol",
-      "target": "sok-terapija-gradualizam",
-      "weight": 1,
-      "cooc": 1,
-      "type": "cooc"
-    },
-    {
-      "source": "prirodni-monopol",
       "target": "subvencija",
       "weight": 2,
       "cooc": 2,
@@ -7629,8 +7366,8 @@
     {
       "source": "regulacija",
       "target": "sok-terapija-gradualizam",
-      "weight": 2,
-      "cooc": 2,
+      "weight": 1,
+      "cooc": 1,
       "type": "cooc"
     },
     {
@@ -7845,23 +7582,9 @@
     },
     {
       "source": "sok-terapija-gradualizam",
-      "target": "subvencija",
-      "weight": 1,
-      "cooc": 1,
-      "type": "cooc"
-    },
-    {
-      "source": "sok-terapija-gradualizam",
-      "target": "transakcijski-troskovi",
-      "weight": 1,
-      "cooc": 1,
-      "type": "cooc"
-    },
-    {
-      "source": "sok-terapija-gradualizam",
       "target": "trzisni-neuspjeh",
-      "weight": 2,
-      "cooc": 2,
+      "weight": 1,
+      "cooc": 1,
       "type": "cooc"
     },
     {

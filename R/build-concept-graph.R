@@ -63,10 +63,30 @@ CRO_STOP <- c("i","ili","te","pa","a","ali","na","u","za","od","do","sa","iz",
               "ne","to","sto","sve","vise","te","ovaj","taj","jedan","jedna",
               "bez","pri","po","o","ka","s","li","ako","kad","kada")
 
+# Ručni nadjev za prikazne oznake gdje je podebljani pojam u definiciji
+# gramatički sklonjen (npr. "Pareto učinkovita" → "Pareto učinkovitost") ili
+# gdje definicija uvodi par/trojku pojmova, a slug imenuje sve njih. Mijenja
+# SAMO prikaznu oznaku (term); regex za podudaranje i dalje se gradi iz prvog
+# podebljanog spomena u tekstu (koji je sklonjen kao i prose, pa bolje hvata).
+LABEL_OVERRIDES <- list(
+  "pareto-ucinkovitost"        = "Pareto učinkovitost",
+  "kaldor-hicks"               = "Kaldor-Hicksov kriterij",
+  "racionalno-nepoznavanje"    = "Racionalno nepoznavanje",
+  "veo-neizvjesnosti"          = "Veo neizvjesnosti",
+  "stabilnost-javno-dobro"     = "Stabilnost kao javno dobro",
+  "inkluzivne-ekstraktivne"    = "Inkluzivne i ekstraktivne institucije",
+  "lorenz-gini"                = "Lorenzova krivulja i Ginijev koeficijent",
+  "sok-terapija-gradualizam"   = "Šok-terapija i gradualizam",
+  "input-output-ishod"         = "Input, output i ishod"
+)
+
 # Pretvori pojam u "stemove" značajnih riječi (za hvatanje sklonidbe).
+# Prag je >= 3 znaka: kratke RAZLIKOVNE riječi poput "dug" (javni dug), "lov"
+# (lov na rentu) ili "šok" moraju preživjeti, inače se regex sruši na jedan
+# sveprisutan stem (npr. samo "javn") i pojam se lažno broji u svakom poglavlju.
 term_stems <- function(term) {
   toks <- str_split(norm_txt(term), " ")[[1]]
-  toks <- toks[nchar(toks) >= 4 & !(toks %in% CRO_STOP)]
+  toks <- toks[nchar(toks) >= 3 & !(toks %in% CRO_STOP)]
   vapply(toks, function(w) {
     n <- nchar(w)
     if (n >= 7) substr(w, 1, n - 2)
@@ -98,8 +118,11 @@ concepts <- list()
 chapter_raw   <- list()  # file -> puni normalizirani tekst poglavlja
 chapter_title <- list()
 
-def_open_re  <- "^:::+\\s*\\{#def-([a-z0-9-]+)\\}"
-fence_re     <- "^:::+\\s*$"
+# Slug klasa [^}]+ (ne samo ASCII) — neki slugovi imaju dijakritike,
+# npr. {#def-mrežno-upravljanje}; slug se koristi doslovno kao id i #def- sidro.
+def_open_re  <- "^:::+\\s*\\{#def-([^}]+)\\}"
+fence_open_re<- "^:::+\\s*\\{"        # bilo koji div-otvarač (ugniježđeni callout itd.)
+fence_close_re<- "^:::+\\s*$"         # goli zatvarač
 
 for (f in chapter_files) {
   path <- file.path(PROJECT_ROOT, f)
@@ -125,16 +148,26 @@ for (f in chapter_files) {
     m <- str_match(lines[i], def_open_re)
     if (!is.na(m[1, 1])) {
       slug <- m[1, 2]
-      j <- i + 1L
+      # Hvatanje tijela uz praćenje dubine: ugniježđeni ::: {.callout} ... :::
+      # ne smije prerano zatvoriti definiciju.
+      depth <- 1L; j <- i + 1L
       body <- character(0)
-      while (j <= n && !str_detect(lines[j], fence_re)) {
-        body <- c(body, lines[j]); j <- j + 1L
+      while (j <= n && depth > 0L) {
+        ln <- lines[j]
+        if (str_detect(ln, fence_open_re)) { depth <- depth + 1L; body <- c(body, ln) }
+        else if (str_detect(ln, fence_close_re)) { depth <- depth - 1L; if (depth > 0L) body <- c(body, ln) }
+        else body <- c(body, ln)
+        j <- j + 1L
       }
       block <- paste(body, collapse = " ")
-      term  <- str_match(block, "\\*\\*([^*]+)\\*\\*")[, 2]
-      if (is.na(term)) term <- slug
-      # prva rečenica (do prvog ". " ili kraj), bez markdown bolda/kurziva
-      clean <- str_replace_all(block, "\\*\\*|\\*|\\[|\\]|\\(#?[a-z0-9-]+\\)", "")
+      matchTerm <- str_match(block, "\\*\\*([^*]+)\\*\\*")[, 2]   # prvi podebljani spomen
+      if (is.na(matchTerm)) matchTerm <- slug
+      # prikazna oznaka: ručni nadjev ako postoji, inače prvi podebljani spomen
+      label <- if (!is.null(LABEL_OVERRIDES[[slug]])) LABEL_OVERRIDES[[slug]] else matchTerm
+      # prva rečenica (do prvog ". " ili kraj), bez markdown bolda i citata [@kljuc]
+      clean <- str_replace_all(block, "\\[[^]]*@[^]]*\\]", "")     # [@kljuc] / [tekst @kljuc]
+      clean <- str_replace_all(clean, "@[A-Za-z0-9_:.-]+", "")     # goli @kljuc
+      clean <- str_replace_all(clean, "\\*\\*|\\*|\\[|\\]|\\(#?[a-z0-9-]+\\)", "")
       clean <- str_squish(clean)
       sent  <- str_match(clean, "^(.*?[\\.!?])\\s")[, 2]
       if (is.na(sent)) sent <- clean
@@ -142,16 +175,16 @@ for (f in chapter_files) {
 
       concepts[[slug]] <- list(
         id           = slug,
-        term         = str_trim(term),
+        term         = str_trim(label),
         chapter      = f,
         chapterTitle = chapter_title[[f]],
         dio          = chapter_dio[[f]]$dio,
         dioLabel     = chapter_dio[[f]]$dioLabel,
         firstSentence= sent,
         defBlockNorm = norm_txt(block),
-        regex        = term_regex(term_stems(term))
+        regex        = term_regex(term_stems(matchTerm))
       )
-      i <- j + 1L
+      i <- j
     } else {
       i <- i + 1L
     }
