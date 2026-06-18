@@ -1,0 +1,99 @@
+---
+title: "Tjedni raspored"
+subtitle: "Predavanja i seminari po tjednima"
+toc: false
+number-sections: false
+lang: hr-HR
+comments: false
+format:
+  html:
+    page-layout: full
+    body-classes: vd-page
+---
+
+```{=html}
+<nav class="nastava-subnav" aria-label="Nastava">
+  <a class="nastava-subnav-link" href="predavanja.html">Predavanja</a>
+  <a class="nastava-subnav-link" href="silabus.html">Silabus</a>
+  <a class="nastava-subnav-link is-active" href="raspored.html">Tjedni raspored</a>
+</nav>
+
+<header class="vd-hub-head">
+  <span class="vd-hub-kicker">Nastava · raspored</span>
+  <h1 class="vd-hub-title">Tjedni raspored</h1>
+  <p class="vd-hub-lede">Raspored predavanja i seminara po tjednima, povezan s poglavljima udžbenika. Datumi i statusi ažuriraju se tijekom semestra; cjeloviti opis tema nalazi se u silabusu kolegija.</p>
+</header>
+```
+
+## Raspored predavanja i seminara
+
+### Cjelina 1: Klasična analiza javnih financija i politika
+
+| Tjedan | Datum | Tema predavanja | Seminarska aktivnost | Status |
+|:------:|:-----:|-----------------|---------------------|:------:|
+| 1 | — | [Uvod u kolegij i uloga države](chapters/01-uloga-drzave.html) | Rasprava: tržišni i državni neuspjeh | [Uskoro]{.badge-upcoming} |
+| 2 | — | [Alokacijska funkcija i tržišni neuspjesi](chapters/02-alokacijska-funkcija.html) | Vježba: klasifikacija dobara | [Uskoro]{.badge-upcoming} |
+| 3 | — | [Distribucijska i stabilizacijska funkcija](chapters/03-distribucijska-funkcija.html) | Vježba s podacima: mjerenje nejednakosti | [Uskoro]{.badge-upcoming} |
+| 4 | — | [Teorija oporezivanja](chapters/05-porezi.html) | Vježba: porezna incidencija | [Uskoro]{.badge-upcoming} |
+
+### Cjelina 2: Teorija javnog izbora
+
+| Tjedan | Datum | Tema predavanja | Seminarska aktivnost | Status |
+|:------:|:-----:|-----------------|---------------------|:------:|
+| 5 | — | [Uvod u javni izbor i teorija igara](chapters/06-javni-izbor.html) | Radionica: zatvorenikova dilema | [Uskoro]{.badge-upcoming} |
+| 6 | — | [Kolektivni izbor i pravila glasovanja](chapters/07-kolektivni-izbor.html) | Vježba: usporedba glasačkih pravila | [Uskoro]{.badge-upcoming} |
+| 7 | — | [Stranke, izbori i interesne skupine](chapters/08-stranke-izbori.html) | Rasprava: lobiranje i lov na rentu | [Uskoro]{.badge-upcoming} |
+| 8 | — | [Birokracija i javni sektor](chapters/10-birokracija.html) | Vježba: Niskanenov model | [Uskoro]{.badge-upcoming} |
+
+::: {.callout-note}
+## Kolokvij 1
+
+Nakon druge cjeline održava se prvi kolokvij. Gradivo obuhvaća cjeline 1 i 2 (poglavlja o ulozi države, funkcijama javnih financija, oporezivanju i teoriji javnog izbora).
+:::
+
+### Cjelina 3: Nova institucionalna i konstitucionalna ekonomika
+
+| Tjedan | Datum | Tema predavanja | Seminarska aktivnost | Status |
+|:------:|:-----:|-----------------|---------------------|:------:|
+| 9 | — | [Institucionalna ekonomika](chapters/11-institucionalna-ekonomika.html) | Rasprava: institucije i ovisnost o putanji | [Uskoro]{.badge-upcoming} |
+| 10 | — | [Konstitucionalna ekonomika](chapters/12-konstitucionalna-ekonomika.html) | Vježba: fiskalna pravila | [Uskoro]{.badge-upcoming} |
+
+### Cjelina 4: Javne financije i javne politike u praksi
+
+| Tjedan | Datum | Tema predavanja | Seminarska aktivnost | Status |
+|:------:|:-----:|-----------------|---------------------|:------:|
+| 11 | — | [Instrumenti javnih politika](chapters/13-instrumenti.html) | Radionica: izbor instrumenta | [Uskoro]{.badge-upcoming} |
+| 12 | — | [Javna potrošnja i porezni sustavi u praksi](chapters/14-javna-potrosnja.html) | Vježba s podacima: struktura rashoda | [Uskoro]{.badge-upcoming} |
+| 13 | — | [Javne financije Europske unije](chapters/16-eu-javne-financije.html) | Rasprava: Hrvatska u fiskalnom okviru EU | [Uskoro]{.badge-upcoming} |
+
+### Cjelina 5: Kako do kvalitetnijih javnih politika?
+
+| Tjedan | Datum | Tema predavanja | Seminarska aktivnost | Status |
+|:------:|:-----:|-----------------|---------------------|:------:|
+| 14 | — | [Državni neuspjesi](chapters/17-drzavni-neuspjesi.html) · [Novi javni menadžment](chapters/18-novi-javni-menadzment.html) · [Novo upravljanje](chapters/19-novo-upravljanje.html) | Rasprava: prepoznavanje državnih neuspjeha | [Uskoro]{.badge-upcoming} |
+| 15 | — | [Analiza troškova i koristi i evaluacija](chapters/20-cba-evaluacija.html) · [Reforme](chapters/21-reforme.html) | Radionica: skica analize troškova i koristi | [Uskoro]{.badge-upcoming} |
+
+::: {.callout-note}
+## Kolokvij 2
+
+Drugi kolokvij održava se na kraju semestra i obuhvaća gradivo cjelina 3, 4 i 5 (institucije, javne financije u praksi te kvaliteta i reforma javnih politika).
+:::
+
+## Legenda statusa
+
+| Oznaka | Značenje |
+|--------|----------|
+| [Završeno]{.badge-completed} | Predavanje je održano, materijali su dostupni |
+| [Aktualno]{.badge-current} | Tema tekućeg tjedna nastave |
+| [Uskoro]{.badge-upcoming} | Predavanje još nije održano |
+
+## Važni datumi
+
+| Događaj | Datum |
+|---------|:-----:|
+| Početak nastave | — |
+| Prvi kolokvij | — |
+| Predaja teme seminarskog rada | — |
+| Drugi kolokvij | — |
+| Predaja seminarskog rada | — |
+| Kraj nastave | — |

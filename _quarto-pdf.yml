@@ -7,7 +7,7 @@
 #
 # APPENDICES: the PDF should carry ONLY the bibliography (references.qmd), while
 # the website keeps the full appendix set (pojmovnik, vodič, priručnik, resursi,
-# alat, podaci, uči-s-AI, silabusi). This CANNOT be done from this profile —
+# alat, podaci, uči-s-AI, predavanja, silabus, raspored). This CANNOT be done from this profile —
 # Quarto merges `book.appendices` arrays additively, so a short list here just
 # gets appended to the full list in _quarto.yml. Instead, scripts/render-book-pdf.ps1
 # temporarily rewrites the appendices block in _quarto.yml to references-only for

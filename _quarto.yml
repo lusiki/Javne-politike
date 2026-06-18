@@ -62,8 +62,14 @@ book:
         href: podaci.html
       - text: "Uči uz AI"
         href: uci-s-ai.html
-      - text: "Silabusi"
-        href: silabusi.html
+      - text: "Nastava"
+        menu:
+          - text: "Predavanja"
+            href: predavanja.html
+          - text: "Silabus"
+            href: silabus.html
+          - text: "Tjedni raspored"
+            href: raspored.html
     right: []
 
   search:
@@ -155,7 +161,9 @@ book:
     - alat.qmd
     - podaci.qmd
     - uci-s-ai.qmd
-    - silabusi.qmd
+    - predavanja.qmd
+    - silabus.qmd
+    - raspored.qmd
 
 bibliography: references.bib
 

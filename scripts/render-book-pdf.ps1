@@ -2,7 +2,7 @@
 #
 # WHY THIS SCRIPT EXISTS: the PDF should carry only the bibliography as an
 # appendix, while the website keeps the full appendix set (pojmovnik, vodic,
-# prirucnik, resursi, alat, podaci, uci-s-AI, silabusi). Quarto profiles merge
+# prirucnik, resursi, alat, podaci, uci-s-AI, predavanja, silabus, raspored). Quarto profiles merge
 # book.appendices arrays ADDITIVELY, so _quarto-pdf.yml cannot shrink the list:
 # a short list there just gets appended to the full list in _quarto.yml.
 #
@@ -41,7 +41,7 @@ try {
   # (its `    - ...` children, `  #` comments, and interleaved blank lines) and
   # resume at the next `  `-level key (e.g. bibliography:). This can never spill
   # into bibliography:/crossref:/format: the way a greedy regex did.
-  $lines = Get-Content $cfg
+  $lines = Get-Content $cfg -Encoding UTF8
   $out = New-Object System.Collections.Generic.List[string]
   $i = 0; $found = $false
   while ($i -lt $lines.Count) {

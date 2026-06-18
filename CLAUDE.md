@@ -17,7 +17,8 @@ A Quarto book on Croatian public policy and public choice theory, co-authored by
 
 ## Navbar / site structure
 
-Eight tabs in the pinned navbar (defined in `_quarto.yml` `book.navbar.left`):
+Eight tabs in the pinned navbar (defined in `_quarto.yml` `book.navbar.left`). The
+last tab, **Nastava**, is a dropdown menu grouping the three teaching pages:
 
 | Tab | Source file |
 |-----|-------------|
@@ -28,7 +29,7 @@ Eight tabs in the pinned navbar (defined in `_quarto.yml` `book.navbar.left`):
 | Alat | `alat.qmd` |
 | Podaci | `podaci.qmd` |
 | Uči uz AI | `uci-s-ai.qmd` |
-| Silabusi | `silabusi.qmd` |
+| Nastava (dropdown) | `predavanja.qmd` (Predavanja) · `silabus.qmd` (Silabus) · `raspored.qmd` (Tjedni raspored) |
 
 ## Build commands
 
@@ -45,8 +46,8 @@ chapters/             active .qmd chapter files (canonical list: _quarto.yml)
 vodic/                vodič subpages — one mental-map page per chapter (01–21 plus 06a — 22 subpages;
                       hidden from sidebar via pruneSidebar in book-include.html)
 predavanja/           reveal.js lecture decks (underscore-prefixed .qmd source + committed .html,
-                      statecraft.scss) — served as resources, see Silabusi tab
-styles/               custom.scss, _dark.scss, _atlas.scss, _vodic.scss, styles.css, book-include.html
+                      statecraft.scss) — served as resources, see Nastava ▸ Predavanja tab
+styles/               custom.scss, _dark.scss, _atlas.scss, _vodic.scss, _nastava.scss, styles.css, book-include.html
 R/                    setup.R (sourced in each chapter), theme_book.R (ggplot2 theme),
                       build-ai-exports.R (pre-render hook → docs/ai/, docs/llms*.txt, data/ai-exports.json),
                       build-concept-graph.R (manual → data/concept-graph.json),
@@ -72,7 +73,10 @@ resursi.qmd           appendix: resource list
 alat.qmd              appendix: tools
 podaci.qmd            appendix: datasets reference (Atlas data from data/atlas/)
 uci-s-ai.qmd          appendix: "Uči uz AI" — AI-assisted study page (reads data/ai-exports.json)
-silabusi.qmd          appendix: syllabi + lecture deck hub (links to predavanja/ HTML decks)
+predavanja.qmd        Nastava ▸ Predavanja: lecture-deck hub (vd-hub cards → predavanja/ HTML decks)
+silabus.qmd           Nastava ▸ Silabus: course syllabus (Javne politike, studij sociologije,
+                      nositeljica Petra Palić); book's 5 dijelova → weekly plan; styled via _nastava.scss
+raspored.qmd          Nastava ▸ Tjedni raspored: weekly schedule (status badges, links to chapters)
 404.qmd               custom 404 page (Quarto special-cased, keep)
 references.bib        BibTeX bibliography for all citations
 STYLE.md              editorial style guide (see Content conventions § Editorial style)

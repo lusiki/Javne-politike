@@ -1,0 +1,247 @@
+---
+title: "Silabus kolegija"
+subtitle: "Javne politike · preddiplomski studij sociologije"
+toc: false
+number-sections: false
+lang: hr-HR
+comments: false
+format:
+  html:
+    page-layout: full
+    body-classes: vd-page
+---
+
+```{=html}
+<nav class="nastava-subnav" aria-label="Nastava">
+  <a class="nastava-subnav-link" href="predavanja.html">Predavanja</a>
+  <a class="nastava-subnav-link is-active" href="silabus.html">Silabus</a>
+  <a class="nastava-subnav-link" href="raspored.html">Tjedni raspored</a>
+</nav>
+
+<header class="vd-hub-head">
+  <span class="vd-hub-kicker">Nastava · silabus</span>
+  <h1 class="vd-hub-title">Silabus kolegija</h1>
+  <p class="vd-hub-lede">Javne politike — kolegij preddiplomskog studija sociologije koji studente uvodi u ekonomsku analizu države, teoriju javnog izbora i oblikovanje javnih politika. Sadržaj kolegija prati istoimeni interaktivni udžbenik i nadograđuje ga predavanjima, seminarima i vježbama s podacima.</p>
+</header>
+```
+
+::: {.callout-note}
+## Kontekst kolegija
+
+| | |
+|---|---|
+| **Kolegij** | Javne politike |
+| **Studij** | Sociologija, Hrvatsko katoličko sveučilište |
+| **Godina** | 2. godina preddiplomskog studija |
+| **Semestar** | Ljetni semestar 2025./2026. |
+| **ECTS** | 6 |
+| **Opterećenje** | 30 sati predavanja + 30 sati seminara |
+| **Nositeljica** | izv. dr. sc. Petra Palić |
+:::
+
+## O kolegiju
+
+Država je prisutna u gotovo svakom aspektu društvenog života, od obrazovanja i zdravstva do poreza, mirovina i regulacije tržišta rada. Za sociologa razumijevanje države nije sporedna tema, nego ključ za tumačenje načina na koji se raspodjeljuju resursi, moć i životne šanse. Ovaj kolegij studente sociologije opskrbljuje pojmovnim aparatom kojim mogu analizirati kako javne politike nastaju, čije interese odražavaju i zašto tako često ne ostvaruju ono što obećavaju.
+
+Kolegij prati logiku postupnog građenja znanja. Najprije postavljamo pitanje zašto država uopće intervenira u gospodarstvo i koje funkcije pritom preuzima. Zatim napuštamo pretpostavku o dobronamjernom planeru i ulazimo u teoriju javnog izbora, koja političke aktere promatra jednako trezveno kao i tržišne. Treća cjelina pokazuje da pravila i institucije oblikuju ishode jednako snažno kao i namjere pojedinaca, nakon čega prelazimo na javne financije i javne politike u praksi. Kolegij zaokružujemo pitanjem kako uopće doći do kvalitetnijih javnih politika, od dijagnoze državnih neuspjeha do reformskih pristupa.
+
+Sadržajna okosnica kolegija temelji se na udžbeniku *Sve što želite znati o državi i javnim politikama u Hrvatskoj* autora Milana Deskar-Škrbića, Petre Palić i Luke Šikića. Udžbenik je interaktivan i dostupan online, a teoriju povezuje s primjerima iz hrvatske i europske prakse te s vježbama na stvarnim podacima. Naglasak je na ekonomskoj intuiciji i kritičkom čitanju javnih politika, a ne na matematičkoj tehnici.
+
+## Cjelina 1: Klasična analiza javnih financija i politika {.cjelina-header}
+
+*Tjedni 1 do 4*
+
+Prva cjelina postavlja temelje. Prije nego što javne politike možemo procjenjivati, trebamo razumjeti zašto država postoji kao ekonomski akter i koje zadaće preuzima na sebe. Polazimo od tržišnih neuspjeha kao klasičnog opravdanja za državnu intervenciju, a zatim razlažemo tri Musgraveove funkcije države, alokacijsku, distribucijsku i stabilizacijsku, te teoriju oporezivanja kao prihodovnu stranu tih funkcija.
+
+### Tjedan 1: Uvod u kolegij i uloga države
+
+Zašto bi tržišno gospodarstvo uopće trebalo državu? Prvo predavanje uvodi temeljno pitanje cijelog kolegija i razlikuje normativno gledište, koje pita što bi država trebala raditi, od pozitivnog, koje pita što država stvarno radi i zašto. Upoznajemo se s logikom kolegija, načinom rada na seminarima i interaktivnim udžbenikom te prvi put susrećemo pojmove tržišnog i državnog neuspjeha kao dva pola oko kojih se vrti analiza javnih politika.
+
+::: {.material-links}
+[Zašto bismo otvorili ovu knjigu](chapters/00-uvod.html){.btn-material} [Uloga države](chapters/01-uloga-drzave.html){.btn-material} [Slajdovi — Predavanje 1](predavanja/01-uvod-u-javni-izbor.html){.btn-material}
+:::
+
+### Tjedan 2: Alokacijska funkcija i tržišni neuspjesi
+
+Kada tržište ne uspijeva osigurati učinkovitu razinu nekog dobra, otvara se prostor za državnu intervenciju. Predavanje obrađuje javna dobra i problem slobodnog jahača, eksternalije i Coaseov teorem, asimetriju informacija te prirodne monopole. Cilj je naučiti prepoznati o kojem je tipu tržišnog neuspjeha riječ jer upravo dijagnoza određuje koji je instrument javne politike primjeren.
+
+::: {.material-links}
+[Alokacijska funkcija](chapters/02-alokacijska-funkcija.html){.btn-material}
+:::
+
+### Tjedan 3: Distribucijska i stabilizacijska funkcija
+
+Učinkovitost nije jedini kriterij dobre politike. Treći tjedan posvećen je raspodjeli dohotka i bogatstva, mjerenju nejednakosti Lorenzovom krivuljom i Ginijevim koeficijentom te granicama redistribucije. Drugi dio predavanja prelazi na stabilizacijsku funkciju, ulogu fiskalne i monetarne politike u ublažavanju ekonomskih ciklusa, automatske stabilizatore i multiplikatore.
+
+::: {.material-links}
+[Distribucijska funkcija](chapters/03-distribucijska-funkcija.html){.btn-material} [Stabilizacijska funkcija](chapters/04-stabilizacijska-funkcija.html){.btn-material}
+:::
+
+### Tjedan 4: Teorija oporezivanja
+
+Svaka država financira svoje djelovanje porezima, a način na koji ih ubire ima dalekosežne posljedice. Predavanje uvodi načela pravednog i učinkovitog oporezivanja, razliku između izravnih i neizravnih poreza, pojam poreznog opterećenja i mrtvog tereta poreza te pitanje tko stvarno snosi porez kroz poreznu incidenciju. Ova tema zaokružuje klasičnu analizu javnih financija i priprema teren za političku ekonomiju koja slijedi.
+
+::: {.material-links}
+[Porezi i teorija oporezivanja](chapters/05-porezi.html){.btn-material}
+:::
+
+## Cjelina 2: Teorija javnog izbora {.cjelina-header}
+
+*Tjedni 5 do 8*
+
+Druga cjelina mijenja kut gledanja. Umjesto pretpostavke da država djeluje kao dobronamjerni planer, teorija javnog izbora političke aktere, birače, stranke, interesne skupine i birokrate, promatra kao racionalne pojedince koji slijede vlastite ciljeve. Ova promjena perspektive objašnjava mnoge naizgled iracionalne ishode javnih politika i čini konceptualnu jezgru kolegija.
+
+### Tjedan 5: Uvod u javni izbor i teorija igara
+
+Što se dogodi kada metode ekonomske analize primijenimo na politiku? Predavanje uvodi temeljnu ideju javnog izbora, politiku bez romantike, te paradoks glasanja i problem racionalnog nepoznavanja (racionalne ignorancije) birača. U drugom dijelu upoznajemo se s osnovama teorije igara, Nashevom ravnotežom i zatvorenikovom dilemom kao alatima za analizu strateškog ponašanja u javnim politikama.
+
+::: {.material-links}
+[Javni izbor](chapters/06-javni-izbor.html){.btn-material} [Teorija igara](chapters/06a-teorija-igara.html){.btn-material}
+:::
+
+### Tjedan 6: Kolektivni izbor i pravila glasovanja
+
+Kako iz pojedinačnih preferencija nastaje kolektivna odluka? Predavanje obrađuje Arrowljev teorem nemogućnosti, koji pokazuje da nijedno glasačko pravilo ne može istodobno zadovoljiti sve razumne kriterije, zatim teoriju medijanskog birača te usporedbu glasačkih pravila. Studenti uče zašto sam izbor postupka odlučivanja unaprijed oblikuje ishod.
+
+::: {.material-links}
+[Kolektivni izbor](chapters/07-kolektivni-izbor.html){.btn-material}
+:::
+
+### Tjedan 7: Stranke, izbori i interesne skupine
+
+Političko natjecanje ima vlastitu ekonomsku logiku. Predavanje uvodi Downsov model stranačkog natjecanja i prostornu konkurenciju za glasove, a zatim prelazi na interesne skupine, logiku kolektivnog djelovanja, lobiranje i lov na rentu. Cilj je razumjeti zašto koncentrirani interesi često nadvladaju raspršeni interes većine.
+
+::: {.material-links}
+[Stranke i izbori](chapters/08-stranke-izbori.html){.btn-material} [Interesne skupine](chapters/09-interesne-skupine.html){.btn-material}
+:::
+
+### Tjedan 8: Birokracija i javni sektor
+
+Tko zapravo provodi javne politike i s kakvim motivima? Predavanje promatra birokraciju kao racionalnog aktera, uvodi Niskanenov model maksimizacije proračuna i problem odnosa principala i agenta između izabranih dužnosnika i javne uprave. Ova tema zaokružuje teoriju javnog izbora i prethodi prvom kolokviju.
+
+::: {.material-links}
+[Birokracija](chapters/10-birokracija.html){.btn-material}
+:::
+
+## Cjelina 3: Nova institucionalna i konstitucionalna ekonomika {.cjelina-header}
+
+*Tjedni 9 i 10*
+
+Treća cjelina pokazuje da pravila igre oblikuju ishode jednako snažno kao i namjere aktera. Institucije, formalna pravila i neformalne norme, određuju troškove transakcija i strukturu poticaja, a ustavna razina odlučivanja postavlja okvir unutar kojega se vodi svakodnevna politika.
+
+### Tjedan 9: Institucionalna ekonomika
+
+Zašto neka društva razvijaju institucije koje potiču suradnju, a druga ostaju zarobljena u neučinkovitim obrascima? Predavanje uvodi transakcijske troškove, prava vlasništva i Northovu teoriju institucija kao pravila igre, te pojam ovisnosti o putanji koji objašnjava trajnost jednom uspostavljenih institucionalnih rješenja.
+
+::: {.material-links}
+[Institucionalna ekonomika](chapters/11-institucionalna-ekonomika.html){.btn-material}
+:::
+
+### Tjedan 10: Konstitucionalna ekonomika
+
+Postoji razlika između odluka koje donosimo unutar pravila i odluka o samim pravilima. Predavanje uvodi razliku između te dvije razine odlučivanja, ulogu ustavnih ograničenja fiskalne politike i fiskalnih pravila te ideju da se trajna ograničenja moći dogovaraju iza vela neznanja, prije nego što znamo koju ćemo poziciju u društvu zauzeti.
+
+::: {.material-links}
+[Konstitucionalna ekonomika](chapters/12-konstitucionalna-ekonomika.html){.btn-material}
+:::
+
+## Cjelina 4: Javne financije i javne politike u praksi {.cjelina-header}
+
+*Tjedni 11 do 13*
+
+Četvrta cjelina spušta teoriju na razinu konkretnih instrumenata, proračuna i sustava. Pitanje više nije zašto država djeluje, nego kako, kojim alatima, s kojom strukturom rashoda i prihoda te u kojem nadnacionalnom okviru.
+
+### Tjedan 11: Instrumenti javnih politika
+
+Kada je problem prepoznat, kojim ga alatom riješiti? Predavanje sistematizira instrumente javnih politika, regulaciju, poreze i subvencije, izravnu javnu proizvodnju te informacijske i bihevioralne instrumente. Cilj je naučiti uskladiti izbor instrumenta s naravi problema i s ograničenjima provedbe.
+
+::: {.material-links}
+[Instrumenti javnih politika](chapters/13-instrumenti.html){.btn-material}
+:::
+
+### Tjedan 12: Javna potrošnja i porezni sustavi u praksi
+
+Koliko država troši, na što i kako to financira? Predavanje obrađuje strukturu i dinamiku javnih rashoda, Wagnerov zakon o rastu javne potrošnje te usporedbu poreznih sustava u praksi, uključujući kompromis između progresivnosti i učinkovitosti. Teorijski pojmovi iz prve cjeline ovdje se susreću sa stvarnim proračunskim podacima.
+
+::: {.material-links}
+[Javna potrošnja](chapters/14-javna-potrosnja.html){.btn-material} [Porezni sustavi u praksi](chapters/15-porezi-praksa.html){.btn-material}
+:::
+
+### Tjedan 13: Javne financije Europske unije
+
+Hrvatske javne politike danas se oblikuju unutar europskog okvira. Predavanje uvodi proračun Europske unije, fiskalna pravila i koordinaciju fiskalnih politika država članica te pitanja harmonizacije poreza i kohezijske politike. Studenti uče prepoznati gdje prestaje nacionalna, a gdje počinje nadnacionalna razina odlučivanja.
+
+::: {.material-links}
+[Javne financije EU](chapters/16-eu-javne-financije.html){.btn-material}
+:::
+
+## Cjelina 5: Kako do kvalitetnijih javnih politika? {.cjelina-header}
+
+*Tjedni 14 i 15*
+
+Završna cjelina povezuje sve prethodno u praktično pitanje. Ako i tržište i država mogu zakazati, kako uopće doći do boljih javnih politika? Od dijagnoze državnih neuspjeha prelazimo na reformske pristupe upravljanju te na metode kojima procjenjujemo isplati li se neka politika.
+
+### Tjedan 14: Državni neuspjesi i reforma uprave
+
+Državni neuspjeh nije puka greška, nego sustavna posljedica poticaja. Predavanje tipologizira oblike državnog neuspjeha, od lova na rentu i regulatornog zarobljavanja do političkih ciklusa, a zatim predstavlja reformske odgovore, novi javni menadžment s naglaskom na mjerenje učinka te novo upravljanje s naglaskom na mreže i suradnju.
+
+::: {.material-links}
+[Državni neuspjesi](chapters/17-drzavni-neuspjesi.html){.btn-material} [Novi javni menadžment](chapters/18-novi-javni-menadzment.html){.btn-material} [Novo upravljanje](chapters/19-novo-upravljanje.html){.btn-material}
+:::
+
+### Tjedan 15: Analiza troškova i koristi, evaluacija i reforme
+
+Posljednji tjedan donosi alate kojima javne politike možemo vrednovati. Predavanje uvodi analizu troškova i koristi, diskontiranje i tretman rizika te logiku evaluacije javnih politika. U zaključku se vraćamo na cijeli luk kolegija i raspravljamo o tome što čini uspješnu reformu i zašto reforme tako često zapinju.
+
+::: {.material-links}
+[Analiza troškova i koristi i evaluacija](chapters/20-cba-evaluacija.html){.btn-material} [Reforme](chapters/21-reforme.html){.btn-material}
+:::
+
+## Seminarske aktivnosti
+
+| Tjedan | Tip | Aktivnost |
+|:------:|:---:|-----------|
+| 1 | Rasprava | Tržišni i državni neuspjeh na primjeru iz medija |
+| 2 | Vježba | Klasifikacija dobara i tržišnih neuspjeha |
+| 3 | Vježba s podacima | Mjerenje nejednakosti, Lorenzova krivulja i Ginijev koeficijent |
+| 4 | Vježba | Porezna incidencija i mrtvi teret poreza |
+| 5 | Radionica | Zatvorenikova dilema i strateško ponašanje |
+| 6 | Vježba | Usporedba glasačkih pravila i medijanski birač |
+| 7 | Rasprava | Studija slučaja lobiranja i lova na rentu |
+| 8 | Vježba | Niskanenov model i poticaji u javnoj upravi |
+| 9 | Rasprava | Institucije i ovisnost o putanji u hrvatskom kontekstu |
+| 10 | Vježba | Fiskalna pravila i ustavna ograničenja |
+| 11 | Radionica | Izbor instrumenta za zadani problem javne politike |
+| 12 | Vježba s podacima | Struktura javnih rashoda i prihoda u Hrvatskoj |
+| 13 | Rasprava | Hrvatska u fiskalnom okviru Europske unije |
+| 14 | Rasprava | Prepoznavanje državnih neuspjeha i reformskih odgovora |
+| 15 | Radionica | Skica analize troškova i koristi za odabranu politiku |
+
+## Literatura
+
+Temeljni izvor kolegija je istoimeni udžbenik, dopunjen klasičnim i suvremenim djelima iz javnih financija i teorije javnog izbora. Oznaka **[O]** označava obveznu literaturu.
+
+1. Deskar-Škrbić, M., Palić, P. i Šikić, L. *Sve što želite znati o državi i javnim politikama u Hrvatskoj*. [Besplatno online](https://lusiki.github.io/Javne-politike/) **[O]**
+2. Musgrave, R. A. i Musgrave, P. B. (1989). *Public Finance in Theory and Practice*. McGraw-Hill.
+3. Buchanan, J. M. i Tullock, G. (1962). *The Calculus of Consent*. University of Michigan Press.
+4. Mueller, D. C. (2003). *Public Choice III*. Cambridge University Press.
+5. Stiglitz, J. E. i Rosengard, J. K. (2015). *Economics of the Public Sector* (4. izdanje). W. W. Norton.
+6. Rosen, H. S. i Gayer, T. (2014). *Public Finance* (10. izdanje). McGraw-Hill.
+
+## Ocjenjivanje
+
+| Komponenta | Udio | Opis |
+|------------|:----:|------|
+| Kolokviji | 40% | Dva kolokvija nakon zaokruženih cjelina |
+| Seminarski rad | 40% | Samostalna analiza odabrane javne politike s pisanim izvještajem |
+| Sudjelovanje | 20% | Aktivnost na seminarima i predaja vježbi |
+
+### Skala ocjenjivanja
+
+| Ocjena | Postotak |
+|:------:|:--------:|
+| Izvrstan (5) | 90 do 100 % |
+| Vrlo dobar (4) | 80 do 89 % |
+| Dobar (3) | 65 do 79 % |
+| Dovoljan (2) | 50 do 64 % |
+| Nedovoljan (1) | ispod 50 % |

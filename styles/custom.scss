@@ -894,12 +894,12 @@ h1.book-hero-title,
   }
 }
 
-// ---- Navbar brand: show "DJP" instead of full book title ----
+// ---- Navbar brand: show "DTI" instead of full book title ----
 .navbar-brand {
   font-size: 0 !important;
 
   &::after {
-    content: "DJP";
+    content: "DTI";
     font-family: $brand-font-sans;
     font-size: 1rem;
     font-weight: 700;
@@ -909,7 +909,7 @@ h1.book-hero-title,
 }
 
 // ---- Navbar nav-links in mono register (Knjiga · Vodič · Resursi · Alat · Podaci) ----
-// Brand "DJP" ostaje sans; stavke izbornika prelaze u IBM Plex Mono za tehnički
+// Brand "DTI" ostaje sans; stavke izbornika prelaze u IBM Plex Mono za tehnički
 // ton usklađen s naslovničkim mono tokenima (.sc-meta-mono, .sc-stats).
 .navbar .nav-link {
   font-family: $brand-font-mono;
@@ -2647,4 +2647,5 @@ div.callout .callout-body > .column-margin p { margin-bottom: 0; }
 }
 
 @import "vodic";
+@import "nastava";
 

@@ -1,5 +1,5 @@
 ---
-title: "Silabusi i predavanja"
+title: "Predavanja"
 toc: false
 number-sections: false
 lang: hr-HR
@@ -11,10 +11,16 @@ format:
 ---
 
 ```{=html}
+<nav class="nastava-subnav" aria-label="Nastava">
+  <a class="nastava-subnav-link is-active" href="predavanja.html">Predavanja</a>
+  <a class="nastava-subnav-link" href="silabus.html">Silabus</a>
+  <a class="nastava-subnav-link" href="raspored.html">Tjedni raspored</a>
+</nav>
+
 <header class="vd-hub-head">
-  <span class="vd-hub-kicker">Silabusi · predavanja</span>
+  <span class="vd-hub-kicker">Nastava · predavanja</span>
   <h1 class="vd-hub-title">Predavanja i materijali za nastavu</h1>
-  <p class="vd-hub-lede">Prezentacije, slajdovi i materijali za predavanja i seminar koji prate knjigu. Svaka nastavna cjelina ima vlastiti set slajdova koji proširuju teoriju iz knjige konkretnim primjerima, raspravama i vježbama za studente.</p>
+  <p class="vd-hub-lede">Prezentacije, slajdovi i materijali za predavanja i seminar koji prate knjigu. Svaka nastavna cjelina ima vlastiti set slajdova koji proširuju teoriju iz knjige konkretnim primjerima, raspravama i vježbama za studente. Detaljan tjedni raspored i cjeloviti silabus kolegija nalaze se na povezanim stranicama.</p>
 </header>
 
 <!-- ── DIO I ──────────────────────────────────────────────────────── -->
