@@ -1,5 +1,5 @@
 ---
-title: "Uči s AI"
+title: "Uči uz AI"
 toc: false
 number-sections: false
 lang: hr-HR

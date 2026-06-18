@@ -26,8 +26,9 @@ $tmp  = Join-Path ([System.IO.Path]::GetTempPath()) ("prirucnik-pdf-" + [System.
 
 New-Item -ItemType Directory -Path (Join-Path $tmp "images\prirucnik") -Force | Out-Null
 try {
-  Copy-Item (Join-Path $root "prirucnik.qmd")                (Join-Path $tmp "prirucnik.qmd")
-  Copy-Item (Join-Path $root "images\prirucnik\ph2.jpg")     (Join-Path $tmp "images\prirucnik\ph2.jpg")
+  Copy-Item (Join-Path $root "prirucnik.qmd")                    (Join-Path $tmp "prirucnik.qmd")
+  Copy-Item (Join-Path $root "images\prirucnik\ph2.jpg")         (Join-Path $tmp "images\prirucnik\ph2.jpg")
+  Copy-Item (Join-Path $root "images\prirucnik\ph-vodic.png")    (Join-Path $tmp "images\prirucnik\ph-vodic.png")
 
   & $quarto render (Join-Path $tmp "prirucnik.qmd") --to typst -M papersize:a5
   if ($LASTEXITCODE -ne 0) { throw "quarto typst render failed (exit $LASTEXITCODE)" }

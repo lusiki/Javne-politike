@@ -4,7 +4,7 @@
 > Autori: Milan Deskar-Škrbić, Petra Palić, Luka Šikić
 > Izvor: https://lusiki.github.io/Javne-politike
 > Cjelovita tekstualna verzija knjige za korištenje s AI-asistentima.
-> Generirano: 2026-06-17 · © 2026 Milan Deskar-Škrbić, Petra Palić, Luka Šikić. Tekst za osobno i obrazovno korištenje uz navođenje izvora.
+> Generirano: 2026-06-18 · © 2026 Milan Deskar-Škrbić, Petra Palić, Luka Šikić. Tekst za osobno i obrazovno korištenje uz navođenje izvora.
 
 
 ---
@@ -15,7 +15,7 @@
 > Autori: Milan Deskar-Škrbić, Petra Palić, Luka Šikić
 > Izvor: https://lusiki.github.io/Javne-politike/chapters/00-uvod.html
 > Tekstualna verzija poglavlja za korištenje s AI-asistentima.
-> Generirano: 2026-06-17 · © 2026 Milan Deskar-Škrbić, Petra Palić, Luka Šikić. Tekst za osobno i obrazovno korištenje uz navođenje izvora.
+> Generirano: 2026-06-18 · © 2026 Milan Deskar-Škrbić, Petra Palić, Luka Šikić. Tekst za osobno i obrazovno korištenje uz navođenje izvora.
 
 ---
 
@@ -55,7 +55,7 @@ Ako nakon čitanja ove knjige čitatelj svaku raspravu o državi, tržištu, por
 > Autori: Milan Deskar-Škrbić, Petra Palić, Luka Šikić
 > Izvor: https://lusiki.github.io/Javne-politike/chapters/01-uloga-drzave.html
 > Tekstualna verzija poglavlja za korištenje s AI-asistentima.
-> Generirano: 2026-06-17 · © 2026 Milan Deskar-Škrbić, Petra Palić, Luka Šikić. Tekst za osobno i obrazovno korištenje uz navođenje izvora.
+> Generirano: 2026-06-18 · © 2026 Milan Deskar-Škrbić, Petra Palić, Luka Šikić. Tekst za osobno i obrazovno korištenje uz navođenje izvora.
 
 ---
 
@@ -215,7 +215,7 @@ d. Pretpostavite sada da su gubitnici siromašni, a dobitnici imućni. Objasnite
 > Autori: Milan Deskar-Škrbić, Petra Palić, Luka Šikić
 > Izvor: https://lusiki.github.io/Javne-politike/chapters/02-alokacijska-funkcija.html
 > Tekstualna verzija poglavlja za korištenje s AI-asistentima.
-> Generirano: 2026-06-17 · © 2026 Milan Deskar-Škrbić, Petra Palić, Luka Šikić. Tekst za osobno i obrazovno korištenje uz navođenje izvora.
+> Generirano: 2026-06-18 · © 2026 Milan Deskar-Škrbić, Petra Palić, Luka Šikić. Tekst za osobno i obrazovno korištenje uz navođenje izvora.
 
 ---
 
@@ -512,7 +512,7 @@ Promotrite hipotetsku industriju u kojoj je tržišna potražnja zadana izrazom 
 > Autori: Milan Deskar-Škrbić, Petra Palić, Luka Šikić
 > Izvor: https://lusiki.github.io/Javne-politike/chapters/03-distribucijska-funkcija.html
 > Tekstualna verzija poglavlja za korištenje s AI-asistentima.
-> Generirano: 2026-06-17 · © 2026 Milan Deskar-Škrbić, Petra Palić, Luka Šikić. Tekst za osobno i obrazovno korištenje uz navođenje izvora.
+> Generirano: 2026-06-18 · © 2026 Milan Deskar-Škrbić, Petra Palić, Luka Šikić. Tekst za osobno i obrazovno korištenje uz navođenje izvora.
 
 ---
 
@@ -728,7 +728,7 @@ c. Pretpostavite da država najsiromašnijem kućanstvu transferom doda 10 tisu�
 > Autori: Milan Deskar-Škrbić, Petra Palić, Luka Šikić
 > Izvor: https://lusiki.github.io/Javne-politike/chapters/04-stabilizacijska-funkcija.html
 > Tekstualna verzija poglavlja za korištenje s AI-asistentima.
-> Generirano: 2026-06-17 · © 2026 Milan Deskar-Škrbić, Petra Palić, Luka Šikić. Tekst za osobno i obrazovno korištenje uz navođenje izvora.
+> Generirano: 2026-06-18 · © 2026 Milan Deskar-Škrbić, Petra Palić, Luka Šikić. Tekst za osobno i obrazovno korištenje uz navođenje izvora.
 
 ---
 
@@ -972,7 +972,7 @@ c. Pretpostavite da je u dubokoj recesiji stvarni multiplikator bliži 1,8 od te
 > Autori: Milan Deskar-Škrbić, Petra Palić, Luka Šikić
 > Izvor: https://lusiki.github.io/Javne-politike/chapters/05-porezi.html
 > Tekstualna verzija poglavlja za korištenje s AI-asistentima.
-> Generirano: 2026-06-17 · © 2026 Milan Deskar-Škrbić, Petra Palić, Luka Šikić. Tekst za osobno i obrazovno korištenje uz navođenje izvora.
+> Generirano: 2026-06-18 · © 2026 Milan Deskar-Škrbić, Petra Palić, Luka Šikić. Tekst za osobno i obrazovno korištenje uz navođenje izvora.
 
 ---
 
@@ -1262,7 +1262,7 @@ Kako se vaši zaključci slažu s Ramseyevim pravilom o oporezivanju dobara s ne
 > Autori: Milan Deskar-Škrbić, Petra Palić, Luka Šikić
 > Izvor: https://lusiki.github.io/Javne-politike/chapters/06-javni-izbor.html
 > Tekstualna verzija poglavlja za korištenje s AI-asistentima.
-> Generirano: 2026-06-17 · © 2026 Milan Deskar-Škrbić, Petra Palić, Luka Šikić. Tekst za osobno i obrazovno korištenje uz navođenje izvora.
+> Generirano: 2026-06-18 · © 2026 Milan Deskar-Škrbić, Petra Palić, Luka Šikić. Tekst za osobno i obrazovno korištenje uz navođenje izvora.
 
 ---
 
@@ -1429,7 +1429,7 @@ Otvorite interaktivni graf iznad i zadržite trošak glasanja na $C = 10$ € te
 > Autori: Milan Deskar-Škrbić, Petra Palić, Luka Šikić
 > Izvor: https://lusiki.github.io/Javne-politike/chapters/06a-teorija-igara.html
 > Tekstualna verzija poglavlja za korištenje s AI-asistentima.
-> Generirano: 2026-06-17 · © 2026 Milan Deskar-Škrbić, Petra Palić, Luka Šikić. Tekst za osobno i obrazovno korištenje uz navođenje izvora.
+> Generirano: 2026-06-18 · © 2026 Milan Deskar-Škrbić, Petra Palić, Luka Šikić. Tekst za osobno i obrazovno korištenje uz navođenje izvora.
 
 ---
 
@@ -1584,7 +1584,7 @@ Promotrite zakonodavno tijelo s $n = 5$ zastupnika koji dijele proračun normali
 > Autori: Milan Deskar-Škrbić, Petra Palić, Luka Šikić
 > Izvor: https://lusiki.github.io/Javne-politike/chapters/07-kolektivni-izbor.html
 > Tekstualna verzija poglavlja za korištenje s AI-asistentima.
-> Generirano: 2026-06-17 · © 2026 Milan Deskar-Škrbić, Petra Palić, Luka Šikić. Tekst za osobno i obrazovno korištenje uz navođenje izvora.
+> Generirano: 2026-06-18 · © 2026 Milan Deskar-Škrbić, Petra Palić, Luka Šikić. Tekst za osobno i obrazovno korištenje uz navođenje izvora.
 
 ---
 
@@ -1801,7 +1801,7 @@ Otvorite interaktivni graf iznad. Krenite od početnog rasporeda koji proizvodi 
 > Autori: Milan Deskar-Škrbić, Petra Palić, Luka Šikić
 > Izvor: https://lusiki.github.io/Javne-politike/chapters/08-stranke-izbori.html
 > Tekstualna verzija poglavlja za korištenje s AI-asistentima.
-> Generirano: 2026-06-17 · © 2026 Milan Deskar-Škrbić, Petra Palić, Luka Šikić. Tekst za osobno i obrazovno korištenje uz navođenje izvora.
+> Generirano: 2026-06-18 · © 2026 Milan Deskar-Škrbić, Petra Palić, Luka Šikić. Tekst za osobno i obrazovno korištenje uz navođenje izvora.
 
 ---
 
@@ -1963,7 +1963,7 @@ d. Zamijenite jednodimenzionalnu os dvjema dimenzijama tako da uz lijevo-desno e
 > Autori: Milan Deskar-Škrbić, Petra Palić, Luka Šikić
 > Izvor: https://lusiki.github.io/Javne-politike/chapters/09-interesne-skupine.html
 > Tekstualna verzija poglavlja za korištenje s AI-asistentima.
-> Generirano: 2026-06-17 · © 2026 Milan Deskar-Škrbić, Petra Palić, Luka Šikić. Tekst za osobno i obrazovno korištenje uz navođenje izvora.
+> Generirano: 2026-06-18 · © 2026 Milan Deskar-Škrbić, Petra Palić, Luka Šikić. Tekst za osobno i obrazovno korištenje uz navođenje izvora.
 
 ---
 
@@ -2152,7 +2152,7 @@ Objasnite zašto mjera koja je za društvo neto negativna ipak politički opstaj
 > Autori: Milan Deskar-Škrbić, Petra Palić, Luka Šikić
 > Izvor: https://lusiki.github.io/Javne-politike/chapters/10-birokracija.html
 > Tekstualna verzija poglavlja za korištenje s AI-asistentima.
-> Generirano: 2026-06-17 · © 2026 Milan Deskar-Škrbić, Petra Palić, Luka Šikić. Tekst za osobno i obrazovno korištenje uz navođenje izvora.
+> Generirano: 2026-06-18 · © 2026 Milan Deskar-Škrbić, Petra Palić, Luka Šikić. Tekst za osobno i obrazovno korištenje uz navođenje izvora.
 
 ---
 
@@ -2342,7 +2342,7 @@ Otvorite interaktivni graf iznad i postavite nagib granične koristi na vrijedno
 > Autori: Milan Deskar-Škrbić, Petra Palić, Luka Šikić
 > Izvor: https://lusiki.github.io/Javne-politike/chapters/11-institucionalna-ekonomika.html
 > Tekstualna verzija poglavlja za korištenje s AI-asistentima.
-> Generirano: 2026-06-17 · © 2026 Milan Deskar-Škrbić, Petra Palić, Luka Šikić. Tekst za osobno i obrazovno korištenje uz navođenje izvora.
+> Generirano: 2026-06-18 · © 2026 Milan Deskar-Škrbić, Petra Palić, Luka Šikić. Tekst za osobno i obrazovno korištenje uz navođenje izvora.
 
 ---
 
@@ -2531,7 +2531,7 @@ Objasnite zašto ovaj zadatak otkriva da granica između tržišta i hijerarhije
 > Autori: Milan Deskar-Škrbić, Petra Palić, Luka Šikić
 > Izvor: https://lusiki.github.io/Javne-politike/chapters/12-konstitucionalna-ekonomika.html
 > Tekstualna verzija poglavlja za korištenje s AI-asistentima.
-> Generirano: 2026-06-17 · © 2026 Milan Deskar-Škrbić, Petra Palić, Luka Šikić. Tekst za osobno i obrazovno korištenje uz navođenje izvora.
+> Generirano: 2026-06-18 · © 2026 Milan Deskar-Škrbić, Petra Palić, Luka Šikić. Tekst za osobno i obrazovno korištenje uz navođenje izvora.
 
 ---
 
@@ -2731,7 +2731,7 @@ Pretpostavite vladu koja prije izbora bira između dvije politike. Ako ostane pr
 > Autori: Milan Deskar-Škrbić, Petra Palić, Luka Šikić
 > Izvor: https://lusiki.github.io/Javne-politike/chapters/13-instrumenti.html
 > Tekstualna verzija poglavlja za korištenje s AI-asistentima.
-> Generirano: 2026-06-17 · © 2026 Milan Deskar-Škrbić, Petra Palić, Luka Šikić. Tekst za osobno i obrazovno korištenje uz navođenje izvora.
+> Generirano: 2026-06-18 · © 2026 Milan Deskar-Škrbić, Petra Palić, Luka Šikić. Tekst za osobno i obrazovno korištenje uz navođenje izvora.
 
 ---
 
@@ -2922,7 +2922,7 @@ Pretpostavite da neka vlada želi smanjiti potrošnju jednog štetnog proizvoda 
 > Autori: Milan Deskar-Škrbić, Petra Palić, Luka Šikić
 > Izvor: https://lusiki.github.io/Javne-politike/chapters/14-javna-potrosnja.html
 > Tekstualna verzija poglavlja za korištenje s AI-asistentima.
-> Generirano: 2026-06-17 · © 2026 Milan Deskar-Škrbić, Petra Palić, Luka Šikić. Tekst za osobno i obrazovno korištenje uz navođenje izvora.
+> Generirano: 2026-06-18 · © 2026 Milan Deskar-Škrbić, Petra Palić, Luka Šikić. Tekst za osobno i obrazovno korištenje uz navođenje izvora.
 
 ---
 
@@ -3217,7 +3217,7 @@ c. Zašto u uvjetima visokog multiplikatora restriktivna politika može kratkoro
 > Autori: Milan Deskar-Škrbić, Petra Palić, Luka Šikić
 > Izvor: https://lusiki.github.io/Javne-politike/chapters/15-porezi-praksa.html
 > Tekstualna verzija poglavlja za korištenje s AI-asistentima.
-> Generirano: 2026-06-17 · © 2026 Milan Deskar-Škrbić, Petra Palić, Luka Šikić. Tekst za osobno i obrazovno korištenje uz navođenje izvora.
+> Generirano: 2026-06-18 · © 2026 Milan Deskar-Škrbić, Petra Palić, Luka Šikić. Tekst za osobno i obrazovno korištenje uz navođenje izvora.
 
 ---
 
@@ -3530,7 +3530,7 @@ Koju biste poreznu mjeru iz tablica prvo uveli da zatvorite jaz i zašto?
 > Autori: Milan Deskar-Škrbić, Petra Palić, Luka Šikić
 > Izvor: https://lusiki.github.io/Javne-politike/chapters/16-eu-javne-financije.html
 > Tekstualna verzija poglavlja za korištenje s AI-asistentima.
-> Generirano: 2026-06-17 · © 2026 Milan Deskar-Škrbić, Petra Palić, Luka Šikić. Tekst za osobno i obrazovno korištenje uz navođenje izvora.
+> Generirano: 2026-06-18 · © 2026 Milan Deskar-Škrbić, Petra Palić, Luka Šikić. Tekst za osobno i obrazovno korištenje uz navođenje izvora.
 
 ---
 
@@ -3826,7 +3826,7 @@ Javne financije Europske unije nisu ni potpuno nacionalne ni potpuno europske, n
 > Autori: Milan Deskar-Škrbić, Petra Palić, Luka Šikić
 > Izvor: https://lusiki.github.io/Javne-politike/chapters/17-drzavni-neuspjesi.html
 > Tekstualna verzija poglavlja za korištenje s AI-asistentima.
-> Generirano: 2026-06-17 · © 2026 Milan Deskar-Škrbić, Petra Palić, Luka Šikić. Tekst za osobno i obrazovno korištenje uz navođenje izvora.
+> Generirano: 2026-06-18 · © 2026 Milan Deskar-Škrbić, Petra Palić, Luka Šikić. Tekst za osobno i obrazovno korištenje uz navođenje izvora.
 
 ---
 
@@ -4044,7 +4044,7 @@ Objasnite zašto sama činjenica da tržišni neuspjeh postoji i da iznosi 100 m
 > Autori: Milan Deskar-Škrbić, Petra Palić, Luka Šikić
 > Izvor: https://lusiki.github.io/Javne-politike/chapters/18-novi-javni-menadzment.html
 > Tekstualna verzija poglavlja za korištenje s AI-asistentima.
-> Generirano: 2026-06-17 · © 2026 Milan Deskar-Škrbić, Petra Palić, Luka Šikić. Tekst za osobno i obrazovno korištenje uz navođenje izvora.
+> Generirano: 2026-06-18 · © 2026 Milan Deskar-Škrbić, Petra Palić, Luka Šikić. Tekst za osobno i obrazovno korištenje uz navođenje izvora.
 
 ---
 
@@ -4212,7 +4212,7 @@ Na kraju objasnite zašto ovaj primjer ilustrira Goodhartov zakon i zašto sam �
 > Autori: Milan Deskar-Škrbić, Petra Palić, Luka Šikić
 > Izvor: https://lusiki.github.io/Javne-politike/chapters/19-novo-upravljanje.html
 > Tekstualna verzija poglavlja za korištenje s AI-asistentima.
-> Generirano: 2026-06-17 · © 2026 Milan Deskar-Škrbić, Petra Palić, Luka Šikić. Tekst za osobno i obrazovno korištenje uz navođenje izvora.
+> Generirano: 2026-06-18 · © 2026 Milan Deskar-Škrbić, Petra Palić, Luka Šikić. Tekst za osobno i obrazovno korištenje uz navođenje izvora.
 
 ---
 
@@ -4351,7 +4351,7 @@ Zašto mrežno i suradničko upravljanje može uspjeti ondje gdje i hijerarhija 
 > Autori: Milan Deskar-Škrbić, Petra Palić, Luka Šikić
 > Izvor: https://lusiki.github.io/Javne-politike/chapters/20-cba-evaluacija.html
 > Tekstualna verzija poglavlja za korištenje s AI-asistentima.
-> Generirano: 2026-06-17 · © 2026 Milan Deskar-Škrbić, Petra Palić, Luka Šikić. Tekst za osobno i obrazovno korištenje uz navođenje izvora.
+> Generirano: 2026-06-18 · © 2026 Milan Deskar-Škrbić, Petra Palić, Luka Šikić. Tekst za osobno i obrazovno korištenje uz navođenje izvora.
 
 ---
 
@@ -4538,7 +4538,7 @@ c. Pri kojoj se približno diskontnoj stopi neto sadašnja vrijednost izjednača
 > Autori: Milan Deskar-Škrbić, Petra Palić, Luka Šikić
 > Izvor: https://lusiki.github.io/Javne-politike/chapters/21-reforme.html
 > Tekstualna verzija poglavlja za korištenje s AI-asistentima.
-> Generirano: 2026-06-17 · © 2026 Milan Deskar-Škrbić, Petra Palić, Luka Šikić. Tekst za osobno i obrazovno korištenje uz navođenje izvora.
+> Generirano: 2026-06-18 · © 2026 Milan Deskar-Škrbić, Petra Palić, Luka Šikić. Tekst za osobno i obrazovno korištenje uz navođenje izvora.
 
 ---
 

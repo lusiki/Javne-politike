@@ -82,9 +82,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-4d4ad920c17a1b28c6a7c1d28bdd063b.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-8b1c720448afe02710937b9cddb6dc33.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="site_libs/bootstrap/bootstrap-dark-20a53a0befdf4f03e49c7494d4c35ead.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<link href="site_libs/bootstrap/bootstrap-8b1c720448afe02710937b9cddb6dc33.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-f35c08127d223dd0c6839121de659991.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-dark-ec5bef2f2494b02d6b110e55301f5f04.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="site_libs/bootstrap/bootstrap-f35c08127d223dd0c6839121de659991.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -120,9 +120,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <link rel="stylesheet" href="styles/styles.css">
 <meta property="og:title" content="Appendix C — Vodič – Sve što želite znati o državi i javnim politikama u Hrvatskoj">
 <meta property="og:description" content="Praktični i interaktivni udžbenik o javnim financijama, teoriji javnog izbora i javnim politikama u Hrvatskoj — uloga države, alokacija, redistribucija, institucije i reforme.">
+<meta property="og:image" content="https://lusiki.github.io/Javne-politike/ph3.jpg">
 <meta property="og:site_name" content="Sve što želite znati o državi i javnim politikama u Hrvatskoj">
 <meta name="twitter:title" content="Appendix C — Vodič – Sve što želite znati o državi i javnim politikama u Hrvatskoj">
 <meta name="twitter:description" content="Praktični i interaktivni udžbenik o javnim financijama, teoriji javnog izbora i javnim politikama u Hrvatskoj — uloga države, alokacija, redistribucija, institucije i reforme.">
+<meta name="twitter:image" content="https://lusiki.github.io/Javne-politike/ph3.jpg">
 <meta name="twitter:card" content="summary_large_image">
 </head>
 
@@ -330,7 +332,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="./uci-s-ai.html"> 
-<span class="menu-text">Uči s AI</span></a>
+<span class="menu-text">Uči uz AI</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./silabusi.html"> 
+<span class="menu-text">Silabusi</span></a>
   </li>  
 </ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
@@ -725,7 +731,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./uci-s-ai.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Uči s AI</span></a>
+  <a href="./uci-s-ai.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Uči uz AI</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./silabusi.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Silabusi i predavanja</span></a>
   </div>
 </li>
       </ul>
@@ -761,7 +772,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 <header class="vd-hub-head">
   <span class="vd-hub-kicker">Vodič · 22 mentalnih mapa</span>
-  <h1 class="vd-hub-title">Knjiga koju pročitate očima</h1>
+  <h1 class="vd-hub-title">Zapamti u par slika</h1>
   <p class="vd-hub-lede">Vizualna slikovnica knjige. Jedno poglavlje, jedna stranica, jedna mentalna mapa koju pročitate za dvije minute. Ista priča kao u udžbeniku, ispričana drugim glasom. Krenite redom ili otvorite ono što vas zanima.</p>
 </header>
 
@@ -984,6 +995,34 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   line-height: 1.2; transition: background .15s, border-color .15s; }
 
 .ai-cta-menu a:hover { background: rgba(74,107,92,0.12); border-color: #4A6B5C; }
+
+
+
+/* Podnožje poglavlja — AI-izbornik i poveznica na mrežu pojmova jedno uz drugo,
+
+   odvojeni tankom crtom od zadnjeg odjeljka. */
+
+.ai-cta-foot { display: flex; flex-wrap: wrap; align-items: center; gap: .6rem;
+
+  margin: 2.6rem 0 1rem; padding-top: 1.4rem;
+
+  border-top: 1px solid rgba(74,107,92,0.25); }
+
+.ai-cta-foot .ai-cta { margin: 0; }
+
+.ai-cta-pm { font-family: "IBM Plex Mono", ui-monospace, "SF Mono", Menlo, monospace;
+
+  font-size: .8rem; font-weight: 500; letter-spacing: .005em;
+
+  display: inline-flex; align-items: center; gap: .4rem;
+
+  color: #4A6B5C; background: transparent; border: 1px solid rgba(74,107,92,0.5);
+
+  border-radius: 6px; padding: .45rem .8rem; text-decoration: none; line-height: 1.2;
+
+  transition: background .15s, color .15s, border-color .15s; }
+
+.ai-cta-pm:hover { background: #4A6B5C; color: #F2EDE3; border-color: #4A6B5C; }
 
 </style>
 
@@ -1343,17 +1382,33 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 
 
-    // 3. Remove "Appendix A —" / "Appendix B —" etc. prefix from page title
+    // 3. Remove "Appendix A —" prefix from page title. Quarto's appendix counter
+
+    //    može pukne i izaći kao "Appendix [ —" (ne slovo), pa hvatamo bilo koju
+
+    //    oznaku iza riječi "Appendix", kao i goli "— Naslov" iz <title> oznake.
+
+    var stripAppendix = function (s) {
+
+      return s
+
+        .replace(/^Appendix\s+\S*\s*[—–-]\s*/i, "")  // "Appendix A — " / "Appendix [ — "
+
+        .replace(/^\s*[—–-]\s+/, "")                 // goli "— Resursi"
+
+        .trim();
+
+    };
 
     var titleEl = document.querySelector("#title-block-header h1.title, h1.title");
 
     if (titleEl) {
 
-      titleEl.textContent = titleEl.textContent.replace(/^Appendix\s+[A-Z]\s*[—–-]\s*/i, "").trim();
+      titleEl.textContent = stripAppendix(titleEl.textContent);
 
     }
 
-    document.title = document.title.replace(/^Appendix\s+[A-Z]\s*[—–-]\s*/i, "");
+    document.title = stripAppendix(document.title);
 
 
 
@@ -1801,13 +1856,15 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
   // ----------------------------------------------------------
 
-  // 12. "Pitaj AI o ovom poglavlju" — uz naslov svakog poglavlja ubaci
+  // 12. "Pitaj AI o ovom poglavlju" — na KRAJU svakog poglavlja ubaci
 
   //     padajući izbornik koji vodi na /ai/<slug>.md i prefilled asistente
 
   //     (Track A, notes/ai-export-spec.md). Radi samo na stranicama poglavlja
 
   //     (/chapters/<slug>.html); preslikava trenutni URL u njegov .md izvoz.
+
+  //     Uz njega stoji i poveznica na Mrežu pojmova, otvorenu na ovom poglavlju.
 
   // ----------------------------------------------------------
 
@@ -1817,17 +1874,19 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
     if (!m) return;                                  // samo poglavlja
 
-    var header = document.getElementById("title-block-header");
+    if (document.querySelector(".ai-cta")) return;
 
-    var titleEl = header ? header.querySelector("h1.title") : document.querySelector("h1.title");
-
-    if (!titleEl || document.querySelector(".ai-cta")) return;
+    var slug = m[1];
 
 
 
     var mdHref  = location.pathname.replace(/\/chapters\/([^/]+)\.html$/, "/ai/$1.md");
 
     var uciHref = location.pathname.replace(/\/chapters\/[^/]+\.html$/, "/uci-s-ai.html");
+
+    var pmHref  = location.pathname.replace(/\/chapters\/[^/]+\.html$/, "/pojmovnik.html")
+
+                  + "?chapter=" + encodeURIComponent(slug);
 
     var absMd   = location.origin + mdHref;
 
@@ -1861,6 +1920,14 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 
 
+    // dvije skupine gumba: AI-asistent (padajući) + Mreža pojmova (izravni)
+
+    var box = document.createElement("div");
+
+    box.className = "ai-cta-foot";
+
+
+
     var det = document.createElement("details");
 
     det.className = "ai-cta";
@@ -1883,11 +1950,39 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 
 
-    // ubaci odmah iza naslovnog bloka (ili iza samog naslova)
+    var pm = document.createElement("a");
 
-    var anchor = header || titleEl;
+    pm.className = "ai-cta-pm";
 
-    anchor.insertAdjacentElement("afterend", det);
+    pm.href = pmHref;
+
+    pm.innerHTML = '🕸 Pojmovi ovog poglavlja u mreži';
+
+
+
+    box.appendChild(det);
+
+    box.appendChild(pm);
+
+
+
+    // ubaci na kraj poglavlja — iza zadnjeg odjeljka, prije bilješki/citata
+
+    var article = document.querySelector("main.content") || document.querySelector("main");
+
+    if (!article) return;
+
+    var fn = article.querySelector("section.footnotes, #refs, section#footnotes");
+
+    if (fn) {
+
+      fn.parentNode.insertBefore(box, fn);
+
+    } else {
+
+      article.appendChild(box);
+
+    }
 
   }
 
@@ -2435,7 +2530,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a><span class="in">```{=html}</span></span>
 <span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a><span class="in">&lt;header class="vd-hub-head"&gt;</span></span>
 <span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a><span class="in">  &lt;span class="vd-hub-kicker"&gt;Vodič · 22 mentalnih mapa&lt;/span&gt;</span></span>
-<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a><span class="in">  &lt;h1 class="vd-hub-title"&gt;Knjiga koju pročitate očima&lt;/h1&gt;</span></span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a><span class="in">  &lt;h1 class="vd-hub-title"&gt;Zapamti u par slika&lt;/h1&gt;</span></span>
 <span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a><span class="in">  &lt;p class="vd-hub-lede"&gt;Vizualna slikovnica knjige. Jedno poglavlje, jedna stranica, jedna mentalna mapa koju pročitate za dvije minute. Ista priča kao u udžbeniku, ispričana drugim glasom. Krenite redom ili otvorite ono što vas zanima.&lt;/p&gt;</span></span>
 <span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a><span class="in">&lt;/header&gt;</span></span>
 <span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a></span>

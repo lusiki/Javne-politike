@@ -3,7 +3,7 @@
 > Iz knjige: Sve što želite znati o državi i javnim politikama u Hrvatskoj
 > Autori: Milan Deskar-Škrbić, Petra Palić, Luka Šikić
 > Paket poglavlja ovog dijela knjige za korištenje s AI-asistentima.
-> Generirano: 2026-06-17 · © 2026 Milan Deskar-Škrbić, Petra Palić, Luka Šikić. Tekst za osobno i obrazovno korištenje uz navođenje izvora.
+> Generirano: 2026-06-18 · © 2026 Milan Deskar-Škrbić, Petra Palić, Luka Šikić. Tekst za osobno i obrazovno korištenje uz navođenje izvora.
 
 
 ---
@@ -14,7 +14,7 @@
 > Autori: Milan Deskar-Škrbić, Petra Palić, Luka Šikić
 > Izvor: https://lusiki.github.io/Javne-politike/chapters/13-instrumenti.html
 > Tekstualna verzija poglavlja za korištenje s AI-asistentima.
-> Generirano: 2026-06-17 · © 2026 Milan Deskar-Škrbić, Petra Palić, Luka Šikić. Tekst za osobno i obrazovno korištenje uz navođenje izvora.
+> Generirano: 2026-06-18 · © 2026 Milan Deskar-Škrbić, Petra Palić, Luka Šikić. Tekst za osobno i obrazovno korištenje uz navođenje izvora.
 
 ---
 
@@ -205,7 +205,7 @@ Pretpostavite da neka vlada želi smanjiti potrošnju jednog štetnog proizvoda 
 > Autori: Milan Deskar-Škrbić, Petra Palić, Luka Šikić
 > Izvor: https://lusiki.github.io/Javne-politike/chapters/14-javna-potrosnja.html
 > Tekstualna verzija poglavlja za korištenje s AI-asistentima.
-> Generirano: 2026-06-17 · © 2026 Milan Deskar-Škrbić, Petra Palić, Luka Šikić. Tekst za osobno i obrazovno korištenje uz navođenje izvora.
+> Generirano: 2026-06-18 · © 2026 Milan Deskar-Škrbić, Petra Palić, Luka Šikić. Tekst za osobno i obrazovno korištenje uz navođenje izvora.
 
 ---
 
@@ -500,7 +500,7 @@ c. Zašto u uvjetima visokog multiplikatora restriktivna politika može kratkoro
 > Autori: Milan Deskar-Škrbić, Petra Palić, Luka Šikić
 > Izvor: https://lusiki.github.io/Javne-politike/chapters/15-porezi-praksa.html
 > Tekstualna verzija poglavlja za korištenje s AI-asistentima.
-> Generirano: 2026-06-17 · © 2026 Milan Deskar-Škrbić, Petra Palić, Luka Šikić. Tekst za osobno i obrazovno korištenje uz navođenje izvora.
+> Generirano: 2026-06-18 · © 2026 Milan Deskar-Škrbić, Petra Palić, Luka Šikić. Tekst za osobno i obrazovno korištenje uz navođenje izvora.
 
 ---
 
@@ -813,7 +813,7 @@ Koju biste poreznu mjeru iz tablica prvo uveli da zatvorite jaz i zašto?
 > Autori: Milan Deskar-Škrbić, Petra Palić, Luka Šikić
 > Izvor: https://lusiki.github.io/Javne-politike/chapters/16-eu-javne-financije.html
 > Tekstualna verzija poglavlja za korištenje s AI-asistentima.
-> Generirano: 2026-06-17 · © 2026 Milan Deskar-Škrbić, Petra Palić, Luka Šikić. Tekst za osobno i obrazovno korištenje uz navođenje izvora.
+> Generirano: 2026-06-18 · © 2026 Milan Deskar-Škrbić, Petra Palić, Luka Šikić. Tekst za osobno i obrazovno korištenje uz navođenje izvora.
 
 ---
 

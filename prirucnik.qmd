@@ -48,6 +48,12 @@ Sve to dobiva tijelo tek u svakodnevnim potezima. Sama želja da bude više stan
 
 I tu se vraća ona napetost s početka. Ako tržište zna zakazati, zna i država, pa svaku njezinu intervenciju valja provjeriti jednako strogo kao i tržište koje popravlja. Cilj nije ni više ni manje države, nego bolja država, ona koja popravlja stvaran propust, podnosi strogu provjeru i ostavlja društvo boljim nego što ga je zatekla. Kako takvu prepoznati, najteže je i najvažnije pitanje od svih.
 
+::: {.content-hidden when-format="latex"}
+::: {.guide-plate}
+![](images/prirucnik/ph-vodic.png){fig-alt="Ilustrirani vodič kroz strukturu knjige: pet dijelova prikazani su kao pregledna karta s ključnim temama — klasične javne financije, javni izbor, institucije, politike u praksi i reforme." width="100%"}
+:::
+:::
+
 ---
 
 ## Dio prvi · Što država radi i zašto

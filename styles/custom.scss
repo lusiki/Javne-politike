@@ -2630,6 +2630,8 @@ div.callout .callout-body > .column-margin p { margin-bottom: 0; }
 // when-format="latex" u prirucnik.qmd). Datoteke žive u images/prirucnik/.
 // =============================================================
 .guide-plate {
+  // poravnata sa širinom proznog stupca — slika ne smije biti šira od teksta
+  max-width: 700px;
   margin: 0 auto 2.4rem;
 
   // lightbox-omotač ne nasljeđuje proznu hairline-crtu
@@ -2639,10 +2641,8 @@ div.callout .callout-body > .column-margin p { margin-bottom: 0; }
     display: block;
     width: 100%;
     height: auto;
-    border-radius: 6px;
-    box-shadow:
-      0 1px 0 rgba(28, 25, 22, 0.04),
-      0 12px 34px rgba(28, 25, 22, 0.10);
+    // rub slike je sada papirnato-krem (ne bijeli okvir), pa se stapa sa
+    // stranicom — bez kartičastog okvira i sjene koji bi taj prijelaz odali
   }
 }
 

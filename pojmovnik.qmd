@@ -92,6 +92,19 @@ format:
 .pm-open { display: inline-block; font-size: .85rem; font-weight: 600; text-decoration: none;
   color: #F2EDE3; background: #4A6B5C; padding: .5rem .85rem; border-radius: 8px; }
 .pm-open:hover { background: #3A5648; color: #fff; }
+
+/* Traka kad se u mrežu uđe s gumba poglavlja (?chapter=<slug>) */
+.pm-chapter-banner { display: flex; flex-wrap: wrap; align-items: center; gap: .6rem 1rem;
+  max-width: 1320px; margin: 0 auto .7rem; padding: .6rem .85rem;
+  background: #EAE3D4; border: 1px solid rgba(74,107,92,.35); border-left: 3px solid #4A6B5C;
+  border-radius: 10px; font-family: "Public Sans", sans-serif; font-size: .9rem;
+  color: #322B23; }
+.pm-chapter-name b { color: #1C1916; }
+.pm-chapter-clear { font-family: "Public Sans", sans-serif; font-size: .8rem; font-weight: 600;
+  color: #4A6B5C; background: transparent; border: 1px solid rgba(74,107,92,.5);
+  border-radius: 999px; padding: .3rem .7rem; cursor: pointer; margin-left: auto;
+  transition: background .15s, color .15s; }
+.pm-chapter-clear:hover { background: #4A6B5C; color: #F2EDE3; }
 </style>
 ```
 
@@ -142,8 +155,18 @@ pojmovnik = {
   }
 
   // --- stanje -------------------------------------------------------------
-  const state = { query: "", K: 3, selected: null, focus: null, dios: new Set([0,1,2,3,4,5]) };
+  const state = { query: "", K: 3, selected: null, focus: null, dios: new Set([0,1,2,3,4,5]),
+                  chapter: null };
   const norm = s => s.normalize("NFD").replace(/[̀-ͯ]/g, "").toLowerCase().trim();
+
+  // Skup čvorova koji pripadaju traženom poglavlju (?chapter=<slug> iz URL-a).
+  // Slug se uspoređuje s poljem `chapter` oblika "chapters/<slug>.qmd".
+  function chapterNodeSet(slug) {
+    if (!slug) return null;
+    const ids = nodes.filter(d => (d.chapter || "").replace(/^chapters\//, "")
+                  .replace(/\.qmd$/, "") === slug).map(d => d.id);
+    return ids.length ? new Set(ids) : null;
+  }
 
   // --- skele (layout) ------------------------------------------------------
   const root = d3.create("div");
@@ -248,7 +271,10 @@ pojmovnik = {
     const q = norm(state.query);
     const focus = state.focus || state.selected;
     const inDio = d => state.dios.has(d.dio);
-    const matches = q ? new Set(nodes.filter(d => norm(d.term).includes(q) || d.id.includes(q)).map(d => d.id)) : null;
+    let matches = q ? new Set(nodes.filter(d => norm(d.term).includes(q) || d.id.includes(q)).map(d => d.id)) : null;
+    // Poglavlje iz URL-a osvjetljava sve svoje pojmove (ako korisnik ne traži drugo).
+    const chap = (!q && state.chapter) ? chapterNodeSet(state.chapter) : null;
+    if (chap) matches = chap;
     const neigh = focus ? new Set([focus, ...adj.get(focus).keys()]) : null;
 
     const active = d => {
@@ -307,6 +333,38 @@ pojmovnik = {
   }
   panel.append("p").attr("class", "pm-empty")
     .text("Kliknite na čvor u mreži da ovdje vidite definiciju pojma, povezane pojmove i poveznicu na poglavlje u kojem je uveden.");
+
+  // --- ulaz iz poglavlja (?chapter=<slug>) --------------------------------
+  // Kad korisnik dođe s gumba „Pojmovi ovog poglavlja u mreži”, osvijetli sve
+  // pojmove tog poglavlja, otvori njegov najistaknutiji pojam u bočnom panelu
+  // i prikaži traku s nazivom poglavlja te poveznicom za prikaz cijele mreže.
+  (function initChapterFromUrl() {
+    let slug = null;
+    try { slug = new URLSearchParams(location.search).get("chapter"); } catch (e) {}
+    const set = chapterNodeSet(slug);
+    if (!set) return;
+    state.chapter = slug;
+
+    const chapNodes = nodes.filter(d => set.has(d.id));
+    const title = chapNodes[0] ? chapNodes[0].chapterTitle : slug;
+
+    const banner = d3.create("div").attr("class", "pm-chapter-banner");
+    banner.append("span").attr("class", "pm-chapter-name")
+      .html(`Mreža pojmova poglavlja <b>„${title}”</b> — ${chapNodes.length} pojmova osvijetljeno`);
+    banner.append("button").attr("type", "button").attr("class", "pm-chapter-clear")
+      .text("prikaži cijelu mrežu")
+      .on("click", () => {
+        state.chapter = null;
+        banner.remove();
+        applyView();
+      });
+    root.node().insertBefore(banner.node(), root.node().firstChild);
+
+    // otvori najistaknutiji pojam poglavlja u bočnom panelu (kontekst + poveznica)
+    const top = chapNodes.slice().sort((a, b) => b.mentions - a.mentions)[0];
+    if (top) { state.selected = top.id; renderPanel(); }
+    applyView();
+  })();
 
   rebuildLinks();
   return root.node();

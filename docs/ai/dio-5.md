@@ -3,7 +3,7 @@
 > Iz knjige: Sve što želite znati o državi i javnim politikama u Hrvatskoj
 > Autori: Milan Deskar-Škrbić, Petra Palić, Luka Šikić
 > Paket poglavlja ovog dijela knjige za korištenje s AI-asistentima.
-> Generirano: 2026-06-17 · © 2026 Milan Deskar-Škrbić, Petra Palić, Luka Šikić. Tekst za osobno i obrazovno korištenje uz navođenje izvora.
+> Generirano: 2026-06-18 · © 2026 Milan Deskar-Škrbić, Petra Palić, Luka Šikić. Tekst za osobno i obrazovno korištenje uz navođenje izvora.
 
 
 ---
@@ -14,7 +14,7 @@
 > Autori: Milan Deskar-Škrbić, Petra Palić, Luka Šikić
 > Izvor: https://lusiki.github.io/Javne-politike/chapters/17-drzavni-neuspjesi.html
 > Tekstualna verzija poglavlja za korištenje s AI-asistentima.
-> Generirano: 2026-06-17 · © 2026 Milan Deskar-Škrbić, Petra Palić, Luka Šikić. Tekst za osobno i obrazovno korištenje uz navođenje izvora.
+> Generirano: 2026-06-18 · © 2026 Milan Deskar-Škrbić, Petra Palić, Luka Šikić. Tekst za osobno i obrazovno korištenje uz navođenje izvora.
 
 ---
 
@@ -232,7 +232,7 @@ Objasnite zašto sama činjenica da tržišni neuspjeh postoji i da iznosi 100 m
 > Autori: Milan Deskar-Škrbić, Petra Palić, Luka Šikić
 > Izvor: https://lusiki.github.io/Javne-politike/chapters/18-novi-javni-menadzment.html
 > Tekstualna verzija poglavlja za korištenje s AI-asistentima.
-> Generirano: 2026-06-17 · © 2026 Milan Deskar-Škrbić, Petra Palić, Luka Šikić. Tekst za osobno i obrazovno korištenje uz navođenje izvora.
+> Generirano: 2026-06-18 · © 2026 Milan Deskar-Škrbić, Petra Palić, Luka Šikić. Tekst za osobno i obrazovno korištenje uz navođenje izvora.
 
 ---
 
@@ -400,7 +400,7 @@ Na kraju objasnite zašto ovaj primjer ilustrira Goodhartov zakon i zašto sam �
 > Autori: Milan Deskar-Škrbić, Petra Palić, Luka Šikić
 > Izvor: https://lusiki.github.io/Javne-politike/chapters/19-novo-upravljanje.html
 > Tekstualna verzija poglavlja za korištenje s AI-asistentima.
-> Generirano: 2026-06-17 · © 2026 Milan Deskar-Škrbić, Petra Palić, Luka Šikić. Tekst za osobno i obrazovno korištenje uz navođenje izvora.
+> Generirano: 2026-06-18 · © 2026 Milan Deskar-Škrbić, Petra Palić, Luka Šikić. Tekst za osobno i obrazovno korištenje uz navođenje izvora.
 
 ---
 
@@ -539,7 +539,7 @@ Zašto mrežno i suradničko upravljanje može uspjeti ondje gdje i hijerarhija 
 > Autori: Milan Deskar-Škrbić, Petra Palić, Luka Šikić
 > Izvor: https://lusiki.github.io/Javne-politike/chapters/20-cba-evaluacija.html
 > Tekstualna verzija poglavlja za korištenje s AI-asistentima.
-> Generirano: 2026-06-17 · © 2026 Milan Deskar-Škrbić, Petra Palić, Luka Šikić. Tekst za osobno i obrazovno korištenje uz navođenje izvora.
+> Generirano: 2026-06-18 · © 2026 Milan Deskar-Škrbić, Petra Palić, Luka Šikić. Tekst za osobno i obrazovno korištenje uz navođenje izvora.
 
 ---
 
@@ -726,7 +726,7 @@ c. Pri kojoj se približno diskontnoj stopi neto sadašnja vrijednost izjednača
 > Autori: Milan Deskar-Škrbić, Petra Palić, Luka Šikić
 > Izvor: https://lusiki.github.io/Javne-politike/chapters/21-reforme.html
 > Tekstualna verzija poglavlja za korištenje s AI-asistentima.
-> Generirano: 2026-06-17 · © 2026 Milan Deskar-Škrbić, Petra Palić, Luka Šikić. Tekst za osobno i obrazovno korištenje uz navođenje izvora.
+> Generirano: 2026-06-18 · © 2026 Milan Deskar-Škrbić, Petra Palić, Luka Šikić. Tekst za osobno i obrazovno korištenje uz navođenje izvora.
 
 ---
 

@@ -3,7 +3,7 @@
 > Iz knjige: Sve što želite znati o državi i javnim politikama u Hrvatskoj
 > Autori: Milan Deskar-Škrbić, Petra Palić, Luka Šikić
 > Paket poglavlja ovog dijela knjige za korištenje s AI-asistentima.
-> Generirano: 2026-06-17 · © 2026 Milan Deskar-Škrbić, Petra Palić, Luka Šikić. Tekst za osobno i obrazovno korištenje uz navođenje izvora.
+> Generirano: 2026-06-18 · © 2026 Milan Deskar-Škrbić, Petra Palić, Luka Šikić. Tekst za osobno i obrazovno korištenje uz navođenje izvora.
 
 
 ---
@@ -14,7 +14,7 @@
 > Autori: Milan Deskar-Škrbić, Petra Palić, Luka Šikić
 > Izvor: https://lusiki.github.io/Javne-politike/chapters/06-javni-izbor.html
 > Tekstualna verzija poglavlja za korištenje s AI-asistentima.
-> Generirano: 2026-06-17 · © 2026 Milan Deskar-Škrbić, Petra Palić, Luka Šikić. Tekst za osobno i obrazovno korištenje uz navođenje izvora.
+> Generirano: 2026-06-18 · © 2026 Milan Deskar-Škrbić, Petra Palić, Luka Šikić. Tekst za osobno i obrazovno korištenje uz navođenje izvora.
 
 ---
 
@@ -181,7 +181,7 @@ Otvorite interaktivni graf iznad i zadržite trošak glasanja na $C = 10$ € te
 > Autori: Milan Deskar-Škrbić, Petra Palić, Luka Šikić
 > Izvor: https://lusiki.github.io/Javne-politike/chapters/06a-teorija-igara.html
 > Tekstualna verzija poglavlja za korištenje s AI-asistentima.
-> Generirano: 2026-06-17 · © 2026 Milan Deskar-Škrbić, Petra Palić, Luka Šikić. Tekst za osobno i obrazovno korištenje uz navođenje izvora.
+> Generirano: 2026-06-18 · © 2026 Milan Deskar-Škrbić, Petra Palić, Luka Šikić. Tekst za osobno i obrazovno korištenje uz navođenje izvora.
 
 ---
 
@@ -336,7 +336,7 @@ Promotrite zakonodavno tijelo s $n = 5$ zastupnika koji dijele proračun normali
 > Autori: Milan Deskar-Škrbić, Petra Palić, Luka Šikić
 > Izvor: https://lusiki.github.io/Javne-politike/chapters/07-kolektivni-izbor.html
 > Tekstualna verzija poglavlja za korištenje s AI-asistentima.
-> Generirano: 2026-06-17 · © 2026 Milan Deskar-Škrbić, Petra Palić, Luka Šikić. Tekst za osobno i obrazovno korištenje uz navođenje izvora.
+> Generirano: 2026-06-18 · © 2026 Milan Deskar-Škrbić, Petra Palić, Luka Šikić. Tekst za osobno i obrazovno korištenje uz navođenje izvora.
 
 ---
 
@@ -553,7 +553,7 @@ Otvorite interaktivni graf iznad. Krenite od početnog rasporeda koji proizvodi 
 > Autori: Milan Deskar-Škrbić, Petra Palić, Luka Šikić
 > Izvor: https://lusiki.github.io/Javne-politike/chapters/08-stranke-izbori.html
 > Tekstualna verzija poglavlja za korištenje s AI-asistentima.
-> Generirano: 2026-06-17 · © 2026 Milan Deskar-Škrbić, Petra Palić, Luka Šikić. Tekst za osobno i obrazovno korištenje uz navođenje izvora.
+> Generirano: 2026-06-18 · © 2026 Milan Deskar-Škrbić, Petra Palić, Luka Šikić. Tekst za osobno i obrazovno korištenje uz navođenje izvora.
 
 ---
 
@@ -715,7 +715,7 @@ d. Zamijenite jednodimenzionalnu os dvjema dimenzijama tako da uz lijevo-desno e
 > Autori: Milan Deskar-Škrbić, Petra Palić, Luka Šikić
 > Izvor: https://lusiki.github.io/Javne-politike/chapters/09-interesne-skupine.html
 > Tekstualna verzija poglavlja za korištenje s AI-asistentima.
-> Generirano: 2026-06-17 · © 2026 Milan Deskar-Škrbić, Petra Palić, Luka Šikić. Tekst za osobno i obrazovno korištenje uz navođenje izvora.
+> Generirano: 2026-06-18 · © 2026 Milan Deskar-Škrbić, Petra Palić, Luka Šikić. Tekst za osobno i obrazovno korištenje uz navođenje izvora.
 
 ---
 
@@ -904,7 +904,7 @@ Objasnite zašto mjera koja je za društvo neto negativna ipak politički opstaj
 > Autori: Milan Deskar-Škrbić, Petra Palić, Luka Šikić
 > Izvor: https://lusiki.github.io/Javne-politike/chapters/10-birokracija.html
 > Tekstualna verzija poglavlja za korištenje s AI-asistentima.
-> Generirano: 2026-06-17 · © 2026 Milan Deskar-Škrbić, Petra Palić, Luka Šikić. Tekst za osobno i obrazovno korištenje uz navođenje izvora.
+> Generirano: 2026-06-18 · © 2026 Milan Deskar-Škrbić, Petra Palić, Luka Šikić. Tekst za osobno i obrazovno korištenje uz navođenje izvora.
 
 ---
 

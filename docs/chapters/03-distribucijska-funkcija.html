@@ -101,9 +101,9 @@ div.csl-indent {
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting-4d4ad920c17a1b28c6a7c1d28bdd063b.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-8b1c720448afe02710937b9cddb6dc33.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../site_libs/bootstrap/bootstrap-dark-20a53a0befdf4f03e49c7494d4c35ead.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<link href="../site_libs/bootstrap/bootstrap-8b1c720448afe02710937b9cddb6dc33.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-f35c08127d223dd0c6839121de659991.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-dark-ec5bef2f2494b02d6b110e55301f5f04.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../site_libs/bootstrap/bootstrap-f35c08127d223dd0c6839121de659991.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -176,9 +176,11 @@ window.Quarto = {
 <link rel="stylesheet" href="../styles/styles.css">
 <meta property="og:title" content="Distribucijska funkcija – Sve što želite znati o državi i javnim politikama u Hrvatskoj">
 <meta property="og:description" content="Praktični i interaktivni udžbenik o javnim financijama, teoriji javnog izbora i javnim politikama u Hrvatskoj — uloga države, alokacija, redistribucija, institucije i reforme.">
+<meta property="og:image" content="https://lusiki.github.io/Javne-politike/ph3.jpg">
 <meta property="og:site_name" content="Sve što želite znati o državi i javnim politikama u Hrvatskoj">
 <meta name="twitter:title" content="Distribucijska funkcija – Sve što želite znati o državi i javnim politikama u Hrvatskoj">
 <meta name="twitter:description" content="Praktični i interaktivni udžbenik o javnim financijama, teoriji javnog izbora i javnim politikama u Hrvatskoj — uloga države, alokacija, redistribucija, institucije i reforme.">
+<meta name="twitter:image" content="https://lusiki.github.io/Javne-politike/ph3.jpg">
 <meta name="twitter:card" content="summary_large_image">
 </head>
 
@@ -386,7 +388,11 @@ window.Quarto = {
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="../uci-s-ai.html"> 
-<span class="menu-text">Uči s AI</span></a>
+<span class="menu-text">Uči uz AI</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../silabusi.html"> 
+<span class="menu-text">Silabusi</span></a>
   </li>  
 </ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
@@ -781,7 +787,12 @@ window.Quarto = {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../uci-s-ai.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Uči s AI</span></a>
+  <a href="../uci-s-ai.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Uči uz AI</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../silabusi.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Silabusi i predavanja</span></a>
   </div>
 </li>
       </ul>
@@ -1187,6 +1198,34 @@ Slika&nbsp;2: Lorenzova krivulja udaljava se od dijagonale jednakosti kako raste
 
 .ai-cta-menu a:hover { background: rgba(74,107,92,0.12); border-color: #4A6B5C; }
 
+
+
+/* Podnožje poglavlja — AI-izbornik i poveznica na mrežu pojmova jedno uz drugo,
+
+   odvojeni tankom crtom od zadnjeg odjeljka. */
+
+.ai-cta-foot { display: flex; flex-wrap: wrap; align-items: center; gap: .6rem;
+
+  margin: 2.6rem 0 1rem; padding-top: 1.4rem;
+
+  border-top: 1px solid rgba(74,107,92,0.25); }
+
+.ai-cta-foot .ai-cta { margin: 0; }
+
+.ai-cta-pm { font-family: "IBM Plex Mono", ui-monospace, "SF Mono", Menlo, monospace;
+
+  font-size: .8rem; font-weight: 500; letter-spacing: .005em;
+
+  display: inline-flex; align-items: center; gap: .4rem;
+
+  color: #4A6B5C; background: transparent; border: 1px solid rgba(74,107,92,0.5);
+
+  border-radius: 6px; padding: .45rem .8rem; text-decoration: none; line-height: 1.2;
+
+  transition: background .15s, color .15s, border-color .15s; }
+
+.ai-cta-pm:hover { background: #4A6B5C; color: #F2EDE3; border-color: #4A6B5C; }
+
 </style>
 
 <script>
@@ -1545,17 +1584,33 @@ Slika&nbsp;2: Lorenzova krivulja udaljava se od dijagonale jednakosti kako raste
 
 
 
-    // 3. Remove "Appendix A —" / "Appendix B —" etc. prefix from page title
+    // 3. Remove "Appendix A —" prefix from page title. Quarto's appendix counter
+
+    //    može pukne i izaći kao "Appendix [ —" (ne slovo), pa hvatamo bilo koju
+
+    //    oznaku iza riječi "Appendix", kao i goli "— Naslov" iz <title> oznake.
+
+    var stripAppendix = function (s) {
+
+      return s
+
+        .replace(/^Appendix\s+\S*\s*[—–-]\s*/i, "")  // "Appendix A — " / "Appendix [ — "
+
+        .replace(/^\s*[—–-]\s+/, "")                 // goli "— Resursi"
+
+        .trim();
+
+    };
 
     var titleEl = document.querySelector("#title-block-header h1.title, h1.title");
 
     if (titleEl) {
 
-      titleEl.textContent = titleEl.textContent.replace(/^Appendix\s+[A-Z]\s*[—–-]\s*/i, "").trim();
+      titleEl.textContent = stripAppendix(titleEl.textContent);
 
     }
 
-    document.title = document.title.replace(/^Appendix\s+[A-Z]\s*[—–-]\s*/i, "");
+    document.title = stripAppendix(document.title);
 
 
 
@@ -2003,13 +2058,15 @@ Slika&nbsp;2: Lorenzova krivulja udaljava se od dijagonale jednakosti kako raste
 
   // ----------------------------------------------------------
 
-  // 12. "Pitaj AI o ovom poglavlju" — uz naslov svakog poglavlja ubaci
+  // 12. "Pitaj AI o ovom poglavlju" — na KRAJU svakog poglavlja ubaci
 
   //     padajući izbornik koji vodi na /ai/<slug>.md i prefilled asistente
 
   //     (Track A, notes/ai-export-spec.md). Radi samo na stranicama poglavlja
 
   //     (/chapters/<slug>.html); preslikava trenutni URL u njegov .md izvoz.
+
+  //     Uz njega stoji i poveznica na Mrežu pojmova, otvorenu na ovom poglavlju.
 
   // ----------------------------------------------------------
 
@@ -2019,17 +2076,19 @@ Slika&nbsp;2: Lorenzova krivulja udaljava se od dijagonale jednakosti kako raste
 
     if (!m) return;                                  // samo poglavlja
 
-    var header = document.getElementById("title-block-header");
+    if (document.querySelector(".ai-cta")) return;
 
-    var titleEl = header ? header.querySelector("h1.title") : document.querySelector("h1.title");
-
-    if (!titleEl || document.querySelector(".ai-cta")) return;
+    var slug = m[1];
 
 
 
     var mdHref  = location.pathname.replace(/\/chapters\/([^/]+)\.html$/, "/ai/$1.md");
 
     var uciHref = location.pathname.replace(/\/chapters\/[^/]+\.html$/, "/uci-s-ai.html");
+
+    var pmHref  = location.pathname.replace(/\/chapters\/[^/]+\.html$/, "/pojmovnik.html")
+
+                  + "?chapter=" + encodeURIComponent(slug);
 
     var absMd   = location.origin + mdHref;
 
@@ -2063,6 +2122,14 @@ Slika&nbsp;2: Lorenzova krivulja udaljava se od dijagonale jednakosti kako raste
 
 
 
+    // dvije skupine gumba: AI-asistent (padajući) + Mreža pojmova (izravni)
+
+    var box = document.createElement("div");
+
+    box.className = "ai-cta-foot";
+
+
+
     var det = document.createElement("details");
 
     det.className = "ai-cta";
@@ -2085,11 +2152,39 @@ Slika&nbsp;2: Lorenzova krivulja udaljava se od dijagonale jednakosti kako raste
 
 
 
-    // ubaci odmah iza naslovnog bloka (ili iza samog naslova)
+    var pm = document.createElement("a");
 
-    var anchor = header || titleEl;
+    pm.className = "ai-cta-pm";
 
-    anchor.insertAdjacentElement("afterend", det);
+    pm.href = pmHref;
+
+    pm.innerHTML = '🕸 Pojmovi ovog poglavlja u mreži';
+
+
+
+    box.appendChild(det);
+
+    box.appendChild(pm);
+
+
+
+    // ubaci na kraj poglavlja — iza zadnjeg odjeljka, prije bilješki/citata
+
+    var article = document.querySelector("main.content") || document.querySelector("main");
+
+    if (!article) return;
+
+    var fn = article.querySelector("section.footnotes, #refs, section#footnotes");
+
+    if (fn) {
+
+      fn.parentNode.insertBefore(box, fn);
+
+    } else {
+
+      article.appendChild(box);
+
+    }
 
   }
 
@@ -2849,8 +2944,8 @@ window._ojs.runtime.interpretFromScriptTags();
 <span id="cb6-218"><a href="#cb6-218" aria-hidden="true" tabindex="-1"></a><span class="co">#| fig-height: 3.8</span></span>
 <span id="cb6-219"><a href="#cb6-219" aria-hidden="true" tabindex="-1"></a><span class="fu">source</span>(<span class="st">"R/setup.R"</span>)</span>
 <span id="cb6-220"><a href="#cb6-220" aria-hidden="true" tabindex="-1"></a><span class="fu">theme_set</span>(<span class="fu">theme_pubfin</span>() <span class="sc">+</span> <span class="fu">theme</span>(</span>
-<span id="cb6-221"><a href="#cb6-221" aria-hidden="true" tabindex="-1"></a>  <span class="at">plot.background  =</span> <span class="fu">element_rect</span>(<span class="at">fill =</span> <span class="st">"#F2EDE3"</span>, <span class="at">color =</span> <span class="cn">NA</span>),</span>
-<span id="cb6-222"><a href="#cb6-222" aria-hidden="true" tabindex="-1"></a>  <span class="at">panel.background =</span> <span class="fu">element_rect</span>(<span class="at">fill =</span> <span class="st">"#F2EDE3"</span>, <span class="at">color =</span> <span class="cn">NA</span>)))</span>
+<span id="cb6-221"><a href="#cb6-221" aria-hidden="true" tabindex="-1"></a>  <span class="at">plot.background  =</span> <span class="fu">element_rect</span>(<span class="at">fill =</span> <span class="st">"white"</span>, <span class="at">color =</span> <span class="cn">NA</span>),</span>
+<span id="cb6-222"><a href="#cb6-222" aria-hidden="true" tabindex="-1"></a>  <span class="at">panel.background =</span> <span class="fu">element_rect</span>(<span class="at">fill =</span> <span class="st">"white"</span>, <span class="at">color =</span> <span class="cn">NA</span>)))</span>
 <span id="cb6-223"><a href="#cb6-223" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb6-224"><a href="#cb6-224" aria-hidden="true" tabindex="-1"></a>order <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">"SAD"</span>,<span class="st">"Italija"</span>,<span class="st">"Njemačka"</span>,<span class="st">"Hrvatska"</span>,<span class="st">"Francuska"</span>,<span class="st">"Švedska"</span>,<span class="st">"Irska"</span>,<span class="st">"Poljska"</span>)</span>
 <span id="cb6-225"><a href="#cb6-225" aria-hidden="true" tabindex="-1"></a>df <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(</span>
@@ -2865,8 +2960,8 @@ window._ojs.runtime.interpretFromScriptTags();
 <span id="cb6-234"><a href="#cb6-234" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>(<span class="fu">aes</span>(m, z), <span class="at">color =</span> <span class="st">"#6B6357"</span>, <span class="at">size =</span> <span class="fl">2.3</span>) <span class="sc">+</span></span>
 <span id="cb6-235"><a href="#cb6-235" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>(<span class="fu">aes</span>(d, z, <span class="at">color =</span> hl), <span class="at">size =</span> <span class="fl">2.9</span>) <span class="sc">+</span></span>
 <span id="cb6-236"><a href="#cb6-236" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_text</span>(<span class="fu">aes</span>(m, z, <span class="at">label =</span> <span class="fu">sub</span>(<span class="st">"</span><span class="sc">\\</span><span class="st">."</span>, <span class="st">","</span>, <span class="fu">sprintf</span>(<span class="st">"%.2f"</span>, m))), <span class="at">vjust =</span> <span class="sc">-</span><span class="fl">1.0</span>, <span class="at">size =</span> <span class="fl">2.6</span>, <span class="at">color =</span> <span class="st">"#6B6357"</span>) <span class="sc">+</span></span>
-<span id="cb6-237"><a href="#cb6-237" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_text</span>(<span class="fu">aes</span>(d, z, <span class="at">label =</span> <span class="fu">sub</span>(<span class="st">"</span><span class="sc">\\</span><span class="st">."</span>, <span class="st">","</span>, <span class="fu">sprintf</span>(<span class="st">"%.2f"</span>, d))), <span class="at">vjust =</span> <span class="sc">-</span><span class="fl">1.0</span>, <span class="at">hjust =</span> <span class="fl">1.1</span>, <span class="at">size =</span> <span class="fl">2.6</span>, <span class="at">color =</span> <span class="st">"#3A5648"</span>) <span class="sc">+</span></span>
-<span id="cb6-238"><a href="#cb6-238" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_color_manual</span>(<span class="at">values =</span> <span class="fu">c</span>(<span class="st">`</span><span class="at">FALSE</span><span class="st">`</span> <span class="ot">=</span> <span class="st">"#4A6B5C"</span>, <span class="st">`</span><span class="at">TRUE</span><span class="st">`</span> <span class="ot">=</span> <span class="st">"#C8942D"</span>), <span class="at">guide =</span> <span class="st">"none"</span>) <span class="sc">+</span></span>
+<span id="cb6-237"><a href="#cb6-237" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_text</span>(<span class="fu">aes</span>(d, z, <span class="at">label =</span> <span class="fu">sub</span>(<span class="st">"</span><span class="sc">\\</span><span class="st">."</span>, <span class="st">","</span>, <span class="fu">sprintf</span>(<span class="st">"%.2f"</span>, d))), <span class="at">vjust =</span> <span class="sc">-</span><span class="fl">1.0</span>, <span class="at">hjust =</span> <span class="fl">1.1</span>, <span class="at">size =</span> <span class="fl">2.6</span>, <span class="at">color =</span> <span class="st">"#6B6357"</span>) <span class="sc">+</span></span>
+<span id="cb6-238"><a href="#cb6-238" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_color_manual</span>(<span class="at">values =</span> <span class="fu">c</span>(<span class="st">`</span><span class="at">FALSE</span><span class="st">`</span> <span class="ot">=</span> <span class="st">"#7A7A7A"</span>, <span class="st">`</span><span class="at">TRUE</span><span class="st">`</span> <span class="ot">=</span> <span class="st">"#1A1A1A"</span>), <span class="at">guide =</span> <span class="st">"none"</span>) <span class="sc">+</span></span>
 <span id="cb6-239"><a href="#cb6-239" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_x_continuous</span>(<span class="at">limits =</span> <span class="fu">c</span>(<span class="fl">0.2</span>, <span class="fl">0.56</span>)) <span class="sc">+</span></span>
 <span id="cb6-240"><a href="#cb6-240" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">x =</span> <span class="st">"Gini koeficijent (0 = jednakost)"</span>, <span class="at">y =</span> <span class="cn">NULL</span>)</span>
 <span id="cb6-241"><a href="#cb6-241" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>

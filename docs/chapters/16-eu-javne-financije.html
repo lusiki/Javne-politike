@@ -101,9 +101,9 @@ div.csl-indent {
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting-4d4ad920c17a1b28c6a7c1d28bdd063b.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-8b1c720448afe02710937b9cddb6dc33.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../site_libs/bootstrap/bootstrap-dark-20a53a0befdf4f03e49c7494d4c35ead.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<link href="../site_libs/bootstrap/bootstrap-8b1c720448afe02710937b9cddb6dc33.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-f35c08127d223dd0c6839121de659991.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-dark-ec5bef2f2494b02d6b110e55301f5f04.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../site_libs/bootstrap/bootstrap-f35c08127d223dd0c6839121de659991.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -176,9 +176,11 @@ window.Quarto = {
 <link rel="stylesheet" href="../styles/styles.css">
 <meta property="og:title" content="Javne financije Europske unije – Sve što želite znati o državi i javnim politikama u Hrvatskoj">
 <meta property="og:description" content="Praktični i interaktivni udžbenik o javnim financijama, teoriji javnog izbora i javnim politikama u Hrvatskoj — uloga države, alokacija, redistribucija, institucije i reforme.">
+<meta property="og:image" content="https://lusiki.github.io/Javne-politike/ph3.jpg">
 <meta property="og:site_name" content="Sve što želite znati o državi i javnim politikama u Hrvatskoj">
 <meta name="twitter:title" content="Javne financije Europske unije – Sve što želite znati o državi i javnim politikama u Hrvatskoj">
 <meta name="twitter:description" content="Praktični i interaktivni udžbenik o javnim financijama, teoriji javnog izbora i javnim politikama u Hrvatskoj — uloga države, alokacija, redistribucija, institucije i reforme.">
+<meta name="twitter:image" content="https://lusiki.github.io/Javne-politike/ph3.jpg">
 <meta name="twitter:card" content="summary_large_image">
 </head>
 
@@ -386,7 +388,11 @@ window.Quarto = {
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="../uci-s-ai.html"> 
-<span class="menu-text">Uči s AI</span></a>
+<span class="menu-text">Uči uz AI</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../silabusi.html"> 
+<span class="menu-text">Silabusi</span></a>
   </li>  
 </ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
@@ -781,7 +787,12 @@ window.Quarto = {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../uci-s-ai.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Uči s AI</span></a>
+  <a href="../uci-s-ai.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Uči uz AI</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../silabusi.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Silabusi i predavanja</span></a>
   </div>
 </li>
       </ul>
@@ -1327,6 +1338,34 @@ Council of the European Union. 2025. <em>The European Semester Explained</em>. <
 
 .ai-cta-menu a:hover { background: rgba(74,107,92,0.12); border-color: #4A6B5C; }
 
+
+
+/* Podnožje poglavlja — AI-izbornik i poveznica na mrežu pojmova jedno uz drugo,
+
+   odvojeni tankom crtom od zadnjeg odjeljka. */
+
+.ai-cta-foot { display: flex; flex-wrap: wrap; align-items: center; gap: .6rem;
+
+  margin: 2.6rem 0 1rem; padding-top: 1.4rem;
+
+  border-top: 1px solid rgba(74,107,92,0.25); }
+
+.ai-cta-foot .ai-cta { margin: 0; }
+
+.ai-cta-pm { font-family: "IBM Plex Mono", ui-monospace, "SF Mono", Menlo, monospace;
+
+  font-size: .8rem; font-weight: 500; letter-spacing: .005em;
+
+  display: inline-flex; align-items: center; gap: .4rem;
+
+  color: #4A6B5C; background: transparent; border: 1px solid rgba(74,107,92,0.5);
+
+  border-radius: 6px; padding: .45rem .8rem; text-decoration: none; line-height: 1.2;
+
+  transition: background .15s, color .15s, border-color .15s; }
+
+.ai-cta-pm:hover { background: #4A6B5C; color: #F2EDE3; border-color: #4A6B5C; }
+
 </style>
 
 <script>
@@ -1685,17 +1724,33 @@ Council of the European Union. 2025. <em>The European Semester Explained</em>. <
 
 
 
-    // 3. Remove "Appendix A —" / "Appendix B —" etc. prefix from page title
+    // 3. Remove "Appendix A —" prefix from page title. Quarto's appendix counter
+
+    //    može pukne i izaći kao "Appendix [ —" (ne slovo), pa hvatamo bilo koju
+
+    //    oznaku iza riječi "Appendix", kao i goli "— Naslov" iz <title> oznake.
+
+    var stripAppendix = function (s) {
+
+      return s
+
+        .replace(/^Appendix\s+\S*\s*[—–-]\s*/i, "")  // "Appendix A — " / "Appendix [ — "
+
+        .replace(/^\s*[—–-]\s+/, "")                 // goli "— Resursi"
+
+        .trim();
+
+    };
 
     var titleEl = document.querySelector("#title-block-header h1.title, h1.title");
 
     if (titleEl) {
 
-      titleEl.textContent = titleEl.textContent.replace(/^Appendix\s+[A-Z]\s*[—–-]\s*/i, "").trim();
+      titleEl.textContent = stripAppendix(titleEl.textContent);
 
     }
 
-    document.title = document.title.replace(/^Appendix\s+[A-Z]\s*[—–-]\s*/i, "");
+    document.title = stripAppendix(document.title);
 
 
 
@@ -2143,13 +2198,15 @@ Council of the European Union. 2025. <em>The European Semester Explained</em>. <
 
   // ----------------------------------------------------------
 
-  // 12. "Pitaj AI o ovom poglavlju" — uz naslov svakog poglavlja ubaci
+  // 12. "Pitaj AI o ovom poglavlju" — na KRAJU svakog poglavlja ubaci
 
   //     padajući izbornik koji vodi na /ai/<slug>.md i prefilled asistente
 
   //     (Track A, notes/ai-export-spec.md). Radi samo na stranicama poglavlja
 
   //     (/chapters/<slug>.html); preslikava trenutni URL u njegov .md izvoz.
+
+  //     Uz njega stoji i poveznica na Mrežu pojmova, otvorenu na ovom poglavlju.
 
   // ----------------------------------------------------------
 
@@ -2159,17 +2216,19 @@ Council of the European Union. 2025. <em>The European Semester Explained</em>. <
 
     if (!m) return;                                  // samo poglavlja
 
-    var header = document.getElementById("title-block-header");
+    if (document.querySelector(".ai-cta")) return;
 
-    var titleEl = header ? header.querySelector("h1.title") : document.querySelector("h1.title");
-
-    if (!titleEl || document.querySelector(".ai-cta")) return;
+    var slug = m[1];
 
 
 
     var mdHref  = location.pathname.replace(/\/chapters\/([^/]+)\.html$/, "/ai/$1.md");
 
     var uciHref = location.pathname.replace(/\/chapters\/[^/]+\.html$/, "/uci-s-ai.html");
+
+    var pmHref  = location.pathname.replace(/\/chapters\/[^/]+\.html$/, "/pojmovnik.html")
+
+                  + "?chapter=" + encodeURIComponent(slug);
 
     var absMd   = location.origin + mdHref;
 
@@ -2203,6 +2262,14 @@ Council of the European Union. 2025. <em>The European Semester Explained</em>. <
 
 
 
+    // dvije skupine gumba: AI-asistent (padajući) + Mreža pojmova (izravni)
+
+    var box = document.createElement("div");
+
+    box.className = "ai-cta-foot";
+
+
+
     var det = document.createElement("details");
 
     det.className = "ai-cta";
@@ -2225,11 +2292,39 @@ Council of the European Union. 2025. <em>The European Semester Explained</em>. <
 
 
 
-    // ubaci odmah iza naslovnog bloka (ili iza samog naslova)
+    var pm = document.createElement("a");
 
-    var anchor = header || titleEl;
+    pm.className = "ai-cta-pm";
 
-    anchor.insertAdjacentElement("afterend", det);
+    pm.href = pmHref;
+
+    pm.innerHTML = '🕸 Pojmovi ovog poglavlja u mreži';
+
+
+
+    box.appendChild(det);
+
+    box.appendChild(pm);
+
+
+
+    // ubaci na kraj poglavlja — iza zadnjeg odjeljka, prije bilješki/citata
+
+    var article = document.querySelector("main.content") || document.querySelector("main");
+
+    if (!article) return;
+
+    var fn = article.querySelector("section.footnotes, #refs, section#footnotes");
+
+    if (fn) {
+
+      fn.parentNode.insertBefore(box, fn);
+
+    } else {
+
+      article.appendChild(box);
+
+    }
 
   }
 
@@ -2939,8 +3034,8 @@ window._ojs.runtime.interpretFromScriptTags();
 <span id="cb3-168"><a href="#cb3-168" aria-hidden="true" tabindex="-1"></a><span class="co">#| fig-height: 3.3</span></span>
 <span id="cb3-169"><a href="#cb3-169" aria-hidden="true" tabindex="-1"></a><span class="fu">source</span>(<span class="st">"R/setup.R"</span>)</span>
 <span id="cb3-170"><a href="#cb3-170" aria-hidden="true" tabindex="-1"></a><span class="fu">theme_set</span>(<span class="fu">theme_pubfin</span>() <span class="sc">+</span> <span class="fu">theme</span>(</span>
-<span id="cb3-171"><a href="#cb3-171" aria-hidden="true" tabindex="-1"></a>  <span class="at">plot.background  =</span> <span class="fu">element_rect</span>(<span class="at">fill =</span> <span class="st">"#F2EDE3"</span>, <span class="at">color =</span> <span class="cn">NA</span>),</span>
-<span id="cb3-172"><a href="#cb3-172" aria-hidden="true" tabindex="-1"></a>  <span class="at">panel.background =</span> <span class="fu">element_rect</span>(<span class="at">fill =</span> <span class="st">"#F2EDE3"</span>, <span class="at">color =</span> <span class="cn">NA</span>)))</span>
+<span id="cb3-171"><a href="#cb3-171" aria-hidden="true" tabindex="-1"></a>  <span class="at">plot.background  =</span> <span class="fu">element_rect</span>(<span class="at">fill =</span> <span class="st">"white"</span>, <span class="at">color =</span> <span class="cn">NA</span>),</span>
+<span id="cb3-172"><a href="#cb3-172" aria-hidden="true" tabindex="-1"></a>  <span class="at">panel.background =</span> <span class="fu">element_rect</span>(<span class="at">fill =</span> <span class="st">"white"</span>, <span class="at">color =</span> <span class="cn">NA</span>)))</span>
 <span id="cb3-173"><a href="#cb3-173" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb3-174"><a href="#cb3-174" aria-hidden="true" tabindex="-1"></a>mff <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(</span>
 <span id="cb3-175"><a href="#cb3-175" aria-hidden="true" tabindex="-1"></a>  <span class="at">h =</span> <span class="fu">c</span>(<span class="st">"Kohezija, otpornost i vrijednosti"</span>,<span class="st">"Prirodni resursi i okoliš (uklj. ZPP)"</span>,</span>
@@ -2954,7 +3049,7 @@ window._ojs.runtime.interpretFromScriptTags();
 <span id="cb3-183"><a href="#cb3-183" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(mff, <span class="fu">aes</span>(v, h, <span class="at">fill =</span> grp)) <span class="sc">+</span></span>
 <span id="cb3-184"><a href="#cb3-184" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_col</span>(<span class="at">width =</span> <span class="fl">0.74</span>) <span class="sc">+</span></span>
 <span id="cb3-185"><a href="#cb3-185" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_text</span>(<span class="fu">aes</span>(<span class="at">label =</span> <span class="fu">paste0</span>(<span class="fu">sub</span>(<span class="st">"</span><span class="sc">\\</span><span class="st">."</span>, <span class="st">","</span>, <span class="fu">sprintf</span>(<span class="st">"%.1f"</span>, v)), <span class="st">" %"</span>)), <span class="at">hjust =</span> <span class="sc">-</span><span class="fl">0.15</span>, <span class="at">size =</span> <span class="fl">2.8</span>, <span class="at">color =</span> <span class="st">"#3A332D"</span>) <span class="sc">+</span></span>
-<span id="cb3-186"><a href="#cb3-186" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_fill_manual</span>(<span class="at">values =</span> <span class="fu">c</span>(<span class="st">"glavno"</span><span class="ot">=</span><span class="st">"#4A6B5C"</span>,<span class="st">"ostalo"</span><span class="ot">=</span><span class="st">"#4A5568"</span>), <span class="at">guide =</span> <span class="st">"none"</span>) <span class="sc">+</span></span>
+<span id="cb3-186"><a href="#cb3-186" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_fill_manual</span>(<span class="at">values =</span> <span class="fu">c</span>(<span class="st">"glavno"</span><span class="ot">=</span><span class="st">"#333333"</span>,<span class="st">"ostalo"</span><span class="ot">=</span><span class="st">"#8C8C8C"</span>), <span class="at">guide =</span> <span class="st">"none"</span>) <span class="sc">+</span></span>
 <span id="cb3-187"><a href="#cb3-187" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_x_continuous</span>(<span class="at">limits =</span> <span class="fu">c</span>(<span class="dv">0</span>, <span class="dv">42</span>)) <span class="sc">+</span></span>
 <span id="cb3-188"><a href="#cb3-188" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">x =</span> <span class="st">"% obveza okvira 2021.–2027."</span>, <span class="at">y =</span> <span class="cn">NULL</span>)</span>
 <span id="cb3-189"><a href="#cb3-189" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
@@ -3002,8 +3097,8 @@ window._ojs.runtime.interpretFromScriptTags();
 <span id="cb3-235"><a href="#cb3-235" aria-hidden="true" tabindex="-1"></a><span class="co">#| fig-height: 2.9</span></span>
 <span id="cb3-236"><a href="#cb3-236" aria-hidden="true" tabindex="-1"></a><span class="fu">source</span>(<span class="st">"R/setup.R"</span>)</span>
 <span id="cb3-237"><a href="#cb3-237" aria-hidden="true" tabindex="-1"></a><span class="fu">theme_set</span>(<span class="fu">theme_pubfin</span>() <span class="sc">+</span> <span class="fu">theme</span>(</span>
-<span id="cb3-238"><a href="#cb3-238" aria-hidden="true" tabindex="-1"></a>  <span class="at">plot.background  =</span> <span class="fu">element_rect</span>(<span class="at">fill =</span> <span class="st">"#F2EDE3"</span>, <span class="at">color =</span> <span class="cn">NA</span>),</span>
-<span id="cb3-239"><a href="#cb3-239" aria-hidden="true" tabindex="-1"></a>  <span class="at">panel.background =</span> <span class="fu">element_rect</span>(<span class="at">fill =</span> <span class="st">"#F2EDE3"</span>, <span class="at">color =</span> <span class="cn">NA</span>)))</span>
+<span id="cb3-238"><a href="#cb3-238" aria-hidden="true" tabindex="-1"></a>  <span class="at">plot.background  =</span> <span class="fu">element_rect</span>(<span class="at">fill =</span> <span class="st">"white"</span>, <span class="at">color =</span> <span class="cn">NA</span>),</span>
+<span id="cb3-239"><a href="#cb3-239" aria-hidden="true" tabindex="-1"></a>  <span class="at">panel.background =</span> <span class="fu">element_rect</span>(<span class="at">fill =</span> <span class="st">"white"</span>, <span class="at">color =</span> <span class="cn">NA</span>)))</span>
 <span id="cb3-240"><a href="#cb3-240" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb3-241"><a href="#cb3-241" aria-hidden="true" tabindex="-1"></a>np <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(</span>
 <span id="cb3-242"><a href="#cb3-242" aria-hidden="true" tabindex="-1"></a>  <span class="at">z =</span> <span class="fu">c</span>(<span class="st">"Hrvatska"</span>,<span class="st">"Rumunjska"</span>,<span class="st">"Poljska"</span>,<span class="st">"Francuska"</span>,<span class="st">"Nizozemska"</span>),</span>
@@ -3017,7 +3112,7 @@ window._ojs.runtime.interpretFromScriptTags();
 <span id="cb3-250"><a href="#cb3-250" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_vline</span>(<span class="at">xintercept =</span> <span class="dv">0</span>, <span class="at">color =</span> <span class="st">"#3A332D"</span>, <span class="at">linewidth =</span> <span class="fl">0.5</span>) <span class="sc">+</span></span>
 <span id="cb3-251"><a href="#cb3-251" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_text</span>(<span class="fu">aes</span>(<span class="at">label =</span> <span class="fu">paste0</span>(<span class="fu">ifelse</span>(v <span class="sc">&gt;</span> <span class="dv">0</span>, <span class="st">"+"</span>, <span class="st">""</span>), v, <span class="st">" €"</span>),</span>
 <span id="cb3-252"><a href="#cb3-252" aria-hidden="true" tabindex="-1"></a>                <span class="at">hjust =</span> <span class="fu">ifelse</span>(v <span class="sc">&gt;</span> <span class="dv">0</span>, <span class="sc">-</span><span class="fl">0.15</span>, <span class="fl">1.15</span>)), <span class="at">size =</span> <span class="fl">2.8</span>, <span class="at">color =</span> <span class="st">"#3A332D"</span>) <span class="sc">+</span></span>
-<span id="cb3-253"><a href="#cb3-253" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_fill_manual</span>(<span class="at">values =</span> <span class="fu">c</span>(<span class="st">"HR"</span><span class="ot">=</span><span class="st">"#C8942D"</span>,<span class="st">"prim"</span><span class="ot">=</span><span class="st">"#4A6B5C"</span>,<span class="st">"upl"</span><span class="ot">=</span><span class="st">"#6B1F26"</span>), <span class="at">guide =</span> <span class="st">"none"</span>) <span class="sc">+</span></span>
+<span id="cb3-253"><a href="#cb3-253" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_fill_manual</span>(<span class="at">values =</span> <span class="fu">c</span>(<span class="st">"HR"</span><span class="ot">=</span><span class="st">"#1A1A1A"</span>,<span class="st">"prim"</span><span class="ot">=</span><span class="st">"#4D4D4D"</span>,<span class="st">"upl"</span><span class="ot">=</span><span class="st">"#8C8C8C"</span>), <span class="at">guide =</span> <span class="st">"none"</span>) <span class="sc">+</span></span>
 <span id="cb3-254"><a href="#cb3-254" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_x_continuous</span>(<span class="at">limits =</span> <span class="fu">c</span>(<span class="sc">-</span><span class="dv">470</span>, <span class="dv">760</span>)) <span class="sc">+</span></span>
 <span id="cb3-255"><a href="#cb3-255" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">x =</span> <span class="st">"Neto položaj, € po stanovniku (2023.)"</span>, <span class="at">y =</span> <span class="cn">NULL</span>)</span>
 <span id="cb3-256"><a href="#cb3-256" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>

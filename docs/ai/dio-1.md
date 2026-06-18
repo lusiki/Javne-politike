@@ -3,7 +3,7 @@
 > Iz knjige: Sve što želite znati o državi i javnim politikama u Hrvatskoj
 > Autori: Milan Deskar-Škrbić, Petra Palić, Luka Šikić
 > Paket poglavlja ovog dijela knjige za korištenje s AI-asistentima.
-> Generirano: 2026-06-17 · © 2026 Milan Deskar-Škrbić, Petra Palić, Luka Šikić. Tekst za osobno i obrazovno korištenje uz navođenje izvora.
+> Generirano: 2026-06-18 · © 2026 Milan Deskar-Škrbić, Petra Palić, Luka Šikić. Tekst za osobno i obrazovno korištenje uz navođenje izvora.
 
 
 ---
@@ -14,7 +14,7 @@
 > Autori: Milan Deskar-Škrbić, Petra Palić, Luka Šikić
 > Izvor: https://lusiki.github.io/Javne-politike/chapters/01-uloga-drzave.html
 > Tekstualna verzija poglavlja za korištenje s AI-asistentima.
-> Generirano: 2026-06-17 · © 2026 Milan Deskar-Škrbić, Petra Palić, Luka Šikić. Tekst za osobno i obrazovno korištenje uz navođenje izvora.
+> Generirano: 2026-06-18 · © 2026 Milan Deskar-Škrbić, Petra Palić, Luka Šikić. Tekst za osobno i obrazovno korištenje uz navođenje izvora.
 
 ---
 
@@ -174,7 +174,7 @@ d. Pretpostavite sada da su gubitnici siromašni, a dobitnici imućni. Objasnite
 > Autori: Milan Deskar-Škrbić, Petra Palić, Luka Šikić
 > Izvor: https://lusiki.github.io/Javne-politike/chapters/02-alokacijska-funkcija.html
 > Tekstualna verzija poglavlja za korištenje s AI-asistentima.
-> Generirano: 2026-06-17 · © 2026 Milan Deskar-Škrbić, Petra Palić, Luka Šikić. Tekst za osobno i obrazovno korištenje uz navođenje izvora.
+> Generirano: 2026-06-18 · © 2026 Milan Deskar-Škrbić, Petra Palić, Luka Šikić. Tekst za osobno i obrazovno korištenje uz navođenje izvora.
 
 ---
 
@@ -471,7 +471,7 @@ Promotrite hipotetsku industriju u kojoj je tržišna potražnja zadana izrazom 
 > Autori: Milan Deskar-Škrbić, Petra Palić, Luka Šikić
 > Izvor: https://lusiki.github.io/Javne-politike/chapters/03-distribucijska-funkcija.html
 > Tekstualna verzija poglavlja za korištenje s AI-asistentima.
-> Generirano: 2026-06-17 · © 2026 Milan Deskar-Škrbić, Petra Palić, Luka Šikić. Tekst za osobno i obrazovno korištenje uz navođenje izvora.
+> Generirano: 2026-06-18 · © 2026 Milan Deskar-Škrbić, Petra Palić, Luka Šikić. Tekst za osobno i obrazovno korištenje uz navođenje izvora.
 
 ---
 
@@ -687,7 +687,7 @@ c. Pretpostavite da država najsiromašnijem kućanstvu transferom doda 10 tisu�
 > Autori: Milan Deskar-Škrbić, Petra Palić, Luka Šikić
 > Izvor: https://lusiki.github.io/Javne-politike/chapters/04-stabilizacijska-funkcija.html
 > Tekstualna verzija poglavlja za korištenje s AI-asistentima.
-> Generirano: 2026-06-17 · © 2026 Milan Deskar-Škrbić, Petra Palić, Luka Šikić. Tekst za osobno i obrazovno korištenje uz navođenje izvora.
+> Generirano: 2026-06-18 · © 2026 Milan Deskar-Škrbić, Petra Palić, Luka Šikić. Tekst za osobno i obrazovno korištenje uz navođenje izvora.
 
 ---
 
@@ -931,7 +931,7 @@ c. Pretpostavite da je u dubokoj recesiji stvarni multiplikator bliži 1,8 od te
 > Autori: Milan Deskar-Škrbić, Petra Palić, Luka Šikić
 > Izvor: https://lusiki.github.io/Javne-politike/chapters/05-porezi.html
 > Tekstualna verzija poglavlja za korištenje s AI-asistentima.
-> Generirano: 2026-06-17 · © 2026 Milan Deskar-Škrbić, Petra Palić, Luka Šikić. Tekst za osobno i obrazovno korištenje uz navođenje izvora.
+> Generirano: 2026-06-18 · © 2026 Milan Deskar-Škrbić, Petra Palić, Luka Šikić. Tekst za osobno i obrazovno korištenje uz navođenje izvora.
 
 ---
 
