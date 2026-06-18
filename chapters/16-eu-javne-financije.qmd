@@ -164,8 +164,8 @@ Sam proračun te napetosti čini opipljivima. Prva slika pokazuje na što Unija 
 #| fig-height: 3.3
 source("R/setup.R")
 theme_set(theme_pubfin() + theme(
-  plot.background  = element_rect(fill = "white", color = NA),
-  panel.background = element_rect(fill = "white", color = NA)))
+  plot.background  = element_rect(fill = "#F2EDE3", color = NA),
+  panel.background = element_rect(fill = "#F2EDE3", color = NA)))
 
 mff <- data.frame(
   h = c("Kohezija, otpornost i vrijednosti","Prirodni resursi i okoliš (uklj. ZPP)",
@@ -227,8 +227,8 @@ Donji kraj te slike izravno potvrđuje teorijsku slutnju iz prethodnih odlomaka.
 #| fig-height: 2.9
 source("R/setup.R")
 theme_set(theme_pubfin() + theme(
-  plot.background  = element_rect(fill = "white", color = NA),
-  panel.background = element_rect(fill = "white", color = NA)))
+  plot.background  = element_rect(fill = "#F2EDE3", color = NA),
+  panel.background = element_rect(fill = "#F2EDE3", color = NA)))
 
 np <- data.frame(
   z = c("Hrvatska","Rumunjska","Poljska","Francuska","Nizozemska"),

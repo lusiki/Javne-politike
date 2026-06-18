@@ -47,9 +47,19 @@ format:
 # The static R chart twins use Unicode glyphs in annotations (Δ, →, ₙ, ∝, ½, ℓ).
 # The default Windows PDF graphics device drops them ("mbcsToSbcs conversion
 # failure"); cairo_pdf renders them correctly. Applies only to the PDF profile.
+#
+# bg = STATECRAFT paper (#F2EDE3): the device canvas is cream, so every chart
+# sits on the page seamlessly. This is the floor for charts whose theme paints
+# no panel (theme_void diagrams — Edgeworth box, Condorcet cycle — and bare
+# supply/demand plots); themed charts (theme_pubfin) paint their own cream on
+# top, so cream-on-cream is a no-op there. Without this, theme_void charts show
+# the device default (white) as a stark rectangle against the cream page.
 knitr:
   opts_chunk:
     dev: "cairo_pdf"
+    dev.args:
+      cairo_pdf:
+        bg: "#F2EDE3"
 
 filters:
   - pdf-filters/strip-ojs.lua

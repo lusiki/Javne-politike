@@ -214,8 +214,8 @@ Ta usporedivost odmah pokazuje koliko porezi i transferi mijenjaju sliku. Slika 
 #| fig-height: 3.8
 source("R/setup.R")
 theme_set(theme_pubfin() + theme(
-  plot.background  = element_rect(fill = "white", color = NA),
-  panel.background = element_rect(fill = "white", color = NA)))
+  plot.background  = element_rect(fill = "#F2EDE3", color = NA),
+  panel.background = element_rect(fill = "#F2EDE3", color = NA)))
 
 order <- c("SAD","Italija","Njemačka","Hrvatska","Francuska","Švedska","Irska","Poljska")
 df <- data.frame(

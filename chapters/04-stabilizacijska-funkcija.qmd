@@ -606,8 +606,8 @@ Te granice nisu apstraktne. Slika koja slijedi pokazuje koliko je stvarni javni 
 #| fig-height: 4.4
 source("R/setup.R")
 theme_set(theme_pubfin() + theme(
-  plot.background  = element_rect(fill = "white", color = NA),
-  panel.background = element_rect(fill = "white", color = NA)))
+  plot.background  = element_rect(fill = "#F2EDE3", color = NA),
+  panel.background = element_rect(fill = "#F2EDE3", color = NA)))
 
 dg <- data.frame(
   z = c("Grčka","Italija","Francuska","Europodručje","EU27","Njemačka","Hrvatska","Poljska","Rumunjska","Nizozemska","Estonija"),

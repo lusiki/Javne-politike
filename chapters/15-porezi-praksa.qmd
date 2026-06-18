@@ -143,8 +143,8 @@ ggplot(pt, aes(v, z, fill = grp)) +
   coord_cartesian(clip = "off") +
   labs(x = "Ukupni porezni teret (% BDP-a)", y = NULL) +
   theme_pubfin() +
-  theme(plot.background  = element_rect(fill = "white", color = NA),
-        panel.background = element_rect(fill = "white", color = NA))
+  theme(plot.background  = element_rect(fill = "#F2EDE3", color = NA),
+        panel.background = element_rect(fill = "#F2EDE3", color = NA))
 ```
 :::
 
@@ -264,9 +264,9 @@ ggplot(ps, aes(x = "", y = val, fill = cat)) +
   theme(
     legend.position = "top",
     strip.text = element_text(face = "bold", size = 11, color = "#1C1916"),
-    plot.background   = element_rect(fill = "white", color = NA),
-    panel.background  = element_rect(fill = "white", color = NA),
-    legend.background = element_rect(fill = "white", color = NA),
+    plot.background   = element_rect(fill = "#F2EDE3", color = NA),
+    panel.background  = element_rect(fill = "#F2EDE3", color = NA),
+    legend.background = element_rect(fill = "#F2EDE3", color = NA),
     text = element_text(family = "mono", color = "#1C1916")
   )
 ```
@@ -375,8 +375,8 @@ ggplot(ps, aes(val, z, fill = cat)) +
   labs(x = "% BDP-a", y = NULL) +
   theme_pubfin() +
   theme(legend.position = "top",
-        plot.background  = element_rect(fill = "white", color = NA),
-        panel.background = element_rect(fill = "white", color = NA))
+        plot.background  = element_rect(fill = "#F2EDE3", color = NA),
+        panel.background = element_rect(fill = "#F2EDE3", color = NA))
 ```
 :::
 
@@ -450,8 +450,8 @@ Sami doprinosi, podijeljeni na dio koji formalno uplaćuje poslodavac i dio koji
 #| fig-height: 3.7
 source("R/setup.R")
 theme_set(theme_pubfin() + theme(
-  plot.background  = element_rect(fill = "white", color = NA),
-  panel.background = element_rect(fill = "white", color = NA)))
+  plot.background  = element_rect(fill = "#F2EDE3", color = NA),
+  panel.background = element_rect(fill = "#F2EDE3", color = NA)))
 
 order <- c("Njemačka","Slovenija","Češka","Slovačka","Austrija","Poljska","EU27","Hrvatska","Mađarska")
 emp <- c(6.7,5.7,9.4,8.7,7.0,4.8,7.0,5.1,4.0)
@@ -529,8 +529,8 @@ Smješten u međunarodni okvir, taj se klin na prosječnu plaću kreće od oko t
 #| fig-height: 4.4
 source("R/setup.R")
 theme_set(theme_pubfin() + theme(
-  plot.background  = element_rect(fill = "white", color = NA),
-  panel.background = element_rect(fill = "white", color = NA)))
+  plot.background  = element_rect(fill = "#F2EDE3", color = NA),
+  panel.background = element_rect(fill = "#F2EDE3", color = NA)))
 
 kl <- data.frame(
   z = c("Belgija","Njemačka","Francuska","Austrija","Italija","Slovenija","Mađarska","Hrvatska","OECD prosjek","Poljska","Irska"),
@@ -628,8 +628,8 @@ ggplot(he, aes(m, v, fill = e)) +
   labs(x = NULL, y = "% BDP-a") +
   theme_pubfin() +
   theme(legend.position = "top",
-        plot.background  = element_rect(fill = "white", color = NA),
-        panel.background = element_rect(fill = "white", color = NA))
+        plot.background  = element_rect(fill = "#F2EDE3", color = NA),
+        panel.background = element_rect(fill = "#F2EDE3", color = NA))
 ```
 :::
 
