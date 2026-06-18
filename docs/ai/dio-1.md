@@ -1,4 +1,4 @@
-# DIO I: KLASIČNA ANALIZA JAVNIH FINANCIJA I POLITIKA
+# DIO I: KLASIÄŚNA ANALIZA JAVNIH FINANCIJA I POLITIKA
 
 > Iz knjige: Sve što želite znati o državi i javnim politikama u Hrvatskoj
 > Autori: Milan Deskar-Škrbić, Petra Palić, Luka Šikić

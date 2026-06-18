@@ -1,4 +1,4 @@
-# DIO II: JAVNI IZBOR – ŠTO, KAKO I ZAŠTO?
+# DIO II: JAVNI IZBOR â€“ Ĺ TO, KAKO I ZAĹ TO?
 
 > Iz knjige: Sve što želite znati o državi i javnim politikama u Hrvatskoj
 > Autori: Milan Deskar-Škrbić, Petra Palić, Luka Šikić

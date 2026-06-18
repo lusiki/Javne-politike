@@ -7,14 +7,14 @@ Tekstualne (AI-čitljive) verzije poglavlja knjige dostupne na https://lusiki.gi
 ## Uvod
 - [Uvod](https://lusiki.github.io/Javne-politike/ai/00-uvod.md)
 
-## DIO I: KLASIČNA ANALIZA JAVNIH FINANCIJA I POLITIKA
+## DIO I: KLASIÄŚNA ANALIZA JAVNIH FINANCIJA I POLITIKA
 - [Uloga države u gospodarstvu](https://lusiki.github.io/Javne-politike/ai/01-uloga-drzave.md)
 - [Alokacijska funkcija i tržišni neuspjesi](https://lusiki.github.io/Javne-politike/ai/02-alokacijska-funkcija.md)
 - [Distribucijska funkcija](https://lusiki.github.io/Javne-politike/ai/03-distribucijska-funkcija.md)
 - [Stabilizacijska funkcija](https://lusiki.github.io/Javne-politike/ai/04-stabilizacijska-funkcija.md)
 - [Klasična teorija oporezivanja](https://lusiki.github.io/Javne-politike/ai/05-porezi.md)
 
-## DIO II: JAVNI IZBOR – ŠTO, KAKO I ZAŠTO?
+## DIO II: JAVNI IZBOR â€“ Ĺ TO, KAKO I ZAĹ TO?
 - [Što je to javni izbor i zašto nas se tiče?](https://lusiki.github.io/Javne-politike/ai/06-javni-izbor.md)
 - [Teorija igara i zakonodavno pregovaranje](https://lusiki.github.io/Javne-politike/ai/06a-teorija-igara.md)
 - [Kolektivni izbor](https://lusiki.github.io/Javne-politike/ai/07-kolektivni-izbor.md)
@@ -41,8 +41,8 @@ Tekstualne (AI-čitljive) verzije poglavlja knjige dostupne na https://lusiki.gi
 
 ## Paketi i cijela knjiga
 - [Cijela knjiga (jedna datoteka)](https://lusiki.github.io/Javne-politike/llms-full.txt)
-- [DIO I: KLASIČNA ANALIZA JAVNIH FINANCIJA I POLITIKA (paket)](https://lusiki.github.io/Javne-politike/ai/dio-1.md)
-- [DIO II: JAVNI IZBOR – ŠTO, KAKO I ZAŠTO? (paket)](https://lusiki.github.io/Javne-politike/ai/dio-2.md)
+- [DIO I: KLASIÄŚNA ANALIZA JAVNIH FINANCIJA I POLITIKA (paket)](https://lusiki.github.io/Javne-politike/ai/dio-1.md)
+- [DIO II: JAVNI IZBOR â€“ Ĺ TO, KAKO I ZAĹ TO? (paket)](https://lusiki.github.io/Javne-politike/ai/dio-2.md)
 - [DIO III: NOVA INSTITUCIONALNA I KONSTITUCIONALNA EKONOMIKA (paket)](https://lusiki.github.io/Javne-politike/ai/dio-3.md)
 - [DIO IV: JAVNE FINANCIJE I JAVNE POLITIKE U PRAKSI (paket)](https://lusiki.github.io/Javne-politike/ai/dio-4.md)
 - [DIO V: KAKO DO KVALITETNIJIH JAVNIH POLITIKA? (paket)](https://lusiki.github.io/Javne-politike/ai/dio-5.md)
