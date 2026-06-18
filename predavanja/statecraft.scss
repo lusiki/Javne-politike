@@ -1,0 +1,250 @@
+/*-- scss:defaults --*/
+
+// ╔══════════════════════════════════════════════════════════════════╗
+// ║  STATECRAFT — reveal.js tema za predavanja                        ║
+// ║  Javne politike u Hrvatskoj. Paleta i tipografija usklađene s      ║
+// ║  _brand.yml i styles/custom.scss (knjiga).                         ║
+// ╚══════════════════════════════════════════════════════════════════╝
+
+// — Paleta (STATECRAFT) —
+$paper:          #F2EDE3;   // topla krem — pozadina (nikad pure white)
+$paper-soft:     #EAE3D4;
+$ink:            #1C1916;   // near-black s smeđim podtonom
+$ink-soft:       #3A332D;
+$ink-mute:       #6B6357;
+$verdigris:      #4A6B5C;   // primarni akcent / link
+$verdigris-deep: #3A5648;
+$oxblood:        #6B1F26;   // emfaza
+$ochre:          #C8985E;   // arhivski akcent
+$ochre-deep:     #9A6F38;
+$info:           #2D5A8E;
+
+// — Tipografija —
+$font-serif:  "Newsreader", Georgia, "Times New Roman", serif;
+$font-sans:   "Public Sans", system-ui, -apple-system, sans-serif;
+$font-mono:   "IBM Plex Mono", ui-monospace, monospace;
+
+// — reveal.js varijable —
+$body-bg:               $paper;
+$body-color:            $ink;
+$presentation-font-family: $font-sans;
+$presentation-heading-font: $font-serif;
+$presentation-heading-color: $ink;
+$presentation-heading-font-weight: 500;
+$link-color:            $verdigris;
+$link-color-hover:      $verdigris-deep;
+$selection-bg:          rgba($ochre, .35);
+
+$presentation-font-size-root: 30px;
+$presentation-h1-font-size: 2.05em;
+$presentation-h2-font-size: 1.45em;
+$presentation-h3-font-size: 1.15em;
+$presentation-line-height: 1.4;
+$code-block-font-size: 0.72em;
+
+/*-- scss:rules --*/
+
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&family=IBM+Plex+Mono:wght@400;500;600&family=Newsreader:ital,opsz,wght@0,6..72,300;0,6..72,400;0,6..72,500;0,6..72,600;0,6..72,700;1,6..72,400&display=swap');
+
+.reveal {
+  letter-spacing: -0.003em;
+
+  // — Naslovi —
+  h1, h2, h3, h4 {
+    letter-spacing: -0.012em;
+    line-height: 1.12;
+    text-transform: none;
+    margin-bottom: 0.5em;
+  }
+  h2 {
+    color: $ink;
+    border-bottom: 2px solid rgba($verdigris, .28);
+    padding-bottom: 0.28em;
+  }
+  h3 { color: $verdigris-deep; }
+
+  // — Tijelo —
+  p, li { color: $ink-soft; }
+  strong { color: $ink; font-weight: 700; }
+  em { color: inherit; }
+
+  // — Liste —
+  ul, ol { margin-left: 0.4em; }
+  ul li, ol li { margin-bottom: 0.42em; }
+  ul li::marker { color: $verdigris; }
+  ol li::marker { color: $verdigris; font-weight: 600; }
+
+  // — Linkovi —
+  a { color: $verdigris; text-underline-offset: 3px; text-decoration-thickness: 1px; }
+  a:hover { color: $oxblood; }
+
+  // — Kod —
+  code { font-family: $font-mono; color: $oxblood; font-size: 0.85em; }
+  pre code { color: $ink-soft; }
+
+  // — Citati / izvori (margin/inline) —
+  .citation a, cite { color: $ink-mute; font-style: italic; }
+
+  // — Blockquote —
+  blockquote {
+    border-left: 4px solid $ochre;
+    background: rgba($ochre, .08);
+    font-family: $font-serif;
+    font-style: italic;
+    color: $ink;
+    padding: 0.5em 0.9em;
+    box-shadow: none;
+    width: auto;
+  }
+  blockquote footer, blockquote .attr {
+    font-family: $font-sans; font-style: normal; font-size: 0.62em;
+    color: $ink-mute; display: block; margin-top: 0.35em;
+  }
+
+  // — Tablice —
+  table { font-size: 0.74em; }
+  table th {
+    font-family: $font-sans; font-weight: 600;
+    border-bottom: 2px solid $verdigris; color: $ink;
+    background: rgba($verdigris, .07);
+  }
+  table td { border-color: rgba($ink-mute, .25); color: $ink-soft; }
+  table tr:nth-child(even) td { background: rgba($paper-soft, .5); }
+
+  // — Footer / progress —
+  .progress { color: $verdigris; height: 4px; }
+  .slide-number { color: $ink-mute; font-family: $font-mono; font-size: 0.6em; }
+  .slide-number a { color: $ink-mute; }
+  .controls { color: $verdigris; }
+}
+
+// — Kicker / sekcijska oznaka —
+.reveal .section-label {
+  font-family: $font-sans;
+  font-weight: 700;
+  font-size: 0.5em;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: $verdigris;
+  display: block;
+  margin-bottom: 0.4em;
+}
+
+// — Naslovna i dijelne (section) stranice —
+.reveal .slide-background.title-slide,
+.reveal section.title-slide,
+.reveal section.dio-slide {
+  background: linear-gradient(155deg, $ink 0%, #241f1a 55%, $verdigris-deep 145%);
+}
+#title-slide, .reveal section.title-slide {
+  .title { font-family: $font-serif; color: $paper; font-weight: 600; font-size: 1.7em; line-height: 1.08; }
+  .subtitle { font-family: $font-serif; color: $ochre; font-style: italic; font-weight: 400; margin-top: 0.3em; }
+  .author, .quarto-title-author-name { color: $paper-soft; font-family: $font-sans; font-size: 0.7em; }
+  .date, .institute { color: $ink-mute; color: rgba($paper,.6); font-family: $font-mono; font-size: 0.6em; }
+  p, .quarto-title-authors { color: $paper-soft; }
+}
+
+// Dijelni separator (## Naslov {.dio-slide})
+.reveal section.dio-slide {
+  h1, h2, h3 { color: $paper; border: none; }
+  h2 { color: $paper; }
+  .section-label { color: $ochre; }
+  p, li { color: $paper-soft; }
+  strong { color: $paper; }
+}
+
+// — Slide-callout kutije (paralela knjiškim calloutima) —
+.reveal .cbox {
+  font-family: $font-sans;
+  border-radius: 6px;
+  padding: 0.55em 0.85em;
+  margin: 0.5em 0;
+  font-size: 0.84em;
+  border-left: 5px solid $ink-mute;
+  background: rgba($paper-soft, .6);
+  p, li { color: $ink-soft; margin-bottom: 0.25em; }
+  .cbox-label {
+    display: block; font-weight: 700; font-size: 0.72em;
+    letter-spacing: 0.1em; text-transform: uppercase; margin-bottom: 0.25em;
+  }
+}
+.reveal .cbox.praksa   { border-left-color: $verdigris; background: rgba($verdigris,.09); }
+.reveal .cbox.praksa   .cbox-label { color: $verdigris-deep; }
+.reveal .cbox.empirija { border-left-color: $info; background: rgba($info,.08); }
+.reveal .cbox.empirija .cbox-label { color: $info; }
+.reveal .cbox.vjezba   { border-left-color: $ochre-deep; background: rgba($ochre,.12); }
+.reveal .cbox.vjezba   .cbox-label { color: $ochre-deep; }
+.reveal .cbox.kljucno  { border-left-color: $oxblood; background: rgba($oxblood,.07); }
+.reveal .cbox.kljucno  .cbox-label { color: $oxblood; }
+
+// — Definicijska kutija —
+.reveal .def {
+  font-family: $font-serif;
+  border: 1px solid rgba($verdigris,.4);
+  border-top: 4px solid $verdigris;
+  border-radius: 4px;
+  background: rgba($paper-soft,.45);
+  padding: 0.6em 0.9em;
+  font-size: 0.92em;
+  color: $ink;
+  strong { color: $verdigris-deep; }
+}
+
+// — Velika tvrdnja / lead —
+.reveal .lead {
+  font-family: $font-serif;
+  font-size: 1.25em;
+  line-height: 1.25;
+  color: $ink;
+}
+.reveal .muted { color: $ink-mute; font-size: 0.8em; }
+.reveal .accent { color: $oxblood; font-weight: 600; }
+
+// — Formula highlight —
+.reveal .formula {
+  text-align: center;
+  font-size: 1.15em;
+  margin: 0.4em 0;
+  color: $ink;
+}
+
+// — Mali izvor pod grafom —
+.reveal .izvor {
+  font-family: $font-sans; font-size: 0.55em; color: $ink-mute; margin-top: 0.3em;
+}
+
+// — "Što isprobati" pomoć uz interaktiv —
+.reveal .isprobaj {
+  font-family: $font-sans; font-size: 0.7em; color: $ink-soft;
+  background: rgba($ochre,.10); border-radius: 5px; padding: 0.4em 0.7em; margin-top: 0.4em;
+}
+
+// — OJS / Inputs kontrole —
+.reveal form.inputs-form, .reveal .observablehq input { font-family: $font-sans; font-size: 0.7em; }
+.reveal .ojs-in-a-box-waiting-for-module-import { min-height: 0; }
+
+// — Plan / agenda numerirana mreža —
+// ::: {.agenda} omota <ol> u <div class="agenda">, pa ciljamo unutarnji ol/li.
+.reveal .agenda ol {
+  list-style: none;
+  margin-left: 0;
+  counter-reset: ag;
+}
+.reveal .agenda li {
+  counter-increment: ag; position: relative; padding-left: 2.4em; margin-bottom: 0.6em;
+}
+.reveal .agenda li::before {
+  content: counter(ag, decimal-leading-zero);
+  position: absolute; left: 0; top: 0.08em;
+  font-family: $font-mono; font-size: 0.72em; font-weight: 600;
+  color: $ochre-deep; background: rgba($ochre,.16);
+  border-radius: 4px; padding: 0.08em 0.4em; line-height: 1.3;
+}
+
+// — Dvostupčani razmak —
+.reveal .columns { gap: 1.1em; }
+
+// — Footer brand —
+.reveal .footer {
+  font-family: $font-sans; font-size: 0.5em; color: $ink-mute;
+}

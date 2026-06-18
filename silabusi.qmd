@@ -1,0 +1,238 @@
+---
+title: "Silabusi i predavanja"
+toc: false
+number-sections: false
+lang: hr-HR
+comments: false
+format:
+  html:
+    page-layout: full
+    body-classes: vd-page
+---
+
+```{=html}
+<header class="vd-hub-head">
+  <span class="vd-hub-kicker">Silabusi · predavanja</span>
+  <h1 class="vd-hub-title">Predavanja i materijali za nastavu</h1>
+  <p class="vd-hub-lede">Prezentacije, slajdovi i materijali za predavanja i seminar koji prate knjigu. Svaka nastavna cjelina ima vlastiti set slajdova koji proširuju teoriju iz knjige konkretnim primjerima, raspravama i vježbama za studente.</p>
+</header>
+
+<!-- ── DIO I ──────────────────────────────────────────────────────── -->
+<section class="vd-hub-part vd-dio-1" aria-label="DIO I — Klasična analiza javnih financija">
+  <div class="vd-hub-part-head">
+    <span class="vd-hub-part-label">DIO I</span>
+    <span class="vd-hub-part-title">Klasična analiza javnih financija i politika</span>
+  </div>
+  <div class="vd-hub-grid">
+
+    <a class="vd-hub-card vd-ready" href="predavanja/01-uvod-u-javni-izbor.html" target="_blank" rel="noopener">
+      <span class="vd-badge vd-badge-ready">Dostupno</span>
+      <span class="vd-hub-num">Predavanje 1</span>
+      <span class="vd-hub-name">Uvod u predmet i teoriju javnog izbora</span>
+      <span class="vd-hub-q">Što je to javni izbor i zašto nas se tiče? Politika bez romantike, paradoks glasanja i neuspjesi države — uz tri interaktivna grafa.</span>
+      <span class="vd-go">Otvori predavanje →</span>
+    </a>
+
+    <div class="vd-hub-card vd-soon">
+      <span class="vd-badge">Uskoro</span>
+      <span class="vd-hub-num">Predavanje 2</span>
+      <span class="vd-hub-name">Vrste dobara i uloga javnih financija</span>
+      <span class="vd-hub-q">Čista javna dobra, mješovita dobra, isključivost i suparništvo u potrošnji. Musgravijeva trojaka funkcija države.</span>
+    </div>
+
+    <div class="vd-hub-card vd-soon">
+      <span class="vd-badge">Uskoro</span>
+      <span class="vd-hub-num">Predavanje 3</span>
+      <span class="vd-hub-name">Alokacijska funkcija i eksternalije</span>
+      <span class="vd-hub-q">Tržišni neuspjesi, eksternalije, Coaseov teorem, Pigouovi porezi i rješenja regulacijom.</span>
+    </div>
+
+    <div class="vd-hub-card vd-soon">
+      <span class="vd-badge">Uskoro</span>
+      <span class="vd-hub-num">Predavanje 4</span>
+      <span class="vd-hub-name">Funkcija ekonomije blagostanja i redistribucija</span>
+      <span class="vd-hub-q">Lorenzova krivulja, Ginijev koeficijent, teoreme blagostanja i granice redistributivne politike.</span>
+    </div>
+
+    <div class="vd-hub-card vd-soon">
+      <span class="vd-badge">Uskoro</span>
+      <span class="vd-hub-num">Predavanje 5</span>
+      <span class="vd-hub-name">Stabilizacijska funkcija</span>
+      <span class="vd-hub-q">Fiskalna i monetarna politika, automatski stabilizatori, multiplikatori i politički ciklusi.</span>
+    </div>
+
+    <div class="vd-hub-card vd-soon">
+      <span class="vd-badge">Uskoro</span>
+      <span class="vd-hub-num">Predavanje 6</span>
+      <span class="vd-hub-name">Manjkavosti tržišta i teorija oporezivanja</span>
+      <span class="vd-hub-q">Principi pravednog i efikasnog oporezivanja, mrtvi teret poreza, porezna incidencija i Ramseyevo pravilo.</span>
+    </div>
+
+  </div>
+</section>
+
+<!-- ── DIO II ─────────────────────────────────────────────────────── -->
+<section class="vd-hub-part vd-dio-2" aria-label="DIO II — Javni izbor">
+  <div class="vd-hub-part-head">
+    <span class="vd-hub-part-label">DIO II</span>
+    <span class="vd-hub-part-title">Javni izbor — što, kako i zašto?</span>
+  </div>
+  <div class="vd-hub-grid">
+
+    <div class="vd-hub-card vd-soon">
+      <span class="vd-badge">Uskoro</span>
+      <span class="vd-hub-num">Predavanje 7</span>
+      <span class="vd-hub-name">Primjena teorije igara</span>
+      <span class="vd-hub-q">Strateško ponašanje, Nasheva ravnoteža, zatvorenikova dilema i koordinacijske igre u javnoj politici.</span>
+    </div>
+
+    <div class="vd-hub-card vd-soon">
+      <span class="vd-badge">Uskoro</span>
+      <span class="vd-hub-num">Kolokvij</span>
+      <span class="vd-hub-name">Provjera znanja — DIO I i DIO II (uvod)</span>
+      <span class="vd-hub-q">Gradivo: ch. 1–5 i ch. 6a (teorija igara). Zadaci s kratkim odgovorima, grafovi i računski primjeri.</span>
+    </div>
+
+    <div class="vd-hub-card vd-soon">
+      <span class="vd-badge">Uskoro</span>
+      <span class="vd-hub-num">Predavanje 8</span>
+      <span class="vd-hub-name">Kolektivno djelovanje i pravila glasovanja</span>
+      <span class="vd-hub-q">Arrowljev teorem nemogućnosti, paradoks glasanja, teorija medijanskog birača i alternative glasačkim pravilima.</span>
+    </div>
+
+    <div class="vd-hub-card vd-soon">
+      <span class="vd-badge">Uskoro</span>
+      <span class="vd-hub-num">Predavanje 9</span>
+      <span class="vd-hub-name">Političko nadmetanje i ekonomski učinci</span>
+      <span class="vd-hub-q">Downsov model, stranačka natjecanja, ideološke pozicije i učinci stranačkih vlada na fiskalne ishode.</span>
+    </div>
+
+    <div class="vd-hub-card vd-soon">
+      <span class="vd-badge">Uskoro</span>
+      <span class="vd-hub-num">Predavanje 10</span>
+      <span class="vd-hub-name">Uloga interesnih skupina</span>
+      <span class="vd-hub-q">Logika kolektivnog djelovanja, lobiranje, lov na rentu i Beckerov model tržišta političkog utjecaja.</span>
+    </div>
+
+    <div class="vd-hub-card vd-soon">
+      <span class="vd-badge">Uskoro</span>
+      <span class="vd-hub-num">Predavanje 11</span>
+      <span class="vd-hub-name">Javni sektor i ekonomska uspješnost</span>
+      <span class="vd-hub-q">Birokracija kao racionalni akter, Niskanenov model, principál-agent odnos i reforma javne uprave.</span>
+    </div>
+
+  </div>
+</section>
+
+<!-- ── DIO III ────────────────────────────────────────────────────── -->
+<section class="vd-hub-part vd-dio-3" aria-label="DIO III — Institucionalna ekonomika">
+  <div class="vd-hub-part-head">
+    <span class="vd-hub-part-label">DIO III</span>
+    <span class="vd-hub-part-title">Nova institucionalna i konstitucionalna ekonomika</span>
+  </div>
+  <div class="vd-hub-grid">
+
+    <div class="vd-hub-card vd-soon">
+      <span class="vd-badge">Uskoro</span>
+      <span class="vd-hub-num">Predavanje 12</span>
+      <span class="vd-hub-name">Praktična primjena teorije javnog izbora</span>
+      <span class="vd-hub-q">Transakcijski troškovi, prava vlasništva, Northova institucionalna teorija i institucije kao pravila igre.</span>
+    </div>
+
+    <div class="vd-hub-card vd-soon">
+      <span class="vd-badge">Uskoro</span>
+      <span class="vd-hub-num">Predavanje 13</span>
+      <span class="vd-hub-name">Porezna politika RH — zaključna razmatranja</span>
+      <span class="vd-hub-q">Ustavna ograničenja fiskalne politike, fiskalna pravila, ustavna ekonomika i dizajn institucionalnih okvira.</span>
+    </div>
+
+  </div>
+</section>
+
+<!-- ── DIO IV ─────────────────────────────────────────────────────── -->
+<section class="vd-hub-part vd-dio-4" aria-label="DIO IV — Javne financije u praksi">
+  <div class="vd-hub-part-head">
+    <span class="vd-hub-part-label">DIO IV</span>
+    <span class="vd-hub-part-title">Javne financije i javne politike u praksi</span>
+  </div>
+  <div class="vd-hub-grid">
+
+    <div class="vd-hub-card vd-soon">
+      <span class="vd-badge">Uskoro</span>
+      <span class="vd-hub-num">Predavanje 14</span>
+      <span class="vd-hub-name">Instrumenti javnih politika</span>
+      <span class="vd-hub-q">Regulacija, porezi, subvencije, javna dobra i informacijski instrumenti — odabir alata prema cilju politike.</span>
+    </div>
+
+    <div class="vd-hub-card vd-soon">
+      <span class="vd-badge">Uskoro</span>
+      <span class="vd-hub-num">Predavanje 15</span>
+      <span class="vd-hub-name">Javna potrošnja</span>
+      <span class="vd-hub-q">Struktura i dinamika javnih rashoda, Wagnerov zakon, fiskalni multiplikatori i rashodi u EU kontekstu.</span>
+    </div>
+
+    <div class="vd-hub-card vd-soon">
+      <span class="vd-badge">Uskoro</span>
+      <span class="vd-hub-num">Predavanje 16</span>
+      <span class="vd-hub-name">Porezni sustavi u praksi i EU javne financije</span>
+      <span class="vd-hub-q">Usporedba poreznih sustava EU-a, harmonizacija, europski proračun i fiskalna koordinacija.</span>
+    </div>
+
+  </div>
+</section>
+
+<!-- ── DIO V ──────────────────────────────────────────────────────── -->
+<section class="vd-hub-part vd-dio-5" aria-label="DIO V — Kako do kvalitetnijih javnih politika?">
+  <div class="vd-hub-part-head">
+    <span class="vd-hub-part-label">DIO V</span>
+    <span class="vd-hub-part-title">Kako do kvalitetnijih javnih politika?</span>
+  </div>
+  <div class="vd-hub-grid">
+
+    <div class="vd-hub-card vd-soon">
+      <span class="vd-badge">Uskoro</span>
+      <span class="vd-hub-num">Predavanje 17</span>
+      <span class="vd-hub-name">Državni neuspjesi i reforma</span>
+      <span class="vd-hub-q">Lov na rentu, regulatorno zarobljavnje, birokratska krutost i politički ciklusi kao oblici državnog neuspjeha.</span>
+    </div>
+
+    <div class="vd-hub-card vd-soon">
+      <span class="vd-badge">Uskoro</span>
+      <span class="vd-hub-num">Predavanje 18</span>
+      <span class="vd-hub-name">Novi javni menadžment i novo upravljanje</span>
+      <span class="vd-hub-q">NPM reforme, agencifikacija, mjerenje performansi i prelazak na mrežne modele upravljanja.</span>
+    </div>
+
+    <div class="vd-hub-card vd-soon">
+      <span class="vd-badge">Uskoro</span>
+      <span class="vd-hub-num">Predavanje 19</span>
+      <span class="vd-hub-name">Analiza troškova i koristi i evaluacija politika</span>
+      <span class="vd-hub-q">Metodologja CBA, diskontiranje, analiza rizika i primjeri evaluacije javnih politika u Hrvatskoj i EU.</span>
+    </div>
+
+    <div class="vd-hub-card vd-soon">
+      <span class="vd-badge">Uskoro</span>
+      <span class="vd-hub-num">Kolokvij</span>
+      <span class="vd-hub-name">Provjera znanja — DIO III, IV i V</span>
+      <span class="vd-hub-q">Gradivo: ch. 11–21. Studije slučaja, računski zadaci i rasprava o reformskim prijedlozima.</span>
+    </div>
+
+  </div>
+</section>
+
+<style>
+/* ── Dio-colour bands (reuse vodič palette) ─────────────────────── */
+.vd-dio-1 .vd-hub-part-label { background: #e8f0f8; color: #1B2A4A; }
+.vd-dio-2 .vd-hub-part-label { background: #f0ede8; color: #5a3e28; }
+.vd-dio-3 .vd-hub-part-label { background: #eaf0eb; color: #234a25; }
+.vd-dio-4 .vd-hub-part-label { background: #f5eaea; color: #6B1F26; }
+.vd-dio-5 .vd-hub-part-label { background: #ede8f0; color: #3a2060; }
+
+/* Dostupno predavanje — zelena (verdigris) značka umjesto sive "Uskoro" */
+.vd-badge-ready {
+  color: #3A5648;
+  border-color: #4A6B5C;
+  background: rgba(74,107,92,.12);
+}
+</style>
+```

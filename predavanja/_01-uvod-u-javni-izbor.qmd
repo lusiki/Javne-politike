@@ -1,0 +1,1258 @@
+---
+title: "Uvod u predmet i teoriju javnog izbora"
+subtitle: "Što je to javni izbor i zašto nas se tiče?"
+author: "Milan Deskar-Škrbić · Petra Palić · Luka Šikić"
+lang: hr-HR
+bibliography: ../references.bib
+# Izvor je _-prefiksiran (predavanja/_01-...qmd) pa ga render knjige (quarto
+# render) NE dira; renderiraj ručno, a output-file daje čist naziv bez podvlake.
+output-file: 01-uvod-u-javni-izbor.html
+title-slide-attributes:
+  data-background-gradient: "linear-gradient(155deg, #1C1916 0%, #241f1a 55%, #3A5648 145%)"
+format:
+  revealjs:
+    theme: statecraft.scss
+    embed-resources: true
+    slide-number: c/t
+    show-slide-number: all
+    progress: true
+    width: 1050
+    height: 700
+    margin: 0.08
+    center: false
+    transition: fade
+    transition-speed: fast
+    background-transition: fade
+    controls: true
+    controls-layout: bottom-right
+    touch: true
+    hash: true
+    history: true
+    fig-align: center
+    link-external-newwindow: true
+    footer: "Javne politike u Hrvatskoj · Predavanje 1 · [lusiki.github.io/Javne-politike](https://lusiki.github.io/Javne-politike/)"
+---
+
+## Dobro došli na kolegij {.dio-slide}
+
+[DOBRODOŠLI · AKADEMSKA GODINA 2025./2026.]{.section-label}
+
+::: {.lead}
+Kako država, tržište i institucije zajedno oblikuju javne politike — i zašto dobre namjere ne daju uvijek dobre rezultate.
+:::
+
+::: {.notes}
+Pozdravite studente, predstavite sebe i koautore udžbenika (Milan Deskar-Škrbić, Petra Palić, Luka Šikić). Recite da je ovo prvo predavanje uvodno i administrativno, ali da već danas otvaramo pravu intelektualnu temu kolegija. Najavite da ćete u prvih pola sata proći kako kolegij funkcionira, a zatim ulazimo u teoriju javnog izbora.
+:::
+
+## O čemu je ovaj kolegij
+
+[OKVIR KOLEGIJA]{.section-label}
+
+::: {.lead}
+Država nije vanjski promatrač tržišta — ona postavlja pravila po kojima tržište uopće funkcionira.
+:::
+
+. . .
+
+- Tržište: odluke o proizvodnji, potrošnji, radu, štednji
+- Država: pravila, prihodi, rashodi, regulacija
+- Institucije: pravila igre koja povezuju jedno s drugim
+
+::: {.notes}
+Naglasite da knjiga ne polazi od uskog pitanja "što je država", nego od šireg pitanja kako država utječe na tržište i na naše živote. Dajte svakodnevne primjere — porez, bolnica, vrtić, građevinska dozvola, cijene energije. Poručite da kolegij neće tvrditi da treba "više" ili "manje" države, nego nas učiti razlikovati kada je država potrebna, korisna, preskupa ili zarobljena interesima.
+:::
+
+## Zašto institucije
+
+[OKVIR KOLEGIJA]{.section-label}
+
+::: {.cbox .kljucno}
+[Ključno]{.cbox-label}
+Iste politike daju različite rezultate jer se razlikuju institucije koje ih provode.
+:::
+
+. . .
+
+- Dobar zakon na papiru nije dobar ishod
+- Porezna reforma ovisi o poreznoj upravi
+- Regulacija ne štiti ako je regulator zarobljen
+
+::: {.notes}
+Objasnite da su institucije most između države i tržišta — formalna i neformalna pravila, procedure, norme i mehanizmi provedbe. Primjeri iz uvoda: ista porezna reforma drukčije djeluje u zemlji s učinkovitom administracijom i u zemlji sa sivom ekonomijom. Pitajte studente za vlastite primjere iz Hrvatske gdje "zakon postoji, ali ne radi".
+:::
+
+## Ciljevi i ishodi učenja
+
+[ISHODI]{.section-label}
+
+Nakon kolegija student će znati:
+
+- Objasniti tržišne i državne neuspjehe
+- Analizirati poticaje birača, političara, birokrata
+- Primijeniti modele javnog izbora na stvarne politike
+- Kritički ocijeniti reforme javnog sektora
+
+::: {.notes}
+Recite studentima da cilj nije memorirati definicije, nego steći "naočale" kroz koje se gleda svaka rasprava o državi — poticaji, institucije, troškovi, koristi i provedba. Naglasite da je naglasak na razumijevanju mehanizama, a ne na napamet naučenim brojevima. Ovo su ishodi koje provjeravamo na kolokvijima i seminaru.
+:::
+
+## Struktura kolegija — pet dijelova
+
+[STRUKTURA]{.section-label}
+
+:::: {.columns}
+::: {.column width="50%"}
+[DIO I]{.accent} — Klasična analiza javnih financija
+
+[DIO II]{.accent} — Javni izbor: što, kako, zašto
+
+[DIO III]{.accent} — Institucionalna i konstitucionalna ekonomika
+:::
+::: {.column width="50%"}
+[DIO IV]{.accent} — Javne financije u praksi
+
+[DIO V]{.accent} — Kako do kvalitetnijih politika
+
+[13 predavanja]{.muted} · [2 kolokvija]{.muted}
+:::
+::::
+
+::: {.notes}
+Prođite kratko kroz logiku slijeda — od "romantičnog" pogleda na državu (DIO I) prema manje romantičnom pogledu javnog izbora (DIO II), zatim prema institucijama, praksi i reformama. Recite da svaki dio gradi na prethodnom i da kolokviji prate te cjeline. Nemojte čitati svaku temu — to dolazi na sljedećem slajdu.
+:::
+
+## Trinaest tema predavanja
+
+[STRUKTURA]{.section-label}
+
+:::: {.columns}
+::: {.column width="50%"}
+1. Uvod i teorija javnog izbora
+2. Vrste dobara i javne financije
+3. Kolektivno djelovanje
+4. Ekonomija blagostanja
+5. Manjkavosti tržišta
+6. Teorija igara
+7. Političko nadmetanje
+:::
+::: {.column width="50%"}
+8. Interesne skupine
+9. Pravila glasovanja
+10. Javni sektor i uspješnost
+11. Praktična primjena
+12. Porezna politika RH
+
+[+ 2 kolokvija]{.muted}
+:::
+::::
+
+::: {.notes}
+Ovo je orijentacijski pregled, ne morate zadržavati se na svakoj temi. Recite da redoslijed može blago varirati i da ćete svaki tjedan najaviti što slijedi. Istaknite da se kolokviji nalaze nakon zaokruženih cjelina. Uputite studente na stranicu sa silabusima i materijalima za detaljan raspored.
+:::
+
+## Obveze i ocjenjivanje
+
+[OBVEZE]{.section-label}
+
+:::: {.columns}
+::: {.column width="50%"}
+::: {.cbox .empirija}
+[Predavanja]{.cbox-label}
+Aktivnost i dva kolokvija
+:::
+:::
+::: {.column width="50%"}
+::: {.cbox .vjezba}
+[Seminari]{.cbox-label}
+Rasprave, vježbe, zadaci
+:::
+:::
+::::
+
+. . .
+
+[Točni bodovi i pragovi okvirni su — vrijedi službeni izvedbeni plan.]{.muted}
+
+::: {.notes}
+Objasnite da se ukupna ocjena sastoji iz dva ravnopravna dijela — rad na predavanjima i rad na seminarima. Jasno recite da konkretne bodove i pragove prolaza ne navodite napamet, nego da vrijedi službeni izvedbeni plan za akademsku godinu 2025./2026. Uputite studente da provjere točne uvjete na službenoj stranici kolegija i da pitaju ako im što nije jasno.
+:::
+
+## Kako teče nastava
+
+[NASTAVA]{.section-label}
+
+- Predavanje: teorija, modeli, intuicija
+- Seminar: rasprava i vježbe s podacima
+- Aktivno sudjelovanje se očekuje
+- Pitanja su dobrodošla u svakom trenutku
+
+::: {.notes}
+Naglasite da nastava nije monolog — najvrjedniji dio je rasprava. Recite da na seminarima radimo s konkretnim podacima i primjerima iz hrvatske i europske prakse, te da studenti trebaju dolaziti pripremljeni. Ohrabrite ih da postavljaju pitanja tijekom predavanja, a ne samo na kraju. Spomenite da ćete povremeno zastati i pitati ih za mišljenje.
+:::
+
+## Materijali i podrška
+
+[NASTAVA]{.section-label}
+
+::: {.cbox .praksa}
+[Praksa]{.cbox-label}
+Uz knjigu idu slajdovi, vježbe i digitalni resursi koje ćemo predstaviti u nastavku.
+:::
+
+. . .
+
+- Web-knjiga, PDF i Vodič
+- Pojmovnik i alati
+- Materijali za seminar
+
+::: {.notes}
+Recite studentima da imaju bogat set materijala koji ćete detaljno predstaviti u sljedećem bloku predavanja. Poručite da knjiga komplementira postojeće hrvatske udžbenike (Jurković; Rosen i Gayer; Šimović i Deskar-Škrbić), a ne zamjenjuje ih. Ohrabrite ih da već danas otvore web-stranicu kolegija. Najavite da sada prelazite na pregled resursa i agendu današnjeg predavanja.
+:::
+
+## Udžbenik i digitalni resursi {.dio-slide}
+
+[DIO]{.section-label}
+
+::: {.lead}
+Jedna knjiga, mreža alata za učenje — i kako sve to spojiti u tri sata predavanja.
+:::
+
+::: {.notes}
+Prijelaz iz uvodnog bloka o kolegiju. U sljedećih desetak minuta predstavljam udžbenik koji prati ovaj kolegij, smještam ga u domaću udžbeničku tradiciju i pokazujem digitalne resurse koje ćemo koristiti cijeli semestar. Na kraju otkrivam agendu današnjeg predavanja. Recite studentima da ovaj blok nije gradivo za kolokvij, nego upute kako će učiti.
+:::
+
+
+## Udžbenik koji prati kolegij
+
+[OSNOVNI MATERIJAL]{.section-label}
+
+- *Sve što želite znati o odnosu države i tržišta*
+- Autori: Deskar-Škrbić, Palić, Šikić
+- Web-knjiga, otvoreni pristup, CC BY 4.0
+
+. . .
+
+- Tri pojma u središtu: **država, tržište, institucije**
+- Pitanje nije samo *što* država treba, nego *kako* odlučuje
+
+::: {.notes}
+Ovo je knjiga koju pišemo troje nositelja kolegija. Naslovna teza je da država oblikuje gotovo svaki važan dio svakodnevnog života. Tri pojma koja se provlače kroz cijelu knjigu su država, tržište i institucije. Naglasite razliku u pitanju: klasični udžbenici pitaju što bi država trebala činiti, a mi dodajemo sloj koji pita kako stvarno odlučuje i zašto dobre namjere često ne daju dobre rezultate.
+:::
+
+
+## Što knjiga donosi novo
+
+[POMAK PERSPEKTIVE]{.section-label}
+
+- Manje romantičan pogled na državu
+- Teorija javnog izbora kao okosnica
+- Institucije kao pravila igre
+- Reforme i kvaliteta upravljanja
+
+. . .
+
+::: {.cbox .kljucno}
+[Ključno]{.cbox-label}
+Cilj nije „više" ili „manje" države, nego razlikovati kada je korisna, kada preskupa, a kada zarobljena interesima.
+:::
+
+::: {.notes}
+Ne prodajemo ideološku poruku. Knjiga ne tvrdi da uvijek treba više ni uvijek manje države — takva je rasprava prejednostavna. Novo u odnosu na postojeće udžbenike je dublji ulazak u teoriju javnog izbora, novu institucionalnu i konstitucionalnu ekonomiku te sustavnu analizu reformi. Ovaj okvir vodi izravno u drugi blok predavanja, gdje uvodimo javni izbor.
+:::
+
+
+## Naslon na hrvatsku tradiciju
+
+[KOMPLEMENTARNOST]{.section-label}
+
+:::: {.columns}
+::: {.column width="50%"}
+- Jurković, *Javne financije* [@jurkovic2002]
+- Rosen i Gayer, *Javne financije* [@rosenGayer2010]
+- Šimović i Deskar-Škrbić [@simovicDeskar2020]
+:::
+::: {.column width="50%"}
+[Jezgra]{.accent} — javni prihodi, rashodi, porezi, tržišni neuspjesi
+
+[Naš sloj]{.accent} — politička ekonomija, institucije, reforme
+:::
+::::
+
+::: {.notes}
+Važno je studentima reći da ova knjiga ne zamjenjuje postojeće udžbenike nego ih nadograđuje. Jurkovićeve Javne financije desetljećima su domaći temelj; hrvatski prijevod Rosena i Gayera donio je anglosaksonski okvir ekonomike javnog sektora; Šimović i Deskar-Škrbić povezali su standardnu teoriju s hrvatskim institucijama i poreznim sustavom. Njihova je jezgra klasična ekonomika javnog sektora, a mi na taj temelj dodajemo sljedeći sloj. Tko želi dublje o porezima ili proračunu, neka posegne za tim naslovima.
+:::
+
+
+## Digitalni resursi kao mreža za učenje
+
+[PLATFORMA]{.section-label}
+
+:::: {.columns}
+::: {.column width="50%"}
+- **Web-knjiga** — čitanje u pregledniku
+- **PDF** — za ispis i offline
+- **Vodič** — mentalne mape, jedna po poglavlju
+- **Pojmovnik** — ključni pojmovi
+:::
+::: {.column width="50%"}
+- **Alat** — igralište, interaktivni kalkulatori
+- **Resursi** — dodatni izvori
+- **Uči uz AI** — pitanja uz tekst
+- **Podaci** — skupovi za vježbe
+:::
+::::
+
+::: {.notes}
+Sve je dostupno preko navigacijske trake knjige. Web-knjiga je primarno mjesto čitanja, PDF za one koji vole ispis. Vodič je vizualna slikovnica — jedno poglavlje, jedna stranica, jedna mentalna mapa koju pročitate za dvije minute. Alat je igralište s kalkulatorima poput poreznog klina, Lafferove krivulje i simulatora medijanskog birača; dio toga još je u pripremi. Uči uz AI pomaže kad student zapne uz pojam. Recite da je sve besplatno i otvoreno.
+:::
+
+
+## Kako učiti uz materijale
+
+[METODA]{.section-label}
+
+::: {.agenda}
+1. Pročitajte poglavlje u web-knjizi
+2. Učvrstite ga mentalnom mapom u Vodiču
+3. Riješite vježbu s podacima
+4. Isprobajte koncept u Alatu
+:::
+
+. . .
+
+[Čitanje daje strukturu, mapa pamćenje, vježba i alat — razumijevanje.]{.muted}
+
+::: {.notes}
+Predložite konkretan ritam učenja. Prvo čitanje poglavlja zbog argumenta i strukture. Zatim mentalna mapa u Vodiču koja istu priču priča drugim glasom i pomaže pamćenju prije kolokvija. Pa vježba s podacima da teorija postane mjerljiva. Na kraju interaktivni alat gdje student rukama pomiče parametre i vidi kako se ishod mijenja. Naglasite da se kolokviji oslanjaju na razumijevanje mehanizama, ne na puko prepričavanje.
+:::
+
+
+## Vježba s podacima i Uči uz AI
+
+[U PRAKSI]{.section-label}
+
+::: {.cbox .vjezba}
+[Vježba]{.cbox-label}
+Na izlaznosti na hrvatskim izborima procijenite koliko je glasanje „racionalno" — i pripremite jedan argument za, jedan protiv.
+:::
+
+::: {.cbox .praksa}
+[Iz prakse]{.cbox-label}
+Zapnete li uz pojam, otvorite „Uči uz AI" pokraj teksta i pitajte vlastitim riječima.
+:::
+
+::: {.notes}
+Pokažite kako izgleda tipična vježba s podacima — vezuje teoriju uz hrvatske brojeve i traži kratak argumentirani odgovor. Ova konkretna vježba najavljuje treći blok o paradoksu glasanja, pa je dobar most. Uči uz AI nije zamjena za čitanje, nego pomoć kad treba drugačije objašnjenje. Potaknite studente da postavljaju pitanja vlastitim riječima.
+:::
+
+
+## Agenda današnjeg predavanja
+
+[PLAN]{.section-label}
+
+::: {.agenda}
+1. Što je javni izbor — politika bez romantike
+2. Birač i paradoks glasanja
+3. Zašto ipak izlazimo na izbore
+4. Akteri i neuspjesi države
+:::
+
+::: {.notes}
+Ovo je karta za ostatak današnja tri sata. Prvo definiramo javni izbor i radimo most iz prvog dijela knjige — tržište može zakazati, ali hoće li i država uspjeti. Zatim ulazimo u birača i paradoks glasanja s formulom R = P·B − C. Treći blok objašnjava zašto unatoč paradoksu ipak glasamo. Četvrti zatvara s političarima, birokratima i tablicom mehanizama neuspjeha države. Svaki blok ima graf i barem jednu vježbu.
+:::
+
+
+## Krećemo: od tržišta do politike {.dio-slide}
+
+[PRIJELAZ]{.section-label}
+
+::: {.lead}
+U prvom dijelu knjige država ispravlja tržišne neuspjehe. Sada postavljamo neugodno pitanje — a tko ispravlja državu?
+:::
+
+::: {.notes}
+Ovo je prijelazni slajd u sadržajni dio. Podsjetite da smo u klasičnoj analizi državu promatrali gotovo romantično, kao nepristranog planera koji maksimizira blagostanje. Sljedeći blok ruši tu pretpostavku i uvodi pogled javnog izbora, u kojem su i političari i birokrati akteri s vlastitim interesima. Napravite kratku stanku prije nego što predate riječ sljedećem bloku.
+:::
+
+## Što je to javni izbor? {.dio-slide}
+
+[DIO II — JAVNI IZBOR]{.section-label}
+
+::: {.lead}
+Tržište zna zakazati — ali hoće li država uspjeti tamo gdje tržište nije?
+:::
+
+::: {.notes}
+Ovo je intelektualna jezgra cijelog kolegija. U prvom dijelu smo proveli oko sat vremena na tržišnim neuspjesima, eksternalijama, javnim dobrima, asimetriji informacija. Sada okrećemo perspektivu. Recite studentima jasno: ostatak kolegija je odgovor na jedno pitanje — kada tržište zakaže, je li država pouzdana zamjena, ili i ona ima vlastite, sustavne neuspjehe. Najavite da ćemo u sljedećih 45 minuta postaviti pojmovni okvir, a tek onda krenuti na konkretne aktere.
+:::
+
+## Most iz prvog dijela
+
+[ODAKLE DOLAZIMO]{.section-label}
+
+- Prvi dio: tržište **zna zakazati**
+- Tržišni neuspjeh → razlog za intervenciju
+- Ali to je tek **pola pitanja**
+
+. . .
+
+::: {.cbox .kljucno}
+[Ključno]{.cbox-label}
+Iz tržišnog neuspjeha **ne slijedi** da će država uspjeti.
+:::
+
+::: {.notes}
+Ovo je logički zglob predavanja. Tipična pogreška u javnoj raspravi je implicitni skok: tržište ne radi savršeno, dakle neka uskoči država. Naglasite da je to neispravan zaključak. Usporedba mora biti između dvaju nesavršenih mehanizama, a ne između nesavršenog tržišta i idealizirane države. Pitajte publiku: kada čujete da nešto ne valja na tržištu, koliko često automatski pomislite da je rješenje državna regulacija? Upravo taj refleks javni izbor stavlja pod znak pitanja.
+:::
+
+## Politika bez romantike
+
+[BUCHANAN]{.section-label}
+
+:::: {.columns}
+::: {.column width="50%"}
+[Idealizirana slika]{.accent}
+
+- Vlada teži **općem dobru**
+- Dužnosnici altruisti
+- Provode „volju naroda"
+:::
+::: {.column width="50%"}
+[Realistična slika]{.accent}
+
+- Akteri slijede **vlastite poticaje**
+- Birači, političari, birokrati
+- Motivacije kao na tržištu
+:::
+::::
+
+. . .
+
+::: {.muted}
+James Buchanan: javni izbor kao „politika bez romantike" [@buchanan1986]
+:::
+
+::: {.notes}
+Objasnite zašto je idealizirana slika utješna, ali neupotrebljiva. Ona ne objašnjava zašto se donose zakoni koji pogoduju uskim skupinama na štetu većine, zašto su upravni postupci spori, zašto su mnoge politike neučinkovite. Buchananov potez je jednostavan, ali radikalan: ne mijenja altruizam pretpostavkom o pokvarenosti, nego pretpostavlja da su isti ljudi koji na tržištu uspoređuju troškove i koristi takvi i u politici. Spomenite da Buchanan nije bio cinik — i sam je upozoravao da motivacija javnih službenika nije nužno nultosumna igra samointeresa, da misijsko upravljanje i institucionalni etos znaju proizvesti dobre ishode. Ali kao polazna analitička pretpostavka, samointeres nosi golem objasnidbeni teret.
+:::
+
+## Definicija javnog izbora
+
+[ŠTO TVRDI]{.section-label}
+
+::: {.def}
+**Javni izbor** je primjena ekonomske logike na kolektivno odlučivanje, prema kojoj birači, političari i birokrati i u politici slijede vlastite poticaje, pa se kolektivne odluke objašnjavaju kao rezultat **pojedinačnih izbora**, a ne kao volja apstraktne cjeline poput „države" ili „naroda".
+:::
+
+::: {.notes}
+Pročitajte definiciju polako, pa istaknite dva težišta. Prvo: ista metodologija kao u ekonomiji — maksimizacija korisnosti, usporedba troškova i koristi, poticaji. Drugo, i važnije: odbacivanje pojma kolektivne volje. Nema „države" koja hoće, postoje pojedinci koji odlučuju unutar pravila. Pitajte studente da uoče koliko često u medijima čuju formulacije tipa „država je odlučila" ili „narod želi" — javni izbor takve fraze razlaže na konkretne aktere s konkretnim poticajima. To je metodološki individualizam, kojem se vraćamo za nekoliko slajdova.
+:::
+
+## Intelektualni temelji
+
+[ODAKLE DOLAZI]{.section-label}
+
+- **Downs (1957)** — *An Economic Theory of Democracy* [@downs1957]
+- **Buchanan i Tullock (1962)** — *The Calculus of Consent* [@buchanan1962]
+- **Mueller** — sinteza discipline [@mueller1989]
+
+. . .
+
+::: {.cbox .empirija}
+[Zajednička nit]{.cbox-label}
+Država kao **skup povezanih tržišta** političkih odluka.
+:::
+
+::: {.notes}
+Kratko situirajte tri imena. Downs uvodi racionalnog birača i racionalnog političara koji maksimizira glasove — njemu se vraćamo u bloku o biraču i o medijanskom glasaču. Buchanan i Tullock pišu o pravilima, o ustavnoj razini odlučivanja, o tome kako se uopće biraju pravila po kojima ćemo kasnije odlučivati. Mueller je standardni pregled discipline, korisna referenca za one koji žele dublje. Poanta slajda nije bibliografija nego to da iza javnog izbora stoji pola stoljeća ozbiljne teorije, a ne puka skepsa prema državi.
+:::
+
+## Metodologija — tri postavke
+
+[KAKO ANALIZIRA]{.section-label}
+
+::: {.agenda}
+1. **Racionalni izbor** — odluka usporedbom koristi i troškova [@downs1957]
+2. **Metodološki individualizam** — ishodi su zbroj pojedinačnih izbora
+3. **Politika kao razmjena** — sudionici poboljšavaju vlastiti položaj
+:::
+
+::: {.notes}
+Razložite svaku postavku jednom rečenicom više nego što piše na slajdu. Racionalni izbor: pojedinac vaga, ne djeluje iz altruizma — to ne znači da je sebičan u moralnom smislu, nego da reagira na poticaje. Metodološki individualizam: ne postoji nadpojedinačni subjekt koji odlučuje, samo pojedinci; svaku tvrdnju o „državi" treba moći prevesti u tvrdnju o ljudima. Politika kao razmjena: glasovi, podrška, zakoni — sve se to razmjenjuje. Spomenite da, budući da ishod razmjene za svakoga ovisi i o potezima drugih, formalni alat za to je teorija igara, koju obrađujemo u zasebnom poglavlju. Ne ulazite ovdje dublje, samo posijte sjeme.
+:::
+
+## Pravila igre vs. ishodi
+
+[RAZLIKOVNI DOPRINOS]{.section-label}
+
+:::: {.columns}
+::: {.column width="50%"}
+[Pravila igre]{.accent}
+
+- Institucionalni okvir
+- Oblikuju proces
+- *Rules of the game*
+:::
+::: {.column width="50%"}
+[Ishodi]{.accent}
+
+- Konkretne odluke
+- Posljedica pravila
+- Ono što vidimo
+:::
+::::
+
+. . .
+
+::: {.muted}
+Kvaliteta odluka ne ovisi samo o preferencijama, nego ponajprije o pravilima.
+:::
+
+::: {.notes}
+Ovo je možda najvažnija ideja cijelog kolegija, pa joj dajte vremena. Standardna javna rasprava fiksirana je na ishode i na osobe — tko je donio lošu odluku, koga smijeniti. Javni izbor pomiče fokus jednu razinu dublje, na pravila koja proizvode te ishode. Dobra metafora je sport: ako stalno dobivate grube faulove, možda problem nisu igrači nego pravila i sudac. Najavite da ćemo na kraju predavanja, kad pregledamo sve neuspjehe države, doći do zaključka da su loša pravila opasnija od loših ljudi.
+:::
+
+## Dvije razine odlučivanja
+
+[GDJE SE ODLUČUJE]{.section-label}
+
+:::: {.columns}
+::: {.column width="50%"}
+[Ustavna razina]{.accent}
+
+- Biramo **pravila**
+- Ograničenja za buduće odluke
+- „Pravila o pravilima"
+:::
+::: {.column width="50%"}
+[Operativna razina]{.accent}
+
+- Odlučujemo **unutar** pravila
+- Konkretna pitanja
+- Svakodnevna politika
+:::
+::::
+
+. . .
+
+::: {.muted}
+Konstitucionalna ekonomija (Buchanan, Brennan) — vlastito poglavlje kasnije.
+:::
+
+::: {.notes}
+Pojasnite razliku konkretnim primjerom. Operativna razina je rasprava o tome koliki će biti porez na dohodak iduće godine. Ustavna razina je pitanje smije li se uopće porez mijenjati običnom većinom ili treba kvalificirana većina, postoji li ustavno ograničenje proračunskog deficita, i slično. Ključni uvid Buchanana i Brennana je da dobro postavljena pravila na ustavnoj razini mogu obuzdati i savršeno samointeresnog aktera na operativnoj. Spomenite pojam vela neizvjesnosti — kad biramo pravila ne znajući kakav će biti naš budući položaj, skloniji smo pravednim pravilima. Detaljno u poglavlju o konstitucionalnoj ekonomici.
+:::
+
+## Ista pravila, isti ljudi — različiti ishodi
+
+[SRŽ IDEJE]{.section-label}
+
+::: {.cbox .kljucno}
+[Ključni uvid]{.cbox-label}
+Isti ljudi pod **različitim pravilima** daju **različite ishode**.
+:::
+
+. . .
+
+- Ne mijenjamo ljude — mijenjamo poticaje
+- Loša pravila → loši ishodi i od dobrih ljudi
+- Dobra pravila → dobri ishodi i od samointeresnih aktera
+
+::: {.notes}
+Ovo je rečenica koju studenti trebaju zapamtiti i ako sve drugo zaborave. Inzistirajte na njoj. Iz nje slijedi cijela praktična orijentacija discipline: ako želite bolje javne politike, ne tražite prvo bolje ljude — to je teško i nepouzdano — nego popravite pravila pod kojima i prosječni, samointeresni ljudi proizvode prihvatljive ishode. Povežite s prethodna dva slajda: pravila igre i ustavna razina su upravo poluge kojima se to radi. Možete pitati publiku za protuprimjer iz iskustva — situaciju u kojoj su dobronamjerni ljudi u lošem sustavu proizveli loš ishod.
+:::
+
+## Tko su akteri?
+
+[ŠTO SLIJEDI]{.section-label}
+
+:::: {.columns}
+::: {.column width="50%"}
+- **Birači** — ima li moj glas smisla?
+- **Političari** — maksimizatori glasova
+:::
+::: {.column width="50%"}
+- **Birokrati** — vlastiti proračun i moć
+- **Interesne skupine** — koncentrirana korist
+:::
+::::
+
+. . .
+
+::: {.muted}
+Svaki akter ima vlastite ciljeve, ograničenja i informacijske asimetrije.
+:::
+
+::: {.notes}
+Ovaj slajd je most prema ostatku predavanja i kolegija. Najavite redoslijed. Najprije birač — i to kroz provokativno pitanje paradoksa glasanja, zašto bi racionalan pojedinac uopće izašao na izbore. Zatim političar koji se ponaša kao da je na tržištu glasova. Pa birokrat koji ne maksimizira profit nego proračun i utjecaj svoje agencije. I na kraju interesne skupine, kojima je korist koncentrirana, a trošak raspršen na sve nas. Recite da je zajednička nit svih četiriju to da naizgled iracionalni politički ishodi postaju savršeno logični kad uzmemo u obzir poticaje i pravila. Time zatvarate pojmovni dio i otvarate analizu aktera.
+:::
+
+## Zašto bismo uopće glasali? {.dio-slide}
+
+[DIO I — BIRAČ]{.section-label}
+
+::: {.lead}
+Ako je jedan glas gotovo nikad odlučujući, zašto milijuni ipak izlaze na birališta?
+:::
+
+::: {.notes}
+Ovo je prijelaz iz prethodnog bloka. Najavite da napuštamo opću metodologiju javnog izbora i ulazimo u prvog aktera — birača. Pitanje s naslova postavite publici otvoreno i pustite ih da nekoliko sekundi razmisle prije nego što krenete. Recite da ćemo do kraja bloka imati i formulu koja objašnjava zagonetku i podatke koji pokazuju da stvarnost nije tako jednostavna.
+:::
+
+## Racionalni birač
+
+[POLAZIŠTE]{.section-label}
+
+- Svi akteri djeluju racionalno [@buchanan1962]
+- Birač maksimizira korisnost uz najmanji trošak [@downs1957]
+- Država nije neutralni čuvar, nego skup tržišta odluka [@mueller1989]
+
+. . .
+
+::: {.cbox .kljucno}
+[Ključno]{.cbox-label}
+Ako je tako, zašto bi racionalan pojedinac uopće izašao na izbore?
+:::
+
+::: {.notes}
+Naglasite da je ovo radikalan zaokret u odnosu na klasičnu sliku građanske dužnosti. Birača tretiramo jednako kao potrošača na tržištu — vodi ga vlastiti interes, a ne apstraktno javno dobro. Postavite zagonetku koja vodi cijeli blok: ako je glasanje samo trošak bez izgledne koristi, racionalan čovjek trebao bi ostati kod kuće. Recite studentima da ćemo to sada zapisati formulom.
+:::
+
+## Paradoks neglasanja
+
+[DOWNS, 1957.]{.section-label}
+
+::: {.formula}
+$R = P \cdot B - C$
+:::
+
+:::: {.columns}
+::: {.column width="50%"}
+- $R$ — neto nagrada za glasanje
+- $P$ — vjerojatnost odlučujućeg glasa
+:::
+::: {.column width="50%"}
+- $B$ — korist od preferiranog ishoda
+- $C$ — trošak glasanja
+:::
+::::
+
+. . .
+
+::: {.cbox .kljucno}
+[Ključno]{.cbox-label}
+U velikom biračkom tijelu $P \approx 0$, pa je $R < 0$ čim je $C > 0$ [@downs1957].
+:::
+
+::: {.notes}
+Provedite ih kroz svaki član redom. $P$ je vjerojatnost da baš njihov glas prelomi ishod — u biračkom tijelu od milijun ljudi to je reda veličine jedan naprama milijun. Pomnožen s ma kako velikom koristi $B$, taj umnožak ostaje sićušan. Trošak $C$ je pak stvaran i izvjestan: vrijeme, red, prilagodba rasporeda. Zaključak je proturječan zdravom razumu — strogo instrumentalno, glasanje se ne isplati. Upozorite da ćemo na sljedećem slajdu taj račun isprobati uživo.
+:::
+
+## Paradoks glasanja — isprobajte {.smaller}
+
+```{ojs}
+//| echo: false
+viewof vote_controls = Inputs.form({
+  N: Inputs.range([3, 8],      {value: 6,    step: 0.1, width: 320, label: "Biračko tijelo (log₁₀N)"}),
+  B: Inputs.range([0, 20000],  {value: 5000, step: 100,  width: 320, label: "Korist B (€)"}),
+  C: Inputs.range([0, 50],     {value: 10,   step: 1,    width: 320, label: "Trošak C (€)"})
+})
+```
+
+```{ojs}
+//| echo: false
+{
+  const B = vote_controls.B, C = vote_controls.C;
+  const Ncur = Math.pow(10, vote_controls.N);
+  const R = (N) => B / N - C;
+  const Rcur = R(Ncur);
+  const curve = d3.range(3, 8.01, 0.05).map(l => ({N: Math.pow(10, l), R: R(Math.pow(10, l))}));
+  return Plot.plot({
+    width: 880, height: 290, marginLeft: 66, marginRight: 20, marginTop: 36, marginBottom: 42,
+    style: {fontSize: "15px", fontFamily: "Public Sans, system-ui, sans-serif", color: "#3A332D", background: "transparent"},
+    x: {type: "log", label: "Veličina biračkog tijela N (log) →", domain: [1e3, 1e8]},
+    y: {label: "↑ R = B/N − C (€)"},
+    marks: [
+      Plot.ruleY([0], {stroke: "#6B6357", strokeDasharray: "4,3"}),
+      Plot.line(curve, {x: "N", y: "R", stroke: "#4A6B5C", strokeWidth: 3}),
+      Plot.dot([{N: Ncur, R: Rcur}], {x: "N", y: "R", r: 7, fill: "#1C1916", stroke: "white", strokeWidth: 2}),
+      Plot.text([Rcur >= 0 ? `R = ${Rcur.toFixed(2)} € → isplati se` : `R = ${Rcur.toFixed(2)} € → ne isplati se`],
+        {frameAnchor: "top", dy: -26, fontSize: 17, fontWeight: 700, fill: Rcur >= 0 ? "#3A5648" : "#6B1F26"})
+    ]
+  });
+}
+```
+
+::: {.isprobaj}
+Smanjite trošak na nulu pri malom biračkom tijelu — $R$ ostaje pozitivan. Zatim povećavajte biračko tijelo i gledajte kako krivulja strmo pada ispod nule, jer $P \approx 1/N$ kopni brže nego što korist može pratiti.
+:::
+
+::: {.notes}
+Ovo je trenutak za interakciju s publikom. Najprije pokažite mali slučaj — selo, udruga, odbor — gdje jedan glas zaista nešto znači i gdje je glasanje isplativo. Onda klizačem podignite biračko tijelo na milijune i pustite da krivulja propadne. Naglasite pouku: pokušajte podizanjem koristi $B$ do kraja vratiti $R$ u plus i uvjerite ih da ni nerealno velika korist ne spašava račun pri milijunskom biračkom tijelu. Paradoks tako postaje opipljiv, a ne samo formula.
+:::
+
+## Izlaznost u Hrvatskoj {.smaller}
+
+```{ojs}
+//| echo: false
+{
+  const data = [
+    {god:1992, v:75.6, serija:"Parlamentarni"},
+    {god:1995, v:68.8, serija:"Parlamentarni"},
+    {god:2000, v:76.6, serija:"Parlamentarni"},
+    {god:2003, v:61.7, serija:"Parlamentarni"},
+    {god:2007, v:59.6, serija:"Parlamentarni"},
+    {god:2011, v:54.2, serija:"Parlamentarni"},
+    {god:2015, v:60.8, serija:"Parlamentarni"},
+    {god:2016, v:52.6, serija:"Parlamentarni"},
+    {god:2020, v:46.4, serija:"Parlamentarni"},
+    {god:2024, v:62.3, serija:"Parlamentarni"},
+    {god:1992, v:74.9, serija:"Predsjednički (1. krug)"},
+    {god:1997, v:54.6, serija:"Predsjednički (1. krug)"},
+    {god:2000, v:63.0, serija:"Predsjednički (1. krug)"},
+    {god:2005, v:50.6, serija:"Predsjednički (1. krug)"},
+    {god:2009, v:44.0, serija:"Predsjednički (1. krug)"},
+    {god:2014, v:47.1, serija:"Predsjednički (1. krug)"},
+    {god:2019, v:51.2, serija:"Predsjednički (1. krug)"},
+    {god:2024, v:46.0, serija:"Predsjednički (1. krug)"},
+    {god:2013, v:20.8, serija:"Europski parlament"},
+    {god:2014, v:25.2, serija:"Europski parlament"},
+    {god:2019, v:29.9, serija:"Europski parlament"},
+    {god:2024, v:21.4, serija:"Europski parlament"}
+  ];
+  return Plot.plot({
+    width: 920, height: 336,
+    marginLeft: 44, marginRight: 18, marginTop: 22, marginBottom: 34,
+    style: {fontSize: "14px", fontFamily: "Public Sans, system-ui, sans-serif", color: "#3A332D", background: "transparent"},
+    x: {label: null, tickFormat: d => "" + d, ticks: [1992,1996,2000,2004,2008,2012,2016,2020,2024]},
+    y: {label: "↑ Izlaznost (%)", domain: [0, 90], grid: true},
+    color: {domain: ["Parlamentarni","Predsjednički (1. krug)","Europski parlament"], range: ["#1C1916","#4A6B5C","#6B1F26"], legend: true},
+    marks: [
+      Plot.lineY(data, {x: "god", y: "v", stroke: "serija", z: "serija", strokeWidth: 2.5, curve: "monotone-x"}),
+      Plot.dot(data, {x: "god", y: "v", fill: "serija", r: 3.5, tip: true})
+    ]
+  });
+}
+```
+
+[Izvor: International IDEA, Voter Turnout Database (1992.–2024.)]{.izvor}
+
+::: {.cbox .empirija}
+[Empirija]{.cbox-label}
+Izlaznost prati ulog $B$ i tijesnost $P$ — visoka je gdje se odlučuje nešto važno i gdje je trka neizvjesna.
+:::
+
+::: {.notes}
+Suočite teoriju sa stvarnošću: izlaznost nije nula. Pokažite da parlamentarni i predsjednički izbori padaju s oko tri četvrtine biračkog tijela u devedesetima na manje od polovice nakon 2010., uz oporavak 2024. kad je ulog bio veći. Istaknite izbore za Europski parlament, koje mnogi doživljavaju kao niskoulog — ondje izlaznost ostaje na petini do trećine. Pouka: razlika između tih krivulja nije mjera građanske kulture, nego očekivanog umnoška $P \cdot B$ uz isti trošak izlaska. Time pripremate sljedeći blok o tome zašto ljudi ipak glasaju.
+:::
+
+## Racionalno nepoznavanje
+
+[INFORMACIJE KAO TROŠAK]{.section-label}
+
+- Ista logika koja obeshrabruje izlazak obeshrabruje i informiranje
+- Trošak detaljnog informiranja nadmašuje očekivanu korist
+
+. . .
+
+::: {.def}
+O **racionalnom nepoznavanju** govorimo kada se biraču ne isplati prikupljati političke informacije jer je njihov trošak veći od očekivane koristi, s obzirom na zanemarivu vjerojatnost da će njegov glas utjecati na ishod [@downs1957].
+:::
+
+::: {.notes}
+Povežite ovo izravno s formulom: isti $P \approx 0$ koji ruši poticaj na izlazak ruši i poticaj na učenje o politici. Naglasite da nepoznavanje ovdje nije lijenost ni glupost, nego racionalan odgovor na strukturu poticaja. Dodajte i suptilniji nalaz: posljedica nije samo manjak informacija, nego i neučinkovito korištenje onih koje birač već ima. Pitajte studente koliko su sami uložili u proučavanje programa na zadnjim izborima — odgovor obično potvrđuje teoriju.
+:::
+
+## Racionalna iracionalnost
+
+[CAPLAN]{.section-label}
+
+- Birač si može priuštiti i pristrana, iracionalna uvjerenja [@caplan2001]
+- Cijena pogreške za pojedinca je gotovo nula
+- Bez sistemskih pristranosti — greške bi se poništile
+
+. . .
+
+::: {.cbox .empirija}
+[Empirija]{.cbox-label}
+Velik dio birača ne zna tko kontrolira zakonodavno tijelo ni kamo idu gospodarski pokazatelji, i to ostaje postojano unatoč rastu obrazovanja [@somin2013]. Ekonomske pogreške grupiraju se u trajne pristranosti [@caplan2007].
+:::
+
+::: {.notes}
+Objasnite ključnu razliku u odnosu na prethodni slajd. Racionalno nepoznavanje govori da birač ne zna; racionalna iracionalnost ide korak dalje — birač zna manje nego što bi mogao i drži uvjerenja za koja u dubini zna da su klimava, jer ga pogreška ništa ne stoji. Ako bi te greške bile slučajne, poništile bi se u prosjeku. Problem nastaje jer su sistemske — podcjenjivanje tržišta, strah od razmjene s inozemstvom, brojanje radnih mjesta kao mjere blagostanja. Zato kolektivni izbor može biti suprotan ekonomskim dokazima.
+:::
+
+## Suvremeni informacijski okoliš
+
+[ALGORITMI I LAŽNE VIJESTI]{.section-label}
+
+- Algoritmi i jezični modeli snižavaju trošak informiranja
+- Ali snižavaju i trošak uvjerljivih neistina
+- Sistemske pristranosti dobivaju pojačivač
+
+. . .
+
+::: {.cbox .empirija}
+[Empirija]{.cbox-label}
+Lažne vijesti uoči američkih izbora 2016. dijeljene su na društvenim mrežama desecima milijuna puta [@allcott2017].
+:::
+
+::: {.notes}
+Zaokružite blok tako da pokažete da digitalni okoliš ne ukida, nego mijenja logiku. Jeftiniji pristup informacijama zvuči kao rješenje, ali isti kanal jeftino isporučuje i prilagođene neistine. Naglasite da algoritmi nagrađuju sadržaj koji potvrđuje postojeća uvjerenja, a ne onaj koji ih ispravlja — pa Caplanove pristranosti dobivaju pojačalo. Završite mišlju koja otvara raspravu: racionalno nepoznavanje više nije samo pitanje koliko birač ulaže, nego tko oblikuje informacije koje mu se besplatno nude. Time prelazimo na pitanje zašto ljudi ipak glasaju.
+:::
+
+## Pa zašto onda ipak glasamo? {.dio-slide}
+
+[DIO]{.section-label}
+
+::: {.lead}
+Ako se glas instrumentalno ne isplati, dva izlaza objašnjavaju zašto golema većina ipak izlazi: izražavanje i oprez pred najgorim.
+:::
+
+::: {.notes}
+Ovo je dramaturški obrat bloka A3. Tamo smo pokazali da $R = P \cdot B - C$ daje gotovo nulu, pa bi racionalan birač ostao kod kuće. A ipak ne ostaje. Najavite da ćemo paradoks razriješiti na dva načina: dodavanjem nematerijalne koristi (ekspresivno glasanje) i promjenom samog pravila odlučivanja (minimax žaljenje). Tempo polagan, ovo je most prema cijelom bloku.
+:::
+
+
+## Paradoks koji ostaje neriješen
+
+[NAPETOST]{.section-label}
+
+- Račun kaže: $P$ blizu nule, $C > P \cdot B$ [@downs1957]
+- Zaključak modela: ne glasaj
+
+. . .
+
+- Stvarnost: glasaju milijuni
+- Instrumentalni motiv sam ne objašnjava participaciju [@mueller1989]
+
+. . .
+
+::: {.cbox .kljucno}
+[Ključno]{.cbox-label}
+Ako je model točan, a ljudi ipak glasaju, nešto modelu nedostaje.
+:::
+
+::: {.notes}
+Vratite se na brojku iz prethodnog bloka i naglasite proturječje. Pitanje publici: tko je od vas glasao na zadnjim izborima i je li itko mislio da baš njegov glas odlučuje. Gotovo nitko, a ipak su izašli. Upravo to je zagonetka koju sada otvaramo. Dva pristupa kreću u različitim smjerovima, jedan mijenja korist, drugi mijenja pravilo.
+:::
+
+
+## Prvi izlaz: ekspresivno glasanje
+
+[INSTRUMENTALNO vs. EKSPRESIVNO]{.section-label}
+
+:::: {.columns}
+::: {.column width="50%"}
+**Instrumentalno** [@downs1957]
+
+- glasam da promijenim ishod
+- korist: porezi, usluge, dohodak
+- ruši se na malenom $P$
+:::
+::: {.column width="50%"}
+**Ekspresivno** [@brennan1993]
+
+- glasam da izrazim sebe
+- korist: identitet, vrijednosti
+- ne ovisi o $P$
+:::
+::::
+
+. . .
+
+- Korijeni u D-članu Riker–Ordeshookova modela [@riker1968]
+- Glas kao čin pripadnosti i samopotvrđivanja [@hamlin1999]
+
+::: {.notes}
+Ključna ideja Brennana i Lomaskog: glasanje je više izraz nego ulaganje. Usporedba s navijanjem na utakmici: vičete za svoj klub iako vaš povik ne mijenja rezultat, jer vam je do iskazivanja pripadnosti. Riker i Ordeshook to su davno ugradili u model kao D-član, zadovoljstvo od samog čina sudjelovanja. Naglasite da ekspresivni model zadržava vjerojatnost P u računu, ali joj dodaje nematerijalnu korist.
+:::
+
+
+## Spajanje motiva i njegove granice
+
+[KRITIKA]{.section-label}
+
+- Suvremeni modeli: korist = instrumentalna + ekspresivna [@feddersen2004]
+- Racionalno sudjelovati i kad je materijalna korist zanemariva
+
+. . .
+
+::: {.cbox .vjezba}
+[Prigovori]{.cbox-label}
+- Možda je posrijedi građanska dužnost i precjenjivanje vlastitog $P$ [@blais2000]
+- Ekspresivna korist nije mjerljiva, pa model teško opovrgnuti [@schuessler2000]
+:::
+
+::: {.notes}
+Feddersen pokazuje da proširenje pojma racionalnosti čini participaciju razumljivom bez napuštanja racionalnog okvira. Ali budite pošteni prema kritici. Blais paradoks vraća bliže instrumentalnoj logici preko osjećaja dužnosti. Drugi prigovor je metodološki i ozbiljniji: ako korist od izražavanja nije mjerljiva, njome možete naknadno objasniti baš svako ponašanje, a teorija koja objašnjava sve ništa ne predviđa. Schuessler zato traži neovisno provjerljive pretpostavke.
+:::
+
+
+## Drugi izlaz: glasanje pod neizvjesnošću
+
+[MINIMAX ŽALJENJE]{.section-label}
+
+- Ekspresivni model mijenja korist; ovaj mijenja **pravilo**
+- Glasanje ostaje instrumentalno, ali napušta račun $P$ [@ferejohnfiorina1974]
+- Birač $P$ ne zna i ne vjeruje joj: odluka pod **neizvjesnošću**, ne pod rizikom
+
+. . .
+
+::: {.def}
+**Minimax žaljenje** je pravilo odlučivanja pod neizvjesnošću prema kojem akter za svaku radnju gleda najveće žaljenje koje bi mogao osjetiti kad se otkrije stvarno stanje, a zatim bira radnju kojoj je to najveće žaljenje najmanje. Žaljenje je razlika između najboljeg ishoda koji se u danom stanju mogao postići i ishoda koji je odabrana radnja donijela.
+:::
+
+::: {.notes}
+Bitna razlika koju studenti često previde: rizik znači da vjerojatnosti znamo, neizvjesnost znači da ih nemamo. Ferejohn i Fiorina tvrde da birač P naprosto ne može pouzdano izračunati. Savage je za takve situacije ponudio pravilo koje uopće ne traži vjerojatnosti, nego gleda samo moguće ishode. Pročitajte definiciju polako, riječ žaljenje ovdje je tehnički pojam, ne emocija u svakodnevnom smislu.
+:::
+
+
+## Izvod: kad minimax nalaže izlazak
+
+[IZVOD]{.section-label}
+
+- Dvije radnje: glasati ili ostati kod kuće
+- Dva stanja: tijesno (jedan glas odlučuje) ili neodlučujuće
+
+. . .
+
+::: {.formula}
+$$\rho_g = C, \qquad \rho_o = B - C$$
+$$\text{glasaj} \iff \rho_o > \rho_g \iff B > 2C$$
+:::
+
+. . .
+
+- Glasaš li uzalud: protraćen trošak $C$
+- Ostaneš li, a favorit izgubi za jedan glas: propušten $B - C$
+- [Vjerojatnost $P$ u račun uopće ne ulazi]{.accent}
+
+::: {.notes}
+Provedite ih kroz logiku. Najveće žaljenje od glasanja nastaje kad ishod ionako nije bio tijesan, pa ste trošak C potrošili nizašto. Najveće žaljenje od ostanka kod kuće nastaje kad vam favorit izgubi za jedan jedini glas, pa propuštate B uz ušteđeni C. Minimax bira manje žaljenje, a to daje uvjet B veći od 2C. Naglasite poantu: P je nestao. Kako je korist od pobjede obično višestruko veća od sitnog troška izlaska, uvjet je gotovo uvijek ispunjen, pa je izlazak racionalan i kad je izjednačenje krajnje nevjerojatno.
+:::
+
+
+## Minimax žaljenje — isprobajte {.smaller}
+
+```{ojs}
+//| echo: false
+viewof regret_controls = Inputs.form({
+  B: Inputs.range([0, 60], {value: 30, step: 1, width: 320, label: "Korist od pobjede B"}),
+  C: Inputs.range([0, 30], {value: 10, step: 1, width: 320, label: "Trošak glasanja C"})
+})
+```
+
+```{ojs}
+//| echo: false
+{
+  const B = regret_controls.B, C = regret_controls.C;
+  const rg = C;
+  const ro = Math.max(B - C, 0);
+  const votes = rg <= ro;
+  const data = [
+    {act: "Glasati", regret: rg, pick: votes},
+    {act: "Ostati kod kuće", regret: ro, pick: !votes}
+  ];
+  const choice = votes ? "glasati" : "ostati kod kuće";
+  const accent = votes ? "#3A5648" : "#6B1F26";
+  const ymax = Math.max(10, B);
+  return Plot.plot({
+    width: 660, height: 300, marginLeft: 50, marginTop: 40, marginBottom: 36,
+    style: {fontSize: "15px", fontFamily: "Public Sans, system-ui, sans-serif", color: "#3A332D", background: "transparent"},
+    x: {label: "Radnja", domain: ["Glasati", "Ostati kod kuće"]},
+    y: {label: "↑ Najveće žaljenje", domain: [0, ymax * 1.15], grid: true},
+    marks: [
+      Plot.ruleY([0], {stroke: "#C9C3B8"}),
+      Plot.barY(data, {x: "act", y: "regret", fill: d => d.pick ? "#4A6B5C" : "#C9BBA3"}),
+      Plot.text(data, {x: "act", y: "regret", text: d => d.regret, dy: -8, fontSize: 16, fontWeight: 700, fill: "#1C1916"}),
+      Plot.text([`Minimax bira: ${choice}  (prag B = 2C)`], {frameAnchor: "top", dy: -24, fontSize: 15, fontWeight: 700, fill: accent})
+    ]
+  });
+}
+```
+
+::: {.isprobaj}
+Klizačima mijenjajte korist $B$ i trošak $C$ te pratite gdje se dva stupca izjednačuju na pragu $B = 2C$ i kad se odluka prevrće.
+:::
+
+::: {.notes}
+Pokažite uživo tri koraka. Prvo velika korist i malen trošak, žaljenje zbog ostanka kod kuće daleko je veće, minimax bira izlazak. Drugo, dižite trošak prema polovici koristi i gledajte kako se stupci izjednačuju točno na pragu B jednako 2C. Treće, podignite trošak iznad granice i model prvi put preporučuje ostanak kod kuće. Poanta: minimax ne nalaže izlazak uvijek, nego dok je ulog dovoljno velik u odnosu na trošak.
+:::
+
+
+## Kritika i dokaz iz prakse
+
+[GRANICE I EMPIRIJA]{.section-label}
+
+::: {.cbox .kljucno}
+[Prigovor (Beck)]{.cbox-label}
+Potpuna neizvjesnost jednako je nerealna kao savršeno poznavanje $P$; birači ipak grubo naslućuju koliko je utrka tijesna [@beck1975].
+:::
+
+. . .
+
+::: {.cbox .empirija}
+[Empirija]{.cbox-label}
+Kenija 2007.: golema izlaznost i etničko glasanje slažu se s minimax logikom [@kimenyi2008]. Birači izlaze da izbjegnu najgori ishod (pobjedu suparničke skupine), ne zato što vjeruju u utjecaj svog glasa.
+:::
+
+::: {.notes}
+Budite uravnoteženi. Beckov prigovor je jak: u stabilnoj demokraciji svatko zna da se ishod odlučuje u milijunima glasova, pa je priprema za najgori zamislivi slučaj pretjerano oprezna. Ali ondje gdje je ulog golem, model oživljava. Kimenyi i Gutiérrez-Romero pokazali su to na kenijskim izborima 2007., gdje je glasanje djelovalo kao obrambena strategija protiv najgoreg scenarija sa stvarnim posljedicama za sigurnost zajednice. Zato model najbolje radi upravo ondje gdje očekivana korist zakazuje.
+:::
+
+
+## Dva modela, dvije situacije
+
+[USPOREDBA]{.section-label}
+
+| Dimenzija | Očekivana korisnost | Minimax žaljenje |
+|---|---|---|
+| Kriterij | maks. očekivane koristi | min. najvećeg žaljenja |
+| Informacije | rizik, $P$ poznat | neizvjesnost, $P$ nepoznat |
+| Uloga $P$ | središnja | nikakva |
+| Najbolje objašnjava | pad izlaznosti, mirni uvjeti | mobilizacija, krizni izbori |
+
+[Izrada autora prema @downs1957, @ferejohnfiorina1974 i @kimenyi2008.]{.izvor}
+
+. . .
+
+::: {.cbox .kljucno}
+[Ključno]{.cbox-label}
+Nema jednog univerzalnog obrasca racionalnosti; instrumentalni račun, ekspresivni motiv i minimax oprez zajedno daju bogatiju sliku.
+:::
+
+::: {.notes}
+Zatvorite blok sintezom. Modeli se ne isključuju, nego pokrivaju različite biračke situacije. Kad je izbor mlak i stabilan, pad izlaznosti objašnjava model očekivane koristi. Kad je ulog golem i ozračje polarizirano, minimax oprez i ekspresivni motiv dolaze do izražaja. Pitanje za prijelaz u sljedeći blok: ako su ovako složeni motivi birača, kakvi su tek motivi onih koje biramo? Time otvaramo političare i birokrate.
+:::
+
+## Političari, birokrati i neuspjesi države {.dio-slide}
+
+[DIO]{.section-label}
+
+::: {.lead}
+Ista logika koja objašnjava birača objašnjava i one koje bira: političare i birokrate. A iz njihovih poticaja izrasta neuspjeh države.
+:::
+
+::: {.notes}
+Ovaj zadnji blok zatvara prvi luk kolegija. Do sada smo gledali birača i pitali se zašto uopće glasuje. Sada okrećemo pogled na drugu stranu tržišta politika, na one koji nude programe i one koji ih provode. Najavite da je cilj bloka pokazati da neuspjeh države nije slučajnost ni posljedica loših ljudi, nego predvidiva posljedica pravila. Ovo je posljednjih četrdesetak minuta, ostavite prostor za raspravu na kraju.
+:::
+
+## Političar kao maksimizator glasova
+
+[AKTERI TRŽIŠTA POLITIKA]{.section-label}
+
+- Cilj nije društveno blagostanje
+- Cilj je izborni uspjeh i vlast
+- Programi i obećanja u zamjeni za podršku [@downs1957]
+
+. . .
+
+::: {.cbox .kljucno}
+[Ključno]{.cbox-label}
+Sklonost kratkoročnim i populističkim mjerama: dižu popularnost danas, terete javne financije sutra.
+:::
+
+::: {.notes}
+Vratite se na Downsovu sliku tržišta politika. Političar je ponuđač, glasovi su valuta. Naglasite da to nije cinizam nego analitička pretpostavka, ista ona koju smo primijenili na birača. Pitajte studente da nabroje mjeru koja je popularna na kratki rok, a skupa na dugi rok. Postavite tezu koju razrađujemo na sljedećem slajdu: ako se ponašanje veže uz izborni kalendar, trebali bismo to vidjeti u podacima.
+:::
+
+## Politički proračunski ciklus
+
+:::: {.columns}
+::: {.column width="55%"}
+- Nordhausov model [@nordhaus1975]
+- Potrošnja i deficiti rastu uoči izbora
+- Fiskalna prilagodba tek nakon izbora
+:::
+::: {.column width="45%"}
+::: {.formula}
+$$\text{izbori} \rightarrow \uparrow G,\ \uparrow \text{deficit}$$
+:::
+:::
+::::
+
+. . .
+
+::: {.cbox .empirija}
+[Empirija]{.cbox-label}
+Učinak je sustavno jači u mladim demokracijama, uz slabija fiskalna pravila i ondje gdje birači teško prate dugoročne troškove [@nordhaus1975]. Slabiji je uz neovisna fiskalna vijeća i transparentan proračun.
+:::
+
+[Ciklus nije neizbježan: ovisi o institucijama koje čine buduće troškove vidljivima.]{.muted}
+
+::: {.notes}
+Ovo je najvažniji empirijski uvid slajda: ciklus postoji, ali nije zakon prirode. Objasnite mehanizam, političar maksimizira vidljivost danas jer birač slabo diskontira budućnost. Povežite s prethodnim predavanjima o racionalnom nepoznavanju, birač koji ne prati dugoročne troškove zapravo omogućuje ciklus. Naglasite institucionalnu polugu: fiskalna vijeća i pravila ne mijenjaju ljude, mijenjaju što je vidljivo. Hrvatske podatke namjerno ostavljamo za kasnija predavanja i za seminar.
+:::
+
+## Logrolling i lov na rentu
+
+[NAJAVA KASNIJIH PREDAVANJA]{.section-label}
+
+:::: {.columns}
+::: {.column width="50%"}
+**Trgovina glasovima (logrolling)**
+
+- Razmjena glasova
+- Prolaze prijedlozi bez većine
+- → kolektivni izbor
+:::
+::: {.column width="50%"}
+**Lov na rentu**
+
+- Povlastice umjesto vrijednosti
+- Nastavak: regulatorno zarobljavanje
+- → interesne skupine
+:::
+::::
+
+. . .
+
+[Na ovom mjestu dovoljno: političar koji popušta takvim pritiscima djeluje racionalno, čak i kad je ishod štetan.]{.lead}
+
+::: {.notes}
+Ovdje samo otvarate vrata, ne ulazite. Dva mehanizma navedite kao najavu, ne razrađujte ih, recite studentima izrijekom da su to teme zasebnih predavanja. Logrolling dolazi u predavanju o kolektivnom izboru, lov na rentu i regulatorno zarobljavanje u predavanju o interesnim skupinama. Spomenite telekomunikacijski primjer iz devedesetih kao predujam, regulator je u nekoliko zemalja štitio državne operatere dok ih pritisak Komisije nije prisilio na otvaranje. Pouka: tko piše pravila i tko ih nadzire.
+:::
+
+## Birokrat i Niskanenov model
+
+::: {.def}
+Birokrat u javnoizbornom okviru je **maksimizator proračuna**, jer iz veličine proračuna izvodi plaću, status, ovlasti i moć [@niskanen1971].
+:::
+
+:::: {.columns}
+::: {.column width="50%"}
+**Weberovska slika**
+
+- Nepristran provoditelj zakona
+- Služi javnom interesu
+:::
+::: {.column width="50%"}
+**Javnoizborna slika**
+
+- Reagira na vlastite poticaje
+- Informacijska prednost nad financijerima
+:::
+::::
+
+. . .
+
+::: {.cbox .kljucno}
+[Ključno]{.cbox-label}
+Birokracija o stvarnom trošku svojih programa zna više od onih koji ih plaćaju → sustavna sklonost prevelikim proračunima.
+:::
+
+::: {.notes}
+Naglasite da ovo nije optužba protiv službenika nego model poticaja. Dvije slike postavite jednu uz drugu, weberovsku i javnoizbornu, i recite da se u predavanju o birokraciji vraćaju zajedno, ne kao isključive nego kao komplementarne. Srce modela je informacijska asimetrija, financijer ne zna pravu funkciju troška pa ne može prozvati prenapuhani proračun. Pitanje publici: tko u stvarnosti kontrolira proračun agencije i ima li poticaj to činiti.
+:::
+
+## Zajednički nazivnik: koncentrirane koristi, raspršeni troškovi
+
+::: {.lead}
+Iza prividne iracionalnosti države stoji jedna asimetrija.
+:::
+
+- Velika, **koncentrirana korist** maloj organiziranoj skupini
+- **Raspršeni trošak** na mnoštvo poreznih obveznika
+- Pojedinačni teret malen, jedva primjetan
+
+. . .
+
+::: {.cbox .empirija}
+[Empirija]{.cbox-label}
+Organizirana manjina ima snažan poticaj izboriti se za mjeru. Raspršena većina nema poticaj ni saznati za nju.
+:::
+
+::: {.notes}
+Ovo je intelektualna kičma cijelog bloka. Sve što slijedi u kolegiju, logika kolektivnog djelovanja, lov na rentu, logrolling, birokratska ekspanzija, izrasta iz iste asimetrije. Dajte konkretnu intuiciju, subvencija od milijun eura uskoj industriji vrijedna je borbe za tu industriju, a stoji svakog građanina nekoliko centi, pa se nikome ne isplati protiviti. Recite da sljedeća tablica te mehanizme prvi put stavlja jedne uz druge.
+:::
+
+## Mehanizmi neuspjeha države
+
+| Mehanizam | Glavni akteri | Racionalni cilj | Neintuitivan ishod |
+| :--- | :--- | :--- | :--- |
+| Koncentrirane koristi / raspršeni troškovi | Interesne skupine, birači | Mala skupina velik dobitak; većina ravnodušna | Politike s niskim ili negativnim povratom |
+| Lov na rentu | Interesne skupine | Umjetno stvorene povlastice (rente) | Rasipanje resursa (Tullockov pravokutnik) |
+| Trgovina glasovima | Političari | Razmjena glasova za prolaz zakona | Projekti negativne društvene vrijednosti |
+| Maksimizacija proračuna | Birokrati | Veći proračun i osobna moć | Prekomjerna, neučinkovita opskrba |
+
+[Autorska sinteza prema @olson1965, @tullock1967, @niskanen1971 i @buchanan1962.]{.izvor}
+
+::: {.notes}
+Prođite tablicu redak po redak, ali ne ponavljajte sve, pustite studente da pročitaju. Istaknite da je treći stupac uvijek racionalan za aktera, a četvrti uvijek štetan za društvo, upravo to je definicija neuspjeha države. Povežite svaki redak s budućim predavanjem da studenti vide mapu kolegija. Ovo je dobar trenutak za prvo pitanje publici: koji od ova četiri mehanizma najlakše prepoznaju u svakodnevnim vijestima.
+:::
+
+## Pouka: problem nisu loši ljudi, nego loša pravila
+
+::: {.cbox .kljucno}
+[Ključno]{.cbox-label}
+I dobronamjerni akteri pod lošim pravilima proizvode loše ishode. Popravak rjeđe dolazi od zamjene ljudi, a češće od promjene pravila pod kojima oni odlučuju.
+:::
+
+. . .
+
+- Vraćamo se na razliku s početka dijela
+- **Pravila igre** vs. ishodi
+- Reforma cilja na ustavnu razinu, ne na osobe
+
+::: {.notes}
+Ovo je teza koju studenti trebaju ponijeti iz cijelog prvog dijela. Inzistirajte na njoj, jer je suprotna intuiciji javnog diskursa koji traži krivca, lošeg ministra ili pohlepnog službenika. Javni izbor okreće pitanje: ne tko, nego pod kojim pravilima. Povežite s Buchananovom razlikom ustavne i operativne razine, mijenjati ishod znači mijenjati pravila. Ovo je most prema dijelu o institucionalnoj i konstitucionalnoj ekonomici.
+:::
+
+## Što slijedi u kolegiju
+
+::: {.agenda}
+1. Teorija igara, poteze i protupoteze aktera
+2. Kolektivni izbor i agregacija preferencija
+3. Interesne skupine i lov na rentu
+4. Birokracija, weberovski i javnoizborni pogled
+5. Institucije i pravila igre
+:::
+
+. . .
+
+[Akteri ne odlučuju izolirano, nego strateški, motreći poteze jednih na poteze drugih.]{.lead}
+
+::: {.notes}
+Iskoristite ovaj slajd da studentima date osjećaj putanje, danas smo postavili aktere i njihove poticaje, dalje gradimo alate za analizu njihove međuigre. Najavite da sljedeće predavanje uvodi jezik teorije igara jer akteri ne biraju u vakuumu nego strateški. Recite da se svaki mehanizam iz tablice vraća u zasebnom predavanju, razrađen do kraja. Time zatvarate prvi dio i otvarate drugi.
+:::
+
+## Vježba i pitanja za raspravu
+
+::: {.cbox .vjezba}
+[Vježba]{.cbox-label}
+Zadržite trošak $C = 10$ € i korist $B = 5000$ € te povećavajte $N$. Pri kojoj veličini $N^{*}$ neto vrijednost $R$ prelazi u negativnu? Izvedite iz $R = B/N - C = 0$ da je $N^{*} = B/C$. Koliko bi puta $B$ morala porasti da se glasanje isplati u biračkom tijelu od milijun ljudi?
+:::
+
+- Gdje u Hrvatskoj vidite proračunski ciklus?
+- Koji mehanizam iz tablice najlakše prepoznajete?
+- Mijenja li se išta zamjenom ljudi bez promjene pravila?
+- Koje bi pravilo smanjilo neuspjeh države u jednom slučaju?
+
+::: {.notes}
+Računski dio vježbe riješite zajedno na ploči, $N^{*} = 5000/10 = 500$, iznad pet stotina birača instrumentalno glasanje gubi smisao. Za milijun birača $B$ bi morala porasti dvije tisuće puta, što je očito nerealno, i to je poanta, instrumentalni motiv ne objašnjava stvarnu izlaznost. Četiri pitanja za raspravu vodite redom, ostavite najviše vremena zadnjem jer ono povezuje cijeli blok s porukom o pravilima. Potaknite studente da brane suprotne pozicije.
+:::
+
+## Hvala i kontakt
+
+[KRAJ PRVOG DIJELA]{.section-label}
+
+::: {.lead}
+Pitanja, komentari i prijepori dobrodošli.
+:::
+
+- Milan Deskar-Škrbić
+- Petra Palić
+- Luka Šikić
+
+[Materijali: web-knjiga, PDF, Vodič, Pojmovnik, Alat i Uči uz AI.]{.muted}
+
+::: {.notes}
+Zahvalite studentima na pažnji i pozovite ih da otvore raspravu o bilo kojoj točki s predavanja. Podsjetite ih na digitalne resurse iz uvodnog bloka, posebno na Alat gdje mogu sami mijenjati parametre paradoksa glasanja. Najavite kada je sljedeće predavanje i što da pripreme. Ostavite zadnjih nekoliko minuta za pitanja uživo.
+:::
+
+## Literatura {.smaller}
+
+::: {#refs}
+:::
