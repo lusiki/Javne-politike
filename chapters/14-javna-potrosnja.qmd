@@ -1,4 +1,4 @@
----
+﻿---
 title: "Kako država troši naš novac?"
 ---
 
@@ -115,8 +115,8 @@ Dugoročni podaci taj rast čine opipljivim. Spoje li se povijesne procjene Tanz
 #| fig-height: 3.8
 source("R/setup.R")
 theme_set(theme_pubfin() + theme(
-  plot.background  = element_rect(fill = "#F2EDE3", color = NA),
-  panel.background = element_rect(fill = "#F2EDE3", color = NA)))
+  plot.background  = element_rect(fill = "white", color = NA),
+  panel.background = element_rect(fill = "white", color = NA)))
 
 yrsM <- 2008:2025
 eAvg <- c(44.9,48.5,47.8,46.8,47.2,47.8,47.4,46.7,45,44.3,44.4,44.5,50.5,48.7,47.2,47.5,47.7,48.4)
@@ -698,15 +698,15 @@ cols <- c("Socijalna zaštita"="#1A1A1A","Zdravstvo"="#333333","Ekonomski poslov
           "Opće javne usluge"="#6B6B6B","Obrazovanje"="#8C8C8C","Ostalo"="#B8B2A6")
 df$lab <- ifelse(df$v >= 4, paste0(sub("\\.", ",", sprintf("%.1f", df$v)), " %"), "")
 ggplot(df, aes(x = "", y = v, fill = cat)) +
-  geom_col(width = 1, color = "#F2EDE3", linewidth = 0.6) +
+  geom_col(width = 1, color = "white", linewidth = 0.6) +
   coord_polar(theta = "y") +
   geom_text(aes(label = lab), position = position_stack(vjust = 0.5), color = "white", size = 3, family = "mono") +
   scale_fill_manual(values = cols, name = NULL) +
   labs(x = NULL, y = NULL) +
   theme(legend.position = "right",
-        plot.background  = element_rect(fill = "#F2EDE3", color = NA),
-        panel.background = element_rect(fill = "#F2EDE3", color = NA),
-        legend.background = element_rect(fill = "#F2EDE3", color = NA),
+        plot.background  = element_rect(fill = "white", color = NA),
+        panel.background = element_rect(fill = "white", color = NA),
+        legend.background = element_rect(fill = "white", color = NA),
         text = element_text(family = "mono", color = "#1C1916"))
 ```
 :::
@@ -774,8 +774,8 @@ Te dvije funkcije, socijalna zaštita i zdravstvo, čine srž europske države b
 #| fig-height: 4.8
 source("R/setup.R")
 theme_set(theme_pubfin() + theme(
-  plot.background  = element_rect(fill = "#F2EDE3", color = NA),
-  panel.background = element_rect(fill = "#F2EDE3", color = NA)))
+  plot.background  = element_rect(fill = "white", color = NA),
+  panel.background = element_rect(fill = "white", color = NA)))
 
 zem <- c("Finska","Francuska","Austrija","Italija","Njemačka","EU27","Švedska","Nizozemska",
          "Poljska","Češka","Hrvatska","Estonija","Litva","Rumunjska","Irska")

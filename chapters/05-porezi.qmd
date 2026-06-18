@@ -1,4 +1,4 @@
----
+﻿---
 title: "Klasična teorija oporezivanja"
 ---
 
@@ -132,8 +132,8 @@ Taj se dugoročni rast poreznog opterećenja može i izmjeriti. Prosječno porez
 #| fig-height: 3.8
 source("R/setup.R")
 theme_set(theme_pubfin() + theme(
-  plot.background  = element_rect(fill = "#F2EDE3", color = NA),
-  panel.background = element_rect(fill = "#F2EDE3", color = NA)))
+  plot.background  = element_rect(fill = "white", color = NA),
+  panel.background = element_rect(fill = "white", color = NA)))
 
 yrsM <- 2008:2025
 tAvg <- c(37.3,36.5,36.2,36.5,37.2,37.8,38.1,38.1,38.2,38.2,38.3,38.4,38.6,38.7,38.1,37.8,38.5,38.9)
@@ -394,8 +394,8 @@ source("R/setup.R")
 
 # Pozadina grafa u boji papira (STATECRAFT paper), kao i interaktivne verzije
 theme_set(theme_pubfin() + theme(
-  plot.background  = element_rect(fill = "#F2EDE3", color = NA),
-  panel.background = element_rect(fill = "#F2EDE3", color = NA)))
+  plot.background  = element_rect(fill = "white", color = NA),
+  panel.background = element_rect(fill = "white", color = NA)))
 
 # Zadane vrijednosti klizača
 y_poor   <- 20   # dohodak siromašnijeg (Yp)
@@ -654,8 +654,8 @@ source("R/setup.R")
 
 # Pozadina grafa u boji papira (STATECRAFT paper), kao i interaktivne verzije
 theme_set(theme_pubfin() + theme(
-  plot.background  = element_rect(fill = "#F2EDE3", color = NA),
-  panel.background = element_rect(fill = "#F2EDE3", color = NA)))
+  plot.background  = element_rect(fill = "white", color = NA),
+  panel.background = element_rect(fill = "white", color = NA)))
 
 # --- Zadane vrijednosti klizača ---
 eps_d <- 1.0   # elastičnost potražnje |εD| (zadano)
@@ -746,8 +746,8 @@ ggplot() +
   labs(x = "Količina (Q)", y = "Cijena (P)") +
   theme_pubfin() +
   theme(panel.grid.major.x = element_blank(),
-        plot.background  = element_rect(fill = "#F2EDE3", color = NA),
-        panel.background = element_rect(fill = "#F2EDE3", color = NA))
+        plot.background  = element_rect(fill = "white", color = NA),
+        panel.background = element_rect(fill = "white", color = NA))
 ```
 :::
 
@@ -898,8 +898,8 @@ source("R/setup.R")
 
 # Pozadina grafa u boji papira (STATECRAFT paper), kao i interaktivne verzije
 theme_set(theme_pubfin() + theme(
-  plot.background  = element_rect(fill = "#F2EDE3", color = NA),
-  panel.background = element_rect(fill = "#F2EDE3", color = NA)))
+  plot.background  = element_rect(fill = "white", color = NA),
+  panel.background = element_rect(fill = "white", color = NA)))
 
 # Parametri (zadane vrijednosti klizača)
 eps_dwl <- 1.0   # elastičnost potražnje |ε| (zadana vrijednost klizača)
@@ -1001,8 +1001,8 @@ ggplot() +
   labs(x = "Količina (Q)", y = "Cijena (P)") +
   theme_pubfin() +
   theme(panel.grid.major.x = element_blank(),
-        plot.background  = element_rect(fill = "#F2EDE3", color = NA),
-        panel.background = element_rect(fill = "#F2EDE3", color = NA))
+        plot.background  = element_rect(fill = "white", color = NA),
+        panel.background = element_rect(fill = "white", color = NA))
 ```
 :::
 
@@ -1165,8 +1165,8 @@ source("R/setup.R")
 
 # Pozadina grafa u boji papira (STATECRAFT paper), kao i interaktivne verzije
 theme_set(theme_pubfin() + theme(
-  plot.background  = element_rect(fill = "#F2EDE3", color = NA),
-  panel.background = element_rect(fill = "#F2EDE3", color = NA)))
+  plot.background  = element_rect(fill = "white", color = NA),
+  panel.background = element_rect(fill = "white", color = NA)))
 
 # Parametri (zadane vrijednosti klizača)
 tau   <- 35    # porezni klin τ kao postotak bruto nadnice (zadana vrijednost klizača)
@@ -1265,8 +1265,8 @@ ggplot() +
   scale_y_continuous(limits = c(0, Wmax), expand = c(0, 0)) +
   labs(x = "Rad (L)", y = "Nadnica (W)") +
   theme_pubfin() +
-  theme(plot.background  = element_rect(fill = "#F2EDE3", color = NA),
-        panel.background = element_rect(fill = "#F2EDE3", color = NA))
+  theme(plot.background  = element_rect(fill = "white", color = NA),
+        panel.background = element_rect(fill = "white", color = NA))
 ```
 :::
 
@@ -1448,8 +1448,8 @@ source("R/setup.R")
 
 # Pozadina grafa u boji papira (STATECRAFT paper), kao i interaktivne verzije
 theme_set(theme_pubfin() + theme(
-  plot.background  = element_rect(fill = "#F2EDE3", color = NA),
-  panel.background = element_rect(fill = "#F2EDE3", color = NA)))
+  plot.background  = element_rect(fill = "white", color = NA),
+  panel.background = element_rect(fill = "white", color = NA)))
 
 # --- Zadane vrijednosti klizača -------------------------------------------
 eps <- 1.0   # elastičnost potražnje |ε| (zadana vrijednost klizača)
@@ -1546,8 +1546,8 @@ ggplot() +
   scale_y_continuous(limits = c(0, Pmax), expand = c(0, 0)) +
   labs(x = "Količina (Q)", y = "Cijena (P)") +
   theme_pubfin() +
-  theme(plot.background  = element_rect(fill = "#F2EDE3", color = NA),
-        panel.background = element_rect(fill = "#F2EDE3", color = NA))
+  theme(plot.background  = element_rect(fill = "white", color = NA),
+        panel.background = element_rect(fill = "white", color = NA))
 ```
 :::
 
@@ -1783,8 +1783,8 @@ source("R/setup.R")
 
 # Pozadina grafa u boji papira (STATECRAFT paper), kao i interaktivne verzije
 theme_set(theme_pubfin() + theme(
-  plot.background  = element_rect(fill = "#F2EDE3", color = NA),
-  panel.background = element_rect(fill = "#F2EDE3", color = NA)))
+  plot.background  = element_rect(fill = "white", color = NA),
+  panel.background = element_rect(fill = "white", color = NA)))
 
 # --- Zadane vrijednosti klizača (snapshot kako se graf prvi put pojavljuje) ---
 tau_l <- 30    # porezna stopa τ u % (zadana vrijednost klizača)
@@ -2137,8 +2137,8 @@ source("R/setup.R")
 
 # Pozadina grafa u boji papira (STATECRAFT paper), kao i interaktivne verzije
 theme_set(theme_pubfin() + theme(
-  plot.background  = element_rect(fill = "#F2EDE3", color = NA),
-  panel.background = element_rect(fill = "#F2EDE3", color = NA)))
+  plot.background  = element_rect(fill = "white", color = NA),
+  panel.background = element_rect(fill = "white", color = NA)))
 
 # Zadane vrijednosti klizača
 r     <- 0.08   # kamatna stopa r
@@ -2414,8 +2414,8 @@ source("R/setup.R")
 
 # Pozadina grafa u boji papira (STATECRAFT paper), kao i interaktivne verzije
 theme_set(theme_pubfin() + theme(
-  plot.background  = element_rect(fill = "#F2EDE3", color = NA),
-  panel.background = element_rect(fill = "#F2EDE3", color = NA)))
+  plot.background  = element_rect(fill = "white", color = NA),
+  panel.background = element_rect(fill = "white", color = NA)))
 
 # --- Parametri (zadane vrijednosti klizača) ---
 eps    <- 0.5   # elastičnost porezne osnovice ε (zadana vrijednost klizača eps_T)
