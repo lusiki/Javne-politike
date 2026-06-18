@@ -1,9 +1,17 @@
 # PDF profile override.
-# Use: quarto render --profile pdf
+# Use: scripts/render-book-pdf.ps1   (NOT a bare `quarto render --profile pdf`)
 # Output: pdf/Javne-politike.pdf
 #
 # This file overrides settings from _quarto.yml. Anything not specified here
 # is inherited from the default config (HTML build is unaffected).
+#
+# APPENDICES: the PDF should carry ONLY the bibliography (references.qmd), while
+# the website keeps the full appendix set (pojmovnik, vodič, priručnik, resursi,
+# alat, podaci, uči-s-AI, silabusi). This CANNOT be done from this profile —
+# Quarto merges `book.appendices` arrays additively, so a short list here just
+# gets appended to the full list in _quarto.yml. Instead, scripts/render-book-pdf.ps1
+# temporarily rewrites the appendices block in _quarto.yml to references-only for
+# the duration of the render, then restores it. Always render via that script.
 
 project:
   output-dir: pdf

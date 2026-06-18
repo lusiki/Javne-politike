@@ -7,8 +7,6 @@ bibliography: ../references.bib
 # Izvor je _-prefiksiran (predavanja/_01-...qmd) pa ga render knjige (quarto
 # render) NE dira; renderiraj ručno, a output-file daje čist naziv bez podvlake.
 output-file: 01-uvod-u-javni-izbor.html
-title-slide-attributes:
-  data-background-gradient: "linear-gradient(155deg, #1C1916 0%, #241f1a 55%, #3A5648 145%)"
 format:
   revealjs:
     theme: statecraft.scss
@@ -290,16 +288,16 @@ Važno je studentima reći da ova knjiga ne zamjenjuje postojeće udžbenike neg
 
 :::: {.columns}
 ::: {.column width="50%"}
-- **Web-knjiga** — čitanje u pregledniku
-- **PDF** — za ispis i offline
-- **Vodič** — mentalne mape, jedna po poglavlju
-- **Pojmovnik** — ključni pojmovi
+- [**Web-knjiga**](https://lusiki.github.io/Javne-politike/) — čitanje u pregledniku
+- [**PDF**](https://lusiki.github.io/Javne-politike/pdf/Javne-politike.pdf) — za ispis i offline
+- [**Vodič**](https://lusiki.github.io/Javne-politike/vodic.html) — mentalne mape, jedna po poglavlju
+- [**Pojmovnik**](https://lusiki.github.io/Javne-politike/pojmovnik.html) — ključni pojmovi
 :::
 ::: {.column width="50%"}
-- **Alat** — igralište, interaktivni kalkulatori
-- **Resursi** — dodatni izvori
-- **Uči uz AI** — pitanja uz tekst
-- **Podaci** — skupovi za vježbe
+- [**Alat**](https://lusiki.github.io/Javne-politike/alat.html) — igralište, interaktivni kalkulatori
+- [**Resursi**](https://lusiki.github.io/Javne-politike/resursi.html) — dodatni izvori
+- [**Uči uz AI**](https://lusiki.github.io/Javne-politike/uci-s-ai.html) — pitanja uz tekst
+- [**Podaci**](https://lusiki.github.io/Javne-politike/podaci.html) — skupovi za vježbe
 :::
 ::::
 
@@ -430,7 +428,7 @@ Ovo je logički zglob predavanja. Tipična pogreška u javnoj raspravi je implic
 . . .
 
 ::: {.muted}
-James Buchanan: javni izbor kao „politika bez romantike" [@buchanan1986]
+James Buchanan: javni izbor kao [„politika bez romantike"](https://www.econlib.org/library/Columns/y2003/Buchananpolitics.html) [@buchanan1986]
 :::
 
 ::: {.notes}
@@ -453,9 +451,9 @@ Pročitajte definiciju polako, pa istaknite dva težišta. Prvo: ista metodologi
 
 [ODAKLE DOLAZI]{.section-label}
 
-- **Downs (1957)** — *An Economic Theory of Democracy* [@downs1957]
-- **Buchanan i Tullock (1962)** — *The Calculus of Consent* [@buchanan1962]
-- **Mueller** — sinteza discipline [@mueller1989]
+- **Downs (1957)** — [*An Economic Theory of Democracy*](https://archive.org/details/economictheoryof0000down) [@downs1957]
+- **Buchanan i Tullock (1962)** — [*The Calculus of Consent*](https://www.econlib.org/library/Buchanan/buchCv3.html) [@buchanan1962]
+- **Mueller** — [sinteza discipline](https://doi.org/10.1017/CBO9780511813771) [@mueller1989]
 
 . . .
 

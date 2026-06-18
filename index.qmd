@@ -1,6 +1,5 @@
 ---
 title: "Naslovnica"
-toc: false
 number-sections: false
 code-tools: false
 code-fold: false
@@ -8,6 +7,10 @@ echo: false
 comments: false   # bez Hypothesis na landingu (izvjestaj-estetski M17)
 format:
   html:
+    # toc:false samo za HTML landing (hero nema bočni sadržaj). U korijenu fronta
+    # ovo je nadjačavalo PDF-ov toc:true (prvi book-fajl gasi cijeli \tableofcontents),
+    # pa PDF nije imao Sadržaj — vidi quarto-dev/discussions/11386.
+    toc: false
     body-classes: standalone-page
     include-in-header:
       text: |

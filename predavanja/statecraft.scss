@@ -2,16 +2,21 @@
 
 // ╔══════════════════════════════════════════════════════════════════╗
 // ║  STATECRAFT — reveal.js tema za predavanja                        ║
-// ║  Javne politike u Hrvatskoj. Paleta i tipografija usklađene s      ║
-// ║  _brand.yml i styles/custom.scss (knjiga).                         ║
+// ║  Javne politike u Hrvatskoj.                                       ║
+// ║  Registar: zračan, minimalan, mono-kicker. Gotovo bijela ploha,    ║
+// ║  tanki serif naslovi, IBM Plex Mono oznake. Boja je akcent, ne     ║
+// ║  površina.                                                         ║
 // ╚══════════════════════════════════════════════════════════════════╝
 
-// — Paleta (STATECRAFT) —
-$paper:          #F2EDE3;   // topla krem — pozadina (nikad pure white)
-$paper-soft:     #EAE3D4;
-$ink:            #1C1916;   // near-black s smeđim podtonom
+// — Paleta —
+// Pozadina je sada gotovo bijela (alabaster), a ne topla krem. Krem
+// ostaje samo kao diskretan ton za rijetke elevirane plohe.
+$canvas:         #FBFAF7;   // alabaster — gotovo bijela, jedva topla
+$canvas-soft:    #F4F2EC;   // suptilna elevacija
+$ink:            #1A1714;   // near-black
 $ink-soft:       #3A332D;
-$ink-mute:       #6B6357;
+$ink-mute:       #8A8377;   // svjetliji mute za zračniji osjećaj
+$hair:           #E7E3D9;   // hairline
 $verdigris:      #4A6B5C;   // primarni akcent / link
 $verdigris-deep: #3A5648;
 $oxblood:        #6B1F26;   // emfaza
@@ -25,226 +30,413 @@ $font-sans:   "Public Sans", system-ui, -apple-system, sans-serif;
 $font-mono:   "IBM Plex Mono", ui-monospace, monospace;
 
 // — reveal.js varijable —
-$body-bg:               $paper;
+$body-bg:               $canvas;
 $body-color:            $ink;
 $presentation-font-family: $font-sans;
 $presentation-heading-font: $font-serif;
 $presentation-heading-color: $ink;
-$presentation-heading-font-weight: 500;
+$presentation-heading-font-weight: 400;   // tanji naslovi — zračnije
 $link-color:            $verdigris;
 $link-color-hover:      $verdigris-deep;
-$selection-bg:          rgba($ochre, .35);
+$selection-bg:          rgba($ochre, .30);
 
 $presentation-font-size-root: 30px;
-$presentation-h1-font-size: 2.05em;
-$presentation-h2-font-size: 1.45em;
-$presentation-h3-font-size: 1.15em;
-$presentation-line-height: 1.4;
+$presentation-h1-font-size: 2.1em;
+$presentation-h2-font-size: 1.5em;
+$presentation-h3-font-size: 1.1em;
+$presentation-line-height: 1.5;          // više zraka među retcima
 $code-block-font-size: 0.72em;
 
 /*-- scss:rules --*/
 
-@import url('https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&family=IBM+Plex+Mono:wght@400;500;600&family=Newsreader:ital,opsz,wght@0,6..72,300;0,6..72,400;0,6..72,500;0,6..72,600;0,6..72,700;1,6..72,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=IBM+Plex+Mono:ital,wght@0,400;0,500;0,600;1,400&family=Newsreader:ital,opsz,wght@0,6..72,200;0,6..72,300;0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,300;1,6..72,400&display=swap');
 
 .reveal {
   letter-spacing: -0.003em;
+  font-weight: 400;
 
-  // — Naslovi —
+  // — Veći vanjski razmak ploče: sadržaj diše —
+  .slides {
+    text-align: left;
+  }
+
+  // — Naslovi: tanki serif, mnogo zraka, bez teških separatora —
   h1, h2, h3, h4 {
-    letter-spacing: -0.012em;
-    line-height: 1.12;
+    letter-spacing: -0.018em;
+    line-height: 1.1;
     text-transform: none;
-    margin-bottom: 0.5em;
+    margin-bottom: 0.7em;
+    font-weight: 400;
   }
   h2 {
     color: $ink;
-    border-bottom: 2px solid rgba($verdigris, .28);
-    padding-bottom: 0.28em;
+    font-weight: 400;
+    // Bez podebljanog border-a: samo blagi razmak. Zračnije.
+    border-bottom: none;
+    padding-bottom: 0.15em;
+    line-height: 1.06;
   }
-  h3 { color: $verdigris-deep; }
+  h3 { color: $verdigris-deep; font-weight: 500; }
 
   // — Tijelo —
-  p, li { color: $ink-soft; }
-  strong { color: $ink; font-weight: 700; }
+  p, li { color: $ink-soft; font-weight: 400; }
+  strong { color: $ink; font-weight: 600; }
   em { color: inherit; }
 
-  // — Liste —
-  ul, ol { margin-left: 0.4em; }
-  ul li, ol li { margin-bottom: 0.42em; }
-  ul li::marker { color: $verdigris; }
-  ol li::marker { color: $verdigris; font-weight: 600; }
+  // — Liste: lakše, prozračnije —
+  ul, ol { margin-left: 0.3em; }
+  ul li, ol li { margin-bottom: 0.55em; line-height: 1.45; }
+  ul { list-style: none; }
+  ul li { position: relative; padding-left: 1.1em; }
+  // Tanka mono crtica umjesto bullet-a — minimalan, tehnički ton
+  ul li::before {
+    content: "—";
+    position: absolute; left: 0;
+    color: $verdigris;
+    font-family: $font-mono;
+    opacity: 0.6;
+  }
+  ol li::marker { color: $verdigris; font-weight: 500; font-family: $font-mono; }
 
   // — Linkovi —
-  a { color: $verdigris; text-underline-offset: 3px; text-decoration-thickness: 1px; }
-  a:hover { color: $oxblood; }
+  a {
+    color: $verdigris;
+    text-underline-offset: 3px;
+    text-decoration-thickness: 1px;
+    text-decoration-color: rgba($verdigris, .4);
+    transition: color .12s ease, text-decoration-color .12s ease;
+  }
+  a:hover { color: $oxblood; text-decoration-color: $oxblood; }
+
+  // Diskretni vanjski-link biljeg (↗) — signal da je poveznica interaktivna.
+  // Cilja samo http(s) linkove unutar teksta, ne navigacijske/UI elemente.
+  li a[href^="http"]::after,
+  p a[href^="http"]::after,
+  .muted a[href^="http"]::after {
+    content: "\2197";          // ↗
+    font-family: $font-mono;
+    font-size: 0.7em;
+    margin-left: 0.18em;
+    color: $ink-mute;
+    text-decoration: none;
+    vertical-align: 0.08em;
+  }
 
   // — Kod —
   code { font-family: $font-mono; color: $oxblood; font-size: 0.85em; }
   pre code { color: $ink-soft; }
 
-  // — Citati / izvori (margin/inline) —
+  // — Citati / izvori —
   .citation a, cite { color: $ink-mute; font-style: italic; }
 
-  // — Blockquote —
+  // — Blockquote: minimalno, samo tanka crta —
   blockquote {
-    border-left: 4px solid $ochre;
-    background: rgba($ochre, .08);
+    border-left: 2px solid $ochre;
+    background: none;
     font-family: $font-serif;
     font-style: italic;
+    font-weight: 300;
     color: $ink;
-    padding: 0.5em 0.9em;
+    padding: 0.2em 0 0.2em 0.9em;
     box-shadow: none;
     width: auto;
   }
   blockquote footer, blockquote .attr {
-    font-family: $font-sans; font-style: normal; font-size: 0.62em;
-    color: $ink-mute; display: block; margin-top: 0.35em;
+    font-family: $font-mono; font-style: normal; font-size: 0.55em;
+    color: $ink-mute; display: block; margin-top: 0.45em; letter-spacing: 0.02em;
   }
 
-  // — Tablice —
-  table { font-size: 0.74em; }
+  // — Tablice: hairline, bez zebra-fila —
+  table { font-size: 0.74em; border-collapse: collapse; }
   table th {
-    font-family: $font-sans; font-weight: 600;
-    border-bottom: 2px solid $verdigris; color: $ink;
-    background: rgba($verdigris, .07);
+    font-family: $font-mono; font-weight: 500;
+    border-bottom: 1px solid $ink; color: $ink;
+    background: none;
+    text-transform: uppercase; font-size: 0.82em; letter-spacing: 0.06em;
+    padding: 0.5em 0.7em;
   }
-  table td { border-color: rgba($ink-mute, .25); color: $ink-soft; }
-  table tr:nth-child(even) td { background: rgba($paper-soft, .5); }
+  table td {
+    border-color: $hair; color: $ink-soft;
+    padding: 0.5em 0.7em;
+  }
+  table tr td { border-bottom: 1px solid $hair; }
+  table tr:nth-child(even) td { background: none; }
 
-  // — Footer / progress —
-  .progress { color: $verdigris; height: 4px; }
+  // — Footer / progress: tanji, diskretniji —
+  .progress { color: $verdigris; height: 2px; }
   .slide-number { color: $ink-mute; font-family: $font-mono; font-size: 0.6em; }
   .slide-number a { color: $ink-mute; }
-  .controls { color: $verdigris; }
+  .controls { color: $verdigris; opacity: 0.4; }
+  .controls:hover { opacity: 0.85; }
 }
 
-// — Kicker / sekcijska oznaka —
+// ══════════════════════════════════════════════════════════════════
+//  KICKER / SEKCIJSKA OZNAKA — čisti mono natpis, bez crte
+// ══════════════════════════════════════════════════════════════════
+
 .reveal .section-label {
-  font-family: $font-sans;
-  font-weight: 700;
-  font-size: 0.5em;
-  letter-spacing: 0.18em;
+  font-family: $font-mono;
+  font-weight: 500;
+  font-size: 0.42em;
+  letter-spacing: 0.26em;
   text-transform: uppercase;
   color: $verdigris;
   display: block;
-  margin-bottom: 0.4em;
+  margin-bottom: 0.9em;
+  // Samo zrak, bez crte — zračnije
+  border: none;
 }
 
-// — Naslovna i dijelne (section) stranice —
+// ══════════════════════════════════════════════════════════════════
+//  NASLOVNA STRANICA — zračan editorial, gotovo bijela ploha
+// ══════════════════════════════════════════════════════════════════
+
+// Naslovna i dio-slideovi: NE više tamni gradijent. Ostaju na svijetloj
+// plohi za zračan, minimalan dojam — razlikuje ih tanka mono oznaka i
+// veliki tanki serif, ne tamna pozadina.
 .reveal .slide-background.title-slide,
-.reveal section.title-slide,
-.reveal section.dio-slide {
-  background: linear-gradient(155deg, $ink 0%, #241f1a 55%, $verdigris-deep 145%);
+.reveal section.title-slide {
+  background: $canvas;
 }
+
+// Dekorativni gliph na naslovnoj — diskretan, svijetli ochre
+#title-slide::after,
+.reveal section.title-slide::after {
+  content: "§";
+  position: absolute;
+  bottom: 1.6rem;
+  right: 2.2rem;
+  font-family: $font-serif;
+  font-style: italic;
+  font-size: 2.6rem;
+  color: rgba($ochre, 0.45);
+  line-height: 1;
+  pointer-events: none;
+}
+
 #title-slide, .reveal section.title-slide {
-  .title { font-family: $font-serif; color: $paper; font-weight: 600; font-size: 1.7em; line-height: 1.08; }
-  .subtitle { font-family: $font-serif; color: $ochre; font-style: italic; font-weight: 400; margin-top: 0.3em; }
-  .author, .quarto-title-author-name { color: $paper-soft; font-family: $font-sans; font-size: 0.7em; }
-  .date, .institute { color: $ink-mute; color: rgba($paper,.6); font-family: $font-mono; font-size: 0.6em; }
-  p, .quarto-title-authors { color: $paper-soft; }
+  // Veliki, tanki serif naslov — usklađen s h1.sc-hero-title (weight 400)
+  .title {
+    font-family: $font-serif;
+    color: $ink;
+    font-weight: 300;
+    font-size: clamp(1.9rem, 4.6vw + 0.5rem, 3.4rem);
+    line-height: 1.0;
+    letter-spacing: -0.028em;
+    text-wrap: balance;
+    margin-bottom: 0.45em;
+  }
+  // Podnaslov: tanki serif italik, ne ochre nego mute — diskretnije
+  .subtitle {
+    font-family: $font-serif;
+    color: $ink-mute;
+    font-style: italic;
+    font-weight: 300;
+    font-size: 1.0em;
+    margin-top: 0.3em;
+    margin-bottom: 1.1em;
+  }
+  // Autori: mono, tracked, diskretni
+  .author, .quarto-title-author-name {
+    color: $ink-mute;
+    font-family: $font-mono;
+    font-size: 0.5em;
+    letter-spacing: 0.1em;
+    font-weight: 400;
+    text-transform: uppercase;
+  }
+  .date, .institute {
+    color: $ink-mute;
+    font-family: $font-mono;
+    font-size: 0.5em;
+    letter-spacing: 0.08em;
+  }
+  p, .quarto-title-authors { color: $ink-mute; }
 }
 
-// Dijelni separator (## Naslov {.dio-slide})
+// ══════════════════════════════════════════════════════════════════
+//  DIO-SLIDE — sekcijski separator, svijetla ploha s tankom crtom
+// ══════════════════════════════════════════════════════════════════
+
+// Dio-slide više nije tamni blok ni tonirana ploha — ista pozadina kao
+// ostali slideovi. Razlikuje ga samo veliki tanki serif i mono kicker.
 .reveal section.dio-slide {
-  h1, h2, h3 { color: $paper; border: none; }
-  h2 { color: $paper; }
-  .section-label { color: $ochre; }
-  p, li { color: $paper-soft; }
-  strong { color: $paper; }
-}
+  h1, h2, h3 { color: $ink; border: none; }
+  h2 {
+    color: $ink;
+    border: none;
+    font-weight: 300;
+    font-size: 1.85em;
+    letter-spacing: -0.028em;
+    line-height: 1.02;
+  }
+  .section-label {
+    color: $ochre-deep;
+  }
+  p, li { color: $ink-soft; }
+  .lead { color: $ink; }
+  strong { color: $ink; }
 
-// — Slide-callout kutije (paralela knjiškim calloutima) —
-.reveal .cbox {
-  font-family: $font-sans;
-  border-radius: 6px;
-  padding: 0.55em 0.85em;
-  margin: 0.5em 0;
-  font-size: 0.84em;
-  border-left: 5px solid $ink-mute;
-  background: rgba($paper-soft, .6);
-  p, li { color: $ink-soft; margin-bottom: 0.25em; }
-  .cbox-label {
-    display: block; font-weight: 700; font-size: 0.72em;
-    letter-spacing: 0.1em; text-transform: uppercase; margin-bottom: 0.25em;
+  // Diskretni gliph
+  &::after {
+    content: "§";
+    position: absolute;
+    bottom: 1.6rem;
+    right: 2.2rem;
+    font-family: $font-serif;
+    font-style: italic;
+    font-size: 2.4rem;
+    color: rgba($ochre, 0.4);
+    line-height: 1;
+    pointer-events: none;
   }
 }
-.reveal .cbox.praksa   { border-left-color: $verdigris; background: rgba($verdigris,.09); }
-.reveal .cbox.praksa   .cbox-label { color: $verdigris-deep; }
-.reveal .cbox.empirija { border-left-color: $info; background: rgba($info,.08); }
+
+// ══════════════════════════════════════════════════════════════════
+//  CALLOUT KUTIJE — minimalno: tanka lijeva crta, bez ispune
+// ══════════════════════════════════════════════════════════════════
+
+.reveal .cbox {
+  font-family: $font-sans;
+  border-radius: 0;
+  padding: 0.15em 0 0.15em 0.95em;
+  margin: 0.7em 0;
+  font-size: 0.84em;
+  border-left: 2px solid $ink-mute;
+  background: none;
+  p, li { color: $ink-soft; margin-bottom: 0.25em; }
+  .cbox-label {
+    display: block; font-family: $font-mono; font-weight: 500; font-size: 0.62em;
+    letter-spacing: 0.16em; text-transform: uppercase; margin-bottom: 0.45em;
+    color: $ink-mute;
+  }
+}
+.reveal .cbox.praksa   { border-left-color: $verdigris; }
+.reveal .cbox.praksa   .cbox-label { color: $verdigris; }
+.reveal .cbox.empirija { border-left-color: $info; }
 .reveal .cbox.empirija .cbox-label { color: $info; }
-.reveal .cbox.vjezba   { border-left-color: $ochre-deep; background: rgba($ochre,.12); }
+.reveal .cbox.vjezba   { border-left-color: $ochre-deep; }
 .reveal .cbox.vjezba   .cbox-label { color: $ochre-deep; }
-.reveal .cbox.kljucno  { border-left-color: $oxblood; background: rgba($oxblood,.07); }
+.reveal .cbox.kljucno  { border-left-color: $oxblood; }
 .reveal .cbox.kljucno  .cbox-label { color: $oxblood; }
 
-// — Definicijska kutija —
+// ══════════════════════════════════════════════════════════════════
+//  DEFINICIJSKA KUTIJA — samo gornja crta, bez okvira ni ispune
+// ══════════════════════════════════════════════════════════════════
+
 .reveal .def {
   font-family: $font-serif;
-  border: 1px solid rgba($verdigris,.4);
-  border-top: 4px solid $verdigris;
-  border-radius: 4px;
-  background: rgba($paper-soft,.45);
-  padding: 0.6em 0.9em;
-  font-size: 0.92em;
+  border: none;
+  border-top: 1px solid $verdigris;
+  border-radius: 0;
+  background: none;
+  padding: 0.5em 0 0;
+  font-size: 0.95em;
+  font-weight: 300;
+  line-height: 1.4;
   color: $ink;
-  strong { color: $verdigris-deep; }
+  strong { color: $verdigris-deep; font-weight: 600; }
 }
 
-// — Velika tvrdnja / lead —
+// ══════════════════════════════════════════════════════════════════
+//  TIPOGRAFSKI AKCENTI
+// ══════════════════════════════════════════════════════════════════
+
+// .lead — veliki tanki serif lede (poput .sc-hero-lede, weight 300)
 .reveal .lead {
   font-family: $font-serif;
-  font-size: 1.25em;
-  line-height: 1.25;
+  font-size: 1.4em;
+  line-height: 1.32;
+  font-weight: 300;
   color: $ink;
+  text-wrap: balance;
+  letter-spacing: -0.012em;
+  margin-top: 0.3em;
 }
-.reveal .muted { color: $ink-mute; font-size: 0.8em; }
-.reveal .accent { color: $oxblood; font-weight: 600; }
 
-// — Formula highlight —
+.reveal .muted { color: $ink-mute; font-size: 0.78em; }
+
+// .accent — verdigris, ne oxblood (diskretnije, manje "vatreno")
+.reveal .accent { color: $verdigris-deep; font-weight: 600; }
+
+// ══════════════════════════════════════════════════════════════════
+//  FORMULA — centrirano, bez podloge, samo zrak
+// ══════════════════════════════════════════════════════════════════
+
 .reveal .formula {
   text-align: center;
-  font-size: 1.15em;
-  margin: 0.4em 0;
+  font-size: 1.2em;
+  margin: 0.7em 0;
   color: $ink;
+  background: none;
+  padding: 0.2em 0;
 }
 
-// — Mali izvor pod grafom —
+// ══════════════════════════════════════════════════════════════════
+//  MALI IZVOR POD GRAFOM
+// ══════════════════════════════════════════════════════════════════
+
 .reveal .izvor {
-  font-family: $font-sans; font-size: 0.55em; color: $ink-mute; margin-top: 0.3em;
+  font-family: $font-mono; font-size: 0.5em; color: $ink-mute;
+  margin-top: 0.35em; letter-spacing: 0.02em;
 }
 
-// — "Što isprobati" pomoć uz interaktiv —
+// ══════════════════════════════════════════════════════════════════
+//  "ŠTO ISPROBATI" — diskretna mono napomena
+// ══════════════════════════════════════════════════════════════════
+
 .reveal .isprobaj {
-  font-family: $font-sans; font-size: 0.7em; color: $ink-soft;
-  background: rgba($ochre,.10); border-radius: 5px; padding: 0.4em 0.7em; margin-top: 0.4em;
+  font-family: $font-sans; font-size: 0.68em; color: $ink-soft;
+  background: none; border-radius: 0; padding: 0.2em 0 0.2em 0.8em;
+  margin-top: 0.5em;
+  border-left: 2px solid rgba($ochre-deep, .5);
 }
 
-// — OJS / Inputs kontrole —
-.reveal form.inputs-form, .reveal .observablehq input { font-family: $font-sans; font-size: 0.7em; }
+// ══════════════════════════════════════════════════════════════════
+//  OJS / INPUTS KONTROLE
+// ══════════════════════════════════════════════════════════════════
+
+.reveal form.inputs-form, .reveal .observablehq input { font-family: $font-mono; font-size: 0.68em; }
 .reveal .ojs-in-a-box-waiting-for-module-import { min-height: 0; }
 
-// — Plan / agenda numerirana mreža —
-// ::: {.agenda} omota <ol> u <div class="agenda">, pa ciljamo unutarnji ol/li.
+// ══════════════════════════════════════════════════════════════════
+//  PLAN / AGENDA — numerirana mono lista
+// ══════════════════════════════════════════════════════════════════
+
 .reveal .agenda ol {
   list-style: none;
   margin-left: 0;
   counter-reset: ag;
 }
 .reveal .agenda li {
-  counter-increment: ag; position: relative; padding-left: 2.4em; margin-bottom: 0.6em;
+  counter-increment: ag; position: relative; padding-left: 2.6em; margin-bottom: 0.7em;
 }
 .reveal .agenda li::before {
   content: counter(ag, decimal-leading-zero);
-  position: absolute; left: 0; top: 0.08em;
-  font-family: $font-mono; font-size: 0.72em; font-weight: 600;
-  color: $ochre-deep; background: rgba($ochre,.16);
-  border-radius: 4px; padding: 0.08em 0.4em; line-height: 1.3;
+  position: absolute; left: 0; top: 0.12em;
+  font-family: $font-mono; font-size: 0.7em; font-weight: 500;
+  color: $ochre-deep; background: none;
+  border: none; padding: 0; line-height: 1.3;
+  letter-spacing: 0.04em;
 }
+// Poništi globalni ul ::before unutar agende (agenda koristi ol)
+.reveal .agenda li::after { content: none; }
 
-// — Dvostupčani razmak —
-.reveal .columns { gap: 1.1em; }
+// ══════════════════════════════════════════════════════════════════
+//  LAYOUT
+// ══════════════════════════════════════════════════════════════════
 
-// — Footer brand —
+.reveal .columns { gap: 1.4em; }
+
+// ══════════════════════════════════════════════════════════════════
+//  FOOTER — tanak mono strip
+// ══════════════════════════════════════════════════════════════════
+
 .reveal .footer {
-  font-family: $font-sans; font-size: 0.5em; color: $ink-mute;
+  font-family: $font-mono;
+  font-size: 0.46em;
+  color: $ink-mute;
+  letter-spacing: 0.04em;
+  border-top: none;
+  opacity: 0.7;
 }
