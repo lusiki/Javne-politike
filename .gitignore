@@ -19,6 +19,11 @@ chapters/*_files/
 # Root-level render spillover — canonical output is docs/
 /*.html
 /site_libs/
+/*.tex
+/*.aux
+/*.log
+/*.toc
+/*.pdf
 
 ### PDF profile spurious output — only the .pdf is canonical ###
 # `quarto render --profile pdf` also writes HTML into pdf/ because the
