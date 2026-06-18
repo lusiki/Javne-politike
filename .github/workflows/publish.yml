@@ -52,10 +52,36 @@ jobs:
       - name: Render HTML book
         run: quarto render
 
-      - name: Render PDF (separate profile)
+      - name: Render PDF (separate profile, references-only appendices)
         id: pdf
-        run: quarto render --profile pdf
         continue-on-error: true
+        run: |
+          set -e
+          # The PDF must carry only references.qmd as an appendix, while the HTML
+          # site keeps the full set. Quarto profiles MERGE appendix arrays, so
+          # _quarto-pdf.yml cannot shrink the list — we temporarily rewrite the
+          # book-level `  appendices:` block in _quarto.yml to references-only for
+          # the render, then always restore it. Mirrors scripts/render-book-pdf.ps1
+          # (which is Windows-only). See that script's header for the rationale.
+          cp _quarto.yml _quarto.yml.cibak
+          trap 'mv -f _quarto.yml.cibak _quarto.yml' EXIT
+          awk '
+            /^  appendices:[[:space:]]*$/ {
+              print "  appendices:"; print "    - references.qmd"; print "";
+              skip=1; next
+            }
+            skip==1 {
+              # consume the old block body: deeper-indented items, "  #" comments,
+              # and blank lines; stop at the next line that begins a new key.
+              if ($0 ~ /^    / || $0 ~ /^  #/ || $0 ~ /^[[:space:]]*$/) next;
+              skip=0
+            }
+            { print }
+          ' _quarto.yml.cibak > _quarto.yml
+          # Sanity: the swap must have reduced appendices and kept the rest.
+          grep -q "^  appendices:" _quarto.yml
+          grep -q "^bibliography:" _quarto.yml
+          quarto render --profile pdf
 
       - name: Copy freshly-built PDF into docs for Pages download
         if: steps.pdf.outcome == 'success'
