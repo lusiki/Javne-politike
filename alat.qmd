@@ -13,8 +13,8 @@ format:
 ```{=html}
 <header class="vd-hub-head">
   <span class="vd-hub-kicker">Alat · igralište</span>
-  <h1 class="vd-hub-title">Teorija koju isprobate rukama</h1>
-  <p class="vd-hub-lede">Interaktivni kalkulatori, simulatori i vizualizacije koji pretvaraju koncepte iz knjige u nešto što sami pomičete i mijenjate. Sve je u pripremi — evo što stiže.</p>
+  <h1 class="vd-hub-title">Teorija koju možete isprobati u praksi</h1>
+  <p class="vd-hub-lede">Interaktivni kalkulatori, simulatori i vizualizacije koji pretvaraju koncepte iz knjige u nešto što sami pomičete i mijenjate. Sve je u pripremi, evo što stiže.</p>
 </header>
 
 <section class="vd-hub-part vd-dio-2" aria-label="Planirani alati">

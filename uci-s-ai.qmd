@@ -45,13 +45,13 @@ format:
 
 <div class="ai-sec-head">
   <span class="section-label">№ I · JEDNO POGLAVLJE</span>
-  <h2>Radni konj</h2>
+  <h2>Pojedinačna poglavlja</h2>
 </div>
 ```
 
-Poglavlje je dovoljno malo da stane u svaki asistent i daje najtočnije odgovore jer je
+Poglavlje je dovoljno malo da stane u svaki standardni (Gemini, ChatGPT ili Claude) chat i daje točne odgovore jer je
 tekst usko vezan uz vaše pitanje. Odaberite poglavlje pa preuzmite tekst ili ga otvorite
-u asistentu.
+u AI chatu.
 
 ```{ojs}
 //| echo: false

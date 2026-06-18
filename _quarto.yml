@@ -54,8 +54,6 @@ book:
         href: vodic.html
       - text: "Pojmovnik"
         href: pojmovnik.html
-      - text: "Resursi"
-        href: resursi.html
       - text: "Alat"
         href: alat.html
       - text: "Podaci"
@@ -70,6 +68,10 @@ book:
             href: silabus.html
           - text: "Tjedni raspored"
             href: raspored.html
+      - text: "Resursi"
+        href: resursi.html
+      - text: "Upute"
+        href: upute.html
     right: []
 
   search:

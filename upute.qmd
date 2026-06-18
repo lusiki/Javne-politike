@@ -1,0 +1,486 @@
+---
+title: "Upute"
+toc: false
+number-sections: false
+lang: hr-HR
+comments: false
+format:
+  html:
+    page-layout: full
+    body-classes: upute-page
+    include-in-header:
+      text: |
+        <style>
+          /* ── Layout shell ─────────────────────────────────────────── */
+          #quarto-sidebar { display: none !important; }
+          #quarto-margin-sidebar { display: none !important; }
+          .sidebar.sidebar-navigation { display: none !important; }
+          .page-columns { display: block !important; }
+          main.content, #quarto-document-content {
+            max-width: 1100px !important;
+            margin-left: auto !important;
+            margin-right: auto !important;
+            padding-left: 1.5rem !important;
+            padding-right: 1.5rem !important;
+            grid-column: 1 / -1 !important;
+          }
+
+          /* ── Hero ─────────────────────────────────────────────────── */
+          .up-hero {
+            border-bottom: 2px solid rgba(28,25,22,.14);
+            padding: 3.5rem 0 2.5rem;
+            margin-bottom: 3rem;
+          }
+          .up-kicker {
+            display: inline-block;
+            font-family: "Public Sans", system-ui, sans-serif;
+            font-size: .72rem;
+            font-weight: 600;
+            letter-spacing: .12em;
+            text-transform: uppercase;
+            color: #4A6B5C;
+            margin-bottom: .9rem;
+          }
+          .up-title {
+            font-family: "Newsreader", Georgia, serif;
+            font-size: clamp(2rem, 5vw, 3.2rem);
+            font-weight: 500;
+            line-height: 1.15;
+            color: #1C1916;
+            margin: 0 0 1.1rem;
+          }
+          .up-lede {
+            font-family: "Public Sans", system-ui, sans-serif;
+            font-size: 1.08rem;
+            line-height: 1.65;
+            color: #6B6357;
+            max-width: 68ch;
+            margin: 0;
+          }
+
+          /* ── Section headings ─────────────────────────────────────── */
+          .up-section {
+            margin-bottom: 3rem;
+          }
+          .up-section-head {
+            display: flex;
+            align-items: baseline;
+            gap: 1rem;
+            border-bottom: 1px solid rgba(28,25,22,.10);
+            padding-bottom: .5rem;
+            margin-bottom: 1.5rem;
+          }
+          .up-section-num {
+            font-family: "Public Sans", system-ui, sans-serif;
+            font-size: .72rem;
+            font-weight: 700;
+            letter-spacing: .14em;
+            text-transform: uppercase;
+            color: #4A6B5C;
+            flex-shrink: 0;
+          }
+          .up-section-title {
+            font-family: "Newsreader", Georgia, serif;
+            font-size: 1.45rem;
+            font-weight: 500;
+            color: #1C1916;
+            margin: 0;
+          }
+
+          /* ── Tab grid ─────────────────────────────────────────────── */
+          .up-tab-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
+            gap: 1.1rem;
+            margin-bottom: 2rem;
+          }
+          .up-tab-card {
+            background: #F2EDE3;
+            border: 1px solid rgba(28,25,22,.10);
+            border-left: 3px solid #4A6B5C;
+            border-radius: 3px;
+            padding: 1.2rem 1.3rem;
+            text-decoration: none;
+            color: inherit;
+            transition: border-left-color .15s, box-shadow .15s;
+          }
+          .up-tab-card:hover {
+            border-left-color: #C8985E;
+            box-shadow: 0 2px 8px rgba(28,25,22,.08);
+            text-decoration: none;
+            color: inherit;
+          }
+          .up-tab-name {
+            display: block;
+            font-family: "Public Sans", system-ui, sans-serif;
+            font-size: .82rem;
+            font-weight: 700;
+            letter-spacing: .08em;
+            text-transform: uppercase;
+            color: #4A6B5C;
+            margin-bottom: .35rem;
+          }
+          .up-tab-desc {
+            display: block;
+            font-family: "Newsreader", Georgia, serif;
+            font-size: 1rem;
+            line-height: 1.5;
+            color: #1C1916;
+            margin-bottom: .5rem;
+          }
+          .up-tab-how {
+            display: block;
+            font-family: "Public Sans", system-ui, sans-serif;
+            font-size: .83rem;
+            line-height: 1.5;
+            color: #6B6357;
+          }
+
+          /* ── Spotlight boxes (Vodič, Pojmovnik, AI) ──────────────── */
+          .up-spotlight {
+            background: #EAE3D4;
+            border: 1px solid rgba(28,25,22,.12);
+            border-radius: 4px;
+            padding: 1.8rem 2rem;
+            margin-bottom: 1.5rem;
+          }
+          .up-spotlight + .up-spotlight {
+            margin-top: 1.1rem;
+          }
+          .up-spotlight-label {
+            display: inline-block;
+            font-family: "Public Sans", system-ui, sans-serif;
+            font-size: .72rem;
+            font-weight: 700;
+            letter-spacing: .12em;
+            text-transform: uppercase;
+            color: #4A6B5C;
+            margin-bottom: .6rem;
+          }
+          .up-spotlight h3 {
+            font-family: "Newsreader", Georgia, serif;
+            font-size: 1.25rem;
+            font-weight: 500;
+            color: #1C1916;
+            margin: 0 0 .7rem;
+          }
+          .up-spotlight p {
+            font-family: "Public Sans", system-ui, sans-serif;
+            font-size: .93rem;
+            line-height: 1.65;
+            color: #6B6357;
+            margin: 0;
+          }
+          .up-spotlight ul {
+            font-family: "Public Sans", system-ui, sans-serif;
+            font-size: .93rem;
+            line-height: 1.7;
+            color: #6B6357;
+            margin: .6rem 0 0 0;
+            padding-left: 1.3rem;
+          }
+          .up-spotlight a {
+            color: #4A6B5C;
+          }
+
+          /* ── Accent rule ──────────────────────────────────────────── */
+          .up-rule {
+            display: flex;
+            align-items: center;
+            gap: .8rem;
+            color: rgba(28,25,22,.18);
+            font-family: "Public Sans", system-ui, sans-serif;
+            font-size: .8rem;
+            letter-spacing: .08em;
+            margin: 2.5rem 0;
+          }
+          .up-rule::before, .up-rule::after {
+            content: "";
+            flex: 1;
+            height: 1px;
+            background: rgba(28,25,22,.12);
+          }
+
+          /* ── Networked learning callout ───────────────────────────── */
+          .up-network-box {
+            border: 2px solid #4A6B5C;
+            border-radius: 4px;
+            padding: 1.8rem 2rem;
+            margin-bottom: 2rem;
+            background: rgba(74,107,92,.04);
+          }
+          .up-network-box .up-spotlight-label { color: #4A6B5C; }
+          .up-network-box h3 {
+            font-family: "Newsreader", Georgia, serif;
+            font-size: 1.25rem;
+            font-weight: 500;
+            color: #1C1916;
+            margin: 0 0 .7rem;
+          }
+          .up-network-box p, .up-network-box ul {
+            font-family: "Public Sans", system-ui, sans-serif;
+            font-size: .93rem;
+            line-height: 1.7;
+            color: #6B6357;
+          }
+          .up-network-box ul {
+            margin: .5rem 0 0;
+            padding-left: 1.3rem;
+          }
+
+          /* ── Dark mode ────────────────────────────────────────────── */
+          .quarto-dark .up-hero { border-bottom-color: rgba(242,237,227,.12); }
+          .quarto-dark .up-title { color: #F2EDE3; }
+          .quarto-dark .up-lede { color: #9C9382; }
+          .quarto-dark .up-section-head { border-bottom-color: rgba(242,237,227,.10); }
+          .quarto-dark .up-section-title { color: #F2EDE3; }
+          .quarto-dark .up-tab-card { background: rgba(28,25,22,.4); border-color: rgba(242,237,227,.10); }
+          .quarto-dark .up-tab-desc { color: #F2EDE3; }
+          .quarto-dark .up-tab-how { color: #9C9382; }
+          .quarto-dark .up-spotlight { background: rgba(28,25,22,.5); border-color: rgba(242,237,227,.10); }
+          .quarto-dark .up-spotlight h3 { color: #F2EDE3; }
+          .quarto-dark .up-spotlight p, .quarto-dark .up-spotlight ul { color: #9C9382; }
+          .quarto-dark .up-network-box { background: rgba(74,107,92,.08); border-color: #4A6B5C; }
+          .quarto-dark .up-network-box h3 { color: #F2EDE3; }
+          .quarto-dark .up-network-box p, .quarto-dark .up-network-box ul { color: #9C9382; }
+        </style>
+---
+
+```{=html}
+<header class="up-hero">
+  <span class="up-kicker">Upute za korištenje</span>
+  <h1 class="up-title">Što ova knjiga može i kako je koristiti</h1>
+  <p class="up-lede">Ovo nije obični PDF koji se čita od prve do zadnje stranice. Knjiga je interaktivna platforma za učenje — s grafovima koji reagiraju na vaš unos, pojmovnikom koji prikazuje veze između ideja, vodičem koji sažima svako poglavlje u jednu mentalnu mapu, i alatom koji vas spaja s umjetnom inteligencijom. Ova stranica objašnjava što sve postoji i kako to koristiti.</p>
+</header>
+
+<!-- ── 1. Pregled tabova ────────────────────────────────────────────── -->
+<section class="up-section">
+  <div class="up-section-head">
+    <span class="up-section-num">§ 01</span>
+    <h2 class="up-section-title">Pregled stranica i što se na svakoj nalazi</h2>
+  </div>
+
+  <div class="up-tab-grid">
+
+    <a class="up-tab-card" href="chapters/00-uvod.html">
+      <span class="up-tab-name">Knjiga</span>
+      <span class="up-tab-desc">Cjeloviti interaktivni udžbenik: 21 poglavlje u 5 dijelova, od uloge države do reformi javnog sektora.</span>
+      <span class="up-tab-how">Koristite lijevu traku (sadržaj) ili navigacijske strelice na dnu svake stranice. Grafovi reagiraju na promjenu parametara — isprobajte klizače i padajuće izbornike.</span>
+    </a>
+
+    <a class="up-tab-card" href="vodic.html">
+      <span class="up-tab-name">Vodič</span>
+      <span class="up-tab-desc">22 vizualne mentalne mape — po jedna za svako poglavlje. Svaka se čita za dvije minute.</span>
+      <span class="up-tab-how">Otvorite hub, odaberite poglavlje koje vas zanima i pročitajte mapu. Idealno za ponavljanje ili brzi pregled prije ispita.</span>
+    </a>
+
+    <a class="up-tab-card" href="pojmovnik.html">
+      <span class="up-tab-name">Pojmovnik</span>
+      <span class="up-tab-desc">Interaktivni mrežni grafikon svih ključnih pojmova knjige i veza između njih.</span>
+      <span class="up-tab-how">Kliknite pojam da vidite definiciju i koje je pojmove s njim povezane. Koristite pretragu za direktno pronalaženje. Prikaz mreže ili liste prepustite vlastitom afinitetu.</span>
+    </a>
+
+    <a class="up-tab-card" href="alat.html">
+      <span class="up-tab-name">Alat</span>
+      <span class="up-tab-desc">Pregled programskih alata, baza podataka i softvera koji se koriste u istraživanju i analizi javnih politika.</span>
+      <span class="up-tab-how">Pregledajte po kategorijama. Svaki alat ima kratki opis i poveznicu. Posebno korisno za studente koji žele početi s vlastitim analizama podataka.</span>
+    </a>
+
+    <a class="up-tab-card" href="podaci.html">
+      <span class="up-tab-name">Podaci</span>
+      <span class="up-tab-desc">Baza podataka iz Atlas projekta — ekonomski i fiskalni pokazatelji za Hrvatsku i usporedne zemlje.</span>
+      <span class="up-tab-how">Filtrirajte po varijabli ili zemlji. Podaci su preuzimljivi za daljnju upotrebu. Grafovi u knjizi koriste isti dataset.</span>
+    </a>
+
+    <a class="up-tab-card" href="uci-s-ai.html">
+      <span class="up-tab-name">Uči uz AI</span>
+      <span class="up-tab-desc">Čiste tekstualne verzije svakog poglavlja prilagođene za ChatGPT, Claude, Gemini i ostale AI asistente.</span>
+      <span class="up-tab-how">Preuzmite <code>.md</code> datoteku poglavlja, priložite je u razgovor s AI asistentom i postavljajte pitanja. Detaljne upute u odjeljku § 04 ispod.</span>
+    </a>
+
+    <a class="up-tab-card" href="predavanja.html">
+      <span class="up-tab-name">Nastava → Predavanja</span>
+      <span class="up-tab-desc">Reveal.js prezentacijski slajdovi koji prate knjižne cjeline, s interaktivnim grafovima.</span>
+      <span class="up-tab-how">Kliknite karticu predavanja da otvorite slajdove u novoj kartici. Tipke F (full screen) i S (speaker notes) aktiviraju dodatne načine prikaza.</span>
+    </a>
+
+    <a class="up-tab-card" href="silabus.html">
+      <span class="up-tab-name">Nastava → Silabus</span>
+      <span class="up-tab-desc">Cjeloviti silabus kolegija Javne politike (Odjel za sociologiju), uključujući literaturu i načine ocjenjivanja.</span>
+      <span class="up-tab-how">Referentni dokument za studente kolegija. Svaki tjedan je połączon s odgovarajućim poglavljima knjige.</span>
+    </a>
+
+    <a class="up-tab-card" href="raspored.html">
+      <span class="up-tab-name">Nastava → Tjedni raspored</span>
+      <span class="up-tab-desc">Pregled statusa svih nastavnih tjedana — koje su cjeline obrađene, koje su uskoro.</span>
+      <span class="up-tab-how">Pratite tjedan iz kojeg ste — status znakovi (dostupno / uskoro) pomažu da znate gdje se nalazite u kolegiju.</span>
+    </a>
+
+    <a class="up-tab-card" href="resursi.html">
+      <span class="up-tab-name">Resursi</span>
+      <span class="up-tab-desc">Kurirana zbirka linkova: HR institucije, EU tijela, akademski časopisi, baze podataka i relevantni mediji.</span>
+      <span class="up-tab-how">Koristite kao polazišnu točku za istraživanje. Organizirano po kategorijama — od službenih izvora do akademske literature.</span>
+    </a>
+
+  </div>
+</section>
+
+<div class="up-rule">§</div>
+
+<!-- ── 2. Vodič i mrežno učenje ────────────────────────────────────── -->
+<section class="up-section">
+  <div class="up-section-head">
+    <span class="up-section-num">§ 02</span>
+    <h2 class="up-section-title">Vodič — učenje kroz mreže pojmova</h2>
+  </div>
+
+  <div class="up-network-box">
+    <span class="up-spotlight-label">Drugačiji pristup učenju</span>
+    <h3>Zašto mentalne mape, a ne linearni sažetci</h3>
+    <p>U doba AI alata, reprodukcija gradiva postaje trivijalna — asistent može u sekundi prepričati bilo koje poglavlje. Ono što ostaje vrijedno jest razumijevanje <em>veza</em>: zašto eksternalija vodi do alokacijskog problema, kako Arrowov teorem ograničava svaki glasački sustav, zašto incentivni problemi u birokraciji i u tržištu imaju strukturno istu formu.</p>
+    <p>Vodič je izgrađen prema logici <strong>mrežnog učenja</strong> — svaka mentalna mapa prikazuje poglavlje kao skup čvorova (pojmova) i bridova (uzročnih, analognih ili kontrastnih veza). Umjesto da pamtite definicije, trenirate prepoznavanje obrazaca koji se ponavljaju kroz cijelu materiju.</p>
+    <ul>
+      <li>Svaka mentalna mapa čita se <strong>od rubova prema sredini</strong> — periferija su primjeri, središte je mehanizam koji ih ujedinjuje.</li>
+      <li>Iste pojmove naći ćete u više mapa — to nije greška, već namjerno. Repetitivno susretanje pojma u različitim kontekstima gradi trajno razumijevanje.</li>
+      <li>Mape su kompresija, ne supstitut — vraćajte se u poglavlje kad vam kontekst zatreba.</li>
+    </ul>
+  </div>
+
+  <div class="up-spotlight">
+    <span class="up-spotlight-label">Kako koristiti Vodič</span>
+    <h3>Tri načina rada</h3>
+    <ul>
+      <li><strong>Linearno:</strong> Pratite redosljed poglavlja (01 → 22). Svaka mapa nadovezuje se na prethodnu i uvodi pojmove koji će biti ključni u sljedećoj.</li>
+      <li><strong>Tematski:</strong> Otvorite mapu poglavlja koje upravo čitate kao dopunu — vizualni pregled pomaže da se ne izgubite u dugačkim odsjeccima.</li>
+      <li><strong>Ponavljanje:</strong> Uoči ispita prođite sve mape bez da otvarate knjige. Ako neka veza nije jasna, to je signal gdje trebate zuriti natrag u tekst.</li>
+    </ul>
+  </div>
+</section>
+
+<div class="up-rule">§</div>
+
+<!-- ── 3. Pojmovnik ────────────────────────────────────────────────── -->
+<section class="up-section">
+  <div class="up-section-head">
+    <span class="up-section-num">§ 03</span>
+    <h2 class="up-section-title">Pojmovnik — kako je nastao i kako ga čitati</h2>
+  </div>
+
+  <div class="up-spotlight">
+    <span class="up-spotlight-label">Metodologija</span>
+    <h3>Od teksta do grafa pojmova</h3>
+    <p>Pojmovnik nije klasični abecedni rječnik — to je <strong>grafikon znanja</strong> (knowledge graph) stvoren iz teksta knjige. Svaki čvor je pojam, svaki brid je semantička veza identificirana iz načina na koji se pojmovi zajednički pojavljuju i upućuju jedan na drugi kroz poglavlja.</p>
+    <ul>
+      <li><strong>Čvorovi</strong> su ključni pojmovi knjige — teorijski koncepti, ekonomski termini, institucije i mehanizmi.</li>
+      <li><strong>Bridovi</strong> označavaju vezu: uzročno-posljedičnu ("vodi do"), kontrastnu ("za razliku od") ili analognu ("slično kao").</li>
+      <li><strong>Boja i veličina čvora</strong> odražavaju centralnost pojma — što više veza, to je pojam centraliji u mreži.</li>
+    </ul>
+    <p>Graf je izgrađen iz <code>data/concept-graph.json</code> — strukturiranog dataseta koji je nastao analizom cijelog teksta knjige. Grafikon se renderira u pregledniku putem Observable JS, što omogućuje interaktivno istraživanje.</p>
+  </div>
+
+  <div class="up-spotlight">
+    <span class="up-spotlight-label">Navigacija</span>
+    <h3>Interakcija s grafom</h3>
+    <ul>
+      <li>Kliknite pojam da vidite njegovu definiciju i sve pojmove s kojima je izravno povezan.</li>
+      <li>Povucite čvorove za preuređivanje pogleda — fizikalna simulacija ga drži na okupu.</li>
+      <li>Koristite polje za pretragu za direktno pronalaženje pojma po nazivu.</li>
+      <li>Prebacite se između mrežnog prikaza i popisa — lista je korisnija za abecedno traženje.</li>
+    </ul>
+  </div>
+</section>
+
+<div class="up-rule">§</div>
+
+<!-- ── 4. Učenje uz AI ─────────────────────────────────────────────── -->
+<section class="up-section">
+  <div class="up-section-head">
+    <span class="up-section-num">§ 04</span>
+    <h2 class="up-section-title">Kako učiti uz AI asistenta</h2>
+  </div>
+
+  <div class="up-spotlight">
+    <span class="up-spotlight-label">Metoda 1 — Preuzmi i priloži</span>
+    <h3>Najpouzdaniji način</h3>
+    <p>Idite na <a href="uci-s-ai.html">Uči uz AI</a>, odaberite poglavlje i preuzmite <code>.md</code> datoteku. Priložite je u razgovor s AI asistentom (ChatGPT, Claude, Gemini) i zatim postavljajte pitanja. Asistent ne treba pristup internetu jer cijeli tekst već ima u kontekstu razgovora.</p>
+    <ul>
+      <li>Radi u svim asistentima, uključujući lokalne (Ollama).</li>
+      <li>Datoteke su čiste Markdown — bez suvišnih HTML tagova, grafova ili koda koji asistent ne treba.</li>
+      <li>Jedno poglavlje stane u standardni kontekstni prozor (128k tokena).</li>
+    </ul>
+  </div>
+
+  <div class="up-spotlight">
+    <span class="up-spotlight-label">Metoda 2 — Otvori u asistentu</span>
+    <h3>Jedan klik do razgovora</h3>
+    <p>Svako poglavlje ima gumbe koji jednim klikom otvaraju Claude ili ChatGPT s već upisanim uvodnim pitanjem i poveznicom na tekst. Asistent treba pristup internetu da dohvati stranicu — koristite kad ste online i ne želite ručno preuzimati datoteke.</p>
+  </div>
+
+  <div class="up-spotlight">
+    <span class="up-spotlight-label">Savjeti za razgovor</span>
+    <h3>Kako izvući najviše iz AI asistenta</h3>
+    <ul>
+      <li><strong>Pitajte za mehanizam, ne za definiciju:</strong> Umjesto "što je eksternalija?", pitajte "zašto eksternalija dovodi do neoptimalne alokacije — korak po korak". Definiciju asistent može izmisliti; mehanizam iz teksta mora biti točan.</li>
+      <li><strong>Tražite primjer koji nije u tekstu:</strong> "Navedi primjer eksternalije koji nije u poglavlju" — testirate razumijevanje, a ne reprodukciju.</li>
+      <li><strong>Provjerite odgovor u tekstu:</strong> AI asistenti povremeno griješe. Uvijek provjerite ključne tvrdnje u izvornom poglavlju.</li>
+      <li><strong>Koristite za vjezbu:</strong> "Postavi mi 5 pitanja o Arrowovom teoremu kojima bih mogao/la biti testiran/a" — dobar način za pripremu ispita.</li>
+      <li><strong>Cijela knjiga odjednom:</strong> Na <a href="uci-s-ai.html">Uči uz AI</a> dostupna je i kompletna <code>llms-full.txt</code> datoteka s cijelom knjigom — za modele s većim kontekstom (Claude Opus, GPT-4o, Gemini Pro).</li>
+    </ul>
+  </div>
+</section>
+
+<div class="up-rule">§</div>
+
+<!-- ── 5. Interaktivni elementi ────────────────────────────────────── -->
+<section class="up-section">
+  <div class="up-section-head">
+    <span class="up-section-num">§ 05</span>
+    <h2 class="up-section-title">Interaktivni elementi u knjizi</h2>
+  </div>
+
+  <div class="up-spotlight">
+    <span class="up-spotlight-label">Observable JS grafovi</span>
+    <h3>Grafovi koji reagiraju na vaš unos</h3>
+    <p>Mnoga poglavlja sadrže interaktivne grafove koji se mijenjaju dok pomičete klizač ili mijenjate parametre. To nisu statične slike — svaka promjena parametra osvježava grafikon u stvarnom vremenu. Primjeri:</p>
+    <ul>
+      <li>Laffer-ova krivulja (poglavlje 05) — pomičite stopu poreza i pratite prihode.</li>
+      <li>Glasačke funkcije (poglavlje 07) — mijenjajte broj birača i promatrajte promjenu ishoda.</li>
+      <li>Krivulje birokracije (poglavlje 10) — uspoređujte javni i privatni sektor pri različitim pretpostavkama.</li>
+    </ul>
+    <p>Kod iza grafova uvijek je vidljiv — kliknite "Prikaži kod" da vidite izvorni R ili OJS kod.</p>
+  </div>
+
+  <div class="up-spotlight">
+    <span class="up-spotlight-label">Komentari i anotacije</span>
+    <h3>Hypothesis — bilješke uz tekst</h3>
+    <p>Svako poglavlje ima ugrađen Hypothesis — alat za anotiranje teksta u pregledniku. Možete označiti odlomak i dodati javnu ili privatnu bilješku. Korisno za:</p>
+    <ul>
+      <li>Osobne bilješke uz tekst koje se sinkroniziraju između uređaja.</li>
+      <li>Grupne diskusije — studenti koji dijele isti Hypothesis tim mogu videti međusobne anotacije.</li>
+      <li>Označavanje nejasnih mjesta — bilješka postaje podsjetnik da se vratite i razjasnite.</li>
+    </ul>
+  </div>
+</section>
+
+<div class="up-rule">§</div>
+
+<!-- ── 6. Tehnički detalji ─────────────────────────────────────────── -->
+<section class="up-section">
+  <div class="up-section-head">
+    <span class="up-section-num">§ 06</span>
+    <h2 class="up-section-title">Ostalo</h2>
+  </div>
+
+  <div class="up-spotlight">
+    <span class="up-spotlight-label">PDF verzija</span>
+    <h3>Preuzimanje knjige</h3>
+    <p>PDF verzija cijele knjige dostupna je putem ikone u lijevoj traci (📄). PDF je radna verzija koja se ažurira s glavnim tekstom — nije namijenjen tiskanoj distribuciji nego offline čitanju. Prirucnik (Priručnik za građane) dostupan je kao zasebni A5 dokument.</p>
+  </div>
+
+  <div class="up-spotlight">
+    <span class="up-spotlight-label">Prijavljivanje grešaka</span>
+    <h3>Pronašli ste pogrešku?</h3>
+    <p>Otvorite issue na <a href="https://github.com/lusiki/Javne-politike" target="_blank" rel="noopener">GitHub repozitoriju knjige</a>. Bugovi u kodu, tipfeleri u tekstu ili propuštene reference — sve je dobrodošlo. Knjiga je živi dokument koji se ažurira.</p>
+  </div>
+</section>
+```
