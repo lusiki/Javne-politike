@@ -250,7 +250,7 @@ format:
 <header class="up-hero">
   <span class="up-kicker">Upute za korištenje</span>
   <h1 class="up-title">Što ova knjiga može i kako je koristiti</h1>
-  <p class="up-lede">Ovo nije obični PDF koji se čita od prve do zadnje stranice. Knjiga je interaktivna platforma za učenje — s grafovima koji reagiraju na vaš unos, pojmovnikom koji prikazuje veze između ideja, vodičem koji sažima svako poglavlje u jednu mentalnu mapu, i alatom koji vas spaja s umjetnom inteligencijom. Ova stranica objašnjava što sve postoji i kako to koristiti.</p>
+  <p class="up-lede">Ovo nije obični PDF koji se čita od prve do zadnje stranice. Knjiga je interaktivna platforma za učenje u kojoj grafovi reagiraju na unos parametara, pojmovnik prikazuje veze između ideja, vodič sažima svako poglavlje u jednu mentalnu mapu, a posebna stranica spaja čitatelja s alatima umjetne inteligencije. Ova stranica objašnjava što sve postoji i kako to koristiti.</p>
 </header>
 
 <!-- ── 1. Pregled tabova ────────────────────────────────────────────── -->
@@ -264,13 +264,13 @@ format:
 
     <a class="up-tab-card" href="chapters/00-uvod.html">
       <span class="up-tab-name">Knjiga</span>
-      <span class="up-tab-desc">Cjeloviti interaktivni udžbenik: 21 poglavlje u 5 dijelova, od uloge države do reformi javnog sektora.</span>
-      <span class="up-tab-how">Koristite lijevu traku (sadržaj) ili navigacijske strelice na dnu svake stranice. Grafovi reagiraju na promjenu parametara — isprobajte klizače i padajuće izbornike.</span>
+      <span class="up-tab-desc">Cjeloviti interaktivni udžbenik s 21 poglavljem u 5 dijelova, od uloge države do reformi javnog sektora.</span>
+      <span class="up-tab-how">Koristite lijevu traku (sadržaj) ili navigacijske strelice na dnu svake stranice. Grafovi reagiraju na promjenu parametara; isprobajte klizače i padajuće izbornike.</span>
     </a>
 
     <a class="up-tab-card" href="vodic.html">
       <span class="up-tab-name">Vodič</span>
-      <span class="up-tab-desc">22 vizualne mentalne mape — po jedna za svako poglavlje. Svaka se čita za dvije minute.</span>
+      <span class="up-tab-desc">22 vizualne mentalne mape, po jedna za svako poglavlje. Svaka se čita za dvije minute.</span>
       <span class="up-tab-how">Otvorite hub, odaberite poglavlje koje vas zanima i pročitajte mapu. Idealno za ponavljanje ili brzi pregled prije ispita.</span>
     </a>
 
@@ -288,7 +288,7 @@ format:
 
     <a class="up-tab-card" href="podaci.html">
       <span class="up-tab-name">Podaci</span>
-      <span class="up-tab-desc">Baza podataka iz Atlas projekta — ekonomski i fiskalni pokazatelji za Hrvatsku i usporedne zemlje.</span>
+      <span class="up-tab-desc">Baza podataka iz Atlas projekta s ekonomskim i fiskalnim pokazateljima za Hrvatsku i usporedne zemlje.</span>
       <span class="up-tab-how">Filtrirajte po varijabli ili zemlji. Podaci su preuzimljivi za daljnju upotrebu. Grafovi u knjizi koriste isti dataset.</span>
     </a>
 
@@ -307,19 +307,19 @@ format:
     <a class="up-tab-card" href="silabus.html">
       <span class="up-tab-name">Nastava → Silabus</span>
       <span class="up-tab-desc">Cjeloviti silabus kolegija Javne politike (Odjel za sociologiju), uključujući literaturu i načine ocjenjivanja.</span>
-      <span class="up-tab-how">Referentni dokument za studente kolegija. Svaki tjedan je połączon s odgovarajućim poglavljima knjige.</span>
+      <span class="up-tab-how">Referentni dokument za studente kolegija. Svaki tjedan je povezan s odgovarajućim poglavljima knjige.</span>
     </a>
 
     <a class="up-tab-card" href="raspored.html">
       <span class="up-tab-name">Nastava → Tjedni raspored</span>
-      <span class="up-tab-desc">Pregled statusa svih nastavnih tjedana — koje su cjeline obrađene, koje su uskoro.</span>
-      <span class="up-tab-how">Pratite tjedan iz kojeg ste — status znakovi (dostupno / uskoro) pomažu da znate gdje se nalazite u kolegiju.</span>
+      <span class="up-tab-desc">Pregled statusa svih nastavnih tjedana s informacijom o tome koje su cjeline obrađene i koje dolaze uskoro.</span>
+      <span class="up-tab-how">Pratite tjedan u kojem se nalazite. Status znakovi (dostupno / uskoro) pomažu da znate gdje ste u kolegiju.</span>
     </a>
 
     <a class="up-tab-card" href="resursi.html">
       <span class="up-tab-name">Resursi</span>
-      <span class="up-tab-desc">Kurirana zbirka linkova: HR institucije, EU tijela, akademski časopisi, baze podataka i relevantni mediji.</span>
-      <span class="up-tab-how">Koristite kao polazišnu točku za istraživanje. Organizirano po kategorijama — od službenih izvora do akademske literature.</span>
+      <span class="up-tab-desc">Kurirana zbirka linkova koji obuhvaćaju HR institucije, EU tijela, akademske časopise, baze podataka i relevantne medije.</span>
+      <span class="up-tab-how">Koristite kao polazišnu točku za istraživanje. Organizirano je po kategorijama, od službenih izvora do akademske literature.</span>
     </a>
 
   </div>
@@ -337,12 +337,12 @@ format:
   <div class="up-network-box">
     <span class="up-spotlight-label">Drugačiji pristup učenju</span>
     <h3>Zašto mentalne mape, a ne linearni sažetci</h3>
-    <p>U doba AI alata, reprodukcija gradiva postaje trivijalna — asistent može u sekundi prepričati bilo koje poglavlje. Ono što ostaje vrijedno jest razumijevanje <em>veza</em>: zašto eksternalija vodi do alokacijskog problema, kako Arrowov teorem ograničava svaki glasački sustav, zašto incentivni problemi u birokraciji i u tržištu imaju strukturno istu formu.</p>
-    <p>Vodič je izgrađen prema logici <strong>mrežnog učenja</strong> — svaka mentalna mapa prikazuje poglavlje kao skup čvorova (pojmova) i bridova (uzročnih, analognih ili kontrastnih veza). Umjesto da pamtite definicije, trenirate prepoznavanje obrazaca koji se ponavljaju kroz cijelu materiju.</p>
+    <p>U doba AI alata reprodukcija gradiva postaje trivijalna jer asistent može u sekundi prepričati bilo koje poglavlje. Ono što ostaje vrijedno jest razumijevanje veza između ideja. Zašto eksternalija vodi do alokacijskog problema? Kako Arrowov teorem ograničava svaki glasački sustav? Zašto incentivni problemi u birokraciji i u tržištu imaju strukturno istu formu? Na ta pitanja ne odgovara reprodukcija, nego razumijevanje odnosa.</p>
+    <p><strong>Mrežno učenje</strong> polazi od pretpostavke da se znanje bolje zadržava kad se gradi kao mreža pojmova nego kao linearna sekvenca. Svaka mentalna mapa u Vodiču prikazuje poglavlje kao skup čvorova i bridova koji pokazuju uzročne, analogne ili kontrastne veze. Umjesto pamćenja definicija, time trenirate prepoznavanje obrazaca koji se ponavljaju kroz cijelu materiju.</p>
     <ul>
-      <li>Svaka mentalna mapa čita se <strong>od rubova prema sredini</strong> — periferija su primjeri, središte je mehanizam koji ih ujedinjuje.</li>
-      <li>Iste pojmove naći ćete u više mapa — to nije greška, već namjerno. Repetitivno susretanje pojma u različitim kontekstima gradi trajno razumijevanje.</li>
-      <li>Mape su kompresija, ne supstitut — vraćajte se u poglavlje kad vam kontekst zatreba.</li>
+      <li>Svaka mentalna mapa čita se od rubova prema sredini. Periferija su primjeri, a središte je mehanizam koji ih ujedinjuje.</li>
+      <li>Iste pojmove naći ćete u više mapa. To nije greška nego namjera; repetitivno susretanje pojma u različitim kontekstima gradi trajno razumijevanje.</li>
+      <li>Mape su kompresija, a ne supstitut za tekst. Vraćajte se u poglavlje kad vam treba kontekst.</li>
     </ul>
   </div>
 
@@ -350,9 +350,9 @@ format:
     <span class="up-spotlight-label">Kako koristiti Vodič</span>
     <h3>Tri načina rada</h3>
     <ul>
-      <li><strong>Linearno:</strong> Pratite redosljed poglavlja (01 → 22). Svaka mapa nadovezuje se na prethodnu i uvodi pojmove koji će biti ključni u sljedećoj.</li>
-      <li><strong>Tematski:</strong> Otvorite mapu poglavlja koje upravo čitate kao dopunu — vizualni pregled pomaže da se ne izgubite u dugačkim odsjeccima.</li>
-      <li><strong>Ponavljanje:</strong> Uoči ispita prođite sve mape bez da otvarate knjige. Ako neka veza nije jasna, to je signal gdje trebate zuriti natrag u tekst.</li>
+      <li>Linearno praćenje redosljeda poglavlja (01 → 22) funkcionira jer se svaka mapa nadovezuje na prethodnu i uvodi pojmove koji će biti ključni u sljedećoj.</li>
+      <li>Tematski pristup znači otvaranje mape poglavlja koje upravo čitate kao vizualnu dopunu; pregled pomaže da se ne izgubite u dugačkim odsjeccima.</li>
+      <li>Uoči ispita prođite sve mape bez otvaranja knjiga. Svaka veza koja nije jasna signal je gdje treba zuriti natrag u tekst.</li>
     </ul>
   </div>
 </section>
@@ -369,13 +369,13 @@ format:
   <div class="up-spotlight">
     <span class="up-spotlight-label">Metodologija</span>
     <h3>Od teksta do grafa pojmova</h3>
-    <p>Pojmovnik nije klasični abecedni rječnik — to je <strong>grafikon znanja</strong> (knowledge graph) stvoren iz teksta knjige. Svaki čvor je pojam, svaki brid je semantička veza identificirana iz načina na koji se pojmovi zajednički pojavljuju i upućuju jedan na drugi kroz poglavlja.</p>
+    <p>Pojmovnik nije klasični abecedni rječnik. To je <strong>grafikon znanja</strong> (*knowledge graph*) stvoren iz teksta knjige. Svaki čvor je pojam, svaki brid je semantička veza identificirana iz načina na koji se pojmovi zajednički pojavljuju i upućuju jedan na drugi kroz poglavlja.</p>
     <ul>
-      <li><strong>Čvorovi</strong> su ključni pojmovi knjige — teorijski koncepti, ekonomski termini, institucije i mehanizmi.</li>
-      <li><strong>Bridovi</strong> označavaju vezu: uzročno-posljedičnu ("vodi do"), kontrastnu ("za razliku od") ili analognu ("slično kao").</li>
-      <li><strong>Boja i veličina čvora</strong> odražavaju centralnost pojma — što više veza, to je pojam centraliji u mreži.</li>
+      <li><strong>Čvorovi</strong> su ključni pojmovi knjige, koji obuhvaćaju teorijske koncepte, ekonomske termine, institucije i mehanizme.</li>
+      <li><strong>Bridovi</strong> označavaju semantičku vezu između pojmova, bilo uzročno-posljedičnu ("vodi do"), kontrastnu ("za razliku od") ili analognu ("slično kao").</li>
+      <li><strong>Boja i veličina čvora</strong> odražavaju centralnost pojma; što više veza čvor ima, to je pojam centraliji u mreži.</li>
     </ul>
-    <p>Graf je izgrađen iz <code>data/concept-graph.json</code> — strukturiranog dataseta koji je nastao analizom cijelog teksta knjige. Grafikon se renderira u pregledniku putem Observable JS, što omogućuje interaktivno istraživanje.</p>
+    <p>Graf je izgrađen iz <code>data/concept-graph.json</code>, strukturiranog dataseta koji je nastao analizom cijelog teksta knjige. Grafikon se renderira u pregledniku putem Observable JS, što omogućuje interaktivno istraživanje.</p>
   </div>
 
   <div class="up-spotlight">
@@ -383,9 +383,9 @@ format:
     <h3>Interakcija s grafom</h3>
     <ul>
       <li>Kliknite pojam da vidite njegovu definiciju i sve pojmove s kojima je izravno povezan.</li>
-      <li>Povucite čvorove za preuređivanje pogleda — fizikalna simulacija ga drži na okupu.</li>
+      <li>Povucite čvorove za preuređivanje pogleda; fizikalna simulacija drži graf na okupu.</li>
       <li>Koristite polje za pretragu za direktno pronalaženje pojma po nazivu.</li>
-      <li>Prebacite se između mrežnog prikaza i popisa — lista je korisnija za abecedno traženje.</li>
+      <li>Prebacite se između mrežnog prikaza i popisa jer je lista korisnija za abecedno traženje.</li>
     </ul>
   </div>
 </section>
@@ -405,7 +405,7 @@ format:
     <p>Idite na <a href="uci-s-ai.html">Uči uz AI</a>, odaberite poglavlje i preuzmite <code>.md</code> datoteku. Priložite je u razgovor s AI asistentom (ChatGPT, Claude, Gemini) i zatim postavljajte pitanja. Asistent ne treba pristup internetu jer cijeli tekst već ima u kontekstu razgovora.</p>
     <ul>
       <li>Radi u svim asistentima, uključujući lokalne (Ollama).</li>
-      <li>Datoteke su čiste Markdown — bez suvišnih HTML tagova, grafova ili koda koji asistent ne treba.</li>
+      <li>Datoteke su čiste Markdown bez suvišnih HTML tagova, grafova ili koda koji asistent ne treba.</li>
       <li>Jedno poglavlje stane u standardni kontekstni prozor (128k tokena).</li>
     </ul>
   </div>
@@ -413,18 +413,18 @@ format:
   <div class="up-spotlight">
     <span class="up-spotlight-label">Metoda 2 — Otvori u asistentu</span>
     <h3>Jedan klik do razgovora</h3>
-    <p>Svako poglavlje ima gumbe koji jednim klikom otvaraju Claude ili ChatGPT s već upisanim uvodnim pitanjem i poveznicom na tekst. Asistent treba pristup internetu da dohvati stranicu — koristite kad ste online i ne želite ručno preuzimati datoteke.</p>
+    <p>Svako poglavlje ima gumbe koji jednim klikom otvaraju Claude ili ChatGPT s već upisanim uvodnim pitanjem i poveznicom na tekst. Asistent treba pristup internetu da dohvati stranicu pa ga koristite kad ste online i ne želite ručno preuzimati datoteke.</p>
   </div>
 
   <div class="up-spotlight">
     <span class="up-spotlight-label">Savjeti za razgovor</span>
     <h3>Kako izvući najviše iz AI asistenta</h3>
     <ul>
-      <li><strong>Pitajte za mehanizam, ne za definiciju:</strong> Umjesto "što je eksternalija?", pitajte "zašto eksternalija dovodi do neoptimalne alokacije — korak po korak". Definiciju asistent može izmisliti; mehanizam iz teksta mora biti točan.</li>
-      <li><strong>Tražite primjer koji nije u tekstu:</strong> "Navedi primjer eksternalije koji nije u poglavlju" — testirate razumijevanje, a ne reprodukciju.</li>
-      <li><strong>Provjerite odgovor u tekstu:</strong> AI asistenti povremeno griješe. Uvijek provjerite ključne tvrdnje u izvornom poglavlju.</li>
-      <li><strong>Koristite za vjezbu:</strong> "Postavi mi 5 pitanja o Arrowovom teoremu kojima bih mogao/la biti testiran/a" — dobar način za pripremu ispita.</li>
-      <li><strong>Cijela knjiga odjednom:</strong> Na <a href="uci-s-ai.html">Uči uz AI</a> dostupna je i kompletna <code>llms-full.txt</code> datoteka s cijelom knjigom — za modele s većim kontekstom (Claude Opus, GPT-4o, Gemini Pro).</li>
+      <li>Umjesto "što je eksternalija?" bolje je pitati "zašto eksternalija dovodi do neoptimalne alokacije, korak po korak". Definiciju asistent može izmisliti; mehanizam iz teksta mora biti točan.</li>
+      <li>Tražite primjer koji nije u tekstu. Upit poput "Navedi primjer eksternalije koji nije u poglavlju" testira razumijevanje, a ne reprodukciju.</li>
+      <li>AI asistenti povremeno griješe. Uvijek provjerite ključne tvrdnje u izvornom poglavlju.</li>
+      <li>Za pripremu ispita tražite pitanja umjesto odgovora. Upit "Postavi mi pet pitanja o Arrowovom teoremu kojima bih mogao/la biti testiran/a" dobar je model.</li>
+      <li>Na <a href="uci-s-ai.html">Uči uz AI</a> dostupna je i kompletna <code>llms-full.txt</code> datoteka s cijelom knjigom, namijenjena modelima s većim kontekstnim prozorom.</li>
     </ul>
   </div>
 </section>
@@ -441,24 +441,14 @@ format:
   <div class="up-spotlight">
     <span class="up-spotlight-label">Observable JS grafovi</span>
     <h3>Grafovi koji reagiraju na vaš unos</h3>
-    <p>Mnoga poglavlja sadrže interaktivne grafove koji se mijenjaju dok pomičete klizač ili mijenjate parametre. To nisu statične slike — svaka promjena parametra osvježava grafikon u stvarnom vremenu. Primjeri:</p>
-    <ul>
-      <li>Laffer-ova krivulja (poglavlje 05) — pomičite stopu poreza i pratite prihode.</li>
-      <li>Glasačke funkcije (poglavlje 07) — mijenjajte broj birača i promatrajte promjenu ishoda.</li>
-      <li>Krivulje birokracije (poglavlje 10) — uspoređujte javni i privatni sektor pri različitim pretpostavkama.</li>
-    </ul>
-    <p>Kod iza grafova uvijek je vidljiv — kliknite "Prikaži kod" da vidite izvorni R ili OJS kod.</p>
+    <p>Mnoga poglavlja sadrže interaktivne grafove koji se mijenjaju dok pomičete klizač ili mijenjate parametre. To nisu statične slike; svaka promjena parametra osvježava grafikon u stvarnom vremenu. Primjeri su Lafferova krivulja u petom poglavlju gdje pomičete stopu poreza i pratite prihode, glasačke funkcije u sedmom poglavlju gdje mijenjate broj birača i promatrate promjenu ishoda, te krivulje birokracije u desetom poglavlju za uspoređivanje javnog i privatnog sektora pri različitim pretpostavkama.</p>
+    <p>Kod iza grafova uvijek je vidljiv. Kliknite "Prikaži kod" da vidite izvorni R ili OJS kod.</p>
   </div>
 
   <div class="up-spotlight">
     <span class="up-spotlight-label">Komentari i anotacije</span>
     <h3>Hypothesis — bilješke uz tekst</h3>
-    <p>Svako poglavlje ima ugrađen Hypothesis — alat za anotiranje teksta u pregledniku. Možete označiti odlomak i dodati javnu ili privatnu bilješku. Korisno za:</p>
-    <ul>
-      <li>Osobne bilješke uz tekst koje se sinkroniziraju između uređaja.</li>
-      <li>Grupne diskusije — studenti koji dijele isti Hypothesis tim mogu videti međusobne anotacije.</li>
-      <li>Označavanje nejasnih mjesta — bilješka postaje podsjetnik da se vratite i razjasnite.</li>
-    </ul>
+    <p>Svako poglavlje ima ugrađen Hypothesis, alat za anotiranje teksta u pregledniku. Možete označiti odlomak i dodati javnu ili privatnu bilješku. Osobne bilješke sinkroniziraju se između uređaja, studenti koji dijele isti Hypothesis tim mogu vidjeti međusobne anotacije, a označena nejasna mjesta postaju podsjetnici za vraćanje u tekst.</p>
   </div>
 </section>
 
@@ -474,13 +464,13 @@ format:
   <div class="up-spotlight">
     <span class="up-spotlight-label">PDF verzija</span>
     <h3>Preuzimanje knjige</h3>
-    <p>PDF verzija cijele knjige dostupna je putem ikone u lijevoj traci (📄). PDF je radna verzija koja se ažurira s glavnim tekstom — nije namijenjen tiskanoj distribuciji nego offline čitanju. Prirucnik (Priručnik za građane) dostupan je kao zasebni A5 dokument.</p>
+    <p>PDF verzija cijele knjige dostupna je putem ikone u lijevoj traci (📄). PDF je radna verzija koja se ažurira s glavnim tekstom; nije namijenjen tiskanoj distribuciji nego offline čitanju. Priručnik za građane dostupan je kao zasebni A5 dokument.</p>
   </div>
 
   <div class="up-spotlight">
     <span class="up-spotlight-label">Prijavljivanje grešaka</span>
     <h3>Pronašli ste pogrešku?</h3>
-    <p>Otvorite issue na <a href="https://github.com/lusiki/Javne-politike" target="_blank" rel="noopener">GitHub repozitoriju knjige</a>. Bugovi u kodu, tipfeleri u tekstu ili propuštene reference — sve je dobrodošlo. Knjiga je živi dokument koji se ažurira.</p>
+    <p>Otvorite issue na <a href="https://github.com/lusiki/Javne-politike" target="_blank" rel="noopener">GitHub repozitoriju knjige</a>. Bugovi u kodu, tipfeleri u tekstu i propuštene reference jednako su dobrodošli. Knjiga je živi dokument koji se ažurira.</p>
   </div>
 </section>
 ```
