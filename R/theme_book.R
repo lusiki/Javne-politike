@@ -52,15 +52,16 @@ pubfin_colors <- c(
 # typographically consistent with the rendered PDF.
 .pubfin_font <- "mono"
 
-# Black-and-white frame for the PDF chart twins: white background, near-black
-# text, light-gray gridlines, monospace family. The geom colours themselves are
-# grayscale hex set in each chart body.
+# Black-and-white frame for the PDF chart twins: warm cream background (matches
+# the STATECRAFT paper so charts sit on the page seamlessly, never a white
+# rectangle), near-black text, light-gray gridlines, monospace family. The geom
+# colours themselves are grayscale hex set in each chart body.
 theme_pubfin <- function(base_size = 12) {
   theme_minimal(base_size = base_size) +
     theme(
       text = element_text(family = .pubfin_font, color = "#1A1A1A"),
-      plot.background  = element_rect(fill = "white", color = NA),
-      panel.background = element_rect(fill = "white", color = NA),
+      plot.background  = element_rect(fill = statecraft[["paper"]], color = NA),
+      panel.background = element_rect(fill = statecraft[["paper"]], color = NA),
       plot.title = element_text(
         face = "bold", size = rel(1.2), hjust = 0, color = "#000000"
       ),

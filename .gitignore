@@ -65,9 +65,11 @@ rad.json
 *.g.xlf
 *.flf
 
-# Font TTFs extracted locally during the PDF render — regenerable byproduct
-# (PDF uses Latin Modern; HTML uses Google Fonts via CDN), not a build input.
-fonts/
+# Variable-font TTFs fetched locally for the Typst booklet (regenerable).
+# The book PDF (xelatex) NEEDS the static instances in fonts/print/, so those
+# ARE tracked — they are a build input for the STATECRAFT PDF theme.
+fonts/*
+!fonts/print/
 
 ### Claude Code ###
 .claude/
