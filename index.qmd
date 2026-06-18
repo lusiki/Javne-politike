@@ -31,12 +31,12 @@ Država oblikuje gotovo svaki važan dio našeg svakodnevnog života. Ova knjiga
 
 ::: {.sc-hero-cta}
 [Počnite čitati](chapters/00-uvod.html){.btn .btn-primary}
-[Preuzmite PDF](pdf/Javne-politike.pdf){.btn .btn-secondary}
-[Mentalne mape](vodic.html){.btn .btn-secondary}
 
 ```{=html}
 <button type="button" class="btn btn-secondary toc-toggle" aria-expanded="false" aria-controls="sadržaj-wrapper" data-label-show="Pogledajte sadržaj" data-label-hide="Sakrijte sadržaj">Pogledajte sadržaj</button>
 ```
+
+[Preuzmite PDF](pdf/Javne-politike.pdf){.btn .btn-secondary}
 :::
 
 ::: {.sc-author-row}
