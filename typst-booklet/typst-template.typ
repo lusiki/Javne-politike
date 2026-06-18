@@ -26,6 +26,18 @@
   text(font: sans, size: size, fill: color, weight: 600, tracking: 0.28em)[#upper(body)]
 }
 
+// Plain-text extraction from heading content (for splitting "Dio … · Title").
+#let _sp = [ ]
+#let stringify(c) = {
+  if c == none { "" }
+  else if type(c) == str { c }
+  else if c.has("text") { c.text }
+  else if c.has("children") { c.children.map(stringify).join("") }
+  else if c.has("body") { stringify(c.body) }
+  else if c == _sp { " " }
+  else { "" }
+}
+
 // Redefine pandoc's horizontalrule (`---`) to a quiet end-of-part fleuron.
 // Part dividers carry the real separation, so this stays subtle.
 #let horizontalrule = block(width: 100%, above: 1.1em, below: 1.1em)[
@@ -55,29 +67,35 @@
   )
   set par(
     justify: true,
-    leading: 0.64em,
-    spacing: 0.64em,
+    leading: 0.72em,
+    spacing: 0.72em,
     first-line-indent: (amount: 1.3em, all: false),
   )
 
-  // links pick up the verdigris accent
-  show link: set text(fill: verdigris)
-  show ref: set text(fill: verdigris)
-
-  // emphasis / strong tuned for the cream ground
+  // links / refs pick up the deep verdigris (unifies every verdigris mark)
+  show link: set text(fill: verdigris-deep)
+  show ref: set text(fill: verdigris-deep)
   show strong: set text(fill: ink, weight: 600)
 
   // -------- headings --------------------------------------------------
-  // Level 2 = parts ("Dio …", "Uvod"): framed divider, opens a new page.
+  // Level 2 = parts ("Dio …", "Uvod"): eyebrow + title + verdigris rule,
+  // opens a new page. Headings never hyphenate.
   show heading.where(level: 2): it => {
     pagebreak(weak: true)
+    set text(hyphenate: false)
+    let s = stringify(it.body)
+    let segs = s.split(" · ")
     v(2.4em)
     block(width: 100%, breakable: false)[
-      #line(length: 100%, stroke: 0.9pt + ochre)
-      #v(0.8em)
-      #set par(justify: false, leading: 0.44em, first-line-indent: 0pt)
-      #text(font: serif, size: 22pt, weight: 500, fill: ink)[#it.body]
-      #v(0.8em)
+      #set par(justify: false, leading: 0.46em, first-line-indent: 0pt)
+      #if segs.len() > 1 {
+        eyebrow-label(segs.at(0), color: verdigris, size: 9.5pt)
+        v(0.6em)
+        text(font: serif, size: 24pt, weight: 600, fill: ink)[#segs.slice(1).join(" · ")]
+      } else {
+        text(font: serif, size: 24pt, weight: 600, fill: ink)[#s]
+      }
+      #v(0.85em)
       #line(length: 100%, stroke: 1.4pt + verdigris)
     ]
     v(1.7em)
@@ -85,37 +103,54 @@
 
   // Level 3 = numbered sections ("1. Zašto …"): verdigris serif head.
   show heading.where(level: 3): it => {
+    set text(hyphenate: false)
     v(1.5em, weak: true)
     block(breakable: false, below: 0.7em)[
-      #set par(justify: false, leading: 0.46em, first-line-indent: 0pt)
-      #text(font: serif, size: 14.5pt, weight: 600, fill: verdigris-deep)[#it.body]
+      #set par(justify: false, leading: 0.5em, first-line-indent: 0pt)
+      #text(font: serif, size: 14.5pt, weight: 500, fill: verdigris-deep)[#it.body]
     ]
   }
 
   // anything deeper: quiet sans label
   show heading.where(level: 4): it => {
+    set text(hyphenate: false)
     v(1em, weak: true)
     text(font: sans, size: 10pt, weight: 600, fill: ink-soft)[#it.body]
     parbreak()
   }
 
   // figures (the guide-plate illustrations)
+  // Bare images aren't locatable, so wrap each in a (caption-less) figure;
+  // this makes plate pages queryable for running-head/folio suppression and
+  // centres the plate. Only the two frontispiece plates are images here.
+  show image: it => figure(it, caption: none, supplement: none, numbering: none)
   show figure: set block(breakable: false)
   show figure.caption: set text(font: sans, size: 8pt, fill: ink-mute)
 
-  // -------- running head + folio (body pages only) -------------------
+  // -------- running head + folio --------------------------------------
+  // Suppressed on part-opener pages (running head) and on full-page
+  // illustration pages (both), so plates and openers breathe.
   set page(
     header: context {
-      set align(center)
-      set text(font: sans, size: 7.5pt, fill: ink-mute, tracking: 0.32em)
-      upper[Država i javne politike u malom]
-      v(3pt)
-      line(length: 100%, stroke: 0.4pt + ochre)
+      let pg = here().page()
+      let openers = query(heading.where(level: 2)).map(h => h.location().page())
+      let plates = query(figure).map(f => f.location().page())
+      if not (openers.contains(pg) or plates.contains(pg)) {
+        set align(center)
+        set text(font: sans, size: 7.5pt, fill: ink-mute, tracking: 0.32em)
+        upper[Država i javne politike u malom]
+        v(3pt)
+        line(length: 100%, stroke: 0.4pt + ochre)
+      }
     },
     footer: context {
-      set align(center)
-      set text(font: mono, size: 8pt, fill: ink-mute)
-      [#counter(page).get().first()]
+      let pg = here().page()
+      let plates = query(figure).map(f => f.location().page())
+      if not plates.contains(pg) {
+        set align(center)
+        set text(font: mono, size: 8pt, fill: ink-mute)
+        [#counter(page).get().first()]
+      }
     },
   )
 
@@ -125,7 +160,7 @@
   page(header: none, footer: none, numbering: none)[
     #set par(justify: false, leading: 0.5em, first-line-indent: 0pt)
     #set text(hyphenate: false)
-    #v(2.6cm)
+    #v(1fr)
     #if eyebrow != none { eyebrow-label(eyebrow) }
     #v(0.7em)
     #line(length: 100%, stroke: 1pt + verdigris)
@@ -135,7 +170,7 @@
       v(0.7em)
       text(font: serif, size: 13pt, style: "italic", fill: ink-soft)[#subtitle]
     }
-    #v(1fr)
+    #v(1.4fr)
     #line(length: 100%, stroke: 0.5pt + ochre)
     #v(0.8em)
     #if authors-line != none {
@@ -162,15 +197,41 @@
       #show outline.entry.where(level: 2): set text(font: serif, size: 11.5pt, weight: 600, fill: ink)
       #show outline.entry.where(level: 2): set block(above: 1.1em)
       #show outline.entry.where(level: 3): set text(font: serif, size: 10pt, weight: 400, fill: ink-soft)
-      #set outline.entry(fill: box(width: 1fr, repeat[#text(fill: ochre)[.]#h(3pt)]))
+      #set outline.entry(fill: box(width: 1fr, repeat[#text(fill: ink-mute, size: 7pt)[.]#h(2.5pt)]))
 
       #outline(title: none, depth: toc-depth, indent: 1.1em)
     ]
   }
 
   // ===================================================================
-  //  BODY
+  //  BODY  (counter starts at 0 so the leading plate is unnumbered and
+  //  the first prose page — Uvod — carries folio 1)
   // ===================================================================
-  counter(page).update(1)
+  counter(page).update(0)
   doc
+
+  // ===================================================================
+  //  COLOPHON  (deliberate bookend, mirrors the title-page grammar)
+  // ===================================================================
+  page(header: none, footer: none, numbering: none)[
+    #set par(justify: false, first-line-indent: 0pt)
+    #set text(hyphenate: false)
+    #v(1fr)
+    #eyebrow-label("Kolofon", color: verdigris)
+    #v(0.6em)
+    #line(length: 100%, stroke: 0.5pt + ink-mute)
+    #v(1em)
+    #text(font: serif, style: "italic", size: 11.5pt, fill: ink-soft)[Sve što želite znati o državi i javnim politikama u Hrvatskoj]
+    #v(1.2em)
+    #if authors-line != none {
+      text(font: sans, size: 9pt, weight: 500, fill: ink, tracking: 0.05em)[#authors-line]
+    }
+    #v(0.5em)
+    #text(font: mono, size: 8.5pt, fill: ink-mute)[lusiki.github.io/Javne-politike]
+    #if date != none {
+      linebreak()
+      text(font: mono, size: 8.5pt, fill: ink-mute)[#upper[#date]]
+    }
+    #v(1.3fr)
+  ]
 }
