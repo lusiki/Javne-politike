@@ -22,15 +22,15 @@ book:
   title: "Sve što želite znati o državi i javnim politikama u Hrvatskoj"
   subtitle: "Praktični i interaktivni udžbenik za studente i sve koji žele znati više"
   author:
-    - name: "Milan Deskar-Škrbić"
-      email: "milan.deskar-skrbic@hnb.hr"
-      url: "https://zsem.hr/clanovi/dr-sc-milan-deskar-skrbic/"
     - name: "Petra Palić"
       email: "petra.palic@unicath.hr"
       url: "https://www.unicath.hr/odjeli-i-fakultet/nastavnici/petra-palic"
-    - name: "Luka Sikić"
+    - name: "Luka Šikić"
       email: "luka.sikic@unicath.hr"
       url: "https://www.lukasikic.info/"
+    - name: "Milan Deskar-Škrbić"
+      email: "milan.deskar-skrbic@hnb.hr"
+      url: "https://zsem.hr/clanovi/dr-sc-milan-deskar-skrbic/"
 
   date: last-modified
   date-format: "D MMMM YYYY"
@@ -89,7 +89,7 @@ book:
         text: "Preuzmi PDF (radna verzija)"
 
   page-footer:
-    center: "© 2026 Deskar-Škrbić, Palić, Šikić | Javne politike u Hrvatskoj"
+    center: "© 2026 Palić, Šikić, Deskar-Škrbić | Javne politike u Hrvatskoj"
 
   chapters:
     - index.qmd
