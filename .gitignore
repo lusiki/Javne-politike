@@ -65,5 +65,9 @@ rad.json
 *.g.xlf
 *.flf
 
+# Font TTFs extracted locally during the PDF render — regenerable byproduct
+# (PDF uses Latin Modern; HTML uses Google Fonts via CDN), not a build input.
+fonts/
+
 ### Claude Code ###
 .claude/
