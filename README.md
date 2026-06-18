@@ -27,7 +27,9 @@ Knjiga kombinira **normativni pristup** (kakve bi politike trebale biti) i **poz
 
 ## 📥 Preuzmi PDF
 
-**→ [Javne-politike.pdf](pdf/Javne-politike.pdf)** — radna verzija (svibanj 2026), sadrži dovršena poglavlja knjige bez interaktivnih grafova.
+**→ [Javne-politike.pdf](pdf/Javne-politike.pdf)** — radna verzija (lipanj 2026), sadrži dovršena poglavlja knjige bez interaktivnih grafova.
+
+**→ [Prirucnik.pdf](pdf/Prirucnik.pdf)** — Priručnik za građane (A5, samostalni vodič kroz ključne pojmove).
 
 ---
 
@@ -45,9 +47,11 @@ Knjiga kombinira **normativni pristup** (kakve bi politike trebale biti) i **poz
 
 | Dio | Poglavlja | Tema |
 |-----|-----------|------|
-| **DIO I** — Država, javne politike i temeljni pristupi | 1–5 | Pozitivistički i normativni pristup, tržišni neuspjesi, Musgrave, institucionalna i konstitucionalna ekonomika |
-| **DIO II** — Javni izbor: što, kako i zašto? | 6–11 | Teorija javnog izbora, glasovanje, stranke, birokracija, interesne skupine |
-| **DIO III** — Javne financije i javne politike u praksi | 12–15 | Javna potrošnja, porezi, evaluacija politika, reforme javnog sektora |
+| **DIO I** — Klasična analiza javnih financija i politika | 1–5 | Uloga države, alokacijska, distribucijska i stabilizacijska funkcija, teorija oporezivanja |
+| **DIO II** — Javni izbor: što, kako i zašto? | 6, 6a, 7–10 | Teorija javnog izbora, teorija igara, kolektivni izbor, stranke i izbori, interesne skupine, birokracija |
+| **DIO III** — Nova institucionalna i konstitucionalna ekonomika | 11–12 | Institucionalna ekonomika, konstitucionalna ekonomika |
+| **DIO IV** — Javne financije i javne politike u praksi | 13–16 | Instrumenti javnih politika, javna potrošnja, porezni sustavi, javne financije EU |
+| **DIO V** — Kako do kvalitetnijih javnih politika? | 17–21 | Državni neuspjesi, novi javni menadžment, novo upravljanje, CBA i evaluacija, reforme |
 
 ---
 

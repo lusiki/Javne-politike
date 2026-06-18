@@ -11,7 +11,24 @@ A Quarto book on Croatian public policy and public choice theory, co-authored by
 - Quarto book (`type: book`), HTML output to `docs/`
 - R + renv for code execution (lockfile: `renv.lock`)
 - SCSS theming via `styles/custom.scss` and `_brand.yml`
+- Pre-render hook: `R/build-ai-exports.R` runs on every `quarto render`, generating
+  `docs/ai/*.md`, `docs/llms.txt`, `docs/llms-full.txt`, and `data/ai-exports.json`
 - Deployed to GitHub Pages via GitHub Actions on every push to `main`
+
+## Navbar / site structure
+
+Eight tabs in the pinned navbar (defined in `_quarto.yml` `book.navbar.left`):
+
+| Tab | Source file |
+|-----|-------------|
+| Knjiga | `chapters/00-uvod.qmd` (entry point to the chapter sidebar) |
+| Vodič | `vodic.qmd` |
+| Pojmovnik | `pojmovnik.qmd` |
+| Resursi | `resursi.qmd` |
+| Alat | `alat.qmd` |
+| Podaci | `podaci.qmd` |
+| Uči uz AI | `uci-s-ai.qmd` |
+| Silabusi | `silabusi.qmd` |
 
 ## Build commands
 
@@ -25,35 +42,56 @@ quarto render --profile pdf   # render PDF via _quarto-pdf.yml
 
 ```
 chapters/             active .qmd chapter files (canonical list: _quarto.yml)
-styles/               custom.scss, _dark.scss, styles.css, book-include.html
-R/                    setup.R (sourced in each chapter), theme_book.R (ggplot2 theme)
-data/                 datasets used by chapters
-images/               static brand/visual assets
-pdf-filters/          Lua filters applied during PDF render (strip-ojs.lua)
-pdf/                  rendered PDF output — see PDF rebuild workflow below
+vodic/                vodič subpages — one mental-map page per chapter (01–21 plus 06a — 22 subpages;
+                      hidden from sidebar via pruneSidebar in book-include.html)
+predavanja/           reveal.js lecture decks (underscore-prefixed .qmd source + committed .html,
+                      statecraft.scss) — served as resources, see Silabusi tab
+styles/               custom.scss, _dark.scss, _atlas.scss, _vodic.scss, styles.css, book-include.html
+R/                    setup.R (sourced in each chapter), theme_book.R (ggplot2 theme),
+                      build-ai-exports.R (pre-render hook → docs/ai/, docs/llms*.txt, data/ai-exports.json),
+                      build-concept-graph.R (manual → data/concept-graph.json),
+                      fetch_atlas_data.R (manual → data/atlas/*.csv)
+scripts/              render-pdf.ps1, render-prirucnik-pdf.ps1, svg-to-png.R (operator-run helpers)
+data/                 datasets used by chapters (atlas/*.csv, concept-graph.json, ai-exports.json)
+images/               static brand/visual assets (infographics/, prirucnik/ frontispieces)
+pdf-filters/          Lua filters applied during PDF render (strip-ojs.lua, swap-svg-png.lua)
+pdf/                  rendered PDF output — two files: Javne-politike.pdf (full book, via --profile pdf)
+                      and Prirucnik.pdf (standalone A5 citizen guide, via scripts/render-prirucnik-pdf.ps1)
 docs/                 HTML build output — do NOT hand-edit, regenerated on render
 _freeze/              Quarto execution cache — do NOT hand-edit
 renv/, renv.lock      R package library + lockfile (pinned versions)
+notes/                specs and audit reports (vodic-specifikacija.md, ai-export-spec.md,
+                      izvjestaj-*.md reports, platform-vision.md, frontier-expansion.md, etc.)
+bookwright_plugin/    editorial-team tooling (manager + critics agents); self-contained, not a build dep
 index.qmd             landing page (hero, cover-card, collapsible TOC)
 references.qmd        appendix: bibliography page
 vodic.qmd             vodič hub — visual "slikovnica" of the book (spec: notes/vodic-specifikacija.md)
-vodic/                vodič subpages — one mental-map page per chapter (01–19)
+pojmovnik.qmd         appendix: interactive glossary (concept graph from data/concept-graph.json)
+prirucnik.qmd         appendix: citizen guide (standalone A5 PDF via scripts/render-prirucnik-pdf.ps1)
 resursi.qmd           appendix: resource list
 alat.qmd              appendix: tools
-podaci.qmd            appendix: datasets reference
+podaci.qmd            appendix: datasets reference (Atlas data from data/atlas/)
+uci-s-ai.qmd          appendix: "Uči uz AI" — AI-assisted study page (reads data/ai-exports.json)
+silabusi.qmd          appendix: syllabi + lecture deck hub (links to predavanja/ HTML decks)
+404.qmd               custom 404 page (Quarto special-cased, keep)
 references.bib        BibTeX bibliography for all citations
 STYLE.md              editorial style guide (see Content conventions § Editorial style)
+ENRICHMENT.md         guide for substantive paragraph insertions into chapters
 _quarto.yml           master config — chapter order, theme, HTML format options
 _quarto-pdf.yml       PDF profile config — `quarto render --profile pdf`
 _brand.yml            typography and color tokens
 cover.png             book cover image
+ph3.jpg               OG/Twitter share image (referenced in _quarto.yml open-graph + twitter-card)
+robots.txt            crawl directives (copied to docs/ as a build resource)
 ```
 
 ## Active chapters
 
-The canonical chapter list is defined in `_quarto.yml`. Many `.qmd` files in
-`chapters/` are orphans from earlier numbering revisions — do not assume every
-file in that folder is part of the book.
+The canonical chapter list is defined in `_quarto.yml`. The `chapters/` folder
+currently contains exactly the 23 canonical active `.qmd` files (00-uvod through
+21-reforme, plus 06a-teorija-igara) — there are no orphan source files. Stale
+artifacts from earlier numbering survive only as gitignored `*_cache/` and
+`*_files/` dirs (Quarto-regenerable, not source), not as `.qmd`.
 
 Current structure (from `_quarto.yml`) — 21 numbered chapters (plus `06a`) in 5 parts + intro:
 
@@ -140,7 +178,9 @@ source("R/setup.R")
 ```
 
 Use `pubfin_colors`, `scale_fill_pubfin()`, and `scale_color_pubfin()` for charts.
-Brand colors: navy `#1B2A4A`, gold `#C8942D`, slate `#4A5568`.
+Brand colors come from the STATECRAFT palette (see Theming below): the `pubfin_colors`
+keys `navy` and `gold` now resolve to ink `#1C1916` and ochre `#C8985E` — use
+`scale_*_pubfin()` rather than hardcoding hex values.
 
 ### OJS / Observable
 Interactive charts use OJS blocks (`{ojs}`). These execute in the browser, not via R.
@@ -183,13 +223,20 @@ Pushing to `main` triggers `.github/workflows/publish.yml`, which:
 
 ### PDF rebuild workflow
 
-Canonical method is local render + commit:
+Two PDFs are maintained in `pdf/` and mirrored into `docs/pdf/`:
+
+**Full book (`Javne-politike.pdf`)** — canonical local method:
 
 1. `quarto render --profile pdf` → writes `pdf/Javne-politike.pdf`
 2. `cp pdf/Javne-politike.pdf docs/pdf/Javne-politike.pdf`
 3. Commit both files with `docs(pdf):` prefix and push
 
-The CI workflow also attempts the same PDF render with `continue-on-error: true`.
+**Citizen guide (`Prirucnik.pdf`)** — standalone A5 PDF:
+
+1. Run `scripts/render-prirucnik-pdf.ps1` (PowerShell)
+2. Commit `pdf/Prirucnik.pdf` and `docs/pdf/Prirucnik.pdf` with `docs(pdf):` prefix
+
+The CI workflow also attempts the full-book PDF render with `continue-on-error: true`.
 If CI's render succeeds, it overwrites the committed PDF in the deploy artifact.
 If CI's render fails (common — TinyTeX in CI sometimes misses LaTeX packages or
 fonts), the committed PDF is served as-is. So the deployed PDF is always at
@@ -222,3 +269,5 @@ rely on `git merge` blindly, as branch histories can diverge unexpectedly.
 - Break the chapter order in `_quarto.yml`
 - Write prose in English
 - Commit `index_cache/`, `index_files/`, `tmp/`, or `.Rhistory`
+- Commit root-level `tmp_*.R` or `tmp_*.py` scratch files (add to `.gitignore` and
+  delete instead; `tmp/` dir is already gitignored for this reason)
