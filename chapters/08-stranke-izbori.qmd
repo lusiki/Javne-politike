@@ -196,11 +196,11 @@ df <- data.frame(
 df$stranka <- factor(df$stranka, levels = df$stranka[order(df$lr)])
 
 ggplot(df, aes(lr, stranka, color = blok)) +
-  geom_vline(xintercept = 5, color = "#6B1F26", linetype = "22", linewidth = 0.5) +
+  geom_vline(xintercept = 5, color = "#1A1A1A", linetype = "22", linewidth = 0.5) +
   geom_point(size = 3.2) +
   geom_text(aes(label = sub("\\.", ",", sprintf("%.1f", lr))),
             hjust = -0.4, size = 2.9, color = "#3A332D") +
-  scale_color_manual(values = c("Ljevica" = "#4A6B5C", "Centar" = "#6B6357", "Desnica" = "#C8985E"), name = NULL) +
+  scale_color_manual(values = c("Ljevica" = "#333333", "Centar" = "#6B6357", "Desnica" = "#8C8C8C"), name = NULL) +
   scale_x_continuous(limits = c(0, 10.5), breaks = seq(0, 10, 2)) +
   labs(x = "Ljevica  <-  ideoloska os (0-10)  ->  Desnica", y = NULL) +
   theme_pubfin()

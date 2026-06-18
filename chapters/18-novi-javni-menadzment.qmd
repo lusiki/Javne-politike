@@ -201,7 +201,7 @@ ggplot(eg, aes(v, z, fill = grp)) +
            size = 2.8, color = "#6B6357") +
   geom_text(aes(label = sub("\\.", ",", sprintf("%.3f", v))),
             hjust = -0.15, size = 2.8, color = "#3A332D") +
-  scale_fill_manual(values = c("ostalo" = "#4A5568", "HR" = "#C8942D"), guide = "none") +
+  scale_fill_manual(values = c("ostalo" = "#8C8C8C", "HR" = "#1A1A1A"), guide = "none") +
   scale_x_continuous(limits = c(0, 1.05)) +
   labs(x = "Indeks razvijenosti e-uprave (EGDI, 0–1)", y = NULL) +
   theme_pubfin()

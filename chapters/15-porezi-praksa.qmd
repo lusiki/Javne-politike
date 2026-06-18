@@ -129,7 +129,7 @@ pt <- data.frame(
   stringsAsFactors = FALSE
 )
 pt$z <- factor(pt$z, levels = rev(pt$z))
-cols <- c("ostalo" = "#4A5568", "OECD" = "#4A6B5C", "HR" = "#C8942D")
+cols <- c("ostalo" = "#8C8C8C", "OECD" = "#4D4D4D", "HR" = "#1A1A1A")
 
 ggplot(pt, aes(v, z, fill = grp)) +
   geom_vline(xintercept = 33.7, linetype = "dashed", color = "#8C8C8C", linewidth = 0.5) +
@@ -248,7 +248,7 @@ ps <- data.frame(
   val = c(34,38,28,  30,70,0,  28,33,39,  19,55,26,  57,37,6,  50,20,30),
   stringsAsFactors = FALSE
 )
-cols <- c("Potrošnja" = "#C8942D", "Dohodak i dobit" = "#4A6B5C", "Doprinosi" = "#6B1F26")
+cols <- c("Potrošnja" = "#1A1A1A", "Dohodak i dobit" = "#5C5C5C", "Doprinosi" = "#A0A0A0")
 ps$lab <- ifelse(ps$val >= 8, paste0(ps$val, " %"), "")
 
 ggplot(ps, aes(x = "", y = val, fill = cat)) +
@@ -352,9 +352,9 @@ ps <- data.frame(
           12.9,13.3,14.0,  19.3,7.9,11.4,  17.3,7.6,10.5,  6.4,11.8,4.1),
   stringsAsFactors = FALSE
 )
-cols <- c("Neizravni (potrošnja)" = "#C8942D",
-          "Izravni (dohodak i kapital)" = "#4A6B5C",
-          "Socijalni doprinosi" = "#6B1F26")
+cols <- c("Neizravni (potrošnja)" = "#1A1A1A",
+          "Izravni (dohodak i kapital)" = "#5C5C5C",
+          "Socijalni doprinosi" = "#A0A0A0")
 tot <- data.frame(
   z = factor(zem, levels = rev(zem)),
   t = c(13.9+31.3+0.7, 15.6+12.5+16.5, 10.4+12.8+17.5, 12.9+13.3+14.0,
@@ -365,11 +365,11 @@ tot <- data.frame(
 ggplot(ps, aes(val, z, fill = cat)) +
   geom_col(aes(color = z == "Hrvatska"), width = 0.7, linewidth = 0.7) +
   geom_text(data = tot, aes(t, z, label = sub("\\.", ",", sprintf("%.1f", t))),
-            color = ifelse(tot$hl, "#9A6F38", "#3A332D"),
+            color = ifelse(tot$hl, "#1A1A1A", "#3A332D"),
             fontface = ifelse(tot$hl, "bold", "plain"),
             hjust = -0.25, size = 2.7, inherit.aes = FALSE) +
   scale_fill_manual(values = cols, name = NULL) +
-  scale_color_manual(values = c(`TRUE` = "#C8942D", `FALSE` = NA), guide = "none") +
+  scale_color_manual(values = c(`TRUE` = "#1A1A1A", `FALSE` = NA), guide = "none") +
   scale_x_continuous(limits = c(0, 50)) +
   coord_cartesian(clip = "off") +
   labs(x = "% BDP-a", y = NULL) +
@@ -468,8 +468,8 @@ ggplot(df, aes(val, z, fill = cat)) +
             position = position_stack(vjust = 0.5), color = "white", size = 2.5, family = "mono") +
   geom_text(data = tot, aes(t, z, label = sub("\\.", ",", sprintf("%.1f", t)), color = hl),
             hjust = -0.25, size = 2.7, inherit.aes = FALSE, show.legend = FALSE) +
-  scale_fill_manual(values = c("Doprinosi poslodavca"="#4A6B5C","Doprinosi zaposlenika"="#6B6357"), name = NULL) +
-  scale_color_manual(values = c(`TRUE`="#C8942D", `FALSE`=NA), guide = "none") +
+  scale_fill_manual(values = c("Doprinosi poslodavca"="#333333","Doprinosi zaposlenika"="#7A7A7A"), name = NULL) +
+  scale_color_manual(values = c(`TRUE`="#1A1A1A", `FALSE`=NA), guide = "none") +
   scale_x_continuous(limits = c(0, 17.5)) +
   labs(x = "Socijalni doprinosi (% BDP-a, 2023.)", y = NULL) +
   theme(legend.position = "top")
@@ -545,7 +545,7 @@ ggplot(kl, aes(v, z, fill = grp)) +
            size = 2.6, color = "#8C8C8C", hjust = 0.5, vjust = -1.4) +
   geom_col(width = 0.74) +
   geom_text(aes(label = paste0(sub("\\.", ",", sprintf("%.1f", v)), " %")), hjust = -0.12, size = 2.8, color = "#3A332D") +
-  scale_fill_manual(values = c("ostalo"="#4A5568","OECD"="#4A6B5C","HR"="#C8942D"), guide = "none") +
+  scale_fill_manual(values = c("ostalo"="#8C8C8C","OECD"="#4D4D4D","HR"="#1A1A1A"), guide = "none") +
   scale_x_continuous(limits = c(0, 60)) +
   coord_cartesian(clip = "off") +
   labs(x = "Porezni klin na rad (% troška rada)", y = NULL)
@@ -617,7 +617,7 @@ he <- data.frame(
   v = c(40.4, 38.6, 12.9, 19.3, 13.3, 7.9, 14.0, 11.4, 7.1, 13.3),
   stringsAsFactors = FALSE
 )
-cols <- c("EU" = "#4A5568", "Hrvatska" = "#C8942D")
+cols <- c("EU" = "#7A7A7A", "Hrvatska" = "#1A1A1A")
 
 ggplot(he, aes(m, v, fill = e)) +
   geom_col(position = position_dodge(width = 0.8), width = 0.7) +

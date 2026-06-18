@@ -179,7 +179,7 @@ mff$h <- factor(mff$h, levels = rev(mff$h))
 ggplot(mff, aes(v, h, fill = grp)) +
   geom_col(width = 0.74) +
   geom_text(aes(label = paste0(sub("\\.", ",", sprintf("%.1f", v)), " %")), hjust = -0.15, size = 2.8, color = "#3A332D") +
-  scale_fill_manual(values = c("glavno"="#4A6B5C","ostalo"="#4A5568"), guide = "none") +
+  scale_fill_manual(values = c("glavno"="#333333","ostalo"="#8C8C8C"), guide = "none") +
   scale_x_continuous(limits = c(0, 42)) +
   labs(x = "% obveza okvira 2021.–2027.", y = NULL)
 ```
@@ -242,7 +242,7 @@ ggplot(np, aes(v, z, fill = grp)) +
   geom_vline(xintercept = 0, color = "#3A332D", linewidth = 0.5) +
   geom_text(aes(label = paste0(ifelse(v > 0, "+", ""), v, " €"),
                 hjust = ifelse(v > 0, -0.15, 1.15)), size = 2.8, color = "#3A332D") +
-  scale_fill_manual(values = c("HR"="#C8942D","prim"="#4A6B5C","upl"="#6B1F26"), guide = "none") +
+  scale_fill_manual(values = c("HR"="#1A1A1A","prim"="#4D4D4D","upl"="#8C8C8C"), guide = "none") +
   scale_x_continuous(limits = c(-470, 760)) +
   labs(x = "Neto položaj, € po stanovniku (2023.)", y = NULL)
 ```

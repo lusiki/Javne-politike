@@ -618,10 +618,10 @@ dg <- data.frame(
 dg$z <- factor(dg$z, levels = rev(dg$z))
 ggplot(dg, aes(v, z, fill = grp)) +
   geom_col(width = 0.74) +
-  geom_vline(xintercept = 60, color = "#6B1F26", linetype = "22", linewidth = 0.6) +
+  geom_vline(xintercept = 60, color = "#1A1A1A", linetype = "22", linewidth = 0.6) +
   geom_text(aes(label = sub("\\.", ",", sprintf("%.1f", v))), hjust = -0.15, size = 2.8, color = "#3A332D") +
-  annotate("text", x = 60, y = 11, label = "granica 60 %", hjust = -0.05, vjust = -0.6, size = 2.8, color = "#6B1F26") +
-  scale_fill_manual(values = c("ostalo"="#4A5568","agg"="#6B6357","HR"="#C8942D"), guide = "none") +
+  annotate("text", x = 60, y = 11, label = "granica 60 %", hjust = -0.05, vjust = -0.6, size = 2.8, color = "#1A1A1A") +
+  scale_fill_manual(values = c("ostalo"="#8C8C8C","agg"="#6B6357","HR"="#333333"), guide = "none") +
   scale_x_continuous(limits = c(0, 168)) +
   labs(x = "Javni dug (% BDP-a, 2024.)", y = NULL)
 ```

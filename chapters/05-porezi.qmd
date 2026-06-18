@@ -176,7 +176,7 @@ ggplot(df, aes(year, v, group=interaction(panel, series), color=kind, linewidth=
                inherit.aes=FALSE, linetype="22", color="#9A948A", linewidth=0.4) +
   geom_line() +
   facet_wrap(~panel, scales="free_x") +
-  scale_color_manual(values=c("Pojedine zemlje"="#4A5568","Prosjek razvijenih"="#6B6357","Hrvatska"="#C8942D"), name=NULL) +
+  scale_color_manual(values=c("Pojedine zemlje"="#B0B0B0","Prosjek razvijenih"="#6B6357","Hrvatska"="#1A1A1A"), name=NULL) +
   scale_linewidth_manual(values=c("Pojedine zemlje"=0.4,"Prosjek razvijenih"=1.1,"Hrvatska"=1.0), guide="none") +
   scale_y_continuous(labels=function(x) paste0(x, " %"), limits=c(0,52)) +
   labs(x=NULL, y=NULL) +

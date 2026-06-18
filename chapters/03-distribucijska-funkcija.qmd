@@ -230,8 +230,8 @@ ggplot(df) +
   geom_point(aes(m, z), color = "#6B6357", size = 2.3) +
   geom_point(aes(d, z, color = hl), size = 2.9) +
   geom_text(aes(m, z, label = sub("\\.", ",", sprintf("%.2f", m))), vjust = -1.0, size = 2.6, color = "#6B6357") +
-  geom_text(aes(d, z, label = sub("\\.", ",", sprintf("%.2f", d))), vjust = -1.0, hjust = 1.1, size = 2.6, color = "#3A5648") +
-  scale_color_manual(values = c(`FALSE` = "#4A6B5C", `TRUE` = "#C8942D"), guide = "none") +
+  geom_text(aes(d, z, label = sub("\\.", ",", sprintf("%.2f", d))), vjust = -1.0, hjust = 1.1, size = 2.6, color = "#6B6357") +
+  scale_color_manual(values = c(`FALSE` = "#7A7A7A", `TRUE` = "#1A1A1A"), guide = "none") +
   scale_x_continuous(limits = c(0.2, 0.56)) +
   labs(x = "Gini koeficijent (0 = jednakost)", y = NULL)
 ```

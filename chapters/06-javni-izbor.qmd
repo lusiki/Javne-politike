@@ -244,8 +244,8 @@ ggplot(df, aes(god, v, color = serija)) +
   geom_point(size = 1.4) +
   scale_color_manual(
     values = c("Parlamentarni" = "#1C1916",
-               "Predsjednički (1. krug)" = "#4A6B5C",
-               "Europski parlament" = "#6B1F26"), name = NULL) +
+               "Predsjednički (1. krug)" = "#4D4D4D",
+               "Europski parlament" = "#8C8C8C"), name = NULL) +
   scale_y_continuous(limits = c(0, 90)) +
   scale_x_continuous(breaks = seq(1992, 2024, 4)) +
   labs(x = NULL, y = "Izlaznost (%)") +

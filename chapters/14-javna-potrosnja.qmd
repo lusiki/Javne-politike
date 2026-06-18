@@ -164,7 +164,7 @@ ggplot(df, aes(year, v, group=interaction(panel, series), color=kind, linewidth=
             inherit.aes=FALSE, color="#9A948A", size=2.3, hjust=0.5) +
   geom_line() +
   facet_wrap(~panel, scales="free_x") +
-  scale_color_manual(values=c("Pojedine zemlje"="#B8B2A6","Prosjek razvijenih"="#6B6357","Hrvatska"="#C8942D"), name=NULL) +
+  scale_color_manual(values=c("Pojedine zemlje"="#B8B2A6","Prosjek razvijenih"="#6B6357","Hrvatska"="#1A1A1A"), name=NULL) +
   scale_linewidth_manual(values=c("Pojedine zemlje"=0.4,"Prosjek razvijenih"=1.1,"Hrvatska"=1.0), guide="none") +
   scale_y_continuous(labels=function(x) paste0(x, " %"), limits=c(0,70)) +
   labs(x=NULL, y=NULL) +
@@ -530,7 +530,7 @@ rb <- data.frame(
   stringsAsFactors = FALSE
 )
 rb$z <- factor(rb$z, levels = rev(rb$z))
-cols <- c("ostalo" = "#4A5568", "EU" = "#4A6B5C", "Hrvatska" = "#C8942D")
+cols <- c("ostalo" = "#8C8C8C", "EU" = "#4D4D4D", "Hrvatska" = "#1A1A1A")
 
 ggplot(rb, aes(v, z, fill = grp)) +
   geom_col(width = 0.72) +
@@ -621,7 +621,7 @@ mark <- data.frame(
 )
 
 ggplot(cof, aes(v, f)) +
-  geom_col(fill = "#4A5568", width = 0.7) +
+  geom_col(fill = "#4D4D4D", width = 0.7) +
   geom_text(aes(label = sub("\\.", ",", sprintf("%.1f", v))),
             hjust = -0.2, size = 2.9, color = "#3A332D") +
   geom_point(data = mark, aes(x = x, y = "Socijalna zaštita"),
@@ -694,8 +694,8 @@ source("R/setup.R")
 theme_set(theme_void(base_size = 12))
 cats <- c("Socijalna zaštita","Zdravstvo","Ekonomski poslovi","Opće javne usluge","Obrazovanje","Ostalo")
 df <- data.frame(cat = factor(cats, levels = cats), v = c(13.8,9.0,6.4,5.5,5.0,8.3))
-cols <- c("Socijalna zaštita"="#C8942D","Zdravstvo"="#4A6B5C","Ekonomski poslovi"="#6B1F26",
-          "Opće javne usluge"="#4A5568","Obrazovanje"="#2D5A8E","Ostalo"="#B8B2A6")
+cols <- c("Socijalna zaštita"="#1A1A1A","Zdravstvo"="#333333","Ekonomski poslovi"="#4D4D4D",
+          "Opće javne usluge"="#6B6B6B","Obrazovanje"="#8C8C8C","Ostalo"="#B8B2A6")
 df$lab <- ifelse(df$v >= 4, paste0(sub("\\.", ",", sprintf("%.1f", df$v)), " %"), "")
 ggplot(df, aes(x = "", y = v, fill = cat)) +
   geom_col(width = 1, color = "#F2EDE3", linewidth = 0.6) +
@@ -794,8 +794,8 @@ ggplot(df, aes(val, z, fill = cat)) +
            size = 2.6, color = "#6B6357") +
   geom_text(data = tot, aes(t, z, label = sub("\\.", ",", sprintf("%.1f", t)), color = hl),
             hjust = -0.2, size = 2.7, inherit.aes = FALSE, show.legend = FALSE) +
-  scale_fill_manual(values = c("Socijalna zaštita"="#4A6B5C","Zdravstvo"="#2D5A8E"), name = NULL) +
-  scale_color_manual(values = c(`TRUE`="#C8942D", `FALSE`=NA), guide = "none") +
+  scale_fill_manual(values = c("Socijalna zaštita"="#333333","Zdravstvo"="#7A7A7A"), name = NULL) +
+  scale_color_manual(values = c(`TRUE`="#1A1A1A", `FALSE`=NA), guide = "none") +
   scale_x_continuous(limits = c(0, 37)) +
   labs(x = "% BDP-a (2023.)", y = NULL) +
   theme(legend.position = "top")
@@ -859,7 +859,7 @@ es <- data.frame(
   stringsAsFactors = FALSE
 )
 es$k <- factor(es$k, levels = rev(es$k))
-cols <- c("tekuće" = "#4A5568", "razvojno/kapitalno" = "#4A6B5C")
+cols <- c("tekuće" = "#8C8C8C", "razvojno/kapitalno" = "#333333")
 
 ggplot(es, aes(v, k, fill = tip)) +
   geom_col(width = 0.72) +
