@@ -32,6 +32,17 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
+      - name: Stash committed Priručnik PDF before any render
+        # Both renders below destroy the committed copy: `quarto render` rewrites
+        # docs/ (dropping docs/pdf/Prirucnik.pdf) and `quarto render --profile
+        # pdf` recreates pdf/ as its output-dir (dropping pdf/Prirucnik.pdf). The
+        # guide PDF is a standalone Typst A5 build, not a Quarto output, so it is
+        # never regenerated. Copy it somewhere neither render touches, then
+        # restore it into docs/ after both renders run.
+        run: |
+          mkdir -p /tmp/keep
+          cp pdf/Prirucnik.pdf /tmp/keep/Prirucnik.pdf
+
       - name: Setup Quarto
         uses: quarto-dev/quarto-actions/setup@v2
         with:
@@ -90,14 +101,12 @@ jobs:
           cp pdf/Javne-politike.pdf docs/pdf/Javne-politike.pdf
 
       - name: Restore Priručnik PDF into docs for Pages download
-        # `quarto render` rewrites docs/ and drops docs/pdf/Prirucnik.pdf (it is
-        # not a Quarto output — it is a standalone Typst A5 build committed under
-        # pdf/). Copy the committed source back so the index "Preuzmite PDF" link
-        # resolves instead of 404-ing. Runs always (the book-PDF step above may
-        # fail, but this guide PDF is independent of it).
+        # Restore the copy stashed before the renders (see stash step above) so
+        # the index "Preuzmite PDF" link resolves instead of 404-ing. Independent
+        # of the book-PDF render outcome, so this runs unconditionally.
         run: |
           mkdir -p docs/pdf
-          cp pdf/Prirucnik.pdf docs/pdf/Prirucnik.pdf
+          cp /tmp/keep/Prirucnik.pdf docs/pdf/Prirucnik.pdf
 
       - name: Warn if PDF render failed (deploying HTML only, old PDF stays)
         if: steps.pdf.outcome != 'success'
