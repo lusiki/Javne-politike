@@ -1,0 +1,604 @@
+<!doctype html>
+<html lang="hr-HR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Dr. sc. Milan Deskar-Škrbić — Životopis</title>
+<meta name="description" content="Životopis dr. sc. Milana Deskar-Škrbića — ekonomista usmjerenog na makroekonomiju, monetarnu politiku i javne financije.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&family=Newsreader:ital,opsz,wght@0,6..72,300;0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --paper:#F2EDE3;      /* warm cream */
+    --paper-2:#ECE5D7;    /* slightly deeper cream for panels */
+    --ink:#1C1916;        /* near-black, brown undertone */
+    --ink-soft:#5A534B;   /* muted body / secondary */
+    --ink-faint:#8B8378;  /* captions, periods */
+    --verdigris:#4A6B5C;  /* primary accent */
+    --oxblood:#6B1F26;    /* emphasis */
+    --ochre:#C8985E;      /* archival accent */
+    --line:#D8CFBE;       /* hairlines */
+    --serif:"Newsreader",Georgia,serif;
+    --sans:"Public Sans",system-ui,sans-serif;
+    --mono:"IBM Plex Mono",ui-monospace,monospace;
+  }
+
+  *{box-sizing:border-box;}
+  html{-webkit-text-size-adjust:100%;}
+  body{
+    margin:0;
+    background:var(--paper);
+    color:var(--ink);
+    font-family:var(--serif);
+    font-size:1.06rem;
+    line-height:1.62;
+    font-weight:400;
+    -webkit-font-smoothing:antialiased;
+    text-rendering:optimizeLegibility;
+  }
+
+  .page{
+    max-width:940px;
+    margin:0 auto;
+    padding:clamp(1.5rem,4vw,3.5rem) clamp(1.25rem,5vw,3rem) 4rem;
+  }
+
+  /* --- top bar --- */
+  .topbar{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:1rem;
+    font-family:var(--mono);
+    font-size:.7rem;
+    letter-spacing:.12em;
+    text-transform:uppercase;
+    color:var(--ink-faint);
+    padding-bottom:1.4rem;
+  }
+  .topbar a{
+    color:var(--verdigris);
+    text-decoration:none;
+    border-bottom:1px solid transparent;
+    transition:border-color .18s ease;
+  }
+  .topbar a:hover{border-color:var(--verdigris);}
+
+  /* --- header --- */
+  header.cv-head{
+    display:grid;
+    grid-template-columns:1fr auto;
+    gap:clamp(1.5rem,4vw,2.8rem);
+    align-items:center;
+    border-top:2px solid var(--ink);
+    border-bottom:1px solid var(--line);
+    padding:clamp(1.6rem,4vw,2.4rem) 0;
+  }
+  .kicker{
+    font-family:var(--mono);
+    font-size:.72rem;
+    font-weight:500;
+    letter-spacing:.16em;
+    text-transform:uppercase;
+    color:var(--verdigris);
+    margin:0 0 .7rem;
+  }
+  h1.name{
+    font-family:var(--serif);
+    font-weight:500;
+    font-size:clamp(2.1rem,6vw,3.35rem);
+    line-height:1.04;
+    letter-spacing:-.01em;
+    margin:0;
+  }
+  .role{
+    font-family:var(--sans);
+    font-size:1rem;
+    font-weight:500;
+    color:var(--ink);
+    margin:.9rem 0 .15rem;
+  }
+  .contact{
+    display:flex;
+    flex-wrap:wrap;
+    gap:.5rem .65rem;
+    margin-top:1.15rem;
+    font-family:var(--mono);
+    font-size:.78rem;
+  }
+  .contact a{
+    color:var(--ink);
+    text-decoration:none;
+    border:1px solid var(--line);
+    border-radius:999px;
+    padding:.28rem .8rem;
+    transition:border-color .18s ease,color .18s ease;
+    white-space:nowrap;
+  }
+  .contact a:hover{border-color:var(--verdigris);color:var(--verdigris);}
+
+  /* inline content links */
+  .entry a, .stack a, .card .cmeta a{
+    color:inherit;
+    text-decoration:none;
+    border-bottom:1px solid var(--ochre);
+    transition:color .18s ease, border-color .18s ease;
+  }
+  .entry a:hover, .stack a:hover, .card .cmeta a:hover{
+    color:var(--verdigris);
+    border-bottom-color:var(--verdigris);
+  }
+  a.doi{
+    font-family:var(--mono);
+    font-size:.7rem;
+    color:var(--verdigris);
+    text-decoration:none;
+    border-bottom:1px solid transparent;
+    white-space:nowrap;
+    transition:border-color .18s ease;
+  }
+  a.doi:hover{border-bottom-color:var(--verdigris);}
+
+  /* --- portrait (matted statecraft frame) --- */
+  .portrait{
+    width:clamp(152px,22vw,214px);
+    flex:0 0 auto;
+    margin:0;
+    padding:9px;
+    background:linear-gradient(180deg,#ffffff 0%,var(--paper) 100%);
+    border:1px solid var(--line);
+    border-radius:7px;
+    box-shadow:0 1px 0 rgba(255,255,255,.7) inset, 0 28px 54px -26px rgba(28,25,22,.6);
+    transition:transform .55s cubic-bezier(.2,.7,.2,1), box-shadow .55s ease;
+  }
+  .portrait:hover{
+    transform:translateY(-5px);
+    box-shadow:0 1px 0 rgba(255,255,255,.7) inset, 0 40px 66px -28px rgba(28,25,22,.62);
+  }
+  .portrait-frame{
+    position:relative;
+    aspect-ratio:4/5;
+    overflow:hidden;
+    border-radius:3px;
+    background:var(--paper-2);
+    box-shadow:0 0 0 1px rgba(28,25,22,.14);
+  }
+  .portrait img{
+    width:100%;height:100%;
+    object-fit:cover;
+    object-position:center top;
+    display:block;
+    filter:saturate(.97) contrast(1.015);
+  }
+  /* warm sheen so the cool photo settles onto the cream */
+  .portrait-frame::after{
+    content:"";
+    position:absolute;inset:0;
+    background:linear-gradient(150deg,rgba(200,152,94,.10),rgba(0,0,0,0) 44%);
+    pointer-events:none;
+  }
+  .portrait .initials{
+    position:absolute;inset:0;
+    display:flex;align-items:center;justify-content:center;
+    font-family:var(--serif);
+    font-weight:500;
+    font-size:clamp(2.3rem,6vw,3.1rem);
+    color:var(--verdigris);
+    letter-spacing:.02em;
+  }
+  .portrait-cap{
+    margin-top:.6rem;
+    text-align:center;
+    font-family:var(--mono);
+    font-size:.6rem;
+    font-weight:500;
+    letter-spacing:.12em;
+    text-transform:uppercase;
+    color:var(--ink-faint);
+  }
+
+  /* --- layout grid --- */
+  .grid{
+    display:grid;
+    grid-template-columns:minmax(0,2fr) minmax(0,1fr);
+    gap:clamp(1.8rem,5vw,3.4rem);
+    margin-top:2.6rem;
+  }
+  @media (max-width:760px){
+    header.cv-head{grid-template-columns:1fr;text-align:left;}
+    .portrait{order:-1;}
+    .grid{grid-template-columns:1fr;gap:2.4rem;}
+  }
+
+  /* --- sections --- */
+  section{margin-bottom:2.5rem;}
+  section:last-child{margin-bottom:0;}
+  .sec-label{
+    font-family:var(--mono);
+    font-size:.72rem;
+    font-weight:500;
+    letter-spacing:.1em;
+    text-transform:uppercase;
+    color:var(--ink-faint);
+    margin:0 0 1.15rem;
+    padding-bottom:.5rem;
+    border-bottom:1px solid var(--line);
+    display:flex;
+    align-items:baseline;
+    gap:.6rem;
+  }
+  .sec-label .no{color:var(--ochre);font-family:var(--mono);font-size:.7rem;}
+
+  p{margin:0 0 1rem;}
+  p.lead{font-size:1.12rem;color:var(--ink);}
+  aside p{color:var(--ink-soft);}
+
+  /* --- timeline (experience / education) --- */
+  .timeline{position:relative;margin:0;padding:0;list-style:none;}
+  .timeline::before{
+    content:"";
+    position:absolute;
+    left:5px;top:.4rem;bottom:.4rem;
+    width:1px;
+    background:var(--line);
+  }
+  .entry{position:relative;padding:0 0 1.6rem 1.7rem;}
+  .entry:last-child{padding-bottom:0;}
+  .entry::before{
+    content:"";
+    position:absolute;
+    left:0;top:.55rem;
+    width:11px;height:11px;
+    border-radius:50%;
+    background:var(--paper);
+    border:2px solid var(--verdigris);
+  }
+  .entry.now::before{background:var(--verdigris);}
+  .entry .period{
+    font-family:var(--mono);
+    font-size:.74rem;
+    color:var(--ink-faint);
+    letter-spacing:.02em;
+    margin-bottom:.15rem;
+  }
+  .entry .pos{
+    font-family:var(--sans);
+    font-weight:600;
+    font-size:1.02rem;
+    color:var(--ink);
+    line-height:1.3;
+  }
+  .entry .org{
+    font-style:italic;
+    color:var(--verdigris);
+    font-size:1.0rem;
+  }
+  .entry .desc{
+    margin:.4rem 0 0;
+    color:var(--ink-soft);
+    font-size:.99rem;
+  }
+
+  /* --- compact education/teaching in aside --- */
+  .stack{margin:0;padding:0;list-style:none;}
+  .stack li{padding:0 0 1rem;}
+  .stack li:last-child{padding-bottom:0;}
+  .stack .t{
+    font-family:var(--sans);
+    font-weight:600;
+    font-size:.97rem;
+    color:var(--ink);
+    line-height:1.32;
+  }
+  .stack .s{color:var(--ink-soft);font-size:.95rem;}
+  .stack .s em{color:var(--verdigris);font-style:italic;}
+
+  /* --- chips (research areas) --- */
+  .chips{display:flex;flex-wrap:wrap;gap:.45rem;margin:0;padding:0;list-style:none;}
+  .chips li{
+    font-family:var(--mono);
+    font-size:.76rem;
+    color:var(--ink);
+    background:var(--paper-2);
+    border:1px solid var(--line);
+    border-radius:999px;
+    padding:.3rem .7rem;
+  }
+
+  /* --- books + awards cards --- */
+  .cards{display:grid;gap:.9rem;}
+  .card{
+    background:var(--paper-2);
+    border:1px solid var(--line);
+    border-left:3px solid var(--ochre);
+    border-radius:4px;
+    padding:.95rem 1.1rem;
+  }
+  .card.award{border-left-color:var(--oxblood);}
+  .card .ctitle{font-weight:500;font-style:italic;}
+  .card .cmeta{
+    font-family:var(--sans);
+    font-size:.84rem;
+    color:var(--ink-soft);
+    margin-top:.3rem;
+  }
+  .card .cyear{
+    font-family:var(--mono);
+    font-size:.72rem;
+    color:var(--ink-faint);
+  }
+
+  /* --- publications --- */
+  ol.pubs{margin:0;padding:0;list-style:none;counter-reset:pub;}
+  ol.pubs li{
+    position:relative;
+    padding:.85rem 0 .85rem 2.6rem;
+    border-bottom:1px solid var(--line);
+    font-size:.98rem;
+    color:var(--ink-soft);
+  }
+  ol.pubs li:last-child{border-bottom:none;}
+  ol.pubs li::before{
+    counter-increment:pub;
+    content:counter(pub,decimal-leading-zero);
+    position:absolute;
+    left:0;top:.95rem;
+    font-family:var(--mono);
+    font-size:.74rem;
+    color:var(--ochre);
+  }
+  ol.pubs .pt{color:var(--ink);font-style:italic;}
+  ol.pubs .pv{font-family:var(--mono);font-size:.8rem;color:var(--ink-soft);}
+  ol.pubs .py{font-family:var(--mono);font-size:.78rem;color:var(--ink-faint);}
+
+  /* --- footer --- */
+  .cv-foot{
+    margin-top:3.2rem;
+    padding-top:1.3rem;
+    border-top:1px solid var(--line);
+    font-family:var(--mono);
+    font-size:.72rem;
+    letter-spacing:.02em;
+    color:var(--ink-faint);
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:space-between;
+    gap:.6rem;
+  }
+  .cv-foot a{color:var(--verdigris);text-decoration:none;}
+  .cv-foot a:hover{text-decoration:underline;}
+
+  /* --- motion --- */
+  @keyframes rise{from{opacity:0;transform:translateY(16px);}to{opacity:1;transform:none;}}
+  .js .anim{opacity:0;animation:rise .85s cubic-bezier(.2,.7,.2,1) forwards;}
+  .js .anim.d1{animation-delay:.05s;}
+  .js .anim.d2{animation-delay:.14s;}
+  .js .anim.d3{animation-delay:.24s;}
+  .js .anim.d4{animation-delay:.34s;}
+  .js .reveal{opacity:0;transform:translateY(22px);}
+  .js .reveal.in{opacity:1;transform:none;transition:opacity .75s ease,transform .75s cubic-bezier(.2,.7,.2,1);}
+  @media (prefers-reduced-motion:reduce){
+    .js .anim,.js .reveal{opacity:1!important;transform:none!important;animation:none!important;transition:none!important;}
+    .portrait,.portrait:hover{transition:none;transform:none;}
+  }
+
+  /* --- print --- */
+  @media print{
+    body{background:#fff;font-size:10.5pt;line-height:1.45;}
+    .topbar,.cv-foot{display:none;}
+    .page{max-width:none;padding:0 12mm;}
+    .portrait{box-shadow:none;}
+    section,.entry,.card,ol.pubs li{break-inside:avoid;}
+    header.cv-head{break-after:avoid;}
+    .chips li,.card{background:transparent;}
+  }
+</style>
+<script>document.documentElement.classList.add('js');</script>
+</head>
+<body>
+<div class="page">
+
+  <nav class="topbar">
+    <a href="index.html">← Natrag na knjigu</a>
+    <span>Životopis · CV</span>
+  </nav>
+
+  <header class="cv-head">
+    <div class="head-text">
+      <p class="kicker anim d1">Dr. sc.</p>
+      <h1 class="name anim d2">Milan Deskar-Škrbić</h1>
+      <p class="role anim d3">Glavni savjetnik i viši ekonomist — Hrvatska narodna banka</p>
+      <div class="contact anim d4">
+        <a href="mailto:milan.deskar-skrbic@hnb.hr">milan.deskar-skrbic@hnb.hr</a>
+        <a href="https://www.hnb.hr" target="_blank" rel="noopener">hnb.hr ↗</a>
+        <a href="https://zsem.hr/clanovi/dr-sc-milan-deskar-skrbic/" target="_blank" rel="noopener">ZŠEM profil ↗</a>
+        <a href="https://scholar.google.com/scholar?q=Milan+Deskar-Skrbic" target="_blank" rel="noopener">Google Scholar ↗</a>
+      </div>
+    </div>
+
+    <!-- Fotografija: images/milan-deskar-skrbic.jpg (4:5 portretni izrez).
+         Ako slika nedostaje, prikazuju se inicijali. -->
+    <figure class="portrait anim d3">
+      <div class="portrait-frame">
+        <img src="images/milan-deskar-skrbic.jpg" alt="Milan Deskar-Škrbić"
+             onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
+        <div class="initials" style="display:none;">MDŠ</div>
+      </div>
+      <figcaption class="portrait-cap">Hrvatska narodna banka</figcaption>
+    </figure>
+  </header>
+
+  <div class="grid">
+
+    <!-- ===================== MAIN COLUMN ===================== -->
+    <main>
+
+      <section class="reveal">
+        <h2 class="sec-label"><span class="no">01</span> Profil</h2>
+        <p class="lead">Stručni i znanstveni rad usmjeren je na makroekonomsku teoriju i politiku, monetarnu politiku i javne financije, s naglaskom na fiskalnu politiku, monetarnu integraciju i institucionalne aspekte ekonomske politike u malim otvorenim gospodarstvima.</p>
+        <p>Profesionalni put vodio je od ekonomskih analiza u financijskom sektoru, preko makroekonomskog modeliranja i istraživanja u središnjoj banci i rada u Europskoj komisiji, do vođenja monetarne politike i oblikovanja javne komunikacije Hrvatske narodne banke. Uz institucionalni i analitički rad kontinuirano je prisutan u sveučilišnoj nastavi.</p>
+      </section>
+
+      <section class="reveal">
+        <h2 class="sec-label"><span class="no">02</span> Iskustvo</h2>
+        <ul class="timeline">
+
+          <li class="entry now">
+            <div class="period">2025 —</div>
+            <div class="pos">Glavni savjetnik i viši ekonomist <span class="org">· <a href="https://www.hnb.hr" target="_blank" rel="noopener">Hrvatska narodna banka</a> — komunikacije</span></div>
+            <p class="desc">Priprema govora, analitičkih bilješki i komunikacijskih sadržaja za rukovodstvo te sudjelovanje u oblikovanju javne komunikacije središnje banke.</p>
+          </li>
+
+          <li class="entry">
+            <div class="period">Hrvatska narodna banka</div>
+            <div class="pos">Direktor, potom viši savjetnik <span class="org">· Direkcija za monetarnu politiku</span></div>
+            <p class="desc">Analitički materijali za guvernera i podloge za sudjelovanje hrvatskog predstavnika u tijelima monetarne politike Europske središnje banke; izrada makroekonomskih projekcija te analiza monetarnih, bankarskih i financijskih kretanja u Hrvatskoj i europodručju.</p>
+          </li>
+
+          <li class="entry">
+            <div class="period">Bruxelles</div>
+            <div class="pos">Analitičar <span class="org">· <a href="https://economy-finance.ec.europa.eu" target="_blank" rel="noopener">Europska komisija — Glavna uprava za gospodarstvo i financije</a></span></div>
+            <p class="desc">Analitička obrada makroekonomskih kretanja u Hrvatskoj, priprema podloga za Konvergencijsko izvješće i dokumente Europskog semestra te analiza reformskih procesa povezanih s Nacionalnim planom oporavka i otpornosti.</p>
+          </li>
+
+          <li class="entry">
+            <div class="period">2018 —</div>
+            <div class="pos">Viši ekonomski istraživač <span class="org">· Hrvatska narodna banka — Direkcija za modeliranje</span></div>
+            <p class="desc">Makroekonomsko modeliranje, poslovni ciklusi, transmisija monetarne politike i učinci fiskalne politike u malim otvorenim gospodarstvima; procjena ravnotežnog tečaja Republike Hrvatske i pripreme za pristupanje tečajnom mehanizmu ERM II.</p>
+          </li>
+
+          <li class="entry">
+            <div class="period"><a href="https://www.erstebank.hr" target="_blank" rel="noopener">Erste &amp; Steiermärkische Bank</a></div>
+            <div class="pos">Viši makroekonomski analitičar</div>
+            <p class="desc">Makroekonomske analize i prognoze za zemlje jugoistočne Europe, priprema stručnih materijala za upravu i investitore te sudjelovanje na konferencijama i prezentacijama o gospodarskim kretanjima u regiji.</p>
+          </li>
+
+          <li class="entry">
+            <div class="period">Arhivanalitika</div>
+            <div class="pos">Ekonomski analitičar</div>
+            <p class="desc">Ekonomske analize i stručne podloge za financijski i gospodarski sektor s temama monetarne politike, bankarskog sustava, regulatornih promjena, kretanja na financijskim tržištima i poreznih pitanja.</p>
+          </li>
+
+        </ul>
+      </section>
+
+      <section class="reveal">
+        <h2 class="sec-label"><span class="no">03</span> Udžbenici i nagrade</h2>
+        <div class="cards">
+          <div class="card">
+            <div class="ctitle">Makroekonomika za ekonomiste i neekonomiste</div>
+            <div class="cmeta">Bićanić, I.; Deskar-Škrbić, M. — Ekonomski lab, Zagreb · <span class="cyear">2018</span></div>
+          </div>
+          <div class="card">
+            <div class="ctitle">Ekonomika javnog sektora</div>
+            <div class="cmeta">Šimović, H.; Deskar-Škrbić, M. — Ekonomski lab · <span class="cyear">2020</span></div>
+          </div>
+          <div class="card award">
+            <div class="ctitle">Godišnja nagrada Zaklade prof. dr. Marijan Hanžeković</div>
+            <div class="cmeta">Najbolji znanstveni rad iz javnih financija u RH (s D. Milutinovićem, <em><a href="https://doi.org/10.3326/pse.45.1.1" target="_blank" rel="noopener">Design of Fiscal Consolidation Packages and Model-Based Fiscal Multipliers in Croatia</a></em>) · <span class="cyear">2020</span></div>
+          </div>
+          <div class="card award">
+            <div class="ctitle">Nagrada za najbolji znanstveni rad iz financija u RH</div>
+            <div class="cmeta">S H. Šimovićem, <em>Fiscal Policy and European Semester in Croatia: Why Should We Focus on Public Debt</em> · <span class="cyear">2019</span></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="reveal">
+        <h2 class="sec-label"><span class="no">04</span> Odabrani radovi</h2>
+        <ol class="pubs">
+          <li><span class="pt">Which bite harder: new or old EU fiscal rules? Backcasting Croatian episode under the EDP.</span> Banić, F.; Deskar-Škrbić, M.; Lang, M. <span class="pv">HNB Working Paper / Surveys 42.</span> <span class="py">2025</span></li>
+          <li><span class="pt">In search of the optimal size for local government: An assessment of economies of scale in local government in Croatia.</span> Buljan, A.; Švaljek, S.; Deskar-Škrbić, M. <span class="pv">Local Government Studies, 48(4), 604–627.</span> <span class="py">2022</span></li>
+          <li><span class="pt">Design of Fiscal Consolidation Packages and Model-Based Fiscal Multipliers in Croatia.</span> Deskar-Škrbić, M.; Milutinović, D. <span class="pv">Public Sector Economics, 45(1), 1–61.</span> <span class="py">2021</span> <a class="doi" href="https://doi.org/10.3326/pse.45.1.1" target="_blank" rel="noopener">DOI ↗</a></li>
+          <li><span class="pt">The third round of euro area enlargement: Are the candidates ready?</span> Deskar-Škrbić, M.; Kotarac, K.; Kunovac, D. <span class="pv">Journal of International Money and Finance, 107, 102205.</span> <span class="py">2020</span> <a class="doi" href="https://doi.org/10.1016/j.jimonfin.2020.102205" target="_blank" rel="noopener">DOI ↗</a></li>
+          <li><span class="pt">Twentieth Anniversary of the Euro: Why are Some Countries Still Not Willing to Join?</span> Deskar-Škrbić, M.; Kunovac, D. <span class="pv">Comparative Economic Studies.</span> <span class="py">2020</span></li>
+          <li><span class="pt">Macroeconomic effects of exogenous tax changes in a small open economy: narrative evidence from Croatia.</span> Deskar-Škrbić, M.; Grdović Gnip, A.; Šimović, H. <span class="pv">Post-Communist Economies.</span> <span class="py">2020</span></li>
+          <li><span class="pt">What drives banks' appetite for sovereign debt in CEE countries?</span> Buljan, A.; Deskar-Škrbić, M.; Dumičić, M. <span class="pv">Public Sector Economics, 44(2), 179–201.</span> <span class="py">2020</span></li>
+          <li><span class="pt">Dynamic effects of fiscal policy in Croatia: confronting New-Keynesian SOE theory with empirics.</span> Deskar-Škrbić, M. <span class="pv">Zbornik radova Ekonomskog fakulteta u Rijeci, 36(1), 81–100.</span> <span class="py">2018</span></li>
+          <li><span class="pt">Fiscal Policy and European Semester in Croatia: Why Should We Focus on Public Debt.</span> Šimović, H.; Deskar-Škrbić, M. <span class="pv">U: Petak, Z.; Kotarski, K. (ur.), Policy Making at the European Periphery: The Case of Croatia. Springer.</span> <span class="py">2018</span></li>
+          <li><span class="pt">Croatian path to the monetary union: why, when and what can we learn from our peers?</span> Deskar-Škrbić, M. <span class="pv">Ekonomski pregled, 68(6), 611–637.</span> <span class="py">2017</span></li>
+          <li><span class="pt">Monetary and fiscal policy mix in a small open economy: The case of Croatia.</span> Ćorić, T.; Šimović, H.; Deskar-Škrbić, M. <span class="pv">Economic Research – Ekonomska istraživanja, 28(1), 407–421.</span> <span class="py">2015</span></li>
+          <li><span class="pt">Functional distribution of income and economic activity in Croatia: Post-Keynesian approach.</span> Vujčić, B.; Deskar-Škrbić, M.; Ratkovski, Z.; Zrnc, J. <span class="pv">Zbornik radova Ekonomskog fakulteta u Rijeci, 32(1), 53–73.</span> <span class="py">2014</span></li>
+        </ol>
+      </section>
+
+    </main>
+
+    <!-- ===================== ASIDE COLUMN ===================== -->
+    <aside>
+
+      <section class="reveal">
+        <h2 class="sec-label">Obrazovanje</h2>
+        <ul class="timeline">
+          <li class="entry">
+            <div class="pos">Doktorat ekonomije</div>
+            <div class="s"><em><a href="https://www.efri.uniri.hr" target="_blank" rel="noopener">Ekonomski fakultet, Sveučilište u Rijeci</a></em></div>
+          </li>
+          <li class="entry">
+            <div class="pos">Diplomski studij ekonomije</div>
+            <div class="s"><em><a href="https://www.efzg.unizg.hr" target="_blank" rel="noopener">Ekonomski fakultet u Zagrebu</a></em></div>
+          </li>
+          <li class="entry">
+            <div class="pos">Preddiplomski studij ekonomije</div>
+            <div class="s"><em><a href="https://www.efzg.unizg.hr" target="_blank" rel="noopener">Ekonomski fakultet u Zagrebu</a></em></div>
+          </li>
+        </ul>
+        <p style="margin-top:1rem;font-size:.92rem;">Usmjerenja: makroekonomska teorija i politika, ekonometrija, monetarna i fiskalna politika, javne financije i međunarodna ekonomija.</p>
+      </section>
+
+      <section class="reveal">
+        <h2 class="sec-label">Nastava</h2>
+        <ul class="stack">
+          <li>
+            <div class="t"><a href="https://www.zsem.hr" target="_blank" rel="noopener">Zagrebačka škola ekonomije i managementa</a></div>
+            <div class="s">Javne financije · međunarodna ekonomija · osnove ekonomije</div>
+          </li>
+          <li>
+            <div class="t">Škola narodnog zdravlja „Andrija Štampar"</div>
+            <div class="s">Financiranje zdravstvenog sustava</div>
+          </li>
+        </ul>
+      </section>
+
+      <section class="reveal">
+        <h2 class="sec-label">Područja istraživanja</h2>
+        <ul class="chips">
+          <li>Fiskalna politika</li>
+          <li>Monetarna integracija</li>
+          <li>Makroekonomske neravnoteže</li>
+          <li>Javni dug</li>
+          <li>Lokalne javne financije</li>
+          <li>Institucije ekonomske politike</li>
+        </ul>
+      </section>
+
+    </aside>
+
+  </div>
+
+  <footer class="cv-foot">
+    <span>Dr. sc. Milan Deskar-Škrbić · Životopis</span>
+    <span>Posljednje ažuriranje · lipanj 2026. · <a href="index.html">Javne politike u Hrvatskoj</a></span>
+  </footer>
+
+</div>
+
+<script>
+  (function () {
+    var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    var els = document.querySelectorAll('.reveal');
+    if (reduce || !('IntersectionObserver' in window)) {
+      els.forEach(function (el) { el.classList.add('in'); });
+      return;
+    }
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (e) {
+        if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); }
+      });
+    }, { rootMargin: '0px 0px -8% 0px', threshold: 0.08 });
+    els.forEach(function (el) { io.observe(el); });
+  })();
+</script>
+</body>
+</html>
