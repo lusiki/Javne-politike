@@ -47,12 +47,13 @@ format:
       <span class="vd-go">Otvori predavanje →</span>
     </a>
 
-    <div class="vd-hub-card vd-soon">
-      <span class="vd-badge">Uskoro</span>
+    <a class="vd-hub-card vd-ready" href="predavanja/03-eksternalije.html" target="_blank" rel="noopener">
+      <span class="vd-badge vd-badge-ready">Dostupno</span>
       <span class="vd-hub-num">Predavanje 3</span>
       <span class="vd-hub-name">Alokacijska funkcija i eksternalije</span>
-      <span class="vd-hub-q">Tržišni neuspjesi, eksternalije, Coaseov teorem, Pigouovi porezi i rješenja regulacijom.</span>
-    </div>
+      <span class="vd-hub-q">Tržišni neuspjesi, eksternalije, Coaseov teorem, Pigouovi porezi i rješenja regulacijom — uz četiri interaktivna grafa.</span>
+      <span class="vd-go">Otvori predavanje →</span>
+    </a>
 
     <div class="vd-hub-card vd-soon">
       <span class="vd-badge">Uskoro</span>

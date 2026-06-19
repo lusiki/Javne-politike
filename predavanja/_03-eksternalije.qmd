@@ -1,0 +1,1130 @@
+---
+title: "Alokacijska funkcija i eksternalije"
+subtitle: "Eksternalije, vlasnička prava, informacije i tržišna moć"
+author: "Milan Deskar-Škrbić · Petra Palić · Luka Šikić"
+lang: hr-HR
+bibliography: ../references.bib
+# Izvor je _-prefiksiran (predavanja/_03-...qmd) pa ga render knjige (quarto
+# render) NE dira; renderiraj ručno, a output-file daje čist naziv bez podvlake.
+output-file: 03-eksternalije.html
+format:
+  revealjs:
+    theme: statecraft.scss
+    embed-resources: true
+    slide-number: c/t
+    show-slide-number: all
+    progress: true
+    width: 1050
+    height: 700
+    margin: 0.08
+    center: false
+    transition: fade
+    transition-speed: fast
+    background-transition: fade
+    controls: true
+    controls-layout: bottom-right
+    touch: true
+    hash: true
+    history: true
+    fig-align: center
+    link-external-newwindow: true
+    footer: "Javne politike u Hrvatskoj · Predavanje 3 · [lusiki.github.io/Javne-politike](https://lusiki.github.io/Javne-politike/)"
+---
+
+## Dobro došli natrag {.dio-slide}
+
+[PREDAVANJE 3 — ALOKACIJSKA FUNKCIJA I EKSTERNALIJE]{.section-label}
+
+::: {.lead}
+Danas dovršavamo priču o alokacijskoj funkciji države. Nakon javnih dobara i zajedničkih resursa redom dolaze eksternalije, asimetrične informacije i tržišna moć.
+:::
+
+. . .
+
+[Tri preostala razloga zašto tržište samo po sebi ne postiže učinkovitu alokaciju.]{.accent}
+
+::: {.notes}
+Pozdravite studente i podsjetite ih da je ovo treće predavanje u nizu o ulozi države. Naglasite da Predavanje 2 nije bilo zaokružena cjelina, nego prva polovica priče o alokacijskom neuspjehu, "strana dobara". Recite da danas prelazimo na neuspjehe koji nastaju iz interakcije i informacija. Najavite da je težište predavanja na eksternalijama te na Pigouovu i Coaseovu rješenju. Pitajte ih sjećaju li se triju Musgraveovih funkcija kao zagrijavanje.
+:::
+
+## Gdje smo stali
+
+[PODSJETNIK NA PREDAVANJE 2]{.section-label}
+
+- Vrste dobara prema [rivalnosti]{.accent} u potrošnji i [isključivosti]{.accent} iz potrošnje.
+- Javna dobra su nerivalna i neisključiva pa nastaje problem [slobodnoga jahača]{.accent}: svatko čeka da drugi plati.
+- Zajednički resursi su rivalni, ali neisključivi pa prijeti [pretjerana eksploatacija]{.accent} zajedničkoga dobra.
+- Musgraveov okvir triju funkcija države — alokacijska, distribucijska i stabilizacijska [@musgrave1959].
+
+::: {.notes}
+Ovo je čisti podsjetnik, prođite ga brzo, najviše pet minuta. Tablicu rivalnost-isključivost nacrtajte na ploči ako su studenti nesigurni. Pitajte za primjer javnoga dobra (obrana, ulična rasvjeta) i primjer zajedničkoga resursa (ribarstvo, ispaša). Povežite slobodnoga jahača i pretjeranu eksploataciju kao dva lica istoga problema neisključivosti. Naglasite da je Musgraveov okvir mapa cijele knjige i da danas ostajemo unutar prve funkcije.
+:::
+
+## Kako tržište još zakaže
+
+[MOST PREMA EKSTERNALIJAMA]{.section-label}
+
+Predavanje 2 pokazalo je neuspjehe na strani samih dobara. Preostaju tri neuspjeha koji nastaju iz interakcije i informacija:
+
+- [Eksternalije]{.accent} — postupci jednoga sudionika prelijevaju troškove ili koristi na druge.
+- [Asimetrične informacije]{.accent} — jedna strana zna više od druge.
+- [Tržišna moć]{.accent} — monopol ili oligopol postavlja cijenu iznad troška.
+
+::: {.cbox .kljucno}
+[Ključni uvid]{.cbox-label}
+Sva tri neuspjeha dijele istu jezgru: tržišna cijena ne odražava sve društvene troškove i koristi, pa konkurentska ravnoteža više nije učinkovita.
+:::
+
+::: {.notes}
+Ovo je središnji most predavanja, zadržite se na njemu. Objasnite da kod javnih dobara problem leži u prirodi dobra, a danas problem leži u tome što signal cijene zakaže. Vodite studente do zajedničke jezgre: u svakom od triju slučajeva privatni trošak ili korist odstupa od društvenoga. Pitajte ih da pogode primjer za svaki neuspjeh prije nego krenete u detalje. Naglasite da je upravo taj raskorak privatnoga i društvenoga opravdanje za intervenciju države.
+:::
+
+## Agenda današnjeg predavanja
+
+[PLAN RADA]{.section-label}
+
+::: {.agenda}
+1. Negativne eksternalije i Pigouov porez [@pigou1920].
+2. Pozitivne eksternalije i instrumenti poticanja.
+3. Coaseov teorem i vlasnička prava [@coase1960].
+4. Asimetrične informacije — nepovoljan odabir i moralni hazard.
+5. Tržišna moć i monopol, sa sažetkom cijele alokacijske funkcije.
+:::
+
+::: {.notes}
+Prođite agendu kao kartu puta i recite koliko otprilike traje svaki blok. Naglasite da su prve tri točke srce predavanja, eksternalije i njihova dva klasična rješenja, Pigou i Coase. Recite da su informacije i tržišna moć kraći blokovi koji zaokružuju alokacijsku funkciju. Najavite da ćemo na kraju sve neuspjehe povezati u jednu cjelovitu sliku. Ako predajete u tri sata, ovdje je dobro mjesto za najavu stanke nakon trećega bloka.
+:::
+
+## Polazno pitanje {.dio-slide}
+
+[OD ČEGA KREĆEMO]{.section-label}
+
+::: {.lead}
+Tvornica na obali ispušta dim i otpadnu vodu u rijeku. Proizvod prodaje po cijeni koja pokriva njezine troškove, ali nizvodno ribari i stanovnici plaćaju onečišćenom vodom i zrakom.
+:::
+
+. . .
+
+Tko zapravo snosi trošak proizvodnje, a tko bi ga trebao platiti?
+
+::: {.notes}
+Ispričajte ovaj primjer slikovito jer on otvara cijelu temu eksternalija. Navedite studente da razlikuju privatni trošak tvornice od ukupnoga društvenog troška koji uključuje štetu nizvodno. Pitajte ih čini li se cijena proizvoda preniskom i zašto. Pustite kratku raspravu o tome tko bi trebao platiti, sama tvornica, kupci ili država. Recite da je upravo to pitanje okosnica idućega bloka o Pigouovu porezu i da ćemo se ovom rijekom vraćati kroz cijelo predavanje.
+:::
+
+## Eksternalije {.dio-slide}
+
+[ALOKACIJSKA FUNKCIJA]{.section-label}
+
+::: {.lead}
+Tržišna cijena ne obuhvaća sve posljedice neke odluke. Kada dio učinaka padne na ljude koji u razmjeni ne sudjeluju, privatni i društveni račun razilaze se, a tržišna ravnoteža prestaje biti učinkovita.
+:::
+
+::: {.notes}
+Ovo je prijelazni slajd nove cjeline; povežite ga s prethodnim dijelom o vrstama dobara. Naglasite da smo dosad pretpostavljali da cijena odražava sve troškove i koristi, a sada tu pretpostavku napuštamo. Postavite uvodno pitanje publici: tko plaća kada tvornica onečisti rijeku nizvodno? Najavite da ćemo vidjeti zašto tržište tada griješi i kako ga porez može ispraviti.
+:::
+
+## Što je eksternalija
+
+[POJAM]{.section-label}
+
+::: {.def}
+Postoji **eksternalija** kada odluka jednog aktera utječe na dobrobit drugih, a taj se učinak ne odražava u tržišnoj cijeni, pa se privatni i društveni trošak (ili korist) razilaze [@pigou1920; @baumol1988].
+:::
+
+. . .
+
+- [privatni trošak]{.accent}: ono što plaća sam donositelj odluke
+- [društveni trošak]{.accent}: privatni trošak uvećan za učinak na druge
+
+. . .
+
+- [negativna]{.accent} eksternalija: aktivnost stvara trošak za druge, tržište je proizvodi previše
+- [pozitivna]{.accent} eksternalija: aktivnost stvara korist za druge, tržište je proizvodi premalo
+
+::: {.notes}
+Definiciju razložite polako; ključ je u tome da učinak nije obuhvaćen cijenom. Razlikujte privatni i društveni trošak na jednostavnom primjeru: vozač osjeti cijenu goriva, ali ne i zagušenje i onečišćenje koje nameće drugima. Spomenite da eksternalije mogu biti i pozitivne, primjerice cijepljenje ili uredno održana fasada u ulici. U ovoj cjelini fokus je na negativnima jer one motiviraju korektivni porez.
+:::
+
+## Negativna eksternalija
+
+[MEHANIZAM]{.section-label}
+
+::: {.lead}
+Kod negativne eksternalije marginalni privatni trošak ne uključuje štetu nanesenu drugima, pa je manji od marginalnog društvenog troška.
+:::
+
+. . .
+
+- proizvođač uspoređuje cijenu samo s vlastitim troškom (MPC)
+- vanjski trošak (šteta drugima) ostaje izvan njegova računa
+- zato proizvodi više nego što je društveno poželjno
+
+. . .
+
+[primjeri]{.muted}: onečišćenje rijeke, emisije stakleničkih plinova, buka, prometne gužve, pasivno pušenje, prekomjerna uporaba antibiotika
+
+::: {.notes}
+Istaknite logiku odlučivanja: pojedinac maksimizira vlastitu korist i staje ondje gdje se njegov trošak izjednači s cijenom, ne mareći za teret koji prebacuje na druge. Upravo zato ishod nije nepošten samo moralno nego i neučinkovit za društvo u cjelini. Provedite kroz primjer tvornice koja ispušta otpad u rijeku: njezin račun ne uključuje trošak ribara i kupača nizvodno. Pitajte studente da sami dodaju primjer iz svakodnevice.
+:::
+
+## Model i gubitak blagostanja
+
+[MODEL]{.section-label}
+
+- [MPC]{.var}: marginalni privatni trošak, ono što proizvođač sam snosi
+- [MSC]{.var}: marginalni društveni trošak, $MSC = MPC + \text{vanjski trošak}$
+- tržišna količina [Q_M]{.var} nastaje u presjeku MPC i potražnje D
+- društveni optimum [Q*]{.var} je u presjeku MSC i potražnje D te je manji od Q_M
+
+. . .
+
+- između Q* i Q_M proizvode se jedinice čiji društveni trošak premašuje vrijednost
+- zbroj tih neto gubitaka je [gubitak blagostanja]{.accent} (DWL), trokut između krivulja
+
+::: {.notes}
+Vodite studente kroz model korak po korak: prvo MPC i potražnja daju tržišni ishod, zatim podignite krivulju na MSC dodavanjem vanjskog troška. Naglasite da se optimum pomiče ulijevo, na manju količinu, a ne na nulu; cilj nije ukinuti aktivnost nego je svesti na razinu na kojoj se isplati. Trokut DWL objasnite kao zbroj jedinica koje koštaju društvo više nego što vrijede. Najavite da na sljedećem slajdu graf isprobavamo uživo.
+:::
+
+## Negativna eksternalija na grafu {.smaller}
+
+[MODEL — ISPROBAJTE]{.section-label}
+
+```{ojs}
+//| echo: false
+viewof ext_controls = Inputs.form({
+  ext:       Inputs.range([5, 40],    {value: 20,  step: 1,    width: 200, label: "Vanjski trošak (e)"}),
+  eps_d_ext: Inputs.range([0.3, 2.5], {value: 1.0, step: 0.05, width: 200, label: "Elast. potražnje |εD|"}),
+  eps_s_ext: Inputs.range([0.3, 2.5], {value: 1.0, step: 0.05, width: 200, label: "Elast. ponude εS"})
+})
+```
+
+```{ojs}
+//| echo: false
+{
+  const e = ext_controls.ext, eps_d_ext = ext_controls.eps_d_ext, eps_s_ext = ext_controls.eps_s_ext;
+  const Qm = 60, Pmpc = 50, Qmax = 110, Pmax = 110;
+  const b_d = Pmpc / (Qm * eps_d_ext);
+  const a_d = Pmpc + b_d * Qm;
+  const b_s = Pmpc / (Qm * eps_s_ext);
+  const c_s = Pmpc - b_s * Qm;
+  const Qstar = (a_d - c_s - e) / (b_d + b_s);
+  const Pstar = a_d - b_d * Qstar;
+  const Qs = d3.range(0, Qmax + 1);
+  const demand = Qs.map(q => ({Q: q, P: a_d - b_d * q})).filter(p => p.P >= 0 && p.P <= Pmax);
+  const mpc = Qs.map(q => ({Q: q, P: c_s + b_s * q})).filter(p => p.P >= 0 && p.P <= Pmax);
+  const msc = Qs.map(q => ({Q: q, P: c_s + e + b_s * q})).filter(p => p.P >= 0 && p.P <= Pmax);
+  const dwlTri = [{Q: Qstar, P: Pstar}, {Q: Qm, P: Pmpc}, {Q: Qm, P: Pstar}];
+  const dwl = 0.5 * Math.abs(Pstar - Pmpc) * Math.abs(Qm - Qstar);
+  return Plot.plot({
+    width: 820, height: 318, marginLeft: 54, marginRight: 16, marginTop: 20, marginBottom: 38,
+    style: {fontSize: "12px", fontFamily: "Public Sans, system-ui, sans-serif", color: "#3A332D", background: "transparent"},
+    x: {label: "Količina (Q) →", domain: [0, Qmax]},
+    y: {label: "↑ Cijena / Trošak (P)", domain: [0, Pmax], grid: true},
+    marks: [
+      Plot.ruleY([0], {stroke: "#C9C3B8"}),
+      Plot.line([...dwlTri, dwlTri[0]], {x: "Q", y: "P", stroke: "#6B1F26", strokeWidth: 1, fill: "#D8B5B3", fillOpacity: 0.65}),
+      Plot.line(demand, {x: "Q", y: "P", stroke: "#2D5A8E", strokeWidth: 2.5}),
+      Plot.line(mpc, {x: "Q", y: "P", stroke: "#4A6B5C", strokeWidth: 2}),
+      Plot.line(msc, {x: "Q", y: "P", stroke: "#6B1F26", strokeWidth: 2}),
+      Plot.ruleY([Pstar], {stroke: "#6B6357", strokeDasharray: "4,3"}),
+      Plot.ruleY([Pmpc], {stroke: "#6B6357", strokeDasharray: "4,3"}),
+      Plot.ruleX([Qstar], {y1: 0, y2: Pstar, stroke: "#6B6357", strokeDasharray: "4,3"}),
+      Plot.ruleX([Qm], {y1: 0, y2: Pmpc, stroke: "#6B6357", strokeDasharray: "4,3"}),
+      Plot.dot([{Q: Qm, P: Pmpc}], {x: "Q", y: "P", r: 5, fill: "#4A6B5C", stroke: "white", strokeWidth: 2}),
+      Plot.dot([{Q: Qstar, P: Pstar}], {x: "Q", y: "P", r: 5, fill: "#6B1F26", stroke: "white", strokeWidth: 2}),
+      Plot.text([{x: Qmax * 0.8, y: a_d - b_d * Qmax * 0.8, label: "D"}], {x: "x", y: "y", text: "label", fill: "#2D5A8E", fontSize: 12, fontWeight: 600, dy: -8}),
+      Plot.text([{x: Qmax * 0.8, y: c_s + b_s * Qmax * 0.8, label: "MPC"}], {x: "x", y: "y", text: "label", fill: "#4A6B5C", fontSize: 12, fontWeight: 600, dy: -8}),
+      Plot.text([{x: Qmax * 0.64, y: c_s + e + b_s * Qmax * 0.64, label: `MSC (e=${e})`}], {x: "x", y: "y", text: "label", fill: "#6B1F26", fontSize: 12, fontWeight: 600, dy: -8}),
+      Plot.text([{x: Qstar, y: 2, label: `Q* = ${Qstar.toFixed(1)}`}], {x: "x", y: "y", text: "label", textAnchor: "middle", fontSize: 11, fill: "#6B1F26"}),
+      Plot.text([{x: Qm, y: 2, label: `Q_M = ${Qm.toFixed(1)}`}], {x: "x", y: "y", text: "label", textAnchor: "middle", fontSize: 11, fill: "#4A6B5C"}),
+      Plot.text([{x: 2, y: Pmax * 0.96, label: `Gubitak blagostanja (DWL) = ${dwl.toFixed(1)}`}], {x: "x", y: "y", text: "label", textAnchor: "start", fontSize: 13, fill: "#6B1F26", fontWeight: 700})
+    ]
+  });
+}
+```
+
+::: {.isprobaj}
+Povećajte vanjski trošak (e) i promatrajte kako se $Q^{*}$ udaljava od $Q_M$, a trokut gubitka blagostanja raste.
+:::
+
+::: {.notes}
+Pokažite uživo: prvo MPC i potražnja daju tržišni ishod, zatim klizačem podignite vanjski trošak i gledajte kako se MSC odmiče, optimum klizi ulijevo, a crveni trokut DWL raste. Vratite vanjski trošak na nisku vrijednost i pokažite kako trokut iščezava jer se privatni i društveni trošak gotovo poklope. Naglasite da cilj nije nulta proizvodnja nego količina na kojoj se aktivnost još isplati društvu.
+:::
+
+## Pigouov porez
+
+[INSTRUMENT]{.section-label}
+
+::: {.lead}
+Ako država naplati porez po jedinici jednak graničnom vanjskom trošku, privatni se trošak izjednači s društvenim i tržište samo dođe do optimuma.
+:::
+
+. . .
+
+::: {.formula}
+$t = D'(q^*) = \text{granični vanjski trošak u optimumu}$
+:::
+
+. . .
+
+- porez podiže MPC na razinu MSC, pa proizvođač sada uračunava i štetu drugima
+- tržišna količina pada s Q_M na Q*, gubitak blagostanja nestaje
+- eksternalija je [internalizirana]{.accent}: vanjski trošak postaje dio cijene [@pigou1920]
+
+. . .
+
+[primjeri]{.muted}: porez na ugljik, trošarine na gorivo, porezi na duhan i alkohol
+
+::: {.notes}
+Glavna ideja je da porez ne kažnjava nego ispravlja: vraća u cijenu ono što je tržište izostavilo. Naglasite da je ispravni porez jednak vanjskom trošku u optimumu, ne maksimalno mogućoj šteti niti nuli. Pokažite kako porez pomiče krivulju ponude i kako se nova ravnoteža poklapa s Q*. Spomenite da prihod od poreza nije glavni cilj, nego nuspojava korekcije; ako želite, povucite vezu prema duhanu i gorivu kao poznatim primjerima.
+:::
+
+## Koliko bi porez trebao iznositi
+
+[KALIBRACIJA]{.section-label}
+
+::: {.lead}
+Teorija kaže da porez treba biti jednak vanjskom trošku, ali taj je trošak u praksi teško izmjeriti i vrijednosno je opterećen.
+:::
+
+. . .
+
+- za klimu je mjera [društveni trošak ugljika]{.accent}: procijenjena šteta od dodatne tone CO2
+- procjene se kreću u širokom rasponu, od desetak do više stotina dolara po toni
+- raspon raste kako modeli uključuju više dugoročnih šteta [@nordhaus2017; @rennert2022]
+
+. . .
+
+::: {.cbox .empirija}
+[Empirija]{.cbox-label}
+Visina društvenog troška ugljika presudno ovisi o diskontnoj stopi, to jest o tome koliko vrednujemo buduće štete u odnosu na sadašnje. Niža diskontna stopa daje bitno viši porez. Kalibracija stoga nije puka tehnička činjenica, nego procjena natopljena vrijednosnim sudovima o pravednosti prema budućim naraštajima.
+:::
+
+::: {.notes}
+Ovdje razbijte dojam da je porez jednoznačno odrediv broj. Objasnite diskontiranje jednostavno: koliko nam danas vrijedi šteta koja će se dogoditi za sto godina. Pokažite zašto izbor diskontne stope, naizgled tehnički, zapravo sadrži etički sud o pravednosti među naraštajima. Povežite s činjenicom da procjene društvenog troška ugljika rastu kako modeli postaju obuhvatniji. Poruka studentima: ekonomska teorija daje okvir, ali konačni broj je politička i vrijednosna odluka.
+:::
+
+## Negativne eksternalije oko nas
+
+[PRIMJERI]{.section-label}
+
+::: {.cbox .praksa}
+[Praksa]{.cbox-label}
+
+- [emisije CO2]{.accent}: porez na ugljik ili sustav trgovanja emisijama
+- [gorivo]{.accent}: trošarine koje pokrivaju onečišćenje i trošenje cesta
+- [duhan i alkohol]{.accent}: trošarine koje uračunavaju troškove za zdravlje i druge
+- [prometne gužve]{.accent}: naknada za ulazak u zagušene gradske zone
+- [buka]{.accent}: pristojbe i naknade, primjerice za noćne letove zračnih luka
+:::
+
+::: {.notes}
+Ovaj slajd povezuje teoriju sa stvarnim instrumentima koje studenti susreću u svakodnevici. Za svaki primjer kratko imenujte vanjski trošak i instrument koji ga internalizira. Naglasite da iza svake od tih pristojbi stoji ista logika Pigouova poreza, koliko god se primjeri činili različitima. Završite pitanjem koji bi se još svakodnevni trošak za druge mogao ispraviti sličnom naknadom, kao prijelaz prema sljedećoj cjelini.
+:::
+
+## Pozitivne eksternalije {.dio-slide}
+
+[ALOKACIJSKA FUNKCIJA]{.section-label}
+
+::: {.lead}
+Kad se korist od neke aktivnosti prelijeva na druge koji za nju nisu platili, tržište je proizvodi premalo.
+:::
+
+::: {.notes}
+Ovo je naslovni slajd cjeline o pozitivnim eksternalijama. Povežite ga s prethodnom cjelinom o negativnim eksternalijama: tamo je tržište proizvodilo previše, ovdje proizvodi premalo. Naglasite simetriju problema. Pitajte studente neka navedu aktivnost od koje korist ima i netko tko u njoj ne sudjeluje, primjerice susjedov uredan vrt ili nečije cijepljenje.
+:::
+
+## Pozitivna eksternalija
+
+[MEHANIZAM]{.section-label}
+
+::: {.def}
+Postoji **pozitivna eksternalija** kad aktivnost stvara korist za druge koja nije plaćena, pa je njezina marginalna privatna korist niža od marginalne društvene koristi.
+:::
+
+- Marginalna privatna korist [(MPB)]{.var}: koliko vrijedi onome tko odlučuje
+- Marginalna društvena korist [(MSB)]{.var}: privatna korist plus korist koja se prelijeva na druge
+- [MPB < MSB]{.accent}: dio koristi pojedinac ne uračunava, pa proizvodi premalo
+
+. . .
+
+Tipični primjeri:
+
+- [Cijepljenje]{.accent}: smanjuje širenje bolesti i na necijepljene
+- [Obrazovanje]{.accent}: diže produktivnost i informiranost, smanjuje kriminal
+- [Istraživanje i razvoj]{.accent}: znanje se prelijeva na druge proizvođače
+
+::: {.notes}
+Objasnite mehanizam na cijepljenju: kad se netko cijepi, štiti i one oko sebe jer im smanjuje izloženost zarazi, no tu korist ne osjeća u svom džepu pa je ne uračunava u odluku. Zato pojedinac procjenjuje samo MPB, a društvo bi cijenilo cijeli MSB. Pitajte studente zašto bi obrazovanje bilo društveno korisnije od onoga što pojedinac sam dobiva višom plaćom; navedite informiraniji biralački korpus i niži kriminal. Naglasite da je razlika između dviju krivulja upravo vanjska korist.
+:::
+
+## Model i propuštena korist
+
+[MODEL]{.section-label}
+
+- Krivulja potražnje jednaka je [MPB]{.var}; krivulja ponude odražava granični trošak
+- [MSB = MPB + vanjska korist]{.accent}: leži iznad krivulje potražnje
+- Tržišna količina [Q_M]{.var} u presjeku MPB i ponude manja je od optimuma [Q*]{.var} u presjeku MSB i ponude
+- Trokut između [Q_M]{.var} i [Q*]{.var} mjeri propuštenu društvenu korist
+
+::: {.notes}
+Vodite studente kroz model korak po korak: prvo pokažite presjek potražnje (MPB) i ponude koji daje tržišnu količinu, zatim povucite krivulju MSB iznad potražnje i pokažite veću optimalnu količinu. Istaknite da tržište nije neuspješno zato što proizvodi nešto loše, nego zato što proizvodi premalo dobre stvari. Trokut između dviju količina izgubljena je društvena korist koju bismo mogli dobiti uz pravu razinu proizvodnje. Najavite interaktivni prikaz na sljedećem slajdu.
+:::
+
+## Pozitivna eksternalija na grafu {.smaller}
+
+[MODEL — ISPROBAJTE]{.section-label}
+
+```{ojs}
+//| echo: false
+viewof pos_controls = Inputs.form({
+  extb:      Inputs.range([5, 40],    {value: 20,  step: 1,    width: 200, label: "Vanjska korist (b)"}),
+  eps_d_pos: Inputs.range([0.3, 2.5], {value: 1.0, step: 0.05, width: 200, label: "Elast. potražnje |εD|"}),
+  eps_s_pos: Inputs.range([0.3, 2.5], {value: 1.0, step: 0.05, width: 200, label: "Elast. ponude εS"})
+})
+```
+
+```{ojs}
+//| echo: false
+{
+  const b = pos_controls.extb, eps_d_pos = pos_controls.eps_d_pos, eps_s_pos = pos_controls.eps_s_pos;
+  const Qm = 50, Pm = 50, Qmax = 110, Pmax = 110;
+  const b_d = Pm / (Qm * eps_d_pos);
+  const a_d = Pm + b_d * Qm;
+  const b_s = Pm / (Qm * eps_s_pos);
+  const c_s = Pm - b_s * Qm;
+  const Qstar = (a_d + b - c_s) / (b_d + b_s);
+  const Pstar = c_s + b_s * Qstar;
+  const MSB_Qm = a_d + b - b_d * Qm;
+  const Qs = d3.range(0, Qmax + 1);
+  const mpb = Qs.map(q => ({Q: q, P: a_d - b_d * q})).filter(p => p.P >= 0 && p.P <= Pmax);
+  const msb = Qs.map(q => ({Q: q, P: a_d + b - b_d * q})).filter(p => p.P >= 0 && p.P <= Pmax);
+  const supply = Qs.map(q => ({Q: q, P: c_s + b_s * q})).filter(p => p.P >= 0 && p.P <= Pmax);
+  const dwlTri = [{Q: Qm, P: Pm}, {Q: Qm, P: MSB_Qm}, {Q: Qstar, P: Pstar}];
+  const dwl = 0.5 * Math.abs(MSB_Qm - Pm) * Math.abs(Qstar - Qm);
+  return Plot.plot({
+    width: 820, height: 318, marginLeft: 54, marginRight: 16, marginTop: 20, marginBottom: 38,
+    style: {fontSize: "12px", fontFamily: "Public Sans, system-ui, sans-serif", color: "#3A332D", background: "transparent"},
+    x: {label: "Količina (Q) →", domain: [0, Qmax]},
+    y: {label: "↑ Cijena / Korist (P)", domain: [0, Pmax], grid: true},
+    marks: [
+      Plot.ruleY([0], {stroke: "#C9C3B8"}),
+      Plot.line([...dwlTri, dwlTri[0]], {x: "Q", y: "P", stroke: "#C8985E", strokeWidth: 1, fill: "#E8D6B8", fillOpacity: 0.65}),
+      Plot.line(mpb, {x: "Q", y: "P", stroke: "#2D5A8E", strokeWidth: 2.5}),
+      Plot.line(msb, {x: "Q", y: "P", stroke: "#2B6CB0", strokeWidth: 2}),
+      Plot.line(supply, {x: "Q", y: "P", stroke: "#4A6B5C", strokeWidth: 2}),
+      Plot.ruleY([Pstar], {stroke: "#6B6357", strokeDasharray: "4,3"}),
+      Plot.ruleY([Pm], {stroke: "#6B6357", strokeDasharray: "4,3"}),
+      Plot.ruleX([Qstar], {y1: 0, y2: Pstar, stroke: "#6B6357", strokeDasharray: "4,3"}),
+      Plot.ruleX([Qm], {y1: 0, y2: MSB_Qm, stroke: "#6B6357", strokeDasharray: "4,3"}),
+      Plot.dot([{Q: Qm, P: Pm}], {x: "Q", y: "P", r: 5, fill: "#2D5A8E", stroke: "white", strokeWidth: 2}),
+      Plot.dot([{Q: Qstar, P: Pstar}], {x: "Q", y: "P", r: 5, fill: "#2B6CB0", stroke: "white", strokeWidth: 2}),
+      Plot.text([{x: Qmax * 0.8, y: a_d - b_d * Qmax * 0.8, label: "D = MPB"}], {x: "x", y: "y", text: "label", fill: "#2D5A8E", fontSize: 12, fontWeight: 600, dy: -8}),
+      Plot.text([{x: Qmax * 0.64, y: a_d + b - b_d * Qmax * 0.64, label: `MSB (b=${b})`}], {x: "x", y: "y", text: "label", fill: "#2B6CB0", fontSize: 12, fontWeight: 600, dy: -8}),
+      Plot.text([{x: Qmax * 0.8, y: c_s + b_s * Qmax * 0.8, label: "S"}], {x: "x", y: "y", text: "label", fill: "#4A6B5C", fontSize: 12, fontWeight: 600, dy: -8}),
+      Plot.text([{x: Qm, y: 2, label: `Q_M = ${Qm.toFixed(1)}`}], {x: "x", y: "y", text: "label", textAnchor: "middle", fontSize: 11, fill: "#2D5A8E"}),
+      Plot.text([{x: Qstar, y: 2, label: `Q* = ${Qstar.toFixed(1)}`}], {x: "x", y: "y", text: "label", textAnchor: "middle", fontSize: 11, fill: "#2B6CB0"}),
+      Plot.text([{x: 2, y: Pmax * 0.96, label: `Propuštena korist (DWL) = ${dwl.toFixed(1)}`}], {x: "x", y: "y", text: "label", textAnchor: "start", fontSize: 13, fill: "#9A6F38", fontWeight: 700})
+    ]
+  });
+}
+```
+
+::: {.isprobaj}
+Povećajte vanjsku korist i pratite kako se krivulja MSB udaljava od MPB, a trokut propuštene društvene koristi raste jer tržište proizvodi premalo.
+:::
+
+::: {.notes}
+Pokažite uživo: prvo presjek potražnje (MPB) i ponude daje tržišnu količinu, zatim klizačem podignite vanjsku korist i gledajte kako MSB raste iznad MPB, optimum klizi udesno, a žuti trokut propuštene koristi raste. Spustite vanjsku korist na nulu i pokažite kako se MSB stopi s MPB pa propuštena korist nestaje. Naglasite da je to zrcalna slika negativne eksternalije.
+:::
+
+## Subvencije i javno financiranje
+
+[ISPRAVLJANJE]{.section-label}
+
+::: {.lead}
+Ako tržište proizvodi premalo, država može potaknuti proizvodnju do društvenog optimuma.
+:::
+
+- [Pigouova subvencija]{.accent}: po jedinici dobra spušta privatni trošak za iznos vanjske koristi, pa privatni izbor pomiče prema [Q*]{.var} [@pigou1920]
+- [Javno financiranje]{.accent}: država izravno financira škole, sveučilišta, cijepljenje i istraživanje
+- [Porezne olakšice]{.accent}: blaži oblik subvencije kroz porezni sustav
+
+. . .
+
+::: {.cbox .kljucno}
+[Ključno]{.cbox-label}
+Ovo je veza s meritornim dobrima iz prethodnog predavanja: država ih financira upravo zato što njihova puna društvena vrijednost premašuje ono što bi pojedinci sami platili.
+:::
+
+::: {.notes}
+Povežite Pigouovu subvenciju sa simetrijom prema Pigouovu porezu kod negativnih eksternalija: porez podiže privatni trošak, subvencija ga spušta, a oba pomiču privatni izbor prema društvenom optimumu. Objasnite zašto je obrazovanje pretežno javno financirano upravo zbog prelijevanja koristi. Podsjetite studente na meritorna dobra iz Predavanja 2 i pitajte ih spada li javnozdravstvena kampanja o cijepljenju u subvenciju ili u informacijski instrument; vratit ćemo se na to.
+:::
+
+## Izbornik instrumenata
+
+[INSTRUMENTI]{.section-label}
+
+::: {.lead}
+Za ispravljanje eksternalija država raspolaže s nekoliko obitelji instrumenata.
+:::
+
+::: {.columns}
+::: {.column width="50%"}
+[Cijena]{.accent}
+
+- Pigouov porez ili subvencija
+- Mijenja relativne cijene i prepušta tržištu da nađe količinu
+
+[Količina]{.accent}
+
+- Prenosive emisijske dozvole (cap-and-trade)
+- Količina je fiksirana, cijenu formira tržište
+- Primjer: sustav EU ETS
+:::
+
+::: {.column width="50%"}
+[Zapovijed i nadzor]{.accent}
+
+- Administrativna regulacija i standardi
+- Najveće dopuštene emisije, tehnički standardi, zabrane
+- Izravno propisuje ponašanje, bez tržišnog mehanizma cijene
+:::
+:::
+
+::: {.notes}
+Predstavite tri obitelji instrumenata kao izbornik iz kojeg država bira prema okolnostima. Naglasite ključnu razliku: porez fiksira cijenu i pušta da se količina prilagodi, dozvole fiksiraju količinu i puštaju da se cijena prilagodi, a regulacija izravno propisuje ponašanje. Iskoristite EU ETS kao poznat primjer trgovanja emisijama. Najavite da sljedeći slajd pokazuje zašto izbor između cijene i količine nije svejedno pitanje.
+:::
+
+## Cijene ili količine
+
+[USPOREDBA]{.section-label}
+
+- [Porez]{.accent} fiksira cijenu emisije, a količina se prilagođava
+- [Dozvole]{.accent} fiksiraju ukupnu količinu, a cijena se formira na tržištu
+- U svijetu bez neizvjesnosti oba instrumenta mogu dati isti ishod
+
+. . .
+
+- Pod neizvjesnošću o troškovima i koristima izbor nije neutralan
+- Bolji instrument ovisi o relativnim nagibima graničnih šteta i graničnih troškova [@weitzman1974]
+
+::: {.cbox .kljucno}
+[Ključno]{.cbox-label}
+Kad je granična šteta strma (mala pogreška u količini puno košta), bolje je fiksirati količinu dozvolama; kad je strm granični trošak smanjenja, bolje je fiksirati cijenu porezom.
+:::
+
+::: {.notes}
+Ovo je intelektualno najzahtjevniji slajd cjeline pa idite polako. Objasnite Weitzmanov uvid: kad ne znamo točan oblik krivulja, biramo instrument koji minimizira štetu od pogreške. Ako je krivulja granične štete vrlo strma, kao kod praga iznad kojeg šteta naglo raste, želimo sigurnost u količini pa biramo dozvole. Ako je strm trošak smanjenja, pogreška u cijeni skuplja je pa biramo porez. Ne ulazite u izvod, dovoljna je intuicija o nagibima.
+:::
+
+## Standardi i informacijski instrumenti
+
+[INSTRUMENTI]{.section-label}
+
+::: {.columns}
+::: {.column width="50%"}
+[Regulacija i standardi]{.accent}
+
+- Zabrane, tehnički standardi, najveće dopuštene razine
+- Jasni i provedivi kad je ponašanje lako mjerljivo
+- Manje fleksibilni: ne uvažavaju razlike u troškovima među sudionicima
+:::
+
+::: {.column width="50%"}
+[Informacijski instrumenti]{.accent}
+
+- Označavanje, obvezno objavljivanje podataka
+- Jeftiniji i manje nametljivi
+- Slabiji učinak: oslanjaju se na to da će ljudi sami promijeniti ponašanje
+:::
+:::
+
+. . .
+
+::: {.cbox .praksa}
+[Praksa]{.cbox-label}
+Energetske oznake na kućanskim uređajima i nutritivne tablice na hrani informacijski su instrumenti: ne zabranjuju ništa, nego ispravljaju asimetriju informacija i puštaju potrošaču izbor.
+:::
+
+::: {.notes}
+Postavite raspon od najtvrđih do najmekših instrumenata: zabrane i standardi su najtvrđi, informacijski instrumenti najmekši. Objasnite glavni nedostatak standarda: budući da svima propisuju isto, ne iskorištavaju činjenicu da je nekima smanjenje jeftino, a nekima skupo, pa su tržišni instrumenti često učinkovitiji. S druge strane, informacijski instrumenti jeftini su, ali djeluju samo ako ljudi reagiraju na informaciju. Pitajte studente jesu li ikad promijenili kupnju zbog energetske oznake i koliko su takve oznake djelotvorne.
+:::
+
+## Coaseov obrat {.dio-slide}
+
+[VLASNIČKA PRAVA I PREGOVOR]{.section-label}
+
+::: {.lead}
+Eksternalija nije jednosmjerna krivnja zagađivača, nego recipročni nusproizvod interakcije dviju strana.
+:::
+
+. . .
+
+- tvornica koja ispušta dim u nenaseljenom kraju ne stvara vanjski trošak
+- tek kad se nizvodno nasele ribari, nastaje sukob
+- šteta je jednako posljedica njihove prisutnosti koliko i same proizvodnje
+
+. . .
+
+- pitanje nije kako kazniti zagađivača, nego koja razina aktivnosti maksimizira ukupnu vrijednost resursa
+- eksternaliju ne definira tržišni neuspjeh, nego nedovoljno određena [vlasnička prava]{.accent}
+
+::: {.notes}
+Ovo je najprotuintuitivniji dio cijelog predavanja, pa krenite polako. Naglasite da Coase obrće uobičajenu sliku u kojoj postoji nedužna žrtva i krivac. Kad se ribarima zabrani aktivnost, jednako se gubi vrijednost kao i kad se tvornici zabrani ispuštanje. Dobro pitanje publici jest tko bi bio "kriv" da ribara nikada nije ni bilo. Time pripremate teren za ideju da je ključno čija su prava, a ne tko zagađuje.
+:::
+
+## Coaseov teorem
+
+[TEOREM]{.section-label}
+
+::: {.def}
+Uz jasno definirana **vlasnička prava** i zanemarive transakcijske troškove, pogođene strane pregovorima dolaze do iste, učinkovite razine aktivnosti [@coase1960].
+:::
+
+. . .
+
+- ishod je jednak [bez obzira]{.accent} na to kome su prava dodijeljena
+- pregovor se zaustavlja na učinkovitoj razini [q*]{.var}
+- tržište samo proizvodi ispravan rezultat ako su preduvjeti ispunjeni
+
+::: {.notes}
+Inzistirajte na dvama preduvjetima jer o njima visi cijela tvrdnja: jasna prava i niski transakcijski troškovi. Studentima objasnite da "učinkovita razina" znači onu na kojoj se ukupna vrijednost resursa više ne može povećati. Upozorite ih da je riječ o snažnoj tvrdnji koju ćemo namjerno razgraditi u sljedećim slajdovima. Ostavite da q* za sada bude oznaka za "pravu" razinu aktivnosti, a primjer slijedi odmah.
+:::
+
+## Tvornica i ribari
+
+[PRIMJER]{.section-label}
+
+::: {.columns}
+::: {.column width="50%"}
+[Prava imaju ribari]{.accent}
+
+- tvornica im plaća za pravo na zagađenje
+- plaća sve dok joj se to isplati
+:::
+
+::: {.column width="50%"}
+[Prava ima tvornica]{.accent}
+
+- ribari joj plaćaju za smanjenje ispuštanja
+- plaćaju dok je šteta veća od cijene
+:::
+:::
+
+. . .
+
+- u oba smjera pregovor staje kad se [granični profit izjednači s graničnom štetom]{.accent}
+- to je točno razina [q*]{.var} — ista neovisno o dodjeli prava
+
+::: {.notes}
+Provedite razred kroz oba scenarija polako, jedan po jedan stupac. U prvom slučaju tvornica kupuje dopuštenje i prestaje kupovati kad sljedeća jedinica zagađenja vrijedi manje od štete koju nanosi. U drugom slučaju ribari kupuju smanjenje i prestaju kad im iduća jedinica čišćeg okoliša vrijedi manje od cijene. Poanta koju trebaju zapamtiti jest da se obje strane zaustavljaju na istoj točki. Nacrtajte na ploči granični profit i graničnu štetu kako biste pokazali sjecište.
+:::
+
+## Učinkovitost da, raspodjela ne
+
+[NEUTRALNOST]{.section-label}
+
+::: {.lead}
+Coaseova neutralnost vrijedi za učinkovitost, ne za raspodjelu.
+:::
+
+. . .
+
+- razina aktivnosti [q*]{.var} jednaka je u oba slučaja
+- ali tko kome plaća ovisi o početnoj dodjeli prava
+- dodjela prava odlučuje o tome kome pripada vrijednost
+
+::: {.cbox .kljucno}
+[Ključni uvid]{.cbox-label}
+Vlasnička prava postaju instrument preraspodjele bez gubitka učinkovitosti: država može dodijeliti pravo slabijoj strani, a pregovor će i dalje proizvesti učinkovitu razinu aktivnosti.
+:::
+
+::: {.notes}
+Ovdje razdvojite dva pojma koja studenti najčešće brkaju: učinkovitost i raspodjelu. Učinkovitost se tiče veličine ukupnog kolača, a raspodjela toga kome kolač pripada. Coase kaže da je veličina kolača jednaka, ali rezovi ovise o početnim pravima. Korisno pitanje publici jest kome bi oni dodijelili prava i zašto, čime otvarate temu pravednosti iz prethodnih predavanja.
+:::
+
+## Kad pregovor ne uspije: transakcijski troškovi
+
+[GRANICE TEOREMA]{.section-label}
+
+::: {.lead}
+Pregovor pretpostavlja zanemarive transakcijske troškove — u stvarnosti oni rijetko jesu zanemarivi.
+:::
+
+. . .
+
+- [prije pregovora]{.accent}: utvrditi pogođene strane i vrijednost štete — kod tisuća pogođenih nesavladivo
+- [tijekom pregovora]{.accent}: strateško ponašanje i slobodni jahač [@olson1965]
+- [nakon dogovora]{.accent}: nadzor i provedba postignutog [@williamson1985]
+
+. . .
+
+- kad su ti troškovi visoki, pregovor je nemoguć
+- početna dodjela prava tada [prestaje biti neutralna]{.accent}
+
+::: {.notes}
+Ovo je most prema kritici Coasea i prema institucionalnoj ekonomiji koja dolazi kasnije. Provedite ih kroz tri faze u vremenu: prikupljanje informacija, samo pregovaranje i provedbu dogovora. Primjer masovnog onečišćenja zraka u velikom gradu lijepo pokazuje da ne možete sjesti za stol s milijun ljudi. Naglasite zaokret na kraju: čim troškovi rastu, postaje važno kome su prava izvorno dana jer ih pregovor više ne može preraspodijeliti.
+:::
+
+## Pigou ili Coase {.smaller}
+
+[USPOREDBA]{.section-label}
+
+| Dimenzija | Pigouov pristup | Coaseov pristup |
+|---|---|---|
+| Uzrok problema | tržišni neuspjeh | nedovoljno određena vlasnička prava |
+| Priroda učinka | jednosmjerna šteta zagađivača | recipročna interakcija strana |
+| Glavni instrument | porez ili regulacija države | pregovor uz jasna prava |
+| Uloga države | ispravlja cijenu | definira i štiti prava |
+| Informacijski zahtjevi | poznavanje točnih funkcija troška i štete | poznavanje samo vlasničkih prava |
+
+. . .
+
+- Pigouov pristup pati od [zablude nirvane]{.accent} — usporedbe stvarnih tržišta s idealiziranim planerom [@demsetz1969]
+- planer bi morao znati ono što je raspršeno među sudionicima [@hayek1945]
+- ispravna usporedba jest usporedba [nesavršenih institucija]{.accent} [@north1990]
+
+::: {.notes}
+Prođite tablicu redak po redak jer sažima cijelu cjelinu. Najvažniji je posljednji redak o informacijama: Pigouov porez izgleda elegantno na ploči, ali pretpostavlja da država zna točne funkcije koje u praksi nitko nema. Demsetzova "zabluda nirvane" znači uspoređivanje stvarnog tržišta s nepostojećim savršenim planerom umjesto s drugom stvarnom institucijom. Poručite studentima da Coase nije protiv države, nego protiv automatskog povjerenja u nju jer ni intervencija nije besplatna.
+:::
+
+## Kad pregovor radi, a kad ne
+
+[PRIMJENA]{.section-label}
+
+::: {.cbox .praksa}
+[Primjer iz prakse]{.cbox-label}
+[EU ETS]{.accent} gradi se na logici pregovora o pravima: prenosive kvote emisija znače da se pravo na ispuštanje seli onamo gdje vrijedi najviše. Buka oko zračnih luka u SAD-u rješava se izravnim naknadama i izolacijom — prava su jasna, a pogođenih je malo.
+:::
+
+. . .
+
+- pregovor radi kad su prava jasna, a broj strana malen
+- kad su prava nejasna i troškovi koordinacije visoki, pregovor je blokiran
+- tada se sukob seli u [državnu regulaciju]{.accent}
+
+::: {.notes}
+Zatvorite cjelinu povezivanjem teorije s dvama stvarnim slučajevima. Sustav EU ETS živi je primjer Coaseove logike: dodijelite prava, učinite ih prenosivima i tržište ih usmjerava prema najvrjednijoj upotrebi. Buka oko zračnih luka pokazuje da, kad je strana malo, izravan dogovor nadmašuje krutu regulaciju. Suprotan je slučaj difuzno onečišćenje s tisućama anonimnih izvora, gdje pregovor puca i regulacija postaje nužna. Tako prirodno najavljujete sljedeću cjelinu o informacijama.
+:::
+
+## Asimetrične informacije {.dio-slide}
+
+[INFORMACIJSKA NERAVNOTEŽA]{.section-label}
+
+::: {.lead}
+Kad jedna strana u razmjeni zna više od druge, razmjena se kvari — prije sklapanja ugovora ili nakon njega.
+:::
+
+::: {.notes}
+Ovo je treći klasični izvor tržišnog neuspjeha uz javna dobra i eksternalije. Naglasite studentima da informacija nije ravnomjerno raspoređena među sudionicima razmjene. Predložite jednostavno uvodno pitanje: tko zna više o stanju rabljenog automobila, prodavatelj ili kupac? Iz tog nesrazmjera izvire cijela cjelina. Najavite dva odvojena problema koja ćemo razlikovati po trenutku nastanka.
+:::
+
+## Dva problema informacijske neravnoteže
+
+[POJMOVNI OKVIR]{.section-label}
+
+::: {.def}
+O **nepovoljnom izboru** govorimo kad skriveno znanje o kvaliteti postoji već prije sklapanja ugovora, pa neinformirana strana ne razlikuje dobre od loših tipova [@akerlof1970].
+:::
+
+::: {.def}
+O **moralnom hazardu** govorimo kad informacijski problem nastaje nakon sklapanja ugovora, jer skrivena radnja jedne strane mijenja njezino ponašanje.
+:::
+
+- ključna je razlika [trenutak]{.accent}: prije ugovora nasuprot poslije ugovora
+- prije: skriveno [svojstvo]{.var} (kakav je tip)
+- poslije: skrivena [radnja]{.var} (kako se ponaša)
+
+::: {.notes}
+Ovu podjelu studenti najlakše pamte preko vremenske osi: povucite crtu, na lijevoj je strani trenutak sklapanja ugovora. Sve što se skriva prije te točke vodi u nepovoljan izbor, sve nakon nje u moralni hazard. Provjerite razumijevanje kratkim primjerom: zatajeni kvar na automobilu prije kupnje je nepovoljan izbor, a nemarna vožnja nakon sklapanja police osiguranja je moralni hazard. Ostatak cjeline razrađuje oba mehanizma.
+:::
+
+## Nepovoljan izbor: tržište limuna
+
+[MEHANIZAM]{.section-label}
+
+- prodavatelj rabljenog automobila zna stanje bolje od kupca [@akerlof1970]
+- kupac ne razlikuje kvalitetu pa nudi samo [prosječnu cijenu]{.accent}
+- ta je cijena preniska za vlasnike kvalitetnih automobila — oni se povlače
+- ostaju lošiji automobili, prosječna kvaliteta pada, razmjena se smanjuje
+- u graničnom se slučaju tržište [urušava]{.accent}
+
+::: {.cbox .empirija}
+[Empirija]{.cbox-label}
+Isti mehanizam djeluje na tržištu zdravstvenog osiguranja: osiguravaju se rizičniji pojedinci, zdraviji odustaju, premije rastu, a rast premija tjera i sljedeći sloj zdravih u odustajanje — spirala nepovoljnog izbora.
+:::
+
+::: {.notes}
+Pojam limun ovdje znači automobil skrivene loše kvalitete; objasnite da je riječ o engleskom žargonu koji je Akerlof uveo u ekonomiju. Vodite studente korak po korak kroz lanac povlačenja: niska cijena tjera najkvalitetniju ponudu van, čime prosjek pada, što opet snižava cijenu i tjera sljedeći sloj. Naglasite da je riječ o samopojačavajućem procesu, a ne o jednokratnom padu. Spirala kod osiguranja izvrstan je most prema raspravi o obveznom osiguranju kasnije u cjelini.
+:::
+
+## Model urušavanja tržišta
+
+[MODEL]{.section-label}
+
+- kupci, ne razlikujući kvalitetu, plaćaju jedinstvenu prosječnu cijenu
+- pri toj se cijeni kvalitetna ponuda (S_visoka) povlači s tržišta
+- ostaje samo loša ponuda (S_loša), pa ravnotežna kvaliteta i količina padaju
+
+::: {.notes}
+Model prikazuje dvije ponude, kvalitetnu i lošu, te kako jedinstvena prosječna cijena potkopava kvalitetni segment. Povežite sliku s prethodnim slajdom: ono što je tamo bio verbalni lanac ovdje postaje vidljivo kao pomak ravnoteže. Najavite da na sljedećem slajdu graf isprobavamo uživo i da ćemo gledati pad ravnoteže prema lošem kraju.
+:::
+
+## Tržište limuna na grafu {.smaller}
+
+[MODEL — ISPROBAJTE]{.section-label}
+
+```{ojs}
+//| echo: false
+viewof asi_controls = Inputs.form({
+  qprem:     Inputs.range([5, 40],    {value: 20,  step: 1,    width: 200, label: "Premija za kvalitetu (Δ)"}),
+  eps_d_asi: Inputs.range([0.3, 2.5], {value: 1.0, step: 0.05, width: 200, label: "Elast. potražnje |εD|"}),
+  eps_s_asi: Inputs.range([0.3, 2.5], {value: 1.0, step: 0.05, width: 200, label: "Elast. ponude εS"})
+})
+```
+
+```{ojs}
+//| echo: false
+{
+  const dQ = asi_controls.qprem, eps_d_asi = asi_controls.eps_d_asi, eps_s_asi = asi_controls.eps_s_asi;
+  const Q2 = 60, P_low = 50, Qmax = 110, Pmax = 120;
+  const b_d = P_low / (Q2 * eps_d_asi);
+  const a_d = P_low + b_d * Q2;
+  const b_s = P_low / (Q2 * eps_s_asi);
+  const c_s = P_low - b_s * Q2;
+  const Q1 = (a_d - c_s - dQ) / (b_d + b_s);
+  const P_high = a_d - b_d * Q1;
+  const Qs = d3.range(0, Qmax + 1);
+  const demand = Qs.map(q => ({Q: q, P: a_d - b_d * q})).filter(p => p.P >= 0 && p.P <= Pmax);
+  const sLow = Qs.map(q => ({Q: q, P: c_s + b_s * q})).filter(p => p.P >= 0 && p.P <= Pmax);
+  const sHigh = Qs.map(q => ({Q: q, P: c_s + dQ + b_s * q})).filter(p => p.P >= 0 && p.P <= Pmax);
+  const qDrop = Q2 - Q1, pDrop = P_high - P_low;
+  const collapse = Q1 <= 0;
+  return Plot.plot({
+    width: 820, height: 318, marginLeft: 54, marginRight: 16, marginTop: 20, marginBottom: 38,
+    style: {fontSize: "12px", fontFamily: "Public Sans, system-ui, sans-serif", color: "#3A332D", background: "transparent"},
+    x: {label: "Količina (Q) →", domain: [0, Qmax]},
+    y: {label: "↑ Cijena (P)", domain: [0, Pmax], grid: true},
+    marks: [
+      Plot.ruleY([0], {stroke: "#C9C3B8"}),
+      Plot.line(demand, {x: "Q", y: "P", stroke: "#2D5A8E", strokeWidth: 2.5}),
+      Plot.line(sLow, {x: "Q", y: "P", stroke: "#4A6B5C", strokeWidth: 2}),
+      Plot.line(sHigh, {x: "Q", y: "P", stroke: "#4A6B5C", strokeWidth: 2, strokeDasharray: "6,4"}),
+      Plot.link([{x1: Q2 * 0.55, y1: c_s + dQ + b_s * Q2 * 0.55, x2: Q2 * 0.55, y2: c_s + b_s * Q2 * 0.55}], {x1: "x1", y1: "y1", x2: "x2", y2: "y2", stroke: "#6B1F26", strokeWidth: 2, markerEnd: "arrow"}),
+      Plot.ruleY([P_high], {stroke: "#6B6357", strokeDasharray: "4,3"}),
+      Plot.ruleY([P_low], {stroke: "#6B6357", strokeDasharray: "4,3"}),
+      Plot.ruleX([Q1], {y1: 0, y2: P_high, stroke: "#6B6357", strokeDasharray: "4,3"}),
+      Plot.ruleX([Q2], {y1: 0, y2: P_low, stroke: "#6B6357", strokeDasharray: "4,3"}),
+      Plot.dot([{Q: Q1, P: P_high}], {x: "Q", y: "P", r: 5, fill: "#1C1916", stroke: "white", strokeWidth: 2}),
+      Plot.dot([{Q: Q2, P: P_low}], {x: "Q", y: "P", r: 5, fill: "#6B1F26", stroke: "white", strokeWidth: 2}),
+      Plot.text([{x: Qmax * 0.8, y: a_d - b_d * Qmax * 0.8, label: "D"}], {x: "x", y: "y", text: "label", fill: "#2D5A8E", fontSize: 12, fontWeight: 600, dy: -8}),
+      Plot.text([{x: Qmax * 0.8, y: c_s + b_s * Qmax * 0.8, label: "S_loša"}], {x: "x", y: "y", text: "label", fill: "#4A6B5C", fontSize: 12, fontWeight: 600, dy: -8}),
+      Plot.text([{x: Qmax * 0.62, y: c_s + dQ + b_s * Qmax * 0.62, label: `S_visoka (Δ=${dQ})`}], {x: "x", y: "y", text: "label", fill: "#4A6B5C", fontSize: 12, fontWeight: 600, dy: -8}),
+      Plot.text([{x: Q1, y: 2, label: `Q₁ = ${Q1.toFixed(1)}`}], {x: "x", y: "y", text: "label", textAnchor: "middle", fontSize: 11, fill: "#1C1916"}),
+      Plot.text([{x: Q2, y: 2, label: `Q₂ = ${Q2.toFixed(1)}`}], {x: "x", y: "y", text: "label", textAnchor: "middle", fontSize: 11, fill: "#6B1F26"}),
+      Plot.text([{x: 2, y: Pmax * 0.96, label: collapse ? "⚠ Tržište se urušava (Q₁ ≤ 0)" : `Pad količine: ΔQ = ${qDrop.toFixed(1)}`}], {x: "x", y: "y", text: "label", textAnchor: "start", fontSize: 13, fill: "#6B1F26", fontWeight: 700})
+    ]
+  });
+}
+```
+
+::: {.isprobaj}
+Povećajte premiju za kvalitetu (Δ) i pratite kako se kvalitetna ponuda S_visoka odiže, ravnoteža kvalitetne robe klizi ulijevo, a u graničnom se slučaju tržište potpuno urušava.
+:::
+
+::: {.notes}
+Pokažite uživo tri koraka: najprije skromna premija i blag pad, zatim podignite premiju i gledajte kako Q₁ pada prema nuli te se pojavi upozorenje o urušavanju, baš kao u Akerlofovu primjeru limuna. Na kraju smanjite elastičnost potražnje i pokažite da kruta potražnja prigušuje pad količine, ali zato cijenu kvalitetne robe gura znatno više.
+:::
+
+## Signalizacija i probir
+
+[RJEŠENJA TRŽIŠTA]{.section-label}
+
+::: {.columns}
+::: {.column width="50%"}
+**Signalizacija**
+
+- informirana strana skupo i vjerodostojno otkriva kvalitetu [@spence1973]
+- diploma kao signal sposobnosti
+- jamstvo kao signal pouzdanosti
+- signal djeluje samo ako je lošem tipu preskup
+:::
+
+::: {.column width="50%"}
+**Probir**
+
+- neinformirana strana nudi izbornik ugovora [@rothschild1976]
+- različiti uvjeti razdvajaju tipove
+- u osiguranju: niža premija uz veću franšizu privlači niskorizične
+- svaki tip sam bira ugovor koji ga otkriva
+:::
+:::
+
+::: {.notes}
+Razlika je u tome tko poduzima korak: kod signalizacije se javlja informirana strana, kod probira neinformirana. Naglasite uvjet vjerodostojnosti signala — diploma je signal jer bi nesposobnom kandidatu bila preskupa, ne zato što sama po sebi povećava sposobnost. Kod probira objasnite logiku izbornika: nudeći više ugovora navodite svaku stranu da otkrije svoj tip biranjem. Pitajte studente za vlastite primjere signala iz svakodnevice, primjerice probni rok ili povrat novca.
+:::
+
+## Moralni hazard
+
+[MEHANIZAM]{.section-label}
+
+::: {.lead}
+Nakon sklapanja ugovora skrivena radnja jedne strane mijenja njezino ponašanje, jer ona više ne snosi puni trošak svojih postupaka.
+:::
+
+- osiguranik je manje oprezan jer štetu pokriva osiguratelj [@arrow1963]
+- menadžer je manje marljiv jer vlasnik ne vidi njegov trud [@holmstrom1979]
+- problem je u tome što se radnja ne može jeftino promatrati ni provjeriti
+
+::: {.cbox .praksa}
+[Praksa]{.cbox-label}
+Vozač s punim kasko osiguranjem može parkirati nemarnije ili rjeđe zaključavati vozilo. Osiguratelj na to odgovara franšizom i bonus-malus sustavom, čime dio rizika vraća osiguraniku i obnavlja poticaj na opreznost.
+:::
+
+::: {.notes}
+Ovdje je ključna riječ skrivena radnja, za razliku od skrivenog svojstva kod nepovoljnog izbora. Objasnite da problem nije u zloj namjeri, nego u promijenjenoj strukturi poticaja: kad netko drugi snosi trošak, racionalno je biti manje oprezan. Holmströmov je uvid da se ugovor mora vezati uz mjerljiv ishod kako bi se obnovili poticaji. Povežite franšizu iz prethodnog slajda s odgovorom na moralni hazard, čime se vidi da isti instrument rješava obje vrste problema.
+:::
+
+## Odgovori na informacijske probleme
+
+[JAVNE POLITIKE]{.section-label}
+
+- obvezno objavljivanje informacija o proizvodu i njegovim svojstvima
+- standardi, licenciranje i certifikati kao jamstvo minimalne kvalitete
+- jamstva proizvođača koja prebacuju rizik na informiranu stranu
+- regulacija ondje gdje tržišni signali ne dostaju [@stiglitz1995]
+- obvezno osiguranje koje sprječava spiralu nepovoljnog izbora
+
+::: {.cbox .kljucno}
+[Ključni uvid]{.cbox-label}
+Asimetrične informacije nisu tek tehnička smetnja, nego sustavni razlog zašto se inače korisna razmjena ne dogodi. I tržište i država nude odgovore — od signala i probira do propisa i obveznog osiguranja — a izbor među njima ovisi o tome koliko je informaciju skupo otkriti i provjeriti.
+:::
+
+::: {.notes}
+Sažmite cjelinu kroz dvije razine odgovora: ono što sudionici sami čine signalima i probirom te ono što država nameće propisima. Obvezno osiguranje istaknite kao izravan lijek za spiralu jer uključuje i niskorizične u skup osiguranika, čime ruši prosječnu premiju. Zaključite da regulacija nije besplatna i da ima vlastite troškove, što vodi prema raspravi o državnim neuspjesima kasnije u kolegiju. Pitajte studente koji im se odgovor čini najprikladnijim za tržište diploma, a koji za tržište osiguranja.
+:::
+
+## Tržišna moć {.dio-slide}
+
+[ALOKACIJSKI NEUSPJEH IV]{.section-label}
+
+::: {.lead}
+Kad na tržištu vlada jedan ili tek nekoliko ponuđača, cijena se diže iznad konkurentske, količina pada, a dio koristi koju bi razmjena stvorila jednostavno nestaje.
+:::
+
+::: {.notes}
+Ovo je četvrti i posljednji izvor alokacijskih neuspjeha koji obrađujemo. Podsjetite studente na prethodna tri (eksternalije, javna dobra i zajednički resursi, asimetrične informacije) i najavite da se ovdje kvar ne krije u nedostatku tržišta nego u njegovoj strukturi. Naglasite da problem nije sama dobit monopolista, nego smanjena razmjena za cijelo društvo. Postavite uvodno pitanje: zašto bi tvrtka dragovoljno proizvodila manje nego što bi mogla?
+:::
+
+## Monopol: kako nastaje gubitak
+
+[MEHANIZAM]{.section-label}
+
+- Monopolist nema zadanu cijenu nego bira [količinu]{.accent}, a cijenu mu diktira krivulja potražnje.
+- Optimum bira ondje gdje se marginalni prihod izjednačava s marginalnim troškom: [MR = MC]{.var}.
+- Budući da MR pada brže od potražnje, rezultat je niža količina i viša cijena: [Q_M < Q_C]{.var}, [P_M > P_C]{.var}.
+- Razlika između konkurentske i monopolske količine nosi [mrtvi teret]{.accent} (gubitak koristi koja se nikad ne ostvari).
+
+. . .
+
+- Izvori tržišne moći: vlasništvo nad ključnim resursom, patenti, visoki početni troškovi, regulatorne prepreke ulasku, mrežni učinci, strateško ponašanje.
+
+::: {.cbox .kljucno}
+[Ključni uvid]{.cbox-label}
+Problem monopola nije visoka dobit, nego [manja količina po višoj cijeni]{.accent} — društvo dobiva manje razmjene nego što bi tržište moglo proizvesti.
+:::
+
+::: {.notes}
+Pažljivo razdvojite dvije stvari koje studenti često brkaju: visoka dobit sama po sebi nije tržišni neuspjeh, neostvarena razmjena jest. Objasnite zašto monopolist svjesno ne spušta cijenu do konkurentske razine: svaka dodatna prodana jedinica obara cijenu svim ranijim jedinicama, pa mu marginalni prihod pada ispod cijene. Primjer: jedini lijek pod patentom, gdje proizvođač namjerno proizvodi manje da zadrži višu cijenu. Pitajte studente tko snosi taj gubitak.
+:::
+
+## Model i mrtvi teret
+
+[MEHANIZAM]{.section-label}
+
+- Krivulja marginalnog prihoda [MR]{.var} leži ispod krivulje potražnje [D]{.var} jer prodaja dodatne jedinice snižava cijenu svih jedinica.
+- Monopolist bira [Q_M]{.var} ondje gdje [MR = MC]{.var}, a cijenu [P_M]{.var} očitava gore na krivulji potražnje.
+- U konkurenciji bi se proizvodilo do [Q_C]{.var} (gdje [D]{.var} siječe [MC]{.var}); trokut između [Q_M]{.var} i [Q_C]{.var} jest [mrtvi teret]{.accent}.
+
+::: {.notes}
+Vodite studente kroz model korak po korak: prvo potražnja, pa ispod nje marginalni prihod, zatim sjecište s marginalnim troškom koje određuje količinu, i tek onda cijena gore na potražnji. Istaknite da je vodoravni razmak između monopolske i konkurentske količine ono što mjeri gubitak za društvo. Najavite interaktivni prikaz na sljedećem slajdu i intuiciju: što je potražnja neelastičnija, to monopolist ima više prostora dizati cijenu.
+:::
+
+## Monopol na grafu {.smaller}
+
+[MEHANIZAM — ISPROBAJTE]{.section-label}
+
+```{ojs}
+//| echo: false
+viewof mon_controls = Inputs.form({
+  eps_d_mon: Inputs.range([0.5, 3.0], {value: 1.2, step: 0.05, width: 230, label: "Elast. potražnje |εD|"}),
+  eps_s_mon: Inputs.range([0.4, 3.0], {value: 1.2, step: 0.05, width: 230, label: "Elast. MC (εS)"})
+})
+```
+
+```{ojs}
+//| echo: false
+{
+  const eps_d_mon = mon_controls.eps_d_mon, eps_s_mon = mon_controls.eps_s_mon;
+  const Qc = 60, Pc = 50, Qmax = 110, Pmax = 120;
+  const b = Pc / (Qc * eps_d_mon);
+  const d = Pc / (Qc * eps_s_mon);
+  const a = Pc + b * Qc;
+  const c = Pc - d * Qc;
+  const Qm = (a - c) / (2 * b + d);
+  const Pm = a - b * Qm;
+  const MC_at_Qm = c + d * Qm;
+  const Qs = d3.range(0, Qmax + 1);
+  const demand = Qs.map(q => ({Q: q, P: a - b * q})).filter(p => p.P >= 0 && p.P <= Pmax);
+  const mr = Qs.map(q => ({Q: q, P: a - 2 * b * q})).filter(p => p.P >= -Pmax && p.P <= Pmax);
+  const mc = Qs.map(q => ({Q: q, P: c + d * q})).filter(p => p.P >= 0 && p.P <= Pmax);
+  const dwlTri = [{Q: Qm, P: Pm}, {Q: Qm, P: MC_at_Qm}, {Q: Qc, P: Pc}];
+  const dwl = 0.5 * Math.abs(Pm - MC_at_Qm) * Math.abs(Qc - Qm);
+  const markup = ((Pm - Pc) / Pc) * 100;
+  return Plot.plot({
+    width: 820, height: 318, marginLeft: 54, marginRight: 16, marginTop: 20, marginBottom: 38,
+    style: {fontSize: "12px", fontFamily: "Public Sans, system-ui, sans-serif", color: "#3A332D", background: "transparent"},
+    x: {label: "Količina (Q) →", domain: [0, Qmax]},
+    y: {label: "↑ Cijena (P)", domain: [0, Pmax], grid: true},
+    marks: [
+      Plot.ruleY([0], {stroke: "#C9C3B8"}),
+      Plot.line([...dwlTri, dwlTri[0]], {x: "Q", y: "P", stroke: "#6B1F26", strokeWidth: 1, fill: "#D8B5B3", fillOpacity: 0.65}),
+      Plot.line(demand, {x: "Q", y: "P", stroke: "#2D5A8E", strokeWidth: 2.5}),
+      Plot.line(mr, {x: "Q", y: "P", stroke: "#3A332D", strokeWidth: 2, strokeDasharray: "5,4"}),
+      Plot.line(mc, {x: "Q", y: "P", stroke: "#4A6B5C", strokeWidth: 2}),
+      Plot.ruleY([Pm], {stroke: "#6B6357", strokeDasharray: "4,3"}),
+      Plot.ruleY([Pc], {stroke: "#6B6357", strokeDasharray: "4,3"}),
+      Plot.ruleX([Qm], {y1: 0, y2: Pm, stroke: "#6B6357", strokeDasharray: "4,3"}),
+      Plot.ruleX([Qc], {y1: 0, y2: Pc, stroke: "#6B6357", strokeDasharray: "4,3"}),
+      Plot.dot([{Q: Qm, P: Pm}], {x: "Q", y: "P", r: 5, fill: "#6B1F26", stroke: "white", strokeWidth: 2}),
+      Plot.dot([{Q: Qc, P: Pc}], {x: "Q", y: "P", r: 5, fill: "#4A6B5C", stroke: "white", strokeWidth: 2}),
+      Plot.dot([{Q: Qm, P: MC_at_Qm}], {x: "Q", y: "P", r: 4, fill: "#1C1916", stroke: "white", strokeWidth: 1.5}),
+      Plot.text([{x: Qmax * 0.8, y: a - b * Qmax * 0.8, label: "D"}], {x: "x", y: "y", text: "label", fill: "#2D5A8E", fontSize: 12, fontWeight: 600, dy: -8}),
+      Plot.text([{x: Qmax * 0.38, y: a - 2 * b * Qmax * 0.38, label: "MR"}], {x: "x", y: "y", text: "label", fill: "#3A332D", fontSize: 12, fontWeight: 700, dy: -8}),
+      Plot.text([{x: Qmax * 0.8, y: c + d * Qmax * 0.8, label: "MC"}], {x: "x", y: "y", text: "label", fill: "#4A6B5C", fontSize: 12, fontWeight: 600, dy: -8}),
+      Plot.text([{x: Qm, y: 2, label: `Q_M = ${Qm.toFixed(1)}`}], {x: "x", y: "y", text: "label", textAnchor: "middle", fontSize: 11, fill: "#6B1F26"}),
+      Plot.text([{x: Qc, y: 2, label: `Q_C = ${Qc.toFixed(1)}`}], {x: "x", y: "y", text: "label", textAnchor: "middle", fontSize: 11, fill: "#4A6B5C"}),
+      Plot.text([{x: 2, y: Pmax * 0.96, label: `Mrtvi teret = ${dwl.toFixed(1)} · marža ${markup.toFixed(0)} %`}], {x: "x", y: "y", text: "label", textAnchor: "start", fontSize: 13, fill: "#6B1F26", fontWeight: 700})
+    ]
+  });
+}
+```
+
+::: {.isprobaj}
+Smanjite elastičnost potražnje (krivulja postaje strmija) i promatrajte kako istodobno rastu monopolska marža i površina mrtvog tereta.
+:::
+
+::: {.notes}
+Pokažite uživo: spustite elastičnost potražnje prema 0,5 i gledajte kako monopolist širi razmak između Q_M i konkurentske Q_C, pa marža i crveni trokut rastu. Povećajte elastičnost prema 3,0 i pokažite kako se Q_M približava Q_C jer kupci koji lako odustaju oduzimaju prostor za dizanje cijene. Povežite to s lijekovima i osnovnim namirnicama gdje su kupci manje osjetljivi na cijenu.
+:::
+
+## Prirodni monopol i regulacija
+
+[STRUKTURA TRŽIŠTA]{.section-label}
+
+::: {.def}
+Tržište je **prirodni monopol** kad su fiksni troškovi infrastrukture toliko visoki da prosječni trošak neprekidno pada s količinom, pa jedan ponuđač posluži sve potrošače jeftinije nego što bi to mogla dva.
+:::
+
+- Primjeri: vodoopskrba, elektroenergetske i plinske mreže, željeznička infrastruktura.
+- Konkurencija nije stabilna (dvije paralelne mreže rasipaju kapital), pa [regulacija]{.accent} zamjenjuje tržišnu disciplinu: cijene-kape ili kontrola povrata na uloženi kapital.
+
+. . .
+
+- Oprez: ako regulator jamči povrat na kapital, tvrtka može prekomjerno ulagati u imovinu da poveća osnovicu — [Averch-Johnsonov učinak]{.accent} [@averchjohnson1962].
+
+::: {.notes}
+Objasnite zašto je ovdje monopol "prirodan": kad prosječni trošak stalno pada, najjeftinije je da sve opskrbi jedan ponuđač, pa razbijanje na konkurente zapravo poskupljuje uslugu. Zato država ne razbija takav monopol, nego ga regulira. Naglasite da regulacija nije savršena zamjena za tržište: ako se tvrtki zajamči povrat na kapital, ona ima poticaj graditi skuplje nego što treba. Pitajte studente koje komunalne usluge u njihovu gradu funkcioniraju kao prirodni monopol.
+:::
+
+## Mrežni učinci i platforme
+
+[NOVA TRŽIŠTA]{.section-label}
+
+- [Dvostrana tržišta]{.accent}: platforma povezuje dvije skupine, jednu poslužuje besplatno (korisnike), a naplaćuje drugoj (oglašivačima) [@rochet2003].
+- Vrijednost usluge raste s brojem korisnika, pa jaki mrežni učinci vode prema ishodu [pobjednik nosi sve]{.accent} [@katz1985]; prednost se učvršćuje podacima i pažnjom.
+- Klasični instrumenti natjecanja slabije pristaju, pa se za najveće platforme uvode unaprijed zadana pravila [@tirole2017].
+
+. . .
+
+- [Informacijska eksternalija]{.accent}: algoritmi nagrađuju sadržaj koji izaziva reakciju, pa se lažne informacije šire kao onečišćenje informacijskog prostora [@allcott2017].
+
+::: {.cbox .empirija}
+[Empirijski nalaz]{.cbox-label}
+Lažne se vijesti na društvenim mrežama šire brže i dalje od istinitih upravo zato što su oblikovane da pobude reakciju, čime troše zajednički informacijski prostor [@allcott2017].
+:::
+
+::: {.notes}
+Povežite platforme s onim što su studenti već naučili: mrežni učinak je pozitivna eksternalija (svaki novi korisnik povećava vrijednost mreže za ostale), ali ona ujedno stvara prirodnu barijeru ulasku i tendenciju monopolizacije. Objasnite logiku dvostranog tržišta: ako je proizvod besplatan, korisnici su zapravo proizvod koji se prodaje oglašivačima. Spojite informacijsku eksternaliju s pojmom onečišćenja iz dijela o eksternalijama: lažne vijesti zagađuju zajednički prostor jednako kao dim tvornice. Pitajte studente prepoznaju li u svojem iskustvu ishod "pobjednik nosi sve".
+:::
+
+## Oprez: tko regulira regulatora
+
+[GRANICE INTERVENCIJE]{.section-label}
+
+::: {.lead}
+Svaki dosadašnji neuspjeh tržišta poziva na intervenciju države, ali intervencija nije ni besplatna ni automatski neutralna.
+:::
+
+- [Regulatorno zarobljavanje]{.accent}: regulator s vremenom počne štititi interes industrije koju bi trebao nadzirati, jer mu ona daje stručnost, podatke i buduća radna mjesta [@stigler1971].
+- To je [most prema teoriji javnog izbora]{.muted} (Predavanje 1): državni akteri imaju vlastite poticaje, baš kao i tržišni.
+
+::: {.cbox .kljucno}
+[Ključni uvid]{.cbox-label}
+Regulacija nije besplatna ni neutralna: prije nego što zaključimo da država treba intervenirati, valja usporediti [stvarno tržište]{.accent} sa [stvarnom državom]{.accent}, a ne s idealiziranom.
+:::
+
+::: {.notes}
+Ovo je ključan trenutak za intelektualno poštenje predmeta: tržišni neuspjeh ne dokazuje automatski da će država stvar popraviti. Objasnite mehanizam zarobljavanja: industrija je koncentrirana i motivirana, a javnost raspršena i nezainteresirana, pa regulator čuje samo jednu stranu. Najavite da ćemo teoriju javnog izbora i državne neuspjehe razraditi kasnije u kolegiju. Upozorite studente na čestu pogrešku: usporedbu nesavršenog tržišta sa savršenom, zamišljenom državom.
+:::
+
+## Karta alokacijskih neuspjeha
+
+[SINTEZA]{.section-label}
+
+::: {.columns}
+::: {.column width="50%"}
+[Predavanje 2]{.muted}
+
+- Javna dobra (neisključivost, nesuparništvo)
+- Zajednički resursi (prekomjerno korištenje)
+:::
+::: {.column width="50%"}
+[Predavanje 3]{.muted}
+
+- Eksternalije (cijena ne nosi sve troškove)
+- Asimetrične informacije (skrivene osobine i djelovanja)
+- Tržišna moć (manja količina, viša cijena)
+:::
+:::
+
+. . .
+
+::: {.cbox .kljucno}
+[Ključni uvid]{.cbox-label}
+Svi ovi neuspjesi dijele istu logiku: [cijena ne odražava sve društvene troškove i koristi]{.accent}, pa tržište samo ne dolazi do učinkovitog ishoda. Ali svaki instrument ispravljanja ima svoju cijenu.
+:::
+
+::: {.notes}
+Iskoristite ovaj slajd da zaokružite cijelu alokacijsku funkciju kroz dva predavanja. Provedite studente vodoravno kroz kartu i pokažite da je zajednički nazivnik svuda isti: cijena ne prenosi punu društvenu informaciju, pa privatni i društveni račun ne odgovaraju. Naglasite simetriju zaključka: tržište zna zakazati, ali i država, pa je analiza javnih politika uvijek usporedba dvaju nesavršenih rješenja. Provjerite razumijevanje brzim pitanjem: neka studenti svrstaju nekoliko primjera u ispravnu kategoriju.
+:::
+
+## Što slijedi
+
+[MOST PREMA DALJE]{.section-label}
+
+::: {.agenda}
+1. [Predavanje 4 — Ekonomija blagostanja i redistribucija:]{.accent} čak i savršeno učinkovito tržište može proizvesti ishod koji društvo smatra nepravednim, pa se javlja napetost između učinkovitosti i jednakosti [@okun1975].
+2. [Predavanje 5 — Stabilizacijska funkcija:]{.accent} uloga države u ublažavanju cikličkih kolebanja gospodarstva (nezaposlenost, inflacija, output).
+:::
+
+. . .
+
+::: {.lead}
+Time prelazimo s pitanja "kako alocirati resurse" na pitanja "kako ih pravedno raspodijeliti" i "kako stabilizirati cjelinu".
+:::
+
+::: {.notes}
+Zatvorite predavanje povezivanjem triju Musgraveovih funkcija u luk cijelog kolegija: dovršili smo alokacijsku, slijede distribucijska i stabilizacijska. Istaknite Okunovu metaforu o kabli koja propušta koja najavljuje sljedeće predavanje: prebacivanje dohotka od bogatih prema siromašnima često usput prolije dio bogatstva. Ostavite studentima pitanje za razmišljanje: ako je tržište učinkovito, ima li država ikakav razlog mijenjati raspodjelu? Zahvalite i najavite točan termin sljedećeg predavanja.
+:::
