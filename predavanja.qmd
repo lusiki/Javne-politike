@@ -55,12 +55,13 @@ format:
       <span class="vd-go">Otvori predavanje →</span>
     </a>
 
-    <div class="vd-hub-card vd-soon">
-      <span class="vd-badge">Uskoro</span>
+    <a class="vd-hub-card vd-ready" href="predavanja/04-blagostanje-redistribucija.html" target="_blank" rel="noopener">
+      <span class="vd-badge vd-badge-ready">Dostupno</span>
       <span class="vd-hub-num">Predavanje 4</span>
       <span class="vd-hub-name">Funkcija ekonomije blagostanja i redistribucija</span>
-      <span class="vd-hub-q">Lorenzova krivulja, Ginijev koeficijent, teoreme blagostanja i granice redistributivne politike.</span>
-    </div>
+      <span class="vd-hub-q">Lorenzova krivulja, Ginijev koeficijent, teoremi blagostanja i granice redistributivne politike — uz interaktivnu Lorenzovu krivulju i usporedbu zemalja.</span>
+      <span class="vd-go">Otvori predavanje →</span>
+    </a>
 
     <div class="vd-hub-card vd-soon">
       <span class="vd-badge">Uskoro</span>

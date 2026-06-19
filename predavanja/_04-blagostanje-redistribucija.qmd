@@ -1,0 +1,922 @@
+---
+title: "Funkcija ekonomije blagostanja i redistribucija"
+subtitle: "Učinkovitost, pravednost i granice preraspodjele"
+author: "Milan Deskar-Škrbić · Petra Palić · Luka Šikić"
+lang: hr-HR
+bibliography: ../references.bib
+# Izvor je _-prefiksiran (predavanja/_04-...qmd) pa ga render knjige (quarto
+# render) NE dira; renderiraj ručno, a output-file daje čist naziv bez podvlake.
+output-file: 04-blagostanje-redistribucija.html
+format:
+  revealjs:
+    theme: statecraft.scss
+    embed-resources: true
+    slide-number: c/t
+    show-slide-number: all
+    progress: true
+    width: 1050
+    height: 700
+    margin: 0.08
+    center: false
+    transition: fade
+    transition-speed: fast
+    background-transition: fade
+    controls: true
+    controls-layout: bottom-right
+    touch: true
+    hash: true
+    history: true
+    fig-align: center
+    link-external-newwindow: true
+    footer: "Javne politike u Hrvatskoj · Predavanje 4 · [lusiki.github.io/Javne-politike](https://lusiki.github.io/Javne-politike/)"
+---
+
+## Dobro došli natrag {.dio-slide}
+
+[PREDAVANJE 4 · EKONOMIJA BLAGOSTANJA I REDISTRIBUCIJA]{.section-label}
+
+::: {.lead}
+Dovršili smo alokacijsku funkciju i pitanja učinkovitosti. Danas postavljamo drugo pitanje: je li raspodjela koju tržište proizvodi društveno prihvatljiva?
+:::
+
+. . .
+
+Tržište može biti besprijekorno učinkovito, a ipak proizvesti ishod koji mnogi smatraju nepravednim.
+
+. . .
+
+[Učinkovitost i pravednost dva su odvojena mjerila — danas se bavimo drugim.]{.accent}
+
+::: {.notes}
+Pozdravite studente i kratko povežite predavanje s prethodnima. Naglasite da prelazimo s pitanja "proizvodi li tržište dovoljno i pravu količinu dobara" na pitanje "komu što pripada". Istaknite da je tema vrijednosno osjetljiva i da ćemo nastojati izložiti različita stajališta bez nametanja jednoga. Recite da će predavanje povezati ekonomske alate (Lorenzova krivulja, Ginijev koeficijent) s filozofskim načelima pravednosti.
+:::
+
+## Gdje smo stali
+
+[PODSJETNIK NA PREDAVANJA 2–3]{.section-label}
+
+- [Javna dobra i zajednički resursi]{.accent}: tržište ih samo ne osigurava u dovoljnoj mjeri.
+- [Eksternalije]{.accent}: troškovi i koristi koji se prelijevaju na treće osobe, pa cijene ne govore cijelu istinu.
+- [Asimetrične informacije i tržišna moć]{.accent}: kupci i prodavatelji ne znaju jednako, a monopol iskrivljuje ishod.
+
+. . .
+
+U svim tim slučajevima pitanje je bilo isto: [je li tržišni ishod učinkovit?]{.accent}
+
+. . .
+
+Sve to dio je Musgraveova okvira triju funkcija države [@musgrave1959] — danas otvaramo drugu od njih.
+
+::: {.notes}
+Podsjetite da su Predavanja 2 i 3 sustavno prošla vrste tržišnih neuspjeha. Naglasite zajednički nazivnik: u svakom slučaju mjerilo je bila učinkovita upotreba resursa. Spomenite Musgraveovu podjelu na alokacijsku, distribucijsku i stabilizacijsku funkciju i recite da smo dosad bili u prvoj. Tako pripremate logičan prijelaz na sljedeći slajd.
+:::
+
+## Učinkovito ne znači i pravedno
+
+[MOST PREMA DISTRIBUCIJSKOJ FUNKCIJI]{.section-label}
+
+Pareto učinkovit ishod znači samo da nitko ne može biti u boljem položaju a da netko drugi ne bude u lošijem. To ne govori ništa o tome je li raspodjela pravedna.
+
+::: {.cbox .kljucno}
+[Ključno]{.cbox-label}
+Ishod može biti potpuno učinkovit i istodobno duboko nejednak. Tržište nema ugrađen mehanizam koji bi nejednakost sam od sebe ispravio.
+:::
+
+. . .
+
+Štoviše, neke sile djeluju u suprotnom smjeru: kada je prinos na kapital trajno viši od stope gospodarskog rasta, bogatstvo se sve više koncentrira [@piketty2014].
+
+::: {.notes}
+Ovo je ključni pojmovni most cijeloga predavanja. Objasnite da Pareto učinkovitost ne kaže ništa o pravednosti — postoji beskonačno mnogo učinkovitih raspodjela, od posve jednake do krajnje nejednake. Naglasite da tržište nema samoispravljajući mehanizam za nejednakost. Pikettyjev odnos r veći od g spomenite kao primjer sile koja koncentraciju bogatstva pojačava, ali ga nemojte pretvarati u dogmu — recite da je predmet rasprave.
+:::
+
+## Agenda današnjeg predavanja
+
+[PLAN U PET KORAKA]{.section-label}
+
+::: {.agenda}
+1. [Ekonomija blagostanja]{.accent} i dva temeljna teorema.
+2. [Mjerenje nejednakosti]{.accent}: Lorenzova krivulja i Ginijev koeficijent.
+3. [Načela pravednosti I]{.accent}: utilitarizam i Rawlsovo načelo.
+4. [Načela pravednosti II]{.accent}: egalitarizam i paternalizam.
+5. [Sažetak i vježba]{.accent} s podacima.
+:::
+
+::: {.notes}
+Provedite studente kroz strukturu predavanja u jednoj minuti. Naglasite logiku slijeda: najprije teorijski okvir (ekonomija blagostanja), zatim alati za mjerenje, pa filozofska načela kojima vrednujemo raspodjelu, i na kraju primjena. Recite da prve dvije cjeline daju jezik, a druge dvije sud. Ohrabrite studente da pitanja čuvaju, jer će se mnoga razriješiti u kasnijim cjelinama.
+:::
+
+## Polazno pitanje {.dio-slide}
+
+[MISAONI POKUS]{.section-label}
+
+::: {.lead}
+Dvoje ljudi jednako se trudi i jednako je sposobno. Jedno je rođeno u imućnoj obitelji, drugo u siromašnoj. Tržište ih nagrađuje vrlo različito.
+:::
+
+. . .
+
+Duguje li društvo nešto onome tko je izvukao lošiji početni listić — i, ako duguje, koliko?
+
+::: {.notes}
+Ovo pitanje neka ostane otvoreno do kraja predavanja — ono je nit vodilja. Potaknite studente da promisle o ulozi sreće naspram zasluge u životnim ishodima. Istaknite da različita načela pravednosti daju različite odgovore: utilitarist, Rawls i egalitarist ovdje se razilaze. Nemojte sada nuditi rješenje, nego najavite da ćemo se ovom pitanju vraćati nakon svakoga načela. Tako stvarate napetost koja drži pažnju kroz cijelo predavanje.
+:::
+
+## Ekonomija blagostanja {.dio-slide}
+
+[FUNKCIJA EKONOMIJE BLAGOSTANJA]{.section-label}
+
+::: {.lead}
+Kako uopće ocjenjujemo je li neka raspodjela resursa u društvu dobra ili loša?
+:::
+
+::: {.agenda}
+1. Pareto učinkovitost kao minimalno mjerilo
+2. Kaldor-Hicksov kriterij i analiza troškova i koristi
+3. Dva temeljna teorema ekonomike blagostanja
+4. Zašto se teoremi lome u praksi
+5. Od učinkovitosti prema pravednosti
+:::
+
+::: {.notes}
+Ovo je prijelazni slajd kojim otvaramo drugu veliku funkciju države, nakon alokacijske iz Predavanja 2 i 3. Naglasite da prelazimo s pitanja "proizvodi li tržište dovoljno" na pitanje "raspodjeljuje li tržište pravedno". Recite studentima da je tema vrijednosno osjetljiva pa ćemo pomno razdvajati ono što ekonomija može tvrditi od onoga što je stvar političkog izbora. Najavite da ćemo prvo izgraditi pojmovni alat, a tek onda govoriti o samoj preraspodjeli.
+:::
+
+## Pareto učinkovitost
+
+[MINIMALNO MJERILO]{.section-label}
+
+::: {.def}
+Alokacija je **Pareto učinkovita** ako se ne može poboljšati položaj nijedne osobe a da se pritom ne pogorša položaj barem jedne druge.
+:::
+
+. . .
+
+- Snaga kriterija: ne traži međuljudsku usporedbu korisnosti
+- Riječ je o najmanjem zajedničkom mjerilu na koje pristaju gotovo svi
+- Slabost: ne govori ništa o [pravednosti]{.accent}
+
+. . .
+
+::: {.cbox .kljucno}
+[Ključno]{.cbox-label}
+Društvo može biti potpuno Pareto učinkovito i istodobno duboko nejednako.
+:::
+
+::: {.notes}
+Pareto kriterij uvedite kao oprezan, gotovo minimalistički standard koji izbjegava sporne sudove o tome čija je korisnost važnija. Naglasite primjerom: ako jedna osoba ima sve, a ostali ništa, a ne možemo nikome dati nešto bez oduzimanja njoj, takva je raspodjela Pareto učinkovita. Time studentima odmah pokažite zašto učinkovitost nije isto što i pravednost. Ova je razlika okosnica cijelog predavanja pa je vrijedi ponoviti.
+:::
+
+## Kaldor-Hicksov kriterij
+
+[KOMPENZACIJSKO NAČELO]{.section-label}
+
+::: {.def}
+Prema **Kaldor-Hicksovu kriteriju** promjena je opravdana ako su dobici dobitnika dovoljno veliki da bi se njima u načelu mogli nadoknaditi gubici gubitnika, čak i ako se kompenzacija stvarno ne provede.
+:::
+
+. . .
+
+- Na njemu počiva analiza troškova i koristi [@boardman2018]
+- Omogućuje ocjenu politika koje stvaraju i dobitnike i gubitnike
+- Skrivena pretpostavka: dodatni euro vrijedi jednako [siromašnomu i bogatomu]{.accent}
+
+::: {.notes}
+Objasnite zašto je Pareto kriterij prestrog za stvarnu politiku: gotovo svaka reforma nekoga ošteti pa bi po čistom Paretu bila zabranjena. Kaldor-Hicks ublažava taj uvjet tako što traži samo potencijalnu, a ne i stvarnu kompenzaciju. Upozorite na cijenu te fleksibilnosti: zbrajanjem eura dobitnika i gubitnika prešutno se pretpostavlja da euro jednako vrijedi svima, što je vrijednosni sud, a ne tehnička činjenica. Recite da je upravo ovaj kriterij operativna podloga gotovo svih službenih procjena učinaka propisa.
+:::
+
+## Prvi teorem blagostanja
+
+[NEVIDLJIVA RUKA, FORMALIZIRANA]{.section-label}
+
+::: {.lead}
+Pod kojim uvjetima tržište samo od sebe dovodi do učinkovita ishoda?
+:::
+
+. . .
+
+Prvi teorem: pod strogim uvjetima konkurentsko tržište vodi do Pareto učinkovite alokacije [@arrow1954]
+
+. . .
+
+- Uvjeti: savršena konkurencija, potpune informacije, jasna vlasnička prava
+- Dodatno: nema eksternalija, javnih dobara ni tržišne moći
+- Tržišni neuspjesi iz Predavanja 2–3 upravo su [slučajevi u kojima ti uvjeti otpadaju]{.accent}
+
+::: {.notes}
+Prvi teorem predstavite kao formalnu inačicu Smithove nevidljive ruke. Ključno je naglasiti popis uvjeta jer su oni ono što povezuje ovo predavanje s prethodnima. Vratite se ukratko na eksternalije, javna dobra, asimetrične informacije i tržišnu moć iz Predavanja 2 i 3 i pokažite da svaki tržišni neuspjeh točno odgovara kršenju jedne pretpostavke teorema. Time studenti vide da tržišni neuspjesi nisu nasumičan popis, nego sustavan niz odstupanja od idealnih uvjeta.
+:::
+
+## Drugi teorem blagostanja
+
+[UČINKOVITOST ODVOJENA OD PRAVEDNOSTI]{.section-label}
+
+::: {.def}
+Prema **drugom teoremu** svaka se Pareto učinkovita alokacija može postići tržišnom razmjenom ako se prethodno paušalno (lump-sum) preraspodijele početni resursi [@arrow1954].
+:::
+
+. . .
+
+- Posljedica: pitanje učinkovitosti i pitanje pravednosti [analitički se razdvajaju]{.accent}
+- Idealan slijed: prvo izaberi pravednu početnu raspodjelu, zatim pusti tržište
+- Tržište proizvodi učinkovit ishod iz koje god pravedne osnovice krenuli
+
+. . .
+
+::: {.cbox .kljucno}
+[Ključno]{.cbox-label}
+Drugi teorem obećava da možemo imati i učinkovitost i pravednost, samo ako alate za preraspodjelu primijenimo na početne resurse, a ne na sam tržišni ishod.
+:::
+
+::: {.notes}
+Drugi je teorem intelektualno najprivlačnija točka cijele teorije jer naizgled rješava sukob između učinkovitosti i pravednosti. Poruka je da tržištu ne treba dirati u cijene i razmjenu, nego samo prerasporediti polazne pozicije, a ono će i dalje raditi učinkovito. Naglasite riječ "paušalno": transfer ne smije ovisiti o ponašanju, inače mijenja poticaje. Pripremite studente da ćemo na sljedećem slajdu pokazati zašto baš taj uvjet pada u stvarnom svijetu.
+:::
+
+## Zašto se teoremi lome u praksi
+
+[OD TEORIJE PREMA OGRANIČENJIMA]{.section-label}
+
+::: {.columns}
+::: {.column width="50%"}
+[Paušalni transferi nisu izvedivi]{.accent}
+
+- Država ne vidi nečiju sposobnost, nego samo ostvarene zarade
+- Svaki realan porez ili transfer veže se uz zaradu pa mijenja poticaje [@mirrlees1971]
+:::
+::: {.column width="50%"}
+[Preraspodjela mijenja moć]{.accent}
+
+- Svaki čin preraspodjele mijenja političku moć nad budućim preraspodjelama
+- Pitanje se time stalno iznova otvara [@acemoglu2012]
+:::
+:::
+
+. . .
+
+::: {.cbox .praksa}
+[Praksa]{.cbox-label}
+Idealni paušalni porez trebao bi oporezivati sposobnost, no nju nitko ne može izravno izmjeriti pa optimalno oporezivanje uvijek balansira između preraspodjele i očuvanja poticaja.
+:::
+
+::: {.notes}
+Ovo je najvažniji slajd cjeline jer ruši lažnu utjehu drugog teorema. Objasnite da bi savršen paušalni porez morao biti vezan uz urođenu sposobnost zarade, a ne uz stvarno zarađeno, jer bi inače ljudi prilagodili ponašanje da plate manje. Budući da država vidi samo zarade, svaki stvarni instrument iskrivljuje poticaje, što je srž Mirrleesove teorije optimalnog oporezivanja. Drugi je mehanizam politički: tko dobije resurse, dobije i veću moć da oblikuje sljedeći krug preraspodjele. Zaključite da se zbog toga učinkovitost i pravednost u praksi ne mogu čisto razdvojiti.
+:::
+
+## Teorija drugog najboljeg
+
+[OPREZ PRED DJELOMIČNIM POPRAVCIMA]{.section-label}
+
+::: {.def}
+Prema **teoriji drugog najboljeg**, kad istodobno postoji više odstupanja od idealnih uvjeta, ispravljanje samo jednoga ne mora povećati blagostanje, a katkad ga i smanjuje [@lipseylancaster1956].
+:::
+
+. . .
+
+- Djelomičan popravak nije automatski poboljšanje
+- Intervencije treba promatrati zajedno, a ne izolirano
+- Pouka: zdrav [oprez]{.accent} pred parcijalnim rješenjima
+
+::: {.notes}
+Teorija drugog najboljeg važan je protuotrov naivnom zaključivanju da je svako približavanje idealu dobro. Dajte intuiciju: ako u gospodarstvu već postoje dva iskrivljenja, uklanjanje samo jednoga može pogoršati ravnotežu jer preostalo iskrivljenje sada djeluje slobodnije. Studentima poručite da to nije izgovor za nedjelovanje, nego poziv na cjelovitu, a ne parcijalnu analizu. Ova ideja kasnije opravdava zašto dobre politike zahtijevaju koordinaciju više instrumenata istodobno.
+:::
+
+## Učinkovito, ali nepravedno
+
+[MOST PREMA RASPODJELI]{.section-label}
+
+::: {.lead}
+Tržišni ishod može biti savršeno učinkovit i istodobno za mnoge duboko nepravedan.
+:::
+
+. . .
+
+- Pareto učinkovitost ne jamči nikakvu minimalnu razinu pravednosti
+- Tržište nema ugrađen mehanizam koji bi nejednakost sam od sebe ispravio
+- Ako pravednost želimo, moramo je [izabrati i provesti]{.accent} kao zasebnu odluku
+
+. . .
+
+::: {.cbox .kljucno}
+[Ključno]{.cbox-label}
+Učinkovitost nam govori kako napraviti najveću pitu, ali ne i kako je podijeliti. Drugo nas pitanje vodi ravno u distribucijsku funkciju države.
+:::
+
+::: {.notes}
+Ovim slajdom zatvaramo pojmovni dio i gradimo most prema distribucijskoj funkciji. Ponovite glavnu nit cijele cjeline: učinkovitost je nužna, ali nipošto dovoljna za dobro društvo. Naglasite da odluka o pravednosti nije tehnička, nego vrijednosna i politička pa je tržište samo ne može donijeti umjesto nas. Najavite da sljedeća cjelina uvodi mjere nejednakosti i funkciju društvenog blagostanja kojima ćemo to vrijednosno pitanje učiniti analitički uhvatljivim. Time prirodno prelazimo s pitanja veličine pite na pitanje njezine podjele.
+:::
+
+## Distribucija i redistribucija {.dio-slide}
+
+[DISTRIBUCIJSKA FUNKCIJA]{.section-label}
+
+::: {.lead}
+Distribucija je raspodjela dohotka i bogatstva među ljudima u nekom trenutku, a redistribucija (preraspodjela) njezina je svjesna promjena porezima, transferima i javnim uslugama.
+:::
+
+. . .
+
+- Tržište proizvodi neku raspodjelu, ali ona nije ni prirodna ni konačna
+- Država je preoblikuje dvjema polugama: prihodnom (porezi) i rashodnom (transferi, usluge)
+- Preraspodjela nije samo novčani transfer: financiranje obrazovanja i zdravstva mijenja raspodjelu životnih prilika
+
+::: {.notes}
+Ovo je naslovni slajd cjeline o nejednakosti. Naglasite razliku između statičke slike (distribucija) i procesa koji je mijenja (redistribucija). Istaknite da preraspodjelu ne treba svesti na "uzeti bogatima, dati siromašnima" u gotovini, jer javne usluge poput škole i bolnice jednako snažno mijenjaju raspodjelu prilika. Najavite da ćemo prvo razložiti dimenzije preraspodjele, zatim naučiti mjeriti nejednakost, pa pogledati koliko preraspodjela stvarno mijenja sliku. Podsjetite studente da je tema vrijednosno osjetljiva i da cilj nije nametnuti stav, nego dati alate za razmišljanje.
+:::
+
+## Dvije dimenzije preraspodjele
+
+[DIMENZIJE]{.section-label}
+
+::: {.columns}
+::: {.column width="50%"}
+[Vertikalna]{.accent}
+
+- Između bogatijih i siromašnijih
+- Cilj: smanjiti dohodovni jaz
+- Poluge: progresivni porezi, ciljani transferi
+:::
+::: {.column width="50%"}
+[Horizontalna]{.accent}
+
+- Između različitih životnih okolnosti
+- Zdravi/bolesni, zaposleni/nezaposleni, mladi/stari
+- Poluge: zdravstveno i mirovinsko osiguranje, naknade
+:::
+:::
+
+::: {.cbox .kljucno}
+[Ključno]{.cbox-label}
+Država blagostanja ne preraspodjeljuje samo dohodak nego i [rizike]{.accent}: bolest, nezaposlenost i starost mogu zadesiti svakoga, pa je dio preraspodjele zapravo zajedničko osiguranje protiv nesigurne budućnosti [@musgrave1959; @stiglitz2015].
+:::
+
+::: {.notes}
+Razdvojite dvije osi jer ih studenti često brkaju. Vertikalna je ono na što obično mislimo kad kažemo preraspodjela: od bogatijih prema siromašnijima. Horizontalna preraspodjeljuje između stanja, a ne nužno između bogatih i siromašnih, primjerice od zaposlenih prema nezaposlenima ili od mladih prema starima. Posebno naglasite ideju preraspodjele rizika: kad uplaćujemo doprinose, mi se osiguravamo za slučaj da i sami završimo u skupini koja prima. Tako mirovinski i zdravstveni sustav nisu samo trošak, nego oblik kolektivnog osiguranja. Povežite to s prethodnim predavanjima o tržišnim neuspjesima u osiguranju.
+:::
+
+## Kako izmjeriti nejednakost
+
+[MJERENJE]{.section-label}
+
+::: {.def}
+**Lorenzova krivulja** prikazuje kumulativni udio dohotka koji pripada najsiromašnijem dijelu stanovništva: na vodoravnoj osi je kumulativni udio stanovništva poredan od najsiromašnijih prema najbogatijima, a na okomitoj kumulativni udio dohotka koji oni primaju.
+:::
+
+::: {.def}
+**Ginijev koeficijent** jednak je dvostrukoj površini između dijagonale jednakosti i Lorenzove krivulje; kreće se od 0 (potpuna jednakost) do 1 (potpuna nejednakost) i sažima cijelu raspodjelu u jedan broj usporediv među zemljama [@atkinson2015].
+:::
+
+. . .
+
+- Dijagonala je crta savršene jednakosti: svakih x % stanovništva prima točno x % dohotka
+- Što je krivulja udubljenija, raspodjela je nejednakija
+
+::: {.notes}
+Ovo je tehnička jezgra cjeline, pa idite polako. Najprije objasnite Lorenzovu krivulju riječima: poredajte sve ljude od najsiromašnijih prema najbogatijima i pitajte koliki udio ukupnog dohotka prima donjih 10 %, donjih 20 % i tako dalje. Tek kad to sjedne, uvedite Gini kao broj koji mjeri koliko je krivulja udaljena od dijagonale. Naglasite raspon od 0 do 1 i intuiciju da veći Gini znači veću nejednakost. Recite da ćemo na sljedećem slajdu to vidjeti na grafu i sami pomicati krivulju.
+:::
+
+## Lorenz i Gini na grafu {.smaller}
+
+[MJERENJE — ISPROBAJTE]{.section-label}
+
+```{ojs}
+//| echo: false
+viewof lor_controls = Inputs.form({
+  k: Inputs.range([1, 5],   {value: 2.5, step: 0.1,  width: 260, label: "Nejednakost"}),
+  t: Inputs.range([0, 0.6], {value: 0,   step: 0.05, width: 260, label: "Preraspodjela"})
+})
+```
+
+```{ojs}
+//| echo: false
+{
+  const k = lor_controls.k, t = lor_controls.t;
+  const L = (p) => (1 - t) * Math.pow(p, k) + t * p;
+  const ps = d3.range(0, 1.0001, 0.01);
+  const lorenz = ps.map(p => ({p, L: L(p)}));
+  const diag = [{p: 0, L: 0}, {p: 1, L: 1}];
+  let area = 0;
+  for (let i = 1; i < lorenz.length; i++) {
+    area += (lorenz[i].L + lorenz[i - 1].L) / 2 * (lorenz[i].p - lorenz[i - 1].p);
+  }
+  const gini = 1 - 2 * area;
+  return Plot.plot({
+    width: 400, height: 400, marginLeft: 50, marginRight: 20, marginTop: 20, marginBottom: 42,
+    aspectRatio: 1,
+    style: {fontSize: "12px", fontFamily: "Public Sans, system-ui, sans-serif", color: "#3A332D", background: "transparent"},
+    x: {label: "Kumulativni udio stanovništva →", domain: [0, 1], tickFormat: "%"},
+    y: {label: "↑ Kumulativni udio dohotka", domain: [0, 1], tickFormat: "%"},
+    marks: [
+      Plot.line(diag, {x: "p", y: "L", stroke: "#6B6357", strokeDasharray: "5,4", strokeWidth: 1.5}),
+      Plot.line(lorenz, {x: "p", y: "L", stroke: "#2D5A8E", strokeWidth: 2.5}),
+      Plot.text([{p: 0.04, L: 0.93}], {x: "p", y: "L", text: [`Ginijev koeficijent = ${gini.toFixed(2).replace(".", ",")}`],
+        fill: "#1C1916", fontSize: 14, fontWeight: 700, textAnchor: "start"}),
+      Plot.text([{p: 0.80, L: 0.86}], {x: "p", y: "L", text: ["linija jednakosti"],
+        fill: "#6B6357", fontSize: 11, fontStyle: "italic", textAnchor: "start", rotate: -33})
+    ]
+  });
+}
+```
+
+::: {.isprobaj}
+Pomaknite klizač [nejednakosti]{.accent}: krivulja se udubljuje, a Gini raste. Zatim pomaknite klizač [preraspodjele]{.accent}: porezi i transferi vraćaju krivulju prema dijagonali, a Gini pada.
+:::
+
+::: {.notes}
+Iskoristite graf interaktivno i pustite da studenti predviđaju što će se dogoditi prije nego što pomaknete klizač. Prvo klizačem nejednakosti pokažite kako se krivulja udubljuje i kako Gini raste prema 1. Zatim klizačem preraspodjele pokažite suprotan smjer: krivulja se primiče dijagonali, Gini pada. Time vizualno povezujete apstraktni broj s konkretnim oblikom raspodjele. Zaključite da je ista logika ono što stoji iza empirijskih podataka koje gledamo dalje.
+:::
+
+## Što jedan broj ne vidi
+
+[MJERENJE]{.section-label}
+
+::: {.lead}
+Sažeti cijelu raspodjelu u jedan broj korisno je, ali se time nešto i gubi.
+:::
+
+. . .
+
+- Gini je najosjetljiviji na sredinu raspodjele, a slabo hvata sam vrh
+- Zato se uz njega koriste [gornji dohodovni udjeli]{.accent}: udio najbogatijeg 1 % ili 10 %, najčešće iz poreznih podataka [@piketty2014; @atkinson2015]
+- [Atkinsonov indeks]{.accent} ugrađuje eksplicitan vrijednosni sud: averziju prema nejednakosti [@atkinson1970]
+- [Theilov indeks]{.accent} razlaže nejednakost na onu unutar skupina i onu između skupina [@theil1967]
+
+::: {.notes}
+Poanta slajda je da nijedna mjera nije neutralna ni potpuna. Objasnite zašto Gini slabo vidi vrh: mali broj vrlo bogatih malo mijenja površinu ispod krivulje, pa promjene na samom vrhu ostaju gotovo nevidljive. Tu pomažu gornji dohodovni udjeli iz poreznih prijava, koje su popularizirali Piketty i Atkinson. Naglasite da Atkinsonov indeks nije samo tehnička alternativa: u njega se ugrađuje koliko nam je nejednakost moralno problematična. Theilov indeks spomenite kao alat koji odgovara na pitanje dolazi li nejednakost više iz razlika unutar skupina ili između njih, primjerice regija ili razina obrazovanja.
+:::
+
+## Preraspodjela u praksi {.smaller}
+
+[EMPIRIJA]{.section-label}
+
+```{ojs}
+//| echo: false
+{
+  const order = ["SAD","Italija","Njemačka","Hrvatska","Francuska","Švedska","Irska","Poljska"];
+  const data = [
+    {z:"SAD", m:0.506, d:0.394, hl:false},
+    {z:"Italija", m:0.509, d:0.325, hl:false},
+    {z:"Njemačka", m:0.505, d:0.309, hl:false},
+    {z:"Hrvatska", m:0.451, d:0.302, hl:true},
+    {z:"Francuska", m:0.517, d:0.299, hl:false},
+    {z:"Švedska", m:0.432, d:0.289, hl:false},
+    {z:"Irska", m:0.477, d:0.281, hl:false},
+    {z:"Poljska", m:0.442, d:0.257, hl:false}
+  ];
+  return Plot.plot({
+    width: 840, height: 360, marginLeft: 78, marginRight: 28, marginTop: 14, marginBottom: 40,
+    style: {fontSize: "13px", fontFamily: "Public Sans, system-ui, sans-serif", color: "#3A332D", background: "transparent"},
+    x: {domain: [0.2, 0.56], grid: true, label: "Ginijev koeficijent (0 = jednakost) →", tickFormat: d => d.toFixed(2).replace(".", ",")},
+    y: {domain: order, label: null},
+    marks: [
+      Plot.link(data, {x1: "m", x2: "d", y: "z", stroke: d => d.hl ? "#C8985E" : "#9A948A", strokeWidth: 2.6, markerEnd: "arrow"}),
+      Plot.dot(data, {x: "m", y: "z", r: 4.5, fill: "#6B6357", stroke: "white", strokeWidth: 1.2}),
+      Plot.dot(data, {x: "d", y: "z", r: 5.5, fill: d => d.hl ? "#C8985E" : "#4A6B5C", stroke: "white", strokeWidth: 1.4}),
+      Plot.text(data, {x: "m", y: "z", text: d => d.m.toFixed(2).replace(".", ","), dx: 9, dy: -9, fontSize: 9, fill: "#6B6357"}),
+      Plot.text(data, {x: "d", y: "z", text: d => d.d.toFixed(2).replace(".", ","), dx: -9, dy: -9, fontSize: 9, fontWeight: 600, textAnchor: "end", fill: d => d.hl ? "#9A6F38" : "#3A5648"})
+    ]
+  });
+}
+```
+
+[Siva točka = tržišni dohodak (prije), obojena = raspoloživi (poslije); strelica mjeri preraspodjelu. Hrvatska istaknuta. Izvor: OECD Income Distribution Database.]{.izvor}
+
+::: {.cbox .empirija}
+[Empirija]{.cbox-label}
+U razvijenim zemljama porezi i transferi u prosjeku smanjuju Gini za otprilike trećinu, no učinak jako varira: snažan je u nordijskim i kontinentalnim sustavima, slabiji u dijelu anglosaksonskih. Veći dio tog učinka u većini zemalja dolazi od [transfera]{.accent} (mirovine, naknade), a ne od same progresivnosti poreza [@oecd_idd].
+:::
+
+::: {.notes}
+Razjasnite dva pojma dohotka: tržišni dohodak je ono što ljudi zarade prije države, a raspoloživi je ono što im ostane nakon poreza i primljenih transfera. Strelica na grafu pokazuje razliku između tih dvaju Ginija, dakle koliko država ukupno preraspodjeljuje. Iznenadit će studente da glavninu posla obično rade transferi, a ne progresivnost poreza, što je važan nalaz za raspravu o politikama. Naglasite veliku razliku među zemljama jer pokazuje da slične ekonomije mogu donijeti vrlo različite odluke. Time pripremate završnu poruku cjeline.
+:::
+
+## Raspodjela je izbor, ne sudbina
+
+[ZAKLJUČAK]{.section-label}
+
+::: {.lead}
+Zemlje sa sličnom razinom dohotka po stanovniku imaju vrlo različite razine nejednakosti.
+:::
+
+. . .
+
+- Kad bi nejednakost bila čista posljedica tržišta, slične bi ekonomije imale sličnu raspodjelu, ali nemaju
+- Razlika dolazi od izbora: poreznog sustava, opsega transfera te dosega obrazovanja i zdravstva
+- Konačna raspodjela u velikoj je mjeri rezultat politike, a ne samo tržišta [@oecd_idd]
+
+::: {.cbox .kljucno}
+[Ključno]{.cbox-label}
+Distribucija koju vidimo nije zadana sudbina, nego ishod institucija i politika koje društvo bira; zato je raspodjela legitimna tema javne rasprave, a ne samo tehničko pitanje [@oecd_idd].
+:::
+
+::: {.notes}
+Ovo je vrijednosni vrhunac cjeline, pa ga iznesite uravnoteženo. Glavni argument je empirijski, a ne ideološki: činjenica da zemlje slične bogatstvom imaju različitu nejednakost pokazuje da raspodjela ovisi o izborima, ne samo o tržištu. Iz toga ne slijedi koliko je preraspodjele poželjno, nego samo da je to izbor o kojem se može i treba raspravljati. Pozovite studente da razmisle o vaganju između jednakosti i učinkovitosti, koje je tema sljedećeg dijela predavanja. Završite porukom da im je cilj kolegija dati alate za informiranu raspravu, a ne gotove odgovore.
+:::
+
+## Načela pravednosti {.dio-slide}
+
+[VRIJEDNOSTI I POLITIKA]{.section-label}
+
+::: {.lead}
+Ekonomija može izmjeriti posljedice preraspodjele, ali pitanje koliko je nejednakosti društvo spremno prihvatiti pripada svijetu vrijednosti i politike.
+:::
+
+. . .
+
+[Ekonomska analiza opisuje]{.accent} učinke pojedine politike na dohotke, poticaje i proizvodnju.
+
+. . .
+
+[Vrijednosni sud propisuje]{.accent} koliko nam je nejednakost prihvatljiva, a taj odgovor ekonomija sama ne može dati.
+
+::: {.notes}
+Ovo je prijelazni slajd kojim otvaramo dio o načelima pravednosti. Naglasite studentima razliku između pozitivne i normativne analize: ekonomija nam govori što će se dogoditi ako preraspodijelimo dohodak, ali ne i koliko bismo trebali preraspodijeliti. Recite da ćemo u nastavku predstaviti dva utjecajna okvira, utilitaristički i Rawlsov, kao dva načina razmišljanja o pravednosti. Pripremite studente da je tema vrijednosno osjetljiva i da cilj nije nametnuti stav, nego razumjeti logiku svakog pristupa.
+:::
+
+## Utilitarizam
+
+[OKVIRI PRAVEDNOSTI]{.section-label}
+
+::: {.lead}
+Utilitaristički pristup javne politike vrednuje prema njihovu učinku na ukupno blagostanje, shvaćeno kao zbroj korisnosti svih pojedinaca.
+:::
+
+- Mjerilo je [zbroj korisnosti]{.accent}, a ne raspodjela među pojedincima
+- Argument za preraspodjelu ne polazi od moralne osude bogatstva
+- Počiva na [opadajućoj graničnoj korisnosti dohotka]{.accent}: premještanje dohotka od bogatih prema siromašnima može povećati ukupnu korisnost
+- Intelektualni korijeni sežu do klasične političke ekonomije [@mill1859]
+
+::: {.notes}
+Objasnite da je utilitarizam jedan od najstarijih i najutjecajnijih okvira u ekonomiji blagostanja. Ključna poruka je da utilitarist ne osuđuje bogatstvo kao takvo, nego računa: ako ista jedinica dohotka donosi više korisnosti siromašnome nego bogatome, onda premještanje povećava ukupni zbroj. Upozorite studente da je riječ o zbroju, što znači da raspodjela sama po sebi nije važna, važan je samo ukupan iznos. Najavite da ćemo na sljedećem slajdu pažljivije razložiti pretpostavku o opadajućoj graničnoj korisnosti.
+:::
+
+## Opadajuća granična korisnost dohotka
+
+[OKVIRI PRAVEDNOSTI]{.section-label}
+
+::: {.def}
+Korisnost ima **opadajuću graničnu korisnost dohotka** ako svaka dodatna jedinica dohotka donosi sve manji prirast korisnosti, to jest ako je funkcija korisnosti rastuća, ali konkavna.
+:::
+
+. . .
+
+- Tisuću eura znači mnogo siromašnome kućanstvu, a malo bogatome
+- Zbog toga premještanje iste svote naniže povećava ukupnu korisnost
+- Pretpostavka traži [usporedivost korisnosti]{.accent} među osobama, što je vrijednosno sporno
+
+::: {.formula}
+$U'(d) > 0, \quad U''(d) < 0$
+:::
+
+::: {.notes}
+Ovo je analitička srž utilitarističkog argumenta za preraspodjelu. Provedite studente kroz primjer: ista tisuća eura dramatično mijenja život kućanstvu na rubu siromaštva, a jedva se primjećuje u proračunu vrlo bogate osobe. Naglasite da formula kaže dvije stvari, korisnost raste s dohotkom (prva derivacija pozitivna), ali sve sporije (druga derivacija negativna). Upozorite na skrivenu pretpostavku: da bismo zbrajali korisnosti različitih ljudi, moramo ih moći usporediti, što mnogi ekonomisti smatraju vrijednosno spornim.
+:::
+
+## Okunovo šuplje vedro
+
+[NAPETOST UČINKOVITOST–PRAVEDNOST]{.section-label}
+
+::: {.lead}
+Preraspodjela nije besplatna: dio sredstava iscuri na putu od bogatih prema siromašnima, poput vode iz šupljeg vedra.
+:::
+
+- [Administrativni troškovi]{.accent} prikupljanja i raspodjele
+- [Porezna evazija]{.accent} i izbjegavanje
+- [Smanjena ponuda rada]{.accent} zbog slabijih poticaja
+
+::: {.cbox .kljucno}
+[Ključno]{.cbox-label}
+Slika šupljeg vedra sažima temeljnu napetost između učinkovitosti i pravednosti: što više preraspodjeljujemo, to više curi, pa svako društvo mora odlučiti koliko mu je curenja prihvatljivo [@okun1975].
+:::
+
+::: {.notes}
+Okunova metafora šupljeg vedra jedna je od najpamtljivijih slika u ekonomiji blagostanja, pa je vrijedi dobro razraditi. Objasnite da kad nosimo vodu od bogatih prema siromašnima, vedro propušta: dio dohotka nestane na administraciju, dio se izgubi jer ljudi izbjegavaju porez, a dio nestane jer visoki porezi slabe poticaj za rad. Pitajte studente koliko su curenja spremni prihvatiti, na primjer bi li preraspodjela bila opravdana ako od svakog eura uzetog bogatima samo pedeset centi stigne do siromašnih. Time uvodite središnju napetost cijelog predavanja, učinkovitost protiv pravednosti.
+:::
+
+## Granice utilitarizma
+
+[OKVIRI PRAVEDNOSTI]{.section-label}
+
+::: {.lead}
+Dosljedno proveden utilitaristički račun u krajnjem obliku vodi potpunoj jednakosti dohotka, no samo dok zanemarimo poticaje.
+:::
+
+- Uz jednake sklonosti i strogo konkavnu korisnost čisti račun traži [potpunu jednakost]{.accent} [@pigou1920]
+- To vrijedi samo ako preraspodjela ne dira u veličinu kolača
+- Čim uvedemo poticaje, potpuna uravnilovka smanjuje proizvodnju
+- Zato [optimalno oporezivanje]{.accent} vaga dobitak u pravednosti protiv gubitka od smanjenog rada [@mirrlees1971]
+
+. . .
+
+::: {.cbox .empirija}
+[Empirija]{.cbox-label}
+Optimalna gornja granična porezna stopa nije univerzalna, nego ovisi o elastičnosti dohotka, obliku raspodjele i društvenoj sklonosti preraspodjeli [@saez2001].
+:::
+
+::: {.notes}
+Cilj ovog slajda jest pokazati da i sam utilitarizam ima ugrađenu granicu. U svom čistom obliku, uz pretpostavku da svi imaju jednake sklonosti i konkavnu korisnost, utilitaristički račun bi izjednačio sve dohotke, jer svako daljnje premještanje povećava zbroj korisnosti. No to vrijedi samo u svijetu fiksnog kolača. Naglasite da poticaji mijenjaju sliku: ako visoki porezi obeshrabruju rad i ulaganje, kolač se smanjuje, pa potpuna jednakost više nije optimalna. Tu se rađa teorija optimalnog oporezivanja, koja izričito vaga pravednost protiv učinkovitosti, a Saezova formula pokazuje da odgovor ovisi o nekoliko mjerljivih veličina, a ne o ideologiji.
+:::
+
+## Rawls i veo neznanja
+
+[OKVIRI PRAVEDNOSTI]{.section-label}
+
+::: {.def}
+Prema Rawlsovu pristupu pravedna su ona pravila koja bismo izabrali iza **vela neznanja**, ne znajući koji ćemo položaj u društvu zauzeti [@rawls1971].
+:::
+
+. . .
+
+- Ne pita se za zbroj korisnosti, nego za [pravila koja bismo svi prihvatili]{.accent}
+- Iza vela neznanja ne znamo hoćemo li biti bogati ili siromašni, zdravi ili bolesni
+- Iz toga slijedi [maximin pravilo]{.accent}: institucije oblikovati tako da maksimiziraju položaj najlošije stojećih
+- Nejednakosti su prihvatljive [samo ako koriste i najugroženijima]{.accent}
+
+::: {.notes}
+Predstavite Rawlsa kao temeljnu alternativu utilitarizmu. Ključni misaoni eksperiment je veo neznanja: zamislite da birate pravila društva ne znajući tko ćete u njemu biti. Pitajte studente kakva bi pravila izabrali u toj situaciji, hoće li riskirati da završe na samom dnu. Rawls tvrdi da bismo bili oprezni i izabrali maximin, to jest pravila koja podižu položaj najsiromašnijih. Naglasite razliku spram utilitarizma: utilitarist gleda zbroj, Rawls gleda najlošije stojećeg pojedinca, pa mu nije važno koliko dobiva onaj na vrhu sve dok to ne šteti onima na dnu.
+:::
+
+## Jedan parametar averzije
+
+[OKVIRI PRAVEDNOSTI]{.section-label}
+
+::: {.lead}
+Obje logike obuhvaća jedna funkcija društvenog blagostanja s parametrom averzije prema nejednakosti.
+:::
+
+- [ε = 0]{.var}: društvo je ravnodušno prema raspodjeli, što je utilitaristički krajnji slučaj
+- Kako [ε]{.var} raste, niski dohodci nose sve veću težinu
+- [ε → ∞]{.var}: blagostanje ovisi samo o najsiromašnijem, to jest Rawlsov maximin [@atkinson1970]
+
+::: {.formula}
+$W = \sum_i \frac{d_i^{\,1-\varepsilon}}{1-\varepsilon}, \quad \varepsilon \ge 0$
+:::
+
+::: {.cbox .kljucno}
+[Ključno]{.cbox-label}
+Spor između utilitarizma i Rawlsa ne mora biti spor između nepomirljivih svjetonazora, nego pitanje koliko iznosi jedan broj, parametar averzije prema nejednakosti [ε]{.var}.
+:::
+
+::: {.notes}
+Ovaj slajd elegantno zatvara cjelinu jer pokazuje da utilitarizam i Rawls nisu dva odvojena svijeta, nego dvije krajnje točke istog kontinuuma. Provedite studente kroz parametar epsilon: pri nuli društvu je svejedno kome pripada dohodak i to je čisti utilitarizam, a kako epsilon raste, sve više brinemo o najsiromašnijima, dok u beskonačnosti gledamo samo njih, što je Rawls. Glavna poruka je smirujuća i analitički moćna: vrijednosni spor o pravednosti može se svesti na pitanje koliko iznosi epsilon, a o tome možemo raspravljati racionalno. Napomenite da formula vrijedi za epsilon različit od jedan, dok za epsilon jednak jedan funkcija prelazi u zbroj logaritama dohotka.
+:::
+
+## Robni egalitarizam {.dio-slide}
+
+[NAČELA PRAVEDNOSTI II]{.section-label}
+
+::: {.lead}
+Cilj nije jednak dohodak za sve, nego zajamčen pristup ključnim dobrima.
+:::
+
+. . .
+
+- Društvo ne mora brisati razlike u [dohotku]{.accent}
+- Ali treba osigurati svima pristup: osnovnom obrazovanju, zdravstvu, sigurnosti, prehrani, stanovanju, pravnoj zaštiti
+- Cilj je spriječiti da razlike prerastu u [trajnu isključenost]{.accent}
+
+::: {.notes}
+Ova cjelina otvara drukčiji pogled na pravednost od onoga koji smo dosad imali. Naglasite studentima da robni egalitarizam nije zahtjev za jednakošću ishoda, nego za jednakošću pristupa određenim dobrima koja smatramo nužnima za dostojanstven život. Povežite s prethodnim cjelinama o preraspodjeli: ovdje pomičemo fokus s pukog novca na konkretna dobra. Pitajte studente koja bi dobra oni uvrstili na ovaj popis i zašto.
+:::
+
+## Pristup, a ne samo dohodak
+
+[ROBNI EGALITARIZAM]{.section-label}
+
+::: {.lead}
+Dvije osobe s istim dohotkom mogu imati vrlo različite stvarne mogućnosti.
+:::
+
+- Senov pristup [sposobnostima]{.accent}: važno je što čovjek stvarno može učiniti i postati, a ne samo koliko novca ima [@sen1999]
+- Isti dohodak, ali različite okolnosti: zdravlje, mjesto stanovanja, obrazovanje, obiteljska podrška
+- [Zdravstvo i obrazovanje]{.accent} smanjuju ovisnost životnih šansi o dohotku roditelja
+- Zato se ta dobra često izdvajaju iz čistog tržišnog načela raspodjele
+
+::: {.notes}
+Senov koncept sposobnosti najlakše je objasniti kroz primjer: osoba s invaliditetom i zdrava osoba s istim dohotkom nemaju jednake stvarne mogućnosti jer prvoj veći dio dohotka odlazi na osnovne potrebe. Naglasite da je obrazovanje ključan mehanizam društvene mobilnosti, jer prekida lanac u kojem siromaštvo roditelja predodređuje siromaštvo djece. Povežite zdravstvo i obrazovanje s ranijom raspravom o tržišnim neuspjesima i pozitivnim eksternalijama. Potaknite studente da razmisle koliko su njihove vlastite životne šanse oblikovane pristupom tim dobrima.
+:::
+
+## Nordijski model
+
+[ROBNI EGALITARIZAM U PRAKSI]{.section-label}
+
+::: {.cbox .praksa}
+[Politika u praksi]{.cbox-label}
+Nordijske zemlje spajaju snažnu preraspodjelu s otvorenim tržišnim gospodarstvom.
+
+- [Univerzalne usluge]{.accent}: zdravstvo, obrazovanje i skrb koje koristi i srednja klasa, pa postoji široka politička potpora
+- Tržišna nejednakost prije poreza nije osobito niža nego drugdje, ali nakon poreza i transfera među najnižima je
+- Cijena: visoko porezno opterećenje, porezna disciplina i [povjerenje]{.accent}
+- Teško se preslikava ondje gdje povjerenja ili upravnog kapaciteta nema
+:::
+
+::: {.notes}
+Ovaj slajd razbija čestu zabludu da je nordijski uspjeh samo posljedica visokih poreza. Ključ je u univerzalnosti: kad usluge koristi i srednja klasa, ona ih politički podupire i spremna je plaćati visoke poreze. Naglasite da je tržišna nejednakost ondje slična drugim zemljama; razlika nastaje tek nakon preraspodjele. Upozorite na problem prenošenja modela: bez visokog povjerenja u institucije i bez sposobne uprave isti recept drugdje ne funkcionira. Ovo je dobra prilika za kratku raspravu o tome zašto se taj model teško kopira.
+:::
+
+## Paternalizam
+
+[KADA DRŽAVA INTERVENIRA RADI POJEDINCA]{.section-label}
+
+::: {.def}
+**Paternalizam** je državna intervencija koja ograničava ili usmjerava ponašanje pojedinca radi njegova vlastitog dobra, a ne radi zaštite trećih osoba.
+:::
+
+::: {.columns}
+::: {.column width="50%"}
+[Tvrdi paternalizam]{.accent}
+
+Prisila ili zabrana
+
+- Obvezno obrazovanje
+- Obvezno mirovinsko i zdravstveno osiguranje
+- Obvezan sigurnosni pojas
+:::
+::: {.column width="50%"}
+[Meki paternalizam]{.accent}
+
+Oblikovanje zadanih opcija bez ukidanja izbora
+
+- Automatsko uključenje u mirovinsku štednju uz mogućnost izlaska
+- Poticaj ili "nudge" [@thaler2008]
+:::
+:::
+
+::: {.notes}
+Razlika između tvrdog i mekog paternalizma središnja je za ovu raspravu. Tvrdi paternalizam izravno ograničava izbor zabranom ili obvezom, dok meki paternalizam samo mijenja zadanu opciju, a sloboda izbora ostaje netaknuta. Objasnite da se opravdanje za paternalizam traži u bihevioralnim ograničenjima: ljudi su skloni inerciji, kratkoročnim motivima i sustavnim pristranostima. Primjer automatskog uključenja u mirovinsku štednju izvrsno pokazuje kako sama promjena zadane opcije dramatično mijenja ponašanje. Pitajte studente smatraju li meki paternalizam prihvatljivijim od tvrdoga i zašto.
+:::
+
+## Granica paternalizma: načelo štete
+
+[PATERNALIZAM I SLOBODA]{.section-label}
+
+::: {.lead}
+Paternalizam ograničava slobodu, pa je trajno kontroverzan.
+:::
+
+- Millovo [načelo štete]{.accent}: ograničenje slobode lakše je opravdati kad ponašanje šteti drugima [@mill1859]
+- Teže ga je opravdati kad država ograničava pojedinca samo radi njegova vlastitog dobra
+- Granica nije oštra: gdje prestaje briga za pojedinca, a počinje neprihvatljivo nametanje?
+- Zato se meki paternalizam često čini prihvatljivijim, jer sloboda izbora ostaje
+
+::: {.notes}
+Millovo načelo štete temeljni je liberalni argument o granicama državne intervencije. Naglasite asimetriju: kad nečije ponašanje šteti drugima, postoji jasno opravdanje za ograničenje (sjetimo se eksternalija iz prethodnih cjelina), no kad šteti samo sebi, opravdanje je puno slabije. Ova je tema vrijednosno osjetljiva, pa zadržite uravnotežen ton i ne namećite stav. Dobra je rasprava: trebaju li odrasli ljudi imati pravo donositi i loše odluke o sebi? Povežite s mekim paternalizmom kao kompromisom koji čuva slobodu izbora.
+:::
+
+## Efikasnost i pravednost nisu uvijek razmjena
+
+[ODNOS EFIKASNOSTI I PRAVEDNOSTI]{.section-label}
+
+::: {.lead}
+Pravednost i učinkovitost ponekad se sukobljavaju, a ponekad rastu zajedno.
+:::
+
+::: {.columns}
+::: {.column width="50%"}
+[Stvarni sukob]{.accent}
+
+- Loše dizajniran porez koji iskrivljuje ponašanje
+- "Zamka neaktivnosti" u transferima: rad se ne isplati
+:::
+::: {.column width="50%"}
+[Oboje raste]{.accent}
+
+- Obrazovanje djece iz siromašnijih obitelji
+- Primarno zdravstvo
+- Socijalna sigurnost koja potiče preuzimanje rizika
+:::
+:::
+
+::: {.cbox .kljucno}
+[Ključno]{.cbox-label}
+Ne postoji uvijek razmjena između efikasnosti i pravednosti. Ključ je u [dizajnu]{.accent} politike.
+:::
+
+::: {.notes}
+Ovo je jedna od najvažnijih poruka cijelog kolegija, pa joj posvetite dovoljno vremena. Studenti često automatski pretpostavljaju da je svaka preraspodjela skupa za učinkovitost; pokažite im da to nije nužno tako. Loše dizajnirane politike doista stvaraju gubitke, primjerice zamka neaktivnosti u kojoj povlačenje transfera obeshrabruje rad. No ulaganje u obrazovanje i zdravlje siromašnijih istodobno smanjuje nejednakost i povećava ukupnu produktivnost. Naglasite da pitanje nije samo koliko trošimo, nego kako trošimo.
+:::
+
+## Kako, a ne samo koliko
+
+[ODNOS EFIKASNOSTI I PRAVEDNOSTI]{.section-label}
+
+::: {.lead}
+Iste razine javne potrošnje mogu dati vrlo različite rezultate.
+:::
+
+- Dvije zemlje sa sličnim udjelom javne potrošnje mogu imati posve različite učinke na [siromaštvo]{.accent} i društvenu [mobilnost]{.accent}
+- Presudan je [dizajn]{.accent}, a ne sama razina trošenja:
+  - [Ciljanje]{.accent}: dolazi li pomoć do onih kojima je najpotrebnija?
+  - [Kvaliteta]{.accent}: jesu li škole i bolnice doista dobre?
+  - [Poticaji]{.accent}: potiče li sustav rad i preuzimanje rizika ili ih obeshrabruje?
+
+::: {.cbox .kljucno}
+[Ključno]{.cbox-label}
+Važno je ne samo [koliko]{.accent} se preraspodjeljuje, nego i [kako]{.accent}.
+:::
+
+::: {.notes}
+Ovaj slajd zaokružuje cjelinu i prirodno vodi prema sljedećim temama o instrumentima i dizajnu politika. Naglasite da je usporedba dviju zemalja s istim udjelom javne potrošnje izvrstan podsjetnik da novac sam po sebi ne jamči rezultate. Provedite studente kroz tri dimenzije dizajna: ciljanje, kvalitetu i poticaje, i tražite primjere za svaku. Ciljanje rješava pitanje dolazi li pomoć do pravih ljudi, kvaliteta pitanje je li usluga vrijedna, a poticaji pitanje kako sustav oblikuje ponašanje. Zaključite porukom da su pravednost i učinkovitost prije svega pitanje dobrog dizajna javnih politika.
+:::
+
+## Četiri pogleda na pravednost {.smaller}
+
+[NORMATIVNE LEĆE]{.section-label}
+
+::: {.lead}
+Ekonomija mjeri nejednakost, ali pitanje koliko je nejednakosti previše ostaje vrijednosno. Četiri pristupa nude četiri različite leće.
+:::
+
+::: {.columns}
+::: {.column width="50%"}
+::: {.def}
+Po **utilitarizmu** društvo bira raspodjelu koja daje najveći zbroj korisnosti svih pojedinaca [@mill1859].
+:::
+
+::: {.def}
+Po **Rawlsovu** pristupu pravednost se mjeri položajem najlošije stojećih — bira se raspodjela koja njihov položaj čini najboljim mogućim [@rawls1971].
+:::
+:::
+
+::: {.column width="50%"}
+::: {.def}
+Po **robnom egalitarizmu** svima treba osigurati pristup ključnim dobrima (zdravstvo, obrazovanje, stanovanje), bez obzira na ukupni dohodak [@sen1999].
+:::
+
+::: {.def}
+Po **paternalizmu** država katkad intervenira za dobro pojedinca i kad bi njegov vlastiti izbor bio drukčiji [@thaler2008].
+:::
+:::
+:::
+
+::: {.notes}
+Naglasi da ovo nisu četiri točna ili netočna odgovora, nego četiri okvira koja različito teže blagostanju, najlošije stojećima, dostojanstvu i zaštiti pojedinca. Povuci nit prema ranijim predavanjima: alokacija pita je li tržište učinkovito, a distribucija pita je li ishod pravedan. Pitaj studente kojem pristupu naginju i zašto, ali bez nametanja stava. Istakni da se pristupi u praksi često miješaju, pa konkretne politike obično spajaju više leća odjednom.
+:::
+
+## Što smo naučili
+
+[SAŽETAK]{.section-label}
+
+::: {.agenda}
+1. [Učinkovito nije isto što i pravedno.]{.accent} Dva teorema ekonomije blagostanja razdvajaju učinkovitost od raspodjele, ali paušalna preraspodjela bez gubitaka u praksi nije izvediva [@stiglitz2015].
+2. [Nejednakost se mjeri.]{.accent} Lorenzova krivulja i Ginijev koeficijent daju brojku, a preraspodjela ih smanjuje — usporedi Gini tržišnog i raspoloživog dohotka.
+3. [Koliko je nejednakosti prihvatljivo vrijednosni je izbor.]{.accent} Parametar [ε]{.var} u funkciji društvenog blagostanja izražava koliko nam nejednakost smeta [@atkinson1970].
+4. [Ključ je u dizajnu.]{.accent} Bitno je kako preraspodjeljujemo, a ne samo koliko — loše osmišljena mjera curi kroz šuplje vedro.
+:::
+
+::: {.notes}
+Ovo je rekapitulacija cijelog predavanja, pa svaku točku poveži s ranijim slajdom. Prva točka vraća na dva teorema i Okunovo šuplje vedro, druga na Lorenza i Ginija, treća na Atkinsonov parametar averzije prema nejednakosti, četvrta na raspravu o dizajnu mjera. Provjeri razumiju li studenti razliku između tržišnog i raspoloživog dohotka jer im treba u vježbi koja slijedi. Zadrži tempo i ne ulazi ponovno u izvode, samo podsjeti na zaključke.
+:::
+
+## Nit koja povezuje
+
+[ZAKLJUČAK]{.section-label}
+
+::: {.cbox .kljucno}
+[Ključno]{.cbox-label}
+Ekonomija uokviruje kompromis između učinkovitosti i pravednosti — pokazuje da preraspodjela nešto košta (šuplje vedro), ali ne propisuje koliko nejednakosti smijemo dopustiti.
+
+To koliko nam nejednakost smeta odlučuje društvo kroz politički proces, a ne ekonomska formula. Raspodjela dohotka rezultat je izbora i institucija, a ne neumitna sudbina [@atkinson2015].
+:::
+
+::: {.notes}
+Ovo je emocionalno i intelektualno težište zaključka, pa uspori. Glavna poruka je dvostruka: ekonomija je nezamjenjiva jer mjeri trošak preraspodjele, ali nedostatna jer ne donosi vrijednosni sud umjesto nas. Istakni Atkinsonovu tezu da je nejednakost izbor, a ne sudbina, jer institucije i politike oblikuju i tržišnu i konačnu raspodjelu. Zaokruži luk od alokacije (učinkovitost) preko distribucije (pravednost) prema sljedećem predavanju o stabilizaciji. Pozovi studente da zadrže napetost između dviju vrijednosti umjesto da je prerano razriješe.
+:::
+
+## Vježba s podacima
+
+[VJEŽBA]{.section-label}
+
+::: {.cbox .vjezba}
+[Vježba]{.cbox-label}
+Dvije zemlje, Gini prije i poslije poreza i transfera:
+
+- Zemlja [A]{.var}: tržišni dohodak [0,50]{.accent} → raspoloživi [0,30]{.accent}
+- Zemlja [B]{.var}: tržišni dohodak [0,45]{.accent} → raspoloživi [0,33]{.accent}
+:::
+
+. . .
+
+1. Koja zemlja više preraspodjeljuje? (Usporedi pad Ginija: A pada za 0,20, B za 0,12.)
+2. Što taj veći pad [NE]{.accent} govori o tome čiji je sustav bolji?
+3. Iza Rawlsova vela neznanja, koju biste razinu preraspodjele izabrali i zašto?
+
+::: {.notes}
+Pusti studente da prvo sami izračunaju padove, pa tek onda otkrij brojke postupnim prikazom. Zemlja A smanjuje Gini za 0,20, a zemlja B za 0,12, pa A očito više preraspodjeljuje. Ključna pouka druge točke jest da veća preraspodjela sama po sebi ne znači bolji sustav — možda A kreće od veće tržišne nejednakosti, možda trpi veće gubitke učinkovitosti, a možda građani zemlje B jednostavno biraju manje izjednačavanja. Treće pitanje namjerno je otvoreno i vrijednosno, pa potakni raspravu i pokaži kako veo neznanja vodi prema oprezu i zaštiti najlošije stojećih. Poveži odgovore s četiri leće s prvog slajda ove cjeline.
+:::
+
+## Što slijedi
+
+[PUTOKAZ]{.section-label}
+
+::: {.lead}
+Završili smo dvije od triju klasičnih funkcija države — alokaciju i distribuciju. Ostaje treća, a zatim prelazimo na prihodovnu stranu.
+:::
+
+::: {.agenda}
+1. [Predavanje 5 — Stabilizacijska funkcija.]{.accent} Gospodarstvo u cjelini: recesije, nezaposlenost i inflacija te uloga države u ublažavanju ciklusa.
+2. [Predavanje 6 — Manjkavosti tržišta i teorija oporezivanja.]{.accent} Kako prikupiti prihod pravedno i učinkovito te zašto svaki porez nosi mrtvi teret.
+:::
+
+::: {.notes}
+Zatvori predavanje kratkim pogledom unaprijed da studenti vide cjelinu kolegija. Naglasi da smo obradili dvije mikroekonomski usmjerene funkcije, a stabilizacija prelazi na makrorazinu i cijelo gospodarstvo. Najavi da se distribucijska pitanja vraćaju u predavanju o oporezivanju jer su porezi glavni instrument preraspodjele. Spomeni pojam mrtvog tereta kao most prema sljedećoj temi o trošku poreza. Potakni studente da prije idućeg predavanja ponove razliku između učinkovitosti i pravednosti.
+:::

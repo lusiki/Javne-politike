@@ -16,6 +16,7 @@ project:
     - predavanja/01-uvod-u-javni-izbor.html
     - predavanja/02-vrste-dobara.html
     - predavanja/03-eksternalije.html
+    - predavanja/04-blagostanje-redistribucija.html
     # Slika za dijeljenje linka (OG/Twitter image: ph3.jpg) — eksplicitno
     # navedena kao resurs da se sigurno kopira u docs/ pri renderu.
     - ph3.jpg
