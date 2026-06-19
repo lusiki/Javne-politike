@@ -1,0 +1,1072 @@
+---
+title: "Vrste dobara i uloga javnih financija"
+subtitle: "Zašto jedno dobro može biti privatno, a drugo javno?"
+author: "Milan Deskar-Škrbić · Petra Palić · Luka Šikić"
+lang: hr-HR
+bibliography: ../references.bib
+# Izvor je _-prefiksiran (predavanja/_02-...qmd) pa ga render knjige (quarto
+# render) NE dira; renderiraj ručno, a output-file daje čist naziv bez podvlake.
+output-file: 02-vrste-dobara.html
+format:
+  revealjs:
+    theme: statecraft.scss
+    embed-resources: true
+    slide-number: c/t
+    show-slide-number: all
+    progress: true
+    width: 1050
+    height: 700
+    margin: 0.08
+    center: false
+    transition: fade
+    transition-speed: fast
+    background-transition: fade
+    controls: true
+    controls-layout: bottom-right
+    touch: true
+    hash: true
+    history: true
+    fig-align: center
+    link-external-newwindow: true
+    footer: "Javne politike u Hrvatskoj · Predavanje 2 · [lusiki.github.io/Javne-politike](https://lusiki.github.io/Javne-politike/)"
+---
+
+## Dobro došli natrag {.dio-slide}
+
+[PREDAVANJE 2 — VRSTE DOBARA I ULOGA JAVNIH FINANCIJA]{.section-label}
+
+::: lead
+U prošlom predavanju gledali smo državu skeptičnim okom javnog izbora. Danas radimo korak unatrag, na same temelje: zašto država uopće postoji, koje vrste dobara tržište ne osigurava i što su zapravo javne financije.
+:::
+
+::: notes
+Pozdravite studente i kratko uokvirite zaokret u perspektivi. Prošli put smo rastvarali iluziju o državi kao dobronamjernom planeru, a danas se vraćamo na pitanje zašto je država uopće potrebna. Naglasite da to nije proturječje, nego dvije strane iste priče: tek kada znamo što država treba financirati, možemo ozbiljno pitati tko je nadzire. Najavite da će predavanje biti konkretno, s puno primjera i s pogledom na hrvatski proračun.
+:::
+
+## Gdje smo stali
+
+[PODSJETNIK NA PREDAVANJE 1]{.section-label}
+
+- Uveli smo **javni izbor**: primjenu ekonomske logike na političke odluke, politiku promatranu bez romantike
+- Upoznali smo glavne aktere: birače, političare i birokrate, od kojih svaki slijedi vlastite interese
+- Vidjeli smo paradoks glasovanja: zašto je s gledišta pojedinca racionalno i ne izaći na izbore
+- Zaključili smo skeptično, popisom neuspjeha države, a ne njezinih uspjeha
+
+::: notes
+Brzo prozovite studente da se prisjete glavnih pojmova iz prvog predavanja prije nego što krenete dalje. Podsjetite ih da je središnja poruka bila da i u politici ljudi slijede vlastite interese, jednako kao na tržištu. Spomenite da smo predavanje završili kritički, gledajući gdje država zakaže. Postavite pitanje: ako je država tako sklona neuspjehu, zašto je uopće imamo? Time otvarate današnju temu.
+:::
+
+## Korak unatrag: zašto država uopće postoji
+
+[MOST PREMA TEMELJIMA]{.section-label}
+
+- Predavanje 1 pokazalo je gdje država zakaže; danas pitamo zašto je uopće imamo
+- Polazište je obrnuto: postoje stvari koje tržište samo ne osigurava dobro
+
+. . .
+
+::: {.cbox .kljucno}
+[KLJUČNI UVID]{.cbox-label}
+Iz tržišnog neuspjeha ne slijedi automatski uspjeh države. Ali da bismo uopće ozbiljno raspravljali o ulozi države, najprije moramo razumjeti gdje i zašto tržište zakaže.
+:::
+
+::: notes
+Ovo je most cijelog predavanja, pa mu posvetite minutu. Objasnite da je javni izbor zdrava protuteža naivnoj vjeri u državu, ali da nas ne smije odvesti u drugu krajnost, u naivnu vjeru da tržište uvijek samo riješi sve. Naglasite da postojanje tržišnog neuspjeha otvara prostor za državu, ali ne jamči da će država taj prostor dobro ispuniti. Najavite da ćemo danas precizno utvrditi gdje tržište zakaže, kroz teoriju vrsta dobara. Možete spomenuti da ovu opreznu logiku dijeli i sam javni izbor [@buchanan1962].
+:::
+
+## Dvije velike teme danas
+
+[STRUKTURA PREDAVANJA]{.section-label}
+
+::: columns
+::: {.column width="50%"}
+**1. Vrste dobara**
+
+- Po čemu se dobra razlikuju: isključivost i suparništvo u potrošnji
+- Zašto neka dobra tržište osigurava, a neka ne
+- Javna dobra, zajednički resursi i problem besplatnog korisnika
+:::
+
+::: {.column width="50%"}
+**2. Uloga javnih financija**
+
+- Musgraveov okvir: tri funkcije države
+- Alokacija, redistribucija i stabilizacija
+- Javne financije u praksi: hrvatski proračun i porezi
+:::
+:::
+
+::: notes
+Pokažite studentima dvije noseće cjeline kako bi imali mentalnu kartu predavanja. Prvi dio je teorijski, o tome po čemu se dobra razlikuju i zašto tržište kod nekih zakaže. Drugi dio prelazi na ulogu države u financiranju tih dobara, oslonjen na Musgraveov klasični okvir [@musgrave1959]. Naglasite da prvi dio objašnjava zašto, a drugi kako i koliko. Najavite da ćemo drugi dio prizemljiti na konkretnim brojkama hrvatskog proračuna.
+:::
+
+## Agenda današnjeg predavanja
+
+[PLAN RADA]{.section-label}
+
+::: agenda
+1. **Vrste dobara**: isključivost, suparništvo i četiri tipa dobara
+2. **Javna dobra i zajednički resursi**: besplatni korisnik i tragedija zajedničkog dobra
+3. **Musgraveova trojaka funkcija**: alokacija, redistribucija, stabilizacija
+4. **Javne financije u praksi**: hrvatski proračun, prihodi i rashodi, porezi
+5. **Sažetak i vježba**: ponavljanje pojmova i zadatak za raspravu
+:::
+
+::: notes
+Provedite studente kroz pet blokova predavanja kako bi znali što ih čeka. Naglasite da prva dva bloka grade pojmovni aparat, treći ga sažima u Musgraveov okvir, a četvrti ga primjenjuje na hrvatske podatke. Recite da peti blok služi za utvrđivanje gradiva i da nosi zadatak o kojem ćemo raspravljati. Predložite studentima da tijekom predavanja zapisuju pitanja koja ćemo ostaviti za završnu raspravu.
+:::
+
+## Polazno pitanje {.dio-slide}
+
+[OD ČEGA POLAZIMO]{.section-label}
+
+::: lead
+Zašto neke stvari kupujemo na tržištu, kruh, kavu, tenisice, a za druge plaćamo porez i dobivamo ih naizgled besplatno, uličnu rasvjetu, obranu, čist zrak? Odgovor leži u tome kakva su to dobra.
+:::
+
+::: notes
+Ovo je pitanje koje pokreće cijeli prvi dio predavanja, pa ga postavite kao zagonetku. Potaknite studente da naglas pogode po čemu se kruh razlikuje od ulične rasvjete. Navedite ih da uoče dvije stvari: rasvjetu ne možemo lako uskratiti onome tko ne plati, a moje korištenje rasvjete ne smanjuje vašu količinu svjetla. Recite da su upravo te dvije osobine, isključivost i suparništvo, ključ za razumijevanje uloge države. Time prirodno prelazite na sljedeći blok o vrstama dobara.
+:::
+
+## Zašto nitko ne prodaje zrak {.dio-slide}
+
+[TAKSONOMIJA DOBARA]{.section-label}
+
+::: lead
+I kad su sve ostale pretpostavke tržišta idealne, neka se dobra ipak ne mogu prodati — ne zato što su besplatna, nego zbog svojih svojstava.
+:::
+
+. . .
+
+- Tržište osigurava kruh, automobile i odjeću bez teškoća.
+- Za nacionalnu obranu, javnu rasvjetu ili svjetionik nema cijene koja bi sve uskladila.
+- Razlog leži u dvama tehničkim svojstvima samog dobra, a ne u dobroj volji ili tržišnim nesavršenostima.
+
+::: notes
+Otvorite predavanje izazovom: pitajte studente zašto nitko ne naplaćuje zrak ili svjetlost svjetionika. Naglasite da pretpostavljamo savršeno tržište — nema monopola, informacije su potpune — pa ipak neka dobra izmiču tržišnoj logici. Cilj cjeline je pokazati da odgovor leži u dvama svojstvima dobra, rivalnosti i isključivosti, koja ćemo sada razložiti. Najavite tablicu 2x2 koja slijedi kao mapu cijelog predavanja.
+:::
+
+## Dva svojstva koja definiraju dobro
+
+[TAKSONOMIJA DOBARA]{.section-label}
+
+::: columns
+::: {.column width="50%"}
+**Rivalnost** (konkurentnost u potrošnji)
+
+Smanjuje li moja potrošnja koliko je dobra ostalo drugima?
+
+- Da: dobro je rivalsko.
+- Ne: dobro je nerivalno.
+:::
+
+::: {.column width="50%"}
+**Isključivost**
+
+Mogu li onoga tko ne plati spriječiti da koristi dobro?
+
+- Da: dobro je isključivo.
+- Ne: dobro je neisključivo.
+:::
+:::
+
+. . .
+
+Ta dva pitanja, postavljena zasebno, daju četiri kombinacije i četiri vrste dobara.
+
+::: notes
+Naglasite da su to dva neovisna pitanja, a ne jedno te isto. Studenti ih često brkaju: jedno se tiče fizičke iscrpivosti dobra, drugo mogućnosti naplate. Provedite ih kroz oba pitanja na primjeru jabuke i radijskog signala usmeno, da osjete razliku prije formalnih definicija. Istaknite da odgovor na svako pitanje može biti da ili ne neovisno o drugome.
+:::
+
+## Konkurentnost u potrošnji (rivalnost)
+
+[TAKSONOMIJA DOBARA]{.section-label}
+
+::: def
+Dobro je **rivalsko** ako potrošnja jednog korisnika smanjuje dostupnost ili korist dobra svim ostalima.
+:::
+
+. . .
+
+- Jabuka: ako je ja pojedem, nitko je drugi ne može pojesti — savršeno rivalsko.
+- Radijski signal: kad ga ja slušam, susjed ga čuje jednako dobro — nerivalno.
+- Mjesto u prepunom tramvaju: rivalsko jer zauzeto sjedalo nije slobodno za drugoga.
+
+::: notes
+Mehanizam je iscrpivost: rivalsko dobro troši se u uporabi pa ga preostaje manje. Zamolite studente da sami svrstaju nekoliko primjera — sendvič, koncert na otvorenom, parkirno mjesto. Upozorite da nerivalnost ne znači neograničenost: signal jest nerivalan, ali frekvencijski spektar nije. Ovo svojstvo bit će prvi redak tablice 2x2.
+:::
+
+## Isključivost
+
+[TAKSONOMIJA DOBARA]{.section-label}
+
+::: def
+Dobro je **isključivo** ako je tehnički, pravno ili troškovno moguće spriječiti onoga tko ga ne plati da ga koristi.
+:::
+
+. . .
+
+- Kino: ulaznica na vratima isključuje onoga tko nije platio — isključivo.
+- Svjetionik: brod koji ne plati svejedno vidi svjetlo, isključenje je nemoguće — neisključivo.
+- Ograđeno i naplatno parkiralište nasuprot otvorenom rubu ceste: isto dobro, različita isključivost.
+
+::: notes
+Naglasite da je isključivost pitanje izvedivosti naplate, a ne pravednosti ili poželjnosti. Ključna je riječ troškovno: ponekad je isključenje tehnički moguće, ali toliko skupo da se ne isplati. Pitajte studente kako bi naplatili svjetlost svjetionika — nemogućnost da smisle način upravo je poanta. Povežite s idejom slobodnog jahača koju će sljedeća cjelina razraditi za javna dobra.
+:::
+
+## Četiri vrste dobara {.smaller}
+
+[TAKSONOMIJA DOBARA]{.section-label}
+
+| | **Isključivo** | **Neisključivo** |
+|---|---|---|
+| **Rivalsko** | **Privatno dobro** (kruh, automobil, odjeća) | **Zajedničko dobro** (riblji fond, pašnjak) |
+| **Nerivalno** | **Klupsko dobro** (kino, naplatna autocesta bez gužve, streaming) | **Javno dobro** (nacionalna obrana, javna rasvjeta, svjetionik) |
+
+. . .
+
+Granice među poljima nisu oštre — javnost dobra pitanje je stupnja, a ne stroge podjele [@samuelson1954; @musgrave1959].
+
+::: notes
+Ovo je središnji slajd cijele cjeline — neka studenti precrtaju tablicu. Prođite kroz svako polje jednim primjerom i ponovite koja kombinacija svojstava ga definira. Naglasite da danas razrađujemo lijevi stupac, privatna i klupska dobra, dok desni stupac — zajednička i javna dobra — preuzima sljedeća cjelina. Pripremite studente da granice nisu krute jer ćemo se na to vratiti na kraju.
+:::
+
+## Privatna dobra
+
+[TAKSONOMIJA DOBARA]{.section-label}
+
+Rivalsko i isključivo — najpoznatija i tržištu najprirodnija vrsta dobra.
+
+. . .
+
+- Kruh, automobil, odjeća: potrošnja jednog isključuje drugoga, a tko ne plati ne dobiva.
+- Cijena povezuje ponudu i potražnju: signalizira oskudicu i usmjerava dobro onomu tko ga najviše vrednuje.
+- Tržište ih u pravilu osigurava učinkovito, bez potrebe za državnom intervencijom.
+
+::: {.cbox .kljucno}
+[KLJUČNI UVID]{.cbox-label}
+Učinkovita alokacija ne znači i pravednu raspodjelu — to što tržište dobro radi svoj posao ne jamči da je ishod društveno pravedan.
+:::
+
+::: notes
+Objasnite zašto upravo kod privatnih dobara cjenovni mehanizam funkcionira: oba svojstva omogućuju da prodavač naplati i da kupac internalizira trošak. Povežite s prvim teoremom blagostanja iz ranijih predavanja. Okvir o pravednosti važan je most prema distribucijskoj funkciji države — naglasite da učinkovitost i pravednost nisu isto. Pitajte studente za primjer učinkovitog, ali nepravednog tržišnog ishoda.
+:::
+
+## Klupska dobra
+
+[TAKSONOMIJA DOBARA]{.section-label}
+
+Nerivalno, ali isključivo — mnogi ga mogu istodobno koristiti, ali pristup se može naplatiti.
+
+. . .
+
+- Dok nema gužve, još jedan gledatelj u kinu ili još jedan korisnik streaminga ne smeta postojećima.
+- Ipak, pristup je lako uvjetovati plaćanjem članarine ili ulaznice.
+- Tipičan je oblik opskrbe članski ili pretplatnički, često uz obilježja (prirodnog) monopola zbog visokih fiksnih troškova.
+
+::: {.cbox .praksa}
+[PRIMJER IZ PRAKSE]{.cbox-label}
+Kino, streaming-platforma, kabelska televizija ili naplatna autocesta dok je prohodna: svi naplaćuju pristup nerivalnom dobru, a marginalni korisnik ne umanjuje uslugu ostalima.
+:::
+
+::: notes
+Mehanizam je ključan: budući da je dobro nerivalno, marginalni trošak dodatnog korisnika blizak je nuli, pa je svako isključivanje korisnika koji je spreman platiti zapravo društveni gubitak. Ipak, bez naplate nitko ne bi imao poticaj izgraditi kino ili mrežu. Otvorite napetost između pokrića fiksnih troškova i poželjnosti širokog pristupa. Spomenite da visoki fiksni i niski granični troškovi često vode prema monopolu, što ćemo dotaknuti kasnije.
+:::
+
+## Fluidne granice {.smaller}
+
+[TAKSONOMIJA DOBARA]{.section-label}
+
+Svojstva su rijetko čista, a tehnologija ih s vremenom mijenja.
+
+. . .
+
+- Mješovita dobra: park je nerivalan dok se ne prenapuči, cesta dok nema gužve.
+- Tehnologija pomiče isključivost: naplatne rampe ili kriptirani satelitski signal čine prije neisključivo dobro naplativim.
+- Umjetna inteligencija kao suvremeni primjer napetosti: kad se težinski parametri jezičnog modela javno objave, postaju gotovo neisključivi i nerivalni — obilježja javnog dobra — dok računalna snaga i trošak treniranja ostaju isključivi i skupi [@korinek2026].
+
+::: {.cbox .empirija}
+[EMPIRIJSKI PODATAK]{.cbox-label}
+Nijedno dobro nije savršeno privatno ni savršeno javno: "javnost" je kontinuum, a ista cesta može biti nerivalna noću i rivalska u prometnoj špici.
+:::
+
+::: notes
+Zaokružite cjelinu porukom da su četiri tipa idealni tipovi, a stvarna dobra leže negdje između. Iskoristite primjer umjetne inteligencije da pokažete kako iste kategorije objašnjavaju i potpuno nove tehnologije — objavljeni težinski parametri ponašaju se kao javno dobro, dok je infrastruktura za treniranje klupsko ili privatno dobro. Pitajte studente da smjeste još jedan primjer na kontinuum, recimo gradski park ili Wikipediju. Time predajete štafetu sljedećoj cjelini koja razrađuje desni stupac tablice, javna i zajednička dobra.
+:::
+
+## Javna dobra {.dio-slide}
+
+[ANALIZA TRŽIŠNOG NEUSPJEHA]{.section-label}
+
+::: lead
+Neka dobra tržište sustavno premalo proizvodi jer ih je nemoguće prodati po jedinici. Razlog leži u dvjema njihovim osobinama: nerivalnosti i neisključivosti.
+:::
+
+::: notes
+Ovo je naslovni slajd cjeline o dobrima. Najavite studentima da prelazimo s pitanja "kada tržište radi" na konkretne vrste dobara kod kojih ono podbacuje. Naglasite da nije riječ o moralnoj kategoriji "javno" u smislu državnoga, nego o tehničkim svojstvima samoga dobra. Zamolite publiku neka pokuša smisliti dobro koje mogu koristiti svi istodobno i od kojega je teško nekoga isključiti.
+:::
+
+## Što je javno dobro
+
+[POJMOVNI OKVIR]{.section-label}
+
+::: def
+Dobro je **javno dobro** ako je istodobno nerivalno, što znači da potrošnja jednoga korisnika ne smanjuje dostupnost ostalima, i neisključivo, što znači da je nekoga teško ili preskupo spriječiti u korištenju [@samuelson1954; @musgrave1959].
+:::
+
+. . .
+
+- Nerivalnost: granični trošak dodatnoga korisnika približno je nula.
+- Neisključivost: naplata po jedinici ne radi jer se neplatiše ne mogu odbiti.
+- Zbog te kombinacije tržišni mehanizam cijene zakaže.
+
+::: {.cbox .praksa}
+[PRIMJER IZ PRAKSE]{.cbox-label}
+Nacionalna obrana štiti sve stanovnike istodobno. Svjetlo svjetionika vidi svaki brod u dometu. Otvoreni signal sustava Galileo dostupan je svakom prijamniku, pa ga nitko nema poticaj sam platiti, te se financira javno.
+:::
+
+::: notes
+Provedite studente kroz dvije osi posebno, jer ih se često brka. Nerivalnost je o trošku dodatnoga korisnika, neisključivost je o mogućnosti naplate. Istaknite da prava javna dobra ispunjavaju oba uvjeta, a da većina stvarnih dobara leži negdje između. Galileo je dobar suvremeni primjer jer pokazuje da i visoka tehnologija može imati svojstva svjetionika.
+:::
+
+## Problem slobodnog jahača
+
+[MEHANIZAM]{.section-label}
+
+::: lead
+Ako nekoga ne mogu isključiti iz korištenja, racionalno je da prikrije koliko mu dobro vrijedi i izbjegne plaćanje.
+:::
+
+. . .
+
+- Svatko se nada da će dobro platiti drugi, a on ga svejedno koristiti.
+- Kad se svi tako ponašaju, prikupi se premalo sredstava ili nimalo.
+- Tržište ne uspijeva otkriti stvarnu društvenu potražnju za dobrom [@olson1965].
+
+::: {.cbox .kljucno}
+[KLJUČNI UVID]{.cbox-label}
+Slobodno jahanje nije znak pohlepe nego ishod individualne racionalnosti. Svaki pojedinac postupa razumno sa svoga stajališta, a zbroj tih razumnih odluka daje društveno loš ishod.
+:::
+
+::: notes
+Naglasite da je ovo srž problema, a ne moralna osuda. Svaki student koji je ikad mislio da njegov glas ili njegov doprinos nije presudan već je osjetio logiku slobodnog jahanja. Predložite pitanje: tko bi dobrovoljno uplatio za uličnu rasvjetu kad zna da će svjetlo svejedno gorjeti? Povežite to s time da je upravo neisključivost ono što omogućuje takvo ponašanje.
+:::
+
+## Koliko javnog dobra? Vertikalni zbroj
+
+[OPTIMALNA KOLIČINA]{.section-label}
+
+- Kod privatnoga dobra agregatnu potražnju dobivamo vodoravnim zbrajanjem količina pri svakoj cijeni.
+- Kod javnoga dobra svaka jedinica koristi svima istodobno, pa pojedinačne potražnje zbrajamo okomito po cijeni.
+- Taj okomiti zbroj jest granična društvena korist, odnosno spremnost svih da plate dodatnu jedinicu.
+
+::: formula
+$MSB(Q) = \sum_{i=1}^{n} MB_i(Q)$
+:::
+
+Društveni optimum $Q^{*}$ nalazi se ondje gdje granična društvena korist siječe granični trošak: $MSB = MC$.
+
+::: notes
+Ovo je analitička jezgra cijele cjeline, uzmite vremena. Objasnite zašto je zbrajanje okomito a ne vodoravno: kod kruha svatko kupuje svoj komad, kod obrane svi istodobno troše istu jedinicu, pa zbrajamo koliko je svatko spreman platiti za tu zajedničku jedinicu. Lindahlove cijene prema graničnoj koristi teorijski bi riješile problem, no traže iskreno otkrivanje preferencija [@lindahl1919]. Najavite da na sljedećem slajdu krivulju isprobavamo uživo.
+:::
+
+## Vertikalni zbroj — isprobajte {.smaller}
+
+[OPTIMALNA KOLIČINA]{.section-label}
+
+```{ojs}
+//| echo: false
+viewof pg_controls = Inputs.form({
+  n:     Inputs.range([2, 6],   {value: 4,  step: 1, width: 210, label: "Potrošača (n)"}),
+  a_top: Inputs.range([30, 60], {value: 45, step: 1, width: 210, label: "Spremnost (a₁)"}),
+  delta: Inputs.range([3, 12],  {value: 6,  step: 1, width: 210, label: "Raznolikost (Δ)"}),
+  mc:    Inputs.range([30, 90], {value: 60, step: 1, width: 210, label: "Trošak (MC)"})
+})
+```
+
+```{ojs}
+//| echo: false
+{
+  const n = pg_controls.n, a_top = pg_controls.a_top, delta = pg_controls.delta, MC = pg_controls.mc;
+  const slope = 0.5, Qmax = 100, Pmax = 200;
+  const a_i = d3.range(n).map(i => a_top - i * delta);
+  const Qs = d3.range(0, Qmax + 0.5, 0.5);
+  const indivCurves = a_i.map((a, idx) =>
+    Qs.map(q => ({Q: q, P: Math.max(0, a - slope * q)})).filter(p => p.P >= 0 && p.P <= Pmax));
+  const msb = Qs.map(q => ({Q: q, P: a_i.reduce((acc, a) => acc + Math.max(0, a - slope * q), 0)}))
+    .filter(p => p.P >= 0 && p.P <= Pmax);
+  const mcLine = [{Q: 0, P: MC}, {Q: Qmax, P: MC}];
+  let Qstar = 0;
+  for (let i = msb.length - 1; i >= 0; i--) { if (msb[i].P >= MC) { Qstar = msb[i].Q; break; } }
+  const Qm = Math.max(0, (a_i[0] - MC) / slope);
+  const palette = ["#A9C3DA", "#7FA3C6", "#5683B0", "#3D6B99", "#2D5A8E", "#1E3F63"];
+  const indivMarks = indivCurves.map((curve, idx) =>
+    Plot.line(curve, {x: "Q", y: "P", stroke: palette[idx % palette.length], strokeWidth: 1.5}));
+  return Plot.plot({
+    width: 880, height: 320, marginLeft: 52, marginRight: 20, marginTop: 24, marginBottom: 40,
+    style: {fontSize: "12px", fontFamily: "Public Sans, system-ui, sans-serif", color: "#3A332D", background: "transparent"},
+    x: {label: "Količina javnog dobra (Q) →", domain: [0, Qmax]},
+    y: {label: "↑ Cijena / Korist (P)", domain: [0, Pmax], grid: true},
+    marks: [
+      Plot.ruleY([0], {stroke: "#C9C3B8"}),
+      ...indivMarks,
+      Plot.line(msb, {x: "Q", y: "P", stroke: "#1C1916", strokeWidth: 3}),
+      Plot.line(mcLine, {x: "Q", y: "P", stroke: "#6B1F26", strokeWidth: 2.5}),
+      Plot.ruleX([Qm],    {y1: 0, y2: MC, stroke: "#6B6357", strokeDasharray: "4,3"}),
+      Plot.ruleX([Qstar], {y1: 0, y2: MC, stroke: "#6B6357", strokeDasharray: "4,3"}),
+      Plot.dot([{Q: Qm, P: MC}],    {x: "Q", y: "P", r: 5, fill: "#6B1F26", stroke: "white", strokeWidth: 2}),
+      Plot.dot([{Q: Qstar, P: MC}], {x: "Q", y: "P", r: 5, fill: "#1C1916", stroke: "white", strokeWidth: 2}),
+      Plot.text([{x: Qmax * 0.62, y: msb.find(p => p.Q >= Qmax * 0.62)?.P ?? 0, label: "ΣDᵢ = MSB"}],
+        {x: "x", y: "y", text: "label", fill: "#1C1916", fontSize: 13, fontWeight: 700, dy: -10}),
+      Plot.text([{x: Qmax * 0.05, y: MC, label: `MC = ${MC}`}],
+        {x: "x", y: "y", text: "label", fill: "#6B1F26", fontSize: 12, fontWeight: 600, dy: -8, textAnchor: "start"}),
+      Plot.text([{x: Qm, y: 4, label: `Q_M = ${Qm.toFixed(1)}`}],
+        {x: "x", y: "y", text: "label", textAnchor: "middle", fontSize: 11, fill: "#6B1F26"}),
+      Plot.text([{x: Qstar, y: 4, label: `Q* = ${Qstar.toFixed(1)}`}],
+        {x: "x", y: "y", text: "label", textAnchor: "middle", fontSize: 11, fill: "#1C1916"}),
+      Plot.text([{x: 2, y: Pmax * 0.97, label: `Premala tržišna proizvodnja: Q* − Q_M = ${(Qstar - Qm).toFixed(1)}`}],
+        {x: "x", y: "y", text: "label", textAnchor: "start", fontSize: 14, fill: "#1C1916", fontWeight: 700})
+    ]
+  });
+}
+```
+
+::: {.isprobaj}
+Povećavajte broj potrošača i promatrajte kako jaz između društvenog optimuma $Q^{*}$ i tržišne razine $Q_M$ raste — pojedinačni doprinos ostaje sitan, a društvena korist ne.
+:::
+
+::: notes
+Pokažite uživo: najprije malen broj potrošača, gdje je jaz skroman, a zatim ga povećavajte i pustite da krivulja društvene koristi naraste dok tržišna razina ostaje vezana uz najspremnijeg pojedinca. Spustite granični trošak i pokažite da optimum klizi udesno brže od tržišne razine. Poanta je opipljiva: što je zajednica brojnija, to je podproizvodnja javnog dobra veća, pa raste i potreba za zajedničkim financiranjem.
+:::
+
+## Zašto tržište podbacuje
+
+[TRŽIŠNI NEUSPJEH]{.section-label}
+
+::: lead
+Bez prisile tržište stane kod količine $Q_M$ vezane uz pojedinca s najvećom spremnošću platiti, a ta je količina manja od društvenog optimuma $Q^{*}$.
+:::
+
+. . .
+
+- Posljedica je sustavna podproizvodnja javnih dobara: $Q_M < Q^{*}$.
+- Rješenje je da država financira dobro obveznim oporezivanjem, čime se trošak raspodjeljuje na sve korisnike, a ne samo na dobrovoljne platiše.
+- Obvezno plaćanje zaobilazi slobodno jahanje jer izbjegavanje više nije moguće.
+
+::: {.cbox .kljucno}
+[KLJUČNI UVID]{.cbox-label}
+Mogućnost financiranja preko poreza ne opravdava svaku potrošnju. I dalje treba vagati korist i trošak svake jedinice, jer i previše javnoga dobra znači rasipanje sredstava.
+:::
+
+::: notes
+Povežite ovaj slajd s prethodnim grafom: porezi su način da društvo dosegne $Q^{*}$ koji tržište ne može. Upozorite studente da iz argumenta o tržišnom neuspjehu ne slijedi da je svaka državna potrošnja opravdana, što je česta logička pogreška. Predložite pitanje: kako bismo znali je li neka razina ulaganja u obranu ili rasvjetu prevelika? Odgovor vodi natrag na usporedbu granične koristi i graničnoga troška.
+:::
+
+## Zajednički resursi
+
+[VRSTE DOBARA]{.section-label}
+
+::: def
+Dobro je **zajednički resurs** ako je rivalsko, jer iskorištavanje jednoga smanjuje dostupnost drugima, ali istodobno neisključivo, jer je korisnike teško odbiti. Primjeri su riblji fond, podzemne vode, zajednički pašnjak i atmosfera.
+:::
+
+. . .
+
+- Tragedija zajedničkog dobra: svatko ima poticaj uzeti više jer korist pripada njemu.
+- Trošak iscrpljivanja dijeli se na sve, pa nitko sam ne snosi punu cijenu prekomjernoga korištenja.
+- Zbroj tih pojedinačnih odluka vodi propadanju resursa [@hardin1968].
+
+::: {.cbox .empirija}
+[EMPIRIJSKI PODATAK]{.cbox-label}
+Velik dio svjetskih ribljih fondova prelovljen je upravo tom logikom. Ondje gdje su uvedena prenosiva prava na ulov ili zajedničko upravljanje, kolaps je često zaustavljen i fondovi su se počeli oporavljati.
+:::
+
+::: notes
+Razgraničite zajednički resurs od javnoga dobra: kod javnoga dobra potrošnja jednoga ne smeta drugima, a ovdje smeta, jer je riba koju ja ulovim riba koju ti nećeš uloviti. Upravo ta rivalnost čini iscrpljivanje stvarnom prijetnjom. Predložite pitanje: zašto se pašnjak u zajedničkom vlasništvu prebrzo opase, a privatni ne? Povežite mehanizam s prethodnim slobodnim jahanjem, jer i ovdje pojedinac uživa korist a trošak prebacuje na druge.
+:::
+
+## Tragedija i tri puta
+
+[INSTITUCIONALNI ODGOVORI]{.section-label}
+
+::: lead
+Iscrpljivanje zajedničkog resursa nije neizbježno. Ovisi o pravilima pristupa, a ona se mogu urediti na više načina.
+:::
+
+::: columns
+::: {.column width="50%"}
+[Država]{.accent}
+
+- Kvote i dozvole za ulov.
+- Naknade za korištenje.
+- Dodjela vlasničkih prava.
+:::
+
+::: {.column width="50%"}
+[Zajednica]{.accent}
+
+- Vlastita pravila održivoga korištenja.
+- Jasne granice, nadzor i sankcije.
+- Treći put uz tržište i državu [@ostrom1990].
+:::
+:::
+
+::: {.cbox .kljucno}
+[KLJUČNI UVID]{.cbox-label}
+Elinor Ostrom pokazala je da zajednice znaju i bez države i bez privatizacije razviti održiva pravila. Problem nije u samome resursu nego u institucijama koje uređuju pristup.
+:::
+
+::: notes
+Naglasite da Hardinova tragedija nije sudbina nego ishod određenoga skupa pravila. Ostrom je terenskim istraživanjima pokazala stoljetne primjere uspješnoga zajedničkog upravljanja, od švicarskih pašnjaka do navodnjavanja. Istaknite njezine uvjete: jasne granice resursa, nadzor i stupnjevite sankcije. Predložite raspravu: kada je bolje povjeriti resurs državi, a kada lokalnoj zajednici koja ga svakodnevno koristi?
+:::
+
+## Meritorna dobra
+
+[PRIJELAZ NA DISTRIBUCIJU]{.section-label}
+
+::: def
+Dobro je **meritorno dobro** ako ga društvo želi poticati i osigurati svima i onda kada ga pojedinci sami ne bi izabrali u dovoljnoj mjeri, primjerice obrazovanje, osnovno zdravstvo i mirovinska štednja [@musgrave1959].
+:::
+
+. . .
+
+- Za razliku od javnih dobara, ovdje nema klasičnoga tehničkog neuspjeha tržišta.
+- Razlog za intervenciju je prosudba da pojedinci sustavno podcjenjuju vrijednost dobra za sebe ili za društvo.
+- Time se otvara pitanje paternalizma: smije li društvo nadglasati izbor pojedinca za njegovo vlastito dobro?
+
+::: {.cbox .vjezba}
+[PITANJE ZA RASPRAVU]{.cbox-label}
+Obvezno osnovno obrazovanje primjer je meritorne logike. Gdje je granica između opravdane brige za pojedinca i neprihvatljivoga nametanja tuđih preferencija?
+:::
+
+::: notes
+Istaknite da meritorna dobra izlaze iz čiste logike učinkovitosti i ulaze u vrijednosne prosudbe. Obrazloženje nije da tržište ne može naplatiti školarinu, nego da društvo smatra obrazovanje vrijednim po sebi i za sve. Tu leži napetost s liberalnim načelom suvereniteta pojedinca, pa povežite to s raspravom o paternalizmu. Ovaj slajd je most prema sljedećoj cjelini o distribucijskoj funkciji, jer i tamo društvo svjesno korigira tržišni ishod prema vrijednosnim ciljevima.
+:::
+
+## Od dobara do funkcija države {.dio-slide}
+
+[POVEZNICA S PRETHODNIM BLOKOM]{.section-label}
+
+::: lead
+Vrste dobara pokazale su nam gdje tržište zakaže. Alokacijski neuspjeh prvi je i najjasniji argument za državu, ali nije jedini.
+:::
+
+. . .
+
+- Čista javna dobra, zajednički resursi i eksternalije pokazuju da tržište ne proizvodi uvijek prava dobra u pravim količinama.
+- No "tržište zakaže ovdje" odgovara samo na jedno pitanje od triju koja postavljamo državi.
+- Da bismo uredno razmišljali o ulozi javnih financija, trebamo okvir koji razdvaja različite zadaće.
+
+::: notes
+Ovo je prijelazni slajd između bloka o vrstama dobara i pojmovne okosnice cijelog kolegija. Podsjetite studente na primjere s prethodnih slajdova (svjetionik, ribarstvo, onečišćenje) i recite da su svi oni primjeri jednog tipa problema. Naglasite da država ima i druge zadaće koje s alokacijom nemaju izravne veze. Postavite pitanje publici: osim "proizvodi li se pravo dobro", što biste još pitali o gospodarstvu? Time prirodno uvodite Musgravea.
+:::
+
+## Musgraveov okvir
+
+[POJMOVNA OKOSNICA]{.section-label}
+
+Richard Musgrave sistematizirao je ulogu države kroz tri funkcije javnih financija [@musgrave1959]:
+
+- [Alokacijska]{.accent} — proizvode li se prava dobra u pravim količinama?
+- [Distribucijska]{.accent} — je li raspodjela dohotka i prilika prihvatljiva?
+- [Stabilizacijska]{.accent} — radi li gospodarstvo u cjelini stabilno?
+
+::: {.cbox .kljucno}
+[KLJUČNI UVID]{.cbox-label}
+Tri funkcije odgovaraju na tri različita pitanja, a ne na isto pitanje iz tri kuta. Svaka ima vlastiti predmet, vlastiti analitički aparat i vlastito mjerilo uspjeha.
+:::
+
+::: notes
+Ovo je središnji slajd cijele cjeline. Inzistirajte na tome da to nisu tri verzije iste brige, nego tri zasebne zadaće. Korisna usporedba: liječnik koji istodobno gleda je li organ zdrav, je li tijelo uhranjeno i je li temperatura normalna — različita mjerenja, različiti instrumenti. Recite da ćemo svaku funkciju kratko predstaviti, a da dvije od njih dobivaju cijela buduća predavanja. Ostatak cjeline samo otvara ladice koje ćemo poslije puniti.
+:::
+
+## Alokacijska funkcija
+
+[PRVA FUNKCIJA — MIKRO RAZINA]{.section-label}
+
+::: lead
+Proizvodi li gospodarstvo prava dobra u pravim količinama? Polazi od mjesta na kojima tržište ne uspijeva.
+:::
+
+- Predmet su tržišni neuspjesi: javna dobra, eksternalije, monopol, asimetrija informacija, zajednički resursi.
+- Razina analize je mikroekonomska — gleda pojedina tržišta, jedno po jedno.
+- Upravo dobra koja smo obradili (čista javna dobra, zajednički resursi) klasični su slučajevi alokacijskog neuspjeha.
+
+::: {.cbox .praksa}
+[PRIMJER IZ PRAKSE]{.cbox-label}
+Bez intervencije tržište proizvodi premalo cijepljenja (pozitivna eksternalija) i previše onečišćenja (negativna eksternalija). Eksternalije i monopol detaljno obrađujemo u Predavanju 3.
+:::
+
+::: notes
+Povežite ovo izravno s upravo obrađenim dobrima — to je ono što studenti već znaju, pa alokacijska funkcija djeluje poznato. Naglasite riječ "mikro": uvijek gledamo konkretno tržište i pitamo proizvodi li se prava količina. Recite da je popis tržišnih neuspjeha zapravo dnevni red alokacijske funkcije. Najavite da eksternalije i monopol dolaze sljedeće predavanje, da ne ulazimo preduboko sada.
+:::
+
+## Distribucijska funkcija
+
+[DRUGA FUNKCIJA — PRAVEDNOST]{.section-label}
+
+::: lead
+Ostavlja po strani učinkovitost i pita drugo pitanje: je li raspodjela dohotka i prilika društveno prihvatljiva?
+:::
+
+- Tržište može biti potpuno učinkovito, a ipak duboko nejednako.
+- Pareto učinkovit ishod ne mora biti pravedan ishod — to su dvije odvojene prosudbe.
+- Mjerila i alati (Lorenzova krivulja, Ginijev koeficijent, teoremi blagostanja) dolaze u Predavanju 4.
+
+::: {.cbox .kljucno}
+[KLJUČNI UVID]{.cbox-label}
+"Učinkovito" i "pravedno" nisu istoznačnice. Alokacijska funkcija brine o prvome, distribucijska o drugome — i moguće je imati jedno bez drugoga.
+:::
+
+::: notes
+Najvažnija poruka ovdje je da učinkovitost i pravednost nisu ista stvar. Dajte primjer: gospodarstvo u kojem nekolicina ima sve, a ostali ništa, može biti Pareto učinkovito jer se nikome ne može pomoći bez da se nekome oduzme. Pitajte studente smatraju li takav ishod prihvatljivim — to ih uvodi u normativnu narav distribucijske funkcije. Naglasite da ovdje samo otvaramo temu, alati za mjerenje nejednakosti dolaze u Predavanju 4.
+:::
+
+## Stabilizacijska funkcija
+
+[TREĆA FUNKCIJA — MAKRO RAZINA]{.section-label}
+
+::: lead
+Napušta razinu pojedinog tržišta i gleda gospodarstvo u cjelini.
+:::
+
+- I kad svako pojedino tržište radi ispravno, ukupna proizvodnja, zaposlenost i cijene mogu zalutati.
+- Predmet su agregati: recesija, nezaposlenost, inflacija — makroekonomska razina analize.
+- Alati su fiskalna i monetarna politika; obrađujemo ih u Predavanju 5.
+
+::: {.cbox .praksa}
+[PRIMJER IZ PRAKSE]{.cbox-label}
+U recesiji mnoga tržišta tehnički "rade", ali ukupna potražnja pada, poduzeća otpuštaju, a nezaposlenost raste. To nije problem jednog tržišta, nego cijeloga gospodarstva.
+:::
+
+::: notes
+Ključna je promjena razine: prve dvije funkcije gledaju pojedina tržišta, treća gleda agregat. Iskoristite poznati primjer financijske krize ili pandemijskog šoka — svatko pojedinačno postupa razumno, a ukupni rezultat je pad. Naglasite da je upravo zato potreban poseban analitički aparat (makroekonomija) koji se ne svodi na zbroj pojedinih tržišta. Najavite da fiskalnu i monetarnu politiku detaljno obrađujemo u Predavanju 5.
+:::
+
+## Zašto razdvojiti tri funkcije
+
+[ZAŠTO OKVIR DRŽI]{.section-label}
+
+::: columns
+::: {.column width="50%"}
+[Različita mjerila uspjeha]{.accent}
+
+- Alokacija se mjeri učinkovitošću.
+- Distribucija se mjeri pravednošću.
+- Stabilizacija se mjeri stabilnošću agregata.
+
+Svaka funkcija traži vlastiti analitički aparat.
+:::
+
+::: {.column width="50%"}
+[Mjere se mogu sukobiti]{.accent}
+
+- Porez koji ublažava nejednakost može oslabiti poticaje na koje se oslanja učinkovita alokacija.
+- To je trajni kompromis između pravednosti i učinkovitosti [@okun1975].
+:::
+:::
+
+::: {.cbox .kljucno}
+[KLJUČNI UVID]{.cbox-label}
+Razdvajamo funkcije jer ista mjera koja popravlja jednu može opteretiti drugu. Bez razdvajanja ne bismo ni vidjeli taj kompromis.
+:::
+
+::: notes
+Objasnite Okunovu sliku propusne kante: kad prelijevamo dohodak od bogatih prema siromašnima, dio se prolije putem, jer porezi i transferi mijenjaju poticaje za rad i ulaganje. To je razlog zašto funkcije ne smijemo stopiti u jednu. Postavite pitanje: ako bismo gledali samo učinkovitost, koju bismo vrijednu zadaću potpuno previdjeli? Naglasite da je kompromis pravednost–učinkovitost jedna od trajnih tema cijeloga kolegija.
+:::
+
+## Od opisa do preporuke
+
+[POZITIVNO NASUPROT NORMATIVNOME]{.section-label}
+
+- [Pozitivna]{.accent} tvrdnja: "tržište ovdje zakaže" — to je predviđanje, činjenica koju možemo provjeriti.
+- [Normativna]{.accent} tvrdnja: "država tu treba djelovati" — to je vrijednosni sud.
+- Iz prve ne slijedi druga automatski [@friedman1953].
+
+::: {.cbox .kljucno}
+[KLJUČNI UVID]{.cbox-label}
+Iz tržišnog neuspjeha ne slijedi automatski uspjeh države. Treba izabrati mjerilo blagostanja i pokazati da izvediva državna alternativa nadmašuje izvedivo tržišno rješenje. Kao što smo vidjeli u Predavanju 1, i država može sustavno zakazati — pravo je pitanje može li konkretna intervencija biti bolja od tržišta.
+:::
+
+::: notes
+Ovo je intelektualno najzahtjevniji slajd cjeline, pa idite polako. Naglasite logičku zamku: dokazati da tržište nije savršeno nije isto što i dokazati da će država biti bolja. Povežite s teorijom javnog izbora iz Predavanja 1 — i država ima svoje neuspjehe (interesne skupine, birokracija, kratkoročni horizont političara). Zaključite cjelinu porukom da je svaka preporuka usporedba dviju nesavršenih opcija, a ne usporedba tržišta s idealom. Time zatvaramo pojmovnu okosnicu i prelazimo dalje.
+:::
+
+## Od teorije do proračuna {.dio-slide}
+
+[OD POJMOVA PREMA NOVCU]{.section-label}
+
+::: lead
+Dosad smo govorili o vrstama dobara i razlozima zašto država uopće postoji. Sada okrećemo pogled prema proračunu: koliko država troši, na što i odakle joj novac.
+:::
+
+::: notes
+Ovo je prijelazni slajd između teorijskog i empirijskog dijela predavanja. Naglasite studentima da teorija javnih dobara i tržišnih neuspjeha objašnjava zašto država djeluje, ali tek brojke pokazuju koliko je to djelovanje opsežno. Najavite da slijede tri pitanja koja organiziraju cijele javne financije: što financirati, koliko i kako prikupiti novac. Pitajte publiku za procjenu koliki udio BDP-a prolazi kroz državu prije nego pokažete podatke.
+:::
+
+## Koliko je velika država {.smaller}
+
+[VELIČINA DRŽAVE]{.section-label}
+
+Veličinu države najčešće mjerimo udjelom ukupnih rashoda opće države u BDP-u, dakle potrošnjom svih razina vlasti, od središnje države do općina i izvanproračunskih fondova.
+
+```{ojs}
+//| echo: false
+{
+  const godine = [2002,2003,2004,2005,2006,2007,2008,2009,2010,2011,2012,2013,2014,2015,2016,2017,2018,2019,2020,2021,2022,2023,2024];
+  const hr = [49.2,49.6,49.0,46.5,44.6,46.4,46.3,49.3,48.2,48.6,47.3,48.0,48.7,47.6,45.9,44.3,45.2,46.4,53.8,48.2,45.1,46.6,48.4];
+  const eu = [47.8,48.1,47.4,47.2,46.6,45.8,47.0,50.9,50.7,49.3,50.0,50.0,49.3,48.3,47.5,47.0,46.7,46.6,52.9,51.2,49.2,48.9,49.1];
+  const data = godine.flatMap((g, i) => [
+    {god: g, v: hr[i], serija: "Hrvatska"},
+    {god: g, v: eu[i], serija: "EU27"}
+  ]);
+  return Plot.plot({
+    width: 860, height: 330, marginLeft: 50, marginRight: 24, marginTop: 24, marginBottom: 36,
+    style: {fontSize: "13px", fontFamily: "Public Sans, system-ui, sans-serif", color: "#3A332D", background: "transparent"},
+    x: {label: null, tickFormat: d => "" + d, ticks: [2002,2006,2010,2014,2018,2022]},
+    y: {label: "↑ Rashodi opće države (% BDP-a)", domain: [40, 56], grid: true, tickFormat: d => ("" + d).replace(".", ",")},
+    color: {domain: ["Hrvatska","EU27"], range: ["#C8985E","#4A6B5C"], legend: true},
+    marks: [
+      Plot.lineY(data, {x: "god", y: "v", stroke: "serija", strokeWidth: 2.5, curve: "monotone-x"}),
+      Plot.dot(data, {x: "god", y: "v", fill: "serija", r: 2.5, tip: true}),
+      Plot.text([{god: 2020, v: 53.8, t: "COVID 2020."}], {x: "god", y: "v", text: "t", dy: -12, dx: 6, textAnchor: "start", fontSize: 11, fill: "#6B6357"})
+    ]
+  });
+}
+```
+
+[Izvor: Eurostat (gov_10a_main), rashodi opće države (S13), 2002.–2024.]{.izvor}
+
+::: {.cbox .empirija}
+[EMPIRIJSKI PODATAK]{.cbox-label}
+Ukupni rashodi opće države u Hrvatskoj iznose oko 48 % BDP-a (2024.), gotovo jednako prosjeku EU27 (oko 49 %). Tijekom pandemije 2020. udio je skočio na gotovo 54 %. Hrvatska po veličini države nije iznimka u Europskoj uniji.
+:::
+
+::: notes
+Ključna poruka ovog slajda jest da Hrvatska nije ni velika ni mala država u europskim okvirima, nego prosječna. Studenti često misle da je hrvatska država pretjerano velika, pa ih usporedba s prosjekom EU iznenadi. Objasnite zašto udio skoči u krizama: rashodi rastu (potpore, zdravstvo), a BDP pada, pa razlomak raste s obje strane. To je dobra prilika da spomenete Peacock-Wisemanov efekt pomaka, o kojem ćemo nešto kasnije.
+:::
+
+## Što država financira {.smaller}
+
+[STRUKTURA RASHODA — COFOG]{.section-label}
+
+Rashode razvrstavamo prema namjeni klasifikacijom COFOG, koja pokazuje na što novac stvarno odlazi.
+
+```{ojs}
+//| echo: false
+{
+  const data = [
+    {f: "Socijalna zaštita",       v: 13.8},
+    {f: "Zdravstvo",               v: 9.0},
+    {f: "Ekonomski poslovi",       v: 6.4},
+    {f: "Opće javne usluge",       v: 5.5},
+    {f: "Obrazovanje",             v: 5.0},
+    {f: "Javni red i sigurnost",   v: 2.4},
+    {f: "Rekreacija i kultura",    v: 1.7},
+    {f: "Obrana",                  v: 1.5},
+    {f: "Stanovanje i zajednica",  v: 1.5},
+    {f: "Zaštita okoliša",         v: 1.2}
+  ];
+  return Plot.plot({
+    width: 860, height: 360, marginLeft: 156, marginRight: 44, marginTop: 12, marginBottom: 32,
+    style: {fontSize: "13px", fontFamily: "Public Sans, system-ui, sans-serif", color: "#3A332D", background: "transparent"},
+    x: {label: "% BDP-a →", grid: true, tickFormat: d => ("" + d).replace(".", ",")},
+    y: {label: null, domain: data.map(d => d.f)},
+    marks: [
+      Plot.barX(data, {x: "v", y: "f", fill: "#4A6B5C"}),
+      Plot.text(data, {x: "v", y: "f", text: d => d.v.toFixed(1).replace(".", ","), dx: 16, fontSize: 12, fill: "#3A332D", fontWeight: 600}),
+      Plot.ruleX([0], {stroke: "#C9C3B8"})
+    ]
+  });
+}
+```
+
+[Izvor: Eurostat (gov_10a_exp, COFOG), Hrvatska 2024.]{.izvor}
+
+Najveće stavke proračuna vezane su uz ljude: socijalnu zaštitu, zdravstvo i obrazovanje.
+
+::: notes
+Naglasite razliku između onoga što ljudi misle da država troši (često spominju političare, birokraciju, reprezentaciju) i onoga što stvarno dominira proračunom. Mirovine, zdravstvo i obrazovanje čine lavovski dio. COFOG je standardna međunarodna klasifikacija pa omogućuje usporedbu među zemljama. Pitajte studente da prije grafa pogode tri najveće stavke, a zatim usporedite s podacima.
+:::
+
+## Najveće stavke proračuna
+
+[INTERPRETACIJA COFOG-a]{.section-label}
+
+::: def
+**COFOG** je međunarodna klasifikacija javnih rashoda prema njihovoj namjeni, koja omogućuje usporedbu strukture potrošnje među državama.
+:::
+
+Hrvatska 2024. (udjeli u BDP-u):
+
+- Socijalna zaštita: oko 14 % BDP-a (mirovine, naknade, socijalna pomoć)
+- Zdravstvo: oko 9 %
+- Ekonomski poslovi: oko 6 % (promet, poljoprivreda, poticaji)
+- Opće javne usluge: oko 5,5 % (uključujući kamate na dug)
+- Obrazovanje: oko 5 %
+
+. . .
+
+Najveće stavke nisu rezultat tržišnog automatizma, nego društvenog izbora o tome što financiramo zajednički.
+
+::: notes
+Provedite studente kroz interpretaciju, ne samo nabrajanje. Socijalna zaštita dominira jer obuhvaća mirovine, što je posljedica demografije i ugovora među generacijama. Zdravstvo i obrazovanje klasične su zasluge zajedničkog financiranja zbog pozitivnih vanjskih učinaka i pravednosti. Istaknite zadnju natuknicu: ove brojke odražavaju vrijednosne odluke društva, a ne neku prirodnu nužnost, i mogle bi izgledati drukčije.
+:::
+
+## Zašto država raste: Wagnerov zakon
+
+[DUGOROČNI TREND]{.section-label}
+
+::: def
+**Wagnerov zakon** tvrdi da, kako dohodak po stanovniku raste, udio javne potrošnje u BDP-u dugoročno raste [@wagner1890].
+:::
+
+Zašto bogatija društva troše razmjerno više preko države?
+
+- Veća potražnja za uslugama poput obrazovanja, zdravstva i socijalne sigurnosti
+- Složenije gospodarstvo traži više regulacije i infrastrukture
+- Spora produktivnost u uslugama: iste usluge s vremenom postaju razmjerno skuplje (Baumolova bolest troškova) [@baumol1967]
+
+::: {.cbox .kljucno}
+[KLJUČNI UVID]{.cbox-label}
+Rast države nije slučajan ni nužno znak rasipnosti. On dijelom slijedi predvidljiv obrazac: bogatija društva traže više javnih usluga, a one koje se teško automatiziraju s vremenom poskupljuju.
+:::
+
+::: notes
+Wagnerov zakon studentima daje okvir za razumijevanje dugoročnog rasta države bez ideoloških prečaca. Baumolovu bolest objasnite konkretno: gudački kvartet danas treba isti broj svirača kao prije dvjesto godina, dok je proizvodnja automobila postala mnogo produktivnija, pa relativni trošak usluga raste. Možete spomenuti i Peacock-Wisemanov efekt pomaka [@peacock1961]: rashodi često skoče u krizama i ne vrate se posve na staru razinu.
+:::
+
+## Odakle novac {.smaller}
+
+[STRUKTURA PRIHODA]{.section-label}
+
+Država se financira porezima i doprinosima. Strukturu prihoda dijelimo na tri velike skupine: neizravne poreze, socijalne doprinose i izravne poreze.
+
+```{ojs}
+//| echo: false
+{
+  const data = [
+    {kat: "Neizravni porezi",   geo: "Hrvatska", v: 19.2},
+    {kat: "Neizravni porezi",   geo: "EU27",     v: 12.8},
+    {kat: "Socijalni doprinosi", geo: "Hrvatska", v: 11.4},
+    {kat: "Socijalni doprinosi", geo: "EU27",     v: 14.0},
+    {kat: "Izravni porezi",     geo: "Hrvatska", v: 7.9},
+    {kat: "Izravni porezi",     geo: "EU27",     v: 13.2}
+  ];
+  return Plot.plot({
+    width: 820, height: 330, marginLeft: 48, marginRight: 20, marginTop: 24, marginBottom: 50,
+    style: {fontSize: "13px", fontFamily: "Public Sans, system-ui, sans-serif", color: "#3A332D", background: "transparent"},
+    x: {axis: null, domain: ["Hrvatska","EU27"]},
+    y: {label: "↑ % BDP-a", domain: [0, 22], grid: true},
+    fx: {label: null, domain: ["Neizravni porezi","Socijalni doprinosi","Izravni porezi"]},
+    color: {domain: ["Hrvatska","EU27"], range: ["#C8985E","#4A6B5C"], legend: true},
+    marks: [
+      Plot.barY(data, {x: "geo", y: "v", fx: "kat", fill: "geo"}),
+      Plot.text(data, {x: "geo", y: "v", fx: "kat", text: d => d.v.toFixed(1).replace(".", ","), dy: -8, fontSize: 11, fill: "#3A332D", fontWeight: 600}),
+      Plot.ruleY([0], {stroke: "#C9C3B8"})
+    ]
+  });
+}
+```
+
+[Izvor: Eurostat (gov_10a_taxag), Hrvatska i EU27, 2024.]{.izvor}
+
+Hrvatska ukupno prikuplja oko 38–39 % BDP-a kroz poreze i doprinose, pri čemu najviše nose PDV i drugi neizravni porezi.
+
+::: notes
+Razjasnite razliku između izravnih i neizravnih poreza. Izravni se plaćaju na dohodak i imovinu i vežu se uz osobu, dok se neizravni plaćaju kroz potrošnju, prikriveni u cijeni robe. Socijalni su doprinosi namjenski, vezani uz plaću te uz mirovinsko i zdravstveno osiguranje. Pitajte studente koji porez najviše osjećaju u svakodnevici, pa ih iznenadite podatkom da na PDV otpada najveći pojedinačni dio.
+:::
+
+## Hrvatska se oslanja na neizravne poreze
+
+[STRUKTURA PRIHODA — USPOREDBA]{.section-label}
+
+Glavnina hrvatskih poreznih prihoda dolazi iz potrošnje, a ne iz dohotka i imovine.
+
+- Neizravni porezi (PDV, trošarine): oko 19 % BDP-a
+- Socijalni doprinosi: oko 11 % BDP-a
+- Izravni porezi (dohodak, imovina): oko 8 % BDP-a
+
+. . .
+
+Skandinavske zemlje, naprotiv, više naginju izravnim porezima na dohodak i imovinu.
+
+::: {.cbox .empirija}
+[EMPIRIJSKI PODATAK]{.cbox-label}
+Hrvatska se oslanja na neizravne poreze izrazitije nego većina razvijenih europskih gospodarstava. PDV i trošarine zajedno donose gotovo polovicu svih poreznih prihoda.
+:::
+
+Oslanjanje na neizravne poreze ima posljedice za pravednost: PDV je razmjerno regresivan jer siromašniji troše veći udio dohotka na potrošnju. O pravednosti oporezivanja detaljnije u Predavanju 6.
+
+::: notes
+Objasnite zašto izbor između izravnih i neizravnih poreza nije tehnička sitnica nego politički izbor. Neizravne poreze lakše je naplatiti i teže ih je izbjeći, ali su regresivni. Izravni porezi mogu biti progresivni, ali ih je teže administrirati i lakše izbjeći. Ne ulazite preduboko u regresivnost ovdje, samo zasijte ideju i najavite Predavanje 6, gdje ćemo o pravednosti raspravljati sustavno.
+:::
+
+## Središnja i lokalna razina
+
+[FISKALNI FEDERALIZAM]{.section-label}
+
+::: columns
+::: {.column width="50%"}
+[Središnja razina]{.accent}
+
+- Obrana i vanjski poslovi
+- Najveći dio socijalne sigurnosti i mirovina
+- Velika infrastruktura, pravosuđe
+:::
+
+::: {.column width="50%"}
+[Lokalna razina]{.accent}
+
+- Komunalna infrastruktura, vodovod, otpad
+- Vrtići i dio osnovnog obrazovanja
+- Lokalne ceste, prostorno uređenje
+:::
+:::
+
+Načelo fiskalnog federalizma: funkciju treba dodijeliti razini vlasti koja najbolje pogađa preferencije građana. Lokalna razina bolje prepoznaje lokalne potrebe; građani donekle i biraju jedinicu prema paketu poreza i usluga, glasujući nogama [@tiebout1956; @oates1972].
+
+::: {.cbox .vjezba}
+[PITANJE ZA RASPRAVU]{.cbox-label}
+Treba li osnovnu školu financirati grad ili država? Što dobivamo, a što gubimo ako odluku spustimo na lokalnu razinu?
+:::
+
+::: notes
+Tieboutovu ideju glasovanja nogama objasnite kroz primjer: obitelj koja bira u kojem će se mjestu naseliti gleda kakve su škole, vrtići i komunalne usluge te koliki su lokalni nameti. Oatesov je argument da centralizacija ne pogađa raznolike lokalne preferencije, ali postoje i prelijevanja te ekonomije razmjera koji idu u prilog višoj razini. Vježbu iskoristite za raspravu: lokalno financiranje škola može produbiti nejednakosti među bogatim i siromašnim općinama.
+:::
+
+## Deficit i javni dug
+
+[ZADUŽIVANJE]{.section-label}
+
+Kad rashodi premaše prihode, razliku, odnosno proračunski deficit, država pokriva zaduživanjem. Nagomilani deficiti čine javni dug.
+
+- Javni dug Hrvatske: oko 58–60 % BDP-a, sa silaznim trendom nakon 2021.
+- Prosjek Europske unije viši je, oko 80 % BDP-a i više
+
+. . .
+
+Dug sam po sebi nije ni dobar ni loš. Sve ovisi o tome financira li produktivno ulaganje s dugoročnom koristi ili tekuću potrošnju.
+
+::: {.cbox .vjezba}
+[PITANJE ZA RASPRAVU]{.cbox-label}
+Je li javni dug loš? Razmislite o razlici između zaduživanja za izgradnju željeznice i zaduživanja za isplatu tekućih plaća.
+:::
+
+::: notes
+Pomozite studentima da razlikuju deficit (godišnji tijek) od duga (nagomilano stanje). Analogija s kućanstvom je korisna, ali i opasna: država se zadužuje u valuti koju donekle kontrolira i u načelu ne odlazi u mirovinu, pa pravila nisu posve ista. Naglasite zlatno pravilo javnih financija: zaduživanje za ulaganje koje stvara buduću korist opravdanije je od zaduživanja za tekuću potrošnju. Hrvatski silazni trend duga nakon 2021. dobar je primjer da omjer ovisi i o rastu BDP-a.
+:::
+
+## Tri pitanja javnih financija
+
+[OKVIR ZA CIJELI KOLEGIJ]{.section-label}
+
+Cijele javne financije svode se na tri pitanja:
+
+::: agenda
+1. **Što** financirati zajednički, preko države, a što prepustiti tržištu?
+2. **Koliko** trošiti i kolika je primjerena veličina države?
+3. **Kako** prikupiti novac, kojim porezima i uz koje učinke na pravednost i učinkovitost?
+:::
+
+. . .
+
+Ova će se tri pitanja vraćati kroz cijeli kolegij, od teorije javnih dobara do konkretnih poreznih i proračunskih politika.
+
+::: notes
+Ovo je sažetak koji povezuje empirijski dio s ostatkom kolegija. Vratite se na početak predavanja i pokažite kako se teorija vrsta dobara (što) povezuje s pitanjem veličine države (koliko) i strukture prihoda (kako). Naglasite da svako od tri pitanja nosi i tehničku i vrijednosnu dimenziju, pa javne financije nisu samo računovodstvo nego i politika. Najavite sljedeće predavanje kao nastavak ove niti.
+:::
+
+## Što smo naučili {.dio-slide}
+
+[ZAKLJUČAK]{.section-label}
+
+::: lead
+Četiri poruke koje nosimo iz ovog predavanja o vrstama dobara i ulozi javnih financija.
+:::
+
+1. **Dva svojstva** — isključivost i suparništvo u potrošnji — dijele sva dobra u [četiri tipa]{.accent}: privatna, javna, klupska i zajedničke resurse.
+
+. . .
+
+2. **Javna dobra i zajedničke resurse tržište ne rješava samo**: kod javnih dobara pojavljuje se [slobodni jahač]{.accent}, kod zajedničkih resursa [tragedija zajedničkog dobra]{.accent}.
+
+. . .
+
+3. **Musgraveov okvir** povezuje tri funkcije države — alokacijsku, distribucijsku i stabilizacijsku — u jednu cjelinu [@musgrave1959].
+
+. . .
+
+4. **Javne financije su izbor vrijednosti i institucija**, a taj se izbor vidi u proračunu: u tome što se oporezuje, koliko i u čiju korist.
+
+::: notes
+Ovo je sažetak cijelog predavanja, pa kratko prođite kroz sve četiri poruke bez novih primjera. Naglasite da su prva dva svojstva temelj cijele tipologije i da iz njih izravno slijede dva tržišna neuspjeha. Kod treće poruke podsjetite studente da Musgrave nije izmislio tri zadatka države, nego ih je sustavno povezao. Zadnju poruku iskoristite kao most prema političkoj dimenziji koju otvaramo u kasnijim predavanjima. Provjerite razumiju li razliku između klupskih dobara i zajedničkih resursa jer se ta dva tipa najčešće brkaju.
+:::
+
+## Nit koja povezuje
+
+[ZAKLJUČAK]{.section-label}
+
+::: lead
+Cijelo predavanje slijedi jedan logički lanac.
+:::
+
+- **Vrste dobara** → kako svojstva isključivosti i suparništva razvrstavaju dobra
+- **Tržišni neuspjeh** → gdje tržište samo ne osigurava djelotvoran ishod
+- **Funkcije države** → čime država odgovara na te neuspjehe
+- **Proračun i porezi** → kroz koje instrumente država djeluje
+
+. . .
+
+::: {.cbox .kljucno}
+[KLJUČNI UVID]{.cbox-label}
+Javne financije nisu samo tehnika prikupljanja i trošenja novca. One su odraz vrijednosti koje društvo zastupa i poticaja koje stvaraju institucije.
+:::
+
+::: notes
+Ovaj slajd pokazuje da pojedine teme nisu odvojene cjeline nego karike istog lanca. Prođite lanac slijeva nadesno i zamolite studente da vlastitim riječima imenuju svaku kariku. Naglasak je na ključnom uvidu — student lako zapamti definicije, ali često previdi da iza svakog proračunskog reda stoji vrijednosna odluka. Kao primjer možete spomenuti da odluka o financiranju javnog zdravstva iz poreza nije samo računovodstvena, nego govori o tome kakvo društvo želimo. Ovo je dobra prilika za kratku stanku prije vježbe.
+:::
+
+## Vježba s podacima
+
+[VJEŽBA]{.section-label}
+
+::: {.cbox .vjezba}
+[PITANJE ZA RASPRAVU]{.cbox-label}
+Razvrstajte sljedećih pet dobara u tablicu 2×2 prema isključivosti i suparništvu te ukratko obrazložite svaku odluku:
+
+- ulična rasvjeta
+- naplatna autocesta
+- riblji fond u otvorenom moru
+- kino
+- cjepivo
+:::
+
+. . .
+
+::: {.cbox .vjezba}
+[DODATNI ZADATAK]{.cbox-label}
+Za jedno dobro po izboru objasnite zašto se njegova "javnost" mijenja s tehnologijom ili gužvom — primjerice, kako naplatne kamere mijenjaju isključivost ceste, a prometni vrhunac suparništvo.
+:::
+
+::: notes
+Podijelite studente u parove i dajte im pet do sedam minuta za razvrstavanje. Očekujte raspravu oko autoceste i kina jer ovise o gužvi i naplati, pa upravo te granične slučajeve iskoristite za poantu da granice tipova nisu fiksne. Riblji fond je čisti zajednički resurs, ulična rasvjeta čisto javno dobro — njih iskoristite kao sidra. Dodatni zadatak vodi prema ideji da tehnologija mijenja isključivost (naplatne kamere), a gužva mijenja suparništvo (prometni vrhunac). Pokupite dva-tri odgovora naglas prije nego što date svoje rješenje.
+:::
+
+## Što slijedi
+
+[NAJAVA]{.section-label}
+
+::: lead
+U sljedećim predavanjima razlažemo svaku funkciju države zasebno.
+:::
+
+::: agenda
+1. **Predavanje 3 — Alokacijska funkcija i eksternalije**: kako se rješavaju vanjski učinci; Coaseov teorem i Pigouov porez
+2. **Predavanje 4 — Ekonomija blagostanja i redistribucija**: mjerila učinkovitosti i pravednosti te odnos između njih [@okun1975]
+3. **Predavanje 5 — Stabilizacijska funkcija**: uloga države u ublažavanju gospodarskih ciklusa
+:::
+
+::: notes
+Ovaj slajd zatvara predavanje i otvara luk prema cjelini o funkcijama države. Povežite najavu s Musgraveovim okvirom — svaka od tri funkcije dobiva vlastito predavanje. Kod Predavanja 3 spomenite da su Coase i Pigou dva suprotstavljena odgovora na isti problem eksternalija, što je dobra kuka za znatiželju. Kod Predavanja 4 najavite poznatu napetost između učinkovitosti i pravednosti koju je Okun opisao slikom propusne kante. Zahvalite studentima i ostavite minutu za pitanja.
+:::

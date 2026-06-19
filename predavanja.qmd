@@ -39,12 +39,13 @@ format:
       <span class="vd-go">Otvori predavanje →</span>
     </a>
 
-    <div class="vd-hub-card vd-soon">
-      <span class="vd-badge">Uskoro</span>
+    <a class="vd-hub-card vd-ready" href="predavanja/02-vrste-dobara.html" target="_blank" rel="noopener">
+      <span class="vd-badge vd-badge-ready">Dostupno</span>
       <span class="vd-hub-num">Predavanje 2</span>
       <span class="vd-hub-name">Vrste dobara i uloga javnih financija</span>
-      <span class="vd-hub-q">Čista javna dobra, mješovita dobra, isključivost i suparništvo u potrošnji. Musgravijeva trojaka funkcija države.</span>
-    </div>
+      <span class="vd-hub-q">Čista javna dobra, mješovita dobra, isključivost i suparništvo u potrošnji. Musgraveova trojaka funkcija države — uz četiri interaktivna i empirijska grafa.</span>
+      <span class="vd-go">Otvori predavanje →</span>
+    </a>
 
     <div class="vd-hub-card vd-soon">
       <span class="vd-badge">Uskoro</span>
