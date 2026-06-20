@@ -71,12 +71,13 @@ format:
       <span class="vd-go">Otvori predavanje →</span>
     </a>
 
-    <div class="vd-hub-card vd-soon">
-      <span class="vd-badge">Uskoro</span>
+    <a class="vd-hub-card vd-ready" href="predavanja/06-oporezivanje.html" target="_blank" rel="noopener">
+      <span class="vd-badge vd-badge-ready">Dostupno</span>
       <span class="vd-hub-num">Predavanje 6</span>
-      <span class="vd-hub-name">Manjkavosti tržišta i teorija oporezivanja</span>
-      <span class="vd-hub-q">Principi pravednog i efikasnog oporezivanja, mrtvi teret poreza, porezna incidencija i Ramseyevo pravilo.</span>
-    </div>
+      <span class="vd-hub-name">Teorija oporezivanja</span>
+      <span class="vd-hub-q">Načela pravednog i učinkovitog oporezivanja, porezna incidencija, mrtvi teret, Ramseyevo pravilo i Lafferova krivulja — uz šest interaktivnih grafova.</span>
+      <span class="vd-go">Otvori predavanje →</span>
+    </a>
 
   </div>
 </section>

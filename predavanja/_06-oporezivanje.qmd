@@ -1,0 +1,1479 @@
+---
+title: "Teorija oporezivanja"
+subtitle: "Načela, incidencija, mrtvi teret i optimalno oporezivanje"
+author: "Milan Deskar-Škrbić · Petra Palić · Luka Šikić"
+lang: hr-HR
+bibliography: ../references.bib
+# Izvor je _-prefiksiran (predavanja/_06-...qmd) pa ga render knjige (quarto
+# render) NE dira; renderiraj ručno, a output-file daje čist naziv bez podvlake.
+output-file: 06-oporezivanje.html
+format:
+  revealjs:
+    theme: statecraft.scss
+    embed-resources: true
+    slide-number: c/t
+    show-slide-number: all
+    progress: true
+    width: 1050
+    height: 700
+    margin: 0.08
+    center: false
+    transition: fade
+    transition-speed: fast
+    background-transition: fade
+    controls: true
+    controls-layout: bottom-right
+    touch: true
+    hash: true
+    history: true
+    fig-align: center
+    link-external-newwindow: true
+    footer: "Javne politike u Hrvatskoj · Predavanje 6 · [lusiki.github.io/Javne-politike](https://lusiki.github.io/Javne-politike/)"
+---
+
+## Dobro došli na novu cjelinu {.dio-slide}
+
+[PREDAVANJE 6 · TEORIJA OPOREZIVANJA]{.section-label}
+
+::: {.lead}
+Prošlim smo predavanjem zatvorili tri klasične funkcije države, alokaciju, distribuciju i stabilizaciju. Danas otvaramo prihodnu stranu iste proračunske jednadžbe, poreze.
+:::
+
+. . .
+
+[Svaku od tih funkcija netko mora platiti.]{.accent}
+
+::: {.notes}
+Pozdravite studente i jasno povucite crtu prema prethodnom predavanju. Naglasite da smo dosad gledali što država radi i zašto troši, a sada okrećemo pogled na to odakle taj novac dolazi. Recite da porezi nisu samo tehnika prikupljanja prihoda, nego pitanje tko snosi teret zajedničkih funkcija. Najavite da ćemo od jednostavne definicije doći do spornih pitanja pravednosti i učinkovitosti. Ostavite trenutak tišine nakon rečenice da svaku funkciju netko mora platiti, jer ona postavlja ton cijelog predavanja.
+:::
+
+## Gdje smo stali
+
+[PODSJETNIK]{.section-label}
+
+::: {.agenda}
+1. [Alokacijska funkcija]{.accent}: ispravlja tržišne neuspjehe, javna dobra i eksternalije.
+2. [Distribucijska funkcija]{.accent}: pita je li raspodjela dohotka društveno prihvatljiva.
+3. [Stabilizacijska funkcija]{.accent}: ublažava gospodarski ciklus i čuva makroekonomsku ravnotežu.
+:::
+
+. . .
+
+Dosad smo gledali [rashodnu stranu]{.accent} proračuna, ono što država čini i troši.
+
+. . .
+
+Porez je [prihodna strana]{.accent} iste jednadžbe. Kroz poreze društvo odlučuje tko snosi teret zajedničkih funkcija i kako se taj teret raspoređuje.
+
+::: {.notes}
+Podsjetite studente na Musgraveovu podjelu na tri funkcije, ali kratko, jer su je upoznali na prethodnim predavanjima. Cilj ovog slajda jest premosnica, a ne ponavljanje. Naglasite simetriju proračuna, lijeva strana su rashodi koje smo obradili, desna strana su prihodi koje tek otvaramo. Istaknite da porezi nisu neutralan tehnički zahvat nego mehanizam raspodjele tereta. Tako studenti od početka shvaćaju da je oporezivanje i ekonomsko i političko pitanje.
+:::
+
+## Agenda današnjeg predavanja
+
+[PLAN U ŠEST KORAKA]{.section-label}
+
+::: {.agenda}
+1. [Što su porezi]{.accent} i koje su njihove glavne vrste.
+2. [Načela dobroga poreznog sustava]{.accent}, pravednost i učinkovitost.
+3. [Porezna incidencija]{.accent}: tko stvarno snosi teret poreza.
+4. [Mrtvi teret i porezni klin]{.accent}, koliko oporezivanje stoji u izgubljenoj učinkovitosti.
+5. [Optimalno oporezivanje]{.accent}: Ramsey, Mirrlees i pitanje poreza na kapital.
+6. [Lafferova krivulja]{.accent} i inflacija kao prikriveni porez.
+:::
+
+::: {.notes}
+Provedite studente kroz strukturu predavanja u jednoj minuti. Naglasite logiku slijeda, najprije definiramo i klasificiramo, zatim postavljamo mjerila dobrog sustava, pa prelazimo na teoriju koja objašnjava tko zaista plaća i koliko to stoji. Posljednja dva koraka penju se do optimalnog oporezivanja i njegovih granica. Recite da je središnja nit predavanja razlika između onoga tko porez zakonski uplaćuje i onoga tko ga stvarno snosi. Tu nit ćemo opetovano susretati od trećega koraka nadalje.
+:::
+
+## Polazno pitanje {.dio-slide}
+
+[MISAONI POKUS]{.section-label}
+
+::: {.lead}
+Kad na benzinskoj postaji platite gorivo, u cijeni je trošarina i PDV. Tko zapravo plaća taj porez, trgovac koji ga uplaćuje državi ili vi, kupac na blagajni?
+:::
+
+. . .
+
+[Onaj tko porez zakonski uplaćuje često nije onaj tko ga stvarno snosi]{.accent}, a tko će ponijeti teret jedno je od središnjih pitanja ovog predavanja.
+
+::: {.notes}
+Postavite pitanje izravno i pričekajte odgovore iz dvorane prije nego što otkrijete drugu rečenicu. Mnogi studenti instinktivno kažu da porez plaća onaj tko ga uplaćuje, pa iskoristite tu intuiciju kao polaznu zabludu koju ćemo razgraditi. Najavite da razlika između zakonskog i ekonomskog obveznika ima ime, porezna incidencija, i da joj se vraćamo u trećem dijelu predavanja. Naglasite da odgovor ovisi o elastičnosti ponude i potražnje, ali to zasad samo nagovijestite. Ovaj slajd služi da stvori znatiželju, ne da dade konačan odgovor.
+:::
+
+## Što su porezi?
+
+[DEFINICIJA]{.section-label}
+
+::: {.def}
+**Porez** je obvezno, nepovratno davanje državi bez izravne protuusluge [@musgrave1989; @rosen2014].
+:::
+
+. . .
+
+- [Obveznost]{.accent}: plaćanje proizlazi iz zakona i ne ovisi o volji pojedinca.
+- [Nepovratnost]{.accent}: uplaćena sredstva ne vraćaju se onome tko ih je platio.
+- [Bez izravne protuusluge]{.accent}: obveznik ne dobiva konkretnu uslugu u trenutku plaćanja, nego se financiraju javna dobra koja koristi društvu u cjelini [@stiglitz2015].
+
+::: {.notes}
+Razložite definiciju na tri obilježja i provjerite razumije li dvorana svako od njih. Kod obveznosti naglasite da je riječ o prisili utemeljenoj na zakonu, a ne o dobrovoljnom doprinosu. Kod nepovratnosti razjasnite da povrat poreza zbog preplate nije iznimka od ovog načela, jer je riječ o tehničkom usklađivanju, a ne o protučinidbi. Najviše vremena posvetite trećem obilježju, izostanku izravne protuusluge, jer ono najjasnije razdvaja porez od ostalih davanja. Povežite ga s idejom javnih dobara koja koriste svima, pa ih nitko ne bi dobrovoljno financirao u dovoljnoj mjeri.
+:::
+
+## Porez, naknada ili doprinos?
+
+[RAZGRANIČENJE]{.section-label}
+
+::: {.columns}
+::: {.column width="33%"}
+[Porez]{.accent}
+
+Obvezno davanje bez izravne protuusluge. Nema veze između uplate i konkretne koristi za pojedinca.
+:::
+::: {.column width="33%"}
+[Naknada i pristojba]{.accent}
+
+Vezana uz konkretnu uslugu ili pravo, primjerice upravna pristojba za osobnu iskaznicu. Veza uplate i koristi razmjerno je jasna.
+:::
+::: {.column width="33%"}
+[Doprinos]{.accent}
+
+Obvezan, ali pojedinac uplatom stječe određeno pravo, primjerice mirovinsko ili zdravstveno [@simovic2022].
+:::
+:::
+
+::: {.cbox .kljucno}
+[Ključno]{.cbox-label}
+Razlika nije puko nazivlje. Ona oblikuje percepciju pravednosti sustava, ekonomske učinke pojedinih davanja i samu strukturu javnih prihoda.
+:::
+
+::: {.notes}
+Naglasite da se u svakodnevnom govoru sva davanja državi nazivaju porezima, ali ekonomska teorija tu pravi važne razlike. Vodite studente kroz tri stupca slijeva nadesno, od najslabije do najjače veze između uplate i koristi. Kod doprinosa upozorite da veza nije savršena, jer i tu postoji preraspodjela, pa odnos uplata i prava nije potpuno razmjeran. Iskoristite ključni okvir da objasnite zašto razgraničenje uopće zanima ekonomiste, a ne samo pravnike. Spomenite da obveznik drukčije doživljava davanje za koje dobiva jasnu protuuslugu nego porez koji nestaje u zajedničkoj blagajni.
+:::
+
+## Vrste poreza {.dio-slide}
+
+[KAKO RAZVRSTATI SPLET DAVANJA]{.section-label}
+
+::: {.lead}
+Porezni sustav nije jedan porez, nego naslagani splet davanja na dohodak, potrošnju i imovinu, naplaćenih izravno ili kroz cijene.
+:::
+
+. . .
+
+Da bismo taj splet uopće mogli analizirati, trebaju nam kriteriji koji ga razvrstavaju prema tome [što se oporezuje]{.accent} i [tko zaista snosi teret]{.accent}.
+
+::: {.agenda}
+1. Prema [poreznoj osnovici]{.accent} — što se oporezuje.
+2. Prema [načinu naplate]{.accent} — izravno ili kroz cijene.
+3. Prema [odnosu stope i osnovice]{.accent} — kako teret raste s dohotkom.
+4. Prema [načinu određivanja obveze]{.accent} — apsolutni iznos ili postotak vrijednosti.
+:::
+
+::: {.notes}
+Uvedite ideju da porezni sustav nije jedan porez, nego splet davanja koji je iznjedrio povijesni razvoj. Naglasite da klasifikacije nisu same sebi svrha, nego alat koji nam pomaže razumjeti strukturu i ekonomske učinke sustava. Provedite studente kroz četiri kriterija u jednoj rečenici svaki, jer svaki od njih dobiva poseban slajd. Recite da je najvažnije pitanje koje se provlači kroz sve kriterije pitanje tko na kraju stvarno plaća porez. Najavite da ćemo upravo to pitanje prijenosa tereta otvoriti kod izravnih i neizravnih poreza.
+:::
+
+## Prema osnovici — što se oporezuje
+
+[DOHODAK, POTROŠNJA, IMOVINA]{.section-label}
+
+::: {.agenda}
+1. [Porezi na dohodak]{.accent} — dohodak pojedinaca i dobit poduzeća. Vezani uz načelo sposobnosti plaćanja (*ability-to-pay*), pa su često progresivni i nose redistributivnu ulogu.
+2. [Porezi na potrošnju]{.accent} — PDV i trošarine. Jednostavni i stabilni prihodi, ali mogu biti regresivni jer niži dohoci troše veći dio dohotka.
+3. [Porezi na imovinu]{.accent} — nekretnine, nasljedstva, promet imovine. Manji fiskalni značaj, ali važni za dugoročnu raspodjelu bogatstva.
+:::
+
+. . .
+
+::: {.cbox .kljucno}
+[Ključno]{.cbox-label}
+Tri osnovice, tri logike — dohodak prati ekonomsku snagu, potrošnja prati trošenje, imovina prati nakupljeno bogatstvo.
+:::
+
+::: {.notes}
+Razdvojite tri osnovice i pokažite da svaka odgovara drukčijem pogledu na ekonomsku snagu obveznika. Kod poreza na dohodak istaknite vezu s načelom sposobnosti plaćanja i to da progresivnost dolazi prirodno upravo ovdje. Kod poreza na potrošnju upozorite na regresivnost, jer je to protuintuitivno studentima koji misle da je jednaka stopa automatski pravedna. Kod poreza na imovinu naglasite paradoks malog fiskalnog prihoda uz velik značaj za nejednakost bogatstva. Ovaj slajd postavlja temelj za kasniju raspravu o pravednosti i incidenciji [@musgrave1989; @stiglitz2015].
+:::
+
+## Izravni i neizravni porezi
+
+[TKO PRENOSI TERET]{.section-label}
+
+::: {.columns}
+::: {.column width="50%"}
+**Izravni porezi**
+
+- Porez na dohodak, dobit i imovinu
+- Neposredno se nameću obvezniku i [ne prenose se lako]{.accent} na drugoga
+- Jasna veza između obveznika i poreznog tereta, pa se često smatraju pravednijima
+:::
+::: {.column width="50%"}
+**Neizravni porezi**
+
+- PDV i trošarine
+- [Uključeni su u cijenu]{.accent} dobara i usluga, formalno ih uplaćuju poduzeća
+- Teret se prenosi na potrošača → [porezna incidencija]{.accent}
+:::
+:::
+
+. . .
+
+Upravo se tim prijenosom tereta — pitanjem tko stvarno plaća, a ne tko formalno uplaćuje — bavimo kasnije.
+
+::: {.notes}
+Objasnite da je ključna razlika u tome može li se porez prenijeti na drugoga. Kod izravnih poreza obveznik i nositelj tereta najčešće su ista osoba, pa su transparentni i intuitivno pravedniji. Kod neizravnih poreza formalni uplatitelj je poduzeće, ali stvarni teret nosi potrošač kroz višu cijenu. Uvedite pojam porezne incidencije i naglasite da je razlika između formalnog i stvarnog obveznika jedna od najvažnijih tema cijele teorije oporezivanja. Recite studentima da ćemo se tom temom posebno baviti kasnije, jer prijenos tereta ovisi o elastičnostima ponude i potražnje [@gruber2019].
+:::
+
+## Progresivni, proporcionalni, regresivni
+
+[ODNOS STOPE I OSNOVICE]{.section-label}
+
+Treći kriterij gleda kako se [prosječna stopa]{.accent} mijenja kad raste osnovica.
+
+- [Proporcionalni]{.accent} — jedinstvena stopa bez obzira na visinu osnovice (npr. porez na dobit u mnogim zemljama)
+- [Progresivni]{.accent} — opterećenje raste s dohotkom, tipično kod poreza na dohodak, vezano uz smanjenje nejednakosti
+- [Regresivni]{.accent} — relativno više opterećuju niže dohotke, čak i kad nemaju formalno regresivnu stopu (učinak potrošnih poreza)
+
+. . .
+
+::: {.def}
+Porez je **progresivan** ako prosječna porezna stopa raste s rastom dohotka.
+:::
+
+. . .
+
+Posebna podjela prema načinu određivanja obveze — [specifični]{.accent} porezi su apsolutni iznos po jedinici (npr. po litri goriva), a [ad valorem]{.accent} porezi postotak vrijednosti (npr. PDV).
+
+::: {.notes}
+Naglasite da se ovaj kriterij odnosi na prosječnu, a ne marginalnu stopu, jer studenti to često brkaju. Pokažite da progresivnost nije svojstvo same stope, nego odnosa stope i osnovice. Posebno istaknite da porez s jedinstvenom stopom može imati regresivan učinak, kao kod potrošnih poreza, jer siromašniji troše veći udio dohotka. Razdvojite specifične i ad valorem poreze i objasnite zašto je razlika važna — specifični porezi ne prate inflaciju automatski, a ad valorem prate. Iskoristite gorivo i PDV kao konkretne primjere [@stiglitz2015; @gruber2019].
+:::
+
+## Načela dobrog poreznog sustava {.dio-slide}
+
+[NORMATIVNI OKVIR]{.section-label}
+
+::: {.lead}
+Načela su pravila po kojima ocjenjujemo je li porezni sustav „dobar” — kriteriji prema kojima ga vrednujemo, a ne samo opisujemo.
+:::
+
+. . .
+
+Formulirana su još kod [Adama Smitha u 18. stoljeću]{.accent}, a unatoč tomu su i danas temelj suvremene teorije javnih financija.
+
+. . .
+
+[Načela čine normativni okvir porezne politike — ona nam govore kakav sustav želimo, a ne kakav imamo.]{.accent} [@stiglitz2015]
+
+::: {.notes}
+Označite prijelaz s opisne klasifikacije poreza na normativnu ocjenu sustava. Naglasite razliku između pozitivnog i normativnog pristupa — dosad smo razvrstavali što postoji, sada postavljamo kriterije po kojima sudimo. Spomenite Adama Smitha i njegova klasična porezna pravila te istaknite koliko su trajna, jer su i danas okosnica teorije. Recite da ćemo načela podijeliti na dva središnja, pravednost i učinkovitost, te skupinu operativnih. Pripremite studente na poantu da se sva načela ne mogu istodobno ostvariti, pa je porezna politika uvijek kompromis.
+:::
+
+## Pravednost i učinkovitost
+
+[DVA SREDIŠNJA NAČELA]{.section-label}
+
+::: {.columns}
+::: {.column width="50%"}
+**Pravednost** (*equity*)
+
+- [Horizontalna]{.accent} — jednaka ekonomska snaga plaća jednako
+- [Vertikalna]{.accent} — jači snose veći teret, temelj progresivnog oporezivanja
+- Koliko progresivnosti, ovisi o društvenim preferencijama [@musgrave1989]
+:::
+::: {.column width="50%"}
+**Učinkovitost** (*efficiency*)
+
+- Sustav neka [što manje mijenja]{.accent} ekonomske odluke
+- Svaki porez mijenja relativne cijene → [mrtvi teret]{.accent} poreza
+- Cilj je minimizirati distorzije ponude rada, štednje i ulaganja [@gruber2019]
+:::
+:::
+
+. . .
+
+::: {.cbox .kljucno}
+[Ključno]{.cbox-label}
+Ta su dva načela često u sukobu — potpuno učinkovit sustav rijetko je i najpravedniji, pa porezna politika uvijek traži ravnotežu.
+:::
+
+::: {.notes}
+Predstavite pravednost i učinkovitost kao dva najvažnija, a često suprotstavljena načela. Kod pravednosti jasno razdvojite horizontalnu i vertikalnu dimenziju i pokažite da vertikalna pravednost izravno opravdava progresivnost. Naglasite da ne postoji objektivan odgovor na pitanje koliko sustav treba biti progresivan, jer to ovisi o društvenim vrijednostima. Kod učinkovitosti uvedite pojam mrtvog tereta i pokažite da svaki porez mijenja ponašanje. Završite napetošću između dvaju načela, jer ona je srž cijele porezne politike i vraća se na sljedećim slajdovima.
+:::
+
+## Operativna načela
+
+[DA SUSTAV RADI]{.section-label}
+
+Uz dva središnja načela, dobar sustav mora biti i [izvediv u praksi]{.accent}.
+
+::: {.agenda}
+1. [Jednostavnost i transparentnost]{.accent} — obveznici razumiju koliko plaćaju i zašto, manje prostora za izbjegavanje i utaju.
+2. [Sigurnost i predvidivost]{.accent} — unaprijed se zna koliko, kada i kako, što smanjuje rizik za poslovanje.
+3. [Pogodnost naplate]{.accent} — porez se ubire u trenutku i na način najpogodniji obvezniku (plaća, cijena).
+4. [Izdašnost i stabilnost]{.accent} — dovoljni i stabilni prihodi, otporni na cikluse.
+5. [Neutralnost]{.accent} — sustav ne favorizira nepotrebno pojedine sektore ni oblike ponašanja.
+:::
+
+::: {.notes}
+Provedite studente kroz operativna načela koja se tiču izvedivosti, a ne načelne pravednosti. Naglasite da jednostavnost i transparentnost grade povjerenje i smanjuju troškove poštivanja obveza. Kod sigurnosti i pogodnosti povežite teoriju s konkretnim mehanizmima naplate, poput obračuna poreza kroz plaću ili PDV-a uključenog u cijenu. Objasnite zašto države kombiniraju različite poreze radi izdašnosti i stabilnosti prihoda. Kod neutralnosti spomenite da je u praksi države svjesno krše kroz olakšice i zelene poreze, što je dobar most prema sljedećem slajdu o sukobu načela [@simovic2022; @stiglitz2015].
+:::
+
+## Načela u sukobu
+
+[POREZNA POLITIKA JE KOMPROMIS]{.section-label}
+
+::: {.lead}
+Načela su jasno definirana, ali ih u praksi nije moguće istodobno u potpunosti ostvariti.
+:::
+
+. . .
+
+- Više [pravednosti]{.accent} često znači manje [učinkovitosti]{.accent}
+- Više [jednostavnosti]{.accent} smanjuje [preciznost]{.accent} sustava
+- Veća [izdašnost]{.accent} može ugroziti [neutralnost]{.accent}
+
+. . .
+
+::: {.cbox .kljucno}
+[Ključno]{.cbox-label}
+Sva se načela ne mogu istodobno ostvariti, pa je svaki porezni sustav rezultat kompromisa između učinkovitosti, pravednosti i administrativne izvedivosti.
+:::
+
+::: {.notes}
+Zaokružite cjelinu poantom da načela nisu popis koji se može potpuno ispuniti, nego skup ciljeva u međusobnoj napetosti. Iskoristite konkretne sukobe — pravednost protiv učinkovitosti, jednostavnost protiv preciznosti — da pokažete da svako poboljšanje na jednoj strani obično košta na drugoj. Naglasite da to nije mana sustava, nego njegova priroda, jer odražava sukobljene društvene ciljeve. Povežite ovu poantu s idejom da je porezna politika u konačnici politički, a ne samo tehnički izbor. Tako pripremate teren za kasnije rasprave o tome tko zapravo oblikuje porezni sustav [@atkinson1980].
+:::
+
+## Tko treba plaćati? {.dio-slide}
+
+[DVA PRISTUPA]{.section-label}
+
+::: {.lead}
+Na pitanje kako pravedno raspodijeliti porezni teret postoje dva klasična odgovora — teorija koristi (*benefit principle*) i teorija sposobnosti plaćanja (*ability-to-pay*) [@stiglitz2015; @gruber2019].
+:::
+
+. . .
+
+Prvi pristup kaže da plaćaš prema [koristi]{.accent} koju imaš od javnih dobara, drugi da plaćaš prema [ekonomskoj snazi]{.accent}.
+
+. . .
+
+Razlikujmo dva pitanja koja se često brkaju. Najprije pitamo [tko *treba* plaćati]{.accent} (normativno), a potom [tko porez *stvarno* snosi]{.accent} (incidencija).
+
+::: {.notes}
+Otvorite blok jasnim razdvajanjem dvaju pitanja jer ih studenti redovito miješaju. Naglasite da prva dva pristupa, teorija koristi i teorija sposobnosti plaćanja, daju normativni odgovor na pitanje kako bi teret trebalo rasporediti. Tek nakon toga dolazi pozitivno pitanje porezne incidencije, koje pokazuje da zakonski obveznik i stvarni platac često nisu ista osoba. Recite da ćemo prva tri slajda posvetiti normativnom pitanju, a posljednja dva stvarnoj raspodjeli tereta. Tako studenti unaprijed imaju mapu cijeloga bloka.
+:::
+
+## Teorija koristi
+
+[POREZ KAO CIJENA JAVNE USLUGE]{.section-label}
+
+::: {.def}
+Prema teoriji koristi (*benefit principle*) pojedinac plaća poreze [razmjerno koristi]{.accent} koju ostvaruje od javnih dobara i usluga — porez se promatra kao svojevrsna cijena javne usluge.
+:::
+
+. . .
+
+- Privlačan jer izravno povezuje [plaćanje]{.accent} s [primljenom koristi]{.accent}
+- Klasičan primjer — trošarina na gorivo financira ceste, pa više vozi onaj tko više plaća
+
+. . .
+
+Ipak, pristup ima ozbiljna ograničenja [@musgrave1989]:
+
+- Javna su dobra [neisključiva i nerivalna]{.accent}, pa je individualnu korist teško izmjeriti
+- Tko bi platio nacionalnu obranu prema koristi koju od nje ima?
+- Pristup [zanemaruje preraspodjelu]{.accent} jer ne uzima u obzir razlike u ekonomskoj snazi
+
+::: {.notes}
+Objasnite intuiciju načela koristi kroz cijenu jer studenti najlakše razumiju porez kao naplatu za uslugu. Iskoristite primjer trošarine na gorivo kao gotovo čist slučaj u kojem onaj tko više koristi ceste i više plaća za njihovo održavanje. Zatim prijeđite na granice pristupa. Naglasite da je upravo neisključivost javnih dobara razlog zašto za većinu javnih usluga ne možemo utvrditi individualnu korist. Posebno istaknite da pristup nema odgovor na pitanje preraspodjele, čime prirodno otvarate sljedeći slajd o sposobnosti plaćanja.
+:::
+
+## Teorija sposobnosti plaćanja
+
+[OPADAJUĆA GRANIČNA KORISNOST]{.section-label}
+
+::: {.def}
+Prema teoriji sposobnosti plaćanja (*ability-to-pay*) porezni se teret raspoređuje prema [ekonomskoj snazi]{.accent} pojedinca — ona je temelj suvremenoga [progresivnog]{.accent} oporezivanja dohotka.
+:::
+
+. . .
+
+Ključna je implikacija da osobe s [većim dohotkom]{.accent} trebaju plaćati i veći udio poreza.
+
+. . .
+
+Zašto? Zbog [opadajuće granične korisnosti dohotka]{.accent} — svaka dodatna jedinica dohotka vrijedi sve manje.
+
+- Sto eura znači mnogo siromašnijem, a malo bogatijem pojedincu
+- Zato je gubitak korisnosti bogatijega manji od dobitka siromašnijega, pa preraspodjela može povećati ukupno blagostanje [@stiglitz2015]
+
+. . .
+
+Tu je logiku najlakše vidjeti na grafu — pogledajmo kako izgleda na konkavnoj krivulji korisnosti.
+
+## Korisnost dohotka i transfer {.smaller}
+
+[SPOSOBNOST PLAĆANJA — ISPROBAJTE]{.section-label}
+
+```{ojs}
+//| echo: false
+viewof controls = Inputs.form({
+  y_poor:  Inputs.range([5, 50],  {value: 20, step: 1,    width: 230, label: "Dohodak Yp"}),
+  y_rich:  Inputs.range([50, 95], {value: 80, step: 1,    width: 230, label: "Dohodak Yr"}),
+  transfer:Inputs.range([0, 30],  {value: 10, step: 1,    width: 230, label: "Transfer T"}),
+  rho:     Inputs.range([0.2, 1.8],{value: 0.5, step: 0.1, width: 230, label: "Konkavnost ρ"})
+})
+```
+
+```{ojs}
+//| echo: false
+y_poor = controls.y_poor
+```
+
+```{ojs}
+//| echo: false
+y_rich = controls.y_rich
+```
+
+```{ojs}
+//| echo: false
+transfer = controls.transfer
+```
+
+```{ojs}
+//| echo: false
+rho = controls.rho
+```
+
+```{ojs}
+//| echo: false
+{
+  const Ymax = 100;
+  const U = y => (rho === 1)
+    ? 10 * Math.log(y)
+    : 10 * (Math.pow(y, 1 - rho) - 1) / (1 - rho);
+
+  const yp = Math.min(y_poor, y_rich - 1);
+  const yr = Math.max(y_rich, y_poor + 1);
+  const T = Math.min(transfer, yr - yp - 1);
+
+  const ypNew = yp + T;
+  const yrNew = yr - T;
+
+  const Up = U(yp), Ur = U(yr);
+  const UpNew = U(ypNew), UrNew = U(yrNew);
+
+  const dUp = UpNew - Up;
+  const dUr = UrNew - Ur;
+  const dUtot = dUp + dUr;
+
+  const xs = d3.range(1, Ymax + 1);
+  const curve = xs.map(y => ({Y: y, U: U(y)}));
+
+  const Umax = U(Ymax);
+
+  return Plot.plot({
+    width: 720,
+    height: 300,
+    marginLeft: 52,
+    marginBottom: 38,
+    style: {fontSize: "12px", fontFamily: "Public Sans, system-ui, sans-serif", color: "#3A332D", background: "transparent"},
+    x: {label: "Dohodak (Y) →", domain: [0, Ymax], grid: false},
+    y: {label: "↑ Ukupna korisnost (U)", domain: [Math.min(0, U(1)), Umax * 1.08], grid: true},
+    marks: [
+      Plot.ruleY([0], {stroke: "#C9C3B8"}),
+      Plot.line(curve, {x: "Y", y: "U", stroke: "#2D5A8E", strokeWidth: 2.5}),
+      Plot.dot([{Y: yp, U: Up}, {Y: yr, U: Ur}],
+        {x: "Y", y: "U", r: 5, fill: "#6B6357", stroke: "white", strokeWidth: 1.5}),
+      Plot.ruleX([yp, yr], {y1: 0, y2: d => d === yp ? Up : Ur, stroke: "#C9C3B8", strokeDasharray: "2,2"}),
+      Plot.dot([{Y: ypNew, U: UpNew}], {x: "Y", y: "U", r: 6, fill: "#4A6B5C", stroke: "white", strokeWidth: 2}),
+      Plot.dot([{Y: yrNew, U: UrNew}], {x: "Y", y: "U", r: 6, fill: "#6B1F26", stroke: "white", strokeWidth: 2}),
+      Plot.link(
+        [{x1: yp, y1: Umax * 0.04, x2: ypNew, y2: Umax * 0.04}],
+        {x1: "x1", y1: "y1", x2: "x2", y2: "y2",
+         stroke: "#4A6B5C", strokeWidth: 2.5, markerEnd: "arrow"}),
+      Plot.link(
+        [{x1: yr, y1: Umax * 0.04, x2: yrNew, y2: Umax * 0.04}],
+        {x1: "x1", y1: "y1", x2: "x2", y2: "y2",
+         stroke: "#6B1F26", strokeWidth: 2.5, markerEnd: "arrow"}),
+      Plot.ruleX([ypNew], {y1: Up, y2: UpNew, stroke: "#4A6B5C", strokeWidth: 3}),
+      Plot.ruleX([yrNew], {y1: UrNew, y2: Ur, stroke: "#6B1F26", strokeWidth: 3}),
+      Plot.text([{x: ypNew, y: UpNew, label: `+${dUp.toFixed(2)}`}],
+        {x: "x", y: "y", text: "label", textAnchor: "start", dx: 8, dy: -8,
+         fontSize: 13, fill: "#4A6B5C", fontWeight: 700}),
+      Plot.text([{x: yrNew, y: UrNew, label: `${dUr.toFixed(2)}`}],
+        {x: "x", y: "y", text: "label", textAnchor: "start", dx: 8, dy: 14,
+         fontSize: 13, fill: "#6B1F26", fontWeight: 700}),
+      Plot.text([{x: 2, y: Umax * 1.04, label: `Δ Ukupna korisnost: ${dUtot >= 0 ? "+" : ""}${dUtot.toFixed(2)}`}],
+        {x: "x", y: "y", text: "label", textAnchor: "start",
+         fontSize: 14, fill: dUtot >= 0 ? "#4A6B5C" : "#6B1F26", fontWeight: 700}),
+      Plot.text([{x: Ymax * 0.55, y: Umax * 0.20,
+         label: rho === 1 ? "U(Y) = 10·ln(Y)" : `U(Y) ∝ Y^(1−${rho.toFixed(1)})`}],
+        {x: "x", y: "y", text: "label", fill: "#2D5A8E", fontSize: 12, fontWeight: 600})
+    ]
+  });
+}
+```
+
+::: {.isprobaj}
+Pri umjerenoj [konkavnosti]{.var} (ρ ≈ 0,5) već mali transfer daje pozitivnu neto promjenu korisnosti — klasičan argument za preraspodjelu. Spustite ρ prema 0,2 i trake se izjednače, pa preraspodjela gubi opravdanje; podignite ρ prema 1,8 i mali transfer drastično podiže ukupno blagostanje.
+:::
+
+::: {.notes}
+Iskoristite graf interaktivno i tražite od studenata da predvide ishod prije pomicanja klizača. Pomaknite transfer i pokažite kako siromašniji klizi udesno uz velik dobitak korisnosti (zelena traka), a bogatiji ulijevo uz manji gubitak (crvena traka). Naglasite da je neto promjena ukupne korisnosti pozitivna upravo zbog konkavnosti krivulje. Spustite konkavnost prema nuli i pokažite da se opravdanje za preraspodjelu gubi jer krivulja postaje gotovo linearna. Zaključite da koliko je sustav progresivan ovisi i o etičkom sudu i o empirijskoj pretpostavci o obliku funkcije korisnosti.
+:::
+
+::: {.notes}
+Krenite od definicije i odmah povežite sposobnost plaćanja s progresijom jer je to njezina najvažnija praktična posljedica. Srž je slajda opadajuća granična korisnost dohotka, pa je razložite svakodnevnim primjerom u kojem isti iznos znači mnogo siromašnijem, a malo bogatijem čovjeku. Iz toga izvedite ključni zaključak da preraspodjela može povećati ukupnu korisnost društva jer je gubitak bogatijega manji od dobitka siromašnijega. Pripremite studente da na grafu prate konkavnu krivulju, gdje će vertikalni odsječci izravno mjeriti dobitak i gubitak korisnosti. Tako prijelaz na interaktivni prikaz djeluje kao prirodan nastavak, a ne kao prekid.
+:::
+
+## Tko stvarno snosi porez — incidencija {.dio-slide}
+
+[POREZNA INCIDENCIJA]{.section-label}
+
+::: {.def}
+Teorija porezne incidencije pita [tko stvarno snosi teret]{.accent} poreza, neovisno o tome tko ga formalno plaća. Teret pada na [manje elastičnu stranu]{.accent} tržišta [@gruber2019].
+:::
+
+. . .
+
+Zakonski obveznik nije nužno onaj koji teret doista plaća. Tko teže izbjegava transakciju, taj snosi veći dio poreza.
+
+. . .
+
+::: {.cbox .empirija}
+[Empirija]{.cbox-label}
+Ako je ponuda dvostruko elastičnija od potražnje ([εS]{.var} = 2, [|εD|]{.var} = 0,5), kupci snose oko [80 %]{.accent} poreza (2 / 2,5) jer teže izbjegavaju kupnju nego što prodavatelji izbjegavaju prodaju.
+:::
+
+. . .
+
+Pogledajmo na grafu kako se taj teret dijeli između kupaca i prodavatelja.
+
+## Porezna incidencija na grafu {.smaller}
+
+[TKO SNOSI TERET — ISPROBAJTE]{.section-label}
+
+```{ojs}
+//| echo: false
+viewof inc_controls = Inputs.form({
+  eps_d: Inputs.range([0.2, 2.5], {value: 1.0, step: 0.05, width: 210, label: "Elastičnost potražnje |εD|"}),
+  eps_s: Inputs.range([0.2, 2.5], {value: 1.0, step: 0.05, width: 210, label: "Elastičnost ponude εS"}),
+  t_inc: Inputs.range([0, 30],    {value: 15,  step: 1,    width: 210, label: "Iznos poreza (t)"})
+})
+```
+
+```{ojs}
+//| echo: false
+eps_d = inc_controls.eps_d
+```
+
+```{ojs}
+//| echo: false
+eps_s = inc_controls.eps_s
+```
+
+```{ojs}
+//| echo: false
+t_inc = inc_controls.t_inc
+```
+
+```{ojs}
+//| echo: false
+{
+  const Qstar = 50;
+  const Pstar = 50;
+  const Qmax = 110;
+  const Pmax = 110;
+
+  const b = 1 / eps_d;
+  const d_slope = 1 / eps_s;
+  const a = Pstar + b * Qstar;
+  const c = Pstar - d_slope * Qstar;
+
+  const t = t_inc;
+
+  const Qt = Math.max(0, (a - c - t) / (b + d_slope));
+  const Pc = a - b * Qt;
+  const Pp = Pc - t;
+
+  const buyerShare  = (Pc - Pstar) / t;
+  const sellerShare = (Pstar - Pp) / t;
+
+  const Qs = d3.range(0, Qmax + 1);
+  const demand    = Qs.map(q => ({Q: q, P: a - b * q})).filter(p => p.P >= 0 && p.P <= Pmax);
+  const supply    = Qs.map(q => ({Q: q, P: c + d_slope * q})).filter(p => p.P >= 0 && p.P <= Pmax);
+  const supplyTax = Qs.map(q => ({Q: q, P: c + t + d_slope * q})).filter(p => p.P >= 0 && p.P <= Pmax);
+
+  const buyerRect = [
+    {Q: 0,  P: Pstar},
+    {Q: Qt, P: Pstar},
+    {Q: Qt, P: Pc},
+    {Q: 0,  P: Pc}
+  ];
+  const sellerRect = [
+    {Q: 0,  P: Pp},
+    {Q: Qt, P: Pp},
+    {Q: Qt, P: Pstar},
+    {Q: 0,  P: Pstar}
+  ];
+
+  return Plot.plot({
+    width: 840,
+    height: 340,
+    marginLeft: 56,
+    marginBottom: 44,
+    style: {fontSize: "12px", fontFamily: "Public Sans, system-ui, sans-serif", color: "#3A332D", background: "transparent"},
+    x: {label: "Količina (Q) →", domain: [0, Qmax], grid: false},
+    y: {label: "↑ Cijena (P)",    domain: [0, Pmax], grid: true},
+    marks: [
+      Plot.ruleY([0], {stroke: "#C9C3B8"}),
+      Plot.line([...buyerRect, buyerRect[0]],
+        {x: "Q", y: "P", stroke: "#2D5A8E", strokeWidth: 1, fill: "#CBD8D2", fillOpacity: 0.55, curve: "linear"}),
+      Plot.line([...sellerRect, sellerRect[0]],
+        {x: "Q", y: "P", stroke: "#C8985E", strokeWidth: 1, fill: "#E8D6B8", fillOpacity: 0.55, curve: "linear"}),
+      Plot.line(demand,    {x: "Q", y: "P", stroke: "#2D5A8E", strokeWidth: 2.5}),
+      Plot.line(supply,    {x: "Q", y: "P", stroke: "#4A6B5C", strokeWidth: 2}),
+      Plot.line(supplyTax, {x: "Q", y: "P", stroke: "#4A6B5C", strokeWidth: 2, strokeDasharray: "6,4"}),
+      Plot.ruleY([Pc],    {stroke: "#6B6357", strokeDasharray: "2,2"}),
+      Plot.ruleY([Pp],    {stroke: "#6B6357", strokeDasharray: "2,2"}),
+      Plot.ruleY([Pstar], {stroke: "#3A332D", strokeDasharray: "4,3", strokeWidth: 1}),
+      Plot.ruleX([Qt], {y1: Pp, y2: Pc, stroke: "#6B1F26", strokeWidth: 3}),
+      Plot.dot([{Q: Qstar, P: Pstar}], {x: "Q", y: "P", r: 5, fill: "#3A332D", stroke: "white", strokeWidth: 2}),
+      Plot.dot([{Q: Qt, P: Pc}, {Q: Qt, P: Pp}],
+        {x: "Q", y: "P", r: 4, fill: "#6B1F26", stroke: "white", strokeWidth: 1.5}),
+      Plot.text([{x: Qmax * 0.85, y: a - b * Qmax * 0.85, label: `D (|εD|=${eps_d.toFixed(2)})`}],
+        {x: "x", y: "y", text: "label", fill: "#2D5A8E", fontSize: 12, fontWeight: 600, dy: -8}),
+      Plot.text([{x: Qmax * 0.85, y: c + d_slope * Qmax * 0.85, label: `S (εS=${eps_s.toFixed(2)})`}],
+        {x: "x", y: "y", text: "label", fill: "#4A6B5C", fontSize: 12, fontWeight: 600, dy: -8}),
+      Plot.text([{x: Qmax * 0.85, y: c + t + d_slope * Qmax * 0.85, label: "S + t"}],
+        {x: "x", y: "y", text: "label", fill: "#4A6B5C", fontSize: 12, fontWeight: 600, dy: -8}),
+      Plot.text([{x: 2, y: Pc, label: `Pc = ${Pc.toFixed(1)}`}],
+        {x: "x", y: "y", text: "label", textAnchor: "start", dy: -8, fontSize: 12, fill: "#1C1916"}),
+      Plot.text([{x: 2, y: Pp, label: `Pp = ${Pp.toFixed(1)}`}],
+        {x: "x", y: "y", text: "label", textAnchor: "start", dy: 14, fontSize: 12, fill: "#1C1916"}),
+      Plot.text([{x: 2, y: Pstar, label: `P* = ${Pstar.toFixed(1)}`}],
+        {x: "x", y: "y", text: "label", textAnchor: "start", dy: -6, fontSize: 11, fill: "#3A332D"}),
+      Plot.text([{x: 2, y: Pmax * 0.97, label: `Teret kupaca: ${(buyerShare * 100).toFixed(0)} %`}],
+        {x: "x", y: "y", text: "label", textAnchor: "start", fontSize: 14, fill: "#1E3F63", fontWeight: 700}),
+      Plot.text([{x: 2, y: Pmax * 0.91, label: `Teret prodavatelja: ${(sellerShare * 100).toFixed(0)} %`}],
+        {x: "x", y: "y", text: "label", textAnchor: "start", fontSize: 14, fill: "#9A6F38", fontWeight: 700})
+    ]
+  });
+}
+```
+
+::: {.isprobaj}
+Postavite [|εD|]{.var} nisko (oko 0,3) i [εS]{.var} visoko (oko 2,0) — kupci snose gotovo cijeli porez (slučaj duhana i goriva). Obrnite odnos i teret prelazi na prodavatelje (kratkoročno tržište nekretnina). Kad su elastičnosti slične, teret se otprilike polovi.
+:::
+
+::: {.notes}
+Tražite od studenata da prije pomicanja klizača predvide tko snosi teret. Pokažite da plavi pravokutnik (teret kupaca) i žuti (teret prodavatelja) mijenjaju omjer kako mijenjate elastičnosti. Naglasite da postotni udjeli u vrhu grafa ovise samo o odnosu elastičnosti, a ne o tome tko porez uplaćuje. Povežite tri scenarija s realnim tržištima, od duhana i goriva do nekretnina. Zaključite da manje elastična strana uvijek snosi veći dio tereta.
+:::
+
+::: {.notes}
+Najvažnija je poruka slajda da formalni obveznik i stvarni platac često nisu ista osoba, pa to razdvajanje uvedite odmah nakon definicije. Objasnite intuiciju elastičnosti rečenicom da teret snosi onaj tko teže može pobjeći iz transakcije. Brojčani primjer s odnosom dva naprama pola provedite naglas jer udio od osamdeset posto studentima jasno pokazuje koliko elastičnost odlučuje o raspodjeli. Izbjegavajte na ovom slajdu izvoditi cijelu formulu, dovoljna je intuicija, a precizan razlomak ostavite za graf. Najavite da će interaktivni prikaz pokazati plavi i žuti pravokutnik kao udjele kupaca i prodavatelja.
+:::
+
+## Pouka incidencije
+
+[TKO NE MOŽE POBJEĆI, TAJ PLAĆA]{.section-label}
+
+::: {.cbox .kljucno}
+[Ključno]{.cbox-label}
+Manje elastična strana tržišta snosi veći dio poreznoga tereta, neovisno o tome koga zakon proglašava obveznikom. Tko ne može izbjeći transakciju, taj ne može izbjeći ni porez.
+:::
+
+. . .
+
+Što to znači u praksi:
+
+- [Duhan i gorivo]{.accent} — teret pada na kupce jer je potražnja neelastična, pa cijena raste gotovo za cijeli iznos poreza
+- [Kratkoročno tržište nekretnina]{.accent} — teret pada na prodavatelje jer je ponuda kratkoročno neelastična
+
+. . .
+
+[Pravilo je jednostavno — porezni teret slijedi neelastičnost, a ne potpis na poreznoj prijavi.]{.accent}
+
+::: {.notes}
+Zaokružite blok jednom pamtljivom rečenicom da teret plaća onaj tko ne može pobjeći. Iskoristite dva suprotna primjera da pokažete kako ista logika daje različite ishode ovisno o tome koja je strana neelastična. Kod duhana i goriva istaknite da neelastična potražnja prebacuje porez na kupce, što je razlog zašto su trošarine izdašan i stabilan izvor prihoda. Kod nekretnina objasnite da je kratkoročno ponuda fiksna, pa teret kratkoročno snose prodavatelji. Zaključite porukom da zakonska oznaka obveznika ne određuje stvarnoga platca i tako povežite cijeli blok s idućom temom o trošku oporezivanja.
+:::
+
+## Mrtvi teret oporezivanja {.dio-slide}
+
+[ČISTI DRUŠTVENI GUBITAK]{.section-label}
+
+::: {.def}
+**Mrtvi teret poreza** je gubitak ukupnog blagostanja koji nastaje zato što porez mijenja relativne cijene i odvraća sudionike od razmjena koje bi inače bile obostrano korisne. Približno vrijedi [DWL ≈ ½ · t · ΔQ]{.var}, pa gubitak raste s kvadratom porezne stope i s elastičnošću ponude i potražnje [@gruber2019].
+:::
+
+. . .
+
+Praktična posljedica je oštra. Udvostruči li se porezna stopa, mrtvi teret raste otprilike [četiri puta]{.accent}, jer gubitak ovisi o kvadratu stope.
+
+. . .
+
+Graf koji slijedi pokazuje crveni trokut mrtvog tereta, visinu poreza [t]{.var} i pad količine [ΔQ]{.var}, a klizačima mijenjamo elastičnost potražnje i iznos poreza.
+
+## Mrtvi teret na grafu {.smaller}
+
+[DWL ∝ t² — ISPROBAJTE]{.section-label}
+
+```{ojs}
+//| echo: false
+viewof dwl2_controls = Inputs.form({
+  eps_dwl: Inputs.range([0.2, 2.5], {value: 1.0, step: 0.05, width: 210, label: "Elastičnost potražnje |ε|"}),
+  t_dwl:   Inputs.range([0, 30],    {value: 12,  step: 1,    width: 210, label: "Iznos poreza (t)"})
+})
+```
+
+```{ojs}
+//| echo: false
+eps_dwl = dwl2_controls.eps_dwl
+```
+
+```{ojs}
+//| echo: false
+t_dwl = dwl2_controls.t_dwl
+```
+
+```{ojs}
+//| echo: false
+{
+  const Qstar = 50;
+  const Pstar = 50;
+  const Qmax = 110;
+  const Pmax = 110;
+
+  const b = 1 / eps_dwl;
+  const a = Pstar + b * Qstar;
+  const d_slope = 0.5;
+  const c = Pstar - d_slope * Qstar;
+
+  const t = t_dwl;
+
+  const Qt = Math.max(0, (a - c - t) / (b + d_slope));
+  const Pc = a - b * Qt;
+  const Pp = Pc - t;
+
+  const dQ = Qstar - Qt;
+  const dwl = 0.5 * t * dQ;
+
+  const tRef = 4;
+  const QtRef = Math.max(0, (a - c - tRef) / (b + d_slope));
+  const dwlRef = 0.5 * tRef * (Qstar - QtRef);
+  const ratio = dwlRef > 0 ? dwl / dwlRef : 0;
+
+  const Qs = d3.range(0, Qmax + 1);
+  const demand    = Qs.map(q => ({Q: q, P: a - b * q})).filter(p => p.P >= 0 && p.P <= Pmax);
+  const supply    = Qs.map(q => ({Q: q, P: c + d_slope * q})).filter(p => p.P >= 0 && p.P <= Pmax);
+  const supplyTax = Qs.map(q => ({Q: q, P: c + t + d_slope * q})).filter(p => p.P >= 0 && p.P <= Pmax);
+
+  const dwlTriangle = [
+    {Q: Qt,    P: Pc},
+    {Q: Qt,    P: Pp},
+    {Q: Qstar, P: Pstar}
+  ];
+
+  return Plot.plot({
+    width: 840,
+    height: 340,
+    marginLeft: 56,
+    marginBottom: 44,
+    style: {fontSize: "12px", fontFamily: "Public Sans, system-ui, sans-serif", color: "#3A332D", background: "transparent"},
+    x: {label: "Količina (Q) →", domain: [0, Qmax], grid: false},
+    y: {label: "↑ Cijena (P)",    domain: [0, Pmax], grid: true},
+    marks: [
+      Plot.ruleY([0], {stroke: "#C9C3B8"}),
+      Plot.line([...dwlTriangle, dwlTriangle[0]],
+        {x: "Q", y: "P", stroke: "#6B1F26", strokeWidth: 2,
+         fill: "#D8B5B3", fillOpacity: 0.75, curve: "linear"}),
+      Plot.line(demand,    {x: "Q", y: "P", stroke: "#2D5A8E", strokeWidth: 2.5}),
+      Plot.line(supply,    {x: "Q", y: "P", stroke: "#4A6B5C", strokeWidth: 2}),
+      Plot.line(supplyTax, {x: "Q", y: "P", stroke: "#4A6B5C", strokeWidth: 2, strokeDasharray: "6,4"}),
+      Plot.ruleX([Qt],    {y1: Pp, y2: Pc, stroke: "#6B1F26", strokeWidth: 3}),
+      Plot.link(
+        [{x1: Qt, x2: Qstar, y1: Pmax * 0.10, y2: Pmax * 0.10}],
+        {x1: "x1", x2: "x2", y1: "y1", y2: "y2",
+         stroke: "#3A332D", strokeWidth: 2.5, markerStart: "dot", markerEnd: "dot"}),
+      Plot.dot([{Q: Qstar, P: Pstar}], {x: "Q", y: "P", r: 5, fill: "#3A332D", stroke: "white", strokeWidth: 2}),
+      Plot.dot([{Q: Qt, P: Pc}, {Q: Qt, P: Pp}],
+        {x: "Q", y: "P", r: 4, fill: "#6B1F26", stroke: "white", strokeWidth: 1.5}),
+      Plot.text([{x: Qt, y: (Pc + Pp) / 2, label: `t = ${t}`}],
+        {x: "x", y: "y", text: "label", textAnchor: "start", dx: 8,
+         fontSize: 13, fill: "#6B1F26", fontWeight: 700}),
+      Plot.text([{x: (Qt + Qstar) / 2, y: Pmax * 0.10, label: `ΔQ = ${dQ.toFixed(1)}`}],
+        {x: "x", y: "y", text: "label", textAnchor: "middle", dy: -8,
+         fontSize: 12, fill: "#3A332D", fontWeight: 600}),
+      Plot.text([{x: Qmax * 0.85, y: a - b * Qmax * 0.85, label: `D (|ε|=${eps_dwl.toFixed(2)})`}],
+        {x: "x", y: "y", text: "label", fill: "#2D5A8E", fontSize: 12, fontWeight: 600, dy: -8}),
+      Plot.text([{x: Qmax * 0.85, y: c + d_slope * Qmax * 0.85, label: "S"}],
+        {x: "x", y: "y", text: "label", fill: "#4A6B5C", fontSize: 13, fontWeight: 600, dy: -8}),
+      Plot.text([{x: Qmax * 0.85, y: c + t + d_slope * Qmax * 0.85, label: "S + t"}],
+        {x: "x", y: "y", text: "label", fill: "#4A6B5C", fontSize: 12, fontWeight: 600, dy: -8}),
+      Plot.text([{x: 2, y: Pmax * 0.97,
+         label: `DWL = ½ · t · ΔQ = ½ · ${t} · ${dQ.toFixed(1)} = ${dwl.toFixed(1)}`}],
+        {x: "x", y: "y", text: "label", textAnchor: "start",
+         fontSize: 14, fill: "#6B1F26", fontWeight: 700}),
+      Plot.text([{x: 2, y: Pmax * 0.91,
+         label: `Pri t = ${tRef} mrtvi teret bio bi ${dwlRef.toFixed(1)}  →  ${ratio.toFixed(1)}× više`}],
+        {x: "x", y: "y", text: "label", textAnchor: "start",
+         fontSize: 12, fill: "#3A332D", fontWeight: 500})
+    ]
+  });
+}
+```
+
+::: {.isprobaj}
+Udvostručite [t]{.var} s 4 na 8 — omjer pokazuje da mrtvi teret raste oko četiri puta, a ne dva (kvadratno skaliranje DWL ∝ t²). Udvostručite [|ε|]{.var} i ΔQ se približno udvostručuje. Pri vrlo niskoj |ε| trokut ostaje malen i pri visokom porezu, zbog čega su trošarine na neelastična dobra fiskalno privlačne.
+:::
+
+::: {.notes}
+Inzistirajte na kvadratnom skaliranju jer je to glavna pouka slajda. Povucite porez s niske na dvostruku vrijednost i pokažite da gornji natpis prijavljuje gotovo četverostruki gubitak. Objasnite da gubitak raste i s elastičnošću jer veća reakcija količine širi trokut. Pokažite slučaj vrlo neelastične potražnje u kojem trokut ostaje malen čak i pri visokom porezu. Iz toga izvedite preporuku „široko i nisko” za dizajn poreznog sustava.
+:::
+
+::: {.notes}
+Krenite od intuicije, ne od formule. Naglasite da incidencija govori tko snosi teret, a mrtvi teret govori koliko je razmjene porez potpuno ugasio, dakle koristi koje više nitko ne uživa. Istaknite da gubitak ne raste linearno nego s kvadratom stope, što je ključ za kasniju pouku o širokoj osnovici. Pripremite studente da je trokut na grafu mjera te izgubljene razmjene, a ne prihod države. Tražite od njih da prije pomicanja klizača predvide što će se dogoditi s trokutom kada povećate elastičnost.
+:::
+
+## Pouka o mrtvom teretu
+
+[ŠIROKO I NISKO]{.section-label}
+
+::: {.lead}
+Iz kvadratnog skaliranja gubitka slijedi jasna preporuka za dizajn poreznog sustava.
+:::
+
+. . .
+
+::: {.cbox .kljucno}
+[Ključno]{.cbox-label}
+Niski porezi po širokoj osnovici stvaraju manji ukupni gubitak blagostanja od visokih poreza po uskoj osnovici, jer mrtvi teret raste s kvadratom stope ([DWL ∝ t²]{.var}). Više malih distorzija obično je jeftinije od jedne velike, pa je načelo „široko i nisko” temelj dizajna učinkovitog poreznog sustava.
+:::
+
+::: {.notes}
+Ovo je normativna pouka koja izravno slijedi iz prethodnog slajda. Razložite logiku brojkom. Jedan porez od 20 % stvara puno veći gubitak nego dva poreza od 10 % po istom prihodu, upravo zbog kvadrata. Naglasite da je zato širenje osnovice, dakle uklanjanje izuzeća i olakšica uz niže stope, jedan od najsnažnijih alata porezne reforme. Povežite to s teorijom optimalnog oporezivanja koju razvijamo dalje u poglavlju. Upozorite da široka osnovica može biti politički teška jer ukida povlastice pojedinih skupina.
+:::
+
+## Porezni klin na tržištu rada {.dio-slide}
+
+[DVIJE CIJENE RADA]{.section-label}
+
+::: {.def}
+**Porezni klin** je razlika između bruto nadnice, koja je trošak rada za poslodavca, i neto nadnice koju radnik odnese kući, izražena kao udio svih poreza i doprinosa u trošku rada. U njega ulaze porez na dohodak, prirez te doprinosi zaposlenika i poslodavca [@simovic2022].
+:::
+
+. . .
+
+Zato na tržištu rada ne postoji jedna cijena rada, nego [dvije]{.accent} — ona koju poslodavac plaća i ona koju radnik prima. Što je klin širi, to su veći [pad zaposlenosti]{.accent} i [mrtvi teret]{.accent}.
+
+. . .
+
+Graf koji slijedi prikazuje potražnju za radom i ponudu rada, crveni odsječak veličine klina između bruto i neto nadnice te porezni prihod države, a klizačima mijenjamo veličinu klina i elastičnost ponude rada.
+
+## Porezni klin na grafu {.smaller}
+
+[KLIN NA TRŽIŠTU RADA — ISPROBAJTE]{.section-label}
+
+```{ojs}
+//| echo: false
+viewof wedge_controls = Inputs.form({
+  tau:   Inputs.range([0, 60],   {value: 35,  step: 1,    width: 210, label: "Porezni klin τ (%)"}),
+  eps_L: Inputs.range([0.1, 1.5], {value: 0.4, step: 0.05, width: 210, label: "Elastičnost ponude rada εL"})
+})
+```
+
+```{ojs}
+//| echo: false
+tau = wedge_controls.tau
+```
+
+```{ojs}
+//| echo: false
+eps_L = wedge_controls.eps_L
+```
+
+```{ojs}
+//| echo: false
+{
+  const Lstar = 50;
+  const Wstar = 50;
+  const Lmax = 110;
+  const Wmax = 110;
+
+  const b = 1;
+  const a = Wstar + b * Lstar;
+  const d_slope = 1 / eps_L;
+  const c = Wstar - d_slope * Lstar;
+
+  const tauFrac = tau / 100;
+  const Lt = Math.max(0, (a * (1 - tauFrac) - c) / (b * (1 - tauFrac) + d_slope));
+  const Wbruto = a - b * Lt;
+  const Wneto  = Wbruto * (1 - tauFrac);
+  const wedgeAbs = Wbruto - Wneto;
+
+  const dL = Lstar - Lt;
+  const revenue = wedgeAbs * Lt;
+  const dwl     = 0.5 * wedgeAbs * dL;
+
+  const Ls = d3.range(0, Lmax + 1);
+  const demand    = Ls.map(l => ({L: l, W: a - b * l})).filter(p => p.W >= 0 && p.W <= Wmax);
+  const supply    = Ls.map(l => ({L: l, W: c + d_slope * l})).filter(p => p.W >= 0 && p.W <= Wmax);
+  const supplyTax = Ls.map(l => ({L: l, W: c + wedgeAbs + d_slope * l})).filter(p => p.W >= 0 && p.W <= Wmax);
+
+  const wedgeRect = [
+    {L: 0,  W: Wneto},
+    {L: Lt, W: Wneto},
+    {L: Lt, W: Wbruto},
+    {L: 0,  W: Wbruto}
+  ];
+
+  return Plot.plot({
+    width: 840,
+    height: 340,
+    marginLeft: 56,
+    marginBottom: 44,
+    style: {fontSize: "12px", fontFamily: "Public Sans, system-ui, sans-serif", color: "#3A332D", background: "transparent"},
+    x: {label: "Rad (L) →", domain: [0, Lmax], grid: false},
+    y: {label: "↑ Nadnica (W)", domain: [0, Wmax], grid: true},
+    marks: [
+      Plot.ruleY([0], {stroke: "#C9C3B8"}),
+      Plot.line([...wedgeRect, wedgeRect[0]],
+        {x: "L", y: "W", stroke: "#3A332D", strokeWidth: 1,
+         fill: "#E0D8C8", fillOpacity: 0.6, curve: "linear"}),
+      Plot.line(demand,    {x: "L", y: "W", stroke: "#2D5A8E", strokeWidth: 2.5}),
+      Plot.line(supply,    {x: "L", y: "W", stroke: "#4A6B5C", strokeWidth: 2}),
+      Plot.line(supplyTax, {x: "L", y: "W", stroke: "#4A6B5C", strokeWidth: 2, strokeDasharray: "6,4"}),
+      Plot.ruleY([Wbruto], {stroke: "#6B6357", strokeDasharray: "2,2"}),
+      Plot.ruleY([Wneto],  {stroke: "#6B6357", strokeDasharray: "2,2"}),
+      Plot.ruleX([Lt], {y1: Wneto, y2: Wbruto, stroke: "#6B1F26", strokeWidth: 3}),
+      Plot.dot([{L: Lstar, W: Wstar}], {x: "L", y: "W", r: 5, fill: "#3A332D", stroke: "white", strokeWidth: 2}),
+      Plot.dot([{L: Lt, W: Wbruto}, {L: Lt, W: Wneto}],
+        {x: "L", y: "W", r: 4, fill: "#6B1F26", stroke: "white", strokeWidth: 1.5}),
+      Plot.text([{x: Lmax * 0.85, y: a - b * Lmax * 0.85, label: "Potražnja za radom (D)"}],
+        {x: "x", y: "y", text: "label", fill: "#2D5A8E", fontSize: 12, fontWeight: 600, dy: -8}),
+      Plot.text([{x: Lmax * 0.85, y: c + d_slope * Lmax * 0.85, label: `Ponuda rada (εL=${eps_L.toFixed(2)})`}],
+        {x: "x", y: "y", text: "label", fill: "#4A6B5C", fontSize: 12, fontWeight: 600, dy: -8}),
+      Plot.text([{x: Lmax * 0.85, y: c + wedgeAbs + d_slope * Lmax * 0.85, label: "Ponuda + klin"}],
+        {x: "x", y: "y", text: "label", fill: "#4A6B5C", fontSize: 12, fontWeight: 600, dy: -8}),
+      Plot.text([{x: 2, y: Wbruto, label: `Bruto nadnica = ${Wbruto.toFixed(1)}`}],
+        {x: "x", y: "y", text: "label", textAnchor: "start", dy: -8, fontSize: 12, fill: "#1C1916", fontWeight: 600}),
+      Plot.text([{x: 2, y: Wneto, label: `Neto nadnica = ${Wneto.toFixed(1)}`}],
+        {x: "x", y: "y", text: "label", textAnchor: "start", dy: 14, fontSize: 12, fill: "#1C1916", fontWeight: 600}),
+      Plot.text([{x: Lt, y: (Wbruto + Wneto) / 2, label: `Klin = ${wedgeAbs.toFixed(1)}`}],
+        {x: "x", y: "y", text: "label", textAnchor: "start", dx: 8,
+         fontSize: 13, fill: "#6B1F26", fontWeight: 700}),
+      Plot.text([{x: 2, y: Wmax * 0.97,
+         label: `Porezni prihod: ${revenue.toFixed(1)}   |   Mrtvi teret: ${dwl.toFixed(1)}`}],
+        {x: "x", y: "y", text: "label", textAnchor: "start",
+         fontSize: 13, fill: "#3A332D", fontWeight: 700}),
+      Plot.text([{x: 2, y: Wmax * 0.91,
+         label: `Pad zaposlenosti: ΔL = ${dL.toFixed(1)}  (${(dL / Lstar * 100).toFixed(1)} %)`}],
+        {x: "x", y: "y", text: "label", textAnchor: "start",
+         fontSize: 12, fill: "#3A332D", fontWeight: 500})
+    ]
+  });
+}
+```
+
+::: {.isprobaj}
+Pri niskoj [εL]{.var} (oko 0,15) i klinu od 35 % pad zaposlenosti je malen, a prihod velik — porezi na rad su izdašni. Podignite εL prema 1,0 i isti klin ruši zaposlenost i diže mrtvi teret. Pri εL oko 0,4 povucite klin s 20 % na 50 % i pratite kako prihod isprva raste, a pri vrlo visokom klinu može i pasti.
+:::
+
+::: {.notes}
+Pokažite da je razmak između bruto i neto nadnice upravo porezni klin. Mijenjajte elastičnost ponude rada i naglasite da kod elastičnijih skupina isti klin uzrokuje veći pad zaposlenosti. Povežite svjetli pravokutnik s poreznim prihodom, a crveni okomiti odsječak s veličinom klina. Pokažite da pri vrlo visokom klinu prihod može i pasti, čime se najavljuje Lafferova logika. Smjestite Hrvatsku među zemlje s visokim klinom i istaknite važnost strukture opterećenja rada.
+:::
+
+::: {.notes}
+Počnite od svakodnevnog iskustva studenata, razlike između onoga što piše u ugovoru i onoga što stigne na račun. Naglasite da klin nije samo porez na dohodak, nego prije svega doprinosi, koji su u Hrvatskoj velik dio opterećenja rada. Vizualizirajte dvije cijene rada kao dvije vodoravne linije razdvojene klinom. Povežite širinu klina s prethodnom temom mrtvog tereta, jer je klin upravo porez koji gasi dio zaposlenosti. Tražite od studenata da predvide tko snosi veći dio klina kada je ponuda rada neelastična, prije nego pokažete graf.
+:::
+
+## Klin, zaposlenost i Hrvatska
+
+[ZAŠTO JE STRUKTURA VAŽNA]{.section-label}
+
+::: {.cbox .empirija}
+[Empirija]{.cbox-label}
+Kod neelastične ponude rada klin je fiskalno izdašan uz mali pad zaposlenosti, pa su porezi na rad izdašni i u zemljama s visokim opterećenjem. No kod elastičnijih skupina, poput mladih, žena s djecom i radnika blizu mirovine, isti klin znatno ruši zaposlenost i podiže mrtvi teret. Hrvatska je među zemljama s višim poreznim klinom u EU, pa je struktura opterećenja rada ključna za zaposlenost i konkurentnost [@simovic2022].
+:::
+
+::: {.notes}
+Glavna poruka je da nije važna samo visina klina, nego i na koga pada. Objasnite da neelastične skupine, koje imaju malo alternativa, snose teret bez velikog povlačenja s tržišta rada, pa su porezi na njih izdašni. Suprotno tomu, elastične skupine reagiraju smanjenjem ponude rada, pa isti klin kod njih ruši zaposlenost. Iz toga slijedi preporuka moderne teorije optimalnog oporezivanja o nižim efektivnim stopama za elastičnije skupine. Smjestite Hrvatsku u europski kontekst kao zemlju s visokim klinom i naglasite da je upravo struktura opterećenja rada ključno reformsko pitanje za zaposlenost i konkurentnost.
+:::
+
+## Teorija optimalnog oporezivanja {.dio-slide}
+
+[KAKO, A NE KOLIKO]{.section-label}
+
+::: {.lead}
+Svaki porez istodobno radi dvije stvari: preraspodjeljuje dohodak i narušava poticaje. Zato središnje pitanje nije koliko oporezivati, nego kako rasporediti teret tako da gubitak blagostanja bude najmanji uz zadane društvene ciljeve [@stiglitz2015; @gruber2019].
+:::
+
+. . .
+
+- Cilj je [maksimizirati društveno blagostanje]{.accent} uz minimalne distorzije.
+- Svaka porezna stopa povlači [trošak]{.accent}, jer mijenja relativne cijene i odvraća sudionike od korisnih razmjena.
+- Optimalno oporezivanje formalno traži onu strukturu stopa koja taj trošak svodi na najmanju moguću mjeru.
+
+::: {.notes}
+Otvorite blok jasnom porukom da je optimalno oporezivanje pitanje dizajna, a ne razine. Naglasite dvostruku narav svakog poreza, jer istodobno preraspodjeljuje i iskrivljuje poticaje, pa se ta dva cilja gotovo uvijek sukobljavaju. Povežite to s ranije obrađenim mrtvim teretom kao mjerom troška oporezivanja. Recite studentima da ćemo u sljedećim slajdovima vidjeti tri klasična odgovora, Ramseyev za dobra, Mirrleesov za rad i teoriju žrtve za progresivnost. Najavite da je zajednička nit svih triju vaganje između učinkovitosti i pravednosti.
+:::
+
+## Ramseyevo pravilo
+
+[TEŽE OPOREZUJ NEELASTIČNO]{.section-label}
+
+::: {.def}
+**Ramseyevo pravilo** kaže da je pri zadanom prihodu mrtvi teret oporezivanja najmanji kada dobra s neelastičnom potražnjom nose relativno više porezne stope [@ramsey1927].
+:::
+
+. . .
+
+- U najjednostavnijem obliku pravilo je [inverzna elastičnost]{.accent}: omjer stopa jednak je obrnutom omjeru elastičnosti potražnje.
+- Dobro čija je potražnja [dvostruko neelastičnija]{.accent} nosi dvostruko višu stopu.
+- Intuicija: neelastična potražnja slabo reagira na cijenu, pa porez malo smanji količinu i stvori mali gubitak blagostanja.
+
+. . .
+
+::: {.cbox .empirija}
+[Empirija]{.cbox-label}
+Upravo zato stvarni sustavi stavljaju visoke trošarine na [gorivo]{.accent} i [duhan]{.accent} — potražnja za njima relativno je neelastična, pa nose velik porezni teret uz razmjerno mali mrtvi teret.
+:::
+
+Graf koji slijedi pokazuje kako optimalna stopa pada s elastičnošću dobra.
+
+## Ramseyevo pravilo na grafu {.smaller}
+
+[ELASTIČNOST I MRTVI TERET — ISPROBAJTE]{.section-label}
+
+```{ojs}
+//| echo: false
+viewof dwl_controls = Inputs.form({
+  eps: Inputs.range([0.2, 2.5], {value: 1.0, step: 0.05, width: 210, label: "Elastičnost potražnje |ε|"}),
+  tax: Inputs.range([0, 30],    {value: 15,  step: 1,    width: 210, label: "Iznos poreza (t)"})
+})
+```
+
+```{ojs}
+//| echo: false
+eps = dwl_controls.eps
+```
+
+```{ojs}
+//| echo: false
+tax = dwl_controls.tax
+```
+
+```{ojs}
+//| echo: false
+{
+  const Qstar = 50;
+  const Pstar = 50;
+  const Qmax = 110;
+  const Pmax = 110;
+
+  const b = 1 / eps;
+  const a = Pstar + b * Qstar;
+  const d = 0.5;
+  const c = Pstar - d * Qstar;
+
+  const t = tax;
+
+  const Qt = Math.max(0, (a - c - t) / (b + d));
+  const Pc = a - b * Qt;
+  const Pp = Pc - t;
+
+  const dQ = Qstar - Qt;
+  const dwl = 0.5 * t * dQ;
+  const revenue = t * Qt;
+
+  const Qs = d3.range(0, Qmax + 1);
+  const demand    = Qs.map(q => ({Q: q, P: a - b * q})).filter(p => p.P >= 0 && p.P <= Pmax);
+  const supply    = Qs.map(q => ({Q: q, P: c + d * q})).filter(p => p.P >= 0 && p.P <= Pmax);
+  const supplyTax = Qs.map(q => ({Q: q, P: c + t + d * q})).filter(p => p.P >= 0 && p.P <= Pmax);
+
+  const dwlTriangle = [
+    {Q: Qt,    P: Pc},
+    {Q: Qt,    P: Pp},
+    {Q: Qstar, P: Pstar}
+  ];
+
+  const revRect = [
+    {Q: 0,  P: Pp},
+    {Q: Qt, P: Pp},
+    {Q: Qt, P: Pc},
+    {Q: 0,  P: Pc}
+  ];
+
+  return Plot.plot({
+    width: 840,
+    height: 340,
+    marginLeft: 56,
+    marginBottom: 44,
+    style: {fontSize: "12px", fontFamily: "Public Sans, system-ui, sans-serif", color: "#3A332D", background: "transparent"},
+    x: {label: "Količina (Q) →", domain: [0, Qmax], grid: false},
+    y: {label: "↑ Cijena (P)",    domain: [0, Pmax], grid: true},
+    marks: [
+      Plot.ruleY([0], {stroke: "#C9C3B8"}),
+      Plot.line([...revRect, revRect[0]],
+        {x: "Q", y: "P", stroke: "#2D5A8E", strokeWidth: 1,
+         fill: "#CBD8D2", fillOpacity: 0.5, curve: "linear"}),
+      Plot.line([...dwlTriangle, dwlTriangle[0]],
+        {x: "Q", y: "P", stroke: "#6B1F26", strokeWidth: 2,
+         fill: "#D8B5B3", fillOpacity: 0.7, curve: "linear"}),
+      Plot.line(demand,    {x: "Q", y: "P", stroke: "#2D5A8E", strokeWidth: 2.5}),
+      Plot.line(supply,    {x: "Q", y: "P", stroke: "#4A6B5C", strokeWidth: 2}),
+      Plot.line(supplyTax, {x: "Q", y: "P", stroke: "#4A6B5C", strokeWidth: 2, strokeDasharray: "6,4"}),
+      Plot.ruleY([Pc], {stroke: "#6B6357", strokeDasharray: "2,2"}),
+      Plot.ruleY([Pp], {stroke: "#6B6357", strokeDasharray: "2,2"}),
+      Plot.ruleX([Qt], {y1: Pp, y2: Pc, stroke: "#6B1F26", strokeWidth: 3}),
+      Plot.dot([{Q: Qstar, P: Pstar}], {x: "Q", y: "P", r: 5, fill: "#3A332D", stroke: "white", strokeWidth: 2}),
+      Plot.dot([{Q: Qt, P: Pc}, {Q: Qt, P: Pp}],
+        {x: "Q", y: "P", r: 4, fill: "#6B1F26", stroke: "white", strokeWidth: 1.5}),
+      Plot.text([{x: 2, y: Pc, label: `Pc = ${Pc.toFixed(1)}`}],
+        {x: "x", y: "y", text: "label", textAnchor: "start", dy: -8, fontSize: 12, fill: "#1C1916"}),
+      Plot.text([{x: 2, y: Pp, label: `Pp = ${Pp.toFixed(1)}`}],
+        {x: "x", y: "y", text: "label", textAnchor: "start", dy: -8, fontSize: 12, fill: "#1C1916"}),
+      Plot.text([{x: Qmax * 0.85, y: a - b * Qmax * 0.85 + 4, label: `D (|ε|=${eps.toFixed(2)})`}],
+        {x: "x", y: "y", text: "label", fill: "#2D5A8E", fontSize: 12, fontWeight: 600}),
+      Plot.text([{x: Qmax * 0.85, y: c + d * Qmax * 0.85, label: "S"}],
+        {x: "x", y: "y", text: "label", fill: "#4A6B5C", fontSize: 13, fontWeight: 600, dy: -8}),
+      Plot.text([{x: Qmax * 0.85, y: c + t + d * Qmax * 0.85, label: "S + t"}],
+        {x: "x", y: "y", text: "label", fill: "#4A6B5C", fontSize: 12, fontWeight: 600, dy: -8}),
+      Plot.text([{x: 2, y: Pmax * 0.97, label: `Mrtvi teret (DWL): ${dwl.toFixed(1)}`}],
+        {x: "x", y: "y", text: "label", textAnchor: "start",
+         fontSize: 14, fill: "#6B1F26", fontWeight: 700}),
+      Plot.text([{x: 2, y: Pmax * 0.91, label: `Porezni prihod: ${revenue.toFixed(1)}`}],
+        {x: "x", y: "y", text: "label", textAnchor: "start",
+         fontSize: 13, fill: "#1E3F63", fontWeight: 600})
+    ]
+  });
+}
+```
+
+::: {.isprobaj}
+Postavite [|ε|]{.var} nisko (oko 0,3) — potražnja je strma, količina jedva pada, crveni trokut je malen, a prihod velik. Povucite |ε| prema 2,0 i trokut naglo raste dok prihod opada. Iz toga slijedi Ramseyevo pravilo — relativno više oporezuj neelastična dobra (gorivo, duhan), a manje ona s elastičnom potražnjom.
+:::
+
+::: {.notes}
+Iskoristite graf da pokažete zašto neelastična dobra nose manji mrtvi teret po jedinici prihoda. Spustite elastičnost i pokažite da trokut gubitka ostaje malen, a prihod velik. Podignite elastičnost i pokažite obrnuto. Naglasite da Ramseyevo pravilo gleda samo učinkovitost, pa ga treba čitati uz ogradu o pravednosti, jer su neelastična dobra često nužne potrepštine. Povežite to s trošarinama na gorivo i duhan iz prethodnog slajda.
+:::
+
+::: {.notes}
+Krenite od definicije, pa razložite intuiciju preko mrtvog tereta koji su studenti već upoznali. Naglasite da elastičnost mjeri koliko potražnja bježi od poreza, pa elastična dobra brzo gube količinu i stvaraju velik gubitak. Provedite ih kroz pravilo inverzne elastičnosti na brojčanom primjeru, dvostruko neelastičnije dobro nosi dvostruko višu stopu. Primjer goriva i duhana učinit će pravilo opipljivim. Upozorite da pravilo gleda samo učinkovitost i potpuno zanemaruje pravednost, što je idealan most prema Mirrleesovu modelu na sljedećem slajdu. Najavite da će graf prikazati negativan odnos optimalne stope i elastičnosti.
+:::
+
+## Mirrleesov model
+
+[POTICAJI PROTIV REDISTRIBUCIJE]{.section-label}
+
+::: {.lead}
+Ramseyevo pravilo šuti o pravednosti. Mirrlees prebacuje fokus s oporezivanja dobara na oporezivanje rada i u središte stavlja problem informacije [@mirrlees1971].
+:::
+
+. . .
+
+- Država bi htjela oporezivati prema [sposobnosti]{.accent} pojedinca, ali sposobnost ne vidi.
+- Vidi samo [ostvareni dohodak]{.accent}, koji ovisi i o produktivnosti i o uloženom radu.
+- To je problem [asimetrične informacije]{.accent}: visoke stope na visoke dohotke mogu navesti sposobne da rade manje ili da skriju dohodak.
+
+. . .
+
+::: {.cbox .kljucno}
+[Ključno]{.cbox-label}
+Optimalna shema vaga [redistribuciju]{.accent} protiv [gubitka radnih poticaja]{.accent}. Rezultat nisu jednostavne ravne stope, nego [nelinearne granične stope]{.accent} koje se mijenjaju duž ljestvice dohotka [@saez2001].
+:::
+
+::: {.notes}
+Naglasite da je Mirrleesov pomak konceptualan, jer uvodi informacijsko ograničenje kao srce problema. Razjasnite zašto država ne može oporezivati sposobnost izravno, pa mora upotrebljavati dohodak kao nesavršeni signal. Tu nastaje napetost, jer previsoke stope guše rad, a preniske ostavljaju nejednakost netaknutom. Objasnite da otud slijede nelinearne granične stope, što je iznenađenje za studente naviknute na ravne ili jednostavno progresivne tarife. Povežite Mirrleesa s kasnijim radom Saeza koji je model preveo u empirijski upotrebljive formule. Ne ulazite u matematiku, dovoljna je intuicija vaganja redistribucije i poticaja.
+:::
+
+## Oporezivanje štednje i kapitala
+
+[OTVORENO PITANJE]{.section-label}
+
+::: {.lead}
+Štednja je samo odgođena potrošnja. Zato oporezivanje prinosa na kapital otvara spor koji još traje [@atkinson1980].
+:::
+
+. . .
+
+- Argument [protiv]{.accent}: tko štedi već je platio porez na dohodak, pa porez na prinos [dvostruko tereti]{.accent} buduću potrošnju u odnosu na sadašnju.
+- Argument [za]{.accent}: kapitalni prinosi često prate sposobnost i naslijeđeno bogatstvo, pa njihovo oporezivanje pridonosi pravednosti i prihodu.
+
+. . .
+
+::: {.cbox .kljucno}
+[Ključno]{.cbox-label}
+[Mobilnost kapitala]{.accent} dodatno snižava optimalne stope, jer porezna osnovica lako bježi preko granice. Zato su stope na kapital u praksi često niže od onih na rad, premda teorijski spor nije razriješen.
+:::
+
+::: {.notes}
+Krenite od ideje da je štednja odgođena potrošnja, jer to objašnjava argument o dvostrukom oporezivanju buduće potrošnje. Suprotstavite mu argument za oporezivanje kapitala, posebno vezu prinosa sa sposobnošću i bogatstvom. Naglasite da je ovo živo otvoreno pitanje, a ne riješena tema, pa studenti trebaju razumjeti obje strane. Dodajte mobilnost kapitala kao praktično ograničenje koje gura optimalne stope prema dolje u otvorenom gospodarstvu. Povežite ovo s ranije prikazanim međuvremenskim izborom sadašnje i buduće potrošnje. Recite da upravo zato mnogi sustavi rad oporezuju jače od kapitala.
+:::
+
+## Progresivnost i teorija žrtve
+
+[KOLIKO PROGRESIVNO]{.section-label}
+
+::: {.def}
+**Progresivnost** poreza znači da prosječna porezna stopa raste s dohotkom, pa osobe s većim dohotkom plaćaju ne samo veći iznos nego i veći udio dohotka.
+:::
+
+. . .
+
+Teorija žrtve pokušava normativno opravdati raspodjelu tereta, a postoje tri varijante.
+
+- [Jednaka apsolutna žrtva]{.accent}: svi gube isti iznos korisnosti.
+- [Jednaka proporcionalna žrtva]{.accent}: svi gube isti udio ukupne korisnosti.
+- [Jednaka granična žrtva]{.accent}: granična žrtva jednaka je za sve.
+
+. . .
+
+::: {.cbox .kljucno}
+[Ključno]{.cbox-label}
+Uz opadajuću graničnu korisnost dohotka, [jednaka granična žrtva]{.accent} vodi do progresivnog oporezivanja, jer izjednačavanje graničnih korisnosti znači jače oporezivanje viših dohodaka [@musgrave1989].
+:::
+
+. . .
+
+Optimalna razina progresivnosti ipak ostaje [kompromis]{.accent} između pravednosti i radnih poticaja [@saez2001].
+
+::: {.notes}
+Počnite jasnim razlikovanjem progresivnog, proporcionalnog i regresivnog sustava preko ponašanja prosječne stope. Provedite studente kroz tri varijante teorije žrtve i naglasite da samo jednaka granična žrtva, uz opadajuću graničnu korisnost dohotka, logično vodi do progresije. To je elegantna veza između etičkog načela i konkretne porezne strukture. Zatim spustite ton i upozorite da progresivnost nije besplatna, jer može oslabiti radne poticaje, što nas vraća na Mirrleesovu napetost s početka bloka. Zatvorite porukom da optimalna progresivnost nije apsolutna istina, nego ravnoteža učinkovitosti i pravednosti koju svako društvo postavlja drukčije.
+:::
+
+## Lafferova krivulja {.dio-slide}
+
+[GRANICA PRIHODA]{.section-label}
+
+::: {.lead}
+Sve dosad pretpostavljali smo da viša stopa donosi viši prihod. Ta veza ima granicu.
+:::
+
+::: {.def}
+**Lafferova krivulja** prikazuje porezni prihod kao funkciju porezne stope: prihod isprva [raste]{.accent}, doseže [vrh]{.accent}, a potom [pada]{.accent} jer previsoka stopa dovoljno smanji poreznu osnovicu da nadjača učinak veće stope.
+:::
+
+. . .
+
+Ključni rezultat: pri konstantnoj elastičnosti osnovice [ε]{.var} vrh je na stopi [t* = 1/(1+ε)]{.var}, pa ne postoji univerzalni Lafferov vrh [@saez2001].
+
+. . .
+
+Pogledajmo kako klizač elastičnosti pomiče taj vrh duž krivulje.
+
+## Lafferova krivulja na grafu {.smaller}
+
+[VRH PRIHODA — ISPROBAJTE]{.section-label}
+
+```{ojs}
+//| echo: false
+viewof laffer_controls = Inputs.form({
+  eps_T: Inputs.range([0.1, 2.5], {value: 0.5, step: 0.05, width: 210, label: "Elastičnost osnovice ε"}),
+  t_now: Inputs.range([0, 95],    {value: 35,  step: 1,    width: 210, label: "Porezna stopa t (%)"})
+})
+```
+
+```{ojs}
+//| echo: false
+eps_T = laffer_controls.eps_T
+```
+
+```{ojs}
+//| echo: false
+t_now = laffer_controls.t_now
+```
+
+```{ojs}
+//| echo: false
+{
+  const B0 = 100;
+  const eps = eps_T;
+
+  const tStar = 1 / (1 + eps);
+  const Rmax  = tStar * B0 * Math.pow(1 - tStar, eps);
+
+  const ts = d3.range(0, 0.99, 0.005);
+  const curve = ts.map(t => ({t: t * 100, R: t * B0 * Math.pow(1 - t, eps)}));
+
+  const tCur = t_now / 100;
+  const Rcur = tCur * B0 * Math.pow(Math.max(0, 1 - tCur), eps);
+  const onRising = tCur < tStar;
+
+  const Rceil = Math.max(Rmax * 1.10, 25);
+
+  return Plot.plot({
+    width: 840,
+    height: 340,
+    marginLeft: 60,
+    marginBottom: 44,
+    style: {fontSize: "12px", fontFamily: "Public Sans, system-ui, sans-serif", color: "#3A332D", background: "transparent"},
+    x: {label: "Porezna stopa t (%) →", domain: [0, 100], grid: false},
+    y: {label: "↑ Porezni prihodi R",   domain: [0, Rceil], grid: true},
+    marks: [
+      Plot.ruleY([0], {stroke: "#C9C3B8"}),
+      Plot.line(curve, {x: "t", y: "R", stroke: "#2D5A8E", strokeWidth: 2.5}),
+      Plot.areaY(curve, {x: "t", y: "R", fill: "#CBD8D2", fillOpacity: 0.25}),
+      Plot.ruleX([tStar * 100], {y1: 0, y2: Rmax, stroke: "#3A332D", strokeDasharray: "4,3"}),
+      Plot.dot([{t: tStar * 100, R: Rmax}],
+        {x: "t", y: "R", r: 6, fill: "#1C1916", stroke: "white", strokeWidth: 2}),
+      Plot.ruleX([tCur * 100], {y1: 0, y2: Rcur,
+        stroke: onRising ? "#4A6B5C" : "#6B1F26", strokeDasharray: "2,2"}),
+      Plot.ruleY([Rcur], {x1: 0, x2: tCur * 100,
+        stroke: onRising ? "#4A6B5C" : "#6B1F26", strokeDasharray: "2,2"}),
+      Plot.dot([{t: tCur * 100, R: Rcur}],
+        {x: "t", y: "R", r: 7,
+         fill: onRising ? "#4A6B5C" : "#6B1F26", stroke: "white", strokeWidth: 2}),
+      Plot.text([{t: tStar * 100, R: Rmax, label: `Vrh prihoda  t* = ${(tStar * 100).toFixed(0)} %`}],
+        {x: "t", y: "R", text: "label", textAnchor: "middle", dy: -14,
+         fontSize: 13, fill: "#1C1916", fontWeight: 700}),
+      Plot.text([{t: tCur * 100, R: Rcur,
+         label: onRising ? "Rastući dio" : "Padajući dio (previsoka stopa)"}],
+        {x: "t", y: "R", text: "label",
+         textAnchor: tCur * 100 > 60 ? "end" : "start",
+         dx: tCur * 100 > 60 ? -10 : 10, dy: 16,
+         fontSize: 12, fill: onRising ? "#4A6B5C" : "#6B1F26", fontWeight: 700}),
+      Plot.text([{x: 2, y: Rceil * 0.97,
+         label: `Trenutna stopa: ${t_now} %   |   Prihod: ${Rcur.toFixed(1)}   |   Vrh: ${Rmax.toFixed(1)} pri ${(tStar * 100).toFixed(0)} %`}],
+        {x: "x", y: "y", text: "label", textAnchor: "start",
+         fontSize: 13, fill: "#1C1916", fontWeight: 700}),
+      Plot.text([{x: 2, y: Rceil * 0.91,
+         label: `Iskorištenost: ${(Rcur / Rmax * 100).toFixed(0)} % od maksimalnog prihoda`}],
+        {x: "x", y: "y", text: "label", textAnchor: "start",
+         fontSize: 12, fill: "#3A332D", fontWeight: 500})
+    ]
+  });
+}
+```
+
+::: {.isprobaj}
+Pri [ε]{.var} = 0,2 vrh je na oko 83 %, pa su sve realne stope na rastućem dijelu. Pri ε = 0,5 vrh je na oko 67 %. Pri ε = 1,5 vrh pada na oko 40 %, pa visoke stope na mobilnu osnovicu mogu i smanjiti prihod. Pomičite [stopu]{.var} i pratite boju točke — zelena na rastućem, crvena na padajućem dijelu.
+:::
+
+::: {.notes}
+Pokažite da položaj vrha ovisi isključivo o elastičnosti osnovice. Mijenjajte ε i naglasite kako se vrh pomiče prema nižim stopama kad osnovica postaje elastičnija. Pomaknite trenutnu stopu preko vrha i pokažite kako točka mijenja boju iz zelene u crvenu. Inzistirajte na poruci da je pitanje je li zemlja prešla vrh empirijsko, a ne ideološko. Upozorite da ista zemlja može biti s lijeve strane vrha za jedan porez i s desne za drugi.
+:::
+
+::: {.notes}
+Naglasite da je ovo prirodni nastavak teorije optimalnog oporezivanja, ali da Lafferova krivulja sama nije njezin formalni dio nego intuitivni prikaz granice prihoda. Inzistirajte na obliku krivulje: dva dijela, rastući i padajući, i jedan vrh. Izvedite formulu t* = 1/(1+ε) iz ideje da prihod množi stopu i osnovicu koja pada s ε. Pripremite graf i recite studentima da pri demonstraciji prate boju pokretne točke, zelenu na rastućem i crvenu na padajućem dijelu. Zaključite da je položaj vrha empirijsko, a ne političko pitanje.
+:::
+
+## Laffer kao okvir, ne argument
+
+[EMPIRIJSKO, NE POLITIČKO PITANJE]{.section-label}
+
+::: {.lead}
+Položaj vrha ovisi samo o jednom broju, elastičnosti porezne osnovice [ε]{.var}.
+:::
+
+::: {.columns}
+::: {.column width="50%"}
+- [ε]{.var} = 0,5 → vrh na oko [67 %]{.accent}
+- [ε]{.var} = 1 → vrh na [50 %]{.accent}
+- [ε]{.var} = 2 → vrh na oko [33 %]{.accent}
+:::
+::: {.column width="50%"}
+Elastičnija osnovica (mobilni kapital, razvijena evazija) gura vrh prema [nižim]{.accent} stopama.
+:::
+:::
+
+. . .
+
+::: {.cbox .kljucno}
+[Ključno]{.cbox-label}
+Debata o tome je li neka zemlja prešla Lafferov vrh zapravo je debata o veličini [ε]{.var}. Lafferova krivulja zato nije politički argument, nego okvir za tu raspravu [@saez2001].
+:::
+
+::: {.notes}
+Razbijte čestu zlouporabu Lafferove krivulje kao automatskog argumenta za snižavanje poreza. Pokažite da rasprava o tome je li zemlja s desne strane vrha nije ideološka nego empirijska, jer se svodi na procjenu ε. Povežite tri brojke s tipovima osnovica: rad ima nisku elastičnost i visok vrh, mobilni kapital visoku elastičnost i nizak vrh. Naglasite da ista zemlja može biti s lijeve strane vrha za jedan porez i s desne za drugi. Time studentima dajete kriterij za prepoznavanje neutemeljenih političkih tvrdnji.
+:::
+
+## Inflacija kao porez
+
+[POREZ KOJI NITKO NIJE IZGLASAO]{.section-label}
+
+::: {.lead}
+Postoji način na koji država prihoduje a da ne donese nijedan porezni zakon.
+:::
+
+Kad središnja banka stvara novac za financiranje države, rastom cijena slabi kupovna moć novca koji građani drže. Taj gubitak vrijednosti je [inflacijski porez]{.accent}, a prihod od izdavanja novca je senioraž (*seigniorage*) [@rosen2014].
+
+. . .
+
+- [Regresivan]{.accent}: siromašnija kućanstva drže veći dio imovine u gotovini i teže se štite [@cagan1956].
+- Za Hrvatsku je danas uglavnom [teorijski]{.accent}, jer je izdavanje novca uvođenjem eura prešlo na Eurosustav.
+
+::: {.notes}
+Objasnite mehanizam u dva koraka: stvaranje novca diže cijene, a više cijene snižavaju realnu vrijednost gotovine i nominalno fiksnih dohodaka poput mirovina. Naglasite da je to porez bez zakona i bez glasanja, pa je politički privlačan zemljama sa slabom poreznom upravom. Istaknite regresivnost jer siromašniji drže relativno više gotovine. Spomenite Caganovo opažanje da senioraž nestaje kad građani počnu bježati od novca. Zatvorite napomenom da je nakon eura ta poluga za Hrvatsku prešla na Eurosustav, čime se najavljuje tema ustavne ekonomike.
+:::
+
+## Što smo naučili
+
+[SAŽETAK]{.section-label}
+
+::: {.agenda}
+1. Porez je [obvezno nepovratno davanje]{.accent} bez izravne protuusluge, razvrstano po osnovici (dohodak, potrošnja, imovina) i načinu naplate (izravni, neizravni).
+2. Dobar sustav vaga [pravednost, učinkovitost, jednostavnost i izdašnost]{.accent}, načela koja rijetko idu zajedno.
+3. Tko snosi teret ovisi o [elastičnostima]{.accent}, a sam porez stvara mrtvi teret i porezni klin.
+4. Optimalno oporezivanje ([Ramsey, Mirrlees, Laffer]{.accent}) traži najveći prihod uz najmanji gubitak.
+:::
+
+::: {.notes}
+Vodite studente kroz četiri stupa poglavlja jednom rečenicom po točki. Na prvoj točki ponovite definiciju i dvije osi klasifikacije. Na drugoj naglasite da su četiri načela u trajnoj napetosti, pa je porezna politika stalno traženje ravnoteže. Na trećoj ponovno razdvojite zakonsku obvezu od stvarnog tereta i podsjetite na porezni klin između onoga što poslodavac plaća i radnik prima. Na četvrtoj povežite tri imena s jednom idejom: prikupiti potreban prihod uz najmanju štetu. Ovo je dobar trenutak za kratku provjeru razumijevanja prije zaključka.
+:::
+
+## Nit koja povezuje
+
+[ZAKLJUČAK]{.section-label}
+
+::: {.lead}
+Porez je prihodna strana koja financira tri klasične funkcije države.
+:::
+
+::: {.cbox .kljucno}
+[Ključno]{.cbox-label}
+Svaki porez nosi trošak u [mrtvom teretu]{.accent} i [poreznom klinu]{.accent}. Zato dobar porezni sustav nije onaj koji najviše prikuplja, nego onaj koji traženi prihod prikupi uz najmanju štetu za učinkovitost i pravednost.
+:::
+
+::: {.notes}
+Povežite porez s cijelim prvim dijelom kolegija: alokacija, distribucija i stabilizacija troše, a porezi to plaćaju. Naglasite da nema poreza bez troška, jer svaki uvodi mrtvi teret i razdvaja cijenu koju plaća kupac od one koju prima prodavač. Najvažnija poruka je preokret kriterija: mjerilo nije najveći prihod nego najmanja šteta po prikupljenoj jedinici. Recite studentima da je ovo nit koja povezuje sve teme poglavlja i koja vodi prema poglavlju o poreznim sustavima u praksi. Zadržite se na ovoj rečenici jer je ona ono što trebaju zapamtiti.
+:::
+
+## Vježba s podacima
+
+[VJEŽBA]{.section-label}
+
+::: {.cbox .vjezba}
+[Vježba]{.cbox-label}
+Tržište nekog dobra na kojem država uvodi specifični porez od [t]{.var} po jedinici. Elastičnost ponude [ε_S = 0,5]{.var}. Potražnju razmatrate u dva scenarija: elastičnom ([ε_D = 2,0]{.var}) i neelastičnom ([ε_D = 0,4]{.var}).
+
+a) U kojem scenariju veći dio tereta snose potrošači, a u kojem proizvođači?
+
+b) Koristeći pravilo da se teret dijeli obrnuto proporcionalno elastičnostima, procijenite udio tereta koji u svakom scenariju pada na potrošače.
+
+c) U kojem je scenariju mrtvi teret veći i zašto?
+
+Kako se vaši zaključci slažu s Ramseyevim pravilom o oporezivanju dobara s neelastičnom potražnjom?
+:::
+
+::: {.notes}
+Pustite studente da prvo intuitivno pogode tko snosi teret prije nego što računaju. Podsjetite ih na pravilo da strana s manjom elastičnošću nosi veći dio tereta, pa u neelastičnom scenariju teret pada na potrošače. Za točku b pokažite da se udio na potrošačima dobiva omjerom ε_S prema zbroju elastičnosti. Za točku c naglasite vezu mrtvog tereta i elastičnosti: što su strane elastičnije, to je veće smanjenje količine, pa elastični scenarij ima veći mrtvi teret. Zaključno povežite s Ramseyevim pravilom da je upravo zato učinkovitije teže oporezivati neelastičnu potražnju.
+:::
+
+## Što slijedi {.dio-slide}
+
+[PUTOKAZ]{.section-label}
+
+::: {.lead}
+Time smo zatvorili klasičnu sliku: tri funkcije države i prihodnu stranu koja ih financira.
+:::
+
+::: {.agenda}
+1. [Predavanje 7]{.accent} — primjena teorije igara i strateško ponašanje.
+2. [Širi luk kolegija]{.accent} — od trećeg dijela napuštamo sliku dobrohotnog planera i pitamo tko zapravo donosi odluke i s kojim poticajima (javni izbor).
+:::
+
+::: {.notes}
+Zaokružite cijeli prvi dio kolegija kao zaokruženu cjelinu o tome što država radi i kako to plaća. Najavite da sljedeće predavanje uvodi teoriju igara kao alat za strateško ponašanje, što je most prema političkoj ekonomiji. Najvažniji zaokret koji trebate najaviti jest napuštanje pretpostavke o dobrohotnom planeru. Recite da od trećeg dijela više ne pretpostavljamo da država želi maksimizirati blagostanje, nego pitamo tko su stvarni akteri i koje poticaje imaju. Time otvarate temu javnog izbora koja preokreće perspektivu cijelog kolegija.
+:::
