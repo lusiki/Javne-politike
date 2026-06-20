@@ -63,12 +63,13 @@ format:
       <span class="vd-go">Otvori predavanje →</span>
     </a>
 
-    <div class="vd-hub-card vd-soon">
-      <span class="vd-badge">Uskoro</span>
+    <a class="vd-hub-card vd-ready" href="predavanja/05-stabilizacija.html" target="_blank" rel="noopener">
+      <span class="vd-badge vd-badge-ready">Dostupno</span>
       <span class="vd-hub-num">Predavanje 5</span>
       <span class="vd-hub-name">Stabilizacijska funkcija</span>
-      <span class="vd-hub-q">Fiskalna i monetarna politika, automatski stabilizatori, multiplikatori i politički ciklusi.</span>
-    </div>
+      <span class="vd-hub-q">Fiskalna i monetarna politika, fiskalni multiplikator, automatski stabilizatori i politički ciklusi — uz interaktivni keynesijanski križ i oportunistički ciklus.</span>
+      <span class="vd-go">Otvori predavanje →</span>
+    </a>
 
     <div class="vd-hub-card vd-soon">
       <span class="vd-badge">Uskoro</span>

@@ -17,6 +17,7 @@ project:
     - predavanja/02-vrste-dobara.html
     - predavanja/03-eksternalije.html
     - predavanja/04-blagostanje-redistribucija.html
+    - predavanja/05-stabilizacija.html
     # Slika za dijeljenje linka (OG/Twitter image: ph3.jpg) — eksplicitno
     # navedena kao resurs da se sigurno kopira u docs/ pri renderu.
     - ph3.jpg

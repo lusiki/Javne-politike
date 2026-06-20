@@ -1,0 +1,917 @@
+---
+title: "Stabilizacijska funkcija"
+subtitle: "Fiskalna politika, multiplikatori i politički ciklusi"
+author: "Milan Deskar-Škrbić · Petra Palić · Luka Šikić"
+lang: hr-HR
+bibliography: ../references.bib
+# Izvor je _-prefiksiran (predavanja/_05-...qmd) pa ga render knjige (quarto
+# render) NE dira; renderiraj ručno, a output-file daje čist naziv bez podvlake.
+output-file: 05-stabilizacija.html
+format:
+  revealjs:
+    theme: statecraft.scss
+    embed-resources: true
+    slide-number: c/t
+    show-slide-number: all
+    progress: true
+    width: 1050
+    height: 700
+    margin: 0.08
+    center: false
+    transition: fade
+    transition-speed: fast
+    background-transition: fade
+    controls: true
+    controls-layout: bottom-right
+    touch: true
+    hash: true
+    history: true
+    fig-align: center
+    link-external-newwindow: true
+    footer: "Javne politike u Hrvatskoj · Predavanje 5 · [lusiki.github.io/Javne-politike](https://lusiki.github.io/Javne-politike/)"
+---
+
+## Dobro došli natrag {.dio-slide}
+
+[PREDAVANJE 5 · STABILIZACIJSKA FUNKCIJA]{.section-label}
+
+::: {.lead}
+Prošli smo alokaciju i raspodjelu, dva pitanja o tome što se događa na pojedinim tržištima. Danas se odmičemo korak unatrag i gledamo gospodarstvo kao cjelinu.
+:::
+
+. . .
+
+Tržišta se znaju snažno prilagođavati, ali se cijelo gospodarstvo ipak može naći u dubokoj recesiji ili u pregrijavanju.
+
+. . .
+
+[Treća Musgraveova funkcija pita kako država čuva gospodarstvo od velikih oscilacija.]{.accent}
+
+::: {.notes}
+Pozdravite studente i povežite predavanje s prethodnima. Naglasite da napuštamo mikroekonomski okvir pojedinih tržišta i prelazimo na makroekonomsku razinu, gdje promatramo ukupnu proizvodnju, zaposlenost i cijene. Recite da je ovo posljednja od triju klasičnih funkcija države i da njome zatvaramo prvi dio kolegija. Najavite da ćemo od opisa nestabilnosti doći do konkretnih instrumenata, a zatim do neugodnog otkrića da i sama vlada može biti izvor nestabilnosti.
+:::
+
+## Gdje smo stali
+
+[PODSJETNIK NA PREDAVANJA 2–4]{.section-label}
+
+- [Alokacijska funkcija]{.accent}: ispravlja tržišne neuspjehe, javna dobra, eksternalije i tržišnu moć.
+- [Distribucijska funkcija]{.accent}: pita je li raspodjela dohotka i rizika društveno prihvatljiva.
+- [Stabilizacijska funkcija]{.accent}: gleda gospodarstvo kao cjelinu i ublažava ciklus.
+
+. . .
+
+Prve dvije funkcije pitaju [proizvodi li tržište pravu količinu i pravednu raspodjelu]{.accent}.
+
+. . .
+
+Treća pita nešto drugo, [proizvodi li tržište stabilnu ukupnu razinu aktivnosti]{.accent} — i odgovor je da ne uvijek [@musgrave1959].
+
+::: {.notes}
+Podsjetite na Musgraveovu podjelu na tri funkcije i smjestite današnju temu kao treću i posljednju klasičnu funkciju. Naglasite razliku u razini analize: alokacija i distribucija promatraju pojedina tržišta i pojedince, a stabilizacija ukupne agregate. Tako studenti vide da prelazimo iz mikroekonomije u makroekonomiju. Ovo je dobar trenutak da kratko najavite da se pitanja raspodjele vraćaju u predavanju o porezima, jer su porezi i instrument stabilizacije i instrument preraspodjele.
+:::
+
+## Što stabilizacija pokušava postići
+
+[CILJ NIJE UKLONITI CIKLUS]{.section-label}
+
+::: {.lead}
+Cilj stabilizacijske politike nije zaustaviti svaki gospodarski ciklus, što ionako nije moguće, nego smanjiti njegove najštetnije posljedice.
+:::
+
+. . .
+
+- Ublažiti najdublje [padove]{.accent} i spriječiti najopasnija [pregrijavanja]{.accent}
+- Očuvati visoku zaposlenost, stabilnost cijena i financijsku stabilnost
+- Sačuvati održive javne financije za buduće krize
+
+::: {.cbox .kljucno}
+[Ključno]{.cbox-label}
+Stabilizacija ne briše ciklus, nego mu smanjuje amplitudu — plići padovi, blaža pregrijavanja i kraći oporavci.
+:::
+
+::: {.notes}
+Razjasnite čestu zabludu da je cilj stabilizacijske politike potpuno glatko gospodarstvo bez oscilacija. To nije ni moguće ni poželjno. Naglasite da je realan cilj smanjiti amplitudu ciklusa i skratiti vrijeme oporavka. Povežite ciljeve s konkretnim ishodima koji studente zanimaju, prije svega nezaposlenost i cijene. Spomenite i očuvanje fiskalnog prostora kao cilj koji se često zaboravlja, a presudan je za sposobnost reakcije u sljedećoj krizi.
+:::
+
+## Agenda današnjeg predavanja
+
+[PLAN U ŠEST KORAKA]{.section-label}
+
+::: {.agenda}
+1. [Zašto tržište nije samo po sebi stabilno]{.accent} i Keynesov uvid.
+2. [Fiskalna politika]{.accent} i fiskalni multiplikator.
+3. [Automatski stabilizatori]{.accent} i diskrecijska intervencija.
+4. [Monetarna politika]{.accent}, euro i podjela rada među instrumentima.
+5. [Politički ciklusi]{.accent}: kad država sama stvara nestabilnost.
+6. [Velike krize]{.accent}, stabilnost kao javno dobro i vježba.
+:::
+
+::: {.notes}
+Provedite studente kroz strukturu predavanja u jednoj minuti. Naglasite logiku slijeda: najprije dijagnoza problema, zatim instrumenti, pa njihova ograničenja, i na kraju politička ekonomija koja pokazuje da instrument može biti zloupotrijebljen. Recite da je središnja nit cijelog predavanja pitanje vremena, jer ćemo opetovano vidjeti da ista mjera u krivom trenutku ciklusa proizvodi suprotan učinak od željenog.
+:::
+
+## Polazno pitanje {.dio-slide}
+
+[MISAONI POKUS]{.section-label}
+
+::: {.lead}
+Poduzeća očekuju slabiju prodaju pa otpuštaju radnike. Otpušteni radnici troše manje, pa prodaja doista pada. Očekivanje se samo ispunilo.
+:::
+
+. . .
+
+Treba li država čekati da se gospodarstvo samo izvuče iz te spirale — i koliko dugo društvo može podnijeti čekanje?
+
+::: {.notes}
+Neka ovo pitanje ostane otvoreno kroz prvi dio predavanja jer uvodi ključnu intuiciju o samoispunjavajućim očekivanjima. Potaknite studente da prepoznaju da nijedan pojedinačni akter ne griješi: svako poduzeće racionalno reagira na očekivanu potražnju, a ipak skup tih odluka vodi u dublji pad. Tu se rađa argument za stabilizacijsku ulogu države. Nemojte sada nuditi rješenje, nego najavite da ćemo vidjeti kako je Keynes upravo taj problem stavio u središte makroekonomije.
+:::
+
+## Zašto tržište nije samo po sebi stabilno {.dio-slide}
+
+[DIJAGNOZA]{.section-label}
+
+::: {.lead}
+Gospodarski ciklusi nastaju jer se odluke kućanstava, poduzeća, banaka i države ne usklađuju uvijek savršeno.
+:::
+
+::: {.agenda}
+1. Optimizam i nakupljanje rizika
+2. Preokret očekivanja i negativna spirala
+3. Keynes i nedovoljna agregatna potražnja
+4. Šokovi koji ne dolaze iz potražnje
+:::
+
+::: {.notes}
+Ovo je prijelazni slajd kojim otvaramo dijagnozu nestabilnosti. Naglasite da problem nije u tome da pojedinci djeluju iracionalno, nego da se njihove razborite odluke ne koordiniraju. Najavite da ćemo prvo opisati kako optimizam stvara skrivene rizike, zatim kako se proces naglo preokreće, pa kako je Keynes to formalizirao, i konačno da nestabilnost može doći i s drugih strana, a ne samo iz pada potražnje.
+:::
+
+## Negativna spirala potražnje
+
+[KOORDINACIJSKI NEUSPJEH]{.section-label}
+
+U razdobljima optimizma poduzeća pretjerano investiraju, banke previše kreditiraju, a cijene imovine rastu brže od temeljnih pokazatelja. Ispod prividne stabilnosti nakupljaju se rizici.
+
+. . .
+
+Kada se očekivanja preokrenu, proces se ubrzava sam od sebe.
+
+- Poduzeća smanjuju investicije jer očekuju slabiju potražnju
+- Banke pooštravaju kredite jer se boje gubitaka
+- Kućanstva odgađaju kupnju i povećavaju štednju
+- Nezaposlenost raste, a to dodatno obara potrošnju
+
+::: {.cbox .kljucno}
+[Ključno]{.cbox-label}
+Početni šok pokreće spiralu u kojoj pad potražnje smanjuje proizvodnju, pad proizvodnje smanjuje dohotke, a manji dohoci dodatno obaraju potražnju.
+:::
+
+::: {.notes}
+Provedite studente kroz mehaniku spirale korak po korak. Naglasite povratnu petlju: svaki krug pada potražnje stvara uvjete za sljedeći. Posebno istaknite ulogu očekivanja, jer poduzeća ne reagiraju na današnju prodaju nego na očekivanu buduću. Povežite ovo s polaznim misaonim pokusom o samoispunjavajućim očekivanjima. Naglasite da je upravo ta samopojačavajuća dinamika razlog zašto se gospodarstvo ne mora brzo vratiti u ravnotežu samo od sebe.
+:::
+
+## Keynes i nedovoljna potražnja
+
+[TEORIJSKI TEMELJ]{.section-label}
+
+::: {.def}
+Prema **Keynesovoj analizi** gospodarstvo može zapeti u stanju nedovoljne agregatne potražnje, u kojem nema dovoljno privatne potrošnje i investicija da bi se održala puna zaposlenost [@keynes1936].
+:::
+
+. . .
+
+- Čekanje da se tržište samo vrati u ravnotežu može biti društveno preskupo
+- Nezaposlenost, neiskorišteni kapaciteti i izgubljena proizvodnja mogu trajati dugo
+- Zato država može imati [aktivnu ulogu]{.accent} u stabilizaciji ukupne potražnje
+
+::: {.notes}
+Keynesov uvid predstavite kao prekretnicu u makroekonomiji. Klasična pretpostavka bila je da se gospodarstvo brzo vraća u punu zaposlenost, a Keynes je pokazao da se može trajno zaglaviti ispod nje. Naglasite normativnu posljedicu: ako prilagodba traje predugo i košta previše, postoji opravdanje za državnu intervenciju u potražnju. Upozorite studente da to ne znači da je intervencija uvijek poželjna, nego da postoji situacija u kojoj nečinjenje ima visoku cijenu. Time pripremate raspravu o instrumentima koja slijedi.
+:::
+
+## Nestabilnost ne dolazi samo iz potražnje
+
+[ČETIRI IZVORA ŠOKOVA]{.section-label}
+
+::: {.lead}
+Pad potražnje samo je jedan put u nestabilnost. Stabilizacijska funkcija obuhvaća i ostale.
+:::
+
+::: {.columns}
+::: {.column width="50%"}
+[Inflacijski pritisci]{.accent}
+
+- Potražnja raste brže od kapaciteta
+- Šok cijena energije i hrane
+:::
+::: {.column width="50%"}
+[Financijski i vanjski šokovi]{.accent}
+
+- Bankarske krize i pad kreditiranja
+- Prekid opskrbnih lanaca, pad izvozne potražnje
+:::
+:::
+
+::: {.notes}
+Naglasite studentima da stabilizacijska politika nije samo borba protiv recesija. Inflacija je jednako stabilizacijski problem, bilo da dolazi iz pregrijane potražnje bilo iz skoka cijena energije. Financijske krize posebno su opasne jer paraliziraju kreditiranje, koje je krvotok gospodarstva. Vanjski šokovi važni su za malo otvoreno gospodarstvo poput hrvatskog, jer ono ovisi o potražnji trgovinskih partnera i o uvoznim cijenama. Ova raznolikost šokova objašnjava zašto stabilizacijska politika treba više od jednog instrumenta.
+:::
+
+## Fiskalna politika kao instrument {.dio-slide}
+
+[PRVI INSTRUMENT]{.section-label}
+
+::: {.def}
+**Fiskalna politika** je upravljanje javnim prihodima, rashodima, proračunskim saldom i javnim dugom radi utjecaja na ukupnu potražnju u gospodarstvu.
+:::
+
+. . .
+
+Ako gospodarstvo može zapasti u stanje nedovoljne potražnje, državi treba instrument kojim na tu potražnju može izravno djelovati. Taj se instrument nalazi u samom proračunu.
+
+::: {.notes}
+Uvedite fiskalnu politiku kao prvi i najizravniji instrument stabilizacije. Naglasite da država preko proračuna ima tri poluge: potrošnju, poreze i transfere. Povežite to s Keynesovim uvidom s prethodnog slajda: ako privatna potražnja zakaže, država je može privremeno nadomjestiti vlastitom potrošnjom ili poticanjem privatne. Najavite da ćemo na sljedećim slajdovima vidjeti kako fiskalna politika djeluje u oba smjera ciklusa i zašto je to politički asimetrično.
+:::
+
+## Dva smjera djelovanja
+
+[PROTUCIKLIČKA LOGIKA]{.section-label}
+
+::: {.columns}
+::: {.column width="50%"}
+[U recesiji — ekspanzivno]{.accent}
+
+- Povećati javnu potrošnju i investicije
+- Povećati transfere kućanstvima
+- Smanjiti poreze, dopustiti deficit
+- Cilj: ublažiti pad privatne potražnje
+:::
+::: {.column width="50%"}
+[U pregrijavanju — restriktivno]{.accent}
+
+- Smanjivati deficit, usporavati rast rashoda
+- Odgađati manje važne projekte
+- Povećati prihode
+- Cilj: spriječiti pregrijavanje, stvoriti rezervu
+:::
+:::
+
+::: {.notes}
+Razdvojite dva smjera fiskalnog djelovanja i naglasite da je riječ o protucikličkoj logici, država radi suprotno od ciklusa. Provedite konkretne primjere, primjerice ulaganje u infrastrukturu, energetsku obnovu ili obnovu škola i bolnica u recesiji. U ekspanziji je cilj suprotan, hladiti gospodarstvo i graditi fiskalni prostor. Pripremite studente da je drugi stupac u praksi mnogo teži od prvog, što je tema sljedećeg slajda.
+:::
+
+## Asimetrija koja stvara dug
+
+[POLITIČKA EKONOMIJA FISKALNE POLITIKE]{.section-label}
+
+::: {.lead}
+Ekspanzija u krizi politički je popularna, a kontrakcija u dobrim vremenima politički teška.
+:::
+
+. . .
+
+- Lako je povećati rashode ili smanjiti poreze kada postoji kriza
+- Teško je stvarati proračunske viškove dok gospodarstvo raste
+- Posljedica: države ulaze u krize s [premalo fiskalnog prostora]{.accent}, a izlaze s [većim dugom]{.accent}
+
+::: {.notes}
+Ovo je prvi nagovještaj političke ekonomije koja će dominirati drugim dijelom predavanja. Naglasite da problem nije tehnički nego politički: protuciklička politika traži da se vlada suzdrži upravo kada bi trošenje bilo najpopularnije. Zbog te asimetrije javni dug u prosjeku raste kroz cikluse, jer se ekspanzija provede u potpunosti, a konsolidacija samo djelomično. Ovaj uvid kasnije opravdava potrebu za fiskalnim pravilima koja vladu vežu unaprijed. Pustite studente da sami povežu ovu asimetriju s rastom javnog duga u njihovim zemljama.
+:::
+
+## Fiskalni multiplikator
+
+[KOLIKO SNAŽNO?]{.section-label}
+
+::: {.def}
+**Fiskalni multiplikator** je omjer ukupne promjene BDP-a i početne promjene fiskalne varijable koja je izaziva. Ako 1 mlrd. eura veće potrošnje podiže BDP za 1,5 mlrd. eura, multiplikator je 1,5.
+:::
+
+. . .
+
+- Početni impuls ne djeluje samo jednom: dodatna potrošnja postaje [nečiji dohodak]{.accent}
+- Dio tog dohotka opet se troši, pa se učinak širi kroz gospodarstvo
+- Ovisi o graničnoj sklonosti potrošnji, otvorenosti gospodarstva i stanju monetarne politike
+
+::: {.notes}
+Multiplikator uvedite kao odgovor na pitanje koliko snažno fiskalna politika djeluje. Tvrdnja da država pomiče potražnju ostaje prazna dok ne znamo veličinu učinka. Objasnite intuiciju lanca trošenja: euro koji država potroši postaje nečiji dohodak, taj netko dio potroši, i tako dalje, pa ukupni učinak premašuje početni impuls. Naglasite tri determinante jer se vraćaju kroz cijelo predavanje, posebno graničnu sklonost potrošnji. Najavite da ćemo na grafu sami pomicati te veličine.
+:::
+
+## Keynesijanski križ na grafu {.smaller}
+
+[MULTIPLIKATOR — ISPROBAJTE]{.section-label}
+
+```{ojs}
+//| echo: false
+viewof fm_controls = Inputs.form({
+  c:  Inputs.range([0.50, 0.85], {value: 0.70, step: 0.01, width: 240, label: "Sklonost potrošnji (c)"}),
+  dG: Inputs.range([0,    60],   {value: 30,   step: 1,    width: 240, label: "Porast potrošnje (ΔG)"}),
+  dT: Inputs.range([0,    60],   {value: 30,   step: 1,    width: 240, label: "Porast poreza (ΔT)"})
+})
+```
+
+```{ojs}
+//| echo: false
+{
+  const A0 = 100, c = fm_controls.c, dG = fm_controls.dG, dT = fm_controls.dT;
+  const Ymax = 1400;
+  const Y0  = A0 / (1 - c);
+  const Y1G = (A0 + dG) / (1 - c);
+  const Y1T = (A0 - c * dT) / (1 - c);
+  const multG = 1 / (1 - c);
+  const multT = -c / (1 - c);
+  const PG = "Povećanje državne potrošnje", PT = "Povećanje poreza";
+  const grid = d3.range(0, Ymax + 10, 10);
+
+  const line45 = grid.flatMap(y => [{Y: y, AE: y, policy: PG}, {Y: y, AE: y, policy: PT}]);
+  const ae0 = grid.flatMap(y => {
+    const ae = A0 + c * y;
+    return ae > Ymax ? [] : [{Y: y, AE: ae, policy: PG}, {Y: y, AE: ae, policy: PT}];
+  });
+  const ae1G = grid.map(y => ({Y: y, AE: A0 + dG + c * y, policy: PG})).filter(p => p.AE <= Ymax);
+  const ae1T = grid.map(y => ({Y: y, AE: A0 - c * dT + c * y, policy: PT})).filter(p => p.AE <= Ymax && p.AE >= 0);
+  const dots = [
+    {Y: Y0, AE: Y0, policy: PG}, {Y: Y1G, AE: Y1G, policy: PG},
+    {Y: Y0, AE: Y0, policy: PT}, {Y: Y1T, AE: Y1T, policy: PT}
+  ];
+  const guides = [
+    {Yx: Y0, yTop: Y0, policy: PG}, {Yx: Y1G, yTop: Y1G, policy: PG},
+    {Yx: Y0, yTop: Y0, policy: PT}, {Yx: Y1T, yTop: Y1T, policy: PT}
+  ];
+  const topLabels = [
+    {Y: 30, AE: Ymax * 0.95, label: `ΔY/ΔG = ${multG.toFixed(2).replace(".", ",")}`, policy: PG},
+    {Y: 30, AE: Ymax * 0.95, label: `ΔY/ΔT = ${multT.toFixed(2).replace(".", ",")}`, policy: PT}
+  ];
+  const fortyfive = [
+    {Y: Ymax * 0.9, AE: Ymax * 0.9, label: "45°", policy: PG},
+    {Y: Ymax * 0.9, AE: Ymax * 0.9, label: "45°", policy: PT}
+  ];
+
+  return Plot.plot({
+    width: 880, height: 420, marginLeft: 56, marginRight: 22, marginBottom: 44, marginTop: 46,
+    style: {fontSize: "12px", fontFamily: "Public Sans, system-ui, sans-serif", color: "#3A332D", background: "transparent"},
+    fx: {label: null, domain: [PG, PT]},
+    x: {label: "Dohodak / proizvodnja (Y) →", domain: [0, Ymax], grid: false},
+    y: {label: "↑ Planirani izdaci (AE)", domain: [0, Ymax], grid: true},
+    marks: [
+      Plot.ruleY([0], {stroke: "#C9C3B8"}),
+      Plot.line(line45, {fx: "policy", x: "Y", y: "AE", stroke: "#3A332D", strokeWidth: 1.5}),
+      Plot.line(ae0, {fx: "policy", x: "Y", y: "AE", stroke: "#2D5A8E", strokeWidth: 2.5}),
+      Plot.line(ae1G, {fx: "policy", x: "Y", y: "AE", stroke: "#2D5A8E", strokeWidth: 2.5, strokeDasharray: "6,4"}),
+      Plot.line(ae1T, {fx: "policy", x: "Y", y: "AE", stroke: "#2D5A8E", strokeWidth: 2.5, strokeDasharray: "6,4"}),
+      Plot.ruleX(guides, {fx: "policy", x: "Yx", y1: 0, y2: "yTop", stroke: "#6B6357", strokeDasharray: "4,3"}),
+      Plot.dot(dots, {fx: "policy", x: "Y", y: "AE", r: 5, fill: "#2D5A8E", stroke: "white", strokeWidth: 2}),
+      Plot.text(fortyfive, {fx: "policy", x: "Y", y: "AE", text: "label", fill: "#3A332D", fontSize: 11, dx: 6, dy: -6}),
+      Plot.text(topLabels, {fx: "policy", x: "Y", y: "AE", text: "label", textAnchor: "start", fontSize: 13, fill: "#1C1916", fontWeight: 700})
+    ]
+  });
+}
+```
+
+::: {.isprobaj}
+Povećajte [ΔG]{.var} i u lijevoj se ploči krivulja izdataka diže, a ravnoteža klizi udesno. Povećajte [ΔT]{.var} i u desnoj ploči ide suprotno — porezni je multiplikator negativan i po iznosu manji. Podignite [c]{.var} prema 0,85 i oba multiplikatora naglo rastu.
+:::
+
+::: {.notes}
+Iskoristite graf interaktivno i tražite od studenata da predvide ishod prije nego pomaknete klizač. Najprije povećajte porast državne potrošnje i pokažite kako se krivulja planiranih izdataka u lijevoj ploči pomiče gore, a ravnoteža klizi po crti od 45°. Zatim porast poreza u desnoj ploči, gdje je učinak suprotan i slabiji, jer porez djeluje tek posredno kroz smanjenu potrošnju. Na kraju podignite graničnu sklonost potrošnji i pokažite da oba multiplikatora naglo rastu. Zaključite da snaga multiplikatora ovisi prije svega o tome koliki dio dodatnog dohotka kućanstva ponovno potroše.
+:::
+
+## Multiplikator nije konstanta
+
+[EMPIRIJA]{.section-label}
+
+::: {.lead}
+Ista mjera u recesiji i u ekspanziji proizvodi različite ishode.
+:::
+
+::: {.cbox .empirija}
+[Empirija]{.cbox-label}
+Procjene na razvijenim ekonomijama pokazuju da je multiplikator državnih izdataka u recesijama često između 1,5 i 2,0, a u ekspanzijama može pasti ispod 1,0 [@blanchard2013]. U recesiji dodatni euro mobilizira neiskorištene kapacitete, dok u punoj zaposlenosti dijelom istiskuje privatnu potražnju. Učinak je najjači kada je monetarna politika na donjoj granici kamatnih stopa.
+:::
+
+::: {.notes}
+Ovo je središnji empirijski nalaz cijelog predavanja, pa mu posvetite vremena. Naglasite da multiplikator nije fiksan broj iz udžbenika nego ovisi o stanju gospodarstva. U dubokoj recesiji s neiskorištenim kapacitetima i kućanstvima koja troše gotovo cijeli dohodak učinak je velik. U punoj zaposlenosti dodatna državna potrošnja istiskuje privatnu, pa je učinak slab. Posebno istaknite ulogu donje granice kamatnih stopa, jer tada izostaje monetarno ublažavanje koje bi inače poništilo dio fiskalnog poticaja. Upravo je to razlog zašto je fiskalna politika nakon 2008. ponovno dobila središnju ulogu.
+:::
+
+## Vrijeme je važnije od veličine
+
+[POUKA O MULTIPLIKATORU]{.section-label}
+
+::: {.lead}
+Politička pouka nije da je ekspanzija uvijek dobra, nego da je njezino vrijeme važnije od njezine veličine.
+:::
+
+. . .
+
+- Ista intervencija u dubokoj recesiji i u kasnoj ekspanziji daje [suprotne ishode]{.accent}
+- Politički proces ne razlikuje uvijek ta dva trenutka
+- To je jak argument za institucije koje odluku o djelovanju [odvajaju od izbornog kalendara]{.accent}
+
+::: {.notes}
+Ovaj slajd izvlači pouku iz prethodne empirije i gradi most prema drugom dijelu predavanja. Naglasite da je vremensko određenje mjere često važnije od njezina iznosa. Problem je što politički proces reagira na popularnost, a ne na fazu ciklusa, pa lako pogriješi u vremenu. Najavite da ćemo se ovoj temi vratiti kada budemo govorili o pravilima i neovisnim institucijama. Tako studenti vide da tehnička analiza multiplikatora vodi ravno u pitanja političke ekonomije.
+:::
+
+## Automatski stabilizatori
+
+[STABILIZACIJA BEZ ODLUKE]{.section-label}
+
+::: {.def}
+**Automatski stabilizatori** su elementi poreznog i socijalnog sustava koji bez ikakve posebne odluke ublažavaju ciklus, jer u recesiji prihodi padaju, a socijalni rashodi rastu, dok se u ekspanziji događa suprotno.
+:::
+
+. . .
+
+- U recesiji automatski padaju porezi na dohodak, doprinosi, PDV i porez na dobit
+- Istodobno rastu naknade za nezaposlene i socijalna pomoć
+- Dio pada privatnog dohotka [nadoknađuje se kroz proračun]{.accent} bez ijednog novog zakona
+
+::: {.notes}
+Naglasite najveću prednost automatskih stabilizatora, a to je da djeluju odmah i bez političke odluke. Provedite mehaniku: kada dohoci padnu, porezni prihodi padaju sami od sebe, a istodobno rastu socijalni transferi, pa kućanstva ne gube sav dohodak odjednom. Time je pad potrošnje blaži nego što bi bio bez socijalnog sustava. Istaknite da su stabilizatori dvosmjerni, jer u ekspanziji prihodi rastu, a transferi padaju, što hladi gospodarstvo. Pripremite usporedbu s diskrecijom koja slijedi, gdje je upravo izostanak kašnjenja ključna prednost.
+:::
+
+## Snaga ovisi o veličini države
+
+[INSTITUCIONALNI DIZAJN]{.section-label}
+
+::: {.lead}
+Snaga automatskih stabilizatora sustavno varira među zemljama.
+:::
+
+. . .
+
+- Veći i progresivniji porezni sustav i razvijenija socijalna zaštita znače [snažnije stabilizatore]{.accent} [@tanzi2011]
+- Takva gospodarstva pokazuju manje izražene cikličke oscilacije
+- Cijena je [više trajno porezno opterećenje]{.accent}
+
+::: {.cbox .kljucno}
+[Ključno]{.cbox-label}
+Veličina i struktura države nisu samo pitanje preraspodjele — one izravno određuju koliko je gospodarstvo automatski zaštićeno od recesija.
+:::
+
+::: {.notes}
+Ovo je važan uvid koji povezuje stabilizaciju s temom veličine države iz prethodnih predavanja. Nordijske i kontinentalne europske ekonomije s velikim i progresivnim sustavima apsorbiraju veći dio šoka automatski, pa im treba manje diskrecijske intervencije. Zemlje s manjim javnim sektorom imaju slabije stabilizatore i izraženiji ciklus. Naglasite da to nije besplatno, jer snažni stabilizatori traže trajno više porezno opterećenje. Poruka je da je institucionalni dizajn javnih financija dio same stabilizacijske politike, a ne tek njezina pozadina.
+:::
+
+## Diskrecijska fiskalna politika
+
+[KAD STABILIZATORI NISU DOVOLJNI]{.section-label}
+
+::: {.def}
+**Diskrecijska fiskalna politika** su posebne mjere koje vlada svjesno donosi kao odgovor na konkretnu situaciju, poput privremenih smanjenja poreza, jednokratnih pomoći, javnih investicija ili programa zapošljavanja.
+:::
+
+. . .
+
+Diskrecija je važna u velikim krizama, kada automatski stabilizatori nisu dovoljni — spašavanje banaka, subvencije plaća u pandemiji, pomoć u energetskoj krizi.
+
+::: {.notes}
+Diskrecijsku politiku uvedite kao nadopunu automatskim stabilizatorima za velike krize. Naglasite ključnu razliku: automatski stabilizatori djeluju tiho i odmah, dok diskrecija traži da netko prepozna situaciju, osmisli odgovor i progura ga kroz politički proces. Navedite konkretne primjere velikih kriza u kojima je diskrecija bila nužna, posebno financijsku krizu i pandemiju, gdje standardni mehanizmi nisu mogli odgovoriti na razmjer šoka. Pripremite studente da diskrecija ima ozbiljna ograničenja, koja razlažemo na sljedećem slajdu.
+:::
+
+## Četiri ograničenja diskrecije
+
+[ZAŠTO DISKRECIJA NIJE DOVOLJNA]{.section-label}
+
+::: {.columns}
+::: {.column width="50%"}
+[Vremensko kašnjenje]{.accent}
+
+- Treba vremena da se kriza prepozna, mjera osmisli i provede
+- Ako stigne prekasno, pojačava pregrijavanje
+
+[Problem ciljanja]{.accent}
+
+- Mjere preširoke ili preuske
+:::
+::: {.column width="50%"}
+[Fiskalni trošak]{.accent}
+
+- Privremene mjere povećavaju deficit i dug
+
+[Politička ekonomija]{.accent}
+
+- Mjere uvedene kao privremene [postaju trajne]{.accent} jer korisnici razviju interes da se nastave
+:::
+:::
+
+::: {.notes}
+Provedite studente kroz sva četiri ograničenja jer zajedno objašnjavaju zašto se ekonomisti oslanjaju na automatske stabilizatore kad god je to moguće. Kašnjenje je najvažnije i njime ćemo se baviti detaljnije. Problem ciljanja postavlja dilemu između široke mjere koja pomaže i onima kojima nije potrebna i uske koja propušta najpogođenije. Fiskalni trošak podsjeća da svaka mjera ostavlja trag u dugu. Politička ekonomija upozorava na zarobljavanje, jer privremena mjera stvara skupinu korisnika koja se opire ukidanju. Zaključite da diskrecija mora biti pravodobna, privremena, ciljana i razmjerna.
+:::
+
+## Unutarnji i vanjski rok
+
+[ANATOMIJA KAŠNJENJA]{.section-label}
+
+::: {.columns}
+::: {.column width="50%"}
+[Unutarnji rok]{.accent}
+
+Vrijeme da se šok prepozna u podacima i da se o mjeri politički odluči.
+:::
+::: {.column width="50%"}
+[Vanjski rok]{.accent}
+
+Vrijeme dok usvojena mjera doista počne djelovati na potražnju i zaposlenost.
+:::
+:::
+
+. . .
+
+Podaci o ciklusu kasne, a postupak je spor, pa poticaj skrojen prema današnjem dnu recesije može stupiti na snagu tek kada je oporavak već počeo [@friedman1953].
+
+::: {.cbox .kljucno}
+[Ključno]{.cbox-label}
+Unutarnji rok diskrecije nikada nije nula — zato automatski stabilizatori, koji djeluju bez ijedne nove odluke, imaju strukturnu prednost.
+:::
+
+::: {.notes}
+Friedmanovo razlikovanje unutarnjeg i vanjskog roka temeljni je argument protiv pretjeranog oslanjanja na finu diskrecijsku regulaciju ciklusa. Objasnite da se kašnjenje sastoji od dva dijela, prepoznavanja i odlučivanja s jedne strane te provedbe i učinka s druge. Zbog tih rokova mjera može djelovati procikličkim, dakle pojačati ciklus umjesto da ga ublaži, ako stupi na snagu kada se gospodarstvo već oporavlja. Povežite ovo s prednošću automatskih stabilizatora, čiji je unutarnji rok po definiciji nula. Tako studenti razumiju zašto ekonomisti općenito preferiraju ugrađene mehanizme pred čestom diskrecijom.
+:::
+
+## Monetarna politika i fiskalno-monetarni splet {.dio-slide}
+
+[DRUGI INSTRUMENT]{.section-label}
+
+::: {.lead}
+Fiskalna politika nije jedini instrument. Uz nju stoji monetarna, a njihova podjela rada određuje tko nosi glavni teret u kojem trenutku.
+:::
+
+. . .
+
+Snižavajući referentnu kamatnu stopu, središnja banka snižava troškove zaduživanja, potiče investicije i kupnju trajnih dobara, a u otvorenom gospodarstvu slabi tečaj i jača izvoz.
+
+::: {.notes}
+Uvedite monetarnu politiku kao drugi veliki instrument stabilizacije. Objasnite transmisijski lanac, kako jedna kamatna stopa kroz nekoliko kanala mijenja ukupnu potražnju: kanal investicija, kanal trajne potrošnje i u otvorenom gospodarstvu tečajni kanal. Naglasite da o djelotvornosti tog lanca ovisi koliko je monetarna politika moćna u danom trenutku. Najavite da ćemo vidjeti situaciju u kojoj taj lanac zakaže, a fiskalna politika preuzima primarnu ulogu.
+:::
+
+## Kad monetarna politika dosegne granicu
+
+[DONJA GRANICA KAMATNIH STOPA]{.section-label}
+
+::: {.lead}
+Klasična podjela rada daje glavnu ulogu monetarnoj politici, a fiskalnoj samo dopunsku. No ta podjela ima jasnu iznimku.
+:::
+
+. . .
+
+- Kada stope dosegnu [donju nominalnu granicu]{.accent}, središnja banka ne može dalje stimulirati gospodarstvo
+- U tom režimu [fiskalna politika preuzima primarnu ulogu]{.accent}, jer djeluje izravno na potražnju [@blanchard2017]
+- Njezin multiplikator tada postaje znatno veći nego inače
+
+::: {.cbox .kljucno}
+[Ključno]{.cbox-label}
+Podjela rada između monetarne i fiskalne politike nije fiksna — ovisi o makroekonomskom režimu, pa odgovorna politika prepoznaje koji režim trenutno vrijedi.
+:::
+
+::: {.notes}
+Ovo je važna kvalifikacija klasične postavke da monetarna politika nosi glavni teret stabilizacije. Objasnite donju granicu kamatnih stopa: kada su stope već blizu nule, daljnje smanjenje nije moguće ili nema učinka, pa monetarni instrument ostaje bez snage. Tada fiskalna politika preuzima primat jer djeluje izravno, a njezin multiplikator raste upravo zato što izostaje monetarno poništavanje. Naglasite glavnu pouku, da podjela rada ovisi o režimu, pa pravilo svaka politika svojim alatom ne vrijedi uvijek. Povežite ovo s iskustvom dvaju desetljeća niskih kamatnih stopa nakon 2008.
+:::
+
+## Optimalna valutna područja i euro
+
+[STABILIZACIJA U MONETARNOJ UNIJI]{.section-label}
+
+::: {.def}
+Teorija **optimalnih valutnih područja** pita pod kojim je uvjetima skupini zemalja isplativo odreći se vlastite monetarne politike i prijeći na zajedničku valutu [@mundell1961].
+:::
+
+. . .
+
+- Korist: niža neizvjesnost tečaja i niži troškovi razmjene
+- Trošak: gubitak monetarnog instrumenta za [asimetrične šokove]{.accent} koji ne pogađaju sve članice jednako
+- Ublažavaju ga slična gospodarstva, pokretljiv rad i zajednički proračun [@kenen1969]
+
+::: {.notes}
+Mundellovu teoriju predstavite kao okvir za procjenu isplativosti zajedničke valute. Glavna napetost je između koristi od ukidanja tečajnog rizika i troška gubitka vlastite monetarne politike. Ključan je pojam asimetričnog šoka, dakle šoka koji pogađa jednu članicu, a ne ostale, jer tada zajednička monetarna politika ne pomaže. Naglasite tri ublaživača: sličnost gospodarstava, pokretljivost rada preko granica i zajednički proračun koji prelijeva sredstva prema pogođenim regijama. Time pripremate konkretan slučaj Hrvatske, koja je upravo prošla taj prijelaz.
+:::
+
+## Za Hrvatsku to nije teorija
+
+[EURO OD 2023.]{.section-label}
+
+::: {.lead}
+Hrvatska je 2023. uvela euro i monetarnu politiku prenijela na Europsku središnju banku.
+:::
+
+. . .
+
+- Referentnu stopu za europodručje postavlja Frankfurt prema [cijelom području]{.accent}, ne prema hrvatskom ciklusu
+- Pogodi li Hrvatsku [asimetrični šok]{.accent}, zajednička monetarna politika neće reagirati na njega
+- Glavni instrument stabilizacije koji preostaje postaje [fiskalna politika]{.accent} [@ecb2025]
+
+::: {.cbox .kljucno}
+[Ključno]{.cbox-label}
+Uvođenjem eura raste ulog dobrih fiskalnih pravila i fiskalnog prostora, jer fiskalna politika sada mora nositi teret koji je prije dijelila s nacionalnom monetarnom politikom.
+:::
+
+::: {.notes}
+Ovaj slajd konkretizira teoriju optimalnih valutnih područja na hrvatskom slučaju. Naglasite da Hrvatska više nema vlastitu kamatnu stopu, jer je postavlja Vijeće guvernera ESB-a prema uvjetima cijelog europodručja. Ako Hrvatsku pogodi šok koji ne osjeća ostatak područja, zajednička monetarna politika neće reagirati na njega, pa glavni instrument prilagodbe postaje fiskalna politika. Iz toga slijedi važna pouka, da je fiskalni prostor sada vredniji nego prije, jer fiskalna politika mora nositi veći dio tereta. Najavite da ćemo tu temu razviti u poglavlju o ustavnoj ekonomici, gdje govorimo o fiskalnim pravilima.
+:::
+
+## Kad država sama stvara nestabilnost {.dio-slide}
+
+[POLITIČKI CIKLUSI]{.section-label}
+
+::: {.lead}
+Dosad smo pretpostavljali dobrohotnog planera koji instrumente koristi samo da gospodarstvo približi potencijalu. Teorija javnog izbora taj prikaz dopunjuje.
+:::
+
+. . .
+
+Donositelji odluka nisu lišeni vlastitih interesa — suočavaju se s izbornim kalendarima i potrebom za podrškom, pa i sama vlada može postati [izvor nestabilnosti]{.accent} koju bi trebala suzbijati [@buchanan1962].
+
+::: {.notes}
+Ovo je prijelaz s normativne slike na pozitivnu analizu ponašanja vlade. Naglasite da napuštamo pretpostavku dobrohotnog planera i uvodimo političare kao aktere s vlastitim interesima, prije svega reizborom. Povežite to s teorijom javnog izbora koju ćemo sustavno razvijati u drugom dijelu kolegija. Glavna poruka je provokativna, da vlada koja bi trebala smirivati ciklus može ga i sama proizvoditi kada stabilizaciju podredi izbornom kalendaru. Najavite da ćemo proći četiri modela koji tu ideju formaliziraju.
+:::
+
+## Oportunistički ciklus (Nordhaus)
+
+[PRVA GENERACIJA MODELA]{.section-label}
+
+::: {.lead}
+Političari bez ideologije, motivirani samo reizborom, mogu sami stvoriti ciklus oko izbornog kalendara [@nordhaus1975].
+:::
+
+. . .
+
+Model počiva na tri pretpostavke.
+
+- Birači su [kratkovidni]{.accent} i ocjenjuju uglavnom posljednju godinu mandata
+- Inflacijska očekivanja formiraju se [adaptivno]{.accent}, prema prošloj inflaciji
+- U kratkom roku postoji eksploatabilna Phillipsova krivulja
+
+::: {.notes}
+Nordhausov model predstavite kao prvi formalni prikaz političkog ciklusa. Naglasite tri ključne pretpostavke jer o njima sve ovisi: kratkovidnost birača, adaptivna očekivanja i kratkoročna razmjena između nezaposlenosti i inflacije. Objasnite dinamiku kroz mandat: na početku, dok su izbori daleko, vlada provodi nepopularnu kontrakciju i obara inflaciju, a kako se izbori približavaju, prelazi u ekspanziju koja stvara predizborni bum. Nakon pobjede dolazi račun, jer se očekivanja prilagode i slijedi nova kontrakcija. Najavite da ćemo taj obrazac vidjeti na grafu.
+:::
+
+## Oportunistički ciklus na grafu {.smaller}
+
+[NORDHAUS — ISPROBAJTE]{.section-label}
+
+```{ojs}
+//| echo: false
+viewof cikl_controls = Inputs.form({
+  A:  Inputs.range([0, 3], {value: 1.5, step: 0.1, width: 260, label: "Snaga predizborne manipulacije (A)"}),
+  un: Inputs.range([3, 8], {value: 5,   step: 0.5, width: 260, label: "Prirodna stopa nezaposlenosti (%)"})
+})
+```
+
+```{ojs}
+//| echo: false
+{
+  const A = cikl_controls.A, un = cikl_controls.un;
+  const frac = (t) => t - Math.floor(t);
+  const u = (t) => un + A * Math.cos(Math.PI * frac(t));
+  const ts = d3.range(0, 2.001, 0.01);
+  const path = ts.map(t => ({t, u: Math.abs(frac(t)) < 1e-9 && t > 0 ? NaN : u(t)}));
+
+  return Plot.plot({
+    width: 820, height: 400, marginLeft: 54, marginTop: 36, marginBottom: 46, marginRight: 20,
+    style: {fontSize: "12px", fontFamily: "Public Sans, system-ui, sans-serif", color: "#3A332D", background: "transparent"},
+    x: {label: "Vrijeme (u mandatima) →", domain: [0, 2]},
+    y: {label: "↑ Nezaposlenost (%)", domain: [Math.max(0, un - A - 1), un + A + 1], grid: true},
+    marks: [
+      Plot.ruleY([un], {stroke: "#6B6357", strokeDasharray: "4,3"}),
+      Plot.ruleX([1, 2], {stroke: "#6B1F26", strokeWidth: 1}),
+      Plot.line(path, {x: "t", y: "u", stroke: "#2D5A8E", strokeWidth: 2.5}),
+      Plot.text([{t: 1, y: un + A + 0.7}], {x: "t", y: "y", text: ["izbori"], fill: "#6B1F26", fontSize: 11, fontWeight: 700}),
+      Plot.text([{t: 2, y: un + A + 0.7}], {x: "t", y: "y", text: ["izbori"], fill: "#6B1F26", fontSize: 11, fontWeight: 700}),
+      Plot.text([{t: 0.02, y: un}], {x: "t", y: "y", text: ["prirodna stopa"], textAnchor: "start", dy: -6, fill: "#6B6357", fontSize: 10})
+    ]
+  });
+}
+```
+
+::: {.isprobaj}
+Pojačajte [snagu manipulacije]{.accent} i predizborni pad nezaposlenosti se produbljuje, a postizborni skok postaje oštriji. Spustite je prema nuli i krivulja se izravna na prirodnoj stopi — vlada koja ne trguje glasovima ne stvara ciklus.
+:::
+
+::: {.notes}
+Iskoristite graf da studenti vide vezu između izbornog kalendara i nezaposlenosti. Pokažite kako nezaposlenost pada prema dnu neposredno prije svakih izbora, označenih okomitim crvenim crtama, a naglo se vraća nakon njih kada se očekivanja prilagode. Pojačajte snagu manipulacije i istaknite da pad i skok postaju izraženiji. Zatim spustite snagu prema nuli i pokažite da ciklus nestaje, jer vlada koja ne manipulira gospodarstvom prema izborima ostavlja nezaposlenost na prirodnoj razini. Promjenom prirodne stope pokažite da se cijeli obrazac samo pomiče gore ili dolje, a oblik vezan uz izbore ostaje isti.
+:::
+
+## Stranački ciklus (Hibbs)
+
+[IDEOLOGIJA UMJESTO KALENDARA]{.section-label}
+
+::: {.lead}
+Fluktuacije ne diktira blizina izbora, nego sama smjena vlasti [@hibbs1977].
+:::
+
+::: {.columns}
+::: {.column width="50%"}
+[Lijeva vlada]{.accent}
+
+- Zastupa radnike i niže dohotke
+- Najviše trpi u nezaposlenosti
+- Prednost zaposlenosti uz toleranciju inflacije
+:::
+::: {.column width="50%"}
+[Desna vlada]{.accent}
+
+- Zastupa vlasnike kapitala i fiksne prihode
+- Inflacija im obezvrjeđuje imovinu
+- Prednost stabilnosti cijena uz toleranciju nezaposlenosti
+:::
+:::
+
+::: {.notes}
+Hibbsov model suprotstavite Nordhausovu. Dok kod Nordhausa političari nemaju ideologiju i motivirani su samo reizborom, kod Hibbsa stranke imaju trajne ciljeve vezane uz interese svoje baze. Objasnite ekonomsku logiku, zašto lijeva baza više brine o nezaposlenosti, a desna o inflaciji, kroz njihov različit odnos prema radu i imovini. Naglasite da su zbog pretpostavke o trajno eksploatabilnoj Phillipsovoj krivulji razlike između lijeve i desne vladavine postojane, a ne privremene. Fluktuacije tako ovise o smjeni vlasti i o dubini ideološkog jaza među suparnicima.
+:::
+
+## Racionalni ciklusi
+
+[DRUGA GENERACIJA MODELA]{.section-label}
+
+::: {.lead}
+Ako bi isti trik varao birače iz ciklusa u ciklus, oni bi ga s vremenom prozreli. Druga generacija zato pretpostavlja racionalna očekivanja [@alesina1989].
+:::
+
+::: {.columns}
+::: {.column width="50%"}
+[Racionalni oportunistički]{.accent}
+
+- Signalna igra o [kompetenciji]{.accent} vlade
+- Predizborni zaokret strukture proračuna prema vidljivoj potrošnji
+- Učinak je privremeno iskrivljenje, ne trajni rast [@rogoff1990]
+:::
+::: {.column width="50%"}
+[Racionalni stranački]{.accent}
+
+- Ugovori o plaćama prije izbornog ishoda
+- Neizvjesnost pobjednika stvara inflacijsko [iznenađenje]{.accent}
+- Bum ili recesija samo na početku mandata [@alesina1987]
+:::
+:::
+
+::: {.notes}
+Drugu generaciju modela predstavite kao odgovor na metodološku slabost prve, koja je tražila trajno naivne birače. Ako su birači racionalni, ne mogu ih beskonačno varati istim trikom. Rogoffov model premješta pozornost s Phillipsove krivulje na kompetenciju vlade, pa predizborno trošenje postaje signal sposobnosti, a ciklus se svodi na privremeno iskrivljenje strukture proračuna. Alesinin model izvodi fluktuacije iz nominalnih rigidnosti, jer se ugovori o plaćama sklapaju prije nego se sazna pobjednik, pa izborni ishod stvara inflacijsko iznenađenje. U oba slučaja učinci su privremeni, što je ključna razlika u odnosu na Hibbsa.
+:::
+
+## Četiri modela na jednom mjestu {.smaller}
+
+[PREGLED]{.section-label}
+
+| Dimenzija | Oportunistički (Nordhaus) | Stranački (Hibbs) | Racionalni opt. (Rogoff) | Racionalni str. (Alesina) |
+|---|---|---|---|---|
+| Motiv aktera | samo reizbor | ideološki ciljevi baze | reizbor uz signal | ideološki ciljevi baze |
+| Očekivanja | adaptivna, unazad | adaptivna, unazad | racionalna, unaprijed | racionalna, unaprijed |
+| Izvor fluktuacije | nezaposlenost prije izbora | smjena stranke | struktura proračuna | postizborno iznenađenje |
+| Trajanje učinaka | ciklus kroz mandat | trajne razlike | privremeno iskrivljenje | prijelazni učinci |
+
+::: {.izvor}
+Izrada autora prema Nordhaus (1975), Hibbs (1977), Rogoff (1990) i Alesina (1987).
+:::
+
+::: {.notes}
+Iskoristite tablicu za sintezu cijele cjeline o ciklusima. Provedite studente kroz dvije velike osi razvoja teorije: pomak od naivnih prema racionalnim biračima i pomak od trajnih prema privremenim učincima. Naglasite da modeli nisu konkurenti koji se isključuju, nego slojevi koji opisuju različite mehanizme. Pitajte studente koji im se model čini najuvjerljivijim za zemlje koje poznaju i zašto. Zaključite da svi modeli vode istoj pouci, da stabilizacijska uloga države ovisi ne samo o instrumentima nego i o pravilima koja njihovu uporabu odvajaju od izbornog kalendara.
+:::
+
+## Pravila protiv ciklusa
+
+[USTAVNI ODGOVOR]{.section-label}
+
+::: {.lead}
+Makropolitički ciklusi su oblik državnog neuspjeha koji se ne liječi osobnom čestitošću dužnosnika, nego pravilima zadanim unaprijed [@kydland1977].
+:::
+
+::: {.columns}
+::: {.column width="50%"}
+[Numerička fiskalna pravila]{.accent}
+
+Ograničavaju deficit i dug, primjerice švicarska kočnica koja rashod veže uz prihod i fazu ciklusa.
+
+[Neovisna fiskalna vijeća]{.accent}
+
+Nadziru prognoze i upozoravaju na predizborna iskrivljenja.
+:::
+::: {.column width="50%"}
+[Neovisna središnja banka]{.accent}
+
+Uklanja monetarni dio ciklusa jer vjerodostojno odbija predizborni pritisak na ekspanziju [@rogoff1985].
+:::
+:::
+
+::: {.notes}
+Ovaj slajd uvodi ustavnu logiku odgovora na cikluse, koju ćemo razviti u poglavlju o konstitucionalnoj ekonomici. Naglasite zajednički princip sva tri instrumenta, a to je vezivanje vlastitih ruku unaprijed, prema logici vremenske nedosljednosti. Politika optimalna u trenutku najave prestaje biti optimalna kad dođe vrijeme provedbe, pa vladi trebaju obvezujuća pravila. Objasnite švicarsku kočnicu zaduživanja kao primjer pravila osjetljivog na ciklus, koje u recesiji dopušta deficit, a u ekspanziji traži suficit. Naglasite da neovisna središnja banka uklanja monetarni dio ciklusa, što je jedan od glavnih razloga za njezinu neovisnost.
+:::
+
+## Velike krize i trajni rast države {.dio-slide}
+
+[UČINAK PREMJEŠTANJA I ZUPČANIKA]{.section-label}
+
+::: {.lead}
+Velike krize često trajno mijenjaju veličinu i ulogu države.
+:::
+
+. . .
+
+- [Učinak premještanja]{.accent}: javni rashodi u krizi naglo rastu, ali se nakon nje ne vraćaju na prethodnu razinu [@peacock1961]
+- [Učinak zupčanika]{.accent}: uloga države poraste u krizi, a poslije se smanji samo djelomično [@higgs1987]
+- Mjere uvedene kao privremene mogu postati trajne
+
+::: {.notes}
+Ova cjelina pokazuje da stabilizacija ima dugoročne posljedice koje nadilaze pojedinu krizu. Objasnite učinak premještanja Peacocka i Wisemana, kako kriza pomiče društveno prihvatljivu razinu oporezivanja i potrošnje naviše, jer građani u krizi prihvaćaju veći teret. Higgsov učinak zupčanika dodaje da se nakon krize država smanji samo djelomično, poput zupčanika koji se pomiče u jednom smjeru. Naglasite da to nije nužno loše ako su nove funkcije korisne i održive, ali postaje problem ako privremene mjere ostanu bez jasnog opravdanja i evaluacije. Tako stabilizacijska politika oblikuje dugoročnu veličinu države.
+:::
+
+## Histereza i oprez pred štednjom
+
+[NAPETOST BEZ JEDNOSTAVNOG RJEŠENJA]{.section-label}
+
+::: {.def}
+**Histereza** je pojava da privremeni šok ostavlja trajne posljedice. Dugo nezaposleni radnici gube vještine, dio izgubljene proizvodnje nikad se ne nadoknadi, pa se privremeno odstupanje pretvara u trajno pomicanje trenda.
+:::
+
+. . .
+
+- Zbog histereze prebrza konsolidacija u krivom trenutku može produbiti pad i odgoditi oporavak [@blyth2013]
+- No visok i rastući dug povećava ranjivost i može izazvati nagli gubitak povjerenja tržišta [@reinhart2009]
+- Pogreška u [vremenu]{.accent} može biti skuplja od pogreške u smjeru
+
+::: {.notes}
+Histereza je ključan pojam koji objašnjava zašto propust da se djeluje u dubokoj recesiji nije besplatan. Objasnite mehanizam, kako dugotrajna nezaposlenost trajno smanjuje potencijalnu proizvodnju jer radnici gube vještine, a mladi teže ulaze na tržište. Suprotstavite dva rizika, jer kritika prebrze štednje upozorava na produbljivanje pada, dok kritika neograničenog deficita upozorava na gubitak povjerenja tržišta. Naglasite da odgovorna politika ne bira između discipline i poticaja jednom zauvijek, nego prepoznaje da je ispravan trenutak za svaki različit. Tako se vraćamo na središnju nit predavanja, da je vrijeme presudno.
+:::
+
+## Stabilnost kao javno dobro
+
+[ZAŠTO BAŠ DRŽAVA]{.section-label}
+
+::: {.def}
+Makroekonomska **stabilnost** ima svojstva javnog dobra. Neisključiva je, jer nitko ne može biti isključen iz njezinih koristi, i u dobroj mjeri nekonkurentna, jer korist jednoga ne umanjuje stabilnost za ostale.
+:::
+
+. . .
+
+- Kada je gospodarstvo stabilno, koristi imaju gotovo svi
+- Kada postane nestabilno, troškovi se šire kroz cijelo društvo
+- Kao i kod svakog javnog dobra, [tržište je samo neće proizvesti u dovoljnoj mjeri]{.accent}
+
+::: {.cbox .kljucno}
+[Ključno]{.cbox-label}
+Time se zatvara luk triju funkcija. Alokacija pita kako ispraviti tržišne neuspjehe, distribucija kako raspodijeliti dohodak i rizike, a stabilizacija kako očuvati gospodarstvo od velikih oscilacija.
+:::
+
+::: {.notes}
+Ovaj slajd vraća stabilizaciju u okvir javnih dobara iz Predavanja 2 i tako zatvara cijeli prvi dio kolegija. Naglasite da stabilnost ima dva ključna svojstva javnog dobra, neisključivost i nekonkurentnost, pa je tržište samo neće proizvesti u dovoljnoj mjeri. Provedite studente kroz koristi stabilnosti, kako radnici lakše zadržavaju posao, poduzeća lakše planiraju, a povjerenje raste. Zaokružite luk triju Musgraveovih funkcija, pokazujući da svaka odgovara na drukčije pitanje, ali da sve tri opravdavaju ulogu države u gospodarstvu. Time pripremate prijelaz na prihodnu stranu javnih financija.
+:::
+
+## Što smo naučili
+
+[SAŽETAK]{.section-label}
+
+::: {.agenda}
+1. [Tržište nije samo po sebi stabilno.]{.accent} Koordinacijski neuspjeh i nedovoljna potražnja mogu gospodarstvo zaglaviti ispod pune zaposlenosti [@keynes1936].
+2. [Snaga fiskalne politike ovisi o multiplikatoru]{.accent}, koji je veći u recesiji nego u ekspanziji — vrijeme je važnije od veličine.
+3. [Automatski stabilizatori djeluju brzo i bez odluke]{.accent}, dok diskrecija trpi unutarnji i vanjski rok.
+4. [Vlada može i sama stvarati ciklus]{.accent} kada stabilizaciju podredi izborima, pa joj kao protuteža služe pravila i neovisne institucije.
+:::
+
+::: {.notes}
+Ovo je rekapitulacija cijelog predavanja, pa svaku točku poveži s ranijim slajdom. Prva točka vraća na Keynesa i negativnu spiralu, druga na keynesijanski križ i empiriju multiplikatora, treća na automatske stabilizatore i Friedmanove rokove, četvrta na cikluse i ustavna pravila. Provjeri razumiju li studenti razliku između tržišnog mehanizma i političkog mehanizma nestabilnosti. Zadrži tempo i ne ulazi ponovno u izvode, samo podsjeti na zaključke prije završne vježbe.
+:::
+
+## Nit koja povezuje
+
+[ZAKLJUČAK]{.section-label}
+
+::: {.cbox .kljucno}
+[Ključno]{.cbox-label}
+Stabilizacijska politika mora biti dovoljno snažna da odgovori na krizu, ali dovoljno disciplinirana da ne pretvori svaku krizu u trajno širenje rashoda i duga.
+
+Ista politika može biti i lijek i bolest, ovisno o vremenu i dizajnu. Zato dobra stabilizacijska politika nije samo pitanje koliko djelovati, nego prije svega kada djelovati i kada se povući.
+:::
+
+::: {.notes}
+Ovo je intelektualno težište zaključka, pa uspori. Glavna poruka je dvostruka, da je stabilizacija nužna jer tržišta proizvode duboke recesije i krize, ali i rizična jer mjere mogu stići prekasno, postati trajne ili stvoriti moralni hazard. Naglasi da je središnja vještina stabilizacijske politike osjećaj za vrijeme, jer ista mjera u krivom trenutku ciklusa može produbiti baš onu nestabilnost koju pokušava ukloniti. Zaokruži luk od alokacije i distribucije prema stabilizaciji, i najavi da time zatvaramo klasičnu sliku triju funkcija, a slijedi prihodna strana, dakle porezi.
+:::
+
+## Vježba s podacima
+
+[VJEŽBA]{.section-label}
+
+::: {.cbox .vjezba}
+[Vježba]{.cbox-label}
+Zatvoreno gospodarstvo bez poreza, granična sklonost potrošnji [c = 0,75]{.var}.
+
+a. Izračunajte jednostavni multiplikator državne potrošnje prema izrazu [1/(1−c)]{.var}.
+b. Za koliko raste ravnotežni BDP ako država trajno poveća potrošnju za [4 mlrd. eura]{.accent}?
+c. U dubokoj recesiji stvarni je multiplikator bliži 1,8. Koje pretpostavke jednostavnog modela tada ne vrijede?
+:::
+
+::: {.notes}
+Pusti studente da prvo sami izračunaju, pa tek onda otkrij rezultate. Pod a, multiplikator je 1 kroz 1 minus 0,75, dakle 4. Pod b, ravnotežni BDP raste za 4 puta 4 milijarde, dakle 16 milijardi eura. Pod c, ključna je pouka da se teorijska vrijednost 4 i empirijska procjena 1,8 razlikuju jer jednostavni model zanemaruje poreze, uvoz i reakciju monetarne politike, koji svi smanjuju stvarni multiplikator. Iskoristi treću točku za raspravu o tome zašto su udžbenički multiplikatori obično veći od onih procijenjenih na podacima. Poveži odgovore s ranijom empirijom o multiplikatoru u recesiji i ekspanziji.
+:::
+
+## Što slijedi
+
+[PUTOKAZ]{.section-label}
+
+::: {.lead}
+Time smo zatvorili tri klasične funkcije države — alokaciju, distribuciju i stabilizaciju. Ostaje prihodna strana kojom se sve to financira.
+:::
+
+::: {.agenda}
+1. [Predavanje 6 — Manjkavosti tržišta i teorija oporezivanja.]{.accent} Načela pravednog i učinkovitog oporezivanja, mrtvi teret poreza i porezna incidencija.
+2. [Dalje u kolegiju.]{.accent} Tko sve te odluke zapravo donosi i s kojim poticajima — otvaramo dio knjige o javnom izboru.
+:::
+
+::: {.notes}
+Zatvori predavanje kratkim pogledom unaprijed. Naglasi da smo dovršili klasičnu sliku triju funkcija države, ali da joj nedostaje prihodna strana, jer sve te politike treba financirati. Najavi da sljedeće predavanje uvodi teoriju oporezivanja, gdje ćemo vidjeti zašto svaki porez nosi trošak u obliku mrtvog tereta i tko ga zapravo snosi. Spomeni i širi luk kolegija, da od trećeg dijela napuštamo sliku dobrohotnog planera i sustavno se bavimo time tko donosi odluke i s kojim poticajima, što je tema javnog izbora. Potakni studente da prije idućeg predavanja ponove pojam granične sklonosti potrošnji i logiku multiplikatora.
+:::
