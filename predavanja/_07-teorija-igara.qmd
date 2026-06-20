@@ -1,0 +1,673 @@
+---
+title: "Primjena teorije igara"
+subtitle: "Strateške igre, kolektivno djelovanje i zakonodavno pregovaranje"
+author: "Milan Deskar-Škrbić · Petra Palić · Luka Šikić"
+lang: hr-HR
+bibliography: ../references.bib
+# Izvor je _-prefiksiran (predavanja/_07-...qmd) pa ga render knjige (quarto
+# render) NE dira; renderiraj ručno, a output-file daje čist naziv bez podvlake.
+output-file: 07-teorija-igara.html
+format:
+  revealjs:
+    theme: statecraft.scss
+    embed-resources: true
+    slide-number: c/t
+    show-slide-number: all
+    progress: true
+    width: 1050
+    height: 700
+    margin: 0.08
+    center: false
+    transition: fade
+    transition-speed: fast
+    background-transition: fade
+    controls: true
+    controls-layout: bottom-right
+    touch: true
+    hash: true
+    history: true
+    fig-align: center
+    link-external-newwindow: true
+    footer: "Javne politike u Hrvatskoj · Predavanje 7 · [lusiki.github.io/Javne-politike](https://lusiki.github.io/Javne-politike/)"
+---
+
+## Dobro došli u novi dio kolegija {.dio-slide}
+
+[PREDAVANJE 7 · TEORIJA IGARA]{.section-label}
+
+::: {.lead}
+Prošli smo klasičnu sliku države kao dobrohotnog planera, tri funkcije i poreze kojima ih plaćamo. Danas otvaramo DIO II, javni izbor, u kojem država prestaje biti jedinstven planer i postaje arena strateške interakcije.
+:::
+
+. . .
+
+[Čim je više aktera za istim stolom, ishod svakoga ovisi o potezima ostalih.]{.accent} [@buchanan1962]
+
+::: {.notes}
+Pozdravite studente i jasno povucite crtu prema prethodnoj cjelini o klasičnim funkcijama države i porezima. Naglasite da smo dosad državu promatrali kao jedinstvenog, dobrohotnog planera koji odozgo bira što je dobro za društvo. Recite da od danas ta pretpostavka pada, jer u stvarnosti odlučuje mnoštvo aktera s vlastitim ciljevima. Istaknite da je ključna nova ideja međuovisnost, ishod svakoga ovisi o potezima drugih. Ostavite trenutak tišine nakon rečenice o više aktera za istim stolom, jer ona postavlja ton cijelog predavanja.
+:::
+
+## Gdje smo stali i kamo idemo
+
+[OD PLANERA DO ARENE]{.section-label}
+
+::: {.columns}
+::: {.column width="50%"}
+[DIO I]{.accent}
+
+Pitao je [što]{.accent} država treba raditi. Alokacija, distribucija, stabilizacija i porezi koji ih financiraju.
+:::
+::: {.column width="50%"}
+[DIO II]{.accent}
+
+Pita [tko]{.accent} zapravo odlučuje i s kojim poticajima. Birači, političari, birokrati i interesne skupine za istim stolom.
+:::
+:::
+
+. . .
+
+Vraćamo se na poruku prvoga predavanja, [politiku bez romantike]{.accent}. Akteri u javnom sektoru slijede vlastite ciljeve jednako kao i na tržištu.
+
+. . .
+
+::: {.cbox .kljucno}
+[Ključno]{.cbox-label}
+Kad su odluke međuovisne, obična maksimizacija korisnosti više ne opisuje ponašanje, jer najbolji potez svakoga ovisi o tome što čine ostali. [@mueller1989]
+:::
+
+::: {.notes}
+Premostite dva dijela knjige tako da naglasite promjenu pitanja, a ne samo nove teme. Recite da je DIO I bio normativan i pitao što država treba raditi, dok DIO II postaje pozitivan i pita tko stvarno odlučuje. Povežite to izrijekom s prvim predavanjem i porukom o politici bez romantike, jer studenti tu nit već poznaju. Objasnite zašto klasična maksimizacija korisnosti nije dovoljna, kod međuovisnih odluka najbolji izbor jednoga ovisi o izboru drugoga. Tako pripremate teren za teoriju igara kao alat koji upravo tu međuovisnost opisuje.
+:::
+
+## Zašto teorija igara
+
+[JEZIK MEĐUOVISNOSTI]{.section-label}
+
+::: {.def}
+**Teorija igara** je matematička disciplina koja proučava odlučivanje kada ishod ovisi o međusobno povezanim odlukama više aktera. [@osborne2004]
+:::
+
+. . .
+
+Ona političke borbe prevodi u [modele]{.accent} iz kojih se jasno vidi mehanizam, a ne samo ishod.
+
+. . .
+
+- Kako se dijeli [proračunski kolač]{.accent} među zastupnicima
+- Pod kojim uvjetima zastupnici [predaju moć]{.accent} stranačkim vođama
+- Zašto se sklapaju naizgled neobični [savezi]{.accent}
+
+::: {.notes}
+Krenite od definicije i naglasite jednu riječ koja sve mijenja, međuovisnost. Objasnite da teorija igara nije apstraktna matematika radi sebe same, nego prijevod stvarnih političkih borbi u modele s jasnim pravilima. Istaknite da nas zanima mehanizam, dakle zašto se nešto događa, a ne samo koji je ishod. Najavite tri konkretne primjene, dijeljenje proračuna, predaju moći vođama i sklapanje saveza, jer ćemo svaku obraditi tijekom predavanja. Recite studentima da do kraja sata trebaju usvojiti taj novi jezik, igrače, strategije i isplate.
+:::
+
+## Agenda današnjeg predavanja
+
+[PLAN U ŠEST KORAKA]{.section-label}
+
+::: {.agenda}
+1. [Jezik igara i Nasheva ravnoteža]{.accent} — igrači, strategije, isplate i pojam rješenja.
+2. [Zatvorenikova dilema i javna dobra]{.accent} — zašto suradnja propada čak i kad svima koristi.
+3. [Kukavica i koordinacija]{.accent} — igre u kojima postoji više ravnoteža i pitanje na koju se sleći.
+4. [Baron-Ferejohnovo pregovaranje o proračunu]{.accent} — kako pravila glasovanja dijele kolač.
+5. [Eksperimentalna provjera]{.accent} — što ljudi stvarno čine u laboratoriju.
+6. [Ustavni dizajn pravila]{.accent} — kako biranjem pravila mijenjamo ishode igre.
+:::
+
+::: {.notes}
+Provedite studente kroz strukturu predavanja u jednoj minuti i naglasite logiku slijeda. Najprije usvajamo jezik i pojam ravnoteže, zatim na tri klasične igre vidimo glavne probleme kolektivnog djelovanja. Recite da nakon teorije prelazimo na primjenu, zakonodavno pregovaranje o proračunu po modelu Baron-Ferejohn. Posljednja dva koraka spuštaju nas iz teorije u stvarnost i u dizajn institucija, eksperiment i ustavna pravila. Istaknite središnju nit, da ishod ne ovisi samo o akterima, nego presudno o pravilima igre.
+:::
+
+## Misaoni pokus {.dio-slide}
+
+[POLAZNO PITANJE]{.section-label}
+
+::: {.lead}
+Zamislite dvije strane koje bi obje profitirale od suradnje, ali svaka ima poticaj prepustiti trošak onoj drugoj. Na kraju, slijedeći vlastiti interes, obje prolaze lošije nego da su surađivale.
+:::
+
+. . .
+
+[Zašto racionalni akteri svjesno završe u ishodu koji je za sve lošiji?]{.accent}
+
+. . .
+
+Odgovor nije u gluposti ili neznanju, nego u [strukturi poticaja]{.accent}. Na to pitanje odgovara prva igra koju ćemo postaviti, zatvorenikova dilema.
+
+::: {.notes}
+Postavite paradoks izravno i pričekajte reakcije iz dvorane prije nego što otkrijete drugu i treću rečenicu. Mnogi studenti pretpostavljaju da loš zajednički ishod znači da su akteri pogriješili ili da nisu dovoljno pametni. Razgradite tu intuiciju, naglasite da svaki akter postupa savršeno racionalno, a ipak svi gube. Recite da krivac nije pojedinac, nego struktura poticaja u kojoj se nalaze. Najavite da upravo to objašnjava prva igra, zatvorenikova dilema, i tako stvorite znatiželju umjesto da odmah dadete odgovor.
+:::
+
+## Jezik igara
+
+[IGRA, STRATEGIJA, ISPLATA]{.section-label}
+
+Igra u [normalnoj formi]{.accent} određena je trima elementima.
+
+- [Igrači]{.accent} — skup aktera koji donose odluke
+- [Strategije]{.accent} — potezi dostupni svakom igraču
+- [Isplate]{.accent} — funkcije koje svakoj kombinaciji strategija pridružuju korisnost svakog igrača [@osborne2004]
+
+. . .
+
+Rješenje igre tražimo preko pojma [ravnoteže]{.accent}.
+
+::: {.def}
+**Nasheva ravnoteža** je kombinacija strategija u kojoj nijedan igrač ne može povećati korisnost jednostranom promjenom strategije dok ostali ne mijenjaju svoju. Strategija je **strogo dominantna** ako igraču donosi veću korisnost od svake druge, bez obzira na to što čine ostali.
+:::
+
+::: {.notes}
+Razložite tri elementa igre polako, jer su temelj svega što slijedi, igrači, strategije i isplate. Naglasite da je isplata funkcija, dakle ovisi o kombinaciji poteza svih igrača, a ne samo o vlastitom potezu. Kod Nasheve ravnoteže inzistirajte na riječi jednostrana, nitko ne dobiva mijenjajući samo svoju strategiju dok ostali stoje. Jasno razdvojite dominantnu strategiju, koja je najbolja bez obzira na druge, od ravnoteže koja je uzajamno najbolji odgovor. Najavite graf koji povezuje ovaj apstraktni jezik s konkretnim pregovaranjem o proračunu i udjelom predlagatelja.
+:::
+
+## Zatvorenikova dilema {.dio-slide}
+
+[NAJUTJECAJNIJA IGRA JAVNOG IZBORA]{.section-label}
+
+::: {.lead}
+Prva i najutjecajnija igra javnog izbora objašnjava zašto dobrovoljnost ne osigurava javna dobra [@hardin1968; @samuelson1954].
+:::
+
+. . .
+
+Dva susjedna poljoprivrednika odlučuju hoće li platiti svoj dio zajedničkog [nasipa protiv poplava]{.accent}, klasičnog javnog dobra.
+
+. . .
+
+Svaki ima dvije strategije:
+
+- [Kooperirati]{.accent}: platiti svoj dio nasipa.
+- [Defektirati]{.accent}: ne platiti i nadati se da će drugi sam financirati nasip.
+
+::: {.notes}
+Najavite da ulazimo u najpoznatiju igru cijele teorije igara i da je njezina pouka temelj za razumijevanje uloge države. Postavku držite konkretnom, dva susjeda i jedan nasip, jer apstraktni primjeri ovdje gube studente. Naglasite da je nasip pravo javno dobro, neisključivo i nesuparničko, pa ga svaki susjed može koristiti bez obzira na to je li platio. Pustite studente da naslute napetost prije nego što otkrijete matricu na sljedećem slajdu. Pitajte ih što bi sami napravili da su na mjestu jednog poljoprivrednika. Tako pripremate teren za uvid da racionalan pojedinac ovdje vodi društvo u loš ishod.
+:::
+
+## Isplatna matrica {.smaller}
+
+[PROČITAJMO IGRU]{.section-label}
+
+| Igrač A ↓ \ Igrač B → | B kooperira | B defektira |
+|---|---|---|
+| A kooperira | (3, 3) | (0, 5) |
+| A defektira | (5, 0) | (1, 1) |
+
+*Prvi broj je korisnost igrača A, drugi korisnost igrača B.*
+
+. . .
+
+Matricu čitamo tako da redak biramo prema strategiji igrača A, a stupac prema strategiji igrača B; presjek daje par isplata za odabrani ishod.
+
+::: {.notes}
+Provedite studente kroz tablicu polje po polje, ne preskačite nijedno. Počnite od gornjeg lijevog polja, obostrane kooperacije, gdje svaki dobiva tri, i objasnite da je to ishod u kojem je nasip izgrađen i teret pošteno podijeljen. Zatim pokažite dijagonale, gdje jedan plaća a drugi se vozi besplatno, pa jahač na tuđem trošku odnosi pet, a naivni platiša nulu. Donje desno polje, obostranu defekciju, najavite kao ishod prema kojem igra zapravo gravitira. Inzistirajte na ispravnom čitanju para, prvi broj uvijek pripada igraču A. Tek kad svi sigurno čitaju matricu, prijeđite na analizu dominacije.
+:::
+
+## Zašto svi gube
+
+[DOMINACIJA I RAVNOTEŽA]{.section-label}
+
+Promatrajmo igru iz kuta igrača A:
+
+- Ako B kooperira, A je bolje defektirati jer dobiva pet umjesto tri ($5 > 3$).
+- Ako B defektira, A je opet bolje defektirati jer dobiva jedan umjesto nule ($1 > 0$).
+
+. . .
+
+Bez obzira na to što čini B, A je uvijek bolje defektirati, pa je defekcija [strogo dominantna]{.accent} strategija. Zbog simetrije isto vrijedi za B.
+
+. . .
+
+Jedina Nasheva ravnoteža igre jest [obostrana defekcija]{.accent} (1, 1), koja je [Pareto inferiorna]{.accent} u odnosu na obostranu kooperaciju (3, 3). Racionalni pojedinci tako svjesno završavaju u ishodu koji je za obojicu lošiji, što je napetost između pojedinačne i kolektivne racionalnosti [@olson1965].
+
+::: {.notes}
+Vodite analizu strogo iz perspektive jednog igrača, jer studenti najlakše pogriješe pokušavajući gledati obje strane odjednom. Pokažite na matrici svaki redak i stupac dok izvodite usporedbe pet naprama tri i jedan naprama nula. Naglasite da strogo dominantna strategija ne ovisi o pretpostavci što će drugi učiniti, što je čini posebno snažnom. Kad dođete do ravnoteže, istaknite paradoks, oba igrača racionalno biraju defekciju i oba završavaju lošije nego da su surađivala. Definirajte Pareto inferiornost jednostavno, postoji drugi ishod u kojem su oba na boljem. Ostavite trenutak da paradoks sjedne prije prijelaza na pouku.
+:::
+
+## Pouka: zašto država oporezuje
+
+[OD DEFEKCIJE DO KOOPERACIJE]{.section-label}
+
+::: {.cbox .kljucno}
+[Ključno]{.cbox-label}
+Decentralizirano tržište ne može samo osigurati dovoljnu količinu javnog dobra. Država svojim autoritetom, kroz porez, prisiljava aktere na doprinos i prevodi društvo iz neučinkovite ravnoteže defekcije u učinkovitu kooperaciju [@mueller1989].
+:::
+
+. . .
+
+Time se vraćamo na ono što smo rekli o [javnim dobrima i porezima]{.accent}: porez nije puki tehnički zahvat, nego institucionalni odgovor na zatvorenikovu dilemu koja koči dobrovoljno financiranje zajedničkih funkcija.
+
+::: {.notes}
+Ovo je slajd radi kojeg cijela igra postoji, pa mu dajte težinu. Povucite ravnu crtu od matrice do uloge države, problem nije u nedostatku dobre volje, nego u strukturi poticaja koja racionalne aktere gura u defekciju. Objasnite da porez djeluje upravo tako što mijenja isplate, defekcija više nije moguća jer je doprinos zakonska obveza. Povežite to s ranijim predavanjima o javnim dobrima i o porezima kao prihodnoj strani proračuna. Naglasite da time teorija igara daje mikrotemelj za samu opravdanost oporezivanja. Zatvorite mišlju da ćemo istu logiku poticaja vidjeti i u drugim igrama koje slijede.
+:::
+
+## Igra kukavice {.dio-slide}
+
+[KAD TVRDOĆA VODI U KATASTROFU]{.section-label}
+
+::: {.lead}
+Dvije države članice monetarne unije pregovaraju o podjeli tereta u dubokoj financijskoj krizi. Svaka može popustiti i preuzeti veći dio duga ili ustrajati na tvrdom stavu, očekujući da će druga popustiti kako bi spriječila slom zajedničke valute [@mueller1989].
+:::
+
+. . .
+
+[Obostrana tvrdoća vodi u ishod koji obje strane žele izbjeći pod svaku cijenu.]{.accent}
+
+::: {.notes}
+Uvedite igru kukavice kao suprotnost zatvorenikovoj dilemi koju smo upravo obradili. Naglasite da je ovdje katastrofalan ishod ono što obje strane najviše žele izbjeći, za razliku od dileme gdje je problem dominantna strategija. Iskoristite primjer monetarne unije jer je studentima blizak iz vijesti o krizama eurozone. Pitajte dvoranu što bi oni učinili na mjestu pregovarača, da pripremite teren za matricu na sljedećem slajdu. Imajte na umu da svaka strana špekulira hoće li druga popustiti prva.
+:::
+
+## Kukavica: dvije ravnoteže {.smaller}
+
+[NEMA DOMINANTNE STRATEGIJE]{.section-label}
+
+| Država A ↓ \ Država B → | B popušta | B ustraje |
+|---|---|---|
+| A popušta | (0, 0) | (−1, 2) |
+| A ustraje | (2, −1) | (−10, −10) |
+
+*Isplatna matrica igre kukavice. Izrada autora.*
+
+. . .
+
+- Ako [B ustraje]{.accent}, A je bolje popustiti i izbjeći slom koji nosi minus deset.
+- Ako [B popušta]{.accent}, A je bolje ustrajati i uzeti dva.
+
+. . .
+
+Igra ima [dvije asimetrične ravnoteže]{.accent}, onu u kojoj jedna strana popušta dok druga ustraje, i obrnutu.
+
+. . .
+
+::: {.cbox .kljucno}
+[Ključno]{.cbox-label}
+Strateška neizvjesnost znači da obostrana tvrdoća vodi u katastrofu. Zato krizni pregovori traju do posljednje sekunde i zato se uvode nadnacionalna pravila koja raspodjelu kriznog tereta određuju unaprijed.
+:::
+
+::: {.notes}
+Prođite matricu polje po polje i pokažite da, za razliku od dileme, nijedna strategija nije najbolja neovisno o potezu druge strane. Naglasite asimetriju dviju ravnoteža, u svakoj jedna strana prolazi bolje, pa nastaje borba oko toga tko će popustiti. Objasnite da upravo strateška neizvjesnost gura sustav prema kutu s ishodom minus deset, minus deset. Povežite to sa stvarnošću kriznih pregovora koji se otežu do zadnjeg trenutka jer obje strane blefiraju. Zaključite da je institucionalni odgovor postavljanje pravila unaprijed, prije nego što kriza nastupi. To je most prema sažetku na kraju bloka.
+:::
+
+## Igre koordinacije {.dio-slide}
+
+[ISTI CILJ, RAZLIČITA RJEŠENJA]{.section-label}
+
+::: {.lead}
+Dva poduzeća biraju tehnički standard za zajedničku infrastrukturu koja radi samo ako su standardi kompatibilni. Svi imaju zajednički interes uskladiti se, ali se razilaze oko toga koja je ravnoteža bolja [@osborne2004].
+:::
+
+. . .
+
+To je igra tipa [bitke spolova]{.accent} (*battle of the sexes*), s više ravnoteža i zajedničkim interesom za koordinaciju.
+
+::: {.notes}
+Predstavite treću skupinu igara, koordinaciju, kao bitno drukčiji problem od prethodne dvije. Ovdje nema sukoba oko cilja, obje strane žele isti ishod, usklađenost, ali postoje različita rješenja koja vode do njega. Iskoristite primjer tehničkog standarda jer je opipljiv, pomislite na utičnice, kolosijeke ili formate datoteka. Naglasite da problem nije zloba ni sebičnost nego nemogućnost dogovora oko jedne od više mogućih ravnoteža. Najavite da ćemo na matrici vidjeti kako izostanak komunikacije može sve odvesti u neuspjeh s nultim isplatama.
+:::
+
+## Koordinacija: država kao fokalna točka {.smaller}
+
+[RED BEZ PRISILE]{.section-label}
+
+| Poduzeće A ↓ \ Poduzeće B → | B bira X | B bira Y |
+|---|---|---|
+| A bira X | (3, 2) | (0, 0) |
+| A bira Y | (0, 0) | (2, 3) |
+
+*Isplatna matrica igre koordinacije. Izrada autora.*
+
+. . .
+
+Ravnoteže su [dvije]{.accent}, obje pristaju uz isti standard. Bez komunikacije prijeti koordinacijski neuspjeh u kojem se resursi troše na nespojive sustave uz nulte isplate.
+
+. . .
+
+Uloga države ovdje nije prisila ni kazna, nego pružanje [fokalne točke]{.accent} (*focal point*). Donošenjem zakona ili propisivanjem standarda država usklađuje očekivanja aktera i snižava transakcijske troškove, jer su institucije pravila igre [@north1990].
+
+::: {.notes}
+Pokažite na matrici da dijagonalna polja s isplatama tri, dva i dva, tri nose dobitak, dok izvandijagonalna donose nule. Naglasite da problem nije izbor između dobrog i lošeg standarda nego usklađivanje, pa i lošija zajednička ravnoteža pobjeđuje nesuglasje. Razjasnite pojam fokalne točke, to je istaknuto rješenje na koje se akteri prešutno usredotoče bez dogovora. Povežite ulogu države s Northovom idejom institucija kao pravila igre koja smanjuju neizvjesnost. Zaključite da država ovdje ne prisiljava nego koordinira, što je bitno drukčija uloga od one u dilemi.
+:::
+
+## Tri igre, tri uloge države
+
+[SAŽETAK IGARA]{.section-label}
+
+::: {.agenda}
+1. [Zatvorenikova dilema]{.accent}: država [prisiljava]{.accent} (porez, propis), jer dominantne strategije vode u kolektivno najgori ishod.
+2. [Igra kukavice]{.accent}: država postavlja [pravila unaprijed]{.accent}, da strateška neizvjesnost ne završi u katastrofi.
+3. [Igra koordinacije]{.accent}: država daje [fokalnu točku]{.accent}, koja usklađuje očekivanja bez prisile.
+:::
+
+. . .
+
+::: {.cbox .kljucno}
+[Ključno]{.cbox-label}
+Ista logika strateške interakcije traži različit lijek ovisno o strukturi igre. Oblik problema, a ne njegova težina, određuje kakvu intervenciju država treba.
+:::
+
+::: {.notes}
+Iskoristite ovaj slajd da povežete cijeli blok u jednu jasnu poruku. Provedite studente kroz tri igre redom i pokažite da svaka traži drukčiju ulogu države, od prisile preko pravila do koordinacije. Naglasite da nema univerzalnog recepta, jer struktura igre određuje koji je zahvat primjeren. Pitajte dvoranu da za svaki primjer iz stvarnog života pogode kojem tipu igre pripada. Time uvježbavate dijagnostičku vještinu, prepoznati strukturu prije nego što se predloži rješenje. Ovo je prirodan most prema sljedećoj cjelini o institucijama.
+:::
+
+## Baron-Ferejohn: tko dijeli proračun {.dio-slide}
+
+[PREGOVARANJE POSTAJE DINAMIČNO]{.section-label}
+
+::: {.lead}
+Kad se o podjeli proračuna odlučuje pravilom većine, igra postaje dinamična [@baronferejohn1989]. Više nije riječ o jednom potezu, nego o nizu prijedloga i glasanja koji se nižu kroz vrijeme.
+:::
+
+. . .
+
+Zakonodavno tijelo ima neparan broj zastupnika [n]{.var}, a kolač, cijeli proračun, normaliziran je na jedinicu.
+
+. . .
+
+[Svaki zastupnik mari samo za udio koji ide njemu]{.accent}, pa se igra svodi na borbu za što veći komad zajedničkog novca.
+
+::: {.notes}
+Uvedite model kao prirodan nastavak prethodnih igara, ali naglasite ključnu novost, vrijeme. Dosad su zastupnici igrali jedan potez, sada pregovaraju kroz runde. Recite da su David Baron i John Ferejohn ovim modelom postavili temelj moderne političke ekonomije zakonodavstva. Istaknite tri pretpostavke koje ćemo nositi kroz cijeli blok, neparan broj zastupnika, kolač normaliziran na jedinicu i sebični zastupnik koji mari samo za svoj udio. Pojasnite zašto je broj neparan, da uvijek postoji jasna većina bez izjednačenja. Zadržite se na zadnjoj rečenici jer ona definira cijeli problem, podjelu fiksnog kolača.
+:::
+
+## Pravila pregovora
+
+[ZATVORENO PRAVILO]{.section-label}
+
+::: {.agenda}
+1. Svake runde [nasumično]{.accent} se bira predlagatelj, svaki zastupnik s jednakom vjerojatnošću [1/n]{.var}.
+2. Predlagatelj iznosi raspodjelu, a tijelo o njoj glasuje [bez amandmana]{.accent} (zatvoreno pravilo, *closed rule*).
+3. Za usvajanje treba većina od [(n+1)/2]{.var} glasova.
+4. Padne li prijedlog, pregovori idu u novu rundu, ali se kolač umanjuje faktorom diskontiranja [δ]{.var}.
+:::
+
+. . .
+
+Faktor [δ]{.var} bilježi [nestrpljivost]{.accent} i trošak blokade, čekanje na novu rundu nikad nije besplatno.
+
+::: {.notes}
+Provedite studente kroz pravila igre korak po korak, jer o njima ovisi sve što slijedi. Naglasite da je predlagatelj izabran slučajno, što svakom zastupniku daje jednaku početnu šansu na moć. Objasnite zašto je zatvoreno pravilo presudno, bez prava na amandmane prijedlog se prihvaća ili odbija u cijelosti, pa predlagatelj ima veliku prednost. Podsjetite da većina traži samo polovicu plus jedan glas, a ne jednoglasnost, što otvara prostor za isključivanje gubitnika. Najviše vremena dajte faktoru diskontiranja, jer on pretvara nestrpljivost u pregovaračku polugu. Recite da je δ između nule i jedan i da niži δ znači skuplje čekanje.
+:::
+
+## Rezervacijska cijena i udio predlagatelja
+
+[KOLIKO PREDLAGATELJ ZADRŽAVA]{.section-label}
+
+Budući da se proračun u ravnoteži usvaja već u prvoj rundi, očekivana vrijednost runde za svakog zastupnika je [v = 1/n]{.var}.
+
+. . .
+
+Odbije li zastupnik prijedlog, dobiva tek diskontiranu vrijednost nastavka, pa je njegova [rezervacijska cijena]{.accent} glasa [δ/n]{.var}.
+
+. . .
+
+Predlagatelj kupuje [(n−1)/2]{.var} najjeftinijih glasova, svakom nudi točno [δ/n]{.var}, a za sebe zadržava
+
+$$x_p = 1 - \frac{\delta(n-1)}{2n}.$$
+
+. . .
+
+Graf koji slijedi pokazuje kako taj udio predlagatelja [pada]{.accent} s veličinom parlamenta.
+
+::: {.notes}
+Vodite studente kroz izvod logikom, a ne samo formulom. Počnite od simetrije, jer svatko ima jednaku šansu biti predlagatelj, očekivana vrijednost runde je jednostavno jedan kroz n. Objasnite rezervacijsku cijenu kao najmanji iznos kojim se kupuje glas, odbijanje vrijedi samo diskontirani nastavak, dakle δ kroz n. Naglasite da predlagatelju ne treba pristanak svih, nego većine, pa kupuje točno potreban broj najjeftinijih glasova. Ostatak, sve što ne mora razdijeliti, zadržava za sebe, što daje formulu za udio predlagatelja. Najavite graf i recite studentima neka prate kako se krivulja spušta dok parlament raste, to vodi u sljedeći slajd o komparativnoj statici.
+:::
+
+## Udio predlagatelja na grafu {.smaller}
+
+[BARON-FEREJOHN — ISPROBAJTE]{.section-label}
+
+```{ojs}
+//| echo: false
+viewof bf_controls = Inputs.form({
+  delta: Inputs.range([0, 1], {value: 0.8, step: 0.01, width: 250, label: "Strpljivost δ"}),
+  n: Inputs.range([3, 51], {value: 5, step: 2, width: 250, label: "Zastupnici n"})
+})
+```
+
+```{ojs}
+//| echo: false
+{
+  const delta = bf_controls.delta;
+  const ncur = bf_controls.n;
+  const xp = (n) => 1 - delta * (n - 1) / (2 * n);
+  const asymptote = 1 - delta / 2;
+  const xpcur = xp(ncur);
+
+  const ns = d3.range(3, 52, 2);
+  const curve = ns.map(n => ({n, xp: xp(n)}));
+
+  return Plot.plot({
+    width: 840,
+    height: 360,
+    marginLeft: 60,
+    marginTop: 46,
+    marginBottom: 44,
+    style: {fontSize: "12px", fontFamily: "Public Sans, system-ui, sans-serif", color: "#3A332D", background: "transparent"},
+    x: {label: "Broj zastupnika n →", domain: [3, 51]},
+    y: {label: "↑ Udio predlagatelja x_p", domain: [0, 1], grid: true},
+    marks: [
+      Plot.ruleY([0], {stroke: "#C9C3B8"}),
+      Plot.line(curve, {x: "n", y: "xp", stroke: "#2D5A8E", strokeWidth: 2.5}),
+      Plot.ruleY([asymptote], {stroke: "#6B6357", strokeDasharray: "4,3"}),
+      Plot.dot([{n: ncur, xp: xpcur}], {x: "n", y: "xp", r: 6, fill: "#1C1916", stroke: "white", strokeWidth: 2}),
+      Plot.text([`granica 1 − δ/2 = ${asymptote.toFixed(2)}`],
+        {x: 51, y: asymptote, textAnchor: "end", dy: -8, fontSize: 11, fill: "#6B6357"}),
+      Plot.text([`x_p (n = ${ncur}) = ${xpcur.toFixed(3)}`],
+        {frameAnchor: "top", dy: -30, fontSize: 14, fontWeight: 700, fill: "#2D5A8E"})
+    ]
+  });
+}
+```
+
+::: {.isprobaj}
+Zadržite [δ]{.var} visokim i povećavajte broj zastupnika — udio predlagatelja pada prema granici 1 − δ/2, jer se moć raspršuje na sve brojnije, ali jeftinije glasove. Spustite [δ]{.var} prema nuli i udio skoči na cijeli proračun (nestrpljivi zastupnici pristaju na gotovo ništa). Pri δ blizu 1 i velikom parlamentu predlagatelj zadržava tek nešto više od polovice.
+:::
+
+::: {.notes}
+Iskoristite graf interaktivno i tražite od studenata da predvide smjer prije pomicanja klizača. Pokažite da pri visokoj strpljivosti udio predlagatelja pada s veličinom tijela prema granici 1 − δ/2, jer veći parlament traži kupnju više glasova nego što ih pojeftinjuje. Spustite faktor diskontiranja prema nuli i istaknite da tada predlagatelj uzima gotovo cijeli proračun. Vratite δ blizu jedinice i pokažite da se udio svodi na nešto iznad polovice. Zaključite porukom da ustavna pravila o rokovima i strpljivosti izravno oblikuju raspodjelu javnog novca.
+:::
+
+## Pregovaračka moć i ustavni parametri
+
+[KOMPARATIVNA STATIKA]{.section-label}
+
+Obje derivacije udjela predlagatelja su [negativne]{.accent}, pa udio pada na dva načina.
+
+- Pada s [veličinom tijela]{.accent}, veći parlament [raspršuje]{.accent} pregovaračku moć, jer treba kupiti više glasova, a udio teži granici [1 − δ/2]{.var}.
+- Pada sa [strpljivošću]{.accent}, strpljiviji su zastupnici skuplji jer lakše odbiju prijedlog i čekaju novu rundu.
+
+. . .
+
+Granični slučajevi: pri [δ → 0]{.var} predlagatelj uzima cijeli proračun, a pri [δ → 1]{.var} udio se svodi na [(n+1)/(2n)]{.var}, tek nešto iznad polovice.
+
+. . .
+
+::: {.cbox .kljucno}
+[Ključno]{.cbox-label}
+Ustavna pravila o rokovima donošenja proračuna izravno određuju raspodjelu javnog novca.
+:::
+
+::: {.notes}
+Povežite dvije derivacije s dvjema intuicijama koje studenti mogu zapamtiti, veličina i strpljivost. Kod veličine objasnite naizgled proturječan učinak, veće tijelo čini svaki glas jeftinijim, ali traži kupnju više glasova, pa drugi učinak prevladava i udio pada prema polovici. Kod strpljivosti naglasite da strpljiv zastupnik lakše kaže ne i čeka, što ga čini skupljim, pa predlagatelj mora ponuditi više. Provedite studente kroz oba granična slučaja, potpuna nestrpljivost daje predlagatelju sve, gotovo savršena strpljivost svodi ga tek iznad polovice. Zaključite ključnim okvirom, naizgled tehnička proceduralna pravila o rokovima izravno oblikuju tko dobiva koliko javnog novca. To je most prema institucionalnoj poruci predavanja.
+:::
+
+## Stranačka kohezija
+
+[DISCIPLINA MIJENJA IGRU]{.section-label}
+
+Osnovni model pretpostavlja izolirane zastupnike, no u stvarnim su parlamentima organizirani u disciplinirane stranke.
+
+::: {.def}
+Parametar kohezije [α]{.var} mjeri koliko zastupnik vrednuje udio svoga stranačkog kolege, pa mu je korisnost $u_1 = x_1 + \alpha x_2$.
+:::
+
+. . .
+
+Kohezija djeluje kao [množitelj]{.accent} pregovaračke moći vladajuće stranke, jer kolegi ne treba platiti punu cijenu glasa, on već uživa dio koristi od udjela koji predlagatelj zadržava.
+
+. . .
+
+Zato zastupnici često delegiraju pravo predlaganja vođi, ali samo uz tri uvjeta, da procedura daje vođi prednost, da je kohezija dovoljno visoka i da su zastupnici dovoljno nestrpljivi [@mueller1989].
+
+::: {.notes}
+Otvorite proširenje modela kao korak prema realnosti, stvarni zastupnici nisu usamljeni pojedinci nego članovi stranaka. Objasnite parametar kohezije α kao mjeru koliko mi je važno da i kolega iz stranke dobije svoj dio, pri nuli smo u osnovnom modelu, pri jedinici kolegin uspjeh vrednujem kao svoj. Ključna je intuicija da disciplina snižava cijenu glasa unutar stranke, pa vladajuća stranka zadržava više resursa u svojoj političkoj obitelji. Povežite to s delegiranjem prava predlaganja vođi, što djeluje kao gubitak moći, ali je racionalno pod tri navedena uvjeta. Pređite kroz svaki uvjet kratko, proceduralna prednost, visoka kohezija i dovoljna nestrpljivost. Zaključite mišlju da gdje ti uvjeti izostaju, u mladim demokracijama, parlament obilježavaju frakcijske borbe i proračunska nestabilnost.
+:::
+
+## Teorija na ispitu {.dio-slide}
+
+[LABORATORIJ]{.section-label}
+
+::: {.lead}
+Snaga teorije igara dijelom je u tome što je podložna provjeri. Tri desetljeća laboratorijskih eksperimenata ispituju koliko stvarni ljudi u ulozi zastupnika slijede predviđanja Baron-Ferejohnova modela [@baranskimorton2022].
+:::
+
+. . .
+
+Rezultati [potvrđuju strukturu]{.accent}, ali ne i raspodjelu. Minimalne pobjedničke koalicije najčešći su ishod, jer sudionici prepoznaju da uključivanje suvišnih partnera samo smanjuje vlastiti udio.
+
+::: {.notes}
+Naglasite da je ovo trenutak kad apstraktni model izlazimo provjeriti pred stvarnim ljudima. Recite studentima da laboratorijski eksperiment postavlja ispitanike u ulogu zastupnika koji pregovaraju o podjeli novca po pravilima modela. Pričekajte s otkrivanjem druge rečenice da studenti sami nagađaju hoće li se ljudi ponašati kao racionalni igrači iz modela. Istaknite dvodijelni nalaz koji je okosnica cijelog bloka, struktura se potvrđuje, raspodjela odstupa. Objasnite zašto su minimalne koalicije i u laboratoriju modalan ishod, jer svaki suvišni partner razrjeđuje udio. Najavite da na sljedećem slajdu vidimo gdje točno stvarnost iznevjerava model.
+:::
+
+## Što laboratorij otkriva
+
+[LJUDI SU IZDAŠNIJI]{.section-label}
+
+::: {.cbox .empirija}
+[Empirija]{.cbox-label}
+Predlagatelji svojim partnerima nude osjetno više od rezervacijske cijene, nerijetko i posve jednake udjele. Odstupanje se objašnjava dvama kanalima. Prvi je [averzija prema nejednakosti]{.accent}, sklonost da se preniske ponude vrednuju kao nepravedne, koju formalizira model u kojem korisnost pada s razlikom prema drugima [@fehrschmidt1999]. Drugi je [strateški strah od odbijanja]{.accent}, jer uvrijeđeni partner može odbiti ponudu i gurnuti pregovore u novu, skuplju rundu, pa predlagatelj radije nudi više. Uz to, ponašanje izrazito ovisi o povijesti, suprotno pretpostavci stacionarnosti, jer se isključeni zastupnik osvećuje kad sam dođe na red [@baranskimorton2022].
+:::
+
+::: {.notes}
+Krenite od ključnog nalaza, ljudi dijele izdašnije nego što stroga logika modela dopušta. Razdvojite dva objašnjenja jer studenti često poistovjećuju nepravdu i strah, a riječ je o dvama različitim mehanizmima. Kod averzije prema nejednakosti spomenite da Fehr i Schmidt korisnost vežu uz razliku prema drugima, pa preniska ponuda izravno smanjuje zadovoljstvo primatelja. Kod straha od odbijanja naglasite da je riječ o čisto strateškom računu, odbijanje znači skuplju novu rundu. Zadnju misao, ovisnost o povijesti, predstavite kao najteži udarac pretpostavci stacionarnosti, jer model pretpostavlja da prošlost ne utječe na buduće poteze. Dajte primjer zastupnika koji se osvećuje onome tko ga je ranije isključio, čak i kad bi mu suradnja bila jeftiniji put do većine.
+:::
+
+## Model nasuprot eksperimentu {.smaller}
+
+[PREDVIĐANJE I NALAZ]{.section-label}
+
+| Dimenzija | Predviđanje modela | Eksperimentalni nalaz |
+|---|---|---|
+| Struktura koalicije | isključivo minimalne pobjedničke koalicije | minimalne su modalne, ali se javljaju i šire |
+| Udio predlagatelja | vrlo visok, predlagatelj zadržava većinu | umjereniji zbog averzije prema nejednakosti i straha od odbijanja |
+| Udio partnera | tek rezervacijska cijena glasa | osjetno veći, podjela teži pravednosti |
+| Vremenska dinamika | usvajanje odmah u prvoj rundi | uglavnom bez odgode, ali se javljaju i blokade |
+| Uloga povijesti | savršena stacionarnost | izražena ovisnost o povijesti, osveta i trajni savezi |
+
+*Izrada autora prema Baron i Ferejohn (1989) te Baranski i Morton (2022).*
+
+::: {.notes}
+Provedite studente kroz tablicu redak po redak i u svakom istaknite jaz između stupca predviđanja i stupca nalaza. Prvi redak povežite s prethodnim slajdovima, struktura je jedino mjesto gdje se model i stvarnost slažu. Drugi i treći redak gledajte zajedno, jer oba pokazuju isto, predlagatelj uzima manje, a partner dobiva više nego što model dopušta. Kod vremenske dinamike umirite očekivanja, odgode jesu rijetke, ali blokade postoje i model ih podcjenjuje. Posljednji redak ostavite za naglasak, jer ovisnost o povijesti najjasnije ruši pretpostavku stacionarnosti. Zaključite porukom da dobar model ne mora biti točan u svemu, dovoljno je da pogodi okosnicu i jasno pokaže gdje ga stvarnost nadrasta.
+:::
+
+## Ustavni dizajn proračunskih pravila {.dio-slide}
+
+[OBUZDATI POTICAJE UNAPRIJED]{.section-label}
+
+::: {.lead}
+Ako politički proces prirodno teži asimetričnim minimalnim koalicijama koje iskorištavaju manjinu, zadatak je ustavnog okvira postaviti pravila koja te poticaje obuzdavaju unaprijed, prije nego što se zna tko će biti na dobitku [@buchanan1962; @brennan1985].
+:::
+
+::: {.notes}
+Otvorite zaključnu cjelinu jasnom premosnicom prema Baron-Ferejohnovu modelu koji ste upravo obradili. Naglasite da se ne bavimo više time kako se akteri ponašaju pod zadanim pravilima, nego kako sama pravila biramo. Ključna je ideja vela neznanja, pravila postavljamo dok još ne znamo hoćemo li biti predlagatelj ili dio iskorištene manjine. Povežite to s Buchananovom konstitucionalnom razinom odlučivanja koju studenti upoznaju u kasnijim poglavljima. Pustite da rečenica o obuzdavanju poticaja unaprijed odjekne, jer ona je srž cijelog slajda.
+:::
+
+## Dva ustavna odgovora
+
+[GRANICA I VEĆINA]{.section-label}
+
+::: {.columns}
+::: {.column width="50%"}
+[ustavno ograničenje deficita i duga]{.accent}
+
+Sužava prostor za kupnju glasova jer se trošak ne može tiho prebaciti na buduće generacije koje ne sjede za pregovaračkim stolom. Predlagatelj mora birati među projektima umjesto da ih sve financira zaduživanjem. Pravilo ne mijenja motive aktera, nego im skraćuje doseg.
+:::
+
+::: {.column width="50%"}
+[pravilo pojačane većine]{.accent}
+
+Umjesto natpolovične traži se, primjerice, dvotrećinska većina. Predlagatelj više ne sastavlja najmanju koaliciju, nego mora pridobiti i dio oporbe, što mu obara udio i štiti manjinu. Cijena su veći rizik blokade i viši troškovi odlučivanja.
+:::
+:::
+
+::: {.notes}
+Postavite dva mehanizma usporedno jer rade na različitim polugama. Prvi ograničava resurs kojim se kupuju glasovi, drugi mijenja potreban broj glasova. Kod granice deficita istaknite ključnu nepravdu koju ispravlja, buduće generacije snose trošak, a ne sjede za stolom. Kod pojačane većine vežite obrazloženje izravno na Baron-Ferejohnovu logiku, više glasova koje treba platiti znači niži udio predlagatelja. Nužno upozorite na cijenu drugog mehanizma, blokadu, jer svako pravilo nešto vaga. Pitajte studente koji bi mehanizam izabrali i zašto.
+:::
+
+## Pravila igre nisu neutralna
+
+[TVORAC, A NE POZADINA]{.section-label}
+
+::: {.cbox .kljucno}
+[Ključno]{.cbox-label}
+Pravila nisu neutralna pozadina kolektivne odluke nego njezin tvorac, pa se ista skupina aktera pod različitim procedurama ponaša različito i dijeli javni novac drukčije. Kvaliteta ishoda ne popravlja se zamjenom ljudi nego izborom pravila, a taj izbor vaga učinkovitost protiv zaštite manjine i brzinu protiv šire suglasnosti.
+:::
+
+::: {.notes}
+Ovo je intelektualno težište cijelog predavanja, pa mu dajte vremena. Naglasite obrat u intuiciji, kad je ishod loš, prvi je nagon kriviti ljude, no model pokazuje da iste ljude drukčija pravila vode drukčijem ishodu. Povežite to s ranijim eksperimentima, struktura koalicije slijedi iz procedure, ne iz pohlepe pojedinaca. Istaknite da ne postoji savršeno pravilo nego razmjena, svaki dobitak na jednoj vrijednosti plaća se gubitkom na drugoj. Zamolite studente da zapamte ovu rečenicu jer se na nju vraćamo u zaključku.
+:::
+
+## Što smo naučili
+
+[SAŽETAK]{.section-label}
+
+::: {.agenda}
+1. [Država je arena strateške interakcije]{.accent}, a ne dobrohotan jedinstveni planer.
+2. [Tri igre]{.accent}: dilema opravdava prisilu, kukavica traži pravila unaprijed, koordinacija djeluje preko fokalne točke.
+3. [Baron-Ferejohn]{.accent}: moć predlagatelja pada s veličinom tijela i strpljivošću, a stranačka kohezija je pojačava.
+4. [Eksperimenti]{.accent} potvrđuju strukturu minimalnih koalicija, ali ne i nemilosrdnu raspodjelu.
+5. [Proračunska pravila]{.accent} izravno oblikuju raspodjelu javnog novca.
+:::
+
+::: {.notes}
+Prođite kroz pet točaka brzo jer su sve već obrađene, ovo je rekapitulacija, a ne novo gradivo. Na prvoj točki podsjetite da je to bila polazna teza cijelog predavanja koja ruši sliku dobronamjernog planera. Na drugoj povežite svaku igru s jednom poukom za javnu politiku da studenti vide čemu apstrakcija služi. Na trećoj ponovite tri ručice modela, veličina, strpljivost, kohezija. Na četvrtoj naglasite da stvarno ponašanje odstupa od teorije zbog averzije prema nejednakosti i osvete. Petu točku ostavite kao most prema sljedećem slajdu.
+:::
+
+## Nit koja povezuje
+
+[ZAKLJUČAK]{.section-label}
+
+::: {.cbox .kljucno}
+[Ključno]{.cbox-label}
+Kad ishod jednoga ovisi o potezima drugih, ishod ovisi o pravilima kroz koja akteri prolaze. Zato je promišljen dizajn pravila, a ne dobra namjera pojedinaca, ključ kvalitetne kolektivne odluke.
+:::
+
+::: {.notes}
+Ovo je rečenica koju želite da studenti ponesu kući, pa je izgovorite polako i bez dodataka. Povežite je sa svakom igrom redom, dilema, kukavica, koordinacija i pregovaranje, sve su to priče o tome kako pravila oblikuju ishod. Suprotstavite dva pogleda izravno, vjera u dobre ljude protiv vjere u dobra pravila, i stanite na stranu pravila. Naglasite da to ne znači da namjere ne vrijede, nego da ih bez dobrog okvira poticaji nadjačaju. Zastanite prije prelaska na putokaz da rečenica odjekne.
+:::
+
+## Vježba
+
+[VJEŽBA]{.section-label}
+
+::: {.cbox .vjezba}
+[Vježba]{.cbox-label}
+Promotrite zakonodavno tijelo s [n = 5]{.var} zastupnika koji dijele kolač normaliziran na jedinicu, uz faktor diskontiranja [δ = 0,8]{.var}.
+
+(a) Izračunajte rezervacijsku cijenu glasa pojedinog zastupnika.
+
+(b) Odredite koliko glasova uz vlastiti glas predlagatelj mora kupiti za većinu i koliki udio kolača pritom zadržava za sebe.
+
+(c) Ponovite izračun za [n = 9]{.var} i objasnite zašto udio predlagatelja pada premda je svaki glas jeftiniji.
+
+(d) Pretpostavite da ustav umjesto natpolovične traži dvotrećinsku većinu. Objasnite, bez potpunog izvoda, u kojem se smjeru mijenja udio predlagatelja i zašto to štiti manjinu uz veći rizik blokade.
+:::
+
+::: {.notes}
+Zadajte vježbu kao domaću zadaću ili je riješite zajedno ako ostane vremena. Za dio pod (a) podsjetite studente na formulu rezervacijske cijene iz ranijeg slajda, glas vrijedi onoliko koliko zastupnik očekuje u nastavku igre. Za dio pod (b) naglasite da predlagatelj kupuje najmanju moguću većinu, dakle dva glasa uz svoj. Najvažniji je dio pod (c), paradoks da udio predlagatelja pada iako je svaki glas jeftiniji, jer mora kupiti više glasova. Dio pod (d) tražite samo kvalitativno, smjer promjene i intuiciju zaštite manjine, bez računa.
+:::
+
+## Što slijedi {.dio-slide}
+
+[PUTOKAZ]{.section-label}
+
+::: {.lead}
+Vidjeli smo kako strateška interakcija i pravila oblikuju ishod, a ostaje temeljno pitanje kako se mnoštvo pojedinačnih preferencija uopće pretvara u jednu društvenu odluku.
+:::
+
+::: {.agenda}
+1. [Predavanje 8]{.accent}: kolektivno djelovanje i pravila glasovanja, Arrowljev teorem nemogućnosti i teorija medijanskog birača.
+2. [Širi luk]{.accent}: koliko društvena odluka ovisi o pravilima kroz koja prolazi.
+:::
+
+::: {.notes}
+Zatvorite predavanje otvaranjem sljedeće teme da studenti osjete kontinuitet. Naglasite logičan prijelaz, dosad smo gledali strateške igre među malim brojem aktera, a sada se okrećemo agregiranju preferencija cijelog društva. Najavite Arrowljev teorem nemogućnosti kao iznenađujući rezultat, ne postoji savršeno pravilo glasovanja, čime se nastavlja nit o važnosti pravila. Spomenite medijanskog birača kao protutežu, model koji ipak daje jasnu predikciju. Zaključite porukom da je cijeli ovaj dio knjige zapravo jedna priča, ishodi ovise o pravilima.
+:::

@@ -90,12 +90,13 @@ format:
   </div>
   <div class="vd-hub-grid">
 
-    <div class="vd-hub-card vd-soon">
-      <span class="vd-badge">Uskoro</span>
+    <a class="vd-hub-card vd-ready" href="predavanja/07-teorija-igara.html" target="_blank" rel="noopener">
+      <span class="vd-badge vd-badge-ready">Dostupno</span>
       <span class="vd-hub-num">Predavanje 7</span>
       <span class="vd-hub-name">Primjena teorije igara</span>
-      <span class="vd-hub-q">Strateško ponašanje, Nasheva ravnoteža, zatvorenikova dilema i koordinacijske igre u javnoj politici.</span>
-    </div>
+      <span class="vd-hub-q">Strateško ponašanje, Nasheva ravnoteža, zatvorenikova dilema i koordinacijske igre, te Baron-Ferejohnovo pregovaranje o proračunu — uz interaktivni model podjele proračuna.</span>
+      <span class="vd-go">Otvori predavanje →</span>
+    </a>
 
     <div class="vd-hub-card vd-soon">
       <span class="vd-badge">Uskoro</span>
