@@ -105,12 +105,13 @@ format:
       <span class="vd-hub-q">Gradivo: ch. 1–5 i ch. 6a (teorija igara). Zadaci s kratkim odgovorima, grafovi i računski primjeri.</span>
     </div>
 
-    <div class="vd-hub-card vd-soon">
-      <span class="vd-badge">Uskoro</span>
+    <a class="vd-hub-card vd-ready" href="predavanja/08-kolektivni-izbor.html" target="_blank" rel="noopener">
+      <span class="vd-badge vd-badge-ready">Dostupno</span>
       <span class="vd-hub-num">Predavanje 8</span>
-      <span class="vd-hub-name">Kolektivno djelovanje i pravila glasovanja</span>
-      <span class="vd-hub-q">Arrowljev teorem nemogućnosti, paradoks glasanja, teorija medijanskog birača i alternative glasačkim pravilima.</span>
-    </div>
+      <span class="vd-hub-name">Kolektivni izbor i pravila glasovanja</span>
+      <span class="vd-hub-q">Condorcetov paradoks, Arrowljev teorem nemogućnosti, Bordino pravilo, medijanski glasač i kontrola dnevnog reda — uz tri interaktivna grafa.</span>
+      <span class="vd-go">Otvori predavanje →</span>
+    </a>
 
     <div class="vd-hub-card vd-soon">
       <span class="vd-badge">Uskoro</span>

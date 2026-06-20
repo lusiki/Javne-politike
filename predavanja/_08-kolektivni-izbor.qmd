@@ -1,0 +1,889 @@
+---
+title: "Kolektivni izbor"
+subtitle: "Paradoksi glasovanja, Arrowljev teorem i kontrola dnevnog reda"
+author: "Milan Deskar-Škrbić · Petra Palić · Luka Šikić"
+lang: hr-HR
+bibliography: ../references.bib
+# Izvor je _-prefiksiran (predavanja/_08-...qmd) pa ga render knjige (quarto
+# render) NE dira; renderiraj ručno, a output-file daje čist naziv bez podvlake.
+output-file: 08-kolektivni-izbor.html
+format:
+  revealjs:
+    theme: statecraft.scss
+    embed-resources: true
+    slide-number: c/t
+    show-slide-number: all
+    progress: true
+    width: 1050
+    height: 700
+    margin: 0.08
+    center: false
+    transition: fade
+    transition-speed: fast
+    background-transition: fade
+    controls: true
+    controls-layout: bottom-right
+    touch: true
+    hash: true
+    history: true
+    fig-align: center
+    link-external-newwindow: true
+    footer: "Javne politike u Hrvatskoj · Predavanje 8 · [lusiki.github.io/Javne-politike](https://lusiki.github.io/Javne-politike/)"
+---
+
+## Od pojedinca do skupine {.dio-slide}
+
+[PREDAVANJE 8 · KOLEKTIVNI IZBOR]{.section-label}
+
+::: {.lead}
+Prošli smo put gledali stratešku interakciju među akterima koji slijede vlastite ciljeve. Danas postavljamo drukčije pitanje, kako spojiti mnoštvo pojedinačnih preferencija u jednu zajedničku odluku.
+:::
+
+. . .
+
+[Javne politike rijetko su odluka jednog pojedinca, one nastaju kroz kolektivni izbor.]{.accent}
+
+::: {.notes}
+Pozdravite studente i jasno povucite crtu prema prethodnom predavanju o teoriji igara i strateškoj interakciji. Naglasite da smo dosad pratili pojedinačne aktere koji slijede svoje ciljeve, a od danas se pitamo kako njihove preferencije spojiti u jednu odluku. Recite da je odluka pojedinca jednostavna jer ima preferencije i bira najbolju opciju, no javne politike rijetko nastaju tako. Istaknite da one nastaju kolektivnim izborom, postupkom kojim skupina s različitim preferencijama dolazi do zajedničke odluke. Ostavite trenutak tišine nakon istaknute rečenice, jer ona postavlja ton cijelog predavanja.
+:::
+
+## Skupine nemaju volju
+
+[INTELEKTUALNA ISKRENOST]{.section-label}
+
+::: {.lead}
+Izrazi poput „Hrvatska je odlučila” ili „volja naroda” zavode nas jer skupine nemaju um ni preferencije. Preferencije imaju samo pojedinci. [@arrow1951; @sen1970; @buchanan1962]
+:::
+
+. . .
+
+[Pretvaranje pojedinačnih rang-lista u jednu društvenu rang-listu]{.accent} nije tehnička formalnost, nego prijelaz pun logičkih paradoksa i proceduralnih zamki.
+
+::: {.notes}
+Pozovite studente na intelektualnu iskrenost koju traži teorija javnog izbora. Naglasite da su izrazi poput volje naroda jezična kratica koja nas zavodi, jer skupine nemaju um, preferencije ni volju. Inzistirajte na tome da preferencije postoje samo na razini pojedinca, što je temeljna metodološka pretpostavka cijelog dijela. Objasnite da je problem upravo u prijelazu, kako od heterogenih pojedinačnih rang-lista doći do jedne društvene rang-liste. Najavite da je taj prijelaz pun paradoksa i zamki, čime otvarate ostatak predavanja.
+:::
+
+## Zašto je to teško
+
+[NEDJELJIVOST]{.section-label}
+
+Na privatnom tržištu problem različitih preferencija rješava se elegantno, kroz cijene i [paralelnu potrošnju]{.accent}. Ako vi želite kavu, a ja čaj, oboje možemo biti zadovoljeni.
+
+. . .
+
+U javnoj sferi većina je dobara i politika [nedjeljiva]{.accent}. Ne možemo istodobno imati progresivan i proporcionalan porez, pa glasovanje postaje mehanizam [prisilne koordinacije]{.accent}.
+
+. . .
+
+::: {.cbox .kljucno}
+[Ključno]{.cbox-label}
+Ista skupina ljudi, s istim preferencijama, može doći do različitih odluka, ovisno o pravilima po kojima glasuje.
+:::
+
+::: {.notes}
+Suprotstavite tržište i javnu sferu kao dva načina nošenja s različitim preferencijama. Objasnite da tržište rješava razlike kroz cijene i paralelnu potrošnju, pa primjer kave i čaja studentima odmah razjasni ideju. Naglasite da je u javnoj sferi većina dobara nedjeljiva, jer ne možemo istodobno imati progresivan i proporcionalan porez ni dvije nespojive politike. Recite da zato glasovanje postaje prisilna koordinacija, gdje pravila agregacije postaju odlučujuća. Zaključite ključnom porukom, ista skupina s istim preferencijama može završiti s različitim odlukama, ovisno o pravilima, jer to je teza cijelog predavanja.
+:::
+
+## Agenda današnjeg predavanja
+
+[PLAN U ŠEST KORAKA]{.section-label}
+
+::: {.agenda}
+1. [Condorcetov paradoks]{.accent} — kako većina zapada u krug bez pobjednika.
+2. [Kaotična većina i sustavi glasovanja]{.accent} — kada se ciklus širi i koja pravila biramo.
+3. [Arrowljev teorem nemogućnosti]{.accent} — zašto nijedno pravilo ne zadovoljava sve razumne zahtjeve.
+4. [Bordino pravilo]{.accent} — pozicijski izlaz i njegova cijena.
+5. [Jednovršne preferencije i medijanski glasač]{.accent} — kada se stabilan ishod ipak pojavi.
+6. [Kontrola dnevnog reda i kompromisi]{.accent} — koliko moći leži u redoslijedu glasovanja.
+:::
+
+::: {.notes}
+Provedite studente kroz strukturu predavanja u jednoj minuti i naglasite logiku slijeda. Krenemo od Condorcetova paradoksa kao najjednostavnijeg primjera, a zatim pokazujemo kako se ciklus širi u kaotičnu većinu i kako biramo sustave glasovanja. Recite da problem potom poopćavamo do Arrowljeva teorema nemogućnosti, a Bordino pravilo pokazuje konkretnu cijenu te nemogućnosti. Posljednja dva koraka traže izlaz, jednovršne preferencije i medijanski glasač te kontrolu dnevnog reda. Istaknite središnju nit, da ishod ne ovisi samo o preferencijama, nego presudno o pravilima i redoslijedu.
+:::
+
+## Condorcetov paradoks {.dio-slide}
+
+[CIKLIČKA VEĆINA]{.section-label}
+
+Uzmimo tri birača i tri opcije, [A]{.var}, [B]{.var} i [C]{.var}. Prvi preferira A ispred B ispred C, drugi B ispred C ispred A, treći C ispred A ispred B. Svaki ima jasne, [dosljedne (tranzitivne)]{.accent} preferencije. [@condorcet1785]
+
+. . .
+
+::: {.def}
+**Condorcetov paradoks** pokazuje da parno većinsko glasovanje može biti ciklično, pa A pobjeđuje B, B pobjeđuje C, ali C pobjeđuje A, čime kolektiv ostaje bez nedvosmislenog pobjednika.
+:::
+
+::: {.notes}
+Postavite paradoks na najmanjem mogućem primjeru, tri birača i tri opcije. Polako pročitajte tri rang-liste i naglasite da svaki birač ima posve dosljedne, tranzitivne preferencije, jer to je čvor cijelog argumenta. Recite da bismo zato naivno očekivali i dosljedan zbroj, pa će nas paradoks tim više iznenaditi. Pažljivo izgovorite definiciju i ostavite je na ekranu dok studenti shvate što znači ciklus A pobjeđuje B, B pobjeđuje C, ali C pobjeđuje A. Najavite da ćemo na sljedećem slajdu taj ciklus razložiti korak po korak.
+:::
+
+## Ciklus na djelu
+
+[A▸B, B▸C, ALI C▸A]{.section-label}
+
+Uspoređujemo li opcije u parovima, dobivamo neobičan ishod. Između A i B pobjeđuje [A]{.var} (dva od tri birača), između B i C pobjeđuje [B]{.var}, no između A i C pobjeđuje [C]{.var}.
+
+. . .
+
+Kolektivna preferencija tako postaje [netranzitivna]{.accent}, premda su sve pojedinačne preferencije bile dosljedne.
+
+. . .
+
+Sljedeći graf prikazuje ishode parnih glasovanja kao strelice među opcijama i pokazuje zatvara li se ciklus ili postoji stabilan pobjednik.
+
+## Condorcetov ciklus na grafu {.smaller}
+
+[PARNO GLASOVANJE — ISPROBAJTE]{.section-label}
+
+```{ojs}
+//| echo: false
+viewof cond_controls = Inputs.form({
+  v1: Inputs.select(["A ▸ B ▸ C","A ▸ C ▸ B","B ▸ A ▸ C","B ▸ C ▸ A","C ▸ A ▸ B","C ▸ B ▸ A"], {value: "A ▸ B ▸ C", label: "Birač 1:"}),
+  v2: Inputs.select(["A ▸ B ▸ C","A ▸ C ▸ B","B ▸ A ▸ C","B ▸ C ▸ A","C ▸ A ▸ B","C ▸ B ▸ A"], {value: "B ▸ C ▸ A", label: "Birač 2:"}),
+  v3: Inputs.select(["A ▸ B ▸ C","A ▸ C ▸ B","B ▸ A ▸ C","B ▸ C ▸ A","C ▸ A ▸ B","C ▸ B ▸ A"], {value: "C ▸ A ▸ B", label: "Birač 3:"})
+})
+```
+
+```{ojs}
+//| echo: false
+cond_v1 = cond_controls.v1
+```
+
+```{ojs}
+//| echo: false
+cond_v2 = cond_controls.v2
+```
+
+```{ojs}
+//| echo: false
+cond_v3 = cond_controls.v3
+```
+
+```{ojs}
+//| echo: false
+{
+  const parse = (s) => s.split(" ▸ ");
+  const voters = [parse(cond_v1), parse(cond_v2), parse(cond_v3)];
+  const prefers = (v, x, y) => v.indexOf(x) < v.indexOf(y);
+  const pair = (x, y) => {
+    let wx = 0, wy = 0;
+    for (const v of voters) (prefers(v, x, y) ? wx++ : wy++);
+    return wx > wy ? x : y;
+  };
+
+  const ab = pair("A","B"), bc = pair("B","C"), ac = pair("A","C");
+  const wins = {A:0, B:0, C:0};
+  [ab, bc, ac].forEach(w => wins[w]++);
+  const condWinner = ["A","B","C"].find(k => wins[k] === 2);
+  const isCycle = condWinner === undefined;
+
+  const pos = {A: {x: 0, y: 1}, B: {x: 0.87, y: -0.5}, C: {x: -0.87, y: -0.5}};
+  const nodes = ["A","B","C"].map(k => ({id: k, x: pos[k].x, y: pos[k].y}));
+  const edges = [["A","B",ab],["B","C",bc],["A","C",ac]].map(([a,b,w]) => {
+    const loser = w === a ? b : a;
+    return {x1: pos[w].x, y1: pos[w].y, x2: pos[loser].x, y2: pos[loser].y};
+  });
+
+  const accent = isCycle ? "#C53030" : "#1C7C54";
+
+  return Plot.plot({
+    width: 560,
+    height: 380,
+    marginTop: 40,
+    marginBottom: 50,
+    style: {fontSize: "13px", fontFamily: "Public Sans, system-ui, sans-serif", color: "#3A332D", background: "transparent"},
+    x: {axis: null, domain: [-1.45, 1.45]},
+    y: {axis: null, domain: [-1.2, 1.55]},
+    marks: [
+      Plot.arrow(edges, {x1: "x1", y1: "y1", x2: "x2", y2: "y2",
+        stroke: accent, strokeWidth: 2.5, headLength: 13, inset: 28}),
+      Plot.dot(nodes, {x: "x", y: "y", r: 22, fill: "white", stroke: "#1C1916", strokeWidth: 2}),
+      Plot.text(nodes, {x: "x", y: "y", text: "id", fontSize: 18, fontWeight: 700, fill: "#1C1916"}),
+      Plot.text([isCycle ? "Ciklus — nema stabilnog pobjednika" : `Condorcetov pobjednik: ${condWinner}`],
+        {frameAnchor: "top", dy: -28, fill: accent, fontSize: 14, fontWeight: 700}),
+      Plot.text([`A vs B → ${ab}      B vs C → ${bc}      A vs C → ${ac}`],
+        {frameAnchor: "bottom", dy: 34, fill: "#3A332D", fontSize: 12})
+    ]
+  });
+}
+```
+
+::: {.isprobaj}
+Zadržite početni raspored u kojem tri rang-liste rotiraju u istom smjeru — strelice zatvaraju krug, a natpis javlja ciklus bez pobjednika. Promijenite biraču 2 samo jedno mjesto i petlja se prekida, pa se pojavljuje zeleni Condorcetov pobjednik. Za ciklus je potrebna upravo posebna kombinacija suprotstavljenih redoslijeda, a ne bilo koje neslaganje.
+:::
+
+::: {.notes}
+Tražite od studenata da predvide hoće li se strelice zatvoriti u krug prije nego promijenite izbornik. Pokažite da pri tri liste koje rotiraju u istom smjeru nema stabilnog pobjednika, a strelice se vrte u krugu. Promijenite jednome biraču samo jedno mjesto i istaknite kako se pojavljuje zeleni Condorcetov pobjednik. Naglasite da ciklus nije čest, ali jest moguć, i da upravo o redoslijedu glasovanja tada ovisi ishod. Povežite to s moći onoga tko slaže dnevni red, čime najavljujete kasniju temu.
+:::
+
+::: {.notes}
+Razložite ciklus korak po korak, jer studenti ga moraju vidjeti, a ne samo čuti. Prođite kroz sva tri para i svaki put pokažite koja dva od tri birača daju većinu, pa bude jasno odakle pobjeda. Naglasite poantu, svaki je pojedinačni glasač dosljedan, no njihov zbroj postaje netranzitivan, što je srž paradoksa. Zatim usmjerite pažnju na graf i objasnite da strelice pokazuju smjer pobjede u svakom paru, a zatvoreni krug znači ciklus. Pozovite studente da mijenjaju rang-liste i sami otkriju koja kombinacija stvara ciklus, a koja daje stabilnog pobjednika.
+:::
+
+## Tko kontrolira redoslijed
+
+[PRVI NAGOVJEŠTAJ]{.section-label}
+
+::: {.cbox .kljucno}
+[Ključno]{.cbox-label}
+Kada postoji ciklus, ishod ovisi o redoslijedu glasovanja. Onaj tko kontrolira dnevni red može odrediti rezultat, pa pravila igre nisu nevažna pozadina, nego oblikuju same ishode.
+:::
+
+::: {.notes}
+Izvucite iz paradoksa prvu veliku praktičnu posljedicu, moć dnevnog reda. Objasnite da kada postoji ciklus, redoslijed parnih glasovanja odlučuje koja opcija na kraju pobjeđuje. Recite da onaj tko slaže dnevni red, dakle bira koje se opcije i kojim redom stavljaju na glasovanje, time zapravo bira ishod. Naglasite da je ovo tek prvi nagovještaj teme koja se vraća kroz cijelo predavanje. Zaključite porukom da pravila igre nisu nevažna pozadina, nego oblikuju same ishode, čime povezujete ovaj slajd s tezom s početka sata.
+:::
+
+## Od jednog ciklusa do kaotične većine {.dio-slide}
+
+[MCKELVEYEV TEOREM]{.section-label}
+
+::: {.lead}
+Lako je ciklus odbaciti kao namješten primjer u kojem su preferencije birača biranjem podešene da se vrte u krug. Kad prostor odluke ima više od jedne dimenzije, ciklusi postaju pravilo, a ne iznimka, i to za gotovo bilo koju raspodjelu preferencija [@mckelvey1976].
+:::
+
+. . .
+
+[Vješt agendar može u nekoliko koraka voditi kolektivnu odluku od bilo koje početne točke do bilo koje druge točke u prostoru opcija.]{.accent}
+
+::: {.notes}
+Otvorite novu cjelinu jasnim obratom prema prethodnom primjeru ciklusa. Naglasite čestu obranu, da je ciklus tek konstrukcija s podešenim preferencijama, i odmah je razgradite McKelveyevim rezultatom. Inzistirajte na ključnoj riječi, dimenzija, jer čim ih je više od jedne ciklus postaje pravilo, a ne kuriozitet. Pustite da druga rečenica o agendaru sjedne, jer ona pokazuje koliko je moć redoslijeda velika. Recite studentima da ćemo iz toga izvesti najvažniju pouku cijelog bloka, da stabilnost ne dolazi iz birača nego iz procedure.
+:::
+
+## Stabilnost dolazi iz procedure
+
+[NE IZ PREFERENCIJA]{.section-label}
+
+Stabilnost demokratskih ishoda ne dolazi iz preferencija birača, nego iz [proceduralnih ograničenja]{.accent}, pravila glasovanja i jednodimenzionalnih agendi koje sustav izričito uvodi da bi spriječio teorijski kaos.
+
+. . .
+
+Cikluse je u stvarnim tijelima teško izravno opaziti, jer parlamenti ne glasuju o svim parovima opcija nego o pomno odabranom redoslijedu amandmana, pa konačni zapisnik pokazuje stabilan ishod iako bi neograničeno parno glasovanje otkrilo cikličku većinu u podlozi.
+
+. . .
+
+::: {.cbox .kljucno}
+[Ključno]{.cbox-label}
+Riker je u stvarnim zakonodavnim povijestima našao slučajeve u kojima je redoslijed glasovanja, a ne stabilna većinska volja, odlučio ishod, pa odsutnost vidljivih ciklusa nije dokaz da ih nema, nego često znak da ih je procedura unaprijed prikrila [@riker1982].
+:::
+
+::: {.notes}
+Ovo je intelektualno težište bloka, pa mu dajte vremena. Naglasite protuintuitivnu poruku, red u demokraciji ne stvaraju složne preferencije nego pravila koja kaos drže izvan vidokruga. Objasnite zašto cikluse ne vidimo, parlament ne glasuje o svim parovima nego o odabranom nizu amandmana, pa površina izgleda uredno. Iskoristite Rikerov nalaz da pokažete da je to stvarna povijesna pojava, a ne samo teorija. Ostavite zadnju rečenicu da odjekne, odsutnost ciklusa nije dokaz njihove odsutnosti, nego trag uspješne procedure.
+:::
+
+## Koliko dimenzija ima politika
+
+[MJERENJE: NOMINATE]{.section-label}
+
+::: {.cbox .empirija}
+[Empirija]{.cbox-label}
+Poole i Rosenthal rekonstruirali su idealne točke svih članova američkog Kongresa kroz više od dva stoljeća poimeničnih glasovanja, postupkom prostornog skaliranja (*NOMINATE*), i pokazali da jedna jedina dimenzija objašnjava oko 80 % zabilježenih glasova [@poole2007].
+:::
+
+. . .
+
+Niska dimenzionalnost nije dokaz da temeljne preferencije nisu višedimenzionalne, nego pokazuje koliko snažno [stranačka disciplina]{.accent} i procedura stišću prostor odlučivanja na jednu lijevo-desnu os.
+
+. . .
+
+Kada ta stega oslabi, [dimenzionalnost mjerljivo raste]{.accent}, a s njom i učestalost nestabilnih ishoda, što je empirijski trag McKelveyeva teorijskog rezultata u stvarnom parlamentu.
+
+::: {.notes}
+Pokažite studentima da apstraktni teorem ima mjerljivu posljedicu u stvarnom parlamentu. Objasnite što NOMINATE radi, iz zabilježenih glasova procjenjuje gdje na osi leži svaki zastupnik, dakle njegovu idealnu točku. Naglasite snagu nalaza, jedna os objašnjava oko četiri petine svih glasova kroz dva stoljeća. Upozorite na ispravno tumačenje, niska dimenzionalnost ne znači da su preferencije jednostavne, nego da ih disciplina i procedura sabijaju. Zaključite mostom prema McKelveyu, kad stega popusti, dimenzija raste i ciklus ponovno isplivava, baš kako teorija predviđa.
+:::
+
+## Nijedan sustav nije neutralan {.smaller}
+
+[SUSTAVI GLASOVANJA]{.section-label}
+
+| Sustav glasovanja | Jednostavnost | Otpornost na strateško glasovanje | Poštivanje Condorcetova pobjednika | Primjena u praksi | Glavni nedostatak |
+|---|---|---|---|---|---|
+| Prosta većina | visoka | niska | nisko | 1. krug predsjedničkih izbora (RH) | rasipanje glasova, „manje zlo” |
+| Dvokružni većinski | srednja | srednja | srednje | predsjednički izbori (RH) | visoki troškovi kampanje |
+| Proporcionalni (d'Hondt) | srednja | srednja | nisko | izbori za Sabor i Europski parlament | fragmentacija, intenzivan *logrolling* |
+| Rangirano glasovanje (RCV) | niska | visoka | srednje | rijetko u EU | složeno brojanje |
+
+*Usporedba sustava glasovanja. Izrada autora.*
+
+::: {.notes}
+Provedite studente kroz tablicu redak po redak, ne preskačite stupce. Naglasite da nijedan sustav nije najbolji u svemu, svaki nešto dobiva i nešto plaća. Kod proste većine istaknite rasipanje glasova i logiku „manje zlo”, koju studenti prepoznaju iz domaćih izbora. Kod proporcionalnog sustava povežite fragmentaciju i trgovinu glasovima s ranijim primjerima koalicijskog cjenkanja. Kod rangiranog glasovanja naglasite obrnutu razmjenu, veća otpornost na taktiziranje plaća se složenijim brojanjem. Zaključite porukom da izbor sustava nije tehnički detalj nego politička odluka s posljedicama.
+:::
+
+## Manipulabilnost je ugrađena
+
+[GIBBARD-SATTERTHWAITE]{.section-label}
+
+Svaki razuman izborni sustav s barem tri opcije podložan je [strateškom glasovanju]{.accent}, biraču u nekim situacijama nije u interesu glasati za iskreno najdražu opciju, nego taktički za onu s većim izgledima [@gibbard1973; @satterthwaite1975].
+
+. . .
+
+To nije mana lošeg dizajna koja bi se boljim pravilom mogla ukloniti, nego [ugrađeno svojstvo]{.accent} svake agregacije preferencija.
+
+. . .
+
+::: {.cbox .kljucno}
+[Ključno]{.cbox-label}
+U praksi je manipulacija ograničena jer uspješno taktiziranje traži gotovo potpuno poznavanje tuđih listića, što je u velikom biračkom tijelu rijetko dostupno, pa se većina birača i pod manipulabilnim pravilima drži iskrenog poretka [@mueller1989].
+:::
+
+::: {.notes}
+Predstavite Gibbard-Satterthwaiteov rezultat kao logičan nastavak tablice, kad nijedan sustav nije neutralan, slijedi da nijedan nije ni neranjiv. Naglasite ključnu poruku, manipulabilnost nije kvar pojedinog pravila nego svojstvo svakog razumnog sustava s tri ili više opcija. Razgradite česti optimizam da bi se boljim dizajnom problem mogao ukloniti, formalno se ne može, osim diktaturom. Zatim ublažite zaključak ključnim okvirom, u stvarnosti je taktiziranje teško jer traži poznavanje tuđih namjera. Zaključite da zabilježeni glasovi zato ne otkrivaju nužno prave preferencije, što otežava čitanje izbornih ishoda kao izravne volje naroda.
+:::
+
+## Arrowljev teorem nemogućnosti {.dio-slide}
+
+[NAJDUBLJE PITANJE]{.section-label}
+
+::: {.lead}
+Condorcet pokazuje da glasovanje [može]{.accent} biti ciklično. Arrow ide korak dublje i pita postoji li [uopće]{.accent} ikakav sustav agregacije koji bi pouzdano i razumno pretvarao pojedinačne preferencije u društvenu odluku. [@arrow1951]
+:::
+
+. . .
+
+::: {.def}
+**Arrowljev teorem nemogućnosti** dokazuje da ne postoji sustav agregacije individualnih preferencija koji istodobno zadovoljava neograničenu domenu, kolektivnu racionalnost, Pareto-efikasnost, neovisnost o nevažnim alternativama i nediktatorstvo kada postoje barem tri alternative. [@arrow1951]
+:::
+
+::: {.notes}
+Povucite jasnu crtu prema prethodnom slajdu o Condorcetovu paradoksu. Naglasite da Condorcet pokazuje konkretan kvar jednog pravila, dok Arrow postavlja pitanje na potpuno drugoj razini, dakle za sve moguće sustave odjednom. Recite studentima da je ovo jedan od najsnažnijih i najpesimističnijih rezultata ekonomske znanosti dvadesetog stoljeća. Polako pročitajte definiciju i upozorite da je ključ riječ istodobno, jer pojedinačno svaki uvjet izgleda bezazleno. Spomenite da uvjet barem tri alternative nije sporedan, nego presudan, jer s dvije opcije problem nestaje. Najavite da ćemo na sljedećim slajdovima razložiti svih pet uvjeta.
+:::
+
+## Pet razumnih uvjeta
+
+[ŠTO ARROW TRAŽI]{.section-label}
+
+Arrow je tražio pravilo koje istodobno zadovoljava nekoliko razumnih i naizgled minimalnih zahtjeva.
+
+. . .
+
+::: {.agenda}
+1. [Neograničena domena]{.accent} — pravilo mora raditi za sve moguće kombinacije pojedinačnih preferencija.
+2. [Kolektivna racionalnost]{.accent} — društveni poredak mora biti dosljedan, dakle potpun i tranzitivan.
+3. [Pareto-efikasnost]{.accent} — ako svi preferiraju A ispred B, i društvo preferira A ispred B.
+4. [Neovisnost o nevažnim alternativama]{.accent} — rangiranje A i B ne smije se mijenjati uvođenjem ili uklanjanjem treće opcije C.
+5. [Nediktatorstvo]{.accent} — nijedan pojedinac ne smije nametnuti svoju volju cijeloj skupini bez obzira na ostale.
+:::
+
+::: {.notes}
+Provedite studente kroz pet uvjeta jedan po jedan i naglasite koliko svaki zvuči nedužno i poželjno kad ga čujemo zasebno. Kod neograničene domene istaknite da ne želimo pravilo koje radi samo za zgodne slučajeve. Kod kolektivne racionalnosti podsjetite ih da dosljednost znači upravo potpunost i tranzitivnost koje smo ranije definirali. Pareto-uvjet objasnite kao minimalno poštivanje jednoglasja, jer ako baš svi nešto žele, glupo bi bilo da društvo bira suprotno. Neovisnost o nevažnim alternativama uvedite kao najsuptilniji uvjet, jer upravo on najčešće puca u praksi. Nediktatorstvo predstavite kao samu srž demokratske ideje. Zamolite studente da pamte ovih pet jer ćemo na sljedećem slajdu vidjeti da ih je nemoguće sve pomiriti.
+:::
+
+## Nemoguće ih je sve zadovoljiti
+
+[REZULTAT]{.section-label}
+
+Arrowljev dokaz pokazuje da nijedno pravilo ne može zadovoljiti svih pet uvjeta istodobno čim postoje [barem tri alternative]{.accent}. Svaki realan sustav glasovanja mora žrtvovati barem jedno poželjno svojstvo.
+
+. . .
+
+::: {.cbox .kljucno}
+[Ključno]{.cbox-label}
+To ne znači da je demokracija besmislena, nego da svako pravilo odlučivanja ima ugrađene kompromise i moguće nedosljednosti. Izbor pravila uvijek je izbor između nesavršenih opcija.
+:::
+
+. . .
+
+Intuicija dokaza pokazuje da nemogućnost nije puka nezgoda s jednim nezgodnim uvjetom. Iz neograničene domene, Pareto-uvjeta i neovisnosti o nevažnim alternativama slijedi da postoji [odlučujuća skupina]{.accent} čije slaganje određuje društveni izbor. Isti uvjeti tu odlučnost potom sve više stežu, sa skupine na sve manji krug, dok se ne svede na jednog jedinog pojedinca, upravo onog [diktatora]{.accent} kojeg peti uvjet zabranjuje. [@arrow1963; @sen1970]
+
+::: {.notes}
+Najprije jasno izrecite sam rezultat, da je nemoguće pomiriti pet uvjeta čim imamo tri ili više opcija. Odmah razbijte pogrešno tumačenje koje studenti često izvuku, da teorem dokazuje besmislenost demokracije. Inzistirajte na ispravnoj poruci, svako pravilo ima ugrađene kompromise i mi biramo koje ćemo svojstvo žrtvovati. Zatim na klik otkrijte intuiciju dokaza i vodite je sporo, korak po korak. Naglasite ključnu sliku, odlučujuća skupina koja se postupno steže dok se ne svede na jednog čovjeka. Poentirajte da je taj čovjek upravo zabranjeni diktator, pa pet minimalnih zahtjeva strukturno ne može stajati zajedno.
+:::
+
+## Uvjeti i posljedice {.smaller}
+
+[ŠTO SE LOMI U PRAKSI]{.section-label}
+
+| Uvjet | Što zahtijeva | Posljedica kršenja u stvarnom svijetu |
+|---|---|---|
+| Neograničena domena | radi za sve moguće preferencije | blokade u duboko polariziranim društvima |
+| Kolektivna racionalnost | društveni poredak je dosljedan | cikličke većine i nestabilni ishodi |
+| Pareto-efikasnost | poštuje jednoglasne preferencije | loši kompromisi koje nitko zapravo ne želi |
+| Neovisnost o nevažnim alternativama | rang A i B ne ovisi o C | „spoiler” efekt trećih opcija |
+| Nediktatorstvo | nema diktatora | potpuna dosljednost zahtijeva koncentraciju moći |
+
+*Izrada autora prema Arrowu, Muelleru i Senu.*
+
+::: {.notes}
+Iskoristite tablicu kao sažetak cijelog bloka i prelazite redak po redak. Za svaki uvjet povežite stupac što zahtijeva s konkretnom posljedicom kršenja, jer studentima upravo desni stupac čini teorem opipljivim. Kod neograničene domene spomenite duboko polarizirana društva u kojima se ni o čemu ne može odlučiti. Kod kolektivne racionalnosti vratite se na Condorcetove cikličke većine s početka teme. Posebno se zadržite na pretposljednjem retku jer spoiler efekt vodi izravno u sljedeći slajd s hrvatskim primjerom. Zaključite paradoksom posljednjeg retka, da bi potpuna dosljednost zahtijevala koncentraciju moći koju nikako ne želimo.
+:::
+
+## Spoiler u praksi
+
+[NEOVISNOST O NEVAŽNIM ALTERNATIVAMA]{.section-label}
+
+::: {.cbox .praksa}
+[Praksa]{.cbox-label}
+Pojava treće relevantne opcije, primjerice Mosta ili Možemo!, može osjetno promijeniti odnos snaga dviju velikih stranaka iako birači nisu bitno promijenili mišljenje o tim dvjema strankama. To je upravo kršenje uvjeta neovisnosti o nevažnim alternativama (*spoiler effect*). Na razini EU-a slična se dinamika vidi pri glasovanju kvalificiranom većinom u Vijeću, gdje stavovi pojedinih zemalja mogu blokirati ili izmijeniti pakete poput fiskalnih pravila ili „Fit for 55”.
+:::
+
+::: {.notes}
+Spustite apstraktni teorem na konkretno hrvatsko izborno iskustvo koje studenti prepoznaju. Objasnite mehanizam spoiler efekta polako, ulazak treće stranke preraspodjeljuje glasove iako se mišljenje o dvjema velikima nije promijenilo. Naglasite da je to doslovno kršenje neovisnosti o nevažnim alternativama, a ne tek politička anegdota. Povežite primjer s pretposljednjim retkom tablice s prethodnog slajda. Zatim podignite razinu na EU i pokažite da se ista logika vidi pri glasovanju kvalificiranom većinom u Vijeću. Zaključite porukom da Arrowljevi uvjeti nisu školska apstrakcija, nego svakodnevno opisuju stvarnu dinamiku odlučivanja.
+:::
+
+## Bordino pravilo {.dio-slide}
+
+[ČITAJ CIJELU RANG-LISTU]{.section-label}
+
+::: {.lead}
+Pluralno glasovanje broji samo prvo mjesto i zanemaruje sav ostatak poretka. Zato kandidat kojeg vatrena manjina obožava, a tiha ga većina drži najgorom opcijom, može pobijediti, jer rang-lista te većine nikad ne uđe u zbroj.
+:::
+
+. . .
+
+::: {.def}
+**Bordino pravilo** (*Borda count*) svakom kandidatu dodjeljuje bodove prema mjestu na svakoj rang-listi, pri čemu uz [m]{.var} kandidata prvo mjesto nosi [m−1]{.var} bodova, drugo [m−2]{.var}, i tako redom do nule, a pobjeđuje kandidat s najvećim ukupnim zbrojem. [@borda1781]
+:::
+
+::: {.notes}
+Otvorite novu cjelinu jasnim kontrastom prema pluralnom glasovanju, koje gleda samo vrh listića. Naglasite slabost koju time uvodimo, da snažno polarizirajući kandidat može pobijediti jer mu se protivnici nikad ne čuju u zbroju. Provedite studente kroz definiciju polako i istaknite da uz tri kandidata bodovi idu dva, jedan, nula. Recite da Borda time u odluku uvodi cijeli poredak, a ne samo prvi izbor. Spomenite usput da zamisao seže u 1781. i Bordin memorandum Francuskoj akademiji znanosti. Ostavite trenutak da slika polarizirajućeg pobjednika sjedne prije nego prijeđemo na formalizaciju.
+:::
+
+## Pozicijski sustavi
+
+[VEKTOR TEŽINA]{.section-label}
+
+::: {.lead}
+Bordino je pravilo poseban slučaj šire obitelji. Pozicijski sustav [k]{.var}-tom mjestu na listiću pridružuje [w_k]{.var} bodova, a pojedini sustavi tek su različiti izbori tog vektora težina.
+:::
+
+. . .
+
+- [Pluralno]{.accent} glasovanje, [w = (1, 0, …, 0)]{.var}, broji samo prvo mjesto i sav ostatak poretka zanemaruje.
+- [Antipluralno]{.accent} glasovanje, [w = (1, …, 1, 0)]{.var}, kažnjava samo posljednje mjesto, a sva ostala izjednačuje.
+- [Bordin]{.accent} sustav, [w = (m−1, m−2, …, 1, 0)]{.var}, ima ravnomjeran pad u kojem je bodovna razlika između svaka dva susjedna mjesta jednaka.
+
+. . .
+
+Upravo taj ravnomjeran pad daje Bordi svojstva po kojima se izdvaja.
+
+::: {.notes}
+Predstavite vektor težina kao zajednički jezik za sva pozicijska pravila i istaknite da se ona razlikuju samo po brojevima u tom vektoru. Pokažite tri krajnja izbora redom, pluralno gleda samo vrh, antipluralno samo kažnjava dno, a Borda ravnomjerno raspoređuje bodove kroz cijeli poredak. Naglasite ključnu riječ, ravnomjeran pad, jer je razlika između susjednih mjesta uvijek jednaka. Recite da pluralno i antipluralno leže na rubovima raspona, a Borda u sredini koja koristi najviše informacija s listića. Najavite da će upravo ta srednja pozicija u sljedećem primjeru dati drugačijeg pobjednika od parnog glasovanja.
+:::
+
+## Condorcet protiv Borde
+
+[ISTI GLASOVI, RAZNI POBJEDNICI]{.section-label}
+
+Pred devetnaest glasača stoje tri kandidata. [Deset]{.accent} ih rangira [A ▸ B ▸ C]{.var}, a preostalih [devet]{.accent} drži [B ▸ C ▸ A]{.var}.
+
+. . .
+
+U parnim dvobojima [A]{.accent} pobjeđuje [B]{.var} s deset prema devet i jednako svladava [C]{.var}, pa je [A Condorcetov pobjednik]{.accent}, nadvladava svakoga ponaosob.
+
+. . .
+
+Uz Bordine težine [(2, 1, 0)]{.var} slika se okreće. [B(A) = 20]{.var}, [B(B) = 28]{.var}, [B(C) = 9]{.var}, pa [Borda bira B]{.accent}. Razlog je što devet glasača stavlja [A]{.var} na samo dno, dok [B]{.var} nikomu nije najgori i svima je barem drugi.
+
+. . .
+
+Graf koji slijedi prikazuje Bordin zbroj svakog kandidata kao stupce i javlja tko je Condorcetov pobjednik, pa se odmah vidi slažu li se ta dva pravila ili se razilaze.
+
+## Borda protiv Condorceta na grafu {.smaller}
+
+[POZICIJSKO GLASOVANJE — ISPROBAJTE]{.section-label}
+
+```{ojs}
+//| echo: false
+viewof borda_controls = Inputs.form({
+  abc: Inputs.range([0, 20], {value: 10, step: 1, width: 150, label: "A ▸ B ▸ C"}),
+  acb: Inputs.range([0, 20], {value: 0,  step: 1, width: 150, label: "A ▸ C ▸ B"}),
+  bca: Inputs.range([0, 20], {value: 9,  step: 1, width: 150, label: "B ▸ C ▸ A"}),
+  bac: Inputs.range([0, 20], {value: 0,  step: 1, width: 150, label: "B ▸ A ▸ C"}),
+  cab: Inputs.range([0, 20], {value: 0,  step: 1, width: 150, label: "C ▸ A ▸ B"}),
+  cba: Inputs.range([0, 20], {value: 0,  step: 1, width: 150, label: "C ▸ B ▸ A"})
+})
+```
+
+```{ojs}
+//| echo: false
+{
+  const w = borda_controls;
+  const groups = [
+    {rank: ["A","B","C"], n: w.abc},
+    {rank: ["A","C","B"], n: w.acb},
+    {rank: ["B","C","A"], n: w.bca},
+    {rank: ["B","A","C"], n: w.bac},
+    {rank: ["C","A","B"], n: w.cab},
+    {rank: ["C","B","A"], n: w.cba}
+  ];
+  const cands = ["A","B","C"];
+
+  const borda = {A: 0, B: 0, C: 0};
+  for (const g of groups) {
+    borda[g.rank[0]] += 2 * g.n;
+    borda[g.rank[1]] += 1 * g.n;
+    borda[g.rank[2]] += 0 * g.n;
+  }
+
+  const prefers = (rank, x, y) => rank.indexOf(x) < rank.indexOf(y);
+  const pairCount = (x, y) => d3.sum(groups, g => prefers(g.rank, x, y) ? g.n : 0);
+  const beats = (x, y) => {
+    const xy = pairCount(x, y), yx = pairCount(y, x);
+    return xy > yx ? x : (yx > xy ? y : null);
+  };
+  const condWinner = cands.find(c => cands.filter(o => o !== c).every(o => beats(c, o) === c));
+
+  const maxB = d3.max(cands, c => borda[c]);
+  const bordaWinners = cands.filter(c => borda[c] === maxB && maxB > 0);
+  const bordaWinner = bordaWinners.length === 1 ? bordaWinners[0] : null;
+
+  const agree = bordaWinner && condWinner && bordaWinner === condWinner;
+  const accent = agree ? "#1C7C54" : "#6B1F26";
+
+  const data = cands.map(c => ({cand: c, score: borda[c], isWin: c === bordaWinner}));
+  const condText  = condWinner ? `Condorcetov pobjednik: ${condWinner}` : "Condorcetov pobjednik: nema (ciklus)";
+  const bordaText = bordaWinner ? `Bordin pobjednik: ${bordaWinner} (${borda[bordaWinner]} bod.)` : "Bordin pobjednik: neodlučeno";
+  const verdict   = (bordaWinner && condWinner) ? (agree ? "Pravila se slažu" : "Pravila se razilaze") : "";
+
+  return Plot.plot({
+    width: 580,
+    height: 340,
+    marginLeft: 52,
+    marginTop: 60,
+    marginBottom: 44,
+    style: {fontSize: "13px", fontFamily: "Public Sans, system-ui, sans-serif", color: "#3A332D", background: "transparent"},
+    x: {label: "Kandidat", domain: cands},
+    y: {label: "↑ Bordin zbroj", domain: [0, Math.max(10, maxB * 1.18)], grid: true},
+    marks: [
+      Plot.ruleY([0], {stroke: "#C9C3B8"}),
+      Plot.barY(data, {x: "cand", y: "score", fill: d => d.isWin ? "#4A6B5C" : "#C9BBA3"}),
+      Plot.text(data, {x: "cand", y: "score", text: d => d.score, dy: -8,
+        fontSize: 14, fontWeight: 700, fill: "#1C1916"}),
+      Plot.text([bordaText], {frameAnchor: "top", dy: -48, fontSize: 13, fontWeight: 700, fill: "#4A6B5C"}),
+      Plot.text([condText],  {frameAnchor: "top", dy: -30, fontSize: 13, fontWeight: 700, fill: "#1C1916"}),
+      Plot.text([verdict],   {frameAnchor: "top", dy: -10, fontSize: 14, fontWeight: 700, fill: accent})
+    ]
+  });
+}
+```
+
+::: {.isprobaj}
+Zadržite početni raspored (10 × A▸B▸C, 9 × B▸C▸A) i vidite da Bordin pobjednik B nije Condorcetov pobjednik A. Povećavajte broj birača koji drže A▸B▸C i Bordin zbroj kandidata A sustiže pa prestiže B, dok se pravila ne usklade. Rasporedite glasove u tri jednake skupine koje rotiraju u istom smjeru i parno glasovanje upada u ciklus, dok Borda i dalje proglašava pobjednika.
+:::
+
+::: {.notes}
+Pokažite da pri istom profilu preferencija parno i pozicijsko pravilo mogu proglasiti različite pobjednike. Krenite od početnog rasporeda i naglasite da je A Condorcetov pobjednik, ali B Bordin, jer A leži na dnu liste kod gotovo polovice birača. Mijenjajte klizače i pokažite kako se pobjednici mijenjaju i kada se pravila slažu. Pokažite i čisti ciklus s tri rotirajuće skupine, gdje parno glasovanje nema pobjednika, a Borda ga ima. Zaključite da izbor pravila, a ne samo glasovi, određuje ishod.
+:::
+
+::: {.notes}
+Provedite studente kroz primjer korak po korak i ne žurite s brojevima. Najprije postavite preferencije, deset za A na vrhu i devet za B na vrhu, pa zajedno provjerite parne dvoboje i utvrdite da A pobjeđuje svakoga. Tek tada otkrijte Bordine bodove i pustite da iznenađenje sjedne, isti glasovi, drugi pobjednik. Objasnite mehanizam, A tijesno pobjeđuje u svakom paru, ali je za gotovo polovicu birača najgori, dok je B svima barem drugi i nikomu zadnji. Naglasite da parno glasovanje tu razliku ne vidi jer mjeri par po par, dok Bordin zbroj cijeli poredak očuva. Najavite graf kao alat kojim klizačima možete mijenjati broj birača i gledati kada se pravila slažu, a kada razilaze.
+:::
+
+## Zašto baš Borda
+
+[YOUNG I SAARI]{.section-label}
+
+::: {.lead}
+Ravnomjeran raspored bodova nije proizvoljan. Dva su rezultata pokazala zašto se Borda izdvaja među svim pozicijskim sustavima.
+:::
+
+. . .
+
+::: {.columns}
+::: {.column width="50%"}
+[Young]{.accent}
+
+Dokazao je da je Bordino pravilo jedini pozicijski sustav koji istodobno zadovoljava neutralnost, vjernost, poništavanje suprotstavljenih parova i konzistentnost. [@young1974]
+:::
+::: {.column width="50%"}
+[Saari]{.accent}
+
+Geometrijski je pokazao da Borda posve poništava cikličke komponente i proizvodi najmanje paradoksa među pozicijskim sustavima. [@saari1995]
+:::
+:::
+
+. . .
+
+::: {.cbox .kljucno}
+[Ključno]{.cbox-label}
+Cijena te stabilnosti je osjetljivost na taktičko rangiranje. Hibridi poput Nansonova i Baldwinova sustava biraju Condorcetova pobjednika kad on postoji, ali zauzvrat gube monotonost. [@nanson1882; @baldwin1926]
+:::
+
+::: {.notes}
+Zaokružite cjelinu odgovorom na pitanje zašto bismo uopće birali baš Bordu. Iznesite Youngov rezultat kao aksiomatsko opravdanje, Borda je jedini pozicijski sustav koji zadovoljava sva četiri navedena uvjeta istodobno. Dopunite ga Saarijevom geometrijom, koja rastavlja prostor preferencija i pokazuje da Borda upravo cikličke, paradoksalne komponente posve poništava. Tako studenti dobivaju dva neovisna razloga, jedan algebarski i jedan geometrijski, za istu poruku. Naglasite da nema besplatnog ručka, Bordina je cijena osjetljivost na taktičko rangiranje. Spomenite hibride Nanson i Baldwin koji spašavaju Condorcetova pobjednika, ali gube monotonost, čime se vraćamo na Arrowljevu pouku da svaki izbor pravila znači žrtvovanje neke vrijednosti.
+:::
+
+## Jednovršne preferencije {.dio-slide}
+
+[KAD SE STABILNOST VRAĆA]{.section-label}
+
+::: {.lead}
+Ciklusi iz prethodnih primjera nastaju jer preferencije birača nemaju zajedničku strukturu. No čim ta struktura postoji, kolektivni izbor može biti stabilan.
+:::
+
+. . .
+
+Ključan je slučaj u kojem se sve opcije poredaju na [jednoj dimenziji]{.accent} (primjerice na osi manje – više javne potrošnje), a svaki birač na njoj ima [jednu najdražu točku]{.accent}.
+
+. . .
+
+::: {.def}
+**Jednovršne preferencije** (*single-peaked preferences*) su preferencije pri kojima svaki birač ima jednu najdražu točku na nekoj dimenziji politike, a privlačnost svake opcije monotono pada s udaljenošću od te točke; ta struktura jamči stabilnost ishoda većinskoga glasovanja.
+:::
+
+::: {.notes}
+Otvorite cjelinu obratom raspoloženja, dosad smo gledali kaos i cikluse, a sada pokazujemo kad se stabilnost vraća. Naglasite dijagnozu, ciklusi nastaju jer preferencije nemaju zajedničku strukturu, pa rješenje mora biti uvođenje strukture. Objasnite što znači poredati opcije na jednoj dimenziji, najlakše na osi veličine javne potrošnje, od manje prema više. Zadržite se na slici jednoga vrha, svaki birač ima jednu najdražu točku i sve mu je to manje privlačno što je dalje od nje. Pripremite studente da iz te naizgled tehničke pretpostavke izvodimo jedan od najpoznatijih rezultata teorije izbora.
+:::
+
+## Teorem o medijanskom glasaču
+
+[SREDINA POBJEĐUJE]{.section-label}
+
+Kada su preferencije jednovršne i odlučuje se o jednoj dimenziji, većinsko glasovanje proizvodi [stabilan ishod]{.accent}, i to uvijek isti.
+
+. . .
+
+Pobjeđuje opcija najbliža [sredini]{.accent} rasporeda biračkih preferencija, a birača koji se ondje nalazi nazivamo medijanskim glasačem.
+
+. . .
+
+::: {.def}
+**Medijanski glasač** je birač čija idealna točka leži u sredini rasporeda svih birača; prema teoremu o medijanskom glasaču, kada su preferencije jednovršne i odluka je jednodimenzionalna, pobjeđuje opcija kojoj je taj birač najbliži. [@black1948]
+:::
+
+. . .
+
+Taj rezultat detaljnije primjenjujemo u predavanju o [strankama i izborima]{.accent}.
+
+::: {.notes}
+Izvedite rezultat polako, jer je on intuitivno snažan kad ga studenti jednom vide. Recite da uz jednovršnost i jednu dimenziju ishod nije samo stabilan, nego je i jednoznačan, uvijek pobjeđuje ista opcija. Objasnite zašto je to baš medijanska točka, svaka većina protiv nje raspala bi se jer bi jedna polovica radije prešla k njoj. Povežite intuiciju s poznatom tendencijom stranaka da se približavaju sredini biračkoga tijela. Najavite da ćemo mehaniku natjecanja za medijanskoga glasača razraditi u predavanju o strankama i izborima, da studenti znaju kamo ta nit vodi.
+:::
+
+## Ali uvjeti su zahtjevni
+
+[VIŠE DIMENZIJA RUŠI STABILNOST]{.section-label}
+
+Medijanski glasač pokazuje da kolektivni izbor [nije nužno kaotičan]{.accent}. No njegovi su uvjeti zahtjevni.
+
+. . .
+
+Stvarne političke odluke rijetko su jednodimenzionalne. Kada se istodobno odlučuje o [porezima]{.accent}, [zdravstvu]{.accent}, [okolišu]{.accent} i [vanjskoj politici]{.accent}, jednovršnost se gubi i ciklusi se vraćaju. [@mckelvey1976]
+
+. . .
+
+::: {.cbox .kljucno}
+[Ključno]{.cbox-label}
+Senova kritika pokazuje da jednovršnost nestaje gotovo pravilom čim podjela uvodi pitanja identiteta, povjerenja u institucije ili kulturne pripadnosti, pa stabilnost pada s rastom dimenzionalnosti. [@sen1970]
+:::
+
+::: {.notes}
+Spustite ton i upozorite studente da je medijanski rezultat lijep, ali krhak, jer počiva na zahtjevnoj pretpostavci. Naglasite da je jedna dimenzija srce problema, čim se odlučuje o više pitanja istodobno, jednovršnost se najčešće gubi. Dajte konkretan paket, porezi, zdravstvo, okoliš i vanjska politika, i pokažite da birač u njemu lako bude jednovršan po jednoj osi, a dvovršan po drugoj. Provedite ih kroz Senovu kritiku, identitet, povjerenje u institucije i kulturna pripadnost nisu šum, nego strukturni dio modernoga izbora. Zaključite porukom za pamćenje, stabilnost ishoda pada kako raste dimenzionalnost politike, što nas vodi izravno u sljedeću temu o moći dnevnoga reda.
+:::
+
+## Kontrola dnevnog reda {.dio-slide}
+
+[TKO PREKIDA CIKLUS]{.section-label}
+
+::: {.lead}
+Čak i kad su kolektivne preferencije cikličke, odluke se moraju donijeti, proračun usvojiti i zakon donijeti. Zato postaje ključno tko određuje o čemu se i kojim redoslijedom glasuje.
+:::
+
+. . .
+
+::: {.def}
+**Moć kontrole dnevnog reda** (*agenda-setting power*) je sposobnost određivanja o čemu će se glasovati, kojim redoslijedom i u kojem obliku, čime agendar može usmjeriti konačni ishod i u uvjetima cikličnih preferencija. [@mckelvey1976; @romer1978]
+:::
+
+. . .
+
+Onaj tko oblikuje proceduru, predsjednik odbora, Vlada ili predsjedavajući, [često ima veću stvarnu moć od same većine glasova]{.accent}.
+
+::: {.notes}
+Otvorite novu cjelinu jasnom porukom da ciklus nije kraj priče, jer odluke se ipak moraju donijeti. Naglasite da onaj tko bira redoslijed i oblik glasovanja drži stvarnu polugu moći, čak i kad nema vlastitu većinu. Pročitajte definiciju polako i istaknite tri elementa, o čemu, kojim redoslijedom i u kojem obliku. Dajte konkretne aktere, predsjednika odbora, Vladu i predsjedavajućeg, da pojam ne ostane apstraktan. Zaključite mišlju da je kontrola dnevnog reda izvor moći koji se često podcjenjuje. Ostavite kratku stanku prije prelaska na herestetiku.
+:::
+
+## Herestetika i pravila
+
+[STVARANJE DIMENZIJA]{.section-label}
+
+William Riker [herestetiku]{.accent} (*heresthetics*) opisuje kao umijeće strukturiranja političkog prostora. Gubitnik pod trenutnom podjelom ne uvjerava protivnike da promijene mišljenje, nego u raspravu [ubacuje novo pitanje]{.accent} i cijepa postojeću koaliciju. [@riker1986]
+
+. . .
+
+::: {.columns}
+::: {.column width="50%"}
+[Zatvoreno pravilo]{.accent}
+
+Agendar nudi jednu jedinu alternativu, a glasuje se samo „za" ili „protiv". Moć inicijative je [najveća]{.accent}. [@romer1978]
+:::
+::: {.column width="50%"}
+[Otvoreno pravilo]{.accent}
+
+Svaki zastupnik može predlagati izmjene, pa se ishod [približava medijanu zastupnika]{.accent}, a moć agendara slabi.
+:::
+:::
+
+::: {.notes}
+Objasnite da herestetika nije obično nagovaranje nego mijenjanje samog terena na kojem se odlučuje. Dajte intuitivan primjer, gubitnik ekonomsku raspravu poveže s pitanjem identiteta ili sigurnosti i time razbije protivničku koaliciju. Povežite to izrijekom s McKelveyevim rezultatom, jer strateški akter višedimenzionalnost ne mora čekati, nego je može stvoriti. Zatim prijeđite na spektar pravila i suprotstavite dva ekstrema. Naglasite da zatvoreno pravilo daje agendaru najveću moć, dok otvoreno pravilo ishod vuče prema medijanu. Zaključite da snaga dnevnog reda nije svuda jednaka, nego ovisi o institucionalnom dizajnu.
+:::
+
+## Trgovanje glasovima {.dio-slide}
+
+[LOGROLLING]{.section-label}
+
+Kad se ciklusi moraju prekinuti, dolazi do kompromisa, a oni rijetko predstavljaju optimalno srednje rješenje. Često nastaju kroz [trgovanje glasovima]{.accent} (*logrolling*): zastupnici uzajamno podržavaju projekte da osiguraju podršku za vlastite. [@buchanan1962]
+
+. . .
+
+::: {.cbox .kljucno}
+[Ključno]{.cbox-label}
+Rezultat nije prosjek interesa, nego njihov [zbroj]{.accent}, dakle više projekata i veća javna potrošnja nego što bi je većina birača samostalno odobrila.
+:::
+
+. . .
+
+Tu se mehaniku najlakše vidi na slici dobitaka i gubitaka dvaju zastupnika. Graf koji slijedi prikazuje dva projekta od kojih nijedan sam ne bi prošao, ali njihov spoj oba zastupnika smješta u područje u kojem obojica dobivaju.
+
+## Trgovanje glasovima na grafu {.smaller}
+
+[LOGROLLING — ISPROBAJTE]{.section-label}
+
+```{ojs}
+//| echo: false
+viewof lr_controls = Inputs.form({
+  g: Inputs.range([1, 9], {value: 6, step: 0.5, width: 230, label: "Vlastiti dobitak g"}),
+  l: Inputs.range([1, 9], {value: 4, step: 0.5, width: 230, label: "Tuđi gubitak l"})
+})
+```
+
+```{ojs}
+//| echo: false
+{
+  const g = lr_controls.g, l = lr_controls.l;
+  const A = {x: g, y: -l}, B = {x: -l, y: g}, AB = {x: g - l, y: g - l};
+  const passes = AB.x > 0 && AB.y > 0;
+
+  return Plot.plot({
+    width: 460,
+    height: 400,
+    marginLeft: 50,
+    marginTop: 40,
+    marginBottom: 44,
+    style: {fontSize: "12px", fontFamily: "Public Sans, system-ui, sans-serif", color: "#3A332D", background: "transparent"},
+    x: {label: "Dobitak / gubitak zastupnika 1 →", domain: [-10, 10]},
+    y: {label: "↑ Dobitak / gubitak zastupnika 2", domain: [-10, 10]},
+    marks: [
+      Plot.rect([{x1: 0, x2: 10, y1: 0, y2: 10}], {x1: "x1", x2: "x2", y1: "y1", y2: "y2", fill: "#4A6B5C", fillOpacity: 0.13}),
+      Plot.text([{x: 9.6, y: 9.4}], {x: "x", y: "y", text: ["oba dobivaju"], textAnchor: "end", fill: "#4A6B5C", fontSize: 11, fontWeight: 600}),
+      Plot.ruleX([0], {stroke: "#1C1916", strokeWidth: 1}),
+      Plot.ruleY([0], {stroke: "#1C1916", strokeWidth: 1}),
+      Plot.link([{x1: A.x, y1: A.y, x2: AB.x, y2: AB.y}], {x1: "x1", y1: "y1", x2: "x2", y2: "y2", stroke: "#6B6357", strokeDasharray: "3,3"}),
+      Plot.link([{x1: B.x, y1: B.y, x2: AB.x, y2: AB.y}], {x1: "x1", y1: "y1", x2: "x2", y2: "y2", stroke: "#6B6357", strokeDasharray: "3,3"}),
+      Plot.dot([A], {x: "x", y: "y", r: 6, fill: "#6B1F26", stroke: "white", strokeWidth: 2}),
+      Plot.dot([B], {x: "x", y: "y", r: 6, fill: "#4A6B5C", stroke: "white", strokeWidth: 2}),
+      Plot.dot([AB], {x: "x", y: "y", r: 7, fill: "#1C1916", stroke: "white", strokeWidth: 2}),
+      Plot.text([A], {x: "x", y: "y", text: ["A"], dx: 12, fontSize: 14, fontWeight: 700, fill: "#6B1F26"}),
+      Plot.text([B], {x: "x", y: "y", text: ["B"], dx: -12, fontSize: 14, fontWeight: 700, fill: "#4A6B5C"}),
+      Plot.text([AB], {x: "x", y: "y", text: ["A+B"], dy: -14, fontSize: 14, fontWeight: 700, fill: "#1C1916"}),
+      Plot.text([`Paket A+B ${passes ? "prolazi (oba dobivaju)" : "pada"}`],
+        {frameAnchor: "top", dy: -22, fontSize: 13, fontWeight: 700, fill: passes ? "#1C7C54" : "#6B1F26"})
+    ]
+  });
+}
+```
+
+::: {.isprobaj}
+Postavite dobitak veći od gubitka i točka A+B sleti u zeleno polje u kojem oba zastupnika dobivaju, pa paket prolazi iako bi svaki projekt zasebno pao. Smanjite dobitak ispod gubitka i A+B padne u suprotni kut, pa trgovina više nije obostrano korisna. Pojedinačni projekti A i B uvijek leže izvan zelenog polja jer svaki jednom zastupniku donosi gubitak.
+:::
+
+::: {.notes}
+Vodite studente kroz logiku paketa. Pokažite da projekt A koristi prvom a šteti drugom zastupniku, i obrnuto za B, pa nijedan sam ne prolazi. Tek spojeni u paket A+B mogu pasti u zeleno polje u kojem oba dobivaju. Mijenjajte odnos dobitka i gubitka i pokažite kada paket prolazi, a kada pada. Naglasite dvostruku narav logrollinga: popunjava prazninu intenziteta preferencija, ali postaje štetan kad se trošak prebaci na one koji u trgovini ne sudjeluju.
+:::
+
+::: {.notes}
+Postavite logrolling kao odgovor na pitanje kako se ciklus zapravo prekida u praksi. Naglasite da kompromis u politici nije aritmetička sredina, nego pakiranje interesa. Provedite studente kroz logiku zbroja, više projekata znači veću potrošnju nego što bi je samostalni birač podržao. Najavite graf i objasnite postav, dva projekta od kojih svaki jednom zastupniku koristi a drugom šteti. Recite da tek paket A plus B oba aktera smješta u zonu u kojoj obojica dobivaju, pa paket dobiva većinu. Pustite studente da prate kako se klizačima mijenjaju dobici i gubici.
+:::
+
+## Logrolling — dvije strane
+
+[KORIST ILI ŠTETA]{.section-label}
+
+Obično većinsko glasovanje broji glave, ali ne mjeri [intenzitet preferencija]{.accent}, pa može odbiti mjeru koja malobrojnoj ali snažno zainteresiranoj skupini znači mnogo, a ravnodušnoj većini šteti tek neznatno.
+
+. . .
+
+Logrolling tu prazninu popunjava jer dopušta zamjenu glasa o [sporednom]{.accent} pitanju za podršku o [važnom]{.accent}, pa prolaze obostrano korisni dogovori koje bi anonimno glasovanje odbacilo.
+
+. . .
+
+::: {.cbox .kljucno}
+[Ključno]{.cbox-label}
+Isti mehanizam postaje štetan kad koalicija prebaci trošak na one koji u trgovini ne sudjeluju. Zato neto učinak nije unaprijed zadan, nego je dizajn pravila važniji od pojedinačnog ishoda. [@buchanan1962]
+:::
+
+::: {.notes}
+Pokažite da logrolling nije ni dobar ni loš sam po sebi, nego ovisi o tome tko snosi trošak. Krenite od slabosti većinskog glasovanja, broji glave ali ne mjeri koliko je kome stalo. Objasnite kako zamjena glasa o sporednom za podršku o važnom može proizvesti dobitak za obje strane. Zatim okrenite priču i naglasite opasnost, koncentrirane koristi i raspršeni troškovi na vanjske strane. Povucite Buchananovu pouku da zato dizajn ustavnih pravila nadilazi pojedinačni ishod. Zaključite da je intenzitet preferencija prava tema iza ove rasprave.
+:::
+
+## Posljedice za javne politike
+
+[POUKA]{.section-label}
+
+::: {.cbox .kljucno}
+[Ključno]{.cbox-label}
+„Volja naroda" nije jednoznačno definiran pojam, nego ovisi o [pravilima]{.accent} kroz koja se izražava. Kontrola dnevnog reda izvor je moći jer onaj tko određuje o čemu se i kojim redoslijedom glasuje oblikuje ishod. Ustavna i proceduralna pravila, poput [pojačane većine]{.accent} (*supermajority*) za poreze i dugoročne fiskalne obveze, daju odlukama stabilnost i predvidljivost. [@buchanan1962; @mueller1989]
+:::
+
+::: {.notes}
+Sažmite tri izravne posljedice teorije za razumijevanje javnih politika. Prvo, volja naroda nije fiksna veličina nego proizvod pravila kroz koja prolazi. Drugo, kontrola dnevnog reda objašnjava zašto je proceduralna moć stvarna moć. Treće, opravdajte postojanje ustavnih i proceduralnih ograničenja kao odgovor na proizvoljnost. Dajte konkretan primjer pojačane većine za poreze i dugoročne obveze, jer studenti taj alat mogu prepoznati u praksi. Naglasite da neučinkovite politike tada nisu anomalija, nego predvidiv ishod institucionalnog dizajna.
+:::
+
+## Što smo naučili
+
+[SAŽETAK]{.section-label}
+
+::: {.agenda}
+1. [Kolektivni izbor]{.accent} pretvara raznolike preferencije u jednu odluku, ali to nije tehnička formalnost.
+2. [Condorcet]{.accent} — većina može biti ciklička, pa stabilan pobjednik nije zajamčen.
+3. [Arrow]{.accent} — nijedno pravilo ne zadovoljava istodobno sve razumne uvjete.
+4. [Jednovršne preferencije i medijanski glasač]{.accent} vraćaju stabilnost, ali samo kao poseban slučaj.
+5. [Kontrola dnevnog reda i logrolling]{.accent} pokazuju da pravila oblikuju ishod.
+:::
+
+::: {.notes}
+Prođite pet točaka kao kostur cijelog predavanja i povežite ih u priču, a ne u popis. Krenite od ideje da je agregacija preferencija dubok problem, a ne formalnost. Podsjetite na Condorcetov ciklus i Arrowljevu nemogućnost kao dva lica iste poruke. Naglasite da medijanski glasač vraća red, ali pod strogim uvjetom jednovršnih preferencija. Završite na dnevnom redu i logrollingu, jer oni najjasnije pokazuju da pravila kreiraju ishod. Zamolite studente da zapamte upravo tu nit prije nego što je sažmemo na sljedećem slajdu.
+:::
+
+## Nit koja povezuje
+
+[ZAKLJUČAK]{.section-label}
+
+::: {.cbox .kljucno}
+[Ključno]{.cbox-label}
+Pravila nisu neutralna pozadina kolektivne odluke, nego njezin [tvorac]{.accent}. Zato analiza javnih politika ne staje na pitanju što birači žele, nego pita pod kojim se pravilima i kroz koje aktere te želje pretaču u odluke.
+:::
+
+::: {.notes}
+Ovo je sidrena misao cijelog predavanja, izgovorite je polako i s naglaskom. Suprotstavite uobičajenu pretpostavku da su pravila puka tehnička pozadina tezi da ona aktivno oblikuju ishod. Recite studentima da upravo zato pitanje što ljudi žele nije dovoljno. Pravo pitanje glasi pod kojim pravilima i kroz koje aktere se te želje pretvaraju u odluke. Time prirodno otvarate sljedeći korak kolegija, analizu samih aktera. Ostavite trenutak tišine prije prijelaza na vježbu.
+:::
+
+## Vježba
+
+[VJEŽBA]{.section-label}
+
+::: {.cbox .vjezba}
+[Vježba]{.cbox-label}
+S tri birača i tri opcije svaki birač bira jednu od šest mogućih rang-lista, pa postoji [6³ = 216]{.var} kombinacija. Ciklus nastaje samo kad sva tri birača imaju različite rang-liste koje rotiraju u istom smjeru, a takvih je rasporeda dvanaest. Izračunajte udio cikličkih ishoda i objasnite zašto je tako malen udio ipak dovoljan da problem dnevnog reda bude ozbiljan kad se odlučuje o desecima alternativa.
+:::
+
+::: {.notes}
+Zadajte vježbu kao kratak računski izazov koji povezuje teoriju i brojku. Navedite studente da podijele dvanaest cikličkih rasporeda s dvjesto šesnaest kombinacija i dobiju udio od oko pet posto. Naglasite da je taj postotak na prvi pogled malen i naizgled bezopasan. Zatim ih potaknite da razmisle što se događa kad opcija nije tri nego desetak, jer prostor mogućih ciklusa naglo raste. Povežite to s moći dnevnog reda, jer i rijedak ciklus dovoljan je da agendar dobije polugu. Ostavite minutu da pokušaju izračun prije nego što date rješenje.
+:::
+
+## Što slijedi {.dio-slide}
+
+[PUTOKAZ]{.section-label}
+
+::: {.lead}
+Vidjeli smo da ishod oblikuju pravila, a ne samo preferencije. Ostaje pitanje tko su akteri koji ta pravila koriste i oblikuju.
+:::
+
+. . .
+
+::: {.agenda}
+1. [Predavanje 9]{.accent} — političke stranke i izborno natjecanje, Downsov model i medijanski glasač u praksi.
+2. [Širi luk]{.accent} — prelazimo od pravila prema akterima koji ih koriste i oblikuju.
+:::
+
+::: {.notes}
+Zatvorite predavanje pogledom unaprijed i jasnom logikom prijelaza. Recite da smo dosad analizirali pravila, a od sljedećeg puta gledamo aktere koji se kroz ta pravila natječu. Najavite Downsov model i medijanskog glasača kao prvu konkretnu primjenu na stranke i izbore. Naglasite širi luk kolegija, od apstraktnih pravila prema stvarnim igračima u javnom sektoru. Zahvalite studentima i potaknite ih da prije idućeg sata ponove pojam medijanskog glasača. Ostavite dojam da je ovo prirodan most, a ne kraj priče.
+:::
