@@ -187,17 +187,6 @@
     color:var(--verdigris);
     letter-spacing:.02em;
   }
-  .portrait-cap{
-    margin-top:.6rem;
-    text-align:center;
-    font-family:var(--mono);
-    font-size:.6rem;
-    font-weight:500;
-    letter-spacing:.12em;
-    text-transform:uppercase;
-    color:var(--ink-faint);
-  }
-
   /* --- layout grid --- */
   .grid{
     display:grid;
@@ -383,6 +372,62 @@
     .portrait,.portrait:hover{transition:none;transform:none;}
   }
 
+  /* --- role links (mono) --- */
+  .role a.inst{
+    font-family:var(--mono);
+    font-size:.87em;
+    color:inherit;
+    text-decoration:none;
+    border-bottom:1px solid var(--ochre);
+    transition:color .18s ease, border-color .18s ease;
+  }
+  .role a.inst:hover{color:var(--verdigris);border-bottom-color:var(--verdigris);}
+
+  /* --- collapsible section --- */
+  .sec-toggle{
+    margin-left:auto;
+    background:none;border:none;cursor:pointer;
+    color:var(--ink-faint);
+    padding:.1rem .2rem;
+    display:flex;align-items:center;
+    border-radius:3px;
+    transition:color .18s ease;
+  }
+  .sec-toggle:hover{color:var(--verdigris);}
+  .sec-toggle:focus-visible{outline:2px solid var(--verdigris);outline-offset:2px;}
+  .sec-toggle .chev{transition:transform .22s ease;}
+  .sec-toggle[aria-expanded="false"] .chev{transform:rotate(-90deg);}
+  .collapsible-body{transition:opacity .22s ease;}
+  .collapsible-body.hidden{display:none;}
+
+  /* --- collectible papers --- */
+  ol.pubs li{padding-right:2.8rem;}
+  .save-btn{
+    position:absolute;
+    right:0;top:.9rem;
+    background:none;border:none;cursor:pointer;
+    padding:.25rem .3rem;
+    color:var(--ink-faint);
+    line-height:1;
+    border-radius:4px;
+    transition:color .18s ease,background .18s ease;
+  }
+  .save-btn:hover{color:var(--ochre);}
+  .save-btn:focus-visible{outline:2px solid var(--verdigris);outline-offset:2px;}
+  ol.pubs li.saved .save-btn{color:var(--ochre);}
+  ol.pubs li.saved{background:rgba(200,152,94,.07);border-radius:4px;}
+  .saved-count{
+    display:none;
+    font-family:var(--mono);
+    font-size:.72rem;
+    color:var(--ink-faint);
+    margin-left:auto;
+    align-items:center;
+    gap:.35rem;
+  }
+  .saved-count.visible{display:flex;}
+  .saved-count strong{color:var(--ochre);}
+
   /* --- print --- */
   @media print{
     body{background:#fff;font-size:10.5pt;line-height:1.45;}
@@ -408,7 +453,7 @@
     <div class="head-text">
       <p class="kicker anim d1">Dr. sc.</p>
       <h1 class="name anim d2">Milan Deskar-Škrbić</h1>
-      <p class="role anim d3">Glavni savjetnik i viši ekonomist — Hrvatska narodna banka</p>
+      <p class="role anim d3">Glavni savjetnik i ekonomist u Sektoru komunikacija — <a class="inst" href="https://www.hnb.hr" target="_blank" rel="noopener">Hrvatska narodna banka</a></p>
       <div class="contact anim d4">
         <a href="mailto:milan.deskar-skrbic@hnb.hr">milan.deskar-skrbic@hnb.hr</a>
         <a href="https://www.hnb.hr" target="_blank" rel="noopener">hnb.hr ↗</a>
@@ -425,7 +470,6 @@
              onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
         <div class="initials" style="display:none;">MDŠ</div>
       </div>
-      <figcaption class="portrait-cap">Hrvatska narodna banka</figcaption>
     </figure>
   </header>
 
@@ -436,7 +480,7 @@
 
       <section class="reveal">
         <h2 class="sec-label"><span class="no">01</span> Profil</h2>
-        <p class="lead">Stručni i znanstveni rad usmjeren je na makroekonomsku teoriju i politiku, monetarnu politiku i javne financije, s naglaskom na fiskalnu politiku, monetarnu integraciju i institucionalne aspekte ekonomske politike u malim otvorenim gospodarstvima.</p>
+        <p class="lead">Milanov istraživački rad nastajao je usporedno s profesionalnom putanjom — od analitike u financijskom sektoru i rada u Europskoj komisiji do vođenja monetarne politike u HNB-u. Srž zanimanja čine makroekonomska teorija i politika, fiskalna politika te monetarna integracija, s osobitom pažnjom posvećenom malim otvorenim gospodarstvima poput hrvatskoga.</p>
         <p>Profesionalni put vodio je od ekonomskih analiza u financijskom sektoru, preko makroekonomskog modeliranja i istraživanja u središnjoj banci i rada u Europskoj komisiji, do vođenja monetarne politike i oblikovanja javne komunikacije Hrvatske narodne banke. Uz institucionalni i analitički rad kontinuirano je prisutan u sveučilišnoj nastavi.</p>
       </section>
 
@@ -446,7 +490,7 @@
 
           <li class="entry now">
             <div class="period">2025 —</div>
-            <div class="pos">Glavni savjetnik i viši ekonomist <span class="org">· <a href="https://www.hnb.hr" target="_blank" rel="noopener">Hrvatska narodna banka</a> — komunikacije</span></div>
+            <div class="pos">Glavni savjetnik i ekonomist <span class="org">· <a class="inst" href="https://www.hnb.hr" target="_blank" rel="noopener">Hrvatska narodna banka</a> — Sektor komunikacija</span></div>
             <p class="desc">Priprema govora, analitičkih bilješki i komunikacijskih sadržaja za rukovodstvo te sudjelovanje u oblikovanju javne komunikacije središnje banke.</p>
           </li>
 
@@ -484,14 +528,14 @@
       </section>
 
       <section class="reveal">
-        <h2 class="sec-label"><span class="no">03</span> Udžbenici i nagrade</h2>
-        <div class="cards">
+        <h2 class="sec-label"><span class="no">03</span> Udžbenici i nagrade<button class="sec-toggle" aria-expanded="true" aria-controls="knjige-cards" title="Sakrij/pokaži"><svg class="chev" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg></button></h2>
+        <div class="cards collapsible-body" id="knjige-cards">
           <div class="card">
-            <div class="ctitle">Makroekonomika za ekonomiste i neekonomiste</div>
+            <div class="ctitle"><a href="https://www.superknjizara.hr/hr/makroekonomika-i-za-ekonomiste-i-neekonomiste-s-hrvatskim-primjerima-2018-milan-deskar-skrbic-ivo-bicanic" target="_blank" rel="noopener">Makroekonomika za ekonomiste i neekonomiste</a></div>
             <div class="cmeta">Bićanić, I.; Deskar-Škrbić, M. — Ekonomski lab, Zagreb · <span class="cyear">2018</span></div>
           </div>
           <div class="card">
-            <div class="ctitle">Ekonomika javnog sektora</div>
+            <div class="ctitle"><a href="https://arhivanalitika.hr/blog/zasto-nova-knjiga-ekonomika-javnog-sektora-o-dva-shvacanja-drzave/" target="_blank" rel="noopener">Ekonomika javnog sektora</a></div>
             <div class="cmeta">Šimović, H.; Deskar-Škrbić, M. — Ekonomski lab · <span class="cyear">2020</span></div>
           </div>
           <div class="card award">
@@ -506,20 +550,20 @@
       </section>
 
       <section class="reveal">
-        <h2 class="sec-label"><span class="no">04</span> Odabrani radovi</h2>
-        <ol class="pubs">
-          <li><span class="pt">Which bite harder: new or old EU fiscal rules? Backcasting Croatian episode under the EDP.</span> Banić, F.; Deskar-Škrbić, M.; Lang, M. <span class="pv">HNB Working Paper / Surveys 42.</span> <span class="py">2025</span></li>
-          <li><span class="pt">In search of the optimal size for local government: An assessment of economies of scale in local government in Croatia.</span> Buljan, A.; Švaljek, S.; Deskar-Škrbić, M. <span class="pv">Local Government Studies, 48(4), 604–627.</span> <span class="py">2022</span></li>
-          <li><span class="pt">Design of Fiscal Consolidation Packages and Model-Based Fiscal Multipliers in Croatia.</span> Deskar-Škrbić, M.; Milutinović, D. <span class="pv">Public Sector Economics, 45(1), 1–61.</span> <span class="py">2021</span> <a class="doi" href="https://doi.org/10.3326/pse.45.1.1" target="_blank" rel="noopener">DOI ↗</a></li>
-          <li><span class="pt">The third round of euro area enlargement: Are the candidates ready?</span> Deskar-Škrbić, M.; Kotarac, K.; Kunovac, D. <span class="pv">Journal of International Money and Finance, 107, 102205.</span> <span class="py">2020</span> <a class="doi" href="https://doi.org/10.1016/j.jimonfin.2020.102205" target="_blank" rel="noopener">DOI ↗</a></li>
-          <li><span class="pt">Twentieth Anniversary of the Euro: Why are Some Countries Still Not Willing to Join?</span> Deskar-Škrbić, M.; Kunovac, D. <span class="pv">Comparative Economic Studies.</span> <span class="py">2020</span></li>
-          <li><span class="pt">Macroeconomic effects of exogenous tax changes in a small open economy: narrative evidence from Croatia.</span> Deskar-Škrbić, M.; Grdović Gnip, A.; Šimović, H. <span class="pv">Post-Communist Economies.</span> <span class="py">2020</span></li>
-          <li><span class="pt">What drives banks' appetite for sovereign debt in CEE countries?</span> Buljan, A.; Deskar-Škrbić, M.; Dumičić, M. <span class="pv">Public Sector Economics, 44(2), 179–201.</span> <span class="py">2020</span></li>
-          <li><span class="pt">Dynamic effects of fiscal policy in Croatia: confronting New-Keynesian SOE theory with empirics.</span> Deskar-Škrbić, M. <span class="pv">Zbornik radova Ekonomskog fakulteta u Rijeci, 36(1), 81–100.</span> <span class="py">2018</span></li>
-          <li><span class="pt">Fiscal Policy and European Semester in Croatia: Why Should We Focus on Public Debt.</span> Šimović, H.; Deskar-Škrbić, M. <span class="pv">U: Petak, Z.; Kotarski, K. (ur.), Policy Making at the European Periphery: The Case of Croatia. Springer.</span> <span class="py">2018</span></li>
-          <li><span class="pt">Croatian path to the monetary union: why, when and what can we learn from our peers?</span> Deskar-Škrbić, M. <span class="pv">Ekonomski pregled, 68(6), 611–637.</span> <span class="py">2017</span></li>
-          <li><span class="pt">Monetary and fiscal policy mix in a small open economy: The case of Croatia.</span> Ćorić, T.; Šimović, H.; Deskar-Škrbić, M. <span class="pv">Economic Research – Ekonomska istraživanja, 28(1), 407–421.</span> <span class="py">2015</span></li>
-          <li><span class="pt">Functional distribution of income and economic activity in Croatia: Post-Keynesian approach.</span> Vujčić, B.; Deskar-Škrbić, M.; Ratkovski, Z.; Zrnc, J. <span class="pv">Zbornik radova Ekonomskog fakulteta u Rijeci, 32(1), 53–73.</span> <span class="py">2014</span></li>
+        <h2 class="sec-label"><span class="no">04</span> Odabrani radovi <span class="saved-count" id="savedCount" aria-live="polite">— sprema <strong id="savedNum">0</strong></span></h2>
+        <ol class="pubs" id="pubsList">
+          <li data-pub="1"><span class="pt">Which bite harder: new or old EU fiscal rules? Backcasting Croatian episode under the EDP.</span> Banić, F.; Deskar-Škrbić, M.; Lang, M. <span class="pv">HNB Working Paper / Surveys 42.</span> <span class="py">2025</span><button class="save-btn" aria-label="Spremi rad" title="Spremi rad"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"/></svg></button></li>
+          <li data-pub="2"><span class="pt">In search of the optimal size for local government: An assessment of economies of scale in local government in Croatia.</span> Buljan, A.; Švaljek, S.; Deskar-Škrbić, M. <span class="pv">Local Government Studies, 48(4), 604–627.</span> <span class="py">2022</span><button class="save-btn" aria-label="Spremi rad" title="Spremi rad"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"/></svg></button></li>
+          <li data-pub="3"><span class="pt">Design of Fiscal Consolidation Packages and Model-Based Fiscal Multipliers in Croatia.</span> Deskar-Škrbić, M.; Milutinović, D. <span class="pv">Public Sector Economics, 45(1), 1–61.</span> <span class="py">2021</span> <a class="doi" href="https://doi.org/10.3326/pse.45.1.1" target="_blank" rel="noopener">DOI ↗</a><button class="save-btn" aria-label="Spremi rad" title="Spremi rad"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"/></svg></button></li>
+          <li data-pub="4"><span class="pt">The third round of euro area enlargement: Are the candidates ready?</span> Deskar-Škrbić, M.; Kotarac, K.; Kunovac, D. <span class="pv">Journal of International Money and Finance, 107, 102205.</span> <span class="py">2020</span> <a class="doi" href="https://doi.org/10.1016/j.jimonfin.2020.102205" target="_blank" rel="noopener">DOI ↗</a><button class="save-btn" aria-label="Spremi rad" title="Spremi rad"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"/></svg></button></li>
+          <li data-pub="5"><span class="pt">Twentieth Anniversary of the Euro: Why are Some Countries Still Not Willing to Join?</span> Deskar-Škrbić, M.; Kunovac, D. <span class="pv">Comparative Economic Studies.</span> <span class="py">2020</span><button class="save-btn" aria-label="Spremi rad" title="Spremi rad"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"/></svg></button></li>
+          <li data-pub="6"><span class="pt">Macroeconomic effects of exogenous tax changes in a small open economy: narrative evidence from Croatia.</span> Deskar-Škrbić, M.; Grdović Gnip, A.; Šimović, H. <span class="pv">Post-Communist Economies.</span> <span class="py">2020</span><button class="save-btn" aria-label="Spremi rad" title="Spremi rad"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"/></svg></button></li>
+          <li data-pub="7"><span class="pt">What drives banks' appetite for sovereign debt in CEE countries?</span> Buljan, A.; Deskar-Škrbić, M.; Dumičić, M. <span class="pv">Public Sector Economics, 44(2), 179–201.</span> <span class="py">2020</span><button class="save-btn" aria-label="Spremi rad" title="Spremi rad"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"/></svg></button></li>
+          <li data-pub="8"><span class="pt">Dynamic effects of fiscal policy in Croatia: confronting New-Keynesian SOE theory with empirics.</span> Deskar-Škrbić, M. <span class="pv">Zbornik radova Ekonomskog fakulteta u Rijeci, 36(1), 81–100.</span> <span class="py">2018</span><button class="save-btn" aria-label="Spremi rad" title="Spremi rad"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"/></svg></button></li>
+          <li data-pub="9"><span class="pt">Fiscal Policy and European Semester in Croatia: Why Should We Focus on Public Debt.</span> Šimović, H.; Deskar-Škrbić, M. <span class="pv">U: Petak, Z.; Kotarski, K. (ur.), <em>Policy Making at the European Periphery: The Case of Croatia</em>. Springer.</span> <span class="py">2018</span> <a class="doi" href="https://link.springer.com/chapter/10.1007/978-3-319-73582-5_9" target="_blank" rel="noopener">Springer ↗</a><button class="save-btn" aria-label="Spremi rad" title="Spremi rad"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"/></svg></button></li>
+          <li data-pub="10"><span class="pt">Croatian path to the monetary union: why, when and what can we learn from our peers?</span> Deskar-Škrbić, M. <span class="pv">Ekonomski pregled, 68(6), 611–637.</span> <span class="py">2017</span><button class="save-btn" aria-label="Spremi rad" title="Spremi rad"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"/></svg></button></li>
+          <li data-pub="11"><span class="pt">Monetary and fiscal policy mix in a small open economy: The case of Croatia.</span> Ćorić, T.; Šimović, H.; Deskar-Škrbić, M. <span class="pv">Economic Research – Ekonomska istraživanja, 28(1), 407–421.</span> <span class="py">2015</span><button class="save-btn" aria-label="Spremi rad" title="Spremi rad"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"/></svg></button></li>
+          <li data-pub="12"><span class="pt">Functional distribution of income and economic activity in Croatia: Post-Keynesian approach.</span> Vujčić, B.; Deskar-Škrbić, M.; Ratkovski, Z.; Zrnc, J. <span class="pv">Zbornik radova Ekonomskog fakulteta u Rijeci, 32(1), 53–73.</span> <span class="py">2014</span><button class="save-btn" aria-label="Spremi rad" title="Spremi rad"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"/></svg></button></li>
         </ol>
       </section>
 
@@ -527,6 +571,11 @@
 
     <!-- ===================== ASIDE COLUMN ===================== -->
     <aside>
+
+      <section class="reveal">
+        <h2 class="sec-label">Interesi</h2>
+        <p style="font-size:.96rem;color:var(--ink-soft);">Makroekonomska teorija i analiza ekonomske politike s posebnim naglaskom na fiskalnu politiku, monetarnu integraciju i institucionalne aspekte u malim otvorenim gospodarstvima.</p>
+      </section>
 
       <section class="reveal">
         <h2 class="sec-label">Obrazovanje</h2>
@@ -586,18 +635,72 @@
 
 <script>
   (function () {
+    /* --- scroll reveal --- */
     var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
     var els = document.querySelectorAll('.reveal');
     if (reduce || !('IntersectionObserver' in window)) {
       els.forEach(function (el) { el.classList.add('in'); });
-      return;
+    } else {
+      var io = new IntersectionObserver(function (entries) {
+        entries.forEach(function (e) {
+          if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); }
+        });
+      }, { rootMargin: '0px 0px -8% 0px', threshold: 0.08 });
+      els.forEach(function (el) { io.observe(el); });
     }
-    var io = new IntersectionObserver(function (entries) {
-      entries.forEach(function (e) {
-        if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); }
+
+    /* --- collapsible sections --- */
+    document.querySelectorAll('.sec-toggle').forEach(function (btn) {
+      var target = document.getElementById(btn.getAttribute('aria-controls'));
+      if (!target) return;
+      btn.addEventListener('click', function () {
+        var expanded = btn.getAttribute('aria-expanded') === 'true';
+        btn.setAttribute('aria-expanded', String(!expanded));
+        target.classList.toggle('hidden', expanded);
       });
-    }, { rootMargin: '0px 0px -8% 0px', threshold: 0.08 });
-    els.forEach(function (el) { io.observe(el); });
+    });
+
+    /* --- collectible papers --- */
+    var STORAGE_KEY = 'milan-saved-pubs';
+    var saved = new Set(JSON.parse(localStorage.getItem(STORAGE_KEY) || '[]'));
+
+    function persist() {
+      localStorage.setItem(STORAGE_KEY, JSON.stringify(Array.from(saved)));
+    }
+
+    function updateCount() {
+      var n = saved.size;
+      var badge = document.getElementById('savedCount');
+      var num = document.getElementById('savedNum');
+      if (!badge || !num) return;
+      num.textContent = n;
+      if (n > 0) { badge.classList.add('visible'); }
+      else { badge.classList.remove('visible'); }
+    }
+
+    var items = document.querySelectorAll('#pubsList li[data-pub]');
+    items.forEach(function (li) {
+      var id = li.getAttribute('data-pub');
+      var btn = li.querySelector('.save-btn');
+      if (!btn) return;
+
+      if (saved.has(id)) { li.classList.add('saved'); }
+
+      btn.addEventListener('click', function (e) {
+        e.stopPropagation();
+        if (saved.has(id)) {
+          saved.delete(id);
+          li.classList.remove('saved');
+        } else {
+          saved.add(id);
+          li.classList.add('saved');
+        }
+        persist();
+        updateCount();
+      });
+    });
+
+    updateCount();
   })();
 </script>
 </body>
