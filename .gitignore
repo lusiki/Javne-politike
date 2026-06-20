@@ -46,6 +46,14 @@ docs/pdf/*
 !docs/pdf/Javne-politike.pdf
 !docs/pdf/Prirucnik.pdf
 
+### Word (DOCX) profile output — only the .docx is canonical ###
+# scripts/render-book-docx.ps1 writes word/Javne-politike.docx. The render may
+# also drop pre-render / resource spillover into word/. The Word file is a LOCAL
+# manuscript artifact and is never served from the website (not copied to docs/).
+# Keep only the canonical .docx.
+word/*
+!word/Javne-politike.docx
+
 ### Temp / scratch ###
 tmp/
 mnt/

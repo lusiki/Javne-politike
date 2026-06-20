@@ -1,0 +1,56 @@
+# Word (DOCX) profile override.
+# Use: scripts/render-book-docx.ps1   (NOT a bare `quarto render --profile docx`)
+# Output: word/Javne-politike.docx
+#
+# Mirrors the PDF profile (_quarto-pdf.yml). It overrides settings from
+# _quarto.yml; the HTML build is unaffected. As with the PDF, the render script
+# temporarily trims the appendices block in _quarto.yml to references-only
+# (Quarto merges book.appendices arrays ADDITIVELY, so a short list here would
+# just be appended to the full website list). The script renders with
+# `--to docx`, so no HTML spillover is written into word/.
+#
+# The vodic subpages, pojmovnik, predavanja, podaci, etc. are website-only
+# (OJS / interactive HTML) and do not translate to Word, so the manuscript
+# carries only the bibliography as an appendix — exactly like the book PDF.
+
+project:
+  output-dir: word
+
+book:
+  title: "Država, tržište i institucije"
+  subtitle: "Sve što želite znati o državi i javnim politikama u Hrvatskoj"
+  output-file: "Javne-politike"
+
+format:
+  docx:
+    toc: true
+    toc-depth: 2
+    toc-title: "Sadržaj"
+    number-sections: false
+    lang: hr-HR
+    fig-align: center
+    fig-cap-location: bottom
+    tbl-cap-location: top
+    highlight-style: github
+
+# Every figure is a twin pair: an OJS interactive chart gated
+# `.content-visible when-format="html"` and a static R "print" chart gated
+# `.content-visible when-format="pdf"`. Quarto resolves `when-format` before any
+# user filter can intervene, and it does not honour multi-format gate values, so
+# the only way to surface the print twins in DOCX is to make the gate literally
+# say "docx". scripts/render-book-docx.ps1 therefore temporarily rewrites
+# `when-format="pdf"` -> `when-format="docx"` in the chapters for the duration of
+# the render (and restores them after), exactly mirroring the book PDF's content.
+
+filters:
+  # OJS chunks are browser-only; drop any that are not hidden by the format gate.
+  - pdf-filters/strip-ojs.lua
+  # Pandoc cannot embed SVG in DOCX without rsvg-convert; rewrite infographic
+  # SVG sources to their pre-rasterised PNG twins (scripts/svg-to-png.R).
+  - pdf-filters/swap-svg-png.lua
+  # Re-label the custom pedagogical callouts so they survive in Word.
+  - docx-filters/statecraft-callouts-docx.lua
+  # Wrap the few bare multi-line display equations (`$$ ... \\[4pt] ... $$`) in an
+  # `aligned` environment so pandoc converts them to native Word math instead of
+  # dropping them to raw TeX.
+  - docx-filters/multiline-math-docx.lua
