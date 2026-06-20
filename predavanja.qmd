@@ -113,12 +113,13 @@ format:
       <span class="vd-go">Otvori predavanje →</span>
     </a>
 
-    <div class="vd-hub-card vd-soon">
-      <span class="vd-badge">Uskoro</span>
+    <a class="vd-hub-card vd-ready" href="predavanja/09-stranke-izbori.html" target="_blank" rel="noopener">
+      <span class="vd-badge vd-badge-ready">Dostupno</span>
       <span class="vd-hub-num">Predavanje 9</span>
-      <span class="vd-hub-name">Političko nadmetanje i ekonomski učinci</span>
-      <span class="vd-hub-q">Downsov model, stranačka natjecanja, ideološke pozicije i učinci stranačkih vlada na fiskalne ishode.</span>
-    </div>
+      <span class="vd-hub-name">Političke stranke i izbori</span>
+      <span class="vd-hub-q">Hotelling-Downsov model i medijanski glasač, polarizacija, racionalna neinformiranost i fiskalna iluzija — uz tri interaktivna grafa i položaj hrvatskih stranaka.</span>
+      <span class="vd-go">Otvori predavanje →</span>
+    </a>
 
     <div class="vd-hub-card vd-soon">
       <span class="vd-badge">Uskoro</span>

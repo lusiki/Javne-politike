@@ -1,0 +1,720 @@
+---
+title: "Političke stranke i izbori"
+subtitle: "Medijanski glasač, polarizacija i racionalna neinformiranost"
+author: "Milan Deskar-Škrbić · Petra Palić · Luka Šikić"
+lang: hr-HR
+bibliography: ../references.bib
+# Izvor je _-prefiksiran (predavanja/_09-...qmd) pa ga render knjige (quarto
+# render) NE dira; renderiraj ručno, a output-file daje čist naziv bez podvlake.
+output-file: 09-stranke-izbori.html
+format:
+  revealjs:
+    theme: statecraft.scss
+    embed-resources: true
+    slide-number: c/t
+    show-slide-number: all
+    progress: true
+    width: 1050
+    height: 700
+    margin: 0.08
+    center: false
+    transition: fade
+    transition-speed: fast
+    background-transition: fade
+    controls: true
+    controls-layout: bottom-right
+    touch: true
+    hash: true
+    history: true
+    fig-align: center
+    link-external-newwindow: true
+    footer: "Javne politike u Hrvatskoj · Predavanje 9 · [lusiki.github.io/Javne-politike](https://lusiki.github.io/Javne-politike/)"
+---
+
+## Tko se natječe za vlast {.dio-slide}
+
+[PREDAVANJE 9 · STRANKE I IZBORI]{.section-label}
+
+::: {.lead}
+Kolektivni izbor pokazao nam je kako se pojedinačne preferencije agregiraju u zajedničke odluke. Danas postavljamo praktično pitanje, tko te odluke u stvarnosti oblikuje i kako se natječe za pravo da ih donosi.
+:::
+
+. . .
+
+[Stranke nisu apstraktni zastupnici općeg dobra, nego akteri s vlastitim ciljem, dolaskom na vlast i ostankom na njoj.]{.accent} [@downs1957]
+
+::: {.notes}
+Pozdravite studente i jasno povucite crtu prema prethodnom predavanju o kolektivnom izboru i agregaciji preferencija. Naglasite da smo dosad gledali apstraktni problem spajanja preferencija u odluku, a od danas pitamo tko taj posao u praksi obavlja. Inzistirajte na metodološkom obratu teorije javnog izbora, političari i stranke nisu zastupnici općeg dobra nego akteri s vlastitim ciljevima. Recite da je najvažniji od tih ciljeva dolazak na vlast i ostanak na njoj, jer to je polazište cijelog predavanja. Ostavite kratku stanku nakon istaknute rečenice da ton predavanja sjedne.
+:::
+
+## Stranka kao poduzeće
+
+[POLITIČKO TRŽIŠTE]{.section-label}
+
+Stranke se ponašaju donekle slično poduzećima na tržištu. Njihov [proizvod]{.accent} su politički programi, [valuta]{.accent} kojom se plaća su glasovi birača, a umjesto profita maksimiziraju broj glasova i moć. [@downs1957]
+
+. . .
+
+Politička je konkurencija stoga [strateška igra pozicioniranja]{.accent}, a ne potraga za objektivno najboljim rješenjem za društvo.
+
+. . .
+
+::: {.cbox .kljucno}
+[Ključno]{.cbox-label}
+Zato su proračun, porezi i regulatorni okvir oblikovani više po logici političke profitabilnosti nego po kriterijima ekonomske efikasnosti i dugoročne održivosti.
+:::
+
+::: {.notes}
+Razvijte središnju analogiju predavanja, stranka kao poduzeće na političkom tržištu. Polako prođite kroz tri sastavnice, proizvod su programi, valuta su glasovi, a cilj nije profit nego maksimizacija glasova i moći. Naglasite da iz te slike slijedi da je natjecanje strateška igra pozicioniranja, dakle borba za poziciju, a ne potraga za objektivno najboljim rješenjem. Povežite to izravno s javnim financijama, jer studentima upravo veza s proračunom i porezima čini model važnim. Zaključite ključnim okvirom, fiskalne odluke slijede logiku političke profitabilnosti, a ne čiste efikasnosti.
+:::
+
+## Agenda današnjeg predavanja
+
+[PLAN U ŠEST KORAKA]{.section-label}
+
+::: {.agenda}
+1. [Medijanski glasač]{.accent} — zašto se stranke natječu za centar.
+2. [Natjecanje za glas]{.accent} — kako se stranke pozicioniraju i diferenciraju.
+3. [Centar i polarizacija]{.accent} — kada konvergencija ustupa mjesto razilaženju.
+4. [Racionalna neinformiranost]{.accent} — zašto velik dio birača ostaje neinformiran i kako to djeluje na izlaznost.
+5. [Demokracija nasuprot autokraciji]{.accent} — koliko ovaj nesavršeni mehanizam ipak vrijedi.
+6. [Posljedice za javne politike]{.accent} — što sve to znači za proračun i reforme.
+:::
+
+::: {.notes}
+Provedite studente kroz strukturu predavanja u jednoj minuti i naglasite logiku slijeda. Krećemo od medijanskog glasača kao temeljnog modela, a zatim gledamo kako se stranke konkretno natječu za glas. Treći korak suočava konvergenciju prema centru s polarizacijom, a četvrti uvodi racionalnu neinformiranost i njezin učinak na izlaznost. Recite da peti korak vaga demokraciju naspram autokracije, prije nego u šestom izvedemo posljedice za javne politike. Istaknite središnju nit, da ishodi ne ovise samo o biračima nego o tome kako su poticaji stranaka i birača posloženi.
+:::
+
+## Hotelling-Downsov model {.dio-slide}
+
+[NATJECANJE ZA CENTAR]{.section-label}
+
+::: {.def}
+**Hotelling-Downsov model** tvrdi da dvije stranke koje se natječu za glasove birača poredanih na jednoj ideološkoj osi imaju snažan poticaj pozicionirati se što bliže preferencijama medijanskog glasača kako bi pobijedile na izborima. [@hotelling1929; @downs1957]
+:::
+
+. . .
+
+Logika je jednostavna. Krajnja pozicija osvaja [svoj kraj]{.accent} osi, ali gubi velik dio sredine. Pomak prema centru osvaja [medijanskoga glasača]{.accent}, a time i većinu.
+
+. . .
+
+Slijedi [konvergencija prema centru]{.accent}, u kojoj se programi velikih stranaka sve više nalikuju, pa otud i česta pritužba birača da „nema prave razlike”.
+
+::: {.notes}
+Predstavite Hotelling-Downsov model kao najutjecajniji okvir političkog natjecanja. Polako pročitajte definiciju i naglasite dvije pretpostavke koje sve nose, jedna ideološka os i birač koji glasuje za najbližu stranku. Provedite studente kroz logiku korak po korak, krajnja pozicija dobiva svoj rub ali gubi sredinu, pa se isplati pomak prema medijanu. Recite da ishod tog natjecanja zovemo konvergencija prema centru, gdje se programi velikih stranaka približavaju. Povežite to s pritužbom birača da nema razlike, jer im taj svakodnevni doživljaj model čini opipljivim. Spomenite da zamisao seže do Hotellinga 1929. i Downsa 1957.
+:::
+
+## Natjecanje za medijana
+
+[ZAŠTO SVI IDU U SREDINU]{.section-label}
+
+Medijanski glasač ne određuje samo ideološku poziciju stranaka, nego i konkretne [fiskalne parametre]{.accent}, visinu poreznih stopa, opseg socijalnih transfera, razinu javnih investicija i mirovinskih naknada.
+
+. . .
+
+[Tko osvoji sredinu, osvaja većinu.]{.accent} Zato obje stranke gravitiraju prema istoj točki rasporeda birača.
+
+. . .
+
+Graf koji slijedi prikazuje raspodjelu birača na ideološkoj osi i položaje dviju stranaka, pa se odmah vidi kako ih natjecanje povlači prema medijanu.
+
+## Natjecanje za centar na grafu {.smaller}
+
+[MEDIJANSKI GLASAČ — ISPROBAJTE]{.section-label}
+
+```{ojs}
+//| echo: false
+viewof mv_controls = Inputs.form({
+  pA: Inputs.range([0, 1], {value: 0.3, step: 0.01, width: 230, label: "Pozicija stranke A"}),
+  pB: Inputs.range([0, 1], {value: 0.7, step: 0.01, width: 230, label: "Pozicija stranke B"})
+})
+```
+
+```{ojs}
+//| echo: false
+{
+  const pA = mv_controls.pA, pB = mv_controls.pB;
+  const mu = 0.5, sigma = 0.18;
+  const dens = (x) => Math.exp(-0.5 * ((x - mu) / sigma) ** 2);
+  const xs = d3.range(0, 1.0001, 0.004);
+  const data = xs.map(x => ({x, d: dens(x), side: Math.abs(x - pA) <= Math.abs(x - pB) ? "A" : "B"}));
+  const total = d3.sum(data, p => p.d);
+  const shareA = d3.sum(data.filter(p => p.side === "A"), p => p.d) / total;
+  const shareB = 1 - shareA;
+  const winner = Math.abs(shareA - shareB) < 0.005 ? "neriješeno" : (shareA > shareB ? "A" : "B");
+
+  return Plot.plot({
+    width: 840,
+    height: 350,
+    marginLeft: 52,
+    marginTop: 46,
+    marginBottom: 44,
+    style: {fontSize: "12px", fontFamily: "Public Sans, system-ui, sans-serif", color: "#3A332D", background: "transparent"},
+    x: {label: "Ljevica  ←  ideološka os  →  Desnica", domain: [0, 1]},
+    y: {label: "↑ Gustoća birača", domain: [0, 1.2]},
+    marks: [
+      Plot.areaY(data.filter(p => p.side === "A"), {x: "x", y: "d", fill: "#4A6B5C", fillOpacity: 0.35}),
+      Plot.areaY(data.filter(p => p.side === "B"), {x: "x", y: "d", fill: "#6B1F26", fillOpacity: 0.35}),
+      Plot.line(data, {x: "x", y: "d", stroke: "#1C1916", strokeWidth: 1.5}),
+      Plot.ruleX([0.5], {stroke: "#6B6357", strokeDasharray: "4,3"}),
+      Plot.ruleX([pA], {stroke: "#4A6B5C", strokeWidth: 2.5}),
+      Plot.ruleX([pB], {stroke: "#6B1F26", strokeWidth: 2.5}),
+      Plot.text([{x: pA, y: 1.04}], {x: "x", y: "y", text: ["A"], fill: "#4A6B5C", fontSize: 14, fontWeight: 700}),
+      Plot.text([{x: pB, y: 1.04}], {x: "x", y: "y", text: ["B"], fill: "#6B1F26", fontSize: 14, fontWeight: 700}),
+      Plot.text([{x: 0.5, y: 1.04}], {x: "x", y: "y", text: ["medijan"], fill: "#6B6357", fontSize: 10}),
+      Plot.text([`Stranka A ${(shareA*100).toFixed(0)} %      Stranka B ${(shareB*100).toFixed(0)} %      pobjednik: ${winner}`],
+        {frameAnchor: "top", dy: -32, fontSize: 13, fontWeight: 700, fill: "#1C1916"})
+    ]
+  });
+}
+```
+
+::: {.isprobaj}
+Razmaknite stranke prema krajevima i ona bliža sredini osvaja veći dio glasova. Pomičite jednu prema medijanu i njezin udio raste dok ne prestigne suparnicu, što objema daje poticaj da se približe sredini. Postavite obje u medijan i glasovi se dijele napola — nijedna više ne dobiva jednostranim pomakom, što je ravnoteža medijanskoga glasača.
+:::
+
+::: {.notes}
+Iskoristite graf interaktivno i tražite od studenata da predvide pobjednika prije pomicanja klizača. Pokažite da stranka bliža sredini osvaja veći dio zvonolike raspodjele birača, jer joj pripadaju svi kojima je bliža. Pomičite jednu stranku prema medijanu i istaknite kako joj udio raste, čime objašnjavate poticaj za konvergenciju. Dovedite obje u medijan i pokažite da se glasovi dijele napola, pa nijedna jednostranim pomakom ne može dobiti. Naglasite da ta ravnoteža vrijedi samo uz jednu dimenziju i sigurnu izlaznost.
+:::
+
+::: {.notes}
+Naglasite da medijanski rezultat nije samo ideološki, nego ima izravne fiskalne posljedice koje studenti osjećaju u proračunu. Nabrojite konkretne parametre, porezne stope, transfere, javne investicije i mirovine, jer time apstraktnu os prizemljujete. Ponovite središnju intuiciju, tko osvoji sredinu osvaja većinu, pa se obje stranke nužno guraju k istoj točki. Najavite interaktivni graf i zamolite studente da prije pokretanja predvide gdje će se stranke smjestiti. Dok pomičete položaje, pokažite da svaka stranka ima poticaj prići bliže medijanu sve dok se ne nađu jedna uz drugu. Iskoristite graf da pokažete zašto je medijan stabilna ravnotežna točka.
+:::
+
+## Hrvatske stranke na osi
+
+[CHES PROCJENA]{.section-label}
+
+Stvarni razmještaj potvrđuje obje strane priče. [HDZ]{.accent} i [SDP]{.accent} zbijeni su oko sredine, HDZ tek desno, a SDP tek lijevo od centra, što je prostorni odraz konvergencije prema medijanu.
+
+. . .
+
+Novije stranke, [Možemo]{.accent} na ljevici i [Domovinski pokret]{.accent} na desnici, razvlače raspon prema krajevima koji su dvije velike stranke desetljećima držale uskim.
+
+. . .
+
+Graf koji slijedi prikazuje procjene stručnjaka na ljestvici od 0 (krajnja ljevica) do 10 (krajnja desnica).
+
+## Položaj stranaka na grafu {.smaller}
+
+[CHES PROCJENA 2024.]{.section-label}
+
+```{ojs}
+//| echo: false
+{
+  const data = [
+    {stranka:"Možemo!", lr:2.3, blok:"Ljevica"},
+    {stranka:"SDP", lr:3.7, blok:"Ljevica"},
+    {stranka:"IDS", lr:4.0, blok:"Ljevica"},
+    {stranka:"Centar", lr:4.7, blok:"Centar"},
+    {stranka:"HDZ", lr:6.4, blok:"Desnica"},
+    {stranka:"Most", lr:7.8, blok:"Desnica"},
+    {stranka:"Domovinski pokret", lr:8.9, blok:"Desnica"}
+  ];
+  const order = data.slice().sort((a, b) => b.lr - a.lr).map(d => d.stranka);
+  return Plot.plot({
+    width: 860, height: 400,
+    marginLeft: 132, marginRight: 44, marginTop: 30, marginBottom: 46,
+    style: {fontSize: "12px", fontFamily: "Public Sans, system-ui, sans-serif", color: "#3A332D", background: "transparent"},
+    x: {label: "Ljevica ← ideološka os (0–10) → Desnica", domain: [0, 10], grid: true, ticks: [0,2,4,6,8,10]},
+    y: {label: null, domain: order},
+    color: {domain: ["Ljevica","Centar","Desnica"], range: ["#4A6B5C","#6B6357","#C8985E"], legend: true},
+    marks: [
+      Plot.ruleX([5], {stroke: "#6B1F26", strokeDasharray: "5,4", strokeWidth: 1.2}),
+      Plot.text([{x: 5, y: order[0], t: "sredina (5,0)"}], {x: "x", y: "y", text: "t", dy: -16, fontSize: 10, fill: "#6B1F26", textAnchor: "middle"}),
+      Plot.dot(data, {x: "lr", y: "stranka", fill: "blok", r: 7, stroke: "white", strokeWidth: 1, tip: true}),
+      Plot.text(data, {x: "lr", y: "stranka", text: d => d.lr.toFixed(1).replace(".", ","), dx: 13, textAnchor: "start", fontSize: 10, fill: "#3A332D"})
+    ]
+  });
+}
+```
+
+::: {.isprobaj}
+HDZ (6,4) i SDP (3,7) zbijeni su oko sredine — prostorni odraz konvergencije prema medijanu. Novije stranke razvlače raspon prema krajevima, od Možemo (2,3) na ljevici do Domovinskog pokreta (8,9) na desnici. To razilaženje vodi izravno u pitanje polarizacije.
+:::
+
+::: {.notes}
+Iskoristite graf da empirijski potkrijepite obje strane priče. Pokažite da su dvije velike stranke, HDZ i SDP, blizu sredine, što je prostorni odraz konvergencije prema medijanskom biraču. Zatim usmjerite pažnju na novije stranke koje su raspoređene prema krajevima i razvlače raspon koji su velike stranke desetljećima držale uskim. Naglasite da je izvor procjena stručnjaka iz Chapel Hill Expert Surveya, dakle mjerena pozicija, a ne tek dojam. Povežite razvlačenje raspona s prijelazom na temu polarizacije koja slijedi.
+:::
+
+::: {.notes}
+Spustite model na konkretno hrvatsko iskustvo koje studenti prepoznaju iz medija. Naglasite da podaci potvrđuju obje strane priče istodobno, velike stranke u sredini i nove stranke na rubovima. Pokažite da su HDZ i SDP zbijeni oko sredine, što je doslovan prostorni trag konvergencije prema medijanu. Zatim usmjerite pažnju na novije stranke, Možemo i Domovinski pokret, koje razvlače raspon prema krajevima. Objasnite da podaci dolaze iz istraživanja stručnjaka Chapel Hill (engl. *Chapel Hill Expert Survey*), dakle iz procjena stručnjaka, a ne anketa birača. Najavite da nas to razilaženje vodi izravno u sljedeću temu o polarizaciji.
+:::
+
+## Granice modela
+
+[KAD PRETPOSTAVKE PADNU]{.section-label}
+
+Model je snažan, ali počiva na strogim pretpostavkama, [jednoj ideološkoj dimenziji]{.accent}, [dvjema strankama]{.accent}, [potpunoj informiranosti]{.accent} i [sigurnoj izlaznosti]{.accent}.
+
+. . .
+
+::: {.cbox .kljucno}
+[Ključno]{.cbox-label}
+Najkrhkija je pretpostavka o jednoj dimenziji. Čim politika postane višedimenzionalna, središnja ravnoteža nestaje, pa ista logika koja predviđa konvergenciju prema centru objašnjava i polarizaciju.
+:::
+
+::: {.notes}
+Spustite ton i upozorite studente da je medijanski rezultat lijep, ali krhak, jer počiva na zahtjevnim pretpostavkama. Nabrojite sve četiri, jedna dimenzija, dvije stranke, potpuna informiranost i sigurna izlaznost, i recite da ćemo svaku redom problematizirati u nastavku predavanja. Posebno se zadržite na pretpostavci o jednoj dimenziji jer je ona najkrhkija. Objasnite, oslanjajući se na kolektivni izbor, da čim politika postane višedimenzionalna stabilan pobjednik u sredini nestaje. Zaključite mostom prema sljedećoj temi, ista logika koja vodi u konvergenciju objašnjava i polarizaciju, ovisno o broju dimenzija.
+:::
+
+## Stranke oblikuju ponudu {.dio-slide}
+
+[DIFERENCIJACIJA]{.section-label}
+
+::: {.lead}
+Stranke nisu pasivni prenositelji biračkih preferencija, nego aktivni poduzetnici koji oblikuju ponudu.
+:::
+
+. . .
+
+Glavna je strategija [diferencijacija]{.accent}, u kojoj stranke ne nude tek tehničke politike, nego cjelovite „brendove” koji spajaju ekonomske mjere, identitetske signale i emocionalne apele.
+
+. . .
+
+::: {.cbox .kljucno}
+[Ključno]{.cbox-label}
+Takvi brendovi biraču služe kao informacijski prečaci, jer većina ljudi nema poticaja ulagati velik trud u analizu programa.
+:::
+
+::: {.notes}
+Otvorite blok preokretom uobičajene slike, stranke ne samo da odgovaraju na preferencije, nego ih aktivno oblikuju kao poduzetnici. Naglasite da se ne natječu pojedinačnim mjerama, nego cjelovitim brendovima koji spajaju ekonomiju, identitet i emocije. Objasnite zašto brend funkcionira, jer biraču služi kao prečac umjesto skupe analize programa. Povežite to s racionalnom neinformiranošću iz prethodne cjeline, koju ćemo razraditi kasnije. Najavite da ćemo sada vidjeti najmoćniji alat te diferencijacije, pakiranje politika.
+:::
+
+## Pakiranje
+
+[PAKIRANJE POLITIKA]{.section-label}
+
+::: {.def}
+**Pakiranje** (*bundling*) izborna je strategija u kojoj stranka spaja različite, ponekad i međusobno proturječne politike u jedan programski paket, što biraču otežava razdvajanje i vrednovanje pojedinih elemenata.
+:::
+
+. . .
+
+Birač koji nema poticaj proučavati program ne može sam rastaviti paket, pa glas dodjeljuje cjelini prema jednom ili dva najistaknutija elementa.
+
+. . .
+
+::: {.cbox .praksa}
+[Praksa]{.cbox-label}
+Institucije koje traže obvezujuće programe i procjene fiskalnih učinaka povećavaju cijenu pakiranja, jer otežavaju održavanje različitih obećanja prema različitim publikama.
+:::
+
+::: {.notes}
+Pažljivo pročitajte definiciju i ostavite je na ekranu dok studenti uoče ključni dio, spajanje proturječnih politika u jedan paket. Dajte konkretan primjer, porezne olakšice poduzetnicima, veće mirovine umirovljenicima i više za poljoprivredu istodobno. Objasnite mehaniku, birač bez poticaja ne može rastaviti paket, pa glasuje za cjelinu prema jednom ili dva istaknuta elementa. Naglasite da stranka tako prodaje različita obećanja različitim skupinama, a proturječja je ne kažnjavaju dok ih ne mora javno braniti. Zaključite institucionalnom poukom, obvezujući programi i fiskalne procjene podižu cijenu pakiranja.
+:::
+
+## Granica pakiranja
+
+[PREVIŠE OBEĆANJA RUŠI VJERODOSTOJNOST]{.section-label}
+
+Pakiranje ipak ima prirodnu granicu. Svako dodatno obećanje isprva donosi nove glasove.
+
+. . .
+
+No u nekom trenutku [obilje obećanja]{.accent} počne rušiti vjerodostojnost stranke, pa ukupna podrška opada [@downs1957].
+
+. . .
+
+Graf koji slijedi prikazuje tu obrnutu krivulju podrške u ovisnosti o broju obećanja, a klizači mijenjaju koliko birači nagrađuju obećanja i koliko kažnjavaju izgubljenu vjerodostojnost.
+
+## Granica obećanja na grafu {.smaller}
+
+[VRH PODRŠKE — ISPROBAJTE]{.section-label}
+
+```{ojs}
+//| echo: false
+viewof dp_controls = Inputs.form({
+  a: Inputs.range([0.5, 3], {value: 2, step: 0.1, width: 250, label: "Dobitak a"}),
+  b: Inputs.range([0.1, 1], {value: 0.2, step: 0.02, width: 250, label: "Kazna b"})
+})
+```
+
+```{ojs}
+//| echo: false
+{
+  const a = dp_controls.a, b = dp_controls.b;
+  const sup = (p) => Math.max(0, a * p - b * p * p);
+  const ps = d3.range(0, 10.001, 0.05);
+  const curve = ps.map(p => ({p, s: sup(p)}));
+  const pStar = a / (2 * b);
+  const sMax = sup(pStar);
+  const ymax = Math.max(6, sMax * 1.25);
+
+  return Plot.plot({
+    width: 840,
+    height: 350,
+    marginLeft: 55,
+    marginTop: 46,
+    marginBottom: 44,
+    style: {fontSize: "12px", fontFamily: "Public Sans, system-ui, sans-serif", color: "#3A332D", background: "transparent"},
+    x: {label: "Broj obećanja / opseg potrošnje →", domain: [0, 10]},
+    y: {label: "↑ Politička podrška", domain: [0, ymax], grid: true},
+    marks: [
+      Plot.ruleY([0], {stroke: "#C9C3B8"}),
+      Plot.line(curve, {x: "p", y: "s", stroke: "#2D5A8E", strokeWidth: 2.5, clip: true}),
+      Plot.ruleX([pStar], {stroke: "#6B6357", strokeDasharray: "4,3", clip: true}),
+      Plot.dot([{p: pStar, s: sMax}], {x: "p", y: "s", r: 5, fill: "#6B1F26", stroke: "white", strokeWidth: 2, clip: true}),
+      Plot.text([pStar <= 10 ? `najveća podrška pri ${pStar.toFixed(1)} obećanja` : "podrška na ovom rasponu još raste"],
+        {frameAnchor: "top", dy: -30, fontSize: 13, fontWeight: 700, fill: "#2D5A8E"})
+    ]
+  });
+}
+```
+
+::: {.isprobaj}
+Povećajte kaznu za nevjerodostojnost i vrh se pomiče ulijevo — kad birači oštrije kažnjavaju neostvariva obećanja, isplati se obećati manje. Povećajte dobitak po obećanju i vrh ide udesno. Oba kraja krivulje daju nisku podršku, pa najbolji izbor leži između premalo i previše obećanja.
+:::
+
+::: {.notes}
+Pokažite da odnos broja obećanja i podrške nije monoton nego ima vrh. Objasnite intuiciju: prva obećanja donose glasove, ali previše obećanja ruši vjerodostojnost, pa podrška pada. Povećajte kaznu za nevjerodostojnost i istaknite da se vrh pomiče ulijevo, jer se stranci tada isplati obećati manje. Povećajte dobitak po obećanju i pokažite suprotan pomak. Zaključite da i premalo i previše obećanja vode niskoj podršci, pa stranka traži optimalnu sredinu, čime model povezujete sa stvarnim kampanjama.
+:::
+
+::: {.notes}
+Postavite ideju granice, pakiranje nije besplatno jer obećanja imaju i svoju cijenu. Objasnite dva suprotstavljena učinka, svako obećanje privlači nove glasove, ali nagriza vjerodostojnost. Naglasite da zbroj tih učinaka daje obrnutu krivulju u obliku obrnutog slova U, s vrhom pri optimalnom broju obećanja. Najavite interaktivni graf i recite studentima neka prate što se događa s vrhom kada pomiču klizače. Pitajte ih unaprijed što očekuju ako birači oštrije kažnjavaju neostvariva obećanja, pa neka provjere na grafu.
+:::
+
+## Herestetika i negativna kampanja
+
+[MIJENJANJE TEME]{.section-label}
+
+::: {.def}
+**Herestetika** je vještina strukturiranja političkog prostora i nametanja tema na kojima stranka ima komparativnu prednost [@riker1968].
+:::
+
+. . .
+
+Umjesto da se natječu ondje gdje su slabije, stranke nameću sebi povoljne teme. Kada su velike stranke ekonomski slične, natjecanje se premješta na [identitetska, sigurnosna i povijesna]{.accent} pitanja.
+
+. . .
+
+::: {.cbox .praksa}
+[Praksa]{.cbox-label}
+Negativna kampanja diskreditira protivnika jer je često jeftinija i učinkovitija od uvjeravanja, premda dugoročno smanjuje povjerenje u politiku.
+:::
+
+::: {.notes}
+Uvedite herestetiku kao Rikerov pojam i prevedite ga jednostavno, riječ je o mijenjanju teme rasprave u svoju korist. Naglasite razliku prema klasičnom natjecanju, ne pobjeđuje se boljim odgovorom, nego boljim pitanjem. Objasnite zašto je to važno danas, kada su velike stranke ekonomski sve sličnije, pa se borba seli na identitet, sigurnost i povijest. Zatim uvedite negativnu kampanju kao srodnu strategiju, diskreditacija protivnika jeftinija je od uvjeravanja. Završite kritičkom napomenom o dugoročnoj cijeni, padu povjerenja u politiku, čime povezujete blok sa širom temom državnih neuspjeha.
+:::
+
+## Centar ili polarizacija {.dio-slide}
+
+[VIŠE DIMENZIJA]{.section-label}
+
+::: {.lead}
+Uredna priča o natjecanju za centar pretpostavlja jednu os na kojoj sredina uopće postoji. U stvarnosti birači istodobno vrednuju ekonomska, vrijednosna, identitetska i vanjskopolitička pitanja.
+:::
+
+. . .
+
+Čim se te dimenzije ukrste, stranke se mogu [specijalizirati za pojedine skupine birača]{.accent} umjesto da se natječu za sredinu.
+
+::: {.def}
+**Višedimenzionalni politički prostor** nastaje kada birači istodobno vrednuju više neovisnih dimenzija politike (ekonomska, vrijednosna, identitetska, vanjskopolitička); u takvom prostoru jasna središnja pozicija često ne postoji, a stabilnost ishoda većinskog glasovanja gubi se sukladno McKelveyevu teoremu [@mckelvey1976].
+:::
+
+::: {.notes}
+Vratite studente na model iz prethodnog dijela u kojem se sve svodi na jednu lijevo-desnu os. Naglasite da je to korisna, ali snažna pretpostavka, jer pravi birači istodobno vrednuju ekonomiju, vrijednosti, identitet i vanjsku politiku. Objasnite da čim dodamo i drugu dimenziju, urednog medijana više nema, pa se stranke mogu specijalizirati za niše umjesto da jure prema centru. Polako pročitajte definiciju i istaknite poveznicu s McKelveyem, jer ona pokazuje da u više dimenzija većinsko glasovanje gubi stabilnost. Recite da to nije puka tehnička sitnica, nego objašnjava zašto centar u stvarnosti nije siguran magnet kakvim ga prikazuje jednodimenzionalni model.
+:::
+
+## Što gura prema rubu
+
+[STRUKTURNI I POJAČAVAJUĆI ČIMBENICI]{.section-label}
+
+::: {.columns}
+::: {.column width="50%"}
+[Temeljni čimbenici]{.accent}
+
+- [Bimodalna distribucija]{.accent} preferencija — kada se birači grupiraju oko dvaju krajeva, isplati se napustiti centar i mobilizirati vlastitu ideološki motiviranu bazu.
+- [Izborni sustav]{.accent} — proporcionalni pogoduje većem broju stranaka i koalicijskoj politici, dok većinski gura prema dvjema velikim strankama.
+:::
+
+::: {.column width="50%"}
+[Pojačavajući čimbenici]{.accent}
+
+- [Mobilizacija rubova]{.accent} — izlaznost nije zajamčena, a birači s krajeva spektra lakše se mobiliziraju, pa izraženije pozicije bude vlastitu bazu.
+- [Pritisak iznutra]{.accent} — ideološki aktivisti, veliki donatori i medijski saveznici vuku vodstvo prema rubu spektra.
+:::
+:::
+
+::: {.notes}
+Razdvojite dvije razine uzroka, jer studenti ih često spajaju. Lijevi stupac su strukturni, temeljni čimbenici koji određuju sam oblik biračkog krajolika, distribucija preferencija i izborni sustav. Objasnite da bimodalna distribucija sama po sebi mijenja računicu, jer baza postaje vrednija od neodlučne sredine. Desni stupac su pojačavajući čimbenici koji otklon prema rubu čine isplativijim, nesigurna izlaznost i unutarstranački pritisak aktivista, donatora i medija. Naglasite da strukturni čimbenici postavljaju teren, a pojačavajući ubrzavaju kretanje prema rubu, pa zajedno objašnjavaju zašto centar slabi.
+:::
+
+## Polarizacija
+
+[UDALJAVANJE OD CENTRA]{.section-label}
+
+::: {.def}
+**Polarizacija** je proces udaljavanja stranaka od centra prema suprotnim krajevima ideološkog spektra; nastaje kada distribucija biračkih preferencija postane bimodalna, kada izlaznost aktivira rubne birače ili kada ideološki pritisak unutar stranaka prevlada poticaj za osvajanje medijana.
+:::
+
+. . .
+
+[Zbog svega toga suvremene demokracije često pokazuju polarizaciju umjesto konvergencije]{.accent}, pri čemu se stranke razmiču, a središte slabi.
+
+::: {.notes}
+Definirajte polarizaciju kao zrcalnu sliku konvergencije iz medijanskog modela, stranke se ne stišću u sredini nego se razmiču prema krajevima. Povežite tri okidača iz definicije s prethodnim slajdom, bimodalna distribucija, selektivna izlaznost rubnih birača i unutarstranački ideološki pritisak. Naglasite da je svaki od njih dovoljan da nadvlada privlačnost medijana, a u praksi obično djeluju zajedno. Otkrijte zaključnu rečenicu tek nakon definicije, jer ona izvrće naivno očekivanje da se demokracije s vremenom umjeravaju. Postavite studentima pitanje vide li tu dinamiku u zemljama koje prate, čime otvarate sljedeću usporednu tablicu.
+:::
+
+## Centrizam i polarizacija u praksi {.smaller}
+
+[USPOREDBA ZEMALJA]{.section-label}
+
+| Zemlja | Prevladavajuća strategija | Ključne karakteristike | Posljedice za javne financije |
+|---|---|---|---|
+| Hrvatska (2010.–2020.) | centrizam | konvergencija HDZ–SDP po ekonomskim pitanjima | relativna fiskalna stabilnost, ali sporost reformi |
+| Njemačka (Merkelina era) | centrizam | velike koalicije CDU–SPD, *Mittepolitik* | visoka stabilnost, niska volatilnost duga |
+| SAD | polarizacija | bimodalna distribucija, mobilizacija baze | veliki zaokreti u fiskalnoj politici, visok dug |
+| Mađarska (Orbán) | polarizacija + centar–periferija | dominacija Fidesza kroz nacionalno-identitetsku mobilizaciju | centralizacija fiskalne moći, rast potrošnje |
+| Francuska (2017.–2022.) | „novi centar” | Macronov pokret kao pokušaj nadilaženja lijevo-desne osi | početna fleksibilnost, kasnije prosvjedi |
+| Italija | fragmentirana polarizacija | jačanje populističkih stranaka (M5S, Liga) | visoka nestabilnost proračuna i duga |
+
+*Izrada autora prema Downsu, Fiorini i Muddeu.*
+
+::: {.notes}
+Provedite studente kroz tablicu po retcima, ali ne čitajte svaku ćeliju, nego izvucite obrazac. Pokažite gornje dvije zemlje kao slučajeve centrizma, gdje konvergencija velikih stranaka donosi stabilnost po cijenu sporijih reformi. Suprotstavite im SAD i Italiju kao primjere polarizacije i fragmentacije, gdje su posljedica veliki fiskalni zaokreti, visok dug i nestabilan proračun. Posebno obradite Mađarsku i Francusku kao hibridne slučajeve, identitetsku mobilizaciju s centralizacijom moći te pokušaj novog centra koji se kasnije sudara s prosvjedima. Zaključite porukom da strategija pozicioniranja nije samo izborna taktika, nego ostavlja trag u javnim financijama, čime povezujete cijeli blok s ostatkom kolegija.
+:::
+
+## Račun glasovanja {.dio-slide}
+
+[ZAŠTO GLAS RIJETKO ODLUČUJE]{.section-label}
+
+::: {.lead}
+Posebnost izbora kao mehanizma kolektivnog odlučivanja jest da pojedinačni glas gotovo nikada ne odlučuje ishod. Downs je formalizirao odluku o izlasku na izbore, a Riker i Ordeshook zapisali su je kao račun glasovanja. [@downs1957; @riker1968]
+:::
+
+. . .
+
+$$R = (P \times B) - C + D$$
+
+Pritom je [P]{.var} vjerojatnost da će glas biti odlučujući, [B]{.var} korist ako pobijedi preferirani kandidat, [C]{.var} trošak izlaska na izbore, a [D]{.var} neinstrumentalne koristi samog čina, dakle osjećaj dužnosti, zadovoljstvo i društveni pritisak.
+
+. . .
+
+[U velikim demokracijama [P]{.var} je toliko malen da instrumentalni dio [(P × B)]{.var} postaje zanemariv.]{.accent}
+
+::: {.notes}
+Otvorite blok jasnom tezom, da u velikom biračkom tijelu jedan glas gotovo nikad ne odlučuje ishod. Polako pročitajte formulu i prođite kroz sva četiri člana, vjerojatnost odlučujućeg glasa, korist od pobjede, trošak izlaska i neinstrumentalne koristi. Naglasite da je upravo [P]{.var} ono što ruši cijeli instrumentalni račun, jer je u milijunskom biračkom tijelu blizu nule. Recite studentima da onda umnožak [P]{.var} puta [B]{.var} praktički nestaje, pa od jednadžbe ostaju samo trošak [C]{.var} i član [D]{.var}. Najavite da iz te naizgled tehničke opaske slijede dvije velike posljedice, racionalna neinformiranost i ekspresivno glasovanje, koje obrađujemo na sljedećim slajdovima.
+:::
+
+## Racionalna neinformiranost
+
+[RACIONALNA NEINFORMIRANOST]{.section-label}
+
+::: {.def}
+**Racionalna neinformiranost** (*rational ignorance*) stanje je u kojem se biraču ne isplati ulagati u informiranje, jer trošak snosi sam, a korist od ispravnog glasa raspršena je na cijelo društvo.
+:::
+
+. . .
+
+To nije lijenost nego ekonomska racionalnost, jer trošak razumijevanja porezne ili mirovinske reforme daleko premašuje očekivanu korist na biralištu.
+
+. . .
+
+::: {.cbox .empirija}
+[Empirija]{.cbox-label}
+Mulligan i Hunter procijenili su vjerojatnost odlučujućeg glasa na američkim predsjedničkim izborima na oko 1 prema 10 milijuna. Izlaznost na izborima za Europski parlament 2024. u Hrvatskoj bila je oko 21 %, među najnižima u EU-u, dok obvezno glasovanje u Belgiji i Australiji znatno diže izlaznost. [@mulligan2003; @blais2000]
+:::
+
+::: {.notes}
+Definirajte racionalnu neinformiranost precizno i odmah razbijte uobičajeni moralni prigovor da je riječ o lijenosti. Inzistirajte na asimetriji troška i koristi, trošak informiranja snosi pojedinac u cijelosti, a korist ispravnog glasa razlije se na cijelo društvo. Iskoristite primjer porezne ili mirovinske reforme da pokažete koliko je skupo doista razumjeti politiku. Brojkom 1 prema 10 milijuna učinite vjerojatnost odlučujućeg glasa opipljivom. Povežite nisku hrvatsku izlaznost na europskim izborima s teorijom, a zatim pokažite da obvezno glasovanje mijenja račun mijenjanjem troška, ne preferencija. Zaključite da neinformiranost otvara prostor pojednostavljenim porukama i dobro organiziranim skupinama.
+:::
+
+## Fiskalna iluzija
+
+[NEVIDLJIVI POREZI]{.section-label}
+
+::: {.def}
+**Fiskalna iluzija** pojava je u kojoj vlade imaju poticaj dizajnirati poreze tako da troškovi budu što manje vidljivi, primjerice doprinosi koji se odbijaju prije neto plaće ili PDV uključen u cijenu, pa građani podcjenjuju stvarni teret. [@wagner1976]
+:::
+
+. . .
+
+Birač koji se racionalno ne informira lakše podlegne nevidljivom porezu, pa fiskalna iluzija izravno slijedi iz prethodnog slajda.
+
+. . .
+
+::: {.cbox .praksa}
+[Praksa]{.cbox-label}
+Politička otpornost na povećanje PDV-a niža je od otpora na isti iznos prikupljen porezom na dohodak, jer se PDV plaća pri kupnji bez odvojene stavke, a porez na dohodak vidi se na svakom platnom listiću. Zato politika gura prema manje vidljivim porezima čak i kad su distortivniji. [@caplan2007]
+:::
+
+::: {.notes}
+Predstavite fiskalnu iluziju kao izravnu posljedicu racionalne neinformiranosti, jer birač koji ne prati detalje lakše previdi skriveni teret. Objasnite mehanizam poticaja na strani vlade, manje vidljiv porez politički je jeftiniji za prikupljanje potpore. Dajte dva konkretna primjera, doprinose koji se odbijaju prije neto plaće i PDV uključen u cijenu. Naglasite eksperimentalni nalaz, ista svota poreza nailazi na slabiji otpor kao PDV nego kao porez na dohodak, isključivo zbog vidljivosti. Poentirajte da politički kalkulus tako bira instrumente prema vidljivosti, a ne prema učinkovitosti, pa formalno optimalna porezna struktura ne preživljava put kroz politički proces.
+:::
+
+## Zašto ipak glasujemo
+
+[EKSPRESIVNO GLASOVANJE]{.section-label}
+
+Ako je vjerojatnost odlučujućeg glasa zanemariva, čisti instrumentalni račun kaže da se ne isplati glasovati. A ipak ljudi masovno izlaze.
+
+. . .
+
+Odgovor leži u članu [D]{.var}, dakle u [ekspresivnom glasovanju]{.accent} kao izrazu identiteta i pripadnosti. Baš kao što navijač navija za svoju momčad iako zna da to neće promijeniti rezultat, birač izražava lojalnost svjetonazoru ili zajednici. [@brennan1993]
+
+. . .
+
+::: {.cbox .kljucno}
+[Ključno]{.cbox-label}
+Caplanova racionalna iracionalnost pokazuje da birači, jer ih pogrešno mišljenje na biralištu gotovo ništa ne košta, biraju emocionalno privlačne ali neodržive narative, što pojačava afektivnu polarizaciju. [@caplan2001; @iyengar2019]
+:::
+
+::: {.notes}
+Vratite studente na paradoks s prvog slajda, ako je [P]{.var} blizu nule, zašto onda uopće glasujemo. Pokažite da odgovor leži u članu [D]{.var}, koji smo namjerno zadržali u formuli. Objasnite ekspresivno glasovanje kao čin izražavanja identiteta i pripadnosti, a ne pokušaj utjecaja na ishod. Iskoristite usporedbu s navijačem, koji navija znajući da neće promijeniti rezultat, jer je studentima odmah razumljiva. Nadogradite to Caplanovom racionalnom iracionalnošću, kad je pogrešno mišljenje na biralištu gotovo besplatno, birač si može priuštiti privlačne ali neodržive narative. Zaključite mostom prema afektivnoj polarizaciji, ekspresivni motivi produbljuju emocionalnu podjelu između tabora.
+:::
+
+## Je li diktatura učinkovitija? {.dio-slide}
+
+[PROVOKATIVNO PITANJE]{.section-label}
+
+::: {.lead}
+Jedno od najprovokativnijih pitanja teorije javnog izbora glasi: nije li autokracija jednostavno brža i dosljednija od demokracije? Demokracija je spora, skupa i podložna pregovaranju, dok diktatura naizgled odlučuje u jednom potezu.
+:::
+
+. . .
+
+Buchanan i Tullock razlikuju dvije vrste troškova [@buchanan1962]. [Troškove odlučivanja]{.accent} čine vrijeme, pregovori i kompromisi potrebni da se postigne suglasnost, dok [vanjski troškovi]{.accent} obuhvaćaju štetu koju trpimo od odluka s kojima se ne slažemo.
+
+. . .
+
+[Diktatura ekstremno smanjuje prve, ali dramatično povećava druge.]{.accent}
+
+::: {.notes}
+Otvorite blok izravnim, pomalo izazovnim pitanjem i pustite studente da se na trenutak zamisle nad njim. Naglasite da prividna prednost autokracije leži u brzini i dosljednosti, jer odluka ne mora proći kroz pregovore i kompromise. Zatim uvedite Buchanan-Tullockov okvir i jasno razdvojite dvije vrste troškova, troškove odlučivanja i vanjske troškove. Objasnite da svako pravilo odlučivanja predstavlja kompromis između te dvije veličine, jer što je manji broj ljudi koji moraju pristati, to su manji troškovi odlučivanja, ali veći vanjski troškovi. Završni redak pustite tek nakon klika, jer on sažima cijelu pouku, diktatura jeftino odlučuje, ali skupo griješi. Najavite da ćemo na sljedećem slajdu razložiti zašto brzina nije dovoljna.
+:::
+
+## Tri slabosti autokracije
+
+[ZAŠTO BRZINA NIJE DOVOLJNA]{.section-label}
+
+::: {.agenda}
+1. [Nedostatak pouzdanih informacija]{.accent} — bez slobodnih medija i oporbe vladar rijetko dobiva točne povratne informacije, pa su moguće katastrofalne pogreške velikih razmjera.
+2. [Premještanje lova na rentu]{.accent} — borba za rente seli iz otvorenog parlamentarnog prostora u zatvorene krugove oko vladara, gdje lojalnost postaje ključna valuta.
+3. [Odsutnost mehanizma korekcije]{.accent} — nema mirne smjene vlasti ni postupnog ispravka loših politika, mogućnost koju demokracija uklapa u sam svoj ustroj.
+:::
+
+. . .
+
+::: {.cbox .empirija}
+[Empirija]{.cbox-label}
+Sen je pokazao da u modernoj povijesti nikada nije došlo do velike gladi u funkcionalnoj demokraciji, upravo zbog slobodnog tiska i pritiska javnosti koji djeluju kao rani mehanizam upozoravanja [@sen1999].
+:::
+
+::: {.notes}
+Provedite studente kroz tri slabosti redom i naglasite da nijedna nije slučajna, nego izravno proizlazi iz koncentracije moći. Kod prve istaknite informacijski problem, jer bez slobodnih medija i oporbe vladar živi u eho-komori vlastitih savjetnika. Kod druge objasnite da lov na rentu ne nestaje, nego se samo seli u zatvorene krugove, gdje je još manje transparentan. Treću slabost označite kao najvažniju, jer odsutnost mirne smjene vlasti znači da se loša politika ne može ispraviti bez krize ili nasilja. Senov primjer iskoristite kao snažan empirijski dokaz, slobodan tisak i javni pritisak djeluju kao sustav ranog upozoravanja koji u autokraciji jednostavno ne postoji. Možete spomenuti Veliki skok naprijed kao kontrast, cijenu nepostojanja tih mehanizama korekcije.
+:::
+
+## Pouka: pravila, ne ljudi
+
+[KRHKA ALI OTPORNA]{.section-label}
+
+::: {.cbox .kljucno}
+[Ključno]{.cbox-label}
+Demokracija je sporija i skuplja, ali otpornija na katastrofalne pogreške, dok je autokracija brža, no krhkija jer ovisi o kvaliteti i dugovječnosti samog vladara. Najbolji institucionalni dizajn spaja demokratsku legitimnost s čvrstim [ustavnim ogradama]{.accent} koje štite fiskalnu odgovornost od kratkoročnih političkih impulsa [@mueller1989].
+:::
+
+. . .
+
+[Zaključak nije idealizacija nijednog sustava, nego povratak na temeljnu pouku — dobre rezultate jamče dobra pravila igre, a ne nada u dobrog vladara.]{.accent}
+
+::: {.notes}
+Zaokružite blok jasnom porukom, ovdje ne biramo između dva tabora, nego izvlačimo zajedničku pouku. Naglasite asimetriju, demokracija plaća svoju sporost i skupoću, ali za uzvrat dobiva otpornost na pogreške koje mogu uništiti državu. Autokracija nudi brzinu, no ta brzina je krhka jer počiva na jednoj osobi, a kvaliteta i dugovječnost vladara nisu zajamčene. Istaknite pojam ustavnih ograda kao most prema cijelom dijelu knjige o konstitucionalnoj ekonomici, jer dobro postavljena pravila štite fiskalnu odgovornost neovisno o tome tko trenutno vlada. Završni redak iskoristite kao mostobran prema sljedećem predavanju, naglasak je na pravilima, a ne na ljudima. Ostavite trenutak tišine da poruka sjedne.
+:::
+
+## Zašto je to važno za javne politike {.dio-slide}
+
+[SUSTAVNE PRISTRANOSTI]{.section-label}
+
+::: {.lead}
+Stranačko natjecanje objašnjava sustavne pristranosti političkog procesa, a ne samo pojedinačne odluke.
+:::
+
+. . .
+
+- Politike s [vidljivim i koncentriranim koristima]{.accent} prije izbora politički su privlačnije od onih čije se koristi javljaju tek za desetljeće.
+- Reforme s kratkoročnim troškovima i dugoročnim koristima [sustavno se odgađaju]{.accent}.
+- Skupine koje se lakše mobiliziraju i bolje informiraju dobivaju [nesrazmjeran utjecaj]{.accent}.
+
+::: {.notes}
+Povežite cijelo predavanje s praktičnom poantom, zašto nas ova teorija uopće zanima. Naglasite da stranačko natjecanje ne objašnjava samo pojedinačne poteze, nego sustavne, predvidljive pristranosti političkog procesa. Provedite studente kroz tri natuknice i za svaku dajte mali primjer, infrastrukturni rez prije izbora, odgađana mirovinska reforma, dobro organizirani proizvođači nasuprot raspršenim potrošačima. Inzistirajte na riječi sustavno, jer ne govorimo o iznimkama nego o pravilu. Ostavite slajd na ekranu dovoljno dugo da studenti sami dosjete dodatne primjere iz aktualne politike.
+:::
+
+## Nije stvar loših namjera
+
+[LOGIKA NATJECANJA]{.section-label}
+
+::: {.cbox .kljucno}
+[Ključno]{.cbox-label}
+Te se pristranosti ne pripisuju lošim namjerama pojedinaca, nego logici natjecanja za glasove. Stranka koja bi zanemarila izborni kalendar i medijanskog glasača izgubila bi od one koja to ne čini, pa konkurencija nagrađuje upravo kratkoročnost koju kao građani osuđujemo. Zato je odgovor u pravilima koja mijenjaju poticaje, a ne u zamjeni političara boljima.
+:::
+
+::: {.notes}
+Ovaj slajd je etička i analitička poanta predavanja, pa mu posvetite vremena. Razbijte uobičajenu pretpostavku da loše politike proizlaze iz loših ili nesposobnih političara. Pokažite da i posve dobronamjerna stranka biva istisnuta ako ignorira izborni kalendar i medijanskog glasača, jer je natjecanje selekcijski mehanizam. Naglasite paradoks, konkurencija nagrađuje upravo onu kratkoročnost koju kao građani osuđujemo. Zaključite porukom koja vodi prema institucionalnoj ekonomici, popravak tražimo u pravilima i poticajima, ne u potrazi za boljim ljudima.
+:::
+
+## Što smo naučili
+
+[SAŽETAK]{.section-label}
+
+::: {.agenda}
+1. Stranke [maksimiziraju glasove]{.accent}, pa se ponašaju donekle slično poduzećima na tržištu.
+2. Teorem medijanskog glasača vuče ih prema [sredini]{.accent}, ali pravila i mobilizacija baze vode k [polarizaciji]{.accent}.
+3. [Racionalna neinformiranost]{.accent} otvara prostor onima koji su bolje organizirani.
+4. Sustavna je pristranost prema [kratkoročno vidljivim koristima]{.accent} i odgađanje reformi.
+5. Odgovor je u [pravilima]{.accent}, a ne u izboru boljih ljudi.
+:::
+
+::: {.notes}
+Iskoristite ovaj slajd kao brzi pregled cijelog predavanja u pet rečenica. Krenite od polazišne pretpostavke da stranke maksimiziraju glasove kao poduzeća dobit. Podsjetite na napetost između medijanskog glasača koji vuče prema sredini i pravila i baze koji vuku prema polarizaciji. Naglasite da racionalna neinformiranost nije glupost birača, nego racionalan odgovor na nisku očekivanu korist od informiranja. Zatvorite petom točkom jer ona prelazi u sljedeća poglavlja, popravak je u pravilima, ne u ljudima. Pozovite studente da bez gledanja u bilješke ponove sve točke.
+:::
+
+## Nit koja povezuje
+
+[ZAKLJUČAK]{.section-label}
+
+::: {.cbox .kljucno}
+[Ključno]{.cbox-label}
+Političko natjecanje nije potraga za općim dobrom, nego strateška igra za glasove. Zato se kvaliteta javnih politika ne popravlja izborom boljih ljudi, nego dizajnom pravila koja mijenjaju poticaje aktera.
+:::
+
+::: {.notes}
+Ovo je rečenica koju studenti trebaju ponijeti iz predavanja, pa je izgovorite polako i bez žurbe. Sažmite cijeli dio u jednu sliku, natjecanje za glasove je strateška igra, a ne plemenita potraga za općim dobrom. Povežite to s prethodnim predavanjem o teoriji igara, jer ista logika strateške interakcije ovdje oblikuje politiku. Naglasite normativni zaokret, ako su problemi strukturni, rješenja moraju biti strukturna, dakle pravila. Najavite da upravo zato sljedeća poglavlja govore o institucijama i ustavnim ogradama.
+:::
+
+## Vježba
+
+[VJEŽBA]{.section-label}
+
+::: {.cbox .vjezba}
+[Vježba]{.cbox-label}
+Promotrite pet birača na lijevo-desno osi od 0 do 10, s idealnim točkama 1, 3, 5, 7 i 9. Svaki birač glasuje za stranku koja mu je bliža, a dvije stranke žele maksimizirati broj glasova.
+
+a. Odredite poziciju [medijanskog glasača]{.var} i objasnite zašto je upravo ta točka ravnotežna lokacija za obje stranke.
+b. Neka stranka A zauzme poziciju 3, a stranka B poziciju 7. Pokažite koliko glasova osvaja svaka i objasnite zašto svaka ima poticaj pomaknuti se prema sredini.
+c. Treća stranka slobodno bira poziciju nakon što su A i B već u medijanu. Odredite gdje joj se isplati smjestiti i pokažite zašto njezin ulazak razbija stabilnost središnje ravnoteže.
+d. Dodajte uz ekonomsku i vrijednosnu (drugu) dimenziju, pa obrazložite zašto jasna središnja pozicija često više ne postoji te kako isti model objašnjava polarizaciju.
+:::
+
+::: {.notes}
+Postavite vježbu kao primjenu teorema medijanskog glasača na konkretnim brojevima. Zadatke a i b možete riješiti zajedno na ploči, jer pokazuju zašto je medijan na poziciji 5 stabilna ravnoteža i zašto se A i B konvergiraju. Zadatak c iskoristite da pokažete kako ulazak trećeg igrača ruši dvostranačku stabilnost, povežite to s ranijim predavanjem o ciklusima. Zadatak d je najteži, naglasite da u dvije dimenzije medijanska točka u pravilu ne postoji, pa se otvara prostor za polarizaciju. Predložite studentima da skiciraju os i ucrtaju idealne točke, jer vizualizacija odmah razjasni argument. Ostavite vježbu za samostalan rad ili kratku raspravu u paru.
+:::
+
+## Što slijedi {.dio-slide}
+
+[PUTOKAZ]{.section-label}
+
+::: {.lead}
+Ako slabo informirani birači i kratkoročni izborni poticaji oblikuju politiku, posebnu pozornost zaslužuju oni koji su najbolje organizirani da na nju utječu.
+:::
+
+::: {.agenda}
+1. [Predavanje 10 — interesne skupine]{.accent}: logika kolektivnog djelovanja, lobiranje, lov na rentu i Beckerov model natjecanja pritisaka.
+2. [Širi luk]{.accent}: od birača i stranaka prema organiziranim interesima koji oblikuju ishod javnih politika.
+:::
+
+::: {.notes}
+Zatvorite predavanje tako da otvorite sljedeće, pokažite studentima logičku nit koja ih povezuje. Ponovite zaključak, ako su birači slabo informirani, a poticaji kratkoročni, presudni postaju oni koji su najbolje organizirani. Najavite da su to interesne skupine i da im posvećujemo cijelo predavanje 10. Nabrojite teme koje slijede, logiku kolektivnog djelovanja, lobiranje, lov na rentu i Beckerov model. Naglasite širi luk knjige, pomičemo se od raspršenih birača prema koncentriranim organiziranim interesima. Zahvalite studentima i pozovite ih da prije sljedećeg puta razmisle koje interesne skupine prepoznaju u vlastitoj okolini.
+:::

@@ -21,6 +21,7 @@ project:
     - predavanja/06-oporezivanje.html
     - predavanja/07-teorija-igara.html
     - predavanja/08-kolektivni-izbor.html
+    - predavanja/09-stranke-izbori.html
     # Slika za dijeljenje linka (OG/Twitter image: ph3.jpg) — eksplicitno
     # navedena kao resurs da se sigurno kopira u docs/ pri renderu.
     - ph3.jpg
