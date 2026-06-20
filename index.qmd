@@ -46,7 +46,7 @@ Država oblikuje gotovo svaki važan dio našeg svakodnevnog života. Ova knjiga
 ::: {.sc-author-cell}
 [AUTORI]{.section-label}
 
-**[Milan Deskar-Škrbić](cv-milan.html) · [Petra Palić](https://www.unicath.hr/odjeli-i-fakultet/nastavnici/petra-palic) · [Luka Sikić](https://www.lukasikic.info/)**
+**[Milan Deskar-Škrbić](cv-milan.html) · [Petra Palić](cv-petra.html) · [Luka Šikić](cv-luka.html)**
 :::
 
 ::: {.sc-author-cell}

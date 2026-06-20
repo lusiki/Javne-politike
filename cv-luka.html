@@ -1,0 +1,554 @@
+<!doctype html>
+<html lang="hr-HR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Doc. dr. sc. Luka Šikić — Životopis</title>
+<meta name="description" content="Životopis doc. dr. sc. Luke Šikića — ekonomista i podatkovnog znanstvenika usmjerenog na makroekonomiju, financijska tržišta, strojno učenje, ekonometriju i obradu prirodnoga jezika.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&family=Newsreader:ital,opsz,wght@0,6..72,300;0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --paper:#F2EDE3;      /* warm cream */
+    --paper-2:#ECE5D7;    /* slightly deeper cream for panels */
+    --ink:#1C1916;        /* near-black, brown undertone */
+    --ink-soft:#5A534B;   /* muted body / secondary */
+    --ink-faint:#8B8378;  /* captions, periods */
+    --verdigris:#4A6B5C;  /* primary accent */
+    --oxblood:#6B1F26;    /* emphasis */
+    --ochre:#C8985E;      /* archival accent */
+    --line:#D8CFBE;       /* hairlines */
+    --serif:"Newsreader",Georgia,serif;
+    --sans:"Public Sans",system-ui,sans-serif;
+    --mono:"IBM Plex Mono",ui-monospace,monospace;
+  }
+
+  *{box-sizing:border-box;}
+  html{-webkit-text-size-adjust:100%;}
+  body{
+    margin:0;
+    background:var(--paper);
+    color:var(--ink);
+    font-family:var(--serif);
+    font-size:1.06rem;
+    line-height:1.62;
+    font-weight:400;
+    -webkit-font-smoothing:antialiased;
+    text-rendering:optimizeLegibility;
+  }
+
+  .page{
+    max-width:940px;
+    margin:0 auto;
+    padding:clamp(1.5rem,4vw,3.5rem) clamp(1.25rem,5vw,3rem) 4rem;
+  }
+
+  /* --- top bar --- */
+  .topbar{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:1rem;
+    font-family:var(--mono);
+    font-size:.7rem;
+    letter-spacing:.12em;
+    text-transform:uppercase;
+    color:var(--ink-faint);
+    padding-bottom:1.4rem;
+  }
+  .topbar a{
+    color:var(--verdigris);
+    text-decoration:none;
+    border-bottom:1px solid transparent;
+    transition:border-color .18s ease;
+  }
+  .topbar a:hover{border-color:var(--verdigris);}
+
+  /* --- header --- */
+  header.cv-head{
+    display:grid;
+    grid-template-columns:1fr auto;
+    gap:clamp(1.5rem,4vw,2.8rem);
+    align-items:center;
+    border-top:2px solid var(--ink);
+    border-bottom:1px solid var(--line);
+    padding:clamp(1.6rem,4vw,2.4rem) 0;
+  }
+  .kicker{
+    font-family:var(--mono);
+    font-size:.72rem;
+    font-weight:500;
+    letter-spacing:.16em;
+    text-transform:uppercase;
+    color:var(--verdigris);
+    margin:0 0 .7rem;
+  }
+  h1.name{
+    font-family:var(--serif);
+    font-weight:500;
+    font-size:clamp(2.1rem,6vw,3.35rem);
+    line-height:1.04;
+    letter-spacing:-.01em;
+    margin:0;
+  }
+  .role{
+    font-family:var(--sans);
+    font-size:1rem;
+    font-weight:500;
+    color:var(--ink);
+    margin:.9rem 0 .15rem;
+  }
+  .contact{
+    display:flex;
+    flex-wrap:wrap;
+    gap:.5rem .65rem;
+    margin-top:1.15rem;
+    font-family:var(--mono);
+    font-size:.78rem;
+  }
+  .contact a{
+    color:var(--ink);
+    text-decoration:none;
+    border:1px solid var(--line);
+    border-radius:999px;
+    padding:.28rem .8rem;
+    transition:border-color .18s ease,color .18s ease;
+    white-space:nowrap;
+  }
+  .contact a:hover{border-color:var(--verdigris);color:var(--verdigris);}
+
+  /* inline content links */
+  .entry a, .stack a, .card .cmeta a{
+    color:inherit;
+    text-decoration:none;
+    border-bottom:1px solid var(--ochre);
+    transition:color .18s ease, border-color .18s ease;
+  }
+  .entry a:hover, .stack a:hover, .card .cmeta a:hover{
+    color:var(--verdigris);
+    border-bottom-color:var(--verdigris);
+  }
+  a.doi{
+    font-family:var(--mono);
+    font-size:.7rem;
+    color:var(--verdigris);
+    text-decoration:none;
+    border-bottom:1px solid transparent;
+    white-space:nowrap;
+    transition:border-color .18s ease;
+  }
+  a.doi:hover{border-bottom-color:var(--verdigris);}
+
+  /* --- portrait (matted statecraft frame) --- */
+  .portrait{
+    width:clamp(152px,22vw,214px);
+    flex:0 0 auto;
+    margin:0;
+    padding:9px;
+    background:linear-gradient(180deg,#ffffff 0%,var(--paper) 100%);
+    border:1px solid var(--line);
+    border-radius:7px;
+    box-shadow:0 1px 0 rgba(255,255,255,.7) inset, 0 28px 54px -26px rgba(28,25,22,.6);
+    transition:transform .55s cubic-bezier(.2,.7,.2,1), box-shadow .55s ease;
+  }
+  .portrait:hover{
+    transform:translateY(-5px);
+    box-shadow:0 1px 0 rgba(255,255,255,.7) inset, 0 40px 66px -28px rgba(28,25,22,.62);
+  }
+  .portrait-frame{
+    position:relative;
+    aspect-ratio:4/5;
+    overflow:hidden;
+    border-radius:3px;
+    background:var(--paper-2);
+    box-shadow:0 0 0 1px rgba(28,25,22,.14);
+  }
+  .portrait img{
+    width:100%;height:100%;
+    object-fit:cover;
+    object-position:center top;
+    display:block;
+    filter:saturate(.97) contrast(1.015);
+  }
+  /* warm sheen so the cool photo settles onto the cream */
+  .portrait-frame::after{
+    content:"";
+    position:absolute;inset:0;
+    background:linear-gradient(150deg,rgba(200,152,94,.10),rgba(0,0,0,0) 44%);
+    pointer-events:none;
+  }
+  .portrait .initials{
+    position:absolute;inset:0;
+    display:flex;align-items:center;justify-content:center;
+    font-family:var(--serif);
+    font-weight:500;
+    font-size:clamp(2.3rem,6vw,3.1rem);
+    color:var(--verdigris);
+    letter-spacing:.02em;
+  }
+  /* --- layout grid --- */
+  .grid{
+    display:grid;
+    grid-template-columns:minmax(0,2fr) minmax(0,1fr);
+    gap:clamp(1.8rem,5vw,3.4rem);
+    margin-top:2.6rem;
+  }
+  @media (max-width:760px){
+    header.cv-head{grid-template-columns:1fr;text-align:left;}
+    .portrait{order:-1;}
+    .grid{grid-template-columns:1fr;gap:2.4rem;}
+  }
+
+  /* --- sections --- */
+  section{margin-bottom:2.5rem;}
+  section:last-child{margin-bottom:0;}
+  .sec-label{
+    font-family:var(--mono);
+    font-size:.72rem;
+    font-weight:500;
+    letter-spacing:.1em;
+    text-transform:uppercase;
+    color:var(--ink-faint);
+    margin:0 0 1.15rem;
+    padding-bottom:.5rem;
+    border-bottom:1px solid var(--line);
+    display:flex;
+    align-items:baseline;
+    gap:.6rem;
+  }
+  .sec-label .no{color:var(--ochre);font-family:var(--mono);font-size:.7rem;}
+
+  p{margin:0 0 1rem;}
+  p.lead{font-size:1.12rem;color:var(--ink);}
+  aside p{color:var(--ink-soft);}
+
+  /* --- timeline (experience / education) --- */
+  .timeline{position:relative;margin:0;padding:0;list-style:none;}
+  .timeline::before{
+    content:"";
+    position:absolute;
+    left:5px;top:.4rem;bottom:.4rem;
+    width:1px;
+    background:var(--line);
+  }
+  .entry{position:relative;padding:0 0 1.6rem 1.7rem;}
+  .entry:last-child{padding-bottom:0;}
+  .entry::before{
+    content:"";
+    position:absolute;
+    left:0;top:.55rem;
+    width:11px;height:11px;
+    border-radius:50%;
+    background:var(--paper);
+    border:2px solid var(--verdigris);
+  }
+  .entry.now::before{background:var(--verdigris);}
+  .entry .period{
+    font-family:var(--mono);
+    font-size:.74rem;
+    color:var(--ink-faint);
+    letter-spacing:.02em;
+    margin-bottom:.15rem;
+  }
+  .entry .pos{
+    font-family:var(--sans);
+    font-weight:600;
+    font-size:1.02rem;
+    color:var(--ink);
+    line-height:1.3;
+  }
+  .entry .org{
+    font-style:italic;
+    color:var(--verdigris);
+    font-size:1.0rem;
+  }
+  .entry .desc{
+    margin:.4rem 0 0;
+    color:var(--ink-soft);
+    font-size:.99rem;
+  }
+
+  /* --- compact education/teaching in aside --- */
+  .stack{margin:0;padding:0;list-style:none;}
+  .stack li{padding:0 0 1rem;}
+  .stack li:last-child{padding-bottom:0;}
+  .stack .t{
+    font-family:var(--sans);
+    font-weight:600;
+    font-size:.97rem;
+    color:var(--ink);
+    line-height:1.32;
+  }
+  .stack .s{color:var(--ink-soft);font-size:.95rem;}
+  .stack .s em{color:var(--verdigris);font-style:italic;}
+
+  /* --- chips (research areas) --- */
+  .chips{display:flex;flex-wrap:wrap;gap:.45rem;margin:0;padding:0;list-style:none;}
+  .chips li{
+    font-family:var(--mono);
+    font-size:.76rem;
+    color:var(--ink);
+    background:var(--paper-2);
+    border:1px solid var(--line);
+    border-radius:999px;
+    padding:.3rem .7rem;
+  }
+
+  /* --- books + awards cards --- */
+  .cards{display:grid;gap:.9rem;}
+  .card{
+    background:var(--paper-2);
+    border:1px solid var(--line);
+    border-left:3px solid var(--ochre);
+    border-radius:4px;
+    padding:.95rem 1.1rem;
+  }
+  .card.award{border-left-color:var(--oxblood);}
+  .card .ctitle{font-weight:500;font-style:italic;}
+  .card .cmeta{
+    font-family:var(--sans);
+    font-size:.84rem;
+    color:var(--ink-soft);
+    margin-top:.3rem;
+  }
+  .card .cyear{
+    font-family:var(--mono);
+    font-size:.72rem;
+    color:var(--ink-faint);
+  }
+
+  /* --- publications --- */
+  ol.pubs{margin:0;padding:0;list-style:none;counter-reset:pub;}
+  ol.pubs li{
+    position:relative;
+    padding:.85rem 0 .85rem 2.6rem;
+    border-bottom:1px solid var(--line);
+    font-size:.98rem;
+    color:var(--ink-soft);
+  }
+  ol.pubs li:last-child{border-bottom:none;}
+  ol.pubs li::before{
+    counter-increment:pub;
+    content:counter(pub,decimal-leading-zero);
+    position:absolute;
+    left:0;top:.95rem;
+    font-family:var(--mono);
+    font-size:.74rem;
+    color:var(--ochre);
+  }
+  ol.pubs .pt{color:var(--ink);font-style:italic;}
+  ol.pubs .pv{font-family:var(--mono);font-size:.8rem;color:var(--ink-soft);}
+  ol.pubs .py{font-family:var(--mono);font-size:.78rem;color:var(--ink-faint);}
+
+  /* --- footer --- */
+  .cv-foot{
+    margin-top:3.2rem;
+    padding-top:1.3rem;
+    border-top:1px solid var(--line);
+    font-family:var(--mono);
+    font-size:.72rem;
+    letter-spacing:.02em;
+    color:var(--ink-faint);
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:space-between;
+    gap:.6rem;
+  }
+  .cv-foot a{color:var(--verdigris);text-decoration:none;}
+  .cv-foot a:hover{text-decoration:underline;}
+
+  /* --- motion --- */
+  @keyframes rise{from{opacity:0;transform:translateY(16px);}to{opacity:1;transform:none;}}
+  .js .anim{opacity:0;animation:rise .85s cubic-bezier(.2,.7,.2,1) forwards;}
+  .js .anim.d1{animation-delay:.05s;}
+  .js .anim.d2{animation-delay:.14s;}
+  .js .anim.d3{animation-delay:.24s;}
+  .js .anim.d4{animation-delay:.34s;}
+  .js .reveal{opacity:0;transform:translateY(22px);}
+  .js .reveal.in{opacity:1;transform:none;transition:opacity .75s ease,transform .75s cubic-bezier(.2,.7,.2,1);}
+  @media (prefers-reduced-motion:reduce){
+    .js .anim,.js .reveal{opacity:1!important;transform:none!important;animation:none!important;transition:none!important;}
+    .portrait,.portrait:hover{transition:none;transform:none;}
+  }
+
+  /* --- print --- */
+  @media print{
+    body{background:#fff;font-size:10.5pt;line-height:1.45;}
+    .topbar,.cv-foot{display:none;}
+    .page{max-width:none;padding:0 12mm;}
+    .portrait{box-shadow:none;}
+    section,.entry,.card,ol.pubs li{break-inside:avoid;}
+    header.cv-head{break-after:avoid;}
+    .chips li,.card{background:transparent;}
+  }
+</style>
+<script>document.documentElement.classList.add('js');</script>
+</head>
+<body>
+<div class="page">
+
+  <nav class="topbar">
+    <a href="index.html">← Natrag na knjigu</a>
+    <span>Životopis · CV</span>
+  </nav>
+
+  <header class="cv-head">
+    <div class="head-text">
+      <p class="kicker anim d1">Doc. dr. sc.</p>
+      <h1 class="name anim d2">Luka Šikić</h1>
+      <p class="role anim d3">Docent · Sveučilišni odjel za komunikologiju — Hrvatsko katoličko sveučilište</p>
+      <div class="contact anim d4">
+        <a href="mailto:luka.sikic@unicath.hr">luka.sikic@unicath.hr</a>
+        <a href="tel:+385981623052">+385 98 162 3052</a>
+        <a href="https://www.lukasikic.info/" target="_blank" rel="noopener">lukasikic.info ↗</a>
+        <a href="https://scholar.google.com/scholar?q=Luka+Sikic" target="_blank" rel="noopener">Google Scholar ↗</a>
+      </div>
+    </div>
+
+    <!-- Fotografija: images/luka-sikic.jpg (4:5 portretni izrez).
+         Ako slika nedostaje, prikazuju se inicijali. -->
+    <figure class="portrait anim d3">
+      <div class="portrait-frame">
+        <img src="images/luka-sikic.jpg" alt="Luka Šikić"
+             onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
+        <div class="initials" style="display:none;">LŠ</div>
+      </div>
+    </figure>
+  </header>
+
+  <div class="grid">
+
+    <!-- ===================== MAIN COLUMN ===================== -->
+    <main>
+
+      <section class="reveal">
+        <h2 class="sec-label"><span class="no">01</span> Profil</h2>
+        <p class="lead">Istraživački rad povezuje makroekonomiju i financijska tržišta sa strojnim učenjem, podatkovnim znanostima i kvantitativnim modeliranjem, uz primjenu metoda obrade prirodnoga jezika.</p>
+        <p>Doktorirao je ekonomiju na <a href="https://www.efzg.unizg.hr" target="_blank" rel="noopener">Ekonomskom fakultetu Sveučilišta u Zagrebu</a>, a dio doktorskog programa i usavršavanja proveo na Sveučilištu u Beču (<a href="https://www.vgse.at" target="_blank" rel="noopener">Vienna Graduate School of Economics</a>) i Bečkom institutu za međunarodnu ekonomiju (<a href="https://wiiw.ac.at" target="_blank" rel="noopener">wiiw</a>). Poslijediplomski studij iz međunarodne ekonomije završio je na Institutu za svjetsku ekonomiju u Kielu (<a href="https://www.ifw-kiel.de" target="_blank" rel="noopener">Kiel Advanced Studies Program</a>). Prije dolaska na Hrvatsko katoličko sveučilište radio je na <a href="https://www.pilar.hr" target="_blank" rel="noopener">Institutu društvenih znanosti Ivo Pilar</a> i <a href="https://www.fhs.hr" target="_blank" rel="noopener">Fakultetu hrvatskih studija</a>.</p>
+      </section>
+
+      <section class="reveal">
+        <h2 class="sec-label"><span class="no">02</span> Iskustvo</h2>
+        <ul class="timeline">
+
+          <li class="entry now">
+            <div class="period">danas</div>
+            <div class="pos">Docent <span class="org">· <a href="https://www.unicath.hr" target="_blank" rel="noopener">Hrvatsko katoličko sveučilište</a> — Sveučilišni odjel za komunikologiju</span></div>
+            <p class="desc">Nastava i istraživanje iz statistike, obrade podataka i kvantitativnih metoda u društvenim znanostima te vođenje istraživačkih projekata o digitalnom medijskom prostoru.</p>
+          </li>
+
+          <li class="entry">
+            <div class="period">Zagreb</div>
+            <div class="pos">Istraživač <span class="org">· <a href="https://www.pilar.hr" target="_blank" rel="noopener">Institut društvenih znanosti Ivo Pilar</a></span></div>
+            <p class="desc">Istraživanja u društvenim znanostima s primjenom kvantitativnih i podatkovnih metoda.</p>
+          </li>
+
+          <li class="entry">
+            <div class="period">Zagreb</div>
+            <div class="pos">Nastavnik <span class="org">· <a href="https://www.fhs.hr" target="_blank" rel="noopener">Fakultet hrvatskih studija, Sveučilište u Zagrebu</a></span></div>
+            <p class="desc">Nastava iz statistike, istraživačkih metoda i podatkovne analize.</p>
+          </li>
+
+        </ul>
+      </section>
+
+      <section class="reveal">
+        <h2 class="sec-label"><span class="no">03</span> Projekti</h2>
+        <div class="cards">
+          <div class="card">
+            <div class="ctitle">Prikaz i analiza sadržaja katoličke tematike u hrvatskom digitalnom medijskom prostoru</div>
+            <div class="cmeta">Voditelj projekta · Luka Šikić</div>
+          </div>
+          <div class="card">
+            <div class="ctitle">Kritička analiza dezinformacija o vjerskim temama</div>
+            <div class="cmeta">Suradnik · voditeljica: Lana Ciboci Perša</div>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <!-- ===================== ASIDE COLUMN ===================== -->
+    <aside>
+
+      <section class="reveal">
+        <h2 class="sec-label">Obrazovanje</h2>
+        <ul class="timeline">
+          <li class="entry">
+            <div class="pos">Doktorat ekonomije</div>
+            <div class="s"><em><a href="https://www.efzg.unizg.hr" target="_blank" rel="noopener">Ekonomski fakultet, Sveučilište u Zagrebu</a></em></div>
+          </li>
+          <li class="entry">
+            <div class="pos">Doktorski program i usavršavanje</div>
+            <div class="s"><em><a href="https://www.vgse.at" target="_blank" rel="noopener">Vienna Graduate School of Economics</a></em> · Sveučilište u Beču</div>
+          </li>
+          <li class="entry">
+            <div class="pos">Istraživačko usavršavanje</div>
+            <div class="s"><em><a href="https://wiiw.ac.at" target="_blank" rel="noopener">The Vienna Institute for International Economic Studies (wiiw)</a></em></div>
+          </li>
+          <li class="entry">
+            <div class="pos">Poslijediplomski studij međunarodne ekonomije</div>
+            <div class="s"><em><a href="https://www.ifw-kiel.de" target="_blank" rel="noopener">Kiel Advanced Studies Program</a></em> · Institut za svjetsku ekonomiju u Kielu</div>
+          </li>
+        </ul>
+      </section>
+
+      <section class="reveal">
+        <h2 class="sec-label">Kolegiji</h2>
+        <ul class="stack">
+          <li><div class="t">Osnove statistike</div></li>
+          <li><div class="t">Obrada podataka</div></li>
+          <li><div class="t">Data Science for Social Scientists</div></li>
+          <li><div class="t">Multivariate statistical methods</div></li>
+          <li><div class="t">Introduction to Statistics</div></li>
+          <li><div class="t">Applied statistics</div></li>
+          <li><div class="t">Kvantitativne i kvalitativne istraživačke metode</div></li>
+          <li><div class="t">Pravni izvori i metodologija pravnog istraživanja</div></li>
+          <li><div class="t">Digitalni komunikacijski kanali u novinarstvu</div></li>
+          <li><div class="t">Novi mediji i web tehnologije</div></li>
+        </ul>
+      </section>
+
+      <section class="reveal">
+        <h2 class="sec-label">Područja istraživanja</h2>
+        <ul class="chips">
+          <li>Makroekonomija</li>
+          <li>Financijska tržišta</li>
+          <li>Strojno učenje</li>
+          <li>Podatkovne znanosti</li>
+          <li>Ekonometrija</li>
+          <li>Kvantitativno modeliranje</li>
+          <li>Obrada prirodnoga jezika (NLP, LLM)</li>
+        </ul>
+      </section>
+
+    </aside>
+
+  </div>
+
+  <footer class="cv-foot">
+    <span>Doc. dr. sc. Luka Šikić · Životopis</span>
+    <span>Posljednje ažuriranje · lipanj 2026. · <a href="index.html">Javne politike u Hrvatskoj</a></span>
+  </footer>
+
+</div>
+
+<script>
+  (function () {
+    var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    var els = document.querySelectorAll('.reveal');
+    if (reduce || !('IntersectionObserver' in window)) {
+      els.forEach(function (el) { el.classList.add('in'); });
+      return;
+    }
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (e) {
+        if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); }
+      });
+    }, { rootMargin: '0px 0px -8% 0px', threshold: 0.08 });
+    els.forEach(function (el) { io.observe(el); });
+  })();
+</script>
+</body>
+</html>

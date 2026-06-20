@@ -20,10 +20,14 @@ project:
     # Slika za dijeljenje linka (OG/Twitter image: ph3.jpg) — eksplicitno
     # navedena kao resurs da se sigurno kopira u docs/ pri renderu.
     - ph3.jpg
-    # Samostalna HTML stranica sa životopisom (link s naslovnice na imenu autora).
+    # Samostalne HTML stranice sa životopisima (link s naslovnice na imenima autora).
     - cv-milan.html
-    # Fotografija za životopis (portretni 4:5 izrez, head-to-hands).
+    - cv-petra.html
+    - cv-luka.html
+    # Fotografije za životopise (portretni 4:5 izrez, head-to-hands).
     - images/milan-deskar-skrbic.jpg
+    - images/petra-palic.jpg
+    - images/luka-sikic.jpg
 
 book:
   title: "Sve što želite znati o državi i javnim politikama u Hrvatskoj"

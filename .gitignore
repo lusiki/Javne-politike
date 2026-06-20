@@ -18,8 +18,10 @@ chapters/*_files/
 
 # Root-level render spillover — canonical output is docs/
 /*.html
-# …except the standalone CV page, which is a source file copied via resources:
+# …except the standalone CV pages, which are source files copied via resources:
 !/cv-milan.html
+!/cv-petra.html
+!/cv-luka.html
 /site_libs/
 /*.tex
 /*.aux
