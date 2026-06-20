@@ -16,6 +16,35 @@ format:
       text: |
         <style>
           #title-block-header { display: none; }
+
+          /* ---- stamp photo (blended into the paper, in the left margin) ---- */
+          .sc-hero-copy { position: relative; }
+          .stamp {
+            position: absolute;
+            top: -14rem;
+            left: -660px;
+            width: 760px;
+            transform: rotate(-5deg);
+            pointer-events: none;
+            z-index: 0;
+          }
+          .stamp img {
+            display: block;
+            width: 100%;
+            /* multiply lets the cream paper show through the parchment, so the
+               wax seal looks pressed onto the page rather than pasted over it */
+            mix-blend-mode: multiply;
+            filter: contrast(1.05) saturate(.95);
+            /* radial fade dissolves the rectangular parchment edges to nothing,
+               leaving only the central wax seal seamlessly on the page */
+            -webkit-mask: radial-gradient(ellipse 40% 46% at 48% 56%, #000 58%, transparent 82%);
+                    mask: radial-gradient(ellipse 40% 46% at 48% 56%, #000 58%, transparent 82%);
+          }
+          /* below ~1240px the left margin closes up; tuck the stamp inward */
+          @media (max-width: 1240px) {
+            .stamp { left: -40px; top: -6rem; width: 220px; }
+          }
+          @media (max-width: 900px) { .stamp { display: none; } }
         </style>
 ---
 
@@ -23,6 +52,12 @@ format:
 
 ::: {.sc-hero}
 ::: {.sc-hero-copy}
+
+```{=html}
+<figure class="stamp" aria-hidden="true">
+  <img src="images/stamp.jpg" alt="">
+</figure>
+```
 
 [№ I · EKONOMIKA JAVNOG SEKTORA]{.section-label}
 

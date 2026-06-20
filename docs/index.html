@@ -6,9 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="Milan Deskar-Škrbić">
 <meta name="author" content="Petra Palić">
-<meta name="author" content="Luka Sikić">
+<meta name="author" content="Luka Šikić">
+<meta name="author" content="Milan Deskar-Škrbić">
 <meta name="description" content="Praktični i interaktivni udžbenik o javnim financijama, teoriji javnog izbora i javnim politikama u Hrvatskoj — uloga države, alokacija, redistribucija, institucije i reforme.">
 
 <title>Naslovnica</title>
@@ -44,8 +44,8 @@ ul.task-list li input[type="checkbox"] {
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-19eb5a85a399d11602e5709a3b9587c0.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-299fd78b81d0f03e684f43f9c962796c.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="site_libs/bootstrap/bootstrap-dark-fb4132042b4bcb53510a4d282330c539.min.css" rel="prefetch" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="site_libs/bootstrap/bootstrap-7f223c943a2c17c35f3bd5bd19c3a69a.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-dark-8053ff2614df1e1a4fa18b85bf5e8654.min.css" rel="prefetch" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
 <script src="site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
 <link href="site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
 <link href="site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet">
@@ -81,6 +81,35 @@ ul.task-list li input[type="checkbox"] {
 <link href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&amp;family=IBM+Plex+Mono:wght@400;500;600&amp;family=Newsreader:ital,opsz,wght@0,6..72,300;0,6..72,400;0,6..72,500;0,6..72,600;0,6..72,700;1,6..72,300;1,6..72,400;1,6..72,500&amp;display=swap" rel="stylesheet">
 <style>
   #title-block-header { display: none; }
+
+  /* ---- stamp photo (blended into the paper, in the left margin) ---- */
+  .sc-hero-copy { position: relative; }
+  .stamp {
+    position: absolute;
+    top: -14rem;
+    left: -660px;
+    width: 760px;
+    transform: rotate(-5deg);
+    pointer-events: none;
+    z-index: 0;
+  }
+  .stamp img {
+    display: block;
+    width: 100%;
+    /* multiply lets the cream paper show through the parchment, so the
+       wax seal looks pressed onto the page rather than pasted over it */
+    mix-blend-mode: multiply;
+    filter: contrast(1.05) saturate(.95);
+    /* radial fade dissolves the rectangular parchment edges to nothing,
+       leaving only the central wax seal seamlessly on the page */
+    -webkit-mask: radial-gradient(ellipse 40% 46% at 48% 56%, #000 58%, transparent 82%);
+            mask: radial-gradient(ellipse 40% 46% at 48% 56%, #000 58%, transparent 82%);
+  }
+  /* below ~1240px the left margin closes up; tuck the stamp inward */
+  @media (max-width: 1240px) {
+    .stamp { left: -40px; top: -6rem; width: 220px; }
+  }
+  @media (max-width: 900px) { .stamp { display: none; } }
 </style>
 
 
@@ -124,10 +153,6 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text">Pojmovnik</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./resursi.html"> 
-<span class="menu-text">Resursi</span></a>
-  </li>  
-  <li class="nav-item">
     <a class="nav-link" href="./alat.html"> 
 <span class="menu-text">Alat</span></a>
   </li>  
@@ -139,9 +164,32 @@ ul.task-list li input[type="checkbox"] {
     <a class="nav-link" href="./uci-s-ai.html"> 
 <span class="menu-text">Uči uz AI</span></a>
   </li>  
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-nastava" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Nastava</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-nastava">    
+        <li>
+    <a class="dropdown-item" href="./predavanja.html">
+ <span class="dropdown-text">Predavanja</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./silabus.html">
+ <span class="dropdown-text">Silabus</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./raspored.html">
+ <span class="dropdown-text">Tjedni raspored</span></a>
+  </li>  
+    </ul>
+  </li>
   <li class="nav-item">
-    <a class="nav-link" href="./silabusi.html"> 
-<span class="menu-text">Silabusi</span></a>
+    <a class="nav-link" href="./resursi.html"> 
+<span class="menu-text">Resursi</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./upute.html"> 
+<span class="menu-text">Upute</span></a>
   </li>  
 </ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
@@ -393,157 +441,6 @@ ul.task-list li input[type="checkbox"] {
   <a href="./references.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Literatura</span></a>
   </div>
 </li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./pojmovnik.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Mreža pojmova</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./vodic.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Vodič</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./vodic/01-uloga-drzave.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Vodič · Uloga države u gospodarstvu</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./vodic/02-alokacijska-funkcija.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Vodič · Alokacijska funkcija i tržišni neuspjesi</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./vodic/03-distribucijska-funkcija.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Vodič · Distribucijska funkcija</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./vodic/04-stabilizacijska-funkcija.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Vodič · Stabilizacijska funkcija</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./vodic/05-porezi.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Vodič · Klasična teorija oporezivanja</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./vodic/06-javni-izbor.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Vodič · Javni izbor</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./vodic/06a-teorija-igara.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Vodič · Teorija igara</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./vodic/07-kolektivni-izbor.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Vodič · Kolektivni izbor</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./vodic/08-stranke-izbori.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Vodič · Političke stranke i izbori</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./vodic/09-interesne-skupine.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Vodič · Interesne skupine</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./vodic/10-birokracija.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Vodič · Dva pogleda na birokraciju</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./vodic/11-institucionalna-ekonomika.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Vodič · Institucije kao pravila igre</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./vodic/12-konstitucionalna-ekonomika.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Vodič · Konstitucionalna ekonomika</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./vodic/13-instrumenti.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Vodič · Instrumenti državne intervencije</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./vodic/14-javna-potrosnja.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Vodič · Javna potrošnja</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./vodic/15-porezi-praksa.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Vodič · Porezni sustavi u praksi</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./vodic/16-eu-javne-financije.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Vodič · Javne financije Europske unije</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./vodic/17-drzavni-neuspjesi.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Vodič · Državni neuspjesi</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./vodic/18-novi-javni-menadzment.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Vodič · Novi javni menadžment</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./vodic/19-novo-upravljanje.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Vodič · Novo upravljanje</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./vodic/20-cba-evaluacija.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Vodič · CBA i evaluacija</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./vodic/21-reforme.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Vodič · Reforme u javnom sektoru</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./prirucnik.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Država i javne politike u malom</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./resursi.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"></span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./alat.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Alat / Igralište</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./podaci.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Resursi</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./uci-s-ai.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Uči uz AI</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./silabusi.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Silabusi i predavanja</span></a>
-  </div>
-</li>
       </ul>
   </li>
     </ul>
@@ -573,16 +470,16 @@ ul.task-list li input[type="checkbox"] {
     <div>
     <div class="quarto-title-meta-heading">Authors</div>
     <div class="quarto-title-meta-contents">
-             <p><a href="https://zsem.hr/clanovi/dr-sc-milan-deskar-skrbic/">Milan Deskar-Škrbić</a> <a href="mailto:milan.deskar-skrbic@hnb.hr" class="quarto-title-author-email"><i class="bi bi-envelope"></i></a> </p>
              <p><a href="https://www.unicath.hr/odjeli-i-fakultet/nastavnici/petra-palic">Petra Palić</a> <a href="mailto:petra.palic@unicath.hr" class="quarto-title-author-email"><i class="bi bi-envelope"></i></a> </p>
-             <p><a href="https://www.lukasikic.info/">Luka Sikić</a> <a href="mailto:luka.sikic@unicath.hr" class="quarto-title-author-email"><i class="bi bi-envelope"></i></a> </p>
+             <p><a href="https://www.lukasikic.info/">Luka Šikić</a> <a href="mailto:luka.sikic@unicath.hr" class="quarto-title-author-email"><i class="bi bi-envelope"></i></a> </p>
+             <p><a href="https://zsem.hr/clanovi/dr-sc-milan-deskar-skrbic/">Milan Deskar-Škrbić</a> <a href="mailto:milan.deskar-skrbic@hnb.hr" class="quarto-title-author-email"><i class="bi bi-envelope"></i></a> </p>
           </div>
   </div>
     
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">18 lipnja 2026</p>
+      <p class="date">20 lipnja 2026</p>
     </div>
   </div>
   
@@ -597,6 +494,9 @@ ul.task-list li input[type="checkbox"] {
 <p><a href="cover.png" class="lightbox" data-gallery="quarto-lightbox-gallery-1"><img src="cover.png" title="Sve što želite znati o državi i javnim politikama u Hrvatskoj" class="quarto-cover-image img-fluid"></a></p>
 <div class="sc-hero">
 <div class="sc-hero-copy">
+<figure class="stamp figure" aria-hidden="true">
+  <img src="images/stamp.jpg" alt="" class="figure-img">
+</figure>
 <p><span class="section-label">№ I · EKONOMIKA JAVNOG SEKTORA</span></p>
 <section id="sve-što-želite-znati-o-odnosu-države-i-tržišta" class="level1 sc-hero-title">
 <h1 class="sc-hero-title">Sve što želite znati o odnosu države i tržišta</h1>
@@ -611,7 +511,7 @@ ul.task-list li input[type="checkbox"] {
 <div class="sc-author-row">
 <div class="sc-author-cell">
 <p><span class="section-label">AUTORI</span></p>
-<p><strong><a href="https://zsem.hr/clanovi/dr-sc-milan-deskar-skrbic/">Milan Deskar-Škrbić</a> · <a href="https://www.unicath.hr/odjeli-i-fakultet/nastavnici/petra-palic">Petra Palić</a> · <a href="https://www.lukasikic.info/">Luka Sikić</a></strong></p>
+<p><strong><a href="cv-milan.html">Milan Deskar-Škrbić</a> · <a href="cv-petra.html">Petra Palić</a> · <a href="cv-luka.html">Luka Šikić</a></strong></p>
 </div>
 <div class="sc-author-cell">
 <p><span class="section-label">LICENCA</span></p>
@@ -2663,7 +2563,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       &nbsp;
     </div>   
     <div class="nav-footer-center">
-<p>© 2026 Deskar-Škrbić, Palić, Šikić | Javne politike u Hrvatskoj</p>
+<p>© 2026 Palić, Šikić, Deskar-Škrbić | Javne politike u Hrvatskoj</p>
 </div>
     <div class="nav-footer-right">
       &nbsp;
