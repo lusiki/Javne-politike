@@ -283,6 +283,17 @@
   .stack .s{color:var(--ink-soft);font-size:.95rem;}
   .stack .s em{color:var(--verdigris);font-style:italic;}
 
+  /* courses laid out in two columns inside the wider main column */
+  .stack.courses{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:.85rem 1.8rem;
+  }
+  .stack.courses li{padding:0;}
+  @media (max-width:560px){
+    .stack.courses{grid-template-columns:1fr;}
+  }
+
   /* --- chips (research areas) --- */
   .chips{display:flex;flex-wrap:wrap;gap:.45rem;margin:0;padding:0;list-style:none;}
   .chips li{
@@ -427,7 +438,6 @@
       <p class="role anim d3">Docent · (<a class="inst" href="https://www.unicath.hr/odjeli-i-fakulteti/komunikologija" target="_blank" rel="noopener">Sveučilišni odjel za komunikologiju</a>, <a class="inst" href="https://www.unicath.hr/index.php/" target="_blank" rel="noopener">Hrvatsko katoličko sveučilište</a>)</p>
       <div class="contact anim d4">
         <a href="mailto:luka.sikic@unicath.hr">luka.sikic@unicath.hr</a>
-        <a href="tel:+385981623052">+385 98 162 3052</a>
         <a href="https://www.lukasikic.info/" target="_blank" rel="noopener">lukasikic.info ↗</a>
         <a href="https://scholar.google.com/scholar?q=Luka+Sikic" target="_blank" rel="noopener">Google Scholar ↗</a>
       </div>
@@ -480,6 +490,22 @@
         </ul>
       </section>
 
+      <section class="reveal">
+        <h2 class="sec-label"><span class="no">03</span> Kolegiji</h2>
+        <ul class="stack courses">
+          <li><div class="t"><a href="https://lusiki.github.io/Osnove-statistike/" target="_blank" rel="noopener">Osnove statistike ↗</a></div></li>
+          <li><div class="t"><a href="https://lusiki.github.io/WebObradaPodataka/" target="_blank" rel="noopener">Obrada podataka ↗</a></div></li>
+          <li><div class="t"><a href="https://lusiki.github.io/WebMultiVar/" target="_blank" rel="noopener">Multivariate statistical methods ↗</a></div></li>
+          <li><div class="t"><a href="https://lusiki.github.io/Learning-Social-Media-Analytics/" target="_blank" rel="noopener">Digitalni komunikacijski kanali u novinarstvu ↗</a></div></li>
+          <li><div class="t"><a href="https://lusiki.github.io/Novi-mediji-i-web-tehnologije/" target="_blank" rel="noopener">Novi mediji i web tehnologije ↗</a></div></li>
+          <li><div class="t">Data Science for Social Scientists</div></li>
+          <li><div class="t">Introduction to Statistics</div></li>
+          <li><div class="t">Applied statistics</div></li>
+          <li><div class="t">Kvantitativne i kvalitativne istraživačke metode</div></li>
+          <li><div class="t">Pravni izvori i metodologija pravnog istraživanja</div></li>
+        </ul>
+      </section>
+
     </main>
 
     <!-- ===================== ASIDE COLUMN ===================== -->
@@ -513,18 +539,9 @@
       </section>
 
       <section class="reveal">
-        <h2 class="sec-label">Kolegiji</h2>
+        <h2 class="sec-label">Blog</h2>
         <ul class="stack">
-          <li><div class="t"><a href="https://lusiki.github.io/Osnove-statistike/" target="_blank" rel="noopener">Osnove statistike ↗</a></div></li>
-          <li><div class="t"><a href="https://lusiki.github.io/WebObradaPodataka/" target="_blank" rel="noopener">Obrada podataka ↗</a></div></li>
-          <li><div class="t">Data Science for Social Scientists</div></li>
-          <li><div class="t"><a href="https://lusiki.github.io/WebMultiVar/" target="_blank" rel="noopener">Multivariate statistical methods ↗</a></div></li>
-          <li><div class="t">Introduction to Statistics</div></li>
-          <li><div class="t">Applied statistics</div></li>
-          <li><div class="t">Kvantitativne i kvalitativne istraživačke metode</div></li>
-          <li><div class="t">Pravni izvori i metodologija pravnog istraživanja</div></li>
-          <li><div class="t"><a href="https://lusiki.github.io/Learning-Social-Media-Analytics/" target="_blank" rel="noopener">Digitalni komunikacijski kanali u novinarstvu ↗</a></div></li>
-          <li><div class="t"><a href="https://lusiki.github.io/Novi-mediji-i-web-tehnologije/" target="_blank" rel="noopener">Novi mediji i web tehnologije ↗</a></div></li>
+          <li><div class="t"><a href="https://mislavsag.github.io/CroAIcon/" target="_blank" rel="noopener">CroAIcon ↗</a></div></li>
         </ul>
       </section>
 
