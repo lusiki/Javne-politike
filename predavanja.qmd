@@ -121,12 +121,13 @@ format:
       <span class="vd-go">Otvori predavanje →</span>
     </a>
 
-    <div class="vd-hub-card vd-soon">
-      <span class="vd-badge">Uskoro</span>
+    <a class="vd-hub-card vd-ready" href="predavanja/10-interesne-skupine.html" target="_blank" rel="noopener">
+      <span class="vd-badge vd-badge-ready">Dostupno</span>
       <span class="vd-hub-num">Predavanje 10</span>
       <span class="vd-hub-name">Uloga interesnih skupina</span>
-      <span class="vd-hub-q">Logika kolektivnog djelovanja, lobiranje, lov na rentu i Beckerov model tržišta političkog utjecaja.</span>
-    </div>
+      <span class="vd-hub-q">Logika kolektivnog djelovanja, koncentrirane koristi i raspršeni troškovi, lov na rentu, regulatorno zarobljavanje te Beckerov i Grossman-Helpmanov model — uz tri interaktivna grafa.</span>
+      <span class="vd-go">Otvori predavanje →</span>
+    </a>
 
     <div class="vd-hub-card vd-soon">
       <span class="vd-badge">Uskoro</span>

@@ -1,0 +1,1030 @@
+---
+title: "Uloga interesnih skupina"
+subtitle: "Kolektivno djelovanje, lov na rentu i regulatorno zarobljavanje"
+author: "Milan Deskar-Škrbić · Petra Palić · Luka Šikić"
+lang: hr-HR
+bibliography: ../references.bib
+# Izvor je _-prefiksiran (predavanja/_10-...qmd) pa ga render knjige (quarto
+# render) NE dira; renderiraj ručno, a output-file daje čist naziv bez podvlake.
+output-file: 10-interesne-skupine.html
+format:
+  revealjs:
+    theme: statecraft.scss
+    embed-resources: true
+    slide-number: c/t
+    show-slide-number: all
+    progress: true
+    width: 1050
+    height: 700
+    margin: 0.08
+    center: false
+    transition: fade
+    transition-speed: fast
+    background-transition: fade
+    controls: true
+    controls-layout: bottom-right
+    touch: true
+    hash: true
+    history: true
+    fig-align: center
+    link-external-newwindow: true
+    footer: "Javne politike u Hrvatskoj · Predavanje 10 · [lusiki.github.io/Javne-politike](https://lusiki.github.io/Javne-politike/)"
+---
+
+## Predavanje 10 — Uloga interesnih skupina {.dio-slide}
+[PREDAVANJE 10 · INTERESNE SKUPINE]{.section-label}
+
+::: {.lead}
+Prošli put gledali smo kako se stranke natječu za glasove birača. Javne politike, međutim, ne oblikuju samo birači i stranke. Velik dio stvarnog utjecaja odvija se iza kulisa, kroz interesne skupine.
+:::
+
+. . .
+
+[Utjecaj interesnih skupina nije slučajan, nego slijedi prepoznatljivu logiku organiziranosti, koncentracije koristi i raspršenosti troškova.]{.accent} [@olson1965]
+
+::: {.notes}
+Otvorite predavanje premošćivanjem s prošlog puta. Naglasite da prelazimo s vidljive, izborne politike na manje vidljiv, ali jednako važan kanal utjecaja. Ključna poruka uvoda je da utjecaj nije nasumičan, nego predvidljiv.
+:::
+
+## Što su interesne skupine
+[INTERESNE SKUPINE — DEFINICIJA]{.section-label}
+
+::: {.def}
+[Interesne skupine]{.accent} organizirana su udruženja koja nastoje utjecati na javne odluke u korist svojih članova.
+:::
+
+. . .
+
+Tipični primjeri
+
+- poslovna udruženja i granska udruženja proizvođača
+- sindikati i profesionalne komore
+- udruge potrošača i okolišne organizacije
+
+. . .
+
+::: {.cbox .kljucno}
+[Ključno]{.cbox-label}
+Teorija javnog izbora pokazuje da taj utjecaj slijedi logiku [koncentriranih koristi]{.accent} i [raspršenih troškova]{.accent}.
+:::
+
+::: {.notes}
+Naglasite da interesne skupine nisu nužno nešto negativno; one su normalan dio demokratskog procesa. Pokažite da i potrošačke i okolišne organizacije spadaju u istu kategoriju, ali se teže organiziraju. Ovaj slajd postavlja okvir za cijelo predavanje.
+:::
+
+## Agenda predavanja
+[ŠTO SLIJEDI]{.section-label}
+
+::: {.agenda}
+1. Olsonova logika kolektivnog djelovanja
+2. Koncentrirane koristi i raspršeni troškovi
+3. Lov na rentu
+4. Regulatorno zarobljavanje
+5. Konkurencija skupina (Becker, Grossman-Helpman)
+6. Lobiranje kao prijenos informacija — jesu li skupine nužno štetne?
+:::
+
+::: {.notes}
+Prođite kroz šest tematskih cjelina kako bi studenti imali mentalnu kartu predavanja. Naglasite da idemo od logike organiziranja, preko mehanizama utjecaja, do uravnoteženog zaključka. Spomenite da posljednja točka donosi i pozitivnu stranu priče.
+:::
+
+## Logika kolektivnog djelovanja {.dio-slide}
+[OLSONOVO IZNENAĐENJE]{.section-label}
+
+::: {.lead}
+Velike i raspršene skupine teže se organiziraju. Male i koncentrirane organiziraju se lako.
+:::
+
+::: {.notes}
+Ovaj razdjelni slajd najavljuje Olsonov ključni uvid. Naglasite da je rezultat protuintuitivan — brojnost ne znači snagu. Pripremite teren za pojam slobodnog jahanja na sljedećem slajdu.
+:::
+
+## Slobodno jahanje
+[LOGIKA KOLEKTIVNOG DJELOVANJA]{.section-label}
+
+::: {.def}
+[Logika kolektivnog djelovanja]{.accent} objašnjava da pojedinac neće dobrovoljno snositi trošak za zajedničku korist ako tu korist može uživati i bez doprinosa. [@olson1965]
+:::
+
+. . .
+
+U [velikoj]{.accent} skupini
+
+- pojedinačni je doprinos malen
+- svatko prepušta trošak drugima
+- prevladava [slobodno jahanje]{.accent}
+
+. . .
+
+U [maloj]{.accent} skupini
+
+- svaki član ostvaruje velik i vidljiv udio koristi
+- poticaj na doprinos je snažan
+
+::: {.notes}
+Objasnite slobodno jahanje na svakodnevnom primjeru, recimo zajedničkom dobru u zgradi. Naglasite asimetriju između velikih i malih skupina jer je to srž cijelog predavanja. Studenti trebaju zapamtiti da je problem to ozbiljniji što je skupina veća.
+:::
+
+## Selektivni poticaji
+[ZAŠTO SE NEKE SKUPINE IPAK ORGANIZIRAJU]{.section-label}
+
+::: {.def}
+[Selektivni poticaji]{.accent} privatne su koristi dostupne samo članovima, koje skupina nudi kako bi prevladala slobodno jahanje.
+:::
+
+. . .
+
+Primjeri selektivnih poticaja
+
+- sindikati — pravna pomoć i kolektivni ugovori
+- komore — licencije i pristup struci
+- strukovna udruženja — certifikati i stručno usavršavanje
+
+. . .
+
+::: {.cbox .empirija}
+[Empirija]{.cbox-label}
+Skupine koje nude i opipljive privatne usluge trajnije su i utjecajnije. [@olson1982] Zato ekološke i potrošačke organizacije ostaju manje i slabije financirane od industrijskih udruženja.
+:::
+
+::: {.notes}
+Povežite selektivne poticaje s rješenjem problema slobodnog jahanja. Naglasite da to objašnjava zašto su proizvođači bolje organizirani od potrošača. Ovo je most prema sljedećoj temi koncentriranih koristi.
+:::
+
+## Ostrom: granice Olsonova pesimizma
+[SAMOORGANIZACIJA JE MOGUĆA]{.section-label}
+
+Olsonov zaključak nije neumoljiv zakon. I skupine bez selektivnih poticaja ponekad se uspješno samoorganiziraju. [@ostrom1990]
+
+. . .
+
+Uvjeti za uspješnu samoorganizaciju
+
+- jasne granice skupine
+- ponovljena interakcija članova
+- postupno izgrađeno povjerenje
+- vlastiti nadzor i sankcije
+
+. . .
+
+::: {.cbox .kljucno}
+[Ključno]{.cbox-label}
+Problem slobodnog jahača nije nepremostiv zakon, nego ishod ovisan o [institucionalnom okviru]{.accent}.
+:::
+
+::: {.notes}
+Uvedite Ostrom kao važnu protutežu Olsonovu pesimizmu. Naglasite da institucije mogu pretvoriti naizgled nerješiv problem u rješiv. Time pokazujete da teorija javnog izbora nije fatalistička.
+:::
+
+## Sindikati: učlanjenost naspram pokrivenosti
+[KAD KORIST DOLAZI I BEZ ČLANSTVA]{.section-label}
+
+Gdje članstvo nosi izravnu privatnu korist, gustoća je visoka. Gdje se ugovor zakonski širi na sve, učlanjenje slabi.
+
+. . .
+
+- [Nordijski Ghent-sustav]{.accent} — članstvo nosi privatnu korist, gustoća je visoka
+- [Francuska]{.accent} — ugovor se zakonski širi na sve, pa pojedinac dobiva korist i bez učlanjenja; gustoća pada na desetak posto uz gotovo potpunu pokrivenost
+- [Hrvatska]{.accent} — po objema mjerama u sredini
+
+. . .
+
+Graf koji slijedi prikazuje razmak između učlanjenosti i pokrivenosti.
+
+::: {.notes}
+Ovo je živi primjer slobodnog jahanja u praksi. Naglasite francuski paradoks — visoka pokrivenost uz nisku učlanjenost znak je slobodnog jahanja. Pripremite studente na graf koji slijedi.
+:::
+
+## Sindikati: gustoća i pokrivenost na grafu {.smaller}
+[SLOBODNO JAHANJE — RAZMAK MJERA]{.section-label}
+
+```{ojs}
+//| echo: false
+{
+  const rows = [
+    {zemlja:"Francuska", gustoca:10.0, pokrivenost:98.0},
+    {zemlja:"Finska", gustoca:51.4, pokrivenost:88.8},
+    {zemlja:"Švedska", gustoca:65.9, pokrivenost:88.0},
+    {zemlja:"Slovenija", gustoca:20.4, pokrivenost:83.1},
+    {zemlja:"Njemačka", gustoca:14.1, pokrivenost:54.0},
+    {zemlja:"Hrvatska", gustoca:20.8, pokrivenost:52.7}
+  ];
+  const order = rows.map(d => d.zemlja);
+  return Plot.plot({
+    width: 880, height: 400,
+    marginLeft: 96, marginRight: 60, marginTop: 30, marginBottom: 46,
+    style: {fontSize: "13px", fontFamily: "Public Sans, system-ui, sans-serif", color: "#3A332D", background: "transparent"},
+    x: {label: "Udio zaposlenih (%) →", domain: [0, 105], grid: true},
+    y: {label: null, domain: order},
+    color: {domain: ["Sindikalna gustoća","Pokrivenost kolektivnim ugovorima"], range: ["#4A6B5C","#C8985E"], legend: true},
+    marks: [
+      Plot.axisY({fill: d => d === "Hrvatska" ? "#C8942D" : "#3A332D", fontWeight: d => d === "Hrvatska" ? 700 : 400}),
+      Plot.link(rows, {x1: "gustoca", x2: "pokrivenost", y: "zemlja", stroke: d => d.zemlja === "Hrvatska" ? "#C8942D" : "#C9C3B8", strokeWidth: d => d.zemlja === "Hrvatska" ? 3.5 : 2.5}),
+      Plot.dot(rows, {x: "gustoca", y: "zemlja", fill: () => "Sindikalna gustoća", r: 6, stroke: "white", strokeWidth: 1, tip: true}),
+      Plot.dot(rows, {x: "pokrivenost", y: "zemlja", fill: () => "Pokrivenost kolektivnim ugovorima", r: 6, stroke: "white", strokeWidth: 1, tip: true}),
+      Plot.text(rows, {x: "gustoca", y: "zemlja", text: d => d.gustoca.toFixed(1).replace(".", ","), dy: -12, fontSize: 9, fill: "#4A6B5C"}),
+      Plot.text(rows, {x: "pokrivenost", y: "zemlja", text: d => d.pokrivenost.toFixed(1).replace(".", ","), dy: -12, fontSize: 9, fill: "#9A6F38"})
+    ]
+  });
+}
+```
+
+::: {.isprobaj}
+Razmak između dviju točaka mjera je slobodnog jahanja. Najveći je u Francuskoj, gdje je gustoća 10, a pokrivenost 98 posto. Hrvatska je zlatno istaknuta u sredini s 20,8 i 52,7 posto.
+:::
+
+::: {.notes}
+Vodite studente kroz graf tako da prvo pročitaju os učlanjenosti, pa os pokrivenosti. Naglasite da je veliki razmak između dviju mjera vizualni potpis slobodnog jahanja. Istaknite položaj Hrvatske kao srednji slučaj između nordijskog i francuskog modela.
+:::
+
+## Digitalno organiziranje {.dio-slide}
+
+[OLSONOVA VARIJABLA SE MIJENJA]{.section-label}
+
+::: {.lead}
+Olsonova ključna varijabla bio je [trošak organiziranja]{.accent}. Upravo taj trošak digitalne platforme korjenito snižavaju.
+:::
+
+::: {.notes}
+Ovdje zatvaramo most prema Olsonu. Naglasite da nova tehnologija ne ukida njegovu logiku, nego mijenja jednu jedinu veličinu u jednadžbi, a to je cijena okupljanja ljudi. Pripremite slušatelje da ćemo vidjeti i svijetlu i tamnu stranu tog pada troška.
+:::
+
+## Povezano djelovanje
+
+[MOBILIZACIJA BEZ ORGANIZACIJE]{.section-label}
+
+Mreže omogućuju da velike i raspršene skupine brzo mobiliziraju mnoštvo bez formalne organizacije.
+
+. . .
+
+Tu pojavu nazivamo [povezano djelovanje]{.accent} (connective action) [@bennett2013].
+
+. . .
+
+Tipični oblici:
+
+- mrežne peticije
+- kampanje oko jednog hashtaga
+- nagle, brze donacije velikog broja ljudi
+
+::: {.notes}
+Istaknite razliku prema klasičnoj kolektivnoj akciji. Kod povezanog djelovanja nema članstva, ureda ni hijerarhije, a ipak nastaje vidljiv pritisak. Spomenite da svaki sudionik dijeli osobni sadržaj kroz vlastite mreže, pa se trošak koordinacije prebacuje na samu platformu.
+:::
+
+## Olsonova logika ostaje
+
+[JEFTINO ALI PLITKO]{.section-label}
+
+Sudjelovanje na jedan klik jeftino je, ali i plitko.
+
+. . .
+
+Valovi splasnu jednako brzo kako i nastanu, uz malo institucionalnog traga [@bennett2013].
+
+. . .
+
+Selektivni poticaj i dalje razlikuje [prolazni nalet]{.accent} od [trajne snage]{.accent}.
+
+::: {.cbox .kljucno}
+[Ključno]{.cbox-label}
+Niska cijena ulaska podiže broj sudionika, ali ne stvara sama po sebi trajnu organizaciju. Bez selektivnog poticaja digitalni val ostaje epizoda, a ne institucija.
+:::
+
+::: {.notes}
+Ovo je ključna korekcija tehnološkog optimizma. Naglasite da brojnost klikova nije isto što i trajni utjecaj. Povežite to izravno s Olsonovim selektivnim poticajima iz prošlog predavanja, jer upravo oni objašnjavaju zašto neke skupine prežive, a većina valova nestane.
+:::
+
+## Umjetno stvorena podrška
+
+[KAD SIGNAL LAŽE]{.section-label}
+
+Koncentrirani akteri mogu jeftino proizvesti privid masovne podrške.
+
+. . .
+
+Lažni profili i botovi stvaraju umjetnu mobilizaciju (astroturfing) i iskrivljuju signal o tome što javnost zaista misli [@ferrara2016].
+
+. . .
+
+Institucije zato moraju razlikovati [autentičnu mobilizaciju]{.accent} od [proizvedene]{.accent}.
+
+::: {.cbox .empirija}
+[Empirija]{.cbox-label}
+Analize društvenih mreža pokazuju da automatizirani računi mogu činiti značajan udio glasova u političkim raspravama i nesrazmjerno pojačati pojedine poruke [@ferrara2016].
+:::
+
+::: {.notes}
+Ovdje uvodimo tamnu stranu jeftinog organiziranja. Naglasite da pad troška koristi i poštenim i nepoštenim akterima. Poanta za donositelje odluka jest da broj poruka više nije pouzdan pokazatelj stvarne podrške, pa institucije trebaju nove načine provjere autentičnosti.
+:::
+
+## Koncentrirane koristi, raspršeni troškovi {.dio-slide}
+
+[ASIMETRIJA POTICAJA]{.section-label}
+
+::: {.lead}
+Mnoge politike donose [veliku korist]{.accent} maloj organiziranoj skupini, dok je trošak [raspršen]{.accent} na velik broj obveznika, tako da je pojedinačni teret malen i jedva primjetan.
+:::
+
+::: {.notes}
+Ovo je srce poglavlja o interesnim skupinama. Najavite da ćemo na sljedećem slajdu tu asimetriju definirati precizno, a zatim je pokazati na konkretnom primjeru subvencije ili carine. Zamolite slušatelje da drže na umu pitanje tko ima poticaj djelovati, a tko nema.
+:::
+
+## Asimetrija poticaja u brojkama {.smaller}
+
+[TKO IMA POTICAJ DJELOVATI]{.section-label}
+
+::: {.def}
+**Asimetrija koncentriranih koristi i raspršenih troškova** postoji kada mjera donosi veliku korist maloj skupini, a njezin se trošak razdijeli na mnoštvo obveznika tako da pojedinačni teret postaje gotovo neprimjetan.
+:::
+
+. . .
+
+Brojčani primjer:
+
+- subvencija ili carina nosi nekoliko milijuna eura uskom sektoru
+- financira se s tek nekoliko eura po građaninu
+- sektor ima snažan poticaj lobirati, pojedinac nema poticaj ni saznati za mjeru
+
+. . .
+
+Ishod je sustavno pristran organiziranim manjinama, [čak i kada je ukupna korist negativna]{.accent}.
+
+. . .
+
+Pluralističko čitanje, radi ravnoteže, podsjeća da koncentracija interesa ponekad i [prenosi stručno znanje]{.accent} do zakonodavca.
+
+::: {.notes}
+Provedite slušatelje kroz aritmetiku poticaja korak po korak. Naglasite asimetriju, jer milijuni za sektor naspram nekoliko eura za pojedinca objašnjavaju zašto se mali organiziraju, a veliki šute. Spomenite i pluralističko čitanje da prikaz ne bude jednostran, ali jasno recite da ono ne poništava problem sustavne pristranosti.
+:::
+
+## Tko su organizirane manjine {.smaller}
+
+[KORISTI KONCENTRIRANE, TROŠKOVI RASPRŠENI]{.section-label}
+
+::: {.cbox .praksa}
+[Praksa]{.cbox-label}
+U Hrvatskoj snažan utjecaj imaju poljoprivredni lobiji, sindikati javnih i državnih službi te pojedine komore. Na razini Europske unije sektorski lobiji oblikuju Zajedničku poljoprivrednu politiku i zeleni dogovor, a Zajednička poljoprivredna politika desetljećima troši velik dio europskog proračuna unatoč trajnoj kritici. Klasični svjetski primjeri su američki šećerni lobi i Nacionalno udruženje za oružje.
+:::
+
+::: {.notes}
+Prizemljite teoriju domaćim i svjetskim primjerima koje slušatelji prepoznaju. Naglasite da nije riječ o sumnji u poštenje tih skupina, nego o predvidljivoj logici poticaja koja organizirane uvijek stavlja u prednost pred raspršenima. Završite mostom prema sljedećoj temi, a to je što institucije mogu učiniti da uravnoteže taj pritisak.
+:::
+
+## Lov na rentu {.dio-slide}
+
+::: {.lead}
+Najveću štetu interesne skupine ne nanose onime što uzmu, nego onime što potroše da bi to uzele.
+:::
+
+::: {.notes}
+Ovo je prijelaz sa zarobljavanja regulatora na središnji pojam ekonomske analize interesnih skupina. Naglasite obrat u rečenici: vidljivi transfer nije najgori dio priče. Najavite da slijedi formalna definicija i graf koji mjeri oba gubitka.
+:::
+
+## Što je lov na rentu?
+
+[LOV NA RENTU]{.section-label}
+
+::: {.def}
+**Lov na rentu** ulaganje je resursa u stjecanje političkih povlastica — monopolske zaštite, dozvola, subvencija, kvota — umjesto u stvaranje vrijednosti [@tullock1967; @krueger1974].
+:::
+
+. . .
+
+[Renta]{.accent} je korist koja proizlazi iz povlaštenog položaja, a ne iz veće produktivnosti.
+
+. . .
+
+Resursi se preusmjeravaju s proizvodnje na nadmetanje za naklonost države.
+
+::: {.notes}
+Istaknite razliku između rente i profita. Profit nagrađuje produktivnost; renta nagrađuje blizinu vlasti. Tullock je 1967. otvorio pitanje, a Krueger je 1974. skovala sam izraz. Pripremite studente na to da je ključni trošak ono što se potroši na sam lov.
+:::
+
+## Dva društvena gubitka
+
+[IZRAVAN GUBITAK I GUBITAK NADMETANJA]{.section-label}
+
+Prvi gubitak je [izravan]{.accent}: povlastica iskrivljuje cijene, ograničava konkurenciju i prebacuje dohodak prema povlaštenima.
+
+. . .
+
+Drugi gubitak su [sami resursi potrošeni na nadmetanje]{.accent} — vrijeme, novac, stručnjaci, pravni timovi i lobisti.
+
+. . .
+
+Ti resursi ne stvaraju ništa novo; oni su čisti društveni gubitak.
+
+. . .
+
+Oba gubitka pokazuje graf koji slijedi, na tržištu na kojem povlastica ograničava količinu ispod konkurentske razine.
+
+::: {.notes}
+Razdvojite jasno dvije vrste gubitka. Prvi je poznat iz mikroekonomije — mrtvi teret monopola. Drugi je Tullockov doprinos i mnogi ga previde. Naglasite da plaća za vrhunske odvjetnike i lobiste nije transfer nego nestala vrijednost. Najavite da graf koji slijedi prikazuje oba polja istodobno.
+:::
+
+## Lov na rentu na grafu {.smaller}
+
+[RENTA I MRTVI TERET — ISPROBAJTE]{.section-label}
+
+```{ojs}
+//| echo: false
+viewof rs_controls = Inputs.form({
+  Qreg: Inputs.range([5, 39], {value: 25, step: 1, width: 320, label: "Dopuštena količina Q"})
+})
+```
+
+```{ojs}
+//| echo: false
+{
+  const Qreg = rs_controls.Qreg;
+  const D = (q) => 100 - q;
+  const S = (q) => 20 + q;
+  const Qstar = 40, Pstar = 60;
+  const Dr = D(Qreg), Sr = S(Qreg);
+  const rent = (Dr - Sr) * Qreg;
+  const dwl = 0.5 * (Dr - Sr) * (Qstar - Qreg);
+  const qs = d3.range(0, 81, 1);
+  const demand = qs.map(q => ({q, p: D(q)})).filter(p => p.p >= 0);
+  const supply = qs.map(q => ({q, p: S(q)})).filter(p => p.p <= 100);
+  const rect = [{q: 0, p: Sr}, {q: Qreg, p: Sr}, {q: Qreg, p: Dr}, {q: 0, p: Dr}];
+  const tri  = [{q: Qreg, p: Dr}, {q: Qreg, p: Sr}, {q: Qstar, p: Pstar}];
+  return Plot.plot({
+    width: 720, height: 352,
+    marginLeft: 52, marginTop: 46, marginBottom: 44,
+    style: {fontSize: "12px", fontFamily: "Public Sans, system-ui, sans-serif", color: "#3A332D", background: "transparent"},
+    x: {label: "Količina Q →", domain: [0, 80]},
+    y: {label: "↑ Cijena / granični trošak", domain: [0, 100], grid: true},
+    marks: [
+      Plot.line([...rect, rect[0]], {x: "q", y: "p", fill: "#E8D6B8", fillOpacity: 0.6, stroke: "#C8985E", strokeWidth: 1}),
+      Plot.line([...tri, tri[0]],   {x: "q", y: "p", fill: "#D8B5B3", fillOpacity: 0.65, stroke: "#6B1F26", strokeWidth: 1}),
+      Plot.line(demand, {x: "q", y: "p", stroke: "#2D5A8E", strokeWidth: 2.5}),
+      Plot.line(supply, {x: "q", y: "p", stroke: "#4A6B5C", strokeWidth: 2.5}),
+      Plot.ruleX([Qreg],  {y1: 0, y2: Dr,    stroke: "#6B6357", strokeDasharray: "4,3"}),
+      Plot.ruleX([Qstar], {y1: 0, y2: Pstar, stroke: "#6B6357", strokeDasharray: "4,3"}),
+      Plot.text([{q: 74, y: D(74)}], {x: "q", y: "y", text: ["potražnja"], dy: -8, fill: "#2D5A8E", fontSize: 11, fontWeight: 600}),
+      Plot.text([{q: 74, y: S(74)}], {x: "q", y: "y", text: ["ponuda (MC)"], dy: -8, fill: "#4A6B5C", fontSize: 11, fontWeight: 600}),
+      Plot.text([{q: Qreg * 0.5, y: (Sr + Dr) / 2}], {x: "q", y: "y", text: ["renta"], fill: "#9A6F38", fontSize: 12, fontWeight: 700}),
+      Plot.text([{q: Qreg + (Qstar - Qreg) * 0.55, y: Pstar + 6}], {x: "q", y: "y", text: ["mrtvi teret"], fill: "#6B1F26", fontSize: 11, fontWeight: 700}),
+      Plot.text([{q: Qreg, y: 2}],  {x: "q", y: "y", text: ["Q_reg"], fill: "#6B6357", fontSize: 11}),
+      Plot.text([{q: Qstar, y: 2}], {x: "q", y: "y", text: ["Q*"], fill: "#6B6357", fontSize: 11}),
+      Plot.text([`Renta = ${rent.toFixed(0)}      Mrtvi teret = ${dwl.toFixed(0)}`],
+        {frameAnchor: "top", dy: -32, fontSize: 13, fontWeight: 700, fill: "#1C1916"})
+    ]
+  });
+}
+```
+
+::: {.isprobaj}
+Pooštrite ograničenje i rastu i renta i mrtvi teret; popustite ga prema konkurentskoj količini i oba se polja gotovo zatvore. Prema Tullocku zamislite da se cijela renta potroši u nadmetanju — tada je stvarni gubitak i trokut i pravokutnik.
+:::
+
+::: {.notes}
+Pustite studente da sami pomiču ograničenje. Pokažite kako se trokut mrtvog tereta i pravokutnik rente šire zajedno. Ključna poruka grafa je Tullockova: ako je nadmetanje za rentu otvoreno, pravokutnik koji obično zovemo transferom također postaje gubitak. Zadržite se na graničnom slučaju potpune disipacije rente.
+:::
+
+## Tullockov uvid
+
+[DISIPACIJA RENTE]{.section-label}
+
+Gubitak nije proporcionalan vrijednosti rente — može joj biti gotovo jednak.
+
+. . .
+
+To se događa kad je natjecanje otvoreno i svaki sudionik ulaže do [nultog očekivanog povrata]{.accent}.
+
+. . .
+
+Što je nagrada veća, to više resursa odlazi u nadmetanje za nju.
+
+::: {.notes}
+Ovo je srž Tullockova argumenta iz 1967. Objasnite logiku slobodnog ulaska: dok god je očekivani povrat pozitivan, novi sudionici ulaze i troše dok se on ne svede na nulu. U ravnoteži se ukupna potrošnja na lov približava vrijednosti rente. Zato velike nagrade — koncesije, monopoli — privlače najviše rasipanja.
+:::
+
+## Koliko to košta?
+
+[MJERENJE GUBITAKA]{.section-label}
+
+::: {.cbox .empirija}
+[Empirija]{.cbox-label}
+Kruegerina studija indijskih i turskih uvoznih dozvola procijenila je gubitke od 7,3 posto BDP-a u Indiji i 15 posto u Turskoj — red veličine više od klasičnih Harbergerovih trokuta [@harberger1954; @krueger1974]. Kasnije procjene za SAD i EU dosežu desetke milijardi eura godišnje.
+:::
+
+::: {.notes}
+Usporedite brojke s Harbergerovim trokutima koji su davali gubitke ispod jedan posto BDP-a. Kruegerin skok na dvoznamenkaste postotke pokazao je da je rasipanje na nadmetanje mnogostruko veće od samog mrtvog tereta. Naglasite da su to procjene s pretpostavkama, ali da je red veličine dosljedno potvrđen u kasnijoj literaturi.
+:::
+
+## Zamka prijelaznih dobitaka
+
+[ZAMKA PRIJELAZNIH DOBITAKA]{.section-label}
+
+Tullockova [zamka prijelaznih dobitaka]{.accent} objašnjava zašto neučinkovite mjere preživljavaju [@tullock1975].
+
+. . .
+
+Renta se [kapitalizira]{.accent} u vrijednost dozvola, zemljišta ili poduzeća.
+
+. . .
+
+Ukidanje povlastice tada znači stvaran gubitak za one koji su za nju platili punu cijenu.
+
+. . .
+
+Tako neučinkovita mjera nadživi svoje opravdanje.
+
+::: {.notes}
+Klasičan primjer su taksi-dozvole čija je cijena narasla jer je broj dozvola ograničen. Tko kupi dozvolu po tržišnoj cijeni, ne ostvaruje natprosječan povrat — samo plaća kapitaliziranu rentu. Ukidanje ograničenja njega izravno osiromašuje, pa nastaje politički otpor reformi. To je razlog zašto loše mjere imaju dug život.
+:::
+
+## Regulatorno zarobljavanje {.dio-slide}
+
+[LOV NA RENTU IZNUTRA]{.section-label}
+
+::: {.lead}
+Lov na rentu najdjelotvorniji je kad zarobi samu instituciju koja bi ga trebala obuzdavati.
+:::
+
+::: {.notes}
+Ovo je prijelaz s otvorenog lobiranja na suptilniji mehanizam. Naglasite da nije riječ o mitu nego o postupnom pomaku lojalnosti regulatora. Najopasniji oblik utjecaja onaj je koji izgleda zakonito i tehnički.
+:::
+
+## Što je regulatorno zarobljavanje
+
+[DEFINICIJA]{.section-label}
+
+::: {.def}
+**Regulatorno zarobljavanje** (regulatory capture) stanje je u kojem regulator osnovan da štiti javni interes postupno počne djelovati u interesu sektora koji nadzire [@stigler1971; @peltzman1976].
+:::
+
+. . .
+
+Regulator i dalje formalno postoji, propisi se i dalje donose, ali se [težište odluka]{.accent} tiho pomiče prema reguliranima.
+
+::: {.notes}
+Istaknite da zarobljavanje nije iznimka nego očekivani ishod kad su poticaji posloženi na određeni način. Stigler i Peltzman pripadaju čikaškoj školi koja regulaciju gleda kao robu na političkom tržištu. Vratite se na pojam rente iz prethodnog bloka.
+:::
+
+## Kako nastaje (ne nužno korupcija)
+
+[MEHANIZMI]{.section-label}
+
+- [Informacijska ovisnost]{.accent} — regulator zna manje od poduzeća koje nadzire
+- [Organizacijska asimetrija]{.accent} — industrija sustavno sudjeluje u savjetovanjima, potrošači rijetko
+- [Zajednička profesionalna kultura]{.accent} — isti fakulteti, konferencije, stručni jezik
+
+. . .
+
+- [Kružna vrata]{.accent} (revolving doors) — dužnosnici prelaze u tvrtke koje su regulirali, i obratno [@dalbo2006]
+
+::: {.cbox .kljucno}
+[Ključno]{.cbox-label}
+Zarobljavanje često nastaje bez ijednog nezakonitog čina. Dovoljne su asimetrija znanja i očekivanje budućeg posla u sektoru.
+:::
+
+::: {.notes}
+Najvažniji didaktički cilj ovog slajda jest razdvojiti zarobljavanje od korupcije. Kružna vrata objasnite kao tihu nagradu, ne mito, jer dužnosnik koji očekuje posao u sektoru oblikuje propise blago već danas. Dal Bo daje pregled mehanizama, vrijedi ga spomenuti kao izvor.
+:::
+
+## Stigler naspram Peltzmana
+
+[DVA MODELA]{.section-label}
+
+::: {.cbox .kljucno}
+[Ključno]{.cbox-label}
+Za Stiglera je regulator [pasivni instrument]{.accent} industrije; za Peltzmana je regulator agent koji raspodjeljuje zaštitu da maksimizira ukupnu političku potporu.
+:::
+
+. . .
+
+Posljedica Peltzmanova modela: i [organizirani potrošači]{.accent} mogu utjecati, pa zaštita nikad ne ide u potpunosti jednoj strani [@peltzman1976].
+
+. . .
+
+Zarobljavanje stoga nije stanje nego [varijabla]{.var}: raste sa starošću agencije i tehničkom složenošću sektora, a slabi uz budan nadzor zakonodavca i medija.
+
+::: {.notes}
+Ključni pomak jest od Stiglerove crno-bijele slike prema Peltzmanovu kontinuumu. Naglasite da Peltzman objašnjava zašto čak i zarobljeni regulatori zadrže nešto zaštite potrošača. Rečenica o varijabli priprema sljedeći slajd o dizajnu institucija.
+:::
+
+## Dizajn važniji od čestitosti
+
+[INSTITUCIONALNI ODGOVOR]{.section-label}
+
+Zarobljavanje se ne suzbija biranjem poštenijih ljudi, nego pravilima koja mijenjaju poticaje.
+
+- [Rotacija osoblja]{.accent} i razdoblja hlađenja prije prelaska u sektor
+- [Otvorena evidencija]{.accent} susreta s lobistima
+- [Neovisni uredi za potrošače]{.accent} kao protuteža industriji
+- [Obvezna objava]{.accent} analiza učinaka propisa
+
+. . .
+
+::: {.cbox .praksa}
+[Praksa]{.cbox-label}
+Rodrik upozorava da pokretljivost kapitala ograničava domet strože regulacije: poduzeća mogu preseliti aktivnost (regulatorna arbitraža). Usklađena pravila na razini EU smanjuju taj prostor [@rodrik2011].
+:::
+
+::: {.notes}
+Poruka slajda jest da je institucionalni dizajn učinkovitiji od apela na čestitost. Svaku mjeru povežite s mehanizmom s ranijeg slajda, primjerice razdoblje hlađenja izravno cilja kružna vrata. Rodrikovu napomenu iskoristite da pokažete granicu nacionalne regulacije i razlog za europsku koordinaciju.
+:::
+
+## Željezni trokut {.smaller}
+
+[TRAJNI SAVEZ]{.section-label}
+
+::: {.def}
+**Željezni trokut** (iron triangle) stabilan je samopojačavajući savez triju vrhova: interesnih skupina, nadležnih parlamentarnih odbora i dijela birokracije koji upravlja programom.
+:::
+
+. . .
+
+Svaki vrh daje nešto drugima — glasove i sredstva, povoljne propise, proračun i nadležnost — pa je trokut [izuzetno otporan]{.accent} na reforme.
+
+Te saveze, vezane uz proračune službi, detaljnije obrađuje predavanje o birokraciji.
+
+::: {.notes}
+Završite blokom povezujući zarobljavanje s trajnijom strukturom željeznog trokuta. Naglasite samopojačavajuću logiku: svaki vrh ima interes održati druga dva. Rečenica-most najavljuje sljedeće predavanje o birokraciji i proračunima službi.
+:::
+
+## Konkurencija interesnih skupina {.dio-slide}
+
+::: {.lead}
+Olson objašnjava koje se skupine uopće organiziraju. No tek konkurencija među organiziranim skupinama određuje kakvu će politiku država na kraju odabrati.
+:::
+
+::: {.notes}
+Ovaj razdjelnik premješta težište s pitanja "tko se organizira" na pitanje "što se događa kad se više skupina natječe". Naglasite da Olson daje ulaznicu u arenu, a Becker opisuje samu utakmicu.
+:::
+
+## Beckerov model pritisaka
+
+[KONKURENCIJA KAO RAVNOTEŽA]{.section-label}
+
+Politički ishod je [ravnoteža pritisaka]{.accent} [@becker1983].
+
+. . .
+
+Svaka skupina ulaže resurse u pritisak. Uspjeh ovisi o trima stvarima.
+
+- broju članova
+- raspoloživim sredstvima
+- svladavanju slobodnog jahanja unutar skupine
+
+. . .
+
+::: {.def}
+Državu veže **proračunsko ograničenje**. Prihod prikupljen od oporezovanih mora pokriti subvenciju povlaštenima uvećanu za mrtvi teret oporezivanja.
+:::
+
+::: {.notes}
+Istaknite da Becker ne modelira državu kao samostalnog igrača, nego kao prijenosnik koji vezuje dvije strane proračunskim ograničenjem. Svaka kuna dana povlaštenima mora biti uzeta od oporezovanih, plus gubitak na mrtvom teretu. Taj ćemo gubitak na sljedećem slajdu pretvoriti u iznenađujući zaključak.
+:::
+
+## Neočekivani zaključak
+
+[MRTVI TERET KAO KOČNICA]{.section-label}
+
+Mrtvi teret raste otprilike s [kvadratom porezne stope]{.accent}.
+
+. . .
+
+Zato daljnje oporezivanje postaje sve skuplje. Oporezovani se sve jače odupiru, a povlašteni dobivaju sve manje po jedinici uloženoga pritiska.
+
+. . .
+
+::: {.cbox .kljucno}
+[Ključno]{.cbox-label}
+
+Ravnoteža tjera državu prema [učinkovitijim instrumentima]{.accent} preraspodjele. I čista borba interesa može se tako pretvoriti u neizravnu zaštitu učinkovitosti.
+:::
+
+::: {.notes}
+Ovo je protuintuitivni dio Beckerove poruke. Konkurencija lobija ne mora značiti rasipanje. Budući da neučinkoviti transferi nose velik mrtvi teret, oni su skupi za obje strane, pa ravnoteža gura sustav prema jeftinijim, manje iskrivljujućim mjerama. Upozorite da je to teorijska tendencija, a ne jamstvo dobre politike.
+:::
+
+## Zaštita na prodaju
+
+[DOPRINOSI KUPUJU PRISTUP]{.section-label}
+
+Grossman i Helpman formaliziraju trgovinsku politiku [@grossmanhelpman1994].
+
+. . .
+
+Doprinosi ne kupuju glas izravno. Kupuju [pristup i naklonost]{.accent}.
+
+. . .
+
+Igra ima dvije faze.
+
+1. skupine nude rasporede doprinosa vezane uz politiku
+2. vlada bira politiku koja maksimizira ponderirani zbroj blagostanja i doprinosa
+
+$$U = a\,G(p) + \sum_{i \in L} C_i(p),$$
+
+Težina [a]{.var} mjeri koliko vlada cijeni opće dobro naspram donacija. Visok [a]{.var} znači vladu blisku benevolentnom planeru. Nizak [a]{.var} znači vladu spremnu prodati blagostanje za doprinose.
+
+::: {.notes}
+Naglasite zaokret u odnosu na Beckera. Ovdje vlada nije pasivni prijenosnik, nego aktivni igrač s vlastitom funkcijom korisnosti. Provedite slušatelje kroz dvije faze i objasnite da je raspored doprinosa funkcija koja svakoj mogućoj politici pridružuje obećani iznos. Parametar a je ključ cijele interpretacije, vratite mu se na empirijskom slajdu.
+:::
+
+## Formula optimalne zaštite {.smaller}
+
+[RJEŠENJE IGRE]{.section-label}
+
+Rješenje igre daje formulu zaštite za pojedini sektor.
+
+$$\frac{t_i}{1+t_i} = \frac{I_i - \alpha_L}{a + \alpha_L}\cdot\frac{X_i/M_i}{e_i},$$
+
+. . .
+
+Tri zaključka.
+
+- organizirani sektori dobivaju zaštitu, a neorganizirani se mogu i oporezovati
+- zaštita opada s elastičnošću uvozne potražnje, jer elastična potražnja nosi velik mrtvi teret
+- zaštita raste s omjerom domaće proizvodnje i uvoza [@bernheimwhinston1986]
+
+. . .
+
+Graf koji slijedi prikazuje optimalnu stopu zaštite organiziranog i neorganiziranog sektora prema elastičnosti.
+
+::: {.notes}
+Ne ulazite u izvod, nego pročitajte formulu kao recept. Brojnik nosi organiziranost sektora i omjer proizvodnje i uvoza, nazivnik nosi elastičnost. Inzistirajte na predznaku, neorganizirani sektor može završiti s negativnom zaštitom, dakle s porezom. Najavite interaktivni graf kao provjeru ovih triju tvrdnji.
+:::
+
+## Optimalna zaštita na grafu {.smaller}
+
+[ZAŠTITA NA PRODAJU — ISPROBAJTE]{.section-label}
+
+```{ojs}
+//| echo: false
+viewof gh_controls = Inputs.form({
+  a: Inputs.range([0.5, 10], {value: 2, step: 0.1, width: 200, label: "Blagostanje a"}),
+  alpha: Inputs.range([0.1, 0.9], {value: 0.4, step: 0.05, width: 200, label: "Organizirani α"}),
+  z: Inputs.range([0.5, 3], {value: 1, step: 0.1, width: 200, label: "Omjer X/M"})
+})
+```
+
+```{ojs}
+//| echo: false
+{
+  const a = gh_controls.a, alpha = gh_controls.alpha, z = gh_controls.z;
+  const org   = (e) => (1 - alpha) / (a + alpha) * z / e;
+  const unorg = (e) => (-alpha)   / (a + alpha) * z / e;
+  const es = d3.range(0.5, 5.01, 0.05);
+  const curveOrg   = es.map(e => ({e, t: org(e)}));
+  const curveUnorg = es.map(e => ({e, t: unorg(e)}));
+  return Plot.plot({
+    width: 760, height: 322,
+    marginLeft: 58, marginTop: 36, marginBottom: 46,
+    style: {fontSize: "12px", fontFamily: "Public Sans, system-ui, sans-serif", color: "#3A332D", background: "transparent"},
+    x: {label: "Elastičnost uvozne potražnje e →", domain: [0.5, 5]},
+    y: {label: "↑ Stopa zaštite t/(1+t)", domain: [-0.6, 1], grid: true},
+    marks: [
+      Plot.ruleY([0], {stroke: "#6B6357", strokeDasharray: "4,3"}),
+      Plot.line(curveOrg,   {x: "e", y: "t", stroke: "#4A6B5C", strokeWidth: 2.5, clip: true}),
+      Plot.line(curveUnorg, {x: "e", y: "t", stroke: "#6B1F26", strokeWidth: 2.5, clip: true}),
+      Plot.text([{e: 1.2, t: org(1.2)}], {x: "e", y: "t", text: ["organizirani (I=1)"], dy: -10, fill: "#4A6B5C", fontSize: 12, fontWeight: 600}),
+      Plot.text([{e: 1.2, t: unorg(1.2)}], {x: "e", y: "t", text: ["neorganizirani (I=0)"], dy: 14, fill: "#6B1F26", fontSize: 12, fontWeight: 600})
+    ]
+  });
+}
+```
+
+::: {.isprobaj}
+- smanjite težinu blagostanja [a]{.var} i obje se krivulje odmiču od nule
+- povećajte elastičnost i zaštita se topi prema nuli
+- podignite omjer [X/M]{.var} i zaštita organiziranog sektora naglo raste
+:::
+
+::: {.notes}
+Pustite slušatelje da sami pomiču klizače dok izgovarate tri pravila. Najuvjerljiviji trenutak je kad težina blagostanja padne i obje krivulje skoče, jer to vizualno pokazuje cijenu prodaje politike. Povežite gašenje zaštite pri visokoj elastičnosti s mrtvim teretom iz Beckerova dijela.
+:::
+
+## Koliko vlade cijene blagostanje {.smaller}
+
+[EMPIRIJSKA PROVJERA]{.section-label}
+
+::: {.cbox .empirija}
+[Empirija]{.cbox-label}
+
+Goldberg i Maggi testirali su model na američkim podacima. Procijenili su težinu blagostanja [a]{.var} na oko 98 posto, a doprinose na tek 2 posto vladine korisnosti [@goldbergmaggi1999].
+
+Točnija je interpretacija da organizirane skupine ipak izvlače znatne rente, jer utjecaj kupuju iznimno jeftino.
+:::
+
+::: {.notes}
+Upozorite na zamku tumačenja. Brojka od 98 posto na prvi pogled djeluje umirujuće, kao da su lobiji gotovo nemoćni. No baš zato što je naklonost vlade tako jeftina, malen doprinos kupuje nesrazmjerno velik utjecaj. Poruka nije da lobiji ne vrijede, nego da su poražavajuće učinkoviti po uloženoj kuni.
+:::
+
+## Tri pristupa interesnim skupinama {.smaller}
+
+[SINTEZA]{.section-label}
+
+| Dimenzija | Kolektivno djelovanje (Olson) | Konkurencija skupina (Becker) | Zaštita na prodaju (Grossman-Helpman) |
+|---|---|---|---|
+| Fokus | prepreke organiziranju skupine | učinak konkurencije na učinkovitost | trgovina blagostanja za doprinose |
+| Uloga vlade | pasivni primatelj pritiska | pasivni posrednik pritisaka | aktivni akter koji vaga blagostanje i donacije |
+| Determinanta uspjeha | veličina, homogenost, selektivni poticaji | učinkovitost pritiska i otpora | organiziranost i omjer proizvodnje i uvoza |
+| Tretman mrtvog tereta | neželjena nuspojava | koči pritisak i potiče učinkovitost | postavlja gornju granicu stope zaštite |
+| Pouka | male skupine izrabljuju neorganiziranu većinu | konkurencija gura prema učinkovitim mjerama | država prodaje zaštitu organiziranim lobijima |
+
+*Izvori: [@olson1965; @becker1983; @grossmanhelpman1994].*
+
+::: {.notes}
+Ovo je slajd za zaokruživanje cijele cjeline o interesnim skupinama. Vodite slušatelje redak po redak i pokažite kako se uloga vlade postupno mijenja od pasivnog primatelja do aktivnog trgovca. Zaključite da tri pristupa nisu suparnici nego slojevi istog problema, od organiziranja preko konkurencije do same trgovine politikom.
+:::
+
+## Lobiranje kao prijenos informacija {.dio-slide}
+
+[SUVREMENA TEORIJA INTERESNIH SKUPINA]{.section-label}
+
+::: {.lead}
+Suvremena teorija ne promatra lobiranje kao podmićivanje, nego kao strateški prijenos informacija u uvjetima neizvjesnosti [@crawfordsobel1982].
+:::
+
+::: {.notes}
+Ovim razdjelnim slajdom okrećemo perspektivu. Dosad smo lobiranje gledali kao trošenje resursa i borbu za rentu, a sada ga promatramo kao komunikacijsku igru. Naglasite da informacija nije neutralna jer je pošiljatelj pristran.
+:::
+
+## Igra jeftinih riječi {.smaller}
+
+[CRAWFORD I SOBEL]{.section-label}
+
+Donositelj odluke rijetko zna sve o posljedicama nekog propisa, dok sektor koji propis pogađa raspolaže podacima iz prve ruke. Političar zato želi čuti lobista, ali istodobno zna da lobist stvari prikazuje povoljnijima nego što jesu.
+
+$$U^{P} = -(y-\theta)^2, \qquad U^{L} = -(y-\theta-b)^2$$
+
+Parametar [b]{.var} mjeri [pristranost]{.accent} lobista, to jest koliko se njegov idealni ishod razlikuje od onoga što bi političar odabrao da sam ima sve podatke.
+
+. . .
+
+Ključni rezultat. Količina informacije koju lobist može [vjerodostojno]{.accent} prenijeti opada s pristranošću. Kod posve suprotstavljenih interesa ostaje samo prazni govor, a kod bliskih interesa informacija stiže tek u grubim kategorijama, nikada posve precizno.
+
+::: {.notes}
+Objasnite intuiciju bez izvođenja. Što su interesi udaljeniji, to političar manje vjeruje poruci i lobist gubi sposobnost da bilo što vjerodostojno prenese. Poanta je da pristranost sama sebe kažnjava jer uništava vrijednost poruke. Povežite s idejom da uspješni lobisti grade reputaciju umjerenosti.
+:::
+
+## Čemu služe donacije
+
+[PRISTUP, NE GLAS]{.section-label}
+
+Izravna kupnja glasa rijetka je i kažnjiva, pa najveći dio doprinosa ne kupuje odluku nego [pristup]{.accent}, pravo na sastanak prije nego se prijedlog uobliči [@tullock1967].
+
+. . .
+
+Donacija djeluje kao ključ koji otvara vrata. Političar ima ograničeno vrijeme i daje ga onima koji najviše plate, pa se rasporedom sastanaka tiho odlučuje čiji će se podaci i argumenti uopće čuti.
+
+::: {.cbox .kljucno}
+[Ključno]{.cbox-label}
+Donatori financiraju kampanju samo ako vide jasnu razliku među kandidatima. Zato kandidate guraju iz centra prema rubovima i tako pothranjuju trajnu polarizaciju [@downs1957].
+:::
+
+::: {.notes}
+Razdvojite dvije funkcije novca, kupnju ishoda i kupnju pristupa. Naglasite da je pristup suptilniji jer ne ostavlja trag eksplicitne razmjene, a ipak oblikuje koje informacije dopiru do donositelja. Okvir povezuje lobiranje s polarizacijom i pokazuje neočekivanu posljedicu sustava financiranja.
+:::
+
+## Pravila koja obuzdavaju lobiranje
+
+[USTAVNI OKVIR]{.section-label}
+
+Lobiranje se ne može zabraniti bez kršenja prava na slobodu govora i prava na podnošenje zahtjeva vlasti. Zato ustavni okvir ne ukida zastupanje interesa, nego mu smanjuje štetu trima instrumentima [@brennan1985].
+
+. . .
+
+::: {.agenda}
+1. Obvezni [registri lobista]{.accent} i javna evidencija sastanaka, kako bi se vidjelo tko s kim i o čemu razgovara.
+2. Razdoblja [hlađenja]{.accent} za bivše dužnosnike, kako se utjecaj i veze ne bi unovčili odmah po odlasku iz službe.
+3. Neovisni i [nestranački]{.accent} uredi za analizu javnih politika, kako donositelji ne bi ovisili samo o podacima koje im daju zainteresirane strane.
+:::
+
+Cilj nije ušutkati interese, nego zastupanje učiniti [vidljivim]{.accent} i podvrgnuti ga zajedničkim mjerilima.
+
+::: {.notes}
+Istaknite napetost između slobode govora i opasnosti od zarobljavanja politika. Svaki instrument cilja na drugu slabost, registri na tajnost, hlađenje na okretna vrata, neovisni uredi na informacijsku ovisnost. Zaključite mišlju da je transparentnost jeftinija i trajnija obrana od zabrana.
+:::
+
+## Jesu li interesne skupine nužno štetne? {.dio-slide}
+
+::: {.lead}
+Važno je izbjeći pojednostavljenje da su sve interesne skupine štetne. One su sastavni dio demokratskoga društva i mogu donositi stvarne koristi.
+:::
+
+::: {.notes}
+Ovo je svjestan zaokret u tonu nakon poglavlja o lovu na rentu i zarobljavanju. Naglasite studentima da kritika neravnoteže nije isto što i osuda svakoga zastupanja interesa. Pripremite ih da sljedeći slajdovi traže odgovor što je točno problem, a što nije.
+:::
+
+## Koristi i pravi problem
+
+[KORIST I NERAVNOTEŽA]{.section-label}
+
+Organizirani interesi nisu samo trošak za društvo.
+
+. . .
+
+- Strukovna udruženja prenose [stručno znanje]{.accent} koje zakonodavac inače nema.
+- Sindikati i udruge potrošača uravnotežuju koncentrirani [kapital]{.accent}.
+- Građanske i okolišne organizacije zastupaju glas koji bi inače izostao, uključujući [buduće generacije]{.accent}.
+
+. . .
+
+Problem nije postojanje skupina nego [neravnoteža utjecaja i netransparentnost]{.accent} kanala kroz koje djeluju.
+
+::: {.cbox .kljucno}
+[Ključno]{.cbox-label}
+Cilj javnih politika nije ukinuti zastupanje interesa nego osigurati da se ono odvija otvoreno i pod jasnim pravilima.
+:::
+
+::: {.notes}
+Inzistirajte na razlici između zastupanja po sebi i iskrivljenoga zastupanja. Dobar primjer su udruge potrošača koje služe kao protuteža koncentriranom kapitalu. Poanta završne kutije nosi cijelo predavanje, pa je izgovorite polako.
+:::
+
+## Pluralizam naspram korporativizma {.smaller}
+
+[DVA MODELA ZASTUPANJA]{.section-label}
+
+::: {.def}
+**Pluralizam** je model u kojem se mnoštvo fragmentiranih skupina natječe za utjecaj bez trajnoga institucionalnog mjesta, dok **korporativizam** institucionalizira nekoliko krovnih organizacija s trajnim mjestom u pregovorima.
+:::
+
+. . .
+
+- Pluralistički sustavi (SAD, Ujedinjeno Kraljevstvo) počivaju na [konkurenciji]{.accent} mnogih malih skupina.
+- Korporativistički sustavi (Austrija, Njemačka, nordijske zemlje) daju [krovnim organizacijama]{.accent} trajno mjesto za pregovaračkim stolom.
+
+. . .
+
+Korporativizam pokazuje manje vidljivoga lova na rentu, ali je podložniji [institucionalnoj sklerozi]{.accent} koju je opisao Olson [@olson1982].
+
+Nijedan model nije inherentno bolji; nude različite kompromise stabilnosti i prilagodljivosti.
+
+::: {.notes}
+Ovo je usporedni okvir koji studentima daje jezik za institucionalne razlike među demokracijama. Naglasite da je korporativizam zamijenio vidljivo nadmetanje stabilnošću, ali po cijenu sporije prilagodbe. Izbjegnite sugestiju da je jedan model rješenje; oba imaju svoju cijenu.
+:::
+
+## Sažetak
+
+[ŠEST POGLAVLJA U PET TOČAKA]{.section-label}
+
+::: {.agenda}
+1. Olsonova logika objašnjava zašto se uske skupine lakše organiziraju.
+2. Selektivni poticaji drže ih trajnima.
+3. Asimetrija koncentriranih koristi i raspršenih troškova čuva neučinkovite politike.
+4. Lov na rentu i regulatorno zarobljavanje pretvaraju utjecaj u stvaran trošak.
+5. Problem nije postojanje interesa nego neravnoteža i netransparentnost, pa je zadaća pravila i otvorenost.
+:::
+
+::: {.notes}
+Prođite točke redom kao kostur cijeloga predavanja. Svaka točka odgovara jednom dijelu izlaganja, pa je možete koristiti za brzu provjeru razumijevanja. Zaustavite se na petoj točki jer ona vodi prema normativnoj poruci kolegija.
+:::
+
+## Nit koja povezuje
+
+[PREMA SLJEDEĆEM PREDAVANJU]{.section-label}
+
+::: {.cbox .kljucno}
+[Ključno]{.cbox-label}
+Kad interesne skupine, političari i uprava dijele korist od istoga programa, nastaje stabilan savez. Taj se savez najjasnije vidi u odnosu prema birokraciji i njezinim proračunima, čime se otvara tema sljedećega predavanja.
+:::
+
+::: {.notes}
+Ovo je most prema poglavlju o birokraciji. Najavite pojam željeznoga trokuta koji ćete razraditi sljedeći put. Držite kutiju kratkom jer joj je svrha samo prijelaz.
+:::
+
+## Vježba
+
+[CARINSKA ZAŠTITA I LOV NA RENTU]{.section-label}
+
+::: {.cbox .vjezba}
+[Vježba]{.cbox-label}
+Zamislite gospodarstvo s 20 milijuna poreznih obveznika. Država uvodi carinsku zaštitu za sektor od pet domaćih proizvođača. Mjera tih pet poduzeća zajedno donosi 50 milijuna eura godišnje dodatne dobiti, a potrošače ukupno košta 80 milijuna eura godišnje.
+
+[Zadaci]{.accent}
+
+(a) Izračunajte prosječnu korist po proizvođaču i prosječni trošak po obvezniku.
+
+(b) Usporedite ukupnu korist sektora s ukupnim troškom, pa utvrdite neto učinak za društvo i veličinu gubitka.
+
+(c) Ako je svaki proizvođač spreman ulagati u lobiranje do visine vlastite očekivane koristi, izračunajte gornju granicu resursa potrošenih na nadmetanje i objasnite zašto je to dodatni gubitak prema logici lova na rentu [@tullock1967].
+
+(d) Objasnite zašto mjera koja je za društvo neto negativna ipak politički opstaje.
+:::
+
+::: {.notes}
+Pustite studente da sami uoče asimetriju: deset milijuna eura po proizvođaču naspram četiri eura po obvezniku. U zadatku (c) povežite gornju granicu od pedeset milijuna s Tullockovim uvidom da se i sama borba za rentu troši kao resurs. Zadatak (d) vraća cijelu logiku koncentriranih koristi i raspršenih troškova, pa ga iskoristite za zaključnu raspravu.
+:::
+
+## Što slijedi {.dio-slide}
+
+[PUTOKAZ]{.section-label}
+
+::: {.lead}
+Od organiziranih interesa prelazimo na upravu koja politike provodi i suoblikuje.
+:::
+
+::: {.agenda}
+1. [Predavanje 11 — birokracija]{.accent}: birokracija kao racionalni akter, Niskanenov model, željezni trokuti i proračuni službi.
+2. [Širi luk]{.accent}: od organiziranih interesa prema upravi koja provodi i oblikuje politike.
+:::
+
+::: {.notes}
+Zatvorite predavanje najavom da birokracija nije neutralni izvršitelj nego akter s vlastitim interesima. Spomenite Niskanenov model kao središte sljedećega susreta. Povežite željezni trokut iz prethodne kutije s temom koja dolazi.
+:::
