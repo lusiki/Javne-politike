@@ -1,0 +1,943 @@
+---
+title: "Dva pogleda na birokraciju"
+subtitle: "Weberovska uprava, Niskanenov model i principal–agent problem"
+author: "Milan Deskar-Škrbić · Petra Palić · Luka Šikić"
+lang: hr-HR
+bibliography: ../references.bib
+# Izvor je _-prefiksiran (predavanja/_11-...qmd) pa ga render knjige (quarto
+# render) NE dira; renderiraj ručno, a output-file daje čist naziv bez podvlake.
+output-file: 11-birokracija.html
+format:
+  revealjs:
+    theme: statecraft.scss
+    embed-resources: true
+    slide-number: c/t
+    show-slide-number: all
+    progress: true
+    width: 1050
+    height: 700
+    margin: 0.08
+    center: false
+    transition: fade
+    transition-speed: fast
+    background-transition: fade
+    controls: true
+    controls-layout: bottom-right
+    touch: true
+    hash: true
+    history: true
+    fig-align: center
+    link-external-newwindow: true
+    footer: "Javne politike u Hrvatskoj · Predavanje 11 · [lusiki.github.io/Javne-politike](https://lusiki.github.io/Javne-politike/)"
+---
+
+## Klasičan i ekonomski pogled na birokraciju {.dio-slide}
+
+[PREDAVANJE 11 · BIROKRACIJA]{.section-label}
+
+::: {.lead}
+Prošli put smo interesne skupine zaključili savezom koji se najjasnije vidi u njihovu odnosu prema birokraciji. Upravo zato sada birokraciju stavljamo u središte.
+:::
+
+. . .
+
+[Weber objašnjava zašto nam birokracija treba, a teorija javnog izbora zašto je moramo nadzirati.]{.accent} [@weber1978]
+
+::: {.notes}
+Povežite s krajem prošlog predavanja o interesnim skupinama i savezu interesa, birokracije i politike. Naglasite da dva pogleda nisu suparnici nego dvije leće na isti predmet. Cilj je studentima dati jezik za oba.
+:::
+
+## Dva pogleda na birokraciju
+
+[DVIJE LEĆE, ISTI PREDMET]{.section-label}
+
+Prvi je [klasičan, weberovski pogled]{.accent}. Birokracija je nužan instrument moderne države i nepristrane provedbe javnih politika.
+
+. . .
+
+Drugi je [pogled teorije javnog izbora]{.accent}. Birokracija je skup organizacija i pojedinaca s vlastitim interesima, poticajima i izvorima moći.
+
+. . .
+
+::: {.cbox .kljucno}
+[Ključno]{.cbox-label}
+
+Ta dva pogleda nisu suprotstavljena. Weber opisuje čemu birokracija služi, teorija javnog izbora opisuje kako se stvarno ponaša. Zajedno daju potpuniju sliku.
+:::
+
+::: {.notes}
+Inzistirajte na riječi nadopunjuju, a ne pobijaju. Studenti često misle da javni izbor želi ukinuti birokraciju, što nije točno. Najavite da ćemo prvo razviti weberovsku podlogu, a tek onda kritiku.
+:::
+
+## Agenda predavanja
+
+[ŠTO SLIJEDI]{.section-label}
+
+::: {.agenda}
+1. Weberovski pogled i meritokracija
+2. Pogled teorije javnog izbora
+3. Niskanenov model proračuna
+4. Principal–agent problem
+5. Birokracija u mreži interesa
+6. Bolja, a ne manja birokracija
+:::
+
+::: {.notes}
+Brzo prođite kroz šest točaka, otprilike rečenica po točki. Naglasite luk od opravdanja prema kritici i natrag prema konstruktivnom zaključku. Posljednja točka je poruka cijelog predavanja.
+:::
+
+## Klasičan, weberovski pogled {.dio-slide}
+
+[PRVA LEĆA]{.section-label}
+
+::: {.lead}
+Moderna država ne može funkcionirati bez profesionalne administracije. Bez nje nema ni poreza, ni javnih usluga, ni provedbe zakona.
+:::
+
+::: {.notes}
+Ovo je prijelaz u prvi sadržajni blok. Postavite ton ozbiljnosti, birokracija je civilizacijsko dostignuće, ne nužno zlo. Kratko najavite da slijedi definicija.
+:::
+
+## Što je weberovska birokracija {.smaller}
+
+[RACIONALNO-LEGALNA VLAST]{.section-label}
+
+::: {.def}
+Pod **weberovskom birokracijom** razumijevamo upravu utemeljenu na racionalno-legalnoj vlasti, u kojoj ovlasti i postupci proizlaze iz zakona, a ne iz osobe vladara. [@weber1978]
+:::
+
+. . .
+
+Vlast je [legalna]{.accent} jer se temelji na zakonima, a ne na volji pojedinca.
+
+. . .
+
+Vlast je [racionalna]{.accent} jer su nadležnosti i postupci uređeni unaprijed određenim kriterijima.
+
+. . .
+
+Posljedica je važna. Građanin može očekivati [isti tretman]{.accent} neovisno o poznanstvu, bogatstvu ili statusu.
+
+::: {.notes}
+Razdvojite dva pridjeva, legalna i racionalna, jer ih studenti često stapaju. Istaknite da je nepristranost prema strankama upravo ono što birokraciju razlikuje od klijentelizma. Ovo je moralna jezgra weberovskog ideala.
+:::
+
+## Tri obilježja weberovske birokracije {.smaller}
+
+[ANATOMIJA IDEALNOG TIPA]{.section-label}
+
+[Hijerarhijska organizacija]{.accent}. Svaki službenik ima nadređenog, a odgovornost je formalno raspoređena kroz razine.
+
+. . .
+
+[Stručna podjela rada]{.accent}. Ljudi se biraju i napreduju po kvalifikacijama i sposobnosti, a ne po lojalnosti ili vezama.
+
+. . .
+
+[Formalizirana procedura]{.accent}. Odluke se donose po pravilima, ostavljaju pisani trag i time omogućuju nadzor i žalbu.
+
+::: {.notes}
+Naglasite da ta tri obilježja zajedno čine ideal-tip, rijetko ostvaren u čistom obliku. Pisani trag posebno istaknite jer je temelj odgovornosti i kasnijeg nadzora. Najavite da iste osobine nose i snagu i slabost.
+:::
+
+## Snaga i slabost iz iste logike {.smaller}
+
+[ISTI KORIJEN, DVA LICA]{.section-label}
+
+Prednost je [predvidivost]{.accent}, jednakost pred pravilima, kontinuitet i izgrađen državni kapacitet. [@evansrauch1999]
+
+. . .
+
+Iz iste logike rađa se i slabost. Pravila postaju [prekruta]{.accent}, hijerarhija usporava odluke, a postupci se pretvaraju u sami sebi svrhu.
+
+. . .
+
+Tako nastaje [birokracija]{.accent} u negativnom smislu, svijet obrazaca, potvrda i čekanja na šalteru.
+
+::: {.cbox .kljucno}
+[Ključno]{.cbox-label}
+
+Problem nastaje kad se sredstva pretvore u cilj. Pravilo koje je trebalo služiti svrsi počinje vrijediti samo za sebe.
+:::
+
+::: {.notes}
+Ovo je ključni zaokret bloka, ista logika daje i dobro i loše. Empirijski naslon na Evansa i Raucha pokazuje da weberovske značajke koreliraju s gospodarskim rastom, pa kapacitet nije apstrakcija. Završite mišlju o sredstvima i ciljevima, ona uvodi sljedeći, kritički blok.
+:::
+
+## Politika i administracija {.dio-slide}
+
+[WILSONOVO RAZDVAJANJE]{.section-label}
+
+::: {.lead}
+Politika određuje [ciljeve]{.accent} — uprava bira [sredstva]{.accent}.
+:::
+
+. . .
+
+Wilsonova ideja [@wilson1887] dijeli javno djelovanje na dvije razine.
+
+- Izabrani političari odlučuju o [vrijednosnim ciljevima]{.accent} — što treba učiniti.
+- Uprava ih provodi [stručno i nepristrano]{.accent} — kako to učiniti.
+
+. . .
+
+Razdvajanje štiti upravu od pretjerane [politizacije]{.accent} i čuva [kontinuitet]{.accent} javnog djelovanja kroz promjene vlasti.
+
+::: {.notes}
+Naglasite da je Wilson pisao u doba američkog plijenaškog sustava, kao reakciju na korupciju i smjenjivanje cijele uprave nakon svakih izbora. Poanta razdvajanja je dvostruka — zaštititi struku od dnevne politike i osigurati da promjena vlasti ne znači raspad institucija. Recite studentima da je ovo idealtipski model, čiju ćemo granicu odmah problematizirati.
+:::
+
+## Granica je nejasna
+
+[OD PROVEDBE DO OBLIKOVANJA]{.section-label}
+
+U praksi birokrati ne samo da provode politiku — oni je i [oblikuju]{.accent}.
+
+. . .
+
+- Pripremaju [nacrte zakona]{.accent} i pišu pravilnike.
+- Izrađuju strategije i akcijske planove.
+- Definiraju [kriterije natječaja]{.accent}, rokove i iznimke.
+- Tumače propise u pojedinačnim slučajevima.
+
+. . .
+
+Tko definira kriterije, rokove i iznimke, taj utječe na [raspodjelu koristi i troškova]{.accent} — a to je već vrijednosna, a ne samo tehnička odluka.
+
+::: {.cbox .kljucno}
+[Ključno]{.cbox-label}
+
+Granica između politike i administracije nije zid nego [propusna opna]{.accent} — struka neizbježno ulazi u oblikovanje politike, pa pitanje nije *hoće li* utjecati, nego *kako* taj utjecaj učiniti odgovornim.
+:::
+
+::: {.notes}
+Dajte konkretan primjer — tko piše kriterije za dodjelu sredstava iz nekog fonda, taj zapravo odlučuje tko će dobiti novac, iako formalno samo provodi politički donesenu odluku. Naglasite da diskrecija nije sama po sebi loša, ona je nužna jer zakoni ne mogu predvidjeti svaki slučaj. Poveznica prema sljedećem dijelu — ako struka neizbježno oblikuje politiku, kako osigurati da to čini kompetentno i pošteno? Odgovor je meritokracija.
+:::
+
+## Meritokratska državna služba {.dio-slide}
+
+[ZAPOŠLJAVANJE PO SPOSOBNOSTIMA]{.section-label}
+
+::: {.lead}
+Mjesto u upravi nije [politički plijen]{.accent} nego [profesionalna karijera]{.accent}.
+:::
+
+. . .
+
+Meritokracija znači zapošljavanje, napredovanje i nagrađivanje po [sposobnostima i rezultatima]{.accent} — a ne po političkoj lojalnosti ili klijentelističkim mrežama.
+
+To je povijesni odgovor na upravu shvaćenu kao [plijen]{.accent} pobjednika izbora.
+
+::: {.notes}
+Povežite s prethodnim slajdom — upravo zato što birokrati oblikuju politiku, važno je da to budu kompetentni i nepristrani ljudi, a ne politički postavljenici. Spomenite da je prijelaz s plijenaškog na meritokratski sustav jedna od velikih institucionalnih reformi 19. i 20. stoljeća. Ovo je razdjelni slajd, držite ga kratkim i prijeđite na slabosti modela.
+:::
+
+## I meritokracija ima slabosti
+
+[GRANICE PROFESIONALNE SLUŽBE]{.section-label}
+
+Nijedan model nije savršen — i meritokracija ima svoje [naličje]{.accent}.
+
+. . .
+
+- Formalni kriteriji mogu postati [sami sebi svrha]{.accent} — diploma i staž umjesto stvarnog učinka.
+- Karijerna sigurnost bez odgovornosti slabi [poticaje]{.accent}.
+- Profesionalna služba može se [zatvoriti]{.accent} prema novim ljudima i idejama.
+
+. . .
+
+Zato suvremeni model spaja tri elementa.
+
+::: {.def}
+Djelotvorna uprava počiva na trojstvu — [zaštiti od politizacije]{.accent}, [profesionalnom zapošljavanju]{.accent} i [odgovornosti za rezultate]{.accent}.
+:::
+
+::: {.notes}
+Naglasite ravnotežu — previše zaštite vodi u nedodirljivu birokraciju, premalo zaštite vraća nas u plijenaški sustav. Treći element, odgovornost za rezultate, dolazi iz novog javnog menadžmenta o kojem ćemo govoriti kasnije. Poanta je da meritokracija nije cilj sama po sebi, nego sredstvo za kompetentnu i odgovornu upravu.
+:::
+
+## Weberijanska uprava potiče rast {.smaller}
+
+[MEĐUNARODNI DOKAZI]{.section-label}
+
+::: {.cbox .empirija}
+[Empirija]{.cbox-label}
+
+Evans i Rauch usporedili su državnu službu u tridesetak zemalja u razvoju i pokazali da su [meritokratsko zapošljavanje]{.accent} i [predvidljivo napredovanje]{.accent} povezani sa sustavno višim gospodarskim rastom u razdoblju 1970.–1990. [@evansrauch1999].
+
+Učinak [ostaje]{.accent} i nakon kontrole za početni dohodak i ljudski kapital — pa "weberijanska" struktura uprave nije samo [posljedica]{.accent} razvoja, nego i jedan od njegovih [uzroka]{.accent}.
+:::
+
+::: {.notes}
+Objasnite zašto je kontrola za početni dohodak i ljudski kapital ključna — bez nje bismo mogli zaključiti da bogate zemlje jednostavno imaju i bolju upravu i veći rast, bez uzročne veze. Evans i Rauch konstruirali su indeks "weberijanstva" iz ekspertnih anketa o zapošljavanju i napredovanju. Poanta za studente — kvaliteta institucija nije luksuz koji dolazi s razvojem, nego njegova pretpostavka.
+:::
+
+## Pogled teorije javnog izbora {.dio-slide}
+
+::: {.lead}
+Teorija javnog izbora ne odbacuje potrebu za državom — odbacuje pretpostavku da država automatski djeluje u javnom interesu [@buchanan1962; @mueller1989].
+:::
+
+::: {.notes}
+Ovo je prijelaz s normativnog pogleda na pozitivni. Naglasite da nije riječ o ideološkom napadu na državu, nego o promjeni analitičke pretpostavke. Pitanje nije treba li nam država, nego ponaša li se ona onako kako pretpostavljamo.
+:::
+
+## Politika bez romantike
+
+[POLITIKA BEZ ROMANTIKE]{.section-label}
+
+Teorija javnog izbora analizira politiku istim alatom kao i tržište — pretpostavkom da svi sudionici slijede vlastite [poticaje]{.accent}.
+
+. . .
+
+- [političari]{.accent} žele reizbor
+- [birači]{.accent} žele koristi
+- [interesne skupine]{.accent} žele povlastice
+- [birokrati]{.accent} žele veće proračune i veću važnost
+
+. . .
+
+Zato umjesto pitanja što bi bilo idealno pitamo tko dobiva, tko plaća, tko ima [informacije]{.accent} i tko kontrolira provedbu.
+
+::: {.notes}
+"Politika bez romantike" je Buchananova formulacija — istaknite je kao naslov cijelog pristupa. Poanta nije da su ljudi u javnoj službi loši, nego da reagiraju na poticaje jednako kao i svi drugi. Četiri pitanja na dnu su analitički okvir za cijelo predavanje.
+:::
+
+## Niskanenov model
+
+[MAKSIMIZACIJA PRORAČUNA]{.section-label}
+
+::: {.def}
+U **Niskanenovom modelu** birokrati, suočeni s monopolskim položajem i informacijskom prednošću, maksimiziraju veličinu proračuna jer veći proračun donosi veću plaću, viši status i veću autonomiju [@niskanen1971].
+:::
+
+. . .
+
+Birokrat tako postaje racionalni akter s jasnim ciljem — ne javni interes, nego [rast vlastite organizacije]{.accent}.
+
+::: {.notes}
+Ovo je središnja definicija predavanja. Naglasite da Niskanen birokrata ne smatra zlim nego racionalnim — on maksimizira ono što mu donosi osobnu korist. Plaća, status i autonomija rastu s proračunom, pa je proračun prirodna funkcija cilja.
+:::
+
+## Zašto baš proračun
+
+[CILJ BEZ TRŽIŠNE CIJENE]{.section-label}
+
+Poduzeće na tržištu maksimizira [dobit]{.accent} — uspjeh mu mjeri razlika prihoda i troškova pod pritiskom konkurencije.
+
+. . .
+
+Javna birokracija nema tržišnu cijenu ni konkurenta kojem bi građani mogli prijeći ako su nezadovoljni.
+
+. . .
+
+Bez dobiti kao mjerila uspjeha preostaje [veličina proračuna]{.accent} — izravan izvor organizacijske moći, broja zaposlenih i utjecaja.
+
+::: {.cbox .kljucno}
+[Ključno]{.cbox-label}
+
+Birokrat ne maksimizira proračun iz pohlepe, nego zato što je proračun jedino vidljivo mjerilo uspjeha u svijetu bez tržišne cijene.
+:::
+
+::: {.notes}
+Ovdje objasnite zašto baš proračun, a ne nešto drugo. Ključ je odsutnost tržišnog signala — bez cijene i bez konkurencije nema mjerila učinka, pa veličina proračuna preuzima ulogu mjerila moći i uspjeha. Povucite paralelu s poduzećem da kontrast bude jasan.
+:::
+
+## Cilj nije neto korist {.smaller}
+
+[FUNKCIJA CILJA]{.section-label}
+
+Formalno, birokrat ne bira razinu [Q]{.var} koja maksimizira neto korist niti onu koja maksimizira dobit, nego sirovu [veličinu proračuna]{.accent}.
+
+$$\max_{Q}\; B(Q) \quad \text{uz ograničenje} \quad B(Q) \ge C(Q)$$
+
+. . .
+
+Prekomjerna potrošnja zato nije pogreška u računu, nego ishod [drugačijeg cilja]{.accent}.
+
+. . .
+
+Ograničenje da korist mora pokriti trošak u ravnoteži postaje [vezujuće]{.accent} i prelazi u jednakost — birokracija širi uslugu sve dok ukupna korist tek pokriva ukupni trošak.
+
+::: {.notes}
+Provedite studente kroz razliku između tri moguća cilja — neto korist, dobit i veličina proračuna. Naglasite da je prevelika razina usluge posljedica racionalnog izbora pod drugačijom funkcijom cilja, a ne nesposobnosti. Vezujuće ograničenje znači da nema viška koristi koji bi se mogao iskoristiti za smanjenje troška.
+:::
+
+## Uzmi ili ostavi
+
+[MEHANIZAM PREGOVORA]{.section-label}
+
+Model počiva na tri elementa:
+
+. . .
+
+1. [monopol]{.accent} nad pružanjem usluge
+2. [informacijska prednost]{.accent} — birokracija zna pravi trošak i svoje rezerve
+3. sponzor (ministarstvo financija) ne može provjeriti te brojke
+
+. . .
+
+Mehanizam: umjesto kupnje jedinicu po jedinicu, birokracija nudi cijeli paket po jednoj cijeni po načelu [uzmi ili ostavi]{.accent}.
+
+. . .
+
+Ministarstvo financija tako vaga samo cjelinu i pristaje dokle god ukupna korist tek pokriva ukupni trošak.
+
+Graf koji slijedi uspoređuje učinkovitu razinu [Q*]{.var} s Niskanenovom razinom [Qₙ]{.var}.
+
+::: {.notes}
+Ovo je srž modela — objasnite zašto je ponuda "uzmi ili ostavi" toliko moćna. Sponzor ne može birati količinu po jedinici, nego mora prihvatiti ili odbiti cijeli paket, pa birokracija prisvaja sav višak koristi. Najavite graf koji slijedi kao usporedbu učinkovite i napuhane razine usluge.
+:::
+
+## Niskanenov jaz na grafu {.smaller}
+
+[PREKOMJERNA POTROŠNJA — ISPROBAJTE]{.section-label}
+
+```{ojs}
+//| echo: false
+viewof nisk_controls = Inputs.form({
+  b: Inputs.range([0.4, 1.6], {value: 1.0, step: 0.1, width: 260, label: "Nagib koristi b"}),
+  c: Inputs.range([1, 6], {value: 3, step: 0.5, width: 260, label: "Granični trošak c"})
+})
+```
+
+```{ojs}
+//| echo: false
+{
+  const a = 10;
+  const b = nisk_controls.b, c = nisk_controls.c;
+  const Qstar = (a - c) / b;
+  const Qnisk = 2 * Qstar;
+  const Qmax = Math.max(Qnisk * 1.15, (a / b) * 0.98);
+  const MB = (Q) => a - b * Q;
+  const grid = d3.range(0, Qmax + 0.01, Qmax / 200);
+  const mbLine = grid.map(Q => ({Q, y: MB(Q)})).filter(d => d.y >= 0);
+  return Plot.plot({
+    width: 720, height: 304,
+    marginLeft: 56, marginRight: 28, marginTop: 26, marginBottom: 44,
+    style: {fontSize: "12px", fontFamily: "Public Sans, system-ui, sans-serif", color: "#3A332D", background: "transparent"},
+    x: {label: "Količina javne usluge / proračun (Q) →", domain: [0, Qmax]},
+    y: {label: "↑ Granična korist i trošak (€)", domain: [0, a * 1.05]},
+    marks: [
+      Plot.rectX([{x1: Qstar, x2: Qnisk}], {x1: "x1", x2: "x2", y1: 0, y2: a * 1.05, fill: "#C53030", fillOpacity: 0.07}),
+      Plot.line(mbLine, {x: "Q", y: "y", stroke: "#2D5A8E", strokeWidth: 2.5}),
+      Plot.ruleY([c], {stroke: "#1C7C54", strokeWidth: 2}),
+      Plot.ruleX([Qstar], {y1: 0, y2: c, stroke: "#6B6357", strokeDasharray: "4,3"}),
+      Plot.ruleX([Qnisk], {y1: 0, y2: Math.max(MB(Qnisk), 0), stroke: "#6B6357", strokeDasharray: "4,3"}),
+      Plot.dot([{Q: Qstar, y: c}], {x: "Q", y: "y", r: 5, fill: "#1C1916", stroke: "white", strokeWidth: 2}),
+      Plot.text([{Q: Qstar, y: c}], {x: "Q", y: "y", text: ["Q* (učinkovito)"], fill: "#1C1916", fontSize: 12, fontWeight: 700, dy: -12, dx: -4, textAnchor: "end"}),
+      Plot.text([{Q: Qnisk, y: 0.55}], {x: "Q", y: "y", text: ["Qₙ (maksimizacija proračuna)"], fill: "#C53030", fontSize: 12, fontWeight: 700, dx: -6, textAnchor: "end"}),
+      Plot.text([{Q: Qmax * 0.15, y: MB(Qmax * 0.15) + 0.5}], {x: "Q", y: "y", text: ["granična korist"], fill: "#2D5A8E", fontSize: 11, textAnchor: "start"}),
+      Plot.text([{Q: Qmax * 0.78, y: c + 0.5}], {x: "Q", y: "y", text: ["granični trošak"], fill: "#1C7C54", fontSize: 11, textAnchor: "start"})
+    ]
+  });
+}
+```
+
+::: {.isprobaj}
+Usporedite učinkovitu razinu [Q*]{.var} s Niskanenovom razinom [Qₙ]{.var}. Podignite granični trošak i obje se okomice pomiču ulijevo, ali crveno područje [prekomjerne potrošnje]{.accent} opstaje. Smanjite nagib granične koristi prema 0,4 i jaz se dramatično rastegne.
+:::
+
+::: {.notes}
+Pustite studente da sami pomiču klizače prije nego što objasnite mehaniku. Naglasite da pomak graničnog troška mijenja apsolutne razine, ali ne ukida sam jaz. Najjači uvid dolazi kad spljoštite granu koristi i vide kako se Qₙ udaljava od Q*. Vežite vizualni dojam uz proračunsku monopolnu poziciju agencije.
+:::
+
+## Zašto faktor dva {.smaller}
+
+[GEOMETRIJA PREKORAČENJA]{.section-label}
+
+Društveno učinkovita razina [Q*]{.var} izjednačava [graničnu korist]{.accent} i [granični trošak]{.accent}.
+
+. . .
+
+Niskanenova razina [Qₙ]{.var} izjednačava [ukupnu korist]{.accent} i [ukupni trošak]{.accent} — agencija troši sav višak koji bi inače pripao društvu.
+
+$$\underbrace{B'(Q^{*}) = C'(Q^{*})}_{\text{učinkovito}} \qquad \text{vs.} \qquad \underbrace{B(Q_{n}) = C(Q_{n})}_{\text{Niskanen}} \;\Longrightarrow\; Q_{n} = 2\,Q^{*}$$
+
+::: {.cbox .kljucno}
+[Ključno]{.cbox-label}
+
+Faktor dva nije opća istina. Vrijedi upravo uz pravocrtnu graničnu korist i konstantni granični trošak; promijenite oblik krivulja i omjer se mijenja.
+:::
+
+::: {.notes}
+Istaknite razliku između izjednačavanja na marginama i izjednačavanja ukupnih iznosa — to je srž cijelog rezultata. Trokut viška na učinkovitoj razini agencija pretvara u dodatnu proizvodnju. Upozorite studente da zapamćeni rezultat Qₙ = 2Q* nije zakon prirode, nego posljedica linearnih pretpostavki. To je most prema kasnijim kritikama modela.
+:::
+
+## Nisu svi birokrati isti
+
+[HETEROGENI MOTIVI]{.section-label}
+
+Rana kritika polazi od jedne pretpostavke — nisu svi službenici motivirani veličinom proračuna.
+
+. . .
+
+- Neki žele [miran posao]{.accent} i sigurnost
+- Neki streme [stručnom ugledu]{.accent} u struci
+- Neki doista žele [bolju uslugu]{.accent} građanima
+
+. . .
+
+Breton i Wintrobe pokazali su da unutar birokracije postoje heterogeni interesi — viši službenici teže moći i prestižu, niži prije svega sigurnosti radnog mjesta [@breton1975].
+
+::: {.notes}
+Naglasite da je ovo prvi ozbiljni korak od karikature jednodimenzionalnog maksimizatora proračuna. Različiti motivi znače različito ponašanje pa Niskanenov rezultat ne vrijedi uniformno. Povežite hijerarhijsku podjelu motiva s ranije obrađenim Wilsonovim tipovima agencija ako ste ih spominjali. Time pripremate teren za diskrecijski proračun na sljedećem slajdu.
+:::
+
+## Diskrecijski proračun {.smaller}
+
+[MIGUÉ I BÉLANGER]{.section-label}
+
+Migué i Bélanger preokreću pitanje — birokrat ne vrednuje sam proračun, nego [razliku]{.accent} između odobrenog proračuna i najmanjeg troška pružanja usluge.
+
+$$\max_{Q}\; U\big(Q,\,D\big), \qquad D = B(Q) - C(Q), \qquad U_Q>0,\; U_D>0$$
+
+. . .
+
+Taj [diskrecijski višak]{.accent} ne mora postati veća usluga. Dio prisvojenog viška ostaje kao organizacijska udobnost — prostraniji uredi, brojnije osoblje, manji napor [@miguebelanger1974].
+
+::: {.cbox .kljucno}
+[Ključno]{.cbox-label}
+
+Maksimizira se sloboda raspolaganja, a ne nužno proizvodnja. Time se objašnjava neučinkovitost koju čisti Niskanen pripisuje samo prevelikoj proizvodnji.
+:::
+
+::: {.notes}
+Naglasite zaokret — fokus se pomiče s količine usluge na slobodu raspolaganja viškom. Diskrecijski višak može se trošiti na udobnost umjesto na rezultate, što je drukčija vrsta gubitka od Niskanenove prekomjerne proizvodnje. To bolje opisuje agencije koje nisu velike, ali jesu skupe i ugodne za rad. Most prema Dunleavyju koji ide još korak dalje.
+:::
+
+## Oblikovanje agencije
+
+[OBLIKOVANJE AGENCIJE]{.section-label}
+
+::: {.def}
+Prema teoriji **oblikovanja agencije** (bureau-shaping) viši birokrati ne maksimiziraju veličinu proračuna, nego oblik organizacije — biraju male, prestižne i politički utjecajne agencije pred velikima, rutinskim i operativnima, jer im to donosi veći ugled uz manji upravljački trud [@dunleavy1985].
+:::
+
+. . .
+
+Posljedica je suprotna Niskanenovoj — viši službenik može rado [eksternalizirati]{.accent} rutinske poslove i smanjiti vlastiti proračun ako time dobiva utjecajniju i ugledniju jezgru.
+
+::: {.notes}
+Dunleavy okreće logiku naglavce — manje, a ne više, može biti racionalan ishod za vrh hijerarhije. Time se objašnjava zašto su viši službenici ponekad spremni na privatizaciju i prebacivanje poslova prema van. Naglasite da ovo nije pobijanje Niskanena, nego dopuna koja bolje pristaje stvarnim reformama javnog sektora. Vežite uz iskustvo agencijizacije u britanskoj državnoj upravi.
+:::
+
+## Zašto model i dalje vrijedi
+
+[PRAVA PITANJA]{.section-label}
+
+Unatoč kritikama, temeljni uvid ostaje — proračunski proces nije puko tehničko određivanje potrebnih sredstava.
+
+. . .
+
+Umjesto pitanja koliko treba, treba pitati:
+
+- Koje [rezultate]{.accent} institucija doista proizvodi?
+- Koliko ti rezultati [koštaju]{.accent}?
+- Postoje li [jeftiniji načini]{.accent} da se postignu?
+- Tko [neovisno provjerava]{.accent} informacije koje agencija dostavlja?
+
+::: {.notes}
+Poanta slajda je da kritike profinjuju model, ali ne ukidaju njegovu praktičnu vrijednost. Sva četiri pitanja proizlaze izravno iz pretpostavke o informacijskoj asimetriji. Naglasite da je posljednje pitanje o neovisnoj provjeri najvažnije za institucionalni dizajn. Time prelazimo s teorije na praksu proračunskog nadzora.
+:::
+
+## Monopol i informacijska prednost {.smaller}
+
+[PRORAČUN U PRAKSI]{.section-label}
+
+::: {.cbox .praksa}
+[Praksa]{.cbox-label}
+
+Ondje gdje agencija ima monopol i bolje informacije od ministarstva financija, ona sustavno traži više nego što bi bilo optimalno, a uštede rijetko nudi sama.
+
+Reforme u zemljama OECD-a — proračun prema rezultatima, vanjske revizije, gornje granice troška — smanjuju, ali ne uklanjaju taj pritisak, jer informacijska prednost ostaje na strani agencije.
+:::
+
+::: {.notes}
+Zaokružite predavanje vezom teorije i stvarnih proračunskih institucija. Naglasite asimetriju informacija kao trajni korijen problema koji nijedna reforma posve ne uklanja. Navedite da su upravo zato vanjske revizije i neovisni proračunski uredi toliko važni. Ostavite studentima pitanje tko u Hrvatskoj obavlja tu neovisnu provjeru kao uvod u sljedeće predavanje.
+:::
+
+## Asimetrija informacija i principal–agent problem {.dio-slide}
+
+::: {.lead}
+Mnogi se problemi birokracije vide tek kad uđemo u sam odnos delegiranja, u kojem jedna strana radi za drugu, a ne može je savršeno nadzirati.
+:::
+
+::: {.notes}
+Ovo je most od pogleda na birokraciju kao organizaciju prema pogledu na birokraciju kao mrežu ugovora. Naglasite da problem nije u zloj volji, nego u strukturi odnosa. Najavite da slijedi alat koji nam to objašnjava — principal–agent okvir.
+:::
+
+
+## Principal i agent {.smaller}
+
+[ODNOS DELEGIRANJA]{.section-label}
+
+::: {.def}
+**Principal–agent problem** nastaje kad principal ne može savršeno nadzirati [agenta]{.accent} jer agent ima [vlastite ciljeve]{.accent} i [bolje informacije]{.accent} o onome što radi.
+:::
+
+. . .
+
+U javnoj upravi taj se problem ne pojavljuje jednom, nego se [množi kroz više razina delegiranja]{.accent}.
+
+. . .
+
+Svaka razina dodaje novi par očiju koji ne vidi sve i novu ruku koja ima svoje interese.
+
+::: {.notes}
+Definirajte pojmove jasno — principal je onaj tko delegira, agent onaj tko izvršava. Ključna poanta je riječ "savršeno": nadzor postoji, ali je nepotpun i skup. Pripremite slušatelje da u javnom sektoru nema jednog para principal–agent, nego cijelog lanca.
+:::
+
+
+## Dugačak lanac delegiranja
+
+[TKO RADI ZA KOGA]{.section-label}
+
+[Građani]{.accent} su krajnji principal — financiraju državu i daju joj legitimnost.
+
+. . .
+
+[Političari]{.accent} su agenti građana, ali prema birokraciji postaju principali.
+
+. . .
+
+[Birokracija]{.accent} je agent političara, ali i sama delegira — agencijama, lokalnim tijelima, pojedinačnim službenicima.
+
+. . .
+
+::: {.cbox .kljucno}
+[Ključno]{.cbox-label}
+Dug lanac znači da se [odgovornost rasprši]{.accent}. Na svakoj karici prijete [skrivena informacija]{.accent} (agent zna više) i [skriveno djelovanje]{.accent} (principal ne vidi trud).
+:::
+
+::: {.notes}
+Provedite slušatelje kroz lanac korak po korak, jer je to okosnica cijelog predavanja. Naglasite da ista osoba mijenja ulogu — političar je istodobno nečiji agent i nečiji principal. Skrivena informacija i skriveno djelovanje dva su klasična lica problema; vratit ćemo se na njih kod poticaja.
+:::
+
+
+## Input, output i ishod {.smaller}
+
+[ŠTO ZAPRAVO MJERIMO]{.section-label}
+
+::: {.def}
+[Input]{.var} je resurs koji se ulaže, [output]{.var} mjerljiv neposredni učinak, a [ishod]{.var} stvarna promjena u društvu. Birokracija lakše izvještava o [inputu i outputu]{.accent} nego o [ishodu]{.accent}.
+:::
+
+. . .
+
+::: {.cbox .praksa}
+[Praksa]{.cbox-label}
+Loši pokazatelji potiču pogrešno ponašanje — škola koja snižava kriterije radi prolaznosti, sud koji juri broj riješenih predmeta umjesto kvalitete pravde.
+:::
+
+::: {.notes}
+Trostruka razlika input–output–ishod ključna je za razumijevanje mjerenja u javnom sektoru. Naglasite da je ishod ono do čega nam je stvarno stalo, a upravo je on najteže mjerljiv. Primjeri pokazuju Goodhartov problem — kad mjera postane cilj, prestaje biti dobra mjera.
+:::
+
+
+## Zašto su poticaji slabi {.smaller}
+
+[OSJETLJIVOST NAGRADE]{.section-label}
+
+Zamislimo minimalni linearni ugovor — nagrada agentu vezana je uz [izmjereni ishod]{.accent}, koji u sebi nosi i [šum mjerenja]{.accent}.
+
+$$\beta^{*}=\frac{1}{1+\rho\,c\,\sigma^{2}}$$
+
+. . .
+
+Što je ishod slabije mjerljiv, to je [šum]{.accent} veći, a optimalna osjetljivost nagrade pada prema [nuli]{.accent}.
+
+. . .
+
+Vezivanje plaće uz lošu mjeru kažnjava agenta za čisti šum — zato su poticaji u javnom sektoru opravdano slabiji nego u privatnom [@laffontmartimort2002].
+
+::: {.notes}
+Formula pokazuje da optimalna osjetljivost nagrade pada kako raste varijanca šuma mjerenja. Poanta nije da su javni službenici lijeni, nego da bi jaki poticaji vezani uz lošu mjeru bili nepravedni i kontraproduktivni. Ovo je pomak od moralne na strukturnu interpretaciju slabih poticaja.
+:::
+
+
+## Dno lanca: šalter i algoritam {.smaller}
+
+[GDJE POLITIKA NASTAJE]{.section-label}
+
+::: {.cbox .empirija}
+[Empirija]{.cbox-label}
+Lipsky pokazuje da službenici u neposrednom dodiru s građanima — socijalni radnici, policajci, učitelji, šalterski službenici — imaju [diskreciju pod kroničnim preopterećenjem]{.accent}, pa razvijaju rutine snalaženja koje postaju [stvarna javna politika]{.accent} [@lipsky1980].
+:::
+
+. . .
+
+Danas se na dno lanca sve češće postavlja [algoritam]{.accent} — diskrecija pojedinca zamjenjuje se [dosljednošću stroja]{.accent}.
+
+. . .
+
+Gubi se obrazloženje i nastaje [nova asimetrija]{.accent} prema onima koji sustav projektiraju [@margetts2013].
+
+::: {.notes}
+Lipskyjeva poanta je obrat perspektive — javna politika ne nastaje samo u zakonu, nego na šalteru, kroz svakodnevne odluke preopterećenih službenika. Povucite luk prema digitalizaciji: algoritam rješava problem nedosljednosti, ali stvara nove probleme transparentnosti i odgovornosti. Zatvorite predavanje pitanjem tko sada drži diskreciju kad je dno lanca automatizirano.
+:::
+
+## Birokracija u mreži interesa {.dio-slide}
+
+[ŠESTA CJELINA]{.section-label}
+
+::: {.lead}
+Birokracija nije samo tijelo koje pregovara o resursima. Ona je i čvor kroz koji druge skupine ostvaruju svoje interese, jer izrađuje pravila, dodjeljuje dozvole, piše natječaje i tumači uvjete.
+:::
+
+::: {.notes}
+Ovdje pomičemo fokus s prošlog predavanja o pojedinačnom birokratu i njegovu proračunu prema birokraciji kao dijelu šire mreže. Naglasite da uprava nije pasivni izvršitelj odluka politike, nego aktivan sudionik. Najavite da ćemo povezati interesne skupine, politiku i upravu u jednu cjelinu.
+:::
+
+## Rentijerstvo prema administraciji
+
+[BORBA ZA RENTU IZVAN PARLAMENTA]{.section-label}
+
+Interesne skupine ne lobiraju samo prema političarima koji donose zakone. Lobiraju i prema upravi koja te zakone provodi i razrađuje.
+
+. . .
+
+::: {.cbox .kljucno}
+[Ključno]{.cbox-label}
+Stvarna borba za [rentu]{.accent} ponekad se ne vodi u parlamentu, nego u pravilniku, kriteriju natječaja ili tehničkom standardu.
+:::
+
+. . .
+
+Zakon postavlja okvir, ali detalji odlučuju tko dobiva posao. Tko piše tehnički uvjet, taj često i određuje pobjednika natječaja [@tullock1967; @krueger1974].
+
+::: {.notes}
+Povežite ovo s pojmom traženja rente iz ranijih predavanja. Dobar primjer je natječaj u kojem je tehnička specifikacija napisana tako da joj odgovara samo jedan ponuditelj. Poanta je da je administrativna razina manje vidljiva od parlamentarne, ali često presudna, pa nadzor mora ići i prema njoj.
+:::
+
+## Željezni trokut
+
+[STABILAN SAVEZ TRIJU STRANA]{.section-label}
+
+::: {.def}
+**Željezni trokut** je trajan savez političara, birokracije i interesne skupine u kojem svaka strana dobiva nešto i zato ga nijedna ne želi raskinuti.
+:::
+
+. . .
+
+Tko što dobiva:
+
+- [Političari]{.accent} dobivaju glasove i potporu
+- [Birokracija]{.accent} dobiva proračun i nadležnost
+- [Interesne skupine]{.accent} dobivaju povlastice i zaštitu
+
+. . .
+
+::: {.cbox .kljucno}
+[Ključno]{.cbox-label}
+Zove se željezni jer je otporan na promjene. Objašnjava zašto se programi jednom uvedeni teško ukidaju, što je jedan od mehanizama [državnog neuspjeha]{.accent}.
+:::
+
+::: {.notes}
+Vratite se na prošlo predavanje o interesnim skupinama i pokažite da trokut zatvara krug između triju aktera koje smo dosad gledali odvojeno. Naglasite da nijedan sudionik nema poticaj raskinuti savez jer svi gube ako se on raspadne. Zato reforme koje ukidaju neki program nailaze na otpor sa svih triju strana istodobno.
+:::
+
+## Zarobljavanje i proračunski ciklus {.smaller}
+
+[KAD NEOVISNOST NIJE DOVOLJNA]{.section-label}
+
+::: {.def}
+**Regulatorno zarobljavanje** nastaje kad regulator počne štititi interes onih koje bi trebao nadzirati, umjesto javnog interesa [@stigler1971].
+:::
+
+. . .
+
+Pouka nije samo osnovati neovisnog regulatora, nego oblikovati [poticaje]{.accent} koji otežavaju zarobljavanje:
+
+- transparentnost rada
+- objava podataka
+- sprječavanje sukoba interesa
+
+. . .
+
+::: {.cbox .empirija}
+[Empirija]{.cbox-label}
+Uprava nije imuna ni na politički proračunski ciklus, rast rashoda uoči izbora [@nordhaus1975].
+:::
+
+. . .
+
+Uloga joj je [ambivalentna]{.accent}. Profesionalna uprava može stabilizirati potrošnju, ali može i podržati njezin rast jer joj veći proračun donosi više resursa.
+
+::: {.notes}
+Objasnite zarobljavanje na primjeru sektorskog regulatora koji vremenom preuzme gledište industrije koju nadzire. Naglasite da je odgovor institucionalni dizajn poticaja, a ne samo formalna neovisnost na papiru. Na kraju povežite ambivalentnost uprave s idejom da isti akter može biti i stabilizator i pokretač rasta potrošnje, ovisno o poticajima.
+:::
+
+## Cilj nije manje, nego bolja birokracija {.dio-slide}
+
+::: {.lead}
+Ključni problem nije sama veličina birokracije, nego njezina kvaliteta, učinkovitost i odgovornost. Moderna država ne može funkcionirati bez profesionalne uprave.
+:::
+
+::: {.notes}
+Ovo je zaokret u argumentu cijelog predavanja. Naglasite da rasprava o tome treba li nam manje ili više birokracije promašuje pravo pitanje. Pripremite slušatelje da sljedeći slajdovi mjere hrvatsku upravu i pokazuju zašto je kvaliteta važnija od pukog broja.
+:::
+
+## Kolika je hrvatska uprava
+
+[VELIČINA NIJE PRESUDA]{.section-label}
+
+Veličinu uprave najčešće mjerimo udjelom [zaposlenih u općoj državi]{.accent} u ukupnoj zaposlenosti.
+
+. . .
+
+Po tom mjerilu Hrvatska je [iznad prosjeka OECD-a]{.accent} i bliže nordijskim zemljama nego onima s malom upravom poput Njemačke ili Japana.
+
+. . .
+
+Sama brojka zato ne potvrđuje rasprostranjenu sliku o premaloj državi.
+
+Graf koji slijedi prikazuje tu usporedbu.
+
+::: {.notes}
+Cilj je razbiti automatsku pretpostavku da je hrvatska uprava premala ili prevelika. Istaknite da je mjerilo udjela u zaposlenosti samo polazište, ne i konačan sud. Najavite graf kao empirijsku provjeru te tvrdnje.
+:::
+
+## Javna zaposlenost u usporedbi {.smaller}
+
+[UDIO U OPĆOJ DRŽAVI, 2023.]{.section-label}
+
+```{ojs}
+//| echo: false
+{
+  const data = [
+    {z:"Norveška", v:30.1, grp:"ostalo"},
+    {z:"Švedska", v:28.1, grp:"ostalo"},
+    {z:"Danska", v:27.3, grp:"ostalo"},
+    {z:"Finska", v:25.2, grp:"ostalo"},
+    {z:"Hrvatska", v:22.8, grp:"HR"},
+    {z:"Francuska", v:20.7, grp:"ostalo"},
+    {z:"Italija", v:13.7, grp:"ostalo"},
+    {z:"Njemačka", v:11.5, grp:"ostalo"},
+    {z:"Japan", v:4.9, grp:"ostalo"}
+  ];
+  return Plot.plot({
+    width: 880, height: 420, marginLeft: 90, marginRight: 54, marginTop: 28, marginBottom: 46,
+    style: {fontSize: "13px", fontFamily: "Public Sans, system-ui, sans-serif", color: "#3A332D", background: "transparent"},
+    x: {label: "Zaposleni u općoj državi (% ukupne zaposlenosti) →", domain: [0, 33], grid: true},
+    y: {label: null, domain: data.map(d => d.z)},
+    color: {domain: ["ostalo","HR"], range: ["#4A5568","#C8942D"]},
+    marks: [
+      Plot.barX(data, {x: "v", y: "z", fill: "grp", tip: true}),
+      Plot.ruleX([18.4], {stroke: "#8C8C8C", strokeDasharray: "5,4", strokeWidth: 1.5}),
+      Plot.text([{z: "Norveška"}], {x: 18.4, y: "z", text: ["OECD 18,4 %"], dy: -12, dx: 4, textAnchor: "start", fontSize: 10, fill: "#6B6357"}),
+      Plot.text(data, {x: "v", y: "z", text: d => d.v.toFixed(1).replace(".", ","), dx: 4, textAnchor: "start", fontSize: 10, fill: "#3A332D"})
+    ]
+  });
+}
+```
+
+::: {.isprobaj}
+Hrvatska je s [22,8 posto]{.accent} iznad prosjeka OECD-a (18,4 posto), između nordijskog vrha (Norveška 30,1) i zemalja s malom upravom (Japan 4,9). Pitanje se time pomiče s veličine na ono što uprava isporučuje.
+:::
+
+::: {.izvor}
+Izvor: OECD, Government at a Glance 2025.
+:::
+
+::: {.notes}
+Vodite slušatelje kroz raspon vrijednosti, od Japana do Norveške, da osjete širinu razlika. Naglasite da se Hrvatska smješta visoko, ali ne na sam vrh. Ključna poruka je da nas položaj na ljestvici ne oslobađa pitanja o kvaliteti onoga što uprava daje.
+:::
+
+## Državni kapacitet
+
+[KVALITETA, NE BROJ]{.section-label}
+
+Mjerilo koje zaista odlučuje nije broj zaposlenih, nego je li uprava [meritokratski ustrojena]{.accent} i sposobna svoje odluke pretvoriti u predvidivu provedbu [@evansrauch1999].
+
+. . .
+
+::: {.def}
+**Državni kapacitet** je sposobnost uprave da donesene odluke dosljedno i predvidivo provede u djelo, neovisno o trenutnim pritiscima.
+:::
+
+. . .
+
+Zato reforme ne bi trebale ciljati na rezanje administracije, nego na podizanje njezine kvalitete.
+
+::: {.notes}
+Ovdje uvodimo pojam koji povezuje weberovski ideal s mjerljivim ishodom. Naglasite nalaz Evansa i Raucha da meritokratska uprava ide ruku pod ruku s gospodarskim rastom. Poantirajte da rezanje broja zaposlenih bez podizanja kvalitete ne donosi bolji državni kapacitet.
+:::
+
+## Dvije provjere {.smaller}
+
+[OBJE ISTODOBNO]{.section-label}
+
+Dva pogleda nisu suparnici, nego dvije provjere koje uprava mora proći istodobno.
+
+. . .
+
+::: {.cbox .kljucno}
+[Ključno]{.cbox-label}
+Weberovska pitanja — je li zaštićena od samovolje, počiva li na pravilima i stručnosti, jamči li jednak tretman.
+:::
+
+::: {.cbox .kljucno}
+[Ključno]{.cbox-label}
+Pitanja teorije javnog izbora — čije interese slijedi, tko nadzire informacijsku prednost, mjeri li se uspjeh ishodima ili tek proračunom.
+:::
+
+. . .
+
+Tek institucija koja izdrži obje provjere ostvaruje državni kapacitet. Dobra uprava spaja [profesionalnost i odgovornost]{.accent}.
+
+::: {.notes}
+Ovo je sintezni slajd koji spaja dvije teorijske tradicije iz cijelog predavanja. Vodite slušatelje kroz obje skupine pitanja kao komplementarne, a ne suprotstavljene. Naglasak je na tome da uprava mora proći obje provjere, ne samo jednu.
+:::
+
+## Sažetak
+
+[PET PORUKA]{.section-label}
+
+::: {.agenda}
+1. Dva pogleda na birokraciju se nadopunjuju, a ne isključuju.
+2. Weberovski pogled prepoznaje upravu kao civilizacijski napredak koji štiti od samovolje.
+3. Teorija javnog izbora otkriva poticaje birokrata i njihovu sklonost većim proračunima.
+4. Ključna je kvaliteta uprave, a ne njezina veličina.
+5. Cilj reforme je bolja, a ne manja birokracija.
+:::
+
+::: {.notes}
+Prođite kroz pet poruka sažeto, jer su sve već razrađene u predavanju. Ako vrijeme dopušta, zastanite na trećoj i četvrtoj jer one nose glavnu napetost. Ovo je trenutak za rekapitulaciju prije vježbe.
+:::
+
+## Vježba {.smaller}
+
+[NISKANENOV MODEL S BROJEVIMA]{.section-label}
+
+::: {.cbox .vjezba}
+[Vježba]{.cbox-label}
+Postavite nagib granične koristi na 1 i granični trošak na 3, pa je MB = 10 − Q, a MC = 3.
+
+(a) Izračunajte učinkovitu količinu Q\* (gdje je MB = MC) te ukupnu korist i ukupni trošak na toj razini.
+
+(b) Izračunajte Niskanenovu razinu Qₙ na kojoj je ukupna korist jednaka ukupnom trošku i pokažite da sponzor još odobrava proračun iako je granična korist pala ispod troška.
+
+(c) Izračunajte prekomjernu ponudu Qₙ − Q\* i procijenite gubitak društvene vrijednosti, pa objasnite zašto birokracija uspijeva nametnuti Qₙ (povežite s monopolom i informacijskom prednošću).
+:::
+
+::: {.notes}
+Riješite zadatak (a) zajedno na ploči da svi imaju polazište, Q\* ispada 7. Zadatke (b) i (c) ostavite kao samostalan rad ili domaću zadaću. Vodite ih prema uvidu da informacijska prednost i ponuda po načelu uzmi ili ostavi omogućuju birokraciji da nametne prekomjernu razinu.
+:::
+
+## Što slijedi {.dio-slide}
+
+[PUTOKAZ]{.section-label}
+
+::: {.lead}
+I najbolja uprava djeluje tek onoliko koliko joj dopuštaju pravila igre unutar kojih radi.
+:::
+
+::: {.agenda}
+1. [Predavanje 12 — institucionalna ekonomika]{.accent}: transakcijski troškovi, prava vlasništva, North i institucije kao pravila igre.
+2. [Širi luk]{.accent}: od pojedinih aktera prema samim institucijama koje oblikuju njihovo ponašanje.
+:::
+
+::: {.notes}
+Zatvorite predavanje povezivanjem s idućom temom, institucijama kao pravilima igre. Naglasite da kvaliteta uprave ovisi o širem institucionalnom okviru. Ovo je most prema novoj institucionalnoj ekonomici.
+:::
